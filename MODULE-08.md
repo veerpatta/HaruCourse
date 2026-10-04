@@ -16,7 +16,7 @@ Fidelity is not a stage you graduate to. It is a trade: each layer of detail set
 
 Bring: One tested m07 screen, its state table and your ranked problem list.
 
-Starting route: Recommended route: Draw the interface-fidelity screen beside its wireframe on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder. Alternative route: Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+Starting route: Recommended route: Draw on paper, or on a copy of the editable starter screen, then record what you decided in the worksheet here so it is saved and reviewable. No m07 screen of your own? Download /starters/m08/booking-screen-starter.svg, keep the download untouched as your wireframe, and raise the fidelity of a copy. Alternative route: To work on screen: duplicate the starter before editing, open the copy in Inkscape (free, no account needed) or Penpot (free, needs an account) and save it in HaruCourse/Practice/m08-l01-v1/. The course has not tested these tools on your computer, and paper is a complete alternative.
 
 - One screen at interface fidelity, beside its wireframe
 - A list of what the added detail decided
@@ -35,7 +35,7 @@ Interface craft turns an idea into clear screens and controls that still work in
 
 **Quick example.** A supplied set of results from the same made-up booking screen. In greyscale the “Book a place” button and the “Add to shortlist” button become the same grey. From arm’s length the first three things seen are the photograph, the class name and the price. The availability line, which the paper test showed people hunting for, is not among them.
 
-The reader demonstrates and guides the task before asking for “The screen you picked, and the problem your paper test raised about it”.
+The reader demonstrates and guides the task before asking for “The screen you picked (your own or the starter file), and the problem a paper test raised about it”.
 
 ### What this lesson will help you do
 
@@ -85,16 +85,28 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- A booking screen taken from wireframe to interface settled six things: type scale, the price treatment, the button hierarchy, the spacing rhythm, the image size and the state colours. It also hid two: with real type sizes the description no longer fit above the fold, which the wireframe had implied it would, and the availability line — which the paper test had shown people looking for — became visually quiet enough that two reviewers did not mention it at all. Both were caught only because the wireframe was still on the table beside it.
+- Made-up example: a booking screen taken from wireframe to interface settled six things: type scale, the price treatment, the button hierarchy, the spacing rhythm, the image size and the state colours. It also hid two: with real type sizes the description no longer fit above the fold, which the wireframe had implied it would, and the availability line — which the paper test had shown people looking for — became visually quiet enough that two reviewers did not mention it at all. Both were caught only because the wireframe was still on the table beside it.
 
 
 ### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
-Recommended route: Draw the interface-fidelity screen beside its wireframe on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder. Alternative route: Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+Recommended route: Draw on paper, or on a copy of the editable starter screen, then record what you decided in the worksheet here so it is saved and reviewable. No m07 screen of your own? Download /starters/m08/booking-screen-starter.svg, keep the download untouched as your wireframe, and raise the fidelity of a copy. Alternative route: To work on screen: duplicate the starter before editing, open the copy in Inkscape (free, no account needed) or Penpot (free, needs an account) and save it in HaruCourse/Practice/m08-l01-v1/. The course has not tested these tools on your computer, and paper is a complete alternative.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
+
+
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Practice case, made up for this course: a small pottery studio sells places on weekend classes through a phone screen. The editable starter /starters/m08/booking-screen-starter.svg draws that screen at 390 by 844 points, with every part in a named group.
+- Labels in the starter (made up): “Wheel throwing for complete beginners”; “Saturday 14 November, 10:00 to 12:30”; “£45 per person”; “6 of 8 places left”; “Studio 2, ground floor, step-free entrance”; a “What to bring” list; and two actions drawn at equal weight on purpose, “Reserve a place” and “Share with a friend”.
+- Using a starter file: download it, make a copy, keep the original untouched, open the copy in Inkscape (free, no account needed) or Penpot (free, needs an account), and save your work in HaruCourse/Practice/ followed by this lesson’s id. Printing it and drawing on paper works just as well. The course has not tested these tools on your computer.
+- Made-up paper-test note for the starter screen: two of five people looked for how many places were left before reading anything else.
 
 
 ### Choose and read
@@ -104,10 +116,11 @@ Section: practice-plan. Stable action: step-1-brief.
 The screen you chose, one sentence saying what this version is for, and what the component guidance specifies beyond appearance.
 
 - Pick the m07 screen your paper test raised the most problems about.
+- No m07 screen? Download /starters/m08/booking-screen-starter.svg, keep the download untouched as your wireframe and work on a copy.
 - Read the assigned component guidance for one component that appears on it.
 - Write in one sentence what this version of the screen is for.
 
-**Start here:** Pick the screen your paper test produced the most notes about, not the one you most want to draw.
+**Start here:** Pick the screen your paper test produced the most notes about, not the one you most want to draw. No screen of your own? Download /starters/m08/booking-screen-starter.svg, make a copy, keep the original untouched as your wireframe, and save the copy in HaruCourse/Practice/m08-l01-v1/.
 
 **Enough:** The purpose sentence names one decision this version exists to settle.
 
@@ -116,15 +129,15 @@ The screen you chose, one sentence saying what this version is for, and what the
 **Wireframe:** The rough version that shows what is on the screen and in what order, without deciding how any of it looks.
 
 
-### The screen you picked, and the problem your paper test raised about it
+### The screen you picked (your own or the starter file), and the problem a paper test raised about it
 
 Section: practice-plan. Stable action: write-screen-chosen.
 
-Write your answer for “The screen you picked, and the problem your paper test raised about it”. Use the task instructions below to decide what to include.
+Summarise without names or quotes, such as “2 of 5 people looked for the places left first”; raw notes stay in your private file. Using the starter? Use its made-up paper-test note and say so.
 
-**Answer:** The screen you picked, and the problem your paper test raised about it
+**Answer:** The screen you picked (your own or the starter file), and the problem a paper test raised about it
 
-
+Summarise without names or quotes, such as “2 of 5 people looked for the places left first”; raw notes stay in your private file. Using the starter? Use its made-up paper-test note and say so.
 
 
 ### What this version of the screen is for, in one sentence
@@ -166,7 +179,7 @@ The screen redrawn with your m03 type scale and spacing, using the real labels a
 - Use real content at its longest, not sample text.
 - Settle the button hierarchy, the price treatment and the state colours.
 
-**Start here:** Write the longest real label first and draw the layout around it.
+**Start here:** Write the longest real label first and draw the layout around it. On a starter copy: in Inkscape, change words with the Text tool and find a whole part by its group name (header, actions, what-to-bring) in the Layers and Objects panel; in Penpot, drag the file onto a board and work through its layers panel. If the file opens in your browser instead, open it from inside the tool. Fonts may look slightly different, because the starter uses your computer’s own font.
 
 **Enough:** Nothing on the sheet says “Lorem” or “Class name here”.
 
@@ -291,25 +304,25 @@ Section: practice-plan. Stable action: step-4-try.
 
 A supplied set of results from the same made-up booking screen. In greyscale the “Book a place” button and the “Add to shortlist” button become the same grey. From arm’s length the first three things seen are the photograph, the class name and the price. The availability line, which the paper test showed people hunting for, is not among them.
 
-Which of these is the most serious problem to repair first?
+Which result shows that the added detail has made something the task needs quiet?
 
-- The availability line missing from the first three, because the paper test showed that is what people look for.
-- The two buttons matching in greyscale, because the person cannot tell which action is the main one.
-- The photograph arriving first, because an image should not outrank the content.
-- All three equally, because both checks produced failures.
+- The availability line dropping out of the first three, though people were seen looking for it.
+- The two buttons turning the same grey, so nobody can tell which action is the main one.
+- The photograph arriving first, ahead of the class name and every other piece of content.
+- All three results equally, because both checks found something that has to be repaired.
 
 <details>
 <summary>After your attempt</summary>
 
-The availability line missing from the first three, because the paper test showed that is what people look for. — The check is measured against the task, not against the picture. Something people were observed hunting for should not need hunting.
+The availability line dropping out of the first three, though people were seen looking for it. — Quiet means still on the screen and no longer noticed. People were seen hunting for this line, so the task needs it, and from arm’s length it no longer registers. It goes at the top of your hidden list.
 
-The two buttons matching in greyscale, because the person cannot tell which action is the main one. — A real problem and second in line. It is repaired by weight or containment, while the missing availability line costs the person the decision itself.
+The two buttons turning the same grey, so nobody can tell which action is the main one. — A real problem of a different kind: both buttons are still seen, they just cannot be told apart. It belongs in your greyscale notes and is repaired with weight or containment.
 
-The photograph arriving first, because an image should not outrank the content. — An image arriving first is often right on a details screen. Judge it by whether it delays the task, and here it does not.
+The photograph arriving first, ahead of the class name and every other piece of content. — An image arriving first is often right on a details screen. It has made nothing quiet unless it pushes out something the task needs, and here the class name and price still come through.
 
-All three equally, because both checks produced failures. — Both checks did produce findings, and a list with no order sends you to the easiest repair rather than the costliest problem.
+All three results equally, because both checks found something that has to be repaired. — Both checks did produce findings, and only one of them is about something the task needs going unnoticed. Sorting findings by kind tells you which list each one belongs on.
 
-Rank your own two results the same way: what stops the task, what slows it, what only looks wrong.
+Sort your own two results the same way: what the task needs that went quiet, and what can no longer be told apart.
 
 </details>
 
@@ -355,18 +368,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The screen now looks finished, so you say the design is further along than it was. What is wrong with that?
 
-- Nothing is wrong: a finished screen is what gets built.
-- It is only wrong if the type scale is still unsettled.
-- Finish makes the design more expensive to change, not further along. The structural rework is still ahead of it.
+- Polish is what engineers build from, so a finished-looking screen is genuinely much further along.
+- Finish makes the screen costlier to change, and any untested structure still has to be reworked.
+- It only overstates progress while the type scale is unsettled; after that, finish is progress.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing is wrong: a finished screen is what gets built. — A screen gets built from a structure somebody agreed. Polish on an untested structure is the part that gets rebuilt.
+Polish is what engineers build from, so a finished-looking screen is genuinely much further along. — A screen gets built from a structure somebody agreed. Polish on an untested structure is the part that gets rebuilt.
 
-It is only wrong if the type scale is still unsettled. — The scale is one of the cheap decisions. The costly one is the arrangement underneath it.
+Finish makes the screen costlier to change, and any untested structure still has to be reworked. — Polish sits on top of the structure. If the structure has not been tested, every hour of polish is an hour you will be reluctant to throw away.
 
-Finish makes the design more expensive to change, not further along. The structural rework is still ahead of it. — Polish sits on top of the structure. If the structure has not been tested, every hour of polish is an hour you will be reluctant to throw away.
+It only overstates progress while the type scale is unsettled; after that, finish is progress. — The scale is one of the cheap decisions. The costly one is the arrangement underneath it.
 
 Improve: Read your sentence in “What this version of the screen is for” in step 1. If it claims progress rather than naming a decision, rewrite it and record the change in step 5.
 
@@ -385,18 +398,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You drew the screen with sample text because the real labels were not ready. What does that hide?
 
-- The longest real label is where the layout breaks, and sample text is always a comfortable length.
-- Nothing much, as long as the sample text is roughly the right length.
-- It hides the colour decisions rather than the layout ones.
+- Where the layout breaks: the longest real label wraps and collides, and sample text never does.
+- Mostly the tone of voice, which matters more than layout at this fidelity and can wait.
+- Very little, provided the sample text is about as long as the real labels will finally turn out to be.
 
 <details>
 <summary>After your attempt</summary>
 
-The longest real label is where the layout breaks, and sample text is always a comfortable length. — Sample text agrees with whatever you drew. Real labels at their longest are the ones that wrap, push and collide.
+Where the layout breaks: the longest real label wraps and collides, and sample text never does. — Sample text agrees with whatever you drew. Real labels at their longest are the ones that wrap, push and collide.
 
-Nothing much, as long as the sample text is roughly the right length. — Roughly right is the problem. The failures live at the extremes rather than at the average.
+Mostly the tone of voice, which matters more than layout at this fidelity and can wait. — Tone does need the real words, and it is the layout that breaks first: long real labels wrap, push and collide while sample text sits neatly in whatever space you drew.
 
-It hides the colour decisions rather than the layout ones. — Colour is unaffected by how long a string is. What moves is the arrangement.
+Very little, provided the sample text is about as long as the real labels will finally turn out to be. — Roughly right is the problem. The failures live at the extremes rather than at the average.
 
 Improve: Replace every string in your screen with the real one from your m06 labelling table, redraw whatever shifts, update “The real strings you used” in step 2 and record the change in step 5.
 
@@ -415,18 +428,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You cannot name a question that fidelity has made expensive. What does that suggest?
 
-- The screen was already well structured, so nothing became expensive.
-- You have not yet noticed what you would now resist changing, and that resistance is the question.
-- It only matters once other people are reviewing the screen.
+- Nothing yet, because an expensive question only appears once other people review the screen.
+- You have not yet found what you would now resist changing; that resistance names the question.
+- The structure was strong enough that adding type, spacing and colour closed nothing important.
 
 <details>
 <summary>After your attempt</summary>
 
-The screen was already well structured, so nothing became expensive. — Adding type, spacing and colour always closes something. Good structure makes the closure safer rather than absent.
+Nothing yet, because an expensive question only appears once other people review the screen. — Reviewers are why it shows up, and the cost exists whether or not anyone else is looking.
 
-You have not yet noticed what you would now resist changing, and that resistance is the question. — Ask which change would make you sigh. The sigh is the cost of the detail you added, and naming it keeps the question askable.
+You have not yet found what you would now resist changing; that resistance names the question. — Ask which change would make you sigh. The sigh is the cost of the detail you added, and naming it keeps the question askable.
 
-It only matters once other people are reviewing the screen. — Reviewers are why it shows up, and the cost exists whether or not anyone else is looking.
+The structure was strong enough that adding type, spacing and colour closed nothing important. — Adding type, spacing and colour always closes something. Good structure makes the closure safer rather than absent.
 
 Improve: Look at your decided list in step 3 and mark the item you would most resist undoing. Write it into “The question that is now expensive to reopen” in step 5 and record the change in the same step.
 
@@ -523,6 +536,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
 
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a rail company’s “change my journey” screen exists twice, as a grey wireframe and as a polished version with final colours, photographs and icons. On Friday the team must decide whether the new departure time or the price difference appears first. When the polished version was shown last week, every comment was about the photographs.
+
+**Task:** Which version would you put in front of the team for Friday’s decision, and why? Name one thing the polished version could be hiding.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Shows the polished version because it looks further along or more realistic, and treats the comments on the photographs as useful feedback about the order.
+- Adequate: Shows the wireframe, because the decision is about order and finish pulls comments towards colour and imagery; names one thing polish could hide, such as a price line that has gone quiet.
+- Strong: As adequate, plus a trade-off or a check: some people find a grey sketch hard to judge, so keep the polished file for the later build decision, and confirm the order with someone who has seen neither version.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+
 ### Review and finish your practice
 
 Section: practice. Stable action: review-work.
@@ -556,18 +595,18 @@ A supplied set of results from the same made-up booking screen. In greyscale the
 Activity: Before explaining the tool or method, ask me to predict what the next action will change. After I answer, explain the visible result and one common recovery step.
 
 Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
-When the activity is finished, tell me to return to the course answer called “The screen you picked, and the problem your paper test raised about it” and write my own decision. Do not write that answer for me.
+When the activity is finished, tell me to return to the course answer called “The screen you picked (your own or the starter file), and the problem a paper test raised about it” and write my own decision. Do not write that answer for me.
 ```
 
-**Come back to the course:** Return to “The screen you picked, and the problem your paper test raised about it”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+**Come back to the course:** Return to “The screen you picked (your own or the starter file), and the problem a paper test raised about it”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “The screen you picked, and the problem your paper test raised about it” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “The screen you picked (your own or the starter file), and the problem a paper test raised about it” and write one sentence in your own words.
 
 </details>
 <details>
 <summary>Optional hints and reference material</summary>
 
-- Replace every string with the real one from your m06 labelling table, then map each text element to a step in your scale.
+- Replace every string with the real one from your m06 labelling table, or the starter file's labels, then map each text element to a step in your scale.
 - Put the two versions side by side and note every difference. Each difference is a decision; name it.
 
 - R17: [GOV.UK Design System: components](https://design-system.service.gov.uk/components/) — One component that appears on your screen, read for its usage guidance and states rather than its visual style. Purpose: Shows the level of specification a production component carries before anyone builds it. Free reading, no account. Verified 2026-09-06. Do not copy the government visual style or brand; the reasoning transfers, the aesthetic is one design system's. Fallback: R06.
@@ -589,7 +628,7 @@ Adequate evidence: An interface-fidelity screen using your m03 scale, with real 
 
 3 — As adequate, and a scale step was changed with the reason recorded.
 
-Repair: Replace every string with the real one from your m06 labelling table, then map each text element to a step in your scale. Recheck: The screen with a scale map beside it.
+Repair: Replace every string with the real one from your m06 labelling table, or the starter file's labels, then map each text element to a step in your scale. Recheck: The screen with a scale map beside it.
 
 **What the detail decided is listed explicitly**
 
@@ -734,7 +773,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- An audit of nine screens found five button variants: three were the same intent drawn on different days, one was a genuinely different job — a destructive cancel — and one was a link wearing a button's clothes. It found three card layouts that were one card with different content lengths. The merges reduced five buttons to three real jobs and three cards to one, and one merge was recorded as a loss: the cancelled-class card had used a lighter background, and after merging, cancelled status rested entirely on a text label, which was noted as a candidate problem for the next test.
+- Made-up example: an audit of nine screens found five button variants: three were the same intent drawn on different days, one was a genuinely different job — a destructive cancel — and one was a link wearing a button's clothes. It found three card layouts that were one card with different content lengths. The merges reduced five buttons to three real jobs and three cards to one, and one merge was recorded as a loss: the cancelled-class card had used a lighter background, and after merging, cancelled status rested entirely on a text label, which was noted as a candidate problem for the next test.
 
 
 ### Choose where you will do the work
@@ -789,6 +828,7 @@ Section: practice-plan. Stable action: step-2-brief.
 Every element that appears more than once, grouped by job, with the exception states included.
 
 - Lay out every screen you have, including error and empty states.
+- Few screens of your own? Add the three made-up screens in /starters/m08/booking-screen-starter.svg and /starters/m08/hierarchy-before-after.svg, marked as supplied.
 - Mark every element that appears more than once.
 - Group the marked elements by what they do, not how they look.
 
@@ -828,11 +868,11 @@ Made-up example. Grouping the cut-outs from nine screens by the job they do, and
 
 Section: practice-plan. Stable action: write-screens-covered.
 
-Write your answer for “How many screens are on the table, and which error, empty and loading states are among them”. Use the task instructions below to decide what to include.
+Count your own screens. If you added the three made-up screens from the two m08 starter files, count them separately and write “supplied” beside them.
 
 **Answer:** How many screens are on the table, and which error, empty and loading states are among them
 
-
+Count your own screens. If you added the three made-up screens from the two m08 starter files, count them separately and write “supplied” beside them.
 
 
 ### Every element that appears more than once, grouped by the job it does
@@ -1133,18 +1173,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You would rather build a component library first and design the screens afterwards. What goes wrong?
 
-- Nothing goes wrong, as long as the library follows a published design system.
-- A library invented before real screens describes an imaginary product, and the first week of real work breaks it.
-- It only wastes time if the product later changes direction.
+- It wastes effort only if the product later changes direction; otherwise it saves time.
+- The library describes screens nobody has drawn, so the first real screen needs parts it lacks.
+- Very little, provided the library closely copies a mature, well-tested published design system.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing goes wrong, as long as the library follows a published design system. — A published system tells you how a component should behave. It cannot tell you which components your product actually repeats.
+It wastes effort only if the product later changes direction; otherwise it saves time. — The waste arrives sooner than that. It arrives the first time a real screen needs something the library never imagined.
 
-A library invented before real screens describes an imaginary product, and the first week of real work breaks it. — Components are a summary of what repeated. You cannot summarise screens you have not drawn yet.
+The library describes screens nobody has drawn, so the first real screen needs parts it lacks. — Components are a summary of what repeated. You cannot summarise screens you have not drawn yet.
 
-It only wastes time if the product later changes direction. — The waste arrives sooner than that. It arrives the first time a real screen needs something the library never imagined.
+Very little, provided the library closely copies a mature, well-tested published design system. — A published system tells you how a component should behave. It cannot tell you which components your product actually repeats.
 
 Improve: Check your grouped list in step 2 against the screens on the table. Delete any entry you cannot point at on a real screen, and record the change in step 5.
 
@@ -1163,18 +1203,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 One of your comparison rows says two cards are “slightly different”. Why is that not yet a finding?
 
-- Nobody can act on it. A measured difference, such as 4px of padding or one weight step, can be called accidental or meaningful.
-- It does not matter, because the merge removes the difference anyway.
-- It is a finding and only needs to be written more formally.
+- It is already a finding; it only needs writing up more formally and precisely for the inventory.
+- Nobody can act on it: only a measured difference can be judged accidental or meaningful.
+- It does not matter, because merging the two cards removes the difference either way.
 
 <details>
 <summary>After your attempt</summary>
 
-Nobody can act on it. A measured difference, such as 4px of padding or one weight step, can be called accidental or meaningful. — The decision ahead of you is whether the difference carried meaning. You cannot judge a difference you have not named.
+It is already a finding; it only needs writing up more formally and precisely for the inventory. — Formality is not the gap. The gap is that no number and no named property has been recorded.
 
-It does not matter, because the merge removes the difference anyway. — The merge removes it, and the loss list still has to say what was removed. That sentence needs the measurement.
+Nobody can act on it: only a measured difference can be judged accidental or meaningful. — The decision ahead of you is whether the difference carried meaning. You cannot judge a difference you have not named, such as 4px of padding or one weight step.
 
-It is a finding and only needs to be written more formally. — Formality is not the gap. The gap is that no number and no named property has been recorded.
+It does not matter, because merging the two cards removes the difference either way. — The merge removes it, and the loss list still has to say what was removed. That sentence needs the measurement.
 
 Improve: Go back to your near-duplicate rows in step 3 and put a number or a named property on every difference, then record the change in step 5.
 
@@ -1193,18 +1233,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Two of your components are called “grey box” and “big blue button”. What is the problem?
 
-- The names describe how they look, so the first time the colour or size changes the name is lying.
-- They are acceptable working names and can be renamed when someone builds them.
-- The problem is that the two names are inconsistent with each other.
+- They are fine as working names and can be renamed once someone builds the components.
+- The two names are inconsistent with each other, which makes the inventory hard to scan.
+- The names describe looks, so the first repaint or resize turns each name into a lie.
 
 <details>
 <summary>After your attempt</summary>
 
-The names describe how they look, so the first time the colour or size changes the name is lying. — A name should say what the thing is for. “Status panel” and “primary action” survive a repaint; “grey” and “blue” do not.
+They are fine as working names and can be renamed once someone builds the components. — Working names are what people type every day, and they tend to outlive the intention to fix them.
 
-They are acceptable working names and can be renamed when someone builds them. — They are rarely renamed. Working names are what people type every day, and they outlive the intention to fix them.
+The two names are inconsistent with each other, which makes the inventory hard to scan. — Making them consistently about appearance would not help. The trouble is the appearance, not the inconsistency.
 
-The problem is that the two names are inconsistent with each other. — Making them consistently about appearance would not help. The trouble is the appearance, not the inconsistency.
+The names describe looks, so the first repaint or resize turns each name into a lie. — A name should say what the thing is for. “Status panel” and “primary action” survive a repaint; “grey” and “blue” do not.
 
 Improve: Search your names in step 5 for colour, size and shape words, rewrite each as the job it does, and record the change in the same step.
 
@@ -1276,6 +1316,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a parcel-locker app shows three card styles. The “Waiting for you” and “Collected” cards are identical apart from their status words and 4px of padding, and were drawn a month apart. The “Returned to sender” card has a striped border and greyer text. The team wants to merge all three into one card to tidy the library.
+
+**Task:** Which merges would you make, and which distinction would you keep or protect? Explain your reasoning.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Merges all three into one card because they look alike and a tidy library is the goal, without saying what the striped border was telling people.
+- Adequate: Merges the two cards that differ by 4px as an accident, keeps “Returned to sender” as a status variant because its border carries meaning, and names the component by its job, such as parcel status card.
+- Strong: As adequate, and says what would carry the returned status if the border went (the words alone), records that merge in a loss list as a candidate problem to test, and measures rather than eyeballs the differences.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -1416,12 +1482,13 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 Stable ID: m08-l03-v1. Core.
 
-If a person cannot tell in a glance which action is the main one, every screen costs a decision it did not need to.
+If a person cannot tell in a glance which action is the main one, every screen costs a decision it did not need to. Which action that should be depends on what this screen is for and what people were seen needing there.
 
-Bring: Your component inventory and the screens using its actions.
+Bring: Your component inventory and its screens, or the m08 starter files and the supplied practice notes.
 
-Starting route: Recommended route: Draw the three action levels at real size and their greyscale photograph on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder. Alternative route: Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+Starting route: Recommended route: Draw your two layouts and the three action levels at real size on paper, or on copies of the m08 starter files, then record the ranking, the evidence and your measurements in the worksheet here so they are saved and reviewable. Photograph the sheets if you can; the photos stay in your own folder. Alternative route: To work on screen: download /starters/m08/booking-screen-starter.svg and /starters/m08/hierarchy-before-after.svg, duplicate each before editing, open the copies in Inkscape (free, no account needed) or Penpot (free, needs an account) and save them in HaruCourse/Practice/m08-l03-v1/. The course has not tested these tools on your computer, and paper is a complete alternative.
 
+- One screen’s actions ranked from its task and evidence, as two defensible layouts with the test that would choose between them
 - Three action levels specified: primary, secondary and quiet
 - A greyscale test showing the hierarchy still readable
 - Measured target sizes and spacing for each level
@@ -1429,58 +1496,58 @@ Starting route: Recommended route: Draw the three action levels at real size and
 
 ### Start here: in everyday words
 
-Interface craft turns an idea into clear screens and controls that still work in difficult cases. In this lesson, your first small result is: Every action across your screens with its current emphasis, and any screen carrying more than one main action.
+Interface craft turns an idea into clear screens and controls that still work in difficult cases. In this lesson, your first small result is: The task one screen exists for and its evidence, every action with its current emphasis, and any screen with more than one main action.
 
 **Words you will use**
 
-- **Primary action:** The outcome the screen exists to produce. One per screen; two means the screen has two jobs.
+- **Primary action:** The outcome this screen exists to produce. Usually one per screen; two equally loud actions usually mean the screen has two jobs.
+- **Evidence:** Something you can point at: a note, a count, an observation. Your own notes, or the supplied practice notes labelled as supplied.
 - **Target:** The area a finger can actually hit, which is usually larger than the part you drew.
-- **Containment:** Whether the action sits inside a shape: filled, outlined, or nothing at all. A cheap signal that survives greyscale.
 
 **Quick example.** Made-up example. Defining three levels of emphasis in five minutes, then finding out that colour had been doing all the work. Primary is the brand green, secondary is grey, quiet is a text link. It took five minutes and it looked like a specification.
 
-The reader demonstrates and guides the task before asking for “Each action, the screen it is on, and the emphasis it currently has”.
+The reader demonstrates and guides the task before asking for “The task one screen exists for, and the evidence about what people need there (your own notes, or the supplied practice notes, named as such)”.
 
 ### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
-Specify your action components at three levels of emphasis with measured target sizes and verb-first labels, and prove the hierarchy survives greyscale.
+Rank the actions on one screen from its task and the evidence, compare two defensible layouts, then specify three levels of emphasis with measured targets, verb-first labels and a greyscale check.
 
 
-### Idea 1: Three levels of emphasis is usually enough: primary, secondary…
+### Idea 1: Rank actions from this screen’s task and its evidence, not fro…
 
 Section: learn. Stable action: learn-1.
 
-Three levels of emphasis is usually enough: primary, secondary, and quiet.
+Rank actions from this screen’s task and its evidence, not from habit: what is the person here to do, and what did the notes show they need first?
 
 
-### One primary action per screen
+### Three levels are usually enough: primary, secondary and quiet
 
 Section: learn. Stable action: learn-2.
 
-One primary action per screen. Two primaries means the screen has two jobs.
+Three levels are usually enough: primary, secondary and quiet. Two equally loud actions usually mean the screen is doing two jobs.
 
 
-### Idea 3: Emphasis must survive greyscale: weight, size and containment,…
+### Idea 3: Emphasis must survive greyscale: carry it in weight, size and…
 
 Section: learn. Stable action: learn-3.
 
-Emphasis must survive greyscale: weight, size and containment, not colour alone.
+Emphasis must survive greyscale: carry it in weight, size and containment, then add colour as reinforcement.
 
 
-### Label with the verb of the outcome: “Book a place”, not “Submit” or “OK”
+### Idea 4: Label with the verb of the outcome — “Book a place”, not “Subm…
 
 Section: learn. Stable action: learn-4.
 
-Label with the verb of the outcome: “Book a place”, not “Submit” or “OK”.
+Label with the verb of the outcome — “Book a place”, not “Submit” or “OK” — and give targets real size and space, especially near destructive actions.
 
 
-### Idea 5: Targets need physical size and spacing, especially near destru…
+### Idea 5: Treat the ranking as a decision to test: draw two defensible l…
 
 Section: learn. Stable action: learn-5.
 
-Targets need physical size and spacing, especially near destructive actions.
+Treat the ranking as a decision to test: draw two defensible layouts and say what you would watch for to choose between them.
 
 
 ### See the idea in a supplied example
@@ -1489,35 +1556,78 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- A screen had two filled buttons of equal weight — “Book a place” and “Add to shortlist” — and a text link for “Cancel booking”. In greyscale the two filled buttons were indistinguishable, and in the m07 paper test one participant had tapped the shortlist button believing she had booked. The repair made booking the only filled action, shortlist an outlined secondary, and cancellation a quiet action moved away from both with its own confirmation. Targets were measured rather than eyeballed, and the destructive action was given clear separation from the primary one.
+- Made-up example: a class screen had two filled buttons of equal weight — “Book a place” and “Add to shortlist” — a small share icon in a corner, drawn on the assumption that sharing is rarely used, and a text link for “Cancel booking”. The made-up research said otherwise about sharing: 3 of 4 interviewees and the observed participant checked with someone before paying. In greyscale the two filled buttons were indistinguishable, and in the paper test one participant had tapped the shortlist button believing she had booked. The repair made booking the only filled action, raised sharing to an outlined secondary under it, made shortlist a quiet action, and moved cancellation away from all of them with its own confirmation. A second layout put sharing beside the price instead, and both were kept for a test. Targets were measured rather than eyeballed.
 
 
 ### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
-Recommended route: Draw the three action levels at real size and their greyscale photograph on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder. Alternative route: Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+Recommended route: Draw your two layouts and the three action levels at real size on paper, or on copies of the m08 starter files, then record the ranking, the evidence and your measurements in the worksheet here so they are saved and reviewable. Photograph the sheets if you can; the photos stay in your own folder. Alternative route: To work on screen: download /starters/m08/booking-screen-starter.svg and /starters/m08/hierarchy-before-after.svg, duplicate each before editing, open the copies in Inkscape (free, no account needed) or Penpot (free, needs an account) and save them in HaruCourse/Practice/m08-l03-v1/. The course has not tested these tools on your computer, and paper is a complete alternative.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
 
 
-### Read and audit
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Practice case, made up for this course: a small pottery studio sells places on weekend classes through a phone screen. The editable starter /starters/m08/booking-screen-starter.svg draws that screen at 390 by 844 points, with every part in a named group.
+- Labels in the starter (made up): “Wheel throwing for complete beginners”; “Saturday 14 November, 10:00 to 12:30”; “£45 per person”; “6 of 8 places left”; “Studio 2, ground floor, step-free entrance”; a “What to bring” list; and two actions drawn at equal weight on purpose, “Reserve a place” and “Share with a friend”.
+- Made-up research note (this course’s Module 5 example): 3 of 4 interviewees and the one observed participant confirmed the plan with another person before paying, and it was the most common open-text answer among 22 survey responses. Against it: the fourth interviewee books only for herself and said checking with someone would annoy her.
+- Made-up observation note: the observed participant checked the price against a screenshot a friend had sent, and after booking she sent a screenshot of the confirmation to that friend.
+- Made-up desk research note: 7 of 11 public reviews of local class providers mentioned not knowing what to bring.
+- Made-up paper test of an earlier version, 5 people: one pressed “Add to shortlist” believing she had booked, when it and “Reserve a place” were both filled and equal; two looked for how many places were left before reading anything else.
+- Before and after figure, text version (/starters/m08/hierarchy-before-after.svg, made up): two versions of the same booking screen. The ranking changed because of this screen’s task and the made-up notes above, not because of a rule such as “the main button should always be biggest”.
+- Callout 1, Share with a friend. Before: a small icon in a top corner, drawn on the assumption that sharing is rarely used. After: an outlined button directly under Reserve, because 3 of 4 interviewees and the one observed participant checked the plan with someone else before paying.
+- Callout 2, Reserve a place stays the only filled button, because this screen exists so a person can decide and book. Add to shortlist becomes a quiet underlined text action: in the paper test, one of five people pressed it believing she had booked, when both buttons were filled and equal.
+- Callout 3, 6 of 8 places left. Before: small, light grey text. After: body size and semibold, under the price, because two of the five paper-test participants looked for it before reading anything else.
+- Callout 4, What to bring. Before: hidden behind “More details” below the buttons. After: a short list above them, because 7 of 11 public reviews mentioned not knowing what to bring.
+- Callout 5, a second defensible layout (B): Share placed beside the price, next to the details a friend would need. Neither layout is proven. To choose, you would ask people to check the class with a friend and then book it, and watch which version they find their way through without help.
+- What would change the ranking: notes showing that people book alone, like the fourth interviewee, would make a quiet share link defensible. The figure is greyscale, so every difference is carried by weight, size, containment and position rather than colour.
+- Using a starter file: download it, make a copy, keep the original untouched, open the copy in Inkscape (free, no account needed) or Penpot (free, needs an account), and save your work in HaruCourse/Practice/ followed by this lesson’s id. Printing it and drawing on paper works just as well. The course has not tested these tools on your computer.
+
+
+### Read, audit and state the task
 
 Section: practice-plan. Stable action: step-1-brief.
 
-Every action across your screens with its current emphasis, and any screen carrying more than one main action.
+The task one screen exists for and its evidence, every action with its current emphasis, and any screen with more than one main action.
 
 - Read the assigned button guidance and the law page on target size.
+- For one screen, write the task it exists for and the evidence about what people need there; use the supplied practice notes if you hold none.
 - List every action across your screens and mark its current emphasis.
 - Mark any screen carrying more than one primary action.
 
-**Start here:** Go screen by screen and write each action on its own line, including the ones you think are obvious.
+**Start here:** Write the task first, then go screen by screen and write each action on its own line, including the ones you think are obvious. No research notes of your own? Use the supplied practice notes in this lesson: 3 of 4 interviewees and the observed participant checked with someone before paying; one paper-test participant pressed Add to shortlist thinking she had booked; two looked for the places left first; 7 of 11 reviews mentioned not knowing what to bring.
 
-**Enough:** Every screen appears in the list, including the ones with only one action on them.
+**Enough:** The task is one sentence, the evidence is listed with counts, and every screen appears in the action list.
 
-**Primary action:** The outcome the screen exists to produce. One per screen; two means the screen has two jobs.
+**Primary action:** The outcome this screen exists to produce. Usually one per screen; two equally loud actions usually mean the screen has two jobs.
+
+**Evidence:** Something you can point at: a note, a count, an observation. Your own notes, or the supplied practice notes labelled as supplied.
 
 **Target:** The area a finger can actually hit, which is usually larger than the part you drew.
+
+
+### The task one screen exists for, and the evidence about what people need there (your own notes, or the supplied practice notes, named as such)
+
+Section: practice-plan. Stable action: write-task-evidence.
+
+Write the task as an outcome, such as “decide about one class and reserve a place”. Then list the notes you will rank against, with counts and no names. Raw notes stay in your private file.
+
+**Answer:** The task one screen exists for, and the evidence about what people need there (your own notes, or the supplied practice notes, named as such)
+
+Write the task as an outcome, such as “decide about one class and reserve a place”. Then list the notes you will rank against, with counts and no names. Raw notes stay in your private file.
+
+<details>
+<summary>Example</summary>
+
+Example (made up): task, decide about one class and reserve a place. Evidence, supplied notes: 3 of 4 interviewees checked with someone before paying; one person pressed Add to shortlist thinking she had booked.
+
+</details>
 
 
 ### Each action, the screen it is on, and the emphasis it currently has
@@ -1549,19 +1659,20 @@ Write your answer for “Screens carrying more than one main action”. Use the 
 
 
 
-### Specify three levels
+### Rank, then specify three levels
 
 Section: practice-plan. Stable action: step-2-brief.
 
-Three levels defined by weight, size and containment, each differing from the next in at least two properties.
+Two defensible layouts for one screen, ranked from its task and evidence, and three levels defined by weight, size and containment, two properties apart.
 
+- Rank that screen’s actions from its task and evidence, then draw a second layout the same evidence could also defend.
 - Define primary, secondary and quiet with weight, size and containment.
 - Make each level differ from the next in at least two properties.
 - Add colour last, as reinforcement rather than as the signal.
 
-**Start here:** Write the quiet level first. It is the easiest to define, and the other two are then differences from it.
+**Start here:** Rank first: for each action on your chosen screen, write the note that decides its place, then sketch one other layout the same notes could defend (the before and after figure shows one pair). Then write the quiet level, the easiest to define; the other two are differences from it.
 
-**Enough:** Each level differs from its neighbour in two properties before colour is added.
+**Enough:** Both layouts give a reason for every placement, and each level differs from its neighbour in two properties before colour is added.
 
 **Containment:** Whether the action sits inside a shape: filled, outlined, or nothing at all. A cheap signal that survives greyscale.
 
@@ -1591,11 +1702,11 @@ Made-up example. Defining three levels of emphasis in five minutes, then finding
 **Unknown:** Still unknown: whether the outlined secondary reads as pressable to a person who has never used the product. That is a question for a test, not for the specification.
 
 
-### Try the distinction · 1 of 6
+### Try the distinction · 1 of 7
 
 Section: practice-plan. Stable action: step-2-sort-1.
 
-Six actions from someone else’s screens, all made up for practice. Each line says what the screen is for, then names one action on it. Decide whether that action is the screen’s primary, a secondary one, or a quiet one.
+Seven actions from someone else’s screens, all made up for practice. Each line says what the screen is for, sometimes with a made-up research note, then names one action on it. Decide whether that action is the screen’s primary, a secondary one, or a quiet one, for that screen and that evidence.
 
 Class details screen, which exists so a person can decide about one class and take it. The action: “Book a place”.
 
@@ -1606,22 +1717,22 @@ Class details screen, which exists so a person can decide about one class and ta
 <details>
 <summary>After your attempt</summary>
 
-primary — It is the outcome the screen exists to produce, so it holds the fill and the weight. One screen, one job, one primary.
+primary — It is the outcome the screen exists to produce, so it holds the fill and the weight. A screen with one job has one primary.
 
-secondary — A secondary action is one a person might reasonably take instead. Demote this and the screen is left with no job at all.
+secondary — A secondary action is one a person might reasonably take instead of, or on the way to, the main outcome. Demote this and the screen is left with no job at all.
 
-quiet — Quiet is for actions that must exist and rarely apply. Booking is the reason the person opened the screen.
+quiet — Quiet is for actions that must exist and that this task rarely needs. Booking is the reason the person opened the screen.
 
-Now label every action on your own list from step 1 with one of these three. Any screen that ends up with two primaries goes on your list of screens to split.
+Now label every action on your own list from step 1 with one of these three, and write the note behind each label. Any screen that ends up with two primaries goes on your list of screens to split.
 
 </details>
 
 
-### Try the distinction · 2 of 6
+### Try the distinction · 2 of 7
 
 Section: practice-plan. Stable action: step-2-sort-2.
 
-Six actions from someone else’s screens, all made up for practice. Each line says what the screen is for, then names one action on it. Decide whether that action is the screen’s primary, a secondary one, or a quiet one.
+Seven actions from someone else’s screens, all made up for practice. Each line says what the screen is for, sometimes with a made-up research note, then names one action on it. Decide whether that action is the screen’s primary, a secondary one, or a quiet one, for that screen and that evidence.
 
 The same class details screen. The action: “Add to shortlist”, currently drawn as a second filled button of exactly the same weight as booking.
 
@@ -1638,18 +1749,18 @@ secondary — It is a genuine alternative and it is not what the screen is for. 
 
 quiet — Quiet would hide a choice people really make. Secondary keeps it available without competing with the booking.
 
-Now label every action on your own list from step 1 with one of these three. Any screen that ends up with two primaries goes on your list of screens to split.
+Now label every action on your own list from step 1 with one of these three, and write the note behind each label. Any screen that ends up with two primaries goes on your list of screens to split.
 
 </details>
 
 
-### Try the distinction · 3 of 6
+### Try the distinction · 3 of 7
 
 Section: practice-plan. Stable action: step-2-sort-3.
 
-Six actions from someone else’s screens, all made up for practice. Each line says what the screen is for, then names one action on it. Decide whether that action is the screen’s primary, a secondary one, or a quiet one.
+Seven actions from someone else’s screens, all made up for practice. Each line says what the screen is for, sometimes with a made-up research note, then names one action on it. Decide whether that action is the screen’s primary, a secondary one, or a quiet one, for that screen and that evidence.
 
-The same class details screen. The action: “Share this class”, currently a small text link near the bottom.
+The same class details screen. The made-up research notes for it say 3 of 4 interviewees and the observed participant checked the plan with another person before paying. The action: “Share this class”, currently a small text link near the bottom.
 
 - primary
 - secondary
@@ -1658,22 +1769,22 @@ The same class details screen. The action: “Share this class”, currently a s
 <details>
 <summary>After your attempt</summary>
 
-primary — Nobody opens a class page in order to share it, and raising it takes attention from the action that pays for the screen.
+primary — Sharing helps most people here reach a booking, and it is still not the outcome this screen exists for. Filled, it competes with booking and leaves the person who books alone looking for the right button.
 
-secondary — Secondary is the alternative to the main outcome. Sharing is not an alternative to booking; it is an extra.
+secondary — For this screen and these notes, sharing is a step on the way to booking for most people, so it earns a visible, outlined place near booking without competing with it.
 
-quiet — It must exist, it is used rarely, and it costs nothing to leave unshouted. Quiet is exactly right.
+quiet — Quiet fits an action this task rarely needs. These notes say most people check with someone before paying, so a small link at the bottom hides a step they take.
 
-Now label every action on your own list from step 1 with one of these three. Any screen that ends up with two primaries goes on your list of screens to split.
+Now label every action on your own list from step 1 with one of these three, and write the note behind each label. Any screen that ends up with two primaries goes on your list of screens to split.
 
 </details>
 
 
-### Try the distinction · 4 of 6
+### Try the distinction · 4 of 7
 
 Section: practice-plan. Stable action: step-2-sort-4.
 
-Six actions from someone else’s screens, all made up for practice. Each line says what the screen is for, then names one action on it. Decide whether that action is the screen’s primary, a secondary one, or a quiet one.
+Seven actions from someone else’s screens, all made up for practice. Each line says what the screen is for, sometimes with a made-up research note, then names one action on it. Decide whether that action is the screen’s primary, a secondary one, or a quiet one, for that screen and that evidence.
 
 Payment screen at the end of a booking, which exists to take the payment. The action: “Pay 45 pounds”.
 
@@ -1690,16 +1801,16 @@ secondary — Everything else on this screen exists to support the payment. Maki
 
 quiet — A quiet payment button is an unfinished booking. This is the outcome the whole flow was building towards.
 
-Now label every action on your own list from step 1 with one of these three. Any screen that ends up with two primaries goes on your list of screens to split.
+Now label every action on your own list from step 1 with one of these three, and write the note behind each label. Any screen that ends up with two primaries goes on your list of screens to split.
 
 </details>
 
 
-### Try the distinction · 5 of 6
+### Try the distinction · 5 of 7
 
 Section: practice-plan. Stable action: step-2-sort-5.
 
-Six actions from someone else’s screens, all made up for practice. Each line says what the screen is for, then names one action on it. Decide whether that action is the screen’s primary, a secondary one, or a quiet one.
+Seven actions from someone else’s screens, all made up for practice. Each line says what the screen is for, sometimes with a made-up research note, then names one action on it. Decide whether that action is the screen’s primary, a secondary one, or a quiet one, for that screen and that evidence.
 
 The same payment screen. The action: “Change the date”, which sends the person back one step in the booking.
 
@@ -1716,16 +1827,16 @@ secondary — It is the reasonable alternative to paying now, so it stays visibl
 
 quiet — Quiet would bury a correction people need at exactly this moment, when they are checking the details for the last time.
 
-Now label every action on your own list from step 1 with one of these three. Any screen that ends up with two primaries goes on your list of screens to split.
+Now label every action on your own list from step 1 with one of these three, and write the note behind each label. Any screen that ends up with two primaries goes on your list of screens to split.
 
 </details>
 
 
-### Try the distinction · 6 of 6
+### Try the distinction · 6 of 7
 
 Section: practice-plan. Stable action: step-2-sort-6.
 
-Six actions from someone else’s screens, all made up for practice. Each line says what the screen is for, then names one action on it. Decide whether that action is the screen’s primary, a secondary one, or a quiet one.
+Seven actions from someone else’s screens, all made up for practice. Each line says what the screen is for, sometimes with a made-up research note, then names one action on it. Decide whether that action is the screen’s primary, a secondary one, or a quiet one, for that screen and that evidence.
 
 Booking detail screen, which exists so a person can check a booking she already holds and change the date if she needs to. The action: “Cancel this booking”, which releases the place immediately.
 
@@ -1740,11 +1851,66 @@ primary — Consequence is not emphasis. Making the irreversible action the loud
 
 secondary — Secondary sits beside the main action and invites comparison. A destructive action wants distance rather than a neighbouring position.
 
-quiet — It is rare and it is serious, and its safety comes from separation and a confirmation rather than from weight.
+quiet — It is serious and it is not what this screen is mainly for, so its safety comes from separation and a confirmation rather than from weight.
 
-Now label every action on your own list from step 1 with one of these three. Any screen that ends up with two primaries goes on your list of screens to split.
+Now label every action on your own list from step 1 with one of these three, and write the note behind each label. Any screen that ends up with two primaries goes on your list of screens to split.
 
 </details>
+
+
+### Try the distinction · 7 of 7
+
+Section: practice-plan. Stable action: step-2-sort-7.
+
+Seven actions from someone else’s screens, all made up for practice. Each line says what the screen is for, sometimes with a made-up research note, then names one action on it. Decide whether that action is the screen’s primary, a secondary one, or a quiet one, for that screen and that evidence.
+
+A drop-in session sold at the studio door. The made-up notes say everyone booked for themselves on the spot and nobody mentioned asking anyone first. The action: “Share this class”.
+
+- primary
+- secondary
+- quiet
+
+<details>
+<summary>After your attempt</summary>
+
+primary — Nobody in these notes came to share, and filling it would compete with the booking people make on the spot.
+
+secondary — Secondary is for an action people here genuinely take beside or before the main outcome. In these notes nobody did, so raising it spends attention and returns little.
+
+quiet — The same action as the earlier sharing line, with different evidence. Here nobody asked anyone first, so keeping it available and quiet fits this task.
+
+Now label every action on your own list from step 1 with one of these three, and write the note behind each label. Any screen that ends up with two primaries goes on your list of screens to split.
+
+</details>
+
+
+### Layout A: each action on that screen ranked primary, secondary or quiet, with the piece of evidence behind each placement
+
+Section: practice-plan. Stable action: write-layout-a.
+
+One line per action. If a placement has no evidence behind it, write “judgement” beside it rather than leaving it unexplained.
+
+**Answer:** Layout A: each action on that screen ranked primary, secondary or quiet, with the piece of evidence behind each placement
+
+One line per action. If a placement has no evidence behind it, write “judgement” beside it rather than leaving it unexplained.
+
+<details>
+<summary>Example</summary>
+
+Example (made up): Reserve a place, primary, the screen exists to book. Share with a friend, secondary under Reserve, most people checked with someone first. Add to shortlist, quiet, one person mistook it for booking.
+
+</details>
+
+
+### Layout B: a different arrangement the same evidence could also defend, and what it gains or loses against A
+
+Section: practice-plan. Stable action: write-layout-b.
+
+Change one real thing: a placement, an emphasis or what sits beside what. If you cannot find a second defensible layout, write why the evidence allows only one.
+
+**Answer:** Layout B: a different arrangement the same evidence could also defend, and what it gains or loses against A
+
+Change one real thing: a placement, an emphasis or what sits beside what. If you cannot find a second defensible layout, write why the evidence allows only one.
 
 
 ### Primary: weight, size and containment
@@ -1926,24 +2092,24 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You make the important button a stronger colour and leave everything else as it was. Why is that weak?
 
-- It is weak only for people who cannot distinguish certain colours.
-- It works as long as the colour meets the contrast threshold.
-- Colour fails in greyscale, in sunlight, for some readers, and when someone later changes the palette.
+- It is strong enough, as long as the stronger colour still meets the contrast threshold.
+- It is weak only for people who cannot tell certain colours apart.
+- Colour fails in greyscale, in sunlight, for some readers and after a palette change.
 
 <details>
 <summary>After your attempt</summary>
 
-It is weak only for people who cannot distinguish certain colours. — That group matters and is not the whole problem. The same button is unrankable in bright sunlight and after a repaint.
+It is strong enough, as long as the stronger colour still meets the contrast threshold. — Contrast makes the text readable against its background. It does not make one button outrank another.
 
-It works as long as the colour meets the contrast threshold. — Contrast makes the text readable against its background. It does not make one button outrank another.
+It is weak only for people who cannot tell certain colours apart. — That group matters and is not the whole problem. The same button is unrankable in bright sunlight, in greyscale and after a repaint.
 
-Colour fails in greyscale, in sunlight, for some readers, and when someone later changes the palette. — Weight, size and containment survive all four. Colour is worth adding on top of them and is a poor place to keep the ranking.
+Colour fails in greyscale, in sunlight, for some readers and after a palette change. — Weight, size and containment survive all four. Colour is worth adding on top of them and is a poor place to keep the ranking.
 
 Improve: Look at your three levels in step 2. If any two differ by colour alone, change weight or containment until they differ in two properties, and record the change in step 5.
 
 Check again: The greyscale photograph in step 4 lets you rank the three levels with the colour gone.
 
-Answers to revisit: primary-spec, secondary-spec, quiet-spec, two-properties, improvement-made
+Answers to revisit: layout-a, layout-b, primary-spec, secondary-spec, quiet-spec, two-properties, improvement-made
 
 </details>
 
@@ -1954,26 +2120,26 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-One screen has two filled buttons and you do not want to demote either. What does that tell you?
+On a class screen whose made-up notes say 3 of 4 interviewees checked with someone before paying, “Reserve a place” and “Share with a friend” are both filled. How do you rank them?
 
-- A larger gap between the two buttons solves it.
-- The screen is doing two jobs, so either one action wins or the screen is split.
-- It is acceptable when the two actions are genuinely equal.
+- Both stay filled, because the notes show that both actions matter to most people on this screen.
+- Reserve stays the one filled action; sharing becomes a visible secondary, a step towards booking.
+- Sharing becomes quiet, because on any booking screen sharing is an extra that should not compete.
 
 <details>
 <summary>After your attempt</summary>
 
-A larger gap between the two buttons solves it. — Space stops mis-taps, which is worth doing. It still tells nobody which action the screen is for.
+Both stay filled, because the notes show that both actions matter to most people on this screen. — Both matter, and only one is the outcome this screen exists for. Two equal filled buttons leave the person to work out which one books, and in the lesson’s example someone pressed the wrong one.
 
-The screen is doing two jobs, so either one action wins or the screen is split. — The reluctance is the finding. Write the two jobs down and the choice usually makes itself.
+Reserve stays the one filled action; sharing becomes a visible secondary, a step towards booking. — The screen still exists to book, so booking keeps the fill. These notes make sharing part of reaching that booking for most people, so it earns a visible, outlined place rather than a corner icon. A second layout could defend placing it beside the price.
 
-It is acceptable when the two actions are genuinely equal. — Equal actions leave the person to decide with no help at all. Someone will press one while believing she pressed the other.
+Sharing becomes quiet, because on any booking screen sharing is an extra that should not compete. — That is the blanket claim these notes contradict: most people here checked with someone before paying. Quiet suits an action this task rarely needs, and on a screen where people book alone it could be right.
 
-Improve: Take each screen you marked in step 1 as carrying more than one main action, write the two jobs it does, then choose one or split the screen, and record it in step 5.
+Improve: Look at Layout A and Layout B in step 2. If either ranks by habit or a general rule rather than the task and the evidence, re-rank it, and record the change in step 5.
 
-Check again: Every screen shows one primary action, or appears on the split list.
+Check again: Both layouts give the evidence behind each placement, and any screen with two equally loud actions is resolved or split.
 
-Answers to revisit: actions-listed, two-primaries, improvement-made
+Answers to revisit: layout-a, layout-b, primary-spec, secondary-spec, quiet-spec, two-properties, improvement-made
 
 </details>
 
@@ -1986,18 +2152,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your cancellation dialogue offers “OK” and “Cancel”. What is the trouble?
 
-- They are standard words, so people already understand them.
-- The only trouble is that “Cancel” is confusing next to cancelling a booking.
-- Neither word says what will happen, so the person has to remember the question to answer it.
+- Only “Cancel” is a problem, since it collides with cancelling a booking; “OK” is perfectly clear.
+- They are standard dialogue words, so people already know how each one behaves.
+- Neither word says what will happen, so the person must remember the question to answer it.
 
 <details>
 <summary>After your attempt</summary>
 
-They are standard words, so people already understand them. — People understand how to press them. What they do not know is which one does the thing they wanted.
+Only “Cancel” is a problem, since it collides with cancelling a booking; “OK” is perfectly clear. — That collision is real and it is one instance. “OK” carries no outcome anywhere it appears.
 
-The only trouble is that “Cancel” is confusing next to cancelling a booking. — That collision is real and it is one instance. “OK” carries no outcome anywhere it appears.
+They are standard dialogue words, so people already know how each one behaves. — People understand how to press them. What they do not know is which one does the thing they wanted.
 
-Neither word says what will happen, so the person has to remember the question to answer it. — Labels that name the outcome, such as “Keep my booking” and “Release my place”, can be read on their own.
+Neither word says what will happen, so the person must remember the question to answer it. — Labels that name the outcome, such as “Keep my booking” and “Release my place”, can be read on their own.
 
 Improve: Read each label in step 3 aloud as “I want to …”. Rewrite any that does not finish the sentence, pair each destructive label with its safe alternative, and record the change in step 5.
 
@@ -2012,11 +2178,12 @@ Answers to revisit: label-rewrites, destructive-pairs, improvement-made
 
 Section: practice. Stable action: step-5-brief.
 
-The repaired greyscale failure, any screen you split, and the repair the Check questions asked for.
+The repaired greyscale failure, any screen you split, the layout you would test first and how, and the repair the Check questions asked for.
 
 - Repair the worst greyscale failure by changing weight or containment.
 - Record any screen you split because it had two primaries.
-- Save the specification with the greyscale evidence.
+- Write which of your two layouts you would test first, the task you would set and the result that would make you switch.
+- Save the specification with the greyscale evidence and both layouts.
 
 **Start here:** Change one property at a time and re-photograph, so you know which change did the work.
 
@@ -2049,6 +2216,24 @@ Write your answer for “Any screen you split because it had two main actions, a
 
 
 
+### Which layout you would test first, the task you would set, and the result that would make you switch
+
+Section: practice. Stable action: write-layout-test.
+
+Write your answer for “Which layout you would test first, the task you would set, and the result that would make you switch”. Use the task instructions below to decide what to include.
+
+**Answer:** Which layout you would test first, the task you would set, and the result that would make you switch
+
+
+
+<details>
+<summary>Example</summary>
+
+Example (made up): test A first. Task: check this class with a friend, then book it. If people hunt for Share or press it thinking it books, try B.
+
+</details>
+
+
 ### What you changed after the Check questions
 
 Section: practice. Stable action: write-improvement-made.
@@ -2058,6 +2243,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a bike repair shop’s phone screen for one service offers “Book a repair slot”, “Get a price by message” and “Save for later”, all drawn the same size. The shop’s own notes say 6 of the last 8 callers asked for a price before booking. One regular customer always books straight away.
+
+**Task:** Rank the three actions for this screen and explain how the task and the notes decide it. Name what you would watch for in a test.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Ranks by a general rule (booking is always loud, everything else small) or by colour, without using the price question in the notes, or leaves all three equal.
+- Adequate: Booking stays the primary outcome; getting a price becomes a visible secondary because most callers ask first; save for later is quiet. The emphasis is carried by weight and containment, not colour.
+- Strong: As adequate, plus a second defensible layout (such as the price shown on the screen itself, or the price action beside the details) and a test that would choose between them, remembering the regular who books at once.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -2080,12 +2291,12 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: Actions: hierarchy, targets and labels
-What I am trying to do: Specify your action components at three levels of emphasis with measured target sizes and verb-first labels, and prove the hierarchy survives greyscale.
+What I am trying to do: Rank the actions on one screen from its task and the evidence, compare two defensible layouts, then specify three levels of emphasis with measured targets, verb-first labels and a greyscale check.
 
 Key idea or terms:
-Primary action: The outcome the screen exists to produce. One per screen; two means the screen has two jobs.
+Primary action: The outcome this screen exists to produce. Usually one per screen; two equally loud actions usually mean the screen has two jobs.
+Evidence: Something you can point at: a note, a count, an observation. Your own notes, or the supplied practice notes labelled as supplied.
 Target: The area a finger can actually hit, which is usually larger than the part you drew.
-Containment: Whether the action sits inside a shape: filled, outlined, or nothing at all. A cheap signal that survives greyscale.
 
 Supplied practice material (fictional or labelled practice, not my research):
 Made-up example. Defining three levels of emphasis in five minutes, then finding out that colour had been doing all the work. Primary is the brand green, secondary is grey, quiet is a text link. It took five minutes and it looked like a specification.
@@ -2093,19 +2304,19 @@ Made-up example. Defining three levels of emphasis in five minutes, then finding
 Activity: Before explaining the tool or method, ask me to predict what the next action will change. After I answer, explain the visible result and one common recovery step.
 
 Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
-When the activity is finished, tell me to return to the course answer called “Each action, the screen it is on, and the emphasis it currently has” and write my own decision. Do not write that answer for me.
+When the activity is finished, tell me to return to the course answer called “The task one screen exists for, and the evidence about what people need there (your own notes, or the supplied practice notes, named as such)” and write my own decision. Do not write that answer for me.
 ```
 
-**Come back to the course:** Return to “Each action, the screen it is on, and the emphasis it currently has”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+**Come back to the course:** Return to “The task one screen exists for, and the evidence about what people need there (your own notes, or the supplied practice notes, named as such)”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Each action, the screen it is on, and the emphasis it currently has” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The task one screen exists for, and the evidence about what people need there (your own notes, or the supplied practice notes, named as such)” and write one sentence in your own words.
 
 </details>
 <details>
 <summary>Optional hints and reference material</summary>
 
 - Convert your buttons to greyscale. If you cannot rank them, change weight or containment until you can, then note which change did it.
-- For each screen with two primaries, write the two jobs it is doing. Then choose one or split the screen.
+- Write the screen's task in one sentence and list the notes about what people need there. Rank the actions from those notes, then draw one more layout the same notes could defend.
 
 - R17: [GOV.UK Design System: components](https://design-system.service.gov.uk/components/) — The button component, read for variants, when to use each and its content guidance. Purpose: Gives a worked specification of action emphasis and labelling from a production library. Free reading, no account. Verified 2026-09-06. Its variants suit government transactional services; take the specification and the labelling reasoning, not the colours. Fallback: R06.
 - R31: [Laws of UX](https://lawsofux.com/) — The assigned pages only: fittss-law and law-of-proximity. Purpose: Explains why target size, distance and grouping change how quickly and safely an action is hit. Free reading, no account. Verified 2026-09-06. The site publishes no caveats: a law describes a tendency, and your measured thumb test is the evidence. A printed poster is sold and also offered free; no purchase is required. Fallback: R02.
@@ -2128,19 +2339,19 @@ Adequate evidence: A specification giving weight, size and containment per level
 
 Repair: Convert your buttons to greyscale. If you cannot rank them, change weight or containment until you can, then note which change did it. Recheck: The greyscale rendering and the revised specification.
 
-**One primary action per screen, or the screen was split**
+**The ranking follows the screen’s task and evidence, with two layouts compared**
 
-Adequate evidence: A per-screen list showing a single primary, with any exception justified or resolved by splitting.
+Adequate evidence: A stated task for one screen, the evidence used (your own notes, or the supplied practice notes labelled as supplied), a ranking with the reason for each placement, any two-primary screen resolved or split, and two defensible layouts with the test that would choose between them.
 
-0 — Multiple primaries left in place.
+0 — Actions ranked by habit, colour or a general rule, with no task or evidence stated.
 
-1 — Identified but unresolved.
+1 — A task stated, but the ranking does not follow from evidence, or only one layout is considered.
 
-2 — One primary per screen, or a recorded split.
+2 — The ranking follows the task and named evidence, and two defensible layouts are compared with a test that would choose.
 
-3 — As adequate, and a screen that resisted splitting is documented with the trade-off accepted.
+3 — As adequate, and the write-up names what evidence would reverse the ranking, such as notes showing people book alone.
 
-Repair: For each screen with two primaries, write the two jobs it is doing. Then choose one or split the screen. Recheck: The per-screen list and any split.
+Repair: Write the screen's task in one sentence and list the notes about what people need there. Rank the actions from those notes, then draw one more layout the same notes could defend. Recheck: The task, the evidence, both layouts and the test.
 
 **Labels lead with the verb of the outcome**
 
@@ -2178,7 +2389,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 **Review criteria:**
 
 - Three levels differ in at least two properties each
-- One primary action per screen, or the screen was split
+- The ranking follows the screen’s task and evidence, with two layouts compared
 - Labels lead with the verb of the outcome
 - Targets and spacing are measured, not estimated
 
@@ -2186,7 +2397,8 @@ The progress bar counts required actions with saved work. It is not a score or p
 <summary>Reading, video and deeper explanation</summary>
 
 - Emphasis is comparative, so a hierarchy exists only if the levels differ in more than one dimension. A primary action that differs from a secondary one only by colour disappears for a person with a colour-vision deficiency, in bright sunlight, or in a greyscale printout — and those are the ordinary conditions your booking screen will meet on a phone outside. Containment, weight and size are what carry emphasis reliably; colour is a reinforcement, not the signal.
-- One primary per screen is a structural rule more than a visual one. When you find two, the honest reading is usually that the screen is doing two jobs, and the fix is to split the screen or to decide which job it is actually for. Screens with three primaries teach people to read everything as equally urgent, after which nothing is emphasised at all.
+- Which action leads is decided by what the screen is for and what the evidence says people need there, not by a general rule. In this course's made-up booking case, 3 of 4 interviewees and the observed participant checked the plan with someone else before paying, so a share action is a step on the way to booking rather than an extra; on a screen where the notes showed people booking alone, the same action could reasonably stay quiet. Two actions of equal weight usually mean the screen is doing two jobs, and the fix is to decide which job it is for or to split it. Screens with three primaries teach people to read everything as equally urgent, after which nothing is emphasised at all.
+- A ranking is a claim about what people need first, so treat it as something to test. Draw a second layout that the same evidence could also defend, then write what you would watch for to choose between them: who finds the action without help, who mistakes one action for another. Keeping both drawings is what lets a test change your mind cheaply.
 - Labels carry more weight than the styling. “Submit” describes what the software does; “Book a place” describes what the person gets, and a person scanning for their outcome finds the second and not the first. Verb-first labels also make destructive actions honest: “Cancel booking” beside “Keep booking” is unambiguous, while “Yes” and “No” beside a question people did not read carefully is a trap.
 - Target size is a physical property, not a style. A control that is comfortable with a mouse can be unreachable with a thumb on a moving bus, and a destructive action sitting next to a common one converts a slip into a loss. Give consequential actions space as well as size, and put distance between actions whose outcomes differ sharply.
 
@@ -2271,7 +2483,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- A booking form used placeholders as labels, validated the phone number on every keystroke, and cleared the form on a failed submission. Rebuilt: labels above every field and permanently visible; a line under the phone field saying which formats are accepted; validation on leaving the field; errors shown at the field with the fix stated; and everything preserved after a failure, with the page-level summary linking to the first problem. A keyboard pass found that the date control could be reached but not operated without a mouse, which was recorded as an implementation issue rather than claimed as fixed.
+- Made-up example: a booking form used placeholders as labels, validated the phone number on every keystroke, and cleared the form on a failed submission. Rebuilt: labels above every field and permanently visible; a line under the phone field saying which formats are accepted; validation on leaving the field; errors shown at the field with the fix stated; and everything preserved after a failure, with the page-level summary linking to the first problem. A keyboard pass found that the date control could be reached but not operated without a mouse, which was recorded as an implementation issue rather than claimed as fixed.
 
 
 ### Choose where you will do the work
@@ -2519,21 +2731,21 @@ A supplied booking form, made up for practice. Someone fills in six fields, mist
 
 What is the most serious thing wrong with this screen?
 
-- The six fields were cleared, so one mistake has cost the person five answers that were right.
-- The form validated on submission rather than as the person typed.
-- The banner does not say which field was wrong.
-- The message is red, and some people cannot distinguish that.
+- The banner relies on red, which some people cannot tell apart from the other colours.
+- The six fields were cleared, so one mistyped date cost five answers that were right.
+- The banner names no field, so the person has to hunt through six boxes for the mistake.
+- Checking happened on submission rather than while the person was typing each field.
 
 <details>
 <summary>After your attempt</summary>
 
-The six fields were cleared, so one mistake has cost the person five answers that were right. — Losing the input is the only failure here that takes back work already done. The rest of this screen is irritating; this is the part that makes people give up and ring instead.
+The banner relies on red, which some people cannot tell apart from the other colours. — Carrying meaning in colour alone is a genuine fault, and it matters more once the message actually says something. Here the wording is empty whatever colour it is.
 
-The form validated on submission rather than as the person typed. — Validating on submission is a reasonable choice. Checking a half-typed expiry date on every keystroke tells someone they are wrong while they are still working.
+The six fields were cleared, so one mistyped date cost five answers that were right. — Losing the input is the only failure here that takes back work already done. The rest of this screen is irritating; this is the part that makes people give up and ring instead.
 
-The banner does not say which field was wrong. — A real problem and the second one to fix. It costs the person a hunt through the form, while the cleared fields cost them the form itself.
+The banner names no field, so the person has to hunt through six boxes for the mistake. — A real problem and the second one to fix. It costs the person a hunt through the form, while the cleared fields cost them the form itself.
 
-The message is red, and some people cannot distinguish that. — Carrying meaning in colour alone is a genuine fault, and it matters more once the message actually says something. Here the wording is empty whatever colour it is.
+Checking happened on submission rather than while the person was typing each field. — Validating on submission is a reasonable choice. Checking a half-typed expiry date on every keystroke tells someone they are wrong while they are still working.
 
 Write your own failure path so every value survives, the summary names the first field with a problem, and the error sits at that field.
 
@@ -2581,18 +2793,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 To keep the form looking clean you put each field name inside the box as grey text. What happens?
 
-- It is fine as long as the grey text has enough contrast.
-- The name disappears the moment someone types, so nobody can check their answers before submitting.
-- Nothing much: people remember what they were asked a moment ago.
+- The names vanish once someone types, so nobody can check answers before submitting.
+- It works well, provided the grey text inside each box has enough contrast.
+- Little changes, because people remember what each box asked for a moment ago.
 
 <details>
 <summary>After your attempt</summary>
 
-It is fine as long as the grey text has enough contrast. — Contrast helps the empty box and changes nothing about the filled one, because the words are no longer there to read.
+The names vanish once someone types, so nobody can check answers before submitting. — The label is needed most at the end, when a person reads back what they entered. Grey text inside the box has gone by then.
 
-The name disappears the moment someone types, so nobody can check their answers before submitting. — The label is needed most at the end, when a person reads back what they entered. Grey text inside the box has gone by then.
+It works well, provided the grey text inside each box has enough contrast. — Contrast helps the empty box and changes nothing about the filled one, because the words are no longer there to read.
 
-Nothing much: people remember what they were asked a moment ago. — People are interrupted mid-form constantly. Anyone who looks away, or comes back to fix one error, is reading a set of unlabelled boxes.
+Little changes, because people remember what each box asked for a moment ago. — People are interrupted mid-form constantly. Anyone who looks away, or comes back to fix one error, is reading a set of unlabelled boxes.
 
 Improve: Go back to your field table in step 2 and give every field a label that stays above the box. Move anything useful from the placeholder into the help line, then record the change in step 5.
 
@@ -2611,18 +2823,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your form rejects a submission and reloads with every box empty. Your reasoning was that the person can fill it in again. What is wrong?
 
-- It is acceptable if the error message is clear enough.
-- Only the field with the error needs to be preserved.
-- One mistake now costs every correct answer, which is worse for the person than not validating at all.
+- Only the field with the error needed preserving; the others can be retyped.
+- It is acceptable, provided the error message explains clearly what went wrong.
+- One mistake now costs every correct answer, which is worse than not checking at all.
 
 <details>
 <summary>After your attempt</summary>
 
-It is acceptable if the error message is clear enough. — A clear message explains what went wrong on a screen where everything the person typed has gone. The wording does not return the work.
+Only the field with the error needed preserving; the others can be retyped. — The field with the error is the one thing they were going to retype anyway. It is the five correct fields that must survive.
 
-Only the field with the error needs to be preserved. — The field with the error is the one thing they were going to retype anyway. It is the five correct fields that must survive.
+It is acceptable, provided the error message explains clearly what went wrong. — A clear message explains what went wrong on a screen where everything the person typed has gone. The wording does not return the work.
 
-One mistake now costs every correct answer, which is worse for the person than not validating at all. — Skipping validation at least lets the work through. Validation that clears the form takes the work away and gives nothing back.
+One mistake now costs every correct answer, which is worse than not checking at all. — Skipping validation at least lets the work through. Validation that clears the form takes the work away and gives nothing back.
 
 Improve: Rewrite the preserved-input box in step 4 so it describes every value still in place after a failure, then record the change in step 5.
 
@@ -2713,6 +2925,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a council’s form for booking a bulky-waste collection asks for a phone number. It rejects numbers typed with spaces, says “Invalid format” only after submission, and reloads with every field empty. The help explaining the accepted format appears only inside that error.
+
+**Task:** Which single change would you make first, and why? Say what you would change next.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Makes the error message red, bolder or more polite, leaving the cleared form, the rejected spaces and the after-the-fact help in place.
+- Adequate: Keeps every value after a failed submission first, because the cleared form costs all the correct answers; next accepts spaces and moves the format help under the label, before the mistake.
+- Strong: As adequate, plus when validation runs (on leaving the field or on submission), an error at the field that names the fix, and a keyboard pass or an honest note that it is untested.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -2926,7 +3164,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- A phone header held a logo, a search icon and a menu icon; the only route to “Change or cancel a booking” was inside the menu, and in the m07 paper test two people said they would ring instead. The revision kept the logo small, put the current section name in the header as the location signal, promoted “My bookings” to a visible item, and left genuinely secondary destinations in the menu. On the wide layout the same items appeared as a row with the current one underlined and bolded, and the underline was checked in greyscale.
+- Made-up example: a phone header held a logo, a search icon and a menu icon; the only route to “Change or cancel a booking” was inside the menu, and in the m07 paper test two people said they would ring instead. The revision kept the logo small, put the current section name in the header as the location signal, promoted “My bookings” to a visible item, and left genuinely secondary destinations in the menu. On the wide layout the same items appeared as a row with the current one underlined and bolded, and the underline was checked in greyscale.
 
 
 ### Choose where you will do the work
@@ -2972,11 +3210,11 @@ Take these from your m06 structure. Mark what people came for, not what the orga
 
 Section: practice-plan. Stable action: write-most-needed.
 
-Write your answer for “The evidence behind those marks, or a plain note that you are guessing”. Use the task instructions below to decide what to include.
+Summarise without names, such as “3 of 4 tree-test participants went to My bookings first”. Raw notes stay in your private file. A labelled guess is an honest answer.
 
 **Answer:** The evidence behind those marks, or a plain note that you are guessing
 
-
+Summarise without names, such as “3 of 4 tree-test participants went to My bookings first”. Raw notes stay in your private file. A labelled guess is an honest answer.
 
 
 ### Design the wide layout
@@ -3084,21 +3322,21 @@ A made-up phone header for a class booking product. It holds a logo, a search ic
 
 What should come out from behind the menu?
 
-- Nothing: the icon is understood, so the menu costs almost nothing.
-- My bookings, because returning to a booking they already hold is what most people came to do.
-- Everything, since hiding navigation is always a mistake.
-- About us, because it explains the product to newcomers.
+- My bookings, because most people come back to check a booking they already hold.
+- About us, because a newcomer needs to understand the studio before booking anything.
+- Every item, so that nobody has to guess what is hidden behind an icon on a phone.
+- Nothing needs to: the menu icon is widely recognised, so its cost is close to zero.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing: the icon is understood, so the menu costs almost nothing. — Recognising the icon was never the problem. People do not open a menu to find out what a product offers, so anything essential behind it is effectively gone for anyone who does not already know it is there.
+My bookings, because most people come back to check a booking they already hold. — The visible set is decided by what people arrived for, and here that is the existing booking. Careers and Terms can stay behind the icon because almost nobody arrives wanting them.
 
-My bookings, because returning to a booking they already hold is what most people came to do. — The visible set is decided by what people arrived for, and here that is the existing booking. Careers and Terms can stay behind the icon because almost nobody arrives wanting them.
+About us, because a newcomer needs to understand the studio before booking anything. — It reads as the generous choice and it serves almost nobody. The header is small enough that promoting About us means demoting something people arrived to use.
 
-Everything, since hiding navigation is always a mistake. — Six visible destinations on a phone header leave no room for the screen itself. A narrow layout needs priority, which means some things do go behind the icon.
+Every item, so that nobody has to guess what is hidden behind an icon on a phone. — Six visible destinations on a phone header leave no room for the screen itself. A narrow layout needs priority, which means some things do go behind the icon.
 
-About us, because it explains the product to newcomers. — It reads as the generous choice and it serves almost nobody. The header is small enough that promoting About us means demoting something people arrived to use.
+Nothing needs to: the menu icon is widely recognised, so its cost is close to zero. — Recognising the icon was never the problem. People rarely open a menu just to find out what a product offers, so anything essential behind it is effectively gone for anyone who does not already know it is there.
 
 Apply the same test to your own list: promote what people came for, then write down what the menu now costs everything else.
 
@@ -3223,18 +3461,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your current section is shown in the brand colour and nothing else. Why is that not enough?
 
-- It is enough as long as the colour has strong contrast against the background.
-- Colour alone disappears in greyscale, in bright sunlight and for many readers, and the location signal goes with it.
-- It is fine because the page title repeats the section name.
+- It is enough as long as the brand colour has strong contrast against the header.
+- It is fine because the page title already repeats the section name lower down.
+- Colour alone vanishes in greyscale, sunlight and for many readers, and the signal goes too.
 
 <details>
 <summary>After your attempt</summary>
 
-It is enough as long as the colour has strong contrast against the background. — Contrast makes the word readable. It does not say that this word means “you are here” rather than “this one is styled differently”.
+It is enough as long as the brand colour has strong contrast against the header. — Contrast makes the word readable. It does not say that this word means “you are here” rather than “this one is styled differently”.
 
-Colour alone disappears in greyscale, in bright sunlight and for many readers, and the location signal goes with it. — A location signal has to survive conditions you do not control. Weight, a rule underneath or a shape change carries it when colour cannot.
+It is fine because the page title already repeats the section name lower down. — The page title helps, and it sits somewhere else on the screen. The navigation still has to show which of its own items you are on.
 
-It is fine because the page title repeats the section name. — The page title helps, and it sits somewhere else on the screen. The navigation still has to show which of its own items you are on.
+Colour alone vanishes in greyscale, sunlight and for many readers, and the signal goes too. — A location signal has to survive conditions you do not control. Weight, a rule underneath or a shape change carries it when colour cannot.
 
 Improve: Change the location signal in step 2 so it works with the colour removed, then record what you changed in step 5.
 
@@ -3253,18 +3491,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 On the phone layout you moved every destination behind the menu icon so the header stays clean. What did that cost?
 
-- One extra tap, which is a small price for a clean header.
-- Nothing, because the icon is widely recognised.
-- Anything people did not already know about is now effectively removed for them, because nobody opens a menu to browse.
+- Whatever people did not already know about is effectively gone; few open menus to browse.
+- Very little, because the three-line menu icon is recognised almost everywhere by now.
+- One extra tap for each destination, which is a small price to pay for a clean, calm header.
 
 <details>
 <summary>After your attempt</summary>
 
-One extra tap, which is a small price for a clean header. — The tap is the smaller half of the cost. The larger half is that the destination is no longer part of what the product appears to offer.
+Whatever people did not already know about is effectively gone; few open menus to browse. — A menu serves people who already know what they are looking for. Everyone else sees a product that appears to do one thing.
 
-Nothing, because the icon is widely recognised. — Recognising the icon and deciding to open it are two different acts. The cost is a tap plus the decision to take it, paid by the people least likely to.
+Very little, because the three-line menu icon is recognised almost everywhere by now. — Recognising the icon and deciding to open it are two different acts. The cost is a tap plus the decision to take it, paid by the people least likely to.
 
-Anything people did not already know about is now effectively removed for them, because nobody opens a menu to browse. — A menu serves people who already know what they are looking for. Everyone else sees a product that appears to do one thing.
+One extra tap for each destination, which is a small price to pay for a clean, calm header. — The tap is the smaller half of the cost. The larger half is that the destination is no longer part of what the product appears to offer.
 
 Improve: Rewrite the visibility rule in step 3 so at least the destination people came for stays visible, then record the change in step 5.
 
@@ -3283,18 +3521,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Back from a detail view returns the person to the top of an unfiltered list. What is wrong?
 
-- The filtering and the scroll position were the person’s work, and back has thrown it away.
-- The fix is to stop people leaving the list in the first place.
-- Nothing: landing on a clean list is at least predictable.
+- The fix is to stop people leaving the list, by showing the details inside it.
+- The filters and scroll position were the person’s work, and back has thrown them away.
+- Little is wrong: a clean list at the top is at least predictable every time.
 
 <details>
 <summary>After your attempt</summary>
 
-The filtering and the scroll position were the person’s work, and back has thrown it away. — Going into a detail view and returning is one of the commonest moves in any product. Losing the list each time makes comparing two things nearly impossible.
+The fix is to stop people leaving the list, by showing the details inside it. — The detail view exists because people need what is in it. The list has to survive the trip rather than the trip being prevented.
 
-The fix is to stop people leaving the list in the first place. — The detail view exists because people need what is in it. The list has to survive the trip rather than the trip being prevented.
+The filters and scroll position were the person’s work, and back has thrown them away. — Going into a detail view and returning is one of the commonest moves in any product. Losing the list each time makes comparing two things nearly impossible.
 
-Nothing: landing on a clean list is at least predictable. — It is predictable and it is the wrong place. Predictability matters after the person’s work is preserved, not instead of it.
+Little is wrong: a clean list at the top is at least predictable every time. — It is predictable and it is the wrong place. Predictability matters after the person’s work is preserved, not instead of it.
 
 Improve: Rewrite the detail-view back behaviour in step 4 to name the filters and the position that are preserved, then record the change in step 5.
 
@@ -3357,6 +3595,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a ferry company’s phone app header holds a logo, a search icon and a menu icon. Behind the menu sit Live departures, Buy tickets, Timetables, Lost property, News and Careers. The company’s own visit counts (made up) say 7 of every 10 visits open Live departures.
+
+**Task:** Decide what stays visible on the phone header and how the current section is shown. Explain why.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps everything behind the menu because the icon is familiar, or shows the current section by colour alone.
+- Adequate: Promotes Live departures to a visible item because most visits are for it, leaves Careers and News in the menu, and marks the current section with weight or an underline, not colour alone.
+- Strong: As adequate, plus what the menu now costs the hidden items, what back does from a departure’s detail view (keeping the chosen route), and a greyscale check of the location signal.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -3570,7 +3834,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- A class list showed eight columns on desktop and scrolled sideways on a phone. Rebuilt: rows kept the four attributes the m05 sessions showed people comparing — day and time, price, place, remaining places — with the rest moved to the detail view. Default sort became soonest first, stated above the list. On a phone each row became a record with the class name as the heading. The longest real class name was used for layout, missing prices showed “price on request” rather than a blank, and a full class showed “Full — see other dates” instead of a zero.
+- Made-up example: a class list showed eight columns on desktop and scrolled sideways on a phone. Rebuilt: rows kept the four attributes the m05 sessions showed people comparing — day and time, price, place, remaining places — with the rest moved to the detail view. Default sort became soonest first, stated above the list. On a phone each row became a record with the class name as the heading. The longest real class name was used for layout, missing prices showed “price on request” rather than a blank, and a full class showed “Full — see other dates” instead of a zero.
 
 
 ### Choose where you will do the work
@@ -3582,13 +3846,23 @@ Recommended route: Draw the list at both widths and the hard-case rows on paper,
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
 
 
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Made-up browse note (this course’s Module 7 example): people choosing between classes compared day and time, price, place and remaining places. Nobody in the notes compared on the teacher or the level.
+- Made-up hard cases for practice: the longest class name is “Saturday morning beginners’ pottery and glaze workshop, Bermondsey”; one class has no price recorded; one class has no places left.
+
+
 ### Decide the row content
 
 Section: practice-plan. Stable action: step-1-brief.
 
 The two to four attributes your row carries, each with the reason it earned the space.
 
-- List the attributes your m05 participants compared on.
+- List the attributes people were seen comparing on: your m05 notes, or the supplied practice notes labelled as supplied.
 - Put those in the row and move everything else to the detail view.
 - Write what you deliberately omitted and why.
 
@@ -3628,11 +3902,11 @@ Made-up example. Cutting a class list row from eight things to four, after the f
 
 Section: practice-plan. Stable action: write-attribute-1.
 
-If your evidence is “it seemed useful”, write that. A guess you have labelled is worth more than a guess you have dressed up.
+If your evidence is “it seemed useful”, write that: a labelled guess is worth more than a dressed-up one. Summarise evidence without names, such as “2 of 5 sessions”. No notes of your own? Cite the supplied practice notes as supplied.
 
 **Answer:** Attribute 1 · what it is, and the evidence that people compare on it
 
-If your evidence is “it seemed useful”, write that. A guess you have labelled is worth more than a guess you have dressed up.
+If your evidence is “it seemed useful”, write that: a labelled guess is worth more than a dressed-up one. Summarise evidence without names, such as “2 of 5 sessions”. No notes of your own? Cite the supplied practice notes as supplied.
 
 <details>
 <summary>Example</summary>
@@ -3818,21 +4092,21 @@ A made-up class list at phone width. Three rows break. One class is called “Sa
 
 Which of these should you deal with first, and why?
 
-- The missing price, because a blank cell looks like broken data.
-- The very long class name, because it wraps to four lines and pulls the row apart.
-- The class with no places left showing “0”, because a number invites the person to try to book it.
-- None of them: these are rare rows and the ordinary ones matter more.
+- None of them yet, because these rows are rare and the ordinary rows matter more.
+- The full class showing “0”, because a number reads as a value and invites a booking attempt.
+- The missing price, because a blank cell looks like broken data and undermines trust.
+- The very long class name, because it wraps onto four lines and pulls the whole of the row apart.
 
 <details>
 <summary>After your attempt</summary>
 
-The missing price, because a blank cell looks like broken data. — A blank does look broken, and “price on request” is worth writing. It leaves the person uncertain, while the zero actively sends them the wrong way.
+None of them yet, because these rows are rare and the ordinary rows matter more. — The ordinary rows were never going to break. Rare rows are exactly where a list stops working, and on paper they cost almost nothing to fix.
 
-The very long class name, because it wraps to four lines and pulls the row apart. — A real problem and the second one to work on. A tall row is untidy; a full class that looks bookable sends someone down a path ending in nothing.
+The full class showing “0”, because a number reads as a value and invites a booking attempt. — A zero reads as a value among other values, so people tap it and meet a dead end. Words such as “Full, see other dates” stop the wasted trip and offer the next move.
 
-The class with no places left showing “0”, because a number invites the person to try to book it. — A zero reads as a value among other values, so people tap it and meet a dead end. Words such as “Full, see other dates” stop the wasted trip and offer the next move.
+The missing price, because a blank cell looks like broken data and undermines trust. — A blank does look broken, and “price on request” is worth writing. It leaves the person uncertain, while the zero actively sends them the wrong way.
 
-None of them: these are rare rows and the ordinary ones matter more. — The ordinary rows were never going to break. Rare rows are exactly where a list stops working, and on paper they cost almost nothing to fix.
+The very long class name, because it wraps onto four lines and pulls the whole of the row apart. — A real problem and the second one to work on. A tall row is untidy; a full class that looks bookable sends someone down a path ending in nothing.
 
 Work through your own hard cases in the same order: what sends someone the wrong way, what leaves them uncertain, what merely looks untidy.
 
@@ -3880,18 +4154,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You put all eight attributes in the row so nobody has to open a detail view. What goes wrong?
 
-- A row carrying everything makes comparison harder, because the two things people compare on are buried among six they do not.
-- It is only a problem on a phone; a desktop table can carry eight.
-- Nothing: more information is always better for the reader.
+- Comparison gets harder: the two things people compare on are buried among six they ignore.
+- Little goes wrong, since more information in the row always helps the reader decide.
+- It only goes wrong on a phone; a desktop table has room to carry all eight easily.
 
 <details>
 <summary>After your attempt</summary>
 
-A row carrying everything makes comparison harder, because the two things people compare on are buried among six they do not. — A row exists for comparing, and comparison depends on what you left out. The detail view is where the rest belongs.
+Comparison gets harder: the two things people compare on are buried among six they ignore. — A row exists for comparing, and comparison depends on what you left out. The detail view is where the rest belongs.
 
-It is only a problem on a phone; a desktop table can carry eight. — A desktop table can display eight, and people still compare on two or three. Width changes what fits, not what people are doing.
+Little goes wrong, since more information in the row always helps the reader decide. — More information is better in the detail view, where a person has already chosen. In a list it is the thing scanning has to fight through.
 
-Nothing: more information is always better for the reader. — More information is better in the detail view, where a person has already chosen. In a list it is the thing scanning has to fight through.
+It only goes wrong on a phone; a desktop table has room to carry all eight easily. — A desktop table can display eight, and people still compare on two or three. Width changes what fits, not what people are doing.
 
 Improve: Cut your attribute list in step 1 to the ones with a reason beside them, move the rest into the omissions box in step 2, then record the change in step 5.
 
@@ -3910,18 +4184,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your table has eight columns, so on a phone you let it scroll sideways. What is the objection?
 
-- Scrolling sideways separates each value from the row it belongs to, so people lose track of what they are reading.
-- The fix is to shrink the text until all eight columns fit.
-- Nothing: horizontal scrolling is a familiar pattern on a phone.
+- Sideways scrolling parts each value from its row, so people lose track of what they read.
+- Shrinking the text until all eight columns fit would be the better fix here.
+- There is little objection: horizontal scrolling is a familiar pattern on phones.
 
 <details>
 <summary>After your attempt</summary>
 
-Scrolling sideways separates each value from the row it belongs to, so people lose track of what they are reading. — The identifying value scrolls away first, and it is the one thing every other value needs. Turning each row into a record keeps the heading with its values.
+Sideways scrolling parts each value from its row, so people lose track of what they read. — The identifying value scrolls away first, and it is the one thing every other value needs. Turning each row into a record keeps the heading with its values.
 
-The fix is to shrink the text until all eight columns fit. — Eight columns at phone width means text nobody can read, and those eight columns were probably too many in the first place.
+Shrinking the text until all eight columns fit would be the better fix here. — Eight columns at phone width means text nobody can read, and those eight columns were probably too many in the first place.
 
-Nothing: horizontal scrolling is a familiar pattern on a phone. — It is familiar in reference tables people read rather than act on. For a list somebody has to choose from, it is a poor default.
+There is little objection: horizontal scrolling is a familiar pattern on phones. — It is familiar in reference tables people read rather than act on. For a list somebody has to choose from, it is a poor default.
 
 Improve: Redraw one row as a record in step 3, with an identifying heading and a label beside each value, then record the change in step 5.
 
@@ -3940,18 +4214,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You laid the list out using short, tidy sample names and round prices. What will that hide?
 
-- Nothing much: the real data will be similar in shape.
-- Only the rarest cases, which can be handled later.
-- Every layout problem the real data causes: the long name, the large number, the missing value.
+- The layout problems real data causes: the long name, the large number, the missing value.
+- Very little, because the real data will be broadly similar in shape and length.
+- Only the rarest cases, which whoever builds the list can handle later on.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing much: the real data will be similar in shape. — Real data is never similar in shape. One class name will be four times the length of the rest, and it will be the one in the screenshot.
+The layout problems real data causes: the long name, the large number, the missing value. — Tidy examples are the rows that were always going to work. The design is decided by the ones that are not tidy, and on paper they cost nothing to try.
 
-Only the rarest cases, which can be handled later. — Handled later means handled by whoever builds it, at the moment they are least able to change the layout.
+Very little, because the real data will be broadly similar in shape and length. — Real data is rarely similar in shape. One class name will be four times the length of the rest, and it will be the one in the screenshot.
 
-Every layout problem the real data causes: the long name, the large number, the missing value. — Tidy examples are the rows that were always going to work. The design is decided by the ones that are not tidy, and on paper they cost nothing to try.
+Only the rarest cases, which whoever builds the list can handle later on. — Handled later means handled by whoever builds it, at the moment they are least able to change the layout.
 
 Improve: Lay out your longest real name and largest real number in step 4, write what broke, then record the change in step 5.
 
@@ -4016,6 +4290,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
 
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a plant nursery’s order history is a seven-column table: order number, date, items, total, delivery status, invoice link and store. On a phone it scrolls sideways. The nursery’s support inbox (made up) says most messages ask whether an order has shipped yet.
+
+**Task:** Decide what each order shows on a phone and the default order of the list. Explain your reasoning.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps all seven columns and lets the table scroll sideways or shrinks the text, or picks an order without saying why.
+- Adequate: Turns each order into a record headed by its date or number, keeps delivery status and date visible, moves the rest to the detail view, and states “Newest first” above the list.
+- Strong: As adequate, plus a worded missing value (“Not shipped yet” rather than a blank), an empty state for a first-time customer, and a written omission list in case the inbox evidence changes.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+
 ### Review and finish your practice
 
 Section: practice. Stable action: review-work.
@@ -4060,7 +4360,7 @@ When the activity is finished, tell me to return to the course answer called “
 <details>
 <summary>Optional hints and reference material</summary>
 
-- Re-read your m05 notes for the attributes participants named while choosing. Those are the row; the rest is the detail view.
+- Re-read your m05 notes, or the supplied practice notes, for the attributes people named while choosing. Those are the row; the rest is the detail view.
 - Write the sort as a sentence the reader sees: “Soonest first”. If you cannot justify it by a task, you have not chosen it.
 
 - R16: [web.dev: learn responsive design](https://web.dev/learn/design/) — The layout chapter, read for how dense content reflows at narrow widths. Purpose: Supplies the reflow reasoning behind turning a table into records. Free reading, no account. Verified 2026-09-06. Web-focused; it does not cover data table conventions, so alignment and sort rules here come from the lesson and R63. Fallback: R15.
@@ -4072,7 +4372,7 @@ When the activity is finished, tell me to return to the course answer called “
 
 **Row content is traced to observed comparison behaviour**
 
-Adequate evidence: A row specification citing m05 evidence per attribute, plus a written list of omissions.
+Adequate evidence: A row specification citing evidence per attribute — your m05 notes, or the supplied practice notes labelled as supplied — plus a written list of omissions.
 
 0 — Row content chosen from what the data contains.
 
@@ -4082,7 +4382,7 @@ Adequate evidence: A row specification citing m05 evidence per attribute, plus a
 
 3 — As adequate, and one attribute is included because its absence made people open every result.
 
-Repair: Re-read your m05 notes for the attributes participants named while choosing. Those are the row; the rest is the detail view. Recheck: The row specification with citations.
+Repair: Re-read your m05 notes, or the supplied practice notes, for the attributes people named while choosing. Those are the row; the rest is the detail view. Recheck: The row specification with citations.
 
 **The default sort is chosen and shown**
 
@@ -4227,7 +4527,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Three interruptions were reviewed. Cancelling a booking: kept as a confirmation, because the place is released immediately and cannot be recovered — the dialogue now states exactly what will be lost and offers “Keep booking” as the safe default. Removing a shortlist item: replaced with an undo message, since nothing is lost permanently. A newsletter prompt appearing over the payment step: removed entirely and moved to the confirmation screen, where the person has finished and can consider it — with the reason recorded, since someone will propose it again.
+- Made-up example: three interruptions were reviewed. Cancelling a booking: kept as a confirmation, because the place is released immediately and cannot be recovered — the dialogue now states exactly what will be lost and offers “Keep booking” as the safe default. Removing a shortlist item: replaced with an undo message, since nothing is lost permanently. A newsletter prompt appearing over the payment step: removed entirely and moved to the confirmation screen, where the person has finished and can consider it — with the reason recorded, since someone will propose it again.
 
 
 ### Choose where you will do the work
@@ -4654,18 +4954,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You have put a confirmation dialogue on every action that deletes something. Why does that protect less than it looks?
 
-- A question with a predictable answer gets dismissed without reading, so the protection fades while the delay stays.
-- It does protect; the only cost is that the flow is a little slower.
-- It protects, as long as the wording is firm enough.
+- A predictable question gets dismissed unread, so the protection fades while the delay stays.
+- It protects well, provided each dialogue says firmly and specifically what will be lost for good.
+- It does protect people; its only real cost is that each deletion takes a moment longer.
 
 <details>
 <summary>After your attempt</summary>
 
-A question with a predictable answer gets dismissed without reading, so the protection fades while the delay stays. — People learn the shape of the box and answer it by habit. The one time it matters, it is dismissed the same way as the other forty.
+A predictable question gets dismissed unread, so the protection fades while the delay stays. — People learn the shape of the box and answer it by habit. The one time it matters, it is dismissed the same way as the other forty.
 
-It does protect; the only cost is that the flow is a little slower. — The delay is real and the protection is not, because the reading stops long before the habit does. Undo protects the person who has already made the mistake.
+It protects well, provided each dialogue says firmly and specifically what will be lost for good. — Firmer wording raises the volume on something already being skipped. What changes the outcome is being able to put the mistake right afterwards.
 
-It protects, as long as the wording is firm enough. — Firmer wording raises the volume on something already being skipped. What changes the outcome is being able to put the mistake right afterwards.
+It does protect people; its only real cost is that each deletion takes a moment longer. — The delay is real and the protection is not, because the reading stops long before the habit does. Undo protects the person who has already made the mistake.
 
 Improve: Look at your three decisions in step 2. Any action that could be reversed becomes an undo message instead of a confirmation, and the change goes in the last box of step 5.
 
@@ -4684,18 +4984,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your modal explains the cancellation policy in four paragraphs so people can read it before deciding. What is wrong with that?
 
-- Nothing, as long as the modal scrolls.
-- The paragraphs should be cut until they fit the box.
-- A modal covers the screen and holds the keyboard, so it is the worst place for anything a person needs to read carefully or compare.
+- A modal hides the page and traps the keyboard, a poor place for text people must weigh.
+- Little is wrong, provided the modal scrolls so all four paragraphs can be read.
+- The paragraphs should be cut down until the whole policy fits inside the box.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing, as long as the modal scrolls. — Scrolling inside a box that hides the thing being decided about is a small window onto a long document. The person still cannot see what they are agreeing about.
+A modal hides the page and traps the keyboard, a poor place for text people must weigh. — Reference text needs room, scrolling and the freedom to look at something else. Put it on the page, or give it a screen of its own.
 
-The paragraphs should be cut until they fit the box. — Cutting a policy to fit a container changes what it says. The container is the thing that is wrong here.
+Little is wrong, provided the modal scrolls so all four paragraphs can be read. — Scrolling inside a box that hides the thing being decided about is a small window onto a long document. The person still cannot see what they are agreeing about.
 
-A modal covers the screen and holds the keyboard, so it is the worst place for anything a person needs to read carefully or compare. — Reference text needs room, scrolling and the freedom to look at something else. Put it on the page, or give it a screen of its own.
+The paragraphs should be cut down until the whole policy fits inside the box. — Cutting a policy to fit a container changes what it says. The container is the thing that is wrong here.
 
 Improve: Read the wording in modal-a and modal-b in step 3. Move any reference text onto the page or its own screen, and record the move in step 5.
 
@@ -4714,18 +5014,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your held-place warning and your unsaved-work warning could both appear during payment. What does that tell you?
 
-- The flow is asking for two things at one moment, so the flow needs changing rather than the dialogues needing an order.
-- Stack them, newest on top, so nothing is missed.
-- Queue them, so the second appears once the first is dismissed.
+- The flow asks for two things at one moment, so the flow needs changing, not the order.
+- Stack them, newest on top, so that neither warning can be missed during payment.
+- Queue them, so the second appears only once the first has been dismissed.
 
 <details>
 <summary>After your attempt</summary>
 
-The flow is asking for two things at one moment, so the flow needs changing rather than the dialogues needing an order. — Two interruptions at once is a message about the shape of the task. Stacking or queueing hides that and doubles the interruption.
+The flow asks for two things at one moment, so the flow needs changing, not the order. — Two interruptions at once is a message about the shape of the task. Stacking or queueing hides that and doubles the interruption.
 
-Stack them, newest on top, so nothing is missed. — A box over a box takes two dismissals and leaves the person unsure what they have just answered.
+Stack them, newest on top, so that neither warning can be missed during payment. — A box over a box takes two dismissals and leaves the person unsure what they have just answered.
 
-Queue them, so the second appears once the first is dismissed. — A queue is tidier and still stops the person twice at the moment they were trying to pay.
+Queue them, so the second appears only once the first has been dismissed. — A queue is tidier and still stops the person twice at the moment they were trying to pay.
 
 Improve: Use the collision box in step 4. Name the two that can collide, change one of them, then write what you changed in step 5.
 
@@ -4799,6 +5099,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a photo-printing app asks “Are you sure?” every time someone removes a photo from a print order, although a removed photo can be added back from the camera roll in one tap. It also opens the print-size guide, a long table of sizes and prices, in a modal while people choose sizes.
+
+**Task:** Decide what each of the two interruptions should become, and explain why.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps both modals because a confirmation feels safer and a modal guarantees the size guide is seen.
+- Adequate: Replaces the removal confirmation with immediate removal plus undo, since nothing is lost for good, and moves the size guide onto the page or into a disclosure, because a modal hides what people are choosing.
+- Strong: As adequate, plus the undo window and its wording, a one-sentence modal rule (only for loss that cannot be recovered), and a check that no two interruptions can appear at once.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -5012,7 +5338,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The product had one toast style for everything. Rebuilt into four: a quiet inline confirmation for a saved draft that fades; a persistent banner at the top of the task for “Your place is held for 10 minutes”, with the time remaining; a warning beside the affected field when a chosen date had just filled; and a persistent failure message at the payment step saying what happened, that nothing had been taken, and what to do next. Each pairs colour with an icon shape and words, and each was checked in greyscale.
+- Made-up example: the product had one toast style for everything. Rebuilt into four: a quiet inline confirmation for a saved draft that fades; a persistent banner at the top of the task for “Your place is held for 10 minutes”, with the time remaining; a warning beside the affected field when a chosen date had just filled; and a persistent failure message at the payment step saying what happened, that nothing had been taken, and what to do next. Each pairs colour with an icon shape and words, and each was checked in greyscale.
 
 
 ### Choose where you will do the work
@@ -5118,23 +5444,23 @@ Section: practice-plan. Stable action: step-2-try.
 
 Three supplied messages from a made-up booking product, all shown the same way: a small box in the bottom-left corner that fades after four seconds. A is “Draft saved.” B is “Your place is held for 10 minutes.” C is “Payment failed. No money has been taken.”
 
-Which of these is still delivered by a box that fades after four seconds?
+Which of these should still be delivered by a box that fades after four seconds?
 
-- C only. People watch for failures.
 - None of them. A message that fades has not been delivered at all.
 - A only. Nothing depends on the person seeing it, and it will happen again.
 - B and C as well. Four seconds is long enough to read a short sentence.
+- C only, because people are already watching closely for anything that fails.
 
 <details>
 <summary>After your attempt</summary>
-
-C only. People watch for failures. — People watch for a failure once they suspect one. The failure arrives before the suspicion, and a fading box is how someone ends up unsure whether they have been charged.
 
 None of them. A message that fades has not been delivered at all. — The rule is about consequence rather than fading. For a saved draft, quiet and repeated is the right treatment.
 
 A only. Nothing depends on the person seeing it, and it will happen again. — A missed save note costs nothing, so the quiet treatment fits. B carries a deadline and C carries money, and both are gone before someone looking at the form could read them.
 
 B and C as well. Four seconds is long enough to read a short sentence. — Four seconds is long enough to read one, and only if the person happens to be looking at that corner. During payment they are looking at the card field.
+
+C only, because people are already watching closely for anything that fails. — People watch for a failure once they suspect one. The failure arrives before the suspicion, and a fading box is how someone ends up unsure whether they have been charged.
 
 Go back through your own four rows and mark any message that would be gone before it was read.
 
@@ -5325,20 +5651,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-“Your place is held for 10 minutes” appears as a small box in the corner that fades after four seconds. What is the problem?
+During payment, while she types her card details, “Your place is held for 10 minutes” appears as a small box in the corner that fades after four seconds. What is the problem?
 
-- The person is typing card details and looking at the form, so the message is gone before they look up and the deadline is now invisible.
-- Four seconds is not long enough to read a sentence of that length.
-- Nothing, as long as the message appears again before the hold ends.
+- Four seconds is too short to read a sentence of that length; ten would fix it.
+- It is fine, as long as the same message appears again before the hold ends.
+- She is typing card details, so it fades before she looks up, and the deadline is lost.
 
 <details>
 <summary>After your attempt</summary>
 
-The person is typing card details and looking at the form, so the message is gone before they look up and the deadline is now invisible. — A deadline the person cannot see is a deadline they will miss. Anything about money or time belongs where the work is, staying until it is resolved.
+Four seconds is too short to read a sentence of that length; ten would fix it. — Reading time is the smaller half of it. Even at ten seconds it is in the wrong corner at the wrong moment.
 
-Four seconds is not long enough to read a sentence of that length. — Reading time is the smaller half of it. Even at ten seconds it is in the wrong corner at the wrong moment.
+It is fine, as long as the same message appears again before the hold ends. — A second fading message has the same chance of being missed as the first, and by then the person has lost the earlier part of the countdown too.
 
-Nothing, as long as the message appears again before the hold ends. — A second fading message has the same chance of being missed as the first, and by then the person has lost the earlier part of the countdown too.
+She is typing card details, so it fades before she looks up, and the deadline is lost. — A deadline the person cannot see is a deadline they will miss. Anything about money or time belongs where the work is, staying until it is resolved.
 
 Improve: Open the progress row in step 2. Any message about money, a deadline or unsaved work must stay until it is resolved; change it and record the change in step 5.
 
@@ -5357,18 +5683,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Success is green and failure is red, with the same icon and similar wording. What breaks?
 
-- Anyone who cannot separate those colours, or who reads the screen in bright light, is left with two messages that say the same thing.
-- Only the icons need to differ; the wording can stay as it is.
-- Nothing, since red and green are understood everywhere.
+- Very little, since red and green are understood as good and bad almost everywhere.
+- Anyone who cannot tell red from green, or reads in bright light, gets two identical messages.
+- Only the icons need to differ; similar wording is fine once the shapes are distinct.
 
 <details>
 <summary>After your attempt</summary>
 
-Anyone who cannot separate those colours, or who reads the screen in bright light, is left with two messages that say the same thing. — Colour is the reinforcement, never the signal. The words and the shape have to carry the meaning on their own.
+Very little, since red and green are understood as good and bad almost everywhere. — They are widely learnt and not universally visible. A message that depends on telling them apart carries nothing for a good number of readers.
 
-Only the icons need to differ; the wording can stay as it is. — Different shapes help, and the sentence is still the part most people read. If the words do not say whether this is good or bad news, the shape is doing the work alone.
+Anyone who cannot tell red from green, or reads in bright light, gets two identical messages. — Colour is the reinforcement, never the signal. The words and the shape have to carry the meaning on their own.
 
-Nothing, since red and green are understood everywhere. — They are widely learnt and not universally visible. A message that depends on telling them apart carries nothing for a good number of readers.
+Only the icons need to differ; similar wording is fine once the shapes are distinct. — Different shapes help, and the sentence is still the part most people read. If the words do not say whether this is good or bad news, the shape is doing the work alone.
 
 Improve: Look at icon-shapes and rewritten-wording in step 3. Give each type its own shape and make each sentence state the outcome in words, then record it in step 5.
 
@@ -5387,18 +5713,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your payment failure says “Something went wrong.” What is missing?
 
-- An error code the support team can look up.
 - What happened, what it means for the money, and the one thing to do next.
-- An apology, so the tone matches the situation.
+- An apology, so that the tone matches how stressful the moment feels for the person.
+- An error code that the support team can look up if the person calls.
 
 <details>
 <summary>After your attempt</summary>
 
-An error code the support team can look up. — A code helps whoever is contacted later, and it is not what the person needs in that moment. Give them the action first and the code after.
-
 What happened, what it means for the money, and the one thing to do next. — A failure with no route leaves the person guessing whether they have been charged and whether to try again. Say it in the message.
 
-An apology, so the tone matches the situation. — An apology is easy to add and changes nothing about what the person does next. The route forward is the part that helps.
+An apology, so that the tone matches how stressful the moment feels for the person. — An apology is easy to add and changes nothing about what the person does next. The route forward is the part that helps.
+
+An error code that the support team can look up if the person calls. — A code helps whoever is contacted later, and it is not what the person needs in that moment. Give them the action first and the code after.
 
 Improve: Fill failure-routes in step 4 with one thing the person can do for each failure, then record what you changed in step 5.
 
@@ -5415,7 +5741,7 @@ Section: practice. Stable action: step-5-brief.
 
 What happened when the messages were read aloud, and the repair the Check questions asked for.
 
-- Read each message to someone and ask what they would do next.
+- Read each message to someone and ask what they would do next; if nobody is free, read them aloud yourself after a break and say so.
 - Rewrite any message that produces a shrug or a wrong answer.
 - Save the four specifications with placement and duration rules.
 
@@ -5432,11 +5758,11 @@ What happened when the messages were read aloud, and the repair the Check questi
 
 Section: practice. Stable action: write-aloud-result.
 
-If nobody is available, read them aloud yourself after a break and note where you hesitated. Write plainly that no one else heard them.
+Summarise what the listener said without their name; raw notes stay in your private file. If nobody is available, read them aloud yourself after a break and note where you hesitated. Write plainly that no one else heard them.
 
 **Answer:** What happened when you read each message aloud and asked what they would do next
 
-If nobody is available, read them aloud yourself after a break and note where you hesitated. Write plainly that no one else heard them.
+Summarise what the listener said without their name; raw notes stay in your private file. If nobody is available, read them aloud yourself after a break and note where you hesitated. Write plainly that no one else heard them.
 
 
 ### What you changed after the Check questions
@@ -5448,6 +5774,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a laundrette app shows every message the same way, as a small box in a top corner that fades after three seconds. Three messages use it: “Machine 4 started”, “Your wash finishes in 40 minutes” and “Payment failed: machine not started”. People often start a wash and then put their phone away.
+
+**Task:** Decide where each message appears and how long it stays. Explain why.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps one fading style for all three because consistency looks tidy, or changes only the colours.
+- Adequate: Makes the payment failure stay where the payment happened, with words, a distinct icon and a next step; keeps the finish time available to check later; lets “Machine 4 started” fade quietly.
+- Strong: As adequate, plus what clears each lasting message, how a failure and a countdown are kept from sharing one place, and a greyscale or read-aloud check that the words carry the meaning alone.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -5661,7 +6013,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The bookings screen showed a blank panel to new people and the same panel when a filter matched nothing. Rebuilt into three: for a new person, “Your bookings appear here once you book a class. Find a class on Saturday” with the action beside it; for a filter with no matches, “No classes match Saturday morning under 500. Remove the price filter to see three more”; and for a full class, the alternative dates. Loading reserved the row heights so nothing jumped, and after three seconds the message changed to name what was being waited for.
+- Made-up example: the bookings screen showed a blank panel to new people and the same panel when a filter matched nothing. Rebuilt into three: for a new person, “Your bookings appear here once you book a class. Find a class on Saturday” with the action beside it; for a filter with no matches, “No classes match Saturday morning under 500. Remove the price filter to see three more”; and for a full class, the alternative dates. Loading reserved the row heights so nothing jumped, and after three seconds the message changed to name what was being waited for.
 
 
 ### Choose where you will do the work
@@ -5770,21 +6122,21 @@ Two supplied empty states for the same made-up bookings list. A is a grey illust
 
 What is B actually doing that A is not?
 
-- B says what belongs here, why the screen is blank and the one action that starts it, so the empty screen teaches.
-- B has an action, and an action is what every empty state needs.
-- B has no illustration, and illustrations do not belong in empty states.
-- B is longer, and a new person needs more words.
+- B has an action button, and an action is the one thing every empty state must offer.
+- B is longer, and a person arriving for the first time needs more words to feel welcome.
+- B has no illustration, and pictures in an empty state distract from the words beside them.
+- B says what belongs here, why it is empty and how to start, so the empty screen teaches.
 
 <details>
 <summary>After your attempt</summary>
 
-B says what belongs here, why the screen is blank and the one action that starts it, so the empty screen teaches. — Those three parts turn a blank area into the clearest lesson in the product. A has the same space and spends it on an apology.
+B has an action button, and an action is the one thing every empty state must offer. — The action helps and is not enough on its own. An action with no explanation of what the list is for leaves a new person guessing.
 
-B has an action, and an action is what every empty state needs. — The action helps and is not enough on its own. An action with no explanation of what the list is for leaves a new person guessing.
+B is longer, and a person arriving for the first time needs more words to feel welcome. — Length is not the difference. A long empty state that still fails to say what appears here, or how to begin, teaches nothing.
 
-B has no illustration, and illustrations do not belong in empty states. — An illustration is fine beside wording that teaches. What fails in A is the sentence, not the picture.
+B has no illustration, and pictures in an empty state distract from the words beside them. — An illustration is fine beside wording that teaches. What fails in A is the sentence, not the picture.
 
-B is longer, and a new person needs more words. — Length is not the difference. A long empty state that still fails to say what appears here, or how to begin, teaches nothing.
+B says what belongs here, why it is empty and how to start, so the empty screen teaches. — Those three parts turn a blank area into the clearest lesson in the product. A has the same space and spends it on an apology.
 
 Read your own three empty states back and check each one names what appears here, why it is blank now, and what to do next.
 
@@ -5955,18 +6307,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your empty list says “No results.” Why is that the most expensive sentence on the screen?
 
-- It is too short, and an empty state should be a full paragraph.
-- Nothing is wrong: an empty list explains itself.
-- It is what a new person meets first, and it spends the whole screen without saying what belongs here or how to begin.
+- It is too short; an empty state should be a full paragraph explaining the product.
+- It is not expensive at all, because an empty list explains itself to anyone.
+- A new person meets it first, and it says nothing about what belongs here or how to begin.
 
 <details>
 <summary>After your attempt</summary>
 
-It is too short, and an empty state should be a full paragraph. — Length is not the fault. A long message that still fails to say what appears here and how to start is the same shrug at greater cost.
+It is too short; an empty state should be a full paragraph explaining the product. — Length is not the fault. A long message that still fails to say what appears here and how to start is the same shrug at greater cost.
 
-Nothing is wrong: an empty list explains itself. — It explains itself to you, who built it. To someone arriving for the first time it is a blank area with a note saying the blank is intentional.
+It is not expensive at all, because an empty list explains itself to anyone. — It explains itself to you, who built it. To someone arriving for the first time it is a blank area with a note saying the blank is intentional.
 
-It is what a new person meets first, and it spends the whole screen without saying what belongs here or how to begin. — An empty screen is the one moment when there is nothing to read but you. That space teaches, or it is wasted.
+A new person meets it first, and it says nothing about what belongs here or how to begin. — An empty screen is the one moment when there is nothing to read but you. That space teaches, or it is wasted.
 
 Improve: Rewrite empty-new in step 2 so it says what appears here, why it is blank now and the one action that starts it, then record the change in step 5.
 
@@ -5985,18 +6337,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A step takes about twelve seconds. You replace the spinner with a faster one. What have you changed?
 
-- Nothing the person can use. A long wait needs a message naming what is being waited for, not a livelier animation.
-- It is worse, because spinners should never be used at all.
-- The wait feels shorter, which is the whole problem solved.
+- The wait now feels shorter, which solves most of the problem for the person.
+- It made things worse, because spinners should not be used for any wait at all.
+- Only the animation: a long wait needs words saying what is being waited for.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing the person can use. A long wait needs a message naming what is being waited for, not a livelier animation. — After a few seconds a spinner stops meaning “working” and starts meaning “stuck”. Words are what tell the difference.
+The wait now feels shorter, which solves most of the problem for the person. — A faster spin reads as more effort for a moment and then as the same silence. The person still cannot tell whether to wait or start again.
 
-It is worse, because spinners should never be used at all. — A spinner is fine for a short wait where the outcome arrives quickly. Twelve seconds is not that wait.
+It made things worse, because spinners should not be used for any wait at all. — A spinner is fine for a short wait where the outcome arrives quickly. Twelve seconds is not that wait.
 
-The wait feels shorter, which is the whole problem solved. — A faster spin reads as more effort for a moment and then as the same silence. The person still cannot tell whether to wait or start again.
+Only the animation: a long wait needs words saying what is being waited for. — After a few seconds a spinner stops meaning “working” and starts meaning “stuck”. Words are what tell the difference.
 
 Improve: Write wait-messages in step 3 for about three seconds and about fifteen, naming what is being waited for, then record the change in step 5.
 
@@ -6015,18 +6367,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your error state has a “Try again” control that reloads the whole page. What does the person lose?
 
-- The filters, the place they had scrolled to and anything typed, so they pay for the failure a second time.
-- Nothing, because a reload is the cleanest way to recover.
-- Only the scroll position, which is quickly recovered.
+- Their filters, scroll position and anything typed, so they pay for the failure twice.
+- Only the scroll position, which takes a second to recover by scrolling again.
+- Very little, because a full reload is the cleanest and most reliable recovery.
 
 <details>
 <summary>After your attempt</summary>
 
-The filters, the place they had scrolled to and anything typed, so they pay for the failure a second time. — The failure was not their doing and the reload charges them for it. A retry should repeat the request and keep everything else.
+Their filters, scroll position and anything typed, so they pay for the failure twice. — The failure was not their doing and the reload charges them for it. A retry should repeat the request and keep everything else.
 
-Nothing, because a reload is the cleanest way to recover. — It is the cleanest for the build and the most expensive for the person. Everything they had set up goes with it.
+Only the scroll position, which takes a second to recover by scrolling again. — Scroll position is the smallest part. The filters and the typed values are the work, and a reload takes those too.
 
-Only the scroll position, which is quickly recovered. — Scroll position is the smallest part. The filters and the typed values are the work, and a reload takes those too.
+Very little, because a full reload is the cleanest and most reliable recovery. — It is the cleanest for the build and the most expensive for the person. Everything they had set up goes with it.
 
 Improve: Fill error-preserved and retry-behaviour in step 4 with everything the retry keeps, then record the change in step 5.
 
@@ -6107,6 +6459,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a neighbourhood tool library app shows the same grey box reading “No results” in three situations: a new member with no loans yet, a search filtered to “available today” that matches nothing, and a hedge trimmer that is out on loan until next week.
+
+**Task:** Write what the screen should say for the filtered search, and explain why it must differ from the new-member case.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps one message for all three, or makes “No results” friendlier without naming the cause or a next step.
+- Adequate: Names the filter that emptied the list and offers to remove it, such as showing tools available this week, while the new member is told what will appear here and how to borrow a first tool.
+- Strong: As adequate, plus the third case (when the trimmer is due back, or a reminder), and a note that the wording should be tried on someone new rather than judged by the person who wrote it.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -6249,11 +6627,11 @@ Stable ID: m08-l10-v1. Core.
 
 A chart makes a claim look measured. Drawing one from four participants and reading it as a trend is the fastest way to mislead yourself and everyone downstream.
 
-Bring: A small set of real counts you can honestly attribute.
+Bring: A small set of real counts you can honestly attribute, or the supplied practice counts labelled as made up.
 
 Starting route: Recommended route: Draw the chart and the counts printed beneath it on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder. Alternative route: Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
 
-- One chart drawn from data you actually hold, following the conventions
+- One chart drawn from data you hold, or from the labelled practice counts, following the conventions
 - n and the recruitment route stated on the chart
 - Alternative text carrying the same information as the chart
 - The underlying numbers published beside it
@@ -6276,7 +6654,7 @@ The reader demonstrates and guides the task before asking for “What the guidan
 
 Section: learn. Stable action: welcome.
 
-Draw one chart from data you actually hold, following the assigned conventions, and write the alternative text that carries the same information to someone who cannot see it.
+Draw one chart from data you actually hold, or from the supplied practice counts labelled as made up, following the assigned conventions, and write the alternative text that carries the same information to someone who cannot see it.
 
 
 ### Idea 1: Choose the chart from the comparison: bars compare amounts, li…
@@ -6286,11 +6664,11 @@ Section: learn. Stable action: learn-1.
 Choose the chart from the comparison: bars compare amounts, lines show change over time.
 
 
-### Idea 2: Never break the numerical axis on a bar chart; the bar length…
+### Idea 2: Do not break a bar chart’s numerical axis, as the assigned gui…
 
 Section: learn. Stable action: learn-2.
 
-Never break the numerical axis on a bar chart; the bar length is the comparison.
+Do not break a bar chart’s numerical axis, as the assigned guidance says: bar length is the comparison, so a cut axis changes the apparent ratio.
 
 
 ### Idea 3: Label directly on the chart where you can, instead of making p…
@@ -6320,7 +6698,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Twenty-two survey responses became a bar chart of “was it clear your payment had gone through?”. The first draft had a truncated axis that made nine look nearly twice fifteen, a legend requiring decoding, and no n. Redrawn: full axis from zero, direct labels on each bar, light gridlines, n = 22 stated in the subtitle with the recruitment route named, and alternative text reading “Of 22 people recruited through two WhatsApp groups, 9 were unsure their payment had gone through, 13 were sure.” The underlying counts were published beneath it.
+- Made-up example: twenty-two survey responses became a bar chart of “was it clear your payment had gone through?”: 9 unsure, 13 sure. The first draft started the axis at 8, so the bars stood 1 and 5 units tall and nine looked like a fifth of thirteen, when it is about seven-tenths of it (9 ÷ 13 ≈ 0.69). It also had a legend requiring decoding, and no n. Redrawn: full axis from zero, the counts written on each bar, light gridlines, n = 22 stated in the subtitle with the recruitment route named, and alternative text reading “Of 22 people recruited through two WhatsApp groups, 9 were unsure their payment had gone through, 13 were sure.” The underlying counts were published beneath it.
 
 
 ### Choose where you will do the work
@@ -6330,6 +6708,16 @@ Section: learn. Stable action: workspace.
 Recommended route: Draw the chart and the counts printed beneath it on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder. Alternative route: Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
+
+
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Made-up practice counts (this course’s Module 5 survey example): of 22 people reached through two WhatsApp groups, 9 were unsure their payment had gone through and 13 were sure. Use them only if you hold no real counts, and write “made-up practice data” on the chart.
+- Arithmetic for a cut axis: subtract the axis start from both values, then divide. 13 and 9 from zero look 13 ÷ 9 ≈ 1.4 times apart; from 8 they look (13 − 8) ÷ (9 − 8) = 5 times apart.
 
 
 ### Read the conventions
@@ -6434,11 +6822,11 @@ Example (made up): how many of the people who answered were unsure their payment
 
 Section: practice-plan. Stable action: write-data-held.
 
-Your m05 survey answers, your m06 tree-test results, or your own practice log. Real numbers only.
+Real numbers you hold: your m05 survey answers, m06 tree-test results or your own practice log, as totals with no names. If you hold none, use the supplied practice counts (22 people: 9 unsure, 13 sure) and write “made-up practice data” on the chart.
 
 **Answer:** The real counts you are using, and where they came from
 
-Your m05 survey answers, your m06 tree-test results, or your own practice log. Real numbers only.
+Real numbers you hold: your m05 survey answers, m06 tree-test results or your own practice log, as totals with no names. If you hold none, use the supplied practice counts (22 people: 9 unsure, 13 sure) and write “made-up practice data” on the chart.
 
 
 ### The chart type you chose
@@ -6470,6 +6858,7 @@ Section: practice-plan. Stable action: step-3-brief.
 The chart drawn to the rules: axis from zero for bars, direct labels, measured colours.
 
 - Start the numerical axis at zero for bars.
+- Work out the ratio your bars show from zero, and the ratio a cut axis would have shown, so the size of the distortion is a number.
 - Label directly rather than using a legend where you can.
 - Check the colours against the contrast threshold.
 
@@ -6492,7 +6881,7 @@ Made-up example. Drawing one bar chart from twenty-two survey answers, and findi
 
 **What I had:** Twenty-two answers to one question: was it clear your payment had gone through? Nine said no, thirteen said yes.
 
-**My first draft:** Two bars, with the axis starting at eight because that fitted the graph paper neatly, and a legend in the corner. The nine looked like roughly a third of the thirteen.
+**My first draft:** Two bars, with the axis starting at eight because that fitted the graph paper neatly, and a legend in the corner. The nine bar stood one square tall and the thirteen bar five, so nine looked like a fifth of thirteen, when it is about seven-tenths of it.
 
 **What a reader took from it:** She looked at it and said “so hardly anyone was confused”. The cut axis had done that, not the answers.
 
@@ -6511,11 +6900,31 @@ Made-up example. Drawing one bar chart from twenty-two survey answers, and findi
 
 Section: practice-plan. Stable action: write-axis-start.
 
-For bars the only answer is zero. Write it down anyway, so you notice if it is not.
+For bars the answer is zero, as the assigned guidance says. Write it down anyway, so you notice if it is not.
 
 **Answer:** Where your numerical axis starts, and why
 
-For bars the only answer is zero. Write it down anyway, so you notice if it is not.
+For bars the answer is zero, as the assigned guidance says. Write it down anyway, so you notice if it is not.
+
+
+### The ratio your two biggest-gap bars show from zero, and the ratio they would show if the axis started at your lowest gridline
+
+Section: practice-plan. Stable action: write-cut-axis-ratio.
+
+Divide the larger value by the smaller. Then subtract the axis start from both and divide again.
+
+**Answer:** The ratio your two biggest-gap bars show from zero, and the ratio they would show if the axis started at your lowest gridline
+
+Required only when chart-type is Bar chart · amounts across categories. Otherwise leave participant evidence empty.
+
+Divide the larger value by the smaller. Then subtract the axis start from both and divide again.
+
+<details>
+<summary>Example</summary>
+
+Example (made up): 13 and 9 drawn from zero look about 1.4 times apart; drawn from 8 they would look (13 − 8) ÷ (9 − 8) = 5 times apart.
+
+</details>
 
 
 ### How each value is labelled, and any legend you were able to remove
@@ -6565,21 +6974,21 @@ One made-up chart: of 22 people, 9 were unsure their payment had gone through an
 
 Which alternative text carries the same information to someone who cannot see it?
 
-- Most people were sure their payment had gone through.
-- Of 22 people reached through two WhatsApp groups, 9 were unsure their payment had gone through and 13 were sure.
-- A bar chart showing responses to the payment clarity question.
-- Two vertical bars, the right one taller than the left, with a light grid behind them.
+- Most of the people asked were sure their payment had gone through, and a sizeable minority were unsure.
+- A bar chart of answers to the payment clarity question, from a survey shared in two WhatsApp groups.
+- Two vertical bars, the right one taller than the left, each with its number written on it, and a light grid.
+- Of 22 people reached through two WhatsApp groups, 9 were unsure their payment went through and 13 were sure.
 
 <details>
 <summary>After your attempt</summary>
 
-Most people were sure their payment had gone through. — It carries a conclusion instead of the values, and “most” from thirteen of twenty-two is doing more work than the counts allow.
+Most of the people asked were sure their payment had gone through, and a sizeable minority were unsure. — Thirteen of twenty-two is a majority of those asked, so “most” is not false, but the sentence drops both counts and the size of the sample. A listener cannot tell 13 of 22 from 1,300 of 2,200.
 
-Of 22 people reached through two WhatsApp groups, 9 were unsure their payment had gone through and 13 were sure. — It gives the comparison, both counts and the sample. A reader who never sees the bars can use it exactly as you can.
+A bar chart of answers to the payment clarity question, from a survey shared in two WhatsApp groups. — It names the subject and the source and withholds the answer. The reader learns that a chart exists, which is not what the chart is for.
 
-A bar chart showing responses to the payment clarity question. — It names the subject and withholds the answer. The reader learns that a chart exists, which is not what the chart is for.
+Two vertical bars, the right one taller than the left, each with its number written on it, and a light grid. — This describes the drawing. Someone could redraw the picture from it and still not know what anybody answered.
 
-Two vertical bars, the right one taller than the left, with a light grid behind them. — This describes the drawing. Someone could redraw the picture from it and still not know what anybody answered.
+Of 22 people reached through two WhatsApp groups, 9 were unsure their payment went through and 13 were sure. — It gives the comparison, both counts and the sample. A reader who never sees the bars can use it exactly as you can.
 
 Cover your own chart and read only your alternative text. If you cannot answer the question the chart was drawn to answer, rewrite it with the counts in it.
 
@@ -6632,26 +7041,26 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-All your values sit between 40 and 60, so you start the bar axis at 40 to make the difference visible. What is wrong?
+Your two bars are 45 and 55, so you start the bar axis at 40 to make the difference visible. What is wrong?
 
-- On bars the length is the comparison, so a shortened axis shows a difference that is not there.
-- It is a problem for lines and fine for bars.
-- Nothing, as long as the axis is labelled with its starting value.
+- The bars become 5 and 15 long, so 55 looks three times 45 when it is about 1.2 times.
+- A cut axis misleads on a line chart; on a bar chart it is the usual, accepted way to zoom in.
+- Little is wrong, as long as the axis label shows clearly that it starts at 40.
 
 <details>
 <summary>After your attempt</summary>
 
-On bars the length is the comparison, so a shortened axis shows a difference that is not there. — A bar twice as long reads as twice as much. Cutting the axis breaks that, and nobody looking at the picture knows you did it.
+The bars become 5 and 15 long, so 55 looks three times 45 when it is about 1.2 times. — On bars the length is the comparison. From zero the bars are 45 and 55 long, a ratio of about 1.2; from 40 they are 5 and 15, a ratio of 3. Nobody looking at the picture knows you did it.
 
-It is a problem for lines and fine for bars. — It is the other way round. A line shows change, so its axis can start where the change is; a bar shows an amount by its length.
+A cut axis misleads on a line chart; on a bar chart it is the usual, accepted way to zoom in. — It is the other way round. The assigned guidance accepts a clearly marked break on a line chart and says not to break a bar chart’s axis, because length is how bars are read.
 
-Nothing, as long as the axis is labelled with its starting value. — The label helps the one careful reader. The shape of the bars is what everyone else carries away, and it is still untrue.
+Little is wrong, as long as the axis label shows clearly that it starts at 40. — The label helps the one careful reader. Everyone else carries away the shapes, and the shapes now say three times.
 
 Improve: Look at your axis-start box in step 3. If the axis does not begin at zero for bars, redraw the chart and record the change in the last step.
 
 Check again: The bar axis starts at zero, and the box says so in your own words.
 
-Answers to revisit: axis-start, labelling-choice, contrast-result
+Answers to revisit: axis-start, cut-axis-ratio, labelling-choice, contrast-result
 
 </details>
 
@@ -6664,18 +7073,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Nine of your twenty-two answers were unsure, so you write “41 per cent were unsure” on the chart. What does that do?
 
-- A percentage reads as a rate that would hold for other people, and twenty-two answers cannot support that.
-- It is fine as long as n appears somewhere on the chart.
-- It makes the chart clearer, because percentages are easier to compare.
+- It reads as a rate for people in general, yet one changed answer would move it 4.5 points.
+- It is fine, provided n = 22 is also printed somewhere on the same chart for readers.
+- It makes the chart clearer, because percentages are easier to compare than counts.
 
 <details>
 <summary>After your attempt</summary>
 
-A percentage reads as a rate that would hold for other people, and twenty-two answers cannot support that. — The counts say what happened among the people you reached. The percentage quietly promises the same share elsewhere, which you have no way of knowing.
+It reads as a rate for people in general, yet one changed answer would move it 4.5 points. — Nine of twenty-two is 40.9 per cent, so the arithmetic is right; the trouble is what it implies. One person answering the other way makes it 36 or 45 per cent, and the percentage quietly promises the same share among people you never asked. Write the counts.
 
-It is fine as long as n appears somewhere on the chart. — Putting n beside it helps, and the number people repeat afterwards is still the percentage. Write the counts where the percentage would have been.
+It is fine, provided n = 22 is also printed somewhere on the same chart for readers. — Printing n helps, and the number people repeat afterwards is still the percentage. Write the counts where the percentage would have been.
 
-It makes the chart clearer, because percentages are easier to compare. — Percentages compare well between large samples. From twenty-two they turn a small count into a claim about everyone.
+It makes the chart clearer, because percentages are easier to compare than counts. — Percentages compare well between large samples. From twenty-two answers they turn a small count into what reads like a claim about everyone.
 
 Improve: Check your sample-line and underlying-numbers boxes in step 4. Replace any rate with the counts, keep n and the recruitment route, and record the change in the last step.
 
@@ -6694,18 +7103,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your alternative text reads “A bar chart comparing two answers.” What is missing?
 
-- The colours and the shape of the bars.
-- The finding itself: the values, and the comparison the chart exists to show.
-- Nothing: the numbers are read out from the chart itself.
+- Very little, because a screen reader can read the numbers out of the chart image.
+- A description of the colours, the bar shapes and the gridlines in the picture.
+- The finding itself: the counts, and the comparison the chart was drawn to show.
 
 <details>
 <summary>After your attempt</summary>
 
-The colours and the shape of the bars. — Those belong to the picture. Adding more description makes the text longer and carries none of the information.
+Very little, because a screen reader can read the numbers out of the chart image. — A drawn or photographed chart carries no numbers anything can read out. Whatever is not in the text is not available at all.
 
-The finding itself: the values, and the comparison the chart exists to show. — Someone using the text instead of the picture should end up knowing what you know. A description of the drawing leaves them with nothing to use.
+A description of the colours, the bar shapes and the gridlines in the picture. — Those belong to the picture. Adding more description makes the text longer and carries none of the information.
 
-Nothing: the numbers are read out from the chart itself. — A drawn or photographed chart carries no numbers anything can read out. Whatever is not in the text is not available at all.
+The finding itself: the counts, and the comparison the chart was drawn to show. — Someone using the text instead of the picture should end up knowing what you know. A description of the drawing leaves them with nothing to use.
 
 Improve: Rewrite the alt-text box in step 4 so it contains the counts, the comparison and the sample, then record the change in the last step.
 
@@ -6722,7 +7131,7 @@ Section: practice. Stable action: step-5-brief.
 
 What a reader took from the chart, anything your data cannot support, and the change the Check questions sent you back to make.
 
-- Show the chart to someone and ask what it tells them.
+- Show the chart to someone and ask what it tells them; if nobody is free, read it cold yourself after a break and say so.
 - If they state something your sample cannot support, change the chart or its labels.
 - Save the chart, the alternative text and the numbers.
 
@@ -6735,15 +7144,15 @@ What a reader took from the chart, anything your data cannot support, and the ch
 **Check questions:** The short set of questions at the end of the lesson. Each one sends you back to a particular box to repair something.
 
 
-### What the person you showed it to said it told them
+### What the reader said it told them, summarised without their name, or what it seemed to claim when you read it cold yourself
 
 Section: practice. Stable action: write-reader-said.
 
-Ask, then write their words down before you explain anything.
+Ask, then note what they said before you explain anything; raw notes stay in your private file. Nobody available? Put the chart away for an hour, read it cold, and write “self-read” beside your answer.
 
-**Answer:** What the person you showed it to said it told them
+**Answer:** What the reader said it told them, summarised without their name, or what it seemed to claim when you read it cold yourself
 
-Ask, then write their words down before you explain anything.
+Ask, then note what they said before you explain anything; raw notes stay in your private file. Nobody available? Put the chart away for an hour, read it cold, and write “self-read” beside your answer.
 
 
 ### Anything they claimed your data cannot support, and what you changed
@@ -6779,6 +7188,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
 
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a community choir asked its 18 members which rehearsal night they prefer: 12 chose Tuesday and 6 chose Thursday. The secretary drew a bar chart with the axis starting at 5 and titled it “67% prefer Tuesday”, ready to pin on the choir’s noticeboard.
+
+**Task:** Decide what you would change before it is pinned up, and explain why, showing the arithmetic.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Says the chart is fine, or only removes the percentage, without noticing that the cut axis makes Tuesday look seven times Thursday rather than twice.
+- Adequate: Starts the axis at zero, because from 5 the bars are 7 and 1 long (seven times) though 12 is twice 6; writes the counts and n = 18 on the chart instead of a bare 67%.
+- Strong: As adequate, plus alternative text with both counts and n, a note that one member changing moves the share by about 5.6 points, and that 18 members say nothing about other choirs.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+
 ### Review and finish your practice
 
 Section: practice. Stable action: review-work.
@@ -6799,7 +7234,7 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: Charts that do not mislead
-What I am trying to do: Draw one chart from data you actually hold, following the assigned conventions, and write the alternative text that carries the same information to someone who cannot see it.
+What I am trying to do: Draw one chart from data you actually hold, or from the supplied practice counts labelled as made up, following the assigned conventions, and write the alternative text that carries the same information to someone who cannot see it.
 
 Key idea or terms:
 Gridline: A faint line across the chart that helps the eye reach a value. Few and light, or they compete with the data.
@@ -6863,7 +7298,7 @@ Repair: Take the guidance as a checklist and mark your chart against each rule. 
 
 **n and the recruitment route appear on the chart**
 
-Adequate evidence: Sample size and how those people were reached, visible on the chart itself.
+Adequate evidence: Sample size and how those people were reached, or “made-up practice data”, visible on the chart itself.
 
 0 — No sample stated.
 
@@ -6885,7 +7320,7 @@ Adequate evidence: Text stating the comparison, the values that matter and the s
 
 2 — Comparison, values and sample all present, with numbers published.
 
-3 — As adequate, and someone who cannot see the chart confirmed the text told them what they needed.
+3 — As adequate, and a reader who had not seen the chart answered its question correctly from the text alone.
 
 Repair: Cover the chart and read only your alternative text. If you could not answer the question the chart exists to answer, rewrite it. Recheck: The alternative text and the published numbers.
 
@@ -6904,8 +7339,8 @@ The progress bar counts required actions with saved work. It is not a score or p
 <details>
 <summary>Reading, video and deeper explanation</summary>
 
-- The chart type follows from the comparison you want a reader to make. Bars compare amounts across categories and rely on length, which is why truncating their axis is a distortion rather than a style choice: half the bar is missing but the reader still compares lengths. Lines show change across a continuous scale, usually time, and their axis may be broken when the change is small relative to the values, provided the break is visible and labelled.
-- The assigned guidance is precise about the mechanics: horizontal axis text, thousands separated, light gridlines and few of them, legends ordered to match the data, direct labelling preferred, and colour contrast meeting the accessibility threshold. Following it costs nothing and removes the most common ways a chart becomes harder to read than the table it came from.
+- The chart type follows from the comparison you want a reader to make. Bars compare amounts across categories and rely on length, which is why truncating their axis is a distortion rather than a style choice: part of every bar is missing but the reader still compares lengths. Two bars of 9 and 13 drawn from zero have lengths in the ratio 13 ÷ 9, about 1.4; start the axis at 8 and the visible lengths are 1 and 5, so the larger looks five times the smaller. Lines show change across a continuous scale, usually time, and the assigned guidance accepts a broken axis on a line chart when necessary, provided the break is clear and obvious.
+- The assigned guidance is precise about the mechanics: horizontal axis text, thousands separated, light grey gridlines and generally no more than ten, legends ordered to match the data, direct labelling preferred, and colour contrast meeting the accessibility threshold. Following it costs nothing and removes the most common ways a chart becomes harder to read than the table it came from.
 - Alternative text is not a caption. Someone who cannot see the chart needs the information it carries — the comparison and the values that matter — not a description of its appearance. “Bar chart of bookings by day” carries nothing; “Bookings by day: Saturday 34, Sunday 21, weekdays fewer than 10 each; n = 96 over four weeks” carries the finding. Publishing the underlying numbers alongside is better still.
 - The sample belongs on the chart itself, not in a footnote elsewhere, because a chart is the part that gets screenshotted and forwarded. A chart of eight survey responses drawn without n reads as a measurement of a population, and the person who reposts it will not know it was not.
 
@@ -6990,7 +7425,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The token sheet came to twenty-two values: five neutrals, three semantic colours, six type steps, six spacing values and two radii. Applying it to the booking screen surfaced three exceptions — a one-off border grey, a 10px gap and a heading half a step smaller than any token. The border grey became an existing neutral, the gap moved to the nearest spacing value, and the heading revealed a real missing role, so a step was added deliberately. Every text pair was measured; the caption on the tinted panel failed and was darkened, and the measured numbers were written on the sheet.
+- Made-up example: the token sheet came to twenty-two values: five neutrals, three semantic colours, six type steps, six spacing values and two radii. Applying it to the booking screen surfaced three exceptions — a one-off border grey, a 10px gap and a heading half a step smaller than any token. The border grey became an existing neutral, the gap moved to the nearest spacing value, and the heading revealed a real missing role, so a step was added deliberately. Every text pair was measured; the caption on the tinted panel failed and was darkened, and the measured numbers were written on the sheet.
 
 
 ### Choose where you will do the work
@@ -7078,21 +7513,21 @@ Four made-up names for one value: a mid grey used behind cards and behind the pa
 
 Which name is still true after the product gains a dark theme and the value becomes a near-black?
 
-- grey-200, because the number keeps the greys in order.
-- light-grey, because anyone reading the sheet can picture it at once.
-- surface-raised, because it names what the value is for rather than what it looks like or where it sits.
-- card-background, because it says exactly where it goes.
+- light-grey, because anyone reading the sheet can picture the colour straight away.
+- grey-200, because the number keeps all the greys in a sensible light-to-dark order.
+- surface-raised, because it names the job the value does rather than its look or its place.
+- card-background, because it says exactly where on the screen the value is used.
 
 <details>
 <summary>After your attempt</summary>
 
-grey-200, because the number keeps the greys in order. — A numbered grey survives a value change and says nothing about when to use it, so two people pick different ones for the same job.
+light-grey, because anyone reading the sheet can picture the colour straight away. — It is the easiest name to read today and the first to become a lie. A token called light-grey holding a near-black is worse than no name at all.
 
-light-grey, because anyone reading the sheet can picture it at once. — It is the easiest name to read today and the first to become a lie. A token called light-grey holding a near-black is worse than no name at all.
+grey-200, because the number keeps all the greys in a sensible light-to-dark order. — A numbered grey survives a value change and says nothing about when to use it, so two people pick different ones for the same job.
 
-surface-raised, because it names what the value is for rather than what it looks like or where it sits. — The role survives the change. The value behind it becomes near-black and every screen using it stays right with no rename.
+surface-raised, because it names the job the value does rather than its look or its place. — The role survives the change. The value behind it becomes near-black and every screen using it stays right with no rename.
 
-card-background, because it says exactly where it goes. — It is honest until the header uses it too. A token named after one place it appears leaves you renaming or misusing it as soon as there is a second place.
+card-background, because it says exactly where on the screen the value is used. — It is honest until the header uses it too. A token named after one place it appears leaves you renaming or misusing it as soon as there is a second place.
 
 Go through your own names and mark any that describe a colour, a size, a shape or a single place. Rewrite each one as the job it does.
 
@@ -7295,18 +7730,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You name a token light-grey and use it for card surfaces. A year later the product gains a dark theme. What happens to that name?
 
-- It only matters if someone outside your own work reads the sheet.
-- Nothing, because you can simply change the value behind it.
-- The name stops describing the value, so people either keep a wrong name or rename it everywhere it appears.
+- Very little, because you can change the value behind the name in one place.
+- It only matters if someone outside your own work reads the token sheet.
+- It stops describing the value, so people keep a false name or rename it everywhere.
 
 <details>
 <summary>After your attempt</summary>
 
-It only matters if someone outside your own work reads the sheet. — You are that someone in six months. The sheet exists precisely because nobody remembers which grey was which.
+Very little, because you can change the value behind the name in one place. — You can, and the sheet then tells every reader something untrue. Names are read far more often than values.
 
-Nothing, because you can simply change the value behind it. — You can, and the sheet then tells every reader something untrue. Names are read far more often than values.
+It only matters if someone outside your own work reads the token sheet. — You are that someone in six months. The sheet exists precisely because nobody remembers which grey was which.
 
-The name stops describing the value, so people either keep a wrong name or rename it everywhere it appears. — A name tied to appearance survives only as long as the appearance does. The rename is not the real cost; the months of a wrong name being trusted are.
+It stops describing the value, so people keep a false name or rename it everywhere. — A name tied to appearance survives only as long as the appearance does. The rename is not the real cost; the months of a wrong name being trusted are.
 
 Improve: Check your colour-tokens and type-tokens boxes in step 2. Rewrite any name describing a colour, a size or a shape, and record the change in the last step.
 
@@ -7326,7 +7761,7 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 A screen needs a gap slightly wider than any spacing token, so you add a new token for it. What does that do over a year?
 
 - It is fine, because the new value is used on that one screen.
-- Nothing, since more tokens give the design more flexibility.
+- It adds flexibility, since more tokens give the design more ways to fit.
 - The set grows until every value has a name and none of them has a rule.
 
 <details>
@@ -7334,7 +7769,7 @@ A screen needs a gap slightly wider than any spacing token, so you add a new tok
 
 It is fine, because the new value is used on that one screen. — A token used once is a value with a name attached. Either a second screen needs it, or the screen should move to the nearest token.
 
-Nothing, since more tokens give the design more flexibility. — More tokens give more places to be inconsistent. Flexibility nobody can remember is only choice coming back.
+It adds flexibility, since more tokens give the design more ways to fit. — More tokens give more places to be inconsistent. Flexibility nobody can remember is only choice coming back.
 
 The set grows until every value has a name and none of them has a rule. — The sheet works by being small enough to hold in your head. Once it is not, people pick by eye again and the names stop meaning anything.
 
@@ -7355,18 +7790,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The body text pair passes the contrast threshold, so you record that and stop measuring. What have you missed?
 
-- Only the colours, since type and spacing are not measured.
-- The quiet pairs — captions, placeholder text, disabled labels — which are the ones that usually fail.
-- Nothing, as long as the largest text passes as well.
+- Very little, as long as the largest text on the sheet passes its own lower threshold too.
+- Only the colours, because type and spacing tokens do not need measuring at all.
+- The quiet pairs — captions, placeholders, disabled labels — which fail most often.
 
 <details>
 <summary>After your attempt</summary>
 
-Only the colours, since type and spacing are not measured. — Type and spacing are not measured for contrast, and every text-on-surface pair is. The gap is the pairs you never listed.
+Very little, as long as the largest text on the sheet passes its own lower threshold too. — Large text is judged against a lower threshold and tells you nothing about the small grey caption underneath it.
 
-The quiet pairs — captions, placeholder text, disabled labels — which are the ones that usually fail. — Body text is chosen to be readable and rarely fails. The lighter text was chosen to be quiet, and quiet is the same thing as low contrast.
+Only the colours, because type and spacing tokens do not need measuring at all. — Type and spacing are not measured for contrast, and every text-on-surface pair is. The gap is the pairs you never listed.
 
-Nothing, as long as the largest text passes as well. — Large text is judged against a lower threshold and tells you nothing about the small grey caption underneath it.
+The quiet pairs — captions, placeholders, disabled labels — which fail most often. — Body text is chosen to be readable and rarely fails. The lighter text was chosen to be quiet, and quiet usually means lower contrast.
 
 Improve: Return to your pairs-measured box in step 3 and add every quiet pair you allow, including captions, placeholder and disabled text. Record what you found in the last step.
 
@@ -7426,6 +7861,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a bakery’s pre-order app has colours named light-beige, beige-2, beige-2b and pink-button. beige-2 and beige-2b differ by about 2 per cent. The small grey caption under each cake measures 3.9:1 against the cream card it sits on.
+
+**Task:** Decide what you would rename, merge and fix on the sheet, and explain why.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps the appearance names, adds another token for the caption, or accepts 3.9:1 because the caption is only small print.
+- Adequate: Renames by role (such as surface-raised, action-primary), merges beige-2 and beige-2b, and darkens or forbids the caption pair because small text needs at least 4.5:1, recording the measured number.
+- Strong: As adequate, plus what the merge cost, a check of the caption on every other surface it sits on, and a note that passing 4.5:1 is a floor rather than proof the caption reads well.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -7639,7 +8100,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Assembling two screens from the library required inventing three things: a status pill for a held place, a compact price treatment, and a spacing value between a heading and a dense list. The pill was a genuine missing component and was added; the price treatment was an accidental variation and was replaced with the existing one; the spacing became the nearest token. The finding-by-finding critique showed the screen no longer surfaced remaining places, which the m05 research had shown people comparing on, so it was restored. The preliminary checks found a heading level skipped and a caption below the contrast threshold; the keyboard check could not be completed because nothing was built, and that was recorded as untested rather than assumed.
+- Made-up example: assembling two screens from the library required inventing three things: a status pill for a held place, a compact price treatment, and a spacing value between a heading and a dense list. The pill was a genuine missing component and was added; the price treatment was an accidental variation and was replaced with the existing one; the spacing became the nearest token. The finding-by-finding critique showed the screen no longer surfaced remaining places, which the m05 research had shown people comparing on, so it was restored. The preliminary checks found a heading level skipped and a caption below the contrast threshold; the keyboard check could not be completed because nothing was built, and that was recorded as untested rather than assumed.
 
 
 ### Choose where you will do the work
@@ -7651,13 +8112,29 @@ Recommended route: Draw the two assembled screens, including one non-happy state
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
 
 
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Practice case, made up for this course: a small pottery studio sells places on weekend classes through a phone screen. The editable starter /starters/m08/booking-screen-starter.svg draws that screen at 390 by 844 points, with every part in a named group.
+- Made-up research note (this course’s Module 5 example): 3 of 4 interviewees and the one observed participant confirmed the plan with another person before paying, and it was the most common open-text answer among 22 survey responses. Against it: the fourth interviewee books only for herself and said checking with someone would annoy her.
+- Made-up observation note: the observed participant checked the price against a screenshot a friend had sent, and after booking she sent a screenshot of the confirmation to that friend.
+- Made-up desk research note: 7 of 11 public reviews of local class providers mentioned not knowing what to bring.
+- Made-up paper test of an earlier version, 5 people: one pressed “Add to shortlist” believing she had booked, when it and “Reserve a place” were both filled and equal; two looked for how many places were left before reading anything else.
+- Made-up browse note (this course’s Module 7 example): people choosing between classes compared day and time, price, place and remaining places. Nobody in the notes compared on the teacher or the level.
+- Made-up practice counts (this course’s Module 5 survey example): of 22 people reached through two WhatsApp groups, 9 were unsure their payment had gone through and 13 were sure.
+- Using a starter file: download it, make a copy, keep the original untouched, open the copy in Inkscape (free, no account needed) or Penpot (free, needs an account), and save your work in HaruCourse/Practice/ followed by this lesson’s id. Printing it and drawing on paper works just as well. The course has not tested these tools on your computer.
+
+
 ### Assemble
 
 Section: practice-plan. Stable action: step-1-brief.
 
 Two complete screens built only from your components and tokens, with everything you had to invent listed.
 
-- Build two complete screens using only your components and tokens.
+- Build two complete screens using only your components and tokens; without screens of your own, start from a copy of /starters/m08/booking-screen-starter.svg.
 - Write down every component, token or state you had to invent.
 - Include at least one non-happy state among the two screens.
 
@@ -7764,7 +8241,7 @@ Section: practice-plan. Stable action: step-3-brief.
 
 Every finding answered in writing, each critique line labelled evidence, guess or taste, and the strongest failure repaired.
 
-- List your m05 findings and m07 test results.
+- List your m05 findings and m07 test results, or the supplied practice notes labelled as supplied.
 - For each, write whether this screen serves it and how you can tell.
 - Repair the strongest failure you find.
 
@@ -7935,15 +8412,15 @@ Go through your own critique line by line and put one of the three labels beside
 </details>
 
 
-### Your m05 findings and m07 test results, one per line
+### Your m05 findings and m07 test results, or the supplied practice notes, one per line
 
 Section: practice-plan. Stable action: write-findings-list.
 
-Write your answer for “Your m05 findings and m07 test results, one per line”. Use the task instructions below to decide what to include.
+One de-identified line per finding with its count, such as “3 of 4 interviewees checked with someone before paying”. No names or quotes; raw notes stay in your private file. Using the supplied notes? Mark each line “supplied”.
 
-**Answer:** Your m05 findings and m07 test results, one per line
+**Answer:** Your m05 findings and m07 test results, or the supplied practice notes, one per line
 
-
+One de-identified line per finding with its count, such as “3 of 4 interviewees checked with someone before paying”. No names or quotes; raw notes stay in your private file. Using the supplied notes? Mark each line “supplied”.
 
 
 ### For each finding: whether this screen serves it, and how you can tell
@@ -8034,17 +8511,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 One line of your critique says the blue is too cold. Should it be in the critique at all?
 
 - Keep it and label it taste, so it stays visible without outranking a finding.
-- Delete it, because a critique should only use evidence.
-- Keep it unlabelled, since it is obvious which lines are opinions.
+- Delete it, because a critique should rest only on evidence that you can point to.
+- Keep it unlabelled, since anyone can see which lines are matters of opinion.
 
 <details>
 <summary>After your attempt</summary>
 
 Keep it and label it taste, so it stays visible without outranking a finding. — Taste is part of design work and it is the weakest kind of reason. The label is what stops it quietly winning against something you observed.
 
-Delete it, because a critique should only use evidence. — Deleting the line does not remove the preference; it removes the label. The same thought returns in the next conversation with no marking on it.
+Delete it, because a critique should rest only on evidence that you can point to. — Deleting the line does not remove the preference; it removes the label. The same thought returns in the next conversation with no marking on it.
 
-Keep it unlabelled, since it is obvious which lines are opinions. — It is not obvious to anyone else, and it will not be obvious to you in a month. An unlabelled preference reads exactly like a finding on the page.
+Keep it unlabelled, since anyone can see which lines are matters of opinion. — It is not obvious to anyone else, and it will not be obvious to you in a month. An unlabelled preference reads exactly like a finding on the page.
 
 Improve: Return to your critique-labels box in step 3 and put evidence, guess or taste beside every line, then record the change in the last step.
 
@@ -8093,18 +8570,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The heading order and contrast checks passed, so you write that the screens are accessible. What is wrong with that?
 
-- The preliminary checks cover a small part, and keyboard and screen-reader behaviour stays untested until something is built.
-- Nothing, as long as you ran every check on the list.
-- The checks only mean anything on a built screen, so none of them count.
+- Those checks only mean anything on a built screen, so none of the passes count.
+- Very little, as long as every check on the preliminary list was run and passed.
+- The checks cover a small part; keyboard and screen-reader use stay untested until built.
 
 <details>
 <summary>After your attempt</summary>
 
-The preliminary checks cover a small part, and keyboard and screen-reader behaviour stays untested until something is built. — Passing what you could run says that what you could run passed. Writing the untested list is what keeps the claim honest for whoever reads it next.
+Those checks only mean anything on a built screen, so none of the passes count. — Several run perfectly well on a drawing: heading order, contrast, and text at a larger size. It is the interactive ones that need something built.
 
-Nothing, as long as you ran every check on the list. — The list is deliberately small so one person can run it alone. It was never meant to carry the whole judgement.
+Very little, as long as every check on the preliminary list was run and passed. — The list is deliberately small so one person can run it alone. It was never meant to carry the whole judgement.
 
-The checks only mean anything on a built screen, so none of them count. — Several run perfectly well on a drawing: heading order, contrast, and text at a larger size. It is the interactive ones that need something built.
+The checks cover a small part; keyboard and screen-reader use stay untested until built. — Passing what you could run says that what you could run passed. Writing the untested list is what keeps the claim honest for whoever reads it next.
 
 Improve: Add to your checks-not-possible box in step 4 every check you could not run, plus one sentence on what passing the others does not prove. Record the change in the last step.
 
@@ -8188,6 +8665,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a museum’s timed-ticket screen has just been assembled. Its critique has three lines: “the teal feels cold”; “in a hallway test, 4 of 6 visitors scrolled past the time slots without seeing them”; and “people will probably miss the step-free entrance note”.
+
+**Task:** Label each line evidence, guess or taste, and decide which problem to fix first. Explain why.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Fixes the teal first or treats all three lines as equal opinions, or deletes the taste line instead of labelling it.
+- Adequate: Labels the hallway result evidence, the entrance note a guess and the teal taste; fixes the missed time slots first because they stop the task and an observation backs them.
+- Strong: As adequate, plus what would settle the guess, a note that six hallway visitors is a small sample, and an untested list (keyboard and screen reader) written beside the fix.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -8274,7 +8777,7 @@ Repair: For each invention ask whether a second screen needs it. If not, change 
 
 **The critique runs finding by finding against research**
 
-Adequate evidence: Each m05 finding and m07 result listed with whether the screen serves it and the evidence.
+Adequate evidence: Each finding — your m05 findings and m07 results, or the supplied practice notes labelled as supplied — listed with whether the screen serves it and the evidence.
 
 0 — Critique based on appearance.
 
@@ -8316,7 +8819,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 <summary>Reading, video and deeper explanation</summary>
 
 - Assembly is a test of the parts. When a screen forces you to invent a component, a token or a state, that is information about the set rather than a nuisance: either something is genuinely missing, or the screen is asking for a variation it does not need. Recording each invention as it happens keeps the library honest and produces the list of decisions the next module builds on.
-- The strongest critique goes finding by finding. Take your m05 findings and m07 test results and ask, for each, whether this screen serves it — the payment uncertainty, the shared-device booking, the comparison people were making. That converts critique from an exchange of preferences into a checkable exercise, and it usually surfaces one finding the design has quietly stopped serving.
+- The strongest critique goes finding by finding. Take your m05 findings and m07 test results, or the supplied practice notes if you hold none, and ask, for each, whether this screen serves it — the payment uncertainty, the shared-device booking, the comparison people were making. That converts critique from an exchange of preferences into a checkable exercise, and it usually surfaces one finding the design has quietly stopped serving.
 - Run the preliminary checks that apply — page title, headings, contrast, resize, keyboard where a build exists — and record both what passed and what those checks cannot establish. The resource states plainly that they are preliminary and that passing them is not conformance, and running them yourself is not testing with disabled people. Both statements belong in your write-up every time you show this work.
 - Rank what you find by task impact. A misaligned label is worth noting; a status that cannot be distinguished in greyscale stops someone. Fixing in that order is the difference between a screen that looks tidier and one that works better, and stating the ranking is what lets a reviewer disagree with your priorities rather than your taste.
 

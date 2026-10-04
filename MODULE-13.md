@@ -14,7 +14,7 @@ Stable ID: m13-l01-v1. Core.
 
 Systems built without a stated purpose become libraries nobody uses and everybody works around.
 
-Bring: Your inventory, token sheet and built pages.
+Bring: Your inventory, token sheet and screens. No coding is needed.
 
 Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
@@ -85,7 +85,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The system's purpose was written as three problems: I re-decide button hierarchy and spacing on every screen and they drift; an engineer has to ask me what each state should do, which costs a day per feature; and accessibility decisions get remade badly under time pressure. The people served: the learner in three months, one engineer, and any reviewer reading a case study. Out of scope, stated: marketing pages, anything about brand illustration, and any component used only once. The cost was written too: about a day a month of maintenance, and the loss of some freedom on individual screens.
+- Example (made up): the system's purpose was written as three problems: I re-decide button hierarchy and spacing on every screen and they drift; an engineer has to ask me what each state should do, which costs a day per feature; and accessibility decisions get remade badly under time pressure. The people served: the learner in three months, one engineer, and any reviewer reading a case study. Out of scope, stated: marketing pages, anything about brand illustration, and any component used only once. The cost was written too: about a day a month of maintenance, and the loss of some freedom on individual screens.
 
 
 ### Choose where you will do the work
@@ -106,7 +106,7 @@ Every decision you have made more than twice, with the ones that drifted marked 
 - Look through your screens for decisions you have made more than twice.
 - List the ones that drifted between screens.
 
-**Start here:** Open three of your own screens side by side and measure the same gap on each.
+**Start here:** Open three of your own screens side by side (Project 1 drawings count) and measure the same gap on each.
 
 **Enough:** Your drift examples name a measurement or a word rather than a general feeling of inconsistency.
 
@@ -465,20 +465,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You have four screens and one engineer. Does that justify a design system?
+You have four screens, one engineer, and three decisions that keep drifting between screens. Does that justify a full design system?
 
-- No, systems are for large teams only.
-- Yes, because consistency always pays back.
-- Possibly not a full one. Sometimes what is needed is three settled decisions and a page of documentation.
+- Yes, because consistency always pays back, whatever the size of the product or team.
+- No, because design systems are only ever worth building for large teams with many products.
+- Probably not yet: settle the three drifting decisions on one documented page.
 
 <details>
 <summary>After your attempt</summary>
 
-No, systems are for large teams only. — Size is not the test. The same person re-deciding the same thing every month is a real cost, and one page may fix it.
+Yes, because consistency always pays back, whatever the size of the product or team. — Consistency pays back; the machinery for producing it does not always. The question is whether decisions recur often enough to be worth that machinery.
 
-Yes, because consistency always pays back. — Consistency pays back; the machinery for producing it does not always. The question is whether the decisions recur often enough to be worth documenting.
+No, because design systems are only ever worth building for large teams with many products. — Size alone is not the test. One person re-deciding the same thing every month is a real cost, and one page may fix it.
 
-Possibly not a full one. Sometimes what is needed is three settled decisions and a page of documentation. — A system pays back when the same decisions recur across people and time. Before that it is maintenance with no return, and the honest answer is to settle the three decisions that keep drifting.
+Probably not yet: settle the three drifting decisions on one documented page. — A full system pays back when the same decisions recur across people and time. Before that it is maintenance with little return; settling what actually drifts is the proportionate step.
 
 Improve: Check your three problems in step 2 are things that have actually recurred, and replace any that have not. Record the change in step 5.
 
@@ -497,18 +497,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your purpose statement says the system provides a consistent, scalable foundation. What is wrong with it?
 
-- Nothing, though it could be more specific.
-- It names nobody and no cost, so it cannot be used to decide what to build first.
-- Scalable is the wrong word for a small product.
+- Nothing is wrong with it, though it could be a little more specific.
+- It names nobody and no cost, so it cannot decide what to build first.
+- “Scalable” is the wrong word for a product this small, and a smaller word would fix it.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing, though it could be more specific. — Specificity is not a polish here. Without a person and a cost, the sentence cannot answer any question you will ask it.
+Nothing is wrong with it, though it could be a little more specific. — Specificity is not polish here. Without a person and a cost, the sentence cannot answer any question you will ask it.
 
-It names nobody and no cost, so it cannot be used to decide what to build first. — A purpose exists to settle arguments. Three problems with people and costs attached will tell you which component to build first; a description of the system will not.
+It names nobody and no cost, so it cannot decide what to build first. — A purpose exists to settle arguments. Three problems with people and costs attached tell you which component to start with; a description of the system does not.
 
-Scalable is the wrong word for a small product. — The vocabulary is a symptom. Replacing scalable with something else leaves the same unusable sentence.
+“Scalable” is the wrong word for a product this small, and a smaller word would fix it. — The vocabulary is a symptom. Swapping the word leaves the same unusable sentence.
 
 Improve: Rewrite any problem in step 2 that does not name a person and a cost. Record the change in step 5.
 
@@ -525,20 +525,20 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You have not written a maintenance cost or anything the system makes harder. Does that matter?
+Your purpose page states benefits but no maintenance time and nothing the system makes harder. Does that matter?
 
-- Yes. A system that costs nothing and constrains nothing is a folder of pictures, and stating the cost is what gets it maintained.
-- Not much, since the cost is obvious to anyone who has built one.
-- It matters only if somebody else pays the cost.
+- Not much, since the cost is obvious to anyone who has built a system.
+- Only if somebody other than you will pay the monthly cost of keeping it up to date.
+- It matters: the stated cost is what gets the system maintained and sized.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes. A system that costs nothing and constrains nothing is a folder of pictures, and stating the cost is what gets it maintained. — Rigidity is real: some screens will be worse because they had to use the shared component. Saying so in advance is what makes the trade an argument rather than a surprise.
+Not much, since the cost is obvious to anyone who has built a system. — It is obvious to people who have. It surprises everybody else, including you in four months.
 
-Not much, since the cost is obvious to anyone who has built one. — It is obvious to people who have. It is exactly the thing that surprises everybody else, including you in four months.
+Only if somebody other than you will pay the monthly cost of keeping it up to date. — You will pay it monthly, and the estimate decides whether the system is the right size.
 
-It matters only if somebody else pays the cost. — You will pay it, monthly, and the estimate is what decides whether the system is the right size.
+It matters: the stated cost is what gets the system maintained and sized. — Rigidity is real: some screens will be worse for using the shared component. Saying so in advance turns the trade into an argument rather than a surprise.
 
 Improve: Write an hours-a-month figure and one thing the system makes harder in step 5, then record the change.
 
@@ -613,15 +613,41 @@ It will. A system that costs nothing and constrains nothing is a folder of pictu
 It will. A system that costs nothing and constrains nothing is a folder of pictures.
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a small charity runs a volunteer sign-up site with five screens, one part-time developer and you. Button styles differ on three screens, the developer asks you every week how error messages should look, and someone has proposed “a full design system like the big companies have”.
+
+**Task:** Decide what the system should be for and what it should leave out, and explain why that scope fits this charity better than the proposal.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Agrees to build a full system for consistency in general, or lists many components with no person or cost attached.
+- Adequate: States problems with a person and a cost (drifting buttons, weekly error questions costing the developer), names the real audience and lists what stays out.
+- Strong: As adequate, and estimates the monthly upkeep or names what the system will make harder, or says a single page of settled decisions may be enough.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -771,7 +797,7 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - Six foundation groups documented with values and rules
 - A reason recorded for each group's key decisions
 - Measured contrast for every permitted text pair
-- One do-and-do-not pair per group, drawn from a real mistake
+- One do-and-do-not pair per group, drawn from a real misuse and labelled by source
 
 ### Start here: in everyday words
 
@@ -835,7 +861,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The foundations page documented six groups. Colour: five neutrals and three semantic colours, each with permitted usages, forbidden usages and measured ratios for every text pair. Type: six steps with their jobs, minimum sizes and line-height rules. Spacing: six values with a rule that spacing between groups is always larger than spacing within them. Radius: two values with a rule about which components use which. Elevation: two levels with the statement that elevation never carries meaning alone. Motion: three durations with their reduced-motion pairs. Each group carried one do-and-do-not pair drawn from a real mistake.
+- Example (made up): the foundations page documented six groups. Colour: five neutrals and three semantic colours, each with permitted usages, forbidden usages and measured ratios for every text pair. Type: six steps with their jobs, minimum sizes and line-height rules. Spacing: six values with a rule that spacing between groups is always larger than spacing within them. Radius: two values with a rule about which components use which. Elevation: two levels with the statement that elevation never carries meaning alone. Motion: three durations with their reduced-motion pairs. Each group carried one do-and-do-not pair drawn from a real mistake.
 
 
 ### Choose where you will do the work
@@ -845,6 +871,17 @@ Section: learn. Stable action: workspace.
 Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
+
+
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Supplied working component (made up practice material): component-states.html, a button and a text input for the Northside Tool Library, version 1.0.0. Open it from the course site at the address ending /starters/m13/component-states.html, or download it. Its page shows every state in labelled grids, its tokens, measured contrast on the plain background, keyboard behaviour, content rules and one open decision.
+- A misuse you can check yourself (made up practice material): the supplied component’s token table says space-3 is 12px, but its stylesheet declares 16px, which is what every button and field uses. Inspect a button’s padding to confirm it.
+- Another real misuse to look for there: the success message colour is measured only on the plain background. Measure it on the tinted panel before trusting it everywhere.
 
 
 ### Convert values into decisions
@@ -1046,15 +1083,15 @@ Section: practice-plan. Stable action: step-4-brief.
 One do-and-do-not pair for each group, each drawn from a mistake you actually made.
 
 - For each group, produce one do-and-do-not example.
-- Draw each from a mistake you have actually made.
+- Draw each from a real misuse: your screens, the step 5 check or the supplied material, labelled.
 
-**Start here:** For each group, find a screen where you got it wrong and use that as the do-not.
+**Start here:** For each group, find a real misuse on your screens, in your step 5 check or in the supplied material, and use that as the do-not.
 
-**Enough:** Every do-not is something you actually did, not something nobody would do.
+**Enough:** Every do-not is a real misuse with its source named; a group with none says so.
 
 **Do-and-do-not:** The right usage beside the wrong one. The wrong one is what people learn from, because it names the mistake they were about to make.
 
-**From a real mistake:** Taken from your own screens rather than invented. Invented wrong examples tend to be absurd, and nobody was going to make them.
+**From a real misuse:** Taken from your own screens, a value check or supplied material, with the source named. Invented wrong examples tend to be absurd, and nobody was going to make them.
 
 
 ### Try the distinction · 1 of 6
@@ -1213,15 +1250,15 @@ Now read your own six groups the same way, and fix whichever part is missing.
 </details>
 
 
-### For each group: one do and one do-not, drawn from a mistake you actually made
+### For each group: one do and one do-not, from a real misuse, with where it came from
 
 Section: practice-plan. Stable action: write-do-not-pairs.
 
-Write your answer for “For each group: one do and one do-not, drawn from a mistake you actually made”. Use the task instructions below to decide what to include.
+Your own screens, the value check in step 5 or the supplied material. Never invent a mistake to fill a gap; leave a group without one and say so.
 
-**Answer:** For each group: one do and one do-not, drawn from a mistake you actually made
+**Answer:** For each group: one do and one do-not, from a real misuse, with where it came from
 
-
+Your own screens, the value check in step 5 or the supplied material. Never invent a mistake to fill a gap; leave a group without one and say so.
 
 <details>
 <summary>Example</summary>
@@ -1237,20 +1274,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You have published six spacing values and screens still look unrelated. What is missing?
+You have published six spacing values, and screens built from them still look unrelated. What is missing?
 
-- A rule for when each value applies. Six permitted values used arbitrarily is arbitrary spacing with extra steps.
-- The values are not being used, so it is an adoption problem.
-- The scale has too many values.
+- A rule for when each value applies, not just which values are allowed.
+- Fewer values: six is too many for anyone to apply consistently across screens.
+- Adoption: the values exist, but the screens are not yet built from them at all.
 
 <details>
 <summary>After your attempt</summary>
 
-A rule for when each value applies. Six permitted values used arbitrarily is arbitrary spacing with extra steps. — One sentence — the gap between groups always exceeds the gap within them — decides most of the cases the scale leaves open. That sentence is the foundation; the numbers are the input to it.
+A rule for when each value applies, not just which values are allowed. — One sentence such as “the gap between groups always exceeds the gap within them” settles most of what a list of values leaves open. The rule is the foundation; the numbers are its input.
 
-The values are not being used, so it is an adoption problem. — They are being used, which is why this is worth noticing. Permitted and consistent are different things.
+Fewer values: six is too many for anyone to apply consistently across screens. — Fewer values remove some choices. Only a rule makes any number of values consistent.
 
-The scale has too many values. — Fewer values would help a little by removing choices. The rule is what makes any number of values consistent.
+Adoption: the values exist, but the screens are not yet built from them at all. — The screens are using them, which is why this is worth noticing. Permitted and consistent are different things.
 
 Improve: Add a rule for when each value applies to your spacing group in step 1, and record the change in step 5.
 
@@ -1269,18 +1306,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Foundations feel like the easy part of the system. Are they?
 
-- Yes, because the values already exist from earlier modules.
-- Yes for spacing and type, no for colour.
-- They are the part everything else inherits, so a weak scale or an unmeasured pair propagates into every component.
+- Yes for spacing and type, though colour needs more care because of contrast.
+- Everything inherits them, so a weak scale or unmeasured pair spreads everywhere.
+- Yes, because the values already exist in your token sheet from the earlier modules.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, because the values already exist from earlier modules. — The values exist. The rules, the reasons and the measured pairs are the work, and they are what components will inherit.
+Yes for spacing and type, though colour needs more care because of contrast. — Colour carries the contrast measurements, and a spacing scale with no rule spreads just as widely.
 
-Yes for spacing and type, no for colour. — Colour carries the contrast measurements, and a spacing scale with no rule propagates just as widely.
+Everything inherits them, so a weak scale or unmeasured pair spreads everywhere. — Fixing a foundation later means touching everything built on it. That is why rules and reasons matter more here than anywhere else in the system.
 
-They are the part everything else inherits, so a weak scale or an unmeasured pair propagates into every component. — Fixing a foundation later means touching everything built on it. That is the opposite of easy, and it is why the reasons and rules matter more here than anywhere else in the system.
+Yes, because the values already exist in your token sheet from the earlier modules. — The values exist. The rules, the reasons and the measured pairs are the work, and components inherit them.
 
 Improve: Add the reason to any group in step 1 that has only values and a rule. Record the change in step 5.
 
@@ -1297,24 +1334,24 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Your do-and-do-not examples are invented rather than taken from your own screens. Does it matter?
+You cannot find a mistake of your own for the spacing group, so you plan to invent one for its do-not example. What should you do instead?
 
-- Not really, as long as the right usage is clear.
-- It matters only if somebody checks where they came from.
-- Yes. Invented wrong examples tend to be absurd, and nobody was going to make them.
+- Use a real misuse found by checking a screen or the supplied component.
+- Leave the do-not out, because the right usage on its own is clear enough to follow.
+- Invent one, since nobody will check where a do-not example came from.
 
 <details>
 <summary>After your attempt</summary>
 
-Not really, as long as the right usage is clear. — The right usage is usually obvious. The wrong one is where the teaching is, and only if it is a mistake somebody would make.
+Use a real misuse found by checking a screen or the supplied component. — A do-not teaches only if somebody would plausibly make the mistake. The value check in step 5, the supplied component or the supplied notes give real ones; label where each came from rather than inventing one.
 
-It matters only if somebody checks where they came from. — Nobody will check. The example will simply fail to prevent the mistake it was meant to prevent.
+Leave the do-not out, because the right usage on its own is clear enough to follow. — The right usage is usually obvious; the wrong one is where the teaching is, provided it is a mistake somebody would make.
 
-Yes. Invented wrong examples tend to be absurd, and nobody was going to make them. — The mistakes worth showing are the plausible ones, which means the ones you actually made. A do-not nobody was tempted by teaches nothing.
+Invent one, since nobody will check where a do-not example came from. — Nobody may check, and an invented mistake tends to be one nobody would make, so it fails to prevent anything.
 
-Improve: Replace one invented do-not in step 4 with a mistake from your own screens. Record the change in step 5.
+Improve: Replace any invented do-not in step 4 with a misuse from your own screens, the step 5 check or the supplied material, labelled. Record the change in step 5.
 
-Check again: Every do-not is traceable to a real screen of yours.
+Check again: Every do-not names where it came from.
 
 Answers to revisit: do-not-pairs, improvement-made
 
@@ -1325,13 +1362,13 @@ Answers to revisit: do-not-pairs, improvement-made
 
 Section: practice. Stable action: step-5-brief.
 
-One built screen checked value by value, with every value in use that the foundations do not permit.
+One screen (a drawing, a built page or the supplied component) checked value by value, with every value the foundations do not permit.
 
-- Take one built screen and check every value against the foundations.
+- Take one screen (a Project 1 drawing, a built page or the supplied component) and check every value.
 - Record any value in use that the foundations do not permit.
 - Save the foundations page.
 
-**Start here:** Open the inspector on one screen and read the computed values rather than trusting the stylesheet.
+**Start here:** Measure a Project 1 drawing, or open the supplied component and read the computed values in the inspector rather than trusting its table.
 
 **Enough:** For each unpermitted value you decided whether to add it to the foundations or change the screen.
 
@@ -1363,13 +1400,13 @@ Made-up example. Checking a tool-library screen against its own foundations, and
 **Unknown:** Still unknown: whether the tinted panel should exist at all, since it is the thing that forced a new grey. That is a question for the component review rather than for the foundations.
 
 
-### Which screen you checked, value by value
+### Which screen you checked, value by value: a Project 1 drawing, a built page or the supplied component
 
 Section: practice. Stable action: write-screen-checked.
 
-Write your answer for “Which screen you checked, value by value”. Use the task instructions below to decide what to include.
+Write your answer for “Which screen you checked, value by value: a Project 1 drawing, a built page or the supplied component”. Use the task instructions below to decide what to include.
 
-**Answer:** Which screen you checked, value by value
+**Answer:** Which screen you checked, value by value: a Project 1 drawing, a built page or the supplied component
 
 
 
@@ -1385,15 +1422,41 @@ There will be some. Deciding whether to add the value or change the screen is th
 There will be some. Deciding whether to add the value or change the screen is the point of this step.
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a recipe site’s foundations page lists spacing values 4, 8, 16 and 32, a grey #8a8a8a for captions, and two shadow levels. Captions in grey sit on white, where they measure 3.45:1. One screen uses 12-pixel gaps that are on no list.
+
+**Task:** Rewrite one of these entries as a real foundation, and explain what you would do about the caption grey and the 12-pixel gap.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Adds 12 to the scale and keeps the grey because it looks soft; publishes values with no rule or reason.
+- Adequate: Adds a usage rule and a reason (for example, gaps between groups exceed gaps within them), forbids the grey on white for body-size text below 4.5:1, and tries 8 or 16 before adding 12.
+- Strong: As adequate, and lists the failing pair as a forbidden pair, or turns the 12-pixel screen into a labelled do-not example drawn from a real misuse.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -1492,19 +1555,19 @@ Adequate evidence: Durations and easings documented with their reduced alternati
 
 Repair: Bring your m09 sheet into the foundations and add the reduced pair for each entry. Recheck: The motion foundations.
 
-**Do-and-do-not pairs come from real mistakes**
+**Do-and-do-not pairs come from real misuses, labelled by source**
 
-Adequate evidence: One pair per group, each traceable to something that actually went wrong.
+Adequate evidence: One pair per group, each traceable to a real misuse: your own screens, the value check or the supplied material.
 
 0 — No examples.
 
-1 — Invented examples.
+1 — Invented examples presented as if they had happened.
 
-2 — Examples drawn from real mistakes in your work.
+2 — Examples from real misuses, each with its source named.
 
 3 — As adequate, and each names the consequence of the wrong usage.
 
-Repair: Look back through your screens for misuse you have already committed and photograph both versions. Recheck: The example pairs.
+Repair: Look through your screens, your value check and the supplied material for real misuses; never invent one to fill a gap. Recheck: The example pairs.
 
 </details>
 The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
@@ -1516,7 +1579,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 - Each foundation group has values, rules and reasons
 - Contrast is measured and permitted pairs listed
 - Motion values include reduced-motion pairs
-- Do-and-do-not pairs come from real mistakes
+- Do-and-do-not pairs come from real misuses, labelled by source
 
 <details>
 <summary>Reading, video and deeper explanation</summary>
@@ -1607,7 +1670,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The class card was specified. Anatomy: container, image slot (optional), title, meta row, status area, action. Variants: default, compact, unavailable. States for each: default, hover, focus, loading, error. Content rules: title truncates to two lines keeping the beginning, meta row wraps rather than truncating, status area always shows text as well as colour, image slot may be absent without changing layout height. Keyboard: the whole card is not a target — the title is the link and the action is a button, matching the m09 tables. When not to use: not for a single featured item, where a dedicated layout reads better; not as a navigation element.
+- Example (made up): the class card was specified. Anatomy: container, image slot (optional), title, meta row, status area, action. Variants: default, compact, unavailable. States for each: default, hover, focus, loading, error. Content rules: title truncates to two lines keeping the beginning, meta row wraps rather than truncating, status area always shows text as well as colour, image slot may be absent without changing layout height. Keyboard: the whole card is not a target — the title is the link and the action is a button, matching the m09 tables. When not to use: not for a single featured item, where a dedicated layout reads better; not as a navigation element.
 
 
 ### Choose where you will do the work
@@ -1998,26 +2061,26 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Your component specification has the visual design, the variants and the states. Is it complete?
+Your component specification covers the visual design, the variants and the states. Is it complete?
 
-- Yes, since those three cover what the component looks like in every situation.
-- Nearly, apart from the colour values.
-- Not yet. Content rules, keyboard behaviour and a when-not-to-use section are what make it reusable, and they are what designers most often leave out.
+- Yes, because those three show exactly how it looks in every situation it meets.
+- Nearly, apart from listing the exact colour values for each state in the grid.
+- Not yet: content rules, keyboard behaviour and when not to use it are missing.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, since those three cover what the component looks like in every situation. — They cover appearance in every situation. Nothing yet says what happens to a title of eleven words, or which key does what.
+Yes, because those three show exactly how it looks in every situation it meets. — They show appearance in every situation. Nothing yet says what happens to an eleven-word title, or which key does what.
 
-Nearly, apart from the colour values. — Colour comes from the foundations. The gaps are behaviour and content.
+Nearly, apart from listing the exact colour values for each state in the grid. — Colour comes from the foundations. The gaps are behaviour and content.
 
-Not yet. Content rules, keyboard behaviour and a when-not-to-use section are what make it reusable, and they are what designers most often leave out. — The visual design is one part. What lets somebody build it without asking you is the anatomy, the decided grid, the content rules and the boundaries.
+Not yet: content rules, keyboard behaviour and when not to use it are missing. — Those are what let somebody build it without asking you, and what designers most often leave out. Appearance in every state is only one part.
 
 Improve: Add the missing sections in steps 3 and 4, and record the change in step 5.
 
 Check again: Your specification covers content, keyboard and boundaries as well as appearance.
 
-Answers to revisit: given-to, questions-asked, improvement-made
+Answers to revisit: spec-test-route, given-to, questions-asked, improvement-made
 
 </details>
 
@@ -2030,18 +2093,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You have listed loading and error alongside compact and unavailable as variants. What goes wrong?
 
-- They are states rather than variants, so nothing says what a compact card looks like while loading.
-- The list is simply too long.
-- Nothing, provided all five are specified.
+- The list simply becomes too long for anyone to read or keep in their head.
+- Loading and error are states, so a compact card’s loading look is never decided.
+- Nothing goes wrong, as long as all five entries are fully specified and drawn out.
 
 <details>
 <summary>After your attempt</summary>
 
-They are states rather than variants, so nothing says what a compact card looks like while loading. — A variant is chosen at design time; a state is entered at run time. Listing them together removes the second axis, and the combinations stop being visible.
+The list simply becomes too long for anyone to read or keep in their head. — Length is not the problem. The grid usually has more cells than the list, and it answers questions the list cannot.
 
-The list is simply too long. — Length is not the problem. The grid is usually more cells than the list, and it answers questions the list cannot.
+Loading and error are states, so a compact card’s loading look is never decided. — A variant is chosen at design time; a state is entered at run time. Listing them together removes the second axis, and the combinations stop being visible.
 
-Nothing, provided all five are specified. — All five being specified leaves fifteen combinations of which five are covered.
+Nothing goes wrong, as long as all five entries are fully specified and drawn out. — Five specified entries leave fifteen combinations, of which only five are covered.
 
 Improve: Rebuild the grid in step 2 with variants down and states across, and decide or exclude every cell. Record the change in step 5.
 
@@ -2060,18 +2123,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A content rule says the title should be an appropriate length. What is wrong with it?
 
-- Nothing, since the designer will review the build.
-- Appropriate is decided by whoever builds it, so the decision has been handed back rather than made.
-- It should specify a character count instead.
+- It hands the decision back to whoever builds it, instead of making it.
+- It should give an exact maximum number of characters instead.
+- Nothing, because the designer will review the build anyway and correct the length.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing, since the designer will review the build. — Reviewing afterwards costs a round trip on something a sentence could have settled.
+It hands the decision back to whoever builds it, instead of making it. — Lines like this survive review because nobody can disagree with them. A buildable rule names how many lines, which end survives and why.
 
-Appropriate is decided by whoever builds it, so the decision has been handed back rather than made. — Lines like this survive review because nobody can disagree with them. The buildable version names the number of lines, which end survives, and why.
+It should give an exact maximum number of characters instead. — A character count is one way, and often a poor one, since two lines of a proportional typeface hold no fixed count. Lines and the preserved end are usually better.
 
-It should specify a character count instead. — A character count is one way and often the wrong one, since two lines of a proportional typeface is not a fixed count. Lines and which end survives is usually better.
+Nothing, because the designer will review the build anyway and correct the length. — Reviewing afterwards costs a round trip on something one sentence could settle.
 
 Improve: Rewrite that rule in step 3 to name lines, the end preserved and the reason. Record the change in step 5.
 
@@ -2088,13 +2151,13 @@ Section: practice. Stable action: step-5-brief.
 
 The specification given to somebody, or built from cold by you, with every question they had to ask recorded.
 
-- Give it to someone and ask what they would build.
-- Record every question they had to ask you.
+- Give it to someone, or rebuild from it yourself after a gap and call it a solo rehearsal.
+- Record every question raised, without answering it at once.
 - Save the specification and the questions.
 
 **Start here:** Hand it over without explaining anything, and write down every question rather than answering it immediately.
 
-**Enough:** The questions are recorded as holes in the document rather than as things you explained away.
+**Enough:** The questions are recorded as holes in the document, and the route says whether a reader or a solo rehearsal found them.
 
 **Testing a specification:** Giving it to somebody and asking what they would build. Every question they ask is a hole, and the questions are the result.
 
@@ -2124,37 +2187,74 @@ Made-up example. Testing a tool card specification, and defending it instead of 
 **Unknown:** Still unknown: how many holes remain that this reader happened not to hit. One reader finds the holes one reader finds.
 
 
-### Who you gave it to, or how you tested it alone
+### How the specification was tested
+
+Section: practice. Stable action: write-spec-test-route.
+
+Choose the option that honestly describes your work.
+
+**Answer:** How the specification was tested (Another person read it and said what they would build / Solo rehearsal: I rebuilt from it myself after a gap)
+
+
+
+
+### Who read it, as a role and not a name, or how you tested it alone
 
 Section: practice. Stable action: write-given-to.
 
-If nobody is available, leave it a day and build from it yourself without looking at the screens. Write that here.
+If nobody is available, leave it a day and rebuild from it yourself without looking at the screens. That is rehearsal, not a reader test.
 
-**Answer:** Who you gave it to, or how you tested it alone
+**Answer:** Who read it, as a role and not a name, or how you tested it alone
 
-If nobody is available, leave it a day and build from it yourself without looking at the screens. Write that here.
+If nobody is available, leave it a day and rebuild from it yourself without looking at the screens. That is rehearsal, not a reader test.
 
 
-### Every question they had to ask you
+### Every question raised, in short, with no names (yours, if solo)
 
 Section: practice. Stable action: write-questions-asked.
 
-Each question is a hole in the specification. That is the whole result of this step.
+Each question is a hole in the specification. Keep any raw notes private and local, with a date to delete them.
 
-**Answer:** Every question they had to ask you
+**Answer:** Every question raised, in short, with no names (yours, if solo)
 
-Each question is a hole in the specification. That is the whole result of this step.
+Each question is a hole in the specification. Keep any raw notes private and local, with a date to delete them.
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a parking app has a “permit card” with a vehicle registration, an expiry date, a status and a “Renew” button. The current specification shows one picture and says “status should be clear”. Engineers keep asking what happens when a permit is expired, loading or has no expiry date.
+
+**Task:** Name the parts, two variants and the states you would put in the grid, plus one content rule, and explain why the grid answers the engineers’ questions.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Lists expired and loading as variants next to the picture, or keeps “status should be clear” as the rule.
+- Adequate: Names parts with optional ones marked, separates variants (for example active and expired) from states (loading, focus, error), and writes a buildable rule for the missing expiry date.
+- Strong: As adequate, and marks impossible cells, adds keyboard behaviour or a when-not-to-use line, or plans to test the specification with someone or a labelled solo rebuild.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -2295,11 +2395,11 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 Stable ID: m13-l04-v1. Core.
 
-A specified state that has never been rendered is a guess. Building the grid is what turns the specification into a system.
+Part of the optional technical extension: core learners can use the supplied working component (component-states.html) and the specification lessons instead. A specified state that has never been rendered is a guess. Building the grid is what turns the specification into a system.
 
-Bring: Your component specification and a text editor.
+Bring: Notepad, a browser, your component specification and the supplied component-states.html.
 
-Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+Starting route: Recommended route: Optional technical extension: core learners can use the supplied working component and the specification lessons instead. To practise building a component with every state, download component-states.html (on the course site, the address ending /starters/m13/component-states.html) and save it in Documents\HaruCourse\Practice\m13-l04-v1. If Windows saved it as component-states.html.txt, rename it to end in .html. Open it in Notepad (right-click, Open with, Notepad) and in your browser (double-click), make the one change marked “Change this one thing first”, save with Ctrl+S, reload with F5, then record what you did and saw here. Alternative route: If the page is blank or did not change: check the name ends in .html (File Explorer, View, Show, File name extensions), press Ctrl+Z in Notepad and save to undo your last change, or download a fresh copy. You may work from your own Project 2 build instead; note its folder in Your work. Nothing is uploaded.
 
 - The component built from tokens
 - A page showing every variant against every state
@@ -2316,7 +2416,7 @@ A design system is a shared set of decisions and reusable parts that helps a tea
 - **Missing token:** A value the component needs that the foundations do not offer. It is a finding about one of the two, and it should not be resolved by quietly typing a number.
 - **Demonstrable on demand:** You can make the state appear whenever you want, usually by adding a class. A state that only shows up when the network is slow cannot be reviewed.
 
-**Quick example.** Made-up example. Building the states of a tool card, and treating a difficult state as a coding problem. The loading state on the compact variant. I spent an hour on it and every version either changed the card’s height or lost the status line.
+**Quick example.** Made-up example. Building the states of a tool card, and jumping to a verdict about a difficult state. The loading state on the compact variant. I spent an hour on it and every version either changed the card’s height or lost the status line.
 
 The reader demonstrates and guides the task before asking for “Where the component and its states page live”.
 
@@ -2355,11 +2455,11 @@ Section: learn. Stable action: learn-4.
 Build the awkward content case, not the tidy one.
 
 
-### If a state is hard to build, the specification may be wrong
+### Hard to build
 
 Section: learn. Stable action: learn-5.
 
-If a state is hard to build, the specification may be wrong.
+Hard to build? Check your build, then the supplied component, before blaming the specification.
 
 
 ### See the idea in a supplied example
@@ -2368,16 +2468,25 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The class card was built in about eighty lines, every value from a token. The states page shows three variants against five states, plus three content cases: a very long title, a missing image and a class with one place left. Building revealed two specification problems. The loading and unavailable states looked nearly identical in greyscale and needed a second distinguishing signal. And the compact variant could not accommodate the status text at all, which meant it was either a different component or the status rule needed changing — recorded as an open decision rather than patched.
+- Example (made up): the class card was built in about eighty lines, every value from a token. The states page shows three variants against five states, plus three content cases: a very long title, a missing image and a class with one place left. Building revealed two specification problems. The loading and unavailable states looked nearly identical in greyscale and needed a second distinguishing signal. And the compact variant could not accommodate the status text at all, which meant it was either a different component or the status rule needed changing — recorded as an open decision rather than patched.
 
 
 ### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
-Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+Recommended route: Optional technical extension: core learners can use the supplied working component and the specification lessons instead. To practise building a component with every state, download component-states.html (on the course site, the address ending /starters/m13/component-states.html) and save it in Documents\HaruCourse\Practice\m13-l04-v1. If Windows saved it as component-states.html.txt, rename it to end in .html. Open it in Notepad (right-click, Open with, Notepad) and in your browser (double-click), make the one change marked “Change this one thing first”, save with Ctrl+S, reload with F5, then record what you did and saw here. Alternative route: If the page is blank or did not change: check the name ends in .html (File Explorer, View, Show, File name extensions), press Ctrl+Z in Notepad and save to undo your last change, or download a fresh copy. You may work from your own Project 2 build instead; note its folder in Your work. Nothing is uploaded.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
+
+
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Supplied working component (made up practice material): component-states.html, a button and a text input for the Northside Tool Library, version 1.0.0. Open it from the course site at the address ending /starters/m13/component-states.html, or download it. Its page shows every state in labelled grids, its tokens, measured contrast on the plain background, keyboard behaviour, content rules and one open decision.
 
 
 ### Build the default
@@ -2386,7 +2495,8 @@ Section: practice-plan. Stable action: step-1-brief.
 
 The component built from token values only, with any value the foundations do not have written down rather than added.
 
-- Build the component using only token values.
+- Open component-states.html, make its one marked change, save and reload.
+- Build your component using only token values.
 - Record any value you needed that the foundations do not have.
 
 **Start here:** Open your foundations page beside the editor and refer to it rather than to the design file.
@@ -2402,11 +2512,11 @@ The component built from token values only, with any value the foundations do no
 
 Section: practice-plan. Stable action: write-built-where.
 
-One HTML file and your existing stylesheet, in your own folder. No framework or build step.
+Start from the supplied component-states.html, saved in your own folder. One HTML file; no framework or build step.
 
 **Answer:** Where the component and its states page live
 
-One HTML file and your existing stylesheet, in your own folder. No framework or build step.
+Start from the supplied component-states.html, saved in your own folder. One HTML file; no framework or build step.
 
 
 ### How you kept every value coming from a token
@@ -2440,7 +2550,7 @@ Every state from the grid built so it can be shown on demand, with any that were
 - Add each state from the grid so it can be shown on demand.
 - Include focus, loading, disabled and error where applicable.
 
-**Start here:** Build the state you are least sure about first, before the easy ones.
+**Start here:** Build the state you are least sure about first. If it fights you, climb the ladder before deciding why.
 
 **Enough:** Every state can be shown by you, deliberately, in a second.
 
@@ -2453,19 +2563,19 @@ Every state from the grid built so it can be shown on demand, with any that were
 
 Section: practice-plan. Stable action: step-2-demo.
 
-Made-up example. Building the states of a tool card, and treating a difficult state as a coding problem.
+Made-up example. Building the states of a tool card, and jumping to a verdict about a difficult state.
 
 **What was difficult:** The loading state on the compact variant. I spent an hour on it and every version either changed the card’s height or lost the status line.
 
-**What I assumed:** That I was not good enough at CSS yet. It was my second week of building and that assumption was comfortable.
+**First rung: the inspector:** I selected the card and read the Styles panel. No rule I had not expected was winning, and the computed height matched what I had set, so it was not a hidden conflict.
 
-**What was actually wrong:** The compact variant has no room for the status text at all. The loading state has to reserve that room, and the variant’s whole reason for existing is not having it.
+**Second rung: a working version:** The supplied component builds its loading state in minutes, but it has no compact variant. So the technique was fine; something about compact was different.
 
-**What that meant:** Either the compact card is a different component, or the status rule is wrong. Both are design decisions, and neither is fixable in CSS.
+**Third rung: the specification:** The compact variant has no room for the status text, and every card must show its status. Two rules contradict each other, and no CSS can satisfy both.
 
-**What I recorded:** The hour as a finding rather than a failure, and the question as an open decision for the variant lesson rather than something patched at three in the afternoon.
+**What I recorded:** The three checks and the contradiction, as an open decision for the variant lesson rather than something patched at three in the afternoon.
 
-**Wrong turn:** The wrong turn is treating a state that will not build as a problem with your skill, because early on that is always plausible. A state that fights the markup is usually a specification saying two incompatible things.
+**Wrong turn:** The wrong turn is jumping to a verdict, either “my CSS is not good enough” or “the specification is wrong”, without the two quick checks in between. Each verdict is right some of the time, and only the checks tell you which time this is.
 
 **Trade-off:** Stopping to record it leaves a visibly incomplete states page, and somebody looking at it will assume you ran out of time.
 
@@ -2483,15 +2593,15 @@ Showable on demand means a class you can add, or a copy of the markup on the pag
 Showable on demand means a class you can add, or a copy of the markup on the page. Not something that only appears if the network is slow.
 
 
-### Any state that was hard to build, and what that suggested about the specification
+### Any state that was hard to build, the checks you ran, and what they suggested
 
 Section: practice-plan. Stable action: write-hard-to-build.
 
-Write your answer for “Any state that was hard to build, and what that suggested about the specification”. Use the task instructions below to decide what to include.
+The ladder: is a rule winning in the inspector? Does the same state build in the supplied component? Only then suspect the specification.
 
-**Answer:** Any state that was hard to build, and what that suggested about the specification
+**Answer:** Any state that was hard to build, the checks you ran, and what they suggested
 
-
+The ladder: is a rule winning in the inspector? Does the same state build in the supplied component? Only then suspect the specification.
 
 
 ### Make the states page
@@ -2771,20 +2881,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You plan to add the remaining states when a screen needs them. What is wrong with that?
+You plan to add the remaining states when a screen first needs them. What is the risk?
 
-- It is inefficient to come back to the component twice.
-- The first screen using the component under real conditions needs them, and retrofitting means changing a design that assumed they did not exist.
-- Nothing, provided the specification lists them.
+- There is little risk, provided the specification already lists every one of them.
+- Coming back to the same component twice is slower than doing it all at once.
+- Real screens need them at once, and adding them later means reworking the layout.
 
 <details>
 <summary>After your attempt</summary>
 
-It is inefficient to come back to the component twice. — That is the smallest cost. The real one is the screen that has to change.
+There is little risk, provided the specification already lists every one of them. — A specified state nobody has rendered is a guess. Building it is what shows whether it is possible.
 
-The first screen using the component under real conditions needs them, and retrofitting means changing a design that assumed they did not exist. — Loading, empty and error are not rare. Building them now costs an hour on the states page; building them later costs a redesign of whatever was laid out without room for them.
+Coming back to the same component twice is slower than doing it all at once. — That is the smallest cost. The real one is the screen that has to change.
 
-Nothing, provided the specification lists them. — A specified state nobody has rendered is a guess. The build is what finds out whether it is possible.
+Real screens need them at once, and adding them later means reworking the layout. — Loading, empty and error are not rare. Building them now costs an hour on the states page; building them later can mean redesigning whatever was laid out without room for them.
 
 Improve: Build any state in step 2 you were going to leave until later, and record what it showed. Note the change in step 5.
 
@@ -2801,24 +2911,24 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-A state takes an hour and will not build properly. What is the most likely explanation?
+A state has taken an hour and still will not build properly. What should you check before recording it as a specification problem?
 
-- Your CSS is not good enough yet.
-- The component needs to be rebuilt from scratch.
-- The specification is asking for two incompatible things, and no amount of building resolves a contradiction.
+- Nothing more: an hour is long enough to show the specification is at fault.
+- The inspector for a rule that wins, then whether the supplied component builds it.
+- Whether the component would build more easily if rewritten from scratch.
 
 <details>
 <summary>After your attempt</summary>
 
-Your CSS is not good enough yet. — Sometimes true, and it is the comfortable assumption early on. Check the specification for a contradiction before assuming it.
+Nothing more: an hour is long enough to show the specification is at fault. — Time spent says nothing about the cause. A hidden overriding rule or an unfamiliar technique are both more common than a contradiction.
 
-The component needs to be rebuilt from scratch. — A rebuild against the same contradictory specification produces the same hour.
+The inspector for a rule that wins, then whether the supplied component builds it. — This is the diagnostic ladder: first your build, then a comparison with a working version. Only if both are clear is the specification likely to be asking for two incompatible things.
 
-The specification is asking for two incompatible things, and no amount of building resolves a contradiction. — A compact variant that must also show a status is the usual shape of it. That is a design decision, and it should be recorded as an open one rather than patched at the end of the afternoon.
+Whether the component would build more easily if rewritten from scratch. — A rebuild with the same cause, whether a winning rule or a contradiction, produces the same hour.
 
-Improve: Write that state into the hard-to-build field in step 2 with what it suggests, and into the specification problems in step 5. Record the change.
+Improve: Write the ladder you followed for that state into the hard-to-build field in step 2, and any confirmed contradiction into step 5. Record the change.
 
-Check again: Nothing difficult was resolved by quietly changing the design.
+Check again: Every specification problem you recorded names the checks that ruled out a build cause.
 
 Answers to revisit: states-built, hard-to-build, improvement-made
 
@@ -2831,20 +2941,20 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-The card needs a 6 pixel gap and your scale offers 4 and 8. What should you do?
+The card needs a 6 pixel gap, and your scale offers 4 and 8. What should you do?
 
-- Try 4 and 8 first. If neither works, that is a finding about the foundations rather than a reason to type 6.
-- Redesign the card so it does not need the gap.
-- Use 6, since the component has to look right.
+- Type 6 into the component, because it has to look right on the screen.
+- Try 4 and 8 first; if neither works, record it as a foundations finding.
+- Redesign the card so that it no longer needs a gap of that size.
 
 <details>
 <summary>After your attempt</summary>
 
-Try 4 and 8 first. If neither works, that is a finding about the foundations rather than a reason to type 6. — Usually one of them works and nobody can tell. When neither does, the scale genuinely lacks a step, and that belongs on the foundations page with a reason rather than inside one component.
+Type 6 into the component, because it has to look right on the screen. — A raw value inside a token-built component is the first crack. The next is easier to justify, and by the tenth the system permits everything.
 
-Redesign the card so it does not need the gap. — Possible and usually excessive. Trying the two neighbouring values takes thirty seconds.
+Try 4 and 8 first; if neither works, record it as a foundations finding. — Usually one of them works and nobody can tell. If neither does, the scale lacks a step, and that belongs on the foundations page with a reason, not inside one component.
 
-Use 6, since the component has to look right. — A raw value inside a component built from tokens is the first crack. The next one is easier to justify, and by the tenth the system permits everything.
+Redesign the card so that it no longer needs a gap of that size. — Possible, and usually excessive. Trying the two neighbouring values takes thirty seconds.
 
 Improve: Record any value you needed in step 1 rather than adding it, and decide in step 5 whether the component or the foundations changes. Note the change.
 
@@ -2867,20 +2977,20 @@ The specification problems the build revealed, plus greyscale and keyboard check
 
 **Start here:** Turn on greyscale with the whole states page open, and look across the rows rather than down them.
 
-**Enough:** The specification problems are written as open decisions rather than as things you patched.
+**Enough:** Any specification problems are written as open decisions, each with the checks that ruled out a build cause. None found is an honest result.
 
 **What the build reveals:** Contradictions a document can hold quite comfortably and a browser cannot. Every one is a finding about the specification.
 
 **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
 
 
-### Every specification problem the build found
+### Every specification problem the build found, or that you found none after the checks
 
 Section: practice. Stable action: write-spec-problems.
 
-Write your answer for “Every specification problem the build found”. Use the task instructions below to decide what to include.
+Write your answer for “Every specification problem the build found, or that you found none after the checks”. Use the task instructions below to decide what to include.
 
-**Answer:** Every specification problem the build found
+**Answer:** Every specification problem the build found, or that you found none after the checks
 
 
 
@@ -2896,15 +3006,41 @@ A states page is the easiest place in the whole system to run both, because ever
 A states page is the easiest place in the whole system to run both, because everything is visible at once.
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: you are building a toggle switch from a specification. The “disabled and on” state has taken forty minutes: the switch keeps showing the off colour. The specification also says every state must be readable in greyscale, and “disabled” and “off” currently differ only by colour.
+
+**Task:** Decide what you would check, in what order, before calling the forty-minute state a specification problem, and explain what the greyscale finding means.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Blames the specification at once, or keeps changing CSS until it looks right without recording anything.
+- Adequate: Checks the inspector for a winning rule, then compares with a working version, before suspecting the specification; records disabled versus off as a real specification gap needing a second signal.
+- Strong: As adequate, and records which rung showed what, or keeps every value as a token and notes the problem as an open decision rather than a quiet patch.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -2935,7 +3071,7 @@ Missing token: A value the component needs that the foundations do not offer. It
 Demonstrable on demand: You can make the state appear whenever you want, usually by adding a class. A state that only shows up when the network is slow cannot be reviewed.
 
 Supplied practice material (fictional or labelled practice, not my research):
-Made-up example. Building the states of a tool card, and treating a difficult state as a coding problem. The loading state on the compact variant. I spent an hour on it and every version either changed the card’s height or lost the status line.
+Made-up example. Building the states of a tool card, and jumping to a verdict about a difficult state. The loading state on the compact variant. I spent an hour on it and every version either changed the card’s height or lost the status line.
 
 Activity: Give me one inconsistent component or rule from the supplied case. Ask me to choose the shared decision, name what must stay flexible and explain how another person would know which version is current.
 
@@ -3011,9 +3147,9 @@ Adequate evidence: A list of contradictions, gaps or ambiguities surfaced by bui
 
 1 — Noticed but not recorded.
 
-2 — Recorded with the decision or the open question.
+2 — Recorded with the decision or open question, or none found, with the checks named.
 
-3 — As adequate, and one problem is left open rather than patched.
+3 — As adequate, and each problem names the ladder that ruled out a build cause.
 
 Repair: Write down every moment the build did not match the specification. Recheck: The problem list.
 
@@ -3035,7 +3171,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 - Building from tokens is what keeps the component consistent with everything else, and it is the moment your foundations get tested: a component that needs a value the foundations do not have has found either a missing role or an unnecessary variation, exactly as in m08.
 - A demonstrable state is one you can show without simulating a server or waiting for an error. Building a page where every state is rendered side by side — every variant against every state — is unglamorous and repays itself constantly: in review, in handover, in testing, and in noticing that two states look identical.
 - The awkward content case belongs in that page. Show the long title, the missing image and the unusual number beside the tidy versions, because those are the ones that break and the ones people forget to check when they change something.
-- Difficulty is information. A state that is awkward to build often indicates a specification problem: two states that need to be visible simultaneously, a variant that is really a different component, or content rules that contradict each other. Record the difficulty rather than working around it silently.
+- Difficulty is information, and it has more than one cause. Climb a short ladder before deciding: first, does the inspector show a rule winning that you did not expect? Second, does the same state build in the supplied working component, which would point to your build or an unfamiliar technique? Only then suspect the specification: two states that must be visible at once, a variant that is really a different component, or content rules that contradict each other. Record what each rung showed rather than working around it silently.
 
 [MDN: core learning modules](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core).
 
@@ -3047,7 +3183,7 @@ Stable ID: m13-l05-v1. Core.
 
 Every system eventually accumulates a component with eleven variants that nobody can hold in their head. The decision rule is what prevents it.
 
-Bring: Your inventory and one built component.
+Bring: Your inventory and one specified component, built or supplied. No coding is needed.
 
 Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
@@ -3118,7 +3254,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Three borderline cases were tested. The compact card: same job, same content rules, one fewer state — a variant. The booking summary: different job (a record of something you own, not an option to choose), different required fields, different actions — a separate component, despite looking almost identical. The promotional card: different job again, and its own content rules — separate, and marked out of scope entirely, since marketing surfaces were excluded in lesson 1. The test was written down and applied to two further cases the following week without re-argument.
+- Example (made up): three borderline cases were tested. The compact card: same job, same content rules, one fewer state — a variant. The booking summary: different job (a record of something you own, not an option to choose), different required fields, different actions — a separate component, despite looking almost identical. The promotional card: different job again, and its own content rules — separate, and marked out of scope entirely, since marketing surfaces were excluded in lesson 1. The test was written down and applied to two further cases the following week without re-argument.
 
 
 ### Choose where you will do the work
@@ -3128,6 +3264,15 @@ Section: learn. Stable action: workspace.
 Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
+
+
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Supplied working component (made up practice material): component-states.html, a button and a text input for the Northside Tool Library, version 1.0.0. Open it from the course site at the address ending /starters/m13/component-states.html, or download it. Its page shows every state in labelled grids, its tokens, measured contrast on the plain background, keyboard behaviour, content rules and one open decision.
 
 
 ### Write the test
@@ -3548,17 +3693,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Two things look almost identical. Is that a reason to make one a variant of the other?
 
 - Yes, provided the differences can be handled with options.
-- Yes, since reusing the markup is simpler.
-- No. Similar appearance is what a shared foundation produces, and it says nothing about what the reader is doing with each one.
+- Looks are not the test; what the reader is doing with each one is.
+- Yes, because reusing the same markup is simpler to build.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, provided the differences can be handled with options. — Handled with options is the description of the problem. Each option is a place the two jobs are pulling apart.
+Yes, provided the differences can be handled with options. — Handled with options describes the problem. Each option is a place the two jobs pull apart.
 
-Yes, since reusing the markup is simpler. — Simpler this week. Reuse for a different job produces conditional behaviour, which is harder to maintain than two clear components.
+Looks are not the test; what the reader is doing with each one is. — Similar appearance is what a shared foundation produces. A tool card offers something to choose; a booking summary records something you have. The boxes match because both use your spacing and type.
 
-No. Similar appearance is what a shared foundation produces, and it says nothing about what the reader is doing with each one. — A tool card offers you something to choose; a booking summary is a record of something you own. The boxes look the same because both use your spacing and type.
+Yes, because reusing the same markup is simpler to build. — Simpler this week. Reuse for a different job produces conditional behaviour, which is harder to maintain than two clear components.
 
 Improve: Answer the job question first for each case in step 2, before anything about appearance. Record the change in step 5.
 
@@ -3577,18 +3722,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 One of your components has seven variants. What does that suggest?
 
-- That the variants should be reduced to four by removing three.
-- That the component is unusually flexible, which is good.
-- That it is probably a family of related components rather than one component, and nobody can hold seven in their head.
+- Three variants should be deleted to get back to four.
+- It is unusually flexible, which is a sign of a good component.
+- It is probably a family of components carrying more than one job.
 
 <details>
 <summary>After your attempt</summary>
 
-That the variants should be reduced to four by removing three. — Sometimes right, and it assumes the three are unnecessary rather than that two jobs are present.
+Three variants should be deleted to get back to four. — Sometimes right, and it assumes the three are unnecessary rather than that two jobs are present.
 
-That the component is unusually flexible, which is good. — Flexible and unpredictable are the same property described two ways. Screens start behaving differently for reasons nobody can explain.
+It is unusually flexible, which is a sign of a good component. — Flexible and unpredictable can be the same property. Screens start behaving differently for reasons nobody can explain.
 
-That it is probably a family of related components rather than one component, and nobody can hold seven in their head. — Past about four, the abstraction is usually carrying more than one job. Splitting it normally shortens both specifications and removes conditional behaviour.
+It is probably a family of components carrying more than one job. — Past about four, a component is usually doing more than one job. Splitting it normally shortens both specifications and removes conditional behaviour.
 
 Improve: Examine anything over four in step 3 and say whether it is a family. Record the change in step 5.
 
@@ -3605,20 +3750,20 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Is reuse always better?
+Is reusing an existing component always better than making a new one?
 
-- Yes, since every reuse saves maintenance.
-- No. Reusing a component for a different job creates conditional behaviour and screens that behave inconsistently for reasons nobody can explain.
-- Yes, unless the visual difference is large.
+- Yes, since every reuse saves a component that would need maintenance.
+- Only when the job is the same; for a different job, two components are cheaper.
+- Yes, unless the two look very different from each other.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, since every reuse saves maintenance. — It saves a component and adds conditions. Past a certain number of conditions, the shared component costs more than the two it replaced.
+Yes, since every reuse saves a component that would need maintenance. — It saves a component and adds conditions. Past a certain number of conditions, the shared one costs more than the two it replaced.
 
-No. Reusing a component for a different job creates conditional behaviour and screens that behave inconsistently for reasons nobody can explain. — Reuse is better when the job is the same. When it is not, two clear components are cheaper to maintain than one with a growing set of conditions.
+Only when the job is the same; for a different job, two components are cheaper. — Reuse for a different job creates conditional behaviour and screens that behave inconsistently. When the job matches, reuse is usually right.
 
-Yes, unless the visual difference is large. — Visual difference is the least reliable signal here. The job is the one that matters.
+Yes, unless the two look very different from each other. — Visual difference is the least reliable signal here. The job is the one that matters.
 
 Improve: Write the case where you decided against reuse in step 5, with the job difference that decided it. Record the change.
 
@@ -3669,15 +3814,41 @@ Write your answer for “The case where you decided against reuse, and why”. U
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a bookshop’s design system has a “book card” for browsing. Someone wants to reuse it as an order receipt row (order number, price paid, “Return” action) and as a homepage “Book of the month” feature shown once.
+
+**Task:** Decide for each request whether it is a variant, a separate component or out of the system, and explain the test you applied.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Makes both variants because they look similar or because reuse saves work.
+- Adequate: Applies the job test: the receipt row records something owned (separate component, different fields and actions); the one-off feature stays out of the system.
+- Strong: As adequate, and checks content rules, states or the variant count, or warns that merging would create conditional behaviour that is hard to maintain.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -3820,14 +3991,14 @@ Stable ID: m13-l06-v1. Core.
 
 Undocumented systems are systems that only work while you are available. The test is not whether it is written; it is whether it is used.
 
-Bring: Two specified components.
+Bring: Two components: the one you specified and the supplied one, whose anatomy, states and tokens are written on its page.
 
 Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
 - Two component pages opening with when to use and when not to
 - Live examples with the code beside them
 - Content rules placed where a writer will find them
-- A record of the questions a real reader had to ask
+- A record of the questions raised, labelled as a real-reader test or a solo rehearsal
 
 ### Start here: in everyday words
 
@@ -3891,7 +4062,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The card and the button pages were rewritten. Each opens with when to use it, when not to, and the alternative. Then a live example with the code beside it, the anatomy, the state grid, the content rules — including maximum label length and truncation behaviour — and the keyboard behaviour. Two people were then asked to build a screen using them. Four questions came up: what happens with two actions, whether the compact variant may be used in a grid, what the maximum title length actually is, and whether the card is clickable as a whole. All four became sentences on the pages.
+- Example (made up): the card and the button pages were rewritten. Each opens with when to use it, when not to, and the alternative. Then a live example with the code beside it, the anatomy, the state grid, the content rules — including maximum label length and truncation behaviour — and the keyboard behaviour. Two people were then asked to build a screen using them. Four questions came up: what happens with two actions, whether the compact variant may be used in a grid, what the maximum title length actually is, and whether the card is clickable as a whole. All four became sentences on the pages.
 
 
 ### Choose where you will do the work
@@ -3901,6 +4072,16 @@ Section: learn. Stable action: workspace.
 Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
+
+
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Supplied working component (made up practice material): component-states.html, a button and a text input for the Northside Tool Library, version 1.0.0. Open it from the course site at the address ending /starters/m13/component-states.html, or download it. Its page shows every state in labelled grids, its tokens, measured contrast on the plain background, keyboard behaviour, content rules and one open decision.
+- Second component bridge: if you specified only one component in Lesson 3, document the supplied button and text input as your second. Its anatomy, states, tokens, keys and content rules are already written on its page, so the work here is the documentation, not the specification.
 
 
 ### Structure the page
@@ -3926,11 +4107,11 @@ Both pages opening with when to use, when not to use and the alternative, with t
 
 Section: practice-plan. Stable action: write-when-to-use.
 
-This goes first, before anything about appearance. It is the question people actually arrive with.
+This goes first, before anything about appearance. Your second component can be the supplied button and text input.
 
 **Answer:** For each of your two components: when to use it, when not to, and what to use instead
 
-This goes first, before anything about appearance. It is the question people actually arrive with.
+This goes first, before anything about appearance. Your second component can be the supplied button and text input.
 
 
 ### What the first example shows, and where it sits on the page
@@ -3950,27 +4131,27 @@ Section: practice-plan. Stable action: step-2-brief.
 
 The markup and the specification on one page, with the state grid and anatomy alongside.
 
-- Embed the live component or its markup beside the specification.
+- Put the live component, its markup or a labelled screenshot beside the specification.
 - Include the state grid and anatomy on the same page.
 
-**Start here:** Embed the component itself rather than a screenshot, so the page cannot drift from the build.
+**Start here:** Link or embed the working component itself where you can; a screenshot must say which version it shows.
 
-**Enough:** Nothing on the page is a picture of something that exists elsewhere.
+**Enough:** Every example on the page is the working component or is labelled with the version it shows.
 
 **Live example:** The real component rendered on the documentation page, rather than a picture of it. It cannot go out of date the way a screenshot can.
 
 **One place:** Design and code in the same document. Split across two, they disagree within a month and nobody knows which is current.
 
 
-### How the markup and the specification sit together on the page
+### How the example and the specification sit together on the page
 
 Section: practice-plan. Stable action: write-code-beside.
 
-A live example with its markup beside it. If the two live in different documents they will disagree within a month.
+The supplied component page, its markup, or a labelled screenshot of it beside the specification. Apart, they disagree within a month.
 
-**Answer:** How the markup and the specification sit together on the page
+**Answer:** How the example and the specification sit together on the page
 
-A live example with its markup beside it. If the two live in different documents they will disagree within a month.
+The supplied component page, its markup, or a labelled screenshot of it beside the specification. Apart, they disagree within a month.
 
 
 ### How the state grid and anatomy appear on the same page
@@ -4060,12 +4241,12 @@ Section: practice-plan. Stable action: step-4-brief.
 
 Somebody building a small screen from the pages alone, with every question recorded rather than answered.
 
-- Ask someone to build a small screen using only the pages.
-- Record every question they ask without answering immediately.
+- Ask someone to build a small screen from the pages, or rehearse alone after a gap.
+- Record every question without answering at once, and label which route you used.
 
-**Start here:** Hand over the pages and say you will answer everything at the end.
+**Start here:** Hand over the pages and say you will answer everything at the end, or put the pages away for three days and rebuild from them alone.
 
-**Enough:** The questions are written down in their own words, not summarised into what you think they meant.
+**Enough:** The questions are written down, the route is labelled, and a solo rehearsal is not described as a reader test.
 
 **Testing documentation:** Watching somebody use it. Whether it is written is not the test; whether it is used without asking you is.
 
@@ -4251,26 +4432,37 @@ Now sort your own reader’s questions the same way before fixing any of them.
 </details>
 
 
-### Who you asked and what small screen they built
+### How the pages were tested
+
+Section: practice-plan. Stable action: write-reader-route.
+
+Choose the option that honestly describes your work.
+
+**Answer:** How the pages were tested (Another person built a screen from the pages (real-reader test) / Solo rehearsal: I built from the pages myself after a gap)
+
+
+
+
+### Who built from the pages, as a role and not a name, or that you did, and what small screen
 
 Section: practice-plan. Stable action: write-reader-task.
 
-If nobody is available, leave it three days and build a screen yourself from the pages alone. Write that here.
+If nobody is available, leave it three days and build a screen yourself from the pages alone. That is rehearsal, not validation.
 
-**Answer:** Who you asked and what small screen they built
+**Answer:** Who built from the pages, as a role and not a name, or that you did, and what small screen
 
-If nobody is available, leave it three days and build a screen yourself from the pages alone. Write that here.
+If nobody is available, leave it three days and build a screen yourself from the pages alone. That is rehearsal, not validation.
 
 
-### Every question they asked, recorded rather than answered
+### Every question raised, in short and with no names, recorded rather than answered
 
 Section: practice-plan. Stable action: write-questions-raised.
 
-Write your answer for “Every question they asked, recorded rather than answered”. Use the task instructions below to decide what to include.
+Keep raw notes private and local, with a date to delete them. On a solo rehearsal, these are your own questions.
 
-**Answer:** Every question they asked, recorded rather than answered
+**Answer:** Every question raised, in short and with no names, recorded rather than answered
 
-
+Keep raw notes private and local, with a date to delete them. On a solo rehearsal, these are your own questions.
 
 
 ### Any question you could not answer either
@@ -4290,20 +4482,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Your documentation opens with what the component looks like. What is wrong with that order?
+Your documentation page opens with what the component looks like. What is wrong with that order?
 
-- Nothing, since appearance is what identifies a component.
-- Readers arrive asking whether this is the component they need, and appearance does not answer it.
-- It is fine if the page is short.
+- Nothing, since appearance is what identifies a component to most people who visit.
+- Readers arrive asking whether it is the right component, which looks do not answer.
+- Nothing, as long as the page is short enough to read from top to bottom quickly.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing, since appearance is what identifies a component. — It identifies it and does not tell anybody whether it fits their screen, which is what they are deciding.
+Nothing, since appearance is what identifies a component to most people who visit. — It identifies it and does not tell anybody whether it fits their screen, which is what they are deciding.
 
-Readers arrive asking whether this is the component they need, and appearance does not answer it. — When to use, when not to, and the alternative answer the arriving question in fifteen seconds. Appearance is what the live example shows a moment later.
+Readers arrive asking whether it is the right component, which looks do not answer. — When to use, when not to and the alternative answer that question in seconds. Appearance is what the live example shows a moment later.
 
-It is fine if the page is short. — Short pages get skimmed from the top, so the order matters more rather than less.
+Nothing, as long as the page is short enough to read from top to bottom quickly. — Short pages get skimmed from the top, so the order matters more, not less.
 
 Improve: Move when-to-use and when-not-to-use to the top of both pages in step 1, and record the change in step 5.
 
@@ -4320,20 +4512,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You have written an excellent content guidelines document covering every component. Why do titles still arrive too long?
+A thorough content guidelines document covers every component, yet titles still arrive too long. What is the likely reason?
 
-- Because the rule needs enforcing rather than documenting.
-- Because the guidelines have not been read.
-- Because the person typing is looking at the card, and the guidance is somewhere else describing a situation rather than the one in front of them.
+- Nobody has read the guidelines document, so it needs promoting to the whole team.
+- The person typing is looking at the card, and the rule lives somewhere else.
+- The rule needs enforcing by a reviewer at sign-off rather than only documenting.
 
 <details>
 <summary>After your attempt</summary>
 
-Because the rule needs enforcing rather than documenting. — Enforcement is a different conversation, and a rule nobody can see while working is hard to enforce fairly.
+Nobody has read the guidelines document, so it needs promoting to the whole team. — It has usually been read, once, months ago. Having read it is not the same as having it to hand while typing.
 
-Because the guidelines have not been read. — They usually have, once, months ago. Reading is not the same as having it to hand while typing.
+The person typing is looking at the card, and the rule lives somewhere else. — Three lines under the live example do what good pages elsewhere cannot. The general document is still the place for what genuinely is general.
 
-Because the person typing is looking at the card, and the guidance is somewhere else describing a situation rather than the one in front of them. — Three lines under the live example do what eleven good pages elsewhere cannot. The general document is still the right place for the things that genuinely are general.
+The rule needs enforcing by a reviewer at sign-off rather than only documenting. — Enforcement is a different conversation, and a rule nobody can see while working is hard to enforce fairly.
 
 Improve: Move the length and truncation guidance onto the component pages in step 3, and say where. Record the change in step 5.
 
@@ -4350,26 +4542,26 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Your reader asked a question you could not answer either. What kind of finding is that?
+Nobody was available, so you built a screen from your own pages after three days away. How should you describe that test?
 
-- A sign the component is not ready to be documented.
-- A gap in the documentation to fill later.
-- A decision nobody has made, which is the most valuable thing this test produces.
+- As a solo rehearsal: it finds some gaps, not what a new reader would miss.
+- As worthless, since only another person’s questions can count as a test.
+- As a reader test, because the pages were read cold after a gap of days.
 
 <details>
 <summary>After your attempt</summary>
 
-A sign the component is not ready to be documented. — Nothing is ever fully decided before documentation. The value here is that the gap has surfaced deliberately.
+As a solo rehearsal: it finds some gaps, not what a new reader would miss. — A cold read by the author still remembers intentions, so it under-counts gaps. Record the questions you hit, label the test as rehearsal, and name what a real reader could still reveal.
 
-A gap in the documentation to fill later. — Filling it means deciding it, and calling it a documentation gap hides that a design decision is outstanding.
+As worthless, since only another person’s questions can count as a test. — A solo cold read does find real gaps and is an honest step when nobody is available. It just has to be labelled as what it is.
 
-A decision nobody has made, which is the most valuable thing this test produces. — It cannot be fixed by writing, because there is nothing to write yet. Left alone it gets decided accidentally, on a screen, by whoever meets it first.
+As a reader test, because the pages were read cold after a gap of days. — You wrote the pages, so your memory fills holes a stranger would fall into. Calling it a reader test claims more than happened.
 
-Improve: Record any unanswerable question in step 4 as an open decision rather than a documentation task. Note the change in step 5.
+Improve: Choose the test route in step 4 that matches what happened, and label your questions accordingly. Record the change in step 5.
 
-Check again: Open decisions are separated from missing sentences in your record.
+Check again: Your record says whether a real reader or a solo rehearsal produced the questions.
 
-Answers to revisit: reader-task, questions-raised, could-not-answer, improvement-made
+Answers to revisit: reader-route, reader-task, questions-raised, could-not-answer, improvement-made
 
 </details>
 
@@ -4404,15 +4596,41 @@ Write your answer for “Each question, and the sentence you added to the page�
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a council website’s “alert banner” page opens with a large picture of the banner, then colour values, then a note at the bottom saying not to use it for marketing. Writers keep pasting three-sentence messages into it. No one else is free to test the page this month.
+
+**Task:** Decide how you would reorder the page, where the writing guidance should go, and how you would test it with nobody available, explaining each choice.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps the picture first, puts guidance in a separate style guide, or calls the author’s own read-through a user test.
+- Adequate: Opens with when to use, when not to and the alternative; puts a length rule beside the live example; rehearses alone after a gap and labels it rehearsal.
+- Strong: As adequate, and records questions it could not answer as open decisions, or names what only a real writer testing it could reveal.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -4460,7 +4678,7 @@ When the activity is finished, tell me to return to the course answer called “
 <summary>Optional hints and reference material</summary>
 
 - Move the purpose to the top and add the when-not-to-use paragraph.
-- Embed the component you built in m13 lesson 4 and put the markup next to it.
+- Put the supplied component, or your Lesson 4 build, beside the specification with its markup or a labelled screenshot.
 
 - R17: [GOV.UK Design System: components](https://design-system.service.gov.uk/components/) — Two component pages, read for their structure: when to use, when not to use, example, anatomy, content and behaviour. Purpose: Supplies the page structure this lesson adopts. Free reading, no account. Verified 2026-09-06. Take the structure; the components and brand are one organisation's. Fallback: R06.
 - R18: [Atlassian: user stories](https://www.atlassian.com/agile/project-management/user-stories) — How a story states who, what and why, read as a model for writing usage guidance briefly. Purpose: Helps keep guidance short and centred on the reader's task. Free reading, no account. Verified 2026-09-06. Written about agile stories rather than documentation; no Jira subscription is required or implied. Fallback: R26.
@@ -4485,17 +4703,17 @@ Repair: Move the purpose to the top and add the when-not-to-use paragraph. Reche
 
 **Live examples sit beside the specification**
 
-Adequate evidence: A working example and its markup on the same page as the specification.
+Adequate evidence: A working example, its markup or a labelled screenshot, on the same page as the specification.
 
-0 — Static images only.
+0 — No example at all.
 
-1 — Example present, code elsewhere.
+1 — Example present, kept on a separate page.
 
-2 — Example and code together with the specification.
+2 — An example (live, its markup or a labelled screenshot) beside the specification.
 
-3 — As adequate, and the example is the built component rather than a copy.
+3 — As adequate, and the example is the working component rather than a copy.
 
-Repair: Embed the component you built in m13 lesson 4 and put the markup next to it. Recheck: The page with its example.
+Repair: Put the supplied component, or your Lesson 4 build, beside the specification with its markup or a labelled screenshot. Recheck: The page with its example.
 
 **Content rules are where a writer will find them**
 
@@ -4511,19 +4729,19 @@ Adequate evidence: Length limits, truncation and tone guidance on the component 
 
 Repair: Move the content rules onto the component page and check the numbers against your states page. Recheck: The content section.
 
-**Reader questions were recorded and turned into content**
+**Questions from a reader or a labelled solo rehearsal became content**
 
-Adequate evidence: A list of questions from a real reader with the sentences added.
+Adequate evidence: Questions from a real reader, or from a solo cold read labelled as rehearsal, with the sentences added.
 
-0 — Documentation untested.
+0 — Documentation untested, or a solo read described as a reader test.
 
 1 — Tested with questions answered verbally only.
 
-2 — Questions recorded and turned into page content.
+2 — Questions recorded, turned into page content and labelled by route.
 
-3 — As adequate, and questions you could not answer are recorded as open decisions.
+3 — As adequate, open questions recorded as decisions; a rehearsal names what a real reader could still reveal.
 
-Repair: Ask someone to build a screen from the pages alone and write down every question. Recheck: The question list and the updated pages.
+Repair: Ask someone to build a screen from the pages alone, or rebuild from them yourself after a gap, and write down every question. Recheck: The question list and the updated pages.
 
 </details>
 The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
@@ -4535,7 +4753,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 - Pages open with when to use and when not to
 - Live examples sit beside the specification
 - Content rules are where a writer will find them
-- Reader questions were recorded and turned into content
+- Questions from a reader or a labelled solo rehearsal became content
 
 <details>
 <summary>Reading, video and deeper explanation</summary>
@@ -4626,7 +4844,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The governance was one page. To propose: open an issue with the screens where it is needed, what existing component you tried, and why it did not fit. Decider: the learner, until someone else joins. Response time: within a week. Criteria: needed in at least two screens, not achievable by composing existing components, and specifiable with states and content rules. Decisions are recorded in a log with the reason. Three proposals in the first month: one accepted, one rejected because composition covered it, and one deferred pending a second use — all recorded, and the rejected one was not re-raised.
+- Example (made up): the governance was one page. To propose: open an issue with the screens where it is needed, what existing component you tried, and why it did not fit. Decider: the learner, until someone else joins. Response time: within a week. Criteria: needed in at least two screens, not achievable by composing existing components, and specifiable with states and content rules. Decisions are recorded in a log with the reason. Three proposals in the first month: one accepted, one rejected because composition covered it, and one deferred pending a second use — all recorded, and the rejected one was not re-raised.
 
 
 ### Choose where you will do the work
@@ -4636,6 +4854,18 @@ Section: learn. Stable action: workspace.
 Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
+
+
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Supplied proposals for practice (made up), if your own work has none to run:
+- P1 · A date chip showing “Today” or “Tomorrow” on tool cards. Wanted on the listing and the booking summary; nothing existing shows a relative date; can be specified with states.
+- P2 · A large banner for the spring repair fair, used once on the home page in April.
+- P3 · A card with a “New” badge. A badge component already exists and can be placed on the existing card.
 
 
 ### Write the route
@@ -4817,10 +5047,10 @@ Section: practice-plan. Stable action: step-4-brief.
 
 Three real proposals from your own backlog run through the process, each accepted, rejected or deferred with a reason.
 
-- Apply the process to three real proposals from your own backlog.
+- Apply it to three proposals from your own work, or the supplied proposals in the source notes.
 - Accept, reject or defer each, recording the reason.
 
-**Start here:** Take the proposal you already have an opinion about and answer the criteria before reading your opinion back.
+**Start here:** Take the proposal you already have an opinion about, yours or supplied, and answer the criteria before reading your opinion back.
 
 **Enough:** Each decision cites a criterion rather than a preference.
 
@@ -5033,18 +5263,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Governance sounds like bureaucracy for a system with one designer. Is it?
 
-- No, and it should be as thorough as possible.
-- A paragraph naming the route, the decider and the response time is not bureaucracy, and skipping it costs more.
-- Yes, for a system this small it can be skipped.
+- Yes: for a system this small, governance can simply be skipped.
+- One page naming the route, decider and response time is not bureaucracy.
+- No, and it should be as thorough as a large team’s process.
 
 <details>
 <summary>After your attempt</summary>
 
-No, and it should be as thorough as possible. — Thorough governance on a small system is the version that genuinely does become bureaucracy. One page is the target.
+Yes: for a system this small, governance can simply be skipped. — Even alone, you are the person in three months who will not remember why something was rejected. The log is for that person.
 
-A paragraph naming the route, the decider and the response time is not bureaucracy, and skipping it costs more. — Without a route in, people fork the system quietly, and you find out weeks later on a screen. The page can be one page.
+One page naming the route, decider and response time is not bureaucracy. — Without a route in, people fork the system quietly, and you find out weeks later on a screen. Even alone, you in three months need the log.
 
-Yes, for a system this small it can be skipped. — Even alone, you are the person in three months who will not remember why something was rejected. The log is for that person.
+No, and it should be as thorough as a large team’s process. — Thorough governance on a small system is the version that does become bureaucracy. One page is the target.
 
 Improve: Check your governance page fits on one page in steps 1 to 3, and cut anything that does not decide something. Record the change in step 5.
 
@@ -5061,20 +5291,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Your governance has careful criteria and says proposals will be reviewed regularly. What will happen?
+Your governance has careful criteria and says proposals will be reviewed regularly. What is likely to happen?
 
-- Nothing, since the criteria are the important part.
-- Proposals will accumulate until you have time for them.
-- Somebody will wait, get no answer, and build their own version on their screen.
+- Someone waits, hears nothing, and builds their own version on their screen.
+- Nothing goes wrong, because careful criteria are the important part of governance.
+- Proposals will build up in a queue until you have time to work through them.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing, since the criteria are the important part. — Criteria decide what gets in once somebody is deciding. The timing decides whether anybody uses the route at all.
+Someone waits, hears nothing, and builds their own version on their screen. — Waiting makes people route around a system more than being refused does. A number of days and a rule for silence are what the page is missing.
 
-Proposals will accumulate until you have time for them. — They will accumulate somewhere else: on screens, as components nobody documented.
+Nothing goes wrong, because careful criteria are the important part of governance. — Criteria decide what gets in once somebody is deciding. Timing decides whether anybody uses the route at all.
 
-Somebody will wait, get no answer, and build their own version on their screen. — Waiting is what makes people route around a system, more than being refused. A number of days and a rule for silence are what the page is missing.
+Proposals will build up in a queue until you have time to work through them. — They will build up somewhere else: on screens, as components nobody documented.
 
 Improve: Put a number of days and a rule for no response into step 2, and record the change in step 5.
 
@@ -5093,18 +5323,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You rejected a proposal and recorded only the decision. What is missing?
 
-- An apology, so the proposer is not discouraged.
-- The reason, without which the same proposal returns in six weeks and gets argued from scratch.
-- Nothing, since the answer was no.
+- An apology, so that the proposer does not feel discouraged from trying again.
+- The reason, without which the same proposal returns and is argued again.
+- Nothing, since the decision itself was a clear no and is now recorded.
 
 <details>
 <summary>After your attempt</summary>
 
-An apology, so the proposer is not discouraged. — A clear reason is what stops it feeling arbitrary. Tone helps and is not the missing piece.
+An apology, so that the proposer does not feel discouraged from trying again. — A clear reason is what stops it feeling arbitrary. Tone helps and is not the missing piece.
 
-The reason, without which the same proposal returns in six weeks and gets argued from scratch. — A rejection with a reason can be pointed at. A rejection without one looks like a mood, and the proposer is entitled to try again when the mood might differ.
+The reason, without which the same proposal returns and is argued again. — A rejection with a reason can be pointed at. One without a reason looks like a mood, and the proposer may fairly try again.
 
-Nothing, since the answer was no. — The answer is the smallest part. What it rests on is what makes it durable.
+Nothing, since the decision itself was a clear no and is now recorded. — The answer is the smallest part. What it rests on is what makes it last.
 
 Improve: Write the reason beside the rejection in step 5, in the words you would use if it were raised again. Record the change.
 
@@ -5155,15 +5385,41 @@ A rejection with a reason is what stops the same proposal returning every six we
 A rejection with a reason is what stops the same proposal returning every six weeks.
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a sports club’s design system has no stated way to ask for changes. Last month two coaches built their own “fixture card” on separate pages because their messages to the designer went unanswered for three weeks.
+
+**Task:** Write the minimum governance you would add, and explain how it would have changed what the two coaches did.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Writes a long approval process, or says “proposals will be reviewed regularly”.
+- Adequate: Names where to propose, the evidence needed, the decider, a response time in days and what to do if there is no answer, plus a use-count and composition check.
+- Strong: As adequate, and adds a decision log with reasons for rejections, or treats the two fixture cards as a proposal with two uses already.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -5274,7 +5530,7 @@ Adequate evidence: A log of three decisions including a rejection and its reason
 
 3 — As adequate, and a deferral is recorded with what would change it.
 
-Repair: Apply the process to three real proposals and record each outcome with a reason. Recheck: The decision log.
+Repair: Apply the process to three proposals, your own or supplied, and record each outcome with a reason. Recheck: The decision log.
 
 </details>
 The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
@@ -5306,7 +5562,7 @@ Stable ID: m13-l08-v1. Core.
 
 A system that changes silently is a system people stop trusting. Versioning is how a change becomes something others can plan around.
 
-Bring: Your documented components and their change history.
+Bring: Your documented components, and any changes made or planned. No coding is needed.
 
 Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
@@ -5377,7 +5633,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The system was versioned 1.0.0 at the point the two components were documented. Three changes followed. Adding the compact card variant: minor, since nothing existing changed. Fixing the focus ring's contrast on the tinted surface: patch, because usage is unchanged. Renaming surface-alt to surface-muted for consistency: major, because every use must change, and it was released with the old name deprecated for one minor version, a change note explaining the rename, and a list of the four places it appeared. The rename was deliberately delayed until it could travel with another major change.
+- Example (made up): the system was versioned 1.0.0 at the point the two components were documented. Three changes followed. Adding the compact card variant: minor, since nothing existing changed. Fixing the focus ring's contrast on the tinted surface: patch, because usage is unchanged. Renaming surface-alt to surface-muted for consistency: major, because every use must change, and it was released with the old name deprecated for one minor version, a change note explaining the rename, and a list of the four places it appeared. The rename was deliberately delayed until it could travel with another major change.
 
 
 ### Choose where you will do the work
@@ -5660,7 +5916,7 @@ Changing the card’s default padding from 16 to 12, which affects every existin
 <details>
 <summary>After your attempt</summary>
 
-major — Every existing use changes appearance without anybody asking. A changed default is a breaking change even though nothing stops working.
+major — Every existing use changes appearance without anybody asking, so every screen must be re-checked. Some systems call visual-only changes minor; this lesson’s written rule treats them as major.
 
 minor — Nothing is being added, and existing use is affected.
 
@@ -5712,11 +5968,11 @@ Write your answer for “For the largest change: what changed, why, and what the
 
 Section: practice-plan. Stable action: write-places-affected.
 
-Search your own stylesheet and documentation. A change note without a list of places is a warning rather than an instruction.
+Search your documentation, specifications and, if you have one, your stylesheet. A change note without a list of places is a warning rather than an instruction.
 
 **Answer:** Every place it affects
 
-Search your own stylesheet and documentation. A change note without a list of places is a warning rather than an instruction.
+Search your documentation, specifications and, if you have one, your stylesheet. A change note without a list of places is a warning rather than an instruction.
 
 
 ### The version or date by which the old form stops working
@@ -5799,20 +6055,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Renaming one token is a one-word edit. Is it a patch?
+Renaming surface-alt to surface-muted is a one-word edit. Under the test “does anybody using it have to change something?”, what is it?
 
-- Yes, since nothing about the product looks different.
-- No. Size is irrelevant; effect is what counts, and everybody using the old name has to change.
-- Yes, if you also update all the uses yourself.
+- Major: everyone using the old name has to change their work.
+- Patch, if you update every use you can find yourself.
+- Patch: nothing about the product looks different afterwards.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, since nothing about the product looks different. — Nothing looks different in your file, where you also changed the uses. Everywhere else, something has quietly stopped working.
+Major: everyone using the old name has to change their work. — A missing custom property fails silently: the value falls back and panels quietly lose their tint. The size of the edit is irrelevant to the classification.
 
-No. Size is irrelevant; effect is what counts, and everybody using the old name has to change. — A rename fails silently: the value falls back and things quietly lose their tint. That is a breaking change however little you typed.
+Patch, if you update every use you can find yourself. — You can update the ones you can see. The classification is about everybody, including the screen somebody built last month.
 
-Yes, if you also update all the uses yourself. — You can update the ones you can see. The classification is about everybody, including the screen somebody built last month.
+Patch: nothing about the product looks different afterwards. — Nothing looks different in your file, where you also changed the uses. Anywhere else, something has quietly stopped working.
 
 Improve: Reclassify any change in step 2 you judged by size rather than effect, and record the change in step 5.
 
@@ -5829,24 +6085,24 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You are changing the card’s default padding from 16 to 12. Nothing breaks. What is it?
+Your system’s written rule says any change that alters existing screens without consumers asking is major. Under that rule, what is changing the card’s default padding from 16 to 12?
 
-- Patch, since it is a refinement.
-- Minor, since nothing stops working.
-- Major. Every existing card changes appearance without anybody asking for it.
+- Major, since every existing card changes and every screen needs re-checking.
+- Patch, since it is only a small visual refinement of an existing default.
+- Minor, since nothing actually stops working for anybody afterwards.
 
 <details>
 <summary>After your attempt</summary>
 
-Patch, since it is a refinement. — Patch is for fixing something that was wrong. This is a different decision, applied retrospectively to everything.
+Major, since every existing card changes and every screen needs re-checking. — Nothing stops working, and every screen using the card now differs from what was signed off. Some systems class visual-only changes as minor; what matters is applying your written rule consistently.
 
-Minor, since nothing stops working. — Minor means something was added and existing use is untouched. Existing use is exactly what changed here.
+Patch, since it is only a small visual refinement of an existing default. — Patch is for fixing something that was wrong. This is a new decision applied to everything already built.
 
-Major. Every existing card changes appearance without anybody asking for it. — A changed default arrives everywhere at once. Nothing stops working, and every screen using the component now looks different from the day it was signed off.
+Minor, since nothing actually stops working for anybody afterwards. — Minor means something was added and existing use is untouched. Existing appearance is what changed, and your rule names that.
 
-Improve: Check whether any of your three changes alters a default, and reclassify it. Record the change in step 5.
+Improve: Check whether any of your three changes alters a default, and classify it under your written rule. Record the change in step 5.
 
-Check again: No change that alters existing appearance is classified below major.
+Check again: Each classification cites the rule you wrote.
 
 Answers to revisit: changelog-entries, improvement-made
 
@@ -5861,18 +6117,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your change note says what changed and why. Is that enough?
 
-- Yes, since they can search for it themselves.
-- No. What the reader must do, and where, is the part they need and the part written last.
-- Yes, provided the change is in the changelog.
+- It still needs what readers must do, where, and by when.
+- Yes, provided the change also appears in the changelog.
+- Yes, since readers can search their own files for the change.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, since they can search for it themselves. — They can, once they know to. The note is what tells them, and searching is the work you already did.
+It still needs what readers must do, where, and by when. — A note without the list of affected places is a warning. With the list and a date, it is an instruction somebody can follow.
 
-No. What the reader must do, and where, is the part they need and the part written last. — A note without a list of affected places is a warning. With the list it is an instruction somebody can follow in ten minutes.
+Yes, provided the change also appears in the changelog. — The changelog says a change happened. The note says what to do about it.
 
-Yes, provided the change is in the changelog. — The changelog says a change happened. The note says what to do about it.
+Yes, since readers can search their own files for the change. — They can, once they know to. The note is what tells them, and the search is work you already did.
 
 Improve: Add the list of affected places and the date the old form stops working to your note in step 3. Record the change in step 5.
 
@@ -5912,15 +6168,41 @@ Write your answer for “The three changes as changelog entries, with versions�
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a library app’s system is at version 2.3.1. Planned changes: rename the token “colour-alert” to “colour-warning”, add a new “compact” size to the tag component, and fix a focus ring that was invisible on dark panels. Three teams use the system.
+
+**Task:** Classify each change and give the next version number, and explain which change needs a deprecation period and what its note must tell the teams.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Calls the rename a patch because it is one word, or ships it without notice.
+- Adequate: Rename is major, compact size minor, focus fix patch; deprecates the old token name for at least one minor release with a note saying what changed, why, where and by when.
+- Strong: As adequate, and works the numbers (for example 2.4.0 adding the new name and deprecating the old, then 3.0.0 removing it), or lists the places affected for each team.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -6050,7 +6332,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 - The assigned specification is written for software interfaces and its rules transfer cleanly: a change that forces others to alter their work is major, one that adds without breaking is minor, and a fix that changes nothing about how it is used is a patch. Applying it to a design system means treating your tokens, component names and behaviour as the interface, because that is what other people build against.
 - The rule that a released version is never modified matters more in design than people expect. Quietly changing a token's value after release means two screens built a week apart look different for reasons nobody recorded, and the difference is found much later by someone who cannot explain it.
-- Breaking changes in a design system are often invisible to the person making them. Renaming a token, removing a variant, changing a default, tightening a content rule — each forces work on everyone who used the old one. Classifying honestly is uncomfortable and is what makes the version number meaningful.
+- Breaking changes in a design system are often invisible to the person making them. Renaming a token, removing a variant, changing a default, tightening a content rule — each forces work on everyone who used the old one. Whether a purely visual change to a default counts as major is a policy your system must write down; this lesson treats it as major because every screen has to be re-checked. Classifying honestly is uncomfortable and is what makes the version number meaningful.
 - The change note is what turns a version into communication. What changed, why, what you must do, and by when. The specification says nothing about how to communicate, so this part is your own: written well, it is read; written as a list of commits, it is not.
 
 [Semantic Versioning 2.0.0](https://semver.org/).
@@ -6061,11 +6343,11 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 Stable ID: m13-l09-v1. Core.
 
-A system nobody has adopted has no effect. Migration is where you learn whether it fits the product it was built from.
+Part of the optional technical extension: core learners can use the supplied working component (component-states.html) and the specification lessons instead. A system nobody has adopted has no effect. Migration is where you learn whether it fits the product it was built from.
 
-Bring: Your system and two existing screens.
+Bring: Your system and two screens that existed before it.
 
-Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+Starting route: Recommended route: Optional technical extension: core learners can use the supplied working component and the specification lessons instead. To practise migrating a screen onto the system, download component-states.html (on the course site, the address ending /starters/m13/component-states.html) and save it in Documents\HaruCourse\Practice\m13-l09-v1. If Windows saved it as component-states.html.txt, rename it to end in .html. Open it in Notepad (right-click, Open with, Notepad) and in your browser (double-click), make the one change marked “Change this one thing first”, save with Ctrl+S, reload with F5, then record what you did and saw here. Alternative route: If the page is blank or did not change: check the name ends in .html (File Explorer, View, Show, File name extensions), press Ctrl+Z in Notepad and save to undo your last change, or download a fresh copy. You may work from your own Project 2 build instead; note its folder in Your work. Nothing is uploaded.
 
 - Two real screens migrated onto the system
 - An adoption figure per screen with the counting method stated
@@ -6134,14 +6416,14 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Two screens were migrated. The class list reached 90 per cent system-provided after two blockers were fixed: a missing filter chip and a spacing value that did not exist. The booking summary reached 55 per cent, and the reasons were recorded: it needs a component the system deliberately does not cover — a receipt-style record — and its status treatment carries a distinction the system's status component flattens. The second was explicitly not resolved by simplifying the screen, since the distinction was one the m05 research had shown people using.
+- Example (made up): two screens were migrated. The class list reached 90 per cent system-provided after two blockers were fixed: a missing filter chip and a spacing value that did not exist. The booking summary reached 55 per cent, and the reasons were recorded: it needs a component the system deliberately does not cover — a receipt-style record — and its status treatment carries a distinction the system's status component flattens. The second was explicitly not resolved by simplifying the screen, since earlier research notes had shown people using the distinction.
 
 
 ### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
-Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+Recommended route: Optional technical extension: core learners can use the supplied working component and the specification lessons instead. To practise migrating a screen onto the system, download component-states.html (on the course site, the address ending /starters/m13/component-states.html) and save it in Documents\HaruCourse\Practice\m13-l09-v1. If Windows saved it as component-states.html.txt, rename it to end in .html. Open it in Notepad (right-click, Open with, Notepad) and in your browser (double-click), make the one change marked “Change this one thing first”, save with Ctrl+S, reload with F5, then record what you did and saw here. Alternative route: If the page is blank or did not change: check the name ends in .html (File Explorer, View, Show, File name extensions), press Ctrl+Z in Notepad and save to undo your last change, or download a fresh copy. You may work from your own Project 2 build instead; note its folder in Your work. Nothing is uploaded.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
 
@@ -6532,20 +6814,20 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your migrated screen reached 100 per cent adoption. Is that a good result?
 
-- Yes, provided the screen is representative.
-- It depends entirely on whether it was a real screen. A demonstration screen measures the system against itself.
-- Yes, since full coverage is the goal.
+- Yes, since full coverage of a screen is exactly what adoption is aiming for.
+- Yes, as long as the screen is broadly representative of the product.
+- It depends whether the screen existed before the system or was built to show it.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, provided the screen is representative. — Representative is the whole question, and a screen built to show the system off is not.
+Yes, since full coverage of a screen is exactly what adoption is aiming for. — Full coverage of a screen designed around the system is guaranteed rather than achieved.
 
-It depends entirely on whether it was a real screen. A demonstration screen measures the system against itself. — A real screen built before the system existed is the only one that can tell you about fit. Sixty-two per cent with two named gaps is far more useful than a hundred with none.
+Yes, as long as the screen is broadly representative of the product. — Representative is the whole question, and a screen built to show the system off is not.
 
-Yes, since full coverage is the goal. — Full coverage of a screen designed around the system is guaranteed rather than achieved.
+It depends whether the screen existed before the system or was built to show it. — A screen built from the system measures the system against itself. A screen made before the system existed is the one that can reveal gaps.
 
-Improve: Migrate a screen built before the system existed in step 1, and record its figure. Note the change in step 5.
+Improve: Migrate a screen made before the system existed in step 1, and record its figure. Note the change in step 5.
 
 Check again: At least one migrated screen predates the system.
 
@@ -6562,18 +6844,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Adoption is low on one screen. Is that a rollout problem?
 
-- It is a fit problem first. If the system does not cover the real screens, no amount of advocacy changes the number.
-- Yes, and better documentation would fix it.
-- Yes, people need to be persuaded to use it.
+- Yes: people need persuading to use what the system already offers.
+- Check fit first: missing components cannot be fixed by persuasion.
+- Yes, and clearer documentation would raise the figure quickly.
 
 <details>
 <summary>After your attempt</summary>
 
-It is a fit problem first. If the system does not cover the real screens, no amount of advocacy changes the number. — The blockers list is what separates the two. Missing components and wrong rules are fit; a system that covers everything and is still unused is rollout.
+Yes: people need persuading to use what the system already offers. — Persuasion cannot supply a component that does not exist. Read the blockers before deciding it is about willingness.
 
-Yes, and better documentation would fix it. — Documentation helps somebody use what exists. It does not help with what is missing.
+Check fit first: missing components cannot be fixed by persuasion. — The blockers list separates the two. Missing components and wrong rules are fit; a system that covers everything and is still unused is rollout.
 
-Yes, people need to be persuaded to use it. — Persuasion cannot supply a component that does not exist. Read the blockers before deciding it is about willingness.
+Yes, and clearer documentation would raise the figure quickly. — Documentation helps somebody use what exists. It does not help with what is missing.
 
 Improve: Make sure every blocker in step 4 names what the screen needed, so fit and rollout can be told apart. Record the change in step 5.
 
@@ -6590,24 +6872,24 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-To reach full adoption you would have to flatten a status distinction your research showed people using. Should you?
+Reaching full adoption would mean flattening a status distinction that your earlier work showed people relying on. Should you?
 
-- Yes, consistency is worth more than a small distinction.
-- No, the system should never change a product.
-- Not silently. Changing the product to fit the system is allowed, and it must be recorded when it removes something that works.
+- Yes: consistency matters more than one small distinction.
+- No: a design system should never change a product.
+- Only as a recorded decision, saying what it removes and why.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, consistency is worth more than a small distinction. — It may be, and that is the argument to have out loud. Made silently, it looks like the system quietly deciding the product.
+Yes: consistency matters more than one small distinction. — It may, and that is the argument to have openly. Made silently, it looks like the system deciding the product.
 
-No, the system should never change a product. — Systems do simplify products, often usefully. The rule is that it is visible.
+No: a design system should never change a product. — Systems do simplify products, often usefully. The rule is that it is visible.
 
-Not silently. Changing the product to fit the system is allowed, and it must be recorded when it removes something that works. — The adoption figure is not the goal; it is a measure. Trading a working distinction for a higher number is a real decision, and it deserves a line rather than a quiet edit.
+Only as a recorded decision, saying what it removes and why. — The adoption figure is a measure, not the goal. Trading a working distinction for a higher number is a real decision and deserves a written line rather than a quiet edit.
 
 Improve: Record any distinction you removed in the research-cost field in step 4, and note the change in step 5.
 
-Check again: Nothing the research supported was removed without being written down.
+Check again: Nothing your evidence supported was removed without being written down.
 
 Answers to revisit: blocker-decisions, research-cost, improvement-made
 
@@ -6655,15 +6937,41 @@ Write your answer for “The two figures, the blockers and what remains, in a fe
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: you migrate two screens of a gym timetable site onto its new system. The class list, designed alongside the system, comes out at 100 per cent. The membership page, drawn a year earlier, reaches 60 per cent: a price table has no matching component and a “paused membership” status gets flattened to “inactive”.
+
+**Task:** Decide what the two figures tell you and what to do about each blocker, and explain your reasoning.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Reports 100 per cent as success and pushes the old page to fit the system by any means.
+- Adequate: Treats the older page as the real test; decides each blocker (add, leave as one-off, or change the screen) and refuses to flatten “paused” silently.
+- Strong: As adequate, and states the counting method so the figures can be repeated, or routes the price table through governance before adding it.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -6806,7 +7114,7 @@ Stable ID: m13-l10-v1. Core.
 
 A system's greatest accessibility value is making the right thing the default. Its greatest risk is people assuming it guarantees more than it does.
 
-Bring: Your m11 results and component pages.
+Bring: Your m11 results and component pages, and the supplied component or your own build. No coding is needed.
 
 Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
@@ -6877,7 +7185,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Four guarantees were written. Focus rings meet contrast on all permitted surfaces — checked by measurement, with the surfaces listed. Interactive components match their documented keyboard behaviour — checked by walking each key table. States are distinguishable without colour — checked in greyscale. Text tokens meet the contrast threshold in their permitted pairs — checked by measurement. Four responsibilities were written opposite: page heading order, alternative text for images you supply, reading order of your composition, and testing the assembled page. The statement ended by saying the system claims no conformance, since conformance is a property of a page.
+- Example (made up): four guarantees were written. Focus rings meet contrast on all permitted surfaces — checked by measurement, with the surfaces listed. Interactive components match their documented keyboard behaviour — checked by walking each key table. States are distinguishable without colour — checked in greyscale. Text tokens meet the contrast threshold in their permitted pairs — checked by measurement. Four responsibilities were written opposite: page heading order, alternative text for images you supply, reading order of your composition, and testing the assembled page. The statement ended by saying the system claims no conformance, since conformance is a property of a page.
 
 
 ### Choose where you will do the work
@@ -6887,6 +7195,15 @@ Section: learn. Stable action: workspace.
 Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
+
+
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Supplied working component (made up practice material): component-states.html, a button and a text input for the Northside Tool Library, version 1.0.0. Open it from the course site at the address ending /starters/m13/component-states.html, or download it. Its page shows every state in labelled grids, its tokens, measured contrast on the plain background, keyboard behaviour, content rules and one open decision.
 
 
 ### Separate component from composition
@@ -7035,9 +7352,9 @@ Section: practice-plan. Stable action: step-3-brief.
 A re-runnable check attached to every guarantee, with all of them run today and the results recorded.
 
 - Write the check that proves each guarantee.
-- Run every check now and record the result.
+- Run every check now on the supplied component or your build, and record the result.
 
-**Start here:** Run the greyscale check on your states page first; it is the quickest of the four.
+**Start here:** Run the greyscale check first, on the supplied component page (it has a greyscale button) or your own states page.
 
 **Enough:** Every guarantee has a result beside it from today.
 
@@ -7213,15 +7530,15 @@ Re-run means somebody else could do it when the component changes, in a few minu
 Re-run means somebody else could do it when the component changes, in a few minutes.
 
 
-### The result of running every check now
+### The result of running every check now, and what you ran it on
 
 Section: practice-plan. Stable action: write-checks-results.
 
-Run them today. A guarantee whose check has never been run is a claim.
+Run them today on the supplied component or your own build. A guarantee whose check has never been run is a claim.
 
-**Answer:** The result of running every check now
+**Answer:** The result of running every check now, and what you ran it on
 
-Run them today. A guarantee whose check has never been run is a claim.
+Run them today on the supplied component or your own build. A guarantee whose check has never been run is a claim.
 
 
 ### Write the responsibilities
@@ -7287,20 +7604,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Somebody says the product is accessible because it uses your accessible design system. What is wrong?
+Somebody says the product is accessible because it uses your accessible design system. What is wrong with that?
 
-- The system makes the defaults right. Structure, content, order and testing stay with whoever built the page, and most real failures live there.
-- Nothing, if every component has been checked.
-- The system would need to be tested with disabled participants first.
+- Nothing, as long as every component in the system has been checked properly.
+- The system must first be tested with disabled participants before anyone says that.
+- Components set good defaults; structure, content and order belong to the page.
 
 <details>
 <summary>After your attempt</summary>
 
-The system makes the defaults right. Structure, content, order and testing stay with whoever built the page, and most real failures live there. — No component can know the heading order of a page it does not know about. Guarantees and responsibilities have to be published together for exactly this reason.
+Nothing, as long as every component in the system has been checked properly. — Four correct components can be assembled into a page with three page titles and a focus order that jumps backwards.
 
-Nothing, if every component has been checked. — Four correct components can be assembled into a page with three page titles and a focus order that jumps backwards.
+The system must first be tested with disabled participants before anyone says that. — That is a separate, real gap. The error here is about the difference between components and pages.
 
-The system would need to be tested with disabled participants first. — That is a separate and real gap. The error here is about the difference between components and pages.
+Components set good defaults; structure, content and order belong to the page. — No component can know the heading order of a page it does not know about. Guarantees and responsibilities have to be published together for exactly this reason.
 
 Improve: Check your responsibilities list in step 4 names structure, content, order and testing specifically. Record the change in step 5.
 
@@ -7317,22 +7634,22 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You wrote “all components are accessible” as your guarantee. What does it cost you?
+Your guarantee says the success message meets contrast, measured on the plain background. It is also used on the tinted panel. What should the guarantee say?
 
-- It is too vague to be useful, but harmless.
-- It promises things no component can own, so it transfers responsibility you cannot carry onto a sentence you cannot keep.
-- Nothing, provided every component really has been checked.
+- All surfaces, since the measured ratio already passed comfortably.
+- Only the surfaces where it was measured, unless the tint is measured too.
+- Nothing about surfaces, because conditions make it too complicated.
 
 <details>
 <summary>After your attempt</summary>
 
-It is too vague to be useful, but harmless. — It is not harmless. Somebody will build a page on the strength of it.
+All surfaces, since the measured ratio already passed comfortably. — A pass on one surface says nothing about another. The supplied component shows a colour that passes on plain and fails on the tint.
 
-It promises things no component can own, so it transfers responsibility you cannot carry onto a sentence you cannot keep. — Four narrow statements with conditions are less impressive and actually true. The broad version is read as covering the page, which is where the failures are.
+Only the surfaces where it was measured, unless the tint is measured too. — A guarantee covers what its check covers. Measure the tinted panel; if it fails, either limit the guarantee to the plain background or change the colour.
 
-Nothing, provided every component really has been checked. — Checked against what? The sentence names no conditions, so it covers cases nobody tested.
+Nothing about surfaces, because conditions make it too complicated. — Without conditions the promise quietly covers cases nobody checked, which is how a guarantee misleads.
 
-Improve: Add the conditions to each guarantee in step 2, naming surfaces, variants or states. Record the change in step 5.
+Improve: Add the surfaces, variants or states each guarantee was checked on in step 2. Record the change in step 5.
 
 Check again: No guarantee is written without its conditions.
 
@@ -7347,20 +7664,20 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-One of your guarantees has no check attached. Does it matter?
+One of your guarantees has no check attached. Does that matter?
 
-- Yes. Without a re-runnable check it decays silently the first time the component changes.
-- Not if the guarantee is obviously true.
-- Not if you tested it once when you wrote it.
+- Not if the guarantee is obviously true to anyone who reads the component.
+- It matters: with no re-runnable check, it decays when the component changes.
+- Not if you tested it carefully once, at the time you first wrote it.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes. Without a re-runnable check it decays silently the first time the component changes. — A guarantee is a promise you keep re-making. The check is what makes it survive the next edit, and it also gives the next person a way to verify you.
+Not if the guarantee is obviously true to anyone who reads the component. — Obviously true things are exactly what nobody rechecks after a change.
 
-Not if the guarantee is obviously true. — Obviously true things are exactly what nobody rechecks after a change.
+It matters: with no re-runnable check, it decays when the component changes. — A guarantee is a promise you keep re-making. The check is what lets it survive the next edit, and lets the next person verify you.
 
-Not if you tested it once when you wrote it. — Once is when it was true. Components change, and nothing will announce that the guarantee has stopped holding.
+Not if you tested it carefully once, at the time you first wrote it. — Once is when it was true. Components change, and nothing announces that the guarantee has stopped holding.
 
 Improve: Write a check for every guarantee in step 3 and run all of them today. Record the change in step 5.
 
@@ -7400,15 +7717,41 @@ Conformance is a property of a page. A component set cannot have it, whatever it
 Conformance is a property of a page. A component set cannot have it, whatever it guarantees.
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a booking system’s documentation says “All components are accessible.” Its date picker was keyboard-tested; its success text passes contrast on white but was never measured on the grey panel where it often appears; page heading order is left to each team.
+
+**Task:** Rewrite the claim as guarantees and responsibilities, and explain why each item belongs on its side of the line.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps “all components are accessible”, or claims the product conforms because the components were checked.
+- Adequate: Guarantees only what was tested, with conditions (the keyboard behaviour; contrast on white only), lists heading order as the page author’s job, and claims no page-level conformance.
+- Strong: As adequate, and attaches a re-runnable check to each guarantee, or measures the grey panel before extending the guarantee to it.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -7549,11 +7892,11 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 Stable ID: m13-l11-v1. Core.
 
-Every system has a design representation and a code representation, and they diverge. Deciding which one is true is what prevents arguments nobody can settle.
+Part of the optional technical extension: core learners can use the supplied working component (component-states.html) and the specification lessons instead. Every system has a design representation and a code representation, and they diverge. Deciding which one is true is what prevents arguments nobody can settle.
 
-Bring: Your documentation and built components.
+Bring: Your documentation, drawings and a built component, your own or supplied.
 
-Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+Starting route: Recommended route: Optional technical extension: core learners can use the supplied working component and the specification lessons instead. To practise a drift audit across representations, download component-states.html (on the course site, the address ending /starters/m13/component-states.html) and save it in Documents\HaruCourse\Practice\m13-l11-v1. If Windows saved it as component-states.html.txt, rename it to end in .html. Open it in Notepad (right-click, Open with, Notepad) and in your browser (double-click), make the one change marked “Change this one thing first”, save with Ctrl+S, reload with F5, then record what you did and saw here. Alternative route: If the page is blank or did not change: check the name ends in .html (File Explorer, View, Show, File name extensions), press Ctrl+Z in Notepad and save to undo your last change, or download a fresh copy. You may work from your own Project 2 build instead; note its folder in Your work. Nothing is uploaded.
 
 - A named authoritative representation with the reason
 - A statement on every copy of what it reflects and when
@@ -7622,16 +7965,25 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The code was named authoritative, with the documentation generated from or checked against it and any design file marked a working copy carrying the version it reflected. An audit of three components found three drifts already: the card's padding differed by 4 pixels between the drawing and the build, the button had a disabled state in the drawing that had never been built, and the documentation described a truncation rule the component did not implement. Each was recorded, and the change process was rewritten to require the documentation update in the same change as the code.
+- Example (made up): the code was named authoritative, with the documentation generated from or checked against it and any design file marked a working copy carrying the version it reflected. An audit of three components found three drifts already: the card's padding differed by 4 pixels between the drawing and the build, the button had a disabled state in the drawing that had never been built, and the documentation described a truncation rule the component did not implement. Each was recorded, and the change process was rewritten to require the documentation update in the same change as the code.
 
 
 ### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
-Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+Recommended route: Optional technical extension: core learners can use the supplied working component and the specification lessons instead. To practise a drift audit across representations, download component-states.html (on the course site, the address ending /starters/m13/component-states.html) and save it in Documents\HaruCourse\Practice\m13-l11-v1. If Windows saved it as component-states.html.txt, rename it to end in .html. Open it in Notepad (right-click, Open with, Notepad) and in your browser (double-click), make the one change marked “Change this one thing first”, save with Ctrl+S, reload with F5, then record what you did and saw here. Alternative route: If the page is blank or did not change: check the name ends in .html (File Explorer, View, Show, File name extensions), press Ctrl+Z in Notepad and save to undo your last change, or download a fresh copy. You may work from your own Project 2 build instead; note its folder in Your work. Nothing is uploaded.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
+
+
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Supplied working component (made up practice material): component-states.html, a button and a text input for the Northside Tool Library, version 1.0.0. Open it from the course site at the address ending /starters/m13/component-states.html, or download it. Its page shows every state in labelled grids, its tokens, measured contrast on the plain background, keyboard behaviour, content rules and one open decision.
 
 
 ### Choose the authority
@@ -8019,18 +8371,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Is the design file the design system?
 
-- Yes, since that is where the design decisions are made.
-- It is one representation. What people encounter is the built product, and a system whose authority lives in a file most of the team cannot open is overtaken within weeks.
-- Yes for designers, and the code is the system for engineers.
+- It is one representation; people meet the built product.
+- Yes for designers, while the code is the system for engineers.
+- Yes, since the design file is where the decisions are made.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, since that is where the design decisions are made. — Decisions are made there and they are not what anybody uses. Six weeks of small build changes and the file describes something that does not exist.
+It is one representation; people meet the built product. — A file most of the team cannot open is overtaken by the build the first time a change is made there and never reaches the file.
 
-It is one representation. What people encounter is the built product, and a system whose authority lives in a file most of the team cannot open is overtaken within weeks. — The file is genuinely useful. It stops being the system the first time a change is made in the build that afternoon and never reaches the file.
+Yes for designers, while the code is the system for engineers. — Two authorities is the same as none, because nothing settles a disagreement.
 
-Yes for designers, and the code is the system for engineers. — Two authorities is the same as none, because nothing settles a disagreement.
+Yes, since the design file is where the decisions are made. — Decisions are made there, and they are not what anybody uses. After weeks of small build changes the file describes something that does not exist.
 
 Improve: Name one authoritative representation in step 1 with the reason, and record the change in step 5.
 
@@ -8047,20 +8399,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-The build and the documentation disagree, and you have named the build authoritative. Is the build automatically right?
+The build and the documentation disagree, and you named the build authoritative. Is the build automatically right?
 
-- No. The authority decides which is true today; whether it is right is a separate question.
-- Yes, unless the documentation has a reason recorded.
-- Yes, that is what authoritative means.
+- Authority says what is true today; whether it is right is separate.
+- Yes, unless the documentation recorded a reason for its version.
+- Yes, because that is exactly what authoritative means.
 
 <details>
 <summary>After your attempt</summary>
 
-No. The authority decides which is true today; whether it is right is a separate question. — A truncation rule reasoned from real titles and built to one line is a defect in the build. The authority tells you where the fix goes rather than who was correct.
+Authority says what is true today; whether it is right is separate. — A truncation rule reasoned from real titles but built to one line is a defect in the build. Authority tells you where the fix goes, not who was correct.
 
-Yes, unless the documentation has a reason recorded. — A recorded reason helps you decide, and the principle holds whether or not one was written down.
+Yes, unless the documentation recorded a reason for its version. — A recorded reason helps you decide, and the principle holds whether or not one was written.
 
-Yes, that is what authoritative means. — It means the build is what people are getting. Two of the drifts you find will be things the build got wrong.
+Yes, because that is exactly what authoritative means. — It means the build is what people are getting. Some drifts you find will be things the build got wrong.
 
 Improve: For each drift in step 3, say which version is correct as well as which is authoritative. Record the change in step 5.
 
@@ -8077,20 +8429,20 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You fixed three drifts. Will the audit have to be repeated?
+You fixed three drifts today. Will the audit have to be repeated?
 
-- Only if somebody else joins the work.
-- No, now that the representations agree.
-- Yes, because drift is inevitable. The useful change is a process that updates every representation in the same change.
+- Yes; what helps is a change process that updates every copy at once.
+- Only once somebody else joins the work and starts making their own changes.
+- No, now that all the representations agree with each other again.
 
 <details>
 <summary>After your attempt</summary>
 
-Only if somebody else joins the work. — One person produces drift perfectly well, by making a change in the build at four o’clock and meaning to update the file tomorrow.
+Yes; what helps is a change process that updates every copy at once. — Fixing today’s three is maintenance. The process decides whether the next three appear in a fortnight or in a year.
 
-No, now that the representations agree. — They agree this afternoon. The next urgent change made in one place starts it again.
+Only once somebody else joins the work and starts making their own changes. — One person produces drift perfectly well, by changing the build at four o’clock and meaning to update the file tomorrow.
 
-Yes, because drift is inevitable. The useful change is a process that updates every representation in the same change. — Fixing today’s three is maintenance. The process is what decides whether the next three appear in a fortnight or in a year.
+No, now that all the representations agree with each other again. — They agree this afternoon. The next urgent change made in one place starts it again.
 
 Improve: Write the change process into step 4 and add it to the governance page. Record the change in step 5.
 
@@ -8137,15 +8489,41 @@ Example (made up): working copy reflecting version 1.2.0, updated 14 March. Not 
 </details>
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a delivery app’s button has 12-pixel padding in the live app, 16 in the design file and 14 in the documentation. The live app was changed during an urgent fix; nobody updated the other two. The design file is where the team usually works.
+
+**Task:** Decide which representation is authoritative and which value is correct, and explain how you would stop the next drift.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Makes the design file authoritative because the team works there, or fixes the three numbers once and stops.
+- Adequate: Names the live code as authoritative, decides correctness separately (was the urgent change right?), labels the copies with version and date, and writes a change checklist covering all three.
+- Strong: As adequate, and plans a regular small audit, or notes that authority says what is true today, not what is right.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -8288,7 +8666,7 @@ Stable ID: m13-l12-v1. Core.
 
 Systems accumulate. Reviewing what is unused and removing it is the maintenance work that keeps a system usable.
 
-Bring: Your adoption data and decision log.
+Bring: Your decision log and screens or drawings. No coding is needed.
 
 Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
@@ -8359,7 +8737,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The review found three unused components, two of which had been built speculatively in the first week; both were deprecated with a note, and the third was kept because a planned screen needed it, with the reason recorded. Two workarounds were found in the learner's own screens: a status treatment the system flattened and a compact list row that did not exist. The first became a governance proposal; the second was accepted as a minor addition. The plan estimated three hours a month, listed what would be skipped if that was not available — the drift audit first, documentation last — and named the review date.
+- Example (made up): the review found three unused components, two of which had been built speculatively in the first week; both were deprecated with a note, and the third was kept because a planned screen needed it, with the reason recorded. Two workarounds were found in the learner's own screens: a status treatment the system flattened and a compact list row that did not exist. The first became a governance proposal; the second was accepted as a minor addition. The plan estimated three hours a month, listed what would be skipped if that was not available — the drift audit first, documentation last — and named the review date.
 
 
 ### Choose where you will do the work
@@ -8371,13 +8749,26 @@ Recommended route: Fill the worksheet in this app, step by step. It saves as you
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
 
 
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Supplied usage notes (made up), for learners without adoption figures or a drift audit: the Northside system has six components.
+- Card: on 6 screens. Button: on 9 screens. Filter chip: on 2 screens, added last month through governance.
+- Statistics tile: built in the first week, on no screen. Tabs: built because other systems have one, on no screen, nothing planned.
+- Notification banner: on no screen yet; the booking flow being designed this month needs it.
+- Workaround seen in drawings: the booking screen shows “overdue” and “due today” separately, while the status component offers only “late”.
+
+
 ### Review against use
 
 Section: practice-plan. Stable action: step-1-brief.
 
 Every component listed with where it is actually used, and anything used nowhere marked.
 
-- List every component and where it is actually used.
+- List every component and where it is actually used, in screens, drawings or the supplied notes.
 - Mark anything used nowhere.
 
 **Start here:** Search your screens for each component name rather than working from memory.
@@ -8393,11 +8784,11 @@ Every component listed with where it is actually used, and anything used nowhere
 
 Section: practice-plan. Stable action: write-usage-list.
 
-Search your screens. Where you believe it is used is not the same as where it is.
+Search your screens or drawings, or use the supplied usage notes and say so. Where you believe it is used is not the same as where it is.
 
 **Answer:** Every component and where it is actually used
 
-Search your screens. Where you believe it is used is not the same as where it is.
+Search your screens or drawings, or use the supplied usage notes and say so. Where you believe it is used is not the same as where it is.
 
 
 ### Anything used nowhere
@@ -8417,7 +8808,7 @@ Section: practice-plan. Stable action: step-2-brief.
 
 Every one-off built instead of using the system, with what did not fit named for each.
 
-- Look through your screens for one-offs built instead of using the system.
+- Look through your screens or drawings for one-offs made instead of using the system.
 - For each, name what did not fit.
 
 **Start here:** Search your screens for styling that does not come from the system, rather than listing what the system lacks.
@@ -8450,15 +8841,15 @@ Made-up example. Reviewing a tool-library system, and reviewing it for completen
 **Unknown:** Still unknown: whether a modal will be needed next quarter. If it is, it arrives through governance with two screens behind it rather than by anticipation.
 
 
-### Every one-off built on a screen instead of using the system
+### Every one-off on a screen or drawing instead of using the system
 
 Section: practice-plan. Stable action: write-workarounds-found.
 
-Your own screens count. A workaround you built yourself is the clearest evidence of a gap.
+Your own screens and drawings count. If you find none, say where you looked; do not invent one.
 
-**Answer:** Every one-off built on a screen instead of using the system
+**Answer:** Every one-off on a screen or drawing instead of using the system
 
-Your own screens count. A workaround you built yourself is the clearest evidence of a gap.
+Your own screens and drawings count. If you find none, say where you looked; do not invent one.
 
 
 ### For each: what did not fit
@@ -8761,24 +9152,24 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Is a bigger system a more mature system?
+Is a bigger design system a more mature one?
 
-- No. A system covering the real cases in twelve components is more mature than one with sixty nobody can navigate, and maturity shows in what has been removed.
-- Yes, if the components are well documented.
-- Generally yes, since more coverage helps more cases.
+- Covering the real cases matters; maturity often shows in what was removed.
+- Generally yes, since more coverage helps more of the cases a team will meet.
+- Yes, as long as every component in it is well documented and versioned.
 
 <details>
 <summary>After your attempt</summary>
 
-No. A system covering the real cases in twelve components is more mature than one with sixty nobody can navigate, and maturity shows in what has been removed. — Every component is maintained, documented, versioned and read by everybody learning the system. An unused one takes all of that and returns nothing.
+Covering the real cases matters; maturity often shows in what was removed. — Every component is maintained, documented, versioned and read by everyone learning the system. An unused one takes all of that and returns nothing.
 
-Yes, if the components are well documented. — Documenting something nobody uses is more of the same cost, done more carefully.
+Generally yes, since more coverage helps more of the cases a team will meet. — Coverage of cases you have helps. Coverage of cases other products have is cost.
 
-Generally yes, since more coverage helps more cases. — Coverage of cases you have helps. Coverage of cases other products have is cost.
+Yes, as long as every component in it is well documented and versioned. — Documenting something nobody uses is more of the same cost, done more carefully.
 
-Improve: Deprecate at least one unused component in step 3, through your governance route. Record the change in step 5.
+Improve: Deprecate at least one unused component in step 3 through your governance route, or record why each is kept. Record the change in step 5.
 
-Check again: The system is smaller than it was this morning.
+Check again: Every component is either used, kept with a written reason, or deprecated.
 
 Answers to revisit: deprecated, proposed, versioned, improvement-made
 
@@ -8791,24 +9182,24 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You reviewed the system and listed what it was missing compared with other design systems. What is wrong with that?
+You reviewed the system by listing what it lacks compared with other design systems. What is wrong with that?
 
-- It is a reasonable starting point to prioritise from.
-- Nothing, since those components will be needed eventually.
-- It produces components for a product you do not have. The useful review searches your own screens for what was built outside the system.
+- It is a reasonable starting point for setting the next quarter’s priorities.
+- It plans parts for a product you do not have; search your screens instead.
+- Nothing, since those common components will almost certainly be needed eventually.
 
 <details>
 <summary>After your attempt</summary>
 
-It is a reasonable starting point to prioritise from. — It prioritises a list of things nobody has asked for above two things somebody has already worked around.
+It is a reasonable starting point for setting the next quarter’s priorities. — It ranks things nobody has asked for above things somebody has already worked around.
 
-Nothing, since those components will be needed eventually. — Eventually is what governance is for. Anticipation is how a system acquires components nobody uses.
+It plans parts for a product you do not have; search your screens instead. — A modal, tabs and pagination are what component sets usually contain. Real gaps show up as one-offs built outside the system on your own screens or drawings.
 
-It produces components for a product you do not have. The useful review searches your own screens for what was built outside the system. — A modal, tabs and pagination are what component sets usually contain. Your two real gaps were a flattened status distinction and a compact list row, and neither would appear on that list.
+Nothing, since those common components will almost certainly be needed eventually. — Eventually is what governance is for. Anticipation is how a system gathers components nobody uses.
 
-Improve: Search your screens for workarounds in step 2 and let those decide the additions. Record the change in step 5.
+Improve: Search your screens or drawings for workarounds in step 2 and let those decide the additions. Record the change in step 5.
 
-Check again: Every proposed addition comes from something built on a real screen.
+Check again: Every proposed addition comes from something on a real screen or drawing.
 
 Answers to revisit: workarounds-found, what-did-not-fit, improvement-made
 
@@ -8821,20 +9212,20 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You are deprecating an unused component. Does it need to go through governance?
+You are deprecating a component you believe is unused. Does it need to go through governance?
 
-- No, governance is for additions.
-- No, since nobody is using it.
-- Yes. Removal is a major change, and a process its owner bypasses is not a process.
+- No, since nobody appears to be using it on any screen you can find any more.
+- Yes: removal can break someone’s work, and owners follow their own process.
+- No, because governance exists to control what new components are added.
 
 <details>
 <summary>After your attempt</summary>
 
-No, governance is for additions. — Removals break things, which is more than most additions do.
+No, since nobody appears to be using it on any screen you can find any more. — That is your view of who uses it, which is exactly what a route exists to check.
 
-No, since nobody is using it. — That is your view of who is using it, which is the thing a route exists to check.
+Yes: removal can break someone’s work, and owners follow their own process. — It is also how you find out that something you think is unused appears on a page you had forgotten. The route and the version both matter.
 
-Yes. Removal is a major change, and a process its owner bypasses is not a process. — It is also how you find out that something you believe is unused is used on a page you had forgotten. The route and the version both matter.
+No, because governance exists to control what new components are added. — Removals break things, which is more than most additions do.
 
 Improve: Put the deprecation through your governance route in step 3 and record it in the log. Note the change in step 5.
 
@@ -8874,15 +9265,41 @@ Write your answer for “What you added to the decision log and the changelog”
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a museum’s design system has 14 components. A carousel was built because “every system has one” and appears nowhere; a map pin component is unused now but a planned visitor map needs it next month; staff keep hand-drawing a “sold out” label the system lacks.
+
+**Task:** Decide what to remove, keep or add, and explain how each decision goes through the system’s process.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps everything for completeness, or deletes the carousel quietly; adds components other systems have.
+- Adequate: Deprecates the carousel through governance with a note and period, keeps the map pin with a written reason and date, and proposes a “sold out” status from the workaround.
+- Strong: As adequate, and versions the removal as a major change, or sets a monthly maintenance estimate with what gets skipped first.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -8941,7 +9358,7 @@ When the activity is finished, tell me to return to the course answer called “
 
 **Usage is reviewed and unused components identified**
 
-Adequate evidence: A list of components with where each is used, and the unused ones marked.
+Adequate evidence: A list of components with where each is used, from screens, drawings or the supplied notes, and the unused ones marked.
 
 0 — No usage review.
 
@@ -8975,7 +9392,7 @@ Adequate evidence: One-offs identified with what did not fit and a decision each
 
 1 — Workarounds noticed without decisions.
 
-2 — Each with a cause and a decision.
+2 — Each with a cause and a decision, or none found with where you looked.
 
 3 — As adequate, and at least one has entered the governance process as a proposal.
 

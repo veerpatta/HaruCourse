@@ -14,13 +14,13 @@ Stable ID: m19-l01-v1. Core.
 
 A portfolio built without knowing what question it answers becomes a gallery, and a gallery answers nothing.
 
-Bring: Three completed project records.
+Bring: At least one project record with its artefacts.
 
 Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
 - A written statement of what a reviewer is deciding
-- Three claims your portfolio will support
-- The project and artefact behind each claim
+- Up to three claims your evidence supports — one project is enough to start
+- The project, artefact and evidence tier behind each claim
 - A list of work that supports none of them
 
 ### Start here: in everyday words
@@ -41,7 +41,7 @@ The reader demonstrates and guides the task before asking for “In one sentence
 
 Section: learn. Stable action: welcome.
 
-Establish what a reviewer is trying to find out, and write the three claims your portfolio has to support.
+Establish what a reviewer is trying to find out, and write the claims — up to three — that the evidence you have actually supports. After Project 1 that is one project; later it is two or three.
 
 
 ### A reviewer is deciding whether you can be given real work
@@ -58,18 +58,18 @@ Section: learn. Stable action: learn-2.
 They skim first and read only if the skim earns it.
 
 
-### Decide the three claims your work supports before writing anything
+### Idea 3: Decide the claims your work supports before writing anything:…
 
 Section: learn. Stable action: learn-3.
 
-Decide the three claims your work supports before writing anything.
+Decide the claims your work supports before writing anything: up to three, fewer if one project is all you have.
 
 
-### Every claim will be checked against an artefact
+### Idea 4: Every claim will be checked against an artefact, and the artef…
 
 Section: learn. Stable action: learn-4.
 
-Every claim will be checked against an artefact.
+Every claim will be checked against an artefact, and the artefact's evidence tier travels with it.
 
 
 ### Beautiful screens without reasoning read as decoration
@@ -85,7 +85,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Three claims chosen: I turn research into a decision that can be traced; I test and repair rather than defending the first version; I state what my work does not establish. Each was written with the project that best supports it and the specific artefact behind it — the synthesis and framing page for the first, the repair-and-re-test record for the second, and the limitations page for the third. A fourth candidate claim, about building interfaces from a system, was dropped for now because the evidence was thinner and three is what a skim can hold.
+- Written straight after a first project, with one project record: two claims chosen. I turn research into a decision that can be traced, backed by the synthesis page (real participant research, three people); and I test and repair rather than defending the first version, backed by the repair-and-re-test record (two testers). A third candidate — I state what my work does not establish — was held back because the limitations page was still a draft. A fourth, about building interfaces from a system, was dropped because nothing in this project shows it. Later, with the independent project, the held claim gained its artefact and became the third.
 
 
 ### Choose where you will do the work
@@ -144,14 +144,14 @@ Example (made up): three screens with no reasoning, or a claim about impact with
 </details>
 
 
-### Choose three claims
+### Choose your claims
 
 Section: practice-plan. Stable action: step-2-brief.
 
-Three claims chosen, with the candidates you dropped and why.
+Up to three claims chosen — fewer from one project — with the candidates you dropped or held back and why.
 
-- List candidate claims your three projects could support.
-- Choose three, preferring the ones with the strongest artefacts.
+- List candidate claims your project or projects could support.
+- Choose up to three, preferring the ones with the strongest artefacts.
 
 **Start here:** For each candidate claim, ask what file you would point at.
 
@@ -159,7 +159,9 @@ Three claims chosen, with the candidates you dropped and why.
 
 **A claim:** Something about how you work that a reviewer could check against an artefact. Not a quality you have.
 
-**Three:** What a skim can hold. A fourth makes the others weaker rather than making the portfolio stronger.
+**At most three:** What a skim can hold. One project may support only one or two; a fourth makes the others weaker rather than the portfolio stronger.
+
+**Evidence tier:** Real participant research, self-pilot (you testing your own work), simulation (scripted or made-up responses) or supplied practice (course material). The claim inherits its artefact’s tier.
 
 
 ### See the decision being made
@@ -207,22 +209,26 @@ Example (made up): I turn research into a decision that can be traced back to wh
 
 Section: practice-plan. Stable action: write-claim-2.
 
-Write your answer for “Claim 2 · what it says about how you work”. Use the task instructions below to decide what to include.
+Optional. With one project, one or two well-supported claims are enough; leave this empty rather than stretching thin evidence.
 
 **Answer:** Claim 2 · what it says about how you work
 
+Optional: may be left empty.
 
+Optional. With one project, one or two well-supported claims are enough; leave this empty rather than stretching thin evidence.
 
 
 ### Claim 3 · what it says about how you work
 
 Section: practice-plan. Stable action: write-claim-3.
 
-Write your answer for “Claim 3 · what it says about how you work”. Use the task instructions below to decide what to include.
+Optional. With one project, one or two well-supported claims are enough; leave this empty rather than stretching thin evidence.
 
 **Answer:** Claim 3 · what it says about how you work
 
+Optional: may be left empty.
 
+Optional. With one project, one or two well-supported claims are enough; leave this empty rather than stretching thin evidence.
 
 
 ### Candidate claims you dropped, and why
@@ -242,7 +248,7 @@ Section: practice-plan. Stable action: step-3-brief.
 
 For each claim, the project and the specific artefact, with anything unsupported rejected.
 
-- For each claim, name the project and the specific artefact.
+- For each claim, name the project, the specific artefact and its evidence tier.
 - Reject any claim whose artefact you cannot point to.
 
 **Start here:** Open the project folders and write the actual file names.
@@ -254,15 +260,15 @@ For each claim, the project and the specific artefact, with anything unsupported
 **Rejecting a claim:** Dropping one because nothing supports it. It is better done now than in an interview.
 
 
-### For each claim: the project and the specific artefact
+### For each claim: the project, the specific artefact and its evidence tier
 
 Section: practice-plan. Stable action: write-claim-evidence.
 
-A named file, not a project. If you cannot point at something, the claim is not available yet.
+Tier: real participant research, self-pilot, simulation or supplied practice. A named file, not a project. If you cannot point at something, the claim is not available yet.
 
-**Answer:** For each claim: the project and the specific artefact
+**Answer:** For each claim: the project, the specific artefact and its evidence tier
 
-A named file, not a project. If you cannot point at something, the claim is not available yet.
+Tier: real participant research, self-pilot, simulation or supplied practice. A named file, not a project. If you cannot point at something, the claim is not available yet.
 
 
 ### Any claim you rejected because you could not point at an artefact
@@ -280,9 +286,9 @@ Write your answer for “Any claim you rejected because you could not point at a
 
 Section: practice-plan. Stable action: step-4-brief.
 
-Work that supports none of the three claims, marked excluded rather than deleted.
+Work that supports none of your claims, marked excluded rather than deleted.
 
-- List work that supports none of the three claims.
+- List work that supports none of your claims.
 - Mark it as excluded rather than deleting it.
 
 **Start here:** List everything you have, then mark what supports nothing.
@@ -315,7 +321,7 @@ surplus — supports none of them — It is the artefact the first claim rests o
 
 looks like evidence and is not — A reviewer can follow every step of it.
 
-Now sort your own work against your three claims, and mark the surplus as excluded.
+Now sort your own work against your claims, and mark the surplus as excluded.
 
 </details>
 
@@ -341,7 +347,7 @@ surplus — supports none of them — Good work, excluded rather than deleted. A
 
 looks like evidence and is not — It is not pretending to be anything.
 
-Now sort your own work against your three claims, and mark the surplus as excluded.
+Now sort your own work against your claims, and mark the surplus as excluded.
 
 </details>
 
@@ -367,7 +373,7 @@ surplus — supports none of them — It is worse than surplus: a reviewer who a
 
 looks like evidence and is not — The trace runs backwards through it. What three people said is inside it and cannot be recovered from it.
 
-Now sort your own work against your three claims, and mark the surplus as excluded.
+Now sort your own work against your claims, and mark the surplus as excluded.
 
 </details>
 
@@ -393,7 +399,7 @@ surplus — supports none of them — It supports the iteration claim better tha
 
 looks like evidence and is not — Every part of it is checkable.
 
-Now sort your own work against your three claims, and mark the surplus as excluded.
+Now sort your own work against your claims, and mark the surplus as excluded.
 
 </details>
 
@@ -419,7 +425,7 @@ surplus — supports none of them — Two annotated screens would support a craf
 
 looks like evidence and is not — They are honest about being screens.
 
-Now sort your own work against your three claims, and mark the surplus as excluded.
+Now sort your own work against your claims, and mark the surplus as excluded.
 
 </details>
 
@@ -430,7 +436,7 @@ Section: practice-plan. Stable action: step-4-sort-6.
 
 Six pieces of work from a made up set of three projects, against the claim that research can be traced to a decision. For each one, decide what it is.
 
-A line saying the third project improved efficiency for the business.
+A line saying the independent project improved efficiency for the business.
 
 - strong evidence for a claim
 - surplus — supports none of them
@@ -439,24 +445,24 @@ A line saying the third project improved efficiency for the business.
 <details>
 <summary>After your attempt</summary>
 
-strong evidence for a claim — The measurement was eleven progress calls becoming seven over matched five-day periods, with two conditions.
+strong evidence for a claim — The measurement was eleven progress calls becoming seven over matched five-day periods after the slip wording changed, with two conditions.
 
 surplus — supports none of them — It is worse: it damages the third claim, which is about stating what the work does not establish.
 
 looks like evidence and is not — Efficiency is a category the tally sheets do not cover, and it is the sentence a reviewer will ask about first.
 
-Now sort your own work against your three claims, and mark the surplus as excluded.
+Now sort your own work against your claims, and mark the surplus as excluded.
 
 </details>
 
 
-### Work that supports none of the three claims
+### Work that supports none of your claims
 
 Section: practice-plan. Stable action: write-supports-none.
 
-Write your answer for “Work that supports none of the three claims”. Use the task instructions below to decide what to include.
+Write your answer for “Work that supports none of your claims”. Use the task instructions below to decide what to include.
 
-**Answer:** Work that supports none of the three claims
+**Answer:** Work that supports none of your claims
 
 
 
@@ -480,22 +486,22 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Should the portfolio show everything you have done?
 
-- Yes, with the strongest work first.
-- Yes, since more work shows more range.
-- It should support three claims. Work supporting none of them makes the portfolio longer and the claims weaker.
+- Everything, since more work on show gives a reviewer a fuller sense of your range.
+- Everything, as long as the strongest work comes first and the rest follows it.
+- It should support a few claims; work that supports none of them dilutes the rest.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, with the strongest work first. — Ordering helps and the surplus still competes for the same attention.
+Everything, since more work on show gives a reviewer a fuller sense of your range. — Range is shown across claims rather than across volume, and a skim cannot hold more than a few things.
 
-Yes, since more work shows more range. — Range is shown across claims rather than across volume, and a skim cannot hold more than a few things.
+Everything, as long as the strongest work comes first and the rest follows it. — Ordering helps, and the surplus still competes for the same attention.
 
-It should support three claims. Work supporting none of them makes the portfolio longer and the claims weaker. — A reviewer skims first and reads only if the skim earns it. Twelve unannotated screens dilute the three things you wanted them to notice.
+It should support a few claims; work that supports none of them dilutes the rest. — A reviewer skims first and reads only if the skim earns it. Twelve unannotated screens dilute the few things you wanted them to notice.
 
-Improve: List the work that supports none of your three claims in step 4 and mark it excluded. Record the change in step 5.
+Improve: List the work that supports none of your claims in step 4 and mark it excluded. Record the change in step 5.
 
-Check again: Everything included supports one of the three claims.
+Check again: Everything included supports one of your claims.
 
 Answers to revisit: supports-none, excluded-not-deleted, improvement-made
 
@@ -510,18 +516,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your three claims are user-centred, detail-oriented and collaborative. What is wrong with them?
 
-- Nothing, though they could be more specific.
-- They are too common, so they will not stand out.
-- They are qualities rather than claims: nothing could support them and nothing could contradict them.
+- Nothing serious; they are fine claims that could simply be worded more specifically.
+- They are qualities, not claims: no artefact could support or contradict them.
+- They are too common in portfolios, so a reviewer will not remember any of them.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing, though they could be more specific. — Specificity is not a polish here. Without an artefact, the claim does no work at all.
+Nothing serious; they are fine claims that could simply be worded more specifically. — Specificity is not a polish here. Without an artefact, the claim does no work at all.
 
-They are too common, so they will not stand out. — Commonness is a symptom. The cause is that nobody could check them.
+They are qualities, not claims: no artefact could support or contradict them. — A claim names something a reviewer can check against a file. Turning research into a traceable decision points at a synthesis page; detail-oriented points at nothing.
 
-They are qualities rather than claims: nothing could support them and nothing could contradict them. — A claim names something a reviewer can check against a file. Turning research into a traceable decision points at a synthesis page; detail-oriented points at nothing.
+They are too common in portfolios, so a reviewer will not remember any of them. — Commonness is a symptom. The cause is that nobody could check them.
 
 Improve: Rewrite any claim in step 2 that has no file behind it. Record the change in step 5.
 
@@ -540,18 +546,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You have a persona document made from three interviews. Is it evidence that research reached a decision?
 
-- Yes, if the interviews are also included.
-- No. The trace runs backwards through it: what three people said is inside it and cannot be recovered from it.
-- Yes, since it was built from real interviews.
+- Good evidence, as long as the interview notes are attached to it in the portfolio.
+- Good evidence, since it was built from three real interviews with consenting people.
+- Weak evidence: what three people said is inside it and cannot be recovered from it.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, if the interviews are also included. — Then the interviews are the evidence and the persona is a summary that loses their detail.
+Good evidence, as long as the interview notes are attached to it in the portfolio. — Then the notes would be the evidence and the persona a summary that loses their detail — and raw interview notes do not belong in a portfolio.
 
-No. The trace runs backwards through it: what three people said is inside it and cannot be recovered from it. — It also carries a stock photograph and a name, which a reviewer asking one question finds is an invented person. The synthesis page with counts shows the same research and can be checked.
+Good evidence, since it was built from three real interviews with consenting people. — Built from them and not traceable to them. A composite hides the counts and the contradictions.
 
-Yes, since it was built from real interviews. — Built from them and not traceable to them. A composite hides the counts and the contradictions.
+Weak evidence: what three people said is inside it and cannot be recovered from it. — The trace runs backwards through it. It may also carry a stock photograph and a name, which a reviewer asking one question finds is an invented person. The synthesis page with counts shows the same research and can be checked.
 
 Improve: Replace any composite artefact in step 3 with the record it was built from. Record the change in step 5.
 
@@ -566,14 +572,14 @@ Answers to revisit: claim-evidence, rejected-claims, improvement-made
 
 Section: practice. Stable action: step-5-brief.
 
-A check that a ninety-second skim would reach all three claims.
+A check that a ninety-second skim would reach every claim.
 
-- Ask whether a ninety-second skim would reach all three claims.
+- Ask whether a ninety-second skim would reach every claim.
 - Save the claims and their evidence.
 
 **Start here:** Read only your own headings and first lines, timed, and see which claims arrive.
 
-**Enough:** All three claims appear in the parts somebody would skim.
+**Enough:** Every claim appears in the parts somebody would skim.
 
 **Reaching a claim in a skim:** Somebody who reads only headings, first lines and captions still meets it. Anything that needs a paragraph to reach is not reached.
 
@@ -603,26 +609,52 @@ Made-up example. Checking whether three claims survive a skim, and checking by r
 **Unknown:** Still unknown: whether ninety seconds is right. It is the figure people quote and nobody times themselves, so the check is a rough one deliberately.
 
 
-### Whether a ninety-second skim would reach all three claims, and how you can tell
+### Whether a ninety-second skim would reach every claim, and how you can tell
 
 Section: practice. Stable action: write-skim-check.
 
-Write your answer for “Whether a ninety-second skim would reach all three claims, and how you can tell”. Use the task instructions below to decide what to include.
+Write your answer for “Whether a ninety-second skim would reach every claim, and how you can tell”. Use the task instructions below to decide what to include.
 
-**Answer:** Whether a ninety-second skim would reach all three claims, and how you can tell
-
-
+**Answer:** Whether a ninety-second skim would reach every claim, and how you can tell
 
 
-### What you changed after the Check questions
+
+
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: After one project — redesigning how a pottery studio’s members book kiln time — you have a synthesis page with counts from four members (real participant research), a before-and-after flow re-tested with two people, a mood board, and no measurement. You would like claims about research, iteration, visual craft and business impact.
+
+**Task:** Which claims would you make now, which would you hold back, and what artefact and tier sits behind each? Explain why.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Makes all four claims, including business impact and visual craft, with the mood board as evidence and no artefact named for the impact.
+- Adequate: Makes the research and iteration claims with the synthesis page and the re-test record named, each labelled real participant research, and holds back impact because nothing was measured.
+- Strong: As adequate, and notes that one project is enough to start, says which later evidence would earn the held-back claims, and keeps the mood board as excluded rather than deleted.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -645,7 +677,7 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: What a portfolio has to do in ninety seconds
-What I am trying to do: Establish what a reviewer is trying to find out, and write the three claims your portfolio has to support.
+What I am trying to do: Establish what a reviewer is trying to find out, and write the claims — up to three — that the evidence you have actually supports. After Project 1 that is one project; later it is two or three.
 
 Key idea or terms:
 The reviewer’s question: Whether you can be given real work. Everything in the portfolio either helps answer it or takes up room.
@@ -670,7 +702,7 @@ When the activity is finished, tell me to return to the course answer called “
 <summary>Optional hints and reference material</summary>
 
 - Write what a person hiring would need to believe to take the risk.
-- List every claim your projects could support and choose the best-evidenced three.
+- List every claim your project or projects could support and keep only the best-evidenced, up to three.
 
 - R22: [NN/g: UX portfolio](https://www.nngroup.com/articles/ux-design-portfolios/) — The five steps, and what 204 surveyed hiring professionals said they look for. Purpose: Establishes what a portfolio is for before any of it is written. Free article, no account; the site sells courses and reports that are not required. Verified 2026-09-06. Written for a US hiring market; the reasoning transfers, the market does not. Fallback: R23.
 - R23: [GitLab: Product Designer role](https://handbook.gitlab.com/job-description-library/product/product-designer/) — Responsibilities and what the hiring process looks at. Purpose: Gives one published account of what an employer says it wants. Free reading, no account. Verified 2026-09-06. One employer's published expectations; this is not a representative India hiring study and must not be read as one. Fallback: R22.
@@ -693,29 +725,29 @@ Adequate evidence: One sentence naming what a reviewer is deciding.
 
 Repair: Write what a person hiring would need to believe to take the risk. Recheck: The statement.
 
-**Three claims are chosen deliberately**
+**Claims are chosen deliberately, within what the evidence supports**
 
-Adequate evidence: Exactly three claims, chosen from a longer list.
+Adequate evidence: One to three claims, chosen from a longer list — fewer when one project is all you have.
 
 0 — No claims, or an undifferentiated list.
 
-1 — Three claims without alternatives considered.
+1 — Claims chosen without alternatives considered, or stretched to three on thin evidence.
 
-2 — Three chosen from candidates.
+2 — Up to three chosen from candidates, each supportable now.
 
-3 — As adequate, and the rejected claims are recorded with reasons.
+3 — As adequate, and the rejected or held-back claims are recorded with reasons.
 
-Repair: List every claim your projects could support and choose the best-evidenced three. Recheck: The claims list.
+Repair: List every claim your project or projects could support and keep only the best-evidenced, up to three. Recheck: The claims list.
 
-**Each claim names a specific artefact**
+**Each claim names a specific artefact and its evidence tier**
 
-Adequate evidence: A project and a named artefact behind each claim.
+Adequate evidence: A project, a named artefact and its tier — real participant research, self-pilot, simulation or supplied practice — behind each claim.
 
 0 — Claims with no evidence attached.
 
-1 — Projects named, artefacts vague.
+1 — Projects named, artefacts vague, or tiers missing.
 
-2 — Specific artefacts named.
+2 — Specific artefacts named with their tiers.
 
 3 — As adequate, and at least one candidate claim was dropped for weak evidence.
 
@@ -733,7 +765,7 @@ Adequate evidence: A list of work supporting none of the claims.
 
 3 — As adequate, and it is kept aside rather than deleted.
 
-Repair: Test each piece of work against the three claims and set aside what fails. Recheck: The exclusion list.
+Repair: Test each piece of work against your claims and set aside what fails. Recheck: The exclusion list.
 
 </details>
 The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
@@ -743,8 +775,8 @@ The progress bar counts required actions with saved work. It is not a score or p
 **Review criteria:**
 
 - The reviewer's question is stated
-- Three claims are chosen deliberately
-- Each claim names a specific artefact
+- Claims are chosen deliberately, within what the evidence supports
+- Each claim names a specific artefact and its evidence tier
 - Surplus work is identified and excluded
 
 <details>
@@ -752,7 +784,8 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 - The reviewer's question is narrow: could this person be handed a real problem and make it better without constant supervision? Everything in the portfolio either helps answer that or takes up space. Knowing the question is what lets you cut.
 - The first pass is a skim of a minute or two, and it decides whether there is a second pass. That means the top of each case study has to carry the problem, your role and the outcome, because that is all a skim will reach.
-- Writing your three claims first inverts the usual order and prevents the common failure, which is assembling everything you have and hoping a story emerges. Three claims — for example that you can turn research into a decision, that you repair work when testing shows it failing, and that you state limits — give every later choice a test.
+- Writing your claims first inverts the usual order and prevents the common failure, which is assembling everything you have and hoping a story emerges. Up to three claims — for example that you can turn research into a decision, that you repair work when testing shows it failing, and that you state limits — give every later choice a test. One project can support one or two of them; that is enough to start, and later projects add evidence rather than replacing it.
+- Every artefact carries its evidence tier, and the claim inherits it: real participant research, a self-pilot (you testing your own work), a simulation (scripted or made-up responses), or supplied practice (material the course gave you). All four are legitimate work. Only the first is research with people, and a claim that rests on practice says so.
 - Craft still matters, but craft alone reads as decoration in this discipline, because a screen cannot show whether the problem was worth solving. Your visual background is an advantage only when it sits alongside the reasoning.
 
 [NN/g: UX portfolio](https://www.nngroup.com/articles/ux-design-portfolios/).
@@ -769,14 +802,14 @@ Bring: The claims and evidence map from lesson 1.
 
 Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
-- An audit table of every artefact across three projects
-- Each item marked strong, thin or missing
+- An audit table of every artefact across your projects
+- Each item marked strong, thin or missing, with its evidence tier
 - A list of closable gaps with dates
 - A list of permanent gaps to be stated as limits
 
 ### Start here: in everyday words
 
-A portfolio story shows what you did, why you chose it, what evidence supports it and what remains uncertain. In this lesson, your first small result is: Everything that exists across the three projects, listed from the folders rather than from memory.
+A portfolio story shows what you did, why you chose it, what evidence supports it and what remains uncertain. In this lesson, your first small result is: Everything that exists across your projects, listed from the folders rather than from memory.
 
 **Words you will use**
 
@@ -786,13 +819,13 @@ A portfolio story shows what you did, why you chose it, what evidence supports i
 
 **Quick example.** Made-up example. Auditing a first project’s records, and auditing them from memory. That the first project had a full set: research notes, a synthesis, a flow, screens and a test record. It felt like a complete project.
 
-The reader demonstrates and guides the task before asking for “Everything that exists across the three projects, listed from the folders”.
+The reader demonstrates and guides the task before asking for “Everything that exists across your projects, listed from the folders”.
 
 ### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
-Audit all three project records against the three claims, and record precisely which evidence exists, which is thin and which is missing.
+Audit every project record you have — two on the core path, three on the full library — against your claims, and record precisely which evidence exists, which is thin, which is missing, and each item's evidence tier.
 
 
 ### Audit the records, not your memory of the projects
@@ -802,11 +835,11 @@ Section: learn. Stable action: learn-1.
 Audit the records, not your memory of the projects.
 
 
-### Mark each piece of evidence strong, thin or missing
+### Idea 2: Mark each piece of evidence strong, thin or missing, and label…
 
 Section: learn. Stable action: learn-2.
 
-Mark each piece of evidence strong, thin or missing.
+Mark each piece of evidence strong, thin or missing, and label its tier: real participant research, self-pilot, simulation or supplied practice.
 
 
 ### Missing evidence is a finding, not a reason to embellish
@@ -836,7 +869,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The audit covered three projects and produced a table of twenty-six artefacts. Strong: two synthesis pages, one repair-and-re-test record, one limitations page, one handover package. Thin: the first project's session notes, which were written two days later and say so; the second project's flow, which is undated. Missing: any accessibility evidence from projects one and two, and any before-measurement from project two. Two gaps were closable — a keyboard pass on the second project's prototype, run today and labelled with today's date, and a short follow-up with the shop owner. The rest were recorded as permanent limits.
+- The audit covered two projects on the core path — Project 1 and the independent project — and produced a table of nineteen artefacts, each with its tier. Strong: two synthesis pages (real participant research), one repair-and-re-test record, one limitations page, one handover package. Thin: Project 1's session notes, which were written two days later and say so, and its undated flow. Labelled by tier: the status-page screenshots are a demonstration with made-up records, never real use. Missing: any accessibility evidence from Project 1. Two gaps were closable — a keyboard pass on Project 1's prototype, run today and labelled with today's date, and a short follow-up with the shop owner. The rest were recorded as permanent limits.
 
 
 ### Choose where you will do the work
@@ -852,7 +885,7 @@ Recommended route: Fill the worksheet in this app, step by step. It saves as you
 
 Section: practice-plan. Stable action: step-1-brief.
 
-Everything that exists across the three projects, listed from the folders rather than from memory.
+Everything that exists across your projects, listed from the folders rather than from memory.
 
 - Open each project folder and list what exists.
 - Do not work from memory.
@@ -866,13 +899,13 @@ Everything that exists across the three projects, listed from the folders rather
 **Artefact:** A file that exists: a session record, a tally sheet, a version of a build. Not a stage of the process you went through.
 
 
-### Everything that exists across the three projects, listed from the folders
+### Everything that exists across your projects, listed from the folders
 
 Section: practice-plan. Stable action: write-artefact-list.
 
 From the folders rather than from memory. Memory produces a list of what you intended to keep.
 
-**Answer:** Everything that exists across the three projects, listed from the folders
+**Answer:** Everything that exists across your projects, listed from the folders
 
 From the folders rather than from memory. Memory produces a list of what you intended to keep.
 
@@ -883,7 +916,7 @@ Section: practice-plan. Stable action: step-2-brief.
 
 Each item marked strong, thin or missing, with the reason anything is thin.
 
-- Mark each item strong, thin or missing.
+- Mark each item strong, thin or missing, and label its evidence tier.
 - Note why anything is thin, including undated or late artefacts.
 
 **Start here:** Mark the strengths beside each item on the list, before comparing anything to a claim.
@@ -918,15 +951,15 @@ Made-up example. Auditing a first project’s records, and auditing them from me
 **Unknown:** Still unknown: whether the synthesis ever existed on paper. I cannot find it, and the audit records it as missing rather than lost.
 
 
-### Each item marked strong, thin or missing
+### Each item marked strong, thin or missing, with its evidence tier
 
 Section: practice-plan. Stable action: write-marked-strength.
 
-Write your answer for “Each item marked strong, thin or missing”. Use the task instructions below to decide what to include.
+Tier: real participant research, self-pilot, simulation or supplied practice. A demonstration with made-up records is never evidence of real use.
 
-**Answer:** Each item marked strong, thin or missing
+**Answer:** Each item marked strong, thin or missing, with its evidence tier
 
-
+Tier: real participant research, self-pilot, simulation or supplied practice. A demonstration with made-up records is never evidence of real use.
 
 
 ### Why anything is thin, including undated or late artefacts
@@ -953,7 +986,7 @@ Section: practice-plan. Stable action: step-3-brief.
 
 The strong evidence available for each claim, with any claim resting only on thin evidence flagged.
 
-- For each of your three claims, list the strong evidence available.
+- For each of your claims, list the strong evidence available.
 - Flag any claim that rests only on thin evidence.
 
 **Start here:** Take each claim and list only the strong items under it.
@@ -1219,18 +1252,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Should you audit the projects or your memory of them?
 
-- The folders. You remember the project; the folder holds what you kept, and the gap between them is where embellishment starts.
-- The folders, though memory fills reasonable gaps.
-- Memory is fine as a first pass, then check the folders.
+- The folders alone: the gap between memory and folder is where embellishment starts.
+- The folders, with memory filling the reasonable gaps where something was not kept.
+- Memory first, as a quick pass, and then check the folders for anything you missed.
 
 <details>
 <summary>After your attempt</summary>
 
-The folders. You remember the project; the folder holds what you kept, and the gap between them is where embellishment starts. — A synthesis you remember doing in your head while drawing a flow is a missing artefact. From memory it looks like a complete project; from the folder it is screens, an undated flow and late notes.
+The folders alone: the gap between memory and folder is where embellishment starts. — A synthesis you remember doing in your head while drawing a flow is a missing artefact. From memory it looks like a complete project; from the folder it is screens, an undated flow and late notes.
 
-The folders, though memory fills reasonable gaps. — Filling gaps from memory is what produces documents that never existed.
+The folders, with memory filling the reasonable gaps where something was not kept. — Filling gaps from memory is what produces documents that never existed.
 
-Memory is fine as a first pass, then check the folders. — The first pass sets your expectation, and the folder check then reads as things having gone missing.
+Memory first, as a quick pass, and then check the folders for anything you missed. — The first pass sets your expectation, and the folder check then reads as things having gone missing.
 
 Improve: Rebuild the inventory in step 1 from the folders alone. Record the change in step 5.
 
@@ -1247,20 +1280,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-The first project never had a synthesis document. Can you write one now?
+Your first project never had a synthesis document. Can you write one now?
 
-- Yes, since the thinking genuinely happened at the time.
-- Yes, if it is clearly a reconstruction.
-- Not as a project artefact. Written now and labelled as such it is a reflection, which is a different and much weaker thing.
+- Yes, since the thinking genuinely happened at the time and only the paper is missing.
+- Only as a reflection dated today, never as an artefact of the project itself.
+- Yes, filed with the other project notes so that the folder is finally complete.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, since the thinking genuinely happened at the time. — The thinking is not the artefact, and nobody can check a memory.
+Yes, since the thinking genuinely happened at the time and only the paper is missing. — The thinking is not the artefact, and nobody can check a memory.
 
-Yes, if it is clearly a reconstruction. — Clearly labelled, it is honest and it is no longer evidence that the process ran.
+Only as a reflection dated today, never as an artefact of the project itself. — The honest answer is that the project has no synthesis, and the case study says so. Tidying presentation is fine; producing a document that never existed and dating it to the project is not.
 
-Not as a project artefact. Written now and labelled as such it is a reflection, which is a different and much weaker thing. — The honest answer is that the project has no synthesis, and the case study says so. Tidying presentation is fine; producing a document that never existed and dating it to the project is not.
+Yes, filed with the other project notes so that the folder is finally complete. — Filed among notes written at the time, it becomes a claim about the past dressed as a record of it, and nobody reading the folder could tell the difference.
 
 Improve: Move that gap to the permanent list in step 5 and draft the sentence for it. Record the change.
 
@@ -1279,18 +1312,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your second claim rests only on thin evidence. What should you do?
 
-- Use it and add a caveat in the case study.
 - Flag it now, then weaken the claim or close the gap honestly this week.
-- Drop the claim entirely.
+- Drop the claim entirely, since thin evidence can never support anything.
+- Use it as it is and add a caveat under the claim in the case study.
 
 <details>
 <summary>After your attempt</summary>
 
-Use it and add a caveat in the case study. — A caveat under a claim the evidence does not support is a claim with an apology attached.
-
 Flag it now, then weaken the claim or close the gap honestly this week. — A claim on late, undated or reconstructed material will fail the first question about it. Finding that here costs an afternoon; finding it in an interview costs the whole portfolio.
 
-Drop the claim entirely. — Sometimes right, and first check whether the gap is closable this week.
+Drop the claim entirely, since thin evidence can never support anything. — Sometimes right, and first check whether the gap is closable this week or the claim can be weakened to fit the evidence.
+
+Use it as it is and add a caveat under the claim in the case study. — A caveat under a claim the evidence does not support is a claim with an apology attached.
 
 Improve: Flag any thin-only claim in step 3 and decide between closing the gap and weakening the claim. Record the change in step 5.
 
@@ -1330,15 +1363,41 @@ Write your answer for “Gaps that cannot be closed, and how each will be stated
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: Auditing a project about a community choir’s rota, you find session notes written three days after the interviews and saying so, a flow with no date, a test record from a self-pilot you ran alone, and a measurement you remember taking but cannot find. You are tempted to redraw the flow, date it to the project, and rewrite the measurement from memory.
+
+**Task:** Mark each item strong, thin or missing with its tier, and say what you may and may not do about each. Explain why.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Dates the redrawn flow to the project, rewrites the measurement from memory, and calls the self-pilot user testing.
+- Adequate: Marks the late notes and undated flow thin, the measurement missing, and the test record a self-pilot; redraws the flow only as a re-rendering of the same content and states the missing measurement as a gap.
+- Strong: As adequate, and identifies a gap that could honestly be closed now with today’s date, and writes the sentence the case study will use for the missing measurement.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -1361,7 +1420,7 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: Auditing what you actually kept
-What I am trying to do: Audit all three project records against the three claims, and record precisely which evidence exists, which is thin and which is missing.
+What I am trying to do: Audit every project record you have — two on the core path, three on the full library — against your claims, and record precisely which evidence exists, which is thin, which is missing, and each item's evidence tier.
 
 Key idea or terms:
 From the folders: Opening each one and writing what is in it. Memory produces a list of what you meant to keep.
@@ -1374,12 +1433,12 @@ Made-up example. Auditing a first project’s records, and auditing them from me
 Activity: Act as a portfolio reader using only the supplied case. Ask what I did, why it mattered and which evidence proves the claim. Challenge one vague or exaggerated sentence.
 
 Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
-When the activity is finished, tell me to return to the course answer called “Everything that exists across the three projects, listed from the folders” and write my own decision. Do not write that answer for me.
+When the activity is finished, tell me to return to the course answer called “Everything that exists across your projects, listed from the folders” and write my own decision. Do not write that answer for me.
 ```
 
-**Come back to the course:** Return to “Everything that exists across the three projects, listed from the folders”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+**Come back to the course:** Return to “Everything that exists across your projects, listed from the folders”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Everything that exists across the three projects, listed from the folders” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Everything that exists across your projects, listed from the folders” and write one sentence in your own words.
 
 </details>
 <details>
@@ -1409,9 +1468,9 @@ Adequate evidence: An inventory matching what is actually in the folders.
 
 Repair: Open every folder and list its contents item by item. Recheck: The inventory.
 
-**Every artefact is marked strong, thin or missing**
+**Every artefact is marked strong, thin or missing, with its tier**
 
-Adequate evidence: A three-state mark on each item with reasons for thin ones.
+Adequate evidence: A three-state mark and an evidence tier on each item, with reasons for thin ones.
 
 0 — Unmarked.
 
@@ -1459,7 +1518,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 **Review criteria:**
 
 - The audit is drawn from the files
-- Every artefact is marked strong, thin or missing
+- Every artefact is marked strong, thin or missing, with its tier
 - Claims are tested against available evidence
 - Closable and permanent gaps are separated
 
@@ -1467,9 +1526,9 @@ The progress bar counts required actions with saved work. It is not a score or p
 <summary>Reading, video and deeper explanation</summary>
 
 - Memory is generous about your own work. The audit has to be done against the files: open each folder, list what is there, and mark what each item can support. The difference between what you remember doing and what you can show is usually larger than expected and always worth knowing.
-- Three states are enough. Strong means an artefact a reviewer could read and believe; thin means it exists but is partial or undated; missing means there is nothing. Anything thin or missing constrains what the case study can say.
+- Three states are enough. Strong means an artefact a reviewer could read and believe; thin means it exists but is partial or undated; missing means there is nothing. Anything thin or missing constrains what the case study can say. Strength is separate from tier: a strong self-pilot record is still a self-pilot, and a demonstration with made-up records is never evidence of real use.
 - The temptation at this point is to redraw a flow, rewrite notes more neatly or produce the synthesis you meant to do. Making a missing artefact now and presenting it as part of the project is fabrication, and it is the specific dishonesty this discipline punishes hardest because it is so easy to check.
-- Some gaps are genuinely closable. If the third project's participant is still reachable, a short follow-up conversation is real new evidence, dated today, and can be presented as exactly that. Closing a gap honestly and closing it by invention look similar on the page and are entirely different acts.
+- Some gaps are genuinely closable. If a project's participant is still reachable, a short follow-up conversation is real new evidence, dated today, and can be presented as exactly that. Closing a gap honestly and closing it by invention look similar on the page and are entirely different acts.
 
 [NN/g: UX portfolio](https://www.nngroup.com/articles/ux-design-portfolios/).
 
@@ -1479,9 +1538,9 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 Stable ID: m19-l03-v1. Core.
 
-Three case studies that all say the same thing are one case study repeated, and reviewers notice.
+Case studies that all say the same thing are one case study repeated, and reviewers notice.
 
-Bring: The audit table and the three claims.
+Bring: The audit table and your claims.
 
 Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
@@ -1497,7 +1556,7 @@ A portfolio story shows what you did, why you chose it, what evidence supports i
 **Words you will use**
 
 - **A job:** The one thing this case study is for. Matched to the project’s strongest evidence rather than to what the project was about.
-- **No other one does it:** The test. Three case studies covering the same ground teach a reader one fact about you three times.
+- **No other one does it:** The test. Case studies covering the same ground teach a reader one fact about you over and over.
 - **A promise:** What this case study will show, in one sentence. A reader can decide afterwards whether it delivered.
 
 **Quick example.** Made-up example. Choosing which projects become case studies, and choosing the ones I am proudest of. The three projects with the best-looking outcomes: the repair-shop page, a booking flow redesign, and a small tool I built for myself.
@@ -1508,7 +1567,7 @@ The reader demonstrates and guides the task before asking for “For each projec
 
 Section: learn. Stable action: welcome.
 
-Assign each of the three projects a single job in the portfolio, and write the one-sentence promise each case study makes.
+Assign each project — two on the core path, three on the full library — a single job in the portfolio, and write the one-sentence promise each case study makes.
 
 
 ### Give each case study one job, matched to its strongest evidence
@@ -1532,11 +1591,11 @@ Section: learn. Stable action: learn-3.
 Order them so the strongest is first.
 
 
-### Cover different skills across the three, not the same one three times
+### Cover different skills across the case studies, not the same one twice
 
 Section: learn. Stable action: learn-4.
 
-Cover different skills across the three, not the same one three times.
+Cover different skills across the case studies, not the same one twice.
 
 
 ### Decide the length each deserves; they need not be equal
@@ -1552,7 +1611,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Project three took the research-to-decision job because its synthesis and framing were strongest and it had the only measurement. Project two took the iteration job, built entirely around a repair that failed on the first attempt and worked on the second. Project one took the craft-and-constraint job, kept short because its records were thin, focused on the interface work and the accessibility repair, and explicit that its research was a single conversation. Order: three, two, one. Lengths planned at roughly 900, 700 and 400 words.
+- On the core path, two case studies. The independent project took the research-to-decision job because its synthesis and framing were strongest and it had the only measurement. Project 1 took the iteration job, built around a repair that failed on the first attempt and worked on the second, kept shorter because its notes were thin. Order: independent project first. Lengths planned at roughly 900 and 600 words. A learner who also did Project 2 gives it a third job, such as craft under constraint, kept short if its records are thin.
 
 
 ### Choose where you will do the work
@@ -1579,7 +1638,7 @@ Each project’s strongest evidence named from the audit, and a job assigned tha
 
 **A job:** The one thing this case study is for. Matched to the project’s strongest evidence rather than to what the project was about.
 
-**No other one does it:** The test. Three case studies covering the same ground teach a reader one fact about you three times.
+**No other one does it:** The test. Case studies covering the same ground teach a reader one fact about you over and over.
 
 
 ### See the decision being made
@@ -1629,7 +1688,7 @@ Write your answer for “The job each case study does, which no other one does�
 <details>
 <summary>Example</summary>
 
-Example (made up): project three does research-to-decision, project two does iteration, project one does craft under constraint.
+Example (made up): the independent project does research-to-decision and Project 1 does iteration; a third project, if you have one, does craft under constraint.
 
 </details>
 
@@ -1664,7 +1723,7 @@ Made-up example. Writing promises for three case studies, and writing descriptio
 
 **The test I applied:** Could a reader say, at the end, whether this delivered what it promised? Not from a description: there is nothing to deliver.
 
-**What the first became:** This shows a finding from five people becoming one design decision, and what happened when it met a person who had never heard of the project.
+**What the first became:** This shows a finding from three people becoming one design decision, and what happened when it met a person who had never heard of the project.
 
 **What that did to the writing:** It decided what to cut. Everything not on the way from the finding to that person came out, which took nine hundred words down to seven hundred.
 
@@ -1688,7 +1747,7 @@ Checkable means a reader could look at the case study and say whether it deliver
 <details>
 <summary>Example</summary>
 
-Example (made up): this case study shows a finding from five people becoming one design decision, and what happened when it met a person.
+Example (made up): this case study shows a finding from three people becoming one design decision, and what happened when it met a person.
 
 </details>
 
@@ -1708,11 +1767,13 @@ Write your answer for “Promise 2 · one sentence a reader could check”. Use 
 
 Section: practice-plan. Stable action: write-promise-3.
 
-Write your answer for “Promise 3 · one sentence a reader could check”. Use the task instructions below to decide what to include.
+Optional: only for a third case study, if you took the full library.
 
 **Answer:** Promise 3 · one sentence a reader could check
 
+Optional: may be left empty.
 
+Optional: only for a third case study, if you took the full library.
 
 
 ### Order them
@@ -1935,18 +1996,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Should each case study show your whole process?
 
-- Yes, in less detail for the weaker projects.
-- Yes, since the process is what you are demonstrating.
-- No. Then all three show the same thing and the reader learns one fact about you three times.
+- Each should, in less detail for the weaker projects so the strongest one stands out.
+- Each needs its own job, or every case study teaches the reader the same one fact.
+- Each should, since the whole process is what a reviewer wants to see you demonstrate.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, in less detail for the weaker projects. — Less detail about a stage that did not happen is still a claim that it did.
+Each should, in less detail for the weaker projects so the strongest one stands out. — Less detail about a stage that did not happen is still a claim that it did.
 
-Yes, since the process is what you are demonstrating. — It is demonstrated once. The second and third repetitions cost attention and add nothing.
+Each needs its own job, or every case study teaches the reader the same one fact. — Give each a job the others do not do, matched to its strongest evidence. It also removes the pressure to describe a stage a particular project never had.
 
-No. Then all three show the same thing and the reader learns one fact about you three times. — Give each a job the others do not do, matched to its strongest evidence. It also removes the pressure to describe a stage a particular project never had.
+Each should, since the whole process is what a reviewer wants to see you demonstrate. — It is demonstrated once. Repeating it costs attention and adds nothing.
 
 Improve: Assign each case study a job no other one does, in step 1. Record the change in step 5.
 
@@ -1965,18 +2026,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your case study is titled “A redesign of a repair shop’s customer communication”. Is that a promise?
 
-- Yes, it tells the reader what the case study covers.
-- Yes, though a subtitle would strengthen it.
-- No. It describes the project, so nothing can be delivered or failed, and it cannot decide what goes in.
+- It is a description: nothing in it can be delivered or failed by the case study.
+- It is a promise, though a subtitle naming the method would make it a stronger one.
+- It is a promise, because it tells the reader exactly what the case study covers.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, it tells the reader what the case study covers. — Covering is not promising. A reader cannot say afterwards whether it delivered.
+It is a description: nothing in it can be delivered or failed by the case study. — A promise says what the reader will have seen at the end. It also does the editing: everything not on the way to that came out, and the case study got two hundred words shorter.
 
-Yes, though a subtitle would strengthen it. — A subtitle usually adds another description.
+It is a promise, though a subtitle naming the method would make it a stronger one. — A subtitle usually adds another description.
 
-No. It describes the project, so nothing can be delivered or failed, and it cannot decide what goes in. — A promise says what the reader will have seen at the end. It also does the editing: everything not on the way to that came out, and the case study got two hundred words shorter.
+It is a promise, because it tells the reader exactly what the case study covers. — Covering is not promising. A reader cannot say afterwards whether it delivered.
 
 Improve: Rewrite any description as a checkable promise in step 2. Record the change in step 5.
 
@@ -1993,20 +2054,20 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Should the three case studies be the same length?
+Should your case studies be the same length?
 
-- Yes, for consistency across the portfolio.
-- No. Length follows the evidence, and equal lengths mean the thin project has been padded.
-- Yes, roughly, with some variation.
+- The same length, so the portfolio looks consistent and every project gets equal space.
+- Length should follow the evidence; equal lengths usually mean padding a thin project.
+- Roughly the same length, with a little variation where one project has more material.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, for consistency across the portfolio. — Consistency is a design value that should not be deciding content.
+The same length, so the portfolio looks consistent and every project gets equal space. — Consistency is a design value that should not be deciding content.
 
-No. Length follows the evidence, and equal lengths mean the thin project has been padded. — Four hundred honest words about a project with thin records reads better than nine hundred about the same records. Dropping it entirely is also available.
+Length should follow the evidence; equal lengths usually mean padding a thin project. — Four hundred honest words about a project with thin records reads better than nine hundred about the same records. Dropping it entirely is also available.
 
-Yes, roughly, with some variation. — Roughly equal still sets a target the thin project has to reach.
+Roughly the same length, with a little variation where one project has more material. — Roughly equal still sets a target the thin project has to reach.
 
 Improve: Plan lengths from the audit in step 4, and let them differ. Record the change in step 5.
 
@@ -2023,14 +2084,14 @@ Section: practice. Stable action: step-5-brief.
 
 What a reader learns from each case study that they did not learn from the previous one.
 
-- Read the three promises together.
+- Read the promises together.
 - If two overlap, change one job or drop a case study.
 
 **Start here:** Write the one new thing each case study adds, in one line each.
 
 **Enough:** No two lines say the same thing.
 
-**Repetition:** Three case studies teaching the same fact. Reviewers notice it immediately, and it makes the portfolio feel longer than it is.
+**Repetition:** Case studies teaching the same fact. Reviewers notice it immediately, and it makes the portfolio feel longer than it is.
 
 **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
 
@@ -2046,15 +2107,41 @@ Write your answer for “What a reader would learn from each that they did not l
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: You have two projects. A: a library’s room-booking redesign with strong research (five interviews, a synthesis with a contradiction kept) and no testing. B: a bakery pre-order form with weak research but two rounds of testing and a repair that failed the first time. You planned to write both as full 900-word process stories.
+
+**Task:** What job does each case study do, in what order, at what length, and what does each promise? Explain why.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Writes two full-process stories of equal length, padding the missing testing in A and the thin research in B.
+- Adequate: Gives A the research-to-decision job and B the iteration job, orders by strength, sets lengths by evidence, and writes a checkable promise for each.
+- Strong: As adequate, and states each project’s gap plainly rather than filling it, explains the order, and notes what a third project would need to add rather than repeat.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -2077,11 +2164,11 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: Deciding what each case study is for
-What I am trying to do: Assign each of the three projects a single job in the portfolio, and write the one-sentence promise each case study makes.
+What I am trying to do: Assign each project — two on the core path, three on the full library — a single job in the portfolio, and write the one-sentence promise each case study makes.
 
 Key idea or terms:
 A job: The one thing this case study is for. Matched to the project’s strongest evidence rather than to what the project was about.
-No other one does it: The test. Three case studies covering the same ground teach a reader one fact about you three times.
+No other one does it: The test. Case studies covering the same ground teach a reader one fact about you over and over.
 A promise: What this case study will show, in one sentence. A reader can decide afterwards whether it delivered.
 
 Supplied practice material (fictional or labelled practice, not my research):
@@ -2101,11 +2188,11 @@ When the activity is finished, tell me to return to the course answer called “
 <details>
 <summary>Optional hints and reference material</summary>
 
-- Compare the three jobs and reassign until none repeats another.
+- Compare the jobs and reassign until none repeats another.
 - Rewrite each promise as something a reader could verify.
 
 - R22: [NN/g: UX portfolio](https://www.nngroup.com/articles/ux-design-portfolios/) — Step 2: choosing three to five projects as detailed case studies. Purpose: Supports assigning one job per case study. Free article, no account; the site sells courses and reports that are not required. Verified 2026-09-06. US hiring context. Fallback: R23.
-- R23: [GitLab: Product Designer role](https://handbook.gitlab.com/job-description-library/product/product-designer/) — The responsibilities a designer is expected to cover. Purpose: Helps spread the three jobs across different responsibilities. Free reading, no account. Verified 2026-09-06. One employer's expectations; treat it as an example, not as the market. Fallback: R22.
+- R23: [GitLab: Product Designer role](https://handbook.gitlab.com/job-description-library/product/product-designer/) — The responsibilities a designer is expected to cover. Purpose: Helps spread the jobs across different responsibilities. Free reading, no account. Verified 2026-09-06. One employer's expectations; treat it as an example, not as the market. Fallback: R22.
 
 </details>
 <details>
@@ -2113,17 +2200,17 @@ When the activity is finished, tell me to return to the course answer called “
 
 **Each case study has a distinct job**
 
-Adequate evidence: Three jobs, none duplicated.
+Adequate evidence: One job per case study, none duplicated.
 
-0 — All three show the same thing.
+0 — Every case study shows the same thing.
 
 1 — Two overlap.
 
-2 — Three distinct jobs.
+2 — A distinct job for each case study.
 
 3 — As adequate, and each job matches that project's strongest evidence.
 
-Repair: Compare the three jobs and reassign until none repeats another. Recheck: The job assignments.
+Repair: Compare the jobs and reassign until none repeats another. Recheck: The job assignments.
 
 **Promises are single checkable sentences**
 
@@ -2182,8 +2269,8 @@ The progress bar counts required actions with saved work. It is not a score or p
 <details>
 <summary>Reading, video and deeper explanation</summary>
 
-- One job per case study is the discipline that makes three feel like a portfolio rather than an archive. If project one has the best research trail and project three has the only measurement, those are their jobs, and everything in each is selected to serve it.
-- The promise sentence is what the case study will demonstrate, written so it could be checked. “Shows that I can turn five conversations into a framed problem and a decision” is checkable; “shows my UX process” is not.
+- One job per case study is the discipline that makes two or three feel like a portfolio rather than an archive. If one project has the best research trail and another has the only measurement, those are their jobs, and everything in each is selected to serve it.
+- The promise sentence is what the case study will demonstrate, written so it could be checked. “Shows that I can turn three conversations into a framed problem and a decision” is checkable; “shows my UX process” is not.
 - Order matters because the skim is sequential and attention decays. The strongest case study goes first even if it is not the most recent, and the weakest may not belong in the portfolio at all.
 - Equal length is a mistake beginners make out of fairness. A project with a thin record deserves a shorter, more focused case study, and the shortness itself reads as judgement rather than as a gap.
 
@@ -2197,14 +2284,14 @@ Stable ID: m19-l04-v1. Core.
 
 A structure stops the case study becoming a chronology, which is the form most junior portfolios take and the one reviewers skip.
 
-Bring: The promise and audit for your strongest project.
+Bring: One project record and your claims.
 
 Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
-- One case study in five sections
+- One short case study from one project, in the template or five sections
 - Problem and outcome in the first two paragraphs
 - One decision explained in depth
-- A claim-to-artefact trace for the whole piece
+- A claim-to-artefact trace, with evidence tiers, for the whole piece
 
 ### Start here: in everyday words
 
@@ -2218,13 +2305,13 @@ A portfolio story shows what you did, why you chose it, what evidence supports i
 
 **Quick example.** Made-up example. Opening a case study, and opening it with the background. Two paragraphs on the repair trade, how independent shops work, and why the sector is under pressure. Then the project.
 
-The reader demonstrates and guides the task before asking for “The problem in the person’s words, with a count if you have one”.
+The reader demonstrates and guides the task before asking for “Where your copy of the case-study template is saved — or the Markdown file you are using instead”.
 
 ### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
-Write the first case study to a fixed structure — problem, evidence, decision, iteration, limits — with every claim traced to an artefact.
+Write a first, short case study from one project — the editable template supplied — to a fixed argument: problem, evidence, decision, iteration, limits, with every claim traced to an artefact and its evidence tier.
 
 
 ### Five sections: problem, evidence, decision, iteration, limits
@@ -2241,11 +2328,11 @@ Section: learn. Stable action: learn-2.
 Lead with the outcome and the problem, not with the process.
 
 
-### Every claim names its artefact
+### Every claim names its artefact and that artefact's evidence tier
 
 Section: learn. Stable action: learn-3.
 
-Every claim names its artefact.
+Every claim names its artefact and that artefact's evidence tier.
 
 
 ### Show one decision in depth rather than every decision briefly
@@ -2268,7 +2355,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The first case study runs: problem, in the shop owner's words with the count of interrupted calls; evidence, five participants, what was found, what contradicted, and the exclusions; decision, one framed problem and the not-building list, with the appetite; iteration, the wording repair that failed for one of two re-testers and what that meant; limits, the study and design limits page in short form. Nineteen claims, each with a named artefact. One claim about the owner's time saved was cut because nothing measured it.
+- A first case study from one project, written in the template: problem, in the shop owner's words with his estimate of six to ten progress calls a day, marked as his estimate; evidence, three research participants, what was found, what contradicted, and the exclusions; decision, one framed problem and the not-building list, with the appetite; iteration, the wording repair that failed for one of two re-testers, from a page that was a demonstration with made-up jobs; limits, in short form. Nineteen claims, each with a named artefact and its tier. One claim about the owner's time saved was cut because nothing measured it.
 
 
 ### Choose where you will do the work
@@ -2280,14 +2367,24 @@ Recommended route: Fill the worksheet in this app, step by step. It saves as you
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
 
 
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Starter files for this lesson: starters/m19/case-study-template.html (an editable, single-file case-study template) and starters/m19/annotated-example.html (a short, clearly fictional case study whose margin notes explain why each part is credible, with one weak claim and its repair).
+- Open the template from the course site, save it into your project folder, and edit it in any text editor such as Notepad, then open it in your browser to see it. Your copy stays on your computer; nothing is uploaded.
+
+
 ### Draft the problem
 
 Section: practice-plan. Stable action: step-1-brief.
 
 The problem in the person’s words with a count, and the outcome, both in the opening.
 
-- Write the problem in the person's words, with a count if you have one.
-- State the outcome in the same opening.
+- Open the case-study template and save a copy in your project folder, or start a Markdown file.
+- Write the problem in the person's words, with a count if you have one, and the outcome in the same opening.
 
 **Start here:** Write the outcome sentence first, bounded by what you measured, then the problem above it.
 
@@ -2310,7 +2407,7 @@ Made-up example. Opening a case study, and opening it with the background.
 
 **What the reviewer sees in ninety seconds:** Two paragraphs of sector background, and no indication that anything was found, decided or changed.
 
-**What the opening became:** The owner’s sentence — “I spend half my day telling people their laptop is not ready” — then eleven calls a day about progress, then seven over a matched period afterwards.
+**What the opening became:** The owner’s sentence — “I spend half my day telling people their laptop is not ready” — then eleven calls about progress in five working days, then seven over a matched five days after the slip wording changed.
 
 **Where the background went:** One clause in the second paragraph. Nobody has asked for the rest of it.
 
@@ -2321,13 +2418,24 @@ Made-up example. Opening a case study, and opening it with the background.
 **Unknown:** Still unknown: whether the quotation is representative of the trade or of one owner. It is quoted as one owner’s sentence, which is all it can be.
 
 
-### The problem in the person’s words, with a count if you have one
+### Where your copy of the case-study template is saved — or the Markdown file you are using instead
+
+Section: practice-plan. Stable action: write-template-copy.
+
+Open starters/m19/case-study-template.html from the course site, save it into your project folder, and edit it in any text editor. The annotated example sits beside it.
+
+**Answer:** Where your copy of the case-study template is saved — or the Markdown file you are using instead
+
+Open starters/m19/case-study-template.html from the course site, save it into your project folder, and edit it in any text editor. The annotated example sits beside it.
+
+
+### The problem close to the person’s words, without their name, with a count if you have one
 
 Section: practice-plan. Stable action: write-problem-words.
 
-Write your answer for “The problem in the person’s words, with a count if you have one”. Use the task instructions below to decide what to include.
+Write your answer for “The problem close to the person’s words, without their name, with a count if you have one”. Use the task instructions below to decide what to include.
 
-**Answer:** The problem in the person’s words, with a count if you have one
+**Answer:** The problem close to the person’s words, without their name, with a count if you have one
 
 
 
@@ -2350,7 +2458,7 @@ Section: practice-plan. Stable action: step-2-brief.
 Participant counts, key findings, one contradiction, and the exclusions inside the evidence section.
 
 - Give participant counts, the key findings and one contradiction.
-- Include the exclusions.
+- Include the exclusions, and label the evidence tier.
 
 **Start here:** Copy the counts from your synthesis rather than rewriting them from memory.
 
@@ -2361,15 +2469,26 @@ Participant counts, key findings, one contradiction, and the exclusions inside t
 **Exclusions in place:** Beside the findings rather than in a limitations section at the end, so they bound what the reader is reading now.
 
 
-### Participant counts, the key findings, and one contradiction
+### Participant counts, the key findings, and one contradiction, summarised without names
 
 Section: practice-plan. Stable action: write-counts-findings.
 
-Write your answer for “Participant counts, the key findings, and one contradiction”. Use the task instructions below to decide what to include.
+Write your answer for “Participant counts, the key findings, and one contradiction, summarised without names”. Use the task instructions below to decide what to include.
 
-**Answer:** Participant counts, the key findings, and one contradiction
+**Answer:** Participant counts, the key findings, and one contradiction, summarised without names
 
 
+
+
+### The evidence tier of each artefact you cite: real participant research, self-pilot, simulation or supplied practice
+
+Section: practice-plan. Stable action: write-evidence-tiers.
+
+Say it where the claim is made. A demonstration with made-up records is labelled as one and never shown as real use.
+
+**Answer:** The evidence tier of each artefact you cite: real participant research, self-pilot, simulation or supplied practice
+
+Say it where the claim is made. A demonstration with made-up records is labelled as one and never shown as real use.
 
 
 ### The exclusions, included here rather than at the end
@@ -2459,7 +2578,7 @@ A change with its prediction and re-test result, and the limits in short form.
 
 **Enough:** The re-test result includes what did not work.
 
-**The prediction:** Written before the change, as Module 18 required. In a case study it is what makes the re-test a test rather than a description.
+**The prediction:** Written before the change, as Module 10 required. In a case study it is what makes the re-test a test rather than a description.
 
 **Limits in short form:** The two or three that bound this case study’s claims, with a pointer to the full page. Not optional and not the whole page.
 
@@ -2494,24 +2613,24 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Should the case study follow the order you did the work in?
 
-- Yes, with a summary at the top.
-- No. The work’s order was messy and full of dead ends, and a reader needs the reasoning arranged for understanding.
-- Yes, since it shows the process honestly.
+- Follow the real order, because telling it as it happened is the honest way to show process.
+- Arrange it for understanding: the real order was messy and full of dead ends.
+- Follow the real order, saving the outcome for the end so the story builds towards it.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, with a summary at the top. — That is the structure this lesson asks for, described as a compromise.
+Follow the real order, because telling it as it happened is the honest way to show process. — Honesty is about what you claim rather than about the sequence. The dead ends stay where they teach something.
 
-No. The work’s order was messy and full of dead ends, and a reader needs the reasoning arranged for understanding. — A chronology spends its first four paragraphs on setup, which is exactly the part a skim reaches. Problem and outcome first, then evidence, decision, iteration and limits.
+Arrange it for understanding: the real order was messy and full of dead ends. — A chronology spends its first four paragraphs on setup, which is exactly the part a skim reaches. Problem and outcome first, then evidence, decision, iteration and limits, with the dead ends kept where they teach.
 
-Yes, since it shows the process honestly. — Honesty is about what you claim rather than about the sequence. The dead ends stay where they teach something.
+Follow the real order, saving the outcome for the end so the story builds towards it. — A reviewer who stops after two paragraphs then never learns what happened, and the outcome is what they came to find.
 
 Improve: Put the problem and the outcome in the first two paragraphs in step 1. Record the change in step 5.
 
 Check again: Somebody reading two paragraphs knows the problem and what happened.
 
-Answers to revisit: problem-words, outcome-stated, improvement-made
+Answers to revisit: template-copy, problem-words, outcome-stated, improvement-made
 
 </details>
 
@@ -2524,18 +2643,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You have six decisions worth describing. How many go in depth?
 
-- Two or three, to show consistency.
-- One. Six paragraphs produce six conclusions and no reasoning, which is the thing a reviewer is trying to see.
-- All six, briefly, so the range is visible.
+- All six, a paragraph each, so a reviewer can see the full range of your judgement.
+- One, in depth; the other five get a line each, so the reasoning has room.
+- Two or three, so a reviewer can see that your reasoning is consistent across them.
 
 <details>
 <summary>After your attempt</summary>
 
-Two or three, to show consistency. — Consistency across three shallow accounts is still no reasoning.
+All six, a paragraph each, so a reviewer can see the full range of your judgement. — Range across decisions is not what the section shows. How you think is, and brevity hides it.
 
-One. Six paragraphs produce six conclusions and no reasoning, which is the thing a reviewer is trying to see. — Options, evidence, trade-off and what you gave up, for one decision you can defend. The other five get a line each and a link to the not-building list.
+One, in depth; the other five get a line each, so the reasoning has room. — Six paragraphs produce six conclusions and no reasoning. Options, evidence, trade-off and what you gave up, for one decision you can defend, show how you think.
 
-All six, briefly, so the range is visible. — Range across decisions is not what the section shows. How you think is, and brevity hides it.
+Two or three, so a reviewer can see that your reasoning is consistent across them. — Consistency across three shallow accounts is still no reasoning.
 
 Improve: Cut to one decision in depth in step 3 and list the rest. Record the change in step 5.
 
@@ -2552,20 +2671,20 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Your case study says the page saved the owner several hours a week. What should happen to that sentence?
+Your case study says the page saved the owner several hours a week. Nothing measured hours. What should happen to that sentence?
 
-- Weaken it to a few hours a week.
-- Keep it with a caveat that it is an estimate.
-- Cut it. Nothing measured hours, and an unsupported quantity is the first thing a reviewer tests.
+- Cut it: nothing measured hours, and an unsupported quantity is tested first.
+- Keep it, with a note beside it saying that the number of hours is an estimate.
+- Weaken it to “a few hours a week”, which is a more modest and defensible figure.
 
 <details>
 <summary>After your attempt</summary>
 
-Weaken it to a few hours a week. — The arithmetic is invented at any size.
+Cut it: nothing measured hours, and an unsupported quantity is tested first. — The supported sentence already exists: calls about progress went from eleven to seven across matched periods after the slip wording changed, with the holiday named — and the page itself was a demonstration. An unmeasured quantity risks everything the measured one earns.
 
-Keep it with a caveat that it is an estimate. — A caveat under a number is the pattern Module 15 spent a lesson rejecting.
+Keep it, with a note beside it saying that the number of hours is an estimate. — A caveat under a number is the pattern Module 15 spent a lesson rejecting.
 
-Cut it. Nothing measured hours, and an unsupported quantity is the first thing a reviewer tests. — The supported sentence already exists: calls fell from eleven to seven across matched periods, with the holiday named. Adding the unmeasured one risks everything the measured one earns.
+Weaken it to “a few hours a week”, which is a more modest and defensible figure. — The arithmetic is invented at any size.
 
 Improve: Trace every claim in step 5 and cut anything with no artefact. Record the change.
 
@@ -2582,7 +2701,7 @@ Section: practice. Stable action: step-5-brief.
 
 Every assertion traced to an artefact, with anything unsupported cut or weakened.
 
-- List every assertion and name its artefact.
+- List every assertion and name its artefact and evidence tier.
 - Weaken or cut anything unsupported.
 
 **Start here:** Go sentence by sentence and write the file name beside each assertion.
@@ -2600,7 +2719,7 @@ Section: practice. Stable action: step-5-sort-1.
 
 Six sentences from a made up case study about a repair-shop project. For each one, decide what should happen to it.
 
-Calls asking about progress fell from eleven to seven across matched five-day periods, one of which contained a public holiday.
+After the slip wording changed, calls asking about progress fell from eleven to seven across matched five-day periods, one of which contained a public holiday.
 
 - keep as written
 - weaken to what the evidence supports
@@ -2661,9 +2780,9 @@ Users wanted certainty rather than speed.
 <details>
 <summary>After your attempt</summary>
 
-keep as written — Users is five people, three of whom described certainty. The sentence generalises past the sample.
+keep as written — Users is two customers, both of whom described certainty, while the owner described speed. The sentence generalises past the sample.
 
-weaken to what the evidence supports — Three of the five people I spoke to described wanting certainty; the owner believed the problem was speed. Smaller, and it keeps the contradiction that made it interesting.
+weaken to what the evidence supports — Both customers I spoke to described wanting certainty; the owner believed the problem was speed. Smaller, and it keeps the contradiction that made it interesting.
 
 cut it — The finding is real and worth keeping in its true size.
 
@@ -2772,15 +2891,41 @@ Write your answer for “Anything you cut or weakened because nothing supported 
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: Your first case study, about a pottery studio’s kiln booking, opens with two paragraphs on the history of the studio. It describes seven design decisions in a paragraph each, says the redesign “made booking much easier for members”, and never mentions that the only re-test was run by you on your own.
+
+**Task:** What would you change in the opening, the decisions, that sentence and the testing description? Explain why.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps the history opening and the seven paragraphs, and leaves “much easier” standing because the design did improve.
+- Adequate: Opens with the problem and outcome, takes one decision in depth with the rest as a list, cuts or weakens “much easier” to what was measured, and labels the re-test a self-pilot.
+- Strong: As adequate, and traces every remaining claim to a named artefact with its tier, and states what the self-pilot cannot show compared with testing with members.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -2803,7 +2948,7 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: The case study skeleton
-What I am trying to do: Write the first case study to a fixed structure — problem, evidence, decision, iteration, limits — with every claim traced to an artefact.
+What I am trying to do: Write a first, short case study from one project — the editable template supplied — to a fixed argument: problem, evidence, decision, iteration, limits, with every claim traced to an artefact and its evidence tier.
 
 Key idea or terms:
 Leading with the problem and outcome: Both in the first two paragraphs. A reader skimming decides there whether to read the rest.
@@ -2816,12 +2961,12 @@ Made-up example. Opening a case study, and opening it with the background. Two p
 Activity: Act as a portfolio reader using only the supplied case. Ask what I did, why it mattered and which evidence proves the claim. Challenge one vague or exaggerated sentence.
 
 Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
-When the activity is finished, tell me to return to the course answer called “The problem in the person’s words, with a count if you have one” and write my own decision. Do not write that answer for me.
+When the activity is finished, tell me to return to the course answer called “Where your copy of the case-study template is saved — or the Markdown file you are using instead” and write my own decision. Do not write that answer for me.
 ```
 
-**Come back to the course:** Return to “The problem in the person’s words, with a count if you have one”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+**Come back to the course:** Return to “Where your copy of the case-study template is saved — or the Markdown file you are using instead”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The problem in the person’s words, with a count if you have one” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Where your copy of the case-study template is saved — or the Markdown file you are using instead” and write one sentence in your own words.
 
 </details>
 <details>
@@ -2879,9 +3024,9 @@ Adequate evidence: Options, evidence, trade-off and what was given up.
 
 Repair: Pick your strongest decision and write its alternatives and cost. Recheck: The decision section.
 
-**Every claim traces to an artefact**
+**Every claim traces to an artefact and its tier**
 
-Adequate evidence: A claim list with artefacts named.
+Adequate evidence: A claim list with artefacts and evidence tiers named.
 
 0 — No trace performed.
 
@@ -2903,14 +3048,15 @@ The progress bar counts required actions with saved work. It is not a score or p
 - The five sections are present and in order
 - Problem and outcome appear in the opening
 - One decision is explained in depth
-- Every claim traces to an artefact
+- Every claim traces to an artefact and its tier
 
 <details>
 <summary>Reading, video and deeper explanation</summary>
 
 - The five sections work because they answer the reviewer's questions in order: what was wrong, how do you know, what did you do about it, what happened when you tested it, and what does this not prove. A chronology answers none of them and asks the reader to do the work.
 - Leading with problem and outcome respects the skim. The reader who stops after two paragraphs should still know what the project was and what came of it; the reader who continues gets the reasoning.
-- Tracing claims to artefacts is the mechanical check from m18 applied to prose. Each assertion either has a file behind it or gets weakened. Doing it while writing is far easier than retrofitting it later.
+- Tracing claims to artefacts is a mechanical check applied to prose: each assertion either has a file behind it or gets weakened. Doing it while writing is far easier than retrofitting it later. Say each artefact's tier — real participant research, self-pilot, simulation or supplied practice — where the claim is made.
+- You do not need a portfolio tool. Open the editable case-study template supplied with this lesson (starters/m19/case-study-template.html on the course site), save a copy in your project folder, and edit it in any text editor; the annotated example beside it shows what credible sections look like, and one weak claim with its repair. The template's nine headings hold the five-part argument: problem and evidence in the first four, decision in the fifth and sixth, iteration in the seventh, outcome in the eighth, and limits in the last. Unfinished headings can stay as stated gaps.
 - Depth over breadth: one decision explained properly — the options, the evidence, the trade-off, the thing you gave up — teaches a reviewer more than eight decisions listed. It is also the part they will ask about in an interview, so choose one you can defend.
 
 [GOV.UK: sharing user research findings](https://www.gov.uk/service-manual/user-research/sharing-user-research-findings).
@@ -2923,11 +3069,11 @@ Stable ID: m19-l05-v1. Core.
 
 Role inflation is the most commonly detected dishonesty in portfolios, and the easiest to avoid.
 
-Bring: The three project records.
+Bring: At least one project record.
 
 Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
-- A category for each project: paid, course or self-directed
+- A category for each project you show — paid, course or self-directed — with practice material labelled
 - A statement of what you did and what others did
 - Contributors credited with permission
 - A draft checked for false plurals
@@ -2944,7 +3090,7 @@ A portfolio story shows what you did, why you chose it, what evidence supports i
 
 **Quick example.** Made-up example. Crediting somebody who helped, and crediting them without asking. That a developer friend built the working version, with his name, because leaving him out would have been the dishonest thing to do.
 
-The reader demonstrates and guides the task before asking for “For each project: paid, employment, course, or self-directed”.
+The reader demonstrates and guides the task before asking for “For each project you show: paid, employment, course, or self-directed — and whether it rests on supplied practice material”.
 
 ### What this lesson will help you do
 
@@ -2994,7 +3140,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Project three: self-directed practice, unpaid, conducted with the owner's agreement. I did the research, synthesis, design, build and testing. The owner arranged access to two customers and updated the page during the trial. A friend who writes software reviewed the HTML and corrected a date-handling bug — named with their permission. Two reviewers critiqued the work; one comment changed the wording. First person singular throughout, checked by searching the draft for “we”, which appeared four times and was wrong each time.
+- The repair-shop project: self-directed practice, unpaid, conducted with the owner's agreement. I did the research, synthesis, design, the demonstration build and the testing. The owner arranged access to two customers, kept the tally sheet in both counting weeks and changed how he wrote job slips. A friend who writes software reviewed the HTML and corrected a date-handling bug — credited by role, at their request. Two reviewers critiqued the work; one comment changed the wording. First person singular throughout, checked by searching the draft for “we”, which appeared four times and was wrong each time.
 
 
 ### Choose where you will do the work
@@ -3024,13 +3170,13 @@ Each project labelled paid, employment, course or self-directed, with the label 
 **Near the top:** Where a reader meets it before forming an impression. Found halfway down, it reads as a thing that was being avoided.
 
 
-### For each project: paid, employment, course, or self-directed
+### For each project you show: paid, employment, course, or self-directed — and whether it rests on supplied practice material
 
 Section: practice-plan. Stable action: write-categories.
 
-Write your answer for “For each project: paid, employment, course, or self-directed”. Use the task instructions below to decide what to include.
+Write your answer for “For each project you show: paid, employment, course, or self-directed — and whether it rests on supplied practice material”. Use the task instructions below to decide what to include.
 
-**Answer:** For each project: paid, employment, course, or self-directed
+**Answer:** For each project you show: paid, employment, course, or self-directed — and whether it rests on supplied practice material
 
 
 
@@ -3088,7 +3234,7 @@ Write your answer for “What anybody else did, including arranging access”. U
 <details>
 <summary>Example</summary>
 
-Example (made up): the owner arranged access to two customers and updated the page during the trial.
+Example (made up): the owner arranged access to two customers, kept the tally sheet in both counting weeks and changed how he wrote job slips.
 
 </details>
 
@@ -3134,24 +3280,24 @@ Made-up example. Crediting somebody who helped, and crediting them without askin
 **Unknown:** Still unknown: whether his concern was well founded. It is his to judge, and the portfolio follows what he said.
 
 
-### Who contributed, and how each is credited
+### Who contributed, by role, and how each is credited
 
 Section: practice-plan. Stable action: write-contributors.
 
 Ask permission before naming anybody. A role is the fallback and is perfectly good.
 
-**Answer:** Who contributed, and how each is credited
+**Answer:** Who contributed, by role, and how each is credited
 
 Ask permission before naming anybody. A role is the fallback and is perfectly good.
 
 
-### How you asked, and who said no
+### How you asked, and who said no, by role
 
 Section: practice-plan. Stable action: write-permission-asked.
 
-Write your answer for “How you asked, and who said no”. Use the task instructions below to decide what to include.
+Write your answer for “How you asked, and who said no, by role”. Use the task instructions below to decide what to include.
 
-**Answer:** How you asked, and who said no
+**Answer:** How you asked, and who said no, by role
 
 
 
@@ -3227,18 +3373,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Will saying a project was self-directed make it count for less?
 
-- Yes, slightly, and honesty is worth the cost.
-- Yes, which is why the framing should be left open.
-- Saying nothing and being asked is far worse. A labelled self-directed project with real evidence beats an ambiguously framed one.
+- It will, which is why the framing is better left open for the reader to interpret.
+- Saying nothing and then being asked about it costs far more than the label does.
+- It will, slightly, and that loss is simply the price of being honest about it.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, slightly, and honesty is worth the cost. — There is little cost. What reviewers discount is the portfolio where the role turned out to differ from the impression.
+It will, which is why the framing is better left open for the reader to interpret. — Left open means the reader assumes, and the correction arrives in an interview as a discovery.
 
-Yes, which is why the framing should be left open. — Left open means the reader assumes, and the correction arrives in an interview as a discovery.
+Saying nothing and then being asked about it costs far more than the label does. — Role inflation is the most commonly detected dishonesty in portfolios and the easiest to avoid. A labelled self-directed project with real evidence beats an ambiguously framed one, and the label costs one line.
 
-Saying nothing and being asked is far worse. A labelled self-directed project with real evidence beats an ambiguously framed one. — Role inflation is the most commonly detected dishonesty in portfolios and the easiest to avoid. The label at the top costs one line and removes the whole risk.
+It will, slightly, and that loss is simply the price of being honest about it. — There is little cost. What reviewers discount is the portfolio where the role turned out to differ from the impression.
 
 Improve: Put the category near the top of each case study in step 1. Record the change in step 5.
 
@@ -3255,20 +3401,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Your draft says “we interviewed five people”. What is that?
+You worked alone, and your draft says “we interviewed five people”. What is that?
 
-- A stylistic convention, and harmless.
-- A false plural. It asserts a team that does not exist, and it usually arrives by register rather than by intent.
-- Acceptable if the participants are counted as the we.
+- A harmless stylistic convention that most published case studies follow.
+- A false plural: it tells the reader a team existed when none did.
+- Acceptable, because the five participants can be counted as part of the we.
 
 <details>
 <summary>After your attempt</summary>
 
-A stylistic convention, and harmless. — The reader pictures a team. The convention is not neutral when there was nobody else.
+A harmless stylistic convention that most published case studies follow. — The reader pictures a team. The convention is not neutral when there was nobody else.
 
-A false plural. It asserts a team that does not exist, and it usually arrives by register rather than by intent. — Case studies sound like that because most describe team work. A thirty-second search for we, our and the team catches every instance, and re-reading does not.
+A false plural: it tells the reader a team existed when none did. — It usually arrives by register rather than intent, because case studies sound like that. A thirty-second search for we, our and the team catches every instance, and re-reading does not.
 
-Acceptable if the participants are counted as the we. — That reading occurs to nobody except the person defending the sentence.
+Acceptable, because the five participants can be counted as part of the we. — That reading occurs to nobody except the person defending the sentence.
 
 Improve: Search the drafts in step 4 and correct every false plural. Record the change in step 5.
 
@@ -3287,18 +3433,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your case study says you worked with a developer to build the prototype. A friend reviewed your HTML and fixed one bug. Is that acceptable?
 
-- Yes, since there genuinely was a developer involved.
-- Yes, if the detail is given later.
-- No. It is technically true and implies collaboration through the build, which is the hardest kind of inflation to defend.
+- It is fine, since there genuinely was a developer involved in the prototype.
+- It is fine, as long as the full detail of who did what is given further down.
+- It inflates the role: technically true, it implies help throughout the build.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, since there genuinely was a developer involved. — Involved and worked with are different scales, and the reader takes the larger one.
+It is fine, since there genuinely was a developer involved in the prototype. — Involved and worked with are different scales, and the reader takes the larger one.
 
-Yes, if the detail is given later. — The impression is formed at the sentence, and the detail arrives as a correction.
+It is fine, as long as the full detail of who did what is given further down. — The impression is formed at the sentence, and the detail arrives as a correction.
 
-No. It is technically true and implies collaboration through the build, which is the hardest kind of inflation to defend. — The accurate version — a friend who writes software reviewed my code and corrected a date-handling bug — credits him properly and survives any follow-up question.
+It inflates the role: technically true, it implies help throughout the build. — The accurate version — a friend who writes software reviewed my code and corrected a date-handling bug — credits him properly and survives any follow-up question.
 
 Improve: Weaken any technically-true statement in step 5 to what actually happened. Record the change.
 
@@ -3437,7 +3583,7 @@ Section: practice. Stable action: step-5-sort-5.
 
 Six role statements from a made up self-directed project. For each one, decide what it does.
 
-The shop owner arranged access to two customers and updated the page during the trial.
+The shop owner arranged access to two customers and kept the tally sheet in both counting weeks.
 
 - accurate
 - technically true and reads as more
@@ -3505,15 +3651,41 @@ Write your answer for “What you weakened as a result”. Use the task instruct
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: Your case study about a café’s loyalty card says: “We ran a research programme with stakeholders and led the design of a new loyalty system.” In fact you worked alone on a course project, interviewed the owner and two regulars, and the owner’s nephew, a developer, fixed one layout bug.
+
+**Task:** Rewrite the role statement accurately and say how you would credit each person. Explain your choices.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps “we” and “led”, or credits the nephew by name without asking him.
+- Adequate: States it was a solo course project, uses “I”, says three people were interviewed, credits the nephew’s single fix accurately, by role unless he agrees to be named.
+- Strong: As adequate, and puts the category at the top, removes “stakeholders” and “programme” as borrowed scale, and checks the statement against the project record.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -3549,12 +3721,12 @@ Made-up example. Crediting somebody who helped, and crediting them without askin
 Activity: Act as a portfolio reader using only the supplied case. Ask what I did, why it mattered and which evidence proves the claim. Challenge one vague or exaggerated sentence.
 
 Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
-When the activity is finished, tell me to return to the course answer called “For each project: paid, employment, course, or self-directed” and write my own decision. Do not write that answer for me.
+When the activity is finished, tell me to return to the course answer called “For each project you show: paid, employment, course, or self-directed — and whether it rests on supplied practice material” and write my own decision. Do not write that answer for me.
 ```
 
-**Come back to the course:** Return to “For each project: paid, employment, course, or self-directed”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+**Come back to the course:** Return to “For each project you show: paid, employment, course, or self-directed — and whether it rests on supplied practice material”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “For each project: paid, employment, course, or self-directed” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “For each project you show: paid, employment, course, or self-directed — and whether it rests on supplied practice material” and write one sentence in your own words.
 
 </details>
 <details>
@@ -3642,9 +3814,9 @@ The progress bar counts required actions with saved work. It is not a score or p
 <summary>Reading, video and deeper explanation</summary>
 
 - The category comes first: paid client work, employment, course exercise or self-directed practice. Reviewers ask this within the first two questions, and having it already on the page converts a suspicious question into a settled fact.
-- Naming what others did protects you. If the shop owner updated the page, if a friend who writes code helped with the timing logic, if a reviewer's critique produced a change, say so. It costs you nothing and its absence, discovered later, costs everything.
+- Naming what others did protects you. If the shop owner kept the tally sheet, if a friend who writes code helped with the timing logic, if a reviewer's critique produced a change, say so. It costs you nothing and its absence, discovered later, costs everything.
 - The grammatical tell is “we”. Solo projects written in the first person plural read as team projects, and reviewers have learned to probe it. If you were alone, write “I”; if there were two of you, say so and say who did what.
-- Self-directed work is not a lesser category. A project run alone, with real participants and honest limits, demonstrates more initiative than a team project where your contribution was two screens. The only thing that damages it is presenting it as something else.
+- Self-directed work is not a lesser category. A project run alone, with honest limits, demonstrates more initiative than a team project where your contribution was two screens — and so does a course project on supplied practice material, labelled as practice. The only thing that damages either is presenting it as something else.
 
 [GitLab: Product Designer role](https://handbook.gitlab.com/job-description-library/product/product-designer/).
 
@@ -3727,7 +3899,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The consent script said notes would be used for a personal learning project and could be shown in a portfolio, which covered publication for two projects but not the first, where the wording stopped at the project. For the first project the research is described rather than shown. Participants appear as owner, customer A, B and C. Two quotations were trimmed to remove a street name and a phone model that identified an individual. The status page screenshot was recreated with an invented job number and the label “recreated with synthetic data; timings and job number are invented, layout unchanged”.
+- The consent script said notes would be used for a personal learning project and could be shown in a portfolio, which covered publication for the independent project but not Project 1, where the wording stopped at the project. For Project 1 the research is described rather than shown. In the repair-shop case study, participants appear as the owner, customer A and customer B, and testers as outside testers 1 to 3. Two quotations were trimmed to remove a street name and a phone model that identified an individual. The status-page screenshots needed no recreation — the page only ever held made-up jobs — and carry the label “demonstration with made-up records; never in real use”. A photograph of a real job slip was recreated with invented details and labelled as such.
 
 
 ### Choose where you will do the work
@@ -3833,7 +4005,7 @@ Write your answer for “How participants appear”. Use the task instructions b
 <details>
 <summary>Example</summary>
 
-Example (made up): the owner, customer A, customer B, customer C.
+Example (made up): the owner, customer A, customer B; outside testers 1 to 3.
 
 </details>
 
@@ -3884,19 +4056,19 @@ Section: practice-plan. Stable action: step-3-demo.
 
 Made-up example. Preparing research images for a portfolio, and relying on anonymity.
 
-**What I planned to show:** A photograph of the workbench with the job sheet on it, and a screenshot of the status page. No names visible in either.
+**What I planned to show:** A photograph of the workbench with the job sheet on it, and a photograph of a real job slip with the new window wording. No names visible in either at a glance.
 
 **What I told myself:** That both were anonymous, so both were fine. Nothing in the frame said who anybody was.
 
 **What the photograph actually contained:** Three other customers’ tickets, a shop interior anybody local would recognise, and a repair of a kind that identifies the customer to anybody who knows them.
 
-**What the screenshot contained:** A real job number, which reaches a real repair belonging to a real person on a page anybody can open.
+**What the slip photograph contained:** A customer’s first name in the corner and the last digits of a phone number — enough for anybody who knows them.
 
-**What I did:** Redrew the job sheet by hand with invented entries. Recreated the screenshot with an invented number and timings, labelled as recreated with synthetic data, layout unchanged. Both show the design and neither exposes anybody.
+**What I did:** Redrew the job sheet by hand with invented entries. Recreated the slip with invented details, labelled as recreated, wording and layout unchanged. Both show the design and neither exposes anybody.
 
 **Wrong turn:** The wrong turn is treating anonymity as the whole test, because no names appear and the frame looks safe. Consent for this use is a separate requirement, and a recognisable place fails both without a name being present.
 
-**Trade-off:** A recreated screenshot is one step removed from the real thing, and a sceptical reader might wonder whether the real one existed. The label is what answers that.
+**Trade-off:** A recreated slip is one step removed from the real thing, and a sceptical reader might wonder whether the real one existed. The label is what answers that.
 
 **Unknown:** Still unknown: whether the shop interior is as recognisable as I think. It is a small town, which is the reason to redraw rather than to judge.
 
@@ -3925,7 +4097,7 @@ Write your answer for “The label on anything recreated”. Use the task instru
 <details>
 <summary>Example</summary>
 
-Example (made up): recreated with synthetic data; the job number and timings are invented, the layout is unchanged.
+Example (made up): recreated with invented details; the wording and layout are unchanged.
 
 </details>
 
@@ -3965,18 +4137,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The material is anonymous. Is it fine to publish?
 
-- Anonymity is one requirement. Consent for this use is another, and a photograph of an identifiable place fails both without a name appearing.
-- Yes, if no names or faces appear.
-- Yes, for research material that was always going to be shown.
+- It is fine, provided no names or faces appear anywhere in the material.
+- It is fine, if the research material was always going to be shown somewhere.
+- Anonymity is one test; consent to publish is another, and both must pass.
 
 <details>
 <summary>After your attempt</summary>
 
-Anonymity is one requirement. Consent for this use is another, and a photograph of an identifiable place fails both without a name appearing. — A portfolio is publication, and consent taken for research does not automatically cover it. A recognisable shop interior with other customers’ property in it is identifying regardless of names.
+It is fine, provided no names or faces appear anywhere in the material. — A street name, an unusual repair or a recognisable interior identifies people to anybody who knows them. Names removed does not mean anonymous.
 
-Yes, if no names or faces appear. — A street name, an unusual repair or a recognisable interior identifies people to anybody who knows them.
+It is fine, if the research material was always going to be shown somewhere. — What was always going to be shown is decided by what you told people, which is worth reading again.
 
-Yes, for research material that was always going to be shown. — What was always going to be shown is decided by what you told people, which is worth reading again.
+Anonymity is one test; consent to publish is another, and both must pass. — A portfolio is publication, and consent taken for research does not automatically cover it. A recognisable shop interior with other customers’ property in it is identifying regardless of names.
 
 Improve: Copy the actual consent wording into step 1 and mark which projects it covers. Record the change in step 5.
 
@@ -3993,20 +4165,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Your screenshot shows a real job number. What is the best answer?
+A photograph of a real job slip shows a customer’s name and phone number. What is the best answer?
 
-- Describe the page instead.
-- Recreate it with an invented number and timings, labelled as recreated with synthetic data and the layout unchanged.
-- Blur the number and show the rest.
+- Blur the name and number, and show the rest of the photograph as it is.
+- Leave the slip out and describe the new wording in a sentence instead.
+- Recreate the slip with invented details and label it as a recreation.
 
 <details>
 <summary>After your attempt</summary>
 
-Describe the page instead. — That gives up showing a design you are entitled to show.
+Blur the name and number, and show the rest of the photograph as it is. — Workable, and blurring often leaves enough to recognise somebody; a recreation is cleaner and lets you choose content that illustrates the point.
 
-Recreate it with an invented number and timings, labelled as recreated with synthetic data and the layout unchanged. — The design is worth showing and the data is not. The label is what stops a recreation being a screenshot of something that never existed.
+Leave the slip out and describe the new wording in a sentence instead. — That gives up showing a design you are entitled to show once it is recreated.
 
-Blur the number and show the rest. — Workable, and a recreation is cleaner and lets you choose content that illustrates the point.
+Recreate the slip with invented details and label it as a recreation. — The design is worth showing and the data is not. The label — invented details, wording and layout unchanged — is what stops a recreation being a picture of something that never existed.
 
 Improve: Label every recreation in step 3 with what is invented and what is not. Record the change in step 5.
 
@@ -4025,18 +4197,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 One project’s consent stopped at the project and did not mention a portfolio. What are your options?
 
-- Show it anonymised, since anonymity was the point of the promise.
-- Leave the project out of the portfolio entirely.
+- Leave the whole project out of the portfolio, since none of it can be shown.
 - Ask again for permission, or describe the research rather than showing the material.
+- Show it anonymised, since keeping people anonymous was the point of the promise.
 
 <details>
 <summary>After your attempt</summary>
 
-Show it anonymised, since anonymity was the point of the promise. — The promise was about where the material goes rather than only about names.
-
-Leave the project out of the portfolio entirely. — Available, and usually more than necessary: the design work and the reasoning can be shown even where the research material cannot.
+Leave the whole project out of the portfolio, since none of it can be shown. — Available, and usually more than necessary: the design work and the reasoning can be shown even where the research material cannot.
 
 Ask again for permission, or describe the research rather than showing the material. — Asking takes a minute and is available more often than people try. Where it is not, describing is weaker evidence and it is honest, and the case study says its research is described rather than shown.
+
+Show it anonymised, since keeping people anonymous was the point of the promise. — The promise was about where the material goes rather than only about names.
 
 Improve: Write who you asked and what they said in step 5, or what you will describe instead. Record the change.
 
@@ -4175,7 +4347,7 @@ Section: practice. Stable action: step-5-sort-5.
 
 Six items from a made up portfolio, where one project’s consent mentioned a portfolio and another’s stopped at the project. For each one, decide what to do.
 
-A screenshot of the status page showing a real job number.
+A photograph of a real job slip showing a customer’s name and phone number.
 
 - show it
 - recreate or trim it
@@ -4184,11 +4356,11 @@ A screenshot of the status page showing a real job number.
 <details>
 <summary>After your attempt</summary>
 
-show it — The number reaches a real repair belonging to a real person.
+show it — The name and number belong to a real customer who agreed to nothing.
 
-recreate or trim it — Recreate with an invented number and timings, labelled, layout unchanged. The design is shown and nobody is exposed.
+recreate or trim it — Recreate it with invented details, labelled recreated, wording and layout unchanged. The design is shown and nobody is exposed.
 
-describe it instead — The design is worth showing and can be shown safely.
+describe it instead — The wording is worth showing and can be shown safely.
 
 Now decide each of your own items, and send one message asking about the ones on the edge.
 
@@ -4221,26 +4393,52 @@ Now decide each of your own items, and send one message asking about the ones on
 </details>
 
 
-### Anybody you asked again for permission to publish, and what they said
+### Anybody you asked again for permission to publish, by role, and what they said
 
 Section: practice. Stable action: write-asked-again.
 
 Often the simplest fix. A short message, and either you may show it or you describe it.
 
-**Answer:** Anybody you asked again for permission to publish, and what they said
+**Answer:** Anybody you asked again for permission to publish, by role, and what they said
 
 Often the simplest fix. A short message, and either you may show it or you describe it.
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: For a case study about a small gym’s class timetable you have a member’s quotation that mentions her street and her job as the only woman electrician in town, consent wording that said “notes will be used for this project”, a photograph of the reception desk with the sign-up sheet visible, and a written note from the gym owner saying you may quote her.
+
+**Task:** For each item decide whether to show it, trim or recreate it, or describe it instead — and say why.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Shows everything because no names appear, treating anonymity as the whole test.
+- Adequate: Describes rather than shows the member material because consent stopped at the project, recreates or leaves out the sign-up sheet, and quotes the owner by role under her written permission.
+- Strong: As adequate, and notes that the electrician detail identifies her even trimmed, suggests asking the member again with exactly what would be shown, and labels every recreation.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -4371,7 +4569,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 - Consent to take part in research is not consent to appear in a public portfolio, and the distinction is real rather than pedantic. Read what you told participants. If it said the notes would be used for the project, publishing a photograph of their shop goes beyond it, and the remedy is to ask them now.
 - Anonymising well means removing what identifies while keeping what evidences. “Customer B, collecting a repaired phone, said she had already rung twice” is anonymous and specific. “A user expressed frustration” is anonymous and useless.
 - Images are the common failure. A photograph of a workshop shows other people's property and possibly other people; a screenshot of a real record shows real names and numbers. Recreate with clearly synthetic data, label it as recreated, and say what was changed.
-- Where consent does not cover publication and cannot be obtained, describe the evidence rather than showing it. “Five sessions, notes retained privately” is honest and still supports a claim; publishing without cover is a breach whatever it adds.
+- Where consent does not cover publication and cannot be obtained, describe the evidence rather than showing it. “Five sessions, notes retained privately” is honest and still supports a claim; publishing without cover is a breach whatever it adds. Names removed does not mean anonymous: a job, a street or a turn of phrase can identify somebody to anybody who knows them.
 
 [GOV.UK: managing research data and participant privacy](https://www.gov.uk/service-manual/user-research/managing-user-research-data-participant-privacy).
 
@@ -4383,7 +4581,7 @@ Stable ID: m19-l07-v1. Core.
 
 Images are the fastest way to communicate and the easiest way to imply something you have not shown.
 
-Bring: The three case studies in draft.
+Bring: Your case studies in draft.
 
 Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
@@ -4410,7 +4608,7 @@ The reader demonstrates and guides the task before asking for “Candidate image
 
 Section: learn. Stable action: welcome.
 
-Choose and caption the images for all three case studies so each one carries an argument rather than decorating the page.
+Choose and caption the images for every case study — two on the core path, three on the full library — so each one carries an argument rather than decorating the page.
 
 
 ### Every image needs a reason to be there and a caption that says it
@@ -4454,7 +4652,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Project three keeps six images: the paper flow with the failure branches; a photograph of the synthesis cards, recreated because the originals had a participant's name; the exception table; the status page before and after the wording repair, captioned with the re-test result including the person who still read it as a promise; and the handover card. Twelve other images were cut, including four screens that showed nothing the flow did not. Every caption states an argument, and every image has alternative text written to carry the same information.
+- The repair-shop case study keeps six images: the paper flow with the failure branches; a photograph of the synthesis cards, recreated because the originals had a participant's name; the exception table; the status page before and after the wording repair, captioned with the re-test result including the person who still read it as a promise, and labelled a demonstration with made-up jobs; and the handover card. Twelve other images were cut, including four screens that showed nothing the flow did not. Every caption states an argument, and every image has alternative text written to carry the same information.
 
 
 ### Choose where you will do the work
@@ -4664,18 +4862,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Do more images make a case study more convincing?
 
-- Yes, if they are well laid out.
-- Yes, since images communicate faster than text.
-- Unargued images make it longer. One before-and-after pair captioned with the test result does more than twelve screens.
+- One captioned before-and-after pair does more than a dozen unargued screens.
+- More images help, as long as they are laid out neatly in a consistent grid.
+- More images help, since pictures communicate faster than paragraphs of text.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, if they are well laid out. — Layout makes a gallery neater rather than making it argue.
+One captioned before-and-after pair does more than a dozen unargued screens. — Unargued images make it longer. Every image needs a reason and a caption that states it; eight finished screens show nothing the flow does not, and polish everywhere reads as a rebuild.
 
-Yes, since images communicate faster than text. — They do, which is why an unargued one communicates decoration quickly.
+More images help, as long as they are laid out neatly in a consistent grid. — Layout makes a gallery neater rather than making it argue.
 
-Unargued images make it longer. One before-and-after pair captioned with the test result does more than twelve screens. — Every image needs a reason and a caption that states it. Eight finished screens show nothing the flow does not, and polish everywhere reads as a rebuild.
+More images help, since pictures communicate faster than paragraphs of text. — They do, which is why an unargued one communicates decoration quickly.
 
 Improve: Cut every image whose argument you cannot state, in step 1. Record the change in step 5.
 
@@ -4694,18 +4892,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your caption says the page worked well for customers, under a screenshot. What is wrong?
 
-- A screenshot proves a screen existed. Whether it worked is in the test record, and the caption is claiming what the image cannot show.
-- It should say which customers.
-- Nothing, if the testing supports it.
+- Nothing is wrong, as long as somewhere the testing does support the claim.
+- It should say which customers, so the reader knows whose experience it was.
+- The caption claims a result that only the test record, not the image, can show.
 
 <details>
 <summary>After your attempt</summary>
 
-A screenshot proves a screen existed. Whether it worked is in the test record, and the caption is claiming what the image cannot show. — The honest caption names the record: two of three completed the task before the change, one of three after. The image shows the screen and the record carries the result.
+Nothing is wrong, as long as somewhere the testing does support the claim. — Then the caption should say what the testing found, which is a different and checkable sentence.
 
-It should say which customers. — Closer, and the deeper problem is that the image is being asked to carry a result.
+It should say which customers, so the reader knows whose experience it was. — Closer, and the deeper problem is that the image is being asked to carry a result.
 
-Nothing, if the testing supports it. — Then the caption should say what the testing found, which is a different and checkable sentence.
+The caption claims a result that only the test record, not the image, can show. — A screenshot proves a screen existed. The honest caption names the record and what it found — and if the page was a demonstration with made-up records, no customer used it at all.
 
 Improve: Rewrite any caption that claims a result the image cannot show, in step 4. Record the change in step 5.
 
@@ -4724,18 +4922,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Every image in your case study is a finished screen. What does that suggest to a reviewer?
 
-- That you have strong visual craft.
-- That the work may have been rebuilt for the portfolio, because real projects leave a trail of rough material.
-- Nothing in particular; final work is what portfolios show.
+- That it may have been rebuilt for the portfolio, since real work leaves rough traces.
+- That you have strong visual craft and care about how the finished work looks.
+- Nothing in particular, since finished work is what most portfolios show anyway.
 
 <details>
 <summary>After your attempt</summary>
 
-That you have strong visual craft. — Visible in two screens. Twelve says nothing further and raises the question about the trail.
+That it may have been rebuilt for the portfolio, since real work leaves rough traces. — A paper flow with failure branches, recreated synthesis cards and an exception table show the thinking happening. Polish everywhere shows outputs with nothing behind them.
 
-That the work may have been rebuilt for the portfolio, because real projects leave a trail of rough material. — A paper flow with failure branches, recreated synthesis cards and an exception table show the thinking happening. Polish everywhere shows outputs with nothing behind them.
+That you have strong visual craft and care about how the finished work looks. — Visible in two screens. Twelve says nothing further and raises the question about the trail.
 
-Nothing in particular; final work is what portfolios show. — It is what galleries show. A case study is arguing something.
+Nothing in particular, since finished work is what most portfolios show anyway. — It is what galleries show. A case study is arguing something.
 
 Improve: Add at least one piece of rough work in step 3, recreated if it shows participant detail. Record the change in step 5.
 
@@ -4776,7 +4974,7 @@ Made-up example. Writing alternative text for case-study images, and describing 
 
 **What a reader with images off got:** That there is a screenshot of a page with three things on it. The argument in the caption, the change, and the reason are all in the picture and none of them are in the text.
 
-**What the alternative text became:** Second version: the estimated collection window is the largest text on the page, above the status, which was the change tested after two of three people read status as a promise.
+**What the alternative text became:** Second version: the estimated collection window is the largest text on the page, above the status, which was the change tested after a tester read a time as a promise.
 
 **What the test was:** Reading the case study with images disabled in the browser. Four of the eleven pieces of alternative text carried nothing, and all four were describing rather than arguing.
 
@@ -4793,7 +4991,7 @@ Section: practice. Stable action: step-5-sort-1.
 
 Six images and captions from a made up case study. For each one, decide whether it earns its place.
 
-The status page before and after the wording change, captioned with the prediction and the re-test result including the person who still read it as a promise.
+The status page before and after the wording change — a demonstration with made-up jobs, labelled so — captioned with the prediction and the re-test result including the person who still read it as a promise.
 
 - earns its place
 - needs a caption that argues
@@ -4897,7 +5095,7 @@ Section: practice. Stable action: step-5-sort-5.
 
 Six images and captions from a made up case study. For each one, decide whether it earns its place.
 
-A recreated photograph of the synthesis cards, captioned “three of five customers described wanting certainty; the owner believed the problem was speed”.
+A recreated photograph of the synthesis cards, captioned “both customers described wanting certainty; the owner believed the problem was speed”.
 
 - earns its place
 - needs a caption that argues
@@ -4965,15 +5163,41 @@ Write your answer for “How you checked a reader who cannot see them still foll
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: Your case study about a plant nursery’s order form has eleven images: eight polished final screens, a stock photograph of a greenhouse, a photograph of your pencil flow captioned “flow”, and a before-and-after pair of the order button with no caption. The re-test found two of three people still missed the button.
+
+**Task:** Which images stay, which go, and what would each remaining caption say? Explain why.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps most of the screens and the stock photograph for visual interest, and captions the pair “improved button”.
+- Adequate: Cuts the stock photograph and most screens, keeps the pencil flow with a caption that argues, and captions the pair with the change, the prediction and “two of three still missed it”.
+- Strong: As adequate, and writes alternative text that carries each argument, keeps one or two screens only where they show something specific, and says where a claim rests on the test record.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -4996,7 +5220,7 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: Showing the work, and what an image cannot prove
-What I am trying to do: Choose and caption the images for all three case studies so each one carries an argument rather than decorating the page.
+What I am trying to do: Choose and caption the images for every case study — two on the core path, three on the full library — so each one carries an argument rather than decorating the page.
 
 Key idea or terms:
 An image that argues: One that supports a claim: a before-and-after pair, a flow with its failure branches, a table that shows what was considered.
@@ -5116,11 +5340,11 @@ Stable ID: m19-l08-v1. Core.
 
 The outcome section is where portfolios most often stop being true, because it is the section everyone feels they must fill.
 
-Bring: The measurement and limits material from all three projects.
+Bring: The measurement and limits material from at least one project.
 
 Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
-- An outcome section per case study
+- An outcome section per case study, beginning with one project
 - Counts with periods and conditions where measured
 - A plain sentence where nothing was measured
 - No percentages derived from small counts
@@ -5137,13 +5361,13 @@ A portfolio story shows what you did, why you chose it, what evidence supports i
 
 **Quick example.** Made-up example. Listing what was measured across three projects, and listing what I know changed. Calls fell at the repair shop, the booking flow felt faster, and people understood the second version better. Three outcomes, from three projects.
 
-The reader demonstrates and guides the task before asking for “Every measurement from the three projects, with its period and conditions”.
+The reader demonstrates and guides the task before asking for “Every measurement from the project or projects you are writing up, with its period, conditions and evidence tier”.
 
 ### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
-Write an honest outcome section for each case study, using counts where you have them and saying plainly where you have none.
+Write an honest outcome section for each case study — starting with one project — using counts where you have them, saying plainly where you have none, and labelling every result's evidence tier.
 
 
 ### Report what you measured, in counts, with the period
@@ -5167,11 +5391,11 @@ Section: learn. Stable action: learn-3.
 Do not convert a small count into a percentage.
 
 
-### Process outcomes are legitimate: a decision changed, a repair worked
+### Idea 4: Process outcomes are legitimate: a decision changed, a repair…
 
 Section: learn. Stable action: learn-4.
 
-Process outcomes are legitimate: a decision changed, a repair worked.
+Process outcomes are legitimate: a decision changed, a repair worked — labelled with their tier.
 
 
 ### Never claim business impact you did not observe
@@ -5187,7 +5411,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Three outcome sections. Project three: calls about progress fell from eleven over five working days to four over the following five, one of which was a public holiday; the owner continued using the page for a month. Project two: not deployed; the outcome is the repair loop — two of three testers failed the task before the change, one of three after, on the same task with different people. Project one: no measurement of any kind, stated in one sentence, with the note that the accessibility repair was verified only by my own keyboard check and never tested with anyone who uses a screen reader.
+- Written first for one project, straight after Project 1: not deployed; the outcome is the repair loop — two of three testers failed the task before the change, one of three after, on the same task with different people (real participant testing). Later, the repair-shop project: calls about progress went from eleven over five working days to seven over the following five, one of which was a public holiday, after the owner began writing a window on job slips; the status page itself was a demonstration with made-up jobs and was never in real use, which the section says. A project with no measurement of any kind gets one sentence, with the note that its accessibility repair was verified only by my own keyboard check (a self-pilot) and never tested with anyone who uses a screen reader.
 
 
 ### Choose where you will do the work
@@ -5205,8 +5429,8 @@ Section: practice-plan. Stable action: step-1-brief.
 
 Every measurement collected with its period and conditions, and the projects with none identified.
 
-- Collect every measurement from the three projects.
-- Note the period and conditions for each.
+- Collect every measurement from the project or projects you are writing up.
+- Note the period, the conditions and the evidence tier for each.
 
 **Start here:** Open the three project records and list what was actually counted.
 
@@ -5240,15 +5464,15 @@ Made-up example. Listing what was measured across three projects, and listing wh
 **Unknown:** Still unknown: whether the booking flow was faster in general. One timing of one person cannot say, and the section says so.
 
 
-### Every measurement from the three projects, with its period and conditions
+### Every measurement from the project or projects you are writing up, with its period, conditions and evidence tier
 
 Section: practice-plan. Stable action: write-measurements.
 
-Write your answer for “Every measurement from the three projects, with its period and conditions”. Use the task instructions below to decide what to include.
+One project is enough to start. Tier: real participant research, self-pilot, simulation or supplied practice; a demonstration with made-up records has no real-use outcome.
 
-**Answer:** Every measurement from the three projects, with its period and conditions
+**Answer:** Every measurement from the project or projects you are writing up, with its period, conditions and evidence tier
 
-
+One project is enough to start. Tier: real participant research, self-pilot, simulation or supplied practice; a demonstration with made-up records has no real-use outcome.
 
 
 ### Which projects have no measurement at all
@@ -5293,7 +5517,7 @@ Write your answer for “Counts with periods, and the confounds in the same sent
 <details>
 <summary>Example</summary>
 
-Example (made up): calls about progress fell from eleven over five working days to seven over the following five, one of which was a public holiday.
+Example (made up): after the slip wording changed, calls about progress fell from eleven over five working days to seven over the following five, one of which was a public holiday.
 
 </details>
 
@@ -5522,7 +5746,7 @@ Section: practice-plan. Stable action: step-4-sort-6.
 
 Six outcome sentences from a made up portfolio. For each one, decide what it is.
 
-The owner continued using the page for a month after the trial ended.
+The status page was a demonstration with made-up jobs and was never in real use.
 
 - reportable as written
 - inflated — rewrite it
@@ -5531,11 +5755,11 @@ The owner continued using the page for a month after the trial ended.
 <details>
 <summary>After your attempt</summary>
 
-reportable as written — An observed fact with a period, and one of the more meaningful outcomes available at this scale.
+reportable as written — A plain statement of what did not happen, with its tier. It stops a reader assuming the measured fall came from the page.
 
 inflated — rewrite it — Nothing about it is inflated.
 
-unsupported — cut it — It is observed rather than inferred, and it says something a count of calls does not.
+unsupported — cut it — It is supported by the stop-gate record, and leaving it out lets the reader assume real use.
 
 Now search your own outcome sections for the same shapes and rewrite them.
 
@@ -5572,18 +5796,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your project has no measurable result. Does that make it look like a failure?
 
-- Yes, which is why a qualitative claim should fill the gap.
-- Yes, so the section is better left out.
-- Without an honest result the whole portfolio looks unreliable. A project with no measurement, plainly stated, costs one sentence.
+- It does, which is why a qualitative claim should fill the gap in the outcome section.
+- A plain sentence saying nothing was measured costs less than any invented result.
+- It does, so the outcome section is better left out of that case study altogether.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, which is why a qualitative claim should fill the gap. — A qualitative claim with nothing behind it is the fabrication, described more gently.
+It does, which is why a qualitative claim should fill the gap in the outcome section. — A qualitative claim with nothing behind it is the fabrication, described more gently.
 
-Yes, so the section is better left out. — A missing outcome section is noticed, and the one sentence is easier than the absence.
+A plain sentence saying nothing was measured costs less than any invented result. — Without an honest result the whole portfolio looks unreliable, and a fabricated result costs the interview. Not deployed, followed by the repair loop in counts, is a real outcome section that survives being asked about.
 
-Without an honest result the whole portfolio looks unreliable. A project with no measurement, plainly stated, costs one sentence. — A fabricated result costs the interview. Not deployed, followed by the repair loop in counts, is a real outcome section and it survives being asked about.
+It does, so the outcome section is better left out of that case study altogether. — A missing outcome section is noticed, and the one sentence is easier than the absence.
 
 Improve: Write the plain sentence and the process outcome in step 3. Record the change in step 5.
 
@@ -5602,18 +5826,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Two of three testers completed the task after the change. Can you write 67 per cent?
 
-- No. Sixty-seven per cent of three people is two people, and the percentage is arithmetic dressed as a measurement.
-- Yes, with the sample stated alongside.
-- Yes, since the arithmetic is correct.
+- Write 67 per cent, since two out of three really is about two-thirds of them.
+- Write two of three: a percentage of three people is arithmetic dressed as data.
+- Write 67 per cent, with the sample of three stated in brackets beside it.
 
 <details>
 <summary>After your attempt</summary>
 
-No. Sixty-seven per cent of three people is two people, and the percentage is arithmetic dressed as a measurement. — Module 15 settled it and this is where it is tested. Two of the three testers is shorter, checkable, and does not imply a sample nobody had.
+Write 67 per cent, since two out of three really is about two-thirds of them. — Correct arithmetic and implied precision are different things.
 
-Yes, with the sample stated alongside. — The percentage is the part that travels, as Module 15 showed repeatedly.
+Write two of three: a percentage of three people is arithmetic dressed as data. — Sixty-seven per cent of three people is two people. Module 15 settled it and this is where it is tested: two of the three testers is shorter, checkable, and does not imply a sample nobody had.
 
-Yes, since the arithmetic is correct. — Correct arithmetic and implied precision are different things.
+Write 67 per cent, with the sample of three stated in brackets beside it. — The percentage is the part that travels, as Module 15 showed repeatedly.
 
 Improve: Search for percentages in step 4 and replace them with counts. Record the change in step 5.
 
@@ -5632,18 +5856,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your outcome says customer satisfaction increased. Nothing measured satisfaction. What should happen?
 
-- Rewrite it as customers seemed more satisfied.
-- Keep it and note that it was not measured.
-- Cut it. It is a claim about something never observed, and it is the first thing an interviewer tests.
+- Keep it, with a note underneath saying that satisfaction was not measured.
+- Cut it: nothing observed it, and it is the first thing an interviewer tests.
+- Soften it to “customers seemed more satisfied”, which claims much less.
 
 <details>
 <summary>After your attempt</summary>
 
-Rewrite it as customers seemed more satisfied. — Seemed is the inflation word doing the work, and nothing was observed either way.
+Keep it, with a note underneath saying that satisfaction was not measured. — A claim with a note under it is still the claim, and the note travels less far.
 
-Keep it and note that it was not measured. — A claim with a note under it is still the claim, and the note travels less far.
+Cut it: nothing observed it, and it is the first thing an interviewer tests. — There is nothing underneath to rewrite it into. The counted fall in progress calls, with its period and conditions, is observed and available instead.
 
-Cut it. It is a claim about something never observed, and it is the first thing an interviewer tests. — There is nothing underneath to rewrite it into. The owner continuing to use the page for a month is observed, meaningful, and available instead.
+Soften it to “customers seemed more satisfied”, which claims much less. — Seemed is the inflation word doing the work, and nothing was observed either way.
 
 Improve: Ask the two sceptic questions of every outcome sentence in step 5 and cut what cannot answer. Record the change.
 
@@ -5694,15 +5918,41 @@ Write your answer for “Anything you rewrote because it could not answer”. Us
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: You are writing the outcome section for your first project, a community hall’s room-booking form. You have a self-pilot in which you completed a booking in 40 seconds, a test in which two of three members found the cancel link after the change and none of three before, no live use at all, and the hall manager saying “members love it”.
+
+**Task:** Write the outcome section in two or three sentences, and explain what you left out and why.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Claims the form made booking 67 per cent easier and that members love it, with no tiers and no mention that it was never used for real.
+- Adequate: States it was not in live use, reports none of three then two of three finding the cancel link as a test result, and labels the 40 seconds as a self-pilot.
+- Strong: As adequate, and leaves out the manager’s remark or attributes it as one person’s opinion, gives no percentages, and says what a real-use measurement would need.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -5725,7 +5975,7 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: Writing the outcome when there is no outcome
-What I am trying to do: Write an honest outcome section for each case study, using counts where you have them and saying plainly where you have none.
+What I am trying to do: Write an honest outcome section for each case study — starting with one project — using counts where you have them, saying plainly where you have none, and labelling every result's evidence tier.
 
 Key idea or terms:
 A measurement: Something counted, with a period. A tally, a count of sessions, a before and after.
@@ -5738,12 +5988,12 @@ Made-up example. Listing what was measured across three projects, and listing wh
 Activity: Act as a portfolio reader using only the supplied case. Ask what I did, why it mattered and which evidence proves the claim. Challenge one vague or exaggerated sentence.
 
 Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
-When the activity is finished, tell me to return to the course answer called “Every measurement from the three projects, with its period and conditions” and write my own decision. Do not write that answer for me.
+When the activity is finished, tell me to return to the course answer called “Every measurement from the project or projects you are writing up, with its period, conditions and evidence tier” and write my own decision. Do not write that answer for me.
 ```
 
-**Come back to the course:** Return to “Every measurement from the three projects, with its period and conditions”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+**Come back to the course:** Return to “Every measurement from the project or projects you are writing up, with its period, conditions and evidence tier”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Every measurement from the three projects, with its period and conditions” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Every measurement from the project or projects you are writing up, with its period, conditions and evidence tier” and write one sentence in your own words.
 
 </details>
 <details>
@@ -5830,10 +6080,11 @@ The progress bar counts required actions with saved work. It is not a score or p
 <details>
 <summary>Reading, video and deeper explanation</summary>
 
-- Where you have counts, give them with the period and the conditions, exactly as m18 required. Eleven calls in five days becoming four in five days, with the public holiday named, is a real outcome and reads as one because of the detail rather than despite it.
+- Where you have counts, give them with the period and the conditions, exactly as the measurement lessons required. Eleven progress calls in five working days becoming seven in the next five, after the slip wording changed, with the public holiday named, is a real outcome and reads as one because of the detail rather than despite it.
 - Where you measured nothing, one plain sentence closes the section: the design was not deployed and no measurement was taken. A reviewer reads that as accuracy. What they read as inaccuracy is a paragraph of hedged language implying an improvement that was never observed.
 - The percentage temptation is strongest here and should be refused hardest. A rate derived from single-digit counts looks like a business result and is a claim you would have to withdraw the moment anyone asked how many people that was.
-- Process outcomes count. “The test showed two of three people reading the status as a promise, so the wording changed and one of two re-testers still did” is an outcome about the work. It is smaller than a business result and it is true, which is the trade this whole course makes.
+- Process outcomes count. “A tester who had never heard of the project read the time as a promise, so the wording changed and one of two re-testers still did” is an outcome about the work. It is smaller than a business result and it is true, which is the trade this whole course makes.
+- Label the tier of every outcome. A demonstration with made-up records has no real-use outcome at all — say so; a self-pilot result is your own walkthrough; a simulation used scripted responses; supplied practice was the course's material. None of these becomes impact by being written up well.
 
 [UK Analysis Function: data visualisation charts](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-charts/).
 
@@ -5845,14 +6096,14 @@ Stable ID: m19-l09-v1. Core.
 
 The portfolio is the one interface a reviewer will definitely use, and it is assessed whether or not you intended it to be.
 
-Bring: Three drafted case studies.
+Bring: Your drafted case studies.
 
 Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
-- A portfolio that reads on a narrow screen
+- A portfolio that reads on your own phone, checked privately through a PDF or the single file
 - A heading structure and keyboard path that work
 - Alternative text and contrast checked
-- A written record of what was and was not checked
+- An accessible PDF copy checked for headings, reading order and link text, and a written record of what was and was not checked
 
 ### Start here: in everyday words
 
@@ -5860,7 +6111,7 @@ A portfolio story shows what you did, why you chose it, what evidence supports i
 
 **Words you will use**
 
-- **Plain HTML and CSS:** What Module 12 taught. A portfolio does not need a builder, a template or a subscription, and building it yourself is itself evidence.
+- **Plain HTML and CSS:** What the optional Module 12 extension teaches. The supplied template needs no coding, and a portfolio does not need a paid builder or subscription; building your own is extra evidence, not a requirement.
 - **Weight:** What the page costs to load. A heavy portfolio is a slow one, and reviewers arrive on mobile connections.
 - **Narrow first:** Most reviewers arrive on a phone. Designing for the laptop and checking the phone last produces a portfolio that is worst where it is most read.
 
@@ -5872,7 +6123,7 @@ The reader demonstrates and guides the task before asking for “How the portfol
 
 Section: learn. Stable action: welcome.
 
-Build and check the portfolio as a designed artefact: readable on a phone, navigable by keyboard, and honest about what you checked.
+Build and check the portfolio as a designed artefact — readable on your own phone without any hosting, navigable by keyboard, available as an accessible PDF, and honest about what you checked.
 
 
 ### The portfolio is evidence of your craft before anyone reads a word
@@ -5882,11 +6133,11 @@ Section: learn. Stable action: learn-1.
 The portfolio is evidence of your craft before anyone reads a word.
 
 
-### Most reviewers arrive on a phone; design for that first
+### Idea 2: Most reviewers arrive on a phone: check it on your own phone p…
 
 Section: learn. Stable action: learn-2.
 
-Most reviewers arrive on a phone; design for that first.
+Most reviewers arrive on a phone: check it on your own phone privately, through a PDF or the single file sent to yourself.
 
 
 ### Headings, focus order and contrast are the minimum
@@ -5934,14 +6185,14 @@ Section: practice-plan. Stable action: step-1-brief.
 
 An index and one page per case study, built plainly, with the weight and load order known.
 
-- Build an index and one page per case study.
-- Use your existing stylesheet rather than a new visual language.
+- Build an index and one page per case study, from the supplied template or your own HTML.
+- Use one stylesheet rather than a new visual language on every page.
 
 **Start here:** Reuse the stylesheet from your design system rather than starting a new one.
 
 **Enough:** The pages are yours and you know what they weigh.
 
-**Plain HTML and CSS:** What Module 12 taught. A portfolio does not need a builder, a template or a subscription, and building it yourself is itself evidence.
+**Plain HTML and CSS:** What the optional Module 12 extension teaches. The supplied template needs no coding, and a portfolio does not need a paid builder or subscription; building your own is extra evidence, not a requirement.
 
 **Weight:** What the page costs to load. A heavy portfolio is a slow one, and reviewers arrive on mobile connections.
 
@@ -5972,12 +6223,12 @@ Write your answer for “What the pages weigh, and what loads last”. Use the t
 
 Section: practice-plan. Stable action: step-2-brief.
 
-The portfolio read on a phone, with what you found and what you fixed.
+A whole case study read on your own phone, from a PDF or the single file, with what you found and what you fixed.
 
-- Open it at phone width and read a whole case study.
+- Save a case study as PDF or send the single file to yourself, and read it whole on your own phone.
 - Fix line lengths, image sizes and anything that requires zooming.
 
-**Start here:** Read one whole case study on your phone before changing anything.
+**Start here:** Save one case study as PDF or send the file to yourself, and read it whole on your phone before changing anything.
 
 **Enough:** You read it rather than looked at it.
 
@@ -5986,15 +6237,15 @@ The portfolio read on a phone, with what you found and what you fixed.
 **Reading rather than looking:** Actually reading a case study on the device, not glancing at the layout. Line length and image size are felt rather than seen.
 
 
-### What you found reading it on a phone
+### What you found reading a whole case study on your own phone — opened from a PDF or the single file sent to yourself
 
 Section: practice-plan. Stable action: write-phone-check.
 
-Most reviewers arrive on one. Design for that first rather than checking it last.
+Most reviewers arrive on a phone. Print to PDF (Print, then Save as PDF) or send the HTML file to yourself through a channel you already use; no hosting is needed. The browser’s phone view on a laptop is only emulation.
 
-**Answer:** What you found reading it on a phone
+**Answer:** What you found reading a whole case study on your own phone — opened from a PDF or the single file sent to yourself
 
-Most reviewers arrive on one. Design for that first rather than checking it last.
+Most reviewers arrive on a phone. Print to PDF (Print, then Save as PDF) or send the HTML file to yourself through a channel you already use; no hosting is needed. The browser’s phone view on a laptop is only emulation.
 
 
 ### What you fixed
@@ -6086,50 +6337,52 @@ Write your answer for “Contrast on text and on the focus indicator, and altern
 
 Section: practice-plan. Stable action: step-4-brief.
 
-The site opened on a phone over a mobile connection, with what happened.
+The portfolio on your own phone without any hosting — a PDF or the single file — with what did not travel.
 
-- Confirm alternative text on every image.
-- Confirm the argument survives with images off.
+- Confirm alternative text on every image and that the argument survives with images off.
+- Save a PDF copy and check its headings, reading order and link text.
 
-**Start here:** Turn off the wireless connection on your phone and open it.
+**Start here:** Send the PDF or the single file to yourself through a channel you already use, and open it on your phone.
 
-**Enough:** You know how long the first sentence takes to arrive.
+**Enough:** You read a whole case study on a real phone and know what did not travel.
 
-**A real connection:** Not your home network. Module 12 made the same distinction, and a portfolio is usually opened on the move.
+**Emulation:** The browser’s phone view on a laptop. Useful for width; it is not a phone in your hand, with its fonts, its files app and its screen.
+
+**A private preview:** Sending the PDF or the single HTML file to yourself through a channel you already use. Nothing is published, and nobody else can see it.
 
 
 ### See the decision being made
 
 Section: practice-plan. Stable action: step-4-demo.
 
-Made-up example. Testing a portfolio on a phone, and testing it on the office wireless.
+Made-up example. Checking a portfolio on a phone, and trusting the browser’s phone view.
 
-**What I tested:** Opened every page on my phone, sitting at my desk, on a connection fast enough that everything appeared instantly.
+**What I checked:** The laptop browser’s phone view, at three phone sizes. Everything fitted and every image appeared.
 
-**What that told me:** That the layout works at phone width. Nothing at all about what the pages weigh.
+**What that told me:** That the layout works at phone width on my laptop. Nothing about what arrives on a real phone.
 
-**What happened on mobile data:** Eleven seconds before the first case study showed anything. The page holds fourteen full-size screenshots, and two of them are four megabytes each.
+**What happened when I sent the file to myself:** The text arrived and every image was a broken box. The images lived in a folder beside the file, and the folder never left the laptop.
 
-**Why I had not noticed:** Every image was cached from building the site, and a fast connection hides weight completely. The problem is invisible from the machine you built it on.
+**What the PDF did:** Printed to PDF and sent the same way, everything arrived. Two screenshots were too small to read at phone width, which the emulator had hidden by letting me zoom.
 
-**What changed:** The screenshots resized to the width they are actually shown at, which took the first case study from nine megabytes to under one, and the same page to under two seconds.
+**What changed:** The PDF became the preview and the copy for reviewers, the two screenshots were cropped to the part that argues, and the HTML stayed the master.
 
-**Wrong turn:** The wrong turn is testing width rather than weight, because the phone in your hand on office wireless answers the question you can see and not the one that decides whether anybody waits.
+**Wrong turn:** The wrong turn is treating the browser’s phone view as the check, because it is quick and looks like a phone. It cannot show what fails to travel, and a reviewer meets the travelled version.
 
-**Trade-off:** Resized screenshots lose detail when somebody zooms in, and two of them needed a full-size version linked separately.
+**Trade-off:** A PDF does not reflow like a web page, so its line lengths are fixed at whatever the print settings chose.
 
-**Unknown:** Still unknown: what it does on a slow connection in a rural area. Mobile data in a city is the worst condition I could actually produce.
+**Unknown:** Still unknown: how it behaves on a slow connection if it is ever published. That check only exists once there is a public link.
 
 
-### What happened opening it on a phone over a mobile connection
+### How you got it onto your phone without hosting, and what did not travel
 
 Section: practice-plan. Stable action: write-real-connection.
 
-Write your answer for “What happened opening it on a phone over a mobile connection”. Use the task instructions below to decide what to include.
+Images in a separate folder go missing unless the folder travels too; a PDF carries them. If you later publish, also open it over mobile data.
 
-**Answer:** What happened opening it on a phone over a mobile connection
+**Answer:** How you got it onto your phone without hosting, and what did not travel
 
-
+Images in a separate folder go missing unless the folder travels too; a PDF carries them. If you later publish, also open it over mobile data.
 
 
 ### Check your reasoning · 1 of 3
@@ -6140,20 +6393,20 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Should the portfolio site demonstrate your visual range?
 
-- It should demonstrate that you can make something clear and usable. Range belongs inside the case studies.
-- Yes, since it is the one artefact entirely under your control.
-- Yes, as long as it stays usable.
+- It should, since the site is the one artefact entirely under your own control.
+- It should show you can make something clear and usable; range lives in the case studies.
+- It should, as long as the extra animation and styling leave it reasonably usable.
 
 <details>
 <summary>After your attempt</summary>
 
-It should demonstrate that you can make something clear and usable. Range belongs inside the case studies. — An animated header and a custom scroll behaviour put four seconds and a navigation to learn between a reviewer and the first sentence. The site is judged as an interface whether or not you intended it to be.
+It should, since the site is the one artefact entirely under your own control. — Which is exactly why it is read as a demonstration of judgement rather than of range.
 
-Yes, since it is the one artefact entirely under your control. — Which is exactly why it is read as a demonstration of judgement rather than of range.
+It should show you can make something clear and usable; range lives in the case studies. — An animated header and a custom scroll behaviour put four seconds and a navigation to learn between a reviewer and the first sentence. The site is judged as an interface whether or not you intended it to be.
 
-Yes, as long as it stays usable. — The two compete for the same first ten seconds, and one of them is what the reviewer came for.
+It should, as long as the extra animation and styling leave it reasonably usable. — The two compete for the same first ten seconds, and one of them is what the reviewer came for.
 
-Improve: Rebuild the pages plainly from your design system stylesheet in step 1. Record the change in step 5.
+Improve: Rebuild the pages plainly from one stylesheet in step 1. Record the change in step 5.
 
 Check again: The first sentence of a case study arrives quickly on a phone.
 
@@ -6168,24 +6421,24 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Where should you check the portfolio first?
+You have no hosting. Where should you check the portfolio first?
 
-- On a phone, reading a whole case study, because that is where most reviewers arrive.
-- On a laptop, since that is where the layout is designed.
-- In a browser window resized to phone width.
+- On a laptop, since that is where the layout is designed and most edits happen.
+- On your own phone, from a PDF or the single file sent to yourself, reading a whole case study.
+- In the browser’s phone view on your laptop, which shows exactly what a phone shows.
 
 <details>
 <summary>After your attempt</summary>
 
-On a phone, reading a whole case study, because that is where most reviewers arrive. — Designing for the laptop and checking the phone last produces a portfolio that is worst where it is most read. Line length and image size are felt in reading rather than seen in a glance.
+On a laptop, since that is where the layout is designed and most edits happen. — It is where you work and not where it is read.
 
-On a laptop, since that is where the layout is designed. — It is where you work and not where it is read.
+On your own phone, from a PDF or the single file sent to yourself, reading a whole case study. — Most reviewers arrive on a phone, and a private preview needs no hosting. Line length, image size and anything that failed to travel are felt in reading rather than seen in a glance.
 
-In a browser window resized to phone width. — Useful for width and, as Module 12 showed, missing everything about holding a phone.
+In the browser’s phone view on your laptop, which shows exactly what a phone shows. — Useful for width, and it is emulation: it misses holding the phone, its fonts, and anything that did not travel with the file.
 
-Improve: Read a whole case study on a phone in step 2 and record what you fixed. Note the change in step 5.
+Improve: Read a whole case study on your own phone in step 2 and record what you fixed. Note the change in step 5.
 
-Check again: You read rather than glanced.
+Check again: You read it on a real phone rather than glancing at an emulator.
 
 Answers to revisit: phone-check, fixed-narrow, improvement-made
 
@@ -6200,24 +6453,24 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Can your about page say the site is accessible?
 
-- Yes, if you ran the standard checks.
-- Yes, with a note about what was not tested.
-- No. List the checks you ran and the ones you did not, which is also the clearest demonstration of your third claim.
+- It can, with a note underneath about the checks that have not been run yet.
+- List the checks you ran and those you did not, rather than claiming accessibility.
+- It can, once you have run the standard checks on every page of the site.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, if you ran the standard checks. — The standard checks are a floor rather than conformance, and no screen-reader testing has happened.
+It can, with a note underneath about the checks that have not been run yet. — The claim travels and the note does not, which is the pattern this course keeps returning to.
 
-Yes, with a note about what was not tested. — The claim travels and the note does not, which is the pattern this course keeps returning to.
+List the checks you ran and those you did not, rather than claiming accessibility. — Accessible is a conformance claim, and Module 11 spent a lesson on why it cannot be made without testing. Naming four checks and two absences is checkable, and it demonstrates the claim about stating limits.
 
-No. List the checks you ran and the ones you did not, which is also the clearest demonstration of your third claim. — Accessible is a conformance claim, and Module 11 spent a lesson on why it cannot be made without testing. Naming four checks and two absences is checkable and stronger.
+It can, once you have run the standard checks on every page of the site. — The standard checks are a floor rather than conformance, and no screen-reader testing has happened.
 
-Improve: Write the checked and not-checked lists onto the site in step 5. Record the change.
+Improve: Write the checked and not-checked lists onto the portfolio in step 5. Record the change.
 
 Check again: The about page names checks rather than making a claim.
 
-Answers to revisit: checked-not-checked, improvement-made
+Answers to revisit: pdf-check, checked-not-checked, improvement-made
 
 </details>
 
@@ -6235,7 +6488,7 @@ What was checked and what was not, written on the site itself.
 
 **Enough:** Nothing on the about page claims a check you did not run.
 
-**Written on the site:** On an about page rather than in a document nobody sees. It is also the clearest demonstration of the third claim.
+**Written on the site:** On an about page rather than in a document nobody sees. It is also the clearest demonstration of a claim about stating limits.
 
 **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
 
@@ -6307,7 +6560,7 @@ Not checked: no screen-reader testing, and no testing with anybody who uses assi
 <details>
 <summary>After your attempt</summary>
 
-honest as written — Two specific absences, stated. It is also the clearest possible demonstration of the third portfolio claim.
+honest as written — Two specific absences, stated. It is also the clearest possible demonstration of a claim about stating limits.
 
 claims more than was done — It claims nothing.
 
@@ -6376,7 +6629,7 @@ Section: practice. Stable action: step-5-sort-6.
 
 Six statements a made up portfolio might put on its about page. For each one, decide whether it is honest.
 
-Pages weigh under 200 kilobytes and the first text appears in about a second on a mobile connection.
+Each page file is under 200 kilobytes, and the PDF copy kept its headings and link text when checked.
 
 - honest as written
 - claims more than was done
@@ -6396,13 +6649,24 @@ Now write your own about page from what you actually ran.
 </details>
 
 
-### What was checked and what was not, written on the site itself
+### Your PDF copy: whether its headings, reading order and link text survived
+
+Section: practice. Stable action: write-pdf-check.
+
+Browser Save as PDF keeps real text; whether it adds the tags screen readers use varies by browser. Keep the HTML as the accessible master.
+
+**Answer:** Your PDF copy: whether its headings, reading order and link text survived
+
+Browser Save as PDF keeps real text; whether it adds the tags screen readers use varies by browser. Keep the HTML as the accessible master.
+
+
+### What was checked and what was not, written on the portfolio itself
 
 Section: practice. Stable action: write-checked-not-checked.
 
-Write your answer for “What was checked and what was not, written on the site itself”. Use the task instructions below to decide what to include.
+Write your answer for “What was checked and what was not, written on the portfolio itself”. Use the task instructions below to decide what to include.
 
-**Answer:** What was checked and what was not, written on the site itself
+**Answer:** What was checked and what was not, written on the portfolio itself
 
 
 
@@ -6414,15 +6678,41 @@ Example (made up): no screen-reader testing and no testing with anybody who uses
 </details>
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A friend’s portfolio is one HTML file per case study, with images in a separate folder. She has checked it only in her laptop browser’s phone view, wants to send a reviewer a link to a free hosting site tomorrow, and her about page says “fully accessible”.
+
+**Task:** What would you advise her to check, and how, before anything is published? Give the reason for each step.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Says the phone view looked fine, so she can publish tomorrow; the accessibility line is left alone.
+- Adequate: Advises a private phone check first — a PDF or the file and its folder sent to herself — and replacing “fully accessible” with the checks run and not run.
+- Strong: As adequate, and points out the images will break unless the folder travels, suggests a PDF copy checked for headings and link text, and says publishing is optional and must be checked on the day.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -6445,10 +6735,10 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: Making the portfolio itself usable
-What I am trying to do: Build and check the portfolio as a designed artefact: readable on a phone, navigable by keyboard, and honest about what you checked.
+What I am trying to do: Build and check the portfolio as a designed artefact — readable on your own phone without any hosting, navigable by keyboard, available as an accessible PDF, and honest about what you checked.
 
 Key idea or terms:
-Plain HTML and CSS: What Module 12 taught. A portfolio does not need a builder, a template or a subscription, and building it yourself is itself evidence.
+Plain HTML and CSS: What the optional Module 12 extension teaches. The supplied template needs no coding, and a portfolio does not need a paid builder or subscription; building your own is extra evidence, not a requirement.
 Weight: What the page costs to load. A heavy portfolio is a slow one, and reviewers arrive on mobile connections.
 Narrow first: Most reviewers arrive on a phone. Designing for the laptop and checking the phone last produces a portfolio that is worst where it is most read.
 
@@ -6469,7 +6759,7 @@ When the activity is finished, tell me to return to the course answer called “
 <details>
 <summary>Optional hints and reference material</summary>
 
-- Fix line length and image sizing, then read it on a phone again.
+- Fix line length and image sizing, then send it to your phone again and read it there.
 - Rebuild the headings semantically and restore a visible focus style.
 
 - R66: [W3C: How to Meet WCAG 2.2 (quick reference)](https://www.w3.org/WAI/WCAG22/quickref/) — The level A and AA criteria your own pages can actually affect. Purpose: Sets the standard for the portfolio's own accessibility. Free reading, no account. Verified 2026-09-06. A filterable index rather than a course; reading a criterion is not conformance, which only an implemented, tested build can approach. Fallback: R41.
@@ -6479,19 +6769,19 @@ When the activity is finished, tell me to return to the course answer called “
 <details>
 <summary>Creator review and remediation criteria</summary>
 
-**The portfolio reads well on a narrow screen**
+**The portfolio reads well on a real phone, checked without hosting**
 
-Adequate evidence: A case study read end to end at phone width.
+Adequate evidence: A case study read end to end on your own phone, opened from a PDF or the single file sent to yourself.
 
-0 — Requires zooming or horizontal scrolling.
+0 — Requires zooming or horizontal scrolling, or only checked by desktop emulation.
 
 1 — Readable with effort.
 
-2 — Comfortable at phone width.
+2 — Comfortable on a real phone.
 
 3 — As adequate, and it loads usefully before images arrive.
 
-Repair: Fix line length and image sizing, then read it on a phone again. Recheck: The narrow-screen read.
+Repair: Fix line length and image sizing, then send it to your phone again and read it there. Recheck: The narrow-screen read.
 
 **Heading structure and keyboard path work**
 
@@ -6542,7 +6832,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 **Review criteria:**
 
-- The portfolio reads well on a narrow screen
+- The portfolio reads well on a real phone, checked without hosting
 - Heading structure and keyboard path work
 - Images have alternative text and contrast holds
 - Checks performed and skipped are recorded
@@ -6552,7 +6842,9 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 - A reviewer forms an opinion from the page before reading the argument. A portfolio with unreadable line lengths, text over images and no visible focus contradicts every claim inside it, and the contradiction is noticed even when it is not articulated.
 - Phones dominate first contact — a link opened between meetings, on a train, on a slow connection. That means the case study opening has to work in a narrow column, images must not be required to understand the argument, and the whole thing should load without waiting.
-- The minimum is the m13 and m14 work applied to your own site: a heading structure that makes sense read alone, a visible focus indicator, contrast that holds, alternative text on every image, and a keyboard path through the whole thing. These are the criteria you claim to apply, so failing them here is expensive.
+- You can read it on your own phone without publishing anything. Either print each page to PDF in your browser (Print, then choose Save as PDF as the destination) and send the PDF to yourself through a channel you already use, or send the single HTML file itself and open it from the phone's files, if its browser allows local files. A page that loads images from a separate folder will show them missing on the phone unless the folder travels too, which a PDF avoids. The browser's desktop phone view is emulation: useful for width, and no substitute for holding the phone.
+- A PDF can also be the version you send to a reviewer. Browser Save as PDF keeps your text as real text, but whether it adds the headings and reading-order tags that screen readers use varies by browser, so open the PDF and check the headings, the reading order and that link text says where it goes. Keep the HTML as the accessible master and treat the PDF as a copy.
+- The minimum is the accessibility work from Module 11 applied to your own site: a heading structure that makes sense read alone, a visible focus indicator, contrast that holds, alternative text on every image, and a keyboard path through the whole thing. These are the criteria you claim to apply, so failing them here is expensive.
 - Record what you checked and what you did not, exactly as in the projects. A line saying you ran a keyboard pass and a contrast check but have not tested with a screen reader is more credible than silence, and far more credible than an accessibility badge you cannot support.
 
 [W3C: How to Meet WCAG 2.2 (quick reference)](https://www.w3.org/WAI/WCAG22/quickref/).
@@ -6636,7 +6928,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Ten minutes, five points: the shop owner's problem with the call count; five participants and the contradiction between speed and certainty; the decision to build a status page and the not-building list; the wording repair, its prediction, and the person who still read it as a promise; and the limits, including that nobody who stopped using the shop was reached. First recording ran fourteen minutes, spent four on context and said “about two thirds” once. Second recording ran ten and a half, opened with the count, and used the exact numbers.
+- Ten minutes, five points: the shop owner's problem with the call count; three research participants and the contradiction between speed and certainty; the decision to build a status page and the not-building list; the wording repair, its prediction, and the person who still read it as a promise; and the limits, including that nobody who stopped using the shop was reached. First recording ran fourteen minutes, spent four on context and said “about two thirds” once. Second recording ran ten and a half, opened with the count, and used the exact numbers.
 
 
 ### Choose where you will do the work
@@ -6767,7 +7059,7 @@ Made-up example. Preparing a spoken walkthrough, and preparing to read the case 
 
 **What the spoken version needed:** Its own five points, written as a separate artefact: the problem with the count, the contradiction, the decision and what I did not build, the repair and the person it failed for, and the limits.
 
-**What the second recording was:** Ten and a half minutes, opening with eleven calls a day, and every number said as the count I had written rather than as about two thirds.
+**What the second recording was:** Ten and a half minutes, opening with eleven progress calls in five working days, and every number said as the count I had written rather than as about two thirds.
 
 **Wrong turn:** The wrong turn is talking through the written case study, because it exists and it is well ordered. Speaking adds setup that reading does not need, and four of the ten minutes go before any evidence arrives.
 
@@ -6909,7 +7201,7 @@ The limits section delivered in twenty seconds at the end, faster than everythin
 <details>
 <summary>After your attempt</summary>
 
-fix it before the second take — It is one of your three claims, and rushing it signals discomfort with the part you should be most comfortable with.
+fix it before the second take — It supports your claim about stating limits, and rushing it signals discomfort with the part you should be most comfortable with.
 
 leave it — The pace says something about how you hold the section.
 
@@ -7000,20 +7292,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Can you just talk through the case study?
+Can you just talk through the written case study?
 
-- Yes, with a summary at the start.
-- Yes, since the written version is already well ordered.
-- No. Slides or pages read aloud are slower than reading and less clear than either, and speaking adds setup that reading does not need.
+- Prepare five spoken points instead; reading a page aloud adds setup and drags.
+- Reading it aloud word for word works, because then no number or claim can drift.
+- Talking through it works, since the written version is already well ordered.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, with a summary at the start. — That is the spoken structure, arrived at reluctantly.
+Prepare five spoken points instead; reading a page aloud adds setup and drags. — The first recording goes fourteen minutes with four on context. Pages read aloud are slower than reading and less clear than either; the spoken version needs its own five points.
 
-Yes, since the written version is already well ordered. — Well ordered for reading. Spoken, the same order produces four minutes of setup before any evidence.
+Reading it aloud word for word works, because then no number or claim can drift. — Exact, and slower than reading and less clear than either; the listener gets a page of setup before any evidence.
 
-No. Slides or pages read aloud are slower than reading and less clear than either, and speaking adds setup that reading does not need. — The first recording goes fourteen minutes with four on context. The spoken version needs its own five points, prepared as a separate artefact.
+Talking through it works, since the written version is already well ordered. — Well ordered for reading. Spoken, the same order produces four minutes of setup before any evidence.
 
 Improve: Write five spoken points in step 1 rather than working from the page. Record the change in step 5.
 
@@ -7032,18 +7324,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 On the recording you say “about two thirds” where your notes say two of three. Does it matter?
 
-- Not much, since the written version is exact.
-- Yes. Spoken delivery loosens counts, and it is the commonest place careful writing is undone.
-- Only if the numbers are close to a threshold.
+- It hardly matters, because the written case study keeps the exact count.
+- It matters only when the number is close to a threshold someone cares about.
+- It matters: spoken delivery loosens counts, undoing the care of the writing.
 
 <details>
 <summary>After your attempt</summary>
 
-Not much, since the written version is exact. — The spoken version is what they heard, and what gets repeated.
+It hardly matters, because the written case study keeps the exact count. — The spoken version is what they heard, and what gets repeated.
 
-Yes. Spoken delivery loosens counts, and it is the commonest place careful writing is undone. — Two of three is shorter to say than about two thirds and it is the phrase an interviewer picks up. Everything Module 15 established applies here, out loud.
+It matters only when the number is close to a threshold someone cares about. — A fraction from three people implies a sample nobody had, at any threshold.
 
-Only if the numbers are close to a threshold. — A fraction from three people implies a sample nobody had, at any threshold.
+It matters: spoken delivery loosens counts, undoing the care of the writing. — Two of three is shorter to say than about two thirds and it is the phrase an interviewer picks up. Everything Module 15 established applies here, out loud.
 
 Improve: Check every number you said against what you wrote, in step 4. Record the change in step 5.
 
@@ -7062,18 +7354,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your recording has several hesitations. Should the second take fix them?
 
-- Yes, and the structure too.
-- Yes, fluency is part of the impression.
-- No. Spend it on structure and numbers; hesitation is normal speech and chasing it produces a delivery that sounds rehearsed.
+- Fix them along with the structure, so the second take improves everything at once.
+- Fix them, since fluent delivery is a large part of the impression you make.
+- Spend the second take on structure and numbers; hesitation is normal speech.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, and the structure too. — Both at once usually means the structure gets the attention it deserves and the fluency work makes it stiff.
+Fix them along with the structure, so the second take improves everything at once. — Both at once usually means the structure loses the attention it deserves and the fluency work makes it stiff.
 
-Yes, fluency is part of the impression. — A fluent walkthrough with four minutes of context still fails.
+Fix them, since fluent delivery is a large part of the impression you make. — A fluent walkthrough with four minutes of context still fails.
 
-No. Spend it on structure and numbers; hesitation is normal speech and chasing it produces a delivery that sounds rehearsed. — The recording exists to show what you cannot hear while speaking: four minutes of context, a loosened count, a rushed limits section. Those are worth a second take.
+Spend the second take on structure and numbers; hesitation is normal speech. — Chasing hesitation produces a delivery that sounds rehearsed. The recording exists to show what you cannot hear while speaking: four minutes of context, a loosened count, a rushed limits section.
 
 Improve: Write three specific changes about structure and numbers in step 4. Record the change in step 5.
 
@@ -7149,15 +7441,41 @@ Write your answer for “Where both recordings are kept”. Use the task instruc
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: You have ten minutes to present a case study about a community food bank’s volunteer rota. Your first run spent five minutes on the charity’s history, said “most volunteers” where your notes say three of five, rushed the limits in fifteen seconds, and stumbled over two words.
+
+**Task:** What are your five points and your three changes for the second take? Explain why each matters.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Rehearses for smoother delivery and keeps the history, treating the stumbles as the main problem.
+- Adequate: Cuts the history to a sentence, opens with the problem and a count, says “three of five”, and gives the limits proper time; the stumbles are left alone.
+- Strong: As adequate, and adds the role and project category early, keeps both recordings as a before-and-after pair, and checks every spoken number against the written case study.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -7300,7 +7618,7 @@ Stable ID: m19-l11-v1. Core.
 
 The questions that decide the outcome are the ones aimed at your weakest evidence, and they are predictable.
 
-Bring: The three case studies and the audit table.
+Bring: Your case studies and the audit table.
 
 Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
@@ -7371,7 +7689,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Twelve questions were drawn from the three limitations pages, including: what do customers who never came back think; how do you know the page was used at all; was the fall in calls just a quiet week; why did you not test with a screen-reader user; and what would you do differently with a month. Each got a written answer conceding first. Two answers were “I do not know”, each with the smallest next step attached. All twelve were practised aloud; the quiet-week question was the one that produced hesitation, so it was rehearsed until the concession came first.
+- Twelve questions were drawn from the limitations pages, including: what do customers who never came back think; why did the page never go in front of real customers; was the fall in calls just a quiet week; why did you not test with a screen-reader user; and what would you do differently with a month. Each got a written answer conceding first. Two answers were “I do not know”, each with the smallest next step attached. All twelve were practised aloud; the quiet-week question was the one that produced hesitation, so it was rehearsed until the concession came first.
 
 
 ### Choose where you will do the work
@@ -7456,11 +7774,11 @@ Made-up example. Answering a hard question about a small study, and answering it
 
 **The question:** Your call count fell during a week with a public holiday in it. Was that just a quiet week?
 
-**What I said first:** That the periods were matched at five working days, that the page had been introduced properly, and that the owner had reported fewer interruptions. All true, and all defence.
+**What I said first:** That the periods were matched at five working days, that the new slip wording had been introduced properly, and that the owner counted the same way in both weeks. All true, and all defence.
 
 **How it landed:** As resistance. The question has a good point in it, and my first three sentences were about why the point did not matter.
 
-**What conceding first sounds like:** “Possibly, yes. One of the five days was a public holiday and I cannot separate that from the change. What I can say is that the periods were the same length and the owner kept using the page for a month afterwards.”
+**What conceding first sounds like:** “Possibly, yes. One of the five days was a public holiday and I cannot separate that from the change. What I can say is that the periods were the same length and counted the same way.”
 
 **What changed about the conversation:** The interviewer moved on to what I would do differently, which is the question I wanted. Defending kept us on the holiday for four minutes.
 
@@ -7604,18 +7922,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Does a good answer defend the work?
 
-- Yes, where the criticism is unfair.
-- A good answer tells the truth about the work. Interviewers are testing calibration more than results, and a well-defended overclaim fails that completely.
-- Yes, otherwise the work looks weak.
+- It defends the work, because otherwise the project will look weaker than it was.
+- It tells the truth about the work; interviewers are testing your calibration.
+- It defends the work wherever the criticism behind the question seems unfair.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, where the criticism is unfair. — The questions drawn from your own limitations page are rarely unfair.
+It defends the work, because otherwise the project will look weaker than it was. — The work is what it is. What is being assessed is whether your account of it is reliable.
 
-A good answer tells the truth about the work. Interviewers are testing calibration more than results, and a well-defended overclaim fails that completely. — Conceding first moves the conversation on. Defending keeps it on the weakest part of the study for four minutes.
+It tells the truth about the work; interviewers are testing your calibration. — A well-defended overclaim fails a calibration test completely. Conceding first moves the conversation on; defending keeps it on the weakest part of the study for four minutes.
 
-Yes, otherwise the work looks weak. — The work is what it is. What is being assessed is whether your account of it is reliable.
+It defends the work wherever the criticism behind the question seems unfair. — The questions drawn from your own limitations page are rarely unfair.
 
 Improve: Rewrite any answer in step 2 whose first sentence is a defence. Record the change in step 5.
 
@@ -7634,18 +7952,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You are asked what customers who stopped coming think. You did not reach any. What do you say?
 
-- That the study did not cover it, and move on.
-- That they probably had similar frustrations to the others.
-- That you do not know, why not, and the smallest next step: three phone calls to lapsed customers.
+- That you do not know, why not, and the next step: calls to lapsed customers.
+- That the study did not cover them, and then move straight on to your findings.
+- That they probably had similar frustrations to the customers you did reach.
 
 <details>
 <summary>After your attempt</summary>
 
-That the study did not cover it, and move on. — Accurate and it leaves the answer at a full stop. The next step is what makes it calibration.
+That you do not know, why not, and the next step: calls to lapsed customers. — I do not know is acceptable with a next step attached. Without one it sounds like evasion, and with a guess it becomes invention about people nobody spoke to.
 
-That they probably had similar frustrations to the others. — Probably is doing the inventing, and it is the sentence that arrives under pressure when nothing was prepared.
+That the study did not cover them, and then move straight on to your findings. — Accurate, and it leaves the answer at a full stop. The next step is what makes it calibration.
 
-That you do not know, why not, and the smallest next step: three phone calls to lapsed customers. — I do not know is acceptable with a next step attached. Without one it sounds like evasion, and with a guess it becomes invention about people nobody spoke to.
+That they probably had similar frustrations to the customers you did reach. — Probably is doing the inventing, and it is the sentence that arrives under pressure when nothing was prepared.
 
 Improve: Attach the smallest next step to every unknown in step 3. Record the change in step 5.
 
@@ -7664,18 +7982,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Why have somebody ask the questions unprompted rather than reading your answers?
 
-- To find questions you had not thought of.
-- To practise the delivery.
-- Because under pressure the answer that arrives is not always the one you wrote, and the drift is nearly always towards claiming more.
+- Under pressure the answer that arrives can drift from the one you wrote.
+- To practise the delivery, so the answers sound natural rather than recited.
+- To find the questions you had not thought of, which the list cannot contain.
 
 <details>
 <summary>After your attempt</summary>
 
-To find questions you had not thought of. — A bonus. The list comes from your own limitations page, which is where the predictable ones live.
+Under pressure the answer that arrives can drift from the one you wrote. — The drift is nearly always towards claiming more, and it is the finding. A shuffled, unprompted list also tests whether the answers are prepared or memorised in sequence.
 
-To practise the delivery. — Useful, and the reason is what it reveals about the content.
+To practise the delivery, so the answers sound natural rather than recited. — Useful, and the reason is what it reveals about the content.
 
-Because under pressure the answer that arrives is not always the one you wrote, and the drift is nearly always towards claiming more. — That drift is the finding. A shuffled, unprompted list also tests whether the answers are prepared or memorised in sequence.
+To find the questions you had not thought of, which the list cannot contain. — A bonus. The list comes from your own limitations page, which is where the predictable ones live.
 
 Improve: Record any answer that drifted from what you wrote, in step 5, and note the change.
 
@@ -7712,7 +8030,7 @@ Section: practice. Stable action: step-5-sort-1.
 
 Six answers to hard questions about a made up portfolio. For each one, decide what it does.
 
-Possibly, yes. One of the five days was a public holiday and I cannot separate that from the change. The periods were the same length, and the owner kept using the page for a month.
+Possibly, yes. One of the five days was a public holiday and I cannot separate that from the change. The periods were the same length and counted the same way.
 
 - concedes and reasons
 - defends
@@ -7884,15 +8202,41 @@ This is the finding. Under pressure the prepared answer is not always the one th
 This is the finding. Under pressure the prepared answer is not always the one that arrives.
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: Your case study on a library’s returns sign says questions about returns fell from 15 to 9 over two four-day periods, and that a second volunteer helped at the desk on two of the later days. In an interview you are asked: “Was it the sign or the extra volunteer?”
+
+**Task:** Write your answer in two or three sentences, and explain why you shaped it that way.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Insists the sign caused the fall because the periods were matched, without mentioning the extra volunteer.
+- Adequate: Concedes first that the two cannot be separated, gives what can still be said — 15 then 9 over matched periods — and names a next step such as another matched period without extra staff.
+- Strong: As adequate, keeps the answer under a minute, avoids percentages, and notes what the counts do and do not show about why people asked fewer questions.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -8035,13 +8379,13 @@ Stable ID: m19-l12-v1. Core.
 
 The last check is the only thing standing between an honest portfolio and one that quietly overclaims.
 
-Bring: The complete portfolio and the three promises.
+Bring: The complete portfolio and its promises.
 
 Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
 - A promise check per case study, with any promise rewritten
 - A whole-portfolio claim sweep including the index and about pages
-- A verified, recorded hosting decision
+- A recorded sharing decision — private PDF or files, or a host verified on the day
 - A cold reader's account of what the portfolio says
 
 ### Start here: in everyday words
@@ -8062,7 +8406,7 @@ The reader demonstrates and guides the task before asking for “For each case s
 
 Section: learn. Stable action: welcome.
 
-Check the finished portfolio against its three promises and every honesty rule this course holds, then publish it deliberately.
+Check the finished portfolio against its promises and every honesty rule this course holds, then share it deliberately: privately as a PDF or files, or — only if you choose — as a published site, checked on the day.
 
 
 ### Check each case study against the promise it made
@@ -8079,11 +8423,11 @@ Section: learn. Stable action: learn-2.
 Run a claim sweep across the whole portfolio, not per page.
 
 
-### Verify any hosting choice the way you verify a resource
+### Idea 3: Sharing privately is complete; publishing is optional, and any…
 
 Section: learn. Stable action: learn-3.
 
-Verify any hosting choice the way you verify a resource.
+Sharing privately is complete; publishing is optional, and any host is verified on the day like a resource.
 
 
 ### Ask one person to read it cold and tell you what it says
@@ -8093,11 +8437,11 @@ Section: learn. Stable action: learn-4.
 Ask one person to read it cold and tell you what it says.
 
 
-### Publish deliberately, and record what you published and when
+### Share or publish deliberately, and record what went where and when
 
 Section: learn. Stable action: learn-5.
 
-Publish deliberately, and record what you published and when.
+Share or publish deliberately, and record what went where and when.
 
 
 ### See the idea in a supplied example
@@ -8106,7 +8450,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The check produced eleven changes. Two promises were kept as written; one was rewritten, because the second case study promised to show a repair loop and actually showed a single change with no re-test, so the promise now says that. The claim sweep found three unsupported sentences on the index page and one on the about page, all softened. The hosting option was checked against the course's rules on the day of publishing and the verification date recorded. A cold reader said the portfolio showed someone who tests things and admits what did not work, which matched two claims of three; the third was strengthened in the index.
+- The check produced eleven changes. One promise was kept as written; one was rewritten, because the second case study promised to show a repair loop and actually showed a single change with no re-test, so the promise now says that. The claim sweep found three unsupported sentences on the index page and one on the about page, all softened, including one that called the demonstration page “launched”. The portfolio went to two reviewers as a PDF; publishing on GitHub Pages was checked against the course's rules on the day and the date recorded, then deferred. A cold reader said the portfolio showed someone who tests things and admits what did not work, which matched two claims of three; the third was strengthened in the index.
 
 
 ### Choose where you will do the work
@@ -8116,6 +8460,18 @@ Section: learn. Stable action: workspace.
 Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
+
+
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Publishing is optional. These steps were checked on 5 October 2026 against GitHub’s documentation at docs.github.com/en/pages; re-check them, and the terms, on the day you publish.
+- GitHub Pages on GitHub Free costs nothing, and the site must come from a public repository: every file you upload is public, and GitHub states that Pages sites are publicly available on the internet. GitHub also says Pages is not for commercial transactions or for sending passwords or card numbers.
+- Steps: 1. Create a free GitHub account and verify your email. 2. Choose the + menu, then New repository; name it yourusername.github.io, choose Public, and create it. 3. On the repository page choose Add file, then Upload files; upload index.html and your other pages and images, write a short commit message, choose to add the commit to the current branch (main), and confirm. 4. Open Settings, then Pages; under Build and deployment choose Deploy from a branch, choose main and / (root), and Save. 5. GitHub says publishing can take up to 10 minutes; your site appears at https://yourusername.github.io.
+- To unpublish, open Settings, scroll to the Danger Zone and delete the repository. GitHub notes that deleting a public repository does not delete forks other people have made, so never upload consent records, raw research or anything a participant did not agree to publish.
 
 
 ### Check the promises
@@ -8228,20 +8584,22 @@ Write your answer for “What you softened or removed”. Use the task instructi
 
 
 
-### Verify the hosting
+### Choose how to share it
 
 Section: practice-plan. Stable action: step-3-brief.
 
-A hosting option checked against this course’s rules on the day, with the date recorded.
+How you will share it — privately as a PDF or files, or a host checked on the day — with the date recorded if you publish.
 
-- Check cost, account and terms against this course's rules.
-- Record what you verified and the date.
+- Decide between sharing privately — a PDF or the files — and publishing.
+- If publishing, check cost, account and public visibility against this course's rules on the day, and record what you verified and the date.
 
 **Start here:** Check the host on the day you publish rather than trusting a note from last month.
 
 **Enough:** Nothing about the hosting requires a card or becomes a charge.
 
 **Verifying a host:** The same checks as any resource: free, retrievable, no card, no trial that becomes a charge. Checked on the day, because offers change.
+
+**GitHub Pages on a free account:** One free route, checked against docs.github.com on 5 October 2026: it publishes from a public repository, so everything uploaded is public. Re-check the terms on the day you publish.
 
 **Sharing files directly:** A complete route. A portfolio sent as files, or shown on your own machine, is a portfolio.
 
@@ -8269,24 +8627,37 @@ Made-up example. Publishing a portfolio, and publishing it on the host everybody
 **Unknown:** Still unknown: whether this host will keep its terms either. The date on the record is what makes that checkable rather than assumed.
 
 
-### The hosting option, checked against this course’s rules on the day
+### How the portfolio will be shared
+
+Section: practice-plan. Stable action: write-sharing-route.
+
+Choose the option that honestly describes your work.
+
+**Answer:** How the portfolio will be shared (Shared privately: a PDF or files sent to named reviewers / Published: a public site, checked on the day)
+
+Sharing privately is a complete route. Publishing is optional and public.
+
+
+### Your sharing route in practice — who receives the PDF or files — or, if publishing, the host checked against this course’s rules on the day
 
 Section: practice-plan. Stable action: write-hosting-checked.
 
-Free, no card, no trial that becomes a charge. If it fails, choose another route or share the files directly.
+Free, no card, no trial that becomes a charge, and everything uploaded is public. If a host fails, share the files directly.
 
-**Answer:** The hosting option, checked against this course’s rules on the day
+**Answer:** Your sharing route in practice — who receives the PDF or files — or, if publishing, the host checked against this course’s rules on the day
 
-Free, no card, no trial that becomes a charge. If it fails, choose another route or share the files directly.
+Free, no card, no trial that becomes a charge, and everything uploaded is public. If a host fails, share the files directly.
 
 
-### The date you checked it
+### The date you checked the host
 
 Section: practice-plan. Stable action: write-verification-date.
 
-Write your answer for “The date you checked it”. Use the task instructions below to decide what to include.
+Write your answer for “The date you checked the host”. Use the task instructions below to decide what to include.
 
-**Answer:** The date you checked it
+**Answer:** The date you checked the host
+
+Required only when sharing-route is Published: a public site, checked on the day. Otherwise leave participant evidence empty.
 
 
 
@@ -8298,7 +8669,7 @@ Section: practice-plan. Stable action: step-4-brief.
 A cold reader’s account of what the portfolio shows, and which claims that matched.
 
 - Ask someone unfamiliar to read it and say what you can do.
-- Compare their answer with your three claims.
+- Compare their answer with your claims.
 
 **Start here:** Ask somebody to read it once and then tell you what it says about how you work.
 
@@ -8465,24 +8836,24 @@ Now ask your own cold reader and write their words rather than your summary of t
 </details>
 
 
-### What a cold reader said the portfolio shows, in their words
+### What a cold reader said the portfolio shows, close to their words, by role
 
 Section: practice-plan. Stable action: write-cold-reader-said.
 
 Somebody who has not seen any of it, reading it once without you explaining anything.
 
-**Answer:** What a cold reader said the portfolio shows, in their words
+**Answer:** What a cold reader said the portfolio shows, close to their words, by role
 
 Somebody who has not seen any of it, reading it once without you explaining anything.
 
 
-### Which of your three claims that matched, and which it did not
+### Which of your claims that matched, and which did not
 
 Section: practice-plan. Stable action: write-matched-claims.
 
-Write your answer for “Which of your three claims that matched, and which it did not”. Use the task instructions below to decide what to include.
+Write your answer for “Which of your claims that matched, and which did not”. Use the task instructions below to decide what to include.
 
-**Answer:** Which of your three claims that matched, and which it did not
+**Answer:** Which of your claims that matched, and which did not
 
 
 
@@ -8495,18 +8866,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Is the portfolio finished when it looks finished?
 
-- It is finished when the promises are kept, the claims are supported, and a cold reader arrives at the message you intended.
-- Broadly, since presentation is what is assessed first.
-- Yes, once the case studies are complete.
+- Yes, once every case study is complete and the index page is in place.
+- Broadly yes, since presentation is the first thing any reviewer assesses.
+- It is finished when promises are kept, claims supported, and a cold reader agrees.
 
 <details>
 <summary>After your attempt</summary>
 
-It is finished when the promises are kept, the claims are supported, and a cold reader arrives at the message you intended. — Three checks, none of which is about appearance. A promise the case study does not keep is the commonest overclaim, and it is invisible until somebody reads both.
+Yes, once every case study is complete and the index page is in place. — Complete case studies with an index promising something else is the exact case this lesson is about.
 
-Broadly, since presentation is what is assessed first. — It is read first and it is not what the assessment turns on.
+Broadly yes, since presentation is the first thing any reviewer assesses. — It is read first and it is not what the assessment turns on.
 
-Yes, once the case studies are complete. — Complete case studies with an index promising something else is the exact case this lesson is about.
+It is finished when promises are kept, claims supported, and a cold reader agrees. — Three checks, none of which is about appearance. A promise the case study does not keep is the commonest overclaim, and it is invisible until somebody reads both.
 
 Improve: Check each promise against its case study in step 1 and rewrite any that does not hold. Record the change in step 5.
 
@@ -8523,20 +8894,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You swept all three case studies for unsupported claims. Is that enough?
+You swept every case study for unsupported claims. Is that enough?
 
-- No. Index blurbs and about pages are written last, briefly, from memory, and that is where the unsupported sentences collect.
-- Yes, since the case studies carry the substance.
-- Yes, if the summaries are drawn from the case studies.
+- It is enough, provided the index summaries were drawn from the case studies.
+- It is enough, since the case studies carry all the substance a reviewer reads.
+- The index and about pages need it too; summaries written last collect overclaims.
 
 <details>
 <summary>After your attempt</summary>
 
-No. Index blurbs and about pages are written last, briefly, from memory, and that is where the unsupported sentences collect. — Measurably reduced friction for small businesses, on an index page, undoes three careful case studies. The sweep is across the whole portfolio rather than page by page.
+It is enough, provided the index summaries were drawn from the case studies. — They are usually drawn from memory of them, which is where the inflation enters.
 
-Yes, since the case studies carry the substance. — They do, and the index is what everybody reads first.
+It is enough, since the case studies carry all the substance a reviewer reads. — They do, and the index is what everybody reads first.
 
-Yes, if the summaries are drawn from the case studies. — They are drawn from memory of them, which is where the inflation enters.
+The index and about pages need it too; summaries written last collect overclaims. — Measurably reduced friction for small businesses, on an index page, undoes careful case studies. Index blurbs and about pages are written last, briefly, from memory, so the sweep covers the whole portfolio.
 
 Improve: Sweep the index and about pages in step 2 and record what you softened. Note the change in step 5.
 
@@ -8555,36 +8926,36 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your cold reader said the portfolio shows somebody who tests things and admits what did not work, but was not sure how research became design. What have you learned?
 
-- That the first claim needs more explanation in the case study.
-- That the reader skimmed too quickly.
-- Two claims arrived and one did not, which is a finding about the portfolio rather than about the reader.
+- That this reader skimmed too quickly to notice how research became design.
+- That the first claim needs a longer explanation further down the case study.
+- Two claims arrived and one did not, which is a finding about the portfolio.
 
 <details>
 <summary>After your attempt</summary>
 
-That the first claim needs more explanation in the case study. — More words further down reach the same reader in the same way. Placement is the usual answer.
+That this reader skimmed too quickly to notice how research became design. — A single reading is what a reviewer gives it. The skim is the condition rather than a failure of the test.
 
-That the reader skimmed too quickly. — A single reading is what a reviewer gives it. The skim is the condition rather than a failure of the test.
+That the first claim needs a longer explanation further down the case study. — More words further down reach the same reader in the same way. Placement is the usual answer.
 
-Two claims arrived and one did not, which is a finding about the portfolio rather than about the reader. — The synthesis page exists; it is probably too far down or unlabelled in the skim. The fix is nearly always placement rather than more words.
+Two claims arrived and one did not, which is a finding about the portfolio. — The synthesis page exists; it is probably too far down or unlabelled in the skim. The fix is nearly always placement rather than more words.
 
 Improve: Record which claims arrived in step 4 and move the evidence for the missing one earlier. Note the change in step 5.
 
-Check again: All three claims are reachable in a single reading.
+Check again: Every claim is reachable in a single reading.
 
 Answers to revisit: cold-reader-said, matched-claims, improvement-made
 
 </details>
 
 
-### Publish and record
+### Share or publish, and record
 
 Section: practice. Stable action: step-5-brief.
 
 What you published, where and when, with anything deliberately kept private.
 
-- Publish deliberately and note the date and what was included.
-- Keep the version you published.
+- Share or publish deliberately and note the date, the place and what was included.
+- Keep the version you shared.
 
 **Start here:** Write the private list before pressing anything.
 
@@ -8597,13 +8968,13 @@ What you published, where and when, with anything deliberately kept private.
 **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
 
 
-### What you published, where, and when
+### What you shared or published, where, and when
 
 Section: practice. Stable action: write-published-what.
 
-Write your answer for “What you published, where, and when”. Use the task instructions below to decide what to include.
+Write your answer for “What you shared or published, where, and when”. Use the task instructions below to decide what to include.
 
-**Answer:** What you published, where, and when
+**Answer:** What you shared or published, where, and when
 
 
 
@@ -8619,15 +8990,41 @@ Raw research, consent records, anything a participant did not agree to publicati
 Raw research, consent records, anything a participant did not agree to publication of.
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: Your portfolio is ready: two case studies, an index and an about page. A friend recommends a free hosting site she used last year. One case study includes a recreated job slip and two quotations from a participant whose consent covered “this project” only. A reviewer is waiting to see it this week.
+
+**Task:** How would you share it this week, and what would you check before publishing anything? Give your reasons.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Publishes on the friend’s host straight away, keeping the quotations because no names appear.
+- Adequate: Sends the reviewer a PDF privately this week, removes or describes the uncovered quotations, and leaves publishing until the host is checked on the day.
+- Strong: As adequate, and lists what stays private, notes that a free host may make everything public, records the date and terms checked, and sweeps the index and about pages first.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -8650,7 +9047,7 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: Final check and publishing
-What I am trying to do: Check the finished portfolio against its three promises and every honesty rule this course holds, then publish it deliberately.
+What I am trying to do: Check the finished portfolio against its promises and every honesty rule this course holds, then share it deliberately: privately as a PDF or files, or — only if you choose — as a published site, checked on the day.
 
 Key idea or terms:
 Keeping a promise: The case study delivering what its opening sentence said it would. It is checkable, which is why the promise was written as a sentence rather than a title.
@@ -8712,19 +9109,19 @@ Adequate evidence: A sweep including index, about and navigation, with changes m
 
 Repair: Read the index and about pages against the artefacts. Recheck: The sweep record.
 
-**The hosting decision is verified and recorded**
+**The sharing decision is deliberate and recorded**
 
-Adequate evidence: A dated note of cost, account requirement and terms.
+Adequate evidence: A note of how the portfolio is shared — privately as a PDF or files, or published — and, if published, a dated check of cost, account and public visibility.
 
-0 — Unverified.
+0 — Published without checking, or shared without a record.
 
 1 — Checked without recording.
 
-2 — Verified and dated.
+2 — A private route recorded, or a host verified and dated.
 
-3 — As adequate, and an option requiring a card was rejected.
+3 — As adequate, and what stays private is listed alongside.
 
-Repair: Check the terms today and write down what you found and when. Recheck: The hosting note.
+Repair: Write how you are sharing it; if publishing, check the terms today and write down what you found and when. Recheck: The sharing note.
 
 **A cold reader's account is compared with the claims**
 
@@ -8749,7 +9146,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 - Each promise is checked and reconciled
 - The claim sweep covers every page
-- The hosting decision is verified and recorded
+- The sharing decision is deliberate and recorded
 - A cold reader's account is compared with the claims
 
 <details>
@@ -8757,8 +9154,9 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 - The promise check is mechanical: read the promise, read the case study, and decide whether a stranger would agree it was kept. A promise that is not kept means either the case study changes or the promise does, and the second option is usually right.
 - Claims travel between pages. A number softened in one case study can appear inflated on the index page, and an about page written last is where unsupported summaries collect. Sweep the whole thing at once, including navigation, headings and the about page.
-- Hosting is a choice with the same properties as a resource: it has a cost, an account requirement and terms. Whatever you choose, check it against this course's rules — free without a card, no trial that expires into a charge — and record what you verified and when, because the answer changes over time.
-- A cold reader is the last useful instrument. Ask someone who does not know the projects to read it and tell you what you can do; the gap between their answer and your three claims is the portfolio's actual message, and it is usually not the one you intended.
+- Publishing is a choice, not a requirement. A PDF or the files sent privately to a reviewer is a complete portfolio. If you do publish, hosting has the same properties as a resource: a cost, an account requirement and terms. Check it against this course's rules — free without a card, no trial that expires into a charge — and record what you verified and when, because the answer changes over time.
+- One free route, checked on 5 October 2026 against GitHub's own documentation (docs.github.com/en/pages): GitHub Pages. GitHub Free costs nothing, and on it a Pages site must come from a public repository — everything you upload is public, and GitHub states that Pages sites are publicly available on the internet. Steps: create a free account; choose New repository, name it yourusername.github.io, set it to Public and create it; choose Add file, then Upload files, and upload index.html and your other pages; open Settings, then Pages, choose Deploy from a branch under Build and deployment, pick the main branch and the / (root) folder, and Save. GitHub says changes can take up to 10 minutes to publish. To unpublish, delete the repository (Settings, Danger Zone); GitHub notes that deleting a public repository does not delete copies others have forked. Re-check these terms yourself before publishing, and never upload consent records or raw research.
+- A cold reader is the last useful instrument. Ask someone who does not know the projects to read it and tell you what you can do; the gap between their answer and your claims is the portfolio's actual message, and it is usually not the one you intended.
 
 [NN/g: UX portfolio](https://www.nngroup.com/articles/ux-design-portfolios/).
 

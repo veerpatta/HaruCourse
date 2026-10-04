@@ -85,7 +85,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The path was mapped from a real team: a fortnightly planning session picks work; an engineer estimates and often splits it; a build takes days to a week; a review compares the build with the design; a test pass finds defects; and a release goes out weekly behind a flag. The three change points were named with examples: at slicing the booking flow was split so that the cancellation path shipped a fortnight later; at estimation the held-place timer turned out to need server work and was simplified; during build the empty state was invented by the engineer because the design had not included one — which the m08 lessons would have prevented.
+- Made-up example: the path was mapped for an invented team: a fortnightly planning session picks work; an engineer estimates and often splits it; a build takes days to a week; a review compares the build with the design; a test pass finds defects; and a release goes out weekly behind a flag. The three change points were named with examples: at slicing the booking flow was split so that the cancellation path shipped a fortnight later; at estimation the held-place timer turned out to need server work and was simplified; during build the empty state was invented by the engineer because the design had not included one — which the m08 lessons would have prevented.
 
 
 ### Choose where you will do the work
@@ -200,11 +200,11 @@ Write your answer for “The stages from decision to a person using it, in order
 
 Section: practice-plan. Stable action: write-who-decides.
 
-Where you cannot tell, write that you cannot tell. An unknown decider is a finding.
+Write roles, such as product lead or engineer, not names. Where you cannot tell, write that you cannot tell. An unknown decider is a finding.
 
 **Answer:** Who decides at each stage
 
-Where you cannot tell, write that you cannot tell. An unknown decider is a finding.
+Write roles, such as product lead or engineer, not names. Where you cannot tell, write that you cannot tell. An unknown decider is a finding.
 
 
 ### Find the change points
@@ -492,18 +492,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You hand over a design and the team builds it. Is that how it works?
 
-- No. Every team modifies designs during delivery, because building reveals what drawing did not. The choice is whether that happens with you or without you.
-- Yes, in well-run teams.
-- Yes, if the handover is thorough enough.
+- Close enough, provided the handover document answers every question the build could possibly raise later.
+- Rarely as drawn: building reveals what drawing missed, and changes get made with you or without you.
+- In well-run teams it is: their process keeps the agreed design steady until the day it ships.
 
 <details>
 <summary>After your attempt</summary>
 
-No. Every team modifies designs during delivery, because building reveals what drawing did not. The choice is whether that happens with you or without you. — A missing empty state gets invented by whoever is typing. An expensive interaction gets simplified by whoever sized it. Neither is a failure of the team.
+Close enough, provided the handover document answers every question the build could possibly raise later. — A thorough handover reduces the changes during build. It cannot attend the slicing session, where the biggest changes are decided.
 
-Yes, in well-run teams. — Well-run teams change designs during delivery more openly, not less often.
+Rarely as drawn: building reveals what drawing missed, and changes get made with you or without you. — A missing empty state gets invented by whoever is typing. An expensive interaction gets simplified by whoever sized it. Neither is a failure of the team; the choice is whether you are there when it happens.
 
-Yes, if the handover is thorough enough. — A thorough handover reduces the changes during build. It cannot attend the slicing session.
+In well-run teams it is: their process keeps the agreed design steady until the day it ships. — Well-run teams change designs during delivery more openly, not less often.
 
 Improve: Check your three change points in step 3 include one during build, and name what the handover would have had to say. Record the change in step 5.
 
@@ -522,18 +522,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You have no team to observe. Does that make this lesson impossible to do honestly?
 
-- No, you can describe a typical process from the reading.
-- Yes, and the honest answer is to skip it.
-- No. A public project’s issue tracker shows real slicing, real estimates and real review comments, and the source line says what you had.
+- A typical delivery process described from the assigned reading can stand in for the map instead.
+- It does; without access to a team, the honest course is to skip the lesson and note why.
+- A public tracker shows real slicing and review, and the source line says that is what you read.
 
 <details>
 <summary>After your attempt</summary>
 
-No, you can describe a typical process from the reading. — That produces a description rather than a map, and the change points in it will be the ones the book mentions rather than the ones a team met.
+A typical delivery process described from the assigned reading can stand in for the map instead. — That produces a description rather than a map, and the change points in it will be the ones the book mentions rather than the ones a team met.
 
-Yes, and the honest answer is to skip it. — Skipping is honest and it leaves you with nothing. Reading a real tracker is available to anybody with a browser.
+It does; without access to a team, the honest course is to skip the lesson and note why. — Skipping is honest and it leaves you with nothing. Reading a real tracker is available to anybody with a browser.
 
-No. A public project’s issue tracker shows real slicing, real estimates and real review comments, and the source line says what you had. — What it does not show is the conversations nobody typed, which is a real limit and a stated one. A general description of delivery, by contrast, contains nothing that could surprise you.
+A public tracker shows real slicing and review, and the source line says that is what you read. — An open tracker holds real slicing, estimates and review comments. What it does not show is the conversations nobody typed, which is a real limit and a stated one. A general description of delivery, by contrast, contains nothing that could surprise you.
 
 Improve: Write plainly in step 2 what you had access to, and make sure the map comes from it rather than from general knowledge. Record the change in step 5.
 
@@ -552,18 +552,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You have marked every stage as one where you need to be present. Is that right?
 
-- Unlikely. Being everywhere is not available, and the point of the split is to know where a document genuinely suffices.
-- Yes, for a design you care about.
-- Yes, since designs change at every stage.
+- It is right, since a design can change at any stage and nobody knows in advance which one.
+- It is right for any design you care about, because your absence is when changes slip in.
+- Unlikely: the point of the split is to find where a written specification is enough.
 
 <details>
 <summary>After your attempt</summary>
 
-Unlikely. Being everywhere is not available, and the point of the split is to know where a document genuinely suffices. — During build, a handover with exact wording, states and behaviour usually answers the question without you. Slicing is where a document cannot help, because it cannot answer.
+It is right, since a design can change at any stage and nobody knows in advance which one. — It can, and the useful question is where your presence changes the outcome rather than where change is possible.
 
-Yes, for a design you care about. — That is how a designer ends up in every meeting and present at none of them properly.
+It is right for any design you care about, because your absence is when changes slip in. — That is how a designer ends up in every meeting and present at none of them properly.
 
-Yes, since designs change at every stage. — They can, and the useful question is where your presence changes the outcome rather than where change is possible.
+Unlikely: the point of the split is to find where a written specification is enough. — Being everywhere is not available. During build, a handover with exact wording, states and behaviour usually answers the question without you. Slicing is where a document cannot help, because it cannot answer.
 
 Improve: Move at least one stage into the specification-is-enough list in step 4, and say what the document must contain. Record the change in step 5.
 
@@ -603,15 +603,41 @@ Write your answer for “Two outcomes from the standard the mapped process would
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a community radio station publishes a weekly events listing online and on paper. After a volunteer designer agreed a new layout, each week the station manager picks which events fit, a web volunteer estimates the changes on Sunday evening, and a printer formats the paper copy. Last month the layout’s step-free access line disappeared from the printed listing, and nobody can say where it was dropped.
+
+**Task:** Name the one stage where you would most want to be present for this listing, and explain why that stage rather than the others.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Picks the stage where the layout gets looked at, or says every stage, without naming what could change there or what a written specification could not answer.
+- Adequate: Names a stage where the design can change (the weekly pick, the Sunday estimate or the printer’s formatting) and explains what could change there that a written specification could not settle.
+- Strong: As adequate, and says which stages a specification could cover instead, such as exact wording and required lines for the printer, and what stays uncertain about where the access line was lost.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -754,7 +780,7 @@ Stable ID: m14-l02-v1. Core.
 
 A story is where research becomes work. Written badly it delivers a screen; written well it delivers an outcome.
 
-Bring: Your findings and a feature you want built.
+Bring: Your findings and a feature you want built, from Project 1 or Project 2.
 
 Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
@@ -825,7 +851,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Five stories from the booking work. “As someone who has booked, I can see that my place is held and for how long, so that I do not pay twice.” “As someone whose payment did not confirm, I can find out what happened without ringing, so that I do not book again.” Three were sized in days; two were too big and were re-sliced by outcome rather than by layer — the second became “I can see the status of a booking from the confirmation message” and “I can see the status without the message”, each independently useful.
+- Made-up example: five stories from the booking work. “As someone who has booked, I can see that my place is held and for how long, so that I do not pay twice.” “As someone whose payment did not confirm, I can find out what happened without ringing, so that I do not book again.” Three were sized in days; two were too big and were re-sliced by outcome rather than by layer — the second became “I can see the status of a booking from the confirmation message” and “I can see the status without the message”, each independently useful.
 
 
 ### Choose where you will do the work
@@ -1243,18 +1269,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Are stories a formality that translate designs into tickets?
 
-- No, they are a specification in a different format.
-- Largely yes, since the design already says what to build.
-- Written as translations they lose the reason, and the first time an engineer meets a constraint they will guess at the intent.
+- They are the specification itself, rewritten in a shorter format for the people who will build it.
+- Largely, yes: the design already says what to build, so the story only needs to point at it clearly.
+- Written as translations they lose the reason, so a constraint leaves the engineer guessing at intent.
 
 <details>
 <summary>After your attempt</summary>
 
-No, they are a specification in a different format. — A story is a placeholder for a conversation. Treating it as a specification produces long stories nobody can slice.
+They are the specification itself, rewritten in a shorter format for the people who will build it. — A story is a placeholder for a conversation. Treating it as a specification produces long stories nobody can slice.
 
-Largely yes, since the design already says what to build. — It says what to build if nothing gets in the way. Something always gets in the way.
+Largely, yes: the design already says what to build, so the story only needs to point at it clearly. — It says what to build if nothing gets in the way. Something usually gets in the way, and then only the reason tells anybody what would be acceptable instead.
 
-Written as translations they lose the reason, and the first time an engineer meets a constraint they will guess at the intent. — The why is the part that survives contact with reality. Without it, a countdown that turns out to be expensive gets dropped rather than replaced with something cheaper that solves the same problem.
+Written as translations they lose the reason, so a constraint leaves the engineer guessing at intent. — The why is the part that survives contact with reality. Without it, a countdown that turns out to be expensive gets dropped rather than replaced with something cheaper that solves the same problem.
 
 Improve: Check every story in step 1 finishes the sentence “so that they …”, and rewrite any that does not. Record the change in step 5.
 
@@ -1273,16 +1299,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 One of your stories would help nobody if it shipped alone. What should you do?
 
-- Leave it; some work is genuinely dependent.
-- Reorder so it ships at the same time as its partner.
+- Leave it as it is, since some work is genuinely dependent and will ship together anyway.
+- Reorder the backlog so it ships in the same release as the story it depends on.
 - Merge it with its other half, or re-slice so each piece is useful on its own.
 
 <details>
 <summary>After your attempt</summary>
 
-Leave it; some work is genuinely dependent. — Some is, and it should be merged rather than left looking like something that could ship.
+Leave it as it is, since some work is genuinely dependent and will ship together anyway. — Some is, and it should be merged rather than left looking like something that could ship.
 
-Reorder so it ships at the same time as its partner. — That is merging, done informally, with the dependency left invisible to whoever plans the work.
+Reorder the backlog so it ships in the same release as the story it depends on. — That is merging, done informally, with the dependency left invisible to whoever plans the work.
 
 Merge it with its other half, or re-slice so each piece is useful on its own. — Independent value is what lets a team release in pieces and learn from each one. A story that waits for another is a task pretending to be a story.
 
@@ -1303,18 +1329,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You split a story into the design, then the front end, then the server work. What is wrong with that?
 
-- It makes estimation harder.
-- None of the three pieces helps anybody alone, so nothing can be released or learned from until all three are done.
-- Nothing, since that is the order the work happens in.
+- Nothing much; it follows the order the work happens in anyway, which keeps the handoffs simple.
+- No piece helps anybody alone, so nothing can ship or teach you anything until all three are done.
+- It makes each piece harder to estimate, because none of the three has a clear finish line of its own.
 
 <details>
 <summary>After your attempt</summary>
 
-It makes estimation harder. — It often makes estimation easier and feedback impossible, which is the worse trade.
+Nothing much; it follows the order the work happens in anyway, which keeps the handoffs simple. — It is roughly the order within each slice. Making it the split means the slices are activities rather than outcomes.
 
-None of the three pieces helps anybody alone, so nothing can be released or learned from until all three are done. — Slicing by layer looks orderly and defers every piece of feedback to the end. Slicing by outcome gives you something usable, and something to learn from, at each step.
+No piece helps anybody alone, so nothing can ship or teach you anything until all three are done. — Slicing by layer looks orderly and defers every piece of feedback to the end. Slicing by outcome gives you something usable, and something to learn from, at each step.
 
-Nothing, since that is the order the work happens in. — It is roughly the order within each slice. Making it the split means the slices are activities rather than outcomes.
+It makes each piece harder to estimate, because none of the three has a clear finish line of its own. — It often makes estimation easier and feedback impossible, which is the worse trade.
 
 Improve: Re-slice that story by outcome in step 4 and write both halves. Record the change in step 5.
 
@@ -1354,15 +1380,41 @@ Write your answer for “Which stories came directly from a research finding, an
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a neighbourhood swimming pool wants regulars to book lane swims online. The backlog has three items: build the timetable screen, connect the timetable to the booking database, and add a cancel button. Today regulars queue at the desk, and some give up when the lanes they wanted are already full.
+
+**Task:** Rewrite one item as a story with who, what and why, and explain why your version could ship on its own and still help somebody.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Rewords a layer or a screen task, such as connecting the database, in story grammar; no outcome for a person, or a piece that helps nobody until the others ship.
+- Adequate: Names a regular, a capability such as seeing which lanes are free and booking one, and a reason tied to the queue or the full lanes, and says what that story alone would let somebody do.
+- Strong: As adequate, and offers a smaller first slice (for example seeing free lanes before booking exists) with what it leaves out, or names what is still unknown about cancelling.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -1512,7 +1564,7 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - Criteria for three stories covering success and failure
 - Accessibility criteria drawn from your m11 work
 - Outcome-shaped criteria with no implementation constraints
-- A read-through by someone else with ambiguities rewritten
+- A read-through by someone else, or a solo test a day later, with ambiguities rewritten
 
 ### Start here: in everyday words
 
@@ -1576,7 +1628,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The held-place story got seven criteria. Success: the review screen states the place is held and the remaining time; the time counts down; when it expires the person is told and their details are preserved. Failure: if the hold cannot be confirmed the screen says so and does not proceed to payment. Accessibility: the timer is announced when it appears and at expiry rather than every second; the state is distinguishable without colour; the screen is operable from a keyboard. Two criteria were rewritten after someone read them and asked what “clearly” meant.
+- Made-up example: the held-place story got seven criteria. Success: the review screen states the place is held and the remaining time; the time counts down; when it expires the person is told and their details are preserved. Failure: if the hold cannot be confirmed the screen says so and does not proceed to payment. Accessibility: the timer is announced when it appears and at expiry rather than every second; the state is distinguishable without colour; the screen is operable from a keyboard. Two criteria were rewritten after someone read them and asked what “clearly” meant.
 
 
 ### Choose where you will do the work
@@ -1718,7 +1770,7 @@ Accessibility criteria taken from your Module 11 checks, including when anything
 
 **Enough:** Each story has at least one accessibility criterion that could fail.
 
-**Accessibility in the criteria:** The only place it becomes part of done. Written anywhere else it is a preference somebody may get to.
+**Accessibility in the criteria:** Where it becomes part of what is checked before a story is accepted. Written only elsewhere, it tends to be checked late, after release, when fixing it costs more.
 
 **Announcement frequency:** How often something changing is spoken. A countdown announced every second is unusable; announced at appearance and at expiry it is informative.
 
@@ -1739,7 +1791,7 @@ Made-up example. Writing acceptance criteria for a tool-library booking, and lea
 
 **What I changed:** Three accessibility criteria moved into the criteria themselves: keyboard operable, state distinguishable without colour, timer announced at appearance and at expiry only. Done now means those are true.
 
-**Wrong turn:** The wrong turn is keeping accessibility in the document it came from, because repeating it feels like duplication. Anything outside the criteria is optional in practice, however well it is written elsewhere.
+**Wrong turn:** The wrong turn is keeping accessibility in the document it came from, because repeating it feels like duplication. Anything outside the criteria tends to go unchecked at acceptance, however well it is written elsewhere, and is found later at a higher cost.
 
 **Trade-off:** The same requirement now exists in two documents and they can drift. The criteria are the ones that gate release, so they are the ones kept correct.
 
@@ -1979,18 +2031,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Are acceptance criteria a testing artefact?
 
-- They belong to whoever is available to write them.
-- Yes, which is why testers usually write them.
-- They are a design artefact that testing uses. They record what the design actually requires, which is why writing them is your work.
+- Mainly a testing artefact, which is why testers usually write them once the build exists.
+- A design artefact that testing uses: they record what the design requires, so they are yours.
+- They belong to whoever has time to write them, since any careful person can list what to check.
 
 <details>
 <summary>After your attempt</summary>
 
-They belong to whoever is available to write them. — They belong to whoever knows what the design requires, which is the person who made the decisions.
+Mainly a testing artefact, which is why testers usually write them once the build exists. — Where testers write them, the criteria reflect what is testable rather than what was designed.
 
-Yes, which is why testers usually write them. — Where testers write them, the criteria reflect what is testable rather than what was designed.
+A design artefact that testing uses: they record what the design requires, so they are yours. — Left to a tester, criteria tend to cover the paths that are easy to test and miss the ones the design cares about most, particularly the failures and the announcements.
 
-They are a design artefact that testing uses. They record what the design actually requires, which is why writing them is your work. — Left to a tester, the criteria will cover the paths that are easy to test and omit the ones the design cares about most, particularly the failures and the announcements.
+They belong to whoever has time to write them, since any careful person can list what to check. — They belong to whoever knows what the design requires, which is the person who made the decisions.
 
 Improve: Check each story in step 1 has criteria covering something only you would know the design requires. Record the change in step 5.
 
@@ -2009,18 +2061,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your accessibility requirements are in the handover document, linked from the story. Is that enough?
 
-- Yes, and repeating it risks the two documents disagreeing.
-- No. Anything outside the criteria is optional in practice, however well it is written elsewhere.
-- Yes, provided the link is prominent.
+- It leaves them unchecked at acceptance: a build can pass every criterion and still fail them.
+- It is enough if the link is prominent, because everybody building the story will open it first.
+- It is the better choice, because repeating requirements in two places lets the copies drift apart.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, and repeating it risks the two documents disagreeing. — They can disagree, and the criteria are the ones that gate release, so those are the ones kept correct.
+It leaves them unchecked at acceptance: a build can pass every criterion and still fail them. — The build meets the criteria, gets accepted and ships. A timer announcing every second passes every criterion you wrote and makes the screen unusable for anybody listening. It is still a defect once somebody finds it; the cost is that nobody checked for it before release.
 
-No. Anything outside the criteria is optional in practice, however well it is written elsewhere. — The build meets the criteria, gets accepted and ships. A timer announcing every second passes every criterion you wrote and makes the screen unusable for anybody listening.
+It is enough if the link is prominent, because everybody building the story will open it first. — Prominence does not make it part of what is checked. Only the criteria gate acceptance.
 
-Yes, provided the link is prominent. — Prominence does not make it part of done. Only the criteria gate acceptance.
+It is the better choice, because repeating requirements in two places lets the copies drift apart. — They can drift, and the criteria are the ones checked at acceptance, so those are the ones to keep correct.
 
 Improve: Move at least three accessibility requirements into the criteria themselves in step 3. Record the change in step 5.
 
@@ -2039,18 +2091,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A criterion says the remaining time is clearly shown. What is wrong with it?
 
-- Nothing, since clarity is the actual requirement.
-- It should specify a font size.
-- Clearly cannot be checked, so nothing will ever fail on it and two people can honestly disagree.
+- Clearly cannot be checked: two careful people could look at the same screen and disagree.
+- Nothing important, since clarity is the requirement and the team will know it when they see it.
+- It needs a minimum font size and colour added, so that clearly has a measurable threshold.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing, since clarity is the actual requirement. — Clarity is the intention. The criterion has to name what makes it so.
+Clearly cannot be checked: two careful people could look at the same screen and disagree. — It survives review because nobody disagrees with it, and nothing can ever fail on it. The checkable version says what is stated and where, which somebody can look at and agree about in two seconds.
 
-It should specify a font size. — That is an implementation criterion, which is the opposite failure. State what is shown and where.
+Nothing important, since clarity is the requirement and the team will know it when they see it. — Clarity is the intention. The criterion has to name what makes it so, or two people will judge it differently.
 
-Clearly cannot be checked, so nothing will ever fail on it and two people can honestly disagree. — It survives review because nobody disagrees with it. The checkable version says what is stated and where, which somebody can look at and agree about in two seconds.
+It needs a minimum font size and colour added, so that clearly has a measurable threshold. — That is an implementation criterion, which is the opposite failure. State what is shown and where.
 
 Improve: Rewrite that criterion in step 1 so it names what is stated and where, and record the change in step 5.
 
@@ -2067,7 +2119,7 @@ Section: practice. Stable action: step-5-brief.
 
 Somebody reading the criteria and saying how they would check each, or the same test done alone after a day, with everything ambiguous rewritten.
 
-- Ask someone to read the criteria and say how they would check each.
+- Ask someone to read the criteria and say how they would check each, or check them yourself a day later without the design open.
 - Rewrite anything two people could disagree about.
 - Save the criteria with the stories.
 
@@ -2080,15 +2132,15 @@ Somebody reading the criteria and saying how they would check each, or the same 
 **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
 
 
-### Who read them and how they said they would check each, or how you tested them alone
+### Who read them (a role, not a name) and how they said they would check each, or how you tested them alone
 
 Section: practice. Stable action: write-reader-check.
 
-Alone: leave them a day, then write the check for each without looking at the design. Anything you cannot check is ambiguous.
+Summarise what the reader said rather than quoting them, and keep any verbatim notes in your own private file. Alone: leave the criteria a day, then write the check for each without looking at the design. Anything you cannot check is ambiguous.
 
-**Answer:** Who read them and how they said they would check each, or how you tested them alone
+**Answer:** Who read them (a role, not a name) and how they said they would check each, or how you tested them alone
 
-Alone: leave them a day, then write the check for each without looking at the design. Anything you cannot check is ambiguous.
+Summarise what the reader said rather than quoting them, and keep any verbatim notes in your own private file. Alone: leave the criteria a day, then write the check for each without looking at the design. Anything you cannot check is ambiguous.
 
 
 ### Everything you rewrote afterwards
@@ -2102,15 +2154,41 @@ Write your answer for “Everything you rewrote afterwards”. Use the task inst
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a public library is adding a renew-your-loan button to its website. The draft acceptance criteria say: renewal is easy; the due date updates; it works for everyone. Renewal can fail when another reader has reserved the book, and a loan cannot be renewed more than twice.
+
+**Task:** Rewrite one weak criterion so somebody else could check it, add one criterion for a failure path, and explain why each is now checkable.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps judgement words such as easy or works for everyone, names an implementation, or covers only the success path.
+- Adequate: An observable criterion (for example: after renewal the page shows the new due date) and a failure criterion for a reserved book or a third renewal saying what the person is told, with why two people would agree.
+- Strong: As adequate, and adds an accessibility criterion stated as an outcome, such as operable by keyboard with the result announced, and says how each criterion would be checked.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -2169,13 +2247,13 @@ When the activity is finished, tell me to return to the course answer called “
 
 **Criteria are observable by someone without context**
 
-Adequate evidence: Criteria a reader could verify, confirmed by a read-through with someone else.
+Adequate evidence: Criteria a reader could verify, confirmed by a read-through with someone else or, with nobody available, by your own check a day later without the design open.
 
 0 — Criteria use words like clear, easy or intuitive.
 
 1 — Mostly observable with one or two subjective items.
 
-2 — All observable and confirmed by a reader.
+2 — All observable and confirmed by a reader or a labelled solo test.
 
 3 — As adequate, and the reader's questions are recorded and resolved.
 
@@ -2240,7 +2318,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 - Observable is the whole test. “The status is clear” cannot be checked; “the review screen states that the place is held and shows the remaining time” can. The assigned reading frames criteria as conditions of satisfaction, and the practical version is that a person with no context can read the criterion, look at the build and say yes or no.
 - Failure paths belong in the criteria because they are what gets dropped under time pressure. If the error state, the empty state and the expiry behaviour are not written as conditions, they are optional, and the first version to ship will not have them.
-- Accessibility is the same argument with higher stakes. Criteria naming keyboard operation, focus visibility, announced errors and contrast are what make those things part of done rather than a later ticket that is never scheduled. Your m11 work becomes deliverable here or it does not become deliverable at all.
+- Accessibility is the same argument with higher stakes. Criteria naming keyboard operation, focus visibility, announced errors and contrast are what make those things part of done rather than a later ticket that may never be scheduled. Your m11 work becomes part of what is checked here; left out, it tends to be found after release, when fixing it costs more.
 - Criteria should describe outcomes, not implementations. “Uses a dialog element” constrains the engineer without saying why; “can be dismissed with the keyboard and returns focus to the control that opened it” states what must be true and leaves the how open, which is both more respectful and more durable.
 
 [Atlassian: acceptance criteria](https://www.atlassian.com/work-management/project-management/acceptance-criteria).
@@ -2324,7 +2402,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The appetite for the booking improvements was set at two weeks. The full design was six. Cutting to fit kept the held-place message, the payment states and the accessible form, and removed the shortlist, the filter presets and the redesigned card. Each removal recorded what would bring it back: the shortlist if a second study showed people comparing more than three options, the presets if support saw repeated requests, and the card if the system needed it elsewhere. One item was marked not worth building at all — an animated confirmation — with the reason.
+- Made-up example: the appetite for the booking improvements was set at two weeks. The full design was six. Cutting to fit kept the held-place message, the payment states and the accessible form, and removed the shortlist, the filter presets and the redesigned card. Each removal recorded what would bring it back: the shortlist if a second study showed people comparing more than three options, the presets if support saw repeated requests, and the card if the system needed it elsewhere. One item was marked not worth building at all — an animated confirmation — with the reason.
 
 
 ### Choose where you will do the work
@@ -2602,7 +2680,7 @@ Section: practice-plan. Stable action: step-3-sort-6.
 
 Six return conditions from a made up tool-library cut list. For each one, decide whether it would actually settle anything.
 
-The accessible form work comes back if somebody reports being unable to complete the booking.
+The accessible form work, already known to fail a keyboard check, comes back if somebody reports being unable to complete the booking.
 
 - a real condition
 - enthusiasm in disguise
@@ -2720,18 +2798,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Somebody suggests building it properly and seeing how long it takes. What is wrong with that?
 
-- It makes planning harder for everybody else.
-- It defers the constraint rather than removing it, and the constraint arrives as a rushed final week in which quality is cut silently.
-- Nothing, if the team is disciplined about quality.
+- Mainly that it makes planning harder for everybody else who depends on knowing a finish date.
+- Nothing serious, as long as the team stays disciplined about quality right to the end of the work.
+- It defers the constraint, so quality gets cut silently in a rushed final week.
 
 <details>
 <summary>After your attempt</summary>
 
-It makes planning harder for everybody else. — True and secondary. The cost lands on the design.
+Mainly that it makes planning harder for everybody else who depends on knowing a finish date. — True and secondary. The cost lands on the design.
 
-It defers the constraint rather than removing it, and the constraint arrives as a rushed final week in which quality is cut silently. — Whatever is unfinished at the end is what gets cut, which is usually the accessibility work and the error states. Deciding the appetite first makes the trade visible while you can still design for it.
+Nothing serious, as long as the team stays disciplined about quality right to the end of the work. — Discipline is exactly what a rushed week removes, and nobody decides to cut quality; it is what is left over.
 
-Nothing, if the team is disciplined about quality. — Discipline is exactly what a rushed week removes, and nobody decides to cut quality; it is what is left over.
+It defers the constraint, so quality gets cut silently in a rushed final week. — The constraint does not disappear; it arrives late. Whatever is unfinished at the end is what gets cut, which is usually the accessibility work and the error states. Deciding the appetite first makes the trade visible while you can still design for it.
 
 Improve: Write the appetite in step 1 before looking at the design, and say why that amount. Record the change in step 5.
 
@@ -2750,18 +2828,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 One of your return conditions is “when we have time to do it properly”. Is that a condition?
 
-- No. Time never appears on its own, and nothing about the product has to be observed for it to be met.
-- Yes, since capacity genuinely does change.
-- Yes, provided a review date is attached.
+- It counts once a review date is attached, so the item gets looked at again on a fixed day.
+- It counts, because team capacity genuinely changes and the item can return when it does.
+- It names nothing to observe, so it could never come back with the answer no.
 
 <details>
 <summary>After your attempt</summary>
 
-No. Time never appears on its own, and nothing about the product has to be observed for it to be met. — A condition somebody could answer no to is what makes a cut revisable rather than permanent. This one keeps an item alive indefinitely without anybody justifying it.
+It counts once a review date is attached, so the item gets looked at again on a fixed day. — A review date makes it a recurring conversation rather than a condition.
 
-Yes, since capacity genuinely does change. — It does, and when it changes the question is still which of the cut items is worth the capacity. This sentence does not help answer it.
+It counts, because team capacity genuinely changes and the item can return when it does. — Capacity does change, and when it does the question is still which of the cut items is worth it. This sentence does not help answer that.
 
-Yes, provided a review date is attached. — A review date makes it a recurring conversation rather than a condition.
+It names nothing to observe, so it could never come back with the answer no. — Time never appears on its own. A condition somebody could answer no to is what makes a cut revisable rather than permanent; this one keeps an item alive indefinitely without anybody justifying it.
 
 Improve: Rewrite any such condition in step 3 so it names something somebody could observe. Record the change in step 5.
 
@@ -2780,18 +2858,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your accessibility work does not fit in the appetite. What should you cut?
 
-- Something else. Accessibility belongs with the failure paths in what you refuse to cut, and a smaller feature that works for everybody beats a larger one that does not.
-- The accessibility work, with a note to return to it.
-- Nothing, and extend the appetite instead.
+- A feature instead: accessibility sits with the failure paths in what you refuse to cut.
+- Nothing; quietly extend the appetite so the full scope and the accessibility work both fit.
+- The accessibility work for now, with a dated note to return to it in the next round of work.
 
 <details>
 <summary>After your attempt</summary>
 
-Something else. Accessibility belongs with the failure paths in what you refuse to cut, and a smaller feature that works for everybody beats a larger one that does not. — Cutting it is the silent quality decision this lesson exists to prevent. Reducing the scope further is the honest answer, and it is a decision you can state.
+A feature instead: accessibility sits with the failure paths in what you refuse to cut. — Cutting it is the silent quality decision this lesson exists to prevent. A smaller feature that works for everybody beats a larger one that does not, and reducing the scope further is a decision you can state.
 
-The accessibility work, with a note to return to it. — That note is the return condition the sorter warned about: it waits for somebody to report being excluded.
+Nothing; quietly extend the appetite so the full scope and the accessibility work both fit. — Extending can be right when it is decided openly. Doing it quietly avoids the very decision the appetite exists to force.
 
-Nothing, and extend the appetite instead. — Sometimes right, and it should be a decision made openly rather than a way of avoiding the cut.
+The accessibility work for now, with a dated note to return to it in the next round of work. — That note is the return condition the sorter warned about: it waits for somebody to report being excluded.
 
 Improve: Write what you refused to cut in step 5, and reduce the scope elsewhere to fit. Record the change.
 
@@ -2842,15 +2920,41 @@ Accessibility and the failure paths are the usual two. Cutting them is how a dea
 Accessibility and the failure paths are the usual two. Cutting them is how a deadline becomes a silent quality decision.
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a small bakery wants online pre-orders before a street festival in three weeks. The full design has an order form, pick-up time slots, a loyalty stamp card, gift messages, local delivery and a photo gallery. The owner can afford two weeks of a freelancer’s time, and the form has not yet been checked with a keyboard.
+
+**Task:** Decide what survives a two-week appetite, name one cut with its return condition, and explain why.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps everything, or cuts quality such as keyboard access and error handling instead of features; the return condition is “when we have time”.
+- Adequate: Keeps the order form and pick-up slots because they deliver festival pre-orders, keeps the keyboard and error work, and cuts something like the stamp card with a condition that could be answered no.
+- Strong: As adequate, and marks one item not worth building with a reason, or names the risk in a cut (gift messages may matter at a festival) and how to check it.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -3064,7 +3168,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Three stories were taken to an engineer. The held-place story estimated at a week, and the uncertainty was the timer's behaviour across devices and what happens if the person returns after expiry — both undefined in the design. Defining them dropped it to three days. The payment-status story stayed large because it depended on another system nobody had used; the response was to defer it and ship the message-based version first. The third was small and unchanged. The write-up recorded that specification, not persuasion, moved two of the three.
+- Made-up example: three stories were taken to an engineer. The held-place story estimated at a week, and the uncertainty was the timer's behaviour across devices and what happens if the person returns after expiry — both undefined in the design. Defining them dropped it to three days. The payment-status story stayed large because it depended on another system nobody had used; the response was to defer it and ship the message-based version first. The third was small and unchanged. The write-up recorded that specification, not persuasion, moved two of the three.
 
 
 ### Choose where you will do the work
@@ -3128,13 +3232,13 @@ Marking your own gaps first makes the conversation about theirs rather than your
 Marking your own gaps first makes the conversation about theirs rather than yours.
 
 
-### Who you asked, or how you did this without an engineer
+### Who you asked (a role, not a name), or how you did this without an engineer
 
 Section: practice-plan. Stable action: write-who-asked.
 
 No engineer: ask an informed reader what they could not answer from your story and criteria. The unanswerable parts are the unknowns.
 
-**Answer:** Who you asked, or how you did this without an engineer
+**Answer:** Who you asked (a role, not a name), or how you did this without an engineer
 
 No engineer: ask an informed reader what they could not answer from your story and criteria. The unanswerable parts are the unknowns.
 
@@ -3164,15 +3268,15 @@ Three estimates with the reasoning, and a list of what could not be answered fro
 **Unanswerable from the material:** A question your story and criteria do not settle. Each one is a decision waiting to be made by somebody, usually mid-build.
 
 
-### How long each would take, and the reasoning behind each figure
+### How long each would take, and the reasoning behind each figure, summarised in your words
 
 Section: practice-plan. Stable action: write-estimates-given.
 
-Write your answer for “How long each would take, and the reasoning behind each figure”. Use the task instructions below to decide what to include.
+Summarise their reasoning rather than quoting them, and keep any verbatim notes in your own private file. An estimate is information, not a commitment to quote back at anybody.
 
-**Answer:** How long each would take, and the reasoning behind each figure
+**Answer:** How long each would take, and the reasoning behind each figure, summarised in your words
 
-
+Summarise their reasoning rather than quoting them, and keep any verbatim notes in your own private file. An estimate is information, not a commitment to quote back at anybody.
 
 
 ### What they could not answer from your material
@@ -3453,18 +3557,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 An engineer estimates a week for something you thought was two days. What should you ask?
 
-- What makes it a week rather than two days. The answer is usually a decision your design has not made.
-- What could be removed from the story to make it smaller.
-- Whether the estimate could be reduced.
+- What makes it a week rather than two days, since it is often a decision not yet made.
+- Which parts of the story could be removed straight away so that it fits inside two days.
+- Whether the estimate could come down a little if the team agreed to work faster on it.
 
 <details>
 <summary>After your attempt</summary>
 
-What makes it a week rather than two days. The answer is usually a decision your design has not made. — Uncertainty, not effort, is what makes an estimate large. Two undefined states can turn an afternoon of building into a week of covering possibilities.
+What makes it a week rather than two days, since it is often a decision not yet made. — Uncertainty, not effort, often makes an estimate large. Two undefined states can turn an afternoon of building into a week of covering possibilities.
 
-What could be removed from the story to make it smaller. — A reasonable second question. Ask what makes it uncertain first; often nothing needs removing.
+Which parts of the story could be removed straight away so that it fits inside two days. — A reasonable second question. Ask what makes it uncertain first; often nothing needs removing.
 
-Whether the estimate could be reduced. — It can, and reducing it without changing the work moves the contingency somewhere less visible.
+Whether the estimate could come down a little if the team agreed to work faster on it. — It can come down, and reducing it without changing the work moves the contingency somewhere less visible.
 
 Improve: Write what made each estimate uncertain in step 3, and classify it. Record the change in step 5.
 
@@ -3483,18 +3587,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Do engineers pad estimates?
 
-- Some do, and it varies by person.
-- They add contingency for uncertainty, which is rational. Removing the uncertainty removes the contingency.
-- Yes, which is why estimates should be challenged.
+- Some do and some do not; it depends mostly on the habits of the person estimating.
+- They add contingency for uncertainty; removing the uncertainty removes the contingency.
+- Often, yes, which is why every estimate should be challenged before the work is planned.
 
 <details>
 <summary>After your attempt</summary>
 
-Some do, and it varies by person. — It varies less than it seems. What varies is how much your material leaves undefined.
+Some do and some do not; it depends mostly on the habits of the person estimating. — It varies less than it seems. What varies is how much your material leaves undefined.
 
-They add contingency for uncertainty, which is rational. Removing the uncertainty removes the contingency. — Pressing on the number moves the same contingency somewhere less visible, usually into whatever gets rushed at the end. Specification is what actually reduces it.
+They add contingency for uncertainty; removing the uncertainty removes the contingency. — Contingency for the unknown is rational. Pressing on the number moves it somewhere less visible, usually into whatever gets rushed at the end. Specification is what actually reduces it.
 
-Yes, which is why estimates should be challenged. — Challenging the number leaves the uncertainty in place and hides the buffer. The work is the same size afterwards.
+Often, yes, which is why every estimate should be challenged before the work is planned. — Challenging the number leaves the uncertainty in place and hides the buffer. The work is the same size afterwards.
 
 Improve: Redesign one story in step 4 by defining what was undefined, and re-estimate. Record the change in step 5.
 
@@ -3513,18 +3617,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You have no engineer to ask. Can this lesson be done honestly?
 
-- No, since only an engineer can estimate the work.
-- Yes, by estimating the stories yourself.
-- Yes. An informed reader marking what they cannot answer from your story produces the same list of unknowns.
+- It cannot, since only an engineer on the team is able to estimate the work at all.
+- It can, if you estimate the three stories yourself and note where you hesitated.
+- It can: an informed reader marking what your story leaves open finds most unknowns.
 
 <details>
 <summary>After your attempt</summary>
 
-No, since only an engineer can estimate the work. — Only an engineer can estimate accurately, and accuracy is not what this lesson produces.
+It cannot, since only an engineer on the team is able to estimate the work at all. — Only an engineer can estimate accurately, and accuracy is not what this lesson produces.
 
-Yes, by estimating the stories yourself. — Your own estimate cannot show you what your material fails to answer, because you already know the answers.
+It can, if you estimate the three stories yourself and note where you hesitated. — Your own estimate cannot show you what your material fails to answer, because you already know the answers.
 
-Yes. An informed reader marking what they cannot answer from your story produces the same list of unknowns. — The estimate itself will be rough, and the unknowns are what the lesson is about. Say in the access line that no engineer was involved.
+It can: an informed reader marking what your story leaves open finds most unknowns. — The estimate itself will be rough, and the unknowns are what the lesson is about. Say in the access line that no engineer was involved; a reader will miss some system-specific unknowns that an engineer would catch.
 
 Improve: Write plainly in step 1 who you asked, and make sure the unknowns came from somebody other than you. Record the change in step 5.
 
@@ -3564,15 +3668,41 @@ Write your answer for “Which unknowns were decisions you could make, and which
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a parents’ choir wants a page where members swap rehearsal snack duties. The volunteer who would build it estimates three weeks. The design does not say what happens when two people claim the same week, whether reminders are sent, or whether the page connects to the choir’s existing mailing-list service.
+
+**Task:** Name the question you would ask about the estimate, and say which unknown you could remove yourself by deciding, and why.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Argues the three weeks down or asks for it to be faster, without asking what makes it uncertain.
+- Adequate: Asks what makes it three weeks, and names a decision the designer can make, such as what happens when two people claim the same week, as a removable undefined state.
+- Strong: As adequate, and separates that from the mailing-list connection as somebody else’s unknown to defer or design around, saying what the estimate might look like without it.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -3721,7 +3851,7 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 
 - Artefacts sent before the conversation
 - A decision record from the conversation
-- At least one change to the design, recorded
+- Each raised question answered: a recorded change or a justified decision to keep
 - An agreed escalation route for the unexpected
 
 ### Start here: in everyday words
@@ -3766,11 +3896,11 @@ Section: learn. Stable action: learn-3.
 Record every decision made in the room, or it will be re-made differently.
 
 
-### Expect to change something; a handover with no changes was a briefing
+### Idea 4: Expect questions; answer each with a change or a recorded reas…
 
 Section: learn. Stable action: learn-4.
 
-Expect to change something; a handover with no changes was a briefing.
+Expect questions; answer each with a change or a recorded reason to keep the design.
 
 
 ### Agree who decides what when something unexpected appears mid-build
@@ -3786,7 +3916,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The held-place story was sent two days ahead with its criteria, states and wording. The conversation lasted forty minutes and produced six decisions: the timer would be server-driven rather than local, the expiry warning would come from the same source, two of the five states were deferred with a note, the announcement wording changed because the chosen phrasing would repeat every second, and one criterion was rewritten because it prescribed an implementation. The escalation route was agreed: anything not covered comes to the designer same day, and if unavailable, the engineer chooses the option that preserves the person's data.
+- Made-up example: the held-place story was sent two days ahead with its criteria, states and wording. The conversation lasted forty minutes and produced six decisions: the timer would be server-driven rather than local, the expiry warning would come from the same source, two of the five states were deferred with a note, the announcement wording changed because the chosen phrasing would repeat every second, and one criterion was rewritten because it prescribed an implementation. The escalation route was agreed: anything not covered comes to the designer same day, and if unavailable, the engineer chooses the option that preserves the person's data.
 
 
 ### Choose where you will do the work
@@ -3899,15 +4029,15 @@ Made-up example. Running a handover for a tool-library feature, and running it a
 **Unknown:** Still unknown: whether everybody read it. Two clearly had, one clearly had not, and opening with questions made that visible rather than hidden.
 
 
-### Their questions, in their words
+### Their questions, summarised closely enough to act on
 
 Section: practice-plan. Stable action: write-their-questions.
 
-Start with these rather than narrating your screens. The narration is what the document was for.
+Start with these rather than narrating your screens. Summarise each question in a line; keep any verbatim notes in your own private file, with a date to delete them. On the rehearsal route, label every question as a rehearsal question.
 
-**Answer:** Their questions, in their words
+**Answer:** Their questions, summarised closely enough to act on
 
-Start with these rather than narrating your screens. The narration is what the document was for.
+Start with these rather than narrating your screens. Summarise each question in a line; keep any verbatim notes in your own private file, with a date to delete them. On the rehearsal route, label every question as a rehearsal question.
 
 
 ### What they said was expensive, and what already exists
@@ -4206,18 +4336,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Does handover mean giving the design to the team?
 
-- Yes, provided the documentation is complete enough.
-- It means agreeing what will be built, under what constraints, with what still undecided. The document is the input, not the event.
-- Yes, and the conversation is a courtesy.
+- Agreeing what gets built, under which constraints, with what is still undecided.
+- Giving the design over, provided the documentation is complete enough to answer everything.
+- Giving the design over; the conversation afterwards is mostly a courtesy.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, provided the documentation is complete enough. — No document answers a question about cost or about what already exists, and both change designs.
+Agreeing what gets built, under which constraints, with what is still undecided. — The document is the input, not the event. Treated as a delivery, handover produces surprises later: questions arriving one at a time by message, and decisions made without you because nobody could reach you.
 
-It means agreeing what will be built, under what constraints, with what still undecided. The document is the input, not the event. — Treated as a delivery, it produces surprises later: questions arriving one at a time by message, and decisions made without you because nobody could reach you.
+Giving the design over, provided the documentation is complete enough to answer everything. — No document answers a question about cost or about what already exists, and both can change designs.
 
-Yes, and the conversation is a courtesy. — The conversation is where the constraints appear. The courtesy version is the thirty-five minute presentation.
+Giving the design over; the conversation afterwards is mostly a courtesy. — The conversation is where the constraints appear. The courtesy version is the thirty-five minute presentation.
 
 Improve: Check you sent the material ahead in step 1 and opened with their questions in step 2. Record the change in step 5.
 
@@ -4234,24 +4364,24 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-The handover produced no changes to the design. What does that suggest?
+Your handover raised no questions at all and produced no changes. What does that suggest?
 
-- It was a briefing rather than a handover. Either the constraints were not discussed or the questions were not asked.
-- That the team agreed with the approach.
-- That the design was thorough.
+- It was a briefing: the constraints were probably never discussed, or never asked about.
+- That the team agreed with the approach, which is what a handover sets out to get.
+- That the design was thorough enough to leave nobody anything to raise or change.
 
 <details>
 <summary>After your attempt</summary>
 
-It was a briefing rather than a handover. Either the constraints were not discussed or the questions were not asked. — Every real conversation with people who will build something surfaces at least one thing that is expensive, already exists, or was undefined. No changes usually means narration filled the time.
+It was a briefing: the constraints were probably never discussed, or never asked about. — Conversations with people who will build something usually surface something expensive, already existing or undefined. Contrast a handover where questions were raised and you kept the design with a reason recorded for each: that is a valid outcome, not a failure.
 
-That the team agreed with the approach. — Agreement is not the outcome being looked for. Information about cost and constraint is.
+That the team agreed with the approach, which is what a handover sets out to get. — Agreement is not the outcome being looked for. Information about cost and constraint is.
 
-That the design was thorough. — A thorough design still meets constraints nobody outside the team knew about.
+That the design was thorough enough to leave nobody anything to raise or change. — A thorough design still meets constraints nobody outside the team knew about. Silence is more often a sign that nobody was asked.
 
-Improve: Go back and ask what is expensive and what already exists, in step 2, and record what that changes. Note it in step 5.
+Improve: Go back and ask what is expensive and what already exists, in step 2, and record what each answer changes or why you are keeping the design. Note it in step 5.
 
-Check again: At least one thing about the design or criteria moved.
+Check again: Every question raised has a recorded answer: a change, or a reason to keep the design.
 
 Answers to revisit: their-questions, expensive-existing, improvement-made
 
@@ -4266,18 +4396,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You ran the conversation as a rehearsal with a friend rather than with a team. How should it be recorded?
 
-- As a rehearsal, in the access line and anywhere the outcome is referred to later.
-- It does not need recording either way.
-- As a handover, since the process was the same.
+- As a rehearsal, in the access line and wherever its outcome is mentioned later.
+- Either way, since a practice conversation does not need a label in your own notes.
+- As a handover, since the steps you followed were exactly the same as with a team.
 
 <details>
 <summary>After your attempt</summary>
 
-As a rehearsal, in the access line and anywhere the outcome is referred to later. — A rehearsal is real practice and it produced real questions. What it cannot produce is agreement from people who will build the thing, and nothing should later read as though it did.
+As a rehearsal, in the access line and wherever its outcome is mentioned later. — A rehearsal is real practice and it produced real questions. What it cannot produce is agreement from people who will build the thing, and nothing should later read as though it did.
 
-It does not need recording either way. — It does, because a decision record with no team behind it will be read as one with a team behind it.
+Either way, since a practice conversation does not need a label in your own notes. — It does, because a decision record with no team behind it will be read as one with a team behind it.
 
-As a handover, since the process was the same. — The process was the same and the standing of the decisions is not. Nobody in the room can commit to building anything.
+As a handover, since the steps you followed were exactly the same as with a team. — The process was the same and the standing of the decisions is not. Nobody in the room can commit to building anything.
 
 Improve: Label the session plainly in step 1 and mark the decision record as a rehearsal. Record the change in step 5.
 
@@ -4292,40 +4422,68 @@ Answers to revisit: sent-what, who-with, questions-asked-ahead, improvement-made
 
 Section: practice. Stable action: step-5-brief.
 
-The design and criteria updated to match what was agreed, with at least one change recorded.
+The design and criteria updated to match what was agreed, with each raised question answered by a change or a justified decision to keep.
 
-- Change the design and criteria to match what was agreed.
+- Change the design and criteria to match what was agreed, and record why anything questioned was kept.
 - Save the decision record with them.
 
 **Start here:** Change the criteria first, since those are what gate acceptance.
 
-**Enough:** The artefacts now describe what was agreed rather than what you sent.
+**Enough:** The artefacts now describe what was agreed, and every kept item has its reason beside it.
 
-**A handover with no changes:** A briefing. If nothing moved, either the constraints were not discussed or the questions were not asked.
+**A justified non-change:** A question raised in the handover and answered by keeping the design, with the reason written down. It is a decision, not a failure to listen.
+
+**A handover with no questions:** The warning sign. If nobody raised anything about cost, existing parts or undefined cases, the conversation probably did not reach the constraints.
 
 **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
 
 
-### What changed in the design and the criteria as a result
+### What changed in the design and the criteria, or what you kept unchanged and why
 
 Section: practice. Stable action: write-changed-design.
 
-A handover with no changes was a briefing. At least one thing usually moves.
+Every question raised gets an answer on the record: a change, or a justified decision to keep the design as it is. Keeping something with a stated reason is a valid outcome. What is not valid is a question left unanswered.
 
-**Answer:** What changed in the design and the criteria as a result
+**Answer:** What changed in the design and the criteria, or what you kept unchanged and why
 
-A handover with no changes was a briefing. At least one thing usually moves.
+Every question raised gets an answer on the record: a change, or a justified decision to keep the design as it is. Keeping something with a stated reason is a valid outcome. What is not valid is a question left unanswered.
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a designer hands over a new sign-up form for a cycling club. In the conversation the builder says the address lookup would take a week, asks whether the existing club-card component could replace a new card, and points out nobody has said what happens if the email is already registered. The designer wants to keep the new card because it shows the member’s photo, which the old one cannot.
+
+**Task:** Write the decision-record entry for each of the three points, and explain which ones change the design and why keeping one is acceptable.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Treats every point as a change to make, or records none of them; the already-registered case is left undecided or unwritten.
+- Adequate: Three entries: a change or deferral for the address lookup, the new card kept with its photo reason, and the already-registered case decided or marked open, each with the reason recorded.
+- Strong: As adequate, and names an escalation default for the open case and what would bring a deferred item back, or what it would cost to maintain the separate card.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -4404,25 +4562,25 @@ Adequate evidence: A written record of decisions, deferrals and open items, shar
 
 1 — Notes kept privately.
 
-2 — Record written and circulated the same day.
+2 — Record written and circulated the same day, or on the rehearsal route written the same day and labelled as a rehearsal.
 
 3 — As adequate, and deferrals name what would bring them back.
 
 Repair: Write the decisions from memory now and circulate them, marking anything uncertain as such. Recheck: The decision record.
 
-**At least one design change came from the conversation**
+**Each raised question has a recorded answer**
 
-Adequate evidence: A change made because of what the engineer knew, recorded with the reason.
+Adequate evidence: Every question from the conversation answered on the record: a change with its reason, or a justified decision to keep the design.
 
-0 — No changes.
+0 — No questions raised, or questions left unanswered.
 
-1 — Changes made without recording why.
+1 — Changes or kept items recorded without reasons.
 
-2 — At least one change with the reason recorded.
+2 — Each question answered with a change or a reason to keep.
 
-3 — As adequate, and the change improved the outcome rather than only reducing cost.
+3 — As adequate, and any change improved the outcome rather than only reducing cost, or any kept item names what would reopen it.
 
-Repair: Ask what is expensive and what already exists; those two questions usually produce a change. Recheck: The recorded change.
+Repair: Ask what is expensive and what already exists, then record each answer as a change or a reason to keep the design. Recheck: The recorded answers.
 
 **An escalation route is agreed with a default**
 
@@ -4432,7 +4590,7 @@ Adequate evidence: A named route for unexpected cases and a default when you are
 
 1 — Route agreed without a default.
 
-2 — Both agreed and written down.
+2 — Both agreed and written down, or on the rehearsal route proposed and labelled as a rehearsal.
 
 3 — As adequate, and the default protects the person's data or money rather than the schedule.
 
@@ -4447,7 +4605,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 - Artefacts were sent before the conversation
 - A decision record exists and was circulated
-- At least one design change came from the conversation
+- Each raised question has a recorded answer
 - An escalation route is agreed with a default
 
 <details>
@@ -4455,7 +4613,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 - Sending the material beforehand changes what the meeting is for. If people read the states, criteria and wording first, the time is spent on what they could not resolve alone, which is where your presence adds something. Narrating the design aloud spends the time on what the document already said.
 - The valuable output is a decision record. Handover conversations produce agreements — this state is out of scope for now, this animation will not be built, this error message needs the server to send something new — and if none of that is written down, each will be re-decided during the build, usually differently.
-- A handover where nothing changes was a briefing. The engineer knows things you do not: what is expensive, what already exists, what will conflict with something else. Expecting to leave with a modified design is what makes the conversation worth holding.
+- The engineer knows things you do not: what is expensive, what already exists, what will conflict with something else. Expect those questions and answer each one on the record. Some answers change the design; others keep it, with the reason written down, and a justified decision to keep is a valid outcome. A handover that raises no questions at all is the warning sign: it was probably a briefing.
 - Agreeing the escalation path is the part everyone forgets. When something unexpected appears mid-build — a case nobody designed, a constraint nobody knew — who decides, and how fast? Without an answer, the build stops or the engineer decides alone, and both are worse than a named route.
 
 [GOV.UK: making prototypes](https://www.gov.uk/service-manual/design/making-prototypes).
@@ -4466,36 +4624,36 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 Stable ID: m14-l07-v1. Core.
 
-The build is where specifications either survived or did not. Checking is your job, and doing it well makes you trusted rather than tiresome.
+The build is where specifications either survived or did not. Checking is your job, and doing it well makes you trusted rather than tiresome. Without a build, the same reasoning can be practised honestly on a prototype, paper screens or a supplied case.
 
-Bring: Your criteria and something built to check.
+Bring: Your criteria and something to check; the supplied practice tracker is enough.
 
 Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
 - A criterion-by-criterion pass or fail record
-- Defects separated from requests, each labelled
+- Findings labelled defect, missing requirement, change request or question
 - State-by-state checks including failure paths
 - A prioritised list ordered by harm
 
 ### Start here: in everyday words
 
-Delivery work makes a design clear enough for other people to build, question, test and change safely. In this lesson, your first small result is: Each acceptance criterion walked against the build, with pass or fail and what you actually observed.
+Delivery work makes a design clear enough for other people to build, question, test and change safely. In this lesson, your first small result is: Your review route named, and each acceptance criterion walked against the build, prototype, paper screens or supplied case, with pass or fail and what you observed.
 
 **Words you will use**
 
 - **Design QA:** Checking the built thing against what was agreed. It is your job because you know what the criteria meant.
 - **Observed:** What you saw happen. Distinct from what you concluded from it, and the part somebody else can check.
-- **Forcing a state:** Making it happen on purpose: going offline, submitting nothing, using data that breaks the layout. Waiting for states to occur finds only the common ones.
+- **Supplied case:** The made-up practice tracker in the source notes. It lets you practise triage honestly when you have no build; it is practice, not a review of real work.
 
 **Quick example.** Made-up example. Reviewing a built tool-library feature, and reviewing what was on the screen. The default screen, carefully. Spacing against the token sheet, type sizes, the colours, the alignment of the action row. Eleven small findings in forty minutes.
 
-The reader demonstrates and guides the task before asking for “What you reviewed, and where it is”.
+The reader demonstrates and guides the task before asking for “What kind of thing you are reviewing”.
 
 ### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
-Review a built feature against its criteria and specifications, and produce a prioritised list separating defects from changes of mind.
+Review a built feature, a prototype, paper screens or the supplied practice case against its criteria and specifications, and produce a prioritised list separating defects, missing requirements and changes of mind.
 
 
 ### Check against the criteria first; they are what was agreed
@@ -4505,11 +4663,11 @@ Section: learn. Stable action: learn-1.
 Check against the criteria first; they are what was agreed.
 
 
-### Separate defects from changes of mind, and label them honestly
+### Idea 2: Label each finding honestly: defect, missing requirement, chan…
 
 Section: learn. Stable action: learn-2.
 
-Separate defects from changes of mind, and label them honestly.
+Label each finding honestly: defect, missing requirement, change request or question.
 
 
 ### Check the states, not only the default screen
@@ -4519,11 +4677,11 @@ Section: learn. Stable action: learn-3.
 Check the states, not only the default screen.
 
 
-### Check on a real device and at the widths you specified
+### Idea 4: With a working build, check on a real device at your widths; o…
 
 Section: learn. Stable action: learn-4.
 
-Check on a real device and at the widths you specified.
+With a working build, check on a real device at your widths; otherwise list those checks as owed.
 
 
 ### Prioritise by harm, as with any other problem list
@@ -4539,7 +4697,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The built held-place feature was reviewed against seven criteria. Five passed. Two failed: the expiry warning announced every second rather than at appearance and expiry, and the state was distinguishable only by colour. Both were logged as defects with the criterion quoted. Four further observations were logged as requests, including a spacing inconsistency and a better wording idea, each marked as a change of mind rather than a defect. The review was done on a phone at two widths and with the keyboard, which is where both defects were found.
+- Made-up example: the built held-place feature was reviewed against seven criteria. Five passed. Two failed: the expiry warning announced every second rather than at appearance and expiry, and the state was distinguishable only by colour. Both were logged as defects with the criterion quoted. A date picker that could not be used from the keyboard was covered by no criterion; it was logged as a defect against the team's agreed accessibility baseline, with the missing criterion noted. A spacing inconsistency was logged as a low-severity defect, and a better wording idea as a change request that was kept for a later round. The review was done on a phone at two widths and with the keyboard, which is where the serious defects were found.
 
 
 ### Choose where you will do the work
@@ -4551,16 +4709,33 @@ Recommended route: Fill the worksheet in this app, step by step. It saves as you
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
 
 
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Practice tracker (made up): a tool-library booking feature, reviewed as built. The team’s agreed baseline: WCAG 2.2 level AA, and no screen may lose what a person has typed. Story criteria: C1 the review screen states that the place is held and until what time; C2 the countdown is announced when it appears and at expiry, not on every change; C3 the held state is distinguishable without colour; C4 the layout reserves space for an image while it loads.
+- TL-01 · Defect · Severity: blocked, for people listening with a screen reader · Evidence: the countdown is announced every second; C2 says at appearance and at expiry only · Status: open, fix this sprint · Annotation: it contradicts a criterion that can be quoted, so nobody needs to argue about whether it is a defect.
+- TL-02 · Defect · Severity: blocked, for keyboard users · Evidence: the date picker cannot be opened or changed from the keyboard and there is no other way to choose a date; no story criterion mentions the keyboard · Status: open, top of triage · Annotation: no old criterion covers it, and it still fails the agreed baseline (WCAG 2.2 success criterion 2.1.1, Keyboard), so it is triaged as a defect, not a request. The missing keyboard criterion is logged beside it.
+- TL-03 · Missing requirement · Severity: at risk of losing money or a place · Evidence: nobody specified what happens if the hold expires while a payment is processing; the build extends the hold silently · Status: needs a decision, owner the designer · Annotation: it contradicts nothing because nothing was written, and it is not a preference either. It enters triage with a proposed criterion.
+- TL-04 · Defect · Severity: cosmetic · Evidence: the gap under the title is 12 pixels; the specification says 16 · Status: open, low priority, batched with other spacing fixes · Annotation: a real defect against the specification, rated low and kept on the list rather than dropped.
+- TL-05 · Change request · Severity: none, an improvement idea · Evidence: the designer would now prefer “No tools match those dates” to the agreed “No results” · Status: declined for this release, revisit at the next wording review · Annotation: a change of mind is legitimate and is prioritised like other work. Keeping the agreed wording, with the reason written down, is a valid outcome of review.
+- TL-06 · Question · Severity: unknown until answered · Evidence: the whole card is tappable in the build; the design shows only the button as tappable, and no decision record says which was intended · Status: asked of the engineer and the designer · Annotation: it could be a defect or an improvement, so the honest label until somebody answers is question.
+- TL-07 · Defect · Severity: at risk of losing something · Evidence: a failed submission clears everything the person typed; no story criterion mentions it, and the baseline says no screen may lose typed input · Status: open, high · Annotation: like TL-02, actionable without an old criterion because it breaks the agreed baseline. A criterion is added for the next story.
+- TL-08 · Defect · Severity: at risk of losing something · Evidence: on a 360-pixel phone with a slow connection, the price overlaps the Reserve button while the image loads; C4 says the layout reserves image space · Status: open, high · Annotation: it quotes C4 and states its conditions, so somebody else can reproduce and fix it without a conversation.
+
+
 ### Check the criteria
 
 Section: practice-plan. Stable action: step-1-brief.
 
-Each acceptance criterion walked against the build, with pass or fail and what you actually observed.
+Your review route named, and each acceptance criterion walked against the build, prototype, paper screens or supplied case, with pass or fail and what you observed.
 
-- Walk each acceptance criterion against the build.
+- Walk each acceptance criterion against the build, prototype, paper screens or supplied case.
 - Record pass or fail with what you observed.
 
-**Start here:** Open the criteria beside the build and go down them in order, before looking at anything else.
+**Start here:** Open the criteria beside whatever you are reviewing and go down them in order, before looking at anything else.
 
 **Enough:** Every criterion has a result and an observation, including the ones that passed.
 
@@ -4568,27 +4743,40 @@ Each acceptance criterion walked against the build, with pass or fail and what y
 
 **Observed:** What you saw happen. Distinct from what you concluded from it, and the part somebody else can check.
 
+**Supplied case:** The made-up practice tracker in the source notes. It lets you practise triage honestly when you have no build; it is practice, not a review of real work.
+
+
+### What kind of thing you are reviewing
+
+Section: practice-plan. Stable action: write-qa-route.
+
+Choose the option that honestly describes your work.
+
+**Answer:** What kind of thing you are reviewing (A working build or clickable prototype / Paper screens or static images of my own design / The supplied practice tracker case)
+
+All three are honest routes. A team build, your Project 2 build or a clickable Project 1 prototype is a working build; Project 1 paper screens are static; with neither, use the supplied tracker case. Label the route wherever the review is mentioned later.
+
 
 ### What you reviewed, and where it is
 
 Section: practice-plan. Stable action: write-what-reviewed.
 
-A built feature from your team, or your own Module 12 build. Both are real; say which.
+Name it plainly: a team build, your Project 2 build, your Project 1 prototype or paper screens, or the supplied tracker case. A review of paper screens is a design review, not a check of a build, and says so.
 
 **Answer:** What you reviewed, and where it is
 
-A built feature from your team, or your own Module 12 build. Both are real; say which.
+Name it plainly: a team build, your Project 2 build, your Project 1 prototype or paper screens, or the supplied tracker case. A review of paper screens is a design review, not a check of a build, and says so.
 
 
 ### Each acceptance criterion, with pass or fail and what you observed
 
 Section: practice-plan. Stable action: write-criterion-results.
 
-Observed means what you saw, not what you concluded.
+Observed means what you saw, not what you concluded. Supplied case: use criteria C1 to C4 in the source notes and the evidence in each tracker entry.
 
 **Answer:** Each acceptance criterion, with pass or fail and what you observed
 
-Observed means what you saw, not what you concluded.
+Observed means what you saw, not what you concluded. Supplied case: use criteria C1 to C4 in the source notes and the evidence in each tracker entry.
 
 
 ### Force the states
@@ -4597,12 +4785,12 @@ Section: practice-plan. Stable action: step-2-brief.
 
 Every state triggered deliberately, including failures, with anything missing or different recorded.
 
-- Trigger every state from your tables, including failures.
+- Trigger every state from your tables, including failures, or walk them on paper.
 - Record any state that does not exist or behaves differently.
 
-**Start here:** Go offline in the network panel before you look at anything else.
+**Start here:** Working build: go offline in the network panel before you look at anything else. Paper: lay your state table beside the screens. Supplied case: read each tracker entry’s evidence.
 
-**Enough:** You triggered every state from your own tables, not only the ones that appeared on their own.
+**Enough:** You triggered or walked every state from your own tables, not only the ones that appeared on their own.
 
 **Forcing a state:** Making it happen on purpose: going offline, submitting nothing, using data that breaks the layout. Waiting for states to occur finds only the common ones.
 
@@ -4623,7 +4811,7 @@ Made-up example. Reviewing a built tool-library feature, and reviewing what was 
 
 **What twenty minutes of forcing states found:** The expiry warning announced every second. The held state was distinguishable only by colour. The empty list showed the loading skeleton for ever. Three criteria failed, and none of them was visible on the default screen.
 
-**What that did to the list:** Three defects at the top with criteria quoted, and the eleven cosmetic items below as requests. The same review, ordered by harm, read as useful rather than as fussy.
+**What that did to the list:** Three defects at the top with criteria quoted, and the eleven cosmetic items below as low-severity defects against the token sheet. The same review, ordered by harm, read as useful rather than as fussy.
 
 **Wrong turn:** The wrong turn is reviewing the screen in front of you, because it is there and checking it against a token sheet is satisfying. The states are where the specification either survived or did not, and none of them is on screen by default.
 
@@ -4632,15 +4820,15 @@ Made-up example. Reviewing a built tool-library feature, and reviewing what was 
 **Unknown:** Still unknown: how the states behave together, such as an expiry during a slow load. I triggered them one at a time, and combinations are where the next round of defects will be.
 
 
-### How you triggered each state, including the failures
+### How you triggered or walked each state, including the failures
 
 Section: practice-plan. Stable action: write-states-triggered.
 
-Break the address, go offline, submit nothing, use a class that is full. Failures do not happen by waiting.
+Working build: break the address, go offline, submit nothing, use a class that is full; failures do not happen by waiting. Paper: walk your state table screen by screen and note any state with no screen. Supplied case: list which tracker entries came from forced states.
 
-**Answer:** How you triggered each state, including the failures
+**Answer:** How you triggered or walked each state, including the failures
 
-Break the address, go offline, submit nothing, use a class that is full. Failures do not happen by waiting.
+Working build: break the address, go offline, submit nothing, use a class that is full; failures do not happen by waiting. Paper: walk your state table screen by screen and note any state with no screen. Supplied case: list which tracker entries came from forced states.
 
 
 ### Any state that does not exist or behaves differently from the specification
@@ -4658,14 +4846,14 @@ Write your answer for “Any state that does not exist or behaves differently fr
 
 Section: practice-plan. Stable action: step-3-brief.
 
-The build checked on a real phone, at your specified widths, with the keyboard and with long content.
+With a working build: checked on a phone, at your widths, by keyboard and with long content. Without one: what these checks would still need to cover.
 
-- Review on a real phone and at your specified widths.
-- Check keyboard operation and long content.
+- With a working build, review on a real phone and at your specified widths.
+- Check keyboard operation and long content, or list these checks as still owed.
 
-**Start here:** Do this part on a phone, standing up, with one thumb.
+**Start here:** With a working build, do this part on a phone, standing up, with one thumb. Without one, write the device and keyboard checks still owed, so nobody reads the review as complete.
 
-**Enough:** At least one finding came from the device or the keyboard rather than from the laptop screen.
+**Enough:** Working build: at least one finding came from the device or the keyboard. Paper or supplied case: the checks still owed are written down.
 
 **Where it will be used:** A real device, at real widths, with real content. A review on your laptop with short test data checks the easiest version of everything.
 
@@ -4699,47 +4887,53 @@ Made-up example. Checking a tool-library build against its widths, and checking 
 
 Section: practice-plan. Stable action: write-device-widths.
 
-Write your answer for “What you found on a real phone and at your specified widths”. Use the task instructions below to decide what to include.
+Only possible with something that runs. On paper or the supplied case, leave this empty or write what a device check would still need to cover.
 
 **Answer:** What you found on a real phone and at your specified widths
 
+Required only when qa-route is A working build or clickable prototype. Otherwise leave participant evidence empty.
 
+Only possible with something that runs. On paper or the supplied case, leave this empty or write what a device check would still need to cover.
 
 
 ### What you found with the keyboard and with long content
 
 Section: practice-plan. Stable action: write-keyboard-content.
 
-These two and the states are where the important findings are. Spacing is the smallest part of this review.
+These two and the states are where the important findings are; spacing is the smallest part of this review. Without a working build, leave this empty or note the checks still owed.
 
 **Answer:** What you found with the keyboard and with long content
 
-These two and the states are where the important findings are. Spacing is the smallest part of this review.
+Required only when qa-route is A working build or clickable prototype. Otherwise leave participant evidence empty.
+
+These two and the states are where the important findings are; spacing is the smallest part of this review. Without a working build, leave this empty or note the checks still owed.
 
 
 ### Separate and prioritise
 
 Section: practice-plan. Stable action: step-4-brief.
 
-Every finding labelled a defect or a request, and the list ordered by harm to the person.
+Every finding labelled defect, missing requirement, change request or question, and the list ordered by harm to the person.
 
-- Label each finding a defect or a request.
+- Label each finding a defect, missing requirement, change request or question.
 - Order by harm rather than by ease of fixing.
 
 **Start here:** Label everything before ordering anything, and order by harm rather than by how much it bothers you.
 
-**Enough:** Every defect could be defended by quoting something agreed.
+**Enough:** Every defect quotes something agreed or the baseline it breaks, and every request has a reason.
 
-**Defect:** The build contradicts something agreed: a criterion, a specification, a decision record. It can be quoted.
+**Defect:** The build contradicts something agreed (a criterion, a specification, a decision record) or breaks the team’s agreed baseline, such as its accessibility standard, even where no story criterion mentions it. It can be quoted.
 
-**Request:** Something you would now prefer. It is legitimate and it is not a defect, and labelling it honestly is what keeps your defects credible.
+**Missing requirement:** A case nobody specified, found during review. It goes into triage with a proposed criterion rather than being called a preference or left to whoever meets it.
+
+**Request:** A change of mind or a new idea. It is legitimate, it is prioritised like other work, and it can be declined with a reason. Labelling it honestly keeps your defects credible.
 
 
-### Try the distinction · 1 of 6
+### Try the distinction · 1 of 7
 
 Section: practice-plan. Stable action: step-4-sort-1.
 
-Six findings from a made up design QA on a tool-library build. For each one, decide what it is.
+Seven findings from a made up design QA on a tool-library build, whose team has agreed WCAG 2.2 AA as its baseline. For each one, decide what it is.
 
 The expiry timer announces every second. The criteria say it is announced at appearance and at expiry only.
 
@@ -4761,11 +4955,11 @@ Now label your own findings and order them by what each one does to a person.
 </details>
 
 
-### Try the distinction · 2 of 6
+### Try the distinction · 2 of 7
 
 Section: practice-plan. Stable action: step-4-sort-2.
 
-Six findings from a made up design QA on a tool-library build. For each one, decide what it is.
+Seven findings from a made up design QA on a tool-library build, whose team has agreed WCAG 2.2 AA as its baseline. For each one, decide what it is.
 
 The gap under the title is 12 pixels and the design says 16.
 
@@ -4787,11 +4981,11 @@ Now label your own findings and order them by what each one does to a person.
 </details>
 
 
-### Try the distinction · 3 of 6
+### Try the distinction · 3 of 7
 
 Section: practice-plan. Stable action: step-4-sort-3.
 
-Six findings from a made up design QA on a tool-library build. For each one, decide what it is.
+Seven findings from a made up design QA on a tool-library build, whose team has agreed WCAG 2.2 AA as its baseline. For each one, decide what it is.
 
 The empty message would read better as “No tools match those dates” than “No results”.
 
@@ -4813,11 +5007,11 @@ Now label your own findings and order them by what each one does to a person.
 </details>
 
 
-### Try the distinction · 4 of 6
+### Try the distinction · 4 of 7
 
 Section: practice-plan. Stable action: step-4-sort-4.
 
-Six findings from a made up design QA on a tool-library build. For each one, decide what it is.
+Seven findings from a made up design QA on a tool-library build, whose team has agreed WCAG 2.2 AA as its baseline. For each one, decide what it is.
 
 The held state is distinguishable only by colour. The criteria require it to be distinguishable without colour.
 
@@ -4839,11 +5033,11 @@ Now label your own findings and order them by what each one does to a person.
 </details>
 
 
-### Try the distinction · 5 of 6
+### Try the distinction · 5 of 7
 
 Section: practice-plan. Stable action: step-4-sort-5.
 
-Six findings from a made up design QA on a tool-library build. For each one, decide what it is.
+Seven findings from a made up design QA on a tool-library build, whose team has agreed WCAG 2.2 AA as its baseline. For each one, decide what it is.
 
 A short animation on success would make the confirmation feel better.
 
@@ -4865,11 +5059,11 @@ Now label your own findings and order them by what each one does to a person.
 </details>
 
 
-### Try the distinction · 6 of 6
+### Try the distinction · 6 of 7
 
 Section: practice-plan. Stable action: step-4-sort-6.
 
-Six findings from a made up design QA on a tool-library build. For each one, decide what it is.
+Seven findings from a made up design QA on a tool-library build, whose team has agreed WCAG 2.2 AA as its baseline. For each one, decide what it is.
 
 When the list is empty, the loading placeholder stays on screen indefinitely.
 
@@ -4891,15 +5085,41 @@ Now label your own findings and order them by what each one does to a person.
 </details>
 
 
-### Every finding, labelled defect or request
+### Try the distinction · 7 of 7
+
+Section: practice-plan. Stable action: step-4-sort-7.
+
+Seven findings from a made up design QA on a tool-library build, whose team has agreed WCAG 2.2 AA as its baseline. For each one, decide what it is.
+
+The date picker cannot be operated from a keyboard. No acceptance criterion for this story mentions the keyboard.
+
+- a defect
+- a request
+- not a finding at all
+
+<details>
+<summary>After your attempt</summary>
+
+a defect — No story criterion covers it, and it still fails the baseline the team agreed (WCAG 2.2 success criterion 2.1.1, Keyboard). It goes into triage as a defect, near the top, and the missing criterion is logged beside it.
+
+a request — Calling it a request because no old criterion names it is exactly how exclusion survives review. It breaks an agreed baseline, which makes it a fault rather than a preference.
+
+not a finding at all — People who cannot use a pointer cannot choose a date at all. That is among the most serious things on this list.
+
+Now label your own findings and order them by what each one does to a person.
+
+</details>
+
+
+### Every finding, labelled defect, missing requirement, change request or question
 
 Section: practice-plan. Stable action: write-labelled-findings.
 
-A defect contradicts something agreed. A request is something you would now prefer. Mixing them costs you trust.
+Defect: contradicts something agreed, or breaks the team’s agreed baseline (accessibility, never losing typed input) even where no story criterion mentions it. Missing requirement: a case nobody specified. Change request: something you would now prefer, which can be declined with a reason. Question: cannot be classified until somebody answers.
 
-**Answer:** Every finding, labelled defect or request
+**Answer:** Every finding, labelled defect, missing requirement, change request or question
 
-A defect contradicts something agreed. A request is something you would now prefer. Mixing them costs you trust.
+Defect: contradicts something agreed, or breaks the team’s agreed baseline (accessibility, never losing typed input) even where no story criterion mentions it. Missing requirement: a case nobody specified. Change request: something you would now prefer, which can be declined with a reason. Question: cannot be classified until somebody answers.
 
 
 ### The list ordered by harm to the person, not by ease of fixing
@@ -4921,20 +5141,20 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Is design QA about checking the visual details?
 
-- Yes, since the engineer has already checked the behaviour.
-- Mostly, with behaviour checked by testing.
-- Spacing matters and is the smallest part. Whether the states exist, the failures behave and the keyboard works is what nobody sees in a screenshot.
+- Mainly, yes, since the engineer has already checked how the behaviour works.
+- Mostly, because testing will catch any behaviour that does not work.
+- Partly: spacing is the smallest part; states, failures and keyboard use matter more.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, since the engineer has already checked the behaviour. — They checked the behaviour they thought about. The states you specified are the ones you know to trigger.
+Mainly, yes, since the engineer has already checked how the behaviour works. — They checked the behaviour they thought about. The states you specified are the ones you know to trigger.
 
-Mostly, with behaviour checked by testing. — Testing checks what the criteria say, which is why the criteria had to include the states and the announcements.
+Mostly, because testing will catch any behaviour that does not work. — Testing checks what the criteria say, which is why the criteria had to include the states and the announcements.
 
-Spacing matters and is the smallest part. Whether the states exist, the failures behave and the keyboard works is what nobody sees in a screenshot. — A review of the default screen produces a list of small visual findings that reads as fussy. Twenty minutes of forcing states usually produces three findings nobody can dismiss.
+Partly: spacing is the smallest part; states, failures and keyboard use matter more. — Whether the states exist, the failures behave and the keyboard works is what nobody sees in a screenshot. A review of the default screen produces a list of small visual findings that reads as fussy; twenty minutes of forcing states often produces findings nobody can dismiss.
 
-Improve: Trigger every state in step 2 including the failures, and record what you find. Note the change in step 5.
+Improve: Trigger or walk every state in step 2 including the failures, and record what you find. Note the change in step 5.
 
 Check again: At least one finding came from a state that is not the default screen.
 
@@ -4949,24 +5169,24 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You have fourteen findings, eleven of them small spacing differences. How should you send them?
+You have fourteen findings: three block or exclude people, and eleven are small spacing differences from the specification. How should you send them?
 
-- All together, since they are all real findings.
-- Drop the cosmetic ones to keep the list credible.
-- Ordered by harm, with the three that exclude or block people at the top and the cosmetic ones below, labelled.
+- Ordered by harm: the three that block people first, the spacing ones below.
+- All together in one list, since every one of them is a real finding.
+- Without the cosmetic ones, so the serious list stays credible.
 
 <details>
 <summary>After your attempt</summary>
 
-All together, since they are all real findings. — They are, and the order decides whether the list is acted on. Harm is the ordering that works.
+Ordered by harm: the three that block people first, the spacing ones below. — A list that opens with four pixels gets read as fussiness, and the serious items below it may never be reached. The same findings, ordered by harm and labelled, read as useful.
 
-Drop the cosmetic ones to keep the list credible. — They are real and worth fixing eventually. Ordering, not deletion, is the answer.
+All together in one list, since every one of them is a real finding. — They are, and the order decides whether the list is acted on. Harm is the ordering that works.
 
-Ordered by harm, with the three that exclude or block people at the top and the cosmetic ones below, labelled. — A list that opens with four pixels gets read as fussiness, and the serious items below it are never reached. The same findings, ordered by harm, read as useful.
+Without the cosmetic ones, so the serious list stays credible. — They are real and worth fixing eventually. Ordering, not deletion, is the answer.
 
 Improve: Reorder your list in step 4 by harm to the person, and record the change in step 5.
 
-Check again: The first three items are the ones that block or exclude somebody.
+Check again: The first items are the ones that block or exclude somebody.
 
 Answers to revisit: labelled-findings, prioritised, improvement-made
 
@@ -4979,24 +5199,24 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You would now prefer different wording on the empty state. Is that a defect?
+In the practice tracker, TL-05 is wording the designer now prefers, and TL-02 is a keyboard failure no story criterion mentions. How should they be labelled?
 
-- No. The built wording is what was agreed, so it is a request, and labelling it honestly is what keeps your defects credible.
-- Yes, if the original wording was never properly reviewed.
-- Yes, since the wording is worse than it should be.
+- Both defects, since each one leaves the screen worse than it ought to be.
+- Both change requests, since neither contradicts a criterion written for this story.
+- TL-05 a change request; TL-02 a defect, because it breaks the agreed baseline.
 
 <details>
 <summary>After your attempt</summary>
 
-No. The built wording is what was agreed, so it is a request, and labelling it honestly is what keeps your defects credible. — A request reported as a defect makes the whole list look like preference, including the criteria failures. The label costs you nothing and protects the rest.
+Both defects, since each one leaves the screen worse than it ought to be. — Worse than you would now write is not the same as contradicting anything agreed. TL-05 is a preference; only TL-02 breaks something agreed.
 
-Yes, if the original wording was never properly reviewed. — Then the request is to review the wording, which is still a request.
+Both change requests, since neither contradicts a criterion written for this story. — That rule would turn an accessibility failure into a preference. TL-02 breaks the team’s agreed baseline, which makes it a defect even with no story criterion.
 
-Yes, since the wording is worse than it should be. — Worse than you would now write is not the same as contradicting anything agreed.
+TL-05 a change request; TL-02 a defect, because it breaks the agreed baseline. — The agreed wording contradicts nothing, so TL-05 is a request that can be declined with a reason. TL-02 fails WCAG 2.2 success criterion 2.1.1, which the team agreed as its baseline, so it stays actionable without an old criterion; the missing criterion is logged too.
 
-Improve: Label every finding in step 4 and move anything that contradicts nothing into the requests. Record the change in step 5.
+Improve: Label every finding in step 4 as defect, missing requirement, change request or question; check anything without a story criterion against the agreed baseline before calling it a request. Record the change in step 5.
 
-Check again: Every defect on your list quotes something agreed.
+Check again: Every defect quotes a criterion or the baseline it breaks, and every request has a reason.
 
 Answers to revisit: labelled-findings, prioritised, improvement-made
 
@@ -5032,15 +5252,41 @@ Write your answer for “How you made each item actionable without a conversatio
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: you review a council’s new bulky-waste collection booking page, built from your criteria; the council works to WCAG 2.2 AA. Findings: the confirmation email has the wrong date format; the postcode field rejects postcodes typed with a space; the page has no heading structure, so a screen reader user cannot jump to the form, and no criterion mentioned headings; and you now think the photo of a sofa is unnecessary.
+
+**Task:** Label each finding and order them by harm, explaining the label you gave the heading problem.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Calls the heading problem a request because no criterion mentions it, or orders the list by how irritating each item is.
+- Adequate: Postcode rejection and missing headings near the top as defects (the heading failure breaks an accessibility baseline even without a criterion), date format as a low defect, the photo as a change request.
+- Strong: As adequate, and logs the missing heading criterion for next time, says whether the date format contradicts a specification or is a question, and notes the photo can be kept with a reason.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -5063,12 +5309,12 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: Design QA on a real build
-What I am trying to do: Review a built feature against its criteria and specifications, and produce a prioritised list separating defects from changes of mind.
+What I am trying to do: Review a built feature, a prototype, paper screens or the supplied practice case against its criteria and specifications, and produce a prioritised list separating defects, missing requirements and changes of mind.
 
 Key idea or terms:
 Design QA: Checking the built thing against what was agreed. It is your job because you know what the criteria meant.
 Observed: What you saw happen. Distinct from what you concluded from it, and the part somebody else can check.
-Forcing a state: Making it happen on purpose: going offline, submitting nothing, using data that breaks the layout. Waiting for states to occur finds only the common ones.
+Supplied case: The made-up practice tracker in the source notes. It lets you practise triage honestly when you have no build; it is practice, not a review of real work.
 
 Supplied practice material (fictional or labelled practice, not my research):
 Made-up example. Reviewing a built tool-library feature, and reviewing what was on the screen. The default screen, carefully. Spacing against the token sheet, type sizes, the colours, the alignment of the action row. Eleven small findings in forty minutes.
@@ -5076,19 +5322,19 @@ Made-up example. Reviewing a built tool-library feature, and reviewing what was 
 Activity: Run a short simulated handoff conversation using only the supplied case. Ask me to explain one decision, one unresolved question and what the builder should verify. Keep the simulation labelled.
 
 Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
-When the activity is finished, tell me to return to the course answer called “What you reviewed, and where it is” and write my own decision. Do not write that answer for me.
+When the activity is finished, tell me to return to the course answer called “What kind of thing you are reviewing” and write my own decision. Do not write that answer for me.
 ```
 
-**Come back to the course:** Return to “What you reviewed, and where it is”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+**Come back to the course:** Return to “What kind of thing you are reviewing”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “What you reviewed, and where it is” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “What kind of thing you are reviewing” and write one sentence in your own words.
 
 </details>
 <details>
 <summary>Optional hints and reference material</summary>
 
 - Walk the criteria list one item at a time and record what you saw.
-- For each finding ask which criterion it fails. If none, it is a request.
+- For each finding ask what it contradicts: a criterion, a specification or the agreed baseline. If nothing, decide whether it is a missing requirement, a change request or a question; an accessibility failure is never a preference.
 
 - R26: [Atlassian: acceptance criteria](https://www.atlassian.com/work-management/project-management/acceptance-criteria) — Criteria as the agreed definition of done. Purpose: Provides the line between a defect and a request. Free reading, no account. Verified 2026-09-06. Tool-neutral; it does not cover QA process, which is this lesson's own. Fallback: R18.
 - R41: [W3C WAI: easy checks](https://www.w3.org/WAI/test-evaluate/preliminary/) — The checks relevant to the built feature. Purpose: Gives repeatable accessibility checks to run against the build rather than the design. Free reading, no account. Verified 2026-09-06. Preliminary checks; passing is not conformance and self-testing is not testing with disabled people. Fallback: R28.
@@ -5111,19 +5357,19 @@ Adequate evidence: A pass or fail per criterion with the observation.
 
 Repair: Walk the criteria list one item at a time and record what you saw. Recheck: The criteria results.
 
-**Defects and requests are separated and labelled**
+**Findings are labelled defect, missing requirement, request or question**
 
-Adequate evidence: Each finding labelled, with defects tied to a specific criterion.
+Adequate evidence: Each finding labelled, with defects tied to a quoted criterion, specification or agreed baseline.
 
-0 — Everything reported as a bug.
+0 — Everything reported as a bug, or everything outside an old criterion called a preference.
 
-1 — Some separation without criteria references.
+1 — Some separation without references.
 
-2 — Clean separation with criteria quoted for defects.
+2 — Clean labels, with criteria or baseline quoted for defects and missing requirements sent to triage.
 
-3 — As adequate, and requests carry a reason and a priority suggestion.
+3 — As adequate, and requests carry a reason and a priority suggestion, including any decided against.
 
-Repair: For each finding ask which criterion it fails. If none, it is a request. Recheck: The labelled list.
+Repair: For each finding ask what it contradicts: a criterion, a specification or the agreed baseline. If nothing, decide whether it is a missing requirement, a change request or a question; an accessibility failure is never a preference. Recheck: The labelled list.
 
 **States including failures were forced and checked**
 
@@ -5133,7 +5379,7 @@ Adequate evidence: A record of each state triggered deliberately, including erro
 
 1 — Some states encountered incidentally.
 
-2 — Each state forced and checked.
+2 — Each state forced and checked, or walked on paper and labelled as such.
 
 3 — As adequate, and a state that does not exist in the build is identified.
 
@@ -5161,17 +5407,17 @@ The progress bar counts required actions with saved work. It is not a score or p
 **Review criteria:**
 
 - Every criterion is checked and recorded
-- Defects and requests are separated and labelled
+- Findings are labelled defect, missing requirement, request or question
 - States including failures were forced and checked
 - The list is prioritised by harm and actionable
 
 <details>
 <summary>Reading, video and deeper explanation</summary>
 
-- Criteria are the agreement, so they are where the review starts. Anything failing a criterion is a defect and is not negotiable; anything else is a request. Keeping that line clear is what makes your reviews welcome, because an engineer can act on defects immediately and discuss the rest.
-- The changes of mind are legitimate and must be labelled. Seeing the built thing frequently reveals a better decision, and asking for it is fine — as a request, with a reason, going through the same prioritisation as any other work. Presenting it as a defect is how designers acquire a reputation for moving goalposts.
+- Criteria are the agreement, so they are where the review starts. Anything failing a criterion is a defect. So is anything that breaks a baseline the team has agreed, such as its accessibility standard, even when no story criterion mentions it: a missing criterion is a gap in the criteria, not permission to call an exclusion a preference. A case nobody specified is a missing requirement for triage. Only a change of mind is a request. Keeping those lines clear is what makes your reviews welcome, because an engineer can act on defects immediately and discuss the rest.
+- The changes of mind are legitimate and must be labelled. Seeing the built thing frequently reveals a better decision, and asking for it is fine — as a request, with a reason, going through the same prioritisation as any other work, which may decide to keep what was agreed. Presenting it as a defect is how designers acquire a reputation for moving goalposts.
 - States are where builds differ from designs, because the default screen is what gets built first and checked most. Walk the state tables from m09 and the exception table from m07 explicitly, forcing each state rather than waiting to encounter it.
-- Check where people will use it. A build reviewed only on your laptop at a comfortable width will pass while failing on the phone your users have, and the difference is usually in touch targets, keyboard behaviour, long content and the connection.
+- Check where people will use it. A build reviewed only on your laptop at a comfortable width can pass while failing on the phone your users have, and the difference is usually in touch targets, keyboard behaviour, long content and the connection. Paper screens and a supplied case cannot show any of that, so a review of them says which device checks are still owed.
 
 [Atlassian: acceptance criteria](https://www.atlassian.com/work-management/project-management/acceptance-criteria).
 
@@ -5183,14 +5429,14 @@ Stable ID: m14-l08-v1. Core.
 
 An unreproducible report is not a report. Most design bug reports are rejected for lack of detail rather than for disagreement.
 
-Bring: Your QA list with its defects.
+Bring: Your QA list with its defects, or the supplied practice tracker.
 
 Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
 - Three reports with steps, observed and expected results
 - Full conditions on each: device, browser, size, data, connection
 - The criterion or specification quoted per report
-- A reproduction attempt by someone else, with the result
+- A reproduction attempt by someone else, or a labelled solo or desk check, with the result
 
 ### Start here: in everyday words
 
@@ -5234,11 +5480,11 @@ Section: learn. Stable action: learn-3.
 One defect per report; combined reports get half fixed.
 
 
-### Quote the criterion or specification the behaviour contradicts
+### Quote the criterion, specification or agreed baseline it contradicts
 
 Section: learn. Stable action: learn-4.
 
-Quote the criterion or specification the behaviour contradicts.
+Quote the criterion, specification or agreed baseline it contradicts.
 
 
 ### Say how severe it is in terms of the person, not your annoyance
@@ -5254,7 +5500,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Three reports. First: steps — open the class page on a phone at 360 px with a class whose title runs long, throttle to a slow connection, tap book; observed — the price overlaps the button while the image loads; expected — the layout reserves the image space, per the m08 loading specification; conditions — device, browser, width, throttling profile, data used; severity — a person may tap the wrong control while paying. Two were reproduced by someone else on the first attempt; the third could not be, and the missing condition turned out to be the account state, which was added.
+- Made-up example: three reports. First: steps — open the class page on a phone at 360 px with a class whose title runs long, throttle to a slow connection, tap book; observed — the price overlaps the button while the image loads; expected — the layout reserves the image space, per the m08 loading specification; conditions — device, browser, width, throttling profile, data used; severity — a person may tap the wrong control while paying. Two were reproduced by someone else on the first attempt; the third could not be, and the missing condition turned out to be the account state, which was added.
 
 
 ### Choose where you will do the work
@@ -5264,6 +5510,23 @@ Section: learn. Stable action: workspace.
 Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
+
+
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Practice tracker (made up): a tool-library booking feature, reviewed as built. The team’s agreed baseline: WCAG 2.2 level AA, and no screen may lose what a person has typed. Story criteria: C1 the review screen states that the place is held and until what time; C2 the countdown is announced when it appears and at expiry, not on every change; C3 the held state is distinguishable without colour; C4 the layout reserves space for an image while it loads.
+- TL-01 · Defect · Severity: blocked, for people listening with a screen reader · Evidence: the countdown is announced every second; C2 says at appearance and at expiry only · Status: open, fix this sprint · Annotation: it contradicts a criterion that can be quoted, so nobody needs to argue about whether it is a defect.
+- TL-02 · Defect · Severity: blocked, for keyboard users · Evidence: the date picker cannot be opened or changed from the keyboard and there is no other way to choose a date; no story criterion mentions the keyboard · Status: open, top of triage · Annotation: no old criterion covers it, and it still fails the agreed baseline (WCAG 2.2 success criterion 2.1.1, Keyboard), so it is triaged as a defect, not a request. The missing keyboard criterion is logged beside it.
+- TL-03 · Missing requirement · Severity: at risk of losing money or a place · Evidence: nobody specified what happens if the hold expires while a payment is processing; the build extends the hold silently · Status: needs a decision, owner the designer · Annotation: it contradicts nothing because nothing was written, and it is not a preference either. It enters triage with a proposed criterion.
+- TL-04 · Defect · Severity: cosmetic · Evidence: the gap under the title is 12 pixels; the specification says 16 · Status: open, low priority, batched with other spacing fixes · Annotation: a real defect against the specification, rated low and kept on the list rather than dropped.
+- TL-05 · Change request · Severity: none, an improvement idea · Evidence: the designer would now prefer “No tools match those dates” to the agreed “No results” · Status: declined for this release, revisit at the next wording review · Annotation: a change of mind is legitimate and is prioritised like other work. Keeping the agreed wording, with the reason written down, is a valid outcome of review.
+- TL-06 · Question · Severity: unknown until answered · Evidence: the whole card is tappable in the build; the design shows only the button as tappable, and no decision record says which was intended · Status: asked of the engineer and the designer · Annotation: it could be a defect or an improvement, so the honest label until somebody answers is question.
+- TL-07 · Defect · Severity: at risk of losing something · Evidence: a failed submission clears everything the person typed; no story criterion mentions it, and the baseline says no screen may lose typed input · Status: open, high · Annotation: like TL-02, actionable without an old criterion because it breaks the agreed baseline. A criterion is added for the next story.
+- TL-08 · Defect · Severity: at risk of losing something · Evidence: on a 360-pixel phone with a slow connection, the price overlaps the Reserve button while the image loads; C4 says the layout reserves image space · Status: open, high · Annotation: it quotes C4 and states its conditions, so somebody else can reproduce and fix it without a conversation.
 
 
 ### Write the three parts
@@ -5288,11 +5551,11 @@ Three reports, one defect each, with numbered steps, what happened and what shou
 
 Section: practice-plan. Stable action: write-report-1.
 
-Numbered steps somebody could follow without knowing anything about the design.
+Numbered steps somebody could follow without knowing anything about the design. Take defects from your own QA list, or, on the supplied route, from tracker entries TL-01, TL-02, TL-07 and TL-08 in the source notes, labelled as practice.
 
 **Answer:** Report 1 · the steps, what happened, and what should have happened
 
-Numbered steps somebody could follow without knowing anything about the design.
+Numbered steps somebody could follow without knowing anything about the design. Take defects from your own QA list, or, on the supplied route, from tracker entries TL-01, TL-02, TL-07 and TL-08 in the source notes, labelled as practice.
 
 <details>
 <summary>Example</summary>
@@ -5391,18 +5654,18 @@ Signed in or not, first visit or returning, a booking already held. These are th
 
 Section: practice-plan. Stable action: step-3-brief.
 
-The criterion or specification quoted on each report, with anything unquotable marked as a request.
+The criterion, specification or agreed baseline quoted on each report, and anything with no story criterion given its honest label.
 
-- Quote the criterion or specification the behaviour contradicts.
-- If none exists, say so and mark it a request instead.
+- Quote the criterion, specification or agreed baseline the behaviour contradicts.
+- With no story criterion, check the baseline; otherwise label it a missing requirement, change request or question.
 
-**Start here:** For each report, find the sentence it contradicts before writing anything about severity.
+**Start here:** For each report, find the sentence or baseline it contradicts before writing anything about severity.
 
-**Enough:** Every report either quotes something or is relabelled.
+**Enough:** Every report quotes a criterion, specification or baseline, or carries an honest new label.
 
 **Quoting the source:** Naming what the behaviour contradicts. It turns a disagreement into a comparison, and it takes the argument out of the report.
 
-**Nothing to quote:** A sign it is a request rather than a defect. It may still be worth raising, under a different label.
+**No story criterion to quote:** Not automatically a request. Check the team’s agreed baseline first: an accessibility failure against it is still a defect. A case nobody specified is a missing requirement; only a change of mind is a request.
 
 
 ### See the decision being made
@@ -5421,33 +5684,33 @@ Made-up example. Reporting a tool-library defect, and reporting a disagreement a
 
 **What I did:** Moved it to the requests, said so plainly, and left the two defects with their criteria quoted. Both were fixed that week.
 
-**Wrong turn:** The wrong turn is filing a preference as a defect, because it is specific and actionable and looks exactly like one. What it lacks is something to quote, and looking for that is the whole test.
+**Wrong turn:** The wrong turn is filing a preference as a defect, because it is specific and actionable and looks exactly like one. What it lacks is anything agreed to quote, criterion or baseline, and looking for that is the first test.
 
-**Trade-off:** Moving it to requests means it goes behind other work and may never be done, which is the honest consequence of it being a preference.
+**Trade-off:** Moving it to requests means it goes behind other work and may be declined, which is the honest consequence of it being a preference.
 
 **Unknown:** Still unknown: whether the new wording is actually better. Nobody has tried either version with anybody, which is a reason to raise it rather than to assert it.
 
 
-### For each report: the criterion or specification quoted
+### For each report: the criterion, specification or agreed baseline quoted
 
 Section: practice-plan. Stable action: write-quoted-source.
 
-Write your answer for “For each report: the criterion or specification quoted”. Use the task instructions below to decide what to include.
+Write your answer for “For each report: the criterion, specification or agreed baseline quoted”. Use the task instructions below to decide what to include.
 
-**Answer:** For each report: the criterion or specification quoted
-
-
+**Answer:** For each report: the criterion, specification or agreed baseline quoted
 
 
-### Any report with nothing to quote, marked as a request instead
+
+
+### Any report with no story criterion to quote: the baseline it breaks, or its new label (missing requirement, change request or question)
 
 Section: practice-plan. Stable action: write-no-source.
 
-Write your answer for “Any report with nothing to quote, marked as a request instead”. Use the task instructions below to decide what to include.
+No old criterion does not make a finding a preference. An accessibility failure against the team’s agreed standard is still a defect; a case nobody specified is a missing requirement for triage; only a change of mind is a request.
 
-**Answer:** Any report with nothing to quote, marked as a request instead
+**Answer:** Any report with no story criterion to quote: the baseline it breaks, or its new label (missing requirement, change request or question)
 
-
+No old criterion does not make a finding a preference. An accessibility failure against the team’s agreed standard is still a defect; a case nobody specified is a missing requirement for triage; only a change of mind is a request.
 
 
 ### Rate severity honestly
@@ -5643,18 +5906,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You have a screenshot that shows the problem clearly. Is that a report?
 
-- No. It shows the symptom on one screen at one moment, and everything that caused it is outside the frame.
-- Yes, with a sentence of explanation.
-- Yes, if the problem is visual.
+- It is, once a clear sentence of explanation is added underneath the screenshot.
+- Not yet: it shows the symptom once, and the conditions that cause it are outside the frame.
+- It is, when the problem is purely visual and anybody looking can see it in the picture.
 
 <details>
 <summary>After your attempt</summary>
 
-No. It shows the symptom on one screen at one moment, and everything that caused it is outside the frame. — The width, the data, the connection and the account state are what produce it. Without them it is an invitation to a conversation rather than something anyone can fix.
+It is, once a clear sentence of explanation is added underneath the screenshot. — A sentence rarely contains the width, the throttle profile and the data used, which are what make it reproducible.
 
-Yes, with a sentence of explanation. — A sentence rarely contains the width, the throttle profile and the data used, which are what make it reproducible.
+Not yet: it shows the symptom once, and the conditions that cause it are outside the frame. — The width, the data, the connection and the account state are what produce it. Without them it is an invitation to a conversation rather than something anyone can fix.
 
-Yes, if the problem is visual. — Visual problems have conditions too: a long title, a late image, a narrow screen. The picture shows none of them.
+It is, when the problem is purely visual and anybody looking can see it in the picture. — Visual problems have conditions too: a long title, a late image, a narrow screen. The picture shows none of them.
 
 Improve: Add the full conditions to each report in step 2, including your account state. Record the change in step 5.
 
@@ -5671,20 +5934,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You have three related layout problems on one screen. How many reports?
+You find three different layout problems on one screen, and you do not know whether they share a cause. How many reports?
 
-- One, to avoid flooding the list.
-- One, since they are all on the same screen and have the same cause.
-- Three. Combined reports get half fixed, and the half that is left looks like it was addressed.
+- Three, linked, since a combined report tends to get closed when one part is fixed.
+- One, so the team’s list is not flooded with three tickets about one screen.
+- One, since they sit on the same screen and probably come from the same cause.
 
 <details>
 <summary>After your attempt</summary>
 
-One, to avoid flooding the list. — A short list of unfixable reports is worse than a longer list of fixable ones.
+Three, linked, since a combined report tends to get closed when one part is fixed. — One defect per report means each can be reproduced, prioritised and closed independently. If they turn out to share a cause, the links show it; a report with three things in it closes when one is done.
 
-One, since they are all on the same screen and have the same cause. — If they genuinely have one cause, say so in three reports and link them. Same screen is not the same as same cause.
+One, so the team’s list is not flooded with three tickets about one screen. — A short list of reports that cannot be closed cleanly is worse than a longer list of fixable ones.
 
-Three. Combined reports get half fixed, and the half that is left looks like it was addressed. — One defect per report means each can be reproduced, prioritised and closed independently. A report with three things in it closes when one is done.
+One, since they sit on the same screen and probably come from the same cause. — Same screen is not the same as same cause. If they genuinely have one cause, say so in three linked reports.
 
 Improve: Split any report in step 1 that contains more than one defect. Record the change in step 5.
 
@@ -5703,22 +5966,22 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A report of yours could not be reproduced. What should you do?
 
-- Accept that some defects are intermittent.
+- Mark it as intermittent, since some defects simply do not appear every time.
+- Reproduce it again yourself and send a screen recording of it happening.
 - Find the condition you left out and add it, rather than explaining what you meant.
-- Reproduce it yourself and send a recording.
 
 <details>
 <summary>After your attempt</summary>
 
-Accept that some defects are intermittent. — Some are, and most unreproducible reports are missing a condition rather than being intermittent.
+Mark it as intermittent, since some defects simply do not appear every time. — Some are intermittent, and most unreproducible reports are missing a condition instead.
 
-Find the condition you left out and add it, rather than explaining what you meant. — The missing condition is usually something about your own situation that felt too ordinary to write: the account state, the connection, the particular data. An explanation fixes this report; the condition fixes the next ten.
+Reproduce it again yourself and send a screen recording of it happening. — Helpful, and it still does not tell them how to get there. The recording will show the result of conditions you have not named.
 
-Reproduce it yourself and send a recording. — Helpful, and it still does not tell them how to get there. The recording will show the result of conditions you have not named.
+Find the condition you left out and add it, rather than explaining what you meant. — The missing condition is often something about your own situation that felt too ordinary to write: the account state, the connection, the particular data. An explanation fixes this report; the condition fixes the next ten.
 
 Improve: Add the missing condition to that report in step 5 and have it tried again. Record the change.
 
-Check again: All three reports reproduce from what is written.
+Check again: All three reports reproduce from what is written, or, on the supplied route, a desk check finds no missing step or condition.
 
 Answers to revisit: reproduction-attempt, missing-conditions, improvement-made
 
@@ -5731,7 +5994,7 @@ Section: practice. Stable action: step-5-brief.
 
 Somebody else reproducing each report from what you wrote, with the missing conditions added where it failed.
 
-- Ask someone to reproduce each report using only what you wrote.
+- Ask someone to reproduce each report using only what you wrote, or do a labelled check yourself a day later.
 - Record failures and add the missing conditions.
 - Save the three reports.
 
@@ -5744,15 +6007,15 @@ Somebody else reproducing each report from what you wrote, with the missing cond
 **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
 
 
-### Who tried, and whether each reproduced on the first attempt
+### Who tried (a role, not a name), and whether each reproduced on the first attempt
 
 Section: practice. Stable action: write-reproduction-attempt.
 
-If nobody is available, leave the reports a day and reproduce them yourself using only what you wrote.
+If nobody is available, leave the reports a day and reproduce them yourself using only what you wrote, and label it a solo check. Supplied route: a made-up defect cannot be reproduced, so a reader (or you, a day later) lists every step or condition still missing; label it a desk check.
 
-**Answer:** Who tried, and whether each reproduced on the first attempt
+**Answer:** Who tried (a role, not a name), and whether each reproduced on the first attempt
 
-If nobody is available, leave the reports a day and reproduce them yourself using only what you wrote.
+If nobody is available, leave the reports a day and reproduce them yourself using only what you wrote, and label it a solo check. Supplied route: a made-up defect cannot be reproduced, so a reader (or you, a day later) lists every step or condition still missing; label it a desk check.
 
 
 ### What was missing from any report that did not reproduce
@@ -5766,15 +6029,41 @@ Write your answer for “What was missing from any report that did not reproduce
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: on a theatre’s ticket site, you notice that choosing the wheelchair-space seat and then going back to change the date silently drops the wheelchair space from the basket. It happened on your phone over home wi-fi while signed in, with a saved card; you have not tried a laptop. There is no acceptance criterion about the basket; the team’s agreed baseline says nothing a person has chosen may be removed without telling them.
+
+**Task:** Write the report’s steps, observed and expected result, conditions and severity, and explain why it is a defect rather than a request.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: A one-line description or a screenshot note, with no conditions or expected result, or labelled a request because no criterion mentions the basket.
+- Adequate: Numbered steps from a reachable state, observed versus expected (the space stays in the basket), the phone, connection and signed-in state, severity at risk of losing a booked space, and the baseline it breaks quoted as the source.
+- Strong: As adequate, and states what has not been checked (other devices, signed out), proposes the missing basket criterion, and keeps it to one defect per report.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -5861,17 +6150,17 @@ Repair: Reproduce the defect yourself and write down everything that had to be t
 
 **The contradicted criterion is quoted**
 
-Adequate evidence: A quoted criterion or specification per defect, or a request label where none exists.
+Adequate evidence: A quoted criterion, specification or agreed baseline per defect, or an honest new label where none applies.
 
 0 — No source given.
 
 1 — Referenced vaguely.
 
-2 — Quoted per defect, with requests labelled.
+2 — Quoted per defect, with missing requirements and requests labelled.
 
 3 — As adequate, and a missing criterion is identified as a specification gap.
 
-Repair: Find the criterion each defect contradicts; if there is none, relabel it a request. Recheck: The quoted sources.
+Repair: Find the criterion or baseline each defect contradicts; if there is none, decide whether it is a missing requirement, a change request or a question. Recheck: The quoted sources.
 
 **Reproduction was attempted by someone else**
 
@@ -5881,7 +6170,7 @@ Adequate evidence: A record of someone attempting each report and what they coul
 
 1 — Tested by the author only.
 
-2 — Attempted by someone else with results recorded.
+2 — Attempted by someone else, or on the solo or supplied route a labelled day-later or desk check, with results recorded.
 
 3 — As adequate, and every failure to reproduce led to an added condition.
 
@@ -5938,7 +6227,7 @@ Delivery work makes a design clear enough for other people to build, question, t
 
 **Quick example.** Made-up example. Arguing for held-place work on a tool library, and arguing in design terms. “The flow does not communicate state.” It is true, it is precise, and it is the sentence I would use with another designer.
 
-The reader demonstrates and guides the task before asking for “What the person deciding is accountable for”.
+The reader demonstrates and guides the task before asking for “What the person deciding is accountable for (their role, not their name)”.
 
 ### What this lesson will help you do
 
@@ -5988,7 +6277,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The case for the held-place work was written twice. The design version: the flow does not communicate state. The delivery version: two of three participants could not tell whether their place was secured, one said she would have paid again, and duplicate payments generate refunds and support contacts — this is a two-day change to a message and a state. The smaller version was prepared in advance: if two days is unavailable, one day covers the message without the countdown. The honest weakness was written too: three participants cannot establish how often this happens, and no support data was available to check it.
+- Made-up example: the case for the held-place work was written twice. The design version: the flow does not communicate state. The delivery version: two of three participants could not tell whether their place was secured, one said she would have paid again, and duplicate payments generate refunds and support contacts — this is a two-day change to a message and a state. The smaller version was prepared in advance: if two days is unavailable, one day covers the message without the countdown. The honest weakness was written too: three participants cannot establish how often this happens, and no support data was available to check it.
 
 
 ### Choose where you will do the work
@@ -6018,15 +6307,15 @@ What the person deciding is accountable for, and how you found out or that you a
 **Finding out:** Usually one question, asked before the case is made. Guessing is allowed when it is labelled, and it is the commonest reason a good case fails.
 
 
-### What the person deciding is accountable for
+### What the person deciding is accountable for (their role, not their name)
 
 Section: practice-plan. Stable action: write-decider-accountable.
 
-Not what they care about in general. What somebody asks them about, and what they have to report.
+Not what they care about in general. What somebody asks them about, and what they have to report. Describe the role; leave names and internal figures in your own notes.
 
-**Answer:** What the person deciding is accountable for
+**Answer:** What the person deciding is accountable for (their role, not their name)
 
-Not what they care about in general. What somebody asks them about, and what they have to report.
+Not what they care about in general. What somebody asks them about, and what they have to report. Describe the role; leave names and internal figures in your own notes.
 
 
 ### How you found out, or that you are guessing
@@ -6082,15 +6371,15 @@ Made-up example. Arguing for held-place work on a tool library, and arguing in d
 **Unknown:** Still unknown: how often people pay twice. Three accounts is three accounts, and the support data is what would settle it.
 
 
-### What you observed, stated plainly
+### What you observed, stated plainly as a de-identified summary
 
 Section: practice-plan. Stable action: write-observed.
 
-Including how many people. Three participants is three participants.
+Including how many people. Three participants is three participants. Summarise what people did without names or identifying details; raw notes stay in your own private file with a deletion date. On a practice route, say the material was supplied.
 
-**Answer:** What you observed, stated plainly
+**Answer:** What you observed, stated plainly as a de-identified summary
 
-Including how many people. Three participants is three participants.
+Including how many people. Three participants is three participants. Summarise what people did without names or identifying details; raw notes stay in your own private file with a deletion date. On a practice route, say the material was supplied.
 
 
 ### What you infer from it, kept separate
@@ -6400,18 +6689,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Does good work speak for itself?
 
-- It speaks to people who already share your standards. Everyone else needs the connection to what they are accountable for.
-- Mostly, though it helps to explain it well.
-- Yes, if it is genuinely good.
+- It does, provided the work is genuinely good and the people deciding can see it.
+- Mostly, though it helps to explain the design reasoning well when you present it.
+- Only to people who share your standards; others need its link to what they answer for.
 
 <details>
 <summary>After your attempt</summary>
 
-It speaks to people who already share your standards. Everyone else needs the connection to what they are accountable for. — Making that connection is part of the job rather than a compromise. The same evidence, expressed in the terms the decision is made in, is not spin.
+It does, provided the work is genuinely good and the people deciding can see it. — Quality is visible to people who can see it. A decision about time is made against other things competing for the same time.
 
-Mostly, though it helps to explain it well. — Explaining it well in design terms is what produces agreement without a decision.
+Mostly, though it helps to explain the design reasoning well when you present it. — Explaining it well in design terms is what tends to produce agreement without a decision.
 
-Yes, if it is genuinely good. — Quality is visible to people who can see it. A decision about time is made against other things competing for the same time.
+Only to people who share your standards; others need its link to what they answer for. — Making that connection is part of the job rather than a compromise. The same evidence, expressed in the terms the decision is made in, is not spin.
 
 Improve: Write the connection to the decider’s accountability in step 2, using their own figure if you can. Record the change in step 5.
 
@@ -6428,20 +6717,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You watched three people and two had the problem. Can you say around 30 per cent of people are affected?
+You watched three people: two could not tell their place was held, and one said she would have paid again. Can your case say around 30 per cent of bookers probably pay twice?
 
-- No. Three accounts cannot produce a rate, and an invented number costs you every argument after this one.
-- Yes, since two out of three is literally what happened.
-- Yes, as an estimate clearly labelled as such.
+- It can, as long as the number is clearly labelled as a rough estimate from the sessions.
+- It can, since one in three is literally what happened in the sessions.
+- Not honestly: three accounts cannot give a rate, and an invented one costs later trust.
 
 <details>
 <summary>After your attempt</summary>
 
-No. Three accounts cannot produce a rate, and an invented number costs you every argument after this one. — It is the most persuasive sentence available and the only one that does lasting damage. Say what you observed, say the sample, and name the data that would settle it.
+It can, as long as the number is clearly labelled as a rough estimate from the sessions. — Labelled or not, the number is the part that gets repeated, and three accounts cannot support it.
 
-Yes, since two out of three is literally what happened. — Two of three is what happened. Expressed as a percentage it reads as a measurement of everybody.
+It can, since one in three is literally what happened in the sessions. — One of three said so. Expressed as a percentage of bookers it reads as a measurement of everybody, and saying is not the same as paying.
 
-Yes, as an estimate clearly labelled as such. — Labelled or not, the number is the part that gets repeated, and it will not survive contact with real data.
+Not honestly: three accounts cannot give a rate, and an invented one costs later trust. — It is the most persuasive sentence available and the one that does lasting damage when the real figure appears. Say what you observed, say the sample, and name the data that would settle it, such as the provider’s payment records.
 
 Improve: Remove any rate from your case in step 2 and state the observation with its sample. Record the change in step 5.
 
@@ -6460,18 +6749,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Why prepare the smaller version before the conversation rather than during it?
 
-- Prepared in advance it is a decision you designed; improvised it is a concession, and usually the wrong half survives.
-- It shows flexibility, which helps the case.
-- It saves time in the meeting.
+- It shows flexibility, which makes the people deciding more willing to say yes to the full ask.
+- Improvised under pressure, the cut tends to fall on the least finished work, not the least valuable.
+- It saves time in the meeting, so the decision can be reached before everybody has to leave.
 
 <details>
 <summary>After your attempt</summary>
 
-Prepared in advance it is a decision you designed; improvised it is a concession, and usually the wrong half survives. — Under pressure you cut whatever is easiest to give up, which is often the accessibility work or the failure paths. Deciding it calmly means the smaller version still delivers the outcome.
+It shows flexibility, which makes the people deciding more willing to say yes to the full ask. — It can read as a weak opening ask if it is offered too early. The reason to prepare it is what gets cut, not how it looks.
 
-It shows flexibility, which helps the case. — It can read as a weak opening ask if it is offered too early. The reason to prepare it is what gets cut, not how it looks.
+Improvised under pressure, the cut tends to fall on the least finished work, not the least valuable. — Under pressure you cut whatever is easiest to give up, which is often the accessibility work or the failure paths. Deciding it calmly, in advance, means the smaller version still delivers the outcome.
 
-It saves time in the meeting. — True and minor. What it saves is the wrong cut.
+It saves time in the meeting, so the decision can be reached before everybody has to leave. — True and minor. What preparing it saves is the wrong cut.
 
 Improve: Write the smaller version in step 3, with what it does not fix, before making the case. Record the change in step 5.
 
@@ -6515,22 +6804,48 @@ Unmade is honest. Write what you expect the response to be, so you can compare l
 
 Section: practice. Stable action: write-what-moved.
 
-Write your answer for “Which part of the argument actually moved the decision, or what you expect to”. Use the task instructions below to decide what to include.
+Summarise the response in your words rather than quoting anybody.
 
 **Answer:** Which part of the argument actually moved the decision, or what you expect to
 
+Summarise the response in your words rather than quoting anybody.
 
 
-
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: you want a week to fix the confusing returns page of a small online plant shop. The owner decides by what fills her inbox; she says about a third of her emails are returns questions. You watched four customers try to start a return: three could not find the returns form. A full redesign would take three weeks.
+
+**Task:** Write the two or three sentences of your case to the owner, and explain which part connects to how she decides and where your evidence stops.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Argues in design terms (the page lacks hierarchy), or turns three of four into a percentage of all customers.
+- Adequate: Keeps the observation as three of four people watched, infers it may drive the returns emails she mentioned, connects that to her inbox, and offers the one-week fix rather than the three-week redesign.
+- Strong: As adequate, and states the honest weakness (four people cannot say how many emails the fix would remove) and what would tell her more, such as counting returns emails before and after the fix as a signal to look at, not proof.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -6566,12 +6881,12 @@ Made-up example. Arguing for held-place work on a tool library, and arguing in d
 Activity: Run a short simulated handoff conversation using only the supplied case. Ask me to explain one decision, one unresolved question and what the builder should verify. Keep the simulation labelled.
 
 Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
-When the activity is finished, tell me to return to the course answer called “What the person deciding is accountable for” and write my own decision. Do not write that answer for me.
+When the activity is finished, tell me to return to the course answer called “What the person deciding is accountable for (their role, not their name)” and write my own decision. Do not write that answer for me.
 ```
 
-**Come back to the course:** Return to “What the person deciding is accountable for”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+**Come back to the course:** Return to “What the person deciding is accountable for (their role, not their name)”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “What the person deciding is accountable for” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “What the person deciding is accountable for (their role, not their name)” and write one sentence in your own words.
 
 </details>
 <details>
@@ -6744,7 +7059,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The critique was run on the held-place state with one question: does this communicate that a place is secured and for how long? Three people responded; two raised the same problem, that the phrasing read as marketing rather than status. No decisions were taken and the notes were kept. The review a week later presented the revised version against its criteria and the QA findings, and produced three decisions: accept the wording, defer the countdown to a later story, and change one criterion that had proved unverifiable. Both meetings had a written record; the critique's was a problem list and the review's was a decision list.
+- Made-up example: the critique was run on the held-place state with one question: does this communicate that a place is secured and for how long? Three people responded; two raised the same problem, that the phrasing read as marketing rather than status. No decisions were taken and the notes were kept. The review a week later presented the revised version against its criteria and the QA findings, and produced three decisions: accept the wording, defer the countdown to a later story, and change one criterion that had proved unverifiable. Both meetings had a written record; the critique's was a problem list and the review's was a decision list.
 
 
 ### Choose where you will do the work
@@ -6793,15 +7108,15 @@ Example (made up): does this screen communicate that a place is secured, and for
 </details>
 
 
-### What you sent in advance, and to whom
+### What you sent in advance, and to whom (roles, not names)
 
 Section: practice-plan. Stable action: write-critique-sent.
 
-No colleagues: run it with two people who will look at a screen for ten minutes, and label it a rehearsal.
+No colleagues: run it with two people who will look at a screen for ten minutes, and label it a rehearsal. With nobody at all, run both meetings against your own work a day apart and label them solo rehearsals.
 
-**Answer:** What you sent in advance, and to whom
+**Answer:** What you sent in advance, and to whom (roles, not names)
 
-No colleagues: run it with two people who will look at a screen for ten minutes, and label it a rehearsal.
+No colleagues: run it with two people who will look at a screen for ten minutes, and label it a rehearsal. With nobody at all, run both meetings against your own work a day apart and label them solo rehearsals.
 
 
 ### How you said that no decisions would be taken
@@ -6857,15 +7172,15 @@ Made-up example. Running a critique on a tool-library screen, and asking for fee
 **Unknown:** Still unknown: whether the photograph comments were right. Two people raised it unprompted, which is worth a separate look, and it was not what the session was for.
 
 
-### Every problem raised, including the ones you disagree with
+### Every problem raised, including the ones you disagree with, summarised without names
 
 Section: practice-plan. Stable action: write-problems-raised.
 
-Write your answer for “Every problem raised, including the ones you disagree with”. Use the task instructions below to decide what to include.
+Write the problem, not who raised it. Keep any verbatim notes in your own private file.
 
-**Answer:** Every problem raised, including the ones you disagree with
+**Answer:** Every problem raised, including the ones you disagree with, summarised without names
 
-
+Write the problem, not who raised it. Keep any verbatim notes in your own private file.
 
 
 ### Off-topic feedback, and where you sent it instead
@@ -7158,18 +7473,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Should everybody give feedback on everything in a critique?
 
-- No. Broad feedback on a specific question wastes the room’s time and yours, and the thing you needed gets two minutes at the end.
-- Yes, if the work is early enough.
-- Yes, since people notice things you did not think to ask about.
+- Better to ask one question and route the rest, or your question gets two minutes at the end.
+- It should be open, since people notice things you would never have thought to ask about.
+- It should be open while the work is early, and narrowed only once the design is settled.
 
 <details>
 <summary>After your attempt</summary>
 
-No. Broad feedback on a specific question wastes the room’s time and yours, and the thing you needed gets two minutes at the end. — An open question hands the agenda to whatever is most visible on the screen. Ask for what you need, and give the other observations a written route so they are not lost.
+Better to ask one question and route the rest, or your question gets two minutes at the end. — An open question hands the agenda to whatever is most visible on the screen. Ask for what you need, and give the other observations a written route so they are not lost.
 
-Yes, if the work is early enough. — Early work benefits most from a narrow question, because there is more that could change and less to defend.
+It should be open, since people notice things you would never have thought to ask about. — They do, and that is what the written route is for. Twenty-five minutes of it in the room costs you the answer you came for.
 
-Yes, since people notice things you did not think to ask about. — They do, and that is what the written route is for. Twenty-five minutes of it in the room costs you the answer you came for.
+It should be open while the work is early, and narrowed only once the design is settled. — Early work benefits most from a narrow question, because there is more that could change and less to defend.
 
 Improve: Reduce your critique to one question in step 1, and set up a written route for everything else. Record the change in step 5.
 
@@ -7188,18 +7503,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A decision gets taken during your critique. What does that cost?
 
-- People stop raising problems, because raising one now risks committing to something.
-- Nothing, if the decision was a good one.
-- It makes the later review redundant.
+- People get careful, since raising a problem now risks committing to something.
+- Only that the later review becomes redundant and can be cancelled.
+- Nothing at all, provided the decision that was taken was a good one.
 
 <details>
 <summary>After your attempt</summary>
 
-People stop raising problems, because raising one now risks committing to something. — Critique works because nothing is at stake. Once decisions can happen, the room becomes careful, and careful rooms produce approval rather than problems.
+People get careful, since raising a problem now risks committing to something. — Critique works because nothing is at stake. Once decisions can happen, the room becomes careful, and careful rooms produce approval rather than problems.
 
-Nothing, if the decision was a good one. — The decision may be fine. What changes is what people will say in the next critique.
+Only that the later review becomes redundant and can be cancelled. — That would be a saving. The cost lands on the honesty of every critique afterwards.
 
-It makes the later review redundant. — That would be a saving. The cost lands on the honesty of every critique afterwards.
+Nothing at all, provided the decision that was taken was a good one. — The decision may be fine. What changes is what people will say in the next critique.
 
 Improve: Say at the start of the critique in step 1 that no decisions will be taken, and record how you said it. Note the change in step 5.
 
@@ -7218,22 +7533,22 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your review produced agreement and no written decisions. What went wrong?
 
-- The work was not contentious enough to need decisions.
-- Nothing was decided. Agreement without a written decision is re-made differently by whoever remembers it least accurately.
-- The record can be written up afterwards.
+- Nothing that matters, because the record can be written up from memory afterwards.
+- Nothing; the work was simply not contentious enough to need any decisions.
+- Nothing was actually decided; unwritten agreement gets remembered differently.
 
 <details>
 <summary>After your attempt</summary>
 
-The work was not contentious enough to need decisions. — Then the open items were not named. Every review should have things that need settling.
+Nothing that matters, because the record can be written up from memory afterwards. — Written afterwards it is a reconstruction, and the disagreement about what was agreed arrives later.
 
-Nothing was decided. Agreement without a written decision is re-made differently by whoever remembers it least accurately. — Naming the open items in advance and writing decisions as they are made is what turns a meeting into a record. Reading them back before people leave is where you find out that two people heard different things.
+Nothing; the work was simply not contentious enough to need any decisions. — Then the open items were not named. A review should have things that need settling, even if the answer is to keep them.
 
-The record can be written up afterwards. — Written afterwards it is a reconstruction, and the disagreement about what was agreed arrives later.
+Nothing was actually decided; unwritten agreement gets remembered differently. — Naming the open items in advance and writing decisions as they are made is what turns a meeting into a record. A decision to keep the work as it is counts, once written. Reading them back before people leave is where you find out that two people heard different things.
 
 Improve: Name the open items and write the decisions as they happen in step 3, then read them back in step 4. Record the change in step 5.
 
-Check again: Every open item in the review has a decision or an explicit deferral.
+Check again: Every open item in the review has a decision, a justified decision to keep it, or an explicit deferral.
 
 Answers to revisit: review-presented, open-items, decisions-written, read-back, next-action, improvement-made
 
@@ -7281,15 +7596,41 @@ Write your answer for “Any feedback that would have been better in the other f
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: you are about to show the new members’ noticeboard for a gardening allotment society to three committee members. You need to know one thing this week: whether the plot-swap section makes it obvious how to offer a plot. Last time, the meeting spent twenty minutes on the society’s logo colours.
+
+**Task:** Decide whether this should be a critique or a review, write the one question you would send ahead, and explain why that format.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Asks “any thoughts?” or mixes approval with feedback, with no stated question and no plan for off-topic comments such as the logo.
+- Adequate: Chooses a critique (the work is still moving and the need is problems, not approval), writes one answerable question about offering a plot, and says no decisions will be taken.
+- Strong: As adequate, and gives the logo a written route rather than refusing it, and says when a later review with criteria and a decision record would follow.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -7432,7 +7773,7 @@ Stable ID: m14-l11-v1. Core.
 
 Shipping is a decision with a follow-up. Without deciding what you will look at, a release produces relief rather than learning.
 
-Bring: A feature ready to release and its criteria.
+Bring: A feature you could release, real or supplied, and its criteria.
 
 Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
@@ -7503,7 +7844,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The release plan: the held-place message and states ship; the countdown is held back until the timer is server-driven; the whole feature goes to everyone at once, since a subset would fragment support. Before shipping, three things were named: whether support contacts about payment status change over four weeks, whether anyone reports a duplicate payment, and a short round of three conversations with recent bookers. The reversal condition: if duplicate payments continue at the same rate after four weeks, the state design is not the cause and the work moves to the payment confirmation itself. It was recorded that none of the three is a controlled comparison.
+- Made-up example: the release plan: the held-place message and states ship; the countdown is held back until the timer is server-driven; the whole feature goes to everyone at once, since a subset would fragment support. Before shipping, three things were named: whether support contacts about payment status change over four weeks, whether anyone reports a duplicate payment, and a short round of three conversations with recent bookers. The review trigger: if duplicate payments continue at the same rate after four weeks, the team looks next at the payment confirmation and asks recent bookers what they saw. An unchanged count would not show the state design had no effect, and a fall would not show it worked, because none of the three is a controlled comparison; that was recorded beside the signals.
 
 
 ### Choose where you will do the work
@@ -7513,6 +7854,23 @@ Section: learn. Stable action: workspace.
 Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
+
+
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Practice tracker (made up): a tool-library booking feature, reviewed as built. The team’s agreed baseline: WCAG 2.2 level AA, and no screen may lose what a person has typed. Story criteria: C1 the review screen states that the place is held and until what time; C2 the countdown is announced when it appears and at expiry, not on every change; C3 the held state is distinguishable without colour; C4 the layout reserves space for an image while it loads.
+- TL-01 · Defect · Severity: blocked, for people listening with a screen reader · Evidence: the countdown is announced every second; C2 says at appearance and at expiry only · Status: open, fix this sprint · Annotation: it contradicts a criterion that can be quoted, so nobody needs to argue about whether it is a defect.
+- TL-02 · Defect · Severity: blocked, for keyboard users · Evidence: the date picker cannot be opened or changed from the keyboard and there is no other way to choose a date; no story criterion mentions the keyboard · Status: open, top of triage · Annotation: no old criterion covers it, and it still fails the agreed baseline (WCAG 2.2 success criterion 2.1.1, Keyboard), so it is triaged as a defect, not a request. The missing keyboard criterion is logged beside it.
+- TL-03 · Missing requirement · Severity: at risk of losing money or a place · Evidence: nobody specified what happens if the hold expires while a payment is processing; the build extends the hold silently · Status: needs a decision, owner the designer · Annotation: it contradicts nothing because nothing was written, and it is not a preference either. It enters triage with a proposed criterion.
+- TL-04 · Defect · Severity: cosmetic · Evidence: the gap under the title is 12 pixels; the specification says 16 · Status: open, low priority, batched with other spacing fixes · Annotation: a real defect against the specification, rated low and kept on the list rather than dropped.
+- TL-05 · Change request · Severity: none, an improvement idea · Evidence: the designer would now prefer “No tools match those dates” to the agreed “No results” · Status: declined for this release, revisit at the next wording review · Annotation: a change of mind is legitimate and is prioritised like other work. Keeping the agreed wording, with the reason written down, is a valid outcome of review.
+- TL-06 · Question · Severity: unknown until answered · Evidence: the whole card is tappable in the build; the design shows only the button as tappable, and no decision record says which was intended · Status: asked of the engineer and the designer · Annotation: it could be a defect or an improvement, so the honest label until somebody answers is question.
+- TL-07 · Defect · Severity: at risk of losing something · Evidence: a failed submission clears everything the person typed; no story criterion mentions it, and the baseline says no screen may lose typed input · Status: open, high · Annotation: like TL-02, actionable without an old criterion because it breaks the agreed baseline. A criterion is added for the next story.
+- TL-08 · Defect · Severity: at risk of losing something · Evidence: on a 360-pixel phone with a slow connection, the price overlaps the Reserve button while the image loads; C4 says the layout reserves image space · Status: open, high · Annotation: it quotes C4 and states its conditions, so somebody else can reproduce and fix it without a conversation.
 
 
 ### Read on defining success
@@ -7596,11 +7954,11 @@ Made-up example. Deciding what ships of a tool-library feature, and holding back
 
 Section: practice-plan. Stable action: write-ships.
 
-Write your answer for “What ships”. Use the task instructions below to decide what to include.
+Plan the release of your Project 1 design, your Project 2 build, or the feature in the practice tracker. A plan for a release that will not actually happen is a rehearsal and says so.
 
 **Answer:** What ships
 
-
+Plan the release of your Project 1 design, your Project 2 build, or the feature in the practice tracker. A plan for a release that will not actually happen is a rehearsal and says so.
 
 
 ### What is deliberately held back, and why
@@ -7636,7 +7994,7 @@ Three things you will look at, each with where you would see it and over what pe
 
 **Start here:** For each signal, name the place you would look before naming the thing you would see.
 
-**Enough:** Every signal could come back saying the work did not help.
+**Enough:** Every signal could come back unmoved, and you have said what you would look into if it did.
 
 **Deciding in advance:** Naming what you will look at before you ship. Afterwards, everything looks like evidence for whatever happened.
 
@@ -7657,7 +8015,7 @@ Made-up example. Shipping a held-place message on a tool library, and deciding w
 
 **What I should have written before shipping:** Three things: the number of support contacts about payment status over four weeks, whether anybody reports a duplicate payment, and three conversations with recent bookers.
 
-**Why writing them first changes anything:** Because after the fact, every number is available and the one that supports your work is the one you notice. Naming them in advance is what makes the answer able to be no.
+**Why writing them first changes anything:** Because after the fact, every number is available and the one that supports your work is the one you notice. Naming them in advance is what lets a signal come back unmoved and be taken seriously: a reason to look again, though not proof either way.
 
 **Wrong turn:** The wrong turn is deciding what to look at after shipping, because that is when somebody asks. By then everything looks like evidence, and the release produces relief rather than learning.
 
@@ -7687,7 +8045,7 @@ a number that moves for other reasons — It does move for other reasons, which 
 
 not evidence at all — It is the thing the decider already reports on.
 
-Now check your own three signals: each should have a place to look, a period, and the possibility of coming back as no.
+Now check your own three signals: each should have a place to look, a period, and the possibility of coming back unmoved.
 
 </details>
 
@@ -7713,7 +8071,7 @@ a number that moves for other reasons — A big number with many causes. Watchin
 
 not evidence at all — It is real data; it simply cannot be attributed.
 
-Now check your own three signals: each should have a place to look, a period, and the possibility of coming back as no.
+Now check your own three signals: each should have a place to look, a period, and the possibility of coming back unmoved.
 
 </details>
 
@@ -7739,7 +8097,7 @@ a number that moves for other reasons — It is not a number at all.
 
 not evidence at all — Small and honest evidence is still evidence, as long as nothing later reports it as a rate.
 
-Now check your own three signals: each should have a place to look, a period, and the possibility of coming back as no.
+Now check your own three signals: each should have a place to look, a period, and the possibility of coming back unmoved.
 
 </details>
 
@@ -7765,7 +8123,7 @@ a number that moves for other reasons — It is not a measurement of anything.
 
 not evidence at all — It is the sentence that gets said three weeks after every release, and it would be equally true if the feature had made things worse.
 
-Now check your own three signals: each should have a place to look, a period, and the possibility of coming back as no.
+Now check your own three signals: each should have a place to look, a period, and the possibility of coming back unmoved.
 
 </details>
 
@@ -7791,7 +8149,7 @@ a number that moves for other reasons — It is narrow enough that other causes 
 
 not evidence at all — It is the closest thing to the outcome this work has.
 
-Now check your own three signals: each should have a place to look, a period, and the possibility of coming back as no.
+Now check your own three signals: each should have a place to look, a period, and the possibility of coming back unmoved.
 
 </details>
 
@@ -7817,7 +8175,7 @@ a number that moves for other reasons — No number is involved.
 
 not evidence at all — Worth having as morale and worth keeping out of the release plan, where it will be read as a result.
 
-Now check your own three signals: each should have a place to look, a period, and the possibility of coming back as no.
+Now check your own three signals: each should have a place to look, a period, and the possibility of coming back unmoved.
 
 </details>
 
@@ -7877,18 +8235,20 @@ Write your answer for “For each: what would suggest it worked, and what would 
 
 Section: practice-plan. Stable action: step-4-brief.
 
-A stated condition that would make you reverse or change the feature, with who decides and when.
+A stated condition that would make you reverse, change or investigate the feature, with who decides and when.
 
 - State what would make you change or reverse the feature.
 - Name who decides that and when.
 
-**Start here:** Finish this sentence: “if, after four weeks, … then the design is not the cause and we …”.
+**Start here:** Finish this sentence: “if, after four weeks, … then we will look into … and decide whether to …”.
 
-**Enough:** The condition could actually be met, and somebody is named.
+**Enough:** The condition could actually be met, somebody is named, and nothing in it claims to prove what caused the result.
 
-**Reversal condition:** What would make you undo or rethink it. Written in advance it is a plan; written afterwards it is a rationalisation.
+**Reversal condition:** What would make you undo, rethink or investigate it. Written in advance it is a plan; written afterwards it is a rationalisation. It is a decision rule, not a finding about cause.
 
-**Who decides:** A name and a date. A reversal condition nobody owns is not one.
+**Investigation trigger:** A result that sends you to find out more. An unchanged count after an uncontrolled release does not show the design had no effect, and a better count does not show it worked; other things changed in the same weeks.
+
+**Who decides:** A role and a date. A reversal condition nobody owns is not one.
 
 
 ### What would make you reverse or change the feature
@@ -7921,18 +8281,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The feature shipped and the numbers look better. Did it work?
 
-- Probably, since the change was aimed at exactly those numbers.
-- Unknown. Everything moves for many reasons, and without deciding in advance what you would look at, any number that supports the work is the one you notice.
-- Yes, unless something else obviously changed.
+- Probably, since the change was aimed at exactly those numbers and they moved.
+- It did, unless something else obviously changed in the same few weeks.
+- Unknown: nothing here separates the change from everything else that month.
 
 <details>
 <summary>After your attempt</summary>
 
-Probably, since the change was aimed at exactly those numbers. — Aiming at them does not establish that you hit them, and nothing here separates your change from the month.
+Probably, since the change was aimed at exactly those numbers and they moved. — Aiming at them does not establish that you hit them, and nothing here separates your change from the month.
 
-Unknown. Everything moves for many reasons, and without deciding in advance what you would look at, any number that supports the work is the one you notice. — A quiet month moves everything at once. Naming the signals before shipping is what makes it possible for the answer to be no.
+It did, unless something else obviously changed in the same few weeks. — Something else usually changed, and often not obviously.
 
-Yes, unless something else obviously changed. — Something else always changed, and mostly not obviously.
+Unknown: nothing here separates the change from everything else that month. — A quiet month moves everything at once. Signals named before shipping can at least come back unmoved and prompt a closer look; neither direction proves what caused it.
 
 Improve: Write your three signals in step 3 with where you would look and over what period, and record the change in step 5.
 
@@ -7951,22 +8311,22 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your release plan has no reversal condition. What is missing?
 
-- A rollback procedure from the engineers.
-- What would make you change or undo it, decided in advance and owned by somebody.
-- Nothing, since you can decide later if there is a problem.
+- Nothing important, since you can decide later whether there is a problem.
+- A written rollback procedure from the engineers for undoing it.
+- A result that would make you change, undo or investigate it, owned by somebody.
 
 <details>
 <summary>After your attempt</summary>
 
-A rollback procedure from the engineers. — Useful and technical. The missing part is the condition that would trigger it.
+Nothing important, since you can decide later whether there is a problem. — Later, the decision competes with the two weeks already spent, and it usually loses.
 
-What would make you change or undo it, decided in advance and owned by somebody. — Without one, a feature that did not help stays because it exists. Written before shipping it is a plan; written afterwards it is a rationalisation of whatever happened.
+A written rollback procedure from the engineers for undoing it. — Useful and technical. The missing part is the condition that would trigger it.
 
-Nothing, since you can decide later if there is a problem. — Later, the decision competes with the two weeks already spent, and it usually loses.
+A result that would make you change, undo or investigate it, owned by somebody. — Without one, a feature stays because it exists. Written before shipping it is a plan; written afterwards it is a rationalisation of whatever happened. It triggers a decision or a closer look; it does not prove cause.
 
 Improve: Write the condition and name who decides in step 4. Record the change in step 5.
 
-Check again: The condition names something observable and somebody accountable.
+Check again: The condition names something observable and somebody accountable, and claims no cause.
 
 Answers to revisit: reversal-condition, who-when, improvement-made
 
@@ -7981,18 +8341,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You cannot measure whether people feel confident about their booking. Is that a dead end?
 
-- No. Three conversations with recent bookers is legitimate evidence at this scale, and it is not a measurement.
-- No, you can infer it from the support contacts.
-- Yes, without analytics there is nothing to say.
+- It is not, because confidence can be inferred from the support contacts.
+- It is not: three conversations with recent bookers are real evidence, not a measurement.
+- It is, because without an analytics tool there is nothing honest to say about it.
 
 <details>
 <summary>After your attempt</summary>
 
-No. Three conversations with recent bookers is legitimate evidence at this scale, and it is not a measurement. — The honest plan says which things are counted and which are asked about, and does not let the second sound like the first.
+It is not, because confidence can be inferred from the support contacts. — You can infer something about the people who contacted support. Confidence among everybody else is what the conversations are for.
 
-No, you can infer it from the support contacts. — You can infer something about the people who contacted support. Confidence among everybody else is what the conversations are for.
+It is not: three conversations with recent bookers are real evidence, not a measurement. — The honest plan says which things are counted and which are asked about, and does not let the second sound like the first.
 
-Yes, without analytics there is nothing to say. — Counting support contacts by hand and asking three people are both available and both real.
+It is, because without an analytics tool there is nothing honest to say about it. — Counting support contacts by hand and asking three people are both available and both real.
 
 Improve: Write what you will ask about rather than count in step 5, and add the not-controlled sentence. Record the change.
 
@@ -8044,15 +8404,41 @@ Write your answer for “The sentence saying none of this is a controlled compar
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a community food bank is releasing a new online slot-booking page to replace phone booking. Before release, about forty calls a week are “what time is my slot?”. The new page shows the slot on the confirmation screen. A local radio appeal for donations runs in the same fortnight as the release.
+
+**Task:** Name one signal you would watch, where and for how long, and what you would do if it did not change, explaining why that result would not prove the page failed.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Says the page worked if calls fall, or failed if they do not, without naming the radio appeal or anything else that changed.
+- Adequate: Names calls about slot times, counted from the phone log over a stated period, and treats no change as a trigger to investigate (ask people, check whether they found the confirmation), not proof of failure.
+- Strong: As adequate, and names the radio appeal as a competing explanation, adds a conversation route for what cannot be counted, and says who decides on any reversal and when.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -8103,7 +8489,7 @@ When the activity is finished, tell me to return to the course answer called “
 - Write what you would expect to see if this worked and if it did not, and where.
 
 - R20: [GOV.UK: measuring success](https://www.gov.uk/service-manual/measuring-success) — Defining success measures before release and using performance data honestly. Purpose: Supplies the discipline of deciding what to look at in advance. Free reading, no account. Verified 2026-09-06. Written for government services with published performance data; at your scale, counts and conversations replace dashboards and neither is a controlled comparison. Fallback: R07.
-- R67: [Semantic Versioning 2.0.0](https://semver.org/) — The rules for what a release means and cannot be changed. Purpose: Connects the release decision to the versioning discipline from m13. Free reading, no account, CC BY 3.0. Verified 2026-09-06. Written for software APIs; the release-immutability idea is what transfers. Fallback: R18.
+- R67: [Semantic Versioning 2.0.0](https://semver.org/) — The rules for what a release means and cannot be changed. Purpose: Connects the release decision to versioning discipline; it stands alone if you did not study m13. Free reading, no account, CC BY 3.0. Verified 2026-09-06. Written for software APIs; the release-immutability idea is what transfers. Fallback: R18.
 
 </details>
 <details>
@@ -8147,7 +8533,7 @@ Adequate evidence: A condition that would trigger change or reversal, with who d
 
 2 — Both stated.
 
-3 — As adequate, and the condition would be uncomfortable to meet, which means it is real.
+3 — As adequate, and the condition would be uncomfortable to meet, and it is worded as a trigger to act or investigate rather than a claim about cause.
 
 Repair: Write what result would make you undo this, then name who would decide. Recheck: The reversal condition.
 
@@ -8181,8 +8567,8 @@ The progress bar counts required actions with saved work. It is not a score or p
 <summary>Reading, video and deeper explanation</summary>
 
 - Releasing part of something is normal and worth deciding rather than discovering. Holding a state back, releasing to a subset of people, or shipping behind a flag are all ways of reducing the cost of being wrong, and each has a design consequence: someone will meet a partial version, and that version needs to make sense on its own.
-- Deciding what to look at before shipping is what separates learning from relief. The assigned measuring guidance is about defining success in advance, and the design version is narrower: what would tell you this worked, what would tell you it did not, and where would you see either. Written afterwards, the answer is always the number that looks best.
-- The reversal condition is the honest half. If support contacts about payment confusion do not fall, or if people still ring rather than using the flow, what will you do? Naming that before release stops a feature persisting on the strength of the effort it took.
+- Deciding what to look at before shipping is what separates learning from relief. The assigned measuring guidance is about defining success in advance, and the design version is narrower: what would tell you this worked, what would tell you it did not, and where would you see either. Written afterwards, the answer tends to be the number that looks best.
+- The reversal condition is the honest half. If support contacts about payment confusion do not fall, or if people still ring rather than using the flow, what will you do? Naming that before release stops a feature persisting on the strength of the effort it took. It is a decision rule and a trigger to investigate, not a verdict on cause: an uncontrolled count cannot show that the design did or did not cause what happened.
 - Be careful about what can be measured. Some things are countable — completions, contacts, repeat payments — and some are not, and asking a few people afterwards is a legitimate method rather than a failure. What is not legitimate is treating a released feature as evidence that the design was right; a release tells you what happened after it, and only if you decided to look.
 
 [GOV.UK: measuring success](https://www.gov.uk/service-manual/measuring-success).
@@ -8266,7 +8652,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The retrospective looked at the whole delivery. The two costliest problems: undefined states that were invented during the build, costing a day and producing two defects; and a handover held too late, which meant the estimate was made without the criteria. The committed change: criteria and states go into the story before estimation, owned by the learner, starting with the next story. The check: at the next retrospective, count how many states were invented during the build; the target is zero, and if it is not, the change was not enough. A previous change — sending material two days ahead — was reviewed and had worked.
+- Made-up example: the retrospective looked at the whole delivery. The two costliest problems: undefined states that were invented during the build, costing a day and producing two defects; and a handover held too late, which meant the estimate was made without the criteria. The committed change: criteria and states go into the story before estimation, owned by the learner, starting with the next story. The check: at the next retrospective, count how many states were invented during the build; the target is zero, and if it is not, find out why before deciding whether the change was enough, since the next story may simply have been harder. A previous change — sending material two days ahead — was reviewed: questions now arrive before the meeting, which is what it was meant to produce.
 
 
 ### Choose where you will do the work
@@ -8597,7 +8983,7 @@ What should be different next time if the change works, and how you will count i
 
 **Enough:** Your check produces a number rather than a feeling.
 
-**The check:** What you will look at next time to see whether the change helped. Decided now, so the answer can be no.
+**The check:** What you will look at next time to see whether the expected difference appeared. Decided now, so the result can disappoint you; if it does, look at why before declaring the change a failure.
 
 **Countable:** A number you can produce without effort: how many states were invented, how many defects reached QA. It beats an impression every time.
 
@@ -8616,9 +9002,9 @@ Made-up example. Setting the check on a retrospective change, and setting one no
 
 **What I should have written:** Count how many states were invented during the build. Last time it was two; the target is zero.
 
-**What that would have produced:** A number at the next retrospective, and a clear answer: either the change worked, or it did not and something else is needed. Both are useful and neither is available from smoothly.
+**What that would have produced:** A number at the next retrospective and a clear prompt: zero invented states, keep the change; any, find out why before adding anything. The next story might simply have been harder, so the number starts the conversation rather than ending it. Smoothly offers neither.
 
-**Wrong turn:** The wrong turn is writing a check that cannot fail, because a smooth-sounding outcome is what everybody wants and nobody can dispute. A check that cannot come back as no does not check anything.
+**Wrong turn:** The wrong turn is writing a check that cannot fail, because a smooth-sounding outcome is what everybody wants and nobody can dispute. A check that could never come back unmet does not check anything.
 
 **Trade-off:** A countable check is narrower than what you actually care about, and somebody will point out that zero invented states does not mean estimation went well.
 
@@ -8662,18 +9048,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Is the retrospective where the team says what went wrong?
 
-- Yes, and the changes follow from the discussion.
-- Yes, provided everyone speaks honestly.
-- It is where the team decides what to change. Without a committed change and a check, the same problems are listed again next time in the same words.
+- It is, provided everyone in the room speaks honestly about what happened.
+- It is where the team decides what to change, with an owner, a date and a check.
+- It is, and the right changes tend to follow naturally from a good discussion.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, and the changes follow from the discussion. — They follow only if somebody commits to one. Discussion alone produces a list that recurs.
+It is, provided everyone in the room speaks honestly about what happened. — Honesty is necessary and not sufficient. An honest list with no change is still a list.
 
-Yes, provided everyone speaks honestly. — Honesty is necessary and not sufficient. An honest list with no change is still a list.
+It is where the team decides what to change, with an owner, a date and a check. — Listing is the easy half and it feels productive. Without a committed change and a check, the same problems tend to be listed again next time in the same words.
 
-It is where the team decides what to change. Without a committed change and a check, the same problems are listed again next time in the same words. — Listing is the easy half and it feels productive. The output is one change, with an owner, a date and something countable.
+It is, and the right changes tend to follow naturally from a good discussion. — They follow only if somebody commits to one. Discussion alone produces a list that recurs.
 
 Improve: Commit to exactly one change in step 3, with an owner and a date. Record it in step 5.
 
@@ -8690,20 +9076,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-The thing that annoyed you most was a meeting that overran. Should it be your top problem?
+The thing that annoyed you most was a meeting that overran by twenty minutes. Undefined states cost a day of rework and two defects, and annoyed nobody. Which should be your top problem?
 
-- Yes, since a recurring irritation wears the team down.
-- Yes, because it is the one everybody agrees about.
-- Only if it cost the most. Irritation tracks how often you met a problem, not what it cost.
+- The meeting, because it is the problem that everybody in the room agrees about.
+- The undefined states: rank by cost, since irritation tracks how often you met it.
+- The meeting, since a recurring irritation wears the whole team down over time.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, since a recurring irritation wears the team down. — It does, and that is a real cost worth writing down as one rather than ranking by feeling.
+The meeting, because it is the problem that everybody in the room agrees about. — Agreement is easiest on the visible problems, which is exactly why costing changes the ranking.
 
-Yes, because it is the one everybody agrees about. — Agreement is easiest on the visible problems, which is exactly why costing changes the ranking.
+The undefined states: rank by cost, since irritation tracks how often you met it. — Twenty minutes against a day of rework and two defects is not close. The costly problems are often the ones that annoyed nobody, because their cost landed on somebody else’s week.
 
-Only if it cost the most. Irritation tracks how often you met a problem, not what it cost. — Twenty minutes against a day of rework and two defects is not close. The costly problems are often the ones that annoyed nobody, because their cost landed on somebody else’s week.
+The meeting, since a recurring irritation wears the whole team down over time. — It does, and that is a real cost worth writing down as one rather than ranking by feeling.
 
 Improve: Put a cost beside every problem in step 2 before ranking them. Record the change in step 5.
 
@@ -8720,20 +9106,20 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Your committed change is that engineers should ask before changing wording. Will it work?
+You wrote, on your own, that the committed change is “engineers should ask before changing wording”. Will it work?
 
-- Unlikely. It is a change to somebody else’s behaviour, and nobody in the room can commit to it.
-- Yes, if it is agreed in the meeting.
-- Yes, since it is a reasonable request.
+- It will, since it is a perfectly reasonable request to make of a team.
+- It will, once it has been agreed out loud at the retrospective meeting.
+- Unlikely: it changes somebody else’s habit, which you cannot commit to for them.
 
 <details>
 <summary>After your attempt</summary>
 
-Unlikely. It is a change to somebody else’s behaviour, and nobody in the room can commit to it. — The version you own is putting the exact wording into the acceptance criteria, so changing it fails a criterion. Changes that alter an artefact you control survive; changes that ask for a habit rarely do.
+It will, since it is a perfectly reasonable request to make of a team. — It is entirely reasonable, and reasonableness is not what makes a change stick.
 
-Yes, if it is agreed in the meeting. — Agreement in a meeting is not a mechanism. Three weeks later, under pressure, the habit returns.
+It will, once it has been agreed out loud at the retrospective meeting. — Agreement in a meeting is not a mechanism. Three weeks later, under pressure, the habit returns.
 
-Yes, since it is a reasonable request. — It is entirely reasonable, and reasonableness is not what makes a change stick.
+Unlikely: it changes somebody else’s habit, which you cannot commit to for them. — The version you own is putting the exact wording into the acceptance criteria, so changing it fails a criterion. Changes that alter an artefact you control tend to survive; changes that ask for a habit rarely do.
 
 Improve: Replace any change aimed at somebody else with one that alters something you own. Record the change in step 5.
 
@@ -8756,7 +9142,7 @@ The previous change reviewed, or a plain statement that this is the first retros
 
 **Start here:** Look up what you committed to last time before writing anything about it.
 
-**Enough:** Either the previous change has a verdict, or you have written what next time compares against.
+**Enough:** Either the previous change has its observed result and what you will do about it, or you have written what next time compares against.
 
 **Reviewing the last change:** Checking whether what you committed to last time helped. Without it, the same problems get listed again in the same words.
 
@@ -8774,15 +9160,41 @@ If this is your first retrospective, say so and write what you will compare agai
 If this is your first retrospective, say so and write what you will compare against next time.
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a volunteer team runs a monthly repair café. In their review of the last three months: the sign-up sheet ran out of rows twice, which everyone found annoying; twice nobody brought the electrical testing kit, so fourteen repairs were turned away; and one volunteer keeps arriving late. The coordinator wants five improvements.
+
+**Task:** Choose the one change you would commit to, with an owner, a start and a check, and explain why that change rather than the others.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Picks the most annoying problem, names a person as the problem, or keeps all five improvements with no owner.
+- Adequate: Chooses the testing-kit problem because it cost fourteen repairs, commits to one owned, dated change (for example a named kit-carrier on the rota) with a countable check, and leaves out the late volunteer’s name.
+- Strong: As adequate, and says the check is a prompt to look again rather than a verdict (fewer electrical visitors could also explain fewer turned away) and what would happen to the other four ideas.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -8893,7 +9305,7 @@ Adequate evidence: A countable or observable difference expected next time.
 
 3 — As adequate, and a previous change was reviewed with its result recorded honestly.
 
-Repair: Write what you will count next time, and what number would mean the change failed. Recheck: The check.
+Repair: Write what you will count next time, and what number would make you look again at the change. Recheck: The check.
 
 </details>
 The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.

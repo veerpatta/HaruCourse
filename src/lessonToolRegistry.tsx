@@ -38,7 +38,8 @@ const fileNotes: Record<string, Omit<StarterFile, "href">> = {
 };
 // Lessons that use the keyboard and screen-reader lab without naming a file.
 const labPages = ["/labs/m11/index.html", "/labs/m11/booking-form-barriers.html", "/labs/m11/booking-form-repaired.html"];
-const extraFiles: Record<string, string[]> = { "m11-l03-v1": labPages, "m11-l06-v1": labPages, "m11-l07-v1": labPages, "m11-l10-v1": labPages };
+const m12Starters = ["page-semantic", "page-styled", "page-responsive", "page-images", "behaviour-toggle", "data-states", "form-no-server", "debug-practice"].map((n) => `/starters/m12/${n}.html`);
+const extraFiles: Record<string, string[]> = { "m12-l11-v1": m12Starters, "m11-l03-v1": labPages, "m11-l06-v1": labPages, "m11-l07-v1": labPages, "m11-l10-v1": labPages };
 const referenced = new Map<string, StarterFile[]>();
 export function starterFilesFor(lesson: Lesson): StarterFile[] {
   if (!referenced.has(lesson.id)) {

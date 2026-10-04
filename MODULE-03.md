@@ -16,9 +16,9 @@ You already set type well on a page you control. A screen does not stay the size
 
 Bring: The three screens and workshop flow you produced in Product Design Foundations. You will re-typeset one of those screens rather than starting a new design.
 
-Starting route: Use one sketch or recreate this fictional class screen on paper: class name, instructor, date, price, materials and Reserve. Start with sizes 28, 22, 18, 17, 16, 15 and 13 so there is something to simplify. Annotate size and weight; a paper rendering is a specification, not a browser test.
+Starting route: Use one sketch or recreate this fictional class screen on paper: class name, instructor, date, price, materials and Reserve. Start with sizes 28, 22, 18, 17, 16, 15 and 13 so there is something to simplify. Annotate size and weight; a paper rendering is a specification, not a browser test. Look at a real page on a phone or in a narrow window at 200% text first.
 
-- A type scale table of five or six steps with size, weight and job; one screen re-typeset with it; the same screen at narrow width and at enlarged text; and a short note of what broke.
+- A type scale table of five or six steps with size, weight and job; one screen re-typeset with it; the same screen at narrow width and at 200 per cent text, each labelled observed or specified; and a short note of what broke.
 
 ### Start here: in everyday words
 
@@ -59,7 +59,7 @@ Hierarchy is a comparison, not an absolute. A heading reads as a heading because
 
 Section: learn. Stable action: learn-3.
 
-Screen type has one constraint print does not: the reader controls it. A person may set a larger default text size in their browser or phone, and a design that hard-codes every size in pixels can ignore that setting or break when it is honoured. Sizing text in relative units, so that a chosen scale multiplies the reader's own base size, keeps your hierarchy and their preference at the same time.
+Screen type has one constraint print does not: the reader controls it. A person may set a larger default text size in their browser or phone, and a design that hard-codes every size in pixels can ignore that setting or break when it is honoured. Sizing text in relative units, so that a chosen scale multiplies the reader's own base size, keeps your hierarchy and their preference at the same time. A paper drawing can specify what should happen when the column narrows or the text doubles; only a browser shows what actually happens, so label which one you have.
 
 
 ### Weight and case do work that size cannot
@@ -75,14 +75,14 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- A workshop detail screen designed with eight sizes was rebuilt with five: 32/24/16/14/12. The title dropped from 40 to 32 and moved to a heavier weight, the two “supporting” sizes were merged into one 14, and the metadata row became 12 in a heavier weight instead of a lighter grey. At 390 px wide the title now holds one line, the date and price line is readable at arm's length, and the section headings are still obviously headings — with three fewer sizes to maintain.
+- Made-up example: a workshop detail screen designed with eight sizes was rebuilt with five: 32/24/16/14/12. The title dropped from 40 to 32 and moved to a heavier weight, the two “supporting” sizes were merged into one 14, and the metadata row became 12 in a heavier weight instead of a lighter grey. At 390 px wide the title now holds one line, the date and price line is readable at arm's length, and the section headings are still obviously headings — with three fewer sizes to maintain.
 
 
 ### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
-Use one sketch or recreate this fictional class screen on paper: class name, instructor, date, price, materials and Reserve. Start with sizes 28, 22, 18, 17, 16, 15 and 13 so there is something to simplify. Annotate size and weight; a paper rendering is a specification, not a browser test.
+Use one sketch or recreate this fictional class screen on paper: class name, instructor, date, price, materials and Reserve. Start with sizes 28, 22, 18, 17, 16, 15 and 13 so there is something to simplify. Annotate size and weight; a paper rendering is a specification, not a browser test. Look at a real page on a phone or in a narrow window at 200% text first.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
 
@@ -158,7 +158,7 @@ Made-up example. Cutting seven sizes down to five on a class details screen.
 
 **My first instinct:** Keep them all and make the title 32 so the hierarchy is “stronger”. Bigger felt like clearer.
 
-**Why that failed:** At 390 px the 32 title wrapped to three lines and pushed the price off the screen. The page looked shoutier and told me less.
+**Why that failed:** Lettered at true size in a 390 px column, the 32 title took three lines and pushed the price off the screen. The page looked shoutier and told me less.
 
 **What I did instead:** Five steps: 24 semibold for the class name, 18 medium for section headings, 16 regular for body, 14 for the supporting line, 12 for labels.
 
@@ -290,11 +290,11 @@ Made-up example. Applying the five-step ladder to a class card, and losing somet
 
 Section: practice-plan. Stable action: write-collapsed.
 
-Write your answer for “Which old sizes collapsed into one step, and what you lost”. Use the task instructions below to decide what to include.
+If nothing collapsed, say why: for example, the screen already used only five sizes.
 
 **Answer:** Which old sizes collapsed into one step, and what you lost
 
-
+If nothing collapsed, say why: for example, the screen already used only five sizes.
 
 
 ### Anything you kept separate, and why it earned its own step
@@ -312,15 +312,19 @@ Write your answer for “Anything you kept separate, and why it earned its own s
 
 Section: practice-plan. Stable action: step-4-brief.
 
-What broke at narrow width and with enlarged text, in specific terms.
+What breaks at narrow width and at 200 per cent text, in specific terms, and whether you observed it or specified it.
 
-- Redraw or re-render the same screen at roughly 390 px wide, then again with the base text size increased by about 150 per cent. Record exactly what breaks: wrapping, truncation, overlap, a control pushed off screen.
+- First watch real behaviour: open a real listing page on a phone or in a narrow browser window and enlarge its text to 200 per cent, noting what re-wraps and what is cut off. Then letter your own screen at true size in a column about 390 px wide, and again with every text step doubled, and label both drawings as specifications. Record exactly what breaks: wrapping, truncation, overlap, a control pushed off screen.
 
-**Start here:** Do the narrow case first: redraw the same content in a column about a third the width.
+**Start here:** First look at real behaviour: open a real listing page on your phone, or in a browser window made as narrow as it goes, and enlarge it to 200 per cent (Ctrl and +, Cmd and + on a Mac, or the phone browser’s text-size setting). Note what re-wraps and what is cut off. Then letter your own screen at true size in a column as wide as your phone.
 
-**Enough:** Each note names what broke and where, not “it looked bad”.
+**Enough:** Each note names what broke and where, not “it looked bad”, and says whether it was observed or specified.
 
-**Enlarged text:** The reader’s own setting, not yours. Many people run their phone text well above default, and a layout that assumes otherwise breaks for them daily.
+**Enlarged text:** The reader’s own setting, not yours. Many people run their phone text well above default, and a layout that assumes otherwise breaks for them daily. 200 per cent is the size WCAG uses as its benchmark.
+
+**Reflow:** What a browser does when the width shrinks or the text grows: lines re-wrap and blocks move so nothing is lost. A paper drawing cannot reflow; you redraw it by hand.
+
+**Specification:** A drawing of what you intend to happen. It is a decision, not a test result, and its label should say so.
 
 
 ### Try a supplied example
@@ -331,47 +335,47 @@ A supplied narrow-width result from the same made-up screen: at 390 px the class
 
 Which of these is the most serious problem to fix first?
 
-- The heading and body looking similar, because the hierarchy has collapsed.
-- All three equally, since they all appeared at the same width.
-- The price and date falling below the fold, because the reader now cannot make the decision without scrolling.
-- The class name wrapping to two lines, because it looks careless.
+- All three equally, since they appeared together at the same width.
+- Heading and body looking alike, since the hierarchy has collapsed.
+- Price and date below the fold, since the decision now needs a scroll.
+- The class name on two lines, since a wrapped title looks careless at once.
 
 <details>
 <summary>After your attempt</summary>
 
-The heading and body looking similar, because the hierarchy has collapsed. — A real problem and second in line: it slows reading, while the missing price stops the decision entirely.
+All three equally, since they appeared together at the same width. — Appearing together does not make them equally costly. Ranking by what the reader cannot do is what makes the next hour useful.
 
-All three equally, since they all appeared at the same width. — Appearing together does not make them equally costly. Ranking by what the reader cannot do is what makes the next hour useful.
+Heading and body looking alike, since the hierarchy has collapsed. — A real problem and second in line: it slows reading, while the missing price stops the decision entirely.
 
-The price and date falling below the fold, because the reader now cannot make the decision without scrolling. — It is the only one that stops the task. A wrapped title is untidy; missing information is a decision the reader cannot make.
+Price and date below the fold, since the decision now needs a scroll. — It is the one that stops the task. A wrapped title is untidy; missing information is a decision the reader cannot make.
 
-The class name wrapping to two lines, because it looks careless. — Wrapping is normal on a phone and often fine. Judged by the reader’s task rather than the look, it costs almost nothing.
+The class name on two lines, since a wrapped title looks careless at once. — Wrapping is normal on a phone and often fine. Judged by the reader’s task rather than the look, it costs almost nothing.
 
 Rank your own breakages the same way: what stops the task first, what slows it, what merely looks wrong.
 
 </details>
 
 
-### At about 390 px wide: what broke?
+### At about 390 px wide: what breaks or has to change, and did you observe it or specify it?
 
 Section: practice-plan. Stable action: write-narrow-result.
 
-Wrapping titles, a heading pushing content off the screen, two steps that now look identical.
+Wrapping titles, a heading pushing content off the screen, two steps that now look identical. Observed means a real page or your own working file; specified means a true-size paper drawing.
 
-**Answer:** At about 390 px wide: what broke?
+**Answer:** At about 390 px wide: what breaks or has to change, and did you observe it or specify it?
 
-Wrapping titles, a heading pushing content off the screen, two steps that now look identical.
+Wrapping titles, a heading pushing content off the screen, two steps that now look identical. Observed means a real page or your own working file; specified means a true-size paper drawing.
 
 
-### With text about 150 per cent larger: what broke?
+### With text at 200 per cent: what breaks or has to change, and did you observe it or specify it?
 
 Section: practice-plan. Stable action: write-enlarged-result.
 
-On paper, letter the same screen with everything a step bigger and see what collides.
+On paper, letter the screen at true size with every text step doubled in the same width, and label it a specification. Paper shows what you intend to wrap; it cannot show what a browser cuts off.
 
-**Answer:** With text about 150 per cent larger: what broke?
+**Answer:** With text at 200 per cent: what breaks or has to change, and did you observe it or specify it?
 
-On paper, letter the same screen with everything a step bigger and see what collides.
+On paper, letter the screen at true size with every text step doubled in the same width, and label it a specification. Paper shows what you intend to wrap; it cannot show what a browser cuts off.
 
 
 ### Check your reasoning · 1 of 3
@@ -382,20 +386,20 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your title is 24 and the section headings are 18. To make the hierarchy clearer, what do you try first?
 
-- Drop the headings to 15 so the gap is wider.
-- Raise the title to 32 so the difference is obvious.
-- More space around the title and a heavier weight, before touching the size.
+- Add space around the title and a heavier weight before changing any size.
+- Raise the title to 32 so the jump from the headings is obvious at a glance.
+- Drop the headings to 15 so the ratio between the two levels widens.
 
 <details>
 <summary>After your attempt</summary>
 
-Drop the headings to 15 so the gap is wider. — It widens the ratio by weakening the smaller step, which now competes with body text. You have moved the problem rather than solved it.
+Add space around the title and a heavier weight before changing any size. — Space and weight cost no width, so they survive a narrow screen. Size is the instrument that breaks first when the column gets small.
 
-Raise the title to 32 so the difference is obvious. — On a phone that is where a title starts wrapping and pushing content down. The reader sees a big phrase and less of what they came for.
+Raise the title to 32 so the jump from the headings is obvious at a glance. — On a phone that is where a title starts wrapping and pushing content down. The reader sees a big phrase and less of what they came for.
 
-More space around the title and a heavier weight, before touching the size. — Space and weight cost no width, so they survive a narrow screen. Size is the instrument that breaks first when the column gets small.
+Drop the headings to 15 so the ratio between the two levels widens. — It widens the ratio by weakening the smaller step, which now competes with body text. You have moved the problem rather than solved it.
 
-Improve: Look at your narrow-width note in step 4. If the title broke there, change your ladder so the title relies on weight and space rather than size, and record it in step 5.
+Improve: Look at your narrow-width note in step 4. If the title broke there, change your ladder so the title relies on weight and space rather than size, and record it in step 5. If it held, say so and why.
 
 Check again: The narrow version keeps the price and date visible, and the title still reads as the title.
 
@@ -410,24 +414,24 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You did not test enlarged text because your screen is a paper sketch. What is the honest response?
+Your screen is a paper sketch, so no browser can enlarge its text. What is the honest way to cover the enlarged-text case?
 
-- Redraw the screen with every step one size larger and see what collides; that is the paper version of the test.
-- Assume it is fine because the type scale is proportional.
-- Note that enlarged text cannot be tested on paper and move on.
+- Draw it at 200% in the same width, label it a specification, and watch a real page at 200%.
+- Leave it until the screen is built, since only working code can be checked at 200%.
+- Rely on the proportional scale: relative sizes keep the layout intact at 200%.
 
 <details>
 <summary>After your attempt</summary>
 
-Redraw the screen with every step one size larger and see what collides; that is the paper version of the test. — The test is about what happens when text grows inside a fixed width, and a pencil can show that. It is real evidence about your layout.
+Draw it at 200% in the same width, label it a specification, and watch a real page at 200%. — Paper can show what you intend to wrap and where text would collide, which is worth drawing. It cannot show what a browser does, so the label matters, and a real page at 200 per cent shows the behaviour you are specifying.
 
-Assume it is fine because the type scale is proportional. — Proportional sizes still collide with fixed containers, buttons and images. The failure is in the layout, not the ratio.
+Leave it until the screen is built, since only working code can be checked at 200%. — Waiting skips the decision. A drawing made now tells whoever builds the screen what must wrap and what must never be cut off, and a real page shows you what to look for.
 
-Note that enlarged text cannot be tested on paper and move on. — It can, roughly, and roughly is enough to find collisions. Skipping it means shipping a layout that fails for a large number of readers.
+Rely on the proportional scale: relative sizes keep the layout intact at 200%. — Relative sizes keep the ratios between steps, and the text still grows into fixed containers, buttons and images. The collisions are in the layout, not the scale.
 
-Improve: If your enlarged-text box in step 4 is empty, redraw the screen a step larger throughout and write what collides, then note it in step 5.
+Improve: If your enlarged-text box in step 4 is empty, letter the screen with every step doubled in the same width, label it a specification, and add one thing you saw on a real page at 200 per cent. Note it in step 5.
 
-Check again: The enlarged case names at least one specific collision or says plainly that nothing broke and how you checked.
+Check again: The enlarged case names a specific collision, or says nothing broke, and states whether it was observed or specified.
 
 Answers to revisit: enlarged-result
 
@@ -442,20 +446,20 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You cut seven sizes to five and two labels now look identical. What should the record say?
 
-- That the labels should be told apart by colour instead.
-- Nothing: fewer sizes is the point of the exercise.
-- Which distinction you gave up and whether it mattered, so the decision can be revisited.
+- Nothing further: removing sizes was the aim, so the merge needs no note.
+- Which distinction was given up, and whether it mattered on this screen.
+- That the two labels will be told apart by colour from now on instead.
 
 <details>
 <summary>After your attempt</summary>
 
-That the labels should be told apart by colour instead. — That moves the distinction onto colour alone, which the next two lessons are about undoing.
+Nothing further: removing sizes was the aim, so the merge needs no note. — Fewer sizes is the method, not the goal. If the lost distinction carried meaning, you have made the screen worse and no record says so.
 
-Nothing: fewer sizes is the point of the exercise. — Fewer sizes is the method, not the goal. If the lost distinction carried meaning, you have made the screen worse and no record says so.
+Which distinction was given up, and whether it mattered on this screen. — Reduction is a trade, not a virtue. Writing down what it cost is what separates a system from tidying, and it lets the decision be revisited.
 
-Which distinction you gave up and whether it mattered, so the decision can be revisited. — Reduction is a trade, not a virtue. Writing down what it cost is what separates a system from tidying.
+That the two labels will be told apart by colour from now on instead. — That moves the distinction onto colour alone, which the next two lessons are about undoing.
 
-Improve: Fill the collapsed box in step 3 with what you lost. If a lost distinction mattered, restore one step and give it a job, then record it in step 5.
+Improve: Fill the collapsed box in step 3 with what you lost. If a lost distinction mattered, restore one step and give it a job; if it did not, say why. Record it in step 5.
 
 Check again: Every collapse is recorded with its cost, and any restored step has a stated job.
 
@@ -512,6 +516,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A library’s mobile events page uses seven text sizes: 30 for the page title, 22 and 20 for two kinds of event name, 16 for descriptions, 15 and 14 for dates and venues, and 12 for “Booking required” tags. On a 390 px phone the 30 title takes three lines and the first event starts below the fold.
+
+**Task:** Which sizes would you merge or drop, and what would you use instead of a bigger title to keep the hierarchy? Give the reason for each choice.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps all seven sizes or makes the title bigger still; or merges sizes because it looks tidier, without saying what distinction each merge loses.
+- Adequate: Cuts to five or six steps, each with a job (for example 22 and 20 become one, 15 and 14 become one), lowers the title so it fits on one or two lines, and keeps it distinct with weight or space. Names what each merge gives up.
+- Strong: As adequate, plus a trade-off or check: the merged event names may have marked a real difference (free or ticketed), so a word or tag now carries it, and the 200 per cent text case still needs looking at on a real page.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -575,7 +605,7 @@ Adequate evidence: A table listing every step with its size, weight and the one 
 
 1 — A list of sizes exists but some steps have no stated job, or the screen uses sizes absent from the table.
 
-2 — Five or six steps, each with a size, weight and job, and the screen uses only those steps.
+2 — A written scale (five or six steps here; an existing system may justify more) giving each step's size, weight and the element it is for, and every text element on the screen uses a listed step.
 
 3 — As adequate, and the write-up explains why a candidate step was rejected and what would justify adding it back.
 
@@ -589,25 +619,25 @@ Adequate evidence: The narrow rendering shows the title, the primary action and 
 
 1 — A narrow version exists but headings and body text are hard to tell apart, or the primary action is not visible.
 
-2 — The narrow version keeps a readable distinction between levels and the primary action remains reachable.
+2 — At about 320–390 px wide (a phone screenshot of a real page, a working file, or a true-size paper specification), the title, primary action and first line of content are visible without sideways scrolling, and headings stay distinct from body text.
 
 3 — As adequate, and the design changes deliberately at narrow width — for example a step drops one size or a label moves — with the reason recorded.
 
 Repair: Redraw only the top of the screen at about 390 px. If the levels blur, change one variable at a time — first weight, then space, and only then size — and record which change restored the distinction. Recheck: The narrow rendering plus a one-line note of which variable fixed the hierarchy.
 
-**Enlarged text was actually tested and reported**
+**Enlarged text was checked, with the method stated**
 
-Adequate evidence: A second rendering at roughly 150 per cent text size with specific named breakages, or an explicit statement that nothing broke and how that was checked.
+Adequate evidence: A rendering at 200 per cent text size, observed on a real page or working file or specified on paper and labelled as such, with specific named breakages, or a statement that nothing broke and how that was checked.
 
-0 — Enlarged text was not tested.
+0 — Enlarged text was not considered.
 
-1 — It is claimed to work but no rendering or method is shown.
+1 — It is claimed to work but no rendering or method is shown, or a paper drawing is presented as a test result.
 
-2 — The enlarged rendering is shown and breakages are named specifically.
+2 — The 200 per cent rendering names specific breakages (or states none) and says whether it was observed in a browser or specified on paper.
 
 3 — As adequate, and at least one breakage is repaired with the repair explained.
 
-Repair: Re-run the enlarged case and write the breakages as concrete sentences — “the price overlaps the button”, “the date truncates to three characters” — not as “it looks cramped”. Then fix exactly one. Recheck: The enlarged rendering, the breakage list and one repair.
+Repair: Redo the 200 per cent case, labelled observed or specified, and write the breakages as concrete sentences — “the price overlaps the button”, “the date truncates to three characters” — not as “it looks cramped”. Then fix exactly one. Recheck: The enlarged rendering, the breakage list and one repair.
 
 **Reduction is reasoned, not merely tidy**
 
@@ -617,7 +647,7 @@ Adequate evidence: For each pair of old sizes merged into one step, a sentence o
 
 1 — Reasoning is aesthetic only — tidier, cleaner, more modern.
 
-2 — Each merge names the distinction lost and accepts or rejects that loss for this screen.
+2 — Each merge of old sizes (or, for an existing system, each step) names the distinction it gives up or carries and why that is acceptable here; if nothing merged, the record says why.
 
 3 — As adequate, and one merge is identified as risky with a way to check it against a reader rather than by preference.
 
@@ -632,7 +662,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 - The scale is explicit and each step has a stated job
 - Hierarchy holds at narrow width
-- Enlarged text was actually tested and reported
+- Enlarged text was checked, with the method stated
 - Reduction is reasoned, not merely tidy
 
 <details>
@@ -650,9 +680,9 @@ Hierarchy tells someone where to start. Readability decides whether they finish.
 
 Bring: The type scale and re-typeset screen from the previous lesson, plus at least one paragraph of real content — not placeholder text.
 
-Starting route: Bring your type ladder, or use five labelled sizes: 24 title, 18 heading, 16 body, 14 supporting text and 12 labels. On paper, set a long fictional class name, instructor, date, price and empty state. Count real characters on three lines; annotate sizes and gaps rather than writing code.
+Starting route: Bring your type ladder, or use five labelled sizes: 24 title, 18 heading, 16 body, 14 supporting text and 12 labels. On paper, set a long fictional class name, instructor, date, price and empty state. Count real characters on three lines; annotate sizes and gaps rather than writing code. Look at a real page on a phone or in a narrow window at 200% text first; label paper drawings as specifications.
 
-- One content block with stated measure, line height and block spacing values, a worst-case content list, narrow and enlarged renderings, and a reason for each value.
+- One content block with stated measure, line height and block spacing values, a worst-case content list, narrow and 200 per cent renderings labelled observed or specified, and a reason for each value.
 
 ### Start here: in everyday words
 
@@ -709,14 +739,14 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- A workshop description set at 16 px across a full 1280 px container ran to about 140 characters a line. Readers testing the page kept re-reading lines. Constraining the text column to roughly 65 characters and setting line height to 1.5 fixed the re-reading without changing the font, the size or the colour. On the phone the measure was already narrow, so the same block needed line height nearer 1.4 and a larger gap between paragraphs instead.
+- Made-up example: a workshop description set at 16 px across a full 1280 px container ran to about 140 characters a line, and two people asked to read it kept re-reading lines. Constraining the text column to roughly 65 characters (about 520 px at that size) and setting line height to 1.5 addressed the likely cause without changing the font, the size or the colour; whether the re-reading stopped is the next thing to check. On the phone the measure was already narrow, so the same block needed line height nearer 1.4 and a larger gap between paragraphs instead.
 
 
 ### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
-Bring your type ladder, or use five labelled sizes: 24 title, 18 heading, 16 body, 14 supporting text and 12 labels. On paper, set a long fictional class name, instructor, date, price and empty state. Count real characters on three lines; annotate sizes and gaps rather than writing code.
+Bring your type ladder, or use five labelled sizes: 24 title, 18 heading, 16 body, 14 supporting text and 12 labels. On paper, set a long fictional class name, instructor, date, price and empty state. Count real characters on three lines; annotate sizes and gaps rather than writing code. Look at a real page on a phone or in a narrow window at 200% text first; label paper drawings as specifications.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
 
@@ -848,21 +878,21 @@ A supplied block from the same made-up screen: body text at 16 with line height 
 
 What is the main problem with these values?
 
-- The body line height of 1.9 is too loose on its own.
-- The paragraph gap does not exceed the line gap, so the paragraphs stop reading as separate units.
-- Nothing: generous spacing is easier to read.
-- The headings should have more line height than the body, not the same.
+- The body line height of 1.9 is too loose on its own, whatever the gaps are.
+- The paragraph gap equals the line gap, so paragraphs stop reading as units.
+- Nothing serious: generous spacing like this is easier for most people to read.
+- The headings need more line height than the body, not the same 1.9.
 
 <details>
 <summary>After your attempt</summary>
 
-The body line height of 1.9 is too loose on its own. — Loose, and the real damage comes from the paragraph gap failing to beat it. Fix the relationship first and 1.9 may be merely airy.
+The body line height of 1.9 is too loose on its own, whatever the gaps are. — Loose, and the real damage comes from the paragraph gap failing to beat it. Fix the relationship first and 1.9 may be merely airy.
 
-The paragraph gap does not exceed the line gap, so the paragraphs stop reading as separate units. — When the space between paragraphs equals the space between lines, the block becomes an undifferentiated column of sentences. That is the most damaging of the three.
+The paragraph gap equals the line gap, so paragraphs stop reading as units. — When the space between paragraphs equals the space between lines, the block becomes an undifferentiated column of sentences. That is the most damaging of the faults here.
 
-Nothing: generous spacing is easier to read. — Up to a point. Past it, lines stop cohering into paragraphs and a phone screen holds almost nothing, which costs the reader more than the air gains.
+Nothing serious: generous spacing like this is easier for most people to read. — Up to a point. Past it, lines stop cohering into paragraphs and a phone screen holds almost nothing, which costs the reader more than the air gains.
 
-The headings should have more line height than the body, not the same. — The opposite: large text usually needs a tighter ratio, because the gaps grow with the size. Either way it is not the main fault here.
+The headings need more line height than the body, not the same 1.9. — The opposite: large text usually needs a tighter ratio, because the gaps grow with the size. Either way it is not the main fault here.
 
 Set your own paragraph gap by comparing it with your line gap, not by choosing a number that looks pleasant.
 
@@ -913,26 +943,28 @@ It has to be clearly larger, or paragraphs stop being paragraphs.
 
 Section: practice-plan. Stable action: step-4-brief.
 
-What broke at narrow width and with enlarged text, using the real strings.
+What breaks at narrow width and at 200 per cent text, using the real strings, and whether you observed it or specified it.
 
-- Render the block at about 390 px wide and again at enlarged text with your worst-case strings. Record every place the reading breaks down, including anything that now scrolls when it did not before.
+- Letter the block at true size in a column about 390 px wide and again with the text at 200 per cent, using your worst-case strings, and label both as specifications. Then look at a real page with long text on a phone or in a narrow window at 200 per cent to see what a browser does. Record every place the reading breaks down, including anything that would be cut off or need sideways scrolling.
 
-**Start here:** Put the longest title into the narrow column first; it usually breaks something immediately.
+**Start here:** Put the longest title into a true-size narrow column first; it usually breaks something immediately. Then look at a real page with long titles on your phone, or in a narrow window, at 200 per cent.
 
-**Enough:** Each note names the string and what it did, such as a title taking four lines or a price wrapping away from its label.
+**Enough:** Each note names the string and what it did, such as a title taking four lines or a price wrapping away from its label, and says whether it was observed or specified.
 
 **Stress test:** Putting your layout against the content and the settings most likely to break it, rather than the ones that suit it.
 
-**Enlarged text:** The reader’s own text-size setting turned up. It is their choice rather than yours, and many people keep it well above the default.
+**Enlarged text:** The reader’s own text-size setting turned up. It is their choice rather than yours, and many people keep it well above the default. 200 per cent is the benchmark WCAG uses.
 
 **Wrapping:** A line running out of room and continuing on the next one. Where it happens decides whether a price still sits beside the word it belongs to.
+
+**Clipped:** Cut off at the edge of its box or of the screen, so part of the content is lost or can only be reached by scrolling sideways. It is the opposite of reflowing, and paper cannot show it.
 
 
 ### See the decision being made
 
 Section: practice-plan. Stable action: step-4-demo.
 
-Made-up example. Running the narrow-width test on a class description, and building a test that could not fail.
+Made-up example. Specifying the narrow-width case for a class description on paper, and first drawing a check that could not fail.
 
 **How I ran it:** I redrew the card at about a third of the width, and to fit it on the page I lettered everything smaller too. Nothing broke, and I wrote down that it held.
 
@@ -940,37 +972,37 @@ Made-up example. Running the narrow-width test on a class description, and build
 
 **The second run:** I ruled a column about 390 px wide and lettered the same paragraph at true size. The longest title took four lines and the price wrapped away from the word it belonged to.
 
-**The enlarged case:** Same column, everything a step and a half bigger. The count fell to roughly 26 characters a line, and the empty-state sentence became six short lines that read as a list rather than a sentence.
+**The enlarged case:** Same column, every text size doubled to 200 per cent. The count fell from about 40 to roughly 20 characters a line, and the empty-state sentence became six short lines that read as a list rather than a sentence.
 
-**What I wrote down:** Not “cramped”. “Longest title takes four lines and pushes the date past the card edge”, and “at enlarged size the measure falls to about 26 and the paragraph stops holding together”. Two notes I can act on.
+**What I wrote down:** Not “cramped”. “Longest title takes four lines and pushes the date past the card edge”, and “at 200 per cent the measure falls to about 20 and the paragraph stops holding together”. Two notes I can act on, both labelled as paper specifications.
 
-**Wrong turn:** The wrong turn is scaling the text down with the column so the drawing fits the page. It is tempting because it looks like the same screen, smaller, and because a test that passes is quicker than one that does not.
+**Wrong turn:** The wrong turn is scaling the text down with the column so the drawing fits the page. It is tempting because it looks like the same screen, smaller, and because a check that passes is quicker than one that does not.
 
-**Trade-off:** Drawing at true size means the narrow version will not sit neatly beside the wide one, so you need two sheets and cannot compare them at a glance. That is what a test that can fail costs you.
+**Trade-off:** Drawing at true size means the narrow version will not sit neatly beside the wide one, so you need two sheets and cannot compare them at a glance. That is what a check that can fail costs you.
 
-**Unknown:** Still unknown: how far a real reader has turned their text size up. A step and a half is a guess, and some people run considerably more than that every day.
+**Unknown:** Still unknown: what a browser does with the card itself, whether it grows to hold four lines of title or cuts them off. Paper shows where I expect lines to break; a real page at the same width shows whether anything is clipped.
 
 
-### At about 390 px with your worst-case strings: what breaks?
+### At about 390 px with your worst-case strings: what breaks, and did you observe it or specify it?
 
 Section: practice-plan. Stable action: write-narrow-break.
 
-Write your answer for “At about 390 px with your worst-case strings: what breaks?”. Use the task instructions below to decide what to include.
+Name the string and what it did: wrapped, overlapped, was cut off, or pushed something sideways.
 
-**Answer:** At about 390 px with your worst-case strings: what breaks?
+**Answer:** At about 390 px with your worst-case strings: what breaks, and did you observe it or specify it?
+
+Name the string and what it did: wrapped, overlapped, was cut off, or pushed something sideways.
 
 
-
-
-### With enlarged text: what breaks?
+### With text at 200 per cent: what breaks, and did you observe it or specify it?
 
 Section: practice-plan. Stable action: write-enlarged-break.
 
-Write your answer for “With enlarged text: what breaks?”. Use the task instructions below to decide what to include.
+On paper, double every text size in the same width. On a real page, enlarge to 200 per cent and note what re-wraps and what is cut off.
 
-**Answer:** With enlarged text: what breaks?
+**Answer:** With text at 200 per cent: what breaks, and did you observe it or specify it?
 
-
+On paper, double every text size in the same width. On a real page, enlarge to 200 per cent and note what re-wraps and what is cut off.
 
 
 ### Check your reasoning · 1 of 3
@@ -981,18 +1013,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your body text reads awkwardly, so you increase the line height from 1.5 to 1.9. What have you risked?
 
-- The paragraph may stop cohering, and on a phone much less content now fits above the fold.
-- Nothing: more air is always easier to read.
-- Only that it looks less dense, which is a matter of taste.
+- Very little, because extra air between lines makes long text easier to read.
+- Only a lighter-looking block, which is a matter of taste rather than reading.
+- Lines that stop holding together, and less content above the fold on a phone.
 
 <details>
 <summary>After your attempt</summary>
 
-The paragraph may stop cohering, and on a phone much less content now fits above the fold. — Leading past a certain point separates lines instead of grouping them, and the vertical cost is paid on the smallest screen where it hurts most.
+Very little, because extra air between lines makes long text easier to read. — Air helps until lines stop belonging to each other. The block then reads as a list of sentences rather than a paragraph.
 
-Nothing: more air is always easier to read. — Air helps until lines stop belonging to each other. The block then reads as a list of sentences rather than a paragraph.
+Only a lighter-looking block, which is a matter of taste rather than reading. — It is a reading and a layout consequence, not taste. Content pushed below the fold is content the reader does not see.
 
-Only that it looks less dense, which is a matter of taste. — It is a reading and a layout consequence, not taste. Content pushed below the fold is content the reader does not see.
+Lines that stop holding together, and less content above the fold on a phone. — Leading past a certain point separates lines instead of grouping them, and the vertical cost is paid on the smallest screen where it hurts most.
 
 Improve: Reread your leading values in step 3. If body line height is above about 1.7, try the awkwardness as a measure problem instead, recount your characters per line, and record the change in step 5.
 
@@ -1011,18 +1043,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You wrote “about 60 to 70 characters” without counting. Why does the count matter?
 
-- Because clients expect the number to be documented.
-- It does not; the band is a guideline, not a rule.
-- Because a column that looks right is routinely 90 or more characters, and only counting reveals it.
+- It matters little: the 45–75 band is a guideline, so a careful estimate will do.
+- A counted figure is what clients and engineers expect to see documented.
+- A column that looks right can run to 90 or more characters; only a count shows it.
 
 <details>
 <summary>After your attempt</summary>
 
-Because clients expect the number to be documented. — Documentation is not the reason. The reason is that your impression of line length is unreliable.
+It matters little: the 45–75 band is a guideline, so a careful estimate will do. — The band is a guideline and the count is what tells you where you are. Without it you cannot know whether you are inside or far outside.
 
-It does not; the band is a guideline, not a rule. — The band is a guideline and the count is what tells you where you are. Without it you cannot know whether you are inside or far outside.
+A counted figure is what clients and engineers expect to see documented. — Documentation is not the reason. The reason is that your impression of line length is unreliable.
 
-Because a column that looks right is routinely 90 or more characters, and only counting reveals it. — The eye adapts to whatever is in front of it. The number is the cheapest check available and it takes a minute.
+A column that looks right can run to 90 or more characters; only a count shows it. — The eye adapts to whatever is in front of it. The number is the cheapest check available and it takes a minute.
 
 Improve: If your measure box in step 2 holds an estimate, count three full lines now and write the average, then record what changed in step 5.
 
@@ -1041,20 +1073,20 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You tested with two short sentences of placeholder text and everything held. What does that establish?
 
-- That the typography settings are sound and can be applied.
-- Very little: the layout has not met the longest title, the empty state or a wrapping price.
-- That the design works for average content, which is what most readers see.
+- That it works for average content, which is what most readers will see.
+- That the typography settings are sound and can be applied to the real screen.
+- Little: it has not yet met the longest title, the empty state or a wrapped price.
 
 <details>
 <summary>After your attempt</summary>
 
-That the typography settings are sound and can be applied. — The settings survived the easiest possible content. That is the least informative test available.
+That it works for average content, which is what most readers will see. — Averages do not appear on screens; particular classes with particular names do. The awkward ones are where readers meet the failure.
 
-Very little: the layout has not met the longest title, the empty state or a wrapping price. — Placeholder text is uniformly polite, and every real failure comes from content that is longer, shorter or emptier than expected.
+That the typography settings are sound and can be applied to the real screen. — The settings survived the easiest possible content. That is the least informative test available.
 
-That the design works for average content, which is what most readers see. — Averages do not appear on screens; particular classes with particular names do. The awkward ones are where readers meet the failure.
+Little: it has not yet met the longest title, the empty state or a wrapped price. — Placeholder text is uniformly polite, and real failures come from content that is longer, shorter or emptier than expected.
 
-Improve: Put your worst-case strings from step 1 into the block and redo the narrow test, then record what broke in step 5.
+Improve: Put your worst-case strings from step 1 into the block and redo the narrow case, then record what broke, or that nothing did, in step 5.
 
 Check again: The stress notes name real strings, including the longest title and the empty state.
 
@@ -1124,6 +1156,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
 
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A bus company’s web page explains a timetable change in three paragraphs. On a laptop the text runs edge to edge at about 120 characters a line; on a phone it is about 38. Line height is 1.2 everywhere and the gap between paragraphs equals one line. The longest stop name is 41 characters, and one notice reads only “No changes this week.”
+
+**Task:** What measure, line height and paragraph gap would you set, and which strings would you test with? Give a reason for each value.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Shrinks the font on the laptop or makes the leading very loose; tests with average text; gives values without reasons or without counting.
+- Adequate: Limits the laptop column to roughly 45–75 counted characters, sets body line height as a ratio around 1.4–1.6, makes the paragraph gap clearly larger than the line gap, and tests with the 41-character stop name and the one-line notice.
+- Strong: As adequate, plus a trade-off or check: the phone’s 38-character measure is short but unavoidable, so leading matters more there, and the stop name at 200 per cent text needs checking on a real page because paper cannot show whether it gets cut off.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+
 ### Review and finish your practice
 
 Section: practice. Stable action: review-work.
@@ -1186,7 +1244,7 @@ Adequate evidence: An actual character count from a full line of the submitted b
 
 1 — A width is stated but no character count was taken.
 
-2 — A character count and a maximum width are both recorded and sit in a defensible range.
+2 — A counted characters-per-line figure, averaged over three full lines of real text, and the maximum width that produces it, inside roughly 45–75 characters or with a stated reason for falling outside.
 
 3 — As adequate, and the write-up explains why this content justifies the top or bottom of the range rather than the middle.
 
@@ -1200,7 +1258,7 @@ Adequate evidence: Both values written down, with the paragraph gap visibly larg
 
 1 — Values are stated but unrelated to the measure, or the paragraph gap does not exceed the line gap.
 
-2 — Both are stated, the paragraph gap clearly wins, and the leading is justified by the line length.
+2 — Body line height is stated as a ratio, the paragraph gap is stated and visibly larger than the line gap, and one sentence links the leading to the measure.
 
 3 — As adequate, and different leading is set for body, heading and small text with the reason for each.
 
@@ -1214,7 +1272,7 @@ Adequate evidence: A named list of the actual strings used, including at least o
 
 1 — Some real content, but no deliberately difficult strings.
 
-2 — A worst-case list is present and visibly used in the rendering.
+2 — A list of the real strings used, with at least one long title, a full name, a string with numbers or currency and an empty state, and those strings are visible in the rendering.
 
 3 — As adequate, and one string was chosen because it is realistic for an Indian audience — a long transliterated name, a rupee amount or a second script — with what it changed.
 
@@ -1222,13 +1280,13 @@ Repair: Replace every remaining placeholder string with real content, then add o
 
 **Narrow and enlarged cases are reported honestly**
 
-Adequate evidence: Specific named failures at 390 px and at enlarged text, or a stated method showing why there were none.
+Adequate evidence: Specific named failures at 390 px and at 200 per cent text, each labelled observed (browser or working file) or specified (paper), or a stated method showing why there were none.
 
 0 — Neither case was produced.
 
 1 — One case was produced, or failures are described only as “fine”.
 
-2 — Both cases are shown with specific named failures or a stated checking method.
+2 — Both cases are shown with specific named failures (or a stated check showing none), each labelled observed or specified.
 
 3 — As adequate, and the report separates a genuine readability failure from a merely unattractive result.
 
@@ -1249,7 +1307,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 <details>
 <summary>Reading, video and deeper explanation</summary>
 
-[web.dev: typography](https://web.dev/learn/design/typography). [Web Accessibility Perspectives: Customizable Text](https://www.w3.org/WAI/perspective-videos/customizable/). No video needed: set your longest real line, then reread it with the text one step larger and note what collides. The point is the same and paper can make it.
+[web.dev: typography](https://web.dev/learn/design/typography). [Web Accessibility Perspectives: Customizable Text](https://www.w3.org/WAI/perspective-videos/customizable/). No video needed: set your longest real line, then letter it again at double the size in the same width and note what collides. Paper can specify that; a real page enlarged to 200 per cent shows it happening.
 
 </details>
 
@@ -1320,7 +1378,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- A booking list showed status as a coloured dot: green confirmed, amber pending, red cancelled. In greyscale all three dots became mid-grey circles and the list became unreadable. The repair was not a new palette but a second channel: each dot kept its colour and gained a distinct shape and the status word beside it. The colour still helps people who can use it, and no longer carries the meaning alone.
+- Made-up example: a booking list showed status as a coloured dot: green confirmed, amber pending, red cancelled. In greyscale all three dots became mid-grey circles and the list became unreadable. The repair was not a new palette but a second channel: each dot kept its colour and gained a distinct shape and the status word beside it. The colour still helps people who can use it, and no longer carries the meaning alone.
 
 
 ### Choose where you will do the work
@@ -1466,11 +1524,11 @@ How many colours you removed, and where you wanted to add one back.
 
 Section: practice-plan. Stable action: write-removed.
 
-Write your answer for “How many colours you removed, and which you were tempted to add back”. Use the task instructions below to decide what to include.
+If you removed none, say why each colour already had a role.
 
 **Answer:** How many colours you removed, and which you were tempted to add back
 
-
+If you removed none, say why each colour already had a role.
 
 
 ### Recolour the screen
@@ -1496,9 +1554,9 @@ Made-up example. Running the greyscale test on a class list and finding out what
 
 **What I believed:** The palette was fine: I had checked the contrast of every colour against its background and everything passed.
 
-**What the photocopy showed:** The red “Full” label and the green “2 places left” label came out as almost exactly the same grey. Side by side, they were indistinguishable.
+**What the photocopy showed:** The red “Full” label (#d32f2f) and the green “2 places left” label (#387e3c) came out as the same grey. Each measures 4.98:1 against white, and against each other they measure 1.00:1: the same lightness.
 
-**Why contrast had not caught it:** Contrast asks whether text can be read against its background. It never asks whether two pieces of information can be told apart from each other.
+**Why contrast had not caught it:** The contrast check asks whether text can be read against its background. It does not ask whether two pieces of information can be told apart from each other.
 
 **What I added:** The word itself carries it: “Full” and “2 places left” already differ in text, so I made the label text the channel and used colour only as reinforcement.
 
@@ -1519,21 +1577,21 @@ A supplied pair from the same made-up screen. Version A distinguishes a cancelle
 
 Which version survives the greyscale test, and why?
 
-- Both, since a reader can click through to find out.
-- A, provided the red passes contrast against the background.
-- Neither: only an icon is a reliable second channel.
-- B, because the distinction is carried by a word and a mark, not by hue alone.
+- B, because a word and a mark carry the difference, not hue alone.
+- Both, since a reader who suspects a change can open the class to find out.
+- Neither, because only an icon is a reliable second channel for a status.
+- A, provided the red title passes its contrast check against the background.
 
 <details>
 <summary>After your attempt</summary>
 
-Both, since a reader can click through to find out. — That makes the reader do extra work to recover information the screen already had, and only if they suspect something is different.
+B, because a word and a mark carry the difference, not hue alone. — Remove the colour and B still says “Cancelled” in words. In A the red title becomes, at best, a slightly different grey title, which does not say what it means, so the reader is left guessing.
 
-A, provided the red passes contrast against the background. — Passing contrast means the red text is readable. It says nothing about whether a reader can tell it apart from the dark grey title beside it.
+Both, since a reader who suspects a change can open the class to find out. — That makes the reader do extra work to recover information the screen already had, and only if they suspect something is different.
 
-Neither: only an icon is a reliable second channel. — A word is often the most reliable channel of all, and it needs no legend. Icons help, and they are not the only answer.
+Neither, because only an icon is a reliable second channel for a status. — A word is often the most reliable channel of all, and it needs no legend. Icons help, and they are not the only answer.
 
-B, because the distinction is carried by a word and a mark, not by hue alone. — Remove the colour and B still reads correctly. A becomes two identically grey titles, and the information is simply gone.
+A, provided the red title passes its contrast check against the background. — Passing contrast means the red text is readable. It says nothing about whether a reader can tell it apart from the dark grey title beside it.
 
 Apply the same test to each of your own failures: what would still be true with the colour removed?
 
@@ -1544,11 +1602,11 @@ Apply the same test to each of your own failures: what would still be true with 
 
 Section: practice-plan. Stable action: write-greyscale-failures.
 
-Write your answer for “What you can no longer tell apart”. Use the task instructions below to decide what to include.
+If nothing, say how you checked. Two colours can also be measured against each other in the next lesson’s calculator: a ratio near 1.00 means the same lightness.
 
 **Answer:** What you can no longer tell apart
 
-
+If nothing, say how you checked. Two colours can also be measured against each other in the next lesson’s calculator: a ratio near 1.00 means the same lightness.
 
 <details>
 <summary>Example</summary>
@@ -1573,11 +1631,11 @@ A word, an icon, a shape, an underline, or a real difference in lightness.
 
 Section: practice-plan. Stable action: write-second-channel-2.
 
-Write your answer for “Failure 2 · the second channel you added”. Use the task instructions below to decide what to include.
+If the greyscale copy showed only one failure, write “none” and how you checked.
 
 **Answer:** Failure 2 · the second channel you added
 
-
+If the greyscale copy showed only one failure, write “none” and how you checked.
 
 
 ### The greyscale test
@@ -1614,18 +1672,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Every colour on your screen passes its contrast check. Does that mean your colour use is accessible?
 
-- No. Contrast asks whether text is readable; it never asks whether two colours can be told apart from each other.
-- Yes, if every pair passes the required ratio.
-- Yes for text, and non-text elements do not matter.
+- Only for legibility: each ratio compares text with its background, not statuses with each other.
+- It does for text, and colour on icons and status dots is decoration that needs no check.
+- It does, provided every text and background pair on the screen meets the required ratio.
 
 <details>
 <summary>After your attempt</summary>
 
-No. Contrast asks whether text is readable; it never asks whether two colours can be told apart from each other. — A red error and a green success can both pass against white and still be identical to a reader with red-green colour vision deficiency, because hue is the only difference between them.
+Only for legibility: each ratio compares text with its background, not statuses with each other. — A red error and a green success can both pass against white and still be the same lightness: #d32f2f and #387e3c each measure 4.98:1 on white and 1.00:1 against each other. Hue is then the only difference, and a reader with red–green colour vision deficiency may not see it.
 
-Yes, if every pair passes the required ratio. — That covers legibility against the background and leaves colour dependence entirely unchecked. They are separate failures.
+It does for text, and colour on icons and status dots is decoration that needs no check. — Essential non-text elements carry information too, and they are exactly where colour-only distinctions hide. WCAG also sets a separate 3:1 minimum for the parts of a control or graphic someone needs to see.
 
-Yes for text, and non-text elements do not matter. — Essential non-text elements carry information too, and they are exactly where colour-only distinctions hide.
+It does, provided every text and background pair on the screen meets the required ratio. — That covers legibility against the background and leaves colour dependence entirely unchecked. They are separate failures.
 
 Improve: Run the greyscale test in step 3 if you have not, and add a second channel for anything you can no longer tell apart. Record it in step 5.
 
@@ -1674,18 +1732,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You used green for available and red for full. What should your record say about that choice?
 
-- Nothing: red and green are universally understood.
-- That the colours were chosen to match the brand.
-- That it is a convention your readers may or may not share, stated as an assumption rather than a fact.
+- That it is a learned convention, recorded as an assumption to check, not a fact.
+- Nothing extra: red for full and green for free are understood almost everywhere.
+- That the two colours were chosen to match the studio’s existing brand palette.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing: red and green are universally understood. — They are widespread in some contexts and neither universal nor stable across cultures, and they are the pair most likely to be indistinguishable.
+That it is a learned convention, recorded as an assumption to check, not a fact. — These meanings are learned and vary. Writing it down as an assumption is what lets someone check it with real readers later.
 
-That the colours were chosen to match the brand. — That records where they came from and not what they are asking the reader to know.
+Nothing extra: red for full and green for free are understood almost everywhere. — They are widespread in some contexts and neither universal nor stable across cultures, and they are the pair most likely to be indistinguishable.
 
-That it is a convention your readers may or may not share, stated as an assumption rather than a fact. — These meanings are learned and vary. Writing it down as an assumption is what lets someone check it with real readers later.
+That the two colours were chosen to match the studio’s existing brand palette. — That records where they came from and not what they are asking the reader to know.
 
 Improve: Fill the convention box in step 4 with the specific meaning you are relying on, then record it in step 5.
 
@@ -1733,6 +1791,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A bike-hire app shows each docking station on a map as a coloured dot: green for bikes available, amber for a few left, red for empty. The three colours have similar lightness, there is no legend on the screen, and people mostly use the app outdoors in bright sun.
+
+**Task:** What would you change so the station status survives without colour, and what would you keep? Give the reason for each change.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Chooses brighter or more different hues, or adds a legend explaining the colours, so the meaning still depends on telling hues apart.
+- Adequate: Adds a second channel the reader sees directly, such as the number of bikes, a word or three distinct shapes, makes the three states differ in lightness, and keeps colour as reinforcement rather than the only carrier.
+- Strong: As adequate, plus a check or trade-off: a greyscale or sunlight check of the map, the clutter cost of numbers on a crowded map, and treating “red means empty” as a convention to confirm rather than a fact.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -1796,7 +1880,7 @@ Adequate evidence: A table mapping each palette entry to a role and a meaning, w
 
 1 — A palette exists but some entries have no role, or the screen uses colours outside it.
 
-2 — Each entry has a role and meaning, and the screen uses only those entries.
+2 — A palette table where each entry has a role, a value and a meaning, and every colour on the screen appears in the table.
 
 3 — As adequate, and the write-up names a colour that was removed and what it had been doing implicitly.
 
@@ -1810,7 +1894,7 @@ Adequate evidence: A greyscale version of the screen plus a list of what became 
 
 1 — A greyscale version exists but failures were not listed or not repaired.
 
-2 — Failures are listed and each has a second channel added.
+2 — A greyscale view of the screen plus a list of what could no longer be told apart, each with the second channel (word, shape, icon, position or lightness) that now carries it, or a stated check showing nothing depended on colour alone.
 
 3 — As adequate, and the repaired screen is shown again in greyscale to confirm the fix rather than assuming it.
 
@@ -1824,7 +1908,7 @@ Adequate evidence: For each pair of states that must be told apart, a note of ho
 
 1 — Lightness is mentioned but not for the pairs that actually need separating.
 
-2 — Each critical pair differs in lightness and this is recorded.
+2 — Each pair of states that must be told apart is recorded with a lightness difference visible in greyscale, or measured against each other with the contrast calculator, not only a hue difference.
 
 3 — As adequate, and one pair is deliberately given the largest separation because confusing it would be the most costly.
 
@@ -1838,7 +1922,7 @@ Adequate evidence: At least one sentence identifying a colour meaning the audien
 
 1 — A caveat is present but generic.
 
-2 — A specific meaning is named as a convention with a way to check it with a reader.
+2 — At least one specific colour meaning is named as a convention, with who might read it differently and a way to check it with a reader.
 
 3 — As adequate, and the interface itself states the meaning in words so the convention is not load-bearing.
 
@@ -1871,7 +1955,7 @@ Stable ID: m03-l04-v1. Core.
 
 Bring: Your palette table and recoloured screen from the previous lesson.
 
-Starting route: Use the offline contrast calculator beside the measurement fields. Practice palette if yours is missing: text #777777, link #214e46, error #B3261E and button #567E48 on #FFFFFF, plus white button text. Enter foreground and background separately and record the element, size, applicable threshold and result.
+Starting route: Use the offline contrast calculator beside the measurement fields. Practice palette if yours is missing: text #777777, link #214e46, error #B3261E and button #567E48 on #FFFFFF, plus white button text. Enter foreground and background separately and record the element, size, applicable threshold and result. Read ratios to two decimals; never round a fail up to a pass (#777777 measures 4.48, below 4.5).
 
 - A contrast table covering every text and essential non-text element with colour, background, size, threshold and measured ratio, before and after repair, plus a note on your own reading test.
 
@@ -1885,7 +1969,7 @@ Visual design helps people notice, read and understand what matters on a screen.
 - **Large text:** A defined size and weight above which a lower ratio is allowed. Write the actual definition; guessing it is how failures pass.
 - **Effective background:** What is actually behind the text after transparency and images are flattened. Measure that, not the colour you intended.
 
-**Quick example.** A supplied failing row from the same made-up screen: a secondary link, #7a8b80 on #fffefb, 14 regular, needs 4.5, measured 3.1.
+**Quick example.** A supplied failing row from the same made-up screen: a secondary link, #7a8b80 on #fffefb, 14 px regular, needs 4.5:1, measures 3.57:1.
 
 The reader demonstrates and guides the task before asking for “Normal text needs at least…”.
 
@@ -1900,14 +1984,14 @@ Measure the actual foreground/background pairs in your design, repair failing pa
 
 Section: learn. Stable action: learn-1.
 
-The minimum contrast requirement is a ratio between the lightness of text and its background. Ordinary body text needs at least 4.5:1. Large text — from around 18 point, or 14 point when bold — needs at least 3:1, because larger, thicker letterforms remain legible at lower contrast. These are floors for a wide range of readers, not targets for good design, and comfortable reading often sits well above them.
+The minimum contrast requirement is a ratio between the lightness of text and its background. Ordinary body text needs at least 4.5:1. Large text — from 18 point (about 24 px), or 14 point (about 18.7 px) when bold — needs at least 3:1, because larger, thicker letterforms remain legible at lower contrast. A separate WCAG criterion asks for 3:1 for the parts of a control or graphic someone needs to see, such as a button's edge against the page or a focus outline. Read the calculator's ratio to two decimals and never round a fail up to a pass: 4.48 is below 4.5. These are floors for a wide range of readers, not targets for good design, and comfortable reading often sits well above them.
 
 
 ### Idea 2: The requirement has genuine exceptions, and knowing them stops…
 
 Section: learn. Stable action: learn-2.
 
-The requirement has genuine exceptions, and knowing them stops you from either over-claiming or over-correcting. Text that is purely decorative, text that is part of a logo or brand name, and text in a component that is currently inactive are not held to the ratio. An inactive control is the one designers most often get wrong in both directions: greying it out is legitimate, but if the reader cannot tell what the control would do, the problem is comprehension rather than conformance.
+The requirement has genuine exceptions, and knowing them stops you from either over-claiming or over-correcting. Text that is purely decorative, text that is part of a logo or brand name, and text in a component that is currently inactive are not held to the ratio. An inactive control is the one designers most often get wrong in both directions: greying it out is legitimate, but if the reader cannot tell what the control would do, the problem is comprehension rather than conformance. The exemption settles conformance only; whether a disabled label should still be readable is a separate design decision.
 
 
 ### Measure the pair that actually renders, not the pair you intended
@@ -1930,16 +2014,31 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- A workshop card used mid-grey #999999 body text on white — about 2.8:1, below the 4.5:1 floor. That grey also fails the 3:1 large-text threshold, so enlarging it alone cannot repair the contrast. The designer darkened the heading color until a new measurement exceeded 3:1, and moved body text to a darker grey that measures about 7:1. The visual softness the designer wanted was preserved exactly where it was legitimate, and removed where it was not.
+- Made-up example: a workshop card used mid-grey #999999 for its heading and body text on white. The calculator gives 2.85:1: below the 4.5:1 floor for body text and below the 3:1 large-text floor too, so enlarging that grey cannot repair it. The designer kept a soft grey only where the lower threshold applies: the 24 px regular heading moved to #8a8a8a, which measures 3.45:1 and passes as large text, and the 14 px body text moved to #595959, which measures 7.00:1. The softness survived where it was allowed and went where it was not.
 
 
 ### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
-Use the offline contrast calculator beside the measurement fields. Practice palette if yours is missing: text #777777, link #214e46, error #B3261E and button #567E48 on #FFFFFF, plus white button text. Enter foreground and background separately and record the element, size, applicable threshold and result.
+Use the offline contrast calculator beside the measurement fields. Practice palette if yours is missing: text #777777, link #214e46, error #B3261E and button #567E48 on #FFFFFF, plus white button text. Enter foreground and background separately and record the element, size, applicable threshold and result. Read ratios to two decimals; never round a fail up to a pass (#777777 measures 4.48, below 4.5).
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
+
+
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Practice palette, fictional: use it only if your own palette is missing, and measure every pair yourself with the calculator. Nothing here tells you the result.
+- Body text · #777777 on the page #FFFFFF · 16 px regular.
+- Link · #214e46 on #FFFFFF · 16 px regular.
+- Error message · #B3261E on #FFFFFF · 14 px regular.
+- Reserve button label · #FFFFFF on the button fill #567E48 · 18 px bold. The fill itself sits on the #FFFFFF page.
+- Email placeholder “you@example.com” · #9E9E9E on #FFFFFF · 16 px regular.
+- Disabled Reserve button on a full class · label #FFFFFF on the fill #9FB398.
 
 
 ### Read the thresholds and exceptions
@@ -1974,22 +2073,22 @@ Write your answer for “Normal text needs at least…”. Use the task instruct
 
 Section: practice-plan. Stable action: write-threshold-large.
 
-Say the size and weight that qualify, not just the ratio.
+Say the size and weight that qualify, not just the ratio. The W3C page gives sizes in points; 1 pt is about 1.33 px.
 
 **Answer:** Large text needs at least… and “large” means…
 
-Say the size and weight that qualify, not just the ratio.
+Say the size and weight that qualify, not just the ratio. The W3C page gives sizes in points; 1 pt is about 1.33 px.
 
 
 ### The exceptions, in your own words
 
 Section: practice-plan. Stable action: write-exceptions.
 
-Which text is exempt, and why placeholder text is not one of them.
+Which text is exempt, and why placeholder text is not one of them. An exemption means “not a conformance failure”, not “fine to leave unexplained”.
 
 **Answer:** The exceptions, in your own words
 
-Which text is exempt, and why placeholder text is not one of them.
+Which text is exempt, and why placeholder text is not one of them. An exemption means “not a conformance failure”, not “fine to leave unexplained”.
 
 
 ### Measure everything
@@ -2017,11 +2116,11 @@ Made-up example. Measuring the awkward element on a booking form rather than the
 
 **What I nearly skipped:** The placeholder text inside the email field, a light grey hint reading “you@example.com”. It looked like decoration.
 
-**Why I measured it anyway:** A reader has to read it to know what to type, so it is real text doing real work. It came out at 2.4 against the field background.
+**Why I measured it anyway:** A reader has to read it to know what to type, so it is real text doing real work. Its pair, #a6a6a6 on the white field #ffffff, came out at 2.43.
 
 **What I did about it:** Darkening the hint would have helped and kept a weakness: the hint disappears the moment typing starts. I added a visible label above the field and kept the hint as an example.
 
-**What that changed in the table:** The row now records the label, not the placeholder, as the thing carrying the instruction — and the label passes at 7.1.
+**What that changed in the table:** The row now records the label, not the placeholder, as the thing carrying the instruction, and the label, #575757 on #ffffff, passes at 7.23. The placeholder stays in the table as a known fail.
 
 **Wrong turn:** The wrong turn is measuring only the text that looks like content. The failures live in hints, disabled labels, small print and anything sitting over an image.
 
@@ -2034,16 +2133,16 @@ Made-up example. Measuring the awkward element on a booking form rather than the
 
 Section: practice-plan. Stable action: write-row-1.
 
-Use the calculator for the ratio. Record the number it gives, not a rounded version.
+Use the calculator. Copy the ratio to two decimals and never round a fail up to a pass: 4.478 is 4.48, which is below 4.5.
 
 **Answer:** Element 1 · what it is, its colour, its background, its size, the threshold and the measured ratio
 
-Use the calculator for the ratio. Record the number it gives, not a rounded version.
+Use the calculator. Copy the ratio to two decimals and never round a fail up to a pass: 4.478 is 4.48, which is below 4.5.
 
 <details>
 <summary>Example</summary>
 
-Example (made up): price label · #6b7b72 on #fffefb · 14 regular · needs 4.5 · measured 3.71 · fails.
+Example (made up): price label · #6b7b72 on #fffefb · 14 px regular · needs 4.5 · measured 4.43 · fails.
 
 </details>
 
@@ -2092,6 +2191,19 @@ Write your answer for “Element 5 · what it is, its colour, its background, it
 
 
 
+### Elements 6 onward, one per line in the same form, or “none” and why
+
+Section: practice-plan. Stable action: write-row-more.
+
+Five rows rarely hold a whole screen. Add every remaining text element and every part of a control someone needs to see, such as a button edge against the page, which needs 3:1.
+
+**Answer:** Elements 6 onward, one per line in the same form, or “none” and why
+
+Optional: may be left empty.
+
+Five rows rarely hold a whole screen. Add every remaining text element and every part of a control someone needs to see, such as a button edge against the page, which needs 3:1.
+
+
 ### Repair the failures
 
 Section: practice-plan. Stable action: step-3-brief.
@@ -2113,25 +2225,25 @@ A repair for each failure, with the new ratio, keeping the palette’s intent.
 
 Section: practice-plan. Stable action: step-3-try.
 
-A supplied failing row from the same made-up screen: a secondary link, #7a8b80 on #fffefb, 14 regular, needs 4.5, measured 3.1.
+A supplied failing row from the same made-up screen: a secondary link, #7a8b80 on #fffefb, 14 px regular, needs 4.5:1, measures 3.57:1.
 
 Which repair is soundest?
 
-- Enlarge the link to 19 semibold so the large-text threshold applies.
-- Darken the link colour until it passes, keeping it recognisably the same hue.
-- Change the background of the whole screen to pure white.
-- Make the link black, which certainly passes.
+- Make the link black, which certainly passes and is simple to specify.
+- Change the whole screen’s background from #fffefb to pure white #ffffff.
+- Darken the link until it passes, keeping it recognisably the same hue.
+- Enlarge the link to 19 px bold so the 3:1 large-text threshold applies.
 
 <details>
 <summary>After your attempt</summary>
 
-Enlarge the link to 19 semibold so the large-text threshold applies. — Legitimate in principle and wrong here: a secondary link enlarged past the body text now outranks the content it sits beside.
+Make the link black, which certainly passes and is simple to specify. — It passes and removes the distinction between a link and body text, which is information the reader was using.
 
-Darken the link colour until it passes, keeping it recognisably the same hue. — It fixes the failure at its source and keeps the palette’s intent: the link still reads as the secondary colour, just darker.
+Change the whole screen’s background from #fffefb to pure white #ffffff. — It buys almost nothing, 3.57:1 becomes 3.60:1, and it changes every other element on the screen to fix one link.
 
-Change the background of the whole screen to pure white. — It buys a fraction of a ratio point and changes every other element on the screen to fix one link.
+Darken the link until it passes, keeping it recognisably the same hue. — It fixes the failure at its source and keeps the palette’s intent: #5f7065 on #fffefb, for example, measures 5.22:1 and still reads as the same grey-green, just darker.
 
-Make the link black, which certainly passes. — It passes and removes the distinction between a link and body text, which is information the reader was using.
+Enlarge the link to 19 px bold so the 3:1 large-text threshold applies. — Legitimate in principle, since 3.57:1 clears 3:1, and wrong here: a secondary link enlarged past the body text now outranks the content it sits beside.
 
 Choose repairs for your own failures the same way: fix the element, keep what the colour was doing.
 
@@ -2142,11 +2254,11 @@ Choose repairs for your own failures the same way: fix the element, keep what th
 
 Section: practice-plan. Stable action: write-repairs.
 
-Darken the text, lighten the background, enlarge the text so the large-text threshold applies, or put a solid backing behind it.
+Darken the text, lighten the background, enlarge the text so the large-text threshold applies, or put a solid backing behind it. If no row failed, write “none failed” and name your lowest ratio.
 
 **Answer:** For each failure: what you changed and the new ratio
 
-Darken the text, lighten the background, enlarge the text so the large-text threshold applies, or put a solid backing behind it.
+Darken the text, lighten the background, enlarge the text so the large-text threshold applies, or put a solid backing behind it. If no row failed, write “none failed” and name your lowest ratio.
 
 
 ### How you kept the palette’s intent while repairing
@@ -2185,7 +2297,7 @@ Made-up example. Reading a printed class list at a window, and nearly repairing 
 
 **What I expected:** Every row in my table now met its threshold, so I carried the printed screen to the window mostly to confirm it.
 
-**What happened:** The 12 point labels under each class were unreadable at arm’s length in the daylight. They had measured 5.2, comfortably above the number they needed.
+**What happened:** The 12 point labels under each class were unreadable at arm’s length in the daylight. Their pair, #6b6b6b on #ffffff, had measured 5.33, comfortably above the 4.5 they needed.
 
 **My first move:** Push every grey towards black. It would certainly help something, and I had already changed three elements before I stopped.
 
@@ -2217,22 +2329,22 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-The grey placeholder text inside your form field measures 2.6. Is that a failure?
+The grey placeholder text inside your form field, #9e9e9e on #ffffff at 16 px, measures 2.68:1. Is that a failure?
 
-- No, because placeholder text counts as inactive.
-- No, because it is only a hint and disappears when typing starts.
-- Yes. It is real text the reader must read to know what to type, and it is not an exempt case.
+- It passes, because placeholder text belongs to an inactive control and is exempt.
+- It fails: the reader must read it to know what to type, and no exception covers it.
+- It passes, because a hint disappears the moment typing starts and so is optional.
 
 <details>
 <summary>After your attempt</summary>
 
-No, because placeholder text counts as inactive. — The inactive exception is about genuinely disabled controls, not about hints in an active field.
+It passes, because placeholder text belongs to an inactive control and is exempt. — The inactive exception is about genuinely disabled controls, not about hints in a field the reader is about to use.
 
-No, because it is only a hint and disappears when typing starts. — Disappearing when typing starts is a second problem, not an exemption. Before it disappears it is the instruction.
+It fails: the reader must read it to know what to type, and no exception covers it. — Placeholder text is often the only instruction present, and it is usually the faintest thing on the screen. The sturdier fix is a visible label.
 
-Yes. It is real text the reader must read to know what to type, and it is not an exempt case. — Placeholder text is often the only instruction present, and it is usually the faintest thing on the screen. The sturdier fix is a visible label.
+It passes, because a hint disappears the moment typing starts and so is optional. — Disappearing when typing starts is a second problem, not an exemption. Before it disappears it is the instruction.
 
-Improve: Add your placeholder text as a row in step 2 and measure it. If it fails, repair it and record the change in step 5.
+Improve: Add your placeholder text as a row in step 2 and measure it. If it fails, repair it and record the change in step 5; if it passes, say so with its ratio.
 
 Check again: The table includes every hint and small-print element, each with a measured ratio.
 
@@ -2247,20 +2359,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You enlarge a failing label to 19 semibold so the large-text threshold applies. When is that a good repair?
+You enlarge a failing label to 19 px bold so the 3:1 large-text threshold applies. When is that a good repair?
 
-- When the element genuinely deserves that prominence in the hierarchy you already built.
-- Always: it passes the check without changing any colour.
-- Never: only colour changes are honest repairs.
+- When that element deserves the extra prominence in the hierarchy you built.
+- Rarely if ever, because only colour changes count as honest contrast repairs.
+- Whenever it fails, because it passes the check without touching any colour.
 
 <details>
 <summary>After your attempt</summary>
 
-When the element genuinely deserves that prominence in the hierarchy you already built. — It is a legitimate route and it changes the design. If the element was deliberately quiet, enlarging it to pass a check contradicts the hierarchy.
+When that element deserves the extra prominence in the hierarchy you built. — It is a legitimate route and it changes the design. If the element was deliberately quiet, enlarging it to pass a check contradicts the hierarchy, and it only works if the ratio is already at least 3:1.
 
-Always: it passes the check without changing any colour. — It passes by changing the type hierarchy instead, which is a bigger change than adjusting a colour.
+Rarely if ever, because only colour changes count as honest contrast repairs. — Too strict. The threshold exists because larger, heavier text is genuinely easier to read, so it is an honest route when the element deserves the size.
 
-Never: only colour changes are honest repairs. — Too strict. The threshold exists because larger, heavier text is genuinely easier to read.
+Whenever it fails, because it passes the check without touching any colour. — It passes by changing the type hierarchy instead, which is a bigger change than adjusting a colour, and it does nothing for a pair below 3:1.
 
 Improve: Check your repairs in step 3. If you enlarged anything, confirm it deserves the prominence, or choose a colour repair instead, and note it in step 5.
 
@@ -2279,18 +2391,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Every element now passes. What may you claim?
 
-- That the screen is accessible.
-- That readers with low vision can use the screen comfortably.
-- That these opaque pairs meet their stated thresholds, which is a floor and not proof the screen is readable.
+- That these opaque pairs meet their thresholds: a floor, not proof of readability.
+- That the screen now meets accessibility requirements, since contrast was the gap.
+- That readers with low vision can use the screen comfortably at these ratios.
 
 <details>
 <summary>After your attempt</summary>
 
-That the screen is accessible. — Accessibility covers structure, keyboard use, announcement, motion, language and much else. Contrast is one measurable slice.
+That these opaque pairs meet their thresholds: a floor, not proof of readability. — The numbers are one necessary condition. Sunlight, small sizes, transparency, images behind text and everything about layout are untouched by them.
 
-That readers with low vision can use the screen comfortably. — The thresholds are a minimum, set with a broad population in mind. Comfort for a particular reader is a different question and needs a person.
+That the screen now meets accessibility requirements, since contrast was the gap. — Accessibility covers structure, keyboard use, announcement, motion, language and much else. Contrast is one measurable slice.
 
-That these opaque pairs meet their stated thresholds, which is a floor and not proof the screen is readable. — The numbers are one necessary condition. Sunlight, small sizes, transparency, images behind text and everything about layout are untouched by them.
+That readers with low vision can use the screen comfortably at these ratios. — The thresholds are a minimum, set with a broad population in mind. Comfort for a particular reader is a different question and needs a person.
 
 Improve: Write the bounding sentence in step 5 if it is missing, and remove any claim about accessibility from your notes.
 
@@ -2347,6 +2459,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
 
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A bakery’s order page uses the grey #8a8a8a on white, which measures 3.45:1, for two things: the 24 px regular “Collection times” heading and the 14 px regular prices beneath it. The “Order” button is disabled until a time is chosen; its label is #ffffff on #9fb398, which measures 2.24:1. The owner likes the soft grey and wants to keep it.
+
+**Task:** Which of these pass, which fail and which are exempt, and how would you repair the failure while keeping some of the softness? Explain the threshold behind each call.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Calls everything a pass because the grey looks readable, or turns every element black; treats the disabled label as a contrast failure, or ignores it.
+- Adequate: The heading passes as large text (24 px regular, 3.45:1 against 3:1); the prices fail (14 px needs 4.5:1); the disabled label is exempt as part of an inactive control. Repairs the prices with a darker grey measuring at least 4.5:1 and keeps the heading soft.
+- Strong: As adequate, plus: the exemption is about conformance, not understanding, so the button still needs words such as “Choose a time first”; re-measures the new grey (for example #595959, 7.00:1) and limits the claim to opaque colour pairs.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+
 ### Review and finish your practice
 
 Section: practice. Stable action: review-work.
@@ -2375,7 +2513,7 @@ Large text: A defined size and weight above which a lower ratio is allowed. Writ
 Effective background: What is actually behind the text after transparency and images are flattened. Measure that, not the colour you intended.
 
 Supplied practice material (fictional or labelled practice, not my research):
-A supplied failing row from the same made-up screen: a secondary link, #7a8b80 on #fffefb, 14 regular, needs 4.5, measured 3.1.
+A supplied failing row from the same made-up screen: a secondary link, #7a8b80 on #fffefb, 14 px regular, needs 4.5:1, measures 3.57:1.
 
 Activity: Describe the design decision in the supplied case, then ask me what I would notice first and why. Help me connect the visual choice to the task it supports.
 
@@ -2417,7 +2555,7 @@ Repair: Walk the screen element by element and add the missing rows. For anythin
 
 **The correct threshold is applied per element**
 
-Adequate evidence: Each row names the threshold used and, for large text, the size and weight that justify it.
+Adequate evidence: Each row names the threshold used (4.5:1, 3:1 for large text, or 3:1 for a non-text part of a control) and, for large text, the size and weight that justify it.
 
 0 — No thresholds are recorded.
 
@@ -2437,7 +2575,7 @@ Adequate evidence: For each failing element, the repair chosen and the reason, s
 
 1 — All failures were repaired by maximising contrast, losing the palette's character.
 
-2 — Repairs vary by situation and each has a stated reason.
+2 — Repairs vary by situation and each has a stated reason, or, where nothing failed, the lowest measured ratio is named.
 
 3 — As adequate, and one colour is deliberately retained where it legitimately passes, with the threshold that makes that true.
 
@@ -2543,7 +2681,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- A workshop detail screen listed date, time, location, price, instructor and materials as six evenly spaced lines, and readers kept missing the materials note. Regrouping without changing a single word: date and time drew together as one “when” group, location stood alone, price and instructor became a “details” pair, and materials moved into its own region with a shared background. Total height changed by a few pixels; the materials line stopped being missed by the two people asked to find it — which is a signal, not a finding.
+- Made-up example: a workshop detail screen listed date, time, location, price, instructor and materials as six evenly spaced lines, and readers kept missing the materials note. Regrouping without changing a single word: date and time drew together as one “when” group, location stood alone, price and instructor became a “details” pair, and materials moved into its own region with a shared background. Total height changed by a few pixels; the materials line stopped being missed by the two people asked to find it — which is a signal, not a finding.
 
 
 ### Choose where you will do the work
@@ -2679,21 +2817,21 @@ A supplied problem from the same made-up screen: a class title, its date, its pr
 
 What is the cheapest tool that fixes it?
 
-- Make the button a different colour so it stands out.
-- A shared background behind the title, date and price.
-- Space: tighten the gaps between title, date and price, and open a clearly larger gap before the button.
-- A border around the whole class block.
+- A thin border around the whole class block so its edges are clear at a glance.
+- Space: tighten title, date and price, and open a larger gap before the button.
+- Give the button a different colour so it stands out from the lines above it.
+- A shared background behind the title, date and price to bind them as one group.
 
 <details>
 <summary>After your attempt</summary>
 
-Make the button a different colour so it stands out. — Colour distinguishes it and leaves the grouping unchanged, so the button still reads as a member of the same list.
+A thin border around the whole class block so its edges are clear at a glance. — The most expensive option: a new line on the screen, more vertical space on a phone, and the same fix space would have produced.
 
-A shared background behind the title, date and price. — It would work and it adds a surface, a colour decision and padding for something space alone can solve.
+Space: tighten title, date and price, and open a larger gap before the button. — Proximity does the whole job. The three facts become one group and the button separates itself as something different, with nothing added to the screen.
 
-Space: tighten the gaps between title, date and price, and open a clearly larger gap before the button. — Proximity does the whole job. The three facts become one group and the button separates itself as something different, with nothing added to the screen.
+Give the button a different colour so it stands out from the lines above it. — Colour distinguishes it and leaves the grouping unchanged, so the button still reads as a member of the same list.
 
-A border around the whole class block. — The most expensive option: a new line on the screen, more vertical space on a phone, and the same fix space would have produced.
+A shared background behind the title, date and price to bind them as one group. — It would work and it adds a surface, a colour decision and padding for something space alone can solve.
 
 Fix your own mismatches in the same order, and only record a border where you can say what space failed to do.
 
@@ -2704,11 +2842,11 @@ Fix your own mismatches in the same order, and only record a border where you ca
 
 Section: practice-plan. Stable action: write-group-1-tool.
 
-Write your answer for “Group 1 · what you changed and which tool it needed”. Use the task instructions below to decide what to include.
+If a group already reads as one, write “no change” and how you checked. Keeping what works is a valid result.
 
 **Answer:** Group 1 · what you changed and which tool it needed
 
-
+If a group already reads as one, write “no change” and how you checked. Keeping what works is a valid result.
 
 
 ### Group 2 · what you changed and which tool it needed
@@ -2737,11 +2875,11 @@ Write your answer for “Group 3 · what you changed and which tool it needed”
 
 Section: practice-plan. Stable action: write-borders-used.
 
-Write your answer for “Anywhere you reached for a border, and why space was not enough”. Use the task instructions below to decide what to include.
+If you used no border, write “none”.
 
 **Answer:** Anywhere you reached for a border, and why space was not enough
 
-
+If you used no border, write “none”.
 
 
 ### Build the counterexample
@@ -2803,20 +2941,20 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your screen feels disorganised, so you put every item in a card. What happens?
 
-- Common region stops distinguishing anything, and the hierarchy disappears because every item is presented as a peer.
-- The screen becomes organised, because every item has a clear boundary.
-- It works if the cards have consistent padding.
+- Enclosure stops telling anything apart, and every item now looks like a peer.
+- It works well, provided every card uses the same padding and corner radius.
+- It becomes organised, because every item now has a clear boundary of its own.
 
 <details>
 <summary>After your attempt</summary>
 
-Common region stops distinguishing anything, and the hierarchy disappears because every item is presented as a peer. — Enclosure only groups when some things are enclosed and others are not. Cards everywhere also cost real vertical space on a phone.
+Enclosure stops telling anything apart, and every item now looks like a peer. — Common region only groups when some things are enclosed and others are not. Cards everywhere also cost real vertical space on a phone.
 
-The screen becomes organised, because every item has a clear boundary. — It becomes enclosed, which is not the same as organised. What matters most on the screen is now indistinguishable from what matters least.
+It works well, provided every card uses the same padding and corner radius. — Consistency makes it tidier and does nothing about the lost hierarchy or the borders you did not need.
 
-It works if the cards have consistent padding. — Consistency makes it tidier and does nothing about the lost hierarchy or the borders you did not need.
+It becomes organised, because every item now has a clear boundary of its own. — It becomes enclosed, which is not the same as organised. What matters most on the screen is now indistinguishable from what matters least.
 
-Improve: Look at your regrouping in step 3. Replace one border or background with space and see whether the grouping survives, then record it in step 5.
+Improve: Look at your regrouping in step 3. Replace one border or background with space and see whether the grouping survives; keep the enclosure if it does not. Record it in step 5.
 
 Check again: Space does the work wherever it can, and each enclosure has a reason.
 
@@ -2833,18 +2971,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Why circle the perceived groups before changing anything?
 
-- To document the before state for a portfolio.
-- Because the screen may already be grouping things differently from how you intended, and that mismatch is the actual problem.
-- It is not necessary if you designed the screen yourself.
+- The screen may group things differently from what you meant; that gap is the fault.
+- To record a clean before image that the portfolio comparison will need later.
+- It adds little when you designed the screen yourself and know what belongs together.
 
 <details>
 <summary>After your attempt</summary>
 
-To document the before state for a portfolio. — Useful later and not the reason. The reason is that you cannot fix a grouping you have not read.
+The screen may group things differently from what you meant; that gap is the fault. — Without the diagnosis you are decorating. With it, many fixes turn out to be a few points of space in the right place.
 
-Because the screen may already be grouping things differently from how you intended, and that mismatch is the actual problem. — Without the diagnosis you are decorating. With it, most fixes turn out to be a few points of space in the right place.
+To record a clean before image that the portfolio comparison will need later. — Useful later and not the reason. The reason is that you cannot fix a grouping you have not read.
 
-It is not necessary if you designed the screen yourself. — Designing it is exactly why you cannot see it. You know what belongs together, so your eye supplies the grouping the reader will not get.
+It adds little when you designed the screen yourself and know what belongs together. — Designing it is exactly why you cannot see it. You know what belongs together, so your eye supplies the grouping the reader will not get.
 
 Improve: If your perceived-groups box in step 2 is empty or repeats your intention, redo it from the printed screen and record what changed in step 5.
 
@@ -2863,18 +3001,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You could not find a counterexample where a principle misleads. What does that suggest?
 
-- That your screen is well designed and the principles hold.
-- That counterexamples only occur in complex interfaces.
-- Look harder at similarity: things that look alike but are unrelated are the most common trap.
+- Look again at similarity: alike-looking but unrelated items are a frequent trap.
+- That counterexamples mostly turn up in complex interfaces, not in short lists.
+- That the screen is well grouped and the principles hold everywhere on it.
 
 <details>
 <summary>After your attempt</summary>
 
-That your screen is well designed and the principles hold. — The principles are descriptions of perception, not rules that hold. A screen with no counterexample usually has one you have not spotted.
+Look again at similarity: alike-looking but unrelated items are a frequent trap. — Two elements sharing a size or a colour read as a set even when one is an advertisement and the other is content. It is easy to miss because you know which is which.
 
-That counterexamples only occur in complex interfaces. — They occur in a list of three items. Any repeated visual treatment can capture something that does not belong.
+That counterexamples mostly turn up in complex interfaces, not in short lists. — They occur in a list of three items. Any repeated visual treatment can capture something that does not belong.
 
-Look harder at similarity: things that look alike but are unrelated are the most common trap. — Two elements sharing a size or a colour read as a set even when one is an advertisement and the other is content. It is easy to miss because you know which is which.
+That the screen is well grouped and the principles hold everywhere on it. — The principles are descriptions of perception, not rules that hold. A screen with no counterexample usually has one you have not spotted.
 
 Improve: Look for two elements that share a treatment but not a purpose, and write that up as your counterexample in step 4, then note it in step 5.
 
@@ -2944,6 +3082,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
 
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A parcel-locker touch screen shows five items with equal gaps between them: the locker number, a six-digit collection code, “Collect by Friday 18:00”, a “Problem with your parcel?” link, and a large “Open locker” button. The help link is drawn as a second green button, the same size as “Open locker”.
+
+**Task:** Which items would you group, with which tool, and why? Say what you would check before adding any border or card.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Puts every item in its own card or border, so nothing is subordinate; or regroups by taste without first noticing what the eye groups now.
+- Adequate: Groups the locker number, code and deadline as one “what you need” block using space, opens a larger gap before the button, separates the help link from the button, and adds a background or border only where space fails.
+- Strong: As adequate, plus a counterexample or check: two identical green buttons read as one set of equal actions by similarity, so the help link should look like a link; and a neutral question such as “where would you type your code?” could test the grouping.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+
 ### Review and finish your practice
 
 Section: practice. Stable action: review-work.
@@ -3005,7 +3169,7 @@ Adequate evidence: A marked-up before image showing perceived groups and the spe
 
 1 — A before image exists but mismatches are not marked.
 
-2 — Perceived groups are drawn and each mismatch is identified.
+2 — A marked-up before image shows the groups a first-time reader would see and numbers each place they differ from the intended grouping, or states how a match was checked.
 
 3 — As adequate, and the diagnosis distinguishes a mismatch that misleads from one that is merely untidy.
 
@@ -3019,7 +3183,7 @@ Adequate evidence: A note per group recording whether space, a shared background
 
 1 — Tools vary but no reasoning is recorded.
 
-2 — Each group records its tool and why the weaker option failed.
+2 — Each group records whether space, a shared background or a border carries it, and why any weaker tool was not enough.
 
 3 — As adequate, and at least one group was fixed with space alone where a card had previously been used.
 
@@ -3033,7 +3197,7 @@ Adequate evidence: A concrete case, shown not merely described, where applying a
 
 1 — A counterexample is described in words only, or restates the principle's caveat generically.
 
-2 — A specific case is shown with the wrong reading it produces explained.
+2 — A drawn or screenshot case where a grouping principle works as described and still produces a wrong reading, with that wrong reading explained.
 
 3 — As adequate, and the counterexample is drawn from your own screen rather than invented, with the repair that keeps the principle useful.
 
@@ -3047,7 +3211,7 @@ Adequate evidence: A written question or task another person could attempt that 
 
 1 — A vague intention to test is stated.
 
-2 — A specific, answerable question or five-second task is written.
+2 — A specific, answerable question or five-second task another person could attempt that would confirm or challenge the grouping.
 
 3 — As adequate, and the question is neutral — it does not name the element you hope they find.
 
@@ -3139,7 +3303,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- A booking list used gaps of 6, 8, 10, 12, 13, 16, 18, 20 and 24 px, with no rule. Replacing them with a scale of 4, 8, 16, 24, 40 forced the question of what each gap was for: 8 inside a row between label and value, 16 between rows, 40 between the list and the next section. The screen became one pixel shorter overall and immediately readable as a list of items rather than a wall of text — and the engineer implementing it had five values instead of nine.
+- Made-up example: a booking list used gaps of 6, 8, 10, 12, 13, 16, 18, 20 and 24 px, with no rule. Replacing them with a scale of 4, 8, 16, 24, 40 forced the question of what each gap was for: 8 inside a row between label and value, 16 between rows, 40 between the list and the next section. The screen became one pixel shorter overall and, looked at again, read as a list of items rather than a wall of text — and the engineer implementing it had five values instead of nine.
 
 
 ### Choose where you will do the work
@@ -3308,11 +3472,11 @@ Made-up example. Mapping twelve measured gaps onto a six-value scale, and invent
 
 Section: practice-plan. Stable action: write-conflicts.
 
-Write your answer for “Where two different purposes collapsed onto the same value, and which one you moved”. Use the task instructions below to decide what to include.
+If no two purposes collided, write “none” and how you checked.
 
 **Answer:** Where two different purposes collapsed onto the same value, and which one you moved
 
-
+If no two purposes collided, write “none” and how you checked.
 
 
 ### Prove the grouping rule
@@ -3342,21 +3506,21 @@ A supplied measurement from the same made-up screen: inside the class block, tit
 
 What does that produce, and what is the fix?
 
-- Tighten the inside gaps to 4 so the blocks are denser.
-- A grouping problem best fixed with a divider line between classes.
-- An undifferentiated list where the price could belong to either class; open the between-block gap to a larger scale value.
-- A clean, consistent rhythm; nothing needs fixing.
+- Tighten every gap, inside and between blocks, to 4 so the list is denser.
+- A clean, consistent rhythm that reads well, so nothing on the screen needs fixing.
+- A grouping problem, best fixed by drawing a divider line between the classes.
+- A list where the price could belong to either class; widen the gap between blocks.
 
 <details>
 <summary>After your attempt</summary>
 
-Tighten the inside gaps to 4 so the blocks are denser. — This also works, by widening the ratio from the other side. Check it still reads comfortably at enlarged text before choosing it.
+Tighten every gap, inside and between blocks, to 4 so the list is denser. — Every gap is still equal, so nothing groups; the list is just shorter. Tightening only the inside gaps would work, because it makes the outside gap win.
 
-A grouping problem best fixed with a divider line between classes. — A line would work and buys with a new element what one larger gap gives free.
+A clean, consistent rhythm that reads well, so nothing on the screen needs fixing. — It is consistent and unreadable. Consistency means the same values used for the same purposes, deliberately unequal where the purposes differ.
 
-An undifferentiated list where the price could belong to either class; open the between-block gap to a larger scale value. — Equal gaps give the eye nothing to group with. Widening the outside gap is the whole repair, and it costs one scale value.
+A grouping problem, best fixed by drawing a divider line between the classes. — A line would work and buys with a new element what one larger gap gives free.
 
-A clean, consistent rhythm; nothing needs fixing. — It is consistent and unreadable. Consistency means the same values used for the same purposes, deliberately unequal where the purposes differ.
+A list where the price could belong to either class; widen the gap between blocks. — Equal gaps give the eye nothing to group with. Making the outside gap clearly larger than the inside gaps is the repair; widening it costs one scale value.
 
 Measure your own groups and make sure the outside gap wins in every one.
 
@@ -3407,11 +3571,11 @@ Write your answer for “Group 3 · inside gap vs surrounding gap”. Use the ta
 
 Section: practice-plan. Stable action: write-proof-fixes.
 
-Write your answer for “Any group where the outside gap was not clearly larger, and what you did”. Use the task instructions below to decide what to include.
+If every group already passed, write “none”; that is a valid result.
 
 **Answer:** Any group where the outside gap was not clearly larger, and what you did
 
-
+If every group already passed, write “none”; that is a valid result.
 
 
 ### Check your reasoning · 1 of 3
@@ -3420,22 +3584,22 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Consistent spacing means the same gap everywhere. True?
+Someone says consistent spacing means the same gap everywhere. What does consistency mean for spacing?
 
-- Yes for vertical gaps, no for horizontal ones.
-- No. It means a short list of values used for the same purposes, deliberately unequal where purposes differ.
-- Yes: one gap value is the simplest system to maintain.
+- One gap value used everywhere, because a single value is the easiest to maintain.
+- One gap value for vertical spacing, with horizontal gaps left free to vary by eye.
+- A short list of values, reused for the same purposes and unequal where purposes differ.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes for vertical gaps, no for horizontal ones. — The principle is the same in both directions: gaps carry meaning about what belongs together.
+One gap value used everywhere, because a single value is the easiest to maintain. — It is simple and it removes your only free grouping tool. Simplicity here costs readability.
 
-No. It means a short list of values used for the same purposes, deliberately unequal where purposes differ. — Uniform gaps destroy grouping and produce exactly the flat screen the previous lesson repaired.
+One gap value for vertical spacing, with horizontal gaps left free to vary by eye. — The principle is the same in both directions: gaps carry meaning about what belongs together.
 
-Yes: one gap value is the simplest system to maintain. — It is simple and it removes your only free grouping tool. Simplicity here costs readability.
+A short list of values, reused for the same purposes and unequal where purposes differ. — Uniform gaps destroy grouping and produce exactly the flat screen the previous lesson repaired.
 
-Improve: Check your proof table in step 4. If any group has equal inside and outside gaps, change one and record it in step 5.
+Improve: Check your proof table in step 4. If any group has equal inside and outside gaps, change one and record it in step 5; if none does, say so.
 
 Check again: Every group shows a clearly larger surrounding gap.
 
@@ -3450,20 +3614,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You mapped every gap to the scale, and one heading now sits slightly too close to its section. What do you do?
+You mapped every gap to the scale, and one heading now sits too close to the section above it, so it seems to belong there. What do you do?
 
-- Add a new value to the scale for this case.
-- Move it to the next scale value up and record why, rather than inventing a value between them.
-- Leave it: the scale matters more than one heading.
+- Move the gap above it to the next value on the scale and note why, not an in-between one.
+- Add a new value to the scale for this one heading, since the gap is genuinely odd.
+- Leave it as mapped, because keeping the scale intact matters more than one heading.
 
 <details>
 <summary>After your attempt</summary>
 
-Add a new value to the scale for this case. — Sometimes correct, and only if the new value has a general use. Added for one element, it is not a scale any more.
+Move the gap above it to the next value on the scale and note why, not an in-between one. — Using the next value keeps the scale intact. Inventing 14 because it feels right is how twelve accidental gaps appeared in the first place.
 
-Move it to the next scale value up and record why, rather than inventing a value between them. — Using the next value keeps the scale intact. Inventing 14 because it feels right is how twelve accidental gaps appeared in the first place.
+Add a new value to the scale for this one heading, since the gap is genuinely odd. — A new value can be right when it has a general use. Added for one element, it is not a scale any more.
 
-Leave it: the scale matters more than one heading. — The scale exists to serve the reading. If a gap now groups the wrong things, fix it and say so.
+Leave it as mapped, because keeping the scale intact matters more than one heading. — The scale exists to serve the reading. If a gap now groups the wrong things, fix it and say so.
 
 Improve: Look at your conflicts box in step 3 and make sure each collapse names which element moved and why. Record the change in step 5.
 
@@ -3482,18 +3646,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Why measure the existing gaps before defining the scale?
 
-- It is not needed if you already have a type scale.
-- To produce a before image for the portfolio.
-- Because the count shows how much of the current spacing was never decided, which is what the scale is for.
+- It adds little once a type scale exists, since text sizes already set the rhythm.
+- The count shows how much of today’s spacing was never decided, which the scale fixes.
+- To produce a before image and a gap count for the portfolio comparison later.
 
 <details>
 <summary>After your attempt</summary>
 
-It is not needed if you already have a type scale. — A type scale governs text sizes; the gaps between things are a separate set of accidents.
+It adds little once a type scale exists, since text sizes already set the rhythm. — A type scale governs text sizes; the gaps between things are a separate set of accidents.
 
-To produce a before image for the portfolio. — A side benefit. The reason is that you cannot fix spacing you have not looked at.
+The count shows how much of today’s spacing was never decided, which the scale fixes. — People often expect four or five values and find a dozen. The audit is what makes the problem visible and the after comparable.
 
-Because the count shows how much of the current spacing was never decided, which is what the scale is for. — People routinely expect four or five values and find a dozen. The audit is what makes the problem visible and the after comparable.
+To produce a before image and a gap count for the portfolio comparison later. — A side benefit. The reason is that you cannot fix spacing you have not looked at.
 
 Improve: If your audit in step 1 is an estimate, measure the gaps with a ruler now and record the real count, then note the change in step 5.
 
@@ -3554,6 +3718,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A recipe card on a cooking website has these vertical gaps: 6 under the title, 10 between ingredient lines, 10 between the ingredient list and the “Method” heading, 10 under the “Method” heading, and 14 between method steps. The “Method” heading floats halfway between the ingredients and the first step.
+
+**Task:** Propose a small spacing scale and map these gaps onto it. Which gap must change most, and why?
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Sets every gap to one value for consistency, or keeps the odd values; ignores the difference between gaps inside a group and gaps between groups.
+- Adequate: Defines a short scale (for example 4, 8, 16, 24, 32), keeps ingredient lines tight, and makes the gap above “Method” clearly larger than the gap below it (for example 32 above, 8 below) so the heading attaches to the method.
+- Strong: As adequate, plus a trade-off or check: the larger section gap costs height on a phone, method steps and ingredients need a visible difference at 200 per cent text, and the scale values should grow with the text.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -3617,7 +3807,7 @@ Adequate evidence: A stated base unit, the rule generating the values, and a typ
 
 1 — A list of values with no rule or no uses.
 
-2 — Base unit, rule, values and uses are all stated.
+2 — A stated base unit, the rule that generates the values, and four to seven values, each with a name and a typical use.
 
 3 — As adequate, and a value is deliberately omitted with the reason it is not needed at this density.
 
@@ -3631,7 +3821,7 @@ Adequate evidence: A before-and-after audit showing the original distinct gap co
 
 1 — An audit exists but off-scale values remain unexplained.
 
-2 — All gaps map to the scale, or an exception is named and justified.
+2 — A before count of distinct gaps and an after audit where every gap is a scale value, or each exception is named with its reason.
 
 3 — As adequate, and the write-up identifies which merges changed the reading and which were invisible.
 
@@ -3645,7 +3835,7 @@ Adequate evidence: A table with one row per group giving the inside gap, the sur
 
 1 — Some groups measured; failures unaddressed.
 
-2 — Every group is measured and any failure is repaired.
+2 — A row per group gives the inside gap and the surrounding gap, the surrounding gap is larger in every row, and any failure is repaired.
 
 3 — As adequate, and the tightest acceptable separation is identified and justified for the densest context.
 
@@ -3659,7 +3849,7 @@ Adequate evidence: At least one place where density was deliberately tightened o
 
 1 — Density varies but the reason is preference.
 
-2 — A density choice is tied to a stated reading situation.
+2 — At least one place where density was deliberately tightened or loosened, tied to a stated reading situation: who reads it, how often and for how long.
 
 3 — As adequate, and the cost of that choice is named — what the tighter or looser setting gives up.
 
@@ -3692,9 +3882,9 @@ A grid in print positions elements on a fixed page. On screen the page has no fi
 
 Bring: Your spacing scale and the regrouped screen. You will keep the content identical and change only its arrangement.
 
-Starting route: Draw the same class details in three paper rectangles: narrow, medium and wide. Include a long title, price, materials and Reserve. Without an earlier layout, start with two columns and narrow it until content no longer fits. Record that failure as the reason to stack; no HTML is required.
+Starting route: Open the reflow demonstration in this lesson, or narrow a real page in your browser. Watch the same content in Reflows and Clipped modes from 1280 down to 320 px and at 200% text, then specify your own layout on paper at three widths, labelled as specifications. Covering part of a drawing shows clipping, not reflow.
 
-- A stated column, gutter and margin structure; the same content at narrow, medium and wide widths; a change-point table giving each width and the content reason; and the narrow reading order.
+- A stated column, gutter and margin structure; one observed reflow and one observed clip from the demo or a real page; the same content specified at narrow, medium and wide widths; a change-point table giving each width and the content reason; and the narrow reading order.
 
 ### Start here: in everyday words
 
@@ -3728,7 +3918,7 @@ A layout structure on screen is a set of columns, the gutters between them and t
 
 Section: learn. Stable action: learn-2.
 
-Decide where the layout changes by watching the content, not by listing device names. Phones, tablets and laptops span a continuous range of widths and any list of device sizes is out of date on arrival. Widen the layout gradually until something reads badly — the measure grows too long, a two-column pairing becomes absurdly stretched, a control drifts far from what it controls — and put the change there. Then record what you saw, so the number has a reason attached.
+Decide where the layout changes by watching the content, not by listing device names. Phones, tablets and laptops span a continuous range of widths and any list of device sizes is out of date on arrival. Use a page that really reflows — the demo in this lesson, or a real page in your browser — and widen or narrow it gradually until something reads badly — the measure grows too long, a two-column pairing becomes absurdly stretched, a control drifts far from what it controls — and put the change there. Then record what you saw, so the number has a reason attached.
 
 
 ### Reflow is a re-ordering problem as much as a resizing one
@@ -3745,20 +3935,27 @@ Section: learn. Stable action: learn-4.
 Alignment does most of the work a grid gets credit for. A consistent left edge shared by heading, body and controls gives a screen structure even with no visible columns, and a single element breaking that edge reads as an error before the reader knows why. When you check a layout, check the edges first; misalignment is more often the cause of a screen feeling wrong than the column count is.
 
 
+### Idea 5: Reflow and clipping can look alike in a sketch and behave comp…
+
+Section: learn. Stable action: learn-5.
+
+Reflow and clipping can look alike in a sketch and behave completely differently. Reflow means the content rearranges to fit the width it has: lines re-wrap, columns stack, the page grows taller and nothing is lost. Clipping means the layout keeps a fixed width and the screen simply shows less of it: text is cut off, hidden, or reachable only by scrolling sideways. Covering part of a paper sketch shows clipping, never reflow, because paper cannot rearrange itself. Paper is where you specify the reflow you intend; a real page is where you watch it happen.
+
+
 ### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- A workshop list was designed at 1280 px as a three-column card grid with filters in a left sidebar. Narrowing it gradually, the cards became unreadably squeezed at around 900 px, so the grid dropped to two columns there; below about 620 px the filters could no longer sit beside the list, so they moved above it as a single collapsed control, and the card grid became one column. Neither number came from a device — both came from the point at which the content stopped reading.
+- Made-up example: a workshop list was designed at 1280 px as a three-column card grid with filters in a left sidebar. Narrowing a working version gradually in the browser, the cards became unreadably squeezed at around 900 px, so the grid dropped to two columns there; below about 620 px the filters could no longer sit beside the list, so they moved above it as a single collapsed control, and the card grid became one column. Neither number came from a device — both came from the point at which the content stopped reading. In a fixed-width version of the same page, nothing rearranged at 900 px: the third column simply slid out of view, which is clipping.
 
 
 ### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
-Draw the same class details in three paper rectangles: narrow, medium and wide. Include a long title, price, materials and Reserve. Without an earlier layout, start with two columns and narrow it until content no longer fits. Record that failure as the reason to stack; no HTML is required.
+Open the reflow demonstration in this lesson, or narrow a real page in your browser. Watch the same content in Reflows and Clipped modes from 1280 down to 320 px and at 200% text, then specify your own layout on paper at three widths, labelled as specifications. Covering part of a drawing shows clipping, not reflow.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
 
@@ -3802,19 +3999,23 @@ Example (made up): 12 columns, 24 gutters, 32 margins.
 
 Section: practice-plan. Stable action: step-2-brief.
 
-Three change points found by narrowing, each with the content failure that caused it.
+Change points found by narrowing a page that really reflows, each with its content failure, and one reflow told apart from one clip.
 
-- Narrow the layout gradually. Each time the content stops reading well, record the approximate width and exactly what failed. Do not start from a list of devices.
+- Open the reflow demo in this lesson, or a real listing page in your browser. In Reflows mode, narrow it slowly from 1280 towards 320 px and record each width where the content stops reading well and exactly what failed; then switch to Clipped and 200 per cent text and note what is cut off instead. Use what you saw to estimate your own layout's change points. Do not start from a list of devices.
 
-**Start here:** Take the widest sketch and cover it progressively from the right, watching what breaks first.
+**Start here:** Open the demo in Reflows mode at 1280 px and drag slowly towards 320, stopping at the first thing that reads badly. Switch to Clipped and compare, then try 200 per cent text. Then estimate where your own longest content would fail.
 
-**Enough:** Every change point names the content that failed, not a device.
+**Enough:** Every change point names the content that failed, not a device, and says whether you saw it or estimated it. The reflow and the clip are described so someone else could check them.
 
 **Change point:** A width at which the arrangement has to change because the content stopped working. It is named for what failed, never for a device.
 
-**Narrowing:** Covering the layout gradually from one side to find where it breaks, instead of jumping between widths you chose in advance.
+**Narrowing:** Making a page that really reflows gradually narrower, in the demo or a browser window, to find where its content stops reading well. Covering part of a drawing is not narrowing: it only hides part of it.
 
 **Content failure:** The specific thing that stopped reading well: a collision, a line that will not fit, a column too narrow for the longest name.
+
+**Reflow:** Content rearranging to fit the width it has: lines re-wrap, columns stack, the page grows taller and nothing is lost.
+
+**Clipping:** A layout keeping its width while the screen shows less of it: content is cut off, hidden, or only reachable by scrolling sideways.
 
 
 ### See the decision being made
@@ -3827,7 +4028,7 @@ Made-up example. Finding where a class list has to change, without starting from
 
 **Why I stopped:** Those are three samples from a continuous range. Everything between them is untested, and readers sit everywhere in that range.
 
-**What I did instead:** Started wide and narrowed slowly, watching for the first thing that stopped reading well.
+**What I did instead:** Opened a working version of the list in a browser, started wide and narrowed the window slowly, watching for the first thing that stopped reading well.
 
 **The first real failure:** At about 700 the longest class title collided with the price beside it. Nothing to do with a tablet; it was the length of that particular string.
 
@@ -3840,15 +4041,153 @@ Made-up example. Finding where a class list has to change, without starting from
 **Unknown:** Still unknown: how this behaves with a much longer title in another language. Worth testing before treating the change point as settled.
 
 
+### Try the distinction · 1 of 6
+
+Section: practice-plan. Stable action: step-2-sort-1.
+
+Six made-up observations from narrowing pages and enlarging their text. Label each one: did the content reflow (rearrange to fit, with all of it still reachable by scrolling down), or was it clipped (cut off, hidden, or only reachable sideways)?
+
+At 700 px the row of three class cards becomes two per row, and the third card moves below the first two.
+
+- reflow
+- clipping
+
+<details>
+<summary>After your attempt</summary>
+
+reflow — The cards rearranged to fit the width and every one is still there, one scroll further down. That is what reflow looks like.
+
+clipping — Nothing was lost or pushed out of reach: the third card moved below the others. Moving is reflow; disappearing would be clipping.
+
+Ask the same question of the demo and of your own layout: at each change point, write which content must reflow and which must never be cut off.
+
+</details>
+
+
+### Try the distinction · 2 of 6
+
+Section: practice-plan. Stable action: step-2-sort-2.
+
+Six made-up observations from narrowing pages and enlarging their text. Label each one: did the content reflow (rearrange to fit, with all of it still reachable by scrolling down), or was it clipped (cut off, hidden, or only reachable sideways)?
+
+At 600 px the price column runs past the right edge of the window, and the prices can only be seen by scrolling sideways.
+
+- reflow
+- clipping
+
+<details>
+<summary>After your attempt</summary>
+
+reflow — The layout kept its width and the window cut it off. Content that needs sideways scrolling at a narrow width has not reflowed.
+
+clipping — The column did not rearrange; the window simply shows less of it. Sideways scrolling to reach content is the sign.
+
+Ask the same question of the demo and of your own layout: at each change point, write which content must reflow and which must never be cut off.
+
+</details>
+
+
+### Try the distinction · 3 of 6
+
+Section: practice-plan. Stable action: step-2-sort-3.
+
+Six made-up observations from narrowing pages and enlarging their text. Label each one: did the content reflow (rearrange to fit, with all of it still reachable by scrolling down), or was it clipped (cut off, hidden, or only reachable sideways)?
+
+With text at 200 per cent the class title takes three lines, and the card grows taller to hold them.
+
+- reflow
+- clipping
+
+<details>
+<summary>After your attempt</summary>
+
+reflow — The title re-wrapped and its container grew with it, so every word is still visible. Growing taller is the normal price of reflow.
+
+clipping — All three lines are visible because the card grew. It would be clipping if the card kept its height and cut the third line off.
+
+Ask the same question of the demo and of your own layout: at each change point, write which content must reflow and which must never be cut off.
+
+</details>
+
+
+### Try the distinction · 4 of 6
+
+Section: practice-plan. Stable action: step-2-sort-4.
+
+Six made-up observations from narrowing pages and enlarging their text. Label each one: did the content reflow (rearrange to fit, with all of it still reachable by scrolling down), or was it clipped (cut off, hidden, or only reachable sideways)?
+
+With text at 200 per cent the button label reads “Res…” and the rest of the word is gone.
+
+- reflow
+- clipping
+
+<details>
+<summary>After your attempt</summary>
+
+reflow — The label did not move or wrap; it was cut short to fit a fixed width. Truncated text is clipped text.
+
+clipping — The button kept its size and the word was cut short, so a reader now has to guess what the button does.
+
+Ask the same question of the demo and of your own layout: at each change point, write which content must reflow and which must never be cut off.
+
+</details>
+
+
+### Try the distinction · 5 of 6
+
+Section: practice-plan. Stable action: step-2-sort-5.
+
+Six made-up observations from narrowing pages and enlarging their text. Label each one: did the content reflow (rearrange to fit, with all of it still reachable by scrolling down), or was it clipped (cut off, hidden, or only reachable sideways)?
+
+At 400 px the filter sidebar moves above the list and becomes one “Filters” button that opens the same filters.
+
+- reflow
+- clipping
+
+<details>
+<summary>After your attempt</summary>
+
+reflow — The filters moved and folded behind a visible, labelled control, and every one can still be reached. That is still reflow.
+
+clipping — Nothing became unreachable: a visible “Filters” button opens every filter. It would be clipping if the sidebar were simply cut off with no way to reach it.
+
+Ask the same question of the demo and of your own layout: at each change point, write which content must reflow and which must never be cut off.
+
+</details>
+
+
+### Try the distinction · 6 of 6
+
+Section: practice-plan. Stable action: step-2-sort-6.
+
+Six made-up observations from narrowing pages and enlarging their text. Label each one: did the content reflow (rearrange to fit, with all of it still reachable by scrolling down), or was it clipped (cut off, hidden, or only reachable sideways)?
+
+At 320 px a wide photograph keeps its full width, and the Reserve button beside it sits off the right edge of the screen.
+
+- reflow
+- clipping
+
+<details>
+<summary>After your attempt</summary>
+
+reflow — The photograph refused to shrink and pushed the button out of view. Nothing rearranged to fit, so this is clipping.
+
+clipping — A fixed-width image forced the row wider than the screen, so the button is out of reach. It is a common narrow-width failure.
+
+Ask the same question of the demo and of your own layout: at each change point, write which content must reflow and which must never be cut off.
+
+</details>
+
+
 ### Change point 1 · roughly what width, and exactly what failed
 
 Section: practice-plan. Stable action: write-change-1.
 
-Write your answer for “Change point 1 · roughly what width, and exactly what failed”. Use the task instructions below to decide what to include.
+Say whether you saw it on a page that reflows or estimated it for your paper layout. A rough estimate: a line needs about half the text size per character, so a 58-character title at 16 px needs about 460 px.
 
 **Answer:** Change point 1 · roughly what width, and exactly what failed
 
-
+Say whether you saw it on a page that reflows or estimated it for your paper layout. A rough estimate: a line needs about half the text size per character, so a 58-character title at 16 px needs about 460 px.
 
 <details>
 <summary>Example</summary>
@@ -3880,6 +4219,24 @@ Write your answer for “Change point 3 · roughly what width, and exactly what 
 
 
 
+### In the demo or on a real page: one thing that reflowed, one thing that was clipped, and how you told them apart
+
+Section: practice-plan. Stable action: write-clip-vs-reflow.
+
+Reflowed: it re-wrapped or moved, and all of it can still be reached by scrolling down. Clipped: it was cut off, hidden, or only reachable by scrolling sideways.
+
+**Answer:** In the demo or on a real page: one thing that reflowed, one thing that was clipped, and how you told them apart
+
+Reflowed: it re-wrapped or moved, and all of it can still be reached by scrolling down. Clipped: it was cut off, hidden, or only reachable by scrolling sideways.
+
+<details>
+<summary>Example</summary>
+
+Example (made up): at 600 px the cards went from three to two per row, all still there: reflow. In Clipped mode the third card slid past the right edge and the page scrolled sideways: clipping.
+
+</details>
+
+
 ### Design the reflow
 
 Section: practice-plan. Stable action: step-3-brief.
@@ -3903,21 +4260,21 @@ A supplied narrow layout from the same made-up screen, ordered top to bottom: ph
 
 What is the most important change to the order?
 
-- Move the instructor biography below Reserve, so date, price and materials reach the reader before the decision.
-- Move the photograph to the bottom, since it carries no information.
-- Move Reserve to the top so it is always reachable.
-- Nothing: on a phone people scroll, so order matters less.
+- Leave it: on a phone people scroll, so the order matters much less.
+- Move the photograph to the bottom, since it carries no booking information.
+- Move Reserve to the very top, so the action is always reachable at once.
+- Move the biography below Reserve, so date, price and materials come first.
 
 <details>
 <summary>After your attempt</summary>
 
-Move the instructor biography below Reserve, so date, price and materials reach the reader before the decision. — The order is what a person reads and what a screen reader announces. Everything needed to decide should arrive before the control that acts on the decision.
+Leave it: on a phone people scroll, so the order matters much less. — Order matters more on a phone, because only a little is visible at once and the sequence is the whole experience.
 
-Move the photograph to the bottom, since it carries no information. — Worth considering and it is not the costly problem. The photograph is one scroll; the biography sits between the reader and the facts they need.
+Move the photograph to the bottom, since it carries no booking information. — Worth considering and it is not the costly problem. The photograph is one scroll; the biography sits between the reader and the facts they need.
 
-Move Reserve to the top so it is always reachable. — It puts the action before the information the action depends on, which invites a decision made without the price.
+Move Reserve to the very top, so the action is always reachable at once. — It puts the action before the information the action depends on, which invites a decision made without the price.
 
-Nothing: on a phone people scroll, so order matters less. — Order matters more on a phone, because only a little is visible at once and the sequence is the whole experience.
+Move the biography below Reserve, so date, price and materials come first. — The order is what a person reads and what a screen reader announces. Everything needed to decide should arrive before the control that acts on the decision.
 
 Number your own narrow order and check that everything needed to decide arrives before the action.
 
@@ -4029,24 +4386,24 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You designed for 390, 768 and 1280. What has not been tested?
 
-- Everything between them, which is where most readers actually are.
-- Only very large screens above 1280.
-- Nothing important: those three cover phone, tablet and desktop.
+- Nothing important, since those three widths stand for phone, tablet and desktop.
+- Mainly the very wide screens above 1280 px, where lines become far too long.
+- Every width between the three, where a title can collide or a column collapse.
 
 <details>
 <summary>After your attempt</summary>
 
-Everything between them, which is where most readers actually are. — Widths are continuous. Three samples guarantee the ranges between are unexamined, and that is where a title collides or a column collapses.
+Nothing important, since those three widths stand for phone, tablet and desktop. — Those labels describe devices, not the widths a browser window can take. A resized desktop window sits nowhere near any of them.
 
-Only very large screens above 1280. — Those matter too, and the bigger gap is the untested range between your three chosen numbers.
+Mainly the very wide screens above 1280 px, where lines become far too long. — Those matter too, and the bigger gap is the untested range between your three chosen numbers.
 
-Nothing important: those three cover phone, tablet and desktop. — Those labels describe devices, not the widths a browser window can take. A resized desktop window sits nowhere near any of them.
+Every width between the three, where a title can collide or a column collapse. — Widths are continuous. Three samples leave the ranges between them unexamined, and that is where a title collides or a column collapses.
 
-Improve: Check your change points in step 2. If any width came from a device list rather than a content failure, narrow the layout until you find the real one, and record it in step 5.
+Improve: Check your change points in step 2. If any width came from a device list rather than a content failure, narrow the demo or a real page until you find the real one, and record it in step 5.
 
 Check again: Every change point names what failed in the content at roughly that width.
 
-Answers to revisit: change-1, change-2, change-3
+Answers to revisit: change-1, change-2, change-3, clip-vs-reflow
 
 </details>
 
@@ -4059,18 +4416,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 At the narrow width the Reserve button appears above the price. Why does that matter?
 
-- It matters only for aesthetics.
-- The reader meets the action before the information the action depends on, and the same order governs keyboard and screen-reader use.
-- It does not matter, because the price is only a scroll away.
+- Mostly for looks: a button high on the screen can seem pushy to some readers.
+- It hardly matters, because the price is only a short scroll further down.
+- The action now comes before the price it depends on, for every way of reading.
 
 <details>
 <summary>After your attempt</summary>
 
-It matters only for aesthetics. — It is a sequence problem, not a visual one; it changes what the reader knows when they act.
+Mostly for looks: a button high on the screen can seem pushy to some readers. — It is a sequence problem, not a visual one; it changes what the reader knows when they act.
 
-The reader meets the action before the information the action depends on, and the same order governs keyboard and screen-reader use. — Order on a narrow screen is the whole experience, and it is also the sequence assistive technology follows.
+It hardly matters, because the price is only a short scroll further down. — A scroll away is out of sight at the moment of deciding, and some readers will act without it.
 
-It does not matter, because the price is only a scroll away. — A scroll away is out of sight at the moment of deciding, and some readers will act without it.
+The action now comes before the price it depends on, for every way of reading. — Order on a narrow screen is the whole experience, and it is also the sequence a keyboard and a screen reader follow.
 
 Improve: Renumber the narrow reading order in step 3 so everything needed to decide precedes the action, then record the change in step 5.
 
@@ -4089,18 +4446,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your change points came from watching the content fail. Why is that better than round numbers?
 
-- It is not better; standard values are easier to maintain.
-- Because they are tied to the strings and structure you actually have, so they hold when the layout is reused.
-- Because untidy numbers look more rigorous.
+- They come from your actual strings and structure, so each has a reason that holds.
+- They are not better: standard device widths are easier to maintain and share.
+- Uneven numbers such as 700 show reviewers that real testing was done.
 
 <details>
 <summary>After your attempt</summary>
 
-It is not better; standard values are easier to maintain. — Easier to type and unrelated to whether your content reads. A standard number that fits nothing is maintenance without benefit.
+They come from your actual strings and structure, so each has a reason that holds. — A change point at 700 because the longest title collides is a fact about your content. A change point at 768 is a fact about a device that may not exist for your reader.
 
-Because they are tied to the strings and structure you actually have, so they hold when the layout is reused. — A change point at 700 because the longest title collides is a fact about your content. A change point at 768 is a fact about a device that may not exist for your reader.
+They are not better: standard device widths are easier to maintain and share. — Easier to type and unrelated to whether your content reads. A standard number that fits nothing is maintenance without benefit.
 
-Because untidy numbers look more rigorous. — Appearance is irrelevant. The value is that the number has a reason you can restate.
+Uneven numbers such as 700 show reviewers that real testing was done. — Appearance is irrelevant. The value is that the number has a reason you can restate.
 
 Improve: Add the content reason to any change point in step 2 that does not have one, then record it in step 5.
 
@@ -4117,13 +4474,13 @@ Section: practice. Stable action: step-5-brief.
 
 The arrangement you are least sure about, where the renderings live, and the repair the Check questions asked for.
 
-- Save the three renderings, the change-point table with reasons, and the narrow reading order. Note any arrangement you are unsure about.
+- Save the three renderings, labelled as specifications, the change-point table with reasons, the reflow and clip you told apart, and the narrow reading order. Note any arrangement you are unsure about.
 
 **Start here:** Choose the change point you guessed at rather than derived.
 
 **Enough:** The uncertainty names a specific width and arrangement.
 
-**Rendering:** One drawing of the screen at one width. The three of them together are the evidence this lesson produces.
+**Rendering:** One drawing of the screen at one width. On paper it specifies what you intend; it is not a record of what a browser did.
 
 **Repair:** The change a Check question asks you to make, recorded as what you actually altered.
 
@@ -4159,6 +4516,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A cinema’s showtimes page was designed at 1280 px: film posters in a left column, a grid of times on the right. In a 600 px window the times grid keeps its width, so the later showings sit past the right edge and need sideways scrolling. At 390 px the posters fill the width and the times appear only after three screens of film descriptions.
+
+**Task:** Is the 600 px behaviour reflow or clipping, and what would you specify for narrow widths instead? Give the reason for your arrangement.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Calls the 600 px view responsive because something changed, or picks change points from device names without saying what content failed.
+- Adequate: Calls 600 px clipping (times cut off, sideways scrolling) and specifies that the times wrap or stack under each film, with a change point where the times stop fitting, and puts times before long descriptions in the narrow order.
+- Strong: As adequate, plus a trade-off or check: wrapping the times makes each film taller and the descriptions may need collapsing, and the paper specification still needs checking on a page that reflows, at 320 px and at 200 per cent text.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -4206,7 +4589,7 @@ When the activity is finished, tell me to return to the course answer called “
 <summary>Optional hints and reference material</summary>
 
 - Use the spacing scale, but let content failure explain the change point.
-- Paper frames model layout intent; mark real browser behavior as untested unless you actually resize a working page.
+- Paper frames specify layout intent and cannot reflow. Watch real reflow and clipping in the lesson demo or a real page, and mark your own layout’s browser behavior as untested until a working page is resized.
 
 - R16: [web.dev: learn responsive design](https://web.dev/learn/design/) — The layout chapters, read for how a layout is described by its behaviour rather than by fixed sizes. Purpose: Supplies the reasoning for change points derived from content rather than devices. Free reading, no account. Verified 2026-09-06. Read the selected chapters, not the whole site. Fallback: R15.
 
@@ -4230,7 +4613,7 @@ Repair: Write the three values for your widest layout and check each against you
 
 **Change points come from content failures**
 
-Adequate evidence: A table of change points where each row gives an approximate width and the specific content behaviour that failed there.
+Adequate evidence: A table of change points where each row gives an approximate width, the specific content behaviour that failed there, and whether it was observed on a page that reflows or estimated for a paper layout.
 
 0 — Change points are device names or absent.
 
@@ -4240,7 +4623,7 @@ Adequate evidence: A table of change points where each row gives an approximate 
 
 3 — As adequate, and one change point was moved after observing the failure, with the before and after widths recorded.
 
-Repair: Narrow your layout again in small steps and write the first thing that breaks at each point as an observable sentence. Replace any device-derived number with the width you actually observed. Recheck: The change-point table with observed failures per row.
+Repair: Narrow the demo or a real page again in small steps and write the first thing that breaks at each point as an observable sentence, then estimate where your own longest content would fail. Replace any device-derived number with a width you observed or estimated from content. Recheck: The change-point table with observed failures per row.
 
 **Reflow order follows the task**
 
@@ -4270,6 +4653,20 @@ Adequate evidence: Marked-up renderings at all three widths showing the shared e
 
 Repair: Draw a vertical line down the intended left edge on each rendering and mark every element that does not meet it. Fix or justify each mark. Recheck: The three marked-up renderings.
 
+**Reflow is told apart from clipping**
+
+Adequate evidence: One reflow and one clip observed in the demo or on a real page, each described correctly, and a narrow specification that says which content must re-wrap or stack and which must never be cut off.
+
+0 — Not distinguished; covering a sketch or shrinking a drawing is treated as a narrow-width test.
+
+1 — The terms are used, but the examples mix them up or come only from paper.
+
+2 — One observed reflow and one observed clip are described correctly, and the narrow specification states what must reflow.
+
+3 — As adequate, and the specification also says how the layout avoids sideways scrolling at 320 px and at 200 per cent text.
+
+Repair: Open the demo, or a real page, at 320 px. Write one thing that moved or re-wrapped with nothing lost, and one thing that was cut off or needed sideways scrolling, then add a line to your narrow specification saying which of your elements must never be cut off. Recheck: The reflow and clip descriptions and the added specification line.
+
 </details>
 The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
@@ -4281,6 +4678,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 - Change points come from content failures
 - Reflow order follows the task
 - Alignment is checked at every width
+- Reflow is told apart from clipping
 
 <details>
 <summary>Reading, video and deeper explanation</summary>
@@ -4356,7 +4754,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- A first sheet listed twenty-two colours by hex with no names. Rewritten as nine role-named tokens with usage notes, it exposed three problems immediately: two hexes were doing the same job and could merge, one grey had no role at all and was deleted, and the pairing note revealed that the secondary text colour had never been checked against the raised surface — where it measured 3.1:1 and failed. The sheet found a defect the screen review had missed.
+- Made-up example: a first sheet listed twenty-two colours by hex with no names. Rewritten as nine role-named tokens with usage notes, it exposed three problems immediately: two hexes were doing the same job and could merge, one grey had no role at all and was deleted, and the pairing note revealed that the secondary text colour, #707070, had only been checked on the white base, where it measures 4.95:1, and never on the raised surface #ececec — where it measures 4.19:1 and fails for body text. The sheet found a defect the screen review had missed.
 
 
 ### Choose where you will do the work
@@ -4503,6 +4901,26 @@ Write your answer for “Token 8 · name, value, role”. Use the task instructi
 
 
 
+### Tokens 9 onward, one per line: name · value · role, or “none” and why
+
+Section: practice-plan. Stable action: write-token-more.
+
+A full module usually has more decisions than eight rows: every type step, colour role and spacing value. Write one token per line. If eight rows hold every decision, write “none” and say why.
+
+**Answer:** Tokens 9 onward, one per line: name · value · role, or “none” and why
+
+Optional: may be left empty.
+
+A full module usually has more decisions than eight rows: every type step, colour role and spacing value. Write one token per line. If eight rows hold every decision, write “none” and say why.
+
+<details>
+<summary>Example</summary>
+
+Example (made up): space-between · 24 · the gap between one class block and the next.
+
+</details>
+
+
 ### Add usage and prohibitions
 
 Section: practice-plan. Stable action: step-2-brief.
@@ -4584,7 +5002,7 @@ Every permitted pairing measured against your contrast table, with failures turn
 
 **Pairing:** A text colour together with the surface colour behind it. Contrast belongs to the pair, never to one colour on its own.
 
-**Contrast ratio:** A number comparing the lightness of text against its background. A free contrast checker gives it to you; there is nothing to work out by hand.
+**Contrast ratio:** A number comparing the lightness of text against its background. The contrast calculator from lesson 4 gives it to you; there is nothing to work out by hand.
 
 **Contrast table:** The record from lesson 4 listing each pair you measured and the ratio it came back with.
 
@@ -4633,11 +5051,11 @@ Any pairing you have not measured is not yet permitted.
 
 Section: practice-plan. Stable action: write-new-prohibitions.
 
-Write your answer for “Pairings that failed and are now prohibited”. Use the task instructions below to decide what to include.
+If every permitted pairing passed, write “none failed”.
 
 **Answer:** Pairings that failed and are now prohibited
 
-
+If every permitted pairing passed, write “none failed”.
 
 
 ### The build-it test
@@ -4650,7 +5068,7 @@ A rebuild from the sheet alone, and every gap it exposed.
 
 **Start here:** Set the screen aside, take only the sheet, and rebuild one button from it.
 
-**Enough:** The gap list is not empty; a first sheet always has gaps.
+**Enough:** Every invented decision is listed, or the list says “none” with how the test was run. An empty list is rare for a first sheet, so check the method first.
 
 **Build-it test:** Rebuilding something using only the sheet. Every decision you have to invent is a gap in the specification.
 
@@ -4659,11 +5077,11 @@ A rebuild from the sheet alone, and every gap it exposed.
 
 Section: practice-plan. Stable action: write-build-gaps.
 
-Write your answer for “Every decision you had to make that the sheet did not specify”. Use the task instructions below to decide what to include.
+If someone else ran the test, describe the gap in the sheet, not the person, and leave out their name. If you found no gaps, write “none” and how you kept the original out of sight.
 
 **Answer:** Every decision you had to make that the sheet did not specify
 
-
+If someone else ran the test, describe the gap in the sheet, not the person, and leave out their name. If you found no gaps, write “none” and how you kept the original out of sight.
 
 <details>
 <summary>Example</summary>
@@ -4692,18 +5110,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Are tokens worth the effort for one person working alone?
 
-- Yes: the value appears the first time you build a second screen, because otherwise every value is re-derived by eye and drifts.
-- No: tokens are overhead until a team needs to share decisions.
-- Only if you are writing code.
+- Worth it: by the second screen, untokened values are re-derived by eye and drift.
+- Only once the design is being built in code, where the names are used.
+- Not yet: tokens are overhead until a team has to share the same decisions.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes: the value appears the first time you build a second screen, because otherwise every value is re-derived by eye and drifts. — Drift is invisible until two screens are placed side by side, and by then both are built. Named decisions are what keep them together.
+Worth it: by the second screen, untokened values are re-derived by eye and drift. — Drift is invisible until two screens are placed side by side, and by then both are built. Named decisions are what keep them together.
 
-No: tokens are overhead until a team needs to share decisions. — The second screen is the team. Without names, you are the person who has to remember fourteen values exactly.
+Only once the design is being built in code, where the names are used. — A sheet of paper with names, values and roles is a complete token sheet. The form is irrelevant; the naming is the point.
 
-Only if you are writing code. — A sheet of paper with names, values and roles is a complete token sheet. The form is irrelevant; the naming is the point.
+Not yet: tokens are overhead until a team has to share the same decisions. — The second screen is the team. Without names, you are the person who has to remember fourteen values exactly.
 
 Improve: If any decision from lessons 1 to 7 is missing from step 1, add it as a named token now, and record the change in step 5.
 
@@ -4722,18 +5140,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You named a token “light-grey”. What goes wrong later?
 
-- Nothing, as long as you update the value in one place.
-- It only matters if other people use the sheet.
-- When contrast forces you to darken it, the name no longer describes it and every reference becomes misleading.
+- Nothing much, as long as the value itself is updated in one place.
+- Once contrast forces it darker, the name lies and every reference misleads.
+- It only causes trouble when other people start using the same sheet.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing, as long as you update the value in one place. — The value updates fine. The name is what other people and future notes read, and it now says the wrong thing.
+Nothing much, as long as the value itself is updated in one place. — The value updates fine. The name is what other people and future notes read, and it now says the wrong thing.
 
-It only matters if other people use the sheet. — You are the main reader, weeks later, and you will trust the name rather than re-checking the value.
+Once contrast forces it darker, the name lies and every reference misleads. — Names outlive values. A role name survives the change; an appearance name has to be renamed everywhere or quietly lie.
 
-When contrast forces you to darken it, the name no longer describes it and every reference becomes misleading. — Names outlive values. A role name survives the change; an appearance name has to be renamed everywhere or quietly lie.
+It only causes trouble when other people start using the same sheet. — You are the main reader, weeks later, and you will trust the name rather than re-checking the value.
 
 Improve: Rename any appearance-based token in step 1 to a role name, then record it in step 5.
 
@@ -4750,24 +5168,24 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-The build-it test produced no gaps at all. What is the most likely explanation?
+The build-it test produced no gaps at all. What is the sound next move?
 
-- The sheet is complete and no repair is needed.
-- The component chosen was too complex.
-- You rebuilt it from memory of the original rather than from the sheet alone.
+- Put it down to the component: one that complex hides where the sheet is thin.
+- Record the sheet as complete, since a test with no gaps means no repair is needed.
+- Confirm the original was out of sight; if it was, record “no gaps” and how you ran it.
 
 <details>
 <summary>After your attempt</summary>
 
-The sheet is complete and no repair is needed. — Possible and rare. Before accepting it, check whether the sheet specifies the space inside a control, not only around it.
+Put it down to the component: one that complex hides where the sheet is thin. — A complex component tends to expose more gaps, not fewer, because it needs more decisions.
 
-The component chosen was too complex. — A complex component would expose more gaps, not fewer.
+Record the sheet as complete, since a test with no gaps means no repair is needed. — The result may be true, and the record needs the method behind it. Without it, nobody can tell a complete sheet from a test run with the screen in view.
 
-You rebuilt it from memory of the original rather than from the sheet alone. — A first sheet essentially always misses something: internal padding, a focus treatment, a disabled colour. No gaps usually means the screen was still in view.
+Confirm the original was out of sight; if it was, record “no gaps” and how you ran it. — A rebuild with the screen still in view borrows answers from it, which is the usual reason for an empty gap list. If the original really was hidden and nothing was missing, “no gaps” is a valid result, and the method is what makes it believable.
 
-Improve: Redo the test with the original out of sight, or hand the sheet to someone else, and record every invented decision in step 4 and the change in step 5.
+Improve: If the original was in view, redo the test with it out of sight or hand the sheet to someone else, and record every invented decision in step 4. If no gaps appear, write “none” and how you ran it. Note it in step 5.
 
-Check again: The gap list names at least one decision the sheet did not specify, and the sheet now covers it.
+Check again: The gap list names each decision the sheet did not specify, or says “none” with how the test was run.
 
 Answers to revisit: build-gaps, build-fixes
 
@@ -4811,6 +5229,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A museum events site has a token sheet with four names: blue-dark (#1d3557, headings and the Book button), grey-light (#8a8a8a, captions), gap-small (8) and gap-big (24). A developer used blue-dark for an “Event cancelled” label because it was the darkest colour available, and the 14 px captions in grey-light measure 3.45:1 on white.
+
+**Task:** Rename these tokens and add the usage notes or prohibitions that would have prevented both problems. Explain why each change helps.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps appearance names, or swaps them for other colour names, and lists values without usage rules or permitted pairings.
+- Adequate: Gives role names (action-surface, text-heading, text-caption, space-inside, space-between), prohibits action-surface on status labels, and records that text-caption fails 4.5:1 at 14 px, so it is darkened or prohibited for small text.
+- Strong: As adequate, plus a check or trade-off: measures a replacement caption grey before permitting it, accepts that role names must be learned, and plans a build-it test by someone else to find what the sheet still leaves unsaid.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -4916,7 +5360,7 @@ Adequate evidence: A component rebuilt from the sheet alone and a list of decisi
 
 1 — The test was run but the gaps were not repaired.
 
-2 — Gaps are listed and each is now specified on the sheet.
+2 — Gaps are listed and each is now specified on the sheet, or the record says no gaps were found and how the test was run with the original out of sight.
 
 3 — As adequate, and the test was run by another person rather than by you, with what they misread recorded.
 
@@ -5008,7 +5452,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- A primary button was specified once, in default. Building its states from the token sheet exposed four undocumented decisions: focus had no token at all, hover reused a colour that failed against the raised surface, disabled had been drawn at 40 per cent opacity so its label became unreadable, and there was no loading appearance despite the booking action taking two seconds. Four states, four gaps — none visible in the original screen.
+- Made-up example: a primary button was specified once, in default. Building its states from the token sheet exposed four undocumented decisions: focus had no token at all, hover reused a colour that failed against the raised surface, disabled had been drawn at 40 per cent opacity so its label became unreadable, and there was no loading appearance despite the booking action taking two seconds. Four states, four gaps — none visible in the original screen.
 
 
 ### Choose where you will do the work
@@ -5176,11 +5620,11 @@ Write your answer for “For each state: the tokens it uses”. Use the task ins
 
 Section: practice-plan. Stable action: write-missing-tokens.
 
-Record it rather than inventing a value silently. These go back into the sheet.
+Record it rather than inventing a value silently. These go back into the sheet. If the sheet covered every state, write “none”.
 
 **Answer:** Every token you needed and did not have
 
-Record it rather than inventing a value silently. These go back into the sheet.
+Record it rather than inventing a value silently. These go back into the sheet. If the sheet covered every state, write “none”.
 
 
 ### Design the focus appearance
@@ -5208,21 +5652,21 @@ A supplied focus treatment from the same made-up project: on focus the button’
 
 What is wrong with that, and what is the smallest fix?
 
-- Focus and hover are indistinguishable, so a keyboard user cannot tell where they are; give focus its own visible outline offset from the control.
-- Remove the hover effect so the lightening only means focus.
-- Rely on the browser default focus ring.
-- Nothing: a lightened background is visible, which is what focus needs.
+- Focus looks like hover; give focus its own visible outline set just outside the control.
+- Remove the hover effect, so that the lightening only ever means keyboard focus.
+- Nothing serious: a lightened background is visible, and visibility is what focus needs.
+- Rely on the browser’s default focus ring, which every browser already supplies.
 
 <details>
 <summary>After your attempt</summary>
 
-Focus and hover are indistinguishable, so a keyboard user cannot tell where they are; give focus its own visible outline offset from the control. — Focus needs to be unmistakable and must not depend on a mouse being present. An outline sitting just outside the control works on every surface.
+Focus looks like hover; give focus its own visible outline set just outside the control. — A keyboard user cannot tell where they are when focus and hover look alike. An outline just outside the control works on every surface; check it measures at least 3:1 against the colours beside it.
 
-Remove the hover effect so the lightening only means focus. — That solves the ambiguity by removing useful mouse feedback, and the focus signal remains a subtle background change.
+Remove the hover effect, so that the lightening only ever means keyboard focus. — That solves the ambiguity by removing useful mouse feedback, and the focus signal remains a subtle background change.
 
-Rely on the browser default focus ring. — A reasonable starting point and it often fails against particular surfaces, which is why the lesson asks you to check it against each one.
+Nothing serious: a lightened background is visible, and visibility is what focus needs. — Visible is not enough if it means two different things. A mouse user hovering and a keyboard user focusing see the same thing.
 
-Nothing: a lightened background is visible, which is what focus needs. — Visible is not enough if it means two different things. A mouse user hovering and a keyboard user focusing see the same thing.
+Rely on the browser’s default focus ring, which every browser already supplies. — A reasonable starting point and it often fails against particular surfaces, which is why the lesson asks you to check it against each one.
 
 Give your own focus state a token of its own and check it against every surface the component sits on.
 
@@ -5233,11 +5677,11 @@ Give your own focus state a token of its own and check it against every surface 
 
 Section: practice-plan. Stable action: write-focus-appearance.
 
-It must differ from hover, and be visible against every surface the component sits on.
+It must differ from hover, and be visible against every surface the component sits on. Aim for at least 3:1 between the indicator and the colours next to it, the minimum WCAG sets for the parts of a control.
 
 **Answer:** What focus looks like, and which token carries it
 
-It must differ from hover, and be visible against every surface the component sits on.
+It must differ from hover, and be visible against every surface the component sits on. Aim for at least 3:1 between the indicator and the colours next to it, the minimum WCAG sets for the parts of a control.
 
 
 ### Where you checked it, and against which surfaces
@@ -5326,20 +5770,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Is the disabled state just the default at reduced opacity?
+A colleague suggests making disabled simply the default button at 40 per cent opacity. What is the main problem?
 
-- No: uniform opacity changes the background too, produces an unpredictable composite, and often leaves the label unreadable while still looking pressable.
-- Yes, and it is the standard approach in most systems.
-- Yes, provided the opacity stays above 50 per cent.
+- The blend is unpredictable, the label may become unreadable, and nothing says why.
+- Only the number: anything above 50 per cent opacity would avoid the problem.
+- Nothing serious: reduced opacity is the standard approach in most systems.
 
 <details>
 <summary>After your attempt</summary>
 
-No: uniform opacity changes the background too, produces an unpredictable composite, and often leaves the label unreadable while still looking pressable. — Disabled deserves its own tokens and its own explanation, because it is a state that has to communicate a reason.
+The blend is unpredictable, the label may become unreadable, and nothing says why. — Uniform opacity mixes in whatever sits behind the button and often still looks pressable. Disabled deserves its own tokens and its own explanation, because it has to communicate a reason.
 
-Yes, and it is the standard approach in most systems. — It is common, which is not the same as sound. It is the fastest way to produce an unreadable label over an unpredictable background.
+Only the number: anything above 50 per cent opacity would avoid the problem. — A threshold does not fix the blending problem, and it still leaves the control looking pressable and unexplained.
 
-Yes, provided the opacity stays above 50 per cent. — A threshold does not fix the composite problem, and it still leaves the control looking pressable and unexplained.
+Nothing serious: reduced opacity is the standard approach in most systems. — It is common, which is not the same as sound. It is the fastest way to produce an unreadable label over an unpredictable background.
 
 Improve: Specify disabled with its own tokens in step 4 and write the sentence that tells the reader why, then record it in step 5.
 
@@ -5358,18 +5802,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your focus state looks like a slightly lighter version of hover. Why is that a problem?
 
-- A keyboard user cannot reliably tell where they are, and focus must not depend on a pointer being present.
-- It only matters if the component is a form field.
-- It is fine, since both mean the control is active.
+- It only matters for form fields, since buttons and links show their state anyway.
+- It is fine, since both states tell the reader that the control is active.
+- A keyboard user cannot tell where they are, and focus must not need a pointer.
 
 <details>
 <summary>After your attempt</summary>
 
-A keyboard user cannot reliably tell where they are, and focus must not depend on a pointer being present. — Focus is the keyboard user’s cursor. If it is a faint variant of a mouse effect, they lose their place on the screen.
+It only matters for form fields, since buttons and links show their state anyway. — Every focusable control needs a visible focus state, including buttons and links.
 
-It only matters if the component is a form field. — Every focusable control needs a visible focus state, including buttons and links.
+It is fine, since both states tell the reader that the control is active. — They mean different things: hover is where the pointer is, focus is where the keyboard is. Conflating them costs the keyboard user their position.
 
-It is fine, since both mean the control is active. — They mean different things: hover is where the pointer is, focus is where the keyboard is. Conflating them costs the keyboard user their position.
+A keyboard user cannot tell where they are, and focus must not need a pointer. — Focus is the keyboard user’s cursor. If it is a faint variant of a mouse effect, they lose their place on the screen.
 
 Improve: Give focus its own token and appearance in step 3 and check it against every surface, then record the change in step 5.
 
@@ -5388,18 +5832,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 While building a state you needed a value the sheet does not have. What do you do?
 
-- Use the nearest existing token even if it is wrong.
-- Record it as a missing token and add it to the sheet, rather than inventing a value in place.
-- Pick a sensible value now and add it to the sheet later if it is reused.
+- Pick a sensible value now, and add it to the sheet later only if it is reused.
+- Record it as a missing token and add it to the sheet instead of inventing a value.
+- Use the nearest existing token, even if slightly wrong, to keep within the system.
 
 <details>
 <summary>After your attempt</summary>
 
-Use the nearest existing token even if it is wrong. — That hides a real gap behind a value that does not fit, and the mismatch will be blamed on the component.
+Pick a sensible value now, and add it to the sheet later only if it is reused. — “Later if reused” is how the twelve accidental gaps in the spacing lesson happened.
 
-Record it as a missing token and add it to the sheet, rather than inventing a value in place. — The invented value is invisible drift: it works here and diverges everywhere else. Recording it is how the sheet becomes complete.
+Record it as a missing token and add it to the sheet instead of inventing a value. — The invented value is invisible drift: it works here and diverges everywhere else. Recording it is how the sheet becomes complete.
 
-Pick a sensible value now and add it to the sheet later if it is reused. — “Later if reused” is how the twelve accidental gaps in the spacing lesson happened.
+Use the nearest existing token, even if slightly wrong, to keep within the system. — That hides a real gap behind a value that does not fit, and the mismatch will be blamed on the component.
 
 Improve: List every value you invented in the missing-tokens box in step 2, add them to the sheet, and note it in step 5.
 
@@ -5447,6 +5891,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A laundrette app has a “Start machine” button. When no machine is selected it is the normal button at 40 per cent opacity; hover makes it slightly lighter; keyboard focus also makes it slightly lighter; and while the machine starts, nothing changes on screen for about three seconds.
+
+**Task:** List the states this button really needs, and specify two of them properly, including what the reader is told. Give the reason for each.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Specifies only default and hover, keeps opacity for disabled, or treats focus as the same as hover.
+- Adequate: Names default, hover, focus, disabled and loading (and an error if starting fails); gives focus its own outline token distinct from hover; gives disabled its own tokens plus words such as “Choose a machine first”.
+- Strong: As adequate, plus a check or trade-off: measures the focus outline against each surface (at least 3:1), adds a loading message for the three-second wait, and notes that whether the disabled explanation is noticed needs a person.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -5540,7 +6010,7 @@ Adequate evidence: A focus appearance with its own token, visibly different from
 
 2 — Focus is distinct, tokenised and checked on each surface.
 
-3 — As adequate, and the focus indicator's own contrast against its adjacent colours is measured.
+3 — As adequate, and the focus indicator's own contrast against its adjacent colours is measured against the 3:1 non-text minimum.
 
 Repair: Specify a focus appearance that does not rely on the same signal as hover, then place the component on each surface it uses and confirm the indicator remains visible. Recheck: The focus specification and the per-surface check.
 
@@ -5644,7 +6114,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- A rebuilt workshop detail screen needed six values not on the token sheet — a focus colour on a dark surface, two spacing values for a dense metadata row, and three type sizes for a table. The heuristic review then found four issues, only one of which the visual refresh had addressed: the error message still appeared far from the field that caused it, which is a visibility-of-status problem no palette can fix. The write-up recorded one improvement, three unresolved issues and zero measured outcomes.
+- Made-up example: a rebuilt workshop detail screen needed six values not on the token sheet — a focus colour on a dark surface, two spacing values for a dense metadata row, and three type sizes for a table. The heuristic review then found four issues, only one of which the visual refresh had addressed: the error message still appeared far from the field that caused it, which is a visibility-of-status problem no palette can fix. The write-up recorded one improvement, three unresolved issues and zero measured outcomes.
 
 
 ### Choose where you will do the work
@@ -5666,7 +6136,7 @@ The rebuilt screen, and every place the sheet could not carry you.
 
 **Start here:** Put the original out of sight and rebuild from the sheet and the state table.
 
-**Enough:** The gap list is honest; a system that covered everything on its first outing is unlikely.
+**Enough:** The gap list is honest. A system that covered everything on its first outing is unlikely, so “none” needs the method beside it.
 
 **Token sheet:** The list of named values you built in lesson 8: every colour, size and space the system allows.
 
@@ -5688,11 +6158,11 @@ Write your answer for “Which Module 1 screen you rebuilt”. Use the task inst
 
 Section: practice-plan. Stable action: write-from-sheet-only.
 
-Every one of these is a gap in the system, not a failure of the screen.
+Every one of these is a gap in the system, not a failure of the screen. If nothing was missing, write “none” and how you kept the original out of sight.
 
 **Answer:** Anything you could not build from the sheet and component work alone
 
-Every one of these is a gap in the system, not a failure of the screen.
+Every one of these is a gap in the system, not a failure of the screen. If nothing was missing, write “none” and how you kept the original out of sight.
 
 
 ### Heuristic review of both versions
@@ -5798,21 +6268,21 @@ Three supplied sentences from the same made-up write-up. A: “Every text elemen
 
 Which sentence cannot be supported by anything in this module, and why?
 
-- None: all three follow from careful work.
-- B, because character counts vary by content.
-- A, because contrast measurements are only estimates.
-- C, because ease of use is a claim about people and nobody has used either version.
+- B, because a character count changes whenever the content or the font changes.
+- None of them: all three follow from careful, measured work in this module.
+- C, because ease of use is a claim about people, and nobody used either version.
+- A, because contrast measurements are estimates that vary from screen to screen.
 
 <details>
 <summary>After your attempt</summary>
 
-None: all three follow from careful work. — Careful work supports A and B. C requires evidence of a different kind entirely, and this module produced none of it.
+B, because a character count changes whenever the content or the font changes. — The count is of your real content, over three lines, and it is reported as such. It is a measurement with a stated method.
 
-B, because character counts vary by content. — The count is of your real content, over three lines, and it is reported as such. It is a measurement with a stated method.
+None of them: all three follow from careful, measured work in this module. — Careful work supports A and B. C requires evidence of a different kind entirely, and this module produced none of it.
 
-A, because contrast measurements are only estimates. — They are calculated from stated colour values, so within their scope they are exact. What they do not establish is readability in every condition.
+C, because ease of use is a claim about people, and nobody used either version. — A and B report measurements you took. C reports an outcome that would need a person attempting a task, which this module never did.
 
-C, because ease of use is a claim about people and nobody has used either version. — A and B report measurements you took. C reports an outcome that would need a person attempting a task, which this module never did.
+A, because contrast measurements are estimates that vary from screen to screen. — They are calculated from stated colour values, so within their scope they are exact. What they do not establish is readability in every condition.
 
 Sort your own sentences the same way: what you measured, and what would need a person.
 
@@ -5907,18 +6377,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your rebuilt screen is measurably more legible. May you say it is easier to use?
 
-- Yes, since legibility is a component of usability.
-- Yes, if the heuristics also improved.
-- No: legibility was measured, ease of use was not, and nobody has attempted a task on either version.
+- Only that it is more legible: nobody has tried a task on either version.
+- Yes, provided the heuristic review also found fewer problems in the rebuild.
+- It may, since legibility is one measurable part of how usable a screen is.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, since legibility is a component of usability. — It is a necessary condition and not the claim. A perfectly legible screen can still hide the price or omit a step.
+Only that it is more legible: nobody has tried a task on either version. — The measurements are real and they are about the surface. What a person can accomplish is a different kind of evidence, and this module collected none of it.
 
-Yes, if the heuristics also improved. — Heuristics identify risks by inspection. Improving against them is a reason to expect a better result, not a report of one.
+Yes, provided the heuristic review also found fewer problems in the rebuild. — Heuristics identify risks by inspection. Improving against them is a reason to expect a better result, not a report of one.
 
-No: legibility was measured, ease of use was not, and nobody has attempted a task on either version. — The measurements are real and they are about the surface. What a person can accomplish is a different kind of evidence, and this module collected none of it.
+It may, since legibility is one measurable part of how usable a screen is. — It is a necessary condition and not the claim. A perfectly legible screen can still hide the price or omit a step.
 
 Improve: Rewrite any outcome claim in step 3 as a measurement plus what would still need to be observed, then record it in step 5.
 
@@ -5937,18 +6407,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The heuristic review found a problem the rebuild did not fix. What should you do with it?
 
-- Fix it now, since the module is about improving the screen.
-- Record it as an unresolved problem the system could not address, so it is visible rather than lost.
-- Leave it out: the module was about visual foundations.
+- Leave it out of the write-up, since the module was about visual foundations.
+- Fix it now with another token, since the module is about improving the screen.
+- Record it as unresolved, outside what the system can fix, so it stays visible.
 
 <details>
 <summary>After your attempt</summary>
 
-Fix it now, since the module is about improving the screen. — Sometimes right, and a behaviour problem usually needs evidence about people rather than another token. Recording it points at the next work.
+Leave it out of the write-up, since the module was about visual foundations. — The critique step exists precisely to catch what the visual work could not reach. Omitting it makes the module look more successful than it was.
 
-Record it as an unresolved problem the system could not address, so it is visible rather than lost. — A design system fixes surfaces. Missing feedback, missing steps and unanswered questions about the reader survive it, and naming them is the useful output.
+Fix it now with another token, since the module is about improving the screen. — A behaviour problem usually needs evidence about people rather than another token. Recording it points at the next work.
 
-Leave it out: the module was about visual foundations. — The critique step exists precisely to catch what the visual work could not reach. Omitting it makes the module look more successful than it was.
+Record it as unresolved, outside what the system can fix, so it stays visible. — A design system fixes surfaces. Missing feedback, missing steps and unanswered questions about the reader survive it, and naming them is the useful output.
 
 Improve: Add anything the heuristics found and the rebuild did not fix to step 4, then record it in step 5.
 
@@ -5967,18 +6437,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You could not rebuild part of the screen from the sheet alone. What does that mean?
 
-- The component work from lesson 9 was incomplete.
-- The sheet has a gap; record it and add the specification rather than treating it as a failure of the rebuild.
-- The screen was too complex for a token system.
+- The lesson 9 component work failed, so it needs redoing before any rebuild.
+- The screen was too complex for a token system, so that part stays freehand.
+- A gap in the sheet: record it and add the missing specification to the sheet.
 
 <details>
 <summary>After your attempt</summary>
 
-The component work from lesson 9 was incomplete. — Possibly, and either way the answer is the same: name the missing specification and add it.
+The lesson 9 component work failed, so it needs redoing before any rebuild. — Redoing lesson 9 does not name what is missing. Whatever its source, the answer is to name the missing specification and add it to the sheet.
 
-The sheet has a gap; record it and add the specification rather than treating it as a failure of the rebuild. — The rebuild is the test of the sheet, so the gaps are its output. This is the same build-it test from lesson 8, run at full size.
+The screen was too complex for a token system, so that part stays freehand. — Complexity shows where the sheet is thin. A system that only covers simple screens is not finished.
 
-The screen was too complex for a token system. — Complexity shows where the sheet is thin. A system that only covers simple screens is not finished.
+A gap in the sheet: record it and add the missing specification to the sheet. — The rebuild is the test of the sheet, so the gaps are its output. This is the same build-it test from lesson 8, run at full size.
 
 Improve: List every place the sheet ran out in step 1 and add the missing specifications to the token sheet, then record it in step 5.
 
@@ -6026,6 +6496,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A designer refreshed a garden centre’s plant-care page with a new token sheet. Every text pair now passes its contrast threshold and the measure fell from 110 to 66 characters. Her write-up says: “The new page is clearer and will reduce calls to the help desk.” Nobody has used either version, and the page still never says whether plants can be delivered.
+
+**Task:** Rewrite her claim so that each part is supported, and name one problem the refresh could not fix. Explain why it lies outside visual craft.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps “clearer” and “will reduce calls” as findings, or lists only visual complaints as the unresolved problems.
+- Adequate: Keeps the measured craft claims (contrast thresholds met, a 66-character measure), turns the outcome claim into a question that needs people or data, and names the missing delivery information as a content or product gap no token can fix.
+- Strong: As adequate, plus a next check: a small task with a few people finding care steps and delivery terms, or a later look at help-desk call reasons, noting that a before-and-after comparison alone would not show cause.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -6089,7 +6585,7 @@ Adequate evidence: The rebuilt screen plus a numbered log of each value reached 
 
 1 — The sheet was used but exceptions were not logged.
 
-2 — Every exception is logged with its purpose.
+2 — Every exception is logged with its purpose, or the log states none with how the original was kept out of sight.
 
 3 — As adequate, and each logged exception is resolved into a token or explicitly rejected with a reason.
 

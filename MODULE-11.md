@@ -523,18 +523,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You have five barriers and four of them are about screen readers. What does that suggest?
 
-- That you walked the product asking about one assistive technology rather than asking who could not do this.
-- That screen readers really are where most accessibility problems are.
-- Nothing in particular — five barriers is five barriers.
+- That screen readers really are where most accessibility problems in a product sit.
+- That the walk looked for one assistive technology rather than asking who could not do this.
+- Nothing in particular: five real barriers are five real barriers, whatever their kind.
 
 <details>
 <summary>After your attempt</summary>
 
-That you walked the product asking about one assistive technology rather than asking who could not do this. — Screen readers are the part of accessibility most people have heard of, so attention goes there first. Most barriers in a typical product are met by people using none: small targets, invisible focus, colour-only status, time limits.
+That screen readers really are where most accessibility problems in a product sit. — They are where a particular kind of problem concentrates. Contrast, target size, keyboard routes and time limits affect far more people and appear in almost every product.
 
-That screen readers really are where most accessibility problems are. — They are where a particular kind of problem concentrates. Contrast, target size, keyboard routes and time limits affect far more people and appear in almost every product.
+That the walk looked for one assistive technology rather than asking who could not do this. — Screen readers are the part of accessibility most people have heard of, so attention goes there first. Most barriers in a typical product are met by people using none: small targets, invisible focus, colour-only status, time limits.
 
-Nothing in particular — five barriers is five barriers. — What the five are about tells you what question you were asking. Four of one kind usually means the walk was looking for a technology instead of a person.
+Nothing in particular: five real barriers are five real barriers, whatever their kind. — What the five are about tells you what question you were asking. Four of one kind usually means the walk was looking for a technology instead of a person.
 
 Improve: Walk the same task again asking about motor, cognitive and language differences, and replace one screen-reader barrier in step 2 with what that walk finds. Record the change in step 5.
 
@@ -553,18 +553,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 One of your barriers reads “the colour contrast is poor throughout”. Why is that weaker than it looks?
 
-- It is fine as it stands, because contrast is measurable.
-- It names no person, no task and no element, so nobody can fix it and nobody can check it.
-- Contrast belongs in a later lesson, so it should not be in this list.
+- It is fine as it stands, because contrast is measurable and can be checked later.
+- Contrast belongs to a later lesson in this module, so it should not be on this list.
+- It names no person, task or element, so nobody can fix it and nobody can check it.
 
 <details>
 <summary>After your attempt</summary>
 
-It is fine as it stands, because contrast is measurable. — Contrast is measurable, and this sentence measures nothing. The measurable version names an element and a ratio.
+It is fine as it stands, because contrast is measurable and can be checked later. — Contrast is measurable, and this sentence measures nothing. The measurable version names an element and a ratio.
 
-It names no person, no task and no element, so nobody can fix it and nobody can check it. — Throughout is the word doing the damage. It sounds comprehensive and it points at nothing, so it survives every round of fixes unchanged.
+Contrast belongs to a later lesson in this module, so it should not be on this list. — It belongs here if it stops someone. The problem is the writing, not the topic.
 
-Contrast belongs in a later lesson, so it should not be in this list. — It belongs here if it stops someone. The problem is the writing, not the topic.
+It names no person, task or element, so nobody can fix it and nobody can check it. — Throughout is the word doing the damage. It sounds comprehensive and it points at nothing, so it survives every round of fixes unchanged.
 
 Improve: Rewrite that barrier in step 2 naming one element, one task and what you actually saw. Record the change in step 5.
 
@@ -583,18 +583,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You ran the three situational tests and want to write “the product is accessible in daylight”. Is that allowed?
 
-- It is, since you actually went outside and it worked.
-- It is, as long as you add that more testing is needed.
-- It is not. You checked one task, on your device, with your eyes, and that is what you can say.
+- Only a narrower sentence is: one task, your device, your eyes, and what you actually saw.
+- It is allowed, since you went outside in bright daylight and the whole task worked for you there.
+- It is allowed, as long as the same sentence adds that more testing is still needed.
 
 <details>
 <summary>After your attempt</summary>
 
-It is, since you actually went outside and it worked. — It worked for you, on your screen, at your brightness, with your vision. Each of those is a condition on the claim, and the sentence drops all four.
+Only a narrower sentence is: one task, your device, your eyes, and what you actually saw. — The honest sentence is the narrow one: which task, which device, what you saw. It is smaller and it is defensible, and this module asks you to keep that boundary visible in every lesson.
 
-It is, as long as you add that more testing is needed. — A general claim followed by a caveat is still quoted as the general claim. Narrow the sentence itself rather than appending a disclaimer to it.
+It is allowed, since you went outside in bright daylight and the whole task worked for you there. — It worked for you, on your screen, at your brightness, with your vision. Each of those is a condition on the claim, and the sentence drops all four.
 
-It is not. You checked one task, on your device, with your eyes, and that is what you can say. — The honest sentence is the narrow one: which task, which device, what you saw. It is smaller and it is defensible, and this module asks you to keep that boundary visible in every lesson.
+It is allowed, as long as the same sentence adds that more testing is still needed. — A general claim followed by a caveat is still quoted as the general claim. Narrow the sentence itself rather than appending a disclaimer to it.
 
 Improve: Rewrite your situational lines in step 4 to say which task, which device and what you saw, then record the change in step 5.
 
@@ -646,15 +646,41 @@ Write your answer for “The one you had not considered before”. Use the task 
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a self-service photo-printing kiosk in a shopping centre shows its instructions in light grey text, takes payment only by tapping a card on a reader fixed at standing height, and times out after 30 seconds without a touch, deleting the chosen photos.
+
+**Task:** Write the one barrier you would fix first as a person, a situation and the design decision, and explain why it ranks first.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: A category such as disabled users cannot use it, or a repair such as make the text darker, with no person, task or decision.
+- Adequate: For example: a person using a wheelchair, paying at the kiosk, cannot reach the card reader because it is fixed at standing height. Ranked first because there is no other way to pay, so the task is blocked completely.
+- Strong: As adequate, plus the same decision blocks temporary and situational cases (someone with a pram or a broken arm), and the next check: whether any other payment route exists.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -1320,18 +1346,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A colleague suggests doing the accessibility audit at the end, once the design is finished. What is the strongest objection?
 
-- By then the expensive problems are structural, and the audit finds them when they are hardest to change.
-- The standard requires accessibility work to happen during design.
-- Audits are unreliable, so it is better to check things yourself.
+- Audits at any stage are unreliable, so it is better to check everything yourself.
+- By then the costly problems are structural, so they are found when hardest to change.
+- The standard itself requires accessibility work to take place during design, not after it.
 
 <details>
 <summary>After your attempt</summary>
 
-By then the expensive problems are structural, and the audit finds them when they are hardest to change. — A layout with nowhere to put a visible focus ring, or a flow that depends on hover, cannot be repaired by adjusting a colour. Mapping barriers to criteria during design costs an hour and changes what gets built.
+Audits at any stage are unreliable, so it is better to check everything yourself. — A good audit is more thorough than your own check. The problem is when it happens, not who does it.
 
-The standard requires accessibility work to happen during design. — The standard says what must be true of the result. It says nothing about when you do the work; the argument is practical rather than required.
+By then the costly problems are structural, so they are found when hardest to change. — A layout with nowhere to put a visible focus ring, or a flow that depends on hover, cannot be repaired by adjusting a colour. Mapping barriers to criteria during design costs an hour and changes what gets built.
 
-Audits are unreliable, so it is better to check things yourself. — A good audit is more thorough than your own check. The problem is when it happens, not who does it.
+The standard itself requires accessibility work to take place during design, not after it. — The standard says what must be true of the result. It says nothing about when you do the work; the argument is practical rather than required.
 
 Improve: Look at your translations in step 3. Any change that would need the layout rebuilt is a structural one — mark it as such, and record the change in step 5.
 
@@ -1350,18 +1376,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You have read five criteria and written what each means for your screens. Can you now say the product meets level AA?
 
-- It cannot be said. You mapped five barriers, and conformance is a claim about every criterion in a tested build.
-- It can, for those five criteria at least.
-- It can, provided you add that testing is still to come.
+- Conformance covers every criterion at the level in a tested build, so it cannot be said.
+- It can be said for those five criteria at least, since each one is now mapped.
+- It can, provided the same sentence adds that testing of the build is still to come.
 
 <details>
 <summary>After your attempt</summary>
 
-It cannot be said. You mapped five barriers, and conformance is a claim about every criterion in a tested build. — Reading is not testing, five is not all of them, and a mapping made during design describes intent. The honest sentence names what you mapped and what remains untested.
+Conformance covers every criterion at the level in a tested build, so it cannot be said. — Reading is not testing, five is not all of them, and a mapping made during design describes intent. The honest sentence names what you mapped and what remains untested.
 
-It can, for those five criteria at least. — Even for those five it is a design intention rather than a tested result. Nothing has been built and checked against them yet.
+It can be said for those five criteria at least, since each one is now mapped. — Even for those five it is a design intention rather than a tested result. Nothing has been built and checked against them yet.
 
-It can, provided you add that testing is still to come. — A conformance claim with a caveat attached is still repeated as a conformance claim. Write the narrow sentence instead.
+It can, provided the same sentence adds that testing of the build is still to come. — A conformance claim with a caveat attached is still repeated as a conformance claim. Write the narrow sentence instead.
 
 Improve: Rewrite your boundary sentence in step 5 so it names the number of criteria mapped and says the build is untested, then record the change.
 
@@ -1380,18 +1406,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 One of your barriers has no matching criterion. What should you do with it?
 
-- Find the closest criterion and map it there.
-- Record it as a product requirement of your own, marked as uncovered by the standard.
-- Drop it, since the module is about the standard.
+- Record it as your own product requirement, marked as not covered by the standard.
+- Drop it from the list, since this module is about meeting the standard’s criteria.
+- Map it to the closest criterion, so every barrier stays traceable to the standard.
 
 <details>
 <summary>After your attempt</summary>
 
-Find the closest criterion and map it there. — A stretched mapping hides the barrier inside a criterion that does not describe it, and the change you actually need disappears from the list.
+Record it as your own product requirement, marked as not covered by the standard. — The standard is a floor and it does not cover everything that excludes people. A date format nobody in your audience reads is a real barrier with no criterion, and it is still yours to fix.
 
-Record it as a product requirement of your own, marked as uncovered by the standard. — The standard is a floor and it does not cover everything that excludes people. A date format nobody in your audience reads is a real barrier with no criterion, and it is still yours to fix.
+Drop it from the list, since this module is about meeting the standard’s criteria. — The module starts from barriers precisely so the standard does not become the limit of the work. The barrier stays.
 
-Drop it, since the module is about the standard. — The module starts from barriers precisely so the standard does not become the limit of the work. The barrier stays.
+Map it to the closest criterion, so every barrier stays traceable to the standard. — A stretched mapping hides the barrier inside a criterion that does not describe it, and the change you actually need disappears from the list.
 
 Improve: Move any stretched mapping into the uncovered field in step 2 and write what you will do about it instead. Record the change in step 5.
 
@@ -1438,15 +1464,41 @@ Example (made up): I have read five criteria and written what each means here. N
 </details>
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a recipe website has a cooking mode that reads each step aloud and moves to the next step automatically after 20 seconds, with no way to pause. Each step’s timer is shown only as a shrinking coloured ring.
+
+**Task:** Choose the principle and criterion you would look up first for the automatic advance, and explain what meeting it would mean on this site.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Copies criterion text without naming a change, or says the site conforms once the mapping is written.
+- Adequate: Operable; timing adjustable (2.2.1) or pause, stop, hide (2.2.2). Meeting it means a visible, keyboard-reachable pause, or a setting to turn the advance off or lengthen it.
+- Strong: As adequate, plus the coloured ring mapped separately to use of colour (1.4.1, perceivable), and a sentence saying the mapping is design intent rather than tested conformance.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -1926,22 +1978,22 @@ Now read your own two outlines and mark each heading with one of the three. Anyt
 
 Section: practice-plan. Stable action: write-level-fixes.
 
-Look for more than one page title, and for a level that jumps from one to three.
+Look for more than one page title, and for a level that jumps from one to three. If nothing needed changing, write that and what you checked.
 
 **Answer:** Every level you changed, and why
 
-Look for more than one page title, and for a level that jumps from one to three.
+Look for more than one page title, and for a level that jumps from one to three. If nothing needed changing, write that and what you checked.
 
 
 ### Every heading you rewrote because it described nothing
 
 Section: practice-plan. Stable action: write-heading-rewrites.
 
-Write your answer for “Every heading you rewrote because it described nothing”. Use the task instructions below to decide what to include.
+If none needed rewriting, say so and name the headings you tested.
 
 **Answer:** Every heading you rewrote because it described nothing
 
-
+If none needed rewriting, say so and name the headings you tested.
 
 <details>
 <summary>Example</summary>
@@ -2059,11 +2111,11 @@ Not how it looks. What order would somebody meet it in if they met one thing at 
 
 Section: practice-plan. Stable action: write-order-mismatch.
 
-Write your answer for “Every place the content order differs from the visual order, and what you did”. Use the task instructions below to decide what to include.
+If the two orders already match, write that and how you checked; a clean result counts.
 
 **Answer:** Every place the content order differs from the visual order, and what you did
 
-
+If the two orders already match, write that and how you checked; a clean result counts.
 
 <details>
 <summary>Example</summary>
@@ -2081,18 +2133,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your designer instinct says the section heading should be large, so you set it as a page title. What is wrong with that?
 
-- Nothing, as long as the visual hierarchy is clear.
-- The heading should simply be made smaller.
-- Level says where you are in the structure; size says what to look at. Tying them together produces several page titles and no outline.
+- Nothing, as long as the visual hierarchy on the screen still reads clearly to the eye.
+- The heading should simply be made smaller, so its size matches its level again.
+- Level marks position in the structure and size draws the eye; tying them makes several titles.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing, as long as the visual hierarchy is clear. — The visual hierarchy is only one of the two hierarchies on the screen. The other one is what somebody hears, and it is currently wrong.
+Nothing, as long as the visual hierarchy on the screen still reads clearly to the eye. — The visual hierarchy is only one of the two hierarchies on the screen. The other one is what somebody hears, and it is currently wrong.
 
-The heading should simply be made smaller. — That fixes the level by damaging the design. The two decisions are separate: keep the size and change the level.
+The heading should simply be made smaller, so its size matches its level again. — That fixes the level by damaging the design. The two decisions are separate: keep the size and change the level.
 
-Level says where you are in the structure; size says what to look at. Tying them together produces several page titles and no outline. — A person navigating by structure hears each page title as a new place. Three of them on one screen means the screen has no shape at all, however well it reads visually.
+Level marks position in the structure and size draws the eye; tying them makes several titles. — A person navigating by structure hears each page title as a new place. Three of them on one screen means the screen has no shape at all, however well it reads visually.
 
 Improve: Check both outlines in step 1 for more than one page title, correct them in step 2, and record the change in step 5.
 
@@ -2111,18 +2163,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You plan to leave the heading levels to the developer, who will see the visual design. What will happen?
 
-- They will ask, since it is ambiguous.
-- They will infer level from size, which is the mistake you just spent this lesson correcting.
-- It will be fine, because developers know the structure rules.
+- They will ask you about each heading, since heading levels are ambiguous from a picture alone.
+- They will most likely infer level from size, the mistake this lesson has just corrected.
+- It will be fine, because developers already know the heading structure rules well.
 
 <details>
 <summary>After your attempt</summary>
 
-They will ask, since it is ambiguous. — It does not look ambiguous from a visual design. It looks decided, which is why nobody asks.
+They will ask you about each heading, since heading levels are ambiguous from a picture alone. — It does not look ambiguous from a visual design. It looks decided, which is why nobody asks.
 
-They will infer level from size, which is the mistake you just spent this lesson correcting. — There is no other information available to them. Heading level is a decision about hierarchy, so it belongs with the screen that states the hierarchy.
+They will most likely infer level from size, the mistake this lesson has just corrected. — There is no other information available to them. Heading level is a decision about hierarchy, so it belongs with the screen that states the hierarchy.
 
-It will be fine, because developers know the structure rules. — Knowing the rules does not tell them which of your sections belongs inside which. Only the design says that.
+It will be fine, because developers already know the heading structure rules well. — Knowing the rules does not tell them which of your sections belongs inside which. Only the design says that.
 
 Improve: Add the level beside every heading in both outlines in step 1, so the outline itself is the specification. Record the change in step 5.
 
@@ -2141,18 +2193,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You read the headings to somebody and they described the page almost correctly, missing one section. What is the useful response?
 
-- Rewrite the heading for the section they missed, since that is exactly what the check is for.
-- Nothing much — one miss out of five is a good result.
-- Read it to somebody else to see whether they miss the same one.
+- Rewrite the heading for the section they missed; that miss is what the check is for.
+- Read the headings to someone else first, to see whether they also miss the same section.
+- Leave the outline as it is, since one miss out of five sections is a good result.
 
 <details>
 <summary>After your attempt</summary>
 
-Rewrite the heading for the section they missed, since that is exactly what the check is for. — Almost correct is the normal result, and the miss is the finding. One rewritten heading is a real improvement you would not have found by reading it yourself.
+Rewrite the heading for the section they missed; that miss is what the check is for. — Almost correct is the normal result, and the miss is the finding. One rewritten heading is a real improvement you would not have found by reading it yourself.
 
-Nothing much — one miss out of five is a good result. — It is a good result and it still names the heading that is not working. The check has done its job and you would be discarding the answer.
+Read the headings to someone else first, to see whether they also miss the same section. — A second reading is useful later. It is not a reason to leave a heading you now know did not convey its section.
 
-Read it to somebody else to see whether they miss the same one. — A second reading is useful later. It is not a reason to leave a heading you now know did not convey its section.
+Leave the outline as it is, since one miss out of five sections is a good result. — It is a good result and it still names the heading that is not working. The check has done its job and you would be discarding the answer.
 
 Improve: Rewrite the heading they missed, add it to the rewrites field in step 5, and record the change.
 
@@ -2169,7 +2221,7 @@ Section: practice. Stable action: step-5-brief.
 
 A record of reading only the headings aloud, what the listener said the page contained, and what you rewrote.
 
-- Read only the headings to another person and ask what the page contains.
+- Read only the headings to another person, or to yourself if nobody is free, and ask what the page contains.
 - Rewrite anything they cannot infer.
 - Save the outlines, regions and order notes.
 
@@ -2186,11 +2238,11 @@ A record of reading only the headings aloud, what the listener said the page con
 
 Section: practice. Stable action: write-aloud-who.
 
-If nobody was available, read them aloud yourself, write down what they suggest, and say so here. That is an honest result.
+If nobody was available, read them aloud yourself, write down what they suggest, and say so here. That is an honest result. Name a role, such as a friend or a neighbour, rather than a person.
 
 **Answer:** Who you read the headings to, or how you ran it alone
 
-If nobody was available, read them aloud yourself, write down what they suggest, and say so here. That is an honest result.
+If nobody was available, read them aloud yourself, write down what they suggest, and say so here. That is an honest result. Name a role, such as a friend or a neighbour, rather than a person.
 
 
 ### What they said the page contains
@@ -2215,15 +2267,41 @@ Write your answer for “What you rewrote afterwards”. Use the task instructio
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a council Report a pothole page has five headings, all set as level one because they look big: Report a pothole, Where is it?, Details, Your contact details, Submit. On wide screens a map sits in a column to the right, but in the page’s order it comes after the whole form.
+
+**Task:** Decide one structural fix you would make first, and explain what a person moving by headings or in reading order gains.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Makes the headings smaller to fix their level, or calls the map placement fine because it looks right.
+- Adequate: One page title with the rest at level two and Details renamed to what it holds; or the map moved in the reading order to where it is needed. Explains that the outline and the order are what a person navigating that way actually meets.
+- Strong: As adequate, plus checking by reading the headings alone and writing the content order out, and the remaining question of whether Submit should be a heading at all.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -2316,21 +2394,21 @@ Adequate evidence: A written content order compared against the visual order, wi
 
 1 — Examined without fixing a known mismatch.
 
-2 — Checked and mismatches corrected.
+2 — Checked, with mismatches corrected or a clean result recorded.
 
 3 — As adequate, and a layout was changed rather than patched to make the orders agree.
 
 Repair: Write the content order as a numbered list and walk the screen visually alongside it. Recheck: The order comparison.
 
-**The read-aloud check was run and changed something**
+**The read-aloud check was run and its result recorded**
 
-Adequate evidence: A record of reading headings alone to someone, with resulting rewrites.
+Adequate evidence: A record of reading the headings alone, what they conveyed, and any rewrites; a clean result counts when it is recorded.
 
 0 — Not run.
 
-1 — Run alone with no changes.
+1 — Run, with nothing recorded about what the headings conveyed.
 
-2 — Run with another person and rewrites recorded.
+2 — Run with another person, or alone and labelled as a solo check, with the result and any rewrites recorded.
 
 3 — As adequate, and the listener's summary is quoted beside the outline.
 
@@ -2346,7 +2424,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 - Headings are correctly nested and descriptive
 - Regions are named and main content is directly reachable
 - Reading order matches visual order
-- The read-aloud check was run and changed something
+- The read-aloud check was run and its result recorded
 
 <details>
 <summary>Reading, video and deeper explanation</summary>
@@ -2382,7 +2460,7 @@ Accessible design removes barriers that stop people from perceiving, understandi
 **Words you will use**
 
 - **Contrast ratio:** A number from 1 to 21 comparing how light the text is against how light its background is. It is calculated, not judged by eye.
-- **Quiet text:** Captions, placeholder text, helper lines and disabled labels. They are set pale on purpose, which is exactly why they fail most often.
+- **Quiet text:** Captions, placeholder text and helper lines. They are set pale on purpose, which is exactly why they fail most often. Disabled labels are pale too, and the criterion exempts them.
 - **Threshold:** The ratio a pair has to reach. Larger and heavier text is allowed a lower one, so the size has to be recorded beside the number.
 
 **Quick example.** Made-up example. Measuring the text on a tool-library card, and listing only the text I had designed on purpose. Six pairs: the title, the body, the two headings, the button label and the price. All six passed comfortably, and I nearly wrote that the screen was fine.
@@ -2403,11 +2481,11 @@ Section: learn. Stable action: learn-1.
 Measure contrast; do not judge it by eye under studio lighting.
 
 
-### Quiet text — captions, placeholders, disabled labels — fails most often
+### Quiet text — captions, placeholders, helper lines — fails most often
 
 Section: learn. Stable action: learn-2.
 
-Quiet text — captions, placeholders, disabled labels — fails most often.
+Quiet text — captions, placeholders, helper lines — fails most often. Text in a disabled control is exempt from the ratio.
 
 
 ### Enlarging text must reflow the layout, not clip or scroll it sideways
@@ -2437,7 +2515,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Nine text pairs were measured. Three failed: the caption at 3.1:1, the placeholder at 2.8:1 and the disabled button label at 2.4:1. The caption was darkened; the placeholder was replaced with a permanent hint under the label, removing the problem instead of repairing it; the disabled label was given a stronger colour and a written explanation beside it, since a disabled control with unreadable text tells nobody anything. At 200 per cent text the price panel clipped its last line and the header wrapped over the logo; both were fixed by allowing the containers to grow. Line length on the description exceeded ninety characters at wide widths and was capped.
+- Nine text pairs were measured. Two failed: the caption at 3.1:1 and the placeholder at 2.8:1. The disabled button label measured 2.4:1 and was recorded as exempt, because the criterion sets no requirement for inactive controls. The caption was darkened; the placeholder was replaced with a permanent hint under the label, removing the problem instead of repairing it. As a separate design preference, a readable line saying why the button was unavailable was added beside it, and that line was measured above 4.5:1. At 200 per cent text the price panel clipped its last line and the header wrapped over the logo; both were fixed by allowing the containers to grow. Line length on the description exceeded ninety characters at wide widths and was capped.
 
 
 ### Choose where you will do the work
@@ -2457,7 +2535,7 @@ Every text-on-surface pair listed, each with a measured ratio, and the failing o
 
 - List every text-on-surface pair, including quiet text.
 - Measure each ratio and record it in the token sheet.
-- Mark every pair below the relevant threshold.
+- Mark every pair below its threshold, and mark exempt pairs separately.
 
 **Start here:** Take one screen and go corner to corner, writing down every place text meets a surface before measuring anything.
 
@@ -2465,7 +2543,7 @@ Every text-on-surface pair listed, each with a measured ratio, and the failing o
 
 **Contrast ratio:** A number from 1 to 21 comparing how light the text is against how light its background is. It is calculated, not judged by eye.
 
-**Quiet text:** Captions, placeholder text, helper lines and disabled labels. They are set pale on purpose, which is exactly why they fail most often.
+**Quiet text:** Captions, placeholder text and helper lines. They are set pale on purpose, which is exactly why they fail most often. Disabled labels are pale too, and the criterion exempts them.
 
 **Threshold:** The ratio a pair has to reach. Larger and heavier text is allowed a lower one, so the size has to be recorded beside the number.
 
@@ -2482,7 +2560,7 @@ Made-up example. Measuring the text on a tool-library card, and listing only the
 
 **What I had left out:** Placeholder text in the search box. Helper text under the date field. The disabled label on the unavailable button. The caption under the photograph. None of them felt like text I had designed; all of them are text somebody reads.
 
-**What the numbers were:** Placeholder 2.8 to 1, helper 3.4 to 1, disabled label 2.4 to 1, caption 3.1 to 1. Four failures, none of them in my original list.
+**What the numbers were:** Placeholder 2.8 to 1, helper 3.4 to 1, caption 3.1 to 1: three failures, none of them in my original list. The disabled label measured 2.4 to 1 and is exempt, because the criterion sets no requirement for inactive controls; I recorded it as exempt rather than as passing.
 
 **What I changed about the method:** I stopped listing text and started listing places text sits on a surface, going through the screen area by area rather than from memory.
 
@@ -2497,11 +2575,11 @@ Made-up example. Measuring the text on a tool-library card, and listing only the
 
 Section: practice-plan. Stable action: write-pairs-list.
 
-Body, headings, captions, placeholder text, disabled labels, text over images, text inside buttons, and anything in a coloured panel.
+Body, headings, captions, placeholder text, disabled labels, text over images, text inside buttons, and anything in a coloured panel. Mark the exempt ones: text in a disabled control, pure decoration and logos.
 
 **Answer:** Every place text sits on a surface, including the quiet text
 
-Body, headings, captions, placeholder text, disabled labels, text over images, text inside buttons, and anything in a coloured panel.
+Body, headings, captions, placeholder text, disabled labels, text over images, text inside buttons, and anything in a coloured panel. Mark the exempt ones: text in a disabled control, pure decoration and logos.
 
 
 ### The measured ratio for each pair
@@ -2517,7 +2595,7 @@ Write your answer for “The measured ratio for each pair”. Use the task instr
 <details>
 <summary>Example</summary>
 
-Example (made up): caption on card 3.1 to 1 · placeholder in search 2.8 to 1 · disabled button label 2.4 to 1 · body on white 12.6 to 1.
+Example (made up): caption on card 3.1 to 1 · placeholder in search 2.8 to 1 · disabled button label 2.4 to 1 (exempt) · body on white 12.6 to 1.
 
 </details>
 
@@ -2526,11 +2604,24 @@ Example (made up): caption on card 3.1 to 1 · placeholder in search 2.8 to 1 ·
 
 Section: practice-plan. Stable action: write-failing.
 
-The threshold depends on size and weight, so write the size beside each failing pair.
+The threshold is 4.5 to 1 for ordinary text and 3 to 1 for large text, so write the size beside each failing pair. Exempt pairs are not failing.
 
 **Answer:** The pairs below the threshold that applies to them
 
-The threshold depends on size and weight, so write the size beside each failing pair.
+The threshold is 4.5 to 1 for ordinary text and 3 to 1 for large text, so write the size beside each failing pair. Exempt pairs are not failing.
+
+
+### Pairs the criterion exempts (inactive controls, pure decoration, logos), and any you chose to strengthen anyway, with your reason
+
+Section: practice-plan. Stable action: write-exempt-pairs.
+
+Exempt means no contrast requirement applies. Strengthening one is a design preference you may choose, not a repair you owe. A line explaining why a control is disabled is information, so it must meet the ratio.
+
+**Answer:** Pairs the criterion exempts (inactive controls, pure decoration, logos), and any you chose to strengthen anyway, with your reason
+
+Optional: may be left empty.
+
+Exempt means no contrast requirement applies. Strengthening one is a design preference you may choose, not a repair you owe. A line explaining why a control is disabled is information, so it must meet the ratio.
 
 
 ### Repair the failures
@@ -2549,14 +2640,14 @@ Each failing pair repaired, with the new ratio written beside the old one.
 
 **Repair by removal:** Taking the text away rather than darkening it. It is the right answer when the text was decorative, or when a permanent label can replace a placeholder.
 
-**Disabled label:** The text on a control that cannot be used. If it is unreadable, the person cannot tell what they are not allowed to do, which is worse than no control at all.
+**Disabled label:** The text on a control that cannot be used right now. The contrast criterion sets no requirement for it, so a pale one is not a failure. Making it readable, or adding a line that explains it, is a design choice; that explaining line is information and must meet the ratio.
 
 
 ### Try the distinction · 1 of 5
 
 Section: practice-plan. Stable action: step-2-sort-1.
 
-Five failing pairs from a made up tool-library screen. For each one, decide what the right repair is.
+Five pale text pairs from a made up tool-library screen, each below 4.5 to 1 at body size. For each one, decide what it needs.
 
 The caption under the photograph, at 3.1 to 1, which says what the photograph shows.
 
@@ -2582,7 +2673,7 @@ Now decide the repair for each of your own failing pairs, and write the new rati
 
 Section: practice-plan. Stable action: step-2-sort-2.
 
-Five failing pairs from a made up tool-library screen. For each one, decide what the right repair is.
+Five pale text pairs from a made up tool-library screen, each below 4.5 to 1 at body size. For each one, decide what it needs.
 
 Placeholder text inside the search box, at 2.8 to 1, which is the only thing telling anyone what to search for.
 
@@ -2608,7 +2699,7 @@ Now decide the repair for each of your own failing pairs, and write the new rati
 
 Section: practice-plan. Stable action: step-2-sort-3.
 
-Five failing pairs from a made up tool-library screen. For each one, decide what the right repair is.
+Five pale text pairs from a made up tool-library screen, each below 4.5 to 1 at body size. For each one, decide what it needs.
 
 A pale word DRAFT across the middle of the page, at 1.4 to 1, left over from an earlier version.
 
@@ -2623,7 +2714,7 @@ darken the text — Darkening it makes a decorative leftover more prominent than
 
 replace it with something permanent — There is nothing to replace it with. It is not telling a reader anything they need.
 
-remove it — Decorative text that fails is the easy case. Take it out and the failure and the clutter both go.
+remove it — It tells a reader nothing true. Pure decoration has no contrast requirement, so this is clutter rather than a contrast failure, and taking it out is still the right repair.
 
 Now decide the repair for each of your own failing pairs, and write the new ratio beside the old one.
 
@@ -2634,9 +2725,9 @@ Now decide the repair for each of your own failing pairs, and write the new rati
 
 Section: practice-plan. Stable action: step-2-sort-4.
 
-Five failing pairs from a made up tool-library screen. For each one, decide what the right repair is.
+Five pale text pairs from a made up tool-library screen, each below 4.5 to 1 at body size. For each one, decide what it needs.
 
-The label on a Reserve button that cannot be pressed because the class is full, at 2.4 to 1.
+The label on a Reserve button that cannot be pressed because the drill is out on loan, at 2.4 to 1. Nothing else on the card says it is out on loan.
 
 - darken the text
 - replace it with something permanent
@@ -2645,11 +2736,11 @@ The label on a Reserve button that cannot be pressed because the class is full, 
 <details>
 <summary>After your attempt</summary>
 
-darken the text — A person has to be able to read what they are not allowed to do, and why. Disabled is a state, not a licence to be unreadable, and a written reason beside it helps more still.
+darken the text — Allowed, and not required: the contrast criterion sets no requirement for text inside an inactive control. Darkening it can make the button look pressable, and it still does not say why it is unavailable.
 
-replace it with something permanent — The label is already permanent. What is wrong with it is the colour.
+replace it with something permanent — The pale label is exempt from the ratio, so it is not the failure. The missing reason is: a readable line such as On loan until Friday says what the button cannot. That line is information, so it must meet 4.5 to 1.
 
-remove it — A control with no readable label tells nobody anything. The person cannot even tell what has been disabled.
+remove it — Removing the button removes the only hint that borrowing happens here. The state needs explaining in readable text, not hiding.
 
 Now decide the repair for each of your own failing pairs, and write the new ratio beside the old one.
 
@@ -2660,7 +2751,7 @@ Now decide the repair for each of your own failing pairs, and write the new rati
 
 Section: practice-plan. Stable action: step-2-sort-5.
 
-Five failing pairs from a made up tool-library screen. For each one, decide what the right repair is.
+Five pale text pairs from a made up tool-library screen, each below 4.5 to 1 at body size. For each one, decide what it needs.
 
 Helper text under the date field, at 3.4 to 1, repeating the label in different words.
 
@@ -2686,11 +2777,11 @@ Now decide the repair for each of your own failing pairs, and write the new rati
 
 Section: practice-plan. Stable action: write-repairs.
 
-Darken it, replace it, or remove it. Removing decorative text is a repair; dimming meaningful text is not.
+Darken it, replace it, or remove it. Removing decorative text is a repair; dimming meaningful text is not. If nothing failed, write that and how you measured.
 
 **Answer:** What you did to each failing pair
 
-Darken it, replace it, or remove it. Removing decorative text is a repair; dimming meaningful text is not.
+Darken it, replace it, or remove it. Removing decorative text is a repair; dimming meaningful text is not. If nothing failed, write that and how you measured.
 
 
 ### The new ratio beside the old one for each repair
@@ -2768,22 +2859,22 @@ Example (made up): browser text size set to 200 per cent on my laptop, then the 
 
 Section: practice-plan. Stable action: write-breakages.
 
-Write your answer for “Every clip, overlap, truncation and sideways scroll you saw”. Use the task instructions below to decide what to include.
+If nothing broke, write that and which screens you checked; a clean result counts.
 
 **Answer:** Every clip, overlap, truncation and sideways scroll you saw
 
-
+If nothing broke, write that and which screens you checked; a clean result counts.
 
 
 ### What you changed, and what the container does now
 
 Section: practice-plan. Stable action: write-enlarge-fixes.
 
-Let the container grow. Shrinking the text back is not a fix; it is undoing the test.
+Let the container grow. Shrinking the text back is not a fix; it is undoing the test. If nothing broke, write none needed.
 
 **Answer:** What you changed, and what the container does now
 
-Let the container grow. Shrinking the text back is not a fix; it is undoing the test.
+Let the container grow. Shrinking the text back is not a fix; it is undoing the test. If nothing broke, write none needed.
 
 
 ### Check reading comfort
@@ -2846,18 +2937,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Every pair passes its ratio. Can you say the text on this screen is fine?
 
-- It can, because the ratio is the actual standard.
-- It can for body text, though headings need a separate check.
-- It cannot be said. The ratio covers one colour on another at a size, and says nothing about thin type, long lines, or text over a photograph.
+- Only the contrast floor is met; thin type, long lines and text on photos sit outside it.
+- It can be said, because the ratio is the actual requirement the text has to meet.
+- It can for body text, though the headings still need a separate contrast check.
 
 <details>
 <summary>After your attempt</summary>
 
-It can, because the ratio is the actual standard. — It is the criterion, which is the minimum somebody may ship. Comfort, line length and weight sit outside it and still decide whether the text gets read.
+Only the contrast floor is met; thin type, long lines and text on photos sit outside it. — The ratio is a floor. A screen of 95-character lines in a hairline weight passes every check and is still tiring to read, and text over an image has a different ratio in every part of it.
 
-It can for body text, though headings need a separate check. — Headings are usually the safest case, because larger text is allowed a lower threshold and is easier to read anyway. The risk sits with the small, thin and quiet text.
+It can be said, because the ratio is the actual requirement the text has to meet. — It is the criterion, which is the minimum somebody may ship. Comfort, line length and weight sit outside it and still decide whether the text gets read.
 
-It cannot be said. The ratio covers one colour on another at a size, and says nothing about thin type, long lines, or text over a photograph. — The ratio is a floor. A screen of 95-character lines in a hairline weight passes every check and is still tiring to read, and text over an image has a different ratio in every part of the image.
+It can for body text, though the headings still need a separate contrast check. — Headings are usually the safest case, because larger text is allowed a lower threshold and is easier to read anyway. The risk sits with the small, thin and quiet text.
 
 Improve: Add the line length and the lightest font weight you use to your comfort notes in step 4, and record the change in step 5.
 
@@ -2874,20 +2965,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-At 200 per cent the price panel clips. The quickest fix is to reduce that panel’s text size. Why is that the wrong fix?
+At 200 per cent the price panel clips. The quickest fix is to reduce that panel’s text size. Is that a good fix?
 
-- It is fine as an interim fix while the layout is rebuilt.
-- It is acceptable if the panel is secondary content.
-- It takes the enlargement away from the person who asked for it, and hides the layout problem instead of fixing it.
+- It is acceptable when the panel is secondary content that few people need to read.
+- It is fine as an interim fix while the layout is rebuilt to let the panel grow.
+- It takes back the enlargement the person chose and leaves the fixed-height box in place.
 
 <details>
 <summary>After your attempt</summary>
 
-It is fine as an interim fix while the layout is rebuilt. — An interim fix that looks correct in a screenshot tends to become the permanent one, because nothing remains visibly broken to prompt the rebuild.
+It is acceptable when the panel is secondary content that few people need to read. — Secondary content still has to be readable, and price is rarely secondary. The container is the thing that is wrong.
 
-It is acceptable if the panel is secondary content. — Secondary content still has to be readable, and price is rarely secondary. The container is the thing that is wrong.
+It is fine as an interim fix while the layout is rebuilt to let the panel grow. — An interim fix that looks correct in a screenshot tends to become the permanent one, because nothing remains visibly broken to prompt the rebuild.
 
-It takes the enlargement away from the person who asked for it, and hides the layout problem instead of fixing it. — The person set 200 per cent because that is what they can read. Overriding it in one panel means the panel is now the least readable thing on the screen, and the fixed-height container is still there.
+It takes back the enlargement the person chose and leaves the fixed-height box in place. — The person set 200 per cent because that is what they can read. Overriding it in one panel means the panel is now the least readable thing on the screen, and the fixed-height container is still there.
 
 Improve: Change that container in step 3 so it grows with its content, and write what it does now. Record the change in step 5.
 
@@ -2906,18 +2997,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A placeholder fails at 2.8 to 1 and you darken it until it passes. What is still wrong?
 
-- It still disappears the moment anybody types, so the instruction is gone exactly when it is needed.
-- Nothing, once it passes the threshold.
-- Darkened placeholder text now looks like a typed value.
+- It still vanishes the moment anybody types, so the instruction goes when it is needed.
+- Only that darker placeholder text could be mistaken for a value already typed.
+- Nothing further, once the darkened placeholder passes the contrast threshold.
 
 <details>
 <summary>After your attempt</summary>
 
-It still disappears the moment anybody types, so the instruction is gone exactly when it is needed. — Contrast was the measurable half of the problem. A placeholder is a label that vanishes on use, and that half does not show up in any ratio.
+It still vanishes the moment anybody types, so the instruction goes when it is needed. — Contrast was the measurable half of the problem. A placeholder is a label that vanishes on use, and that half does not show up in any ratio.
 
-Nothing, once it passes the threshold. — It passes, and it is still the only place the instruction lives. Anyone who pauses mid-entry has nothing to look at.
+Only that darker placeholder text could be mistaken for a value already typed. — That is a real side effect, and it is not the only problem: the instruction still disappears on the first keystroke. Both come from using a placeholder to carry an instruction.
 
-Darkened placeholder text now looks like a typed value. — That is a genuine second problem and it is a symptom. Both come from using a placeholder to carry an instruction.
+Nothing further, once the darkened placeholder passes the contrast threshold. — It passes, and it is still the only place the instruction lives. Anyone who pauses mid-entry has nothing to look at.
 
 Improve: Move that instruction to a permanent label or hint in step 2, record the repair, and note the change in step 5.
 
@@ -2969,15 +3060,41 @@ An honest unfixed line with a reason is a result. A quiet omission is not.
 An honest unfixed line with a reason is a result. A quiet omission is not.
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a library renewal page shows a Renew button greyed out at 2.1 to 1 when an item cannot be renewed, a small grey hint under the card-number field at 3.2 to 1, and the library logo in pale gold at 1.8 to 1.
+
+**Task:** Decide which of the three must be repaired to meet contrast (minimum), and explain why each of the others is or is not covered.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Says all three fail, or treats darkening the greyed-out button as a requirement.
+- Adequate: Only the hint must reach 4.5 to 1, because it is ordinary small text. The inactive button and the logo are exempt from the criterion; making the disabled state readable is a design choice, not a repair owed.
+- Strong: As adequate, plus a readable line saying why renewal is unavailable, which then must meet 4.5 to 1 itself, and a note that passing the ratio is a floor (size, weight, light).
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -3004,7 +3121,7 @@ What I am trying to do: Measure contrast for every text pair in your design, tes
 
 Key idea or terms:
 Contrast ratio: A number from 1 to 21 comparing how light the text is against how light its background is. It is calculated, not judged by eye.
-Quiet text: Captions, placeholder text, helper lines and disabled labels. They are set pale on purpose, which is exactly why they fail most often.
+Quiet text: Captions, placeholder text and helper lines. They are set pale on purpose, which is exactly why they fail most often. Disabled labels are pale too, and the criterion exempts them.
 Threshold: The ratio a pair has to reach. Larger and heavier text is allowed a lower one, so the size has to be recorded beside the number.
 
 Supplied practice material (fictional or labelled practice, not my research):
@@ -3027,7 +3144,7 @@ When the activity is finished, tell me to return to the course answer called “
 - List every place text meets a surface and measure each; the ones you skipped are usually the failing ones.
 - Repair each failing pair and record the new number beside the old one.
 
-- R30: [W3C: understanding contrast (minimum)](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html) — The thresholds and the large-text and incidental exceptions. Purpose: Supplies the measurable target for every pair you allow. Free reading, no account. Verified 2026-09-06. A passing ratio is not proof of legibility at real sizes in real light. Fallback: R29.
+- R30: [W3C: understanding contrast (minimum)](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html) — The thresholds and the large-text and incidental exceptions. Purpose: Supplies the measurable target for every pair you allow. Free reading, no account. Verified 2026-09-06. A passing ratio is not proof of legibility at real sizes in real light. Its exceptions include inactive controls, pure decoration and logos. Fallback: R29.
 - R29: [web.dev: colour and contrast](https://web.dev/learn/accessibility/color-contrast) — Colour perception, colour-vision deficiency and contrast in practice. Purpose: Explains why measured contrast matters more than how the text looks to you. Free reading, no account. Verified 2026-09-06. No code samples; the measurement and reflow tests here are the practical work. Fallback: R30.
 
 </details>
@@ -3042,7 +3159,7 @@ Adequate evidence: A measured number per pair in the token sheet, including quie
 
 1 — Body text measured only.
 
-2 — All pairs measured including captions, placeholders and disabled text.
+2 — All pairs measured including captions, placeholders and disabled text, with exempt pairs marked.
 
 3 — As adequate, and the sheet marks which pairs are permitted and which are forbidden.
 
@@ -3056,13 +3173,13 @@ Adequate evidence: Repairs recorded with new ratios, including any text removed 
 
 1 — Repaired without re-measuring.
 
-2 — Repaired and re-measured, with removals justified.
+2 — Repaired and re-measured, with removals justified — or no failing pair, with the measurements recorded.
 
 3 — As adequate, and one repair removed the need for the text rather than restyling it.
 
 Repair: Repair each failing pair and record the new number beside the old one. Recheck: The repair record.
 
-**A 200 per cent test was run with breakages fixed**
+**A 200 per cent test was run and any breakage fixed**
 
 Adequate evidence: Screens at enlarged text with named breakages and their fixes.
 
@@ -3070,7 +3187,7 @@ Adequate evidence: Screens at enlarged text with named breakages and their fixes
 
 1 — Tested with breakages recorded but unfixed.
 
-2 — Tested, named and fixed by allowing reflow.
+2 — Tested, with breakages named and fixed by allowing reflow, or a clean result recorded.
 
 3 — As adequate, and no fix reduced the text size or removed content.
 
@@ -3099,14 +3216,14 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 - Every text pair carries a measured ratio
 - Failing pairs are repaired and re-measured
-- A 200 per cent test was run with breakages fixed
+- A 200 per cent test was run and any breakage fixed
 - Line length and spacing decisions are recorded
 
 <details>
 <summary>Reading, video and deeper explanation</summary>
 
-- Contrast is measurable, which means opinions about it are unnecessary. The assigned threshold reading gives the ratios and their exceptions for large text and incidental elements. Measure every pair you allow — including the ones you consider decorative, because a caption carrying the price is not decorative — and record the number beside the pair in your token sheet.
-- Quiet text is where products fail. Placeholder grey, disabled labels, captions on tinted panels: each was chosen to be visually recessive, and recessive is exactly what fails a ratio. If a piece of text matters enough to appear, it matters enough to be readable; if it does not matter, remove it rather than dimming it.
+- Contrast is measurable, which means opinions about it are unnecessary. The assigned threshold reading gives the ratios: 4.5 to 1 for ordinary text and 3 to 1 for large text. It also lists exceptions: text inside an inactive control, pure decoration and logos have no contrast requirement. Measure every pair you allow — including the ones you consider decorative, because a caption carrying the price is not decorative — and record the number beside the pair in your token sheet.
+- Quiet text is where products fail. Placeholder grey, helper lines, captions on tinted panels: each was chosen to be visually recessive, and recessive is exactly what fails a ratio. If a piece of text matters enough to appear, it matters enough to be readable; if it does not matter, remove it rather than dimming it. A disabled control is the exception the criterion names: its pale label is not a failure. You may still choose to make it, or a line explaining why it is unavailable, more readable, and that explaining line is information that must meet the ratio. Keep the requirement and the preference apart when you write them down.
 - Enlarging text is a reflow test, not a zoom test. A person who has set their text larger should get a layout that adapts: content wrapping, columns stacking, nothing clipped, no horizontal scrolling of the page. Fixed-height containers and text sized in absolute units are the two usual causes of failure, and both are decisions you made in m03 and m08.
 - Comfort is broader than the threshold. Line length, line height, paragraph spacing and the amount of text on screen all affect whether people read or skim, and none of them appear in a contrast measurement. Meeting the ratio is where you start rather than where you finish.
 
@@ -3171,11 +3288,11 @@ Section: learn. Stable action: learn-3.
 Greyscale is the fastest test and catches most failures.
 
 
-### Idea 4: Colour-vision differences affect roughly one in twelve men; re…
+### Idea 4: Colour-vision differences affect roughly one man in twelve in…
 
 Section: learn. Stable action: learn-4.
 
-Colour-vision differences affect roughly one in twelve men; red and green pairs fail first.
+Colour-vision differences affect roughly one man in twelve in many populations; red and green pairs fail first.
 
 
 ### Charts, status and required fields are the usual offenders
@@ -3248,11 +3365,11 @@ Made-up example. Looking for colour-only signals on a borrowing product, and loo
 
 Section: practice-plan. Stable action: write-colour-signals.
 
-Write your answer for “Every place the meaning depends on colour”. Use the task instructions below to decide what to include.
+If you find none, write none and how you checked: status, charts, required fields, links and errors.
 
 **Answer:** Every place the meaning depends on colour
 
-
+If you find none, write none and how you checked: status, charts, required fields, links and errors.
 
 <details>
 <summary>Example</summary>
@@ -3341,6 +3458,8 @@ Write your answer for “Signal 2 · the place, and the second signal you added�
 
 **Answer:** Signal 2 · the place, and the second signal you added
 
+Optional: may be left empty.
+
 
 
 
@@ -3352,6 +3471,8 @@ Write your answer for “Signal 3 · the place, and the second signal you added�
 
 **Answer:** Signal 3 · the place, and the second signal you added
 
+Optional: may be left empty.
+
 
 
 
@@ -3362,6 +3483,8 @@ Section: practice-plan. Stable action: write-signal-4.
 Write your answer for “Signal 4 · the place, and the second signal you added”. Use the task instructions below to decide what to include.
 
 **Answer:** Signal 4 · the place, and the second signal you added
+
+Optional: may be left empty.
 
 
 
@@ -3588,7 +3711,7 @@ A colour-vision simulation actually run, what became hard to tell apart, and any
 
 **Enough:** You checked red and green pairs specifically rather than glancing at the whole screen.
 
-**Colour-vision difference:** Reduced ability to tell certain hues apart, most often red from green. It affects roughly one man in twelve, which is far more people than most teams assume.
+**Colour-vision difference:** Reduced ability to tell certain hues apart, most often red from green. It affects roughly one man in twelve in many populations, and far fewer women, which is more people than most teams assume.
 
 **Simulation:** A filter that shows roughly what a screen looks like with a particular colour-vision difference. It is available in browser developer tools with no account and no purchase.
 
@@ -3641,18 +3764,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your team already uses a colour-blind-safe palette. Does that close this lesson?
 
-- It does not. A safe palette lowers the chance of confusing two hues and carries no meaning at all for a printed page, a monochrome screen, or somebody listening.
-- It does for colour-vision differences, and the rest is optional.
-- It does, provided the palette was tested.
+- It does, provided the palette was tested with a colour-vision simulation first.
+- A safe palette helps tell hues apart, and does nothing for a grey, printed or spoken screen.
+- It does for colour-vision differences, and the remaining cases are optional extras.
 
 <details>
 <summary>After your attempt</summary>
 
-It does not. A safe palette lowers the chance of confusing two hues and carries no meaning at all for a printed page, a monochrome screen, or somebody listening. — The palette is a sensible precaution about hue. The second signal is what makes the meaning available when there is no hue to read, which is a different problem.
+It does, provided the palette was tested with a colour-vision simulation first. — A tested palette is still only about which hues can be told apart. Somebody hearing the screen read aloud gets no hue of any kind.
 
-It does for colour-vision differences, and the rest is optional. — Even within colour-vision differences a palette reduces risk rather than removing it, and it does nothing for the grey, printed and spoken cases at all.
+A safe palette helps tell hues apart, and does nothing for a grey, printed or spoken screen. — The palette is a sensible precaution about hue. The second signal is what makes the meaning available when there is no hue to read, which is a different problem.
 
-It does, provided the palette was tested. — A tested palette is still only about which hues can be told apart. Somebody hearing the screen read aloud gets no hue of any kind.
+It does for colour-vision differences, and the remaining cases are optional extras. — Even within colour-vision differences a palette reduces risk rather than removing it, and it does nothing for the grey, printed and spoken cases at all.
 
 Improve: Write your one-sentence answer in the palette note in step 5, naming somebody a palette cannot reach. Record the change.
 
@@ -3671,18 +3794,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You added an icon beside each status dot, and in greyscale all three icons look the same. What went wrong?
 
-- The icons differ by colour rather than by outline, so a second element was added but not a second signal.
-- The icons are too small for the difference to show.
-- Icons are the wrong choice; only text works.
+- Icons were the wrong choice from the start, because only text can ever be a second signal.
+- The icons are too small for the difference between them to show up in greyscale.
+- The icons differ by colour, not outline, so you added an element but not a second signal.
 
 <details>
 <summary>After your attempt</summary>
 
-The icons differ by colour rather than by outline, so a second element was added but not a second signal. — Three circles in three colours are one shape. The test is whether the outlines differ when everything is black, and it is easy to fail while feeling the problem is solved.
+Icons were the wrong choice from the start, because only text can ever be a second signal. — Text is the safest choice and icons can work, if their silhouettes genuinely differ. A tick and a cross survive greyscale perfectly well.
 
-The icons are too small for the difference to show. — Size would make identical shapes bigger and still identical. The problem is the shapes, not the scale.
+The icons are too small for the difference between them to show up in greyscale. — Size would make identical shapes bigger and still identical. The problem is the shapes, not the scale.
 
-Icons are the wrong choice; only text works. — Text is the safest choice and icons can work, if their silhouettes genuinely differ. A tick and a cross survive greyscale perfectly well.
+The icons differ by colour, not outline, so you added an element but not a second signal. — Three circles in three colours are one shape. The test is whether the outlines differ when everything is black, and it is easy to fail while feeling the problem is solved.
 
 Improve: Replace that signal in step 2 with a word, or with shapes whose outlines differ, then check it in greyscale again. Record the change in step 5.
 
@@ -3701,18 +3824,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your form marks required fields with red labels, and a line at the top explains that red means required. Is that a second signal?
 
-- It is not. The sentence explains a distinction that disappears the moment colour does, so it does not help the reader who needs it.
-- It is, because the meaning is stated in words somewhere on the screen.
-- It is, provided the explanation is close to the fields.
+- The line explains a colour code the reader may not see, so no field states its own status.
+- It is, because the meaning is stated in plain words somewhere on the same screen.
+- It is, provided the explaining sentence sits right beside the fields it describes.
 
 <details>
 <summary>After your attempt</summary>
 
-It is not. The sentence explains a distinction that disappears the moment colour does, so it does not help the reader who needs it. — An explanation of a colour code is not a second carrier of the meaning. In grey, or read aloud, the reader knows the rule and cannot see which labels it applies to.
+The line explains a colour code the reader may not see, so no field states its own status. — An explanation of a colour code is not a second carrier of the meaning. In grey, or read aloud, the reader knows the rule and cannot see which labels it applies to.
 
-It is, because the meaning is stated in words somewhere on the screen. — The words state the rule rather than the status of each field. The person still cannot tell which fields are required.
+It is, because the meaning is stated in plain words somewhere on the same screen. — The words state the rule rather than the status of each field. The person still cannot tell which fields are required.
 
-It is, provided the explanation is close to the fields. — Moving the sentence nearer does not attach it to any particular field. The word required has to be on the field itself.
+It is, provided the explaining sentence sits right beside the fields it describes. — Moving the sentence nearer does not attach it to any particular field. The word required has to be on the field itself.
 
 Improve: Put the word required on each required field in step 2 and remove the reliance on the explanatory line. Record the change in step 5.
 
@@ -3764,15 +3887,41 @@ Write your answer for “One sentence on why a safe palette would not have been 
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a screen at a bus stop shows each arriving bus as a coloured bar: green for on time, amber for delayed, red for cancelled. A printed key fixed beside the screen explains the colours.
+
+**Task:** Decide what second signal you would add, and explain why the printed key is not enough.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Says the key solves it, or swaps to a colour-blind-safe palette only.
+- Adequate: Adds words on each bar, such as On time, Delayed 5 min and Cancelled. Explains that the key explains a code some people cannot see, because of colour-vision differences, glare or a monochrome display.
+- Strong: As adequate, plus checking it in greyscale and a simulation, noting that the words also feed an audio announcement or screen reader, and the space the words cost on the bar.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -3837,7 +3986,7 @@ Adequate evidence: A list covering status, charts, required fields, links and er
 
 1 — Obvious cases only.
 
-2 — All the usual categories checked and listed.
+2 — All the usual categories checked and listed, or none found and how you checked recorded.
 
 3 — As adequate, and one signal is found in a place you had not considered, such as a hover or a chart legend.
 
@@ -3915,9 +4064,9 @@ Stable ID: m11-l06-v1. Core.
 
 If a task cannot be completed from a keyboard, it cannot be completed by a large group of people, including many who do not consider themselves disabled.
 
-Bring: Your key tables and, if possible, a rough running page.
+Bring: Your key tables, and a running page if you have one; paper screens otherwise.
 
-Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+Starting route: Recommended route: Run the keyboard test on your own running page if you have one, such as a local HTML build or a free tool’s preview. First open the course’s practice lab for the exact keys and what to record: keep the course site name in the address bar, replace everything after it with /labs/m11/ and press Enter. Write what happens in this worksheet as you go. Alternative route: No running page yet? Practise the keys on the lab page itself, then walk one task through your Module 8 screens on paper with your Module 9 key tables, writing the expected key behaviour for each control and marking every result as specified and untested.
 
 - A recorded keyboard-only attempt at one full task
 - A list of unreachable, unoperable and trapping controls
@@ -3993,7 +4142,7 @@ Read the example and notice the decision being made. It is practice material, no
 
 Section: learn. Stable action: workspace.
 
-Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+Recommended route: Run the keyboard test on your own running page if you have one, such as a local HTML build or a free tool’s preview. First open the course’s practice lab for the exact keys and what to record: keep the course site name in the address bar, replace everything after it with /labs/m11/ and press Enter. Write what happens in this worksheet as you go. Alternative route: No running page yet? Practise the keys on the lab page itself, then walk one task through your Module 8 screens on paper with your Module 9 key tables, writing the expected key behaviour for each control and marking every result as specified and untested.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
 
@@ -4004,7 +4153,7 @@ Section: practice-plan. Stable action: step-1-brief.
 
 The thing you are testing, the one whole task, and your Module 9 key tables to hand, with the mouse genuinely out of reach.
 
-- Open your prototype and put the mouse out of reach.
+- Open your running page, or your paper screens, and put the mouse out of reach.
 - Have your m09 key tables beside you.
 
 **Start here:** Put the mouse where you cannot reach it without standing up. Imagining the test does not produce the finding.
@@ -4029,7 +4178,7 @@ Write your answer for “What you are testing, and where it runs”. Use the tas
 <details>
 <summary>Example</summary>
 
-Example (made up): the local HTML build of the booking flow, opened in my browser, mouse in the next room.
+Example (made up): the local HTML build of the booking flow, opened in my browser, mouse in the next room. Or: my Module 8 screens on paper with the key tables, every result marked specified and untested.
 
 </details>
 
@@ -4269,22 +4418,22 @@ Tab, arrows, enter, space, escape. Say which key you pressed and what the screen
 
 Section: practice-plan. Stable action: write-blocked-at.
 
-Write your answer for “Every point where you could not proceed”. Use the task instructions below to decide what to include.
+If you could always go on, write none and what you tried.
 
 **Answer:** Every point where you could not proceed
 
-
+If you could always go on, write none and what you tried.
 
 
 ### Every point where focus vanished or the order jumped
 
 Section: practice-plan. Stable action: write-lost-focus.
 
-Write your answer for “Every point where focus vanished or the order jumped”. Use the task instructions below to decide what to include.
+If focus stayed visible and in order throughout, write that; a clean result counts.
 
 **Answer:** Every point where focus vanished or the order jumped
 
-
+If focus stayed visible and in order throughout, write that; a clean result counts.
 
 <details>
 <summary>Example</summary>
@@ -4351,11 +4500,11 @@ Dialogues, pickers, menus, anything embedded. Try tab first, then escape.
 
 Section: practice-plan. Stable action: write-traps-found.
 
-Write your answer for “Anything that captured focus and would not release it”. Use the task instructions below to decide what to include.
+If nothing held focus, write none and which controls you tried to leave.
 
 **Answer:** Anything that captured focus and would not release it
 
-
+If nothing held focus, write none and which controls you tried to leave.
 
 
 ### Repair the worst
@@ -4381,11 +4530,11 @@ The most completely blocking failure repaired against your key table, with what 
 
 Section: practice-plan. Stable action: write-repair-chosen.
 
-Worst means most completely stops the task, not most irritating.
+Worst means most completely stops the task, not most irritating. If the attempt found no failure, write that here and in the next two answers.
 
 **Answer:** Which failure you repaired, and why it was the worst
 
-Worst means most completely stops the task, not most irritating.
+Worst means most completely stops the task, not most irritating. If the attempt found no failure, write that here and in the next two answers.
 
 
 ### The key table rows you used as the specification for the fix
@@ -4418,18 +4567,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Somebody says keyboard-only use is a niche case not worth this much effort. What is the strongest reply?
 
-- It covers people with motor impairments, switch and voice users, many screen-reader users, anyone with a broken trackpad, and it is what other assistive technology is built on.
-- Because experienced users prefer the keyboard.
-- Because the standard requires it.
+- Many rely on it: motor impairments, switch and voice users, screen-reader users, broken trackpads.
+- That experienced users prefer the keyboard, so it is worth the effort for speed alone.
+- That the standard requires keyboard access, so the effort is not optional for anyone.
 
 <details>
 <summary>After your attempt</summary>
 
-It covers people with motor impairments, switch and voice users, many screen-reader users, anyone with a broken trackpad, and it is what other assistive technology is built on. — Voice control commonly maps onto keyboard operation, and screen readers move through the same order. A keyboard failure is rarely only a keyboard failure.
+Many rely on it: motor impairments, switch and voice users, screen-reader users, broken trackpads. — Voice control commonly maps onto keyboard operation, and screen readers move through the same order, so a keyboard failure is rarely only a keyboard failure.
 
-Because experienced users prefer the keyboard. — Many do, and that is a convenience argument. It invites the reply that convenience can wait.
+That experienced users prefer the keyboard, so it is worth the effort for speed alone. — Many do, and that is a convenience argument. It invites the reply that convenience can wait.
 
-Because the standard requires it. — It does, and a requirement rarely changes anybody’s mind about effort. The reason the requirement exists is the stronger answer.
+That the standard requires keyboard access, so the effort is not optional for anyone. — It does, and a requirement rarely changes anybody’s mind about effort. The reason the requirement exists is the stronger answer.
 
 Improve: Add to your defect list in step 5 which of these groups each failure affects, so severity is arguable from the list itself. Record the change.
 
@@ -4448,18 +4597,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You could reach the date picker with tab, so tab order is fine there. Is the control accessible?
 
-- It is, if focus is visible on it.
-- Not necessarily. Reachable and operable are separate: focus landing on a control proves nothing about whether any key does anything.
-- It is, since the person can get to it and use enter.
+- It is, since the person can get to it with tab and then press enter to open it.
+- It is, provided the focus indicator is clearly visible on it when it is reached.
+- Reaching it proves nothing yet; you still have to check that some key actually operates it.
 
 <details>
 <summary>After your attempt</summary>
 
-It is, if focus is visible on it. — Visible focus tells the person where they are. It does not give them a way to act.
+It is, since the person can get to it with tab and then press enter to open it. — Enter may open it and do nothing inside it. What matters is whether the task can be completed once focus is there.
 
-Not necessarily. Reachable and operable are separate: focus landing on a control proves nothing about whether any key does anything. — This is the failure that looks like success. The tab order passes, focus moves correctly, and the person still cannot choose a date.
+It is, provided the focus indicator is clearly visible on it when it is reached. — Visible focus tells the person where they are. It does not give them a way to act.
 
-It is, since the person can get to it and use enter. — Enter may open it and do nothing inside it. What matters is whether the task can be completed once focus is there.
+Reaching it proves nothing yet; you still have to check that some key actually operates it. — This is the failure that looks like success. The tab order passes, focus moves correctly, and the person still cannot choose a date.
 
 Improve: Go back through your attempt log in step 2 and mark every control you reached but could not operate. Record the change in step 5.
 
@@ -4478,18 +4627,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The quickest fix for the hover-only remove control is to say people can use the mouse for that one action. Is that acceptable?
 
-- It is acceptable as a note while the fix is scheduled.
-- It is not a repair at all. It restates the barrier as an instruction and leaves the task impossible for anybody without a pointer.
-- It is acceptable for a secondary action like removal.
+- It is acceptable as a written note for now, while the proper fix is scheduled.
+- It is acceptable for a secondary action like removal that people rarely need to use.
+- That restates the barrier as an instruction; without a pointer the task is still impossible.
 
 <details>
 <summary>After your attempt</summary>
 
-It is acceptable as a note while the fix is scheduled. — Written as a note, it stops looking like a defect, and a thing that does not look like a defect does not get scheduled.
+It is acceptable as a written note for now, while the proper fix is scheduled. — Written as a note, it stops looking like a defect, and a thing that does not look like a defect does not get scheduled.
 
-It is not a repair at all. It restates the barrier as an instruction and leaves the task impossible for anybody without a pointer. — Every function has to be available without a pointer. A documented workaround that requires the thing the person does not have changes nothing except the tone.
+It is acceptable for a secondary action like removal that people rarely need to use. — Removing an item is how somebody corrects a mistake. Leaving them unable to correct a mistake is not a secondary failure.
 
-It is acceptable for a secondary action like removal. — Removing an item is how somebody corrects a mistake. Leaving them unable to correct a mistake is not a secondary failure.
+That restates the barrier as an instruction; without a pointer the task is still impossible. — Every function has to be available without a pointer. A documented workaround that requires the thing the person does not have changes nothing except the tone.
 
 Improve: Write that control into your defect list in step 5 with the expected keyboard behaviour from your key table, and record the change.
 
@@ -4541,15 +4690,41 @@ Expected behaviour comes from your key table, so a builder does not have to gues
 Expected behaviour comes from your key table, so a builder does not have to guess what you wanted.
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: on a coworking-desk booking site, a keyboard user can tab to the floor map, but desks on it can only be chosen by clicking; the arrow keys do nothing. The Book button shows no visible focus. The filter drawer closes when Escape is pressed.
+
+**Task:** Decide which failure to repair first, and explain how you ranked it.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Fixes the invisible focus first because it is the most noticeable, or suggests using a mouse for the map.
+- Adequate: Repairs the map first: no desk can be chosen without a pointer, so the task is blocked. Invisible focus is severe but survivable. Escape closing the drawer works as intended and is recorded as working.
+- Strong: As adequate, plus a keyboard route written as key-table rows (arrow keys, or a plain list of desks as an alternative), a re-test with the pointer out of reach, and voice control named as untested.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -4628,7 +4803,7 @@ Adequate evidence: A categorised list distinguishing the three failure kinds.
 
 1 — Listed without distinguishing the kinds.
 
-2 — All three kinds distinguished with specific controls named.
+2 — All three kinds distinguished with specific controls named, or none found and the controls checked listed.
 
 3 — As adequate, and every custom control was explicitly checked for trapping.
 
@@ -4642,7 +4817,7 @@ Adequate evidence: A repair implementing the key table, with no pointer-based wo
 
 1 — Repaired partially, leaving the control operable but not conventional.
 
-2 — Repaired to the key table, keyboard-only.
+2 — Repaired or specified to the key table, keyboard-only — or no failure found, with the clean run recorded.
 
 3 — As adequate, and the repair was re-tested with the pointer unavailable.
 
@@ -4694,7 +4869,7 @@ Forms are where accessibility failures cost money directly: a person who cannot 
 
 Bring: Your field table and error messages.
 
-Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+Starting route: Recommended route: Rebuild one of your own forms: in a local HTML file if you have one, or as a field table on paper. For how to tab through a form and listen to it, open the course’s practice lab: keep the course site name in the address bar, replace everything after it with /labs/m11/ and press Enter. Record each change in this worksheet. Alternative route: No form of your own that runs? Specify the labels, groups, hints and error links for your Module 8 form on paper, and mark every announcement and focus behaviour as specified and untested. That is a complete route for this lesson.
 
 - A field table with associated labels, hints and error text
 - Grouped fields where several answer one question
@@ -4722,11 +4897,11 @@ Section: learn. Stable action: welcome.
 Rebuild one form so every field is labelled, grouped and described accessibly, errors are announced and locatable, and nothing depends on placeholder text or colour.
 
 
-### Every field needs a programmatically associated label, not a nearby word
+### Idea 1: Every field needs a label joined to it in the code (a label el…
 
 Section: learn. Stable action: learn-1.
 
-Every field needs a programmatically associated label, not a nearby word.
+Every field needs a label joined to it in the code (a label element pointing at the field), not a nearby word.
 
 
 ### Group related fields so their shared question is announced with them
@@ -4743,11 +4918,11 @@ Section: learn. Stable action: learn-3.
 Instructions belong before the field and must be associated with it.
 
 
-### Idea 4: Errors must say what to fix, be reachable, and be announced wh…
+### Idea 4: Errors must say what to fix, be joined to their field, and be…
 
 Section: learn. Stable action: learn-4.
 
-Errors must say what to fix, be reachable, and be announced when they appear.
+Errors must say what to fix, be joined to their field, and be announced, for example by moving focus to a summary.
 
 
 ### Do not rely on placeholder text, colour or position to carry meaning
@@ -4770,7 +4945,7 @@ Read the example and notice the decision being made. It is practice material, no
 
 Section: learn. Stable action: workspace.
 
-Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+Recommended route: Rebuild one of your own forms: in a local HTML file if you have one, or as a field table on paper. For how to tab through a form and listen to it, open the course’s practice lab: keep the course site name in the address bar, replace everything after it with /labs/m11/ and press Enter. Record each change in this worksheet. Alternative route: No form of your own that runs? Specify the labels, groups, hints and error links for your Module 8 form on paper, and mark every announcement and focus behaviour as specified and untested. That is a complete route for this lesson.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
 
@@ -5228,18 +5403,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your form uses ordinary browser fields rather than anything custom. Does that make it accessible?
 
-- It supplies keyboard behaviour and nothing else. Labels, grouping, hints and error association are decisions somebody has to make, and by default nobody has.
-- Largely, yes, since standard fields are built to be accessible.
-- It does, as long as the visual labels are clear.
+- It brings keyboard behaviour; labels, groups, hints and error links still have to be added.
+- Largely, yes, since standard browser fields are built to be accessible out of the box.
+- It does, as long as each field’s visual label is clear and sits right beside it.
 
 <details>
 <summary>After your attempt</summary>
 
-It supplies keyboard behaviour and nothing else. Labels, grouping, hints and error association are decisions somebody has to make, and by default nobody has. — Standard fields are a good starting point precisely because the keyboard part comes free. Everything this lesson is about has to be added deliberately.
+It brings keyboard behaviour; labels, groups, hints and error links still have to be added. — Standard fields are a good starting point precisely because the keyboard part comes free. Everything this lesson is about has to be added deliberately.
 
-Largely, yes, since standard fields are built to be accessible. — They are built to behave correctly once they are labelled. An unlabelled standard text box is an unnamed box that tabs nicely.
+Largely, yes, since standard browser fields are built to be accessible out of the box. — They are built to behave correctly once they are labelled. An unlabelled standard text box is an unnamed box that tabs nicely.
 
-It does, as long as the visual labels are clear. — Visual clarity helps the reader who can see the layout. A label has to be joined to its field for anybody else.
+It does, as long as each field’s visual label is clear and sits right beside it. — Visual clarity helps the reader who can see the layout. A label has to be joined to its field for anybody else.
 
 Improve: Go back to your audit in step 1 and click each visible label word. Mark every field where nothing happens, then fix them in step 2 and record the change in step 5.
 
@@ -5258,18 +5433,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You darkened the placeholder text so it passes contrast, and it now carries the format hint clearly. Is the form fixed?
 
-- It is not. The hint vanishes the moment somebody types, so it is gone exactly when they are trying to follow it.
-- It is, provided the hint is short.
-- It is, since the hint is readable now.
+- It is fixed, since the format hint is now readable for everyone who needs it.
+- The hint still vanishes on the first keystroke, so it is gone while they follow it.
+- It is fixed, provided the hint is short enough for people to remember once it disappears.
 
 <details>
 <summary>After your attempt</summary>
 
-It is not. The hint vanishes the moment somebody types, so it is gone exactly when they are trying to follow it. — Contrast was the measurable half of the problem. A placeholder is an instruction that removes itself on use, and no colour change alters that.
+It is fixed, since the format hint is now readable for everyone who needs it. — It is readable right up to the first keystroke. Anybody who pauses mid-entry, or comes back to check, has nothing to read.
 
-It is, provided the hint is short. — Length changes nothing about when it disappears. Short instructions vanish just as completely.
+The hint still vanishes on the first keystroke, so it is gone while they follow it. — Contrast was the measurable half of the problem. A placeholder is an instruction that removes itself on use, and no colour change alters that.
 
-It is, since the hint is readable now. — It is readable right up to the first keystroke. Anybody who pauses mid-entry, or comes back to check, has nothing to read.
+It is fixed, provided the hint is short enough for people to remember once it disappears. — Length changes nothing about when it disappears. Short instructions vanish just as completely.
 
 Improve: Move that hint to an associated line under the label in step 2, and record what moved where. Note the change in step 5.
 
@@ -5288,18 +5463,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your error summary appears at the top of the form when submission fails, and you saw it appear. Can you write that errors are announced?
 
-- It can, since you specified the announcement.
-- It can, because appearing is what announcing means.
-- It cannot be written. You confirmed it appears on screen, which is a different behaviour from anybody being told it appeared.
+- It can be written, since the announcement was specified for the build anyway.
+- Seeing it appear is not hearing it announced; record the announcement as untested.
+- It can be written, because appearing on screen is exactly what announcing an error means.
 
 <details>
 <summary>After your attempt</summary>
 
-It can, since you specified the announcement. — Specifying it is what makes it likely to get built. It is not evidence that it works.
+It can be written, since the announcement was specified for the build anyway. — Specifying it is what makes it likely to get built. It is not evidence that it works.
 
-It can, because appearing is what announcing means. — For a person looking at the top of the form, the two coincide. For everybody else, the message can appear in silence.
+Seeing it appear is not hearing it announced; record the announcement as untested. — Appearing and being announced are two different things, and only one of them is visible to a sighted check. The honest record splits the line in two.
 
-It cannot be written. You confirmed it appears on screen, which is a different behaviour from anybody being told it appeared. — Appearing and being announced are two different things, and only one of them is visible to a sighted check. The honest record splits the line in two.
+It can be written, because appearing on screen is exactly what announcing an error means. — For a person looking at the top of the form, the two coincide. For everybody else, the message can appear in silence.
 
 Improve: Split that line in your untested list in step 4 into what you saw and what nobody has heard, then record the change in step 5.
 
@@ -5351,15 +5526,41 @@ Write your answer for “One sentence separating what you verified from what is 
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a moving-van rental form asks for the pickup date as three boxes labelled DD, MM and YYYY with no shared question, shows the driving-licence format only as placeholder text, and on an error turns the box border red and shows the word Invalid at the top of the page.
+
+**Task:** Choose the one change you would make first, and explain who it helps and how you would check it.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Darkens the placeholder, or keeps Invalid and adds more red.
+- Adequate: Groups the date boxes under a named question; or moves the licence format into a hint joined to its field; or rewrites the error to name the fix, in a summary that links to the field and is announced. Says who it helps: people who cannot see the layout, or who lose a placeholder once they type.
+- Strong: As adequate, plus how to check it (tab through, trigger the error, listen with a screen reader) and which behaviour stays untested until there is a real build.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -6003,18 +6204,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Somebody tells you every image needs alt text describing it. What is wrong with that rule?
 
-- Every image needs a decision. Decorative images are marked to be skipped, and describing them puts words in the reader’s way.
-- Nothing — it is safer to describe too much than too little.
-- It is right for photographs and wrong for icons.
+- It is right for photographs and wrong for icons, which never need alt text at all.
+- Every image needs a decision; describing decoration puts words in the reader’s way.
+- Nothing at all, since describing too much is always safer than describing too little.
 
 <details>
 <summary>After your attempt</summary>
 
-Every image needs a decision. Decorative images are marked to be skipped, and describing them puts words in the reader’s way. — Describing a background texture and a divider before the content is more work and a worse experience. The rule to follow is a decision per image, not a description per image.
+It is right for photographs and wrong for icons, which never need alt text at all. — The split is not by kind of graphic. A photograph can be pure decoration and an icon can carry the only meaning on the card.
 
-Nothing — it is safer to describe too much than too little. — It is not safer for the reader, who cannot skip what you wrote. Noise makes the useful alt text harder to find.
+Every image needs a decision; describing decoration puts words in the reader’s way. — Describing a background texture and a divider before the content is more work and a worse experience. The rule to follow is a decision per image, not a description per image.
 
-It is right for photographs and wrong for icons. — The split is not by kind of graphic. A photograph can be pure decoration and an icon can carry the only meaning on the card.
+Nothing at all, since describing too much is always safer than describing too little. — It is not safer for the reader, who cannot skip what you wrote. Noise makes the useful alt text harder to find.
 
 Improve: Look at your classification in step 1 and move anything that adds no information into the decorative list in step 4. Record the change in step 5.
 
@@ -6033,18 +6234,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The shortlist icon is a heart. What should its alt text say?
 
-- Heart icon, so the person knows what is on screen.
-- Save, since that is shorter and clearer.
-- Add to shortlist — what pressing it does, matching the label you wrote in Module 8.
+- Add to shortlist: what pressing it does, in the same words as your Module 8 label.
+- Save, since a shorter name is quicker to hear and clearer than a three-word label.
+- Heart icon, so the person knows exactly which picture is on the screen in front of them.
 
 <details>
 <summary>After your attempt</summary>
 
-Heart icon, so the person knows what is on screen. — Knowing a heart is there tells the reader nothing about what it does, and they cannot see the visual convention that makes it obvious to you.
+Add to shortlist: what pressing it does, in the same words as your Module 8 label. — For a control, the shape is irrelevant and the action is everything. Matching the Module 8 wording stops the same control having two names.
 
-Save, since that is shorter and clearer. — Shorter is good and a second name is not. If the panel says shortlist, this control says shortlist.
+Save, since a shorter name is quicker to hear and clearer than a three-word label. — Shorter is good and a second name is not. If the panel says shortlist, this control says shortlist.
 
-Add to shortlist — what pressing it does, matching the label you wrote in Module 8. — For a control, the shape is irrelevant and the action is everything. Matching the Module 8 wording stops the same control having two names.
+Heart icon, so the person knows exactly which picture is on the screen in front of them. — Knowing a heart is there tells the reader nothing about what it does, and they cannot see the visual convention that makes it obvious to you.
 
 Improve: Check each functional alt text in step 3 against your Module 8 action labels and fix any mismatch. Record the change in step 5.
 
@@ -6063,18 +6264,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A promotional image has the price set inside the picture, and you have put the price into the alt text. Is that finished?
 
-- It is, since the information is now available to a screen reader.
-- It is, provided the alt text is an exact copy.
-- It is not. Text inside an image cannot be searched, translated or enlarged, and alt text fixes only the fourth of those.
+- Alt text fixes reading aloud; the price still cannot be searched, translated or enlarged.
+- It is finished, since the price is now available to anyone using a screen reader.
+- It is finished, provided the alt text repeats the price and the full offer exactly, word for word.
 
 <details>
 <summary>After your attempt</summary>
 
-It is, since the information is now available to a screen reader. — One of four failures is closed. Somebody enlarging their text still gets an unchanged banner, and nobody can search for the offer.
+Alt text fixes reading aloud; the price still cannot be searched, translated or enlarged. — The real repair is to take the words out of the image and make them real text. Alt text is the fallback for the rare case where the words genuinely cannot move.
 
-It is, provided the alt text is an exact copy. — An exact copy is the right thing to write when the text cannot move. It does not make the text findable, translatable or resizable.
+It is finished, since the price is now available to anyone using a screen reader. — One of four failures is closed. Somebody enlarging their text still gets an unchanged banner, and nobody can search for the offer.
 
-It is not. Text inside an image cannot be searched, translated or enlarged, and alt text fixes only the fourth of those. — The real repair is to take the words out of the image and make them real text. Alt text is the fallback for the rare case where the words genuinely cannot move.
+It is finished, provided the alt text repeats the price and the full offer exactly, word for word. — An exact copy is the right thing to write when the text cannot move. It does not make the text findable, translatable or resizable.
 
 Improve: Move that text out of the image in step 4, or write down the reason it cannot move and reproduce it in full. Record the change in step 5.
 
@@ -6126,15 +6327,41 @@ Write your answer for “What you changed afterwards”. Use the task instructio
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a farmers’ market website has a large photograph of the market with the words Open Saturdays 8 to 1 printed across it, a magnifying-glass icon that opens search, and a decorative border of leaves around each stall listing.
+
+**Task:** Decide how each image is handled, and explain the reason for the one people most often get wrong.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Describes all three in detail, or names the icon magnifying glass.
+- Adequate: Photograph: move Open Saturdays 8 to 1 into real text, or reproduce it in full in the alt text if it truly cannot move. Icon: named by its action, Search. Leaf border: decorative, so empty alt text and skipped.
+- Strong: As adequate, plus why the words must leave the picture (search, translation, enlargement), and a check that reads the page with every image replaced by its alt text.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -6282,7 +6509,7 @@ Bring: Your m09 motion work and any timed or media elements.
 Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
 - An audit of automatic motion with a pause or removal decision
-- Captions or a transcript specified for any media
+- Captions for video with sound, a transcript for audio-only, a description for silent video
 - Time limits with warning, extension and preservation
 - A confirmation that nothing flashes rapidly
 
@@ -6294,7 +6521,7 @@ Accessible design removes barriers that stop people from perceiving, understandi
 
 - **Automatic motion:** Movement the person did not start and cannot predict. Anything lasting more than a few seconds needs a way to stop it.
 - **Pause control:** A visible, reachable way to stop the movement. Hidden until hover, or pointer-only, and it is not one.
-- **Captions:** The spoken words, timed to the video, including who is speaking and sounds that matter. They serve deaf readers, noisy rooms and anyone watching without sound.
+- **Captions:** The spoken words, timed to the video, including who is speaking and sounds that matter. They serve deaf readers, noisy rooms and anyone watching without sound, and they are required for video with sound; a transcript does not replace them.
 
 **Quick example.** Made-up example. Fixing an automatic carousel on a tool-library home page, and managing the problem instead of removing it. Three featured tools rotating every four seconds, with small dots underneath. Nobody had asked for it; it had come with the template.
 
@@ -6321,11 +6548,11 @@ Section: learn. Stable action: learn-2.
 Nothing should flash rapidly; it can trigger seizures.
 
 
-### Video and audio need captions or a transcript, and both are writing work
+### Idea 3: Video with sound needs captions; a transcript alone does not m…
 
 Section: learn. Stable action: learn-3.
 
-Video and audio need captions or a transcript, and both are writing work.
+Video with sound needs captions; a transcript alone does not meet that requirement. Audio-only recordings need a transcript.
 
 
 ### Time limits need warning, extension, or removal
@@ -6446,28 +6673,28 @@ A pause control that needs a pointer leaves the person with a pointer problem in
 
 Section: practice-plan. Stable action: step-2-brief.
 
-Any audio or video listed with captions, a transcript and a named person to write them, or the information carried as text instead.
+Any audio or video listed with what it needs (captions, a transcript or a description) and who will write it.
 
 - List any audio or video in your product.
-- Specify captions and a transcript, and who will write them.
-- If neither is possible, provide the information in text instead.
+- Specify captions for video with sound and a transcript for audio-only, and who writes each.
+- If captions cannot be made yet, make text the primary route and label the video as an alternative.
 
 **Start here:** List your media first. If the list is empty, write none and go to the next step.
 
 **Enough:** Every media item names a person who will write the text, or says plainly that nobody has been found yet.
 
-**Captions:** The spoken words, timed to the video, including who is speaking and sounds that matter. They serve deaf readers, noisy rooms and anyone watching without sound.
+**Captions:** The spoken words, timed to the video, including who is speaking and sounds that matter. They serve deaf readers, noisy rooms and anyone watching without sound, and they are required for video with sound; a transcript does not replace them.
 
-**Transcript:** The whole content as text, readable without playing anything. It is also the version that can be searched, translated and skimmed.
+**Transcript:** The whole content as text, readable without playing anything, which can be searched, translated and skimmed. For an audio-only recording it is the requirement; for video with sound it is an addition, never a replacement for captions.
 
 
 ### Try the distinction · 1 of 6
 
 Section: practice-plan. Stable action: step-2-sort-1.
 
-Six situations from a made up tool-library product. For each one, decide what the honest handling is.
+Six situations from a made up tool-library product. Video with sound needs captions, and a transcript never replaces them, though it is sometimes needed as well. For each one, decide the honest handling.
 
-A two-minute safety video on using the bench saw, where everything important is spoken aloud.
+A two-minute safety video on using the bench saw. Everything important is spoken aloud, and members are told to check the steps again before every use.
 
 - captions are enough
 - a transcript is needed too
@@ -6476,11 +6703,11 @@ A two-minute safety video on using the bench saw, where everything important is 
 <details>
 <summary>After your attempt</summary>
 
-captions are enough — Captions cover the person watching. Somebody who wants to check one instruction before switching the saw on has to watch two minutes to find it.
+captions are enough — Captions are required here and they serve anyone watching. People told to recheck one step before every use need to find it fast, which captions alone cannot offer.
 
-a transcript is needed too — Safety instructions are referred back to. A transcript makes them searchable, skimmable and printable, which captions cannot do.
+a transcript is needed too — Captions first, because the video has sound. A transcript as well, because safety steps are looked up again; it adds to the captions and never replaces them.
 
-this cannot be fixed with captions at all — The content is spoken, so captions carry it well. The gap is about finding one part again.
+this cannot be fixed with captions at all — Everything important is spoken, so captions carry it well. The extra need is about finding one step again.
 
 Now decide the handling for your own media, and name who writes each piece of text. If you have none, write none and move on.
 
@@ -6491,9 +6718,9 @@ Now decide the handling for your own media, and name who writes each piece of te
 
 Section: practice-plan. Stable action: step-2-sort-2.
 
-Six situations from a made up tool-library product. For each one, decide what the honest handling is.
+Six situations from a made up tool-library product. Video with sound needs captions, and a transcript never replaces them, though it is sometimes needed as well. For each one, decide the honest handling.
 
-A video whose automatic captions render the library name as three different things and turn 16 millimetres into 60.
+A short welcome video, spoken throughout, whose automatic captions turned 16 millimetres into 60 until a volunteer corrected them by hand.
 
 - captions are enough
 - a transcript is needed too
@@ -6502,11 +6729,11 @@ A video whose automatic captions render the library name as three different thin
 <details>
 <summary>After your attempt</summary>
 
-captions are enough — These captions exist and are wrong in ways that change the meaning. Wrong measurements in a workshop are worse than none.
+captions are enough — Checked captions are what make a spoken video usable without sound, and these have now been checked. Nothing is looked up again or shown only on screen.
 
-a transcript is needed too — A transcript made from the same automatic text carries the same errors forward.
+a transcript is needed too — A transcript would help someone searching, and it is not what makes this video usable to someone who cannot hear it. The corrected captions are.
 
-this cannot be fixed with captions at all — Not with these captions. Somebody has to correct them by hand, which is the work this lesson is asking you to name and assign.
+this cannot be fixed with captions at all — Everything that matters is spoken, so captions carry it, once a person has corrected them.
 
 Now decide the handling for your own media, and name who writes each piece of text. If you have none, write none and move on.
 
@@ -6517,7 +6744,7 @@ Now decide the handling for your own media, and name who writes each piece of te
 
 Section: practice-plan. Stable action: step-2-sort-3.
 
-Six situations from a made up tool-library product. For each one, decide what the honest handling is.
+Six situations from a made up tool-library product. Video with sound needs captions, and a transcript never replaces them, though it is sometimes needed as well. For each one, decide the honest handling.
 
 A silent thirty-second clip showing how to release the chuck, with no narration at all.
 
@@ -6532,7 +6759,7 @@ captions are enough — There is nothing to caption. Captions carry speech, and 
 
 a transcript is needed too — A transcript of silence is empty. What is needed is a written description of what the hands do.
 
-this cannot be fixed with captions at all — Visual-only content needs a written description of the actions, which is a different piece of writing from captions.
+this cannot be fixed with captions at all — Captions carry sound, and this clip has none. Silent video needs its actions described in text, or an audio track that describes them.
 
 Now decide the handling for your own media, and name who writes each piece of text. If you have none, write none and move on.
 
@@ -6543,9 +6770,9 @@ Now decide the handling for your own media, and name who writes each piece of te
 
 Section: practice-plan. Stable action: step-2-sort-4.
 
-Six situations from a made up tool-library product. For each one, decide what the honest handling is.
+Six situations from a made up tool-library product. Video with sound needs captions, and a transcript never replaces them, though it is sometimes needed as well. For each one, decide the honest handling.
 
-A fifteen-second clip of workshop sounds behind the home page, carrying no information.
+A one-minute video in which the librarian explains the late-return fee. Nothing important appears on screen that she does not also say.
 
 - captions are enough
 - a transcript is needed too
@@ -6554,11 +6781,11 @@ A fifteen-second clip of workshop sounds behind the home page, carrying no infor
 <details>
 <summary>After your attempt</summary>
 
-captions are enough — Nothing is being said and nothing is being conveyed, so a short note that it is ambient sound is the whole obligation. Being able to turn it off matters more.
+captions are enough — Captions carry everything here, because nothing important is shown only on screen. That is the whole requirement for this video.
 
-a transcript is needed too — There is no content to transcribe.
+a transcript is needed too — A transcript would be a kindness for searching, and nothing here is looked up again. It is an extra rather than what this video needs.
 
-this cannot be fixed with captions at all — There is nothing here that needs fixing beyond letting people stop it.
+this cannot be fixed with captions at all — Everything is spoken and nothing important is shown only on screen, so captions do carry it.
 
 Now decide the handling for your own media, and name who writes each piece of text. If you have none, write none and move on.
 
@@ -6569,9 +6796,9 @@ Now decide the handling for your own media, and name who writes each piece of te
 
 Section: practice-plan. Stable action: step-2-sort-5.
 
-Six situations from a made up tool-library product. For each one, decide what the honest handling is.
+Six situations from a made up tool-library product. Video with sound needs captions, and a transcript never replaces them, though it is sometimes needed as well. For each one, decide the honest handling.
 
-A four-minute interview with a member describing how they used the library, spoken throughout.
+A four-minute interview with a member about how they use the library, spoken throughout, which the library also wants people to quote and search.
 
 - captions are enough
 - a transcript is needed too
@@ -6580,9 +6807,9 @@ A four-minute interview with a member describing how they used the library, spok
 <details>
 <summary>After your attempt</summary>
 
-captions are enough — Captions serve somebody watching it through. Four minutes is long enough that many people would rather read it in one.
+captions are enough — Captions serve someone watching it through, and they are required. Quoting and searching need text that can be read without playing anything.
 
-a transcript is needed too — Long spoken content is the clearest case for both: captions for watching, a transcript for reading, searching and quoting.
+a transcript is needed too — Captions for watching, because the video has sound; a transcript for reading, searching and quoting. The transcript is an addition, never a replacement.
 
 this cannot be fixed with captions at all — The speech carries everything, so captions do work here.
 
@@ -6595,9 +6822,9 @@ Now decide the handling for your own media, and name who writes each piece of te
 
 Section: practice-plan. Stable action: step-2-sort-6.
 
-Six situations from a made up tool-library product. For each one, decide what the honest handling is.
+Six situations from a made up tool-library product. Video with sound needs captions, and a transcript never replaces them, though it is sometimes needed as well. For each one, decide the honest handling.
 
-A product with no audio or video anywhere in it.
+A ten-minute audio recording of the monthly members’ meeting, with no video at all.
 
 - captions are enough
 - a transcript is needed too
@@ -6606,11 +6833,11 @@ A product with no audio or video anywhere in it.
 <details>
 <summary>After your attempt</summary>
 
-captions are enough — The honest answer is that this step is already complete, and writing none is a finished answer rather than a gap.
+captions are enough — Captions belong to video. With no picture to put them on, an audio-only recording needs a transcript instead.
 
-a transcript is needed too — There is nothing to transcribe. Inventing work here would not help anybody.
+a transcript is needed too — A transcript is what it needs, and the word too is the problem: there is no video to caption, so the transcript is the whole requirement.
 
-this cannot be fixed with captions at all — Nothing is broken. Not every lesson has something to repair in every product.
+this cannot be fixed with captions at all — Captions need a picture. An audio-only recording needs a transcript, which is a different piece of writing.
 
 Now decide the handling for your own media, and name who writes each piece of text. If you have none, write none and move on.
 
@@ -6628,26 +6855,28 @@ Write none if there is none. That is a complete answer to this step.
 Write none if there is none. That is a complete answer to this step.
 
 
-### For each one: captions, a transcript, and who writes them
+### For each one: captions if it is video with sound, a transcript if it is audio only, a written description if it is silent video, and who writes each
 
 Section: practice-plan. Stable action: write-captions-plan.
 
-Write your answer for “For each one: captions, a transcript, and who writes them”. Use the task instructions below to decide what to include.
+Write your answer for “For each one: captions if it is video with sound, a transcript if it is audio only, a written description if it is silent video, and who writes each”. Use the task instructions below to decide what to include.
 
-**Answer:** For each one: captions, a transcript, and who writes them
-
-
+**Answer:** For each one: captions if it is video with sound, a transcript if it is audio only, a written description if it is silent video, and who writes each
 
 
-### If neither is possible: how the information appears as text instead
+
+
+### If captions cannot be made yet: how the same information appears as text, and that the video is labelled as an alternative to that text
 
 Section: practice-plan. Stable action: write-media-alternative.
 
-Write your answer for “If neither is possible: how the information appears as text instead”. Use the task instructions below to decide what to include.
+Leave blank if every item already has its captions, transcript or description.
 
-**Answer:** If neither is possible: how the information appears as text instead
+**Answer:** If captions cannot be made yet: how the same information appears as text, and that the video is labelled as an alternative to that text
 
+Optional: may be left empty.
 
+Leave blank if every item already has its captions, transcript or description.
 
 
 ### Find the time limits
@@ -6770,18 +6999,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your video is hosted on a platform that generates captions automatically. Is the captioning handled?
 
-- It is, since automatic captions have become very accurate.
-- It is, as long as viewers can report errors.
-- It is not. Automatic captions are frequently wrong with names, numbers and accents, and somebody has to check them.
+- Somebody still has to check them: automatic captions often get names and numbers wrong.
+- It is handled, as long as viewers have an easy way to report any caption errors.
+- It is handled, since automatic captions have become very accurate on most speech.
 
 <details>
 <summary>After your attempt</summary>
 
-It is, since automatic captions have become very accurate. — They are good on clear speech in common accents. Names, measurements and technical words are exactly where they fail, and those are usually what matters.
+Somebody still has to check them: automatic captions often get names and numbers wrong. — Wrong captions are worse than missing ones, because everybody assumes the work has been done. If the video carries information, correcting them is a task with a name against it.
 
-It is, as long as viewers can report errors. — That asks the people least able to check the captions to proofread them. The errors are invisible to the reader who depends on them.
+It is handled, as long as viewers have an easy way to report any caption errors. — That asks the people least able to check the captions to proofread them. The errors are invisible to the reader who depends on them.
 
-It is not. Automatic captions are frequently wrong with names, numbers and accents, and somebody has to check them. — Wrong captions are worse than missing ones, because everybody assumes the work has been done. If the video carries information, correcting them is a task with a name against it.
+It is handled, since automatic captions have become very accurate on most speech. — They are good on clear speech in common accents. Names, measurements and technical words are exactly where they fail, and those are usually what matters.
 
 Improve: Name the person who will correct the captions in step 2, or write that nobody has been found. Record the change in step 5.
 
@@ -6800,18 +7029,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your carousel now has a pause button, so it meets the criterion. Is there a better answer?
 
-- No, a pause control is what the criterion asks for.
 - Often, yes: removing motion nobody asked for beats adding a control to manage it.
-- No, because removing it loses content.
+- Removing the carousel would lose content, so keeping it with a pause is best.
+- A pause control is exactly what the criterion asks for, so there is nothing better.
 
 <details>
 <summary>After your attempt</summary>
 
-No, a pause control is what the criterion asks for. — It is what the criterion accepts. The criterion is a floor, and meeting it is not the same as having made the right decision.
-
 Often, yes: removing motion nobody asked for beats adding a control to manage it. — A pause control is a thing to find, understand and press before the reading can start. If the carousel exists because the template had one, removing it solves the problem and shortens the page.
 
-No, because removing it loses content. — It loses the ability to feature an unbounded list. Whether that matters is a content decision worth making deliberately rather than inheriting.
+Removing the carousel would lose content, so keeping it with a pause is best. — It loses the ability to feature an unbounded list. Whether that matters is a content decision worth making deliberately rather than inheriting.
+
+A pause control is exactly what the criterion asks for, so there is nothing better. — It is what the criterion accepts. The criterion is a floor, and meeting it is not the same as having made the right decision.
 
 Improve: For each moving thing in step 1, write why it exists. Anything you cannot answer is a candidate for removal; record the change in step 5.
 
@@ -6830,18 +7059,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 One animation is small and brief, and you judge it harmless, so you keep it when reduced motion is requested. Is that reasonable?
 
-- It is not. The person has already told their device what they need, and this is a judgement about their body made without them.
-- It is, provided the animation is genuinely brief.
-- It is, if most people prefer keeping it.
+- It is reasonable, provided the animation really is brief and small on screen.
+- It is reasonable, if most people who see it say they prefer keeping it.
+- The person has already set what they need; keeping it overrides them on a guess.
 
 <details>
 <summary>After your attempt</summary>
 
-It is not. The person has already told their device what they need, and this is a judgement about their body made without them. — Reduced motion is a request, not a preference to be weighed against your design. Case-by-case exemptions sound careful and rebuild the problem one animation at a time.
+It is reasonable, provided the animation really is brief and small on screen. — Brevity is measured by you, on your screen, with your vestibular system. It is the one part of this judgement you cannot make.
 
-It is, provided the animation is genuinely brief. — Brevity is measured by you, on your screen, with your vestibular system. It is the one part of this judgement you cannot make.
+It is reasonable, if most people who see it say they prefer keeping it. — Most people have not asked for reduced motion. The setting exists for the people who have.
 
-It is, if most people prefer keeping it. — Most people have not asked for reduced motion. The setting exists for the people who have.
+The person has already set what they need; keeping it overrides them on a guess. — Reduced motion is a request, not a preference to be weighed against your design. Case-by-case exemptions sound careful and rebuild the problem one animation at a time.
 
 Improve: Give that animation a reduced version in step 4 and record what it now does. Note the change in step 5.
 
@@ -6893,15 +7122,41 @@ Write your answer for “Anything specified that nobody has yet seen working”.
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a theatre website has a two-minute trailer with dialogue and music, a podcast episode interviewing the director, and a seat hold that expires after five minutes with no warning.
+
+**Task:** Decide what each of the three needs, and explain the one where a transcript alone is not enough.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Says a transcript covers the trailer, or leaves out the seat hold.
+- Adequate: Trailer: checked captions, because a transcript alone does not meet the captions requirement for video with sound. Podcast: a transcript. Seat hold: a warning before it expires, a way to extend, and the chosen seats and entries kept.
+- Strong: As adequate, plus any information shown only on screen in the trailer described, a named person who checks the captions, and a transcript offered alongside the trailer as an extra.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -6929,7 +7184,7 @@ What I am trying to do: Audit your design for motion that plays without asking, 
 Key idea or terms:
 Automatic motion: Movement the person did not start and cannot predict. Anything lasting more than a few seconds needs a way to stop it.
 Pause control: A visible, reachable way to stop the movement. Hidden until hover, or pointer-only, and it is not one.
-Captions: The spoken words, timed to the video, including who is speaking and sounds that matter. They serve deaf readers, noisy rooms and anyone watching without sound.
+Captions: The spoken words, timed to the video, including who is speaking and sounds that matter. They serve deaf readers, noisy rooms and anyone watching without sound, and they are required for video with sound; a transcript does not replace them.
 
 Supplied practice material (fictional or labelled practice, not my research):
 Made-up example. Fixing an automatic carousel on a tool-library home page, and managing the problem instead of removing it. Three featured tools rotating every four seconds, with small dots underneath. Nobody had asked for it; it had come with the template.
@@ -6952,7 +7207,7 @@ When the activity is finished, tell me to return to the course answer called “
 - Watch the video with the captions on and correct every error; names and numbers first.
 
 - R64: [MDN: prefers-reduced-motion](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion) — The reduce value and where the setting lives on each platform. Purpose: Lets you test the reduced-motion behaviour on your own device. Free reading, no account. Verified 2026-09-06; page last modified 10 June 2026. It documents the signal only, and says nothing about media, captions or time limits. Fallback: R13.
-- R66: [W3C: How to Meet WCAG 2.2 (quick reference)](https://www.w3.org/WAI/WCAG22/quickref/) — The criteria on pause, stop and hide, on flashing, on captions, and on timing adjustable. Purpose: Names the specific requirements this lesson satisfies. Free reading, no account. Verified 2026-09-06. An index of the standard; captions and transcripts remain content work it does not teach. Fallback: R41.
+- R66: [W3C: How to Meet WCAG 2.2 (quick reference)](https://www.w3.org/WAI/WCAG22/quickref/) — The criteria on pause, stop and hide, on flashing, on captions, and on timing adjustable. Purpose: Names the specific requirements this lesson satisfies. Free reading, no account. Verified 2026-09-06. An index of the standard: 1.2.2 requires captions for prerecorded video with sound, and 1.2.1 covers audio-only and video-only. Captions and transcripts remain content work it does not teach. Fallback: R41.
 
 </details>
 <details>
@@ -6972,17 +7227,17 @@ Adequate evidence: A list of moving elements with a decision each, and a keyboar
 
 Repair: List everything that moves on its own and decide each; a carousel with no pause is the usual offender. Recheck: The motion decisions.
 
-**Media has checked captions or a transcript**
+**Media has the alternative its type needs**
 
-Adequate evidence: Captions corrected by a person, or a transcript, or the information provided as text instead.
+Adequate evidence: Video with sound has captions checked by a person; audio-only has a transcript; silent video has a description; or no media, stated.
 
-0 — Media published with no alternative.
+0 — Media published with no alternative, or a transcript offered in place of captions.
 
 1 — Automatic captions accepted unchecked.
 
-2 — Captions checked or a transcript written, with ownership named.
+2 — Each item has the alternative its type needs, with ownership named — or none present, stated.
 
-3 — As adequate, and the transcript is offered as an alternative route rather than a fallback.
+3 — As adequate, and a transcript is also offered beside captioned video for reading and searching.
 
 Repair: Watch the video with the captions on and correct every error; names and numbers first. Recheck: The captions or transcript.
 
@@ -7022,7 +7277,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 **Review criteria:**
 
 - Automatic motion is removed or pausable
-- Media has checked captions or a transcript
+- Media has the alternative its type needs
 - Time limits warn, extend and preserve
 - Flashing and reduced motion are both confirmed
 
@@ -7031,7 +7286,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 - Automatically moving content — a carousel, an animated banner, a live-updating region — competes for attention and, for some people, prevents reading entirely. If it moves for more than a few seconds it needs a pause control, and the pause has to be reachable by keyboard and visible without hovering. This is one of the least-implemented requirements in ordinary products.
 - Rapid flashing is the one accessibility failure that can cause direct physical harm. If your design contains anything that flashes more than a couple of times a second — a loading effect, a video transition, an alert — it should not, and no visual justification outweighs that.
-- Captions and transcripts are content work, not a technical step. Captions serve deaf and hard-of-hearing people, and also everyone in a noisy room or without headphones; a transcript additionally serves people who prefer to read, who want to search the content, or whose connection cannot carry the video. If you cannot produce them, the honest response is not to publish the media as the only route to the information.
+- Captions and transcripts are content work, not a technical step, and they are not interchangeable. Video with sound needs captions, timed to the speech and the sounds that matter; that is a level A requirement, and a transcript alone does not meet it. An audio-only recording, such as a podcast, needs a transcript. A silent video needs its actions described in text or in an audio track. A transcript beside a captioned video is still worth offering, for people who prefer to read, want to search, or cannot load video. If a video cannot be captioned, make the text the primary route and label the video clearly as an alternative to it.
 - Time limits appear in more places than teams remember: a held place, a session timeout, a code that expires, a form that clears. Each needs warning before it expires, a way to extend where possible, and preservation of what the person had entered. This is your m07 payment work meeting the criterion that says so explicitly.
 
 [MDN: prefers-reduced-motion](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion).
@@ -7046,7 +7301,7 @@ Reading about screen readers teaches you the concepts. Hearing your own product 
 
 Bring: Your structure, alt text and form specifications.
 
-Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+Starting route: Recommended route: Use the screen reader built into your device: Narrator on Windows, VoiceOver on a Mac, iPhone or iPad, TalkBack on Android. First open the course’s practice lab, which lists how to start, stop and pause each one and lets you practise heading and link moves on the lab page itself: keep the course site name in the address bar, replace everything after it with /labs/m11/ and press Enter. Then run your task on your own page. Alternative route: No page of your own that runs yet? Run the whole session on the lab page and on one public page you choose, typing nothing personal and submitting nothing, and record it as practice on those pages rather than as a test of your design.
 
 - One task attempted with a screen reader, recorded
 - A list of what was announced and what was missing
@@ -7059,7 +7314,7 @@ Accessible design removes barriers that stop people from perceiving, understandi
 
 **Words you will use**
 
-- **Screen reader:** Software that speaks what is on screen and lets somebody move through it by structure. Every major platform ships one: NVDA on Windows, VoiceOver on Apple, TalkBack on Android.
+- **Screen reader:** Software that speaks what is on screen and lets somebody move through it by structure. Windows has Narrator built in, Apple devices have VoiceOver and Android phones have TalkBack. NVDA is a separate free Windows reader you would have to install.
 - **Five commands:** Next heading, next link, next form field, read all, stop. Learning these five is enough for this lesson; trying to learn the whole set is how people abandon it.
 - **Navigating by structure:** Jumping from heading to heading rather than listening to everything. It is how people actually use these tools, and it is why the outline work in lesson 3 mattered.
 
@@ -7074,11 +7329,11 @@ Section: learn. Stable action: welcome.
 Run one task with the screen reader already on your device, record what was announced and what was missing, and state plainly what your own session does and does not establish.
 
 
-### Every major platform ships a screen reader: NVDA, VoiceOver or TalkBack
+### Idea 1: Windows has Narrator built in, Apple devices have VoiceOver, A…
 
 Section: learn. Stable action: learn-1.
 
-Every major platform ships a screen reader: NVDA, VoiceOver or TalkBack.
+Windows has Narrator built in, Apple devices have VoiceOver, Android has TalkBack. NVDA is a separate free Windows download.
 
 
 ### Idea 2: Learn five commands, not fifty: next heading, next link, next…
@@ -7115,14 +7370,14 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Twenty minutes with VoiceOver on the researcher's own phone. Navigating by heading confirmed the m06 outline worked. Six failures were found: the shortlist icon was announced as “button”, the availability dot was silent so full classes sounded identical to available ones, applying a filter announced nothing at all, the error summary was not announced when it appeared, one image was read as its filename, and the date group's question was not announced with its fields. Each mapped to a decision made earlier in the course. The write-up recorded the device, the software, the twenty minutes, and stated that no person who uses a screen reader daily had been involved.
+- Twenty minutes with VoiceOver on the designer's own phone. Navigating by heading confirmed the m06 outline worked. Six failures were found: the shortlist icon was announced as “button”, the availability dot was silent so full classes sounded identical to available ones, applying a filter announced nothing at all, the error summary was not announced when it appeared, one image was read as its filename, and the date group's question was not announced with its fields. Each mapped to a decision made earlier in the course. The write-up recorded the device, the software, the twenty minutes, and stated that no person who uses a screen reader daily had been involved.
 
 
 ### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
-Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
+Recommended route: Use the screen reader built into your device: Narrator on Windows, VoiceOver on a Mac, iPhone or iPad, TalkBack on Android. First open the course’s practice lab, which lists how to start, stop and pause each one and lets you practise heading and link moves on the lab page itself: keep the course site name in the address bar, replace everything after it with /labs/m11/ and press Enter. Then run your task on your own page. Alternative route: No page of your own that runs yet? Run the whole session on the lab page and on one public page you choose, typing nothing personal and submitting nothing, and record it as practice on those pages rather than as a test of your design.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
 
@@ -7134,13 +7389,13 @@ Section: practice-plan. Stable action: step-1-brief.
 The screen reader on your own device running, five commands learned, and whatever went wrong on the way written down.
 
 - Read the assigned article, including what an occasional tester cannot conclude.
-- Turn on the screen reader for your platform and learn five commands.
+- Learn how to stop your platform’s screen reader, then turn it on and learn five commands.
 
-**Start here:** Turn it on, then immediately find the command that stops it talking. Knowing how to stop makes the rest bearable.
+**Start here:** Open the practice lab page and read the controls for your device first. Learn how to turn the reader off before you turn it on.
 
 **Enough:** You can move by heading and stop the speech without looking anything up.
 
-**Screen reader:** Software that speaks what is on screen and lets somebody move through it by structure. Every major platform ships one: NVDA on Windows, VoiceOver on Apple, TalkBack on Android.
+**Screen reader:** Software that speaks what is on screen and lets somebody move through it by structure. Windows has Narrator built in, Apple devices have VoiceOver and Android phones have TalkBack. NVDA is a separate free Windows reader you would have to install.
 
 **Five commands:** Next heading, next link, next form field, read all, stop. Learning these five is enough for this lesson; trying to learn the whole set is how people abandon it.
 
@@ -7149,11 +7404,11 @@ The screen reader on your own device running, five commands learned, and whateve
 
 Section: practice-plan. Stable action: write-reader-used.
 
-Write your answer for “Which screen reader, on which device, and how you turned it on”. Use the task instructions below to decide what to include.
+Narrator on Windows starts and stops with the Windows logo key + Ctrl + Enter. The lab page lists the controls for every device.
 
 **Answer:** Which screen reader, on which device, and how you turned it on
 
-
+Narrator on Windows starts and stops with the Windows logo key + Ctrl + Enter. The lab page lists the controls for every device.
 
 <details>
 <summary>Example</summary>
@@ -7167,11 +7422,11 @@ Example (made up): VoiceOver on my own iPhone, turned on in Settings under Acces
 
 Section: practice-plan. Stable action: write-five-commands.
 
-Next heading, next link, next form field, read all, stop. Five is enough; fifty is a reason to give up.
+Next heading, next link, next form field, read all, and stop or pause. Write how to turn the reader off as well. Five is enough; fifty is a reason to give up.
 
 **Answer:** The five commands you learned, written out
 
-Next heading, next link, next form field, read all, stop. Five is enough; fifty is a reason to give up.
+Next heading, next link, next form field, read all, and stop or pause. Write how to turn the reader off as well. Five is enough; fifty is a reason to give up.
 
 
 ### Anything that went wrong getting started, and how you got past it
@@ -7249,7 +7504,7 @@ One full task attempted by listening, with every silence and every piece of nois
 
 **Start here:** Turn the screen brightness down as far as it goes, then start the task.
 
-**Enough:** Your log contains at least one silence, because almost every product has one.
+**Enough:** Your log says what you listened for at each change, including any place where nothing was missing.
 
 **Silence:** Something changed on screen and nothing was said. It is the failure that is hardest to notice, because nothing draws attention to it.
 
@@ -7294,11 +7549,11 @@ Write your answer for “What happened as you went, announcement by announcement
 
 Section: practice-plan. Stable action: write-silences.
 
-Write your answer for “Every place something happened and nothing was said”. Use the task instructions below to decide what to include.
+If you heard none, write none and the changes you listened at; a clean result counts.
 
 **Answer:** Every place something happened and nothing was said
 
-
+If you heard none, write none and the changes you listened at; a clean result counts.
 
 <details>
 <summary>Example</summary>
@@ -7530,18 +7785,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You ran a screen-reader session and found six failures. Can you write that the product works for blind users?
 
-- It can, since the failures found were real and have been fixed.
-- It cannot be written. You found six real failures, and a sighted person who designed the product is not simulating anyone’s daily experience.
-- It can, provided you note the session was short.
+- It can be written, provided the report also notes the session was a short one.
+- It can be written, since the six failures were real and have now all been fixed.
+- Your findings are real, but a sighted designer cannot stand in for a daily user.
 
 <details>
 <summary>After your attempt</summary>
 
-It can, since the failures found were real and have been fixed. — Fixing what you found removes those six. It says nothing about what a competent daily user would meet in the first two minutes.
+It can be written, provided the report also notes the session was a short one. — Length is the smallest of the differences. Seeing the screen and knowing the design matter far more than the twenty minutes.
 
-It cannot be written. You found six real failures, and a sighted person who designed the product is not simulating anyone’s daily experience. — The findings are genuine and worth acting on. What the session cannot do is tell you how somebody who uses these tools every day would fare, because fluency, habits and settings all differ.
+It can be written, since the six failures were real and have now all been fixed. — Fixing what you found removes those six. It says nothing about what a competent daily user would meet in the first two minutes.
 
-It can, provided you note the session was short. — Length is the smallest of the differences. Seeing the screen and knowing the design matter far more than the twenty minutes.
+Your findings are real, but a sighted designer cannot stand in for a daily user. — The findings are genuine and worth acting on. What the session cannot do is tell you how somebody who uses these tools every day would fare, because fluency, habits and settings all differ.
 
 Improve: Put both differences into your boundary statement in step 5: that you can see the screen, and that you designed it. Record the change.
 
@@ -7560,18 +7815,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Listening with the screen still visible, the product sounded almost fine. What was happening?
 
-- Your eyes were completing every incomplete announcement, so the silences never registered.
-- The product is largely fine and the failures are minor.
-- Screen readers announce most things automatically.
+- Screen readers announce most changes automatically, whatever the page itself provides.
+- The product is largely fine, and the failures you did hear are minor ones.
+- Your eyes were filling every gap in the speech, so the silences never registered.
 
 <details>
 <summary>After your attempt</summary>
 
-Your eyes were completing every incomplete announcement, so the silences never registered. — A list that changes silently is obvious when you can see it change. Working from the speech alone is what makes a silence audible as a silence.
+Screen readers announce most changes automatically, whatever the page itself provides. — They announce what the page gives them. Where nothing is provided, there is nothing to announce, and that is exactly the case your eyes covered up.
 
-The product is largely fine and the failures are minor. — Possibly, and you have no way to tell yet. The test that would show you was not the one you ran.
+The product is largely fine, and the failures you did hear are minor ones. — Possibly, and you have no way to tell yet. The test that would show you was not the one you ran.
 
-Screen readers announce most things automatically. — They announce what the page gives them. Where nothing is provided, there is nothing to announce, and that is exactly the case your eyes covered up.
+Your eyes were filling every gap in the speech, so the silences never registered. — A list that changes silently is obvious when you can see it change. Working from the speech alone is what makes a silence audible as a silence.
 
 Improve: Redo one part of the task in step 3 with the screen brightness at its lowest, and add what that finds. Record the change in step 5.
 
@@ -7588,20 +7843,20 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-The shortlist icon announces only “button”. Where does the repair belong?
+The shortlist icon announces only “button”, though your alt-text table from lesson 8 says it should announce Add to shortlist. Where does the repair belong?
 
-- With you, since the announcement is wrong.
-- Nowhere yet — it needs investigating first.
-- With the build, since your alt-text table already says it should announce Add to shortlist.
+- With you, since the announcement people actually hear is the wrong one.
+- With the build: the decision is already written down and was not applied.
+- Nowhere yet, because the failure needs investigating before anyone acts on it.
 
 <details>
 <summary>After your attempt</summary>
 
-With you, since the announcement is wrong. — It would be yours if nothing said what should happen. Your table already does, which is why this is a defect rather than a gap.
+With you, since the announcement people actually hear is the wrong one. — It would be yours if nothing said what should happen. Your table already does, which is why this is a defect rather than a gap.
 
-Nowhere yet — it needs investigating first. — The investigation is done: you know what it says and what it should say. That is a complete defect report.
+With the build: the decision is already written down and was not applied. — The decision exists and was not applied. It goes to whoever builds it with the expected wording quoted, rather than being rewritten as though it were new.
 
-With the build, since your alt-text table already says it should announce Add to shortlist. — The decision exists and was not applied. It goes to whoever builds it with the expected wording quoted, rather than being rewritten as though it were new.
+Nowhere yet, because the failure needs investigating before anyone acts on it. — The investigation is done: you know what it says and what it should say. That is a complete defect report.
 
 Improve: Mark every finding in step 4 as specification or build, and check each one against your own earlier documents before deciding. Record the change in step 5.
 
@@ -7676,15 +7931,41 @@ You can see the screen and you designed it. Both of those make your session diff
 You can see the screen and you designed it. Both of those make your session different from a daily user’s.
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a designer spent fifteen minutes with Narrator on her laptop testing a hardware store’s click-and-collect page. She found the Add to basket icon announced only as button, and a quantity change that announced nothing. She wants to write: screen-reader tested, works for blind users.
+
+**Task:** Rewrite her claim, and explain what her session does and does not establish.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps works for blind users and adds a note that the session was short.
+- Adequate: Reports the two failures with the device, software and fifteen minutes, and states that a sighted designer who knows the page ran it, so it finds real failures and does not show what daily screen-reader users experience.
+- Strong: As adequate, plus each failure marked as a specification gap or a build defect, and what testing with daily users would add, written beside the findings rather than at the end.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -7710,7 +7991,7 @@ Lesson: Listening to your own product
 What I am trying to do: Run one task with the screen reader already on your device, record what was announced and what was missing, and state plainly what your own session does and does not establish.
 
 Key idea or terms:
-Screen reader: Software that speaks what is on screen and lets somebody move through it by structure. Every major platform ships one: NVDA on Windows, VoiceOver on Apple, TalkBack on Android.
+Screen reader: Software that speaks what is on screen and lets somebody move through it by structure. Windows has Narrator built in, Apple devices have VoiceOver and Android phones have TalkBack. NVDA is a separate free Windows reader you would have to install.
 Five commands: Next heading, next link, next form field, read all, stop. Learning these five is enough for this lesson; trying to learn the whole set is how people abandon it.
 Navigating by structure: Jumping from heading to heading rather than listening to everything. It is how people actually use these tools, and it is why the outline work in lesson 3 mattered.
 
@@ -7734,7 +8015,7 @@ When the activity is finished, tell me to return to the course answer called “
 - Turn on the screen reader already on your device and attempt one task, writing what you hear.
 - For each failure write what you heard and what you should have heard.
 
-- R40: [WebAIM: screen reader testing](https://webaim.org/articles/screenreader_testing/) — How to run a basic test, and what a sighted occasional tester may not conclude from it. Purpose: Supplies both the procedure and the boundary this lesson enforces. Free reading, no account. Verified 2026-09-06. Use the free software already on your device: NVDA, VoiceOver or TalkBack. Your own session never substitutes for testing with disabled participants. Fallback: R41.
+- R40: [WebAIM: screen reader testing](https://webaim.org/articles/screenreader_testing/) — How to run a basic test, and what a sighted occasional tester may not conclude from it. Purpose: Supplies both the procedure and the boundary this lesson enforces. Free reading, no account. Verified 2026-09-06. Use the screen reader built into your device: Narrator on Windows, VoiceOver on Apple devices, TalkBack on Android; NVDA is a separate free Windows download. Your own session never substitutes for testing with disabled participants. Fallback: R41.
 - R41: [W3C WAI: easy checks](https://www.w3.org/WAI/test-evaluate/preliminary/) — The checks you can pair with a listening session. Purpose: Provides complementary self-checks so failures can be confirmed visually as well. Free reading, no account. Verified 2026-09-06. Preliminary checks; passing them is not conformance. Fallback: R28.
 
 </details>
@@ -7763,7 +8044,7 @@ Adequate evidence: A list of silences and noise, each naming the element and wha
 
 1 — Some failures named without the expected announcement.
 
-2 — Each failure names the element and what was missing.
+2 — Each failure names the element and what was missing, or a clean result is recorded with what was listened for.
 
 3 — As adequate, and the list distinguishes silence from misleading announcements.
 
@@ -7813,7 +8094,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 <summary>Reading, video and deeper explanation</summary>
 
 - The assigned article is explicit about both halves of this lesson: how to run a basic screen-reader test, and what a sighted occasional tester may not conclude from it. Both matter. Running the test will show you concrete failures — an unlabelled field, an image announced as a filename, a status change nobody hears — and it will not tell you whether your product is usable for someone who navigates this way every day.
-- Five commands are enough to start. Navigating by heading tells you whether your outline works. Navigating by link and by form field tells you whether your labels carry. Read-all tells you the order and what is announced. Stop is what you will need most in the first ten minutes. Learning the whole command set is a different project.
+- Learn how to stop the reader before anything else: on Windows, Narrator starts and stops with the Windows logo key + Ctrl + Enter, and Ctrl stops it reading. Five commands are enough to start. Navigating by heading tells you whether your outline works. Navigating by link and by form field tells you whether your labels carry. Read-all tells you the order and what is announced. Stop is what you will need most in the first ten minutes. Learning the whole command set is a different project.
 - Listen for absence rather than presence. The failures are usually silence where something happened: a filter applied and nothing announced, an error appearing with no notification, an icon button read as “button”. Your m09 focus rules and m11 form associations are exactly what these gaps test.
 - Say what your session establishes. It establishes that specific failures exist — that is real and useful. It does not establish that the product works, because you know where everything is, you can see the screen, and you are not using the software the way a daily user does. The catalog row for this reading says the same thing, and your write-up should repeat it.
 
@@ -8078,7 +8359,7 @@ Key labels rendered in an Indic script with clipping fixed, and a timed load on 
 
 - Render key labels in an Indic script and check for clipping.
 - Increase line height where characters are cut.
-- Load on a throttled connection and time when the page becomes usable.
+- Load on a throttled connection, check it really slows, and time when the page becomes usable.
 
 **Start here:** Write three of your labels by hand in an Indic script at the same size, or render them if your prototype can.
 
@@ -8294,11 +8575,11 @@ Write your answer for “What you changed about line height or container size”
 
 Section: practice-plan. Stable action: write-throttle-result.
 
-Write your answer for “How you throttled the connection, and the seconds until the page was usable”. Use the task instructions below to decide what to include.
+Throttling slows what is fetched over a network, so check the page really does load more slowly; one opened straight from a file may not. If yours does not slow down, time a live page instead and say so.
 
 **Answer:** How you throttled the connection, and the seconds until the page was usable
 
-
+Throttling slows what is fetched over a network, so check the page really does load more slowly; one opened straight from a file may not. If yours does not slow down, time a live page instead and say so.
 
 <details>
 <summary>Example</summary>
@@ -8316,18 +8597,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your product is English-only for now, so localisation is a later project. Is there anything to do today?
 
-- Yes: layouts built to English string lengths, text inside images and ambiguous date formats are all decided now and expensive to undo.
-- Not really, since nothing can be translated until there is a translator.
-- Only the date format, which is a quick fix.
+- Only the date format, which is quick to fix and the one thing that matters early.
+- Not really, since nothing can be translated until a translator is on the project.
+- Plenty: room for longer words, text out of images and unambiguous dates are cheap now.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes: layouts built to English string lengths, text inside images and ambiguous date formats are all decided now and expensive to undo. — The translating is later. The cost of translating is set by decisions you are making this week, and the cheap versions of those decisions are available today.
+Only the date format, which is quick to fix and the one thing that matters early. — The date is the quickest one. The containers and the images are the ones that cost real money later.
 
-Not really, since nothing can be translated until there is a translator. — Nothing needs translating to give a label room to grow or to take words out of a picture. Those are design decisions.
+Not really, since nothing can be translated until a translator is on the project. — Nothing needs translating to give a label room to grow or to take words out of a picture. Those are design decisions.
 
-Only the date format, which is a quick fix. — The date is the quickest one. The containers and the images are the ones that cost real money later.
+Plenty: room for longer words, text out of images and unambiguous dates are cheap now. — The translating is later. The cost of translating is set by decisions you are making this week, and the cheap versions of those decisions are available today.
 
 Improve: Mark each finding in step 4 as a decision for now or a job for later, and act on the ones marked now. Record the change in step 5.
 
@@ -8346,18 +8627,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You loaded the page on a throttled connection and it took a while. What should you write down?
 
-- That the page is slow on poor connections.
-- The number of seconds until somebody could actually do something, and which throttle setting you used.
-- The total page weight, which is the underlying cause.
+- The seconds until someone could actually act, and the throttle setting you used.
+- That the page is slow on poor connections, in one plain sentence a reader can act on.
+- The total page weight in kilobytes, since weight is the underlying cause.
 
 <details>
 <summary>After your attempt</summary>
 
-That the page is slow on poor connections. — Everybody already believes that, and nothing about it can be compared before and after a fix.
+The seconds until someone could actually act, and the throttle setting you used. — A number with its conditions is evidence. Time to usable is the figure that matters, because the person is waiting to act rather than waiting for everything to arrive.
 
-The number of seconds until somebody could actually do something, and which throttle setting you used. — A number with its conditions is evidence. Time to usable is the figure that matters, because the person is waiting to act rather than waiting for everything to arrive.
+That the page is slow on poor connections, in one plain sentence a reader can act on. — Everybody already believes that, and nothing about it can be compared before and after a fix.
 
-The total page weight, which is the underlying cause. — Weight is useful and it is not the experience. Two pages of the same weight can differ by ten seconds in when they become usable.
+The total page weight in kilobytes, since weight is the underlying cause. — Weight is useful and it is not the experience. Two pages of the same weight can differ by ten seconds in when they become usable.
 
 Improve: Put the throttle setting and the seconds to usable in step 4, replacing any impression you wrote. Record the change in step 5.
 
@@ -8376,18 +8657,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your notification on the lock screen names the class somebody booked. Why does this module care?
 
-- Because notifications should always be minimal.
-- A shared device is common, and the lock screen is read by whoever is near it, so the design has assumed a private phone.
-- It does not — that is a security question rather than an access one.
+- Shared phones are common, and a lock screen is read by whoever is near it.
+- It does not really: that is a security question rather than an access one.
+- Because notifications should always be as short and minimal as possible.
 
 <details>
 <summary>After your attempt</summary>
 
-Because notifications should always be minimal. — A rule about brevity would fix this one by accident. The reasoning is about who else can see the screen.
+Shared phones are common, and a lock screen is read by whoever is near it. — Access work includes the conditions people actually use the product in. One phone shared between a household changes what personal means, and the fix is a wording change.
 
-A shared device is common, and the lock screen is read by whoever is near it, so the design has assumed a private phone. — Access work includes the conditions people actually use the product in. One phone shared between a household changes what personal means, and the fix is a wording change.
+It does not really: that is a security question rather than an access one. — It is both, and the assumption behind it is the same one this lesson is about: that everybody has their own device, connection and language.
 
-It does not — that is a security question rather than an access one. — It is both, and the assumption behind it is the same one this lesson is about: that everybody has their own device, connection and language.
+Because notifications should always be as short and minimal as possible. — A rule about brevity would fix this one by accident. The reasoning is about who else can see the screen.
 
 Improve: Rewrite that notification so it says what happened without naming the detail, and record it in step 5 with the change.
 
@@ -8439,15 +8720,41 @@ Write your answer for “Where the Indian guidance and the international guidanc
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a bus-pass renewal site for an Indian city shows dates as 05/06/26, puts its fare table in an image, labels the start button Hop on and get rolling!, and is mostly used on shared family phones over mobile data.
+
+**Task:** Choose the change you would make now rather than defer, and explain why it cannot wait for translation.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Defers everything to a later translation project.
+- Adequate: For example writes dates as 5 June 2026, moves the fares out of the image into real text, or replaces the idiom with plain words. Explains that these are design decisions made now, which make use today easier and later translation cheaper.
+- Strong: As adequate, plus the shared-phone condition (nothing personal on the lock screen) and a throttled load timed to a defined point of usable.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -9085,18 +9392,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Three problems are still open, so you plan to publish the statement once they are fixed. Who does that decision serve?
 
-- Nobody in particular; it is just good practice to finish first.
-- Users, who would otherwise be put off by a list of faults.
-- You. The person deciding whether to attempt your product gets nothing in the meantime and finds out by losing an afternoon.
+- Your users, who would otherwise be put off by reading a list of open faults.
+- Mostly you: people deciding whether to try your product get nothing in the meantime.
+- Nobody in particular; finishing the fixes before publishing is simply good working practice.
 
 <details>
 <summary>After your attempt</summary>
 
-Nobody in particular; it is just good practice to finish first. — It is the practice that produces no statement at all, which is why this lesson argues against it directly.
+Your users, who would otherwise be put off by reading a list of open faults. — Being put off by a known fault is a decision made with information. Meeting it unannounced is the same fault without the choice.
 
-Users, who would otherwise be put off by a list of faults. — Being put off by a known fault is a decision made with information. Meeting it unannounced is the same fault without the choice.
+Mostly you: people deciding whether to try your product get nothing in the meantime. — A dated statement with three known problems lets somebody decide in thirty seconds. Waiting for a perfect one means the page never appears, because there are always three more.
 
-You. The person deciding whether to attempt your product gets nothing in the meantime and finds out by losing an afternoon. — A dated statement with three known problems lets somebody decide in thirty seconds. Waiting for a perfect one means the page never appears, because there are always three more.
+Nobody in particular; finishing the fixes before publishing is simply good working practice. — It is the practice that produces no statement at all, which is why this lesson argues against it directly.
 
 Improve: Move your three open items into the not-yet-fixed list in step 1 with intended dates, and keep the statement publishable today. Record the change in step 5.
 
@@ -9115,18 +9422,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your statement says error messages are announced when they appear. Your screen-reader session found they were not. What is the real problem with the sentence?
 
-- It describes intended behaviour in a document readers take as fact, without saying whether it was tested.
-- It is simply out of date and needs correcting.
-- Nothing, since the behaviour will be built eventually.
+- It is simply out of date now, and the fix is to correct that one sentence.
+- It states intended behaviour as fact, without saying whether it was ever tested.
+- Nothing serious, since the behaviour is already specified and will be built eventually.
 
 <details>
 <summary>After your attempt</summary>
 
-It describes intended behaviour in a document readers take as fact, without saying whether it was tested. — Specified, tested and untested are three different states, and a published statement has to say which one each claim is in. Once it is on a public page, an intention reads as a fact.
+It is simply out of date now, and the fix is to correct that one sentence. — Correcting it fixes this line. The shape of the sentence is what let an untested behaviour be published as a fact in the first place.
 
-It is simply out of date and needs correcting. — Correcting it fixes this line. The shape of the sentence is what let an untested behaviour be published as a fact in the first place.
+It states intended behaviour as fact, without saying whether it was ever tested. — Specified, tested and untested are three different states, and a published statement has to say which one each claim is in. Once it is on a public page, an intention reads as a fact.
 
-Nothing, since the behaviour will be built eventually. — Somebody reading it today is deciding whether to use your product today.
+Nothing serious, since the behaviour is already specified and will be built eventually. — Somebody reading it today is deciding whether to use your product today.
 
 Improve: Mark every sentence in step 2 as tested, specified or untested, and rewrite anything that does not say which. Record the change in step 5.
 
@@ -9145,18 +9452,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You plan to recruit three participants who use assistive technology, over one week, with the usual voucher. What is most likely to go wrong?
 
-- Nothing, if the voucher is generous enough.
-- The lead time. Reaching people through an organisation takes longer, and a week produces no sessions rather than three.
-- The number: three is too few to conclude anything.
+- The number: three participants are far too few to support any conclusion at all about access needs.
+- The lead time: going through organisations takes weeks, so one week likely yields no sessions.
+- Nothing, provided the voucher is generous enough to make people respond quickly.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing, if the voucher is generous enough. — Payment matters, and it is the second problem here rather than the first. No amount of money shortens a recruitment route.
+The number: three participants are far too few to support any conclusion at all about access needs. — Three is a reasonable number for finding problems, and it is not the thing that stops the sessions happening.
 
-The lead time. Reaching people through an organisation takes longer, and a week produces no sessions rather than three. — A month is a realistic minimum, because there is a person in the middle with their own work, and participants need to be asked about accommodations before agreeing.
+The lead time: going through organisations takes weeks, so one week likely yields no sessions. — GOV.UK advises allowing up to a month to find disabled participants and contacting organisations at least a month ahead, or 6 to 8 weeks for less common cognitive disabilities. Participants also need asking about accommodations before agreeing.
 
-The number: three is too few to conclude anything. — Three is a reasonable number for finding problems, and it is not the thing that stops the sessions happening.
+Nothing, provided the voucher is generous enough to make people respond quickly. — Payment matters, and it is the second problem here rather than the first. No amount of money shortens a recruitment route.
 
 Improve: Set a lead time in weeks in step 4, say who you would go through, and replace any voucher with a figure you can defend. Record the change in step 5.
 
@@ -9208,15 +9515,41 @@ Write your answer for “How somebody who meets a barrier can tell you”. Use t
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a charity shop’s donation-booking site has these notes: keyboard test of booking on 2 May, two failures found and one fixed; contrast measured for all text; no screen-reader testing; the date picker still cannot be used from a keyboard. The draft statement says: our site is fully accessible and WCAG compliant.
+
+**Task:** Rewrite the opening two sentences of the statement, and explain what you removed and why.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps fully accessible or compliant with a softening word in front.
+- Adequate: States what was tested (keyboard on 2 May, contrast measured), the open problem (the date picker), what was not tested (screen readers), and the level worked to without claiming conformance.
+- Strong: As adequate, plus a contact route that works for someone blocked by the date picker, and a dated plan for testing with disabled participants.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -9267,7 +9600,7 @@ When the activity is finished, tell me to return to the course answer called “
 - Split your results into the three categories; anything you specified but did not verify goes in untested.
 
 - R66: [W3C: How to Meet WCAG 2.2 (quick reference)](https://www.w3.org/WAI/WCAG22/quickref/) — The criteria you worked to, revisited to confirm what your statement can and cannot say. Purpose: Keeps the statement's target accurate and its claims bounded. Free reading, no account. Verified 2026-09-06. An index of the standard; conformance is a property of a tested build, not of a design that consulted the criteria. Fallback: R41.
-- R52: [GOV.UK: finding user research participants](https://www.gov.uk/service-manual/user-research/find-user-research-participants) — Recruiting disabled participants, lead times and accommodations. Purpose: Supplies realistic timings and requirements for the testing this module could not do. Free reading, no account. Verified 2026-09-06; last updated 28 April 2020. It advises contacting organisations at least a month ahead, longer where cognitive disabilities are involved, and gives no compensation amounts. Fallback: R08.
+- R52: [GOV.UK: finding user research participants](https://www.gov.uk/service-manual/user-research/find-user-research-participants) — Recruiting disabled participants, lead times and accommodations. Purpose: Supplies realistic timings and requirements for the testing this module could not do. Free reading, no account. Verified 2026-09-06; rechecked 2026-10-04, when the page showed last updated 22 September 2026. It advises allowing up to a month and contacting organisations at least a month ahead, or 6 to 8 weeks for less common cognitive disabilities, and gives no compensation amounts. Fallback: R08.
 
 </details>
 <details>
@@ -9327,7 +9660,7 @@ Adequate evidence: A written plan with organisations or routes, realistic lead t
 
 3 — As adequate, and the plan accounts for accommodations the sessions themselves will need.
 
-Repair: Use the assigned lead times — up to a month, longer for cognitive disabilities — and name two real routes you could approach. Recheck: The plan.
+Repair: Use the assigned lead times — up to a month, 6 to 8 weeks for less common cognitive disabilities — and name two real routes you could approach. Recheck: The plan.
 
 </details>
 The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
@@ -9347,7 +9680,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 - An accessibility statement is a factual document, and its usefulness comes from precision. What was checked, with which software, on what device, on what date. Which criteria you worked to. What you found and fixed. What you found and did not fix, and why. What you have not examined at all. Read by someone who relies on assistive technology, that document tells them whether to try, which is the point.
 - Known problems belong in it. Listing an unfixed problem is not an admission of incompetence; it is information a person can act on, and it commits you publicly to a repair. The alternative — silence — means someone discovers it by being unable to complete a task.
 - The tested-versus-specified distinction runs through this whole module. You specified associations, key behaviour and announcements; you tested some of them on your own device. Both are real; conflating them turns a design intention into a claim about a build.
-- Involving disabled participants is the gap this module cannot close by itself, and the plan is part of the deliverable: who you would recruit, through which organisations, with what lead time, and what it would cost in time or compensation. Your recruitment reading gives the lead times, and they are longer than for other participants — a month is realistic, six to eight weeks where cognitive disabilities are involved.
+- Involving disabled participants is the gap this module cannot close by itself, and the plan is part of the deliverable: who you would recruit, through which organisations, with what lead time, and what it would cost in time or compensation. Your recruitment reading gives the lead times, and they are longer than for other participants — allow up to a month, and at least six to eight weeks where less common cognitive disabilities are involved.
 
 [W3C: How to Meet WCAG 2.2 (quick reference)](https://www.w3.org/WAI/WCAG22/quickref/).
 

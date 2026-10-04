@@ -1519,7 +1519,7 @@ export const guided19: Record<string, Guided> = {
       { expect: 'An index and one page per case study, built plainly, with the weight and load order known.',
         fields: ['structure-built', 'weight'],
         terms: [
-          { term: 'Plain HTML and CSS', meaning: 'What Module 12 taught. A portfolio does not need a builder, a template or a subscription, and building it yourself is itself evidence.' },
+          { term: 'Plain HTML and CSS', meaning: 'What the optional Module 12 extension teaches. The supplied template needs no coding, and a portfolio does not need a paid builder or subscription; building your own is extra evidence, not a requirement.' },
           { term: 'Weight', meaning: 'What the page costs to load. A heavy portfolio is a slow one, and reviewers arrive on mobile connections.' },
         ],
         start: 'Reuse the stylesheet from your design system rather than starting a new one.',

@@ -12,9 +12,11 @@ export default defineConfig({
         codeSplitting: {
           groups: [
             {
-              test: /src[\\/]module\d+\.ts$/,
+              // A module's teaching and its guided overlay share one chunk,
+              // so a correction to one module re-downloads only that module.
+              test: /src[\\/](?:module|guided)\d+\.ts$/,
               name: (id) => {
-                const match = id.match(/module(\d+)\.ts$/);
+                const match = id.match(/(?:module|guided)0?(\d+)\.ts$/);
                 return match ? `course-module-${match[1]}` : null;
               },
               includeDependenciesRecursively: false,

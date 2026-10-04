@@ -14,9 +14,9 @@ Stable ID: m04-l01-v1. Core.
 
 Most confusing interfaces are not ugly or illogical. They are logical according to a model the reader does not hold, and no amount of visual refinement closes that gap.
 
-Bring: Your Module 2 findings, hypothesis and the revision you made after testing. The contradictions you find here should be grounded in what you observed there, not invented.
+Bring: Your Module 2 findings, hypothesis and revision. If your Module 2 work was a rehearsal or self-pilot, bring your screens and mark every reader belief as assumed: an assumed belief written honestly is a valid starting point; an invented observation is not.
 
-Starting route: Bring a flow and notes, or use this fictional practice mismatch: a reader assumes the first class is nearest; the list actually orders paid promotions first. Keep that expectation labelled assumed. Describe what the design says, then the action the mismatch might cause.
+Starting route: Bring a flow and notes, or use this fictional practice mismatch: a reader assumes the first class is nearest; the list actually orders paid promotions first. Keep that expectation labelled assumed. Describe what the design says, then the action the mismatch might cause. With no Module 2 sessions, mark every reader belief assumed; do not write observed or reported.
 
 - The reader's model with each line marked observed or assumed, your design's implied model in its real labels, three named contradictions with consequences, and one conform-or-teach decision with its cost.
 
@@ -75,14 +75,14 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- On the workshop service, several people expected “my bookings” to include workshops they had merely saved, because that is how their shopping apps behave. The product's model separated saved from booked, which is defensible. The mismatch showed up as people reporting a booking they had never made. The chosen response was to conform partially — one list, with booked and saved clearly labelled within it — rather than to teach a distinction no one arrived expecting.
+- Made-up example: on the workshop service, several people expected “my bookings” to include workshops they had merely saved, because that is how their shopping apps behave. The product's model separated saved from booked, which is defensible. The mismatch showed up as people reporting a booking they had never made. The chosen response was to conform partially — one list, with booked and saved clearly labelled within it — rather than to teach a distinction no one arrived expecting.
 
 
 ### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
-Bring a flow and notes, or use this fictional practice mismatch: a reader assumes the first class is nearest; the list actually orders paid promotions first. Keep that expectation labelled assumed. Describe what the design says, then the action the mismatch might cause.
+Bring a flow and notes, or use this fictional practice mismatch: a reader assumes the first class is nearest; the list actually orders paid promotions first. Keep that expectation labelled assumed. Describe what the design says, then the action the mismatch might cause. With no Module 2 sessions, mark every reader belief assumed; do not write observed or reported.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
 
@@ -121,9 +121,9 @@ Section: practice-plan. Stable action: step-2-brief.
 
 One task, what a first-time reader assumes, and which parts you actually observed.
 
-- For one task in your Module 2 work, write what you believe a first-time reader assumes: where things live, what an action will do, what happens next. Mark each line as observed in your testing or assumed.
+- For one task in your Module 2 work, write what you believe a first-time reader assumes: where things live, what an action will do, what happens next. Mark each line as observed or reported in your sessions, or assumed. If you ran no sessions, every line is assumed.
 
-**Start here:** Open your Module 2 notes before writing anything, and take the beliefs from there.
+**Start here:** If you ran Module 2 sessions, open those notes first and take the beliefs from there. If you did not, write the beliefs you expect and mark every one assumed.
 
 **Enough:** Every line is marked observed, reported or assumed, and at least one is assumed.
 
@@ -172,11 +172,11 @@ Write your answer for “The one task you are examining”. Use the task instruc
 
 Section: practice-plan. Stable action: write-reader-model.
 
-Write it as beliefs, not as complaints.
+Write it as beliefs, not as complaints. Summarise without names, using a code such as P2 or the label “assumed”. Keep raw session notes in a private local file or on paper with a date to delete them; a code instead of a name is not anonymity, so leave out identifying details.
 
 **Answer:** Where they expect things to live, what they expect an action to do, and what they expect to happen next
 
-Write it as beliefs, not as complaints.
+Write it as beliefs, not as complaints. Summarise without names, using a code such as P2 or the label “assumed”. Keep raw session notes in a private local file or on paper with a date to delete them; a code instead of a name is not anonymity, so leave out identifying details.
 
 <details>
 <summary>Example</summary>
@@ -186,15 +186,15 @@ Example (made up): she expects the price shown to be the full price; she expects
 </details>
 
 
-### Which parts of that came from your Module 2 sessions, and which are your guess
+### Which parts came from your Module 2 sessions (observed or reported), and which are assumed
 
 Section: practice-plan. Stable action: write-reader-evidence.
 
-Mark each line observed, reported or assumed.
+Mark each line observed, reported or assumed. With no sessions, every line is assumed: say so. That is a valid starting point; an invented observation is not.
 
-**Answer:** Which parts of that came from your Module 2 sessions, and which are your guess
+**Answer:** Which parts came from your Module 2 sessions (observed or reported), and which are assumed
 
-Mark each line observed, reported or assumed.
+Mark each line observed, reported or assumed. With no sessions, every line is assumed: say so. That is a valid starting point; an invented observation is not.
 
 
 ### Write your design's model
@@ -273,21 +273,21 @@ A supplied pair from the same made-up project. Reader’s model: “the list sho
 
 What is the consequence worth writing down?
 
-- She will learn the real order after using it a few times.
-- The list is not sorted the way she expects, which is mildly confusing.
-- The promotion agreement is unfair to other studios.
-- She judges distance from the order, so she may travel across the city believing it was the closest option.
+- The promotion agreement is unfair to the studios that are not paying for it.
+- She may travel across the city, believing the first class was the nearest one.
+- She will work out the real order after using the list a few times.
+- The list is sorted differently from what she expects, which is mildly confusing.
 
 <details>
 <summary>After your attempt</summary>
 
-She will learn the real order after using it a few times. — Possibly, and the first time is where the cost lands. Design for the first time and record what the learning costs.
+The promotion agreement is unfair to the studios that are not paying for it. — That may be true and it is a business ethics question, not a contradiction between two models of how the thing works.
 
-The list is not sorted the way she expects, which is mildly confusing. — “Mildly confusing” is a feeling, not a consequence. Name what she does because of the mismatch.
+She may travel across the city, believing the first class was the nearest one. — The consequence is a wrong action taken confidently, which is the expensive kind. It is a prediction to mark as such: ordering carries a meaning nobody declared.
 
-The promotion agreement is unfair to other studios. — That may be true and it is a business ethics question, not a contradiction between two models of how the thing works.
+She will work out the real order after using the list a few times. — Possibly, and the first time is where the cost lands. Design for the first time and record what the learning costs.
 
-She judges distance from the order, so she may travel across the city believing it was the closest option. — The consequence is a wrong action taken confidently, which is the expensive kind. Ordering carries a meaning nobody declared.
+The list is sorted differently from what she expects, which is mildly confusing. — “Mildly confusing” is a feeling, not a consequence. Name what she does because of the mismatch.
 
 Write each of your own contradictions the same way: what she believes, what the design does, and what she does because of the gap.
 
@@ -298,11 +298,11 @@ Write each of your own contradictions the same way: what she believes, what the 
 
 Section: practice-plan. Stable action: write-contradiction-1.
 
-Write your answer for “Contradiction 1 · what disagrees, and what it costs the reader”. Use the task instructions below to decide what to include.
+Mark the consequence observed or predicted. If it came from a session, describe it without names.
 
 **Answer:** Contradiction 1 · what disagrees, and what it costs the reader
 
-
+Mark the consequence observed or predicted. If it came from a session, describe it without names.
 
 <details>
 <summary>Example</summary>
@@ -342,18 +342,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your structure mirrors how the studio organises its classes internally, and it is entirely logical. Is that enough?
 
-- Yes, because people learn a structure after a few visits.
-- No. Logical to whom matters: a structure that mirrors an organisation is routinely unusable because readers do not know the organisation.
-- Yes, provided the labels are clear and consistent.
+- It is enough, because people learn any logical structure after a few visits.
+- It is enough, provided every label in the structure is clear and consistent.
+- It falls short: readers look where their own model says, not the studio’s.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, because people learn a structure after a few visits. — Some do, and the first visit is where most decisions are made. Learning is a cost you are choosing to impose.
+It is enough, because people learn any logical structure after a few visits. — Some do, and the first visit is where many decisions are made. Learning is a cost you are choosing to impose.
 
-No. Logical to whom matters: a structure that mirrors an organisation is routinely unusable because readers do not know the organisation. — Internal logic is real logic and it encodes knowledge the reader does not have. They look where their own model says to look.
+It is enough, provided every label in the structure is clear and consistent. — Clear labels on the wrong structure send people confidently to the wrong place.
 
-Yes, provided the labels are clear and consistent. — Clear labels on the wrong structure send people confidently to the wrong place.
+It falls short: readers look where their own model says, not the studio’s. — Internal logic is real logic and it encodes knowledge the reader does not have. A structure that mirrors an organisation is often hard to use for people outside it.
 
 Improve: Reread your design model in step 3. If any part of the structure exists because of how you or the studio think about classes, write it as a contradiction in step 4 and record the change in step 5.
 
@@ -370,24 +370,24 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You wrote the reader’s model from your own understanding of the flow. What is wrong with that?
+You wrote the reader’s model from your own understanding of the flow and marked none of it as assumed. What is the problem?
 
-- It produces a model with no friction in it, so there are no real contradictions to find.
-- It is acceptable as a starting point to be tested later.
-- Nothing, if you designed it for a reader like yourself.
+- Nothing much, provided the flow was designed for someone very like yourself.
+- Nothing yet: unmarked, it still works as a starting point to test later.
+- Your own fluency reads as hers, so the models agree and no contradiction appears.
 
 <details>
 <summary>After your attempt</summary>
 
-It produces a model with no friction in it, so there are no real contradictions to find. — You know where everything is and why. Writing that down as the reader’s belief guarantees the two models agree.
+Nothing much, provided the flow was designed for someone very like yourself. — Even then you know the decisions behind it, which no reader does. Your fluency is the least transferable thing about you.
 
-It is acceptable as a starting point to be tested later. — It is, if it is labelled as an assumption. Written as the reader’s model it will be treated as evidence.
+Nothing yet: unmarked, it still works as a starting point to test later. — As a starting point it needs the mark “assumed”. Unmarked, it will be read as evidence about the reader, which it is not.
 
-Nothing, if you designed it for a reader like yourself. — Even then you know the decisions behind it, which no reader does. Your fluency is the least transferable thing about you.
+Your own fluency reads as hers, so the models agree and no contradiction appears. — You know where everything is and why. Written down unmarked as the reader’s belief, it guarantees the two models agree.
 
-Improve: Mark every line in your reader model in step 2 as observed, reported or assumed. If none are observed, go back to your Module 2 notes and find one, then record it in step 5.
+Improve: Mark every line in your reader model in step 2 as observed, reported or assumed. If you have no sessions, every line is assumed: add the smallest question that would test the riskiest one, and record it in step 5.
 
-Check again: The evidence marks are present and at least one belief traces to a session.
+Check again: Every line carries an evidence mark, and no line is marked observed or reported without a session behind it.
 
 Answers to revisit: reader-model, reader-evidence
 
@@ -402,18 +402,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You decide to teach the reader your model with a short explanation on the screen. What should the cost line say?
 
-- That the cost falls on you, in writing time.
-- That there is no cost, since the explanation is short.
-- That explanations are frequently skipped, so the cost is a reader who acts on the old model anyway.
+- That many readers skip it and act on their old model anyway.
+- That the cost falls mostly on you, in the time spent writing the explanation.
+- That the cost is small, because the explanation is only one short sentence.
 
 <details>
 <summary>After your attempt</summary>
 
-That the cost falls on you, in writing time. — That is your cost, and the one that matters is what happens to the reader who does not read it.
+That many readers skip it and act on their old model anyway. — Teaching is a legitimate choice and it is the expensive one, because it relies on attention you have not been given.
 
-That there is no cost, since the explanation is short. — Length is not the cost. The cost is that it competes with the task the reader came to do.
+That the cost falls mostly on you, in the time spent writing the explanation. — That is your cost, and the one that matters is what happens to the reader who does not read it.
 
-That explanations are frequently skipped, so the cost is a reader who acts on the old model anyway. — Teaching is a legitimate choice and it is the expensive one, because it relies on attention you have not been given.
+That the cost is small, because the explanation is only one short sentence. — Length is not the cost. The cost is that it competes with the task the reader came to do.
 
 Improve: Write the cost of your choice in step 5 in terms of what happens to a reader who does not notice, then record the change.
 
@@ -470,6 +470,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A council website lists bin collection days under “Services A–Z”, grouped by department: “Environmental Operations” holds the collection calendar and “Waste Strategy” holds the form to request a garden-waste bin. A resident wants to know which day her garden waste is collected. Nobody has tested the site with residents.
+
+**Task:** Write one belief a resident probably brings, the contradiction with this structure and its consequence, and whether you would conform or teach. Give your reason and mark what is assumed.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Says the structure is logical so residents will learn it, or writes the designer’s understanding as the resident’s belief without marking it assumed.
+- Adequate: States an assumed belief (she looks for “bins” or her address, not a department), names the contradiction and its consequence (she cannot find the day, or phones the council), and chooses to conform, such as a “Bins and recycling” entry or address look-up, with its cost.
+- Strong: As adequate, plus: marks the belief assumed with the smallest check (ask three residents where they would look first), and notes what conforming costs the council, such as duplicated pages or reorganising content.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -533,11 +559,11 @@ Adequate evidence: A list of expectations where each line is marked as observed 
 
 1 — A model is written but nothing distinguishes observation from assumption.
 
-2 — Every line is marked observed or assumed.
+2 — Every line is marked observed, reported or assumed, and no line is marked observed or reported without a session behind it.
 
 3 — As adequate, and at least one assumption is paired with the smallest question that would test it.
 
-Repair: Go back through your Module 2 notes and mark each line of your reader model with where it came from. Anything with no source becomes an assumption, not a finding. Recheck: The marked model with sources for the observed lines.
+Repair: Go back through your Module 2 notes, if you have any, and mark each line of your reader model with where it came from. Anything with no source, including every line on the no-session route, is an assumption, not a finding. Recheck: The marked model with sources for the observed lines.
 
 **The design's model is written from its real labels**
 
@@ -667,7 +693,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- A booking flow asked for a reference code on screen four that had been shown on screen two, with no way back that preserved the entered data. Every observed participant either scrolled back and lost their input or guessed. The fix required no new feature: the code was displayed inline on screen four beside the field. The demand for recall disappeared, and so did the error.
+- Made-up example: a booking flow asked for a reference code on screen four that had been shown on screen two, with no way back that preserved the entered data. In a small test, people either scrolled back and lost their input or guessed. The response needed no new feature: the code was displayed on screen four beside the field. That removes the recall demand by design; whether the errors stop is the next thing to check.
 
 
 ### Choose where you will do the work
@@ -883,21 +909,21 @@ A supplied demand from the same made-up flow: the reader chooses a class on one 
 
 Which conversion actually removes the memory demand?
 
-- Add a hint under the field reading “the class you selected earlier”.
-- Let her open the class list in a new tab to look it up.
-- Add a confirmation dialogue asking “are you sure this is the right class?”
-- Show the chosen class name and time on the confirming screen, with an option to change it.
+- Add a hint under the field that reads “the class you selected earlier”.
+- Add a dialogue that asks “Are you sure this is the right class?” before saving.
+- Show the chosen class and time on that screen, with a link to change them.
+- Let her open the class list in a new tab so she can look the name up again.
 
 <details>
 <summary>After your attempt</summary>
 
-Add a hint under the field reading “the class you selected earlier”. — That names what to remember without supplying it. The demand is unchanged.
+Add a hint under the field that reads “the class you selected earlier”. — That names what to remember without supplying it. The demand is unchanged.
 
-Let her open the class list in a new tab to look it up. — Better than nothing and it moves the work to her: she must leave the task, find the class and come back holding the answer.
+Add a dialogue that asks “Are you sure this is the right class?” before saving. — She still has no way to check. Confirming something you cannot verify is not a check.
 
-Add a confirmation dialogue asking “are you sure this is the right class?” — She still has no way to check. Confirming something you cannot verify is not a check.
+Show the chosen class and time on that screen, with a link to change them. — The answer is now in front of her and she checks rather than produces. The change option keeps her in control without asking her to remember.
 
-Show the chosen class name and time on the confirming screen, with an option to change it. — The answer is now in front of her and she checks rather than produces. The change option keeps her in control without asking her to remember.
+Let her open the class list in a new tab so she can look the name up again. — Better than nothing and it moves the work to her: she must leave the task, find the class and come back holding the answer.
 
 Convert your own two demands by showing the value where it is needed, not by labelling what should be remembered.
 
@@ -945,18 +971,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your flow ends with a confirmation screen showing everything entered. Does that mean the reader checked it?
 
-- No. It means the information was displayed. Checking requires comparing it against something they can still see.
-- Yes: displaying the values gives them the opportunity to check.
-- Yes, if the values are large and clearly laid out.
+- It does, as long as the values are large, clearly laid out and easy to scan.
+- Only that it was shown; checking needs something visible to compare it with.
+- It does, because displaying every value gives the reader the chance to check.
 
 <details>
 <summary>After your attempt</summary>
 
-No. It means the information was displayed. Checking requires comparing it against something they can still see. — If the reader must compare against a value from two screens ago that is no longer visible, the confirmation is a formality rather than a check.
+It does, as long as the values are large, clearly laid out and easy to scan. — Legibility helps them read it. It does not give them the original to compare against.
 
-Yes: displaying the values gives them the opportunity to check. — Opportunity without the reference is not a check. They can read what is there and have nothing to compare it with.
+Only that it was shown; checking needs something visible to compare it with. — If the reader must compare against a value from two screens ago that is no longer visible, the confirmation is a formality rather than a check.
 
-Yes, if the values are large and clearly laid out. — Legibility helps them read it. It does not give them the original to compare against.
+It does, because displaying every value gives the reader the chance to check. — Opportunity without the reference is not a check. They can read what is there and have nothing to compare it with.
 
 Improve: Look at your confirmation screen in step 2. If it asks the reader to verify something whose source is no longer visible, add that as a demand and convert it, then record the change in step 5.
 
@@ -975,18 +1001,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You skipped the interruption test because your flow takes only two minutes. Why apply it anyway?
 
-- It is unnecessary for short flows; the test is for long forms.
-- Because real use is interrupted regardless of how long the flow takes; two minutes on a bus is not two uninterrupted minutes.
-- Only if the flow involves payment.
+- It is unnecessary for a two-minute flow; the test exists for long, many-page forms.
+- Real use is interrupted however short the flow; two minutes on a bus get broken.
+- Only because the flow involves payment, where a lost value costs real money.
 
 <details>
 <summary>After your attempt</summary>
 
-It is unnecessary for short flows; the test is for long forms. — Short flows are more often done in fragments, precisely because they feel quick to start.
+It is unnecessary for a two-minute flow; the test exists for long, many-page forms. — Short flows are often done in fragments, precisely because they feel quick to start.
 
-Because real use is interrupted regardless of how long the flow takes; two minutes on a bus is not two uninterrupted minutes. — The flow’s length is your measurement under ideal conditions. Interruption is the normal case, not the exception.
+Real use is interrupted however short the flow; two minutes on a bus get broken. — The flow’s length is your measurement under ideal conditions. Interruption is the normal case, not the exception.
 
-Only if the flow involves payment. — Payment raises the cost of failure and does not create the demand. Any carried value fails the same way.
+Only because the flow involves payment, where a lost value costs real money. — Payment raises the cost of failure and does not create the demand. Any carried value fails the same way.
 
 Improve: Apply the interruption test to every demand in step 3 and mark which fail, then record what changed in step 5.
 
@@ -1005,18 +1031,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 One demand cannot be removed: the reader must remember which email address they used. What should you write?
 
-- That it is genuinely unremovable, why, and what you did to soften it, such as showing a masked hint.
-- Nothing: unremovable demands are not part of the audit.
-- That the reader should use a password manager.
+- That readers should keep it in a password manager, which removes the demand.
+- Why it cannot be shown, and how you softened it, such as a masked hint.
+- Nothing: a demand the design cannot remove sits outside the scope of the audit.
 
 <details>
 <summary>After your attempt</summary>
 
-That it is genuinely unremovable, why, and what you did to soften it, such as showing a masked hint. — Some demands are real. Recording why, and what you did to reduce the cost, is the honest end of the audit.
+That readers should keep it in a password manager, which removes the demand. — That moves the demand onto a tool they may not have, and it is advice rather than design.
 
-Nothing: unremovable demands are not part of the audit. — They are the most important part, because they are what you are knowingly asking of people.
+Why it cannot be shown, and how you softened it, such as a masked hint. — Some demands are real. Recording why, and what you did to reduce the cost, is the honest end of the audit.
 
-That the reader should use a password manager. — That moves the demand onto a tool they may not have, and it is advice rather than design.
+Nothing: a demand the design cannot remove sits outside the scope of the audit. — They are the most important part, because they are what you are knowingly asking of people.
 
 Improve: Fill the unremovable box in step 5 with the reason and any softening you added, then record the change.
 
@@ -1075,6 +1101,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A car-share app shows the car’s number plate and parking bay on its “Booking confirmed” screen. The next screen, “Unlock your car”, asks the person to type the plate to unlock it. Most people book at home and unlock the car twenty minutes later in a car park.
+
+**Task:** Which memory demand would you remove first, and how? Say what your change costs and explain your reasoning.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Adds a hint such as “enter the plate from your booking” or a confirmation dialogue, so the person still has to remember the plate or go and look it up.
+- Adequate: Names the plate (and bay) as carried from the confirmation to the unlock screen across an interruption, shows them on the unlock screen or offers the booked car to choose, and states the cost in space or steps.
+- Strong: As adequate, plus: checks other carried values such as the bay and return time, keeps a step that compares the shown plate with the car itself, and notes it needs checking on site, since a weak signal in a car park may stop details loading.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -1273,7 +1325,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- A workshop card had its whole surface clickable, with the title in body-text colour and no other cue. On desktop, hovering revealed a subtle shade change; on a phone nothing indicated interactivity at all, and observed readers tapped the price text and then the image before finding it. Adding a coloured, weightier title and a visible chevron closed the execution gulf. Separately, the tap produced no immediate response during a slow load, so a pressed state was added to close the evaluation gulf.
+- Made-up example: a workshop card had its whole surface clickable, with the title in body-text colour and no other cue. On desktop, hovering revealed a subtle shade change; on a phone nothing indicated interactivity at all, and in a small test people tapped the price text and then the image before finding it. A coloured, weightier title and a visible chevron were added to close the execution gulf. Separately, the tap produced no immediate response during a slow load, so a pressed state was added for the evaluation gulf. Whether either change helps is the next check.
 
 
 ### Choose where you will do the work
@@ -1348,7 +1400,7 @@ Made-up example. Inventorying a booking screen and finding the empty column.
 
 **Why I nearly filled it in:** I wrote “the next screen appears” and deleted it. That is the result arriving, not feedback that the press registered.
 
-**What the blank told me:** This is why people press twice. The blank was the finding, and filling it in would have hidden it.
+**What the blank told me:** A blank like this would explain people pressing twice, if anyone is seen doing it; on paper it is a prediction to check. The blank was the finding, and filling it in would have hidden it.
 
 **Wrong turn:** The wrong turn is filling every cell because an empty table looks unfinished. The empty cells are the entire value of the exercise.
 
@@ -1493,21 +1545,21 @@ A supplied row from the same made-up screen: a link in body text reading “see 
 
 What is the smallest sound repair?
 
-- Turn it into a button so it is obviously interactive.
-- Change its colour so it stands out from the body text.
-- Add a hint elsewhere saying which words are links.
-- Give it a persistent underline, so it is identifiable as a link without a pointer.
+- Turn it into a button, so that it is obviously interactive on any device.
+- Add a short note elsewhere on the page saying which words are links.
+- Give it a permanent underline, so it reads as a link without a pointer.
+- Change its colour so that it stands out clearly from the body text.
 
 <details>
 <summary>After your attempt</summary>
 
-Turn it into a button so it is obviously interactive. — A button is a much heavier element for an inline reference and changes the reading of the sentence around it.
+Turn it into a button, so that it is obviously interactive on any device. — A button is a much heavier element for an inline reference and changes the reading of the sentence around it.
 
-Change its colour so it stands out from the body text. — Better than nothing and colour alone is exactly the failure the colour lesson warned about. It also fails in greyscale.
+Add a short note elsewhere on the page saying which words are links. — That asks the reader to hold a rule in mind, which is precisely the memory demand the previous lesson was removing.
 
-Add a hint elsewhere saying which words are links. — That asks the reader to hold a rule in mind, which is precisely the memory demand the previous lesson was removing.
+Give it a permanent underline, so it reads as a link without a pointer. — It restores the signifier on every device without adding anything new to the screen, and it is the convention readers already know.
 
-Give it a persistent underline, so it is identifiable as a link without a pointer. — It restores the signifier on every device without adding anything new to the screen, and it is the convention readers already know.
+Change its colour so that it stands out clearly from the body text. — Better than nothing and colour alone is exactly the failure the colour lesson warned about. It also fails in greyscale.
 
 Repair your own weakest signifier the same way: restore the cue where the reader is, without adding a new element.
 
@@ -1544,18 +1596,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your card is clickable and readers will discover that by hovering. What is wrong with relying on that?
 
-- It is acceptable if the card has a shadow.
-- Nothing, provided the site is mainly used on desktop.
-- Hover does not exist on touch devices, and it requires the reader to already suspect the thing is interactive.
+- It is acceptable as long as the card also has a soft shadow beneath it.
+- Nothing serious, provided most visitors use the site on a desktop computer.
+- Phones have no hover, and it only rewards a reader who has already guessed.
 
 <details>
 <summary>After your attempt</summary>
 
-It is acceptable if the card has a shadow. — A shadow may be a persistent signifier, in which case the shadow is doing the work and the hover is decoration.
+It is acceptable as long as the card also has a soft shadow beneath it. — A shadow may be a persistent signifier, in which case the shadow is doing the work and the hover is decoration.
 
-Nothing, provided the site is mainly used on desktop. — Even on desktop, hover only rewards a reader who was already exploring. It cannot invite the first action.
+Nothing serious, provided most visitors use the site on a desktop computer. — Even on desktop, hover only rewards a reader who was already exploring. It cannot invite the first action.
 
-Hover does not exist on touch devices, and it requires the reader to already suspect the thing is interactive. — It is a signifier that only appears to people who already guessed. On a phone it never appears at all.
+Phones have no hover, and it only rewards a reader who has already guessed. — It is a signifier that only appears to people who already guessed. On a phone it never appears at all.
 
 Improve: Check your hover-dependent list in step 3. Give the most important one a signifier that is present without a pointer, and record it in step 5.
 
@@ -1574,18 +1626,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A control has nothing in its feedback column. What should you do?
 
-- Leave it blank and treat it as the finding, then repair it deliberately.
-- Remove the row, since it is incomplete.
-- Write “the next screen appears” to complete the row.
+- Remove that row, since an incomplete row weakens the whole inventory.
+- Keep it blank as a finding, then repair that feedback deliberately.
+- Write “the next screen appears” there so that the row is complete.
 
 <details>
 <summary>After your attempt</summary>
 
-Leave it blank and treat it as the finding, then repair it deliberately. — The blank is what the exercise is for. It usually explains a behaviour you have already seen, such as people pressing twice.
+Remove that row, since an incomplete row weakens the whole inventory. — Removing it hides the most valuable line in the table.
 
-Remove the row, since it is incomplete. — Removing it hides the most valuable line in the table.
+Keep it blank as a finding, then repair that feedback deliberately. — The blank is what the exercise is for. It predicts behaviour worth checking, such as a person pressing twice while nothing visibly happens.
 
-Write “the next screen appears” to complete the row. — That is the result arriving, not confirmation that the press registered. On a slow connection there is a gap where nothing has happened.
+Write “the next screen appears” there so that the row is complete. — That is the result arriving, not confirmation that the press registered. On a slow connection there is a gap where nothing has happened.
 
 Improve: Restore any cell you filled in to make the table look complete, then repair the weakest feedback in step 4 and record it in step 5.
 
@@ -1604,18 +1656,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You removed the underline from links because the screen looked busy. What did that cost?
 
-- Nothing, since the links are still a different colour.
-- The signifier that told readers which words are interactive, on every device.
-- Only aesthetics; the links still work.
+- Nothing important, since the links are still shown in a different colour.
+- Only some visual texture; the links themselves still work when tapped.
+- The cue that told readers which words are links, on every device.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing, since the links are still a different colour. — Colour alone fails in greyscale and for many readers. It also collides with the colour lesson’s rule.
+Nothing important, since the links are still shown in a different colour. — Colour alone fails in greyscale and for many readers. It also collides with the colour lesson’s rule.
 
-The signifier that told readers which words are interactive, on every device. — Tidiness routinely removes signifiers, because signifiers are visual noise until you need them. Record what you took away.
+Only some visual texture; the links themselves still work when tapped. — They work for anyone who finds them. Finding them is what the underline was for.
 
-Only aesthetics; the links still work. — They work for anyone who finds them. Finding them is what the underline was for.
+The cue that told readers which words are links, on every device. — Tidiness routinely removes signifiers, because signifiers are visual noise until you need them. Record what you took away.
 
 Improve: Write what you removed and what it was doing in step 5, and restore it if the repair column has no substitute.
 
@@ -1676,11 +1728,37 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
 
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A plant nursery’s website shows products in a photo grid. Tapping a photo opens the product, but nothing shows this except a slight zoom when a mouse is over it. The “Add to basket” button gives no response until the basket count changes about two seconds later.
+
+**Task:** Name the weakest signifier and the weakest feedback, and give one repair for each. Explain what a phone user can tell after your repairs that they could not before.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Relies on the hover zoom (“people will find it”), or describes the repairs only visually without saying what the reader can now tell.
+- Adequate: Names the hover-only zoom as a signifier missing on touch and adds a persistent cue (the product name as a visible link, or a “View” label); adds immediate pressed or adding feedback to the button; says what the reader can now tell before and after acting.
+- Strong: As adequate, plus a failure case or check: what the button shows if adding fails, whether the basket count is visible on a phone at all, and checking on a real phone rather than a narrowed desktop window.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+
 ### Review and finish your practice
 
 Section: practice. Stable action: review-work.
 
-Open Your work and choose Ready for review. The next lesson classifies the failures you observed in Module 2.
+Open Your work and choose Ready for review. The next lesson classifies failures from your Module 2 sessions or from a labelled practice set.
 
 
 <details>
@@ -1788,7 +1866,7 @@ Repair: Rewrite each repair as: before, the reader could not tell X; after, they
 </details>
 The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
-**Keep for later:** Open Your work and choose Ready for review. The next lesson classifies the failures you observed in Module 2.
+**Keep for later:** Open Your work and choose Ready for review. The next lesson classifies failures from your Module 2 sessions or from a labelled practice set.
 
 **Review criteria:**
 
@@ -1810,9 +1888,9 @@ Stable ID: m04-l04-v1. Core.
 
 The instinct after watching someone fail is to add a warning. Warnings work on one kind of error and make the other kind worse, so the classification has to come first.
 
-Bring: Your Module 2 session notes and every failure, hesitation or wrong turn you recorded there.
+Bring: Your Module 2 session notes and every failure, hesitation or wrong turn you recorded there. If your Module 2 work was a rehearsal or self-pilot, use the labelled practice notes F1–F4 in this lesson and mark every row practice.
 
-Starting route: Use genuine anonymised observations, or label these fictional failures: tapping the adjacent date, expecting promotions to be distance-sorted, losing form text after an error, and paying again after an unclear confirmation. Do not force an unknown intention into slip or mistake; plan the missing evidence.
+Starting route: Use consented, de-identified Module 2 notes, or the labelled practice notes F1–F4 in this lesson; mark practice rows practice. Do not force an unknown intention into slip or mistake.
 
 - A classification table of observed failures with slips, mistakes and unclassified rows; blame-free rewrites alongside the originals; and one prevention and one recovery for each class with reasoning.
 
@@ -1871,16 +1949,30 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Two failures from one test looked identical and were not. One participant tapped “Reserve” before choosing a date, then said “oh, I meant to pick Saturday” — a slip, fixed by disabling the button until a date is selected. Another chose the Saturday session believing it was the beginners' one, because both were titled “Weekend Workshop” — a mistake, unaffected by any button state, fixed by distinguishing the titles and showing the level on the card.
+- Made-up example: two failures from one test looked identical and were not. One participant tapped “Reserve” before choosing a date, then said “oh, I meant to pick Saturday” — a slip, so the response was to disable the button until a date is selected. Another chose the Saturday session believing it was the beginners' one, because both were titled “Weekend Workshop” — a mistake, which no button state would touch, so the response was to distinguish the titles and show the level on the card. Both responses still need checking.
 
 
 ### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
-Use genuine anonymised observations, or label these fictional failures: tapping the adjacent date, expecting promotions to be distance-sorted, losing form text after an error, and paying again after an unclear confirmation. Do not force an unknown intention into slip or mistake; plan the missing evidence.
+Use consented, de-identified Module 2 notes, or the labelled practice notes F1–F4 in this lesson; mark practice rows practice. Do not force an unknown intention into slip or mistake.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
+
+
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Simulated practice notes, not real participants. Use them only if you have no consented Module 2 notes, and label every row you write from them “practice”. Each note keeps an observer’s original wording, blame included, so you can rewrite it.
+- F1 · “Fat-fingered the Saturday 10:00 slot instead of Sunday 10:00 directly below it, then said ‘no — Sunday’ and tapped again.”
+- F2 · “Just picked the first class without checking, saying ‘this one’s nearest’.” The list is ordered by paid promotion, not distance.
+- F3 · “Didn’t bother with the phone number: typed a long message, pressed Reserve, got ‘Phone number required’ and the message box came back empty.” She said nothing.
+- F4 · “Impatient: pressed Pay again while the screen said ‘Processing…’ and was charged twice.” She said: “I thought the first one hadn’t gone through.”
+- You know only these words and actions. Anything else about intention, feelings or how often this happens is unknown.
 
 
 ### Read and classify the concepts
@@ -1922,13 +2014,13 @@ Example (made up): was the intention right and the action wrong (slip), or was t
 
 Section: practice-plan. Stable action: step-2-brief.
 
-Every failure from your Module 2 notes classified, with unclassifiable ones kept.
+Every failure from your Module 2 notes, or the practice notes F1–F4, classified, with unclassifiable ones kept.
 
-- Take every failure from your Module 2 notes and classify it. Where you cannot tell, record it as unclassified and write what you would have needed to ask at the time.
+- Take every failure from your Module 2 notes, or the practice notes F1–F4, and classify it from what was said or done. Where you cannot tell, record it as unclassified and write what you would have needed to ask at the time.
 
-**Start here:** Take each failure and ask what the person was trying to do at that moment.
+**Start here:** Take each failure and ask what the person was trying to do at that moment, and how you know: what they said or did, not what you assume.
 
-**Enough:** At least one is classified as a mistake, or you can say why none is.
+**Enough:** Each classification names the evidence of intention behind it, and anything without that evidence is unclassified.
 
 **Failure:** Any place the reader did not get what she intended, including a hesitation or a wrong turn, not only an outright error.
 
@@ -1962,11 +2054,11 @@ Made-up example. Classifying two failures from a session, and getting the first 
 
 Section: practice-plan. Stable action: write-failure-1.
 
-Write your answer for “Failure 1 · what happened, and slip, mistake or unclassified”. Use the task instructions below to decide what to include.
+A de-identified summary with a participant code such as P2, or a practice label such as F1 marked “practice”. Raw session notes stay in a private local file or on paper with a date to delete them. A code instead of a name is not anonymity, so leave out details that could identify someone.
 
 **Answer:** Failure 1 · what happened, and slip, mistake or unclassified
 
-
+A de-identified summary with a participant code such as P2, or a practice label such as F1 marked “practice”. Raw session notes stay in a private local file or on paper with a date to delete them. A code instead of a name is not anonymity, so leave out details that could identify someone.
 
 <details>
 <summary>Example</summary>
@@ -2043,21 +2135,21 @@ A supplied note from the same made-up session: “The participant carelessly ski
 
 Which rewrite is useful?
 
-- The materials section needs to be more prominent.
+- The participant was in a hurry, which affected how carefully she read it.
+- At this width the materials section sat below Reserve, and nothing pointed to it.
+- The materials section needs to be far more prominent on the class page.
 - The participant did not read the materials section, which is common behaviour.
-- The materials section sat below the Reserve button at this width, so it was not encountered before the decision, and nothing referred to it afterwards.
-- The participant was in a hurry, which affected her reading.
 
 <details>
 <summary>After your attempt</summary>
 
-The materials section needs to be more prominent. — That is a repair, not an observation. Written here it hides what actually happened.
+The participant was in a hurry, which affected how carefully she read it. — Speculation about her state, and unfalsifiable. It also excuses the layout.
+
+At this width the materials section sat below Reserve, and nothing pointed to it. — It names what the design did, where, and what followed. It is checkable and it points straight at a repair.
+
+The materials section needs to be far more prominent on the class page. — That is a repair, not an observation. Written here it hides what actually happened.
 
 The participant did not read the materials section, which is common behaviour. — Softer wording, same blame, and now with a claim about people in general that one session cannot support.
-
-The materials section sat below the Reserve button at this width, so it was not encountered before the decision, and nothing referred to it afterwards. — It names what the design did, where, and what followed. It is checkable and it points straight at a repair.
-
-The participant was in a hurry, which affected her reading. — Speculation about her state, and unfalsifiable. It also excuses the layout.
 
 Rewrite each of your own observations so the design is the subject and the sentence could be checked by someone else.
 
@@ -2068,11 +2160,11 @@ Rewrite each of your own observations so the design is the subject and the sente
 
 Section: practice-plan. Stable action: write-rewritten.
 
-Write your answer for “Each observation rewritten with the design as the subject, keeping the original beside it”. Use the task instructions below to decide what to include.
+Work from de-identified notes or the practice notes; no names. Raw session notes stay in a private local file or on paper with a date to delete them. A code instead of a name is not anonymity, so leave out details that could identify someone.
 
 **Answer:** Each observation rewritten with the design as the subject, keeping the original beside it
 
-
+Work from de-identified notes or the practice notes; no names. Raw session notes stay in a private local file or on paper with a date to delete them. A code instead of a name is not anonymity, so leave out details that could identify someone.
 
 <details>
 <summary>Example</summary>
@@ -2174,18 +2266,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You add a confirmation dialogue so people cannot get it wrong. What does that actually catch?
 
-- Both slips and mistakes, since it forces a pause.
-- Mistakes mainly, since it makes people think about the consequence.
-- Some slips, briefly, until people learn to dismiss it; it does nothing for a mistake.
+- Some slips, briefly, until it is dismissed by habit; mistakes pass straight through.
+- Both slips and mistakes, since it forces everybody to pause before acting.
+- Mainly mistakes, since it makes people stop and think about the consequence.
 
 <details>
 <summary>After your attempt</summary>
 
-Both slips and mistakes, since it forces a pause. — A pause helps only if the person has reason to doubt themselves. A mistake feels correct from the inside.
+Some slips, briefly, until it is dismissed by habit; mistakes pass straight through. — Someone whose intention is wrong confirms the wrong intention. The dialogue asks them to check a decision they believe is correct.
 
-Mistakes mainly, since it makes people think about the consequence. — It states a consequence they have already accepted, because their model says this is the right action.
+Both slips and mistakes, since it forces everybody to pause before acting. — A pause helps only if the person has reason to doubt themselves. A mistake feels correct from the inside.
 
-Some slips, briefly, until people learn to dismiss it; it does nothing for a mistake. — Someone whose intention is wrong confirms the wrong intention. The dialogue asks them to check a decision they believe is correct.
+Mainly mistakes, since it makes people stop and think about the consequence. — It states a consequence they have already accepted, because their model says this is the right action.
 
 Improve: Look at your interventions in step 4. If either is a warning or a confirmation, replace it with a constraint, a default or better information, and record it in step 5.
 
@@ -2204,18 +2296,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your notes say a participant was careless. Why rewrite it?
 
-- Because “careless” cannot be designed for, while “the price was below the fold and nothing cued it” can.
-- Because it is unkind to the participant.
-- Only if the notes will be shared with others.
+- Only if the notes will be shared with others; private notes can stay as written.
+- “Careless” gives nothing to design for; “nothing cued the price” does.
+- Mainly because it is unkind to the participant and could upset them later.
 
 <details>
 <summary>After your attempt</summary>
 
-Because “careless” cannot be designed for, while “the price was below the fold and nothing cued it” can. — The rewrite is not politeness. It converts an unusable note into a specific, checkable statement about the design.
+Only if the notes will be shared with others; private notes can stay as written. — You are the main reader, and you will act on what the note says. A blaming note tells you there is nothing to fix.
 
-Because it is unkind to the participant. — It is unkind and that is not the working reason. The working reason is that blame ends the investigation.
+“Careless” gives nothing to design for; “nothing cued the price” does. — The rewrite is not politeness. It converts an unusable note into a specific, checkable statement about the design.
 
-Only if the notes will be shared with others. — You are the main reader, and you will act on what the note says. A blaming note tells you there is nothing to fix.
+Mainly because it is unkind to the participant and could upset them later. — It is unkind and that is not the working reason. The working reason is that blame ends the investigation.
 
 Improve: Rewrite any remaining blaming observation in step 3 with the design as the subject, keeping the original, and record it in step 5.
 
@@ -2234,18 +2326,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 One failure could be either a slip or a mistake and you cannot tell. What do you do?
 
-- Record it as unclassified with what you would need to observe to decide.
-- Classify it as a slip, since that is the safer assumption.
-- Drop it, since an unclassified failure cannot be designed for.
+- Drop it from the table, since an unclassified failure cannot be designed for.
+- Classify it as a slip, since that is the safer and more common assumption.
+- Record it as unclassified, with what you would need to observe to decide.
 
 <details>
 <summary>After your attempt</summary>
 
-Record it as unclassified with what you would need to observe to decide. — Forcing a classification invents evidence. Keeping it open names a specific question for the next session.
+Drop it from the table, since an unclassified failure cannot be designed for. — It can be investigated, which is the point. Dropping it loses the clearest question you have.
 
-Classify it as a slip, since that is the safer assumption. — It is the comfortable assumption, and it leads to a warning that will not help if the intention was wrong.
+Classify it as a slip, since that is the safer and more common assumption. — It is the comfortable assumption, and it leads to a warning that will not help if the intention was wrong.
 
-Drop it, since an unclassified failure cannot be designed for. — It can be investigated, which is the point. Dropping it loses the clearest question you have.
+Record it as unclassified, with what you would need to observe to decide. — Forcing a classification invents evidence. Keeping it open names a specific question for the next session.
 
 Improve: Move any forced classification back to unclassified in step 2 and write what you would need to know, then record it in step 5.
 
@@ -2293,6 +2385,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: In a practice walkthrough of a train-ticket app, two failures were noted. A: someone meant to choose “Return”, tapped “Single” beside it, then said “oops, return” and went back. B: someone bought an “Off-peak” ticket for an 08:00 train, saying “off-peak just means cheaper seats”, and was refused at the barrier.
+
+**Task:** Classify A and B as slip or mistake, and give one prevention for each that does not rely on the person being more careful. Explain why each prevention fits its class.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Adds a warning or confirmation dialogue to both, classifies by how bad the outcome was rather than by intention, or blames the person.
+- Adequate: A is a slip (right intention, wrong tap): more space, distinct buttons or easy change. B is a mistake (wrong model of “off-peak”): show the valid times on the ticket choice, or flag that 08:00 is peak before purchase.
+- Strong: As adequate, plus: a confirmation would not catch B because the person is confident; adds a recovery such as an upgrade route; and notes B’s classification rests on one remark, so a fuller session could change it.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -2350,7 +2468,7 @@ When the activity is finished, tell me to return to the course answer called “
 
 **Failures are classified with the intention test**
 
-Adequate evidence: A table where each observed failure is marked slip or mistake with the intention reasoning stated.
+Adequate evidence: A table where each failure (observed, or from the labelled practice notes) is marked slip, mistake or unclassified, with the evidence of intention stated.
 
 0 — No classification.
 
@@ -2358,7 +2476,7 @@ Adequate evidence: A table where each observed failure is marked slip or mistake
 
 2 — Each classification states the intention evidence behind it.
 
-3 — As adequate, and one classification is revised after re-reading the session notes, with the reason for the change.
+3 — As adequate, and one classification is revised after re-reading the session or practice notes, with the reason for the change.
 
 Repair: For each failure, write what the person appeared to be trying to do and how you know. Classify only after that sentence exists. Recheck: The table with intention reasoning per row.
 
@@ -2445,7 +2563,7 @@ This module looks at what people expect, what confuses them and how a design cho
 - **Fitts’s law:** The regularity that a target is quicker to hit when it is bigger and nearer to where the hand already is.
 - **Hick’s law:** The regularity that choosing takes longer as the number of comparable options grows.
 
-**Quick example.** A supplied application of Jakob’s law from the same made-up project: “Other booking sites put the price at the top right, so ours should too, because people expect it there.”
+**Quick example.** A supplied application of Jakob’s law from the same made-up project: “Other booking sites put the price at the top right, so ours should too, because people expect it there.” In this studio the listed price leaves out a materials fee paid on the day.
 
 The reader demonstrates and guides the task before asking for “Fitts · the regularity it describes, and the situation it assumes”.
 
@@ -2490,7 +2608,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- A filter panel with eleven options was cut to four, citing Hick's law. Task time got worse: the two most-used filters had been removed, so people scrolled the full list instead of filtering. The law was real; the situation was wrong, because these were not comparable alternatives but tools for narrowing a search. Restoring the two and grouping the rest under a “more filters” control served both the principle and the task.
+- Made-up example: a filter panel with eleven options was cut to four, citing Hick's law. In a small test, tasks took longer: the two most-used filters had been removed, so people scrolled the full list instead of filtering. The law was real; the situation was wrong, because these were not comparable alternatives but tools for narrowing a search. Restoring the two and grouping the rest under a “more filters” control was the next design to check, because it respects both the principle and the task.
 
 
 ### Choose where you will do the work
@@ -2646,25 +2764,25 @@ Made-up example. Breaking Hick’s law on a class list.
 
 Section: practice-plan. Stable action: step-3-try.
 
-A supplied application of Jakob’s law from the same made-up project: “Other booking sites put the price at the top right, so ours should too, because people expect it there.”
+A supplied application of Jakob’s law from the same made-up project: “Other booking sites put the price at the top right, so ours should too, because people expect it there.” In this studio the listed price leaves out a materials fee paid on the day.
 
 When would following that make the design worse?
 
-- When your design is more innovative than the sites you are copying.
-- When you have no competitors to copy.
-- It would never be worse; matching conventions always reduces effort.
-- When the price at the top is incomplete, because materials are charged separately, so the familiar position teaches a wrong number.
+- It would not be worse, since matching a convention always reduces effort.
+- When your design is more innovative than the sites you would be copying.
+- When there are no direct competitors whose layout readers could know.
+- When the familiar spot shows a price that leaves out the materials fee.
 
 <details>
 <summary>After your attempt</summary>
 
-When your design is more innovative than the sites you are copying. — Innovation is not a reason on its own. The reason is whether the convention’s meaning holds in your case.
+It would not be worse, since matching a convention always reduces effort. — It reduces effort when the convention means the same thing. When it does not, familiarity makes the wrong reading more confident.
 
-When you have no competitors to copy. — Readers bring expectations from every site they use, not only from competitors.
+When your design is more innovative than the sites you would be copying. — Innovation is not a reason on its own. The reason is whether the convention’s meaning holds in your case.
 
-It would never be worse; matching conventions always reduces effort. — It reduces effort when the convention means the same thing. When it does not, familiarity makes the wrong reading more confident.
+When there are no direct competitors whose layout readers could know. — Readers bring expectations from every site they use, not only from competitors.
 
-When the price at the top is incomplete, because materials are charged separately, so the familiar position teaches a wrong number. — Conventions carry meaning as well as position. Matching the position while changing the meaning is worse than being unfamiliar.
+When the familiar spot shows a price that leaves out the materials fee. — Conventions carry meaning as well as position. Matching the position while changing the meaning is worse than being unfamiliar.
 
 Write your own three counterexamples the same way: name the situation in your product where the assumption fails.
 
@@ -2772,18 +2890,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Are fewer options always better because of Hick’s law?
 
-- Yes: choice time rises with the number of options, so reducing them always helps.
-- Yes for navigation, no for content.
-- No. It applies to comparable options being chosen among; removing an option someone needs ends their task rather than speeding it.
+- Only among comparable options; removing one someone needs ends their task.
+- Yes: choice time rises with every added option, so cutting options helps.
+- For navigation menus yes, but for content lists the law does not apply.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes: choice time rises with the number of options, so reducing them always helps. — Choice time is not the only cost. An absent option costs the whole task for the person who needed it.
+Only among comparable options; removing one someone needs ends their task. — The law describes a regularity under conditions. Outside them, fewer options simply means less available.
 
-Yes for navigation, no for content. — The distinction is not navigation versus content; it is whether the options are genuinely interchangeable for this reader.
+Yes: choice time rises with every added option, so cutting options helps. — Choice time is not the only cost. An absent option costs the whole task for the person who needed it.
 
-No. It applies to comparable options being chosen among; removing an option someone needs ends their task rather than speeding it. — The law describes a regularity under conditions. Outside them, fewer options simply means less available.
+For navigation menus yes, but for content lists the law does not apply. — The distinction is not navigation versus content; it is whether the options are genuinely interchangeable for this reader.
 
 Improve: Reread your Hick counterexample in step 3. If it is generic, replace it with a specific option in your own product whose removal would end someone’s task, and record the change in step 5.
 
@@ -2802,18 +2920,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Two of the three laws point in opposite directions for your decision. What is the useful response?
 
-- Find a compromise that partly satisfies both.
-- Follow the more established law.
-- Say what the disagreement is about, then choose with a stated reason and record what you overrode.
+- Follow the law with the longer research history, since it is better established.
+- Name what they disagree about, choose with a reason and record what you overrode.
+- Find a compromise design that partly satisfies both laws, so neither is ignored.
 
 <details>
 <summary>After your attempt</summary>
 
-Find a compromise that partly satisfies both. — Sometimes right, and often it produces a design that serves neither reason. Say which one you are prioritising.
+Follow the law with the longer research history, since it is better established. — Age is not evidence about your case. The question is which assumption holds here.
 
-Follow the more established law. — Age is not evidence about your case. The question is which assumption holds here.
+Name what they disagree about, choose with a reason and record what you overrode. — A conflict makes the decision visible. Resolving it with a reason is judgement; averaging them is not.
 
-Say what the disagreement is about, then choose with a stated reason and record what you overrode. — A conflict makes the decision visible. Resolving it with a reason is judgement; averaging them is not.
+Find a compromise design that partly satisfies both laws, so neither is ignored. — Sometimes right, and often it produces a design that serves neither reason. Say which one you are prioritising.
 
 Improve: If your conflict box in step 2 says the laws agree, look harder or say plainly that no conflict arose, then record it in step 5.
 
@@ -2832,18 +2950,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You wrote “this follows Fitts’s law” as the justification for a decision. What is missing?
 
-- A citation to the original research.
+- Nothing further, since a well-established law is justification enough.
+- A citation to the original research paper, so the claim can be traced back.
 - The prediction it makes about what readers will do, and how you could check it.
-- Nothing: a well-established law is sufficient justification.
 
 <details>
 <summary>After your attempt</summary>
 
-A citation to the original research. — A citation makes the claim traceable and still not testable in your product.
+Nothing further, since a well-established law is justification enough. — Established laws describe regularities under conditions. Your design either meets those conditions or does not, and only a prediction reveals which.
+
+A citation to the original research paper, so the claim can be traced back. — A citation makes the claim traceable and still not testable in your product.
 
 The prediction it makes about what readers will do, and how you could check it. — Naming a law is an appeal to authority. Turning it into a prediction makes it something your own work can confirm or refute.
-
-Nothing: a well-established law is sufficient justification. — Established laws describe regularities under conditions. Your design either meets those conditions or does not, and only a prediction reveals which.
 
 Improve: Rewrite each application in step 4 as suggestion, prediction and check, then record the change in step 5.
 
@@ -2893,6 +3011,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
 
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A hardware shop’s click-and-collect page offers 14 collection time slots. A designer cites Hick’s law and proposes showing only the four most popular slots. Two of the hidden slots are the only ones after 18:00.
+
+**Task:** Would you follow the proposal? Give your decision, the reason the law does or does not apply here, and one claim you could check.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Accepts the cut because fewer options are faster, or dismisses Hick’s law entirely without saying when it does apply.
+- Adequate: Rejects removing slots because they are not interchangeable (evening slots serve people who work in the day), reduces effort another way such as grouping by morning, afternoon and evening, and states a prediction and a check.
+- Strong: As adequate, plus a trade-off: grouping keeps a longer list; names what would make a cut acceptable (for example, evening slots never chosen) and how that would be checked without inventing data.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+
 ### Review and finish your practice
 
 Section: practice. Stable action: review-work.
@@ -2921,7 +3065,7 @@ Fitts’s law: The regularity that a target is quicker to hit when it is bigger 
 Hick’s law: The regularity that choosing takes longer as the number of comparable options grows.
 
 Supplied practice material (fictional or labelled practice, not my research):
-A supplied application of Jakob’s law from the same made-up project: “Other booking sites put the price at the top right, so ours should too, because people expect it there.”
+A supplied application of Jakob’s law from the same made-up project: “Other booking sites put the price at the top right, so ours should too, because people expect it there.” In this studio the listed price leaves out a materials fee paid on the day.
 
 Activity: Teach the idea with a simple everyday analogy. Then give me one believable wrong choice and ask me to find the risk before you explain it.
 
@@ -3029,7 +3173,7 @@ Requests arrive as solutions. If you build them as stated you lose the ability t
 
 Bring: Your Module 2 findings and any requests, suggestions or stakeholder asks you have collected since.
 
-Starting route: Use real labelled requests, or mark these five as fictional practice: add reminders; add a map; add a saved list; add larger buttons; add a refund page. Convert each to a possible person, need and reason. These requests are not proof of a need; mark the resulting needs as assumptions.
+Starting route: Use real labelled requests, or mark these five as fictional practice: add reminders; add a map; add a saved list; add larger buttons; add a refund page. Convert each to a possible person, need and reason. These requests are not proof of a need; mark the resulting needs as assumptions. Name sources by role or code, never by name.
 
 - A five-row table giving each original request, its need statement, its evidence source or assumption label, plus two testing questions and one need belonging to a non-primary user.
 
@@ -3095,7 +3239,7 @@ Read the example and notice the decision being made. It is practice material, no
 
 Section: learn. Stable action: workspace.
 
-Use real labelled requests, or mark these five as fictional practice: add reminders; add a map; add a saved list; add larger buttons; add a refund page. Convert each to a possible person, need and reason. These requests are not proof of a need; mark the resulting needs as assumptions.
+Use real labelled requests, or mark these five as fictional practice: add reminders; add a map; add a saved list; add larger buttons; add a refund page. Convert each to a possible person, need and reason. These requests are not proof of a need; mark the resulting needs as assumptions. Name sources by role or code, never by name.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
 
@@ -3132,26 +3276,26 @@ Section: practice-plan. Stable action: step-2-brief.
 
 Five real requests in the words they were actually said.
 
-- Gather five real requests, suggestions or asks — from your Module 2 sessions, from the organiser brief, or from your own backlog. Write each in the words it arrived in.
+- Gather five requests, suggestions or asks — from your Module 2 sessions, from the organiser brief, or from your own backlog — or use the five labelled practice requests. Write each in the words it arrived in, with its source by role or code, never a name.
 
-**Start here:** Look through your session notes and the brief before inventing any.
+**Start here:** Look through your session notes and the brief first. If you have no real requests, use the five practice requests and label each one practice.
 
-**Enough:** Each request names who said it.
+**Enough:** Each request names its source by role or code, or is labelled practice.
 
 **Request:** What somebody asked for, usually with a solution already inside it. The solution is worth keeping, because it shows you what they pictured.
 
 **Verbatim:** The exact words somebody used, kept without tidying. Tidying quietly changes what was meant.
 
 
-### Request 1 · as it was actually said, and who said it
+### Request 1 · its wording, and its source by role or code (no names), or “practice”
 
 Section: practice-plan. Stable action: write-request-1.
 
-Keep the original wording, including the solution it names.
+Keep the original wording, including the solution it names. Name the source by role (“studio owner”) or code (“P2”), never by name; label a supplied request “practice”.
 
-**Answer:** Request 1 · as it was actually said, and who said it
+**Answer:** Request 1 · its wording, and its source by role or code (no names), or “practice”
 
-Keep the original wording, including the solution it names.
+Keep the original wording, including the solution it names. Name the source by role (“studio owner”) or code (“P2”), never by name; label a supplied request “practice”.
 
 <details>
 <summary>Example</summary>
@@ -3161,46 +3305,46 @@ Example (made up): “Add a reminder email the day before” — the studio owne
 </details>
 
 
-### Request 2 · as it was actually said, and who said it
+### Request 2 · its wording, and its source by role or code (no names), or “practice”
 
 Section: practice-plan. Stable action: write-request-2.
 
-Write your answer for “Request 2 · as it was actually said, and who said it”. Use the task instructions below to decide what to include.
+Write your answer for “Request 2 · its wording, and its source by role or code (no names), or “practice””. Use the task instructions below to decide what to include.
 
-**Answer:** Request 2 · as it was actually said, and who said it
-
-
+**Answer:** Request 2 · its wording, and its source by role or code (no names), or “practice”
 
 
-### Request 3 · as it was actually said, and who said it
+
+
+### Request 3 · its wording, and its source by role or code (no names), or “practice”
 
 Section: practice-plan. Stable action: write-request-3.
 
-Write your answer for “Request 3 · as it was actually said, and who said it”. Use the task instructions below to decide what to include.
+Write your answer for “Request 3 · its wording, and its source by role or code (no names), or “practice””. Use the task instructions below to decide what to include.
 
-**Answer:** Request 3 · as it was actually said, and who said it
-
-
+**Answer:** Request 3 · its wording, and its source by role or code (no names), or “practice”
 
 
-### Request 4 · as it was actually said, and who said it
+
+
+### Request 4 · its wording, and its source by role or code (no names), or “practice”
 
 Section: practice-plan. Stable action: write-request-4.
 
-Write your answer for “Request 4 · as it was actually said, and who said it”. Use the task instructions below to decide what to include.
+Write your answer for “Request 4 · its wording, and its source by role or code (no names), or “practice””. Use the task instructions below to decide what to include.
 
-**Answer:** Request 4 · as it was actually said, and who said it
-
-
+**Answer:** Request 4 · its wording, and its source by role or code (no names), or “practice”
 
 
-### Request 5 · as it was actually said, and who said it
+
+
+### Request 5 · its wording, and its source by role or code (no names), or “practice”
 
 Section: practice-plan. Stable action: write-request-5.
 
-Write your answer for “Request 5 · as it was actually said, and who said it”. Use the task instructions below to decide what to include.
+Write your answer for “Request 5 · its wording, and its source by role or code (no names), or “practice””. Use the task instructions below to decide what to include.
 
-**Answer:** Request 5 · as it was actually said, and who said it
+**Answer:** Request 5 · its wording, and its source by role or code (no names), or “practice”
 
 
 
@@ -3255,21 +3399,21 @@ A supplied conversion from the same made-up project: “Attendees need a materia
 
 What is wrong with it?
 
-- It is too specific about the page.
-- The so-that clause repeats the solution, so the statement has no outcome and cannot be met any other way.
-- Nothing: it names who, what and why.
-- It should say “users” rather than “attendees”.
+- It should say “users” rather than “attendees”, so that it covers everyone.
+- Nothing serious: it names who, what and why, which is the full format.
+- The so-that clause repeats the solution, so there is no outcome to meet.
+- It is too specific about the page, which ties it to one part of the site.
 
 <details>
 <summary>After your attempt</summary>
 
-It is too specific about the page. — Specificity is not the fault; the fault is that the outcome restates the feature rather than naming what changes for the person.
+It should say “users” rather than “attendees”, so that it covers everyone. — The opposite: naming who they are is better. “Users” is the vaguer word.
 
-The so-that clause repeats the solution, so the statement has no outcome and cannot be met any other way. — A circular outcome is the commonest failure. It looks complete and permits exactly one answer, which is the one you started with.
+Nothing serious: it names who, what and why, which is the full format. — It names who and what twice. The why is missing, disguised as a repetition.
 
-Nothing: it names who, what and why. — It names who and what twice. The why is missing, disguised as a repetition.
+The so-that clause repeats the solution, so there is no outcome to meet. — A circular outcome is the commonest failure. It looks complete and permits exactly one answer, which is the one you started with.
 
-It should say “users” rather than “attendees”. — The opposite: naming who they are is better. “Users” is the vaguer word.
+It is too specific about the page, which ties it to one part of the site. — Specificity is not the fault; the fault is that the outcome restates the feature rather than naming what changes for the person.
 
 Check each of your own so-that clauses: if it repeats the need, the outcome is missing.
 
@@ -3387,15 +3531,15 @@ Made-up example. Marking the evidence behind five needs, and finding that two of
 **Unknown:** Still unknown: whether the owner is right. She may be describing exactly what happens. The mark records that nobody has checked, not that she is wrong.
 
 
-### For each need: the evidence source, or the word assumption
+### For each need: the evidence source (a session code, not a name), the word assumption, or “practice” for a supplied request
 
 Section: practice-plan. Stable action: write-evidence-marks.
 
-Write your answer for “For each need: the evidence source, or the word assumption”. Use the task instructions below to decide what to include.
+A request is not evidence about behaviour, so a need traced only to a request is an assumption with that request as its source.
 
-**Answer:** For each need: the evidence source, or the word assumption
+**Answer:** For each need: the evidence source (a session code, not a name), the word assumption, or “practice” for a supplied request
 
-
+A request is not evidence about behaviour, so a need traced only to a request is an assumption with that request as its source.
 
 
 ### For the two most consequential assumptions: what would happen if each is wrong
@@ -3417,18 +3561,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The studio owner knows the business well and asks for a reminder email. Is that a requirement?
 
-- It is a strong lead about a real problem, and it is not evidence about behaviour until something confirms it.
+- Not at all: only research findings with participants can count as requirements.
 - Yes: the person who runs the business is the authority on what it needs.
-- No: only research findings count as requirements.
+- A strong lead to convert into a need and check, not yet evidence about attendees.
 
 <details>
 <summary>After your attempt</summary>
 
-It is a strong lead about a real problem, and it is not evidence about behaviour until something confirms it. — Their knowledge is genuine and it is knowledge of the business, not of what attendees do. Treat the request as a pointer to a need worth investigating.
+Not at all: only research findings with participants can count as requirements. — Too dismissive. A stakeholder request often points at a real pattern they have seen many times; it just has to be converted and checked.
 
 Yes: the person who runs the business is the authority on what it needs. — They are the authority on constraints and goals. What attendees do is a different question that their position does not answer.
 
-No: only research findings count as requirements. — Too dismissive. A stakeholder request often points at a real pattern they have seen many times; it just has to be converted and checked.
+A strong lead to convert into a need and check, not yet evidence about attendees. — Their knowledge is genuine and it is knowledge of the business, not of what attendees do. Treat the request as a pointer to a need worth investigating.
 
 Improve: Check your evidence marks in step 4. Any need traceable only to a stakeholder request should be marked as an assumption with its consequence, then record the change in step 5.
 
@@ -3447,18 +3591,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your need statement reads “Attendees need a reminder email so that they receive a reminder.” What is wrong?
 
-- The outcome repeats the solution, so only one response can ever satisfy it.
-- It should specify the timing of the reminder.
-- Nothing, if the reminder is what the stakeholder asked for.
+- The outcome repeats the solution, so only one response could ever satisfy it.
+- It should say when the reminder is sent, such as the evening before the class.
+- Nothing serious, if a reminder is exactly what the stakeholder asked for.
 
 <details>
 <summary>After your attempt</summary>
 
-The outcome repeats the solution, so only one response can ever satisfy it. — The so-that clause exists to open the field. Circular, it closes it and hides that no outcome was identified.
+The outcome repeats the solution, so only one response could ever satisfy it. — The so-that clause exists to open the field. Circular, it closes it and hides that no outcome was identified.
 
-It should specify the timing of the reminder. — More detail about the solution moves further from the need.
+It should say when the reminder is sent, such as the evening before the class. — More detail about the solution moves further from the need.
 
-Nothing, if the reminder is what the stakeholder asked for. — Then it is the request rewritten, and the conversion has done no work.
+Nothing serious, if a reminder is exactly what the stakeholder asked for. — Then it is the request rewritten, and the conversion has done no work.
 
 Improve: Rewrite any circular so-that clause in step 3 to name what changes for the person, then record the change in step 5.
 
@@ -3477,18 +3621,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You could not write a so-that clause for one request. What should you do?
 
-- Record the difficulty as a finding: the request may have no outcome behind it, which is worth knowing.
-- Drop the request from the list.
-- Write the most plausible outcome so the table is complete.
+- Write the most plausible outcome you can, so that the table is complete.
+- Drop the request from the list, since it cannot be turned into a need.
+- Record the difficulty as a finding: the request may have no outcome behind it.
 
 <details>
 <summary>After your attempt</summary>
 
-Record the difficulty as a finding: the request may have no outcome behind it, which is worth knowing. — Inventing an outcome to complete the table manufactures a justification. The gap is a real and useful result.
+Write the most plausible outcome you can, so that the table is complete. — That is a fabricated need, and it will be quoted later as though someone wanted it.
 
-Drop the request from the list. — Dropping it hides a request that will come back. Keep it with the difficulty recorded.
+Drop the request from the list, since it cannot be turned into a need. — Dropping it hides a request that will come back. Keep it with the difficulty recorded.
 
-Write the most plausible outcome so the table is complete. — That is a fabricated need, and it will be quoted later as though someone wanted it.
+Record the difficulty as a finding: the request may have no outcome behind it. — Inventing an outcome to complete the table manufactures a justification. The gap is a real and useful result.
 
 Improve: Fill the hard-outcomes box in step 3 with any request you could not convert and why, then record it in step 5.
 
@@ -3536,6 +3680,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A community garden’s committee asks for “a members’ group chat so people stop leaving the gates open”. Separately, one member asks for “a nicer website”. There is no research with members yet.
+
+**Task:** Rewrite each request as a need with no solution in it, or record why you cannot. Mark its evidence status and explain one alternative response.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps the solution inside the need (“members need a group chat so that…”), writes a circular so-that clause, or invents an outcome for “a nicer website”.
+- Adequate: Writes a solution-free need (a member needs to know the gate rule at the moment of leaving, so that the garden stays secure), records that “a nicer website” has no clear outcome yet, labels both assumptions from requests, and names an alternative such as a sign on the gate.
+- Strong: As adequate, plus a question for the committee about what has actually happened with the gates, and notes whose need it is (the committee’s or the members’) and who else is affected.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -3607,13 +3777,13 @@ Repair: Scan each statement for nouns naming a mechanism — email, checkbox, bu
 
 **Every need has an evidence source or an assumption label**
 
-Adequate evidence: An evidence column with a specific source, such as a named session observation, or an explicit assumption label.
+Adequate evidence: An evidence column with a specific source, such as a coded session observation, or an explicit assumption or practice label.
 
 0 — No evidence column.
 
 1 — Column exists but entries are vague, such as “research” or “obvious”.
 
-2 — Each row names a specific source or is labelled an assumption.
+2 — Each row names a specific source (a session code, never a name) or is labelled assumption or practice.
 
 3 — As adequate, and the strength of each source is characterised, such as one participant's account rather than a pattern.
 
@@ -3733,7 +3903,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- For the need “attendees arrive with the right materials”, three responses were compared against doing nothing. A checkbox costs almost nothing to build and produces no change in behaviour and no evidence. A materials summary on the confirmation screen costs a little and reaches everyone who books. A day-before reminder reaches people at the right moment, costs a message channel and ongoing support, and fails for anyone whose contact details are wrong. The summary won on cost per unit of benefit, with the reminder recorded as the next candidate if evidence showed timing mattered more than availability.
+- Made-up example: for the need “attendees arrive with the right materials”, three responses were compared against doing nothing. A checkbox costs almost nothing to build and produces no change in behaviour and no evidence. A materials summary on the confirmation screen costs a little and reaches everyone who books. A day-before reminder reaches people at the right moment, costs a message channel and ongoing support, and fails for anyone whose contact details are wrong. The summary won on cost per unit of benefit, with the reminder recorded as the next candidate if evidence showed timing mattered more than availability.
 
 
 ### Choose where you will do the work
@@ -3822,15 +3992,15 @@ Write your answer for “Your strongest need, copied with its evidence mark”. 
 
 
 
-### What people actually do today, including doing nothing
+### What people actually do today, including doing nothing, marked observed or assumed
 
 Section: practice-plan. Stable action: write-baseline.
 
-Describe the workaround accurately. It is your real competitor.
+Describe the workaround accurately. It is your real competitor. Summarise anything from sessions without names; without sessions, mark it assumed.
 
-**Answer:** What people actually do today, including doing nothing
+**Answer:** What people actually do today, including doing nothing, marked observed or assumed
 
-Describe the workaround accurately. It is your real competitor.
+Describe the workaround accurately. It is your real competitor. Summarise anything from sessions without names; without sessions, mark it assumed.
 
 <details>
 <summary>Example</summary>
@@ -3938,21 +4108,21 @@ A supplied proposal from the same made-up project: replace the printed materials
 
 Which cost is most easily missed and most important to record?
 
-- The cost to the organisation of writing the email content.
-- There is no cost: the proposal is cheaper and more current.
-- The cost to the reader of opening an email.
-- The cost to people who do not use email or do not have a phone with them, who previously got the sheet at reception.
+- No real cost: the proposal is both cheaper to run and easier to keep current.
+- The organisation’s cost of writing and updating the email content every term.
+- People without email or a phone to hand, who used to get the sheet at reception.
+- The reader’s cost of finding, opening and reading one more email before class.
 
 <details>
 <summary>After your attempt</summary>
 
-The cost to the organisation of writing the email content. — Real and small, and it is the cost the organisation will notice by itself.
+No real cost: the proposal is both cheaper to run and easier to keep current. — Cheaper for the studio, and the saving is paid by whoever relied on the sheet.
 
-There is no cost: the proposal is cheaper and more current. — Cheaper for the studio, and the saving is paid by whoever relied on the sheet.
+The organisation’s cost of writing and updating the email content every term. — Real and small, and it is the cost the organisation will notice by itself.
 
-The cost to the reader of opening an email. — Worth noting and minor compared with losing the only route you had.
+People without email or a phone to hand, who used to get the sheet at reception. — Removing the old route disadvantages a group that used it. That cost is invisible in the proposal because those people are not the ones being designed for.
 
-The cost to people who do not use email or do not have a phone with them, who previously got the sheet at reception. — Removing the old route disadvantages a group that used it. That cost is invisible in the proposal because those people are not the ones being designed for.
+The reader’s cost of finding, opening and reading one more email before class. — Worth noting and minor compared with losing the only route you had.
 
 Write your own third column the same way: who used the old route, and what happens to them.
 
@@ -4007,18 +4177,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your response genuinely helps readers. Is that enough to justify building it?
 
-- Yes: user benefit is the point of design work.
-- No. Helping is necessary and not sufficient: a cheaper response, or the existing workaround, may serve the need well enough.
-- Yes, provided the organisation can afford it.
+- Yes: benefit to the people using it is the whole point of design work.
+- It is, provided the organisation can afford to build and maintain it.
+- Helping is necessary, not sufficient: a cheaper option may serve well enough.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes: user benefit is the point of design work. — Benefit at any cost, ignoring who pays and what already works, is how effort goes into things nobody needed.
+Yes: benefit to the people using it is the whole point of design work. — Benefit at any cost, ignoring who pays and what already works, is how effort goes into things nobody needed.
 
-No. Helping is necessary and not sufficient: a cheaper response, or the existing workaround, may serve the need well enough. — The comparison is against the baseline and the alternatives, not against nothing. Helping while being the wrong thing to build is common.
+It is, provided the organisation can afford to build and maintain it. — Affordability is one cost among several, and it says nothing about whether the workaround already suffices.
 
-Yes, provided the organisation can afford it. — Affordability is one cost among several, and it says nothing about whether the workaround already suffices.
+Helping is necessary, not sufficient: a cheaper option may serve well enough. — The comparison is against the baseline and the alternatives, not against nothing. Helping while being the wrong thing to build is common.
 
 Improve: Reread your why-this line in step 3. If it does not compare against the baseline and at least one alternative, rewrite it and record the change in step 5.
 
@@ -4037,18 +4207,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your baseline says “currently there is no way to do this.” What is likely wrong?
 
-- Nothing, if the feature genuinely does not exist yet.
-- People almost always have a workaround, and it is the thing your response actually has to beat.
-- It is fine as long as research confirmed it.
+- It is fine as long as earlier research confirmed that nobody copes today.
+- Nothing, if the feature itself genuinely does not exist anywhere yet.
+- It hides the workaround people already use, which your response has to beat.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing, if the feature genuinely does not exist yet. — The feature not existing is not the same as the need going unmet. People solve it some other way.
+It is fine as long as earlier research confirmed that nobody copes today. — Research rarely confirms an absence of coping behaviour; it usually reveals more of it.
 
-People almost always have a workaround, and it is the thing your response actually has to beat. — An empty baseline makes any proposal look necessary. The workaround is usually fast, trusted, and already in place.
+Nothing, if the feature itself genuinely does not exist anywhere yet. — The feature not existing is not the same as the need going unmet. People solve it some other way.
 
-It is fine as long as research confirmed it. — Research rarely confirms an absence of coping behaviour; it usually reveals more of it.
+It hides the workaround people already use, which your response has to beat. — An empty baseline makes any proposal look necessary. The workaround is usually fast, trusted, and already in place.
 
 Improve: Rewrite your baseline in step 2 to describe what people actually do, including asking someone or doing nothing, then record it in step 5.
 
@@ -4067,18 +4237,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You listed “must work on mobile” as a constraint. Is it?
 
-- No: nothing is truly fixed, so the list is meaningless.
-- Yes: most readers are on mobile, so it cannot change.
-- Probably a decision rather than a constraint; if it could be changed by someone deciding, mark it changeable and say what changing it would require.
+- Probably a decision: mark it changeable and say what changing it would take.
+- Yes, because most readers are on phones, so it can never be changed.
+- No, because nothing is truly fixed, so a constraint list means nothing.
 
 <details>
 <summary>After your attempt</summary>
 
-No: nothing is truly fixed, so the list is meaningless. — Some things genuinely are fixed within your horizon, such as a legal requirement or a budget already spent.
+Probably a decision: mark it changeable and say what changing it would take. — The distinction matters because constraints stop conversation and preferences should not. Marking it honestly keeps the option visible.
 
-Yes: most readers are on mobile, so it cannot change. — That is a strong reason for the decision, which is what makes it a decision.
+Yes, because most readers are on phones, so it can never be changed. — That is a strong reason for the decision, which is what makes it a decision.
 
-Probably a decision rather than a constraint; if it could be changed by someone deciding, mark it changeable and say what changing it would require. — The distinction matters because constraints stop conversation and preferences should not. Marking it honestly keeps the option visible.
+No, because nothing is truly fixed, so a constraint list means nothing. — Some things genuinely are fixed within your horizon, such as a legal requirement or a budget already spent.
 
 Improve: Go through your constraint list in step 5 and mark each fixed or changeable, adding what changing it would take, then record the change.
 
@@ -4124,6 +4294,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A farmers’ market wants an online pre-order page so stallholders know how much bread to bake. Today regular customers text stallholders directly, and everyone else buys whatever is left on the day. The market has no staff for the website beyond one volunteer.
+
+**Task:** Is a pre-order page worth building now? Compare it with today’s baseline, name who pays, explain your reasoning, and say what evidence would change your decision.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Says it helps customers so it should be built, describes the baseline as “nothing”, or lists no costs.
+- Adequate: Describes the texting workaround and its advantages, compares the page with it and with a cheaper option such as a shared order sheet, and names costs to customers, the volunteer and people without smartphones who rely on buying on the day.
+- Strong: As adequate, plus: treats the single volunteer as a real constraint, separate from preferences; names evidence that would change the decision, such as how much bread goes unsold; and accepts “do not build yet” as a valid outcome.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -4187,7 +4383,7 @@ Adequate evidence: A description of the current behaviour or workaround, includi
 
 1 — A baseline that only describes the current state as broken.
 
-2 — The baseline is accurate and names at least one advantage of the current way.
+2 — The baseline describes what people do today, marked observed or assumed, and names at least one advantage of the current way.
 
 3 — As adequate, and the baseline is sourced to something observed rather than assumed.
 
@@ -4321,7 +4517,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The riskiest assumption behind the materials summary was that attendees look for preparation information at all before travelling — not that a summary would be readable. The smallest build was therefore not a summary screen but a one-question message sent to five people who had recently booked, asking what they did before attending. The stopping rule was written first: if fewer than two described looking for information beforehand, the summary drops down the list and the reminder becomes the candidate instead. The result could not establish frequency across all attendees, and the write-up said so.
+- Made-up example: the riskiest assumption behind the materials summary was that attendees look for preparation information at all before travelling — not that a summary would be readable. The smallest build was therefore not a summary screen but a one-question message sent to five people who had recently booked and had agreed to be contacted, asking what they did before attending. The stopping rule was written first: if fewer than two described looking for information beforehand, the summary drops down the list and the reminder becomes the candidate instead. The result could not establish frequency across all attendees, and the write-up said so.
 
 
 ### Choose where you will do the work
@@ -4464,21 +4660,21 @@ Two supplied stopping rules for the same made-up card test. Rule A: “If attend
 
 Why is B the usable rule?
 
-- Because twenty bookers is a statistically valid sample.
+- Because it uses numbers, and numbers make any decision rule more scientific.
 - B is worse, because it might stop a promising direction on a small sample.
-- Because it uses numbers, and numbers are more scientific.
-- Its thresholds are concrete, so a disappointing result cannot be reinterpreted as encouraging afterwards.
+- Its thresholds are fixed in advance, so a poor result cannot be reread as good.
+- Because twenty bookers is a statistically valid sample for a studio this size.
 
 <details>
 <summary>After your attempt</summary>
 
-Because twenty bookers is a statistically valid sample. — It is not, and it does not need to be. This is a decision rule for your own work, not a claim about a population.
+Because it uses numbers, and numbers make any decision rule more scientific. — Numbers alone prove nothing. What matters is that the thresholds were fixed before the result arrived.
 
 B is worse, because it might stop a promising direction on a small sample. — That risk is real and it is why the rule has a redirect band. Without any rule, nothing ever stops.
 
-Because it uses numbers, and numbers are more scientific. — Numbers alone prove nothing. What matters is that the thresholds were fixed before the result arrived.
+Its thresholds are fixed in advance, so a poor result cannot be reread as good. — Written in advance with numbers, it constrains your future self. “Seem better prepared” can be read as success in almost any outcome.
 
-Its thresholds are concrete, so a disappointing result cannot be reinterpreted as encouraging afterwards. — Written in advance with numbers, it constrains your future self. “Seem better prepared” can be read as success in almost any outcome.
+Because twenty bookers is a statistically valid sample for a studio this size. — It is not, and it does not need to be. This is a decision rule for your own work, not a claim about a population.
 
 Write your own three bands now, before building, and make them concrete enough to hold you to them.
 
@@ -4571,15 +4767,15 @@ Write your answer for “The questions this build cannot answer, and which modul
 
 
 
-### If any real person is involved: what you will tell them, and what you will not collect
+### If any real person is involved: what you will tell them, and what you will not collect. If nobody is, say so
 
 Section: practice-plan. Stable action: write-ethics.
 
-Leave this if nobody else is involved.
+With no participant, write that nobody else is involved and what you would need before involving anyone. That is a complete answer.
 
-**Answer:** If any real person is involved: what you will tell them, and what you will not collect
+**Answer:** If any real person is involved: what you will tell them, and what you will not collect. If nobody is, say so
 
-Leave this if nobody else is involved.
+With no participant, write that nobody else is involved and what you would need before involving anyone. That is a complete answer.
 
 
 ### Check your reasoning · 1 of 3
@@ -4590,18 +4786,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Is the smallest build the first version of your product?
 
-- No. If it is, it is a release plan: with no stated uncertainty and no stopping rule it cannot fail, so it cannot inform anything.
-- Yes: it is the minimum you would be willing to release.
-- Yes, provided you gather feedback afterwards.
+- It is, provided you gather feedback from users after it has been released.
+- A different thing: it tests one assumption, while a first version is for use.
+- Yes, in practice: it is the minimum version you would be willing to release.
 
 <details>
 <summary>After your attempt</summary>
 
-No. If it is, it is a release plan: with no stated uncertainty and no stopping rule it cannot fail, so it cannot inform anything. — The build exists to resolve one assumption. A first version exists to be used, which is a different purpose with different content.
+It is, provided you gather feedback from users after it has been released. — Feedback on a release tells you about the release. It rarely isolates the assumption you were unsure about.
 
-Yes: it is the minimum you would be willing to release. — Willingness to release is about quality and scope. This is about which uncertainty you are resolving.
+A different thing: it tests one assumption, while a first version is for use. — The build exists to resolve one assumption. A first version exists to be used, which is a different purpose with different content.
 
-Yes, provided you gather feedback afterwards. — Feedback on a release tells you about the release. It rarely isolates the assumption you were unsure about.
+Yes, in practice: it is the minimum version you would be willing to release. — Willingness to release is about quality and scope. This is about which uncertainty you are resolving.
 
 Improve: Reread your build in step 2. If it resembles a first version, cut it to the smallest thing that tests the riskiest assumption and record what you removed in step 5.
 
@@ -4620,18 +4816,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Why write the stopping rule before building rather than after the result?
 
-- Because afterwards almost any result can be read as encouraging, and the rule stops that.
-- It is a formality that funders expect.
-- To save time when the results arrive.
+- Afterwards, almost any result can be read as encouraging; the rule prevents that.
+- To save time later, because the analysis is already planned when results arrive.
+- Funders and managers usually expect to see one, so it is a necessary formality.
 
 <details>
 <summary>After your attempt</summary>
 
-Because afterwards almost any result can be read as encouraging, and the rule stops that. — It is a commitment made while you are still able to be impartial. Written after, it is a justification for what you already want.
+Afterwards, almost any result can be read as encouraging; the rule prevents that. — It is a commitment made while you are still able to be impartial. Written after, it is a justification for what you already want.
 
-It is a formality that funders expect. — It is a discipline for your own decision-making, whether or not anyone else reads it.
+To save time later, because the analysis is already planned when results arrive. — Time is not the point. The point is that your judgement changes once you are invested in the outcome.
 
-To save time when the results arrive. — Time is not the point. The point is that your judgement changes once you are invested in the outcome.
+Funders and managers usually expect to see one, so it is a necessary formality. — It is a discipline for your own decision-making, whether or not anyone else reads it.
 
 Improve: If any band in step 3 is vague, rewrite it with a concrete threshold, and record the change in step 5.
 
@@ -4650,20 +4846,20 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your build will involve twenty real people at the studio. What must be true?
 
-- They know what is happening, agree to it, and you collect nothing about them you do not need.
-- Only that the studio owner agrees.
+- They know what is happening, agree to it, and you collect only what you need.
+- Only that the studio owner has agreed to the test happening on the premises.
 - Nothing special: they are customers receiving a card, not research participants.
 
 <details>
 <summary>After your attempt</summary>
 
-They know what is happening, agree to it, and you collect nothing about them you do not need. — A test involving real people is research, however informal, and consent and data minimisation apply to it.
+They know what is happening, agree to it, and you collect only what you need. — A test involving real people is research, however informal, and consent and data minimisation apply to it.
 
-Only that the studio owner agrees. — The owner can permit the activity on their premises. They cannot consent on behalf of the people you are observing.
+Only that the studio owner has agreed to the test happening on the premises. — The owner can permit the activity on their premises. They cannot consent on behalf of the people you are observing.
 
 Nothing special: they are customers receiving a card, not research participants. — You are observing their behaviour to answer a question. That is what makes it research regardless of the label.
 
-Improve: Fill the ethics box in step 4 with what you will tell people and what you will not collect, then record the change in step 5.
+Improve: Fill the ethics box in step 4 with what you will tell people and what you will not collect, or, if nobody else is involved, say so and what you would need first. Record the change in step 5.
 
 Check again: If real people are involved, the record says what they are told and what is collected.
 
@@ -4698,6 +4894,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A neighbourhood tool library plans an online booking system with reminders, a waiting list and payments. Its riskiest assumption is that members would book ahead at all; today everyone just turns up. It has a paper sign-up sheet and a noticeboard.
+
+**Task:** Describe the smallest build that would test that assumption, and write its continue, redirect and stop rules before any result. Explain why each element is needed.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Proposes a cut-down booking app as version one, or writes a rule such as “continue if members seem interested” with no thresholds.
+- Adequate: Proposes a minimal test, such as a “book a slot” column on the paper sheet for two weeks, ties each element to the assumption, and writes concrete continue, redirect and stop thresholds before starting.
+- Strong: As adequate, plus a boundary: what the test cannot show (demand at scale, willingness to pay), how anyone involved is told what is happening, and that nothing beyond what the test needs is collected.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice

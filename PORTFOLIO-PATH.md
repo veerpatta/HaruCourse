@@ -114,7 +114,7 @@ Constraints: Prototype static response scenarios; no model API or automated send
 
 - m16: choose the brief, investigate the existing workflow and define failure/evaluation scenarios. Both choices explore whether AI is appropriate.
 - m17: map roles, access, handoffs and service dependencies; preserve competing design options.
-- m18: independently prototype, evaluate and revise a bounded workflow; assemble evidence, limitations and the third draft case study.
+- m18: independently prototype, evaluate and revise a bounded workflow; run the privacy and access-control stop gate with made-up records before any real use; assemble evidence, limitations and a draft case study.
 
 ## Case-study sections
 
@@ -278,21 +278,21 @@ Later use: Transfer learning to responsive web Project 2
 
 Start: Project 1 reflection and a new reachable audience
 
-Challenge: Choose Project 2; learn web behavior by building
+Challenge: Choose Project 2; learn how the web behaves, building only on the optional extension
 
-Tools: Local text editor, HTML/CSS starter and browser tools
+Tools: Local text editor, supplied HTML/CSS starters and browser tools
 
-Save: Responsive prototype and problem/evidence fragment
+Save: Responsive specification and handover (core) or responsive prototype (extension), with a problem/evidence fragment
 
 Later use: Extract reusable decisions in m13
 
 ### m13: Design systems (published)
 
-Start: Project 2 responsive prototype
+Start: Project 1 screens and states (core path) or Project 2 prototype (extension), plus the supplied component
 
 Challenge: Create a documented component system
 
-Tools: Local CSS tokens and components; optional verified editor
+Tools: The supplied component and written specifications (no coding on the core route); local CSS tokens on the extension
 
 Save: System, usage rules, states and change history
 
@@ -300,7 +300,7 @@ Later use: Prepare delivery in m14
 
 ### m14: Delivery and collaboration (published)
 
-Start: Project 2 prototype and system
+Start: Project 1 work (core path) or Project 2 prototype and system (full library)
 
 Challenge: Rehearse handoff and design QA
 
@@ -312,7 +312,7 @@ Later use: Define measurement questions in m15
 
 ### m15: Analytics and experiments (published)
 
-Start: Project 2 goals and QA evidence
+Start: Project 1 or Project 2 goals and QA evidence
 
 Challenge: Reason with metrics and experiments
 
@@ -356,17 +356,17 @@ Tools: Appropriate previously learned free tools
 
 Save: Third project evidence, iteration and draft case study
 
-Later use: Curate all three projects in m19
+Later use: Curate your two or three projects in m19
 
 ### m19: Portfolio and storytelling (published)
 
-Start: Three draft case studies and evidence banks
+Start: Draft case studies and evidence banks
 
 Challenge: Select the strongest reasoning and tell a truthful story
 
 Tools: Local document or slides; PDF export
 
-Save: Three case studies and portfolio presentation
+Save: Two or three case studies and a presentation
 
 Later use: Tailor evidence to real roles in m20
 

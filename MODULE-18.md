@@ -2,7 +2,7 @@
 
 > Beginner teaching refinement is tracked lesson by lesson. See [the all-course beginner audit](docs/BEGINNER-LESSON-AUDIT.md) for every lesson's gap and [the learning-experience plan](docs/LEARNING-EXPERIENCE-PLAN.md) for implementation and verification. Follow [the all-course action contract](docs/COURSE-AUTHORING.md#all-course-action-contract--13-september-2026). All 224 published teaching lessons use saved action flows. Published, teaching-refined, learner-validated and assessed remain separate states.
 
-Generated from src/module18.ts; edit that source, then run npm run docs:generate. Level 5 · Module m18 · requirement areas 4, 10, 17. Optional effort 40 hours across 12 lessons: 22.583333333333332 hours of lesson steps, and the remainder for the fieldwork, waiting, recruitment and iteration this module's output needs outside them. No deadlines; split any lesson across sessions and return to it without penalty.
+Generated from src/module18.ts; edit that source, then run npm run docs:generate. Level 5 · Module m18 · requirement areas 4, 10, 17. Optional effort 40 hours across 12 lessons: 22.75 hours of lesson steps, and the remainder for the fieldwork, waiting, recruitment and iteration this module's output needs outside them. No deadlines; split any lesson across sessions and return to it without penalty.
 
 Prerequisite: m17. This is guidance for meaningful practice, not a lock. Module approved resource pair: R19 / R22. Every resource restriction in RESOURCE-LIBRARY.md applies; required exercises never depend on a candidate tool workflow.
 
@@ -14,13 +14,14 @@ Stable ID: m18-l01-v1. Core.
 
 Most independent projects fail on access, not on ambition. Choosing without checking who will talk to you is choosing to invent findings later.
 
-Bring: Your earlier project work and its recorded gaps.
+Bring: Your earlier project work, its recorded gaps, and any Module 16–17 brief.
 
 Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
+- Your Module 16–17 brief continued, or the written reason for replacing it
 - A chosen domain, different from earlier projects
 - A problem someone already has, in their words
-- Three named people who have agreed to take part
+- Agreement from three people, recorded by role — or a stated alternate route
 - A scope in weeks and a written abandonment condition
 
 ### Start here: in everyday words
@@ -33,43 +34,43 @@ An independent project brings the research, design, testing and decision trail t
 - **A new domain:** Different from your earlier projects, so the portfolio shows range rather than the same setting three times.
 - **The access gate:** Three agreements before committing. It is the decision most independent projects get wrong, and it is made first here for that reason.
 
-**Quick example.** Made-up example. Choosing a third project, and choosing the interesting one. A domain I found genuinely interesting, where I knew nobody, on a problem I had read about rather than heard about.
+**Quick example.** Made-up example. Choosing an independent project, and choosing the interesting one. A domain I found genuinely interesting, where I knew nobody, on a problem I had read about rather than heard about.
 
-The reader demonstrates and guides the task before asking for “Domain 1 · the domain, who you know there, and the problem you have heard somebody complain about”.
+The reader demonstrates and guides the task before asking for “Domain 1 · the domain, who you know there (by role, not name), and the problem you have heard somebody complain about”.
 
 ### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
-Choose a domain, a problem and a scope for the third project, and prove you have access to at least three people before committing to it.
+Choose a domain, a problem and a scope for the independent project — continuing your Module 16–17 brief or writing why you are replacing it — and confirm that at least three people have agreed before committing, or choose an honest alternate route.
 
 
-### Choose a domain you have not used for practice, to widen the portfolio
+### Idea 1: Start from your Module 16–17 brief: continue it, or write why…
 
 Section: learn. Stable action: learn-1.
 
-Choose a domain you have not used for practice, to widen the portfolio.
+Start from your Module 16–17 brief: continue it, or write why you are replacing it. Arriving from Project 1 without one, choose a brief now.
 
 
-### Access first: name three people who will talk to you before you commit
+### Idea 2: Choose a domain your earlier projects did not use, so the port…
 
 Section: learn. Stable action: learn-2.
 
-Access first: name three people who will talk to you before you commit.
+Choose a domain your earlier projects did not use, so the portfolio shows the process transfers.
 
 
-### Prefer a problem someone already has to one you find interesting
+### Idea 3: Access first: three people who have said yes before you commit…
 
 Section: learn. Stable action: learn-3.
 
-Prefer a problem someone already has to one you find interesting.
+Access first: three people who have said yes before you commit — or an honest alternate route, never invented participants.
 
 
-### Scope to the appetite you actually have, in weeks
+### Idea 4: Prefer a problem someone already has to one you find interesti…
 
 Section: learn. Stable action: learn-4.
 
-Scope to the appetite you actually have, in weeks.
+Prefer a problem someone already has to one you find interesting, and scope it to the weeks you actually have.
 
 
 ### Write what would make you abandon it
@@ -85,7 +86,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Three candidate domains were considered: a physiotherapy clinic's appointment reminders, a tuition centre's parent communication, and a repair shop's job tracking. The third was chosen because the owner had already complained about the problem twice and agreed to two conversations, and two customers agreed through him. The problem: nobody can tell a customer when a repair will be ready, so the shop is interrupted by calls all day. Scope: four weeks of evenings. Abandonment condition: if the shop's owner becomes unavailable for two consecutive weeks, stop and record it.
+- The Module 16–17 brief — request handling for a volunteer group — was replaced, with the reason written: the coordinator who had agreed to take part stepped down, and nobody else could within the appetite. Its role-and-permission map carried over. Three candidate domains followed: a physiotherapy clinic's appointment reminders, a tuition centre's parent communication, and a repair shop's job tracking. The third was chosen because the owner had already complained about the problem twice and agreed to two conversations, and two customers agreed through him — three people, recorded by role. The problem: nobody can tell a customer when a repair will be ready, so the shop is interrupted by calls all day. Scope: four weeks of evenings. Abandonment condition: if the owner becomes unavailable for two consecutive weeks, stop and record it.
 
 
 ### Choose where you will do the work
@@ -97,31 +98,44 @@ Recommended route: Fill the worksheet in this app, step by step. It saves as you
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
 
 
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Fictional practice brief, for the practice route only. A volunteer-run community tool library lends drills, ladders and garden tools from a shed behind a community hall, open on Saturday mornings and Wednesday evenings. Members reserve tools on a paper sheet.
+- Supplied complaint from the fictional coordinator: “Every Saturday somebody arrives for a tool that never came back, and I spend the morning apologising.”
+- Supplied notes from two fictional members, summarised without names: member A drove over twice for a hedge trimmer that was still out on loan; member B now phones the coordinator before every visit. Both said they would rather know before leaving home.
+- Label everything from this brief “supplied practice”. It is not research, and nothing from it may be reported as findings about real people or as real impact.
+
+
 ### List candidate domains
 
 Section: practice-plan. Stable action: step-1-brief.
 
 Three candidate domains you have not used, each with somebody you know and a problem you have heard them complain about.
 
-- List three domains you have not used, where you know someone.
+- Start from your Module 16–17 brief: continue it, or write why you are replacing it.
+- List up to three domains you have not used, where you know someone.
 - For each, write the problem you have heard someone complain about.
 
-**Start here:** Think about what people have complained to you about in the last six months.
+**Start here:** Open your Module 16–17 brief first and decide whether it survives; then think about what people have complained to you about in the last six months.
 
-**Enough:** Each domain names a person you could message today.
+**Enough:** Each domain names a person you could message today, and the brief decision has a reason.
 
 **A problem somebody already has:** One you have heard complained about. It is far easier to get access to, and it is far more likely to be real.
 
 **A new domain:** Different from your earlier projects, so the portfolio shows range rather than the same setting three times.
 
 
-### Domain 1 · the domain, who you know there, and the problem you have heard somebody complain about
+### Domain 1 · the domain, who you know there (by role, not name), and the problem you have heard somebody complain about
 
 Section: practice-plan. Stable action: write-domain-1.
 
 Heard somebody complain about, rather than one you find interesting. The difference decides whether anybody will talk to you.
 
-**Answer:** Domain 1 · the domain, who you know there, and the problem you have heard somebody complain about
+**Answer:** Domain 1 · the domain, who you know there (by role, not name), and the problem you have heard somebody complain about
 
 Heard somebody complain about, rather than one you find interesting. The difference decides whether anybody will talk to you.
 
@@ -133,37 +147,55 @@ Example (made up): a repair shop. I know the owner. He has complained twice that
 </details>
 
 
-### Domain 2 · the domain, who you know there, and the problem you have heard somebody complain about
+### Domain 2 · the domain, who you know there (by role, not name), and the problem you have heard somebody complain about
 
 Section: practice-plan. Stable action: write-domain-2.
 
-Write your answer for “Domain 2 · the domain, who you know there, and the problem you have heard somebody complain about”. Use the task instructions below to decide what to include.
+Write your answer for “Domain 2 · the domain, who you know there (by role, not name), and the problem you have heard somebody complain about”. Use the task instructions below to decide what to include.
 
-**Answer:** Domain 2 · the domain, who you know there, and the problem you have heard somebody complain about
-
-
+**Answer:** Domain 2 · the domain, who you know there (by role, not name), and the problem you have heard somebody complain about
 
 
-### Domain 3 · the domain, who you know there, and the problem you have heard somebody complain about
+
+
+### Domain 3 · the domain, who you know there (by role, not name), and the problem you have heard somebody complain about
 
 Section: practice-plan. Stable action: write-domain-3.
 
-Write your answer for “Domain 3 · the domain, who you know there, and the problem you have heard somebody complain about”. Use the task instructions below to decide what to include.
+Write your answer for “Domain 3 · the domain, who you know there (by role, not name), and the problem you have heard somebody complain about”. Use the task instructions below to decide what to include.
 
-**Answer:** Domain 3 · the domain, who you know there, and the problem you have heard somebody complain about
+**Answer:** Domain 3 · the domain, who you know there (by role, not name), and the problem you have heard somebody complain about
 
 
+
+
+### Your Module 16–17 project brief: continued, or replaced — and why
+
+Section: practice-plan. Stable action: write-brief-decision.
+
+Continuing saves the roles and failure scenarios you already mapped. Replacing is allowed with a written reason. Arriving from Project 1 without a brief? Write that, and which brief you are choosing now.
+
+**Answer:** Your Module 16–17 project brief: continued, or replaced — and why
+
+Continuing saves the roles and failure scenarios you already mapped. Replacing is allowed with a written reason. Arriving from Project 1 without a brief? Write that, and which brief you are choosing now.
+
+<details>
+<summary>Example</summary>
+
+Example (made up): replaced. The volunteer coordinator who agreed to take part stepped down; the role-and-permission map carries over to the new domain.
+
+</details>
 
 
 ### Test access
 
 Section: practice-plan. Stable action: step-2-brief.
 
-Three named people who have agreed, who declined and why, and what you will do if you cannot reach three.
+Your access route, the three people who agreed by role — or your alternate route — and who declined or could not be reached.
 
 - Approach people in the most promising domain.
-- Get agreement from at least three before committing.
-- Record who declined and why.
+- Get agreement from at least three before committing, or choose an alternate route.
+- Record, by role, who agreed and who declined and why.
 
 **Start here:** Ask one person today and see how the conversation actually goes.
 
@@ -171,14 +203,14 @@ Three named people who have agreed, who declined and why, and what you will do i
 
 **The access gate:** Three agreements before committing. It is the decision most independent projects get wrong, and it is made first here for that reason.
 
-**The alternate route:** One participant with a narrower scope, or a supplied brief worked through and labelled practice. Both produce real work; neither produces invented findings.
+**The alternate route:** One participant with a narrower scope, or the supplied practice brief in this lesson’s source notes, labelled practice. Both produce real work; neither produces findings about real people.
 
 
 ### See the decision being made
 
 Section: practice-plan. Stable action: step-2-demo.
 
-Made-up example. Choosing a third project, and choosing the interesting one.
+Made-up example. Choosing an independent project, and choosing the interesting one.
 
 **What I chose:** A domain I found genuinely interesting, where I knew nobody, on a problem I had read about rather than heard about.
 
@@ -201,7 +233,7 @@ Made-up example. Choosing a third project, and choosing the interesting one.
 
 Section: practice-plan. Stable action: step-2-sort-1.
 
-Six situations from a made up search for a third project. For each one, decide whether the access gate is passed.
+Six situations from a made up search for an independent project. For each one, decide whether the access gate is passed.
 
 The shop owner has agreed to two conversations and introduced you to two customers, both of whom have said yes.
 
@@ -227,7 +259,7 @@ Now check your own situation against the same question: has each person said yes
 
 Section: practice-plan. Stable action: step-2-sort-2.
 
-Six situations from a made up search for a third project. For each one, decide whether the access gate is passed.
+Six situations from a made up search for an independent project. For each one, decide whether the access gate is passed.
 
 A friend in the domain seems keen and has said she will ask around.
 
@@ -253,7 +285,7 @@ Now check your own situation against the same question: has each person said yes
 
 Section: practice-plan. Stable action: step-2-sort-3.
 
-Six situations from a made up search for a third project. For each one, decide whether the access gate is passed.
+Six situations from a made up search for an independent project. For each one, decide whether the access gate is passed.
 
 Eleven messages sent to an interesting domain, two replies, no agreements, over three weeks.
 
@@ -279,7 +311,7 @@ Now check your own situation against the same question: has each person said yes
 
 Section: practice-plan. Stable action: step-2-sort-4.
 
-Six situations from a made up search for a third project. For each one, decide whether the access gate is passed.
+Six situations from a made up search for an independent project. For each one, decide whether the access gate is passed.
 
 One person has agreed enthusiastically. Nobody else in the domain is reachable.
 
@@ -305,7 +337,7 @@ Now check your own situation against the same question: has each person said yes
 
 Section: practice-plan. Stable action: step-2-sort-5.
 
-Six situations from a made up search for a third project. For each one, decide whether the access gate is passed.
+Six situations from a made up search for an independent project. For each one, decide whether the access gate is passed.
 
 Three colleagues have offered to role-play customers of the shop.
 
@@ -331,7 +363,7 @@ Now check your own situation against the same question: has each person said yes
 
 Section: practice-plan. Stable action: step-2-sort-6.
 
-Six situations from a made up search for a third project. For each one, decide whether the access gate is passed.
+Six situations from a made up search for an independent project. For each one, decide whether the access gate is passed.
 
 The owner has agreed, and says two staff will take part, though you have not spoken to them.
 
@@ -353,37 +385,54 @@ Now check your own situation against the same question: has each person said yes
 </details>
 
 
-### Three named people who have agreed to take part, and what they agreed to
+### Which route your access allows
+
+Section: practice-plan. Stable action: write-access-route.
+
+Choose the option that honestly describes your work.
+
+**Answer:** Which route your access allows (Three or more people have agreed: the full route / One person has agreed: the bounded single-participant route / Nobody yet: the supplied practice brief, labelled practice)
+
+All three are complete routes. What is never open is inventing the people you could not reach.
+
+
+### The three people who have agreed, by role rather than name, and what each agreed to
 
 Section: practice-plan. Stable action: write-three-agreed.
 
-Agreed, not likely to agree. The whole gate is whether somebody has said yes.
+Agreed, not likely to agree. Keep names and contact details in your private notes; write roles here, such as the owner or a regular customer.
 
-**Answer:** Three named people who have agreed to take part, and what they agreed to
+**Answer:** The three people who have agreed, by role rather than name, and what each agreed to
 
-Agreed, not likely to agree. The whole gate is whether somebody has said yes.
+Required only when access-route is Three or more people have agreed: the full route. Otherwise leave participant evidence empty.
+
+Agreed, not likely to agree. Keep names and contact details in your private notes; write roles here, such as the owner or a regular customer.
 
 
-### Who declined, and why
+### Who declined or could not be reached, by role, and why
 
 Section: practice-plan. Stable action: write-declined.
 
-Useful information rather than a failure. It often says something about the domain.
+Useful information rather than a failure. It often says something about the domain. Roles only.
 
-**Answer:** Who declined, and why
+**Answer:** Who declined or could not be reached, by role, and why
 
-Useful information rather than a failure. It often says something about the domain.
+Optional: may be left empty.
+
+Useful information rather than a failure. It often says something about the domain. Roles only.
 
 
-### If you cannot reach three, what you will do instead
+### Your alternate route, and what it can and cannot establish
 
 Section: practice-plan. Stable action: write-no-three.
 
-The alternate route: one person and a bounded scope, or a supplied brief worked through and labelled as practice. Both are complete answers; inventing participants is not.
+One person with a narrower scope, or the supplied practice brief in this lesson’s source notes, labelled practice. Both are complete answers; inventing participants is not.
 
-**Answer:** If you cannot reach three, what you will do instead
+**Answer:** Your alternate route, and what it can and cannot establish
 
-The alternate route: one person and a bounded scope, or a supplied brief worked through and labelled as practice. Both are complete answers; inventing participants is not.
+Required only when access-route is One person has agreed: the bounded single-participant route or Nobody yet: the supplied practice brief, labelled practice. Otherwise leave participant evidence empty.
+
+One person with a narrower scope, or the supplied practice brief in this lesson’s source notes, labelled practice. Both are complete answers; inventing participants is not.
 
 
 ### State the problem in their words
@@ -404,15 +453,15 @@ The problem in the person’s own words, checked as a problem rather than a solu
 **A solution in disguise:** A problem statement naming a thing to build: we need an app, we need notifications. It closes the question before anybody has asked it.
 
 
-### The problem as the person described it
+### The problem close to how the person described it, without their name — or the supplied brief’s quoted complaint
 
 Section: practice-plan. Stable action: write-their-words.
 
-Their sentence, not your restatement. Yours will already contain a solution.
+Their wording, not your restatement; yours will already contain a solution. Keep any verbatim note in your private notes with a date to delete it.
 
-**Answer:** The problem as the person described it
+**Answer:** The problem close to how the person described it, without their name — or the supplied brief’s quoted complaint
 
-Their sentence, not your restatement. Yours will already contain a solution.
+Their wording, not your restatement; yours will already contain a solution. Keep any verbatim note in your private notes with a date to delete it.
 
 
 ### How you checked it is not a solution in disguise
@@ -472,26 +521,26 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You plan to find participants once the project is under way. What happens?
+You plan to find participants once the project is under way. What is the likely result?
 
-- Either the project stalls, or you write something research-shaped without research. Access is the first decision rather than a later step.
-- It usually works out, since people are helpful once asked properly.
-- You lose some time but the work is unaffected.
+- It usually works out, because people with the problem are glad to help once asked well.
+- You lose a few weeks of the appetite, but the quality of the research itself is unaffected.
+- The project stalls, or you end up writing something research-shaped without any research.
 
 <details>
 <summary>After your attempt</summary>
 
-Either the project stalls, or you write something research-shaped without research. Access is the first decision rather than a later step. — Three weeks of unanswered messages costs a fifth of a four-week appetite. A domain where somebody has already complained twice takes one conversation.
+It usually works out, because people with the problem are glad to help once asked well. — Some are. The ones who already have the problem are far more likely to be, which is why the choice of domain comes first.
 
-It usually works out, since people are helpful once asked properly. — Some are. The ones who already have the problem are far more likely to be, which is why the choice comes first.
+You lose a few weeks of the appetite, but the quality of the research itself is unaffected. — The work is what gets compressed, and the compression lands on the research.
 
-You lose some time but the work is unaffected. — The work is what gets compressed, and the compression lands on the research.
+The project stalls, or you end up writing something research-shaped without any research. — Access is the first decision rather than a later step. Three weeks of unanswered messages costs a fifth of a four-week appetite; a domain where somebody has already complained twice takes one conversation.
 
 Improve: Get three agreements before committing, in step 2, or write which alternate route you are taking. Record the change in step 5.
 
 Check again: Either three people have said yes, or your route is written down.
 
-Answers to revisit: three-agreed, declined, no-three, improvement-made
+Answers to revisit: access-route, three-agreed, declined, no-three, improvement-made
 
 </details>
 
@@ -502,26 +551,26 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You can only reach one person. Is the module unavailable to you?
+You can only reach one person. Is the independent project closed to you?
 
-- No, you can extrapolate from one person carefully.
-- No. One participant with a narrower scope, or a supplied brief worked through and labelled practice, are both complete routes.
-- Effectively yes, since the project needs three.
+- It is open: one person with a narrower scope, or the supplied brief labelled practice, are complete routes.
+- It is effectively closed, because the full route needs three people and one cannot stand in for them.
+- It is open, as long as you extrapolate carefully from that one person to the customers you cannot reach.
 
 <details>
 <summary>After your attempt</summary>
 
-No, you can extrapolate from one person carefully. — You can report what one person did. Extrapolating is the thing this course refuses throughout.
+It is open: one person with a narrower scope, or the supplied brief labelled practice, are complete routes. — What is not available is inventing the other two. A bounded project honestly labelled is real work; a three-participant study with two imagined participants is not.
 
-No. One participant with a narrower scope, or a supplied brief worked through and labelled practice, are both complete routes. — What is not available is inventing the other two. A bounded project honestly labelled is real work; a three-participant study with two imagined participants is not.
+It is effectively closed, because the full route needs three people and one cannot stand in for them. — Three is the preferred route. Treating its absence as disqualification is what makes people invent the difference.
 
-Effectively yes, since the project needs three. — Three is the preferred route. Treating its absence as disqualification is what makes people invent the difference.
+It is open, as long as you extrapolate carefully from that one person to the customers you cannot reach. — You can report what one person did and said. Extrapolating to people nobody spoke to is the thing this course refuses throughout.
 
-Improve: Write your alternate route in step 2, naming what it can and cannot establish. Record the change in step 5.
+Improve: Choose your route in step 2 and write what it can and cannot establish. Record the change in step 5.
 
 Check again: Your route is stated and nothing in it invents a participant.
 
-Answers to revisit: three-agreed, declined, no-three, improvement-made
+Answers to revisit: access-route, three-agreed, declined, no-three, improvement-made
 
 </details>
 
@@ -535,17 +584,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 Your problem statement says the shop needs a notification system. What is wrong with it?
 
 - It names a thing to build, so the question is closed before anybody has asked it.
-- It is too specific for this stage.
-- Nothing, if that is what the person asked for.
+- Nothing is wrong with it if the owner asked for notifications in those words.
+- It is too specific for this stage; a broader statement would leave more room later.
 
 <details>
 <summary>After your attempt</summary>
 
 It names a thing to build, so the question is closed before anybody has asked it. — The problem in his words was that he cannot tell customers when a repair will be ready, so he is interrupted by calls all day. Several things would address that, and notifications is one guess.
 
-It is too specific for this stage. — Specificity is good. Naming a solution is the problem.
+Nothing is wrong with it if the owner asked for notifications in those words. — It is frequently what people ask for, because they are describing the fix they can imagine. Their request is a finding; the problem sits underneath it.
 
-Nothing, if that is what the person asked for. — It is frequently what people ask for, because they are describing the fix they can imagine.
+It is too specific for this stage; a broader statement would leave more room later. — Specificity is good. Naming a solution is the problem, however broadly it is worded.
 
 Improve: Rewrite the problem in their words in step 3, with no thing to build in it. Record the change in step 5.
 
@@ -617,15 +666,41 @@ Example (made up): if the owner is unavailable for two consecutive weeks, stop, 
 </details>
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: You want an independent project on how a small bakery handles custom cake orders, a domain you find exciting, but you know nobody there. A neighbour who runs a tailoring shop has complained twice that customers keep ringing to ask whether alterations are done; she offers to talk and says she will ask two regular customers. You have four weeks of evenings.
+
+**Task:** Which project would you choose, and why? Say what access you actually have and what you would do if fewer than three people agree.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Chooses the bakery because it is more interesting and plans to find participants once started; access is treated as a later step, or the neighbour agreeing on her customers’ behalf is counted as three agreements.
+- Adequate: Chooses the tailoring shop because somebody already has the problem and agreement is within reach, and says the gate is each person saying yes directly, so the two customers still have to be asked.
+- Strong: As adequate, and names the trade-off of a less appealing domain, states the alternate route — one participant or a labelled practice brief — if the customers decline, and refuses to invent the missing people.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -648,7 +723,7 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: Choosing a project you can actually finish
-What I am trying to do: Choose a domain, a problem and a scope for the third project, and prove you have access to at least three people before committing to it.
+What I am trying to do: Choose a domain, a problem and a scope for the independent project — continuing your Module 16–17 brief or writing why you are replacing it — and confirm that at least three people have agreed before committing, or choose an honest alternate route.
 
 Key idea or terms:
 A problem somebody already has: One you have heard complained about. It is far easier to get access to, and it is far more likely to be real.
@@ -656,24 +731,24 @@ A new domain: Different from your earlier projects, so the portfolio shows range
 The access gate: Three agreements before committing. It is the decision most independent projects get wrong, and it is made first here for that reason.
 
 Supplied practice material (fictional or labelled practice, not my research):
-Made-up example. Choosing a third project, and choosing the interesting one. A domain I found genuinely interesting, where I knew nobody, on a problem I had read about rather than heard about.
+Made-up example. Choosing an independent project, and choosing the interesting one. A domain I found genuinely interesting, where I knew nobody, on a problem I had read about rather than heard about.
 
 Activity: Act as a project reviewer using only the supplied case. Ask for my decision, the evidence behind it and the gap I would investigate next. Do not invent users, results or impact.
 
 Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
-When the activity is finished, tell me to return to the course answer called “Domain 1 · the domain, who you know there, and the problem you have heard somebody complain about” and write my own decision. Do not write that answer for me.
+When the activity is finished, tell me to return to the course answer called “Domain 1 · the domain, who you know there (by role, not name), and the problem you have heard somebody complain about” and write my own decision. Do not write that answer for me.
 ```
 
-**Come back to the course:** Return to “Domain 1 · the domain, who you know there, and the problem you have heard somebody complain about”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+**Come back to the course:** Return to “Domain 1 · the domain, who you know there (by role, not name), and the problem you have heard somebody complain about”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Domain 1 · the domain, who you know there, and the problem you have heard somebody complain about” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Domain 1 · the domain, who you know there (by role, not name), and the problem you have heard somebody complain about” and write one sentence in your own words.
 
 </details>
 <details>
 <summary>Optional hints and reference material</summary>
 
-- Choose a context whose constraints differ from your earlier projects.
-- Ask three people directly and record their answers before starting the work.
+- Write whether you are continuing your brief and why, and choose a context whose constraints differ from your earlier projects.
+- Ask three people directly and record their answers by role, or write which alternate route you are taking and what it cannot establish.
 
 - R52: [GOV.UK: finding user research participants](https://www.gov.uk/service-manual/user-research/find-user-research-participants) — Recruitment routes, criteria and realistic lead times. Purpose: Supplies the access planning this lesson requires up front. Free reading, no account. Verified 2026-09-06; last updated 28 April 2020. Written for teams with agencies; your route is your own network and must be declared in the project. Fallback: R08.
 - R47: [Ryan Singer: Shape Up](https://basecamp.com/shapeup/webbook) — Setting the appetite before scoping. Purpose: Gives the discipline for scoping the project to the time you actually have. Free to read online; print edition sold and not required. Verified 2026-09-06. One company's process; take the appetite reasoning. Fallback: R07.
@@ -682,37 +757,37 @@ When the activity is finished, tell me to return to the course answer called “
 <details>
 <summary>Creator review and remediation criteria</summary>
 
-**The domain differs from earlier projects**
+**The domain is new and the brief decision is written**
 
-Adequate evidence: A domain and context distinct from your previous work.
+Adequate evidence: Your Module 16–17 brief continued, or a written reason for replacing it, in a domain your earlier projects did not use.
 
-0 — The same domain again.
+0 — The same domain again, or the brief changed without a reason.
 
 1 — A different surface in the same context.
 
-2 — A genuinely different domain.
+2 — A different domain, with the brief continued or its replacement reasoned.
 
 3 — As adequate, and the choice is justified by what the portfolio lacks.
 
-Repair: Choose a context whose constraints differ from your earlier projects. Recheck: The domain choice.
+Repair: Write whether you are continuing your brief and why, and choose a context whose constraints differ from your earlier projects. Recheck: The brief decision and domain choice.
 
-**Three people have agreed before commitment**
+**Access is confirmed before commitment, or an honest alternate route is chosen**
 
-Adequate evidence: Three named people with recorded agreement, plus who declined.
+Adequate evidence: Three agreements recorded by role before committing, or the alternate route stated with what it can and cannot establish.
 
-0 — No confirmed access.
+0 — No confirmed access and no route stated.
 
-1 — One or two agreements.
+1 — Access assumed, or one or two agreements counted as enough for the full route.
 
-2 — Three agreements recorded before committing.
+2 — Three agreements recorded before committing, or an alternate route stated honestly.
 
-3 — As adequate, and the declines are recorded with reasons.
+3 — As adequate, and declines or unreachable people are recorded with reasons.
 
-Repair: Ask three people directly and record their answers before starting the work. Recheck: The access record.
+Repair: Ask three people directly and record their answers by role, or write which alternate route you are taking and what it cannot establish. Recheck: The access record.
 
 **The problem is stated in the person's words**
 
-Adequate evidence: A quotation or close paraphrase of how the person described it.
+Adequate evidence: A close paraphrase of how the person described it, without their name — or the supplied brief's quoted complaint on the practice route.
 
 0 — Stated as a solution.
 
@@ -722,7 +797,7 @@ Adequate evidence: A quotation or close paraphrase of how the person described i
 
 3 — As adequate, and the statement names who is affected and how often.
 
-Repair: Ask the person to describe the problem again and write it down verbatim. Recheck: The problem statement.
+Repair: Ask the person to describe the problem again and note it close to their wording, keeping any verbatim note in your private notes. Recheck: The problem statement.
 
 **Scope and abandonment condition are written**
 
@@ -745,18 +820,19 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 **Review criteria:**
 
-- The domain differs from earlier projects
-- Three people have agreed before commitment
+- The domain is new and the brief decision is written
+- Access is confirmed before commitment, or an honest alternate route is chosen
 - The problem is stated in the person's words
 - Scope and abandonment condition are written
 
 <details>
 <summary>Reading, video and deeper explanation</summary>
 
-- The domain choice matters for the portfolio, which is the next module's subject. Two projects in the same context read as one; a third in a different domain — a small clinic, a tuition service, a repair shop, a community group — shows the process transfers, which is what a reviewer is trying to establish.
-- Access is the binding constraint and the one people check last. Before committing, name three specific people who have agreed to speak to you, not three categories of person you might reach. Every recorded failure in the course's own research work has been a recruitment failure, and the same will be true here.
+- Start from what you already have. If you chose a Project 3 brief in Modules 16 and 17, its roles, permissions and failure scenarios are already mapped, and continuing it saves weeks. Replacing it is allowed, but the reason goes in writing — access lost, a domain that repeats an earlier project — because a reviewer will ask why the brief changed. If you came here straight from Project 1, choose your brief now.
+- The domain choice matters for the portfolio, which is the next module's subject. Two projects in the same context read as one; a project in a different domain — a small clinic, a tuition service, a repair shop, a community group — shows the process transfers, which is what a reviewer is trying to establish.
+- Access is the binding constraint and the one people check last. Before committing, make sure three specific people have agreed to speak to you, not three categories of person you might reach. If you cannot, take an alternate route and say so: one participant with a narrower scope, or the supplied practice brief in this lesson's source notes, labelled practice. Inventing the missing people is the one route that is never open.
 - A problem someone already has beats a problem you find interesting, because it comes with a person who will explain it and care about the answer. The provider who cannot keep track of cancellations, the group whose members miss sessions, the shop whose customers keep ringing about the same thing — each is a real problem with a built-in participant.
-- Scope in weeks, using the appetite discipline from m17: this is worth four weeks of evenings, not twelve. A project that overruns is abandoned, and an abandoned project teaches nothing and cannot be shown.
+- Scope in weeks, using the appetite discipline from Module 14: this is worth four weeks of evenings, not twelve. A project that overruns is abandoned, and an abandoned project teaches nothing and cannot be shown.
 
 [GOV.UK: finding user research participants](https://www.gov.uk/service-manual/user-research/find-user-research-participants).
 
@@ -839,7 +915,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The plan: three questions from the shop's problem, including what a customer does while waiting for news about a repair. Methods: two interviews with the owner, an observation of an afternoon in the shop, and two short conversations with customers collecting items. Recruitment: through the owner, with the bias recorded. Consent: the m05 script adapted for a workshop, including that no photographs would include other customers' items. Data: notes on paper, digitised the same evening, no recordings in the shop. Exclusions written: nothing about customers who never come back, and nothing about how common the problem is across shops.
+- The plan: three questions from the shop's problem, including what a customer does while waiting for news about a repair. Methods: two interviews with the owner, an observation of an afternoon in the shop, and two short conversations with customers collecting items. Recruitment: through the owner, with the bias recorded. Consent: the m05 script adapted for a workshop, including that no photographs would include other customers' items. Data: notes on paper, a summary without names typed the same evening, raw notes kept privately and deleted at the end of the project, no recordings in the shop. Exclusions written: nothing about customers who never come back, and nothing about how common the problem is across shops.
 
 
 ### Choose where you will do the work
@@ -927,7 +1003,7 @@ Section: practice-plan. Stable action: step-2-brief.
 
 Each question matched to a method you can run with the people who agreed, with anything unanswerable recorded.
 
-- Match each question to a method you can actually run with three people.
+- Match each question to a method you can actually run with the people who agreed, or with the supplied notes on the practice route.
 - Record any question you cannot answer.
 
 **Start here:** Write what each person agreed to, then match questions to that rather than the reverse.
@@ -1246,18 +1322,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You know how to do this now. Can the second plan be less formal?
 
-- Yes for consent, no for the questions.
-- The formality is what protects the work when it is inconvenient, which is exactly when it gets dropped.
-- Yes, since you have internalised the procedure.
+- Less formal is fine, because you have now internalised the procedure and can hold the details in mind.
+- Formality protects the work when it is inconvenient, which is exactly when it gets dropped.
+- Consent can be lighter this time, as long as the research questions are still written out properly.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes for consent, no for the questions. — Consent is the part where informality does the most damage.
+Less formal is fine, because you have now internalised the procedure and can hold the details in mind. — Internalising the procedure is why you can write it quickly. It is not a reason to write less of it.
 
-The formality is what protects the work when it is inconvenient, which is exactly when it gets dropped. — A plan written properly the second time is faster and no less necessary. The consent introduction in particular is about a setting, and this setting has other people’s property in it.
+Formality protects the work when it is inconvenient, which is exactly when it gets dropped. — A plan written properly the second time is faster and no less necessary. The consent introduction in particular is about a setting, and this setting has other people’s property in it.
 
-Yes, since you have internalised the procedure. — Internalising the procedure is why you can write it quickly. It is not a reason to write less of it.
+Consent can be lighter this time, as long as the research questions are still written out properly. — Consent is the part where informality does the most damage, because it is about a setting you have not worked in before.
 
 Improve: Adapt the consent script for this setting in step 3, marking what changed. Record the change in step 5.
 
@@ -1276,16 +1352,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You are recruiting through the shop owner. What does that exclude?
 
-- It biases towards satisfied customers, which is manageable.
-- Nothing important, since his customers are the users.
+- A slight lean towards satisfied customers, which is manageable without writing anything down.
+- Nothing important, because his current customers are the people who use the shop and have the problem.
 - Everybody who stopped using the shop, who are often the most informative people about the problem.
 
 <details>
 <summary>After your attempt</summary>
 
-It biases towards satisfied customers, which is manageable. — It is, and managing it starts with writing down who is missing.
+A slight lean towards satisfied customers, which is manageable without writing anything down. — It is manageable, and managing it starts with writing down who is missing.
 
-Nothing important, since his customers are the users. — They are the remaining users. The ones who left are the ones the problem affected most.
+Nothing important, because his current customers are the people who use the shop and have the problem. — They are the remaining users. The ones who left are often the ones the problem affected most.
 
 Everybody who stopped using the shop, who are often the most informative people about the problem. — Recruiting through somebody reaches the people still in their orbit. Writing that down now stops the study later being read as being about customers in general.
 
@@ -1306,16 +1382,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You cannot answer one of your three questions with the access you have. What should you do?
 
-- Drop the question, since it cannot be answered.
-- Answer it as well as you can with what you have.
+- Drop the question from the plan, since nothing you can run this month would answer it.
+- Answer it as well as you can with the people you have, and mention the method in the write-up.
 - Record it as unanswerable rather than quietly answering it with a weaker method.
 
 <details>
 <summary>After your attempt</summary>
 
-Drop the question, since it cannot be answered. — Recording it is better than dropping it: it is the first thing a later study would go after.
+Drop the question from the plan, since nothing you can run this month would answer it. — Recording it is better than dropping it: it is the first thing a later study would go after.
 
-Answer it as well as you can with what you have. — That is the substitution, and the write-up will not say so unless you decide now.
+Answer it as well as you can with the people you have, and mention the method in the write-up. — That is the substitution: the people you have cannot speak for the people you lack, and a method note does not change who answered.
 
 Record it as unanswerable rather than quietly answering it with a weaker method. — A question about what non-returning customers think cannot be answered by asking returning ones. Substituting a weaker method silently is how a study ends up claiming more than it can.
 
@@ -1334,7 +1410,8 @@ Section: practice. Stable action: step-5-brief.
 
 Sessions on a calendar with real dates, and what you would drop first if one falls through.
 
-- Put the sessions on a calendar with real dates.
+- Put the sessions on a calendar with real dates agreed with the people involved.
+- On the practice route, date the evenings you will work through the supplied notes.
 - Save the plan with the adapted artefacts.
 
 **Start here:** Put the sessions in a calendar and send the invitations before finishing this step.
@@ -1348,13 +1425,13 @@ Sessions on a calendar with real dates, and what you would drop first if one fal
 **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
 
 
-### The sessions on a calendar with real dates
+### The sessions on a calendar with real dates — or, on the practice route, the evenings you will work through the supplied notes
 
 Section: practice. Stable action: write-real-dates.
 
-Write your answer for “The sessions on a calendar with real dates”. Use the task instructions below to decide what to include.
+Write your answer for “The sessions on a calendar with real dates — or, on the practice route, the evenings you will work through the supplied notes”. Use the task instructions below to decide what to include.
 
-**Answer:** The sessions on a calendar with real dates
+**Answer:** The sessions on a calendar with real dates — or, on the practice route, the evenings you will work through the supplied notes
 
 
 
@@ -1370,15 +1447,41 @@ Decided now, calmly, rather than at the moment something is cancelled.
 Decided now, calmly, rather than at the moment something is cancelled.
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: For a new project you are studying how a small dance school handles make-up classes after a missed lesson. Your earlier project, on a café loyalty card, used three questions about how people choose between options. Your access is the school owner and two parents who agreed through her; families who left the school cannot be reached.
+
+**Task:** Which old questions, if any, would you reuse, what would you write fresh, and what must the plan say it cannot establish? Give your reasons.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Reuses the café questions with the nouns changed and plans methods as if any parent could be reached; nothing is excluded.
+- Adequate: Writes new questions from what the owner and parents described, matches each to the three people available, and records that families who left cannot be reached, so nothing is claimed about them.
+- Strong: As adequate, and keeps only the form of a good question while changing its subject, adapts consent to a setting with children present, and names what would be needed to reach the families who left.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -1451,13 +1554,13 @@ Repair: Re-read your notes from the first conversation and write the questions f
 
 **Methods match the access actually secured**
 
-Adequate evidence: A method per question runnable with the three participants you have.
+Adequate evidence: A method per question runnable with the access you have: the people who agreed, or the supplied notes on the practice route.
 
 0 — Methods requiring participants you do not have.
 
 1 — Mostly runnable with one aspirational method.
 
-2 — All runnable with your actual access.
+2 — All runnable with your actual access, with practice methods labelled practice.
 
 3 — As adequate, and unanswerable questions are recorded as gaps.
 
@@ -1508,8 +1611,8 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 - Reuse is the point. Your screener, consent introduction and data plan were built to be adapted, and adapting them takes an hour where writing from scratch takes a day. The parts that need real work are the questions and the method choice, because those belong to this problem.
 - The questions must come from the domain. A repair shop's problem is not a booking problem with different words, and importing the earlier project's questions would produce an investigation of the last project conducted in a new place. Start from what the owner said and what you do not know.
-- Consent and data handling are the parts that transfer most directly and are still specific: whose data, in whose premises, with what recording, and what you will do with photographs of a workshop that contains other people's property. The m05 rules apply and the details differ.
-- Plan for the three people you have. If your access is the owner and two customers, then your method plan is built from that, and its exclusions — no evidence from customers who never return, none from staff — are written now rather than discovered at reporting time.
+- Consent and data handling are the parts that transfer most directly and are still specific: whose data, in whose premises, with what recording, and what you will do with photographs of a workshop that contains other people's property. The m05 rules apply and the details differ. Raw notes stay in a private file or on paper with a date to delete them; what goes into a synced worksheet is a summary without names.
+- Plan for the access you have. If your access is the owner and two customers, your method plan is built from that, and its exclusions — no evidence from customers who never return, none from staff — are written now rather than discovered at reporting time. On the single-participant route the plan is built around one person; on the practice route it is built around the supplied notes, and every method is labelled practice.
 
 [GOV.UK: user research manual](https://www.gov.uk/service-manual/user-research).
 
@@ -1521,7 +1624,7 @@ Stable ID: m18-l03-v1. Core.
 
 This is the same work as m05 and m06 with nobody structuring it for you, which is the condition it will always be done in from now on.
 
-Bring: Your plan and confirmed sessions.
+Bring: Your plan and confirmed sessions, or the supplied practice notes.
 
 Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
@@ -1542,13 +1645,13 @@ An independent project brings the research, design, testing and decision trail t
 
 **Quick example.** Made-up example. Synthesising a repair-shop study, and tidying the disagreement away. That customers want repairs done faster, which is why he is under pressure. He said it twice, with feeling.
 
-The reader demonstrates and guides the task before asking for “What you ran, with dates”.
+The reader demonstrates and guides the task before asking for “Where this evidence comes from”.
 
 ### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
-Run the planned research, synthesise it into findings with counts and contradictions, and record what you would do differently.
+Run the planned research — or, on the practice route, work through the supplied notes — synthesise it into findings with counts and contradictions, and record what you would do differently.
 
 
 ### Run what you planned; record deviations rather than hiding them
@@ -1592,7 +1695,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Two interviews, one observation and two short conversations were run over eleven days. Three deviations were recorded: one interview happened with the owner's son present, which changed what was said about money; the observation was cut short by a delivery; and one customer conversation happened by phone rather than in person. Six findings emerged, four evidenced and two assumed. The strongest: three of three customers had rung the shop to ask about progress, and the owner estimated he answered such calls between six and ten times a day, which he had never counted. The contradiction kept: the owner believed customers wanted speed; the customers described wanting certainty.
+- Five sessions — two interviews with the owner, one observation and two short conversations with customers — were run over eleven days. Three deviations were recorded: one interview happened with the owner's son present, which changed what was said about money; the observation was cut short by a delivery; and one customer conversation happened by phone rather than in person. Six findings emerged, four evidenced and two assumed. The strongest: both customers — two of two — had rung the shop to ask about progress, and the owner estimated he answered such calls between six and ten times a day, which he had never counted. The contradiction kept: the owner believed customers wanted speed; both customers described wanting certainty.
 
 
 ### Choose where you will do the work
@@ -1604,6 +1707,17 @@ Recommended route: Fill the worksheet in this app, step by step. It saves as you
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
 
 
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Supplied practice notes for the fictional tool library, labelled practice. Coordinator interview: believes the problem is members keeping tools too long; was interrupted twice by a delivery; estimates “four or five” wasted visits a week, which she has never counted.
+- Member A, summarised without a name: drove over twice for a hedge trimmer still on loan; would rather get a message before leaving home. Member B, summarised: phones before every visit and said the coordinator “does her best”; this conversation happened by phone rather than in person.
+- Both members described not knowing whether a tool was back; neither mentioned members keeping tools too long.
+
+
 ### Run the sessions
 
 Section: practice-plan. Stable action: step-1-brief.
@@ -1612,6 +1726,7 @@ The planned sessions run, with every deviation recorded as it happened.
 
 - Run the planned sessions with consent.
 - Record deviations from the plan as they happen.
+- On the practice route, treat the supplied notes as your sessions and find the deviations in them.
 
 **Start here:** Write the deviation in the session record before leaving the building.
 
@@ -1622,24 +1737,35 @@ The planned sessions run, with every deviation recorded as it happened.
 **Unsupervised:** The condition this will always be done in. Nobody is checking whether you wrote the deviation down.
 
 
-### What you ran, with dates
+### Where this evidence comes from
+
+Section: practice-plan. Stable action: write-evidence-source.
+
+Choose the option that honestly describes your work.
+
+**Answer:** Where this evidence comes from (Real sessions with people who agreed / One participant: the bounded route / Supplied practice notes, labelled practice)
+
+All three are complete routes. The label travels with every finding, so a practice finding is never read as research.
+
+
+### What you ran, with dates and participants by role — or the supplied notes you worked through
 
 Section: practice-plan. Stable action: write-sessions-run.
 
-Write your answer for “What you ran, with dates”. Use the task instructions below to decide what to include.
+Roles, not names. Raw notes stay in a private file or on paper with a date to delete them.
 
-**Answer:** What you ran, with dates
+**Answer:** What you ran, with dates and participants by role — or the supplied notes you worked through
+
+Roles, not names. Raw notes stay in a private file or on paper with a date to delete them.
 
 
-
-
-### Every deviation from the plan, as it happened
+### Every deviation from the plan, as it happened, summarised without names
 
 Section: practice-plan. Stable action: write-deviations.
 
 Somebody else present, a session cut short, a conversation by phone rather than in person. Deviations recorded are data; deviations hidden are contamination.
 
-**Answer:** Every deviation from the plan, as it happened
+**Answer:** Every deviation from the plan, as it happened, summarised without names
 
 Somebody else present, a session cut short, a conversation by phone rather than in person. Deviations recorded are data; deviations hidden are contamination.
 
@@ -1657,8 +1783,8 @@ Section: practice-plan. Stable action: step-2-brief.
 
 Each record completed within the hour, with anything reconstructed from memory marked.
 
-- Complete each record within the hour, in three columns.
-- Mark anything reconstructed from memory.
+- Complete each record within the hour, in three columns, in your private notes.
+- Mark anything reconstructed from memory, and summarise without names for the worksheet.
 
 **Start here:** Sit down somewhere before travelling home and finish the record there.
 
@@ -1669,13 +1795,15 @@ Each record completed within the hour, with anything reconstructed from memory m
 **Reconstructed:** Written from recall rather than from notes. Marking it keeps the difference visible when you use it later.
 
 
-### How long after each session you completed its record
+### How long after each session you completed its private record
 
 Section: practice-plan. Stable action: write-records-timing.
 
 Within the hour. What is reconstructed the next day is a memory of a memory.
 
-**Answer:** How long after each session you completed its record
+**Answer:** How long after each session you completed its private record
+
+Required only when evidence-source is Real sessions with people who agreed or One participant: the bounded route. Otherwise leave participant evidence empty.
 
 Within the hour. What is reconstructed the next day is a memory of a memory.
 
@@ -1687,6 +1815,8 @@ Section: practice-plan. Stable action: write-reconstructed.
 Write your answer for “Anything reconstructed from memory rather than written at the time”. Use the task instructions below to decide what to include.
 
 **Answer:** Anything reconstructed from memory rather than written at the time
+
+Required only when evidence-source is Real sessions with people who agreed or One participant: the bounded route. Otherwise leave participant evidence empty.
 
 
 
@@ -1717,35 +1847,35 @@ Made-up example. Synthesising a repair-shop study, and tidying the disagreement 
 
 **What the owner said:** That customers want repairs done faster, which is why he is under pressure. He said it twice, with feeling.
 
-**What the customers described:** Not speed. All three talked about not knowing: ringing to ask, planning around a date they could not get, one of them driving over to check.
+**What the customers described:** Not speed. Both talked about not knowing: ringing to ask, planning around a date they could not get, one of them driving over to check.
 
 **What I wrote first:** A theme called “customers want a faster, more predictable service”, which contains both and says neither.
 
 **Why that was the worst possible sentence:** It resolves the disagreement by averaging it. The whole finding is that the person running the shop and the people using it describe different problems.
 
-**What I wrote instead:** Two findings, kept apart, with the contradiction named. The owner believes the problem is speed; three of three customers described certainty. That single line reframed the entire project.
+**What I wrote instead:** Two findings, kept apart, with the contradiction named. The owner believes the problem is speed; two of two customers described certainty. That single line reframed the entire project.
 
 **Wrong turn:** The wrong turn is resolving a contradiction in the synthesis, because a theme covering both sounds more finished. It is the most informative thing a small study produces, and averaging it produces a sentence nobody can act on.
 
 **Trade-off:** Keeping it means presenting the owner with the news that he has misread his own customers, which is an uncomfortable conversation.
 
-**Unknown:** Still unknown: whether speed matters too. Three customers talked about certainty when asked open questions, and nobody asked them directly about speed.
+**Unknown:** Still unknown: whether speed matters too. Both customers talked about certainty when asked open questions, and nobody asked them directly about speed.
 
 
-### The findings, each with a participant count
+### The findings, each with a participant count and its evidence label
 
 Section: practice-plan. Stable action: write-findings-counts.
 
-Write your answer for “The findings, each with a participant count”. Use the task instructions below to decide what to include.
+A summary without names. On the practice route, every finding is labelled supplied practice.
 
-**Answer:** The findings, each with a participant count
+**Answer:** The findings, each with a participant count and its evidence label
 
-
+A summary without names. On the practice route, every finding is labelled supplied practice.
 
 <details>
 <summary>Example</summary>
 
-Example (made up): three of three customers had rung the shop to ask about progress.
+Example (made up): both customers — two of two — had rung the shop to ask about progress.
 
 </details>
 
@@ -1787,7 +1917,7 @@ Section: practice-plan. Stable action: step-4-sort-1.
 
 Six lines from a made up repair-shop write-up. For each one, decide what it is.
 
-Three of three customers had rung the shop to ask about progress.
+Both customers — two of two — had rung the shop to ask about progress.
 
 - evidenced, with a count
 - assumed
@@ -1800,7 +1930,7 @@ evidenced, with a count — Each of them said it, it is written in the records, 
 
 assumed — Nothing is being inferred.
 
-an estimate somebody gave — It is a count of what people reported doing, from three separate conversations.
+an estimate somebody gave — It is a count of what people reported doing, from two separate conversations.
 
 Now mark your own findings the same way, and check no assumption is carrying a count.
 
@@ -1917,7 +2047,7 @@ Section: practice-plan. Stable action: step-4-sort-6.
 
 Six lines from a made up repair-shop write-up. For each one, decide what it is.
 
-One of the three drove to the shop to check rather than ringing.
+One of the two customers drove to the shop to check rather than ringing.
 
 - evidenced, with a count
 - assumed
@@ -1926,7 +2056,7 @@ One of the three drove to the shop to check rather than ringing.
 <details>
 <summary>After your attempt</summary>
 
-evidenced, with a count — One of three, from her own account. The count matters because it stops one person becoming customers in the write-up.
+evidenced, with a count — One of two, from her own account. The count matters because it stops one person becoming customers in the write-up.
 
 assumed — She described doing it.
 
@@ -1972,20 +2102,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Your sample is three people. Will the findings be thin?
+Your sample is three people: the owner and two customers. Will the findings be thin?
 
-- Yes, which is why the write-up should be cautious throughout.
-- They will be bounded, which is different. Three people in a real setting, honestly reported, is a real study.
-- Yes, unless you supplement it with desk research.
+- Thin unless you supplement the three conversations with desk research on other shops.
+- Bounded rather than thin: three people in a real setting, honestly reported, is a real study.
+- Thin, which is why every sentence of the write-up should carry a cautious qualifier.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, which is why the write-up should be cautious throughout. — Caution throughout produces a document that says nothing. Counts on every finding do the same job precisely.
+Thin unless you supplement the three conversations with desk research on other shops. — Desk research answers different questions. It does not enlarge this study.
 
-They will be bounded, which is different. Three people in a real setting, honestly reported, is a real study. — The failure mode is claiming more than it holds. Three of three customers ringing the shop is a finding; customers generally prefer certainty is not.
+Bounded rather than thin: three people in a real setting, honestly reported, is a real study. — The failure mode is claiming more than it holds. Two of two customers ringing the shop is a finding; customers generally prefer certainty is not.
 
-Yes, unless you supplement it with desk research. — Desk research answers different questions. It does not enlarge this study.
+Thin, which is why every sentence of the write-up should carry a cautious qualifier. — Caution throughout produces a document that says nothing. Counts on every finding do the same job precisely.
 
 Improve: Put a participant count on every finding in step 3. Record the change in step 5.
 
@@ -2002,20 +2132,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-The owner believes the problem is speed; the customers described certainty. What should the synthesis do?
+The owner believes the problem is speed; both customers described certainty. What should the synthesis do?
 
-- Keep both and name the contradiction. It is usually the most informative thing a small study produces.
-- Find a theme that includes both.
-- Trust the customers, since they are the users.
+- Keep both findings apart and name the contradiction between them.
+- Find one theme, such as a faster and more predictable service, that covers both.
+- Trust the customers, since they are the people the page is for.
 
 <details>
 <summary>After your attempt</summary>
 
-Keep both and name the contradiction. It is usually the most informative thing a small study produces. — A theme covering both — faster and more predictable — resolves it by averaging and produces a sentence nobody can act on. The gap between the two is what reframes the project.
+Keep both findings apart and name the contradiction between them. — A contradiction is usually the most informative thing a small study produces. A theme covering both resolves it by averaging and produces a sentence nobody can act on.
 
-Find a theme that includes both. — That is the averaging. It sounds more finished and says less.
+Find one theme, such as a faster and more predictable service, that covers both. — That is the averaging. It sounds more finished and says less than either finding.
 
-Trust the customers, since they are the users. — What the owner believes is also a finding, and it is the one that explains why the shop works as it does.
+Trust the customers, since they are the people the page is for. — What the owner believes is also a finding, and it is the one that explains why the shop works as it does.
 
 Improve: Write the contradiction as a finding in step 3, with both sides and their counts. Record the change in step 5.
 
@@ -2034,24 +2164,24 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A session happened with somebody else present, which changed what was said. What do you do?
 
-- Discard the session, since it was compromised.
-- Record it as a deviation, in the session record, and let it travel with anything drawn from that session.
-- Note it privately and use the findings normally.
+- Record it as a deviation that travels with anything drawn from that session.
+- Note it in your private file only, and use the findings from it as normal.
+- Discard the session, since a third person present compromised what was said.
 
 <details>
 <summary>After your attempt</summary>
 
-Discard the session, since it was compromised. — It was different rather than worthless, and what changed is itself informative.
+Record it as a deviation that travels with anything drawn from that session. — A deviation recorded is data about the study. Hidden, it is contamination, and it will not be visible to anybody reading the findings later, including you.
 
-Record it as a deviation, in the session record, and let it travel with anything drawn from that session. — A deviation recorded is data about the study. Hidden, it is contamination, and it will not be visible to anybody reading the findings later, including you.
+Note it in your private file only, and use the findings from it as normal. — Private means invisible to anybody reading the write-up, so the findings travel without the condition that shaped them.
 
-Note it privately and use the findings normally. — Privately means invisible to anybody reading the write-up.
+Discard the session, since a third person present compromised what was said. — It was different rather than worthless, and what changed is itself informative.
 
 Improve: Write every deviation into step 1, with what it changed. Record the change in step 5.
 
 Check again: Every deviation is in the record rather than in your memory.
 
-Answers to revisit: sessions-run, deviations, improvement-made
+Answers to revisit: evidence-source, sessions-run, deviations, improvement-made
 
 </details>
 
@@ -2108,15 +2238,41 @@ Write your answer for “What you would do differently, written while it is fres
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: You spoke to the manager of a community swimming pool and three regular swimmers about lane booking. The manager says the problem is people not turning up for booked slots. All three swimmers described arriving to find their lane had been given to somebody else. One interview happened with the manager’s assistant listening in.
+
+**Task:** Write two findings with counts, say what you would do with the disagreement, and how you would treat the interview with the assistant present. Give your reasons.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Writes one blended theme such as “bookings are unreliable”, drops the counts, and either discards the overheard interview or uses it without comment.
+- Adequate: Keeps the manager’s belief and three of three swimmers’ experience as separate counted findings, names the contradiction, and records the listener as a deviation that travels with that interview.
+- Strong: As adequate, and turns the contradiction into a question to check, marks any inference such as frustration as assumed, and notes what the assistant’s presence may have changed.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -2139,7 +2295,7 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: Fieldwork and synthesis, unsupervised
-What I am trying to do: Run the planned research, synthesise it into findings with counts and contradictions, and record what you would do differently.
+What I am trying to do: Run the planned research — or, on the practice route, work through the supplied notes — synthesise it into findings with counts and contradictions, and record what you would do differently.
 
 Key idea or terms:
 Deviation: Anything that differed from the plan: a person present, a session cut short, a different setting. Recorded, it is data about the study; hidden, it is contamination.
@@ -2152,12 +2308,12 @@ Made-up example. Synthesising a repair-shop study, and tidying the disagreement 
 Activity: Act as a project reviewer using only the supplied case. Ask for my decision, the evidence behind it and the gap I would investigate next. Do not invent users, results or impact.
 
 Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
-When the activity is finished, tell me to return to the course answer called “What you ran, with dates” and write my own decision. Do not write that answer for me.
+When the activity is finished, tell me to return to the course answer called “Where this evidence comes from” and write my own decision. Do not write that answer for me.
 ```
 
-**Come back to the course:** Return to “What you ran, with dates”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+**Come back to the course:** Return to “Where this evidence comes from”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “What you ran, with dates” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Where this evidence comes from” and write one sentence in your own words.
 
 </details>
 <details>
@@ -2175,7 +2331,7 @@ When the activity is finished, tell me to return to the course answer called “
 
 **Sessions were run with deviations recorded**
 
-Adequate evidence: Session records including departures from the plan.
+Adequate evidence: Session records including departures from the plan — or, on the practice route, the supplied notes worked through with their deviations named.
 
 0 — Sessions run without recording deviations.
 
@@ -2189,7 +2345,7 @@ Repair: Go back through the sessions and write down everything that differed fro
 
 **Write-ups were prompt and layered**
 
-Adequate evidence: Records in the said, observed and inferred structure, completed promptly.
+Adequate evidence: Records in the said, observed and inferred structure, completed promptly and kept private — on the practice route, the supplied notes sorted into the same three layers.
 
 0 — Written days later.
 
@@ -2266,7 +2422,7 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - One framed problem with the reason it was chosen
 - An appetite in weeks, set before scoping
 - A scope that preserves quality and cuts features
-- A not-building list with reasons, and the frame checked with a participant
+- A not-building list with reasons, and the frame checked with the person who described it or against their words
 
 ### Start here: in everyday words
 
@@ -2310,18 +2466,18 @@ Section: learn. Stable action: learn-3.
 Cut by feature, never by quality.
 
 
-### List what you are not building and why
+### Idea 4: List what you are not building and why, including what a refus…
 
 Section: learn. Stable action: learn-4.
 
-List what you are not building and why.
+List what you are not building and why, including what a refusal depends on.
 
 
-### Check the frame against the person who described the problem
+### Idea 5: Check the frame with the person who described the problem, or…
 
 Section: learn. Stable action: learn-5.
 
-Check the frame against the person who described the problem.
+Check the frame with the person who described the problem, or against their own words if nobody can be asked.
 
 
 ### See the idea in a supplied example
@@ -2330,7 +2486,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Findings pointed at three candidate problems: customers cannot tell when a repair will be ready; the owner cannot see which jobs are waiting on parts; and quotes are given verbally and disputed. The first was chosen because it was the one all five participants raised and the one generating the daily interruptions. The appetite: three weeks of evenings. The scope: a status page a customer can reach without an account, with its states, and a way for the owner to update it in under thirty seconds. Not building: notifications, quote records, and any account system — each with the reason recorded. The frame was read back to the owner, who corrected one detail: it is not the waiting that annoys people, it is being told twice that it will be ready tomorrow.
+- Findings pointed at three candidate problems: customers cannot tell when a repair will be ready; the owner cannot see which jobs are waiting on parts; and quotes are given verbally and disputed. The first was chosen because all three participants — the owner and both customers — raised it, and it is what generates the daily interruptions. The appetite: three weeks of evenings. The scope: a status page showing a customer only their own job, reached from the reference on their ticket, with its states, and a way for the owner to update it in under thirty seconds. Not building: notifications, quote records, and any account system — each with the reason recorded, and the account refusal standing only if a real version keeps every job private another way. The frame was read back to the owner, who corrected one detail: it is not the waiting that annoys people, it is being told twice that it will be ready tomorrow.
 
 
 ### Choose where you will do the work
@@ -2384,7 +2540,7 @@ Write your answer for “The one you chose, and why, using the counts”. Use th
 <details>
 <summary>Example</summary>
 
-Example (made up): not knowing when a repair will be ready. All five participants raised it, and it is what generates the daily interruptions.
+Example (made up): not knowing when a repair will be ready. All three participants — the owner and both customers — raised it, and it is what generates the daily interruptions.
 
 </details>
 
@@ -2459,7 +2615,7 @@ Made-up example. Scoping a repair-shop status page to three weeks, and keeping e
 
 **What cutting by feature would have produced:** One status page, with its eleven exception rows, a keyboard pass and honest wording. Something that works.
 
-**What the not-building list said:** Notifications: back if the status page is used and people still ring. Quote records: a different problem, deferred. Accounts: refused outright, because the page can be reached by job number and an account is a barrier.
+**What the not-building list said:** Notifications: back if the status page is used and people still ring. Quote records: a different problem, deferred. Accounts: refused, because an account is a barrier for somebody checking once — on condition that a real version still keeps every job private another way.
 
 **Wrong turn:** The wrong turn is keeping every feature and doing each less well, because cutting a feature feels like failing and doing things simply feels like discipline. What gets dropped is always the states and the accessibility, because they are the parts still unfinished at the end.
 
@@ -2497,7 +2653,7 @@ Section: practice-plan. Stable action: step-4-brief.
 Each cut recorded with its reason and return condition, and anything refused outright named.
 
 - Record each cut with the reason and what would bring it back.
-- Include anything you are refusing outright.
+- Include anything you are refusing outright, and any condition a refusal depends on.
 
 **Start here:** Read your cut list and mark anything that is part of the thing rather than an extra thing.
 
@@ -2540,7 +2696,7 @@ Section: practice-plan. Stable action: step-4-sort-2.
 
 Six items from a made up not-building list for a three-week repair-shop project. For each one, decide what it is.
 
-A customer account system. Refused: the page can be reached by job number, and an account is a barrier for somebody checking once.
+A customer account system. Refused: an account is a barrier for somebody checking once — provided a real version still shows each customer only their own job.
 
 - a feature cut, with a return condition
 - refused outright
@@ -2551,7 +2707,7 @@ A customer account system. Refused: the page can be reached by job number, and a
 
 a feature cut, with a return condition — It is not waiting for anything; it is the wrong answer for this problem.
 
-refused outright — Recorded with the reason, so it does not return in three months as a new idea.
+refused outright — Recorded with the reason and the condition it depends on, so it does not return in three months as a new idea and lesson 6 knows what to test.
 
 should not have been cut — Cutting it improves the thing rather than reducing it.
 
@@ -2668,11 +2824,11 @@ Now check your own list: is anything on it a state, a failure path or an accessi
 
 Section: practice-plan. Stable action: write-cuts-with-reasons.
 
-Write your answer for “Each cut, with the reason and what would bring it back”. Use the task instructions below to decide what to include.
+If a refusal depends on a condition, write it: no accounts only if each person still sees only their own record.
 
 **Answer:** Each cut, with the reason and what would bring it back
 
-
+If a refusal depends on a condition, write it: no accounts only if each person still sees only their own record.
 
 
 ### Anything you are refusing outright rather than deferring
@@ -2694,18 +2850,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Would more features make a better portfolio project?
 
-- Yes, since more features show more range.
-- Depth reads better than breadth to anybody who has built anything. One complete flow with its states, tests and limits is worth more than four sketched features.
-- Yes, if each is done to the same standard.
+- More features help, because a reviewer sees a wider range of screens and decisions in one project.
+- More features help, provided each one is finished to the same standard as the others.
+- One complete flow with its states, tests and limits is worth more than four sketched features.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, since more features show more range. — They show more screens. Range is shown across projects rather than within one.
+More features help, because a reviewer sees a wider range of screens and decisions in one project. — They show more screens. Range is shown across projects rather than within one.
 
-Depth reads better than breadth to anybody who has built anything. One complete flow with its states, tests and limits is worth more than four sketched features. — Four half-features on a three-week appetite means four happy paths and no error states. A reviewer sees immediately which one the project was.
+More features help, provided each one is finished to the same standard as the others. — On a fixed appetite they cannot all be, and what drops is always the same part: the states and the accessibility work.
 
-Yes, if each is done to the same standard. — On a fixed appetite they cannot be, and what drops is always the same part.
+One complete flow with its states, tests and limits is worth more than four sketched features. — Depth reads better than breadth to anybody who has built anything. Four half-features on a three-week appetite means four happy paths and no error states, and a reviewer sees which one the project was.
 
 Improve: Cut by feature in step 3 until one thing fits, with its states intact. Record the change in step 5.
 
@@ -2724,18 +2880,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The accessibility pass is on your not-building list. Is that a scope decision?
 
-- Yes, everything is negotiable under a fixed appetite.
-- Yes, provided it is scheduled for afterwards.
-- No. It is a cut to the quality of what remains, wearing the clothes of a scope decision.
+- It is a scope decision, since everything is negotiable once the appetite is fixed.
+- It is a cut to the quality of what remains, wearing the clothes of a scope decision.
+- It is a scope decision as long as the pass is scheduled for straight after the release.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, everything is negotiable under a fixed appetite. — Features are. What makes the remaining feature work is not.
+It is a scope decision, since everything is negotiable once the appetite is fixed. — Features are negotiable. What makes the remaining feature work is not.
 
-Yes, provided it is scheduled for afterwards. — Afterwards is the return condition the sorter warned about: it waits for somebody to be excluded.
+It is a cut to the quality of what remains, wearing the clothes of a scope decision. — A state and an accessibility pass are part of the thing rather than extra things. Cutting a whole feature is a decision; cutting these is what happens when nobody decides.
 
-No. It is a cut to the quality of what remains, wearing the clothes of a scope decision. — A state and an accessibility pass are part of the thing rather than extra things. Cutting a whole feature is a decision; cutting these is what happens when nobody decides.
+It is a scope decision as long as the pass is scheduled for straight after the release. — Afterwards is the return condition the sorter warned about: it waits for somebody to be excluded first.
 
 Improve: Move any state, failure path or accessibility check off the cut list in step 4, and cut a feature instead. Record the change in step 5.
 
@@ -2754,22 +2910,22 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You read your problem frame back to the shop owner and he corrected a detail. What does that tell you?
 
-- That five minutes of checking caught something the whole project would otherwise have been built on.
-- That your synthesis was weak.
-- That his view should override the findings.
+- His view should now override the counted findings, since the problem is his to describe.
+- Your synthesis was weak, because a sound one would not need correcting by the owner.
+- Five minutes of checking caught something the whole project would otherwise have been built on.
 
 <details>
 <summary>After your attempt</summary>
 
-That five minutes of checking caught something the whole project would otherwise have been built on. — Being told twice that it will be ready tomorrow is a different problem from waiting, and it changes the wording of every state. It is the cheapest correction available anywhere in the project.
+His view should now override the counted findings, since the problem is his to describe. — It sits beside them. A correction from the person who described the problem goes next to the counts rather than replacing them.
 
-That your synthesis was weak. — A frame is an interpretation, and interpretations get corrected by the people they are about.
+Your synthesis was weak, because a sound one would not need correcting by the owner. — A frame is an interpretation, and interpretations get corrected by the people they are about. That is what the check is for.
 
-That his view should override the findings. — Not override. Corrections from the person who described the problem go beside the counts rather than replacing them.
+Five minutes of checking caught something the whole project would otherwise have been built on. — Being told twice that it will be ready tomorrow is a different problem from waiting, and it changes the wording of every state. It is the cheapest correction available anywhere in the project.
 
-Improve: Read the frame back in step 5 and record what they said, including a correction. Note the change.
+Improve: Read the frame back in step 5, or self-check it against their words, and record what you found. Note the change.
 
-Check again: Somebody who described the problem has seen your frame.
+Check again: Somebody who described the problem has seen your frame, or your self-check is labelled.
 
 Answers to revisit: read-back, correction, improvement-made
 
@@ -2784,6 +2940,7 @@ The frame read back to the person who described the problem, with their correcti
 
 - Read the frame back to the person who described the problem.
 - Record their correction, if any, and adjust.
+- With nobody to ask, compare it with their words in your notes or the supplied pack, labelled a self-check.
 
 **Start here:** Send them the sentence and ask whether it is right, rather than explaining the project.
 
@@ -2817,24 +2974,24 @@ Made-up example. Checking a problem frame with the person who described it, and 
 **Unknown:** Still unknown: whether being told twice is the general case or his strongest memory. One person corrected one thing, and it is written as his correction rather than as a finding.
 
 
-### Who you read the frame back to, and what they said
+### Who you read the frame back to, by role, and what they said — or your labelled self-check against their words
 
 Section: practice. Stable action: write-read-back.
 
-The person who described the problem. This is the cheapest correction available in the whole project.
+The person who described the problem. This is the cheapest correction available in the whole project. With nobody to ask, compare the frame with their words in your notes or the supplied brief.
 
-**Answer:** Who you read the frame back to, and what they said
+**Answer:** Who you read the frame back to, by role, and what they said — or your labelled self-check against their words
 
-The person who described the problem. This is the cheapest correction available in the whole project.
+The person who described the problem. This is the cheapest correction available in the whole project. With nobody to ask, compare the frame with their words in your notes or the supplied brief.
 
 
-### Their correction, and what you changed
+### Their correction or the mismatch you found, and what you changed
 
 Section: practice. Stable action: write-correction.
 
-Write your answer for “Their correction, and what you changed”. Use the task instructions below to decide what to include.
+Write your answer for “Their correction or the mismatch you found, and what you changed”. Use the task instructions below to decide what to include.
 
-**Answer:** Their correction, and what you changed
+**Answer:** Their correction or the mismatch you found, and what you changed
 
 
 
@@ -2846,15 +3003,41 @@ Example (made up): it is not the waiting that annoys people, it is being told tw
 </details>
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: Research for a small yoga studio found three problems: members cannot see which classes are full (raised by all four people you spoke to), the teacher loses track of who has paid (raised by one) and the timetable is hard to read (raised by two). You have three weeks of evenings. Your ideal list: a live class-capacity view, payment tracking, a redesigned timetable, member accounts and a waiting list.
+
+**Task:** What would you build, what goes on the not-building list, and what must survive inside whatever you build? Explain why.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps most of the list and does each part simply, dropping error states and accessibility to make it fit; no reasons are recorded.
+- Adequate: Builds the capacity view because four of four raised it, lists the other features as cut with reasons and return conditions, and keeps the full-class, stale and error states and the accessibility work.
+- Strong: As adequate, and notes what refusing accounts depends on (members seeing only what they should), names the trade-off of a thinner-looking project, and plans to read the frame back to a member.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -2953,19 +3136,19 @@ Adequate evidence: A scope where states, accessibility and error paths survive.
 
 Repair: Restore any state or accessibility work you cut and remove a feature instead. Recheck: The scope.
 
-**The frame was checked with a participant**
+**The frame was checked with the person who described it, or against their words**
 
-Adequate evidence: A recorded conversation with the person who described the problem.
+Adequate evidence: A recorded read-back with the person who described the problem — or, where nobody can be asked, a labelled self-check against their words in the notes.
 
 0 — Not checked.
 
-1 — Checked with someone uninvolved.
+1 — Checked with someone uninvolved, or a self-check presented as their agreement.
 
-2 — Checked with the person and their response recorded.
+2 — Checked with the person and their response recorded, or an honestly labelled self-check.
 
-3 — As adequate, and their correction changed the frame.
+3 — As adequate, and a correction or a mismatch changed the frame.
 
-Repair: Read the frame back to them and write down what they say. Recheck: The check record.
+Repair: Read the frame back to them and write down what they say, or compare it with their own words and label it a self-check. Recheck: The check record.
 
 </details>
 The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
@@ -2977,7 +3160,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 - One problem is chosen with reasoning from the counts
 - The appetite precedes the scope
 - Cuts remove features rather than quality
-- The frame was checked with a participant
+- The frame was checked with the person who described it, or against their words
 
 <details>
 <summary>Reading, video and deeper explanation</summary>
@@ -2985,7 +3168,8 @@ The progress bar counts required actions with saved work. It is not a score or p
 - One problem is enough. A four-week project that addresses three problems addresses none of them well, and the portfolio value comes from depth rather than coverage. Choosing which problem is a decision to record, with the reason, because a reviewer will ask.
 - The appetite discipline is the same as m17: decide what this is worth before deciding what it contains. Without that, the design expands to whatever seems complete and then gets cut under time pressure in the way that removes error states and accessibility work.
 - Cutting by feature preserves quality. If you cannot build both the status page and the notification, build one properly with its states, its accessibility and its failure paths, and record the other as deferred. A half-built pair with no error handling is worse than one complete thing.
-- Checking the frame with the person who described the problem is a five-minute conversation that prevents four weeks of work on the wrong thing. They will either recognise it or correct it, and both outcomes are worth having before you start.
+- Checking the frame with the person who described the problem is a five-minute conversation that prevents four weeks of work on the wrong thing. They will either recognise it or correct it, and both outcomes are worth having before you start. On the practice route, or if nobody can be asked, compare the frame with their own words in your notes and label it a self-check: it catches drift, and it cannot catch what only they would notice.
+- Some refusals depend on a condition, and the not-building list says which. Refusing customer accounts keeps the page easy for somebody checking once — but it only stands if a real version still guarantees that one customer can never see another customer's record. Write that condition next to the refusal, because lesson 6 tests it.
 
 [Ryan Singer: Shape Up](https://basecamp.com/shapeup/webbook).
 
@@ -2995,7 +3179,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 Stable ID: m18-l05-v1. Core.
 
-A third project is where your accumulated methods and system meet an unfamiliar domain, which is the real test of both.
+An independent project is where your accumulated methods and system meet an unfamiliar domain, which is the real test of both.
 
 Bring: Your framed problem and design system.
 
@@ -3004,6 +3188,7 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - Structure, flow, states and interface for the chosen problem
 - A record of where your system did not fit
 - An exception table appropriate to the domain
+- A written privacy and access-control requirement, with its exception rows
 - A list of methods skipped, with reasons
 
 ### Start here: in everyday words
@@ -3048,18 +3233,18 @@ Section: learn. Stable action: learn-3.
 The exception table is not optional because the project is small.
 
 
-### Idea 4: Keep the accessibility work; it is the first thing dropped und…
+### Idea 4: Write who may see what into the design: one customer can never…
 
 Section: learn. Stable action: learn-4.
 
-Keep the accessibility work; it is the first thing dropped under time pressure.
+Write who may see what into the design: one customer can never see another customer's record.
 
 
-### Record which methods you skipped and what that cost
+### Idea 5: Keep the accessibility work, and record which methods you skip…
 
 Section: learn. Stable action: learn-5.
 
-Record which methods you skipped and what that cost.
+Keep the accessibility work, and record which methods you skipped and what that cost.
 
 
 ### See the idea in a supplied example
@@ -3068,7 +3253,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The status page reused the system's type, spacing and card component, and did not fit in two places: there was no component for a state that changes over time, and the status colours needed a fifth semantic value the token sheet lacked. Both were recorded, and one was added to the system with a version bump. Structure was three items deep and no card sort was run, with the reason recorded. The exception table had eleven rows including a job number that does not exist, information more than a day old, and a customer arriving before the update. The keyboard pass was run; the screen-reader pass was not, and that was recorded rather than implied.
+- The status page reused the system's type, spacing and card component, and did not fit in two places: there was no component for a state that changes over time, and the status colours needed a fifth semantic value the token sheet lacked. Both were recorded, and one was added to the system with a version bump. Structure was three items deep and no card sort was run, with the reason recorded. The exception table had eleven rows including a job number that does not exist, a neighbouring job number typed by mistake — which must show not found, never another customer's job — information more than a day old, and a customer arriving before the update. The privacy requirement sat beside it: one customer never sees another's record, and the page shows no names or phone numbers. The keyboard pass was run; the screen-reader pass was not, and that was recorded rather than implied.
 
 
 ### Choose where you will do the work
@@ -3134,6 +3319,7 @@ Section: practice-plan. Stable action: step-2-brief.
 An exception table for this domain, with each state’s wording and route out.
 
 - Write the exception table for this domain.
+- Write who may see what: a mistyped or neighbouring reference must never show another person's record.
 - Specify each state's wording and route out.
 
 **Start here:** Write the rows before designing any screen, starting with a job number that does not exist.
@@ -3155,7 +3341,7 @@ Made-up example. Writing the exception table for a repair-shop page, and writing
 
 **Why those four:** They are the ones visible from the screen. Each is a state the design already had somewhere to put.
 
-**What writing the table first would have found:** Eleven rows. The ones I missed were about the world rather than the screen: information a day old, the owner on holiday, two jobs for the same customer, a number typed with a space in it.
+**What writing the table first would have found:** Eleven rows. The ones I missed were about the world rather than the screen: information a day old, the owner on holiday, two jobs for the same customer, a number typed with a space in it, and a neighbouring number typed by mistake, which must show not found rather than somebody else’s job.
 
 **The one that mattered most:** Stale information. The page was designed to show the latest update and nothing in it distinguished an update from this morning from one from last Tuesday.
 
@@ -3190,13 +3376,31 @@ Write your answer for “Each state’s wording and its route out”. Use the ta
 
 
 
+### Who may see what: the rule that stops one person seeing another person’s record, and the exception rows that test it
+
+Section: practice-plan. Stable action: write-access-rule.
+
+For example: a mistyped or neighbouring reference shows not found, never another job; the page shows no names or phone numbers.
+
+**Answer:** Who may see what: the rule that stops one person seeing another person’s record, and the exception rows that test it
+
+For example: a mistyped or neighbouring reference shows not found, never another job; the page shows no names or phone numbers.
+
+<details>
+<summary>Example</summary>
+
+Example (made up): one customer never sees another customer’s job. Rows: neighbouring job number, number with a space, a link forwarded by somebody else.
+
+</details>
+
+
 ### Interface from the system
 
 Section: practice-plan. Stable action: step-3-brief.
 
 The interface built from your own components and tokens, with every mismatch recorded.
 
-- Build the screens from your existing components and tokens.
+- Make the screens from your existing components and tokens, on paper, in a mock-up or in code.
 - Record every place the system did not fit.
 
 **Start here:** Build from the system first and note the moment you reach for something it does not have.
@@ -3308,24 +3512,24 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 It is a small project, so can the process be lighter?
 
-- Yes, since nobody is depending on it.
-- Yes, the rigour should scale with the size.
-- It can be shorter. Skipping states, accessibility and failure paths is not lightness; it produces something that would not survive contact with a real person.
+- Lighter, because the rigour of the whole process should scale down with the size of the project.
+- Shorter, yes; but dropping states, accessibility and failure paths is not lighter, it is unfinished.
+- Lighter, because nobody depends on a three-week project, so missing states harm no one.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, since nobody is depending on it. — Three people are about to use it, one of whom has never heard of the project.
+Lighter, because the rigour of the whole process should scale down with the size of the project. — The number of methods scales. What makes the one feature work does not.
 
-Yes, the rigour should scale with the size. — The number of methods scales. What makes the one feature work does not.
+Shorter, yes; but dropping states, accessibility and failure paths is not lighter, it is unfinished. — Fewer methods is legitimate: no card sort for a three-item structure, with the reason recorded. Eleven exception rows on a small project is still eleven rows.
 
-It can be shorter. Skipping states, accessibility and failure paths is not lightness; it produces something that would not survive contact with a real person. — Fewer methods is legitimate: no card sort for a three-item structure, with the reason recorded. Eleven exception rows on a small project is still eleven rows.
+Lighter, because nobody depends on a three-week project, so missing states harm no one. — Testers are about to use it, at least one of them a stranger to the project, and the states are what they will meet.
 
 Improve: Write the exception table in step 2 before designing any screen. Record the change in step 5.
 
 Check again: Your exception table has rows for this domain rather than a note that it is small.
 
-Answers to revisit: exception-table, state-wording, improvement-made
+Answers to revisit: exception-table, state-wording, access-rule, improvement-made
 
 </details>
 
@@ -3338,18 +3542,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your system lacks a component for a status that changes over time. What should you do?
 
-- Redesign so the system fits.
-- Add the component to the system immediately.
-- Build what you need and record the mismatch, so the system knows it was tested against something it was not designed for.
+- Add a new stages component to the shared system straight away, so the next project has it.
+- Make what you need here and record the mismatch for the system to consider.
+- Redesign the page so the existing components fit, keeping the system unchanged.
 
 <details>
 <summary>After your attempt</summary>
 
-Redesign so the system fits. — That lets an abstraction decide what the domain needs.
+Add a new stages component to the shared system straight away, so the next project has it. — One project needing it is not a pattern. It goes through governance with the mismatch as evidence.
 
-Add the component to the system immediately. — One project needing it is not a pattern. It goes through governance with the mismatch as evidence.
+Make what you need here and record the mismatch for the system to consider. — Working around it quietly puts a raw value in a project file and leaves the system describing a product that no longer exists. The mismatch list is the most interesting output of this lesson.
 
-Build what you need and record the mismatch, so the system knows it was tested against something it was not designed for. — Working around it quietly puts a raw value in a project file and leaves the system describing a product that no longer exists. The mismatch list is the most interesting output of this lesson.
+Redesign the page so the existing components fit, keeping the system unchanged. — That lets an abstraction decide what the domain needs.
 
 Improve: Write every mismatch into step 3 rather than working around it. Record the change in step 5.
 
@@ -3368,18 +3572,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You did not run a screen-reader pass. How should that appear?
 
-- It need not appear, since the keyboard pass covers most of it.
-- As a stated omission, distinct from a check that passed.
-- As a limitation at the end of the write-up.
+- As a stated omission beside the checks that were run, distinct from a pass.
+- As one general limitation at the end of the write-up, away from the checks.
+- It need not appear, since the keyboard pass covers most of the same problems.
 
 <details>
 <summary>After your attempt</summary>
 
-It need not appear, since the keyboard pass covers most of it. — They overlap and are not the same check, as Module 11 showed in detail.
+As a stated omission beside the checks that were run, distinct from a pass. — Module 11 made the same point: not tested and tested-and-fine look identical in a document unless you write the difference down. Accessibility is the first thing dropped and the easiest to imply.
 
-As a stated omission, distinct from a check that passed. — Module 11 made the same point: not tested and tested-and-fine look identical in a document unless you write the difference down. Accessibility is the first thing dropped and the easiest to imply.
+As one general limitation at the end of the write-up, away from the checks. — It belongs with the checks, where somebody reading them will see which were run.
 
-As a limitation at the end of the write-up. — It belongs with the checks, where somebody reading them will see which were run.
+It need not appear, since the keyboard pass covers most of the same problems. — They overlap and are not the same check, as Module 11 showed in detail.
 
 Improve: Write what you could not check in step 4, beside what you did. Record the change in step 5.
 
@@ -3595,15 +3799,41 @@ Write your answer for “Which omissions you consider defensible, and which you 
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A community laundry wants a page where members check whether their service wash is ready, reached by the number on their paper ticket. Ticket numbers run in order, 301, 302, 303. Your design system has a card and a list component and nothing that shows progress through stages. You have two weeks.
+
+**Task:** Name three exception rows you would write before any screen, including one about who may see what, and say what you would do about the missing component. Explain why.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Designs the happy-path screen first, lists only on-screen errors such as “not found”, and quietly invents a progress component without recording it.
+- Adequate: Writes rows such as a stale update, a mistyped number and a neighbouring number that must show not found rather than another member’s wash, and records the missing component as a mismatch.
+- Strong: As adequate, and notes that numbers in order are guessable so the page should show no names or details, plans to test that with made-up tickets, and states which checks will not be run.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -3688,19 +3918,19 @@ Adequate evidence: A list of places the existing system did not fit this domain.
 
 Repair: Note every time you had to invent something the system lacked. Recheck: The mismatch list.
 
-**An exception table covers the domain's real failures**
+**An exception table covers the domain's real failures, including who may see what**
 
-Adequate evidence: A table with the domain's specific failures, not generic ones.
+Adequate evidence: A table with the domain's specific failures, not generic ones, and a written rule that one person can never see another person's record.
 
 0 — No table.
 
-1 — Generic failures copied from the earlier project.
+1 — Generic failures copied from the earlier project, or no rule about who may see what.
 
-2 — Domain-specific failures with wording.
+2 — Domain-specific failures with wording, and the access rule with its rows.
 
 3 — As adequate, and one failure came from something a participant described.
 
-Repair: Walk the flow asking what could go wrong in this shop, not in general. Recheck: The exception table.
+Repair: Walk the flow asking what could go wrong in this shop, not in general, and what a mistyped or neighbouring reference would show. Recheck: The exception table.
 
 **Skipped methods are listed with reasons**
 
@@ -3725,7 +3955,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 - Structure and flow precede interface
 - System mismatches are recorded
-- An exception table covers the domain's real failures
+- An exception table covers the domain's real failures, including who may see what
 - Skipped methods are listed with reasons
 
 <details>
@@ -3734,6 +3964,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 - Your design system was built from a booking product, and a repair shop is not a booking product. Where it fits, reuse saves days; where it does not, the mismatch is information about how general your system actually is — which is exactly what m13's review lesson was preparing you to notice.
 - The order still holds: what the person needs to find, how they move through it, what states exist, and only then what it looks like. Compressing that order under time pressure is what produces screens with no error handling, and this project is small enough to do it properly.
 - The exception table is where small projects cut first and should not. A status page has failure states — no information yet, information that is stale, a job that does not exist — and those are most of its design. Skipping them produces a demonstration rather than a design.
+- Who may see what is part of the design, not a technical afterthought. A status page reached by a job number is one mistyped digit away from somebody else's repair. Write the requirement now — one customer can never see another customer's record; no names, phone numbers or item details on the page; a mistyped or neighbouring number shows not found, never a job — and give it rows in the exception table. Lesson 6 tests it, with made-up records, before anybody relies on the page.
 - Recording what you skipped is part of the deliverable. If you did not do a card sort because the structure was three items deep, say so and say why that was reasonable; if you skipped the keyboard pass because of time, say that too. Both are honest and only one is defensible, and a reviewer can tell the difference.
 
 [GOV.UK: making prototypes](https://www.gov.uk/service-manual/design/making-prototypes).
@@ -3746,14 +3977,14 @@ Stable ID: m18-l06-v1. Core.
 
 The loop from build to test to repair is the whole of practical design, and doing it once more alone is what makes it a capability rather than a memory.
 
-Bring: Your designs and access to participants.
+Bring: Your designs, and testers or a stated self-pilot route.
 
 Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
-- A working prototype answering the open questions
-- Tests with three people, one outside the research
+- A prototype with made-up records answering the open questions
+- Tests with three people, one outside the research — or a labelled self-pilot on the single-person or practice route
 - One repair with a prediction written first, and a re-test
-- Conditions recorded for every session
+- Conditions recorded for every session, and the stop-gate result
 
 ### Start here: in everyday words
 
@@ -3765,15 +3996,15 @@ An independent project brings the research, design, testing and decision trail t
 - **A deliberate failure case:** One built in on purpose, so you can watch somebody meet it. Waiting for failures to occur finds only the common ones.
 - **Outside the research:** Somebody who has never heard of the project. They bring no framing, which is exactly what your participants cannot do.
 
-**Quick example.** Made-up example. Building a prototype for a repair-shop project, and building the finished thing. The page properly: real styling from the system, every state, the owner’s update view, and the customer view, all working.
+**Quick example.** A supplied case from a made-up project. A sports club’s kit-collection page holds every member’s order in one HTML file. In testing with made-up orders, everybody found their own order easily. Typing order 0142 instead of 0141 shows another made-up member’s name and shirt size.
 
-The reader demonstrates and guides the task before asking for “What you built, and which open questions it answers”.
+The reader demonstrates and guides the task before asking for “What you built, which open questions it answers, and the made-up records in it”.
 
 ### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
-Build a working prototype, test it with at least three people including one who was not part of the research, repair the highest-harm problem and re-test it.
+Build a prototype with made-up records only, test it — with three people including one outside the research, or on your honest route — repair the highest-harm problem, re-test it, and run the privacy and access-control stop gate.
 
 
 ### Build what the question needs, at the lowest fidelity that answers it
@@ -3797,18 +4028,18 @@ Section: learn. Stable action: learn-3.
 Rank by harm, repair one thing, predict, re-test.
 
 
-### Report the failed repair as readily as the successful one
+### Idea 4: Use made-up records only, and run the stop gate before any rea…
 
 Section: learn. Stable action: learn-4.
 
-Report the failed repair as readily as the successful one.
+Use made-up records only, and run the stop gate before any real person relies on it.
 
 
-### Record the conditions: device, connection, setting
+### Idea 5: Record the conditions, and report the failed repair as readily…
 
 Section: learn. Stable action: learn-5.
 
-Record the conditions: device, connection, setting.
+Record the conditions, and report the failed repair as readily as the successful one.
 
 
 ### See the idea in a supplied example
@@ -3817,7 +4048,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- A running page was built with real timing and a deliberate stale-data case. Three tests: the shop owner, one customer from the research, and one person who had never heard of the project. The last one produced the finding: she read the status as a promise rather than an estimate and said she would arrive at that time, which is exactly the behaviour that generates the second phone call. The repair changed the wording from a time to a window and stated when it was last updated. Prediction written first: nobody should describe it as a promise. Re-tested with two new people; one still did, and that was reported.
+- A running page was built with three made-up jobs, real timing and a deliberate stale-data case. Four tests on the learner's own phone, handed over in person: the shop owner, both customers from the research, and one person who had never heard of the project. The last one produced the finding: she read the status as a promise rather than an estimate and said she would arrive at that time, which is exactly the behaviour that generates the second phone call. The repair changed the wording from a time to a window and stated when it was last updated. Prediction written first: nobody should describe it as a promise. Re-tested with two new people; one of the two still did, and that was reported. Then the stop gate, with the made-up jobs: typing a neighbouring job number showed another job, and every job was readable in the file's source. Not passed — so the page stays a local demonstration with made-up records, and no real customer details go into it.
 
 
 ### Choose where you will do the work
@@ -3835,7 +4066,7 @@ Section: practice-plan. Stable action: step-1-brief.
 
 The smallest thing that answers the open questions, built, with one deliberate failure case.
 
-- Build the lowest-fidelity thing that answers the open questions.
+- Build the lowest-fidelity thing that answers the open questions, using made-up records only.
 - Include the states and one deliberate failure case.
 
 **Start here:** List the open questions first, then build only what they need.
@@ -3859,7 +4090,7 @@ Made-up example. Building a prototype for a repair-shop project, and building th
 
 **What the open questions actually were:** Whether people read the status as a promise, and whether the owner would update it at all. Two questions.
 
-**What would have answered them:** A single page with three hard-coded jobs and a form that writes to a text file. Two evenings.
+**What would have answered them:** A single page with three made-up jobs written into it and a pretend update form. Two evenings.
 
 **What the extra seven evenings bought:** Polish on a design that then changed, because the wording turned out to be wrong. Most of what I built was rebuilt after the first test.
 
@@ -3870,15 +4101,15 @@ Made-up example. Building a prototype for a repair-shop project, and building th
 **Unknown:** Still unknown: whether the rough version would have been taken seriously by the customers. One of them commented on how plain it was before commenting on anything else.
 
 
-### What you built, and which open questions it answers
+### What you built, which open questions it answers, and the made-up records in it
 
 Section: practice-plan. Stable action: write-what-built.
 
-Write your answer for “What you built, and which open questions it answers”. Use the task instructions below to decide what to include.
+Made-up (synthetic) records only: invented job numbers, statuses and no real names or phone numbers.
 
-**Answer:** What you built, and which open questions it answers
+**Answer:** What you built, which open questions it answers, and the made-up records in it
 
-
+Made-up (synthetic) records only: invented job numbers, statuses and no real names or phone numbers.
 
 
 ### The deliberate failure case you included, and why that one
@@ -3898,8 +4129,8 @@ Section: practice-plan. Stable action: step-2-brief.
 
 Three people, at least one outside the research, with expectation, action, outcome and hesitation recorded, and the conditions.
 
-- Test with three people, including one outside the research.
-- Record expectation, action, outcome and hesitation.
+- Test with three people, including one outside the research, or run a labelled self-pilot.
+- Record expectation, action, outcome and hesitation, summarised without names.
 - Record device, connection and setting.
 
 **Start here:** Arrange the outside person first; they are the hardest to find and the most informative.
@@ -3934,26 +4165,37 @@ Made-up example. Testing a repair-shop status page, and testing it with the peop
 **Unknown:** Still unknown: how a person who has used the shop for years but was not interviewed would fare. She is between the two groups and I could not reach one.
 
 
-### Who tested it, and which of them was outside the research
+### How this round was tested
+
+Section: practice-plan. Stable action: write-test-route.
+
+Choose the option that honestly describes your work.
+
+**Answer:** How this round was tested (Three or more testers, one outside the research / Self-pilot or a single tester, labelled as such)
+
+Both are complete. A self-pilot is you walking the tasks cold after a break; it is never reported as testing with other people.
+
+
+### Who tested it, by role, and which of them was outside the research — or that this was a self-pilot
 
 Section: practice-plan. Stable action: write-who-tested.
 
-At least one person who has never heard of the project. They are the only one who brings no framing.
+At least one person who has never heard of the project, if you can. They are the only one who brings no framing. Roles only.
 
-**Answer:** Who tested it, and which of them was outside the research
+**Answer:** Who tested it, by role, and which of them was outside the research — or that this was a self-pilot
 
-At least one person who has never heard of the project. They are the only one who brings no framing.
+At least one person who has never heard of the project, if you can. They are the only one who brings no framing. Roles only.
 
 
-### For each: expectation, action, outcome and hesitation
+### For each session: expectation, action, outcome and hesitation, summarised without names
 
 Section: practice-plan. Stable action: write-session-records.
 
-Write your answer for “For each: expectation, action, outcome and hesitation”. Use the task instructions below to decide what to include.
+Keep raw notes in a private file or on paper with a date to delete them.
 
-**Answer:** For each: expectation, action, outcome and hesitation
+**Answer:** For each session: expectation, action, outcome and hesitation, summarised without names
 
-
+Keep raw notes in a private file or on paper with a date to delete them.
 
 
 ### Device, connection and setting for every session
@@ -4176,7 +4418,7 @@ Section: practice-plan. Stable action: step-4-brief.
 
 One thing changed and re-tested with somebody new, with the result including any failure.
 
-- Change one thing and re-test with someone new.
+- Change one thing and re-test with someone new, or self-pilot again after a break.
 - Record the result including a failure.
 
 **Start here:** Make the smallest change that addresses the top problem, and nothing else.
@@ -4199,13 +4441,13 @@ Write your answer for “The one thing you changed”. Use the task instructions
 
 
 
-### The re-test result, including any failure
+### The re-test result as a count, including any failure
 
 Section: practice-plan. Stable action: write-retest-result.
 
 A repair that did not work is the more useful result and the one people leave out.
 
-**Answer:** The re-test result, including any failure
+**Answer:** The re-test result as a count, including any failure
 
 A repair that did not work is the more useful result and the one people leave out.
 
@@ -4216,26 +4458,26 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You plan to test with the people you interviewed. What is the problem?
+You plan to test only with the people you interviewed. What is the problem?
 
-- It biases towards positive results, which can be discounted.
-- They helped build the framing, so they will do well and their doing well says nothing about your wording.
-- Nothing, since they know the domain best.
+- There is no problem, because the people you interviewed know the domain better than anybody.
+- It leans towards positive results, which you can discount when you write up the sessions.
+- They share your framing, so their success says little about whether the wording works alone.
 
 <details>
 <summary>After your attempt</summary>
 
-It biases towards positive results, which can be discounted. — It cannot be discounted from inside the session; it looks exactly like the design working.
+There is no problem, because the people you interviewed know the domain better than anybody. — Knowing the domain is useful. Knowing your framing is what makes them unrepresentative.
 
-They helped build the framing, so they will do well and their doing well says nothing about your wording. — A person who has never heard of the project is the only one for whom the wording has to carry the meaning alone. That session is usually worth more than the other three together.
+It leans towards positive results, which you can discount when you write up the sessions. — It cannot be discounted from inside the session; it looks exactly like the design working.
 
-Nothing, since they know the domain best. — Knowing the domain is useful. Knowing your framing is what makes them unrepresentative.
+They share your framing, so their success says little about whether the wording works alone. — A person who has never heard of the project is the only one for whom the wording has to carry the meaning alone. That session is usually worth more than the others together.
 
-Improve: Arrange one session with somebody outside the research in step 2, and record what they did. Note the change in step 5.
+Improve: Arrange one session with somebody outside the research in step 2, or label a self-pilot, and record what happened. Note the change in step 5.
 
-Check again: At least one tester had never heard of the project.
+Check again: At least one tester had never heard of the project, or the self-pilot is labelled.
 
-Answers to revisit: who-tested, session-records, conditions, improvement-made
+Answers to revisit: test-route, who-tested, session-records, conditions, improvement-made
 
 </details>
 
@@ -4248,18 +4490,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Why write the prediction before making the repair?
 
-- To make the re-test faster to run.
-- To show reviewers that the change was reasoned.
-- So the re-test can disagree with you. Afterwards, whatever happened looks like what you expected.
+- To show reviewers later that the change was reasoned rather than guessed.
+- To make the re-test quicker to run, because you already know what to look for.
+- So the re-test can disagree with you; afterwards, any result looks expected.
 
 <details>
 <summary>After your attempt</summary>
 
-To make the re-test faster to run. — It does help, and speed is not the reason.
+To show reviewers later that the change was reasoned rather than guessed. — A side effect. The reason is what it does to your own reading of the result.
 
-To show reviewers that the change was reasoned. — A side effect. The reason is what it does to your own reading of the result.
+To make the re-test quicker to run, because you already know what to look for. — It does help, and speed is not the reason.
 
-So the re-test can disagree with you. Afterwards, whatever happened looks like what you expected. — A prediction written first is what makes a failed repair visible as a failed repair, rather than as a result you reinterpret.
+So the re-test can disagree with you; afterwards, any result looks expected. — A prediction written first is what makes a failed repair visible as a failed repair, rather than as a result you reinterpret.
 
 Improve: Write the prediction in step 3 before changing anything, and check the file is still untouched. Record the change in step 5.
 
@@ -4276,20 +4518,20 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Your repair did not work: one person still read the time as a promise. What do you report?
+After your repair, one of the two re-testers still read the time as a promise. What do you report?
 
-- That it partly worked, since only one person did it.
-- That, plainly. A failed repair says the diagnosis was wrong, which is worth more than a success confirming it.
-- Repair it again before reporting anything.
+- Exactly that, as a count: one of two still read it as a promise.
+- That the repair partly worked, since only one of the two people still did it.
+- Nothing yet: repair it a second time and report once the wording has worked.
 
 <details>
 <summary>After your attempt</summary>
 
-That it partly worked, since only one person did it. — One of two is a count worth reporting as a count. Partly worked is the phrasing that hides it.
+Exactly that, as a count: one of two still read it as a promise. — A partial repair says the diagnosis was incomplete, which is worth more than a success confirming it. It is also the most credible thing in a portfolio.
 
-That, plainly. A failed repair says the diagnosis was wrong, which is worth more than a success confirming it. — It is also the most credible thing in a portfolio. A project where every repair worked reads as a project where the re-tests were generous.
+That the repair partly worked, since only one of the two people still did it. — One of two is a count worth reporting as a count. Partly worked is the phrasing that hides it.
 
-Repair it again before reporting anything. — Worth doing next, and the first result is still the result.
+Nothing yet: repair it a second time and report once the wording has worked. — A second repair is worth doing next, and the first result is still the result.
 
 Improve: Record the re-test result exactly as it happened in step 4, including the failure. Note the change in step 5.
 
@@ -4300,21 +4542,95 @@ Answers to revisit: what-changed, retest-result, improvement-made
 </details>
 
 
-### File it
+### Run the stop gate and file it
 
 Section: practice. Stable action: step-5-brief.
 
-Both versions and the records saved, and the repair the Check questions asked for.
+The stop gate tried with made-up records and its result stated, both versions saved, and the repair the Check questions asked for.
 
-- Save both versions, the records and the outcome.
+- With made-up records only, try to reach another person's record: a neighbouring number, a mistyped one, the file's source.
+- If any shows another person's record, it stays a local demonstration with made-up records.
+- Save both versions, the records and the gate result.
 
-**Start here:** Copy the before version somewhere safe before you change anything.
+**Start here:** Type a neighbouring job number into your prototype and see what appears.
 
-**Enough:** Somebody could look at both versions and the records without asking you anything.
+**Enough:** The gate result is written down, and somebody could look at both versions and the records without asking you anything.
+
+**Privacy and access-control stop gate:** A test, with made-up records, that one person can never reach another person’s record. Until a version passes, it stays a local demonstration and no real person’s details go into it.
+
+**Made-up (synthetic) records:** Invented entries that belong to nobody. They let you test the gate without exposing anyone.
 
 **Both versions:** Before and after, kept. The pair is the artefact rather than the final one, and a case study needs both.
 
 **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
+
+
+### Try a supplied example
+
+Section: practice. Stable action: step-5-try.
+
+A supplied case from a made-up project. A sports club’s kit-collection page holds every member’s order in one HTML file. In testing with made-up orders, everybody found their own order easily. Typing order 0142 instead of 0141 shows another made-up member’s name and shirt size.
+
+Can the club start sending the page to its real members?
+
+- Yes, once it has been tried with real members, because made-up orders cannot reveal privacy problems.
+- Yes, if the page warns members to type their order number carefully before pressing find.
+- Not yet: it stays a demonstration with made-up orders until nobody can reach another member’s order.
+
+<details>
+<summary>After your attempt</summary>
+
+Yes, once it has been tried with real members, because made-up orders cannot reveal privacy problems. — The made-up orders have just revealed it. Trying it with real members first is exactly the exposure the gate exists to prevent.
+
+Yes, if the page warns members to type their order number carefully before pressing find. — A warning moves the responsibility onto members and leaves every order readable to anybody who mistypes or looks at the file.
+
+Not yet: it stays a demonstration with made-up orders until nobody can reach another member’s order. — The usability tests passed and the stop gate did not. One neighbouring number already shows somebody else’s order, and a single file holding every order cannot keep them apart, so no real member’s details go in.
+
+Now try the same attempts on your own prototype, with made-up records only, and record the result.
+
+</details>
+
+
+### What information about real people this would hold or show if it were used for real
+
+Section: practice. Stable action: write-records-held.
+
+Names, phone numbers, what somebody brought in, their address. Write none only if that is true.
+
+**Answer:** What information about real people this would hold or show if it were used for real
+
+Names, phone numbers, what somebody brought in, their address. Write none only if that is true.
+
+
+### What you tried with made-up records, and what each attempt showed
+
+Section: practice. Stable action: write-gate-test.
+
+A neighbouring number, a mistyped one, a link meant for somebody else, and the file’s source. Made-up records only.
+
+**Answer:** What you tried with made-up records, and what each attempt showed
+
+Required only when gate-result is Passed: with made-up records, nobody could reach another person’s record or Not passed: it stays a local demonstration with made-up records. Otherwise leave participant evidence empty.
+
+A neighbouring number, a mistyped one, a link meant for somebody else, and the file’s source. Made-up records only.
+
+<details>
+<summary>Example</summary>
+
+Example (made up): typing 1042 instead of 1041 showed another made-up job; every job was readable in the file’s source.
+
+</details>
+
+
+### The privacy and access-control stop gate
+
+Section: practice. Stable action: write-gate-result.
+
+Choose the option that honestly describes your work.
+
+**Answer:** The privacy and access-control stop gate (Passed: with made-up records, nobody could reach another person’s record / Not passed: it stays a local demonstration with made-up records / Not applicable: it holds no information about any real person)
+
+Until a version passes, it stays a local demonstration with made-up records. A single file holding every record cannot pass.
 
 
 ### Where both versions and the records are saved
@@ -4328,15 +4644,41 @@ Write your answer for “Where both versions and the records are saved”. Use t
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: You built a clickable prototype of a dog-walking group’s sign-up sheet, filled with made-up walkers and their phone numbers. Three friends of the organiser tried it and liked it. The organiser now wants to send the file to the group’s forty real members next week and type their real numbers into it.
+
+**Task:** What would you test before anything is sent, and with whom? Decide whether it can go to the members, and give the reason for each decision.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Agrees to send it because the three testers liked it; testing only with friends is treated as enough and nobody checks what each member could see.
+- Adequate: Tests with someone outside the organiser’s circle, tries with made-up records whether one member can see another’s number, and keeps it a demonstration with made-up records until that passes.
+- Strong: As adequate, and explains that one shared file holding every number cannot pass, so real use needs a properly built version or no numbers in it, and records the conditions and what remains untested.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -4359,7 +4701,7 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: Build it, test it, repair it
-What I am trying to do: Build a working prototype, test it with at least three people including one who was not part of the research, repair the highest-harm problem and re-test it.
+What I am trying to do: Build a prototype with made-up records only, test it — with three people including one outside the research, or on your honest route — repair the highest-harm problem, re-test it, and run the privacy and access-control stop gate.
 
 Key idea or terms:
 Lowest fidelity that answers it: The rule from Module 10. Build what the question needs rather than what would look best.
@@ -4367,24 +4709,24 @@ A deliberate failure case: One built in on purpose, so you can watch somebody me
 Outside the research: Somebody who has never heard of the project. They bring no framing, which is exactly what your participants cannot do.
 
 Supplied practice material (fictional or labelled practice, not my research):
-Made-up example. Building a prototype for a repair-shop project, and building the finished thing. The page properly: real styling from the system, every state, the owner’s update view, and the customer view, all working.
+A supplied case from a made-up project. A sports club’s kit-collection page holds every member’s order in one HTML file. In testing with made-up orders, everybody found their own order easily. Typing order 0142 instead of 0141 shows another made-up member’s name and shirt size.
 
 Activity: Act as a project reviewer using only the supplied case. Ask for my decision, the evidence behind it and the gap I would investigate next. Do not invent users, results or impact.
 
 Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
-When the activity is finished, tell me to return to the course answer called “What you built, and which open questions it answers” and write my own decision. Do not write that answer for me.
+When the activity is finished, tell me to return to the course answer called “What you built, which open questions it answers, and the made-up records in it” and write my own decision. Do not write that answer for me.
 ```
 
-**Come back to the course:** Return to “What you built, and which open questions it answers”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+**Come back to the course:** Return to “What you built, which open questions it answers, and the made-up records in it”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “What you built, and which open questions it answers” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “What you built, which open questions it answers, and the made-up records in it” and write one sentence in your own words.
 
 </details>
 <details>
 <summary>Optional hints and reference material</summary>
 
 - Check each open question against what the prototype can show; add what is missing.
-- Run one session with someone who has never heard of the project.
+- Run one session with someone who has never heard of the project, or label your self-pilot and record who you could not reach.
 
 - R05: [GOV.UK: moderated usability testing](https://www.gov.uk/service-manual/user-research/using-moderated-usability-testing) — Planning and running sessions. Purpose: Supplies the testing discipline for the independent project. Free reading, no account. Verified 2026-09-06. Assumes a note-taker; alone, choose recording or notes as in m10. Fallback: R12.
 - R12: [GOV.UK: making prototypes](https://www.gov.uk/service-manual/design/making-prototypes) — What a prototype at each fidelity can support. Purpose: Keeps the claims from this build bounded to what it can show. Free reading, no account. Verified 2026-09-06. A rough running page is not a product; state what it fakes. Fallback: R05.
@@ -4395,31 +4737,31 @@ When the activity is finished, tell me to return to the course answer called “
 
 **The build answers the open questions at appropriate fidelity**
 
-Adequate evidence: A prototype whose fidelity is justified by the questions it answers.
+Adequate evidence: A prototype with made-up records whose fidelity is justified by the questions it answers.
 
-0 — Fidelity chosen by preference.
+0 — Fidelity chosen by preference, or real people's details in it.
 
 1 — Appropriate but missing the failure case.
 
-2 — Appropriate with states and one deliberate failure.
+2 — Appropriate with states, one deliberate failure and made-up records only.
 
-3 — As adequate, and it runs on a participant's own device.
+3 — As adequate, and it was tried on a phone like the ones customers carry.
 
 Repair: Check each open question against what the prototype can show; add what is missing. Recheck: The prototype.
 
-**Three tests including one outside the research**
+**Testing includes someone outside the research, or a labelled self-pilot**
 
-Adequate evidence: Three session records, one with a person new to the project.
+Adequate evidence: Three session summaries, one with a person new to the project — or, on the single-person or practice route, a self-pilot labelled as such with a dated note of who could not be reached.
 
-0 — Fewer than three, or all research participants.
+0 — No testing, or a self-pilot reported as testing with others.
 
-1 — Three, all with prior context.
+1 — Sessions only with people who share your framing.
 
-2 — Three including one stranger.
+2 — Three including one stranger, or an honestly labelled self-pilot.
 
-3 — As adequate, and the difference between the groups is analysed.
+3 — As adequate, and the difference between the groups — or what a self-pilot cannot show — is analysed.
 
-Repair: Run one session with someone who has never heard of the project. Recheck: The session records.
+Repair: Run one session with someone who has never heard of the project, or label your self-pilot and record who you could not reach. Recheck: The session records.
 
 **One repair with a prediction and a re-test**
 
@@ -4435,19 +4777,19 @@ Adequate evidence: A single change, a prior prediction, and a re-test with new p
 
 Repair: Revert to one change, write the prediction, and re-test with someone new. Recheck: The repair record.
 
-**Conditions recorded for every session**
+**Conditions and the stop-gate result are recorded**
 
-Adequate evidence: Device, connection and setting noted per session.
+Adequate evidence: Device, connection and setting per session, and a dated stop-gate result tested with made-up records.
 
-0 — Not recorded.
+0 — Not recorded, or real records used before the gate.
 
-1 — Recorded for some sessions.
+1 — Conditions for some sessions, or the gate assumed rather than tried.
 
-2 — Recorded for all.
+2 — Conditions for all, and the gate tried with made-up records and its result stated.
 
-3 — As adequate, and at least one session happened in the real setting.
+3 — As adequate, and a failed gate is stated with what a safe version would need.
 
-Repair: Add the conditions to each record; without them the results cannot be weighed. Recheck: The condition records.
+Repair: Add the conditions to each record, then try the gate with made-up records and write the result. Recheck: The condition records and the gate result.
 
 </details>
 The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
@@ -4457,9 +4799,9 @@ The progress bar counts required actions with saved work. It is not a score or p
 **Review criteria:**
 
 - The build answers the open questions at appropriate fidelity
-- Three tests including one outside the research
+- Testing includes someone outside the research, or a labelled self-pilot
 - One repair with a prediction and a re-test
-- Conditions recorded for every session
+- Conditions and the stop-gate result are recorded
 
 <details>
 <summary>Reading, video and deeper explanation</summary>
@@ -4467,7 +4809,8 @@ The progress bar counts required actions with saved work. It is not a score or p
 - The build should serve the questions still open. For a status page, that is usually a running page with real timing, because the questions are about whether people understand a state and whether they would still ring. Paper cannot answer either.
 - Testing with someone outside the research matters here because your participants now share your framing. A fresh person meets the design as a stranger would, and the difference between the two groups is frequently the finding.
 - The repair loop is the m10 discipline: rank by harm, change one thing, write the prediction, re-test with someone new, and report the result whatever it is. A failed repair in a portfolio project is more convincing than a success, because it shows the loop was real.
-- Conditions belong in the record. A status page tested on a laptop in a quiet room proves less than one tested on a customer's phone outside a shop, and stating which you did is what lets a reader weigh the result.
+- Conditions belong in the record. A status page tested on a laptop in a quiet room proves less than one tested on a customer's phone outside a shop, and stating which you did is what lets a reader weigh the result. With nobody outside the research available, a self-pilot — you walking the tasks cold after a break — is allowed if it is labelled self-pilot; it is never reported as testing with other people.
+- The privacy and access-control stop gate comes before any real use. Using made-up (synthetic) records only, try to reach another customer's record: type a neighbouring job number, a mistyped one, open a link meant for someone else, and read the file's source. If any of those shows another person's job, the gate has not passed, and the prototype stays a local demonstration with made-up records. A single HTML file that contains every job cannot pass, because anybody holding the file can read every record in it. Making a version that passes needs a properly built system and is outside a design prototype's job; say so rather than shipping it.
 
 [GOV.UK: moderated usability testing](https://www.gov.uk/service-manual/user-research/using-moderated-usability-testing).
 
@@ -4484,7 +4827,7 @@ Bring: Your prototype and the recorded intent for it.
 Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
 - A stated intent given to reviewers before the work
-- Critique from at least two people, one who disagrees
+- Critique from at least two people, one who disagrees — or a labelled self-review with the questions still open
 - A record of changes made with reasons
 - A record of critique defended, with reasons
 
@@ -4506,7 +4849,7 @@ The reader demonstrates and guides the task before asking for “The problem, th
 
 Section: learn. Stable action: welcome.
 
-Have someone outside the project critique the work against your own stated intent, and record what you changed, what you defended and why.
+Have someone outside the project critique the work against your own stated intent — or, where nobody can be reached, run a self-review labelled as such — and record what you changed, what you defended and why.
 
 
 ### Ask for critique against your stated intent, not for opinions
@@ -4516,11 +4859,11 @@ Section: learn. Stable action: learn-1.
 Ask for critique against your stated intent, not for opinions.
 
 
-### Choose someone who will disagree with you
+### Idea 2: Choose someone who will disagree with you; a self-review is la…
 
 Section: learn. Stable action: learn-2.
 
-Choose someone who will disagree with you.
+Choose someone who will disagree with you; a self-review is labelled self-review, never outside critique.
 
 
 ### Record what you changed and what you defended, with reasons
@@ -4609,11 +4952,11 @@ Section: practice-plan. Stable action: step-2-brief.
 Two reviewers with different vantage points, at least one likely to disagree.
 
 - Choose two people with different vantage points.
-- Prefer someone likely to disagree with you.
+- Prefer someone likely to disagree with you; with nobody available, plan a labelled self-review.
 
-**Start here:** Think of the person whose reaction you are slightly dreading.
+**Start here:** Think of the person whose reaction you are slightly dreading. If nobody can be reached, write the questions such a person would ask.
 
-**Enough:** One reviewer is somebody you expect to push back.
+**Enough:** One reviewer is somebody you expect to push back, or your self-review is labelled and names who you could not reach.
 
 **Different vantage points:** Somebody who builds things and somebody who runs a small business see different problems. Two designers see the same ones you do.
 
@@ -4643,13 +4986,24 @@ Made-up example. Choosing critique reviewers for a repair-shop project, and choo
 **Unknown:** Still unknown: whether the tailor’s challenge is right. It is recorded as a defence with a reason, and if the page goes unused she was right.
 
 
-### Two people with different vantage points, and why each
+### How this critique will happen
+
+Section: practice-plan. Stable action: write-critique-route.
+
+Choose the option that honestly describes your work.
+
+**Answer:** How this critique will happen (Two or more outside reviewers / Self-review, labelled as such: nobody outside could be reached)
+
+Both are complete. A self-review finds drift from your intent; it is never reported as outside critique.
+
+
+### Two people with different vantage points, by role, and why each — or, for a self-review, who you could not reach
 
 Section: practice-plan. Stable action: write-two-reviewers.
 
-Write your answer for “Two people with different vantage points, and why each”. Use the task instructions below to decide what to include.
+Write your answer for “Two people with different vantage points, by role, and why each — or, for a self-review, who you could not reach”. Use the task instructions below to decide what to include.
 
-**Answer:** Two people with different vantage points, and why each
+**Answer:** Two people with different vantage points, by role, and why each — or, for a self-review, who you could not reach
 
 
 
@@ -4661,6 +5015,8 @@ Section: practice-plan. Stable action: write-who-disagrees.
 Choose somebody who will. Two people who think as you do is a pleasant afternoon.
 
 **Answer:** Which of them is likely to disagree with you
+
+Required only when critique-route is Two or more outside reviewers. Otherwise leave participant evidence empty.
 
 Choose somebody who will. Two people who think as you do is a pleasant afternoon.
 
@@ -4706,24 +5062,24 @@ Made-up example. Getting critique on a repair-shop status page, and explaining t
 **Unknown:** Still unknown: what the tailor’s other two comments were. One surfaced by accident; the other did not.
 
 
-### Every comment, written down without arguing during the session
+### Every comment, written down without arguing during the session — or the reviewer questions you answered in a self-review
 
 Section: practice-plan. Stable action: write-comments-written.
 
-Arguing in the session is how you stop hearing the rest of it.
+Arguing in the session is how you stop hearing the rest of it. Reviewers by role, not name.
 
-**Answer:** Every comment, written down without arguing during the session
+**Answer:** Every comment, written down without arguing during the session — or the reviewer questions you answered in a self-review
 
-Arguing in the session is how you stop hearing the rest of it.
+Arguing in the session is how you stop hearing the rest of it. Reviewers by role, not name.
 
 
-### What they said about the thing you were least sure of
+### What was said about the thing you were least sure of
 
 Section: practice-plan. Stable action: write-asked-about.
 
-Write your answer for “What they said about the thing you were least sure of”. Use the task instructions below to decide what to include.
+Write your answer for “What was said about the thing you were least sure of”. Use the task instructions below to decide what to include.
 
-**Answer:** What they said about the thing you were least sure of
+**Answer:** What was said about the thing you were least sure of
 
 
 
@@ -4932,22 +5288,22 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Is critique for finding what is wrong?
 
-- Yes, and the reviewer should be free to comment on anything.
-- It tests whether the work does what you said it would, which is why the intent has to be stated first.
-- Yes, though the intent helps focus it.
+- It tests whether the work does what you said it would, so the intent comes first.
+- It finds what is wrong, and the reviewer should be free to comment on anything they notice.
+- It finds what is wrong; the stated intent is a useful extra that helps focus the comments.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, and the reviewer should be free to comment on anything. — They can, and without an intent the comments are about what they would have made.
+It tests whether the work does what you said it would, so the intent comes first. — A reviewer who does not know the intent can only give preferences. Told the problem, the constraint and the appetite, the same person asks about the three-day stale case.
 
-It tests whether the work does what you said it would, which is why the intent has to be stated first. — A reviewer who does not know the intent can only give preferences. Told the problem, the constraint and the appetite, the same person asks about the three-day stale case.
+It finds what is wrong, and the reviewer should be free to comment on anything they notice. — They can, and without an intent the comments are about what they would have made instead.
 
-Yes, though the intent helps focus it. — It does more than focus it: it changes what the session can produce.
+It finds what is wrong; the stated intent is a useful extra that helps focus the comments. — The intent does more than focus it: it changes what the session can produce, from preferences to an assessment.
 
 Improve: Write the three-sentence intent in step 1 and give it to reviewers first. Record the change in step 5.
 
-Check again: Both reviewers had your intent before seeing the work.
+Check again: Every reviewer, or your self-review, started from your written intent.
 
 Answers to revisit: three-sentences, least-sure, improvement-made
 
@@ -4962,18 +5318,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A reviewer criticises something you have already solved. What should you do?
 
-- Let them continue and correct the record afterwards.
-- Write it down and answer at the end. Explaining now closes that comment and shortens everything after it.
-- Explain briefly, so the session stays accurate.
+- Write it down and answer at the end, so the comments still to come are not cut short.
+- Explain briefly as it comes up, so the record of the session stays accurate.
+- Pause and show them the solved version, so their later comments build on the right design.
 
 <details>
 <summary>After your attempt</summary>
 
-Let them continue and correct the record afterwards. — That is the right answer, described slightly differently: write it down now and answer later.
+Write it down and answer at the end, so the comments still to come are not cut short. — Each answer ends its own comment and costs you the ones the person was about to make. Ten minutes of disagreement in the middle of a session is expensive.
 
-Write it down and answer at the end. Explaining now closes that comment and shortens everything after it. — Each answer ends its own comment and costs you the ones the person was about to make. Ten minutes of disagreement in the middle of a session is expensive.
+Explain briefly as it comes up, so the record of the session stays accurate. — Briefly becomes a discussion, and the discussion is what costs the remaining comments.
 
-Explain briefly, so the session stays accurate. — Briefly becomes a discussion, and the discussion is what costs the remaining comments.
+Pause and show them the solved version, so their later comments build on the right design. — It turns the critique into a presentation, and the comments they were about to make are lost while you show the other version.
 
 Improve: Say at the start that you will answer at the end, and record the comments in step 3. Note the change in step 5.
 
@@ -4992,18 +5348,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You are keeping a design despite a reviewer’s objection. What makes that legitimate?
 
+- That it is your project, so the final decision on every design question is yours.
+- That the reviewer does not know the domain well enough to judge this particular choice.
 - A written reason somebody else could evaluate, ideally one recorded before the critique.
-- That the reviewer does not know the domain.
-- That it is your project and your decision.
 
 <details>
 <summary>After your attempt</summary>
 
+That it is your project, so the final decision on every design question is yours. — True and not a reason. It is the sentence that makes people stop giving you critique.
+
+That the reviewer does not know the domain well enough to judge this particular choice. — Sometimes so, and the objection still needs an answer rather than a disqualification.
+
 A written reason somebody else could evaluate, ideally one recorded before the critique. — The appetite, the not-building list and the contrast decision are all reasons made earlier. A defence backed by one of those is the strongest kind; a defence with nothing behind it is a dismissal.
-
-That the reviewer does not know the domain. — Sometimes so, and the objection still needs an answer rather than a disqualification.
-
-That it is your project and your decision. — True and not a reason. It is the sentence that makes people stop giving you critique.
 
 Improve: Write a reason beside every defence in step 4, citing an earlier decision where one exists. Record the change in step 5.
 
@@ -5054,15 +5410,41 @@ Write your answer for “Where the previous version is kept”. Use the task ins
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: You designed a sign-up form for a neighbourhood choir. Your stated intent: a new singer can join in under two minutes on a phone, and the appetite was one week. Three comments came back: “the colours are dull”, “what happens if somebody signs up twice?” and “you should add a member directory”.
+
+**Task:** For each comment, decide whether to change, defend with a reason, or record it as a preference. Explain each decision.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Changes everything to please the reviewers, or dismisses all three without reasons; the intent plays no part in the decisions.
+- Adequate: Changes the form for duplicate sign-ups because it tests the stated intent, records the colour remark as a preference, and defends against the directory with the one-week appetite as the reason.
+- Strong: As adequate, and notes that a member directory would also raise who may see whose details, keeps the previous version for comparison, and says what would bring the directory back.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -5085,7 +5467,7 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: Getting critique you did not choose
-What I am trying to do: Have someone outside the project critique the work against your own stated intent, and record what you changed, what you defended and why.
+What I am trying to do: Have someone outside the project critique the work against your own stated intent — or, where nobody can be reached, run a self-review labelled as such — and record what you changed, what you defended and why.
 
 Key idea or terms:
 Critique against intent: Testing whether the work does what you said it would. Without the intent stated, a reviewer can only tell you what they would have preferred.
@@ -5110,7 +5492,7 @@ When the activity is finished, tell me to return to the course answer called “
 <summary>Optional hints and reference material</summary>
 
 - Write the three sentences and re-run at least one critique with them.
-- Find a second reviewer whose work differs from yours.
+- Find a second reviewer whose work differs from yours, or label your self-review and list who you could not reach.
 
 - R19: [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard) — The points on iterating and improving frequently and on having a multidisciplinary team. Purpose: Frames critique as part of the delivery loop rather than a review event. Free reading, no account. Verified 2026-09-06. Assumes a team; alone, the critique has to be sought deliberately. Fallback: R07.
 - R22: [NN/g: UX portfolio](https://www.nngroup.com/articles/ux-design-portfolios/) — What 204 surveyed hiring professionals said they look for, including what was left out and why. Purpose: Explains why the defence record is worth keeping for the portfolio. Free article, no account; the site sells courses and reports that are not required. Verified 2026-09-06. Aimed at a US hiring market. Fallback: R23.
@@ -5133,19 +5515,19 @@ Adequate evidence: A written intent covering problem, constraint and appetite.
 
 Repair: Write the three sentences and re-run at least one critique with them. Recheck: The intent statement.
 
-**At least two reviewers, one likely to disagree**
+**At least two reviewers, one likely to disagree, or a labelled self-review**
 
-Adequate evidence: Two critique records from different vantage points.
+Adequate evidence: Two critique records from different vantage points — or, where nobody could be reached, a self-review labelled as such, with who was unreachable and the questions left open.
 
-0 — One reviewer, or none.
+0 — No critique, or a self-review presented as outside critique.
 
 1 — Two reviewers with similar views.
 
-2 — Two with different vantage points.
+2 — Two with different vantage points, or an honestly labelled self-review.
 
-3 — As adequate, and one reviewer works in the domain.
+3 — As adequate, and one reviewer works in the domain, or the self-review names what only an outsider could check.
 
-Repair: Find a second reviewer whose work differs from yours. Recheck: The critique records.
+Repair: Find a second reviewer whose work differs from yours, or label your self-review and list who you could not reach. Recheck: The critique records.
 
 **Changes recorded with reasons**
 
@@ -5183,7 +5565,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 **Review criteria:**
 
 - Intent was stated before the work was shown
-- At least two reviewers, one likely to disagree
+- At least two reviewers, one likely to disagree, or a labelled self-review
 - Changes recorded with reasons
 - Defences recorded with reasons
 
@@ -5194,6 +5576,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 - Choosing a reviewer who will disagree is harder than it sounds, because the comfortable choice is someone who will be encouraging. A developer will ask what happens when the data is late; a person who runs a small business will ask who updates it on a Sunday. Both questions are better than praise.
 - Recording defences matters as much as recording changes. Some critique is wrong, or right about a constraint you already considered and accepted, and saying so with the reason is a professional act. What is not acceptable is dismissing something because considering it would be inconvenient.
 - Naming your least certain areas directs attention where it helps. If you are unsure whether the stale-data wording works, say so, rather than hoping the reviewer will find it themselves.
+- If nobody outside the project can be reached — on the practice route, or alone — a self-review against your written intent is still worth doing, after a break, with the reviewer questions written out. Label it self-review, list who you could not reach, and keep the questions an outside reviewer would still need to answer. It finds drift from your intent; it cannot find the thing you cannot see, so it is never reported as outside critique.
 
 [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard).
 
@@ -5205,13 +5588,13 @@ Stable ID: m18-l08-v1. Core.
 
 A project that claims an improvement without a before is a story; a project that counts one thing honestly is evidence.
 
-Bring: Your prototype in use, or a baseline you can count.
+Bring: Your stop-gate result, and someone who can count the before — or the supplied practice counts.
 
 Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
 - One measure tied to the problem
 - A before count collected prior to any change
-- An after count over a comparable period
+- An after count over a comparable period, only for a change safely in real use — or a written plan
 - Conditions recorded, and the result stated as counts
 
 ### Start here: in everyday words
@@ -5224,15 +5607,15 @@ An independent project brings the research, design, testing and decision trail t
 - **Activity measure:** A count of things happening, from Module 15. It rises when the feature works and when people are lost, so no value of it means anything on its own.
 - **The before:** Collected before anything changes. It is the one number that cannot be recovered later, as Module 12 established.
 
-**Quick example.** Made-up example. Measuring a repair-shop project, and choosing what could be counted automatically. Page views. The page is a local file I could instrument, and it would give me a number every day without asking anybody for anything.
+**Quick example.** A supplied case from a made-up project. A bike repair stall began texting customers when repairs were ready on 1 March. Nobody counted calls before that. From 1 to 7 March the owner tallied 6 calls about progress. He remembers “about twenty a week” before.
 
-The reader demonstrates and guides the task before asking for “The measure that would change if the problem eased”.
+The reader demonstrates and guides the task before asking for “Which comparison your project can honestly make”.
 
 ### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
-Choose one measure the project can honestly support, collect it before and after, and report it as counts with its conditions.
+Choose one measure the project can honestly support and collect the before. Collect an after only for a change that is really in use and holds nobody's records or passed the stop gate — otherwise report the before and a plan — always as counts with conditions.
 
 
 ### Choose one measure tied to the problem, not to activity
@@ -5242,32 +5625,32 @@ Section: learn. Stable action: learn-1.
 Choose one measure tied to the problem, not to activity.
 
 
-### Collect the before, even roughly, before you change anything
+### Collect the before before anything changes; it needs no prototype at all
 
 Section: learn. Stable action: learn-2.
 
-Collect the before, even roughly, before you change anything.
+Collect the before before anything changes; it needs no prototype at all.
 
 
-### Counts, not percentages, at this size
+### Idea 3: Measure an after only for a change in real use that holds nobo…
 
 Section: learn. Stable action: learn-3.
 
-Counts, not percentages, at this size.
+Measure an after only for a change in real use that holds nobody's records or passed the stop gate.
 
 
-### Record conditions: what else changed, and over what period
+### Idea 4: Counts with periods and conditions, not percentages; if it did…
 
 Section: learn. Stable action: learn-4.
 
-Record conditions: what else changed, and over what period.
+Counts with periods and conditions, not percentages; if it did not move, say so.
 
 
-### State plainly if the measure did not move
+### Idea 5: If the before was missed, make no before-and-after claim; repo…
 
 Section: learn. Stable action: learn-5.
 
-State plainly if the measure did not move.
+If the before was missed, make no before-and-after claim; report what you have.
 
 
 ### See the idea in a supplied example
@@ -5276,7 +5659,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Measure chosen: calls asking about repair progress, tallied by the owner on a sheet by the till. Before: eleven over five working days. The page was introduced and given to customers as a link on the job slip. After: four over five working days, with the conditions recorded — one of the five days was a public holiday with reduced trade, and two customers had been told about the page directly by the owner, which is not how it would normally spread. The report says eleven then four, names both conditions, and does not convert either into a rate.
+- Measure chosen: calls asking about repair progress, tallied by the owner on a sheet by the till. Before: eleven over five working days, counted before anything changed. The page could not be the change: it failed the stop gate in lesson 6 and stayed a demonstration with made-up jobs. What went into real use was the testing finding — the owner wrote a window rather than a single day on each paper job slip and said he would ring if it slipped, which holds nobody's records. After: seven over the next five working days, with the conditions recorded — one of the five days was a public holiday with reduced trade, and the owner explained the new wording in person to two regular customers, which is not how most customers would meet it. The report says eleven then seven, names both conditions, says the page was not what changed, and converts nothing into a rate.
 
 
 ### Choose where you will do the work
@@ -5286,6 +5669,16 @@ Section: learn. Stable action: workspace.
 Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
+
+
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Supplied practice counts for the fictional tool library, labelled practice: 9 wasted visits over four opening sessions, tallied by the coordinator before anything changed.
+- The coordinator then began texting members from her own phone when a reserved tool came back, which puts nobody’s records anywhere new: 5 wasted visits over the next four sessions, one of which was cut short by rain.
 
 
 ### Choose the measure
@@ -5304,6 +5697,17 @@ One measure that would change if the problem eased, with an activity measure rej
 **Tied to the problem:** It moves when the thing you are trying to fix gets better. Calls about progress is the problem; visits to a page is not.
 
 **Activity measure:** A count of things happening, from Module 15. It rises when the feature works and when people are lost, so no value of it means anything on its own.
+
+
+### Which comparison your project can honestly make
+
+Section: practice-plan. Stable action: write-measurement-route.
+
+Choose the option that honestly describes your work.
+
+**Answer:** Which comparison your project can honestly make (Before and after: the change in real use holds nobody’s records or passed the stop gate / After only: the change was in use before anybody counted, so no comparison / Before only: nothing is in real use, so the before count and a plan)
+
+Something that failed the stop gate is not in real use, so it cannot have an after. All three routes are complete.
 
 
 ### The measure that would change if the problem eased
@@ -5346,7 +5750,7 @@ The simplest possible collection set up, and a before count over a defined perio
 
 **Start here:** Ask the person who experiences the problem to count it, on paper, for a week.
 
-**Enough:** The before count exists and nothing has changed yet.
+**Enough:** The before count exists and nothing has changed yet — or you have said plainly that it was missed.
 
 **The before:** Collected before anything changes. It is the one number that cannot be recovered later, as Module 12 established.
 
@@ -5359,7 +5763,7 @@ Section: practice-plan. Stable action: step-2-demo.
 
 Made-up example. Measuring a repair-shop project, and choosing what could be counted automatically.
 
-**What I chose:** Page views. The page is a local file I could instrument, and it would give me a number every day without asking anybody for anything.
+**What I planned:** Page views, counted once the page went live. It would give me a number every day without asking anybody for anything.
 
 **Why that was tempting:** It costs nobody any effort, it is precise, and it produces a chart. The owner has a shop to run and I did not want to ask him to do anything.
 
@@ -5374,6 +5778,32 @@ Made-up example. Measuring a repair-shop project, and choosing what could be cou
 **Trade-off:** A tally depends on somebody remembering, and the counts are approximate: a busy afternoon will lose one or two.
 
 **Unknown:** Still unknown: how many calls he forgot to mark. He thinks a few on the busiest day, which the report says rather than treating eleven as exact.
+
+
+### Try a supplied example
+
+Section: practice-plan. Stable action: step-2-try.
+
+A supplied case from a made-up project. A bike repair stall began texting customers when repairs were ready on 1 March. Nobody counted calls before that. From 1 to 7 March the owner tallied 6 calls about progress. He remembers “about twenty a week” before.
+
+What can honestly be reported?
+
+- A fall of roughly 70 per cent, since even a rough baseline shows the direction of change.
+- A fall from about twenty calls to six, with a note that the earlier figure is an estimate.
+- Six calls in the week of 1–7 March, no comparison, and “about twenty” labelled recollection.
+
+<details>
+<summary>After your attempt</summary>
+
+A fall of roughly 70 per cent, since even a rough baseline shows the direction of change. — There is no baseline here, only a memory, and a percentage from it adds false precision to a comparison that cannot be made.
+
+A fall from about twenty calls to six, with a note that the earlier figure is an estimate. — A remembered figure presented beside a count still reads as a comparison, and the reader will quote the fall rather than the note.
+
+Six calls in the week of 1–7 March, no comparison, and “about twenty” labelled recollection. — The before was missed, so no before-and-after can be made. The after count with its period is real; the memory is worth recording as a memory and cannot serve as a baseline.
+
+Now check your own before count: was it collected before anything changed?
+
+</details>
 
 
 ### The simplest possible collection, and who does it
@@ -5395,6 +5825,8 @@ Write your answer for “The before count, over a defined period, collected prio
 
 **Answer:** The before count, over a defined period, collected prior to any change
 
+Required only when measurement-route is Before and after: the change in real use holds nobody’s records or passed the stop gate or Before only: nothing is in real use, so the before count and a plan. Otherwise leave participant evidence empty.
+
 
 
 <details>
@@ -5411,14 +5843,17 @@ Section: practice-plan. Stable action: step-3-brief.
 
 How the thing was introduced, and an after count over a comparable period.
 
-- Introduce the change and collect over a comparable period.
+- Introduce only a change that holds nobody's records, or a version that passed the stop gate.
+- Collect over a comparable period, or write the after plan if nothing is in real use.
 - Note anything unusual about either period.
 
-**Start here:** Match the period exactly and write down how people found out about it.
+**Start here:** Match the period exactly and write down how people met the change — or, with nothing in real use, write the plan.
 
-**Enough:** Both periods are the same length and you can say how the thing spread.
+**Enough:** Both periods are the same length and you can say how the change reached people, or the plan names its period and method.
 
-**How it was introduced:** A condition rather than a detail. A link on a job slip spreads differently from the owner telling two people directly.
+**How it was introduced:** A condition rather than a detail. Wording on every job slip reaches people differently from the owner explaining it to two people in person.
+
+**Safe for real use:** A change that holds nobody’s records, or a version that passed the stop gate in lesson 6. Only such a change can have an after count.
 
 **Comparable period:** The same number of working days, as similar as you can arrange. Five days against seven is not a comparison.
 
@@ -5429,7 +5864,7 @@ Section: practice-plan. Stable action: step-3-demo.
 
 Made-up example. Comparing before and after at a repair shop, and comparing unequal weeks.
 
-**What I had:** Eleven calls over five working days before, and four over three days after, because the page went in on a Wednesday and I wanted the numbers.
+**What I had:** Eleven calls over five working days before, and four over three days after, because the new slip wording started on a Wednesday and I wanted the numbers.
 
 **What I nearly wrote:** Eleven to four, which is what the two tallies said, and which compares five days with three.
 
@@ -5446,15 +5881,17 @@ Made-up example. Comparing before and after at a repair shop, and comparing uneq
 **Unknown:** Still unknown: whether the first three days were unrepresentative in some other way. They contained the page being new, which is its own condition and is recorded.
 
 
-### How the thing was introduced to people
+### What change went into real use, and how people met it
 
 Section: practice-plan. Stable action: write-how-introduced.
 
-This is a condition. A link on the job slip spreads differently from the owner telling somebody directly.
+This is a condition. Wording on every job slip reaches people differently from the owner explaining it in person.
 
-**Answer:** How the thing was introduced to people
+**Answer:** What change went into real use, and how people met it
 
-This is a condition. A link on the job slip spreads differently from the owner telling somebody directly.
+Required only when measurement-route is Before and after: the change in real use holds nobody’s records or passed the stop gate or After only: the change was in use before anybody counted, so no comparison. Otherwise leave participant evidence empty.
+
+This is a condition. Wording on every job slip reaches people differently from the owner explaining it in person.
 
 
 ### The after count, over a comparable period
@@ -5465,7 +5902,22 @@ Write your answer for “The after count, over a comparable period”. Use the t
 
 **Answer:** The after count, over a comparable period
 
+Required only when measurement-route is Before and after: the change in real use holds nobody’s records or passed the stop gate or After only: the change was in use before anybody counted, so no comparison. Otherwise leave participant evidence empty.
 
+
+
+
+### With nothing in real use: the change you would measure, the comparable period and the same collection method
+
+Section: practice-plan. Stable action: write-after-plan.
+
+The after starts only when the change holds nobody’s records or a version has passed the stop gate.
+
+**Answer:** With nothing in real use: the change you would measure, the comparable period and the same collection method
+
+Required only when measurement-route is Before only: nothing is in real use, so the before count and a plan. Otherwise leave participant evidence empty.
+
+The after starts only when the change holds nobody’s records or a version has passed the stop gate.
 
 
 ### Report as counts
@@ -5474,7 +5926,7 @@ Section: practice-plan. Stable action: step-4-brief.
 
 Everything else that could explain the difference, recorded.
 
-- Write both counts with their periods.
+- Write both counts with their periods, or the before count with its plan.
 - Do not convert to percentages.
 
 **Start here:** Ask the person what else was going on that week, rather than listing what you noticed.
@@ -5488,7 +5940,7 @@ Everything else that could explain the difference, recorded.
 
 Section: practice-plan. Stable action: step-4-sort-1.
 
-Six things about a made up before-and-after at a repair shop, where calls fell from eleven to four. For each one, decide what it is.
+Six things about a made up before-and-after at a repair shop, where calls fell from eleven to seven after the slip wording changed. For each one, decide what it is.
 
 One of the five days in the after period was a public holiday with reduced trade.
 
@@ -5514,9 +5966,9 @@ Now list your own conditions, and put them beside the two numbers rather than af
 
 Section: practice-plan. Stable action: step-4-sort-2.
 
-Six things about a made up before-and-after at a repair shop, where calls fell from eleven to four. For each one, decide what it is.
+Six things about a made up before-and-after at a repair shop, where calls fell from eleven to seven after the slip wording changed. For each one, decide what it is.
 
-The owner told two customers about the page directly, which is not how it would normally spread.
+The owner explained the new slip wording in person to two regular customers, which is not how most customers would meet it.
 
 - a condition to record
 - part of the result
@@ -5529,7 +5981,7 @@ a condition to record — Those two had a personal explanation nobody else will 
 
 part of the result — It is about how the thing was introduced rather than what it did.
 
-not relevant — It changes who the four calls are from.
+not relevant — It changes who the seven calls are from.
 
 Now list your own conditions, and put them beside the two numbers rather than after them.
 
@@ -5540,9 +5992,9 @@ Now list your own conditions, and put them beside the two numbers rather than af
 
 Section: practice-plan. Stable action: step-4-sort-3.
 
-Six things about a made up before-and-after at a repair shop, where calls fell from eleven to four. For each one, decide what it is.
+Six things about a made up before-and-after at a repair shop, where calls fell from eleven to seven after the slip wording changed. For each one, decide what it is.
 
-Four calls were tallied in the after period.
+Seven calls were tallied in the after period.
 
 - a condition to record
 - part of the result
@@ -5566,7 +6018,7 @@ Now list your own conditions, and put them beside the two numbers rather than af
 
 Section: practice-plan. Stable action: step-4-sort-4.
 
-Six things about a made up before-and-after at a repair shop, where calls fell from eleven to four. For each one, decide what it is.
+Six things about a made up before-and-after at a repair shop, where calls fell from eleven to seven after the slip wording changed. For each one, decide what it is.
 
 The owner thinks he forgot to mark a few calls on the busiest day of the before period.
 
@@ -5577,7 +6029,7 @@ The owner thinks he forgot to mark a few calls on the busiest day of the before 
 <details>
 <summary>After your attempt</summary>
 
-a condition to record — It affects the before number in the direction that flatters the result, which makes it especially worth recording.
+a condition to record — It means the before count may be too low — eleven could have been thirteen — which would understate the fall, and the after tally may have gaps too. The instrument’s accuracy is a condition whichever way it cuts.
 
 part of the result — It is a limitation of the instrument rather than a finding.
 
@@ -5592,7 +6044,7 @@ Now list your own conditions, and put them beside the two numbers rather than af
 
 Section: practice-plan. Stable action: step-4-sort-5.
 
-Six things about a made up before-and-after at a repair shop, where calls fell from eleven to four. For each one, decide what it is.
+Six things about a made up before-and-after at a repair shop, where calls fell from eleven to seven after the slip wording changed. For each one, decide what it is.
 
 The shop put up a new sign about opening hours in the same week.
 
@@ -5605,7 +6057,7 @@ The shop put up a new sign about opening hours in the same week.
 
 a condition to record — Anything else that changed in the same period belongs on the list, even where the connection is not obvious.
 
-part of the result — It has nothing to do with your page.
+part of the result — It has nothing to do with your change.
 
 not relevant — It is exactly the kind of concurrent change Module 15 warned about.
 
@@ -5618,7 +6070,7 @@ Now list your own conditions, and put them beside the two numbers rather than af
 
 Section: practice-plan. Stable action: step-4-sort-6.
 
-Six things about a made up before-and-after at a repair shop, where calls fell from eleven to four. For each one, decide what it is.
+Six things about a made up before-and-after at a repair shop, where calls fell from eleven to seven after the slip wording changed. For each one, decide what it is.
 
 The owner said he was pleased with it.
 
@@ -5640,20 +6092,20 @@ Now list your own conditions, and put them beside the two numbers rather than af
 </details>
 
 
-### Everything else that could explain the difference
+### Everything else that could explain the counts, in either period
 
 Section: practice-plan. Stable action: write-conditions-recorded.
 
-Write your answer for “Everything else that could explain the difference”. Use the task instructions below to decide what to include.
+Write your answer for “Everything else that could explain the counts, in either period”. Use the task instructions below to decide what to include.
 
-**Answer:** Everything else that could explain the difference
+**Answer:** Everything else that could explain the counts, in either period
 
 
 
 <details>
 <summary>Example</summary>
 
-Example (made up): one of the five days was a public holiday with reduced trade, and two customers were told about the page directly by the owner.
+Example (made up): one of the five days was a public holiday with reduced trade, and the owner explained the new wording in person to two regular customers.
 
 </details>
 
@@ -5664,26 +6116,26 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Page views are easy to collect automatically. Why not use them?
+Page views would be easy to collect automatically once a page is live. Why not use them as the measure?
 
-- They rise when the page works and when people keep checking because it never says anything definite. No value of them means anything on its own.
-- Because automatic collection is unreliable at this scale.
-- Because it would require instrumenting the page.
+- Automatic collection is unreliable at this scale, so a handful of visits would be noise.
+- They rise both when the page helps and when people keep checking because it is unclear.
+- Collecting them would mean instrumenting the page, which is too much work for three weeks.
 
 <details>
 <summary>After your attempt</summary>
 
-They rise when the page works and when people keep checking because it never says anything definite. No value of them means anything on its own. — The problem was interruptions. A tally sheet by the till, kept by the person being interrupted, measures the problem and costs him a second a time.
+Automatic collection is unreliable at this scale, so a handful of visits would be noise. — It is quite reliable. It measures the wrong thing.
 
-Because automatic collection is unreliable at this scale. — It is quite reliable. It measures the wrong thing.
+They rise both when the page helps and when people keep checking because it is unclear. — No value of them means anything on its own. The problem was interruptions; a tally sheet by the till, kept by the person interrupted, measures the problem and costs him a second a time.
 
-Because it would require instrumenting the page. — That is the easy part, which is what makes it tempting.
+Collecting them would mean instrumenting the page, which is too much work for three weeks. — That is the easy part, which is what makes it tempting.
 
 Improve: Choose a measure tied to the problem in step 1 and say which activity measure you rejected. Record the change in step 5.
 
 Check again: Your measure would be visible to somebody who never opened the product.
 
-Answers to revisit: measure-chosen, activity-rejected, improvement-made
+Answers to revisit: measurement-route, measure-chosen, activity-rejected, improvement-made
 
 </details>
 
@@ -5694,20 +6146,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Calls fell from eleven to four. Can you report a 64 per cent reduction?
+Calls fell from eleven to seven over matched five-day periods. Can you report a 36 per cent reduction?
 
-- Yes, since the arithmetic is correct.
-- No. Eleven and four are counts, and a percentage from them is precision the numbers cannot carry.
-- Yes, with the counts stated alongside.
+- The 36 per cent is fine to report, because the arithmetic from eleven to seven is correct.
+- Report the counts instead: a rate from eleven and seven implies precision they cannot carry.
+- The 36 per cent is fine as long as the two counts are written in brackets beside it.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, since the arithmetic is correct. — The arithmetic is correct and the implied precision is not, particularly with a public holiday in the after period.
+The 36 per cent is fine to report, because the arithmetic from eleven to seven is correct. — The arithmetic is correct — four fewer out of eleven is about 36 per cent — and the implied precision is not, particularly with a public holiday in the after period.
 
-No. Eleven and four are counts, and a percentage from them is precision the numbers cannot carry. — Module 15 settled this: at these sizes the counts are the honest form, and the percentage is the part that gets quoted without its sample.
+Report the counts instead: a rate from eleven and seven implies precision they cannot carry. — Module 15 settled this: at these sizes the counts are the honest form, and the percentage is the part that gets quoted without its sample.
 
-Yes, with the counts stated alongside. — The percentage is still what travels.
+The 36 per cent is fine as long as the two counts are written in brackets beside it. — The percentage is still what travels, and the brackets get dropped the first time it is quoted.
 
 Improve: Write the result as counts in step 5, with the conditions beside them. Record the change.
 
@@ -5726,18 +6178,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your measure did not move at all. Has the project failed?
 
-- Effectively yes, since the point was to reduce the calls.
-- No. It means the measure did not move in this period under these conditions, which is a finding worth reporting.
-- No, but it should be left out of the case study.
+- It is a finding: the measure did not move in this period, under these conditions.
+- In effect it has, since the whole point of the change was to reduce the calls.
+- It has not failed, but the result is better left out of the case study entirely.
 
 <details>
 <summary>After your attempt</summary>
 
-Effectively yes, since the point was to reduce the calls. — One measure, over five days, with a holiday in it, cannot establish that.
+It is a finding: the measure did not move in this period, under these conditions. — Reporting it is what separates the work from marketing. It is also the more interesting write-up, because it raises the question of why.
 
-No. It means the measure did not move in this period under these conditions, which is a finding worth reporting. — Reporting it is what separates the work from marketing. It is also the more interesting write-up, because it raises the question of why.
+In effect it has, since the whole point of the change was to reduce the calls. — One measure, over five days, with a holiday in it, cannot establish that.
 
-No, but it should be left out of the case study. — Leaving it out is the marketing version. A reviewer who notices the absence trusts nothing else.
+It has not failed, but the result is better left out of the case study entirely. — Leaving it out is the marketing version. A reviewer who notices the absence trusts nothing else.
 
 Improve: Write the plain statement in step 5 if the measure did not move, with the conditions. Record the change.
 
@@ -5755,28 +6207,28 @@ Section: practice. Stable action: step-5-brief.
 The result written as counts with its conditions, and a plain statement if the measure did not move.
 
 - List everything else that could explain the difference.
-- State what the measure cannot show.
+- State what the measure cannot show; if no before was collected, say no comparison is possible.
 
 **Start here:** Write the two numbers and the conditions in one sentence each.
 
 **Enough:** No percentage appears anywhere in your report.
 
-**Counts, not rates:** Eleven then four. A 64 per cent reduction from eleven is the false precision Module 15 spent a lesson on.
+**Counts, not rates:** Eleven then seven. A 36 per cent reduction from eleven is the false precision Module 15 spent a lesson on.
 
 **It did not move:** A finding. It means the measure did not move in this period under these conditions, which is what separates the work from marketing.
 
 **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
 
 
-### The result, written as counts with its conditions
+### The result, written as counts with its periods and conditions — or the before count with its plan
 
 Section: practice. Stable action: write-reported-as.
 
-Eleven then four, with both conditions named, and neither converted into a rate.
+Eleven then seven, with both conditions named, and neither converted into a rate. With no before, the after alone and no claim of change.
 
-**Answer:** The result, written as counts with its conditions
+**Answer:** The result, written as counts with its periods and conditions — or the before count with its plan
 
-Eleven then four, with both conditions named, and neither converted into a rate.
+Eleven then seven, with both conditions named, and neither converted into a rate. With no before, the after alone and no claim of change.
 
 
 ### If the measure did not move, the plain statement of that
@@ -5787,18 +6239,46 @@ Write your answer for “If the measure did not move, the plain statement of tha
 
 **Answer:** If the measure did not move, the plain statement of that
 
+Optional: may be left empty.
 
 
 
-### What you changed after the Check questions
+
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: Volunteers at a small library want to know whether a new sign by the returns box reduced questions at the desk. They tallied 15 questions about returns over four opening days before the sign went up, and 9 over the next four opening days. On two days of the second period a second volunteer helped at the desk.
+
+**Task:** Write the result as you would report it, name what else could explain it, and say whether you would give a percentage. Give your reasons.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Reports a 40 per cent reduction caused by the sign, with no periods and no mention of the second volunteer.
+- Adequate: Reports 15 then 9 over four matched opening days each, names the second volunteer as a condition that could explain part of the fall, and gives no percentage because the counts are small.
+- Strong: As adequate, and notes the sign holds nobody’s records so it was safe to try for real, says what a further matched period would add, and states that the counts cannot show the sign caused the change.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -5821,7 +6301,7 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: Measuring what this project can actually measure
-What I am trying to do: Choose one measure the project can honestly support, collect it before and after, and report it as counts with its conditions.
+What I am trying to do: Choose one measure the project can honestly support and collect the before. Collect an after only for a change that is really in use and holds nobody's records or passed the stop gate — otherwise report the before and a plan — always as counts with conditions.
 
 Key idea or terms:
 Tied to the problem: It moves when the thing you are trying to fix gets better. Calls about progress is the problem; visits to a page is not.
@@ -5829,24 +6309,24 @@ Activity measure: A count of things happening, from Module 15. It rises when the
 The before: Collected before anything changes. It is the one number that cannot be recovered later, as Module 12 established.
 
 Supplied practice material (fictional or labelled practice, not my research):
-Made-up example. Measuring a repair-shop project, and choosing what could be counted automatically. Page views. The page is a local file I could instrument, and it would give me a number every day without asking anybody for anything.
+A supplied case from a made-up project. A bike repair stall began texting customers when repairs were ready on 1 March. Nobody counted calls before that. From 1 to 7 March the owner tallied 6 calls about progress. He remembers “about twenty a week” before.
 
 Activity: Act as a project reviewer using only the supplied case. Ask for my decision, the evidence behind it and the gap I would investigate next. Do not invent users, results or impact.
 
 Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
-When the activity is finished, tell me to return to the course answer called “The measure that would change if the problem eased” and write my own decision. Do not write that answer for me.
+When the activity is finished, tell me to return to the course answer called “Which comparison your project can honestly make” and write my own decision. Do not write that answer for me.
 ```
 
-**Come back to the course:** Return to “The measure that would change if the problem eased”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+**Come back to the course:** Return to “Which comparison your project can honestly make”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The measure that would change if the problem eased” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “Which comparison your project can honestly make” and write one sentence in your own words.
 
 </details>
 <details>
 <summary>Optional hints and reference material</summary>
 
 - Ask what the person would notice if the problem eased, and count that.
-- If the change is already live, say so and label the baseline as an estimate.
+- If the change is already in use and no before was collected, drop the before-and-after: report the after count with its period, label any recollection as recollection, and claim no change.
 
 - R59: [GOV.UK: sharing user research findings](https://www.gov.uk/service-manual/user-research/sharing-user-research-findings) — Reporting findings so they can be acted on and checked. Purpose: Shapes the honest reporting of a small measurement. Free reading, no account. Verified 2026-09-06. Written for teams with stakeholders; here the audience is one shop owner and your portfolio reader. Fallback: R04.
 - R63: [Analysis Function: data visualisation charts](https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-charts/) — Rules for axes, gridlines and direct labelling over legends. Purpose: Sets the rules for drawing any chart you make from these counts. Free reading, no account. Verified 2026-09-06. UK government guidance; the reasoning about small numbers is general. Fallback: R59.
@@ -5869,33 +6349,33 @@ Adequate evidence: A measure that would move if the problem eased.
 
 Repair: Ask what the person would notice if the problem eased, and count that. Recheck: The measure.
 
-**A before was collected prior to the change**
+**A before was collected prior to the change, or no comparison is claimed**
 
-Adequate evidence: A dated baseline count over a defined period.
+Adequate evidence: A dated baseline count over a defined period, taken before anything changed — or, where it was missed, the after reported alone with no comparison claimed.
 
-0 — No before.
+0 — No before, and a change claimed anyway.
 
-1 — Estimated retrospectively.
+1 — A memory of earlier weeks presented as a baseline.
 
-2 — Collected before the change over a defined period.
+2 — Collected before the change over a defined period, or no comparison claimed where it was missed.
 
 3 — As adequate, and the collection method is the same in both periods.
 
-Repair: If the change is already live, say so and label the baseline as an estimate. Recheck: The baseline.
+Repair: If the change is already in use and no before was collected, drop the before-and-after: report the after count with its period, label any recollection as recollection, and claim no change. Recheck: The baseline.
 
-**Results are reported as counts with periods**
+**Results are counts with periods, for a change safely in real use**
 
-Adequate evidence: Both counts with their periods, no rates.
+Adequate evidence: Counts with their periods and no rates, for a change that holds nobody's records or passed the stop gate — or the before count with a plan when nothing is in real use.
 
-0 — Percentages or rates.
+0 — Percentages, or an after measured on something that failed the stop gate.
 
 1 — Counts without periods.
 
-2 — Counts with periods.
+2 — Counts with periods for a safe change, or the before with a plan.
 
 3 — As adequate, and the periods are comparable in trading terms.
 
-Repair: Replace every rate with the underlying counts. Recheck: The report.
+Repair: Replace every rate with the underlying counts, and measure an after only for a change that is safe for real use. Recheck: The report.
 
 **Conditions and limits are recorded**
 
@@ -5919,16 +6399,17 @@ The progress bar counts required actions with saved work. It is not a score or p
 **Review criteria:**
 
 - The measure reflects the problem, not activity
-- A before was collected prior to the change
-- Results are reported as counts with periods
+- A before was collected prior to the change, or no comparison is claimed
+- Results are counts with periods, for a change safely in real use
 - Conditions and limits are recorded
 
 <details>
 <summary>Reading, video and deeper explanation</summary>
 
 - The measure should be the thing the problem is about. For a shop interrupted by calls, that is calls about progress — countable by tally on the counter. Page views would be activity and would tell you nothing about whether the interruptions stopped.
-- The before is the part most people skip, and skipping it makes everything after unusable. Even a rough count over five days, taken before the page exists, converts the whole project from an assertion into a comparison. Ask the person to tally, and check they actually did.
-- Counts at this size, always. Eleven calls in five days becoming four in five days is a real observation. The same expressed as a sixty-four per cent reduction is a claim the sample cannot support, and it is exactly the sentence that would be quoted back at you.
+- The before is the part most people skip. Even a rough count over five days, taken before anything changes, turns the project from an assertion into a comparison. Ask the person to tally, and check they actually did. If the change went into use before anybody counted, a before-and-after cannot be made at all: report the after count with its period, label anyone's memory of earlier weeks as recollection rather than a baseline, and claim no change.
+- Only a change that is safe for real use can have an after. If your prototype failed the stop gate in lesson 6, it is not that change — it stays a demonstration with made-up records. What can go into use is something that holds nobody's records, such as new wording on a paper slip, or a properly built version that has passed the gate. With nothing in real use, the honest result is the before count and a written plan for the after.
+- Counts at this size, always. Eleven calls in five days becoming seven in five days is a real observation. The same expressed as a thirty-six per cent reduction is a claim the sample cannot support, and it is exactly the sentence that would be quoted back at you.
 - Conditions surround the number. A quiet week, a festival, one repair that went wrong and generated six calls on its own — any of these move the count more than your design does, and the honest report names them rather than hoping nobody asks.
 
 [GOV.UK: sharing user research findings](https://www.gov.uk/service-manual/user-research/sharing-user-research-findings).
@@ -5941,13 +6422,13 @@ Stable ID: m18-l09-v1. Core.
 
 A project that only works while you are present is a demonstration; one that survives your absence is a piece of design.
 
-Bring: A working prototype and a person who might use it.
+Bring: Your stop-gate result and a person who might use the work — or, on the practice route, a written handover for the supplied brief.
 
 Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
 - Instructions written for the person who will use it
-- A handover package: source, decisions and gaps
-- A plain statement of what is unfinished or unsafe
+- A handover package: source, decisions, gaps and the stop-gate result
+- A plain statement of what is unfinished or unsafe, and what goes over only as a demonstration
 - An agreed next step with the person
 
 ### Start here: in everyday words
@@ -5960,15 +6441,15 @@ An independent project brings the research, design, testing and decision trail t
 - **Only works with you present:** Anything needing your laptop, your explanation or your fortnightly visit. It is a design fault rather than a handover problem.
 - **In their words:** Their vocabulary for their own work. Instructions written in the interface’s words make a person translate before they can start.
 
-**Quick example.** Made-up example. Writing handover instructions for a repair-shop page, and writing them from the interface. Six steps: open the file, locate the job record, update the status field, set the estimated completion window, save, and refresh the customer view.
+**Quick example.** Made-up example. Writing handover instructions for a repair shop’s new slip wording, and writing them from my design notes. Six steps: check the parts lead time, set the estimated completion window, write it on the ticket, note the date given, set a reminder for the end of the window, and contact the customer if it will be missed.
 
-The reader demonstrates and guides the task before asking for “What happens if you stop being available tomorrow”.
+The reader demonstrates and guides the task before asking for “What this handover can be”.
 
 ### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
-Hand the work over so the person can keep using or maintaining it without you, and record what they would need if you disappeared.
+Hand over what the person can safely keep using without you — something that holds nobody's records, or a version that passed the stop gate — give anything else only as a labelled demonstration with made-up records, and record what they would need if you disappeared.
 
 
 ### Ask what happens on the day you stop being available
@@ -5985,18 +6466,18 @@ Section: learn. Stable action: learn-2.
 Write instructions for the person, not for a designer.
 
 
-### Hand over the source, the decisions and the known gaps
+### Idea 3: Hand over the source, the decisions, the known gaps and the st…
 
 Section: learn. Stable action: learn-3.
 
-Hand over the source, the decisions and the known gaps.
+Hand over the source, the decisions, the known gaps and the stop-gate result.
 
 
-### Say plainly what is unfinished and unsafe to rely on
+### Idea 4: Only what passed the gate, or holds nobody's records, goes int…
 
 Section: learn. Stable action: learn-4.
 
-Say plainly what is unfinished and unsafe to rely on.
+Only what passed the gate, or holds nobody's records, goes into real use; the rest is a labelled demonstration.
 
 
 ### Get their agreement about what happens next
@@ -6012,7 +6493,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The handover: a printed card by the till with three steps for updating a job, written in the owner's words rather than the interface's; the HTML file and a short note on where it lives and how to change the shop's phone number; a decisions page covering why there are no accounts and why the status is a window rather than a time; and a gaps page saying the page has never been tested on a slow connection, has no protection against a mistyped job number showing another customer's job, and should not be relied on if the shop takes more than about twenty jobs a week. The owner agreed to try it for a month and to say if it stopped being useful.
+- The handover: a printed card by the till with the three things the owner actually does with the new slip wording, in his words — write a window, not a day; ring before the window ends if it will be late; ring when it is ready. The page goes over as a demonstration file containing made-up jobs only, its first line saying it failed the stop gate — a neighbouring job number shows another job and every job is readable in the file — so real customer details must never go into it, and what a safe version would need: a properly built lookup that returns only the matching job, an unguessable reference on each slip, no names on the page, re-tested with made-up records. A decisions page covers why the slip shows a window rather than a day. A gaps page says the demonstration was never tested on a slow connection or with a screen reader, and that the window stops being honest when parts take longer than the longest window he writes. The owner agreed to keep using the slip wording for a month and say if calls rose, and agreed not to put customer details into the demonstration.
 
 
 ### Choose where you will do the work
@@ -6042,15 +6523,26 @@ The handover question asked of the person, and whatever you changed because of t
 **Only works with you present:** Anything needing your laptop, your explanation or your fortnightly visit. It is a design fault rather than a handover problem.
 
 
-### What happens if you stop being available tomorrow
+### What this handover can be
+
+Section: practice-plan. Stable action: write-handover-route.
+
+Choose the option that honestly describes your work.
+
+**Answer:** What this handover can be (Real use: what I hand over holds nobody’s records or passed the stop gate / Demonstration only: made-up records, labelled not for real details / Practice route: a written handover for the supplied brief, labelled unagreed)
+
+Decided by the stop gate. Anything that failed it goes over only as a demonstration with made-up records.
+
+
+### What happens if you stop being available tomorrow, in a summary of the person’s answer
 
 Section: practice-plan. Stable action: write-if-you-vanish.
 
-Ask it out loud, of the person. The answer is usually shorter and worse than you expect.
+Ask it out loud, of the person. The answer is usually shorter and worse than you expect. On the practice route, answer for the supplied brief’s coordinator.
 
-**Answer:** What happens if you stop being available tomorrow
+**Answer:** What happens if you stop being available tomorrow, in a summary of the person’s answer
 
-Ask it out loud, of the person. The answer is usually shorter and worse than you expect.
+Ask it out loud, of the person. The answer is usually shorter and worse than you expect. On the practice route, answer for the supplied brief’s coordinator.
 
 
 ### What you changed because of the answer
@@ -6086,19 +6578,19 @@ The two or three things the person will actually do, in their words, watched bei
 
 Section: practice-plan. Stable action: step-2-demo.
 
-Made-up example. Writing handover instructions for a repair-shop page, and writing them from the interface.
+Made-up example. Writing handover instructions for a repair shop’s new slip wording, and writing them from my design notes.
 
-**What I wrote:** Six steps: open the file, locate the job record, update the status field, set the estimated completion window, save, and refresh the customer view.
+**What I wrote:** Six steps: check the parts lead time, set the estimated completion window, write it on the ticket, note the date given, set a reminder for the end of the window, and contact the customer if it will be missed.
 
 **Why it looked right:** Complete, accurate, in order, and it covered every case. It is the document I would have wanted.
 
-**What happened when he tried it:** He stopped at step two. Job record is not a thing he says; he says the ticket. Estimated completion window is not a thing he says either.
+**What happened when he tried it:** He stopped at step two. Completion window is not a thing he says; he says between Thursday and Saturday. Lead time is not a thing he says either.
 
-**What the card ended up saying:** Three lines. When a job comes in, write the number on the ticket. When you know the day, type it in the box. When it is ready, press Ready.
+**What the card ended up saying:** Three lines. When a job comes in, write a window on the ticket, not a day. If it will be late, ring before the window ends. When it is ready, ring as now.
 
 **What that cost and what it bought:** It leaves out three cases he will meet once a month. He can do the daily thing without me, which the six accurate steps could not achieve.
 
-**Wrong turn:** The wrong turn is writing complete instructions in the interface’s vocabulary, because completeness feels like the quality bar for a document. The person has to translate before they can start, and they stop at the first word that is not theirs.
+**Wrong turn:** The wrong turn is writing complete instructions in your design vocabulary, because completeness feels like the quality bar for a document. The person has to translate before they can start, and they stop at the first word that is not theirs.
 
 **Trade-off:** Three lines cannot cover the rare cases, and he will need to ask about one of them eventually.
 
@@ -6118,18 +6610,20 @@ Write your answer for “The two or three things they will actually do, written 
 <details>
 <summary>Example</summary>
 
-Example (made up): when a job comes in, write the number on the card. When you know the date, type it in the box. When it is ready, press Ready.
+Example (made up): when a job comes in, write a window on the slip, not a single day. If it will miss the window, ring before it ends. When it is ready, ring as now.
 
 </details>
 
 
-### What happened when you watched them follow the instructions
+### What happened when you watched them follow the instructions, summarised without names
 
 Section: practice-plan. Stable action: write-tested-instructions.
 
 Watch rather than ask. Instructions are the one document that can be tested in five minutes.
 
-**Answer:** What happened when you watched them follow the instructions
+**Answer:** What happened when you watched them follow the instructions, summarised without names
+
+Required only when handover-route is Real use: what I hand over holds nobody’s records or passed the stop gate or Demonstration only: made-up records, labelled not for real details. Otherwise leave participant evidence empty.
 
 Watch rather than ask. Instructions are the one document that can be tested in five minutes.
 
@@ -6158,13 +6652,13 @@ Section: practice-plan. Stable action: step-3-demo.
 
 Made-up example. Writing a decisions page for a handover, and writing what the thing does.
 
-**What I wrote:** A description: the page shows the job number, the status and the estimated window, and there is no login. Accurate and it reads like documentation.
+**What I wrote:** A description: the slip shows a window, the owner rings before it ends, and the card by the till lists the steps. Accurate, and it reads like documentation.
 
-**What happened two months later:** Somebody helping the shop added a login, reasonably, because it seemed obviously better to protect people’s information.
+**What happened two months later:** A new assistant, reasonably, went back to writing a single day on the slips, because a day looked more confident and customers kept asking for one.
 
-**What that broke:** The whole point. Somebody checking once, from a paper ticket, now has to create an account, and the page stopped being used.
+**What that broke:** The whole point. A single day is what testing showed people read as a promise, and the progress calls began to climb again.
 
-**What the decisions page should have said:** No login, because somebody checking once should not have to sign up, and the job number on the paper ticket is what makes the page reachable at all.
+**What the decisions page should have said:** A window rather than a single day, because in testing a single day was read as a promise and produced the second phone call.
 
 **Why the reason is the whole document:** A description tells the next person what is there. A reason tells them what they would be undoing, which is the only thing that stops them.
 
@@ -6172,7 +6666,7 @@ Made-up example. Writing a decisions page for a handover, and writing what the t
 
 **Trade-off:** A decisions page is shorter and less complete than a description, and it leaves out plenty that somebody might want to know.
 
-**Unknown:** Still unknown: whether a login would have been fine after all. Nobody tested it, and the decision is recorded as a decision rather than as a fact.
+**Unknown:** Still unknown: whether a narrower window would work as well. Nobody tested it, and the decision is recorded as a decision rather than as a fact.
 
 
 ### The source, and where it lives
@@ -6199,7 +6693,7 @@ Write your answer for “The decisions, each as a sentence with its reason”. U
 <details>
 <summary>Example</summary>
 
-Example (made up): no accounts, because somebody checking once should not have to sign up. Status shown as a window, because a time was read as a promise.
+Example (made up): a window rather than a single day, because a day was read as a promise in testing. The page stays a demonstration with made-up jobs, because it failed the stop gate.
 
 </details>
 
@@ -6210,14 +6704,14 @@ Section: practice-plan. Stable action: step-4-brief.
 
 What is untested or unsafe to rely on, and the point at which it would stop working.
 
-- List what is untested or unsafe to rely on.
+- List what is untested or unsafe to rely on, starting with the stop-gate result.
 - Say at what point it would stop working.
 
 **Start here:** List what you know is untested before writing anything reassuring.
 
 **Enough:** Every limit names something specific rather than warning generally.
 
-**Unsafe to rely on:** Something that looks finished and is not: an unguarded input, an untested connection, a case nobody has met. Saying so is the whole point of the page.
+**Unsafe to rely on:** Something that looks finished and is not: an untested connection, a case nobody has met. A prototype that failed the stop gate is not on this list: it goes over only as a labelled demonstration.
 
 **Where it stops working:** The scale or condition beyond which the thing fails. Twenty jobs a week is a real limit and nobody discovers it gently.
 
@@ -6228,7 +6722,7 @@ Section: practice-plan. Stable action: step-4-sort-1.
 
 Six lines from a made up handover for a repair-shop page. For each one, decide whether it belongs in the package.
 
-A mistyped job number can show another customer’s job. This is not protected against.
+The demonstration holds made-up jobs only and failed the stop gate: a neighbouring job number shows another job. Never put real customer details into it.
 
 - belongs, as written
 - belongs, but needs to be specific
@@ -6237,11 +6731,11 @@ A mistyped job number can show another customer’s job. This is not protected a
 <details>
 <summary>After your attempt</summary>
 
-belongs, as written — Specific, serious, and exactly the kind of thing that looks finished and is not. Somebody has to know before relying on it.
+belongs, as written — Specific, and it is the line that stops a demonstration being mistaken for a working system. It goes at the top of the package.
 
-belongs, but needs to be specific — It already names the failure and the consequence.
+belongs, but needs to be specific — It already names the failure, the evidence and what must not happen.
 
-should not be in the handover — Leaving it out would be the worst omission on the list.
+should not be in the handover — Leaving it out is how a demonstration ends up holding real customers’ details.
 
 Now read your own package the same way, and replace anything generic with what you actually know.
 
@@ -6280,7 +6774,7 @@ Section: practice-plan. Stable action: step-4-sort-3.
 
 Six lines from a made up handover for a repair-shop page. For each one, decide whether it belongs in the package.
 
-Above roughly twenty jobs a week the single page becomes unreadable.
+When parts take longer than ten days, the longest window on the slip is too short and he must ring.
 
 - belongs, as written
 - belongs, but needs to be specific
@@ -6289,11 +6783,11 @@ Above roughly twenty jobs a week the single page becomes unreadable.
 <details>
 <summary>After your attempt</summary>
 
-belongs, as written — A scale limit with a number. Somebody can tell whether they are near it, which nothing vaguer allows.
+belongs, as written — A limit with a number. He can tell when he is near it, which nothing vaguer allows.
 
-belongs, but needs to be specific — Roughly twenty is as specific as the evidence supports.
+belongs, but needs to be specific — Ten days is as specific as the evidence supports.
 
-should not be in the handover — It is the condition under which the whole thing stops being useful.
+should not be in the handover — It is the condition under which the wording stops being honest.
 
 Now read your own package the same way, and replace anything generic with what you actually know.
 
@@ -6306,7 +6800,7 @@ Section: practice-plan. Stable action: step-4-sort-4.
 
 Six lines from a made up handover for a repair-shop page. For each one, decide whether it belongs in the package.
 
-Never tested on a slow connection.
+The demonstration was never tested on a slow connection.
 
 - belongs, as written
 - belongs, but needs to be specific
@@ -6315,11 +6809,11 @@ Never tested on a slow connection.
 <details>
 <summary>After your attempt</summary>
 
-belongs, as written — A check not run, stated plainly, so nobody reads it as a check that passed.
+belongs, as written — A check not run, stated plainly, so nobody building a real version reads it as a check that passed.
 
 belongs, but needs to be specific — It names the condition and the absence, which is all it can.
 
-should not be in the handover — In a shop doorway on a phone, this is a likely condition.
+should not be in the handover — Anybody turning the demonstration into a real version needs to know it.
 
 Now read your own package the same way, and replace anything generic with what you actually know.
 
@@ -6378,13 +6872,13 @@ Now read your own package the same way, and replace anything generic with what y
 </details>
 
 
-### What is untested or unsafe to rely on
+### What is untested or unsafe to rely on, starting with the stop-gate result
 
 Section: practice-plan. Stable action: write-unfinished-list.
 
-Write your answer for “What is untested or unsafe to rely on”. Use the task instructions below to decide what to include.
+Write your answer for “What is untested or unsafe to rely on, starting with the stop-gate result”. Use the task instructions below to decide what to include.
 
-**Answer:** What is untested or unsafe to rely on
+**Answer:** What is untested or unsafe to rely on, starting with the stop-gate result
 
 
 
@@ -6402,7 +6896,7 @@ Write your answer for “At what point it would stop working”. Use the task in
 <details>
 <summary>Example</summary>
 
-Example (made up): above about twenty jobs a week, the single page becomes unreadable.
+Example (made up): the window on the slip stops being honest when parts take longer than the longest window he writes.
 
 </details>
 
@@ -6415,24 +6909,24 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Is handing over the last five minutes of a project?
 
-- Largely, since the work has to exist before it can be handed over.
-- Yes, provided the documentation is thorough.
-- It is a design constraint from the start. A tool only you can operate was designed wrong, and handover is where you find that out.
+- It can be, provided the documentation written in those minutes is thorough and accurate.
+- It is a design constraint from the start: something only you can operate was designed wrong.
+- Largely, since the work has to exist in full before there is anything to hand over.
 
 <details>
 <summary>After your attempt</summary>
 
-Largely, since the work has to exist before it can be handed over. — It has to exist in a form somebody else can operate, which is decided while building it.
+It can be, provided the documentation written in those minutes is thorough and accurate. — Thorough documentation of something nobody else can operate does not help them.
 
-Yes, provided the documentation is thorough. — Thorough documentation of something unusable by anybody else does not help.
+It is a design constraint from the start: something only you can operate was designed wrong. — Asking what happens on the day you are unavailable, early, changes the thing. Asked at the end, it produces a discovery you have no time to act on.
 
-It is a design constraint from the start. A tool only you can operate was designed wrong, and handover is where you find that out. — Asking what happens on the day you are unavailable, early, changes the thing. Asked at the end, it produces a discovery you have no time to act on.
+Largely, since the work has to exist in full before there is anything to hand over. — It has to exist in a form somebody else can operate, which is decided while building it.
 
 Improve: Ask the handover question in step 1 and change whatever only works with you present. Record the change in step 5.
 
 Check again: Something in the thing itself changed because of the answer.
 
-Answers to revisit: if-you-vanish, changed-because, improvement-made
+Answers to revisit: handover-route, if-you-vanish, changed-because, improvement-made
 
 </details>
 
@@ -6443,24 +6937,24 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Your instructions are complete and accurate, and the person stopped at step two. What went wrong?
+Your instructions are complete and accurate, and the owner stopped at step two, at the phrase “completion window”. What went wrong?
 
-- They need a walkthrough the first time.
-- They are in the interface’s vocabulary rather than theirs, so the person has to translate before they can start.
-- The instructions need to be shorter.
+- They are too long; six steps is more than anybody will read at a busy counter.
+- They use your design vocabulary rather than his, so he must translate before starting.
+- They need a walkthrough with you present the first time he uses them.
 
 <details>
 <summary>After your attempt</summary>
 
-They need a walkthrough the first time. — A walkthrough is you being present, which is what the handover replaces.
+They are too long; six steps is more than anybody will read at a busy counter. — Shorter helps, and it was a word that stopped him, not the length.
 
-They are in the interface’s vocabulary rather than theirs, so the person has to translate before they can start. — Job record is not what he says; ticket is. Three lines in his words let him do the daily thing without you, which six accurate steps could not.
+They use your design vocabulary rather than his, so he must translate before starting. — Completion window is not what he says; between Thursday and Saturday is. Three lines in his words let him do the daily thing without you, which six accurate steps could not.
 
-The instructions need to be shorter. — Shorter helps, and the words are what stopped him.
+They need a walkthrough with you present the first time he uses them. — A walkthrough is you being present, which is what the handover replaces.
 
 Improve: Rewrite the instructions in their words in step 2, then watch them follow it. Record the change in step 5.
 
-Check again: They completed the task without asking you anything.
+Check again: They completed the task without asking you anything, or the practice handover is labelled untested.
 
 Answers to revisit: the-two-things, tested-instructions, improvement-made
 
@@ -6475,18 +6969,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your handover ends with “ring me if anything goes wrong”. Is that helpful?
 
-- It is kind, and it is the thing a handover exists to replace. If it is needed, something specific is missing.
-- Yes, since no handover covers everything.
-- Yes, for the first month while they learn it.
+- It is kind, but it replaces the handover with you; name the cases it covers instead.
+- It is helpful, because no handover can cover everything that might go wrong later.
+- It is helpful for the first month, while the owner is still learning the new routine.
 
 <details>
 <summary>After your attempt</summary>
 
-It is kind, and it is the thing a handover exists to replace. If it is needed, something specific is missing. — Find out what they would ring about and write that down. An offer to be available is a gap being papered over with goodwill.
+It is kind, but it replaces the handover with you; name the cases it covers instead. — Find out what they would ring about and write that down. An offer to be available is a gap being papered over with goodwill.
 
-Yes, since no handover covers everything. — None does, and the answer is to name the cases rather than to offer yourself for all of them.
+It is helpful, because no handover can cover everything that might go wrong later. — None does, and the answer is to name the cases rather than to offer yourself for all of them.
 
-Yes, for the first month while they learn it. — A stated period is better than an open offer, and the cases are still worth naming.
+It is helpful for the first month, while the owner is still learning the new routine. — A stated period is better than an open offer, and the cases are still worth naming.
 
 Improve: Replace the offer with the specific cases it was covering, in step 4. Record the change in step 5.
 
@@ -6515,26 +7009,52 @@ An explicit agreement about what happens now, with the date.
 **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
 
 
-### What you both agreed happens now, with the date
+### What you both agreed happens now, with the date — or, on the practice route, your proposed next step labelled unagreed
 
 Section: practice. Stable action: write-agreed-next.
 
-Write your answer for “What you both agreed happens now, with the date”. Use the task instructions below to decide what to include.
+Write your answer for “What you both agreed happens now, with the date — or, on the practice route, your proposed next step labelled unagreed”. Use the task instructions below to decide what to include.
 
-**Answer:** What you both agreed happens now, with the date
-
-
+**Answer:** What you both agreed happens now, with the date — or, on the practice route, your proposed next step labelled unagreed
 
 
-### What you changed after the Check questions
+
+
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: For a volunteer-run repair café you made a paper booking sheet with clearer columns, plus a prototype web page that lists every booking with the visitor’s name and phone number. Volunteers liked both in a trial with made-up bookings. You are moving away next month, and the organiser asks you to leave it all set up with real bookings.
+
+**Task:** What would you hand over for real use, what only as a demonstration, and what would the package say? Explain why.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Hands over both for real use and adds a line saying the page shows everybody’s details; or offers to be rung whenever something goes wrong.
+- Adequate: Hands over the paper sheet for real use with short instructions in the volunteers’ words, and the page only as a demonstration with made-up bookings, marked not for real details because anybody could see every name and number.
+- Strong: As adequate, and lists what a safe version would need, writes the decisions with reasons, names the point at which the sheet stops working, and agrees a dated next step with the organiser.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -6557,7 +7077,7 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: Leaving something behind that survives you
-What I am trying to do: Hand the work over so the person can keep using or maintaining it without you, and record what they would need if you disappeared.
+What I am trying to do: Hand over what the person can safely keep using without you — something that holds nobody's records, or a version that passed the stop gate — give anything else only as a labelled demonstration with made-up records, and record what they would need if you disappeared.
 
 Key idea or terms:
 The handover question: What happens on the day you stop being available. Asked at the start it is a design constraint; asked at the end it is a discovery.
@@ -6565,17 +7085,17 @@ Only works with you present: Anything needing your laptop, your explanation or y
 In their words: Their vocabulary for their own work. Instructions written in the interface’s words make a person translate before they can start.
 
 Supplied practice material (fictional or labelled practice, not my research):
-Made-up example. Writing handover instructions for a repair-shop page, and writing them from the interface. Six steps: open the file, locate the job record, update the status field, set the estimated completion window, save, and refresh the customer view.
+Made-up example. Writing handover instructions for a repair shop’s new slip wording, and writing them from my design notes. Six steps: check the parts lead time, set the estimated completion window, write it on the ticket, note the date given, set a reminder for the end of the window, and contact the customer if it will be missed.
 
 Activity: Act as a project reviewer using only the supplied case. Ask for my decision, the evidence behind it and the gap I would investigate next. Do not invent users, results or impact.
 
 Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
-When the activity is finished, tell me to return to the course answer called “What happens if you stop being available tomorrow” and write my own decision. Do not write that answer for me.
+When the activity is finished, tell me to return to the course answer called “What this handover can be” and write my own decision. Do not write that answer for me.
 ```
 
-**Come back to the course:** Return to “What happens if you stop being available tomorrow”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+**Come back to the course:** Return to “What this handover can be”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “What happens if you stop being available tomorrow” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “What this handover can be” and write one sentence in your own words.
 
 </details>
 <details>
@@ -6607,35 +7127,35 @@ Repair: Find every step that needs you and redesign or document it. Recheck: The
 
 **Instructions are written for the user and tested**
 
-Adequate evidence: Short instructions in their language, tried with them.
+Adequate evidence: Short instructions in their language, tried with them — or, on the practice route, checked against the supplied owner's own words and labelled untested.
 
 0 — None, or design documentation offered as instructions.
 
-1 — Written but untested.
+1 — Written but untested, and not labelled so.
 
-2 — Written in their language and tested.
+2 — Written in their language and tested, or honestly labelled untested on the practice route.
 
 3 — As adequate, and their confusion changed the wording.
 
 Repair: Watch them follow the instructions and rewrite what fails. Recheck: The instructions.
 
-**The package contains source, decisions and gaps**
+**The package contains source, decisions, gaps and the stop-gate status**
 
-Adequate evidence: Three artefacts handed over together.
+Adequate evidence: Source, decisions and gaps handed over together, with the stop-gate result stated first on anything that holds records.
 
-0 — Source only.
+0 — Source only, or a prototype that failed the gate handed over for real use.
 
-1 — Source and some notes.
+1 — Source and some notes, with the gate status missing.
 
-2 — All three present.
+2 — All present, and anything that failed the gate labelled a demonstration with made-up records.
 
 3 — As adequate, and each decision has its reason in one sentence.
 
-Repair: Write the decisions and gaps pages now. Recheck: The package.
+Repair: Write the decisions and gaps pages now, and put the stop-gate result at the top. Recheck: The package.
 
 **An explicit next step is agreed and dated**
 
-Adequate evidence: A recorded agreement about what happens next.
+Adequate evidence: A recorded agreement about what happens next — on the practice route, a proposed next step labelled unagreed.
 
 0 — Project left to drift.
 
@@ -6656,7 +7176,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 - The work does not require your presence
 - Instructions are written for the user and tested
-- The package contains source, decisions and gaps
+- The package contains source, decisions, gaps and the stop-gate status
 - An explicit next step is agreed and dated
 
 <details>
@@ -6666,6 +7186,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 - Instructions written for the person are short, in their language, and describe the two or three things they actually do. A page of design rationale is not a handover; a card by the till saying how to change a job's status is.
 - The handover package is source, decisions and gaps. The decisions matter because whoever comes next — including you in six months — will otherwise re-litigate them. The gaps matter because someone will otherwise trust something that was never finished.
 - Ending explicitly is part of professional practice. Whether the shop keeps using it, stops, or asks you for more, the agreement should be stated rather than left to drift, and what you agreed belongs in the record.
+- The stop gate decides what a handover can be. A prototype that failed it is handed over as a demonstration: made-up records only, a first line saying it must not be given real people's details, and what a safe version would need. Handing it over for real use with a known exposure written in the gaps list is not honesty; it is the harm the gate exists to stop. On the practice route, write the handover for the supplied brief's owner and label it unagreed.
 
 [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard).
 
@@ -6696,7 +7217,7 @@ An independent project brings the research, design, testing and decision trail t
 - **Invented at the end:** A limitation written now, from a general sense that something was missing. It comes out vague, and vague limits bound nothing.
 - **Study limit:** Something you do not know: who was not reached, what was not measured, what the period could not show.
 
-**Quick example.** Made-up example. Sorting limits for a repair-shop project, and putting everything in one list. One list of nine things: five participants, no screen-reader pass, mistyped numbers unguarded, a public holiday in the after period, untested on a slow connection, and four more.
+**Quick example.** Made-up example. Sorting limits for a repair-shop project, and putting everything in one list. One list of nine things: three participants, no screen-reader pass, mistyped numbers unguarded, a public holiday in the after period, untested on a slow connection, and four more.
 
 The reader demonstrates and guides the task before asking for “Exclusions, deviations, skips, confounds and untested areas, copied here verbatim”.
 
@@ -6748,7 +7269,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The page has two sections. Study limits: five participants all reached through the owner; nobody who had stopped using the shop; one interview with a third party present; the measurement covered two five-day periods, one containing a public holiday; nothing establishes whether this problem exists in other repair shops. Design limits: no protection against a mistyped job number; never tested on a slow connection; no screen-reader pass; unmaintained if the owner stops updating it; unsuitable above roughly twenty jobs a week. Each has a closing step, and two are marked as the next things worth doing.
+- The page has two sections and a repair list. Study limits: three research participants, all reached through the owner; nobody who had stopped using the shop; one interview with a third party present; the measurement covered two five-day periods, one containing a public holiday; what was measured was the slip wording, not the page, which never went into real use; nothing establishes whether this problem exists in other repair shops. Design limits of the demonstration: never tested on a slow connection; no screen-reader pass; unmaintained if the owner stops updating it; unsuitable above roughly twenty jobs a week. Repair list, not limits: the failed stop gate — a neighbouring job number shows another customer's job — which keeps the page a demonstration until a properly built version passes. Each limit has a closing step, and two are marked as the next things worth doing.
 
 
 ### Choose where you will do the work
@@ -6815,15 +7336,15 @@ Section: practice-plan. Stable action: step-2-demo.
 
 Made-up example. Sorting limits for a repair-shop project, and putting everything in one list.
 
-**What my page looked like:** One list of nine things: five participants, no screen-reader pass, mistyped numbers unguarded, a public holiday in the after period, untested on a slow connection, and four more.
+**What my page looked like:** One list of nine things: three participants, no screen-reader pass, mistyped numbers unguarded, a public holiday in the after period, untested on a slow connection, and four more.
 
 **How it read:** As nine reasons to doubt everything. A reader cannot tell which sentences bound the findings and which describe the artefact.
 
 **What splitting it showed:** Four are about what I do not know, and they bound specific claims. Four are about what the thing does not do, and they bound what anybody should rely on.
 
-**What the ninth turned out to be:** The mistyped job number showing another customer’s job. Not a limit at all: a defect, sitting on a limitations page, being recorded instead of repaired.
+**What the ninth turned out to be:** The mistyped job number showing another customer’s job — the stop-gate failure from lesson 6. Not a limit at all: a blocking defect, sitting on a limitations page as if it were accepted.
 
-**What the page became:** Two short sections and a repair list with one item on it, which was fixed that evening in about twenty minutes.
+**What the page became:** Two short sections, and a repair list whose first item is the gate failure with what a safe version needs. The page stays a demonstration until a version passes.
 
 **Wrong turn:** The wrong turn is one undifferentiated list, because every item is genuinely a limitation of something. Study limits and design limits bound different things, and a defect hidden among them looks like honesty while quietly avoiding a fix.
 
@@ -6895,7 +7416,7 @@ Made-up example. Writing a limitations page for a repair-shop project, and writi
 
 **What a reader can do with them:** Nothing. They apply to every small study ever done and they bound no particular claim in my report.
 
-**What the specific versions were:** Five participants, all reached through the owner. Nobody who stopped using the shop. One interview with his son present, which changed what was said about money. A measurement period containing a public holiday.
+**What the specific versions were:** Three research participants, all reached through the owner. Nobody who stopped using the shop. One interview with his son present, which changed what was said about money. A measurement period containing a public holiday.
 
 **What those four do that the three could not:** Each one attaches to a claim. The recruitment line bounds every statement about customers; the holiday line bounds the count. A reader can tell exactly how far each finding reaches.
 
@@ -6959,7 +7480,7 @@ Section: practice-plan. Stable action: step-4-sort-1.
 
 Six lines from a made up limitations page. For each one, decide what it is.
 
-All five participants were reached through the owner, so nobody who stopped using the shop was included.
+All three research participants were reached through the owner, so nobody who stopped using the shop was included.
 
 - a specific limit
 - a generic caveat
@@ -7024,7 +7545,7 @@ a specific limit — It is specific, and it is something you could fix rather th
 
 a generic caveat — Nothing generic about it.
 
-a defect, not a limit — On a limitations page it becomes a recorded problem rather than a repaired one. It goes on the repair list.
+a defect, not a limit — On a limitations page it becomes a recorded problem rather than a repaired one. It goes on the repair list, and the page stays a demonstration until a version passes the stop gate.
 
 Now sort your own page the same way, and move the defects onto a repair list.
 
@@ -7139,18 +7660,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Does listing limitations weaken the project?
 
-- Yes, unless they are phrased carefully.
-- It does the opposite. Unstated limits get found by the reader and cost you their trust in everything else.
-- Slightly, which is the price of honesty.
+- It strengthens it: unstated limits get found by readers and cost their trust in the rest.
+- It weakens it slightly, which is the price of being honest about a small project.
+- It weakens it unless every limit is phrased carefully enough not to alarm a reviewer.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, unless they are phrased carefully. — Careful phrasing usually means generic phrasing, which is the failure this lesson is about.
+It strengthens it: unstated limits get found by readers and cost their trust in the rest. — Stated limits bound your claims and make the rest credible. It is the single most persuasive document in a junior portfolio, because almost nobody writes one.
 
-It does the opposite. Unstated limits get found by the reader and cost you their trust in everything else. — Stated limits bound your claims and make the rest credible. It is the single most persuasive document in a junior portfolio, because almost nobody writes one.
+It weakens it slightly, which is the price of being honest about a small project. — There is no price here. A reader who finds an unstated limit discounts every claim in the document.
 
-Slightly, which is the price of honesty. — There is no price here. A reader who finds an unstated limit discounts every claim in the document.
+It weakens it unless every limit is phrased carefully enough not to alarm a reviewer. — Careful phrasing usually means generic phrasing, which is the failure this lesson is about.
 
 Improve: Replace every generic caveat with a specific statement in step 3. Record the change in step 5.
 
@@ -7169,22 +7690,22 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A mistyped job number can show another customer’s job. Does that belong on the limitations page?
 
-- Yes, since it is a real limitation of the current version.
-- No. It is a defect you could fix, and putting it on a limitations page is a way of recording it instead of repairing it.
-- Yes, and also on the repair list.
+- It belongs on both the limitations page and the repair list, to be safe.
+- It belongs on the repair list as a blocking defect, not among accepted limits.
+- It belongs there, since it is a real limitation of the current version of the page.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, since it is a real limitation of the current version. — Current version is doing the work in that sentence, and it will still be the current version in a year.
+It belongs on both the limitations page and the repair list, to be safe. — On both, it gets read as accepted on one page and pending on the other.
 
-No. It is a defect you could fix, and putting it on a limitations page is a way of recording it instead of repairing it. — Limits are things you do not know or the thing does not do. A fault with a fix goes on a repair list, where somebody will do something about it.
+It belongs on the repair list as a blocking defect, not among accepted limits. — Limits are things you do not know or the thing does not do. A fault that shows one person’s record to another goes on a repair list, and it is why the page failed the stop gate and stayed a demonstration.
 
-Yes, and also on the repair list. — On both, it gets read as accepted on one page and pending on the other.
+It belongs there, since it is a real limitation of the current version of the page. — Current version is doing the work in that sentence, and it will still be the current version in a year.
 
-Improve: Move anything fixable off the page and onto a repair list in step 2. Record the change in step 5.
+Improve: Move anything fixable or blocking off the page and onto a repair list in step 2. Record the change in step 5.
 
-Check again: Nothing on the limitations page is something you could fix this afternoon.
+Check again: Nothing on the limitations page is a defect waiting for a repair.
 
 Answers to revisit: study-limits, design-limits, really-defects, improvement-made
 
@@ -7199,18 +7720,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 What should you do once the limitations page is written?
 
-- Attach it to the case study as an appendix.
-- Use it to decide what to do next.
-- Read every claim you make elsewhere against it, and weaken or remove anything it does not support.
+- Attach it to the case study as an appendix, so every reader can find it.
+- Read every claim elsewhere against it, and weaken or remove what it does not support.
+- Use it to decide which closing step to do next, before touching the write-up.
 
 <details>
 <summary>After your attempt</summary>
 
-Attach it to the case study as an appendix. — Necessary and insufficient. An appendix nobody compares against changes nothing.
+Attach it to the case study as an appendix, so every reader can find it. — Necessary and insufficient. An appendix nobody compares against changes nothing.
 
-Use it to decide what to do next. — Worth doing, via the closing steps, and the first job is checking what you have already written.
+Read every claim elsewhere against it, and weaken or remove what it does not support. — This is what makes the page do work rather than sit at the end. A project with a good limitations page and unchanged claims has written two documents that contradict each other.
 
-Read every claim you make elsewhere against it, and weaken or remove anything it does not support. — This is what makes the page do work rather than sit at the end. A project with a good limitations page and unchanged claims has written two documents that contradict each other.
+Use it to decide which closing step to do next, before touching the write-up. — Worth doing, via the closing steps, and the first job is checking what you have already written.
 
 Improve: Read your write-up against the page in step 5 and record what you weakened.
 
@@ -7261,15 +7782,41 @@ Write your answer for “What you weakened or removed”. Use the task instructi
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: Your limitations draft for a community garden’s plot-booking prototype reads: “Small sample. Results may not generalise. The prototype shows every plot holder’s name and phone number to anybody who opens it. Not tested with a screen reader.” You spoke to four gardeners, all introduced by the committee chair.
+
+**Task:** Rewrite the page: what becomes a specific study limit, what is a design limit, and what belongs somewhere else? Explain each choice.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps the generic caveats and lists the exposed names and numbers as one more limitation, so the defect sits on the page as if accepted.
+- Adequate: Replaces the caveats with “four gardeners, all introduced by the chair; nobody who gave up a plot was reached”, keeps the screen-reader gap as a design limit, and moves the exposed details to the repair list as a blocking defect.
+- Strong: As adequate, and says the prototype stays a demonstration with made-up records until nobody can see another person’s details, gives each limit a closing step, and checks the claims against the page.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -7300,7 +7847,7 @@ Invented at the end: A limitation written now, from a general sense that somethi
 Study limit: Something you do not know: who was not reached, what was not measured, what the period could not show.
 
 Supplied practice material (fictional or labelled practice, not my research):
-Made-up example. Sorting limits for a repair-shop project, and putting everything in one list. One list of nine things: five participants, no screen-reader pass, mistyped numbers unguarded, a public holiday in the after period, untested on a slow connection, and four more.
+Made-up example. Sorting limits for a repair-shop project, and putting everything in one list. One list of nine things: three participants, no screen-reader pass, mistyped numbers unguarded, a public holiday in the after period, untested on a slow connection, and four more.
 
 Activity: Act as a project reviewer using only the supplied case. Ask for my decision, the evidence behind it and the gap I would investigate next. Do not invent users, results or impact.
 
@@ -7398,48 +7945,48 @@ The progress bar counts required actions with saved work. It is not a score or p
 <summary>Reading, video and deeper explanation</summary>
 
 - The material already exists. Your exclusions from the plan, deviations from fieldwork, skipped methods from the design, confounds from the measurement and untested areas from the handover are the limitations page; the work is collecting and sharpening them rather than generating new ones.
-- Specificity is what makes the page useful. “Small sample” tells a reader nothing. “Five participants, all reached through the owner, none of whom had stopped using the shop” tells them exactly which conclusions are unavailable and which still stand.
-- The two kinds of limit are different and readers conflate them. A study limit is what you do not know; a design limit is what the thing does not do. Not knowing whether customers who left would use the page is a study limit. Not handling a mistyped job number is a design limit. Separating them keeps both honest.
+- Specificity is what makes the page useful. “Small sample” tells a reader nothing. “Three research participants, all reached through the owner, none of whom had stopped using the shop” tells them exactly which conclusions are unavailable and which still stand.
+- The two kinds of limit are different and readers conflate them. A study limit is what you do not know; a design limit is what the thing does not do. Not knowing whether customers who left would use the page is a study limit. Never having tested it on a slow connection is a design limit. A mistyped job number that shows another customer's job is neither: it is a blocking defect, the reason the page failed the stop gate, and it goes on the repair list. Separating the three keeps all of them honest.
 - Saying what would close each limit turns the page from a disclaimer into a plan. Four conversations with customers who stopped coming; one test on a slow connection; a second measurement period without a public holiday. Each is small, specific and shows you know what the next step is.
 
 [GOV.UK: sharing user research findings](https://www.gov.uk/service-manual/user-research/sharing-user-research-findings).
 
 </details>
 
-## Lesson 11: Retrospective across three projects
+## Lesson 11: Retrospective across your projects
 
 Stable ID: m18-l11-v1. Core.
 
 Improvement you cannot name is improvement you cannot repeat, and the comparison is the only evidence you have of a trajectory.
 
-Bring: Two earlier projects with records.
+Bring: At least one earlier project with records.
 
 Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
-- A process comparison across three projects
+- A process comparison across your projects
 - One improvement with its evidence and its habit
 - One thing that did not improve, named honestly
 - One specific change for the next project
 
 ### Start here: in everyday words
 
-An independent project brings the research, design, testing and decision trail together around one honest problem. In this lesson, your first small result is: Five process questions asked of all three projects, answered from the records.
+An independent project brings the research, design, testing and decision trail together around one honest problem. In this lesson, your first small result is: Five process questions asked of every project you have done, answered from the records.
 
 **Words you will use**
 
-- **Process comparison:** The same questions across three projects. It is the only evidence of a trajectory rather than a snapshot.
+- **Process comparison:** The same questions across every project you have done. It is the only evidence of a trajectory rather than a snapshot.
 - **From the records:** Looked up rather than remembered. Memory produces a general sense that things have improved, which is what everybody has.
 - **Evidence of improvement:** Something in the records that differs: exclusions present in two and absent in one, a re-test that happened twice and not once.
 
-**Quick example.** Made-up example. Comparing three projects, and comparing how they look. The three write-ups, side by side. The third is much better: clearer, better laid out, better photographs, and it reads like something professional.
+**Quick example.** Made-up example. Comparing projects, and comparing how they look. The three write-ups, side by side. The third is much better: clearer, better laid out, better photographs, and it reads like something professional.
 
-The reader demonstrates and guides the task before asking for “The five process questions you are asking of all three projects”.
+The reader demonstrates and guides the task before asking for “The five process questions you are asking of every project you have done — two on the core path, three on the full library”.
 
 ### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
-Compare this project with your two earlier ones and identify what has actually improved, what has not, and what you will do differently next.
+Compare this project with your earlier one or two — two projects on the core path, three if you took the full library — and identify what has actually improved, what has not, and what you will do differently next.
 
 
 ### Compare on process, not on how good the outcome looks
@@ -7483,7 +8030,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Improved: exclusions written before fieldwork in projects two and three, not in one, and in three the report used them directly. Improved: the repair loop closed with a re-test in both two and three; in one there was no re-test at all. Not improved: the screen-reader pass was skipped in all three, each time for time, which is a pattern rather than a series of accidents. Habit responsible for the first improvement: writing the plan in a fixed order that puts exclusions before recruitment. Next project: schedule the accessibility pass as a dated task before the build starts, because leaving it until the end has now failed three times.
+- Two projects, on the core path: Project 1 and the independent project. Improved: exclusions written before fieldwork in the independent project and not in Project 1, and its report used them directly. Improved: the repair loop closed with a re-test this time; in Project 1 there was no re-test at all. Not improved: the screen-reader pass was skipped in both, each time for time, which is a pattern rather than two accidents. Habit responsible for the first improvement: writing the plan in a fixed order that puts exclusions before recruitment. Next project: schedule the accessibility pass as a dated task before the build starts, because leaving it until the end has now failed twice. A learner who also did Project 2 asks the same questions of three.
 
 
 ### Choose where you will do the work
@@ -7499,27 +8046,27 @@ Recommended route: Fill the worksheet in this app, step by step. It saves as you
 
 Section: practice-plan. Stable action: step-1-brief.
 
-Five process questions asked of all three projects, answered from the records.
+Five process questions asked of every project you have done, answered from the records.
 
-- List the same five process questions for all three projects.
+- List the same five process questions for every project you have done.
 - Answer each from the records, not from memory.
 
 **Start here:** Write the five questions before opening any of the projects.
 
 **Enough:** Every answer came from a document rather than from recollection.
 
-**Process comparison:** The same questions across three projects. It is the only evidence of a trajectory rather than a snapshot.
+**Process comparison:** The same questions across every project you have done. It is the only evidence of a trajectory rather than a snapshot.
 
 **From the records:** Looked up rather than remembered. Memory produces a general sense that things have improved, which is what everybody has.
 
 
-### The five process questions you are asking of all three projects
+### The five process questions you are asking of every project you have done — two on the core path, three on the full library
 
 Section: practice-plan. Stable action: write-five-questions.
 
 The same five, answered from the records rather than from memory.
 
-**Answer:** The five process questions you are asking of all three projects
+**Answer:** The five process questions you are asking of every project you have done — two on the core path, three on the full library
 
 The same five, answered from the records rather than from memory.
 
@@ -7564,7 +8111,7 @@ One clear improvement with its evidence, and the habit that produced it.
 
 Section: practice-plan. Stable action: step-2-demo.
 
-Made-up example. Comparing three projects, and comparing how they look.
+Made-up example. Comparing projects, and comparing how they look.
 
 **What I compared first:** The three write-ups, side by side. The third is much better: clearer, better laid out, better photographs, and it reads like something professional.
 
@@ -7580,7 +8127,7 @@ Made-up example. Comparing three projects, and comparing how they look.
 
 **Trade-off:** A process comparison takes an afternoon of opening old files and produces a less flattering picture than the write-ups do.
 
-**Unknown:** Still unknown: whether the process improvements caused the better outcome. Three projects cannot show that, and the trajectory is worth having either way.
+**Unknown:** Still unknown: whether the process improvements caused the better outcome. Two or three projects cannot show that, and the trajectory is worth having either way.
 
 
 ### One clear improvement, with the evidence
@@ -7609,16 +8156,16 @@ Improvements come from habits rather than from intentions. Naming the habit is w
 
 Section: practice-plan. Stable action: step-3-brief.
 
-Something that failed in all three, named honestly, with why.
+Something that failed in every project, named honestly, with why.
 
-- Find something that failed in all three.
+- Find something that failed in every project.
 - Write why, without excusing it.
 
-**Start here:** Look for the question where all three answers are no.
+**Start here:** Look for the question where every project’s answer is no.
 
 **Enough:** You wrote the pattern rather than three separate explanations.
 
-**A pattern rather than accidents:** Three times for the same reason is a pattern. Treating it as three separate time problems is how it happens a fourth time.
+**A pattern rather than accidents:** Twice or three times for the same reason is a pattern. Treating it as three separate time problems is how it happens a fourth time.
 
 **Without excusing it:** Writing the reason without the mitigation. Each time there was a good reason, and the pattern is the finding.
 
@@ -7627,7 +8174,7 @@ Something that failed in all three, named honestly, with why.
 
 Section: practice-plan. Stable action: step-3-demo.
 
-Made-up example. Naming what has not improved across three projects, and naming something safe.
+Made-up example. Naming what has not improved across projects, and naming something safe.
 
 **What I wrote:** That my time estimates are still optimistic. True across all three, universally true of everybody, and comfortable to admit.
 
@@ -7646,20 +8193,20 @@ Made-up example. Naming what has not improved across three projects, and naming 
 **Unknown:** Still unknown: whether the scheduled change will hold. It has a place in the plan now, which the previous three intentions did not.
 
 
-### Something that failed in all three, named honestly
+### Something that failed in every project, named honestly
 
 Section: practice-plan. Stable action: write-failed-all-three.
 
-Write your answer for “Something that failed in all three, named honestly”. Use the task instructions below to decide what to include.
+Write your answer for “Something that failed in every project, named honestly”. Use the task instructions below to decide what to include.
 
-**Answer:** Something that failed in all three, named honestly
+**Answer:** Something that failed in every project, named honestly
 
 
 
 <details>
 <summary>Example</summary>
 
-Example (made up): the screen-reader pass was skipped in all three, each time for time. That is a pattern rather than three accidents.
+Example (made up): the screen-reader pass was skipped in both projects, each time for time. That is a pattern rather than two accidents.
 
 </details>
 
@@ -7712,7 +8259,7 @@ a habit that would hold — It moves the check to a point where time still exist
 
 an intention that would not — It has a place in the process rather than a place in your memory.
 
-addresses the wrong thing — It addresses the one thing that failed all three times.
+addresses the wrong thing — It addresses the one thing that failed every time.
 
 Now choose your own change, and check it has a place in the process rather than in your memory.
 
@@ -7877,20 +8424,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-The third project looks much better than the first. Does that show improvement?
+Your latest project looks much better than your first. Does that show improvement?
 
-- Yes, since the output is what anybody sees.
-- Yes, if the third project was also harder.
-- Presentation improves fastest and means least. The question is whether the process held under pressure, and that is visible only in the records.
+- Presentation improves fastest; only the records show whether the process held.
+- It does, provided the latest project was also the harder one of the two or three.
+- It does, since the finished output is what any reviewer sees and judges first.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, since the output is what anybody sees. — It is what a reviewer sees, and it is not what this retrospective is for.
+Presentation improves fastest; only the records show whether the process held. — Comparing write-ups hides the thing that failed every time. Answering the same five questions from the files shows a real trajectory and an uncomfortable pattern.
 
-Yes, if the third project was also harder. — Difficulty is hard to compare and the process questions are not.
+It does, provided the latest project was also the harder one of the two or three. — Difficulty is hard to compare and the process questions are not.
 
-Presentation improves fastest and means least. The question is whether the process held under pressure, and that is visible only in the records. — Comparing write-ups hides the thing that failed three times. Answering the same five questions from the files shows a real trajectory and an uncomfortable pattern.
+It does, since the finished output is what any reviewer sees and judges first. — It is what a reviewer sees, and it is not what this retrospective is for.
 
 Improve: Answer your five questions from the records in step 1 before looking at the write-ups. Record the change in step 5.
 
@@ -7907,24 +8454,24 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-The accessibility pass was skipped in all three projects, each time because of time. What is that?
+The accessibility pass was skipped in every project you have done, each time because of time. What is that?
 
-- A pattern rather than three accidents, and it will happen a fourth time unless something in the process changes.
-- A sign the check is too expensive for projects this size.
-- Bad luck with three tight schedules.
+- A sign that the check is too expensive for projects of this small size.
+- A pattern, which will repeat unless something in the process itself changes.
+- Bad luck: each project happened to hit a tight schedule in its final week.
 
 <details>
 <summary>After your attempt</summary>
 
-A pattern rather than three accidents, and it will happen a fourth time unless something in the process changes. — Each occasion had a good reason. Three occasions with good reasons is a mechanism, and the fix is moving the check to where time still exists.
+A sign that the check is too expensive for projects of this small size. — It takes an hour. What it lacks is a place in the process.
 
-A sign the check is too expensive for projects this size. — It takes an hour. What it lacks is a place in the process.
+A pattern, which will repeat unless something in the process itself changes. — Each occasion had a good reason. Two or three occasions with good reasons is a mechanism, and the fix is moving the check to where time still exists.
 
-Bad luck with three tight schedules. — Three consecutive schedules being tight at the end is the normal condition rather than bad luck.
+Bad luck: each project happened to hit a tight schedule in its final week. — Every schedule being tight at the end is the normal condition rather than bad luck.
 
 Improve: Write the pattern in step 3 without the mitigation, and let it choose your change. Record the change in step 5.
 
-Check again: Your change addresses the thing that failed all three times.
+Check again: Your change addresses the thing that failed every time.
 
 Answers to revisit: failed-all-three, why-without-excusing, improvement-made
 
@@ -7939,18 +8486,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your change for the next project is to be more rigorous about accessibility. Will it hold?
 
-- Yes, if you also allow more time.
-- Probably, now that the pattern is visible.
-- No. It is what you intended the last three times, and nothing about the process is different.
+- It will, as long as you also allow more time at the end of the next project.
+- Unlikely: you intended the same before, and nothing in the process is different.
+- Probably, because now that the pattern is written down you will notice it sooner.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, if you also allow more time. — More time gets filled, and what is unfinished at the end is unchanged.
+It will, as long as you also allow more time at the end of the next project. — More time gets filled, and what is unfinished at the end is unchanged.
 
-Probably, now that the pattern is visible. — Seeing a pattern helps for about a fortnight.
+Unlikely: you intended the same before, and nothing in the process is different. — A dated task before the build starts, in the plan, changes where the check sits. Changes that alter a document survive; changes that ask for a habit do not.
 
-No. It is what you intended the last three times, and nothing about the process is different. — A dated task before the build starts, in the plan, changes where the check sits. Changes that alter a document survive; changes that ask for a habit do not.
+Probably, because now that the pattern is written down you will notice it sooner. — Seeing a pattern helps for about a fortnight.
 
 Improve: Replace the intention with a scheduled change to a document in step 4. Record the change in step 5.
 
@@ -7965,9 +8512,9 @@ Answers to revisit: specific-change, why-this-one, improvement-made
 
 Section: practice. Stable action: step-5-brief.
 
-The retrospective filed with the three projects, dated for comparison.
+The retrospective filed with your projects, dated for comparison.
 
-- Save it with the three projects.
+- Save it with your projects.
 - Note the date so the next retrospective can compare.
 
 **Start here:** Put it with the projects rather than with this module’s notes.
@@ -7990,15 +8537,41 @@ Dated, so the next retrospective can compare against it.
 Dated, so the next retrospective can compare against it.
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A designer compares two projects. Project A: no exclusions written, no re-test after the repair, deviations not recorded, contrast checked. Project B: exclusions written before fieldwork, one re-test, deviations recorded, contrast not checked because time ran out. Project B’s write-up looks far more polished.
+
+**Task:** What improved, what did not, and what single change would you schedule for the next project? Explain why.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Says Project B is better because it looks more polished, and proposes “being more careful” next time.
+- Adequate: Names exclusions, the re-test and recorded deviations as real process improvements with evidence, names the dropped contrast check honestly, and schedules the contrast check as a dated task before the build.
+- Strong: As adequate, and names the habit behind the improvement, notes that two projects can show a pattern but not its cause, and puts the change in a document such as the plan template.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -8020,26 +8593,26 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 ```text
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
-Lesson: Retrospective across three projects
-What I am trying to do: Compare this project with your two earlier ones and identify what has actually improved, what has not, and what you will do differently next.
+Lesson: Retrospective across your projects
+What I am trying to do: Compare this project with your earlier one or two — two projects on the core path, three if you took the full library — and identify what has actually improved, what has not, and what you will do differently next.
 
 Key idea or terms:
-Process comparison: The same questions across three projects. It is the only evidence of a trajectory rather than a snapshot.
+Process comparison: The same questions across every project you have done. It is the only evidence of a trajectory rather than a snapshot.
 From the records: Looked up rather than remembered. Memory produces a general sense that things have improved, which is what everybody has.
 Evidence of improvement: Something in the records that differs: exclusions present in two and absent in one, a re-test that happened twice and not once.
 
 Supplied practice material (fictional or labelled practice, not my research):
-Made-up example. Comparing three projects, and comparing how they look. The three write-ups, side by side. The third is much better: clearer, better laid out, better photographs, and it reads like something professional.
+Made-up example. Comparing projects, and comparing how they look. The three write-ups, side by side. The third is much better: clearer, better laid out, better photographs, and it reads like something professional.
 
 Activity: Act as a project reviewer using only the supplied case. Ask for my decision, the evidence behind it and the gap I would investigate next. Do not invent users, results or impact.
 
 Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
-When the activity is finished, tell me to return to the course answer called “The five process questions you are asking of all three projects” and write my own decision. Do not write that answer for me.
+When the activity is finished, tell me to return to the course answer called “The five process questions you are asking of every project you have done — two on the core path, three on the full library” and write my own decision. Do not write that answer for me.
 ```
 
-**Come back to the course:** Return to “The five process questions you are asking of all three projects”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+**Come back to the course:** Return to “The five process questions you are asking of every project you have done — two on the core path, three on the full library”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The five process questions you are asking of all three projects” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The five process questions you are asking of every project you have done — two on the core path, three on the full library” and write one sentence in your own words.
 
 </details>
 <details>
@@ -8057,7 +8630,7 @@ When the activity is finished, tell me to return to the course answer called “
 
 **The comparison is on process and drawn from records**
 
-Adequate evidence: The same questions answered for three projects, citing records.
+Adequate evidence: The same questions answered for every project, citing records.
 
 0 — Impressions of outcome quality.
 
@@ -8085,7 +8658,7 @@ Repair: Ask what you did differently that produced the change and write it. Rech
 
 **A persistent failure is named honestly**
 
-Adequate evidence: Something absent from all three projects, with the reason.
+Adequate evidence: Something absent from every project, with the reason.
 
 0 — None named.
 
@@ -8095,7 +8668,7 @@ Adequate evidence: Something absent from all three projects, with the reason.
 
 3 — As adequate, and it is addressed in the next-project change.
 
-Repair: Look for what is missing from all three records and write it down. Recheck: The failure statement.
+Repair: Look for what is missing from every project's records and write it down. Recheck: The failure statement.
 
 **One specific scheduled change is chosen**
 
@@ -8126,9 +8699,9 @@ The progress bar counts required actions with saved work. It is not a score or p
 <details>
 <summary>Reading, video and deeper explanation</summary>
 
-- Comparing outcomes is misleading because the projects had different problems and different access. Comparing process is not: did you write the exclusions before fieldwork this time? Did the repair loop close? Did you record deviations? Those are the same questions across all three.
+- Comparing outcomes is misleading because the projects had different problems and different access. Comparing process is not: did you write the exclusions before fieldwork this time? Did the repair loop close? Did you record deviations? Those are the same questions across every project.
 - Naming the evidence for an improvement keeps you honest. “My research got better” is an impression; “in project one I wrote no exclusions, in project three I wrote them before fieldwork and the report used them” is a fact you can point at.
-- The thing that did not improve is the more useful half. If you still cut the accessibility pass under time pressure in all three projects, that is a pattern rather than an accident, and it will follow you into paid work unless you name it.
+- The thing that did not improve is the more useful half. If you still cut the accessibility pass under time pressure in every project, that is a pattern rather than an accident — twice for the same reason is already one — and it will follow you into paid work unless you name it.
 - Improvement comes from habits, not from intentions. If the write-up quality improved, it was probably because you started writing within the hour, and that habit is what transfers. Naming the mechanism is what lets you keep it.
 
 [GOV.UK: Service Standard](https://www.gov.uk/service-manual/service-standard).
@@ -8160,7 +8733,7 @@ An independent project brings the research, design, testing and decision trail t
 - **People by role:** The owner, a customer, a reviewer. It is what the consent introduction promised and it reads better than initials.
 - **An artefact behind a claim:** A session record, a tally sheet, a version of the file. A claim with nothing behind it is a sentence you will not be able to defend in an interview.
 
-**Quick example.** Made-up example. Checking claims against artefacts, and finding one with nothing behind it. That the page reduced interruptions for the shop. A reasonable summary of eleven calls becoming seven.
+**Quick example.** Made-up example. Checking claims against artefacts, and finding one with nothing behind it. That the page reduced interruptions for the shop. A reasonable-sounding summary of eleven calls becoming seven.
 
 The reader demonstrates and guides the task before asking for “The record in order, with an index”.
 
@@ -8192,11 +8765,11 @@ Section: learn. Stable action: learn-3.
 Include the failures; they are load-bearing.
 
 
-### Name the dates, the counts and the people by role
+### Idea 4: Name the dates, the counts, the people by role, and each item'…
 
 Section: learn. Stable action: learn-4.
 
-Name the dates, the counts and the people by role.
+Name the dates, the counts, the people by role, and each item's evidence tier.
 
 
 ### Store it so it survives a lost laptop
@@ -8212,7 +8785,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The record has twelve numbered folders matching the lessons, an index page listing what is in each, and a claims check: nineteen assertions, seventeen with artefacts, one weakened from “customers stopped calling” to “calls about progress fell from eleven to four over comparable five-day periods, one containing a public holiday”, and one deleted because nothing supported it. Participants appear as owner, customer A, customer B, customer C and outside tester. Consent records are stored separately and are not part of anything shareable. The whole thing exists on the laptop and in one other place.
+- The record has twelve numbered folders matching the lessons, an index page listing what is in each, and a claims check: nineteen assertions, seventeen with artefacts, one weakened from “the page stopped customers calling” to “after the owner began writing a window rather than a day on job slips, calls about progress went from eleven to seven over comparable five-day periods, one containing a public holiday; the page itself stayed a demonstration with made-up jobs”, and one deleted because nothing supported it. Every evidence item is labelled by tier: real participant research, self-pilot, or supplied practice. Participants appear by role: owner, customer A, customer B, and outside testers 1 to 3. Consent records are stored separately and are not part of anything shareable. The whole thing exists on the laptop and in one other place.
 
 
 ### Choose where you will do the work
@@ -8264,6 +8837,17 @@ Write your answer for “Dates, counts and people by role rather than by name”
 
 
 
+### Each item’s evidence tier: real participant research, self-pilot, supplied practice or simulation
+
+Section: practice-plan. Stable action: write-tier-labels.
+
+The label travels into the portfolio. A practice item or a demonstration with made-up records is never presented as research or real use.
+
+**Answer:** Each item’s evidence tier: real participant research, self-pilot, supplied practice or simulation
+
+The label travels into the portfolio. A practice item or a demonstration with made-up records is never presented as research or real use.
+
+
 ### Check the claims
 
 Section: practice-plan. Stable action: step-2-brief.
@@ -8288,15 +8872,15 @@ Section: practice-plan. Stable action: step-2-demo.
 
 Made-up example. Checking claims against artefacts, and finding one with nothing behind it.
 
-**What the record said:** That the page reduced interruptions for the shop. A reasonable summary of eleven calls becoming seven.
+**What the record said:** That the page reduced interruptions for the shop. A reasonable-sounding summary of eleven calls becoming seven.
 
-**What the artefact behind it was:** Two tally sheets, five working days each. They show calls about progress, counted by the owner.
+**What the artefact behind it was:** Two tally sheets, five working days each, counting calls about progress before and after the slip wording changed.
 
-**What the claim added:** Interruptions. The tallies count progress calls; interruptions include deliveries, people arriving, and every other call. Nothing measured those.
+**What the claim added:** Two things the sheets do not cover: the page, which stayed a demonstration and was never in real use, and interruptions, which include deliveries, people arriving and every other call.
 
-**What was left when I checked:** A claim about a category the evidence does not cover, drawn from a real measurement of something narrower.
+**What was left when I checked:** A claim about a thing nobody used and a category nobody counted, drawn from a real count of something narrower.
 
-**What I wrote instead:** Calls asking about progress fell from eleven to seven over matched five-day periods, with the conditions. Smaller, exact, and covered by the sheets.
+**What I wrote instead:** After the slip wording changed, calls asking about progress went from eleven to seven over matched five-day periods, with the conditions. Smaller, exact, and covered by the sheets.
 
 **Wrong turn:** The wrong turn is summarising a specific measurement into a general category, because the general version reads better and feels like the same thing. The artefact covers the narrow claim and nothing else.
 
@@ -8416,7 +9000,7 @@ include as it is — It identifies nobody and it is the evidence behind the coun
 
 include after changing something — Nothing on it needs changing.
 
-do not include — It is what makes the eleven-to-four claim checkable.
+do not include — It is what makes the eleven-to-seven claim checkable.
 
 Now check your own record the same way, against what you promised people.
 
@@ -8481,7 +9065,7 @@ Section: practice-plan. Stable action: step-4-sort-4.
 
 Six items from a made up project record. For each one, decide whether it can be included as it is.
 
-A screenshot of the page showing a real job number and a real customer’s repair.
+A photograph of a real job slip showing a customer’s name and phone number beside the new window wording.
 
 - include as it is
 - include after changing something
@@ -8490,11 +9074,11 @@ A screenshot of the page showing a real job number and a real customer’s repai
 <details>
 <summary>After your attempt</summary>
 
-include as it is — The number reaches a real job, and the customer did not agree to appear anywhere.
+include as it is — The name and number belong to a real person who did not agree to appear anywhere.
 
-include after changing something — Replace it with an invented job and an invented number. The screenshot is worth having and the data is not.
+include after changing something — Recreate the slip with invented details and label it recreated. The wording is worth showing and the customer’s details are not.
 
-do not include — A made-up example shows the design perfectly well.
+do not include — A recreated slip shows the wording perfectly well, so the evidence need not be lost.
 
 Now check your own record the same way, against what you promised people.
 
@@ -8557,11 +9141,11 @@ Now check your own record the same way, against what you promised people.
 
 Section: practice-plan. Stable action: write-anonymised.
 
-Roles rather than names, no photographs of other customers’ property, no job numbers that exist.
+Roles rather than names, no photographs of other customers’ property, no job numbers that exist. Removing names alone does not make a record anonymous.
 
 **Answer:** What you changed so nobody is identifiable
 
-Roles rather than names, no photographs of other customers’ property, no job numbers that exist.
+Roles rather than names, no photographs of other customers’ property, no job numbers that exist. Removing names alone does not make a record anonymous.
 
 
 ### How this matches what you promised in the consent introduction
@@ -8583,24 +9167,24 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 How should the project record be ordered?
 
-- By what happened. The order is itself evidence that the process ran in the order you say it did.
-- By what is most impressive, so a reader sees the best work first.
-- By artefact type, so everything is easy to find.
+- By what is most impressive, so that a reader meets the best work first.
+- By what happened, because the order itself shows the process ran as you say.
+- By artefact type, so every session note and file is easy to find.
 
 <details>
 <summary>After your attempt</summary>
 
-By what happened. The order is itself evidence that the process ran in the order you say it did. — A record arranged for effect puts the outcome first and the research after it, which is the shape of a case study rather than a record. Module 19 makes the case study from this.
+By what is most impressive, so that a reader meets the best work first. — That is the case study’s job, in the next module, from this material.
 
-By what is most impressive, so a reader sees the best work first. — That is the case study’s job, in the next module, from this material.
+By what happened, because the order itself shows the process ran as you say. — A record arranged for effect puts the outcome first and the research after it, which is the shape of a case study rather than a record. Module 19 makes the case study from this.
 
-By artefact type, so everything is easy to find. — Findable and it loses the sequence, which is the part that shows the process.
+By artefact type, so every session note and file is easy to find. — Findable, and it loses the sequence, which is the part that shows the process.
 
 Improve: Order the record chronologically in step 1 and add an index. Record the change in step 5.
 
 Check again: Somebody could follow the project from the index alone.
 
-Answers to revisit: ordered-index, dates-counts, improvement-made
+Answers to revisit: ordered-index, dates-counts, tier-labels, improvement-made
 
 </details>
 
@@ -8613,18 +9197,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You are tempted to leave out the re-test where the repair only half worked. What would that cost?
 
-- The evidence that anything was tested. The record would then say a problem was found, changed and solved, which is what every record says.
-- Some completeness, which a long record can afford to lose.
-- Very little, since the repair mostly worked.
+- The evidence that anything was tested; the record would read like every other record.
+- Some completeness, which a long record can afford to lose for the sake of clarity.
+- Very little, since the repair mostly worked and one of two is a small number.
 
 <details>
 <summary>After your attempt</summary>
 
-The evidence that anything was tested. The record would then say a problem was found, changed and solved, which is what every record says. — A project where one repair half-worked is a project where somebody actually looked. Reviewers find it more credible than a clean ending, because clean endings are what selection produces.
+The evidence that anything was tested; the record would read like every other record. — A project where one repair half-worked is a project where somebody actually looked. Reviewers find it more credible than a clean ending, because clean endings are what selection produces.
 
-Some completeness, which a long record can afford to lose. — The failures are the load-bearing part rather than the padding.
+Some completeness, which a long record can afford to lose for the sake of clarity. — The failures are the load-bearing part rather than the padding.
 
-Very little, since the repair mostly worked. — Mostly is the word doing the work, and the count is what makes it checkable.
+Very little, since the repair mostly worked and one of two is a small number. — Mostly is the word doing the work, and the count is what makes it checkable.
 
 Improve: Put the failures back in step 3 and say why each is load-bearing. Record the change in step 5.
 
@@ -8641,20 +9225,20 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-A screenshot shows a real job number and a real customer’s repair. Can it go in the record?
+A photograph of a real job slip shows a customer’s name and phone number beside the new wording. Can it go in the record?
 
-- Not as it is. Replace it with an invented job and number: the screenshot is worth having and the data is not.
-- Yes, since a job number identifies nobody by name.
-- Yes, if the record is private.
+- As it is, because the photograph exists to show the wording, not the customer.
+- As it is, provided the project record stays private on your own computer.
+- After changing it: recreate the slip with invented details, labelled recreated.
 
 <details>
 <summary>After your attempt</summary>
 
-Not as it is. Replace it with an invented job and number: the screenshot is worth having and the data is not. — That customer agreed to nothing. Anonymising is checking the record against what you promised in the consent introduction rather than applying a general caution.
+As it is, because the photograph exists to show the wording, not the customer. — The purpose does not change what is in the frame: a real person’s name and number, on a record that will feed a portfolio.
 
-Yes, since a job number identifies nobody by name. — It reaches a real repair belonging to a real person, on a page anybody can open.
+As it is, provided the project record stays private on your own computer. — The record is going into a portfolio in the next module, and the customer agreed to nothing either way.
 
-Yes, if the record is private. — The record is going into a portfolio in the next module.
+After changing it: recreate the slip with invented details, labelled recreated. — That customer agreed to nothing. The wording is worth showing and the details are not, and anonymising means checking the record against what you promised in the consent introduction.
 
 Improve: Read the consent introduction and check the record against it in step 4. Record the change in step 5.
 
@@ -8694,15 +9278,41 @@ One copy is not a record. A failed drive at the end of a project is a common and
 One copy is not a record. A failed drive at the end of a project is a common and complete loss.
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: Your project record for a bakery’s pre-order form contains: “the form halved wasted bakes” (backed by nothing), a tally showing 8 then 5 unsold custom cakes over two matched weeks, a photograph of the order book with customers’ names on it, and no mention of the test session where the form failed for one person.
+
+**Task:** What do you keep, change, cut or restore before the record is complete? Give a reason for each.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps the halving claim because the tally roughly agrees, includes the order-book photograph, and leaves the failed session out to keep the ending tidy.
+- Adequate: Cuts or weakens the halving claim to “8 then 5 over matched weeks”, recreates the order book with invented names, and restores the failed session as load-bearing evidence.
+- Strong: As adequate, and adds the conditions behind the counts, labels each item’s evidence tier, and stores the record in two places with consent records kept apart.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -8733,7 +9343,7 @@ People by role: The owner, a customer, a reviewer. It is what the consent introd
 An artefact behind a claim: A session record, a tally sheet, a version of the file. A claim with nothing behind it is a sentence you will not be able to defend in an interview.
 
 Supplied practice material (fictional or labelled practice, not my research):
-Made-up example. Checking claims against artefacts, and finding one with nothing behind it. That the page reduced interruptions for the shop. A reasonable summary of eleven calls becoming seven.
+Made-up example. Checking claims against artefacts, and finding one with nothing behind it. That the page reduced interruptions for the shop. A reasonable-sounding summary of eleven calls becoming seven.
 
 Activity: Act as a project reviewer using only the supplied case. Ask for my decision, the evidence behind it and the gap I would investigate next. Do not invent users, results or impact.
 
@@ -8832,7 +9442,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 - Chronological order is the honest order and the easiest to check. A record arranged to build a narrative is already a case study, and case studies written before the record exists tend to acquire claims the record cannot support.
 - The claim-to-artefact check is mechanical and worth doing: read each sentence that asserts something, and find the file that supports it. Anything unsupported either gets its artefact attached, gets weakened to what the evidence shows, or gets deleted.
-- The failures carry weight. The recruitment that did not work, the repair that did not fix the problem, the measurement confounded by a public holiday — these are what make the successes believable, and removing them removes the credibility of everything left.
+- The failures carry weight. The recruitment that did not work, the repair that did not fix the problem, the measurement confounded by a public holiday, the prototype that failed the stop gate — these are what make the successes believable, and removing them removes the credibility of everything left.
 - Anonymity and durability are both practical. People appear by role, consent records stay out of anything shareable, and the whole record lives in at least two places, because losing three months of work to a failed drive is a common and entirely avoidable ending.
 
 [GOV.UK: sharing user research findings](https://www.gov.uk/service-manual/user-research/sharing-user-research-findings).

@@ -65,11 +65,11 @@ Section: learn. Stable action: learn-3.
 A clickable prototype answers questions about navigation and flow.
 
 
-### Idea 4: Only a built thing answers questions about timing, real data a…
+### Idea 4: A timed click-through can stage a wait; only a built thing sho…
 
 Section: learn. Stable action: learn-4.
 
-Only a built thing answers questions about timing, real data and assistive technology.
+A timed click-through can stage a wait; only a built thing shows real loading, real data and assistive technology.
 
 
 ### Every fidelity choice makes something untestable; write down what
@@ -85,7 +85,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Three questions produced three prototypes. “Do people understand what they are committing to before paying?” — paper, because the question is about wording and order, and the untestable list said: nothing about timing, nothing about real prices. “Can people find how to change a booking?” — a local HTML click-through of six pages, with the note that only one path exists and all data is clean. “Does the payment wait feel bearable?” — a rough page with a deliberate delay and throttling, which was the only one that needed any code, and it answered a question the other two could not touch.
+- Three questions produced three prototypes. “Do people understand what they are committing to before paying?” — paper, because the question is about wording and order, and the untestable list said: nothing about timing, nothing about real prices. “Can people find how to change a booking?” — a local HTML click-through of six pages, with the note that only one path exists and all data is clean. “Do people press pay twice during the payment wait?” — the same click-through with a processing screen that moved on by itself after four seconds, with the note that the wait was invented and fixed, so it said nothing about how long real payments take. Only that last question about real timing was left for a running page later.
 
 
 ### Choose where you will do the work
@@ -127,13 +127,13 @@ Take them from your Module 7 open questions and your Module 9 interaction notes.
 Take them from your Module 7 open questions and your Module 9 interaction notes. Write them all down before you judge any of them.
 
 
-### Beside each question: is it about wording and order, about moving between screens, or about waiting and real content?
+### Beside each question: is it about wording and order, about moving between screens, about a wait people sit through, or about real loading and real content?
 
 Section: practice-plan. Stable action: write-question-kind.
 
-Write your answer for “Beside each question: is it about wording and order, about moving between screens, or about waiting and real content?”. Use the task instructions below to decide what to include.
+Write your answer for “Beside each question: is it about wording and order, about moving between screens, about a wait people sit through, or about real loading and real content?”. Use the task instructions below to decide what to include.
 
-**Answer:** Beside each question: is it about wording and order, about moving between screens, or about waiting and real content?
+**Answer:** Beside each question: is it about wording and order, about moving between screens, about a wait people sit through, or about real loading and real content?
 
 
 
@@ -163,7 +163,9 @@ One fidelity per question, with the cheaper level named and what it could not ha
 
 **Clickable prototype:** Screens joined so a person can move between them by tapping, with nothing real behind them.
 
-**Built version:** Something that actually runs, so it can load, wait and hold real amounts of content. It is the dearest of the three and the only one that can answer a question about waiting.
+**Built version:** Something that actually runs, so it can load over a network and hold real amounts of content. It is the dearest of the three and the only one that shows real loading speed.
+
+**Timed transition:** A click-through screen that moves on by itself after a number of seconds you set, such as the After delay trigger in Figma. It stages a wait so you can watch what people do during it; it says nothing about how long the real wait will be.
 
 
 ### See the decision being made
@@ -180,7 +182,7 @@ Made-up example. Choosing a prototype for a question about wording, and starting
 
 **What I built instead:** Three sheets of paper: the class page, the review page and the payment page, with the real wording on each. An afternoon, not two days.
 
-**What it cost me:** Paper cannot tell me whether the wait after paying feels bearable. That went on the untestable list and became a separate question with its own prototype later.
+**What it cost me:** Paper could only stage the wait after paying with me counting beside the person, which is not the same as sitting through it. That went on the untestable list and became a separate question, tested later with a timed click-through.
 
 **Wrong turn:** The wrong turn is choosing the fidelity that will look best when you show it. A prototype built to be admired collects comments about photographs and colours, and the question you started with goes unanswered.
 
@@ -247,7 +249,7 @@ Section: practice-plan. Stable action: step-2-sort-3.
 
 Six questions from a made-up class-booking project. For each one, decide the cheapest thing that could answer it.
 
-After pressing pay, does the wait feel bearable, or do people press again?
+After pressing pay, do people press again during a four-second wait?
 
 - paper
 - clickable
@@ -256,11 +258,11 @@ After pressing pay, does the wait feel bearable, or do people press again?
 <details>
 <summary>After your attempt</summary>
 
-paper — Paper cannot wait. You would have to say “imagine four seconds pass”, and imagining a wait is not the same as sitting through one.
+paper — You could hold the next sheet back and count, and the person would be watching you do it. What they do then is partly about you, not only about the wait.
 
-clickable — A click-through changes screen the instant it is tapped. The gap is the thing you want to watch, and there is no gap.
+clickable — A timed transition moves on by itself after four seconds, so the wait happens with nobody in the way. The wait is invented and fixed, so it shows behaviour during a wait, not how long the real one will be.
 
-built — Only something that actually waits shows you what a person does during the wait. This is what the top of the ladder is for.
+built — A running page is needed when the question is about the real wait: how long it takes on a slow connection and what appears first. This question names its own four seconds, so a staged wait answers it.
 
 Now do the same with your own questions. For each one, name the cheapest level and what the level below could not have told you.
 
@@ -310,7 +312,7 @@ Does the list still work when sixty classes load on a slow connection?
 
 paper — Sixty classes on paper is a pile you lay out at your own speed. The question is about loading and scrolling, which paper does not do.
 
-clickable — A click-through shows a screen that is already there. It cannot show you a long list arriving slowly.
+clickable — A click-through can stage a delay before the list appears, and it still shows a screen you prepared. A real list of sixty arriving piece by piece on a slow connection needs something that actually loads.
 
 built — Loading, waiting and real content volume all need something that actually runs. This is the one on the list that earns it.
 
@@ -510,20 +512,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You could build a fuller, more realistic version of your first prototype this week. Should you?
+Your paper prototype already answers its question about wording. You could build a fuller, more realistic version this week. Should you?
 
-- Yes, because people take a polished prototype seriously.
-- Yes, because a more realistic prototype gives more reliable results.
-- Not if the cheaper version already answers the question. The extra realism buys comments about the surface.
+- Only if a new question needs it; for this one, extra realism mostly buys comments on the surface.
+- Yes: people take a polished prototype more seriously, so their answers about wording improve.
+- Yes: a more realistic prototype gives more reliable results about the same wording question.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, because people take a polished prototype seriously. — They take it seriously in the wrong way. Polish makes people judge the surface, and it makes you reluctant to change what you spent days on.
+Only if a new question needs it; for this one, extra realism mostly buys comments on the surface. — The cheaper version already answers the wording question. A realistic build invites remarks about photographs and colours, and it makes you reluctant to change what you made.
 
-Yes, because a more realistic prototype gives more reliable results. — It gives results about a wider set of things, not more reliable results about your thing. The extra cost buys feedback you did not want.
+Yes: people take a polished prototype more seriously, so their answers about wording improve. — Polish makes people judge the surface, and it makes you slow to change what you spent days on. Attention to wording comes from the task, not the finish.
 
-Not if the cheaper version already answers the question. The extra realism buys comments about the surface. — A realistic prototype invites people to talk about photographs, colours and wording you never asked about. Your question then gets a smaller share of the hour.
+Yes: a more realistic prototype gives more reliable results about the same wording question. — Realism widens what people react to; it does not make answers about the same wording more reliable. The extra cost buys feedback you did not ask for.
 
 Improve: Look at your three entries in the plan fields in step 2. Any fidelity you cannot justify by what the cheaper level could not answer should drop a level, and the change goes in step 5.
 
@@ -542,18 +544,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 One of your prototypes has no untestable list yet. Why does that matter?
 
-- Because the claim you make later will quietly include things the prototype could not show, and nothing will stop you.
-- Because a reader of your report expects to see one.
-- Because it is not really a prototype without one.
+- A prototype without an untestable list is not really a prototype yet, only a sketch of one.
+- Later claims tend to drift past what the prototype could show, and nothing written will catch them.
+- A reader of your report expects to see one, and without it the work will look unfinished.
 
 <details>
 <summary>After your attempt</summary>
 
-Because the claim you make later will quietly include things the prototype could not show, and nothing will stop you. — The temptation arrives while you are writing up and the pattern looks obvious. A list written now is a promise made while you were impartial.
+A prototype without an untestable list is not really a prototype yet, only a sketch of one. — It is a real prototype. What it is not yet is safe to draw conclusions from.
 
-Because a reader of your report expects to see one. — It does read well, and that is a side effect. The list exists to constrain your own writing.
+Later claims tend to drift past what the prototype could show, and nothing written will catch them. — The temptation arrives while you are writing up and the pattern looks obvious. A list written now is a promise made while you were impartial.
 
-Because it is not really a prototype without one. — It is a real prototype. What it is not yet is safe to draw conclusions from.
+A reader of your report expects to see one, and without it the work will look unfinished. — It does read well, and that is a side effect. The list exists to limit your own sentences, not to impress a reader.
 
 Improve: Write that prototype’s entry in the untestable lists field in step 3, including the sentence you would like to claim, then record the change in step 5.
 
@@ -572,18 +574,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your first prototype only has the path where everything works. What is wrong with that?
 
-- It will look unfinished to the person taking part.
-- Nothing: failure paths can be added after the first session.
-- A test of it can only show that the path you were already confident about works.
+- Nothing serious: failure paths are easy to add later, once the first session shows which ones matter.
+- It will look unfinished to the person taking part, so they may not treat the tasks seriously.
+- A test can then only confirm the path you already trusted, never what people do when it goes wrong.
 
 <details>
 <summary>After your attempt</summary>
 
-It will look unfinished to the person taking part. — They are not judging how finished it is. The cost falls on you, in what the session is able to show.
+Nothing serious: failure paths are easy to add later, once the first session shows which ones matter. — They can, and the first session is then spent on the part you were least worried about.
 
-Nothing: failure paths can be added after the first session. — They can, and the first session is then spent on the part you were least worried about.
+It will look unfinished to the person taking part, so they may not treat the tasks seriously. — People taking part are not judging how finished it is. The cost falls on you, in what the session is able to show.
 
-A test of it can only show that the path you were already confident about works. — Most of what a person learns about a service, they learn when something goes wrong. Leaving the failure out leaves out the part that would teach you something.
+A test can then only confirm the path you already trusted, never what people do when it goes wrong. — Most of what a person learns about a service, they learn when something goes wrong. Leaving the failure out leaves out the part that would teach you something.
 
 Improve: Add one failure path to your prototype and write it into the failure path field in step 4, then note the change in step 5.
 
@@ -633,6 +635,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a bike-repair shop wants to know two things before rebuilding its online booking. First, whether customers understand the difference between a basic service and a full service from the two descriptions. Second, whether people press Confirm again while a booking takes about five seconds to go through. The owner has two days and no developer.
+
+**Task:** Choose the cheapest prototype for each question, and explain why it is enough and what it cannot establish.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: One realistic clickable prototype for both questions because it looks professional, with nothing said about its limits; or a claim that only a real build can test any waiting.
+- Adequate: Paper or printed descriptions for the service wording. A click-through with a timed transition that moves on after about five seconds for the double-press question, stating that the wait is invented and fixed, so it says nothing about real booking speed.
+- Strong: As adequate, plus what would need a running page later (real network timing, failures, slow phones), and a note that wording read on paper may read differently on a screen, so one description is checked on a phone too.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -760,10 +788,10 @@ The progress bar counts required actions with saved work. It is not a score or p
 <details>
 <summary>Reading, video and deeper explanation</summary>
 
-- The assigned guidance frames prototypes as tools for learning, and the practical consequence is that the artefact follows the question. “Do people understand what they are committing to?” is answerable on paper. “Can people find the cancellation route?” needs something clickable. “Does the wait feel acceptable on a slow connection?” needs a real page and real throttling. Building the highest fidelity you can manage answers the first two expensively and the third accidentally.
-- Low fidelity is not a lesser stage; it is a different instrument with its own reach. Paper is fast, invites criticism, and removes the visual polish that makes people comment on colour instead of order. Its limit is real: it cannot show timing, it cannot show what happens when data is slow or wrong, and it cannot test anything about the keyboard or a screen reader.
+- The assigned guidance frames prototypes as tools for learning, and the practical consequence is that the artefact follows the question. “Do people understand what they are committing to?” is answerable on paper. “Can people find the cancellation route?” needs something clickable. “Will people press pay twice during a four-second wait?” can be asked with a click-through whose screen moves on by itself after four seconds. “How long is the real wait on a slow connection, and what appears first?” needs a running page and throttling. Building the highest fidelity you can manage answers the first questions expensively and the last one accidentally.
+- Low fidelity is not a lesser stage; it is a different instrument with its own reach. Paper is fast, invites criticism, and removes the visual polish that makes people comment on colour instead of order. Its limit is real: it can stage a wait only with you counting beside the person, it cannot show what happens when data is slow or wrong, and it cannot test anything about the keyboard or a screen reader.
 - A clickable prototype built from a local HTML file — plain pages with links — answers flow questions honestly and costs an evening. It also has a boundary worth stating: it usually contains one path with clean data, so it tests whether the route works, not whether the product does.
-- Write the untestable list at the moment you choose, not when someone asks. This is the same discipline as m05's exclusion sentence, and it prevents the familiar failure where a paper test becomes evidence that the product is usable, or a clickable prototype becomes evidence that the performance is fine.
+- Write the untestable list at the moment you choose, not when someone asks. This is the same discipline as m05's exclusion sentence, and it prevents the familiar failure where a paper test becomes evidence that the product is usable, or a timed click-through becomes evidence that the real performance is fine.
 
 [GOV.UK: making prototypes](https://www.gov.uk/service-manual/design/making-prototypes).
 
@@ -805,11 +833,11 @@ Section: learn. Stable action: welcome.
 Build a clickable prototype of one flow from linked local files, including one failure path, and record exactly what it fakes.
 
 
-### Idea 1: Linked local files make a real click-through: a page per scree…
+### Idea 1: A click-through needs no account for the person taking part: p…
 
 Section: learn. Stable action: learn-1.
 
-Linked local files make a real click-through: a page per screen, a link per action.
+A click-through needs no account for the person taking part: paper screens you swap, linked local files, or a free tool’s share link.
 
 
 ### Idea 2: Include at least one failure path or the test only proves the…
@@ -945,7 +973,7 @@ Section: practice-plan. Stable action: step-2-brief.
 
 A working click-through of the flow, with each action reaching the screen it should.
 
-- Create one file per screen with your real content.
+- Make one sheet or one file per screen, with your real content.
 - Link each action to the screen it should reach.
 - Add the failure path from your exception table.
 
@@ -989,9 +1017,9 @@ Section: practice-plan. Stable action: write-build-method.
 
 Choose the option that honestly describes your work.
 
-**Answer:** How you are building it (Paper screens, with you acting as the computer / A free prototyping tool with the screens linked)
+**Answer:** How you are building it (Paper screens, with you acting as the computer / A free prototyping tool with the screens linked / Linked local files: one page per screen, opened in a browser)
 
-Both are real prototypes. The point of either is that the person taking part needs no account and installs nothing.
+All three are real prototypes. The point of each is that the person taking part needs no account and installs nothing. If a wait matters, a tool’s timed transition, or you counting on paper, can stage it.
 
 
 ### Each action and the screen it should reach
@@ -1070,8 +1098,8 @@ A fakes sheet from a made-up prototype of a class-booking flow. Four rows: the s
 In the session, one person tapped the search box, waited, and said “I think it’s broken”. Which row on that sheet was doing the most work?
 
 - The faked wait row, because a wait you invented is not evidence about the real one.
-- The search box row, because it was written before the session and turns that moment into a route you had not built.
-- The invented prices row, because somebody who spots a wrong price stops trusting the rest.
+- The invented prices row, because somebody who spots a wrong price soon stops trusting the rest.
+- The search box row: written in advance, it turns that moment into a route you had not built.
 - None of them, because the sheet is a record for you and does not change what happened.
 
 <details>
@@ -1079,9 +1107,9 @@ In the session, one person tapped the search box, waited, and said “I think it
 
 The faked wait row, because a wait you invented is not evidence about the real one. — That row protects a claim you might make weeks later, which is a different job from reading the session correctly while it is happening.
 
-The search box row, because it was written before the session and turns that moment into a route you had not built. — Without the row you would write down “person could not finish the task”. With it you write down “person went looking for search, which does not exist yet”. Those two notes lead to different decisions.
+The invented prices row, because somebody who spots a wrong price soon stops trusting the rest. — Invented prices are worth recording, and people rarely act on them. The rows that earn their place are the ones a person will try to use.
 
-The invented prices row, because somebody who spots a wrong price stops trusting the rest. — Invented prices are worth recording, and people rarely act on them. The rows that earn their place are the ones a person will try to use.
+The search box row: written in advance, it turns that moment into a route you had not built. — Without the row you would write down “person could not finish the task”. With it you write down “person went looking for search, which does not exist yet”. Those two notes lead to different decisions.
 
 None of them, because the sheet is a record for you and does not change what happened. — It changes what you write down, and what you write down is the only part of the session that survives it.
 
@@ -1131,18 +1159,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Why include a failure screen when the question you care about is about the ordinary path?
 
-- Because the prototype looks more complete with one.
-- It is not needed if that failure is rare.
-- Because a person who never meets anything going wrong tells you only that the path you were confident about works.
+- It is not needed when the failure is rare; rare paths can wait until the ordinary one works.
+- A prototype with a failure screen looks more complete, so people take the session more seriously.
+- Without one, a session can only show the path you were already confident about, not recovery.
 
 <details>
 <summary>After your attempt</summary>
 
-Because the prototype looks more complete with one. — Completeness is not what you are after; a prototype should stay obviously disposable. The failure earns its place because of what it lets you watch.
+It is not needed when the failure is rare; rare paths can wait until the ordinary one works. — Rare failures still happen to somebody, and the cost to that person is usually the highest anywhere in the flow.
 
-It is not needed if that failure is rare. — Rare failures still happen to somebody, and the cost to that person is usually the highest anywhere in the flow.
+A prototype with a failure screen looks more complete, so people take the session more seriously. — Completeness is not what you are after; a prototype should stay obviously disposable. The failure earns its place because of what it lets you watch.
 
-Because a person who never meets anything going wrong tells you only that the path you were confident about works. — What people do when something goes wrong is where a design does its hardest work, and it is the part you have never watched anyone do.
+Without one, a session can only show the path you were already confident about, not recovery. — What people do when something goes wrong is where a design does its hardest work, and it is the part you have never watched anyone do.
 
 Improve: Check the screen list field in step 1. If no screen is a failure, add the top one from your exception table, then record the change in step 5.
 
@@ -1161,18 +1189,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your content is three short, tidy class names with neat prices. What will you miss?
 
-- Anything that only breaks on a long name, a missing value or an edge case, which is most of what breaks in real use.
-- Only the appearance; the flow itself will still be right.
-- Nothing, as long as the layout can stretch.
+- Only the look of the screens; the flow and the order of steps will still test correctly.
+- Whatever breaks only with a long name, a missing value or an edge case, which real content has.
+- Nothing that matters, as long as the layout is built to stretch when longer names arrive.
 
 <details>
 <summary>After your attempt</summary>
 
-Anything that only breaks on a long name, a missing value or an edge case, which is most of what breaks in real use. — Tidy content is content chosen to fit the layout you drew. Awkward content is where the layout finds out what it cannot do.
+Only the look of the screens; the flow and the order of steps will still test correctly. — A title that wraps to three lines pushes the button off the bottom of the screen, and that is the flow.
 
-Only the appearance; the flow itself will still be right. — A title that wraps to three lines pushes the button off the bottom of the screen, and that is the flow.
+Whatever breaks only with a long name, a missing value or an edge case, which real content has. — Tidy content is content chosen to fit the layout you drew. Awkward content is where the layout finds out what it cannot do.
 
-Nothing, as long as the layout can stretch. — You cannot tell whether it stretches until something awkward is in it. Putting it in is the test.
+Nothing that matters, as long as the layout is built to stretch when longer names arrive. — You cannot tell whether it stretches until something awkward is in it. Putting it in is the test.
 
 Improve: Replace three items in the awkward content field in step 3 with your worst real examples, then note what changed in step 5.
 
@@ -1191,18 +1219,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A person taps something dead and stops. What do you write down?
 
-- Nothing, because the moment was caused by the prototype.
-- That they went looking for something the prototype does not have, and which row of the fakes sheet it was.
-- That the task failed.
+- That they looked for something the prototype lacks, naming the fakes-sheet row it matched.
+- Nothing, because the moment was caused by the prototype rather than by your design.
+- That the task failed at that point, with the time it took them to give up on it.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing, because the moment was caused by the prototype. — The moment tells you what the person expected to be there, which is one of the more useful things a session can produce.
+That they looked for something the prototype lacks, naming the fakes-sheet row it matched. — That sentence is a finding about what people expect to exist. “Could not finish the task” is not, and it is what you would write without the sheet.
 
-That they went looking for something the prototype does not have, and which row of the fakes sheet it was. — That sentence is a finding about what people expect to exist. “Could not finish the task” is not, and it is what you would write without the sheet.
+Nothing, because the moment was caused by the prototype rather than by your design. — The moment tells you what the person expected to be there, which is one of the more useful things a session can produce.
 
-That the task failed. — The task failed against a prototype that is missing that control, which is a fact about your prototype rather than about the design.
+That the task failed at that point, with the time it took them to give up on it. — The task failed against a prototype that is missing that control, which is a fact about your prototype rather than about the design.
 
 Improve: Fill the likely attempts field in step 4 before your first session, naming the dead controls a person will probably try, then record what you added in step 5.
 
@@ -1219,7 +1247,7 @@ Section: practice. Stable action: step-5-brief.
 
 The prototype walked on a phone, with what you fixed, and the repair the Check questions asked for.
 
-- Open the prototype on a phone and walk the flow.
+- Walk the flow at phone size: on a phone, or with paper screens cut to phone size.
 - Fix anything unreachable or unreadable at that size.
 - Save the prototype and the fakes sheet together.
 
@@ -1267,6 +1295,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
 
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: you are prototyping a laundrette app flow for reserving a washing machine. Your linked screens show the machine list, a reservation screen and a confirmation. The data is six machines called Machine 1 to Machine 6, all free, all priced 3.50. The Pay with card button jumps straight to the confirmation, and the search bar does nothing.
+
+**Task:** Name the one change you would make before anyone tries this, and explain why it matters more than the others.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Polishes the visuals or adds photographs, or says it is ready because every button leads somewhere.
+- Adequate: Adds a reachable failure path (the machine is taken while you decide, with a way onward) or awkward data, and writes fakes-sheet rows for the dead search bar and the instant payment, so a person tapping them is not recorded as failing.
+- Strong: As adequate, plus picks the failure the laundrette meets most (a machine taken or out of order), notes that the instant payment hides any wait, and predicts which fake a person will try first.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+
 ### Review and finish your practice
 
 Section: practice. Stable action: review-work.
@@ -1311,7 +1365,7 @@ When the activity is finished, tell me to return to the course answer called “
 <details>
 <summary>Optional hints and reference material</summary>
 
-- Rebuild as one file per screen with plain links, then open the first file on a phone and walk the flow.
+- Rebuild as paper screens you swap by hand, or as one local file per screen with plain links, then walk the flow at phone size.
 - Take the top failure from your exception table and add the screen plus the link that reaches it.
 
 - R12: [GOV.UK: making prototypes](https://www.gov.uk/service-manual/design/making-prototypes) — What to include in a prototype and what it can be used to test. Purpose: Sets the scope of a click-through and what claims it can support. Free reading, no account. Verified 2026-09-06. It cannot validate performance, real data volumes or implemented accessibility; your fakes sheet records the rest. Fallback: R05.
@@ -1321,19 +1375,19 @@ When the activity is finished, tell me to return to the course answer called “
 <details>
 <summary>Creator review and remediation criteria</summary>
 
-**The prototype runs in a browser with no account**
+**The click-through is walkable with no account for the participant**
 
-Adequate evidence: Linked local files walkable end to end, opened on a phone as well as a computer.
+Adequate evidence: Paper screens, linked local files or a free tool's share link, walkable end to end at phone size.
 
-0 — Static images with no links.
+0 — Static screens nobody can move through.
 
-1 — A click-through that requires an account or install.
+1 — A click-through the participant must sign in to or install something for.
 
-2 — Linked local files, walkable, opened on a phone.
+2 — Walkable end to end with no account for the participant, checked at phone size.
 
-3 — As adequate, and the prototype works offline, so it can be used anywhere a participant is.
+3 — As adequate, and it works offline or on paper, so it can be used anywhere a participant is.
 
-Repair: Rebuild as one file per screen with plain links, then open the first file on a phone and walk the flow. Recheck: The prototype opened on a phone.
+Repair: Rebuild as paper screens you swap by hand, or as one local file per screen with plain links, then walk the flow at phone size. Recheck: The click-through walked at phone size.
 
 **At least one failure path is included**
 
@@ -1384,7 +1438,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 **Review criteria:**
 
-- The prototype runs in a browser with no account
+- The click-through is walkable with no account for the participant
 - At least one failure path is included
 - Data includes long, missing and edge-case values
 - A fakes sheet records everything that does not work
@@ -1392,7 +1446,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 <details>
 <summary>Reading, video and deeper explanation</summary>
 
-- A folder of HTML files with links between them is a genuine clickable prototype: it runs in any browser, needs no account or install, works offline, and can be handed to a participant on their own phone. The mechanism is not the point — the point is that the route is walkable — and building it this way removes the tool question entirely, which is why the course's required exercise uses it.
+- Paper screens you swap by hand, a folder of linked local files, and a free prototyping tool’s share link are all genuine click-throughs: the person taking part needs no account and installs nothing. The mechanism is not the point — the point is that the route is walkable — and paper removes the tool question entirely, which is why it is always an allowed route here.
 - Prototypes with only a happy path produce tests where everything works and nothing is learned. Include at least one failure: a full class, a declined payment, an empty result. Those are the paths where your m07 exception table gets its first contact with a person, and where most of the real findings come from.
 - Fake data shapes results. All-short names and round prices hide layout problems and make comparisons easier than they will be; a set that includes one very long name, one missing value and one awkward number tests the design rather than the demo. This is the same discipline as the dense-data lesson in m08, applied to what the participant sees.
 - Write down what the prototype fakes: which buttons do nothing, which data is invented, what happens instantly that would really take seconds. Participants treat anything that responds as real, and a finding drawn from a faked behaviour is not a finding about your product.
@@ -1919,18 +1973,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your task says “find the waiting list”. It names no button. Is it a good task?
 
-- It still tells the person a waiting list exists, which is the thing you most wanted to find out.
-- It is fine, because it describes a situation.
-- It is fine, because no control is named.
+- It still promises a waiting list exists, which is the very thing you wanted to find out.
+- It works, since it names no button, menu or page and so cannot lead the person anywhere.
+- It works, since it gives a goal in plain words, which is what a situation-based task needs.
 
 <details>
 <summary>After your attempt</summary>
 
-It still tells the person a waiting list exists, which is the thing you most wanted to find out. — Whether somebody expects a waiting list when a class is full is a finding in itself. Promising one in the task throws that finding away.
+It still promises a waiting list exists, which is the very thing you wanted to find out. — Whether somebody expects a waiting list when a class is full is a finding in itself. Promising one in the task throws that finding away.
 
-It is fine, because it describes a situation. — Half of it does. The other half tells the person what the situation contains.
+It works, since it names no button, menu or page and so cannot lead the person anywhere. — Naming a control is one way of giving away the answer. Promising that something exists is another, and it costs you the same finding.
 
-It is fine, because no control is named. — Naming a control is one way of giving away the answer. Promising that something exists is another, and it costs you the same finding.
+It works, since it gives a goal in plain words, which is what a situation-based task needs. — Half of it does. The other half tells the person what the situation contains.
 
 Improve: Rewrite any task in step 2 that promises something exists, so it gives only the situation, then record the change in step 5.
 
@@ -1949,18 +2003,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You plan to decide whether each task succeeded while you watch. What goes wrong?
 
-- Nothing, because you will know success when you see it.
-- Watching somebody struggle changes what you are prepared to accept, and you will not notice it happening.
-- It only matters if somebody else is watching as well.
+- It only becomes a problem when a second observer is there to disagree with your calls.
+- Watching someone struggle shifts what you will accept, usually without you noticing the shift.
+- Very little: an experienced eye recognises success in the moment more reliably than any written list.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing, because you will know success when you see it. — You will see something and call it success. The question is whether you would have called that same thing success an hour earlier.
+It only becomes a problem when a second observer is there to disagree with your calls. — A second person makes the drift visible. It is happening either way.
 
-Watching somebody struggle changes what you are prepared to accept, and you will not notice it happening. — Written beforehand, the definition is a decision you made while impartial. Written afterwards, it is a description of what you saw.
+Watching someone struggle shifts what you will accept, usually without you noticing the shift. — Written beforehand, the definition is a decision you made while impartial. Written afterwards, it is a description of what you saw.
 
-It only matters if somebody else is watching as well. — A second person makes the drift visible. It is happening either way.
+Very little: an experienced eye recognises success in the moment more reliably than any written list. — You will see something and call it success. The question is whether you would have called that same thing success an hour earlier.
 
 Improve: Write the destination for every task in the success definitions field in step 3 before your first session, then note the change in step 5.
 
@@ -1979,18 +2033,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You have eight good tasks. Should you run all eight?
 
-- Yes: more tasks give you more evidence.
-- Cut to about five, because the last few would tell you more about tiredness than about your design.
-- Yes, if you give the person a break in the middle.
+- Run all eight with a short break halfway, which restores attention for the second half.
+- Run all eight, since more tasks give more evidence and you can drop weak results later.
+- Cut to about five, since the last tasks would mostly measure tiredness rather than your design.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes: more tasks give you more evidence. — More evidence of falling quality. The extra rows look identical on the page and mean something different.
+Run all eight with a short break halfway, which restores attention for the second half. — A break helps and it does not restore the attention of the first ten minutes. Choosing which three to drop is harder and far more useful.
 
-Cut to about five, because the last few would tell you more about tiredness than about your design. — A tired person hurries, gives up sooner and is kinder about what they have already seen. That is evidence about the session, not about the design.
+Run all eight, since more tasks give more evidence and you can drop weak results later. — More evidence of falling quality, and you cannot tell afterwards which rows were affected. The extra rows look identical on the page and mean something different.
 
-Yes, if you give the person a break in the middle. — A break helps and it does not restore the attention of the first ten minutes. Choosing which three to drop is harder and far more useful.
+Cut to about five, since the last tasks would mostly measure tiredness rather than your design. — A tired person hurries, gives up sooner and is kinder about what they have already seen. That is evidence about the session, not about the design.
 
 Improve: Cut your list in the order and cut fields in step 4 down to five, record what you removed and why, then note it in step 5.
 
@@ -2040,6 +2094,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a city museum website has a page called Plan your visit with a section called Step-free access. A designer has written this test task: Go to Plan your visit and find the step-free access information for the east entrance.
+
+**Task:** Rewrite the task so it does not hand over the answer, and explain what your version lets you learn that the original hides.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps Plan your visit or step-free access in the wording, or only shortens the sentence.
+- Adequate: A situation and a goal with no interface words, for example: you are visiting with a friend who uses a wheelchair; find out how you would both get in, and stop when you know. Explains that it tests whether people find the route, not whether they can match words.
+- Strong: As adequate, plus success defined in advance (reaching the access details by any route), an accepted workaround such as phoning noted as a workaround, and the task placed before any task that reveals the Plan your visit page.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -2329,22 +2409,22 @@ Example (made up): has booked something with a fixed time and place in the last 
 
 Section: practice-plan. Stable action: write-participants.
 
-Reuse your Module 5 screener, adjusted for this study. No names are needed here.
+Reuse your Module 5 screener, adjusted for this study. Describe each person by a label such as P1 and their qualifying experience; keep names and contact details in a private note with a deletion date, not here. If nobody agreed, write nobody yet and fill the dated record below.
 
 **Answer:** Each person you recruited, and the experience that qualifies them
 
-Reuse your Module 5 screener, adjusted for this study. No names are needed here.
+Reuse your Module 5 screener, adjusted for this study. Describe each person by a label such as P1 and their qualifying experience; keep names and contact details in a private note with a deletion date, not here. If nobody agreed, write nobody yet and fill the dated record below.
 
 
 ### Dated: who you approached and could not reach, and what you tried
 
 Section: practice-plan. Stable action: write-could-not-reach.
 
-Write the date, where you asked and what happened. If nobody agreed, this field plus your prepared plan is a complete answer for this lesson.
+Write the date, where you asked and what happened. Name groups or channels, not people. If nobody agreed, this field plus your prepared plan is a complete answer for this lesson.
 
 **Answer:** Dated: who you approached and could not reach, and what you tried
 
-Write the date, where you asked and what happened. If nobody agreed, this field plus your prepared plan is a complete answer for this lesson.
+Write the date, where you asked and what happened. Name groups or channels, not people. If nobody agreed, this field plus your prepared plan is a complete answer for this lesson.
 
 
 ### Extend consent
@@ -2449,21 +2529,21 @@ A made up situation. You are running the session on your own. The person has agr
 
 Which way of capturing the session keeps the most of what you will need afterwards?
 
-- Record and write nothing at all, then listen back to the whole thing.
 - Record the audio and write sparse markers: the time, the task, and one word for what happened.
-- Write full notes and skip the recording, so nothing depends on the audio.
-- Ask the person to describe what happened at the end, and write that down.
+- Record and write nothing at all, then listen back to every session from start to end.
+- Ask the person at the end to describe what happened, and write that summary down.
+- Write full notes and skip the recording, so nothing afterwards depends on the audio.
 
 <details>
 <summary>After your attempt</summary>
 
-Record and write nothing at all, then listen back to the whole thing. — Listening to three sessions end to end takes longer than the sessions did, and you still will not find the moment you half-remember.
-
 Record the audio and write sparse markers: the time, the task, and one word for what happened. — Writing full notes while moderating means you stop watching. The markers exist only so you can find the right moments in the recording later.
 
-Write full notes and skip the recording, so nothing depends on the audio. — It is a real choice, and it costs you the moderating. Every minute your head is down is a minute you did not see a hesitation.
+Record and write nothing at all, then listen back to every session from start to end. — Listening to three sessions end to end takes longer than the sessions did, and you still will not find the moment you half-remember.
 
-Ask the person to describe what happened at the end, and write that down. — A summary from memory tells you what they concluded, and what somebody concludes is the part that changes most between the moment and the end.
+Ask the person at the end to describe what happened, and write that summary down. — A summary from memory tells you what they concluded, and what somebody concludes is the part that changes most between the moment and the end.
+
+Write full notes and skip the recording, so nothing afterwards depends on the audio. — It is a real choice, and it costs you the moderating. Every minute your head is down is a minute you did not see a hesitation.
 
 Now run one task on yourself using the method you chose, and write down what you missed.
 
@@ -2541,18 +2621,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You could not recruit anybody at all. Is this lesson unfinished?
 
-- Test it on family instead and write it up as a session.
-- It is finished if you have the dated record of who you approached, the prepared session plan and the consent script.
-- Yes: without people there is nothing to show.
+- It stays unfinished, because a session plan with no participants has nothing to show yet.
+- It can be finished with a dated record of who you approached, plus the plan and consent script.
+- It can be finished by having family act as participants and writing that up as a session.
 
 <details>
 <summary>After your attempt</summary>
 
-Test it on family instead and write it up as a session. — You can rehearse on family, and a rehearsal is what it stays. Reporting one as a session is the single thing this course will not do.
+It stays unfinished, because a session plan with no participants has nothing to show yet. — A screener, a consent script and a plan for the session that goes wrong are exactly the things that rarely appear and always show competence.
 
-It is finished if you have the dated record of who you approached, the prepared session plan and the consent script. — The work of this lesson is the preparation and the honesty about the gap. A rehearsal on yourself is never written up as research, and the plan still stands.
+It can be finished with a dated record of who you approached, plus the plan and consent script. — The work of this lesson is the preparation and the honesty about the gap. A rehearsal on yourself is never written up as research, and the plan still stands.
 
-Yes: without people there is nothing to show. — A screener, a consent script and a plan for the session that goes wrong are exactly the things that rarely appear and always show competence.
+It can be finished by having family act as participants and writing that up as a session. — You can rehearse with family, and a rehearsal is what it stays. Reporting one as a session is the one thing this course will not do.
 
 Improve: Fill the dated field in step 1 with who you approached, where, and what happened, then record the change in step 5.
 
@@ -2571,18 +2651,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The person will use their own phone. What must your consent introduction say?
 
-- That nothing is installed, what you will and will not see on their device, and that they can stop at any point.
-- That the session is confidential.
-- Nothing extra: the Module 5 consent already covers it.
+- That the session is confidential and nothing they say will be shared outside the project.
+- That nothing is installed, what you will and will not see on it, and that they can stop at any time.
+- Nothing extra, because the Module 5 consent already covered taking part in a session.
 
 <details>
 <summary>After your attempt</summary>
 
-That nothing is installed, what you will and will not see on their device, and that they can stop at any point. — Handing over a phone feels very different from clicking a link. Saying what you will not see is the sentence that lets somebody agree properly.
+That the session is confidential and nothing they say will be shared outside the project. — Worth saying, and it does not answer the question they are actually asking, which is what happens to their phone.
 
-That the session is confidential. — Worth saying, and it does not answer the question they are actually asking, which is what happens to their phone.
+That nothing is installed, what you will and will not see on it, and that they can stop at any time. — Handing over a phone feels very different from clicking a link. Saying what you will not see is the sentence that lets somebody agree properly.
 
-Nothing extra: the Module 5 consent already covers it. — That one covered a conversation. Recording and a device are two new things, and consent only ever covers what was named.
+Nothing extra, because the Module 5 consent already covered taking part in a session. — That one covered a conversation. Recording and a device are two new things, and consent only ever covers what was named.
 
 Improve: Add the device sentences to the consent device field in step 2, then note what you added in step 5.
 
@@ -2601,18 +2681,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Somebody arrives with twenty minutes instead of an hour. What do you do?
 
-- Run the full set faster.
 - Run the short version you wrote in advance, and note in the record that it was shortened.
-- Rearrange it for another day.
+- Rearrange it for another day, so this person gets the same full hour as everyone else.
+- Run the full set at a quicker pace, keeping every task so all the sessions stay comparable.
 
 <details>
 <summary>After your attempt</summary>
 
-Run the full set faster. — Hurrying removes the silences, and the silences are where you find out what people expected to happen.
-
 Run the short version you wrote in advance, and note in the record that it was shortened. — Deciding which two tasks matter while somebody is sitting in front of you means deciding by whatever is easiest to start.
 
-Rearrange it for another day. — Sometimes right, and often it means losing the person altogether. The short version is what makes twenty minutes worth having.
+Rearrange it for another day, so this person gets the same full hour as everyone else. — Sometimes right, and often it means losing the person altogether. The short version is what makes twenty minutes worth having.
+
+Run the full set at a quicker pace, keeping every task so all the sessions stay comparable. — Hurrying removes the silences, and the silences are where you find out what people expected to happen.
 
 Improve: Write the short version in step 4, naming the two tasks you would keep, then record the change in step 5.
 
@@ -2677,6 +2757,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
 
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: you will test a ferry-ticket prototype on participants’ own phones, alone, in a busy café. Two adults who take the ferry every week have agreed. You want to record audio. One of them says she can only spare twenty minutes.
+
+**Task:** Decide what your consent introduction must add for this session and what you will do about the twenty-minute slot, and explain your reasons.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Reuses a general is it OK if I record line and plans to rush through every task in twenty minutes.
+- Adequate: Consent names the audio recording, use of their own phone with nothing installed and nothing else viewed, how and when recordings are deleted, and that they can refuse recording or stop and still take part. Runs a short version with the two tasks that matter most, noted as shortened.
+- Strong: As adequate, plus audio with sparse markers chosen because moderating alone in a noisy café leaves no hands for full notes, the noise risk checked in a rehearsal, and a dated note of anyone not reached.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+
 ### Review and finish your practice
 
 Section: practice. Stable action: review-work.
@@ -2724,7 +2830,7 @@ When the activity is finished, tell me to return to the course answer called “
 - Write the one experience each participant must have, then record which of yours has it.
 - Add two sentences: one about the recording, one about their device and what you will and will not see.
 
-- R52: [GOV.UK: finding user research participants](https://www.gov.uk/service-manual/user-research/find-user-research-participants) — Recruitment criteria, lead times and accommodations. Purpose: Supplies realistic recruitment planning for a session-based study. Free reading, no account. Verified 2026-09-06; last updated 28 April 2020. Written for teams with agencies and budgets; your own network is a declared convenience sample. Fallback: R08.
+- R52: [GOV.UK: finding user research participants](https://www.gov.uk/service-manual/user-research/find-user-research-participants) — Recruitment criteria, lead times and accommodations. Purpose: Supplies realistic recruitment planning for a session-based study. Free reading, no account. Verified 2026-09-06; rechecked 2026-10-04, when the page showed last updated 22 September 2026. Written for teams with agencies and budgets; your own network is a declared convenience sample. Fallback: R08.
 - R53: [GOV.UK: getting informed consent](https://www.gov.uk/service-manual/user-research/getting-users-consent-for-research) — What participants must understand, recording consent and withdrawal. Purpose: Extends your existing consent to cover recording and the participant's own device. Free reading, no account. Verified 2026-09-06; last updated 5 November 2018. UK jurisdiction and no template; check Indian requirements before recruiting beyond practice participants. Fallback: R54.
 
 </details>
@@ -2739,7 +2845,7 @@ Adequate evidence: Three or more participants with their qualifying experience r
 
 1 — Screened loosely without recording experience.
 
-2 — Screened, with experience and exclusions recorded.
+2 — Screened, with experience and exclusions recorded — or, if nobody could be recruited, the screening line plus a dated record of who was approached and what happened.
 
 3 — As adequate, and one participant was deliberately recruited to differ from the others.
 
@@ -3170,6 +3276,8 @@ Put today’s date on it. A rehearsal stays labelled a rehearsal and is never wr
 
 **Answer:** Dated note: who you asked, who could not take part, and what you had ready for them
 
+Required only when session-route is One or two sessions, plus a rehearsal on yourself or A rehearsal only, because nobody was available. Otherwise leave participant evidence empty.
+
 Put today’s date on it. A rehearsal stays labelled a rehearsal and is never written up as research.
 
 
@@ -3177,11 +3285,13 @@ Put today’s date on it. A rehearsal stays labelled a rehearsal and is never wr
 
 Section: practice-plan. Stable action: write-expectation-log.
 
-Write your answer for “For each screen change: what the person said would happen, and what did happen”. Use the task instructions below to decide what to include.
+Keep full notes and any recording in a private local file or on paper, with a deletion date. Here, call people P1, P2 and so on, and leave out names, workplaces and details that point at someone; removing a name alone does not make a note anonymous.
 
 **Answer:** For each screen change: what the person said would happen, and what did happen
 
+Required only when session-route is Three sessions with participants or One or two sessions, plus a rehearsal on yourself. Otherwise leave participant evidence empty.
 
+Keep full notes and any recording in a private local file or on paper, with a deletion date. Here, call people P1, P2 and so on, and leave out names, workplaces and details that point at someone; removing a name alone does not make a note anonymous.
 
 <details>
 <summary>Example</summary>
@@ -3220,6 +3330,8 @@ Write your answer for “Every time you spoke beyond the task or one of your thr
 
 **Answer:** Every time you spoke beyond the task or one of your three responses, with the time and your exact words
 
+Required only when session-route is Three sessions with participants or One or two sessions, plus a rehearsal on yourself. Otherwise leave participant evidence empty.
+
 
 
 
@@ -3230,6 +3342,8 @@ Section: practice-plan. Stable action: write-assisted-marks.
 Write your answer for “Where each session became assisted, and what was happening just before”. Use the task instructions below to decide what to include.
 
 **Answer:** Where each session became assisted, and what was happening just before
+
+Required only when session-route is Three sessions with participants or One or two sessions, plus a rehearsal on yourself. Otherwise leave participant evidence empty.
 
 
 
@@ -3282,15 +3396,15 @@ Made-up example. A session record written three days late, in which my conclusio
 **Unknown:** Still unknown: whether the pause was doubt about the screen or doubt about spending the money. The record cannot settle it, and watching her again would not have settled it either.
 
 
-### Record 1 · what was said, what you observed, what you inferred, and anything you reconstructed from memory
+### Record 1 · a de-identified summary: what was said, what you observed, what you inferred, and anything reconstructed from memory
 
 Section: practice-plan. Stable action: write-record-1.
 
-Write your answer for “Record 1 · what was said, what you observed, what you inferred, and anything you reconstructed from memory”. Use the task instructions below to decide what to include.
+Keep full notes and any recording in a private local file or on paper, with a deletion date. Here, call people P1, P2 and so on, and leave out names, workplaces and details that point at someone; removing a name alone does not make a note anonymous.
 
-**Answer:** Record 1 · what was said, what you observed, what you inferred, and anything you reconstructed from memory
+**Answer:** Record 1 · a de-identified summary: what was said, what you observed, what you inferred, and anything reconstructed from memory
 
-
+Keep full notes and any recording in a private local file or on paper, with a deletion date. Here, call people P1, P2 and so on, and leave out names, workplaces and details that point at someone; removing a name alone does not make a note anonymous.
 
 <details>
 <summary>Example</summary>
@@ -3300,26 +3414,30 @@ Example (made up): said — “I suppose I press this?”. Observed — she wait
 </details>
 
 
-### Record 2 · what was said, what you observed, what you inferred, and anything you reconstructed from memory
+### Record 2 · a de-identified summary: what was said, what you observed, what you inferred, and anything reconstructed from memory
 
 Section: practice-plan. Stable action: write-record-2.
 
-Write your answer for “Record 2 · what was said, what you observed, what you inferred, and anything you reconstructed from memory”. Use the task instructions below to decide what to include.
+Keep full notes and any recording in a private local file or on paper, with a deletion date. Here, call people P1, P2 and so on, and leave out names, workplaces and details that point at someone; removing a name alone does not make a note anonymous.
 
-**Answer:** Record 2 · what was said, what you observed, what you inferred, and anything you reconstructed from memory
+**Answer:** Record 2 · a de-identified summary: what was said, what you observed, what you inferred, and anything reconstructed from memory
+
+Required only when session-route is Three sessions with participants or One or two sessions, plus a rehearsal on yourself. Otherwise leave participant evidence empty.
+
+Keep full notes and any recording in a private local file or on paper, with a deletion date. Here, call people P1, P2 and so on, and leave out names, workplaces and details that point at someone; removing a name alone does not make a note anonymous.
 
 
-
-
-### Record 3 · what was said, what you observed, what you inferred, and anything you reconstructed from memory
+### Record 3 · a de-identified summary: what was said, what you observed, what you inferred, and anything reconstructed from memory
 
 Section: practice-plan. Stable action: write-record-3.
 
-Write your answer for “Record 3 · what was said, what you observed, what you inferred, and anything you reconstructed from memory”. Use the task instructions below to decide what to include.
+Keep full notes and any recording in a private local file or on paper, with a deletion date. Here, call people P1, P2 and so on, and leave out names, workplaces and details that point at someone; removing a name alone does not make a note anonymous.
 
-**Answer:** Record 3 · what was said, what you observed, what you inferred, and anything you reconstructed from memory
+**Answer:** Record 3 · a de-identified summary: what was said, what you observed, what you inferred, and anything reconstructed from memory
 
+Required only when session-route is Three sessions with participants. Otherwise leave participant evidence empty.
 
+Keep full notes and any recording in a private local file or on paper, with a deletion date. Here, call people P1, P2 and so on, and leave out names, workplaces and details that point at someone; removing a name alone does not make a note anonymous.
 
 
 ### Check your reasoning · 1 of 3
@@ -3330,18 +3448,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Nobody has replied to your messages and you have no participants at all. What do you do?
 
-- Run the session on yourself as a rehearsal, label it a rehearsal, and write a dated note of who you asked and what you had ready.
-- Ask a friend to play a participant and write it up as a session.
-- Wait until three people agree, and leave the lesson unfinished.
+- Wait until three people agree, and leave the lesson open until real sessions can run.
+- Run it on yourself, label it a rehearsal, and date a note of who you asked and what was ready.
+- Ask a friend to play a participant, and write it up as the first of your three sessions.
 
 <details>
 <summary>After your attempt</summary>
 
-Run the session on yourself as a rehearsal, label it a rehearsal, and write a dated note of who you asked and what you had ready. — The rehearsal proves the materials work and tells you nothing about other people. The dated note is the honest record of the gap, and it is worth showing.
+Wait until three people agree, and leave the lesson open until real sessions can run. — Waiting keeps the study honest and stops you practising the one skill this lesson teaches. The rehearsal plus the dated note does both at once.
 
-Ask a friend to play a participant and write it up as a session. — The write-up would then say a session happened when it did not. If a friend genuinely qualifies, say who they are and why; if they are acting, it is a rehearsal.
+Run it on yourself, label it a rehearsal, and date a note of who you asked and what was ready. — The rehearsal proves the materials work and tells you nothing about other people. The dated note is the honest record of the gap, and it is worth showing.
 
-Wait until three people agree, and leave the lesson unfinished. — Waiting keeps the study honest and stops you practising the one skill this lesson teaches. The rehearsal plus the dated note does both at once.
+Ask a friend to play a participant, and write it up as the first of your three sessions. — The write-up would then say a session happened when it did not. If a friend genuinely qualifies, say who they are and why; if they are acting, it is a rehearsal.
 
 Improve: Choose your route in step 2 and write the dated note beside it, with what you had prepared, then record the change in step 5.
 
@@ -3360,18 +3478,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 In the second session you told the participant which menu holds the cancel option. What do you do about it?
 
-- Discard the session, because it is spoilt.
-- Leave it out, since it was one small hint.
-- Write it in the intervention log with the time and your exact words, and mark everything after it as assisted.
+- Discard the whole session, because the hint has spoilt everything she did in it.
+- Log the time and your exact words, and mark everything after that moment as assisted.
+- Leave it out of the record, since one small hint barely changed what she went on to do.
 
 <details>
 <summary>After your attempt</summary>
 
-Discard the session, because it is spoilt. — Everything up to the hint still stands. The hint is itself a finding about how hard that route is to find without help.
+Discard the whole session, because the hint has spoilt everything she did in it. — Everything up to the hint still stands. The hint is itself a finding about how hard that route is to find without help.
 
-Leave it out, since it was one small hint. — The hint produced everything that followed. Left out, the record reads as though she found the route herself, which is the opposite of what happened.
+Log the time and your exact words, and mark everything after that moment as assisted. — Your words are part of the data. Once the log says when you spoke, a reader can see exactly which part of the session was hers.
 
-Write it in the intervention log with the time and your exact words, and mark everything after it as assisted. — Your words are part of the data. Once the log says when you spoke, a reader can see exactly which part of the session was hers.
+Leave it out of the record, since one small hint barely changed what she went on to do. — The hint produced everything that followed. Left out, the record reads as though she found the route herself, which is the opposite of what happened.
 
 Improve: Add the moment to the intervention log in step 3, mark the assisted point beside it, then record the change in step 5.
 
@@ -3390,18 +3508,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A session ran smoothly. The participant hesitated nowhere and finished every task. What have you learnt?
 
-- That your tasks were badly written.
-- Very little, and that is worth writing down exactly as it stands.
-- That the design works.
+- That your tasks were badly written, since a good task always produces some hesitation.
+- That the design works for the tasks tested, which is the result the sessions were for.
+- Very little beyond that these tasks were easy for this person; write it down as such.
 
 <details>
 <summary>After your attempt</summary>
 
-That your tasks were badly written. — They may have been too easy, and one session cannot tell you. Write what happened and see whether the next two are smooth as well.
+That your tasks were badly written, since a good task always produces some hesitation. — They may have been too easy, and one session cannot tell you. Write what happened and see whether the next two are smooth as well.
 
-Very little, and that is worth writing down exactly as it stands. — Hesitations, wrong expectations and failures are what a session produces. A smooth hour tells you these tasks were easy for this person, and no more than that.
+That the design works for the tasks tested, which is the result the sessions were for. — One person finishing tells you one person finished. Smooth sessions often mean the tasks avoided the parts you were unsure about.
 
-That the design works. — One person finishing tells you one person finished. Smooth sessions often mean the tasks avoided the parts you were unsure about.
+Very little beyond that these tasks were easy for this person; write it down as such. — Hesitations, wrong expectations and failures are what a session produces. A smooth hour tells you these tasks were easy for this person, and no more than that.
 
 Improve: Read the expectation log in step 2. If a screen change has no predicted outcome beside it, add the expectation question to your three responses in step 1 and record the change in step 5.
 
@@ -3466,6 +3584,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
 
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: in a session testing a parking-payment app, the participant stops at a screen showing two buttons, Extend and End session, and asks you: which one do I press to add another hour?
+
+**Task:** Write exactly what you say next and explain why, including what you would do if she became visibly upset.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Tells her to press Extend, or points at it, because helping feels polite.
+- Adequate: Asks a neutral question such as: what would you expect each one to do? Then waits. Explains that her answer is the finding, and that telling her would erase it.
+- Strong: As adequate, plus: if she becomes distressed, helps her, then logs the time and exact words and marks everything after that point as assisted, so the record shows where her own behaviour ended.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+
 ### Review and finish your practice
 
 Section: practice. Stable action: review-work.
@@ -3528,7 +3672,7 @@ Adequate evidence: Session records showing predicted and actual outcomes at each
 
 1 — Expectation asked occasionally.
 
-2 — Asked consistently before changes and confirmed afterwards.
+2 — Asked consistently before changes and confirmed afterwards — or, on the rehearsal route, the expectation questions placed at each screen change, labelled as rehearsal.
 
 3 — As adequate, and at least one mismatch is quoted verbatim.
 
@@ -3542,7 +3686,7 @@ Adequate evidence: A log of every non-neutral statement, with when and why.
 
 1 — Interventions mentioned without wording.
 
-2 — Each logged with wording, timing and trigger.
+2 — Each logged with wording, timing and trigger — or, on the rehearsal route, a dated statement that no participant session took place.
 
 3 — As adequate, and unnecessary interventions are identified for your own improvement.
 
@@ -3556,7 +3700,7 @@ Adequate evidence: Records completed within about an hour, separating said, obse
 
 1 — Written promptly but layers merged.
 
-2 — Prompt and layered, with reconstruction marked.
+2 — Prompt and layered, with reconstruction marked; a rehearsal record is labelled as one.
 
 3 — As adequate, and at least one observation carries two candidate interpretations.
 
@@ -3570,7 +3714,7 @@ Adequate evidence: Clear markers showing where a session became assisted and wha
 
 1 — Mentioned without a boundary.
 
-2 — The point of assistance is marked and later data flagged.
+2 — The point of assistance is marked and later data flagged; on the rehearsal route, stated as not applicable.
 
 3 — As adequate, and the analysis treats assisted completions separately from unassisted ones.
 
@@ -3689,6 +3833,18 @@ Recommended route: Fill the worksheet in this app, step by step. It saves as you
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
 
 
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Supplied practice records, made up for this course and not research: three short session summaries from a test of a fictional bike-hire booking flow. P1, P2 and P3 are invented people.
+- P1: paused about ten seconds at the review screen and asked “is the bike held while I pay?”. Tapped the search box, which does nothing in the prototype, and said “I think it’s broken.” Cancelling a booking: did not find the route; the moderator pointed at the menu after about ninety seconds, so that task is assisted.
+- P2: read the word Reserve twice and went back one screen before paying. Said “if it froze I’d just pay again.” Cancelling: looked for about two minutes, said she would phone instead, and stopped.
+- P3: picked the wrong Saturday because the date strip showed only weekday initials, and noticed only on the review screen. Paused at Reserve. Cancelling: found the route through the Help link, which counts as a workaround rather than a clean success.
+
+
 ### Extract observations
 
 Section: practice-plan. Stable action: step-1-brief.
@@ -3715,7 +3871,7 @@ Section: practice-plan. Stable action: write-record-route.
 
 Choose the option that honestly describes your work.
 
-**Answer:** What your analysis rests on (Three session records with participants / One or two session records, plus a rehearsal record / Rehearsal records only, because nobody was available)
+**Answer:** What your analysis rests on (Three session records with participants / One or two session records, plus a rehearsal record / Rehearsal records only, because nobody was available / The supplied practice records in this lesson, labelled as practice)
 
 
 
@@ -3724,22 +3880,24 @@ Choose the option that honestly describes your work.
 
 Section: practice-plan. Stable action: write-access-note.
 
-A rehearsal record can be analysed for practice. It is labelled a rehearsal wherever it appears, and it is never reported as research.
+A rehearsal record, or the supplied practice records shown at the start of this lesson, can be analysed for practice. Label them as such wherever they appear; they are never reported as research.
 
 **Answer:** Dated note: who you could not reach, and what you had prepared for them
 
-A rehearsal record can be analysed for practice. It is labelled a rehearsal wherever it appears, and it is never reported as research.
+Required only when record-route is One or two session records, plus a rehearsal record or Rehearsal records only, because nobody was available or The supplied practice records in this lesson, labelled as practice. Otherwise leave participant evidence empty.
+
+A rehearsal record, or the supplied practice records shown at the start of this lesson, can be analysed for practice. Label them as such wherever they appear; they are never reported as research.
 
 
 ### Every observation on its own line, each with the label of the person it came from
 
 Section: practice-plan. Stable action: write-observation-lines.
 
-One thing per line. A line with two things in it will not group cleanly later.
+One thing per line. A line with two things in it will not group cleanly later. Keep full notes and any recording in a private local file or on paper, with a deletion date. Here, call people P1, P2 and so on, and leave out names, workplaces and details that point at someone; removing a name alone does not make a note anonymous.
 
 **Answer:** Every observation on its own line, each with the label of the person it came from
 
-One thing per line. A line with two things in it will not group cleanly later.
+One thing per line. A line with two things in it will not group cleanly later. Keep full notes and any recording in a private local file or on paper, with a deletion date. Here, call people P1, P2 and so on, and leave out names, workplaces and details that point at someone; removing a name alone does not make a note anonymous.
 
 
 ### Group by cause
@@ -3911,6 +4069,8 @@ Write your answer for “Problem 4 · how many of how many people met it, what i
 
 **Answer:** Problem 4 · how many of how many people met it, what it cost them, the evidence, and whether any completion was assisted
 
+Optional: may be left empty.
+
 
 
 
@@ -3921,6 +4081,8 @@ Section: practice-plan. Stable action: write-problem-5.
 Write your answer for “Problem 5 · how many of how many people met it, what it cost them, the evidence, and whether any completion was assisted”. Use the task instructions below to decide what to include.
 
 **Answer:** Problem 5 · how many of how many people met it, what it cost them, the evidence, and whether any completion was assisted
+
+Optional: may be left empty.
 
 
 
@@ -4003,18 +4165,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Three participants each met a different difficulty. Does the design have three problems?
 
-- Yes: three participants, three problems.
-- No: with three people nothing can be concluded.
-- You cannot tell from three sessions. Write which reading you believe and why.
+- Three: each participant met a different difficulty, so each difficulty is its own problem.
+- Nothing can be concluded, since three people are too few to say anything about problems.
+- Three sessions cannot settle it; write which reading you believe and the grounds for it.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes: three participants, three problems. — That treats each session as a complete survey of the design. Three people met whatever their own route happened to pass through.
+Three: each participant met a different difficulty, so each difficulty is its own problem. — That treats each session as a complete survey of the design. Three people met whatever their own route happened to pass through.
 
-No: with three people nothing can be concluded. — You saw three real difficulties and they are real. What you cannot say is how many exist in total.
+Nothing can be concluded, since three people are too few to say anything about problems. — You saw three real difficulties and they are real. What you cannot say is how many exist in total.
 
-You cannot tell from three sessions. Write which reading you believe and why. — It may be one problem showing three faces, or fifteen problems of which you saw three. Saying which you believe, and on what grounds, is the analysis.
+Three sessions cannot settle it; write which reading you believe and the grounds for it. — It may be one problem showing three faces, or fifteen problems of which you saw three. Saying which you believe, and on what grounds, is the analysis.
 
 Improve: Add a line to your groups in step 2 saying whether you believe these are separate problems or one problem showing differently, then record the change in step 5.
 
@@ -4031,20 +4193,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-One participant finished the cancellation task after you pointed at the menu. How does that appear in the counts?
+One participant finished the cancellation task after you pointed at the menu; the other two did not finish it. How does that appear in the counts?
 
-- It is left out entirely, since it was not a fair attempt.
-- As a completion, with a note that you helped.
-- As an assisted completion, kept out of the unassisted count, which for that task is zero of three.
+- Left out of the counts entirely, since an attempt you helped with was not a fair one.
+- As an assisted completion, kept out of the unassisted count, which is then zero of three.
+- As a completion, with a note beside it saying you helped, so the count stays one of three.
 
 <details>
 <summary>After your attempt</summary>
 
-It is left out entirely, since it was not a fair attempt. — The attempt is real evidence about how hard the route is to find. It stays in the record and out of the unassisted count.
+Left out of the counts entirely, since an attempt you helped with was not a fair one. — The attempt is real evidence about how hard the route is to find. It stays in the record and out of the unassisted count.
 
-As a completion, with a note that you helped. — A note beside a completion still leaves it in the success column, and the column is the part anyone reads.
+As an assisted completion, kept out of the unassisted count, which is then zero of three. — Separating the two counts changes the picture completely. Zero of three finishing alone is a different design than three of three finishing.
 
-As an assisted completion, kept out of the unassisted count, which for that task is zero of three. — Separating the two counts changes the picture completely. Zero of three finishing alone is a different design than three of three finishing.
+As a completion, with a note beside it saying you helped, so the count stays one of three. — A note beside a completion still leaves it in the success column, and the column is the part anyone reads.
 
 Improve: Go back to the intervention log from the previous lesson, mark every assisted task in your problem rows in step 3, then record the change in step 5.
 
@@ -4137,6 +4299,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: three people tried a furniture-resale app. Two of the three paused at the photo-upload step for about ten seconds. One of the three listed a sofa at 10 instead of 100 because the price field dropped a zero, and only noticed when a buyer offered 8. All three said they liked the colours.
+
+**Task:** Decide which problem goes at the top of your ranking, and explain why, using counts of people.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Ranks the photo pause first because two of three met it, or lists liked the colours as a problem.
+- Adequate: Puts the price-field problem first because it cost one of three people real money, while the pause cost two of three about ten seconds; writes the counts as one of three and two of three, never as percentages.
+- Strong: As adequate, plus notes that three people cannot show how common either problem is, keeps the colour remark out as a preference, and names what would settle whether the dropped zero is a field fault or a reading slip.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -4350,7 +4538,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The report's claims section said: three participants, recruited through one group, all comfortable with online payment; two could not tell whether their place was held; nobody completed the cancellation task unassisted; the review-screen wording confused all three. Its cannot-claim section said: nothing about how common these are, nothing about people who do not use online payment, nothing about performance or accessibility. One temptation was worked through: reporting “67 per cent unsure”, whose interval at n = 3 spanned almost the whole range, which was shown once in the appendix to settle the question.
+- The report's claims section said: three participants, recruited through one group, all comfortable with online payment; two could not tell whether their place was held; nobody completed the cancellation task unassisted; the review-screen wording confused all three. Its cannot-claim section said: nothing about how common these are, nothing about people who do not use online payment, nothing about performance or accessibility. One temptation was worked through: reporting “67 per cent unsure”. Two of three, by the adjusted method, gives a range from about 20 to about 94 per cent, which was shown once in the appendix to settle the question.
 
 
 ### Choose where you will do the work
@@ -4360,6 +4548,18 @@ Section: learn. Stable action: workspace.
 Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
+
+
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Supplied practice records, made up for this course and not research: three short session summaries from a test of a fictional bike-hire booking flow. P1, P2 and P3 are invented people.
+- P1: paused about ten seconds at the review screen and asked “is the bike held while I pay?”. Tapped the search box, which does nothing in the prototype, and said “I think it’s broken.” Cancelling a booking: did not find the route; the moderator pointed at the menu after about ninety seconds, so that task is assisted.
+- P2: read the word Reserve twice and went back one screen before paying. Said “if it froze I’d just pay again.” Cancelling: looked for about two minutes, said she would phone instead, and stopped.
+- P3: picked the wrong Saturday because the date strip showed only weekday initials, and noticed only on the review screen. Paused at Reserve. Cancelling: found the route through the Help link, which counts as a workaround rather than a clean success.
 
 
 ### Read both quantitative pages
@@ -4399,7 +4599,7 @@ Section: practice-plan. Stable action: write-study-basis.
 
 Choose the option that honestly describes your work.
 
-**Answer:** What your claims rest on (Sessions with three or more participants / One or two sessions, plus a rehearsal on yourself / A rehearsal only, because nobody was available)
+**Answer:** What your claims rest on (Sessions with three or more participants / One or two sessions, plus a rehearsal on yourself / A rehearsal only, because nobody was available / The supplied practice records from lesson 6, labelled as practice)
 
 
 
@@ -4408,11 +4608,13 @@ Choose the option that honestly describes your work.
 
 Section: practice-plan. Stable action: write-access-note.
 
-If your basis is a rehearsal, every claim below says so. A rehearsal shows the materials work and shows nothing about other people.
+If your basis is a rehearsal or the supplied practice records, every claim below says so. A rehearsal shows the materials work and shows nothing about other people; supplied records are practice, not findings.
 
 **Answer:** Dated note: who you could not reach, and what you had prepared for them
 
-If your basis is a rehearsal, every claim below says so. A rehearsal shows the materials work and shows nothing about other people.
+Required only when study-basis is One or two sessions, plus a rehearsal on yourself or A rehearsal only, because nobody was available or The supplied practice records from lesson 6, labelled as practice. Otherwise leave participant evidence empty.
+
+If your basis is a rehearsal or the supplied practice records, every claim below says so. A rehearsal shows the materials work and shows nothing about other people; supplied records are practice, not findings.
 
 
 ### Write the claims
@@ -4445,9 +4647,9 @@ Made-up example. Writing “60 per cent of users were unsure”, then working ou
 
 **The arithmetic, part one:** The published method I used adds two to the top and four to the bottom. Three of five became five of nine, which is 0.56.
 
-**The arithmetic, part two:** 0.56 times 0.44 is 0.25. Divided by nine that is 0.027. The square root of 0.027 is 0.17. Multiplied by 1.96, which I rounded to 2, that is 0.33.
+**The arithmetic, part two:** Five ninths is 0.556, and 0.556 times 0.444 is 0.247. Divided by nine that is 0.027. Its square root is 0.166. Multiplied by 1.96, that is 0.325.
 
-**What the range came to:** 0.56 minus 0.33 is 0.23, and 0.56 plus 0.33 is 0.89. Somewhere between about a quarter of people and about nine in ten. That is not a finding, it is the whole middle of the range.
+**What the range came to:** 0.556 minus 0.325 is 0.23, and 0.556 plus 0.325 is 0.88. Somewhere between about a quarter of people and almost nine in ten. That is not a finding; it is most of the possible range.
 
 **What I wrote instead:** “Three of the five people I sat with could not tell whether their place was held before paying.” Smaller, plainer, and true.
 
@@ -4495,6 +4697,8 @@ Write your answer for “Claim 3 · the finding, written with how many of how ma
 
 **Answer:** Claim 3 · the finding, written with how many of how many people met it
 
+Optional: may be left empty.
+
 
 
 
@@ -4505,6 +4709,8 @@ Section: practice-plan. Stable action: write-claim-4.
 Write your answer for “Claim 4 · the finding, written with how many of how many people met it”. Use the task instructions below to decide what to include.
 
 **Answer:** Claim 4 · the finding, written with how many of how many people met it
+
+Optional: may be left empty.
 
 
 
@@ -4626,7 +4832,7 @@ Write your answer for “The range you got, written out”. Use the task instruc
 <details>
 <summary>Example</summary>
 
-Example (made up): three of five is 60 per cent, and the range came out at about 23 per cent to about 89 per cent.
+Example (made up): three of five is 60 per cent, and the range came out at about 23 per cent to about 88 per cent.
 
 </details>
 
@@ -4650,18 +4856,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You read that five users find eighty-five per cent of problems. What does that let you claim about your three sessions?
 
-- That you need two more participants to reach the same coverage.
-- Nothing. It came from particular studies under particular assumptions, and it says nothing about your study.
-- That your three sessions probably found most of the problems.
+- That two more participants would bring your sessions up to the same coverage figure.
+- Nothing about your study: the figure came from particular studies under particular assumptions.
+- That your three sessions probably found most of the problems a larger study would find.
 
 <details>
 <summary>After your attempt</summary>
 
-That you need two more participants to reach the same coverage. — It treats a number from elsewhere as a target for your own work. More sessions are usually worth running, and not because of that figure.
+That two more participants would bring your sessions up to the same coverage figure. — It treats a number from elsewhere as a target for your own work. More sessions are usually worth running, and not because of that figure.
 
-Nothing. It came from particular studies under particular assumptions, and it says nothing about your study. — The figure is quoted so often it sounds like a law. Your honest claim stays what you saw, with the participant count beside it.
+Nothing about your study: the figure came from particular studies under particular assumptions. — The figure is quoted so often it sounds like a law. Your honest claim stays what you saw, with the participant count beside it.
 
-That your three sessions probably found most of the problems. — That is the figure applied to a study it was never about. Three sessions found what these three people happened to meet.
+That your three sessions probably found most of the problems a larger study would find. — That is the figure applied to a study it was never about. Three sessions found what these three people happened to meet.
 
 Improve: Check your claims in step 2 for any sentence that leans on a published coverage figure, rewrite it as a count, then record the change in step 5.
 
@@ -4678,20 +4884,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Your worked range runs from about a quarter to about nine in ten. What do you do with it?
+Your worked range runs from about a quarter to almost nine in ten. What do you do with it?
 
-- Report the rate with the range beside it, so readers can judge.
 - Leave the arithmetic out, since it makes the study look weak.
 - Show the working once, then report the count instead of the rate.
+- Report the rate with the range beside it, so readers can judge it for themselves.
 
 <details>
 <summary>After your attempt</summary>
 
-Report the rate with the range beside it, so readers can judge. — Readers carry the number away and leave the range behind. A range that wide is not a measurement worth putting in front of anyone.
-
 Leave the arithmetic out, since it makes the study look weak. — It makes the study look like what it is. Doing the sum once is the part that stops you writing the rate in the next report as well.
 
 Show the working once, then report the count instead of the rate. — The range is the argument for dropping the rate. Showing it once settles the question for anyone who wonders why there are no percentages.
+
+Report the rate with the range beside it, so readers can judge it for themselves. — Readers carry the number away and leave the range behind. A range that wide is not a measurement worth putting in front of anyone.
 
 Improve: Move the working into step 4 as your inputs, result and width sentence, take the rate out of your claims in step 2, then record the change in step 5.
 
@@ -4710,18 +4916,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A reader asks how you measured the severity of the problems you ranked. What do you say?
 
-- That severity is a standard scale used across the industry.
-- That you ranked them yourself from what you watched, and that nothing was measured.
-- That severity followed from how many participants met each problem.
+- That severity followed from how many of the participants met each of the problems.
+- That severity comes from a standard rating scale used widely across the industry.
+- That you ranked them yourself from what you watched, and nothing was measured.
 
 <details>
 <summary>After your attempt</summary>
 
-That severity is a standard scale used across the industry. — Scales exist and somebody still has to place each problem on one. That placing is the judgement, whatever the scale is called.
+That severity followed from how many of the participants met each of the problems. — That would be ranking by frequency, and your list is ranked by cost. It also dresses a judgement as a calculation.
 
-That you ranked them yourself from what you watched, and that nothing was measured. — Naming it as your judgement lets a reader disagree with the order without doubting the observations underneath it.
+That severity comes from a standard rating scale used widely across the industry. — Scales exist and somebody still has to place each problem on one. That placing is the judgement, whatever the scale is called.
 
-That severity followed from how many participants met each problem. — That would be ranking by frequency, and your list is ranked by cost. It also dresses a judgement as a calculation.
+That you ranked them yourself from what you watched, and nothing was measured. — Naming it as your judgement lets a reader disagree with the order without doubting the observations underneath it.
 
 Improve: Write the severity sentence in step 5 naming yourself and the basis, add what would make it measured, then record the change beside it.
 
@@ -4809,6 +5015,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: after testing a train-ticket kiosk screen with four commuters, a colleague drafts: 75 per cent of users cannot find the return-ticket option, proving the menu is broken. In the sessions, three of the four took longer than a minute to find it, and one never found it.
+
+**Task:** Rewrite the claim so the study supports it, and explain what the study cannot say.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps the percentage, perhaps with small sample added in brackets.
+- Adequate: Three of the four commuters we watched took over a minute to find the return option, and one did not find it. States that the study cannot say how common this is among commuters and does not prove what causes it.
+- Strong: As adequate, plus names who was recruited (commuters only), shows that three of four could plausibly sit anywhere from about 29 to 96 per cent, and says what a study designed to measure would need.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -4957,7 +5189,7 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 
 - One repair addressing the top-ranked problem
 - A prediction written before the re-test
-- Re-test records with new participants
+- Re-test records, with people new to the prototype where possible
 - An honest result, including any failure or partial outcome
 
 ### Start here: in everyday words
@@ -4968,7 +5200,7 @@ A prototype is a rough version made to answer a question before time is spent bu
 
 - **Prediction:** A statement of what you expect to see, written before you see anything. Written afterwards it cannot be wrong, so it tells you nothing.
 - **Partial result:** Part of the prediction held and part did not. It is a real outcome, not a halfway point on the way to success.
-- **Single change:** A change a reader could name in one sentence with no and in it. If your sentence needs an and, you are making two.
+- **Single change:** A change a reader could name in one sentence with no and in it. This exercise asks for one so the re-test can point at one cause; teams sometimes bundle changes on purpose, and then the result describes the bundle.
 
 **Quick example.** A supplied made-up situation. The repair was made and re-tested with two new people, and both finished the task without asking about the held place. The prediction was written down that evening, after the sessions had ended.
 
@@ -4978,7 +5210,7 @@ The reader demonstrates and guides the task before asking for “The top-ranked 
 
 Section: learn. Stable action: welcome.
 
-Repair the top-ranked problem, write the prediction before re-testing, run the re-test with new participants, and report the result including a failure.
+Repair the top-ranked problem, write the prediction before re-testing, run the re-test, preferably with people new to the prototype, and report the result including a failure.
 
 
 ### Repair the top-ranked problem, not the easiest one
@@ -4988,11 +5220,11 @@ Section: learn. Stable action: learn-1.
 Repair the top-ranked problem, not the easiest one.
 
 
-### Change one thing so the re-test can attribute the difference
+### Idea 2: For this exercise, change one thing, so any difference in the…
 
 Section: learn. Stable action: learn-2.
 
-Change one thing so the re-test can attribute the difference.
+For this exercise, change one thing, so any difference in the re-test can be attributed to it.
 
 
 ### Write the prediction first: what should happen if the repair works
@@ -5002,11 +5234,11 @@ Section: learn. Stable action: learn-3.
 Write the prediction first: what should happen if the repair works.
 
 
-### Re-test with people who have not seen the prototype
+### Idea 4: Prefer people new to the prototype: a returning person remembe…
 
 Section: learn. Stable action: learn-4.
 
-Re-test with people who have not seen the prototype.
+Prefer people new to the prototype: a returning person remembers the tasks, so success may be memory.
 
 
 ### Report a failed repair as a result, not as a stage on the way to success
@@ -5032,6 +5264,19 @@ Section: learn. Stable action: workspace.
 Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
+
+
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Supplied practice records, made up for this course and not research: three short session summaries from a test of a fictional bike-hire booking flow. P1, P2 and P3 are invented people.
+- P1: paused about ten seconds at the review screen and asked “is the bike held while I pay?”. Tapped the search box, which does nothing in the prototype, and said “I think it’s broken.” Cancelling a booking: did not find the route; the moderator pointed at the menu after about ninety seconds, so that task is assisted.
+- P2: read the word Reserve twice and went back one screen before paying. Said “if it froze I’d just pay again.” Cancelling: looked for about two minutes, said she would phone instead, and stopped.
+- P3: picked the wrong Saturday because the date strip showed only weekday initials, and noticed only on the review screen. Paused at Reserve. Cancelling: found the route through the Help link, which counts as a workaround rather than a clean success.
+- Supplied practice re-test, also made up: after the review screen gained the line “Your bike is held for 10 minutes”, two new invented people tried the same tasks. One paid without asking anything. The other asked whether the ten minutes started now or at payment.
 
 
 ### Choose and predict
@@ -5093,11 +5338,11 @@ Write your answer for “The top-ranked problem you are repairing”. Use the ta
 
 Section: practice-plan. Stable action: write-single-change.
 
-One change. If your sentence contains the word and, you are probably making two.
+One change, so any difference in the re-test can be pinned on it. If your sentence contains the word and, you are probably making two.
 
 **Answer:** The one change you are making, in a sentence
 
-One change. If your sentence contains the word and, you are probably making two.
+One change, so any difference in the re-test can be pinned on it. If your sentence contains the word and, you are probably making two.
 
 
 ### What should be observable if the repair works
@@ -5137,13 +5382,13 @@ The old version kept intact, the new version differing in one respect, and a lis
 
 - Apply the change to a copy of the prototype.
 - Keep the previous version intact.
-- Change nothing else, however tempting.
+- For this exercise, change nothing else, so the result has one cause; list the rest as deferred.
 
 **Start here:** Copy the prototype before you touch it. Paper, printed screens or files all work, as long as both versions still exist.
 
 **Enough:** You could show somebody the two versions and they could name the single difference.
 
-**Single change:** A change a reader could name in one sentence with no and in it. If your sentence needs an and, you are making two.
+**Single change:** A change a reader could name in one sentence with no and in it. This exercise asks for one so the re-test can point at one cause; teams sometimes bundle changes on purpose, and then the result describes the bundle.
 
 **Version:** One saved state of the prototype. The old one is kept whole so that the two can be set side by side afterwards.
 
@@ -5178,7 +5423,7 @@ Section: practice-plan. Stable action: step-3-brief.
 
 The re-test run with people who have not seen the prototype, or an honest smaller route recorded with a date.
 
-- Run the affected tasks with at least two new participants.
+- Run the affected tasks with at least two people new to the prototype, or record why you could not.
 - Use the same wording and the same moderation discipline.
 - Record expectation, outcome and hesitation as before.
 
@@ -5186,9 +5431,9 @@ The re-test run with people who have not seen the prototype, or an honest smalle
 
 **Enough:** Each record carries the expectation before each change and every hesitation, as the first round did.
 
-**Re-test:** Running the same tasks, in the same words, on the changed version. Anything else you alter about the session makes the two rounds impossible to compare.
+**Re-test:** Running the same tasks, in the same words, on the changed version. Anything else you alter about the session makes the two rounds much harder to compare.
 
-**Fresh participant:** Somebody who has seen neither version. A person who already met the problem cannot show you whether it has gone.
+**Fresh participant:** Somebody who has seen neither version. This exercise prefers fresh people because someone who met the problem already knows where the answer is, so their success could be memory rather than the repair.
 
 **Rehearsal:** A run on yourself. It shows the change works mechanically, and because you already know the answer it can never become a result.
 
@@ -5199,7 +5444,7 @@ Section: practice-plan. Stable action: write-retest-route.
 
 Choose the option that honestly describes your work.
 
-**Answer:** Which route you are taking (Two or more people who have not seen the prototype / One new person, plus a rehearsal on yourself / A rehearsal only, because nobody new was available)
+**Answer:** Which route you are taking (Two or more people who have not seen the prototype / One new person, plus a rehearsal on yourself / A rehearsal only, because nobody new was available / The supplied practice re-test in this lesson, labelled as practice)
 
 
 
@@ -5212,6 +5457,8 @@ A rehearsal on yourself cannot test the repair, because you already know the ans
 
 **Answer:** Dated note: who you asked, who could not take part, and what you had ready for them
 
+Required only when retest-route is One new person, plus a rehearsal on yourself or A rehearsal only, because nobody new was available or The supplied practice re-test in this lesson, labelled as practice. Otherwise leave participant evidence empty.
+
 A rehearsal on yourself cannot test the repair, because you already know the answer. It is still labelled a rehearsal and it never becomes a result.
 
 
@@ -5219,11 +5466,11 @@ A rehearsal on yourself cannot test the repair, because you already know the ans
 
 Section: practice-plan. Stable action: write-retest-records.
 
-Write your answer for “For each re-test: expectation before each change, what happened, and every hesitation”. Use the task instructions below to decide what to include.
+Keep full notes and any recording in a private local file or on paper, with a deletion date. Here, call people P1, P2 and so on, and leave out names, workplaces and details that point at someone; removing a name alone does not make a note anonymous.
 
 **Answer:** For each re-test: expectation before each change, what happened, and every hesitation
 
-
+Keep full notes and any recording in a private local file or on paper, with a deletion date. Here, call people P1, P2 and so on, and leave out names, workplaces and details that point at someone; removing a name alone does not make a note anonymous.
 
 
 ### Compare with the prediction
@@ -5255,21 +5502,21 @@ A supplied made-up situation. The repair was made and re-tested with two new peo
 
 What can the report say about this re-test?
 
-- That the repair is confirmed, because the result matched the prediction.
-- That both new people finished without asking, and that the prediction was written after the sessions rather than before.
-- Nothing, because the re-test is spoilt.
-- That the repair is confirmed, because two of two finished.
+- The repair is confirmed, because two of two new people finished without asking at all.
+- Nothing usable, because a prediction written afterwards spoils the whole re-test.
+- The repair is confirmed, because what happened matched the prediction written later that evening.
+- Both finished without asking, and the prediction was written after the sessions, not before.
 
 <details>
 <summary>After your attempt</summary>
 
-That the repair is confirmed, because the result matched the prediction. — A prediction written after the event matches whatever happened. There was never an evening on which that note came out wrong.
+The repair is confirmed, because two of two new people finished without asking at all. — Two people finishing is a real observation and it is not a test of the repair. With no prior prediction, nothing was ever at risk.
 
-That both new people finished without asking, and that the prediction was written after the sessions rather than before. — The observation stands on its own, and dating the prediction honestly tells a reader exactly how much weight to put on the match.
+Nothing usable, because a prediction written afterwards spoils the whole re-test. — The sessions happened and the observations are real. What is missing is the prior prediction, so say that plainly and keep everything else.
 
-Nothing, because the re-test is spoilt. — The sessions happened and the observations are real. What is missing is the prior prediction, so say that plainly and keep everything else.
+The repair is confirmed, because what happened matched the prediction written later that evening. — A prediction written after the event matches whatever happened. There was never an evening on which that note came out wrong.
 
-That the repair is confirmed, because two of two finished. — Two people finishing is a real observation and it is not a test of the repair. With no prior prediction, nothing was ever at risk.
+Both finished without asking, and the prediction was written after the sessions, not before. — The observation stands on its own, and dating the prediction honestly tells a reader exactly how much weight to put on the match.
 
 Check when your own prediction was written. If it came after the re-test, mark it so and write a fresh one for the next change.
 
@@ -5306,18 +5553,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 While making the repair you also moved the button, because it was quick. What has that cost you?
 
-- Nothing, as long as you record both changes.
-- You can no longer say which change produced the difference, so the re-test answers nothing.
-- Only that the comparison is now less tidy.
+- Only some tidiness in the comparison; each change can still be judged on its own.
+- Nothing, as long as both changes are written down clearly before the re-test even begins.
+- Any difference can no longer be pinned on one change; the result now describes the pair.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing, as long as you record both changes. — Recording them keeps you honest and does not separate them. The result still cannot be traced to either one.
+Only some tidiness in the comparison; each change can still be judged on its own. — It is more than tidiness. If people behave differently, you cannot say which change caused it, and that was the question you were asking.
 
-You can no longer say which change produced the difference, so the re-test answers nothing. — Two changes give one result and two possible causes. The whole point of one change is that the result has only one thing to attach to.
+Nothing, as long as both changes are written down clearly before the re-test even begins. — Recording them keeps you honest and does not separate them. The result still cannot be traced to either change alone.
 
-Only that the comparison is now less tidy. — It is not tidiness. If the participants behave differently, you have no way to say why, which is the question you were asking.
+Any difference can no longer be pinned on one change; the result now describes the pair. — This exercise asks for one change so the result has one thing to attach to. Teams sometimes bundle changes on purpose; the result then describes the bundle, and the report has to say so.
 
 Improve: Go back to the old version, apply only the single change from step 1, and move the other one to the tempted list in step 2, then record the change in step 5.
 
@@ -5336,18 +5583,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You have nobody new to re-test with. What do you do?
 
-- Skip the re-test and mark the repair as made.
-- Write the prediction anyway, run it as a rehearsal on yourself, label it a rehearsal, and write a dated note of who you could not reach.
-- Re-test with one of the original three, since they already know the tasks.
+- Re-test with one of the original three, since knowing the tasks makes their result cleaner.
+- Write the prediction first, run a labelled rehearsal, and date a note of who you could not reach.
+- Skip both the prediction and the re-test, and record only that the change was made.
 
 <details>
 <summary>After your attempt</summary>
 
-Skip the re-test and mark the repair as made. — A repair with no re-test is a change, which is worth recording as exactly that. The rehearsal plus the dated note gives you more than skipping does.
+Re-test with one of the original three, since knowing the tasks makes their result cleaner. — A returning person remembers the tasks and the problem, so a success may be memory rather than the repair. That is why this exercise prefers new people; if a returning person is all you have, say so beside the result.
 
-Write the prediction anyway, run it as a rehearsal on yourself, label it a rehearsal, and write a dated note of who you could not reach. — The prediction still has to be written first, because that habit is the point. The rehearsal shows the change works mechanically and shows nothing about other people.
+Write the prediction first, run a labelled rehearsal, and date a note of who you could not reach. — The prediction still has to be written first, because that habit is the point. The rehearsal shows the change works mechanically and shows nothing about other people.
 
-Re-test with one of the original three, since they already know the tasks. — Somebody who has already met the problem cannot show whether it has gone. If they are the only person available, say so beside the result.
+Skip both the prediction and the re-test, and record only that the change was made. — Nothing in it is false, and it skips the habit this lesson exists for: writing the prediction before you look. A labelled rehearsal keeps that habit and checks the change works mechanically.
 
 Improve: Choose your route in step 3, write the dated note beside it with what you had prepared, then record the change in step 5.
 
@@ -5366,18 +5613,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The re-test failed. Both new people asked the same question as before. What goes in the report?
 
-- Nothing yet, until a second repair succeeds.
-- That it failed, in one sentence with the counts, followed by what you now think the problem actually is.
-- That the repair needs further work before it can be assessed.
+- Nothing about it yet; wait until a second repair succeeds and then report both together.
+- That the repair needs further work before it can be fairly assessed by anyone.
+- That it failed, with the counts in one sentence, then what you now think the cause is.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing yet, until a second repair succeeds. — Holding the failure back until there is a success turns the report into a story with the evidence chosen to fit it.
+Nothing about it yet; wait until a second repair succeeds and then report both together. — Holding the failure back until there is a success turns the report into a story with the evidence chosen to fit it.
 
-That it failed, in one sentence with the counts, followed by what you now think the problem actually is. — A failed repair is a finding about the problem. It says your reading of the cause was wrong, which is more useful than a change nobody tested.
+That the repair needs further work before it can be fairly assessed by anyone. — That sentence describes a plan rather than a result, and it quietly hides the outcome. The result is that this change did not do it.
 
-That the repair needs further work before it can be assessed. — That sentence describes a plan rather than a result, and it quietly hides the outcome. The result is that this change did not do it.
+That it failed, with the counts in one sentence, then what you now think the cause is. — A failed repair is a finding about the problem. It says your reading of the cause was wrong, which is more useful than a change nobody tested.
 
 Improve: Write the failure as your outcome sentence in step 5, add what you now think the cause is, re-rank the remaining problems, then record the change.
 
@@ -5485,6 +5732,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
 
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: on a council bin-collection reminder site, people misread Collection: 14/03 as March or as the fourteenth week. You plan to change it to 14 March (Thursday). While editing you are also tempted to move the reminder button higher. Two people who have never seen the site can try the new version.
+
+**Task:** Decide what you change for this re-test and write the prediction you will check, explaining your reasoning.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Makes both changes and plans to see whether things feel clearer.
+- Adequate: Changes only the date for this exercise so any difference points at it, lists the button move as deferred, and writes a checkable prediction such as: neither new person asks which date is meant.
+- Strong: As adequate, plus a failure condition written first, a note that two people cannot show how common the confusion is, and the reason for fresh people: they have not already learned the old screen.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+
 ### Review and finish your practice
 
 Section: practice. Stable action: review-work.
@@ -5505,12 +5778,12 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: Repair, predict, re-test
-What I am trying to do: Repair the top-ranked problem, write the prediction before re-testing, run the re-test with new participants, and report the result including a failure.
+What I am trying to do: Repair the top-ranked problem, write the prediction before re-testing, run the re-test, preferably with people new to the prototype, and report the result including a failure.
 
 Key idea or terms:
 Prediction: A statement of what you expect to see, written before you see anything. Written afterwards it cannot be wrong, so it tells you nothing.
 Partial result: Part of the prediction held and part did not. It is a real outcome, not a halfway point on the way to success.
-Single change: A change a reader could name in one sentence with no and in it. If your sentence needs an and, you are making two.
+Single change: A change a reader could name in one sentence with no and in it. This exercise asks for one so the re-test can point at one cause; teams sometimes bundle changes on purpose, and then the result describes the bundle.
 
 Supplied practice material (fictional or labelled practice, not my research):
 A supplied made-up situation. The repair was made and re-tested with two new people, and both finished the task without asking about the held place. The prediction was written down that evening, after the sessions had ended.
@@ -5555,7 +5828,7 @@ Repair: Compare your change against the ranking. If it is not the top item, eith
 
 **Exactly one change was made**
 
-Adequate evidence: Before-and-after prototypes differing in one respect.
+Adequate evidence: Before-and-after prototypes differing in one respect, so the result can be attributed to that change.
 
 0 — Several changes bundled.
 
@@ -5611,9 +5884,9 @@ The progress bar counts required actions with saved work. It is not a score or p
 <summary>Reading, video and deeper explanation</summary>
 
 - Choosing the top-ranked problem is a discipline because the easy fix is always available and always tempting. Repairing the wording while the payment-uncertainty problem remains produces a case study that looks iterative and a product that still makes people pay twice.
-- One change at a time is what makes the re-test informative. Change three things and a better result tells you the combination helped; a worse one tells you nothing about which to undo. This costs an extra session and buys the only kind of learning that transfers.
+- This exercise asks for one change at a time because that is what lets the re-test point at a cause. Change three things and a better result tells you the combination helped; a worse one tells you nothing about which to undo. Teams do sometimes bundle changes on purpose, when they need a broken flow fixed quickly more than they need to know which part worked; the honest report then says the result belongs to the bundle.
 - The prediction written first is what makes the re-test capable of failing. “People should reach the review screen without asking whether the place is held” can be checked; “it should be clearer” cannot, and after the fact everything looks clearer to the person who changed it.
-- Fresh participants are necessary because a returning one is testing their memory. Two new people are enough for a re-test of a single change, and the record should name them as new.
+- This exercise prefers fresh participants because a returning one may be testing their memory of the tasks and the problem, a learning effect. Two new people can show whether the predicted behaviour appears at all, not how often it would; if a returning person is all you have, the record says so beside the result.
 
 [GOV.UK: making prototypes](https://www.gov.uk/service-manual/design/making-prototypes).
 
@@ -5629,65 +5902,65 @@ Bring: Your untestable lists and a rough running page.
 
 Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
-- One question tested that lower fidelity could not answer
-- Results under a slow throttled connection with the cache disabled
+- One question about waiting or real content, with the method that answers it
+- Results labelled staged or real, with what a staged wait cannot establish
 - A test with realistic content volume
-- Recorded conditions: device, browser, profile and volume
+- Recorded conditions: method, wait in seconds, device and item count
 
 ### Start here: in everyday words
 
-A prototype is a rough version made to answer a question before time is spent building the full product. In this lesson, your first small result is: One question that only a waiting or loaded-up thing can answer, and the decision it would change.
+A prototype is a rough version made to answer a question before time is spent building the full product. In this lesson, your first small result is: One question about waiting or real content, whether a staged wait or real loading answers it, and the decision it would change.
 
 **Words you will use**
 
 - **Untestable list:** The list you wrote earlier in this module of what each prototype cannot establish.
-- **Throttling:** Making a browser pretend the connection is slow, so pages arrive at the speed most people actually get.
+- **Throttling:** Making a browser pretend the connection is slow, so pages arrive at the speed many people actually get. It slows what is fetched over a network, so check that your page really does load more slowly; a page opened straight from a file may not.
 - **Counted wait:** A wait you make yourself, by holding the screen back while somebody counts the seconds on a clock.
 
 **Quick example.** Two supplied made up results for the same task. The click-through: three people found the pay button in under ten seconds and none hesitated. The same task with a counted four-second wait and sixty items in the list: two of three pressed pay twice, and one scrolled straight past the class she wanted.
 
-The reader demonstrates and guides the task before asking for “The question from your untestable lists that only a waiting or loaded-up thing can answer, and the decision it would change”.
+The reader demonstrates and guides the task before asking for “The question from your untestable lists about waiting or real content, and the decision it would change”.
 
 ### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
-Test one question that paper and click-throughs cannot answer — timing, a slow connection or real content volume — and record what changed compared with the prototype result.
+Test one question about waiting or real content, choose between a staged wait and a running page on a slowed connection, and state exactly what your result cannot establish.
 
 
-### Timing questions need something that actually waits
+### Idea 1: A click-through can stage a wait: a timed transition moves on…
 
 Section: learn. Stable action: learn-1.
 
-Timing questions need something that actually waits.
+A click-through can stage a wait: a timed transition moves on by itself after the seconds you set, so you can watch what people do during it.
 
 
-### Idea 2: Throttle the connection and disable the cache; your connection…
+### Idea 2: A staged wait is the same length every time and shows a screen…
 
 Section: learn. Stable action: learn-2.
 
-Throttle the connection and disable the cache; your connection is not typical.
+A staged wait is the same length every time and shows a screen you prepared. It says nothing about how long the real wait will be.
 
 
-### Idea 3: Real content volume changes layout, scanning and load — test w…
+### Idea 3: Real loading — how long it takes, what appears first, what hap…
 
 Section: learn. Stable action: learn-3.
 
-Real content volume changes layout, scanning and load — test with a lot, not three.
+Real loading — how long it takes, what appears first, what happens when it fails — only shows on a running page over a real or throttled connection.
 
 
-### Watch what appears first, not only what appears eventually
+### Idea 4: Real content volume changes layout, scanning and sorting; test…
 
 Section: learn. Stable action: learn-4.
 
-Watch what appears first, not only what appears eventually.
+Real content volume changes layout, scanning and sorting; test with sixty items, not three, on paper or on screen.
 
 
-### Idea 5: Record the device and the throttling profile, or the result is…
+### Idea 5: Record the method, staged or real, the wait in seconds, the de…
 
 Section: learn. Stable action: learn-5.
 
-Record the device and the throttling profile, or the result is unrepeatable.
+Record the method, staged or real, the wait in seconds, the device and the item count, or the result cannot be repeated.
 
 
 ### See the idea in a supplied example
@@ -5696,7 +5969,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Two questions needed a running page. First: does the pending state stop people paying twice? A local page with a deliberate four-second delay and a slow throttling profile was tested with two people — neither pressed again with the pending message present, and one said she would have without it. Second: does the list still work with sixty classes? It did not: the filter summary scrolled away, sorting became necessary, and the promoted items at the top pushed everything else below the fold. Both results were recorded with the device, the browser, the profile and the item count.
+- Two questions, two methods. First: does a pending message stop people paying twice during a four-second wait? A click-through whose processing screen moved on by itself after four seconds was tried with two people; neither pressed again while the message showed, and one said she would have without it. The record said the wait was staged and fixed, so it said nothing about real payment times. Second: does the list still work with sixty classes? On paper it did not: the filter summary scrolled away, sorting became necessary, and the promoted items pushed everything else below the fold. How long a real list takes to arrive on a slow phone connection stayed on the untested list, waiting for a running page.
 
 
 ### Choose where you will do the work
@@ -5712,27 +5985,27 @@ Recommended route: Fill the worksheet in this app, step by step. It saves as you
 
 Section: practice-plan. Stable action: step-1-brief.
 
-One question that only a waiting or loaded-up thing can answer, and the decision it would change.
+One question about waiting or real content, whether a staged wait or real loading answers it, and the decision it would change.
 
-- Choose one item from your untestable lists that a running page can now answer.
-- Write what result would change a decision.
+- Choose one item from your untestable lists about waiting or real content.
+- Decide whether a staged wait or real loading answers it, and write what result would change a decision.
 
 **Start here:** Read your untestable lists and mark every item that mentions timing, waiting, real data or the amount of content.
 
-**Enough:** A tidy paper version of your screen could not answer the question you chose.
+**Enough:** A tidy paper screen could not answer your question, and you have said whether a staged wait or real loading is what answers it.
 
 **Untestable list:** The list you wrote earlier in this module of what each prototype cannot establish.
 
-**Throttling:** Making a browser pretend the connection is slow, so pages arrive at the speed most people actually get.
+**Throttling:** Making a browser pretend the connection is slow, so pages arrive at the speed many people actually get. It slows what is fetched over a network, so check that your page really does load more slowly; a page opened straight from a file may not.
 
 
-### The question from your untestable lists that only a waiting or loaded-up thing can answer, and the decision it would change
+### The question from your untestable lists about waiting or real content, and the decision it would change
 
 Section: practice-plan. Stable action: write-running-question.
 
 If a tidy paper screen could already answer it, choose a different one.
 
-**Answer:** The question from your untestable lists that only a waiting or loaded-up thing can answer, and the decision it would change
+**Answer:** The question from your untestable lists about waiting or real content, and the decision it would change
 
 If a tidy paper screen could already answer it, choose a different one.
 
@@ -5752,18 +6025,18 @@ Choose the option that honestly describes your work.
 
 **Answer:** Which comfort of the prototype you are removing (Speed — the prototype never makes anyone wait / Tidiness — every name and number in the prototype is neat and short / Length — the prototype holds three items, not sixty)
 
-A prototype is fast, tidy and short. All three of those are lies. Pick the one that matters for your question.
+Your prototype so far is probably fast, tidy and short, and each of those can hide a problem. Pick the one that matters for your question. A timed transition can stage a wait, and it is still a wait you invented.
 
 
 ### Build the conditions
 
 Section: practice-plan. Stable action: step-2-brief.
 
-A wait you can time, and content heavy enough to be real.
+A wait you can time, labelled staged or real, and content heavy enough to be real.
 
-- Add a realistic delay where the real system would wait.
+- Stage the wait with a timed transition or a counted pause, or load a real page with throttling on and the cache off.
 - Load realistic content volume, not three examples.
-- Set a slow throttling profile and disable the cache.
+- Write down which kind of wait you built: staged or real.
 
 **Start here:** Do the content first. Open your prototype and replace three tidy examples with the longest and largest real ones you can find.
 
@@ -5771,7 +6044,9 @@ A wait you can time, and content heavy enough to be real.
 
 **Counted wait:** A wait you make yourself, by holding the screen back while somebody counts the seconds on a clock.
 
-**Rehearsal:** A staged stand-in for a test. It shows you the shape of a problem, and it is never written up as research.
+**Staged wait:** Any wait whose length you chose: a timed transition, a delay written into a page, or a person counting. It shows what people do while waiting; only real loading shows how long they would wait.
+
+**Rehearsal:** A run on yourself. It shows you the shape of a problem, and it is never written up as research.
 
 
 ### See the decision being made
@@ -5803,18 +6078,18 @@ Section: practice-plan. Stable action: write-wait-method.
 
 Choose the option that honestly describes your work.
 
-**Answer:** How you will produce the wait (A running page you already have, with a delay in it and the browser set to a slow profile / A person who holds the screen back for a counted wait, timed on a phone / Both, so the two can be compared)
+**Answer:** How you will produce the wait (A running page you already have, with a delay in it and the browser set to a slow profile / A person who holds the screen back for a counted wait, timed on a phone / Both, so the two can be compared / A timed transition in a click-through, moving on by itself after the seconds I set)
 
-You do not need a running page. The counted wait is a real option, and this course does not ask you to write code yet.
+A timed transition, a delay written into a page and a person counting are all staged: you chose the length, so they show what people do during a wait, never how long the real one takes. Only a page fetched over a network with throttling on shows real loading. None of this needs code.
 
 
-### How long the wait is, in seconds, and how you timed it
+### How long the wait is, in seconds, how you timed it, and whether it was staged or real loading
 
 Section: practice-plan. Stable action: write-wait-length.
 
-Write your answer for “How long the wait is, in seconds, and how you timed it”. Use the task instructions below to decide what to include.
+Write your answer for “How long the wait is, in seconds, how you timed it, and whether it was staged or real loading”. Use the task instructions below to decide what to include.
 
-**Answer:** How long the wait is, in seconds, and how you timed it
+**Answer:** How long the wait is, in seconds, how you timed it, and whether it was staged or real loading
 
 
 
@@ -5896,11 +6171,11 @@ Write your answer for “What appeared first, what appeared last, and how long t
 
 Section: practice-plan. Stable action: write-during-wait.
 
-Write your answer for “What you and the one or two people with you did during the wait: pressing again, leaving, asking whether it had worked”. Use the task instructions below to decide what to include.
+Keep full notes and any recording in a private local file or on paper, with a deletion date. Here, call people P1, P2 and so on, and leave out names, workplaces and details that point at someone; removing a name alone does not make a note anonymous.
 
 **Answer:** What you and the one or two people with you did during the wait: pressing again, leaving, asking whether it had worked
 
-
+Keep full notes and any recording in a private local file or on paper, with a deletion date. Here, call people P1, P2 and so on, and leave out names, workplaces and details that point at someone; removing a name alone does not make a note anonymous.
 
 
 ### What the real content broke: wrapping, scrolling, things pushed out of sight, sorting that suddenly became necessary
@@ -5941,21 +6216,21 @@ Two supplied made up results for the same task. The click-through: three people 
 
 What is the honest thing to record from the pair?
 
-- Both results, each labelled with the conditions it came from, and the pressing-twice problem added to the ranked list.
-- Neither, until you can run the test on a real build.
-- The second result only, because it was closer to real conditions and replaces the first.
-- The first result only, because the second was a rehearsal with a person counting rather than a real connection.
+- Both, each with the conditions it came from, and the pressing-twice problem added to the list.
+- The second only, because it was closer to real conditions and so replaces the first.
+- Neither yet: hold both until the same task can be run on a real build over a slow network.
+- The first only, because the second wait was staged by a person counting, not a real connection.
 
 <details>
 <summary>After your attempt</summary>
 
-Both results, each labelled with the conditions it came from, and the pressing-twice problem added to the ranked list. — The two results are not in conflict. They answer different questions, and only the conditions written beside each one keep that clear.
+Both, each with the conditions it came from, and the pressing-twice problem added to the list. — The two results are not in conflict. They answer different questions, and only the conditions written beside each one keep that clear.
 
-Neither, until you can run the test on a real build. — Waiting for a build leaves you with nothing for weeks. Both results are usable as long as each carries what it was and what it was not.
+The second only, because it was closer to real conditions and so replaces the first. — The click-through still tells you the button is findable, which the crowded version cannot show. Throwing it away loses a result you already paid for.
 
-The second result only, because it was closer to real conditions and replaces the first. — The click-through still tells you the button is findable, which the crowded version cannot show. Throwing it away loses a result you already paid for.
+Neither yet: hold both until the same task can be run on a real build over a slow network. — Waiting for a build leaves you with nothing for weeks. Both results are usable as long as each carries what it was and what it was not.
 
-The first result only, because the second was a rehearsal with a person counting rather than a real connection. — The rehearsal cannot speak about real timings, and it did show two people pressing twice. That is an observation about behaviour, and it belongs in the list with its label attached.
+The first only, because the second wait was staged by a person counting, not a real connection. — A staged wait cannot speak about real timings, and it did show two people pressing twice. That is an observation about behaviour during a wait of a chosen length, and it belongs in the list with that label.
 
 Write your own pair the same way: the prototype result, the waiting or loaded-up result, and the conditions beside each.
 
@@ -6033,18 +6308,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You have no running build at all. Can you still test what real content volume does?
 
-- You can approximate it by adding a note saying the real list will be much longer.
-- You can: fill the paper or click-through screen with the longest real names and the largest real numbers, and add as many rows as the real thing would hold.
-- You cannot: volume problems only appear in a page that is really loading.
+- You can approximate it with a note on the screen saying the real list will be much longer.
+- You cannot: problems with content volume only appear in a page that is really loading data.
+- You can: fill the screen with the longest real names, largest numbers and a realistic row count.
 
 <details>
 <summary>After your attempt</summary>
 
-You can approximate it by adding a note saying the real list will be much longer. — A note changes nothing you can look at. The point is to face the crowded screen and find out what it breaks.
+You can approximate it with a note on the screen saying the real list will be much longer. — A note changes nothing you can look at. The point is to face the crowded screen and find out what it breaks.
 
-You can: fill the paper or click-through screen with the longest real names and the largest real numbers, and add as many rows as the real thing would hold. — Volume damage is visible on paper. Long titles wrap, the summary scrolls away, and the item you wanted ends up below everything else.
+You cannot: problems with content volume only appear in a page that is really loading data. — Some do, such as slow drawing. Wrapping, scrolling and things pushed out of sight appear on a sheet of paper the moment you stop using three tidy examples.
 
-You cannot: volume problems only appear in a page that is really loading. — Some do, such as slow drawing. Wrapping, scrolling and things pushed out of sight appear on a sheet of paper the moment you stop using three tidy examples.
+You can: fill the screen with the longest real names, largest numbers and a realistic row count. — Volume damage is visible on paper. Long titles wrap, the summary scrolls away, and the item you wanted ends up below everything else.
 
 Improve: If the content-swap field in step 2 still holds three tidy examples, replace them with your worst real ones and record the change in step 5.
 
@@ -6063,18 +6338,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your notes say the wait felt too long. What is missing?
 
-- Nothing is missing, because how the wait felt is the finding.
-- A rating out of ten from the people who waited.
-- The length in seconds, the device, the method and the number of items, without which nobody can repeat what you did.
+- Nothing important, because how the wait felt to people is the finding you were after.
+- A rating out of ten from each person who waited, so the feeling becomes a number you can compare.
+- The wait in seconds, staged or real, the device and the item count, so someone could repeat it.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing is missing, because how the wait felt is the finding. — How it felt does matter, and it only becomes usable once you can say how long the wait was.
+Nothing important, because how the wait felt to people is the finding you were after. — How it felt does matter, and it only becomes usable once you can say how long the wait was.
 
-A rating out of ten from the people who waited. — A rating is another feeling with a number attached to it. It still does not say how long the wait actually was.
+A rating out of ten from each person who waited, so the feeling becomes a number you can compare. — A rating is another feeling with a number attached to it. It still does not say how long the wait actually was.
 
-The length in seconds, the device, the method and the number of items, without which nobody can repeat what you did. — A feeling cannot be checked by anyone, including you next month. Four facts turn it into something repeatable.
+The wait in seconds, staged or real, the device and the item count, so someone could repeat it. — A feeling cannot be checked by anyone, including you next month. Four facts turn it into something repeatable.
 
 Improve: If the first-thing field in step 3 has no seconds in it, re-run the wait with a timer and write the sequence out, then record the change in step 5.
 
@@ -6091,8 +6366,8 @@ Section: practice. Stable action: step-5-brief.
 
 The conditions written down, the rehearsal labelled, and the repair the Check questions asked for.
 
-- Write the device, browser, throttling profile and content volume.
-- State what remains untested even now.
+- Write the method, wait in seconds, device and item count.
+- State what remains untested, including real timing if the wait was staged.
 - Save the results with the conditions.
 
 **Start here:** Write the four facts at the top of your results: device, method, seconds, item count.
@@ -6115,15 +6390,15 @@ Write your answer for “Device, browser or method, wait length in seconds, and 
 
 
 
-### If a person held the screen back rather than a page actually loading, write that here as a rehearsal
+### Whether the wait you watched was staged or real loading, and what that means you cannot claim
 
 Section: practice. Stable action: write-rehearsal-note.
 
-A rehearsal shows you the shape of a problem. It is never reported as research.
+Staged means a timed transition, a delay written into a page, or a person counting. It shows behaviour during a wait you chose; it cannot show how long the real wait is, what appears first, or what happens when loading fails. A run on yourself is a rehearsal and is never reported as research.
 
-**Answer:** If a person held the screen back rather than a page actually loading, write that here as a rehearsal
+**Answer:** Whether the wait you watched was staged or real loading, and what that means you cannot claim
 
-A rehearsal shows you the shape of a problem. It is never reported as research.
+Staged means a timed transition, a delay written into a page, or a person counting. It shows behaviour during a wait you chose; it cannot show how long the real wait is, what appears first, or what happens when loading fails. A run on yourself is a rehearsal and is never reported as research.
 
 
 ### What remains untested even now
@@ -6148,6 +6423,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
 
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a cinema seat-booking prototype will show a Holding your seats screen. The team asks two questions: will people tap Book again during the hold, and how long will the hold take for someone on a weak phone signal outside the cinema?
+
+**Task:** Choose a method for each question and explain what each method cannot establish.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Says a click-through cannot show any waiting, or uses one staged wait to answer both questions.
+- Adequate: A staged wait, such as a timed transition that moves on after five seconds, for the double-tap question; a running page over a real or throttled slow connection for the real hold time. States that the staged wait is fixed and invented, so it says nothing about real timing.
+- Strong: As adequate, plus the conditions recorded (device, profile, seconds, item count), a note that throttling models speed rather than drop-outs, and that a staged wait cannot show partial loading or failure.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+
 ### Review and finish your practice
 
 Section: practice. Stable action: review-work.
@@ -6168,11 +6469,11 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: Testing what only a running thing can test
-What I am trying to do: Test one question that paper and click-throughs cannot answer — timing, a slow connection or real content volume — and record what changed compared with the prototype result.
+What I am trying to do: Test one question about waiting or real content, choose between a staged wait and a running page on a slowed connection, and state exactly what your result cannot establish.
 
 Key idea or terms:
 Untestable list: The list you wrote earlier in this module of what each prototype cannot establish.
-Throttling: Making a browser pretend the connection is slow, so pages arrive at the speed most people actually get.
+Throttling: Making a browser pretend the connection is slow, so pages arrive at the speed many people actually get. It slows what is fetched over a network, so check that your page really does load more slowly; a page opened straight from a file may not.
 Counted wait: A wait you make yourself, by holding the screen back while somebody counts the seconds on a clock.
 
 Supplied practice material (fictional or labelled practice, not my research):
@@ -6181,19 +6482,19 @@ Two supplied made up results for the same task. The click-through: three people 
 Activity: Ask me to make one prototype decision from the supplied case, name the question it can answer and state what it cannot test. Then point out one unsupported claim if I made one.
 
 Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
-When the activity is finished, tell me to return to the course answer called “The question from your untestable lists that only a waiting or loaded-up thing can answer, and the decision it would change” and write my own decision. Do not write that answer for me.
+When the activity is finished, tell me to return to the course answer called “The question from your untestable lists about waiting or real content, and the decision it would change” and write my own decision. Do not write that answer for me.
 ```
 
-**Come back to the course:** Return to “The question from your untestable lists that only a waiting or loaded-up thing can answer, and the decision it would change”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+**Come back to the course:** Return to “The question from your untestable lists about waiting or real content, and the decision it would change”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “The question from your untestable lists that only a waiting or loaded-up thing can answer, and the decision it would change” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “The question from your untestable lists about waiting or real content, and the decision it would change” and write one sentence in your own words.
 
 </details>
 <details>
 <summary>Optional hints and reference material</summary>
 
-- Return to your untestable lists and choose the item that a running page uniquely answers.
-- Set the profile, disable the cache and multiply your content until the list behaves like a real one.
+- Ask whether your question is about behaviour during a wait of a chosen length, or about how long the real wait is. Choose a staged wait for the first and a running page for the second.
+- Label your wait staged or real, set throttling and disable the cache if it is real, and multiply your content until the list behaves like a real one.
 
 - R46: [Chrome DevTools: network features](https://developer.chrome.com/docs/devtools/network/reference) — Throttling profiles, disabling the cache, and request timing. Purpose: Supplies the conditions this lesson tests under, with no account required. Free documentation, no account; any Chromium browser. Verified 2026-09-06. Throttling simulates bandwidth and latency, not a connection that drops entirely — test that separately by turning the network off mid-action. Fallback: R16.
 - R12: [GOV.UK: making prototypes](https://www.gov.uk/service-manual/design/making-prototypes) — What higher-fidelity prototypes can be used to learn. Purpose: Keeps the claims from this test bounded to what a rough running page supports. Free reading, no account. Verified 2026-09-06. A rough page is not the product: it does not test real infrastructure, real data or implemented accessibility. Fallback: R05.
@@ -6202,33 +6503,33 @@ When the activity is finished, tell me to return to the course answer called “
 <details>
 <summary>Creator review and remediation criteria</summary>
 
-**The question needed a running page to answer**
+**The method matches the question**
 
-Adequate evidence: A question drawn from the untestable lists with a stated decision it would change.
+Adequate evidence: A question from the untestable lists, with a stated decision and a method that answers it: a staged wait for behaviour during a wait, a running page for real loading.
 
-0 — A question answerable on paper.
+0 — A question answerable on paper, or a method that cannot answer it.
 
 1 — A relevant question with no decision attached.
 
-2 — A genuinely higher-fidelity question with its decision.
+2 — A fitting question, its decision and a method that answers it.
 
 3 — As adequate, and the question is the highest-harm item still open.
 
-Repair: Return to your untestable lists and choose the item that a running page uniquely answers. Recheck: The question and decision.
+Repair: Ask whether your question is about behaviour during a wait of a chosen length, or about how long the real wait is. Choose a staged wait for the first and a running page for the second. Recheck: The question, decision and method.
 
-**Conditions include throttling and realistic volume**
+**Conditions are labelled and include realistic volume**
 
-Adequate evidence: A slow profile with the cache disabled, and content at realistic quantity.
+Adequate evidence: The wait labelled staged or real (a real wait loaded with throttling on and the cache off), and content at realistic quantity.
 
-0 — Tested on a fast connection with sample data.
+0 — Tested with sample data and no stated conditions.
 
-1 — One of the two conditions applied.
+1 — Either the wait or the volume handled, not both.
 
-2 — Both applied and recorded.
+2 — The wait labelled staged or real, with realistic volume.
 
 3 — As adequate, and the volume matches what the real product would hold rather than a round number.
 
-Repair: Set the profile, disable the cache and multiply your content until the list behaves like a real one. Recheck: The test conditions.
+Repair: Label your wait staged or real, set throttling and disable the cache if it is real, and multiply your content until the list behaves like a real one. Recheck: The test conditions.
 
 **First paint and behaviour under waiting are recorded**
 
@@ -6244,9 +6545,9 @@ Adequate evidence: Notes on what appeared first, how long the gap lasted, and wh
 
 Repair: Re-run and write the sequence with timings, then watch one person through the wait. Recheck: The observation notes.
 
-**Device, browser, profile and volume are stated**
+**Method, wait, device and volume are stated**
 
-Adequate evidence: All four recorded alongside the results.
+Adequate evidence: The method (staged or real), the wait in seconds, the device and the item count recorded alongside the results.
 
 0 — None recorded.
 
@@ -6254,7 +6555,7 @@ Adequate evidence: All four recorded alongside the results.
 
 2 — All four stated.
 
-3 — As adequate, and a second device is included so the difference is visible.
+3 — As adequate, and a second device or method is included so the difference is visible.
 
 Repair: Add the four facts to the top of your results; without them the test cannot be repeated. Recheck: The conditions record.
 
@@ -6265,18 +6566,18 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 **Review criteria:**
 
-- The question needed a running page to answer
-- Conditions include throttling and realistic volume
+- The method matches the question
+- Conditions are labelled and include realistic volume
 - First paint and behaviour under waiting are recorded
-- Device, browser, profile and volume are stated
+- Method, wait, device and volume are stated
 
 <details>
 <summary>Reading, video and deeper explanation</summary>
 
-- A click-through moves instantly, which quietly removes the most consequential part of many flows: the wait. Questions about whether people understand a pending state, whether they press again, or whether they leave, cannot be asked without a real delay — and a delay is easy to add to a local page, so this is a question of choosing to test rather than of tooling.
-- Your own connection is unrepresentative, and the browser tools you already used in m07 let you impose a slow profile with the cache disabled. The result is what a person on a poor mobile connection sees, which for a product intended for India and for anyone outside a city centre is closer to typical than your studio conditions.
-- Content volume matters as much as speed. Three example classes scan differently from sixty; a list that felt clear becomes a wall, sorting starts to matter, and the empty state you designed never appears while a paging control you did not design becomes essential. Load real quantities before concluding the layout works.
-- Record the conditions: device, browser, throttling profile, content volume. Without them the observation cannot be repeated or compared, and a later “it seems fine now” has nothing to disagree with.
+- A plain click-through moves instantly, which quietly removes the most consequential part of many flows: the wait. You can put it back without code. A prototyping tool’s timed transition (Figma calls it After delay), one line of HTML in a linked page that moves on after four seconds, or a person holding the next paper screen back while counting all stage a wait, and questions about whether people understand a pending state, press again or leave can then be asked.
+- A staged wait is still invented. It lasts exactly as long as you set, every time; the screen behind it is one you prepared; nothing loads, fails or arrives in pieces. So it can show behaviour during a wait of a chosen length, and it cannot show how long real people would wait, what they would see first, or what happens when the connection drops. Write that sentence beside every staged result.
+- Real loading needs something actually fetched over a network: a live page, or your own page served from a web address, with the browser’s throttling set to a slow profile and the cache disabled. Your own connection is unrepresentative, and for a product used in India and outside city centres a slow profile is closer to typical. Check that the page really does load more slowly, because one opened straight from a file may not. Throttling models speed, not drop-outs.
+- Content volume matters as much as speed, and it needs no build at all. Three example classes scan differently from sixty; a list that felt clear becomes a wall, sorting starts to matter, and a paging control you did not design becomes essential. Load real quantities on paper or on screen, and record the conditions: method, wait in seconds, device, item count.
 
 [Chrome DevTools: network features](https://developer.chrome.com/docs/devtools/network/reference).
 
@@ -6587,21 +6888,21 @@ A supplied made up unmoderated result. Five people were sent one task: reach the
 
 Which limit is the one worth writing down first?
 
-- You cannot check whether anyone was interrupted while doing it.
-- You cannot be sure the participants were representative.
-- Five people is too few to report a rate.
-- You cannot say why the fifth person gave up, and “couldn’t see it” is the whole account you will ever get.
+- Five people is too few to report any rate, so no proportion can appear in the report.
+- You cannot be sure the five participants represent the people who will actually use the service.
+- You cannot learn why the fifth person gave up; “couldn’t see it” is all you will ever get.
+- You cannot check whether anyone was interrupted or distracted partway through the task.
 
 <details>
 <summary>After your attempt</summary>
 
-You cannot check whether anyone was interrupted while doing it. — A real limit of the method, and a smaller one than the missing why. Write it second.
+Five people is too few to report any rate, so no proportion can appear in the report. — True of every study this size, and it is a limit about counting rather than about this method. An unmoderated run with five hundred people still could not tell you why.
 
-You cannot be sure the participants were representative. — A recruitment limit that belongs in your report and would apply just as much to a moderated session.
+You cannot be sure the five participants represent the people who will actually use the service. — A recruitment limit that belongs in your report and would apply just as much to a moderated session.
 
-Five people is too few to report a rate. — True of every study this size, and it is a limit about counting rather than about this method. An unmoderated run with five hundred people still could not tell you why.
+You cannot learn why the fifth person gave up; “couldn’t see it” is all you will ever get. — The one failure is the most interesting line in the result, and the method has already closed the door on explaining it. Naming that is what tells you whether to follow up.
 
-You cannot say why the fifth person gave up, and “couldn’t see it” is the whole account you will ever get. — The one failure is the most interesting line in the result, and the method has already closed the door on explaining it. Naming that is what tells you whether to follow up.
+You cannot check whether anyone was interrupted or distracted partway through the task. — A real limit of the method, and a smaller one than the missing why. Write it second.
 
 Write your own limits in the same order: the one that damages your strongest finding goes first.
 
@@ -6647,20 +6948,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-An unmoderated run says four of five people reached the change screen and one gave up. What can you say about why she gave up?
+An unmoderated run says four of five people reached the change screen; one gave up and typed only “couldn’t see it”. What can you say about why she gave up?
 
-- You can say the route is hard to find, since one person in five failed.
-- Almost nothing, beyond the words she chose to type, and that gap belongs in the limits rather than being filled in.
-- You can work it out from where the other four succeeded.
+- Almost nothing beyond her three words, and that gap belongs in the limits, not filled in.
+- That the route is hard to find, since one person in five failed to reach it at all.
+- You can work it out from the routes the other four took to reach the change screen.
 
 <details>
 <summary>After your attempt</summary>
 
-You can say the route is hard to find, since one person in five failed. — One outcome in five is a count, not a cause. It could be the route, the wording of your scenario, or her phone ringing.
+Almost nothing beyond her three words, and that gap belongs in the limits, not filled in. — The gap is the method working exactly as designed. Guessing at it is how an unmoderated result turns into an invented finding.
 
-Almost nothing, beyond the words she chose to type, and that gap belongs in the limits rather than being filled in. — The gap is the method working exactly as designed. Guessing at it is how an unmoderated result turns into an invented finding.
+That the route is hard to find, since one person in five failed to reach it at all. — One outcome in five is a count, not a cause. It could be the route, the wording of your scenario, or her phone ringing.
 
-You can work it out from where the other four succeeded. — The four tell you the route exists and that some people find it. They say nothing about what happened in her session.
+You can work it out from the routes the other four took to reach the change screen. — The four tell you the route exists and that some people find it. They say nothing about what happened in her session.
 
 Improve: If the limits-list field in step 4 does not name the missing why first, move it to the top and record the change in step 5.
 
@@ -6679,18 +6980,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Is an unmoderated run more objective because you are not there to influence anyone?
 
-- It is more objective, because the absence of a moderator removes the main source of bias.
-- It is more objective, provided the instructions are well written.
-- It is unsupervised rather than objective: removing you removes your influence and your understanding at the same time.
+- It is more objective, because removing the moderator removes the main source of bias.
+- It is unsupervised rather than objective: your influence goes, and so does your understanding.
+- It is more objective, provided the written instructions are clear and well tested.
 
 <details>
 <summary>After your attempt</summary>
 
-It is more objective, because the absence of a moderator removes the main source of bias. — A moderator is one source among several. The instructions, the recruitment and your own reading of the outcomes all remain.
+It is more objective, because removing the moderator removes the main source of bias. — A moderator is one source among several. The instructions, the recruitment and your own reading of the outcomes all remain.
 
-It is more objective, provided the instructions are well written. — Well-written instructions reduce misreading. They do not turn behaviour without explanation into an unbiased result.
+It is unsupervised rather than objective: your influence goes, and so does your understanding. — You also lose the chance to notice a misread instruction, which is a silent error nobody ever reports.
 
-It is unsupervised rather than objective: removing you removes your influence and your understanding at the same time. — You also lose the chance to notice a misread instruction, which is a silent error nobody ever reports.
+It is more objective, provided the written instructions are clear and well tested. — Well-written instructions reduce misreading. They do not turn behaviour without explanation into an unbiased result.
 
 Improve: If the limits-list field in step 4 describes this method as unbiased or objective, rewrite that line as what you gain and what you lose, then record the change in step 5.
 
@@ -6709,18 +7010,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You designed the task set and there is nobody to send it to. What do you file?
 
-- Nothing at all: a study you never ran is not worth keeping.
-- The task set, written up as though a small run had happened.
 - The task set, the limits, and a dated line saying it was not run and what you tried.
+- Nothing at all, since a study that was never run has no result worth keeping on file.
+- The task set, written up as though a small trial run had happened with a few people.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing at all: a study you never ran is not worth keeping. — The reasoning behind a method choice is one of the few things a reader can genuinely judge. Throwing it away loses that.
-
-The task set, written up as though a small run had happened. — That is an invented result, and it is the one thing that would make everything else you filed untrustworthy.
-
 The task set, the limits, and a dated line saying it was not run and what you tried. — The design is the work. A dated gap is honest, and it also shows the decision was about the question rather than about the effort.
+
+Nothing at all, since a study that was never run has no result worth keeping on file. — The reasoning behind a method choice is one of the few things a reader can genuinely judge. Throwing it away loses that.
+
+The task set, written up as though a small trial run had happened with a few people. — That is an invented result, and it is the one thing that would make everything else you filed untrustworthy.
 
 Improve: If the data-plan field in step 5 is empty because you have nobody to send it to, write today’s date and what you tried, then record the change in the last field of step 5.
 
@@ -6792,6 +7093,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a plant-nursery website wants to know two things: whether customers can find the delivery charges without help, and why some people leave the basket page without paying.
+
+**Task:** Decide which of the two questions an unmoderated test could answer, and explain what it would miss.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Sends both questions out unmoderated, or calls unmoderated testing objective because nobody is watching.
+- Adequate: Uses an unmoderated run for the delivery-charge question, because what a person does answers it, and keeps the why question for moderated sessions; names what unmoderated loses: the why, hesitation and misread instructions.
+- Strong: As adequate, plus the written instructions tested on one reader first, a planned follow-up for surprising results, and a decision on where answers arrive and are stored.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -7017,6 +7344,18 @@ Recommended route: Fill the worksheet in this app, step by step. It saves as you
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
 
 
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Supplied practice records, made up for this course and not research: three short session summaries from a test of a fictional bike-hire booking flow. P1, P2 and P3 are invented people.
+- P1: paused about ten seconds at the review screen and asked “is the bike held while I pay?”. Tapped the search box, which does nothing in the prototype, and said “I think it’s broken.” Cancelling a booking: did not find the route; the moderator pointed at the menu after about ninety seconds, so that task is assisted.
+- P2: read the word Reserve twice and went back one screen before paying. Said “if it froze I’d just pay again.” Cancelling: looked for about two minutes, said she would phone instead, and stopped.
+- P3: picked the wrong Saturday because the date strip showed only weekday initials, and noticed only on the review screen. Paused at Reserve. Cancelling: found the route through the Help link, which counts as a workaround rather than a clean success.
+
+
 ### Write the decision first
 
 Section: practice-plan. Stable action: step-1-brief.
@@ -7133,11 +7472,11 @@ Made-up example. Merging two different problems into one finding so that the cou
 
 Section: practice-plan. Stable action: write-finding-1.
 
-Write your answer for “Finding 1 · headline, how many of how many people met it, the evidence, and what it changes”. Use the task instructions below to decide what to include.
+Quote only a few words, with nothing that points at the person who said them. Supplied practice records are labelled as practice.
 
 **Answer:** Finding 1 · headline, how many of how many people met it, the evidence, and what it changes
 
-
+Quote only a few words, with nothing that points at the person who said them. Supplied practice records are labelled as practice.
 
 <details>
 <summary>Example</summary>
@@ -7272,21 +7611,21 @@ A supplied made up study. Three people booked a class. Two could not tell whethe
 
 Which non-recommendation does this evidence license?
 
-- Do not build anything until more people have been tested.
-- Do not build the reminder feature yet, because nobody’s difficulty was forgetting, and one person asking for it is a request rather than a problem.
-- Do not build the reminder feature, because reminders are common elsewhere and add nothing new.
-- Do not build the held-place message, because only two of three people met the problem.
+- Hold the reminder feature, because reminders are common elsewhere and add nothing new.
+- Hold the held-place message, because only two of the three people met that problem.
+- Hold the reminder feature: nobody’s difficulty was forgetting, and one request is not a problem.
+- Hold all new building until more people have tested it, since three is too few to act on.
 
 <details>
 <summary>After your attempt</summary>
 
-Do not build anything until more people have been tested. — That is a recommendation to stop, and it is not what this evidence says. Two of three people meeting one specific problem is enough to act on that one thing.
+Hold the reminder feature, because reminders are common elsewhere and add nothing new. — The reason has to come from what you saw, not from what other products do. A reader cannot check the second kind of reason at all.
 
-Do not build the reminder feature yet, because nobody’s difficulty was forgetting, and one person asking for it is a request rather than a problem. — The strongest non-recommendation names something you were likely to build anyway. It also carries its own reversal: watch for someone who actually missed a class.
+Hold the held-place message, because only two of the three people met that problem. — Two of three met the highest-harm problem in the study. Arguing against the repair you have most support for turns the section into caution rather than a finding.
 
-Do not build the reminder feature, because reminders are common elsewhere and add nothing new. — The reason has to come from what you saw, not from what other products do. A reader cannot check the second kind of reason at all.
+Hold the reminder feature: nobody’s difficulty was forgetting, and one request is not a problem. — The strongest non-recommendation names something you were likely to build anyway. It also carries its own reversal: watch for someone who actually missed a class.
 
-Do not build the held-place message, because only two of three people met the problem. — Two of three met the highest-harm problem in the study. Arguing against the repair you have most support for turns the section into caution rather than a finding.
+Hold all new building until more people have tested it, since three is too few to act on. — That is a recommendation to stop, and it is not what this evidence says. Two of three people meeting one specific problem is enough to act on that one thing.
 
 Write your own non-recommendation the same way: the thing, what you saw, and what would reverse it.
 
@@ -7334,18 +7673,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Fifteen thorough pages, or two pages with the decision first. Which one changes more?
 
-- Fifteen pages, because the detail shows the work was done properly.
-- Two pages, because length reduces the chance anyone finishes it, and an unread recommendation changes nothing.
-- Fifteen pages, because a complete record is harder to argue with.
+- Fifteen pages, since a complete record of every session is much harder to argue with.
+- Two pages, since length cuts the chance anyone finishes, and an unread decision changes nothing.
+- Fifteen pages, since the detail shows the work was done properly and can be trusted.
 
 <details>
 <summary>After your attempt</summary>
 
-Fifteen pages, because the detail shows the work was done properly. — The work being done properly is shown by the counts and the limits, and both of those fit on two pages.
+Fifteen pages, since a complete record of every session is much harder to argue with. — Nobody argues with it because nobody reaches the end. The raw material still sits in your folder if anyone asks for it.
 
-Two pages, because length reduces the chance anyone finishes it, and an unread recommendation changes nothing. — Thoroughness protects you from being questioned. It does not get the change made, and the two are easy to confuse while you are writing.
+Two pages, since length cuts the chance anyone finishes, and an unread decision changes nothing. — Thoroughness protects you from being questioned. It does not get the change made, and the two are easy to confuse while you are writing.
 
-Fifteen pages, because a complete record is harder to argue with. — Nobody argues with it because nobody reaches the end. The raw material still sits in your folder if anyone asks for it.
+Fifteen pages, since the detail shows the work was done properly and can be trusted. — The work being done properly is shown by the counts and the limits, and both of those fit on two pages.
 
 Improve: If the findings in step 2 will not fit on two pages, cut to the ones the decision rests on and record what you cut in step 5.
 
@@ -7362,20 +7701,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You write “67 per cent of participants were unsure”. What is wrong with it?
+Two of your three participants were unsure, and you write “67 per cent of participants were unsure”. What is wrong with it?
 
-- It is two of three people written as a rate, and the rate suggests a precision the study cannot support.
-- The figure should be rounded to 70 per cent.
-- It is acceptable as long as you say somewhere that the sample was small.
+- Only the rounding: at this sample size the figure should be written as 70 per cent.
+- It turns two of three people into a rate that suggests precision the study cannot support.
+- Nothing serious, provided the report says somewhere that the sample was small.
 
 <details>
 <summary>After your attempt</summary>
 
-It is two of three people written as a rate, and the rate suggests a precision the study cannot support. — A percentage invites the reader to compare your three people with numbers from studies of thousands. The count does not.
+Only the rounding: at this sample size the figure should be written as 70 per cent. — Rounding changes the digits and keeps the problem, which is reporting three people as a proportion at all.
 
-The figure should be rounded to 70 per cent. — Rounding changes the digits and keeps the problem, which is reporting three people as a proportion at all.
+It turns two of three people into a rate that suggests precision the study cannot support. — A percentage invites the reader to compare your three people with numbers from studies of thousands. The count does not.
 
-It is acceptable as long as you say somewhere that the sample was small. — The caveat travels badly. The number gets quoted onward; the sentence beside it does not.
+Nothing serious, provided the report says somewhere that the sample was small. — The caveat travels badly. The number gets quoted onward; the sentence beside it does not.
 
 Improve: Search the findings in step 2 for the per cent sign and the word most, rewrite each as a count of participants, then record the change in step 5.
 
@@ -7394,18 +7733,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your report recommends four things and argues against nothing. What does that suggest?
 
-- You should add a non-recommendation for balance, whether or not the evidence supports one.
-- The study may have confirmed what you already believed, and the thing not to build is the line that would show it did more than that.
-- It suggests nothing: a study that supports the plan is a good outcome.
+- The study may only have confirmed your beliefs; look for something the evidence argues against.
+- Nothing worrying: a study that supports the whole plan is simply a good outcome for it.
+- That you should add a non-recommendation for balance, whatever the evidence supports.
 
 <details>
 <summary>After your attempt</summary>
 
-You should add a non-recommendation for balance, whether or not the evidence supports one. — An invented non-recommendation is as unsupported as an invented finding. Look for the one your evidence actually gives you.
+The study may only have confirmed your beliefs; look for something the evidence argues against. — Evidence that only ever agrees with you is worth a second look. If, after looking, it argues against nothing, say so plainly: a justified decision to keep the plan is a valid result.
 
-The study may have confirmed what you already believed, and the thing not to build is the line that would show it did more than that. — Evidence that only ever agrees with you is worth a second look. The non-recommendation is where a reader sees the study could have changed your mind.
+Nothing worrying: a study that supports the whole plan is simply a good outcome for it. — It can be, and it is also what a study looks like when it was designed to agree. The check costs you one paragraph.
 
-It suggests nothing: a study that supports the plan is a good outcome. — It can be, and it is also what a study looks like when it was designed to agree. The check costs you one paragraph.
+That you should add a non-recommendation for balance, whatever the evidence supports. — An invented non-recommendation is as unsupported as an invented finding. Look for the one your evidence actually gives you.
 
 Improve: Fill the not-build field in step 4 with what you saw and what would reverse it, then record the change in step 5.
 
@@ -7466,6 +7805,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: you tested a dry-cleaning pickup app with three people. Two of the three could not tell whether their pickup slot was confirmed. Nobody missed a pickup. One person asked for a loyalty-points feature. The team was planning to build loyalty points next.
+
+**Task:** Write the opening decision of your report and one thing not to build, with the reason for each.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Opens with the method, or recommends loyalty points because someone asked for them; no counts.
+- Adequate: Opens with fixing slot confirmation first, because two of three could not tell whether their slot was confirmed; argues against building loyalty points now, because one request is not an observed problem.
+- Strong: As adequate, plus what would reverse the non-recommendation (people actually leaving for another service’s points), and the limits beside the counts: three people, one recruitment route.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -8175,20 +8540,20 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Your summary says the design was validated by testing. What is wrong with that?
+Your small test found problems and your repair partly worked. The summary says the design was validated by testing. What is wrong with that?
 
-- It is fine, since you did run a test and the repair mostly worked.
-- Nothing was validated: a small test found problems and a repair partly worked, and that is the sentence to write instead.
-- It is fine once you add the participant count.
+- It is fine once the participant count is added beside it, so readers can judge the weight.
+- It is fine, since you did run a test and the repair mostly worked for the people tested.
+- Validated claims a proven result; say instead what the test found and what partly worked.
 
 <details>
 <summary>After your attempt</summary>
 
-It is fine, since you did run a test and the repair mostly worked. — Running a test licenses “I tested it and here is what happened”. It does not license a word that means the design was proven.
+It is fine once the participant count is added beside it, so readers can judge the weight. — The count helps every honest sentence and it cannot rescue this one, because the problem is the claim rather than the size.
 
-Nothing was validated: a small test found problems and a repair partly worked, and that is the sentence to write instead. — Validated implies a measured outcome that nobody can produce. What you actually did is more interesting, and it can be checked.
+It is fine, since you did run a test and the repair mostly worked for the people tested. — Running a test licenses “I tested it and here is what happened”. It does not license a word that means the design was proven.
 
-It is fine once you add the participant count. — The count helps every honest sentence and it cannot rescue this one, because the problem is the claim rather than the size.
+Validated claims a proven result; say instead what the test found and what partly worked. — Validated implies a measured outcome that nobody can produce. What you actually did is more interesting, and it can be checked.
 
 Improve: Search the summary-para field in step 4 for validated, proven, shipped and any percentage, rewrite each as what you did and what you observed, then record the change in step 5.
 
@@ -8249,6 +8614,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a designer’s portfolio page for a community-garden plot booking app says: research showed users wanted a waiting list, so I designed one, and testing validated it. Her files contain two interviews in which nobody mentioned a waiting list, and one paper test in which one of two people used it.
+
+**Task:** Rewrite the sentence honestly and explain which parts are evidence and which are judgement.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps validated or research showed, or deletes the waiting list without saying why.
+- Adequate: Marks the waiting list as a judgement call because no interview raised it, reports the test as one of two people used it in a paper test, and removes validated.
+- Strong: As adequate, plus names what would test the judgement (a task where the plot she wants is taken), and treats the interviews’ silence as a limit rather than as evidence against it.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice

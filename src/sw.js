@@ -14,6 +14,9 @@ registerRoute(
       /^\/mcp(?:\/|\?|$)/,
       /^\/authorize(?:\?|$)/,
       /^\/oauth\//,
+      // Starter files and practice pages are real files; never answer them with the app shell.
+      /^\/starters\//,
+      /^\/labs\//,
       /^\/\.well-known\//,
     ],
   }),

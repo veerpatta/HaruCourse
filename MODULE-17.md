@@ -33,7 +33,7 @@ Product strategy connects a real problem, evidence, constraints and trade-offs t
 - **Operating strategy:** The pattern of what actually gets built and refused, as opposed to the document. It is the one that decides what happens.
 - **Reading from behaviour:** Inferring the strategy from what recurs, what is protected and what goes first. It is available to anybody paying attention.
 
-**Quick example.** Made-up example. Reading what a team always cuts, and asking them. Asked what gets cut when time is short. Everybody said the same thing: nothing important, we protect quality and we protect accessibility.
+**Quick example.** From the case pack: workshop requests are always fitted in within a week, and the new-member sign-up fix has been postponed four times. Changed constraint (organisation): the council says the grant will be renewed only if the library gains 50 new members this year.
 
 The reader demonstrates and guides the task before asking for “What makes a choice strategic rather than tactical, in your own words”.
 
@@ -79,6 +79,13 @@ Section: learn. Stable action: learn-5.
 Naming an implied choice is often enough to change it.
 
 
+### Idea 6: When a constraint changes — a new funder condition, a differen…
+
+Section: learn. Stable action: learn-6.
+
+When a constraint changes — a new funder condition, a different user, a higher risk — reread the same behaviour and ask which choice now costs most.
+
+
 ### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
@@ -95,6 +102,30 @@ Section: learn. Stable action: workspace.
 Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
+
+
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Case pack · Northside Tool Library. Made up for this module: practice material, not research about a real organisation. Members borrow tools from a side room of the town hall, paying a yearly subscription and a refundable deposit on each loan; most borrow a few times a year. A council community grant covers part of the running cost; it is reviewed each autumn and may be cut.
+- Borrower (member) · May book, cancel, collect and return their own loans. Sees only their own loans, deposits and due dates.
+- Front-desk volunteer (Saturday 10:00–13:00 rota of about twelve) · Checks about forty loans in and out each Saturday and signs up new members on paper. Sees that day’s bookings by first name, tool and locker number. May not see addresses or payments, refund deposits or change fees. New volunteers need a morning of training.
+- Maintenance volunteer (Tuesday evenings) · Marks each tool ready, needs repair or retired in the stock list, and must check every power tool after each loan before it goes out again: an insurance condition. Sees tool histories, not member details.
+- Coordinator (paid, part-time) · Copies each day’s booking requests into the stock list by hand at about 8 pm, sets the weekly locker codes, trains volunteers and allocates the Riverside memberships. Sees all bookings and members’ contact details. May not issue refunds.
+- Treasurer and board · The board, a volunteer committee, sets fees, deposits, opening hours and spending, and sees monthly totals rather than individual loans. The treasurer holds the only login to the payment account, refunds deposits in one batch on Tuesday evenings and writes the grant report.
+- Council grant officer (funder) · Funds 30 memberships for residents of the Riverside estate, receives a report each quarter, and has asked for each resident’s name and what they borrowed, to show the scheme is used.
+- Two local workshops · Each emails the coordinator to book about a dozen tools a month for its evening classes. You · A volunteer designer with about six hours a week. You can propose changes to the coordinator; you have no authority over volunteers, the board or the funder.
+- Booking tool and messages · A free hosted form. A request is confirmed only after the coordinator copies it into the stock list; confirmations and locker codes are emailed the next morning. A cancellation frees the tool only at the next 8 pm update. The free plan sends email only, cannot release a cancelled booking by itself, and sends one reminder the day before a tool is due back.
+- Lockers, payments and the stock list · Twelve coded lockers outside the hall take hand tools out of hours; power tools go out at the desk only. Most tools are single copies. The payment provider confirms within seconds and charges a small fee on every payment and every refund. The stock list is one spreadsheet: the only record of where each tool is and whether it is ready.
+- Last six months (coordinator’s notes) · Workshop requests fitted in within a week, every time. The new-member sign-up, called confusing by three new members, postponed four times so far. On three short-staffed Saturdays, returned power tools went unchecked and stayed off the shelf until Tuesday. No request from the grant officer refused. Written aim: “To make tools available to everybody in the neighbourhood, sustainably and inclusively.”
+- Since March · Cancelling takes one tap, so tools cancelled after Friday’s 8 pm update stay marked booked all Saturday. The coordinator thinks Friday-night cancellations have risen; nobody has counted. The board has proposed a £5 late-cancellation fee.
+- Open questions for the board · Whether to let power tools be collected from the lockers out of hours, to shorten the Saturday queue: a locker rule can be changed back within a week, but bigger lockers would be a one-off purchase. Three income ideas: a pre-ticked £1 donation on every booking, “Only 1 left!” on every tool page, and cancelling a subscription by phone only.
+- Constraints · The free booking plan stays this year; a paid plan needs board approval and money the grant does not cover. The payment provider cannot change this year. No analytics beyond the booking tool’s monthly counts and the stock list. The library does not lend tools that need training to use safely, such as chainsaws.
+- Evidence gaps · Nobody has counted the calls asking whether a deposit went through; the coordinator says “most”. Cancellations sit in the stock list, uncounted. Nobody knows why members do not renew, what share of bookings come from repeat members, or whether Riverside residents use their memberships. The board wants to describe the library against the hardware shop’s hire counter and a sharing app; the chair circulated an undated consultancy article on positioning that ends by selling workshops, and nobody has a verified source.
+- Two members, asked why they joined · “I needed a tile cutter for one bathroom; buying one to use once was silly.” “A drill for one weekend. The trip across town nearly put me off.”
 
 
 ### Read on constraint
@@ -141,7 +172,7 @@ What is always accommodated, what is cut first, and who is never refused, read f
 
 **Reading from behaviour:** Inferring the strategy from what recurs, what is protected and what goes first. It is available to anybody paying attention.
 
-**No team to observe:** A complete route. A public project’s tracker, or your own product’s history, shows the same patterns; the source line says which you used.
+**No team to observe:** A complete route. A public project’s tracker, your own product’s history or the case pack’s log shows the same patterns; the source line says which you used.
 
 
 ### See the decision being made
@@ -171,11 +202,11 @@ Made-up example. Reading what a team always cuts, and asking them.
 
 Section: practice-plan. Stable action: write-always-accommodated.
 
-Where you have no team to observe, read a public project’s issue tracker or your own product’s history. Say which.
+Where you have no team to observe, read a public project’s issue tracker, your own product’s history, or the case pack’s six-month log. Say which.
 
 **Answer:** What is always accommodated, however small
 
-Where you have no team to observe, read a public project’s issue tracker or your own product’s history. Say which.
+Where you have no team to observe, read a public project’s issue tracker, your own product’s history, or the case pack’s six-month log. Say which.
 
 
 ### What is cut first when time is short
@@ -193,11 +224,11 @@ Write your answer for “What is cut first when time is short”. Use the task i
 
 Section: practice-plan. Stable action: write-never-refused.
 
-Write your answer for “Who is never refused, and what is never prioritised”. Use the task instructions below to decide what to include.
+Describe people and clients by role, not by name.
 
 **Answer:** Who is never refused, and what is never prioritised
 
-
+Describe people and clients by role, not by name.
 
 
 ### Name the implied choices
@@ -232,13 +263,39 @@ Made-up example. Reading the strategy at Northside Tool Library, and reading the
 
 **What the document could not do:** Be wrong. Everybody in the neighbourhood excludes nobody, so it rules nothing out, and no decision could ever contradict it.
 
-**What happened when I wrote the pattern down:** The committee disagreed with it, which is the first time anybody had disagreed with a strategy statement there. The sign-up work was scheduled a fortnight later.
+**What happened when I wrote the pattern down:** The committee disagreed with it, which is the first time anybody had disagreed with a strategy statement there, and the sign-up work went onto the next meeting’s agenda.
 
 **Wrong turn:** The wrong turn is reading the strategy from the document, because it exists and it is official. A statement that excludes nothing cannot be contradicted by any decision, so it describes nothing anybody does.
 
 **Trade-off:** Writing the pattern down produces a sentence nobody likes and nobody chose, and somebody will feel accused of a preference they never held.
 
-**Unknown:** Still unknown: whether the pattern would have changed anyway. It changed a fortnight after being named, which is not the same as because of it.
+**Unknown:** Still unknown: whether the pattern will change. Going onto an agenda after being named is not the same as being fixed.
+
+
+### Try a supplied example
+
+Section: practice-plan. Stable action: step-3-try.
+
+From the case pack: workshop requests are always fitted in within a week, and the new-member sign-up fix has been postponed four times. Changed constraint (organisation): the council says the grant will be renewed only if the library gains 50 new members this year.
+
+Which operating choice has to change first?
+
+- Existing users over new ones: the sign-up fix now protects the grant, so it moves ahead.
+- None yet: the written aim already includes everybody, so new members are covered.
+- Stop the workshop bookings, since they take the time new members need more.
+
+<details>
+<summary>After your attempt</summary>
+
+Existing users over new ones: the sign-up fix now protects the grant, so it moves ahead. — The constraint changes what the old pattern costs: the postponed fix now stands between the library and its grant. The workshops are not wrong to be served; the order changes. Affected: new members, workshops and volunteers. Missing: whether a better sign-up actually brings new members.
+
+None yet: the written aim already includes everybody, so new members are covered. — The aim covered everybody before too, while the sign-up waited. A new constraint is tested against behaviour, not against the aim.
+
+Stop the workshop bookings, since they take the time new members need more. — That overcorrects: the grant asks for new members, not fewer existing ones, and the workshops may be where new members first hear of the library.
+
+Now write your own three choices in step 3, and for each note one constraint that would change it.
+
+</details>
 
 
 ### Choice 1 · the preference, and the behaviour it is read from
@@ -383,7 +440,7 @@ Section: practice-plan. Stable action: step-4-sort-4.
 
 Six statements about a made up organisation. For each one, decide whether it is a strategy.
 
-We do not lend power tools that need training, even though members ask.
+We do not lend tools that need training to use safely, even though members ask.
 
 - a strategic choice
 - a value, not a choice
@@ -435,7 +492,7 @@ Section: practice-plan. Stable action: step-4-sort-6.
 
 Six statements about a made up organisation. For each one, decide whether it is a strategy.
 
-Bookings are recorded in a spreadsheet updated each evening rather than a system.
+The stock list is a spreadsheet updated by hand each evening rather than a stock system.
 
 - a strategic choice
 - a value, not a choice
@@ -483,20 +540,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Is strategy decided above you?
+The case pack’s written aim promises tools for everybody. Its log shows the grant officer’s requests have never been refused, workshop requests are always fitted in, and the sign-up fix has waited six months. Which describes Northside’s operating strategy?
 
-- Yes, which is why designers should focus on execution.
-- No, designers should be in the strategy conversation.
-- The written one is. The operating one is made of a thousand small decisions, many of them yours, and naming the pattern is available to anybody paying attention.
+- No strategy yet: a volunteer library is too small to have one operating at all.
+- Funder and existing users come before new members, whatever the written aim says.
+- Tools for everybody, sustainably and inclusively, as the board’s written aim states.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, which is why designers should focus on execution. — Execution is where the operating strategy is made. Every decision about what to cut is one.
+No strategy yet: a volunteer library is too small to have one operating at all. — Size does not stop a pattern forming. Every fitted-in request and every postponement is part of one.
 
-No, designers should be in the strategy conversation. — Being invited is a different thing from reading the pattern, which needs no invitation.
+Funder and existing users come before new members, whatever the written aim says. — Read from behaviour: whose requests always get through and what keeps waiting. Nobody wrote that pattern down, and it decides more about the next six months than the aim on the wall.
 
-The written one is. The operating one is made of a thousand small decisions, many of them yours, and naming the pattern is available to anybody paying attention. — What gets cut first when time is short is a strategic choice made by whoever is deciding that afternoon. Writing it down is frequently enough to change it.
+Tools for everybody, sustainably and inclusively, as the board’s written aim states. — The aim excludes nobody, so no decision could contradict it; it describes what the library would like to be, not what it does.
 
 Improve: Check your three choices in step 3 come from behaviour rather than from anybody’s statements. Record the change in step 5.
 
@@ -513,20 +570,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Your inferred strategy rules nothing out. What does that mean?
+You write Northside’s strategy as “Serve members, workshops and the funder well.” A volunteer asks what it would ever make you refuse, and you cannot name anything. What does that tell you?
 
-- That you have not read the behaviour closely enough.
-- There is no strategy operating, and saying so plainly is the finding.
-- That the strategy is inclusive, which is a legitimate position.
+- It rules nothing out, so it guides no decision; say plainly that nothing is excluded.
+- It is inclusive, which suits a community library better than drawing hard lines.
+- You need to read more months of the log until an exclusion finally shows up.
 
 <details>
 <summary>After your attempt</summary>
 
-That you have not read the behaviour closely enough. — Possible, and the honest first answer is what you found rather than a second attempt to find something.
+It rules nothing out, so it guides no decision; say plainly that nothing is excluded. — A statement that excludes nothing cannot be contradicted by any decision, so it steers none. Writing that plainly is a finding; manufacturing an exclusion would hide it.
 
-There is no strategy operating, and saying so plainly is the finding. — A pattern that excludes nothing cannot be contradicted by any decision, so it is not guiding any. Manufacturing an exclusion to fill the field would hide the most useful thing you found.
+It is inclusive, which suits a community library better than drawing hard lines. — Inclusive of everything means every request competes for the same Saturday, decided by whoever asks loudest.
 
-That the strategy is inclusive, which is a legitimate position. — Inclusive of everything means everything competes for the same week, decided by whoever asks loudest.
+You need to read more months of the log until an exclusion finally shows up. — More reading may help later; the honest first answer is what you found, which is that nothing is ruled out.
 
 Improve: Write plainly in step 4 that nothing is ruled out, if that is what you found. Record the change in step 5.
 
@@ -543,20 +600,20 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-One of your implied choices is something nobody would defend out loud. What have you found?
+The case pack’s log says that on three short-staffed Saturdays, returned power tools went unchecked and stayed off the shelf until Tuesday. Nobody on the board would defend that. What has the log revealed?
 
-- An accidental choice, made by default rather than by decision, and usually the one that costs most.
-- Something to raise privately rather than write down.
-- A misreading of the behaviour.
+- A private staffing matter, better raised with the coordinator than written down.
+- An accidental choice: the queue beat availability by default, with nobody deciding it.
+- A misreading of the log, since nobody would choose to keep tools off the shelf.
 
 <details>
 <summary>After your attempt</summary>
 
-An accidental choice, made by default rather than by decision, and usually the one that costs most. — The first-time experience sacrificed four times running was never chosen by anybody. Nothing about it has been weighed, which is exactly why naming it tends to change it.
+A private staffing matter, better raised with the coordinator than written down. — Raised privately it reads as blame; written as a pattern it describes how the library actually behaves.
 
-Something to raise privately rather than write down. — Written down as a pattern rather than as a criticism, it is a description. Raised privately it is an accusation.
+An accidental choice: the queue beat availability by default, with nobody deciding it. — A pattern nobody chose and nobody would defend is usually the costly one, because nothing about it was weighed. Written as a pattern rather than a criticism, it is a description somebody can act on.
 
-A misreading of the behaviour. — Possible, and the pattern is the evidence. Nobody defending it is what makes it interesting rather than what makes it wrong.
+A misreading of the log, since nobody would choose to keep tools off the shelf. — Nobody choosing it is what makes it accidental, not imaginary; the log is the evidence.
 
 Improve: Write how you can tell it was an accident in step 5, using behaviour rather than intent. Record the change.
 
@@ -607,15 +664,41 @@ Write your answer for “How you can tell it was an accident rather than a decis
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A town’s repair café runs on Saturday mornings. For a year its volunteers have fixed bikes first, because the bike fixers arrive early, and lamps and toasters wait or go home unfixed. The café has just agreed to host an electrical-safety charity’s monthly visit, which needs half the tables for small appliances.
+
+**Task:** Decide which operating choice the café should change, and explain why, who is affected and what evidence is missing.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Restates a value (“we fix everything for everyone”) or keeps bikes first unchanged; does not read the year’s pattern as a choice.
+- Adequate: Names the operating choice (bikes over small appliances, set by who arrives early), changes it for the monthly visit (tables split, or appliance slots first), and names who is affected: bike owners, appliance owners and the early volunteers.
+- Strong: As adequate, and names the evidence gap (how many appliance owners now leave unfixed), asks whether bike-first was ever chosen, and says what would show the change working after two visits.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -646,7 +729,7 @@ Operating strategy: The pattern of what actually gets built and refused, as oppo
 Reading from behaviour: Inferring the strategy from what recurs, what is protected and what goes first. It is available to anybody paying attention.
 
 Supplied practice material (fictional or labelled practice, not my research):
-Made-up example. Reading what a team always cuts, and asking them. Asked what gets cut when time is short. Everybody said the same thing: nothing important, we protect quality and we protect accessibility.
+From the case pack: workshop requests are always fitted in within a week, and the new-member sign-up fix has been postponed four times. Changed constraint (organisation): the council says the grant will be renewed only if the library gains 50 new members this year.
 
 Activity: Change one constraint in the supplied strategy case. Ask me which choice changes, who gains, who carries the cost and what evidence would make me reconsider.
 
@@ -656,7 +739,7 @@ When the activity is finished, tell me to return to the course answer called “
 
 **Come back to the course:** Return to “What makes a choice strategic rather than tactical, in your own words”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “What makes a choice strategic rather than tactical, in your own words” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “What makes a choice strategic rather than tactical, in your own words” and write one sentence in your own words.
 
 </details>
 <details>
@@ -722,7 +805,7 @@ Adequate evidence: One implied choice marked as never deliberately made, with th
 
 1 — An accident suspected without reasoning.
 
-2 — One identified with why it appears accidental.
+2 — One identified with why it appears accidental, or each choice shown to be deliberate with the evidence.
 
 3 — As adequate, and naming it changed or is likely to change something.
 
@@ -777,7 +860,7 @@ Product strategy connects a real problem, evidence, constraints and trade-offs t
 - **Aspirational:** What you would like people to value: community, sustainability, belonging. Sometimes true and rarely why anybody turned up today.
 - **Payer and user diverging:** A parent booking for a child, an employer paying for staff, a funder paying for a service. The product usually serves the payer without anybody deciding to.
 
-**Quick example.** Made-up example. Writing the exchange for Northside Tool Library, and writing the nice version. Members give a small subscription and get access to a shared resource, a sense of community, and a more sustainable way to do jobs at home.
+**Quick example.** From the case pack: a council grant covers part of the running cost; members pay a yearly subscription and a deposit on each loan; nobody knows why members do not renew. Changed constraint (organisation): the grant ends next year, so subscriptions must cover its share.
 
 The reader demonstrates and guides the task before asking for “What each side gives and gets, in plain words”.
 
@@ -823,6 +906,13 @@ Section: learn. Stable action: learn-5.
 You can describe economics without inventing figures.
 
 
+### Idea 6: When who pays changes — a funder leaves, an employer starts pa…
+
+Section: learn. Stable action: learn-6.
+
+When who pays changes — a funder leaves, an employer starts paying — rewrite the exchange from the new payer’s side before choosing a lever.
+
+
 ### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
@@ -839,6 +929,30 @@ Section: learn. Stable action: workspace.
 Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
+
+
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Case pack · Northside Tool Library. Made up for this module: practice material, not research about a real organisation. Members borrow tools from a side room of the town hall, paying a yearly subscription and a refundable deposit on each loan; most borrow a few times a year. A council community grant covers part of the running cost; it is reviewed each autumn and may be cut.
+- Borrower (member) · May book, cancel, collect and return their own loans. Sees only their own loans, deposits and due dates.
+- Front-desk volunteer (Saturday 10:00–13:00 rota of about twelve) · Checks about forty loans in and out each Saturday and signs up new members on paper. Sees that day’s bookings by first name, tool and locker number. May not see addresses or payments, refund deposits or change fees. New volunteers need a morning of training.
+- Maintenance volunteer (Tuesday evenings) · Marks each tool ready, needs repair or retired in the stock list, and must check every power tool after each loan before it goes out again: an insurance condition. Sees tool histories, not member details.
+- Coordinator (paid, part-time) · Copies each day’s booking requests into the stock list by hand at about 8 pm, sets the weekly locker codes, trains volunteers and allocates the Riverside memberships. Sees all bookings and members’ contact details. May not issue refunds.
+- Treasurer and board · The board, a volunteer committee, sets fees, deposits, opening hours and spending, and sees monthly totals rather than individual loans. The treasurer holds the only login to the payment account, refunds deposits in one batch on Tuesday evenings and writes the grant report.
+- Council grant officer (funder) · Funds 30 memberships for residents of the Riverside estate, receives a report each quarter, and has asked for each resident’s name and what they borrowed, to show the scheme is used.
+- Two local workshops · Each emails the coordinator to book about a dozen tools a month for its evening classes. You · A volunteer designer with about six hours a week. You can propose changes to the coordinator; you have no authority over volunteers, the board or the funder.
+- Booking tool and messages · A free hosted form. A request is confirmed only after the coordinator copies it into the stock list; confirmations and locker codes are emailed the next morning. A cancellation frees the tool only at the next 8 pm update. The free plan sends email only, cannot release a cancelled booking by itself, and sends one reminder the day before a tool is due back.
+- Lockers, payments and the stock list · Twelve coded lockers outside the hall take hand tools out of hours; power tools go out at the desk only. Most tools are single copies. The payment provider confirms within seconds and charges a small fee on every payment and every refund. The stock list is one spreadsheet: the only record of where each tool is and whether it is ready.
+- Last six months (coordinator’s notes) · Workshop requests fitted in within a week, every time. The new-member sign-up, called confusing by three new members, postponed four times so far. On three short-staffed Saturdays, returned power tools went unchecked and stayed off the shelf until Tuesday. No request from the grant officer refused. Written aim: “To make tools available to everybody in the neighbourhood, sustainably and inclusively.”
+- Since March · Cancelling takes one tap, so tools cancelled after Friday’s 8 pm update stay marked booked all Saturday. The coordinator thinks Friday-night cancellations have risen; nobody has counted. The board has proposed a £5 late-cancellation fee.
+- Open questions for the board · Whether to let power tools be collected from the lockers out of hours, to shorten the Saturday queue: a locker rule can be changed back within a week, but bigger lockers would be a one-off purchase. Three income ideas: a pre-ticked £1 donation on every booking, “Only 1 left!” on every tool page, and cancelling a subscription by phone only.
+- Constraints · The free booking plan stays this year; a paid plan needs board approval and money the grant does not cover. The payment provider cannot change this year. No analytics beyond the booking tool’s monthly counts and the stock list. The library does not lend tools that need training to use safely, such as chainsaws.
+- Evidence gaps · Nobody has counted the calls asking whether a deposit went through; the coordinator says “most”. Cancellations sit in the stock list, uncounted. Nobody knows why members do not renew, what share of bookings come from repeat members, or whether Riverside residents use their memberships. The board wants to describe the library against the hardware shop’s hire counter and a sharing app; the chair circulated an undated consultancy article on positioning that ends by selling workshops, and nobody has a verified source.
+- Two members, asked why they joined · “I needed a tile cutter for one bathroom; buying one to use once was silly.” “A drill for one weekend. The trip across town nearly put me off.”
 
 
 ### Write the exchange
@@ -863,11 +977,11 @@ The exchange written in plain words, with both sides checked as real rather than
 
 Section: practice-plan. Stable action: write-exchange-written.
 
-Write your answer for “What each side gives and gets, in plain words”. Use the task instructions below to decide what to include.
+Plain words, no figures. No organisation to observe? The case pack in this lesson’s source notes is a complete route; say you used it, labelled as practice.
 
 **Answer:** What each side gives and gets, in plain words
 
-
+Plain words, no figures. No organisation to observe? The case pack in this lesson’s source notes is a complete route; say you used it, labelled as practice.
 
 <details>
 <summary>Example</summary>
@@ -881,11 +995,11 @@ Example (made up): a member gives a returnable deposit and a trip across town, a
 
 Section: practice-plan. Stable action: write-both-real.
 
-An aspirational exchange describes what you would like people to value. A real one describes why they actually turn up.
+An aspirational exchange describes what you would like people to value; a real one describes why they actually turn up. Summarise what people told you without names, or cite the case pack’s member notes. Keep exact words in a private note.
 
 **Answer:** How you checked both sides are real rather than aspirational
 
-An aspirational exchange describes what you would like people to value. A real one describes why they actually turn up.
+An aspirational exchange describes what you would like people to value; a real one describes why they actually turn up. Summarise what people told you without names, or cite the case pack’s member notes. Keep exact words in a private note.
 
 
 ### Separate payer and user
@@ -897,7 +1011,7 @@ Who pays and who uses, with whose experience wins under conflict and who decided
 - Name who pays and who uses.
 - Where they differ, write whose experience wins under conflict.
 
-**Start here:** Ask two people why they actually use it, and write their answers rather than yours.
+**Start here:** Ask two people why they actually use it, or use the case pack’s member notes, and write their reasons rather than yours.
 
 **Enough:** Where payer and user differ, you have said who currently wins and whether anybody chose that.
 
@@ -975,7 +1089,7 @@ Section: practice-plan. Stable action: step-3-sort-1.
 
 Six consequences of a design decision at the made up tool library. For each one, decide what kind of cost it is.
 
-An unclear payment screen produces about one phone call per unclear booking, to a staff of two.
+An unclear payment screen produces about one phone call per unclear booking, to the part-time coordinator.
 
 - money
 - staff time or attention
@@ -986,7 +1100,7 @@ An unclear payment screen produces about one phone call per unclear booking, to 
 
 money — It costs no money directly and it is the salary of somebody already employed.
 
-staff time or attention — It is an hour somebody spends on the phone rather than checking tools in. In a two-person organisation this is the cost that matters most.
+staff time or attention — It is an hour somebody spends on the phone rather than checking tools in. With one part-time paid person, this is the cost that matters most.
 
 risk — Nothing uncertain is involved; it happens every time.
 
@@ -1188,6 +1302,32 @@ Made-up example. Finding a design lever at the tool library, and finding one nob
 **Unknown:** Still unknown: how many calls are actually about payment status. The staff say most of them, and nobody counts, which the description says rather than converting into a figure.
 
 
+### Try a supplied example
+
+Section: practice-plan. Stable action: step-4-try.
+
+From the case pack: a council grant covers part of the running cost; members pay a yearly subscription and a deposit on each loan; nobody knows why members do not renew. Changed constraint (organisation): the grant ends next year, so subscriptions must cover its share.
+
+What changes in your description of how Northside survives?
+
+- Renewals become the main income risk, so why members lapse is the first gap to close.
+- The exchange stays the same, so the design lever is still the payment screen.
+- Nothing in the exchange: members already pay, so only the price needs to go up.
+
+<details>
+<summary>After your attempt</summary>
+
+Renewals become the main income risk, so why members lapse is the first gap to close. — When the payer changes, the exchange has to be rewritten from the member’s side: what they get must now carry the full cost. The pack’s gap — why members do not renew — moves from interesting to urgent, and no figure should be invented to fill it. Affected: every member and the treasurer.
+
+The exchange stays the same, so the design lever is still the payment screen. — The payment screen still matters, but the constraint moved the biggest cost: a lapsed member now costs the library its income.
+
+Nothing in the exchange: members already pay, so only the price needs to go up. — A price rise changes what members give, which changes whether the exchange still makes sense to them; that is the question, not a detail.
+
+Now write your own lever in step 4, with the mechanism step by step and no invented figures.
+
+</details>
+
+
 ### One design decision that changes a cost or a value directly, and the mechanism
 
 Section: practice-plan. Stable action: write-design-lever.
@@ -1212,20 +1352,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Somebody says business is not their area. What does that miss?
+A board member calls the payment screen “a design detail, not a business matter”. The case pack says unclear payments produce phone calls to the part-time coordinator. What does the board member miss?
 
-- Designers should learn finance.
-- It is a reasonable division of labour in a large team.
-- Every design decision is an economic decision about somebody’s time, money or risk. Declining to describe it removes you from the conversation rather than the effect.
+- Each unclear payment costs the coordinator’s time, which is the library’s scarcest resource.
+- Nothing much: screen details belong to designers, and money belongs to the treasurer.
+- Only the transaction fees, which are the one cost the treasurer can actually measure.
 
 <details>
 <summary>After your attempt</summary>
 
-Designers should learn finance. — Almost none of this is finance. It is describing what is exchanged and what it costs.
+Each unclear payment costs the coordinator’s time, which is the library’s scarcest resource. — Every design decision lands on somebody’s time, money or risk. Here the cost is coordinator hours, and describing it needs no invented figure: unclear screen, a call, an interrupted evening.
 
-It is a reasonable division of labour in a large team. — In a large team somebody else describes the effect of your decision, in terms you did not choose.
+Nothing much: screen details belong to designers, and money belongs to the treasurer. — Dividing it that way leaves the treasurer describing the effect of your screen in terms you did not choose.
 
-Every design decision is an economic decision about somebody’s time, money or risk. Declining to describe it removes you from the conversation rather than the effect. — An unclear screen becomes a phone call, which is an hour of a two-person staff. Describing that does not require financial data or invented figures.
+Only the transaction fees, which are the one cost the treasurer can actually measure. — Fees are countable; the calls are uncounted and land on the one paid person, which is why naming them matters.
 
 Improve: Write the exchange in plain words in step 1, with no figures. Record the change in step 5.
 
@@ -1242,26 +1382,26 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Your exchange says members get a sense of community and a sustainable way to do jobs. Is that the exchange?
+The council grant pays for 30 Riverside memberships; the residents borrow the tools. The grant officer asks for each resident’s name and loans. What must your description of the exchange say?
 
-- Yes, provided some members do value it.
-- Yes, those are genuine benefits of the service.
-- It may be true of somebody and it is what the organisation says about itself. The real exchange is why people actually turned up.
+- The residents are the customers, so the officer’s request can simply be ignored for now.
+- The council pays and residents use, so say whose experience wins when they conflict.
+- The council is the customer, so its reporting request defines the exchange.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, provided some members do value it. — Some do. The exchange has to describe the ordinary case, or the costs in it stay invisible.
+The residents are the customers, so the officer’s request can simply be ignored for now. — Ignoring the payer puts the grant at risk; the conflict has to be resolved, not wished away.
 
-Yes, those are genuine benefits of the service. — Genuine and not what anybody weighed when deciding to come. The aspirational version hides the costs people actually pay.
+The council pays and residents use, so say whose experience wins when they conflict. — Payer and user differ, and the request is the conflict: naming residents serves the payer and costs the users’ privacy. The write-up says who currently wins and whether anybody decided that.
 
-It may be true of somebody and it is what the organisation says about itself. The real exchange is why people actually turned up. — Two conversations produced a deposit, a trip across town, and a job done without buying a tool. The trip is a cost in the exchange, which makes collection hours a design question rather than an operational detail.
+The council is the customer, so its reporting request defines the exchange. — Letting the payer define the exchange is the default nobody chose; the residents are why the scheme exists.
 
-Improve: Ask two people why they use it and rewrite the exchange from their answers, in step 1. Record the change in step 5.
+Improve: Write in step 2 who pays, who uses, whose experience currently wins, and who decided that. Record the change in step 5.
 
-Check again: The exchange names a cost people actually pay.
+Check again: Where payer and user differ, you have said who wins and whether anybody chose that.
 
-Answers to revisit: exchange-written, both-real, improvement-made
+Answers to revisit: payer-user, conflict, improvement-made
 
 </details>
 
@@ -1272,20 +1412,20 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You want to say unclear payments cost about thirty hours a year. Where did that come from?
+You want to write that unclear payments cost the coordinator “about thirty hours a year”. The case pack says nobody has counted the calls. What should the description say?
 
-- Keep it and find a source later.
-- If you cannot say, remove it. An invented figure loses the argument the first time somebody checks.
-- It is a reasonable estimate and should be labelled as one.
+- The mechanism in words: unclear payment, a call, an interrupted evening; no figure.
+- A typical industry figure for support calls per payment, cited to its source.
+- Thirty hours, labelled as an estimate, since a rough number is more persuasive.
 
 <details>
 <summary>After your attempt</summary>
 
-Keep it and find a source later. — Later is after it has been repeated.
+The mechanism in words: unclear payment, a call, an interrupted evening; no figure. — An invented figure loses the argument the first time somebody checks, and here somebody can: nobody has counted. The mechanism makes the same case, and a count can be added later by whoever does one.
 
-If you cannot say, remove it. An invented figure loses the argument the first time somebody checks. — The describable version works: each unclear booking produces roughly one call, to a staff of two, and calls come at the times tools are being checked in. No number, no exposure, same argument.
+A typical industry figure for support calls per payment, cited to its source. — A figure from other organisations describes them; it says nothing about Northside’s calls.
 
-It is a reasonable estimate and should be labelled as one. — A labelled estimate is still the figure that gets quoted, as Module 15 established.
+Thirty hours, labelled as an estimate, since a rough number is more persuasive. — A labelled estimate is still the number that gets quoted, as Module 15 established.
 
 Improve: Remove any unsourced number in step 5 and replace it with a description. Record the change.
 
@@ -1325,15 +1465,41 @@ Describing economics does not require inventing figures, and an invented figure 
 Describing economics does not require inventing figures, and an invented figure loses the argument the first time somebody checks.
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A community minibus takes residents of three outlying villages to the market town twice a week. Riders pay a small fare and a supermarket pays most of the cost through its community scheme. The supermarket now says it will fund only routes that stop at its own store.
+
+**Task:** Decide how the minibus should respond, and explain your reasoning, naming who is affected and what evidence is missing.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Agrees to the new routes because the payer decides, or refuses without saying who loses; invents numbers to make the case.
+- Adequate: Rewrites the exchange: the payer now shapes the routes, so riders who need other stops lose out. Names those riders and the drivers’ time, and proposes a response such as a shared route or a second funder, without invented figures.
+- Strong: As adequate, and names the evidence gap (how many riders use the stops that would be dropped), says who should decide whose experience wins, and how to find out cheaply, such as a week’s count of where people get off.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -1364,7 +1530,7 @@ Aspirational: What you would like people to value: community, sustainability, be
 Payer and user diverging: A parent booking for a child, an employer paying for staff, a funder paying for a service. The product usually serves the payer without anybody deciding to.
 
 Supplied practice material (fictional or labelled practice, not my research):
-Made-up example. Writing the exchange for Northside Tool Library, and writing the nice version. Members give a small subscription and get access to a shared resource, a sense of community, and a more sustainable way to do jobs at home.
+From the case pack: a council grant covers part of the running cost; members pay a yearly subscription and a deposit on each loan; nobody knows why members do not renew. Changed constraint (organisation): the grant ends next year, so subscriptions must cover its share.
 
 Activity: Change one constraint in the supplied strategy case. Ask me which choice changes, who gains, who carries the cost and what evidence would make me reconsider.
 
@@ -1374,7 +1540,7 @@ When the activity is finished, tell me to return to the course answer called “
 
 **Come back to the course:** Return to “What each side gives and gets, in plain words”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “What each side gives and gets, in plain words” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “What each side gives and gets, in plain words” and write one sentence in your own words.
 
 </details>
 <details>
@@ -1442,7 +1608,7 @@ Adequate evidence: A design decision with a stated causal mechanism and no unsou
 
 2 — Mechanism stated and no invented numbers.
 
-3 — As adequate, and the mechanism is traceable to a research finding.
+3 — As adequate, and the mechanism is traceable to a research finding or a named fact in the case pack.
 
 Repair: Delete every figure you cannot source and write the causal chain in words. Recheck: The lever.
 
@@ -1495,7 +1661,7 @@ Product strategy connects a real problem, evidence, constraints and trade-offs t
 - **The top band:** The person’s journey, which you already have. Reusing it keeps the blueprint anchored in something observed.
 - **Line of visibility:** The boundary between what the person can see and what they cannot. Most delays and failures originate below it.
 
-**Quick example.** Made-up example. Drawing the visible band for a tool-library booking, and leaving the waiting out. Select, review, pay, confirm. Four stages with something in the visible band at each one, and the blueprint looked complete.
+**Quick example.** From the case pack: a request is confirmed only after the coordinator copies it into the stock list in the evening, and confirmations go out the next morning. Changed constraint (organisation): the coordinator’s hours are cut, so the update happens only on Tuesday, Thursday and Saturday evenings.
 
 The reader demonstrates and guides the task before asking for “The stages from your existing experience map, as the top band”.
 
@@ -1541,6 +1707,13 @@ Section: learn. Stable action: learn-5.
 The assigned map source stops at the front stage; the back stage is this lesson's addition.
 
 
+### Idea 6: When the back stage changes — fewer staff hours, a new check,…
+
+Section: learn. Stable action: learn-6.
+
+When the back stage changes — fewer staff hours, a new check, a new supplier — redraw that band first; the front-stage promise usually has to change with it.
+
+
 ### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
@@ -1557,6 +1730,30 @@ Section: learn. Stable action: workspace.
 Recommended route: Draw the three bands of a service blueprint for one journey on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder. Alternative route: Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
+
+
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Case pack · Northside Tool Library. Made up for this module: practice material, not research about a real organisation. Members borrow tools from a side room of the town hall, paying a yearly subscription and a refundable deposit on each loan; most borrow a few times a year. A council community grant covers part of the running cost; it is reviewed each autumn and may be cut.
+- Borrower (member) · May book, cancel, collect and return their own loans. Sees only their own loans, deposits and due dates.
+- Front-desk volunteer (Saturday 10:00–13:00 rota of about twelve) · Checks about forty loans in and out each Saturday and signs up new members on paper. Sees that day’s bookings by first name, tool and locker number. May not see addresses or payments, refund deposits or change fees. New volunteers need a morning of training.
+- Maintenance volunteer (Tuesday evenings) · Marks each tool ready, needs repair or retired in the stock list, and must check every power tool after each loan before it goes out again: an insurance condition. Sees tool histories, not member details.
+- Coordinator (paid, part-time) · Copies each day’s booking requests into the stock list by hand at about 8 pm, sets the weekly locker codes, trains volunteers and allocates the Riverside memberships. Sees all bookings and members’ contact details. May not issue refunds.
+- Treasurer and board · The board, a volunteer committee, sets fees, deposits, opening hours and spending, and sees monthly totals rather than individual loans. The treasurer holds the only login to the payment account, refunds deposits in one batch on Tuesday evenings and writes the grant report.
+- Council grant officer (funder) · Funds 30 memberships for residents of the Riverside estate, receives a report each quarter, and has asked for each resident’s name and what they borrowed, to show the scheme is used.
+- Two local workshops · Each emails the coordinator to book about a dozen tools a month for its evening classes. You · A volunteer designer with about six hours a week. You can propose changes to the coordinator; you have no authority over volunteers, the board or the funder.
+- Booking tool and messages · A free hosted form. A request is confirmed only after the coordinator copies it into the stock list; confirmations and locker codes are emailed the next morning. A cancellation frees the tool only at the next 8 pm update. The free plan sends email only, cannot release a cancelled booking by itself, and sends one reminder the day before a tool is due back.
+- Lockers, payments and the stock list · Twelve coded lockers outside the hall take hand tools out of hours; power tools go out at the desk only. Most tools are single copies. The payment provider confirms within seconds and charges a small fee on every payment and every refund. The stock list is one spreadsheet: the only record of where each tool is and whether it is ready.
+- Last six months (coordinator’s notes) · Workshop requests fitted in within a week, every time. The new-member sign-up, called confusing by three new members, postponed four times so far. On three short-staffed Saturdays, returned power tools went unchecked and stayed off the shelf until Tuesday. No request from the grant officer refused. Written aim: “To make tools available to everybody in the neighbourhood, sustainably and inclusively.”
+- Since March · Cancelling takes one tap, so tools cancelled after Friday’s 8 pm update stay marked booked all Saturday. The coordinator thinks Friday-night cancellations have risen; nobody has counted. The board has proposed a £5 late-cancellation fee.
+- Open questions for the board · Whether to let power tools be collected from the lockers out of hours, to shorten the Saturday queue: a locker rule can be changed back within a week, but bigger lockers would be a one-off purchase. Three income ideas: a pre-ticked £1 donation on every booking, “Only 1 left!” on every tool page, and cancelling a subscription by phone only.
+- Constraints · The free booking plan stays this year; a paid plan needs board approval and money the grant does not cover. The payment provider cannot change this year. No analytics beyond the booking tool’s monthly counts and the stock list. The library does not lend tools that need training to use safely, such as chainsaws.
+- Evidence gaps · Nobody has counted the calls asking whether a deposit went through; the coordinator says “most”. Cancellations sit in the stock list, uncounted. Nobody knows why members do not renew, what share of bookings come from repeat members, or whether Riverside residents use their memberships. The board wants to describe the library against the hardware shop’s hire counter and a sharing app; the chair circulated an undated consultancy article on positioning that ends by selling workshops, and nobody has a verified source.
+- Two members, asked why they joined · “I needed a tile cutter for one bathroom; buying one to use once was silly.” “A drill for one weekend. The trip across town nearly put me off.”
 
 
 ### Start from the experience map
@@ -1707,11 +1904,11 @@ Made-up example. Blueprinting a booking at Northside Tool Library, and treating 
 
 Section: practice-plan. Stable action: write-back-band.
 
-Where you cannot observe, use what you can find out by asking, and mark anything you had to assume.
+Where you cannot observe, use what you can find out by asking or the case pack’s service dependencies, and mark anything you had to assume.
 
 **Answer:** What staff do and what systems are involved at each stage
 
-Where you cannot observe, use what you can find out by asking, and mark anything you had to assume.
+Where you cannot observe, use what you can find out by asking or the case pack’s service dependencies, and mark anything you had to assume.
 
 
 ### Where work waits for a person, and where two systems must agree
@@ -1851,7 +2048,7 @@ Section: practice-plan. Stable action: step-4-sort-5.
 
 Six facts about the made up tool library. For each one, decide what it is on a blueprint.
 
-Only one volunteer knows how to issue a refund, and she is there on Tuesdays.
+Only the treasurer can refund deposits, in one batch on Tuesday evenings.
 
 - a back-stage fact that decides the experience
 - a back-stage detail with no front-stage effect
@@ -1860,7 +2057,7 @@ Only one volunteer knows how to issue a refund, and she is there on Tuesdays.
 <details>
 <summary>After your attempt</summary>
 
-a back-stage fact that decides the experience — It sets what a refund message can honestly promise, and it makes Wednesday to Monday a different service from Tuesday.
+a back-stage fact that decides the experience — It sets what a refund message can honestly promise: up to a week, not “straight away”.
 
 a back-stage detail with no front-stage effect — Anybody wanting a refund on a Wednesday meets it directly.
 
@@ -1932,20 +2129,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Confirmations arrive the next morning because a spreadsheet is updated by hand each evening. Is that an operations problem?
+Members who return a tool on Wednesday see “Your deposit is on its way.” The case pack says the treasurer refunds deposits in one batch on Tuesday evenings. Whose problem is the message?
 
-- Yes, and the design should be judged separately.
-- Yes, and it should be escalated as a process issue.
-- It is the experience. A person waiting does not distinguish your interface from your staffing, and a design promising what the operation cannot deliver is at fault.
+- The design’s: it promises what the back stage cannot do, so the wording must change.
+- Operations’: the treasurer’s weekly batch is the cause, so the batch must change first.
+- Nobody’s: a refund within a week is normal for a library run by volunteers.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, and the design should be judged separately. — Nobody outside the organisation judges them separately.
+The design’s: it promises what the back stage cannot do, so the wording must change. — A member waiting a week does not separate your screen from the treasurer’s Tuesday. “Refunds go out on Tuesday evenings” is a front-stage change you can make this week; the batch can stay as it is.
 
-Yes, and it should be escalated as a process issue. — Worth raising, and meanwhile the promise is yours to fix this week.
+Operations’: the treasurer’s weekly batch is the cause, so the batch must change first. — Raising the batch is fair, and it is somebody else’s decision; meanwhile the promise on the screen is yours to fix.
 
-It is the experience. A person waiting does not distinguish your interface from your staffing, and a design promising what the operation cannot deliver is at fault. — The available change is usually on the front stage: say the booking is held and confirmed by the morning, and give the person a reference as proof. The evening update can stay exactly as it is.
+Nobody’s: a refund within a week is normal for a library run by volunteers. — Normal or not, “on its way” says something else, and members plan around what the screen says.
 
 Improve: Make one front-stage change from a back-stage constraint in step 5, and record what the promise now says.
 
@@ -1962,20 +2159,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You cannot observe the back stage. Can you still blueprint it?
+You cannot watch the coordinator’s evening update, and the case pack describes it in one line. How should your blueprint show that step?
 
-- Yes, by using a typical process for this kind of service.
-- No, a blueprint requires observation to be accurate.
-- Yes, from what you can find out by asking, with anything you had to assume marked as an assumption.
+- Leave it out, since a blueprint should show only what you have observed yourself.
+- Draw a standard booking back office, since most small services work much the same.
+- From the pack and what you can ask, with every guessed detail marked as assumed.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, by using a typical process for this kind of service. — A typical process is an assumption about all of it rather than about parts of it.
+Leave it out, since a blueprint should show only what you have observed yourself. — Leaving it out hides the step that sets the timescale for every confirmation.
 
-No, a blueprint requires observation to be accurate. — Accuracy is the aim and marked assumptions are how you get there incrementally.
+Draw a standard booking back office, since most small services work much the same. — A typical process is an assumption about all of it, presented as if it were known.
 
-Yes, from what you can find out by asking, with anything you had to assume marked as an assumption. — A blueprint with three marked assumptions is useful and honest. One drawn as fact, from guesswork, produces front-stage decisions built on an imagined process.
+From the pack and what you can ask, with every guessed detail marked as assumed. — A blueprint with marked assumptions is useful and honest. One drawn as fact from guesswork produces front-stage decisions built on an imagined process.
 
 Improve: Mark everything you assumed in step 5, and say what you would ask to confirm it. Record the change.
 
@@ -1992,24 +2189,24 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Everybody blames the payment provider for the delay, and your blueprint shows it responds in seconds. What have you found?
+The board wants power tools in the out-of-hours lockers to cut the Saturday queue. Your blueprint shows each returned power tool must be checked before it goes out again, and checks happen on Tuesday evenings. What does that fact decide?
 
-- That the blueprint needs more detail on the provider.
-- That the provider is not the only cause.
-- That the constraint is elsewhere, which is one of the most useful things a blueprint produces.
+- Only the locker size, since power tools are bulkier than the hand tools stored now.
+- Nothing on the front stage, since checks happen behind the line where members never look.
+- How soon a returned power tool can honestly be offered again, whatever the lockers allow.
 
 <details>
 <summary>After your attempt</summary>
 
-That the blueprint needs more detail on the provider. — More detail on the thing that is fast is the opposite of what the finding suggests.
+Only the locker size, since power tools are bulkier than the hand tools stored now. — Size matters to the lockers; the Tuesday check decides when a tool can go in them at all.
 
-That the provider is not the only cause. — It is not a cause at all, which is a stronger and more useful finding.
+Nothing on the front stage, since checks happen behind the line where members never look. — Behind the line is exactly where decisive facts live; members meet this one as “unavailable” all week.
 
-That the constraint is elsewhere, which is one of the most useful things a blueprint produces. — The delay is a person updating a spreadsheet each evening. Until the blueprint existed, effort would have gone into the provider, which was never the problem.
+How soon a returned power tool can honestly be offered again, whatever the lockers allow. — A check on Tuesdays caps availability: a drill returned on Wednesday cannot go out again before the next Tuesday, lockers or not. The promise on the booking page has to follow it.
 
-Improve: Mark the back-stage items that decide nothing, in step 4, so the decisive ones stand out. Record the change in step 5.
+Improve: Write one decisive fact in step 4 with what it determines about the front stage, as the Tuesday check does here. Record the change in step 5.
 
-Check again: Your two decisive facts are the ones that actually set the timescale.
+Check again: Both decisive facts name something the front stage has to follow.
 
 Answers to revisit: decisive-one, decisive-two, improvement-made
 
@@ -2034,6 +2231,32 @@ One front-stage change made because of a back-stage constraint, with anything as
 **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
 
 
+### Try a supplied example
+
+Section: practice. Stable action: step-5-try.
+
+From the case pack: a request is confirmed only after the coordinator copies it into the stock list in the evening, and confirmations go out the next morning. Changed constraint (organisation): the coordinator’s hours are cut, so the update happens only on Tuesday, Thursday and Saturday evenings.
+
+What should the front stage now promise a member who books on Sunday?
+
+- A held request, confirmed by Wednesday morning, with a reference to show at the desk.
+- Confirmation by the next morning, as now; any delay can be explained if anybody asks.
+- Instant confirmation, so members are not left waiting while the hours are reduced.
+
+<details>
+<summary>After your attempt</summary>
+
+A held request, confirmed by Wednesday morning, with a reference to show at the desk. — Sunday’s request waits for Tuesday’s update and Wednesday’s email. Promising what the back stage can now deliver, with a reference as proof, is the front-stage change. Affected: members who need a tool early in the week. Missing: how many bookings that is.
+
+Confirmation by the next morning, as now; any delay can be explained if anybody asks. — “Next morning” is now false for four days of the week; explaining afterwards is an apology for a promise you knew was wrong.
+
+Instant confirmation, so members are not left waiting while the hours are reduced. — An instant confirmation promises a check nobody has made; two people could be promised the same tool.
+
+Now make your own front-stage change in step 5, and say what the promise now is.
+
+</details>
+
+
 ### One front-stage change you made because of a back-stage constraint
 
 Section: practice. Stable action: write-front-change.
@@ -2056,15 +2279,41 @@ Write your answer for “Anything in the blueprint you had to assume rather than
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: An amateur theatre lends costumes. Requests come by web form; one volunteer pulls costumes from storage on Mondays; borrowers collect on Thursday evenings, and the website says “ready in 48 hours”. The Monday volunteer is leaving, and the only replacement can work on Saturdays.
+
+**Task:** Decide what the website should now promise, and explain why, naming who is affected and what you would need to find out.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps “ready in 48 hours” or calls it an operations problem; does not trace the promise to the packing day.
+- Adequate: Traces the promise to the packing day: with Saturday packing, a request is ready for the next Thursday collection after Saturday, so the site states the real timing. Names borrowers with near deadlines as affected.
+- Strong: As adequate, and marks what is assumed (whether Thursday collection stays), names what to find out (how many requests are urgent), and raises a back-stage option such as a second volunteer with whoever decides.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -2095,7 +2344,7 @@ The top band: The person’s journey, which you already have. Reusing it keeps t
 Line of visibility: The boundary between what the person can see and what they cannot. Most delays and failures originate below it.
 
 Supplied practice material (fictional or labelled practice, not my research):
-Made-up example. Drawing the visible band for a tool-library booking, and leaving the waiting out. Select, review, pay, confirm. Four stages with something in the visible band at each one, and the blueprint looked complete.
+From the case pack: a request is confirmed only after the coordinator copies it into the stock list in the evening, and confirmations go out the next morning. Changed constraint (organisation): the coordinator’s hours are cut, so the update happens only on Tuesday, Thursday and Saturday evenings.
 
 Activity: Change one constraint in the supplied strategy case. Ask me which choice changes, who gains, who carries the cost and what evidence would make me reconsider.
 
@@ -2105,7 +2354,7 @@ When the activity is finished, tell me to return to the course answer called “
 
 **Come back to the course:** Return to “The stages from your existing experience map, as the top band”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The stages from your existing experience map, as the top band” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “The stages from your existing experience map, as the top band” and write one sentence in your own words.
 
 </details>
 <details>
@@ -2145,7 +2394,7 @@ Adequate evidence: Named actions, people and systems rather than abstractions.
 
 2 — Named work, people and systems throughout.
 
-3 — As adequate, and the detail was confirmed with whoever does the work.
+3 — As adequate, and the detail was confirmed with whoever does the work, or, on the case-pack route, the questions that would confirm it are written.
 
 Repair: Ask what actually happens after a booking and write the real steps. Recheck: The back-stage layer.
 
@@ -2226,7 +2475,7 @@ Product strategy connects a real problem, evidence, constraints and trade-offs t
 - **Infrastructure vocabulary:** Words for how permissions are structured. None of it says what a screen should show, which is where the design work is.
 - **The buyer:** Whoever decided to purchase. They decide once, and their accountability is usually budget and being able to show the thing is used.
 
-**Quick example.** Made-up example. Designing the business version of a class-booking product, and designing for whoever signed. Attendance reporting: who booked, who turned up, who did not. Entirely reasonable from where she sits, since she has to show the scheme is used.
+**Quick example.** From the case pack: the council officer funds 30 Riverside memberships and asked for names and loans; the coordinator allocates the memberships and sees members’ contact details; the board sees monthly totals. Changed constraint (risk): the council’s auditor now needs proof that each funded membership went to an eligible resident.
 
 The reader demonstrates and guides the task before asking for “What the assigned overview gives you, and what it does not”.
 
@@ -2272,6 +2521,13 @@ Section: learn. Stable action: learn-5.
 Design for the everyday user and give the buyer evidence.
 
 
+### Idea 6: When the risk or the rules change, ask what the buyer now has…
+
+Section: learn. Stable action: learn-6.
+
+When the risk or the rules change, ask what the buyer now has to prove, and give exactly that rather than the broader thing first requested.
+
+
 ### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
@@ -2288,6 +2544,30 @@ Section: learn. Stable action: workspace.
 Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
+
+
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Case pack · Northside Tool Library. Made up for this module: practice material, not research about a real organisation. Members borrow tools from a side room of the town hall, paying a yearly subscription and a refundable deposit on each loan; most borrow a few times a year. A council community grant covers part of the running cost; it is reviewed each autumn and may be cut.
+- Borrower (member) · May book, cancel, collect and return their own loans. Sees only their own loans, deposits and due dates.
+- Front-desk volunteer (Saturday 10:00–13:00 rota of about twelve) · Checks about forty loans in and out each Saturday and signs up new members on paper. Sees that day’s bookings by first name, tool and locker number. May not see addresses or payments, refund deposits or change fees. New volunteers need a morning of training.
+- Maintenance volunteer (Tuesday evenings) · Marks each tool ready, needs repair or retired in the stock list, and must check every power tool after each loan before it goes out again: an insurance condition. Sees tool histories, not member details.
+- Coordinator (paid, part-time) · Copies each day’s booking requests into the stock list by hand at about 8 pm, sets the weekly locker codes, trains volunteers and allocates the Riverside memberships. Sees all bookings and members’ contact details. May not issue refunds.
+- Treasurer and board · The board, a volunteer committee, sets fees, deposits, opening hours and spending, and sees monthly totals rather than individual loans. The treasurer holds the only login to the payment account, refunds deposits in one batch on Tuesday evenings and writes the grant report.
+- Council grant officer (funder) · Funds 30 memberships for residents of the Riverside estate, receives a report each quarter, and has asked for each resident’s name and what they borrowed, to show the scheme is used.
+- Two local workshops · Each emails the coordinator to book about a dozen tools a month for its evening classes. You · A volunteer designer with about six hours a week. You can propose changes to the coordinator; you have no authority over volunteers, the board or the funder.
+- Booking tool and messages · A free hosted form. A request is confirmed only after the coordinator copies it into the stock list; confirmations and locker codes are emailed the next morning. A cancellation frees the tool only at the next 8 pm update. The free plan sends email only, cannot release a cancelled booking by itself, and sends one reminder the day before a tool is due back.
+- Lockers, payments and the stock list · Twelve coded lockers outside the hall take hand tools out of hours; power tools go out at the desk only. Most tools are single copies. The payment provider confirms within seconds and charges a small fee on every payment and every refund. The stock list is one spreadsheet: the only record of where each tool is and whether it is ready.
+- Last six months (coordinator’s notes) · Workshop requests fitted in within a week, every time. The new-member sign-up, called confusing by three new members, postponed four times so far. On three short-staffed Saturdays, returned power tools went unchecked and stayed off the shelf until Tuesday. No request from the grant officer refused. Written aim: “To make tools available to everybody in the neighbourhood, sustainably and inclusively.”
+- Since March · Cancelling takes one tap, so tools cancelled after Friday’s 8 pm update stay marked booked all Saturday. The coordinator thinks Friday-night cancellations have risen; nobody has counted. The board has proposed a £5 late-cancellation fee.
+- Open questions for the board · Whether to let power tools be collected from the lockers out of hours, to shorten the Saturday queue: a locker rule can be changed back within a week, but bigger lockers would be a one-off purchase. Three income ideas: a pre-ticked £1 donation on every booking, “Only 1 left!” on every tool page, and cancelling a subscription by phone only.
+- Constraints · The free booking plan stays this year; a paid plan needs board approval and money the grant does not cover. The payment provider cannot change this year. No analytics beyond the booking tool’s monthly counts and the stock list. The library does not lend tools that need training to use safely, such as chainsaws.
+- Evidence gaps · Nobody has counted the calls asking whether a deposit went through; the coordinator says “most”. Cancellations sit in the stock list, uncounted. Nobody knows why members do not renew, what share of bookings come from repeat members, or whether Riverside residents use their memberships. The board wants to describe the library against the hardware shop’s hire counter and a sharing app; the chair circulated an undated consultancy article on positioning that ends by selling workshops, and nobody has a verified source.
+- Two members, asked why they joined · “I needed a tile cutter for one bathroom; buying one to use once was silly.” “A drill for one weekend. The trip across town nearly put me off.”
 
 
 ### Read the permission vocabulary
@@ -2343,11 +2623,11 @@ Three roles described by what they want and are accountable for, with the one wh
 
 Section: practice-plan. Stable action: write-buyer.
 
-Write your answer for “The buyer · what they want and what they are accountable for”. Use the task instructions below to decide what to include.
+Describe roles, not real people. No organisation to observe? The case pack in this lesson’s source notes is a complete route; say you used it, labelled as practice. Its Riverside scheme has all three roles.
 
 **Answer:** The buyer · what they want and what they are accountable for
 
-
+Describe roles, not real people. No organisation to observe? The case pack in this lesson’s source notes is a complete route; say you used it, labelled as practice. Its Riverside scheme has all three roles.
 
 <details>
 <summary>Example</summary>
@@ -2429,6 +2709,32 @@ Made-up example. Designing the business version of a class-booking product, and 
 **Trade-off:** The aggregate cannot answer a manager asking about one named person, and occasionally somebody genuinely needs to. Saying no to that is the trade.
 
 **Unknown:** Still unknown: how much of the drop was the reporting. Two months and one change is not a controlled comparison, and the mechanism was what the staff said.
+
+
+### Try a supplied example
+
+Section: practice-plan. Stable action: step-3-try.
+
+From the case pack: the council officer funds 30 Riverside memberships and asked for names and loans; the coordinator allocates the memberships and sees members’ contact details; the board sees monthly totals. Changed constraint (risk): the council’s auditor now needs proof that each funded membership went to an eligible resident.
+
+What should the reporting now give the council?
+
+- Monthly totals as before, and a reply that names cannot be shared with anyone.
+- Each resident’s name and loans, since the audit now justifies the original request.
+- A coordinator’s check of eligibility by membership number, with no loan history attached.
+
+<details>
+<summary>After your attempt</summary>
+
+Monthly totals as before, and a reply that names cannot be shared with anyone. — The constraint is real; refusing it outright puts the grant at risk when a narrower answer exists.
+
+Each resident’s name and loans, since the audit now justifies the original request. — The new need is narrower than the old request: proving eligibility does not require what anybody borrowed.
+
+A coordinator’s check of eligibility by membership number, with no loan history attached. — The audit needs eligibility, not borrowing. The coordinator already sees contact details and can confirm it by membership number, so loans stay private. Affected: residents and the coordinator’s time. Missing: what the auditor will accept as proof.
+
+Now name your own two conflicts in step 3, with who currently wins, and one constraint that would change the winner.
+
+</details>
 
 
 ### Conflict 1 · what two roles want incompatibly, and who currently wins
@@ -2673,20 +2979,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Is the buyer the customer?
+In the case pack’s Riverside scheme, the council officer chose and pays for 30 memberships, the coordinator allocates them and residents borrow. Whose experience decides whether the scheme is renewed next autumn?
 
-- Yes, since the buyer holds the budget.
-- Yes for the first year, then the user matters.
-- The buyer decides once; the everyday user decides whether it is still used in a year.
+- The coordinator’s: she runs the allocation and reports the numbers to the officer.
+- The residents’: renewal depends on use, and only they decide whether to keep borrowing.
+- The officer’s: she chose the scheme and holds the budget that renews it each year.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, since the buyer holds the budget. — The budget is renewed on the strength of usage, which the everyday user controls.
+The coordinator’s: she runs the allocation and reports the numbers to the officer. — The coordinator’s work matters and is routinely designed last; her report still only counts what residents do.
 
-Yes for the first year, then the user matters. — The first year is when the resentment accumulates.
+The residents’: renewal depends on use, and only they decide whether to keep borrowing. — The buyer decides once; the everyday user decides whether it is still used. A scheme built to satisfy the officer’s request at the residents’ cost produces the low usage that loses the renewal.
 
-The buyer decides once; the everyday user decides whether it is still used in a year. — Products that optimise for the purchase decision accumulate resentment and lose renewals. Attendance reporting wins the sale and suppresses the usage the report then measures.
+The officer’s: she chose the scheme and holds the budget that renews it each year. — She decides once, and decides again on the evidence of use, which the residents control.
 
 Improve: Name who currently wins in both conflicts in step 3, and whether anybody decided that. Record the change in step 5.
 
@@ -2703,20 +3009,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-The buyer asks for named attendance reporting. What should you do?
+The grant officer asks for each Riverside resident’s name and what they borrowed, to show the scheme is used. What should you offer?
 
-- Answer her accountability with an aggregate that names nobody, and say why the named version costs the usage she is buying.
-- Refuse it as a privacy matter.
-- Build it; she is paying and the request is reasonable.
+- Totals by month and tool type, naming nobody, and why named lists would cut use.
+- A refusal on privacy grounds, so residents can borrow without being watched by anyone.
+- The named list as requested, since the council pays for every one of the memberships.
 
 <details>
 <summary>After your attempt</summary>
 
-Answer her accountability with an aggregate that names nobody, and say why the named version costs the usage she is buying. — She has to show the scheme is used, which an aggregate does completely. The named version suppresses bookings and then reports the suppression as low usage.
+Totals by month and tool type, naming nobody, and why named lists would cut use. — She has to show the scheme is used, which totals do completely. A named list risks residents borrowing less once they know, and then reports that drop as low demand.
 
-Refuse it as a privacy matter. — A refusal with nothing attached leaves her accountability unanswered, and she will get it from somebody else.
+A refusal on privacy grounds, so residents can borrow without being watched by anyone. — A refusal with nothing attached leaves her accountability unanswered, and she may seek the list some other way.
 
-Build it; she is paying and the request is reasonable. — Reasonable from where she sits, and it destroys the thing she is buying.
+The named list as requested, since the council pays for every one of the memberships. — Reasonable from where she sits, and it risks destroying the use she is paying for.
 
 Improve: Write what the buyer gets instead in step 5, answering the same accountability. Record the change.
 
@@ -2733,20 +3039,20 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Your screen shows the everyday user what their employer can see. Why bother?
+Your Riverside booking screen says “The council sees monthly totals only, never your name or loans.” A board member calls the line unnecessary. Why keep it?
 
-- Because people who do not know assume the worst, and the assumption is corrosive whether or not it is accurate.
-- Because transparency is generally good practice.
-- Because it may be legally required.
+- It may be legally required for council-funded schemes, so it is safer to include it.
+- Residents not told what the funder sees tend to assume the worst, and borrow less.
+- Telling users what others see is good practice in general, wherever data is shared.
 
 <details>
 <summary>After your attempt</summary>
 
-Because people who do not know assume the worst, and the assumption is corrosive whether or not it is accurate. — It costs the buyer nothing. If the true answer is embarrassing enough that showing it is awkward, that is a finding about the feature rather than about the disclosure.
+It may be legally required for council-funded schemes, so it is safer to include it. — It may be; the design reason holds regardless, and nobody here has checked the law.
 
-Because transparency is generally good practice. — True and general. The specific reason is what people assume in its absence.
+Residents not told what the funder sees tend to assume the worst, and borrow less. — The assumption is corrosive whether or not it is accurate, and dispelling it costs the officer nothing. If the true answer were embarrassing to show, that would be a finding about the reporting, not the line.
 
-Because it may be legally required. — It may be, and the design reason holds regardless.
+Telling users what others see is good practice in general, wherever data is shared. — True and general; the specific reason is what residents assume in its absence.
 
 Improve: Add the visibility line to your screen in step 4 and say what it states. Record the change in step 5.
 
@@ -2809,15 +3115,41 @@ Write your answer for “What the buyer gets instead of the feature that would c
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A company pays for staff to use a city bike-share scheme. Staff ride; an office manager hands out the passes; the finance team receives a monthly report of total rides. Finance now wants each employee’s ride times and routes, to check passes are not used for weekend leisure.
+
+**Task:** Decide what the report should contain, and explain why, naming who is affected and what evidence is missing.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Gives finance full ride times and routes because the company pays, or refuses with no alternative.
+- Adequate: Answers the real need (passes used for work) with less exposure, such as weekday and weekend totals per pass number without routes, and tells riders what finance can see. Names riders and the office manager as affected.
+- Strong: As adequate, and names the evidence gap (whether weekend use is a real problem or a worry), says what would justify more detail, and notes riders who feel tracked may stop using the passes, defeating the scheme.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -2848,7 +3180,7 @@ Infrastructure vocabulary: Words for how permissions are structured. None of it 
 The buyer: Whoever decided to purchase. They decide once, and their accountability is usually budget and being able to show the thing is used.
 
 Supplied practice material (fictional or labelled practice, not my research):
-Made-up example. Designing the business version of a class-booking product, and designing for whoever signed. Attendance reporting: who booked, who turned up, who did not. Entirely reasonable from where she sits, since she has to show the scheme is used.
+From the case pack: the council officer funds 30 Riverside memberships and asked for names and loans; the coordinator allocates the memberships and sees members’ contact details; the board sees monthly totals. Changed constraint (risk): the council’s auditor now needs proof that each funded membership went to an eligible resident.
 
 Activity: Change one constraint in the supplied strategy case. Ask me which choice changes, who gains, who carries the cost and what evidence would make me reconsider.
 
@@ -2858,7 +3190,7 @@ When the activity is finished, tell me to return to the course answer called “
 
 **Come back to the course:** Return to “What the assigned overview gives you, and what it does not”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “What the assigned overview gives you, and what it does not” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “What the assigned overview gives you, and what it does not” and write one sentence in your own words.
 
 </details>
 <details>
@@ -2979,7 +3311,7 @@ Product strategy connects a real problem, evidence, constraints and trade-offs t
 - **Adaptation:** The behaviour your change makes easy. People do more of whatever you made cheap, whether or not you wanted them to.
 - **Loop:** Where the effect of a change feeds back into its own cause. It is what makes a small change produce a large and delayed result.
 
-**Quick example.** Made-up example. Making cancellation one tap at a class provider, and watching the consequence arrive somewhere else. Cancellation went from a phone call to one tap. An obvious improvement, and everybody who had struggled with it was pleased.
+**Quick example.** From the case pack: tools cancelled after Friday’s 8 pm update stay marked booked all Saturday; the free plan cannot release a cancellation by itself; the board proposed a £5 late-cancellation fee. Changed constraint (organisation): the board approves a paid plan that offers a cancelled tool to the next person on a waiting list automatically.
 
 The reader demonstrates and guides the task before asking for “A change you have made or plan to make”.
 
@@ -3025,6 +3357,13 @@ Section: learn. Stable action: learn-5.
 A warning is not a response to a structural effect.
 
 
+### Idea 6: When a constraint changes, retrace the loop: a response that f…
+
+Section: learn. Stable action: learn-6.
+
+When a constraint changes, retrace the loop: a response that fitted one delay or tool limit can become pointless or harmful once that limit goes.
+
+
 ### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
@@ -3041,6 +3380,30 @@ Section: learn. Stable action: workspace.
 Recommended route: Draw the loop your change sets off, with the delay marked on each arrow on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder. Alternative route: Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
+
+
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Case pack · Northside Tool Library. Made up for this module: practice material, not research about a real organisation. Members borrow tools from a side room of the town hall, paying a yearly subscription and a refundable deposit on each loan; most borrow a few times a year. A council community grant covers part of the running cost; it is reviewed each autumn and may be cut.
+- Borrower (member) · May book, cancel, collect and return their own loans. Sees only their own loans, deposits and due dates.
+- Front-desk volunteer (Saturday 10:00–13:00 rota of about twelve) · Checks about forty loans in and out each Saturday and signs up new members on paper. Sees that day’s bookings by first name, tool and locker number. May not see addresses or payments, refund deposits or change fees. New volunteers need a morning of training.
+- Maintenance volunteer (Tuesday evenings) · Marks each tool ready, needs repair or retired in the stock list, and must check every power tool after each loan before it goes out again: an insurance condition. Sees tool histories, not member details.
+- Coordinator (paid, part-time) · Copies each day’s booking requests into the stock list by hand at about 8 pm, sets the weekly locker codes, trains volunteers and allocates the Riverside memberships. Sees all bookings and members’ contact details. May not issue refunds.
+- Treasurer and board · The board, a volunteer committee, sets fees, deposits, opening hours and spending, and sees monthly totals rather than individual loans. The treasurer holds the only login to the payment account, refunds deposits in one batch on Tuesday evenings and writes the grant report.
+- Council grant officer (funder) · Funds 30 memberships for residents of the Riverside estate, receives a report each quarter, and has asked for each resident’s name and what they borrowed, to show the scheme is used.
+- Two local workshops · Each emails the coordinator to book about a dozen tools a month for its evening classes. You · A volunteer designer with about six hours a week. You can propose changes to the coordinator; you have no authority over volunteers, the board or the funder.
+- Booking tool and messages · A free hosted form. A request is confirmed only after the coordinator copies it into the stock list; confirmations and locker codes are emailed the next morning. A cancellation frees the tool only at the next 8 pm update. The free plan sends email only, cannot release a cancelled booking by itself, and sends one reminder the day before a tool is due back.
+- Lockers, payments and the stock list · Twelve coded lockers outside the hall take hand tools out of hours; power tools go out at the desk only. Most tools are single copies. The payment provider confirms within seconds and charges a small fee on every payment and every refund. The stock list is one spreadsheet: the only record of where each tool is and whether it is ready.
+- Last six months (coordinator’s notes) · Workshop requests fitted in within a week, every time. The new-member sign-up, called confusing by three new members, postponed four times so far. On three short-staffed Saturdays, returned power tools went unchecked and stayed off the shelf until Tuesday. No request from the grant officer refused. Written aim: “To make tools available to everybody in the neighbourhood, sustainably and inclusively.”
+- Since March · Cancelling takes one tap, so tools cancelled after Friday’s 8 pm update stay marked booked all Saturday. The coordinator thinks Friday-night cancellations have risen; nobody has counted. The board has proposed a £5 late-cancellation fee.
+- Open questions for the board · Whether to let power tools be collected from the lockers out of hours, to shorten the Saturday queue: a locker rule can be changed back within a week, but bigger lockers would be a one-off purchase. Three income ideas: a pre-ticked £1 donation on every booking, “Only 1 left!” on every tool page, and cancelling a subscription by phone only.
+- Constraints · The free booking plan stays this year; a paid plan needs board approval and money the grant does not cover. The payment provider cannot change this year. No analytics beyond the booking tool’s monthly counts and the stock list. The library does not lend tools that need training to use safely, such as chainsaws.
+- Evidence gaps · Nobody has counted the calls asking whether a deposit went through; the coordinator says “most”. Cancellations sit in the stock list, uncounted. Nobody knows why members do not renew, what share of bookings come from repeat members, or whether Riverside residents use their memberships. The board wants to describe the library against the hardware shop’s hire counter and a sharing app; the chair circulated an undated consultancy article on positioning that ends by selling workshops, and nobody has a verified source.
+- Two members, asked why they joined · “I needed a tile cutter for one bathroom; buying one to use once was silly.” “A drill for one weekend. The trip across town nearly put me off.”
 
 
 ### Choose a change and ask what follows
@@ -3065,11 +3428,11 @@ One change chosen, with what people will do differently once it exists.
 
 Section: practice-plan. Stable action: write-change-chosen.
 
-Write your answer for “A change you have made or plan to make”. Use the task instructions below to decide what to include.
+Your own, or the case pack’s one-tap cancellation, labelled as practice.
 
 **Answer:** A change you have made or plan to make
 
-
+Your own, or the case pack’s one-tap cancellation, labelled as practice.
 
 
 ### What people will do differently once it exists
@@ -3246,6 +3609,32 @@ A structural response that changes what is easy or visible, with a check that it
 **A warning:** Asking the person to solve a structural problem by paying attention. It is the commonest response and it moves the problem onto whoever is least able to fix it.
 
 
+### Try a supplied example
+
+Section: practice-plan. Stable action: step-4-try.
+
+From the case pack: tools cancelled after Friday’s 8 pm update stay marked booked all Saturday; the free plan cannot release a cancellation by itself; the board proposed a £5 late-cancellation fee. Changed constraint (organisation): the board approves a paid plan that offers a cancelled tool to the next person on a waiting list automatically.
+
+How does the best response change?
+
+- Automatic offering closes the loop, so drop the fee and watch whether waiting lists swell.
+- Keep the £5 fee as well, so cancellations stay rare and the waiting list stays short.
+- Nothing changes: the Saturday desk should still release cancelled tools by hand.
+
+<details>
+<summary>After your attempt</summary>
+
+Automatic offering closes the loop, so drop the fee and watch whether waiting lists swell. — The constraint removed the delay that made cancellations harmful, so a fee now only discourages honest cancelling. The new risk is a loop of its own: speculative waiting-list sign-ups. Affected: members and the board’s budget. Missing: how many members would use a waiting list.
+
+Keep the £5 fee as well, so cancellations stay rare and the waiting list stays short. — With automatic offering, a cancellation no longer idles the tool, so the fee punishes the behaviour the system now handles.
+
+Nothing changes: the Saturday desk should still release cancelled tools by hand. — Hand release was the workaround for the free plan’s limit; keeping it adds Saturday work the new plan has made unnecessary.
+
+Now design your own structural response in step 4, and check it for a loop of its own.
+
+</details>
+
+
 ### Try the distinction · 1 of 6
 
 Section: practice-plan. Stable action: step-4-sort-1.
@@ -3267,7 +3656,7 @@ a warning in disguise — Nobody is being asked to change their behaviour.
 
 a response that creates its own loop — It might, if the waiting list becomes the normal way to book. Worth watching, and much smaller than the loop it closes.
 
-Now choose your own response, and check it does not simply ask somebody to be more careful.
+Now design your own structural response in step 4, and check it for a loop of its own.
 
 </details>
 
@@ -3293,7 +3682,7 @@ a warning in disguise — It asks the person to solve a structural problem by be
 
 a response that creates its own loop — It mostly produces irritation rather than a loop.
 
-Now choose your own response, and check it does not simply ask somebody to be more careful.
+Now design your own structural response in step 4, and check it for a loop of its own.
 
 </details>
 
@@ -3319,7 +3708,7 @@ a warning in disguise — It has teeth rather than words.
 
 a response that creates its own loop — People stop cancelling and simply do not turn up, which is worse for the provider than a cancellation and invisible until the class starts.
 
-Now choose your own response, and check it does not simply ask somebody to be more careful.
+Now design your own structural response in step 4, and check it for a loop of its own.
 
 </details>
 
@@ -3345,7 +3734,7 @@ a warning in disguise — It is a real change rather than a message.
 
 a response that creates its own loop — The friction suppressed bookings before and would again, and the people it suppresses are the casual ones the provider needs.
 
-Now choose your own response, and check it does not simply ask somebody to be more careful.
+Now design your own structural response in step 4, and check it for a loop of its own.
 
 </details>
 
@@ -3371,7 +3760,7 @@ a warning in disguise — It states a fact about the class rather than an appeal
 
 a response that creates its own loop — It could suppress bookings for nearly-empty classes, which is worth watching and is roughly what the provider needs to know anyway.
 
-Now choose your own response, and check it does not simply ask somebody to be more careful.
+Now design your own structural response in step 4, and check it for a loop of its own.
 
 </details>
 
@@ -3397,7 +3786,7 @@ a warning in disguise — A polite one, and it moves the problem onto the person
 
 a response that creates its own loop — It is too weak to produce one.
 
-Now choose your own response, and check it does not simply ask somebody to be more careful.
+Now design your own structural response in step 4, and check it for a loop of its own.
 
 </details>
 
@@ -3430,20 +3819,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You plan to monitor for unintended consequences after shipping. Is that enough?
+The board says it will “keep an eye on” the one-tap cancellation change. The case pack says a cancellation frees a tool only at the next 8 pm update. Why is watching not enough?
 
-- Yes, provided the monitoring is thorough.
-- Yes, since you cannot predict every consequence.
-- Monitoring finds them after they have compounded and been attributed to something else. Tracing the likely loop before shipping costs an hour.
+- It is enough: nobody can predict every consequence, so watching is the honest option.
+- It is enough if the coordinator checks the stock list carefully every single evening.
+- The effect lands on Saturday, after the desk closes, and gets blamed on low demand.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, provided the monitoring is thorough. — Thorough monitoring of the wrong thing, in the wrong week, finds nothing.
+It is enough: nobody can predict every consequence, so watching is the honest option. — Not every consequence can be predicted; this one is traceable from facts already in the pack.
 
-Yes, since you cannot predict every consequence. — You cannot predict all of them, and the obvious loop is usually traceable in an hour.
+It is enough if the coordinator checks the stock list carefully every single evening. — Careful checking happens at 8 pm, after Saturday’s desk has closed, which is the delay that hides the loop.
 
-Monitoring finds them after they have compounded and been attributed to something else. Tracing the likely loop before shipping costs an hour. — Six weeks of delay means the turned-away attendees get blamed on overbooking rather than on a cancellation button. Nobody connects them without the loop drawn in advance.
+The effect lands on Saturday, after the desk closes, and gets blamed on low demand. — Watching finds effects after they compound and get attributed to something else. Tracing the loop takes an hour: one-tap cancel, tools idle on Saturday, members see “booked”, requests fall, the board reads it as low demand.
 
 Improve: Trace the loop in step 2 with a delay on every arrow, before shipping. Record the change in step 5.
 
@@ -3460,20 +3849,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Your fix for the loop is a confirmation asking whether the person is sure. What is wrong with it?
+Your proposed fix is a Friday-evening pop-up: “Late cancellations leave tools unused. Are you sure?” What is wrong with it?
 
-- It adds friction, which was the thing you removed.
-- It asks somebody to solve a structural problem by being more considerate, and the people who read it are the least likely to be the problem.
-- Nothing, if the wording is good.
+- It asks members to fix a structural delay by being considerate, and the delay stays.
+- It adds a tap to cancelling, which is the friction the March change set out to remove.
+- Nothing, if the wording is kind enough that members do not feel blamed for cancelling.
 
 <details>
 <summary>After your attempt</summary>
 
-It adds friction, which was the thing you removed. — It adds a little, and the deeper problem is who it asks to fix things.
+It asks members to fix a structural delay by being considerate, and the delay stays. — A structural response changes what is easy, visible or automatic. Letting the Saturday desk release Friday-night cancellations at opening — a permission change, since the free plan cannot do it — closes the loop without anybody being more careful.
 
-It asks somebody to solve a structural problem by being more considerate, and the people who read it are the least likely to be the problem. — A structural response changes what is easy, visible or automatic. Offering the place to a waiting list closes the loop where it does harm, without anybody having to be more careful.
+It adds a tap to cancelling, which is the friction the March change set out to remove. — It does add friction; the deeper problem is that it puts the fix on the member rather than on the delay.
 
-Nothing, if the wording is good. — Good wording makes a better warning. It is still a warning.
+Nothing, if the wording is kind enough that members do not feel blamed for cancelling. — A kinder warning is still a warning; the tool still sits idle until the evening update.
 
 Improve: Replace any warning in step 4 with a change to what is easy or visible. Record the change in step 5.
 
@@ -3490,20 +3879,20 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You consider a fee for late cancellation. What should you check?
+The board proposes a £5 late-cancellation fee. What should you check before backing it?
 
-- Whether the fee is large enough to change behaviour.
-- Whether it creates its own loop: people stop cancelling and simply do not turn up, which is worse and invisible until the class starts.
-- Whether members would accept it.
+- Whether £5 is a large enough amount to change how members behave on Friday evenings.
+- Whether members would accept a fee, by asking a few of them what they think.
+- Whether members would stop cancelling and just not collect, leaving tools idle.
 
 <details>
 <summary>After your attempt</summary>
 
-Whether the fee is large enough to change behaviour. — It will change behaviour. The question is which behaviour.
+Whether £5 is a large enough amount to change how members behave on Friday evenings. — It will change behaviour; the question is which behaviour.
 
-Whether it creates its own loop: people stop cancelling and simply do not turn up, which is worse and invisible until the class starts. — It is a real incentive change rather than a warning, which is what makes it worth examining rather than dismissing. Every structural response needs the same check.
+Whether members would accept a fee, by asking a few of them what they think. — Worth knowing, and acceptance is not what makes a response backfire.
 
-Whether members would accept it. — Worth knowing, and it is not what makes the response backfire.
+Whether members would stop cancelling and just not collect, leaving tools idle. — A fee is a real incentive change, which is why it deserves checking rather than dismissing. A no-show is worse than a cancellation: the tool stays booked and nobody finds out until the desk closes.
 
 Improve: Check your own response for a loop of its own in step 4, and say what it would be. Record the change in step 5.
 
@@ -3543,15 +3932,41 @@ Write your answer for “What you would watch for, and when it would appear”. 
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A laundrette lets people book machines in an app, free to cancel up to the start time. People now book several machines and cancel the spares at the last minute, so walk-in customers find machines “booked” but empty. The owner is about to hire an assistant who will be there in the evenings only.
+
+**Task:** Decide what structural change the laundrette should make now an evening assistant is coming, and explain why, who is affected and what evidence is missing.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Adds a warning or a fee for last-minute cancelling without tracing the loop, and ignores the new assistant.
+- Adequate: Traces the loop (free late cancelling, over-booking, idle “booked” machines, walk-ins turned away) and makes a structural change, such as releasing unstarted bookings after ten minutes, with the evening assistant able to release them by hand. Names walk-ins and app users as affected.
+- Strong: As adequate, and checks the change for its own loop (late arrivals losing machines), names the evidence gap (how many bookings are cancelled in the last minutes), and says what to watch and when.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -3582,7 +3997,7 @@ Adaptation: The behaviour your change makes easy. People do more of whatever you
 Loop: Where the effect of a change feeds back into its own cause. It is what makes a small change produce a large and delayed result.
 
 Supplied practice material (fictional or labelled practice, not my research):
-Made-up example. Making cancellation one tap at a class provider, and watching the consequence arrive somewhere else. Cancellation went from a phone call to one tap. An obvious improvement, and everybody who had struggled with it was pleased.
+From the case pack: tools cancelled after Friday’s 8 pm update stay marked booked all Saturday; the free plan cannot release a cancellation by itself; the board proposed a £5 late-cancellation fee. Changed constraint (organisation): the board approves a paid plan that offers a cancelled tool to the next person on a waiting list automatically.
 
 Activity: Change one constraint in the supplied strategy case. Ask me which choice changes, who gains, who carries the cost and what evidence would make me reconsider.
 
@@ -3592,7 +4007,7 @@ When the activity is finished, tell me to return to the course answer called “
 
 **Come back to the course:** Return to “A change you have made or plan to make”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “A change you have made or plan to make” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “A change you have made or plan to make” and write one sentence in your own words.
 
 </details>
 <details>
@@ -3713,7 +4128,7 @@ Product strategy connects a real problem, evidence, constraints and trade-offs t
 - **Affect or block:** Anybody whose agreement you need or whose disagreement would stop it. It includes people with no formal authority at all.
 - **Interest:** How much they care about this work. It is independent of whether they can do anything about it.
 
-**Quick example.** Made-up example. Placing stakeholders for booking work, and placing them by how much they talk. The two people who commented most: the provider, who has views about everything, and a committee member who replies to every message.
+**Quick example.** From the case pack: you propose that the Saturday desk releases Friday-night cancellations at opening; the treasurer refunds deposits on Tuesdays; the maintenance volunteer must check power tools after every loan. Changed constraint (risk): the insurer now says no power tool may be released unless the stock list shows its last check.
 
 The reader demonstrates and guides the task before asking for “Everybody who can affect or block the work, and what each is accountable for”.
 
@@ -3759,6 +4174,13 @@ Section: learn. Stable action: learn-5.
 The quiet blocker matters more than the loud sceptic.
 
 
+### Idea 6: When a rule or risk changes, re-map who carries the cost: the…
+
+Section: learn. Stable action: learn-6.
+
+When a rule or risk changes, re-map who carries the cost: the person whose accountability it touches becomes the one to talk to first.
+
+
 ### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
@@ -3775,6 +4197,30 @@ Section: learn. Stable action: workspace.
 Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
+
+
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Case pack · Northside Tool Library. Made up for this module: practice material, not research about a real organisation. Members borrow tools from a side room of the town hall, paying a yearly subscription and a refundable deposit on each loan; most borrow a few times a year. A council community grant covers part of the running cost; it is reviewed each autumn and may be cut.
+- Borrower (member) · May book, cancel, collect and return their own loans. Sees only their own loans, deposits and due dates.
+- Front-desk volunteer (Saturday 10:00–13:00 rota of about twelve) · Checks about forty loans in and out each Saturday and signs up new members on paper. Sees that day’s bookings by first name, tool and locker number. May not see addresses or payments, refund deposits or change fees. New volunteers need a morning of training.
+- Maintenance volunteer (Tuesday evenings) · Marks each tool ready, needs repair or retired in the stock list, and must check every power tool after each loan before it goes out again: an insurance condition. Sees tool histories, not member details.
+- Coordinator (paid, part-time) · Copies each day’s booking requests into the stock list by hand at about 8 pm, sets the weekly locker codes, trains volunteers and allocates the Riverside memberships. Sees all bookings and members’ contact details. May not issue refunds.
+- Treasurer and board · The board, a volunteer committee, sets fees, deposits, opening hours and spending, and sees monthly totals rather than individual loans. The treasurer holds the only login to the payment account, refunds deposits in one batch on Tuesday evenings and writes the grant report.
+- Council grant officer (funder) · Funds 30 memberships for residents of the Riverside estate, receives a report each quarter, and has asked for each resident’s name and what they borrowed, to show the scheme is used.
+- Two local workshops · Each emails the coordinator to book about a dozen tools a month for its evening classes. You · A volunteer designer with about six hours a week. You can propose changes to the coordinator; you have no authority over volunteers, the board or the funder.
+- Booking tool and messages · A free hosted form. A request is confirmed only after the coordinator copies it into the stock list; confirmations and locker codes are emailed the next morning. A cancellation frees the tool only at the next 8 pm update. The free plan sends email only, cannot release a cancelled booking by itself, and sends one reminder the day before a tool is due back.
+- Lockers, payments and the stock list · Twelve coded lockers outside the hall take hand tools out of hours; power tools go out at the desk only. Most tools are single copies. The payment provider confirms within seconds and charges a small fee on every payment and every refund. The stock list is one spreadsheet: the only record of where each tool is and whether it is ready.
+- Last six months (coordinator’s notes) · Workshop requests fitted in within a week, every time. The new-member sign-up, called confusing by three new members, postponed four times so far. On three short-staffed Saturdays, returned power tools went unchecked and stayed off the shelf until Tuesday. No request from the grant officer refused. Written aim: “To make tools available to everybody in the neighbourhood, sustainably and inclusively.”
+- Since March · Cancelling takes one tap, so tools cancelled after Friday’s 8 pm update stay marked booked all Saturday. The coordinator thinks Friday-night cancellations have risen; nobody has counted. The board has proposed a £5 late-cancellation fee.
+- Open questions for the board · Whether to let power tools be collected from the lockers out of hours, to shorten the Saturday queue: a locker rule can be changed back within a week, but bigger lockers would be a one-off purchase. Three income ideas: a pre-ticked £1 donation on every booking, “Only 1 left!” on every tool page, and cancelling a subscription by phone only.
+- Constraints · The free booking plan stays this year; a paid plan needs board approval and money the grant does not cover. The payment provider cannot change this year. No analytics beyond the booking tool’s monthly counts and the stock list. The library does not lend tools that need training to use safely, such as chainsaws.
+- Evidence gaps · Nobody has counted the calls asking whether a deposit went through; the coordinator says “most”. Cancellations sit in the stock list, uncounted. Nobody knows why members do not renew, what share of bookings come from repeat members, or whether Riverside residents use their memberships. The board wants to describe the library against the hardware shop’s hire counter and a sharing app; the chair circulated an undated consultancy article on positioning that ends by selling workshops, and nobody has a verified source.
+- Two members, asked why they joined · “I needed a tile cutter for one bathroom; buying one to use once was silly.” “A drill for one weekend. The trip across town nearly put me off.”
 
 
 ### List by accountability
@@ -3799,22 +4245,22 @@ Everybody who can affect or block the work listed by what they are accountable f
 
 Section: practice-plan. Stable action: write-people-listed.
 
-Accountable for, not their job title. What does somebody else ask them about?
+Accountable for, not their job title: what does somebody else ask them about? Use roles, not names; this answer syncs to your course reviewer. The case pack’s people are a complete route, labelled as practice.
 
 **Answer:** Everybody who can affect or block the work, and what each is accountable for
 
-Accountable for, not their job title. What does somebody else ask them about?
+Accountable for, not their job title: what does somebody else ask them about? Use roles, not names; this answer syncs to your course reviewer. The case pack’s people are a complete route, labelled as practice.
 
 
 ### If you have no team, whose decisions actually constrain your work
 
 Section: practice-plan. Stable action: write-no-team-route.
 
-A client, a provider, a platform, a family member whose time you need. The mapping works on any of them.
+A client, a provider, a platform, a family member whose time you need, described by role. The mapping works on any of them, or on the case pack.
 
 **Answer:** If you have no team, whose decisions actually constrain your work
 
-A client, a provider, a platform, a family member whose time you need. The mapping works on any of them.
+A client, a provider, a platform, a family member whose time you need, described by role. The mapping works on any of them, or on the case pack.
 
 
 ### Place them
@@ -3862,22 +4308,22 @@ Made-up example. Placing stakeholders for booking work, and placing them by how 
 
 Section: practice-plan. Stable action: write-placed.
 
-Two separate axes. Somebody can care enormously and decide nothing.
+Two separate axes; somebody can care enormously and decide nothing. Roles, not names.
 
 **Answer:** Each person placed on interest and on influence
 
-Two separate axes. Somebody can care enormously and decide nothing.
+Two separate axes; somebody can care enormously and decide nothing. Roles, not names.
 
 
 ### The allies with high interest and no influence
 
 Section: practice-plan. Stable action: write-allies-no-influence.
 
-Usually the people who know best where the real problems are.
+Usually the people who know best where the real problems are. Roles, not names.
 
 **Answer:** The allies with high interest and no influence
 
-Usually the people who know best where the real problems are.
+Usually the people who know best where the real problems are. Roles, not names.
 
 
 ### Understand the opposition
@@ -3925,11 +4371,11 @@ Made-up example. Mapping stakeholders for booking work, and reading opposition a
 
 Section: practice-plan. Stable action: write-costliest-opposition.
 
-Write your answer for “Whose opposition would cost most, and what they are accountable for”. Use the task instructions below to decide what to include.
+A role, not a name.
 
 **Answer:** Whose opposition would cost most, and what they are accountable for
 
-
+A role, not a name.
 
 
 ### Why their opposition is rational from where they stand
@@ -3961,6 +4407,32 @@ What your work does for them, or an honest statement that you are asking a favou
 **Asking a favour:** A legitimate move, once. Asking one while calling it a benefit is how people stop believing your framing entirely.
 
 
+### Try a supplied example
+
+Section: practice-plan. Stable action: step-4-try.
+
+From the case pack: you propose that the Saturday desk releases Friday-night cancellations at opening; the treasurer refunds deposits on Tuesdays; the maintenance volunteer must check power tools after every loan. Changed constraint (risk): the insurer now says no power tool may be released unless the stock list shows its last check.
+
+How should your approach change?
+
+- Drop the proposal, since the insurer’s new condition makes any release too risky.
+- Release hand tools only, and power tools once the stock list shows their check.
+- Keep the proposal unchanged and ask the insurer to make an exception for Saturdays.
+
+<details>
+<summary>After your attempt</summary>
+
+Drop the proposal, since the insurer’s new condition makes any release too risky. — The condition applies to power tools only; dropping everything gives up the hand-tool releases it does not touch.
+
+Release hand tools only, and power tools once the stock list shows their check. — The condition narrows the proposal rather than ending it, and it answers the maintenance volunteer’s likely reservation in writing. Affected: Saturday borrowers of power tools and the desk volunteers, who need the check column visible. Missing: how many released tools are power tools.
+
+Keep the proposal unchanged and ask the insurer to make an exception for Saturdays. — Asking for an exception sets you against the condition that protects the library’s cover, and puts the work at risk.
+
+Now design your own approach in step 4, and write what it costs you rather than them.
+
+</details>
+
+
 ### Try the distinction · 1 of 6
 
 Section: practice-plan. Stable action: step-4-sort-1.
@@ -3982,7 +4454,7 @@ ignores it — It is aimed precisely at it.
 
 makes it worse — It costs you scope rather than costing them anything.
 
-Now design your own approach from the first group, and write what it costs you rather than them.
+Now design your own approach in step 4, and write what it costs you rather than them.
 
 </details>
 
@@ -4008,7 +4480,7 @@ ignores it — It is the most direct answer available.
 
 makes it worse — It costs you an afternoon and costs them nothing.
 
-Now design your own approach from the first group, and write what it costs you rather than them.
+Now design your own approach in step 4, and write what it costs you rather than them.
 
 </details>
 
@@ -4034,7 +4506,7 @@ ignores it — It does more than ignore it.
 
 makes it worse — They now have the same problem and a reason to be careful with you. It also works once.
 
-Now design your own approach from the first group, and write what it costs you rather than them.
+Now design your own approach in step 4, and write what it costs you rather than them.
 
 </details>
 
@@ -4060,7 +4532,7 @@ ignores it — It answers a question nobody asked. Repeating the value is what p
 
 makes it worse — It is ineffective rather than damaging, though the third repetition begins to be.
 
-Now design your own approach from the first group, and write what it costs you rather than them.
+Now design your own approach in step 4, and write what it costs you rather than them.
 
 </details>
 
@@ -4086,7 +4558,7 @@ ignores it — It is shaped entirely around their constraint.
 
 makes it worse — It delays your work, which is a cost to you rather than to them.
 
-Now design your own approach from the first group, and write what it costs you rather than them.
+Now design your own approach in step 4, and write what it costs you rather than them.
 
 </details>
 
@@ -4112,7 +4584,7 @@ ignores it — Worse than ignoring: it makes the objection unanswerable by makin
 
 makes it worse — It also gets back to them, and it costs you the next five conversations.
 
-Now design your own approach from the first group, and write what it costs you rather than them.
+Now design your own approach in step 4, and write what it costs you rather than them.
 
 </details>
 
@@ -4145,20 +4617,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-If the design is right, will it win?
+You propose letting the Saturday desk release Friday-night cancellations at opening. The treasurer objects that it “will cause chaos”. In the case pack she writes the grant report and refunds deposits. How should you read her objection?
 
-- Usually, if it is explained well enough.
-- Designs are adopted by people with their own accountabilities and constraints. Understanding those is not politics; it is the ordinary work of getting something built.
-- No, which is why influence is a separate skill.
+- As resistance to change, which a clearer explanation of the benefits should overcome.
+- As a seniority issue: board members expect to be consulted before any rota change.
+- As information: each release means another deposit refund, and refunds are her batch.
 
 <details>
 <summary>After your attempt</summary>
 
-Usually, if it is explained well enough. — Explaining it again is what people do when they have not understood the objection.
+As resistance to change, which a clearer explanation of the benefits should overcome. — Explaining the benefits again is what people do when they have not understood the objection.
 
-Designs are adopted by people with their own accountabilities and constraints. Understanding those is not politics; it is the ordinary work of getting something built. — A developer objecting to work that threatens a committed date is not resisting change. The proposal was costing him the thing somebody else asks him about.
+As a seniority issue: board members expect to be consulted before any rota change. — Consultation may matter; her objection names a specific cost, which seniority does not explain.
 
-No, which is why influence is a separate skill. — It is the same skill applied to a different constraint, which is what makes it learnable.
+As information: each release means another deposit refund, and refunds are her batch. — Opposition is usually a correct reading of a cost that falls on that person. Released bookings mean more refunds and more fees in her Tuesday batch; answering that cost is the work.
 
 Improve: Write the rational basis of the costliest opposition in step 3, in the first person. Record the change in step 5.
 
@@ -4175,20 +4647,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Should you map stakeholders by seniority?
+Mapping the same proposal, you put the board chair at the top because she is most senior. The case pack says the desk volunteers check about forty loans each Saturday and decide nothing. How should the map change?
 
-- No. Map by accountability, and place interest and influence separately, because somebody can care enormously and decide nothing.
-- Yes, since senior people decide.
-- Yes, with the working level noted separately.
+- Keep seniority as the order, adding the desk volunteers as a footnote for context.
+- Remove the desk volunteers, since people with no influence cannot block the work.
+- By accountability, with interest and influence apart: the desk knows most, decides nothing.
 
 <details>
 <summary>After your attempt</summary>
 
-No. Map by accountability, and place interest and influence separately, because somebody can care enormously and decide nothing. — The assistant with high interest and low influence usually knows best where the real problems are, and a seniority map makes them invisible.
+Keep seniority as the order, adding the desk volunteers as a footnote for context. — A seniority map with a footnote still predicts nothing about who will support or stop the change.
 
-Yes, since senior people decide. — They decide some things. What they are accountable for predicts which.
+Remove the desk volunteers, since people with no influence cannot block the work. — They cannot block it formally; they can tell you where it will break, and they will be the ones running it.
 
-Yes, with the working level noted separately. — That is a seniority map with a footnote.
+By accountability, with interest and influence apart: the desk knows most, decides nothing. — Somebody can care enormously and decide nothing. The Saturday volunteers see every Friday-night cancellation turn into an idle locker, which makes them the best source on the problem, and a seniority map hides them.
 
 Improve: Rewrite your list in step 1 by what each person is accountable for. Record the change in step 5.
 
@@ -4205,24 +4677,24 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Who matters more: the loud sceptic or the quiet one who has been agreeable throughout?
+The maintenance volunteer has agreed with everything in two meetings and done nothing since. The case pack says he must check each returned power tool before it goes out again. Who needs your attention first?
 
-- Usually the quiet one. The sceptic tells you their objection; the quiet one does not, and the work simply never quite happens.
-- The sceptic, since opposition has to be answered.
-- Neither; both should be treated the same.
+- Both equally, since giving one more attention than the other would seem unfair.
+- The quiet volunteer: an unstated worry about unchecked power tools could stall it unseen.
+- The treasurer, since stated opposition is the thing that has to be answered first.
 
 <details>
 <summary>After your attempt</summary>
 
-Usually the quiet one. The sceptic tells you their objection; the quiet one does not, and the work simply never quite happens. — A stated objection can be answered. An unstated reservation stops things in ways nobody can point at, and finding it is worth more than winning the argument with the sceptic.
+Both equally, since giving one more attention than the other would seem unfair. — One has given a reason and one has not, which is the whole difference between them.
 
-The sceptic, since opposition has to be answered. — It does, and it is the easy case, because you know what it is.
+The quiet volunteer: an unstated worry about unchecked power tools could stall it unseen. — A stated objection can be answered; an unstated reservation stops things in ways nobody can point at. Releasing tools touches his insurance duty, so asking him directly is worth more than winning the treasurer’s argument.
 
-Neither; both should be treated the same. — One has given you their reason and one has not, which is the whole difference.
+The treasurer, since stated opposition is the thing that has to be answered first. — Her objection matters, and it is the easier case, because you know what it is.
 
 Improve: Name the quiet blocker and their probable reservation in step 5, and record the change.
 
-Check again: You named a person rather than a general risk.
+Check again: You named a role and a probable reservation rather than a general risk.
 
 Answers to revisit: quiet-blocker, improvement-made
 
@@ -4251,22 +4723,48 @@ The quiet blocker identified, with what their unstated reservation probably is.
 
 Section: practice. Stable action: write-quiet-blocker.
 
-The loud sceptic tells you their objection. The quiet one does not, and is usually the one who decides whether it survives.
+The loud sceptic tells you their objection; the quiet one does not, and often decides whether it survives. Name the role and the probable reservation, not the person.
 
 **Answer:** The quiet blocker: somebody whose unstated reservations could stop this
 
-The loud sceptic tells you their objection. The quiet one does not, and is usually the one who decides whether it survives.
+The loud sceptic tells you their objection; the quiet one does not, and often decides whether it survives. Name the role and the probable reservation, not the person.
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A choir wants to move rehearsals from Tuesday to Thursday so a new conductor can lead them. The secretary, who books the hall, is enthusiastic. The treasurer has said nothing. The hall’s owner has just announced that Thursday bookings now need a deposit, which the treasurer would have to pay from a tight budget.
+
+**Task:** Decide whose position matters most now and how you would approach them, and explain why, naming who is affected and what you still need to find out.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Focuses on the enthusiastic secretary or on persuading everyone of the conductor’s value; ignores the silent treasurer and the new deposit.
+- Adequate: Identifies the treasurer as the costliest, quiet opposition because the deposit falls on her budget, and approaches her about that cost (sharing it, or a trial month) rather than re-explaining the benefit.
+- Strong: As adequate, and names who else is affected (members who cannot do Thursdays), what is missing (the deposit amount and whether it is refundable), and why the hall’s change shifted the map.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -4297,7 +4795,7 @@ Affect or block: Anybody whose agreement you need or whose disagreement would st
 Interest: How much they care about this work. It is independent of whether they can do anything about it.
 
 Supplied practice material (fictional or labelled practice, not my research):
-Made-up example. Placing stakeholders for booking work, and placing them by how much they talk. The two people who commented most: the provider, who has views about everything, and a committee member who replies to every message.
+From the case pack: you propose that the Saturday desk releases Friday-night cancellations at opening; the treasurer refunds deposits on Tuesdays; the maintenance volunteer must check power tools after every loan. Changed constraint (risk): the insurer now says no power tool may be released unless the stock list shows its last check.
 
 Activity: Change one constraint in the supplied strategy case. Ask me which choice changes, who gains, who carries the cost and what evidence would make me reconsider.
 
@@ -4307,7 +4805,7 @@ When the activity is finished, tell me to return to the course answer called “
 
 **Come back to the course:** Return to “Everybody who can affect or block the work, and what each is accountable for”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Everybody who can affect or block the work, and what each is accountable for” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “Everybody who can affect or block the work, and what each is accountable for” and write one sentence in your own words.
 
 </details>
 <details>
@@ -4428,7 +4926,7 @@ Product strategy connects a real problem, evidence, constraints and trade-offs t
 - **Assume:** Something you are treating as true without evidence, usually reasonably. It is the category that needs writing down, because it is what you check later.
 - **Guess:** Something you have no basis for at all. Naming it separately stops it being quietly promoted.
 
-**Quick example.** Made-up example. Listing what was known before a decision, and listing what everybody said. That members find the payment step confusing, that late cancellations are common, and that the provider wants a waiting list.
+**Quick example.** From the case pack: the board must decide this month whether power tools can be collected from lockers out of hours; a locker rule can be changed back within a week; insurance requires a check after every power-tool loan. Changed constraint (risk): the insurer says one unchecked power tool lent out would end the library’s cover.
 
 The reader demonstrates and guides the task before asking for “The open decision”.
 
@@ -4436,7 +4934,7 @@ The reader demonstrates and guides the task before asking for “The open decisi
 
 Section: learn. Stable action: welcome.
 
-Make one real decision under uncertainty, recording what you knew, what you assumed, what would have changed it, and how you will find out whether it was right.
+Make one decision under uncertainty — a real one from your project, or the case pack’s open decision labelled as practice — recording what you knew, what you assumed, what would have changed it, and how you will find out whether it was right.
 
 
 ### Separate what you know, what you assume and what you are guessing
@@ -4474,6 +4972,13 @@ Section: learn. Stable action: learn-5.
 A decision with no way to find out it was wrong is a bet, not a decision.
 
 
+### Idea 6: When the cost of being wrong changes — a new risk, a harder un…
+
+Section: learn. Stable action: learn-6.
+
+When the cost of being wrong changes — a new risk, a harder undo — the certainty a decision needs changes too; recheck it rather than reusing the old answer.
+
+
 ### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
@@ -4490,6 +4995,30 @@ Section: learn. Stable action: workspace.
 Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
+
+
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Case pack · Northside Tool Library. Made up for this module: practice material, not research about a real organisation. Members borrow tools from a side room of the town hall, paying a yearly subscription and a refundable deposit on each loan; most borrow a few times a year. A council community grant covers part of the running cost; it is reviewed each autumn and may be cut.
+- Borrower (member) · May book, cancel, collect and return their own loans. Sees only their own loans, deposits and due dates.
+- Front-desk volunteer (Saturday 10:00–13:00 rota of about twelve) · Checks about forty loans in and out each Saturday and signs up new members on paper. Sees that day’s bookings by first name, tool and locker number. May not see addresses or payments, refund deposits or change fees. New volunteers need a morning of training.
+- Maintenance volunteer (Tuesday evenings) · Marks each tool ready, needs repair or retired in the stock list, and must check every power tool after each loan before it goes out again: an insurance condition. Sees tool histories, not member details.
+- Coordinator (paid, part-time) · Copies each day’s booking requests into the stock list by hand at about 8 pm, sets the weekly locker codes, trains volunteers and allocates the Riverside memberships. Sees all bookings and members’ contact details. May not issue refunds.
+- Treasurer and board · The board, a volunteer committee, sets fees, deposits, opening hours and spending, and sees monthly totals rather than individual loans. The treasurer holds the only login to the payment account, refunds deposits in one batch on Tuesday evenings and writes the grant report.
+- Council grant officer (funder) · Funds 30 memberships for residents of the Riverside estate, receives a report each quarter, and has asked for each resident’s name and what they borrowed, to show the scheme is used.
+- Two local workshops · Each emails the coordinator to book about a dozen tools a month for its evening classes. You · A volunteer designer with about six hours a week. You can propose changes to the coordinator; you have no authority over volunteers, the board or the funder.
+- Booking tool and messages · A free hosted form. A request is confirmed only after the coordinator copies it into the stock list; confirmations and locker codes are emailed the next morning. A cancellation frees the tool only at the next 8 pm update. The free plan sends email only, cannot release a cancelled booking by itself, and sends one reminder the day before a tool is due back.
+- Lockers, payments and the stock list · Twelve coded lockers outside the hall take hand tools out of hours; power tools go out at the desk only. Most tools are single copies. The payment provider confirms within seconds and charges a small fee on every payment and every refund. The stock list is one spreadsheet: the only record of where each tool is and whether it is ready.
+- Last six months (coordinator’s notes) · Workshop requests fitted in within a week, every time. The new-member sign-up, called confusing by three new members, postponed four times so far. On three short-staffed Saturdays, returned power tools went unchecked and stayed off the shelf until Tuesday. No request from the grant officer refused. Written aim: “To make tools available to everybody in the neighbourhood, sustainably and inclusively.”
+- Since March · Cancelling takes one tap, so tools cancelled after Friday’s 8 pm update stay marked booked all Saturday. The coordinator thinks Friday-night cancellations have risen; nobody has counted. The board has proposed a £5 late-cancellation fee.
+- Open questions for the board · Whether to let power tools be collected from the lockers out of hours, to shorten the Saturday queue: a locker rule can be changed back within a week, but bigger lockers would be a one-off purchase. Three income ideas: a pre-ticked £1 donation on every booking, “Only 1 left!” on every tool page, and cancelling a subscription by phone only.
+- Constraints · The free booking plan stays this year; a paid plan needs board approval and money the grant does not cover. The payment provider cannot change this year. No analytics beyond the booking tool’s monthly counts and the stock list. The library does not lend tools that need training to use safely, such as chainsaws.
+- Evidence gaps · Nobody has counted the calls asking whether a deposit went through; the coordinator says “most”. Cancellations sit in the stock list, uncounted. Nobody knows why members do not renew, what share of bookings come from repeat members, or whether Riverside residents use their memberships. The board wants to describe the library against the hardware shop’s hire counter and a sharing app; the chair circulated an undated consultancy article on positioning that ends by selling workshops, and nobody has a verified source.
+- Two members, asked why they joined · “I needed a tile cutter for one bathroom; buying one to use once was silly.” “A drill for one weekend. The trip across town nearly put me off.”
 
 
 ### Separate the inputs
@@ -4539,11 +5068,11 @@ Made-up example. Listing what was known before a decision, and listing what ever
 
 Section: practice-plan. Stable action: write-decision-open.
 
-Write your answer for “The open decision”. Use the task instructions below to decide what to include.
+One of your own, or the case pack’s locker question, labelled as practice.
 
 **Answer:** The open decision
 
-
+One of your own, or the case pack’s locker question, labelled as practice.
 
 
 ### What you know, what you assume, and what you are guessing
@@ -4584,6 +5113,32 @@ What being wrong would cost and to whom, how reversible it is for everybody affe
 **Reversible for everybody:** Whether the consequences can be undone, not whether the change can. Module 15 made the same distinction about measurement.
 
 **Certainty proportionate to cost:** A cheap, reversible decision justifies almost none. An expensive, irreversible one justifies waiting.
+
+
+### Try a supplied example
+
+Section: practice-plan. Stable action: step-2-try.
+
+From the case pack: the board must decide this month whether power tools can be collected from lockers out of hours; a locker rule can be changed back within a week; insurance requires a check after every power-tool loan. Changed constraint (risk): the insurer says one unchecked power tool lent out would end the library’s cover.
+
+How much certainty does the decision now need?
+
+- Less than before: the insurer’s warning makes the decision for the board.
+- The same as before: the locker rule can still be changed back within a week.
+- More than before: one failure is irreversible, so the check must be proven first.
+
+<details>
+<summary>After your attempt</summary>
+
+Less than before: the insurer’s warning makes the decision for the board. — The warning raises the stakes; it does not decide whether a safe version exists, which is still the board’s question.
+
+The same as before: the locker rule can still be changed back within a week. — Reversibility is about consequences, not settings: a week is long enough for the irreversible loan to happen.
+
+More than before: one failure is irreversible, so the check must be proven first. — The rule is still reversible; the consequence is not. One unchecked loan could end the cover for everybody, so the trial waits until a check before every locker loan is shown to work. Affected: every member. Missing: whether checks can happen before Saturday.
+
+Now write the cost of being wrong in step 2, for everybody affected, and how much certainty that justifies.
+
+</details>
 
 
 ### What being wrong would cost, and to whom
@@ -4884,20 +5439,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Somebody says you need more research before deciding. What should you ask?
+The board must decide this month whether power tools can be collected from the lockers out of hours. A member says “we need more research first”. What should you ask?
 
-- Whether the research is affordable.
-- Which finding would produce a different decision. If none would, decide now and record that.
-- How long the research would take.
+- Whether the budget can stretch to some research before the board meets this month.
+- Which finding would change the decision, and whether any can be had this month.
+- How long a proper survey of members’ collection habits would take to run.
 
 <details>
 <summary>After your attempt</summary>
 
-Whether the research is affordable. — Also secondary. Research that would not change the decision is unaffordable at any price.
+Whether the budget can stretch to some research before the board meets this month. — Research that would not change the decision is unaffordable at any price.
 
-Which finding would produce a different decision. If none would, decide now and record that. — Four of five things research could tell you are usually interesting and irrelevant to the choice in front of you. The fifth is often answerable in twenty minutes from a record that already exists.
+Which finding would change the decision, and whether any can be had this month. — Most things research could tell you are interesting and irrelevant to this choice. One might decide it — how many Saturday collections are power tools — and the stock list already records it, uncounted.
 
-How long the research would take. — A good second question. Asked first, it turns the conversation into a negotiation about scheduling.
+How long a proper survey of members’ collection habits would take to run. — A fair second question; asked first, it turns the decision into a scheduling negotiation.
 
 Improve: List what research could tell you in step 3 and cross off everything that would not change the choice. Record the change in step 5.
 
@@ -4914,20 +5469,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Is waiting for certainty the safe option?
+The case pack says a locker rule can be changed back within a week, but bigger lockers would be a one-off purchase. The board wants certainty on both before acting. What is the better approach?
 
-- Waiting is itself a decision, usually a worse one, because the current situation continues while nobody has chosen it.
-- Yes, for anything expensive or irreversible.
-- Yes, since a wrong decision is worse than a late one.
+- Wait on both until a full year of evidence shows what members actually prefer to do.
+- Trial the reversible rule now with tools that fit; keep the purchase for later.
+- Buy the lockers now, since a rule change without them cannot be tested fairly.
 
 <details>
 <summary>After your attempt</summary>
 
-Waiting is itself a decision, usually a worse one, because the current situation continues while nobody has chosen it. — Deciding at the last responsible moment means deciding when waiting stops adding information. Waiting past that is a delay that feels like rigour.
+Wait on both until a full year of evidence shows what members actually prefer to do. — Waiting is itself a decision: the Saturday queue continues while nobody has chosen it.
 
-Yes, for anything expensive or irreversible. — For those, more certainty is justified. Waiting for certainty that is not coming is a different thing.
+Trial the reversible rule now with tools that fit; keep the purchase for later. — Certainty should match cost and reversibility. A cheap, reversible rule can be tried and revisited; the irreversible purchase deserves the wait, and the trial supplies its evidence.
 
-Yes, since a wrong decision is worse than a late one. — Sometimes. A late decision on a cheap reversible thing costs more than the mistake would have.
+Buy the lockers now, since a rule change without them cannot be tested fairly. — That spends the irreversible money first, on the assumption the trial was meant to test.
 
 Improve: Write how much certainty the cost justifies in step 2, and decide accordingly. Record the change in step 5.
 
@@ -4944,20 +5499,20 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You decided with an assumption you could not check. What must accompany it?
+You decide to trial out-of-hours collection for small power tools, assuming it will shorten the Saturday queue, which nobody has measured. What must go with the decision?
 
-- The assumption written down and a date to check whether it held.
-- Agreement from somebody else, so the risk is shared.
-- A note that it was made under uncertainty.
+- The assumption in writing, a date to check it, and what you will look at then.
+- A note in the minutes that the decision was taken under real uncertainty.
+- The whole board’s agreement first, so that the risk is shared by everybody.
 
 <details>
 <summary>After your attempt</summary>
 
-The assumption written down and a date to check whether it held. — A decision with no way to find out it was wrong is a bet. The assumption and the date are what turn it back into a decision, and they cost two lines.
+The assumption in writing, a date to check it, and what you will look at then. — A decision with no way to find out it was wrong is a bet. “This is right if the queue is shorter on two Saturdays next month, counted at the desk” turns it back into a decision.
 
-Agreement from somebody else, so the risk is shared. — Shared risk is not the same as a way of finding out.
+A note in the minutes that the decision was taken under real uncertainty. — Every decision is uncertain; which assumption, and when you will look, is what makes this one checkable.
 
-A note that it was made under uncertainty. — Every decision is. Which assumption, and when you will look, is what makes it checkable.
+The whole board’s agreement first, so that the risk is shared by everybody. — Shared risk is not a way of finding out whether the assumption held.
 
 Improve: Write the assumption and a check date in step 5, naming what you will look at. Record the change.
 
@@ -5008,15 +5563,41 @@ Write your answer for “The date you will check whether the assumption held, an
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A bakery is deciding whether to open on Sundays for a summer trial. Known: two nearby cafés close on Sundays. Assumed: walkers on the canal path would come in. Unknown: how many walkers pass on a Sunday morning. The bakery has just learned its only weekend baker can work alternate Sundays only.
+
+**Task:** Decide what the bakery should do this summer, and explain why, naming who is affected, what evidence is missing and when you would check.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Asks for more research without saying what would change the decision, or opens every Sunday ignoring the baker’s availability.
+- Adequate: Trials alternate Sundays (reversible, fits the baker), states the assumption about walkers, and sets a check, such as counting customers on the first four trial Sundays. Names the baker and regular customers as affected.
+- Strong: As adequate, and names a cheap check before deciding (counting walkers one Sunday morning), says what result would stop the trial, and notes that being wrong costs little because it can stop after a month.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -5039,7 +5620,7 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: Deciding without enough information
-What I am trying to do: Make one real decision under uncertainty, recording what you knew, what you assumed, what would have changed it, and how you will find out whether it was right.
+What I am trying to do: Make one decision under uncertainty — a real one from your project, or the case pack’s open decision labelled as practice — recording what you knew, what you assumed, what would have changed it, and how you will find out whether it was right.
 
 Key idea or terms:
 Know: Something you could show somebody: a count, a record, an observation. Far less than most lists of knowns contain.
@@ -5047,7 +5628,7 @@ Assume: Something you are treating as true without evidence, usually reasonably.
 Guess: Something you have no basis for at all. Naming it separately stops it being quietly promoted.
 
 Supplied practice material (fictional or labelled practice, not my research):
-Made-up example. Listing what was known before a decision, and listing what everybody said. That members find the payment step confusing, that late cancellations are common, and that the provider wants a waiting list.
+From the case pack: the board must decide this month whether power tools can be collected from lockers out of hours; a locker rule can be changed back within a week; insurance requires a check after every power-tool loan. Changed constraint (risk): the insurer says one unchecked power tool lent out would end the library’s cover.
 
 Activity: Change one constraint in the supplied strategy case. Ask me which choice changes, who gains, who carries the cost and what evidence would make me reconsider.
 
@@ -5057,7 +5638,7 @@ When the activity is finished, tell me to return to the course answer called “
 
 **Come back to the course:** Return to “The open decision”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The open decision” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “The open decision” and write one sentence in your own words.
 
 </details>
 <details>
@@ -5111,7 +5692,7 @@ Adequate evidence: The finding that would change the decision, or a statement th
 
 2 — The decisive finding named, or its absence stated plainly.
 
-3 — As adequate, and a cheap check was actually run.
+3 — As adequate, and a cheap check was run where one was available, or its absence is explained.
 
 Repair: For each candidate finding, ask whether it would change your choice; keep only those that would. Recheck: The decisive question.
 
@@ -5178,7 +5759,7 @@ Product strategy connects a real problem, evidence, constraints and trade-offs t
 - **A gap that matters:** One where a real decision would change. A gap that changes nothing is worth noting and not worth closing this month.
 - **Retrievable:** You can actually open it, today, without an account. A page behind a sign-up is not retrievable for this purpose.
 
-**Quick example.** Made-up example. Stating a learning gap, and stating it as a subject. “I need to learn about positioning.” A subject, a heading, and something I could carry around for a year without it changing anything.
+**Quick example.** From the case pack: the board wants to describe the library against the hardware shop’s hire counter and a sharing app; nobody has a verified source on positioning; the grant is reviewed each autumn. Changed constraint (organisation): this year’s grant form asks how the library differs from commercial hire.
 
 The reader demonstrates and guides the task before asking for “The questions about positioning you cannot currently answer”.
 
@@ -5224,6 +5805,13 @@ Section: learn. Stable action: learn-5.
 Do not teach yourself from a source you would not assign to someone else.
 
 
+### Idea 6: A gap’s priority follows the decisions that hang on it: when a…
+
+Section: learn. Stable action: learn-6.
+
+A gap’s priority follows the decisions that hang on it: when a funder or a deadline starts asking, an interesting gap becomes an urgent one.
+
+
 ### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
@@ -5240,6 +5828,30 @@ Section: learn. Stable action: workspace.
 Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
+
+
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Case pack · Northside Tool Library. Made up for this module: practice material, not research about a real organisation. Members borrow tools from a side room of the town hall, paying a yearly subscription and a refundable deposit on each loan; most borrow a few times a year. A council community grant covers part of the running cost; it is reviewed each autumn and may be cut.
+- Borrower (member) · May book, cancel, collect and return their own loans. Sees only their own loans, deposits and due dates.
+- Front-desk volunteer (Saturday 10:00–13:00 rota of about twelve) · Checks about forty loans in and out each Saturday and signs up new members on paper. Sees that day’s bookings by first name, tool and locker number. May not see addresses or payments, refund deposits or change fees. New volunteers need a morning of training.
+- Maintenance volunteer (Tuesday evenings) · Marks each tool ready, needs repair or retired in the stock list, and must check every power tool after each loan before it goes out again: an insurance condition. Sees tool histories, not member details.
+- Coordinator (paid, part-time) · Copies each day’s booking requests into the stock list by hand at about 8 pm, sets the weekly locker codes, trains volunteers and allocates the Riverside memberships. Sees all bookings and members’ contact details. May not issue refunds.
+- Treasurer and board · The board, a volunteer committee, sets fees, deposits, opening hours and spending, and sees monthly totals rather than individual loans. The treasurer holds the only login to the payment account, refunds deposits in one batch on Tuesday evenings and writes the grant report.
+- Council grant officer (funder) · Funds 30 memberships for residents of the Riverside estate, receives a report each quarter, and has asked for each resident’s name and what they borrowed, to show the scheme is used.
+- Two local workshops · Each emails the coordinator to book about a dozen tools a month for its evening classes. You · A volunteer designer with about six hours a week. You can propose changes to the coordinator; you have no authority over volunteers, the board or the funder.
+- Booking tool and messages · A free hosted form. A request is confirmed only after the coordinator copies it into the stock list; confirmations and locker codes are emailed the next morning. A cancellation frees the tool only at the next 8 pm update. The free plan sends email only, cannot release a cancelled booking by itself, and sends one reminder the day before a tool is due back.
+- Lockers, payments and the stock list · Twelve coded lockers outside the hall take hand tools out of hours; power tools go out at the desk only. Most tools are single copies. The payment provider confirms within seconds and charges a small fee on every payment and every refund. The stock list is one spreadsheet: the only record of where each tool is and whether it is ready.
+- Last six months (coordinator’s notes) · Workshop requests fitted in within a week, every time. The new-member sign-up, called confusing by three new members, postponed four times so far. On three short-staffed Saturdays, returned power tools went unchecked and stayed off the shelf until Tuesday. No request from the grant officer refused. Written aim: “To make tools available to everybody in the neighbourhood, sustainably and inclusively.”
+- Since March · Cancelling takes one tap, so tools cancelled after Friday’s 8 pm update stay marked booked all Saturday. The coordinator thinks Friday-night cancellations have risen; nobody has counted. The board has proposed a £5 late-cancellation fee.
+- Open questions for the board · Whether to let power tools be collected from the lockers out of hours, to shorten the Saturday queue: a locker rule can be changed back within a week, but bigger lockers would be a one-off purchase. Three income ideas: a pre-ticked £1 donation on every booking, “Only 1 left!” on every tool page, and cancelling a subscription by phone only.
+- Constraints · The free booking plan stays this year; a paid plan needs board approval and money the grant does not cover. The payment provider cannot change this year. No analytics beyond the booking tool’s monthly counts and the stock list. The library does not lend tools that need training to use safely, such as chainsaws.
+- Evidence gaps · Nobody has counted the calls asking whether a deposit went through; the coordinator says “most”. Cancellations sit in the stock list, uncounted. Nobody knows why members do not renew, what share of bookings come from repeat members, or whether Riverside residents use their memberships. The board wants to describe the library against the hardware shop’s hire counter and a sharing app; the chair circulated an undated consultancy article on positioning that ends by selling workshops, and nobody has a verified source.
+- Two members, asked why they joined · “I needed a tile cutter for one bathroom; buying one to use once was silly.” “A drill for one weekend. The trip across town nearly put me off.”
 
 
 ### State the gap precisely
@@ -5281,6 +5893,32 @@ Made-up example. Stating a learning gap, and stating it as a subject.
 **Trade-off:** Asking which decision would change often demotes a gap you feel embarrassed about, which is uncomfortable and correct.
 
 **Unknown:** Still unknown: whether a decision will turn on positioning later. If one does, the three questions are already written.
+
+
+### Try a supplied example
+
+Section: practice-plan. Stable action: step-1-try.
+
+From the case pack: the board wants to describe the library against the hardware shop’s hire counter and a sharing app; nobody has a verified source on positioning; the grant is reviewed each autumn. Changed constraint (organisation): this year’s grant form asks how the library differs from commercial hire.
+
+How does the gap’s priority change?
+
+- It now changes a decision, so close it before autumn using only claims you can support.
+- It stays interesting rather than urgent, since positioning is not really a design question.
+- It is solved: borrow the article’s wording, since the form needs an answer now.
+
+<details>
+<summary>After your attempt</summary>
+
+It now changes a decision, so close it before autumn using only claims you can support. — A gap that changes no decision can wait; one that changes the grant form cannot. The answer can rest on what the pack shows — deposits, no purchase, local collection — while market claims wait for a source. Affected: the board, and every member if the grant is lost.
+
+It stays interesting rather than urgent, since positioning is not really a design question. — It was interesting while no decision turned on it; the form makes it decide something.
+
+It is solved: borrow the article’s wording, since the form needs an answer now. — Urgency does not make an unverifiable source verifiable, and the form is exactly where an unsupported claim would be checked.
+
+Now write in step 1 which of your own decisions would change with an answer, and what would make the gap urgent.
+
+</details>
 
 
 ### The questions about positioning you cannot currently answer
@@ -5606,20 +6244,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-There is plenty written about positioning. Why does this course not teach it?
+The board wants to describe Northside against the hardware shop’s hire counter and a sharing app, and asks you to “use what’s out there on positioning”. Why can you not simply do that?
 
-- Because the good sources are all books.
-- Plenty is published. Whether a specific page can be retrieved, is free, states its date and scope, and can have its limits written down is a different question, and most of it fails.
-- Because positioning is not a design topic.
+- The good sources on positioning are all in books, and this course links to none of them.
+- Positioning is a marketing topic, so it has no bearing on the library’s design decisions.
+- Most of what is published cannot be checked for date, evidence or scope, as the rules require.
 
 <details>
 <summary>After your attempt</summary>
 
-Because the good sources are all books. — Several are, and a library is a legitimate route. The rule is not about format.
+The good sources on positioning are all in books, and this course links to none of them. — Format is not the rule; a dated, evidenced library book can pass the checks.
 
-Plenty is published. Whether a specific page can be retrieved, is free, states its date and scope, and can have its limits written down is a different question, and most of it fails. — The rule is about verifiability rather than quality. A persuasive undated article written to sell consulting cannot be checked, which is precisely what makes it unusable as a source.
+Positioning is a marketing topic, so it has no bearing on the library’s design decisions. — How the library is described against alternatives affects design decisions directly, which is why the gap is recorded rather than dismissed.
 
-Because positioning is not a design topic. — It affects design decisions directly, which is why the gap is recorded rather than dismissed.
+Most of what is published cannot be checked for date, evidence or scope, as the rules require. — The rule is about verifiability, not quality: a page has to be retrievable, free, dated, scope-reviewable and boundable. Most strategy content is written to sell something and fails that.
 
 Improve: Write the five checks out in step 2 from this course’s own rules. Record the change in step 5.
 
@@ -5636,20 +6274,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You find an article that is obviously better than most of what this course assigns. Should you use it?
+The chair’s consultancy article is clear and persuasive, undated, cites no evidence, and ends by selling paid workshops. Should Northside’s strategy note cite it?
 
-- Not if it is undated, unevidenced and written to sell something. Persuasive is what such writing is for, and it is the property you cannot check.
-- Yes, quality should override procedural rules.
-- Yes, with a note that it is unverified.
+- Cite it, since its quality is obvious and the board already finds it convincing.
+- Leave it uncited: it may be right, but nothing in it can be checked or dated.
+- Cite it with a note saying it is unverified, so readers can judge it themselves.
 
 <details>
 <summary>After your attempt</summary>
 
-Not if it is undated, unevidenced and written to sell something. Persuasive is what such writing is for, and it is the property you cannot check. — Rejecting it is not saying it is wrong; it is saying you cannot tell. Reading it privately as an argument is fine, and citing it or teaching from it is not.
+Cite it, since its quality is obvious and the board already finds it convincing. — Persuasive is what promotional writing is built to be, which is exactly the property you cannot check.
 
-Yes, quality should override procedural rules. — Quality is your impression of it, which is the thing promotional writing is optimised to produce.
+Leave it uncited: it may be right, but nothing in it can be checked or dated. — Rejecting it is not saying it is wrong; it is saying you cannot tell. Reading it privately as an argument is fine; citing it puts an unverifiable claim into a document people will act on.
 
-Yes, with a note that it is unverified. — A note travels less far than the claim, as Module 15 established repeatedly.
+Cite it with a note saying it is unverified, so readers can judge it themselves. — A caveat travels less far than the claim, as Module 15 showed; readers repeat the claim, not the note.
 
 Improve: Record the verdict and the reasons in step 4, including what you could not check. Record the change in step 5.
 
@@ -5666,20 +6304,20 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Your candidate was rejected and the gap is still open. Is that a wasted lesson?
+You assessed the article, rejected it, and the board’s positioning question is still open. Was the work wasted?
 
-- Partly, since you have not learned about positioning.
-- Yes, unless you find a second candidate.
-- No. A documented rejection stops the same source being reconsidered and shows the gap was taken seriously.
+- Partly, since the board still has no answer to the question it actually asked.
+- Mostly, unless a second candidate source is found and accepted before the meeting.
+- The recorded rejection stops it being reconsidered and leaves a plan to close the gap.
 
 <details>
 <summary>After your attempt</summary>
 
-Partly, since you have not learned about positioning. — You have learned that this course cannot source it and what to do about that, which is the transferable skill.
+Partly, since the board still has no answer to the question it actually asked. — The board has learned that the course cannot source this and what to do about it, which is the transferable part.
 
-Yes, unless you find a second candidate. — A second candidate is worth trying and the first verdict stands as work done either way.
+Mostly, unless a second candidate source is found and accepted before the meeting. — A second candidate is worth trying; the first verdict stands as work done either way.
 
-No. A documented rejection stops the same source being reconsidered and shows the gap was taken seriously. — It also produces the more useful half: a plan for closing it another way, and a list of what you will not claim until you have.
+The recorded rejection stops it being reconsidered and leaves a plan to close the gap. — A documented rejection is a result: it shows the gap was taken seriously, and it comes with the useful half — how to close it another way and what not to claim meanwhile.
 
 Improve: Write the plan and what you will avoid claiming in step 5. Record the change.
 
@@ -5730,15 +6368,41 @@ Write your answer for “What you will avoid claiming until you have”. Use the
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A small museum wants to describe itself to tourists as different from the big city gallery nearby. A trustee forwards a slick, undated blog post on “museum branding” from an agency that sells branding packages. The tourist board has just asked every museum for a one-line “what makes you different” statement by the end of the month.
+
+**Task:** Decide what the museum should do with the blog post and the deadline, and explain your reasoning, including what it should avoid claiming.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Uses the blog post because it is persuasive and the deadline is close, or treats the deadline as a reason to drop the checks.
+- Adequate: Rejects the post as a source (undated, unevidenced, selling something) and records why; writes the line from what the museum can show (its collection, hours, location), avoiding claims about tourists it cannot support.
+- Strong: As adequate, and names a route to a verifiable source for later (a library book, or the tourist board’s own published figures), lists the claims it will not make yet, and notes the deadline made the gap urgent.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -5769,7 +6433,7 @@ A gap that matters: One where a real decision would change. A gap that changes n
 Retrievable: You can actually open it, today, without an account. A page behind a sign-up is not retrievable for this purpose.
 
 Supplied practice material (fictional or labelled practice, not my research):
-Made-up example. Stating a learning gap, and stating it as a subject. “I need to learn about positioning.” A subject, a heading, and something I could carry around for a year without it changing anything.
+From the case pack: the board wants to describe the library against the hardware shop’s hire counter and a sharing app; nobody has a verified source on positioning; the grant is reviewed each autumn. Changed constraint (organisation): this year’s grant form asks how the library differs from commercial hire.
 
 Activity: Change one constraint in the supplied strategy case. Ask me which choice changes, who gains, who carries the cost and what evidence would make me reconsider.
 
@@ -5779,7 +6443,7 @@ When the activity is finished, tell me to return to the course answer called “
 
 **Come back to the course:** Return to “The questions about positioning you cannot currently answer”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The questions about positioning you cannot currently answer” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “The questions about positioning you cannot currently answer” and write one sentence in your own words.
 
 </details>
 <details>
@@ -5900,7 +6564,7 @@ Product strategy connects a real problem, evidence, constraints and trade-offs t
 - **Auditability:** A record of who did what and when, because somebody else’s money is being spent and somebody has to answer for it.
 - **Self-selected:** They chose to be here and can leave. It makes the first minute decisive and the thousandth use hypothetical.
 
-**Quick example.** Made-up example. Listing what a business context adds, and listing features. Roles, permissions, reporting, bulk actions, single sign-on. Five things business software has that consumer software does not.
+**Quick example.** From the case pack: members book one tool at a time, a few times a year, on a form designed for first visits; each of two workshops emails the coordinator to book about a dozen tools a month. Changed constraint (user): the workshops must now book through the same online form.
 
 The reader demonstrates and guides the task before asking for “What a business context adds that a consumer one does not”.
 
@@ -5946,6 +6610,13 @@ Section: learn. Stable action: learn-5.
 Neither is more sophisticated; they optimise different things.
 
 
+### Idea 6: When the user changes — from someone who chose you to someone…
+
+Section: learn. Stable action: learn-6.
+
+When the user changes — from someone who chose you to someone who must use you — rerun the comparison: priorities flip even when the feature is the same.
+
+
 ### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
@@ -5962,6 +6633,30 @@ Section: learn. Stable action: workspace.
 Recommended route: Draw the same feature twice, once for a consumer and once for a business context on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder. Alternative route: Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
+
+
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Case pack · Northside Tool Library. Made up for this module: practice material, not research about a real organisation. Members borrow tools from a side room of the town hall, paying a yearly subscription and a refundable deposit on each loan; most borrow a few times a year. A council community grant covers part of the running cost; it is reviewed each autumn and may be cut.
+- Borrower (member) · May book, cancel, collect and return their own loans. Sees only their own loans, deposits and due dates.
+- Front-desk volunteer (Saturday 10:00–13:00 rota of about twelve) · Checks about forty loans in and out each Saturday and signs up new members on paper. Sees that day’s bookings by first name, tool and locker number. May not see addresses or payments, refund deposits or change fees. New volunteers need a morning of training.
+- Maintenance volunteer (Tuesday evenings) · Marks each tool ready, needs repair or retired in the stock list, and must check every power tool after each loan before it goes out again: an insurance condition. Sees tool histories, not member details.
+- Coordinator (paid, part-time) · Copies each day’s booking requests into the stock list by hand at about 8 pm, sets the weekly locker codes, trains volunteers and allocates the Riverside memberships. Sees all bookings and members’ contact details. May not issue refunds.
+- Treasurer and board · The board, a volunteer committee, sets fees, deposits, opening hours and spending, and sees monthly totals rather than individual loans. The treasurer holds the only login to the payment account, refunds deposits in one batch on Tuesday evenings and writes the grant report.
+- Council grant officer (funder) · Funds 30 memberships for residents of the Riverside estate, receives a report each quarter, and has asked for each resident’s name and what they borrowed, to show the scheme is used.
+- Two local workshops · Each emails the coordinator to book about a dozen tools a month for its evening classes. You · A volunteer designer with about six hours a week. You can propose changes to the coordinator; you have no authority over volunteers, the board or the funder.
+- Booking tool and messages · A free hosted form. A request is confirmed only after the coordinator copies it into the stock list; confirmations and locker codes are emailed the next morning. A cancellation frees the tool only at the next 8 pm update. The free plan sends email only, cannot release a cancelled booking by itself, and sends one reminder the day before a tool is due back.
+- Lockers, payments and the stock list · Twelve coded lockers outside the hall take hand tools out of hours; power tools go out at the desk only. Most tools are single copies. The payment provider confirms within seconds and charges a small fee on every payment and every refund. The stock list is one spreadsheet: the only record of where each tool is and whether it is ready.
+- Last six months (coordinator’s notes) · Workshop requests fitted in within a week, every time. The new-member sign-up, called confusing by three new members, postponed four times so far. On three short-staffed Saturdays, returned power tools went unchecked and stayed off the shelf until Tuesday. No request from the grant officer refused. Written aim: “To make tools available to everybody in the neighbourhood, sustainably and inclusively.”
+- Since March · Cancelling takes one tap, so tools cancelled after Friday’s 8 pm update stay marked booked all Saturday. The coordinator thinks Friday-night cancellations have risen; nobody has counted. The board has proposed a £5 late-cancellation fee.
+- Open questions for the board · Whether to let power tools be collected from the lockers out of hours, to shorten the Saturday queue: a locker rule can be changed back within a week, but bigger lockers would be a one-off purchase. Three income ideas: a pre-ticked £1 donation on every booking, “Only 1 left!” on every tool page, and cancelling a subscription by phone only.
+- Constraints · The free booking plan stays this year; a paid plan needs board approval and money the grant does not cover. The payment provider cannot change this year. No analytics beyond the booking tool’s monthly counts and the stock list. The library does not lend tools that need training to use safely, such as chainsaws.
+- Evidence gaps · Nobody has counted the calls asking whether a deposit went through; the coordinator says “most”. Cancellations sit in the stock list, uncounted. Nobody knows why members do not renew, what share of bookings come from repeat members, or whether Riverside residents use their memberships. The board wants to describe the library against the hardware shop’s hire counter and a sharing app; the chair circulated an undated consultancy article on positioning that ends by selling workshops, and nobody has a verified source.
+- Two members, asked why they joined · “I needed a tile cutter for one bathroom; buying one to use once was silly.” “A drill for one weekend. The trip across town nearly put me off.”
 
 
 ### Read on roles and obligations
@@ -6038,11 +6733,11 @@ The feature designed for a first-time, self-selected user, with what you optimis
 
 Section: practice-plan. Stable action: write-consumer-design.
 
-Write your answer for “The feature designed for a first-time, self-selected user”. Use the task instructions below to decide what to include.
+Your own feature, or the case pack’s booking: a member booking a few times a year against desk volunteers checking forty loans each Saturday.
 
 **Answer:** The feature designed for a first-time, self-selected user
 
-
+Your own feature, or the case pack’s booking: a member booking a few times a year against desk volunteers checking forty loans each Saturday.
 
 
 ### What you optimised for
@@ -6339,20 +7034,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Is good design simply good design, whatever the context?
+You designed the member’s booking screen for a first visit: one tool per screen and a warm confirmation. The Saturday desk volunteers must use the same flow to check about forty loans in and out. Should they get the same design?
 
-- Yes, apart from the extra features business software needs.
-- The principles transfer and the priorities do not. A flow optimised for a confident first use, met hourly, produces a product people resent.
-- Yes, quality is quality in any context.
+- The same principles, different priorities: density and speed for forty repeats a morning.
+- The same design, since a screen that is good for members is good for anybody.
+- The same design with an admin label, since volunteers only need a few extra fields.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, apart from the extra features business software needs. — The differences are not extra features. They are opposite answers to the same questions.
+The same principles, different priorities: density and speed for forty repeats a morning. — A warm confirmation is a kindness on somebody’s first booking and an obstacle on the fortieth loan of the morning. Neither context is more sophisticated; they optimise different things.
 
-The principles transfer and the priorities do not. A flow optimised for a confident first use, met hourly, produces a product people resent. — A warm confirmation is a kindness on a first booking and an obstacle on the two hundredth. Neither context is more sophisticated; they optimise different things.
+The same design, since a screen that is good for members is good for anybody. — Good for a first visit is not the same drawing as good for the fortieth repeat.
 
-Yes, quality is quality in any context. — Quality in one context is density and keyboard operation; in the other it is space and reassurance. They are not the same drawing.
+The same design with an admin label, since volunteers only need a few extra fields. — The differences are not extra fields; they are opposite answers to the same questions.
 
 Improve: Write the structural reason for each of your three differences in step 4. Record the change in step 5.
 
@@ -6369,20 +7064,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Why does mandatory use change the design?
+Desk volunteers did not choose the booking tool and cannot use another. Why does that change the check-in design?
 
-- Frustration accumulates as resentment rather than losing you the user, so the thousandth use matters more than the first.
-- It does not, since usability applies either way.
-- It means you can afford to make it harder to learn.
+- It means the check-in screen can be harder to learn, since they have to use it.
+- It changes nothing, since usability rules apply the same way to every user.
+- Frustration builds instead of making them leave, so the repeated use matters most.
 
 <details>
 <summary>After your attempt</summary>
 
-Frustration accumulates as resentment rather than losing you the user, so the thousandth use matters more than the first. — Somebody who chose your product and dislikes it leaves. Somebody who was given it stays, does the task forty minutes slower every month, and tells everybody the software is terrible.
+It means the check-in screen can be harder to learn, since they have to use it. — A harder screen is a trade that has to be paid for, here with the morning of training every new volunteer already needs.
 
-It does not, since usability applies either way. — Usability applies and what to optimise changes completely.
+It changes nothing, since usability rules apply the same way to every user. — Usability applies; what to optimise changes completely when use is mandatory and repeated.
 
-It means you can afford to make it harder to learn. — It means the trade is available and it has to be paid for with an introduction.
+Frustration builds instead of making them leave, so the repeated use matters most. — A member who dislikes the booking screen can stop borrowing; a volunteer stays, does each check-in slower, and the rota gets harder to fill. The fortieth use of the morning is what to design for.
 
 Improve: Count how many times your business user will do the task in two years, in step 3, and design for that. Record the change in step 5.
 
@@ -6399,20 +7094,20 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You designed the business version and added an admin label to the consumer screen. What went wrong?
+You redesigned the desk’s check-in screen and labelled the coordinator’s evening update “admin, as now”. The case pack says she copies every request into the stock list by hand. What went wrong?
 
-- It needed more configuration options.
-- The administrator has their own task, with volume and repetition, and it was never designed.
-- Nothing, if the underlying task is the same.
+- Her update is a repeated, high-volume task of its own, and it was never designed.
+- The evening update needed more settings, so she could configure it however she likes.
+- Nothing, if her update uses the same fields as the volunteers’ check-in screen.
 
 <details>
 <summary>After your attempt</summary>
 
-It needed more configuration options. — Options are what gets added instead of designing the task.
+Her update is a repeated, high-volume task of its own, and it was never designed. — Copying every request by hand each evening is the administrator’s own task, with its own volume and errors. Designing it last is how business software becomes hated, and here it also sets the confirmation timing.
 
-The administrator has their own task, with volume and repetition, and it was never designed. — Twelve places across four classes, monthly, for two years is a different task from booking one place for yourself. Designing for the administrator last is how business software becomes hated.
+The evening update needed more settings, so she could configure it however she likes. — Settings are what get added instead of designing the task.
 
-Nothing, if the underlying task is the same. — The task is not the same. The volume changes it entirely.
+Nothing, if her update uses the same fields as the volunteers’ check-in screen. — The task is different: she processes every request for the day, not one loan at the counter.
 
 Improve: Design the administrator’s own task in step 3, from their volume rather than from the user’s screen. Record the change in step 5.
 
@@ -6441,6 +7136,32 @@ Which context your project actually is, and what follows from that.
 **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
 
 
+### Try a supplied example
+
+Section: practice. Stable action: step-5-try.
+
+From the case pack: members book one tool at a time, a few times a year, on a form designed for first visits; each of two workshops emails the coordinator to book about a dozen tools a month. Changed constraint (user): the workshops must now book through the same online form.
+
+What should change in the booking design?
+
+- A separate repeat-booking view for workshop accounts: bulk selection, one confirmation.
+- Rebuild the member form for bulk booking, so everyone gets the faster version.
+- Nothing: the form already works well for members, so workshops can book one by one.
+
+<details>
+<summary>After your attempt</summary>
+
+A separate repeat-booking view for workshop accounts: bulk selection, one confirmation. — Workshops book in volume, monthly; members book once in a while. A separate view keeps the first-visit form kind and gives repeat users speed. Affected: workshop organisers and the coordinator. Missing: how often workshops change their lists.
+
+Rebuild the member form for bulk booking, so everyone gets the faster version. — Bulk controls make the first visit harder for the members who book a few times a year.
+
+Nothing: the form already works well for members, so workshops can book one by one. — A dozen single bookings a month, for years, is the repeated frustration this lesson is about.
+
+Now decide in step 5 which context your own project is in, and what a change of user would do to it.
+
+</details>
+
+
 ### Which context your project actually is, and what follows from that
 
 Section: practice. Stable action: write-which-context.
@@ -6452,15 +7173,41 @@ Write your answer for “Which context your project actually is, and what follow
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A town library’s app lets residents reserve study rooms, designed for occasional visitors: big buttons, one room at a time, a friendly confirmation. The council now wants its staff to book the same rooms for daily team meetings through the app, often several rooms a week, paid from department budgets.
+
+**Task:** Decide how the booking design should change for council staff, and explain why, naming who is affected and what evidence is missing.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps one design for everyone, or adds an “admin” label; treats good design as context-free.
+- Adequate: Gives staff a repeat or bulk view (several rooms, one confirmation, a record of which budget pays) while keeping the visitor flow simple; gives repetition, volume and somebody else’s money as the reasons.
+- Strong: As adequate, and names who administers the rooms and their task, flags the risk that staff block-booking crowds out residents, and names the evidence gap (how many staff bookings a week).
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -6491,7 +7238,7 @@ Auditability: A record of who did what and when, because somebody else’s money
 Self-selected: They chose to be here and can leave. It makes the first minute decisive and the thousandth use hypothetical.
 
 Supplied practice material (fictional or labelled practice, not my research):
-Made-up example. Listing what a business context adds, and listing features. Roles, permissions, reporting, bulk actions, single sign-on. Five things business software has that consumer software does not.
+From the case pack: members book one tool at a time, a few times a year, on a form designed for first visits; each of two workshops emails the coordinator to book about a dozen tools a month. Changed constraint (user): the workshops must now book through the same online form.
 
 Activity: Change one constraint in the supplied strategy case. Ask me which choice changes, who gains, who carries the cost and what evidence would make me reconsider.
 
@@ -6501,7 +7248,7 @@ When the activity is finished, tell me to return to the course answer called “
 
 **Come back to the course:** Return to “What a business context adds that a consumer one does not”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “What a business context adds that a consumer one does not” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “What a business context adds that a consumer one does not” and write one sentence in your own words.
 
 </details>
 <details>
@@ -6622,7 +7369,7 @@ Product strategy connects a real problem, evidence, constraints and trade-offs t
 - **Obstructed exit:** Leaving being much harder than arriving. Two taps to book and a phone call to cancel is the standard shape.
 - **Hidden cost:** A charge or commitment revealed after the person has invested effort. It works because people continue rather than start again.
 
-**Quick example.** Made-up example. Finding the need under a request at a class provider, and accepting the stated one. A pre-ticked newsletter box on the booking form. The stated reason was that the mailing list needed to grow.
+**Quick example.** From the case pack: the board wants a pre-ticked £1 donation on every booking to raise income; the grant is reviewed each autumn. Changed constraint (organisation): the council says the grant will now match every £1 that members donate, up to a limit.
 
 The reader demonstrates and guides the task before asking for “Request 1 · what is asked for, and the pattern it is an instance of”.
 
@@ -6668,6 +7415,13 @@ Section: learn. Stable action: learn-5.
 Write your limits before you are asked to cross them.
 
 
+### Idea 6: When the need behind a request changes — a new funder rule, a…
+
+Section: learn. Stable action: learn-6.
+
+When the need behind a request changes — a new funder rule, a bigger shortfall — redesign the honest alternative; the line you will not cross stays put.
+
+
 ### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
@@ -6684,6 +7438,30 @@ Section: learn. Stable action: workspace.
 Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
+
+
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Case pack · Northside Tool Library. Made up for this module: practice material, not research about a real organisation. Members borrow tools from a side room of the town hall, paying a yearly subscription and a refundable deposit on each loan; most borrow a few times a year. A council community grant covers part of the running cost; it is reviewed each autumn and may be cut.
+- Borrower (member) · May book, cancel, collect and return their own loans. Sees only their own loans, deposits and due dates.
+- Front-desk volunteer (Saturday 10:00–13:00 rota of about twelve) · Checks about forty loans in and out each Saturday and signs up new members on paper. Sees that day’s bookings by first name, tool and locker number. May not see addresses or payments, refund deposits or change fees. New volunteers need a morning of training.
+- Maintenance volunteer (Tuesday evenings) · Marks each tool ready, needs repair or retired in the stock list, and must check every power tool after each loan before it goes out again: an insurance condition. Sees tool histories, not member details.
+- Coordinator (paid, part-time) · Copies each day’s booking requests into the stock list by hand at about 8 pm, sets the weekly locker codes, trains volunteers and allocates the Riverside memberships. Sees all bookings and members’ contact details. May not issue refunds.
+- Treasurer and board · The board, a volunteer committee, sets fees, deposits, opening hours and spending, and sees monthly totals rather than individual loans. The treasurer holds the only login to the payment account, refunds deposits in one batch on Tuesday evenings and writes the grant report.
+- Council grant officer (funder) · Funds 30 memberships for residents of the Riverside estate, receives a report each quarter, and has asked for each resident’s name and what they borrowed, to show the scheme is used.
+- Two local workshops · Each emails the coordinator to book about a dozen tools a month for its evening classes. You · A volunteer designer with about six hours a week. You can propose changes to the coordinator; you have no authority over volunteers, the board or the funder.
+- Booking tool and messages · A free hosted form. A request is confirmed only after the coordinator copies it into the stock list; confirmations and locker codes are emailed the next morning. A cancellation frees the tool only at the next 8 pm update. The free plan sends email only, cannot release a cancelled booking by itself, and sends one reminder the day before a tool is due back.
+- Lockers, payments and the stock list · Twelve coded lockers outside the hall take hand tools out of hours; power tools go out at the desk only. Most tools are single copies. The payment provider confirms within seconds and charges a small fee on every payment and every refund. The stock list is one spreadsheet: the only record of where each tool is and whether it is ready.
+- Last six months (coordinator’s notes) · Workshop requests fitted in within a week, every time. The new-member sign-up, called confusing by three new members, postponed four times so far. On three short-staffed Saturdays, returned power tools went unchecked and stayed off the shelf until Tuesday. No request from the grant officer refused. Written aim: “To make tools available to everybody in the neighbourhood, sustainably and inclusively.”
+- Since March · Cancelling takes one tap, so tools cancelled after Friday’s 8 pm update stay marked booked all Saturday. The coordinator thinks Friday-night cancellations have risen; nobody has counted. The board has proposed a £5 late-cancellation fee.
+- Open questions for the board · Whether to let power tools be collected from the lockers out of hours, to shorten the Saturday queue: a locker rule can be changed back within a week, but bigger lockers would be a one-off purchase. Three income ideas: a pre-ticked £1 donation on every booking, “Only 1 left!” on every tool page, and cancelling a subscription by phone only.
+- Constraints · The free booking plan stays this year; a paid plan needs board approval and money the grant does not cover. The payment provider cannot change this year. No analytics beyond the booking tool’s monthly counts and the stock list. The library does not lend tools that need training to use safely, such as chainsaws.
+- Evidence gaps · Nobody has counted the calls asking whether a deposit went through; the coordinator says “most”. Cancellations sit in the stock list, uncounted. Nobody knows why members do not renew, what share of bookings come from repeat members, or whether Riverside residents use their memberships. The board wants to describe the library against the hardware shop’s hire counter and a sharing app; the chair circulated an undated consultancy article on positioning that ends by selling workshops, and nobody has a verified source.
+- Two members, asked why they joined · “I needed a tile cutter for one bathroom; buying one to use once was silly.” “A drill for one weekend. The trip across town nearly put me off.”
 
 
 ### Name the patterns
@@ -6710,11 +7488,11 @@ Three plausible requests, each named as the pattern it is an instance of.
 
 Section: practice-plan. Stable action: write-request-1.
 
-Hidden costs, obstructed exits, manufactured urgency, pre-ticked consent. Naming the pattern is what makes it arguable.
+Hidden costs, obstructed exits, manufactured urgency, pre-ticked consent; naming the pattern is what makes it arguable. The case pack’s three board ideas are a complete route, labelled as practice.
 
 **Answer:** Request 1 · what is asked for, and the pattern it is an instance of
 
-Hidden costs, obstructed exits, manufactured urgency, pre-ticked consent. Naming the pattern is what makes it arguable.
+Hidden costs, obstructed exits, manufactured urgency, pre-ticked consent; naming the pattern is what makes it arguable. The case pack’s three board ideas are a complete route, labelled as practice.
 
 <details>
 <summary>Example</summary>
@@ -6848,6 +7626,32 @@ Made-up example. Refusing a countdown at a class provider, and refusing it on pr
 **Trade-off:** The honest version produces less urgency, because most of the time there is no urgency. Some of the abandonment it was meant to prevent will continue.
 
 **Unknown:** Still unknown: whether a real hold reduces abandonment at all. It can be counted in the provider’s records after a month, which the countdown version could never have been separated from.
+
+
+### Try a supplied example
+
+Section: practice-plan. Stable action: step-3-try.
+
+From the case pack: the board wants a pre-ticked £1 donation on every booking to raise income; the grant is reviewed each autumn. Changed constraint (organisation): the council says the grant will now match every £1 that members donate, up to a limit.
+
+How does the honest alternative change?
+
+- Ask after booking, opt-in, saying the council matches each £1; no pre-ticked box.
+- Drop donations entirely, since matched funding could look like pressure.
+- Pre-tick it after all, since matched money now serves the members as well.
+
+<details>
+<summary>After your attempt</summary>
+
+Ask after booking, opt-in, saying the council matches each £1; no pre-ticked box. — Matching makes each willing £1 worth two, a true and strong reason to ask, honestly. A pre-ticked box would still take money from people who did not notice. Affected: members and the treasurer. Missing: how many members would opt in.
+
+Drop donations entirely, since matched funding could look like pressure. — An honest, opt-in ask with a true reason is not pressure, and dropping it gives up money members may want to give.
+
+Pre-tick it after all, since matched money now serves the members as well. — A better cause does not make an unnoticed charge consensual; members would object if they understood.
+
+Now design your own honest alternative in step 3, and compare its cost with the dishonest version.
+
+</details>
 
 
 ### An honest way to serve one of those needs
@@ -7081,20 +7885,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Somebody says this is just persuasive design. What is the test?
+The board wants “Only 1 left!” on every tool page to drive bookings. The case pack says most tools are single copies anyway. Is that persuasion or a pattern?
 
-- Whether it increases completions.
-- Whether the person would object if they understood what had happened. Persuasion presents a real offer well; these patterns work by making attention fail.
-- Whether comparable products do it.
+- A pattern: it works only while members misread it as rare stock, not one of everything.
+- Persuasion, if bookings go up, because the number is what matters to the board.
+- Persuasion: it is literally true for most tools, so nothing false is being said.
 
 <details>
 <summary>After your attempt</summary>
 
-Whether it increases completions. — It will. That is what makes the test a question about honesty rather than about effect.
+A pattern: it works only while members misread it as rare stock, not one of everything. — The test is whether members would object if they understood: “only 1 left” implies scarcity, and the library has one of almost everything. True words arranged to mislead still make attention fail.
 
-Whether the person would object if they understood what had happened. Persuasion presents a real offer well; these patterns work by making attention fail. — A countdown that is true is urgency. One that resets, or that counts down to nothing, works only while nobody notices, and people do notice, later, loudly.
+Persuasion, if bookings go up, because the number is what matters to the board. — It may raise bookings for a while; effect is not the question, honesty is.
 
-Whether comparable products do it. — Many do, and the ones that do are the source of most people’s distrust of the category.
+Persuasion: it is literally true for most tools, so nothing false is being said. — Literal truth designed to be misread fails the same test; members would object once they knew.
 
 Improve: Name the pattern for each request in step 1 rather than describing it. Record the change in step 5.
 
@@ -7111,20 +7915,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You refuse a request by saying it is a dark pattern. What happens next?
+You tell the treasurer the pre-ticked £1 donation is “a dark pattern” and stop there. The case pack says the grant may be cut. What is likely to happen next?
 
-- It escalates to somebody who decides.
-- The request is dropped, since the objection is correct.
-- The person still has their problem, somebody else builds a worse version three weeks later, and you are not asked again.
+- The income gap stays, someone adds a worse version later, and you are not asked again.
+- It goes to the full board, who will weigh your objection fairly on its merits.
+- The idea is dropped, because the board accepts that the objection is correct.
 
 <details>
 <summary>After your attempt</summary>
 
-It escalates to somebody who decides. — Sometimes, and you arrive at that conversation having offered nothing.
+The income gap stays, someone adds a worse version later, and you are not asked again. — Refusing without an alternative loses the argument and the relationship. “Not pre-ticked, because refunds and complaints cost more than £1 — here is an opt-in prompt after booking” keeps you in the room.
 
-The request is dropped, since the objection is correct. — Correctness does not make the abandonment problem go away.
+It goes to the full board, who will weigh your objection fairly on its merits. — It may; you arrive at that meeting having offered nothing for the problem they are trying to solve.
 
-The person still has their problem, somebody else builds a worse version three weeks later, and you are not asked again. — Refusing without an alternative loses the argument and the relationship. Naming the cost and offering the honest version keeps you in the conversation and usually gets the honest version built.
+The idea is dropped, because the board accepts that the objection is correct. — Being right does not close the income gap the idea was meant to fill.
 
 Improve: Design the honest alternative in step 3 and put it in the same sentence as the refusal in step 4. Record the change in step 5.
 
@@ -7141,20 +7945,20 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Somebody proposes testing whether the countdown increases completions. Is that a reasonable compromise?
+A board member suggests trialling cancellation-by-phone-only for a month “to see if it reduces cancellations”. Is that a fair compromise?
 
-- Yes, evidence should settle disagreements.
-- Yes, if the test is short.
-- No. It will increase completions, and testing it turns a question about honesty into one about evidence.
+- It is fair: a month of evidence should settle a disagreement better than opinion.
+- It is fair if the trial is kept short and members are told about it in advance.
+- A trial measures effect; it cannot make an obstructed exit honest, so the line holds.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, evidence should settle disagreements. — Evidence settles questions about effect. This one is about whether the statement is true.
+It is fair: a month of evidence should settle a disagreement better than opinion. — Evidence settles questions about effect; this is about making leaving harder than joining.
 
-Yes, if the test is short. — The length changes nothing about what is being agreed to.
+It is fair if the trial is kept short and members are told about it in advance. — Short and announced still makes leaving harder for a month for everyone who wants to go.
 
-No. It will increase completions, and testing it turns a question about honesty into one about evidence. — Giving way rarely looks like agreement. Softening it, testing it, or noting a reservation and standing aside all leave the thing built.
+A trial measures effect; it cannot make an obstructed exit honest, so the line holds. — It will very likely reduce cancellations; that was never in doubt. Testing it turns a question about honesty into one about evidence, which is how these things get built.
 
 Improve: Write your line in step 5 so it covers false statements regardless of their effect. Record the change.
 
@@ -7194,15 +7998,41 @@ Write your answer for “The line you will not cross, written before anybody ask
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A theatre’s ticket site shows a 10-minute countdown on the payment page, which resets if you reload. The box-office manager says it stops people holding seats they never buy. The theatre has just moved to a smaller venue, so a held but unpaid seat now blocks a bigger share of each show.
+
+**Task:** Decide what the payment page should do instead, and explain why, naming who is affected and what evidence is missing.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps the resetting countdown because the venue is smaller, or refuses it as a dark pattern with no alternative.
+- Adequate: Replaces the fake countdown with a real hold that expires once and is stated honestly (“seats held for 10 minutes”), because the need — unpaid holds blocking seats — is real and now bigger; names buyers and the box office as affected.
+- Strong: As adequate, and names the evidence gap (how many holds expire unpaid), proposes how to find out within a month, and writes the line: no timer that says something untrue, whatever the venue size.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -7233,7 +8063,7 @@ Obstructed exit: Leaving being much harder than arriving. Two taps to book and a
 Hidden cost: A charge or commitment revealed after the person has invested effort. It works because people continue rather than start again.
 
 Supplied practice material (fictional or labelled practice, not my research):
-Made-up example. Finding the need under a request at a class provider, and accepting the stated one. A pre-ticked newsletter box on the booking form. The stated reason was that the mailing list needed to grow.
+From the case pack: the board wants a pre-ticked £1 donation on every booking to raise income; the grant is reviewed each autumn. Changed constraint (organisation): the council says the grant will now match every £1 that members donate, up to a limit.
 
 Activity: Change one constraint in the supplied strategy case. Ask me which choice changes, who gains, who carries the cost and what evidence would make me reconsider.
 
@@ -7243,7 +8073,7 @@ When the activity is finished, tell me to return to the course answer called “
 
 **Come back to the course:** Return to “Request 1 · what is asked for, and the pattern it is an instance of”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Request 1 · what is asked for, and the pattern it is an instance of” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “Request 1 · what is asked for, and the pattern it is an instance of” and write one sentence in your own words.
 
 </details>
 <details>
@@ -7364,7 +8194,7 @@ Product strategy connects a real problem, evidence, constraints and trade-offs t
 - **Published expectations:** One employer’s written description of what a level means. It is evidence about that employer and not a market standard.
 - **Evidenced:** There is an artefact somebody could look at: a decision record, a stakeholder map, a prepared argument with its outcome.
 
-**Quick example.** Made-up example. Comparing work against published expectations, and comparing against understanding. Went down the list marking yes or no according to whether I could explain the expectation and would know how to do it.
+**Quick example.** From the case pack: you are a volunteer designer with no authority; you can propose changes to the coordinator; the board decides spending. Changed constraint (organisation): the coordinator leaves, and the board says proposals now go straight to its monthly meeting.
 
 The reader demonstrates and guides the task before asking for “The expectations from the assigned job-family page, one level above your current work”.
 
@@ -7410,6 +8240,13 @@ Section: learn. Stable action: learn-5.
 Distinguish what you have done from what you have read about.
 
 
+### Idea 6: When the route to a decision changes — a new decision-maker, a…
+
+Section: learn. Stable action: learn-6.
+
+When the route to a decision changes — a new decision-maker, a new meeting — change how you practise influence; the expectation itself stays the same.
+
+
 ### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
@@ -7426,6 +8263,30 @@ Section: learn. Stable action: workspace.
 Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
+
+
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Case pack · Northside Tool Library. Made up for this module: practice material, not research about a real organisation. Members borrow tools from a side room of the town hall, paying a yearly subscription and a refundable deposit on each loan; most borrow a few times a year. A council community grant covers part of the running cost; it is reviewed each autumn and may be cut.
+- Borrower (member) · May book, cancel, collect and return their own loans. Sees only their own loans, deposits and due dates.
+- Front-desk volunteer (Saturday 10:00–13:00 rota of about twelve) · Checks about forty loans in and out each Saturday and signs up new members on paper. Sees that day’s bookings by first name, tool and locker number. May not see addresses or payments, refund deposits or change fees. New volunteers need a morning of training.
+- Maintenance volunteer (Tuesday evenings) · Marks each tool ready, needs repair or retired in the stock list, and must check every power tool after each loan before it goes out again: an insurance condition. Sees tool histories, not member details.
+- Coordinator (paid, part-time) · Copies each day’s booking requests into the stock list by hand at about 8 pm, sets the weekly locker codes, trains volunteers and allocates the Riverside memberships. Sees all bookings and members’ contact details. May not issue refunds.
+- Treasurer and board · The board, a volunteer committee, sets fees, deposits, opening hours and spending, and sees monthly totals rather than individual loans. The treasurer holds the only login to the payment account, refunds deposits in one batch on Tuesday evenings and writes the grant report.
+- Council grant officer (funder) · Funds 30 memberships for residents of the Riverside estate, receives a report each quarter, and has asked for each resident’s name and what they borrowed, to show the scheme is used.
+- Two local workshops · Each emails the coordinator to book about a dozen tools a month for its evening classes. You · A volunteer designer with about six hours a week. You can propose changes to the coordinator; you have no authority over volunteers, the board or the funder.
+- Booking tool and messages · A free hosted form. A request is confirmed only after the coordinator copies it into the stock list; confirmations and locker codes are emailed the next morning. A cancellation frees the tool only at the next 8 pm update. The free plan sends email only, cannot release a cancelled booking by itself, and sends one reminder the day before a tool is due back.
+- Lockers, payments and the stock list · Twelve coded lockers outside the hall take hand tools out of hours; power tools go out at the desk only. Most tools are single copies. The payment provider confirms within seconds and charges a small fee on every payment and every refund. The stock list is one spreadsheet: the only record of where each tool is and whether it is ready.
+- Last six months (coordinator’s notes) · Workshop requests fitted in within a week, every time. The new-member sign-up, called confusing by three new members, postponed four times so far. On three short-staffed Saturdays, returned power tools went unchecked and stayed off the shelf until Tuesday. No request from the grant officer refused. Written aim: “To make tools available to everybody in the neighbourhood, sustainably and inclusively.”
+- Since March · Cancelling takes one tap, so tools cancelled after Friday’s 8 pm update stay marked booked all Saturday. The coordinator thinks Friday-night cancellations have risen; nobody has counted. The board has proposed a £5 late-cancellation fee.
+- Open questions for the board · Whether to let power tools be collected from the lockers out of hours, to shorten the Saturday queue: a locker rule can be changed back within a week, but bigger lockers would be a one-off purchase. Three income ideas: a pre-ticked £1 donation on every booking, “Only 1 left!” on every tool page, and cancelling a subscription by phone only.
+- Constraints · The free booking plan stays this year; a paid plan needs board approval and money the grant does not cover. The payment provider cannot change this year. No analytics beyond the booking tool’s monthly counts and the stock list. The library does not lend tools that need training to use safely, such as chainsaws.
+- Evidence gaps · Nobody has counted the calls asking whether a deposit went through; the coordinator says “most”. Cancellations sit in the stock list, uncounted. Nobody knows why members do not renew, what share of bookings come from repeat members, or whether Riverside residents use their memberships. The board wants to describe the library against the hardware shop’s hire counter and a sharing app; the chair circulated an undated consultancy article on positioning that ends by selling workshops, and nobody has a verified source.
+- Two members, asked why they joined · “I needed a tile cutter for one bathroom; buying one to use once was silly.” “A drill for one weekend. The trip across town nearly put me off.”
 
 
 ### Read the expectations
@@ -7536,6 +8397,32 @@ The expectation whose absence most limits you, with how it is practisable on wor
 **Most limiting:** The one whose absence costs you most now, rather than the one that sounds most senior.
 
 **Practisable:** Doable on work you actually have, this month. An expectation requiring a team you do not have is a note for later rather than a plan.
+
+
+### Try a supplied example
+
+Section: practice-plan. Stable action: step-3-try.
+
+From the case pack: you are a volunteer designer with no authority; you can propose changes to the coordinator; the board decides spending. Changed constraint (organisation): the coordinator leaves, and the board says proposals now go straight to its monthly meeting.
+
+How should your plan to practise influence change?
+
+- Pause the plan until a new coordinator is hired and can carry proposals for you.
+- Send the same proposal as before to each board member, so all of them see it.
+- Prepare a short case for the monthly meeting, in the board’s terms of cost and risk.
+
+<details>
+<summary>After your attempt</summary>
+
+Pause the plan until a new coordinator is hired and can carry proposals for you. — Waiting hands the timing to somebody else and leaves the expectation unpractised.
+
+Send the same proposal as before to each board member, so all of them see it. — The same proposal, sent separately, ignores that the board decides together and in its own terms.
+
+Prepare a short case for the monthly meeting, in the board’s terms of cost and risk. — The route to the decision changed, so the practice changes with it: a prepared argument in the terms the board answers for, delivered where it decides. Affected: the board’s agenda and you. Missing: how the board likes proposals to arrive.
+
+Now choose your own gap in step 3 and check it is practisable on work you actually have.
+
+</details>
 
 
 ### The expectation whose absence most limits you, and why
@@ -7762,20 +8649,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Does leadership come with a title?
+In the case pack you are a volunteer designer with no authority over volunteers, the board or the funder. Can you practise design leadership there?
 
-- Largely, since influence follows authority.
-- The published expectations describe behaviour: making decisions legible, influencing people who do not report to you, connecting design work to what the organisation is accountable for.
-- No, and the expectations are aspirational rather than practisable.
+- Only partly, since influence follows authority and you hold none in the library.
+- Not yet: published expectations describe managers, so a volunteer cannot meet them.
+- It is practisable: take a prepared case on cancellations to the coordinator for the board.
 
 <details>
 <summary>After your attempt</summary>
 
-Largely, since influence follows authority. — Authority helps and the expectations are written as behaviours precisely because they are not the same thing.
+Only partly, since influence follows authority and you hold none in the library. — Authority helps; the expectations are written as behaviours precisely because they are not the same thing.
 
-The published expectations describe behaviour: making decisions legible, influencing people who do not report to you, connecting design work to what the organisation is accountable for. — All of that is practisable on work you already have. Waiting for a title means arriving at the conversation with nothing to point at.
+Not yet: published expectations describe managers, so a volunteer cannot meet them. — Several expectations describe influence without a team, and this module’s artefacts evidence some of them directly.
 
-No, and the expectations are aspirational rather than practisable. — Three of this module’s lessons produced artefacts that evidence them directly.
+It is practisable: take a prepared case on cancellations to the coordinator for the board. — The expectations describe behaviour — making decisions legible, influencing people who do not report to you — and taking a prepared argument to the person who can change something is available at any level.
 
 Improve: Name the artefact for each expectation you claim in step 2. Record the change in step 5.
 
@@ -7792,20 +8679,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You marked eleven of fourteen expectations as yes, based on understanding them. What is the problem?
+You mark “influences decisions without authority” as done. Your only artefact is a case-pack stakeholder map you have not used with anyone. What should the comparison say?
 
-- Nothing, if you genuinely understand them.
-- Eleven is too many to work on at once.
-- In a level conversation somebody asks for an example, and understanding produces a description of the expectation rather than one.
+- Read-about, with the map noted as preparation: nothing was yet taken to anyone who decides.
+- Done, because the map shows you understand how influence works in that situation.
+- Done, since practice material counts as evidence everywhere else in the course.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing, if you genuinely understand them. — Understanding is genuine and it is a different column.
+Read-about, with the map noted as preparation: nothing was yet taken to anyone who decides. — In a level conversation somebody asks what happened. A map nobody acted on is preparation; it becomes evidence when you have taken the argument to someone and recorded what moved.
 
-Eleven is too many to work on at once. — The number is not the issue; what is behind each one is.
+Done, because the map shows you understand how influence works in that situation. — Understanding produces a description of the expectation, which is what somebody who has not done it sounds like.
 
-In a level conversation somebody asks for an example, and understanding produces a description of the expectation rather than one. — Four had artefacts; seven were things read about in this module. The honest version is much shorter and is the only one that produces a plan.
+Done, since practice material counts as evidence everywhere else in the course. — Practice material evidences practice; it does not evidence influence on a real decision, and the course labels the difference.
 
 Improve: Move anything without an artefact into the read-about list in step 2. Record the change in step 5.
 
@@ -7822,20 +8709,20 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You compared against one employer’s published levels. What must the comparison say?
+The board chair asks whether you are “senior enough” to lead the booking redesign, and you answer from one employer’s published levels. What must your answer state?
 
-- Nothing; published expectations are broadly similar everywhere.
-- That the expectations may have changed since publication.
-- That it is one employer’s expectation rather than a market standard.
+- That it compares you with one employer’s page, not with any standard for the market.
+- That the page may have changed since you read it, so the levels could be out of date.
+- Nothing extra: published levels are broadly similar from one employer to another.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing; published expectations are broadly similar everywhere. — They differ enough that the same work is two levels apart in two companies.
+That it compares you with one employer’s page, not with any standard for the market. — Levels and expectations vary between organisations, and this course has no verified market-wide source. The comparison is still useful as long as it says what it is.
 
-That the expectations may have changed since publication. — Worth noting and much less important than whose expectations they are.
+That the page may have changed since you read it, so the levels could be out of date. — Worth noting, and much less important than whose expectations they are.
 
-That it is one employer’s expectation rather than a market standard. — Levels, titles and expectations vary enormously between organisations, and this course has no verified market-wide source. The comparison is still useful; it simply describes a comparison with one page.
+Nothing extra: published levels are broadly similar from one employer to another. — They differ enough that the same work can be two levels apart in two companies.
 
 Improve: Put the one-employer note at the top of the comparison in step 5. Record the change.
 
@@ -7898,15 +8785,41 @@ Write your answer for “The note that this is one employer’s published expect
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A volunteer at a community radio station wants to change how the weekly schedule is planned. She has no title and reports to nobody. She wrote a careful proposal, filed it in the shared drive and waited. The station manager has just announced that from next month the schedule will be decided by the volunteers’ monthly vote.
+
+**Task:** Decide what she should do now to practise influence, and explain why, naming who is affected and what evidence her plan would produce.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Says she should wait for a title or leave the proposal in the drive; treats understanding influence as having it.
+- Adequate: Takes the proposal to the monthly vote with the argument prepared in the volunteers’ terms (time, fairness of slots), because the decision route changed; records what happened and what moved votes as evidence.
+- Strong: As adequate, and names who is affected (presenters whose slots move), what evidence she lacks (how volunteers rate the current schedule), and one published expectation this would evidence, without claiming a level.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -7937,7 +8850,7 @@ Published expectations: One employer’s written description of what a level mea
 Evidenced: There is an artefact somebody could look at: a decision record, a stakeholder map, a prepared argument with its outcome.
 
 Supplied practice material (fictional or labelled practice, not my research):
-Made-up example. Comparing work against published expectations, and comparing against understanding. Went down the list marking yes or no according to whether I could explain the expectation and would know how to do it.
+From the case pack: you are a volunteer designer with no authority; you can propose changes to the coordinator; the board decides spending. Changed constraint (organisation): the coordinator leaves, and the board says proposals now go straight to its monthly meeting.
 
 Activity: Change one constraint in the supplied strategy case. Ask me which choice changes, who gains, who carries the cost and what evidence would make me reconsider.
 
@@ -7947,7 +8860,7 @@ When the activity is finished, tell me to return to the course answer called “
 
 **Come back to the course:** Return to “The expectations from the assigned job-family page, one level above your current work”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The expectations from the assigned job-family page, one level above your current work” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “The expectations from the assigned job-family page, one level above your current work” and write one sentence in your own words.
 
 </details>
 <details>
@@ -8068,7 +8981,7 @@ Product strategy connects a real problem, evidence, constraints and trade-offs t
 - **Disagreeable:** Somebody could argue for the opposite. If nobody could, you have written a value rather than a choice.
 - **Exclusion:** What will not happen this period. It is what makes the note usable, because it is what somebody can hold you to.
 
-**Quick example.** Made-up example. Writing the choices for a strategy note, and writing them as things to do. Improve the booking flow, support the provider’s time, and be honest about states. Three sensible priorities.
+**Quick example.** From the case pack: power tools go out at the desk only and are checked after every loan; the board wants a shorter Saturday queue. A draft strategy note excludes out-of-hours power-tool collection this year. Changed constraint (risk): the insurer agrees to cover locker collection of small power tools if each is checked before it goes in.
 
 The reader demonstrates and guides the task before asking for “Choice 1 · a preference between two real alternatives”.
 
@@ -8114,6 +9027,13 @@ Section: learn. Stable action: learn-5.
 State what you would need to learn, including this course's gaps.
 
 
+### Write what would bring each exclusion back
+
+Section: learn. Stable action: learn-6.
+
+Write what would bring each exclusion back. When a constraint changes, the note then shows which choices move and which stay.
+
+
 ### See the idea in a supplied example
 
 Section: learn. Stable action: worked-example.
@@ -8130,6 +9050,30 @@ Section: learn. Stable action: workspace.
 Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
+
+
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Case pack · Northside Tool Library. Made up for this module: practice material, not research about a real organisation. Members borrow tools from a side room of the town hall, paying a yearly subscription and a refundable deposit on each loan; most borrow a few times a year. A council community grant covers part of the running cost; it is reviewed each autumn and may be cut.
+- Borrower (member) · May book, cancel, collect and return their own loans. Sees only their own loans, deposits and due dates.
+- Front-desk volunteer (Saturday 10:00–13:00 rota of about twelve) · Checks about forty loans in and out each Saturday and signs up new members on paper. Sees that day’s bookings by first name, tool and locker number. May not see addresses or payments, refund deposits or change fees. New volunteers need a morning of training.
+- Maintenance volunteer (Tuesday evenings) · Marks each tool ready, needs repair or retired in the stock list, and must check every power tool after each loan before it goes out again: an insurance condition. Sees tool histories, not member details.
+- Coordinator (paid, part-time) · Copies each day’s booking requests into the stock list by hand at about 8 pm, sets the weekly locker codes, trains volunteers and allocates the Riverside memberships. Sees all bookings and members’ contact details. May not issue refunds.
+- Treasurer and board · The board, a volunteer committee, sets fees, deposits, opening hours and spending, and sees monthly totals rather than individual loans. The treasurer holds the only login to the payment account, refunds deposits in one batch on Tuesday evenings and writes the grant report.
+- Council grant officer (funder) · Funds 30 memberships for residents of the Riverside estate, receives a report each quarter, and has asked for each resident’s name and what they borrowed, to show the scheme is used.
+- Two local workshops · Each emails the coordinator to book about a dozen tools a month for its evening classes. You · A volunteer designer with about six hours a week. You can propose changes to the coordinator; you have no authority over volunteers, the board or the funder.
+- Booking tool and messages · A free hosted form. A request is confirmed only after the coordinator copies it into the stock list; confirmations and locker codes are emailed the next morning. A cancellation frees the tool only at the next 8 pm update. The free plan sends email only, cannot release a cancelled booking by itself, and sends one reminder the day before a tool is due back.
+- Lockers, payments and the stock list · Twelve coded lockers outside the hall take hand tools out of hours; power tools go out at the desk only. Most tools are single copies. The payment provider confirms within seconds and charges a small fee on every payment and every refund. The stock list is one spreadsheet: the only record of where each tool is and whether it is ready.
+- Last six months (coordinator’s notes) · Workshop requests fitted in within a week, every time. The new-member sign-up, called confusing by three new members, postponed four times so far. On three short-staffed Saturdays, returned power tools went unchecked and stayed off the shelf until Tuesday. No request from the grant officer refused. Written aim: “To make tools available to everybody in the neighbourhood, sustainably and inclusively.”
+- Since March · Cancelling takes one tap, so tools cancelled after Friday’s 8 pm update stay marked booked all Saturday. The coordinator thinks Friday-night cancellations have risen; nobody has counted. The board has proposed a £5 late-cancellation fee.
+- Open questions for the board · Whether to let power tools be collected from the lockers out of hours, to shorten the Saturday queue: a locker rule can be changed back within a week, but bigger lockers would be a one-off purchase. Three income ideas: a pre-ticked £1 donation on every booking, “Only 1 left!” on every tool page, and cancelling a subscription by phone only.
+- Constraints · The free booking plan stays this year; a paid plan needs board approval and money the grant does not cover. The payment provider cannot change this year. No analytics beyond the booking tool’s monthly counts and the stock list. The library does not lend tools that need training to use safely, such as chainsaws.
+- Evidence gaps · Nobody has counted the calls asking whether a deposit went through; the coordinator says “most”. Cancellations sit in the stock list, uncounted. Nobody knows why members do not renew, what share of bookings come from repeat members, or whether Riverside residents use their memberships. The board wants to describe the library against the hardware shop’s hire counter and a sharing app; the chair circulated an undated consultancy article on positioning that ends by selling workshops, and nobody has a verified source.
+- Two members, asked why they joined · “I needed a tile cutter for one bathroom; buying one to use once was silly.” “A drill for one weekend. The trip across town nearly put me off.”
 
 
 ### Write the choices
@@ -8177,11 +9121,11 @@ Made-up example. Writing the choices for a strategy note, and writing them as th
 
 Section: practice-plan. Stable action: write-choice-one.
 
-Write your answer for “Choice 1 · a preference between two real alternatives”. Use the task instructions below to decide what to include.
+For your own project, or for the case pack’s library if you have none, labelled as practice.
 
 **Answer:** Choice 1 · a preference between two real alternatives
 
-
+For your own project, or for the case pack’s library if you have none, labelled as practice.
 
 <details>
 <summary>Example</summary>
@@ -8240,6 +9184,32 @@ What the strategy rules out, including at least one thing you would like to do.
 **Exclusion:** What will not happen this period. It is what makes the note usable, because it is what somebody can hold you to.
 
 **Something you wanted:** The test of whether the exclusion list is real. A list of things you did not want anyway costs nothing and rules nothing out.
+
+
+### Try a supplied example
+
+Section: practice-plan. Stable action: step-2-try.
+
+From the case pack: power tools go out at the desk only and are checked after every loan; the board wants a shorter Saturday queue. A draft strategy note excludes out-of-hours power-tool collection this year. Changed constraint (risk): the insurer agrees to cover locker collection of small power tools if each is checked before it goes in.
+
+What should happen to that exclusion?
+
+- Narrow it: allow small power tools that are checked first, and keep the rest excluded.
+- Remove it entirely, since the insurer’s agreement settles the safety question for good.
+- Keep it as written, since a strategy note should not change once the board has read it.
+
+<details>
+<summary>After your attempt</summary>
+
+Narrow it: allow small power tools that are checked first, and keep the rest excluded. — The exclusion existed for a reason, and the constraint changed part of that reason, so it moves partly. Affected: the maintenance volunteer (more checks before lockers) and Saturday borrowers. Missing: how many small power tools fit the lockers.
+
+Remove it entirely, since the insurer’s agreement settles the safety question for good. — The cover is for small tools checked first; larger tools and unchecked returns are still outside it.
+
+Keep it as written, since a strategy note should not change once the board has read it. — A note that cannot change when its reasons change becomes a document nobody follows.
+
+Now write your own exclusion list in step 2, with what would bring each one back.
+
+</details>
 
 
 ### What the strategy rules out for this period
@@ -8512,20 +9482,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Is a strategy note something for people above you to write?
+A draft strategy note for Northside says: “We will improve the booking experience, support volunteers and stay inclusive.” A board member agrees with every word. What is wrong with it?
 
-- No, but it needs approval to be meaningful.
-- The note you write for your own project is the one that will actually govern your decisions for the next few months.
-- Largely, since strategy is set at a higher level.
+- Nobody could disagree, so it states values, not choices: nothing is given up.
+- It needs the treasurer’s approval before it can guide any decision at all.
+- It is too short; each priority needs a paragraph of explanation and examples.
 
 <details>
 <summary>After your attempt</summary>
 
-No, but it needs approval to be meaningful. — It governs your own decisions whether or not anybody approves it, and it is easier to discuss once written.
+Nobody could disagree, so it states values, not choices: nothing is given up. — A choice has another side somebody could want: “first-time members over workshop convenience” can be argued with and held to; “support volunteers” cannot.
 
-The note you write for your own project is the one that will actually govern your decisions for the next few months. — A strategy in your head cannot be argued with, inherited or checked. Two pages is enough and is more than most projects have.
+It needs the treasurer’s approval before it can guide any decision at all. — Approval may matter; a statement nobody could disagree with guides nothing, approved or not.
 
-Largely, since strategy is set at a higher level. — The written one is. The operating one, as the first lesson showed, is made of the decisions you take.
+It is too short; each priority needs a paragraph of explanation and examples. — Length does not create a trade-off; three longer values are still three values.
 
 Improve: Check each choice in step 1 could be disagreed with, and rewrite any that could not. Record the change in step 5.
 
@@ -8542,20 +9512,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Every exclusion on your list is something you did not want to do anyway. What does that mean?
+The note’s exclusion list for Northside reads “No paid advertising, no corporate hire, no café.” Nobody at the library wanted any of those. What does that mean?
 
-- That the exclusions are correct.
-- Nothing is being given up, so the list rules nothing out and the strategy is not costing you anything.
-- That the project is well focused already.
+- The library is already well focused, which is a strength the note should record.
+- The exclusions are sound, since none of them fits a volunteer tool library at all.
+- Nothing is given up, so the list rules out nothing and costs the strategy nothing.
 
 <details>
 <summary>After your attempt</summary>
 
-That the exclusions are correct. — They may be, and a list of things nobody wanted is not a decision.
+The library is already well focused, which is a strength the note should record. — It may be focused; a list of unwanted things cannot show that, because it excludes nothing anybody asked for.
 
-Nothing is being given up, so the list rules nothing out and the strategy is not costing you anything. — An exclusion list is what somebody can hold you to. If none of it hurts, the note describes what was going to happen regardless.
+The exclusions are sound, since none of them fits a volunteer tool library at all. — They may be sound and they are not decisions, because nothing wanted was given up.
 
-That the project is well focused already. — Or that the list was written to be easy to agree with.
+Nothing is given up, so the list rules out nothing and costs the strategy nothing. — An exclusion list is what somebody can hold you to. Adding something people want — such as “no out-of-hours power tools this year” — is what makes it a decision.
 
 Improve: Put something you would like to do onto the exclusion list in step 2. Record the change in step 5.
 
@@ -8572,20 +9542,20 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You left your own limited time out of the constraints, because it reads as an excuse. What did that cost?
+The note’s constraints list the free booking plan and the fixed payment provider, but leave out that the coordinator is part-time and you have six hours a week. What does that cost?
 
-- Nothing, since you know about it anyway.
-- A plan for a different project, with every schedule in it wrong by a factor of two.
-- Some credibility, if somebody notices.
+- Some credibility with the board, if somebody happens to notice the omission.
+- A plan for a different project, with schedules that assume time nobody has.
+- Nothing much, since everybody involved already knows the time is limited.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing, since you know about it anyway. — The note is what the schedule is built from, including by you in three months.
+Some credibility with the board, if somebody happens to notice the omission. — The cost is the plan, not the impression.
 
-A plan for a different project, with every schedule in it wrong by a factor of two. — The flattering constraints are the external ones. The inconvenient ones — your hours, somebody’s availability — are usually the ones that actually decide what happens.
+A plan for a different project, with schedules that assume time nobody has. — The flattering constraints are the external ones; the inconvenient ones — part-time hours, your six a week — usually decide what happens. A plan built without them is wrong before it starts.
 
-Some credibility, if somebody notices. — The cost is the plan rather than the impression.
+Nothing much, since everybody involved already knows the time is limited. — The note is what the schedule is built from, including by you in three months.
 
 Improve: Add the constraints you would rather not write down, in step 3. Record the change in step 5.
 
@@ -8636,15 +9606,41 @@ Write your answer for “Confirm it fits on two pages, and what you cut to get t
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A community orchard’s strategy note says: “Choice: volunteers’ weekends over public events. Excluded this year: guided walks and an apple-pressing festival. Constraint: two volunteers with tools training.” The council now offers to pay for a third trained volunteer if the orchard runs one public event.
+
+**Task:** Decide how the strategy note should change, and explain why, naming who is affected and what evidence is missing.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Adds the festival and keeps everything else, or refuses the offer to protect the note; does not say what the choice now gives up.
+- Adequate: Revisits the choice: the offer changes the constraint, so one public event may now fit; moves one exclusion (such as the festival) back in with a reason, and names volunteers’ weekends and the public as affected.
+- Strong: As adequate, and states what is still excluded and why, adds a risk with a signal (volunteer fatigue after the event), and names the evidence gap (whether a third volunteer can actually be found).
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -8675,7 +9671,7 @@ Disagreeable: Somebody could argue for the opposite. If nobody could, you have w
 Exclusion: What will not happen this period. It is what makes the note usable, because it is what somebody can hold you to.
 
 Supplied practice material (fictional or labelled practice, not my research):
-Made-up example. Writing the choices for a strategy note, and writing them as things to do. Improve the booking flow, support the provider’s time, and be honest about states. Three sensible priorities.
+From the case pack: power tools go out at the desk only and are checked after every loan; the board wants a shorter Saturday queue. A draft strategy note excludes out-of-hours power-tool collection this year. Changed constraint (risk): the insurer agrees to cover locker collection of small power tools if each is checked before it goes in.
 
 Activity: Change one constraint in the supplied strategy case. Ask me which choice changes, who gains, who carries the cost and what evidence would make me reconsider.
 
@@ -8685,7 +9681,7 @@ When the activity is finished, tell me to return to the course answer called “
 
 **Come back to the course:** Return to “Choice 1 · a preference between two real alternatives”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Choice 1 · a preference between two real alternatives” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “Choice 1 · a preference between two real alternatives” and write one sentence in your own words.
 
 </details>
 <details>

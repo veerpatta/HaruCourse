@@ -154,7 +154,7 @@ export const modules = [
     areas: [13],
     primary: "R15",
     alternative: "R16",
-    output: "Local HTML/CSS/JS prototype with responsive and error states",
+    output: "Core: a page-load trace and an engineer handover for a designed feature; optional extension: a local HTML/CSS/JS prototype with responsive and error states",
     status: "published",
   },
   {

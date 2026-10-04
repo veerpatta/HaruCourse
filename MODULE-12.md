@@ -14,9 +14,9 @@ Stable ID: m12-l01-v1. Core.
 
 Design decisions about images, fonts and structure become performance decisions here. You cannot weigh them without knowing what the browser is doing.
 
-Bring: A browser and any page you can load repeatedly.
+Bring: A desktop browser with developer tools, or the supplied trace in this lesson's source notes if you cannot open them.
 
-Starting route: Recommended route: Build nothing yet — this lesson watches a page that already exists in a folder on your own computer, then record what you did and what you saw in the worksheet here so it is saved and reviewable. The files stay with you; nothing is uploaded. Alternative route: Prefer to keep your notes in the same folder as the files? Use the local text-file route below with the copyable starter, then note the folder in Your work.
+Starting route: Recommended route: No coding: watch one real page load in a desktop browser’s developer tools (F12, then Network), then record what you saw in the worksheet here so it is saved and reviewable. Nothing is uploaded. Alternative route: No developer tools available, for example on a tablet or a locked work computer? Use the supplied made up trace in the source notes, write “the supplied trace” as the page you traced, and work from its figures.
 
 - A traced load with each stage named
 - A request list with sizes and times
@@ -85,16 +85,31 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- One real class page traced in the network tab: the document arrived in 300ms, then two stylesheets, three font files, eleven images and four scripts — twenty-one requests before the page was usable, taking eleven seconds on a throttled connection. The two design-owned findings: three typefaces were being loaded and only two were used, and the hero image was 1.8 MB and appeared above every piece of text, so nothing readable appeared until it arrived. Both were design decisions; neither needed an engineer to identify.
+- Example (made up): a class page traced in the network tab. The document arrived in 300ms, then two stylesheets, three font files, eleven images and four scripts — twenty-one requests and 2.4 MB before the page was usable, taking eleven seconds on a throttled connection. The two design-owned findings: three typefaces were being loaded and only two were used, and the hero image was 1.8 MB and appeared above every piece of text, so nothing readable appeared until it arrived. Both were design decisions; neither needed an engineer to identify.
 
 
 ### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
-Recommended route: Build nothing yet — this lesson watches a page that already exists in a folder on your own computer, then record what you did and what you saw in the worksheet here so it is saved and reviewable. The files stay with you; nothing is uploaded. Alternative route: Prefer to keep your notes in the same folder as the files? Use the local text-file route below with the copyable starter, then note the folder in Your work.
+Recommended route: No coding: watch one real page load in a desktop browser’s developer tools (F12, then Network), then record what you saw in the worksheet here so it is saved and reviewable. Nothing is uploaded. Alternative route: No developer tools available, for example on a tablet or a locked work computer? Use the supplied made up trace in the source notes, write “the supplied trace” as the page you traced, and work from its figures.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
+
+
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Supplied practice trace (made up): the Northside Tool Library page, measured once on a desktop computer with Disable cache ticked. Normal connection: 21 requests, 2,400 kB, finished at 3.1 seconds.
+- Requests 1 to 3: the document (20 kB) and two stylesheets (30 kB and 10 kB).
+- Requests 4 to 6: three font files: body text 30 kB, headings 30 kB, and a third typeface used only for one quotation, 78 kB.
+- Request 7: the header photograph, 1,800 kB, a 3000-pixel-wide file shown 720 pixels wide above all the text.
+- Requests 8 to 11: four tool photographs below the first screen, 50 kB each (200 kB). Requests 12 to 17: six small icons as separate image files, 2 kB each (12 kB).
+- Requests 18 to 21: a date-picker script library (130 kB) and three tracking scripts (60 kB together).
+- Same page on the Slow 4G profile: first readable text at about 9 seconds, after the header photograph arrived; the search box worked at about 11 seconds; the list jumped down when the tool photographs arrived, because no space was reserved.
 
 
 ### Read the sequence
@@ -134,11 +149,11 @@ Section: practice-plan. Stable action: step-2-brief.
 
 One real page load traced, with the number of requests, the total bytes, the time, and how that splits by kind.
 
-- Open the network tab, disable the cache and reload a real page.
+- Open the network tab, tick Disable cache and reload a real page, or open the supplied trace.
 - Record the number of requests, the total size and the time.
 - Note which requests are images, fonts, scripts and styles.
 
-**Start here:** Press F12, click the Network tab, tick Disable cache, then reload the page with developer tools still open.
+**Start here:** Press F12, click the Network tab, tick Disable cache, then reload the page with developer tools still open. No developer tools? Open the supplied trace.
 
 **Enough:** Your request count is more than a handful, which means you measured it as a stranger would meet it.
 
@@ -146,7 +161,7 @@ One real page load traced, with the number of requests, the total bytes, the tim
 
 **The network panel:** The tab that lists every request the page made, with its size and how long it took. It shows the real sequence rather than the intended one.
 
-**Disable cache:** A tickbox at the top of the network panel. With it off, your browser reuses files it already has and the page looks far faster than it is for a new visitor.
+**Disable cache:** A tickbox at the top of the network panel. Left unticked, your browser reuses files it already has and the page looks far faster than it is for a new visitor. It works only while developer tools are open.
 
 
 ### See the decision being made
@@ -163,7 +178,7 @@ Made-up example. Tracing a tool-library page for the first time, and measuring a
 
 **What I changed:** Ticked Disable cache at the top of the panel, left developer tools open, and reloaded again.
 
-**What it actually was:** 21 requests, 2.6 megabytes, 3.1 seconds. The same page, measured as a first-time visitor meets it rather than as I meet it.
+**What it actually was:** 21 requests, 2.4 megabytes, 3.1 seconds. The same page, measured as a first-time visitor meets it rather than as I meet it.
 
 **Wrong turn:** The wrong turn is measuring with the cache on, which is the default and which flatters every page you have visited before. The numbers look excellent and describe nobody but you.
 
@@ -172,13 +187,13 @@ Made-up example. Tracing a tool-library page for the first time, and measuring a
 **Unknown:** Still unknown: what a phone on a real network does with the same page. The desktop numbers are a floor, and the next step makes them more honest rather than making them true.
 
 
-### Which page you traced, and in which browser
+### Which page you traced, and in which browser, or “the supplied trace”
 
 Section: practice-plan. Stable action: write-page-traced.
 
-Write your answer for “Which page you traced, and in which browser”. Use the task instructions below to decide what to include.
+Write your answer for “Which page you traced, and in which browser, or “the supplied trace””. Use the task instructions below to decide what to include.
 
-**Answer:** Which page you traced, and in which browser
+**Answer:** Which page you traced, and in which browser, or “the supplied trace”
 
 
 
@@ -196,7 +211,7 @@ Write your answer for “How many requests, how many bytes in total, and how lon
 <details>
 <summary>Example</summary>
 
-Example (made up): 21 requests, 2.6 MB, 3.1 seconds on my normal connection.
+Example (made up): 21 requests, 2.4 MB, 3.1 seconds on my normal connection.
 
 </details>
 
@@ -218,11 +233,11 @@ Section: practice-plan. Stable action: step-3-brief.
 
 The same page reloaded on a throttled connection, with when text first appeared, when it became usable, and anything that moved.
 
-- Set a slow connection profile and reload.
+- Set a slow connection profile and reload, or read the slow timings in the supplied trace.
 - Record when the first text appeared and when the page became usable.
 - Note anything that shifted position as it loaded.
 
-**Start here:** Choose a slow profile in the throttling dropdown, reload, and watch the screen rather than the numbers.
+**Start here:** Choose a slow profile in the throttling dropdown, reload, and watch the screen rather than the numbers. On the supplied trace, read its Slow 4G line.
 
 **Enough:** You have two separate times written down, and they are different from one another.
 
@@ -486,22 +501,22 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Your first trace showed four requests and 40 kilobytes. What is the most likely explanation?
+You traced a page that shows nine photographs, and the network panel listed four requests and 40 kilobytes. What is the most likely explanation?
 
-- The page is genuinely very light.
-- The network panel only records the first few requests.
-- The browser reused most of the page from its own store, because Disable cache was not ticked.
+- The page is very light, and its nine photographs are small enough to fit inside 40 kilobytes.
+- The network panel records only the first few requests, so the rest of the list is missing.
+- The browser reused files stored from an earlier visit, because Disable cache was not ticked.
 
 <details>
 <summary>After your attempt</summary>
 
-The page is genuinely very light. — Possible, and four requests for a page with photographs on it does not add up. Check the tickbox before believing the number.
+The page is very light, and its nine photographs are small enough to fit inside 40 kilobytes. — Each photograph is a request of its own unless it is built into the page, so four requests cannot cover nine pictures. Check the tickbox before believing the number.
 
-The network panel only records the first few requests. — It records everything from the moment it is open. What it does not do is force the browser to ask for things it already has.
+The network panel records only the first few requests, so the rest of the list is missing. — The panel records every request made while it is open; a long list scrolls. It cannot show requests the browser never made because it already had the files.
 
-The browser reused most of the page from its own store, because Disable cache was not ticked. — It is the default, and it makes every page you have visited before look excellent. The tickbox sits at the top of the network panel and has to be on before you reload.
+The browser reused files stored from an earlier visit, because Disable cache was not ticked. — Unticked is the default, and it makes every page you have visited before look light. Tick Disable cache at the top of the network panel, keep the panel open and reload.
 
-Improve: Redo the trace in step 2 with Disable cache ticked and replace the numbers. Record the change in step 5.
+Improve: Redo the trace in step 2 with Disable cache ticked, or check that the supplied trace says it was, and replace the numbers. Record the change in step 5.
 
 Check again: Your request count reflects a first-time visitor rather than a return one.
 
@@ -516,20 +531,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Somebody tells you performance is the engineer’s problem. What is the strongest reply?
+Somebody tells you that page speed is the engineer’s problem. Which reply is strongest?
 
-- Performance is everybody’s responsibility.
-- Engineers optimise what exists. How many typefaces there are, and whether anything readable appears before the photograph, are decided in the design.
-- Designers should learn to optimise images themselves.
+- Designers should learn to compress their own images, so that engineers receive lighter files.
+- Speed is everybody’s job, so the team should share it equally.
+- Typeface count and first-image weight are both decided in the design file.
 
 <details>
 <summary>After your attempt</summary>
 
-Performance is everybody’s responsibility. — True and unhelpful in a conversation. Naming the two specific costs you found is what changes anything.
+Designers should learn to compress their own images, so that engineers receive lighter files. — Useful, and it concedes the point by treating the weight as given. The argument is about which decisions create the weight in the first place.
 
-Engineers optimise what exists. How many typefaces there are, and whether anything readable appears before the photograph, are decided in the design. — Compression, caching and bundling are theirs. The number of requests and their order usually dominate, and both come from a design file.
+Speed is everybody’s job, so the team should share it equally. — True and hard to act on in a conversation. Naming the two specific costs you found in your trace is what changes anything.
 
-Designers should learn to optimise images themselves. — Useful, and it concedes the point. The argument is about which decisions create the weight, not about who compresses it.
+Typeface count and first-image weight are both decided in the design file. — Engineers compress, cache and bundle what exists. The number of requests and the weight of what loads first usually dominate, and both start as design decisions.
 
 Improve: Check your two findings in step 4 are things you could change in a design file, and swap any that are not. Record the change in step 5.
 
@@ -546,20 +561,20 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Your throttled load finished at 18 seconds. Is that the number to report?
+On the slow profile, loading finished at 18 seconds. Text appeared at 4 seconds and the search box first worked at 9. Which time should lead your report?
 
-- Yes, because it is the number the browser gives you.
-- Yes, since it is when the page was fully ready.
-- Not on its own. When the person could do something matters more, and it is usually much earlier.
+- Eighteen seconds, because that is when the page was fully ready, every photograph included.
+- Eighteen seconds, because the browser reports that figure without anybody having to judge it.
+- Nine seconds, when the person could first act, with what they could do at that moment named.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, because it is the number the browser gives you. — It is the easiest number to read off, which is exactly why it gets reported. The useful one takes a judgement about what usable means.
+Eighteen seconds, because that is when the page was fully ready, every photograph included. — Fully ready includes pictures below the first screen that nobody is waiting for. People start reading and tapping long before it.
 
-Yes, since it is when the page was fully ready. — Fully ready is rarely what anybody waits for. People start reading and tapping long before it.
+Eighteen seconds, because the browser reports that figure without anybody having to judge it. — It is the easiest number to read off, which is why it gets reported. The useful one needs a judgement about what usable means on this page.
 
-Not on its own. When the person could do something matters more, and it is usually much earlier. — Loading finishing includes photographs nobody has scrolled to. Time to usable describes the experience, and needs you to say what usable meant on that page.
+Nine seconds, when the person could first act, with what they could do at that moment named. — Time to usable describes the experience. Loading finishing includes photographs nobody has scrolled to, and readable text is not yet usable. Record all three; lead with nine and say what usable meant.
 
 Improve: Write the moment the person could act, and what they could do, in the usable field in step 3. Record the change in step 5.
 
@@ -640,15 +655,41 @@ A screenshot of the network panel is enough. Note its file name; it stays in you
 A screenshot of the network panel is enough. Note its file name; it stays in your own folder.
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a community choir’s concert page loads 14 requests. A 2.1 MB photograph of the choir sits above the date and ticket link, four typeface files load though the page uses two, and a video player script of 300 kB is used only far down the page. On a slow connection nothing readable appears for eight seconds.
+
+**Task:** Name the two design-owned changes you would make first, and explain why each one helps the person waiting, not only the total weight.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Says the engineers should optimise or compress everything, or lists every request without saying which ones a design decision created.
+- Adequate: Picks the photograph above the date (shrink it or move it below the text) and the two unused typefaces, and links each to what appears first or how much is requested.
+- Strong: As adequate, and notes the video script may be engineering-owned, or that the timings come from one throttled run and should be re-measured after the change.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -721,7 +762,7 @@ Repair: Write the sequence as a list and add one sentence per stage saying what 
 
 **A real trace records requests, sizes and times**
 
-Adequate evidence: A recorded trace with counts, total weight and duration, cache disabled.
+Adequate evidence: A recorded trace with counts, total weight and duration, cache disabled, or the supplied trace read and totalled.
 
 0 — No trace.
 
@@ -776,7 +817,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 <details>
 <summary>Reading, video and deeper explanation</summary>
 
-- When someone opens a page, the browser asks a server for a document, receives HTML, and starts reading it. Every stylesheet, font, image and script referenced in that HTML becomes another request, and each one takes time proportional to its size and the connection. This is why a design with four typefaces and a hero video is a performance decision made at the moment of designing, long before anyone writes code.
+- When someone opens a page, the browser asks a server for a document, receives HTML, and starts reading it. Every stylesheet, font, image and script referenced in that HTML becomes another request, and each one takes time that depends on its size, the connection and how far away the server is. This is why a design with four typefaces and a hero video is a performance decision made at the moment of designing, long before anyone writes code.
 - The stages fail differently. A slow stylesheet delays the first paint, so the person sees nothing. A slow font can leave text invisible or shifting when it swaps. A slow script can leave a page that looks finished and does not respond, which is the most confusing failure of all because the person taps and nothing happens.
 - The network tab in your browser shows the real sequence: what was requested, in what order, how big it was and how long it took. Reading it once for a real page is more instructive than any amount of general advice about performance, and it costs ten minutes.
 - Two stages are yours. How much is requested — the number and weight of images, fonts and scripts — is a design decision. And what appears first is a structural decision, because the browser renders what it has: a page whose text arrives before its images shows something useful immediately, and one that waits for everything shows nothing.
@@ -789,11 +830,11 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 Stable ID: m12-l02-v1. Core.
 
-The elements you choose are what assistive technology, search and translation read. Styling is what everyone else reads.
+Part of the optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. The elements you choose are what assistive technology, search and translation read. Styling is what everyone else reads.
 
-Bring: Your m11 outline and region map, and a text editor.
+Bring: A text editor such as Notepad, a browser, and the starter page-semantic.html or your own outline.
 
-Starting route: Recommended route: Build one page of your product as a real HTML file in a folder on your own computer, then record what you did and what you saw in the worksheet here so it is saved and reviewable. The files stay with you; nothing is uploaded. Alternative route: Prefer to keep your notes in the same folder as the files? Use the local text-file route below with the copyable starter, then note the folder in Your work.
+Starting route: Recommended route: Optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. To practise semantic HTML, download page-semantic.html (on the course site, the address ending /starters/m12/page-semantic.html) and save it in Documents\HaruCourse\Practice\m12-l02-v1. If Windows saved it as page-semantic.html.txt, rename it to end in .html. Open it in Notepad (right-click, Open with, Notepad) and in your browser (double-click). Make the one change marked “Change this one thing first”, save with Ctrl+S, reload with F5, then record what you did and saw here. Alternative route: If the page is blank or did not change: check the name ends in .html (File Explorer, View, Show, File name extensions), press Ctrl+Z in Notepad and save to undo your last change, or download a fresh copy. You may use your own page from earlier lessons instead; note its folder in Your work. The files stay on your computer; nothing is uploaded.
 
 - One page in semantic HTML with correct heading levels
 - Landmarks for banner, navigation, main and footer
@@ -862,14 +903,14 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The class detail page was rebuilt in semantic HTML: one page title, four section headings at the right levels, the class list as a list, the schedule as a table with header cells, the booking action as a button and the “see other dates” as a link. Removing the stylesheet produced a readable document with a clear outline. Three earlier mistakes surfaced during the rebuild: the availability status had been a coloured div with no text, the filter controls were links that performed actions, and the price table was built from divs so its columns had no headers.
+- Example (made up): the class detail page was rebuilt in semantic HTML: one page title, four section headings at the right levels, the class list as a list, the schedule as a table with header cells, the booking action as a button and the “see other dates” as a link. Removing the stylesheet produced a readable document with a clear outline. Three earlier mistakes surfaced during the rebuild: the availability status had been a coloured div with no text, the filter controls were links that performed actions, and the price table was built from divs so its columns had no headers.
 
 
 ### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
-Recommended route: Build one page of your product as a real HTML file in a folder on your own computer, then record what you did and what you saw in the worksheet here so it is saved and reviewable. The files stay with you; nothing is uploaded. Alternative route: Prefer to keep your notes in the same folder as the files? Use the local text-file route below with the copyable starter, then note the folder in Your work.
+Recommended route: Optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. To practise semantic HTML, download page-semantic.html (on the course site, the address ending /starters/m12/page-semantic.html) and save it in Documents\HaruCourse\Practice\m12-l02-v1. If Windows saved it as page-semantic.html.txt, rename it to end in .html. Open it in Notepad (right-click, Open with, Notepad) and in your browser (double-click). Make the one change marked “Change this one thing first”, save with Ctrl+S, reload with F5, then record what you did and saw here. Alternative route: If the page is blank or did not change: check the name ends in .html (File Explorer, View, Show, File name extensions), press Ctrl+Z in Notepad and save to undo your last change, or download a fresh copy. You may use your own page from earlier lessons instead; note its folder in Your work. The files stay on your computer; nothing is uploaded.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
 
@@ -929,11 +970,12 @@ Section: practice-plan. Stable action: step-2-brief.
 
 One page built in a file of your own, using real content, with any trouble and its recovery written down.
 
-- Write the page using elements that match the content's shape.
+- Make the starter's one marked change first, save with Ctrl+S and reload with F5.
+- Then write the page using elements that match the content's shape.
 - Use a button for actions and a link for navigation.
 - Include the real content, not placeholder text.
 
-**Start here:** Make a folder, save a file called index.html in it, type the page, then double-click the file to see it.
+**Start here:** Open the starter in Notepad and the browser, change the h1 text as marked, save with Ctrl+S and reload with F5. Then put your own content in.
 
 **Enough:** The page opens in your browser and shows your own content, however plain it looks.
 
@@ -1134,7 +1176,7 @@ A folder of your own, and a name ending in .html. Double-clicking it opens it in
 <details>
 <summary>Example</summary>
 
-Example (made up): Documents/HaruCourse/Build/class-detail.html
+Example (made up): Documents/HaruCourse/Practice/m12-l02-v1/page-semantic.html
 
 </details>
 
@@ -1167,11 +1209,11 @@ Section: practice-plan. Stable action: step-3-brief.
 
 The page read from top to bottom with the styling off, with everything that lost meaning fixed by changing elements.
 
-- Disable the stylesheet and read the page top to bottom.
+- Turn the styling off as the starter shows, and read the page top to bottom.
 - Mark anything that loses meaning or order.
 - Fix by changing elements, not by adding styling back.
 
-**Start here:** Comment out the stylesheet link, reload, and read the whole page aloud before changing anything.
+**Start here:** Turn the styling off as the starter shows, reload, and read the whole page aloud before changing anything.
 
 **Enough:** Every fix in this step changed an element, and none of them added a style rule.
 
@@ -1207,11 +1249,11 @@ Made-up example. Reading a tool-library page unstyled, and putting the styling b
 
 Section: practice-plan. Stable action: write-unstyled-how.
 
-Comment out the stylesheet link, or delete it for a minute and put it back. Both are a single line.
+In the starter, add media="not all" to the style tag as its comment shows, or press its Turn styling off button. Change it back afterwards.
 
 **Answer:** How you turned the styling off
 
-Comment out the stylesheet link, or delete it for a minute and put it back. Both are a single line.
+In the starter, add media="not all" to the style tag as its comment shows, or press its Turn styling off button. Change it back afterwards.
 
 
 ### Everything that lost its meaning or its order
@@ -1294,20 +1336,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Your page looks exactly the same whether you use a heading element or a styled generic box. Does the choice matter?
+Your page looks the same whether a heading is a heading element or a styled generic box. Does the choice matter?
 
-- It looks the same to you. To a screen reader, a search engine, a translation tool and reader mode, a styled box has no structure at all.
-- It matters only if somebody uses a screen reader.
-- It matters for maintenance more than for readers.
+- It matters: screen readers, search and translation read markup, not looks.
+- It matters mainly for tidy code later, not for readers.
+- It matters only for people who use a screen reader, so it can wait for an accessibility review.
 
 <details>
 <summary>After your attempt</summary>
 
-It looks the same to you. To a screen reader, a search engine, a translation tool and reader mode, a styled box has no structure at all. — Those four all read the markup rather than the appearance. A page of generic containers is a page with no outline, no landmarks and nothing to navigate by.
+It matters: screen readers, search and translation read markup, not looks. — Those four all read the elements rather than the appearance. A page of styled boxes has no outline, no landmarks and nothing to move around by.
 
-It matters only if somebody uses a screen reader. — Four different readers of the markup are affected, and three of them are not people. Search and translation both depend on it.
+It matters mainly for tidy code later, not for readers. — Maintenance benefits, and the readers are the argument. The markup is a second version of your page that many things consume.
 
-It matters for maintenance more than for readers. — Maintenance benefits, and the readers are the argument. The markup is a second version of your page that a great many things consume.
+It matters only for people who use a screen reader, so it can wait for an accessibility review. — Four kinds of reader depend on the markup, and three of them are not people: search, translation and reader mode use it too. It costs nothing to get right now.
 
 Improve: Go through your element plan in step 1 and replace any generic box that is carrying meaning. Record the change in step 5.
 
@@ -1324,20 +1366,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-The unstyled page has three tool names running together. What is the right repair?
+With the styling off, three tool names run together as one line. What is the right repair?
 
-- Make them a list, so they are separate for everybody rather than only for people who can see the spacing.
-- Leave it, since nobody reads the page unstyled.
-- Add a style rule giving them space.
+- Leave them, since nobody reads a page without styling.
+- Make them a list, so they are separate for everybody, not only for sighted readers.
+- Add a style rule that gives each name more space, so the three are clearly separated again.
 
 <details>
 <summary>After your attempt</summary>
 
-Make them a list, so they are separate for everybody rather than only for people who can see the spacing. — They run together because they are three boxes with no relationship. A list states the relationship, and the spacing then follows from it rather than standing in for it.
+Leave them, since nobody reads a page without styling. — Several things read pages that way all the time, including search engines and reader mode. The unstyled view is not hypothetical.
 
-Leave it, since nobody reads the page unstyled. — Several things read it that way all the time, including search engines and reader mode. The unstyled view is not hypothetical.
+Make them a list, so they are separate for everybody, not only for sighted readers. — They run together because they are boxes with no relationship. A list states the relationship, and the spacing then follows from it rather than standing in for it.
 
-Add a style rule giving them space. — That repairs your eyes and leaves the markup exactly as meaningless. The unstyled reading exists precisely to catch this.
+Add a style rule that gives each name more space, so the three are clearly separated again. — That repairs what you see and leaves the markup as meaningless as before. The unstyled reading exists to catch exactly this.
 
 Improve: Redo one fix in step 3 by changing an element instead of adding a rule, and record what changed. Note it in step 5.
 
@@ -1354,20 +1396,20 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Your Reserve control is a link styled to look like a button, and it works when clicked. What is broken?
+Your Reserve control is a link styled as a button. It holds the item on the same page and works when clicked. What is broken?
 
-- The space bar does nothing, and somebody listening is told they are about to go somewhere when they are about to reserve something.
-- It will not work on a phone.
-- Nothing, provided it is keyboard reachable.
+- Nothing important, as long as it can be reached with the Tab key like every other control.
+- The space bar does nothing, and a screen reader announces a link where an action happens.
+- It will fail on phones, because touch screens treat links and buttons in different ways.
 
 <details>
 <summary>After your attempt</summary>
 
-The space bar does nothing, and somebody listening is told they are about to go somewhere when they are about to reserve something. — Buttons answer to enter and space; links answer only to enter. The announcement is the second half: a link promises navigation, and this one changes the state of a booking.
+Nothing important, as long as it can be reached with the Tab key like every other control. — Reachable is not the same as behaving correctly. Half of its expected keyboard behaviour is missing, and it is announced as the wrong thing.
 
-It will not work on a phone. — It works fine by touch, which is why the problem survives. The failure is for keyboard and for anybody listening.
+The space bar does nothing, and a screen reader announces a link where an action happens. — Buttons answer to Enter and Space; links answer only to Enter. And a link promises to go somewhere, while this one changes a booking.
 
-Nothing, provided it is keyboard reachable. — Reachable is not the same as behaving correctly. Half its expected keyboard behaviour is missing.
+It will fail on phones, because touch screens treat links and buttons in different ways. — It works by touch, which is why the problem survives testing. The failure is for keyboard use and for anybody listening.
 
 Improve: Change that control to a button in step 2, keeping the styling, and note what behaviour returned. Record the change in step 5.
 
@@ -1414,15 +1456,41 @@ Example (made up): the filter controls were links that performed actions, so on 
 </details>
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a library’s room-booking page has a “Book this room” control built as a link, a “Room rules” heading made from a bold paragraph, and opening hours laid out as rows of boxes. With styling off, the hours run together and the rules section has no heading.
+
+**Task:** Choose the element for each of the three, and explain what a keyboard or screen reader user gains from each change.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Adds styling or spacing so it looks right again, or says the markup does not matter because the page looks fine.
+- Adequate: Book becomes a button (it acts, answers Space), Room rules becomes a real heading in the outline, and the hours become a table with header cells, each with what it gives.
+- Strong: As adequate, and checks the heading level against the page outline, or notes the table needs a caption and should be confirmed with the styling-off reading.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -1563,11 +1631,11 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 Stable ID: m12-l03-v1. Core.
 
-Understanding the cascade is what turns CSS from guesswork into design. Most frustration with it comes from not knowing which rule won.
+Part of the optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. Understanding the cascade is what turns CSS from guesswork into design. Most frustration with it comes from not knowing which rule won.
 
-Bring: Your built page and token sheet.
+Bring: A text editor, a browser, and the starter page-styled.html or your own page.
 
-Starting route: Recommended route: Build a stylesheet for the page you built last lesson in a folder on your own computer, then record what you did and what you saw in the worksheet here so it is saved and reviewable. The files stay with you; nothing is uploaded. Alternative route: Prefer to keep your notes in the same folder as the files? Use the local text-file route below with the copyable starter, then note the folder in Your work.
+Starting route: Recommended route: Optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. To practise tokens, the box model and the cascade, download page-styled.html (on the course site, the address ending /starters/m12/page-styled.html) and save it in Documents\HaruCourse\Practice\m12-l03-v1. If Windows saved it as page-styled.html.txt, rename it to end in .html. Open it in Notepad (right-click, Open with, Notepad) and in your browser (double-click). Make the one change marked “Change this one thing first”, save with Ctrl+S, reload with F5, then record what you did and saw here. Alternative route: If the page is blank or did not change: check the name ends in .html (File Explorer, View, Show, File name extensions), press Ctrl+Z in Notepad and save to undo your last change, or download a fresh copy. You may use your own page from earlier lessons instead; note its folder in Your work. The files stay on your computer; nothing is uploaded.
 
 - A styled page using custom properties from your token sheet
 - Written explanations of three rules and why they win
@@ -1636,14 +1704,14 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The class page was styled with the token sheet declared as custom properties at the top: five neutrals, three semantic colours, six spacing values, six type steps. Three rules were then explained in writing. Why the card was wider than its container: padding was being added to a set width, fixed by including padding in the box sizing. Why the heading colour would not change: a more specific rule elsewhere was winning, visible in the inspector. Why the body font applied everywhere without being repeated: inheritance, set once on the root.
+- Example (made up): the class page was styled with the token sheet declared as custom properties at the top: five neutrals, three semantic colours, six spacing values, six type steps. Three rules were then explained in writing. Why the card was wider than its container: padding was being added to a set width, fixed by including padding in the box sizing. Why the heading colour would not change: a more specific rule elsewhere was winning, visible in the inspector. Why the body font applied everywhere without being repeated: inheritance, set once on the root.
 
 
 ### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
-Recommended route: Build a stylesheet for the page you built last lesson in a folder on your own computer, then record what you did and what you saw in the worksheet here so it is saved and reviewable. The files stay with you; nothing is uploaded. Alternative route: Prefer to keep your notes in the same folder as the files? Use the local text-file route below with the copyable starter, then note the folder in Your work.
+Recommended route: Optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. To practise tokens, the box model and the cascade, download page-styled.html (on the course site, the address ending /starters/m12/page-styled.html) and save it in Documents\HaruCourse\Practice\m12-l03-v1. If Windows saved it as page-styled.html.txt, rename it to end in .html. Open it in Notepad (right-click, Open with, Notepad) and in your browser (double-click). Make the one change marked “Change this one thing first”, save with Ctrl+S, reload with F5, then record what you did and saw here. Alternative route: If the page is blank or did not change: check the name ends in .html (File Explorer, View, Show, File name extensions), press Ctrl+Z in Notepad and save to undo your last change, or download a fresh copy. You may use your own page from earlier lessons instead; note its folder in Your work. The files stay on your computer; nothing is uploaded.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
 
@@ -1703,11 +1771,12 @@ Section: practice-plan. Stable action: step-2-brief.
 
 Your Module 8 tokens declared as custom properties with the same names, and any raw value you used written down with its reason.
 
+- In the starter, change the one marked token value first, save and reload.
 - Write your token sheet as custom properties at the top of the stylesheet.
 - Use the same names as your documentation.
 - Style the page referring to them, never to raw values.
 
-**Start here:** Open your Module 8 token sheet beside the stylesheet and copy the names across exactly.
+**Start here:** Change the starter’s one marked token value, save and reload, and watch what changes. Then open your Module 8 sheet and copy the names across exactly.
 
 **Enough:** Every name in the stylesheet could be found by searching your documentation for the same word.
 
@@ -2056,20 +2125,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Somebody says CSS is unpredictable. Is that fair?
+Somebody says CSS is unpredictable. Is that a fair description?
 
-- It is fair until you use a framework to manage it.
-- It is deterministic and mostly unfamiliar. Nearly all surprises come from three things: the box model, the cascade and inheritance.
-- It is fair, because browsers differ from one another.
+- CSS behaves consistently; most surprises come from the box model, the cascade or inheritance.
+- Browsers each apply CSS in their own way, so the same rules really do look different in each.
+- CSS stays unpredictable until a framework manages the stylesheet on your behalf.
 
 <details>
 <summary>After your attempt</summary>
 
-It is fair until you use a framework to manage it. — A framework hides the cascade rather than removing it, and the surprises return with less to inspect.
+CSS behaves consistently; most surprises come from the box model, the cascade or inheritance. — Unpredictable would mean the same rules give different results, which does not happen. The inspector shows which rule won every time, once you know what to ask it.
 
-It is deterministic and mostly unfamiliar. Nearly all surprises come from three things: the box model, the cascade and inheritance. — Unpredictable means the same input gives different results, which is not what happens. The inspector will tell you which rule won in every case, once you know what to ask it.
+Browsers each apply CSS in their own way, so the same rules really do look different in each. — They differ at the edges. The everyday surprises are the same in every modern browser and come from the three ideas this lesson covers.
 
-It is fair, because browsers differ from one another. — They differ at the edges. The everyday surprises are the same in all of them and come from the three ideas this lesson covers.
+CSS stays unpredictable until a framework manages the stylesheet on your behalf. — A framework hides the cascade rather than removing it, and the surprises return with less to inspect.
 
 Improve: Make sure one of your three explanations in step 4 is about the cascade and one about inheritance. Record the change in step 5.
 
@@ -2086,20 +2155,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-A card set to 300 pixels wide measures 340 on screen. What is happening?
+A card set to 300 pixels wide, with 20 pixels of padding on each side, measures 340 on screen. What is happening?
 
-- The browser is rounding the layout.
-- The width applies to the content, and the padding is being added outside it.
-- Another rule is overriding the width.
+- The browser is rounding the layout up to fit the screen.
+- Another rule elsewhere in the stylesheet is overriding the width.
+- The width covers the content; the padding is added outside it.
 
 <details>
 <summary>After your attempt</summary>
 
-The browser is rounding the layout. — Rounding moves things by a fraction of a pixel. Forty is not rounding.
+The browser is rounding the layout up to fit the screen. — Rounding moves things by a fraction of a pixel. Forty pixels is not rounding.
 
-The width applies to the content, and the padding is being added outside it. — Twenty pixels of padding on each side adds forty. Setting box sizing to include padding and border, once at the top, makes a declared width mean what you expected.
+Another rule elsewhere in the stylesheet is overriding the width. — Possible, and the inspector would show it struck through. When the difference is exactly twice the padding, the box model is the first place to look.
 
-Another rule is overriding the width. — Possible, and the inspector would show it struck through. When the difference is exactly twice the padding, the box model is the first place to look.
+The width covers the content; the padding is added outside it. — Twenty pixels of padding on each side adds forty. Setting box sizing to include padding and border, once at the top, makes a declared width mean what you expected.
 
 Improve: Write that mechanism into your box model note in step 1 so it is in your own words. Record the change in step 5.
 
@@ -2116,20 +2185,20 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Your heading will not change colour. What should you do first?
+Your heading will not change colour when you edit its rule. What should you do first?
 
+- Inspect the heading and read which rule wins, before changing anything.
+- Move your rule to the very end of the stylesheet so it is read after the other one.
 - Make your selector more specific until it wins.
-- Move the rule to the end of the stylesheet.
-- Inspect the element and read which rule is winning, before changing anything.
 
 <details>
 <summary>After your attempt</summary>
 
-Make your selector more specific until it wins. — It works this time and adds a rule nobody can explain, which makes the next conflict worse. Two or three of these and the stylesheet stops being predictable.
+Inspect the heading and read which rule wins, before changing anything. — The Styles panel shows the losing rule struck through and the winner above it. That tells you whether the fix is a selector, an order or an inherited value.
 
-Move the rule to the end of the stylesheet. — Order matters only between rules of equal weight. If the other rule is more particular, moving yours changes nothing.
+Move your rule to the very end of the stylesheet so it is read after the other one. — Order decides only between rules of equal weight. If the other rule is more specific, moving yours changes nothing.
 
-Inspect the element and read which rule is winning, before changing anything. — The Styles panel shows the losing rule struck through and the winning one above it. Diagnosis takes ten seconds and tells you whether the fix is a selector, an order or an inherited value.
+Make your selector more specific until it wins. — It works this time and adds a rule nobody can explain, which makes the next conflict worse. A few of these and the stylesheet stops being predictable.
 
 Improve: Write your explanation in step 3 before the fix, and record what the inspector actually showed. Note the change in step 5.
 
@@ -2180,15 +2249,41 @@ Write your answer for “Where the stylesheet is saved”. Use the task instruct
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: on a bakery’s order page, a box set to 200 pixels wide with 16 pixels of padding on each side is wider than its column. The “Today’s loaves” heading stays black though a rule sets it brown, and a small note under the button is pale grey though no rule on it mentions colour.
+
+**Task:** Name the mechanism behind each of the three surprises, explain why it produces that result, and say what you would check in the inspector before changing anything.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Guesses fixes such as adding !important, moving rules or changing numbers until it looks right, without naming why.
+- Adequate: Box model (width plus 32 pixels of padding = 232), cascade (a more specific rule wins), inheritance (colour passed down from a parent), each with what the inspector shows.
+- Strong: As adequate, and prefers a fix that removes the conflict, such as box-sizing set once or editing the winning rule, over adding specificity.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -2329,11 +2424,11 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 Stable ID: m12-l04-v1. Core.
 
-You have drawn responsive layouts for five modules. Building one shows you which of those drawings were possible and which were wishes.
+Part of the optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. You have drawn responsive layouts for five modules. Building one shows you which of those drawings were possible and which were wishes.
 
-Bring: Your three-width drawings and the built page.
+Bring: A text editor, a browser, and the starter page-responsive.html or your own page.
 
-Starting route: Recommended route: Build the narrow-first layout for the page you already have in a folder on your own computer, then record what you did and what you saw in the worksheet here so it is saved and reviewable. The files stay with you; nothing is uploaded. Alternative route: Prefer to keep your notes in the same folder as the files? Use the local text-file route below with the copyable starter, then note the folder in Your work.
+Starting route: Recommended route: Optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. To practise a narrow-first layout, download page-responsive.html (on the course site, the address ending /starters/m12/page-responsive.html) and save it in Documents\HaruCourse\Practice\m12-l04-v1. If Windows saved it as page-responsive.html.txt, rename it to end in .html. Open it in Notepad (right-click, Open with, Notepad) and in your browser (double-click). Make the one change marked “Change this one thing first”, save with Ctrl+S, reload with F5, then record what you did and saw here. Alternative route: If the page is blank or did not change: check the name ends in .html (File Explorer, View, Show, File name extensions), press Ctrl+Z in Notepad and save to undo your last change, or download a fresh copy. You may use your own page from earlier lessons instead; note its folder in Your work. The files stay on your computer; nothing is uploaded.
 
 - A page working from about 320 pixels upward
 - Breakpoints chosen from content, with the reason for each
@@ -2348,7 +2443,7 @@ Web foundations explain how a browser turns structure, style and behavior into a
 
 - **Narrow first:** Building the smallest layout before the others. It forces the content into priority order, because there is no room for anything else.
 - **Flexible sizing:** Letting something take the room available rather than a number you chose. Flexible layouts wrap and grow; fixed ones break at sizes you never tested.
-- **Horizontal page scrolling:** Having to drag the whole page sideways to read it. It is never acceptable, at any width, and it usually comes from one stubborn element.
+- **Horizontal page scrolling:** Having to drag the whole page sideways to read it. From 320 pixels up it should not happen, apart from content that needs width scrolling in its own box, and it usually comes from one stubborn element.
 
 **Quick example.** Made-up example. Making a tool-library page responsive, and starting from the layout I had already drawn. Built the wide layout first, because it was the one in my design file, then wrote rules to squeeze it down for narrow screens.
 
@@ -2389,11 +2484,11 @@ Section: learn. Stable action: learn-4.
 Test between breakpoints, where most failures live.
 
 
-### No horizontal scrolling of the page, at any width, ever
+### Idea 5: From 320 pixels up the page itself should not scroll sideways;…
 
 Section: learn. Stable action: learn-5.
 
-No horizontal scrolling of the page, at any width, ever.
+From 320 pixels up the page itself should not scroll sideways; wide content scrolls in its own box.
 
 
 ### See the idea in a supplied example
@@ -2402,14 +2497,14 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The class page was built narrow first: title, key facts, action, then description, with the image below. Widening slowly revealed three genuine breakpoints — one where the key facts could sit in a row, one where the description could take a wider column, one where a side panel became viable. None matched a device name. Between the second and third, the card grid produced a single orphaned card, fixed with a flexible wrap rather than another breakpoint. At 320 pixels the schedule table caused horizontal scrolling of the page; it became records instead, matching the m08 decision.
+- Example (made up): the class page was built narrow first: title, key facts, action, then description, with the image below. Widening slowly revealed three genuine breakpoints — one where the key facts could sit in a row, one where the description could take a wider column, one where a side panel became viable. None matched a device name. Between the second and third, the card grid produced a single orphaned card, fixed with a flexible wrap rather than another breakpoint. At 320 pixels the schedule table caused horizontal scrolling of the page; it became records instead, matching the m08 decision.
 
 
 ### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
-Recommended route: Build the narrow-first layout for the page you already have in a folder on your own computer, then record what you did and what you saw in the worksheet here so it is saved and reviewable. The files stay with you; nothing is uploaded. Alternative route: Prefer to keep your notes in the same folder as the files? Use the local text-file route below with the copyable starter, then note the folder in Your work.
+Recommended route: Optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. To practise a narrow-first layout, download page-responsive.html (on the course site, the address ending /starters/m12/page-responsive.html) and save it in Documents\HaruCourse\Practice\m12-l04-v1. If Windows saved it as page-responsive.html.txt, rename it to end in .html. Open it in Notepad (right-click, Open with, Notepad) and in your browser (double-click). Make the one change marked “Change this one thing first”, save with Ctrl+S, reload with F5, then record what you did and saw here. Alternative route: If the page is blank or did not change: check the name ends in .html (File Explorer, View, Show, File name extensions), press Ctrl+Z in Notepad and save to undo your last change, or download a fresh copy. You may use your own page from earlier lessons instead; note its folder in Your work. The files stay on your computer; nothing is uploaded.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
 
@@ -2420,11 +2515,12 @@ Section: practice-plan. Stable action: step-1-brief.
 
 A layout at about 320 pixels with content in priority order, flexible sizing, and nothing scrolling sideways.
 
+- In the starter, make the one marked change first and watch the cards rewrap.
 - Lay out the page at about 320 pixels with content in priority order.
 - Use flexible sizing rather than fixed widths.
 - Check nothing requires horizontal scrolling.
 
-**Start here:** Open the device toolbar in developer tools and set the width to 320, then look at your page before changing anything.
+**Start here:** Press F12, then Ctrl+Shift+M for the device toolbar, set the width to 320 and look before changing anything. This is emulation, not a phone test.
 
 **Enough:** The narrow layout reads top to bottom in an order you could defend, and nothing scrolls sideways.
 
@@ -2432,7 +2528,7 @@ A layout at about 320 pixels with content in priority order, flexible sizing, an
 
 **Flexible sizing:** Letting something take the room available rather than a number you chose. Flexible layouts wrap and grow; fixed ones break at sizes you never tested.
 
-**Horizontal page scrolling:** Having to drag the whole page sideways to read it. It is never acceptable, at any width, and it usually comes from one stubborn element.
+**Horizontal page scrolling:** Having to drag the whole page sideways to read it. From 320 pixels up it should not happen, apart from content that needs width scrolling in its own box, and it usually comes from one stubborn element.
 
 
 ### See the decision being made
@@ -2835,20 +2931,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You have three layouts, for phone, tablet and desktop. Is the page responsive?
+You have three layouts, for phone, tablet and desktop widths. Is the page responsive?
 
-- It is, since those three cover most real devices.
-- It is, provided the three layouts are well made.
-- Not really. Devices come in every size, people resize windows and split screens, and a layout that works at three widths fails at the dozens between them.
+- Partly: people use every width in between, and those widths have never been tested.
+- Those three widths cover the screens most people use, so the page counts as responsive.
+- Each of the three layouts is carefully made, so the page counts as responsive.
 
 <details>
 <summary>After your attempt</summary>
 
-It is, since those three cover most real devices. — They cover three points on a continuous range. A window dragged to two thirds of a screen sits in none of them.
+Partly: people use every width in between, and those widths have never been tested. — The sweep shows this: the awkward widths are rarely the ones named after a device. Content-derived change points and flexible rules cover the whole range.
 
-It is, provided the three layouts are well made. — Three well-made layouts with a broken range between them is the exact problem this lesson is about.
+Those three widths cover the screens most people use, so the page counts as responsive. — They cover three points on a continuous range. A window dragged to two thirds of a screen, or enlarged text, sits in none of them.
 
-Not really. Devices come in every size, people resize windows and split screens, and a layout that works at three widths fails at the dozens between them. — The sweep is what shows this: the awkward widths are almost never the ones named after a device. Content-derived change points land where your own content asks for them.
+Each of the three layouts is carefully made, so the page counts as responsive. — Three well-made layouts with an untested range between them is the exact problem this lesson is about.
 
 Improve: Redo the sweep in step 3 and record at least one failure that is not at one of your change points. Record the change in step 5.
 
@@ -2865,20 +2961,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-At one width a grid leaves a single orphaned card. Should you add a breakpoint?
+At one width the card grid leaves a single orphaned card on its last row. Should you add a breakpoint?
 
-- Yes, and also make the cards narrower.
-- Yes, since the layout genuinely needs to change there.
-- No. A flexible wrapping rule handles every width, including the ones you have not looked at.
+- A breakpoint is right here, because the layout genuinely needs to change at that width.
+- A breakpoint helps, as long as the cards are also made narrower at that width.
+- Use a flexible wrapping rule: it handles every width, including untested ones.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, and also make the cards narrower. — That moves the orphan to a different width rather than removing it.
+A breakpoint is right here, because the layout genuinely needs to change at that width. — The arrangement does not need to change; the wrapping needs to be less rigid. A change point is for a genuine change of arrangement.
 
-Yes, since the layout genuinely needs to change there. — The arrangement does not need to change; the wrapping needs to be less rigid. A change point is for a genuine change of arrangement.
+A breakpoint helps, as long as the cards are also made narrower at that width. — That moves the orphan to a different width rather than removing it.
 
-No. A flexible wrapping rule handles every width, including the ones you have not looked at. — Orphans appear wherever the division happens to be awkward, which is many widths rather than one. A change point fixes the width you were looking at.
+Use a flexible wrapping rule: it handles every width, including untested ones. — Orphans appear wherever the division happens to be awkward, which is many widths. A change point fixes only the width you were looking at.
 
 Improve: Move any orphan fix in step 3 from a change point to a flexible rule, and record the change in step 5.
 
@@ -2895,20 +2991,20 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-At 200 per cent text the header wraps over the logo. What is the correct repair?
+With text enlarged to about 200 per cent, the header wraps over the logo because it has a fixed height. What is the correct repair?
 
-- Add a change point for enlarged text.
-- Reduce the header text size at large text settings.
-- Let the header grow, so more text gets more room.
+- Let the header grow taller, so that more text gets more room.
+- Shrink the header text at large text settings.
+- Add a change point that rearranges the header for enlarged text.
 
 <details>
 <summary>After your attempt</summary>
 
-Add a change point for enlarged text. — Text size is not width, so a width-based change point cannot see it.
+Let the header grow taller, so that more text gets more room. — A fixed height is a promise the content cannot keep. Growing is what should happen, even though the header then takes two lines and looks different from the design.
 
-Reduce the header text size at large text settings. — That takes the enlargement away from the person who asked for it, which is the one repair that makes things worse.
+Shrink the header text at large text settings. — That takes the enlargement away from the person who asked for it, which is the one repair that makes things worse.
 
-Let the header grow, so more text gets more room. — A fixed height is a promise the content cannot keep. Growing is what should happen, even though the header then takes two lines and looks different from the design.
+Add a change point that rearranges the header for enlarged text. — The cause is a fixed height, and a change point does not remove it. Even if one triggered at this zoom, the next text size would break the header again.
 
 Improve: Fix that container in step 4 by removing its fixed height, and write what it does now. Record the change in step 5.
 
@@ -2960,15 +3056,41 @@ A drawing that turned out to be impossible is a finding, not a failure.
 A drawing that turned out to be impossible is a finding, not a failure.
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a walking club’s events page has layouts drawn for 375, 768 and 1280 pixels. At 600 pixels one event card sits alone on its row, at 320 pixels a 520-pixel-wide route map makes the whole page scroll sideways, and at 200 per cent text the date banner overlaps the title because it has a fixed height.
+
+**Task:** Choose a repair for each problem, and explain which ones need a new change point and which do not.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Adds a breakpoint for every problem or shrinks the text at large sizes; treats the three device widths as enough.
+- Adequate: Flexible wrapping for the orphan, the map in its own scrolling box or made flexible, and the banner allowed to grow; none needs a device-named breakpoint.
+- Strong: As adequate, and says a change point is earned only by a real change of arrangement, then plans a slow sweep to find what else fails between widths.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -2996,7 +3118,7 @@ What I am trying to do: Make your page work from about 320 pixels to a wide scre
 Key idea or terms:
 Narrow first: Building the smallest layout before the others. It forces the content into priority order, because there is no room for anything else.
 Flexible sizing: Letting something take the room available rather than a number you chose. Flexible layouts wrap and grow; fixed ones break at sizes you never tested.
-Horizontal page scrolling: Having to drag the whole page sideways to read it. It is never acceptable, at any width, and it usually comes from one stubborn element.
+Horizontal page scrolling: Having to drag the whole page sideways to read it. From 320 pixels up it should not happen, apart from content that needs width scrolling in its own box, and it usually comes from one stubborn element.
 
 Supplied practice material (fictional or labelled practice, not my research):
 Made-up example. Making a tool-library page responsive, and starting from the layout I had already drawn. Built the wide layout first, because it was the one in my design file, then wrote rules to squeeze it down for narrow screens.
@@ -3099,7 +3221,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 - Building narrow first is not a slogan; it is the order that produces fewer decisions. The narrow layout is your content in priority order with almost no arrangement, and each wider layout adds arrangement as space allows. Starting wide means removing things, which is where content gets hidden rather than reordered.
 - Breakpoints belong where your content breaks, not where a device is rumoured to be. Widen the browser slowly and watch: the point where a line becomes uncomfortably long, where a card becomes too narrow to read, where a gap opens — those are your breakpoints, and they are specific to this design.
 - Flexible layout does most of the work without breakpoints at all: content that wraps when it runs out of room, columns that grow within limits, images that scale to their container. Layouts built from fixed sizes need a breakpoint for every problem, and they fail between the sizes you tested.
-- The gaps between breakpoints are where failures hide, because that is where nobody looks. Drag the window slowly across the whole range once. Anything that overlaps, clips, or produces horizontal scrolling appears immediately, and horizontal scrolling of the page is never acceptable — content that must scroll sideways gets its own container.
+- The gaps between breakpoints are where failures hide, because that is where nobody looks. Drag the window slowly across the whole range once. Anything that overlaps, clips, or produces horizontal scrolling appears immediately. From 320 pixels up the page itself should not scroll sideways, which is the WCAG reflow requirement; content that genuinely needs width, such as a wide table, scrolls inside its own container.
 
 [web.dev: learn responsive design](https://web.dev/learn/design/).
 
@@ -3109,11 +3231,11 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 Stable ID: m12-l05-v1. Core.
 
-Images are usually most of a page's weight, and almost all of that weight is a design decision.
+Part of the optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. Images are usually most of a page's weight, and almost all of that weight is a design decision.
 
-Bring: Your built page and its images.
+Bring: A text editor, a browser, and the starter page-images.html or your own page and images.
 
-Starting route: Recommended route: Build the image work for the page you have been building in a folder on your own computer, then record what you did and what you saw in the worksheet here so it is saved and reviewable. The files stay with you; nothing is uploaded. Alternative route: Prefer to keep your notes in the same folder as the files? Use the local text-file route below with the copyable starter, then note the folder in Your work.
+Starting route: Recommended route: Optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. To practise image sizes, SVG and reserved space, download page-images.html (on the course site, the address ending /starters/m12/page-images.html) and save it in Documents\HaruCourse\Practice\m12-l05-v1. If Windows saved it as page-images.html.txt, rename it to end in .html. Open it in Notepad (right-click, Open with, Notepad) and in your browser (double-click). Make the one change marked “Change this one thing first”, save with Ctrl+S, reload with F5, then record what you did and saw here. Alternative route: If the page is blank or did not change: check the name ends in .html (File Explorer, View, Show, File name extensions), press Ctrl+Z in Notepad and save to undo your last change, or download a fresh copy. You may use your own page from earlier lessons instead; note its folder in Your work. The files stay on your computer; nothing is uploaded.
 
 - Images served near their display size, with formats chosen deliberately
 - One icon written by hand as SVG and styled with tokens
@@ -3130,7 +3252,7 @@ Web foundations explain how a browser turns structure, style and behavior into a
 - **Flat graphic:** An icon, logo or diagram made of shapes rather than of a photograph. Saved as a photograph it is bigger and softer; as a vector it is tiny and sharp at any size.
 - **Dense screen:** A display packing more pixels into the same space. It is why an image is usually served somewhat wider than its display width, rather than exactly at it.
 
-**Quick example.** Made-up example. Reducing the images on a tool-library page, and leaving the one that mattered most. Compressed everything. Eleven images squeezed as hard as they would go without looking obviously worse. Total weight fell from 2.4 megabytes to 1.6.
+**Quick example.** Made-up example. Reducing the images on a tool-library page, and leaving the one that mattered most. Compressed everything evenly. Eleven images squeezed as far as they would go without looking obviously worse. Total weight fell from 2.4 megabytes to about 2.0.
 
 The reader demonstrates and guides the task before asking for “Each image: its file size, the width it is served at, and the width it is displayed at”.
 
@@ -3145,7 +3267,7 @@ Put real images into your page at appropriate sizes and formats, produce one ico
 
 Section: learn. Stable action: learn-1.
 
-Serve an image near the size it is displayed; a 3000-pixel photo in a 400-pixel slot wastes everything.
+Serve an image near the size it is displayed; a 3000-pixel photo in a 400-pixel slot wastes most of its bytes.
 
 
 ### Photographs and flat graphics want different formats
@@ -3182,14 +3304,14 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Eleven images were reviewed. The hero photograph was 1.8 MB at 3000 pixels wide, displayed at 720; re-exported at an appropriate size and format it became 96 KB. Six flat icons were replaced with hand-written SVG totalling under 4 KB, styled with the token colours rather than shipped in three colour variants. Four below-the-fold photographs were set to load later, with their space reserved so nothing jumped. Total page weight fell from 2.4 MB to 340 KB, and time to usable on a throttled connection fell from eleven seconds to three.
+- Example (made up): eleven images were reviewed. The hero photograph was 1.8 MB at 3000 pixels wide, displayed at 720; re-exported at an appropriate size and format it became 96 KB. Six flat icons were replaced with hand-written SVG totalling under 4 KB, styled with the token colours rather than shipped in three colour variants. Four below-the-fold photographs were set to load later, with their space reserved so nothing jumped. Total page weight fell from 2.4 MB to 340 KB, and time to usable on a throttled connection fell from eleven seconds to three.
 
 
 ### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
-Recommended route: Build the image work for the page you have been building in a folder on your own computer, then record what you did and what you saw in the worksheet here so it is saved and reviewable. The files stay with you; nothing is uploaded. Alternative route: Prefer to keep your notes in the same folder as the files? Use the local text-file route below with the copyable starter, then note the folder in Your work.
+Recommended route: Optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. To practise image sizes, SVG and reserved space, download page-images.html (on the course site, the address ending /starters/m12/page-images.html) and save it in Documents\HaruCourse\Practice\m12-l05-v1. If Windows saved it as page-images.html.txt, rename it to end in .html. Open it in Notepad (right-click, Open with, Notepad) and in your browser (double-click). Make the one change marked “Change this one thing first”, save with Ctrl+S, reload with F5, then record what you did and saw here. Alternative route: If the page is blank or did not change: check the name ends in .html (File Explorer, View, Show, File name extensions), press Ctrl+Z in Notepad and save to undo your last change, or download a fresh copy. You may use your own page from earlier lessons instead; note its folder in Your work. The files stay on your computer; nothing is uploaded.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
 
@@ -3200,7 +3322,7 @@ Section: practice-plan. Stable action: step-1-brief.
 
 Every image listed with its file size, served width and display width, with the oversized and wrongly formatted ones marked.
 
-- List every image with its file size and its display size.
+- List every image with its file size and display size, or use the starter's supplied audit.
 - Mark any served more than twice its display width.
 - Mark flat graphics currently shipped as photographs.
 
@@ -3280,11 +3402,11 @@ Section: practice-plan. Stable action: step-2-demo.
 
 Made-up example. Reducing the images on a tool-library page, and leaving the one that mattered most.
 
-**What I did first:** Compressed everything. Eleven images squeezed as hard as they would go without looking obviously worse. Total weight fell from 2.4 megabytes to 1.6.
+**What I did first:** Compressed everything evenly. Eleven images squeezed as far as they would go without looking obviously worse. Total weight fell from 2.4 megabytes to about 2.0.
 
-**What the timing did:** Time to usable on the slow profile went from about 11 seconds to about 10. Nearly a megabyte saved and almost nothing changed.
+**What the timing did:** Time to usable on the slow profile went from about 11 seconds to about 10. About 360 kilobytes saved and almost nothing changed.
 
-**Why:** The header photograph was still 900 kilobytes and still sat above every word on the page. Nothing readable could appear until it arrived, so the other ten images were never the delay.
+**Why:** The header photograph had only gone from 1.8 megabytes to 1.5, and it still sat above every word on the page. Nothing readable could appear until it arrived, so the other ten images were never the delay.
 
 **What actually worked:** Re-exporting that one photograph at 720 pixels rather than 3000, which took it to 96 kilobytes. Time to usable fell to about 3 seconds.
 
@@ -3333,7 +3455,7 @@ One icon written by hand as SVG, with a title, a token colour, and a size you me
 
 **Enough:** Your icon is a few kilobytes, stays sharp when you scale it up, and takes its colour from a token.
 
-**SVG:** A picture written as text. You can open it in a text editor, read it, change a colour and see the result, which is true of no other image format.
+**SVG:** A picture written as text. You can open it in a text editor, read it, change a colour and see the result, which no other common web image format allows.
 
 **Title:** A line inside the SVG naming what it is. It is how the icon is announced, and it is the same decision you made in the alternative-text lesson.
 
@@ -3408,7 +3530,7 @@ A loading decision for every image, reserved space so nothing jumps, and your Mo
 
 **Enough:** Every image has a decision and a reason, and nothing jumps when the page loads.
 
-**Loading later:** Telling the browser an image can wait until the person scrolls near it. It is right for everything below the first screenful and wrong for anything above it.
+**Loading later:** Telling the browser an image can wait until the person scrolls near it. It usually suits images below the first screenful and is wrong for the image at the top.
 
 **Reserved space:** Telling the layout how big an image will be before it arrives, so nothing jumps when it does. Without it people tap the wrong thing.
 
@@ -3510,7 +3632,7 @@ must load immediately — It is at the top, so if it stays a photograph file it 
 
 can load later — It is on screen from the first moment.
 
-should not be an image at all — A two-colour mark is exactly what SVG is for, and it will be smaller than a favicon.
+should not be an image at all — A two-colour mark is exactly what SVG is for, and as SVG it is usually a small fraction of the photograph file’s size.
 
 Now make the decision for each of your own images, and write the reason beside it.
 
@@ -3608,24 +3730,24 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You compressed all eleven images and the page got a megabyte lighter, but the time to usable barely moved. Why?
+You compressed all eleven images evenly. The page got about 360 kilobytes lighter, but the header photograph on the first screen is still 1.5 megabytes, and time to usable moved only from about 11 seconds to 10. What is the most likely reason?
 
-- The connection profile was too slow for the difference to show.
-- The delay was one large image above the text, and an even squeeze barely touched it.
-- Compression does not affect loading time.
+- The slow connection profile hides small improvements, so a bigger saving is needed to show.
+- Compression changes file sizes, not loading time.
+- The big first-screen photograph is still the wait, and the squeeze barely touched it.
 
 <details>
 <summary>After your attempt</summary>
 
-The connection profile was too slow for the difference to show. — A slow profile makes differences larger rather than smaller. The saving was in the wrong place.
+The slow connection profile hides small improvements, so a bigger saving is needed to show. — A slow profile makes differences larger, not smaller. The saving was in the wrong place.
 
-The delay was one large image above the text, and an even squeeze barely touched it. — What the person waits for is the weight above the first screenful. Ten images below the fold can be large and late without anybody noticing.
+Compression changes file sizes, not loading time. — Smaller files arrive sooner. The saving simply landed on pictures nobody was waiting for, while the big one stayed big.
 
-Compression does not affect loading time. — It does, for whatever is being waited on. The saving landed on images nobody was waiting for.
+The big first-screen photograph is still the wait, and the squeeze barely touched it. — On a slow connection the 1.5 megabyte picture takes most of the download time and holds up what comes after it. Images below the first screen were never what people waited for.
 
-Improve: Identify the largest image above the fold in step 1 and re-export it at its display width, then measure again in step 5. Record the change.
+Improve: Identify the largest image on the first screen in step 1 and re-export it near its display width, then measure again in step 5. Record the change.
 
-Check again: Your before-and-after pair shows a change in time to usable, not only in weight.
+Check again: Your before-and-after pair shows a change in time to usable, or an estimate labelled as one, not only in weight.
 
 Answers to revisit: image-audit, oversized, wrong-format, improvement-made
 
@@ -3638,20 +3760,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Your designer instinct says the developer will optimise the images. What does that miss?
+Your instinct says the developer will optimise the images later. What does that leave out?
 
-- Nothing much, provided you supply high-quality originals.
-- They can compress what you supply. Whether there is a full-width photograph at all, and whether it sits above the first line of text, are design decisions.
-- That optimisation tools are not always available.
+- Whether a big photograph exists, and how large it sits, are design choices.
+- Nothing much, provided you hand over high-quality original files for them to work from.
+- That free tools may not be available to them.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing much, provided you supply high-quality originals. — High-quality originals are exactly what produces a 1.8 megabyte header. Supplying the original is not the same as deciding what the page needs.
+Whether a big photograph exists, and how large it sits, are design choices. — Compression works on whatever you hand over. The number of images, their size in the layout and whether they sit on the first screen, where they must load at once, come from the design.
 
-They can compress what you supply. Whether there is a full-width photograph at all, and whether it sits above the first line of text, are design decisions. — Compression is theirs and it operates on what you handed over. The number of images, their size in the layout and their order on the page dominate the result and come from the design.
+Nothing much, provided you hand over high-quality original files for them to work from. — High-quality originals are what produces a 1.8 megabyte header. Supplying the original is not the same as deciding what the page needs.
 
-That optimisation tools are not always available. — They are widely available and free. The point is which decisions the tools cannot reach.
+That free tools may not be available to them. — Free tools are widely available. The point is which decisions no tool can reach.
 
 Improve: In your loading decisions in step 4, mark which are yours and which belong to whoever builds it. Record the change in step 5.
 
@@ -3668,20 +3790,20 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Four photographs below the fold now load later, and the page jumps as the person scrolls. What went wrong?
+Four photographs below the first screen now load later, and the page jumps as the person scrolls. What went wrong?
 
-- Those images should load immediately after all.
-- The images are too large, so they arrive slowly.
-- No space was reserved, so the layout only learns how big each image is when it arrives.
+- The images are too large, so they arrive slowly and push the page around as they do.
+- No space was reserved, so the layout learns each image’s size only when it arrives.
+- Those four images should load immediately after all, as they did before the change.
 
 <details>
 <summary>After your attempt</summary>
 
-Those images should load immediately after all. — That undoes a good decision to fix a different one. The jumping is about space, not about timing.
+The images are too large, so they arrive slowly and push the page around as they do. — A smaller image arriving into unreserved space jumps just as much, only sooner.
 
-The images are too large, so they arrive slowly. — A smaller image arriving into an unreserved space jumps just as much, only faster.
+No space was reserved, so the layout learns each image’s size only when it arrives. — Loading later and reserving space are two halves of one decision. Without the second, people tap the wrong thing because the target moved as they reached it.
 
-No space was reserved, so the layout only learns how big each image is when it arrives. — Loading later and reserving space are two halves of one decision. Without the second, people tap the wrong thing because the target moved as they reached it.
+Those four images should load immediately after all, as they did before the change. — That undoes a good decision to fix a different problem. The jumping is about space, not timing.
 
 Improve: Reserve the space for every image in step 4 and write how you did it. Record the change in step 5.
 
@@ -3698,11 +3820,11 @@ Section: practice. Stable action: step-5-brief.
 
 Page weight and time to usable measured before and after, with both traces saved.
 
-- Re-run the throttled load and record the new timings.
+- Re-run the throttled load on a page served over http(s), or label the timing an estimate.
 - Record before-and-after weight.
 - Save the audit and the measurements.
 
-**Start here:** Re-run the throttled load with the same profile you used in lesson 1, so the two numbers can be compared.
+**Start here:** Re-run the throttled load with the same profile you used in lesson 1, on a page served over http(s). From your own folder, label the timing an estimate.
 
 **Enough:** Both numbers were measured the same way, and you can say what changed between them.
 
@@ -3715,11 +3837,11 @@ Page weight and time to usable measured before and after, with both traces saved
 
 Section: practice. Stable action: write-before-after.
 
-Write your answer for “Page weight before and after, and time to usable before and after”. Use the task instructions below to decide what to include.
+Timing needs a page served over http(s). From your own folder, add up the file sizes and label any timing as an estimate.
 
 **Answer:** Page weight before and after, and time to usable before and after
 
-
+Timing needs a page served over http(s). From your own folder, add up the file sizes and label any timing as an estimate.
 
 <details>
 <summary>Example</summary>
@@ -3740,15 +3862,41 @@ Write your answer for “Where you saved the two traces”. Use the task instruc
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a florist’s home page shows a 2400-pixel-wide photograph at 600 pixels across the top, a logo saved as a 90 kB photograph file, and twelve bouquet photographs further down that all load at once. Pictures arriving late make the text jump.
+
+**Task:** Decide what to do with each kind of image and how each should load, and explain your reasoning, including what stops the jumping.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Compresses everything evenly, or sets every image to load later including the top photograph, and does not mention reserved space.
+- Adequate: Re-exports the top photograph near 600 pixels (allowing for dense screens), makes the logo SVG, lets the bouquets load later, and reserves space with width and height.
+- Strong: As adequate, and questions whether the top photograph must sit above the text at all, or says to measure weight and timing before and after under the same conditions.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -3779,7 +3927,7 @@ Flat graphic: An icon, logo or diagram made of shapes rather than of a photograp
 Dense screen: A display packing more pixels into the same space. It is why an image is usually served somewhat wider than its display width, rather than exactly at it.
 
 Supplied practice material (fictional or labelled practice, not my research):
-Made-up example. Reducing the images on a tool-library page, and leaving the one that mattered most. Compressed everything. Eleven images squeezed as hard as they would go without looking obviously worse. Total weight fell from 2.4 megabytes to 1.6.
+Made-up example. Reducing the images on a tool-library page, and leaving the one that mattered most. Compressed everything evenly. Eleven images squeezed as far as they would go without looking obviously worse. Total weight fell from 2.4 megabytes to about 2.0.
 
 Activity: Ask me to predict what one small change to the supplied page will do before explaining it. Then ask for the visible result, the browser check and one recovery step if it fails.
 
@@ -3849,13 +3997,13 @@ Repair: Mark each image above or below the fold and set the loading behaviour ac
 
 **Weight and timing improvements are measured**
 
-Adequate evidence: Before-and-after page weight and throttled time to usable.
+Adequate evidence: Before-and-after page weight, and time to usable measured over a network or labelled as an estimate.
 
 0 — Not measured.
 
-1 — Weight measured without timing.
+1 — Weight measured with no word about timing.
 
-2 — Both measured under the same conditions.
+2 — Both recorded under the same conditions, timing measured or labelled an estimate.
 
 3 — As adequate, and the conditions are stated so the comparison is fair.
 
@@ -3889,11 +4037,11 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 Stable ID: m12-l06-v1. Core.
 
-Knowing where JavaScript becomes necessary — and what it costs — is what lets you argue for a simpler solution when one exists.
+Part of the optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. Knowing where JavaScript becomes necessary — and what it costs — is what lets you argue for a simpler solution when one exists.
 
-Bring: Your built page and an m09 interaction specification.
+Bring: A text editor, a browser, and the starter behaviour-toggle.html or your own page.
 
-Starting route: Recommended route: Build one interactive behaviour on the page you have been building in a folder on your own computer, then record what you did and what you saw in the worksheet here so it is saved and reviewable. The files stay with you; nothing is uploaded. Alternative route: Prefer to keep your notes in the same folder as the files? Use the local text-file route below with the copyable starter, then note the folder in Your work.
+Starting route: Recommended route: Optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. To practise one interactive behaviour that still works without the script, download behaviour-toggle.html (on the course site, the address ending /starters/m12/behaviour-toggle.html) and save it in Documents\HaruCourse\Practice\m12-l06-v1. If Windows saved it as behaviour-toggle.html.txt, rename it to end in .html. Open it in Notepad (right-click, Open with, Notepad) and in your browser (double-click). Make the one change marked “Change this one thing first”, save with Ctrl+S, reload with F5, then record what you did and saw here. Alternative route: If the page is blank or did not change: check the name ends in .html (File Explorer, View, Show, File name extensions), press Ctrl+Z in Notepad and save to undo your last change, or download a fresh copy. You may use your own page from earlier lessons instead; note its folder in Your work. The files stay on your computer; nothing is uploaded.
 
 - One interaction built with plain JavaScript
 - A line-by-line explanation of what the code does
@@ -3962,14 +4110,14 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The filter panel was built twice. The first version used a script for showing and hiding, and needed keyboard handling, focus management and announcement written by hand. The second used a native disclosure element and needed almost none of it, behaving correctly with the keyboard and announcing its state without any script at all. The genuinely script-requiring behaviour — filtering the list as options change — was written in about twenty lines, explained line by line, and made to fall back to a submit button that reloads with filters applied when the script does not run.
+- Example (made up): the filter panel was built twice. The first version used a script for showing and hiding, and needed keyboard handling, focus management and announcement written by hand. The second used a native disclosure element and needed almost none of it, behaving correctly with the keyboard and announcing its state without any script at all. The genuinely script-requiring behaviour — filtering the list as options change — was written in about twenty lines, explained line by line, and given a fallback for when the script does not run: on the real site, a submit button that reloads with the filters applied; on the practice page, which has no server, the full list stays visible with every status written out.
 
 
 ### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
-Recommended route: Build one interactive behaviour on the page you have been building in a folder on your own computer, then record what you did and what you saw in the worksheet here so it is saved and reviewable. The files stay with you; nothing is uploaded. Alternative route: Prefer to keep your notes in the same folder as the files? Use the local text-file route below with the copyable starter, then note the folder in Your work.
+Recommended route: Optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. To practise one interactive behaviour that still works without the script, download behaviour-toggle.html (on the course site, the address ending /starters/m12/behaviour-toggle.html) and save it in Documents\HaruCourse\Practice\m12-l06-v1. If Windows saved it as behaviour-toggle.html.txt, rename it to end in .html. Open it in Notepad (right-click, Open with, Notepad) and in your browser (double-click). Make the one change marked “Change this one thing first”, save with Ctrl+S, reload with F5, then record what you did and saw here. Alternative route: If the page is blank or did not change: check the name ends in .html (File Explorer, View, Show, File name extensions), press Ctrl+Z in Notepad and save to undo your last change, or download a fresh copy. You may use your own page from earlier lessons instead; note its folder in Your work. The files stay on your computer; nothing is uploaded.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
 
@@ -4062,6 +4210,7 @@ Section: practice-plan. Stable action: step-2-brief.
 
 The interaction built in plain JavaScript, attached to real elements, and tested with the keyboard as well as the pointer.
 
+- Make the starter's one marked change first, save and reload.
 - Write the script in plain JavaScript, as short as you can make it.
 - Attach behaviour to real elements rather than replacing them.
 - Test with the keyboard as well as the pointer.
@@ -4184,13 +4333,13 @@ The page reloaded with JavaScript switched off, what still works recorded, and a
 - Record what still works and what does not.
 - Add a route that works without the script where the task requires it.
 
-**Start here:** Open the developer tools settings and switch JavaScript off, then reload and try the task.
+**Start here:** Press F12, then Ctrl+Shift+P, type Disable JavaScript and press Enter. Reload and try the task.
 
 **Enough:** You know what a person gets when the script does not run, and it is not nothing.
 
 **Without the script:** Not only somebody who turned JavaScript off. A slow connection, a blocked file or one error earlier in the page all produce the same result.
 
-**Fallback route:** A way to complete the task when the enhancement is not there. For a filter, a submit button that reloads with the filters applied.
+**Fallback route:** A way to complete the task when the enhancement is not there. With a server, a submit button that reloads with the filters applied; on a page with no server, the full list with every status written out.
 
 
 ### Try the distinction · 1 of 6
@@ -4264,7 +4413,7 @@ a native element — The browser has no element that filters a list of your cont
 
 CSS alone — CSS can hide things it can select. It cannot decide which rows match a set of chosen options.
 
-a script — This is the genuine case. Twenty lines, plus a submit button for when the script does not run.
+a script — This is the genuine case. Twenty lines, plus a fallback for when the script does not run.
 
 Now check your own interaction against the same three options, and record what the native version would have cost or saved.
 
@@ -4353,11 +4502,11 @@ Now check your own interaction against the same three options, and record what t
 
 Section: practice-plan. Stable action: write-without-script.
 
-Developer tools can disable JavaScript from the settings panel. Reload after switching it off.
+In Chrome or Edge: F12, Ctrl+Shift+P, type Disable JavaScript, Enter, then reload. It lasts while developer tools stay open.
 
 **Answer:** What still works with JavaScript switched off, and what does not
 
-Developer tools can disable JavaScript from the settings panel. Reload after switching it off.
+In Chrome or Edge: F12, Ctrl+Shift+P, type Disable JavaScript, Enter, then reload. It lasts while developer tools stay open.
 
 
 ### The route you added that works without the script
@@ -4377,20 +4526,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You do not intend to write code professionally. Why read it?
+You do not intend to write code for a living. Why read it?
 
-- It lets you tell a feasible request from an unreasonable one, follow an estimate, and notice when an answer is evasive.
+- To judge requests, follow estimates and notice an evasive answer.
 - So you can make small fixes yourself.
-- Because designers are increasingly expected to code.
+- Because designers are increasingly expected to write production code as part of the job.
 
 <details>
 <summary>After your attempt</summary>
 
-It lets you tell a feasible request from an unreasonable one, follow an estimate, and notice when an answer is evasive. — Writing a little is how reading is learned. The output of this module is judgement in conversations, not a second job.
+To judge requests, follow estimates and notice an evasive answer. — Writing a little is how reading is learned. What this extension builds is judgement in conversations with engineers, not a second job.
 
-So you can make small fixes yourself. — Sometimes useful, and it is not the reason. The reason is being able to reason about what you are being told.
+So you can make small fixes yourself. — Sometimes useful, and not the reason. The reason is being able to reason about what you are told.
 
-Because designers are increasingly expected to code. — That is an argument about the market rather than about your work, and it invites the reply that you will hire for it.
+Because designers are increasingly expected to write production code as part of the job. — That is an argument about the job market rather than about your work, and it invites the reply that someone else will be hired for it.
 
 Improve: Add anything you copied and cannot explain to the honest list in step 3. Record the change in step 5.
 
@@ -4407,20 +4556,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Your show-and-hide panel took forty lines. Thirty-four of them handle keyboard, focus and announcements. What does that suggest?
+Your show-and-hide panel took forty lines, and thirty-four of them handle the keyboard, focus and announcements. What does that suggest?
 
-- That accessible interactions are simply expensive to build.
-- That the browser probably has an element for this, and you are re-implementing behaviour that already existed.
-- That the code needs refactoring.
+- A native element probably does this, and you are rebuilding it.
+- Accessible interactions are simply expensive to build, and forty lines is a normal cost.
+- The code just needs refactoring into fewer lines.
 
 <details>
 <summary>After your attempt</summary>
 
-That accessible interactions are simply expensive to build. — They are, built from scratch. The reason to check for a native element first is exactly this cost.
+A native element probably does this, and you are rebuilding it. — A details element opens, closes, works from the keyboard and announces its state with no script at all. Hand-built versions often get focus return slightly wrong.
 
-That the browser probably has an element for this, and you are re-implementing behaviour that already existed. — A disclosure element opens, closes, works from the keyboard and announces its state with no script at all. Most hand-built versions get the focus return slightly wrong.
+Accessible interactions are simply expensive to build, and forty lines is a normal cost. — They are, built from scratch. Checking for a native element first exists because of exactly this cost.
 
-That the code needs refactoring. — Shorter code doing the same unnecessary work is still unnecessary work.
+The code just needs refactoring into fewer lines. — Shorter code doing unnecessary work is still unnecessary work.
 
 Improve: Record in step 1 what the native version gives you free, even if you kept your own. Note the change in step 5.
 
@@ -4437,24 +4586,24 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-With JavaScript off, your filter does nothing and the list cannot be narrowed at all. Is that acceptable?
+Your filter needs a script, and the page has no server behind it. With JavaScript off, what should the person still get?
 
-- Not for a task the person needs to complete. A submit button that reloads with the filters applied costs little and keeps the task possible.
-- It is acceptable, since almost nobody disables JavaScript.
-- It is acceptable if the page says JavaScript is required.
+- Nothing in particular, since almost nobody turns JavaScript off on purpose these days.
+- A message saying the page needs JavaScript.
+- The whole list, each status written out, so the task still works.
 
 <details>
 <summary>After your attempt</summary>
 
-Not for a task the person needs to complete. A submit button that reloads with the filters applied costs little and keeps the task possible. — Scripts fail for ordinary reasons: a slow connection, a blocked file, one error earlier in the page. Designing the failure is what keeps the task available when they do.
+Nothing in particular, since almost nobody turns JavaScript off on purpose these days. — Few people turn it off deliberately, and plenty meet it not running: on a poor connection, behind a blocked file or after an error elsewhere on the page.
 
-It is acceptable, since almost nobody disables JavaScript. — Almost nobody disables it deliberately, and plenty of people meet it not running. The reasons are network and error, not preference.
+A message saying the page needs JavaScript. — A message tells someone why they cannot do the task. It does not let them do it.
 
-It is acceptable if the page says JavaScript is required. — That tells somebody why they cannot do the thing. It does not let them do it.
+The whole list, each status written out, so the task still works. — Scripts fail for ordinary reasons: a slow connection, a blocked file, an earlier error. With a server, a submit button that reloads with the filters applied is a fuller fallback; without one, a readable full list keeps the task possible.
 
 Improve: Add a route in step 4 that completes the task without the script, and write what it does. Record the change in step 5.
 
-Check again: The task can be completed with JavaScript switched off, even if less pleasantly.
+Check again: The task can be completed with JavaScript switched off, even if less conveniently.
 
 Answers to revisit: without-script, fallback-route, improvement-made
 
@@ -4501,15 +4650,41 @@ Write your answer for “Where the code and the explanation are saved”. Use th
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a cinema page has an “Accessibility information” section that someone wants to open and close with a 50-line script, and a list of screenings that should narrow to “subtitled only” when a control is pressed. The page is a static file with no server.
+
+**Task:** Decide which behaviour needs a script and which does not, and explain what a person gets for each when JavaScript does not run.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Writes scripts for both, or says it is fine for the list to do nothing without JavaScript because almost nobody turns it off.
+- Adequate: Uses a native details element for the section (no script), scripts only the filter, and without JavaScript shows the full list with subtitles marked in text.
+- Strong: As adequate, and adds that with a server a submit button could apply the filter, or says the filter control should appear only when the script runs.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -4650,11 +4825,11 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 Stable ID: m12-l07-v1. Core.
 
-Every state you have specified for four modules becomes real here, and building them is what proves they were designed rather than described.
+Part of the optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. Every state you have specified for four modules becomes real here, and building them is what proves they were designed rather than described.
 
-Bring: Your state specifications and the built page.
+Bring: A text editor, a browser, the starter data-states.html and your state specifications.
 
-Starting route: Recommended route: Build the four states of a list that has to wait for its data in a folder on your own computer, then record what you did and what you saw in the worksheet here so it is saved and reviewable. The files stay with you; nothing is uploaded. Alternative route: Prefer to keep your notes in the same folder as the files? Use the local text-file route below with the copyable starter, then note the folder in Your work.
+Starting route: Recommended route: Optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. To practise the loading, content, empty and error states, download data-states.html (on the course site, the address ending /starters/m12/data-states.html) and save it in Documents\HaruCourse\Practice\m12-l07-v1. If Windows saved it as data-states.html.txt, rename it to end in .html. Open it in Notepad (right-click, Open with, Notepad) and in your browser (double-click). Make the one change marked “Change this one thing first”, save with Ctrl+S, reload with F5, then record what you did and saw here. Alternative route: If the page is blank or did not change: check the name ends in .html (File Explorer, View, Show, File name extensions), press Ctrl+Z in Notepad and save to undo your last change, or download a fresh copy. You may use your own page from earlier lessons instead; note its folder in Your work. The files stay on your computer; nothing is uploaded.
 
 - A page that fetches and renders real data
 - Loading, content, empty and error branches built with your wording
@@ -4668,7 +4843,7 @@ Web foundations explain how a browser turns structure, style and behavior into a
 **Words you will use**
 
 - **Fetching:** Asking for data after the page has already loaded, and doing something with it when it comes back. The gap between asking and receiving is what the next three steps are about.
-- **Public source:** Data anybody can request without a key or an account. A file of your own realistic data, sitting beside the page, works just as well for this lesson.
+- **Built-in data:** Data kept inside the page, as in the starter. Opened from your folder, a page usually cannot fetch a neighbouring file; a real fetch needs an http(s) address, which is optional here.
 - **Branch:** One of the outcomes the page can be in. Four of them exist whether or not you design them: loading, content, empty and error.
 
 **Quick example.** Made-up example. Connecting a tool-library list to real data, and building against data I had written myself. Six rows of test data I typed out: short names, tidy dates, a photograph for each, every field filled.
@@ -4679,7 +4854,7 @@ The reader demonstrates and guides the task before asking for “Where the data 
 
 Section: learn. Stable action: welcome.
 
-Fetch data from a public source into your page, and build the loading, empty, error and slow states you specified in m08 so they are real rather than drawn.
+Put realistic data into a page using the starter's built-in data, and make the loading, empty, error and slow states from your m08 specification real rather than drawn.
 
 
 ### Data arrives after the page: something must be shown in the meantime
@@ -4723,14 +4898,14 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The class list was connected to a small public data source. Four branches were built with the m08 wording: loading reserved the row heights and, after three seconds, added “Still loading — this can take a moment on a slow connection”; content rendered the list; empty said what would appear and offered to widen the filters; error said what happened, that nothing was lost, and offered retry without losing filters. Building revealed two specification errors: the reserved space was for four rows where the real result was often twelve, and the error message referred to a retry control that had never been designed.
+- Example (made up): the class list was given realistic data. Four branches were built with the m08 wording: loading reserved the row heights and, after three seconds, added “Still loading — this can take a moment on a slow connection”; content rendered the list; empty said what would appear and offered to widen the filters; error said what happened, that nothing was lost, and offered retry without losing filters. Building revealed two specification errors: the reserved space was for four rows where the real result was often twelve, and the error message referred to a retry control that had never been designed.
 
 
 ### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
-Recommended route: Build the four states of a list that has to wait for its data in a folder on your own computer, then record what you did and what you saw in the worksheet here so it is saved and reviewable. The files stay with you; nothing is uploaded. Alternative route: Prefer to keep your notes in the same folder as the files? Use the local text-file route below with the copyable starter, then note the folder in Your work.
+Recommended route: Optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. To practise the loading, content, empty and error states, download data-states.html (on the course site, the address ending /starters/m12/data-states.html) and save it in Documents\HaruCourse\Practice\m12-l07-v1. If Windows saved it as data-states.html.txt, rename it to end in .html. Open it in Notepad (right-click, Open with, Notepad) and in your browser (double-click). Make the one change marked “Change this one thing first”, save with Ctrl+S, reload with F5, then record what you did and saw here. Alternative route: If the page is blank or did not change: check the name ends in .html (File Explorer, View, Show, File name extensions), press Ctrl+Z in Notepad and save to undo your last change, or download a fresh copy. You may use your own page from earlier lessons instead; note its folder in Your work. The files stay on your computer; nothing is uploaded.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
 
@@ -4742,16 +4917,17 @@ Section: practice-plan. Stable action: step-1-brief.
 Real data arriving in your page and the content branch rendering it, with any trouble and its recovery written down.
 
 - Read the assigned sections on fetching data.
-- Connect your page to a public source or a local data file.
-- Render the content branch first.
+- Open the starter, which keeps its data inside the page.
+- Rewrite its empty message, the one marked change, then save and reload.
+- Replace the data with realistic rows from your own product.
 
-**Start here:** Render one row from real data before building anything else. Everything after that is states around it.
+**Start here:** Rewrite the starter’s marked empty message, save, reload and press the empty button. Then put one realistic row of your own into its data.
 
 **Enough:** Real data appears on your page, even if it appears badly.
 
 **Fetching:** Asking for data after the page has already loaded, and doing something with it when it comes back. The gap between asking and receiving is what the next three steps are about.
 
-**Public source:** Data anybody can request without a key or an account. A file of your own realistic data, sitting beside the page, works just as well for this lesson.
+**Built-in data:** Data kept inside the page, as in the starter. Opened from your folder, a page usually cannot fetch a neighbouring file; a real fetch needs an http(s) address, which is optional here.
 
 
 ### See the decision being made
@@ -4781,11 +4957,11 @@ Made-up example. Connecting a tool-library list to real data, and building again
 
 Section: practice-plan. Stable action: write-data-source.
 
-A public source that needs no key, or a file of your own realistic data sitting beside the page. Either is fine; no account is needed.
+The starter keeps its data inside the page; replace it with realistic rows from your product. A file beside a page opened from your folder usually cannot be fetched; a real fetch needs http(s) and is optional.
 
 **Answer:** Where the data comes from
 
-A public source that needs no key, or a file of your own realistic data sitting beside the page. Either is fine; no account is needed.
+The starter keeps its data inside the page; replace it with realistic rows from your product. A file beside a page opened from your folder usually cannot be fetched; a real fetch needs http(s) and is optional.
 
 
 ### What the content branch renders, and what one real row looks like
@@ -4898,15 +5074,15 @@ Section: practice-plan. Stable action: step-3-brief.
 
 The loading branch watched on a throttled connection, an error forced deliberately, and a timeout with a route out.
 
-- Throttle the connection and watch the loading branch.
-- Force an error by breaking the address or going offline.
-- Add a timeout with its own message and a route out.
+- Use the starter's slow, failing and never-answering buttons and watch each branch.
+- On a real fetch over http(s), throttle or go offline in the network panel instead.
+- Set the timeout and its message, with a route out.
 
-**Start here:** Open the network panel, set it to offline, and reload. That is your error branch, whether or not you built one.
+**Start here:** Press each of the starter’s four buttons in turn and watch where the person lands.
 
 **Enough:** You have seen all four branches on your own screen rather than in your specification.
 
-**Forcing a failure:** Breaking the address, or switching to offline in the network panel. Errors are hard to find by waiting for them and easy to cause on purpose.
+**Forcing a failure:** The starter’s failing button, or on a real fetch breaking the address or going offline. Errors are hard to find by waiting for them and easy to cause on purpose.
 
 **The fifth state:** Slow. Not loading and not failed, just still going. Decide what happens at three seconds and at thirty, or the person waits for ever with a spinner.
 
@@ -5067,13 +5243,13 @@ Now force each of these on your own page and check the person lands where you in
 </details>
 
 
-### What the loading branch looked like on a throttled connection
+### What the loading branch looked like while slow: the starter’s buttons, or throttling on a page served over http(s)
 
 Section: practice-plan. Stable action: write-slow-watch.
 
-Write your answer for “What the loading branch looked like on a throttled connection”. Use the task instructions below to decide what to include.
+Write your answer for “What the loading branch looked like while slow: the starter’s buttons, or throttling on a page served over http(s)”. Use the task instructions below to decide what to include.
 
-**Answer:** What the loading branch looked like on a throttled connection
+**Answer:** What the loading branch looked like while slow: the starter’s buttons, or throttling on a page served over http(s)
 
 
 
@@ -5082,22 +5258,22 @@ Write your answer for “What the loading branch looked like on a throttled conn
 
 Section: practice-plan. Stable action: write-forced-error.
 
-Break the address, or go offline in the network panel. Both take one click.
+Press the starter’s failing button. On a real fetch over http(s), break the address or go offline in the network panel.
 
 **Answer:** How you forced an error, and what the person saw
 
-Break the address, or go offline in the network panel. Both take one click.
+Press the starter’s failing button. On a real fetch over http(s), break the address or go offline in the network panel.
 
 
 ### Your timeout message and the route out of it
 
 Section: practice-plan. Stable action: write-timeout-route.
 
-Waiting for ever is a fifth state nobody designs. Decide what happens at thirty seconds.
+Waiting for ever is a fifth state nobody designs. The starter shortens it to 10 seconds; decide your own threshold.
 
 **Answer:** Your timeout message and the route out of it
 
-Waiting for ever is a fifth state nobody designs. Decide what happens at thirty seconds.
+Waiting for ever is a fifth state nobody designs. The starter shortens it to 10 seconds; decide your own threshold.
 
 
 ### Compare with the specification
@@ -5140,22 +5316,22 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You expect the data source to work nearly always, so the error branch feels like a formality. Is it?
+Your data has never failed to arrive while you built at your desk, so the error state feels like a formality. Is it?
 
-- Yes, provided the error message is clear.
-- It is not. Networks fail routinely, and a person on a train meets the error branch more often than several features you will spend a week on.
-- Largely yes, if the source is reliable.
+- Largely a formality, because a reliable data source rarely produces errors at all.
+- It is a normal outcome on mobile connections, so it needs real design.
+- A formality, if the message is clear.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, provided the error message is clear. — The message is the smallest part. What the branch preserves and how it lets somebody retry is what decides whether they continue.
+Largely a formality, because a reliable data source rarely produces errors at all. — A reliable source does not make the connection between it and the person reliable, and that is where most failures happen.
 
-It is not. Networks fail routinely, and a person on a train meets the error branch more often than several features you will spend a week on. — The failure rate at your desk, on your connection, is the least representative number available. Errors are a normal outcome rather than an exceptional one.
+It is a normal outcome on mobile connections, so it needs real design. — Your desk connection is the least representative test there is. On trains and weak signal, requests fail often enough that the error branch deserves the same care as the content.
 
-Largely yes, if the source is reliable. — The source being reliable does not make the connection between it and the person reliable, and that is where most failures happen.
+A formality, if the message is clear. — The message is the smallest part. What the branch keeps, and how it lets someone retry, decides whether they continue.
 
-Improve: Check your error branch in step 2 preserves the filters and offers retry, and fix it if it does not. Record the change in step 5.
+Improve: Check your error branch in step 2 keeps the filters and offers a retry, and fix it if it does not. Record the change in step 5.
 
 Check again: Nothing the person typed is lost when the request fails.
 
@@ -5170,20 +5346,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-A successful request comes back with no items. Which branch should the person be in?
+A request succeeds and comes back with no items, because the filters are narrow. Which branch should the person see?
 
-- Empty. The question was answered, and the answer was none.
-- Loading, until they change the filters.
-- Error, since they did not get what they wanted.
+- Loading, until the person changes the filters again.
+- Empty: it was answered, and the answer was none.
+- Error, since nothing they wanted came back.
 
 <details>
 <summary>After your attempt</summary>
 
-Empty. The question was answered, and the answer was none. — Empty and error send people to look for different things. Calling a successful nothing an error sends somebody hunting a fault that does not exist.
+Loading, until the person changes the filters again. — A spinner that never resolves is the worst option, because it promises something is still coming.
 
-Loading, until they change the filters. — A spinner that never resolves is the worst of the options, because it promises something is still coming.
+Empty: it was answered, and the answer was none. — Empty and error send people looking for different things. Calling a successful nothing an error sends someone hunting for a fault that does not exist.
 
-Error, since they did not get what they wanted. — Not getting what you wanted is not a malfunction. The system worked and the answer was none.
+Error, since nothing they wanted came back. — Not getting what you wanted is not a malfunction. The system worked and the answer was none.
 
 Improve: Check your empty branch in step 2 says what would appear here and offers the change most likely to help. Record the change in step 5.
 
@@ -5200,20 +5376,20 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Your loading state reserved four rows and the real result is usually twelve. What kind of problem is that?
+Your loading state reserved four rows, and the real result is usually twelve, so the page jumps. What kind of problem is that?
 
-- A build problem to fix in the code and move on.
-- Not a problem, since the rows arrive quickly.
-- A specification error the build revealed, and the specification is what needs correcting.
+- A build problem to fix in the code, after which the work is done.
+- Not a problem, since the rows arrive fast.
+- A specification error, so the specification needs correcting.
 
 <details>
 <summary>After your attempt</summary>
 
-A build problem to fix in the code and move on. — Fixing the code leaves a document that still says four, which somebody will build from later.
+A build problem to fix in the code, after which the work is done. — Fixing the code leaves a document that still says four, which someone will build from later.
 
-Not a problem, since the rows arrive quickly. — The page jumps by eight rows when they arrive, and people tap the wrong thing because of it.
+Not a problem, since the rows arrive fast. — The page jumps by eight rows when they arrive, and people tap the wrong thing because of it.
 
-A specification error the build revealed, and the specification is what needs correcting. — You could not have known the usual result size from a drawing. Updating the Module 8 document is what stops the next person building the same jump.
+A specification error, so the specification needs correcting. — You could not have known the usual result size from a drawing. Correcting the Module 8 document stops the next person building the same jump.
 
 Improve: Correct the Module 8 specification in step 5, not only the code, and say what you changed. Record it.
 
@@ -5264,15 +5440,41 @@ Write your answer for “Where the code and the four states are saved”. Use th
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a recycling centre page lists which materials are accepted today. The list waits for data. The designer drew only the full list. In use, some days return nothing because the centre is closed, and phones on poor signal sometimes get no answer for half a minute.
+
+**Task:** Describe what the person should see in each situation the page can be in, and explain why the closed-day case and the no-answer case need different messages.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Designs only the full list and a spinner, or shows one generic “Something went wrong” for every case.
+- Adequate: Covers loading with reserved space, content, empty (closed today, with what to do next) and error or timeout (not loaded, try again), keeping empty and error apart.
+- Strong: As adequate, and sets a slow-message threshold and a timeout with a route out, or notes the reserved space should match the usual number of rows.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -5295,11 +5497,11 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: Data that arrives later
-What I am trying to do: Fetch data from a public source into your page, and build the loading, empty, error and slow states you specified in m08 so they are real rather than drawn.
+What I am trying to do: Put realistic data into a page using the starter's built-in data, and make the loading, empty, error and slow states from your m08 specification real rather than drawn.
 
 Key idea or terms:
 Fetching: Asking for data after the page has already loaded, and doing something with it when it comes back. The gap between asking and receiving is what the next three steps are about.
-Public source: Data anybody can request without a key or an account. A file of your own realistic data, sitting beside the page, works just as well for this lesson.
+Built-in data: Data kept inside the page, as in the starter. Opened from your folder, a page usually cannot fetch a neighbouring file; a real fetch needs an http(s) address, which is optional here.
 Branch: One of the outcomes the page can be in. Four of them exist whether or not you design them: loading, content, empty and error.
 
 Supplied practice material (fictional or labelled practice, not my research):
@@ -5322,8 +5524,8 @@ When the activity is finished, tell me to return to the course answer called “
 - Force each state in turn — no data, bad address, offline — and build whichever branch is missing.
 - Replace every improvised string with the m08 wording, then update the specification where the build showed it was wrong.
 
-- R15: [MDN: core learning modules](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core) — The scripting module sections on fetching data and handling responses and failures. Purpose: Supplies the mechanics for requesting and rendering data. Free text documentation, no account. Verified 2026-09-06. Use the written articles; exclude promoted paid partner courses. Use a public source that needs no key, or local data. Fallback: R16.
-- R46: [Chrome DevTools: network features](https://developer.chrome.com/docs/devtools/network/reference) — Throttling, disabling the cache, and inspecting requests and responses. Purpose: Lets you produce the slow and failed conditions deliberately. Free documentation, no account; any Chromium browser. Verified 2026-09-06. Throttling does not simulate a dropped connection; disconnect to test that. Fallback: R16.
+- R15: [MDN: core learning modules](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core) — The scripting module sections on fetching data and handling responses and failures. Purpose: Supplies the mechanics for requesting and rendering data. Free text documentation, no account. Verified 2026-09-06. Use the written articles; exclude promoted paid partner courses. Its fetch examples need a page served over http(s); the starter needs none. Fallback: R16.
+- R46: [Chrome DevTools: network features](https://developer.chrome.com/docs/devtools/network/reference) — Throttling, disabling the cache, and inspecting requests and responses. Purpose: Lets you produce the slow and failed conditions deliberately. Free documentation, no account; any Chromium browser. Verified 2026-09-06. Throttling does not simulate a dropped connection, and it acts on network requests, not the starter's pretend ones. Fallback: R16.
 
 </details>
 <details>
@@ -5331,7 +5533,7 @@ When the activity is finished, tell me to return to the course answer called “
 
 **All four branches are built and reachable**
 
-Adequate evidence: Loading, content, empty and error branches, each demonstrable.
+Adequate evidence: Loading, content, empty and error branches showing your own data and wording, each demonstrable.
 
 0 — Content branch only.
 
@@ -5413,11 +5615,11 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 Stable ID: m12-l08-v1. Core.
 
-Forms are where your accessibility and error specifications are either implemented or quietly dropped.
+Part of the optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. Forms are where your accessibility and error specifications are either implemented or quietly dropped.
 
-Bring: Your field table and error specifications.
+Bring: A text editor, a browser, the starter form-no-server.html and your field table.
 
-Starting route: Recommended route: Build one working form, native behaviour first in a folder on your own computer, then record what you did and what you saw in the worksheet here so it is saved and reviewable. The files stay with you; nothing is uploaded. Alternative route: Prefer to keep your notes in the same folder as the files? Use the local text-file route below with the copyable starter, then note the folder in Your work.
+Starting route: Recommended route: Optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. To practise a form whose submission stays on your device, download form-no-server.html (on the course site, the address ending /starters/m12/form-no-server.html) and save it in Documents\HaruCourse\Practice\m12-l08-v1. If Windows saved it as form-no-server.html.txt, rename it to end in .html. Open it in Notepad (right-click, Open with, Notepad) and in your browser (double-click). Make the one change marked “Change this one thing first”, save with Ctrl+S, reload with F5, then record what you did and saw here. Alternative route: If the page is blank or did not change: check the name ends in .html (File Explorer, View, Show, File name extensions), press Ctrl+Z in Notepad and save to undo your last change, or download a fresh copy. You may use your own page from earlier lessons instead; note its folder in Your work. The files stay on your computer; nothing is uploaded.
 
 - A working form using native validation where possible
 - Custom rules only where the platform cannot know them
@@ -5431,7 +5633,7 @@ Web foundations explain how a browser turns structure, style and behavior into a
 **Words you will use**
 
 - **Input type:** Telling the browser what kind of thing a field holds. It changes the keyboard on a phone, the validation and the error message, without any code.
-- **Native validation:** The checking the browser does itself, including announcing the problem and moving focus. Custom versions routinely omit both of those.
+- **Native validation:** The checking the browser does itself: required fields, formats and patterns, with focus moved to the first problem. Its own message bubble fades after a few seconds and is announced unevenly.
 - **What the browser cannot know:** Anything about your world: which dates have classes, which formats your region accepts, whether that name is already taken. Everything else it probably already checks.
 
 **Quick example.** Made-up example. Building a tool-request form, and rebuilding what the browser was already doing. That native validation looks crude, so a custom version would be better. I had never actually watched the native one run.
@@ -5442,7 +5644,7 @@ The reader demonstrates and guides the task before asking for “Which input typ
 
 Section: learn. Stable action: welcome.
 
-Build one working form with native validation, accessible errors and preserved input, and record what the browser gave you free versus what you had to write.
+Build one working form with native validation, accessible errors and preserved input, its submission intercepted on your own device, and record what the browser gave you free versus what you had to write.
 
 
 ### The browser already validates common types and reports errors
@@ -5466,11 +5668,11 @@ Section: learn. Stable action: learn-3.
 Errors must be associated with fields and announced when they appear.
 
 
-### Never clear the form on failure; preserve everything
+### Idea 4: Keep what people typed when a submission fails; passwords are…
 
 Section: learn. Stable action: learn-4.
 
-Never clear the form on failure; preserve everything.
+Keep what people typed when a submission fails; passwords are the usual exception.
 
 
 ### Validation on the client is convenience; the server is where it counts
@@ -5486,14 +5688,14 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The booking form was built with native input types and required attributes, adding custom rules only for two things the browser could not know: that the date must be a future class date, and that the phone number must match an accepted set of formats. Errors were associated with their fields, a summary at the top linked to each, and the summary was announced on appearance. On a failed submission everything the person had entered survived. The record noted what came free — type-appropriate keyboards, required handling, announcement — and what was written by hand, which was about fifteen lines.
+- Example (made up): the booking form was built with native input types and required attributes. The two accepted phone formats went into a pattern attribute, so the browser checked them, and a script was written for one rule the browser could not know: that the date must be one on which a class runs. Errors were associated with their fields, a summary at the top linked to each, and the summary was announced on appearance. On a failed submission everything the person had entered survived. The record noted what came free — type-appropriate keyboards, required handling, announcement — and what was written by hand, which was about fifteen lines.
 
 
 ### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
-Recommended route: Build one working form, native behaviour first in a folder on your own computer, then record what you did and what you saw in the worksheet here so it is saved and reviewable. The files stay with you; nothing is uploaded. Alternative route: Prefer to keep your notes in the same folder as the files? Use the local text-file route below with the copyable starter, then note the folder in Your work.
+Recommended route: Optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. To practise a form whose submission stays on your device, download form-no-server.html (on the course site, the address ending /starters/m12/form-no-server.html) and save it in Documents\HaruCourse\Practice\m12-l08-v1. If Windows saved it as form-no-server.html.txt, rename it to end in .html. Open it in Notepad (right-click, Open with, Notepad) and in your browser (double-click). Make the one change marked “Change this one thing first”, save with Ctrl+S, reload with F5, then record what you did and saw here. Alternative route: If the page is blank or did not change: check the name ends in .html (File Explorer, View, Show, File name extensions), press Ctrl+Z in Notepad and save to undo your last change, or download a fresh copy. You may use your own page from earlier lessons instead; note its folder in Your work. The files stay on your computer; nothing is uploaded.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
 
@@ -5505,16 +5707,17 @@ Section: practice-plan. Stable action: step-1-brief.
 A form built from appropriate input types and required fields, with what the browser does on its own observed before anything is added.
 
 - Read the assigned form sections and the accessibility requirements.
-- Build the form with appropriate input types and required fields.
+- Rewrite the starter's marked date message first, then save, reload and submit.
+- Build or adapt the form with appropriate input types and required fields.
 - Test what the browser does before adding anything.
 
-**Start here:** Build the fields with types and required attributes only, then submit the form empty and watch.
+**Start here:** Rewrite the starter’s marked date message, save, reload and submit with a weekday date. Then submit it empty and watch.
 
 **Enough:** You have written down what the browser did before you added anything.
 
 **Input type:** Telling the browser what kind of thing a field holds. It changes the keyboard on a phone, the validation and the error message, without any code.
 
-**Native validation:** The checking the browser does itself, including announcing the problem and moving focus. Custom versions routinely omit both of those.
+**Native validation:** The checking the browser does itself: required fields, formats and patterns, with focus moved to the first problem. Its own message bubble fades after a few seconds and is announced unevenly.
 
 
 ### See the decision being made
@@ -5527,15 +5730,15 @@ Made-up example. Building a tool-request form, and rebuilding what the browser w
 
 **What I tried:** Built the form with types and required attributes and nothing else, then submitted it empty.
 
-**What happened:** The browser stopped the submission, moved focus to the first empty field, showed a message beside it and announced it. On my phone the email field brought up a keyboard with an at sign on it.
+**What happened:** The browser stopped the submission, moved focus to the first empty field and showed a short message beside it. On my phone the email field brought up a keyboard with an at sign on it.
 
-**What I had planned to write:** All of that. The checking, the message, the focus move and the announcement, by hand, for six fields.
+**What I had planned to write:** All of that. The checking, the formats and the focus move, by hand, for six fields.
 
-**What I wrote instead:** Two rules the browser cannot know: that the date must be one on which a class runs, and that the phone number must match one of two local formats. About fifteen lines.
+**What I wrote instead:** Messages that stay on screen and a summary, using the browser’s own checks, plus one rule it cannot know: that the date must be one on which a class runs. The phone formats went into a pattern attribute.
 
-**Wrong turn:** The wrong turn is judging native validation by its appearance without watching its behaviour. What looks plain is doing four things, and a custom version that looks better usually does one.
+**Wrong turn:** The wrong turn is judging native validation by its appearance without watching its behaviour. What looks plain is checking, blocking and moving focus, and a hand-built replacement usually does less.
 
-**Trade-off:** Native messages are worded by the browser and cannot be rewritten freely, so some of them are vaguer than your own wording would be. You can add your own beside them, which is a smaller job than replacing the mechanism.
+**Trade-off:** Native bubbles are worded by the browser, fade after a few seconds and are announced unevenly. Keeping the browser’s checks while showing your own lasting messages is a smaller job than replacing the mechanism.
 
 **Unknown:** Still unknown: whether the native wording reads well in every browser your audience uses. It varies, and I have checked two.
 
@@ -5594,7 +5797,7 @@ Write your answer for “The rules the browser has no way to know”. Use the ta
 <details>
 <summary>Example</summary>
 
-Example (made up): that the date has to be one on which a class actually runs, and that the phone number has to match one of two accepted local formats.
+Example (made up): that the date has to be one on which a class actually runs. The two accepted phone formats are not on this list: a pattern attribute lets the browser check them.
 
 </details>
 
@@ -5747,7 +5950,7 @@ Section: practice-plan. Stable action: step-4-sort-2.
 
 Six form behaviours from a made up tool-library build. For each one, decide where it came from.
 
-Submitting with a required field empty stops the submission, moves focus there and announces the problem.
+Submitting with a required field empty stops the submission, moves focus there and shows a short message.
 
 - free from the browser
 - written by hand
@@ -5756,7 +5959,7 @@ Submitting with a required field empty stops the submission, moves focus there a
 <details>
 <summary>After your attempt</summary>
 
-free from the browser — Three behaviours from one attribute: stopping, focusing and announcing. These are the three that hand-built validation usually misses.
+free from the browser — Three behaviours from one attribute: stopping, focusing and a message. The message fades and is announced unevenly, which is why lasting messages are added by hand.
 
 written by hand — This is what people write by hand, after not checking whether it already happened.
 
@@ -5910,20 +6113,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You believe a custom validation experience would be better than the browser’s. What is the risk?
+You plan to replace the browser’s own checks with validation you write yourself. What is the main risk?
 
-- Custom validation is slower to run.
-- Native validation also announces the problem and moves focus, and custom versions routinely omit both.
-- There is no real risk if you test it carefully.
+- Rewriting checks the browser already does, and losing its focus move.
+- There is little real risk, as long as you test the custom version carefully yourself.
+- Your own validation runs more slowly.
 
 <details>
 <summary>After your attempt</summary>
 
-Custom validation is slower to run. — Speed is not the issue at this scale. Announcement and focus are.
+Rewriting checks the browser already does, and losing its focus move. — The browser already checks required fields, formats and lengths, and moves focus to the first problem. Keep those checks and write only what is missing: your own rules and messages that stay on screen.
 
-Native validation also announces the problem and moves focus, and custom versions routinely omit both. — What looks plain is doing four things at once. A custom version usually reproduces the visible one and drops the two that matter to somebody not looking at the screen.
+There is little real risk, as long as you test the custom version carefully yourself. — Testing carefully means testing by keyboard and with a screen reader, which is the testing that tends not to happen on a hand-built version.
 
-There is no real risk if you test it carefully. — Testing carefully means testing by keyboard and by listening, which is exactly the testing that tends not to happen on a custom implementation.
+Your own validation runs more slowly. — Speed is not the issue at this scale. Duplicated checks and lost focus behaviour are.
 
 Improve: Write down in step 1 what the browser actually did before you added anything. Record the change in step 5.
 
@@ -5940,20 +6143,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Your form clears itself when submission fails. How bad is that?
+Your form clears itself whenever a submission fails. How serious is that?
 
-- Acceptable if there is a clear error message.
-- Mildly annoying, since the person knows what they typed.
-- It is the failure most likely to end the task, and it is almost always accidental rather than designed.
+- Acceptable, provided a clear message explains what went wrong with the submission.
+- Mildly annoying, since they can retype it.
+- It can end the task, and it is usually accidental rather than designed.
 
 <details>
 <summary>After your attempt</summary>
 
-Acceptable if there is a clear error message. — A clear message explaining that everything has been deleted does not help anybody continue.
+Acceptable, provided a clear message explains what went wrong with the submission. — A clear message explaining that everything has been deleted does not help anybody continue.
 
-Mildly annoying, since the person knows what they typed. — They knew it the first time. On a phone, with four fields and a date, retyping it is where people leave.
+Mildly annoying, since they can retype it. — They knew it the first time. On a phone, with five fields and a date, retyping is where people give up.
 
-It is the failure most likely to end the task, and it is almost always accidental rather than designed. — Browsers preserve values by default; losing them usually takes a reload somebody added. Nobody notices while building because nobody submits a broken form twice.
+It can end the task, and it is usually accidental rather than designed. — When the browser stops a submission, values stay where they were; losing them usually takes a page reload somebody added. Nobody notices while building, because nobody submits a broken form twice.
 
 Improve: Submit your own form with mistakes in it and check what survives, in step 4. Fix anything lost and record the change in step 5.
 
@@ -5970,22 +6173,22 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Your page checks every rule before sending. Is client-side validation enough?
+Your page checks every rule before anything is sent. Is checking in the browser enough?
 
-- It is enough for a design prototype.
-- No. Checking in the browser is convenience; the check that counts happens where the person cannot reach it.
+- It is a convenience; a server must check again, since pages can be bypassed.
+- It is enough for this lesson’s practice page, so no further checking is ever needed.
 - It is enough if the rules are thorough.
 
 <details>
 <summary>After your attempt</summary>
 
-It is enough for a design prototype. — It is, for this lesson. The point is knowing that it is not the real check, so you do not describe it as one later.
+It is a convenience; a server must check again, since pages can be bypassed. — Browser checks help someone get it right quickly. They guarantee nothing about what arrives, which is why your design must handle a rejection after the person thought they were done.
 
-No. Checking in the browser is convenience; the check that counts happens where the person cannot reach it. — Anything in the page can be bypassed. The browser check exists to help somebody get it right quickly, not to guarantee anything about what arrives.
+It is enough for this lesson’s practice page, so no further checking is ever needed. — This page sends nothing, so no server check happens here. Knowing the real check would happen elsewhere stops you describing the browser checks as one later.
 
 It is enough if the rules are thorough. — Thoroughness is not the issue. The rules run somewhere the person controls.
 
-Improve: Add that distinction to your written list in step 5, naming which checks would need to happen elsewhere. Record the change.
+Improve: Add that distinction to your written list in step 5, naming which checks would need to happen on a server. Record the change.
 
 Check again: Your record does not describe the browser checks as the ones that guarantee anything.
 
@@ -6035,15 +6238,41 @@ Write your answer for “Everything you wrote, and why it was necessary”. Use 
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a swimming pool’s lane-booking form asks for name, email, a date and a membership number in the format AB-1234. Sessions run only on weekdays that are not public holidays. The practice version has no server, and the current draft clears every field when a submission fails.
+
+**Task:** Decide which checks the browser can do and which you must write, and explain what should happen to the person’s answers and focus when a submission fails.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Writes every check by hand, or accepts clearing the form because the error message is clear; treats browser checks as the real security.
+- Adequate: Uses required, type="email" and a pattern for AB-1234; writes only the weekday-not-holiday rule; keeps every answer, moves focus to a linked summary.
+- Strong: As adequate, and notes a server would check everything again, or that nothing should be sent from the practice page while messages stay on screen.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -6066,11 +6295,11 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: A form that actually submits
-What I am trying to do: Build one working form with native validation, accessible errors and preserved input, and record what the browser gave you free versus what you had to write.
+What I am trying to do: Build one working form with native validation, accessible errors and preserved input, its submission intercepted on your own device, and record what the browser gave you free versus what you had to write.
 
 Key idea or terms:
 Input type: Telling the browser what kind of thing a field holds. It changes the keyboard on a phone, the validation and the error message, without any code.
-Native validation: The checking the browser does itself, including announcing the problem and moving focus. Custom versions routinely omit both of those.
+Native validation: The checking the browser does itself: required fields, formats and patterns, with focus moved to the first problem. Its own message bubble fades after a few seconds and is announced unevenly.
 What the browser cannot know: Anything about your world: which dates have classes, which formats your region accepts, whether that name is already taken. Everything else it probably already checks.
 
 Supplied practice material (fictional or labelled practice, not my research):
@@ -6110,7 +6339,7 @@ Adequate evidence: Appropriate input types and required handling, with a record 
 
 2 — Native behaviour used wherever available.
 
-3 — As adequate, and the input types produce the right keyboards on a phone.
+3 — As adequate, and each input type is chosen for the keyboard it brings on a phone.
 
 Repair: Remove custom validation that duplicates a native type and test what the browser does alone. Recheck: The form and the native record.
 
@@ -6171,7 +6400,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 <details>
 <summary>Reading, video and deeper explanation</summary>
 
-- The browser gives you a great deal free: required fields, input types that bring their own keyboards and validation, and error reporting that is announced. Starting from native behaviour and adding only what is missing produces an accessible form quickly; starting from a custom implementation means rebuilding announcement, focus and keyboard behaviour by hand.
+- The browser gives you a great deal free: required fields, input types that bring their own keyboards and checks, and a message on the first problem field, which also receives focus. How reliably screen readers announce that message varies, and it disappears after a few seconds, which is why many forms keep the browser's checks and present the messages themselves. Starting from native behaviour and adding only what is missing produces an accessible form quickly; starting from a custom implementation means rebuilding announcement, focus and keyboard behaviour by hand.
 - Custom validation is warranted when the rule is yours rather than the platform's — a date that must be in the future, a code that must match a pattern the browser does not know. Even then, the presentation should match the native behaviour people already recognise, and the association between field and error must be explicit.
 - Announcement matters as much as display. An error that appears silently is invisible to anyone not looking at that region, so the summary and the field-level messages need to be announced when they appear and reachable afterwards. This is your m11 specification, and this lesson is where it either happens or does not.
 - Client-side validation is a convenience that saves a round trip. It is not a guarantee: anything can be submitted directly. That is an engineering fact worth knowing, because it explains why a server will re-check everything and why your design needs to handle a rejection that arrives after the person thought they were finished.
@@ -6184,11 +6413,11 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 Stable ID: m12-l09-v1. Core.
 
-Speed is an accessibility and inclusion question in a country where connections vary enormously. It is also the easiest quality to lose without noticing.
+Part of the optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. Speed is an accessibility and inclusion question in a country where connections vary enormously. It is also the easiest quality to lose without noticing.
 
-Bring: Your built page and its first trace.
+Bring: A page served over http(s) to measure: your own if hosted, or a starter on the course site.
 
-Starting route: Recommended route: Build a measured before-and-after on the page you have been building in a folder on your own computer, then record what you did and what you saw in the worksheet here so it is saved and reviewable. The files stay with you; nothing is uploaded. Alternative route: Prefer to keep your notes in the same folder as the files? Use the local text-file route below with the copyable starter, then note the folder in Your work.
+Starting route: Recommended route: Optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. To practise a measured before-and-after, download page-images.html (on the course site, the address ending /starters/m12/page-images.html) and save it in Documents\HaruCourse\Practice\m12-l09-v1. If Windows saved it as page-images.html.txt, rename it to end in .html. Open it in Notepad (right-click, Open with, Notepad) and in your browser (double-click). Make the one change marked “Change this one thing first”, save with Ctrl+S, reload with F5, then record what you did and saw here. Alternative route: If the page is blank or did not change: check the name ends in .html (File Explorer, View, Show, File name extensions), press Ctrl+Z in Notepad and save to undo your last change, or download a fresh copy. You may use your own page from earlier lessons instead; note its folder in Your work. The files stay on your computer; nothing is uploaded.
 
 - A baseline measurement with conditions recorded
 - Three changes, each with the reason
@@ -6207,7 +6436,7 @@ Web foundations explain how a browser turns structure, style and behavior into a
 
 **Quick example.** Made-up example. Measuring a tool-library page, and starting after the easy win was already in. Noticed the header photograph was enormous, fixed it, and then sat down to take a baseline. It seemed sensible to measure a page that was not obviously broken.
 
-The reader demonstrates and guides the task before asking for “The conditions: throttling profile, cache setting, device and browser”.
+The reader demonstrates and guides the task before asking for “The conditions: throttling profile, cache setting, device, browser and how the page was opened”.
 
 ### What this lesson will help you do
 
@@ -6257,14 +6486,14 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Baseline on a throttled profile with the cache disabled: 2.4 MB, twenty-one requests, eleven seconds to usable. Three changes: images resized and re-formatted, two of three typefaces removed, and the stylesheet made non-blocking for the parts not needed for first paint. After: 340 KB, twelve requests, three seconds to usable. The conditions were identical for both runs and stated with the figures. One further change was considered and rejected: deferring the script that renders the list would have made the page appear faster and be useful later, which is the wrong trade for this page.
+- Example (made up): baseline after the image work of lesson 5, on a throttled profile with the cache disabled: 340 KB, eleven requests, about three seconds to usable. Three changes: the unused third typeface removed (78 KB, one request), the two remaining typefaces cut down to the characters used (about 24 KB saved), and the print stylesheet stopped from blocking the first paint. After: about 238 KB, ten requests, a little over two seconds to usable. The conditions were identical for both runs and stated with the figures. One further change was considered and rejected: deferring the script that renders the list would have made the page appear faster and be useful later, which is the wrong trade for this page.
 
 
 ### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
-Recommended route: Build a measured before-and-after on the page you have been building in a folder on your own computer, then record what you did and what you saw in the worksheet here so it is saved and reviewable. The files stay with you; nothing is uploaded. Alternative route: Prefer to keep your notes in the same folder as the files? Use the local text-file route below with the copyable starter, then note the folder in Your work.
+Recommended route: Optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. To practise a measured before-and-after, download page-images.html (on the course site, the address ending /starters/m12/page-images.html) and save it in Documents\HaruCourse\Practice\m12-l09-v1. If Windows saved it as page-images.html.txt, rename it to end in .html. Open it in Notepad (right-click, Open with, Notepad) and in your browser (double-click). Make the one change marked “Change this one thing first”, save with Ctrl+S, reload with F5, then record what you did and saw here. Alternative route: If the page is blank or did not change: check the name ends in .html (File Explorer, View, Show, File name extensions), press Ctrl+Z in Notepad and save to undo your last change, or download a fresh copy. You may use your own page from earlier lessons instead; note its folder in Your work. The files stay on your computer; nothing is uploaded.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
 
@@ -6275,7 +6504,7 @@ Section: practice-plan. Stable action: step-1-brief.
 
 A baseline measured with the conditions written down, and the requests that hold up the first render identified.
 
-- Load with the cache disabled and a slow profile.
+- Load a page served over http(s) with the cache disabled and a slow profile.
 - Record weight, request count and time to usable.
 - Note which requests block the first render.
 
@@ -6298,7 +6527,7 @@ Made-up example. Measuring a tool-library page, and starting after the easy win 
 
 **What I did:** Noticed the header photograph was enormous, fixed it, and then sat down to take a baseline. It seemed sensible to measure a page that was not obviously broken.
 
-**What I ended up with:** A baseline of 700 kilobytes and four seconds, and after two more changes, 340 kilobytes and three seconds. A real improvement, and a modest-looking one.
+**What I ended up with:** A baseline of 700 kilobytes and four seconds, and after two more changes, about 420 kilobytes and three seconds. A real improvement, and a modest-looking one.
 
 **What I could not say:** Anything about the change that mattered most. The page had been 2.4 megabytes and eleven seconds that morning, and no record of it existed.
 
@@ -6313,15 +6542,15 @@ Made-up example. Measuring a tool-library page, and starting after the easy win 
 **Unknown:** Still unknown: how much day-to-day variation there is in these figures. One baseline is one measurement, and I have not taken it twice to find out.
 
 
-### The conditions: throttling profile, cache setting, device and browser
+### The conditions: throttling profile, cache setting, device, browser and how the page was opened
 
 Section: practice-plan. Stable action: write-conditions.
 
-Write these once and use exactly the same ones afterwards, or the pair proves nothing.
+Use the same ones afterwards, or the pair proves nothing. Throttling may not apply to a page opened from your folder; measure a page served over http(s), or label timings as estimates.
 
-**Answer:** The conditions: throttling profile, cache setting, device and browser
+**Answer:** The conditions: throttling profile, cache setting, device, browser and how the page was opened
 
-Write these once and use exactly the same ones afterwards, or the pair proves nothing.
+Use the same ones afterwards, or the pair proves nothing. Throttling may not apply to a page opened from your folder; measure a page served over http(s), or label timings as estimates.
 
 
 ### Weight, request count and time to usable
@@ -6681,21 +6910,21 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 The page feels fast to you. Why is that not evidence?
 
 - Because feelings are always unreliable.
-- Because speed varies between browsers.
-- You are on a fast connection, with a warm cache, on a machine you chose, looking at a page you already understand.
+- Your connection, cache, machine and familiarity all flatter the page.
+- Because speed varies so much between browsers that no single impression can count.
 
 <details>
 <summary>After your attempt</summary>
 
-Because feelings are always unreliable. — Your sense of speed is quite good at judging what you experienced. The problem is that what you experienced is unrepresentative.
+Because feelings are always unreliable. — Your sense of speed judges what you experienced quite well. The problem is that what you experienced is unrepresentative.
 
-Because speed varies between browsers. — It does, and that is a smaller effect than the cache and the connection.
+Your connection, cache, machine and familiarity all flatter the page. — Four separate advantages that a first-time visitor on a mid-range phone does not have. This is why the measurement comes before the opinion.
 
-You are on a fast connection, with a warm cache, on a machine you chose, looking at a page you already understand. — Four separate advantages, none of which a first-time visitor on a mid-range phone has. This is why the measurement comes before the opinion.
+Because speed varies so much between browsers that no single impression can count. — It does vary, and that is a smaller effect than the cache and the connection.
 
-Improve: Check the conditions in step 1 include the cache setting, and redo the baseline if it was warm. Record the change in step 5.
+Improve: Check the conditions in step 1 include the cache setting and how the page was opened, and redo the baseline if needed. Record the change in step 5.
 
-Check again: Your baseline was taken with the cache disabled on a throttled profile.
+Check again: Your baseline names its conditions, including whether timings were measured over a network or estimated.
 
 Answers to revisit: conditions, baseline-numbers, blocking, improvement-made
 
@@ -6708,20 +6937,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Delaying the script that renders your list would improve first paint by two seconds. Should you do it?
+Delaying the script that renders your list would make the page appear two seconds sooner and the list one second later. Should you do it?
 
-- Not for this page. It appears sooner and becomes usable later, which is the wrong direction for the number that matters.
-- Yes, since first paint is a standard measure.
-- Yes, provided you show a loading indicator.
+- It is worth doing, because first paint is a standard measure that everyone recognises.
+- It is worth doing, as long as a loading indicator fills the space where the list will be.
+- Keep it as it is: the list is what people came for, so delaying it delays the task.
 
 <details>
 <summary>After your attempt</summary>
 
-Not for this page. It appears sooner and becomes usable later, which is the wrong direction for the number that matters. — First paint responds to almost anything, which is why it gets reported so often. The list is the page, and delaying it delays the task.
+It is worth doing, because first paint is a standard measure that everyone recognises. — A standard measure can still be the wrong one for a page. Ask what the person can do at each moment.
 
-Yes, since first paint is a standard measure. — Standard measures can still be the wrong one for a particular page. Ask what the person can do at each moment.
+It is worth doing, as long as a loading indicator fills the space where the list will be. — A well-designed skeleton of the list would be a genuine answer and is more work than the one-line change. A spinner in an empty frame is the same wait with something turning in it.
 
-Yes, provided you show a loading indicator. — A well-designed skeleton would be a genuine answer and is more work than the one-line change. A spinner in an empty frame is the same wait with something turning in it.
+Keep it as it is: the list is what people came for, so delaying it delays the task. — First paint responds to almost anything, which is why it gets reported so often. Here it improves while time to usable gets worse.
 
 Improve: Write that change into the rejected field in step 4 with both numbers, and record the change in step 5.
 
@@ -6740,18 +6969,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your report says the page went from eleven seconds to three. What is missing?
 
-- The percentage improvement.
-- The list of every change you made.
-- The conditions: throttling profile, cache setting, device and browser, stated once beside the pair.
+- The list of every change made.
+- The percentage improvement, which would show how large the change really was.
+- The conditions: profile, cache setting, device and browser.
 
 <details>
 <summary>After your attempt</summary>
 
-The percentage improvement. — It is easy to calculate from the figures and adds nothing the figures do not say.
+The list of every change made. — Worth including, and not the omission that makes the numbers misleading.
 
-The list of every change you made. — Worth including and not the omission that makes the numbers misleading.
+The percentage improvement, which would show how large the change really was. — It is easy to calculate from the figures and adds nothing they do not already say.
 
-The conditions: throttling profile, cache setting, device and browser, stated once beside the pair. — Without them the figures will be quoted somewhere they mean something else, usually as though they described a real phone on a real network.
+The conditions: profile, cache setting, device and browser. — Without them the figures get quoted where they mean something else, usually as if they described a real phone on a real network.
 
 Improve: Add the conditions line to your report in step 5 and state what you did not measure. Record the change.
 
@@ -6803,15 +7032,41 @@ A real mid-range phone on a real network is the usual gap. Throttling models spe
 A real mid-range phone on a real network is the usual gap. Throttling models speed and not dropouts.
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a museum page’s baseline on a slow profile is 1.9 MB, 30 requests and 9 seconds to usable. Options: remove a 400 kB autoplay video above the title, compress footer images to save 150 kB, strip spaces from the HTML to save 2 kB, or delay the script that draws the opening times so the frame paints sooner.
+
+**Task:** Choose your first change and the one you would reject, and explain each in terms of what the person can do sooner.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Picks the largest saving in kilobytes regardless of where it sits, or reports first paint as the improvement.
+- Adequate: Starts with the video above the title (on the critical path) and rejects delaying the opening-times script, because the page appears sooner but is usable later.
+- Strong: As adequate, and plans to re-measure under identical, stated conditions, or notes the footer saving is real but would not move time to usable.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -6847,12 +7102,12 @@ Made-up example. Measuring a tool-library page, and starting after the easy win 
 Activity: Ask me to predict what one small change to the supplied page will do before explaining it. Then ask for the visible result, the browser check and one recovery step if it fails.
 
 Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
-When the activity is finished, tell me to return to the course answer called “The conditions: throttling profile, cache setting, device and browser” and write my own decision. Do not write that answer for me.
+When the activity is finished, tell me to return to the course answer called “The conditions: throttling profile, cache setting, device, browser and how the page was opened” and write my own decision. Do not write that answer for me.
 ```
 
-**Come back to the course:** Return to “The conditions: throttling profile, cache setting, device and browser”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+**Come back to the course:** Return to “The conditions: throttling profile, cache setting, device, browser and how the page was opened”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The conditions: throttling profile, cache setting, device and browser” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The conditions: throttling profile, cache setting, device, browser and how the page was opened” and write one sentence in your own words.
 
 </details>
 <details>
@@ -6952,15 +7207,15 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 Stable ID: m12-l10-v1. Core.
 
-Being able to find out what is happening, rather than guessing and changing things, is what makes you useful to an engineering conversation.
+Part of the optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. Being able to find out what is happening, rather than guessing and changing things, is what makes you useful to an engineering conversation.
 
-Bring: Your built page and its known issues.
+Bring: A text editor, a browser, and the starter debug-practice.html or your own page.
 
-Starting route: Recommended route: Build three written diagnoses of problems in your own page in a folder on your own computer, then record what you did and what you saw in the worksheet here so it is saved and reviewable. The files stay with you; nothing is uploaded. Alternative route: Prefer to keep your notes in the same folder as the files? Use the local text-file route below with the copyable starter, then note the folder in Your work.
+Starting route: Recommended route: Optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. To practise three written diagnoses, download debug-practice.html (on the course site, the address ending /starters/m12/debug-practice.html) and save it in Documents\HaruCourse\Practice\m12-l10-v1. If Windows saved it as debug-practice.html.txt, rename it to end in .html. Open it in Notepad (right-click, Open with, Notepad) and in your browser (double-click). Make the one change marked “Change this one thing first”, save with Ctrl+S, reload with F5, then record what you did and saw here. Alternative route: If the page is blank or did not change: check the name ends in .html (File Explorer, View, Show, File name extensions), press Ctrl+Z in Notepad and save to undo your last change, or download a fresh copy. You may use your own page from earlier lessons instead; note its folder in Your work. The files stay on your computer; nothing is uploaded.
 
 - Three problems diagnosed with the cause written first
 - Evidence from the inspector, the console and the network panel
-- A record of one hypothesis that turned out to be wrong
+- Each first guess compared with the cause actually found
 - Fixes made after the diagnosis, not before
 
 ### Start here: in everyday words
@@ -7025,14 +7280,14 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Three problems diagnosed. The card was wider than its container: the inspector showed padding being added to a set width — cause written, then fixed with box sizing. The filter did nothing on one screen: the console showed a script error on a line that assumed an element existed — cause written, then fixed with a guard. An icon was missing on the phone but not the laptop: the network panel showed a 404 for a file whose name differed by case, which matters on the server and not on the local machine. Each cause was written before the fix, and one initial hypothesis turned out to be wrong.
+- Example (made up): three problems diagnosed. The card was wider than its container: the inspector showed padding being added to a set width — cause written, then fixed with box sizing. The filter did nothing on one screen: the console showed a script error on a line that assumed an element existed — cause written, then fixed with a guard. An icon was missing on the phone but not the laptop: the network panel showed a 404 for a file whose name differed by case, which matters on the server and not on the local machine. Each cause was written before the fix, and one initial hypothesis turned out to be wrong.
 
 
 ### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
-Recommended route: Build three written diagnoses of problems in your own page in a folder on your own computer, then record what you did and what you saw in the worksheet here so it is saved and reviewable. The files stay with you; nothing is uploaded. Alternative route: Prefer to keep your notes in the same folder as the files? Use the local text-file route below with the copyable starter, then note the folder in Your work.
+Recommended route: Optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. To practise three written diagnoses, download debug-practice.html (on the course site, the address ending /starters/m12/debug-practice.html) and save it in Documents\HaruCourse\Practice\m12-l10-v1. If Windows saved it as debug-practice.html.txt, rename it to end in .html. Open it in Notepad (right-click, Open with, Notepad) and in your browser (double-click). Make the one change marked “Change this one thing first”, save with Ctrl+S, reload with F5, then record what you did and saw here. Alternative route: If the page is blank or did not change: check the name ends in .html (File Explorer, View, Show, File name extensions), press Ctrl+Z in Notepad and save to undo your last change, or download a fresh copy. You may use your own page from earlier lessons instead; note its folder in Your work. The files stay on your computer; nothing is uploaded.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
 
@@ -7046,7 +7301,7 @@ The three panels named with the kind of question each one answers.
 - Read the assigned sections on the browser tools.
 - Write which panel answers which kind of question.
 
-**Start here:** Open all three tabs on your own page and look at each for a minute before writing anything.
+**Start here:** Change the starter’s marked heading, save and reload. Then open the three panels on it and look at each for a minute before writing anything.
 
 **Enough:** You could say, for a new problem, which panel to open first.
 
@@ -7081,7 +7336,7 @@ Section: practice-plan. Stable action: step-2-brief.
 
 One style problem reproduced, the inspector evidence recorded, and the cause written before any fix.
 
-- Find something that does not look as intended.
+- Make the starter's marked change, then find something that does not look as intended.
 - Use the inspector to see the applied and overridden rules.
 - Write the cause before touching the code.
 
@@ -7227,7 +7482,7 @@ Section: practice-plan. Stable action: step-3-sort-3.
 
 Six symptoms from a made up tool-library page. For each one, decide which panel to open first.
 
-One icon shows on your laptop and not on your phone.
+One icon shows when the page is opened from your own folder and not when it is hosted.
 
 - the inspector
 - the console
@@ -7240,7 +7495,7 @@ the inspector — It will show an element expecting an image. It will not say wh
 
 the console — A missing file sometimes appears here, and the status code is in the network panel.
 
-the network panel — A 404 for a file whose name differs in capitalisation is the usual answer, because it matters on a server and not on your own machine.
+the network panel — A 404 for a file whose name differs in capitalisation is a common answer: Windows ignores capitalisation and most web servers do not.
 
 Now take your own three problems and open the right panel for each before doing anything else.
 
@@ -7415,11 +7670,11 @@ Write your answer for “What is missing or slow, and where”. Use the task ins
 
 Section: practice-plan. Stable action: write-loading-evidence.
 
-A status of 404 means the file was not found. 200 means it arrived, whatever it looks like on screen.
+404 means the server found no such file; 200 means it arrived. Opened from your own folder there is no server, so a missing file shows as (failed) instead.
 
 **Answer:** What the network panel showed: the request, its status and its size
 
-A status of 404 means the file was not found. 200 means it arrived, whatever it looks like on screen.
+404 means the server found no such file; 200 means it arrived. Opened from your own folder there is no server, so a missing file shows as (failed) instead.
 
 
 ### The cause, written before the fix
@@ -7441,20 +7696,20 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Somebody says debugging is for developers. What does that miss?
 
-- Modern tools make debugging easy enough for anyone.
-- Designers should be able to fix their own bugs.
-- Being able to say “the request returned a 404” turns a complaint into a starting point, and saves everybody a round trip.
+- Saying “it returned a 404” gives an engineer a starting point.
+- Browser tools now make debugging easy for anyone.
+- Designers should be able to fix their own bugs without having to involve anyone else.
 
 <details>
 <summary>After your attempt</summary>
 
-Modern tools make debugging easy enough for anyone. — The tools are approachable, and that says nothing about why it is worth doing.
+Saying “it returned a 404” gives an engineer a starting point. — A report naming what was requested, what came back and which rule won can be acted on at once. It also helps you notice when an explanation does not fit the evidence.
 
-Designers should be able to fix their own bugs. — Sometimes you can, and that is not the argument. The value is in the conversation rather than in the fix.
+Browser tools now make debugging easy for anyone. — The tools are approachable, and that says nothing about why the skill is worth having.
 
-Being able to say “the request returned a 404” turns a complaint into a starting point, and saves everybody a round trip. — A report that names what was requested, what came back and which rule won is a report an engineer can act on immediately. It is also how you notice when an explanation does not fit the evidence.
+Designers should be able to fix their own bugs without having to involve anyone else. — Sometimes you can, and that is not the argument. The value is in the conversation rather than in the fix.
 
-Improve: Rewrite one of your three causes in step 2, 3 or 4 so it names what an engineer would need: the rule, the message, or the status code. Record the change in step 5.
+Improve: Rewrite one of your three causes in step 2, 3 or 4 so it names what an engineer would need: the rule, the message or the status. Record the change in step 5.
 
 Check again: Each cause names specific evidence rather than describing the symptom again.
 
@@ -7469,20 +7724,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Your card is too wide and you have already changed three rules trying to fix it. What should you do?
+Your card is too wide, and you have already changed three rules trying to fix it. What should you do next?
 
-- Undo the changes, inspect the element, and write the cause before touching anything again.
-- Keep going; one of the changes will work eventually.
-- Add a more specific rule to force the width.
+- Add a more specific rule that forces the width to the size you want.
+- Undo them, inspect the card, and write the cause before changing more.
+- Keep trying different changes, since one of them is bound to work eventually.
 
 <details>
 <summary>After your attempt</summary>
 
-Undo the changes, inspect the element, and write the cause before touching anything again. — Each hopeful change makes the file worse and the problem harder to see. The Styles panel names the winning rule and shows the computed size, which is usually the whole answer.
+Add a more specific rule that forces the width to the size you want. — A forced rule nobody can explain makes the next conflict worse, and it does not help if the cause is the box model rather than a conflict.
 
-Keep going; one of the changes will work eventually. — Something will look right and you will not know why, which means it will break again somewhere you have not looked.
+Undo them, inspect the card, and write the cause before changing more. — Each hopeful change makes the file worse and the problem harder to see. The Styles panel names the winning rule and shows the computed size, which is usually the whole answer.
 
-Add a more specific rule to force the width. — A forced rule nobody can explain makes the next conflict worse. It also does not help if the cause is the box model rather than a conflict.
+Keep trying different changes, since one of them is bound to work eventually. — Something will look right and you will not know why, so it will break again somewhere you have not looked.
 
 Improve: Undo your speculative changes, then write the cause in step 2 before fixing it. Record the change in step 5.
 
@@ -7499,24 +7754,24 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-An icon appears on your laptop and not on your phone. Which panel, and what are you looking for?
+An icon shows when you open the page from your own folder, but not when the same files are hosted online. Which panel do you open first, and what do you look for?
 
-- The console, since a missing image is an error.
-- The inspector, to check the image element is present.
-- The network panel, looking for a 404 — most often a file name whose capitalisation differs.
+- The network panel: the icon’s request and its status, such as 404.
+- The console, since a missing image is a script error.
+- The inspector, to check that the image element is present and has its styles applied.
 
 <details>
 <summary>After your attempt</summary>
 
-The console, since a missing image is an error. — Sometimes it appears there too. The status code, which is the actual answer, is in the network panel.
+The network panel: the icon’s request and its status, such as 404. — Windows ignores capitalisation in file names and most web servers do not, so Icon.svg and icon.svg are one file on your laptop and two online. The status code names the problem at once.
 
-The inspector, to check the image element is present. — It will be present and expecting an image. That tells you nothing about what came back.
+The console, since a missing image is a script error. — A failed file is often mentioned there too, but not as a script error, and the status code is in the network panel.
 
-The network panel, looking for a 404 — most often a file name whose capitalisation differs. — Your own machine usually ignores capitalisation in file names and a server usually does not. It is the classic works-here-fails-there problem and the status code names it instantly.
+The inspector, to check that the image element is present and has its styles applied. — It will be present and expecting an image. That tells you nothing about what came back.
 
-Improve: Record the status code and the exact requested file name in step 4, rather than describing what is missing. Record the change in step 5.
+Improve: Record the status, or the word failed, and the exact requested file name in step 4, rather than describing what is missing. Record the change in step 5.
 
-Check again: Your loading diagnosis contains a status code.
+Check again: Your loading diagnosis names a status or a failed request, with its file name.
 
 Answers to revisit: loading-symptom, loading-evidence, loading-cause, improvement-made
 
@@ -7529,27 +7784,27 @@ Section: practice. Stable action: step-5-brief.
 
 A hypothesis that turned out to be wrong, what it actually was, and the repair the Check questions asked for.
 
-- Note any hypothesis that proved wrong and what it actually was.
+- Compare each first guess with what you found, wrong or confirmed.
 - Save the three diagnoses with their evidence.
 
 **Start here:** Look back at the three causes you wrote and compare each with what you eventually found.
 
-**Enough:** At least one wrong hypothesis is recorded, because guessing right three times out of three is unusual.
+**Enough:** Every first guess sits beside what you found, wrong guesses included and none invented.
 
 **Hypothesis:** Your guess at the cause, written down before you look. Writing it is what makes being wrong visible and useful.
 
 **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
 
 
-### A hypothesis that turned out to be wrong, and what it actually was
+### Each first guess compared with what it actually was
 
 Section: practice. Stable action: write-wrong-hypothesis.
 
-At least one of the three usually is. Recording it is the point of writing causes before fixes.
+Note any guess that was wrong and what it actually was. Do not invent one: if all three were right, name the evidence that confirmed each.
 
-**Answer:** A hypothesis that turned out to be wrong, and what it actually was
+**Answer:** Each first guess compared with what it actually was
 
-At least one of the three usually is. Recording it is the point of writing causes before fixes.
+Note any guess that was wrong and what it actually was. Do not invent one: if all three were right, name the evidence that confirmed each.
 
 
 ### Where the three diagnoses and their evidence are saved
@@ -7563,15 +7818,41 @@ Write your answer for “Where the three diagnoses and their evidence are saved�
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: on a gardening shop page, a product grid spills past its container, the “Add to basket” button does nothing on one page only, and a leaf icon is missing once the site is hosted though it shows from the laptop folder.
+
+**Task:** For each problem, say which developer tools panel you would open first, what evidence you would write down before fixing anything, and why that panel.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Changes code until things look right, or names one panel for everything without saying what to look for.
+- Adequate: Inspector for the grid (applied rules and computed size), console for the button (error, file and line), network panel for the icon (request and status, such as 404).
+- Strong: As adequate, and writes a first guess before looking, or suspects a capitalisation difference in the icon’s file name to confirm in the network panel.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -7670,19 +7951,19 @@ Adequate evidence: The specific rule, error message or response recorded per pro
 
 Repair: Copy the exact overridden rule, error text or status code into your notes. Recheck: The evidence record.
 
-**A wrong hypothesis is recorded honestly**
+**First guesses are compared honestly with what was found**
 
-Adequate evidence: At least one initial explanation that turned out to be wrong, with what it actually was.
+Adequate evidence: Each first guess beside the real cause; a wrong guess with what it actually was, or the evidence that confirmed a right one.
 
-0 — Only correct diagnoses reported.
+0 — No first guesses recorded.
 
-1 — A wrong guess mentioned without what was actually happening.
+1 — Guesses mentioned without the causes found.
 
-2 — Recorded with the real cause beside it.
+2 — Every guess compared with the real cause, wrong ones included.
 
-3 — As adequate, and the record says what would have shown the mistake sooner.
+3 — As adequate, and any wrong guess says what would have shown the mistake sooner.
 
-Repair: Look back at the problems: your first idea was probably wrong at least once. Record it. Recheck: The hypothesis record.
+Repair: Write each first guess beside the cause you found. Do not invent a wrong guess; if all were right, name the evidence that confirmed each. Recheck: The hypothesis record.
 
 </details>
 The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
@@ -7694,7 +7975,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 - Three problems are diagnosed using three different panels
 - Causes are written before fixes
 - Evidence from the tools is recorded
-- A wrong hypothesis is recorded honestly
+- First guesses are compared honestly with what was found
 
 <details>
 <summary>Reading, video and deeper explanation</summary>
@@ -7712,16 +7993,16 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 Stable ID: m12-l11-v1. Core.
 
-Separate exercises prove separate points. A running prototype proves they hold together, which is a different claim.
+Part of the optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. Separate exercises prove separate points. A running prototype proves they hold together, which is a different claim.
 
-Bring: Your built pages, data fetching, form and styling.
+Bring: Your built pages or the supplied starters, in one folder.
 
-Starting route: Recommended route: Build the whole prototype, assembled from everything in this module in a folder on your own computer, then record what you did and what you saw in the worksheet here so it is saved and reviewable. The files stay with you; nothing is uploaded. Alternative route: Prefer to keep your notes in the same folder as the files? Use the local text-file route below with the copyable starter, then note the folder in Your work.
+Starting route: Recommended route: Optional technical extension: core learners can rely on the supplied working starters and the ideas in Lessons 1 and 12. Put your extension pages, or the starters from Lessons 2 to 8, in one folder such as Documents\HaruCourse\Practice\m12-l11-v1, link them, and record what you did and saw here. Nothing is uploaded. Alternative route: For the phone-size check, use the desktop device toolbar (F12, then Ctrl+Shift+M) and call it emulation. A real phone is optional: open a starter hosted on the course site in the phone’s browser, or serve your own folder over your network or free hosting. Sending one HTML file to a phone may or may not open it in a browser.
 
 - One assembled, running prototype
 - A list of contradictions found and reconciled
 - Re-run checks on the assembled result
-- A real-phone test with findings, and an updated fakes sheet
+- A device check labelled as emulation or a real phone, and an updated fakes sheet
 
 ### Start here: in everyday words
 
@@ -7741,7 +8022,7 @@ The reader demonstrates and guides the task before asking for “Which pages you
 
 Section: learn. Stable action: welcome.
 
-Assemble your pages into one working responsive prototype with real data, accessible structure and measured performance, and test it on a real phone.
+Assemble your pages into one working responsive prototype with realistic data, accessible structure and measured performance, and check it in device emulation, with a real phone as an option.
 
 
 ### Idea 1: Assembly finds the contradictions: two stylesheets, two patter…
@@ -7758,11 +8039,11 @@ Section: learn. Stable action: learn-2.
 Re-run every check on the assembled thing; passing separately is not passing.
 
 
-### Test on a real phone, not only an emulated viewport
+### Idea 3: Emulation shows width only; a real-phone check needs hosting o…
 
 Section: learn. Stable action: learn-3.
 
-Test on a real phone, not only an emulated viewport.
+Emulation shows width only; a real-phone check needs hosting or a local server and is optional.
 
 
 ### Record what is faked, exactly as in m10
@@ -7785,14 +8066,14 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Four pages were assembled. Three contradictions appeared: two spacing rhythms, two card treatments and two different words for the same action. Each was reconciled and the inventory updated. Re-running the checks found a heading outline broken by the shared header and one contrast failure on a component now sitting on a tinted panel. Ten minutes on a real phone found two more: the sticky action bar sat under the on-screen keyboard, and the tap target for the date was comfortable with a mouse and not with a thumb. The fakes sheet recorded invented data, a faked payment and a search box that does nothing.
+- Example (made up): four pages were assembled. Three contradictions appeared: two spacing rhythms, two card treatments and two different words for the same action. Each was reconciled and the inventory updated. Re-running the checks found a heading outline broken by the shared header and one contrast failure on a component now sitting on a tinted panel. Ten minutes on a real phone, with the prototype hosted, found two more: the sticky action bar sat under the on-screen keyboard, and the tap target for the date was comfortable with a mouse and not with a thumb. The fakes sheet recorded invented data, a faked payment and a search box that does nothing.
 
 
 ### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
-Recommended route: Build the whole prototype, assembled from everything in this module in a folder on your own computer, then record what you did and what you saw in the worksheet here so it is saved and reviewable. The files stay with you; nothing is uploaded. Alternative route: Prefer to keep your notes in the same folder as the files? Use the local text-file route below with the copyable starter, then note the folder in Your work.
+Recommended route: Optional technical extension: core learners can rely on the supplied working starters and the ideas in Lessons 1 and 12. Put your extension pages, or the starters from Lessons 2 to 8, in one folder such as Documents\HaruCourse\Practice\m12-l11-v1, link them, and record what you did and saw here. Nothing is uploaded. Alternative route: For the phone-size check, use the desktop device toolbar (F12, then Ctrl+Shift+M) and call it emulation. A real phone is optional: open a starter hosted on the course site in the phone’s browser, or serve your own folder over your network or free hosting. Sending one HTML file to a phone may or may not open it in a browser.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
 
@@ -7919,21 +8200,21 @@ A shared header can break a heading outline; a component moved onto a tinted pan
 A shared header can break a heading outline; a component moved onto a tinted panel can fail contrast that passed on white.
 
 
-### Test on a real phone
+### Check it at phone size
 
 Section: practice-plan. Stable action: step-3-brief.
 
 One task completed by thumb on a real phone, with everything the emulated viewport did not show.
 
-- Open the prototype on an actual phone.
-- Complete one task by thumb, including a form.
-- Record everything the emulated viewport did not show.
+- Run one task, including a form, in device emulation and label it emulation.
+- Optionally repeat it on a real phone, using a hosted copy, by thumb.
+- Record what each check showed and what stayed untested.
 
-**Start here:** Open the prototype on your own phone and complete one task standing up, using only your thumb.
+**Start here:** Press F12, then Ctrl+Shift+M, choose a phone size and complete one task. If you have a hosted copy and a phone, repeat it standing, by thumb.
 
-**Enough:** You found something the emulated viewport had not shown you.
+**Enough:** Your record says which check you ran and lists what it could not show.
 
-**Real device:** An actual phone in your hand. The emulated viewport gets the width right and nothing else: no thumb, no keyboard covering the screen, no real network.
+**Real device:** An actual phone in your hand. The emulated viewport gets the width right and nothing else: no thumb, no keyboard covering the screen, no real network. Opening your own files on it needs hosting or a local server.
 
 **On-screen keyboard:** It covers the bottom third of the screen when a field is focused, which is where sticky action bars live. An emulator never shows this.
 
@@ -7944,7 +8225,7 @@ Section: practice-plan. Stable action: step-3-demo.
 
 Made-up example. Testing a tool-library prototype on a real phone, and testing it in the least real way possible.
 
-**What I did:** Opened it on my phone at my desk, held in both hands, propped against the monitor, in good light, on my home network. Completed the task in under a minute and found nothing.
+**What I did:** Hosted it, then opened it on my phone at my desk, held in both hands, propped against the monitor, in good light, on my home network. Completed the task in under a minute and found nothing.
 
 **Why that found nothing:** Two hands, a steady position and a fast connection remove almost everything a phone would otherwise show. It was the emulator with a nicer screen.
 
@@ -8117,35 +8398,35 @@ Now record your own phone findings, and mark which ones the emulator had already
 </details>
 
 
-### Which phone, and how you opened the prototype on it
+### How you checked at phone size: emulation (say so), or a real phone and how you opened the page on it
 
 Section: practice-plan. Stable action: write-phone-how.
 
-Over your own network, or copied onto the device. No hosting or account is needed.
+Emulation needs nothing extra. A real phone needs the page hosted, or served over your own network; both are optional.
 
-**Answer:** Which phone, and how you opened the prototype on it
+**Answer:** How you checked at phone size: emulation (say so), or a real phone and how you opened the page on it
 
-Over your own network, or copied onto the device. No hosting or account is needed.
+Emulation needs nothing extra. A real phone needs the page hosted, or served over your own network; both are optional.
 
 
-### The task you completed by thumb, including a form
+### The task you completed, including a form, and whether by mouse in emulation or by thumb
 
 Section: practice-plan. Stable action: write-phone-task.
 
-Write your answer for “The task you completed by thumb, including a form”. Use the task instructions below to decide what to include.
+Write your answer for “The task you completed, including a form, and whether by mouse in emulation or by thumb”. Use the task instructions below to decide what to include.
 
-**Answer:** The task you completed by thumb, including a form
-
-
+**Answer:** The task you completed, including a form, and whether by mouse in emulation or by thumb
 
 
-### Everything the emulated viewport did not show
+
+
+### What the check showed, and what it could not show: for emulation, thumb reach, the on-screen keyboard and a real network
 
 Section: practice-plan. Stable action: write-phone-findings.
 
-Write your answer for “Everything the emulated viewport did not show”. Use the task instructions below to decide what to include.
+Write your answer for “What the check showed, and what it could not show: for emulation, thumb reach, the on-screen keyboard and a real network”. Use the task instructions below to decide what to include.
 
-**Answer:** Everything the emulated viewport did not show
+**Answer:** What the check showed, and what it could not show: for emulation, thumb reach, the on-screen keyboard and a real network
 
 
 
@@ -8201,20 +8482,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Each page passed its checks on its own. Do you need to re-run them after assembly?
+Each page passed its checks on its own. Do you need to run them again after assembly?
 
-- Only the contrast checks, since colours may combine differently.
-- Yes. The shared parts are new, and a shared header commonly creates a second page title or moves something onto a tinted panel.
-- No, provided nothing about the pages themselves changed.
+- Skip them, since the pages did not change.
+- Re-run them: the shared parts are new and untested together.
+- Only the contrast checks need repeating, since colours may combine differently.
 
 <details>
 <summary>After your attempt</summary>
 
-Only the contrast checks, since colours may combine differently. — Contrast is one of them. The heading outline is the one most reliably broken by a shared header.
+Skip them, since the pages did not change. — Something did change: each page now has a shared header, navigation and stylesheet it did not have alone.
 
-Yes. The shared parts are new, and a shared header commonly creates a second page title or moves something onto a tinted panel. — Passing separately is a claim about pages that no longer exist in that form. Assembly creates exactly the conditions nobody tested.
+Re-run them: the shared parts are new and untested together. — Passing separately is a claim about pages that no longer exist in that form. Assembly creates conditions nobody tested, such as a component moved onto a tinted panel.
 
-No, provided nothing about the pages themselves changed. — Something did change: each page now has a header, a navigation and a stylesheet it did not have alone.
+Only the contrast checks need repeating, since colours may combine differently. — Contrast is one of them. The heading outline is the check most reliably broken by a shared header.
 
 Improve: Re-check the heading outline of the assembled prototype in step 2 and record what you find. Note the change in step 5.
 
@@ -8231,20 +8512,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Your prototype runs, with real data, accessible structure and measured performance. How close is it to a product?
+Your prototype runs with realistic invented data, accessible structure and measured performance. How close is it to a product?
 
-- Not close. It runs with your data, on your machine, for the paths you built, and a product meets volume, edge cases, other people’s content and years of change.
-- Fairly close, since the hard parts are done.
-- Close enough to show as a product in a portfolio.
+- Fairly close, since the difficult parts of building it are now done.
+- Close enough to call a product.
+- Far: it runs with your data, on your machine, on your paths.
 
 <details>
 <summary>After your attempt</summary>
 
-Not close. It runs with your data, on your machine, for the paths you built, and a product meets volume, edge cases, other people’s content and years of change. — Running is a genuine achievement and a different claim. The fakes sheet exists so that nobody reads the first as the second.
+Fairly close, since the difficult parts of building it are now done. — The parts you did are real, and they are the parts you chose. Volume, security, other people’s content and maintenance are all still ahead.
 
-Fairly close, since the hard parts are done. — The parts you did are real and they are the parts you chose. Volume, security, other people’s content and maintenance are all still ahead.
+Close enough to call a product. — Showing it is right. Describing it as a product is what an experienced reviewer notices first.
 
-Close enough to show as a product in a portfolio. — Showing it is right. Describing it as a product is the thing an experienced reviewer will notice immediately.
+Far: it runs with your data, on your machine, on your paths. — Running is a real achievement and a different claim. A product meets volume, edge cases, other people’s content, security and years of change; the fakes sheet stops anyone reading one as the other.
 
 Improve: Write the prototype sentence in step 5 so it names three things this is not, and record the change.
 
@@ -8261,24 +8542,24 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-The emulated viewport showed no problems at phone width. Is a real phone still worth ten minutes?
+Device emulation showed no problems at phone width, and you have no way to open your own files on a phone. How should you record the device check?
 
-- Only if you have a low-end phone to test on.
-- Yes. The emulator gets the width right and has no thumb, no on-screen keyboard covering the screen and no real network.
-- Not really, since the emulator models the device accurately.
+- As incomplete until it is repeated on a cheap phone, which is the only valid test.
+- As a phone test, since emulation is close enough.
+- As emulation, naming what it cannot show, such as a thumb or keyboard.
 
 <details>
 <summary>After your attempt</summary>
 
-Only if you have a low-end phone to test on. — A low-end phone adds a performance dimension, and any phone finds the keyboard and thumb problems.
+As incomplete until it is repeated on a cheap phone, which is the only valid test. — A low-end phone adds a performance dimension, and any phone would find keyboard and thumb problems. Neither is required to record honestly what emulation showed.
 
-Yes. The emulator gets the width right and has no thumb, no on-screen keyboard covering the screen and no real network. — Sticky bars under the keyboard and targets that pass a measurement and fail a thumb are both found in the first minute on a device, and neither is visible at any width.
+As a phone test, since emulation is close enough. — It models the viewport. Almost everything else about holding a phone is absent, so calling it a phone test claims more than happened.
 
-Not really, since the emulator models the device accurately. — It models the viewport. Almost everything else about holding a phone is absent from it.
+As emulation, naming what it cannot show, such as a thumb or keyboard. — Emulation gets the width right and nothing about holding a phone. Say what stayed untested; a real-phone check of the hosted starters, or of your page through hosting, is optional and can be added later.
 
-Improve: Complete one task on a real phone in step 3 and record what the emulator had not shown. Note the change in step 5.
+Improve: Label your device check in step 3 as emulation or a real phone, and list what it could not show. Note the change in step 5.
 
-Check again: Your phone findings include something the emulator could not have shown.
+Check again: Your device record says how the check was done and what stayed untested.
 
 Answers to revisit: phone-how, phone-task, phone-findings, improvement-made
 
@@ -8326,15 +8607,41 @@ Write your answer for “One sentence saying this is a prototype rather than a p
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a volunteer rota site was built as three separate pages. Put together, one uses 12-pixel gaps and another 16, the same action is called “Sign up” and “Join”, and a shared header adds a second page title. You can check widths only with desktop emulation.
+
+**Task:** Decide what to reconcile, what to re-check, and how to record the phone-size check, and explain why each matters.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Assumes each page’s earlier checks still hold, picks one wording without asking why they differ, or calls emulation a phone test.
+- Adequate: Unifies spacing, investigates whether Sign up and Join mean different behaviour, re-runs headings and contrast after assembly, and labels emulation honestly.
+- Strong: As adequate, and lists what emulation cannot show (thumb, keyboard, real network), or adds a fakes sheet saying it is a prototype, not a product.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -8357,7 +8664,7 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: The whole thing, running
-What I am trying to do: Assemble your pages into one working responsive prototype with real data, accessible structure and measured performance, and test it on a real phone.
+What I am trying to do: Assemble your pages into one working responsive prototype with realistic data, accessible structure and measured performance, and check it in device emulation, with a real phone as an option.
 
 Key idea or terms:
 Assembly: Putting separately built pages into one thing. It is where contradictions surface, because two pages built a fortnight apart are always slightly two different products.
@@ -8433,19 +8740,19 @@ Adequate evidence: Heading, contrast and keyboard checks repeated on the whole p
 
 Repair: Re-run each check on the assembled prototype and record what changed. Recheck: The re-run results.
 
-**A real-phone test and an updated fakes sheet exist**
+**A labelled device check and an updated fakes sheet exist**
 
-Adequate evidence: Findings from a real device and a current list of everything faked.
+Adequate evidence: Findings from emulation or a real phone, labelled as which, with what stayed untested, and a current list of everything faked.
 
-0 — Emulated viewport only, no fakes sheet.
+0 — No device check, or emulation described as a phone test; no fakes sheet.
 
 1 — One of the two present.
 
-2 — Both present, with device findings recorded.
+2 — Both present, with the check labelled and its untested parts listed.
 
-3 — As adequate, and one design change was made because of the phone test.
+3 — As adequate, and one design change was made because of the device check.
 
-Repair: Open the prototype on your phone, complete a task by thumb, and update the fakes sheet afterwards. Recheck: The phone findings and fakes sheet.
+Repair: Run one task in device emulation, label it, list what it cannot show, and update the fakes sheet afterwards. Recheck: The device findings and fakes sheet.
 
 </details>
 The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
@@ -8457,14 +8764,14 @@ The progress bar counts required actions with saved work. It is not a score or p
 - The prototype is assembled and runs end to end
 - Contradictions are recorded and reconciled
 - Checks are re-run on the assembled result
-- A real-phone test and an updated fakes sheet exist
+- A labelled device check and an updated fakes sheet exist
 
 <details>
 <summary>Reading, video and deeper explanation</summary>
 
 - Assembly is a test. Pages built separately develop their own conventions — a different spacing rhythm, a second way of writing a card, a slightly different button — and putting them together surfaces every one. Reconciling them is the work, and the reconciliations belong in your component inventory and token sheet.
 - Checks must be re-run on the assembled result. A heading outline that was correct per page can break when pages share a header; a contrast ratio that passed can fail where a component now sits on a different surface; a keyboard route that worked can be interrupted by a new element. Passing separately is genuinely not the same as passing together.
-- Emulated viewports are convenient and not sufficient. A real phone has a real connection, real touch targets, a real keyboard that covers half the screen, and real interruptions. Ten minutes on a phone finds things an afternoon of resizing a window does not.
+- Emulated viewports are convenient and limited. A real phone has a real connection, real touch targets, a keyboard that covers part of the screen, and real interruptions. A file on your computer cannot simply be opened on a phone: that needs a local network server or hosting, both optional. The supplied starters are hosted on the course site, so they can be opened on a phone's browser; otherwise record emulation honestly and list what it cannot show.
 - The honesty rules from m10 apply unchanged: record what is faked, what data is invented, and what a person would meet in a real product that this does not have. A running prototype is more convincing than a drawing, which is exactly why its limits need stating more clearly.
 
 [MDN: core learning modules](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core).
@@ -8477,13 +8784,13 @@ Stable ID: m12-l12-v1. Core.
 
 The point of building was never to become an engineer. It was to make the conversation with engineers specific.
 
-Bring: Your prototype, key tables and state specifications.
+Bring: Your Project 1 screens and state specifications, or your prototype. No coding is needed.
 
-Starting route: Recommended route: Build a technical handover document for one feature in a folder on your own computer, then record what you did and what you saw in the worksheet here so it is saved and reviewable. The files stay with you; nothing is uploaded. Alternative route: Prefer to keep your notes in the same folder as the files? Use the local text-file route below with the copyable starter, then note the folder in Your work.
+Starting route: Recommended route: No coding: write a handover for one feature you designed, using your Project 1 screens, states and key tables, or, on the technical extension, one you built. Fill the worksheet here; it saves as you type and nothing else is uploaded. Alternative route: Prefer one document in your own folder? Write the handover there with the copyable starter below, then note the file location in Your work.
 
 - A technical handover covering behaviour, states and constraints
 - Three cost-shaped questions for an engineer
-- The fakes sheet attached and declared
+- What is faked, assumed or only designed, declared
 - A written record of what you now understand
 
 ### Start here: in everyday words
@@ -8504,7 +8811,7 @@ The reader demonstrates and guides the task before asking for “What the docume
 
 Section: learn. Stable action: welcome.
 
-Write a technical handover for one feature, ask three precise questions an engineer would find useful, and record what you now understand that you did not before this module.
+Write a technical handover for one feature you designed or built, ask three precise questions an engineer would find useful, and record what you now understand that you did not before this module.
 
 
 ### Hand over behaviour and states, not only appearance
@@ -8528,11 +8835,11 @@ Section: learn. Stable action: learn-3.
 “Is this possible?” is almost always yes; ask what it would cost.
 
 
-### Name what your prototype fakes so nobody plans around it
+### Name what is faked or only drawn, so nobody plans around it
 
 Section: learn. Stable action: learn-4.
 
-Name what your prototype fakes so nobody plans around it.
+Name what is faked or only drawn, so nobody plans around it.
 
 
 ### Record what you learned, including where you were previously wrong
@@ -8548,14 +8855,14 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The handover for the booking feature ran to three pages: the flow with its states, the component specifications with their key tables, the four data branches with their wording, the responsive behaviour rules, and the accessibility notes with what had been tested and what had not. Three questions were asked: what would it cost to keep the held-place timer accurate across devices, what does the current data shape make expensive to change later, and which of these states will need server work rather than front-end work. The fakes sheet was attached. The reflection recorded three things learned, including that a change she had previously been told was trivial turned out to be structural, and one where the opposite was true.
+- Example (made up): the handover for the booking feature ran to three pages: the flow with its states, the component specifications with their key tables, the four data branches with their wording, the responsive behaviour rules, and the accessibility notes with what had been tested and what had not. Three questions were asked: what would it cost to keep the held-place timer accurate across devices, what does the current data shape make expensive to change later, and which of these states will need server work rather than front-end work. The fakes sheet was attached. The reflection recorded three things learned, including that a change she had previously been told was trivial turned out to be structural, and one where the opposite was true.
 
 
 ### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
-Recommended route: Build a technical handover document for one feature in a folder on your own computer, then record what you did and what you saw in the worksheet here so it is saved and reviewable. The files stay with you; nothing is uploaded. Alternative route: Prefer to keep your notes in the same folder as the files? Use the local text-file route below with the copyable starter, then note the folder in Your work.
+Recommended route: No coding: write a handover for one feature you designed, using your Project 1 screens, states and key tables, or, on the technical extension, one you built. Fill the worksheet here; it saves as you type and nothing else is uploaded. Alternative route: Prefer one document in your own folder? Write the handover there with the copyable starter below, then note the file location in Your work.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
 
@@ -8570,7 +8877,7 @@ One document covering flow, states, key tables, responsive rules and accessibili
 - Write them as one document a developer could work from.
 - Include the wording for every message.
 
-**Start here:** List the sections first, then fill them from artefacts you already have rather than writing anything new.
+**Start here:** List the sections first, then fill them from your Project 1 screens, state specifications and key tables rather than writing anything new.
 
 **Enough:** Somebody could build the feature from the document without opening your design file.
 
@@ -8722,10 +9029,10 @@ Section: practice-plan. Stable action: step-3-brief.
 
 Everything an engineer might assume works declared, and the data shape named as invented where it is.
 
-- Attach the fakes sheet and mark anything an engineer might assume works.
-- State what data shape you invented.
+- Attach the fakes sheet, or list what exists only as a drawing.
+- State what data shape you invented or assumed.
 
-**Start here:** Open your fakes sheet from the previous lesson and mark anything that looks convincing enough to be assumed.
+**Start here:** Open your fakes sheet from the previous lesson, or list what in your designed feature exists only as a drawing, and mark anything convincing enough to be assumed.
 
 **Enough:** Nothing in the handover could be planned around by mistake.
 
@@ -8734,13 +9041,13 @@ Everything an engineer might assume works declared, and the data shape named as 
 **Assumed to work:** Anything that looks finished and is not: a search box that does nothing, a payment that goes nowhere, one path that works out of five.
 
 
-### What an engineer might assume works and does not
+### What an engineer might assume works and does not, or exists only as a drawing
 
 Section: practice-plan. Stable action: write-fakes-attached.
 
-Write your answer for “What an engineer might assume works and does not”. Use the task instructions below to decide what to include.
+Write your answer for “What an engineer might assume works and does not, or exists only as a drawing”. Use the task instructions below to decide what to include.
 
-**Answer:** What an engineer might assume works and does not
+**Answer:** What an engineer might assume works and does not, or exists only as a drawing
 
 
 
@@ -8763,7 +9070,7 @@ Section: practice-plan. Stable action: step-4-brief.
 The questions asked of somebody, or an honest record that they are unasked with what you expect.
 
 - If you can, ask your questions of a developer and record the answers.
-- If not, record that the questions are unasked and what you expect.
+- If not, record that they are unasked and what you expect. Keep notes de-identified.
 
 **Start here:** Ask if you can. If you cannot, write down the answers you expect and date it.
 
@@ -8928,26 +9235,26 @@ Now check your own three questions against the same three kinds, and rewrite any
 </details>
 
 
-### Who you asked, or that the questions are unasked
+### Who you asked, as a role and not a name, or that the questions are unasked
 
 Section: practice-plan. Stable action: write-asked-who.
 
 Unasked is an honest answer. Write what you expect the answers to be, so you can compare later.
 
-**Answer:** Who you asked, or that the questions are unasked
+**Answer:** Who you asked, as a role and not a name, or that the questions are unasked
 
 Unasked is an honest answer. Write what you expect the answers to be, so you can compare later.
 
 
-### What they said, or what you expect
+### A short summary of what they said, with no names, or what you expect
 
 Section: practice-plan. Stable action: write-answers.
 
-Write your answer for “What they said, or what you expect”. Use the task instructions below to decide what to include.
+Keep any raw notes in a private local file or on paper, with a date to delete them. Removing the name does not make an answer anonymous if the role identifies the person.
 
-**Answer:** What they said, or what you expect
+**Answer:** A short summary of what they said, with no names, or what you expect
 
-
+Keep any raw notes in a private local file or on paper, with a date to delete them. Removing the name does not make an answer anonymous if the role identifies the person.
 
 
 ### Check your reasoning · 1 of 3
@@ -8956,22 +9263,22 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Somebody says designers who code are more valuable. Is that the lesson of this module?
+Somebody says designers who code are more valuable. Is that what this module teaches?
 
-- Yes, because it removes the need for handover.
-- Yes, since you can now build what you design.
-- No. Designers who understand the material are more valuable, and writing production code is a different job.
+- It does, since coding removes handover.
+- It does, since after this module you can build whatever you design yourself.
+- Understanding the material matters; production code is another job.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, because it removes the need for handover. — The handover is this lesson. Building made it more specific rather than unnecessary.
+It does, since coding removes handover. — The handover is this lesson. Understanding the material makes it more specific, not unnecessary.
 
-Yes, since you can now build what you design. — You can build a prototype, which is not the same as production code, and the module never claimed otherwise.
+It does, since after this module you can build whatever you design yourself. — The optional extension builds prototypes, which are not production code, and the core route builds none. The module never claimed otherwise.
 
-No. Designers who understand the material are more valuable, and writing production code is a different job. — Reading code, building a prototype and asking precise questions is what makes design work land. Building was the route to that, not the destination.
+Understanding the material matters; production code is another job. — Reading code, describing behaviour and asking precise questions is what makes design work land. Building was an optional route to that, not the destination.
 
-Improve: Check your three learnings in step 5 are about understanding rather than about coding ability. Record the change.
+Improve: Check your three learnings in step 5 are about understanding rather than coding ability. Record the change.
 
 Check again: Your list does not describe the outcome of this module as being able to code.
 
@@ -8988,18 +9295,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You ask an engineer “is this possible?” and they say yes. What have you learned?
 
-- That the feature can go ahead as designed.
-- That there are no technical constraints.
-- Almost nothing. Nearly everything is possible, and the decision you needed was about cost or accuracy.
+- That there are no real constraints.
+- That the feature can now go ahead exactly as designed, on the planned timetable.
+- Very little: almost anything is possible; cost is the real question.
 
 <details>
 <summary>After your attempt</summary>
 
-That the feature can go ahead as designed. — It can be built. Whether it can be built this quarter, accurately, is a different answer you did not ask for.
+That there are no real constraints. — The constraints are what a yes hides, because they live in the cost rather than in the possibility.
 
-That there are no technical constraints. — The constraints are exactly what a yes hides, because they live in the cost rather than in the possibility.
+That the feature can now go ahead exactly as designed, on the planned timetable. — It can be built. Whether it can be built this quarter, accurately, is a different answer you did not ask for.
 
-Almost nothing. Nearly everything is possible, and the decision you needed was about cost or accuracy. — A yes arrives in four seconds and closes the conversation. What would it cost, and what breaks if we do not, are questions with numbers in the answers.
+Very little: almost anything is possible; cost is the real question. — A yes arrives in seconds and closes the conversation. What would it cost, and what breaks if we do not, are questions with numbers in the answers.
 
 Improve: Rewrite any question in step 2 that could be answered with yes, so it asks for a cost or a bound. Record the change in step 5.
 
@@ -9018,18 +9325,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your handover includes screenshots of every screen with the messages visible. Is the wording handed over?
 
-- Not reliably. Wording that exists only in a picture gets retyped, and retyped wording drifts.
-- Yes, if the screenshots are high resolution.
-- Yes, since the messages are legible in the images.
+- It is, if the screenshots are sharp enough to read.
+- It is, since every message can be read clearly in the screenshots themselves.
+- Only partly: words inside a picture get retyped, and retyped wording drifts.
 
 <details>
 <summary>After your attempt</summary>
 
-Not reliably. Wording that exists only in a picture gets retyped, and retyped wording drifts. — Every message needs to be in the document as text, where it can be copied exactly. Screenshots show placement; they do not hand over words.
+It is, if the screenshots are sharp enough to read. — Resolution helps people read it and does nothing about the retyping.
 
-Yes, if the screenshots are high resolution. — Resolution helps them read it and does nothing about the retyping.
+It is, since every message can be read clearly in the screenshots themselves. — Legible and copyable are different. Someone will type what they read, and one word will change.
 
-Yes, since the messages are legible in the images. — Legible and copyable are different. Somebody will type what they read, and one word will change.
+Only partly: words inside a picture get retyped, and retyped wording drifts. — Every message needs to be in the document as text, where it can be copied exactly. Screenshots show placement; they do not hand over words.
 
 Improve: Put every message as text in the document in step 1 and say where it lives. Record the change in step 5.
 
@@ -9047,7 +9354,7 @@ Section: practice. Stable action: step-5-brief.
 Three things you understand now that you did not, including at least one where you were previously wrong.
 
 - List three things you understand now that you did not before.
-- Include at least one where you were previously wrong.
+- Include at least one belief the module changed or tested.
 - Save the handover, questions and reflection.
 
 **Start here:** Look back at what you expected at the start of the module and find the first thing that turned out differently.
@@ -9070,15 +9377,15 @@ Write your answer for “Three things you understand now that you did not before
 
 
 
-### At least one where you were previously wrong
+### At least one belief this module changed or tested
 
 Section: practice. Stable action: write-was-wrong.
 
-Write your answer for “At least one where you were previously wrong”. Use the task instructions below to decide what to include.
+Do not invent a mistake. A belief the material confirmed, with the evidence that tested it, also counts.
 
-**Answer:** At least one where you were previously wrong
+**Answer:** At least one belief this module changed or tested
 
-
+Do not invent a mistake. A belief the material confirmed, with the evidence that tested it, also counts.
 
 <details>
 <summary>Example</summary>
@@ -9088,15 +9395,41 @@ Example (made up): I had been told a change was trivial and it was structural, a
 </details>
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: you designed, but did not build, a dentist’s appointment reminder flow with screens for choosing a slot, a confirmation and a “slot just taken” error. The engineer has only seen the confirmation screen. The appointment data fields are your own guess.
+
+**Task:** Decide what your handover must contain beyond the screens, and write one question for the engineer about cost or constraint, explaining why it is better than “is this possible?”.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Sends the screens only, or asks whether the flow is possible.
+- Adequate: Hands over states, the slot-taken error with exact wording, behaviour and the guessed data fields marked as assumed, and asks a cost question such as what keeping slots accurate would take.
+- Strong: As adequate, and separates what was tested from what is only designed, or says which decision the answer to the question would change.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -9119,7 +9452,7 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: Talking to engineers about what you built
-What I am trying to do: Write a technical handover for one feature, ask three precise questions an engineer would find useful, and record what you now understand that you did not before this module.
+What I am trying to do: Write a technical handover for one feature you designed or built, ask three precise questions an engineer would find useful, and record what you now understand that you did not before this module.
 
 Key idea or terms:
 Handover: A document somebody could build from. Behaviour and states, not only appearance, because appearance is the part screenshots already carry.
@@ -9183,7 +9516,7 @@ Repair: Rewrite each question as “what would it take to …” or “what does
 
 **The fakes are declared explicitly**
 
-Adequate evidence: The fakes sheet attached with the invented data shape stated.
+Adequate evidence: The fakes sheet, or a designed-not-built list, with the invented or assumed data shape stated.
 
 0 — Not declared.
 
@@ -9195,19 +9528,19 @@ Adequate evidence: The fakes sheet attached with the invented data shape stated.
 
 Repair: Mark every part of the prototype an engineer could mistake for working. Recheck: The declared fakes.
 
-**The reflection includes something you had been wrong about**
+**The reflection names a belief the module changed or tested**
 
-Adequate evidence: Three learnings, at least one correcting a previous belief.
+Adequate evidence: Three learnings, at least one naming a belief the module corrected or put to a test.
 
 0 — No reflection.
 
-1 — Learnings listed without any correction.
+1 — Skills listed without any belief examined.
 
-2 — Three learnings including a correction.
+2 — Three learnings including one belief changed or tested.
 
-3 — As adequate, and the correction changes how you will estimate or argue in future.
+3 — As adequate, and it says how you will estimate or argue differently in future.
 
-Repair: Think back over the module for a moment where a build contradicted your expectation, and write it. Recheck: The reflection.
+Repair: Think back for a moment where the material contradicted or tested an expectation. Do not invent a mistake; a confirmed belief with its evidence also counts. Recheck: The reflection.
 
 </details>
 The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
@@ -9219,15 +9552,15 @@ The progress bar counts required actions with saved work. It is not a score or p
 - The handover covers behaviour and states, not only appearance
 - Three questions are about cost and constraint
 - The fakes are declared explicitly
-- The reflection includes something you had been wrong about
+- The reflection names a belief the module changed or tested
 
 <details>
 <summary>Reading, video and deeper explanation</summary>
 
 - A handover that consists of screens leaves an engineer to invent everything you did not draw: states, transitions, error handling, keyboard behaviour, what happens when data is long. You have specified all of those over the last five modules, and this lesson assembles them into a document that answers questions before they are asked.
 - Feasibility questions rarely produce useful answers, because almost anything is possible. Cost questions do: what would this take, what would it constrain later, what would it prevent us changing. Asking in that form gets you a real trade-off rather than a yes that turns into a delay.
-- Your prototype's fakes need declaring in the handover as clearly as in a test. An engineer who assumes the search works, or that the data shape matches, plans around something that does not exist, and the correction is more expensive later than the sentence would have been now.
-- Recording what you now understand is worth doing once, plainly. This module was not intended to make you an engineer, and it should have changed what you can ask, what you can read, and what you no longer accept as an answer. Naming those explicitly makes them usable in an interview and in the next project.
+- Whatever is faked, assumed or only drawn needs declaring in the handover as clearly as in a test. An engineer who assumes the search works, or that the data shape is decided, plans around something that does not exist, and the correction is more expensive later than the sentence would have been now.
+- Recording what you now understand is worth doing once, plainly. This module was not intended to make you an engineer, and it should have changed what you can ask, what you can read or describe, and what you no longer accept as an answer. Naming those explicitly makes them usable in an interview and in the next project.
 
 [GOV.UK: making prototypes](https://www.gov.uk/service-manual/design/making-prototypes).
 

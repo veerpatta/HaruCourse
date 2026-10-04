@@ -182,21 +182,21 @@ A supplied pair from the same made-up project. Question A: “Where do people lo
 
 Which method fits which question?
 
-- A needs an interview about a recent booking; B needs watching someone attempt the task on the screen.
-- A survey would answer both more cheaply.
-- Both need interviews, because you want to understand people’s thinking.
-- Both need a task, because watching behaviour always beats asking.
+- A short survey would answer both questions more cheaply and reach more people.
+- Both need a task, because watching what people do beats asking them about it.
+- A: an interview about a recent booking. B: watching someone attempt the task on screen.
+- Both need interviews, because what you want to understand is the thinking behind each.
 
 <details>
 <summary>After your attempt</summary>
 
-A needs an interview about a recent booking; B needs watching someone attempt the task on the screen. — A is about what happened around the booking, over days, in places your screen cannot see. B is about what this screen does to someone in the next two minutes, which you can watch.
+A short survey would answer both questions more cheaply and reach more people. — A survey collects what people say they usually do, which is the least reliable version of A, and it cannot observe anyone failing to find a total.
 
-A survey would answer both more cheaply. — A survey collects what people say they usually do, which is the least reliable version of A, and it cannot observe anyone failing to find a total.
+Both need a task, because watching what people do beats asking them about it. — Watching cannot reach last Tuesday evening. A is about a sequence that already happened elsewhere, and only an account of it can reach that.
 
-Both need interviews, because you want to understand people’s thinking. — For B an interview gets you a recollection or a guess. Watching someone hunt for the total is far more reliable than asking whether they could find it.
+A: an interview about a recent booking. B: watching someone attempt the task on screen. — A is about what happened around the booking, over days, in places your screen cannot see. B is about what this screen does to someone in the next two minutes, which you can watch.
 
-Both need a task, because watching behaviour always beats asking. — Watching cannot reach last Tuesday evening. A is about a sequence that already happened elsewhere, and only an account of it can reach that.
+Both need interviews, because what you want to understand is the thinking behind each. — For B an interview gets you a recollection or a guess. Watching someone hunt for the total is far more reliable than asking whether they could find it.
 
 Apply the same test to your own question: does it ask about something that already happened elsewhere, or about what this screen does to someone now?
 
@@ -247,11 +247,11 @@ An interview reaches what happened before and around; watching reaches what the 
 
 Section: practice-plan. Stable action: write-criteria.
 
-Describe the experience they need, not a name.
+Describe the experience they need, not a name. Keep to adults and an everyday topic: health, money worries, children or anything else sensitive need qualified review, so leave them out of this practice.
 
 **Answer:** Who would count as a relevant person
 
-Describe the experience they need, not a name.
+Describe the experience they need, not a name. Keep to adults and an everyday topic: health, money worries, children or anything else sensitive need qualified review, so leave them out of this practice.
 
 <details>
 <summary>Example</summary>
@@ -295,11 +295,11 @@ Consent wording you would actually say, the task or questions, and the headings 
 
 Section: practice-plan. Stable action: write-consent-intro.
 
-Who you are, what the notes are for, that they can skip or stop, and whether anything is recorded.
+Who you are, what the notes are for, who will read them (your course reviewer can read what you type here), when you will delete them, that they can skip or stop, and whether anything is recorded.
 
 **Answer:** Your consent introduction, word for word
 
-Who you are, what the notes are for, that they can skip or stop, and whether anything is recorded.
+Who you are, what the notes are for, who will read them (your course reviewer can read what you type here), when you will delete them, that they can skip or stop, and whether anything is recorded.
 
 
 ### The task or the opening questions
@@ -335,7 +335,7 @@ Example (made up): what they did · their words · what I think it means · what
 
 Section: practice-plan. Stable action: step-4-brief.
 
-An honest recruitment status, and either a dated gap or what rehearsing aloud taught you.
+An honest recruitment status, a dated access note, and what rehearsing aloud taught you. With nobody available, this is the complete rehearsal result.
 
 - If possible, invite a willing adult with relevant recent experience without pressure.
 - Rehearse the session aloud.
@@ -343,7 +343,7 @@ An honest recruitment status, and either a dated gap or what rehearsing aloud ta
 
 **Start here:** If you are unsure whether to ask someone, write the message you would send. Deciding is easier once it exists.
 
-**Enough:** The status matches reality, and if nobody is available the plan is still finished and ready.
+**Enough:** The status matches reality, the access note is dated and names no one, and if nobody is available the plan is still finished: nothing in it describes a participant.
 
 **Recruitment gap:** A dated record that nobody was available. It is a real result of the work, not a failure to report.
 
@@ -358,18 +358,20 @@ Choose the option that honestly describes your work.
 
 **Answer:** Where recruitment stands today (Someone has agreed / Asked, waiting for a reply / Nobody available: rehearsal only)
 
-Choose honestly. Rehearsal only is a real, recordable outcome.
+Choose honestly. Rehearsal only is a complete result for this lesson: the prepared plan, a dated access note and what reading it aloud taught you.
 
 
-### If nobody is available, who would you need and how might you reach them?
+### Your dated access note: who you still need and how you might reach them (no names)
 
 Section: practice-plan. Stable action: write-access-gap.
 
-Dating the gap is the finding. Leave it if someone has agreed.
+Waiting or rehearsal only: write today’s date, the kind of person you still need and a route to them, never a name or contact detail. If someone has agreed, write the date they agreed and “no gap”.
 
-**Answer:** If nobody is available, who would you need and how might you reach them?
+**Answer:** Your dated access note: who you still need and how you might reach them (no names)
 
-Dating the gap is the finding. Leave it if someone has agreed.
+Required only when access-status is Asked, waiting for a reply or Nobody available: rehearsal only. Otherwise leave participant evidence empty.
+
+Waiting or rehearsal only: write today’s date, the kind of person you still need and a route to them, never a name or contact detail. If someone has agreed, write the date they agreed and “no gap”.
 
 
 ### What reading it aloud taught you
@@ -419,23 +421,23 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-One person tells you they never open confirmation emails. What have you established?
+One person who booked a class last month tells you they never open confirmation emails. What have you established?
 
-- That most people do not read confirmation emails.
-- Nothing: a single participant is not a sample.
-- That your email design needs work.
-- That at least one person with relevant experience does not, which is enough to make you stop assuming everyone does.
+- Nothing yet, because a single participant is not a sample of anything at all.
+- That your confirmation email design needs work before the next class goes out.
+- That most people probably do not read confirmation emails, at least for classes.
+- That at least one relevant person does not, so you cannot assume that everyone does.
 
 <details>
 <summary>After your attempt</summary>
 
-That most people do not read confirmation emails. — One person cannot support “most”. Written that way it will be repeated later without the caveat, and it will be treated as a number.
+Nothing yet, because a single participant is not a sample of anything at all. — Too dismissive. One clear account of a behaviour is a fact about the world; what it cannot give you is prevalence.
 
-Nothing: a single participant is not a sample. — Too dismissive. One clear account of a behaviour is a fact about the world; what it cannot give you is prevalence.
+That your confirmation email design needs work before the next class goes out. — That jumps to a repair. If nobody opens it, better wording is not the answer, and you would have skipped past the finding.
 
-That your email design needs work. — That jumps to a repair. If nobody opens it, better wording is not the answer, and you would have skipped past the finding.
+That most people probably do not read confirmation emails, at least for classes. — One person cannot support “most”. Written that way it will be repeated later without the caveat, and it will be treated as a number.
 
-That at least one person with relevant experience does not, which is enough to make you stop assuming everyone does. — One account cannot say how common it is, and it is real evidence that the behaviour exists. That is usually enough to change a design you were about to build on the opposite assumption.
+That at least one relevant person does not, so you cannot assume that everyone does. — One account cannot say how common it is, and it is real evidence that the behaviour exists. That is usually enough to change a design you were about to build on the opposite assumption.
 
 Improve: Check the limitation box in step 5. If it does not say that this study cannot establish how common anything is, add that sentence and note it in step 5.
 
@@ -454,18 +456,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The easiest people to recruit are two designers you know. Why is that a problem worth writing down?
 
-- It is not a problem, since anyone can attempt a booking task.
-- They read screens professionally, so their fluency is not typical, and the plan should record that limit.
-- You should cancel and wait for perfect participants.
+- It means you should cancel and wait until you can recruit ideal participants instead.
+- It is not a problem, since anyone at all can attempt a booking task and give feedback.
+- They read screens for a living, so their ease is untypical; the plan should record that.
 
 <details>
 <summary>After your attempt</summary>
 
-It is not a problem, since anyone can attempt a booking task. — Anyone can attempt it, and a designer will notice conventions a first-time visitor never sees, which is exactly what you were trying to observe.
+It means you should cancel and wait until you can recruit ideal participants instead. — Waiting for the ideal participant usually means no evidence at all. Run it and record who they were.
 
-They read screens professionally, so their fluency is not typical, and the plan should record that limit. — Convenience is not disqualifying, and it does shape what you can conclude. Recording who you actually reached is what keeps the finding honest later.
+It is not a problem, since anyone at all can attempt a booking task and give feedback. — Anyone can attempt it, and a designer will notice conventions a first-time visitor never sees, which is exactly what you were trying to observe.
 
-You should cancel and wait for perfect participants. — Waiting for the ideal participant usually means no evidence at all. Run it and record who they were.
+They read screens for a living, so their ease is untypical; the plan should record that. — Convenience is not disqualifying, and it does shape what you can conclude. Recording who you actually reached is what keeps the finding honest later.
 
 Improve: Reread your criteria in step 2. If they describe who is easy to reach rather than the experience needed, rewrite them, and note in step 5 what you would record about whoever you actually get.
 
@@ -558,15 +560,41 @@ Write your answer for “What this study cannot tell you, however it goes”. Us
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A volunteer-run repair café is deciding whether to ask people to describe their broken item when they book, or only when they arrive. One volunteer says: “Let’s send a survey to everyone on the mailing list.” Nobody has written down what the café needs to find out.
+
+**Task:** Write the research question this decision needs, choose between an interview about a recent visit and watching someone use the booking page, and explain why that method can reach your question.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Accepts the survey, or picks a method first (“interviews are always best”) without a question, or asks people to predict their own behaviour (“Would you describe your item when booking?”).
+- Adequate: Writes a question whose answer would change the decision (such as what people know about their item before they arrive), picks an interview about their last visit or a task observation, and says what that method reaches that the other cannot.
+- Strong: Adequate, plus names who would count as relevant, one limit (a few accounts cannot show how common anything is) and what to record if nobody is available: a dated access note and a rehearsed guide.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -619,6 +647,66 @@ When the activity is finished, tell me to return to the course answer called “
 
 
 </details>
+<details>
+<summary>Creator review and remediation criteria</summary>
+
+**A clear decision and uncertainty**
+
+Adequate evidence: A decision from Module 1 you cannot yet defend, what getting it wrong costs the person, and a research question whose possible answers would lead to different choices.
+
+0 — No decision, or a method chosen with no question behind it.
+
+1 — A question exists, but no answer to it would change the decision, or the decision is vague.
+
+2 — A specific decision, its stake for the person, and a question whose answers would move it.
+
+3 — As adequate, and the plan says what you would do under two different answers.
+
+Repair: Write the two answers you might get and what you would do after each. If both lead to the same action, rewrite the question. Recheck: The decision, the question and the two-answers note.
+
+**Method matches the question**
+
+Adequate evidence: A chosen method — an interview about a recent experience, watching a task, or both — with a reason naming what it reaches that the other cannot.
+
+0 — No method, or a method with no reason.
+
+1 — A method is named, but the reason is generic (“interviews give insight”) or the method cannot reach the question.
+
+2 — The method fits the question, and the reason says what it reaches that the alternative cannot.
+
+3 — As adequate, and the plan names what the chosen method will miss and how that limits the decision.
+
+Repair: Ask whether the question is about something that already happened elsewhere (interview) or about what this screen does to someone now (task). Change the method if it does not fit, and rewrite the reason. Recheck: The method choice and its reason.
+
+**Participant criteria and limitations**
+
+Adequate evidence: Criteria describing the experience that makes an answer relevant (no names), an honest recruitment status with a dated access note, and a limitation stating what the study cannot show even if it goes perfectly.
+
+0 — No criteria or limitation, or participants are named.
+
+1 — The criteria describe whoever is easiest to reach, the status does not match reality, or the limitation is missing.
+
+2 — Experience-based criteria, a status that matches reality with a dated access note, and a stated limitation. On the rehearsal route, the dated note and the rehearsed materials meet this criterion; no participant is needed.
+
+3 — As adequate, and the plan says what it would record about whoever is actually reached and how that bounds the conclusion.
+
+Repair: Rewrite the criteria as the experience a person needs. Set the status to what is true today, date the access note, and add one sentence on what the study cannot establish. Recheck: The criteria, the status, the access note and the limitation.
+
+**Voluntary participation and minimal data**
+
+Adequate evidence: Consent wording that says what the notes are for, who will read them, when they will be deleted, that the person can skip or stop, and whether anything is recorded; no names, contacts or private booking details anywhere in the plan.
+
+0 — No consent wording, or the plan asks for private or identifying details.
+
+1 — The consent wording leaves out the right to stop, who reads the notes or deletion, or the plan collects more than it needs.
+
+2 — Complete consent wording and a plan that collects only what the question needs, with no names or contacts in the worksheet.
+
+3 — As adequate, and the plan says where any consent record is kept privately and when the notes will be deleted.
+
+Repair: Add the missing consent elements, then remove any detail the question does not need. Recheck: The consent introduction and the data the plan collects.
+
+</details>
 The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. Lesson 2 turns notes into findings, and it supplies practice notes if your session has not happened yet.
@@ -636,7 +724,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 - Start with a decision, not a method. If you need to understand how people prepare for a workshop, a conversation about a recent visit can reveal context. If you need to know whether a materials summary is understandable, observe someone using it. A survey does not automatically answer either question well.
 - Write a research question as an uncertainty: “When do attendees look for preparation instructions?” Then name the evidence that would help and the choice it would influence. This makes it easier to avoid collecting interesting but irrelevant information.
 - Recruit people with experience related to the task, rather than choosing only whoever is easiest to reach. For this small practice study, one willing adult with a recent booking experience can help rehearse your method, but cannot represent the whole audience. Document that limitation.
-- Keep participant access separate from study quality. If nobody is available during this module, improve the plan and do a clearly labelled self-walkthrough. Do not turn a fictional persona or an AI-generated interview into participant evidence. Never collect private booking or payment details for this exercise.
+- Keep participant access separate from study quality. If nobody is available during this module, improve the plan, rehearse it aloud alone and record a dated access note; that is a complete result for this lesson. Do not turn a fictional persona or an AI-generated interview into participant evidence. Never collect private booking or payment details for this exercise.
 
 [GOV.UK: how discovery works](https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works).
 
@@ -724,11 +812,11 @@ Use consented, anonymised notes, or the supplied practice notes in this lesson. 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
 
 
-### Keep these source notes beside you
+### Keep this practice material beside you
 
 Section: learn. Stable action: supplied-material.
 
-Use your own consented notes, or the labelled training notes below. Do not mix their source labels.
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
 
 - Simulated training data, not real participants or research. Keep these labels in every finding.
 - N01 · S1 looked for the materials list the evening before the fictional pottery class.
@@ -803,7 +891,7 @@ Six numbered observations, each with the note or session it came from, labelled 
 - Assign each observation an ID.
 - Label the table “Real session” or “Simulated training data.”
 
-**Start here:** If you have no session of your own, choose the supplied notes and expand the four S1 to S4 lines into separate entries.
+**Start here:** If you have no session of your own, choose the supplied notes and copy N01 to N06 into separate entries, keeping each S label.
 
 **Enough:** Every entry could be checked against a source, and none contains the word because.
 
@@ -850,11 +938,11 @@ This label travels with every finding you write below.
 
 Section: practice-plan. Stable action: write-note-1.
 
-One thing only. If a line contains “because” or “so”, the second half is probably an interpretation.
+One thing only. If a line contains “because” or “so”, the second half is probably an interpretation. From your own session, write a de-identified one-line summary; raw notes stay in a private file or on paper with a date to delete them.
 
 **Answer:** N01 · what happened
 
-One thing only. If a line contains “because” or “so”, the second half is probably an interpretation.
+One thing only. If a line contains “because” or “so”, the second half is probably an interpretation. From your own session, write a de-identified one-line summary; raw notes stay in a private file or on paper with a date to delete them.
 
 <details>
 <summary>Example</summary>
@@ -868,11 +956,11 @@ Example (made up, from the supplied notes): S1 looked for the materials list the
 
 Section: practice-plan. Stable action: write-note-1-source.
 
-The session or supplied note it came from: S1, S2, or your own anonymous ID.
+The session or supplied note it came from: S1, S2, or a code you made up for your own session. Never a name.
 
 **Answer:** N01 · source
 
-The session or supplied note it came from: S1, S2, or your own anonymous ID.
+The session or supplied note it came from: S1, S2, or a code you made up for your own session. Never a name.
 
 
 ### N02 · what happened
@@ -1072,11 +1160,11 @@ Write your answer for “Group 2 · the note numbers in it”. Use the task inst
 
 Section: practice-plan. Stable action: write-contradiction.
 
-Keep it. The exception is usually where the real finding is.
+Keep it, by its note number and a short de-identified summary. The exception is often where the real finding is.
 
 **Answer:** The note that does not fit either group
 
-Keep it. The exception is usually where the real finding is.
+Keep it, by its note number and a short de-identified summary. The exception is often where the real finding is.
 
 <details>
 <summary>Example</summary>
@@ -1110,21 +1198,21 @@ Supplied practice notes. S1 looked for the materials list the evening before. S2
 
 Which finding do these four notes actually support?
 
-- Nobody reads the instructions before a class.
-- People want a reminder the day before the class.
-- People prepare at different moments, from before booking to the journey itself, so no single moment can be assumed.
-- Most people prepare at the last minute.
+- These four checked at different moments, or not at all, so no single moment can be assumed.
+- Most people prepare at the last minute, usually on the way to the class itself.
+- People want a reminder the day before the class, sent straight to their phone.
+- Nobody reads the instructions before a class, so the list has to arrive later on.
 
 <details>
 <summary>After your attempt</summary>
 
-Nobody reads the instructions before a class. — S4 read them before booking. One counter-example is enough to sink a claim written as “nobody”, and it was in front of you.
+These four checked at different moments, or not at all, so no single moment can be assumed. — It holds all four accounts, including S3 who did not check at all, and it says something a design has to answer: the information cannot live at one moment only.
 
-People want a reminder the day before the class. — Nobody said this. It is a recommendation dressed as a finding, and it fits only two of the four accounts.
+Most people prepare at the last minute, usually on the way to the class itself. — Two of four is not “most”, and four accounts cannot establish proportions at all. The word most is doing work the evidence cannot support.
 
-People prepare at different moments, from before booking to the journey itself, so no single moment can be assumed. — It holds all four accounts, including S3 who did not check at all, and it says something a design has to answer: the information cannot live at one moment only.
+People want a reminder the day before the class, sent straight to their phone. — Nobody said this. It is a recommendation dressed as a finding, and it fits only two of the four accounts.
 
-Most people prepare at the last minute. — Two of four is not “most”, and four accounts cannot establish proportions at all. The word most is doing work the evidence cannot support.
+Nobody reads the instructions before a class, so the list has to arrive later on. — S4 read them before booking. One counter-example is enough to sink a claim written as “nobody”, and it was in front of you.
 
 Write your own two findings the same way: they must survive every note you have, including the one that did not fit.
 
@@ -1157,11 +1245,11 @@ Write your answer for “Finding 1 · note numbers that support it”. Use the t
 
 Section: practice-plan. Stable action: write-finding-1-against.
 
-If nothing does, look again; you may have written a summary rather than a finding.
+Name the note numbers and say in a few words why they argue against it. If nothing does, look again; you may have written a summary rather than a finding.
 
 **Answer:** Finding 1 · what argues against it
 
-If nothing does, look again; you may have written a summary rather than a finding.
+Name the note numbers and say in a few words why they argue against it. If nothing does, look again; you may have written a summary rather than a finding.
 
 
 ### Finding 1 · how sure are you?
@@ -1238,21 +1326,21 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Which of these belongs in the observation column?
 
+- Send a reminder the day before the class starts.
+- People prepare for classes at the last minute.
 - S2 was disorganised about preparing for the class.
 - S2 searched the confirmation email during the journey.
-- Add a reminder the day before.
-- People prepare at the last minute.
 
 <details>
 <summary>After your attempt</summary>
 
+Send a reminder the day before the class starts. — A recommendation, and the furthest thing from an observation. It belongs at the end, attached to a finding with sources.
+
+People prepare for classes at the last minute. — A finding, and a shaky one. It generalises several notes into a claim about people, which is a later step and needs its counter-evidence.
+
 S2 was disorganised about preparing for the class. — That is a judgement about a person. It cannot be checked, and it will quietly become the reason for a design decision later.
 
 S2 searched the confirmation email during the journey. — It says what happened and nothing about why. Anyone reading it can check it against the source note.
-
-Add a reminder the day before. — A recommendation, and the furthest thing from an observation. It belongs at the end, attached to a finding with sources.
-
-People prepare at the last minute. — A finding, and a shaky one. It generalises several notes into a claim about people, which is a later step and needs its counter-evidence.
 
 Improve: Reread your six entries in step 2. Move anything containing because, wanted, or a judgement about the person into an interpretation or a finding, then record the change in step 5.
 
@@ -1271,21 +1359,21 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Five notes support your finding and one contradicts it. What do you do with the sixth?
 
-- Start again with different groups.
-- Change the finding until everything agrees.
-- Leave it out: five against one is a clear pattern.
-- Keep it visible beside the finding and say what it means for your confidence.
+- Leave it out of the finding, since five against one is already a clear pattern.
+- Reword the finding until every one of the six notes agrees with it.
+- Keep it beside the finding and say what it does to your confidence.
+- Start the grouping again with different groups so that it fits.
 
 <details>
 <summary>After your attempt</summary>
 
-Start again with different groups. — Regrouping to escape a contradiction is how you end up with tidy findings nobody can use.
+Leave it out of the finding, since five against one is already a clear pattern. — Counting notes is not measuring. With six accounts, one clear counter-example matters more than the tally.
 
-Change the finding until everything agrees. — That usually produces something so vague it cannot be wrong. Better to keep a sharp finding and state where it fails.
+Reword the finding until every one of the six notes agrees with it. — That usually produces something so vague it cannot be wrong. Better to keep a sharp finding and state where it fails.
 
-Leave it out: five against one is a clear pattern. — Counting notes is not measuring. With six accounts, one clear counter-example matters more than the tally.
+Keep it beside the finding and say what it does to your confidence. — The exception is where you learn something. Hiding it makes the finding look stronger and makes you worse at predicting what happens next.
 
-Keep it visible beside the finding and say what it means for your confidence. — The exception is where you learn something. Hiding it makes the finding look stronger and makes you worse at predicting what happens next.
+Start the grouping again with different groups so that it fits. — Regrouping to escape a contradiction is how you end up with tidy findings nobody can use.
 
 Improve: Check the counter-evidence boxes in step 4. If either says none, look again for the note that does not fit and write it in, then say what changed in step 5.
 
@@ -1304,18 +1392,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You used the supplied practice notes. How may this work appear later in a portfolio?
 
-- It should not appear at all.
-- As research findings, since the analysis work was real.
-- Clearly labelled as a training exercise with supplied notes, never as interviews you conducted.
+- It should not appear in a portfolio at all, because the notes were made up.
+- Labelled as a training exercise with supplied notes, not as interviews you ran.
+- As research findings, since the analysis you did on the notes was real work.
 
 <details>
 <summary>After your attempt</summary>
 
-It should not appear at all. — It can appear, labelled. A worked synthesis with supplied notes shows exactly the skill a reviewer wants to see.
+It should not appear in a portfolio at all, because the notes were made up. — It can appear, labelled. A worked synthesis with supplied notes shows exactly the skill a reviewer wants to see.
 
-As research findings, since the analysis work was real. — The analysis was real and the sources were invented. Presented as findings, the claim about people is false regardless of how careful the method was.
+Labelled as a training exercise with supplied notes, not as interviews you ran. — The method is genuinely yours to show. The participants are not, and a reader who discovers that later will doubt everything else you wrote.
 
-Clearly labelled as a training exercise with supplied notes, never as interviews you conducted. — The method is genuinely yours to show. The participants are not, and a reader who discovers that later will doubt everything else you wrote.
+As research findings, since the analysis you did on the notes was real work. — The analysis was real and the sources were invented. Presented as findings, the claim about people is false regardless of how careful the method was.
 
 Improve: Check the source label in step 2 and the wording of your findings. If a finding reads as though real people said it, add the supplied-notes label to the finding itself, then record the change in step 5.
 
@@ -1355,15 +1443,41 @@ Possible. It follows from a finding; it is not proven by it.
 Possible. It follows from a finding; it is not proven by it.
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: four practice notes (simulated training data) from a community allotment. A1 read the watering rota before taking a plot. A2 asked a neighbour about the rota after a month. A3 never looked at the rota and watered every day. A4 found the rota pinned to the shed gate in the first week.
+
+**Task:** Write one finding these notes support, with the note IDs behind it and any note that argues against it, and explain why your finding claims no more than four notes can show.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Writes a claim the notes cannot support (“nobody reads the rota”, “most people ask neighbours”) or a recommendation (“put the rota online”), with no note IDs.
+- Adequate: Writes a finding that holds for all four — for example, people learn about the rota at different times and in different places — cites A1 to A4, keeps A3 visible, and labels the notes as practice material.
+- Strong: Adequate, plus says what four notes cannot show (how common each route is), names a question the notes cannot answer, and writes one implication as possible rather than proven.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -1414,6 +1528,66 @@ When the activity is finished, tell me to return to the course answer called “
 - A group title is a hypothesis about a pattern. Keep contradictory notes visible instead of discarding them.
 
 
+
+</details>
+<details>
+<summary>Creator review and remediation criteria</summary>
+
+**Sources can be traced**
+
+Adequate evidence: Numbered observations, each with a source label (a session code or a supplied note), and findings that cite the note numbers that support them.
+
+0 — Findings with no note numbers, or observations with no sources.
+
+1 — Some observations lack sources, or a finding cites notes that do not support it.
+
+2 — Every observation has a source, and every finding names its supporting note numbers.
+
+3 — As adequate, and a reader could follow one implication back through a finding to a single note without asking you.
+
+Repair: Give every observation a number and a source. For each finding, list the note numbers that support it, and mark any finding with none as unsupported. Recheck: The numbered observations and the findings with their note numbers.
+
+**Observations and interpretations differ**
+
+Adequate evidence: Observation lines describe what happened with no “because”, judgement or recommendation in them; interpretations and implications sit in their own boxes.
+
+0 — Observations mix in judgements (“disorganised”) or recommendations (“add a reminder”).
+
+1 — Most lines are observations, but one or two carry a reason or a judgement inside them.
+
+2 — Every observation line could be checked against its source, and interpretations are kept separate.
+
+3 — As adequate, and the work shows one raw line split into an observation and an interpretation, with the reason.
+
+Repair: Find every observation containing because, so, wanted or a judgement about the person, and move the second half to an interpretation or a finding. Recheck: The six observation lines.
+
+**Counter-evidence is retained**
+
+Adequate evidence: A note that fits neither group kept visible, each finding naming what argues against it, and a confidence level that reflects that.
+
+0 — Contradicting notes are dropped, or findings claim “all”, “most” or “nobody”.
+
+1 — A contradiction is noted but not linked to any finding, or the confidence ignores it.
+
+2 — Each finding names its counter-evidence, and its confidence reflects it.
+
+3 — As adequate, and the work suggests what the exception might mean, such as a different context.
+
+Repair: For each finding, find the note that fits least and write it under “what argues against it”. Remove most, all and nobody. Recheck: The two findings with their counter-evidence and confidence.
+
+**Simulated data is labelled**
+
+Adequate evidence: The source type is set, and any finding drawn from supplied notes says “simulated training data” where it is written; real notes appear only as de-identified summaries, kept apart from supplied ones.
+
+0 — Supplied notes are presented as interviews or real findings.
+
+1 — The source type is set, but findings drawn from supplied notes do not repeat the label.
+
+2 — The label travels with every finding, and real and supplied notes are kept apart. Working only from the supplied notes meets this criterion in full.
+
+3 — As adequate, and the work says plainly what the exercise practised (the method) and what it cannot claim (anything about real people).
+
+Repair: Add the supplied-notes label to each finding drawn from them, and separate any real notes from supplied ones. Recheck: The source type and the wording of both findings.
 
 </details>
 The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
@@ -1541,11 +1715,11 @@ One finding from Lesson 2 with its limits still attached.
 
 Section: practice-plan. Stable action: write-finding.
 
-Copy it from Lesson 2, with its source label.
+Copy it from Lesson 2, with its source label. No Lesson 2 finding? Use the practice finding in the starting route and keep it labelled as practice.
 
 **Answer:** The finding
 
-Copy it from Lesson 2, with its source label.
+Copy it from Lesson 2, with its source label. No Lesson 2 finding? Use the practice finding in the starting route and keep it labelled as practice.
 
 
 ### What it cannot tell you
@@ -1805,21 +1979,21 @@ Two supplied hypotheses for the same made-up change. A: “If the total cost app
 
 Which one can a short session actually test, and why?
 
-- Neither: a prototype cannot test anything about cost.
-- B, because it names something you could watch someone do or fail to do.
-- A, because liking the experience is what ultimately matters.
-- Both, if you ask a satisfaction question at the end.
+- A, because liking the experience is what ultimately matters to the business.
+- B, because it names something you could watch a person do or fail to do.
+- Neither, because a paper prototype cannot test anything about cost.
+- Both, as long as you ask a satisfaction question at the end of each session.
 
 <details>
 <summary>After your attempt</summary>
 
-Neither: a prototype cannot test anything about cost. — It can test whether the information can be found and understood, which is precisely what B claims. What it cannot test is whether more people would book.
+A, because liking the experience is what ultimately matters to the business. — Liking is real and you cannot observe it, and asked directly people are kind to the person who made the thing. Nothing in a session would settle it.
 
-B, because it names something you could watch someone do or fail to do. — You can hand someone the task and see whether they can answer without going back. It can also come out badly, which is what makes it a test.
+B, because it names something you could watch a person do or fail to do. — You can hand someone the task and see whether they can answer without going back. It can also come out badly, which is what makes it a test.
 
-A, because liking the experience is what ultimately matters. — Liking is real and you cannot observe it, and asked directly people are kind to the person who made the thing. Nothing in a session would settle it.
+Neither, because a paper prototype cannot test anything about cost. — It can test whether the information can be found and understood, which is precisely what B claims. What it cannot test is whether more people would book.
 
-Both, if you ask a satisfaction question at the end. — Adding a rating to B does not make A testable; it adds a number with no meaning to a session of one or two people.
+Both, as long as you ask a satisfaction question at the end of each session. — Adding a rating to B does not make A testable; it adds a number with no meaning to a session of one or two people.
 
 Write yours in the same shape, then write the disconfirming signal before you test anything.
 
@@ -1885,18 +2059,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You score three options for effort out of five and pick the lowest. Is that measured evidence?
 
-- No. It is your estimate written as a number, and it should keep the reason beside it.
-- Yes, effort estimates are standard practice in product teams.
-- Yes, if you use the same scale for all three.
+- It is an estimate written as a number, so the reason behind it should stay beside it.
+- It counts as measured once all three use the same five-point scale consistently.
+- It counts as evidence, because effort scores are standard practice in product teams.
 
 <details>
 <summary>After your attempt</summary>
 
-No. It is your estimate written as a number, and it should keep the reason beside it. — Numbers look decided. Unless something measured the effort, the score is a judgement, and the reason is the part a reader can argue with.
+It is an estimate written as a number, so the reason behind it should stay beside it. — Numbers look decided. Unless something measured the effort, the score is a judgement, and the reason is the part a reader can argue with.
 
-Yes, effort estimates are standard practice in product teams. — They are standard and they are still estimates. Teams that forget this build plans on numbers nobody checked.
+It counts as measured once all three use the same five-point scale consistently. — A consistent scale makes estimates comparable with each other. It does not turn any of them into a measurement.
 
-Yes, if you use the same scale for all three. — A consistent scale makes estimates comparable with each other. It does not turn any of them into a measurement.
+It counts as evidence, because effort scores are standard practice in product teams. — They are standard and they are still estimates. Teams that forget this build plans on numbers nobody checked.
 
 Improve: Reread your effort lines in step 2. Add the reason behind each estimate, and record the change in step 5.
 
@@ -1915,18 +2089,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your hypothesis says “users will find it easier”. What is missing?
 
-- Nothing, as long as you ask them afterwards whether it was easier.
-- Something you could watch: what a person would do or say that would show it, and what would show the opposite.
-- A number, such as a percentage improvement.
+- Something you could watch that would show it working, and what would show it failing.
+- Nothing, as long as you ask each person afterwards whether it felt easier to them.
+- A number, such as the percentage improvement in ease that you expect to see.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing, as long as you ask them afterwards whether it was easier. — Asked by the person who designed it, most people say yes. That answer cannot separate a good change from a polite participant.
+Something you could watch that would show it working, and what would show it failing. — Easier is a summary of an experience, not an event. Without an observable version, any session can be read as a success.
 
-Something you could watch: what a person would do or say that would show it, and what would show the opposite. — Easier is a summary of an experience, not an event. Without an observable version, any session can be read as a success.
+Nothing, as long as you ask each person afterwards whether it felt easier to them. — Asked by the person who designed it, many people say yes to be kind. That answer cannot separate a good change from a polite participant.
 
-A number, such as a percentage improvement. — A number you cannot collect is worse than a vague claim, because it looks rigorous. One or two people cannot produce a rate.
+A number, such as the percentage improvement in ease that you expect to see. — A number you cannot collect is worse than a vague claim, because it looks rigorous. One or two people cannot produce a rate.
 
 Improve: Rewrite your hypothesis in step 4 so its last part is something you could see, then fill the disconfirming signal and note the change in step 5.
 
@@ -1996,15 +2170,41 @@ The smallest set of screens and states that lets someone attempt the task.
 The smallest set of screens and states that lets someone attempt the task.
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: practice notes (simulated) from a city museum’s free timed-ticket booking: of four visitors, two went to the wrong entrance, one asked a guard, and one followed a sign. The team lists three options: a map printed on the ticket, a member of staff at both doors, and naming the entrance in the booking confirmation.
+
+**Task:** Choose the option you would test first and write a hypothesis that ends in something you could watch. Explain why your choice is worth testing before the others.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Picks the option that is most fun to design, or writes “it will improve visitor satisfaction”, with no observable signal and nothing that could show it failing.
+- Adequate: Chooses one option for a stated reason tied to the notes and writes “If …, a first-time visitor can find the right entrance without asking staff”, with a signal that would show it failing.
+- Strong: Adequate, plus labels effort as an estimate with its reason, lists what the test leaves out, and notes that four simulated notes cannot show how common wrong-entrance trips are.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -2057,6 +2257,66 @@ When the activity is finished, tell me to return to the course answer called “
 
 
 </details>
+<details>
+<summary>Creator review and remediation criteria</summary>
+
+**Several meaningfully different options**
+
+Adequate evidence: Three options that would succeed or fail for different reasons — at least one without a screen — each with its expected effect for the person and an effort estimate with its reason.
+
+0 — One option, or none described as an outcome for the person.
+
+1 — Three options that are variations of one idea (the same list in three places), or estimates with no reasons.
+
+2 — Three options that differ in kind, each with an expected effect and a reasoned estimate.
+
+3 — As adequate, and the comparison names which option is cheapest to be wrong about, and why.
+
+Repair: Ask whether two options would fail for the same reason. If so, replace one with a change somewhere else — what the person is told, what the organiser does, or no screen at all. Recheck: The three options with their effect and effort lines.
+
+**Choice linked to evidence**
+
+Adequate evidence: The chosen option cites the finding it answers, with that finding’s source label and limits still attached, and states what the choice costs.
+
+0 — No choice, or a choice with no link to a finding.
+
+1 — The choice names a finding but drops its limits or source label, or rests on preference.
+
+2 — The choice cites its finding with source label and limits, and names its cost. A finding from the supplied practice notes, kept labelled, meets this criterion.
+
+3 — As adequate, and the choice explains why it teaches more than the others even if it is less appealing to build.
+
+Repair: Copy the finding’s source label and limits beside the choice, and finish the sentence “I chose this because the finding…”. Recheck: The finding, its limits and the choice with its reason.
+
+**Bounded scope**
+
+Adequate evidence: An excluded list naming what the test leaves out, so that what remains is the smallest set that could show the signal.
+
+0 — No scope stated, or the test covers several changes at once.
+
+1 — An excluded list exists, but the test still bundles changes unrelated to the hypothesis.
+
+2 — One change under test, with unrelated work written down as excluded.
+
+3 — As adequate, and the excluded list includes something you wanted to do, with the reason it waits.
+
+Repair: Move everything not needed to observe your signal into the excluded list. Recheck: The excluded list and what remains in the test.
+
+**Observable signal and counter-evidence**
+
+Adequate evidence: A hypothesis in the form “If [change], [who] can [observable behaviour]”, a success signal, a disconfirming signal written before testing, and a task with no route in it.
+
+0 — No hypothesis, or one about liking or satisfaction.
+
+1 — A hypothesis exists but ends in a feeling, or the disconfirming signal is missing.
+
+2 — An observable hypothesis with both signals and a neutral task.
+
+3 — As adequate, and the signals say what you would do next under each result.
+
+Repair: Rewrite the last part of the hypothesis as something a person in the room could see, then write what you would see if it failed. Recheck: The hypothesis, both signals and the task.
+
+</details>
 The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. Lesson 4 builds only the states your task needs, so keep the task wording exactly as you wrote it.
@@ -2105,7 +2365,7 @@ Evidence is something you can point to and check. A guess can still be useful, b
 - **State:** One screen as the person sees it at one moment, including empty, full and error versions.
 - **Out of scope:** Something the prototype cannot do. Named in advance it is a boundary; discovered mid-session it is a broken test.
 
-**Quick example.** A supplied self-pilot from the same made-up prototype. Walking the task, the author found: the class list card had no prices on it; pressing Reserve led to a card that did not exist yet; and the full-class card said “Sorry, full” with nothing else on it.
+**Quick example.** A supplied self-pilot from the same made-up prototype. Walking the task, the author found three things: the class list card had no prices on it; pressing Reserve led to a card that did not exist yet; and the full-class card said “Sorry, full” with nothing else on it, although the plan said that card would offer Sunday’s class instead.
 
 The reader demonstrates and guides the task before asking for “The hypothesis you are testing”.
 
@@ -2173,7 +2433,7 @@ The hypothesis, the screens the task needs, and one thing going wrong.
 
 **Start here:** Walk your task in your head and write down only the screens you actually pass through.
 
-**Enough:** Every screen you listed is needed to attempt the task, and one shows something going wrong.
+**Enough:** Every screen you listed is needed to attempt the task, and one shows something going wrong with a way forward on it.
 
 **Fidelity:** How finished a prototype looks and behaves. Choose the least that can answer your question.
 
@@ -2313,11 +2573,11 @@ Write your answer for “S04 · what the person does to leave it, and where they
 
 Section: practice-plan. Stable action: write-recovery.
 
-A full class, a mistyped email, a dropped connection. Draw the card before the session, not during it.
+A full class, a mistyped email, a dropped connection. Draw the card before the session, not during it, and put the way forward on it — another date, a fix, a way back — not just the bad news.
 
 **Answer:** The one thing that goes wrong, and how they recover
 
-A full class, a mistyped email, a dropped connection. Draw the card before the session, not during it.
+A full class, a mistyped email, a dropped connection. Draw the card before the session, not during it, and put the way forward on it — another date, a fix, a way back — not just the bad news.
 
 
 ### Build
@@ -2378,36 +2638,36 @@ What broke when you walked it yourself, and what you fixed. This is a self-pilot
 
 **Start here:** Do the task yourself, slowly, and stop every time you have to explain something to yourself.
 
-**Enough:** Nothing is missing that would force you to invent a screen while someone is watching.
+**Enough:** Nothing is missing that would force you to invent a screen while someone is watching, and the failure card offers a way forward.
 
-**Self-pilot:** Walking your own prototype to find broken links and missing screens. It checks the materials, never the design.
+**Self-pilot:** Walking your own prototype to find broken links and missing screens. It checks the materials; it cannot tell you how a first-time visitor would use the design.
 
 
 ### Try a supplied example
 
 Section: practice-plan. Stable action: step-3-try.
 
-A supplied self-pilot from the same made-up prototype. Walking the task, the author found: the class list card had no prices on it; pressing Reserve led to a card that did not exist yet; and the full-class card said “Sorry, full” with nothing else on it.
+A supplied self-pilot from the same made-up prototype. Walking the task, the author found three things: the class list card had no prices on it; pressing Reserve led to a card that did not exist yet; and the full-class card said “Sorry, full” with nothing else on it, although the plan said that card would offer Sunday’s class instead.
 
-Which of those three is not a prototype bug to fix before the session?
+Which of those three can safely stay as it is for the session?
 
-- The full-class card: its emptiness is a design problem worth watching someone hit.
-- The missing card after Reserve: you can describe it aloud instead.
-- All three should be fixed, since a session should run smoothly.
-- The missing prices: the person can ask you what things cost.
+- The missing prices: the person can simply ask you what things cost.
+- The missing card after Reserve: you can describe that screen aloud.
+- None of them: each one leaves the person stuck or forces you to improvise.
+- The full-class card: an empty failure is worth watching someone hit.
 
 <details>
 <summary>After your attempt</summary>
 
-The full-class card: its emptiness is a design problem worth watching someone hit. — A missing price and a missing card stop the session working at all. A bare failure message is the design as it stands, and what someone does when they meet it is exactly what you want to see.
+The missing prices: the person can simply ask you what things cost. — Asking you turns the facilitator into part of the interface, and the task was about finding the cost. That has to be on the card.
 
-The missing card after Reserve: you can describe it aloud instead. — Describing it aloud means you are designing during the session and the person is reacting to your narration rather than the design.
+The missing card after Reserve: you can describe that screen aloud. — Describing it aloud means you are designing during the session and the person is reacting to your narration rather than the design.
 
-All three should be fixed, since a session should run smoothly. — Smoothness is not the goal. Fixing the bare failure card would remove the very moment most likely to teach you something.
+None of them: each one leaves the person stuck or forces you to improvise. — A missing price and a missing card stop the task. The bare full card does too: it is a dead end, it was planned to offer Sunday, and without that nobody can show you whether the total was clear enough to compare. Fix all three before anyone else sees it.
 
-The missing prices: the person can ask you what things cost. — Asking you turns the facilitator into part of the interface, and the task was about finding the cost. That has to be on the card.
+The full-class card: an empty failure is worth watching someone hit. — You already know an empty failure card is a dead end: Module 1 Lesson 4 called it one. Someone stuck there cannot reach Sunday, so you learn nothing new about the total you set out to test. Draw the recovery first.
 
-Separate your own findings the same way: repair what stops the task, and leave the design weaknesses in place to be observed.
+Sort your own findings the same way: repair anything that stops the task or departs from your plan, including a failure card with no way forward. Leave wording or layout you are unsure about in place; that is what the session is for.
 
 </details>
 
@@ -2505,18 +2765,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your paper prototype works well in the session. What may you claim from that?
 
-- That the intended behaviour made sense to that person on paper, which says nothing about a built version.
-- That the design works and can be built as drawn.
-- That the flow is accessible, since you read every card aloud.
+- That the design works for people and can now be built exactly as it was drawn.
+- That the flow is accessible, since you read every card aloud as the person went.
+- That the intended steps made sense to that person on paper, not that a build would work.
 
 <details>
 <summary>After your attempt</summary>
 
-That the intended behaviour made sense to that person on paper, which says nothing about a built version. — Paper reaches comprehension and sequence. Speed, keyboard access, screen-reader output and anything a server does are all outside what you just saw.
+That the design works for people and can now be built exactly as it was drawn. — A built version introduces waiting, errors, focus order and states you never drew. Those are where designs usually fail.
 
-That the design works and can be built as drawn. — A built version introduces waiting, errors, focus order and states you never drew. Those are where designs usually fail.
+That the flow is accessible, since you read every card aloud as the person went. — Reading aloud is you, not the technology. Whether a screen reader would announce it in that order is a property of code you have not written.
 
-That the flow is accessible, since you read every card aloud. — Reading aloud is you, not the technology. Whether a screen reader would announce it in that order is a property of code you have not written.
+That the intended steps made sense to that person on paper, not that a build would work. — Paper reaches comprehension and sequence. Speed, keyboard access, screen-reader output and anything a server does are all outside what you just saw.
 
 Improve: Reread your limitations in step 5. If it does not name keyboard and screen-reader behaviour and anything a server would do, add them and note the change.
 
@@ -2535,18 +2795,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your task card says: “Use the filter to find Saturday’s pottery class and press Reserve.” What is wrong?
 
-- It is too long for someone to remember.
-- It contains the route, so you will watch someone follow instructions rather than find their way.
-- Nothing: being specific stops the person getting lost.
+- Nothing: being specific stops the person getting lost and keeps the session short.
+- It names the route, so you will watch someone follow orders, not find their own way.
+- It is too long for someone to hold in mind while they work through the prototype.
 
 <details>
 <summary>After your attempt</summary>
 
-It is too long for someone to remember. — Length is a small matter; you can leave the card with them. The route inside it is the problem.
+Nothing: being specific stops the person getting lost and keeps the session short. — Getting lost is the finding. If you steer them past it, you have removed the only part that could have taught you something.
 
-It contains the route, so you will watch someone follow instructions rather than find their way. — Naming the filter and the button hands over both decisions you wanted to observe. The session becomes a test of whether they can follow directions.
+It names the route, so you will watch someone follow orders, not find their own way. — Naming the filter and the button hands over both decisions you wanted to observe. The session becomes a test of whether they can follow directions.
 
-Nothing: being specific stops the person getting lost. — Getting lost is the finding. If you steer them past it, you have removed the only part that could have taught you something.
+It is too long for someone to hold in mind while they work through the prototype. — Length is a small matter; you can leave the card with them. The route inside it is the problem.
 
 Improve: Rewrite your task in step 4 as a goal and a situation with no interface words, then record the change in step 5.
 
@@ -2565,18 +2825,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You have one evening. Do you spend it drawing more screens or on the failure card and the reset?
 
-- Neither: colour and typography make people take it seriously.
-- More screens, so the person can explore naturally.
-- The failure card and the reset, because the session collapses without them.
+- Neither: colour and typography are what make people take a prototype seriously.
+- More screens, so the person can explore the prototype naturally, as they would at home.
+- The failure card with its way forward, and the reset, because the test needs both.
 
 <details>
 <summary>After your attempt</summary>
 
-Neither: colour and typography make people take it seriously. — Polish on paper mostly buys politeness. People criticise a rough sketch more freely, which is what you want.
+Neither: colour and typography are what make people take a prototype seriously. — Polish on paper mostly buys politeness. People criticise a rough sketch more freely, which is what you want.
 
-More screens, so the person can explore naturally. — Exploration is pleasant and it is not the task. More surface makes every observation harder to attribute.
+More screens, so the person can explore the prototype naturally, as they would at home. — Exploration is pleasant and it is not the task. More surface makes every observation harder to attribute.
 
-The failure card and the reset, because the session collapses without them. — A missing failure card means improvising mid-session; no reset means the second attempt is not comparable. Extra screens rarely change what you learn.
+The failure card with its way forward, and the reset, because the test needs both. — A failure card with no way forward is a dead end you would have to rescue mid-session; no reset means the second attempt is not comparable. Extra screens rarely change what you learn.
 
 Improve: Check step 1 and step 4: if you have no failure card or no reset, add them before any session, then note it in step 5.
 
@@ -2629,15 +2889,41 @@ Write a file location, or describe where you keep the paper version. A photo is 
 Write a file location, or describe where you keep the paper version. A photo is optional; nothing is uploaded here.
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: You are making a paper prototype to test whether visitors to a climbing wall’s booking page can find the total price for two people, including shoe hire. You have drawn a home page, a search page, a sign-in page, a session list, a session details card and a “session full” card that says only “Full”.
+
+**Task:** Decide which cards this test needs and what you would change on the “Full” card before anyone tries it. Explain why each decision serves the question about total price.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps every card because a fuller prototype feels more realistic, or leaves “Full” as a bare dead end to “see what happens”.
+- Adequate: Keeps the session list, the details card and the full card, cuts sign-in and search or marks them out of scope, and adds a way forward to the full card, such as the next free session, explaining each choice against the question.
+- Strong: Adequate, plus writes a neutral task with no route in it, plans a reset between attempts, and notes that paper cannot show real payment or screen-reader behaviour.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -2668,7 +2954,7 @@ State: One screen as the person sees it at one moment, including empty, full and
 Out of scope: Something the prototype cannot do. Named in advance it is a boundary; discovered mid-session it is a broken test.
 
 Supplied practice material (fictional or labelled practice, not my research):
-A supplied self-pilot from the same made-up prototype. Walking the task, the author found: the class list card had no prices on it; pressing Reserve led to a card that did not exist yet; and the full-class card said “Sorry, full” with nothing else on it.
+A supplied self-pilot from the same made-up prototype. Walking the task, the author found three things: the class list card had no prices on it; pressing Reserve led to a card that did not exist yet; and the full-class card said “Sorry, full” with nothing else on it, although the plan said that card would offer Sunday’s class instead.
 
 Activity: Use the supplied case to ask me whether each statement is a fact, a guess or an open question. After I answer, explain the distinction with one everyday example.
 
@@ -2688,6 +2974,66 @@ When the activity is finished, tell me to return to the course answer called “
 - Prepare failure and recovery cards before the pilot. A paper prototype cannot establish keyboard or screen-reader behavior.
 
 
+
+</details>
+<details>
+<summary>Creator review and remediation criteria</summary>
+
+**Prototype addresses the hypothesis**
+
+Adequate evidence: The hypothesis carried from Lesson 3 and a list of three or four screens, each needed to attempt the task, with one failure card that shows a way forward.
+
+0 — No hypothesis, or screens unrelated to it.
+
+1 — The prototype includes screens the task does not need, or lacks the screen where the signal would be seen.
+
+2 — Only the screens the task needs, including a failure card with a way forward.
+
+3 — As adequate, and the work says which screen the signal will be seen on, and what was cut and why.
+
+Repair: Walk the task and cross out any screen you never pass through; add the one the signal needs. Recheck: The screen list and the hypothesis.
+
+**Relevant actions and recovery work**
+
+Adequate evidence: Every action on the task path leads somewhere, the failure card offers another date, a fix or a way back, invented content is marked, and the self-pilot’s fixes are recorded.
+
+0 — Actions lead nowhere, or there is no failure card.
+
+1 — A dead end remains — including a failure card that only reports bad news — or the self-pilot found breaks that were not fixed.
+
+2 — The primary and recovery paths both work in a self-pilot, fixes are recorded, and each dead control has a sentence ready.
+
+3 — As adequate, and the self-pilot separates bugs fixed now from wording or layout deliberately left in place to observe.
+
+Repair: Rerun the self-pilot along the failure path. If any card has no way forward, draw it, then record what you fixed. Recheck: The pilot findings, the fixes and the failure card.
+
+**Scenario avoids instructions to the answer**
+
+Adequate evidence: A task card stating a goal and a situation with no button, link or filter named, and a reset that returns every card to the start.
+
+0 — No task card, or a card that lists the steps to take.
+
+1 — The card names a control or the route, or there is no reset.
+
+2 — A goal-and-situation task with no interface words, and a written reset.
+
+3 — As adequate, and the work notes how the invented situation might shape what people do.
+
+Repair: Cross out every interface word on the task card and replace it with what the person wants to achieve. Recheck: The task card and the reset.
+
+**Limitations documented**
+
+Adequate evidence: A list of what paper cannot establish — keyboard and screen-reader behaviour, real payment, speed, anything a server does — and the walk-through labelled as a self-pilot.
+
+0 — No limitations, or the self-pilot is reported as a test with a person.
+
+1 — Limitations are vague, or keyboard, screen-reader or server behaviour is missing.
+
+2 — Specific limitations listed, and the self-pilot labelled as such.
+
+3 — As adequate, and each limitation names what a later build or session would need to check it.
+
+Repair: Add keyboard, screen-reader, payment and server behaviour to the list, and label your walk-through as a self-pilot. Recheck: The limitations list.
 
 </details>
 The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
@@ -2738,7 +3084,7 @@ Evidence is something you can point to and check. A guess can still be useful, b
 - **Self-pilot:** You attempting your own task. It checks the materials and cannot produce a finding about other people.
 - **Assisted completion:** Finishing after you intervened. It is not the same result as finishing alone, and the notes must show which happened.
 
-**Quick example.** A supplied line from someone else’s session: “The participant clicked Reserve twice, then said ‘I don’t know if that worked’. The facilitator confirmed the booking had gone through.”
+**Quick example.** A made-up line from someone else’s session notes: “The participant clicked Reserve twice, then said ‘I don’t know if that worked’. The facilitator confirmed the booking had gone through.”
 
 The reader demonstrates and guides the task before asking for “What is actually happening”.
 
@@ -2822,27 +3168,27 @@ Choose the option that honestly describes your work.
 
 **Answer:** What is actually happening (A consenting adult is taking part / Self-pilot only: nobody was available)
 
-Choose honestly. A self-pilot is a complete answer to this lesson.
+Choose honestly. Self-pilot only is a complete result: you attempt the task yourself, record what it shows about the materials, mark the participant answers as self-pilot, and say that no participant evidence exists yet.
 
 
 ### If someone is taking part, what you said before starting
 
 Section: practice-plan. Stable action: write-consent-confirmed.
 
-Voluntary, can stop, what the notes are for, no recording without asking.
+The words you used: voluntary, can stop, what the notes are for, who will read them, when they will be deleted, no recording without asking. Never a name or signature; keep any consent record in your private folder.
 
 **Answer:** If someone is taking part, what you said before starting
 
 Required only when session-status is A consenting adult is taking part. Otherwise leave participant evidence empty.
 
-Voluntary, can stop, what the notes are for, no recording without asking.
+The words you used: voluntary, can stop, what the notes are for, who will read them, when they will be deleted, no recording without asking. Never a name or signature; keep any consent record in your private folder.
 
 
 ### Observe or pilot
 
 Section: practice-plan. Stable action: step-2-brief.
 
-Two observations, any help you gave, and how the attempt ended.
+Two observations, any help you gave, and how the attempt ended; on a self-pilot, what your own attempt showed and “None” for help.
 
 - Run a short consented session or a labelled self-pilot if nobody is available.
 - Record help, dead ends and the task outcome.
@@ -2850,7 +3196,7 @@ Two observations, any help you gave, and how the attempt ended.
 
 **Start here:** Let them work. Wait longer than feels comfortable before saying anything, and write down whatever you say.
 
-**Enough:** Nothing in the observation boxes is a word like confused, frustrated or careless.
+**Enough:** Nothing in the observation boxes is a word like confused, frustrated or careless. On a self-pilot, they describe your own attempt, help says none and the outcome says not applicable.
 
 **Assisted completion:** Finishing after you intervened. It is not the same result as finishing alone, and the notes must show which happened.
 
@@ -2878,15 +3224,15 @@ Made-up example. Two lines from a session, written first the way that hides what
 **Unknown:** Still unknown: whether the sketchbook question is common or particular to her. One session cannot say.
 
 
-### Observation 1 · what they did or said
+### Observation 1 · what they did or said, without identifying details (on a self-pilot, what you found)
 
 Section: practice-plan. Stable action: write-observation-1.
 
-Write your answer for “Observation 1 · what they did or said”. Use the task instructions below to decide what to include.
+Raw notes stay on paper or in a private file with a date to delete them; write a short de-identified summary here. On a self-pilot, write what your own attempt showed about the materials.
 
-**Answer:** Observation 1 · what they did or said
+**Answer:** Observation 1 · what they did or said, without identifying details (on a self-pilot, what you found)
 
-
+Raw notes stay on paper or in a private file with a date to delete them; write a short de-identified summary here. On a self-pilot, write what your own attempt showed about the materials.
 
 <details>
 <summary>Example</summary>
@@ -2896,13 +3242,13 @@ Example (made up): she asked whether “materials supplied” included a sketchb
 </details>
 
 
-### Observation 2 · what they did or said
+### Observation 2 · what they did or said, without identifying details (on a self-pilot, what you found)
 
 Section: practice-plan. Stable action: write-observation-2.
 
-Write your answer for “Observation 2 · what they did or said”. Use the task instructions below to decide what to include.
+Write your answer for “Observation 2 · what they did or said, without identifying details (on a self-pilot, what you found)”. Use the task instructions below to decide what to include.
 
-**Answer:** Observation 2 · what they did or said
+**Answer:** Observation 2 · what they did or said, without identifying details (on a self-pilot, what you found)
 
 
 
@@ -2911,11 +3257,13 @@ Write your answer for “Observation 2 · what they did or said”. Use the task
 
 Section: practice-plan. Stable action: write-help-given.
 
-Record it. Help changes what the outcome can mean.
+Record it. Help changes what the outcome can mean. On a self-pilot, write “None: self-pilot”.
 
 **Answer:** Any help you gave, and when
 
-Record it. Help changes what the outcome can mean.
+Required only when session-status is A consenting adult is taking part. Otherwise leave participant evidence empty.
+
+Record it. Help changes what the outcome can mean. On a self-pilot, write “None: self-pilot”.
 
 <details>
 <summary>Example</summary>
@@ -2956,25 +3304,25 @@ A possible reason for each observation, anything arguing against it, and which o
 
 Section: practice-plan. Stable action: step-3-try.
 
-A supplied line from someone else’s session: “The participant clicked Reserve twice, then said ‘I don’t know if that worked’. The facilitator confirmed the booking had gone through.”
+A made-up line from someone else’s session notes: “The participant clicked Reserve twice, then said ‘I don’t know if that worked’. The facilitator confirmed the booking had gone through.”
 
 How should this be recorded?
 
-- Finding: the confirmation is broken and needs a loading state.
-- Observed: the participant was unsure whether the booking worked.
-- Observed: two presses and that sentence. Assisted: the facilitator confirmed it. Interpretation: the button gave no visible feedback.
-- Observed: the participant double-clicked, which is normal behaviour for older users.
+- Finding: the confirmation step is broken and needs a loading state before the next session.
+- Observed: the participant double-clicked, which is normal behaviour for older users anyway.
+- Observed: the participant was unsure whether the booking had worked, so pressed again.
+- Observed: two presses and the sentence. Assisted: facilitator confirmed. Inferred: no visible feedback.
 
 <details>
 <summary>After your attempt</summary>
 
-Finding: the confirmation is broken and needs a loading state. — That is a recommendation built on one moment, and it skips both the observation and the fact that you intervened.
+Finding: the confirmation step is broken and needs a loading state before the next session. — That is a recommendation built on one moment, and it skips both the observation and the fact that you intervened.
 
-Observed: the participant was unsure whether the booking worked. — Unsure is your interpretation of the sentence and the second press. Close to certain, and still not what you saw.
+Observed: the participant double-clicked, which is normal behaviour for older users anyway. — It adds a claim about a whole group from one person, and it explains away the very thing you should be curious about.
 
-Observed: two presses and that sentence. Assisted: the facilitator confirmed it. Interpretation: the button gave no visible feedback. — All three parts are separated, so a reader can see what happened, what you did, and what you concluded. The missing feedback is a strong reading and it is still a reading.
+Observed: the participant was unsure whether the booking had worked, so pressed again. — Unsure is your interpretation of the sentence and the second press. Close to certain, and still not what you saw.
 
-Observed: the participant double-clicked, which is normal behaviour for older users. — It adds a claim about a whole group from one person, and it explains away the very thing you should be curious about.
+Observed: two presses and the sentence. Assisted: facilitator confirmed. Inferred: no visible feedback. — All three parts are separated, so a reader can see what happened, what you did, and what you concluded. The missing feedback is a strong reading and it is still a reading.
 
 Split your own two observations the same way, and make sure any help you gave is recorded beside the outcome rather than inside it.
 
@@ -3108,7 +3456,7 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 The participant finished the task after you told her where the details were. How should the outcome read?
 
 - Finished, since she completed it and the help was minor.
-- Did not finish, because she needed help.
+- Did not finish, because she needed help to reach the end of the task.
 - Finished after help, with the help itself recorded and quoted.
 
 <details>
@@ -3116,11 +3464,11 @@ The participant finished the task after you told her where the details were. How
 
 Finished, since she completed it and the help was minor. — Minor help still supplied the missing piece. Reported as a completion, it makes the design look like it worked when you made it work.
 
-Did not finish, because she needed help. — Too severe and it loses information. She did finish; the honest record says what it took.
+Did not finish, because she needed help to reach the end of the task. — Too severe and it loses information. She did finish; the honest record says what it took.
 
 Finished after help, with the help itself recorded and quoted. — The same words that helped her would not be there in real use. Recording them is what stops a rescued attempt being counted as a success.
 
-Improve: Check the help and outcome boxes in step 2. If you helped and the outcome says finished without help, correct it and record the change in step 5.
+Improve: Check the help and outcome boxes in step 2. If you helped and the outcome says finished without help, correct it and record the change in step 5. On a self-pilot, the outcome should read “Self-pilot: not applicable” and help should say none.
 
 Check again: The outcome names whether help was given, and the help is written down where it happened.
 
@@ -3137,18 +3485,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 After the repair you write: “This fixes the problem.” What is the honest version?
 
-- It is fine if the participant agreed the new version was better.
-- That you changed the design in response to evidence, and it needs another check before anyone can say it helped.
-- It is fine: the change directly addresses what you observed.
+- The original is fine if the participant agreed that the new version was the better one.
+- The original sentence is fine, because the change directly addresses what you observed.
+- You changed the design in response to evidence; another check must show whether it helped.
 
 <details>
 <summary>After your attempt</summary>
 
-It is fine if the participant agreed the new version was better. — Shown two versions by the person who made them, agreement is close to guaranteed and tells you very little.
+The original is fine if the participant agreed that the new version was the better one. — Shown two versions by the person who made them, agreement is likely and tells you very little.
 
-That you changed the design in response to evidence, and it needs another check before anyone can say it helped. — A repair is a response, not a result. The next check is the sentence that keeps it that way and tells you what to do next.
+The original sentence is fine, because the change directly addresses what you observed. — Addressing an observation is the reason to try it. Whether it works for the next person is unknown until someone else meets it.
 
-It is fine: the change directly addresses what you observed. — Addressing an observation is the reason to try it. Whether it works for the next person is unknown until someone else meets it.
+You changed the design in response to evidence; another check must show whether it helped. — A repair is a response, not a result. The next check is the sentence that keeps it that way and tells you what to do next.
 
 Improve: Reread your Revision and Next check sections in step 5. Rewrite any claim of a fix as an expectation with the observation that would test it, then note the change.
 
@@ -3167,21 +3515,21 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Nobody was available, so you ran the task yourself. What can the report say?
 
-- Nothing, since the lesson needs a participant.
-- The findings you would expect a participant to have produced.
-- That the flow works, since you completed it without difficulty.
-- That it was a self-pilot, what it found about the materials, and that no participant evidence exists yet.
+- That the flow works, since you completed every step of it without any difficulty.
+- The findings you would expect a first-time participant to have produced, marked as likely.
+- Nothing yet, since this lesson cannot be completed without a real participant.
+- Self-pilot: what it found in the materials, and that no participant evidence exists yet.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing, since the lesson needs a participant. — The lesson is complete with a self-pilot honestly reported. A dated recruitment gap is a result, not a failure.
+That the flow works, since you completed every step of it without any difficulty. — You designed it, so you know where everything is. Your fluency is the least informative result available.
 
-The findings you would expect a participant to have produced. — That is an invented participant. Once written it gets quoted, and everything else you report becomes suspect.
+The findings you would expect a first-time participant to have produced, marked as likely. — That is an invented participant. Once written it gets quoted, and everything else you report becomes suspect.
 
-That the flow works, since you completed it without difficulty. — You designed it, so you know where everything is. Your fluency is the least informative result available.
+Nothing yet, since this lesson cannot be completed without a real participant. — The lesson is complete with a self-pilot honestly reported. A dated recruitment gap is a result, not a failure.
 
-That it was a self-pilot, what it found about the materials, and that no participant evidence exists yet. — A self-pilot finds broken paths, missing cards and unclear wording, which is real and worth reporting. It cannot tell you what a first-time visitor would do.
+Self-pilot: what it found in the materials, and that no participant evidence exists yet. — A self-pilot finds broken paths, missing cards and unclear wording, which is real and worth reporting. It cannot tell you what a first-time visitor would do.
 
 Improve: Check the session type in step 1 and the Evidence section in step 5. Make sure the session type appears in the first sentence of the report, then record the change.
 
@@ -3217,11 +3565,11 @@ Four short sections, where the versions live, and the repair the Check questions
 
 Section: practice. Stable action: write-report-evidence.
 
-What you saw, with the session type beside it.
+What you saw, summarised without identifying details, with the session type in the first sentence: self-pilot, or a session with a consenting adult.
 
 **Answer:** Evidence
 
-What you saw, with the session type beside it.
+What you saw, summarised without identifying details, with the session type in the first sentence: self-pilot, or a session with a consenting adult.
 
 
 ### Decision
@@ -3268,15 +3616,41 @@ Write a file location, or describe where you keep the paper version. A photo is 
 Write a file location, or describe where you keep the paper version. A photo is optional; nothing is uploaded here.
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: Nobody was available, so you walked through your own paper prototype of a ferry ticket booking. You noticed that the return-date card never says which port the return sailing leaves from, and you hesitated over the luggage question. Your draft report begins: “Users struggle with the luggage question.”
+
+**Task:** Rewrite the first sentence of the report so it matches what actually happened, and explain why your version is honest about the session type and about what it can and cannot show.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps a claim about users or travellers (“people find the luggage question confusing”), or writes the findings a participant might have produced, although nobody else took part.
+- Adequate: Opens with “Self-pilot:” and reports what the walk-through found in the materials — the missing return port and your own hesitation — and states that no participant evidence exists yet.
+- Strong: Adequate, plus proposes one bounded repair (add the return port), keeps the original card, and names a next check with a real person and a task, written as still to do.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -3307,7 +3681,7 @@ Self-pilot: You attempting your own task. It checks the materials and cannot pro
 Assisted completion: Finishing after you intervened. It is not the same result as finishing alone, and the notes must show which happened.
 
 Supplied practice material (fictional or labelled practice, not my research):
-A supplied line from someone else’s session: “The participant clicked Reserve twice, then said ‘I don’t know if that worked’. The facilitator confirmed the booking had gone through.”
+A made-up line from someone else’s session notes: “The participant clicked Reserve twice, then said ‘I don’t know if that worked’. The facilitator confirmed the booking had gone through.”
 
 Activity: Use the supplied case to ask me whether each statement is a fact, a guess or an open question. After I answer, explain the distinction with one everyday example.
 
@@ -3329,6 +3703,66 @@ When the activity is finished, tell me to return to the course answer called “
 
 
 </details>
+<details>
+<summary>Creator review and remediation criteria</summary>
+
+**Session type and consent clear**
+
+Adequate evidence: The session type stated honestly in the status and in the first sentence of the report; for a session, the consent words used, with no names; for a self-pilot, the status “Self-pilot only” and participant answers marked self-pilot.
+
+0 — The session type is missing or misstated, such as a self-pilot reported as a session.
+
+1 — The type appears in the status but not the report, or a real session has no consent words recorded.
+
+2 — The type is clear in both places; a session has its consent words, and a self-pilot is reported as one with no participant claims. A labelled self-pilot meets this criterion in full.
+
+3 — As adequate, and the report says what the session type means for how far its conclusions reach.
+
+Repair: Put the session type in the first sentence of the report. For a session, add the consent words you used; for a self-pilot, replace any participant claim with what your own attempt showed. Recheck: The status, the consent box if there was a session, and the report’s first sentence.
+
+**Observed behavior separated from cause**
+
+Adequate evidence: Two observations describing actions and words — or, on a self-pilot, what your own attempt showed — with any help recorded where it happened and possible reasons kept in separate boxes.
+
+0 — Observations are conclusions (“she was confused”), or help given is not recorded.
+
+1 — Most lines describe behaviour, but one carries a judgement, or the outcome hides help that was given.
+
+2 — Observations describe behaviour, help is recorded beside the outcome, and reasons sit in their own boxes.
+
+3 — As adequate, and the work names something that argues against its own reading.
+
+Repair: Replace each judgement word with the action that made you think it. Record any help and correct the outcome to match. Recheck: The two observations, the help given and the outcome.
+
+**Revision matches an important issue**
+
+Adequate evidence: The original kept, one bounded change, and a reason linking that change to the observation that matters most for finishing the task.
+
+0 — No revision, or the original was overwritten.
+
+1 — The revision changes several things, or addresses a minor issue while a blocker remains.
+
+2 — One bounded change addressing the most severe observation, with the original kept.
+
+3 — As adequate, and the work lists other changes deliberately left for later, each with the observation it is guessing about.
+
+Repair: Compare the two observations by their effect on finishing the task, and keep only the change that answers the more severe one. Recheck: The severity reason and the before and after versions.
+
+**Results and limitations communicated**
+
+Adequate evidence: A short report under Evidence, Decision, Revision and Next check, with no claim that the repair worked and a next check naming a person and a task.
+
+0 — No report, or the report claims the problem is fixed.
+
+1 — The report overclaims — assisted success counted as success, or a self-pilot treated as a finding — or the next check is vague.
+
+2 — An honest four-part report whose next check names who would do what; a self-pilot report states that no participant evidence exists yet.
+
+3 — As adequate, and the report says which result in the next check would make you undo the repair.
+
+Repair: Rewrite any claim of a fix as an expectation, and make the next check name a person and a task. Recheck: The four report sections.
+
+</details>
 The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
 **Keep for later:** Open Your work and choose Ready for review. This closes Module 2; Module 3 returns to visual foundations with the evidence you have gathered.
@@ -3346,7 +3780,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 - In a usability session, ask someone to attempt the task and observe what they do. Avoid teaching the interface while testing it. If you help, record the intervention so assisted success is not mistaken for independent success.
 - Capture the action, result, and context of a difficulty before proposing a cause. “Asked what to bring after reading the summary” is a useful observation. “People are careless” is a judgment that does not explain the interaction.
 - Choose a small repair based on task impact and evidence. Preserve the original, state the intended improvement, and list what needs another check. Revising a design does not by itself establish that the revision works.
-- Use the participant booked earlier if available. Otherwise run a self-pilot and label it accordingly; leave the research finding unconfirmed. One small session is a learning exercise, not a broad validation or proof of business impact. Ask your creator to review the evidence before claiming completion.
+- Use the participant booked earlier if available. Otherwise run a self-pilot and label it accordingly; leave the research finding unconfirmed. One small session is a learning exercise, not a broad validation or proof of business impact. Ask your creator to review the evidence before calling any part of it a finding.
 
 [GOV.UK: moderated usability testing](https://www.gov.uk/service-manual/user-research/using-moderated-usability-testing).
 

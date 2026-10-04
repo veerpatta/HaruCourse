@@ -30,7 +30,7 @@ A flow is the series of steps and choices a person follows to finish a task. In 
 - **Node:** One box on the flow. Every node is an action, a decision, a state or an exit.
 - **Spine:** The single path from one entry point to one successful ending. It is drawn first, and everything else hangs off it.
 
-**Quick example.** Six made up endings, recorded over one week at a small class-booking service. A: booked and paid. B: rang the provider and booked by phone. C: the held place expired while she was deciding. D: closed the tab at the price. E: booked for someone else and never came back. F: the payment failed and she tried again the next day.
+**Quick example.** Made up records from one week at a small class-booking service, counting how each of 33 attempts to book ended. A, booked and paid online: 9. B, rang the provider and booked by phone: 14. C, the held place expired while she was deciding: 3. D, closed the tab at the price: 5. E, the payment failed and she tried again the next day: 2.
 
 The reader demonstrates and guides the task before asking for “What the assigned patterns do about progress, review and coming back later”.
 
@@ -59,7 +59,7 @@ Entry points are plural and you rarely control them. People arrive at a booking 
 
 Section: learn. Stable action: learn-3.
 
-Mark what has to be true before each step, and what the person must be holding. To pay, someone needs an amount they trust, a payment method to hand and often a decision from someone else. Prerequisites drawn on the flow are how you notice that your third screen asks for something the person cannot possibly have yet — the single most common structural fault in a first flow, and it is invisible until the prerequisites are written down.
+Mark what has to be true before each step, and what the person must be holding. To pay, someone needs an amount they trust, a payment method to hand and often a decision from someone else. Prerequisites drawn on the flow are how you notice that your third screen asks for something the person cannot possibly have yet — a very common structural fault in a first flow, and it is invisible until the prerequisites are written down.
 
 
 ### Waiting is part of the flow, not an absence of it
@@ -225,25 +225,25 @@ Every entry point you have evidence for, every ending including the unsuccessful
 
 Section: practice-plan. Stable action: step-3-try.
 
-Six made up endings, recorded over one week at a small class-booking service. A: booked and paid. B: rang the provider and booked by phone. C: the held place expired while she was deciding. D: closed the tab at the price. E: booked for someone else and never came back. F: the payment failed and she tried again the next day.
+Made up records from one week at a small class-booking service, counting how each of 33 attempts to book ended. A, booked and paid online: 9. B, rang the provider and booked by phone: 14. C, the held place expired while she was deciding: 3. D, closed the tab at the price: 5. E, the payment failed and she tried again the next day: 2.
 
 Your flow currently ends at A only. Which ending belongs on it next, and why?
 
-- All six at once, so that nothing is missed.
-- B, because ringing the provider is how this service most often ends, and a flow that cannot show it is describing a different product.
-- D, because abandoning at the price is the ending that costs money.
-- None of them, because these are endings rather than steps.
+- D, because closing the tab at the price is the ending that costs the business money.
+- None of them, because endings are outcomes of the flow rather than steps within it.
+- E, because a failed payment is the most serious ending and has to be designed first.
+- B, because ringing the provider is the commonest ending in this week’s records.
 
 <details>
 <summary>After your attempt</summary>
 
-All six at once, so that nothing is missed. — Six at once on one page usually produces a drawing nobody can read. Add the evidenced endings first, and let the rest wait until each has a source.
+D, because closing the tab at the price is the ending that costs the business money. — Abandonment at the price belongs on the flow too, and five attempts ended there against fourteen by phone. Draw both, with the commoner one first.
 
-B, because ringing the provider is how this service most often ends, and a flow that cannot show it is describing a different product. — The endings that happen most are the ones the design has to account for. Drawing B forces a decision about what the screen says to someone who is about to pick up the phone.
+None of them, because endings are outcomes of the flow rather than steps within it. — An exit is one of the four kinds of node. A flow with a single ending is a happy path, and these records show most attempts ending somewhere else.
 
-D, because abandoning at the price is the ending that costs money. — Abandonment does belong on the flow, and you have no evidence yet that it happens more often than the phone call. Draw both, and put the evidenced one first.
+E, because a failed payment is the most serious ending and has to be designed first. — A failed payment needs designing, and the records show it twice in a week. Seriousness decides how carefully you design an ending; the question here is which missing ending most attempts actually meet.
 
-None of them, because these are endings rather than steps. — An exit is one of the four kinds of node. A flow with a single ending is a happy path, and the other five endings are where people actually are.
+B, because ringing the provider is the commonest ending in this week’s records. — The endings that happen most are the ones the design has to account for, and fourteen of the thirty-three attempts ended on the phone. Drawing B forces a decision about what the screen says to someone who is about to ring.
 
 Add every ending you have evidence for to your own flow, and write the source beside each one.
 
@@ -254,11 +254,11 @@ Add every ending you have evidence for to your own flow, and write the source be
 
 Section: practice-plan. Stable action: write-entries.
 
-A search result on a class page, a forwarded link, a return three days later on a different phone. The home page is one entry, not the entry.
+Refer to people by label, never by name. Without research, name the source you do have — a real message, the supplied practice notes, your own walkthrough — and mark it. A search result on a class page, a forwarded link, a return three days later on a different phone. The home page is one entry, not the entry.
 
 **Answer:** Every entry point you have evidence for, with the evidence beside each
 
-A search result on a class page, a forwarded link, a return three days later on a different phone. The home page is one entry, not the entry.
+Refer to people by label, never by name. Without research, name the source you do have — a real message, the supplied practice notes, your own walkthrough — and mark it. A search result on a class page, a forwarded link, a return three days later on a different phone. The home page is one entry, not the entry.
 
 
 ### Every way the flow can end, including abandonment, expiry and moving to a phone call
@@ -369,18 +369,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your flow has one entry point and one ending, and you plan to add the error paths once the screens are designed. What goes wrong?
 
-- The flow becomes too long to fit on one page.
-- The screens get laid out on the assumption that everything worked, so the error states end up wherever there is space left.
-- Nothing, as long as the error paths are written before anything is built.
+- Little, provided every error path is written before any of the screens are built in code.
+- The flow grows too long to fit on one page once the error paths are added at the end.
+- The screens get laid out as if all went well, so error states land wherever space is left.
 
 <details>
 <summary>After your attempt</summary>
 
-The flow becomes too long to fit on one page. — Length is a drawing problem and you can split the page. The real cost is design decisions being made by accident.
+Little, provided every error path is written before any of the screens are built in code. — Writing them before the build is better than never, and by then the layout has already been settled. The recovery paths are what the layout has to hold.
 
-The screens get laid out on the assumption that everything worked, so the error states end up wherever there is space left. — A pending message needs three lines somewhere a person is already looking. Added late, it lands at the top of a page nobody reads.
+The flow grows too long to fit on one page once the error paths are added at the end. — Length is a drawing problem and you can split the page. The real cost is design decisions being made by accident.
 
-Nothing, as long as the error paths are written before anything is built. — Writing them before the build is better than never, and by then the layout has already been settled. The recovery paths are what the layout has to hold.
+The screens get laid out as if all went well, so error states land wherever space is left. — A pending message needs three lines somewhere a person is already looking. Added late, it lands at the top of a page nobody reads.
 
 Improve: Add every ending you have evidence for to the exits box in step 3, and record what you added in step 5.
 
@@ -399,18 +399,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You drew “is a place still available?” as a fork the person chooses. Why is that a problem?
 
-- It is a system decision, and drawing it as a choice hides that the person can meet it with no warning.
-- It should come off the flow, because availability belongs to the back end.
-- It is not a problem, because the person does choose whether to carry on.
+- It belongs off the flow altogether, since availability is decided in the back end.
+- It is fine as drawn, because the person does choose whether to carry on after the check.
+- The system makes that decision, so drawing it as hers hides that it can hit her unwarned.
 
 <details>
 <summary>After your attempt</summary>
 
-It is a system decision, and drawing it as a choice hides that the person can meet it with no warning. — The person never sees the fork. What they see is a place that was there a minute ago and is not now, which is a message somebody has to write.
+It belongs off the flow altogether, since availability is decided in the back end. — Its consequences are entirely in the interface. Leaving it off the flow is how the worst message in a product ends up unwritten.
 
-It should come off the flow, because availability belongs to the back end. — Its consequences are entirely in the interface. Leaving it off the flow is how the worst message in a product ends up unwritten.
+It is fine as drawn, because the person does choose whether to carry on after the check. — They choose after the answer arrives. The fork itself is the system checking, and the design work is what the losing branch says.
 
-It is not a problem, because the person does choose whether to carry on. — They choose after the answer arrives. The fork itself is the system checking, and the design work is what the losing branch says.
+The system makes that decision, so drawing it as hers hides that it can hit her unwarned. — The person never sees the fork. What they see is a place that was there a minute ago and is not now, which is a message somebody has to write.
 
 Improve: Move any fork the person never sees into the system-decisions box in step 3, and record the change in step 5.
 
@@ -429,18 +429,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your third screen asks for a payment method, and your flow carries no prerequisite notes. What is the risk?
 
-- The order is fine as long as the fields are optional.
-- You cannot see whether the person could possibly have that thing yet, which is the commonest structural fault in a first flow.
-- It only matters where payment is involved.
+- The risk is limited to payment steps; other screens rarely ask for anything early.
+- The order is fine, provided the payment fields on that third screen are optional.
+- You cannot see whether she could have that item yet, a common fault in first flows.
 
 <details>
 <summary>After your attempt</summary>
 
-The order is fine as long as the fields are optional. — An optional field still asks, and an ask a person cannot answer reads as a wall whether or not it is required.
+The risk is limited to payment steps; other screens rarely ask for anything early. — It applies to anything the person has to be holding: a reference, a number they do not carry, a decision from someone else.
 
-You cannot see whether the person could possibly have that thing yet, which is the commonest structural fault in a first flow. — Prerequisites written on the flow are what make the fault visible. Without them the screen order looks reasonable right up until someone tries it.
+The order is fine, provided the payment fields on that third screen are optional. — An optional field still asks, and an ask a person cannot answer reads as a wall whether or not it is required.
 
-It only matters where payment is involved. — It applies to anything the person has to be holding: a reference, a number they do not carry, a decision from someone else.
+You cannot see whether she could have that item yet, a common fault in first flows. — Prerequisites written on the flow are what make the fault visible. Without them the screen order looks reasonable right up until someone tries it.
 
 Improve: Write “to do this they must already have …” for every step in the prerequisites box in step 4, then record what moved in step 5.
 
@@ -474,11 +474,11 @@ Three stopping points with a source for each, a note of where the flow lives, an
 
 Section: practice. Stable action: write-stop-1.
 
-Write your answer for “Stopping point 1 · where a person is most likely to stop, and the evidence for it”. Use the task instructions below to decide what to include.
+Refer to people by label, never by name. If your evidence is a real message, the supplied practice notes or your own walkthrough, say so beside the point; a walkthrough gives a suspicion, never a finding.
 
 **Answer:** Stopping point 1 · where a person is most likely to stop, and the evidence for it
 
-
+Refer to people by label, never by name. If your evidence is a real message, the supplied practice notes or your own walkthrough, say so beside the point; a walkthrough gives a suspicion, never a finding.
 
 <details>
 <summary>Example</summary>
@@ -532,6 +532,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
 
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a laundry pick-up service drew its flow as five screens: Home, Choose service, Pick a time slot, Pay, Done. Customers often message to ask whether the driver has collected the bag, and some arrive from a link in a reminder message rather than the home page. The payment sometimes takes a minute to confirm.
+
+**Task:** Name one node the flow is missing, say which of the four kinds it is (action, decision, state or exit), and explain why it belongs on the flow.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Adds another screen, such as a tracking page, without saying what kind of node it is, or keeps a single entry and a single ending.
+- Adequate: Adds a state such as “bag collected, being washed” or “payment pending”, explains that a person waits there and needs a message, and notes the reminder link as a second entry point.
+- Strong: As adequate, and names what must be true before the step, adds an unsuccessful ending such as a missed pick-up or a failed payment, and ties the choice to the evidence in the messages.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+
 ### Review and finish your practice
 
 Section: practice. Stable action: review-work.
@@ -560,7 +586,7 @@ Node: One box on the flow. Every node is an action, a decision, a state or an ex
 Spine: The single path from one entry point to one successful ending. It is drawn first, and everything else hangs off it.
 
 Supplied practice material (fictional or labelled practice, not my research):
-Six made up endings, recorded over one week at a small class-booking service. A: booked and paid. B: rang the provider and booked by phone. C: the held place expired while she was deciding. D: closed the tab at the price. E: booked for someone else and never came back. F: the payment failed and she tried again the next day.
+Made up records from one week at a small class-booking service, counting how each of 33 attempts to book ended. A, booked and paid online: 9. B, rang the provider and booked by phone: 14. C, the held place expired while she was deciding: 3. D, closed the tab at the price: 5. E, the payment failed and she tried again the next day: 2.
 
 Activity: Give me one constraint from the supplied case and ask me to make a choice inside it. Then ask what trade-off my choice creates.
 
@@ -577,7 +603,7 @@ When the activity is finished, tell me to return to the course answer called “
 <summary>Optional hints and reference material</summary>
 
 - Go through your flow and label each node with one of the four words. Anything you cannot label is probably a screen name rather than a step.
-- List how each m05 participant actually arrived and how each session actually ended. Add every one to the flow.
+- List how each m05 participant actually arrived and how each session actually ended. Add every one to the flow. Without participants, use real messages, the supplied practice notes or your own walkthrough, each labelled by source.
 
 - R11: [GOV.UK Design System: patterns](https://design-system.service.gov.uk/patterns/) — The task list, check answers and complete related tasks patterns. Purpose: Shows how multi-step tasks handle progress, review and resumption — the structural questions a flow has to answer. Free reading, no account. Verified 2026-09-06. These are patterns for multi-step government tasks, not a general navigation library, and their visual style is a government design system rather than a universal aesthetic; take the structure, not the look. Fallback: R02.
 - R35: [GOV.UK: start by learning user needs](https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs) — Needs across the whole journey, including before and after the product. Purpose: Keeps entry points and endings anchored to what people are actually doing rather than to where your product starts. Free reading, no account. Verified 2026-09-06. It is about need statements rather than flow notation, which is this lesson's own. Fallback: R08.
@@ -612,7 +638,7 @@ Adequate evidence: Multiple entry points drawn from real evidence, and every end
 
 3 — As adequate, and the most common real ending in your research is identified even if it is not success.
 
-Repair: List how each m05 participant actually arrived and how each session actually ended. Add every one to the flow. Recheck: The flow with entries and endings.
+Repair: List how each m05 participant actually arrived and how each session actually ended. Add every one to the flow. Without participants, use real messages, the supplied practice notes or your own walkthrough, each labelled by source. Recheck: The flow with entries and endings.
 
 **Prerequisites and waits are marked on the flow**
 
@@ -630,13 +656,13 @@ Repair: For each step write “to do this they must already have …”. Then fi
 
 **Stopping points are named with evidence**
 
-Adequate evidence: Three marked stopping points, each with a source — an observation, a quotation or a test result.
+Adequate evidence: Three marked stopping points, each with a source — an observation, a quotation or a test result; without research, a labelled real message, supplied practice note or walkthrough suspicion.
 
 0 — No stopping points, or points chosen by intuition.
 
 1 — Points named but with no evidence attached.
 
-2 — Three points named, each with its evidence.
+2 — Three points named, each with its evidence and the kind of source labelled.
 
 3 — As adequate, and one stopping point contradicts what you expected before the research, with that noted.
 
@@ -948,7 +974,7 @@ Section: practice-plan. Stable action: step-2-sort-6.
 
 Six lines from the first run of a made-up class-booking product. Each is something the product asks for or explains before a person has booked anything. Label each one the way you would label your own.
 
-A password, in a product where every booking is found again with a reference and a phone number.
+A password, in a product where every booking is found again with its reference and a one-time code sent to the booking’s phone.
 
 - needed now
 - defer
@@ -961,7 +987,7 @@ needed now — The booking works without it, so nothing is impossible without it
 
 defer — Deferring is better than asking at the start, and the question underneath is whether an account is needed at all. The next lesson takes that up.
 
-never ask — Where a reference and a phone number already find a booking, a password adds a way to fail rather than a way in.
+never ask — Where a reference and a code to the booking’s phone already find a booking, a password adds a way to fail rather than a way in.
 
 Put every item on your own first-run list under one of the three labels. Anything you cannot defend as needed now moves.
 
@@ -1173,18 +1199,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your first screen is hard to understand, so you plan a short tour explaining it. What is wrong with that?
 
-- A screen that needs a tour is itself the problem, and the tour hides it while being forgotten anyway.
-- It should be shown on the second visit instead.
-- Nothing, as long as the tour can be skipped.
+- Only its timing: show the tour on the second visit, once people know the basics.
+- The screen is the problem; a tour hides that, and people forget the tour anyway.
+- Little, provided the tour can be skipped by anyone who does not want to see it.
 
 <details>
 <summary>After your attempt</summary>
 
-A screen that needs a tour is itself the problem, and the tour hides it while being forgotten anyway. — People read overlays as an obstacle and remember almost none of it. The work belongs in the screen: sensible defaults, a filled-in example, wording a person recognises.
+Only its timing: show the tour on the second visit, once people know the basics. — Moving it only changes when it is ignored. An explanation works at the moment of need, attached to the thing it explains.
 
-It should be shown on the second visit instead. — Moving it only changes when it is ignored. An explanation works at the moment of need, attached to the thing it explains.
+The screen is the problem; a tour hides that, and people forget the tour anyway. — People read overlays as an obstacle and remember almost none of it. The work belongs in the screen: sensible defaults, a filled-in example, wording a person recognises.
 
-Nothing, as long as the tour can be skipped. — A skippable tour gets skipped, and the screen is still hard to understand for the person who skipped it.
+Little, provided the tour can be skipped by anyone who does not want to see it. — A skippable tour gets skipped, and the screen is still hard to understand for the person who skipped it.
 
 Improve: If anything in your must-know list in step 2 can only be explained by a tour, move it into the screen wording in step 4, and record the change in step 5.
 
@@ -1303,6 +1329,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a public library’s new app asks for date of birth, home address, reading interests and notification settings before showing the catalogue. People mostly open it to check whether a book is on the shelf. Borrowing needs a library card number, which members already have.
+
+**Task:** Decide which of the four requests must come before the first search and which can wait, name the moment one deferred item should be asked for, and explain why.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps every request at the start because the library wants complete records, or removes everything without considering what borrowing needs.
+- Adequate: Asks for nothing before searching, asks for the card number at the moment of reserving or borrowing because that is when it buys the person something, and defers interests and notifications.
+- Strong: As adequate, and states what deferring costs, such as thinner records and an interruption at borrowing, questions whether date of birth is needed at all, and writes the empty-state wording for the reservations list.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -1444,7 +1496,7 @@ Bring: Your flow and the deferral list. Whatever you deferred to “when they ha
 
 Starting route: Recommended route: Draw the sign-up, sign-in and recovery paths added to your flow on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder. Alternative route: Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
 
-- Sign-up, sign-in and recovery paths drawn on the flow, a stated purpose for the account with a no-account path, written wording for every error and confirmation attached to its field, and a recorded shared-device walkthrough with the changes it forced.
+- Sign-up, sign-in and recovery paths drawn on the flow, with recovery through a verified channel or reviewed check and replies that never reveal whether an account exists; a stated purpose for the account with a no-account path; written wording for every error and confirmation attached to its field; and a recorded shared-device walkthrough with the changes it forced.
 
 ### Start here: in everyday words
 
@@ -1454,9 +1506,9 @@ A flow is the series of steps and choices a person follows to finish a task. In 
 
 - **Persistent label:** A label that stays visible while the person types. A placeholder that vanishes as soon as typing starts is not a label.
 - **Field-level error:** A message beside the field it concerns. An error that could apply to two fields has not yet told anyone anything.
-- **Factor:** One thing a person uses to prove who they are: a phone that receives a code, an inbox, a booking reference.
+- **Factor:** One thing a person uses to prove who they are, such as a phone that receives a code or an inbox she confirmed. A booking reference is not one: anyone holding the confirmation knows it.
 
-**Quick example.** A made up sign-in path. A person registered with a phone number and signs in with a code sent by message. She has since changed her number, so the code reaches a phone she no longer has, and she does not remember whether she ever added an email address.
+**Quick example.** A made up sign-in path. A person registered with a phone number and an email address, and confirmed both at the time. She signs in with a code sent by message, but she has changed her number, so the code reaches a phone she no longer has. She still has her booking confirmation, showing the booking reference and the class date.
 
 The reader demonstrates and guides the task before asking for “The rules you will apply to every field: its label, its instruction, its error, and what survives a failed attempt”.
 
@@ -1464,21 +1516,21 @@ The reader demonstrates and guides the task before asking for “The rules you w
 
 Section: learn. Stable action: welcome.
 
-Design the sign-in, sign-up and recovery paths for your product, including the shared-device and lost-access cases, with every form field labelled, every error message written and the recovery path shown to work without the thing that was lost.
+Design the sign-in, sign-up and recovery paths for your product, including the shared-device and lost-access cases, with every form field labelled, every error message written, and the recovery path shown to work without the thing that was lost — through a channel the person verified earlier or a reviewed check, never revealing whether an account exists.
 
 
 ### Idea 1: Every field in an authentication form needs a persistent, visi…
 
 Section: learn. Stable action: learn-1.
 
-Every field in an authentication form needs a persistent, visible label, an accessible error message tied to the field, and input that survives a failed attempt. The assigned forms tutorial covers labels, instructions, validation and notifications precisely, and these are not stylistic preferences: a placeholder that disappears when typing, an error at the top of the page with no link to the field, or a form that clears itself after a mistake are the three reliable ways to make a person give up on their third attempt.
+Every field in an authentication form needs a persistent, visible label, an accessible error message tied to the field, and input that survives a failed attempt. The assigned forms tutorial covers labels, instructions, validation and notifications precisely, and these are not stylistic preferences: a placeholder that disappears when typing, an error at the top of the page with no link to the field, or a form that clears itself after a mistake are the three reliable ways to make a person give up on their third attempt. One answer must never be specific, though: whether an account exists. “We could not find an account with that number” tells anyone typing numbers who is registered. Reply the same way to everybody — “If an account matches that number, we have sent it a code” — and keep field-level errors for things the person can see and fix, such as a number one digit short or a code that has run out.
 
 
-### Recovery must not depend on the thing that was lost
+### Idea 2: Recovery must not depend on the thing that was lost, and it mu…
 
 Section: learn. Stable action: learn-2.
 
-Recovery must not depend on the thing that was lost. If a person cannot sign in because they have lost access to the phone number they registered with, sending a code to that number is not a recovery path, it is the same wall. Design at least one route that uses a different factor, and be explicit about what happens when someone genuinely has nothing: a way to reach a human is a legitimate part of the design and belongs on the flow rather than being left to the support inbox.
+Recovery must not depend on the thing that was lost, and it must not hand an account to someone who merely knows a few facts about it. If a person has lost the phone number she registered with, sending a code to that number is the same wall. The route back has to use something she verified earlier — an email address she confirmed at sign-up, say — or a reviewed check by a person. A booking reference and a class date identify a booking, not a person: both sit in the confirmation message and in any screenshot of it. So changing the phone number or email on an account is a security decision: confirm it through a channel already verified or a reviewed check, tell the old number or address that it happened, and allow a short window to undo it. Be explicit about someone who genuinely has nothing: a reviewed route to a human belongs on the flow, with the identity check it uses written down, rather than being left to the support inbox.
 
 
 ### Idea 3: Shared and borrowed devices are ordinary, not an edge case — i…
@@ -1492,7 +1544,7 @@ Shared and borrowed devices are ordinary, not an edge case — in India and in m
 
 Section: learn. Stable action: learn-4.
 
-Ask what the account is actually for before designing it. Sometimes the answer is nothing: a booking can be identified by a reference and a phone number, and forcing an account is an obstacle that costs you the booking. Where an account genuinely serves the person — seeing history, changing a booking, not re-entering details — say which of those it provides, and let the identity requirement follow from that rather than from habit.
+Ask what the account is actually for before designing it. Sometimes the answer is nothing: a booking can be looked up with its reference and a code sent to the booking’s phone, and forcing an account is an obstacle that costs you the booking. Where an account genuinely serves the person — seeing history, changing a booking, not re-entering details — say which of those it provides, and let the identity requirement follow from that rather than from habit.
 
 
 ### See the idea in a supplied example
@@ -1501,7 +1553,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- A booking product asked people to register before seeing a price. Rebuilt: no account to browse or book, a booking reference plus phone number to look up a booking later, and an optional account for people who book often. Sign-in offered a code to phone or email, and recovery worked from either — because in the observation session a participant had changed her number and could no longer receive codes. On a shared device, “stay signed in” was off by default with the choice visible, and the confirmation screen offered “finish and sign out” explicitly. Every error message was written out: “That code has expired — request a new one” rather than “Invalid credentials”, and every failed attempt kept the phone number the person had already typed.
+- A booking product asked people to register before seeing a price. Rebuilt: no account to browse or book, a booking reference plus a code sent to the booking’s phone to look a booking up later, and an optional account for people who book often. Sign-in offered a code to whichever phone or email the person had confirmed at sign-up — because in the observation session a participant had changed her number and could no longer receive codes, while her confirmed email still worked. Changing the number on an account sent a code to the confirmed email, sent a notice to the old number, and could be undone for a day; someone with neither was routed to the provider, who checked identity by a reviewed process before anything changed. Every reply to a sign-in or recovery request read the same whether or not an account existed: “If an account matches, we have sent a code.” On a shared device, “stay signed in” was off by default with the choice visible, and the confirmation screen offered “finish and sign out” explicitly. Errors the person could fix were written out — “That code has run out — send a new one” rather than “Invalid credentials” — and every failed attempt kept the phone number the person had already typed.
 
 
 ### Choose where you will do the work
@@ -1529,7 +1581,7 @@ The rules you will hold every field to: a visible label, an instruction, an erro
 
 **Field-level error:** A message beside the field it concerns. An error that could apply to two fields has not yet told anyone anything.
 
-**Factor:** One thing a person uses to prove who they are: a phone that receives a code, an inbox, a booking reference.
+**Factor:** One thing a person uses to prove who they are, such as a phone that receives a code or an inbox she confirmed. A booking reference is not one: anyone holding the confirmation knows it.
 
 
 ### The rules you will apply to every field: its label, its instruction, its error, and what survives a failed attempt
@@ -1574,9 +1626,9 @@ Made-up example. Designing a sign-up screen for a booking product, then finding 
 
 **The question I had not asked:** What does the account give the person? I wrote the list: see history, change a booking, not re-enter details.
 
-**What the list showed:** All three are things a booking reference and a phone number already do. The account was serving the records, not the person.
+**What the list showed:** All three are things a booking reference and a code sent to the booking’s phone already do. The account was serving the records, not the person.
 
-**What replaced it:** No account to browse or book. A reference plus a phone number to find a booking later. An optional account for people who book often, offered after a second booking.
+**What replaced it:** No account to browse or book. A reference plus a code sent to the booking’s phone to find a booking later. An optional account for people who book often, offered after a second booking.
 
 **Wrong turn:** The wrong turn is designing the sign-up screen before asking what the account is for. The screen is easy to draw, and the question is the actual work.
 
@@ -1609,7 +1661,7 @@ Write your answer for “The path for someone who never creates an account”. U
 <details>
 <summary>Example</summary>
 
-Example (made up): browse and book with no account. Find the booking again later with the reference and the phone number. An account offered after a second booking, never before.
+Example (made up): browse and book with no account. Find the booking again later with its reference and a code sent to the booking’s phone. An account offered after a second booking, never before.
 
 </details>
 
@@ -1618,13 +1670,13 @@ Example (made up): browse and book with no account. Find the booking again later
 
 Section: practice-plan. Stable action: step-3-brief.
 
-Sign-up, sign-in and recovery drawn on the flow, with at least one recovery route that avoids the lost factor, and an ending for someone with nothing.
+Sign-up, sign-in and recovery on the flow: a recovery route through a channel verified earlier, how a contact change is confirmed, and a reviewed ending for someone with nothing.
 
-- Draw all three paths on your flow, including at least one recovery route that does not depend on the lost factor, and the ending for someone with nothing left — a route to a person.
+- Draw all three paths on your flow, including at least one recovery route through a channel the person verified earlier, how a change of phone number or email is confirmed, told to the old contact and undone, and the ending for someone with nothing left — a reviewed route to a person.
 
-**Start here:** Name the factor first: what does a person on your flow use to prove who they are? Then design for having lost exactly that.
+**Start here:** Name the factor first: what does a person on your flow use to prove who they are? Then design for having lost exactly that, and check that a stranger holding her booking confirmation could not use your route.
 
-**Enough:** Every recovery route on the flow works without the lost factor, and the ending for someone with nothing is drawn rather than assumed.
+**Enough:** Every recovery route works without the lost factor through a channel verified earlier or a reviewed check, a contact change notifies the old contact and can be undone, and the ending for someone with nothing is drawn.
 
 **Recovery path:** The route back in for someone who has lost a factor. If it needs the lost factor, it is not a recovery path.
 
@@ -1633,27 +1685,27 @@ Sign-up, sign-in and recovery drawn on the flow, with at least one recovery rout
 
 Section: practice-plan. Stable action: step-3-try.
 
-A made up sign-in path. A person registered with a phone number and signs in with a code sent by message. She has since changed her number, so the code reaches a phone she no longer has, and she does not remember whether she ever added an email address.
+A made up sign-in path. A person registered with a phone number and an email address, and confirmed both at the time. She signs in with a code sent by message, but she has changed her number, so the code reaches a phone she no longer has. She still has her booking confirmation, showing the booking reference and the class date.
 
-Which of these is a recovery path, rather than the same wall drawn again?
+Which route gets her back in without letting a stranger take over the account?
 
-- Send the code to the old number again, in case the first message was delayed.
-- Tell her to create a new account with her new number.
-- Confirm the booking with its reference and the class date, then let her set a new number, with a route to a person if she has no reference either.
-- Ask her the security question she chose when she registered.
+- Send a code to the email she confirmed at sign-up, then tell the old number and allow a day to undo.
+- Let her set a new number once she types the booking reference and class date shown in her confirmation.
+- Send the code to the old number again, in case the first message was delayed by her network.
+- Ask the security question she set when she registered, and change the number if she answers it.
 
 <details>
 <summary>After your attempt</summary>
 
-Send the code to the old number again, in case the first message was delayed. — The number is exactly what she has lost, so the second message arrives where the first one did. Repeating a step is not a different factor.
+Send a code to the email she confirmed at sign-up, then tell the old number and allow a day to undo. — The email is a channel she verified earlier and still holds. Telling the old number, and leaving a day to undo the change, means a stranger who got in this way would be noticed and reversed.
 
-Tell her to create a new account with her new number. — Her bookings stay with the old account, so the thing she came for is still out of reach. A new account moves the problem rather than solving it.
+Let her set a new number once she types the booking reference and class date shown in her confirmation. — The reference and the date are printed in the confirmation and in any screenshot of it, so anyone holding that message could move her account to their own phone. They identify a booking, not a person.
 
-Confirm the booking with its reference and the class date, then let her set a new number, with a route to a person if she has no reference either. — It uses something she can still produce, and it names what happens when she can produce nothing. Both halves are needed, and a route to a person belongs on the flow.
+Send the code to the old number again, in case the first message was delayed by her network. — The number is exactly what she has lost, so the second message arrives where the first one did. Repeating a step is not a different factor.
 
-Ask her the security question she chose when she registered. — This can work, and only where she was actually asked to set one and remembers the answer. If you cannot promise that, it is one more thing she may not have.
+Ask the security question she set when she registered, and change the number if she answers it. — Answers to security questions are often guessable or findable, and she may not remember hers. A channel she verified earlier is far harder for a stranger to borrow.
 
-Draw at least one recovery route on your own flow that uses something other than the lost factor, and draw the ending for someone who has nothing left.
+Draw at least one recovery route on your own flow that uses a channel the person verified earlier, write the reply that reads the same whether or not an account exists, and draw the reviewed route for someone who has nothing left.
 
 </details>
 
@@ -1669,39 +1721,57 @@ Write your answer for “Sign-up and sign-in, written out as the nodes you added
 
 
 
-### The recovery route that does not depend on the thing that was lost
+### The recovery route that does not depend on the thing that was lost, and the channel she verified earlier that it uses instead
 
 Section: practice-plan. Stable action: write-recovery-route.
 
-Name the lost factor first, then the route. If the route uses the lost factor, it is the same wall drawn twice.
+Name the lost factor first, then the route. If the route uses the lost factor, it is the same wall drawn twice. If it accepts facts printed on a booking confirmation, a stranger holding that message could use it too.
 
-**Answer:** The recovery route that does not depend on the thing that was lost
+**Answer:** The recovery route that does not depend on the thing that was lost, and the channel she verified earlier that it uses instead
 
-Name the lost factor first, then the route. If the route uses the lost factor, it is the same wall drawn twice.
+Name the lost factor first, then the route. If the route uses the lost factor, it is the same wall drawn twice. If it accepts facts printed on a booking confirmation, a stranger holding that message could use it too.
+
+
+### How a change of phone number or email is confirmed: the verified channel or reviewed check it needs, who is told, and how long it can be undone
+
+Section: practice-plan. Stable action: write-contact-change.
+
+A booking reference and a class date identify a booking, not a person. Write the rules and wording only, never a real number, code or address.
+
+**Answer:** How a change of phone number or email is confirmed: the verified channel or reviewed check it needs, who is told, and how long it can be undone
+
+A booking reference and a class date identify a booking, not a person. Write the rules and wording only, never a real number, code or address.
+
+<details>
+<summary>Example</summary>
+
+Example (made up): a new number is confirmed by a code sent to the email she verified at sign-up; the old number gets a message saying the number changed; the change can be undone from that message for 24 hours.
+
+</details>
 
 
 ### The ending for someone who genuinely has nothing left
 
 Section: practice-plan. Stable action: write-nothing-left.
 
-A way to reach a person is a legitimate part of the design. Put it on the flow rather than leaving it to a support inbox.
+A reviewed route to a person is a legitimate part of the design. Write how that person checks identity before anything changes, and put it on the flow rather than leaving it to a support inbox.
 
 **Answer:** The ending for someone who genuinely has nothing left
 
-A way to reach a person is a legitimate part of the design. Put it on the flow rather than leaving it to a support inbox.
+A reviewed route to a person is a legitimate part of the design. Write how that person checks identity before anything changes, and put it on the flow rather than leaving it to a support inbox.
 
 
 ### Write every message
 
 Section: practice-plan. Stable action: step-4-brief.
 
-Label, instruction, error wording and preserved input for every field, each error attached to one field. Wording only, never real credentials.
+Label, instruction, error and kept input for every field, plus the one reply that reads the same whether or not an account exists. Wording only, never real credentials.
 
-- Write the exact wording for each error and confirmation: what happened, what to do next, and what was kept. Attach each error to its field.
+- Write the exact wording for each error and confirmation: what happened, what to do next, and what was kept. Attach each fixable error to its field, and write the one reply that reads the same whether or not an account exists.
 
 **Start here:** Write the error before the label. The error is where the thinking is, and it usually tells you what the instruction should have said.
 
-**Enough:** No error could apply to two fields, and each one says what happened, what to do next, and what was kept.
+**Enough:** No error could apply to two fields, each says what happened, what to do next and what was kept, and no message reveals whether an account or booking exists.
 
 **Instruction:** The short line beside a field saying what shape the answer takes, shown before anyone types rather than after they get it wrong.
 
@@ -1714,23 +1784,23 @@ Label, instruction, error wording and preserved input for every field, each erro
 
 Section: practice-plan. Stable action: step-4-demo.
 
-Made-up example. Writing the error messages for a sign-in form, and finding that one of them could not tell anybody what to do next.
+Made-up example. Writing the error messages for a sign-in form, and finding that one of them told strangers which numbers were registered.
 
 **What I wrote first:** A single message under the form: “Those details are not right. Please try again.” It covered every failure at once, which felt efficient.
 
-**What it was covering:** A mistyped phone number, a code that had run out, a code typed into the wrong box, and a number that was never registered. Four situations, one sentence.
+**What it was covering:** A number one digit short, a code that had run out, a code typed into the wrong box, and a number that was never registered. Four situations, one sentence.
 
-**The rule I had set myself in step 1:** Every error sits beside the field it concerns. Mine sat under both fields, which means it sat beside neither of them.
+**What I did next, and why it was wrong:** I split it into four field errors, including “We could not find this number.” Then I typed a neighbour’s number into my own design and saw that the form would tell anyone whether she had an account.
 
-**What I found while splitting it:** The run-out code is not a field error at all. Nothing the person types will fix it, so that message needs a button that sends a fresh code.
+**Which errors stayed at the field:** The ones the person can see and fix: “This number has 9 digits; check the last one.” Beside the code: “This code has run out,” with “Send a new code” under it. Whichever fails, the number stays in the box.
 
-**What I wrote instead:** Beside the number: “We could not find this number. Check it, or use the email you registered with.” Beside the code: “This code has run out.” with “Send a new code” under it. Whichever fails, the number stays in the box.
+**What replaced “not found”:** One reply for every number, registered or not: “If an account matches this number, we have sent it a code. Nothing after a minute? Check the number above, or use the email you confirmed when you signed up.”
 
-**Wrong turn:** The wrong turn is one message for every failure, usually chosen because it feels safer not to say which half went wrong. It is safe and it is useless, and the person retypes both halves in the dark.
+**Wrong turn:** The wrong turn is making every error specific, including the one about whether an account exists. It feels like the most helpful version, and it turns the sign-in form into a free way to test who is registered.
 
-**Trade-off:** Naming which field failed does tell somebody poking at your form which numbers are registered. That is a genuine cost, and you weigh it against everybody shut out by a sentence that says nothing at all.
+**Trade-off:** A neutral reply leaves the person who typed a wrong but valid number waiting for a code that never comes. That is a real cost, so the reply has to tell her what to check and what to try if nothing arrives.
 
-**Unknown:** Still unknown: whether “run out” is even the right phrase for a person who waited two minutes. The wording is written down; only watching somebody read it says whether it lands.
+**Unknown:** Still unknown: whether “run out” is the right phrase for someone who waited two minutes, and whether people read the neutral reply as success. Only watching somebody read it says whether it lands.
 
 
 ### Field 1 · its label, its instruction, its error wording, and what stays on screen after a failed attempt
@@ -1746,7 +1816,7 @@ Write your answer for “Field 1 · its label, its instruction, its error wordin
 <details>
 <summary>Example</summary>
 
-Example (made up): mobile number. Label “Mobile number”, always visible. Instruction “The number you booked with.” Error beside the field: “We could not find a booking with that number. Check it, or use your booking reference instead.” The number typed stays.
+Example (made up): mobile number. Label “Mobile number”, always visible. Instruction “The number you booked with, 10 digits.” Error beside the field for a slip she can fix: “This number has 9 digits; check the last one.” The number typed stays.
 
 </details>
 
@@ -1784,6 +1854,24 @@ Write your answer for “Field 4 · its label, its instruction, its error wordin
 
 
 
+### The one reply shown whether or not an account or booking exists, and what it tells someone whose code never arrives
+
+Section: practice-plan. Stable action: write-neutral-reply.
+
+Saying “we could not find an account with that number” tells anyone typing numbers who is registered. Say the same thing to everybody.
+
+**Answer:** The one reply shown whether or not an account or booking exists, and what it tells someone whose code never arrives
+
+Saying “we could not find an account with that number” tells anyone typing numbers who is registered. Say the same thing to everybody.
+
+<details>
+<summary>Example</summary>
+
+Example (made up): “If an account matches this number, we have sent it a code. Nothing after a minute? Check the number above, or use the email you confirmed when you signed up.”
+
+</details>
+
+
 ### Check your reasoning · 1 of 3
 
 Section: check. Stable action: reason-1.
@@ -1792,24 +1880,24 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You add a second code, sent to email as well as to the phone, to make signing in safer. What have you actually changed?
 
-- You have added another way to be locked out, for a person who may hold only one of the two.
-- You have made the account harder to take over, at no cost.
-- Nothing, because almost everyone has both.
+- Takeover gets harder and lock-out gets likelier, for anyone who holds only one of the two.
+- Very little in practice, since almost everyone keeps both their phone and their email.
+- Takeover gets harder, at no real cost, since a second code is a small thing to ask for.
 
 <details>
 <summary>After your attempt</summary>
 
-You have added another way to be locked out, for a person who may hold only one of the two. — Every extra factor is a step that can fail. Where a phone is shared or an old inbox is gone, the second code reaches nobody who can act on it.
+Takeover gets harder and lock-out gets likelier, for anyone who holds only one of the two. — Both halves are true, and the design has to write both down: who is protected, and what happens to the person who changed a number or lost an inbox. The strongest checks belong where takeover happens, such as a change of contact details.
 
-You have made the account harder to take over, at no cost. — There is a cost, and it lands on the person who changed a number or lost an inbox. A security choice is a trade against access, and both sides go into the record.
+Very little in practice, since almost everyone keeps both their phone and their email. — Almost is doing a great deal of work in that sentence. The design still has to say what happens to the person who has only one.
 
-Nothing, because almost everyone has both. — Almost is doing a great deal of work in that sentence. The design still has to say what happens to the person who has one.
+Takeover gets harder, at no real cost, since a second code is a small thing to ask for. — There is a cost, and it lands on the person who changed a number or lost an inbox. A security choice is a trade against access, and both sides go into the record.
 
-Improve: Look at the recovery-route box in step 3. If every route needs both factors, draw one that needs only one, and record it in step 5.
+Improve: Look at the recovery-route and contact-change boxes in step 3. If every route needs both factors, draw one that needs only a channel she verified earlier, say how a contact change is confirmed and undone, and record it in step 5.
 
-Check again: At least one route back in works with a single factor, and the ending for someone with nothing is drawn.
+Check again: At least one route back in works with a single verified factor, a contact change notifies the old contact and can be undone, and the ending for someone with nothing is drawn.
 
-Answers to revisit: signup-signin, recovery-route, nothing-left, improvement-made
+Answers to revisit: signup-signin, recovery-route, contact-change, nothing-left, improvement-made
 
 </details>
 
@@ -1820,26 +1908,26 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-A sign-in attempt fails. Your screen shows one message at the top of the page and empties the fields. What does that produce?
+A sign-in attempt fails because the code has run out. Your screen shows one general message at the top of the page and empties both fields. What does that produce?
 
-- The person cannot tell which field is wrong and has to type everything again, so the third attempt is where they leave.
-- It is fine as long as the message is politely worded.
-- It is acceptable, because clearing the fields is the safer choice.
+- A workable form, provided the single message is worded politely and calmly.
+- She cannot tell the code ran out and must retype her number, which is where people give up.
+- A safer form, because clearing the fields stops anyone else seeing what was typed.
 
 <details>
 <summary>After your attempt</summary>
 
-The person cannot tell which field is wrong and has to type everything again, so the third attempt is where they leave. — An error belongs beside the field it concerns, with what was typed still there. Clearing the form makes a small mistake cost the whole entry twice over.
+A workable form, provided the single message is worded politely and calmly. — Wording matters, and no amount of it tells her that the code, not the number, needs attention.
 
-It is fine as long as the message is politely worded. — Wording matters, and no amount of it can tell someone which of two fields to look at. The message has to be attached to a field.
+She cannot tell the code ran out and must retype her number, which is where people give up. — Errors she can fix belong beside their field, with what she typed kept. The one reply that stays general is whether an account exists, and that is not what failed here.
 
-It is acceptable, because clearing the fields is the safer choice. — Clearing a phone number protects nobody and costs the person everything they typed. Where one field genuinely should not persist, say which, and keep the rest.
+A safer form, because clearing the fields stops anyone else seeing what was typed. — Clearing a phone number protects nobody and costs the person everything they typed. Where one field genuinely should not persist, say which, and keep the rest.
 
-Improve: Go through the message boxes in step 4 and attach every error to one named field, saying what was kept. Record what changed in step 5.
+Improve: Go through the message boxes in step 4 and attach every fixable error to one named field, saying what was kept, and keep the reply about whether an account exists the same for everyone. Record what changed in step 5.
 
 Check again: No error message could apply to two fields, and each one says what survived the failed attempt.
 
-Answers to revisit: message-1, message-2, message-3, message-4, improvement-made
+Answers to revisit: message-1, message-2, message-3, message-4, neutral-reply, improvement-made
 
 </details>
 
@@ -1852,18 +1940,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your flow keeps people signed in by default. On a phone shared by a family, what does that produce?
 
-- It is a rare case and not worth designing for.
-- Nothing, because they can always sign out.
-- The next person to open it sees someone else’s bookings, without either of them having chosen that.
+- Little harm, since anyone can sign out by hand once they have finished their task.
+- The next person to open it sees someone else’s bookings, and neither of them chose that.
+- A rare edge case, since most people in a family keep a phone of their own to use.
 
 <details>
 <summary>After your attempt</summary>
 
-It is a rare case and not worth designing for. — A shared phone is ordinary in many households, and a borrowed one is ordinary everywhere. It is a normal condition rather than an edge.
+Little harm, since anyone can sign out by hand once they have finished their task. — Signing out is a thing the first person has to remember at the end of a task they thought was finished. The design should offer it there.
 
-Nothing, because they can always sign out. — Signing out is a thing the first person has to remember at the end of a task they thought was finished. The design should offer it there.
+The next person to open it sees someone else’s bookings, and neither of them chose that. — Staying signed in is a choice somebody should make in plain view. On a shared or borrowed phone the default quietly hands one person another person’s details.
 
-The next person to open it sees someone else’s bookings, without either of them having chosen that. — Staying signed in is a choice somebody should make in plain view. On a shared or borrowed phone the default quietly hands one person another person’s details.
+A rare edge case, since most people in a family keep a phone of their own to use. — A shared phone is ordinary in many households, and a borrowed one is ordinary everywhere. It is a normal condition rather than an edge.
 
 Improve: Write what the second person can see in the shared-walk box in step 5, then change the default or make the choice visible, and record the change in the last box.
 
@@ -1937,6 +2025,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
 
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a city’s parking-permit app signs residents in with a code sent to the phone number on their permit. A resident has changed her number and wants to update it. She knows her permit number and her car’s registration, both printed on the permit displayed in her windscreen, and she confirmed an email address when she applied.
+
+**Task:** Decide whether the permit number and registration are enough to change her phone number, describe the route you would design instead, and explain why, including what the app replies when someone asks to recover an account.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Accepts the permit number and registration as proof, or replies differently depending on whether an account exists, such as “No account found for that number”.
+- Adequate: Rejects them, because anyone who sees the windscreen knows both; routes the change through a code to the email she confirmed, or a reviewed check, with one reply for everyone: “If an account matches, we have sent instructions.”
+- Strong: As adequate, and tells the old number about the change, allows a window to undo it, and writes down the reviewed manual check for someone with no confirmed email.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+
 ### Review and finish your practice
 
 Section: practice. Stable action: review-work.
@@ -1957,15 +2071,15 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: Getting in and getting back in
-What I am trying to do: Design the sign-in, sign-up and recovery paths for your product, including the shared-device and lost-access cases, with every form field labelled, every error message written and the recovery path shown to work without the thing that was lost.
+What I am trying to do: Design the sign-in, sign-up and recovery paths for your product, including the shared-device and lost-access cases, with every form field labelled, every error message written, and the recovery path shown to work without the thing that was lost — through a channel the person verified earlier or a reviewed check, never revealing whether an account exists.
 
 Key idea or terms:
 Persistent label: A label that stays visible while the person types. A placeholder that vanishes as soon as typing starts is not a label.
 Field-level error: A message beside the field it concerns. An error that could apply to two fields has not yet told anyone anything.
-Factor: One thing a person uses to prove who they are: a phone that receives a code, an inbox, a booking reference.
+Factor: One thing a person uses to prove who they are, such as a phone that receives a code or an inbox she confirmed. A booking reference is not one: anyone holding the confirmation knows it.
 
 Supplied practice material (fictional or labelled practice, not my research):
-A made up sign-in path. A person registered with a phone number and signs in with a code sent by message. She has since changed her number, so the code reaches a phone she no longer has, and she does not remember whether she ever added an email address.
+A made up sign-in path. A person registered with a phone number and an email address, and confirmed both at the time. She signs in with a code sent by message, but she has changed her number, so the code reaches a phone she no longer has. She still has her booking confirmation, showing the booking reference and the class date.
 
 Activity: Give me one constraint from the supplied case and ask me to make a choice inside it. Then ask what trade-off my choice creates.
 
@@ -1982,7 +2096,7 @@ When the activity is finished, tell me to return to the course answer called “
 <summary>Optional hints and reference material</summary>
 
 - List every field and write its label, its instruction and its error text. Any error that could apply to two fields is not yet field-level.
-- Walk the flow as someone who has changed their phone number and lost the email password. Draw what they can actually do.
+- Walk the flow twice: as someone who has changed her phone number, and as a stranger holding her booking confirmation. Draw what each can do; anything the stranger can change on the account is a hole to close.
 
 - R14: [W3C: forms tutorial](https://www.w3.org/WAI/tutorials/forms/) — Labels, instructions, validating input and user notifications. Purpose: Supplies the requirements every authentication field in this lesson must meet. Free reading, no account. Verified 2026-09-06. It covers form accessibility rather than authentication design; the shared-device and recovery reasoning here is the course's own. Implemented keyboard and screen-reader behaviour still needs testing in a real build. Fallback: R10.
 - R36: [NN/g: preventing user errors](https://www.nngroup.com/articles/user-mistakes/) — Slips versus mistakes, prevention, and helping people recover. Purpose: Frames a failed sign-in as a recoverable event to be designed rather than a user failure to be reported. Free reading, no account. Verified 2026-09-06. Prevention techniques are options to choose between, not a checklist to apply wholesale. Fallback: R02.
@@ -1993,11 +2107,11 @@ When the activity is finished, tell me to return to the course answer called “
 
 **Every field has a persistent label and a field-level error**
 
-Adequate evidence: Field-by-field wording showing labels that remain visible and error messages tied to specific fields, with input preserved.
+Adequate evidence: Field-by-field wording showing labels that remain visible and fixable errors tied to specific fields, with input preserved and no message revealing whether an account exists.
 
 0 — Placeholders used as labels, or errors only at page level.
 
-1 — Labels present but errors generic or detached from fields.
+1 — Labels present but errors generic or detached from fields, or an error that says whether an account exists.
 
 2 — Persistent labels, field-level errors, and preserved input throughout.
 
@@ -2005,19 +2119,19 @@ Adequate evidence: Field-by-field wording showing labels that remain visible and
 
 Repair: List every field and write its label, its instruction and its error text. Any error that could apply to two fields is not yet field-level. Recheck: The field-by-field table.
 
-**Recovery works without the lost factor**
+**Recovery verifies identity without the lost factor**
 
-Adequate evidence: At least one recovery route using a different factor, plus a defined ending for someone with nothing left.
+Adequate evidence: At least one recovery route through a factor verified earlier, a reviewed route to a human for someone with nothing left, and replies that read the same whether or not an account exists.
 
-0 — Recovery depends on the lost factor.
+0 — Recovery depends on the lost factor, or accepts facts such as a booking reference that anyone holding the confirmation knows.
 
-1 — An alternative exists but is not drawn or is unavailable to your real users.
+1 — A different route exists but is not drawn, is unavailable to your real users, or its replies reveal whether an account exists.
 
-2 — A genuine alternative route and a route to a human are both on the flow.
+2 — A route through an already-verified channel and a reviewed route to a human are both on the flow, and no reply reveals whether an account exists.
 
-3 — As adequate, and the design states what identity check the human route uses, so it is not simply an unspecified promise.
+3 — As adequate, and changing a phone number or email notifies the old contact and can be undone for a stated time, with the human route's identity check written down.
 
-Repair: Walk the flow as someone who has changed their phone number and lost the email password. Draw what they can actually do. Recheck: The recovery paths on the flow.
+Repair: Walk the flow twice: as someone who has changed her phone number, and as a stranger holding her booking confirmation. Draw what each can do; anything the stranger can change on the account is a hole to close. Recheck: The recovery paths on the flow, with the replies they show.
 
 **The shared-device case is designed, not assumed away**
 
@@ -2055,7 +2169,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 **Review criteria:**
 
 - Every field has a persistent label and a field-level error
-- Recovery works without the lost factor
+- Recovery verifies identity without the lost factor
 - The shared-device case is designed, not assumed away
 - The account's purpose is stated or the requirement removed
 
@@ -2563,18 +2677,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A helper sees the refund control greyed out with no explanation beside it. What is wrong with that?
 
-- Nothing is wrong: the control is visible, which is the point of not hiding it.
-- It should have been hidden, since she cannot use it.
-- It says no without saying why, so she cannot tell whether she took a wrong turn, should sign in as someone else, or should ask a colleague.
+- It refuses without a reason, so she cannot tell whether to sign in again or ask someone.
+- Very little: the control is visible, which is the whole point of not hiding it from her.
+- It should be hidden instead, since a control she cannot use only clutters her screen.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing is wrong: the control is visible, which is the point of not hiding it. — Visibility only helps if it carries the reason. A grey control with no words leaves her guessing, and most people guess badly.
+It refuses without a reason, so she cannot tell whether to sign in again or ask someone. — A disabled control with no reason is the worst of the three answers. It costs one sentence to say who can do it, and without that sentence people conclude the product is broken.
 
-It should have been hidden, since she cannot use it. — She is the person being asked for the refund, so she needs to know it exists. Hiding it removes her route to pass the request on.
+Very little: the control is visible, which is the whole point of not hiding it from her. — Visibility only helps if it carries the reason. A grey control with no words leaves her guessing, and most people guess badly.
 
-It says no without saying why, so she cannot tell whether she took a wrong turn, should sign in as someone else, or should ask a colleague. — A disabled control with no reason is the worst of the three answers. It costs one sentence to say who can do it, and without that sentence people conclude the product is broken.
+It should be hidden instead, since a control she cannot use only clutters her screen. — She is the person being asked for the refund, so she needs to know it exists. Hiding it removes her route to pass the request on.
 
 Improve: Go through your unavailable boxes in step 4. Any disabled case without wording gets its sentence now, and record the change in step 5.
 
@@ -2593,18 +2707,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You filled every cell of the matrix in five minutes and not one says undecided. What does that tell you?
 
-- Some cells were decided by you in the act of drawing the grid, and those are the ones worth marking as unsettled.
-- That your product’s permissions are genuinely simple.
-- That you should ask an engineer to confirm the grid.
+- That the grid is ready for an engineer, who can confirm each cell against the code.
+- Some cells were decided by you while drawing, and those deserve to be marked undecided.
+- That the product’s permissions are genuinely simple, since nothing needed any thought.
 
 <details>
 <summary>After your attempt</summary>
 
-Some cells were decided by you in the act of drawing the grid, and those are the ones worth marking as unsettled. — A cell decided while drawing has no source behind it. Marking it undecided keeps the question alive instead of burying it under a tick.
+That the grid is ready for an engineer, who can confirm each cell against the code. — An engineer can say what the code does today. Whether a helper should be able to cancel a place is not a question the code can answer.
 
-That your product’s permissions are genuinely simple. — Speed is a sign that nothing was checked rather than that the model is small. Most products have at least one cell nobody has ever decided.
+Some cells were decided by you while drawing, and those deserve to be marked undecided. — A cell decided while drawing has no source behind it. Marking it undecided keeps the question alive instead of burying it under a tick.
 
-That you should ask an engineer to confirm the grid. — An engineer can say what the code does today. Whether a helper should be able to cancel a place is not a question the code can answer.
+That the product’s permissions are genuinely simple, since nothing needed any thought. — Speed is a sign that nothing was checked rather than that the model is small. Most products have at least one cell nobody has ever decided.
 
 Improve: Reread each allowed and not-allowed cell in step 3 and ask who decided it and when. Move the ones with no answer into your undecided box, then note the change in step 5.
 
@@ -2621,20 +2735,20 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You hid the management controls from customers, and also hid the booking control from the owner because she is not a customer. What happens?
+You hid the management controls from customers, and also hid the booking control from the owner because she is not a customer. She books a place on her own class most weeks. What happens?
 
-- The owner books a place on her own class most weeks, so the product now refuses something she does regularly and gives her no clue why.
-- Nothing much: she can use the management screens instead.
-- She should keep a second account for booking as a customer.
+- Little changes: she can use the management screens to add herself to the class.
+- She keeps a second account for booking as a customer, which solves it cleanly.
+- The product now refuses something she does every week, and gives her no clue why.
 
 <details>
 <summary>After your attempt</summary>
 
-The owner books a place on her own class most weeks, so the product now refuses something she does regularly and gives her no clue why. — One person holding two roles is ordinary. A rule written per role rather than per person is exactly where interfaces begin contradicting themselves.
+Little changes: she can use the management screens to add herself to the class. — The management screens let her change the class, not take a place on it as an attendee. Those are different actions, and only one of them is what she wants.
 
-Nothing much: she can use the management screens instead. — The management screens let her change the class, not take a place on it. Those are different actions and only one of them is what she wants.
+She keeps a second account for booking as a customer, which solves it cleanly. — That hands your model’s problem to her as a chore, and splits her own bookings across two identities.
 
-She should keep a second account for booking as a customer. — That hands your model’s problem to her as a chore, and splits her own bookings across two identities.
+The product now refuses something she does every week, and gives her no clue why. — One person holding two roles is ordinary. A rule written per role rather than per person is exactly where interfaces begin contradicting themselves.
 
 Improve: Walk the double role in step 5 and write down every contradiction you meet, then record what you changed in the last box.
 
@@ -2718,6 +2832,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a housing society books its community hall through an app with three roles: resident, committee member and caretaker. Only committee members can refund a deposit. The caretaker opens the hall on the day, and residents often ask her about refunds there and then.
+
+**Task:** Decide whether the caretaker should see the refund control hidden, disabled with a reason, or with a route to ask, write the words she would see, and explain why.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Hides the control because she cannot use it, or greys it out with no explanation.
+- Adequate: Chooses a route to ask, because residents ask her and a committee member can grant it, with wording such as “Only the committee can refund deposits — send them this booking”.
+- Strong: As adequate, and marks an undecided cell, such as whether the caretaker may record damage that affects the refund, with what would settle it, and walks a caretaker who is also a resident.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -3093,11 +3233,11 @@ Made-up example. Choosing the fields for one result card, and finding that most 
 
 Section: practice-plan. Stable action: write-result-field-1.
 
-Write your answer for “Result field 1 · what it is and the observation it came from”. Use the task instructions below to decide what to include.
+Refer to people by label, never by name. With no observation, name the source you do have, such as a real message or your own walkthrough, and mark a guess as a guess.
 
 **Answer:** Result field 1 · what it is and the observation it came from
 
-
+Refer to people by label, never by name. With no observation, name the source you do have, such as a real message or your own walkthrough, and mark a guess as a guess.
 
 <details>
 <summary>Example</summary>
@@ -3189,21 +3329,21 @@ A made up filter combination on a class-booking product. “Saturday morning”,
 
 What should the empty screen do first?
 
-- Name the distance filter as the one that emptied the list, offer to remove it, and show that six classes are waiting.
-- Clear all the filters automatically and show everything again.
-- Say “No results found” and leave the filters alone so she can adjust them herself.
-- Show the nearest matches anyway, without saying which filter was relaxed.
+- Say “No results found” and leave all four filters in place, so she can adjust them herself.
+- Name the distance filter as the cause, offer to remove it, and show the six classes waiting.
+- Show the nearest matches anyway, quietly relaxing whichever filter excluded the most classes.
+- Clear all four filters automatically and show every class again, so the list is never empty.
 
 <details>
 <summary>After your attempt</summary>
 
-Name the distance filter as the one that emptied the list, offer to remove it, and show that six classes are waiting. — It says what happened, why, and gives one action with a visible reward. She does not have to take filters off one at a time to find the culprit.
+Say “No results found” and leave all four filters in place, so she can adjust them herself. — Accurate, and it hands her the whole search back to work out. She has four filters and no way of knowing which one did it.
 
-Clear all the filters automatically and show everything again. — That removes the emptiness by throwing away the work she did. Three of her four filters were fine and she now has to rebuild them from memory.
+Name the distance filter as the cause, offer to remove it, and show the six classes waiting. — It says what happened, why, and gives one action with a visible reward. She does not have to take filters off one at a time to find the culprit.
 
-Say “No results found” and leave the filters alone so she can adjust them herself. — Accurate, and it hands her the whole search back to work out. She has four filters and no way of knowing which one did it.
+Show the nearest matches anyway, quietly relaxing whichever filter excluded the most classes. — Quietly ignoring a filter is worse than an empty list, because she believes the results still meet what she asked for and may book something an hour away.
 
-Show the nearest matches anyway, without saying which filter was relaxed. — Quietly ignoring a filter is worse than an empty list, because she believes the results still meet what she asked for and may book something an hour away.
+Clear all four filters automatically and show every class again, so the list is never empty. — That removes the emptiness by throwing away the work she did. Three of her four filters were fine and she now has to rebuild them from memory.
 
 Write your own no-results screen the same way: which filter, what to remove, what is waiting. Then do the too-many screen, where the job is the opposite — suggest the narrowing that helps most and show the count before she commits to it.
 
@@ -3240,18 +3380,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You go back from a class page and the results reload from the top with the filters cleared. Why does that matter more than it looks?
 
-- It is a small irritation and people are used to it.
-- It only matters when the list is long.
-- It stops people comparing, so they settle for whichever result they can still remember.
+- It matters only when the list is long; short lists are quick to build again.
+- It is a small irritation that most people are used to from other booking sites.
+- It stops people comparing, so they settle for whichever result they still remember.
 
 <details>
 <summary>After your attempt</summary>
 
-It is a small irritation and people are used to it. — They are used to it, and they respond by opening fewer results. The cost is invisible because nobody complains about a booking they did make.
+It matters only when the list is long; short lists are quick to build again. — A short list still carries the narrowing that made it short. Losing four filters on ten results is the same loss of work.
 
-It only matters when the list is long. — A short list still carries the narrowing that made it short. Losing four filters on ten results is the same loss of work.
+It is a small irritation that most people are used to from other booking sites. — They are used to it, and they respond by opening fewer results. The cost is invisible because nobody complains about a booking they did make.
 
-It stops people comparing, so they settle for whichever result they can still remember. — Rebuilding a search is more work than accepting a good-enough answer, and most people accept. Your design has quietly chosen for them.
+It stops people comparing, so they settle for whichever result they still remember. — Rebuilding a search is more work than accepting a good-enough answer, and most people accept. Your design has quietly chosen for them.
 
 Improve: Add anything missing to the preserved-state box in step 2, walking your own flow again to find it, then record the change in step 5.
 
@@ -3300,18 +3440,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A filter combination returns two hundred classes. What is the most useful thing that screen can do?
 
-- Sort the results better and let her scroll.
-- Show how many results there are and leave the rest to her.
-- Suggest the one narrowing that would help most, and show the count it would leave behind.
+- Show the total of two hundred clearly and leave the narrowing decisions to her.
+- Sort the two hundred results better and let her scroll until something suits her.
+- Suggest the narrowing that would help most, with the count it would leave behind.
 
 <details>
 <summary>After your attempt</summary>
 
-Sort the results better and let her scroll. — Sorting helps somebody who can already judge the list. Two hundred results is a starting problem rather than an ordering one.
+Show the total of two hundred clearly and leave the narrowing decisions to her. — The count names the problem without offering a move. She still has to guess which of your filters would cut it down.
 
-Show how many results there are and leave the rest to her. — The count names the problem without offering a move. She still has to guess which of your filters would cut it down.
+Sort the two hundred results better and let her scroll until something suits her. — Sorting helps somebody who can already judge the list. Two hundred results is a starting problem rather than an ordering one.
 
-Suggest the one narrowing that would help most, and show the count it would leave behind. — Two hundred means she cannot start. A suggested next filter with its count lets her see the effect before committing to it.
+Suggest the narrowing that would help most, with the count it would leave behind. — Two hundred means she cannot start. A suggested next filter with its count lets her see the effect before committing to it.
 
 Improve: Fill the too-many box in step 4 with the suggested narrowing and the counts you would show, then record it in step 5.
 
@@ -3372,6 +3512,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: on a furniture-rental site, a person filters sofas to “two-seater”, “under 1,500 a month” and “delivery this week”, scrolls to the twelfth result and opens it. When she presses back, the list reloads from the top with every filter cleared. She has three sofas she is still choosing between.
+
+**Task:** Decide what the back step must restore and what light mechanism would hold her three candidates, and explain why each matters for how she chooses.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Treats losing the filters as a minor irritation, or adds a heavy compare tool before fixing the return step.
+- Adequate: Restores the filters, sort, scroll position and seen items on return, because rebuilding the list stops people comparing, and adds the lightest holder, such as a shortlist, so she need not remember the three.
+- Strong: As adequate, and says what happens if she returns later or on another device, names what was rejected and why, and notes that the result card should carry what renters actually compare.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -3570,7 +3736,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The commitment step became a review screen listing class, date, time, place, total, what is included, the cancellation deadline in plain words, and a change link beside each. The pay button carried the exact amount. Four wait states were designed after the m05 observation of a woman standing at a window waiting: pending said what was happening and told her not to pay again; failed said nothing had been taken and offered a retry that kept her details; unknown gave a reference, a promise of a message within an hour and a number to ring. Confirmation gave the reference first, sent it by message, and stated that it could be found later with the reference and phone number — no account needed. Throttled to a slow connection, the pending message arrived before any styling, which was the point of writing it as text rather than an animation.
+- The commitment step became a review screen listing class, date, time, place, total, what is included, the cancellation deadline in plain words, and a change link beside each. The pay button carried the exact amount. Four wait states were designed after the m05 observation of a woman standing at a window waiting: pending said what was happening and told her not to pay again; failed said nothing had been taken and offered a retry that kept her details; unknown gave a reference, a promise of a message within an hour and a number to ring. Confirmation gave the reference first, sent it by message, and stated that it could be found later with the reference and a code sent to the booking’s phone — no account needed. Throttled to a slow connection, the pending message arrived before any styling, which was the point of writing it as text rather than an animation.
 
 
 ### Choose where you will do the work
@@ -3733,21 +3899,21 @@ A made up situation. She taps Pay on a slow connection. The request leaves the p
 
 What should that screen say?
 
-- What is known so far, that she must not pay again, when she will hear, and a reference she can quote.
-- “Payment failed. Please try again.”
-- “Something went wrong. Contact support.”
-- Keep the circle turning until an answer arrives, so that nothing untrue is said.
+- That something went wrong and she should contact support, who can check the payment.
+- Nothing new: keep the circle turning until an answer arrives, so nothing untrue is said.
+- That the payment failed and she should try again, so the booking is not lost while she waits.
+- What is known so far, not to pay again, when she will hear, and a reference to quote.
 
 <details>
 <summary>After your attempt</summary>
 
-What is known so far, that she must not pay again, when she will hear, and a reference she can quote. — Unknown is a state she is standing in, not an error. Telling her what is true and what not to do is what prevents a second payment made out of anxiety.
+That something went wrong and she should contact support, who can check the payment. — It answers none of the three things she needs: what happened to the money, what she should not do next, and when she will know.
 
-“Payment failed. Please try again.” — You do not know that it failed. If it did not, she pays twice, and a message that guesses in the reassuring direction costs her real money.
+Nothing new: keep the circle turning until an answer arrives, so nothing untrue is said. — Saying nothing is itself a message, and after ninety seconds it reads as broken. She closes the tab, and now nobody has told her where her money is.
 
-“Something went wrong. Contact support.” — It answers none of the three things she needs: what happened to the money, what she should not do next, and when she will know.
+That the payment failed and she should try again, so the booking is not lost while she waits. — You do not know that it failed. If it did not, she pays twice, and a message that guesses in the reassuring direction costs her real money.
 
-Keep the circle turning until an answer arrives, so that nothing untrue is said. — Saying nothing is itself a message, and after ninety seconds it reads as broken. She closes the tab, and now nobody has told her where her money is.
+What is known so far, not to pay again, when she will hear, and a reference to quote. — Unknown is a state she is standing in, not an error. Telling her what is true and what not to do is what prevents a second payment made out of anxiety.
 
 Write your own unknown state first, in her words. Then check that pending, failed and confirmed each answer the money question too.
 
@@ -3854,18 +4020,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your flow shows pending, confirmed and failed. Why is that not enough?
 
-- The request can leave and never be answered, and that is a fourth state a person can be standing in.
-- Three states cover it; unknown is only pending that has lasted a while.
-- The bank will resolve it, so the interface need not say anything.
+- The bank resolves anything unclear, so the interface need not say anything more.
+- A request can leave and never be answered, a fourth state she can be standing in.
+- Three states cover it, since unknown is only pending that has lasted a while longer.
 
 <details>
 <summary>After your attempt</summary>
 
-The request can leave and never be answered, and that is a fourth state a person can be standing in. — Unknown is where second payments happen. Designing it is the difference between a worried hour and a duplicate charge you caused.
+The bank resolves anything unclear, so the interface need not say anything more. — It may resolve in a day. She is deciding within two minutes whether to pay again, and only your screen can tell her not to.
 
-Three states cover it; unknown is only pending that has lasted a while. — Pending says the system knows and is working. Unknown says the system does not know, and those need different words and a different promise.
+A request can leave and never be answered, a fourth state she can be standing in. — Unknown is where second payments happen. Designing it is the difference between a worried hour and a duplicate charge you caused.
 
-The bank will resolve it, so the interface need not say anything. — It may resolve in a day. She is deciding within two minutes whether to pay again, and only your screen can tell her not to.
+Three states cover it, since unknown is only pending that has lasted a while longer. — Pending says the system knows and is working. Unknown says the system does not know, and those need different words and a different promise.
 
 Improve: Fill the unknown box in step 3 with what is true, what not to do, when she will hear and how to check, then record the change in step 5.
 
@@ -3884,18 +4050,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You disable the pay button after the first tap. Is a double charge prevented?
 
-- It is, because the button cannot be pressed a second time.
-- Only on that page: she can press back, resend the form or reopen it, so the second identical request must be recognised and do nothing new.
-- A confirmation dialogue before the button would be safer still.
+- Only on that page: back, resending or reopening can repeat it, so a repeat must do nothing new.
+- Mostly, though a confirmation dialogue before the button would make it safer still.
+- Fully, because a disabled button cannot be pressed a second time from any screen.
 
 <details>
 <summary>After your attempt</summary>
 
-It is, because the button cannot be pressed a second time. — The button is one route to the request. Closing the tab and reopening it, or pressing back and then forward, sends it again with the button never involved.
+Only on that page: back, resending or reopening can repeat it, so a repeat must do nothing new. — Disabling is a courtesy on one screen. The real defence is a rule you agree with an engineer and write on the flow, because that is where the repeat arrives.
 
-Only on that page: she can press back, resend the form or reopen it, so the second identical request must be recognised and do nothing new. — Disabling is a courtesy on one screen. The real defence is a rule you agree with an engineer and write on the flow, because that is where the repeat arrives.
+Mostly, though a confirmation dialogue before the button would make it safer still. — That adds a step for everybody and leaves the resend problem exactly where it was. The repeat comes from the browser rather than from her finger.
 
-A confirmation dialogue before the button would be safer still. — That adds a step for everybody and leaves the resend problem exactly where it was. The repeat comes from the browser rather than from her finger.
+Fully, because a disabled button cannot be pressed a second time from any screen. — The button is one route to the request. Closing the tab and reopening it, or pressing back and then forward, sends it again with the button never involved.
 
 Improve: Write the duplicate-request sentence in step 5, then record in the last box what it changed about your flow annotation.
 
@@ -3914,18 +4080,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You looked at your paper screens and decided the wait would feel fine. What is the honest response?
 
-- Assume the message arrives quickly because it is only text.
-- Load a comparable live page with throttling on and the cache disabled, and write down the sequence and the seconds.
-- Paper cannot show timing, so note that the check was not possible and move on.
+- Note that paper cannot show timing, so the check was not possible, and move on to the next step.
+- Load a comparable live page, throttled with the cache off, and write down what arrived when.
+- Assume the message arrives quickly, since plain text loads before anything else on a page.
 
 <details>
 <summary>After your attempt</summary>
 
-Assume the message arrives quickly because it is only text. — Text does tend to arrive first, and that is the finding rather than the assumption. Writing the sequence down is what turns it into something you can point at.
+Note that paper cannot show timing, so the check was not possible, and move on to the next step. — Something can be checked without a prototype. Watching a comparable page on a slow connection is real evidence about the timing your design has to survive.
 
-Load a comparable live page with throttling on and the cache disabled, and write down the sequence and the seconds. — Timing cannot be seen on paper. Any real page on a slow profile shows you the gap between the action and the first feedback, which is the thing you are designing around.
+Load a comparable live page, throttled with the cache off, and write down what arrived when. — Timing cannot be seen on paper. Any real page on a slow profile shows you the gap between the action and the first feedback, which is the thing you are designing around.
 
-Paper cannot show timing, so note that the check was not possible and move on. — Something can be checked without a prototype. Watching a comparable page on a slow connection is real evidence about the timing your design has to survive.
+Assume the message arrives quickly, since plain text loads before anything else on a page. — Text does tend to arrive first, and that is the finding rather than the assumption. Writing the sequence down is what turns it into something you can point at.
 
 Improve: Run the throttled load and fill the sequence box in step 4, then record in step 5 what it changed about your pending wording.
 
@@ -3963,7 +4129,7 @@ Made-up example. Deciding where a booking confirmation lives afterwards, and put
 
 **Where it goes:** She closes the tab, or the phone runs out of battery, or she arrives at the studio with no signal. Nothing I had written said where the confirmation existed apart from that one screen.
 
-**What I added:** The same confirmation sent as a message and as an email, both carrying the reference. The reference alone is enough to find the booking over the phone, and anyone signed in finds it again under Your bookings.
+**What I added:** The same confirmation sent as a message and as an email, both carrying the reference. Over the phone, staff find the booking by its reference and send a code to the booking’s phone before changing anything, and anyone signed in finds it again under Your bookings.
 
 **What that did to the repeat question:** The sentence became: if a request arrives twice with the same reference, the second one changes nothing and returns the first confirmation. A resent form and a reopened tab both land on the booking she already has.
 
@@ -3989,11 +4155,11 @@ Write your answer for “The sentence you would say to an engineer about what ha
 
 Section: practice. Stable action: write-confirmation-home.
 
-A reference and a phone number is a route. So is a message that arrives on the phone.
+A reference plus a code sent to the booking’s phone is a route. So is a message that arrives on the phone. Neither should let anyone change who the booking belongs to.
 
 **Answer:** Where the confirmation lives after the tab closes, and how it is found again
 
-A reference and a phone number is a route. So is a message that arrives on the phone.
+A reference plus a code sent to the booking’s phone is a route. So is a message that arrives on the phone. Neither should let anyone change who the booking belongs to.
 
 
 ### What you changed after the Check questions
@@ -4005,6 +4171,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: on an intercity bus app, a traveller taps “Pay 640” on a slow station connection. The request leaves and nothing comes back; after a minute the button still shows a spinner and she cannot tell whether the money has gone. The bus leaves in twenty minutes.
+
+**Task:** Decide what the screen should say and offer in this unknown state, and explain why each part is there.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Shows “Payment failed, try again” or keeps the spinner going, both of which invite a second payment.
+- Adequate: Says what is true so far (payment not yet confirmed), tells her not to pay again, says when she will hear, and gives a reference she can show or quote, because anxiety otherwise produces a double charge.
+- Strong: As adequate, and offers a way to check later that does not need this page, notes that a repeated request must be treated as the same booking, and considers what the twenty-minute departure means for the promise.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -4146,11 +4338,11 @@ Bring: Your complete flow with its states and waits. Every decision point and ev
 
 Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
-- An exception table of at least twelve cases, each classified slip or mistake, with the chosen response and its reason, full message wording covering what happened, what it means and what to do next, and a harm ranking with three cases marked to fix first.
+- An exception table of at least twelve cases, each classified slip, mistake or system fault, with the chosen response and its reason, full message wording covering what happened, what it means and what to do next, and a harm ranking with three cases marked to fix first.
 
 ### Start here: in everyday words
 
-A flow is the series of steps and choices a person follows to finish a task. In this lesson, your first small result is: Your own sentence separating a slip from a mistake, with one of each taken from your flow.
+A flow is the series of steps and choices a person follows to finish a task. In this lesson, your first small result is: Your own sentences separating a slip, a mistake and a system fault, with one of each taken from your flow.
 
 **Words you will use**
 
@@ -4158,29 +4350,29 @@ A flow is the series of steps and choices a person follows to finish a task. In 
 - **Mistake:** The person did the wrong thing believing it was right. Prevented by telling them what is true before they act.
 - **System fault:** Neither hand nor belief. Your side failed, or something changed underneath them. Answered by an honest state and a route out.
 
-**Quick example.** Made-up example. Classifying nineteen failures for a booking flow, and reaching for a confirmation dialogue on almost every one. Nineteen cases from the four questions. Twelve looked like careless taps and seven looked like people believing something untrue.
+**Quick example.** Made-up example. Classifying nineteen failures for a booking flow, and reaching for a confirmation dialogue on almost every one. Nineteen cases from the four questions. Ten looked like careless taps, five like people believing something untrue, and four were the product failing: a timeout, a price changing underneath her, a place taken, a message never sent.
 
-The reader demonstrates and guides the task before asking for “The difference between a slip and a mistake, in your own words, with one of each from your flow”.
+The reader demonstrates and guides the task before asking for “The difference between a slip, a mistake and a system fault, in your own words, with one of each from your flow”.
 
 ### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
-Produce an exception table for your whole flow listing at least twelve failure cases, each classified as a slip or a mistake, with its prevention, its message and its recovery route.
+Produce an exception table for your whole flow listing at least twelve failure cases, each classified as a slip, a mistake or a system fault, with its prevention or safeguard, its message and its recovery route.
 
 
 ### Idea 1: The assigned reading separates slips from mistakes, and the di…
 
 Section: learn. Stable action: learn-1.
 
-The assigned reading separates slips from mistakes, and the distinction decides the response. A slip is when someone knew what to do and their hands or attention failed — the wrong date tapped, a digit missed, the wrong button on a crowded screen. A mistake is when the person's model was wrong — they believed booking held a place, or that cancelling was free. Slips are prevented by design: bigger targets, sensible defaults, confirmation of consequential actions, forgiving formats. Mistakes are prevented by explanation and feedback: telling people what is true before they act on their assumption.
+The assigned reading separates slips from mistakes, and the distinction decides the response. A slip is when someone knew what to do and their hands or attention failed — the wrong date tapped, a digit missed, the wrong button on a crowded screen. A mistake is when the person's model was wrong — they believed booking held a place, or that cancelling was free. Slips are prevented by design: bigger targets, sensible defaults, confirmation of consequential actions, forgiving formats. Mistakes are prevented by explanation and feedback: telling people what is true before they act on their assumption. This lesson adds a third class the reading does not name: the system fault, where the person's hand and belief were both fine and the product or something around it failed — a timeout, an outage, a payment provider error, data that went stale or changed underneath them. System faults are answered by safeguards and recovery: an honest state, what has happened to their money, work and place, a retry that cannot do the action twice, and a route out that does not depend on the part that failed. Forcing a system fault into slip or mistake blames the person for the product's failure and produces the wrong fix.
 
 
 ### Generate the list systematically rather than by imagination
 
 Section: learn. Stable action: learn-2.
 
-Generate the list systematically rather than by imagination. Walk your flow and at every node ask four questions: what if the input is wrong, what if the system fails, what if the person leaves and comes back, and what if someone else changed something meanwhile. That last one produces the failures nobody thinks of — the place taken while they were deciding, the class cancelled while they were paying, the price changed between two screens.
+Generate the list systematically rather than by imagination. Walk your flow and at every node ask four questions: what if the input is wrong, what if the system fails, what if the person leaves and comes back, and what if someone else changed something meanwhile. That last one produces the failures nobody thinks of — the place taken while they were deciding, the class cancelled while they were paying, the price changed between two screens. The second and fourth questions mostly produce system faults; keep them in that class rather than relabelling them as user error.
 
 
 ### Every message needs three things and most have one
@@ -4203,7 +4395,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- An exception table for a booking flow reached nineteen rows. Slips: wrong date tapped on a crowded calendar — prevented with larger targets and the day name shown beside the number; a mistyped phone number — prevented by a forgiving format and an echo of what was entered. Mistakes: believing a held place was a booking — prevented by naming the state on screen and in the message; believing cancellation was free — prevented by stating the deadline on the review screen. Concurrency: the last place taken while the person was on the payment screen, which had never been considered, and which produced the worst message in the product until it was written properly. Undo was chosen for cancelling a booking within five minutes; confirmation was reserved for the one genuinely irreversible action; nothing else got either.
+- An exception table for a booking flow reached nineteen rows. Slips: wrong date tapped on a crowded calendar — prevented with larger targets and the day name shown beside the number; a mistyped phone number — prevented by a forgiving format and an echo of what was entered. Mistakes: believing a held place was a booking — prevented by naming the state on screen and in the message; believing cancellation was free — prevented by stating the deadline on the review screen. System faults: the payment service timing out, answered with an honest unknown state and a retry that cannot charge twice; and, found only by the changed-meanwhile question, the last place taken while the person was on the payment screen, which had never been considered and which produced the worst message in the product until it was written properly. Undo was chosen for cancelling a booking within five minutes; confirmation was reserved for the one genuinely irreversible action; nothing else got either.
 
 
 ### Choose where you will do the work
@@ -4219,13 +4411,13 @@ Recommended route: Fill the worksheet in this app, step by step. It saves as you
 
 Section: practice-plan. Stable action: step-1-brief.
 
-Your own sentence separating a slip from a mistake, with one of each taken from your flow.
+Your own sentences separating a slip, a mistake and a system fault, with one of each taken from your flow.
 
-- Read the assigned article on preventing user errors and the recovery heuristic. Write the difference between a slip and a mistake in your own words, with one example from your own flow for each.
+- Read the assigned article on preventing user errors and the recovery heuristic. Write the difference between a slip, a mistake and a system fault in your own words, with one example from your own flow for each.
 
 **Start here:** Write one of each about the same screen and put them side by side.
 
-**Enough:** Both of your own cases come from your flow, and you can say which part of each one failed: the hand or the belief.
+**Enough:** All three of your cases come from your flow, and you can say what failed in each: the hand, the belief, or the product’s side.
 
 **Slip:** The person knew what they wanted and the hand or the interface betrayed them. Prevented by design: bigger targets, sensible defaults, forgiving formats.
 
@@ -4390,20 +4582,20 @@ Now write your own sentence above, and put one case of each kind from your flow 
 </details>
 
 
-### The difference between a slip and a mistake, in your own words, with one of each from your flow
+### The difference between a slip, a mistake and a system fault, in your own words, with one of each from your flow
 
 Section: practice-plan. Stable action: write-slip-mistake-difference.
 
-A slip is a failure of the hand or the attention. A mistake is a failure of belief.
+A slip is a failure of the hand or the attention. A mistake is a failure of belief. A system fault is the product’s side failing or changing underneath the person: a timeout, an outage, a provider error, stale data.
 
-**Answer:** The difference between a slip and a mistake, in your own words, with one of each from your flow
+**Answer:** The difference between a slip, a mistake and a system fault, in your own words, with one of each from your flow
 
-A slip is a failure of the hand or the attention. A mistake is a failure of belief.
+A slip is a failure of the hand or the attention. A mistake is a failure of belief. A system fault is the product’s side failing or changing underneath the person: a timeout, an outage, a provider error, stale data.
 
 <details>
 <summary>Example</summary>
 
-Example (made up): a slip is tapping Saturday when she meant Sunday. A mistake is leaving the payment screen because she believed the place was already hers.
+Example (made up): a slip is tapping Saturday when she meant Sunday. A mistake is leaving the payment screen because she believed the place was already hers. A system fault is the payment service not answering, so nobody knows whether she paid.
 
 </details>
 
@@ -4484,11 +4676,11 @@ Section: practice-plan. Stable action: step-3-brief.
 
 Five rows in full: what fails, slip or mistake or system fault, the response and the reason for it.
 
-- Mark each case slip or mistake, then choose prevention, undo, confirmation or recovery only — with a reason. Prefer undo to confirmation where the action can be reversed.
+- Mark each case slip, mistake or system fault, then choose prevention, undo, confirmation, a safeguard or recovery only — with a reason. Prefer undo to confirmation where the action can be reversed, and never relabel a system fault as user error.
 
 **Start here:** Take the case that worries you most and fill its row before you choose the other four.
 
-**Enough:** Every row names a response and a reason, and no row classified as a mistake is answered by a confirmation alone.
+**Enough:** Every row names a response and a reason, no mistake is answered by a confirmation alone, and no system fault is filed as the person’s error.
 
 **Prevention:** Changing the design so the failure cannot happen, or becomes much harder to reach.
 
@@ -4498,6 +4690,8 @@ Five rows in full: what fails, slip or mistake or system fault, the response and
 
 **Confirmation dialogue:** A box asking whether she is sure. Worth it once, for something truly irreversible; used often, it teaches people to press through without reading.
 
+**Safeguard:** A protection on your side that limits the damage when the product fails, such as a repeated payment request doing nothing new. It answers a system fault the way prevention answers a slip.
+
 
 ### See the decision being made
 
@@ -4505,7 +4699,7 @@ Section: practice-plan. Stable action: step-3-demo.
 
 Made-up example. Classifying nineteen failures for a booking flow, and reaching for a confirmation dialogue on almost every one.
 
-**What I had:** Nineteen cases from the four questions. Twelve looked like careless taps and seven looked like people believing something untrue.
+**What I had:** Nineteen cases from the four questions. Ten looked like careless taps, five like people believing something untrue, and four were the product failing: a timeout, a price changing underneath her, a place taken, a message never sent.
 
 **What I did first:** I marked nearly everything a slip and wrote “add a confirmation dialogue” beside each. It felt thorough and it took ten minutes.
 
@@ -4513,7 +4707,7 @@ Made-up example. Classifying nineteen failures for a booking flow, and reaching 
 
 **What I changed:** Undo for cancelling a booking, for five minutes. A confirmation kept for the single action that genuinely cannot be reversed. Nothing at all on the trivial ones.
 
-**What the classification was for:** The seven mistakes never needed a dialogue in the first place. They needed a sentence saying what was true before she acted: a held place named as held, a deadline stated on the review screen.
+**What the classification was for:** The five mistakes needed a sentence saying what was true before she acted. The four system faults needed neither a dialogue nor a sentence: they needed safeguards and an honest state — a retry that cannot charge twice, her place held, and a message saying it was our side.
 
 **Wrong turn:** The wrong turn is answering every failure with a confirmation dialogue. It is the cheapest thing to write, it looks careful, and it makes rare slips slightly less likely at the price of interrupting everybody constantly.
 
@@ -4588,9 +4782,9 @@ Write your answer for “Case 5 · what fails and where, slip or mistake or syst
 
 Section: practice-plan. Stable action: step-4-brief.
 
-Full wording for the two hardest messages: what happened, what it means for the person, what to do next.
+Full wording for the two hardest messages, and one system fault answered with a safeguard, an honest message and a route out.
 
-- For each case write what happened, what it means for the person and what to do next. No message may use system vocabulary or leave the money question unanswered.
+- For each case write what happened, what it means for the person and what to do next. No message may use system vocabulary or leave the money question unanswered, and a system fault says plainly that the failure was on the product's side.
 
 **Start here:** Write the money one first, as though to someone who has just paid and seen nothing at all.
 
@@ -4651,6 +4845,24 @@ Say what is true so far, say plainly not to pay again, say when they will hear a
 Say what is true so far, say plainly not to pay again, say when they will hear and how to check without this page.
 
 
+### One system fault from your table: the safeguard on your side, what the message tells her about her money, work and place, and a route out that does not depend on the part that failed
+
+Section: practice-plan. Stable action: write-system-fault-response.
+
+Never file the product’s own failure as her error. Say it was your side, say what is safe, and make a retry unable to do the action twice.
+
+**Answer:** One system fault from your table: the safeguard on your side, what the message tells her about her money, work and place, and a route out that does not depend on the part that failed
+
+Never file the product’s own failure as her error. Say it was your side, say what is safe, and make a retry unable to do the action twice.
+
+<details>
+<summary>Example</summary>
+
+Example (made up): the price changed while she sat on the review screen · safeguard: the total is checked again before charging · message: “The price of this class changed to 900 while you were deciding. Nothing has been charged. Pay 900 to book, or choose another class.” · route: pay the new total or go back to the list.
+
+</details>
+
+
 ### Check your reasoning · 1 of 3
 
 Section: check. Stable action: reason-1.
@@ -4659,24 +4871,24 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You have eleven cases and every one came from imagining what might go wrong. What is most likely missing?
 
-- Nothing important: eleven cases from a flow you know well is a thorough list.
-- The wrong-input cases, since people mistype more often than anyone expects.
-- The cases where somebody else changed something while your person was deciding: a place taken, a class cancelled, a price altered.
+- Little of importance: eleven cases from a flow you know well makes a thorough list.
+- System faults and changes made meanwhile: a timeout, a place taken, a price altered.
+- The wrong-input cases, since people mistype far more often than anyone ever expects.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing important: eleven cases from a flow you know well is a thorough list. — A list from imagination reproduces what you already worry about. The systematic walk exists to find what you do not.
+Little of importance: eleven cases from a flow you know well makes a thorough list. — A list from imagination reproduces what you already worry about. The systematic walk exists to find what you do not.
 
-The wrong-input cases, since people mistype more often than anyone expects. — Those are the easiest to imagine, so they are usually already on an intuitive list. They are rarely what it is short of.
+System faults and changes made meanwhile: a timeout, a place taken, a price altered. — Nobody imagines those, because they are not about your person at all. They are found by walking the flow with the system-failure and changed-meanwhile questions in front of you, and they are system faults rather than user errors.
 
-The cases where somebody else changed something while your person was deciding: a place taken, a class cancelled, a price altered. — Nobody imagines those, because they are not about your person at all. They are found by walking the flow with that one question written in front of you.
+The wrong-input cases, since people mistype far more often than anyone ever expects. — Those are the easiest to imagine, so they are usually already on an intuitive list. They are rarely what it is short of.
 
-Improve: Go back to changed-meanwhile-cases in step 2 and walk every wait node again with that single question. Record what you added in the last step.
+Improve: Go back to system-failure-cases and changed-meanwhile-cases in step 2 and walk every wait node again with those two questions, labelling each case found a system fault. Record what you added in step 5.
 
-Check again: At least twelve cases exist and the changed-meanwhile list is no longer empty.
+Check again: At least twelve cases exist, and the system-failure and changed-meanwhile lists are no longer empty.
 
-Answers to revisit: wrong-input-cases, system-failure-cases, return-cases, changed-meanwhile-cases
+Answers to revisit: wrong-input-cases, system-failure-cases, return-cases, changed-meanwhile-cases, improvement-made
 
 </details>
 
@@ -4689,24 +4901,24 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 One of your rows is a person believing a held place was a confirmed booking, and you have answered it with a confirmation dialogue. What is wrong with that?
 
-- Nothing is wrong: a dialogue makes her stop and think.
-- A dialogue asks her to confirm something she already believes is true, so it changes nothing about her belief.
-- The dialogue needs a stronger warning colour.
+- Only its look: the dialogue needs a stronger warning colour so that she reads it.
+- Very little: a dialogue makes her stop and think before she leaves the payment screen.
+- A dialogue asks her to confirm what she already believes, so her belief stays wrong.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing is wrong: a dialogue makes her stop and think. — It makes her stop. What she thinks in that moment is what she already thought, which is the wrong thing.
+Only its look: the dialogue needs a stronger warning colour so that she reads it. — Colour changes how loudly the wrong information arrives. The content is the problem.
 
-A dialogue asks her to confirm something she already believes is true, so it changes nothing about her belief. — Mistakes are answered by saying what is true before she acts. Name the state as held on the screen and in the message, with the time it expires.
+Very little: a dialogue makes her stop and think before she leaves the payment screen. — It makes her stop. What she thinks in that moment is what she already thought, which is the wrong thing.
 
-The dialogue needs a stronger warning colour. — Colour changes how loudly the wrong information arrives. The content is the problem.
+A dialogue asks her to confirm what she already believes, so her belief stays wrong. — Mistakes are answered by saying what is true before she acts. Name the state as held on the screen and in the message, with the time it expires.
 
 Improve: Find that row in step 3, change its response to a fact stated before the action, and write the sentence into message-worst in step 4. Record the change in the last step.
 
 Check again: No row classified as a mistake is answered by a confirmation alone.
 
-Answers to revisit: case-1, case-2, case-3, case-4, case-5, message-worst, message-money
+Answers to revisit: case-1, case-2, case-3, case-4, case-5, message-worst, message-money, system-fault-response
 
 </details>
 
@@ -4719,18 +4931,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You have ranked your cases by how likely each one is. Why is that the wrong order?
 
-- Likelihood is fine, as long as you fix everything eventually.
-- A rare failure that costs someone money or lost work does more harm than a common one that costs a moment.
-- Because the likely ones are already handled by the interface.
+- Likelihood is a fine order, provided every case on the list gets fixed eventually.
+- A rare failure that costs money or work does more harm than a common one costing a moment.
+- The likely cases are usually already handled by the interface, so they rank lowest.
 
 <details>
 <summary>After your attempt</summary>
 
-Likelihood is fine, as long as you fix everything eventually. — Nobody fixes everything. The order decides what gets designed at all, so it should be the order of what hurts.
+Likelihood is a fine order, provided every case on the list gets fixed eventually. — Nobody fixes everything. The order decides what gets designed at all, so it should be the order of what hurts.
 
-A rare failure that costs someone money or lost work does more harm than a common one that costs a moment. — Ranked by harm, the payment-unknown case rises above the mistyped name. Likelihood is the tie-breaker between two equally harmful cases.
+A rare failure that costs money or work does more harm than a common one costing a moment. — Ranked by harm, the payment-unknown case rises above the mistyped name. Likelihood is the tie-breaker between two equally harmful cases.
 
-Because the likely ones are already handled by the interface. — Some are and some are not, and either way that is not what makes the ordering wrong.
+The likely cases are usually already handled by the interface, so they rank lowest. — Some are and some are not, and either way that is not what makes the ordering wrong.
 
 Improve: Reorder harm-ranking in step 5 by what each failure costs the person, mark the three you would fix first, and record the change in the last step.
 
@@ -4780,6 +4992,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
 
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a photo-printing kiosk app has three failures. One customer taps the thumbnail next to the one she meant and orders the wrong photo. Another believes his prints are ready to collect the moment he pays, though printing takes an hour. A third customer’s order stops half-way because the kiosk’s print server times out, and the screen just says “Error 502”.
+
+**Task:** Classify each failure as a slip, a mistake or a system fault, and for the system fault explain what the message and the safeguard must do, and why.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Files the timeout as user error, such as “she should retry”, or calls all three slips, and keeps “Error 502” or a vague apology.
+- Adequate: Wrong thumbnail is a slip, “ready at once” is a mistake, the timeout is a system fault; its message says the kiosk failed, what happened to the money and the order, and offers a retry that cannot charge twice.
+- Strong: As adequate, and ranks the timeout first by harm because money and an order are at stake, gives the slip a design fix and the mistake a fact stated before paying, and says how the customer checks the order later.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+
 ### Review and finish your practice
 
 Section: practice. Stable action: review-work.
@@ -4800,7 +5038,7 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: The paths where things go wrong
-What I am trying to do: Produce an exception table for your whole flow listing at least twelve failure cases, each classified as a slip or a mistake, with its prevention, its message and its recovery route.
+What I am trying to do: Produce an exception table for your whole flow listing at least twelve failure cases, each classified as a slip, a mistake or a system fault, with its prevention or safeguard, its message and its recovery route.
 
 Key idea or terms:
 Slip: The person knew what they wanted and the hand or the interface betrayed them. Prevented by design: bigger targets, sensible defaults, forgiving formats.
@@ -4808,24 +5046,24 @@ Mistake: The person did the wrong thing believing it was right. Prevented by tel
 System fault: Neither hand nor belief. Your side failed, or something changed underneath them. Answered by an honest state and a route out.
 
 Supplied practice material (fictional or labelled practice, not my research):
-Made-up example. Classifying nineteen failures for a booking flow, and reaching for a confirmation dialogue on almost every one. Nineteen cases from the four questions. Twelve looked like careless taps and seven looked like people believing something untrue.
+Made-up example. Classifying nineteen failures for a booking flow, and reaching for a confirmation dialogue on almost every one. Nineteen cases from the four questions. Ten looked like careless taps, five like people believing something untrue, and four were the product failing: a timeout, a price changing underneath her, a place taken, a message never sent.
 
 Activity: Give me one constraint from the supplied case and ask me to make a choice inside it. Then ask what trade-off my choice creates.
 
 Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
-When the activity is finished, tell me to return to the course answer called “The difference between a slip and a mistake, in your own words, with one of each from your flow” and write my own decision. Do not write that answer for me.
+When the activity is finished, tell me to return to the course answer called “The difference between a slip, a mistake and a system fault, in your own words, with one of each from your flow” and write my own decision. Do not write that answer for me.
 ```
 
-**Come back to the course:** Return to “The difference between a slip and a mistake, in your own words, with one of each from your flow”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+**Come back to the course:** Return to “The difference between a slip, a mistake and a system fault, in your own words, with one of each from your flow”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The difference between a slip and a mistake, in your own words, with one of each from your flow” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The difference between a slip, a mistake and a system fault, in your own words, with one of each from your flow” and write one sentence in your own words.
 
 </details>
 <details>
 <summary>Optional hints and reference material</summary>
 
 - Go back through the flow node by node with the four questions written in front of you. Do not skip nodes that feel safe; the wait states usually hide the worst cases.
-- For each case ask whether the person intended the right thing. If they did, it is a slip; if their belief was wrong, it is a mistake.
+- For each case ask three questions in order. Did the product or something around it fail or change? Then it is a system fault. If not, did the person intend the right thing? If they did, it is a slip; if their belief was wrong, it is a mistake.
 
 - R36: [NN/g: preventing user errors](https://www.nngroup.com/articles/user-mistakes/) — Slips versus mistakes, the gulfs of execution and evaluation, affordances, signifiers, feedback and undo. Purpose: Supplies the classification this lesson is built on and the range of responses available. Free reading, no account. Verified 2026-09-06. Prevention techniques are options to choose between, not a checklist to apply wholesale; the concurrency cases are this lesson's addition. Fallback: R02.
 - R02: [Nielsen: ten usability heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/) — Heuristic 5, error prevention, and heuristic 9, help users recognise, diagnose and recover from errors. Purpose: Sets the standard each message and recovery route is written against. Free reading, no account. Verified 2026-09-06. A heuristic identifies a candidate problem; whether your message works is a question for the usability test in lesson 13. Fallback: R11.
@@ -4838,39 +5076,39 @@ When the activity is finished, tell me to return to the course answer called “
 
 Adequate evidence: A table covering every node against the four questions, including concurrency cases.
 
-0 — A handful of obvious errors.
+0 — A handful of obvious errors, all treated as the person's fault.
 
-1 — A longer list, but generated ad hoc and missing whole classes such as concurrency.
+1 — A longer list, but generated ad hoc and missing whole classes such as system failures or concurrency.
 
-2 — Twelve or more from a systematic walk, including someone-else-changed-it cases.
+2 — Twelve or more from a systematic walk, including system failures and someone-else-changed-it cases.
 
 3 — As adequate, and at least one case is one you would not have thought of without the four-question walk, and is marked as such.
 
 Repair: Go back through the flow node by node with the four questions written in front of you. Do not skip nodes that feel safe; the wait states usually hide the worst cases. Recheck: The extended exception table.
 
-**Each case is classified slip or mistake**
+**Each case is classified slip, mistake or system fault**
 
-Adequate evidence: A classification per row, consistent with the definitions, with the response following from it.
+Adequate evidence: A classification per row, consistent with the definitions, with system faults kept apart from user error and the response following from the class.
 
-0 — No classification.
+0 — No classification, or system failures listed as the person's error.
 
-1 — Classified inconsistently, or all cases treated as slips.
+1 — Classified inconsistently, or every case forced into slip or mistake, including the system's own failures.
 
-2 — Every case classified and the response follows from the class.
+2 — Every case classified as slip, mistake or system fault, and the response follows from the class.
 
-3 — As adequate, and one case is identified as both — a slip made likely by a mistaken belief — with both addressed.
+3 — As adequate, and one case is identified as two classes at once — a slip made likely by a mistaken belief, or a system fault that a person then compounds — with both addressed.
 
-Repair: For each case ask whether the person intended the right thing. If they did, it is a slip; if their belief was wrong, it is a mistake. Recheck: The classified table.
+Repair: For each case ask three questions in order. Did the product or something around it fail or change? Then it is a system fault. If not, did the person intend the right thing? If they did, it is a slip; if their belief was wrong, it is a mistake. Recheck: The classified table.
 
 **Responses are chosen with a stated reason**
 
-Adequate evidence: Prevention, undo, confirmation or recovery-only chosen per case, with a reason and no blanket use of confirmation.
+Adequate evidence: Prevention, undo, confirmation, a safeguard or recovery-only chosen per case, with a reason and no blanket use of confirmation.
 
 0 — Responses missing, or confirmation applied everywhere.
 
 1 — Responses chosen without reasons.
 
-2 — Each response has a reason, with undo preferred where reversal is possible.
+2 — Each response has a reason, with undo preferred where reversal is possible and system faults answered by safeguards and recovery rather than by warnings to the person.
 
 3 — As adequate, and at least one case is deliberately left unprevented because prevention would cost everyone more than the failure costs.
 
@@ -4884,7 +5122,7 @@ Adequate evidence: Full wording per case, in the person's vocabulary, answering 
 
 1 — Wording present but missing what it means for the person.
 
-2 — All three elements in every message, in plain words.
+2 — All three elements in every message, in plain words, with system faults saying plainly that the failure was on the product's side.
 
 3 — As adequate, and one message is written for the worst case — unknown outcome — and says what not to do.
 
@@ -4898,7 +5136,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 **Review criteria:**
 
 - At least twelve cases generated systematically, not by intuition
-- Each case is classified slip or mistake
+- Each case is classified slip, mistake or system fault
 - Responses are chosen with a stated reason
 - Every message says what happened, what it means and what to do
 
@@ -4931,7 +5169,7 @@ A flow is the series of steps and choices a person follows to finish a task. In 
 - **Fidelity:** How finished a drawing looks. It is a choice, and a rougher drawing gets you better answers about structure.
 - **Branch:** One route through your flow from beginning to end, including the places where it goes wrong.
 
-**Quick example.** A supplied class detail screen, made up for practice, drawn two ways. Version A: photograph, description, class name, date and time, price, book. Version B: class name, date and time, price, what to bring, book, description, photograph.
+**Quick example.** A supplied class detail screen, made up for practice, drawn two ways. In the same made-up research, people chose between classes by date and time, price and what to bring. Version A: photograph, description, class name, date and time, price, book. Version B: class name, date and time, price, what to bring, book, description, photograph.
 
 The reader demonstrates and guides the task before asking for “What a low-fidelity frame can settle, and what it cannot”.
 
@@ -4967,7 +5205,7 @@ Design each screen around its one job. A screen usually exists to let a person d
 
 Section: learn. Stable action: learn-4.
 
-Wireframe the exceptions too, not only the happy path. Your exception table names states — pending, unavailable, empty, permission-denied — and each is a screen a person will actually see. Drawing them at low fidelity costs minutes and reveals immediately whether your layout has anywhere to put a two-line explanation, which is the commonest reason error messages end up somewhere useless.
+Wireframe the exceptions too, not only the happy path. Your exception table names states — pending, unavailable, empty, permission-denied — and each is a screen a person will actually see. Drawing them at low fidelity costs minutes and reveals immediately whether your layout has anywhere to put a two-line explanation, which is a common reason error messages end up somewhere useless.
 
 
 ### See the idea in a supplied example
@@ -5208,25 +5446,25 @@ Two content orders for one screen, and a stated reason for the one you kept.
 
 Section: practice-plan. Stable action: step-4-try.
 
-A supplied class detail screen, made up for practice, drawn two ways. Version A: photograph, description, class name, date and time, price, book. Version B: class name, date and time, price, what to bring, book, description, photograph.
+A supplied class detail screen, made up for practice, drawn two ways. In the same made-up research, people chose between classes by date and time, price and what to bring. Version A: photograph, description, class name, date and time, price, book. Version B: class name, date and time, price, what to bring, book, description, photograph.
 
 Which version is the better starting point, and for what reason?
 
-- Version B on a phone, and version A on a wide screen.
+- Version B on a phone and Version A on a wide screen, where there is room for the photograph.
 - Version A, because the photograph draws people in and the description explains the class.
-- Neither can be judged until there is a visual design.
-- Version B, because the things a person compares on come before the action and everything else follows.
+- Neither yet: the order cannot be judged until the screen has its visual design applied.
+- Version B, because what people compare on comes before the action, and the rest follows.
 
 <details>
 <summary>After your attempt</summary>
 
-Version B on a phone, and version A on a wide screen. — Width changes the arrangement rather than the priority. If price and date matter most, they matter most at every width, which is the next lesson.
+Version B on a phone and Version A on a wide screen, where there is room for the photograph. — Width changes the arrangement rather than the priority. If price and date matter most, they matter most at every width, which is the next lesson.
 
 Version A, because the photograph draws people in and the description explains the class. — That order serves someone who has already decided and is enjoying the page. Anyone still comparing has to scroll past the pleasant part to reach the price.
 
-Neither can be judged until there is a visual design. — Colour and type change how an order feels, not what the order is. This is the one question a plain frame answers better than a finished screen.
+Neither yet: the order cannot be judged until the screen has its visual design applied. — Colour and type change how an order feels, not what the order is. This is the one question a plain frame answers better than a finished screen.
 
-Version B, because the things a person compares on come before the action and everything else follows. — The order matches what someone is doing on this screen, which is deciding whether to book. The description is supporting material and sits where supporting material belongs.
+Version B, because what people compare on comes before the action, and the rest follows. — The order matches what someone is doing on this screen, which is deciding whether to book. The description is supporting material and sits where supporting material belongs.
 
 Now draw your own least certain screen a second way, and write what each order favours in the box below.
 
@@ -5274,18 +5512,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You do not have the wording for one label yet, so you write something plausible to fill the box. What does that cost you?
 
-- The frame can no longer show you that the real words do not fit, which is most of what it was for.
-- Some time, since you will have to draw the frame twice.
-- Very little, as long as you replace it later.
+- Some time, since the frame will have to be drawn a second time once the words exist.
+- The frame can no longer show you that the real words will not fit, its main job.
+- Very little, provided you remember to replace it with the real label before handover.
 
 <details>
 <summary>After your attempt</summary>
 
-The frame can no longer show you that the real words do not fit, which is most of what it was for. — Writing “unknown — needs a decision” keeps the gap visible and keeps the frame honest about its own length.
+Some time, since the frame will have to be drawn a second time once the words exist. — Redrawing on paper is cheap. The cost is the problem you never found.
 
-Some time, since you will have to draw the frame twice. — Redrawing on paper is cheap. The cost is the problem you never found.
+The frame can no longer show you that the real words will not fit, its main job. — Writing “unknown — needs a decision” keeps the gap visible and keeps the frame honest about its own length.
 
-Very little, as long as you replace it later. — Plausible text is extremely hard to spot later, precisely because it reads well. Nobody goes hunting for the sentence that looks right.
+Very little, provided you remember to replace it with the real label before handover. — Plausible text is extremely hard to spot later, precisely because it reads well. Nobody goes hunting for the sentence that looks right.
 
 Improve: Go through open-decisions in step 3 and replace every invented string on the frames with the real label or the words “unknown — needs a decision”. Record what you changed in the last step.
 
@@ -5304,18 +5542,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You show the frames to someone and they comment on the colours and the spacing. What has gone wrong?
 
-- The frames look finished enough to invite it, so the reading has moved off what is on the screen and in what order.
-- They should have been asked to ignore the styling.
-- Nothing: comments on colour are useful at any stage.
+- The frames look finished enough to invite it, pulling attention off content and order.
+- The briefing: they should have been asked to ignore styling before they looked at all.
+- Little has gone wrong: comments on colour and spacing are useful at any stage of design.
 
 <details>
 <summary>After your attempt</summary>
 
-The frames look finished enough to invite it, so the reading has moved off what is on the screen and in what order. — One pen weight, no colour, no borrowed components. A rougher frame gets you the answer you actually needed.
+The frames look finished enough to invite it, pulling attention off content and order. — One pen weight, no colour, no borrowed components. A rougher frame gets you the answer you actually needed.
 
-They should have been asked to ignore the styling. — People respond to what is in front of them. Asking someone to unsee it works far less well than not drawing it.
+The briefing: they should have been asked to ignore styling before they looked at all. — People respond to what is in front of them. Asking someone to unsee it works far less well than not drawing it.
 
-Nothing: comments on colour are useful at any stage. — They are useful when there are colour decisions to make. Given now, they cost you the only question these frames can answer.
+Little has gone wrong: comments on colour and spacing are useful at any stage of design. — They are useful when there are colour decisions to make. Given now, they cost you the only question these frames can answer.
 
 Improve: Look at styling-left-out in step 3, strip any styling from the frames, and record it in the last step.
 
@@ -5334,18 +5572,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your branch has nine screens and states, and you have drawn six frames. What is most likely missing?
 
-- Nothing: six frames for one branch is a reasonable number.
-- The wide-screen versions of each frame.
-- The exception states, which take minutes to draw and show at once whether the layout has room for an explanation.
+- The wide-screen versions of each frame, which the branch will need before handover.
+- The exception states, which take minutes and show whether the layout has room to explain.
+- Little: six frames for a single branch is a reasonable number to have drawn by now.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing: six frames for one branch is a reasonable number. — The number is not the test. The test is whether every state in the flow has somewhere to be.
+The wide-screen versions of each frame, which the branch will need before handover. — Widths are the next lesson. This one is about whether the screens exist and hold the right things.
 
-The wide-screen versions of each frame. — Widths are the next lesson. This one is about whether the screens exist and hold the right things.
+The exception states, which take minutes and show whether the layout has room to explain. — A pending state with nowhere to put three lines of reassurance is a problem found with a pencil rather than in code.
 
-The exception states, which take minutes to draw and show at once whether the layout has room for an explanation. — A pending state with nowhere to put three lines of reassurance is a problem found with a pencil rather than in code.
+Little: six frames for a single branch is a reasonable number to have drawn by now. — The number is not the test. The test is whether every state in the flow has somewhere to be.
 
 Improve: Use screen-list in step 2 as a checklist, draw the missing frames however uninteresting they look, and record it in the last step.
 
@@ -5406,6 +5644,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
 
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a recipe-box subscription is wireframing its “skip a week” screen. The first frame has grey boxes with ruled lines for text, a large image box and a “Confirm” button. A colleague has already asked what colour the button should be, and nobody has drawn what happens if the week can no longer be skipped.
+
+**Task:** Decide the two most important changes to this frame before anyone discusses colour, and explain why each comes first.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Picks a colour or styles the frame to answer the colleague, or keeps the ruled placeholder lines.
+- Adequate: Replaces the ruled lines with real words, such as which week, what is charged and the deadline, or marks “unknown — needs a decision”, and writes the screen’s single job, because real content shows what fits and what is missing.
+- Strong: As adequate, and draws the exception state for a week that can no longer be skipped, keeps the frame plain on purpose, and notes a second content order worth comparing.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+
 ### Review and finish your practice
 
 Section: practice. Stable action: review-work.
@@ -5434,7 +5698,7 @@ Fidelity: How finished a drawing looks. It is a choice, and a rougher drawing ge
 Branch: One route through your flow from beginning to end, including the places where it goes wrong.
 
 Supplied practice material (fictional or labelled practice, not my research):
-A supplied class detail screen, made up for practice, drawn two ways. Version A: photograph, description, class name, date and time, price, book. Version B: class name, date and time, price, what to bring, book, description, photograph.
+A supplied class detail screen, made up for practice, drawn two ways. In the same made-up research, people chose between classes by date and time, price and what to bring. Version A: photograph, description, class name, date and time, price, book. Version B: class name, date and time, price, what to bring, book, description, photograph.
 
 Activity: Give me one constraint from the supplied case and ask me to make a choice inside it. Then ask what trade-off my choice creates.
 
@@ -5557,7 +5821,7 @@ A flow is the series of steps and choices a person follows to finish a task. In 
 - **Scaling:** The same arrangement made smaller. It keeps the wide layout’s priorities and squeezes them, which is how a price ends up below the fold.
 - **Never-move:** The elements a person is tracking through the whole task. They stay visible and reachable at every width.
 
-**Quick example.** A supplied narrow layout of a made-up class detail screen, top to bottom: photograph, class name over three lines, description, date and time, price, book action, related classes.
+**Quick example.** A supplied narrow layout of a made-up class detail screen, top to bottom: photograph, class name over three lines, description, date and time, price, book action, related classes. In the same made-up research, people opened this screen to check when a class runs and what it costs.
 
 The reader demonstrates and guides the task before asking for “The difference between content reflowing and a layout being scaled down, in your own words”.
 
@@ -5743,25 +6007,25 @@ Both screens drawn narrow first, then medium, then wide, with real text at its l
 
 Section: practice-plan. Stable action: step-3-try.
 
-A supplied narrow layout of a made-up class detail screen, top to bottom: photograph, class name over three lines, description, date and time, price, book action, related classes.
+A supplied narrow layout of a made-up class detail screen, top to bottom: photograph, class name over three lines, description, date and time, price, book action, related classes. In the same made-up research, people opened this screen to check when a class runs and what it costs.
 
 What is the first thing to change, and why?
 
-- Make the photograph smaller so more fits above the fold.
-- Shorten the class name so it fits on one line.
-- Hide the related classes list, since it matters least.
-- Move date, time and price above the description, so she can decide without scrolling past a block of text.
+- Hide the related classes list, since it matters least and takes space on a narrow screen.
+- Make the photograph smaller, so that more of the decision information fits above the fold.
+- Move date, time and price above the description, so she can decide without scrolling.
+- Shorten the class name to a single line, which frees two lines at the very top of the screen.
 
 <details>
 <summary>After your attempt</summary>
 
-Make the photograph smaller so more fits above the fold. — Shrinking it keeps something she did not come for in a position she has to read past. Its position is the problem rather than its size.
+Hide the related classes list, since it matters least and takes space on a narrow screen. — That frees space at the bottom, which is not where the space is needed, and it takes something away from the first-time visitor who is most likely to be on a phone.
 
-Shorten the class name so it fits on one line. — Worth doing, and it wins one line. The decision information is still four items further down.
+Make the photograph smaller, so that more of the decision information fits above the fold. — Shrinking it keeps something she did not come for in a position she has to read past. Its position is the problem rather than its size.
 
-Hide the related classes list, since it matters least. — That frees space at the bottom, which is not where the space is needed, and it takes something away from the first-time visitor who is most likely to be on a phone.
+Move date, time and price above the description, so she can decide without scrolling. — They are the things she came for, and on a narrow screen anything below a long description is effectively out of sight. Nothing else on the list stops her deciding.
 
-Move date, time and price above the description, so she can decide without scrolling past a block of text. — They are the things she came for, and on a narrow screen anything below a long description is effectively out of sight. Nothing else on the list stops her deciding.
+Shorten the class name to a single line, which frees two lines at the very top of the screen. — Worth doing, and it wins one line. The decision information is still four items further down.
 
 Now read your own narrow drawings top to bottom and move anything a person is tracking above the first long block of text.
 
@@ -5880,18 +6144,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You drew the wide layout first because it is easier to see everything, then squeezed it down. What tends to go wrong?
 
-- Nothing, provided you check the narrow version afterwards.
-- The wide layout’s priorities survive the squeeze, so the narrow screen keeps a large image and a navigation row and pushes the price down.
-- The wide layout leaves too much empty space at narrow width.
+- The wide layout’s priorities survive the squeeze, so the price ends up pushed down.
+- Very little, provided the narrow version is checked carefully once it has been squeezed.
+- The wide layout leaves too much empty space behind once it is squeezed to narrow width.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing, provided you check the narrow version afterwards. — Checking finds the breakages and leaves the order that caused them, because reordering a finished wide layout feels like starting again.
+The wide layout’s priorities survive the squeeze, so the price ends up pushed down. — Deciding the narrow order first forces the priority question while there is no room to dodge it. Widening afterwards is much the easier direction.
 
-The wide layout’s priorities survive the squeeze, so the narrow screen keeps a large image and a navigation row and pushes the price down. — Deciding the narrow order first forces the priority question while there is no room to dodge it. Widening afterwards is much the easier direction.
+Very little, provided the narrow version is checked carefully once it has been squeezed. — Checking finds the breakages and leaves the order that caused them, because reordering a finished wide layout feels like starting again.
 
-The wide layout leaves too much empty space at narrow width. — Space is not the failure. The failure is what ends up at the top.
+The wide layout leaves too much empty space behind once it is squeezed to narrow width. — Space is not the failure. The failure is what ends up at the top.
 
 Improve: Redraw narrow-order in step 3 from your never-move list rather than from the wide version, then record the change in the last step.
 
@@ -5910,18 +6174,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 To make the narrow layout fit, you hide the what-to-bring section. What is the honest test of that decision?
 
-- Whether the section is short enough to be worth keeping.
-- Whether it comes back at wider widths, since nothing is really lost.
-- Ask whether anyone needs it. If they do, hiding it removes it from the people most likely to be on a phone.
+- Whether anyone needs it, since hiding it removes it from the people on phones.
+- Whether the section is short enough to be worth the space it takes on a narrow screen.
+- Whether it comes back at wider widths, since then nothing is really lost to anybody.
 
 <details>
 <summary>After your attempt</summary>
 
-Whether the section is short enough to be worth keeping. — Length decides where something goes, not whether anyone is allowed to have it.
+Whether anyone needs it, since hiding it removes it from the people on phones. — The narrow width is where your first-time and one-device visitors are. Move it down the order rather than away.
 
-Whether it comes back at wider widths, since nothing is really lost. — It is lost to whoever is on the narrow screen, and they cannot know it exists in order to go looking for it.
+Whether the section is short enough to be worth the space it takes on a narrow screen. — Length decides where something goes, not whether anyone is allowed to have it.
 
-Ask whether anyone needs it. If they do, hiding it removes it from the people most likely to be on a phone. — The narrow width is where your first-time and one-device visitors are. Move it down the order rather than away.
+Whether it comes back at wider widths, since then nothing is really lost to anybody. — It is lost to whoever is on the narrow screen, and they cannot know it exists in order to go looking for it.
 
 Improve: Add a justification beside every entry in may-hide in step 2, and move anything you cannot justify into the narrow order. Record it in the last step.
 
@@ -5940,18 +6204,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You skipped the enlarged-text check because your screens are pencil drawings. What is the honest response?
 
-- Assume it is fine, because the layout has generous spacing.
-- Record that it cannot be checked on paper and move on.
-- Letter the same screen a step larger throughout and see what collides; that is the paper version of the check.
+- Redraw one screen with every letter a step larger, and note what collides.
+- Record that enlarged text cannot be checked on paper, and move on to the next check.
+- Assume it is fine, because the layout already leaves generous spacing everywhere.
 
 <details>
 <summary>After your attempt</summary>
 
-Assume it is fine, because the layout has generous spacing. — Generous spacing is the first thing enlarged text consumes. Buttons, containers and fixed rows are where it collides.
+Redraw one screen with every letter a step larger, and note what collides. — The check is about text growing inside a fixed width, and a pencil shows that well enough to find the collisions.
 
-Record that it cannot be checked on paper and move on. — It can, roughly, and roughly is enough to find collisions. Skipping it means a layout that fails daily for a great many readers.
+Record that enlarged text cannot be checked on paper, and move on to the next check. — It can, roughly, and roughly is enough to find collisions. Skipping it means a layout that fails daily for a great many readers.
 
-Letter the same screen a step larger throughout and see what collides; that is the paper version of the check. — The check is about text growing inside a fixed width, and a pencil shows that well enough to find the collisions.
+Assume it is fine, because the layout already leaves generous spacing everywhere. — Generous spacing is the first thing enlarged text consumes. Buttons, containers and fixed rows are where it collides.
 
 Improve: Fill enlarged-text-result in step 4 by redrawing one screen a step larger throughout, then record what you changed in the last step.
 
@@ -6019,6 +6283,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
 
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: an event-ticket page at phone width shows, top to bottom: a large poster image, the event description, the seating map, then the date, the price and the Buy button. The designer proposes hiding the seating map on phones to save space. Buyers choose seats by section, and the price depends on the section.
+
+**Task:** Decide which elements must never move off the first screen and whether to hide the seating map on phones, and explain why.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Shrinks the poster or hides the seating map because it is large, keeping the wide layout’s order.
+- Adequate: Puts date, price and Buy in the never-move set at the top and keeps the seating map, moved below the price rather than hidden, because the price depends on the section and phone buyers need it too.
+- Strong: As adequate, and writes a behaviour note a developer could build from, checks the longest real event name and enlarged text, and notes that how buyers use the map is an assumption to check.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+
 ### Review and finish your practice
 
 Section: practice. Stable action: review-work.
@@ -6047,7 +6337,7 @@ Scaling: The same arrangement made smaller. It keeps the wide layout’s priorit
 Never-move: The elements a person is tracking through the whole task. They stay visible and reachable at every width.
 
 Supplied practice material (fictional or labelled practice, not my research):
-A supplied narrow layout of a made-up class detail screen, top to bottom: photograph, class name over three lines, description, date and time, price, book action, related classes.
+A supplied narrow layout of a made-up class detail screen, top to bottom: photograph, class name over three lines, description, date and time, price, book action, related classes. In the same made-up research, people opened this screen to check when a class runs and what it costs.
 
 Activity: Give me one constraint from the supplied case and ask me to make a choice inside it. Then ask what trade-off my choice creates.
 
@@ -6206,7 +6496,7 @@ State what triggers each state and what leaves it. A loading state that has no d
 
 Section: learn. Stable action: learn-4.
 
-Disabled and unavailable are different and the distinction matters more than it sounds. Disabled means not yet: something must be completed first, and the interface should say what. Unavailable means not for you, or not now, which is the permission and availability work from earlier lessons. A disabled control with no explanation is read as a broken product, and it is the single most common state failure in student work.
+Disabled and unavailable are different and the distinction matters more than it sounds. Disabled means not yet: something must be completed first, and the interface should say what. Unavailable means not for you, or not now, which is the permission and availability work from earlier lessons. A disabled control with no explanation is read as a broken product, and it is a very common state failure in student work.
 
 
 ### See the idea in a supplied example
@@ -6301,7 +6591,7 @@ Made-up example. Specifying a book-a-place button, and greying it out without ev
 
 **What that produced:** Eight rows instead of three. Focus arrived because I had to say how a keyboard user knows where she is, and the timeout arrived because I had to say what ends loading when nothing comes back.
 
-**Wrong turn:** The wrong turn is treating disabled as a look rather than a sentence. A grey control with no explanation is read as a broken product, and it is the commonest state failure there is.
+**Wrong turn:** The wrong turn is treating disabled as a look rather than a sentence. A grey control with no explanation is read as a broken product, and it is a very common state failure.
 
 **Trade-off:** Splitting disabled into two states means two sets of wording and two triggers to agree with whoever builds it. It is more work than one grey rule, and it is the difference between a person waiting and a person leaving.
 
@@ -6437,21 +6727,21 @@ A supplied empty screen from a made-up class-booking product. The bookings list,
 
 What is the most useful thing to add first?
 
-- An illustration, so the space does not look broken.
-- A sentence saying what will appear here and the one action that produces the first item.
-- A larger, clearer plus button.
-- A message saying the list is empty.
+- An illustration filling the grey area, so the space no longer looks broken or unfinished.
+- A short message stating that the list is empty, so nobody thinks the page failed to load.
+- A sentence saying what will appear here, and the one action that adds the first booking.
+- A larger, brighter plus button in the corner, so the way to add a booking is easy to spot.
 
 <details>
 <summary>After your attempt</summary>
 
-An illustration, so the space does not look broken. — It fills the space and says nothing. She still does not know what this list is for or how to start it.
+An illustration filling the grey area, so the space no longer looks broken or unfinished. — It fills the space and says nothing. She still does not know what this list is for or how to start it.
 
-A sentence saying what will appear here and the one action that produces the first item. — The empty state is the first teaching this person gets. “Your bookings appear here — find a class to make your first one” gives the model and the next step in one line.
+A short message stating that the list is empty, so nobody thinks the page failed to load. — That is the one thing already obvious from looking. It uses the space without adding anything to it.
 
-A larger, clearer plus button. — The action only helps once she knows what it will do. Size does not explain it.
+A sentence saying what will appear here, and the one action that adds the first booking. — The empty state is the first teaching this person gets. “Your bookings appear here — find a class to make your first one” gives the model and the next step in one line.
 
-A message saying the list is empty. — That is the one thing already obvious from looking. It uses the space without adding anything to it.
+A larger, brighter plus button in the corner, so the way to add a booking is easy to spot. — The action only helps once she knows what it will do. Size does not explain it.
 
 Now write your own empty state in the box below, in three parts: what appears here, why, and the one action that starts it.
 
@@ -6546,18 +6836,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 One control is greyed out because the class is full, and another because no date has been chosen yet. Why should these not look and read the same?
 
-- The full class should simply be removed from the list.
-- One means not yet and the other means not for you now, and each needs a different sentence and a different way out.
-- They can look the same, as long as both are clearly grey.
+- They can look and read the same, as long as both are clearly greyed out to show it.
+- The full class should simply be removed from the list, which leaves only one grey control.
+- One means not yet, the other not for you now, and each needs its own sentence and route.
 
 <details>
 <summary>After your attempt</summary>
 
-The full class should simply be removed from the list. — Removing it leaves her wondering whether she misremembered the class. Showing it as full and offering other dates keeps her oriented.
+They can look and read the same, as long as both are clearly greyed out to show it. — Grey tells her she cannot press it. It never tells her which of the two situations she is in, so she cannot act on either.
 
-One means not yet and the other means not for you now, and each needs a different sentence and a different way out. — Not yet asks her to complete something. Not for you now should offer the alternative, such as other dates or a way to ask somebody.
+The full class should simply be removed from the list, which leaves only one grey control. — Removing it leaves her wondering whether she misremembered the class. Showing it as full and offering other dates keeps her oriented.
 
-They can look the same, as long as both are clearly grey. — Grey tells her she cannot press it. It never tells her which of the two situations she is in, so she cannot act on either.
+One means not yet, the other not for you now, and each needs its own sentence and route. — Not yet asks her to complete something. Not for you now should offer the alternative, such as other dates or a way to ask somebody.
 
 Improve: Split component-disabled and component-unavailable in step 2 so each has its own trigger and its own sentence, then record the change in the last step.
 
@@ -6576,18 +6866,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your error state is signalled by the control turning red. What does the greyscale check show?
 
-- Nothing much, since almost everybody can see red.
-- That the red is not strong enough and should be darker.
-- Red and the default state can become the same shade, so anyone who cannot tell them apart gets no signal at all.
+- Red and default can turn the same grey, leaving anyone who cannot tell them apart no signal.
+- That the red is not strong enough, and a darker red would carry the meaning on its own.
+- Very little, since almost everybody can tell red apart from the default state anyway.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing much, since almost everybody can see red. — A great many people cannot distinguish it reliably, and neither can anyone in bright sunlight or on a poor screen.
+Red and default can turn the same grey, leaving anyone who cannot tell them apart no signal. — Add a second signal that survives greyscale: a message beside the field, a small icon, a heavier border.
 
-That the red is not strong enough and should be darker. — A darker red is still one signal on one channel. The point is to carry the meaning on a second channel as well.
+That the red is not strong enough, and a darker red would carry the meaning on its own. — A darker red is still one signal on one channel. The point is to carry the meaning on a second channel as well.
 
-Red and the default state can become the same shade, so anyone who cannot tell them apart gets no signal at all. — Add a second signal that survives greyscale: a message beside the field, a small icon, a heavier border.
+Very little, since almost everybody can tell red apart from the default state anyway. — A great many people cannot distinguish it reliably, and neither can anyone in bright sunlight or on a poor screen.
 
 Improve: Look at greyscale-result in step 5, add a second signal to every state that relied on colour, and record it in the last step.
 
@@ -6606,18 +6896,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your loading state has a trigger and an appearance, and the exit is blank. What is that?
 
-- A state a person can be stuck in, because nothing in your specification says what ends it.
-- An acceptable gap, since loading ends when the response arrives.
-- A detail for whoever builds it to decide.
+- A detail for whoever builds it to decide, since timeouts are an engineering setting.
+- An acceptable gap, since loading always ends by itself when the response finally arrives.
+- A state a person can be stuck in, since nothing in the specification says what ends it.
 
 <details>
 <summary>After your attempt</summary>
 
-A state a person can be stuck in, because nothing in your specification says what ends it. — Give it two endings: the answer arriving, and a timeout with a message and a route. A loading state with no end is how an interface hangs.
+A detail for whoever builds it to decide, since timeouts are an engineering setting. — Left to be decided later, it is decided by whatever the code does by default, which is usually nothing at all.
 
-An acceptable gap, since loading ends when the response arrives. — It ends when a response arrives. The specification also has to say what happens when one does not.
+An acceptable gap, since loading always ends by itself when the response finally arrives. — It ends when a response arrives. The specification also has to say what happens when one does not.
 
-A detail for whoever builds it to decide. — Left to be decided later, it is decided by whatever the code does by default, which is usually nothing at all.
+A state a person can be stuck in, since nothing in the specification says what ends it. — Give it two endings: the answer arriving, and a timeout with a message and a route. A loading state with no end is how an interface hangs.
 
 Improve: Fill the exit for component-loading in step 2 and for the loading row in screen-states in step 3, list the fix in dead-ends, and record the change in the last step.
 
@@ -6676,6 +6966,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a library app shows a “Renew” button greyed out in two situations. In one, the member has not yet selected which of her books to renew. In the other, the book has been reserved by another member, so it cannot be renewed at all.
+
+**Task:** Specify the two states so they do not look and read the same: give each its trigger, the sentence beside it and its way out, and explain why the difference matters.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Uses one grey state for both, or changes only the colour, with no sentence and no route out.
+- Adequate: Disabled, not yet: triggered by no book selected, “Choose a book to renew”, ended by selecting one. Unavailable, not for you now: triggered by a reservation, “Someone has reserved this book”, with a route such as its return date.
+- Strong: As adequate, and adds a second signal that survives greyscale, keeps focus visible for keyboard users, and gives the loading state after pressing Renew a timeout and a route out.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -6837,7 +7153,7 @@ The reader demonstrates and guides the task before asking for “What a shared a
 
 Section: learn. Stable action: welcome.
 
-Combine the flow, the screens and the state specifications into a single annotated wireflow, and have it read by someone who was not involved, recording every question they had to ask you.
+Combine the flow, the screens and the state specifications into a single annotated wireflow, and have it read by someone who was not involved, recording every question they had to ask you — or, if nobody uninvolved can be reached, record a labelled rehearsal read or a dated gap.
 
 
 ### Idea 1: A wireflow is the flow diagram with each node replaced by, or…
@@ -6865,7 +7181,7 @@ Mark what is decided and what is not. A wireflow claiming completeness while thr
 
 Section: learn. Stable action: learn-4.
 
-Version it and date it. The moment work is shared, several copies exist, and the commonest handover failure is not a missing annotation but two people looking at different versions confidently. A date, a version and a one-line note of what changed since the last one costs nothing and prevents an entire class of expensive confusion.
+Version it and date it. The moment work is shared, several copies exist, and a common handover failure is not a missing annotation but two people looking at different versions confidently. A date, a version and a one-line note of what changed since the last one costs nothing and prevents an entire class of expensive confusion.
 
 
 ### See the idea in a supplied example
@@ -7154,18 +7470,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your reader stops and asks what happens if the provider cancels the class. You tell her, and she carries on. What went wrong?
 
-- Nothing: answering questions is what a handover conversation is for.
-- You answered a question the artefact could not answer, so the gap is still there and now it is unrecorded.
-- She should have been given more context before reading.
+- The setup: she should have been given more context about the project before reading.
+- You answered what the page could not, so the gap is still there and now unrecorded.
+- Little went wrong: answering questions is exactly what a handover conversation is for.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing: answering questions is what a handover conversation is for. — A conversation is fine after the read. During it, every answer you give quietly removes a finding you came for.
+The setup: she should have been given more context about the project before reading. — Context given in advance is exactly what the person building this in two weeks will not have.
 
-You answered a question the artefact could not answer, so the gap is still there and now it is unrecorded. — The question was evidence about the page. Once you supply the answer, the page is unchanged and the next reader meets the same silence.
+You answered what the page could not, so the gap is still there and now unrecorded. — The question was evidence about the page. Once you supply the answer, the page is unchanged and the next reader meets the same silence.
 
-She should have been given more context before reading. — Context given in advance is exactly what the person building this in two weeks will not have.
+Little went wrong: answering questions is exactly what a handover conversation is for. — A conversation is fine after the read. During it, every answer you give quietly removes a finding you came for.
 
 Improve: In the reader-questions box in step 5, write every question you answered during the read, then add the annotation or open question each one calls for and note the change in the improvement box.
 
@@ -7184,18 +7500,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Two labels on your wireflow are still guesses. Leaving them off the open-questions list makes the artefact look finished. What does that cost?
 
-- Very little: they can be corrected later when someone notices.
-- People build on the guesses, because being drawn confidently is what turns a guess into a fact.
-- It is honest enough as long as you remember which ones they were.
+- People build on the guesses, since a label drawn confidently reads as a decision.
+- Nothing that matters, as long as you yourself remember which labels were guesses.
+- Very little: the two labels can be corrected later, whenever someone notices them.
 
 <details>
 <summary>After your attempt</summary>
 
-Very little: they can be corrected later when someone notices. — Noticing is the part that does not happen. A guess drawn in the same hand as everything else reads as a decision.
+People build on the guesses, since a label drawn confidently reads as a decision. — Nobody queries a label that looks settled. The open-questions list is the only thing keeping a guess arguable once it is on the page.
 
-People build on the guesses, because being drawn confidently is what turns a guess into a fact. — Nobody queries a label that looks settled. The open-questions list is the only thing keeping a guess arguable once it is on the page.
+Nothing that matters, as long as you yourself remember which labels were guesses. — Your memory is not on the artefact, and the artefact is the thing that outlives the conversation.
 
-It is honest enough as long as you remember which ones they were. — Your memory is not on the artefact, and the artefact is the thing that outlives the conversation.
+Very little: the two labels can be corrected later, whenever someone notices them. — Noticing is the part that does not happen. A guess drawn in the same hand as everything else reads as a decision.
 
 Improve: Add every guessed label and undecided item to the open-questions box in step 4, then record what you added in the improvement box in step 5.
 
@@ -7214,18 +7530,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The only person free to read your wireflow is someone who has watched you build it all week. What do you do?
 
-- Skip the step until a stranger is available.
-- Ask them anyway, mark it as a rehearsal read, and record that an uninvolved reader could not be found.
-- Report it as the uninvolved read, since they still asked questions.
+- Report it as the uninvolved read, since they still asked real questions about the page.
+- Skip the read for now, and run it properly once a stranger is free to look at it.
+- Ask them, mark it a rehearsal read, and record that no uninvolved reader was found.
 
 <details>
 <summary>After your attempt</summary>
 
-Skip the step until a stranger is available. — Waiting leaves you with nothing at all. A rehearsal read plus a dated note of who you could not reach is a complete answer for today.
+Report it as the uninvolved read, since they still asked real questions about the page. — They read it with your project already in their head. Reporting that as an uninvolved read makes the artefact look tested when it is not.
 
-Ask them anyway, mark it as a rehearsal read, and record that an uninvolved reader could not be found. — A rehearsal read still catches missing conditions. What it cannot do is show what someone without your explanations sees, so the record says both.
+Skip the read for now, and run it properly once a stranger is free to look at it. — Waiting leaves you with nothing at all. A rehearsal read plus a dated note of who you could not reach is a complete answer for today.
 
-Report it as the uninvolved read, since they still asked questions. — They read it with your project already in their head. Reporting that as an uninvolved read makes the artefact look tested when it is not.
+Ask them, mark it a rehearsal read, and record that no uninvolved reader was found. — A rehearsal read still catches missing conditions. What it cannot do is show what someone without your explanations sees, so the record says both.
 
 Improve: Set the reader-status choice in step 5 honestly. If it was a rehearsal read or nobody was available, fill the reader-gap box with who you could not reach and the date, then note it in the improvement box.
 
@@ -7259,21 +7575,21 @@ A supplied moment from the same made-up handover. A friend who had never seen th
 
 What does her question tell you?
 
-- The word is doing work the artefact never explains, so she has found a gap on the page.
-- You should explain it to her, then carry on with the read.
-- It is a wording problem for later, not a wireflow problem.
-- She lacks the background to read a wireflow, so the question does not count.
+- The word does work the page never explains, so she has found a gap in the artefact.
+- She lacks the background to read a wireflow, so her question says little about the page.
+- She needs a quick explanation, after which the read can carry on from the payment screen.
+- It is a wording problem for the visual stage later, rather than a gap in the wireflow.
 
 <details>
 <summary>After your attempt</summary>
 
-The word is doing work the artefact never explains, so she has found a gap on the page. — A reader stops where the page stops carrying her. The repair belongs on the page: a plainer word, or an annotation saying what that state means to a person.
+The word does work the page never explains, so she has found a gap in the artefact. — A reader stops where the page stops carrying her. The repair belongs on the page: a plainer word, or an annotation saying what that state means to a person.
 
-You should explain it to her, then carry on with the read. — Explaining ends the finding. The person building from this in two weeks will meet the same word with nobody sitting beside them.
+She lacks the background to read a wireflow, so her question says little about the page. — Someone who read everything else without stopping is reading it perfectly well. Discounting her question throws away the only thing the read produced.
 
-It is a wording problem for later, not a wireflow problem. — The word appears on the artefact and on the screen, so it is both. Recording it as a question keeps it attached to the place it was found.
+She needs a quick explanation, after which the read can carry on from the payment screen. — Explaining ends the finding. The person building from this in two weeks will meet the same word with nobody sitting beside them.
 
-She lacks the background to read a wireflow, so the question does not count. — Someone who read everything else without stopping is reading it perfectly well. Discounting her question throws away the only thing the read produced.
+It is a wording problem for the visual stage later, rather than a gap in the wireflow. — The word appears on the artefact and on the screen, so it is both. Recording it as a question keeps it attached to the place it was found.
 
 Write out every question your own reader asked, then mark which are changes to the page and which are changes to the design.
 
@@ -7295,22 +7611,26 @@ Choose honestly. A rehearsal read is useful work and it is not the same test.
 
 Section: practice. Stable action: write-reader-questions.
 
-Write them all down before you answer any of them.
+Write them all down before you answer any of them. Refer to the reader by role, such as “a friend”, never by name.
 
 **Answer:** Every question they had to ask, and what each one will change
 
-Write them all down before you answer any of them.
+Required only when reader-status is Someone not involved read it or Someone who already knows the project read it: rehearsal read. Otherwise leave participant evidence empty.
+
+Write them all down before you answer any of them. Refer to the reader by role, such as “a friend”, never by name.
 
 
 ### If nobody was available: who you could not reach, the date, and where the finished artefact is waiting
 
 Section: practice. Stable action: write-reader-gap.
 
-Dating the gap is a real result. Leave this empty if someone read it.
+Dating the gap is a real result. Describe who you asked by kind, never by name or number. Leave this empty if someone uninvolved read it.
 
 **Answer:** If nobody was available: who you could not reach, the date, and where the finished artefact is waiting
 
-Dating the gap is a real result. Leave this empty if someone read it.
+Required only when reader-status is Someone who already knows the project read it: rehearsal read or Nobody available: dated gap recorded. Otherwise leave participant evidence empty.
+
+Dating the gap is a real result. Describe who you asked by kind, never by name or number. Leave this empty if someone uninvolved read it.
 
 
 ### What you changed after the Check questions
@@ -7322,6 +7642,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: you hand a car-wash booking wireflow to a friend who has never seen it. Reading aloud, she stops at the confirmation screen and asks what happens if it rains and the wash is cancelled. Nothing on the sheet says. Two other labels on the sheet are still your guesses.
+
+**Task:** Decide what you do at the moment she asks and what changes on the artefact afterwards, and explain why.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Answers her straight away so the read can continue, and leaves the sheet and its open-questions list unchanged.
+- Adequate: Writes the question down without answering until she finishes, then adds an annotation or open question about the rain cancellation, because the next reader will meet the same silence without you there.
+- Strong: As adequate, and adds the two guessed labels to the open-questions list, dates and versions the sheet, and notes what would settle the rain rule, such as who decides and what is refunded.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -7344,7 +7690,7 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: The wireflow: one artefact someone else could build from
-What I am trying to do: Combine the flow, the screens and the state specifications into a single annotated wireflow, and have it read by someone who was not involved, recording every question they had to ask you.
+What I am trying to do: Combine the flow, the screens and the state specifications into a single annotated wireflow, and have it read by someone who was not involved, recording every question they had to ask you — or, if nobody uninvolved can be reached, record a labelled rehearsal read or a dated gap.
 
 Key idea or terms:
 Wireflow: The flow diagram with the screen a person sees placed at each node, and the conditions written on the arrows between them.
@@ -7422,13 +7768,13 @@ Repair: Collect the guesses from your m06 change note, the undecided permission 
 
 **An uninvolved reader's questions were recorded**
 
-Adequate evidence: A list of the questions someone not involved had to ask, with what each will change.
+Adequate evidence: A list of the questions someone not involved had to ask, with what each will change — or a labelled rehearsal read, or a dated record that no uninvolved reader could be reached.
 
 0 — Not read by anyone else.
 
 1 — Read, but questions answered in conversation and not recorded.
 
-2 — Questions recorded, each with what it changes in the artefact.
+2 — Questions recorded, each with what it changes in the artefact; or, where no uninvolved reader could be found, a labelled rehearsal read or a dated gap with the artefact ready.
 
 3 — As adequate, and the artefact was revised and re-read, with the second reader's questions also recorded.
 
@@ -7483,7 +7829,7 @@ The reader demonstrates and guides the task before asking for “Task 1 · the s
 
 Section: learn. Stable action: welcome.
 
-Run a moderated paper prototype test of two tasks with at least three participants, recording where each person hesitated, what they expected next and every place they went somewhere you had not drawn.
+Run a moderated paper prototype test of two tasks with at least three participants, recording where each person hesitated, what they expected next and every place they went somewhere you had not drawn — or, if nobody can be reached, prepare and rehearse the full kit and record a dated gap.
 
 
 ### Idea 1: The assigned guidance covers running a moderated session, and…
@@ -7842,35 +8188,41 @@ Choose the option that honestly describes your work.
 Choose honestly. A rehearsal tests your kit and your own reflexes; it is not research.
 
 
-### Session 1 · what they expected before each change, what they did, what happened, and where they paused
+### Session 1 · a de-identified summary: what they expected before each change, what they did, what happened, and where they paused
 
 Section: practice-plan. Stable action: write-session-1.
 
-Write your answer for “Session 1 · what they expected before each change, what they did, what happened, and where they paused”. Use the task instructions below to decide what to include.
+Use a label such as P1, never a name. Keep raw notes in a private file or on paper with a date to delete them; write only this de-identified summary here. Removing a name does not make a note anonymous, so leave out details that point to one person. On the rehearsal route, label the record rehearsal.
 
-**Answer:** Session 1 · what they expected before each change, what they did, what happened, and where they paused
+**Answer:** Session 1 · a de-identified summary: what they expected before each change, what they did, what happened, and where they paused
+
+Required only when session-status is Three consenting participants or One or two consenting participants or Rehearsal only with someone who knows the project. Otherwise leave participant evidence empty.
+
+Use a label such as P1, never a name. Keep raw notes in a private file or on paper with a date to delete them; write only this de-identified summary here. Removing a name does not make a note anonymous, so leave out details that point to one person. On the rehearsal route, label the record rehearsal.
 
 
-
-
-### Session 2 · what they expected before each change, what they did, what happened, and where they paused
+### Session 2 · a de-identified summary: what they expected before each change, what they did, what happened, and where they paused
 
 Section: practice-plan. Stable action: write-session-2.
 
-Write your answer for “Session 2 · what they expected before each change, what they did, what happened, and where they paused”. Use the task instructions below to decide what to include.
+Write your answer for “Session 2 · a de-identified summary: what they expected before each change, what they did, what happened, and where they paused”. Use the task instructions below to decide what to include.
 
-**Answer:** Session 2 · what they expected before each change, what they did, what happened, and where they paused
+**Answer:** Session 2 · a de-identified summary: what they expected before each change, what they did, what happened, and where they paused
+
+Required only when session-status is Three consenting participants. Otherwise leave participant evidence empty.
 
 
 
 
-### Session 3 · what they expected before each change, what they did, what happened, and where they paused
+### Session 3 · a de-identified summary: what they expected before each change, what they did, what happened, and where they paused
 
 Section: practice-plan. Stable action: write-session-3.
 
-Write your answer for “Session 3 · what they expected before each change, what they did, what happened, and where they paused”. Use the task instructions below to decide what to include.
+Write your answer for “Session 3 · a de-identified summary: what they expected before each change, what they did, what happened, and where they paused”. Use the task instructions below to decide what to include.
 
-**Answer:** Session 3 · what they expected before each change, what they did, what happened, and where they paused
+**Answer:** Session 3 · a de-identified summary: what they expected before each change, what they did, what happened, and where they paused
+
+Required only when session-status is Three consenting participants. Otherwise leave participant evidence empty.
 
 
 
@@ -7919,11 +8271,13 @@ Made-up example. Invented practice notes from a paper test of a repeat prescript
 
 Section: practice-plan. Stable action: write-undrawn-list.
 
-Every moment you had to say “that does not do anything” is a row here.
+Every moment you had to say “that does not do anything” is a row here. Refer to people by label.
 
 **Answer:** Everything a participant reached for that you had not drawn, with what they expected it to do
 
-Every moment you had to say “that does not do anything” is a row here.
+Required only when session-status is Three consenting participants or One or two consenting participants or Rehearsal only with someone who knows the project. Otherwise leave participant evidence empty.
+
+Every moment you had to say “that does not do anything” is a row here. Refer to people by label.
 
 
 ### Every place what they expected and what happened did not match
@@ -7933,6 +8287,8 @@ Section: practice-plan. Stable action: write-mismatches.
 A task finished anxiously is a mismatch, not a success.
 
 **Answer:** Every place what they expected and what happened did not match
+
+Required only when session-status is Three consenting participants or One or two consenting participants or Rehearsal only with someone who knows the project. Otherwise leave participant evidence empty.
 
 A task finished anxiously is a mismatch, not a success.
 
@@ -7945,18 +8301,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A participant goes quiet over the review sheet. Four seconds in, you point at the total. What did that cost you?
 
-- You ended the pause before it could show whether the total was findable, and the session cannot answer that now.
-- Nothing much: they would have found it a moment later anyway.
-- Some rapport, which matters more in a short session.
+- You ended the pause before it could show whether the total was findable at all.
+- Very little, since they would most likely have found the total a moment later anyway.
+- A little rapport, though helping quickly keeps a short session friendly and moving.
 
 <details>
 <summary>After your attempt</summary>
 
-You ended the pause before it could show whether the total was findable, and the session cannot answer that now. — The pause was the measurement. Once you point, all you know is that a person can find something after being shown it.
+You ended the pause before it could show whether the total was findable at all. — The pause was the measurement. Once you point, all you know is that a person can find something after being shown it.
 
-Nothing much: they would have found it a moment later anyway. — Whether they would have is the thing you were there to find out, and pointing is what made it unknowable.
+Very little, since they would most likely have found the total a moment later anyway. — Whether they would have is the thing you were there to find out, and pointing is what made it unknowable.
 
-Some rapport, which matters more in a short session. — Rapport comes from saying at the start that you are testing the paper and not them. It does not require you to answer.
+A little rapport, though helping quickly keeps a short session friendly and moving. — Rapport comes from saying at the start that you are testing the paper and not them. Helping did not cost rapport; it cost the answer you came for.
 
 Improve: Mark every rescue in your session boxes in step 3, and write beside each what waiting might have shown you. Then note the change in the improvement box in step 5.
 
@@ -7975,18 +8331,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Two people wanted the cancellation deadline in days rather than a date. One person lost her filtered results and booked whatever she could still see. How do you rank them?
 
-- Equally, since both came up in the same test.
-- The deadline wording first, because two of the three raised it.
-- The lost results first, because it changed what she booked; the deadline wording second.
+- Lost results first, since it changed what she booked; the deadline wording second.
+- Equally, since both came up in the same small test and neither stopped a booking.
+- Deadline wording first, since two of the three raised it and only one lost results.
 
 <details>
 <summary>After your attempt</summary>
 
-Equally, since both came up in the same test. — Both are real and only one of them changed a booking. The ranking exists so the next lesson repairs whatever costs most.
+Lost results first, since it changed what she booked; the deadline wording second. — Harm is what the problem costs the person. Three sessions cannot tell you how common either one is, so frequency is not a ranking you have earned.
 
-The deadline wording first, because two of the three raised it. — Two out of three is not a rate, it is two people. Counting three sessions turns a formative test into a measurement it cannot carry.
+Equally, since both came up in the same small test and neither stopped a booking. — Both are real, and only one of them changed what somebody booked. The ranking exists so the next lesson repairs whatever costs most.
 
-The lost results first, because it changed what she booked; the deadline wording second. — Harm is what the problem costs the person. Three sessions cannot tell you how common either one is, so frequency is not a ranking you have earned.
+Deadline wording first, since two of the three raised it and only one lost results. — Two out of three is not a rate, it is two people. Counting three sessions turns a formative test into a measurement it cannot carry.
 
 Improve: Reorder the harm-ranking box in step 5 by what each problem costs the person, then record what moved in the improvement box.
 
@@ -8005,18 +8361,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Nobody consented, so you walked both tasks with your sister, who has heard about this project all week. How should that appear?
 
-- Leave it out and record that the test did not happen.
-- As a rehearsal, with a dated note of who you could not reach, and the prepared kit kept as the deliverable.
-- As a session, since she completed both tasks on the paper.
+- As a rehearsal, with a dated note of who you could not reach and the kit kept.
+- Left out, with a note recording only that the test itself did not happen at all.
+- As one session, since she completed both tasks on paper without any help from you.
 
 <details>
 <summary>After your attempt</summary>
 
-Leave it out and record that the test did not happen. — Leaving it out throws away work you actually did. A dated gap plus the rehearsal notes is a complete and honest answer.
+As a rehearsal, with a dated note of who you could not reach and the kit kept. — A rehearsal checks your frames, your tasks and your own reflexes, which is real work. It cannot tell you what someone without your explanations does.
 
-As a rehearsal, with a dated note of who you could not reach, and the prepared kit kept as the deliverable. — A rehearsal checks your frames, your tasks and your own reflexes, which is real work. It cannot tell you what someone without your explanations does.
+Left out, with a note recording only that the test itself did not happen at all. — Leaving it out throws away work you actually did. A dated gap plus the rehearsal notes is a complete and honest answer.
 
-As a session, since she completed both tasks on the paper. — She arrived knowing what you intended. Recording that as a session makes the ranked list look tested when it rests on someone who already knew the answers.
+As one session, since she completed both tasks on paper without any help from you. — She arrived knowing what you intended. Recording that as a session makes the ranked list look tested when it rests on someone who already knew the answers.
 
 Improve: Set the session-status choice in step 3 honestly, fill the access-gap box in step 5 with who you could not reach and the date, then note the change in the improvement box.
 
@@ -8050,22 +8406,22 @@ The problems in harm order with the sample stated, and the repair the Check ques
 
 Section: practice. Stable action: write-harm-ranking.
 
-Harm is what it stops, what it costs in money or time, and what it loses. Not how often you saw it.
+Harm is what it stops, what it costs in money or time, and what it loses. Not how often you saw it. If nobody was available, rank the problems your own rehearsal found and label the list rehearsal.
 
 **Answer:** The problems in order of harm, with what each one costs the person
 
-Harm is what it stops, what it costs in money or time, and what it loses. Not how often you saw it.
+Harm is what it stops, what it costs in money or time, and what it loses. Not how often you saw it. If nobody was available, rank the problems your own rehearsal found and label the list rehearsal.
 
 
 ### How many people, how you found them, and what that limits
 
 Section: practice. Stable action: write-sample-line.
 
-Write your answer for “How many people, how you found them, and what that limits”. Use the task instructions below to decide what to include.
+Counts and routes only, with no names or contact details.
 
 **Answer:** How many people, how you found them, and what that limits
 
-
+Counts and routes only, with no names or contact details.
 
 <details>
 <summary>Example</summary>
@@ -8079,11 +8435,13 @@ Example (made up): three people, all neighbours who have taken a class, so nobod
 
 Section: practice. Stable action: write-access-gap.
 
-Dating the gap is a real result. Leave this empty if sessions happened.
+Dating the gap is a real result. Describe who you asked by kind, never by name or number. Leave this empty if three sessions happened.
 
 **Answer:** If nobody consented: who you could not reach, the date, and where the prepared kit is
 
-Dating the gap is a real result. Leave this empty if sessions happened.
+Required only when session-status is One or two consenting participants or Rehearsal only with someone who knows the project or Nobody available: dated gap recorded. Otherwise leave participant evidence empty.
+
+Dating the gap is a real result. Describe who you asked by kind, never by name or number. Leave this empty if three sessions happened.
 
 
 ### What you changed after the Check questions
@@ -8095,6 +8453,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: you are running a paper test of a grocery delivery app with a participant who agreed to take part. On the slot-picking sheet she pauses, then asks whether the time shown is when the order arrives or when packing starts. Later she taps the basket total, expecting a breakdown that you never drew.
+
+**Task:** Decide what you say when she asks her question and how you record both moments, and explain why.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Explains what the slot means or what the total does, and records only whether she completed the task.
+- Adequate: Asks what she expects it to mean, writes her answer and the pause down as a mismatch, and records the tap on the total as an undrawn interaction with what she expected, because these show what the design fails to say.
+- Strong: As adequate, and ranks the slot confusion by harm, such as a missed delivery, rather than by how many people raised it, keeps the participant de-identified, and states the sample beside the findings.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -8117,7 +8501,7 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: Walk it with someone: the paper prototype test
-What I am trying to do: Run a moderated paper prototype test of two tasks with at least three participants, recording where each person hesitated, what they expected next and every place they went somewhere you had not drawn.
+What I am trying to do: Run a moderated paper prototype test of two tasks with at least three participants, recording where each person hesitated, what they expected next and every place they went somewhere you had not drawn — or, if nobody can be reached, prepare and rehearse the full kit and record a dated gap.
 
 Key idea or terms:
 Task scenario: A situation and a goal, with no route in it. “Book the Saturday class for two people and find the total” names nothing to press.
@@ -8167,13 +8551,13 @@ Repair: Take two items from your open-questions list and write the situation in 
 
 **Expectation and hesitation are recorded, not just outcomes**
 
-Adequate evidence: Session records showing what each participant expected before a change, what happened and where they hesitated.
+Adequate evidence: Session records showing what each participant expected before a change, what happened and where they hesitated — or, on the rehearsal route, the same record of the rehearsal, labelled as one.
 
 0 — Completion recorded only.
 
 1 — Some commentary but no systematic expectation capture.
 
-2 — Expectation, action, outcome and hesitation recorded throughout.
+2 — Expectation, action, outcome and hesitation recorded throughout, with any rehearsal labelled as one.
 
 3 — As adequate, and at least one completed task is marked as a problem because of the doubt involved.
 
@@ -8187,7 +8571,7 @@ Adequate evidence: A list of everything participants tried that the design did n
 
 1 — Noted informally without what was expected.
 
-2 — Captured with the expectation for each.
+2 — Captured with the expectation for each; where nobody could be reached, the screens you had to improvise while rehearsing, labelled rehearsal.
 
 3 — As adequate, and at least one is designed as a result, with the change traced to the sessions.
 
@@ -8248,7 +8632,7 @@ A flow is the series of steps and choices a person follows to finish a task. In 
 - **Prediction:** What should happen in the re-test if your repair worked, written before the sessions so the result can contradict it.
 - **Repair:** A change made to answer one problem you found, rather than a general tidy-up of everything you notice while you are in there.
 
-**Quick example.** A supplied re-test result from the same made-up project. The prediction was that nobody would ask how many days the deadline is, once it read “free to cancel until Thursday 10 am — 3 days before the class”. Both new participants asked anyway, and neither could see the class date on that screen.
+**Quick example.** A supplied re-test result from the same made-up project. The prediction was that nobody would ask how many days the deadline is, once it read “free to cancel until Thursday 10 am — 3 days before the class”. Both new participants asked anyway; each said they could not tell how far away Thursday was, because the class date was not on that screen.
 
 The reader demonstrates and guides the task before asking for “Your problems in harm order, with the top two marked for repair”.
 
@@ -8256,7 +8640,7 @@ The reader demonstrates and guides the task before asking for “Your problems i
 
 Section: learn. Stable action: welcome.
 
-Repair the two highest-harm problems from your test, re-test them with someone new, and write a decision record for the whole module stating each significant decision, its evidence, its alternatives and what remains untested.
+Repair the two highest-harm problems from your test, re-test them with someone new — or, if nobody new can be reached, record the predictions as untested with a dated gap — and write a decision record for the whole module stating each significant decision, its evidence, its alternatives and what remains untested.
 
 
 ### Repair the highest-harm problems, not the easiest ones
@@ -8284,7 +8668,7 @@ The decision record is the artefact that keeps its value longest. For each signi
 
 Section: learn. Stable action: learn-4.
 
-Be exact about what this module did and did not establish. You have tested a paper prototype with a handful of people on two tasks. You have not established that the flow works at volume, on a real connection with real content, for people unlike your participants, or with assistive technology. Some of those come later in the course; all of them belong in the record now, because the gap between what was tested and what is claimed is the single most common failure in a design portfolio.
+Be exact about what this module did and did not establish. You have tested a paper prototype with a handful of people on two tasks. You have not established that the flow works at volume, on a real connection with real content, for people unlike your participants, or with assistive technology. Some of those come later in the course; all of them belong in the record now, because the gap between what was tested and what is claimed is one of the most common failures in a design portfolio.
 
 
 ### See the idea in a supplied example
@@ -8445,25 +8829,25 @@ An honest re-test status, the session record, and each prediction beside what ac
 
 Section: practice-plan. Stable action: step-3-try.
 
-A supplied re-test result from the same made-up project. The prediction was that nobody would ask how many days the deadline is, once it read “free to cancel until Thursday 10 am — 3 days before the class”. Both new participants asked anyway, and neither could see the class date on that screen.
+A supplied re-test result from the same made-up project. The prediction was that nobody would ask how many days the deadline is, once it read “free to cancel until Thursday 10 am — 3 days before the class”. Both new participants asked anyway; each said they could not tell how far away Thursday was, because the class date was not on that screen.
 
 What goes in the record?
 
-- That the prediction did not hold, and that the question came from the missing class date rather than the deadline wording.
-- That the deadline wording still needs work, so repair it again now.
-- Nothing, because a repair that changed nothing is not worth an entry.
-- That the re-test was inconclusive and needs more people.
+- No entry at all, since a repair that changed nothing is not worth recording anywhere.
+- The prediction failed, and the question came from the missing class date, not the wording.
+- The deadline wording still needs work, so it should be repaired again straight away.
+- The re-test was inconclusive, since two people are too few to judge the new wording.
 
 <details>
 <summary>After your attempt</summary>
 
-That the prediction did not hold, and that the question came from the missing class date rather than the deadline wording. — The prediction and the outcome sit side by side, and the reason names a different problem. That entry is worth more than a repair that simply worked.
+No entry at all, since a repair that changed nothing is not worth recording anywhere. — A repair that failed tells you the diagnosis was wrong, which is the single most useful thing this re-test produced.
 
-That the deadline wording still needs work, so repair it again now. — Repairing again in the same breath assumes the first diagnosis was right. They asked because the date was missing, so more wording will not answer them.
+The prediction failed, and the question came from the missing class date, not the wording. — The prediction and the outcome sit side by side, and the reason names a different problem. That entry is worth more than a repair that simply worked.
 
-Nothing, because a repair that changed nothing is not worth an entry. — A repair that failed tells you the diagnosis was wrong, which is the single most useful thing this re-test produced.
+The deadline wording still needs work, so it should be repaired again straight away. — Repairing again in the same breath assumes the first diagnosis was right. They asked because the date was missing, so more wording will not answer them.
 
-That the re-test was inconclusive and needs more people. — The result is clear rather than thin. Both people asked, both for the same visible reason, and more people would tell you the same thing at a cost.
+The re-test was inconclusive, since two people are too few to judge the new wording. — The result is clear rather than thin. Both people asked, both for the same visible reason, and more people would tell you the same thing at a cost.
 
 Write your own predictions and outcomes side by side, and name the reason wherever an outcome surprised you.
 
@@ -8485,22 +8869,26 @@ Choose honestly. Someone who saw the first version can only tell you what they r
 
 Section: practice-plan. Stable action: write-retest-record.
 
-Write your answer for “What each person expected, did, met and doubted on the repaired tasks”. Use the task instructions below to decide what to include.
+A de-identified summary with labels such as P4; raw notes stay in your private file with a date to delete them.
 
 **Answer:** What each person expected, did, met and doubted on the repaired tasks
 
+Required only when retest-status is Two people who had not seen the design or One person who had not seen the design or Someone who saw the first test: rehearsal re-test. Otherwise leave participant evidence empty.
 
+A de-identified summary with labels such as P4; raw notes stay in your private file with a date to delete them.
 
 
 ### Each prediction beside what actually happened, including any that did not hold
 
 Section: practice-plan. Stable action: write-prediction-outcomes.
 
-A repair that did not work is the most useful entry in the whole record.
+A repair that did not work is the most useful entry in the whole record. If nobody was available, the predictions stay untested and the not-established box says so.
 
 **Answer:** Each prediction beside what actually happened, including any that did not hold
 
-A repair that did not work is the most useful entry in the whole record.
+Required only when retest-status is Two people who had not seen the design or One person who had not seen the design or Someone who saw the first test: rehearsal re-test. Otherwise leave participant evidence empty.
+
+A repair that did not work is the most useful entry in the whole record. If nobody was available, the predictions stay untested and the not-established box says so.
 
 
 ### Write the decision record
@@ -8600,18 +8988,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You repaired the two quickest problems because they were both done before lunch. What is wrong with that?
 
-- The ranking orders problems by what they cost a person, and repairing by speed leaves the costly ones untouched.
-- It is fine, since the quick fixes were on the list too.
-- Nothing, as long as you get to the others eventually.
+- Very little, provided the costlier problems are all repaired eventually in a later round.
+- The ranking orders problems by cost to a person, and speed leaves the costly ones untouched.
+- It is a sound choice, since the quick fixes were on the ranked list of problems too.
 
 <details>
 <summary>After your attempt</summary>
 
-The ranking orders problems by what they cost a person, and repairing by speed leaves the costly ones untouched. — Quick fixes are quick because they are small. The problem that changed what somebody booked is still there, and now the list merely looks shorter.
+Very little, provided the costlier problems are all repaired eventually in a later round. — Eventually is where structural problems live. Whatever is not repaired today goes into the record as known and unfixed.
 
-It is fine, since the quick fixes were on the list too. — Being on the list is not the question. The ranking exists to decide the order, and speed is not the order it chose.
+The ranking orders problems by cost to a person, and speed leaves the costly ones untouched. — Quick fixes are quick because they are small. The problem that changed what somebody booked is still there, and now the list merely looks shorter.
 
-Nothing, as long as you get to the others eventually. — Eventually is where structural problems live. Whatever is not repaired today goes into the record as known and unfixed.
+It is a sound choice, since the quick fixes were on the ranked list of problems too. — Being on the list is not the question. The ranking exists to decide the order, and speed is not the order it chose.
 
 Improve: Check the harm-order box in step 1 against what you actually changed. If the top two are untouched, repair them and write why you started elsewhere, then note it in the improvement box in step 5.
 
@@ -8630,18 +9018,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You ran the re-test first and wrote the prediction afterwards, because you already knew what should have happened. Does that matter?
 
+- A prediction written after the result cannot be shown wrong, so mark it retrospective.
+- It ruins the re-test entirely, so both sessions have to be run again from the start.
 - It makes no difference, since the prediction would have been the same either way.
-- It ruins the re-test, so the sessions have to be run again.
-- A prediction written after the result cannot be shown wrong, so mark it as retrospective in the record.
 
 <details>
 <summary>After your attempt</summary>
 
+A prediction written after the result cannot be shown wrong, so mark it retrospective. — Writing it first is what turns a re-test into evidence. Written afterwards it is a description of what happened, and the record should say which it is.
+
+It ruins the re-test entirely, so both sessions have to be run again from the start. — The sessions still happened and the observations stand. What is weakened is the prediction, and labelling it honestly is enough.
+
 It makes no difference, since the prediction would have been the same either way. — It feels the same and it cannot be checked. Knowing the outcome quietly shapes what you say you expected.
-
-It ruins the re-test, so the sessions have to be run again. — The sessions still happened and the observations stand. What is weakened is the prediction, and labelling it honestly is enough.
-
-A prediction written after the result cannot be shown wrong, so mark it as retrospective in the record. — Writing it first is what turns a re-test into evidence. Written afterwards it is a description of what happened, and the record should say which it is.
 
 Improve: Mark any prediction in step 1 that was written after the sessions as retrospective, then record the change in the improvement box in step 5.
 
@@ -8660,18 +9048,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The only person free for the re-test is the friend who took part in the first one. What do you do?
 
-- Run it and count it, since she is seeing a version she has not seen before.
-- Skip the re-test and record the repairs as done.
-- Run it, label it a rehearsal re-test, and record that nobody new was available and on what date.
+- Run it and count it, since she is seeing a repaired version she has not seen before.
+- Run it, label it a rehearsal re-test, and record that nobody new was available, and when.
+- Skip the re-test and record both repairs as done, since the changes are clearly better.
 
 <details>
 <summary>After your attempt</summary>
 
-Run it and count it, since she is seeing a version she has not seen before. — She has seen the flow, the screens and the problem. What looks like clarity is recognition of all the parts that did not change.
+Run it and count it, since she is seeing a repaired version she has not seen before. — She has seen the flow, the screens and the problem. What looks like clarity is recognition of all the parts that did not change.
 
-Skip the re-test and record the repairs as done. — Repairs recorded as done with nothing behind them are exactly the kind of claim the limitations statement exists to prevent.
+Run it, label it a rehearsal re-test, and record that nobody new was available, and when. — She can tell you whether she remembers the change. She cannot tell you whether it is clearer, because she already knows where everything is.
 
-Run it, label it a rehearsal re-test, and record that nobody new was available and on what date. — She can tell you whether she remembers the change. She cannot tell you whether it is clearer, because she already knows where everything is.
+Skip the re-test and record both repairs as done, since the changes are clearly better. — Repairs recorded as done with nothing behind them are exactly the kind of claim the limitations statement exists to prevent.
 
 Improve: Set the retest-status choice in step 3 honestly. If nobody new was available, add the date and who you could not reach to the not-established box in step 5, then note the change in the improvement box.
 
@@ -8745,6 +9133,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
 
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a paper test of a pet-sitting booking flow with three people found three problems. Two people read “Sitter” as someone who only walks dogs, which slowed them down. One person added a second pet and saw the total change only after she had paid. All three tripped over a typo in a heading.
+
+**Task:** Choose the two problems to repair first, say what you predict the re-test will show, and explain why you chose those two.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Repairs the typo and the wording because they are quick or because more people met them, and writes no prediction.
+- Adequate: Repairs the total that changes after payment first, because it costs money, then the “Sitter” wording; writes predictions before re-testing with new people, such as “nobody pays a total that later changes”.
+- Strong: As adequate, and records the typo as known and unfixed with the reason, re-tests only the affected tasks with fresh participants, and notes that three people cannot show how common any problem is.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+
 ### Review and finish your practice
 
 Section: practice. Stable action: review-work.
@@ -8765,7 +9179,7 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: Repair, re-test and write the decision record
-What I am trying to do: Repair the two highest-harm problems from your test, re-test them with someone new, and write a decision record for the whole module stating each significant decision, its evidence, its alternatives and what remains untested.
+What I am trying to do: Repair the two highest-harm problems from your test, re-test them with someone new — or, if nobody new can be reached, record the predictions as untested with a dated gap — and write a decision record for the whole module stating each significant decision, its evidence, its alternatives and what remains untested.
 
 Key idea or terms:
 Harm: What a problem costs the person: the task they cannot finish, the money, the time, the work they lose. Not how often you saw it.
@@ -8773,7 +9187,7 @@ Prediction: What should happen in the re-test if your repair worked, written bef
 Repair: A change made to answer one problem you found, rather than a general tidy-up of everything you notice while you are in there.
 
 Supplied practice material (fictional or labelled practice, not my research):
-A supplied re-test result from the same made-up project. The prediction was that nobody would ask how many days the deadline is, once it read “free to cancel until Thursday 10 am — 3 days before the class”. Both new participants asked anyway, and neither could see the class date on that screen.
+A supplied re-test result from the same made-up project. The prediction was that nobody would ask how many days the deadline is, once it read “free to cancel until Thursday 10 am — 3 days before the class”. Both new participants asked anyway; each said they could not tell how far away Thursday was, because the class date was not on that screen.
 
 Activity: Give me one constraint from the supplied case and ask me to make a choice inside it. Then ask what trade-off my choice creates.
 
@@ -8821,7 +9235,7 @@ Adequate evidence: A written prediction per repair, produced before the sessions
 
 1 — Predictions written after the sessions.
 
-2 — Predictions written first with outcomes recorded against them.
+2 — Predictions written first with outcomes recorded against them; or, where no re-test was possible, predictions recorded as untested with the dated gap.
 
 3 — As adequate, and a prediction that failed is analysed rather than explained away.
 

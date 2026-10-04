@@ -318,21 +318,21 @@ Four supplied rows from the same made-up inventory. Row A: “What to bring”, 
 
 Which pair should your note call a content problem rather than a structure problem?
 
-- Both pairs, since both are duplicates.
-- A and B, because the two versions say different things and no arrangement of pages decides which is right.
-- C and D, because two unrelated things are sharing one label.
-- Neither, because you cannot tell until the structure is drawn.
+- Neither yet: the kind of collision only becomes clear once the sitemap is drawn.
+- Both pairs: each repeats a label, and a repeated label means the content is duplicated.
+- A and B: the two versions disagree, and moving pages cannot decide which one is true.
+- C and D: one label covering two unrelated things means the words themselves are wrong.
 
 <details>
 <summary>After your attempt</summary>
 
-Both pairs, since both are duplicates. — Only one pair is a duplicate. C and D are different things wearing the same name, which is the opposite situation and takes a different fix.
+Neither yet: the kind of collision only becomes clear once the sitemap is drawn. — The flat list is exactly where this shows. Drawing a structure first would place the two versions of what to bring in two places and settle nothing.
 
-A and B, because the two versions say different things and no arrangement of pages decides which is right. — The two copies disagree with each other. Until somebody decides what a person should actually bring, moving them or merging them only hides the disagreement.
+Both pairs: each repeats a label, and a repeated label means the content is duplicated. — Only A and B hold the same item twice. C and D are different things wearing one name, which is the opposite situation and takes a different fix.
 
-C and D, because two unrelated things are sharing one label. — That pair is real, and it is a naming and structure problem. Give each its own plain label and it is solved, which is not true of the pair that disagrees.
+A and B: the two versions disagree, and moving pages cannot decide which one is true. — The two copies disagree with each other. Until somebody decides what a person should actually bring, moving them or merging them only hides the disagreement.
 
-Neither, because you cannot tell until the structure is drawn. — The flat list is exactly where this shows. Drawing a structure first would place the two versions of what to bring in two places and settle nothing.
+C and D: one label covering two unrelated things means the words themselves are wrong. — The label is wrong and both rows are true. Give each its own plain label and the collision is gone, which is a naming and structure fix; A and B still disagree whatever you call them.
 
 Go through your own collisions and mark each one content or structure, so you know which ones need a decision about the words before anything moves.
 
@@ -398,18 +398,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your inventory has thirty-one rows and every one of them is a page in the menu. What is missing?
 
-- A few more pages, to push the number past forty.
-- The answers that are not pages: the sentence in a confirmation email, the thing only the owner can tell you, the file nobody opens.
-- Nothing, since anything worth having has been published somewhere.
+- Answers that are not pages, such as a line in a confirmation email or what only the owner knows.
+- Nine more pages from deeper in the site, so that the list reaches the forty-row threshold.
+- Little of value: anything people need often will already have been published as a page somewhere.
 
 <details>
 <summary>After your attempt</summary>
 
-A few more pages, to push the number past forty. — Forty is a threshold rather than a target, and padding it with pages leaves the list exactly as thin as it was.
+Answers that are not pages, such as a line in a confirmation email or what only the owner knows. — A page list organises the website. An inventory organises what a person needs to know, and much of that is not sitting on a page with a name.
 
-The answers that are not pages: the sentence in a confirmation email, the thing only the owner can tell you, the file nobody opens. — A page list organises the website. An inventory organises what a person needs to know, and most of that is not sitting on a page with a name.
+Nine more pages from deeper in the site, so that the list reaches the forty-row threshold. — Forty is a threshold rather than a target, and padding it with pages leaves the list exactly as thin as it was.
 
-Nothing, since anything worth having has been published somewhere. — The most-asked question is usually the one being answered by hand, over and over, in a message. It never became a page precisely because somebody keeps covering for it.
+Little of value: anything people need often will already have been published as a page somewhere. — A question people ask again and again is often being answered by hand, in a message. It never became a page precisely because somebody keeps covering for it.
 
 Improve: Take the three tasks in your boundary box in step 1 and walk each one, writing down every question a person has to answer to finish it. Add every answer that is not already a row, then record what you added in step 5.
 
@@ -428,18 +428,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 One row reads: label “Resources”, what it actually is “Resources”. Why does that row not count?
 
-- It counts, because “Resources” is what the product calls it and the inventory records the product.
-- It counts once you have added who needs it.
-- The second column exists to say what is inside, and repeating the label says nothing you did not already have.
+- It does count, since the inventory’s job is to record the product’s own words exactly as they appear.
+- Adding who needs it and when would complete the row, since that column is what makes a row useful.
+- The second column should say what is inside, and copying the label in tells you nothing new.
 
 <details>
 <summary>After your attempt</summary>
 
-It counts, because “Resources” is what the product calls it and the inventory records the product. — The label column already records the product’s own words. The second column is yours, and it is where a mismatch becomes visible.
+It does count, since the inventory’s job is to record the product’s own words exactly as they appear. — The label column already records the product’s own words. The second column is yours, and it is where a mismatch becomes visible.
 
-It counts once you have added who needs it. — Who needs it is a third question and a useful one. It still does not tell you what is inside the thing.
+Adding who needs it and when would complete the row, since that column is what makes a row useful. — Who needs it is a third question and a useful one. It still does not tell you what is inside the thing.
 
-The second column exists to say what is inside, and repeating the label says nothing you did not already have. — The row was meant to test whether the name matches the contents. Copying the name across removes the test and leaves the row looking finished.
+The second column should say what is inside, and copying the label in tells you nothing new. — The row was meant to test whether the name matches the contents. Copying the name across removes the test and leaves the row looking finished.
 
 Improve: Go back to your item rows in step 2 and finish “this tells someone …” for each one. Any row you cannot finish needs opening and reading. Record what you changed in step 5.
 
@@ -458,18 +458,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You filled the reachability column from memory, because you know the product well. What is wrong with that?
 
-- Nothing, as long as the routes you wrote down really exist.
-- It is fine for pages and only wrong for the items buried in emails.
-- You know routes a first-time visitor does not, so what you recorded is your route rather than theirs.
+- Memory is reliable for menu pages; the only rows at risk are the answers buried in emails and PDFs.
+- You know routes a first-time visitor does not, so the column records your route, not theirs.
+- Very little, provided every route you wrote down really exists and you have checked each one works.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing, as long as the routes you wrote down really exist. — They exist, and that is not the question. A route you can only take because you already know it is a route the column should be marking as a problem.
+Memory is reliable for menu pages; the only rows at risk are the answers buried in emails and PDFs. — Pages are where your knowledge helps you most. You go straight to one from a menu you have used a hundred times, which a stranger cannot do.
 
-It is fine for pages and only wrong for the items buried in emails. — Pages are where your knowledge helps you most. You go straight to one from a menu you have used a hundred times.
+You know routes a first-time visitor does not, so the column records your route, not theirs. — The column is meant to show how hard a thing is to reach. Filled in from knowledge, it records that everything is reachable, which is true only for you.
 
-You know routes a first-time visitor does not, so what you recorded is your route rather than theirs. — The column is meant to show how hard a thing is to reach. Filled in from knowledge, it records that everything is reachable, which is true only for you.
+Very little, provided every route you wrote down really exists and you have checked each one works. — They exist, and that is not the question. A route you can only take because you already know it is a route the column should be marking as a problem.
 
 Improve: Work through your two reachability boxes in step 3 again, pretending you have never used the product, and write what you actually had to do. Record the corrections in step 5.
 
@@ -503,11 +503,11 @@ Your three counts, where the full inventory lives, and the repair the Check ques
 
 Section: practice. Stable action: write-counts.
 
-Write your answer for “Your three counts: items, collisions, and items nobody in your research ever needed”. Use the task instructions below to decide what to include.
+Count, do not estimate. If you had no research participants, write “not countable without research” for the third count rather than guessing it.
 
 **Answer:** Your three counts: items, collisions, and items nobody in your research ever needed
 
-
+Count, do not estimate. If you had no research participants, write “not countable without research” for the third count rather than guessing it.
 
 <details>
 <summary>Example</summary>
@@ -537,6 +537,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a neighbourhood tiffin service has a six-page website: Menu, Prices, Delivery areas, About, Gallery and Contact. Customers often message the owner to ask how to pause deliveries while they travel, and whether a dish can be made without onion; she answers each one by hand. A helper has drafted an inventory that lists the six pages and nothing else.
+
+**Task:** Name one row the helper’s inventory must gain before anyone draws a structure, say how a person reaches that answer today, and explain why it belongs in an inventory even though it is not a page.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Adds another page, such as a second menu page, or reorganises the six pages. The inventory is still a list of what the website publishes, so the answers people ask the owner for stay invisible.
+- Adequate: Adds a row such as “pausing deliveries”, notes it is reachable today only by messaging the owner, and explains that an inventory lists the answers people need, wherever they live, not only pages.
+- Strong: As adequate, and marks the row as missing rather than misfiled, since no renaming fixes an answer that exists only in replies. Notes that customers may still prefer to message, and suggests checking that before publishing it.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -790,7 +816,7 @@ Four vocabulary lines copied out exactly from your notes, each attributed to a p
 
 - Read every interview note and record each word participants used for things in your inventory, verbatim, with who said it. Do not paraphrase into your own vocabulary as you go.
 
-**Start here:** Put the inventory beside the notes and mark every noun a participant used for a thing on your list. If m05 produced no participants at all, say so in the sample box and take your words from real messages people have already sent you, marking every row with no quotation as a guess. A rehearsal with yourself is never written down as research.
+**Start here:** Put the inventory beside the notes and mark every noun a participant used for a thing on your list. If m05 produced no participants at all, say so in the sample box and take your words from real messages people have already sent you or public reviews of similar products, with names removed and the source named, marking every row with no quotation as a guess. With none of those, every row is a guess, and saying so is a complete answer. A rehearsal with yourself is never written down as research.
 
 **Enough:** Every phrase is in somebody else’s words, with a participant label beside it.
 
@@ -820,15 +846,15 @@ Made-up example. Reading five sets of interview notes for vocabulary, and throwi
 **Unknown:** Still unknown: whether the words your few people used are the words anyone else would use. A handful of people gives you candidates, not a vocabulary.
 
 
-### Vocabulary 1 · the item, the exact words a participant used for it, and who said it
+### Vocabulary 1 · the item, the exact words a participant used for it, and their participant label
 
 Section: practice-plan. Stable action: write-vocab-1.
 
-Write your answer for “Vocabulary 1 · the item, the exact words a participant used for it, and who said it”. Use the task instructions below to decide what to include.
+Use a label such as P2, never a name. Keep your raw notes in a private file or on paper with a date to delete them, and copy only the words for this item here.
 
-**Answer:** Vocabulary 1 · the item, the exact words a participant used for it, and who said it
+**Answer:** Vocabulary 1 · the item, the exact words a participant used for it, and their participant label
 
-
+Use a label such as P2, never a name. Keep your raw notes in a private file or on paper with a date to delete them, and copy only the words for this item here.
 
 <details>
 <summary>Example</summary>
@@ -838,35 +864,35 @@ Example (made up): what to bring · “the list of things I need” · P2.
 </details>
 
 
-### Vocabulary 2 · the item, the exact words, and who said it
+### Vocabulary 2 · the item, the exact words, and the participant label
 
 Section: practice-plan. Stable action: write-vocab-2.
 
-Write your answer for “Vocabulary 2 · the item, the exact words, and who said it”. Use the task instructions below to decide what to include.
+Write your answer for “Vocabulary 2 · the item, the exact words, and the participant label”. Use the task instructions below to decide what to include.
 
-**Answer:** Vocabulary 2 · the item, the exact words, and who said it
-
-
+**Answer:** Vocabulary 2 · the item, the exact words, and the participant label
 
 
-### Vocabulary 3 · the item, the exact words, and who said it
+
+
+### Vocabulary 3 · the item, the exact words, and the participant label
 
 Section: practice-plan. Stable action: write-vocab-3.
 
-Write your answer for “Vocabulary 3 · the item, the exact words, and who said it”. Use the task instructions below to decide what to include.
+Write your answer for “Vocabulary 3 · the item, the exact words, and the participant label”. Use the task instructions below to decide what to include.
 
-**Answer:** Vocabulary 3 · the item, the exact words, and who said it
-
-
+**Answer:** Vocabulary 3 · the item, the exact words, and the participant label
 
 
-### Vocabulary 4 · the item, the exact words, and who said it
+
+
+### Vocabulary 4 · the item, the exact words, and the participant label
 
 Section: practice-plan. Stable action: write-vocab-4.
 
-Write your answer for “Vocabulary 4 · the item, the exact words, and who said it”. Use the task instructions below to decide what to include.
+Write your answer for “Vocabulary 4 · the item, the exact words, and the participant label”. Use the task instructions below to decide what to include.
 
-**Answer:** Vocabulary 4 · the item, the exact words, and who said it
+**Answer:** Vocabulary 4 · the item, the exact words, and the participant label
 
 
 
@@ -1030,11 +1056,11 @@ Go down your own evidence column. Any cell you cannot fill with a participant’
 
 Section: practice-plan. Stable action: write-row-1.
 
-Write your answer for “Row 1 · current label, participant words, your proposed label, and the evidence or the word guess”. Use the task instructions below to decide what to include.
+Refer to people by label, such as P2, never by name.
 
 **Answer:** Row 1 · current label, participant words, your proposed label, and the evidence or the word guess
 
-
+Refer to people by label, such as P2, never by name.
 
 <details>
 <summary>Example</summary>
@@ -1096,11 +1122,11 @@ Your vocabulary conflicts, each with an interpretation and a sentence naming wha
 
 Section: practice-plan. Stable action: write-conflict-1.
 
-Two words for one thing often means two audiences, and sometimes it means the thing is two things.
+Two words for one thing often means two audiences, and sometimes it means the thing is two things. Refer to people by label, such as P2 and P4.
 
 **Answer:** Conflict 1 · the two words, who used each, what you think the disagreement means, and what would settle it
 
-Two words for one thing often means two audiences, and sometimes it means the thing is two things.
+Two words for one thing often means two audiences, and sometimes it means the thing is two things. Refer to people by label, such as P2 and P4.
 
 
 ### Conflict 2 · the two words, who used each, what it means, and what would settle it
@@ -1133,18 +1159,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your proposed label is “Preparation”, and no participant ever used the word. What should the row say?
 
-- A different label taken from the industry, so at least it is standard.
-- The proposed label on its own, since the card sort will test it anyway.
-- The proposed label, with the word guess beside it, so nobody later reads it as something a person said.
+- The proposed label on its own, since the card sort in lesson 5 will test every label anyway.
+- A standard term from the industry instead, so that the label at least matches other products.
+- The proposed label marked as a guess, so nobody later reads it as words a participant used.
 
 <details>
 <summary>After your attempt</summary>
 
-A different label taken from the industry, so at least it is standard. — Swapping one unevidenced word for another changes nothing about the evidence, and usually makes the word less familiar rather than more.
+The proposed label on its own, since the card sort in lesson 5 will test every label anyway. — The sort may never reach that item, and by then the table has been read by people who could not tell which rows were evidenced.
 
-The proposed label on its own, since the card sort will test it anyway. — The sort may never reach that item, and by then the table has been read by people who could not tell which rows were evidenced.
+A standard term from the industry instead, so that the label at least matches other products. — Swapping one unevidenced word for another changes nothing about the evidence, and usually makes the word less familiar rather than more.
 
-The proposed label, with the word guess beside it, so nobody later reads it as something a person said. — A guess is allowed and often necessary. What is not allowed is a guess sitting in a table that reads throughout as though it all came from people.
+The proposed label marked as a guess, so nobody later reads it as words a participant used. — A guess is allowed and often necessary. What is not allowed is a guess sitting in a table that reads throughout as though it all came from people.
 
 Improve: Work down the evidence cells in your three rows in step 3 and in the rest of your table. Any cell you cannot fill with a participant’s word makes that row a guess. Record what you marked in step 5.
 
@@ -1163,18 +1189,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Two participants said “class” and two said “workshop”. What do you do?
 
-- Write what the disagreement might mean, choose one word for now, and record what would settle it.
-- Use the word you prefer, since a two-and-two split gives you no guidance.
-- Put both words in the label so that nobody is excluded.
+- Put both words into the label, such as “Class or workshop”, so neither group is left out.
+- Use the word you find clearer, since a two-and-two split carries no guidance either way.
+- Write what the split might mean, pick one word for now, and note what would settle it.
 
 <details>
 <summary>After your attempt</summary>
 
-Write what the disagreement might mean, choose one word for now, and record what would settle it. — A split is information about the people, not a tie to be broken by taste. Writing the interpretation keeps the decision open to being wrong.
+Put both words into the label, such as “Class or workshop”, so neither group is left out. — Pairing works when an unfamiliar term is unavoidable, such as a legal word. Here both words are familiar, and joining them lengthens the menu without deciding anything.
 
-Use the word you prefer, since a two-and-two split gives you no guidance. — The split does give guidance once you look at who used which word and what else you know about them. Preference is the thing this table exists to keep out.
+Use the word you find clearer, since a two-and-two split carries no guidance either way. — The split does give guidance once you look at who used which word and what else you know about them. Preference is the thing this table exists to keep out.
 
-Put both words in the label so that nobody is excluded. — Pairing works when an unfamiliar term is unavoidable, such as a legal word. Here both words are familiar, and joining them lengthens the menu without deciding anything.
+Write what the split might mean, pick one word for now, and note what would settle it. — A split is information about the people, not a tie to be broken by taste. Writing the interpretation keeps the decision open to being wrong.
 
 Improve: Fill your conflict boxes in step 4 with who used each word and what else you know about them. If nothing distinguishes the two groups, mark it unsettled rather than deciding. Record the change in step 5.
 
@@ -1193,18 +1219,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You are choosing between “Manage” and “Cancel or change a booking”. Which, and why?
 
-- Either, since people will click both and find out.
-- “Manage”, because short labels scan faster and the menu stays tidy.
-- The longer one, because a person scanning can tell whether their own task is inside it.
+- Either works, since people who are unsure will open both and find what they need.
+- “Cancel or change a booking”, because a scanning person can see their task is inside.
+- “Manage”, because one short word scans faster and keeps the whole menu on one line.
 
 <details>
 <summary>After your attempt</summary>
 
-Either, since people will click both and find out. — Some will. Someone already unsure of the site often leaves instead, and you never see that happen.
+Either works, since people who are unsure will open both and find what they need. — Some will. Someone already unsure of the site often leaves instead, and you never see that happen.
 
-“Manage”, because short labels scan faster and the menu stays tidy. — Scanning speed is not the same as scanning success. A short word that could mean four things is read quickly and answers nothing.
+“Cancel or change a booking”, because a scanning person can see their task is inside. — Length costs a little space. Ambiguity costs a wrong click, a back button, and some of the trust the person arrived with.
 
-The longer one, because a person scanning can tell whether their own task is inside it. — Length costs a little space. Ambiguity costs a wrong click, a back button, and some of the trust the person arrived with.
+“Manage”, because one short word scans faster and keeps the whole menu on one line. — Scanning speed is not the same as scanning success. A short word that could mean four things is read quickly and answers nothing.
 
 Improve: Read only your proposed labels in step 5 as a stranger would, and list the ones that leave you unable to say what is inside. Rewrite each of those and record the rewrites in step 5.
 
@@ -1270,11 +1296,11 @@ Write your answer for “Reading only your proposed labels: the ones that leave 
 
 Section: practice. Stable action: write-notes-read.
 
-This sentence travels with the table wherever it goes.
+This sentence travels with the table wherever it goes. Counts and routes only, with no names or contact details. If you had no participants, say so plainly.
 
 **Answer:** How many participants your notes cover, how they were recruited, and who is missing
 
-This sentence travels with the table wherever it goes.
+This sentence travels with the table wherever it goes. Counts and routes only, with no names or contact details. If you had no participants, say so plainly.
 
 
 ### Where the full labelling table lives
@@ -1297,6 +1323,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a community library’s website has a menu item called “Circulation services”. Messages from members ask how to “renew my books”, “how many books can I take”, and what the “late fee” is. Nobody has ever written the word circulation to the library, and one member asked whether renewing and paying a fine are done in the same place.
+
+**Task:** Propose a label, or labels, for what sits under “Circulation services”, say which words came from members and which are your own guess, and explain why.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps “Circulation services”, or swaps it for another invented word such as “My shelf”, with no members’ words behind it and nothing marked as a guess.
+- Adequate: Proposes labels close to members’ words, such as “Renew or return books” and “Fines”, quotes the messages they came from, and marks any label no member supplied as a guess.
+- Strong: As adequate, and treats renewing and paying a fine as possibly two items, says what would settle it, and notes that a handful of messages gives candidate words rather than a vocabulary.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -1355,13 +1407,13 @@ When the activity is finished, tell me to return to the course answer called “
 
 **Vocabulary is harvested verbatim from real notes**
 
-Adequate evidence: Participant words recorded exactly as said, attributed to a participant, for the items where evidence exists.
+Adequate evidence: Participant words recorded exactly as said, labelled by participant, for the items where evidence exists — or, where no notes or messages exist, a plain statement of that with every label marked a guess.
 
-0 — Labels proposed from the designer's own vocabulary only.
+0 — Labels proposed from the designer's own vocabulary and presented as if people had used them.
 
 1 — Some participant words, paraphrased or unattributed.
 
-2 — Verbatim words with attribution wherever evidence exists.
+2 — Verbatim words with participant labels wherever evidence exists; with no evidence available, the absence stated and every row marked a guess.
 
 3 — As adequate, and the table notes where a participant hesitated or corrected themselves, which is often where the concept is unclear.
 
@@ -1714,11 +1766,11 @@ Made-up example. Breaking two groupings of the same fifty-three cards on purpose
 
 Section: practice-plan. Stable action: write-break-one.
 
-Write your answer for “Scheme one breaks: the specific item, the specific kind of person, and the situation they are in”. Use the task instructions below to decide what to include.
+Describe a kind of person. If you trace it to someone from your research, use their label, such as P2, never a name.
 
 **Answer:** Scheme one breaks: the specific item, the specific kind of person, and the situation they are in
 
-
+Describe a kind of person. If you trace it to someone from your research, use their label, such as P2, never a name.
 
 <details>
 <summary>Example</summary>
@@ -1780,18 +1832,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You built a task scheme and a topic scheme, and the topic one has fewer overlaps. Does that make it better?
 
-- Yes, because overlaps are what make a structure confusing.
-- On its own, no. What matters is whether a person looking for a specific thing has an obvious first place to look.
-- Yes, because fewer overlaps mean less to maintain.
+- Fewer overlaps decide it, because items that could sit in two places are what confuse people.
+- Maintenance decides it: each overlap is another copy to keep up to date, so fewer is better.
+- What decides it is whether a person seeking one thing has an obvious first place to look.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, because overlaps are what make a structure confusing. — Real information overlaps. The confusion comes from labels people cannot read, not from an item that could sensibly sit in two places.
+Fewer overlaps decide it, because items that could sit in two places are what confuse people. — Real information overlaps. The confusion comes from labels people cannot read, not from an item that could sensibly sit in two places.
 
-On its own, no. What matters is whether a person looking for a specific thing has an obvious first place to look. — A partition with no overlaps is usually bought by inventing categories that match nothing in anybody’s head. Tidiness was never the goal.
+Maintenance decides it: each overlap is another copy to keep up to date, so fewer is better. — Maintenance is a real cost, and it belongs in the collision decision rather than in the choice of scheme. Cross-linking keeps the overlap and keeps one copy.
 
-Yes, because fewer overlaps mean less to maintain. — Maintenance is a real cost, and it belongs in the collision decision rather than in the choice of scheme. Cross-linking keeps the overlap and keeps one copy.
+What decides it is whether a person seeking one thing has an obvious first place to look. — Fewer overlaps prove nothing on their own. A partition with no overlaps is usually bought by inventing categories that match nothing in anybody’s head, and tidiness was never the goal.
 
 Improve: Reread your two breakage boxes in step 4. If either says only that a scheme overlaps, rewrite it naming an item, a kind of person and a situation, then record the change in step 5.
 
@@ -1810,18 +1862,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 An item genuinely belongs in two groups. What do you do?
 
-- Duplicate it, so that nobody can miss it.
-- Choose one of duplicate, cross-link or restructure, in writing, with the reason beside it.
-- Leave it in the better of the two homes and move on.
+- Duplicate it in both groups, so that nobody looking in either place can possibly miss it.
+- Pick duplicate, cross-link or restructure on purpose, and write the reason beside it.
+- Place it in whichever home suits more of your tasks, and move on to the next card.
 
 <details>
 <summary>After your attempt</summary>
 
-Duplicate it, so that nobody can miss it. — A defensible choice with one known cost: two copies drift apart and eventually say different things. Written down, it is a decision rather than an accident.
+Duplicate it in both groups, so that nobody looking in either place can possibly miss it. — A defensible choice with one known cost: two copies drift apart and eventually say different things. It only becomes a decision once that cost is written down beside it.
 
-Choose one of duplicate, cross-link or restructure, in writing, with the reason beside it. — All three are legitimate and each costs something different. The failure is putting it in one place, knowing that is wrong, and hoping.
+Pick duplicate, cross-link or restructure on purpose, and write the reason beside it. — All three are legitimate and each costs something different. The failure is putting it in one place, knowing that is wrong, and hoping.
 
-Leave it in the better of the two homes and move on. — That is the one option with no record. When the tree test sends people to the other place, you will not know that you had already seen it coming.
+Place it in whichever home suits more of your tasks, and move on to the next card. — That is the one option with no record. When the tree test sends people to the other place, you will not know that you had already seen it coming.
 
 Improve: Fill your three collision decision boxes in step 4, one per item you hesitated over, each naming both candidate homes and your choice. Record what you decided in step 5.
 
@@ -1840,18 +1892,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You organised by audience — first-timers and returning attendees — and it looks clean. What is the risk?
 
-- A person has to know which audience she is before she can choose, and frequently she cannot.
-- Only that the two branches will duplicate content between them.
-- None, as long as the two audiences are named clearly.
+- Little risk, provided the two audiences are named clearly enough for anyone to recognise.
+- She must decide which audience she belongs to before choosing, and often she cannot.
+- The main risk is that the two branches end up duplicating content and drifting apart.
 
 <details>
 <summary>After your attempt</summary>
 
-A person has to know which audience she is before she can choose, and frequently she cannot. — Somebody booking for her daughter is a parent and an attendee at once. The first choice becomes a question about identity rather than about the task.
+Little risk, provided the two audiences are named clearly enough for anyone to recognise. — Clear names do not help somebody who fits both, or who has never thought about herself in your terms at all.
 
-Only that the two branches will duplicate content between them. — Duplication is a maintenance cost and the smaller half of the problem. The larger half happens at the very first click.
+She must decide which audience she belongs to before choosing, and often she cannot. — Somebody who came once years ago and is booking again is both first-timer and returning attendee. The first choice becomes a question about identity rather than about the task.
 
-None, as long as the two audiences are named clearly. — Clear names do not help somebody who fits both, or who has never thought about herself in your terms at all.
+The main risk is that the two branches end up duplicating content and drifting apart. — Duplication is a maintenance cost and the smaller half of the problem. The larger half happens at the very first click.
 
 Improve: If either grouping in step 2 or step 3 is by audience, walk your three research tasks through it and write down who cannot tell which branch is hers, then record it in step 5.
 
@@ -1889,21 +1941,21 @@ A supplied decision from the same made-up project. The task scheme was carried f
 
 Which way of recording that trade-off is worth writing down?
 
-- “We can revisit this if people complain about it.”
-- “Cross-linking is a compromise between duplicating and restructuring.”
-- “The task scheme is better overall, although it has some drawbacks.”
-- “People deciding whether to book will now need one extra click to reach what to bring, and I will see it in the tree test as hesitation on the class page.”
+- “Cross-linking is a sensible compromise between duplicating the page and restructuring both groups.”
+- “We will revisit the cross-link if people complain about finding what to bring on the class page.”
+- “People choosing a class need one extra click for what to bring; the tree test should show it as hesitation.”
+- “The task scheme is better overall for our three tasks, although it has some drawbacks for browsing.”
 
 <details>
 <summary>After your attempt</summary>
 
-“We can revisit this if people complain about it.” — Complaints arrive only from the few who bother. The tree test is a few days away and would show the hesitation whether or not anybody spoke up.
+“Cross-linking is a sensible compromise between duplicating the page and restructuring both groups.” — That describes the method rather than the consequence. It is true of every cross-link ever made and says nothing about this one.
 
-“Cross-linking is a compromise between duplicating and restructuring.” — That describes the method rather than the consequence. It is true of every cross-link ever made and says nothing about this one.
+“We will revisit the cross-link if people complain about finding what to bring on the class page.” — Complaints arrive only from the few who bother. The tree test is a few days away and would show the hesitation whether or not anybody spoke up.
 
-“The task scheme is better overall, although it has some drawbacks.” — It records a verdict and no cost. In three weeks nobody, including you, could say what was given up or check whether it mattered.
+“People choosing a class need one extra click for what to bring; the tree test should show it as hesitation.” — It names who pays, what they pay, and the specific thing a later test could show. That last part is what turns a note into a prediction.
 
-“People deciding whether to book will now need one extra click to reach what to bring, and I will see it in the tree test as hesitation on the class page.” — It names who pays, what they pay, and the specific thing a later test could show. That last part is what turns a note into a prediction.
+“The task scheme is better overall for our three tasks, although it has some drawbacks for browsing.” — It records a verdict and no cost. In three weeks nobody, including you, could say what was given up or check whether it mattered.
 
 Write your own trade-off as “people doing … will now have to …, and I will see it in the tree test as …”. If you cannot finish that sentence, the cost is not yet understood.
 
@@ -1952,6 +2004,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a hardware shop’s website groups everything by department: Plumbing, Electrical, Paint, Garden. Most customers arrive with a job in mind, such as “fix a dripping tap” or “put up a shelf”. The owner wants to regroup by job instead, but tap washers are needed both for fixing a tap and for mending a garden hose.
+
+**Task:** Choose the scheme you would carry forward, name the item and the kind of customer for whom your choice breaks, and explain how you would handle that item and why.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Says the job scheme is better because it feels more modern or friendly, with no breakage named, or concedes that no scheme is perfect without saying where it fails.
+- Adequate: Chooses one scheme and names a specific breakage, such as tap washers for someone mending a hose, then picks duplicate, cross-link or restructure for that item with a reason.
+- Strong: As adequate, and writes what the choice gives up as a prediction a later test could check, and notes that a customer who already knows the part name may still look by department.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -2032,7 +2110,7 @@ Adequate evidence: A specific failing case per scheme: this item, for this kind 
 
 2 — Both schemes have a concrete failing case.
 
-3 — As adequate, and one breakage is traced to a real participant from your research rather than a hypothetical person.
+3 — As adequate, and one breakage is traced to a real participant from your research, or to a real message you hold, rather than a hypothetical person.
 
 Repair: Take your three research tasks and walk each through both schemes. The first place you hesitate is the breakage; write down what you were holding and who you were being. Recheck: The two breakage cases.
 
@@ -2105,7 +2183,7 @@ Information architecture means arranging and naming information so a newcomer ca
 - **Depth and breadth:** Depth is how many levels a person passes through. Breadth is how many options sit side by side at one level.
 - **Level one:** The groups a person sees first, before choosing anything.
 
-**Quick example.** Two supplied maps of the same made-up content. Map A has four groups at level one and three levels in total. Map B has eight groups at level one and two levels in total. Supplied task: a person booked a class for Saturday, something has come up, and she wants to know whether she can get her money back.
+**Quick example.** Two supplied maps of the same made-up content; the full versions are in the source notes for this lesson. Map A has four groups at level one: Choose a class, Get ready for a class, Change or cancel, Get help. Under Change or cancel sits Booking admin, which holds Move a booking to another date, Cancel a booking and Refund rule. Map B has eight entries at level one, one of them Cancel a booking and refunds, which holds Cancel a booking and Refund rule. Supplied task: she booked a class for Saturday, something has co
 
 The reader demonstrates and guides the task before asking for “What the reading says about the effort of choosing and of scanning, and what it does not claim about a maximum number of options”.
 
@@ -2150,7 +2228,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The task scheme drawn out came to three levels: Get ready for a class → Practical information → What to bring. On a phone that is three full screens, and the tree test later showed people stopping at level two, where “Practical information” told them nothing about whether their answer was inside. The shallower alternative moved the four most-needed items up to level one under their own plain labels, leaving genuinely rare material at level two, so the structure became wider and one level shorter. The wide version favoured first-timers looking for one specific thing; the deeper version favoured someone browsing everything about a class, which nobody in the research had ever done.
+- The task scheme drawn out came to three levels: Get ready for a class → Practical information → What to bring. On a phone that is three full screens, and the tree test later showed people stopping at level two, where “Practical information” told them nothing about whether their answer was inside. The shallower alternative moved the four items the research showed people needing for their tasks up to level one under their own plain labels, leaving genuinely rare material at level two, so the structure became wider and one level shorter. The wide version favoured first-timers looking for one specific thing; the deeper version favoured someone browsing everything about a class, which nobody in the research had ever done.
 
 
 ### Choose where you will do the work
@@ -2160,6 +2238,27 @@ Section: learn. Stable action: workspace.
 Recommended route: Draw the sitemap and its shallower alternative on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder. Alternative route: Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
+
+
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Supplied practice maps, made up for this lesson: a pottery studio’s website drawn two ways. Nobody has tested either map, and both hold the same thirteen items. In each line, › means “contains”.
+- Map A, the current map: three levels, four groups at level one.
+- Map A · Choose a class › Classes this month › Beginners’ wheel throwing, Evening hand-building. Choose a class › Prices and passes › Single class price, Five-class pass.
+- Map A · Get ready for a class › Practical information › What to bring, Directions and parking, Step-free access. Get ready for a class › Before your first class › What happens on the day.
+- Map A · Change or cancel › Booking admin › Move a booking to another date, Cancel a booking, Refund rule.
+- Map A · Get help › Contact us › Phone and email, Questions people often ask.
+- Map B, the shallower alternative: two levels, eight entries at level one. The four things the made-up research showed people needing for their tasks were lifted to level one: what to bring, directions, moving a booking, and cancelling with refunds.
+- Map B · Classes this month › Beginners’ wheel throwing, Evening hand-building. Prices and passes › Single class price, Five-class pass. What to bring. Directions and parking.
+- Map B · Move a booking to another date. Cancel a booking and refunds › Cancel a booking, Refund rule. Before your first class › What happens on the day, Step-free access. Get help › Phone and email, Questions people often ask.
+- Labels the comparison turns on: no made-up participant ever used “Booking admin” or “Practical information”, and both name a container rather than what is inside it. “What to bring”, “Directions and parking” and “Cancel a booking and refunds” sit close to words the made-up participants used: “the list of things I need”, “where is it”, “what happens if I can’t come”.
+- Task 1 · She booked a class for Saturday, something has come up, and she wants to know whether she can get her money back.
+- Task 2 · A first-timer, the evening before her class, wants to know what to bring.
+- Task 3 · Someone thinking about a first class wants to read everything about what the first visit involves before she decides.
 
 
 ### Read on choices and load
@@ -2344,7 +2443,7 @@ Section: practice-plan. Stable action: step-4-brief.
 
 A second map of the same content, one level shallower, with what you lifted and what that cost.
 
-- Produce a second sitemap for the same content that is one level shallower, lifting the most-needed items. Note what became crowded and what became harder to find.
+- Produce a second sitemap for the same content that is one level shallower, lifting the items your research showed people need for their tasks. Note what became crowded and what became harder to find.
 
 **Start here:** Take the four items your research showed people need most, put them at level one, then re-place everything else around them.
 
@@ -2384,11 +2483,11 @@ Made-up example. Flattening a three-level map, and finding out the flat version 
 
 Section: practice-plan. Stable action: write-lifted-items.
 
-Lift what your research showed people need, not what you find interesting.
+Lift what your research showed people need for their tasks, not what you find interesting. A tree test cannot tell you this later: you write its tasks, so its counts are not a measure of how often anything is needed.
 
 **Answer:** Which items you lifted to level one, and why those ones
 
-Lift what your research showed people need, not what you find interesting.
+Lift what your research showed people need for their tasks, not what you find interesting. A tree test cannot tell you this later: you write its tasks, so its counts are not a measure of how often anything is needed.
 
 
 ### What became crowded, and what became harder to find
@@ -2410,18 +2509,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 One task in your shallower map still takes four choices. Someone tells you the limit is three clicks. What do you do?
 
-- Leave it, since the number of clicks does not matter at all.
-- Restructure until every task fits inside three clicks.
-- Count the uncertain choices instead, because distance is not what loses people.
+- Ignore the count entirely, since the number of choices a task takes tells you nothing.
+- Restructure until every task fits inside three clicks, since that is the accepted limit.
+- Count how many of the four are uncertain, because guessing, not distance, loses people.
 
 <details>
 <summary>After your attempt</summary>
 
-Leave it, since the number of clicks does not matter at all. — It matters as a rough symptom. A task taking nine steps is telling you something, even though three is folklore.
+Ignore the count entirely, since the number of choices a task takes tells you nothing. — It matters as a rough symptom. A task taking nine steps is telling you something, even though three is folklore.
 
-Restructure until every task fits inside three clicks. — Forcing the count usually widens level one past what anyone can scan, or invents a parent group holding unrelated things.
+Restructure until every task fits inside three clicks, since that is the accepted limit. — Three clicks is folklore rather than a finding. Forcing the count usually widens level one past what anyone can scan, or invents a parent group holding unrelated things.
 
-Count the uncertain choices instead, because distance is not what loses people. — Four confident choices are shorter than two gambles. The number worth reducing is guesses, not steps.
+Count how many of the four are uncertain, because guessing, not distance, loses people. — Four confident choices are shorter than two gambles. The number worth reducing is guesses, not steps.
 
 Improve: Look at your task depths in step 2. Beside each count, write how many of those choices you would be unsure of, then record the change in step 5.
 
@@ -2440,18 +2539,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A level-two group is called “More information” and you cannot write a sentence saying what is inside. What does that tell you?
 
-- It is acceptable as long as the items inside are labelled well.
-- The group is not real; it exists because two items had nowhere else to go.
-- The label needs work but the grouping underneath is sound.
+- It is probably a leftover container, holding items that had nowhere else to go.
+- The label needs rewording, but the grouping underneath it is probably sound.
+- It is acceptable, as long as every item inside it carries a clear label of its own.
 
 <details>
 <summary>After your attempt</summary>
 
-It is acceptable as long as the items inside are labelled well. — On a phone the items inside are on the next screen. The reader decides from the parent alone and never sees them.
+It is probably a leftover container, holding items that had nowhere else to go. — A group you cannot summarise cannot be scanned past either. The reader has to open it to find out, every single time.
 
-The group is not real; it exists because two items had nowhere else to go. — A group you cannot summarise cannot be scanned past either. The reader has to open it to find out, every single time.
+The label needs rewording, but the grouping underneath it is probably sound. — Renaming a container whose contents share nothing produces a second vague name. The contents are the problem, not the wording.
 
-The label needs work but the grouping underneath is sound. — Renaming a container whose contents share nothing produces a second vague name. The contents are the problem, not the wording.
+It is acceptable, as long as every item inside it carries a clear label of its own. — On a phone the items inside are on the next screen. The reader decides from the parent alone and never sees them.
 
 Improve: Go back to your level-two boxes in step 3. Break up or rehome any group you marked vague, then record the change in step 5.
 
@@ -2470,18 +2569,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your shallower map suits two of your three tasks, so you write that it is the better structure. What is wrong with that sentence?
 
-- It hides the task it is worse for, which is the thing a later test needs to look for.
-- Nothing: two out of three is a reasonable basis for choosing.
-- You should keep both maps and decide after the tree test.
+- It decides too early: keep both maps and let the tree test pick the better structure.
+- The sentence is fine: two of three tasks is a reasonable basis for calling it better.
+- It hides the task the map is worse for, which is what a later test needs to look for.
 
 <details>
 <summary>After your attempt</summary>
 
-It hides the task it is worse for, which is the thing a later test needs to look for. — A shape favours tasks; it is not better in general. Naming the task it costs is what makes the tree test worth running.
+It decides too early: keep both maps and let the tree test pick the better structure. — Keeping both avoids the decision, and the tree test needs one structure to test. Choose, and record what the choice costs.
 
-Nothing: two out of three is a reasonable basis for choosing. — Choosing on that basis is fine. Writing it up as better in general is what loses the information.
+The sentence is fine: two of three tasks is a reasonable basis for calling it better. — Choosing on that basis is fine. Writing it up as better in general is what loses the information.
 
-You should keep both maps and decide after the tree test. — Keeping both avoids the decision, and the tree test needs one structure to test. Choose, and record what the choice costs.
+It hides the task the map is worse for, which is what a later test needs to look for. — A shape favours tasks; it is not better in general. Naming the task it costs is what makes the tree test worth running.
 
 Improve: Look at your task comparison in step 5. Name the task your chosen shape disadvantages and what a tree test would show if it matters, then record the change in step 5.
 
@@ -2513,27 +2612,27 @@ Which shape favours each task, your chosen shape with what it costs, where the d
 
 Section: practice. Stable action: step-5-try.
 
-Two supplied maps of the same made-up content. Map A has four groups at level one and three levels in total. Map B has eight groups at level one and two levels in total. Supplied task: a person booked a class for Saturday, something has come up, and she wants to know whether she can get her money back.
+Two supplied maps of the same made-up content; the full versions are in the source notes for this lesson. Map A has four groups at level one: Choose a class, Get ready for a class, Change or cancel, Get help. Under Change or cancel sits Booking admin, which holds Move a booking to another date, Cancel a booking and Refund rule. Map B has eight entries at level one, one of them Cancel a booking and refunds, which holds Cancel a booking and Refund rule. Supplied task: she booked a class for Saturday, something has come up, and she wants to know whether she can get her money back.
 
-Which shape favours this task, and on what grounds?
+Which map favours this task, and on what grounds?
 
-- Map B, because the refund rule can sit at level one where she reads it instead of guessing what a parent group contains.
-- Map A, because four groups are easier to scan than eight.
-- Neither: the content is the same, so the shape cannot affect the task.
-- Map A, because three levels give the content room to be organised properly.
+- Neither: both maps contain the refund rule, so their shape cannot change how she reaches it.
+- Map B: “Cancel a booking and refunds” names her need at level one, with no container to guess past.
+- Map A: “Change or cancel” is the right first choice, and one more level costs only a click.
+- Map A: four groups at level one are quicker to scan than eight, so she reaches the branch sooner.
 
 <details>
 <summary>After your attempt</summary>
 
-Map B, because the refund rule can sit at level one where she reads it instead of guessing what a parent group contains. — She arrives with one specific need and little patience. A visible label removes the guess, and the guess is the part that loses people.
+Neither: both maps contain the refund rule, so their shape cannot change how she reaches it. — Same content, different number of uncertain decisions. The shape changes how many guesses the task costs, which is exactly what is being compared.
 
-Map A, because four groups are easier to scan than eight. — Scanning eight short labels takes seconds. Choosing between four vague parents and then choosing again takes longer and can go wrong at either step.
+Map B: “Cancel a booking and refunds” names her need at level one, with no container to guess past. — In Map A her second choice is Booking admin, a name that says nothing about refunds, so she has to guess. Map B removes that guess, and the guess is the part that loses people.
 
-Neither: the content is the same, so the shape cannot affect the task. — Same content, different number of decisions. The shape changes how many uncertain choices the task costs, which is exactly what is being compared.
+Map A: “Change or cancel” is the right first choice, and one more level costs only a click. — The first choice is right in both maps. The extra level matters because its label, Booking admin, does not tell her the refund rule is inside, so that click is an uncertain one rather than a free one.
 
-Map A, because three levels give the content room to be organised properly. — Room to organise serves the person drawing the map. This task is judged by whether one worried person finds one rule.
+Map A: four groups at level one are quicker to scan than eight, so she reaches the branch sooner. — Scanning eight short labels takes seconds. In Map A the scan is quick and the second choice is a gamble on Booking admin, which is where she can go wrong.
 
-Do this for each of your three tasks and expect the answer to change between them. A shape that wins every task usually means the tasks were too alike.
+Now walk supplied tasks 2 and 3 through both maps, then your own three tasks. Map A should win task 3, where one parent, Get ready for a class, holds everything about a first visit. A shape that wins every task usually means the tasks were too alike.
 
 </details>
 
@@ -2593,6 +2692,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
 
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a city bus service has two draft menus for its website. Map A: Passes › Pass types › Student, Senior, Monthly; and Passes › Manage my pass › Renew, Replace a lost card. Map B puts “Renew a pass” and “Replace a lost card” at the top level beside Pass types. Many people renew on a phone while waiting at a stop.
+
+**Task:** For someone renewing at a bus stop, say which map favours the task and explain why, then name one task the other map serves better.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Picks a map by counting clicks or by which looks tidier, for example “Map B, because fewer clicks is always better”, and names no task the other map wins.
+- Adequate: Picks Map B for renewing, because “Renew a pass” is visible straight away on a small screen while “Manage my pass” asks for a guess, reasoning in uncertain decisions rather than clicks.
+- Strong: As adequate, and names a task Map A serves better, such as comparing every pass type under one parent, and says a tree test with renewal tasks would check the choice rather than settle how often people renew.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+
 ### Review and finish your practice
 
 Section: practice. Stable action: review-work.
@@ -2621,7 +2746,7 @@ Depth and breadth: Depth is how many levels a person passes through. Breadth is 
 Level one: The groups a person sees first, before choosing anything.
 
 Supplied practice material (fictional or labelled practice, not my research):
-Two supplied maps of the same made-up content. Map A has four groups at level one and three levels in total. Map B has eight groups at level one and two levels in total. Supplied task: a person booked a class for Saturday, something has come up, and she wants to know whether she can get her money back.
+Two supplied maps of the same made-up content; the full versions are in the source notes for this lesson. Map A has four groups at level one: Choose a class, Get ready for a class, Change or cancel, Get help. Under Change or cancel sits Booking admin, which holds Move a booking to another date, Cancel a booking and Refund rule. Map B has eight entries at level one, one of them Cancel a booking and refunds, which holds Cancel a booking and Refund rule. Supplied task: she booked a class for Saturday, something has co
 
 Activity: Run a short simulated practice using only the supplied material. Ask what evidence supports my choice and what is still unknown.
 
@@ -2917,22 +3042,22 @@ Answer this before you write anything else about the session. It decides what th
 
 Section: practice-plan. Stable action: write-open-groups.
 
-Copy the names exactly, including the awkward ones. A name you tidy up is a name you invented.
+Copy the names exactly, including the awkward ones. A name you tidy up is a name you invented. On the rehearsal route, write your own groups and mark them rehearsal.
 
 **Answer:** The groups they made and the name they gave each, in their words
 
-Copy the names exactly, including the awkward ones. A name you tidy up is a name you invented.
+Copy the names exactly, including the awkward ones. A name you tidy up is a name you invented. On the rehearsal route, write your own groups and mark them rehearsal.
 
 
 ### Every card moved twice, every pause, and the exact words spoken while hesitating
 
 Section: practice-plan. Stable action: write-open-hesitations.
 
-Write your answer for “Every card moved twice, every pause, and the exact words spoken while hesitating”. Use the task instructions below to decide what to include.
+Refer to the person by label, such as P1. Short exact phrases only; the full notes stay in your private file.
 
 **Answer:** Every card moved twice, every pause, and the exact words spoken while hesitating
 
-
+Refer to the person by label, such as P1. Short exact phrases only; the full notes stay in your private file.
 
 <details>
 <summary>Example</summary>
@@ -3181,15 +3306,15 @@ Take three lines from your own notes and split them the same way. Any line that 
 </details>
 
 
-### The write-up of each session: participant label, groups with their names, card placements, hesitations and quotations
+### A de-identified write-up of each session: participant label, groups with their names, card placements, hesitations and short quotations
 
 Section: practice-plan. Stable action: write-session-record.
 
-Use a label such as P1, never a name. Anonymity is part of what you promised.
+Use a label such as P1, never a name or contact detail. Keep raw notes and photographs in a private folder or on paper with a date to delete them; only this summary goes here. Removing a name does not make a note anonymous, so leave out details that point to one person.
 
-**Answer:** The write-up of each session: participant label, groups with their names, card placements, hesitations and quotations
+**Answer:** A de-identified write-up of each session: participant label, groups with their names, card placements, hesitations and short quotations
 
-Use a label such as P1, never a name. Anonymity is part of what you promised.
+Use a label such as P1, never a name or contact detail. Keep raw notes and photographs in a private folder or on paper with a date to delete them; only this summary goes here. Removing a name does not make a note anonymous, so leave out details that point to one person.
 
 
 ### Three lines from your notes, each split into what they did, what they said, and what you concluded
@@ -3222,18 +3347,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You could not find anyone to sort the cards. You sorted them yourself and the piles look sensible. What may you write?
 
-- A dated note of the recruitment you attempted, plus the cards and the script, with your own sort labelled a rehearsal on every page.
-- Write it up as a sort with one participant, since the sort did happen.
-- Skip the lesson until somebody agrees to sit down with you.
+- A write-up of a sort with one participant, since a real sort did happen at your table.
+- Nothing yet: pause the lesson until somebody agrees to sit down and sort the cards.
+- A dated recruitment note, the cards and script, and your own sort labelled a rehearsal.
 
 <details>
 <summary>After your attempt</summary>
 
-A dated note of the recruitment you attempted, plus the cards and the script, with your own sort labelled a rehearsal on every page. — That is a complete and honest answer to this lesson. The gap is a real finding about access, and the rehearsal shows you can run the method.
+A write-up of a sort with one participant, since a real sort did happen at your table. — You cannot be a participant in your own study. You know the structure already, and a rehearsal reported as research is the one thing this module will not accept.
 
-Write it up as a sort with one participant, since the sort did happen. — You cannot be a participant in your own study. You know the structure already, and a rehearsal reported as research is the one thing this module will not accept.
+Nothing yet: pause the lesson until somebody agrees to sit down and sort the cards. — Waiting loses the preparation, which is most of the work. Prepare the cards, write the dated gap, and run the rehearsal.
 
-Skip the lesson until somebody agrees to sit down with you. — Waiting loses the preparation, which is most of the work. Prepare the cards, write the dated gap, and run the rehearsal.
+A dated recruitment note, the cards and script, and your own sort labelled a rehearsal. — That is a complete and honest answer to this lesson. The gap is a real finding about access, and the rehearsal shows you can run the method.
 
 Improve: Look at the sort status you chose in step 2. If it was a rehearsal, write that word on the photographs and at the top of the write-up now, then record the change in step 5.
 
@@ -3252,18 +3377,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your notes from the open sort read “she was unsure about the practical cards”. What is missing?
 
-- Nothing: you were in the room and you saw it happen.
-- A count of how many cards ended up in that pile.
-- What she actually did with them, and anything she said while doing it.
+- Little: you were in the room, and your summary captures what you saw happen.
+- A count of how many practical cards ended up in her final pile, for the record.
+- What she actually did with those cards, and any words she said while doing it.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing: you were in the room and you saw it happen. — Being there is exactly why the sentence feels complete. A week later the sentence is all that survives, and it contains no evidence.
+Little: you were in the room, and your summary captures what you saw happen. — Being there is exactly why the sentence feels complete. A week later the sentence is all that survives, and it contains no evidence.
 
-A count of how many cards ended up in that pile. — Useful, and not the gap. The pile is already visible in the photograph; the hesitation is not visible anywhere.
+A count of how many practical cards ended up in her final pile, for the record. — Useful, and not the gap. The pile is already visible in the photograph; the hesitation is not visible anywhere.
 
-What she actually did with them, and anything she said while doing it. — Unsure is your reading. Without the movement and the words underneath it, nobody can check the reading, including you next month.
+What she actually did with those cards, and any words she said while doing it. — Unsure is your reading. Without the movement and the words underneath it, nobody can check the reading, including you next month.
 
 Improve: Go back to your hesitation notes in step 2 and rewrite each conclusion as the movement and the words underneath it, then record the change in step 5.
 
@@ -3282,18 +3407,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your cards carry the new labels you proposed in the labelling lesson. Why does that spoil the open sort?
 
-- It is acceptable, since those labels came from participant vocabulary in the first place.
-- You would be testing your own wording back at yourself instead of learning how they group things.
-- It only matters in the closed sort, where you supply the groups anyway.
+- The sort would test your own wording back at you instead of showing how they group things.
+- It does not spoil it, since those labels came from participant vocabulary in the first place.
+- It spoils only the closed sort, where the groups you supply would clash with the card labels.
 
 <details>
 <summary>After your attempt</summary>
 
-It is acceptable, since those labels came from participant vocabulary in the first place. — Coming from vocabulary makes a label plausible, not tested. This session is the test, and the card must not carry the answer on its face.
+The sort would test your own wording back at you instead of showing how they group things. — A card that names its group tells the person where it goes. The sort then agrees with you and tells you nothing you had not already written.
 
-You would be testing your own wording back at yourself instead of learning how they group things. — A card that names its group tells the person where it goes. The sort then agrees with you and tells you nothing you had not already written.
+It does not spoil it, since those labels came from participant vocabulary in the first place. — Coming from vocabulary makes a label plausible, not tested. This session is the test, and the card must not carry the answer on its face.
 
-It only matters in the closed sort, where you supply the groups anyway. — The closed sort is the one that already gives categories. It is the open sort that a leading card face quietly ruins.
+It spoils only the closed sort, where the groups you supply would clash with the card labels. — The closed sort is the one that already gives categories. It is the open sort that a leading card face quietly ruins.
 
 Improve: Read each card face again from step 1 and rewrite any that hints where it belongs, using the plain description from your inventory, then record the change in step 5.
 
@@ -3325,33 +3450,37 @@ How many people sorted and who is missing, the recruitment gap if there is one, 
 
 Section: practice. Stable action: write-sample-line.
 
-This sentence goes at the top of the record, not the bottom, and travels with the results everywhere.
+This sentence goes at the top of the record, not the bottom, and travels with the results everywhere. Counts and routes only, with no names or contact details.
 
 **Answer:** How many people sorted, how you found them, and who is missing
 
-This sentence goes at the top of the record, not the bottom, and travels with the results everywhere.
+This sentence goes at the top of the record, not the bottom, and travels with the results everywhere. Counts and routes only, with no names or contact details.
 
 
 ### If nobody consented: what you tried, on which dates, and what you will try next
 
 Section: practice. Stable action: write-recruitment-gap.
 
-A dated gap plus the prepared cards and the script is a complete answer to this lesson. It is a real finding about access.
+A dated gap plus the prepared cards and the script is a complete answer to this lesson. It is a real finding about access. Describe who you asked by kind, such as “two neighbours”, never by name or number.
 
 **Answer:** If nobody consented: what you tried, on which dates, and what you will try next
 
-A dated gap plus the prepared cards and the script is a complete answer to this lesson. It is a real finding about access.
+Required only when open-status is Nobody has consented yet, so I sorted them myself as a rehearsal. Otherwise leave participant evidence empty.
+
+A dated gap plus the prepared cards and the script is a complete answer to this lesson. It is a real finding about access. Describe who you asked by kind, such as “two neighbours”, never by name or number.
 
 
 ### The words written on every rehearsal artefact so it can never be read as research
 
 Section: practice. Stable action: write-rehearsal-label.
 
-Write your answer for “The words written on every rehearsal artefact so it can never be read as research”. Use the task instructions below to decide what to include.
+Needed whenever either sort was a rehearsal.
 
 **Answer:** The words written on every rehearsal artefact so it can never be read as research
 
+Required only when open-status is Nobody has consented yet, so I sorted them myself as a rehearsal. Otherwise leave participant evidence empty.
 
+Needed whenever either sort was a rehearsal.
 
 <details>
 <summary>Example</summary>
@@ -3370,6 +3499,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: you are preparing an open card sort for a plant nursery’s website, whose structure is still undecided. To save time, a colleague has printed the cards with the menu group already on them, such as “Indoor › Plants for dark rooms” and “Services › Repotting”. Three neighbours have agreed to sort the cards on Saturday.
+
+**Task:** Decide what to do with the printed cards before Saturday, and explain why, including what you will record during each sort besides the final piles.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps the printed cards because they are clearer or save time, or plans to record only where each card ends up.
+- Adequate: Reprints the cards as plain descriptions without group names, because a card that names its group tests the team’s wording rather than how people group things, and plans to record moves, pauses and exact words.
+- Strong: As adequate, and keeps the sort open because the structure is undecided, states that three neighbours are an exploratory convenience sample, and plans a closed sort later to check the groups chosen.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -3462,7 +3617,7 @@ Adequate evidence: Per-session notes of moved cards, spoken doubt and verbatim p
 
 1 — Some notes, written after the session from memory.
 
-2 — Hesitations, moves and quotations recorded during the session.
+2 — Hesitations, moves and quotations recorded during the session — or, on the rehearsal route, your own hesitations recorded and labelled rehearsal.
 
 3 — As adequate, and at least one item is flagged as ambiguous purely on the strength of hesitation, despite being placed consistently.
 
@@ -3507,7 +3662,7 @@ Stable ID: m06-l06-v1. Core.
 
 The analysis is where a small sort either becomes a useful set of hypotheses or becomes a false statistic. Four people can tell you a great deal about what confuses people and nothing at all about how many people are confused, and the difference is entirely in how you write it down.
 
-Bring: The sort photographs, session notes and your two sitemaps. Both the sorts and the maps are inputs; neither wins automatically.
+Bring: The sort photographs, session notes and your two sitemaps. Both the sorts and the maps are inputs; neither wins automatically. If your sort was a rehearsal, the lesson supplies four simulated sorts to practise on, and every result from them stays labelled practice.
 
 Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
@@ -3515,7 +3670,7 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 
 ### Start here: in everyday words
 
-Information architecture means arranging and naming information so a newcomer can find what they need. In this lesson, your first small result is: A table with one row per item and one column per participant, three rows written out in full, and any placement you could not recover.
+Information architecture means arranging and naming information so a newcomer can find what they need. In this lesson, your first small result is: Whose sorts you are reading, a table with one row per item and one column per participant, three rows written out in full, and any placement you could not recover.
 
 **Words you will use**
 
@@ -3525,13 +3680,13 @@ Information architecture means arranging and naming information so a newcomer ca
 
 **Quick example.** A supplied made-up result. Four people sorted twenty-one cards. Three put the refund rule with the money cards and one put it with cancelling, and two of the three hesitated before placing it. Four sentences were drafted for the write-up.
 
-The reader demonstrates and guides the task before asking for “How many items are in your table, and how many participants have a column”.
+The reader demonstrates and guides the task before asking for “Whose sorts this table holds”.
 
 ### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
-Analyse your sorts into a written list of agreements, disagreements and ambiguous items, expressed as counts of participants, and revise your structure with each change traced to what a participant actually did.
+Analyse your sorts — or, if your lesson 5 sort was a rehearsal, the supplied practice sorts — into a written list of agreements, disagreements and ambiguous items, expressed as counts of participants, and revise the structure with each change traced to what a participant actually did.
 
 
 ### Work item by item, not pile by pile
@@ -3580,21 +3735,49 @@ Recommended route: Fill the worksheet in this app, step by step. It saves as you
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
 
 
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Simulated card-sort results for practice, not real participants or research. Use them only if your lesson 5 sort was a rehearsal. Four simulated sorters, S1 to S4, sorted cards from the made-up pottery studio in lesson 4; keep the S labels attached and never report these as findings about anyone.
+- Their own group names. S1: Money, Cancelling, Before the class, Classes. S2: Paying, Changing plans, Getting ready, Classes. S3: Costs, Cancelling, Before the class, Help. S4: Money, Can’t make it, Before the class, Classes.
+- Refund rule · S1 Money, picked up twice. S2 Paying, picked up twice. S3 Costs. S4 Can’t make it.
+- Cancel a booking · S1 Cancelling. S2 Changing plans. S3 Cancelling. S4 Can’t make it. All four placed it quickly.
+- Move a booking to another date · S1 Cancelling. S2 Changing plans. S3 Cancelling, saying “this is not really cancelling”. S4 Can’t make it.
+- What to bring · S1, S3 and S4 Before the class; S2 Getting ready. All four placed it quickly.
+- Directions and parking · S1 and S4 Before the class; S2 Getting ready; S3 Help, after a pause: “or is this before the class?”.
+- Step-free access · S1, S3 and S4 Before the class; S2 Getting ready. Each paused for a long time first, and S2 said “I am not sure who this is for”.
+- Five-class pass · S1 Money. S2 Paying. S3 Costs. S4 Classes, saying “it is a kind of class”.
+
+
 ### Build the item table
 
 Section: practice-plan. Stable action: step-1-brief.
 
-A table with one row per item and one column per participant, three rows written out in full, and any placement you could not recover.
+Whose sorts you are reading, a table with one row per item and one column per participant, three rows written out in full, and any placement you could not recover.
 
 - Read the assigned analysis sections. Make one row per item and one column per participant, filling in where each card went and marking hesitations.
 
-**Start here:** Lay the photographs side by side and work down one card at a time, filling the whole row before you move on.
+**Start here:** Choose the source first. If your lesson 5 sort was a rehearsal, use the supplied practice sorts in this lesson’s source notes and label every row practice. Then lay the photographs or notes side by side and work down one card at a time, filling the whole row before you move on.
 
 **Enough:** Every row has a cell for every participant, blank where the placement is genuinely unrecoverable.
 
 **Item-by-item analysis:** Reading the sort one card at a time across all participants, rather than one person’s piles at a time.
 
 **Placement:** Where one participant put one card, plus whether they arrived there quickly or slowly.
+
+
+### Whose sorts this table holds
+
+Section: practice-plan. Stable action: write-sort-source.
+
+Choose the option that honestly describes your work.
+
+**Answer:** Whose sorts this table holds (Sorts by consenting participants from lesson 5 / The supplied practice sorts, because my lesson 5 sort was a rehearsal)
+
+Answer this first. On the supplied route every row, count and change below is practice on simulated data, and stays labelled that way.
 
 
 ### How many items are in your table, and how many participants have a column
@@ -3612,11 +3795,11 @@ Write your answer for “How many items are in your table, and how many particip
 
 Section: practice-plan. Stable action: write-table-rows.
 
-Write your answer for “Three rows written out in full, each naming where every participant put the item and where anyone hesitated”. Use the task instructions below to decide what to include.
+Use labels such as P1, or S1 for the supplied sorters, never names.
 
 **Answer:** Three rows written out in full, each naming where every participant put the item and where anyone hesitated
 
-
+Use labels such as P1, or S1 for the supplied sorters, never names.
 
 <details>
 <summary>Example</summary>
@@ -3725,9 +3908,9 @@ Section: practice-plan. Stable action: step-3-brief.
 
 Each change to your structure with a sentence naming the item, the participants and what they did.
 
-- Change your chosen sitemap from the analysis. For each change write the trace sentence naming the item, the participants and what they did.
+- Change your chosen sitemap from the analysis; on the supplied route, change the practice map from lesson 4 instead. For each change write the trace sentence naming the item, the participants and what they did.
 
-**Start here:** Begin with the disagreement you understand best and finish the sentence “this moved because participants … did …”.
+**Start here:** Begin with the disagreement you understand best and finish the sentence “this moved because participants … did …”. On the supplied route, make the change to the practice map from lesson 4, not to your own structure, because simulated sorters are not evidence about your product.
 
 **Enough:** No change is left whose trace sentence you cannot complete.
 
@@ -3763,11 +3946,11 @@ Made-up example. Writing one traced change that turned out to be three changes h
 
 Section: practice-plan. Stable action: write-change-1.
 
-Write your answer for “Change 1 · what moved, and the sentence naming the item, the participants and what they did”. Use the task instructions below to decide what to include.
+Name people by label, such as P2. On the supplied route, change the practice map from lesson 4, name the S label, and mark the change practice.
 
 **Answer:** Change 1 · what moved, and the sentence naming the item, the participants and what they did
 
-
+Name people by label, such as P2. On the supplied route, change the practice map from lesson 4, name the S label, and mark the change practice.
 
 <details>
 <summary>Example</summary>
@@ -3917,24 +4100,24 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You have four sorts and a spreadsheet that can draw a similarity matrix from them. Should you draw it?
 
-- Leave it out, because the picture would look far more certain than four people can support.
-- Draw it, but add a note about the small number of participants underneath.
-- Draw it, since it summarises the placements faster than a table of counts.
+- Draw it, with a clear note underneath about the small number of people who sorted.
+- Leave it out: the picture would look far more certain than four sorts can support.
+- Draw it, since it summarises the placements more quickly than a table of counts does.
 
 <details>
 <summary>After your attempt</summary>
 
-Leave it out, because the picture would look far more certain than four people can support. — Those techniques were built for thirty sorters or more. At four they produce the visual authority of statistics and none of the substance.
+Draw it, with a clear note underneath about the small number of people who sorted. — The note sits beside a picture that contradicts it, and readers tend to believe the picture. A table of counts says the same thing without the overclaim.
 
-Draw it, but add a note about the small number of participants underneath. — The note sits beside a picture that contradicts it, and the picture wins every time. A table of counts says the same thing without the overclaim.
+Leave it out: the picture would look far more certain than four sorts can support. — Those techniques were built for sorts with thirty or more people. At four they produce the visual authority of statistics and none of the substance.
 
-Draw it, since it summarises the placements faster than a table of counts. — Speed is not the issue here. The diagram implies a distance measure that four placements cannot establish, and readers will believe the picture.
+Draw it, since it summarises the placements more quickly than a table of counts does. — Speed is not the issue here. The diagram implies a distance measure that four placements cannot establish, and readers will believe the picture.
 
 Improve: Rebuild any summary from your item table in step 1 as counts of people, remove any diagram implying a distance, and record the change in step 5.
 
 Check again: The write-up contains counts of people, with no rates and no distance diagrams.
 
-Answers to revisit: table-shape, table-rows, missing-cells, improvement-made
+Answers to revisit: sort-source, table-shape, table-rows, missing-cells, improvement-made
 
 </details>
 
@@ -3966,21 +4149,21 @@ A supplied made-up result. Four people sorted twenty-one cards. Three put the re
 
 Which sentence can honestly carry this result?
 
-- Three of four participants put the refund rule with the money cards, two of them hesitating first; one put it with cancelling.
-- 75 per cent of participants group the refund rule with payment.
-- The refund rule belongs with the money cards.
-- Most users expect the refund rule to sit with payment.
+- “The refund rule belongs with the money cards, which is where three of the four people put it.”
+- “Three of four put the refund rule with the money cards, two after hesitating; one chose cancelling.”
+- “Most users expect the refund rule to sit with the payment information rather than with cancelling.”
+- “75 per cent of participants grouped the refund rule with the money cards, so it belongs there.”
 
 <details>
 <summary>After your attempt</summary>
 
-Three of four participants put the refund rule with the money cards, two of them hesitating first; one put it with cancelling. — It is a count of people and it keeps the hesitation in. A reader sees exactly what happened, and exactly how little of it there is.
+“The refund rule belongs with the money cards, which is where three of the four people put it.” — That mixes your decision with the count, and drops the two hesitations that make the item doubtful. Write the count as a count and the decision separately, so a reader can see what it rests on.
 
-75 per cent of participants group the refund rule with payment. — The same four people, dressed as a rate. A rate invites comparison with other rates, and there is nothing here worth comparing.
+“Three of four put the refund rule with the money cards, two after hesitating; one chose cancelling.” — It is a count of people and it keeps the hesitation in. A reader sees exactly what happened, and exactly how little of it there is.
 
-The refund rule belongs with the money cards. — That is your decision, not the evidence. Write the decision separately so a reader can see what it rests on and disagree with it if they wish.
+“Most users expect the refund rule to sit with the payment information rather than with cancelling.” — Users is a far bigger word than participants, and most is a claim about a population. Four people in one afternoon support neither.
 
-Most users expect the refund rule to sit with payment. — Users is a far bigger word than participants, and most is a claim about a population. Four people in one afternoon support neither.
+“75 per cent of participants grouped the refund rule with the money cards, so it belongs there.” — The same four people, dressed as a rate, with a decision attached. A rate invites comparison with other rates, and there is nothing here worth comparing.
 
 Read your own write-up for sentences of the second and third kind, and rewrite each as a count of people with the hesitations kept in.
 
@@ -3991,11 +4174,11 @@ Read your own write-up for sentences of the second and third kind, and rewrite e
 
 Section: practice. Stable action: write-sample-line.
 
-Write it once and copy it wherever these results appear, including any slide or portfolio page.
+Write it once and copy it wherever these results appear, including any slide or portfolio page. Counts and routes only, with no names. On the supplied route, say the data is simulated practice.
 
 **Answer:** How many people sorted, how you found them, and that a sort this size is exploratory
 
-Write it once and copy it wherever these results appear, including any slide or portfolio page.
+Write it once and copy it wherever these results appear, including any slide or portfolio page. Counts and routes only, with no names. On the supplied route, say the data is simulated practice.
 
 
 ### What you found when you searched your write-up for the per cent sign and for anything drawn as a distance
@@ -4020,6 +4203,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
 
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: five people sorted twenty cards for a second-hand bookshop’s website. Four put “Sell us your books” with the contact cards and one put it with prices. Three of the four picked the card up twice before placing it, and one said “is this a service or a page about money?”.
+
+**Task:** Classify the item as agreement, disagreement or ambiguous, write the one sentence you would put in the write-up, and explain why you worded it that way.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Calls it agreement because most people placed it together, or writes a rate such as “80 per cent of users expect it under Contact”.
+- Adequate: Treats it as a split made with visible doubt, not a clean agreement, and writes a count: “Four of five put it with contact, three after hesitating; one put it with prices”, because five people support counts, not rates.
+- Strong: As adequate, and offers an interpretation to test, such as the card mixing a service with a money question, names what would settle it, and keeps any change traced to what these sorters actually did.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+
 ### Review and finish your practice
 
 Section: practice. Stable action: review-work.
@@ -4040,7 +4249,7 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: Read a card sort without overclaiming
-What I am trying to do: Analyse your sorts into a written list of agreements, disagreements and ambiguous items, expressed as counts of participants, and revise your structure with each change traced to what a participant actually did.
+What I am trying to do: Analyse your sorts — or, if your lesson 5 sort was a rehearsal, the supplied practice sorts — into a written list of agreements, disagreements and ambiguous items, expressed as counts of participants, and revise the structure with each change traced to what a participant actually did.
 
 Key idea or terms:
 Item-by-item analysis: Reading the sort one card at a time across all participants, rather than one person’s piles at a time.
@@ -4053,12 +4262,12 @@ A supplied made-up result. Four people sorted twenty-one cards. Three put the re
 Activity: Run a short simulated practice using only the supplied material. Ask what evidence supports my choice and what is still unknown.
 
 Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
-When the activity is finished, tell me to return to the course answer called “How many items are in your table, and how many participants have a column” and write my own decision. Do not write that answer for me.
+When the activity is finished, tell me to return to the course answer called “Whose sorts this table holds” and write my own decision. Do not write that answer for me.
 ```
 
-**Come back to the course:** Return to “How many items are in your table, and how many participants have a column”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+**Come back to the course:** Return to “Whose sorts this table holds”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “How many items are in your table, and how many participants have a column” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “Whose sorts this table holds” and write one sentence in your own words.
 
 </details>
 <details>
@@ -4076,7 +4285,7 @@ When the activity is finished, tell me to return to the course answer called “
 
 **Analysis is item by item with per-participant placements**
 
-Adequate evidence: A table with one row per item showing where each participant placed it and where hesitation occurred.
+Adequate evidence: A table with one row per item showing where each participant placed it and where hesitation occurred — your own consenting sorters, or the supplied practice sorters, labelled as such.
 
 0 — Impressions of the sorts, or pile-level summaries only.
 
@@ -4110,7 +4319,7 @@ Adequate evidence: A revised sitemap where each change has a sentence naming the
 
 1 — Some traces, others asserted as “research showed”.
 
-2 — Every change traces to specific participant behaviour.
+2 — Every change traces to specific participant behaviour — or, on the supplied route, to a named simulated sorter, with the change made to the practice map and labelled practice.
 
 3 — As adequate, and one change you expected to make was abandoned because the sorts did not support it.
 
@@ -4179,7 +4388,7 @@ The reader demonstrates and guides the task before asking for “What is written
 
 Section: learn. Stable action: welcome.
 
-Run a paper tree test of your revised structure with at least three participants and six tasks, recording for every task the first choice, the full path, whether they backtracked and where they said they would stop.
+Run a paper tree test of your revised structure with at least three participants and six tasks — or, if nobody consents, a labelled rehearsal with a dated recruitment gap — recording for every task the first choice, the full path, whether they backtracked and where they said they would stop.
 
 
 ### Idea 1: A tree test shows only the words: no page design, no images, n…
@@ -4207,7 +4416,7 @@ Record four things per task and the first is the most valuable. The first choice
 
 Section: learn. Stable action: learn-4.
 
-Three to five participants will find the broken labels. What they cannot give you is a success rate to compare against a benchmark: the published benchmarks come from studies with far more participants, and applying them to five people produces a number that looks like measurement and is not. Report counts and first clicks, and treat the test as a way of locating failures, not scoring the structure.
+Three to five participants will find the broken labels. What they cannot give you is a success rate to compare against a benchmark: the published benchmarks come from studies with far more participants, and applying them to five people produces a number that looks like measurement and is not. Report counts and first clicks, and treat the test as a way of locating failures, not scoring the structure. Nor is it a measure of real use: you wrote the tasks, so the results show how the structure handles those six situations, not which pages real visitors open or how often.
 
 
 ### See the idea in a supplied example
@@ -4416,21 +4625,21 @@ A supplied made-up record of one task with one person. She chose “Get help” 
 
 What is the most important thing to write in your table about this task?
 
-- That the target sat on the second sheet, so the second level is the problem.
-- That she arrived, because the task was completed.
-- How long she took, so you can compare it with the other tasks.
-- That her first choice was “Get help”, and that she went back to the top before reaching the target.
+- That the target sat on the second sheet, which shows the second level is the problem.
+- That she arrived, because a completed task is the result the test exists to count.
+- Her first choice, “Get help”, and that she went back to the top before finding it.
+- How long she took, so the time can be compared with her other five tasks later.
 
 <details>
 <summary>After your attempt</summary>
 
-That the target sat on the second sheet, so the second level is the problem. — How deep the target sits is a fact about your tree rather than about her. Her return to the top points at the level above, which is the opposite conclusion.
+That the target sat on the second sheet, which shows the second level is the problem. — How deep the target sits is a fact about your tree rather than about her. Her return to the top points at the level above, which is the opposite conclusion.
 
-That she arrived, because the task was completed. — Arriving hides the two moves before it. In a real product a person who backs out of a wrong branch often leaves instead of trying again.
+That she arrived, because a completed task is the result the test exists to count. — Arriving hides the two moves before it. In a real product a person who backs out of a wrong branch often leaves instead of trying again.
 
-How long she took, so you can compare it with the other tasks. — Time is easy to record and hard to read with three people. The route she took says the same thing more plainly and cannot be mistaken for a score.
+Her first choice, “Get help”, and that she went back to the top before finding it. — The first choice is where the structure either works or fails, and a return to the top says a top-level label pointed her the wrong way. Neither is visible in a count of successes.
 
-That her first choice was “Get help”, and that she went back to the top before reaching the target. — The first choice is where the structure either works or fails, and a return to the top says a top-level label pointed her the wrong way. Neither is visible in a count of successes.
+How long she took, so the time can be compared with her other five tasks later. — Time is easy to record and hard to read with three people. The route she took says the same thing more plainly and cannot be mistaken for a score.
 
 Give your own table a column for first choice and a column for the whole path, and fill both before you write down whether the person arrived.
 
@@ -4452,11 +4661,11 @@ Choose the option that honestly describes your work.
 
 Section: practice-plan. Stable action: write-results-table.
 
-Write the first choice before you write the outcome. It is the column you cannot recover afterwards.
+Write the first choice before you write the outcome. It is the column you cannot recover afterwards. Use labels such as P1, never names.
 
 **Answer:** For every task and every person: the first choice, the whole path, whether they went back up, and where they said they would stop
 
-Write the first choice before you write the outcome. It is the column you cannot recover afterwards.
+Write the first choice before you write the outcome. It is the column you cannot recover afterwards. Use labels such as P1, never names.
 
 
 ### Record confidence
@@ -4505,11 +4714,11 @@ Made-up example. Asking people how sure they were, and collecting six yeses that
 
 Section: practice-plan. Stable action: write-confidence-notes.
 
-Ask “how sure are you that this is the right place?” and write the answer down as said.
+Ask “how sure are you that this is the right place?” and write the answer down as said, beside the person’s label.
 
 **Answer:** After each task, how sure they were that they had arrived, in their own words
 
-Ask “how sure are you that this is the right place?” and write the answer down as said.
+Ask “how sure are you that this is the right place?” and write the answer down as said, beside the person’s label.
 
 
 ### Any task where somebody was sure and wrong, or unsure and right
@@ -4529,20 +4738,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-All three people reached the target on every task, so you write that the structure works. What is missing from that sentence?
+All three people reached the target on every task. Your table also shows that two of them backed out of a wrong branch first, and one said she was not sure she had arrived. You write “the structure works”. What does that sentence leave out?
 
-- The success rate should be set beside a published benchmark.
-- Nothing is missing, because reaching the target is the outcome that matters.
-- Two of them backed out of a wrong branch first, and one said afterwards she was not sure she was in the right place.
+- That two arrived only after a wrong turn and one arrived unsure, which are weaker results.
+- Little that matters: reaching the target is the outcome a tree test exists to record.
+- A success rate for the three people, set beside a published benchmark for comparison.
 
 <details>
 <summary>After your attempt</summary>
 
-The success rate should be set beside a published benchmark. — Three people cannot produce a rate worth comparing with anything. Counts and first choices are what this sample can honestly carry.
+That two arrived only after a wrong turn and one arrived unsure, which are weaker results. — Arriving after a wrong branch is a different result from arriving directly, and arriving unsure is nearer a failure than a success. The path and the confidence are the only things that tell you which one you have.
 
-Nothing is missing, because reaching the target is the outcome that matters. — Reaching it is the outcome in a test. Leaving is the outcome in a real product, and backtracking is the only sign of that you get here.
+Little that matters: reaching the target is the outcome a tree test exists to record. — Reaching it is the outcome in a test. Leaving is the outcome in a real product, and backtracking and doubt are the only signs of that you get here.
 
-Two of them backed out of a wrong branch first, and one said afterwards she was not sure she was in the right place. — Arriving after two wrong branches is a different result from arriving directly. The path and the confidence are the only things that tell you which one you have.
+A success rate for the three people, set beside a published benchmark for comparison. — Three people cannot produce a rate worth comparing with anything. Counts, first choices and paths are what this sample can honestly carry.
 
 Improve: Go back to the results table in step 3 and fill the first-choice and path columns for every task and person, then record in step 5 what that changed.
 
@@ -4561,18 +4770,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 One of your tasks reads “find the cancellation policy”, and the word Cancel appears on your top sheet. What have you tested?
 
-- It only makes the task easier, which is fine for a warm-up.
-- Whether the person can match a word, rather than whether they can work out where the thing lives.
-- Nothing is wrong, because they still have to pick the right branch.
+- Whether the person can match a word, not whether they can work out where the thing lives.
+- An easier version of the same question, which is acceptable for a warm-up task.
+- Whether the grouping makes sense, since they still have to choose the right branch.
 
 <details>
 <summary>After your attempt</summary>
 
-It only makes the task easier, which is fine for a warm-up. — A warm-up is worth having and should still avoid handing over the label, or you will not know whether the person read the tree or read it back.
+Whether the person can match a word, not whether they can work out where the thing lives. — Matching letters is a different ability from finding. The task has to describe the situation and let the person choose the word.
 
-Whether the person can match a word, rather than whether they can work out where the thing lives. — Matching letters is a different ability from finding. The task has to describe the situation and let the person choose the word.
+An easier version of the same question, which is acceptable for a warm-up task. — A warm-up is worth having and should still avoid handing over the label, or you will not know whether the person read the tree or read it back.
 
-Nothing is wrong, because they still have to pick the right branch. — They do pick, and they pick by matching. The test can no longer tell you whether the grouping made any sense to them.
+Whether the grouping makes sense, since they still have to choose the right branch. — They do choose, and they choose by matching. The test can no longer tell you whether the grouping made any sense to them.
 
 Improve: Underline every word in your six tasks in step 2 that also appears on a sheet, rewrite those tasks as situations, and record the rewrites in step 5.
 
@@ -4591,18 +4800,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Nobody agreed to take part, so you ran all six tasks on yourself. How should that appear in the record?
 
-- As results from one participant, since you did the tasks properly.
-- Leave it out and present only the paper tree.
-- As a rehearsal, labelled permanently, with the dated recruitment gap beside it.
+- As a rehearsal, labelled as such everywhere, with the dated recruitment gap beside it.
+- As results from one participant, since you ran all six tasks properly and in order.
+- Left out entirely, with only the paper tree and the six tasks presented as the work.
 
 <details>
 <summary>After your attempt</summary>
 
-As results from one participant, since you did the tasks properly. — You cannot be a participant in your own tree. Presenting it as a result is the moment a portfolio stops being true.
+As a rehearsal, labelled as such everywhere, with the dated recruitment gap beside it. — You already know the tree, so the run tells you the tasks are clear and nothing at all about the structure. Labelling it keeps it useful and keeps it honest.
 
-Leave it out and present only the paper tree. — The rehearsal is worth keeping, because it shows the tasks were run and the recruiting failed. The gap is a finding of its own.
+As results from one participant, since you ran all six tasks properly and in order. — You cannot be a participant in your own tree. Presenting it as a result is the moment a portfolio stops being true.
 
-As a rehearsal, labelled permanently, with the dated recruitment gap beside it. — You already know the tree, so the run tells you the tasks are clear and nothing at all about the structure. Labelling it keeps it useful and keeps it honest.
+Left out entirely, with only the paper tree and the six tasks presented as the work. — The rehearsal is worth keeping, because it shows the tasks were run and the recruiting failed. The gap is a finding of its own.
 
 Improve: Set your entry in step 3 to the rehearsal option, write the dated recruitment gap into the sample line in step 5, and record the change there as well.
 
@@ -4636,11 +4845,11 @@ The sample line, where the sheets and the table live, and the repair the Check q
 
 Section: practice. Stable action: write-sample-line.
 
-This sentence travels with the results everywhere they appear, so write it once and keep it at the top.
+This sentence travels with the results everywhere they appear, so write it once and keep it at the top. Counts and routes only, with no names or contact details.
 
 **Answer:** How many people took part, how you found them, who is missing, and whether any of this was a rehearsal
 
-This sentence travels with the results everywhere they appear, so write it once and keep it at the top.
+This sentence travels with the results everywhere they appear, so write it once and keep it at the top. Counts and routes only, with no names or contact details.
 
 
 ### Where the sheets, the task cards and the table live
@@ -4665,6 +4874,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
 
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: you are preparing a paper tree test for a cinema chain’s website. The top sheet reads: Films, Tickets and refunds, Food and drink, Membership, Help. One draft task says “Find the refund policy.” Another says “Find what is on this weekend.”
+
+**Task:** Rewrite the refund task so it tests finding rather than word-matching, give the answer you would accept, and explain why you fix that answer before anyone takes part.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps the label in the task or barely rewords it, such as “Look for refunds”, and decides what counts as success after seeing the results.
+- Adequate: Writes a situation such as “You bought tickets for Saturday and now cannot go; where would you look?”, avoids the word refund, and fixes the accepted answer (Tickets and refunds, perhaps Help) in advance so results cannot be bent.
+- Strong: As adequate, and plans to record first choice, backtracking and confidence, and notes that results from tasks you chose show how the structure handles them, not how often real visitors want refunds.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+
 ### Review and finish your practice
 
 Section: practice. Stable action: review-work.
@@ -4685,7 +4920,7 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: Tree test the structure by hand
-What I am trying to do: Run a paper tree test of your revised structure with at least three participants and six tasks, recording for every task the first choice, the full path, whether they backtracked and where they said they would stop.
+What I am trying to do: Run a paper tree test of your revised structure with at least three participants and six tasks — or, if nobody consents, a labelled rehearsal with a dated recruitment gap — recording for every task the first choice, the full path, whether they backtracked and where they said they would stop.
 
 Key idea or terms:
 Tree test: A test of the words alone. You show the structure a level at a time, with no page design, no pictures and no search box, and ask a person where they would go.
@@ -4808,7 +5043,7 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 
 ### Start here: in everyday words
 
-Information architecture means arranging and naming information so a newcomer can find what they need. In this lesson, your first small result is: Which measures your own results can honestly carry at this number of people, written before you interpret anything.
+Information architecture means arranging and naming information so a newcomer can find what they need. In this lesson, your first small result is: Whose results you are reading, and which measures they can honestly carry at this number of people, written before you interpret anything.
 
 **Words you will use**
 
@@ -4818,13 +5053,13 @@ Information architecture means arranging and naming information so a newcomer ca
 
 **Quick example.** Made-up example. Reading a bad-looking tree test as a broken structure, and finding that the top of it was fine. Four of six tasks failed with three people. My first thought was that the structure was wrong and I should start again.
 
-The reader demonstrates and guides the task before asking for “The measures the article discusses, and which of them your own numbers can carry”.
+The reader demonstrates and guides the task before asking for “Whose tree-test results you are reading”.
 
 ### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
-Turn your tree-test results into a diagnosis per failed task — a wrong label, a wrong grouping or a missing item — then make one bounded change, re-test it with at least two people, and report what happened including if it did not help.
+Turn your tree-test results — or the supplied practice results, if your test was a rehearsal — into a diagnosis per failed task: a wrong label, a wrong grouping or a missing item. Then make one bounded change, re-test it with at least two new people or record it as untested, and report what happened including if it did not help.
 
 
 ### Read the first clicks before anything else
@@ -4838,7 +5073,7 @@ Read the first clicks before anything else. If people chose correctly at level o
 
 Section: learn. Stable action: learn-2.
 
-Failures have three common causes, and the fix differs for each. A wrong label means the right container has the wrong name: rename it, in participant vocabulary. A wrong grouping means the item is in a container people do not associate with it: move or cross-list it. A missing item means people were looking for something the structure does not contain at all — the commonest and most-ignored result, and no renaming will help. The assigned article names relabelling, cross-listing and restructuring as the corresponding moves.
+Failures have three common causes, and the fix differs for each. A wrong label means the right container has the wrong name: rename it, in participant vocabulary. A wrong grouping means the item is in a container people do not associate with it: move or cross-list it. A missing item means people were looking for something the structure does not contain at all — a common and easily ignored result, and no renaming will help. The assigned article names relabelling, cross-listing and restructuring as the corresponding moves.
 
 
 ### Change one thing at a time
@@ -4852,7 +5087,7 @@ Change one thing at a time. Making four changes and re-testing tells you the agg
 
 Section: learn. Stable action: learn-4.
 
-Treat the article's success-rate benchmarks as context, not as a target. They come from studies far larger than yours, and comparing five participants against a published band is exactly the arithmetic this module keeps refusing. Report what happened: how many people chose correctly first, which paths they took, and whether the change moved the specific failure it was aimed at. And report it plainly when the change did not help, because a change that did not work and was recorded is worth more than a change that did and was not understood.
+Treat the article's success-rate benchmarks as context, not as a target. They come from studies far larger than yours, and comparing five participants against a published band is exactly the arithmetic this module keeps refusing. Report what happened: how many people chose correctly first, which paths they took, and whether the change moved the specific failure it was aimed at. And report it plainly when the change did not help, because a change that did not work and was recorded is worth more than a change that did and was not understood. Keep the counts in their place, too: three of three failing a task you wrote says the label fails for that task, not how often anyone really needs it.
 
 
 ### See the idea in a supplied example
@@ -4873,21 +5108,48 @@ Recommended route: Fill the worksheet in this app, step by step. It saves as you
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
 
 
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Simulated tree-test results for practice, not real participants or research. Use them only if your own tree test was a rehearsal; keep the S labels and never report these as findings. Three simulated people, S1 to S3, tried six tasks on Map A, the made-up pottery studio map from lesson 4.
+- Task 1, move Saturday’s booking to another date · All three chose Change or cancel first. S1 and S2 stopped at Booking admin and gave up; S2 said “that sounds like something for staff”. S3 opened Booking admin, went back up, returned and found it, saying she was not sure.
+- Task 2, what to bring, the evening before · S1 and S3 chose Get ready for a class, then Practical information, and found it. S2 chose Choose a class first, went back to the top, then found it.
+- Task 3, whether the money comes back if the studio cancels · First choices scattered: S1 Change or cancel, S2 Get help, S3 Choose a class. Nobody found an answer; nothing in the map covers a class the studio cancels.
+- Task 4, step-free access · S1 and S2 chose Get help first and gave up. S3 found it under Practical information after two wrong branches.
+- Task 5, the price of a five-class pass · All three went straight to it and said they were sure.
+- Task 6, directions and parking · All three found it under Practical information; S1 said “I guessed”.
+- These six tasks were chosen for practice. The results show how Map A handles these situations, not how often anyone needs any of them.
+
+
 ### Read the interpretation guidance
 
 Section: practice-plan. Stable action: step-1-brief.
 
-Which measures your own results can honestly carry at this number of people, written before you interpret anything.
+Whose results you are reading, and which measures they can honestly carry at this number of people, written before you interpret anything.
 
 - Read the assigned article on interpreting results. Note the four measures it discusses and write, for your own data, which you can honestly report at your sample size.
 
-**Start here:** List the four measures the article names, then put a yes or a no beside each for your own data.
+**Start here:** Choose the source first: if your own tree test was a rehearsal, read the supplied practice results in this lesson’s source notes instead. Then list the four measures the article names and put a yes or a no beside each for that data.
 
 **Enough:** Anything you marked yes can be written as a count of people rather than a rate.
 
 **First click:** The first branch a person chose on the top sheet, before any recovery.
 
 **Success rate:** The share of tasks people completed. It is useful with many participants and misleading with three, so report counts of people instead.
+
+
+### Whose tree-test results you are reading
+
+Section: practice-plan. Stable action: write-results-source.
+
+Choose the option that honestly describes your work.
+
+**Answer:** Whose tree-test results you are reading (My own tree test with consenting people / The supplied practice results, because my own test was a rehearsal)
+
+Answer this first. On the supplied route every diagnosis below is practice on simulated data, and the re-test is recorded as untested.
 
 
 ### The measures the article discusses, and which of them your own numbers can carry
@@ -5036,7 +5298,7 @@ wrong label — Renaming cannot help when there is nothing behind the name. The 
 
 wrong grouping — Moving an item needs an item to move. This one does not exist yet.
 
-missing item — The commonest result and the most ignored one. It is a content gap, and no structural change will clear it.
+missing item — A common result and an easily ignored one. It is a content gap, and no structural change will clear it.
 
 Now name the cause for each of your own failed tasks, and write the path or the quotation that supports it beside the name.
 
@@ -5151,11 +5413,11 @@ Now name the cause for each of your own failed tasks, and write the path or the 
 
 Section: practice-plan. Stable action: write-failure-1.
 
-The cause is one of three: a wrong label, a wrong grouping, or a missing item.
+The cause is one of three: a wrong label, a wrong grouping, or a missing item. Quote people by label, such as P2, never by name.
 
 **Answer:** Failure 1 · the task, the cause you name, and the evidence for it
 
-The cause is one of three: a wrong label, a wrong grouping, or a missing item.
+The cause is one of three: a wrong label, a wrong grouping, or a missing item. Quote people by label, such as P2, never by name.
 
 <details>
 <summary>Example</summary>
@@ -5266,11 +5528,13 @@ Choose the option that honestly describes your work.
 
 Section: practice-plan. Stable action: write-retest-results.
 
-Write your answer for “First choices, paths and confidence from the re-test, for the affected tasks only”. Use the task instructions below to decide what to include.
+Use labels such as P4, never names. Leave this empty if the change is recorded as untested.
 
 **Answer:** First choices, paths and confidence from the re-test, for the affected tasks only
 
+Required only when retest-route is Two or more people who had not seen the structure, with consent or One person only, with consent, and the gap recorded. Otherwise leave participant evidence empty.
 
+Use labels such as P4, never names. Leave this empty if the change is recorded as untested.
 
 
 ### Check your reasoning · 1 of 3
@@ -5281,18 +5545,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Four of six tasks failed. Your first instinct is to redraw the whole structure. What does that cost you?
 
-- Time, which is the only real drawback.
-- You discard the parts that worked and bring back risks you had already tested away.
-- Very little, because the structure clearly failed.
+- You throw away the parts that worked and bring back risks you had tested away.
+- Mainly time: a fresh structure takes a week to draw, which is the only real drawback.
+- Very little, since four failed tasks out of six show the whole structure has failed.
 
 <details>
 <summary>After your attempt</summary>
 
-Time, which is the only real drawback. — Time is the smallest cost. The larger one is losing the evidence you already have about which parts people read correctly.
+You throw away the parts that worked and bring back risks you had tested away. — Failures usually concentrate in two or three labels. A wholesale redesign is a decision to argue for, not the default response to a table that looks bad.
 
-You discard the parts that worked and bring back risks you had already tested away. — Failures usually concentrate in two or three labels. A wholesale redesign is a decision to argue for, not the default response to a table that looks bad.
+Mainly time: a fresh structure takes a week to draw, which is the only real drawback. — Time is the smallest cost. The larger one is losing the evidence you already have about which parts people read correctly.
 
-Very little, because the structure clearly failed. — The table shows failures, not where they sit. Until you split by first choice you do not know whether the top level was involved at all.
+Very little, since four failed tasks out of six show the whole structure has failed. — The table shows failures, not where they sit. Until you split by first choice you do not know whether the top level was involved at all.
 
 Improve: Fill the first-click split in step 2 before you change anything, then record in step 5 what the split changed about your plan.
 
@@ -5311,18 +5575,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You rename two labels and move an item, then re-test, and things improve. What have you learned?
 
-- That the three changes together helped, and nothing about which one did it.
-- That the structure is now settled.
-- That all three changes were improvements.
+- That the three changes together helped, but not which of them did the work.
+- That the structure is now settled and can go forward to the next stage of design.
+- That each of the three changes was an improvement, since the overall result rose.
 
 <details>
 <summary>After your attempt</summary>
 
-That the three changes together helped, and nothing about which one did it. — Had it gone the other way you would not know which change to undo. One change at a time is slower and is the only version that teaches you anything about your own judgement.
+That the three changes together helped, but not which of them did the work. — Had it gone the other way you would not know which change to undo. One change at a time is slower, and it is the version that teaches you something about your own judgement.
 
-That the structure is now settled. — Two people and one round settles nothing. It is a sign that one of your changes pointed the right way.
+That the structure is now settled and can go forward to the next stage of design. — Two people and one round settles nothing. It is a sign that one of your changes pointed the right way.
 
-That all three changes were improvements. — They may all be. One of them may also be making things worse while the other two carry it, and this result cannot separate them.
+That each of the three changes was an improvement, since the overall result rose. — They may all be. One of them may also be making things worse while the other two carry it, and this result cannot separate them.
 
 Improve: Reduce your entry in step 4 to exactly one change, put the others back, and record in step 5 which changes you set aside for the next round.
 
@@ -5339,20 +5603,20 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Your one change did not help: the same two people failed the same task in the same place. What goes in the report?
+Your one change did not help: both new re-test participants failed the same task at the same label as before. What goes in the report?
 
-- What you changed, what happened, and that the diagnosis behind it was wrong.
-- That the test was too small to show a difference.
-- Leave it out and try a different change before writing anything.
+- What you changed, what happened, and that the diagnosis behind it looks wrong.
+- That two people are too few to show a difference, so the result is inconclusive.
+- Nothing yet: try a different change first, then report whichever one finally works.
 
 <details>
 <summary>After your attempt</summary>
 
-What you changed, what happened, and that the diagnosis behind it was wrong. — A change that did not work and was written down is worth more than one that worked and was never understood. It also stops you making the same change again in three weeks.
+What you changed, what happened, and that the diagnosis behind it looks wrong. — A change that did not work and was written down is worth more than one that worked and was never understood. It also stops you making the same change again in three weeks.
 
-That the test was too small to show a difference. — The sample is small and that is not what happened here. Two people failed the same task in the same place, which is a result about your change.
+That two people are too few to show a difference, so the result is inconclusive. — The sample is small, and that is not what happened here. Both failed the same task at the same label as before, which is a result about your change.
 
-Leave it out and try a different change before writing anything. — The second change would then trace back to no result at all. The record of the failed attempt is what makes the next diagnosis better.
+Nothing yet: try a different change first, then report whichever one finally works. — The second change would then trace back to no result at all. The record of the failed attempt is what makes the next diagnosis better.
 
 Improve: Look at the change you recorded in step 4, then write the outcome plainly in step 5 including the failure, and put that failure back on the remaining-failures list in the same step.
 
@@ -5413,6 +5677,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
 
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a paper tree test of a coworking space’s website ran six tasks with three people. For the task “You want to bring a guest tomorrow”, all three chose Membership first; two then stopped at “Account extras” and one went back up and tried Rules. For another task, first choices scattered across four top-level branches.
+
+**Task:** Diagnose the guest task as a wrong label, a wrong grouping or a missing item, choose the one change you would make first, and explain why that change rather than a redesign.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Redesigns the whole structure or renames the top level because two tasks failed, or makes several changes at once.
+- Adequate: Notes that level one worked, since all three chose Membership, so the fault is below it: “Account extras” names a container, not guests. Renames that one label in visitors’ words and re-tests with new people.
+- Strong: As adequate, and predicts what the re-test should show, keeps the scattered task for its own diagnosis, and notes that three people on tasks you wrote say nothing about how often guests are actually brought.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+
 ### Review and finish your practice
 
 Section: practice. Stable action: review-work.
@@ -5433,7 +5723,7 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: Interpret the tree test and change one thing
-What I am trying to do: Turn your tree-test results into a diagnosis per failed task — a wrong label, a wrong grouping or a missing item — then make one bounded change, re-test it with at least two people, and report what happened including if it did not help.
+What I am trying to do: Turn your tree-test results — or the supplied practice results, if your test was a rehearsal — into a diagnosis per failed task: a wrong label, a wrong grouping or a missing item. Then make one bounded change, re-test it with at least two new people or record it as untested, and report what happened including if it did not help.
 
 Key idea or terms:
 First click: The first branch a person chose on the top sheet, before any recovery.
@@ -5446,12 +5736,12 @@ Made-up example. Reading a bad-looking tree test as a broken structure, and find
 Activity: Run a short simulated practice using only the supplied material. Ask what evidence supports my choice and what is still unknown.
 
 Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
-When the activity is finished, tell me to return to the course answer called “The measures the article discusses, and which of them your own numbers can carry” and write my own decision. Do not write that answer for me.
+When the activity is finished, tell me to return to the course answer called “Whose tree-test results you are reading” and write my own decision. Do not write that answer for me.
 ```
 
-**Come back to the course:** Return to “The measures the article discusses, and which of them your own numbers can carry”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+**Come back to the course:** Return to “Whose tree-test results you are reading”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The measures the article discusses, and which of them your own numbers can carry” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Whose tree-test results you are reading” and write one sentence in your own words.
 
 </details>
 <details>
@@ -5503,7 +5793,7 @@ Adequate evidence: Before-and-after structures differing in one respect, with re
 
 1 — One change but re-tested with someone who had already seen the structure.
 
-2 — One change, re-tested with fresh participants.
+2 — One change, re-tested with fresh participants — or, where nobody was available, recorded as untested and never called an improvement.
 
 3 — As adequate, and the write-up predicted what the change should do before re-testing.
 
@@ -5717,22 +6007,22 @@ Made-up example. Writing the list of unexplained failures for a class-booking si
 
 Section: practice-plan. Stable action: write-unexplained-failures.
 
-Write your answer for “Every finding from your sort, your tree test and your m05 research that you could not diagnose”. Use the task instructions below to decide what to include.
+Describe what happened, with people referred to by label, never by name.
 
 **Answer:** Every finding from your sort, your tree test and your m05 research that you could not diagnose
 
-
+Describe what happened, with people referred to by label, never by name.
 
 
 ### Where each symptom came from, and which came from a rehearsal rather than from a person
 
 Section: practice-plan. Stable action: write-symptom-sources.
 
-A symptom you noticed while walking the product yourself is a suspicion. Mark it, and it stays useful.
+A symptom you noticed while walking the product yourself is a suspicion. Mark it, and it stays useful. Symptoms from the supplied practice results are practice, and say so.
 
 **Answer:** Where each symptom came from, and which came from a rehearsal rather than from a person
 
-A symptom you noticed while walking the product yourself is a suspicion. Mark it, and it stays useful.
+A symptom you noticed while walking the product yourself is a suspicion. Mark it, and it stays useful. Symptoms from the supplied practice results are practice, and say so.
 
 
 ### Match symptom to test
@@ -5853,21 +6143,21 @@ A supplied made-up symptom. A fee waiver exists, sits in the menu under a plain 
 
 Which test would identify the cause here?
 
-- None of the four, because they all begin by telling the person what to look for, and this is a person who never knew to look.
-- A tree test, because it takes the layout away and shows whether the branches work.
-- A click test, because people may not be seeing the menu.
-- A closed card sort, because the name may not be understood.
+- None of the four: each tells people what to find, and these people never knew to look.
+- A tree test, because it removes the layout and shows whether the branches lead there.
+- A click test, because people may be failing to notice the menu item on the real screen.
+- A closed card sort, because the plain name may still not be understood by everyone.
 
 <details>
 <summary>After your attempt</summary>
 
-None of the four, because they all begin by telling the person what to look for, and this is a person who never knew to look. — Every findability test names the target before it starts. The failure is that nobody wanted the thing yet, so the fix sits in how it is raised during booking rather than in the structure.
+None of the four: each tells people what to find, and these people never knew to look. — Every findability test names the target before it starts. The failure is that nobody wanted the thing yet, so the fix sits in how it is raised during booking rather than in the structure.
 
-A tree test, because it takes the layout away and shows whether the branches work. — It would come back clean, because it hands the person the goal. Everyone found it in one move once told, which is that result already.
+A tree test, because it removes the layout and shows whether the branches lead there. — It would come back clean, because it hands the person the goal. Everyone found it in one move once told, which is that result already.
 
-A click test, because people may not be seeing the menu. — Worth asking when people ignore the menu on tasks they are actually trying to do. Here they were not trying, so the component was never the obstacle.
+A click test, because people may be failing to notice the menu item on the real screen. — Worth asking when people ignore the menu on tasks they are actually trying to do. Here they were not trying, so the component was never the obstacle.
 
-A closed card sort, because the name may not be understood. — A sort would check whether the name reads correctly, and the name worked the moment anyone was pointed at it. The gap sits earlier than the name.
+A closed card sort, because the plain name may still not be understood by everyone. — A sort would check whether the name reads correctly, and the name worked the moment anyone was pointed at it. The gap sits earlier than the name.
 
 Mark each of your own symptoms as looking and not finding, or never knowing, and write the reason for every one you mark as never knowing.
 
@@ -5904,18 +6194,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 People take the right branch from the top and then cannot tell which of two labels holds their answer. Which is the cheaper test?
 
-- Another tree test, because the failure happened inside the tree.
-- A closed card sort with just those two categories, because the question is whether the names are understood.
-- A usability test, because you need to see the whole task.
+- A closed card sort with just those two categories, to see if the names are understood.
+- A usability test on the real screens, because you need to watch the whole task again.
+- Another tree test, because the failure happened inside the tree and should be re-run.
 
 <details>
 <summary>After your attempt</summary>
 
-Another tree test, because the failure happened inside the tree. — It happened inside the tree and it is not a question about the shape of the tree. You would run the same test again and get the same two labels back.
+A closed card sort with just those two categories, to see if the names are understood. — The branch is already working, so the shape of the structure is not what you are asking about. A sort with two categories takes about ten minutes a person.
 
-A closed card sort with just those two categories, because the question is whether the names are understood. — The branch is already working, so the shape of the structure is not what you are asking about. A sort with two categories takes about ten minutes a person.
+A usability test on the real screens, because you need to watch the whole task again. — It would show you the struggle again with every other variable attached. You already know where the struggle sits.
 
-A usability test, because you need to see the whole task. — It would show you the struggle again with every other variable attached. You already know where the struggle sits.
+Another tree test, because the failure happened inside the tree and should be re-run. — It happened inside the tree and it is not a question about the shape of the tree. You would run the same test again and get the same two labels back.
 
 Improve: Check your rows in step 3: any symptom about a name that you matched to a tree test should be re-matched to a closed sort, and the change recorded in step 5.
 
@@ -5934,18 +6224,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 People go straight to search on every task and never open the menu. What would a tree test tell you?
 
-- That the structure is sound, since they would use it during the test.
-- That search should be improved instead.
-- Nothing about this, because a tree test removes the layout and the menu is exactly what is being ignored.
+- Little about this: a tree test removes the very layout whose menu is being ignored.
+- Whether the structure is sound, since people would have to use it during the test.
+- Whether search should be improved instead, by comparing it against the menu route.
 
 <details>
 <summary>After your attempt</summary>
 
-That the structure is sound, since they would use it during the test. — They would use it because the test gives them nothing else to use. That says nothing about the screen they actually meet.
+Little about this: a tree test removes the very layout whose menu is being ignored. — The structure is not being consulted at all. A click test on a drawn or printed screen shows whether the component is seen and understood.
 
-That search should be improved instead. — That may be true and it is a different decision. First find out whether the menu is unseen, unreadable, or simply slower than typing.
+Whether the structure is sound, since people would have to use it during the test. — They would use it because the test gives them nothing else to use. That says nothing about the screen they actually meet.
 
-Nothing about this, because a tree test removes the layout and the menu is exactly what is being ignored. — The structure is not being consulted at all. A click test on a drawn or printed screen shows whether the component is seen and understood.
+Whether search should be improved instead, by comparing it against the menu route. — A tree test has no search box, so it cannot compare the two routes. First find out whether the menu is unseen, unreadable, or simply slower than typing.
 
 Improve: Look at your symptom list in step 2 for anything about people walking past the menu, match it to a click test in step 3, and record the change in step 5.
 
@@ -5964,18 +6254,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 All your symptoms came from a walkthrough you did on your own, because nobody was available. How should the plan read?
 
-- As symptoms observed in research, since you did observe them.
-- Each symptom marked as coming from your own rehearsal, with the plan saying what would confirm it.
-- Wait and write the plan once you have participants.
+- As symptoms observed in research, since you did observe each of them happening.
+- Each symptom marked as your own suspicion, with the plan saying what would confirm it.
+- Unwritten for now: wait and write the plan once you have real participants to observe.
 
 <details>
 <summary>After your attempt</summary>
 
-As symptoms observed in research, since you did observe them. — You observed yourself using something you already understand. Presenting that as research is the failure this whole module keeps naming.
+As symptoms observed in research, since you did observe each of them happening. — You observed yourself using something you already understand. Presenting that as research is the failure this whole module keeps naming.
 
-Each symptom marked as coming from your own rehearsal, with the plan saying what would confirm it. — A walkthrough of your own produces suspicions and no findings. A plan built from suspicions is still a good plan as long as it says that is what they are.
+Each symptom marked as your own suspicion, with the plan saying what would confirm it. — A walkthrough of your own produces suspicions and no findings. A plan built from suspicions is still a good plan as long as it says that is what they are.
 
-Wait and write the plan once you have participants. — The plan is the deliverable and it is worth writing today. What it needs is a source beside every symptom, not a delay.
+Unwritten for now: wait and write the plan once you have real participants to observe. — The plan is the deliverable and it is worth writing today. What it needs is a source beside every symptom, not a delay.
 
 Improve: Fill the source line in step 2 for every symptom, marking the rehearsal ones plainly, and record what you changed in step 5.
 
@@ -6034,6 +6324,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a food co-op’s website has two complaints. Members say they “can never find anything”, and when watched they type into search on every task without opening the menu. Separately, almost nobody uses the bulk-order discount, although it sits in the menu under a plain name and anyone told about it finds it in one move.
+
+**Task:** Choose the test you would run first for one of the two symptoms, say what result would make you switch to a different test, and explain why you chose it.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Picks a tree test or a full usability test for both symptoms, or treats the discount as a problem with the menu label.
+- Adequate: For the search symptom, picks a click test on the real layout to learn whether the menu is seen at all; or calls the discount a discoverability problem that no findability test can reach, with the reason.
+- Strong: As adequate, and names the result that would redirect the plan, such as people seeing the menu but finding typing quicker, and suggests the cheaper content check before any test.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -6171,7 +6487,7 @@ Stable ID: m06-l10-v1. Core.
 
 A hierarchy that exists only in a sitemap helps nobody. It reaches a person as headings, regions and navigation they can see or hear, and a person using a screen reader or scanning on a phone navigates by exactly those — so the in-page structure is where your architecture either becomes usable or stays a diagram.
 
-Bring: Your revised structure and one page that sits inside it — ideally the page your tree test showed people reaching. Structure is not only between pages; the same failures happen inside one.
+Bring: Your revised structure and one page that sits inside it — ideally a page your tree-test tasks led to. Structure is not only between pages; the same failures happen inside one.
 
 Starting route: Recommended route: Draw the page with its regions marked on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder. Alternative route: Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
 
@@ -6232,7 +6548,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- A class page read as headings alone: “Saturday pottery”, “About”, “Details”, “More info”, “Book”. Read aloud it described nothing — three of the five headings could have introduced anything. Rewritten from the labelling table: “Saturday pottery”, “What you'll do”, “What to bring”, “When and where”, “What it costs”, “Book a place”. The second version is a summary of the page, and the outline now matches the structure that the tree test had validated between pages. The regions were marked so the main content could be reached directly, and the preliminary checks found one further problem: the page title in the browser tab was the site name on every page, so a person with six tabs open could not tell them apart. What was not verified, and the record says so: no screen-reader session was run and no disabled participant took part.
+- A class page read as headings alone: “Saturday pottery”, “About”, “Details”, “More info”, “Book”. Read aloud it described nothing — three of the five headings could have introduced anything. Rewritten from the labelling table: “Saturday pottery”, “What you'll do”, “What to bring”, “When and where”, “What it costs”, “Book a place”. The second version is a summary of the page, and the outline now matches the structure that the tree test had checked between pages. The regions were marked so the main content could be reached directly, and the preliminary checks found one further problem: the page title in the browser tab was the site name on every page, so a person with six tabs open could not tell them apart. What was not verified, and the record says so: no screen-reader session was run and no disabled participant took part.
 
 
 ### Choose where you will do the work
@@ -6252,7 +6568,7 @@ The heading rule in your own words, and the one page you are going to work on.
 
 - Read the assigned page-structure tutorial on headings and regions. Write the heading rule in your own words, including what skipping a level does.
 
-**Start here:** Pick the page your tree test showed people actually reaching. A page nobody visits teaches you less.
+**Start here:** Pick a page your tree-test tasks led to, so it sits inside the structure you tested. Reaching it in a test shows your tasks can get there; it says nothing about how often real visitors arrive.
 
 **Enough:** Your rule says what a level means, not only that levels should be in order.
 
@@ -6490,21 +6806,21 @@ A supplied heading outline from another made-up class page, read aloud with noth
 
 Hearing only that, which judgement is the honest one?
 
-- It fails because “What to bring” is too long to be a heading.
-- You cannot judge it without seeing the page design.
-- The outline is sound, because five headings in order is a sensible shape for a page.
-- Two of them, “Overview” and “Good to know”, could sit on any page in the site, so the outline is not yet a summary of this one.
+- No honest judgement is possible until you can see how the page design presents each heading.
+- “Overview” and “Good to know” could sit on any page, so the outline does not yet summarise this one.
+- “What to bring” is the weak one, because a heading of three words is too long to scan quickly.
+- The outline is sound, because five headings in a sensible order give the page a clear shape.
 
 <details>
 <summary>After your attempt</summary>
 
-It fails because “What to bring” is too long to be a heading. — Length is the cheapest thing a heading has to spend. That is the one heading here a listener could act on.
+No honest judgement is possible until you can see how the page design presents each heading. — Hiding the design is the test. If the outline only makes sense beside the layout, then people who never see the layout have no structure at all.
 
-You cannot judge it without seeing the page design. — Hiding the design is the test. If the outline only makes sense beside the layout, then people who never see the layout have no structure at all.
+“Overview” and “Good to know” could sit on any page, so the outline does not yet summarise this one. — A heading earns its place by being unmovable. Those two would fit a booking page, a help page or an about page and nobody would notice.
 
-The outline is sound, because five headings in order is a sensible shape for a page. — Shape and order are only half of it. An outline can be perfectly nested and still tell a listener nothing about what is on the page.
+“What to bring” is the weak one, because a heading of three words is too long to scan quickly. — Length is the cheapest thing a heading has to spend. That is the one heading here a listener could act on.
 
-Two of them, “Overview” and “Good to know”, could sit on any page in the site, so the outline is not yet a summary of this one. — A heading earns its place by being unmovable. Those two would fit a booking page, a help page or an about page and nobody would notice.
+The outline is sound, because five headings in a sensible order give the page a clear shape. — Shape and order are only half of it. An outline can be perfectly nested and still tell a listener nothing about what is on the page.
 
 Read your own headings aloud with the page covered, and mark every one that could move to another page unnoticed.
 
@@ -6515,11 +6831,11 @@ Read your own headings aloud with the page covered, and mark every one that coul
 
 Section: practice-plan. Stable action: write-read-aloud.
 
-Read only the headings, in order, with the page covered. Write what a listener would think the page was about.
+Read only the headings, in order, with the page covered. Write what a listener thought the page was about, referring to them by role, such as “a friend”, never by name.
 
 **Answer:** What your headings alone said when you read them out, and what you rewrote afterwards
 
-Read only the headings, in order, with the page covered. Write what a listener would think the page was about.
+Read only the headings, in order, with the page covered. Write what a listener thought the page was about, referring to them by role, such as “a friend”, never by name.
 
 
 ### The preliminary checks you ran, and what each one showed
@@ -6541,18 +6857,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You want a heading to look smaller, so you give it a lower level with nothing in between. What does that do?
 
-- Nothing, as long as the wording of the heading is good.
-- It is fine if you note the intended level beside it.
-- It puts a gap in the outline, so anyone reading the headings alone hears a section that seems to be missing.
+- It leaves a gap in the outline, so someone moving by headings meets a missing section.
+- Very little, provided the wording of the heading itself is clear and descriptive.
+- It is acceptable, as long as you note the level you really intended beside it.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing, as long as the wording of the heading is good. — Good wording and a broken order are separate problems. The order is what somebody jumping from heading to heading is actually moving through.
+It leaves a gap in the outline, so someone moving by headings meets a missing section. — The level is a claim about what sits inside what. Used for size, it makes a claim you did not mean and cannot see on your own screen.
 
-It is fine if you note the intended level beside it. — A note beside it helps you and reaches nobody else. The outline is what the page hands to a reader.
+Very little, provided the wording of the heading itself is clear and descriptive. — Good wording and a broken order are separate problems. The order is what somebody jumping from heading to heading is actually moving through.
 
-It puts a gap in the outline, so anyone reading the headings alone hears a section that seems to be missing. — The level is a claim about what sits inside what. Used for size, it makes a claim you did not mean and cannot see on your own screen.
+It is acceptable, as long as you note the level you really intended beside it. — A note beside it helps you and reaches nobody else. The outline is what the page hands to a reader.
 
 Improve: Go back to your outline in step 2 and renumber it so every heading sits inside the one above. Record the change in the last box.
 
@@ -6571,18 +6887,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You read your headings aloud and they made sense to you. Is that enough?
 
-- It is enough, since you took the headings from your labelling table.
-- Not on its own, because you know the page. Read them to somebody who has not seen it and ask what the page is about.
-- It is enough if the headings match the visual design.
+- Your reading is enough once you confirm the headings also match the visual design.
+- You know the page, so read them to someone who has not seen it and ask what it covers.
+- Your own reading is enough, since every heading came from your evidenced labelling table.
 
 <details>
 <summary>After your attempt</summary>
 
-It is enough, since you took the headings from your labelling table. — The table gives you the words people use. It cannot tell you whether five of those words in a row describe this particular page.
+Your reading is enough once you confirm the headings also match the visual design. — Matching the design is the thing the test removes. The design has been rescuing the wording, which is why the wording never got fixed.
 
-Not on its own, because you know the page. Read them to somebody who has not seen it and ask what the page is about. — You fill in the missing meaning from memory without noticing. A listener who cannot do that hears what the outline really says.
+You know the page, so read them to someone who has not seen it and ask what it covers. — Your own reading is not enough on its own. You fill in the missing meaning from memory without noticing, and a listener who cannot do that hears what the outline really says.
 
-It is enough if the headings match the visual design. — Matching the design is the thing the test removes. The design has been rescuing the wording, which is why the wording never got fixed.
+Your own reading is enough, since every heading came from your evidenced labelling table. — The table gives you the words people use. It cannot tell you whether five of those words in a row describe this particular page.
 
 Improve: Read your outline from step 2 to one other person and write what they said the page was about in the read-aloud box in step 4. Record any rewrite in the last box.
 
@@ -6601,18 +6917,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The preliminary checks all came out clean. What can you claim?
 
-- That those particular checks found nothing, and no more than that. They are preliminary, and no disabled participant has used the page.
-- That the page is accessible for the checks you ran, which covers most people.
-- That the page is accessible.
+- That the page is accessible for most people, since the checks cover common faults.
+- That those named checks found nothing on that page, and no more than that.
+- That the page is now accessible, since every preliminary check came out clean.
 
 <details>
 <summary>After your attempt</summary>
 
-That those particular checks found nothing, and no more than that. They are preliminary, and no disabled participant has used the page. — The checks find a few common faults quickly. The honest record names which ones you ran and stops there.
+That the page is accessible for most people, since the checks cover common faults. — The second half is a guess about numbers you do not have. Name the checks that ran and leave the rest open.
 
-That the page is accessible for the checks you ran, which covers most people. — The second half is a guess about numbers you do not have. Name the checks that ran and leave the rest open.
+That those named checks found nothing on that page, and no more than that. — The checks find a few common faults quickly. They are preliminary rather than conformance, and no disabled participant has used the page, so the honest record names which ones you ran and stops there.
 
-That the page is accessible. — A small set of self-run checks cannot carry that claim. It is the sentence that gets repeated in a portfolio and then does not survive the first question.
+That the page is now accessible, since every preliminary check came out clean. — A small set of self-run checks cannot carry that claim. It is the sentence that gets repeated in a portfolio and then does not survive the first question.
 
 Improve: Fill the not-verified box in step 5 with each check marked run, not applicable or not run, add the sentence about the missing session, then note the change in the last box.
 
@@ -6691,6 +7007,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a small museum’s “Plan your visit” page has these headings in order: “Welcome” at level 1, “Info” at level 2, “More” at level 4 (chosen because it looked smaller), and “Plan” at level 2. The page covers opening hours, ticket prices, how to get there and step-free access.
+
+**Task:** Rewrite the heading outline, say what you did about the level-4 heading, and explain why each change helps someone who moves through the page by its headings.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Changes only sizes or styles, keeps vague headings such as “Info” and “More”, or leaves the skipped level because it looks right.
+- Adequate: Writes descriptive, correctly nested headings such as “Plan your visit”, “Opening hours”, “Tickets”, “Getting here” and “Step-free access”, with no skipped level, because the levels are the page’s outline.
+- Strong: As adequate, and plans to read the headings aloud to someone who has not seen the page, and records that no screen-reader session and no disabled participant has checked it.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -6944,11 +7286,11 @@ Choose the option that honestly describes your work.
 
 Section: practice-plan. Stable action: write-search-evidence.
 
-If your notes say nothing about it, write that. An absence is a real answer here.
+If your notes say nothing about it, write that. An absence is a real answer here. Refer to people by label, never by name.
 
 **Answer:** What your m05 notes show about people going straight to search instead of the menu
 
-If your notes say nothing about it, write that. An absence is a real answer here.
+If your notes say nothing about it, write that. An absence is a real answer here. Refer to people by label, never by name.
 
 
 ### Build the query list
@@ -6959,9 +7301,9 @@ At least twenty queries in your participants’ own words, sorted into names, de
 
 - Take at least twenty words and phrases your participants actually used, verbatim. Mark which are names of things, which are descriptions and which are questions.
 
-**Start here:** Go through your interview notes with a pen and copy out every phrase somebody used for something they were looking for.
+**Start here:** Go through your interview notes with a pen and copy out every phrase somebody used for something they were looking for. With no interview notes, use real messages or public reviews, with names removed and the source named; phrases you invent are guesses and are marked as guesses.
 
-**Enough:** Twenty lines exist and at least three of them are phrases you would never have written yourself.
+**Enough:** Twenty lines exist, each with its source, and at least three of them are phrases you would never have written yourself.
 
 **Query:** The words a person actually puts into a search box. Yours stay a guess about theirs until you copy them from your notes.
 
@@ -6997,11 +7339,11 @@ Made-up example. Building a twenty-query list from interview notes, and tidying 
 
 Section: practice-plan. Stable action: write-query-list.
 
-Copy them exactly, including the vague and awkward ones. Your tidier wording is the thing being tested, not the answer.
+Copy them exactly, including the vague and awkward ones; the phrases only, with no names. No participants? Take phrases from real messages or public reviews about this kind of product, naming the source, and mark any you wrote yourself as guesses.
 
 **Answer:** At least twenty phrases your participants used, word for word, one per line
 
-Copy them exactly, including the vague and awkward ones. Your tidier wording is the thing being tested, not the answer.
+Copy them exactly, including the vague and awkward ones; the phrases only, with no names. No participants? Take phrases from real messages or public reviews about this kind of product, naming the source, and mark any you wrote yourself as guesses.
 
 <details>
 <summary>Example</summary>
@@ -7015,11 +7357,11 @@ Example (made up): “what do I need to bring” · “fees” · “can I get m
 
 Section: practice-plan. Stable action: write-query-kinds.
 
-Write your answer for “How many are names of things, how many are descriptions, how many are questions”. Use the task instructions below to decide what to include.
+Add where the phrases came from: participants, real messages, public reviews, or your own guesses.
 
 **Answer:** How many are names of things, how many are descriptions, how many are questions
 
-
+Add where the phrases came from: participants, real messages, public reviews, or your own guesses.
 
 
 ### Run the queries by hand
@@ -7126,21 +7468,21 @@ A supplied zero-results screen from another made-up product. It reads: “No res
 
 What is the most serious thing missing here?
 
-- A count of how many results came back, so they know it really is none.
-- Nothing serious: the screen names the query, which is the main thing.
-- Any route that does not need the person to guess a different word — the structure to browse, or a person to ask.
-- The spelling advice, which blames the person for the failure.
+- Little of importance: the screen already shows the query back, which is its main job.
+- A count of the results returned, so the person can be certain the answer really is none.
+- Kinder wording in place of the spelling advice, which blames the person for the empty result.
+- A way forward that needs no new search word, such as browsing the classes or asking a person.
 
 <details>
 <summary>After your attempt</summary>
 
-A count of how many results came back, so they know it really is none. — They can already see it is none. A number changes nothing about what they can do next.
+Little of importance: the screen already shows the query back, which is its main job. — Naming the query is genuinely useful, and it is where the screen should start rather than stop. On its own it is a polite dead end.
 
-Nothing serious: the screen names the query, which is the main thing. — Naming the query is genuinely useful, and it is where the screen should start rather than stop. On its own it is a polite dead end.
+A count of the results returned, so the person can be certain the answer really is none. — They can already see it is none. A number changes nothing about what they can do next.
 
-Any route that does not need the person to guess a different word — the structure to browse, or a person to ask. — Everything on that screen sends them back to the box that just failed them. One route that works differently is what turns a dead end into a next move.
+Kinder wording in place of the spelling advice, which blames the person for the empty result. — The spelling advice reads badly, and fixing it comes second. Rewording that sentence still leaves them with only one thing to try.
 
-The spelling advice, which blames the person for the failure. — It reads badly and it comes second. Rewording that sentence still leaves them with only one thing to try.
+A way forward that needs no new search word, such as browsing the classes or asking a person. — Everything on that screen sends them back to the box that just failed them. One route that works differently is what turns a dead end into a next move.
 
 Look at your own zero-results screen and count the routes forward that do not depend on typing another word. If the answer is none, add one.
 
@@ -7186,20 +7528,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Your menu labels tested badly, and somebody suggests adding a search box instead of fixing them.
+Your menu labels tested badly, and somebody suggests adding a search box instead of fixing them. What is the problem with that suggestion?
 
-- It is a fair trade, because most people search anyway.
-- Search moves the failure somewhere you cannot see it, and a person searching after a failure is already having a poor time.
-- It works if the search is good enough at matching similar words.
+- It moves the failure out of sight, onto people who are searching because they already failed.
+- It is a fair trade, because a great many people go straight to search anyway.
+- It works well, provided the search can match similar words and common misspellings.
 
 <details>
 <summary>After your attempt</summary>
 
-It is a fair trade, because most people search anyway. — Many do, and they type their own words. A search box sitting on content that uses different words fails them faster, not less often.
+It moves the failure out of sight, onto people who are searching because they already failed. — A menu at least shows what exists. A search returning nothing tells them the thing is not there, which is often untrue.
 
-Search moves the failure somewhere you cannot see it, and a person searching after a failure is already having a poor time. — A menu at least shows what exists. A search returning nothing tells them the thing is not there, which is often untrue.
+It is a fair trade, because a great many people go straight to search anyway. — Many do, and they type their own words. A search box sitting on content that uses different words fails them faster, not less often.
 
-It works if the search is good enough at matching similar words. — Matching helps with spelling and word endings. It does nothing when the answer lives in an email or does not exist at all.
+It works well, provided the search can match similar words and common misspellings. — Matching helps with spelling and word endings. It does nothing when the answer lives in an email or does not exist at all.
 
 Improve: Take the failures in step 3 that you marked as vocabulary gaps and write a content fix for each one in step 5, then record it in the last box.
 
@@ -7218,18 +7560,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A person picks two filters and gets nothing back. What should the screen do?
 
-- Say “no results” and leave the filters as they are.
-- Clear the filters automatically and show everything again.
-- Show which choice emptied the list, and let them undo that one on its own.
+- Say “no results”, and leave both filters exactly as they are for them to adjust.
+- Clear both filters automatically and show the full list again, so nothing is empty.
+- Show which choice emptied the list, and let them undo that one choice alone.
 
 <details>
 <summary>After your attempt</summary>
 
-Say “no results” and leave the filters as they are. — Leaving the filters in place is the right half. Saying nothing about which one caused it is what makes the screen a trap.
+Say “no results”, and leave both filters exactly as they are for them to adjust. — Leaving the filters in place is the right half. Saying nothing about which one caused it is what makes the screen a trap.
 
-Clear the filters automatically and show everything again. — That takes the decision away from them and loses the one choice they cared about. They also cannot tell what happened.
+Clear both filters automatically and show the full list again, so nothing is empty. — That takes the decision away from them and loses the one choice they cared about. They also cannot tell what happened.
 
-Show which choice emptied the list, and let them undo that one on its own. — They made two choices and one of them did the damage. Without knowing which, their only move is to clear everything and start again.
+Show which choice emptied the list, and let them undo that one choice alone. — They made two choices and one of them did the damage. Without knowing which, their only move is to clear everything and start again.
 
 Improve: Fill the empty-combination box in step 4 with what the person sees and which choice they can undo, then record the change in the last box.
 
@@ -7248,18 +7590,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Three queries failed because the answer exists only inside a confirmation email. What kind of failure is that?
 
-- Content nobody can reach. No search and no renaming fixes it; the answer has to exist somewhere a person can get to first.
-- A vocabulary gap, since the email uses different words from the search.
-- A thing that does not exist, since it is not on the site.
+- A missing item, since anything absent from the site counts as not existing for the visitor.
+- Unreachable content: the answer exists, but nowhere a person can get to on their own.
+- A vocabulary gap, since the email describes the answer in different words from the search.
 
 <details>
 <summary>After your attempt</summary>
 
-Content nobody can reach. No search and no renaming fixes it; the answer has to exist somewhere a person can get to first. — It is the failure most often filed under search and it belongs to the structure. Put the answer on a page, then the wording can be argued about.
+A missing item, since anything absent from the site counts as not existing for the visitor. — The answer does exist, in the email, and that is a different repair. A genuinely missing item has to be written from nothing.
 
-A vocabulary gap, since the email uses different words from the search. — The words are not the barrier. Even the exact wording would not reach a page that does not exist.
+Unreachable content: the answer exists, but nowhere a person can get to on their own. — No search and no renaming fixes it, because the answer has to exist somewhere a person can reach first. Put it on a page; then the wording can be argued about.
 
-A thing that does not exist, since it is not on the site. — The answer does exist, in the email, and that is a different repair. A genuinely missing item has to be written from nothing.
+A vocabulary gap, since the email describes the answer in different words from the search. — The words are not the barrier. Even the exact wording would not reach a page that does not exist.
 
 Improve: Recheck your failure classes in step 3 and move every email-only or ask-a-person answer into the unreachable class, then write its fix in step 5 and note it in the last box.
 
@@ -7322,6 +7664,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
 
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: residents search an electricity company’s website using phrases such as “bill not came”, “pay after due date” and “meter photo”. The pages are titled Billing cycle, Late payment charges and Self-reading submission. The answer to “why is my bill high” exists only in a leaflet posted with paper bills.
+
+**Task:** Classify the failure for “bill not came” and for “why is my bill high”, choose a fix for each, and explain why at least one of the fixes needs no search engine.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Calls every failure a search problem and proposes synonyms or a better search engine for both phrases.
+- Adequate: Calls “bill not came” a vocabulary gap fixed by putting residents’ words on the billing page, and the high-bill answer unreachable content that has to be published on a page; neither fix needs an engine.
+- Strong: As adequate, and designs a zero-results route that needs no new word, such as browsing billing topics or contacting the company, and notes that a few phrases are a starting list rather than proof of how people search.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+
 ### Review and finish your practice
 
 Section: practice. Stable action: review-work.
@@ -7378,13 +7746,13 @@ When the activity is finished, tell me to return to the course answer called “
 
 **Queries are verbatim from participants and classified**
 
-Adequate evidence: At least twenty queries taken word for word from research notes, each marked as a name, a description or a question.
+Adequate evidence: At least twenty queries taken word for word from research notes — or, without participants, from real messages or public reviews with the source named — each marked as a name, a description or a question, with any invented query marked a guess.
 
 0 — Queries invented by the designer.
 
 1 — A mix of real and invented queries, unmarked.
 
-2 — Twenty or more verbatim queries, classified.
+2 — Twenty or more verbatim queries, classified, each with its source.
 
 3 — As adequate, and the list notes which queries came from people who had already failed in the navigation.
 
@@ -7947,18 +8315,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 One label is cut off on a button at 320 px. What is the first repair to try?
 
-- Leave the three dots, since people can work out the rest.
-- A shorter label that keeps the word telling it apart, or two separate items if no short version does.
-- A smaller size for that label so the whole thing fits.
+- A shorter label that keeps the word telling it apart, or two items if none does.
+- Keep the three dots, since people can usually work out how the label ends.
+- A smaller text size for that one label, so the whole of it fits on the button.
 
 <details>
 <summary>After your attempt</summary>
 
-Leave the three dots, since people can work out the rest. — Sometimes they can, and “Change or cancel a…” is exactly the case where they cannot. Two different actions have become one unreadable one.
+A shorter label that keeps the word telling it apart, or two items if none does. — Cutting off removes the end of a label, which is usually the part carrying the difference. Shortening on purpose means you choose what survives.
 
-A shorter label that keeps the word telling it apart, or two separate items if no short version does. — Cutting off removes the end of a label, which is usually the part carrying the difference. Shortening on purpose means you choose what survives.
+Keep the three dots, since people can usually work out how the label ends. — Sometimes they can, and “Change or cancel a…” is exactly the case where they cannot. Two different actions have become one unreadable one.
 
-A smaller size for that label so the whole thing fits. — It fits, it is harder to read, and it will be cut off again in the next language. You have bought the space from the reader.
+A smaller text size for that one label, so the whole of it fits on the button. — It fits, it is harder to read, and it will be cut off again in the next language. You have bought the space from the reader.
 
 Improve: Take every cut-off label in your narrow-width box in step 3 and write a shorter or split version in step 4, then record the change in the last box.
 
@@ -7977,18 +8345,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your prototype cannot render Devanagari at all. What is the honest response?
 
-- Skip the second script and note that the layout is proportional.
-- Record it as clean, since nothing visibly broke.
-- Write the labels by hand at the same size, record what you saw, and mark the on-screen rendering as not tested.
+- Record the script test as clean, since nothing visibly broke anywhere on screen.
+- Skip the second script, noting that a proportional layout will adapt to it anyway.
+- Hand-write the labels at the same size, record what you see, and mark rendering untested.
 
 <details>
 <summary>After your attempt</summary>
 
-Skip the second script and note that the layout is proportional. — Proportions cannot tell you whether the lettering contains those characters or whether the row is tall enough. Both fail quietly.
+Record the script test as clean, since nothing visibly broke anywhere on screen. — Nothing was rendered, so nothing could visibly break. Writing that down as a pass is the sentence that makes the whole note untrustworthy.
 
-Record it as clean, since nothing visibly broke. — Nothing was rendered, so nothing could visibly break. Writing that down as a pass is the sentence that makes the whole note untrustworthy.
+Skip the second script, noting that a proportional layout will adapt to it anyway. — Proportions cannot tell you whether the lettering contains those characters or whether the row is tall enough. Both fail quietly.
 
-Write the labels by hand at the same size, record what you saw, and mark the on-screen rendering as not tested. — Hand-written labels still show you the length and the height the marks need. What they cannot show is whether the lettering supports the script, so that stays untested and says so.
+Hand-write the labels at the same size, record what you see, and mark rendering untested. — Hand-written labels still show you the length and the height the marks need. What they cannot show is whether the lettering supports the script, so that stays untested and says so.
 
 Improve: Set the script-method box in step 2 to how you really produced it, move anything you could not see into the guesses box in step 5, then note it in the last box.
 
@@ -8005,20 +8373,20 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Your change note lists eleven decisions with evidence, and three of them rest on labels no participant ever mentioned.
+Your change note lists eleven decisions with evidence, and three of them rest on labels no participant ever mentioned. What should happen to those three?
 
-- Leave them, since they follow sensibly from the rest of the evidence.
 - Move those three into the guesses, each with the sentence that would settle it.
-- Remove them from the note, since you cannot support them.
+- Remove them from the note entirely, since no evidence supports any of the three.
+- Leave them where they are, since they follow sensibly from the rest of the evidence.
 
 <details>
 <summary>After your attempt</summary>
 
-Leave them, since they follow sensibly from the rest of the evidence. — Following sensibly is your reasoning, not anybody else’s behaviour. That is the exact place a preference gets written down as a finding.
-
 Move those three into the guesses, each with the sentence that would settle it. — A note separating the eight from the three is more useful than one claiming eleven. The three are where the next hour of work goes.
 
-Remove them from the note, since you cannot support them. — They are real decisions and the structure uses them. Deleting them hides a choice somebody else will have to rediscover later.
+Remove them from the note entirely, since no evidence supports any of the three. — They are real decisions and the structure uses them. Deleting them hides a choice somebody else will have to rediscover later.
+
+Leave them where they are, since they follow sensibly from the rest of the evidence. — Following sensibly is your reasoning, not anybody else’s behaviour. That is the exact place a preference gets written down as a finding.
 
 Improve: Work down the evidence column in step 5. Any line with nothing beside it moves into the guesses box, and the change goes in the last box.
 
@@ -8081,11 +8449,11 @@ Write your answer for “What you considered and did not do, and why”. Use the
 
 Section: practice. Stable action: write-still-guesses.
 
-Any decision whose evidence line is empty is a guess. So is any test you could not run, including the ones from lesson 10.
+Any decision whose evidence line is empty is a guess. So is any test you could not run, including the ones from lesson 10. Anything you practised on the supplied practice data is practice, not evidence for your own structure.
 
 **Answer:** What is still a guess, and what remains untested
 
-Any decision whose evidence line is empty is a guess. So is any test you could not run, including the ones from lesson 10.
+Any decision whose evidence line is empty is a guess. So is any test you could not run, including the ones from lesson 10. Anything you practised on the supplied practice data is practice, not evidence for your own structure.
 
 
 ### What you would test next, and with whom
@@ -8108,6 +8476,32 @@ Name one answer you improved and why. If no repair was needed, name the answer y
 **Answer:** What you changed after the Check questions
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a housing society’s app has a bottom menu item “Maintenance payments and receipts”. At 320 px it is cut to “Maintenance paym…”, so it looks almost the same as the item beside it, “Maintenance requests”. The Marathi version of the menu runs about 40 per cent longer.
+
+**Task:** Choose a repair for the cut-off label, say how you would check it in both languages, and explain why your repair is better than making the text smaller.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Shrinks the text or accepts the three dots, or tests only the English version at one width.
+- Adequate: Rewrites to short distinct labels that keep the telling-apart word, such as “Pay maintenance” and “Report a problem”, or splits payments from receipts, then re-checks at 320 px and with the longer Marathi text.
+- Strong: As adequate, and records in the change note which renderings were actually tested, marks the Marathi rendering untested if it could not be shown, and notes the labels still need a reader of Marathi.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice

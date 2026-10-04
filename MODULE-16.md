@@ -33,7 +33,7 @@ AI-assisted product work starts with a bounded task, checks every important outp
 - **An AI product:** Designing something that uses a model for somebody else. The risk lands on them, and they did not choose the tool.
 - **A good use:** One where the judgement stays with you: first drafts, alternatives to react against, explaining a term you will then check.
 
-**Quick example.** Made-up example. Writing rules for using assistance, and writing them as principles. “Use AI responsibly. Always check the output. Never compromise participant privacy.” Three lines nobody could disagree with.
+**Quick example.** Supplied output (hand-written for practice; no model produced it). Asked whether mid-grey body text at a contrast ratio of 5.2:1 is acceptable, it replies: “WCAG requires at least 7:1 for all body text, so 5.2:1 fails. This is a legal requirement in every country.” Source to check: W3C, Understanding Contrast (Minimum), R30 in this course’s library. It sets 4.5:1 for normal-size text at level AA; 7:1 is the stricter AAA level.
 
 The reader demonstrates and guides the task before asking for “The difference between assisted work and an AI product, in your own words”.
 
@@ -95,6 +95,18 @@ Section: learn. Stable action: workspace.
 Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
+
+
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Supplied outputs for checking. Each was hand-written for this course to practise verification; no real model produced them, and the tool library is made up. With no assistance tool, or if you prefer not to use one, these three are your three tasks: predict what is wrong first, then check each against its source.
+- Output 1 · explaining a term. Asked whether mid-grey body text at a contrast ratio of 5.2:1 is acceptable, it replies: “WCAG requires at least 7:1 for all body text, so 5.2:1 fails. This is a legal requirement in every country.” Source to check: W3C, Understanding Contrast (Minimum), R30 in this course’s library.
+- Output 2 · a question that needs evidence. Asked what members want from a tool-library booking page, it replies: “Studies show 73% of users prefer to book on their phone, and most library members want a chat assistant.” No study is named. Source to check: your own research notes, the only evidence about your members.
+- Output 3 · drafting. Asked for confirmation messages, it gives twenty; draft 4 reads “Your tool is reserved and ready to collect now.” Source to check, the library’s process: a booking is confirmed by email the next morning, after the evening stock-list update.
 
 
 ### Read and separate
@@ -288,6 +300,32 @@ A verification rule saying what you will always check and where.
 **A claim:** Anything asserted as fact: a number, a name, a standard, a statement about what people do. All of it needs checking before you repeat it.
 
 
+### Try a supplied example
+
+Section: practice-plan. Stable action: step-4-try.
+
+Supplied output (hand-written for practice; no model produced it). Asked whether mid-grey body text at a contrast ratio of 5.2:1 is acceptable, it replies: “WCAG requires at least 7:1 for all body text, so 5.2:1 fails. This is a legal requirement in every country.” Source to check: W3C, Understanding Contrast (Minimum), R30 in this course’s library. It sets 4.5:1 for normal-size text at level AA; 7:1 is the stricter AAA level.
+
+What should your verification rule make you do with this output?
+
+- Correct the threshold from the source, and drop the legal claim, which nothing supports.
+- Ask the model for its source, and repeat the output as written once it names a WCAG page.
+- Accept it, because the stricter number is the safer one to pass on to a client anyway.
+
+<details>
+<summary>After your attempt</summary>
+
+Correct the threshold from the source, and drop the legal claim, which nothing supports. — Checked against R30, 5.2:1 passes AA for normal-size text and misses AAA: the output stated the stricter level as the minimum. Nothing supplied supports “a legal requirement in every country”, so it goes rather than being softened.
+
+Ask the model for its source, and repeat the output as written once it names a WCAG page. — A cited page can be invented or misread just like the claim. You open the page yourself and compare; a citation is a lead, not a check.
+
+Accept it, because the stricter number is the safer one to pass on to a client anyway. — A wrong threshold presented as the minimum sends a team to fix text that already passes, and the legal claim still has no source.
+
+Now write your own verification rule in step 4: which kinds of claim you always check, and the named source for each.
+
+</details>
+
+
 ### Try the distinction · 1 of 6
 
 Section: practice-plan. Stable action: step-4-sort-1.
@@ -309,7 +347,7 @@ a poor use — Nothing in it requires evidence or knowledge of your users.
 
 never, under the data rule — No participant material is involved.
 
-Now write your own two lists, and check the never list covers everything in the third group.
+Now write your own verification rule in step 4: which kinds of claim you always check, and the named source for each.
 
 </details>
 
@@ -335,7 +373,7 @@ a poor use — It is that too, and the data rule settles it before the quality a
 
 never, under the data rule — The notes are what people told you under your consent wording. They do not go into a service you do not control.
 
-Now write your own two lists, and check the never list covers everything in the third group.
+Now write your own verification rule in step 4: which kinds of claim you always check, and the named source for each.
 
 </details>
 
@@ -361,7 +399,7 @@ a poor use — It would be, without the check. One detail in a plausible explana
 
 never, under the data rule — Nothing confidential is involved.
 
-Now write your own two lists, and check the never list covers everything in the third group.
+Now write your own verification rule in step 4: which kinds of claim you always check, and the named source for each.
 
 </details>
 
@@ -387,7 +425,7 @@ a poor use — Only evidence can answer it, and the answer will be general enoug
 
 never, under the data rule — No data of yours is involved, which is what makes it a quality question rather than a rule question.
 
-Now write your own two lists, and check the never list covers everything in the third group.
+Now write your own verification rule in step 4: which kinds of claim you always check, and the named source for each.
 
 </details>
 
@@ -413,7 +451,7 @@ a poor use — It requires no evidence and no knowledge of your users.
 
 never, under the data rule — It is your writing, unless it quotes a participant.
 
-Now write your own two lists, and check the never list covers everything in the third group.
+Now write your own verification rule in step 4: which kinds of claim you always check, and the named source for each.
 
 </details>
 
@@ -439,7 +477,7 @@ a poor use — The quality might be fine. The problem is that it is not yours to
 
 never, under the data rule — Anything a client has not agreed can leave their systems is covered by the rule, and the moment to decide it is now rather than under a deadline.
 
-Now write your own two lists, and check the never list covers everything in the third group.
+Now write your own verification rule in step 4: which kinds of claim you always check, and the named source for each.
 
 </details>
 
@@ -472,20 +510,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-A model summarised your interview notes into four themes. Do you have your findings?
+Somebody pasted your interview notes into a chat and got back four tidy themes. What do you have?
 
-- Yes, as a first pass to refine by hand.
-- You have a plausible summary produced by something that cannot tell what your participant said from what people usually say.
-- Yes, if you read the themes and agree with them.
+- A broken promise to your participants, and a smooth summary that is not your analysis.
+- A usable first draft of the findings, provided you read each theme and agree with it.
+- A quick starting point to refine by hand, as long as the notes are deleted afterwards.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, as a first pass to refine by hand. — A first pass anchors you. Having read four smooth themes, the contradiction is much harder to notice.
+A broken promise to your participants, and a smooth summary that is not your analysis. — The notes were given to you under a promise about who sees them, so they never go into a service you do not control. Even setting that aside, the themes are what such studies usually say; the surprising parts, which are the findings, are what a summary smooths away.
 
-You have a plausible summary produced by something that cannot tell what your participant said from what people usually say. — The parts that were surprising are the parts it smooths away, and those are the findings. The analysis is the work, and skipping it removes the thing that made the findings yours.
+A usable first draft of the findings, provided you read each theme and agree with it. — Agreeing with a plausible summary is easy, because plausible is what it is built to be. It also leaves the promise to participants broken.
 
-Yes, if you read the themes and agree with them. — Agreeing with a plausible summary is easy, because plausible is what it was optimised for.
+A quick starting point to refine by hand, as long as the notes are deleted afterwards. — Deleting afterwards does not undo sending them, and a first pass anchors you: after four smooth themes, the contradiction is much harder to notice.
 
 Improve: Write interview notes into your never list in step 3, with the reason in terms of what you promised. Record the change in step 5.
 
@@ -504,18 +542,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Why write these rules now rather than when the situation arises?
 
-- Because the tools change quickly.
-- Because the situation arises under deadline pressure, when the useful answer has to be available rather than constructed.
-- Because rules made in advance are more defensible.
+- Because rules written in advance look more defensible if a client asks about AI use.
+- Because the moment comes tired and under deadline, when a rule must already exist.
+- Because tools change so fast that rules written later would already be out of date.
 
 <details>
 <summary>After your attempt</summary>
 
-Because the tools change quickly. — The rules are about your obligations rather than about the tools, which is why they survive the tools changing.
+Because rules written in advance look more defensible if a client asks about AI use. — They may look better, but appearance is not what they are for: they decide for you when your judgement is tired.
 
-Because the situation arises under deadline pressure, when the useful answer has to be available rather than constructed. — The moment you most want to paste the notes in is the evening before a deadline. A rule written calmly is the only version that exists at that point.
+Because the moment comes tired and under deadline, when a rule must already exist. — The evening before a deadline is when pasting the notes in is most tempting. A rule written calmly is the only version that exists at that moment.
 
-Because rules made in advance are more defensible. — They are, and the reason is what they do for you rather than how they look.
+Because tools change so fast that rules written later would already be out of date. — The rules are about your obligations, not about particular tools, which is why they survive the tools changing.
 
 Improve: Write where the rules live and which will be hardest in step 5. Record the change.
 
@@ -532,20 +570,20 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-A model explains a technical term clearly. Can you repeat the explanation to a colleague?
+A model explains a technical term an engineer used, clearly and confidently, with no source. When can you repeat it to a colleague?
 
-- Yes, if it matches your understanding.
-- After checking it against documentation. Plausible explanations routinely contain one detail that is wrong.
-- Yes, if you ask it again and get the same answer.
+- After checking it against a named source that is not the model, such as the documentation.
+- Once you have asked the model again in new words and got the same explanation back.
+- Once it matches what you already half-understood about the term from earlier work.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, if it matches your understanding. — Your understanding is what you were trying to improve.
+After checking it against a named source that is not the model, such as the documentation. — Plausible explanations often carry one wrong detail, usually the specific one you were about to repeat. A named source outside the model is what turns a claim into something checked.
 
-After checking it against documentation. Plausible explanations routinely contain one detail that is wrong. — The wrong detail is usually the specific one, which is the part you were going to repeat. Verification means a named source that is not the model.
+Once you have asked the model again in new words and got the same explanation back. — Asking again produces a second confident answer from the same source, not a check.
 
-Yes, if you ask it again and get the same answer. — That produces a second confident answer rather than a check.
+Once it matches what you already half-understood about the term from earlier work. — Your half-understanding is the thing you were trying to improve, so it cannot be the check.
 
 Improve: Name the source you would check against in step 4 rather than writing that you will verify. Record the change in step 5.
 
@@ -596,15 +634,41 @@ Write your answer for “Which rule you expect to find hardest, and when”. Use
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A volunteer for a community choir asks a chat assistant whether the choir may photocopy a score for rehearsals. The reply says: “Copying up to 10% of any score for rehearsal is always allowed.” The choir’s handbook says copying music needs the publisher’s permission and to ask the librarian first. The volunteer also wants to paste the members’ email list into the chat to draft a rehearsal reminder.
+
+**Task:** Decide what the volunteer should do with the reply and with the email list, and explain the reason for each.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Uses the reply because it sounds specific, or softens it to “probably fine”; pastes the email list to save time. Treats fluent output as a finding and the data rule as a preference.
+- Adequate: Does not rely on the 10% claim: it has no source and conflicts with the handbook, so the volunteer follows the handbook and asks the librarian. Keeps the email list out of the chat, because members gave it for choir use, and drafts the reminder without it.
+- Strong: As adequate, and says what would change the decision (the publisher’s permission or a primary source, not a second chat answer), notes that “always” is the warning sign, and uses assistance only for wording that contains no member details.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -635,7 +699,7 @@ An AI product: Designing something that uses a model for somebody else. The risk
 A good use: One where the judgement stays with you: first drafts, alternatives to react against, explaining a term you will then check.
 
 Supplied practice material (fictional or labelled practice, not my research):
-Made-up example. Writing rules for using assistance, and writing them as principles. “Use AI responsibly. Always check the output. Never compromise participant privacy.” Three lines nobody could disagree with.
+Supplied output (hand-written for practice; no model produced it). Asked whether mid-grey body text at a contrast ratio of 5.2:1 is acceptable, it replies: “WCAG requires at least 7:1 for all body text, so 5.2:1 fails. This is a legal requirement in every country.” Source to check: W3C, Understanding Contrast (Minimum), R30 in this course’s library. It sets 4.5:1 for normal-size text at level AA; 7:1 is the stricter AAA level.
 
 Activity: Give me one hand-written model output from the supplied case. Ask me to find an unsupported claim, choose a source that could verify it and rewrite the claim with an honest boundary.
 
@@ -645,7 +709,7 @@ When the activity is finished, tell me to return to the course answer called “
 
 **Come back to the course:** Return to “The difference between assisted work and an AI product, in your own words”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The difference between assisted work and an AI product, in your own words” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “The difference between assisted work and an AI product, in your own words” and write one sentence in your own words.
 
 </details>
 <details>
@@ -699,7 +763,7 @@ Adequate evidence: A rule naming notes, recordings, transcripts and identifying 
 
 2 — Specific categories named as never.
 
-3 — As adequate, and it references the consent you actually gave.
+3 — As adequate, and it references the consent wording you used or prepared in Module 5.
 
 Repair: Re-read your consent introduction and write the rule that keeps the promise you made. Recheck: The data rule.
 
@@ -751,7 +815,7 @@ Bring: Your written assistance rules and work in progress.
 
 Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
-- Three tasks attempted with assistance, logged
+- Three tasks logged, using a tool you already have or the supplied outputs
 - What each saved and what each got wrong
 - A verification record for any fact or claim used
 - A pattern of errors noted across the three
@@ -763,18 +827,18 @@ AI-assisted product work starts with a bounded task, checks every important outp
 **Words you will use**
 
 - **Predicting first:** Writing what you expect before running it. Without it, the result becomes whatever story is easiest to tell afterwards.
-- **No access:** A complete route through this lesson. Predict what assistance would produce, do the task, and record what you actually did.
+- **No access:** A complete route through this lesson. Use the supplied Outputs 1 to 3 as your three tasks: predict what is wrong in each, then check each against its source.
 - **Raw output:** What came back before you edited it. Kept, it shows how much of the final thing was yours; unkept, you will overestimate the help.
 
-**Quick example.** Made-up example. Choosing three tasks to test assistance on, and choosing three of the same kind. Drafting error messages, drafting empty-state wording, and drafting a set of button labels. Three real tasks and three afternoons of work.
+**Quick example.** Supplied output (hand-written for practice; no model produced it). Asked what members want from a tool-library booking page, it replies: “Studies show 73% of users prefer to book on their phone, and most library members want a chat assistant.” No study is named. The only evidence about your members is your own research notes.
 
-The reader demonstrates and guides the task before asking for “Three real tasks of different kinds”.
+The reader demonstrates and guides the task before asking for “Three tasks of different kinds: real ones, or Outputs 1 to 3 from the source notes”.
 
 ### What this lesson will help you do
 
 Section: learn. Stable action: welcome.
 
-Use assistance on three design tasks, and for each record what it saved, what it got wrong, and what you had to do anyway.
+Test assistance on three design tasks — with a free tool you already use, or with the supplied hand-written outputs — and for each record what it saved, what it got wrong, and what you had to do anyway.
 
 
 ### Idea 1: Good uses: first drafts, alternatives to react against, explai…
@@ -818,7 +882,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Three tasks were logged. Drafting twenty error-message variants: useful — three were usable after editing, the rest were generic, and it took ten minutes rather than forty. Explaining a technical term an engineer used: useful, and the explanation was verified against documentation before being repeated, where one detail turned out to be wrong. Summarising five interview notes: refused under the data rule, and done by hand, which took two hours and produced the contradiction that became the study's main finding — a contradiction the earlier trial summary had smoothed away.
+- Three tasks were logged. Drafting twenty error-message variants: useful — three were usable after editing, the rest were generic, and it took ten minutes rather than forty. Explaining a technical term an engineer used: useful, and the explanation was verified against documentation before being repeated, where one detail turned out to be wrong. Summarising five interview notes: refused under the data rule and done by hand, which took two hours and produced the contradiction that became the study's main finding.
 
 
 ### Choose where you will do the work
@@ -828,6 +892,18 @@ Section: learn. Stable action: workspace.
 Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
+
+
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Supplied outputs for checking. Each was hand-written for this course to practise verification; no real model produced them, and the tool library is made up. With no assistance tool, or if you prefer not to use one, these three are your three tasks: predict what is wrong first, then check each against its source.
+- Output 1 · explaining a term. Asked whether mid-grey body text at a contrast ratio of 5.2:1 is acceptable, it replies: “WCAG requires at least 7:1 for all body text, so 5.2:1 fails. This is a legal requirement in every country.” Source to check: W3C, Understanding Contrast (Minimum), R30 in this course’s library.
+- Output 2 · a question that needs evidence. Asked what members want from a tool-library booking page, it replies: “Studies show 73% of users prefer to book on their phone, and most library members want a chat assistant.” No study is named. Source to check: your own research notes, the only evidence about your members.
+- Output 3 · drafting. Asked for confirmation messages, it gives twenty; draft 4 reads “Your tool is reserved and ready to collect now.” Source to check, the library’s process: a booking is confirmed by email the next morning, after the evening stock-list update.
 
 
 ### Choose the tasks
@@ -845,7 +921,7 @@ Three real tasks of different kinds, each with a prediction, and an honest note 
 
 **Predicting first:** Writing what you expect before running it. Without it, the result becomes whatever story is easiest to tell afterwards.
 
-**No access:** A complete route through this lesson. Predict what assistance would produce, do the task, and record what you actually did.
+**No access:** A complete route through this lesson. Use the supplied Outputs 1 to 3 as your three tasks: predict what is wrong in each, then check each against its source.
 
 
 ### See the decision being made
@@ -871,13 +947,13 @@ Made-up example. Choosing three tasks to test assistance on, and choosing three 
 **Unknown:** Still unknown: how it performs on tasks I have not tried. Three tasks is three tasks, and the log says which three.
 
 
-### Three real tasks of different kinds
+### Three tasks of different kinds: real ones, or Outputs 1 to 3 from the source notes
 
 Section: practice-plan. Stable action: write-three-tasks.
 
-Write your answer for “Three real tasks of different kinds”. Use the task instructions below to decide what to include.
+Write your answer for “Three tasks of different kinds: real ones, or Outputs 1 to 3 from the source notes”. Use the task instructions below to decide what to include.
 
-**Answer:** Three real tasks of different kinds
+**Answer:** Three tasks of different kinds: real ones, or Outputs 1 to 3 from the source notes
 
 
 
@@ -886,22 +962,22 @@ Write your answer for “Three real tasks of different kinds”. Use the task in
 
 Section: practice-plan. Stable action: write-predictions.
 
-Predicting first is what makes the result informative rather than a story you tell afterwards.
+Predicting first is what makes the result informative rather than a story you tell afterwards. On the supplied route, predict what you expect to be wrong in each output before checking it.
 
 **Answer:** For each: whether you expect assistance to help, and why
 
-Predicting first is what makes the result informative rather than a story you tell afterwards.
+Predicting first is what makes the result informative rather than a story you tell afterwards. On the supplied route, predict what you expect to be wrong in each output before checking it.
 
 
-### What you are using, or that you have no access
+### What you are using: a free tool you already have, or the supplied outputs
 
 Section: practice-plan. Stable action: write-access-route.
 
-Any free tier is fine. With no access: write the three tasks, predict what assistance would produce, and record what you did instead. That is a complete answer.
+Any free tier is fine; never start a trial or create an account for this. With no tool, or if you prefer not to use one, Outputs 1 to 3 in the source notes are your three tasks. That is a complete route, labelled supplied practice.
 
-**Answer:** What you are using, or that you have no access
+**Answer:** What you are using: a free tool you already have, or the supplied outputs
 
-Any free tier is fine. With no access: write the three tasks, predict what assistance would produce, and record what you did instead. That is a complete answer.
+Any free tier is fine; never start a trial or create an account for this. With no tool, or if you prefer not to use one, Outputs 1 to 3 in the source notes are your three tasks. That is a complete route, labelled supplied practice.
 
 
 ### Run them
@@ -910,10 +986,10 @@ Section: practice-plan. Stable action: step-2-brief.
 
 The three tasks attempted within your data rules, with the raw output kept and anything declined recorded.
 
-- Attempt each with assistance, staying inside your data rules.
+- Attempt each with assistance inside your data rules, or open the matching supplied output.
 - Keep the raw output before you edit it.
 
-**Start here:** Paste the raw output into a file before you touch it.
+**Start here:** Paste the raw output into a file before you touch it; on the supplied route, copy the output from the source notes unchanged.
 
 **Enough:** You can still see what came back before your editing.
 
@@ -926,22 +1002,22 @@ The three tasks attempted within your data rules, with the raw output kept and a
 
 Section: practice-plan. Stable action: write-raw-kept.
 
-Keep it. Once you have edited, you will not remember how much of it was yours.
+Keep it. Once you have edited, you will not remember how much of it was yours. On the supplied route the raw output is the supplied text: keep it unedited beside your corrections.
 
 **Answer:** Where you kept the raw output before editing
 
-Keep it. Once you have edited, you will not remember how much of it was yours.
+Keep it. Once you have edited, you will not remember how much of it was yours. On the supplied route the raw output is the supplied text: keep it unedited beside your corrections.
 
 
 ### Anything you declined to do because of your data rules
 
 Section: practice-plan. Stable action: write-within-rules.
 
-Write your answer for “Anything you declined to do because of your data rules”. Use the task instructions below to decide what to include.
+On the supplied route, write what you would have refused to paste into a tool, and why.
 
 **Answer:** Anything you declined to do because of your data rules
 
-
+On the supplied route, write what you would have refused to paste into a tool, and why.
 
 
 ### Verify
@@ -985,6 +1061,32 @@ Made-up example. Using assistance on three tool-library tasks, and counting the 
 **Unknown:** Still unknown: whether the twenty variants made my final message better than forty minutes alone would have. The time is countable and the quality is not, and the log says so.
 
 
+### Try a supplied example
+
+Section: practice-plan. Stable action: step-3-try.
+
+Supplied output (hand-written for practice; no model produced it). Asked what members want from a tool-library booking page, it replies: “Studies show 73% of users prefer to book on their phone, and most library members want a chat assistant.” No study is named. The only evidence about your members is your own research notes.
+
+What should your verification record say about this output?
+
+- Verified, if a web search finds any survey reporting a similar phone-booking share.
+- Usable as background if labelled “industry data”, since phone booking is plausible.
+- Rejected: no study is named, and only your own research can speak for your members.
+
+<details>
+<summary>After your attempt</summary>
+
+Verified, if a web search finds any survey reporting a similar phone-booking share. — Finding some survey with a similar number does not make this one true: it would be a different claim from a different place, and still not about your members.
+
+Usable as background if labelled “industry data”, since phone booking is plausible. — A label does not create a source. “Industry data” with no study behind it is still an invented figure, and it would be quoted.
+
+Rejected: no study is named, and only your own research can speak for your members. — A number with no traceable source is unusable however plausible it sounds, and “members want a chat assistant” is a claim about your people that only evidence about them could support. The task needed evidence, not fluency.
+
+Now check your own three outputs in step 3 the same way: every number, name and claim against a named source, or marked unverifiable.
+
+</details>
+
+
 ### Every fact, term, number and claim you checked, and against what
 
 Section: practice-plan. Stable action: write-checked-what.
@@ -1018,7 +1120,7 @@ Time recorded including editing and verification, and anything you accepted that
 
 **Start here:** Write down the editing and verification minutes before the production minutes.
 
-**Enough:** At least one of your three has an honest total that is worse than you predicted.
+**Enough:** Each task has an honest total compared with your prediction, whichever way it came out.
 
 **The real saving:** Production time minus editing minus verification. For some tasks it is negative, and only the log shows which.
 
@@ -1144,11 +1246,11 @@ A task refused under the data rule and done by hand in two hours.
 <details>
 <summary>After your attempt</summary>
 
-a real saving — Not of time. It produced the contradiction that became the finding, which is what the log should record: nothing saved, something gained.
+a real saving — The two hours saved nothing; they bought the study’s main finding, which the log records as gained rather than saved.
 
-a hidden cost — The two hours are a cost and they bought the main result of the study.
+a hidden cost — The two hours are the cost of doing it by hand, and the right cost: the rule had already decided this was not a task for assistance.
 
-a reason to stop — The rule already stopped it, which is the rule working.
+a reason to stop — This class of task is a stop before any quality argument starts: participant notes never go in, and doing it by hand produced the finding.
 
 Now log your own three the same way, including the things that do not appear in a time count.
 
@@ -1185,11 +1287,11 @@ Now log your own three the same way, including the things that do not appear in 
 
 Section: practice-plan. Stable action: write-time-including.
 
-Write your answer for “Time spent on each, including editing and verification”. Use the task instructions below to decide what to include.
+On the supplied route you cannot time generation: record the minutes spent checking and correcting, and your estimate of doing the task by hand, and say which is which.
 
 **Answer:** Time spent on each, including editing and verification
 
-
+On the supplied route you cannot time generation: record the minutes spent checking and correcting, and your estimate of doing the task by hand, and say which is which.
 
 
 ### Anything you accepted that you would not have written yourself
@@ -1209,20 +1311,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You produced twenty message variants in ten minutes rather than forty. Did it save you thirty minutes?
+Twenty message variants took ten minutes to produce instead of forty by hand, then twenty minutes to read, discard seventeen and edit three. What did it save?
 
-- Only after the reading, discarding and editing are counted. The honest measure includes them, and on some tasks it comes out negative.
-- Yes, the output existed in a quarter of the time.
-- Yes, and the editing would have been needed regardless.
+- Thirty minutes, because the drafting itself took ten minutes rather than forty.
+- Nothing measurable, since editing your own draft would have taken as long anyway.
+- About ten minutes: thirty in total against forty by hand, if the three kept are as good.
 
 <details>
 <summary>After your attempt</summary>
 
-Only after the reading, discarding and editing are counted. The honest measure includes them, and on some tasks it comes out negative. — Production is the visible part and the fast part. An explanation produced in four minutes and verified in twenty-five cost you time, and only a log shows which tasks are which.
+Thirty minutes, because the drafting itself took ten minutes rather than forty. — That counts only the visible, fast part. The twenty minutes of reading and editing are part of the same task.
 
-Yes, the output existed in a quarter of the time. — The output existed. Usable output took most of the forty minutes anyway.
+Nothing measurable, since editing your own draft would have taken as long anyway. — Sifting twenty of somebody else’s drafts and editing your own are different amounts of work, and the log gives a number: thirty minutes against forty.
 
-Yes, and the editing would have been needed regardless. — Editing your own draft and discarding seventeen of somebody else’s are different amounts of work.
+About ten minutes: thirty in total against forty by hand, if the three kept are as good. — Production plus reading, discarding and editing is the honest total: 10 + 20 = 30 minutes against 40. The caveat matters too: the time is countable, and whether the three are as good as your own forty minutes is not.
 
 Improve: Record editing and verification time for all three tasks in step 4, and recompute. Note the change in step 5.
 
@@ -1239,20 +1341,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-The output cites an accessibility criterion. Do you need to check it?
+An output cites a numbered accessibility criterion for minimum button size, in the same confident tone as everything else. Before it goes into your specification, what do you do?
 
-- No, standards are well documented enough to be reliable.
-- Only if it sounds unlikely.
-- Yes. Specifics are where the errors are, and a fabricated criterion would be quoted at an engineer as fact.
+- Keep it if a second chat, asked separately in new words, quotes the same criterion and number.
+- Open that criterion in the standard yourself and compare its wording with the claim.
+- Keep it if the number matches what you remember from other design systems you use.
 
 <details>
 <summary>After your attempt</summary>
 
-No, standards are well documented enough to be reliable. — They are well documented, which is what makes checking quick rather than unnecessary.
+Keep it if a second chat, asked separately in new words, quotes the same criterion and number. — Two outputs agreeing are two claims, not a check; neither has been compared with the standard.
 
-Only if it sounds unlikely. — It will not sound unlikely. Plausibility is what these outputs are best at.
+Open that criterion in the standard yourself and compare its wording with the claim. — Specific, checkable details such as criterion numbers and sizes are where invented errors hide, and a fabricated criterion would be quoted at an engineer as fact. The course library links the WCAG quick reference (R66) for exactly this.
 
-Yes. Specifics are where the errors are, and a fabricated criterion would be quoted at an engineer as fact. — Nothing in the tone distinguishes a real criterion from an invented one. The pattern across tasks is usually that specifics, sources and anything local are the unreliable parts.
+Keep it if the number matches what you remember from other design systems you use. — Memory of other systems is not the standard, and design systems often set their own sizes above or below it.
 
 Improve: Check every specific claim against a named source in step 3 and record what was wrong. Note the change in step 5.
 
@@ -1271,18 +1373,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You kept a phrase you would not have written, because rewriting it felt fussy. Does that belong in the log?
 
-- No, that is normal editing.
-- Yes. It is the cost that never appears in a time count, and a pattern of them changes what your product says.
-- No, since the phrase was acceptable.
+- Log it: no time count shows that cost, and a pattern of them changes what your product says.
+- Leave it out, since the phrase was acceptable and nobody reading would notice it.
+- Leave it out: choosing between two acceptable phrasings is ordinary editing, not a cost of the tool.
 
 <details>
 <summary>After your attempt</summary>
 
-No, that is normal editing. — Normal editing is choosing. This was declining to choose.
+Log it: no time count shows that cost, and a pattern of them changes what your product says. — One phrase is nothing. Recorded across three tasks, it shows how much of the final text was chosen rather than accepted, which the time figure cannot see.
 
-Yes. It is the cost that never appears in a time count, and a pattern of them changes what your product says. — One phrase is nothing. Recorded over three tasks, it shows how much of the final text was chosen rather than accepted, which is the thing the time figure cannot see.
+Leave it out, since the phrase was acceptable and nobody reading would notice it. — Acceptable is the standard that let it in. It is not the standard you apply to your own writing.
 
-No, since the phrase was acceptable. — Acceptable is the standard that lets it in. It is not the standard you apply to your own writing.
+Leave it out: choosing between two acceptable phrasings is ordinary editing, not a cost of the tool. — Ordinary editing is choosing. Keeping it because changing it felt fussy was declining to choose.
 
 Improve: Write what you accepted rather than chose in step 4, for each task. Record the change in step 5.
 
@@ -1333,15 +1435,41 @@ Write your answer for “What you changed in your assistance rules, if anything�
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A bakery owner asks a chat assistant to draft a notice for a new pre-order page. In two minutes it produces a tidy notice saying orders “can be collected from 7 am every day” and “include free delivery anywhere in town”. The bakery’s own opening sheet says collection starts at 8 am, the shop is closed on Mondays, and delivery costs £3 and runs on Saturdays only.
+
+**Task:** Decide whether the owner should use the notice as it is, fix it or start again, and explain your reason, including how much time the assistance really saved.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Publishes it because it looked finished in two minutes, or fixes one detail and misses the others; counts the saving as the drafting time only.
+- Adequate: Checks every factual line against the opening sheet, corrects the collection time, the Monday closure and the delivery terms, and counts the checking and correcting time in the saving.
+- Strong: As adequate, and notes that the wording was the useful part while the facts were not, so next time the facts go in first; says the saving is small once checking is counted, and a wrong promise to customers would cost more than writing it by hand.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -1364,25 +1492,25 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: Using assistance without losing the work
-What I am trying to do: Use assistance on three design tasks, and for each record what it saved, what it got wrong, and what you had to do anyway.
+What I am trying to do: Test assistance on three design tasks — with a free tool you already use, or with the supplied hand-written outputs — and for each record what it saved, what it got wrong, and what you had to do anyway.
 
 Key idea or terms:
 Predicting first: Writing what you expect before running it. Without it, the result becomes whatever story is easiest to tell afterwards.
-No access: A complete route through this lesson. Predict what assistance would produce, do the task, and record what you actually did.
+No access: A complete route through this lesson. Use the supplied Outputs 1 to 3 as your three tasks: predict what is wrong in each, then check each against its source.
 Raw output: What came back before you edited it. Kept, it shows how much of the final thing was yours; unkept, you will overestimate the help.
 
 Supplied practice material (fictional or labelled practice, not my research):
-Made-up example. Choosing three tasks to test assistance on, and choosing three of the same kind. Drafting error messages, drafting empty-state wording, and drafting a set of button labels. Three real tasks and three afternoons of work.
+Supplied output (hand-written for practice; no model produced it). Asked what members want from a tool-library booking page, it replies: “Studies show 73% of users prefer to book on their phone, and most library members want a chat assistant.” No study is named. The only evidence about your members is your own research notes.
 
 Activity: Give me one hand-written model output from the supplied case. Ask me to find an unsupported claim, choose a source that could verify it and rewrite the claim with an honest boundary.
 
 Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
-When the activity is finished, tell me to return to the course answer called “Three real tasks of different kinds” and write my own decision. Do not write that answer for me.
+When the activity is finished, tell me to return to the course answer called “Three tasks of different kinds: real ones, or Outputs 1 to 3 from the source notes” and write my own decision. Do not write that answer for me.
 ```
 
-**Come back to the course:** Return to “Three real tasks of different kinds”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+**Come back to the course:** Return to “Three tasks of different kinds: real ones, or Outputs 1 to 3 from the source notes”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Three real tasks of different kinds” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “Three tasks of different kinds: real ones, or Outputs 1 to 3 from the source notes” and write one sentence in your own words.
 
 </details>
 <details>
@@ -1400,7 +1528,7 @@ When the activity is finished, tell me to return to the course answer called “
 
 **Three tasks of different kinds are logged with predictions**
 
-Adequate evidence: Three real tasks with a prediction made before each attempt.
+Adequate evidence: Three tasks, real or supplied, each with a prediction written before the attempt or check.
 
 0 — Fewer than three, or all of one kind.
 
@@ -1408,7 +1536,7 @@ Adequate evidence: Three real tasks with a prediction made before each attempt.
 
 2 — Three different kinds with predictions.
 
-3 — As adequate, and one prediction turned out to be wrong, which is recorded.
+3 — As adequate, and each prediction is compared with what happened, including any that was wrong.
 
 Repair: Choose tasks of different shapes — drafting, explaining, analysing — and predict before running each. Recheck: The task log.
 
@@ -1422,13 +1550,13 @@ Adequate evidence: A record of what was wrong or could not be checked, per task.
 
 2 — Errors and unverifiable items recorded per task.
 
-3 — As adequate, and one error would have been repeated confidently without the check.
+3 — As adequate, and each error is traced to a named source, with any claim that would have been repeated confidently marked.
 
 Repair: Go back through the raw output and check every specific claim against a source. Recheck: The verification record.
 
 **The time saving includes editing and verification**
 
-Adequate evidence: Time recorded for the whole cycle, not only generation.
+Adequate evidence: Time recorded for the whole cycle, not only generation; on the supplied route, checking and correcting time against a by-hand estimate.
 
 0 — Only generation time counted.
 
@@ -1436,7 +1564,7 @@ Adequate evidence: Time recorded for the whole cycle, not only generation.
 
 2 — The whole cycle counted per task.
 
-3 — As adequate, and at least one task shows a negative saving.
+3 — As adequate, and the totals are compared with the predictions, saying plainly where a saving was small or negative.
 
 Repair: Re-count including the verification you did afterwards, and be honest where it cost more. Recheck: The time record.
 
@@ -1450,7 +1578,7 @@ Adequate evidence: A written pattern in the errors, with a rule updated as a res
 
 2 — A pattern drawn from the three logs, with a rule change.
 
-3 — As adequate, and the pattern names a category you will stop using assistance for.
+3 — As adequate, and the pattern changes a rule: a category you will stop using assistance for, or a check you will add.
 
 Repair: Read the three logs together and write what the failures had in common. Recheck: The pattern note.
 
@@ -1503,7 +1631,7 @@ AI-assisted product work starts with a bounded task, checks every important outp
 - **A rule instead:** Most recent first, most borrowed first, nearest branch. Half of the features people want a model for are a sorted list with a good heading.
 - **Setting expectations:** Saying what this is before the first output, rather than apologising after the first error. It is the cheapest thing in the whole module.
 
-**Quick example.** Made-up example. Choosing an AI feature for a tool library, and choosing one that did not need a model. Personalised suggestions: tools you might want, chosen by a model from your borrowing history and everybody else’s.
+**Quick example.** Supplied output (hand-written for practice; no model produced it). Asked to write the line shown above tool suggestions, it offers: “Our smart AI knows exactly what you need next.” Source to check, the feature’s actual rule: your three most borrowed tools, then the three most borrowed at your branch this month.
 
 The reader demonstrates and guides the task before asking for “One place a model could plausibly help in your product, and what it would do”.
 
@@ -1528,11 +1656,11 @@ Section: learn. Stable action: learn-2.
 Set expectations before the first output, not after the first error.
 
 
-### A confidence percentage is usually meaningless to a reader
+### A confidence percentage rarely tells a reader what to do
 
 Section: learn. Stable action: learn-3.
 
-A confidence percentage is usually meaningless to a reader.
+A confidence percentage rarely tells a reader what to do.
 
 
 ### Show the basis: what it used, so the person can judge it
@@ -1555,7 +1683,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The feature: suggesting classes a person might book. The normal state says “Suggested from classes you booked before and their times”, which is the basis rather than a score. Suggestions are presented as a list to scan rather than a single answer, each can be dismissed with one tap, and dismissal is remembered. No booking is ever made from a suggestion without the review screen. A confidence percentage was designed and rejected, with the reason recorded: in a small test, three of three people read anything above 70 per cent as “this is right”.
+- The feature: suggesting classes a person might book. The normal state says “Suggested from classes you booked before and their times”, which is the basis rather than a score. Suggestions are presented as a list to scan rather than a single answer, each can be dismissed with one tap, and dismissal is remembered. No booking is ever made from a suggestion without the review screen. A confidence percentage was designed and rejected, with the reason recorded: in a made-up check with three readers, all three read the high percentage as “this is right”.
 
 
 ### Choose where you will do the work
@@ -1655,6 +1783,32 @@ The sentence the interface shows before the first output, and what it says the f
 **What it is not doing:** The half people fill in themselves if you leave it out, usually generously.
 
 
+### Try a supplied example
+
+Section: practice-plan. Stable action: step-2-try.
+
+Supplied output (hand-written for practice; no model produced it). Asked to write the line shown above tool suggestions, it offers: “Our smart AI knows exactly what you need next.” Source to check, the feature’s actual rule: your three most borrowed tools, then the three most borrowed at your branch this month.
+
+What is the main problem with this line as the sentence shown before the first output?
+
+- It is too long for a heading; a shorter version of the same claim would work fine.
+- It claims knowledge the rule does not have, so every wrong suggestion breaks a promise.
+- It mentions AI, which puts some people off; the rest of the promise can stay.
+
+<details>
+<summary>After your attempt</summary>
+
+It is too long for a heading; a shorter version of the same claim would work fine. — Length is not the problem: a shorter false promise is still false.
+
+It claims knowledge the rule does not have, so every wrong suggestion breaks a promise. — “Knows exactly what you need” sets an expectation the rule cannot meet. “Suggested from tools you have borrowed and what is popular at your branch this month” says what it does, so a wrong suggestion is expected rather than a betrayal.
+
+It mentions AI, which puts some people off; the rest of the promise can stay. — Whether to say AI is a separate question. The promise of knowing exactly is what fails the first time a suggestion is wrong.
+
+Now write your own opening sentence in step 2: what the feature uses, and what it is not doing.
+
+</details>
+
+
 ### The sentence shown before the first output
 
 Section: practice-plan. Stable action: write-opening-sentence.
@@ -1743,7 +1897,7 @@ Six ways a made up suggestion feature might present itself. For each one, decide
 <details>
 <summary>After your attempt</summary>
 
-helps them judge it — Most readers cannot convert it into a decision, and anything above about seventy reads as certainty.
+helps them judge it — Most readers cannot turn it into a decision, and a high number is easily read as a promise.
 
 looks quantitative and helps nobody — It has the appearance of rigour and no usable meaning for a reader. It also makes the occasional wrong high-confidence answer feel like a betrayal.
 
@@ -1960,20 +2114,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Does showing a confidence score make a feature honest?
+A teammate wants each suggestion to carry an “87% match” badge “so it is honest about uncertainty”. What does the badge do for a reader?
 
-- Yes, provided the scores are well calibrated.
-- Yes, since it communicates uncertainty directly.
-- It makes it look quantitative. Most readers cannot convert a percentage into a decision, and a high number reads as certainty.
+- It looks precise but gives no basis to judge, and a high number reads as a promise.
+- It shows the uncertainty directly, which is the honest thing to do with any estimate.
+- It works once the scores are well calibrated, because the number is then simply true.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, provided the scores are well calibrated. — Calibration makes the number true. It does not make it usable by somebody deciding whether to tap it.
+It looks precise but gives no basis to judge, and a high number reads as a promise. — The number was meant to carry doubt and is read as a guarantee. Showing what the suggestion rests on — tools you borrowed before — lets somebody judge it, which is what the badge was supposed to do.
 
-Yes, since it communicates uncertainty directly. — It communicates a number. What a reader does with 87 per cent is treat it as yes.
+It shows the uncertainty directly, which is the honest thing to do with any estimate. — It shows a number. What a reader does with 87 per cent is usually treat it as yes; the doubt does not arrive.
 
-It makes it look quantitative. Most readers cannot convert a percentage into a decision, and a high number reads as certainty. — The score was meant to communicate doubt and is read as a guarantee. Showing the basis — what it used — lets somebody judge it for themselves, which is what the number was supposed to do.
+It works once the scores are well calibrated, because the number is then simply true. — Calibration makes the number accurate. It does not tell somebody deciding whether to tap it what to do at 87.
 
 Improve: Replace any score in step 3 with a basis line somebody could disagree with. Record the change in step 5.
 
@@ -1992,18 +2146,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 When should the interface say what the feature is doing?
 
-- Before the first output, so nobody is surprised when a suggestion is wrong.
-- After the first error, when the explanation is relevant.
-- In a help page, so the interface stays clean.
+- In a help page linked from settings, so the main screen stays clean and calm.
+- After the first error, when somebody finally has a real reason to read the explanation.
+- Before the first output, so a wrong suggestion is met as expected, not as a surprise.
 
 <details>
 <summary>After your attempt</summary>
 
-Before the first output, so nobody is surprised when a suggestion is wrong. — Setting the expectation afterwards is an apology. A sentence before the first output costs nothing and changes how every subsequent error is read.
+In a help page linked from settings, so the main screen stays clean and calm. — Almost nobody opens a help page before the first suggestion, which is when the expectation forms.
 
-After the first error, when the explanation is relevant. — By then the person has decided what the feature is, and the explanation reads as an excuse.
+After the first error, when somebody finally has a real reason to read the explanation. — By then the person has already decided what the feature is, and the explanation reads as an excuse.
 
-In a help page, so the interface stays clean. — Nobody reads the help page before the first suggestion.
+Before the first output, so a wrong suggestion is met as expected, not as a surprise. — Setting the expectation afterwards is an apology. One sentence before the first output costs little and changes how every later error is read.
 
 Improve: Write the opening sentence in step 2 and say where it appears. Record the change in step 5.
 
@@ -2020,20 +2174,20 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Your suggestion feature could be built as a sorted list with a good heading. Should you use a model?
+Checked by hand for twelve members, “your three most borrowed tools, then this month’s three most borrowed” gave nearly the same suggestions as the proposed model. Which do you build?
 
-- Yes, since personalisation needs one.
-- Probably not. A rule you can explain beats a model you cannot, wherever it produces similar answers.
-- Yes, because a model improves over time.
+- A model, since suggestions only feel personal when something has learned your habits.
+- The rule: it gives similar answers and can be explained, predicted and maintained.
+- The model, because it can keep improving as more members borrow more tools.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, since personalisation needs one. — Personalisation from somebody’s own history is a sort. It needs a model when the pattern is genuinely beyond a rule, which is worth establishing rather than assuming.
+A model, since suggestions only feel personal when something has learned your habits. — Personalisation from somebody’s own history is a sort. A model earns its place when the pattern is beyond a rule, which this check did not show.
 
-Probably not. A rule you can explain beats a model you cannot, wherever it produces similar answers. — Most recent first and most borrowed this month produced roughly the same suggestions when checked by hand. The rule is explainable, predictable, cheap and maintainable, and the design questions are identical either way.
+The rule: it gives similar answers and can be explained, predicted and maintained. — Where a rule gives similar answers it wins on explanation, predictability, cost and upkeep, and the design questions are the same either way. Twelve members is a small check, and the honest note says so.
 
-Yes, because a model improves over time. — That sentence cannot be acted on or argued with, which is what makes it a poor reason.
+The model, because it can keep improving as more members borrow more tools. — “It improves” cannot be acted on or argued with, which makes it a weak reason; improvement is worth establishing, not assuming.
 
 Improve: Write the rule version in step 1 and say honestly whether it would do. Record the change in step 5.
 
@@ -2053,9 +2207,9 @@ A confidence display designed and rejected, with the reason recorded.
 - Design a confidence display and reject it, with the reason.
 - Save the state, the basis and the rejection.
 
-**Start here:** Draw the percentage version, show it to two people, and ask what they would do differently at 70 and at 90.
+**Start here:** Draw the percentage version. Ask two people what they would do differently at 70 and at 90, or write that walk-through yourself and label it as reasoning.
 
-**Enough:** Your reason comes from what somebody said rather than from the principle alone.
+**Enough:** Your reason names what a reader would do with the number, from what somebody said or from your labelled walk-through.
 
 **Designing then rejecting:** Drawing the thing before deciding against it. It is what makes the rejection a decision rather than an opinion about a thing you never tried.
 
@@ -2066,22 +2220,48 @@ A confidence display designed and rejected, with the reason recorded.
 
 Section: practice. Stable action: write-rejected-display.
 
-Write your answer for “A confidence display you designed and rejected, with the reason”. Use the task instructions below to decide what to include.
+If you asked readers, describe them by role rather than name and keep their exact words in a private note with a date to delete it. Alone, write what the display asks a reader to decide and label it as your reasoning, not a test.
 
 **Answer:** A confidence display you designed and rejected, with the reason
 
+If you asked readers, describe them by role rather than name and keep their exact words in a private note with a date to delete it. Alone, write what the display asks a reader to decide and label it as your reasoning, not a test.
 
 
-
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A museum’s audio-guide app adds “next exhibit” suggestions. A model drafted the label shown on each one: “98% match — picked by AI just for you.” The team’s note says suggestions come from the room you are in and the exhibits most visitors open next; the app knows nothing else about you.
+
+**Task:** Decide what the label should say instead, and explain why your version helps a visitor more than the percentage.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps the percentage, perhaps rounded or relabelled “confidence”, or swaps it for stars; treats a number as honesty. Leaves “just for you” although the app knows nothing about the visitor.
+- Adequate: Replaces the number with the basis, for example “Visitors in this room often go to … next”, which a visitor can judge, and removes “just for you” because the note says the app knows nothing else.
+- Strong: As adequate, and says how a visitor can skip or dismiss the suggestion cheaply, notes the basis may suit some visitors badly, and would ask two visitors what they expect next to check the wording is read as intended.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -2112,7 +2292,7 @@ A rule instead: Most recent first, most borrowed first, nearest branch. Half of 
 Setting expectations: Saying what this is before the first output, rather than apologising after the first error. It is the cheapest thing in the whole module.
 
 Supplied practice material (fictional or labelled practice, not my research):
-Made-up example. Choosing an AI feature for a tool library, and choosing one that did not need a model. Personalised suggestions: tools you might want, chosen by a model from your borrowing history and everybody else’s.
+Supplied output (hand-written for practice; no model produced it). Asked to write the line shown above tool suggestions, it offers: “Our smart AI knows exactly what you need next.” Source to check, the feature’s actual rule: your three most borrowed tools, then the three most borrowed at your branch this month.
 
 Activity: Give me one hand-written model output from the supplied case. Ask me to find an unsupported claim, choose a source that could verify it and rewrite the claim with an honest boundary.
 
@@ -2122,7 +2302,7 @@ When the activity is finished, tell me to return to the course answer called “
 
 **Come back to the course:** Return to “One place a model could plausibly help in your product, and what it would do”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “One place a model could plausibly help in your product, and what it would do” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “One place a model could plausibly help in your product, and what it would do” and write one sentence in your own words.
 
 </details>
 <details>
@@ -2188,11 +2368,11 @@ Adequate evidence: A designed display plus a written rejection with the reasonin
 
 1 — Rejected without designing it.
 
-2 — Designed, tested against comprehension and rejected with reasons.
+2 — Designed and rejected with reasons checked against how it is read: what two readers said, or a solo walk-through labelled as reasoning.
 
-3 — As adequate, and the rejection cites how people read the number.
+3 — As adequate, and the rejection says what a reader would do at two values, and what stays unconfirmed if no reader was asked.
 
-Repair: Draw the version with a score, show it to two people and ask what it means to them. Recheck: The rejection note.
+Repair: Draw the version with a score and ask two people what they would do at 70 and at 90; alone, write what the display asks a reader to decide and label it as reasoning. Recheck: The rejection note.
 
 </details>
 The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
@@ -2210,7 +2390,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 <summary>Reading, video and deeper explanation</summary>
 
 - The guidebook's framing is that people build a mental model of what a system can do from their first encounters, and that setting expectations early is cheaper than correcting them later. In practice this means saying what the feature is doing — suggesting, sorting, drafting — in words, before the person has formed a theory from a lucky first result.
-- Confidence numbers rarely help. Eighty-seven per cent means little without a reference class, and people read any number above about seventy as effectively certain. What helps is showing the basis: this suggestion is from classes you booked before, this draft is from the notes you wrote, this ranking is by distance. A person can evaluate a basis; they cannot evaluate a percentage.
+- Confidence numbers rarely help. Eighty-seven per cent means little without a reference class, and a high number is easily read as a promise rather than as doubt. What helps is showing the basis: this suggestion is from classes you booked before, this draft is from the notes you wrote, this ranking is by distance. A person can evaluate a basis; they cannot evaluate a percentage.
 - Design the ordinary case for occasional wrongness rather than treating errors as a separate screen. That means output that is easy to scan and reject, changes that are easy to reverse, and no irreversible action taken from a suggestion without a person's confirmation.
 - The trust question is symmetrical: over-trust produces people accepting bad output, and under-trust produces a feature nobody uses. Both are design failures, and the fix for both is the same — say what it does, show what it used, and make disagreement cheap.
 
@@ -2243,7 +2423,7 @@ AI-assisted product work starts with a bounded task, checks every important outp
 - **The four:** Correct a nearly-right output, override it entirely, turn it off, and undo what it did. Most features design one of the four.
 - **Correction that teaches:** A change that affects future output. If it does not, saying so is better than letting people assume it does.
 
-**Quick example.** Made-up example. Naming the four control situations for a tool-library suggestion feature, and designing the one that was obvious. A thumbs-down on each suggestion, because that is the control every product of this kind has and it was the one I thought of first.
+**Quick example.** Supplied output (hand-written for practice; no model produced it). Asked to specify controls for tool suggestions, it writes: “Members who dislike a suggestion can ignore it, so no settings are needed. A thumbs-down button collects feedback.” Source to check, the product notes: suggestions fill the top of the home screen, and booking one reserves the tool for three days.
 
 The reader demonstrates and guides the task before asking for “Correct, override, disable, undo: what each means for your feature”.
 
@@ -2399,6 +2579,32 @@ Made-up example. Designing correction for a tool-library suggestion, and letting
 **Trade-off:** Saying it plainly makes the feature sound less capable than the competitors who say nothing.
 
 **Unknown:** Still unknown: how many people read the sentence. The member who gave up would have, which is the case it was written for.
+
+
+### Try a supplied example
+
+Section: practice-plan. Stable action: step-2-try.
+
+Supplied output (hand-written for practice; no model produced it). Asked to specify controls for tool suggestions, it writes: “Members who dislike a suggestion can ignore it, so no settings are needed. A thumbs-down button collects feedback.” Source to check, the product notes: suggestions fill the top of the home screen, and booking one reserves the tool for three days.
+
+Which change turns this draft into control rather than feedback?
+
+- Make the thumbs-down larger and send a weekly summary of all the feedback to the team.
+- Add undo for the three-day reservation and an off switch, with search kept prominent.
+- Ask a short reason on every thumbs-down, so the suggestions can be improved.
+
+<details>
+<summary>After your attempt</summary>
+
+Make the thumbs-down larger and send a weekly summary of all the feedback to the team. — Both help the team and change nothing for the person in front of the screen: the suggestion and the reservation stay.
+
+Add undo for the three-day reservation and an off switch, with search kept prominent. — Undo covers the reservation a suggestion can make, the off switch covers people who do not want suggestions, and search is the override. Each changes what the system does for that person; ignoring and a thumbs-down change nothing for them.
+
+Ask a short reason on every thumbs-down, so the suggestions can be improved. — A reason prompt makes disagreeing cost more than ignoring, and the person still has no way to stop or undo anything.
+
+Now write your own correction and override in step 2, and say whether correcting changes future output.
+
+</details>
 
 
 ### How somebody corrects a nearly-right output
@@ -2676,20 +2882,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-People can just ignore a suggestion they do not want. Is that control?
+Suggestions sit at the top of the screen and reappear after every action. A colleague says people can simply ignore them. What does that give a person?
 
-- Yes, for a low-stakes feature like suggestions.
-- No. Ignoring is tolerance, especially where the suggestion holds the primary position and reappears after every action.
-- Yes, provided the suggestion is visually quiet.
+- Tolerance, not control: they can look past it, but the system still does the same thing.
+- Control, provided the suggestions are visually quiet enough to skim past easily.
+- Enough control for a low-stakes feature, since nothing is booked from a suggestion.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, for a low-stakes feature like suggestions. — Low stakes each time, repeated daily. It is also the feature most likely to be ignorable by design rather than by accident.
+Tolerance, not control: they can look past it, but the system still does the same thing. — Control means being able to change what the system does: correct it, override it, turn it off or undo it. Ignoring is what is left when none of those exists.
 
-No. Ignoring is tolerance, especially where the suggestion holds the primary position and reappears after every action. — Control means being able to change what the system does. The four controls exist because looking past something is the only option a person has when nothing else is offered.
+Control, provided the suggestions are visually quiet enough to skim past easily. — Quiet styling helps people skim, and the system still behaves exactly the same.
 
-Yes, provided the suggestion is visually quiet. — Quiet helps and it does not change what the system does.
+Enough control for a low-stakes feature, since nothing is booked from a suggestion. — Low stakes once, repeated daily at the top of the screen. Stakes decide how much harm a missing control does, not whether ignoring is control.
 
 Improve: Check all four controls exist in step 1, and design the missing one. Record the change in step 5.
 
@@ -2708,18 +2914,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Dismissing a suggestion does not change future suggestions. What should the interface do?
 
-- Say so plainly, because people assume it learns and are quietly disappointed for months otherwise.
-- Imply it learns, since it may do so later.
-- Nothing; correction is a reasonable default expectation.
+- Say nothing, since people do not expect a simple list to learn from them.
+- Imply that it learns, since a later version of the feature probably will.
+- Say so plainly where people dismiss, because most will assume it learns.
 
 <details>
 <summary>After your attempt</summary>
 
-Say so plainly, because people assume it learns and are quietly disappointed for months otherwise. — The same wrong suggestion returning weekly, with dismissals that appear to do nothing, is how somebody concludes the system ignores them. One sentence prevents it, and it may prompt you to make dismissals persist instead.
+Say nothing, since people do not expect a simple list to learn from them. — As the lesson’s case showed, people assume anything that looks like this learns; silence leaves that assumption in place.
 
-Imply it learns, since it may do so later. — That is a promise on behalf of a future version, made to somebody using this one.
+Imply that it learns, since a later version of the feature probably will. — That is a promise on behalf of a future version, made to somebody using this one.
 
-Nothing; correction is a reasonable default expectation. — It is, which is exactly why an interface that does not correct has to say so.
+Say so plainly where people dismiss, because most will assume it learns. — The same wrong suggestion returning weekly, after dismissals that seem to do nothing, is how somebody concludes they are ignored. One sentence prevents that, and may prompt you to make dismissals persist.
 
 Improve: Write the sentence in step 2 saying what a dismissal does. Record the change in step 5.
 
@@ -2738,18 +2944,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You added an off switch. Do you need to do anything else?
 
-- No, the switch is the control.
-- Only if the feature is central to the product.
-- Walk the main task with the feature off. Features added as extras are often load-bearing without anybody noticing.
+- Walk the main task with the feature off, because added features are often quietly relied on.
+- Nothing more for now: the switch is the control, and it can be tested after launch.
+- Only check the task if the feature is central to the product; extras can safely be left alone.
 
 <details>
 <summary>After your attempt</summary>
 
-No, the switch is the control. — The switch is half of it. The product working without the feature is the other half.
+Walk the main task with the feature off, because added features are often quietly relied on. — A switch that works, after which the task cannot be completed, is not a choice anybody can make. The walk takes minutes and is the most direct way to find out.
 
-Only if the feature is central to the product. — The features that turn out to be load-bearing are exactly the ones nobody thought were central.
+Nothing more for now: the switch is the control, and it can be tested after launch. — The switch is half of it; the product working without the feature is the other half, and after launch is when a broken task costs most.
 
-Walk the main task with the feature off. Features added as extras are often load-bearing without anybody noticing. — A switch that works, after which the task cannot be completed, is not a choice anybody can make. Walking it is ten minutes and it is the only way to find out.
+Only check the task if the feature is central to the product; extras can safely be left alone. — The features that turn out to be relied on are often the ones nobody thought were central.
 
 Improve: Walk the task with the feature disabled in step 3 and record what broke. Note the change in step 5.
 
@@ -2789,15 +2995,41 @@ Write your answer for “Which control you expect to be used most, and why”. U
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A car-share club’s app now offers “smart pickup times”, and a model-drafted spec says: “Members can ignore the suggested time; accepting it books the car for that slot.” The club’s notes say the suggested time fills the top of the booking screen, a booking can be changed free only within ten minutes, and some members share one login with a partner.
+
+**Task:** Decide which control the spec most needs before launch, and explain why ignoring is not enough here.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Agrees members can ignore it, or adds only a feedback button; treats looking past the suggestion as control.
+- Adequate: Adds undo for the booking (a clear cancel or change route beyond ten minutes, or a confirmation before booking) and an override (choose your own time first), because accepting creates a booking and the suggestion takes the primary position.
+- Strong: As adequate, and adds an off switch, says what a dismissal does on a shared login, and checks the booking task still works with suggestions turned off.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -2828,7 +3060,7 @@ The four: Correct a nearly-right output, override it entirely, turn it off, and 
 Correction that teaches: A change that affects future output. If it does not, saying so is better than letting people assume it does.
 
 Supplied practice material (fictional or labelled practice, not my research):
-Made-up example. Naming the four control situations for a tool-library suggestion feature, and designing the one that was obvious. A thumbs-down on each suggestion, because that is the control every product of this kind has and it was the one I thought of first.
+Supplied output (hand-written for practice; no model produced it). Asked to specify controls for tool suggestions, it writes: “Members who dislike a suggestion can ignore it, so no settings are needed. A thumbs-down button collects feedback.” Source to check, the product notes: suggestions fill the top of the home screen, and booking one reserves the tool for three days.
 
 Activity: Give me one hand-written model output from the supplied case. Ask me to find an unsupported claim, choose a source that could verify it and rewrite the claim with an honest boundary.
 
@@ -2838,7 +3070,7 @@ When the activity is finished, tell me to return to the course answer called “
 
 **Come back to the course:** Return to “Correct, override, disable, undo: what each means for your feature”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Correct, override, disable, undo: what each means for your feature” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “Correct, override, disable, undo: what each means for your feature” and write one sentence in your own words.
 
 </details>
 <details>
@@ -2959,7 +3191,7 @@ AI-assisted product work starts with a bounded task, checks every important outp
 - **Cannot answer:** A legitimate outcome that needs its own design. Left undesigned it becomes an empty space or a fabricated answer.
 - **Harmful output:** Something offensive, dangerous or damaging. It needs a route to a person rather than a dismissal.
 
-**Quick example.** Made-up example. Listing the failures of a tool-library suggestion feature, and listing the ones I could fix. Suggests a tool that is out on loan, and suggests something from the wrong branch. Two failures, both fixable with better data.
+**Quick example.** Supplied output (hand-written for practice; no model produced it). Asked for the message shown when there are no suggestions, it writes: “Sorry, I didn’t quite understand what you’re looking for. Please try again!” Source to check, the feature notes: it cannot interpret requests at all; it shows nothing when a member has borrowed fewer than two tools; search by type or branch always works.
 
 The reader demonstrates and guides the task before asking for “Confidently wrong, cannot answer, harmful output: what each would look like here”.
 
@@ -3169,6 +3401,32 @@ Made-up example. Designing what a tool-library suggestion feature does when it h
 **Unknown:** Still unknown: how often the empty state happens. Nobody counted before, and the count is one of the three measures worth having.
 
 
+### Try a supplied example
+
+Section: practice-plan. Stable action: step-3-try.
+
+Supplied output (hand-written for practice; no model produced it). Asked for the message shown when there are no suggestions, it writes: “Sorry, I didn’t quite understand what you’re looking for. Please try again!” Source to check, the feature notes: it cannot interpret requests at all; it shows nothing when a member has borrowed fewer than two tools; search by type or branch always works.
+
+What should replace this message?
+
+- A longer apology explaining that the model is still learning about the member.
+- The same message with a smiling icon, so the failure feels less frustrating.
+- “No suggestions yet”, with search by type or branch on the same screen.
+
+<details>
+<summary>After your attempt</summary>
+
+A longer apology explaining that the model is still learning about the member. — The notes say the feature does not learn, so “still learning” would be a new false claim on top of the old one.
+
+The same message with a smiling icon, so the failure feels less frustrating. — An icon changes the mood, not the facts: it still claims to have tried to understand, and “try again” still leads nowhere.
+
+“No suggestions yet”, with search by type or branch on the same screen. — It describes what happened, claims no understanding, and gives the route that always works. “Try again” would repeat a step that cannot succeed, since the feature does not read requests.
+
+Now write your own wording for producing nothing useful in step 3, with the ordinary route on the same screen.
+
+</details>
+
+
 ### The wording for producing nothing useful
 
 Section: practice-plan. Stable action: write-cannot-wording.
@@ -3231,11 +3489,11 @@ Write your answer for “The reporting route, and the route to a person”. Use 
 
 Section: practice-plan. Stable action: write-accountable-owner.
 
-A role or a name. Reports nobody owns are collected and never read.
+A role, such as the coordinator; use roles rather than people’s names in this synced answer. Reports nobody owns are collected and never read.
 
 **Answer:** Who is accountable for reading reports
 
-A role or a name. Reports nobody owns are collected and never read.
+A role, such as the coordinator; use roles rather than people’s names in this synced answer. Reports nobody owns are collected and never read.
 
 
 ### How the interface says reports are read by a person
@@ -3255,20 +3513,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You have added a feedback button for when the feature gets it wrong. Is that failure design?
+When the feature has nothing useful to show, your design offers an empty panel and a “Tell us what went wrong” button. What is missing?
 
-- Yes, since it lets the team improve the feature.
-- No. It collects complaints while leaving the person with the same problem, no route forward and no correction.
-- Yes, provided the feedback is acted on.
+- A route to what the person came for, such as search, on the same screen.
+- Friendlier wording on the button, so people feel heard when it fails them.
+- A promise that the team reads all feedback and will improve the feature soon.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, since it lets the team improve the feature. — It may, eventually, for somebody else. It does nothing for the person in front of it now.
+A route to what the person came for, such as search, on the same screen. — Failure design gets the person to their goal by another route. The report control can stay, underneath the thing that actually helps.
 
-No. It collects complaints while leaving the person with the same problem, no route forward and no correction. — Failure design gives the person what they came for by another route. The report control can stay, underneath the thing that actually helps them.
+Friendlier wording on the button, so people feel heard when it fails them. — Warmer wording on a control that changes nothing for them still leaves them with nowhere to go.
 
-Yes, provided the feedback is acted on. — Acting on it still happens later and elsewhere.
+A promise that the team reads all feedback and will improve the feature soon. — Improvement happens later and for somebody else; the person in front of the empty panel is still stuck.
 
 Improve: Put the ordinary route into your empty state in step 3, above the feedback control. Record the change in step 5.
 
@@ -3285,20 +3543,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Which of the three failures is most dangerous?
+Of the three failures — confidently wrong, cannot answer, harmful — which gives the person the least warning?
 
-- Confidently wrong, because the person has no signal that anything is wrong.
-- Harmful output, because of the damage it can do.
-- Cannot answer, because it makes the feature useless.
+- Cannot answer: an empty result gives no hint that something has gone wrong.
+- Harmful output: it can do the most damage, so it is the one nobody notices.
+- Confidently wrong: it looks exactly like a correct answer, so nothing warns them.
 
 <details>
 <summary>After your attempt</summary>
 
-Confidently wrong, because the person has no signal that anything is wrong. — Not answering is visible and harmful output is obvious. A wrong answer that looks like a right one needs structural protection: the basis shown, never the only route, full details before commitment.
+Cannot answer: an empty result gives no hint that something has gone wrong. — An empty result is visible: the person can see nothing came back, even if the wording is poor.
 
-Harmful output, because of the damage it can do. — It is the most serious when it happens and the most visible, which is why it can be reported and addressed.
+Harmful output: it can do the most damage, so it is the one nobody notices. — Harmful output can be the most serious, and it is usually noticed, which is why a report route and a person can help.
 
-Cannot answer, because it makes the feature useless. — It is the most common and the easiest to design for.
+Confidently wrong: it looks exactly like a correct answer, so nothing warns them. — Not answering is visible and harmful output is usually obvious. A wrong answer that looks right needs structural protection: the basis shown, never the only route, full details before any commitment.
 
 Improve: Write the structural protection in step 2 and confirm nothing irreversible follows a suggestion. Record the change in step 5.
 
@@ -3317,18 +3575,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your error wording says “Sorry, I misunderstood what you were looking for.” What is wrong with it?
 
-- It should say which part was misunderstood.
-- It claims a mind. Misunderstood implies an attempt to understand, which sets an expectation nothing can meet.
-- Nothing; a friendly tone helps in a failure.
+- It claims a mind: “misunderstood” implies an attempt to understand.
+- It should name which part of the request was misunderstood, so the person can rephrase it.
+- Nothing much: a friendly apology softens the failure, and the tone is warm.
 
 <details>
 <summary>After your attempt</summary>
 
-It should say which part was misunderstood. — That would make the claim more specific rather than removing it.
+It claims a mind: “misunderstood” implies an attempt to understand. — Wording teaches people what the system is. Claiming comprehension sets an expectation nothing can meet, so the next failure feels like a betrayal. “No match for that — you can search by type or branch” describes what happened and gives a route.
 
-It claims a mind. Misunderstood implies an attempt to understand, which sets an expectation nothing can meet. — The next failure then feels like a betrayal rather than a limitation. Wording that describes what happened, without claiming intent, ages far better.
+It should name which part of the request was misunderstood, so the person can rephrase it. — That makes the claim of understanding more specific instead of removing it.
 
-Nothing; a friendly tone helps in a failure. — A friendly tone helps. Claiming comprehension is a separate thing that the tone is carrying.
+Nothing much: a friendly apology softens the failure, and the tone is warm. — A friendly tone helps; claiming comprehension is a separate thing the tone is carrying.
 
 Improve: Remove anything implying understanding or intention in step 5 and record what you changed.
 
@@ -3524,15 +3782,41 @@ Sorry, I misunderstood. I thought you meant. Let me try again. All three claim a
 Sorry, I misunderstood. I thought you meant. Let me try again. All three claim a mind.
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A town’s recycling-day app suggests which bin an item goes in, from a photo. A model-drafted error message reads: “Oops! I’m not sure what that is — try another photo!” The council’s notes say the app recognises only 40 common items, a wrong answer can lead to a missed collection, and the printed A–Z bin guide covers everything.
+
+**Task:** Decide what the error state should say and offer instead, and explain your reasoning.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps the friendly “I’m not sure” or adds a feedback button; offers “try another photo”, a route that cannot work for items outside the 40.
+- Adequate: Says plainly that the item is not one the app recognises and offers the A–Z guide or a search on the same screen; removes wording that claims the app thinks or is unsure.
+- Strong: As adequate, and treats a confident wrong answer as the bigger risk — showing what a suggestion is based on and the guide link even when it does answer — and names who reads reports of wrong bin advice.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -3563,7 +3847,7 @@ Cannot answer: A legitimate outcome that needs its own design. Left undesigned i
 Harmful output: Something offensive, dangerous or damaging. It needs a route to a person rather than a dismissal.
 
 Supplied practice material (fictional or labelled practice, not my research):
-Made-up example. Listing the failures of a tool-library suggestion feature, and listing the ones I could fix. Suggests a tool that is out on loan, and suggests something from the wrong branch. Two failures, both fixable with better data.
+Supplied output (hand-written for practice; no model produced it). Asked for the message shown when there are no suggestions, it writes: “Sorry, I didn’t quite understand what you’re looking for. Please try again!” Source to check, the feature notes: it cannot interpret requests at all; it shows nothing when a member has borrowed fewer than two tools; search by type or branch always works.
 
 Activity: Give me one hand-written model output from the supplied case. Ask me to find an unsupported claim, choose a source that could verify it and rewrite the claim with an honest boundary.
 
@@ -3573,7 +3857,7 @@ When the activity is finished, tell me to return to the course answer called “
 
 **Come back to the course:** Return to “Confidently wrong, cannot answer, harmful output: what each would look like here”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Confidently wrong, cannot answer, harmful output: what each would look like here” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “Confidently wrong, cannot answer, harmful output: what each would look like here” and write one sentence in your own words.
 
 </details>
 <details>
@@ -3694,7 +3978,7 @@ AI-assisted product work starts with a bounded task, checks every important outp
 - **Long tail:** The unusual requests, each rare, together common. They are where free text earns its place.
 - **Example prompt:** The sample request shown beside the box. It is how people learn what is possible, and without it a text box is a guessing game.
 
-**Quick example.** Made-up example. Designing tool-finding as a conversation for a tool library, and watching somebody use it. A text box with the line “Ask me anything about tools”, and a model interpreting the request. It handled complicated sentences impressively.
+**Quick example.** Supplied output (hand-written for practice; no model produced it). Asked how members should find tools, it recommends: “Replace the filters with a chat box. Conversation is more natural for everyone, and 80% of users prefer chat.” Source to check, a fortnight of the library’s enquiry emails: most requests name a tool, a day and a branch; about one in ten describes an unusual job; no survey of preferences exists.
 
 The reader demonstrates and guides the task before asking for “The task, its common case, and an example of its long tail”.
 
@@ -3912,7 +4196,7 @@ Write your answer for “How many actions the common case takes”. Use the task
 
 Section: practice-plan. Stable action: step-4-brief.
 
-Both versions compared for a first-time user, a tenth-time user, and somebody typing on a phone.
+Both versions compared for a first-time user, a tenth-time user, somebody typing on a phone, and somebody less fluent in the interface language.
 
 - Compare both for a first-time user, a repeat user and someone typing on a phone.
 - Consider someone less comfortable in the interface language.
@@ -4115,32 +4399,43 @@ Write your answer for “Which is better for somebody typing on a phone”. Use 
 
 
 
+### Which is better for somebody less comfortable in the interface language, and why
+
+Section: practice-plan. Stable action: write-less-fluent.
+
+Composing a request is harder than recognising an option for many people writing in a second language. Say what each version asks of them.
+
+**Answer:** Which is better for somebody less comfortable in the interface language, and why
+
+Composing a request is harder than recognising an option for many people writing in a second language. Say what each version asks of them.
+
+
 ### Check your reasoning · 1 of 3
 
 Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Is conversation more natural than a form?
+A colleague argues a chat box is “more natural” than filters for finding a tool. When is that true?
 
-- Yes for open requests, no for precise ones.
-- Yes, which is why chat interfaces keep appearing.
-- Between people who share context. With a system that has none, it produces guessing, retries and somebody learning your vocabulary by failing at it.
+- Whenever people are on a phone, since typing one sentence beats tapping through filters.
+- Almost always, which is why chat interfaces keep appearing in new products.
+- Between people who share context; without it, people are left guessing what to ask.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes for open requests, no for precise ones. — That is the useful version of the answer, and it is about the request rather than about naturalness.
+Whenever people are on a phone, since typing one sentence beats tapping through filters. — On a phone, typing a sentence is usually slower than tapping three filters; composing costs more than choosing.
 
-Yes, which is why chat interfaces keep appearing. — They keep appearing because they are easy to build and look modern. Naturalness between people does not transfer to a system with no shared context.
+Almost always, which is why chat interfaces keep appearing in new products. — They keep appearing because they are easy to build and look modern; naturalness between people does not transfer to a system with no shared context.
 
-Between people who share context. With a system that has none, it produces guessing, retries and somebody learning your vocabulary by failing at it. — The first thing many people type is a request to find out what they can ask. A set of filters answers that question by existing.
+Between people who share context; without it, people are left guessing what to ask. — The first thing many people type into a box is a request to find out what they can ask. A set of filters answers that by existing.
 
 Improve: Compare both versions for a first-time user in step 4, naming what each has to do. Record the change in step 5.
 
 Check again: Your comparison covers somebody who does not know what is possible.
 
-Answers to revisit: first-time, repeat-user, on-a-phone, improvement-made
+Answers to revisit: first-time, repeat-user, on-a-phone, less-fluent, improvement-made
 
 </details>
 
@@ -4151,20 +4446,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Your conversational version handled a complicated request beautifully. Does that settle it?
+In your comparison, the chat version handled one long, unusual request well; the common request is a tool, a day and a branch. What decides the primary route?
 
-- No. The question is what most people are doing most of the time, and that is usually three choices they already know.
-- Yes, if the common case is also fast.
-- Yes, since it handles both the simple and the complex.
+- The impressive case, because a design that handles the hardest request handles the rest.
+- What most people do most of the time: three known choices, which filters handle in three taps.
+- Whichever version the team built first, since it has had the most thought and testing.
 
 <details>
 <summary>After your attempt</summary>
 
-No. The question is what most people are doing most of the time, and that is usually three choices they already know. — The impressive case was about one in ten. The common case is somebody typing three filters slowly, one message at a time, on a phone.
+The impressive case, because a design that handles the hardest request handles the rest. — Handling the hard case says nothing about how fast it handles the easy one, which is most of the volume.
 
-Yes, if the common case is also fast. — Worth checking, and on a phone the composition cost makes it rarely so.
+What most people do most of the time: three known choices, which filters handle in three taps. — The unusual request was about one in ten. The common case typed into a chat becomes three slow messages, one filter at a time, often on a phone.
 
-Yes, since it handles both the simple and the complex. — It handles the simple slowly, which is most of the volume.
+Whichever version the team built first, since it has had the most thought and testing. — Effort already spent is not evidence about which version serves people better.
 
 Improve: Count the actions for the common case in both designs, in step 3, and use the numbers in your comparison. Record the change in step 5.
 
@@ -4183,18 +4478,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You chose the structured version. What should you record?
 
-- That conversational interfaces are rarely the right choice.
-- Nothing; the comparison already made the case.
-- What the conversation did better, because a set of filters cannot express the long-tail request at all.
+- A note that chat interfaces are rarely right, so the question is not reopened.
+- Nothing further, because the action counts in the comparison already made the case.
+- What the chat did better, since filters cannot express the unusual request at all.
 
 <details>
 <summary>After your attempt</summary>
 
-That conversational interfaces are rarely the right choice. — That is the rule this lesson is trying to avoid producing.
+A note that chat interfaces are rarely right, so the question is not reopened. — That is the blanket rule this lesson is trying to avoid; the next task may be the open, long-tail kind.
 
-Nothing; the comparison already made the case. — The case for choosing is not the same as the record of what was given up.
+Nothing further, because the action counts in the comparison already made the case. — The case for choosing is not the record of what was given up, and the unusual request still needs somewhere to go.
 
-What the conversation did better, because a set of filters cannot express the long-tail request at all. — Recording it is what leads to the usual right answer: structure as the primary route with a text field for what it cannot express. Without it, the decision hardens into a rule against chat.
+What the chat did better, since filters cannot express the unusual request at all. — Recording it leads to the usual answer: structure as the primary route plus a text field for what it cannot express. Without it, the decision hardens into a rule against chat.
 
 Improve: Write what the rejected version did better in step 5, and consider whether the answer is both. Record the change.
 
@@ -4246,6 +4541,32 @@ Made-up example. Choosing between conversation and structure for tool-finding, a
 **Unknown:** Still unknown: whether anybody will use the text box at all. It is one line of the design that could be removed after a month of watching.
 
 
+### Try a supplied example
+
+Section: practice. Stable action: step-5-try.
+
+Supplied output (hand-written for practice; no model produced it). Asked how members should find tools, it recommends: “Replace the filters with a chat box. Conversation is more natural for everyone, and 80% of users prefer chat.” Source to check, a fortnight of the library’s enquiry emails: most requests name a tool, a day and a branch; about one in ten describes an unusual job; no survey of preferences exists.
+
+What should the decision record say about this recommendation?
+
+- Keep filters as the main route, add a text field for unusual jobs, and drop the unsourced 80%.
+- Follow it for members on phones, where a chat box avoids tapping through filters.
+- Follow it, since a chat box can handle the common request and the unusual one alike.
+
+<details>
+<summary>After your attempt</summary>
+
+Keep filters as the main route, add a text field for unusual jobs, and drop the unsourced 80%. — The enquiries say the common request is three known choices, which filters handle fastest, and that unusual jobs are real but rare. “More natural for everyone” and “80% prefer chat” have no source, so they do not enter the decision.
+
+Follow it for members on phones, where a chat box avoids tapping through filters. — On a phone, composing a sentence usually costs more than tapping three filters, which is the opposite of the claim.
+
+Follow it, since a chat box can handle the common request and the unusual one alike. — It can handle both, slowly for the common case, which is most of the volume; and the claims behind it are unsupported.
+
+Now record your own decision in step 5, with what the rejected version did better.
+
+</details>
+
+
 ### Your decision and the reasoning
 
 Section: practice. Stable action: write-decision.
@@ -4268,15 +4589,41 @@ There will be something. Recording it is what stops the decision hardening into 
 There will be something. Recording it is what stops the decision hardening into a rule.
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A swimming pool’s app lets people book a lane. A model-written proposal says to replace the timetable grid with a chat assistant “because conversation is more inclusive”. The pool’s notes say most bookings are the same weekly slot, many swimmers book on the poolside with wet hands, and a few ask unusual questions, such as whether a lane suits training with fins.
+
+**Task:** Decide which interface should be the main route and what, if anything, a chat is kept for, and explain your reasoning for each kind of swimmer.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Accepts “more inclusive” or “more natural” without checking the notes, and makes chat the main route for everyone.
+- Adequate: Keeps the grid, or a one-tap repeat booking, as the main route because most bookings are a repeated slot and typing with wet hands is hard; keeps a text box or chat for unusual questions such as fins.
+- Strong: As adequate, and names what the grid cannot express, counts taps for the weekly booking, and notes that “inclusive” needs checking for swimmers less fluent in the app’s language, for whom typing can be harder.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -4307,7 +4654,7 @@ Long tail: The unusual requests, each rare, together common. They are where free
 Example prompt: The sample request shown beside the box. It is how people learn what is possible, and without it a text box is a guessing game.
 
 Supplied practice material (fictional or labelled practice, not my research):
-Made-up example. Designing tool-finding as a conversation for a tool library, and watching somebody use it. A text box with the line “Ask me anything about tools”, and a model interpreting the request. It handled complicated sentences impressively.
+Supplied output (hand-written for practice; no model produced it). Asked how members should find tools, it recommends: “Replace the filters with a chat box. Conversation is more natural for everyone, and 80% of users prefer chat.” Source to check, a fortnight of the library’s enquiry emails: most requests name a tool, a day and a branch; about one in ten describes an unusual job; no survey of preferences exists.
 
 Activity: Give me one hand-written model output from the supplied case. Ask me to find an unsupported claim, choose a source that could verify it and rewrite the claim with an honest boundary.
 
@@ -4317,7 +4664,7 @@ When the activity is finished, tell me to return to the course answer called “
 
 **Come back to the course:** Return to “The task, its common case, and an example of its long tail”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The task, its common case, and an example of its long tail” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “The task, its common case, and an example of its long tail” and write one sentence in your own words.
 
 </details>
 <details>
@@ -4425,7 +4772,7 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 
 - The explanation wording, at the level of the person's decision
 - Two rejected versions with reasons
-- A prediction test with two people
+- A prediction test: two readers, or a labelled self-check
 - A note of any simplification and why it is honest
 
 ### Start here: in everyday words
@@ -4438,7 +4785,7 @@ AI-assisted product work starts with a bounded task, checks every important outp
 - **Reassurance:** Wording that makes somebody feel better without letting them predict or change anything. Most explanations of AI features are this.
 - **Technical version:** A description of the mechanism: signals, weights, ranking. Accurate, and almost nobody can act on it.
 
-**Quick example.** Made-up example. Explaining a tool-library suggestion feature, and explaining it accurately. A careful paragraph: the signals used, how recency was weighted, that dismissals adjusted a score. All true and rather good.
+**Quick example.** Supplied output (hand-written for practice; no model produced it). Asked to explain the suggestions to members, it writes: “Our AI learns your preferences over time to recommend the perfect tool.” Source to check, the actual rule: your three most borrowed tools, then the three most borrowed at your branch this month; a dismissed tool is hidden for 90 days.
 
 The reader demonstrates and guides the task before asking for “What an explanation is for, in your own words”.
 
@@ -4446,7 +4793,7 @@ The reader demonstrates and guides the task before asking for “What an explana
 
 Section: learn. Stable action: welcome.
 
-Write the explanation your AI feature gives, at the level a person needs to act, and test whether two people can predict its next output from it.
+Write the explanation your AI feature gives, at the level a person needs to act, and test whether a reader can predict its next output from it: two people, or a labelled self-check after a day’s gap.
 
 
 ### Explain at the level of the decision the person has to make
@@ -4572,6 +4919,32 @@ Made-up example. Explaining a tool-library suggestion feature, and explaining it
 **Unknown:** Still unknown: whether the explanation holds once the feature changes. It describes the current basis, and a change to that is a change to the wording.
 
 
+### Try a supplied example
+
+Section: practice-plan. Stable action: step-2-try.
+
+Supplied output (hand-written for practice; no model produced it). Asked to explain the suggestions to members, it writes: “Our AI learns your preferences over time to recommend the perfect tool.” Source to check, the actual rule: your three most borrowed tools, then the three most borrowed at your branch this month; a dismissed tool is hidden for 90 days.
+
+What should happen to this explanation?
+
+- Keep it, adding a line that suggestions improve the more a member borrows.
+- Keep it but cut “perfect”, since only that single word overclaims what the feature does.
+- Rewrite it from the rule: what it uses, and that dismissing hides a tool for 90 days.
+
+<details>
+<summary>After your attempt</summary>
+
+Keep it, adding a line that suggestions improve the more a member borrows. — “Improves the more you borrow” is the sentence that makes people think dismissals teach, and the rule does not learn.
+
+Keep it but cut “perfect”, since only that single word overclaims what the feature does. — “Perfect” is the loudest problem, not the only one: “learns your preferences” is the false claim, and it would stay.
+
+Rewrite it from the rule: what it uses, and that dismissing hides a tool for 90 days. — Checked against the rule, “learns your preferences over time” is false: it is a sort plus a 90-day hide. A reader of the rewrite can predict tomorrow’s suggestions and knows the lever.
+
+Now write your decision-level version in step 2, in at most two sentences: what it used, and what would change it.
+
+</details>
+
+
 ### The technical version, and why you reject it
 
 Section: practice-plan. Stable action: write-technical-version.
@@ -4616,14 +4989,16 @@ Example (made up): Suggested from tools you borrowed before and the times you us
 
 Section: practice-plan. Stable action: step-3-brief.
 
-Two people reading the chosen explanation and predicting the next output, with whether each knew how to change it.
+Readers — two people, or you after a day’s gap, labelled as a self-check — predicting the next output from the explanation, and whether they knew how to change it.
 
-- Show the chosen explanation to two people.
+- Show the chosen explanation to two people, or leave it a day and test yourself, labelled as a self-check.
 - Ask each what the system will suggest next and how to change it.
 
 **Start here:** Show the wording alone, with no screens, and ask what they think will come next.
 
-**Enough:** You wrote what they said rather than whether they got it right.
+**Enough:** You recorded what was predicted, not only whether it was right, and labelled a self-check as one.
+
+**Self-check:** Predicting from your own wording after a day away, when nobody else is available. It catches unclear wording; it is not evidence about other readers, and it is labelled that way.
 
 **The prediction test:** Asking somebody what the system will do next after reading only the explanation. It is the only test that distinguishes an explanation from reassurance.
 
@@ -4790,31 +5165,31 @@ Now test your own chosen version on two people and record what they predicted.
 
 Section: practice-plan. Stable action: write-who-tested.
 
-Two people is enough. Alone: leave it a day and predict from the wording without looking at the design.
+Describe readers by role, never by name (for example, a friend who has never used a tool library). Two people is enough. Alone: leave it a day, predict from the wording without looking at the design, and label it a self-check.
 
 **Answer:** Who read it, or how you tested it alone
 
-Two people is enough. Alone: leave it a day and predict from the wording without looking at the design.
+Describe readers by role, never by name (for example, a friend who has never used a tool library). Two people is enough. Alone: leave it a day, predict from the wording without looking at the design, and label it a self-check.
 
 
-### What each of them said the system would suggest next
+### What each reader predicted the system would suggest next, or what you predicted on the self-check
 
 Section: practice-plan. Stable action: write-their-predictions.
 
-Write your answer for “What each of them said the system would suggest next”. Use the task instructions below to decide what to include.
+A summary without names. Keep anybody’s exact words in a private note with a date to delete it. A self-check tests the wording, not what a fresh reader would think.
 
-**Answer:** What each of them said the system would suggest next
+**Answer:** What each reader predicted the system would suggest next, or what you predicted on the self-check
+
+A summary without names. Keep anybody’s exact words in a private note with a date to delete it. A self-check tests the wording, not what a fresh reader would think.
 
 
-
-
-### Whether each of them knew how to change it
+### Whether each reader, or you on the self-check, knew how to change it
 
 Section: practice-plan. Stable action: write-how-to-change.
 
-Write your answer for “Whether each of them knew how to change it”. Use the task instructions below to decide what to include.
+Write your answer for “Whether each reader, or you on the self-check, knew how to change it”. Use the task instructions below to decide what to include.
 
-**Answer:** Whether each of them knew how to change it
+**Answer:** Whether each reader, or you on the self-check, knew how to change it
 
 
 
@@ -4863,20 +5238,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Should the explanation describe how the model works?
+A teammate drafts an explanation describing the ranking signals and their weights, accurately. What does it miss?
 
-- Yes, transparency means explaining the mechanism.
-- Yes, for readers who want the detail.
-- Almost nobody wants that and it does not help them act. What helps is what it used and what would change the result.
+- A diagram of the signals, so readers can follow the weighting more easily.
+- What it used and what would change the result, which is what a reader can act on.
+- Nothing important: an accurate account of the mechanism is what transparency means.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, transparency means explaining the mechanism. — Transparency that nobody can act on is a different value from the one this lesson is about.
+A diagram of the signals, so readers can follow the weighting more easily. — A clearer picture of the mechanism is still the mechanism; it does not tell a reader what comes next or how to change it.
 
-Yes, for readers who want the detail. — Worth having available. It is not what the interface explanation is for.
+What it used and what would change the result, which is what a reader can act on. — Understanding the mechanism and predicting the output are different. Two people can follow a description of ranking signals perfectly and still not know what they will be shown tomorrow.
 
-Almost nobody wants that and it does not help them act. What helps is what it used and what would change the result. — Understanding the mechanism and predicting the output are different. Two people can follow a description of ranking signals perfectly and still not know what they will be shown tomorrow.
+Nothing important: an accurate account of the mechanism is what transparency means. — Transparency nobody can act on is a different value from the one this lesson is about.
 
 Improve: Cut your chosen version in step 2 to what it used and what would change it. Record the change in step 5.
 
@@ -4895,22 +5270,22 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 How do you know whether your explanation is any good?
 
-- Ask two people to predict the next output from it, and whether they know how to change it.
-- Ask whether people find it clear.
-- Check it is accurate about the system.
+- A reader predicts the next output from it alone, and can say how to change it.
+- People who read it say it is clear and that they understood every word of it.
+- It is accurate about the system, checked line by line against how ranking works.
 
 <details>
 <summary>After your attempt</summary>
 
-Ask two people to predict the next output from it, and whether they know how to change it. — It is the only test that separates an explanation from reassurance. Both halves matter: prediction without a lever leaves somebody informed and stuck.
+A reader predicts the next output from it alone, and can say how to change it. — Prediction plus a lever separates an explanation from reassurance. Two readers are the stronger test; a self-check after a gap tests the wording rather than a fresh reader, and is labelled that way.
 
-Ask whether people find it clear. — People find reassuring wording very clear. Clarity is not the property being tested.
+People who read it say it is clear and that they understood every word of it. — Reassuring wording is often rated very clear. Clarity is not the property being tested.
 
-Check it is accurate about the system. — Accuracy is necessary and it is what the technical version had.
+It is accurate about the system, checked line by line against how ranking works. — Accuracy is necessary, and the technical version had it too; it still let nobody predict.
 
-Improve: Run the prediction test in step 3 and write what they actually said. Record the change in step 5.
+Improve: Run the prediction test in step 3 — two readers, or a labelled self-check after a gap — and write what was predicted. Record the change in step 5.
 
-Check again: You have two predictions recorded in their own words.
+Check again: You have predictions recorded, from two readers or a labelled self-check.
 
 Answers to revisit: who-tested, their-predictions, how-to-change, improvement-made
 
@@ -4925,18 +5300,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your two-sentence explanation leaves out how recency is weighted. Is that dishonest?
 
-- Yes, unless the detail is available elsewhere.
-- Not if it changes no prediction anybody would make. An omission is dishonest when it produces a confident wrong answer.
-- Yes, anything left out is a form of concealment.
+- Not if the full weighting is published on a help page for those who want it.
+- Only if leaving it out would make someone’s prediction confidently wrong.
+- It is, because anything left out of an explanation is a form of concealment.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, unless the detail is available elsewhere. — Having it elsewhere is good practice and not what decides whether the short version misleads.
+Not if the full weighting is published on a help page for those who want it. — Publishing it elsewhere is good practice and does not decide whether the short version misleads.
 
-Not if it changes no prediction anybody would make. An omission is dishonest when it produces a confident wrong answer. — The test is the prediction rather than completeness. Listing every omission and checking each against that test is what makes the simplification defensible.
+Only if leaving it out would make someone’s prediction confidently wrong. — The test is the prediction, not completeness. List every omission and check each one against it; that is what makes the simplification defensible.
 
-Yes, anything left out is a form of concealment. — By that standard no explanation under a page is honest, and nobody reads a page.
+It is, because anything left out of an explanation is a form of concealment. — By that standard no explanation under a page is honest, and almost nobody reads a page.
 
 Improve: List your omissions in step 4 and check each against the prediction test. Record the change.
 
@@ -5012,15 +5387,41 @@ The explanation describes the current basis. A change to that is a change to thi
 The explanation describes the current basis. A change to that is a change to this sentence.
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A bus-timetable app shows a “Suggested stop” for each journey. A model-drafted explanation says: “Our intelligent system understands your travel needs.” The developer’s note says the suggestion is the stop you boarded at most often in the last 30 days at that time of day, and choosing a different stop twice changes it.
+
+**Task:** Decide what the explanation should say instead, and explain how a rider could predict and change the suggestion from your version.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps “understands your travel needs”, or explains the mechanism in technical terms; says nothing a rider could use to predict tomorrow’s suggestion.
+- Adequate: Writes one or two sentences from the note, such as “Suggested because you usually board here at this time. Choose another stop twice to change it”, so a rider can predict and change it.
+- Strong: As adequate, and lists what it leaves out (the 30-day window) with why that omission would not mislead, and would ask two riders to predict tomorrow’s stop, or label a self-check, to test it.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -5043,7 +5444,7 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: Saying what the system did
-What I am trying to do: Write the explanation your AI feature gives, at the level a person needs to act, and test whether two people can predict its next output from it.
+What I am trying to do: Write the explanation your AI feature gives, at the level a person needs to act, and test whether a reader can predict its next output from it: two people, or a labelled self-check after a day’s gap.
 
 Key idea or terms:
 Actionable accuracy: An explanation that is right at the level somebody has to act on. It matters more than being right about the mechanism.
@@ -5051,7 +5452,7 @@ Reassurance: Wording that makes somebody feel better without letting them predic
 Technical version: A description of the mechanism: signals, weights, ranking. Accurate, and almost nobody can act on it.
 
 Supplied practice material (fictional or labelled practice, not my research):
-Made-up example. Explaining a tool-library suggestion feature, and explaining it accurately. A careful paragraph: the signals used, how recency was weighted, that dismissals adjusted a score. All true and rather good.
+Supplied output (hand-written for practice; no model produced it). Asked to explain the suggestions to members, it writes: “Our AI learns your preferences over time to recommend the perfect tool.” Source to check, the actual rule: your three most borrowed tools, then the three most borrowed at your branch this month; a dismissed tool is hidden for 90 days.
 
 Activity: Give me one hand-written model output from the supplied case. Ask me to find an unsupported claim, choose a source that could verify it and rewrite the claim with an honest boundary.
 
@@ -5061,7 +5462,7 @@ When the activity is finished, tell me to return to the course answer called “
 
 **Come back to the course:** Return to “What an explanation is for, in your own words”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “What an explanation is for, in your own words” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “What an explanation is for, in your own words” and write one sentence in your own words.
 
 </details>
 <details>
@@ -5105,19 +5506,19 @@ Adequate evidence: A technical and a vague version with reasons for rejection.
 
 Repair: Write the two rejected versions out; the contrast is what shows the choice was made. Recheck: The three versions.
 
-**A prediction test was run with two people**
+**A prediction test was run and recorded**
 
-Adequate evidence: Two people's predictions recorded, with whether they were correct.
+Adequate evidence: Predictions recorded with whether they were right: from two readers, or from a self-check after a gap, labelled as such.
 
 0 — Not tested.
 
-1 — Tested with one person or without recording predictions.
+1 — Tested without recording what was predicted.
 
-2 — Two predictions recorded and assessed.
+2 — Predictions recorded and assessed, from two readers or a labelled self-check.
 
-3 — As adequate, and a wrong prediction led to a rewrite.
+3 — As adequate, and a wrong prediction led to a rewrite; a self-check also names what only a fresh reader could show.
 
-Repair: Show the explanation to two people and ask what the system will do next. Recheck: The prediction results.
+Repair: Show the explanation to two people and ask what the system will do next; alone, leave it a day and predict from the wording only, labelled as a self-check. Recheck: The prediction results.
 
 **Omissions are listed and checked for misleading effect**
 
@@ -5142,7 +5543,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 - The explanation is at the level of the person's decision
 - Two alternative versions were written and rejected
-- A prediction test was run with two people
+- A prediction test was run and recorded
 - Omissions are listed and checked for misleading effect
 
 <details>
@@ -5182,7 +5583,7 @@ AI-assisted product work starts with a bounded task, checks every important outp
 - **Marginal:** Makes it slightly better. It is the category most collection falls into, and the one nobody examines.
 - **Disclosure:** What the person meets in the interface at the moment the feature starts. It is where somebody is actually informed.
 
-**Quick example.** Made-up example. Disclosing what a tool-library suggestion feature uses, and putting it in the right document. Updated the privacy policy with a clear, accurate paragraph about the suggestion feature and what it uses. Reviewed, approved, published.
+**Quick example.** Supplied output (hand-written for practice; no model produced it). Asked for the sentence shown when suggestions first appear, it writes: “Suggestions use only the tools you have borrowed.” Source to check, the data specification: the feature uses tools borrowed in the last twelve months and suggestions you dismissed, nothing else, and drops anything older than twelve months.
 
 The reader demonstrates and guides the task before asking for “The data the feature genuinely needs to be useful”.
 
@@ -5257,7 +5658,7 @@ The data the feature genuinely needs, with anything marginal removed and its cos
 
 **Start here:** List what it needs, then remove one thing and ask how much worse it actually gets.
 
-**Enough:** Something is on the removed list with its cost written beside it.
+**Enough:** Each item kept has a reason, and anything removed as marginal has its cost written beside it.
 
 **Genuinely needs:** What the feature cannot work without. Everything else improves it, and improvement is a weak reason to hold a record of somebody.
 
@@ -5325,6 +5726,32 @@ Made-up example. Disclosing what a tool-library suggestion feature uses, and put
 **Trade-off:** A sentence in the interface is one more thing on a screen, and it has to be kept in step with what the feature actually uses.
 
 **Unknown:** Still unknown: whether people read it either. Two mentioned it, which is two more than ever mentioned the policy.
+
+
+### Try a supplied example
+
+Section: practice-plan. Stable action: step-2-try.
+
+Supplied output (hand-written for practice; no model produced it). Asked for the sentence shown when suggestions first appear, it writes: “Suggestions use only the tools you have borrowed.” Source to check, the data specification: the feature uses tools borrowed in the last twelve months and suggestions you dismissed, nothing else, and drops anything older than twelve months.
+
+Is this disclosure ready to ship?
+
+- It needs a link to the privacy policy added; the sentence itself can stay.
+- It is ready: short and accurate enough, and the policy can carry the details.
+- It needs dismissals and the twelve-month limit added, or it misstates what is used.
+
+<details>
+<summary>After your attempt</summary>
+
+It needs a link to the privacy policy added; the sentence itself can stay. — A link does not fix a sentence that misstates what is used.
+
+It is ready: short and accurate enough, and the policy can carry the details. — “Only” makes it a false statement, and the details it leaves out are exactly what somebody deciding would want.
+
+It needs dismissals and the twelve-month limit added, or it misstates what is used. — “Only the tools you have borrowed” leaves out dismissals, so it is false as written, and the twelve-month limit is the retention fact people can predict from: “These use tools you borrowed in the last twelve months and anything you dismissed. Nothing else.”
+
+Now write your own disclosure in step 2: what is used, for what, for how long, and that there is nothing else.
+
+</details>
 
 
 ### The sentence shown when the feature first appears
@@ -5637,20 +6064,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Your privacy policy covers what the feature collects. Is that the disclosure?
+The privacy policy accurately lists what the suggestion feature uses. Is that enough disclosure?
 
-- No. Nobody reads it, so what people believe is whatever they assume, and they assume more than is true.
-- Yes, if it is written clearly.
-- Yes, that is what a privacy policy is for.
+- It is enough, because the policy is the document that legally covers data use.
+- The interface needs a sentence when the feature starts; few people read the policy.
+- It is enough if the policy is in plain language and linked from the footer of every page.
 
 <details>
 <summary>After your attempt</summary>
 
-No. Nobody reads it, so what people believe is whatever they assume, and they assume more than is true. — The disclosure that informs anybody is the sentence in the interface at the moment the feature starts. A member assuming it uses everything the library knows is wrong in the expensive direction.
+It is enough, because the policy is the document that legally covers data use. — It may be what covers the organisation legally; it is not where people find out, and design decides what they actually believe.
 
-Yes, if it is written clearly. — Clarity does not cause it to be read.
+The interface needs a sentence when the feature starts; few people read the policy. — The disclosure that informs anybody is the one met at the moment the feature starts. A member assuming it uses everything the library knows is wrong in the expensive direction.
 
-Yes, that is what a privacy policy is for. — It is what it is for legally. It is not where anybody finds out.
+It is enough if the policy is in plain language and linked from the footer of every page. — Plain language helps whoever opens it; a footer link does not cause it to be read.
 
 Improve: Write the interface sentence in step 2 and say when it appears. Record the change in step 5.
 
@@ -5669,18 +6096,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Collecting what people looked at but did not borrow would improve suggestions slightly. Should you?
 
-- Yes, if it is disclosed and deletable.
-- Yes, since it is behaviour on your own product.
-- No. A marginal improvement is a weak reason to hold a record of what somebody considered and decided against.
+- Collect it, as long as it is disclosed clearly and people can delete it themselves.
+- Collect it, because browsing on your own product is behaviour you are entitled to use.
+- Leave it out: a slight gain is a weak reason to record what people considered and declined.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, if it is disclosed and deletable. — Controls make it optional. They do not make a marginal gain proportionate to the record.
+Collect it, as long as it is disclosed clearly and people can delete it themselves. — Disclosure and deletion make it optional; they do not make a slight gain proportionate to the record.
 
-Yes, since it is behaviour on your own product. — Being available is not a reason. The test is whether the improvement justifies the record.
+Collect it, because browsing on your own product is behaviour you are entitled to use. — Being available is not a reason. The test is whether the improvement justifies the record.
 
-No. A marginal improvement is a weak reason to hold a record of what somebody considered and decided against. — It is also the thing people assume is happening and dislike most. Refusing it, with the cost to the feature named, is a decision you can defend.
+Leave it out: a slight gain is a weak reason to record what people considered and declined. — It is also what people most often assume is happening and dislike. Refusing it, with the cost to the feature named, is a decision you can defend.
 
 Improve: Write your two refusals in step 4 with what the feature loses. Record the change in step 5.
 
@@ -5699,18 +6126,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Somebody deletes everything the feature holds about them. What must the interface say?
 
+- Nothing beyond a confirmation, because deletion should stay simple and quick.
 - What the feature will do afterwards, so the choice is informed rather than frightening.
-- Nothing; deletion should be simple and unqualified.
-- That the deletion is permanent.
+- That deletion is permanent and cannot be undone, so they should be sure first.
 
 <details>
 <summary>After your attempt</summary>
 
-What the feature will do afterwards, so the choice is informed rather than frightening. — Suggestions returning to the most borrowed tools this month is a fine outcome and nobody knows it without being told. An unexplained delete control gets used less than it should be and trusted less than it deserves.
+Nothing beyond a confirmation, because deletion should stay simple and quick. — Simple and uninformed is how people either avoid it or regret it.
 
-Nothing; deletion should be simple and unqualified. — Simple and uninformed is how people either avoid it or regret it.
+What the feature will do afterwards, so the choice is informed rather than frightening. — Suggestions returning to the month’s most borrowed tools is a fine outcome, and nobody knows it unless told. An unexplained delete gets used less than it should and trusted less than it deserves.
 
-That the deletion is permanent. — True and about the data rather than about what they will experience.
+That deletion is permanent and cannot be undone, so they should be sure first. — True about the data, and it says nothing about what they will experience next, which is what they are deciding.
 
 Improve: State the behavioural consequence of deletion in step 3, in the interface. Record the change in step 5.
 
@@ -5750,15 +6177,41 @@ Write your answer for “The line recording that legal requirements differ and h
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A recipe app adds “dinner ideas”. A model-drafted disclosure reads: “Ideas are based on your saved recipes.” The specification says ideas use saved recipes, recipes viewed for more than a minute and the shopping list, all kept for 18 months. The product manager also wants to add the user’s location “to suggest seasonal dishes”.
+
+**Task:** Decide what the disclosure should say and whether to collect location, and explain your reasons.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Ships the sentence as drafted or moves the detail into the privacy policy; adds location because it might help.
+- Adequate: Rewrites the disclosure to name all three sources and the 18-month period and to say there is nothing else; refuses location, because the date already gives the season and the gain is slight.
+- Strong: As adequate, and questions whether one-minute views and 18 months are needed at all, names what the feature loses without location, and adds see-and-delete with what deleting changes.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -5789,7 +6242,7 @@ Marginal: Makes it slightly better. It is the category most collection falls int
 Disclosure: What the person meets in the interface at the moment the feature starts. It is where somebody is actually informed.
 
 Supplied practice material (fictional or labelled practice, not my research):
-Made-up example. Disclosing what a tool-library suggestion feature uses, and putting it in the right document. Updated the privacy policy with a clear, accurate paragraph about the suggestion feature and what it uses. Reviewed, approved, published.
+Supplied output (hand-written for practice; no model produced it). Asked for the sentence shown when suggestions first appear, it writes: “Suggestions use only the tools you have borrowed.” Source to check, the data specification: the feature uses tools borrowed in the last twelve months and suggestions you dismissed, nothing else, and drops anything older than twelve months.
 
 Activity: Give me one hand-written model output from the supplied case. Ask me to find an unsupported claim, choose a source that could verify it and rewrite the claim with an honest boundary.
 
@@ -5799,7 +6252,7 @@ When the activity is finished, tell me to return to the course answer called “
 
 **Come back to the course:** Return to “The data the feature genuinely needs to be useful”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The data the feature genuinely needs to be useful” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “The data the feature genuinely needs to be useful” and write one sentence in your own words.
 
 </details>
 <details>
@@ -5907,7 +6360,7 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 
 - A definition of good in a person's terms
 - A stated preference between false and missed suggestions
-- An evaluation method using people, with counts
+- An evaluation method using people, with counts, or a labelled self-pilot and dated gap
 - A list of what cannot be evaluated at your scale
 
 ### Start here: in everyday words
@@ -5920,7 +6373,7 @@ AI-assisted product work starts with a bounded task, checks every important outp
 - **Observable:** Something you could watch or ask about, in a session. It is what turns a definition into an evaluation.
 - **A wrong suggestion:** Something clearly irrelevant, visible to the person. It costs trust immediately.
 
-**Quick example.** Made-up example. Deciding what good means for tool-library suggestions, and using the model’s number. An accuracy figure. The suggestions matched what people went on to borrow 62 per cent of the time, which sounded respectable.
+**Quick example.** Supplied output (hand-written for practice; no model produced it). Asked whether the suggestion feature is working, it replies: “Yes. Suggestions match the next tool borrowed 62% of the time, well above the industry benchmark of 40%.” Source to check: the 62% comes from your own log; no benchmark is named, and the log cannot say whether anyone found a suggestion useful.
 
 The reader demonstrates and guides the task before asking for “What a person would say if the feature was working well”.
 
@@ -6000,6 +6453,32 @@ What a person would say if the feature worked well, turned into something observ
 **Good in a person’s terms:** What somebody would notice and say. It is a different question from how often a model matched a label.
 
 **Observable:** Something you could watch or ask about, in a session. It is what turns a definition into an evaluation.
+
+
+### Try a supplied example
+
+Section: practice-plan. Stable action: step-1-try.
+
+Supplied output (hand-written for practice; no model produced it). Asked whether the suggestion feature is working, it replies: “Yes. Suggestions match the next tool borrowed 62% of the time, well above the industry benchmark of 40%.” Source to check: the 62% comes from your own log; no benchmark is named, and the log cannot say whether anyone found a suggestion useful.
+
+What should your definition of good do with this answer?
+
+- Use it once the benchmark is confirmed, since a comparison makes the figure meaningful.
+- Set it aside: a match rate is not usefulness, and the 40% benchmark has no source.
+- Use 62% as the target, since it is measured on your own feature and members.
+
+<details>
+<summary>After your attempt</summary>
+
+Use it once the benchmark is confirmed, since a comparison makes the figure meaningful. — A confirmed benchmark would make the match rate comparable; it still would not make matching the same as helping.
+
+Set it aside: a match rate is not usefulness, and the 40% benchmark has no source. — Matching the next borrow rewards suggesting what people were going to borrow anyway. Good, in a person’s terms, is closer to “something I would consider and had not thought of”, and the benchmark is an unsourced number.
+
+Use 62% as the target, since it is measured on your own feature and members. — It is measured on your feature, and it measures agreement with a label, not whether anyone was helped.
+
+Now write good in a person’s words in step 1, then turn it into something you could observe.
+
+</details>
 
 
 ### What a person would say if the feature was working well
@@ -6323,14 +6802,16 @@ Counts, with the number of people. Not rates.
 
 Section: practice-plan. Stable action: step-4-brief.
 
-A small version actually run with two or three people using scripted outputs, with counts and anything surprising.
+A small version run with two or three people using scripted outputs, with counts — or a labelled self-pilot and a dated note of who could not be reached.
 
-- Run it with two or three people using scripted outputs.
+- Run it with two or three people using scripted outputs, or self-pilot the sheet and date who could not be reached.
 - Report counts, not rates.
 
 **Start here:** Write the suggestion sets by hand, including two you expect to be marked irrelevant.
 
-**Enough:** You have counts from real people rather than your own judgements.
+**Enough:** Counts come only from other people; a self-pilot reports what it showed about the sheet, never counts.
+
+**Self-pilot:** Running the session on yourself when nobody is available. It shows whether the sheet and categories work; it is not an evaluation of the feature and reports no counts.
 
 **Scripted outputs:** Suggestion sets written by hand. They are better than generated ones here, because you can include the failures you need to see judged.
 
@@ -6360,37 +6841,50 @@ Made-up example. Running a small evaluation of tool-library suggestions, and run
 **Unknown:** Still unknown: whether two in ten is the right proportion. It is what a rough version of the feature produced, and the effect of ordering suggests the number matters as much as the proportion.
 
 
-### Who you ran it with, and what outputs you used
+### Did your small version run with other people?
+
+Section: practice-plan. Stable action: write-run-status.
+
+Choose the option that honestly describes your work.
+
+**Answer:** Did your small version run with other people? (Yes: two or three people judged the scripted sets / Not yet: self-pilot only, with a dated note of who could not be reached)
+
+
+
+
+### Who took part, by role not name, and which scripted sets you used, or who you tried to reach and when
 
 Section: practice-plan. Stable action: write-ran-with.
 
-Two or three people and scripted outputs is a complete answer. Write the suggestion sets by hand.
+Two or three people and hand-written suggestion sets is a complete answer. With nobody available, mark your own trial run of the marking sheet as a self-pilot and give the date and roles of those you could not reach.
 
-**Answer:** Who you ran it with, and what outputs you used
+**Answer:** Who took part, by role not name, and which scripted sets you used, or who you tried to reach and when
 
-Two or three people and scripted outputs is a complete answer. Write the suggestion sets by hand.
+Two or three people and hand-written suggestion sets is a complete answer. With nobody available, mark your own trial run of the marking sheet as a self-pilot and give the date and roles of those you could not reach.
 
 
-### The counts
+### The counts, with the number of people
 
 Section: practice-plan. Stable action: write-counts.
 
-Write your answer for “The counts”. Use the task instructions below to decide what to include.
+Counts only, no names. A self-pilot produces no counts about other people.
 
-**Answer:** The counts
+**Answer:** The counts, with the number of people
+
+Required only when run-status is Yes: two or three people judged the scripted sets. Otherwise leave participant evidence empty.
+
+Counts only, no names. A self-pilot produces no counts about other people.
 
 
-
-
-### Anything that surprised you
+### Anything that surprised you, in the sessions or the self-pilot
 
 Section: practice-plan. Stable action: write-surprised.
 
-Write your answer for “Anything that surprised you”. Use the task instructions below to decide what to include.
+Describe what happened without names. Keep raw session notes in a private file with a date to delete them.
 
-**Answer:** Anything that surprised you
+**Answer:** Anything that surprised you, in the sessions or the self-pilot
 
-
+Describe what happened without names. Keep raw session notes in a private file with a date to delete them.
 
 
 ### Check your reasoning · 1 of 3
@@ -6401,18 +6895,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your suggestions match what people go on to borrow 62 per cent of the time. Does the feature work?
 
-- Yes, 62 per cent is a reasonable hit rate.
-- Unknown. Somebody who always borrows the same sander produces a high score and gets no value from being told about it.
-- Yes, if people are also tapping the suggestions.
+- It works if members also tap the suggestions often enough to show interest.
+- Unknown: a member who always borrows the same sander scores a match and learns nothing.
+- It works: 62 per cent is a respectable hit rate for any recommendation feature.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, 62 per cent is a reasonable hit rate. — A reasonable hit rate on a target that includes everything the person was going to do anyway.
+It works if members also tap the suggestions often enough to show interest. — Taps move with placement and wording, and a tap is not a judgement that the suggestion was useful.
 
-Unknown. Somebody who always borrows the same sander produces a high score and gets no value from being told about it. — Accuracy measures how often the model matched a label. Whether the feature helped is a separate question, and a definition of good in a person’s terms usually rewards the opposite of what accuracy does.
+Unknown: a member who always borrows the same sander scores a match and learns nothing. — Accuracy counts how often the model matched a label. Whether the feature helped is a separate question, and a definition of good in a person’s terms often rewards the opposite of what accuracy does.
 
-Yes, if people are also tapping the suggestions. — Tapping moves with placement and wording, and a tap is not a judgement of usefulness.
+It works: 62 per cent is a respectable hit rate for any recommendation feature. — A respectable rate against a target that includes everything the person was going to do anyway.
 
 Improve: Write good in a person’s terms in step 1 and turn it into something observable. Record the change in step 5.
 
@@ -6431,18 +6925,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Which error is usually underweighted: a wrong suggestion or a missing one?
 
-- Neither; they are usually treated equally.
-- The wrong one, since teams tolerate irrelevance.
-- The missing one, because it is invisible. Nobody complains about a suggestion they never saw.
+- The missing one: nobody complains about a useful suggestion they never saw.
+- The wrong one: teams tolerate irrelevant suggestions because they cost nothing.
+- Neither: teams usually weigh the two errors equally when they tune a feature.
 
 <details>
 <summary>After your attempt</summary>
 
-Neither; they are usually treated equally. — They are rarely equally bad and almost never equally visible.
+The missing one: nobody complains about a useful suggestion they never saw. — Wrong suggestions are visible and cost trust at once, so teams tune to reduce them. Saying which error you prefer, and why, makes that a decision rather than a drift.
 
-The wrong one, since teams tolerate irrelevance. — Irrelevance is the most complained-about property of these features, which is why it gets the attention.
+The wrong one: teams tolerate irrelevant suggestions because they cost nothing. — Irrelevant suggestions are among the most complained-about parts of these features, which is why they get the attention.
 
-The missing one, because it is invisible. Nobody complains about a suggestion they never saw. — Wrong suggestions are visible and cost trust immediately, so teams tune for fewer of them. Saying which you prefer, and why, is what makes that a decision rather than a drift.
+Neither: teams usually weigh the two errors equally when they tune a feature. — The two errors are rarely equally bad and almost never equally visible.
 
 Improve: State your preference between the two errors in step 2, with a reason about people. Record the change in step 5.
 
@@ -6461,24 +6955,24 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your team reviewed a sample of suggestions and judged them good. Is that an evaluation?
 
-- Yes, expert judgement is a legitimate method.
-- No. The team knows how it works, knows the catalogue, and is not who it is for.
-- Yes, as a first pass before user sessions.
+- It is a sound first pass, to be confirmed later by sessions with members.
+- It measures the team’s view, and the team knows the system and is not who it is for.
+- It is a fair one, since expert judgement is a recognised way to evaluate design quality.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, expert judgement is a legitimate method. — Expert judgement is legitimate about craft. Whether a suggestion is something you had not thought of is not a question an expert can answer for you.
+It is a sound first pass, to be confirmed later by sessions with members. — A first pass anchors everyone; if sessions are going to happen, they can come first.
 
-No. The team knows how it works, knows the catalogue, and is not who it is for. — It is the judgement of the least representative available readers. Five people outside the team, marking ten suggestions each in three categories, takes an afternoon and answers the question.
+It measures the team’s view, and the team knows the system and is not who it is for. — It is the judgement of the least representative readers available. Two or three people outside the team marking ten suggestions each answers the question; a self-pilot by you tests the marking sheet, not the feature.
 
-Yes, as a first pass before user sessions. — A first pass anchors everybody. If the sessions are happening, they can happen first.
+It is a fair one, since expert judgement is a recognised way to evaluate design quality. — Expert judgement is legitimate about craft. Whether a suggestion is something a member had not thought of is not something an expert can answer for them.
 
-Improve: Run the session with two or three people outside the team in step 4 and record the counts. Note the change in step 5.
+Improve: Run the session with two or three people outside the team in step 4 and record the counts; if nobody is available, label a self-pilot and date the gap. Note the change in step 5.
 
-Check again: Your counts come from people who did not build it.
+Check again: Your counts come from people who did not build it, or your self-pilot is labelled as one.
 
-Answers to revisit: ran-with, counts, surprised, improvement-made
+Answers to revisit: run-status, ran-with, counts, surprised, improvement-made
 
 </details>
 
@@ -6512,15 +7006,41 @@ Any comparison with a baseline, any effect on behaviour, anything about people w
 Any comparison with a baseline, any effect on behaviour, anything about people who never open it.
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A hiking app suggests a trail for the weekend. Its weekly report says: “Suggestion accuracy 71% — the feature is working.” Accuracy here means the suggested trail was one the person later walked. Many users walk the same local trail every week, and nobody has asked users whether a suggestion showed them anything new.
+
+**Task:** Decide whether the report shows the feature is working, and explain what you would measure or ask instead.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Accepts 71% as proof the feature works, or argues about whether 71% is high enough; treats the model metric as the answer.
+- Adequate: Says it is unknown: repeat walkers make accuracy high without any help. Defines good as a trail people would consider and had not already planned, and proposes asking a few users to mark suggestions as new, already known or irrelevant, reported as counts.
+- Strong: As adequate, and says which error matters more (a wrong trail or a missed good one), what a small check cannot show (effects across all users), and names the “already known” count as the one to watch.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -6551,7 +7071,7 @@ Observable: Something you could watch or ask about, in a session. It is what tur
 A wrong suggestion: Something clearly irrelevant, visible to the person. It costs trust immediately.
 
 Supplied practice material (fictional or labelled practice, not my research):
-Made-up example. Deciding what good means for tool-library suggestions, and using the model’s number. An accuracy figure. The suggestions matched what people went on to borrow 62 per cent of the time, which sounded respectable.
+Supplied output (hand-written for practice; no model produced it). Asked whether the suggestion feature is working, it replies: “Yes. Suggestions match the next tool borrowed 62% of the time, well above the industry benchmark of 40%.” Source to check: the 62% comes from your own log; no benchmark is named, and the log cannot say whether anyone found a suggestion useful.
 
 Activity: Give me one hand-written model output from the supplied case. Ask me to find an unsupported claim, choose a source that could verify it and rewrite the claim with an honest boundary.
 
@@ -6561,7 +7081,7 @@ When the activity is finished, tell me to return to the course answer called “
 
 **Come back to the course:** Return to “What a person would say if the feature was working well”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “What a person would say if the feature was working well” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “What a person would say if the feature was working well” and write one sentence in your own words.
 
 </details>
 <details>
@@ -6605,19 +7125,19 @@ Adequate evidence: Costs written for false and missed outputs with a stated pref
 
 Repair: Write what each error costs the person and choose which you would rather have. Recheck: The error comparison.
 
-**The evaluation uses people and reports counts**
+**The evaluation uses people's judgements and reports counts**
 
-Adequate evidence: A session design plus results as counts of people and items.
+Adequate evidence: A session design plus counts of people and items, or a labelled self-pilot with a dated gap.
 
-0 — No evaluation with people.
+0 — No evaluation designed.
 
-1 — Sessions run but reported as rates.
+1 — Run but reported as rates, or a self-pilot reported as if it were results.
 
-2 — Run and reported as counts.
+2 — Run with two or three people and reported as counts, or self-piloted and labelled, with a dated note of who could not be reached.
 
-3 — As adequate, and the categories people marked are defined in advance.
+3 — As adequate, and the categories are defined in advance; a self-pilot also says what it showed about the sheet, not the feature.
 
-Repair: Run the judgement session with two or three people and report the counts. Recheck: The evaluation results.
+Repair: Run the judgement session with two or three people and report the counts; if nobody is available, self-pilot the sheet, label it, and date who you tried. Recheck: The evaluation results.
 
 **Unevaluable questions are listed**
 
@@ -6642,7 +7162,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 - Good is defined as an observable outcome for a person
 - The two error costs are compared and a preference stated
-- The evaluation uses people and reports counts
+- The evaluation uses people's judgements and reports counts
 - Unevaluable questions are listed
 
 <details>
@@ -6668,7 +7188,7 @@ Bring: Your AI feature design and its wording.
 Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
 - A scripted prototype with good, wrong and irrelevant outputs
-- Sessions with three people, told the responses are scripted
+- Sessions with up to three people told the responses are scripted, or a labelled self-pilot and dated gap
 - A record of whether wrong outputs were noticed
 - One design change from what you observed
 
@@ -6682,7 +7202,7 @@ AI-assisted product work starts with a bounded task, checks every important outp
 - **Plausible-but-wrong:** The failure that matters. Obviously wrong output is caught by everybody; the dangerous one looks exactly like a right answer.
 - **Telling them it is scripted:** Saying the responses were written in advance. It is honest, it costs nothing, and faking a working system misrepresents what they are helping with.
 
-**Quick example.** Made-up example. Scripting outputs for a tool-library prototype, and scripting them obviously wrong. Three wrong suggestions: a lawnmower for somebody who borrows hand tools, a ladder for a flat with no garden, and a concrete mixer. Clearly, comically wrong.
+**Quick example.** Supplied output (hand-written for practice; no model produced it). Asked for “wrong suggestions to test the prototype”, it writes: “1. A concrete mixer for a member who borrows screwdrivers. 2. A lawnmower for a flat with no garden. 3. A cordless drill shown as at Riverside on Saturday that is really at Hillcrest.” Source to check, the session goal: find out whether members check the branch before booking.
 
 The reader demonstrates and guides the task before asking for “How many output sets you wrote, and what each kind contains”.
 
@@ -6690,7 +7210,7 @@ The reader demonstrates and guides the task before asking for “How many output
 
 Section: learn. Stable action: welcome.
 
-Build a prototype of your AI feature using hand-written responses, including deliberate failures, and test it with three people.
+Build a prototype of your AI feature using hand-written responses, including deliberate failures, and test it with up to three people, or prepare it fully and self-pilot it, labelled, when nobody can take part yet.
 
 
 ### Write the outputs by hand, including the wrong ones
@@ -6787,6 +7307,32 @@ Made-up example. Scripting outputs for a tool-library prototype, and scripting t
 **Unknown:** Still unknown: how people would fare with a mixture, where most suggestions are right. Three sets of mostly-wrong outputs may make people more suspicious than they would ordinarily be.
 
 
+### Try a supplied example
+
+Section: practice-plan. Stable action: step-1-try.
+
+Supplied output (hand-written for practice; no model produced it). Asked for “wrong suggestions to test the prototype”, it writes: “1. A concrete mixer for a member who borrows screwdrivers. 2. A lawnmower for a flat with no garden. 3. A cordless drill shown as at Riverside on Saturday that is really at Hillcrest.” Source to check, the session goal: find out whether members check the branch before booking.
+
+Which supplied output should the session be built around?
+
+- The concrete mixer, because a big mistake gives the clearest reaction for you to watch.
+- The drill at the wrong branch, because only checking the branch would reveal it.
+- All three equally, so the session covers every kind of wrong suggestion.
+
+<details>
+<summary>After your attempt</summary>
+
+The concrete mixer, because a big mistake gives the clearest reaction for you to watch. — A clear reaction to an obvious mistake is not the question; the goal is whether people check a detail that looks right.
+
+The drill at the wrong branch, because only checking the branch would reveal it. — Everyone catches absurdity, so items 1 and 2 test nothing the design worries about. The nearly-right drill tests the session goal: does anyone check the branch before booking?
+
+All three equally, so the session covers every kind of wrong suggestion. — Spreading time across obvious errors dilutes the one observation the session exists for.
+
+Now write your own output sets in step 1, including the plausible-but-wrong one you most need to test.
+
+</details>
+
+
 ### How many output sets you wrote, and what each kind contains
 
 Section: practice-plan. Stable action: write-sets-written.
@@ -6856,18 +7402,18 @@ Write your answer for “The tasks, and what you will be watching for”. Use th
 
 
 
-### Run three sessions
+### Run the sessions, or a self-pilot
 
 Section: practice-plan. Stable action: step-3-brief.
 
-Three sessions run, with each wrong output recorded as noticed, checked or accepted.
+Sessions with up to three people, each wrong output recorded as noticed, checked or accepted — or a labelled self-pilot with a dated note of who could not be reached.
 
 - Give the task and watch without explaining.
-- Record whether each wrong output was noticed, checked or accepted.
+- Record whether each wrong output was noticed, checked or accepted; after a self-pilot, record what broke and who could not be reached.
 
 **Start here:** Decide before the session that you will say nothing when the wrong output appears.
 
-**Enough:** Every wrong output has a recorded outcome rather than a description of what you said.
+**Enough:** Each wrong output has a recorded outcome; a self-pilot records what broke, never what a participant noticed.
 
 **Noticed, checked, accepted:** Three different outcomes. Noticing and doing nothing is common; accepting without noticing is the one the design has to prevent.
 
@@ -6897,15 +7443,26 @@ Made-up example. Testing a tool-library suggestion prototype, and helping the pa
 **Unknown:** Still unknown: what the first participant would have done. One session of three produced nothing usable on the main question, because of me.
 
 
-### Who took part, and what happened in each
+### Did sessions with other people take place?
+
+Section: practice-plan. Stable action: write-session-status.
+
+Choose the option that honestly describes your work.
+
+**Answer:** Did sessions with other people take place? (Yes: up to three people used the prototype / Not yet: self-pilot only, with a dated note of who could not be reached)
+
+
+
+
+### What happened in each session, without names, or what your self-pilot showed and who you tried to reach, dated
 
 Section: practice-plan. Stable action: write-sessions-run.
 
-Three people is enough. With nobody available, run it yourself after a day and label it a self-pilot.
+Up to three people is enough. Describe them by role and keep raw notes in a private file with a date to delete them. A self-pilot finds broken tasks and unclear scripts; it cannot show what a first-time reader notices.
 
-**Answer:** Who took part, and what happened in each
+**Answer:** What happened in each session, without names, or what your self-pilot showed and who you tried to reach, dated
 
-Three people is enough. With nobody available, run it yourself after a day and label it a self-pilot.
+Up to three people is enough. Describe them by role and keep raw notes in a private file with a date to delete them. A self-pilot finds broken tasks and unclear scripts; it cannot show what a first-time reader notices.
 
 
 ### For each wrong output: noticed, checked, or accepted
@@ -6916,6 +7473,8 @@ Write your answer for “For each wrong output: noticed, checked, or accepted”
 
 **Answer:** For each wrong output: noticed, checked, or accepted
 
+Required only when session-status is Yes: up to three people used the prototype. Otherwise leave participant evidence empty.
+
 
 
 
@@ -6923,9 +7482,9 @@ Write your answer for “For each wrong output: noticed, checked, or accepted”
 
 Section: practice-plan. Stable action: step-4-brief.
 
-A count of wrong outputs accepted unchecked, and what prompted anybody who checked.
+If sessions ran: a count of wrong outputs accepted unchecked and what prompted anybody who checked. After a self-pilot, the supplied practice lines below, labelled as practice.
 
-- Count how many wrong outputs were accepted unchecked.
+- If sessions ran, count how many wrong outputs were accepted unchecked.
 - Note what prompted anyone who did check.
 
 **Start here:** Count from your notes rather than from memory of how the sessions felt.
@@ -7101,6 +7660,8 @@ Counts with the number of people, as Module 15 established.
 
 **Answer:** How many wrong outputs were accepted unchecked
 
+Required only when session-status is Yes: up to three people used the prototype. Otherwise leave participant evidence empty.
+
 Counts with the number of people, as Module 15 established.
 
 
@@ -7112,6 +7673,8 @@ Write your answer for “What prompted anybody who did check”. Use the task in
 
 **Answer:** What prompted anybody who did check
 
+Required only when session-status is Yes: up to three people used the prototype. Otherwise leave participant evidence empty.
+
 
 
 
@@ -7121,20 +7684,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Do you need the real model to test an AI feature?
+A teammate says the suggestion feature cannot be tested until the real model is built. What does a scripted prototype let you test that a live model will not?
 
-- Yes, otherwise the outputs will not be representative.
-- No. You need the real experience of meeting the output, including the wrong ones, and scripting gives you control over exactly the case you need to observe.
-- Yes, for the sessions to be credible to participants.
+- Only the layout and visual style, since the outputs themselves are not real enough.
+- The plausible-but-wrong output, placed exactly where you want to watch someone meet it.
+- Nothing representative: outputs written by hand never resemble what a real model produces.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, otherwise the outputs will not be representative. — Representative outputs are not what the session needs. It needs the failure case, which is rare and central.
+Only the layout and visual style, since the outputs themselves are not real enough. — Scripting tests whether people notice a wrong output, which is behaviour, not styling.
 
-No. You need the real experience of meeting the output, including the wrong ones, and scripting gives you control over exactly the case you need to observe. — A live model will not produce a plausible-but-wrong answer on demand. Writing it by hand is how you test the case the whole design was built around.
+The plausible-but-wrong output, placed exactly where you want to watch someone meet it. — A live model will not produce the nearly-right wrong answer on demand. Writing it by hand is how you test the case the whole design was built around.
 
-Yes, for the sessions to be credible to participants. — Participants are told the responses are prepared, and it does not reduce what you learn from watching them.
+Nothing representative: outputs written by hand never resemble what a real model produces. — Representative is not what the session needs; it needs the rare failure case, which hand-writing lets you place.
 
 Improve: Write the plausible-but-wrong outputs in step 1 and say which failure you most need to test. Record the change in step 5.
 
@@ -7153,18 +7716,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Should you tell participants the responses are scripted?
 
-- No, it would change how they behave.
-- Only if they ask.
-- Yes. Faking a working system misrepresents what they are helping with, and it costs nothing to say.
+- Hold it back until afterwards, so their reactions to the outputs stay natural.
+- Mention it only if somebody asks, so nobody is misled and nothing is changed.
+- Tell them before the session: faking a working system misleads people helping you.
 
 <details>
 <summary>After your attempt</summary>
 
-No, it would change how they behave. — It changes very little in practice, and it is the difference between a prototype and a deception.
+Hold it back until afterwards, so their reactions to the outputs stay natural. — Holding it back makes the session a deception, which the Module 5 consent rules do not permit, and it changes little in practice.
 
-Only if they ask. — Waiting to be asked is choosing to mislead anybody who does not.
+Mention it only if somebody asks, so nobody is misled and nothing is changed. — Waiting to be asked means misleading everybody who does not ask.
 
-Yes. Faking a working system misrepresents what they are helping with, and it costs nothing to say. — People still behave naturally with a prototype they know is prepared. What changes is that you have not misled somebody who agreed to help you.
+Tell them before the session: faking a working system misleads people helping you. — People still behave naturally with a prototype they know is prepared; what changes is that you have not misled somebody who agreed to help.
 
 Improve: Add the sentence about prepared responses to your consent introduction in step 2. Record the change in step 5.
 
@@ -7183,24 +7746,24 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A participant is about to accept a wrong suggestion. What should you do?
 
-- Ask whether they have checked the details.
-- Nothing. Whether somebody notices unprompted is the observation the session exists for.
-- Let them continue and mention it afterwards.
+- Stay quiet: whether they notice unprompted is the observation the session exists for.
+- Ask gently whether they have checked the details, without saying what is wrong.
+- Let them continue, then point the wrong detail out straight away so they learn.
 
 <details>
 <summary>After your attempt</summary>
 
-Ask whether they have checked the details. — That is the prompt, phrased as a question. It answers the thing you were watching for.
+Stay quiet: whether they notice unprompted is the observation the session exists for. — Helping at that moment is natural and deletes the result; a session where you speak produces nothing usable on the main question and is recorded as contaminated.
 
-Nothing. Whether somebody notices unprompted is the observation the session exists for. — Helping at that moment is the natural thing to do and it deletes the result. The session where you speak produces nothing usable on the main question.
+Ask gently whether they have checked the details, without saying what is wrong. — That is the prompt, phrased as a question; it answers the thing you were watching for.
 
-Let them continue and mention it afterwards. — Afterwards is fine, and during the moment is what matters.
+Let them continue, then point the wrong detail out straight away so they learn. — Explaining at the end is fine; interrupting straight after the tap changes everything that happens next.
 
 Improve: Record any session where you prompted as contaminated in step 3, rather than as a result. Note the change in step 5.
 
 Check again: Every recorded outcome happened without you saying anything.
 
-Answers to revisit: sessions-run, noticed-checked-accepted, improvement-made
+Answers to revisit: session-status, sessions-run, noticed-checked-accepted, improvement-made
 
 </details>
 
@@ -7214,7 +7777,7 @@ One design change made from what you observed, and the repair the Check question
 - Make one design change from what you observed.
 - Save the scripts, the records and the change.
 
-**Start here:** Take the thing that was accepted unchecked and make the checkable detail visible in the suggestion itself.
+**Start here:** Take the thing that was accepted unchecked, or after a self-pilot the thing that broke, and make the checkable detail visible in the suggestion itself.
 
 **Enough:** Your change addresses something you watched happen rather than something you expected.
 
@@ -7223,26 +7786,52 @@ One design change made from what you observed, and the repair the Check question
 **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
 
 
-### The one design change you made from what you observed
+### The one design change you made, and whether it came from a session or from the self-pilot
 
 Section: practice. Stable action: write-design-change.
 
-Write your answer for “The one design change you made from what you observed”. Use the task instructions below to decide what to include.
+Write your answer for “The one design change you made, and whether it came from a session or from the self-pilot”. Use the task instructions below to decide what to include.
 
-**Answer:** The one design change you made from what you observed
-
-
+**Answer:** The one design change you made, and whether it came from a session or from the self-pilot
 
 
-### What you changed after the Check questions
+
+
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A cinema app will suggest seats. The team plans to test it with scripted suggestions, and a model drafted the test plan: “Use obviously bad seats, like the front-row corner, so testers react clearly. Don’t tell them the suggestions are pre-written, or they won’t take it seriously.” The real worry is people accepting a good-looking seat that has a restricted view.
+
+**Task:** Decide how you would change this test plan, and explain the reason for each change.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps obviously bad seats and the deception, or tells testers but still scripts only absurd failures.
+- Adequate: Scripts a nearly-right suggestion (a good-looking seat with a restricted view) because that is the risk, tells testers before starting that suggestions are prepared, and records whether each person notices, checks or accepts it unprompted.
+- Strong: As adequate, and plans to stay silent when someone is about to accept, counts outcomes as people rather than instances, and says a self-pilot could only check the script works, not what testers notice.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -7265,7 +7854,7 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: Prototyping with scripted responses
-What I am trying to do: Build a prototype of your AI feature using hand-written responses, including deliberate failures, and test it with three people.
+What I am trying to do: Build a prototype of your AI feature using hand-written responses, including deliberate failures, and test it with up to three people, or prepare it fully and self-pilot it, labelled, when nobody can take part yet.
 
 Key idea or terms:
 Scripted response: An output you wrote rather than generated. It lets you test the case you need rather than the case the model happens to produce.
@@ -7273,7 +7862,7 @@ Plausible-but-wrong: The failure that matters. Obviously wrong output is caught 
 Telling them it is scripted: Saying the responses were written in advance. It is honest, it costs nothing, and faking a working system misrepresents what they are helping with.
 
 Supplied practice material (fictional or labelled practice, not my research):
-Made-up example. Scripting outputs for a tool-library prototype, and scripting them obviously wrong. Three wrong suggestions: a lawnmower for somebody who borrows hand tools, a ladder for a flat with no garden, and a concrete mixer. Clearly, comically wrong.
+Supplied output (hand-written for practice; no model produced it). Asked for “wrong suggestions to test the prototype”, it writes: “1. A concrete mixer for a member who borrows screwdrivers. 2. A lawnmower for a flat with no garden. 3. A cordless drill shown as at Riverside on Saturday that is really at Hillcrest.” Source to check, the session goal: find out whether members check the branch before booking.
 
 Activity: Give me one hand-written model output from the supplied case. Ask me to find an unsupported claim, choose a source that could verify it and rewrite the claim with an honest boundary.
 
@@ -7283,7 +7872,7 @@ When the activity is finished, tell me to return to the course answer called “
 
 **Come back to the course:** Return to “How many output sets you wrote, and what each kind contains”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “How many output sets you wrote, and what each kind contains” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “How many output sets you wrote, and what each kind contains” and write one sentence in your own words.
 
 </details>
 <details>
@@ -7313,7 +7902,7 @@ Adequate evidence: A set of hand-written outputs covering good, wrong and irrele
 
 Repair: Write the wrong suggestion you would most fear someone accepting, and place it. Recheck: The scripts.
 
-**Participants were told the responses are prepared**
+**Participants are told the responses are prepared**
 
 Adequate evidence: Consent wording naming the scripted nature of the responses.
 
@@ -7321,7 +7910,7 @@ Adequate evidence: Consent wording naming the scripted nature of the responses.
 
 1 — Told after the session.
 
-2 — Told before, in the consent introduction.
+2 — Told before, in the consent introduction, or on the self-pilot route that sentence written into the prepared introduction.
 
 3 — As adequate, and the effect of knowing is considered in the analysis.
 
@@ -7329,15 +7918,15 @@ Repair: Add the sentence to your consent introduction and re-run if you conceale
 
 **Noticing versus accepting is recorded per wrong output**
 
-Adequate evidence: A record per wrong output of whether it was noticed, checked or accepted.
+Adequate evidence: A record per wrong output of whether it was noticed, checked or accepted, or the labelled self-pilot equivalent.
 
 0 — Only preferences recorded.
 
 1 — Noticing recorded informally.
 
-2 — Recorded per output with what prompted checking.
+2 — Recorded per output with what prompted checking, or, after a self-pilot, the sheet tried on the supplied made-up observations and labelled as practice.
 
-3 — As adequate, and counts are given as people rather than instances.
+3 — As adequate, and counts are given as people rather than instances; a self-pilot states that the real observation is still owed.
 
 Repair: Go through your notes and mark each wrong output as noticed, checked or accepted. Recheck: The acceptance record.
 
@@ -7349,7 +7938,7 @@ Adequate evidence: A change traced to what people did with a wrong output.
 
 1 — A change unrelated to the observation.
 
-2 — A change traced to the acceptance behaviour.
+2 — A change traced to the acceptance behaviour, or to what the self-pilot exposed, labelled as such.
 
 3 — As adequate, and the change makes checking cheaper rather than adding a warning.
 
@@ -7363,7 +7952,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 **Review criteria:**
 
 - Outputs are scripted including deliberate failures
-- Participants were told the responses are prepared
+- Participants are told the responses are prepared
 - Noticing versus accepting is recorded per wrong output
 - One design change follows from the observation
 
@@ -7404,7 +7993,7 @@ AI-assisted product work starts with a bounded task, checks every important outp
 - **Map:** What context it operates in and who is affected, including people who never touch it.
 - **Measure and manage:** How you would know it is working or harming, and what happens when something goes wrong.
 
-**Quick example.** Made-up example. Mapping who is affected by a tool-library suggestion feature, and listing the users. Members using the feature. That is who it is for, and I had three sessions of evidence about them.
+**Quick example.** Supplied output (hand-written for practice; no model produced it). Asked for a harm signal for tool suggestions, it writes: “Harm signal: the number of members who dismiss a suggestion. If dismissals stay low, the feature is safe.” Source to check, your affected list: members; branches whose tools are never suggested; volunteers who check tools after each loan.
 
 The reader demonstrates and guides the task before asking for “Govern, map, measure and manage: what each asks, in your own words”.
 
@@ -7740,11 +8329,11 @@ Now sort your own questions the same way, and mark every one nobody currently ow
 
 Section: practice-plan. Stable action: write-named-owners.
 
-Write your answer for “For each function: who is accountable”. Use the task instructions below to decide what to include.
+Use roles rather than people’s names in this synced answer.
 
 **Answer:** For each function: who is accountable
 
-
+Use roles rather than people’s names in this synced answer.
 
 
 ### Anything nobody currently owns
@@ -7797,6 +8386,32 @@ Made-up example. Writing a harm signal for a tool-library feature, and writing t
 **Unknown:** Still unknown: what level of concentration would be too much. The signal exists before the threshold, which is the right way round and leaves a judgement for later.
 
 
+### Try a supplied example
+
+Section: practice-plan. Stable action: step-4-try.
+
+Supplied output (hand-written for practice; no model produced it). Asked for a harm signal for tool suggestions, it writes: “Harm signal: the number of members who dismiss a suggestion. If dismissals stay low, the feature is safe.” Source to check, your affected list: members; branches whose tools are never suggested; volunteers who check tools after each loan.
+
+What is wrong with this as a harm signal?
+
+- It needs a threshold, such as five per cent, before it can trigger action.
+- It measures members’ reactions only, so it cannot rise while others are harmed.
+- Dismissals are too rare to count, so a survey of members would work better.
+
+<details>
+<summary>After your attempt</summary>
+
+It needs a threshold, such as five per cent, before it can trigger action. — A threshold on the wrong measure stays wrong; the signal has to see the people affected first.
+
+It measures members’ reactions only, so it cannot rise while others are harmed. — A harm signal has to be able to worsen while usefulness looks fine. “Suggestions concentrating on one branch’s stock” or “post-loan checks piling up” could; dismissals see nobody except members.
+
+Dismissals are too rare to count, so a survey of members would work better. — A survey of members has the same blind spot: it asks the people the usefulness measure already covers.
+
+Now write your own working signal and a separate harm signal in step 4.
+
+</details>
+
+
 ### What would indicate the feature is working
 
 Section: practice-plan. Stable action: write-working-signal.
@@ -7825,20 +8440,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Are risk frameworks for large organisations?
+A two-person team says the four risk questions are for large organisations. What do they miss?
 
-- The four questions apply to a feature built by two people, and answering them takes an hour. What differs is the ceremony, not the questions.
-- Yes, but a simplified version is worth doing.
-- Largely, since a small team cannot discharge the obligations.
+- The questions apply at any size; what scales with the organisation is the ceremony.
+- A simplified version of the framework, which small teams usually find more useful.
+- Nothing much: small teams cannot meet the obligations, so mapping them achieves little.
 
 <details>
 <summary>After your attempt</summary>
 
-The four questions apply to a feature built by two people, and answering them takes an hour. What differs is the ceremony, not the questions. — Who decides, who is affected, how you would know, and what happens when it goes wrong are as real for a small product as a large one. The small product usually answers them faster and more honestly.
+The questions apply at any size; what scales with the organisation is the ceremony. — Who decides, who is affected, how you would know, and what happens when it goes wrong are as real for a small product, and answering them takes about an hour.
 
-Yes, but a simplified version is worth doing. — The four questions are the version. There is nothing to simplify.
+A simplified version of the framework, which small teams usually find more useful. — The four questions are already the short version; there is nothing to simplify away.
 
-Largely, since a small team cannot discharge the obligations. — Naming an obligation you cannot discharge is the finding. Not naming it does not remove it.
+Nothing much: small teams cannot meet the obligations, so mapping them achieves little. — Naming an obligation you cannot meet is the finding. Not naming it does not remove it.
 
 Improve: Write all four functions as questions about your own feature in step 1. Record the change in step 5.
 
@@ -7857,18 +8472,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your affected list contains only the people using the feature. What is missing?
 
-- Nothing, if the feature only affects its users.
-- The people it acts upon without their participation, such as providers whose classes are never suggested.
-- Future users, who should also be considered.
+- People it acts on without taking part, such as providers whose items never appear.
+- Future users, who may join later and should be considered in the design now.
+- Nobody, if the feature only shows suggestions to the people who opened it.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing, if the feature only affects its users. — A ranking affects everybody ranked, including those ranked last.
+People it acts on without taking part, such as providers whose items never appear. — That group loses bookings on the basis of a ranking they have not seen and cannot appeal. It is also where the harm signal comes from, since a usefulness measure would score concentration as success.
 
-The people it acts upon without their participation, such as providers whose classes are never suggested. — That group loses bookings on the basis of a ranking they have not seen and cannot appeal. It is also where the harm signal comes from, and a usefulness measure would score the same concentration as success.
+Future users, who may join later and should be considered in the design now. — Worth thinking about, and not the group being missed here.
 
-Future users, who should also be considered. — Worth thinking about and not the group being missed here.
+Nobody, if the feature only shows suggestions to the people who opened it. — A ranking affects everybody ranked, including those ranked last and never shown.
 
 Improve: Add everybody acted upon to step 2, and write the harm signal that follows in step 4. Record the change in step 5.
 
@@ -7887,18 +8502,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Nobody currently owns what happens when a provider complains. What should the map say?
 
-- That you own it, since you built the feature.
-- Nothing, until somebody actually complains.
-- Unowned. It is a finding, and writing it down is better than quietly assigning it to yourself.
+- That you own it, since you built the feature and understand it best.
+- Unowned, written down as a finding rather than quietly taken on by you.
+- Nothing yet; ownership can be settled when the first complaint arrives.
 
 <details>
 <summary>After your attempt</summary>
 
-That you own it, since you built the feature. — That may be the right outcome and it should be a decision somebody made rather than a gap you filled.
+That you own it, since you built the feature and understand it best. — That may be the right outcome, and it should be a decision somebody made rather than a gap you filled.
 
-Nothing, until somebody actually complains. — The first complaint is the worst moment to discover that nobody answers it.
+Unowned, written down as a finding rather than quietly taken on by you. — Much AI harm comes from nobody owning a question rather than from a technical failure. Taking it on by default produces an owner who may not be there in six months.
 
-Unowned. It is a finding, and writing it down is better than quietly assigning it to yourself. — Most AI harm comes from nobody owning a question rather than from a technical failure. Taking it on by default at the end of a long day produces an owner who will not be there in six months.
+Nothing yet; ownership can be settled when the first complaint arrives. — The first complaint is the worst moment to discover that nobody answers it.
 
 Improve: Mark anything nobody owns as unowned in step 3 rather than assigning it. Record the change in step 5.
 
@@ -7931,11 +8546,11 @@ A response plan naming who acts, how fast and what they can do, with limitations
 
 Section: practice. Stable action: write-who-acts.
 
-Write your answer for “Who acts on a report, how fast, and what they can actually do”. Use the task instructions below to decide what to include.
+A role, not a name.
 
 **Answer:** Who acts on a report, how fast, and what they can actually do
 
-
+A role, not a name.
 
 
 ### Any limitation in the response, recorded
@@ -7956,15 +8571,41 @@ Example (made up): the feature can be disabled for one account within a day, and
 </details>
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A council’s parking app will use a model to suggest streets with free spaces. A model-drafted risk map says: “Affected: drivers using the app. Owner: the IT team owns all risks. Harm signal: app-store rating below 4 stars.” The council’s notes say residents of suggested streets have complained about traffic before, and nobody has been named to answer them.
+
+**Task:** Decide what the map should change, and explain why each change matters.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Accepts “the IT team owns all risks” and the star rating, and lists only drivers.
+- Adequate: Adds residents of suggested streets as affected without taking part, marks complaint handling as unowned rather than assigning it to IT by default, and replaces the rating with a harm signal about residents, such as complaints or traffic on suggested streets.
+- Strong: As adequate, and separates usefulness signals from harm signals, says who could decide the unowned question and how it would be raised, and names what the response can actually do, such as stop suggesting a street within a day.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -7995,7 +8636,7 @@ Map: What context it operates in and who is affected, including people who never
 Measure and manage: How you would know it is working or harming, and what happens when something goes wrong.
 
 Supplied practice material (fictional or labelled practice, not my research):
-Made-up example. Mapping who is affected by a tool-library suggestion feature, and listing the users. Members using the feature. That is who it is for, and I had three sessions of evidence about them.
+Supplied output (hand-written for practice; no model produced it). Asked for a harm signal for tool suggestions, it writes: “Harm signal: the number of members who dismiss a suggestion. If dismissals stay low, the feature is safe.” Source to check, your affected list: members; branches whose tools are never suggested; volunteers who check tools after each loan.
 
 Activity: Give me one hand-written model output from the supplied case. Ask me to find an unsupported claim, choose a source that could verify it and rewrite the claim with an honest boundary.
 
@@ -8005,7 +8646,7 @@ When the activity is finished, tell me to return to the course answer called “
 
 **Come back to the course:** Return to “Govern, map, measure and manage: what each asks, in your own words”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Govern, map, measure and manage: what each asks, in your own words” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “Govern, map, measure and manage: what each asks, in your own words” and write one sentence in your own words.
 
 </details>
 <details>
@@ -8045,7 +8686,7 @@ Adequate evidence: A named person or role per function, with unowned items marke
 
 2 — Owners named and gaps marked as unowned.
 
-3 — As adequate, and an unowned question is escalated rather than assumed.
+3 — As adequate, and each unowned question names who could decide it and how it would be raised.
 
 Repair: For each function ask who would actually act; if nobody, write unowned. Recheck: The owner list.
 
@@ -8126,7 +8767,7 @@ AI-assisted product work starts with a bounded task, checks every important outp
 - **The claimed problem:** What it says it solves. Half the argument is usually that the problem was never established.
 - **Known rules:** Where the logic can be written down, a deterministic solution is better: explainable, testable and correct every time.
 
-**Quick example.** Made-up example. Listing AI proposals to argue against at a tool library, and listing the bad ones. A model that decides who gets banned, one that writes members’ reviews for them, and one that predicts who will steal a tool. Three proposals nobody would make.
+**Quick example.** Supplied output (hand-written for practice; no model produced it). Asked to make the case for AI fee decisions, it writes: “An AI model can decide late-fee waivers with 95% accuracy, saving staff an hour a week, and members will barely notice.” Source to check, the library’s policy: three written conditions decide a waiver; members are told only “your fee stands”, with no reason and no appeal.
 
 The reader demonstrates and guides the task before asking for “Proposal 1 · what it is, and what problem it claims to solve”.
 
@@ -8282,7 +8923,7 @@ Each proposal tested for whether the rules are known, what the stakes are, and w
 
 **Start here:** Ask the noticeable-and-correctable question first; it settles some proposals on its own.
 
-**Enough:** At least one proposal fails on something other than accuracy.
+**Enough:** Each proposal has a verdict on known rules, stakes and noticeability before accuracy is discussed; a proposal that passes all three is a valid result.
 
 **Known rules:** Where the logic can be written down, a deterministic solution is better: explainable, testable and correct every time.
 
@@ -8310,6 +8951,32 @@ Made-up example. Judging a refund proposal at a tool library, and judging it on 
 **Trade-off:** Refusing on those grounds leaves the underlying problem — staff spending an hour a week on fee decisions — entirely unsolved, which is why the alternative matters.
 
 **Unknown:** Still unknown: whether the judgement condition could be made appealable. If it could, the argument would have to be had again on different grounds.
+
+
+### Try a supplied example
+
+Section: practice-plan. Stable action: step-2-try.
+
+Supplied output (hand-written for practice; no model produced it). Asked to make the case for AI fee decisions, it writes: “An AI model can decide late-fee waivers with 95% accuracy, saving staff an hour a week, and members will barely notice.” Source to check, the library’s policy: three written conditions decide a waiver; members are told only “your fee stands”, with no reason and no appeal.
+
+Which test settles this proposal first?
+
+- Whether the hour a week saved outweighs the cost of building the model.
+- Whether 95 per cent accuracy is high enough for decisions about members’ own money.
+- Whether a member could notice and correct a wrong decision; here they could not.
+
+<details>
+<summary>After your attempt</summary>
+
+Whether the hour a week saved outweighs the cost of building the model. — Cost matters to the argument later; it does not decide whether an unnoticeable wrong decision is acceptable.
+
+Whether 95 per cent accuracy is high enough for decisions about members’ own money. — Arguing the threshold accepts the framing, and the 95% has no source; noticeability comes first.
+
+Whether a member could notice and correct a wrong decision; here they could not. — The policy already has three written conditions — known rules — and members get no reason and no appeal, so a wrong decision is invisible to them. That settles it in this form; the unsourced 95% never enters the argument.
+
+Now apply the three questions to each of your proposals in step 2, noticeable-and-correctable first.
+
+</details>
 
 
 ### For each: are the rules known?
@@ -8587,20 +9254,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Does saying no make you look unhelpful?
+You plan to argue against a proposed AI feature, and worry it will make you look unhelpful. What makes a refusal land as judgement?
 
-- Sometimes, which is why it should be used sparingly.
-- No, if the reasoning is technical enough.
-- Saying no with a reason and an alternative makes you the person whose judgement is trusted.
+- A reason in decision terms and an alternative that solves the same problem.
+- Saying no rarely and late, so that it carries weight when it finally happens.
+- Technical detail about models, so the objection sounds expert and certain.
 
 <details>
 <summary>After your attempt</summary>
 
-Sometimes, which is why it should be used sparingly. — Used sparingly usually means used too late, after the fortnight has been spent.
+A reason in decision terms and an alternative that solves the same problem. — The alternative turns a refusal into a contribution. Saying yes to everything makes you the person who builds whatever was fashionable last quarter.
 
-No, if the reasoning is technical enough. — Technical reasoning persuades technical people. Cost, risk and support persuade the person deciding.
+Saying no rarely and late, so that it carries weight when it finally happens. — Late usually means after the fortnight has been spent.
 
-Saying no with a reason and an alternative makes you the person whose judgement is trusted. — Saying yes to everything makes you the person who builds whatever was fashionable last quarter. The alternative is the part that turns a refusal into a contribution.
+Technical detail about models, so the objection sounds expert and certain. — Technical reasoning persuades technical people; cost, risk and support persuade the person deciding.
 
 Improve: Write the alternative alongside your argument in step 3. Record the change in step 5.
 
@@ -8619,18 +9286,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 A proposal would be accurate most of the time, and a wrong output cannot be noticed by the person affected. What do you argue?
 
-- That it should not ship at any accuracy. Noticeable and correctable comes before the accuracy question.
-- That it needs human review of every decision.
-- That the accuracy needs to be higher first.
+- That the accuracy must first reach a high threshold agreed in advance, such as 99 per cent.
+- That every output needs a person to review it before the member ever sees it.
+- That it should not ship in that form, since nobody could notice or correct an error.
 
 <details>
 <summary>After your attempt</summary>
 
-That it should not ship at any accuracy. Noticeable and correctable comes before the accuracy question. — A member told their fee stands, with no idea what was considered and no route to appeal, cannot detect or correct a wrong decision. The accuracy number never enters the argument.
+That the accuracy must first reach a high threshold agreed in advance, such as 99 per cent. — That accepts the framing and turns an objection of principle into a negotiation about a number.
 
-That it needs human review of every decision. — A reasonable mitigation, and it usually removes the reason for building it at all.
+That every output needs a person to review it before the member ever sees it. — A reasonable mitigation, and it often removes the reason for building it at all, so say that too.
 
-That the accuracy needs to be higher first. — That accepts the framing and turns an objection of principle into a negotiation about a threshold.
+That it should not ship in that form, since nobody could notice or correct an error. — A member told their fee stands, with no idea what was considered and no route to appeal, cannot detect or correct a wrong decision. Noticeable and correctable comes before the accuracy question.
 
 Improve: Ask the noticeable-and-correctable question first for each proposal in step 2. Record the change in step 5.
 
@@ -8649,18 +9316,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You say “our research shows nobody wants this”, from three sessions. What does that cost?
 
-- Nothing, since the conclusion is probably right.
-- It weakens this argument only.
-- Somebody will ask which research, and overstating once discounts everything you say afterwards.
+- Only this argument’s strength; later arguments are judged on their own evidence.
+- Little, since the conclusion is probably right and nobody will check the detail.
+- The next question is “which research?”, and an overstatement discounts what follows.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing, since the conclusion is probably right. — Probably right, unsupportably stated, is the combination that does the damage.
+Only this argument’s strength; later arguments are judged on their own evidence. — Credibility carries over: once you have overstated, your next few claims are discounted too.
 
-It weakens this argument only. — It weakens the next three, which is the more expensive part.
+Little, since the conclusion is probably right and nobody will check the detail. — Probably right and unsupportably stated is the combination that does the damage when somebody does check.
 
-Somebody will ask which research, and overstating once discounts everything you say afterwards. — Three sessions establish what three people did. The honest version — the common case is three taps and a text box is slower for everybody on a phone — is checkable and stronger.
+The next question is “which research?”, and an overstatement discounts what follows. — Three sessions establish what three people did. The checkable version — the common case is three taps, and a text box is slower on a phone — is stronger.
 
 Improve: Replace any overstated claim in step 3 with something checkable from your own work. Record the change in step 5.
 
@@ -8700,15 +9367,41 @@ Write your answer for “Where the three cases are kept, so they are available u
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: A community garden allocates its twenty plots each spring by written rules: the longest on the waiting list go first, one plot per household. A committee member forwards a vendor’s pitch: “Our AI allocates plots fairly, learning who will garden best, with 90% satisfaction.” Applicants are told only their result.
+
+**Task:** Decide whether to argue against the pitch, and explain your reasoning, including what you would offer instead.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Argues about whether 90% satisfaction is good enough, or accepts the pitch because it promises fairness; offers no alternative.
+- Adequate: Argues against it: the rules are known and written, so an ordered list does the job; applicants could not notice or contest a wrong allocation; the 90% has no source. Offers a published list ordered by waiting time.
+- Strong: As adequate, and puts the argument in cost, risk and complaint terms, names the evidence that would change their mind (a problem the rules cannot solve), and notes “who will garden best” is a judgement nobody has agreed to.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -8739,7 +9432,7 @@ The claimed problem: What it says it solves. Half the argument is usually that t
 Known rules: Where the logic can be written down, a deterministic solution is better: explainable, testable and correct every time.
 
 Supplied practice material (fictional or labelled practice, not my research):
-Made-up example. Listing AI proposals to argue against at a tool library, and listing the bad ones. A model that decides who gets banned, one that writes members’ reviews for them, and one that predicts who will steal a tool. Three proposals nobody would make.
+Supplied output (hand-written for practice; no model produced it). Asked to make the case for AI fee decisions, it writes: “An AI model can decide late-fee waivers with 95% accuracy, saving staff an hour a week, and members will barely notice.” Source to check, the library’s policy: three written conditions decide a waiver; members are told only “your fee stands”, with no reason and no appeal.
 
 Activity: Give me one hand-written model output from the supplied case. Ask me to find an unsupported claim, choose a source that could verify it and rewrite the claim with an honest boundary.
 
@@ -8749,7 +9442,7 @@ When the activity is finished, tell me to return to the course answer called “
 
 **Come back to the course:** Return to “Proposal 1 · what it is, and what problem it claims to solve”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “Proposal 1 · what it is, and what problem it claims to solve” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “Proposal 1 · what it is, and what problem it claims to solve” and write one sentence in your own words.
 
 </details>
 <details>

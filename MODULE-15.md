@@ -85,7 +85,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The tree for the booking product: outcome — people who intend to attend a class actually attend one. Beneath it: they find a suitable class; they complete a booking without duplicating payment; they arrive prepared. Beneath those: searches that produce results, bookings completed in one session, duplicate payments, prepared-arrival reports from the provider. Observability: the first two are unobservable without analytics; duplicate payments are countable from the provider's records; preparedness is only askable. Two candidate metrics were removed for being unactionable, including time on page.
+- Made-up example: the tree for the booking product: outcome — people who intend to attend a class actually attend one. Beneath it: they find a suitable class; they complete a booking without duplicating payment; they arrive prepared. Beneath those: searches that produce results, bookings completed in one session, duplicate payments, prepared-arrival reports from the provider. Observability: the first two are unobservable without analytics; duplicate payments are countable from the provider's records; preparedness is only askable. Two candidate metrics were removed for being unactionable, including time on page.
 
 
 ### Choose where you will do the work
@@ -502,18 +502,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Would more metrics give a fuller picture?
 
-- Yes, because you cannot know in advance which will matter.
-- They give more numbers to argue with. Three connected to an outcome with their limits stated support decisions; twenty unconnected ones support whichever conclusion somebody wanted.
-- Yes, as long as each one is accurate.
+- They do, as long as each one of them is accurately recorded.
+- They give more to argue with; a few tied to an outcome support decisions.
+- They do, because nobody can know in advance which of the numbers will turn out to matter.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, because you cannot know in advance which will matter. — The tree is how you decide which will matter, which is the work this lesson is about.
+They do, as long as each one of them is accurately recorded. — Accuracy is not the problem. Twenty accurate numbers with no connection to an outcome is a menu.
 
-They give more numbers to argue with. Three connected to an outcome with their limits stated support decisions; twenty unconnected ones support whichever conclusion somebody wanted. — Every unconnected number is available to whoever is arguing. A small tree with observability marked is harder to misuse and easier to act on.
+They give more to argue with; a few tied to an outcome support decisions. — Three numbers connected to an outcome, with their limits stated, support decisions; twenty unconnected ones support whichever conclusion somebody wanted. A small tree with observability marked is harder to misuse and easier to act on.
 
-Yes, as long as each one is accurate. — Accuracy is not the problem. Twenty accurate numbers with no connection to an outcome is a menu.
+They do, because nobody can know in advance which of the numbers will turn out to matter. — The tree is how you decide which will matter, which is the work this lesson is about.
 
 Improve: Check every activity node in step 3 has a path upward, and remove or mark the ones that do not. Record the change in step 5.
 
@@ -532,18 +532,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You built your tree upward from the numbers you can actually get. What tends to happen?
 
-- It is more practical, since unobservable nodes cannot be used.
-- The top becomes a word nobody outside the team wants, such as engagement, because the available numbers do not add up to an outcome.
-- Nothing much, since the numbers are the same either way.
+- It is more practical, because unobservable nodes cannot be measured or used for anything anyway.
+- Nothing much changes, since the numbers in it are the same either way.
+- Its top becomes a vague word like engagement, which is not an outcome anybody wants.
 
 <details>
 <summary>After your attempt</summary>
 
-It is more practical, since unobservable nodes cannot be used. — Unobservable nodes are what tell you what you are missing. Leaving them out makes the gap invisible.
+It is more practical, because unobservable nodes cannot be measured or used for anything anyway. — Unobservable nodes are what tell you what you are missing. Leaving them out makes the gap invisible.
 
-The top becomes a word nobody outside the team wants, such as engagement, because the available numbers do not add up to an outcome. — Nobody comes to a tool library to engage with it. Starting from the outcome produces a shorter tree with more unobservable nodes, which is the honest shape.
+Nothing much changes, since the numbers in it are the same either way. — The numbers are the same and their meaning is not. Built upward, searches and time on page look like they belong.
 
-Nothing much, since the numbers are the same either way. — The numbers are the same and their meaning is not. Built upward, searches and time on page look like they belong.
+Its top becomes a vague word like engagement, which is not an outcome anybody wants. — The available numbers do not add up to an outcome. Nobody comes to a tool library to engage with it. Starting from the outcome produces a shorter tree with more unobservable nodes, which is the honest shape.
 
 Improve: Rebuild one branch in step 2 starting from the outcome, and see which of your numbers survive. Record the change in step 5.
 
@@ -562,18 +562,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Time on page is easy to get and everybody reports it. Should it be in your tree?
 
-- Yes, since it is a useful indicator of engagement.
-- Yes, as a supporting metric alongside others.
-- No. It rises when people are interested and when they are lost, so no value of it changes what anybody does.
+- It should, as a supporting metric reported alongside the others.
+- Probably not: it rises when people are interested and when lost, so it guides nothing.
+- It should, since it is a widely used and easily understood indicator of how engaged people are.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, since it is a useful indicator of engagement. — Engagement is the word that lets an unactionable number look meaningful. Ask which action a change in it would trigger.
+It should, as a supporting metric reported alongside the others. — Supporting metric usually means one that can be quoted when it agrees with you.
 
-Yes, as a supporting metric alongside others. — Supporting metric usually means one that can be quoted when it agrees with you.
+Probably not: it rises when people are interested and when lost, so it guides nothing. — The test is what you would do if it doubled and what you would do if it halved. When the answer to both is nothing, the number exists to be reported rather than used.
 
-No. It rises when people are interested and when they are lost, so no value of it changes what anybody does. — The test is what you would do if it doubled and what you would do if it halved. When the answer to both is nothing, the number exists to be reported rather than used.
+It should, since it is a widely used and easily understood indicator of how engaged people are. — Engagement is the word that lets an unactionable number look meaningful. Ask which action a change in it would trigger.
 
 Improve: Apply the doubled-or-halved test to every leaf in step 5 and remove two. Record the change.
 
@@ -621,15 +621,41 @@ Example (made up): time on page. It goes up when people are engaged and when the
 </details>
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a town’s bike-share scheme reports monthly app downloads, app opens and average ride length. The council funds it so that people make short trips by bike instead of by car. The scheme also holds trip records (start dock, end dock, time) and runs a yearly members’ survey.
+
+**Task:** Name the outcome at the top of a metric tree for this scheme and one metric beneath it, and explain why that metric is connected to the outcome while app opens are not.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Puts downloads, app opens or engagement at the top, or lists metrics without connecting any of them to an outcome for people.
+- Adequate: States an outcome about people making short trips by bike rather than car, names a connected countable metric such as completed short trips from trip records, and explains why app opens can rise for opposite reasons.
+- Strong: As adequate, and marks what stays unobservable (whether a bike trip replaced a car trip is only askable, through the survey) and says what the metric cannot support.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -789,7 +815,7 @@ Product analytics uses recorded events and numbers to answer a decision without 
 
 - **Funnel:** A count of people reaching each step of one task. It shows where people stop and never why.
 - **What counts as reaching:** The definition of each step. Without it, two people count the same thing differently and the numbers cannot be compared.
-- **Proportional drop:** People lost at a step divided by people who reached it. Going from 420 to 180 loses 240 of 420, about 57 per cent.
+- **Proportional drop:** People lost at a step divided by people who reached it. Going from 420 to 180 loses 240 of 420, about 57.1 per cent. It makes steps that start with different numbers of people comparable.
 
 **Quick example.** Made-up example. Reading a synthetic funnel for a tool library, and reading the wrong drop as the biggest. Synthetic throughout: 1,000 reach the list, 420 open a tool, 180 begin booking, 96 reach payment, 71 complete.
 
@@ -843,7 +869,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- A synthetic funnel for the booking task, clearly labelled: 1,000 reach the class list, 420 open a class, 180 begin booking, 96 reach payment, 71 complete. The largest proportional drop is from opening a class to beginning a booking. Three explanations that fit equally: the price is higher than expected at that point; the date is inconvenient and there is no easy route to alternatives; and people are checking with someone else and will return later, which the funnel would count as a loss. The third would need a returning-visitor view the data does not have. The write-up marks every number synthetic.
+- Made-up example, synthetic counts throughout: 1,000 reach the class list, 420 open a class, 180 begin booking, 96 reach payment, 71 complete. The drops are 580 of 1,000 (58.0 per cent), 240 of 420 (57.1 per cent), 84 of 180 (46.7 per cent) and 25 of 96 (26.0 per cent). The largest proportional drop is the first, from the list to opening a class, and it is also the largest number lost. Opening a class to beginning a booking is almost as steep and is made of people who had already chosen a class, so it was looked at first: a judgement about commitment, not a bigger percentage. Three explanations fit that drop equally: the price is higher than expected at that point; the date is inconvenient and there is no easy route to alternatives; and people are checking with someone else and will return later, which the funnel would count as a loss. The third would need a returning-visitor view the data does not have. The write-up marks every number synthetic.
 
 
 ### Choose where you will do the work
@@ -902,13 +928,15 @@ Section: practice-plan. Stable action: step-2-brief.
 Invented counts marked synthetic, the proportional drop at each step with your working, and the largest one identified.
 
 - Invent plausible counts and label them synthetic.
-- Calculate the proportional drop at each step, not just the absolute.
+- Calculate people lost and lost ÷ reached at each step; check them with the Funnel tool in the uncertainty calculator.
 
 **Start here:** Work out the proportion for each step by hand, writing the division you did.
 
 **Enough:** Your largest drop is the largest proportion, and you can say why that is the right ranking.
 
-**Proportional drop:** People lost at a step divided by people who reached it. Going from 420 to 180 loses 240 of 420, about 57 per cent.
+**Proportional drop:** People lost at a step divided by people who reached it. Going from 420 to 180 loses 240 of 420, about 57.1 per cent. It makes steps that start with different numbers of people comparable.
+
+**Uncertainty calculator:** The in-lesson tool. Its Funnel part takes your step counts and shows the people lost and the proportional drop at each step, so you can check your own division.
 
 **Absolute drop:** The raw number lost. The biggest one is usually at the top, where the most people are, which is why it is the wrong thing to rank by.
 
@@ -925,15 +953,15 @@ Made-up example. Reading a synthetic funnel for a tool library, and reading the 
 
 **What I said first:** The biggest problem is the list: we lose 580 people there, more than everywhere else combined.
 
-**Why that is the wrong reading:** 580 is the largest number because 1,000 is the largest starting point. Most of a landing audience never wanted to borrow anything today.
+**What the proportions showed:** Lost divided by reached: 580 of 1,000 is 58.0 per cent; 240 of 420 is 57.1 per cent; 84 of 180 is 46.7 per cent; 25 of 96 is 26.0 per cent. So the list step is the steepest as well as the biggest, by less than one point.
 
-**What the proportions showed:** 58 per cent at the list, then 57 per cent from opening a tool to beginning a booking, then 47, then 26. The second is nearly as steep and applies to people who had already chosen a tool.
+**Why that did not settle it:** Two synthetic proportions a point apart rank nothing. The arithmetic says the first two steps are about equally steep; it cannot say which matters more.
 
-**Why that step is the interesting one:** Everybody in it has shown intent. Whatever stops them there is stopping people who wanted the thing, which is not true of the first step at all.
+**What separated the two steps:** Who is in them. Many people on a listing never meant to borrow anything today, so some of that drop may be healthy. Everybody who opened a tool had shown intent, so I would look at the second step first: a judgement about commitment, not a bigger percentage.
 
-**Wrong turn:** The wrong turn is ranking by the number lost, because that number is the largest and it is at the top. The top of a funnel is where the least committed people are, and losing them is mostly correct.
+**Wrong turn:** The wrong turn is treating the biggest number lost as the biggest problem. Here the proportions happen to agree, by a hair, so neither ranking settles where to look; what does is who is leaving and whether leaving is healthy there.
 
-**Trade-off:** Proportional drops make the top of the funnel look less urgent than it feels, and somebody will point out that 580 people is a lot of people.
+**Trade-off:** Looking at the second step first means setting aside the step that loses the most people, and somebody will point out that 580 people is a lot of people.
 
 **Unknown:** Still unknown: everything about why, and these numbers are invented anyway. The arithmetic is the thing being practised here, not the product.
 
@@ -960,22 +988,22 @@ Example (made up, synthetic): 1,000 reach the list, 420 open a tool, 180 begin b
 
 Section: practice-plan. Stable action: write-proportional-drops.
 
-Proportional drop is the number lost at a step divided by the number who reached it. 420 to 180 loses 240 of 420, which is about 57 per cent.
+Proportional drop is the number lost at a step divided by the number who reached it. 420 to 180 loses 240 of 420, about 57.1 per cent. Check each division with the Funnel tool in this lesson’s uncertainty calculator.
 
 **Answer:** The proportional drop at each step, with your working
 
-Proportional drop is the number lost at a step divided by the number who reached it. 420 to 180 loses 240 of 420, which is about 57 per cent.
+Proportional drop is the number lost at a step divided by the number who reached it. 420 to 180 loses 240 of 420, about 57.1 per cent. Check each division with the Funnel tool in this lesson’s uncertainty calculator.
 
 
-### The largest proportional drop, and why it is not simply the largest number lost
+### The largest proportional drop, whether it is also the step that loses the most people, and which step you would look at first and why
 
 Section: practice-plan. Stable action: write-largest-drop.
 
-Write your answer for “The largest proportional drop, and why it is not simply the largest number lost”. Use the task instructions below to decide what to include.
+The two rankings can agree or disagree. Made up: 1,000 to 420 loses 580 (58.0 per cent) and 420 to 180 loses 240 (57.1 per cent), so they agree. In a funnel of 1,000, 400, 300, 240, 60, the first step loses most people (600, 60 per cent) but the last is steepest (180 of 240, 75 per cent).
 
-**Answer:** The largest proportional drop, and why it is not simply the largest number lost
+**Answer:** The largest proportional drop, whether it is also the step that loses the most people, and which step you would look at first and why
 
-
+The two rankings can agree or disagree. Made up: 1,000 to 420 loses 580 (58.0 per cent) and 420 to 180 loses 240 (57.1 per cent), so they agree. In a funnel of 1,000, 400, 300, 240, 60, the first step loses most people (600, 60 per cent) but the last is steepest (180 of 240, 75 per cent).
 
 
 ### Write competing explanations
@@ -991,7 +1019,7 @@ Three explanations for the largest drop that the numbers cannot distinguish, eac
 
 **Enough:** The three imply three different pieces of work.
 
-**Competing explanation:** A different reason that fits the same numbers exactly. There are always several, and a funnel cannot choose between them.
+**Competing explanation:** A different reason that fits the same numbers exactly. There are usually several, and a funnel cannot choose between them.
 
 **Separating evidence:** What you would have to observe or ask to tell two explanations apart. It is what turns a funnel into a research question.
 
@@ -1239,18 +1267,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The funnel shows most people stop at checkout. Does that mean the problem is at checkout?
 
-- Yes, since that is the step where they leave.
-- Yes, unless the earlier steps also show drops.
-- No. It shows people stop there. The problem may have been created three steps earlier by a price that was never shown.
+- It does, unless the earlier steps show drops of their own as well.
+- It does, since checkout is the step where they actually give up and leave the whole task.
+- Not necessarily: the cause may sit earlier, such as a price nobody was shown.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, since that is the step where they leave. — Where somebody leaves is where the accumulated reasons become too much. It is not necessarily where any of them started.
+It does, unless the earlier steps show drops of their own as well. — A step can create a problem without losing anybody, by setting an expectation that fails later.
 
-Yes, unless the earlier steps also show drops. — A step can create a problem without losing anybody, by setting an expectation that fails later.
+It does, since checkout is the step where they actually give up and leave the whole task. — Where somebody leaves is where the accumulated reasons become too much. It is not necessarily where any of them started.
 
-No. It shows people stop there. The problem may have been created three steps earlier by a price that was never shown. — A funnel locates where to look, not what to fix. Several explanations always fit the same drop, and choosing one without evidence is how expensive redesigns of the wrong screen happen.
+Not necessarily: the cause may sit earlier, such as a price nobody was shown. — A funnel locates where to look, not what to fix. Several explanations can fit the same drop, and choosing one without evidence is how expensive redesigns of the wrong screen happen.
 
 Improve: Write three explanations for your largest drop in step 3, at least one of which is about an earlier step. Record the change in step 5.
 
@@ -1267,24 +1295,24 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-The biggest number of people is lost at the first step. Is that your biggest problem?
+In the lesson’s synthetic funnel, the list step loses 580 of 1,000 (58.0 per cent) and opening a tool to beginning a booking loses 240 of 420 (57.1 per cent). Is the list step your biggest problem?
 
-- Yes, because improving it would affect the most people.
-- Yes, since that is where most people are lost.
-- Probably not. The top of a funnel holds the least committed people, and losing most of them is correct.
+- It is, since it loses the most people and has the highest percentage as well.
+- Not shown: the two drops are nearly equal, and the list holds the least committed people.
+- It is, because improving the first step would reach by far the largest number of people overall.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, because improving it would affect the most people. — It would affect the most people who were never going to continue.
+It is, since it loses the most people and has the highest percentage as well. — It does both, by a hair. The biggest drop is where to look, not proof of the biggest problem, and some people on a listing should leave.
 
-Yes, since that is where most people are lost. — It is where most people are, so it is where most people leave. The proportion is what makes steps comparable.
+Not shown: the two drops are nearly equal, and the list holds the least committed people. — The list step is steepest by less than a point, and on invented numbers that gap means nothing. Which step to look at first depends on who is leaving and whether leaving is healthy there; people who had opened a tool had already shown intent.
 
-Probably not. The top of a funnel holds the least committed people, and losing most of them is correct. — Ranking by proportion rather than by count moves attention to steps where people had already shown intent. Those are the ones where a loss means something.
+It is, because improving the first step would reach by far the largest number of people overall. — It would reach the most people, many of whom were never going to continue.
 
-Improve: Work out proportional drops in step 2 and identify the largest by proportion. Record the change in step 5.
+Improve: Work out the people lost and the proportional drop at every step in step 2, then say which step you would look at first and why. Record the change in step 5.
 
-Check again: Your largest drop was chosen by proportion with the working shown.
+Check again: Your choice of step rests on the working shown and on who is leaving, not on the count alone.
 
 Answers to revisit: counts-invented, proportional-drops, largest-drop, improvement-made
 
@@ -1299,18 +1327,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your funnel uses invented numbers and the caption says so. Is that enough?
 
-- Yes, since everybody in the room knows.
-- No. Charts get screenshotted and travel without their captions, so the word belongs in the chart itself.
-- Yes, a caption is a clear label.
+- It is enough, because a caption is a clear, visible label for the numbers.
+- Not quite: charts travel without captions, so the label belongs in the chart.
+- It is enough, since everybody in the room already knows they are invented.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, since everybody in the room knows. — Everybody in the room does. The chart outlives the room.
+It is enough, because a caption is a clear, visible label for the numbers. — It is clear while it is attached, which is not for long.
 
-No. Charts get screenshotted and travel without their captions, so the word belongs in the chart itself. — A synthetic funnel quoted six months later as a real conversion rate is the exact damage this rule prevents, and it costs four words to avoid.
+Not quite: charts travel without captions, so the label belongs in the chart. — Charts get screenshotted and pasted elsewhere. A synthetic funnel quoted six months later as a real conversion rate is the exact damage this rule prevents, and it costs four words to avoid.
 
-Yes, a caption is a clear label. — It is clear while it is attached, which is not for long.
+It is enough, since everybody in the room already knows they are invented. — Everybody in the room does. The chart outlives the room.
 
 Improve: Move the synthetic label into the chart title in step 5 and record the change.
 
@@ -1350,15 +1378,41 @@ On the chart, not only in a caption. Charts travel away from their captions.
 On the chart, not only in a caption. Charts travel away from their captions.
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case, invented counts: a museum’s online ticket shop. 2,000 people view the exhibitions page, 900 open an exhibition, 300 choose a date, 240 enter their details and 60 pay. The payment step asks for a postcode and a phone number that earlier steps never mentioned.
+
+**Task:** Work out the proportional drop at each step, say which step you would investigate first, and explain why that step rather than the one that loses the most people.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Picks the first step because it loses the most people (1,100), or treats the payment drop as proof of what is wrong with the payment screen.
+- Adequate: Computes 55.0, 66.7, 20.0 and 75.0 per cent, picks the details-to-payment step (180 of 240) as steepest among committed people, and frames it as where to look, not a proven cause.
+- Strong: As adequate, and offers more than one explanation (the unexpected postcode and phone number, price, interruption), says what evidence would separate them, and labels the counts invented.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -1386,7 +1440,7 @@ What I am trying to do: Build a funnel for one task from explicitly synthetic co
 Key idea or terms:
 Funnel: A count of people reaching each step of one task. It shows where people stop and never why.
 What counts as reaching: The definition of each step. Without it, two people count the same thing differently and the numbers cannot be compared.
-Proportional drop: People lost at a step divided by people who reached it. Going from 420 to 180 loses 240 of 420, about 57 per cent.
+Proportional drop: People lost at a step divided by people who reached it. Going from 420 to 180 loses 240 of 420, about 57.1 per cent. It makes steps that start with different numbers of people comparable.
 
 Supplied practice material (fictional or labelled practice, not my research):
 Made-up example. Reading a synthetic funnel for a tool library, and reading the wrong drop as the biggest. Synthetic throughout: 1,000 reach the list, 420 open a tool, 180 begin booking, 96 reach payment, 71 complete.
@@ -1489,7 +1543,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 - A funnel is a simple instrument: define the steps of one task, count how many people reach each, and look at where the number falls. Its value is direction — it tells you where to spend qualitative effort — and its danger is that the shape looks explanatory when it is only descriptive.
 - Every drop has multiple explanations. People leaving at payment might not trust the payment, might have discovered a cost, might have intended to check with someone, or might have been interrupted. The funnel cannot separate these, and the choice between them is usually made by whoever has the strongest opinion unless someone goes and finds out.
 - Some drops are healthy. A step that filters out people who cannot attend on that date is doing its job, and treating every fall as a leak leads to designs that push people forward into commitments they will regret and cancel. Ask what a correct drop would look like before treating one as a problem.
-- Because you have no real traffic, this lesson uses synthetic counts, and the rule from the resource catalog applies: label them synthetic wherever they appear, including in a portfolio. A funnel built from invented numbers teaches the reasoning and proves nothing about a real product.
+- Because you have no real traffic, this lesson uses synthetic counts, and the rule from the resource catalog applies: label them synthetic wherever they appear, including in a portfolio. A funnel built from invented numbers teaches the reasoning and proves nothing about a real product; it cannot confirm or locate anything you observed in research either. The Funnel tool in this lesson's uncertainty calculator takes your step counts and shows the people lost and the proportional drop (lost ÷ reached) at each step, so you can check your own arithmetic.
 
 [GOV.UK: measuring success](https://www.gov.uk/service-manual/measuring-success).
 
@@ -1572,7 +1626,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Three rates were reworked. From the m05 survey: 9 of 22 unsure their payment had gone through, previously written as 41 per cent. With the interval computed and shown, the range covered roughly a quarter to three-fifths, so the claim became the count. From the m10 test: 2 of 3 could not tell the place was held, previously written as 67 per cent, rewritten as the count with the sample route stated. From the synthetic funnel: a comparison between two steps was removed entirely, because the numbers were invented and comparing invented numbers produces nothing.
+- Made-up example: three rates were reworked. From the m05 survey: 9 of 22 unsure their payment had gone through, previously written as 41 per cent. With the 95 per cent Wilson interval computed and shown (about 23 to 61 per cent, from just under a quarter to about three-fifths), the claim became the count. From the m10 test: 2 of 3 could not tell the place was held, previously written as 67 per cent; its interval runs from about 21 to 94 per cent, so it was rewritten as the count with the sample route stated. From the synthetic funnel: a comparison between two steps was removed entirely, because the numbers were invented and comparing invented numbers produces nothing.
 
 
 ### Choose where you will do the work
@@ -1648,7 +1702,7 @@ Made-up example. Reporting a survey result from a tool library, and reporting it
 
 **What was behind it:** Nine people out of twenty-two who answered a survey. I knew that; the sentence did not say it.
 
-**What the interval was:** Roughly 24 to 61 per cent. So the honest version of my precise-looking claim is somewhere between a quarter and three-fifths.
+**What the interval was:** About 23 to 61 per cent, using the 95 per cent Wilson interval. So the honest version of my precise-looking claim is somewhere between just under a quarter and about three-fifths.
 
 **What happened when somebody checked:** They asked how many people. Once twenty-two was said out loud, the 41 per cent read as false precision, and everything else in the document was read more suspiciously.
 
@@ -1665,11 +1719,11 @@ Made-up example. Reporting a survey result from a tool library, and reporting it
 
 Section: practice-plan. Stable action: write-interval-method.
 
-Any published interval formula for a proportion. Name it so somebody can check your arithmetic.
+The One rate tool in this lesson’s uncertainty calculator gives a 95 per cent Wilson score interval; write that name. If you used another published formula, name it so somebody can check your arithmetic.
 
 **Answer:** The formula or tool you used, named
 
-Any published interval formula for a proportion. Name it so somebody can check your arithmetic.
+The One rate tool in this lesson’s uncertainty calculator gives a 95 per cent Wilson score interval; write that name. If you used another published formula, name it so somebody can check your arithmetic.
 
 
 ### For each rate: the interval, with the inputs you used
@@ -1685,7 +1739,7 @@ Write your answer for “For each rate: the interval, with the inputs you used�
 <details>
 <summary>Example</summary>
 
-Example (made up): 9 of 22 gives about 41 per cent, with an interval running from roughly 24 to 61 per cent.
+Example (made up): 9 of 22 gives 40.9 per cent, with a 95 per cent Wilson interval from about 23 to 61 per cent.
 
 </details>
 
@@ -1694,11 +1748,11 @@ Example (made up): 9 of 22 gives about 41 per cent, with an interval running fro
 
 Section: practice-plan. Stable action: write-what-interval-means.
 
-Roughly: the range of true values that would not be surprising, given this many people.
+Roughly: the range of underlying rates that these counts are compatible with, at 95 per cent confidence. It covers chance in who happened to answer, not bias in who was asked.
 
 **Answer:** What the interval means, in your own words
 
-Roughly: the range of true values that would not be surprising, given this many people.
+Roughly: the range of underlying rates that these counts are compatible with, at 95 per cent confidence. It covers chance in who happened to answer, not bias in who was asked.
 
 
 ### Rewrite the claims
@@ -1790,7 +1844,7 @@ supportable as written — Sixty-seven per cent of three people is two people. T
 
 needs the count instead — Two of the three people we watched. It is a real and useful finding, stated at the size it is.
 
-the interval is not the problem — An interval on three people would cover almost everything, which is the point.
+the interval is not the problem — An interval on three people covers almost everything (about 21 to 94 per cent for two of three), which is the point.
 
 Now rewrite your own three, and check each says how the people came to be asked.
 
@@ -1812,7 +1866,7 @@ Six sentences from a made up tool-library report. For each one, decide whether t
 <details>
 <summary>After your attempt</summary>
 
-supportable as written — Forty is a reasonable count and the interval is not wide. Who those forty are is the difficulty.
+supportable as written — The interval (about 65 to 90 per cent) is the narrowest here. Who those forty are is the difficulty.
 
 needs the count instead — Thirty-two of forty is better and does not fix it either.
 
@@ -1890,11 +1944,11 @@ Usually this means the count with the route stated: 9 of 22 people who answered 
 
 Section: practice-plan. Stable action: write-route-stated.
 
-Recruited how, from where. A rate from people who volunteered is about people who volunteer.
+Recruited how, from where, described as a route (for example, a members’ newsletter), never as names or contacts. A rate from people who volunteered is about people who volunteer.
 
 **Answer:** For each: how those people came to be asked
 
-Recruited how, from where. A rate from people who volunteered is about people who volunteer.
+Recruited how, from where, described as a route (for example, a members’ newsletter), never as names or contacts. A rate from people who volunteered is about people who volunteer.
 
 
 ### Handle a comparison
@@ -1903,14 +1957,14 @@ Section: practice-plan. Stable action: step-4-brief.
 
 One comparison examined with both intervals, then qualified or abandoned with the reason.
 
-- Take a comparison between two rates and examine both intervals.
+- Take a comparison between two rates and compute the 95 per cent interval for their difference.
 - Qualify or abandon the comparison, and say why.
 
-**Start here:** Write both intervals down and see whether they overlap before deciding anything.
+**Start here:** Put both counts into the Two rates tool and read the interval for the difference before deciding anything.
 
-**Enough:** Your decision names the overlap, or names a different reason such as invented numbers.
+**Enough:** Your decision names the interval for the difference and whether it includes zero, or a different reason such as invented numbers.
 
-**Comparing two rates:** Harder than reporting one. Two wide intervals that overlap mean the difference could easily be nothing at all.
+**Comparing two rates:** Harder than reporting one. Work out the interval for the difference itself. Whether the two separate intervals overlap is not a test: made up, 120 of 200 against 95 of 200 have overlapping intervals, yet the difference interval, about 2.7 to 21.9 points, excludes zero.
 
 **Abandoning a comparison:** A legitimate result. Removing it is better than qualifying it so heavily that nobody reads the qualification.
 
@@ -1938,26 +1992,33 @@ Made-up example. Comparing two rates from a tool-library study, and comparing in
 **Unknown:** Still unknown: whether the real completion rate is anywhere near either figure. Nothing here measured it, and the document now says so.
 
 
-### A comparison between two rates, with both intervals
+### A comparison between two rates: both counts, the difference, and the 95 per cent interval for the difference
 
 Section: practice-plan. Stable action: write-comparison-examined.
 
-Write your answer for “A comparison between two rates, with both intervals”. Use the task instructions below to decide what to include.
+Use the Two rates tool in this lesson’s uncertainty calculator, which works out the difference and its interval directly (Newcombe’s method). Do not judge by whether the two separate intervals overlap: they can overlap while the difference is clear.
 
-**Answer:** A comparison between two rates, with both intervals
+**Answer:** A comparison between two rates: both counts, the difference, and the 95 per cent interval for the difference
 
+Use the Two rates tool in this lesson’s uncertainty calculator, which works out the difference and its interval directly (Newcombe’s method). Do not judge by whether the two separate intervals overlap: they can overlap while the difference is clear.
 
+<details>
+<summary>Example</summary>
+
+Example (made up): 44 of 100 against 36 of 100 is a difference of 8 points, with a 95 per cent interval for the difference from about −5.5 to +21.1 points.
+
+</details>
 
 
 ### Whether you qualified it or abandoned it, and why
 
 Section: practice-plan. Stable action: write-comparison-decision.
 
-Overlapping intervals mean the difference could easily be nothing.
+If the interval for the difference includes zero, the counts are consistent with no difference, and also with a sizeable one: say so, or drop the comparison. If it excludes zero, report the difference with its interval and sample route. Invented numbers: remove the comparison.
 
 **Answer:** Whether you qualified it or abandoned it, and why
 
-Overlapping intervals mean the difference could easily be nothing.
+If the interval for the difference includes zero, the counts are consistent with no difference, and also with a sizeable one: say so, or drop the comparison. If it excludes zero, report the difference with its interval and sample route. Invented numbers: remove the comparison.
 
 
 ### Check your reasoning · 1 of 3
@@ -1968,18 +2029,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Are percentages more professional than counts?
 
-- Yes, since they allow comparison between studies.
-- Yes, provided the sample size is stated nearby.
-- They look more precise. At small samples the precision is fictional, and a reader who checks the sample will trust nothing else in the document.
+- They are, since a percentage allows fair comparison between different studies and samples.
+- They only look more precise; from small samples that precision is fictional.
+- They are, provided the sample size is stated somewhere nearby.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, since they allow comparison between studies. — Comparison needs both intervals and compatible definitions. A percentage from twenty-two people compares with very little.
+They are, since a percentage allows fair comparison between different studies and samples. — Comparison needs compatible definitions and an interval for the difference. A percentage from twenty-two people compares with very little.
 
-Yes, provided the sample size is stated nearby. — Stated nearby, the percentage is still the part that gets quoted.
+They only look more precise; from small samples that precision is fictional. — Sixty-seven per cent of three people is two people, with a 95 per cent interval of about 21 to 94 per cent. Counts read as less impressive and survive the first question, and a reader who checks the sample of a percentage may trust nothing else in the document.
 
-They look more precise. At small samples the precision is fictional, and a reader who checks the sample will trust nothing else in the document. — Sixty-seven per cent of three people is two people. Counts read as less impressive and survive the first question, which percentages from small samples do not.
+They are, provided the sample size is stated somewhere nearby. — Stated nearby, the percentage is still the part that gets quoted.
 
 Improve: Rewrite your smallest-sample claim as a count with its route in step 3, and record the change in step 5.
 
@@ -1996,24 +2057,24 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Two of your rates differ by eight points, and both intervals are about twenty points wide and overlap. What can you say?
+In a made-up survey, 44 of 100 members at one branch and 36 of 100 at another were unsure their payment went through. The Two rates tool gives a difference of 8 points, with a 95 per cent interval from −5.5 to +21.1 points. What can you say?
 
-- That the difference is suggestive and worth investigating.
-- That the difference could easily be nothing. The honest move is to qualify it heavily or drop the comparison.
-- That one is higher than the other, which is what the numbers show.
+- The interval includes zero, so these counts fit no difference as well as a real one.
+- There is no difference, because the two separate intervals overlap.
+- The first branch is eight points higher, which is exactly what the two sets of counts show.
 
 <details>
 <summary>After your attempt</summary>
 
-That the difference is suggestive and worth investigating. — That wording survives into summaries as a finding. If you keep it, say plainly that the samples are consistent with no difference.
+The interval includes zero, so these counts fit no difference as well as a real one. — The interval for the difference is the test. It runs from slightly below zero to about 21 points, so the honest move is to report it with that range or drop the comparison. Note the reason is the difference interval, not whether the two separate intervals overlap.
 
-That the difference could easily be nothing. The honest move is to qualify it heavily or drop the comparison. — Comparing two rates needs more care than reporting one, and overlapping intervals mean the samples are consistent with no difference at all.
+There is no difference, because the two separate intervals overlap. — Overlap of two separate intervals is not a test either way: intervals can overlap while the difference is clear. And “no difference” goes too far, since the difference interval reaches 21 points.
 
-That one is higher than the other, which is what the numbers show. — The numbers show it in these samples. Another twenty-two people could easily reverse it.
+The first branch is eight points higher, which is exactly what the two sets of counts show. — The counts show it in these two samples. The interval for the difference includes zero, so another hundred members at each branch could easily narrow or reverse it.
 
-Improve: Examine both intervals in step 4 and decide to qualify or abandon, with the reason. Record the change in step 5.
+Improve: Compute the interval for the difference in step 4 with the Two rates tool, and decide to qualify or abandon, with the reason. Record the change in step 5.
 
-Check again: Your comparison names the overlap.
+Check again: Your comparison names the interval for the difference, not the overlap of two separate intervals.
 
 Answers to revisit: comparison-examined, comparison-decision, improvement-made
 
@@ -2026,20 +2087,20 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Eighty per cent of your forty panel volunteers preferred the new flow. The interval is not too wide. Is the claim sound?
+Thirty-two of your forty panel volunteers (80 per cent) preferred the new flow; the 95 per cent Wilson interval is about 65 to 90 per cent. Can you say most members prefer it?
 
-- Yes, if the panel was recruited randomly from members.
-- The interval is not the problem. People who volunteer for a panel are unlike people who do not, and no arithmetic corrects that.
-- Yes, forty is a reasonable sample.
+- Not from this: volunteers differ from other members, and no interval corrects that.
+- You can, since forty is a reasonable sample and the whole interval stays well above half.
+- You can, provided the volunteers came from a list of all members.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, if the panel was recruited randomly from members. — Then it would be much stronger, and volunteering to join is the step that breaks it.
+Not from this: volunteers differ from other members, and no interval corrects that. — The repair is to state the route and narrow the claim to the panel. Sample size and sample route are two different things, and only one of them has a formula.
 
-The interval is not the problem. People who volunteer for a panel are unlike people who do not, and no arithmetic corrects that. — The repair is to state the route and narrow the claim to the panel. Sample size and sample route are two different things, and only one of them has a formula.
+You can, since forty is a reasonable sample and the whole interval stays well above half. — Forty of whom is the question the interval cannot answer. It describes chance among these volunteers, not the members who never volunteered.
 
-Yes, forty is a reasonable sample. — Forty of whom is the question the interval cannot answer.
+You can, provided the volunteers came from a list of all members. — A list of all members is where they came from, not how they were chosen: volunteering to join is the step that breaks it. A random draw from the list would be much stronger.
 
 Improve: Add how the people came to be asked beside every rate in step 3, and narrow any claim that outruns it. Record the change in step 5.
 
@@ -2086,15 +2147,41 @@ Example (made up): counts below about thirty are reported as counts. Above that,
 </details>
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a swimming club’s newsletter says “45% of parents find the new lesson-booking page confusing”. Behind it: 9 of the 20 parents who replied to a post on the club’s noticeboard. The draft also says “confusion is higher among new families”, from 5 of 8 new families against 4 of 12 longer-standing ones.
+
+**Task:** Rewrite the first claim so the numbers support it, decide what to do with the comparison, and explain both decisions.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Keeps 45 per cent as a fact about all parents, or calls the new-family difference real because 62 is bigger than 33, or judges it by whether the separate intervals overlap.
+- Adequate: Rewrites as 9 of the 20 parents who replied to the noticeboard post (interval roughly 26 to 66 per cent), and qualifies or drops the comparison because the interval for the difference includes zero.
+- Strong: As adequate, and names the route problem (people who reply to a noticeboard post are not all parents) separately from the sample size, and says what would be needed for a firmer claim.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -2144,8 +2231,8 @@ When the activity is finished, tell me to return to the course answer called “
 - Compute each interval in a spreadsheet and record the numbers you put in.
 - Replace each percentage with the count and add who the sample was.
 
-- R37: [NN/g: confidence intervals and margins of error](https://www.nngroup.com/articles/confidence-interval/) — What an interval means, confidence levels, and the effect of sample size and variability. Purpose: Supplies the reasoning and the reason to report counts. Free reading, no account. Verified 2026-09-06. It deliberately gives no formulas, so name the one you used and show your inputs. Fallback: R45.
-- R45: [NN/g: sample sizes for quantitative studies](https://www.nngroup.com/articles/summary-quant-sample-sizes/) — Recommended counts and the assumptions behind them. Purpose: Shows what a study designed to measure would need, as a contrast with what you have. Free reading, no account. Verified 2026-09-06. Binary success metrics only; it excludes A/B tests, surveys, card sorting and tree testing and does not license claims from smaller samples. Fallback: R37.
+- R37: [NN/g: confidence intervals and margins of error](https://www.nngroup.com/articles/confidence-interval/) — What an interval means, confidence levels, and the effect of sample size and variability. Purpose: Supplies the reasoning and the reason to report counts. Free reading, no account. Verified 2026-09-06. It deliberately gives no formulas; this lesson's uncertainty calculator supplies the Wilson method, so name it and show your inputs. Fallback: R45.
+- R45: [NN/g: sample sizes for quantitative studies](https://www.nngroup.com/articles/summary-quant-sample-sizes/) — Recommended counts and the assumptions behind them. Purpose: Shows what a study designed to measure would need, as a contrast with what you have. Free reading, no account. Verified 2026-09-06; content rechecked 2026-10-04. It sizes a study estimating one metric from one group; it does not cover A/B tests, surveys, card sorting or tree testing, and does not license claims from smaller samples. Fallback: R37.
 
 </details>
 <details>
@@ -2187,11 +2274,11 @@ Adequate evidence: One two-rate comparison examined, with a decision and reasoni
 
 1 — Qualified vaguely.
 
-2 — Examined against both intervals and decided.
+2 — Examined using the interval for the difference, and decided.
 
-3 — As adequate, and the decision is to abandon it where the intervals overlap substantially.
+3 — As adequate, and the write-up says that overlapping separate intervals are not a test.
 
-Repair: Compute both intervals and check whether they overlap; if they do, the comparison is not supported. Recheck: The comparison decision.
+Repair: Compute the interval for the difference with the Two rates tool; if it includes zero, say the data are consistent with no difference, or drop the comparison. Recheck: The comparison decision.
 
 **A personal rule for reporting rates is written**
 
@@ -2222,10 +2309,10 @@ The progress bar counts required actions with saved work. It is not a score or p
 <details>
 <summary>Reading, video and deeper explanation</summary>
 
-- The assigned interval reading explains that a rate is an estimate with uncertainty attached, and that the uncertainty shrinks slowly as the sample grows. At the sizes available to you — a survey of twenty-two, a test of five — the interval around any percentage covers so much ground that the percentage carries almost no information, which is why this course has insisted on counts since m05.
+- The assigned interval reading explains that a rate is an estimate with uncertainty attached, and that the uncertainty shrinks slowly as the sample grows. At the sizes available to you — a survey of twenty-two, a test of five — the interval around any percentage covers so much ground that the percentage carries far less information than its digits suggest: 9 of 22 has a 95 per cent Wilson interval from about 23 to 61 per cent. That is why this course has insisted on counts since m05. The One rate tool in this lesson's uncertainty calculator computes that interval for you.
 - The practical rule has two branches. If you must report a rate, attach the interval and show your inputs. If the interval is so wide that the rate is uninformative, report the count and let the reader see the size directly. Both are honest; only the bare percentage is not.
-- The sample-size reading is for planning: it tells you what a study designed to measure a binary outcome would need. It is not a justification for a claim made from a smaller sample, and it explicitly excludes surveys, card sorting and tree testing, which is why m05, m06 and m10 all reported counts.
-- Comparing two rates is harder than reporting one, because both carry intervals and the difference carries a wider one still. Two overlapping intervals do not establish a difference, and reporting “A improved on B” from small samples is the failure mode most likely to reach a decision meeting unchallenged.
+- The sample-size reading is for planning: it tells you what a study designed to estimate one metric from one group would need, such as about 40 participants for a binary success rate at a 15 per cent margin of error and 95 per cent confidence. It is not a justification for a claim made from a smaller sample, and it does not cover surveys, card sorting, tree testing or comparisons between two versions, which is part of why m05, m06 and m10 reported counts.
+- Comparing two rates is harder than reporting one. Compute the interval for the difference itself, which the Two rates tool does with Newcombe's method; do not judge by whether the two separate intervals overlap, because overlap is not a test either way. Made up: 120 of 200 against 95 of 200 have overlapping separate intervals, yet the difference, 12.5 points, has an interval of about 2.7 to 21.9 points that excludes zero; 44 of 100 against 36 of 100 gives an interval of about −5.5 to +21.1 points that includes it. Reporting “A improved on B” without that interval is the failure most likely to reach a decision meeting unchallenged.
 
 [NN/g: confidence intervals and margins of error](https://www.nngroup.com/articles/confidence-interval/).
 
@@ -2308,7 +2395,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The designed test: hypothesis, that a held-place message reduces duplicate payments; variants, current and with the message; primary metric, duplicate payments per hundred bookings; guardrails, completion rate and support contacts. The required sample, using the article's reasoning, was far beyond the product's traffic — the honest calculation showed months of data for a plausible effect. The refusal was written, with what would change it: ten times the traffic, or a much larger expected effect. The alternative was three moderated comparisons plus counting duplicate payments in the provider's records before and after, with the confounding stated.
+- Made-up example, with assumed figures labelled as assumptions: hypothesis, that a held-place message reduces duplicate payments; variants, current and with the message; primary metric, duplicate payments per hundred bookings, assumed to be 6 today; guardrails, completion rate and support contacts. The smallest effect worth acting on was 6 down to 4 per hundred. At two-sided 5 per cent significance and 80 per cent power that needs 1,863 bookings per version, 3,726 in all; at an assumed 150 bookings a week that is 24.8 weeks, rounded up to 25, about six months. The refusal was written, with what would change it: several times the traffic, or a much larger expected effect. The alternative was three moderated comparisons plus counting duplicate payments in the provider's records before and after, labelled as monitoring with the confounding stated, not as a result.
 
 
 ### Choose where you will do the work
@@ -2403,7 +2490,7 @@ The why matters. A hypothesis with no reasoning behind it cannot be wrong in an 
 <details>
 <summary>Example</summary>
 
-Example (made up): a held-place message reduces duplicate payments, because people currently pay again when they cannot tell whether the first payment worked. If duplicates do not fall, the cause is elsewhere.
+Example (made up): a held-place message reduces duplicate payments, because people currently pay again when they cannot tell whether the first payment worked. I would be wrong if a properly sized test showed no fewer duplicates with the message; then the payment confirmation is the next place to look.
 
 </details>
 
@@ -2446,21 +2533,21 @@ Section: practice-plan. Stable action: step-3-demo.
 
 Made-up example. Designing a test for a tool library, and choosing the effect size afterwards.
 
-**What I did first:** Worked out how much traffic we have, then found the effect size that would be detectable with it. About twelve percentage points.
+**What I did first:** Assumed figures, labelled as such: 6 duplicate payments per 100 bookings and 150 bookings a week. A four-week test gives 300 bookings per version, and at 80 per cent power that can only detect a fall from 6 to about 1.6 per 100.
 
-**Why that felt sensible:** It made the test feasible. Anything smaller was unreachable, so twelve became the number I designed around.
+**Why that felt sensible:** It made the test feasible in a month. Anything smaller was out of reach, so a fall of about four and a half points became the number I designed around.
 
-**What it actually meant:** I was committing to only noticing an enormous effect. A message that cut duplicate payments by a third would have come back as no result at all.
+**What it actually meant:** I was committing to noticing only an enormous effect: three-quarters of all duplicates gone. A message that cut duplicates by a third, from 6 to 4 per 100, would have had only about a one-in-five chance of showing up.
 
-**What choosing first produced:** The smallest effect worth acting on is about three points, because below that the work costs more than it saves. That number came from the problem rather than from the traffic.
+**What choosing first produced:** The smallest effect worth acting on is 6 down to 4 per 100, a third fewer duplicates, because below that the work costs more than it saves. That number came from the problem rather than from the traffic.
 
-**What the honest calculation then showed:** Months of data for three points, at this traffic. The test is not available, which is a finding rather than a failure, and it is the finding the lesson is asking for.
+**What the honest calculation then showed:** 1,863 bookings per version, 3,726 in all. At 150 a week that is 24.8 weeks, rounded up to 25: about six months. The test is not available, which is a finding rather than a failure.
 
 **Wrong turn:** The wrong turn is working backwards from the traffic you have, because it makes the test possible. What it produces is a test that can only detect effects so large you would not need a test to see them.
 
 **Trade-off:** Choosing the effect size from the problem usually means concluding that you cannot run the experiment, which is a worse outcome to report and a true one.
 
-**Unknown:** Still unknown: what the real duplicate-payment rate is. The calculation used a plausible figure, labelled as an assumption, and a different one would change the months considerably.
+**Unknown:** Still unknown: what the real duplicate-payment rate is. The calculation used assumed figures, labelled as assumptions; at a 3 per cent baseline, halving it would need 1,534 bookings per version, so the months change with the baseline.
 
 
 ### One primary metric, taken from your metric tree
@@ -2509,7 +2596,7 @@ Section: practice-plan. Stable action: step-4-brief.
 
 A sample estimate with your inputs, a duration at your actual traffic, and where that traffic figure comes from.
 
-- Estimate the sample needed for that effect and the duration.
+- Estimate the sample per version for that effect (two-sided 5 per cent, power 80 per cent) and the duration in whole weeks.
 - Compare with the traffic you actually have.
 
 **Start here:** Do the arithmetic with the numbers you have, and label any assumption as an assumption.
@@ -2518,29 +2605,45 @@ A sample estimate with your inputs, a duration at your actual traffic, and where
 
 **Required sample:** How many people each variant needs before a difference of the size you care about could be told apart from noise. Smaller effects need far more people.
 
-**Duration:** The sample divided by your weekly traffic. It is the number that usually ends the conversation.
+**Duration:** The total sample for both versions divided by eligible weekly traffic, rounded up to whole weeks, and never less than one to two weeks. It is the number that usually ends the conversation.
+
+**Peeking:** Checking a running test and stopping when the difference looks convincing. Repeated looks manufacture differences out of noise, so the duration is fixed before the start.
 
 
 ### The sample needed for that effect, with your inputs and method
 
 Section: practice-plan. Stable action: write-sample-estimate.
 
-Write your answer for “The sample needed for that effect, with your inputs and method”. Use the task instructions below to decide what to include.
+Standard settings: two-sided 5 per cent significance and 80 per cent power. For a baseline rate p1 and the smallest rate worth acting on p2, with p̄ their average, people per version ≈ (1.96 × √(2 × p̄ × (1 − p̄)) + 0.8416 × √(p1 × (1 − p1) + p2 × (1 − p2)))² ÷ (p1 − p2)², rounded up. Check: 10 to 12 per cent needs 3,841 per version. In a spreadsheet, with p1 in A1 and p2 in B1: =ROUNDUP((1.96*SQRT((A1+B1)*(1-(A1+B1)/2))+0.8416*SQRT(A1*(1-A1)+B1*(1-B1)))^2/(A1-B1)^2,0).
 
 **Answer:** The sample needed for that effect, with your inputs and method
 
+Standard settings: two-sided 5 per cent significance and 80 per cent power. For a baseline rate p1 and the smallest rate worth acting on p2, with p̄ their average, people per version ≈ (1.96 × √(2 × p̄ × (1 − p̄)) + 0.8416 × √(p1 × (1 − p1) + p2 × (1 − p2)))² ÷ (p1 − p2)², rounded up. Check: 10 to 12 per cent needs 3,841 per version. In a spreadsheet, with p1 in A1 and p2 in B1: =ROUNDUP((1.96*SQRT((A1+B1)*(1-(A1+B1)/2))+0.8416*SQRT(A1*(1-A1)+B1*(1-B1)))^2/(A1-B1)^2,0).
 
+<details>
+<summary>Example</summary>
+
+Example (made up, assumed figures): baseline 6 duplicate payments per 100 bookings, smallest effect worth acting on 6 down to 4 per 100: 1,863 bookings per version, 3,726 in all.
+
+</details>
 
 
 ### How long that would take at your actual traffic
 
 Section: practice-plan. Stable action: write-duration.
 
-Write your answer for “How long that would take at your actual traffic”. Use the task instructions below to decide what to include.
+Duration = total sample for both versions ÷ eligible traffic per week, rounded up to whole weeks so every weekday is covered equally, and never shorter than the one-to-two-week minimum the reading recommends. Decide it before starting and do not stop early because an interim look seems convincing.
 
 **Answer:** How long that would take at your actual traffic
 
+Duration = total sample for both versions ÷ eligible traffic per week, rounded up to whole weeks so every weekday is covered equally, and never shorter than the one-to-two-week minimum the reading recommends. Decide it before starting and do not stop early because an interim look seems convincing.
 
+<details>
+<summary>Example</summary>
+
+Example (made up): 3,726 bookings ÷ 150 eligible bookings a week = 24.8, so 25 weeks, about six months.
+
+</details>
 
 
 ### The traffic you actually have, and where that number comes from
@@ -2562,20 +2665,20 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Somebody suggests a quick A/B test to settle a design disagreement. What is the problem?
 
-- With low traffic, a short test produces a difference that is noise, and the noise will be read as a result.
-- A/B tests cannot settle design disagreements.
-- It would take too long to set up.
+- A/B tests cannot settle a design disagreement of this kind, whatever the traffic or duration.
+- On low traffic, a short test’s difference is mostly noise, and noise gets read as a result.
+- It would take the team too long to set up the two versions properly.
 
 <details>
 <summary>After your attempt</summary>
 
-With low traffic, a short test produces a difference that is noise, and the noise will be read as a result. — Designing the test properly is what shows this: the required sample for an effect worth acting on is usually months of data. A test that cannot detect the effect you care about settles nothing and looks as though it did.
+A/B tests cannot settle a design disagreement of this kind, whatever the traffic or duration. — A properly powered one can settle a narrow version of the question. The problem here is the power rather than the method.
 
-A/B tests cannot settle design disagreements. — A properly powered one can settle a narrow version of the question. The problem here is the power rather than the method.
+On low traffic, a short test’s difference is mostly noise, and noise gets read as a result. — Designing the test properly shows this: in the lesson’s worked example, a two-point fall needs 3,726 bookings, 25 weeks at 150 a week. A test that cannot detect the effect you care about settles nothing and looks as though it did.
 
-It would take too long to set up. — Setup is usually the smallest cost. The traffic is the constraint.
+It would take the team too long to set up the two versions properly. — Setup is usually the smallest cost. The traffic is the constraint.
 
-Improve: Calculate the required sample and the duration in step 4 using your real traffic, and record the change in step 5.
+Improve: Calculate the required sample and the duration in step 4 using your real traffic and the formula in the hint, and record the change in step 5.
 
 Check again: Your duration is based on a traffic figure with a stated source.
 
@@ -2592,18 +2695,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You chose your effect size by finding what would be detectable with your traffic. What did that do?
 
-- Nothing much, since the calculation is the same either way.
-- It committed you to noticing only enormous effects, and to reporting a real improvement as no result.
-- It made the test feasible, which is a reasonable trade.
+- It set the test up to detect only huge effects, so a useful one could look like nothing.
+- Nothing much changed, since the calculation is the same whichever way round.
+- It made the test feasible to run within a month, which is a reasonable trade at a small scale.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing much, since the calculation is the same either way. — The arithmetic is the same and the meaning is reversed. One asks what you need; the other asks what you can get away with.
+It set the test up to detect only huge effects, so a useful one could look like nothing. — The smallest effect worth acting on comes from the problem: below what difference would you do nothing? In the worked example, a month of traffic could only detect three-quarters of duplicates disappearing. Choosing the effect first makes the calculation an honest test of feasibility.
 
-It committed you to noticing only enormous effects, and to reporting a real improvement as no result. — The smallest effect worth acting on comes from the problem: below what difference would you do nothing? Choosing it first is what makes the calculation an honest test of feasibility.
+Nothing much changed, since the calculation is the same whichever way round. — The arithmetic is the same and the meaning is reversed. One asks what you need; the other asks what you can get away with.
 
-It made the test feasible, which is a reasonable trade. — Feasible and uninformative is not a trade; it is the appearance of one.
+It made the test feasible to run within a month, which is a reasonable trade at a small scale. — Feasible and uninformative is not a trade; it is the appearance of one.
 
 Improve: Choose the smallest effect that would matter from the problem, in step 3, and redo the calculation. Record the change in step 5.
 
@@ -2622,18 +2725,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You will ship the change and count duplicate payments before and after. Is that an experiment?
 
-- Yes, in effect, since you are comparing two periods.
-- No, so it should not be reported at all.
-- No, and it is the best available answer, as long as the write-up names what else changed in the same period.
+- It is not an experiment, so the counts should not be reported at all.
+- It is an experiment in effect, since it compares the period before with the period after.
+- It is monitoring, worth doing if it names what else changed and claims no cause.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, in effect, since you are comparing two periods. — Two periods are not two randomly split groups. Everything about the world differs between them as well as your change.
+It is not an experiment, so the counts should not be reported at all. — At this scale it is among the best evidence available, as long as it is labelled as monitoring rather than a verdict.
 
-No, so it should not be reported at all. — At this scale it is the strongest evidence available, and the alternative is nothing.
+It is an experiment in effect, since it compares the period before with the period after. — Two periods are not two randomly split groups. Everything about the world differs between them as well as your change.
 
-No, and it is the best available answer, as long as the write-up names what else changed in the same period. — A before-and-after count is confounded by everything else that happened that month. Stating that alongside the figure is what keeps it honest rather than what disqualifies it.
+It is monitoring, worth doing if it names what else changed and claims no cause. — A before-and-after count is confounded by everything else that happened that month. Reported with the confounding beside it, it is a useful trigger: a fall is not proof the change worked, and no change is not proof it failed.
 
 Improve: Write the confounding beside the before-and-after plan in step 5, naming something specific that also changed. Record the change.
 
@@ -2680,7 +2783,7 @@ Run it for two weeks anyway and see what the numbers say.
 <details>
 <summary>After your attempt</summary>
 
-an honest answer — At this traffic, two weeks cannot distinguish a three-point effect from nothing at all.
+an honest answer — At 150 bookings a week, two weeks gives 150 per version. Made up: 9 duplicates against 5 looks like a large fall, yet the Two rates tool gives a 95 per cent interval for the difference of about −2.4 to +8.0 points.
 
 noise that will be read as a result — Whatever difference appears will be noise, and somebody will act on it. This is the outcome the calculation exists to prevent.
 
@@ -2812,7 +2915,7 @@ Ship it to everybody, count duplicates for four weeks, and set a condition that 
 
 an honest answer — It is not an experiment and it does not claim to be. A named signal, a period and a reversal condition is what the release-plan lesson asked for.
 
-noise that will be read as a result — The reversal condition is what keeps it honest: the answer can be no.
+noise that will be read as a result — It stays honest by being called monitoring: an unchanged count is a trigger to investigate, and a fall is not proof the change caused it.
 
 a different question entirely — It is the same question with the best method available at this size.
 
@@ -2854,15 +2957,41 @@ Write your answer for “For any before-and-after counting: what else could expl
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case, assumed figures: an online second-hand bookshop wants to test whether showing delivery cost on the product page raises the share of baskets that complete. Today 20 of every 100 baskets complete. The owner would act on a rise to 25. The shop sees about 400 baskets a week, split evenly between the two versions.
+
+**Task:** Work out the people needed per version and the duration, decide whether to run the test, and explain the decision.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Runs it for a week or two and plans to stop when the difference looks good, or picks the effect size from what the traffic allows.
+- Adequate: Computes about 1,094 baskets per version (2,188 in all), 2,188 ÷ 400 = 5.5 so 6 weeks, decides it can run with a fixed end date, and states the settings (5 per cent two-sided, 80 per cent power).
+- Strong: As adequate, and names a guardrail (such as returns or complaints), says the result will not explain why, and commits to no early stopping on a peek.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -2912,8 +3041,8 @@ When the activity is finished, tell me to return to the course answer called “
 - Write “I expect … because … and I would be wrong if …”.
 - Choose the one metric that decides the result, then name what must not get worse.
 
-- R68: [NN/g: A/B testing 101](https://www.nngroup.com/articles/ab-testing/) — What an A/B test compares, its traffic and duration requirements, the significance convention, and its inability to explain why. Purpose: Supplies the constraints that make the refusal specific rather than vague. Free reading, no account. Verified 2026-09-06; published 30 August 2024. It names no tools, excludes multivariate design and gives no post-test analysis. With no traffic, the honest exercise is the design and the refusal, never a claimed result. Fallback: R37.
-- R45: [NN/g: sample sizes for quantitative studies](https://www.nngroup.com/articles/summary-quant-sample-sizes/) — Sample sizes for binary success metrics. Purpose: Gives a basis for the sample estimate while stating its own exclusions. Free reading, no account. Verified 2026-09-06. Binary metrics only; it explicitly does not cover A/B tests, so treat the estimate as an order of magnitude rather than a calculation. Fallback: R37.
+- R68: [NN/g: A/B testing 101](https://www.nngroup.com/articles/ab-testing/) — What an A/B test compares, its traffic and duration requirements, the significance convention, and its inability to explain why. Purpose: Supplies the constraints that make the refusal specific rather than vague. Free reading, no account. Verified 2026-09-06; content rechecked 2026-10-04; published 30 August 2024. It recommends at least one to two weeks even with sufficient traffic and warns against stopping early; it names no specific tool, points to multivariate testing without covering it, and gives no post-test analysis. With no traffic, the honest exercise is the design and the refusal, never a claimed result. Fallback: R37.
+- R45: [NN/g: sample sizes for quantitative studies](https://www.nngroup.com/articles/summary-quant-sample-sizes/) — Sample sizes for binary success metrics. Purpose: Gives a basis for the sample estimate while stating its own exclusions. Free reading, no account. Verified 2026-09-06; content rechecked 2026-10-04. It sizes a study estimating one metric from one group and does not cover comparing two versions, so it cannot size an A/B test; use the two-proportion formula given in this lesson instead. Fallback: R37.
 
 </details>
 <details>
@@ -2957,7 +3086,7 @@ Adequate evidence: An estimate with inputs, compared with the traffic actually a
 
 2 — Both, with the shortfall visible.
 
-3 — As adequate, and the estimate includes the article's recommended minimum duration on top of the sample requirement.
+3 — As adequate, and the duration is rounded up to whole weeks, is never shorter than the article's one-to-two-week minimum, and is fixed before starting.
 
 Repair: Estimate the sample for your smallest meaningful effect and set it beside your actual traffic. Recheck: The estimate.
 
@@ -2992,7 +3121,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 - A hypothesis is what makes an experiment interpretable. “Showing that the place is held will reduce duplicate payments, because participants told us they were unsure whether their place was secured” states the expectation and the reasoning, and it can be wrong — which is what distinguishes it from trying two designs to see which does better.
 - One primary metric decides the result; guardrails prevent winning by damage. If the variant increases completions while increasing refund requests, the guardrail catches what the primary metric would have hidden. Choosing both before running is what stops the result being reinterpreted afterwards.
-- The assigned article is explicit about the constraints: A/B testing is unsuitable for low-traffic pages, needs a duration of one to two weeks beyond the sample requirement to cover behavioural fluctuation, and cannot reliably test several changes at once. Those are the facts that will make your test impossible, and knowing them precisely is the point of designing it.
+- The assigned article is explicit about the constraints: A/B testing is unsuitable for low-traffic pages, should run for at least one to two weeks even when traffic would fill the sample sooner, to cover fluctuations in behaviour, should not be stopped early because an interim look seems convincing, and cannot reliably test several changes at once. The sample comes from a standard two-proportion calculation (two-sided 5 per cent significance, 80 per cent power): going from 10 to 12 per cent needs 3,841 people per version. The duration is the total sample divided by eligible weekly traffic, rounded up to whole weeks. Those are the facts that will make your test impossible, and knowing them precisely is the point of designing it.
 - The article is equally clear that a test cannot tell you why behaviour changed. That is why the honest plan for a learner without traffic is a designed experiment, a written refusal, and a qualitative alternative — three conversations, a small usability comparison — which answers a narrower question truthfully rather than a broader one falsely.
 
 [NN/g: A/B testing 101](https://www.nngroup.com/articles/ab-testing/).
@@ -3076,7 +3205,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- A published figure claimed a 30 per cent improvement in completions after a redesign. The five questions: who was counted — new visitors only, it turned out, excluding returning ones; what period — four weeks against a comparison period containing a public holiday; what else changed — a marketing campaign ran concurrently; what is the denominator — total visits fell, so completions per visit rose while completions fell; and what decision it justified — further investment in the redesign. The claim was rewritten as: completions per visit rose over four weeks, during which visits fell and a campaign ran, so the redesign's contribution cannot be separated.
+- Made-up example: a published figure claimed a 30 per cent improvement in completions after a redesign. The five questions: who was counted — new visitors only, it turned out, excluding returning ones; what period — four weeks against a comparison period containing a public holiday; what else changed — a marketing campaign ran concurrently; what is the denominator — visits fell from 10,000 to 7,000 while completed bookings fell from 500 to 455, so completions per visit rose from 5.0 to 6.5 per cent (the 30 per cent, a relative rise of 1.5 points) while completions fell by 9 per cent; and what decision it justified — further investment in the redesign. The claim was rewritten as: completions per visit rose over four weeks, during which visits fell and a campaign ran, so the redesign's contribution cannot be separated.
 
 
 ### Choose where you will do the work
@@ -3177,11 +3306,11 @@ Made-up example. Reading a published claim about a redesign, and reading it as a
 
 **The claim:** “Completions rose 30 per cent after the redesign.” A clear number and a clear cause, in one sentence.
 
-**What I checked first:** The arithmetic. It was right: the figures given did produce 30 per cent, and I nearly stopped there.
+**What I checked first:** The arithmetic. It was right: completions per visit went from 5.0 to 6.5 per cent, which is a 30 per cent relative rise (1.5 percentage points), and I nearly stopped there.
 
 **What the who question found:** New visitors only. Returning visitors were excluded, and a redesign is exactly the kind of change that affects the two differently.
 
-**What the denominator question found:** Completions per visit rose. Total visits fell over the same period, so the number of completed bookings actually went down.
+**What the denominator question found:** Visits fell from 10,000 to 7,000 over the same period, and completed bookings fell from 500 to 455, down 9 per cent. The rate rose because the denominator shrank faster than the count.
 
 **What the rewritten claim became:** “Completions per visit among new visitors rose over four weeks, during which total visits fell and a campaign ran, so the redesign’s contribution cannot be separated.” Longer, duller, and the only version that is true.
 
@@ -3467,18 +3596,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Does the data speak for itself?
 
-- It is selected, framed and presented by somebody with a purpose. The five questions are the ordinary work of reading a number.
-- Yes, once the methodology is published.
-- Yes, if it comes from a reliable source.
+- It does, as long as it comes from a source with a good reputation.
+- Rarely: somebody chose who was counted, over which period, against what.
+- It does, once the methodology behind the figures has been published in full for checking.
 
 <details>
 <summary>After your attempt</summary>
 
-It is selected, framed and presented by somebody with a purpose. The five questions are the ordinary work of reading a number. — Asking who was counted is not an accusation. Every report includes some people and excludes others, over some period rather than another, and those choices are usually invisible in the claim.
+It does, as long as it comes from a source with a good reputation. — A reliable source selects and frames too. Reliability makes the numbers accurate rather than complete.
 
-Yes, once the methodology is published. — A published methodology is what lets you answer the five questions. It does not answer them for you.
+Rarely: somebody chose who was counted, over which period, against what. — The five questions are the ordinary work of reading a number, not an accusation. Every report includes some people and excludes others, over some period rather than another, and those choices are usually invisible in the claim.
 
-Yes, if it comes from a reliable source. — A reliable source selects and frames too. Reliability makes the numbers accurate rather than complete.
+It does, once the methodology behind the figures has been published in full for checking. — A published methodology is what lets you answer the five questions. It does not answer them for you.
 
 Improve: Answer all five questions in step 2, including writing absent where the report does not say. Record the change in step 5.
 
@@ -3497,18 +3626,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The arithmetic in the report checks out. Does that settle it?
 
-- Yes, unless the source is untrustworthy.
-- Largely, since incorrect arithmetic is the main risk.
-- No. Everything that makes a number misleading happens before the arithmetic: who was counted, over what period, against what.
+- It does, unless the source itself is known to be untrustworthy.
+- Not on its own: most misleading numbers go wrong before any arithmetic is done.
+- Largely, since incorrect arithmetic is the main risk in published figures.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, unless the source is untrustworthy. — Trustworthy people produce misleading numbers routinely, without intending to.
+It does, unless the source itself is known to be untrustworthy. — Trustworthy people produce misleading numbers routinely, without intending to.
 
-Largely, since incorrect arithmetic is the main risk. — Incorrect arithmetic is rare in published work and easy to catch. The selection is neither.
+Not on its own: most misleading numbers go wrong before any arithmetic is done. — Who was counted, over what period and against what decide the meaning. Made up: completions per visit rose from 5.0 to 6.5 per cent while completed bookings fell from 500 to 455, because visits fell from 10,000 to 7,000. Every number is correct, and “completions rose” is false.
 
-No. Everything that makes a number misleading happens before the arithmetic: who was counted, over what period, against what. — Completions per visit can rise while completions fall, if visits fell further. Both numbers are correct and the claim is the opposite of what happened.
+Largely, since incorrect arithmetic is the main risk in published figures. — Incorrect arithmetic is rare in published work and easy to catch. The selection is neither.
 
 Improve: Answer the denominator question in step 2 specifically, and say what would have had to change for the claim to be true. Record the change in step 5.
 
@@ -3527,18 +3656,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your rewritten claim is three times as long and has no headline in it. Is that a failure?
 
-- Yes, the rewrite should keep the original structure.
-- No. That length is what the figures actually support, and the original was short because it said more than they do.
-- Yes, since nobody will read it.
+- It is; a good rewrite keeps the original structure and just softens it.
+- Not necessarily: the original was short because it said more than the figures do.
+- It is, because nobody will read a claim that long, let alone quote it to anybody else.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, the rewrite should keep the original structure. — The original structure is what carried the unsupported part.
+It is; a good rewrite keeps the original structure and just softens it. — The original structure is what carried the unsupported part.
 
-No. That length is what the figures actually support, and the original was short because it said more than they do. — The aim is honesty rather than caution: the smaller true statement, written readably. Hedging the large claim would be worse, because qualifications get dropped when a claim is repeated.
+Not necessarily: the original was short because it said more than the figures do. — The aim is honesty rather than caution: the smaller true statement, written readably. Hedging the large claim would be worse, because qualifications get dropped when a claim is repeated.
 
-Yes, since nobody will read it. — People read specific sentences perfectly well. What they do not read is a claim buried in four qualifications.
+It is, because nobody will read a claim that long, let alone quote it to anybody else. — People read specific sentences perfectly well. What they do not read is a claim buried in four qualifications.
 
 Improve: Check your rewrite in step 4 states a smaller true thing rather than the same thing with qualifications. Record the change in step 5.
 
@@ -3578,15 +3707,41 @@ Write your answer for “Which question was most revealing, and why”. Use the 
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a library service’s annual report says “Online renewals up 40 per cent after our app launch”. The small print shows renewals counted for March to May this year against December to February last year, and that the branch renewal desks closed for refurbishment this spring. Total loans across the service fell slightly.
+
+**Task:** Name the two questions that change the reading most, and rewrite the claim so it says only what the figures support, explaining why.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Checks or accepts the arithmetic and stops, or calls the report dishonest without saying what is missing.
+- Adequate: Names the comparison period (spring against winter is not comparable) and what else changed (desks closed, pushing renewals online), and rewrites without crediting the app alone.
+- Strong: As adequate, and asks for the denominator (renewals per loan, given loans fell) and what decision the figure is meant to justify, keeping the rewrite readable.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -3748,9 +3903,9 @@ Product analytics uses recorded events and numbers to answer a decision without 
 - **Qualitative:** Watching and asking. It shows mechanism: what happened and why, for the people you watched.
 - **A count without a mechanism:** A problem you cannot fix, because nothing says what causes it. It produces redesigns of whatever is nearest.
 
-**Quick example.** Made-up example. Pairing a count and an observation at a tool library, and dismissing the one with fewer people in it. A synthetic funnel showing the largest drop between opening a tool and starting a booking. And one session where somebody checked the price twice against a screenshot from a friend.
+**Quick example.** Made-up example. Pairing a count and an observation at a tool library, and dismissing the one with fewer people in it. A real count: 14 messages in the library’s support inbox in March asking whether a price had changed between the listing and the booking form, out of 380 bookings that month. And one session where somebody checked the price twice against a screenshot from a friend.
 
-The reader demonstrates and guides the task before asking for “The count, and what it says on its own”.
+The reader demonstrates and guides the task before asking for “The count, its denominator and source, and what it says on its own”.
 
 ### What this lesson will help you do
 
@@ -3800,7 +3955,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The pairing: the synthetic funnel showed the largest drop between opening a class and starting a booking; the m05 observation showed a participant checking the price against a screenshot from a friend, twice, because the displayed price did not match what she remembered. The count located the problem, the observation supplied a mechanism, and together they produced a specific change — showing the price consistently and earlier. Written separately, the count would have produced a redesign of the booking button and the observation would have been dismissed as one person.
+- Made-up example: the pairing used a real count rather than the synthetic funnel, because invented numbers cannot corroborate a real observation. The count: 14 messages in the provider's support inbox in March asked whether a price had changed between the listing and the booking form, out of 380 bookings. The m05 observation: a participant checked the price against a screenshot from a friend, twice, because the displayed price did not match what she remembered. The count said the confusion reaches more than one person, the observation supplied a mechanism, and together they produced a specific change — showing the price consistently and earlier. Written separately, the count would have produced a redesign of the booking button and the observation would have been dismissed as one person.
 
 
 ### Choose where you will do the work
@@ -3810,6 +3965,17 @@ Section: learn. Stable action: workspace.
 Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
+
+
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Practice notes (made up, for anyone without their own consented observation). Count: the tool library’s support inbox held 14 messages in March asking whether a price had changed between the listing and the booking form; 380 bookings were made that month.
+- Practice notes (made up). Observation: in one session, a participant opened a tool page, went back to the listing twice to compare its price with a screenshot a friend had sent, and only then started a booking.
+- Both notes are invented. Pairing them rehearses the method and shows nothing about a real product; label any answer built on them as practice.
 
 
 ### Pair the findings
@@ -3830,26 +3996,26 @@ One count and one observation about the same behaviour, each stated on its own t
 **Qualitative:** Watching and asking. It shows mechanism: what happened and why, for the people you watched.
 
 
-### The count, and what it says on its own
+### The count, its denominator and source, and what it says on its own
 
 Section: practice-plan. Stable action: write-quantitative.
 
-From your funnel, your provider’s records, or anything you can count. Say if it is synthetic.
+A real count from a provider’s records, a support inbox or a hand count, with what it is out of. A synthetic count, such as your practice funnel, can rehearse the pairing but cannot confirm, locate or size anything real: if yours is synthetic or supplied, say so and treat the whole pairing as practice.
 
-**Answer:** The count, and what it says on its own
+**Answer:** The count, its denominator and source, and what it says on its own
 
-From your funnel, your provider’s records, or anything you can count. Say if it is synthetic.
+A real count from a provider’s records, a support inbox or a hand count, with what it is out of. A synthetic count, such as your practice funnel, can rehearse the pairing but cannot confirm, locate or size anything real: if yours is synthetic or supplied, say so and treat the whole pairing as practice.
 
 
-### The observation, and what it says on its own
+### The observation, as a de-identified summary, and what it says on its own
 
 Section: practice-plan. Stable action: write-qualitative.
 
-From your own sessions. One person doing one thing, described as what they did rather than what it means.
+From your own consented sessions, or the supplied practice observation labelled as such. One person doing one thing, described as what they did rather than what it means, with no name or identifying detail; raw notes stay in your own private file with a deletion date.
 
-**Answer:** The observation, and what it says on its own
+**Answer:** The observation, as a de-identified summary, and what it says on its own
 
-From your own sessions. One person doing one thing, described as what they did rather than what it means.
+From your own consented sessions, or the supplied practice observation labelled as such. One person doing one thing, described as what they did rather than what it means, with no name or identifying detail; raw notes stay in your own private file with a deletion date.
 
 
 ### How you know they are about the same behaviour
@@ -3888,21 +4054,21 @@ Section: practice-plan. Stable action: step-2-demo.
 
 Made-up example. Pairing a count and an observation at a tool library, and dismissing the one with fewer people in it.
 
-**What I had:** A synthetic funnel showing the largest drop between opening a tool and starting a booking. And one session where somebody checked the price twice against a screenshot from a friend.
+**What I had:** A real count: 14 messages in the library’s support inbox in March asking whether a price had changed between the listing and the booking form, out of 380 bookings that month. And one session where somebody checked the price twice against a screenshot from a friend.
 
-**What I did with the observation:** Set it aside. One person, one session, and the funnel was about everybody. The count felt like the serious evidence.
+**What I nearly used instead:** My synthetic practice funnel, which happened to show a steep drop at the same step. It was invented to practise arithmetic, so it could not confirm anything about real people. I left it out of the evidence.
 
-**What the count alone produced:** A plan to redesign the booking button, because that is what sits at the step where people stop. Two weeks of work aimed at the nearest visible thing.
+**What I did with the observation:** Set it aside at first. One person, one session, and the inbox count was about everybody. The count felt like the serious evidence.
 
-**What the observation supplied:** A mechanism: the price shown on the listing did not match the price at the next step, so she went back to check. The button was never the problem.
+**What the observation supplied:** A mechanism: the price shown on the listing did not match the price at the next step, so she went back to check. The count alone had pointed me at redesigning the booking button.
 
-**What the two together produced:** Show the same price in both places, earlier. The count said it was worth doing, the observation said what to do, and neither would have produced it alone.
+**What the two together produced:** Show the same price in both places, earlier. The count said the confusion reaches more than one person; the observation said what to change; neither would have produced it alone.
 
-**Wrong turn:** The wrong turn is ranking the evidence by how many people are in it, because that is the obvious comparison and it is the wrong axis. A count with no mechanism produces a redesign of whatever is nearest the drop.
+**Wrong turn:** The wrong turn is ranking the evidence by how many people are in it, because that is the obvious comparison and it is the wrong axis. A count with no mechanism produces a redesign of whatever is nearest the problem; and a synthetic count is not evidence at all.
 
-**Trade-off:** Acting on one observation means acting on a mechanism you have seen once, and it may be rare. The count is what says the area is worth the work.
+**Trade-off:** Acting on one observation means acting on a mechanism you have seen once. The inbox count says the area is worth the work; it cannot say every one of the 14 messages had the same cause.
 
-**Unknown:** Still unknown: how many people meet the price mismatch. One person did; the funnel cannot see the reason; and the change is cheap enough that the pair is enough to justify it.
+**Unknown:** Still unknown: how many people meet the price mismatch without writing in. Fourteen wrote; the inbox cannot see the rest, and the change is cheap enough that the pair justifies trying it.
 
 
 ### What the count cannot tell you
@@ -4154,17 +4320,17 @@ Section: practice-plan. Stable action: step-4-demo.
 
 Made-up example. Finding a disagreement between a tool-library count and an observation, and explaining it away.
 
-**The disagreement:** The records show eleven duplicate payments in March. In three sessions, all three people said they would have paid again if they were not being watched, and none of them did.
+**The disagreement:** The provider’s records show eleven duplicate payments among 412 bookings in March, under 3 in 100. In three sessions, all three people said that at home they would have paid again when the screen gave no confirmation.
 
 **What I wrote at first:** That the sessions were unrepresentative, and eleven is the real number. It resolved the disagreement and let me move on.
 
-**What that discarded:** The most interesting thing in the study. Three of three saying they would have paid again, against eleven recorded, suggests the records are not counting everybody it happens to.
+**What that discarded:** The most interesting thing in the study. Three of three saying they would pay again, against under 3 in 100 recorded, could mean the records miss some second payments, or that what people say they would do differs from what they do. Both are worth knowing.
 
 **What would explain it:** A second payment made on a different card, or by somebody ringing the library, would not appear as a duplicate in the provider’s records at all.
 
 **What I did:** Kept both, wrote the possible explanation, and added one question to the next three sessions: what did you actually do next? The count may be an undercount, which is a finding neither method produced alone.
 
-**Wrong turn:** The wrong turn is resolving a contradiction by declaring one side unrepresentative, because the small sample is always the easier one to dismiss. A disagreement between methods is usually about what each one can see.
+**Wrong turn:** The wrong turn is resolving a contradiction by declaring one side unrepresentative, because the small sample is usually the easier one to dismiss. A disagreement between methods is usually about what each one can see.
 
 **Trade-off:** Keeping the contradiction means the report has no single number in it and ends with a question rather than a figure.
 
@@ -4175,11 +4341,11 @@ Made-up example. Finding a disagreement between a tool-library count and an obse
 
 Section: practice-plan. Stable action: write-contradiction-found.
 
-Keep it. A contradiction is a finding, not an error to be resolved by picking the number.
+Keep it. A contradiction is a finding, not an error to be resolved by picking the number. Describe the observation side without identifying anybody.
 
 **Answer:** Any respect in which the two disagree
 
-Keep it. A contradiction is a finding, not an error to be resolved by picking the number.
+Keep it. A contradiction is a finding, not an error to be resolved by picking the number. Describe the observation side without identifying anybody.
 
 
 ### What would explain the disagreement
@@ -4201,18 +4367,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Is quantitative evidence more objective?
 
-- It is more precise about different things. A precisely counted event whose cause nobody understands is not more objective than three careful observations of why it happens.
-- Yes, when the sample is large enough.
-- Yes, since it does not depend on interpretation.
+- It is precise about different things: how many and where, not why.
+- It is, once the sample behind it is large enough to trust.
+- It is, since a count does not depend on anybody’s interpretation.
 
 <details>
 <summary>After your attempt</summary>
 
-It is more precise about different things. A precisely counted event whose cause nobody understands is not more objective than three careful observations of why it happens. — Counting is precise about scale and location. Watching is precise about mechanism. Treating one as the serious evidence produces decisions with a predictable shape of error.
+It is precise about different things: how many and where, not why. — A precisely counted event whose cause nobody understands is not more objective than three careful observations of why it happens. Counting is precise about scale and location; watching is precise about mechanism.
 
-Yes, when the sample is large enough. — A large sample makes the count reliable. It does not make it say anything about why.
+It is, once the sample behind it is large enough to trust. — A large sample makes the count reliable. It does not make it say anything about why.
 
-Yes, since it does not depend on interpretation. — What to count, who to include and what period all depend on judgement, as the previous lesson showed.
+It is, since a count does not depend on anybody’s interpretation. — What to count, who to include and what period all depend on judgement, as the previous lesson showed.
 
 Improve: Write what the count cannot tell you in step 2, in the same detail as what it can. Record the change in step 5.
 
@@ -4229,20 +4395,20 @@ Section: check. Stable action: reason-2.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Your funnel shows where people stop, and you have no observations. What is likely to happen?
+A funnel built from real counts shows where people stop, and you have no observations. What is likely to happen?
 
-- You will redesign whatever is nearest the drop, because the count gives no mechanism and something has to be chosen.
-- You will need a larger sample before deciding.
-- You will make a reasonable guess, which is usually fine.
+- A reasonable guess gets made about the cause, which usually turns out to be fine.
+- A larger sample of the same counts is needed first, before anybody decides.
+- Whatever sits nearest the drop gets redesigned, since nothing says why.
 
 <details>
 <summary>After your attempt</summary>
 
-You will redesign whatever is nearest the drop, because the count gives no mechanism and something has to be chosen. — A drop at the booking step produces a redesigned booking button, when the cause may be a price shown differently two screens earlier. The count locates; only watching explains.
+A reasonable guess gets made about the cause, which usually turns out to be fine. — The guess is usually the nearest visible element, which is the one the count happens to point at.
 
-You will need a larger sample before deciding. — More of the same kind of evidence does not supply a mechanism.
+A larger sample of the same counts is needed first, before anybody decides. — More of the same kind of evidence does not supply a mechanism.
 
-You will make a reasonable guess, which is usually fine. — The guess is usually the nearest visible element, which is the one the count happens to point at.
+Whatever sits nearest the drop gets redesigned, since nothing says why. — A drop at the booking step produces a redesigned booking button, when the cause may be a price shown differently two screens earlier. The count locates; watching and asking explain.
 
 Improve: Pair your count with an observation in step 1, or write plainly that you have none and what you would watch. Record the change in step 5.
 
@@ -4261,18 +4427,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your count and your observation disagree. What should you do?
 
-- Keep both and write what would explain the disagreement. A contradiction is a finding rather than an error.
-- Trust the count, since it covers more people.
-- Trust the observation, since you watched it happen.
+- Trust the observation, since you saw it happen with your own eyes.
+- Keep both, and write what could explain why they disagree.
+- Trust the count, since it covers far more people than the sessions did.
 
 <details>
 <summary>After your attempt</summary>
 
-Keep both and write what would explain the disagreement. A contradiction is a finding rather than an error. — Resolving it by picking the number discards the more interesting half. The explanation is usually about who each method saw: the count includes people the session never reached.
+Trust the observation, since you saw it happen with your own eyes. — You watched it happen once. The count may be telling you it is rare.
 
-Trust the count, since it covers more people. — It covers more people and says nothing about why. The disagreement may be exactly where the mechanism lives.
+Keep both, and write what could explain why they disagree. — A contradiction is a finding rather than an error. Resolving it by picking the number discards the more interesting half. The explanation is often about who each method saw, or about saying versus doing.
 
-Trust the observation, since you watched it happen. — You watched it happen once. The count may be telling you it is rare.
+Trust the count, since it covers far more people than the sessions did. — It covers more people and says nothing about why. The disagreement may be exactly where the mechanism lives.
 
 Improve: Write the contradiction and a possible explanation in step 4 rather than resolving it. Record the change in step 5.
 
@@ -4312,15 +4478,41 @@ Write your answer for “In one line each: what the count added and what the obs
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a council’s garden-waste renewal form. The council’s own records show 230 of 1,900 renewals in May were abandoned at the payment step. In a session, one resident said she stopped because she could not tell whether the fee covered one bin or two, and went to find last year’s letter.
+
+**Task:** Say what the count tells you that the observation cannot, and what the observation tells you that the count cannot, then propose one change that needs both and explain why.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Trusts the count and dismisses the one resident, or treats one resident as proof of why all 230 left.
+- Adequate: Count: how many and where (230 of 1,900, at payment). Observation: a possible mechanism (unclear whether the fee covers one bin or two). Change: state what the fee covers before payment, traced to both.
+- Strong: As adequate, and notes the count cannot say how many share her reason, plans a way to check (ask a few more residents, or count related enquiries), and keeps any disagreement rather than resolving it.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -4351,17 +4543,17 @@ Qualitative: Watching and asking. It shows mechanism: what happened and why, for
 A count without a mechanism: A problem you cannot fix, because nothing says what causes it. It produces redesigns of whatever is nearest.
 
 Supplied practice material (fictional or labelled practice, not my research):
-Made-up example. Pairing a count and an observation at a tool library, and dismissing the one with fewer people in it. A synthetic funnel showing the largest drop between opening a tool and starting a booking. And one session where somebody checked the price twice against a screenshot from a friend.
+Made-up example. Pairing a count and an observation at a tool library, and dismissing the one with fewer people in it. A real count: 14 messages in the library’s support inbox in March asking whether a price had changed between the listing and the booking form, out of 380 bookings that month. And one session where somebody checked the price twice against a screenshot from a friend.
 
 Activity: Show one small synthetic result from the supplied case. Ask me what the number literally says, what context is missing and which decision it can support. Correct any claim that goes beyond the data.
 
 Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
-When the activity is finished, tell me to return to the course answer called “The count, and what it says on its own” and write my own decision. Do not write that answer for me.
+When the activity is finished, tell me to return to the course answer called “The count, its denominator and source, and what it says on its own” and write my own decision. Do not write that answer for me.
 ```
 
-**Come back to the course:** Return to “The count, and what it says on its own”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+**Come back to the course:** Return to “The count, its denominator and source, and what it says on its own”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The count, and what it says on its own” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try the distinction” question. Choose an answer, read the explanation, then return to “The count, its denominator and source, and what it says on its own” and write one sentence in your own words.
 
 </details>
 <details>
@@ -4534,7 +4726,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The plan listed nine events, each tied to a node in the metric tree, with a purpose, an owner and a retention period of ninety days. Two refusals were recorded: no free-text capture from the search box, because the question it would answer did not justify holding whatever people type; and no precise location, since the coarse area answered the only question that mattered. One event was reduced rather than removed: rather than recording the exact class booked, it recorded that a booking occurred, since the identity of the class answered no question in the tree.
+- Made-up example: the plan listed nine events, each tied to a node in the metric tree, with a purpose, an owner and a retention period of ninety days. Two refusals were recorded: no free-text capture from the search box, because the question it would answer did not justify holding whatever people type; and no precise location, since the coarse area answered the only question that mattered. One event was reduced rather than removed: rather than recording the exact class booked, it recorded that a booking occurred, since the identity of the class answered no question in the tree.
 
 
 ### Choose where you will do the work
@@ -4930,18 +5122,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Somebody suggests collecting everything now and deciding what you need later. What is wrong with that?
 
-- Later never arrives, and in the meantime you hold data you cannot justify, cannot confidently delete and must protect.
-- It is only a problem for personal data.
-- Nothing, provided the data is kept secure.
+- Nothing serious, provided all of the data is kept properly secure and access is limited.
+- It only matters for data that is obviously personal, like names and addresses.
+- Later rarely comes, and meanwhile you hold data you cannot justify or delete.
 
 <details>
 <summary>After your attempt</summary>
 
-Later never arrives, and in the meantime you hold data you cannot justify, cannot confidently delete and must protect. — Without a purpose written against each event, nobody can tell whether anybody is using it, so nothing is ever removed. Deciding first is cheaper and safer.
+Nothing serious, provided all of the data is kept properly secure and access is limited. — Security is the obligation it creates. The question is whether the obligation was worth taking on.
 
-It is only a problem for personal data. — Free text and cross-session identifiers become personal data whether or not anybody planned for them to.
+It only matters for data that is obviously personal, like names and addresses. — Free text and cross-session identifiers become personal data whether or not anybody planned for them to.
 
-Nothing, provided the data is kept secure. — Security is the obligation it creates. The question is whether the obligation was worth taking on.
+Later rarely comes, and meanwhile you hold data you cannot justify or delete. — Without a purpose written against each event, nobody can tell whether anybody is using it, so nothing is removed, and all of it must be protected. Deciding first is cheaper and safer.
 
 Improve: Discard any event in step 1 that cannot name the question it answers, and record the change in step 5.
 
@@ -4960,18 +5152,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You want to record the full text people type into the search box. What is the test?
 
-- What question it answers, and whether that answer justifies holding whatever anybody types.
-- Whether the data is stored securely.
-- Whether people have consented.
+- Which question it answers, and whether that justifies holding what people type.
+- Whether people have agreed to the collection in the site’s privacy notice.
+- Whether the typed text will be stored securely, encrypted and kept away from other systems.
 
 <details>
 <summary>After your attempt</summary>
 
-What question it answers, and whether that answer justifies holding whatever anybody types. — People type names, addresses and all sorts into search boxes. Whether a search returned results answers most of the same question and holds none of the content.
+Which question it answers, and whether that justifies holding what people type. — People type names, addresses and all sorts into search boxes. Whether a search returned results answers most of the same question and holds none of the content.
 
-Whether the data is stored securely. — Storing it securely is required and does not address whether it should be held.
+Whether people have agreed to the collection in the site’s privacy notice. — Consent is necessary in many places and it does not make an unjustified collection justified.
 
-Whether people have consented. — Consent is necessary in many places and it does not make an unjustified collection justified.
+Whether the typed text will be stored securely, encrypted and kept away from other systems. — Storing it securely is required and does not address whether it should be held.
 
 Improve: Write the reduced version of one risky event in step 4 and say what question it still answers. Record the change in step 5.
 
@@ -4990,18 +5182,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your plan sets a ninety-day retention period. Is that enough?
 
-- Only with a deletion mechanism. A period with nothing that actually removes the data is a wish.
-- Yes, ninety days is a reasonable default.
-- Yes, since the period is documented.
+- It is, since the period is written down in the plan for all to see.
+- Only with something that actually deletes the data on day ninety-one.
+- It is, because ninety days is a reasonable default for this data.
 
 <details>
 <summary>After your attempt</summary>
 
-Only with a deletion mechanism. A period with nothing that actually removes the data is a wish. — Data outlives intentions. Saying what deletes it, and who is responsible, is what turns the period into a property of the system rather than a paragraph in a document.
+It is, since the period is written down in the plan for all to see. — Documented periods are commonly exceeded by years, because nothing enforces them.
 
-Yes, ninety days is a reasonable default. — The length may well be right. What is missing is what happens on day ninety-one.
+Only with something that actually deletes the data on day ninety-one. — Data outlives intentions. Saying what deletes it, and who is responsible, is what turns the period into a property of the system rather than a paragraph in a document.
 
-Yes, since the period is documented. — Documented periods are commonly exceeded by years, because nothing enforces them.
+It is, because ninety days is a reasonable default for this data. — The length may well be right. What is missing is what happens on day ninety-one.
 
 Improve: Add the deletion mechanism and the owner to each event in step 2, and record the change in step 5.
 
@@ -5041,15 +5233,41 @@ This lesson teaches the reasoning. It is not legal advice and the plan should sa
 This lesson teaches the reasoning. It is not legal advice and the plan should say so.
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a community choir’s new website will let people sign up for open rehearsals. A volunteer proposes recording each visitor’s full sign-up form, the free-text “anything we should know?” box, their precise location and a permanent identifier across visits, “in case it is useful later”. The only question the choir has asked is whether open rehearsals bring in new members.
+
+**Task:** Decide what to collect, what to reduce and what to refuse, and explain one refusal in terms of the question it would answer.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Collects everything “just in case”, or refuses everything by instinct without naming a question.
+- Adequate: Collects that a sign-up happened and whether the person later joined, refuses or reduces the free text and precise location with reasons tied to the one question, and sets a retention period with a deletion mechanism.
+- Strong: As adequate, and reduces the permanent identifier to something that expires once the joining question is answered, and notes that the legal requirements where the choir operates have not been checked.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -5263,7 +5481,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The synthetic funnel was extended over eight weeks. Completions rose in week five, when the design shipped — and also when a local festival ended and a provider's promotion ran. Three non-design explanations were listed. The comparison was reworked as a cohort: people arriving in week two versus week six, followed for their first fourteen days, which removed the effect of the changing mix of new and returning visitors. The write-up stated plainly that the promotion could not be separated, that the numbers were synthetic, and that the exercise demonstrates the method rather than a result.
+- Made-up example, synthetic counts: the practice funnel was extended over eight weeks. Completions rose in week five, when the design shipped — and also when a local festival ended and a provider's promotion ran. Three non-design explanations were listed. The comparison was reworked as a cohort: people arriving in week two versus week six, followed for their first fourteen days, which removed the effect of the changing mix of new and returning visitors. Week six booked at 30 of 320 (9.4 per cent) and week two at 21 of 300 (7.0 per cent); the Two rates tool gave a difference of 2.4 points with a 95 per cent interval of about −2.0 to +6.8 points, so even chance alone could explain it. The write-up stated plainly that the promotion could not be separated, that the numbers were synthetic, and that the exercise demonstrates the method rather than a result.
 
 
 ### Choose where you will do the work
@@ -5307,7 +5525,7 @@ Made-up example. Plotting a tool-library metric over time, and plotting two poin
 
 **What that did to the two-bar chart:** It became one of several similar movements rather than an event. The rise was still there; what had gone was the reason to think it meant anything.
 
-**What I learned about the shape:** Two points always look like a change, because two points always differ. Eight points show what normal variation is, which is the thing you need before you can call anything unusual.
+**What I learned about the shape:** Two points nearly always look like a change, because two points nearly always differ. Eight points show what normal variation is, which is the thing you need before you can call anything unusual.
 
 **Wrong turn:** The wrong turn is plotting the before and the after, because that is the comparison you care about. Two points cannot show variation, so every difference between them looks like an event.
 
@@ -5353,7 +5571,7 @@ Everything else that could move the number listed, with the ones that actually h
 
 **Seasonality:** Regular movement caused by the calendar: term times, festivals, weather, paydays. It moves numbers more than most design changes do.
 
-**Concurrent change:** Anything else that happened in the same period. There is always at least one, and naming it is the difference between a finding and a coincidence.
+**Concurrent change:** Anything else that happened in the same period. There is usually at least one, and naming it is the difference between a finding and a coincidence.
 
 
 ### See the decision being made
@@ -5372,7 +5590,7 @@ Made-up example. Reading a rise in completions at a tool library, and attributin
 
 **What I wrote instead:** Completions rose in week five, when the message shipped, a festival ended and a promotion ran. The three cannot be separated, and a similar rise occurred in week two with no change at all.
 
-**Wrong turn:** The wrong turn is reading a rise after a change as a result of the change, because the timing is the most visible fact available. Something else always happened in the same period, and the ordinary variation is usually larger than anybody expects.
+**Wrong turn:** The wrong turn is reading a rise after a change as a result of the change, because the timing is the most visible fact available. Something else usually happened in the same period, and the ordinary variation is often larger than anybody expects.
 
 **Trade-off:** Naming the alternatives means the most encouraging chart in the project stops being evidence, and somebody will feel you have talked yourself out of a success.
 
@@ -5409,7 +5627,7 @@ A cohort comparison replacing a before-and-after one, with the two groups and th
 
 - Split people by the period they arrived.
 - Follow each group for the same length of time.
-- Compare like with like rather than period totals.
+- Compare like with like rather than period totals, with the difference's interval from the Two rates tool.
 
 **Start here:** Split your synthetic numbers by the week people first arrived, and follow each group the same number of days.
 
@@ -5591,16 +5809,16 @@ A cohort is a group defined by when they first arrived, followed for the same le
 
 Section: practice-plan. Stable action: write-cohort-comparison.
 
-Write your answer for “The comparison: which two cohorts, followed for how long”. Use the task instructions below to decide what to include.
+Give the counts for each cohort and put them into the Two rates tool in this lesson’s uncertainty calculator, which gives the difference and its 95 per cent interval. That interval covers chance only; it says nothing about a promotion or a festival.
 
 **Answer:** The comparison: which two cohorts, followed for how long
 
-
+Give the counts for each cohort and put them into the Two rates tool in this lesson’s uncertainty calculator, which gives the difference and its 95 per cent interval. That interval covers chance only; it says nothing about a promotion or a festival.
 
 <details>
 <summary>Example</summary>
 
-Example (made up, synthetic): people arriving in week two against people arriving in week six, each followed for their first fourteen days.
+Example (made up, synthetic): week-six arrivals, 30 of 320 booked within fourteen days (9.4 per cent); week-two arrivals, 21 of 300 (7.0 per cent). Difference 2.4 points, 95 per cent interval about −2.0 to +6.8 points.
 
 </details>
 
@@ -5649,20 +5867,20 @@ Section: check. Stable action: reason-1.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-The number went up the week you shipped. Did the change work?
+The number went up in the week you shipped, which was also the week a local festival ended and the provider ran a promotion. Did the change work?
 
-- Unknown. Something else also happened in that period, always, and the ordinary variation is usually larger than people expect.
-- Yes, unless somebody can name a specific alternative.
-- Probably, since the timing matches.
+- It did, unless somebody can actually show the promotion made the difference.
+- Unknown: the festival and promotion share the timing, and weeks wobble anyway.
+- Probably, since the timing of the rise matches the week of the release exactly, to the day.
 
 <details>
 <summary>After your attempt</summary>
 
-Unknown. Something else also happened in that period, always, and the ordinary variation is usually larger than people expect. — Plotting eight periods shows what a normal wobble looks like. A rise in the ship week, with a festival and a promotion in it, cannot be attributed to any of the three.
+It did, unless somebody can actually show the promotion made the difference. — Ruling out alternatives is your job here rather than the objector’s, and with uncontrolled weeks nobody can show it either way.
 
-Yes, unless somebody can name a specific alternative. — Naming alternatives is your job here rather than the objector’s, and there is always at least one.
+Unknown: the festival and promotion share the timing, and weeks wobble anyway. — Plotting eight periods shows what a normal wobble looks like. A rise in the ship week, with a festival and a promotion in it, cannot be attributed to any of the three. It is a reason to investigate, not a verdict either way.
 
-Probably, since the timing matches. — Timing is the most visible fact and the weakest evidence. Everything that happened that week has the same timing.
+Probably, since the timing of the rise matches the week of the release exactly, to the day. — Timing is the most visible fact and the weakest evidence. Everything that happened that week has the same timing.
 
 Improve: List what else happened in the same period in step 2, and check the calendar rather than relying on memory. Record the change in step 5.
 
@@ -5681,18 +5899,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your cohort comparison removes the mix of new and returning people. Does that make it a clean result?
 
-- No. A cohort controls for who the people are and how long they have had, and does nothing about what was happening in the world that week.
-- Yes, since the two groups are now comparable.
-- Yes, provided both cohorts are large enough.
+- It is, provided both cohorts contain enough people to trust.
+- It is, since the two groups are now comparable people followed for equal lengths of time.
+- Not clean: it fixes who the people are, not what happened in their weeks.
 
 <details>
 <summary>After your attempt</summary>
 
-No. A cohort controls for who the people are and how long they have had, and does nothing about what was happening in the world that week. — The promotion and the festival affect one cohort’s calendar weeks and not the other’s. The controls list is short and the does-not list is where the strongest explanations sit.
+It is, provided both cohorts contain enough people to trust. — Size addresses chance rather than confounding.
 
-Yes, since the two groups are now comparable. — Comparable in composition. They lived through different weeks, and the weeks are what changed.
+It is, since the two groups are now comparable people followed for equal lengths of time. — Comparable in composition. They lived through different weeks, and the weeks are what changed.
 
-Yes, provided both cohorts are large enough. — Size addresses noise rather than confounding.
+Not clean: it fixes who the people are, not what happened in their weeks. — A cohort controls for who the people are and how long they have had. The promotion and the festival affect one cohort’s calendar weeks and not the other’s, so the does-not list is where the strongest explanations sit.
 
 Improve: Write the does-not-control list in step 4 before the controls-for list. Record the change in step 5.
 
@@ -5711,18 +5929,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your synthetic cohort chart shows a clear difference. What must accompany it?
 
-- The cohort definition, so it can be reproduced.
-- The synthetic label on the chart, and the explanation you cannot rule out beside the conclusion.
-- Nothing, since the method is sound.
+- A synthetic label on the chart, and the explanation you cannot rule out.
+- The cohort definition in full, so that anybody can reproduce it.
+- Nothing more, since the cohort method itself is sound.
 
 <details>
 <summary>After your attempt</summary>
 
-The cohort definition, so it can be reproduced. — Necessary and not sufficient. A reproducible chart of invented numbers is still invented.
+A synthetic label on the chart, and the explanation you cannot rule out. — The chart will travel without its caption, and the exercise demonstrates the method rather than a result. Both belong in the picture rather than in the notes; the difference’s interval can sit there too.
 
-The synthetic label on the chart, and the explanation you cannot rule out beside the conclusion. — The chart will travel without its caption, and the exercise demonstrates the method rather than a result. Both sentences belong in the picture rather than in the notes.
+The cohort definition in full, so that anybody can reproduce it. — Necessary and not sufficient. A reproducible chart of invented numbers is still invented.
 
-Nothing, since the method is sound. — The method is the thing being practised. The numbers are made up and the chart does not say so unless you make it.
+Nothing more, since the cohort method itself is sound. — The method is the thing being practised. The numbers are made up and the chart does not say so unless you make it.
 
 Improve: Put the synthetic label on the chart itself and name the unresolvable explanation in step 5. Record the change.
 
@@ -5773,15 +5991,41 @@ Write your answer for “Where the synthetic label appears”. Use the task inst
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case, invented counts: a museum shop’s online gift-card sales were 40 a week for six weeks, then 70 in the week a redesigned page launched. That week was also the start of the school holidays, and a newspaper listed the museum as a day out. People arriving in the launch week bought at 9 in 100; those arriving three weeks earlier at 6 in 100.
+
+**Task:** Say what you can conclude about the redesign, what a cohort comparison does and does not control for here, and explain why.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Credits the redesign because the rise came in the launch week, or says the redesign did nothing because of the holidays.
+- Adequate: Treats the rise as an investigation trigger, notes that cohorts fix who is compared and how long they are followed, and names the holidays and the newspaper as concurrent changes no cohort removes.
+- Strong: As adequate, and asks for each cohort’s denominators to compute the difference and its interval, notes earlier weeks give the normal wobble, and labels the counts invented.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -5832,7 +6076,7 @@ When the activity is finished, tell me to return to the course answer called “
 - Split by arrival week and give each group the same follow-up window.
 
 - R20: [GOV.UK: measuring success](https://www.gov.uk/service-manual/measuring-success) — Interpreting performance data over time and the caution it requires. Purpose: Supports reading movement as multi-causal rather than attributable. Free reading, no account. Verified 2026-09-06. Written for services with real longitudinal data; your counts are synthetic and must be labelled. Fallback: R07.
-- R37: [NN/g: confidence intervals and margins of error](https://www.nngroup.com/articles/confidence-interval/) — How sample size affects the reliability of a difference. Purpose: Prevents reading a small cohort difference as a real effect. Free reading, no account. Verified 2026-09-06. No formulas; use a published one and show inputs if you quantify anything. Fallback: R45.
+- R37: [NN/g: confidence intervals and margins of error](https://www.nngroup.com/articles/confidence-interval/) — How sample size affects the reliability of a difference. Purpose: Prevents reading a small cohort difference as a real effect. Free reading, no account. Verified 2026-09-06. No formulas; use this lesson's uncertainty calculator or another published method and show inputs if you quantify anything. Fallback: R45.
 
 </details>
 <details>
@@ -5911,7 +6155,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 - A metric is a sum of behaviour from many causes. Term dates, festivals, weather, a mention somewhere, a campaign, a competitor's outage — each moves numbers without anyone touching the design. Before attributing a change to your work, listing what else was happening is the minimum honest step, and it frequently produces a better explanation than the one you were hoping for.
 - Mixing new and returning people is the commonest hidden confound in a product metric. New people are learning; returning people are executing. A change that helps beginners and slows experts can leave the combined number flat, which is the shape most likely to be reported as no effect when in fact there were two.
-- A cohort is the practical response: take the people who arrived in one week and follow them, then compare with the people who arrived in another. It does not control for everything, and it removes the largest and most common distortion, which is that the mix of people changed rather than their behaviour.
+- A cohort is the practical response: take the people who arrived in one week and follow them, then compare with the people who arrived in another. It does not control for everything, and it removes one common distortion, which is that the mix of people changed rather than their behaviour. The Two rates tool in this lesson's uncertainty calculator gives the difference between two cohorts with its 95 per cent interval, which covers chance and nothing else.
 - The limitations paragraph is the part that matters most here. Even a cohort comparison at your scale cannot separate a design change from a concurrent campaign, and saying so is what keeps the analysis useful rather than persuasive.
 
 [GOV.UK: measuring success](https://www.gov.uk/service-manual/measuring-success).
@@ -5995,7 +6239,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The analysis was presented in three slides. First: the decision — fix the held-place message before touching payment, because that is where the evidence points. Second: the evidence, with the funnel chart labelled synthetic, the sample of the qualitative work stated on the slide, and the interval shown on the one rate that appeared. Third: what would change the conclusion — if duplicate payments did not fall over four weeks, the cause is elsewhere. Afterwards, the person remembered the decision and the phrase “two of three”, which was the intended pair; nobody quoted a percentage, because none was shown.
+- Made-up example: the analysis was presented in three slides. First: the decision — fix the held-place message before touching payment, because that is where the evidence points. Second: the evidence — two of the three people watched could not tell their place was held, with the sample on the slide; the provider's count of duplicate payments with its period; and the one rate shown, 9 of 22 survey answers, carrying its 95 per cent interval of about 23 to 61 per cent. The synthetic funnel stayed off the evidence slide, because invented numbers cannot support a real decision. Third: what would prompt a rethink — if duplicate payments are not lower after four weeks, the team looks next at the payment confirmation; that would not prove the message had no effect. Afterwards, the person remembered the decision and the phrase “two of three”, which was the intended pair; nobody quoted a percentage, because none was shown.
 
 
 ### Choose where you will do the work
@@ -6074,7 +6318,7 @@ Made-up example. Presenting a tool-library analysis, and putting the caveats in 
 
 **What the chart had said about itself:** Nothing. A clean axis, two bars and a title. Every limitation lived in a room that no longer existed.
 
-**What I do now:** Synthetic in the title, the sample beside the bar, the period on the axis, and the promotion marked on the chart with a line. It is uglier and it survives being screenshotted.
+**What I do now:** Synthetic in the title, the sample beside the bar, the period on the axis, and the promotion marked on the chart with a line. It is uglier and it survives being screenshotted. And a synthetic chart never goes on a slide that asks for a real decision; it belongs in a section labelled as a method demonstration.
 
 **Wrong turn:** The wrong turn is explaining the caveats aloud, because the explanation lands and the room understands. The caveats stay in the room; the chart goes everywhere.
 
@@ -6125,7 +6369,7 @@ A stated result that would change your conclusion, and when you would look.
 - State what result would change your conclusion.
 - Say when you would look.
 
-**Start here:** Finish this sentence: “if, in four weeks, … then the cause is elsewhere”.
+**Start here:** Finish this sentence: “if, in four weeks, … then we will look next at …”. It is a trigger to investigate, not a verdict on cause.
 
 **Enough:** The condition could actually occur and you have said when you would look.
 
@@ -6144,9 +6388,9 @@ Made-up example. Writing a change condition for a tool-library analysis, and wri
 
 **What I nearly wrote instead:** “If duplicate payments do not fall substantially.” Better, and substantially is doing the same work as the first version: nobody can say afterwards whether it happened.
 
-**What it became:** “If duplicate payments in the provider’s records are not lower in the month after shipping than in the month before, the cause is elsewhere and the work moves to the payment confirmation.”
+**What it became:** “If duplicate payments in the provider’s records are not lower in the month after shipping than in the month before, we look next at the payment confirmation and ask recent bookers what they saw.”
 
-**What that version does:** It names a source, a period and a next step. Somebody can hold me to it, which is the whole point of writing one.
+**What that version does:** It names a source, a period and a next step. Somebody can hold me to it. It does not claim that an unchanged count proves the message had no effect, because the two months differ in other ways too.
 
 **Wrong turn:** The wrong turn is writing a condition that cannot fail, because it keeps your options open and sounds properly scientific. A condition nothing could satisfy is not a commitment.
 
@@ -6340,26 +6584,26 @@ Now check your own slides: everything that would change how somebody reads the c
 </details>
 
 
-### Who you presented it to, or how you rehearsed it
+### Who you presented it to (a role, not a name), or how you rehearsed it
 
 Section: practice-plan. Stable action: write-presented-to.
 
-No stakeholder available: present it to anybody who will listen for five minutes, and label it a rehearsal.
+No stakeholder available: present it to anybody who will listen for five minutes, and label it a rehearsal. A synthetic chart can be presented only as a method demonstration, never as evidence for the decision.
 
-**Answer:** Who you presented it to, or how you rehearsed it
+**Answer:** Who you presented it to (a role, not a name), or how you rehearsed it
 
-No stakeholder available: present it to anybody who will listen for five minutes, and label it a rehearsal.
+No stakeholder available: present it to anybody who will listen for five minutes, and label it a rehearsal. A synthetic chart can be presented only as a method demonstration, never as evidence for the decision.
 
 
-### What they asked
+### What they asked, summarised
 
 Section: practice-plan. Stable action: write-questions-asked.
 
-Write your answer for “What they asked”. Use the task instructions below to decide what to include.
+Summarise each question in your words; keep any verbatim notes in your own private file.
 
-**Answer:** What they asked
+**Answer:** What they asked, summarised
 
-
+Summarise each question in your words; keep any verbatim notes in your own private file.
 
 
 ### Check your reasoning · 1 of 3
@@ -6370,18 +6614,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You explained all the caveats when you presented it. Is that enough?
 
-- Yes, if the caveats are also in the notes.
-- Yes, since the audience understood them at the time.
-- No. The caveats stayed in the room and the chart went everywhere, so anything that matters belongs in the picture.
+- Not quite: caveats stay in the room while the chart travels on.
+- It is, if the same caveats are also written in the speaker notes.
+- It is, since the audience clearly understood all of them at the time.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, if the caveats are also in the notes. — Notes do not travel with a screenshot either.
+Not quite: caveats stay in the room while the chart travels on. — Three weeks later the chart appears in somebody else’s summary with a confident sentence under it. They had the picture and not the conversation, and the picture said nothing about itself, so anything that matters belongs in it.
 
-Yes, since the audience understood them at the time. — They did. The problem is everybody who sees the chart afterwards.
+It is, if the same caveats are also written in the speaker notes. — Notes do not travel with a screenshot either.
 
-No. The caveats stayed in the room and the chart went everywhere, so anything that matters belongs in the picture. — Three weeks later the chart appears in somebody else’s summary with a confident sentence under it. They had the picture and not the conversation, and the picture said nothing about itself.
+It is, since the audience clearly understood all of them at the time. — They did. The problem is everybody who sees the chart afterwards.
 
 Improve: Move the sample, the period, the synthetic label and any confound onto the chart itself in step 2. Record the change in step 5.
 
@@ -6430,18 +6674,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your audience remembered a figure more confidently than your evidence supports. What does that tell you?
 
-- That the audience was not listening carefully.
-- That you should send a written correction.
-- That the presentation let it travel that way, and the fix is in the slide rather than in a correction.
+- A written correction should go to everybody who was there.
+- The slide let the figure travel without its sample; fix the slide.
+- The audience was not listening carefully enough to the caveats.
 
 <details>
 <summary>After your attempt</summary>
 
-That the audience was not listening carefully. — Audiences remember two things. Which two is decided by the design of the slide.
+A written correction should go to everybody who was there. — Worth doing, and it does not reach everybody the chart already reached.
 
-That you should send a written correction. — Worth doing and it does not reach everybody the chart already reached.
+The slide let the figure travel without its sample; fix the slide. — What is remembered is what will be repeated. If a number was remembered without its sample, the number and the sample were not close enough together on the slide, and a correction will not reach everybody.
 
-That the presentation let it travel that way, and the fix is in the slide rather than in a correction. — What is remembered is what will be repeated. If a number was remembered without its sample, the number and the sample were not close enough together on the slide.
+The audience was not listening carefully enough to the caveats. — Audiences remember two things. Which two is decided by the design of the slide.
 
 Improve: Change the slide so the figure cannot be separated from its sample, in step 2. Record the change in step 5.
 
@@ -6470,15 +6714,15 @@ What the audience remembered afterwards, and anything remembered more confidentl
 **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
 
 
-### What they remembered afterwards, in their words
+### What they remembered afterwards, summarised closely
 
 Section: practice. Stable action: write-remembered.
 
-Ask a day later if you can. What is remembered is what will be repeated.
+Ask a day later if you can. What is remembered is what will be repeated. Record the gist without their name; a short phrase they used is enough.
 
-**Answer:** What they remembered afterwards, in their words
+**Answer:** What they remembered afterwards, summarised closely
 
-Ask a day later if you can. What is remembered is what will be repeated.
+Ask a day later if you can. What is remembered is what will be repeated. Record the gist without their name; a short phrase they used is enough.
 
 
 ### Anything remembered more confidently than your evidence supports
@@ -6492,15 +6736,41 @@ Write your answer for “Anything remembered more confidently than your evidence
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: you are presenting to a village hall committee whether to replace the paper booking diary with an online calendar. You have: 7 of 9 regular hirers you spoke to said they would book online; a synthetic chart you drew to practise showing booking clashes falling; and the diary’s own record of 12 double bookings last year.
+
+**Task:** Decide what goes on the single evidence slide and what stays off it, and explain why.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Shows the synthetic clash chart as evidence, or turns 7 of 9 into “78 per cent of hirers” with no sample or route.
+- Adequate: Leads with the decision, shows 7 of the 9 regular hirers spoken to and the 12 double bookings with their period, and keeps the synthetic chart off the evidence slide because invented numbers cannot support a real decision.
+- Strong: As adequate, and states a change condition worded as a trigger to look again (for example, double bookings in the first three months), and checks that the slide survives being screenshotted alone.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -6714,7 +6984,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Two decisions were identified. First: the wording of the held-place message. Cheap to change, cheap to reverse, no traffic to test it with — the decision was to write the clearest version, ship it, and ask three people the following week. Second: whether to shorten the booking form by removing a field. This affects data the provider relies on, so removal is not cheaply reversible; the decision was to ask the provider what the field is used for before touching it. One measurement was refused outright: a proposal to test which cancellation flow produced fewer cancellations, which would have been a test of how well the flow obstructs people.
+- Made-up example: two decisions were identified. First: the wording of the held-place message. Cheap to change, cheap to reverse, no traffic to test it with — the decision was to write the clearest version, ship it, and ask three people the following week. Second: whether to shorten the booking form by removing a field. This affects data the provider relies on, so removal is not cheaply reversible; the decision was to ask the provider what the field is used for before touching it. One measurement was refused outright: a proposal to test which cancellation flow produced fewer cancellations, which would have been a test of how well the flow obstructs people.
 
 
 ### Choose where you will do the work
@@ -7103,18 +7373,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Should you be data-driven?
 
-- Yes, decisions should rest on evidence wherever possible.
-- No, experience is usually a better guide.
-- Data-informed decisions are good; waiting for data on decisions that are cheap to reverse is expensive theatre.
+- Always, since decisions should rest on measured evidence wherever possible.
+- Data-informed, yes; waiting for data on cheap, reversible choices is theatre.
+- Rarely, since experience is usually a better guide than any data.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, decisions should rest on evidence wherever possible. — Wherever possible includes cases where the evidence costs months and the decision costs five minutes to undo.
+Always, since decisions should rest on measured evidence wherever possible. — Wherever possible includes cases where the evidence costs months and the decision costs five minutes to undo.
 
-No, experience is usually a better guide. — That is the opposite error. The judgement is about which decisions are worth the cost.
+Data-informed, yes; waiting for data on cheap, reversible choices is theatre. — The current problem continues while everybody feels rigorous. Comparing the cost of measuring with the cost of being wrong is the actual skill.
 
-Data-informed decisions are good; waiting for data on decisions that are cheap to reverse is expensive theatre. — The current problem continues while everybody feels rigorous. Comparing the cost of measuring with the cost of being wrong is the actual skill.
+Rarely, since experience is usually a better guide than any data. — That is the opposite error. The judgement is about which decisions are worth the cost.
 
 Improve: Compare both costs for every open decision in step 2, in time rather than in feelings. Record the change in step 5.
 
@@ -7133,18 +7403,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You decide the message wording without measuring. What must accompany that?
 
-- A note that it was not tested.
-- Nothing, since the decision is reversible.
-- A way you would notice you were wrong, such as asking three people the following week.
+- A way to notice you were wrong, such as asking three people next week.
+- A clear note in the record saying the wording was not tested.
+- Nothing more, since the decision can be reversed in five minutes anyway.
 
 <details>
 <summary>After your attempt</summary>
 
-A note that it was not tested. — Honest and insufficient. A note does not tell you anything later.
+A way to notice you were wrong, such as asking three people next week. — Without it, deciding quickly becomes deciding blindly. The arrangement to find out is what makes the speed defensible.
 
-Nothing, since the decision is reversible. — Reversible only helps if somebody notices it needs reversing.
+A clear note in the record saying the wording was not tested. — Honest and insufficient. A note does not tell you anything later.
 
-A way you would notice you were wrong, such as asking three people the following week. — Without it, deciding quickly becomes deciding blindly. The arrangement to find out is what makes the speed defensible.
+Nothing more, since the decision can be reversed in five minutes anyway. — Reversible only helps if somebody notices it needs reversing.
 
 Improve: Write how you would notice a mistake for both decisions in step 3. Record the change in step 5.
 
@@ -7163,18 +7433,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Somebody asks you to test which cancellation flow produces fewer cancellations. What is the objection?
 
-- Cancellation rate is a poor metric.
-- It would measure how effectively the flow obstructs people who want to leave, which is not something to optimise.
-- The traffic is too low for a reliable result.
+- It would measure how well the flow obstructs leaving, which is not worth optimising.
+- The traffic is too low for the test to give a reliable result in any reasonable time.
+- Cancellation rate is a poor metric that nobody should be reporting.
 
 <details>
 <summary>After your attempt</summary>
 
-Cancellation rate is a poor metric. — It is a reasonable thing to know. What is wrong is optimising a flow against it.
+It would measure how well the flow obstructs leaving, which is not worth optimising. — The test would work. That is what makes this a judgement rather than a limitation, and the reply should offer something else: measuring why people cancel, for instance.
 
-It would measure how effectively the flow obstructs people who want to leave, which is not something to optimise. — The test would work. That is what makes this a judgement rather than a limitation, and the reply should offer something else: measuring why people cancel, for instance.
+The traffic is too low for the test to give a reliable result in any reasonable time. — True here and beside the point. If traffic were ample the objection would be unchanged.
 
-The traffic is too low for a reliable result. — True here and beside the point. If traffic were ample the objection would be unchanged.
+Cancellation rate is a poor metric that nobody should be reporting. — It is a reasonable thing to know. What is wrong is optimising a flow against it.
 
 Improve: Write what you would say in step 4, offering an alternative rather than only refusing. Record the change in step 5.
 
@@ -7214,15 +7484,41 @@ Write your answer for “How the reasoning is recorded so the decisions can be r
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a neighbourhood tool library is waiting to “gather data” before deciding two things: whether its booking confirmation should say “Reserved” or “Booked for you”, and whether to drop the phone-number field that volunteers use to ring people when a tool comes back damaged. It has very little web traffic.
+
+**Task:** Decide which of the two to make now and which needs evidence first, and explain why, including how you would notice a mistake.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Waits for data on both, or decides both now, without comparing the cost of measuring with the cost of being wrong.
+- Adequate: Decides the wording now (cheap, reversible, ask three people next week) and checks the phone field first, because dropping it affects volunteers who rely on it, with a way to notice a mistake for each.
+- Strong: As adequate, and notes that the measurement for the field is one conversation with the volunteers, and names the cost of delay (the current wording keeps confusing people meanwhile).
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -7365,7 +7661,7 @@ Stable ID: m15-l11-v1. Core.
 
 A plan that assumes analytics you do not have is a wish. A plan built from counts, records and conversations is a thing you can start on Monday.
 
-Bring: Your metric tree and instrumentation decisions.
+Bring: Your metric tree; instrumentation decisions help but are not required.
 
 Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
@@ -7436,7 +7732,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The plan had three measures, each with a claim and a limit. Duplicate payments per hundred bookings, from the provider's records, monthly — supports a statement about payment confusion, not about its cause. Cancellations within 24 hours of booking, monthly — supports a statement about commitment confidence, not about satisfaction. Five conversations a quarter with recent bookers — supports mechanisms, not prevalence. Review date set. Unanswered: anything about people who never reached the site, anything about how the numbers compare with similar providers, and anything at population scale.
+- Made-up example: the plan had three measures, each with a claim and a limit. Duplicate payments per hundred bookings, from the provider's records, monthly — supports a statement about how often people pay twice, not about why. Cancellations within 24 hours of booking, monthly — supports a statement about how many bookings are reversed within a day, not about why or about satisfaction. Five conversations a quarter with recent bookers — supports mechanisms, not prevalence. Review date set. Unanswered: anything about people who never reached the site, anything about how the numbers compare with similar providers, and anything at population scale.
 
 
 ### Choose where you will do the work
@@ -7500,15 +7796,15 @@ Payment records, booking records, a support log, an email inbox, a paper ledger.
 Payment records, booking records, a support log, an email inbox, a paper ledger. Small organisations keep more than they realise.
 
 
-### What you could count by hand, and who you could ask
+### What you could count by hand, and who you could ask (roles, not names)
 
 Section: practice-plan. Stable action: write-countable-askable.
 
-Write your answer for “What you could count by hand, and who you could ask”. Use the task instructions below to decide what to include.
+Describe people by role, such as the volunteer who runs the desk. Names and contact details stay in your own notes.
 
-**Answer:** What you could count by hand, and who you could ask
+**Answer:** What you could count by hand, and who you could ask (roles, not names)
 
-
+Describe people by role, such as the volunteer who runs the desk. Names and contact details stay in your own notes.
 
 
 ### Choose three measures
@@ -7843,18 +8139,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Without analytics, can you measure anything?
 
-- Yes, and the results are as good as analytics would give.
-- You can count what the organisation already records, count things by hand and ask people. What you cannot do is claim precision or scale.
-- Not usefully, so the honest answer is to wait for tooling.
+- Not usefully, so the honest course is to wait until proper tooling is in place.
+- Yes: count what is already recorded, count by hand and ask, without claiming scale.
+- Yes, and the results will be every bit as good as analytics would give.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, and the results are as good as analytics would give. — They are not. They are obtainable, which is a different and more useful property at this scale.
+Not usefully, so the honest course is to wait until proper tooling is in place. — Waiting produces nothing for months and then a conversation about budget. The provider’s records are sitting there.
 
-You can count what the organisation already records, count things by hand and ask people. What you cannot do is claim precision or scale. — Payment records, a booking book and five conversations produce a plan that starts on Monday. Saying plainly what it cannot support is what makes the rest usable.
+Yes: count what is already recorded, count by hand and ask, without claiming scale. — Payment records, a booking book and five conversations produce a plan that starts on Monday. Saying plainly what it cannot support is what makes the rest usable.
 
-Not usefully, so the honest answer is to wait for tooling. — Waiting produces nothing for months and then a conversation about budget. The provider’s records are sitting there.
+Yes, and the results will be every bit as good as analytics would give. — They are not. They are obtainable, which is a different and more useful property at this scale.
 
 Improve: Replace any measure in step 2 that needs tooling with one from an existing record. Record the change in step 5.
 
@@ -7873,18 +8169,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your plan has eleven measures. Is that thorough?
 
-- Yes, more measures give a fuller picture.
-- Yes, provided they are all obtainable.
-- Three you will collect beat ten you intend to. A long plan is one nobody maintains past the first month.
+- It is, because more measures always give a fuller and fairer picture of what is happening.
+- It is, provided every one of the eleven can actually be obtained.
+- Three you will collect beat ten you intend to; long plans lapse in the first month.
 
 <details>
 <summary>After your attempt</summary>
 
-Yes, more measures give a fuller picture. — The first lesson dealt with this: more numbers give more to argue with rather than more understanding.
+It is, because more measures always give a fuller and fairer picture of what is happening. — The first lesson dealt with this: more numbers give more to argue with rather than more understanding.
 
-Yes, provided they are all obtainable. — Obtainable each month, by somebody, in the time available. Eleven rarely is.
+It is, provided every one of the eleven can actually be obtained. — Obtainable each month, by somebody, in the time available. Eleven rarely is.
 
-Three you will collect beat ten you intend to. A long plan is one nobody maintains past the first month. — Each measure costs time every period, for ever. Keeping it to three means the plan survives a busy month, which is when measurement is usually abandoned.
+Three you will collect beat ten you intend to; long plans lapse in the first month. — Each measure costs time every period, for ever. Keeping it to three means the plan survives a busy month, which is when measurement is usually abandoned.
 
 Improve: Reduce step 2 to three measures and move the rest to the unanswered list or drop them. Record the change in step 5.
 
@@ -7903,18 +8199,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 One of your measures has a claim written beside it but no limit. What is the risk?
 
-- The claim grows. Written now, the limit travels with it; written later, it is a correction nobody reads.
-- Not much, since the limits are obvious.
-- It makes the plan harder to read.
+- The claim grows; a limit written now travels with it, one added later rarely does.
+- Mainly that the plan becomes harder for other people to read, follow and keep up to date.
+- Not much, since the limits are obvious to anybody who reads the plan.
 
 <details>
 <summary>After your attempt</summary>
 
-The claim grows. Written now, the limit travels with it; written later, it is a correction nobody reads. — Duplicate payments from a provider’s records support a statement about payment confusion and not about its cause. Both sentences belong beside the measure from the start.
+The claim grows; a limit written now travels with it, one added later rarely does. — Duplicate payments from a provider’s records support a statement about payment confusion and not about its cause. Both sentences belong beside the measure from the start.
 
-Not much, since the limits are obvious. — They are obvious to you this week. They are invisible to whoever quotes the number in six months.
+Mainly that the plan becomes harder for other people to read, follow and keep up to date. — A limit is one clause. The risk is about what the measure gets used to argue.
 
-It makes the plan harder to read. — A limit is one clause. The risk is about what the measure gets used to argue.
+Not much, since the limits are obvious to anybody who reads the plan. — They are obvious to you this week. They are invisible to whoever quotes the number in six months.
 
 Improve: Write the limit beside every claim in step 3, and put the source inside the statement. Record the change in step 5.
 
@@ -7954,15 +8250,41 @@ Anything about people who never arrived, anything comparative, anything at popul
 Anything about people who never arrived, anything comparative, anything at population scale.
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: a village bus booking service has no analytics. It keeps a paper log of every booking and cancellation, a voicemail inbox, and a driver’s notebook of no-shows. The coordinator asks for a measurement plan to see whether a new reminder text is reducing no-shows.
+
+**Task:** Choose one measure the plan could start on Monday, write the claim it supports and the claim it does not, and explain why it is obtainable.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Chooses something that needs tooling the service does not have, or states a claim with no limit, such as “proves the reminder works”.
+- Adequate: Chooses no-shows per hundred bookings from the driver’s notebook and the paper log, monthly; supports a statement about how many booked passengers did not turn up, not about why or whether the text caused a change.
+- Strong: As adequate, and names a review date and owner, notes the notebook may be incomplete, and adds an askable measure (a few passengers asked whether they saw the text).
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
@@ -8176,7 +8498,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The limitations page listed: all funnel figures synthetic and labelled; the survey at 22 responses through two groups; usability findings from three and then two participants; no analytics and no traffic, so no rate is reportable at population scale; the cohort exercise demonstrating method on synthetic data only. The rehearsed exchange: asked for the percentage improvement, the answer was “I cannot give you one honestly — what I have is that two of three participants could not tell their place was held, and duplicate payments in the provider's records over the next month would tell us whether the change helped. I can have that number in four weeks.” The temptation recorded: wanting to present the synthetic funnel without the label because it looked convincing.
+- Made-up example: the limitations page listed: all funnel figures synthetic and labelled; the survey at 22 responses through two groups; usability findings from three and then two participants; no analytics and no traffic, so no rate is reportable at population scale; the cohort exercise demonstrating method on synthetic data only. The rehearsed exchange: asked for the percentage improvement, the answer was “I cannot give you one honestly — what I have is that two of three participants could not tell their place was held. The provider's records over the next month will show whether duplicate payments fall; that will not prove the change caused it, but it tells us where to look next. I can have that number in four weeks.” The temptation recorded: wanting to present the synthetic funnel without the label because it looked convincing.
 
 
 ### Choose where you will do the work
@@ -8329,7 +8651,7 @@ Section: practice-plan. Stable action: step-3-sort-1.
 
 Six replies to a made up request for a percentage that the evidence cannot support. For each one, decide what it does.
 
-I cannot give you one honestly. What I have is that two of three people we watched could not tell their place was held, and duplicate payments over the next month would tell us whether the change helped. I can have that in four weeks.
+I cannot give you one honestly. What I have is that two of three people we watched could not tell their place was held. The provider’s records over the next month will show whether duplicate payments fall; that will not prove the change caused it, but it tells us where to look next. I can have it in four weeks.
 
 - honest and useful
 - honest and unhelpful
@@ -8595,18 +8917,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Does being rigorous make you less useful?
 
-- Somewhat, since people want answers rather than caveats.
-- No, rigour speaks for itself.
-- Being unreliable makes you less useful. Somebody who says what the evidence supports, offers the next step and is right about the limits becomes the person whose numbers are trusted.
+- Somewhat, since people want answers they can use rather than caveats.
+- Being unreliable does; saying what the evidence supports, with a next step, earns trust.
+- No, because careful rigour speaks for itself to anybody who is paying attention.
 
 <details>
 <summary>After your attempt</summary>
 
-Somewhat, since people want answers rather than caveats. — They want answers they can rely on. A number that collapses when checked costs you the next three conversations.
+Somewhat, since people want answers they can use rather than caveats. — They want answers they can rely on. A number that collapses when checked costs you the next three conversations.
 
-No, rigour speaks for itself. — It does not. Rigour with nothing offered alongside it reads as obstruction.
+Being unreliable does; saying what the evidence supports, with a next step, earns trust. — The reply that works names what you have, and what would produce more, with a date. A flat refusal is honest and loses to somebody else’s worse number.
 
-Being unreliable makes you less useful. Somebody who says what the evidence supports, offers the next step and is right about the limits becomes the person whose numbers are trusted. — The reply that works names what you have, and what would produce more, with a date. A flat refusal is honest and loses to somebody else’s worse number.
+No, because careful rigour speaks for itself to anybody who is paying attention. — It does not. Rigour with nothing offered alongside it reads as obstruction.
 
 Improve: Check your reply in step 3 offers something as well as declining something. Record the change in step 5.
 
@@ -8625,18 +8947,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You listed fourteen limitations in the order the lessons came. What is wrong with that?
 
-- It mixes three different problems and reads as one long apology, so the useful half disappears.
-- Nothing, as long as all fourteen are there.
-- Fourteen is too many to be credible.
+- It mixes three different problems into one long apology, hiding the useful half.
+- Nothing, as long as all fourteen limitations are there and accurate.
+- Fourteen is simply too many limitations for any reader to find credible.
 
 <details>
 <summary>After your attempt</summary>
 
-It mixes three different problems and reads as one long apology, so the useful half disappears. — Synthetic supports nothing about your product; a small sample supports real counts; unavailable is simply unknown. Grouped, the page becomes a statement of what you know.
+It mixes three different problems into one long apology, hiding the useful half. — Synthetic supports nothing about your product; a small sample supports real counts; unavailable is simply unknown. Grouped, the page becomes a statement of what you know.
 
-Nothing, as long as all fourteen are there. — Completeness is necessary and the shape decides whether anybody can use it.
+Nothing, as long as all fourteen limitations are there and accurate. — Completeness is necessary and the shape decides whether anybody can use it.
 
-Fourteen is too many to be credible. — Fourteen is an honest count for a module of this size. The order is what makes it unreadable.
+Fourteen is simply too many limitations for any reader to find credible. — Fourteen is an honest count for a module of this size. The order is what makes it unreadable.
 
 Improve: Regroup the page under the three headings in step 2 and say what each kind supports. Record the change in step 5.
 
@@ -8655,18 +8977,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Asked for a percentage, you answer “roughly two-thirds, though the sample is small”. What happens next?
 
-- The audience will ask about the sample if it matters.
-- Two-thirds reaches the slide and the caveat does not. Two of three people is two people.
-- Nothing, since the caveat was stated.
+- Nothing much, since the caveat about the sample was stated at the same time.
+- Two-thirds reaches the slide; the caveat does not. Two of three is two people.
+- Anybody who needs to know the sample size will ask about it if it matters.
 
 <details>
 <summary>After your attempt</summary>
 
-The audience will ask about the sample if it matters. — The audience three steps later does not know there was a sample to ask about.
+Nothing much, since the caveat about the sample was stated at the same time. — It was stated aloud, once, to one person, and the number is what gets written down.
 
-Two-thirds reaches the slide and the caveat does not. Two of three people is two people. — Hedged numbers travel without their hedges. The version that survives is the count with its denominator attached, because the two cannot be separated.
+Two-thirds reaches the slide; the caveat does not. Two of three is two people. — Hedged numbers travel without their hedges. The version that survives is the count with its denominator attached, because the two cannot be separated.
 
-Nothing, since the caveat was stated. — It was stated aloud, once, to one person, and the number is what gets written down.
+Anybody who needs to know the sample size will ask about it if it matters. — The audience three steps later does not know there was a sample to ask about.
 
 Improve: Rewrite your reply in step 3 so every number carries its denominator inside the sentence. Record the change in step 5.
 
@@ -8706,15 +9028,41 @@ Write your answer for “Where the page lives so you can reuse it”. Use the ta
 
 
 
-### What you changed after the Check questions
+### What you changed after the Check questions, or why no change was needed
 
 Section: practice. Stable action: write-improvement-made.
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
 Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.
+
+
+### Your decision for the new case, and why
+
+Section: practice. Stable action: write-transfer-decision.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
+
+**New case.** Made-up case: you redesigned a charity’s volunteer sign-up form. You watched four people use it: three finished without help. You also drew a synthetic chart to practise showing sign-ups rising. The charity’s director asks: “Can I tell the trustees the new form increased sign-ups by a third?”
+
+**Task:** Write the two or three sentences you would say to the director, and explain what each part is doing.
+
+<details>
+<summary>Compare after writing</summary>
+
+- Weak: Gives a percentage, uses the synthetic chart as support, or refuses with nothing offered instead.
+- Adequate: Declines the “by a third” claim, offers what exists (three of the four people watched finished without help), and names what would produce more, such as sign-up counts before and after, with a date.
+- Strong: As adequate, and says a before-and-after count would show where to look rather than prove the form caused a change, and keeps the synthetic chart out of anything the trustees see as evidence.
+
+</details>
+
+**Answer:** Your decision for the new case, and why
+
+Optional: may be left empty.
+
+Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
 
 ### Review and finish your practice
