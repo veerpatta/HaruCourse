@@ -22,7 +22,8 @@ assert.ok(md.includes("(not filled yet)"));
 assert.ok(md.includes("Steps ticked as a navigation aid: 1"));
 assert.ok(md.includes("(worksheet kept in the app)"));
 assert.ok(!md.includes("|"), "no table syntax in the downloadable copy");
-assert.deepEqual(filledCount(lesson, rec.worksheet), { filled: 2, total: 36 });
+// 36 shipped answers plus the optional transfer answer (4 October 2026).
+assert.deepEqual(filledCount(lesson, rec.worksheet), { filled: 2, total: 37 });
 const reflectTitle = lesson.apprenticeship.worksheet.find(w => w.id === "reflect").title;
 assert.ok(worksheetBody(lesson, base).includes(`## ${reflectTitle}`));
 // A record whose worksheet field the lesson no longer declares still parses and is kept.
