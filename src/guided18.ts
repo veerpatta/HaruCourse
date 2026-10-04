@@ -587,7 +587,7 @@ export const guided18: Record<string, Guided> = {
     worksheet: [
       { id: 'choose', title: 'One problem', fields: [
         { id: 'candidates', label: 'The candidate problems from your findings', kind: 'long' },
-        { id: 'chosen-why', label: 'The one you chose, and why, using the counts', kind: 'long', example: 'Example (made up): not knowing when a repair will be ready. All five participants raised it, and it is what generates the daily interruptions.' },
+        { id: 'chosen-why', label: 'The one you chose, and why, using the counts', kind: 'long', example: 'Example (made up): not knowing when a repair will be ready. All three participants — the owner and both customers — raised it, and it is what generates the daily interruptions.' },
       ] },
       { id: 'appetite', title: 'Appetite before scope', fields: [
         { id: 'weeks-set', label: 'How many weeks, decided before looking at the scope', kind: 'short' },
@@ -598,12 +598,12 @@ export const guided18: Record<string, Guided> = {
         { id: 'what-survives', label: 'What survives, with states and accessibility intact', kind: 'long', hint: 'Cut by feature. Cutting by quality is the silent decision Module 14 warned about.' },
       ] },
       { id: 'not-building', title: 'The not-building list', fields: [
-        { id: 'cuts-with-reasons', label: 'Each cut, with the reason and what would bring it back', kind: 'long' },
+        { id: 'cuts-with-reasons', label: 'Each cut, with the reason and what would bring it back', kind: 'long', hint: 'If a refusal depends on a condition, write it: no accounts only if each person still sees only their own record.' },
         { id: 'refusing-outright', label: 'Anything you are refusing outright rather than deferring', kind: 'short' },
       ] },
       { id: 'check', title: 'Check the frame with them', fields: [
-        { id: 'read-back', label: 'Who you read the frame back to, and what they said', kind: 'long', hint: 'The person who described the problem. This is the cheapest correction available in the whole project.' },
-        { id: 'correction', label: 'Their correction, and what you changed', kind: 'long', example: 'Example (made up): it is not the waiting that annoys people, it is being told twice that it will be ready tomorrow.' },
+        { id: 'read-back', label: 'Who you read the frame back to, by role, and what they said — or your labelled self-check against their words', kind: 'long', sensitive: true, hint: 'The person who described the problem. This is the cheapest correction available in the whole project. With nobody to ask, compare the frame with their words in your notes or the supplied brief.' },
+        { id: 'correction', label: 'Their correction or the mismatch you found, and what you changed', kind: 'long', sensitive: true, example: 'Example (made up): it is not the waiting that annoys people, it is being told twice that it will be ready tomorrow.' },
         improvementMade,
       ] },
     ],
@@ -636,7 +636,7 @@ export const guided18: Record<string, Guided> = {
             { label: 'How I made it fit', text: 'Kept all four and did each more simply. No error states, one happy path each, accessibility left until the end.' },
             { label: 'What that produced at the end of three weeks', text: 'Four half-features, none of which survived a person using it. The status page had no stale-data state and the notifications had no failure case.' },
             { label: 'What cutting by feature would have produced', text: 'One status page, with its eleven exception rows, a keyboard pass and honest wording. Something that works.' },
-            { label: 'What the not-building list said', text: 'Notifications: back if the status page is used and people still ring. Quote records: a different problem, deferred. Accounts: refused outright, because the page can be reached by job number and an account is a barrier.' },
+            { label: 'What the not-building list said', text: 'Notifications: back if the status page is used and people still ring. Quote records: a different problem, deferred. Accounts: refused, because an account is a barrier for somebody checking once — on condition that a real version still keeps every job private another way.' },
           ],
           wrongTurn: 'The wrong turn is keeping every feature and doing each less well, because cutting a feature feels like failing and doing things simply feels like discipline. What gets dropped is always the states and the accessibility, because they are the parts still unfinished at the end.',
           tradeoff: 'One feature is a thinner-sounding project, and somebody looking at the portfolio will see less on the page.',
@@ -660,10 +660,10 @@ export const guided18: Record<string, Guided> = {
                 'refused outright': 'Nothing is wrong with it; there is no time.',
                 'should not have been cut': 'It is a second feature on a one-feature appetite.',
               } },
-            { id: 'accounts', text: 'A customer account system. Refused: the page can be reached by job number, and an account is a barrier for somebody checking once.', answer: 'refused outright',
+            { id: 'accounts', text: 'A customer account system. Refused: an account is a barrier for somebody checking once — provided a real version still shows each customer only their own job.', answer: 'refused outright',
               feedback: {
                 'a feature cut, with a return condition': 'It is not waiting for anything; it is the wrong answer for this problem.',
-                'refused outright': 'Recorded with the reason, so it does not return in three months as a new idea.',
+                'refused outright': 'Recorded with the reason and the condition it depends on, so it does not return in three months as a new idea and lesson 6 knows what to test.',
                 'should not have been cut': 'Cutting it improves the thing rather than reducing it.',
               } },
             { id: 'stale-state', text: 'The state where the information is more than a day old.', answer: 'should not have been cut',
@@ -722,9 +722,9 @@ export const guided18: Record<string, Guided> = {
       {
         question: 'Would more features make a better portfolio project?',
         options: [
-          { label: 'Depth reads better than breadth to anybody who has built anything. One complete flow with its states, tests and limits is worth more than four sketched features.', correct: true, feedback: 'Four half-features on a three-week appetite means four happy paths and no error states. A reviewer sees immediately which one the project was.' },
-          { label: 'Yes, since more features show more range.', feedback: 'They show more screens. Range is shown across projects rather than within one.' },
-          { label: 'Yes, if each is done to the same standard.', feedback: 'On a fixed appetite they cannot be, and what drops is always the same part.' },
+          { label: 'One complete flow with its states, tests and limits is worth more than four sketched features.', correct: true, was: ['Depth reads better than breadth to anybody who has built anything. One complete flow with its states, tests and limits is worth more than four sketched features.'], feedback: 'Depth reads better than breadth to anybody who has built anything. Four half-features on a three-week appetite means four happy paths and no error states, and a reviewer sees which one the project was.' },
+          { label: 'More features help, because a reviewer sees a wider range of screens and decisions in one project.', was: ['Yes, since more features show more range.'], feedback: 'They show more screens. Range is shown across projects rather than within one.' },
+          { label: 'More features help, provided each one is finished to the same standard as the others.', was: ['Yes, if each is done to the same standard.'], feedback: 'On a fixed appetite they cannot all be, and what drops is always the same part: the states and the accessibility work.' },
         ],
         repair: 'Cut by feature in step 3 until one thing fits, with its states intact. Record the change in step 5.',
         recheck: 'Your scope is one feature done completely.',
@@ -732,9 +732,9 @@ export const guided18: Record<string, Guided> = {
       {
         question: 'The accessibility pass is on your not-building list. Is that a scope decision?',
         options: [
-          { label: 'No. It is a cut to the quality of what remains, wearing the clothes of a scope decision.', correct: true, feedback: 'A state and an accessibility pass are part of the thing rather than extra things. Cutting a whole feature is a decision; cutting these is what happens when nobody decides.' },
-          { label: 'Yes, everything is negotiable under a fixed appetite.', feedback: 'Features are. What makes the remaining feature work is not.' },
-          { label: 'Yes, provided it is scheduled for afterwards.', feedback: 'Afterwards is the return condition the sorter warned about: it waits for somebody to be excluded.' },
+          { label: 'It is a cut to the quality of what remains, wearing the clothes of a scope decision.', correct: true, was: ['No. It is a cut to the quality of what remains, wearing the clothes of a scope decision.'], feedback: 'A state and an accessibility pass are part of the thing rather than extra things. Cutting a whole feature is a decision; cutting these is what happens when nobody decides.' },
+          { label: 'It is a scope decision, since everything is negotiable once the appetite is fixed.', was: ['Yes, everything is negotiable under a fixed appetite.'], feedback: 'Features are negotiable. What makes the remaining feature work is not.' },
+          { label: 'It is a scope decision as long as the pass is scheduled for straight after the release.', was: ['Yes, provided it is scheduled for afterwards.'], feedback: 'Afterwards is the return condition the sorter warned about: it waits for somebody to be excluded first.' },
         ],
         repair: 'Move any state, failure path or accessibility check off the cut list in step 4, and cut a feature instead. Record the change in step 5.',
         recheck: 'Everything on your not-building list is a whole feature.',
@@ -742,14 +742,23 @@ export const guided18: Record<string, Guided> = {
       {
         question: 'You read your problem frame back to the shop owner and he corrected a detail. What does that tell you?',
         options: [
-          { label: 'That five minutes of checking caught something the whole project would otherwise have been built on.', correct: true, feedback: 'Being told twice that it will be ready tomorrow is a different problem from waiting, and it changes the wording of every state. It is the cheapest correction available anywhere in the project.' },
-          { label: 'That your synthesis was weak.', feedback: 'A frame is an interpretation, and interpretations get corrected by the people they are about.' },
-          { label: 'That his view should override the findings.', feedback: 'Not override. Corrections from the person who described the problem go beside the counts rather than replacing them.' },
+          { label: 'Five minutes of checking caught something the whole project would otherwise have been built on.', correct: true, was: ['That five minutes of checking caught something the whole project would otherwise have been built on.'], feedback: 'Being told twice that it will be ready tomorrow is a different problem from waiting, and it changes the wording of every state. It is the cheapest correction available anywhere in the project.' },
+          { label: 'Your synthesis was weak, because a sound one would not need correcting by the owner.', was: ['That your synthesis was weak.'], feedback: 'A frame is an interpretation, and interpretations get corrected by the people they are about. That is what the check is for.' },
+          { label: 'His view should now override the counted findings, since the problem is his to describe.', was: ['That his view should override the findings.'], feedback: 'It sits beside them. A correction from the person who described the problem goes next to the counts rather than replacing them.' },
         ],
-        repair: 'Read the frame back in step 5 and record what they said, including a correction. Note the change.',
-        recheck: 'Somebody who described the problem has seen your frame.',
+        repair: 'Read the frame back in step 5, or self-check it against their words, and record what you found. Note the change.',
+        recheck: 'Somebody who described the problem has seen your frame, or your self-check is labelled.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: Research for a small yoga studio found three problems: members cannot see which classes are full (raised by all four people you spoke to), the teacher loses track of who has paid (raised by one) and the timetable is hard to read (raised by two). You have three weeks of evenings. Your ideal list: a live class-capacity view, payment tracking, a redesigned timetable, member accounts and a waiting list.',
+      prompt: 'What would you build, what goes on the not-building list, and what must survive inside whatever you build? Explain why.',
+      anchors: {
+        weak: 'Keeps most of the list and does each part simply, dropping error states and accessibility to make it fit; no reasons are recorded.',
+        adequate: 'Builds the capacity view because four of four raised it, lists the other features as cut with reasons and return conditions, and keeps the full-class, stale and error states and the accessibility work.',
+        strong: 'As adequate, and notes what refusing accounts depends on (members seeing only what they should), names the trade-off of a thinner-looking project, and plans to read the frame back to a member.',
+      },
+    },
     saveRoute: {
       auto: 'Your candidates, the chosen problem, the appetite, the scope and the not-building list save as you type, on this device first and then online.',
       external: 'The not-building list is worth keeping with the project rather than only here; it is one of the strongest pages in the eventual case study.',
@@ -767,6 +776,7 @@ export const guided18: Record<string, Guided> = {
       { id: 'states', title: 'States and exceptions', fields: [
         { id: 'exception-table', label: 'The exception table for this domain', kind: 'long', hint: 'Not optional because the project is small. A job number that does not exist, information a day old, somebody arriving early.' },
         { id: 'state-wording', label: 'Each state’s wording and its route out', kind: 'long' },
+        { id: 'access-rule', label: 'Who may see what: the rule that stops one person seeing another person’s record, and the exception rows that test it', kind: 'long', hint: 'For example: a mistyped or neighbouring reference shows not found, never another job; the page shows no names or phone numbers.', example: 'Example (made up): one customer never sees another customer’s job. Rows: neighbouring job number, number with a space, a link forwarded by somebody else.' },
       ] },
       { id: 'interface', title: 'Interface from your own system', fields: [
         { id: 'built-from-system', label: 'Which components and tokens you reused', kind: 'long' },
@@ -792,7 +802,7 @@ export const guided18: Record<string, Guided> = {
         start: 'Ask how somebody would arrive if they had lost the text message.',
         enough: 'At least one entry point is one you would not have chosen.' },
       { expect: 'An exception table for this domain, with each state’s wording and route out.',
-        fields: ['exception-table', 'state-wording'],
+        fields: ['exception-table', 'state-wording', 'access-rule'],
         terms: [
           { term: 'Exception table', meaning: 'The list of everything that can go wrong, from Module 7. A small project has fewer rows and not none.' },
           { term: 'Route out', meaning: 'What the person does next from each state. A state with no route is a dead end wearing a message.' },
@@ -802,7 +812,7 @@ export const guided18: Record<string, Guided> = {
           beats: [
             { label: 'What I did', text: 'Designed the page first, then went through it looking for what could go wrong. Four rows: no job found, no date yet, page fails to load, and job already collected.' },
             { label: 'Why those four', text: 'They are the ones visible from the screen. Each is a state the design already had somewhere to put.' },
-            { label: 'What writing the table first would have found', text: 'Eleven rows. The ones I missed were about the world rather than the screen: information a day old, the owner on holiday, two jobs for the same customer, a number typed with a space in it.' },
+            { label: 'What writing the table first would have found', text: 'Eleven rows. The ones I missed were about the world rather than the screen: information a day old, the owner on holiday, two jobs for the same customer, a number typed with a space in it, and a neighbouring number typed by mistake, which must show not found rather than somebody else’s job.' },
             { label: 'The one that mattered most', text: 'Stale information. The page was designed to show the latest update and nothing in it distinguished an update from this morning from one from last Tuesday.' },
             { label: 'What changed', text: 'A last-updated line, and wording that changes when the update is more than a day old. Neither would have existed if the table had been written from the screen.' },
           ],
@@ -899,9 +909,9 @@ export const guided18: Record<string, Guided> = {
       {
         question: 'It is a small project, so can the process be lighter?',
         options: [
-          { label: 'It can be shorter. Skipping states, accessibility and failure paths is not lightness; it produces something that would not survive contact with a real person.', correct: true, feedback: 'Fewer methods is legitimate: no card sort for a three-item structure, with the reason recorded. Eleven exception rows on a small project is still eleven rows.' },
-          { label: 'Yes, the rigour should scale with the size.', feedback: 'The number of methods scales. What makes the one feature work does not.' },
-          { label: 'Yes, since nobody is depending on it.', feedback: 'Three people are about to use it, one of whom has never heard of the project.' },
+          { label: 'Shorter, yes; but dropping states, accessibility and failure paths is not lighter, it is unfinished.', correct: true, was: ['It can be shorter. Skipping states, accessibility and failure paths is not lightness; it produces something that would not survive contact with a real person.'], feedback: 'Fewer methods is legitimate: no card sort for a three-item structure, with the reason recorded. Eleven exception rows on a small project is still eleven rows.' },
+          { label: 'Lighter, because the rigour of the whole process should scale down with the size of the project.', was: ['Yes, the rigour should scale with the size.'], feedback: 'The number of methods scales. What makes the one feature work does not.' },
+          { label: 'Lighter, because nobody depends on a three-week project, so missing states harm no one.', was: ['Yes, since nobody is depending on it.'], feedback: 'Testers are about to use it, at least one of them a stranger to the project, and the states are what they will meet.' },
         ],
         repair: 'Write the exception table in step 2 before designing any screen. Record the change in step 5.',
         recheck: 'Your exception table has rows for this domain rather than a note that it is small.',
@@ -909,9 +919,9 @@ export const guided18: Record<string, Guided> = {
       {
         question: 'Your system lacks a component for a status that changes over time. What should you do?',
         options: [
-          { label: 'Build what you need and record the mismatch, so the system knows it was tested against something it was not designed for.', correct: true, feedback: 'Working around it quietly puts a raw value in a project file and leaves the system describing a product that no longer exists. The mismatch list is the most interesting output of this lesson.' },
-          { label: 'Add the component to the system immediately.', feedback: 'One project needing it is not a pattern. It goes through governance with the mismatch as evidence.' },
-          { label: 'Redesign so the system fits.', feedback: 'That lets an abstraction decide what the domain needs.' },
+          { label: 'Make what you need here and record the mismatch for the system to consider.', correct: true, was: ['Build what you need and record the mismatch, so the system knows it was tested against something it was not designed for.'], feedback: 'Working around it quietly puts a raw value in a project file and leaves the system describing a product that no longer exists. The mismatch list is the most interesting output of this lesson.' },
+          { label: 'Add a new stages component to the shared system straight away, so the next project has it.', was: ['Add the component to the system immediately.'], feedback: 'One project needing it is not a pattern. It goes through governance with the mismatch as evidence.' },
+          { label: 'Redesign the page so the existing components fit, keeping the system unchanged.', was: ['Redesign so the system fits.'], feedback: 'That lets an abstraction decide what the domain needs.' },
         ],
         repair: 'Write every mismatch into step 3 rather than working around it. Record the change in step 5.',
         recheck: 'Your mismatch list has at least one entry.',
@@ -919,14 +929,23 @@ export const guided18: Record<string, Guided> = {
       {
         question: 'You did not run a screen-reader pass. How should that appear?',
         options: [
-          { label: 'As a stated omission, distinct from a check that passed.', correct: true, feedback: 'Module 11 made the same point: not tested and tested-and-fine look identical in a document unless you write the difference down. Accessibility is the first thing dropped and the easiest to imply.' },
-          { label: 'It need not appear, since the keyboard pass covers most of it.', feedback: 'They overlap and are not the same check, as Module 11 showed in detail.' },
-          { label: 'As a limitation at the end of the write-up.', feedback: 'It belongs with the checks, where somebody reading them will see which were run.' },
+          { label: 'As a stated omission beside the checks that were run, distinct from a pass.', correct: true, was: ['As a stated omission, distinct from a check that passed.'], feedback: 'Module 11 made the same point: not tested and tested-and-fine look identical in a document unless you write the difference down. Accessibility is the first thing dropped and the easiest to imply.' },
+          { label: 'It need not appear, since the keyboard pass covers most of the same problems.', was: ['It need not appear, since the keyboard pass covers most of it.'], feedback: 'They overlap and are not the same check, as Module 11 showed in detail.' },
+          { label: 'As one general limitation at the end of the write-up, away from the checks.', was: ['As a limitation at the end of the write-up.'], feedback: 'It belongs with the checks, where somebody reading them will see which were run.' },
         ],
         repair: 'Write what you could not check in step 4, beside what you did. Record the change in step 5.',
         recheck: 'Run and not-run checks are distinguishable in your record.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: A community laundry wants a page where members check whether their service wash is ready, reached by the number on their paper ticket. Ticket numbers run in order, 301, 302, 303. Your design system has a card and a list component and nothing that shows progress through stages. You have two weeks.',
+      prompt: 'Name three exception rows you would write before any screen, including one about who may see what, and say what you would do about the missing component. Explain why.',
+      anchors: {
+        weak: 'Designs the happy-path screen first, lists only on-screen errors such as “not found”, and quietly invents a progress component without recording it.',
+        adequate: 'Writes rows such as a stale update, a mistyped number and a neighbouring number that must show not found rather than another member’s wash, and records the missing component as a mismatch.',
+        strong: 'As adequate, and notes that numbers in order are guessable so the page should show no names or details, plans to test that with made-up tickets, and states which checks will not be run.',
+      },
+    },
     saveRoute: {
       auto: 'Your structure, exception table, system mismatches, checks and skips save as you type, on this device first and then online.',
       external: 'The files live in your own folder with the project. Keep the mismatch list somewhere the system can see it, not only here.',
@@ -938,12 +957,13 @@ export const guided18: Record<string, Guided> = {
     route: textRoute,
     worksheet: [
       { id: 'build', title: 'Build the smallest thing that answers the question', fields: [
-        { id: 'what-built', label: 'What you built, and which open questions it answers', kind: 'long' },
+        { id: 'what-built', label: 'What you built, which open questions it answers, and the made-up records in it', kind: 'long', hint: 'Made-up (synthetic) records only: invented job numbers, statuses and no real names or phone numbers.' },
         { id: 'failure-included', label: 'The deliberate failure case you included, and why that one', kind: 'short', hint: 'Stale data, a job number that does not exist, an update that has not happened. Choose the one most likely to mislead somebody.' },
       ] },
       { id: 'test', title: 'Test with three, one from outside', fields: [
-        { id: 'who-tested', label: 'Who tested it, and which of them was outside the research', kind: 'short', hint: 'At least one person who has never heard of the project. They are the only one who brings no framing.' },
-        { id: 'session-records', label: 'For each: expectation, action, outcome and hesitation', kind: 'long' },
+        { id: 'test-route', label: 'How this round was tested', kind: 'choice', options: ['Three or more testers, one outside the research', 'Self-pilot or a single tester, labelled as such'], hint: 'Both are complete. A self-pilot is you walking the tasks cold after a break; it is never reported as testing with other people.' },
+        { id: 'who-tested', label: 'Who tested it, by role, and which of them was outside the research — or that this was a self-pilot', kind: 'short', sensitive: true, hint: 'At least one person who has never heard of the project, if you can. They are the only one who brings no framing. Roles only.' },
+        { id: 'session-records', label: 'For each session: expectation, action, outcome and hesitation, summarised without names', kind: 'long', sensitive: true, hint: 'Keep raw notes in a private file or on paper with a date to delete them.' },
         { id: 'conditions', label: 'Device, connection and setting for every session', kind: 'short' },
       ] },
       { id: 'rank', title: 'Rank by harm, and predict', fields: [
@@ -952,9 +972,12 @@ export const guided18: Record<string, Guided> = {
       ] },
       { id: 'repair', title: 'Repair one thing and re-test', fields: [
         { id: 'what-changed', label: 'The one thing you changed', kind: 'short' },
-        { id: 'retest-result', label: 'The re-test result, including any failure', kind: 'long', hint: 'A repair that did not work is the more useful result and the one people leave out.' },
+        { id: 'retest-result', label: 'The re-test result as a count, including any failure', kind: 'long', sensitive: true, hint: 'A repair that did not work is the more useful result and the one people leave out.' },
       ] },
-      { id: 'file', title: 'File it', fields: [
+      { id: 'file', title: 'Run the stop gate and file it', fields: [
+        { id: 'records-held', label: 'What information about real people this would hold or show if it were used for real', kind: 'long', hint: 'Names, phone numbers, what somebody brought in, their address. Write none only if that is true.' },
+        { id: 'gate-test', label: 'What you tried with made-up records, and what each attempt showed', kind: 'long', hint: 'A neighbouring number, a mistyped one, a link meant for somebody else, and the file’s source. Made-up records only.', example: 'Example (made up): typing 1042 instead of 1041 showed another made-up job; every job was readable in the file’s source.', requiredWhen: { field: 'gate-result', values: ['Passed: with made-up records, nobody could reach another person’s record', 'Not passed: it stays a local demonstration with made-up records'] } },
+        { id: 'gate-result', label: 'The privacy and access-control stop gate', kind: 'choice', options: ['Passed: with made-up records, nobody could reach another person’s record', 'Not passed: it stays a local demonstration with made-up records', 'Not applicable: it holds no information about any real person'], hint: 'Until a version passes, it stays a local demonstration with made-up records. A single file holding every record cannot pass.' },
         { id: 'both-versions', label: 'Where both versions and the records are saved', kind: 'short' },
         improvementMade,
       ] },
@@ -972,7 +995,7 @@ export const guided18: Record<string, Guided> = {
             { label: 'What I set out to build', text: 'The page properly: real styling from the system, every state, the owner’s update view, and the customer view, all working.' },
             { label: 'How long that took', text: 'Nine evenings of a fifteen-evening appetite, which left six for testing, repairing and handover.' },
             { label: 'What the open questions actually were', text: 'Whether people read the status as a promise, and whether the owner would update it at all. Two questions.' },
-            { label: 'What would have answered them', text: 'A single page with three hard-coded jobs and a form that writes to a text file. Two evenings.' },
+            { label: 'What would have answered them', text: 'A single page with three made-up jobs written into it and a pretend update form. Two evenings.' },
             { label: 'What the extra seven evenings bought', text: 'Polish on a design that then changed, because the wording turned out to be wrong. Most of what I built was rebuilt after the first test.' },
           ],
           wrongTurn: 'The wrong turn is building the thing rather than building what the questions need, because the thing is what you designed and building it feels like progress. Everything built before the first test is built on an untested wording.',
@@ -982,7 +1005,7 @@ export const guided18: Record<string, Guided> = {
         start: 'List the open questions first, then build only what they need.',
         enough: 'Somebody can reach your failure case on purpose.' },
       { expect: 'Three people, at least one outside the research, with expectation, action, outcome and hesitation recorded, and the conditions.',
-        fields: ['who-tested', 'session-records', 'conditions'],
+        fields: ['test-route', 'who-tested', 'session-records', 'conditions'],
         terms: [
           { term: 'Outside the research', meaning: 'Somebody who has never heard of the project. They bring no framing, which is exactly what your participants cannot do.' },
           { term: 'Hesitation', meaning: 'The pause before acting. It is where the interesting findings are, and it disappears from a record written afterwards.' },
@@ -1062,51 +1085,72 @@ export const guided18: Record<string, Guided> = {
         ],
         start: 'Make the smallest change that addresses the top problem, and nothing else.',
         enough: 'The re-test result is recorded as it happened, including a repair that did not work.' },
-      { expect: 'Both versions and the records saved, and the repair the Check questions asked for.',
-        fields: ['both-versions', 'improvement-made'],
+      { expect: 'The stop gate tried with made-up records and its result stated, both versions saved, and the repair the Check questions asked for.',
+        fields: ['records-held', 'gate-test', 'gate-result', 'both-versions', 'improvement-made'],
+        supported: {
+          material: 'A supplied case from a made-up project. A sports club’s kit-collection page holds every member’s order in one HTML file. In testing with made-up orders, everybody found their own order easily. Typing order 0142 instead of 0141 shows another made-up member’s name and shirt size.',
+          question: 'Can the club start sending the page to its real members?',
+          options: [
+            { label: 'Not yet: it stays a demonstration with made-up orders until nobody can reach another member’s order.', correct: true, feedback: 'The usability tests passed and the stop gate did not. One neighbouring number already shows somebody else’s order, and a single file holding every order cannot keep them apart, so no real member’s details go in.' },
+            { label: 'Yes, once it has been tried with real members, because made-up orders cannot reveal privacy problems.', feedback: 'The made-up orders have just revealed it. Trying it with real members first is exactly the exposure the gate exists to prevent.' },
+            { label: 'Yes, if the page warns members to type their order number carefully before pressing find.', feedback: 'A warning moves the responsibility onto members and leaves every order readable to anybody who mistypes or looks at the file.' },
+          ],
+          then: 'Now try the same attempts on your own prototype, with made-up records only, and record the result.',
+        },
         terms: [
+          { term: 'Privacy and access-control stop gate', meaning: 'A test, with made-up records, that one person can never reach another person’s record. Until a version passes, it stays a local demonstration and no real person’s details go into it.' },
+          { term: 'Made-up (synthetic) records', meaning: 'Invented entries that belong to nobody. They let you test the gate without exposing anyone.' },
           { term: 'Both versions', meaning: 'Before and after, kept. The pair is the artefact rather than the final one, and a case study needs both.' },
           { term: 'Repair', meaning: 'The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.' },
         ],
-        start: 'Copy the before version somewhere safe before you change anything.',
-        enough: 'Somebody could look at both versions and the records without asking you anything.' },
+        start: 'Type a neighbouring job number into your prototype and see what appears.',
+        enough: 'The gate result is written down, and somebody could look at both versions and the records without asking you anything.' },
     ],
     checks: [
       {
-        question: 'You plan to test with the people you interviewed. What is the problem?',
+        question: 'You plan to test only with the people you interviewed. What is the problem?',
         options: [
-          { label: 'They helped build the framing, so they will do well and their doing well says nothing about your wording.', correct: true, feedback: 'A person who has never heard of the project is the only one for whom the wording has to carry the meaning alone. That session is usually worth more than the other three together.' },
-          { label: 'Nothing, since they know the domain best.', feedback: 'Knowing the domain is useful. Knowing your framing is what makes them unrepresentative.' },
-          { label: 'It biases towards positive results, which can be discounted.', feedback: 'It cannot be discounted from inside the session; it looks exactly like the design working.' },
+          { label: 'They share your framing, so their success says little about whether the wording works alone.', correct: true, was: ['They helped build the framing, so they will do well and their doing well says nothing about your wording.'], feedback: 'A person who has never heard of the project is the only one for whom the wording has to carry the meaning alone. That session is usually worth more than the others together.' },
+          { label: 'There is no problem, because the people you interviewed know the domain better than anybody.', was: ['Nothing, since they know the domain best.'], feedback: 'Knowing the domain is useful. Knowing your framing is what makes them unrepresentative.' },
+          { label: 'It leans towards positive results, which you can discount when you write up the sessions.', was: ['It biases towards positive results, which can be discounted.'], feedback: 'It cannot be discounted from inside the session; it looks exactly like the design working.' },
         ],
-        repair: 'Arrange one session with somebody outside the research in step 2, and record what they did. Note the change in step 5.',
-        recheck: 'At least one tester had never heard of the project.',
+        repair: 'Arrange one session with somebody outside the research in step 2, or label a self-pilot, and record what happened. Note the change in step 5.',
+        recheck: 'At least one tester had never heard of the project, or the self-pilot is labelled.',
       },
       {
         question: 'Why write the prediction before making the repair?',
         options: [
-          { label: 'So the re-test can disagree with you. Afterwards, whatever happened looks like what you expected.', correct: true, feedback: 'A prediction written first is what makes a failed repair visible as a failed repair, rather than as a result you reinterpret.' },
-          { label: 'To make the re-test faster to run.', feedback: 'It does help, and speed is not the reason.' },
-          { label: 'To show reviewers that the change was reasoned.', feedback: 'A side effect. The reason is what it does to your own reading of the result.' },
+          { label: 'So the re-test can disagree with you; afterwards, any result looks expected.', correct: true, was: ['So the re-test can disagree with you. Afterwards, whatever happened looks like what you expected.'], feedback: 'A prediction written first is what makes a failed repair visible as a failed repair, rather than as a result you reinterpret.' },
+          { label: 'To make the re-test quicker to run, because you already know what to look for.', was: ['To make the re-test faster to run.'], feedback: 'It does help, and speed is not the reason.' },
+          { label: 'To show reviewers later that the change was reasoned rather than guessed.', was: ['To show reviewers that the change was reasoned.'], feedback: 'A side effect. The reason is what it does to your own reading of the result.' },
         ],
         repair: 'Write the prediction in step 3 before changing anything, and check the file is still untouched. Record the change in step 5.',
         recheck: 'The prediction predates the change.',
       },
       {
-        question: 'Your repair did not work: one person still read the time as a promise. What do you report?',
+        question: 'After your repair, one of the two re-testers still read the time as a promise. What do you report?',
         options: [
-          { label: 'That, plainly. A failed repair says the diagnosis was wrong, which is worth more than a success confirming it.', correct: true, feedback: 'It is also the most credible thing in a portfolio. A project where every repair worked reads as a project where the re-tests were generous.' },
-          { label: 'That it partly worked, since only one person did it.', feedback: 'One of two is a count worth reporting as a count. Partly worked is the phrasing that hides it.' },
-          { label: 'Repair it again before reporting anything.', feedback: 'Worth doing next, and the first result is still the result.' },
+          { label: 'Exactly that, as a count: one of two still read it as a promise.', correct: true, was: ['That, plainly. A failed repair says the diagnosis was wrong, which is worth more than a success confirming it.'], feedback: 'A partial repair says the diagnosis was incomplete, which is worth more than a success confirming it. It is also the most credible thing in a portfolio.' },
+          { label: 'That the repair partly worked, since only one of the two people still did it.', was: ['That it partly worked, since only one person did it.'], feedback: 'One of two is a count worth reporting as a count. Partly worked is the phrasing that hides it.' },
+          { label: 'Nothing yet: repair it a second time and report once the wording has worked.', was: ['Repair it again before reporting anything.'], feedback: 'A second repair is worth doing next, and the first result is still the result.' },
         ],
         repair: 'Record the re-test result exactly as it happened in step 4, including the failure. Note the change in step 5.',
         recheck: 'Your record says what happened rather than what you hoped.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: You built a clickable prototype of a dog-walking group’s sign-up sheet, filled with made-up walkers and their phone numbers. Three friends of the organiser tried it and liked it. The organiser now wants to send the file to the group’s forty real members next week and type their real numbers into it.',
+      prompt: 'What would you test before anything is sent, and with whom? Decide whether it can go to the members, and give the reason for each decision.',
+      anchors: {
+        weak: 'Agrees to send it because the three testers liked it; testing only with friends is treated as enough and nobody checks what each member could see.',
+        adequate: 'Tests with someone outside the organiser’s circle, tries with made-up records whether one member can see another’s number, and keeps it a demonstration with made-up records until that passes.',
+        strong: 'As adequate, and explains that one shared file holding every number cannot pass, so real use needs a properly built version or no numbers in it, and records the conditions and what remains untested.',
+      },
+    },
     saveRoute: {
       auto: 'Your build notes, the session records, the ranking, the prediction and the re-test save as you type, on this device first and then online.',
-      external: 'Both versions of the prototype stay in your own folder. Keep the before version; the pair is what the case study needs.',
-      creator: 'Your creator reads the outside session and the re-test result. A round of testing where everything went well usually means everybody already knew the framing.',
+      external: 'Both versions of the prototype stay in your own folder, holding made-up records only. Keep the before version; the pair is what the case study needs. Raw session notes stay private, with a date to delete them.',
+      creator: 'Your creator reads the outside session, the re-test result and the stop-gate result. A round of testing where everything went well usually means everybody already knew the framing.',
       next: 'Open Your work and choose Ready for review. The next lesson brings in somebody who will disagree with you.',
     },
   },
