@@ -124,7 +124,7 @@ export function StateExample() {
         <input id={`${id}-note`} value={text} onChange={(e) => { setText(e.target.value); if (state === "saved") setState("idle"); }} disabled={state === "saving"} />
         <div className="state-actions">
           <button type="button" className="primary state-button" onClick={save} disabled={state === "saving"} aria-describedby={`${id}-status`}>
-            {state === "saving" ? <><span className="state-spinner" aria-hidden="true" /> Saving…</> : state === "failed" ? "Try again" : "Save"}
+            {state === "saving" ? <><span className="state-spinner" aria-hidden="true" /> Saving…</> : state === "failed" ? "Retry" : "Save"}
           </button>
           {state === "saving" && <button type="button" className="secondary" onClick={cancel}>Cancel</button>}
         </div>
@@ -175,7 +175,7 @@ export function ReorderExample() {
     <section className="lesson-tool reorder-example" aria-labelledby={`${id}-title`}>
       <span className="eyebrow">WORKING EXAMPLE · THREE WAYS TO REORDER</span>
       <h3 id={`${id}-title`}>Put the class steps in order</h3>
-      <p>Try all three routes and compare them: drag an item with a mouse; use the keyboard (focus a step, then press Alt and an arrow key, or use the Up and Down buttons); or, without dragging, press <strong>Move</strong> and then <strong>Place here</strong>. Undo reverses the last move.</p>
+      <p>Try all three routes and compare them: drag an item with a mouse; use the keyboard (focus a step, then press Alt and an arrow key, or use Move up and Move down); or, without dragging, press <strong>Move</strong> and then <strong>Place here</strong>. Undo reverses the last move.</p>
       <ol className="reorder-list">
         {items.map((item, index) => (
           <li key={item}>
@@ -199,8 +199,8 @@ export function ReorderExample() {
               <span className="reorder-grip" aria-hidden="true">⋮⋮</span>
               <span className="reorder-label">{index + 1}. {item}</span>
               <span className="reorder-buttons">
-                <button type="button" className="secondary" aria-label={`Move ${item} up`} disabled={index === 0} onClick={() => move(index, index - 1, "with the Up button")}>Up</button>
-                <button type="button" className="secondary" aria-label={`Move ${item} down`} disabled={index === items.length - 1} onClick={() => move(index, index + 1, "with the Down button")}>Down</button>
+                <button type="button" className="secondary" aria-label={`Move ${item} up`} disabled={index === 0} onClick={() => move(index, index - 1, "with Move up")}>Move up</button>
+                <button type="button" className="secondary" aria-label={`Move ${item} down`} disabled={index === items.length - 1} onClick={() => move(index, index + 1, "with Move down")}>Move down</button>
                 <button type="button" className="secondary" aria-pressed={moving === index} onClick={() => setMoving(moving === index ? null : index)}>{moving === index ? "Cancel move" : "Move"}</button>
               </span>
             </div>

@@ -133,7 +133,7 @@ export function LessonFlow({lesson, record, setRecord, section, go, readOnly, on
  const external=record.learning?.route==='external';
  const done=(item:LessonAction)=>actionDone(lesson,record,item);
  const transferField=field?.id==='transfer-decision';
- const tools=lessonToolsFor(lesson.id);
+ const tools=lessonToolsFor(lesson);
  const sorter=action.kind==='sort' ? (action.guideIndex===undefined ? a.guide?.find(g=>g.sorter)?.sorter : guide?.sorter) : undefined;
  function setField(id:string,value:string){setRecord(r=>({...r,status:r.status==='not-started'?'practicing':r.status,worksheet:{...r.worksheet,[id]:value}}));}
  function move(next:LessonAction,complete=false){
