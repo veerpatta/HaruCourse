@@ -1,20 +1,40 @@
 // Module 12 · Web foundations and responsive behavior. The audit's warning
 // about this module is that it is a steep coding course inside a design
-// course, so every guide step here names the exact control to press, what a
-// working result looks like, and how to get back when something breaks. No
-// lesson assumes a framework, a build step, a package manager or a server.
-import { buildRoute, improvementMade, revealOne, type Guided } from './guided';
+// course. Lessons 1 and 12 are the core and need no coding. Lessons 2 to 11
+// are an optional technical extension: each starts from a runnable,
+// self-contained starter in public/starters/m12/ that opens by double-click
+// (file://) and from the course site, and teaches one small marked change
+// before any independent construction. No lesson assumes a framework, a
+// build step, a package manager or a server.
+import { improvementMade, revealOne, type Guided, type Route } from './guided';
+
+const starterRoute = (id: string, file: string, what: string): Route => ({
+  recommended: `Optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. To practise ${what}, download ${file} (on the course site, the address ending /starters/m12/${file}) and save it in Documents\\HaruCourse\\Practice\\${id}. If Windows saved it as ${file}.txt, rename it to end in .html. Open it in Notepad (right-click, Open with, Notepad) and in your browser (double-click). Make the one change marked “Change this one thing first”, save with Ctrl+S, reload with F5, then record what you did and saw here.`,
+  alternative: 'If the page is blank or did not change: check the name ends in .html (File Explorer, View, Show, File name extensions), press Ctrl+Z in Notepad and save to undo your last change, or download a fresh copy. You may use your own page from earlier lessons instead; note its folder in Your work. The files stay on your computer; nothing is uploaded.',
+});
 
 export const guided12: Record<string, Guided> = {
   'm12-l01-v1': {
-    route: buildRoute('nothing yet — this lesson watches a page that already exists'),
+    route: {
+      recommended: 'No coding: watch one real page load in a desktop browser’s developer tools (F12, then Network), then record what you saw in the worksheet here so it is saved and reviewable. Nothing is uploaded.',
+      alternative: 'No developer tools available, for example on a tablet or a locked work computer? Use the supplied made up trace in the source notes, write “the supplied trace” as the page you traced, and work from its figures.',
+    },
+    material: [
+      'Supplied practice trace (made up): the Northside Tool Library page, measured once on a desktop computer with Disable cache ticked. Normal connection: 21 requests, 2,400 kB, finished at 3.1 seconds.',
+      'Requests 1 to 3: the document (20 kB) and two stylesheets (30 kB and 10 kB).',
+      'Requests 4 to 6: three font files: body text 30 kB, headings 30 kB, and a third typeface used only for one quotation, 78 kB.',
+      'Request 7: the header photograph, 1,800 kB, a 3000-pixel-wide file shown 720 pixels wide above all the text.',
+      'Requests 8 to 11: four tool photographs below the first screen, 50 kB each (200 kB). Requests 12 to 17: six small icons as separate image files, 2 kB each (12 kB).',
+      'Requests 18 to 21: a date-picker script library (130 kB) and three tracking scripts (60 kB together).',
+      'Same page on the Slow 4G profile: first readable text at about 9 seconds, after the header photograph arrived; the search box worked at about 11 seconds; the list jumped down when the tool photographs arrived, because no space was reserved.',
+    ],
     worksheet: [
       { id: 'read', title: 'The sequence, in your own words', fields: [
         { id: 'stages', label: 'The stages of a page load, in your own words', kind: 'long', hint: 'Ask for it, get it back, read it, ask for the things it mentions, draw it, let the person use it. Six short lines is plenty.' },
       ] },
       { id: 'trace', title: 'Watch one real page load', intro: 'Your own prototype, or any page you use often. The browser will tell you the truth about it.', fields: [
-        { id: 'page-traced', label: 'Which page you traced, and in which browser', kind: 'short' },
-        { id: 'request-count', label: 'How many requests, how many bytes in total, and how long', kind: 'short', example: 'Example (made up): 21 requests, 2.6 MB, 3.1 seconds on my normal connection.' },
+        { id: 'page-traced', label: 'Which page you traced, and in which browser, or “the supplied trace”', kind: 'short' },
+        { id: 'request-count', label: 'How many requests, how many bytes in total, and how long', kind: 'short', example: 'Example (made up): 21 requests, 2.4 MB, 3.1 seconds on my normal connection.' },
         { id: 'request-kinds', label: 'How that splits into documents, styles, fonts, scripts and images', kind: 'long', hint: 'The filter buttons at the top of the network panel do this for you. Write the counts and the biggest item in each group.' },
       ] },
       { id: 'throttle', title: 'Now make it slow', fields: [
@@ -48,7 +68,7 @@ export const guided12: Record<string, Guided> = {
         terms: [
           { term: 'Developer tools', meaning: 'A panel built into your browser. F12 opens it on Windows, or right-click the page and choose Inspect. It is free, already installed, and needs no account.' },
           { term: 'The network panel', meaning: 'The tab that lists every request the page made, with its size and how long it took. It shows the real sequence rather than the intended one.' },
-          { term: 'Disable cache', meaning: 'A tickbox at the top of the network panel. With it off, your browser reuses files it already has and the page looks far faster than it is for a new visitor.' },
+          { term: 'Disable cache', meaning: 'A tickbox at the top of the network panel. Left unticked, your browser reuses files it already has and the page looks far faster than it is for a new visitor. It works only while developer tools are open.' },
         ],
         demo: {
           scenario: 'Made-up example. Tracing a tool-library page for the first time, and measuring a page the browser already had.',
@@ -57,13 +77,13 @@ export const guided12: Record<string, Guided> = {
             { label: 'What looked odd', text: 'Four requests for a page with nine photographs on it. The numbers did not match what I could see.' },
             { label: 'What was happening', text: 'My browser already had almost everything from the last time I looked at the page. It was asking for four things and reusing the rest from its own store.' },
             { label: 'What I changed', text: 'Ticked Disable cache at the top of the panel, left developer tools open, and reloaded again.' },
-            { label: 'What it actually was', text: '21 requests, 2.6 megabytes, 3.1 seconds. The same page, measured as a first-time visitor meets it rather than as I meet it.' },
+            { label: 'What it actually was', text: '21 requests, 2.4 megabytes, 3.1 seconds. The same page, measured as a first-time visitor meets it rather than as I meet it.' },
           ],
           wrongTurn: 'The wrong turn is measuring with the cache on, which is the default and which flatters every page you have visited before. The numbers look excellent and describe nobody but you.',
           tradeoff: 'Disabling the cache means every reload is slow while you work, which is tedious. It is the only way the numbers describe a new visitor.',
           uncertainty: 'Still unknown: what a phone on a real network does with the same page. The desktop numbers are a floor, and the next step makes them more honest rather than making them true.',
         },
-        start: 'Press F12, click the Network tab, tick Disable cache, then reload the page with developer tools still open.',
+        start: 'Press F12, click the Network tab, tick Disable cache, then reload the page with developer tools still open. No developer tools? Open the supplied trace.',
         enough: 'Your request count is more than a handful, which means you measured it as a stranger would meet it.' },
       { expect: 'The same page reloaded on a throttled connection, with when text first appeared, when it became usable, and anything that moved.',
         fields: ['throttle-setting', 'first-text', 'usable-at', 'shifting'],
@@ -72,7 +92,7 @@ export const guided12: Record<string, Guided> = {
           { term: 'Time to usable', meaning: 'When the person could do something, not when loading stopped. It is the number that describes the experience.' },
           { term: 'Layout shift', meaning: 'Content jumping as something arrives late, usually an image with no reserved space. People tap the wrong thing because of it.' },
         ],
-        start: 'Choose a slow profile in the throttling dropdown, reload, and watch the screen rather than the numbers.',
+        start: 'Choose a slow profile in the throttling dropdown, reload, and watch the screen rather than the numbers. On the supplied trace, read its Slow 4G line.',
         enough: 'You have two separate times written down, and they are different from one another.' },
       { expect: 'Every request that exists because of a design decision, and two you could reduce without changing what the product does.',
         fields: ['design-requests', 'two-findings'],
@@ -180,6 +200,15 @@ export const guided12: Record<string, Guided> = {
         recheck: 'Your record holds two different times, with the second one defined.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a community choir’s concert page loads 14 requests. A 2.1 MB photograph of the choir sits above the date and ticket link, four typeface files load though the page uses two, and a video player script of 300 kB is used only far down the page. On a slow connection nothing readable appears for eight seconds.',
+      prompt: 'Name the two design-owned changes you would make first, and explain why each one helps the person waiting, not only the total weight.',
+      anchors: {
+        weak: 'Says the engineers should optimise or compress everything, or lists every request without saying which ones a design decision created.',
+        adequate: 'Picks the photograph above the date (shrink it or move it below the text) and the two unused typefaces, and links each to what appears first or how much is requested.',
+        strong: 'As adequate, and notes the video script may be engineering-owned, or that the timings come from one throttled run and should be re-measured after the change.',
+      },
+    },
     saveRoute: {
       auto: 'Your stages, the request counts, the timings and the two findings save as you type, on this device first and then online.',
       external: 'The screenshot of the network panel stays in your own folder. Note its file name in step 5; nothing about the traced page is uploaded.',
@@ -188,19 +217,19 @@ export const guided12: Record<string, Guided> = {
     },
   },
   'm12-l02-v1': {
-    route: buildRoute('one page of your product as a real HTML file'),
+    route: starterRoute('m12-l02-v1', 'page-semantic.html', 'semantic HTML'),
     worksheet: [
       { id: 'plan', title: 'Plan the markup before typing any', fields: [
         { id: 'outline-mapping', label: 'Your Module 11 outline, with the heading level beside each line', kind: 'long', hint: 'You already decided these levels. This step copies them across rather than deciding them again.' },
         { id: 'elements-planned', label: 'For each piece of content: the element whose shape matches it', kind: 'long', example: 'Example (made up): the three dates are a list, the price comparison is a table with header cells, Reserve is a button, See other dates is a link.' },
       ] },
       { id: 'build', title: 'Build it', fields: [
-        { id: 'file-location', label: 'Where the file lives, and what you called it', kind: 'short', hint: 'A folder of your own, and a name ending in .html. Double-clicking it opens it in your browser; no server is involved.', example: 'Example (made up): Documents/HaruCourse/Build/class-detail.html' },
+        { id: 'file-location', label: 'Where the file lives, and what you called it', kind: 'short', hint: 'A folder of your own, and a name ending in .html. Double-clicking it opens it in your browser; no server is involved.', example: 'Example (made up): Documents/HaruCourse/Practice/m12-l02-v1/page-semantic.html' },
         { id: 'real-content', label: 'Which real content you used, rather than placeholder text', kind: 'short', hint: 'Real content breaks layouts that placeholder text survives, which is the point of using it.' },
         { id: 'build-trouble', label: 'Anything that went wrong and how you got past it', kind: 'long', hint: 'A blank page, text running together, a tag you forgot to close. Writing the recovery down is worth as much as the page.' },
       ] },
       { id: 'unstyled', title: 'Read it with the styling off', fields: [
-        { id: 'unstyled-how', label: 'How you turned the styling off', kind: 'short', hint: 'Comment out the stylesheet link, or delete it for a minute and put it back. Both are a single line.' },
+        { id: 'unstyled-how', label: 'How you turned the styling off', kind: 'short', hint: 'In the starter, add media="not all" to the style tag as its comment shows, or press its Turn styling off button. Change it back afterwards.' },
         { id: 'unstyled-problems', label: 'Everything that lost its meaning or its order', kind: 'long' },
         { id: 'unstyled-fixes', label: 'What you changed, by changing elements rather than adding styling back', kind: 'long' },
       ] },
@@ -287,7 +316,7 @@ export const guided12: Record<string, Guided> = {
           then: 'Now go through your own page and check each control against the same question: does it go somewhere, or does it do something?',
           pattern: 'The filter is the one that catches people out, because filters often have a web address behind them. The question is what the person is doing, not what the technology happens to use.',
         },
-        start: 'Make a folder, save a file called index.html in it, type the page, then double-click the file to see it.',
+        start: 'Open the starter in Notepad and the browser, change the h1 text as marked, save with Ctrl+S and reload with F5. Then put your own content in.',
         enough: 'The page opens in your browser and shows your own content, however plain it looks.' },
       { expect: 'The page read from top to bottom with the styling off, with everything that lost meaning fixed by changing elements.',
         fields: ['unstyled-how', 'unstyled-problems', 'unstyled-fixes'],
@@ -308,7 +337,7 @@ export const guided12: Record<string, Guided> = {
           tradeoff: 'Changing elements on a page you have already styled means some of your rules stop applying and have to be rewritten. Usually there are fewer of them afterwards.',
           uncertainty: 'Still unknown: whether the table reads well when announced cell by cell. It is correctly marked up, which is not the same as being easy to listen to.',
         },
-        start: 'Comment out the stylesheet link, reload, and read the whole page aloud before changing anything.',
+        start: 'Turn the styling off as the starter shows, reload, and read the whole page aloud before changing anything.',
         enough: 'Every fix in this step changed an element, and none of them added a style rule.' },
       { expect: 'One page title, no skipped levels, main content directly reachable, and the Module 11 checks re-run on a real page.',
         fields: ['heading-check', 'landmark-check', 'preliminary'],
@@ -359,6 +388,15 @@ export const guided12: Record<string, Guided> = {
         recheck: 'Everything that acts is a button and everything that navigates is a link.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a library’s room-booking page has a “Book this room” control built as a link, a “Room rules” heading made from a bold paragraph, and opening hours laid out as rows of boxes. With styling off, the hours run together and the rules section has no heading.',
+      prompt: 'Choose the element for each of the three, and explain what a keyboard or screen reader user gains from each change.',
+      anchors: {
+        weak: 'Adds styling or spacing so it looks right again, or says the markup does not matter because the page looks fine.',
+        adequate: 'Book becomes a button (it acts, answers Space), Room rules becomes a real heading in the outline, and the hours become a table with header cells, each with what it gives.',
+        strong: 'As adequate, and checks the heading level against the page outline, or notes the table needs a caption and should be confirmed with the styling-off reading.',
+      },
+    },
     saveRoute: {
       auto: 'Your element plan, the build notes, the unstyled findings and the checks save as you type, on this device first and then online.',
       external: 'The HTML file lives in your own folder and is never uploaded. Note the folder in step 2 so later lessons can find it; Module 12 builds on this same file.',
@@ -367,7 +405,7 @@ export const guided12: Record<string, Guided> = {
     },
   },
   'm12-l03-v1': {
-    route: buildRoute('a stylesheet for the page you built last lesson'),
+    route: starterRoute('m12-l03-v1', 'page-styled.html', 'tokens, the box model and the cascade'),
     worksheet: [
       { id: 'fundamentals', title: 'The box, in your own words', fields: [
         { id: 'box-model', label: 'The box model in your own words', kind: 'long', hint: 'Content, then padding around it, then a border, then margin outside that. Draw it on paper and describe your drawing here.' },
@@ -422,7 +460,7 @@ export const guided12: Record<string, Guided> = {
           tradeoff: 'Documentation names are longer and less comfortable to type, and you will resent them for the first afternoon.',
           uncertainty: 'Still unknown: whether the documentation names are good ones. They are the ones in use, and making the stylesheet agree with them is the fix available today.',
         },
-        start: 'Open your Module 8 token sheet beside the stylesheet and copy the names across exactly.',
+        start: 'Change the starter’s one marked token value, save and reload, and watch what changes. Then open your Module 8 sheet and copy the names across exactly.',
         enough: 'Every name in the stylesheet could be found by searching your documentation for the same word.' },
       { expect: 'One thing that surprised you, what the inspector showed, and your written explanation, produced before any fix.',
         fields: ['surprise-what', 'inspector-said', 'explanation-first'],
@@ -538,6 +576,15 @@ export const guided12: Record<string, Guided> = {
         recheck: 'The explanation in step 3 was written before the change was made.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: on a bakery’s order page, a box set to 200 pixels wide with 16 pixels of padding on each side is wider than its column. The “Today’s loaves” heading stays black though a rule sets it brown, and a small note under the button is pale grey though no rule on it mentions colour.',
+      prompt: 'Name the mechanism behind each of the three surprises, and say what you would check in the inspector before changing anything.',
+      anchors: {
+        weak: 'Guesses fixes such as adding !important, moving rules or changing numbers until it looks right, without naming why.',
+        adequate: 'Box model (width plus 32 pixels of padding = 232), cascade (a more specific rule wins), inheritance (colour passed down from a parent), each with what the inspector shows.',
+        strong: 'As adequate, and prefers a fix that removes the conflict, such as box-sizing set once or editing the winning rule, over adding specificity.',
+      },
+    },
     saveRoute: {
       auto: 'Your box model note, the token declarations, the diagnosis and the three explanations save as you type, on this device first and then online.',
       external: 'The stylesheet sits beside the HTML file in your own folder. Note where in step 5; the rest of Module 12 works on these same files.',
@@ -546,7 +593,7 @@ export const guided12: Record<string, Guided> = {
     },
   },
   'm12-l04-v1': {
-    route: buildRoute('the narrow-first layout for the page you already have'),
+    route: starterRoute('m12-l04-v1', 'page-responsive.html', 'a narrow-first layout'),
     worksheet: [
       { id: 'narrow', title: 'Start at about 320 pixels', intro: 'The narrow layout is your content in priority order. Everything wider is a decoration of it.', fields: [
         { id: 'priority-order', label: 'The order the content appears in at the narrowest width', kind: 'long', example: 'Example (made up): title, three key facts, the Reserve button, the description, then the photograph.' },
@@ -578,7 +625,7 @@ export const guided12: Record<string, Guided> = {
         terms: [
           { term: 'Narrow first', meaning: 'Building the smallest layout before the others. It forces the content into priority order, because there is no room for anything else.' },
           { term: 'Flexible sizing', meaning: 'Letting something take the room available rather than a number you chose. Flexible layouts wrap and grow; fixed ones break at sizes you never tested.' },
-          { term: 'Horizontal page scrolling', meaning: 'Having to drag the whole page sideways to read it. It is never acceptable, at any width, and it usually comes from one stubborn element.' },
+          { term: 'Horizontal page scrolling', meaning: 'Having to drag the whole page sideways to read it. From 320 pixels up it should not happen, apart from content that needs width scrolling in its own box, and it usually comes from one stubborn element.' },
         ],
         demo: {
           scenario: 'Made-up example. Making a tool-library page responsive, and starting from the layout I had already drawn.',
@@ -593,7 +640,7 @@ export const guided12: Record<string, Guided> = {
           tradeoff: 'Starting narrow means throwing away some of the arrangement you already drew, including parts you liked. Two of my columns did not come back.',
           uncertainty: 'Still unknown: whether my priority order is the right one for this content. It is at least a decided order, which the squeezed version was not.',
         },
-        start: 'Open the device toolbar in developer tools and set the width to 320, then look at your page before changing anything.',
+        start: 'Press F12, then Ctrl+Shift+M for the device toolbar, set the width to 320 and look before changing anything. This is emulation, not a phone test.',
         enough: 'The narrow layout reads top to bottom in an order you could defend, and nothing scrolls sideways.' },
       { expect: 'Change points found by widening slowly, each recorded with the width you saw and the content reason for it.',
         fields: ['breakpoint-1', 'breakpoint-2', 'breakpoint-3'],
@@ -718,6 +765,15 @@ export const guided12: Record<string, Guided> = {
         recheck: 'No fix in step 4 reduces a text size.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a walking club’s events page has layouts drawn for 375, 768 and 1280 pixels. At 600 pixels one event card sits alone on its row, at 320 pixels a 520-pixel-wide route map makes the whole page scroll sideways, and at 200 per cent text the date banner overlaps the title because it has a fixed height.',
+      prompt: 'Choose a repair for each problem, and explain which ones need a new change point and which do not.',
+      anchors: {
+        weak: 'Adds a breakpoint for every problem or shrinks the text at large sizes; treats the three device widths as enough.',
+        adequate: 'Flexible wrapping for the orphan, the map in its own scrolling box or made flexible, and the banner allowed to grow; none needs a device-named breakpoint.',
+        strong: 'As adequate, and says a change point is earned only by a real change of arrangement, then plans a slow sweep to find what else fails between widths.',
+      },
+    },
     saveRoute: {
       auto: 'Your priority order, change points, sweep findings and hard-content results save as you type, on this device first and then online.',
       external: 'The page and stylesheet stay in your own folder, and screenshots at your three change points can sit beside them. Note the file names in step 5.',
@@ -726,7 +782,7 @@ export const guided12: Record<string, Guided> = {
     },
   },
   'm12-l05-v1': {
-    route: buildRoute('the image work for the page you have been building'),
+    route: starterRoute('m12-l05-v1', 'page-images.html', 'image sizes, SVG and reserved space'),
     worksheet: [
       { id: 'audit', title: 'Every image, measured', fields: [
         { id: 'image-audit', label: 'Each image: its file size, the width it is served at, and the width it is displayed at', kind: 'long', hint: 'The network panel gives the file size; hovering an image in the inspector gives both widths.', example: 'Example (made up): header photograph, 1.8 MB, served 3000 pixels wide, displayed at 720.' },
@@ -748,7 +804,7 @@ export const guided12: Record<string, Guided> = {
         { id: 'alt-carried', label: 'How your Module 11 alternative-text decisions reached the markup', kind: 'long' },
       ] },
       { id: 'measure', title: 'Measure the result', fields: [
-        { id: 'before-after', label: 'Page weight before and after, and time to usable before and after', kind: 'long', example: 'Example (made up): 2.4 MB to 340 KB. Time to usable on the slow profile fell from about 11 seconds to about 3.' },
+        { id: 'before-after', label: 'Page weight before and after, and time to usable before and after', kind: 'long', hint: 'Timing needs a page served over http(s). From your own folder, add up the file sizes and label any timing as an estimate.', example: 'Example (made up): 2.4 MB to 340 KB. Time to usable on the slow profile fell from about 11 seconds to about 3.' },
         { id: 'measure-saved', label: 'Where you saved the two traces', kind: 'short' },
         improvementMade,
       ] },
@@ -772,9 +828,9 @@ export const guided12: Record<string, Guided> = {
         demo: {
           scenario: 'Made-up example. Reducing the images on a tool-library page, and leaving the one that mattered most.',
           beats: [
-            { label: 'What I did first', text: 'Compressed everything. Eleven images squeezed as hard as they would go without looking obviously worse. Total weight fell from 2.4 megabytes to 1.6.' },
-            { label: 'What the timing did', text: 'Time to usable on the slow profile went from about 11 seconds to about 10. Nearly a megabyte saved and almost nothing changed.' },
-            { label: 'Why', text: 'The header photograph was still 900 kilobytes and still sat above every word on the page. Nothing readable could appear until it arrived, so the other ten images were never the delay.' },
+            { label: 'What I did first', text: 'Compressed everything evenly. Eleven images squeezed as far as they would go without looking obviously worse. Total weight fell from 2.4 megabytes to about 2.0.' },
+            { label: 'What the timing did', text: 'Time to usable on the slow profile went from about 11 seconds to about 10. About 360 kilobytes saved and almost nothing changed.' },
+            { label: 'Why', text: 'The header photograph had only gone from 1.8 megabytes to 1.5, and it still sat above every word on the page. Nothing readable could appear until it arrived, so the other ten images were never the delay.' },
             { label: 'What actually worked', text: 'Re-exporting that one photograph at 720 pixels rather than 3000, which took it to 96 kilobytes. Time to usable fell to about 3 seconds.' },
             { label: 'What I learned about the order', text: 'The weight above the first screenful is what the person waits for. Everything below it can be large and late without anybody noticing.' },
           ],
@@ -787,7 +843,7 @@ export const guided12: Record<string, Guided> = {
       { expect: 'One icon written by hand as SVG, with a title, a token colour, and a size you measured.',
         fields: ['svg-icon', 'svg-title', 'svg-size'],
         terms: [
-          { term: 'SVG', meaning: 'A picture written as text. You can open it in a text editor, read it, change a colour and see the result, which is true of no other image format.' },
+          { term: 'SVG', meaning: 'A picture written as text. You can open it in a text editor, read it, change a colour and see the result, which no other common web image format allows.' },
           { term: 'Title', meaning: 'A line inside the SVG naming what it is. It is how the icon is announced, and it is the same decision you made in the alternative-text lesson.' },
         ],
         demo: {
@@ -808,7 +864,7 @@ export const guided12: Record<string, Guided> = {
       { expect: 'A loading decision for every image, reserved space so nothing jumps, and your Module 11 alternative-text decisions carried into the markup.',
         fields: ['load-decisions', 'space-reserved', 'alt-carried'],
         terms: [
-          { term: 'Loading later', meaning: 'Telling the browser an image can wait until the person scrolls near it. It is right for everything below the first screenful and wrong for anything above it.' },
+          { term: 'Loading later', meaning: 'Telling the browser an image can wait until the person scrolls near it. It usually suits images below the first screenful and is wrong for the image at the top.' },
           { term: 'Reserved space', meaning: 'Telling the layout how big an image will be before it arrives, so nothing jumps when it does. Without it people tap the wrong thing.' },
         ],
         sorter: {
@@ -837,7 +893,7 @@ export const guided12: Record<string, Guided> = {
               feedback: {
                 'must load immediately': 'It is at the top, so if it stays a photograph file it does have to load at once.',
                 'can load later': 'It is on screen from the first moment.',
-                'should not be an image at all': 'A two-colour mark is exactly what SVG is for, and it will be smaller than a favicon.',
+                'should not be an image at all': 'A two-colour mark is exactly what SVG is for, and as SVG it is usually a small fraction of the photograph file’s size.',
               } },
             { id: 'chart', text: 'A chart of availability this week, halfway down the page.', answer: 'can load later',
               feedback: {
@@ -863,7 +919,7 @@ export const guided12: Record<string, Guided> = {
           { term: 'Before and after', meaning: 'The same measurement, under the same conditions, on either side of a change. Without the conditions matching, the pair proves nothing.' },
           { term: 'Repair', meaning: 'The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.' },
         ],
-        start: 'Re-run the throttled load with the same profile you used in lesson 1, so the two numbers can be compared.',
+        start: 'Re-run the throttled load with the same profile you used in lesson 1, on a page served over http(s). From your own folder, label the timing an estimate.',
         enough: 'Both numbers were measured the same way, and you can say what changed between them.' },
     ],
     checks: [
@@ -898,6 +954,15 @@ export const guided12: Record<string, Guided> = {
         recheck: 'Nothing on the page moves as images arrive.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a florist’s home page shows a 2400-pixel-wide photograph at 600 pixels across the top, a logo saved as a 90 kB photograph file, and twelve bouquet photographs further down that all load at once. Pictures arriving late make the text jump.',
+      prompt: 'Decide what to do with each kind of image and how each should load, and explain your reasoning, including what stops the jumping.',
+      anchors: {
+        weak: 'Compresses everything evenly, or sets every image to load later including the top photograph, and does not mention reserved space.',
+        adequate: 'Re-exports the top photograph near 600 pixels (allowing for dense screens), makes the logo SVG, lets the bouquets load later, and reserves space with width and height.',
+        strong: 'As adequate, and questions whether the top photograph must sit above the text at all, or says to measure weight and timing before and after under the same conditions.',
+      },
+    },
     saveRoute: {
       auto: 'The image audit, the resizing record, the SVG notes, the loading decisions and both measurements save as you type, on this device first and then online.',
       external: 'Original images stay in your own folder; keep them, because you will want a different size later. The two network traces can sit beside them.',
@@ -906,7 +971,7 @@ export const guided12: Record<string, Guided> = {
     },
   },
   'm12-l06-v1': {
-    route: buildRoute('one interactive behaviour on the page you have been building'),
+    route: starterRoute('m12-l06-v1', 'behaviour-toggle.html', 'one interactive behaviour that still works without the script'),
     worksheet: [
       { id: 'ask', title: 'Ask whether you need a script at all', fields: [
         { id: 'interaction-chosen', label: 'Which Module 9 interaction you are building', kind: 'short' },
@@ -923,7 +988,7 @@ export const guided12: Record<string, Guided> = {
         { id: 'copied-unclear', label: 'Anything you copied and do not yet understand', kind: 'long', hint: 'Writing this down honestly is worth more than pretending. It is also the list to ask an engineer about.' },
       ] },
       { id: 'failure', title: 'Design the failure', fields: [
-        { id: 'without-script', label: 'What still works with JavaScript switched off, and what does not', kind: 'long', hint: 'Developer tools can disable JavaScript from the settings panel. Reload after switching it off.' },
+        { id: 'without-script', label: 'What still works with JavaScript switched off, and what does not', kind: 'long', hint: 'In Chrome or Edge: F12, Ctrl+Shift+P, type Disable JavaScript, Enter, then reload. It lasts while developer tools stay open.' },
         { id: 'fallback-route', label: 'The route you added that works without the script', kind: 'long' },
       ] },
       { id: 'record', title: 'Record', fields: [
@@ -988,7 +1053,7 @@ export const guided12: Record<string, Guided> = {
         fields: ['without-script', 'fallback-route'],
         terms: [
           { term: 'Without the script', meaning: 'Not only somebody who turned JavaScript off. A slow connection, a blocked file or one error earlier in the page all produce the same result.' },
-          { term: 'Fallback route', meaning: 'A way to complete the task when the enhancement is not there. For a filter, a submit button that reloads with the filters applied.' },
+          { term: 'Fallback route', meaning: 'A way to complete the task when the enhancement is not there. With a server, a submit button that reloads with the filters applied; on a page with no server, the full list with every status written out.' },
         ],
         sorter: {
           intro: 'Six behaviours from a made up tool-library page. For each one, decide what it needs.',
@@ -1010,7 +1075,7 @@ export const guided12: Record<string, Guided> = {
               feedback: {
                 'a native element': 'The browser has no element that filters a list of your content against your rules.',
                 'CSS alone': 'CSS can hide things it can select. It cannot decide which rows match a set of chosen options.',
-                'a script': 'This is the genuine case. Twenty lines, plus a submit button for when the script does not run.',
+                'a script': 'This is the genuine case. Twenty lines, plus a fallback for when the script does not run.',
               } },
             { id: 'required-field', text: 'Telling somebody a required field is empty when they try to submit.', answer: 'a native element',
               feedback: {
@@ -1034,7 +1099,7 @@ export const guided12: Record<string, Guided> = {
           then: 'Now check your own interaction against the same three options, and record what the native version would have cost or saved.',
           pattern: 'The dialogue and the disclosure are the two most commonly rebuilt by hand, and they are the two where the browser’s version is hardest to beat: focus management and state announcement are exactly what a hand-built version forgets.',
         },
-        start: 'Open the developer tools settings and switch JavaScript off, then reload and try the task.',
+        start: 'Press F12, then Ctrl+Shift+P, type Disable JavaScript and press Enter. Reload and try the task.',
         enough: 'You know what a person gets when the script does not run, and it is not nothing.' },
       { expect: 'What the native alternative would have cost or saved, where the work is saved, and the repair the Check questions asked for.',
         fields: ['native-cost', 'script-saved', 'improvement-made'],
@@ -1077,6 +1142,15 @@ export const guided12: Record<string, Guided> = {
         recheck: 'The task can be completed with JavaScript switched off, even if less conveniently.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a cinema page has an “Accessibility information” section that someone wants to open and close with a 50-line script, and a list of screenings that should narrow to “subtitled only” when a control is pressed. The page is a static file with no server.',
+      prompt: 'Decide which behaviour needs a script and which does not, and explain what a person gets for each when JavaScript does not run.',
+      anchors: {
+        weak: 'Writes scripts for both, or says it is fine for the list to do nothing without JavaScript because almost nobody turns it off.',
+        adequate: 'Uses a native details element for the section (no script), scripts only the filter, and without JavaScript shows the full list with subtitles marked in text.',
+        strong: 'As adequate, and adds that with a server a submit button could apply the filter, or says the filter control should appear only when the script runs.',
+      },
+    },
     saveRoute: {
       auto: 'Your native-answer notes, the keyboard test, the line-by-line explanation and the failure behaviour save as you type, on this device first and then online.',
       external: 'The script sits beside your page and stylesheet in your own folder. Nothing is uploaded, and no package manager or build step is involved.',
@@ -1085,10 +1159,10 @@ export const guided12: Record<string, Guided> = {
     },
   },
   'm12-l07-v1': {
-    route: buildRoute('the four states of a list that has to wait for its data'),
+    route: starterRoute('m12-l07-v1', 'data-states.html', 'the loading, content, empty and error states'),
     worksheet: [
       { id: 'fetch', title: 'Get something real into the page', fields: [
-        { id: 'data-source', label: 'Where the data comes from', kind: 'short', hint: 'A public source that needs no key, or a file of your own realistic data sitting beside the page. Either is fine; no account is needed.' },
+        { id: 'data-source', label: 'Where the data comes from', kind: 'short', hint: 'The starter keeps its data inside the page; replace it with realistic rows from your product. A file beside a page opened from your folder usually cannot be fetched; a real fetch needs http(s) and is optional.' },
         { id: 'content-branch', label: 'What the content branch renders, and what one real row looks like', kind: 'long' },
         { id: 'fetch-trouble', label: 'Anything that went wrong getting the data in, and how you got past it', kind: 'long', hint: 'The console and the network panel between them name almost every failure here.' },
       ] },
@@ -1098,9 +1172,9 @@ export const guided12: Record<string, Guided> = {
         { id: 'error-branch', label: 'What error says, what it preserves, and how retry works', kind: 'long' },
       ] },
       { id: 'slow', title: 'Make it slow, then make it fail', fields: [
-        { id: 'slow-watch', label: 'What the loading branch looked like on a throttled connection', kind: 'long' },
-        { id: 'forced-error', label: 'How you forced an error, and what the person saw', kind: 'long', hint: 'Break the address, or go offline in the network panel. Both take one click.' },
-        { id: 'timeout-route', label: 'Your timeout message and the route out of it', kind: 'long', hint: 'Waiting for ever is a fifth state nobody designs. Decide what happens at thirty seconds.' },
+        { id: 'slow-watch', label: 'What the loading branch looked like while slow: the starter’s buttons, or throttling on a page served over http(s)', kind: 'long' },
+        { id: 'forced-error', label: 'How you forced an error, and what the person saw', kind: 'long', hint: 'Press the starter’s failing button. On a real fetch over http(s), break the address or go offline in the network panel.' },
+        { id: 'timeout-route', label: 'Your timeout message and the route out of it', kind: 'long', hint: 'Waiting for ever is a fifth state nobody designs. The starter shortens it to 10 seconds; decide your own threshold.' },
       ] },
       { id: 'compare', title: 'Against what you specified', fields: [
         { id: 'spec-errors', label: 'Every place the Module 8 specification was wrong or incomplete', kind: 'long', example: 'Example (made up): the loading state reserved four rows and the real result is usually twelve, so the page jumped every time.' },
@@ -1116,7 +1190,7 @@ export const guided12: Record<string, Guided> = {
         fields: ['data-source', 'content-branch', 'fetch-trouble'],
         terms: [
           { term: 'Fetching', meaning: 'Asking for data after the page has already loaded, and doing something with it when it comes back. The gap between asking and receiving is what the next three steps are about.' },
-          { term: 'Public source', meaning: 'Data anybody can request without a key or an account. A file of your own realistic data, sitting beside the page, works just as well for this lesson.' },
+          { term: 'Built-in data', meaning: 'Data kept inside the page, as in the starter. Opened from your folder, a page usually cannot fetch a neighbouring file; a real fetch needs an http(s) address, which is optional here.' },
         ],
         demo: {
           scenario: 'Made-up example. Connecting a tool-library list to real data, and building against data I had written myself.',
@@ -1131,7 +1205,7 @@ export const guided12: Record<string, Guided> = {
           tradeoff: 'Building against real data means the page looks bad for the first hour and you will be tempted to tidy the data instead of the design. The data is not yours to tidy.',
           uncertainty: 'Still unknown: whether forty-one rows is a typical result. It is one request on one day, and the loading state I reserve space for depends on the answer.',
         },
-        start: 'Render one row from real data before building anything else. Everything after that is states around it.',
+        start: 'Rewrite the starter’s marked empty message, save, reload and press the empty button. Then put one realistic row of your own into its data.',
         enough: 'Real data appears on your page, even if it appears badly.' },
       { expect: 'Loading, empty and error branches built with your own Module 8 wording, with space reserved and filters preserved.',
         fields: ['loading-branch', 'empty-branch', 'error-branch'],
@@ -1157,7 +1231,7 @@ export const guided12: Record<string, Guided> = {
       { expect: 'The loading branch watched on a throttled connection, an error forced deliberately, and a timeout with a route out.',
         fields: ['slow-watch', 'forced-error', 'timeout-route'],
         terms: [
-          { term: 'Forcing a failure', meaning: 'Breaking the address, or switching to offline in the network panel. Errors are hard to find by waiting for them and easy to cause on purpose.' },
+          { term: 'Forcing a failure', meaning: 'The starter’s failing button, or on a real fetch breaking the address or going offline. Errors are hard to find by waiting for them and easy to cause on purpose.' },
           { term: 'The fifth state', meaning: 'Slow. Not loading and not failed, just still going. Decide what happens at three seconds and at thirty, or the person waits for ever with a spinner.' },
         ],
         sorter: {
@@ -1204,7 +1278,7 @@ export const guided12: Record<string, Guided> = {
           then: 'Now force each of these on your own page and check the person lands where you intended.',
           pattern: 'The pair to keep apart is empty and error. Empty means the question was answered and the answer was none; error means nobody got to ask. Sending somebody to the wrong one of those sends them looking for the wrong repair.',
         },
-        start: 'Open the network panel, set it to offline, and reload. That is your error branch, whether or not you built one.',
+        start: 'Press each of the starter’s four buttons in turn and watch where the person lands.',
         enough: 'You have seen all four branches on your own screen rather than in your specification.' },
       { expect: 'Each built state compared against your Module 8 specification, with every wrong or incomplete part named.',
         fields: ['spec-errors'],
@@ -1254,6 +1328,15 @@ export const guided12: Record<string, Guided> = {
         recheck: 'The specification and the build now agree.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a recycling centre page lists which materials are accepted today. The list waits for data. The designer drew only the full list. In use, some days return nothing because the centre is closed, and phones on poor signal sometimes get no answer for half a minute.',
+      prompt: 'Describe what the person should see in each situation the page can be in, and explain why the closed-day case and the no-answer case need different messages.',
+      anchors: {
+        weak: 'Designs only the full list and a spinner, or shows one generic “Something went wrong” for every case.',
+        adequate: 'Covers loading with reserved space, content, empty (closed today, with what to do next) and error or timeout (not loaded, try again), keeping empty and error apart.',
+        strong: 'As adequate, and sets a slow-message threshold and a timeout with a route out, or notes the reserved space should match the usual number of rows.',
+      },
+    },
     saveRoute: {
       auto: 'Your data notes, the four branches, the slow and failure observations and the specification corrections save as you type, on this device first and then online.',
       external: 'The page, the script and any local data file stay in your own folder. Nothing about them is uploaded from here.',
@@ -1262,14 +1345,14 @@ export const guided12: Record<string, Guided> = {
     },
   },
   'm12-l08-v1': {
-    route: buildRoute('one working form, native behaviour first'),
+    route: starterRoute('m12-l08-v1', 'form-no-server.html', 'a form whose submission stays on your device'),
     worksheet: [
       { id: 'native', title: 'Build it with what the browser already does', fields: [
         { id: 'input-types', label: 'Which input types and required fields you used, and why each', kind: 'long', hint: 'The type changes the keyboard on a phone, the validation and the error message, all without a line from you.' },
         { id: 'native-observed', label: 'What the browser did on its own when you submitted with mistakes in it', kind: 'long', hint: 'Try it before adding anything. Most people never find out what they were about to rebuild.' },
       ] },
       { id: 'custom', title: 'Only what the browser cannot know', fields: [
-        { id: 'cannot-know', label: 'The rules the browser has no way to know', kind: 'long', example: 'Example (made up): that the date has to be one on which a class actually runs, and that the phone number has to match one of two accepted local formats.' },
+        { id: 'cannot-know', label: 'The rules the browser has no way to know', kind: 'long', example: 'Example (made up): that the date has to be one on which a class actually runs. The two accepted phone formats are not on this list: a pattern attribute lets the browser check them.' },
         { id: 'custom-written', label: 'What you wrote for those, and roughly how many lines', kind: 'long' },
         { id: 'presentation-match', label: 'How your custom errors match the native ones in appearance and behaviour', kind: 'short', hint: 'Two error styles in one form tells the person the two kinds of mistake are different things. They are not.' },
       ] },
@@ -1294,22 +1377,22 @@ export const guided12: Record<string, Guided> = {
         fields: ['input-types', 'native-observed'],
         terms: [
           { term: 'Input type', meaning: 'Telling the browser what kind of thing a field holds. It changes the keyboard on a phone, the validation and the error message, without any code.' },
-          { term: 'Native validation', meaning: 'The checking the browser does itself, including announcing the problem and moving focus. Custom versions routinely omit both of those.' },
+          { term: 'Native validation', meaning: 'The checking the browser does itself: required fields, formats and patterns, with focus moved to the first problem. Its own message bubble fades after a few seconds and is announced unevenly.' },
         ],
         demo: {
           scenario: 'Made-up example. Building a tool-request form, and rebuilding what the browser was already doing.',
           beats: [
             { label: 'What I assumed', text: 'That native validation looks crude, so a custom version would be better. I had never actually watched the native one run.' },
             { label: 'What I tried', text: 'Built the form with types and required attributes and nothing else, then submitted it empty.' },
-            { label: 'What happened', text: 'The browser stopped the submission, moved focus to the first empty field, showed a message beside it and announced it. On my phone the email field brought up a keyboard with an at sign on it.' },
-            { label: 'What I had planned to write', text: 'All of that. The checking, the message, the focus move and the announcement, by hand, for six fields.' },
-            { label: 'What I wrote instead', text: 'Two rules the browser cannot know: that the date must be one on which a class runs, and that the phone number must match one of two local formats. About fifteen lines.' },
+            { label: 'What happened', text: 'The browser stopped the submission, moved focus to the first empty field and showed a short message beside it. On my phone the email field brought up a keyboard with an at sign on it.' },
+            { label: 'What I had planned to write', text: 'All of that. The checking, the formats and the focus move, by hand, for six fields.' },
+            { label: 'What I wrote instead', text: 'Messages that stay on screen and a summary, using the browser’s own checks, plus one rule it cannot know: that the date must be one on which a class runs. The phone formats went into a pattern attribute.' },
           ],
-          wrongTurn: 'The wrong turn is judging native validation by its appearance without watching its behaviour. What looks plain is doing four things, and a custom version that looks better usually does one.',
-          tradeoff: 'Native messages are worded by the browser and cannot be rewritten freely, so some of them are vaguer than your own wording would be. You can add your own beside them, which is a smaller job than replacing the mechanism.',
+          wrongTurn: 'The wrong turn is judging native validation by its appearance without watching its behaviour. What looks plain is checking, blocking and moving focus, and a hand-built replacement usually does less.',
+          tradeoff: 'Native bubbles are worded by the browser, fade after a few seconds and are announced unevenly. Keeping the browser’s checks while showing your own lasting messages is a smaller job than replacing the mechanism.',
           uncertainty: 'Still unknown: whether the native wording reads well in every browser your audience uses. It varies, and I have checked two.',
         },
-        start: 'Build the fields with types and required attributes only, then submit the form empty and watch.',
+        start: 'Rewrite the starter’s marked date message, save, reload and submit with a weekday date. Then submit it empty and watch.',
         enough: 'You have written down what the browser did before you added anything.' },
       { expect: 'Custom rules written only for what the browser cannot know, matching the native presentation.',
         fields: ['cannot-know', 'custom-written', 'presentation-match'],
@@ -1356,9 +1439,9 @@ export const guided12: Record<string, Guided> = {
                 'written by hand': 'Nothing you can write from a page changes the keyboard. The type is the only lever.',
                 'missing entirely': 'It is present as soon as the type is right.',
               } },
-            { id: 'required-stop', text: 'Submitting with a required field empty stops the submission, moves focus there and announces the problem.', answer: 'free from the browser',
+            { id: 'required-stop', text: 'Submitting with a required field empty stops the submission, moves focus there and shows a short message.', answer: 'free from the browser',
               feedback: {
-                'free from the browser': 'Three behaviours from one attribute: stopping, focusing and announcing. These are the three that hand-built validation usually misses.',
+                'free from the browser': 'Three behaviours from one attribute: stopping, focusing and a message. The message fades and is announced unevenly, which is why lasting messages are added by hand.',
                 'written by hand': 'This is what people write by hand, after not checking whether it already happened.',
                 'missing entirely': 'It is there the moment a field is marked required.',
               } },
@@ -1433,6 +1516,15 @@ export const guided12: Record<string, Guided> = {
         recheck: 'Your record does not describe the browser checks as the ones that guarantee anything.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a swimming pool’s lane-booking form asks for name, email, a date and a membership number in the format AB-1234. Sessions run only on weekdays that are not public holidays. The practice version has no server, and the current draft clears every field when a submission fails.',
+      prompt: 'Decide which checks the browser can do and which you must write, and explain what should happen to the person’s answers and focus when a submission fails.',
+      anchors: {
+        weak: 'Writes every check by hand, or accepts clearing the form because the error message is clear; treats browser checks as the real security.',
+        adequate: 'Uses required, type="email" and a pattern for AB-1234; writes only the weekday-not-holiday rule; keeps every answer, moves focus to a linked summary.',
+        strong: 'As adequate, and notes a server would check everything again, or that nothing should be sent from the practice page while messages stay on screen.',
+      },
+    },
     saveRoute: {
       auto: 'Your input types, custom rules, error handling, recovery notes and the two lists save as you type, on this device first and then online.',
       external: 'The form file sits with the rest of your build in your own folder. No form service, account or server is involved, and nothing is submitted anywhere.',
@@ -1441,10 +1533,10 @@ export const guided12: Record<string, Guided> = {
     },
   },
   'm12-l09-v1': {
-    route: buildRoute('a measured before-and-after on the page you have been building'),
+    route: starterRoute('m12-l09-v1', 'page-images.html', 'a measured before-and-after'),
     worksheet: [
       { id: 'baseline', title: 'Measure before you change anything', fields: [
-        { id: 'conditions', label: 'The conditions: throttling profile, cache setting, device and browser', kind: 'short', hint: 'Write these once and use exactly the same ones afterwards, or the pair proves nothing.' },
+        { id: 'conditions', label: 'The conditions: throttling profile, cache setting, device, browser and how the page was opened', kind: 'short', hint: 'Use the same ones afterwards, or the pair proves nothing. Throttling may not apply to a page opened from your folder; measure a page served over http(s), or label timings as estimates.' },
         { id: 'baseline-numbers', label: 'Weight, request count and time to usable', kind: 'short' },
         { id: 'blocking', label: 'Which requests hold up the first render', kind: 'long', hint: 'Stylesheets and scripts in the head usually do. The network panel shows what arrives before anything is drawn.' },
       ] },
@@ -1478,7 +1570,7 @@ export const guided12: Record<string, Guided> = {
           scenario: 'Made-up example. Measuring a tool-library page, and starting after the easy win was already in.',
           beats: [
             { label: 'What I did', text: 'Noticed the header photograph was enormous, fixed it, and then sat down to take a baseline. It seemed sensible to measure a page that was not obviously broken.' },
-            { label: 'What I ended up with', text: 'A baseline of 700 kilobytes and four seconds, and after two more changes, 340 kilobytes and three seconds. A real improvement, and a modest-looking one.' },
+            { label: 'What I ended up with', text: 'A baseline of 700 kilobytes and four seconds, and after two more changes, about 420 kilobytes and three seconds. A real improvement, and a modest-looking one.' },
             { label: 'What I could not say', text: 'Anything about the change that mattered most. The page had been 2.4 megabytes and eleven seconds that morning, and no record of it existed.' },
             { label: 'What that cost', text: 'The report showed a page getting slightly faster. The actual story was a page getting three times faster, and the evidence for it had been thrown away before I started.' },
             { label: 'What I do now', text: 'Take the baseline first, before touching anything, even when the first problem is obvious. It costs two minutes and it is the only number that cannot be recovered later.' },
@@ -1612,6 +1704,15 @@ export const guided12: Record<string, Guided> = {
         recheck: 'The figures cannot be read without their conditions.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a museum page’s baseline on a slow profile is 1.9 MB, 30 requests and 9 seconds to usable. Options: remove a 400 kB autoplay video above the title, compress footer images to save 150 kB, strip spaces from the HTML to save 2 kB, or delay the script that draws the opening times so the frame paints sooner.',
+      prompt: 'Choose your first change and the one you would reject, and explain each in terms of what the person can do sooner.',
+      anchors: {
+        weak: 'Picks the largest saving in kilobytes regardless of where it sits, or reports first paint as the improvement.',
+        adequate: 'Starts with the video above the title (on the critical path) and rejects delaying the opening-times script, because the page appears sooner but is usable later.',
+        strong: 'As adequate, and plans to re-measure under identical, stated conditions, or notes the footer saving is real but would not move time to usable.',
+      },
+    },
     saveRoute: {
       auto: 'Your conditions, both sets of figures, the three changes and the rejected one save as you type, on this device first and then online.',
       external: 'The two network traces stay in your own folder. Note their file names in step 5 so the pair can be checked later.',
@@ -1620,7 +1721,7 @@ export const guided12: Record<string, Guided> = {
     },
   },
   'm12-l10-v1': {
-    route: buildRoute('three written diagnoses of problems in your own page'),
+    route: starterRoute('m12-l10-v1', 'debug-practice.html', 'three written diagnoses'),
     worksheet: [
       { id: 'panels', title: 'Which panel answers which question', fields: [
         { id: 'panel-map', label: 'The three panels, and the kind of question each one answers', kind: 'long', example: 'Example (made up): inspector for why does it look like that; console for why did nothing happen; network for why is it missing or slow.' },
@@ -1637,11 +1738,11 @@ export const guided12: Record<string, Guided> = {
       ] },
       { id: 'loading', title: 'A loading problem', fields: [
         { id: 'loading-symptom', label: 'What is missing or slow, and where', kind: 'short' },
-        { id: 'loading-evidence', label: 'What the network panel showed: the request, its status and its size', kind: 'long', hint: 'A status of 404 means the file was not found. 200 means it arrived, whatever it looks like on screen.' },
+        { id: 'loading-evidence', label: 'What the network panel showed: the request, its status and its size', kind: 'long', hint: '404 means the server found no such file; 200 means it arrived. Opened from your own folder there is no server, so a missing file shows as (failed) instead.' },
         { id: 'loading-cause', label: 'The cause, written before the fix', kind: 'long' },
       ] },
       { id: 'record', title: 'Record', fields: [
-        { id: 'wrong-hypothesis', label: 'A hypothesis that turned out to be wrong, and what it actually was', kind: 'long', hint: 'At least one of the three usually is. Recording it is the point of writing causes before fixes.' },
+        { id: 'wrong-hypothesis', label: 'Each first guess compared with what it actually was', kind: 'long', hint: 'Note any guess that was wrong and what it actually was. Do not invent one: if all three were right, name the evidence that confirmed each.' },
         { id: 'diagnoses-saved', label: 'Where the three diagnoses and their evidence are saved', kind: 'short' },
         improvementMade,
       ] },
@@ -1654,7 +1755,7 @@ export const guided12: Record<string, Guided> = {
           { term: 'Console', meaning: 'Where errors appear in red, usually with the file and line number. A page can look perfectly fine and be failing here silently.' },
           { term: 'Network panel', meaning: 'Every request the page made, with its status and size. It answers why something is missing, wrong or slow.' },
         ],
-        start: 'Open all three tabs on your own page and look at each for a minute before writing anything.',
+        start: 'Change the starter’s marked heading, save and reload. Then open the three panels on it and look at each for a minute before writing anything.',
         enough: 'You could say, for a new problem, which panel to open first.' },
       { expect: 'One style problem reproduced, the inspector evidence recorded, and the cause written before any fix.',
         fields: ['style-symptom', 'style-evidence', 'style-cause'],
@@ -1699,11 +1800,11 @@ export const guided12: Record<string, Guided> = {
                 'the console': 'Nothing happening is the classic silent failure. There is almost certainly red text naming a file and a line.',
                 'the network panel': 'Worth a look if the script file itself never arrived, and the console will tell you that too.',
               } },
-            { id: 'missing-icon', text: 'One icon shows on your laptop and not on your phone.', answer: 'the network panel',
+            { id: 'missing-icon', text: 'One icon shows when the page is opened from your own folder and not when it is hosted.', answer: 'the network panel',
               feedback: {
                 'the inspector': 'It will show an element expecting an image. It will not say what came back.',
                 'the console': 'A missing file sometimes appears here, and the status code is in the network panel.',
-                'the network panel': 'A 404 for a file whose name differs in capitalisation is the usual answer, because it matters on a server and not on your own machine.',
+                'the network panel': 'A 404 for a file whose name differs in capitalisation is a common answer: Windows ignores capitalisation and most web servers do not.',
               } },
             { id: 'slow-page', text: 'The page takes far longer to become usable than you expected.', answer: 'the network panel',
               feedback: {
@@ -1757,7 +1858,7 @@ export const guided12: Record<string, Guided> = {
           { term: 'Repair', meaning: 'The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.' },
         ],
         start: 'Look back at the three causes you wrote and compare each with what you eventually found.',
-        enough: 'At least one wrong hypothesis is recorded, because guessing right three times out of three is unusual.' },
+        enough: 'Every first guess sits beside what you found, wrong guesses included and none invented.' },
     ],
     checks: [
       {
@@ -1791,15 +1892,27 @@ export const guided12: Record<string, Guided> = {
         recheck: 'Your loading diagnosis names a status or a failed request, with its file name.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: on a gardening shop page, a product grid spills past its container, the “Add to basket” button does nothing on one page only, and a leaf icon is missing once the site is hosted though it shows from the laptop folder.',
+      prompt: 'For each problem, say which developer tools panel you would open first, what evidence you would write down before fixing anything, and why that panel.',
+      anchors: {
+        weak: 'Changes code until things look right, or names one panel for everything without saying what to look for.',
+        adequate: 'Inspector for the grid (applied rules and computed size), console for the button (error, file and line), network panel for the icon (request and status, such as 404).',
+        strong: 'As adequate, and writes a first guess before looking, or suspects a capitalisation difference in the icon’s file name to confirm in the network panel.',
+      },
+    },
     saveRoute: {
       auto: 'Your panel notes and the three diagnoses save as you type, on this device first and then online.',
       external: 'Screenshots of the inspector, the console and the network panel stay in your own folder. Note the file names in step 5; the evidence is what makes a diagnosis more than an opinion.',
-      creator: 'Your creator reads the wrong hypothesis. Writing the cause before the fix is what makes it possible to have one, and a lesson with none is usually a lesson where the fixes came first.',
+      creator: 'Your creator reads your first guesses beside the causes you found. Writing the cause before the fix is what makes that comparison possible.',
       next: 'Open Your work and choose Ready for review. The next lesson puts everything from this module together and runs it on a real phone.',
     },
   },
   'm12-l11-v1': {
-    route: buildRoute('the whole prototype, assembled from everything in this module'),
+    route: {
+      recommended: 'Optional technical extension: core learners can rely on the supplied working starters and the ideas in Lessons 1 and 12. Put your extension pages, or the starters from Lessons 2 to 8, in one folder such as Documents\\HaruCourse\\Practice\\m12-l11-v1, link them, and record what you did and saw here. Nothing is uploaded.',
+      alternative: 'For the phone-size check, use the desktop device toolbar (F12, then Ctrl+Shift+M) and call it emulation. A real phone is optional: open a starter hosted on the course site in the phone’s browser, or serve your own folder over your network or free hosting. Sending one HTML file to a phone may or may not open it in a browser.',
+    },
     worksheet: [
       { id: 'assemble', title: 'Bring the pages together', fields: [
         { id: 'pages-assembled', label: 'Which pages you assembled, and how they share styling and navigation', kind: 'long' },
@@ -1811,9 +1924,9 @@ export const guided12: Record<string, Guided> = {
         { id: 'passed-separately', label: 'Anything that passed on its own page and fails now', kind: 'long', hint: 'A shared header can break a heading outline; a component moved onto a tinted panel can fail contrast that passed on white.' },
       ] },
       { id: 'phone', title: 'On a real phone', fields: [
-        { id: 'phone-how', label: 'Which phone, and how you opened the prototype on it', kind: 'short', hint: 'Over your own network, or copied onto the device. No hosting or account is needed.' },
-        { id: 'phone-task', label: 'The task you completed by thumb, including a form', kind: 'short' },
-        { id: 'phone-findings', label: 'Everything the emulated viewport did not show', kind: 'long', example: 'Example (made up): the sticky action bar sat under the on-screen keyboard, and the date target was comfortable with a mouse and not with a thumb.' },
+        { id: 'phone-how', label: 'How you checked at phone size: emulation (say so), or a real phone and how you opened the page on it', kind: 'short', hint: 'Emulation needs nothing extra. A real phone needs the page hosted, or served over your own network; both are optional.' },
+        { id: 'phone-task', label: 'The task you completed, including a form, and whether by mouse in emulation or by thumb', kind: 'short' },
+        { id: 'phone-findings', label: 'What the check showed, and what it could not show: for emulation, thumb reach, the on-screen keyboard and a real network', kind: 'long', example: 'Example (made up): the sticky action bar sat under the on-screen keyboard, and the date target was comfortable with a mouse and not with a thumb.' },
       ] },
       { id: 'measure', title: 'Measure the assembled prototype', fields: [
         { id: 'assembled-numbers', label: 'Weight, requests and time to usable, under the same conditions as before', kind: 'short' },
@@ -1858,7 +1971,7 @@ export const guided12: Record<string, Guided> = {
       { expect: 'One task completed by thumb on a real phone, with everything the emulated viewport did not show.',
         fields: ['phone-how', 'phone-task', 'phone-findings'],
         terms: [
-          { term: 'Real device', meaning: 'An actual phone in your hand. The emulated viewport gets the width right and nothing else: no thumb, no keyboard covering the screen, no real network.' },
+          { term: 'Real device', meaning: 'An actual phone in your hand. The emulated viewport gets the width right and nothing else: no thumb, no keyboard covering the screen, no real network. Opening your own files on it needs hosting or a local server.' },
           { term: 'On-screen keyboard', meaning: 'It covers the bottom third of the screen when a field is focused, which is where sticky action bars live. An emulator never shows this.' },
         ],
         sorter: {
@@ -1908,7 +2021,7 @@ export const guided12: Record<string, Guided> = {
         demo: {
           scenario: 'Made-up example. Testing a tool-library prototype on a real phone, and testing it in the least real way possible.',
           beats: [
-            { label: 'What I did', text: 'Opened it on my phone at my desk, held in both hands, propped against the monitor, in good light, on my home network. Completed the task in under a minute and found nothing.' },
+            { label: 'What I did', text: 'Hosted it, then opened it on my phone at my desk, held in both hands, propped against the monitor, in good light, on my home network. Completed the task in under a minute and found nothing.' },
             { label: 'Why that found nothing', text: 'Two hands, a steady position and a fast connection remove almost everything a phone would otherwise show. It was the emulator with a nicer screen.' },
             { label: 'What I did instead', text: 'Stood up, held it in one hand, and did the task with my thumb while walking to the window.' },
             { label: 'What that found in four minutes', text: 'The Reserve bar sits under the on-screen keyboard while the notes field is focused. The date control is 44 pixels and still awkward, because it sits where the thumb has least reach. My hand covers the availability line while I tap.' },
@@ -1918,8 +2031,8 @@ export const guided12: Record<string, Guided> = {
           tradeoff: 'One-handed testing is slower and you will mistype things, which is the point and is also frustrating when you are trying to check something else.',
           uncertainty: 'Still unknown: how it behaves on a slow or intermittent connection on a real network. I tested a device, not a network, and the fakes sheet says so.',
         },
-        start: 'Open the prototype on your own phone and complete one task standing up, using only your thumb.',
-        enough: 'You found something the emulated viewport had not shown you.' },
+        start: 'Press F12, then Ctrl+Shift+M, choose a phone size and complete one task. If you have a hosted copy and a phone, repeat it standing, by thumb.',
+        enough: 'Your record says which check you ran and lists what it could not show.' },
       { expect: 'The assembled prototype measured under the same conditions as lesson 9, with what changed recorded.',
         fields: ['assembled-numbers', 'measure-change'],
         terms: [
@@ -1968,15 +2081,27 @@ export const guided12: Record<string, Guided> = {
         recheck: 'Your device record says how the check was done and what stayed untested.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a volunteer rota site was built as three separate pages. Put together, one uses 12-pixel gaps and another 16, the same action is called “Sign up” and “Join”, and a shared header adds a second page title. You can check widths only with desktop emulation.',
+      prompt: 'Decide what to reconcile, what to re-check, and how to record the phone-size check, and explain why each matters.',
+      anchors: {
+        weak: 'Assumes each page’s earlier checks still hold, picks one wording without asking why they differ, or calls emulation a phone test.',
+        adequate: 'Unifies spacing, investigates whether Sign up and Join mean different behaviour, re-runs headings and contrast after assembly, and labels emulation honestly.',
+        strong: 'As adequate, and lists what emulation cannot show (thumb, keyboard, real network), or adds a fakes sheet saying it is a prototype, not a product.',
+      },
+    },
     saveRoute: {
       auto: 'The contradictions, the re-run checks, the phone findings, the measurements and the fakes sheet save as you type, on this device first and then online.',
-      external: 'The prototype stays in your own folder and on your own phone. Nothing is hosted, deployed or uploaded to produce the device test.',
+      external: 'The prototype stays in your own folder. The emulation check needs nothing else; hosting for a real-phone check is optional and is your own choice, outside this course.',
       creator: 'Your creator reads the contradictions and the fakes sheet. A contradiction that turned out to be a design decision is the most useful thing assembly produces.',
       next: 'Open Your work and choose Ready for review. The last lesson of the module turns all of this into a conversation with an engineer.',
     },
   },
   'm12-l12-v1': {
-    route: buildRoute('a technical handover document for one feature'),
+    route: {
+      recommended: 'No coding: write a handover for one feature you designed, using your Project 1 screens, states and key tables, or, on the technical extension, one you built. Fill the worksheet here; it saves as you type and nothing else is uploaded.',
+      alternative: 'Prefer one document in your own folder? Write the handover there with the copyable starter below, then note the file location in Your work.',
+    },
     worksheet: [
       { id: 'handover', title: 'The handover', fields: [
         { id: 'handover-contents', label: 'What the document contains, section by section', kind: 'long', hint: 'Flow with states, component specifications with key tables, the four data branches with wording, responsive rules, accessibility notes with what was tested.' },
@@ -1988,16 +2113,16 @@ export const guided12: Record<string, Guided> = {
           ...(n === 1 ? { example: 'Example (made up): what would it cost to keep the held-place timer accurate across two devices? It decides whether the timer is a promise or a display.' } : {}) })),
       ] },
       { id: 'fakes', title: 'Declare the fakes', fields: [
-        { id: 'fakes-attached', label: 'What an engineer might assume works and does not', kind: 'long' },
+        { id: 'fakes-attached', label: 'What an engineer might assume works and does not, or exists only as a drawing', kind: 'long' },
         { id: 'data-shape', label: 'The data shape you invented, and where you got it from', kind: 'long', hint: 'If you made the field names up, say so. Planning around an invented shape is expensive to undo.' },
       ] },
       { id: 'ask', title: 'Ask someone, or say you could not', fields: [
-        { id: 'asked-who', label: 'Who you asked, or that the questions are unasked', kind: 'short', hint: 'Unasked is an honest answer. Write what you expect the answers to be, so you can compare later.' },
-        { id: 'answers', label: 'What they said, or what you expect', kind: 'long' },
+        { id: 'asked-who', label: 'Who you asked, as a role and not a name, or that the questions are unasked', kind: 'short', sensitive: true, hint: 'Unasked is an honest answer. Write what you expect the answers to be, so you can compare later.' },
+        { id: 'answers', label: 'A short summary of what they said, with no names, or what you expect', kind: 'long', sensitive: true, hint: 'Keep any raw notes in a private local file or on paper, with a date to delete them. Removing the name does not make an answer anonymous if the role identifies the person.' },
       ] },
       { id: 'learned', title: 'What you understand now', fields: [
         { id: 'learned-three', label: 'Three things you understand now that you did not before this module', kind: 'long' },
-        { id: 'was-wrong', label: 'At least one where you were previously wrong', kind: 'long', example: 'Example (made up): I had been told a change was trivial and it was structural, and separately I had assumed a custom date picker was cheaper than the native one.' },
+        { id: 'was-wrong', label: 'At least one belief this module changed or tested', kind: 'long', hint: 'Do not invent a mistake. A belief the material confirmed, with the evidence that tested it, also counts.', example: 'Example (made up): I had been told a change was trivial and it was structural, and separately I had assumed a custom date picker was cheaper than the native one.' },
         improvementMade,
       ] },
     ],
@@ -2021,7 +2146,7 @@ export const guided12: Record<string, Guided> = {
           tradeoff: 'A behaviour document is duller to produce and nobody admires it. It also stops the three days of questions, and the questions were never about the spacing.',
           uncertainty: 'Still unknown: whether the four branches cover everything that can happen. Eleven questions found the ones I had missed, and there may be more that nobody has thought of yet.',
         },
-        start: 'List the sections first, then fill them from artefacts you already have rather than writing anything new.',
+        start: 'List the sections first, then fill them from your Project 1 screens, state specifications and key tables rather than writing anything new.',
         enough: 'Somebody could build the feature from the document without opening your design file.' },
       { expect: 'Three questions about cost and constraint, each tied to a decision in this feature.',
         fields: ['question-1', 'question-2', 'question-3'],
@@ -2051,7 +2176,7 @@ export const guided12: Record<string, Guided> = {
           { term: 'Invented data shape', meaning: 'Field names and structures you made up so the prototype could run. Planning around them is expensive to undo, so they have to be labelled.' },
           { term: 'Assumed to work', meaning: 'Anything that looks finished and is not: a search box that does nothing, a payment that goes nowhere, one path that works out of five.' },
         ],
-        start: 'Open your fakes sheet from the previous lesson and mark anything that looks convincing enough to be assumed.',
+        start: 'Open your fakes sheet from the previous lesson, or list what in your designed feature exists only as a drawing, and mark anything convincing enough to be assumed.',
         enough: 'Nothing in the handover could be planned around by mistake.' },
       { expect: 'The questions asked of somebody, or an honest record that they are unasked with what you expect.',
         fields: ['asked-who', 'answers'],
@@ -2145,9 +2270,18 @@ export const guided12: Record<string, Guided> = {
         recheck: 'No message in the handover exists only inside an image.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: you designed, but did not build, a dentist’s appointment reminder flow with screens for choosing a slot, a confirmation and a “slot just taken” error. The engineer has only seen the confirmation screen. The appointment data fields are your own guess.',
+      prompt: 'Decide what your handover must contain beyond the screens, and write one question for the engineer about cost or constraint, explaining why it is better than “is this possible?”.',
+      anchors: {
+        weak: 'Sends the screens only, or asks whether the flow is possible.',
+        adequate: 'Hands over states, the slot-taken error with exact wording, behaviour and the guessed data fields marked as assumed, and asks a cost question such as what keeping slots accurate would take.',
+        strong: 'As adequate, and separates what was tested from what is only designed, or says which decision the answer to the question would change.',
+      },
+    },
     saveRoute: {
       auto: 'Your handover outline, the three questions, the fakes declaration and the reflection save as you type, on this device first and then online.',
-      external: 'The handover document itself is a file in your own folder, alongside the prototype it describes. A clear plain document with links beats any handover platform for this.',
+      external: 'The handover document itself is a file in your own folder, beside the screens or prototype it describes. Raw notes from any conversation stay private and local, with a deletion date.',
       creator: 'Your creator reads the three questions and the thing you were wrong about. Both are better evidence of what this module did than the prototype is.',
       next: 'Open Your work and choose Ready for review. This closes Module 12. Module 13 turns the components you built into a system somebody else could use.',
     },
