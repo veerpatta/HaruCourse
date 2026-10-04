@@ -757,16 +757,16 @@ export const guided19: Record<string, Guided> = {
     route: textRoute,
     worksheet: [
       { id: 'categorise', title: 'Category, near the top', fields: [
-        { id: 'categories', label: 'For each project: paid, employment, course, or self-directed', kind: 'long' },
+        { id: 'categories', label: 'For each project you show: paid, employment, course, or self-directed — and whether it rests on supplied practice material', kind: 'long' },
         { id: 'where-stated', label: 'Where the label appears in each case study', kind: 'short', hint: 'Near the top. Discovered halfway down, it reads as something that was being avoided.' },
       ] },
       { id: 'split', title: 'What you did, and what others did', fields: [
         { id: 'you-did', label: 'What you did', kind: 'long' },
-        { id: 'others-did', label: 'What anybody else did, including arranging access', kind: 'long', example: 'Example (made up): the owner arranged access to two customers and updated the page during the trial.' },
+        { id: 'others-did', label: 'What anybody else did, including arranging access', kind: 'long', example: 'Example (made up): the owner arranged access to two customers, kept the tally sheet in both counting weeks and changed how he wrote job slips.' },
       ] },
       { id: 'credit', title: 'Credit contributors', fields: [
-        { id: 'contributors', label: 'Who contributed, and how each is credited', kind: 'long', hint: 'Ask permission before naming anybody. A role is the fallback and is perfectly good.' },
-        { id: 'permission-asked', label: 'How you asked, and who said no', kind: 'short' },
+        { id: 'contributors', label: 'Who contributed, by role, and how each is credited', kind: 'long', sensitive: true, hint: 'Ask permission before naming anybody. A role is the fallback and is perfectly good.' },
+        { id: 'permission-asked', label: 'How you asked, and who said no, by role', kind: 'short', sensitive: true },
       ] },
       { id: 'plurals', title: 'Search for false plurals', fields: [
         { id: 'we-count', label: 'How many times we, our and the team appear in the drafts', kind: 'short', hint: 'Search for them. It is a thirty-second check and it catches the commonest detected dishonesty in portfolios.' },
@@ -871,7 +871,7 @@ export const guided19: Record<string, Guided> = {
                 'technically true and reads as more': 'Worked with implies collaboration through the build. A friend who writes software reviewed my code and corrected a date-handling bug is the accurate version, and it credits him properly.',
                 false: 'There was a developer and there was contact, which is what makes it survive a casual reading.',
               } },
-            { id: 'owner-arranged', text: 'The shop owner arranged access to two customers and updated the page during the trial.', answer: 'accurate',
+            { id: 'owner-arranged', text: 'The shop owner arranged access to two customers and kept the tally sheet in both counting weeks.', answer: 'accurate',
               feedback: {
                 accurate: 'It credits a real contribution the project could not have happened without, in a role rather than a name.',
                 'technically true and reads as more': 'It understates nothing and overstates nothing.',
@@ -894,19 +894,19 @@ export const guided19: Record<string, Guided> = {
       {
         question: 'Will saying a project was self-directed make it count for less?',
         options: [
-          { label: 'Saying nothing and being asked is far worse. A labelled self-directed project with real evidence beats an ambiguously framed one.', correct: true, feedback: 'Role inflation is the most commonly detected dishonesty in portfolios and the easiest to avoid. The label at the top costs one line and removes the whole risk.' },
-          { label: 'Yes, which is why the framing should be left open.', feedback: 'Left open means the reader assumes, and the correction arrives in an interview as a discovery.' },
-          { label: 'Yes, slightly, and honesty is worth the cost.', feedback: 'There is little cost. What reviewers discount is the portfolio where the role turned out to differ from the impression.' },
+          { label: 'Saying nothing and then being asked about it costs far more than the label does.', correct: true, was: ['Saying nothing and being asked is far worse. A labelled self-directed project with real evidence beats an ambiguously framed one.'], feedback: 'Role inflation is the most commonly detected dishonesty in portfolios and the easiest to avoid. A labelled self-directed project with real evidence beats an ambiguously framed one, and the label costs one line.' },
+          { label: 'It will, which is why the framing is better left open for the reader to interpret.', was: ['Yes, which is why the framing should be left open.'], feedback: 'Left open means the reader assumes, and the correction arrives in an interview as a discovery.' },
+          { label: 'It will, slightly, and that loss is simply the price of being honest about it.', was: ['Yes, slightly, and honesty is worth the cost.'], feedback: 'There is little cost. What reviewers discount is the portfolio where the role turned out to differ from the impression.' },
         ],
         repair: 'Put the category near the top of each case study in step 1. Record the change in step 5.',
         recheck: 'Nobody could read half a case study without knowing what kind of work it was.',
       },
       {
-        question: 'Your draft says “we interviewed five people”. What is that?',
+        question: 'You worked alone, and your draft says “we interviewed five people”. What is that?',
         options: [
-          { label: 'A false plural. It asserts a team that does not exist, and it usually arrives by register rather than by intent.', correct: true, feedback: 'Case studies sound like that because most describe team work. A thirty-second search for we, our and the team catches every instance, and re-reading does not.' },
-          { label: 'A stylistic convention, and harmless.', feedback: 'The reader pictures a team. The convention is not neutral when there was nobody else.' },
-          { label: 'Acceptable if the participants are counted as the we.', feedback: 'That reading occurs to nobody except the person defending the sentence.' },
+          { label: 'A false plural: it tells the reader a team existed when none did.', correct: true, was: ['A false plural. It asserts a team that does not exist, and it usually arrives by register rather than by intent.'], feedback: 'It usually arrives by register rather than intent, because case studies sound like that. A thirty-second search for we, our and the team catches every instance, and re-reading does not.' },
+          { label: 'A harmless stylistic convention that most published case studies follow.', was: ['A stylistic convention, and harmless.'], feedback: 'The reader pictures a team. The convention is not neutral when there was nobody else.' },
+          { label: 'Acceptable, because the five participants can be counted as part of the we.', was: ['Acceptable if the participants are counted as the we.'], feedback: 'That reading occurs to nobody except the person defending the sentence.' },
         ],
         repair: 'Search the drafts in step 4 and correct every false plural. Record the change in step 5.',
         recheck: 'Every remaining plural has a team behind it.',
@@ -914,14 +914,23 @@ export const guided19: Record<string, Guided> = {
       {
         question: 'Your case study says you worked with a developer to build the prototype. A friend reviewed your HTML and fixed one bug. Is that acceptable?',
         options: [
-          { label: 'No. It is technically true and implies collaboration through the build, which is the hardest kind of inflation to defend.', correct: true, feedback: 'The accurate version — a friend who writes software reviewed my code and corrected a date-handling bug — credits him properly and survives any follow-up question.' },
-          { label: 'Yes, since there genuinely was a developer involved.', feedback: 'Involved and worked with are different scales, and the reader takes the larger one.' },
-          { label: 'Yes, if the detail is given later.', feedback: 'The impression is formed at the sentence, and the detail arrives as a correction.' },
+          { label: 'It inflates the role: technically true, it implies help throughout the build.', correct: true, was: ['No. It is technically true and implies collaboration through the build, which is the hardest kind of inflation to defend.'], feedback: 'The accurate version — a friend who writes software reviewed my code and corrected a date-handling bug — credits him properly and survives any follow-up question.' },
+          { label: 'It is fine, since there genuinely was a developer involved in the prototype.', was: ['Yes, since there genuinely was a developer involved.'], feedback: 'Involved and worked with are different scales, and the reader takes the larger one.' },
+          { label: 'It is fine, as long as the full detail of who did what is given further down.', was: ['Yes, if the detail is given later.'], feedback: 'The impression is formed at the sentence, and the detail arrives as a correction.' },
         ],
         repair: 'Weaken any technically-true statement in step 5 to what actually happened. Record the change.',
         recheck: 'No sentence would need explaining if somebody asked about it.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: Your case study about a café’s loyalty card says: “We ran a research programme with stakeholders and led the design of a new loyalty system.” In fact you worked alone on a course project, interviewed the owner and two regulars, and the owner’s nephew, a developer, fixed one layout bug.',
+      prompt: 'Rewrite the role statement accurately and say how you would credit each person. Explain your choices.',
+      anchors: {
+        weak: 'Keeps “we” and “led”, or credits the nephew by name without asking him.',
+        adequate: 'States it was a solo course project, uses “I”, says three people were interviewed, credits the nephew’s single fix accurately, by role unless he agrees to be named.',
+        strong: 'As adequate, and puts the category at the top, removes “stakeholders” and “programme” as borrowed scale, and checks the statement against the project record.',
+      },
+    },
     saveRoute: {
       auto: 'Your categories, the two lists, the credits and the plural check save as you type, on this device first and then online.',
       external: 'Keep the permission messages in your own folder. Crediting somebody who has not agreed is a decision you cannot undo after publishing.',
@@ -937,19 +946,19 @@ export const guided19: Record<string, Guided> = {
         { id: 'covers-publication', label: 'Which projects it covers for publication, and which it does not', kind: 'long' },
       ] },
       { id: 'quotations', title: 'Anonymise the quotations', fields: [
-        { id: 'roles-used', label: 'How participants appear', kind: 'short', example: 'Example (made up): the owner, customer A, customer B, customer C.' },
-        { id: 'trimmed', label: 'Quotations trimmed to remove identifying detail, and what you removed', kind: 'long', hint: 'A street name, a phone model, an unusual job. Keep the point and remove the person.' },
+        { id: 'roles-used', label: 'How participants appear', kind: 'short', example: 'Example (made up): the owner, customer A, customer B; outside testers 1 to 3.' },
+        { id: 'trimmed', label: 'Quotations trimmed to remove identifying detail, and what you removed', kind: 'long', sensitive: true, hint: 'A street name, a phone model, an unusual job. Keep the point and remove the person.' },
         { id: 'still-specific', label: 'How the anonymised versions stay specific enough to be evidence', kind: 'short', hint: 'Anonymised is not vague. The counts and the specifics stay.' },
       ] },
       { id: 'images', title: 'Images', fields: [
         { id: 'image-decisions', label: 'For each image: shown, recreated, blurred or described', kind: 'long' },
-        { id: 'recreation-labels', label: 'The label on anything recreated', kind: 'short', example: 'Example (made up): recreated with synthetic data; the job number and timings are invented, the layout is unchanged.' },
+        { id: 'recreation-labels', label: 'The label on anything recreated', kind: 'short', example: 'Example (made up): recreated with invented details; the wording and layout are unchanged.' },
       ] },
       { id: 'described', title: 'Where consent falls short', fields: [
         { id: 'described-not-shown', label: 'What you will describe rather than show, and why', kind: 'long' },
       ] },
       { id: 'ask', title: 'Ask where you can', fields: [
-        { id: 'asked-again', label: 'Anybody you asked again for permission to publish, and what they said', kind: 'long', hint: 'Often the simplest fix. A short message, and either you may show it or you describe it.' },
+        { id: 'asked-again', label: 'Anybody you asked again for permission to publish, by role, and what they said', kind: 'long', sensitive: true, hint: 'Often the simplest fix. A short message, and either you may show it or you describe it.' },
         improvementMade,
       ] },
     ],
@@ -992,14 +1001,14 @@ export const guided19: Record<string, Guided> = {
         demo: {
           scenario: 'Made-up example. Preparing research images for a portfolio, and relying on anonymity.',
           beats: [
-            { label: 'What I planned to show', text: 'A photograph of the workbench with the job sheet on it, and a screenshot of the status page. No names visible in either.' },
+            { label: 'What I planned to show', text: 'A photograph of the workbench with the job sheet on it, and a photograph of a real job slip with the new window wording. No names visible in either at a glance.' },
             { label: 'What I told myself', text: 'That both were anonymous, so both were fine. Nothing in the frame said who anybody was.' },
             { label: 'What the photograph actually contained', text: 'Three other customers’ tickets, a shop interior anybody local would recognise, and a repair of a kind that identifies the customer to anybody who knows them.' },
-            { label: 'What the screenshot contained', text: 'A real job number, which reaches a real repair belonging to a real person on a page anybody can open.' },
-            { label: 'What I did', text: 'Redrew the job sheet by hand with invented entries. Recreated the screenshot with an invented number and timings, labelled as recreated with synthetic data, layout unchanged. Both show the design and neither exposes anybody.' },
+            { label: 'What the slip photograph contained', text: 'A customer’s first name in the corner and the last digits of a phone number — enough for anybody who knows them.' },
+            { label: 'What I did', text: 'Redrew the job sheet by hand with invented entries. Recreated the slip with invented details, labelled as recreated, wording and layout unchanged. Both show the design and neither exposes anybody.' },
           ],
           wrongTurn: 'The wrong turn is treating anonymity as the whole test, because no names appear and the frame looks safe. Consent for this use is a separate requirement, and a recognisable place fails both without a name being present.',
-          tradeoff: 'A recreated screenshot is one step removed from the real thing, and a sceptical reader might wonder whether the real one existed. The label is what answers that.',
+          tradeoff: 'A recreated slip is one step removed from the real thing, and a sceptical reader might wonder whether the real one existed. The label is what answers that.',
           uncertainty: 'Still unknown: whether the shop interior is as recognisable as I think. It is a small town, which is the reason to redraw rather than to judge.',
         },
         start: 'For each image, ask who could recognise a place, a person or a piece of property in it.',
@@ -1045,11 +1054,11 @@ export const guided19: Record<string, Guided> = {
                 'recreate or trim it': 'A hand-drawn version of the sheet with invented entries is a recreation and a good answer, so this is defensible too if the drawing replaces the photograph entirely.',
                 'describe it instead': 'Either describe it or replace it with a drawing. What cannot happen is the photograph.',
               } },
-            { id: 'real-job-number', text: 'A screenshot of the status page showing a real job number.', answer: 'recreate or trim it',
+            { id: 'real-job-number', text: 'A photograph of a real job slip showing a customer’s name and phone number.', answer: 'recreate or trim it',
               feedback: {
-                'show it': 'The number reaches a real repair belonging to a real person.',
-                'recreate or trim it': 'Recreate with an invented number and timings, labelled, layout unchanged. The design is shown and nobody is exposed.',
-                'describe it instead': 'The design is worth showing and can be shown safely.',
+                'show it': 'The name and number belong to a real customer who agreed to nothing.',
+                'recreate or trim it': 'Recreate it with invented details, labelled recreated, wording and layout unchanged. The design is shown and nobody is exposed.',
+                'describe it instead': 'The wording is worth showing and can be shown safely.',
               } },
             { id: 'owner-permission', text: 'A quotation from the shop owner, who has since said in writing that you may use his words and his role.', answer: 'show it',
               feedback: {
@@ -1068,19 +1077,19 @@ export const guided19: Record<string, Guided> = {
       {
         question: 'The material is anonymous. Is it fine to publish?',
         options: [
-          { label: 'Anonymity is one requirement. Consent for this use is another, and a photograph of an identifiable place fails both without a name appearing.', correct: true, feedback: 'A portfolio is publication, and consent taken for research does not automatically cover it. A recognisable shop interior with other customers’ property in it is identifying regardless of names.' },
-          { label: 'Yes, if no names or faces appear.', feedback: 'A street name, an unusual repair or a recognisable interior identifies people to anybody who knows them.' },
-          { label: 'Yes, for research material that was always going to be shown.', feedback: 'What was always going to be shown is decided by what you told people, which is worth reading again.' },
+          { label: 'Anonymity is one test; consent to publish is another, and both must pass.', correct: true, was: ['Anonymity is one requirement. Consent for this use is another, and a photograph of an identifiable place fails both without a name appearing.'], feedback: 'A portfolio is publication, and consent taken for research does not automatically cover it. A recognisable shop interior with other customers’ property in it is identifying regardless of names.' },
+          { label: 'It is fine, provided no names or faces appear anywhere in the material.', was: ['Yes, if no names or faces appear.'], feedback: 'A street name, an unusual repair or a recognisable interior identifies people to anybody who knows them. Names removed does not mean anonymous.' },
+          { label: 'It is fine, if the research material was always going to be shown somewhere.', was: ['Yes, for research material that was always going to be shown.'], feedback: 'What was always going to be shown is decided by what you told people, which is worth reading again.' },
         ],
         repair: 'Copy the actual consent wording into step 1 and mark which projects it covers. Record the change in step 5.',
         recheck: 'You know per project whether publication was covered.',
       },
       {
-        question: 'Your screenshot shows a real job number. What is the best answer?',
+        question: 'A photograph of a real job slip shows a customer’s name and phone number. What is the best answer?',
         options: [
-          { label: 'Recreate it with an invented number and timings, labelled as recreated with synthetic data and the layout unchanged.', correct: true, feedback: 'The design is worth showing and the data is not. The label is what stops a recreation being a screenshot of something that never existed.' },
-          { label: 'Blur the number and show the rest.', feedback: 'Workable, and a recreation is cleaner and lets you choose content that illustrates the point.' },
-          { label: 'Describe the page instead.', feedback: 'That gives up showing a design you are entitled to show.' },
+          { label: 'Recreate the slip with invented details and label it as a recreation.', correct: true, was: ['Recreate it with an invented number and timings, labelled as recreated with synthetic data and the layout unchanged.'], feedback: 'The design is worth showing and the data is not. The label — invented details, wording and layout unchanged — is what stops a recreation being a picture of something that never existed.' },
+          { label: 'Blur the name and number, and show the rest of the photograph as it is.', was: ['Blur the number and show the rest.'], feedback: 'Workable, and blurring often leaves enough to recognise somebody; a recreation is cleaner and lets you choose content that illustrates the point.' },
+          { label: 'Leave the slip out and describe the new wording in a sentence instead.', was: ['Describe the page instead.'], feedback: 'That gives up showing a design you are entitled to show once it is recreated.' },
         ],
         repair: 'Label every recreation in step 3 with what is invented and what is not. Record the change in step 5.',
         recheck: 'No recreation is presented as an original.',
@@ -1089,13 +1098,22 @@ export const guided19: Record<string, Guided> = {
         question: 'One project’s consent stopped at the project and did not mention a portfolio. What are your options?',
         options: [
           { label: 'Ask again for permission, or describe the research rather than showing the material.', correct: true, feedback: 'Asking takes a minute and is available more often than people try. Where it is not, describing is weaker evidence and it is honest, and the case study says its research is described rather than shown.' },
-          { label: 'Show it anonymised, since anonymity was the point of the promise.', feedback: 'The promise was about where the material goes rather than only about names.' },
-          { label: 'Leave the project out of the portfolio entirely.', feedback: 'Available, and usually more than necessary: the design work and the reasoning can be shown even where the research material cannot.' },
+          { label: 'Show it anonymised, since keeping people anonymous was the point of the promise.', was: ['Show it anonymised, since anonymity was the point of the promise.'], feedback: 'The promise was about where the material goes rather than only about names.' },
+          { label: 'Leave the whole project out of the portfolio, since none of it can be shown.', was: ['Leave the project out of the portfolio entirely.'], feedback: 'Available, and usually more than necessary: the design work and the reasoning can be shown even where the research material cannot.' },
         ],
         repair: 'Write who you asked and what they said in step 5, or what you will describe instead. Record the change.',
         recheck: 'Nothing is shown from a project whose consent did not cover publication.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: For a case study about a small gym’s class timetable you have a member’s quotation that mentions her street and her job as the only woman electrician in town, consent wording that said “notes will be used for this project”, a photograph of the reception desk with the sign-up sheet visible, and a written note from the gym owner saying you may quote her.',
+      prompt: 'For each item decide whether to show it, trim or recreate it, or describe it instead — and say why.',
+      anchors: {
+        weak: 'Shows everything because no names appear, treating anonymity as the whole test.',
+        adequate: 'Describes rather than shows the member material because consent stopped at the project, recreates or leaves out the sign-up sheet, and quotes the owner by role under her written permission.',
+        strong: 'As adequate, and notes that the electrician detail identifies her even trimmed, suggests asking the member again with exactly what would be shown, and labels every recreation.',
+      },
+    },
     saveRoute: {
       auto: 'Your consent check, the anonymised quotations, the image decisions and the permissions save as you type, on this device first and then online.',
       external: 'Keep the original material and the recreations separately in your own folder, so the pair is clear and the originals stay private.',
@@ -1184,7 +1202,7 @@ export const guided19: Record<string, Guided> = {
           intro: 'Six images and captions from a made up case study. For each one, decide whether it earns its place.',
           options: ['earns its place', 'needs a caption that argues', 'cut it'],
           items: [
-            { id: 'before-after-retest', text: 'The status page before and after the wording change, captioned with the prediction and the re-test result including the person who still read it as a promise.', answer: 'earns its place',
+            { id: 'before-after-retest', text: 'The status page before and after the wording change — a demonstration with made-up jobs, labelled so — captioned with the prediction and the re-test result including the person who still read it as a promise.', answer: 'earns its place',
               feedback: {
                 'earns its place': 'A pair, a change, a prediction and an honest result. It is the strongest image form in the whole module.',
                 'needs a caption that argues': 'The caption already carries the argument.',
@@ -1208,7 +1226,7 @@ export const guided19: Record<string, Guided> = {
                 'needs a caption that argues': 'There is no argument to write.',
                 'cut it': 'Decoration that implies a setting you did not photograph.',
               } },
-            { id: 'synthesis-cards', text: 'A recreated photograph of the synthesis cards, captioned “three of five customers described wanting certainty; the owner believed the problem was speed”.', answer: 'earns its place',
+            { id: 'synthesis-cards', text: 'A recreated photograph of the synthesis cards, captioned “both customers described wanting certainty; the owner believed the problem was speed”.', answer: 'earns its place',
               feedback: {
                 'earns its place': 'Rough work, recreated for privacy, with a caption that states the contradiction. It shows the analysis happening.',
                 'needs a caption that argues': 'The caption is the argument.',
@@ -1230,7 +1248,7 @@ export const guided19: Record<string, Guided> = {
             { label: 'What I wrote', text: 'Screenshot of the job status page showing the job number, status and estimated window. An accurate description of the picture.' },
             { label: 'What the image was doing', text: 'Arguing that the second version says when rather than what, which is the change the whole section is about.' },
             { label: 'What a reader with images off got', text: 'That there is a screenshot of a page with three things on it. The argument in the caption, the change, and the reason are all in the picture and none of them are in the text.' },
-            { label: 'What the alternative text became', text: 'Second version: the estimated collection window is the largest text on the page, above the status, which was the change tested after two of three people read status as a promise.' },
+            { label: 'What the alternative text became', text: 'Second version: the estimated collection window is the largest text on the page, above the status, which was the change tested after a tester read a time as a promise.' },
             { label: 'What the test was', text: 'Reading the case study with images disabled in the browser. Four of the eleven pieces of alternative text carried nothing, and all four were describing rather than arguing.' },
           ],
           wrongTurn: 'The wrong turn is describing the image, because describing is what alternative text sounds like it means. Alternative text carries the information the image carries, and in a case study the information is the argument.',
@@ -1244,9 +1262,9 @@ export const guided19: Record<string, Guided> = {
       {
         question: 'Do more images make a case study more convincing?',
         options: [
-          { label: 'Unargued images make it longer. One before-and-after pair captioned with the test result does more than twelve screens.', correct: true, feedback: 'Every image needs a reason and a caption that states it. Eight finished screens show nothing the flow does not, and polish everywhere reads as a rebuild.' },
-          { label: 'Yes, since images communicate faster than text.', feedback: 'They do, which is why an unargued one communicates decoration quickly.' },
-          { label: 'Yes, if they are well laid out.', feedback: 'Layout makes a gallery neater rather than making it argue.' },
+          { label: 'One captioned before-and-after pair does more than a dozen unargued screens.', correct: true, was: ['Unargued images make it longer. One before-and-after pair captioned with the test result does more than twelve screens.'], feedback: 'Unargued images make it longer. Every image needs a reason and a caption that states it; eight finished screens show nothing the flow does not, and polish everywhere reads as a rebuild.' },
+          { label: 'More images help, since pictures communicate faster than paragraphs of text.', was: ['Yes, since images communicate faster than text.'], feedback: 'They do, which is why an unargued one communicates decoration quickly.' },
+          { label: 'More images help, as long as they are laid out neatly in a consistent grid.', was: ['Yes, if they are well laid out.'], feedback: 'Layout makes a gallery neater rather than making it argue.' },
         ],
         repair: 'Cut every image whose argument you cannot state, in step 1. Record the change in step 5.',
         recheck: 'Every remaining image has a stated argument.',
@@ -1254,9 +1272,9 @@ export const guided19: Record<string, Guided> = {
       {
         question: 'Your caption says the page worked well for customers, under a screenshot. What is wrong?',
         options: [
-          { label: 'A screenshot proves a screen existed. Whether it worked is in the test record, and the caption is claiming what the image cannot show.', correct: true, feedback: 'The honest caption names the record: two of three completed the task before the change, one of three after. The image shows the screen and the record carries the result.' },
-          { label: 'Nothing, if the testing supports it.', feedback: 'Then the caption should say what the testing found, which is a different and checkable sentence.' },
-          { label: 'It should say which customers.', feedback: 'Closer, and the deeper problem is that the image is being asked to carry a result.' },
+          { label: 'The caption claims a result that only the test record, not the image, can show.', correct: true, was: ['A screenshot proves a screen existed. Whether it worked is in the test record, and the caption is claiming what the image cannot show.'], feedback: 'A screenshot proves a screen existed. The honest caption names the record and what it found — and if the page was a demonstration with made-up records, no customer used it at all.' },
+          { label: 'Nothing is wrong, as long as somewhere the testing does support the claim.', was: ['Nothing, if the testing supports it.'], feedback: 'Then the caption should say what the testing found, which is a different and checkable sentence.' },
+          { label: 'It should say which customers, so the reader knows whose experience it was.', was: ['It should say which customers.'], feedback: 'Closer, and the deeper problem is that the image is being asked to carry a result.' },
         ],
         repair: 'Rewrite any caption that claims a result the image cannot show, in step 4. Record the change in step 5.',
         recheck: 'No caption asserts something only a record can support.',
@@ -1264,14 +1282,23 @@ export const guided19: Record<string, Guided> = {
       {
         question: 'Every image in your case study is a finished screen. What does that suggest to a reviewer?',
         options: [
-          { label: 'That the work may have been rebuilt for the portfolio, because real projects leave a trail of rough material.', correct: true, feedback: 'A paper flow with failure branches, recreated synthesis cards and an exception table show the thinking happening. Polish everywhere shows outputs with nothing behind them.' },
-          { label: 'That you have strong visual craft.', feedback: 'Visible in two screens. Twelve says nothing further and raises the question about the trail.' },
-          { label: 'Nothing in particular; final work is what portfolios show.', feedback: 'It is what galleries show. A case study is arguing something.' },
+          { label: 'That it may have been rebuilt for the portfolio, since real work leaves rough traces.', correct: true, was: ['That the work may have been rebuilt for the portfolio, because real projects leave a trail of rough material.'], feedback: 'A paper flow with failure branches, recreated synthesis cards and an exception table show the thinking happening. Polish everywhere shows outputs with nothing behind them.' },
+          { label: 'That you have strong visual craft and care about how the finished work looks.', was: ['That you have strong visual craft.'], feedback: 'Visible in two screens. Twelve says nothing further and raises the question about the trail.' },
+          { label: 'Nothing in particular, since finished work is what most portfolios show anyway.', was: ['Nothing in particular; final work is what portfolios show.'], feedback: 'It is what galleries show. A case study is arguing something.' },
         ],
         repair: 'Add at least one piece of rough work in step 3, recreated if it shows participant detail. Record the change in step 5.',
         recheck: 'Your image set includes work that is not finished.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: Your case study about a plant nursery’s order form has eleven images: eight polished final screens, a stock photograph of a greenhouse, a photograph of your pencil flow captioned “flow”, and a before-and-after pair of the order button with no caption. The re-test found two of three people still missed the button.',
+      prompt: 'Which images stay, which go, and what would each remaining caption say? Explain why.',
+      anchors: {
+        weak: 'Keeps most of the screens and the stock photograph for visual interest, and captions the pair “improved button”.',
+        adequate: 'Cuts the stock photograph and most screens, keeps the pencil flow with a caption that argues, and captions the pair with the change, the prediction and “two of three still missed it”.',
+        strong: 'As adequate, and writes alternative text that carries each argument, keeps one or two screens only where they show something specific, and says where a claim rests on the test record.',
+      },
+    },
     saveRoute: {
       auto: 'Your image list, the pair, the captions and the alternative text save as you type, on this device first and then online.',
       external: 'Photographs of paper work stay in your own folder alongside the recreations. Keep the originals private where they show anybody’s detail.',
@@ -1283,11 +1310,11 @@ export const guided19: Record<string, Guided> = {
     route: textRoute,
     worksheet: [
       { id: 'gather', title: 'What exists', fields: [
-        { id: 'measurements', label: 'Every measurement from the three projects, with its period and conditions', kind: 'long' },
+        { id: 'measurements', label: 'Every measurement from the project or projects you are writing up, with its period, conditions and evidence tier', kind: 'long', hint: 'One project is enough to start. Tier: real participant research, self-pilot, simulation or supplied practice; a demonstration with made-up records has no real-use outcome.' },
         { id: 'nothing-measured', label: 'Which projects have no measurement at all', kind: 'short' },
       ] },
       { id: 'measured', title: 'The measured outcomes', fields: [
-        { id: 'counts-periods', label: 'Counts with periods, and the confounds in the same sentence or the next', kind: 'long', example: 'Example (made up): calls about progress fell from eleven over five working days to seven over the following five, one of which was a public holiday.' },
+        { id: 'counts-periods', label: 'Counts with periods, and the confounds in the same sentence or the next', kind: 'long', example: 'Example (made up): after the slip wording changed, calls about progress fell from eleven over five working days to seven over the following five, one of which was a public holiday.' },
       ] },
       { id: 'unmeasured', title: 'The unmeasured ones', fields: [
         { id: 'plain-sentence', label: 'The plain sentence saying nothing was measured', kind: 'long', hint: 'One sentence. It costs you nothing and an invented result costs you the interview.' },
@@ -1394,11 +1421,11 @@ export const guided19: Record<string, Guided> = {
                 'inflated — rewrite it': 'Two of the three testers completed it. The percentage is arithmetic dressed as a measurement, as Module 15 established.',
                 'unsupported — cut it': 'The underlying count is real and worth reporting.',
               } },
-            { id: 'owner-continued', text: 'The owner continued using the page for a month after the trial ended.', answer: 'reportable as written',
+            { id: 'owner-continued', text: 'The status page was a demonstration with made-up jobs and was never in real use.', answer: 'reportable as written',
               feedback: {
-                'reportable as written': 'An observed fact with a period, and one of the more meaningful outcomes available at this scale.',
+                'reportable as written': 'A plain statement of what did not happen, with its tier. It stops a reader assuming the measured fall came from the page.',
                 'inflated — rewrite it': 'Nothing about it is inflated.',
-                'unsupported — cut it': 'It is observed rather than inferred, and it says something a count of calls does not.',
+                'unsupported — cut it': 'It is supported by the stop-gate record, and leaving it out lets the reader assume real use.',
               } },
           ],
           then: 'Now search your own outcome sections for the same shapes and rewrite them.',
@@ -1419,9 +1446,9 @@ export const guided19: Record<string, Guided> = {
       {
         question: 'Your project has no measurable result. Does that make it look like a failure?',
         options: [
-          { label: 'Without an honest result the whole portfolio looks unreliable. A project with no measurement, plainly stated, costs one sentence.', correct: true, feedback: 'A fabricated result costs the interview. Not deployed, followed by the repair loop in counts, is a real outcome section and it survives being asked about.' },
-          { label: 'Yes, which is why a qualitative claim should fill the gap.', feedback: 'A qualitative claim with nothing behind it is the fabrication, described more gently.' },
-          { label: 'Yes, so the section is better left out.', feedback: 'A missing outcome section is noticed, and the one sentence is easier than the absence.' },
+          { label: 'A plain sentence saying nothing was measured costs less than any invented result.', correct: true, was: ['Without an honest result the whole portfolio looks unreliable. A project with no measurement, plainly stated, costs one sentence.'], feedback: 'Without an honest result the whole portfolio looks unreliable, and a fabricated result costs the interview. Not deployed, followed by the repair loop in counts, is a real outcome section that survives being asked about.' },
+          { label: 'It does, which is why a qualitative claim should fill the gap in the outcome section.', was: ['Yes, which is why a qualitative claim should fill the gap.'], feedback: 'A qualitative claim with nothing behind it is the fabrication, described more gently.' },
+          { label: 'It does, so the outcome section is better left out of that case study altogether.', was: ['Yes, so the section is better left out.'], feedback: 'A missing outcome section is noticed, and the one sentence is easier than the absence.' },
         ],
         repair: 'Write the plain sentence and the process outcome in step 3. Record the change in step 5.',
         recheck: 'Every case study has an outcome section that is true.',
@@ -1429,9 +1456,9 @@ export const guided19: Record<string, Guided> = {
       {
         question: 'Two of three testers completed the task after the change. Can you write 67 per cent?',
         options: [
-          { label: 'No. Sixty-seven per cent of three people is two people, and the percentage is arithmetic dressed as a measurement.', correct: true, feedback: 'Module 15 settled it and this is where it is tested. Two of the three testers is shorter, checkable, and does not imply a sample nobody had.' },
-          { label: 'Yes, with the sample stated alongside.', feedback: 'The percentage is the part that travels, as Module 15 showed repeatedly.' },
-          { label: 'Yes, since the arithmetic is correct.', feedback: 'Correct arithmetic and implied precision are different things.' },
+          { label: 'Write two of three: a percentage of three people is arithmetic dressed as data.', correct: true, was: ['No. Sixty-seven per cent of three people is two people, and the percentage is arithmetic dressed as a measurement.'], feedback: 'Sixty-seven per cent of three people is two people. Module 15 settled it and this is where it is tested: two of the three testers is shorter, checkable, and does not imply a sample nobody had.' },
+          { label: 'Write 67 per cent, with the sample of three stated in brackets beside it.', was: ['Yes, with the sample stated alongside.'], feedback: 'The percentage is the part that travels, as Module 15 showed repeatedly.' },
+          { label: 'Write 67 per cent, since two out of three really is about two-thirds of them.', was: ['Yes, since the arithmetic is correct.'], feedback: 'Correct arithmetic and implied precision are different things.' },
         ],
         repair: 'Search for percentages in step 4 and replace them with counts. Record the change in step 5.',
         recheck: 'No percentage from a small count remains.',
@@ -1439,14 +1466,23 @@ export const guided19: Record<string, Guided> = {
       {
         question: 'Your outcome says customer satisfaction increased. Nothing measured satisfaction. What should happen?',
         options: [
-          { label: 'Cut it. It is a claim about something never observed, and it is the first thing an interviewer tests.', correct: true, feedback: 'There is nothing underneath to rewrite it into. The owner continuing to use the page for a month is observed, meaningful, and available instead.' },
-          { label: 'Rewrite it as customers seemed more satisfied.', feedback: 'Seemed is the inflation word doing the work, and nothing was observed either way.' },
-          { label: 'Keep it and note that it was not measured.', feedback: 'A claim with a note under it is still the claim, and the note travels less far.' },
+          { label: 'Cut it: nothing observed it, and it is the first thing an interviewer tests.', correct: true, was: ['Cut it. It is a claim about something never observed, and it is the first thing an interviewer tests.'], feedback: 'There is nothing underneath to rewrite it into. The counted fall in progress calls, with its period and conditions, is observed and available instead.' },
+          { label: 'Soften it to “customers seemed more satisfied”, which claims much less.', was: ['Rewrite it as customers seemed more satisfied.'], feedback: 'Seemed is the inflation word doing the work, and nothing was observed either way.' },
+          { label: 'Keep it, with a note underneath saying that satisfaction was not measured.', was: ['Keep it and note that it was not measured.'], feedback: 'A claim with a note under it is still the claim, and the note travels less far.' },
         ],
         repair: 'Ask the two sceptic questions of every outcome sentence in step 5 and cut what cannot answer. Record the change.',
         recheck: 'Every outcome sentence can say how many people and over what period.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: You are writing the outcome section for your first project, a community hall’s room-booking form. You have a self-pilot in which you completed a booking in 40 seconds, a test in which two of three members found the cancel link after the change and none of three before, no live use at all, and the hall manager saying “members love it”.',
+      prompt: 'Write the outcome section in two or three sentences, and explain what you left out and why.',
+      anchors: {
+        weak: 'Claims the form made booking 67 per cent easier and that members love it, with no tiers and no mention that it was never used for real.',
+        adequate: 'States it was not in live use, reports none of three then two of three finding the cancel link as a test result, and labels the 40 seconds as a self-pilot.',
+        strong: 'As adequate, and leaves out the manager’s remark or attributes it as one person’s opinion, gives no percentages, and says what a real-use measurement would need.',
+      },
+    },
     saveRoute: {
       auto: 'Your measurements, the outcome sections, the inflation search and the rewrites save as you type, on this device first and then online.',
       external: 'The tally sheets and session records stay with the projects. The outcome sections point at them rather than restating them.',
