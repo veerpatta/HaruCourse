@@ -1323,7 +1323,7 @@ export const guided15: Record<string, Guided> = {
       ] },
       { id: 'cohort', title: 'Build a cohort', fields: [
         { id: 'cohort-split', label: 'How you split people by the period they arrived', kind: 'long', hint: 'A cohort is a group defined by when they first arrived, followed for the same length of time each.' },
-        { id: 'cohort-comparison', label: 'The comparison: which two cohorts, followed for how long', kind: 'long', example: 'Example (made up, synthetic): people arriving in week two against people arriving in week six, each followed for their first fourteen days.' },
+        { id: 'cohort-comparison', label: 'The comparison: which two cohorts, followed for how long', kind: 'long', hint: 'Give the counts for each cohort and put them into the Two rates tool in this lesson’s uncertainty calculator, which gives the difference and its 95 per cent interval. That interval covers chance only; it says nothing about a promotion or a festival.', example: 'Example (made up, synthetic): week-six arrivals, 30 of 320 booked within fourteen days (9.4 per cent); week-two arrivals, 21 of 300 (7.0 per cent). Difference 2.4 points, 95 per cent interval about −2.0 to +6.8 points.' },
       ] },
       { id: 'controls', title: 'What it does and does not control for', fields: [
         { id: 'controls-for', label: 'What the cohort controls for', kind: 'long', hint: 'Usually the changing mix of new and returning people, and the different lengths of time each group has had.' },
@@ -1349,7 +1349,7 @@ export const guided15: Record<string, Guided> = {
             { label: 'What it showed', text: 'A clear rise. It is the chart that appears in most before-and-after reports and it is almost impossible to read as anything else.' },
             { label: 'What eight periods showed instead', text: 'The metric moved by a similar amount in four of the eight weeks, in both directions, with nothing shipped in any of them.' },
             { label: 'What that did to the two-bar chart', text: 'It became one of several similar movements rather than an event. The rise was still there; what had gone was the reason to think it meant anything.' },
-            { label: 'What I learned about the shape', text: 'Two points always look like a change, because two points always differ. Eight points show what normal variation is, which is the thing you need before you can call anything unusual.' },
+            { label: 'What I learned about the shape', text: 'Two points nearly always look like a change, because two points nearly always differ. Eight points show what normal variation is, which is the thing you need before you can call anything unusual.' },
           ],
           wrongTurn: 'The wrong turn is plotting the before and the after, because that is the comparison you care about. Two points cannot show variation, so every difference between them looks like an event.',
           tradeoff: 'Eight periods of synthetic data takes longer to invent and produces a chart with no clear story in it, which is an accurate picture of what a small product usually has.',
@@ -1361,7 +1361,7 @@ export const guided15: Record<string, Guided> = {
         fields: ['other-causes-list', 'same-period'],
         terms: [
           { term: 'Seasonality', meaning: 'Regular movement caused by the calendar: term times, festivals, weather, paydays. It moves numbers more than most design changes do.' },
-          { term: 'Concurrent change', meaning: 'Anything else that happened in the same period. There is always at least one, and naming it is the difference between a finding and a coincidence.' },
+          { term: 'Concurrent change', meaning: 'Anything else that happened in the same period. There is usually at least one, and naming it is the difference between a finding and a coincidence.' },
         ],
         demo: {
           scenario: 'Made-up example. Reading a rise in completions at a tool library, and attributing it.',
@@ -1372,7 +1372,7 @@ export const guided15: Record<string, Guided> = {
             { label: 'What the earlier weeks showed', text: 'Week two had a rise almost as large, with nothing shipped at all. The ordinary wobble in this metric was bigger than I had assumed.' },
             { label: 'What I wrote instead', text: 'Completions rose in week five, when the message shipped, a festival ended and a promotion ran. The three cannot be separated, and a similar rise occurred in week two with no change at all.' },
           ],
-          wrongTurn: 'The wrong turn is reading a rise after a change as a result of the change, because the timing is the most visible fact available. Something else always happened in the same period, and the ordinary variation is usually larger than anybody expects.',
+          wrongTurn: 'The wrong turn is reading a rise after a change as a result of the change, because the timing is the most visible fact available. Something else usually happened in the same period, and the ordinary variation is often larger than anybody expects.',
           tradeoff: 'Naming the alternatives means the most encouraging chart in the project stops being evidence, and somebody will feel you have talked yourself out of a success.',
           uncertainty: 'Still unknown: whether the message did anything at all. The honest position is that nothing here can tell, and the numbers are synthetic in any case.',
         },
@@ -1448,11 +1448,11 @@ export const guided15: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'The number went up the week you shipped. Did the change work?',
+        question: 'The number went up in the week you shipped, which was also the week a local festival ended and the provider ran a promotion. Did the change work?',
         options: [
-          { label: 'Unknown. Something else also happened in that period, always, and the ordinary variation is usually larger than people expect.', correct: true, feedback: 'Plotting eight periods shows what a normal wobble looks like. A rise in the ship week, with a festival and a promotion in it, cannot be attributed to any of the three.' },
-          { label: 'Probably, since the timing matches.', feedback: 'Timing is the most visible fact and the weakest evidence. Everything that happened that week has the same timing.' },
-          { label: 'Yes, unless somebody can name a specific alternative.', feedback: 'Naming alternatives is your job here rather than the objector’s, and there is always at least one.' },
+          { label: 'Unknown: the festival and promotion share the timing, and weeks wobble anyway.', correct: true, feedback: 'Plotting eight periods shows what a normal wobble looks like. A rise in the ship week, with a festival and a promotion in it, cannot be attributed to any of the three. It is a reason to investigate, not a verdict either way.', was: ['Unknown. Something else also happened in that period, always, and the ordinary variation is usually larger than people expect.'] },
+          { label: 'Probably, since the timing of the rise matches the release exactly.', feedback: 'Timing is the most visible fact and the weakest evidence. Everything that happened that week has the same timing.', was: ['Probably, since the timing matches.'] },
+          { label: 'It did, unless somebody can show the promotion made the difference.', feedback: 'Ruling out alternatives is your job here rather than the objector’s, and with uncontrolled weeks nobody can show it either way.', was: ['Yes, unless somebody can name a specific alternative.'] },
         ],
         repair: 'List what else happened in the same period in step 2, and check the calendar rather than relying on memory. Record the change in step 5.',
         recheck: 'At least one concurrent change is named.',
@@ -1460,9 +1460,9 @@ export const guided15: Record<string, Guided> = {
       {
         question: 'Your cohort comparison removes the mix of new and returning people. Does that make it a clean result?',
         options: [
-          { label: 'No. A cohort controls for who the people are and how long they have had, and does nothing about what was happening in the world that week.', correct: true, feedback: 'The promotion and the festival affect one cohort’s calendar weeks and not the other’s. The controls list is short and the does-not list is where the strongest explanations sit.' },
-          { label: 'Yes, since the two groups are now comparable.', feedback: 'Comparable in composition. They lived through different weeks, and the weeks are what changed.' },
-          { label: 'Yes, provided both cohorts are large enough.', feedback: 'Size addresses noise rather than confounding.' },
+          { label: 'Not clean: it fixes who the people are, not what happened in their weeks.', correct: true, feedback: 'A cohort controls for who the people are and how long they have had. The promotion and the festival affect one cohort’s calendar weeks and not the other’s, so the does-not list is where the strongest explanations sit.', was: ['No. A cohort controls for who the people are and how long they have had, and does nothing about what was happening in the world that week.'] },
+          { label: 'It is, since the two groups are now comparable people followed equally.', feedback: 'Comparable in composition. They lived through different weeks, and the weeks are what changed.', was: ['Yes, since the two groups are now comparable.'] },
+          { label: 'It is, provided both cohorts contain enough people to trust.', feedback: 'Size addresses chance rather than confounding.', was: ['Yes, provided both cohorts are large enough.'] },
         ],
         repair: 'Write the does-not-control list in step 4 before the controls-for list. Record the change in step 5.',
         recheck: 'Your does-not list is longer than your controls list.',
@@ -1470,14 +1470,23 @@ export const guided15: Record<string, Guided> = {
       {
         question: 'Your synthetic cohort chart shows a clear difference. What must accompany it?',
         options: [
-          { label: 'The synthetic label on the chart, and the explanation you cannot rule out beside the conclusion.', correct: true, feedback: 'The chart will travel without its caption, and the exercise demonstrates the method rather than a result. Both sentences belong in the picture rather than in the notes.' },
-          { label: 'The cohort definition, so it can be reproduced.', feedback: 'Necessary and not sufficient. A reproducible chart of invented numbers is still invented.' },
-          { label: 'Nothing, since the method is sound.', feedback: 'The method is the thing being practised. The numbers are made up and the chart does not say so unless you make it.' },
+          { label: 'A synthetic label on the chart, and the explanation you cannot rule out.', correct: true, feedback: 'The chart will travel without its caption, and the exercise demonstrates the method rather than a result. Both belong in the picture rather than in the notes; the difference’s interval can sit there too.', was: ['The synthetic label on the chart, and the explanation you cannot rule out beside the conclusion.'] },
+          { label: 'The cohort definition in full, so that anybody can reproduce it.', feedback: 'Necessary and not sufficient. A reproducible chart of invented numbers is still invented.', was: ['The cohort definition, so it can be reproduced.'] },
+          { label: 'Nothing more, since the cohort method itself is sound.', feedback: 'The method is the thing being practised. The numbers are made up and the chart does not say so unless you make it.', was: ['Nothing, since the method is sound.'] },
         ],
         repair: 'Put the synthetic label on the chart itself and name the unresolvable explanation in step 5. Record the change.',
         recheck: 'A screenshot of the chart alone still says the numbers are invented.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case, invented counts: a museum shop’s online gift-card sales were 40 a week for six weeks, then 70 in the week a redesigned page launched. That week was also the start of the school holidays, and a newspaper listed the museum as a day out. People arriving in the launch week bought at 9 in 100; those arriving three weeks earlier at 6 in 100.',
+      prompt: 'Say what you can conclude about the redesign, what a cohort comparison does and does not control for here, and explain why.',
+      anchors: {
+        weak: 'Credits the redesign because the rise came in the launch week, or says the redesign did nothing because of the holidays.',
+        adequate: 'Treats the rise as an investigation trigger, notes that cohorts fix who is compared and how long they are followed, and names the holidays and the newspaper as concurrent changes no cohort removes.',
+        strong: 'As adequate, and asks for each cohort’s denominators to compute the difference and its interval, notes earlier weeks give the normal wobble, and labels the counts invented.',
+      },
+    },
     saveRoute: {
       auto: 'Your plotted metric, the other causes, the cohort and the controls save as you type, on this device first and then online.',
       external: 'The spreadsheet with your cohort split stays in your own folder, with the synthetic label in the chart title.',
@@ -1500,12 +1509,12 @@ export const guided15: Record<string, Guided> = {
         { id: 'change-condition', label: 'The result that would change your conclusion, and when you would look', kind: 'long' },
       ] },
       { id: 'present', title: 'Present it', fields: [
-        { id: 'presented-to', label: 'Who you presented it to, or how you rehearsed it', kind: 'short', hint: 'No stakeholder available: present it to anybody who will listen for five minutes, and label it a rehearsal.' },
-        { id: 'questions-asked', label: 'What they asked', kind: 'long' },
+        { id: 'presented-to', label: 'Who you presented it to (a role, not a name), or how you rehearsed it', kind: 'short', hint: 'No stakeholder available: present it to anybody who will listen for five minutes, and label it a rehearsal. A synthetic chart can be presented only as a method demonstration, never as evidence for the decision.' },
+        { id: 'questions-asked', label: 'What they asked, summarised', kind: 'long', sensitive: true, hint: 'Summarise each question in your words; keep any verbatim notes in your own private file.' },
       ] },
       { id: 'survived', title: 'What survived', fields: [
-        { id: 'remembered', label: 'What they remembered afterwards, in their words', kind: 'long', hint: 'Ask a day later if you can. What is remembered is what will be repeated.' },
-        { id: 'travelled-wrong', label: 'Anything remembered more confidently than your evidence supports', kind: 'long' },
+        { id: 'remembered', label: 'What they remembered afterwards, summarised closely', kind: 'long', sensitive: true, hint: 'Ask a day later if you can. What is remembered is what will be repeated. Record the gist without their name; a short phrase they used is enough.' },
+        { id: 'travelled-wrong', label: 'Anything remembered more confidently than your evidence supports', kind: 'long', sensitive: true },
         improvementMade,
       ] },
     ],
@@ -1530,7 +1539,7 @@ export const guided15: Record<string, Guided> = {
             { label: 'How it went', text: 'Well. Everybody understood the caveats, asked good questions, and nobody was misled in the room.' },
             { label: 'What happened three weeks later', text: 'The chart appeared in somebody else’s summary, with a sentence underneath saying completions rose after the redesign. Not dishonestly: they had the picture and not the conversation.' },
             { label: 'What the chart had said about itself', text: 'Nothing. A clean axis, two bars and a title. Every limitation lived in a room that no longer existed.' },
-            { label: 'What I do now', text: 'Synthetic in the title, the sample beside the bar, the period on the axis, and the promotion marked on the chart with a line. It is uglier and it survives being screenshotted.' },
+            { label: 'What I do now', text: 'Synthetic in the title, the sample beside the bar, the period on the axis, and the promotion marked on the chart with a line. It is uglier and it survives being screenshotted. And a synthetic chart never goes on a slide that asks for a real decision; it belongs in a section labelled as a method demonstration.' },
           ],
           wrongTurn: 'The wrong turn is explaining the caveats aloud, because the explanation lands and the room understands. The caveats stay in the room; the chart goes everywhere.',
           tradeoff: 'A chart carrying its own limitations is busier and less persuasive, which is the correct level of persuasive for what it shows.',
@@ -1549,14 +1558,14 @@ export const guided15: Record<string, Guided> = {
             { label: 'What I wrote', text: '“If the evidence changes, I will revisit this.” It sounded open-minded and it committed me to nothing at all.' },
             { label: 'Why it is empty', text: 'No particular evidence would trigger it, and no date says when anybody looks. It is a sentence that survives every outcome.' },
             { label: 'What I nearly wrote instead', text: '“If duplicate payments do not fall substantially.” Better, and substantially is doing the same work as the first version: nobody can say afterwards whether it happened.' },
-            { label: 'What it became', text: '“If duplicate payments in the provider’s records are not lower in the month after shipping than in the month before, the cause is elsewhere and the work moves to the payment confirmation.”' },
-            { label: 'What that version does', text: 'It names a source, a period and a next step. Somebody can hold me to it, which is the whole point of writing one.' },
+            { label: 'What it became', text: '“If duplicate payments in the provider’s records are not lower in the month after shipping than in the month before, we look next at the payment confirmation and ask recent bookers what they saw.”' },
+            { label: 'What that version does', text: 'It names a source, a period and a next step. Somebody can hold me to it. It does not claim that an unchanged count proves the message had no effect, because the two months differ in other ways too.' },
           ],
           wrongTurn: 'The wrong turn is writing a condition that cannot fail, because it keeps your options open and sounds properly scientific. A condition nothing could satisfy is not a commitment.',
           tradeoff: 'A real condition means you may have to say in four weeks that your work did not help, in front of the people who approved it.',
           uncertainty: 'Still unknown: whether a month is long enough, and whether the records capture every duplicate. The earlier contradiction suggested they may not, and the condition is stated in terms of what the records show rather than what happens.',
         },
-        start: 'Finish this sentence: “if, in four weeks, … then the cause is elsewhere”.',
+        start: 'Finish this sentence: “if, in four weeks, … then we will look next at …”. It is a trigger to investigate, not a verdict on cause.',
         enough: 'The condition could actually occur and you have said when you would look.' },
       { expect: 'The analysis presented to somebody, or rehearsed and labelled, with what they asked.',
         fields: ['presented-to', 'questions-asked'],
@@ -1623,9 +1632,9 @@ export const guided15: Record<string, Guided> = {
       {
         question: 'You explained all the caveats when you presented it. Is that enough?',
         options: [
-          { label: 'No. The caveats stayed in the room and the chart went everywhere, so anything that matters belongs in the picture.', correct: true, feedback: 'Three weeks later the chart appears in somebody else’s summary with a confident sentence under it. They had the picture and not the conversation, and the picture said nothing about itself.' },
-          { label: 'Yes, since the audience understood them at the time.', feedback: 'They did. The problem is everybody who sees the chart afterwards.' },
-          { label: 'Yes, if the caveats are also in the notes.', feedback: 'Notes do not travel with a screenshot either.' },
+          { label: 'Not quite: caveats stay in the room while the chart travels on.', correct: true, feedback: 'Three weeks later the chart appears in somebody else’s summary with a confident sentence under it. They had the picture and not the conversation, and the picture said nothing about itself, so anything that matters belongs in it.', was: ['No. The caveats stayed in the room and the chart went everywhere, so anything that matters belongs in the picture.'] },
+          { label: 'It is, since the audience understood them at the time.', feedback: 'They did. The problem is everybody who sees the chart afterwards.', was: ['Yes, since the audience understood them at the time.'] },
+          { label: 'It is, if the caveats are also written in the notes.', feedback: 'Notes do not travel with a screenshot either.', was: ['Yes, if the caveats are also in the notes.'] },
         ],
         repair: 'Move the sample, the period, the synthetic label and any confound onto the chart itself in step 2. Record the change in step 5.',
         recheck: 'A screenshot of your chart alone would not mislead anybody.',
@@ -1643,14 +1652,23 @@ export const guided15: Record<string, Guided> = {
       {
         question: 'Your audience remembered a figure more confidently than your evidence supports. What does that tell you?',
         options: [
-          { label: 'That the presentation let it travel that way, and the fix is in the slide rather than in a correction.', correct: true, feedback: 'What is remembered is what will be repeated. If a number was remembered without its sample, the number and the sample were not close enough together on the slide.' },
-          { label: 'That the audience was not listening carefully.', feedback: 'Audiences remember two things. Which two is decided by the design of the slide.' },
-          { label: 'That you should send a written correction.', feedback: 'Worth doing and it does not reach everybody the chart already reached.' },
+          { label: 'The slide let the figure travel without its sample; fix the slide.', correct: true, feedback: 'What is remembered is what will be repeated. If a number was remembered without its sample, the number and the sample were not close enough together on the slide, and a correction will not reach everybody.', was: ['That the presentation let it travel that way, and the fix is in the slide rather than in a correction.'] },
+          { label: 'The audience was not listening carefully enough to the caveats.', feedback: 'Audiences remember two things. Which two is decided by the design of the slide.', was: ['That the audience was not listening carefully.'] },
+          { label: 'A written correction should go to everybody who was there.', feedback: 'Worth doing, and it does not reach everybody the chart already reached.', was: ['That you should send a written correction.'] },
         ],
         repair: 'Change the slide so the figure cannot be separated from its sample, in step 2. Record the change in step 5.',
         recheck: 'Every number on your slide carries its denominator and period beside it.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: you are presenting to a village hall committee whether to replace the paper booking diary with an online calendar. You have: 7 of 9 regular hirers you spoke to said they would book online; a synthetic chart you drew to practise showing booking clashes falling; and the diary’s own record of 12 double bookings last year.',
+      prompt: 'Decide what goes on the single evidence slide and what stays off it, and explain why.',
+      anchors: {
+        weak: 'Shows the synthetic clash chart as evidence, or turns 7 of 9 into “78 per cent of hirers” with no sample or route.',
+        adequate: 'Leads with the decision, shows 7 of the 9 regular hirers spoken to and the 12 double bookings with their period, and keeps the synthetic chart off the evidence slide because invented numbers cannot support a real decision.',
+        strong: 'As adequate, and states a change condition worded as a trigger to look again (for example, double bookings in the first three months), and checks that the slide survives being screenshotted alone.',
+      },
+    },
     saveRoute: {
       auto: 'Your decision sentence, the chart notes, the change condition and what was remembered save as you type, on this device first and then online.',
       external: 'The slides or the page stay in your own folder. If the chart is going anywhere else, check once more that it says synthetic in its own title.',
