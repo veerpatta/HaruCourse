@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="starter-title starter-desc">
+  <title id="starter-title">Booking screen starter: a made-up pottery class (HaruCourse Module 8 practice file)</title>
+  <desc id="starter-desc">An editable mid-fidelity phone screen, 390 by 844 points, for HaruCourse Module 8 practice. Everything on it is made up: it is not a real studio, class, price or place. From top to bottom: a back link to all classes; a photo placeholder; the class title "Wheel throwing for complete beginners"; the date "Saturday 14 November, 10:00 to 12:30"; the price "£45 per person"; "6 of 8 places left"; the location; a "What to bring" list; two actions, "Reserve a place" and "Share with a friend"; and the cancellation terms. Both actions are drawn at equal weight on purpose: deciding which one leads, and why, is your job in Module 8 lessons 1 and 3. Each part is a named group (status-bar, header, photo, class-summary, availability, location, what-to-bring, actions, terms) so it can be moved, restyled or deleted as one piece. All text is real text in your computer's own system font, so it stays editable. Duplicate this file before you edit it, and keep the original as your untouched starting point.</desc>
+
+  <g id="screen-background">
+    <rect x="0" y="0" width="390" height="844" fill="#ffffff"/>
+    <rect x="0.5" y="0.5" width="389" height="843" fill="none" stroke="#bdbdbd"/>
+  </g>
+
+  <g id="status-bar">
+    <text x="24" y="30" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="15" font-weight="600" fill="#1f1f1f">9:41</text>
+    <rect x="336" y="19" width="26" height="12" rx="3" fill="none" stroke="#1f1f1f" stroke-width="1.5"/>
+    <rect x="339" y="22" width="17" height="6" rx="1" fill="#1f1f1f"/>
+    <rect x="363" y="23" width="2" height="4" rx="1" fill="#1f1f1f"/>
+  </g>
+
+  <g id="header">
+    <text x="20" y="80" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="16" fill="#1f1f1f">‹ All classes</text>
+    <text x="370" y="80" text-anchor="end" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="12" fill="#6b6b6b">Practice file · made up</text>
+    <line x1="0" y1="96" x2="390" y2="96" stroke="#e0e0e0"/>
+  </g>
+
+  <g id="photo">
+    <rect x="20" y="108" width="350" height="190" rx="8" fill="#ececec" stroke="#c4c4c4"/>
+    <line x1="20" y1="108" x2="370" y2="298" stroke="#d2d2d2"/>
+    <line x1="370" y1="108" x2="20" y2="298" stroke="#d2d2d2"/>
+    <rect x="66" y="189" width="258" height="28" rx="4" fill="#ececec"/>
+    <text x="195" y="208" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="13" fill="#555555">Photo: hands shaping clay on a wheel</text>
+  </g>
+
+  <g id="class-summary">
+    <text x="20" y="338" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="24" font-weight="700" fill="#1f1f1f">Wheel throwing for</text>
+    <text x="20" y="368" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="24" font-weight="700" fill="#1f1f1f">complete beginners</text>
+    <text x="20" y="400" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="16" fill="#333333">Saturday 14 November, 10:00 to 12:30</text>
+    <text x="20" y="426" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="16" font-weight="600" fill="#1f1f1f">£45 per person</text>
+  </g>
+
+  <g id="availability">
+    <text x="20" y="452" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="14" fill="#6b6b6b">6 of 8 places left</text>
+  </g>
+
+  <g id="location">
+    <text x="20" y="476" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="14" fill="#6b6b6b">Studio 2, ground floor, step-free entrance</text>
+  </g>
+
+  <g id="what-to-bring">
+    <text x="20" y="516" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="16" font-weight="600" fill="#1f1f1f">What to bring</text>
+    <text x="20" y="542" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="15" fill="#333333">• Clothes you do not mind getting muddy</text>
+    <text x="20" y="566" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="15" fill="#333333">• Short nails make the wheel easier</text>
+    <text x="20" y="590" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="15" fill="#333333">• Aprons and tools are provided</text>
+  </g>
+
+  <g id="actions">
+    <g id="action-reserve">
+      <rect x="20" y="626" width="350" height="52" rx="8" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+      <text x="195" y="658" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="17" font-weight="600" fill="#1f1f1f">Reserve a place</text>
+    </g>
+    <g id="action-share">
+      <rect x="20" y="692" width="350" height="52" rx="8" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+      <text x="195" y="724" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="17" font-weight="600" fill="#1f1f1f">Share with a friend</text>
+    </g>
+  </g>
+
+  <g id="terms">
+    <text x="20" y="782" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="13" fill="#6b6b6b">Free cancellation up to 48 hours before the class.</text>
+  </g>
+
+  <g id="home-indicator">
+    <rect x="128" y="826" width="134" height="5" rx="2.5" fill="#9e9e9e"/>
+  </g>
+</svg>

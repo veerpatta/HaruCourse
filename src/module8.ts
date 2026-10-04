@@ -97,9 +97,9 @@ export const module8: Lesson[] = [
     misconception:
       "“High fidelity means the design is further along.” It means the design is more expensive to change. A polished screen built on an untested structure is further from shipping than a rough one built on a tested structure, because the expensive rework is still ahead of it.",
     example:
-      "A booking screen taken from wireframe to interface settled six things: type scale, the price treatment, the button hierarchy, the spacing rhythm, the image size and the state colours. It also hid two: with real type sizes the description no longer fit above the fold, which the wireframe had implied it would, and the availability line — which the paper test had shown people looking for — became visually quiet enough that two reviewers did not mention it at all. Both were caught only because the wireframe was still on the table beside it.",
+      "Made-up example: a booking screen taken from wireframe to interface settled six things: type scale, the price treatment, the button hierarchy, the spacing rhythm, the image size and the state colours. It also hid two: with real type sizes the description no longer fit above the fold, which the wireframe had implied it would, and the availability line — which the paper test had shown people looking for — became visually quiet enough that two reviewers did not mention it at all. Both were caught only because the wireframe was still on the table beside it.",
     freeToolPath:
-      "Paper and coloured pencils, or one local HTML file with a small stylesheet. A design tool is convenient and not required; hand-written SVG or plain CSS produces a real, exportable screen with no account.",
+      "Paper and coloured pencils, or a copy of the editable starter /starters/m08/booking-screen-starter.svg opened in a free vector tool: Inkscape needs no account, Penpot needs a free one. A paid design tool is never required, and you are not asked to write any code.",
     outputs: [
       "One screen at interface fidelity, beside its wireframe",
       "A list of what the added detail decided",
@@ -112,6 +112,7 @@ export const module8: Lesson[] = [
         title: "Choose and read",
         instructions: [
           "Pick the m07 screen your paper test raised the most problems about.",
+          "No m07 screen? Download /starters/m08/booking-screen-starter.svg, keep the download untouched as your wireframe and work on a copy.",
           "Read the assigned component guidance for one component that appears on it.",
           "Write in one sentence what this version of the screen is for.",
         ],
@@ -188,7 +189,7 @@ export const module8: Lesson[] = [
           "As adequate, and a scale step was changed with the reason recorded.",
         ],
         remediation:
-          "Replace every string with the real one from your m06 labelling table, then map each text element to a step in your scale.",
+          "Replace every string with the real one from your m06 labelling table, or the starter file's labels, then map each text element to a step in your scale.",
         recheck: "The screen with a scale map beside it.",
       },
       {
@@ -299,7 +300,7 @@ export const module8: Lesson[] = [
     misconception:
       "“We need a design system before we can design.” You need an inventory. A component library invented ahead of real screens describes an imaginary product, and the first week of real work breaks it. Audit what you actually drew, then generalise the parts that repeat.",
     example:
-      "An audit of nine screens found five button variants: three were the same intent drawn on different days, one was a genuinely different job — a destructive cancel — and one was a link wearing a button's clothes. It found three card layouts that were one card with different content lengths. The merges reduced five buttons to three real jobs and three cards to one, and one merge was recorded as a loss: the cancelled-class card had used a lighter background, and after merging, cancelled status rested entirely on a text label, which was noted as a candidate problem for the next test.",
+      "Made-up example: an audit of nine screens found five button variants: three were the same intent drawn on different days, one was a genuinely different job — a destructive cancel — and one was a link wearing a button's clothes. It found three card layouts that were one card with different content lengths. The merges reduced five buttons to three real jobs and three cards to one, and one merge was recorded as a loss: the cancelled-class card had used a lighter background, and after merging, cancelled status rested entirely on a text label, which was noted as a candidate problem for the next test.",
     freeToolPath:
       "Print or sketch every screen, cut out each repeated element and group them on a table. Photograph the groups. This is faster than any tool and shows near-duplicates immediately.",
     outputs: [
@@ -322,6 +323,7 @@ export const module8: Lesson[] = [
         title: "Cut and group",
         instructions: [
           "Lay out every screen you have, including error and empty states.",
+          "Few screens of your own? Add the three made-up screens in /starters/m08/booking-screen-starter.svg and /starters/m08/hierarchy-before-after.svg, marked as supplied.",
           "Mark every element that appears more than once.",
           "Group the marked elements by what they do, not how they look.",
         ],
@@ -478,31 +480,33 @@ export const module8: Lesson[] = [
     guided: true,
     title: "Actions: hierarchy, targets and labels",
     objective:
-      "Specify your action components at three levels of emphasis with measured target sizes and verb-first labels, and prove the hierarchy survives greyscale.",
+      "Rank the actions on one screen from its task and the evidence, compare two defensible layouts, then specify three levels of emphasis with measured targets, verb-first labels and a greyscale check.",
     bringForward:
-      "The action components from your inventory and the screens they appear on.",
-    prerequisite: "Your component inventory and the screens using its actions.",
-    why: "If a person cannot tell in a glance which action is the main one, every screen costs a decision it did not need to.",
+      "The action components from your inventory, the screens they appear on and whatever evidence you hold about what people need there.",
+    prerequisite: "Your component inventory and its screens, or the m08 starter files and the supplied practice notes.",
+    why: "If a person cannot tell in a glance which action is the main one, every screen costs a decision it did not need to. Which action that should be depends on what this screen is for and what people were seen needing there.",
     teach: [
-      "Three levels of emphasis is usually enough: primary, secondary, and quiet.",
-      "One primary action per screen. Two primaries means the screen has two jobs.",
-      "Emphasis must survive greyscale: weight, size and containment, not colour alone.",
-      "Label with the verb of the outcome: “Book a place”, not “Submit” or “OK”.",
-      "Targets need physical size and spacing, especially near destructive actions.",
+      "Rank actions from this screen’s task and its evidence, not from habit: what is the person here to do, and what did the notes show they need first?",
+      "Three levels are usually enough: primary, secondary and quiet. Two equally loud actions usually mean the screen is doing two jobs.",
+      "Emphasis must survive greyscale: carry it in weight, size and containment, then add colour as reinforcement.",
+      "Label with the verb of the outcome — “Book a place”, not “Submit” or “OK” — and give targets real size and space, especially near destructive actions.",
+      "Treat the ranking as a decision to test: draw two defensible layouts and say what you would watch for to choose between them.",
     ],
     explanation: [
       "Emphasis is comparative, so a hierarchy exists only if the levels differ in more than one dimension. A primary action that differs from a secondary one only by colour disappears for a person with a colour-vision deficiency, in bright sunlight, or in a greyscale printout — and those are the ordinary conditions your booking screen will meet on a phone outside. Containment, weight and size are what carry emphasis reliably; colour is a reinforcement, not the signal.",
-      "One primary per screen is a structural rule more than a visual one. When you find two, the honest reading is usually that the screen is doing two jobs, and the fix is to split the screen or to decide which job it is actually for. Screens with three primaries teach people to read everything as equally urgent, after which nothing is emphasised at all.",
+      "Which action leads is decided by what the screen is for and what the evidence says people need there, not by a general rule. In this course's made-up booking case, 3 of 4 interviewees and the observed participant checked the plan with someone else before paying, so a share action is a step on the way to booking rather than an extra; on a screen where the notes showed people booking alone, the same action could reasonably stay quiet. Two actions of equal weight usually mean the screen is doing two jobs, and the fix is to decide which job it is for or to split it. Screens with three primaries teach people to read everything as equally urgent, after which nothing is emphasised at all.",
+      "A ranking is a claim about what people need first, so treat it as something to test. Draw a second layout that the same evidence could also defend, then write what you would watch for to choose between them: who finds the action without help, who mistakes one action for another. Keeping both drawings is what lets a test change your mind cheaply.",
       "Labels carry more weight than the styling. “Submit” describes what the software does; “Book a place” describes what the person gets, and a person scanning for their outcome finds the second and not the first. Verb-first labels also make destructive actions honest: “Cancel booking” beside “Keep booking” is unambiguous, while “Yes” and “No” beside a question people did not read carefully is a trap.",
       "Target size is a physical property, not a style. A control that is comfortable with a mouse can be unreachable with a thumb on a moving bus, and a destructive action sitting next to a common one converts a slip into a loss. Give consequential actions space as well as size, and put distance between actions whose outcomes differ sharply.",
     ],
     misconception:
-      "“Make the important button a stronger colour.” Colour alone is the weakest available signal: it fails in greyscale, in sunlight, for some readers, and when your palette is later changed by someone else. Carry emphasis in weight, size and containment first, then add colour.",
+      "“Make the important button a stronger colour,” or “the main button should always be the biggest.” Colour alone is the weakest available signal: it fails in greyscale, in sunlight, for some readers, and when your palette is later changed by someone else. And which button is the important one is not fixed: it follows from this screen's task and the evidence. Decide the ranking first, carry it in weight, size and containment, then add colour.",
     example:
-      "A screen had two filled buttons of equal weight — “Book a place” and “Add to shortlist” — and a text link for “Cancel booking”. In greyscale the two filled buttons were indistinguishable, and in the m07 paper test one participant had tapped the shortlist button believing she had booked. The repair made booking the only filled action, shortlist an outlined secondary, and cancellation a quiet action moved away from both with its own confirmation. Targets were measured rather than eyeballed, and the destructive action was given clear separation from the primary one.",
+      "Made-up example: a class screen had two filled buttons of equal weight — “Book a place” and “Add to shortlist” — a small share icon in a corner, drawn on the assumption that sharing is rarely used, and a text link for “Cancel booking”. The made-up research said otherwise about sharing: 3 of 4 interviewees and the observed participant checked with someone before paying. In greyscale the two filled buttons were indistinguishable, and in the paper test one participant had tapped the shortlist button believing she had booked. The repair made booking the only filled action, raised sharing to an outlined secondary under it, made shortlist a quiet action, and moved cancellation away from all of them with its own confirmation. A second layout put sharing beside the price instead, and both were kept for a test. Targets were measured rather than eyeballed.",
     freeToolPath:
-      "Draw the three levels at real size on paper, photograph them and convert the photograph to greyscale on your phone. Measure targets with a ruler against your own screen; no plugin or tool is needed.",
+      "Draw the levels and both layouts at real size on paper, photograph them and convert the photograph to greyscale on your phone. Or edit copies of the m08 starter files in a free vector tool. Measure targets with a ruler against your own screen; no plugin or paid tool is needed.",
     outputs: [
+      "One screen’s actions ranked from its task and evidence, as two defensible layouts with the test that would choose between them",
       "Three action levels specified: primary, secondary and quiet",
       "A greyscale test showing the hierarchy still readable",
       "Measured target sizes and spacing for each level",
@@ -511,17 +515,19 @@ export const module8: Lesson[] = [
     steps: [
       {
         minutes: 20,
-        title: "Read and audit",
+        title: "Read, audit and state the task",
         instructions: [
           "Read the assigned button guidance and the law page on target size.",
+          "For one screen, write the task it exists for and the evidence about what people need there; use the supplied practice notes if you hold none.",
           "List every action across your screens and mark its current emphasis.",
           "Mark any screen carrying more than one primary action.",
         ],
       },
       {
         minutes: 30,
-        title: "Specify three levels",
+        title: "Rank, then specify three levels",
         instructions: [
+          "Rank that screen’s actions from its task and evidence, then draw a second layout the same evidence could also defend.",
           "Define primary, secondary and quiet with weight, size and containment.",
           "Make each level differ from the next in at least two properties.",
           "Add colour last, as reinforcement rather than as the signal.",
@@ -551,7 +557,8 @@ export const module8: Lesson[] = [
         instructions: [
           "Repair the worst greyscale failure by changing weight or containment.",
           "Record any screen you split because it had two primaries.",
-          "Save the specification with the greyscale evidence.",
+          "Write which of your two layouts you would test first, the task you would set and the result that would make you switch.",
+          "Save the specification with the greyscale evidence and both layouts.",
         ],
       },
     ],
@@ -562,9 +569,9 @@ export const module8: Lesson[] = [
           "Because a single property fails in ordinary conditions — greyscale, sunlight, colour-vision deficiency, a later palette change. Two properties keep the ranking readable when one is lost.",
       },
       {
-        question: "What does a screen with two primary actions usually mean?",
+        question: "What decides which action on a screen is the primary one?",
         answer:
-          "That it is doing two jobs. Deciding which job the screen is for, or splitting it, is the real fix; restyling one button hides the problem.",
+          "The task the screen exists for and the evidence about what people need there. The same share action can be a secondary on one screen and quiet on another; two equally loud actions usually mean the screen is doing two jobs.",
       },
       {
         question: "Why does “Submit” lose to “Book a place”?",
@@ -574,7 +581,7 @@ export const module8: Lesson[] = [
     ],
     rubric: [
       "Three levels differ in at least two properties each",
-      "One primary action per screen, or the screen was split",
+      "The ranking follows the screen’s task and evidence, with two layouts compared",
       "Labels lead with the verb of the outcome",
       "Targets and spacing are measured, not estimated",
     ],
@@ -594,18 +601,18 @@ export const module8: Lesson[] = [
         recheck: "The greyscale rendering and the revised specification.",
       },
       {
-        criterion: "One primary action per screen, or the screen was split",
+        criterion: "The ranking follows the screen’s task and evidence, with two layouts compared",
         evidence:
-          "A per-screen list showing a single primary, with any exception justified or resolved by splitting.",
+          "A stated task for one screen, the evidence used (your own notes, or the supplied practice notes labelled as supplied), a ranking with the reason for each placement, any two-primary screen resolved or split, and two defensible layouts with the test that would choose between them.",
         levels: [
-          "Multiple primaries left in place.",
-          "Identified but unresolved.",
-          "One primary per screen, or a recorded split.",
-          "As adequate, and a screen that resisted splitting is documented with the trade-off accepted.",
+          "Actions ranked by habit, colour or a general rule, with no task or evidence stated.",
+          "A task stated, but the ranking does not follow from evidence, or only one layout is considered.",
+          "The ranking follows the task and named evidence, and two defensible layouts are compared with a test that would choose.",
+          "As adequate, and the write-up names what evidence would reverse the ranking, such as notes showing people book alone.",
         ],
         remediation:
-          "For each screen with two primaries, write the two jobs it is doing. Then choose one or split the screen.",
-        recheck: "The per-screen list and any split.",
+          "Write the screen's task in one sentence and list the notes about what people need there. Rank the actions from those notes, then draw one more layout the same notes could defend.",
+        recheck: "The task, the evidence, both layouts and the test.",
       },
       {
         criterion: "Labels lead with the verb of the outcome",
@@ -638,7 +645,7 @@ export const module8: Lesson[] = [
     ],
     repairs: [
       "If ranking fails in greyscale, change weight or containment, not colour.",
-      "If a screen has two primaries, name its two jobs and split or choose.",
+      "If the ranking rests on a rule rather than the task and evidence, restate the task, re-rank and draw a second layout.",
       "If a label is Submit, OK, Yes or No, rewrite it as the outcome.",
       "If targets were eyeballed, measure them at phone size and record the values.",
     ],
