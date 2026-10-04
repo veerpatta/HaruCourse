@@ -857,7 +857,7 @@ export const module18: Lesson[] = [
     bringForward:
       "Your m06 to m13 methods, your design system and your token sheet.",
     prerequisite: "Your framed problem and design system.",
-    why: "A third project is where your accumulated methods and system meet an unfamiliar domain, which is the real test of both.",
+    why: "An independent project is where your accumulated methods and system meet an unfamiliar domain, which is the real test of both.",
     teach: [
       "Reuse your system; record where it does not fit this domain.",
       "Structure, flow and states before interface, as before.",
@@ -2040,13 +2040,13 @@ export const module18: Lesson[] = [
       "Choose one thing to change in the next project.",
     ],
     explanation: [
-      "Comparing outcomes is misleading because the projects had different problems and different access. Comparing process is not: did you write the exclusions before fieldwork this time? Did the repair loop close? Did you record deviations? Those are the same questions across all three.",
+      "Comparing outcomes is misleading because the projects had different problems and different access. Comparing process is not: did you write the exclusions before fieldwork this time? Did the repair loop close? Did you record deviations? Those are the same questions across every project.",
       "Naming the evidence for an improvement keeps you honest. “My research got better” is an impression; “in project one I wrote no exclusions, in project three I wrote them before fieldwork and the report used them” is a fact you can point at.",
       "The thing that did not improve is the more useful half. If you still cut the accessibility pass under time pressure in every project, that is a pattern rather than an accident — twice for the same reason is already one — and it will follow you into paid work unless you name it.",
       "Improvement comes from habits, not from intentions. If the write-up quality improved, it was probably because you started writing within the hour, and that habit is what transfers. Naming the mechanism is what lets you keep it.",
     ],
     misconception:
-      "“The third project is better because it looks better.” Presentation improves fastest and means least. The question is whether the process held under pressure, and that is visible only in the records.",
+      "“The latest project is better because it looks better.” Presentation improves fastest and means least. The question is whether the process held under pressure, and that is visible only in the records.",
     example:
       "Two projects, on the core path: Project 1 and the independent project. Improved: exclusions written before fieldwork in the independent project and not in Project 1, and its report used them directly. Improved: the repair loop closed with a re-test this time; in Project 1 there was no re-test at all. Not improved: the screen-reader pass was skipped in both, each time for time, which is a pattern rather than two accidents. Habit responsible for the first improvement: writing the plan in a fixed order that puts exclusions before recruitment. Next project: schedule the accessibility pass as a dated task before the build starts, because leaving it until the end has now failed twice. A learner who also did Project 2 asks the same questions of three.",
     freeToolPath: "Your own records and one page of writing.",
@@ -2093,7 +2093,7 @@ export const module18: Lesson[] = [
         minutes: 15,
         title: "File the retrospective",
         instructions: [
-          "Save it with the three projects.",
+          "Save it with your projects.",
           "Note the date so the next retrospective can compare.",
         ],
       },
@@ -2160,7 +2160,7 @@ export const module18: Lesson[] = [
           "As adequate, and it is addressed in the next-project change.",
         ],
         remediation:
-          "Look for what is missing from all three records and write it down.",
+          "Look for what is missing from every project's records and write it down.",
         recheck: "The failure statement.",
       },
       {
