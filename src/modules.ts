@@ -229,7 +229,7 @@ export const modules = [
     primary: "R19",
     alternative: "R22",
     output:
-      "End-to-end third project with critique, repair and measured limitations",
+      "Independent project with critique, repair, a privacy and access-control stop gate, and stated limits",
     status: "published",
   },
   {
@@ -241,7 +241,7 @@ export const modules = [
     areas: [17],
     primary: "R22",
     alternative: "R23",
-    output: "Three evidence-based case studies and presentation",
+    output: "Two or three evidence-based case studies (the first started after Project 1) and a presentation",
     status: "published",
   },
   {

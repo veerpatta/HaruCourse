@@ -27,12 +27,14 @@ const examples: Record<string, Tool[]> = {
 // download list cannot drift apart.
 const fileNotes: Record<string, Omit<StarterFile, "href">> = {
   "/starters/m08/booking-screen-starter.svg": { label: "Editable booking screen (SVG)", note: "A mid-fidelity 390 × 844 screen with named groups. Open it in a free vector tool such as Inkscape or Penpot, or in a text editor. Duplicate it before editing." },
+  "/starters/m19/case-study-template.html": { label: "Case-study template (HTML)", note: "An editable, accessible template with the nine case-study sections and evidence labels. Print and choose Save as PDF for a private copy to check on your phone." },
+  "/starters/m19/annotated-example.html": { label: "Annotated example case study", note: "A short, clearly fictional case study whose margin notes explain why each part is credible, with one weak claim and its repair." },
   "/starters/m08/hierarchy-before-after.svg": { label: "Annotated before and after (SVG)", note: "Two versions of the same screen with numbered notes; the text of every note is also in the lesson's practice notes." },
 };
 const referenced = new Map<string, StarterFile[]>();
 export function starterFilesFor(lesson: Lesson): StarterFile[] {
   if (!referenced.has(lesson.id)) {
-    const hrefs = [...new Set((JSON.stringify(lesson).match(/\/(?:starters|labs)\/[a-z0-9/._-]+?\.(?:html|svg|css|js|txt)/gi) || []))];
+    const hrefs = [...new Set((JSON.stringify(lesson).match(/\b(?:starters|labs)\/[a-z0-9/._-]+?\.(?:html|svg|css|js|txt)/gi) || []).map((h) => "/" + h))];
     referenced.set(lesson.id, hrefs.map((href) => ({ href, ...(fileNotes[href] || { label: href.split("/").pop()!, note: href.startsWith("/labs/") ? "A practice page that works offline. Open it in a new tab." : "A starter file that works offline. Save a copy before editing." }) })));
   }
   return referenced.get(lesson.id)!;
