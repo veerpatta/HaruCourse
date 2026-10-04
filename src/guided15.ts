@@ -941,8 +941,8 @@ export const guided15: Record<string, Guided> = {
     route: textRoute,
     worksheet: [
       { id: 'pair', title: 'One count and one observation', fields: [
-        { id: 'quantitative', label: 'The count, and what it says on its own', kind: 'long', hint: 'From your funnel, your provider’s records, or anything you can count. Say if it is synthetic.' },
-        { id: 'qualitative', label: 'The observation, and what it says on its own', kind: 'long', hint: 'From your own sessions. One person doing one thing, described as what they did rather than what it means.' },
+        { id: 'quantitative', label: 'The count, its denominator and source, and what it says on its own', kind: 'long', hint: 'A real count from a provider’s records, a support inbox or a hand count, with what it is out of. A synthetic count, such as your practice funnel, can rehearse the pairing but cannot confirm, locate or size anything real: if yours is synthetic or supplied, say so and treat the whole pairing as practice.' },
+        { id: 'qualitative', label: 'The observation, as a de-identified summary, and what it says on its own', kind: 'long', sensitive: true, hint: 'From your own consented sessions, or the supplied practice observation labelled as such. One person doing one thing, described as what they did rather than what it means, with no name or identifying detail; raw notes stay in your own private file with a deletion date.' },
         { id: 'same-behaviour', label: 'How you know they are about the same behaviour', kind: 'short' },
       ] },
       { id: 'gaps', title: 'What neither can tell you', fields: [
@@ -955,7 +955,7 @@ export const guided15: Record<string, Guided> = {
         { id: 'which-supports', label: 'Which part of the evidence supports which part of the change', kind: 'long' },
       ] },
       { id: 'contradiction', title: 'Where they disagree', fields: [
-        { id: 'contradiction-found', label: 'Any respect in which the two disagree', kind: 'long', hint: 'Keep it. A contradiction is a finding, not an error to be resolved by picking the number.' },
+        { id: 'contradiction-found', label: 'Any respect in which the two disagree', kind: 'long', sensitive: true, hint: 'Keep it. A contradiction is a finding, not an error to be resolved by picking the number. Describe the observation side without identifying anybody.' },
         { id: 'what-would-explain', label: 'What would explain the disagreement', kind: 'long' },
       ] },
       { id: 'record', title: 'Record', fields: [
@@ -981,15 +981,15 @@ export const guided15: Record<string, Guided> = {
         demo: {
           scenario: 'Made-up example. Pairing a count and an observation at a tool library, and dismissing the one with fewer people in it.',
           beats: [
-            { label: 'What I had', text: 'A synthetic funnel showing the largest drop between opening a tool and starting a booking. And one session where somebody checked the price twice against a screenshot from a friend.' },
-            { label: 'What I did with the observation', text: 'Set it aside. One person, one session, and the funnel was about everybody. The count felt like the serious evidence.' },
-            { label: 'What the count alone produced', text: 'A plan to redesign the booking button, because that is what sits at the step where people stop. Two weeks of work aimed at the nearest visible thing.' },
-            { label: 'What the observation supplied', text: 'A mechanism: the price shown on the listing did not match the price at the next step, so she went back to check. The button was never the problem.' },
-            { label: 'What the two together produced', text: 'Show the same price in both places, earlier. The count said it was worth doing, the observation said what to do, and neither would have produced it alone.' },
+            { label: 'What I had', text: 'A real count: 14 messages in the library’s support inbox in March asking whether a price had changed between the listing and the booking form, out of 380 bookings that month. And one session where somebody checked the price twice against a screenshot from a friend.' },
+            { label: 'What I nearly used instead', text: 'My synthetic practice funnel, which happened to show a steep drop at the same step. It was invented to practise arithmetic, so it could not confirm anything about real people. I left it out of the evidence.' },
+            { label: 'What I did with the observation', text: 'Set it aside at first. One person, one session, and the inbox count was about everybody. The count felt like the serious evidence.' },
+            { label: 'What the observation supplied', text: 'A mechanism: the price shown on the listing did not match the price at the next step, so she went back to check. The count alone had pointed me at redesigning the booking button.' },
+            { label: 'What the two together produced', text: 'Show the same price in both places, earlier. The count said the confusion reaches more than one person; the observation said what to change; neither would have produced it alone.' },
           ],
-          wrongTurn: 'The wrong turn is ranking the evidence by how many people are in it, because that is the obvious comparison and it is the wrong axis. A count with no mechanism produces a redesign of whatever is nearest the drop.',
-          tradeoff: 'Acting on one observation means acting on a mechanism you have seen once, and it may be rare. The count is what says the area is worth the work.',
-          uncertainty: 'Still unknown: how many people meet the price mismatch. One person did; the funnel cannot see the reason; and the change is cheap enough that the pair is enough to justify it.',
+          wrongTurn: 'The wrong turn is ranking the evidence by how many people are in it, because that is the obvious comparison and it is the wrong axis. A count with no mechanism produces a redesign of whatever is nearest the problem; and a synthetic count is not evidence at all.',
+          tradeoff: 'Acting on one observation means acting on a mechanism you have seen once. The inbox count says the area is worth the work; it cannot say every one of the 14 messages had the same cause.',
+          uncertainty: 'Still unknown: how many people meet the price mismatch without writing in. Fourteen wrote; the inbox cannot see the rest, and the change is cheap enough that the pair justifies trying it.',
         },
         start: 'Write what each one cannot tell you before writing anything about what they mean together.',
         enough: 'The two gaps are genuinely different: one about why, one about how many.' },
@@ -1052,9 +1052,9 @@ export const guided15: Record<string, Guided> = {
         demo: {
           scenario: 'Made-up example. Finding a disagreement between a tool-library count and an observation, and explaining it away.',
           beats: [
-            { label: 'The disagreement', text: 'The records show eleven duplicate payments in March. In three sessions, all three people said they would have paid again if they were not being watched, and none of them did.' },
+            { label: 'The disagreement', text: 'The provider’s records show eleven duplicate payments among 412 bookings in March, under 3 in 100. In three sessions, all three people said that at home they would have paid again when the screen gave no confirmation.' },
             { label: 'What I wrote at first', text: 'That the sessions were unrepresentative, and eleven is the real number. It resolved the disagreement and let me move on.' },
-            { label: 'What that discarded', text: 'The most interesting thing in the study. Three of three saying they would have paid again, against eleven recorded, suggests the records are not counting everybody it happens to.' },
+            { label: 'What that discarded', text: 'The most interesting thing in the study. Three of three saying they would pay again, against under 3 in 100 recorded, could mean the records miss some second payments, or that what people say they would do differs from what they do. Both are worth knowing.' },
             { label: 'What would explain it', text: 'A second payment made on a different card, or by somebody ringing the library, would not appear as a duplicate in the provider’s records at all.' },
             { label: 'What I did', text: 'Kept both, wrote the possible explanation, and added one question to the next three sessions: what did you actually do next? The count may be an undercount, which is a finding neither method produced alone.' },
           ],
@@ -1077,19 +1077,19 @@ export const guided15: Record<string, Guided> = {
       {
         question: 'Is quantitative evidence more objective?',
         options: [
-          { label: 'It is more precise about different things. A precisely counted event whose cause nobody understands is not more objective than three careful observations of why it happens.', correct: true, feedback: 'Counting is precise about scale and location. Watching is precise about mechanism. Treating one as the serious evidence produces decisions with a predictable shape of error.' },
-          { label: 'Yes, since it does not depend on interpretation.', feedback: 'What to count, who to include and what period all depend on judgement, as the previous lesson showed.' },
-          { label: 'Yes, when the sample is large enough.', feedback: 'A large sample makes the count reliable. It does not make it say anything about why.' },
+          { label: 'It is precise about different things: how many and where, not why.', correct: true, feedback: 'A precisely counted event whose cause nobody understands is not more objective than three careful observations of why it happens. Counting is precise about scale and location; watching is precise about mechanism.', was: ['It is more precise about different things. A precisely counted event whose cause nobody understands is not more objective than three careful observations of why it happens.'] },
+          { label: 'It is, since a count does not depend on anybody’s interpretation.', feedback: 'What to count, who to include and what period all depend on judgement, as the previous lesson showed.', was: ['Yes, since it does not depend on interpretation.'] },
+          { label: 'It is, once the sample behind it is large enough to trust.', feedback: 'A large sample makes the count reliable. It does not make it say anything about why.', was: ['Yes, when the sample is large enough.'] },
         ],
         repair: 'Write what the count cannot tell you in step 2, in the same detail as what it can. Record the change in step 5.',
         recheck: 'Both gaps are written out, and they are different gaps.',
       },
       {
-        question: 'Your funnel shows where people stop, and you have no observations. What is likely to happen?',
+        question: 'A funnel built from real counts shows where people stop, and you have no observations. What is likely to happen?',
         options: [
-          { label: 'You will redesign whatever is nearest the drop, because the count gives no mechanism and something has to be chosen.', correct: true, feedback: 'A drop at the booking step produces a redesigned booking button, when the cause may be a price shown differently two screens earlier. The count locates; only watching explains.' },
-          { label: 'You will make a reasonable guess, which is usually fine.', feedback: 'The guess is usually the nearest visible element, which is the one the count happens to point at.' },
-          { label: 'You will need a larger sample before deciding.', feedback: 'More of the same kind of evidence does not supply a mechanism.' },
+          { label: 'Whatever sits nearest the drop gets redesigned, since nothing says why.', correct: true, feedback: 'A drop at the booking step produces a redesigned booking button, when the cause may be a price shown differently two screens earlier. The count locates; watching and asking explain.', was: ['You will redesign whatever is nearest the drop, because the count gives no mechanism and something has to be chosen.'] },
+          { label: 'A reasonable guess gets made, which usually turns out fine.', feedback: 'The guess is usually the nearest visible element, which is the one the count happens to point at.', was: ['You will make a reasonable guess, which is usually fine.'] },
+          { label: 'A larger sample of the same counts is needed first.', feedback: 'More of the same kind of evidence does not supply a mechanism.', was: ['You will need a larger sample before deciding.'] },
         ],
         repair: 'Pair your count with an observation in step 1, or write plainly that you have none and what you would watch. Record the change in step 5.',
         recheck: 'Your proposal rests on something more than where the drop is.',
@@ -1097,14 +1097,28 @@ export const guided15: Record<string, Guided> = {
       {
         question: 'Your count and your observation disagree. What should you do?',
         options: [
-          { label: 'Keep both and write what would explain the disagreement. A contradiction is a finding rather than an error.', correct: true, feedback: 'Resolving it by picking the number discards the more interesting half. The explanation is usually about who each method saw: the count includes people the session never reached.' },
-          { label: 'Trust the count, since it covers more people.', feedback: 'It covers more people and says nothing about why. The disagreement may be exactly where the mechanism lives.' },
-          { label: 'Trust the observation, since you watched it happen.', feedback: 'You watched it happen once. The count may be telling you it is rare.' },
+          { label: 'Keep both, and write what could explain why they disagree.', correct: true, feedback: 'A contradiction is a finding rather than an error. Resolving it by picking the number discards the more interesting half. The explanation is often about who each method saw, or about saying versus doing.', was: ['Keep both and write what would explain the disagreement. A contradiction is a finding rather than an error.'] },
+          { label: 'Trust the count, since it covers far more people.', feedback: 'It covers more people and says nothing about why. The disagreement may be exactly where the mechanism lives.', was: ['Trust the count, since it covers more people.'] },
+          { label: 'Trust the observation, since you saw it happen.', feedback: 'You watched it happen once. The count may be telling you it is rare.', was: ['Trust the observation, since you watched it happen.'] },
         ],
         repair: 'Write the contradiction and a possible explanation in step 4 rather than resolving it. Record the change in step 5.',
         recheck: 'Your record keeps both findings, including the inconvenient one.',
       },
     ],
+    material: [
+      'Practice notes (made up, for anyone without their own consented observation). Count: the tool library’s support inbox held 14 messages in March asking whether a price had changed between the listing and the booking form; 380 bookings were made that month.',
+      'Practice notes (made up). Observation: in one session, a participant opened a tool page, went back to the listing twice to compare its price with a screenshot a friend had sent, and only then started a booking.',
+      'Both notes are invented. Pairing them rehearses the method and shows nothing about a real product; label any answer built on them as practice.',
+    ],
+    transfer: {
+      scenario: 'Made-up case: a council’s garden-waste renewal form. The council’s own records show 230 of 1,900 renewals in May were abandoned at the payment step. In a session, one resident said she stopped because she could not tell whether the fee covered one bin or two, and went to find last year’s letter.',
+      prompt: 'Say what the count tells you that the observation cannot, and what the observation tells you that the count cannot, then propose one change that needs both and explain why.',
+      anchors: {
+        weak: 'Trusts the count and dismisses the one resident, or treats one resident as proof of why all 230 left.',
+        adequate: 'Count: how many and where (230 of 1,900, at payment). Observation: a possible mechanism (unclear whether the fee covers one bin or two). Change: state what the fee covers before payment, traced to both.',
+        strong: 'As adequate, and notes the count cannot say how many share her reason, plans a way to check (ask a few more residents, or count related enquiries), and keeps any disagreement rather than resolving it.',
+      },
+    },
     saveRoute: {
       auto: 'Your paired findings, the gaps, the proposal and any contradiction save as you type, on this device first and then online.',
       external: 'Session notes stay in your own private folder. Nothing identifying anybody belongs in this worksheet.',
@@ -1252,9 +1266,9 @@ export const guided15: Record<string, Guided> = {
       {
         question: 'Somebody suggests collecting everything now and deciding what you need later. What is wrong with that?',
         options: [
-          { label: 'Later never arrives, and in the meantime you hold data you cannot justify, cannot confidently delete and must protect.', correct: true, feedback: 'Without a purpose written against each event, nobody can tell whether anybody is using it, so nothing is ever removed. Deciding first is cheaper and safer.' },
-          { label: 'Nothing, provided the data is kept secure.', feedback: 'Security is the obligation it creates. The question is whether the obligation was worth taking on.' },
-          { label: 'It is only a problem for personal data.', feedback: 'Free text and cross-session identifiers become personal data whether or not anybody planned for them to.' },
+          { label: 'Later rarely comes, and meanwhile you hold data you cannot justify or delete.', correct: true, feedback: 'Without a purpose written against each event, nobody can tell whether anybody is using it, so nothing is removed, and all of it must be protected. Deciding first is cheaper and safer.', was: ['Later never arrives, and in the meantime you hold data you cannot justify, cannot confidently delete and must protect.'] },
+          { label: 'Nothing serious, provided all of the data is kept properly secure.', feedback: 'Security is the obligation it creates. The question is whether the obligation was worth taking on.', was: ['Nothing, provided the data is kept secure.'] },
+          { label: 'It only matters for data that is obviously personal, like names.', feedback: 'Free text and cross-session identifiers become personal data whether or not anybody planned for them to.', was: ['It is only a problem for personal data.'] },
         ],
         repair: 'Discard any event in step 1 that cannot name the question it answers, and record the change in step 5.',
         recheck: 'Every event on your list has a question behind it.',
@@ -1262,9 +1276,9 @@ export const guided15: Record<string, Guided> = {
       {
         question: 'You want to record the full text people type into the search box. What is the test?',
         options: [
-          { label: 'What question it answers, and whether that answer justifies holding whatever anybody types.', correct: true, feedback: 'People type names, addresses and all sorts into search boxes. Whether a search returned results answers most of the same question and holds none of the content.' },
-          { label: 'Whether the data is stored securely.', feedback: 'Storing it securely is required and does not address whether it should be held.' },
-          { label: 'Whether people have consented.', feedback: 'Consent is necessary in many places and it does not make an unjustified collection justified.' },
+          { label: 'Which question it answers, and whether that justifies holding what people type.', correct: true, feedback: 'People type names, addresses and all sorts into search boxes. Whether a search returned results answers most of the same question and holds none of the content.', was: ['What question it answers, and whether that answer justifies holding whatever anybody types.'] },
+          { label: 'Whether the typed text will be stored securely and encrypted.', feedback: 'Storing it securely is required and does not address whether it should be held.', was: ['Whether the data is stored securely.'] },
+          { label: 'Whether people have agreed to it in the site’s privacy notice.', feedback: 'Consent is necessary in many places and it does not make an unjustified collection justified.', was: ['Whether people have consented.'] },
         ],
         repair: 'Write the reduced version of one risky event in step 4 and say what question it still answers. Record the change in step 5.',
         recheck: 'Every risky event is either refused or reduced, with a reason.',
@@ -1272,14 +1286,23 @@ export const guided15: Record<string, Guided> = {
       {
         question: 'Your plan sets a ninety-day retention period. Is that enough?',
         options: [
-          { label: 'Only with a deletion mechanism. A period with nothing that actually removes the data is a wish.', correct: true, feedback: 'Data outlives intentions. Saying what deletes it, and who is responsible, is what turns the period into a property of the system rather than a paragraph in a document.' },
-          { label: 'Yes, since the period is documented.', feedback: 'Documented periods are commonly exceeded by years, because nothing enforces them.' },
-          { label: 'Yes, ninety days is a reasonable default.', feedback: 'The length may well be right. What is missing is what happens on day ninety-one.' },
+          { label: 'Only with something that actually deletes the data on day ninety-one.', correct: true, feedback: 'Data outlives intentions. Saying what deletes it, and who is responsible, is what turns the period into a property of the system rather than a paragraph in a document.', was: ['Only with a deletion mechanism. A period with nothing that actually removes the data is a wish.'] },
+          { label: 'It is, since the period is written down in the plan for all to see.', feedback: 'Documented periods are commonly exceeded by years, because nothing enforces them.', was: ['Yes, since the period is documented.'] },
+          { label: 'It is, because ninety days is a reasonable default for this data.', feedback: 'The length may well be right. What is missing is what happens on day ninety-one.', was: ['Yes, ninety days is a reasonable default.'] },
         ],
         repair: 'Add the deletion mechanism and the owner to each event in step 2, and record the change in step 5.',
         recheck: 'Every retention period names what removes the data.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a community choir’s new website will let people sign up for open rehearsals. A volunteer proposes recording each visitor’s full sign-up form, the free-text “anything we should know?” box, their precise location and a permanent identifier across visits, “in case it is useful later”. The only question the choir has asked is whether open rehearsals bring in new members.',
+      prompt: 'Decide what to collect, what to reduce and what to refuse, and explain one refusal in terms of the question it would answer.',
+      anchors: {
+        weak: 'Collects everything “just in case”, or refuses everything by instinct without naming a question.',
+        adequate: 'Collects that a sign-up happened and whether the person later joined, refuses or reduces the free text and precise location with reasons tied to the one question, and sets a retention period with a deletion mechanism.',
+        strong: 'As adequate, and reduces the permanent identifier to something that expires once the joining question is answered, and notes that the legal requirements where the choir operates have not been checked.',
+      },
+    },
     saveRoute: {
       auto: 'Your event list, purposes, retention periods, refusals and reductions save as you type, on this device first and then online.',
       external: 'Nothing about real people belongs in this worksheet. The plan describes what would be collected, not any collected data.',
