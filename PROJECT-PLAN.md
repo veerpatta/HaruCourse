@@ -1,3 +1,7 @@
+## Current milestone — improvement plan implemented, learner validation next (5 October 2026)
+
+Phases 1–4 of the improvement plan are implemented for all 224 lessons (content corrections, beginner pattern, core path, module batches); phase 5 automated, backend and emulated browser checks pass. Next, in order: (1) observe Haru and, where practical, 3–5 non-technical designers with [the pilot script](docs/PILOT-TEST-SCRIPT.md); (2) independent product-design review of the corrected lessons, starting with the core path; (3) physical iOS/Android, keyboard and screen-reader task tests including the Module 11 lab; (4) fix blockers and re-score the rubric in [the verification record](docs/VERIFICATION-IMPROVEMENT-PLAN.md). Do not expand content until the pilot gate is met.
+
 ## Current planning milestone — beginner understanding, 13 September 2026
 
 Deliver a Markdown-only researched plan responding to reported beginner confusion. The [main plan](docs/BEGINNER-EXPERIENCE-PLAN.md) owns scope, priorities, phases, acceptance gates and rollback; [the all-lesson map](docs/BEGINNER-LESSON-PLAN.md) covers 224 stable teaching IDs; [the AI activity guide](docs/AI-LEARNING-ACTIVITIES.md) supplies bounded learning conversations; [research notes](docs/BEGINNER-RESEARCH.md) distinguish inspected material from unverified workflows.
