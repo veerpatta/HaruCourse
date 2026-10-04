@@ -1157,10 +1157,10 @@ const synthesis: Guided = {
     ] },
     { id: 'extract', title: 'One observation per line', intro: 'Give each a number so a finding can point back to it. Six is plenty.', fields: [
       ...[1, 2, 3, 4, 5, 6].flatMap((n) => [
-        { id: `note-${n}`, label: `N0${n} · what happened`, kind: 'long' as const,
-          ...(n === 1 ? { hint: 'One thing only. If a line contains “because” or “so”, the second half is probably an interpretation.', example: 'Example (made up, from the supplied notes): S1 looked for the materials list the evening before the class.' } : {}) },
+        { id: `note-${n}`, label: `N0${n} · what happened`, kind: 'long' as const, sensitive: true as const,
+          ...(n === 1 ? { hint: 'One thing only. If a line contains “because” or “so”, the second half is probably an interpretation. From your own session, write a de-identified one-line summary; raw notes stay in a private file or on paper with a date to delete them.', example: 'Example (made up, from the supplied notes): S1 looked for the materials list the evening before the class.' } : {}) },
         { id: `note-${n}-source`, label: `N0${n} · source`, kind: 'short' as const,
-          ...(n === 1 ? { hint: 'The session or supplied note it came from: S1, S2, or your own anonymous ID.' } : {}) },
+          ...(n === 1 ? { hint: 'The session or supplied note it came from: S1, S2, or a code you made up for your own session. Never a name.' } : {}) },
       ]),
     ] },
     { id: 'group', title: 'Two possible patterns', fields: [
@@ -1168,12 +1168,12 @@ const synthesis: Guided = {
       { id: 'group-1-notes', label: 'Group 1 · the note numbers in it', kind: 'short' },
       { id: 'group-2', label: 'Group 2 · a name for the pattern', kind: 'short' },
       { id: 'group-2-notes', label: 'Group 2 · the note numbers in it', kind: 'short' },
-      { id: 'contradiction', label: 'The note that does not fit either group', kind: 'long', hint: 'Keep it. The exception is usually where the real finding is.', example: 'Example (made up): S4 noticed the list before booking and borrowed an item, which contradicts “nobody reads instructions”.' },
+      { id: 'contradiction', label: 'The note that does not fit either group', kind: 'long', sensitive: true, hint: 'Keep it, by its note number and a short de-identified summary. The exception is often where the real finding is.', example: 'Example (made up): S4 noticed the list before booking and borrowed an item, which contradicts “nobody reads instructions”.' },
     ] },
     { id: 'findings', title: 'Two findings you could defend', fields: [
       { id: 'finding-1', label: 'Finding 1', kind: 'long' },
       { id: 'finding-1-support', label: 'Finding 1 · note numbers that support it', kind: 'short' },
-      { id: 'finding-1-against', label: 'Finding 1 · what argues against it', kind: 'short', hint: 'If nothing does, look again; you may have written a summary rather than a finding.' },
+      { id: 'finding-1-against', label: 'Finding 1 · what argues against it', kind: 'short', hint: 'Name the note numbers and say in a few words why they argue against it. If nothing does, look again; you may have written a summary rather than a finding.' },
       { id: 'finding-1-confidence', label: 'Finding 1 · how sure are you?', kind: 'choice', options: ['One account only', 'Two or more accounts agree', 'Accounts disagree'] },
       { id: 'finding-2', label: 'Finding 2', kind: 'long' },
       { id: 'finding-2-support', label: 'Finding 2 · note numbers that support it', kind: 'short' },
@@ -1183,7 +1183,7 @@ const synthesis: Guided = {
     ] },
     { id: 'implication', title: 'One thing this might mean for the design', fields: [
       { id: 'implication', label: 'A possible design implication', kind: 'long', hint: 'Possible. It follows from a finding; it is not proven by it.' },
-      { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
+      { id: 'improvement-made', label: 'What you changed after the Check questions, or why no change was needed', kind: 'long' },
     ] },
   ],
   guide: [
@@ -1216,7 +1216,7 @@ const synthesis: Guided = {
         { term: 'Simulated training data', meaning: 'Practice notes supplied by this course. Useful for learning the method; never presentable as research you did.' },
         { term: 'Note ID', meaning: 'A number so a finding can point at its source. Without it, findings float free.' },
       ],
-      start: 'If you have no session of your own, choose the supplied notes and expand the four S1 to S4 lines into separate entries.',
+      start: 'If you have no session of your own, choose the supplied notes and copy N01 to N06 into separate entries, keeping each S label.',
       enough: 'Every entry could be checked against a source, and none contains the word because.' },
     { demo: { scenario: 'Made-up example. Grouping six practice notes, where the first two groups were sorted by the words inside them.', beats: [{ label: 'My first two groups', text: '“Email” and “Website”. Every note that mentioned an email went into one pile and the rest went into the other.' }, { label: 'Why it felt right', text: 'Each note went somewhere at once and nothing was left over. It looked finished in about a minute.' }, { label: 'What was wrong with it', text: 'Email is where the note happened, not what happened. S2 searching on the journey and S4 reading the list before booking are two places and one behaviour.' }, { label: 'The names I ended with', text: '“Preparing at the last moment” and “Preparing before committing”. Names I could turn out to be wrong about, which is what a group name is for.' }, { label: 'The note that would not go in', text: 'S3 brought supplies from an earlier class and checked nothing. It sits outside both groups, written down, and it is the one I keep coming back to.' }], wrongTurn: 'The wrong turn is grouping by the word that appears in the note. It sorts everything quickly, it never leaves an awkward note over, and it describes your filing rather than the people.', tradeoff: 'A group named after a pattern can be wrong, and somebody can say so in front of you. Tidy topic piles cannot be argued with, which is exactly why they teach you nothing.', uncertainty: 'Still unknown: whether “preparing before committing” is one behaviour or two. Four accounts cannot separate them, and the name stays a guess.' }, expect: 'Two named groups with their note numbers, and the note that refuses to fit.',
       fields: ['group-1', 'group-1-notes', 'group-2', 'group-2-notes', 'contradiction'],
@@ -1229,10 +1229,10 @@ const synthesis: Guided = {
         material: 'Supplied practice notes. S1 looked for the materials list the evening before. S2 searched the confirmation email on the journey. S3 brought supplies from a previous class without checking. S4 noticed the list before booking and borrowed an item.',
         question: 'Which finding do these four notes actually support?',
         options: [
-          { label: 'People prepare at different moments, from before booking to the journey itself, so no single moment can be assumed.', correct: true, feedback: 'It holds all four accounts, including S3 who did not check at all, and it says something a design has to answer: the information cannot live at one moment only.' },
-          { label: 'Nobody reads the instructions before a class.', feedback: 'S4 read them before booking. One counter-example is enough to sink a claim written as “nobody”, and it was in front of you.' },
-          { label: 'People want a reminder the day before the class.', feedback: 'Nobody said this. It is a recommendation dressed as a finding, and it fits only two of the four accounts.' },
-          { label: 'Most people prepare at the last minute.', feedback: 'Two of four is not “most”, and four accounts cannot establish proportions at all. The word most is doing work the evidence cannot support.' },
+          { label: 'These four checked at different moments, or not at all, so no single moment can be assumed.', correct: true, was: ['People prepare at different moments, from before booking to the journey itself, so no single moment can be assumed.'], feedback: 'It holds all four accounts, including S3 who did not check at all, and it says something a design has to answer: the information cannot live at one moment only.' },
+          { label: 'Nobody reads the instructions before a class, so the list has to arrive later on.', was: ['Nobody reads the instructions before a class.'], feedback: 'S4 read them before booking. One counter-example is enough to sink a claim written as “nobody”, and it was in front of you.' },
+          { label: 'People want a reminder the day before the class, sent straight to their phone.', was: ['People want a reminder the day before the class.'], feedback: 'Nobody said this. It is a recommendation dressed as a finding, and it fits only two of the four accounts.' },
+          { label: 'Most people prepare at the last minute, usually on the way to the class itself.', was: ['Most people prepare at the last minute.'], feedback: 'Two of four is not “most”, and four accounts cannot establish proportions at all. The word most is doing work the evidence cannot support.' },
         ],
         then: 'Write your own two findings the same way: they must survive every note you have, including the one that did not fit.',
       },
@@ -1250,8 +1250,8 @@ const synthesis: Guided = {
       options: [
         { label: 'S2 searched the confirmation email during the journey.', correct: true, feedback: 'It says what happened and nothing about why. Anyone reading it can check it against the source note.' },
         { label: 'S2 was disorganised about preparing for the class.', feedback: 'That is a judgement about a person. It cannot be checked, and it will quietly become the reason for a design decision later.' },
-        { label: 'Add a reminder the day before.', feedback: 'A recommendation, and the furthest thing from an observation. It belongs at the end, attached to a finding with sources.' },
-        { label: 'People prepare at the last minute.', feedback: 'A finding, and a shaky one. It generalises several notes into a claim about people, which is a later step and needs its counter-evidence.' },
+        { label: 'Send a reminder the day before the class starts.', was: ['Add a reminder the day before.'], feedback: 'A recommendation, and the furthest thing from an observation. It belongs at the end, attached to a finding with sources.' },
+        { label: 'People prepare for classes at the last minute.', was: ['People prepare at the last minute.'], feedback: 'A finding, and a shaky one. It generalises several notes into a claim about people, which is a later step and needs its counter-evidence.' },
       ],
       repair: 'Reread your six entries in step 2. Move anything containing because, wanted, or a judgement about the person into an interpretation or a finding, then record the change in step 5.',
       recheck: 'Every entry describes what happened and could be traced to its source.',
@@ -1259,10 +1259,10 @@ const synthesis: Guided = {
     {
       question: 'Five notes support your finding and one contradicts it. What do you do with the sixth?',
       options: [
-        { label: 'Keep it visible beside the finding and say what it means for your confidence.', correct: true, feedback: 'The exception is where you learn something. Hiding it makes the finding look stronger and makes you worse at predicting what happens next.' },
-        { label: 'Leave it out: five against one is a clear pattern.', feedback: 'Counting notes is not measuring. With six accounts, one clear counter-example matters more than the tally.' },
-        { label: 'Change the finding until everything agrees.', feedback: 'That usually produces something so vague it cannot be wrong. Better to keep a sharp finding and state where it fails.' },
-        { label: 'Start again with different groups.', feedback: 'Regrouping to escape a contradiction is how you end up with tidy findings nobody can use.' },
+        { label: 'Keep it beside the finding and say what it does to your confidence.', correct: true, was: ['Keep it visible beside the finding and say what it means for your confidence.'], feedback: 'The exception is where you learn something. Hiding it makes the finding look stronger and makes you worse at predicting what happens next.' },
+        { label: 'Leave it out of the finding, since five against one is already a clear pattern.', was: ['Leave it out: five against one is a clear pattern.'], feedback: 'Counting notes is not measuring. With six accounts, one clear counter-example matters more than the tally.' },
+        { label: 'Reword the finding until every one of the six notes agrees with it.', was: ['Change the finding until everything agrees.'], feedback: 'That usually produces something so vague it cannot be wrong. Better to keep a sharp finding and state where it fails.' },
+        { label: 'Start the grouping again with different groups so that it fits.', was: ['Start again with different groups.'], feedback: 'Regrouping to escape a contradiction is how you end up with tidy findings nobody can use.' },
       ],
       repair: 'Check the counter-evidence boxes in step 4. If either says none, look again for the note that does not fit and write it in, then say what changed in step 5.',
       recheck: 'Each finding names what argues against it, and its confidence reflects that.',
@@ -1270,9 +1270,9 @@ const synthesis: Guided = {
     {
       question: 'You used the supplied practice notes. How may this work appear later in a portfolio?',
       options: [
-        { label: 'Clearly labelled as a training exercise with supplied notes, never as interviews you conducted.', correct: true, feedback: 'The method is genuinely yours to show. The participants are not, and a reader who discovers that later will doubt everything else you wrote.' },
-        { label: 'As research findings, since the analysis work was real.', feedback: 'The analysis was real and the sources were invented. Presented as findings, the claim about people is false regardless of how careful the method was.' },
-        { label: 'It should not appear at all.', feedback: 'It can appear, labelled. A worked synthesis with supplied notes shows exactly the skill a reviewer wants to see.' },
+        { label: 'Labelled as a training exercise with supplied notes, not as interviews you ran.', correct: true, was: ['Clearly labelled as a training exercise with supplied notes, never as interviews you conducted.'], feedback: 'The method is genuinely yours to show. The participants are not, and a reader who discovers that later will doubt everything else you wrote.' },
+        { label: 'As research findings, since the analysis you did on the notes was real work.', was: ['As research findings, since the analysis work was real.'], feedback: 'The analysis was real and the sources were invented. Presented as findings, the claim about people is false regardless of how careful the method was.' },
+        { label: 'It should not appear in a portfolio at all, because the notes were made up.', was: ['It should not appear at all.'], feedback: 'It can appear, labelled. A worked synthesis with supplied notes shows exactly the skill a reviewer wants to see.' },
       ],
       repair: 'Check the source label in step 2 and the wording of your findings. If a finding reads as though real people said it, add the supplied-notes label to the finding itself, then record the change in step 5.',
       recheck: 'The source type is set, and any finding drawn from supplied notes says so where it is written.',
@@ -1280,9 +1280,18 @@ const synthesis: Guided = {
   ],
   saveRoute: {
     auto: 'Your entries, groups and findings save as you type, on this device first and then online.',
-    external: 'Keep any raw session notes in your own private folder. Nothing here should carry a participant’s name, and nothing is uploaded.',
-    creator: 'Your creator can read the entries, findings and their counter-evidence once you choose Ready for review. The source label travels with them.',
+    external: 'Keep any raw session notes in your own private folder or on paper, with a date to delete them. Nothing here should carry a participant’s name or any detail that could identify them — removing the name alone does not make a note anonymous — and nothing is uploaded.',
+    creator: 'Your creator can read the entries, findings and their counter-evidence as soon as they save online; Ready for review tells him a version is ready. Supplied-notes route: the work is complete when every finding drawn from the supplied notes says simulated training data. It shows the method, not anything about real people.',
     next: 'Open Your work and choose Ready for review. Lesson 3 turns one of these findings into a small change worth testing.',
+  },
+  transfer: {
+    scenario: 'Made-up case: four practice notes (simulated training data) from a community allotment. A1 read the watering rota before taking a plot. A2 asked a neighbour about the rota after a month. A3 never looked at the rota and watered every day. A4 found the rota pinned to the shed gate in the first week.',
+    prompt: 'Write one finding these notes support, with the note IDs behind it and any note that argues against it, and explain why your finding claims no more than four notes can show.',
+    anchors: {
+      weak: 'Writes a claim the notes cannot support (“nobody reads the rota”, “most people ask neighbours”) or a recommendation (“put the rota online”), with no note IDs.',
+      adequate: 'Writes a finding that holds for all four — for example, people learn about the rota at different times and in different places — cites A1 to A4, keeps A3 visible, and labels the notes as practice material.',
+      strong: 'Adequate, plus says what four notes cannot show (how common each route is), names a question the notes cannot answer, and writes one implication as possible rather than proven.',
+    },
   },
 };
 

@@ -1,4 +1,4 @@
-import { withLegacyText } from "./teaching";
+import { withLegacyText, type Criterion } from "./teaching";
 export const week2 = [
   {
     id: "week2-day1-v1",
@@ -26,6 +26,11 @@ export const week2 = [
         answer:
           "A bounded observation from that person and a chance to improve the method, not population-wide prevalence.",
       },
+      {
+        question: "Nobody replied. Is your study plan finished?",
+        answer:
+          "Yes, if it holds the prepared materials, a dated access note and what rehearsing aloud taught you. That is a complete rehearsal result; it is not research about anyone.",
+      },
     ],
     rubric: [
       "A clear decision and uncertainty",
@@ -33,6 +38,64 @@ export const week2 = [
       "Participant criteria and limitations",
       "Voluntary participation and minimal data",
     ],
+    criteria: [
+      {
+        criterion: "A clear decision and uncertainty",
+        evidence:
+          "A decision from Module 1 you cannot yet defend, what getting it wrong costs the person, and a research question whose possible answers would lead to different choices.",
+        levels: [
+          "No decision, or a method chosen with no question behind it.",
+          "A question exists, but no answer to it would change the decision, or the decision is vague.",
+          "A specific decision, its stake for the person, and a question whose answers would move it.",
+          "As adequate, and the plan says what you would do under two different answers.",
+        ],
+        remediation:
+          "Write the two answers you might get and what you would do after each. If both lead to the same action, rewrite the question.",
+        recheck: "The decision, the question and the two-answers note.",
+      },
+      {
+        criterion: "Method matches the question",
+        evidence:
+          "A chosen method — an interview about a recent experience, watching a task, or both — with a reason naming what it reaches that the other cannot.",
+        levels: [
+          "No method, or a method with no reason.",
+          "A method is named, but the reason is generic (“interviews give insight”) or the method cannot reach the question.",
+          "The method fits the question, and the reason says what it reaches that the alternative cannot.",
+          "As adequate, and the plan names what the chosen method will miss and how that limits the decision.",
+        ],
+        remediation:
+          "Ask whether the question is about something that already happened elsewhere (interview) or about what this screen does to someone now (task). Change the method if it does not fit, and rewrite the reason.",
+        recheck: "The method choice and its reason.",
+      },
+      {
+        criterion: "Participant criteria and limitations",
+        evidence:
+          "Criteria describing the experience that makes an answer relevant (no names), an honest recruitment status with a dated access note, and a limitation stating what the study cannot show even if it goes perfectly.",
+        levels: [
+          "No criteria or limitation, or participants are named.",
+          "The criteria describe whoever is easiest to reach, the status does not match reality, or the limitation is missing.",
+          "Experience-based criteria, a status that matches reality with a dated access note, and a stated limitation. On the rehearsal route, the dated note and the rehearsed materials meet this criterion; no participant is needed.",
+          "As adequate, and the plan says what it would record about whoever is actually reached and how that bounds the conclusion.",
+        ],
+        remediation:
+          "Rewrite the criteria as the experience a person needs. Set the status to what is true today, date the access note, and add one sentence on what the study cannot establish.",
+        recheck: "The criteria, the status, the access note and the limitation.",
+      },
+      {
+        criterion: "Voluntary participation and minimal data",
+        evidence:
+          "Consent wording that says what the notes are for, who will read them, when they will be deleted, that the person can skip or stop, and whether anything is recorded; no names, contacts or private booking details anywhere in the plan.",
+        levels: [
+          "No consent wording, or the plan asks for private or identifying details.",
+          "The consent wording leaves out the right to stop, who reads the notes or deletion, or the plan collects more than it needs.",
+          "Complete consent wording and a plan that collects only what the question needs, with no names or contacts in the worksheet.",
+          "As adequate, and the plan says where any consent record is kept privately and when the notes will be deleted.",
+        ],
+        remediation:
+          "Add the missing consent elements, then remove any detail the question does not need.",
+        recheck: "The consent introduction and the data the plan collects.",
+      },
+    ] satisfies Criterion[],
     portfolio:
       "A research-plan artifact; keep proposed evidence distinct from collected evidence.",
     resource: {
@@ -44,7 +107,7 @@ export const week2 = [
       "Start with a decision, not a method. If you need to understand how people prepare for a workshop, a conversation about a recent visit can reveal context. If you need to know whether a materials summary is understandable, observe someone using it. A survey does not automatically answer either question well.",
       "Write a research question as an uncertainty: “When do attendees look for preparation instructions?” Then name the evidence that would help and the choice it would influence. This makes it easier to avoid collecting interesting but irrelevant information.",
       "Recruit people with experience related to the task, rather than choosing only whoever is easiest to reach. For this small practice study, one willing adult with a recent booking experience can help rehearse your method, but cannot represent the whole audience. Document that limitation.",
-      "Keep participant access separate from study quality. If nobody is available during this module, improve the plan and do a clearly labelled self-walkthrough. Do not turn a fictional persona or an AI-generated interview into participant evidence. Never collect private booking or payment details for this exercise.",
+      "Keep participant access separate from study quality. If nobody is available during this module, improve the plan, rehearse it aloud alone and record a dated access note; that is a complete result for this lesson. Do not turn a fictional persona or an AI-generated interview into participant evidence. Never collect private booking or payment details for this exercise.",
     ],
     prerequisite:
       "Bring Module 1 Lesson 5’s flow, screens and unresolved questions.",
@@ -138,6 +201,64 @@ export const week2 = [
       "Counter-evidence is retained",
       "Simulated data is labelled",
     ],
+    criteria: [
+      {
+        criterion: "Sources can be traced",
+        evidence:
+          "Numbered observations, each with a source label (a session code or a supplied note), and findings that cite the note numbers that support them.",
+        levels: [
+          "Findings with no note numbers, or observations with no sources.",
+          "Some observations lack sources, or a finding cites notes that do not support it.",
+          "Every observation has a source, and every finding names its supporting note numbers.",
+          "As adequate, and a reader could follow one implication back through a finding to a single note without asking you.",
+        ],
+        remediation:
+          "Give every observation a number and a source. For each finding, list the note numbers that support it, and mark any finding with none as unsupported.",
+        recheck: "The numbered observations and the findings with their note numbers.",
+      },
+      {
+        criterion: "Observations and interpretations differ",
+        evidence:
+          "Observation lines describe what happened with no “because”, judgement or recommendation in them; interpretations and implications sit in their own boxes.",
+        levels: [
+          "Observations mix in judgements (“disorganised”) or recommendations (“add a reminder”).",
+          "Most lines are observations, but one or two carry a reason or a judgement inside them.",
+          "Every observation line could be checked against its source, and interpretations are kept separate.",
+          "As adequate, and the work shows one raw line split into an observation and an interpretation, with the reason.",
+        ],
+        remediation:
+          "Find every observation containing because, so, wanted or a judgement about the person, and move the second half to an interpretation or a finding.",
+        recheck: "The six observation lines.",
+      },
+      {
+        criterion: "Counter-evidence is retained",
+        evidence:
+          "A note that fits neither group kept visible, each finding naming what argues against it, and a confidence level that reflects that.",
+        levels: [
+          "Contradicting notes are dropped, or findings claim “all”, “most” or “nobody”.",
+          "A contradiction is noted but not linked to any finding, or the confidence ignores it.",
+          "Each finding names its counter-evidence, and its confidence reflects it.",
+          "As adequate, and the work suggests what the exception might mean, such as a different context.",
+        ],
+        remediation:
+          "For each finding, find the note that fits least and write it under “what argues against it”. Remove most, all and nobody.",
+        recheck: "The two findings with their counter-evidence and confidence.",
+      },
+      {
+        criterion: "Simulated data is labelled",
+        evidence:
+          "The source type is set, and any finding drawn from supplied notes says “simulated training data” where it is written; real notes appear only as de-identified summaries, kept apart from supplied ones.",
+        levels: [
+          "Supplied notes are presented as interviews or real findings.",
+          "The source type is set, but findings drawn from supplied notes do not repeat the label.",
+          "The label travels with every finding, and real and supplied notes are kept apart. Working only from the supplied notes meets this criterion in full.",
+          "As adequate, and the work says plainly what the exercise practised (the method) and what it cannot claim (anything about real people).",
+        ],
+        remediation:
+          "Add the supplied-notes label to each finding drawn from them, and separate any real notes from supplied ones.",
+        recheck: "The source type and the wording of both findings.",
+      },
+    ] satisfies Criterion[],
     portfolio:
       "A synthesis exercise; real study findings require real evidence.",
     resource: {
