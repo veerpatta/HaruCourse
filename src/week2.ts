@@ -357,6 +357,63 @@ export const week2 = [
       "Bounded scope",
       "Observable signal and counter-evidence",
     ],
+    criteria: [
+      {
+        criterion: "Several meaningfully different options",
+        evidence:
+          "Three options that would succeed or fail for different reasons — at least one without a screen — each with its expected effect for the person and an effort estimate with its reason.",
+        levels: [
+          "One option, or none described as an outcome for the person.",
+          "Three options that are variations of one idea (the same list in three places), or estimates with no reasons.",
+          "Three options that differ in kind, each with an expected effect and a reasoned estimate.",
+          "As adequate, and the comparison names which option is cheapest to be wrong about, and why.",
+        ],
+        remediation:
+          "Ask whether two options would fail for the same reason. If so, replace one with a change somewhere else — what the person is told, what the organiser does, or no screen at all.",
+        recheck: "The three options with their effect and effort lines.",
+      },
+      {
+        criterion: "Choice linked to evidence",
+        evidence:
+          "The chosen option cites the finding it answers, with that finding’s source label and limits still attached, and states what the choice costs.",
+        levels: [
+          "No choice, or a choice with no link to a finding.",
+          "The choice names a finding but drops its limits or source label, or rests on preference.",
+          "The choice cites its finding with source label and limits, and names its cost. A finding from the supplied practice notes, kept labelled, meets this criterion.",
+          "As adequate, and the choice explains why it teaches more than the others even if it is less appealing to build.",
+        ],
+        remediation:
+          "Copy the finding’s source label and limits beside the choice, and finish the sentence “I chose this because the finding…”.",
+        recheck: "The finding, its limits and the choice with its reason.",
+      },
+      {
+        criterion: "Bounded scope",
+        evidence:
+          "An excluded list naming what the test leaves out, so that what remains is the smallest set that could show the signal.",
+        levels: [
+          "No scope stated, or the test covers several changes at once.",
+          "An excluded list exists, but the test still bundles changes unrelated to the hypothesis.",
+          "One change under test, with unrelated work written down as excluded.",
+          "As adequate, and the excluded list includes something you wanted to do, with the reason it waits.",
+        ],
+        remediation: "Move everything not needed to observe your signal into the excluded list.",
+        recheck: "The excluded list and what remains in the test.",
+      },
+      {
+        criterion: "Observable signal and counter-evidence",
+        evidence:
+          "A hypothesis in the form “If [change], [who] can [observable behaviour]”, a success signal, a disconfirming signal written before testing, and a task with no route in it.",
+        levels: [
+          "No hypothesis, or one about liking or satisfaction.",
+          "A hypothesis exists but ends in a feeling, or the disconfirming signal is missing.",
+          "An observable hypothesis with both signals and a neutral task.",
+          "As adequate, and the signals say what you would do next under each result.",
+        ],
+        remediation:
+          "Rewrite the last part of the hypothesis as something a person in the room could see, then write what you would see if it failed.",
+        recheck: "The hypothesis, both signals and the task.",
+      },
+    ] satisfies Criterion[],
     portfolio: "A prioritization decision with explicit assumptions.",
     resource: {
       title: "GOV.UK: how discovery works",
@@ -446,6 +503,11 @@ export const week2 = [
         answer:
           "No. It can represent intended behavior; distinguish simulated states from implemented functionality.",
       },
+      {
+        question: "Should the failure card be left bare so you can watch people hit it?",
+        answer:
+          "No. A failure card with no way forward is a dead end you already know about, and it stops the task. Give it the recovery you planned, and leave wording you are unsure about in place to observe instead.",
+      },
     ],
     rubric: [
       "Prototype addresses the hypothesis",
@@ -453,6 +515,64 @@ export const week2 = [
       "Scenario avoids instructions to the answer",
       "Limitations documented",
     ],
+    criteria: [
+      {
+        criterion: "Prototype addresses the hypothesis",
+        evidence:
+          "The hypothesis carried from Lesson 3 and a list of three or four screens, each needed to attempt the task, with one failure card that shows a way forward.",
+        levels: [
+          "No hypothesis, or screens unrelated to it.",
+          "The prototype includes screens the task does not need, or lacks the screen where the signal would be seen.",
+          "Only the screens the task needs, including a failure card with a way forward.",
+          "As adequate, and the work says which screen the signal will be seen on, and what was cut and why.",
+        ],
+        remediation:
+          "Walk the task and cross out any screen you never pass through; add the one the signal needs.",
+        recheck: "The screen list and the hypothesis.",
+      },
+      {
+        criterion: "Relevant actions and recovery work",
+        evidence:
+          "Every action on the task path leads somewhere, the failure card offers another date, a fix or a way back, invented content is marked, and the self-pilot’s fixes are recorded.",
+        levels: [
+          "Actions lead nowhere, or there is no failure card.",
+          "A dead end remains — including a failure card that only reports bad news — or the self-pilot found breaks that were not fixed.",
+          "The primary and recovery paths both work in a self-pilot, fixes are recorded, and each dead control has a sentence ready.",
+          "As adequate, and the self-pilot separates bugs fixed now from wording or layout deliberately left in place to observe.",
+        ],
+        remediation:
+          "Rerun the self-pilot along the failure path. If any card has no way forward, draw it, then record what you fixed.",
+        recheck: "The pilot findings, the fixes and the failure card.",
+      },
+      {
+        criterion: "Scenario avoids instructions to the answer",
+        evidence:
+          "A task card stating a goal and a situation with no button, link or filter named, and a reset that returns every card to the start.",
+        levels: [
+          "No task card, or a card that lists the steps to take.",
+          "The card names a control or the route, or there is no reset.",
+          "A goal-and-situation task with no interface words, and a written reset.",
+          "As adequate, and the work notes how the invented situation might shape what people do.",
+        ],
+        remediation:
+          "Cross out every interface word on the task card and replace it with what the person wants to achieve.",
+        recheck: "The task card and the reset.",
+      },
+      {
+        criterion: "Limitations documented",
+        evidence:
+          "A list of what paper cannot establish — keyboard and screen-reader behaviour, real payment, speed, anything a server does — and the walk-through labelled as a self-pilot.",
+        levels: [
+          "No limitations, or the self-pilot is reported as a test with a person.",
+          "Limitations are vague, or keyboard, screen-reader or server behaviour is missing.",
+          "Specific limitations listed, and the self-pilot labelled as such.",
+          "As adequate, and each limitation names what a later build or session would need to check it.",
+        ],
+        remediation:
+          "Add keyboard, screen-reader, payment and server behaviour to the list, and label your walk-through as a self-pilot.",
+        recheck: "The limitations list.",
+      },
+    ] satisfies Criterion[],
     portfolio: "A prototype with a reason for its fidelity and scope.",
     resource: {
       title: "GOV.UK: moderated usability testing",

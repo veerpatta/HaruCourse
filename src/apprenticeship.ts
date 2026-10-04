@@ -1299,7 +1299,7 @@ const opportunity: Guided = {
   route: textRoute,
   worksheet: [
     { id: 'evidence', title: 'The finding you are working from', fields: [
-      { id: 'finding', label: 'The finding', kind: 'long', hint: 'Copy it from Lesson 2, with its source label.' },
+      { id: 'finding', label: 'The finding', kind: 'long', hint: 'Copy it from Lesson 2, with its source label. No Lesson 2 finding? Use the practice finding in the starting route and keep it labelled as practice.' },
       { id: 'finding-limits', label: 'What it cannot tell you', kind: 'short' },
     ] },
     { id: 'options', title: 'Three genuinely different responses', intro: 'One at a time. They must differ in kind, not in wording.', fields: [1, 2, 3].flatMap((n) => [
@@ -1322,7 +1322,7 @@ const opportunity: Guided = {
     ] },
     { id: 'record', title: 'What the prototype must do', fields: [
       { id: 'prototype-needs', label: 'The behaviour the prototype needs for this test', kind: 'long', hint: 'The smallest set of screens and states that lets someone attempt the task.' },
-      { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
+      { id: 'improvement-made', label: 'What you changed after the Check questions, or why no change was needed', kind: 'long' },
     ] },
   ],
   guide: [
@@ -1362,10 +1362,10 @@ const opportunity: Guided = {
         material: 'Two supplied hypotheses for the same made-up change. A: “If the total cost appears before the form, first-time visitors will like the booking experience more.” B: “If the total cost appears before the form, a first-time visitor can say what the evening will cost, including materials, without scrolling back.”',
         question: 'Which one can a short session actually test, and why?',
         options: [
-          { label: 'B, because it names something you could watch someone do or fail to do.', correct: true, feedback: 'You can hand someone the task and see whether they can answer without going back. It can also come out badly, which is what makes it a test.' },
-          { label: 'A, because liking the experience is what ultimately matters.', feedback: 'Liking is real and you cannot observe it, and asked directly people are kind to the person who made the thing. Nothing in a session would settle it.' },
-          { label: 'Both, if you ask a satisfaction question at the end.', feedback: 'Adding a rating to B does not make A testable; it adds a number with no meaning to a session of one or two people.' },
-          { label: 'Neither: a prototype cannot test anything about cost.', feedback: 'It can test whether the information can be found and understood, which is precisely what B claims. What it cannot test is whether more people would book.' },
+          { label: 'B, because it names something you could watch a person do or fail to do.', correct: true, was: ['B, because it names something you could watch someone do or fail to do.'], feedback: 'You can hand someone the task and see whether they can answer without going back. It can also come out badly, which is what makes it a test.' },
+          { label: 'A, because liking the experience is what ultimately matters to the business.', was: ['A, because liking the experience is what ultimately matters.'], feedback: 'Liking is real and you cannot observe it, and asked directly people are kind to the person who made the thing. Nothing in a session would settle it.' },
+          { label: 'Both, as long as you ask a satisfaction question at the end of each session.', was: ['Both, if you ask a satisfaction question at the end.'], feedback: 'Adding a rating to B does not make A testable; it adds a number with no meaning to a session of one or two people.' },
+          { label: 'Neither, because a paper prototype cannot test anything about cost.', was: ['Neither: a prototype cannot test anything about cost.'], feedback: 'It can test whether the information can be found and understood, which is precisely what B claims. What it cannot test is whether more people would book.' },
         ],
         then: 'Write yours in the same shape, then write the disconfirming signal before you test anything.',
       },
@@ -1381,9 +1381,9 @@ const opportunity: Guided = {
     {
       question: 'You score three options for effort out of five and pick the lowest. Is that measured evidence?',
       options: [
-        { label: 'No. It is your estimate written as a number, and it should keep the reason beside it.', correct: true, feedback: 'Numbers look decided. Unless something measured the effort, the score is a judgement, and the reason is the part a reader can argue with.' },
-        { label: 'Yes, if you use the same scale for all three.', feedback: 'A consistent scale makes estimates comparable with each other. It does not turn any of them into a measurement.' },
-        { label: 'Yes, effort estimates are standard practice in product teams.', feedback: 'They are standard and they are still estimates. Teams that forget this build plans on numbers nobody checked.' },
+        { label: 'It is an estimate written as a number, so the reason behind it should stay beside it.', correct: true, was: ['No. It is your estimate written as a number, and it should keep the reason beside it.'], feedback: 'Numbers look decided. Unless something measured the effort, the score is a judgement, and the reason is the part a reader can argue with.' },
+        { label: 'It counts as measured once all three use the same five-point scale consistently.', was: ['Yes, if you use the same scale for all three.'], feedback: 'A consistent scale makes estimates comparable with each other. It does not turn any of them into a measurement.' },
+        { label: 'It counts as evidence, because effort scores are standard practice in product teams.', was: ['Yes, effort estimates are standard practice in product teams.'], feedback: 'They are standard and they are still estimates. Teams that forget this build plans on numbers nobody checked.' },
       ],
       repair: 'Reread your effort lines in step 2. Add the reason behind each estimate, and record the change in step 5.',
       recheck: 'Every effort estimate names what it rests on, and none is presented as a measurement.',
@@ -1391,9 +1391,9 @@ const opportunity: Guided = {
     {
       question: 'Your hypothesis says “users will find it easier”. What is missing?',
       options: [
-        { label: 'Something you could watch: what a person would do or say that would show it, and what would show the opposite.', correct: true, feedback: 'Easier is a summary of an experience, not an event. Without an observable version, any session can be read as a success.' },
-        { label: 'A number, such as a percentage improvement.', feedback: 'A number you cannot collect is worse than a vague claim, because it looks rigorous. One or two people cannot produce a rate.' },
-        { label: 'Nothing, as long as you ask them afterwards whether it was easier.', feedback: 'Asked by the person who designed it, most people say yes. That answer cannot separate a good change from a polite participant.' },
+        { label: 'Something you could watch that would show it working, and what would show it failing.', correct: true, was: ['Something you could watch: what a person would do or say that would show it, and what would show the opposite.'], feedback: 'Easier is a summary of an experience, not an event. Without an observable version, any session can be read as a success.' },
+        { label: 'A number, such as the percentage improvement in ease that you expect to see.', was: ['A number, such as a percentage improvement.'], feedback: 'A number you cannot collect is worse than a vague claim, because it looks rigorous. One or two people cannot produce a rate.' },
+        { label: 'Nothing, as long as you ask each person afterwards whether it felt easier to them.', was: ['Nothing, as long as you ask them afterwards whether it was easier.'], feedback: 'Asked by the person who designed it, many people say yes to be kind. That answer cannot separate a good change from a polite participant.' },
       ],
       repair: 'Rewrite your hypothesis in step 4 so its last part is something you could see, then fill the disconfirming signal and note the change in step 5.',
       recheck: 'The hypothesis ends in observable behaviour and has a signal that would show it failing.',
@@ -1412,8 +1412,17 @@ const opportunity: Guided = {
   saveRoute: {
     auto: 'Your comparison, choice, hypothesis and task save as you type, on this device first and then online.',
     external: 'Nothing here needs a file. If you sketched an option on paper, keep the sheet and name it in Your work.',
-    creator: 'Your creator can read the three options, the choice and both signals once you choose Ready for review. The disconfirming signal is the part worth his attention.',
+    creator: 'Your creator can read the three options, the choice and both signals as soon as they save online; Ready for review tells him a version is ready. The disconfirming signal is the part worth his attention. If your finding came from the supplied practice notes, keep that label: the choice is then practice reasoning, not a decision about real people.',
     next: 'Open Your work and choose Ready for review. Lesson 4 builds only the states your task needs, so keep the task wording exactly as you wrote it.',
+  },
+  transfer: {
+    scenario: 'Made-up case: practice notes (simulated) from a city museum’s free timed-ticket booking: of four visitors, two went to the wrong entrance, one asked a guard, and one followed a sign. The team lists three options: a map printed on the ticket, a member of staff at both doors, and naming the entrance in the booking confirmation.',
+    prompt: 'Choose the option you would test first and write a hypothesis that ends in something you could watch. Explain why your choice is worth testing before the others.',
+    anchors: {
+      weak: 'Picks the option that is most fun to design, or writes “it will improve visitor satisfaction”, with no observable signal and nothing that could show it failing.',
+      adequate: 'Chooses one option for a stated reason tied to the notes and writes “If …, a first-time visitor can find the right entrance without asking staff”, with a signal that would show it failing.',
+      strong: 'Adequate, plus labels effort as an estimate with its reason, lists what the test leaves out, and notes that four simulated notes cannot show how common wrong-entrance trips are.',
+    },
   },
 };
 
@@ -1427,7 +1436,7 @@ const prototyping: Guided = {
           ...(n === 1 ? { hint: 'Real words, not “headline here”. Invented content is fine and should be labelled.', example: 'Example (made up): S01 · class list for Saturday, three classes with times and prices.' } : {}) },
         { id: `state-${n}-trigger`, label: `S0${n} · what the person does to leave it, and where they arrive`, kind: 'short' as const },
       ]),
-      { id: 'recovery', label: 'The one thing that goes wrong, and how they recover', kind: 'long', hint: 'A full class, a mistyped email, a dropped connection. Draw the card before the session, not during it.' },
+      { id: 'recovery', label: 'The one thing that goes wrong, and how they recover', kind: 'long', hint: 'A full class, a mistyped email, a dropped connection. Draw the card before the session, not during it, and put the way forward on it — another date, a fix, a way back — not just the bad news.' },
     ] },
     { id: 'build', title: 'What you actually made', fields: [
       { id: 'invented-content', label: 'Which content is invented, and how it is marked', kind: 'short', hint: 'Prices, names and dates you made up. Never a real card number or a real person’s details.' },
@@ -1444,7 +1453,7 @@ const prototyping: Guided = {
     { id: 'save', title: 'What this cannot show', fields: [
       { id: 'limitations', label: 'What a paper prototype cannot establish', kind: 'long', hint: 'Keyboard and screen-reader behaviour, real payment, speed, anything a server does.' },
       { id: 'photo-reference', label: 'Where the screens live (file name or “paper, in my folder”)', kind: 'short' },
-      { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
+      { id: 'improvement-made', label: 'What you changed after the Check questions, or why no change was needed', kind: 'long' },
     ] },
   ],
   guide: [
@@ -1469,7 +1478,7 @@ const prototyping: Guided = {
         { term: 'State', meaning: 'One screen as the person sees it at one moment, including empty, full and error versions.' },
       ],
       start: 'Walk your task in your head and write down only the screens you actually pass through.',
-      enough: 'Every screen you listed is needed to attempt the task, and one shows something going wrong.' },
+      enough: 'Every screen you listed is needed to attempt the task, and one shows something going wrong with a way forward on it.' },
     { expect: 'Invented content marked as invented, and a plan for actions that will not work.',
       fields: ['invented-content', 'out-of-scope-actions'],
       terms: [{ term: 'Out of scope', meaning: 'Something the prototype cannot do. Named in advance it is a boundary; discovered mid-session it is a broken test.' }],
@@ -1478,19 +1487,19 @@ const prototyping: Guided = {
     { expect: 'What broke when you walked it yourself, and what you fixed. This is a self-pilot, not a test with a person.',
       fields: ['pilot-findings', 'pilot-fixes'],
       supported: {
-        material: 'A supplied self-pilot from the same made-up prototype. Walking the task, the author found: the class list card had no prices on it; pressing Reserve led to a card that did not exist yet; and the full-class card said “Sorry, full” with nothing else on it.',
-        question: 'Which of those three is not a prototype bug to fix before the session?',
+        material: 'A supplied self-pilot from the same made-up prototype. Walking the task, the author found three things: the class list card had no prices on it; pressing Reserve led to a card that did not exist yet; and the full-class card said “Sorry, full” with nothing else on it, although the plan said that card would offer Sunday’s class instead.',
+        question: 'Which of those three can safely stay as it is for the session?',
         options: [
-          { label: 'The full-class card: its emptiness is a design problem worth watching someone hit.', correct: true, feedback: 'A missing price and a missing card stop the session working at all. A bare failure message is the design as it stands, and what someone does when they meet it is exactly what you want to see.' },
-          { label: 'The missing prices: the person can ask you what things cost.', feedback: 'Asking you turns the facilitator into part of the interface, and the task was about finding the cost. That has to be on the card.' },
-          { label: 'The missing card after Reserve: you can describe it aloud instead.', feedback: 'Describing it aloud means you are designing during the session and the person is reacting to your narration rather than the design.' },
-          { label: 'All three should be fixed, since a session should run smoothly.', feedback: 'Smoothness is not the goal. Fixing the bare failure card would remove the very moment most likely to teach you something.' },
+          { label: 'The full-class card: an empty failure is worth watching someone hit.', was: ['The full-class card: its emptiness is a design problem worth watching someone hit.'], feedback: 'You already know an empty failure card is a dead end: Module 1 Lesson 4 called it one. Someone stuck there cannot reach Sunday, so you learn nothing new about the total you set out to test. Draw the recovery first.' },
+          { label: 'The missing prices: the person can simply ask you what things cost.', was: ['The missing prices: the person can ask you what things cost.'], feedback: 'Asking you turns the facilitator into part of the interface, and the task was about finding the cost. That has to be on the card.' },
+          { label: 'The missing card after Reserve: you can describe that screen aloud.', was: ['The missing card after Reserve: you can describe it aloud instead.'], feedback: 'Describing it aloud means you are designing during the session and the person is reacting to your narration rather than the design.' },
+          { label: 'None of them: each one leaves the person stuck or forces you to improvise.', correct: true, was: ['All three should be fixed, since a session should run smoothly.'], feedback: 'A missing price and a missing card stop the task. The bare full card does too: it is a dead end, it was planned to offer Sunday, and without that nobody can show you whether the total was clear enough to compare. Fix all three before anyone else sees it.' },
         ],
-        then: 'Separate your own findings the same way: repair what stops the task, and leave the design weaknesses in place to be observed.',
+        then: 'Sort your own findings the same way: repair anything that stops the task or departs from your plan, including a failure card with no way forward. Leave wording or layout you are unsure about in place; that is what the session is for.',
       },
-      terms: [{ term: 'Self-pilot', meaning: 'Walking your own prototype to find broken links and missing screens. It checks the materials, never the design.' }],
+      terms: [{ term: 'Self-pilot', meaning: 'Walking your own prototype to find broken links and missing screens. It checks the materials; it cannot tell you how a first-time visitor would use the design.' }],
       start: 'Do the task yourself, slowly, and stop every time you have to explain something to yourself.',
-      enough: 'Nothing is missing that would force you to invent a screen while someone is watching.' },
+      enough: 'Nothing is missing that would force you to invent a screen while someone is watching, and the failure card offers a way forward.' },
     { demo: { scenario: 'Made-up example. Writing the task card for a parents-evening booking prototype, first with the route inside it and then with nothing left to observe.', beats: [{ label: 'What I wrote first', text: '“Use the calendar to pick a slot with Mr Ellis and press Confirm.” It reads like a clear instruction, which is the trouble with it.' }, { label: 'Why it looked fine to me', text: 'It describes exactly the thing I wanted to watch. Naming the calendar and the button hands over both decisions before the person has made either.' }, { label: 'Over-correcting', text: 'So I wrote “have a look around and tell me what you think”. Now there is nothing to reach and nothing to fail at, and whatever happens I can call it a success.' }, { label: 'Where it settled', text: '“You have two children at the school and one free evening this week. Find out whether you can see both of their teachers on the same night.” A situation, a goal, no part of the screen named.' }, { label: 'The reset I had not thought about', text: 'After my own walk-through the confirmation card was face up and one slot was crossed off. The second person would have started from a different prototype without either of us noticing.' }, { label: 'What the reset says now', text: 'Cards stacked S01 on top, a clean copy of the slot sheet for each attempt, confirmation card back in the pile. Thirty seconds between attempts, written down so I do not skip it when I am tired.' }], wrongTurn: 'The wrong turn is putting the control in the task. You want them to reach the part you built, so you point at it, and it feels like being helpful rather than like giving away the answer.', tradeoff: 'A task with no route means someone may spend four minutes somewhere you never expected and never arrive at the screen you care about. That silence is the finding, and it is uncomfortable to sit through without rescuing them.', uncertainty: 'Still unknown: whether “one free evening” makes people hurry in a way a real parent would not. The situation you invent shapes what you see, and you cannot take that out of the room.' }, expect: 'The task in the exact words you will say, and how you reset between attempts.',
       fields: ['scenario', 'reset'],
       terms: [{ term: 'Neutral task', meaning: 'A goal with a situation and no route. If it contains a button name, you have given away the answer.' }],
@@ -1505,9 +1514,9 @@ const prototyping: Guided = {
     {
       question: 'Your paper prototype works well in the session. What may you claim from that?',
       options: [
-        { label: 'That the intended behaviour made sense to that person on paper, which says nothing about a built version.', correct: true, feedback: 'Paper reaches comprehension and sequence. Speed, keyboard access, screen-reader output and anything a server does are all outside what you just saw.' },
-        { label: 'That the design works and can be built as drawn.', feedback: 'A built version introduces waiting, errors, focus order and states you never drew. Those are where designs usually fail.' },
-        { label: 'That the flow is accessible, since you read every card aloud.', feedback: 'Reading aloud is you, not the technology. Whether a screen reader would announce it in that order is a property of code you have not written.' },
+        { label: 'That the intended steps made sense to that person on paper, not that a build would work.', correct: true, was: ['That the intended behaviour made sense to that person on paper, which says nothing about a built version.'], feedback: 'Paper reaches comprehension and sequence. Speed, keyboard access, screen-reader output and anything a server does are all outside what you just saw.' },
+        { label: 'That the design works for people and can now be built exactly as it was drawn.', was: ['That the design works and can be built as drawn.'], feedback: 'A built version introduces waiting, errors, focus order and states you never drew. Those are where designs usually fail.' },
+        { label: 'That the flow is accessible, since you read every card aloud as the person went.', was: ['That the flow is accessible, since you read every card aloud.'], feedback: 'Reading aloud is you, not the technology. Whether a screen reader would announce it in that order is a property of code you have not written.' },
       ],
       repair: 'Reread your limitations in step 5. If it does not name keyboard and screen-reader behaviour and anything a server would do, add them and note the change.',
       recheck: 'The limitations distinguish what paper showed from what only a build could show.',
@@ -1515,9 +1524,9 @@ const prototyping: Guided = {
     {
       question: 'Your task card says: “Use the filter to find Saturday’s pottery class and press Reserve.” What is wrong?',
       options: [
-        { label: 'It contains the route, so you will watch someone follow instructions rather than find their way.', correct: true, feedback: 'Naming the filter and the button hands over both decisions you wanted to observe. The session becomes a test of whether they can follow directions.' },
-        { label: 'Nothing: being specific stops the person getting lost.', feedback: 'Getting lost is the finding. If you steer them past it, you have removed the only part that could have taught you something.' },
-        { label: 'It is too long for someone to remember.', feedback: 'Length is a small matter; you can leave the card with them. The route inside it is the problem.' },
+        { label: 'It names the route, so you will watch someone follow orders, not find their own way.', correct: true, was: ['It contains the route, so you will watch someone follow instructions rather than find their way.'], feedback: 'Naming the filter and the button hands over both decisions you wanted to observe. The session becomes a test of whether they can follow directions.' },
+        { label: 'Nothing: being specific stops the person getting lost and keeps the session short.', was: ['Nothing: being specific stops the person getting lost.'], feedback: 'Getting lost is the finding. If you steer them past it, you have removed the only part that could have taught you something.' },
+        { label: 'It is too long for someone to hold in mind while they work through the prototype.', was: ['It is too long for someone to remember.'], feedback: 'Length is a small matter; you can leave the card with them. The route inside it is the problem.' },
       ],
       repair: 'Rewrite your task in step 4 as a goal and a situation with no interface words, then record the change in step 5.',
       recheck: 'The task names no button, link or filter, and still says what a good outcome would be for the person.',
@@ -1525,9 +1534,9 @@ const prototyping: Guided = {
     {
       question: 'You have one evening. Do you spend it drawing more screens or on the failure card and the reset?',
       options: [
-        { label: 'The failure card and the reset, because the session collapses without them.', correct: true, feedback: 'A missing failure card means improvising mid-session; no reset means the second attempt is not comparable. Extra screens rarely change what you learn.' },
-        { label: 'More screens, so the person can explore naturally.', feedback: 'Exploration is pleasant and it is not the task. More surface makes every observation harder to attribute.' },
-        { label: 'Neither: colour and typography make people take it seriously.', feedback: 'Polish on paper mostly buys politeness. People criticise a rough sketch more freely, which is what you want.' },
+        { label: 'The failure card with its way forward, and the reset, because the test needs both.', correct: true, was: ['The failure card and the reset, because the session collapses without them.'], feedback: 'A failure card with no way forward is a dead end you would have to rescue mid-session; no reset means the second attempt is not comparable. Extra screens rarely change what you learn.' },
+        { label: 'More screens, so the person can explore the prototype naturally, as they would at home.', was: ['More screens, so the person can explore naturally.'], feedback: 'Exploration is pleasant and it is not the task. More surface makes every observation harder to attribute.' },
+        { label: 'Neither: colour and typography are what make people take a prototype seriously.', was: ['Neither: colour and typography make people take it seriously.'], feedback: 'Polish on paper mostly buys politeness. People criticise a rough sketch more freely, which is what you want.' },
       ],
       repair: 'Check step 1 and step 4: if you have no failure card or no reset, add them before any session, then note it in step 5.',
       recheck: 'One failure card exists with a recovery, and the reset lets a second person start from the same place.',
@@ -1538,6 +1547,15 @@ const prototyping: Guided = {
     external: 'Keep the numbered screens and the task card in your own folder. Photograph them if you like and write the file name here; naming a file does not upload it.',
     creator: 'Your creator reads the state list, the task and the limitations. Share photographs the way you normally share files if you want him to see the cards.',
     next: 'Open Your work and choose Ready for review. Lesson 5 runs the task with a person if you have one, and honestly as a self-pilot if you do not.',
+  },
+  transfer: {
+    scenario: 'Made-up case: You are making a paper prototype to test whether visitors to a climbing wall’s booking page can find the total price for two people, including shoe hire. You have drawn a home page, a search page, a sign-in page, a session list, a session details card and a “session full” card that says only “Full”.',
+    prompt: 'Decide which cards this test needs and what you would change on the “Full” card before anyone tries it. Explain why each decision serves the question about total price.',
+    anchors: {
+      weak: 'Keeps every card because a fuller prototype feels more realistic, or leaves “Full” as a bare dead end to “see what happens”.',
+      adequate: 'Keeps the session list, the details card and the full card, cuts sign-in and search or marks them out of scope, and adds a way forward to the full card, such as the next free session, explaining each choice against the question.',
+      strong: 'Adequate, plus writes a neutral task with no route in it, plans a reset between attempts, and notes that paper cannot show real payment or screen-reader behaviour.',
+    },
   },
 };
 
