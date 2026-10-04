@@ -789,8 +789,8 @@ export const guided20: Record<string, Guided> = {
         { id: 'work-date', label: 'The date you will do it by', kind: 'short', hint: 'Without a date it does not happen. A fortnight is usually enough.' },
       ] },
       { id: 'do', title: 'Do it', fields: [
-        { id: 'what-happened', label: 'What happened, including anything that went wrong', kind: 'long' },
-        { id: 'consent-artefact', label: 'The artefact, its date, and the consent if another person was involved', kind: 'long', hint: 'Same rules as Module 6: what they agreed to, in writing, before anything is recorded.' },
+        { id: 'what-happened', label: 'What happened to the work, including anything that went wrong', kind: 'long', sensitive: true, hint: 'Describe anybody involved by role only, and record what the work did, never anything about a person’s health or circumstances. Raw notes stay in a private folder with a deletion date.' },
+        { id: 'consent-artefact', label: 'The artefact and its date, and if another person was involved, where their consent record is kept (not the record itself)', kind: 'long', sensitive: true, hint: 'Same rules as Module 5: what they agreed to, in writing, before anything is recorded. Write the file name and date here; the signed record stays in your private folder.' },
       ] },
       { id: 'update', title: 'Update the matrix', fields: [
         { id: 'cell-updated', label: 'The cell, its new mark and the artefact behind it', kind: 'long' },
@@ -835,7 +835,7 @@ export const guided20: Record<string, Guided> = {
       { expect: 'The work done, with what went wrong, the artefact dated, and consent where somebody else was involved.',
         fields: ['what-happened', 'consent-artefact'],
         terms: [
-          { term: 'Consent first', meaning: 'The same rules as Module 6. What you are doing, what will be recorded, where it may appear, and what they can withdraw.' },
+          { term: 'Consent first', meaning: 'The same rules as Module 5. What you are doing, what will be recorded, where it may appear, and what they can withdraw.' },
           { term: 'What went wrong', meaning: 'Part of the artefact. A session where two things failed is better evidence than one where nothing did.' },
         ],
         demo: {
@@ -845,13 +845,13 @@ export const guided20: Record<string, Guided> = {
             { label: 'What the matrix cell said afterwards', text: 'Partial. Exactly what it said before, because the row asks what you can show somebody about testing with disabled people, and I had a certificate about knowing things.' },
             { label: 'What closed it', text: 'Forty minutes with somebody who uses a screen reader daily, arranged through a local organisation, with consent and a small thank-you.' },
             { label: 'What that session produced', text: 'Two failures my keyboard pass had missed, both in the same form, a repair made that week, and a re-test in a second short session.' },
-            { label: 'What the cell says now', text: 'Evidenced, with a dated recording, the repair, and the re-test. The certificate sits beside it and carries none of the weight.' },
+            { label: 'What the cell says now', text: 'Evidenced, with dated session notes about the page, the repair and the re-test; the consent record stays in a private folder. The certificate sits beside it and carries none of the weight.' },
           ],
           wrongTurn: 'The wrong turn is closing a gap with a course, because courses are available, scheduled and finish with something that looks like proof. A certificate is evidence of a course; an artefact is evidence of the skill.',
           tradeoff: 'Arranging a session with a real person takes longer than a course, involves being turned down, and depends on somebody else’s time.',
           uncertainty: 'Still unknown: whether one session generalises. It is one person’s experience of one page, and the artefact says so.',
         },
-        start: 'Write and send the consent before arranging anything else.',
+        start: 'If another person is involved, write and send the consent before arranging anything else; working solo, write down the artefact you expect first.',
         enough: 'You have a dated artefact and, where another person was involved, their consent in writing.' },
       { expect: 'The matrix cell updated with the new artefact, and the previous mark kept visible.',
         fields: ['cell-updated', 'history-kept'],
@@ -893,14 +893,14 @@ export const guided20: Record<string, Guided> = {
             { id: 'redesign-famous-app', text: 'Redesigning a well-known app’s screens as a personal exercise, to show product thinking.', answer: 'a badge on the same gap',
               feedback: {
                 'closes it with an artefact': 'It produces screens, with no problem, no research and no outcome behind them.',
-                'a badge on the same gap': 'The commonest version of this mistake, and Module 19 covered what a folder of screens can evidence: taste.',
+                'a badge on the same gap': 'A common version of this mistake, and Module 19 covered what a folder of screens can evidence: taste.',
                 'needs a role you do not have': 'It needs nothing, which is the difficulty.',
               } },
-            { id: 'handover-friend', text: 'Writing a handover document for the friend who built your prototype, with the decisions and the reasons.', answer: 'closes it with an artefact',
+            { id: 'handover-friend', text: 'Writing a handover note for the shop owner that explains your project’s decisions and the reasons for them.', answer: 'closes it with an artefact',
               feedback: {
                 'closes it with an artefact': 'A real artefact from real work with another person. It is not team experience, and it is the nearest adjacent evidence to it.',
                 'a badge on the same gap': 'Something was written, used and can be read.',
-                'needs a role you do not have': 'The friend already exists; the document did not.',
+                'needs a role you do not have': 'The owner already exists; the note did not.',
               } },
             { id: 'analytics-at-scale', text: 'Working with analytics on a product with a hundred thousand users.', answer: 'needs a role you do not have',
               feedback: {
@@ -919,19 +919,19 @@ export const guided20: Record<string, Guided> = {
       {
         question: 'Your top-ranked gap is working with engineers. Should that be the one you close?',
         options: [
-          { label: 'Only if you can close it with the access you already have. Frequency says which gap matters; access says which one you can close this month.', correct: true, feedback: 'Three weeks of open-source approaches produced one reply and no work. Dropping to the second-ranked gap produced a dated artefact in a fortnight.' },
-          { label: 'Yes, since it appeared in most of your listings.', feedback: 'It is the reason it is ranked first and not the reason it is closable.' },
-          { label: 'Yes, and give it longer than a fortnight.', feedback: 'Longer may work and it depends on other people deciding to include you, which is not a plan you control.' },
+          { label: 'Only if your current access lets you close it; otherwise take the highest gap you can close.', correct: true, feedback: 'Frequency says which gap matters; access says which one you can close this month. Three weeks of open-source approaches produced one reply and no work, while the second-ranked gap produced a dated artefact in a fortnight.', was: ['Only if you can close it with the access you already have. Frequency says which gap matters; access says which one you can close this month.'] },
+          { label: 'It should be, because it appeared in more of your listings than any other absence did.', feedback: 'That is why it is ranked first, not why it is closable.', was: ['Yes, since it appeared in most of your listings.'] },
+          { label: 'It should be, given longer than a fortnight and approached through several projects at once.', feedback: 'Longer may work, and it depends on other people deciding to include you, which is not a plan you control.', was: ['Yes, and give it longer than a fortnight.'] },
         ],
         repair: 'Choose a closable gap in step 1 and write why the one above it is not this month’s work. Record the change in step 5.',
         recheck: 'Your chosen gap can be closed with the access you already have.',
       },
       {
-        question: 'You completed a twelve-hour accessibility course with a certificate. Does the cell move?',
+        question: 'Your accessibility cell is partial because every check was self-run. You then complete a twelve-hour accessibility course with a certificate. Does the cell move?',
         options: [
-          { label: 'No. The row asks what you can show about testing with disabled people, and a certificate shows a completed course.', correct: true, feedback: 'Forty minutes with somebody who uses a screen reader produced two missed failures, a repair and a re-test. That moved the cell; the certificate sits beside it.' },
-          { label: 'Yes, since the course taught the skill.', feedback: 'It taught knowledge about it, which is worth having and is not the artefact the cell asks for.' },
-          { label: 'Partly — it should move from absent to partial.', feedback: 'The cell was already partial from self-run checks, and the course did not change what could be shown.' },
+          { label: 'It stays partial: the row asks what you can show about testing, and the certificate shows a course.', correct: true, feedback: 'Forty minutes with somebody who uses a screen reader produced two missed failures, a repair and a re-test; that moved the cell. The certificate sits beside it and carries none of the weight.', was: ['No. The row asks what you can show about testing with disabled people, and a certificate shows a completed course.'] },
+          { label: 'It moves to evidenced, since the course taught the skill the row describes and ended with an assessment.', feedback: 'It taught knowledge about the skill, which is worth having and is not the artefact the cell asks for.', was: ['Yes, since the course taught the skill.'] },
+          { label: 'It moves up a level, from partial to evidenced, with the certificate named as the artefact.', feedback: 'Naming the certificate as the artefact is the badge on the same gap: it shows the course, not the testing.', was: ['Partly — it should move from absent to partial.'] },
         ],
         repair: 'Do the smallest real work in step 3 and update the cell with the artefact in step 4. Record the change in step 5.',
         recheck: 'The cell names a dated artefact rather than a course.',
@@ -939,14 +939,23 @@ export const guided20: Record<string, Guided> = {
       {
         question: 'Shipping to production cannot be closed alone. What goes in your matrix?',
         options: [
-          { label: 'An honest statement of the gap with the nearest adjacent evidence named.', correct: true, feedback: 'Nobody closes it alone, and saying so is the answer rather than a confession. A handover document is not team experience and it is the closest artefact to it.' },
-          { label: 'A plan for how you would close it given the chance.', feedback: 'Fine to mention and it evidences nothing today.' },
-          { label: 'Nothing — leave the cell empty.', feedback: 'The empty cell is right and the sentence beside it is what you will actually use when asked.' },
+          { label: 'The cell stays absent, with a sentence naming the gap and your nearest adjacent evidence.', correct: true, feedback: 'Nobody closes it alone, and saying so is the answer rather than a confession. A handover note is not team experience and it is the closest artefact to it.', was: ['An honest statement of the gap with the nearest adjacent evidence named.'] },
+          { label: 'A plan for how you would close it given the chance, so that the cell reads as work in progress.', feedback: 'Fine to mention, and it evidences nothing today; a cell marked in progress invites the question you cannot answer.', was: ['A plan for how you would close it given the chance.'] },
+          { label: 'Nothing at all: leave the cell empty so that nobody reads it as more than it is.', feedback: 'The empty cell is right, and the sentence beside it is what you will actually use when asked.', was: ['Nothing — leave the cell empty.'] },
         ],
         repair: 'Write the honest sentence and the adjacent evidence in step 5. Record the change there too.',
         recheck: 'The statement names the gap and the nearest artefact you hold.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: Ravi wants to move from shop work to a junior bookkeeping job. His absences, ranked by how often listings named them: a specific accounting package, reconciling real accounts, and running payroll; spreadsheet formulas are partial (self-taught, no file to show). He has free evenings and a friend who runs a small café and keeps paper receipts.',
+      prompt: 'Choose one gap to close this month and the smallest work that would leave an artefact. Explain why that gap, and what he should say about one he cannot close yet.',
+      anchors: {
+        weak: 'Signs up for a course or certificate in the accounting package and calls the gap closed, or plans to tackle all of them at once.',
+        adequate: 'Chooses a gap his access allows, such as reconciling one month of the café’s receipts with the owner’s agreement, leaving a dated workbook as the artefact; the rest stay ranked.',
+        strong: 'Adequate, plus states payroll as needing a role he does not have, names the nearest adjacent evidence, and keeps the café’s figures private, sharing only a summary the owner has agreed to.',
+      },
+    },
     saveRoute: {
       auto: 'Your chosen gap, plan, what happened and the updated cell save as you type, on this device first and then online.',
       external: 'Recordings and consent records stay in your own folder. Nothing is published, and nothing here needs a paid course or a subscription.',
@@ -959,11 +968,13 @@ export const guided20: Record<string, Guided> = {
     worksheet: [
       { id: 'draft', title: 'Draft one page', fields: [
         { id: 'draft-entries', label: 'Your entries, in plain structure, on one page', kind: 'long' },
-        { id: 'did-happened', label: 'For each entry: what you did, and what happened', kind: 'long', hint: 'Two lines. What happened is a count where you measured, and a plain statement where you did not.' },
+        { id: 'did-happened', label: 'For each entry: what you did, and what happened', kind: 'long', hint: 'Two lines. What happened is a count with its period where you measured, and a plain statement where you did not. Avoid reduced or increased unless the evidence can carry the cause.' },
       ] },
       { id: 'map', title: 'Map every line', fields: [
         { id: 'traced-lines', label: 'Each line traced to a matrix cell or an artefact', kind: 'long' },
         { id: 'removed-rewritten', label: 'What you removed or rewrote because nothing was behind it', kind: 'long' },
+        { id: 'revision-source', label: 'One requirement from a vacancy you captured: the employer, the retrieval date and the requirement in its own words', kind: 'long', hint: 'Use your own capture from the gathering lesson, not this lesson’s examples. An expired listing still counts: the capture is what it said that day.' },
+        { id: 'revision-line', label: 'One of your lines before and after revising it to answer that requirement, and the artefact behind the after', kind: 'long', hint: 'Keep counts with their period, say who did what, and keep any condition that weakens the result. If you cannot evidence what the listing asks, leave it unclaimed.', example: 'Example (made up): before, “Measured the impact of a status page.” After, “Set up a tally with the owner: eleven progress-chasing calls in five working days before the shop changed its job slips, seven in the five after.” Artefact: the two tally sheets.' },
       ] },
       { id: 'labels', title: 'Label the categories', fields: [
         { id: 'categories-labelled', label: 'Each project marked self-directed, course or paid', kind: 'long' },
@@ -974,7 +985,7 @@ export const guided20: Record<string, Guided> = {
         { id: 'plain-read', label: 'What it looks like pasted into a plain text editor', kind: 'long' },
       ] },
       { id: 'challenge', title: 'The challenge pass', fields: [
-        { id: 'challenger-found', label: 'The lines somebody else challenged and you could not defend', kind: 'long' },
+        { id: 'challenger-found', label: 'The lines that were challenged and could not be defended, and who challenged: a person, by role, or your own labelled self-review', kind: 'long', hint: 'Nobody available? Wait a day, then ask of each line: what file is behind this, over what period, who did it? Label the result self-review; someone else’s challenge is still to come.' },
         { id: 'what-changed', label: 'What you rewrote or removed as a result', kind: 'long' },
         improvementMade,
       ] },
@@ -983,7 +994,7 @@ export const guided20: Record<string, Guided> = {
       { expect: 'A one-page draft in plain structure, each entry saying what you did and what happened.',
         fields: ['draft-entries', 'did-happened'],
         terms: [
-          { term: 'What happened', meaning: 'The outcome line. A count where you measured, and nothing was measured where you did not. Both are better than improved.' },
+          { term: 'What happened', meaning: 'The outcome line: a count with its period where you measured, and nothing was measured where you did not. Both are better than improved.' },
           { term: 'One page', meaning: 'What gets read. Everything that matters about three self-directed projects fits, and the second page is where unsupported lines collect.' },
         ],
         demo: {
@@ -991,7 +1002,7 @@ export const guided20: Record<string, Guided> = {
           beats: [
             { label: 'What I built', text: 'Two columns, a colour band, a skills section with proficiency bars, and my name set in something distinctive. It looked like the work of somebody who can design.' },
             { label: 'What happened when I pasted it into a plain text box', text: 'The columns interleaved. My job titles landed inside the middle of project descriptions, and one line read designed working alone Bengaluru 2024 research synthesis.' },
-            { label: 'Why that matters', text: 'Application systems extract the text. So does anybody copying a line into a message. A resume that cannot be parsed is not read carefully; it is skimmed and set aside.' },
+            { label: 'Why that matters', text: 'Many application systems extract the text. So does anybody copying a line into a message. A resume that cannot be parsed is not read carefully; it is skimmed and set aside.' },
             { label: 'What the bars were saying', text: 'Accessibility at seventy per cent. A number with no denominator, about a skill, invented. My own matrix says partial, with a reason.' },
             { label: 'What I have now', text: 'One column, plain headings, real text in the PDF, and the matrix words instead of bars. The portfolio shows the design.' },
           ],
@@ -999,28 +1010,41 @@ export const guided20: Record<string, Guided> = {
           tradeoff: 'A plain resume looks like everybody else’s at a glance, which is uncomfortable for exactly the reason it works.',
           uncertainty: 'Still unknown: whether any of the companies I applied to parse automatically. Two of the fourteen listings used a system that visibly did.',
         },
+        supported: {
+          material: 'Made-up record from the course’s practice repair-shop project. After the shop changed how it wrote its job slips, the owner’s tally showed eleven progress-chasing calls over the five working days before the change and seven over the five working days after. Nothing else was controlled. The status page you designed was only a demonstration that no customer used. You did the research; the owner kept the tally.',
+          question: 'Which outcome line could you defend under questioning?',
+          options: [
+            { label: 'Owner’s tally after the job-slip change: eleven progress calls in five working days before, seven in five after.', correct: true, feedback: 'Counts, each with its period, who kept them, and what changed. It claims what was counted and leaves the cause open, which is what survives the follow-up. Say separately that the page was a demonstration.' },
+            { label: 'Reduced progress calls from eleven a day to seven a day with a new status page, over two matched weeks.', feedback: 'The tally was eleven over five working days, not eleven a day; a day multiplies the claim by five. The page was a demonstration nobody used, so it cannot have reduced anything.' },
+            { label: 'Cut progress calls by 36 per cent in the first working week after the new job slips were introduced.', feedback: 'Four fewer calls out of eleven is 36 per cent, and the percentage is the part that travels without its tiny counts and its single uncontrolled comparison. Cut also claims the cause.' },
+            { label: 'Improved the shop’s customer communication, which the owner confirmed had reduced his interruptions.', feedback: 'The owner’s impression is worth quoting as his, and the line turns it into an outcome nobody measured.' },
+          ],
+          then: 'Now write your own what-happened lines with each count’s period, who counted, and what changed, leaving the cause open unless your evidence can carry it.',
+        },
         start: 'Write it as plain text first, and format afterwards.',
         enough: 'Every entry has a did line and a happened line.' },
-      { expect: 'Every line traced to a matrix cell or an artefact, with the untraceable ones removed or rewritten.',
-        fields: ['traced-lines', 'removed-rewritten'],
+      { expect: 'Every line traced to a matrix cell or artefact, untraceable ones removed or rewritten, and one line revised against a requirement from your captures.',
+        fields: ['traced-lines', 'removed-rewritten', 'revision-source', 'revision-line'],
         terms: [
           { term: 'Tracing', meaning: 'Putting the matrix beside the resume and checking line against cell. It takes twenty minutes and it is what makes the document defensible.' },
           { term: 'Untraceable', meaning: 'Nothing behind it. Either weaken it to what the artefact supports, or take it out.' },
+          { term: 'A count and its period', meaning: 'Eleven calls in five working days is not eleven a day; writing a day multiplies the claim by five. The period travels with the count.' },
+          { term: 'Revising against a capture', meaning: 'Rewriting one of your own lines to answer a requirement from a vacancy you captured, using only what your artefact supports. Not adopting a model line.' },
         ],
         sorter: {
-          intro: 'Six made up resume lines from a learner with three self-directed projects. For each one, decide what it is.',
+          intro: 'Seven made up resume lines from a learner with three self-directed projects. For each one, decide what it is.',
           options: ['maps to an artefact', 'claims more than the artefact', 'unverifiable — cut it'],
           items: [
-            { id: 'eleven-to-seven', text: '“Designed a job-status page for a repair shop; progress calls fell from eleven to seven a day over matched five-day periods.”', answer: 'maps to an artefact',
+            { id: 'eleven-to-seven', text: '“Researched how a repair shop handled progress calls; after it changed its job slips, the owner’s tally went from eleven calls over five working days to seven over the next five.”', answer: 'maps to an artefact',
               feedback: {
-                'maps to an artefact': 'Two tally sheets sit behind it, and the periods are stated. It survives the obvious follow-up question.',
-                'claims more than the artefact': 'It claims exactly what was counted, including the matching.',
+                'maps to an artefact': 'Two tally sheets sit behind it, the periods are stated, and the owner is named as the counter. It claims a count, not a cause, so it survives the obvious follow-up question.',
+                'claims more than the artefact': 'It claims exactly what was counted, per period, and leaves the cause open.',
                 'unverifiable — cut it': 'The sheets exist and are dated.',
               } },
             { id: 'led-design', text: '“Led design on three products.”', answer: 'claims more than the artefact',
               feedback: {
                 'maps to an artefact': 'The projects are real; led implies people led.',
-                'claims more than the artefact': 'Designed, working alone is the same work stated accurately. Led is the single commonest inflation on a junior resume.',
+                'claims more than the artefact': 'Designed, working alone is the same work stated accurately. Led is a very common inflation on a junior resume.',
                 'unverifiable — cut it': 'The underlying work is real and worth keeping.',
               } },
             { id: 'passionate-user-centred', text: '“Passionate about user-centred design.”', answer: 'unverifiable — cut it',
@@ -1037,7 +1061,7 @@ export const guided20: Record<string, Guided> = {
               } },
             { id: 'not-measured', text: '“Redesigned a booking flow as self-directed practice; nothing was measured, and the prototype was tested with five people.”', answer: 'maps to an artefact',
               feedback: {
-                'maps to an artefact': 'Session notes behind it, and the absence stated rather than papered over. Nothing was measured is a line that gets respect in interviews.',
+                'maps to an artefact': 'Session notes behind it, and the absence stated rather than papered over. Nothing was measured is a line that tends to hold up in interviews.',
                 'claims more than the artefact': 'It claims less than most people would.',
                 'unverifiable — cut it': 'The notes and the prototype both exist.',
               } },
@@ -1047,9 +1071,15 @@ export const guided20: Record<string, Guided> = {
                 'claims more than the artefact': 'There is real iteration behind it, and engagement is a measurement nobody took. State the change and the re-test instead.',
                 'unverifiable — cut it': 'The iteration record is real; only the outcome word is unsupported.',
               } },
+            { id: 'calls-a-day', text: '“My status page cut the shop’s progress calls from eleven a day to seven a day.”', answer: 'claims more than the artefact',
+              feedback: {
+                'maps to an artefact': 'The sheets show eleven calls over five working days, after a job-slip change, which is a different and much smaller claim.',
+                'claims more than the artefact': 'Three inflations in one line: a day multiplies the counts by five, cut claims a cause, and the status page was a demonstration nobody used.',
+                'unverifiable — cut it': 'There is an artefact behind it; the line misreports what the artefact says.',
+              } },
           ],
           then: 'Now put your matrix beside your draft and trace each line to a cell or a file.',
-          pattern: 'Two of these map cleanly, two are real work described too largely, and two say nothing a reader could check. The two inflations both come from borrowing a word — led, engagement — that belongs to a bigger job than the one you did.',
+          pattern: 'Two of these map cleanly, three are real work described too largely, and two say nothing a reader could check. The inflations come from borrowing a word — led, engagement, cut — or a unit, a day, that makes the work bigger than the record.',
         },
         start: 'Open the matrix beside the draft and go line by line.',
         enough: 'Every remaining line has a cell or a file behind it.' },
@@ -1069,11 +1099,12 @@ export const guided20: Record<string, Guided> = {
         ],
         start: 'Export, then select a line in the PDF and copy it.',
         enough: 'The pasted version reads in a sensible order.' },
-      { expect: 'Somebody else challenging every line, with what you could not defend rewritten.',
+      { expect: 'Every line challenged — by somebody else, or by a labelled self-review if nobody is available — with what you could not defend rewritten.',
         fields: ['challenger-found', 'what-changed', 'improvement-made'],
         terms: [
           { term: 'The challenge pass', meaning: 'Somebody asking, of each line, what is behind this. Twenty minutes, and it finds what your own reading cannot.' },
           { term: 'Could not defend', meaning: 'The answer came out vague, or louder. Both mean the line claims more than the artefact.' },
+          { term: 'Self-review', meaning: 'The solo route: the same questions put to each line a day later. Better than a re-read, weaker than another person, and labelled as such.' },
           { term: 'Repair', meaning: 'The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.' },
         ],
         demo: {
@@ -1089,26 +1120,26 @@ export const guided20: Record<string, Guided> = {
           tradeoff: 'It means handing a document you are slightly proud of to somebody who has been asked to question every line of it.',
           uncertainty: 'Still unknown: how many remain. She was not a designer, and a designer might have pushed on different lines.',
         },
-        start: 'Hand it to somebody and ask them to question every line, not to proofread.',
+        start: 'Hand it to somebody and ask them to question every line, not to proofread. Nobody available: put the three questions to each line a day later.',
         enough: 'You recorded what you could not defend and what changed.' },
     ],
     checks: [
       {
         question: 'You are a designer. Should the resume show design?',
         options: [
-          { label: 'No. It should be clear and extractable; the portfolio shows design. A resume that cannot be parsed is skimmed and set aside.', correct: true, feedback: 'Two columns interleaved in plain text produced designed working alone Bengaluru 2024 research synthesis. Application systems and people copying lines both extract text.' },
-          { label: 'Yes, in a restrained way that still parses.', feedback: 'Restrained and parsing is just plain, arrived at cautiously.' },
-          { label: 'Yes, since it is a chance to demonstrate craft.', feedback: 'The craft on show is layout of a document nobody asked you to lay out.' },
+          { label: 'It should be clear and extractable as plain text; the portfolio is where the design is shown.', correct: true, feedback: 'Two columns pasted into plain text produced designed working alone Bengaluru 2024 research synthesis. Many application systems, and anybody copying a line, extract the text first.', was: ['No. It should be clear and extractable; the portfolio shows design. A resume that cannot be parsed is skimmed and set aside.'] },
+          { label: 'It should show design with restraint: a careful two-column layout that still reads as text.', feedback: 'Two columns are exactly what interleaves when extracted; restrained and parsing is just plain, arrived at cautiously.', was: ['Yes, in a restrained way that still parses.'] },
+          { label: 'It should show design, since a designer’s resume is the first sample of craft anyone sees.', feedback: 'The craft on show would be the layout of a document nobody asked you to lay out; the portfolio is the sample.', was: ['Yes, since it is a chance to demonstrate craft.'] },
         ],
         repair: 'Check the export in step 4: select a line, copy it, and read the plain-text version. Record the change in step 5.',
         recheck: 'The pasted version reads in a sensible order.',
       },
       {
-        question: 'Your resume says “led design on three products”. All three were done alone. Is that acceptable shorthand?',
+        question: 'Your resume says “led design on three products”. All three were self-directed and you worked alone. What should the line say?',
         options: [
-          { label: 'No. Led implies people led. Designed, working alone is the same work stated accurately.', correct: true, feedback: 'It is the commonest inflation on a junior resume, and it is the first line a challenge pass catches. The work behind it is real and worth keeping.' },
-          { label: 'Yes, since you did lead the design decisions.', feedback: 'Everybody who designs alone makes the decisions, and led is not the word for it.' },
-          { label: 'Yes, if the category label says self-directed.', feedback: 'The label helps and the verb still claims a team.' },
+          { label: 'Designed, working alone, on three self-directed projects: the same work, stated accurately.', correct: true, feedback: 'Led implies people led. It is a common inflation on a junior resume and the first line a challenge pass catches; the work behind it is real and worth keeping.', was: ['No. Led implies people led. Designed, working alone is the same work stated accurately.'] },
+          { label: 'Led design on three products, since you made every design decision on each of them yourself.', feedback: 'Everybody who designs alone makes the decisions, and led is not the word for that.', was: ['Yes, since you did lead the design decisions.'] },
+          { label: 'Led design on three products, with each entry’s category label saying self-directed practice.', feedback: 'The label helps, and the verb still claims a team.', was: ['Yes, if the category label says self-directed.'] },
         ],
         repair: 'Trace the line to a matrix cell in step 2 and rewrite it. Record the change in step 5.',
         recheck: 'Every remaining line has a cell or a file behind it.',
@@ -1116,18 +1147,34 @@ export const guided20: Record<string, Guided> = {
       {
         question: 'Why have somebody else challenge each line rather than re-reading it yourself?',
         options: [
-          { label: 'Because your own reading supplies the evidence from memory, and theirs asks what is behind this.', correct: true, feedback: 'Four lines could not be defended in one twenty-minute pass. An answer that comes out vague, or louder, marks a line claiming more than the artefact.' },
-          { label: 'To catch typing errors and formatting problems.', feedback: 'A proofread is a different job. Ask for challenge rather than correction.' },
-          { label: 'Because a second opinion on wording is useful.', feedback: 'It is, and the point here is which lines have nothing behind them.' },
+          { label: 'Your own reading supplies the evidence from memory; theirs asks what is behind each line.', correct: true, feedback: 'Four lines could not be defended in one twenty-minute pass. With nobody available, the written questions put a day later are the labelled substitute, and they are weaker for the same reason.', was: ['Because your own reading supplies the evidence from memory, and theirs asks what is behind this.'] },
+          { label: 'A second reader catches the typing errors and formatting slips that you stop seeing yourself.', feedback: 'A proofread is a different job; ask for challenge rather than correction.', was: ['To catch typing errors and formatting problems.'] },
+          { label: 'A second opinion on wording makes each line read more smoothly to somebody who has not met you.', feedback: 'Smoother wording is useful, and the point here is which lines have nothing behind them.', was: ['Because a second opinion on wording is useful.'] },
         ],
         repair: 'Run the challenge pass in step 5 and record what you could not defend.',
         recheck: 'You recorded what you could not defend and what changed.',
       },
     ],
+    material: [
+      'Made-up evidence record from the course’s practice repair-shop project, used in this lesson’s examples. It is not your data; use your own records for your own lines.',
+      'Research: five sessions — two interviews, one observation and two short conversations — all reached through the owner. Before the project, the owner estimated six to ten progress calls a day; he had never counted them.',
+      'What changed: the shop changed how it wrote its job slips. The status page was only a demonstration; no customer used it.',
+      'Count: the owner’s tally recorded eleven progress-chasing calls over the five working days before the job-slip change and seven over the five working days after. It is one uncontrolled comparison, and he thinks he missed a few marks on the busiest day.',
+      'Who did what: the learner did the research and designed and built the demonstration page alone; the owner changed the job slips and kept the tally; a friend who writes software reviewed the page’s HTML and fixed one date bug.',
+    ],
+    transfer: {
+      scenario: 'Made-up case: A friend applying to supervise a café wrote on his CV: “Increased weekend sales by 40% through better staff scheduling.” His notes: he took over the weekend rota for four weekends, which the manager approved; the till averaged about 250 sales a weekend over the four weekends before and about 350 over the four after; the café launched a weekend brunch menu the same month.',
+      prompt: 'Rewrite the line so it survives questioning, and explain each change you made.',
+      anchors: {
+        weak: 'Keeps “40%” or “increased sales through”, or drops the numbers entirely without saying why.',
+        adequate: 'States what he did (drafted the weekend rota, approved by the manager) and the counts with their period — about 250 sales a weekend before, 350 after, four weekends each — without claiming the rota caused the rise.',
+        strong: 'Adequate, plus names the brunch menu as a competing explanation, in the line or ready for the interview, and keeps ownership exact: he drafted, the manager approved.',
+      },
+    },
     saveRoute: {
       auto: 'Your draft, the trace, the labels and the challenge notes save as you type, on this device first and then online.',
       external: 'The PDF stays in your own folder. No resume service, template subscription or review product is needed at any point.',
-      creator: 'Your creator reads the lines you could not defend. Four or five is normal on a first pass; none usually means the challenge was a proofread.',
+      creator: 'Your creator reads the challenged lines, your line revised against a capture, and what changed. A record with no challenged lines should say which questions were asked, so a challenge can be told apart from a proofread.',
       next: 'Open Your work and choose Ready for review. The next lesson takes the same discipline to what you send an employer.',
     },
   },
