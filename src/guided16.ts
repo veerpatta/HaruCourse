@@ -221,20 +221,20 @@ export const guided16: Record<string, Guided> = {
     route: textRoute,
     worksheet: [
       { id: 'choose', title: 'Three tasks, and a prediction', fields: [
-        { id: 'three-tasks', label: 'Three real tasks of different kinds', kind: 'long' },
-        { id: 'predictions', label: 'For each: whether you expect assistance to help, and why', kind: 'long', hint: 'Predicting first is what makes the result informative rather than a story you tell afterwards.' },
-        { id: 'access-route', label: 'What you are using, or that you have no access', kind: 'short', hint: 'Any free tier is fine. With no access: write the three tasks, predict what assistance would produce, and record what you did instead. That is a complete answer.' },
+        { id: 'three-tasks', label: 'Three tasks of different kinds: real ones, or Outputs 1 to 3 from the source notes', kind: 'long' },
+        { id: 'predictions', label: 'For each: whether you expect assistance to help, and why', kind: 'long', hint: 'Predicting first is what makes the result informative rather than a story you tell afterwards. On the supplied route, predict what you expect to be wrong in each output before checking it.' },
+        { id: 'access-route', label: 'What you are using: a free tool you already have, or the supplied outputs', kind: 'short', hint: 'Any free tier is fine; never start a trial or create an account for this. With no tool, or if you prefer not to use one, Outputs 1 to 3 in the source notes are your three tasks. That is a complete route, labelled supplied practice.' },
       ] },
       { id: 'run', title: 'Run them', fields: [
-        { id: 'raw-kept', label: 'Where you kept the raw output before editing', kind: 'short', hint: 'Keep it. Once you have edited, you will not remember how much of it was yours.' },
-        { id: 'within-rules', label: 'Anything you declined to do because of your data rules', kind: 'long' },
+        { id: 'raw-kept', label: 'Where you kept the raw output before editing', kind: 'short', hint: 'Keep it. Once you have edited, you will not remember how much of it was yours. On the supplied route the raw output is the supplied text: keep it unedited beside your corrections.' },
+        { id: 'within-rules', label: 'Anything you declined to do because of your data rules', kind: 'long', hint: 'On the supplied route, write what you would have refused to paste into a tool, and why.' },
       ] },
       { id: 'verify', title: 'Verify', fields: [
         { id: 'checked-what', label: 'Every fact, term, number and claim you checked, and against what', kind: 'long' },
         { id: 'wrong-or-unverifiable', label: 'Anything that was wrong or that you could not verify', kind: 'long' },
       ] },
       { id: 'saving', title: 'The real saving', fields: [
-        { id: 'time-including', label: 'Time spent on each, including editing and verification', kind: 'long' },
+        { id: 'time-including', label: 'Time spent on each, including editing and verification', kind: 'long', hint: 'On the supplied route you cannot time generation: record the minutes spent checking and correcting, and your estimate of doing the task by hand, and say which is which.' },
         { id: 'accepted-anyway', label: 'Anything you accepted that you would not have written yourself', kind: 'long', hint: 'This is the cost nobody counts. A phrase you would not have chosen, kept because rewriting it felt fussy.' },
       ] },
       { id: 'pattern', title: 'The pattern', fields: [
@@ -248,7 +248,7 @@ export const guided16: Record<string, Guided> = {
         fields: ['three-tasks', 'predictions', 'access-route'],
         terms: [
           { term: 'Predicting first', meaning: 'Writing what you expect before running it. Without it, the result becomes whatever story is easiest to tell afterwards.' },
-          { term: 'No access', meaning: 'A complete route through this lesson. Predict what assistance would produce, do the task, and record what you actually did.' },
+          { term: 'No access', meaning: 'A complete route through this lesson. Use the supplied Outputs 1 to 3 as your three tasks: predict what is wrong in each, then check each against its source.' },
         ],
         demo: {
           scenario: 'Made-up example. Choosing three tasks to test assistance on, and choosing three of the same kind.',
@@ -271,7 +271,7 @@ export const guided16: Record<string, Guided> = {
           { term: 'Raw output', meaning: 'What came back before you edited it. Kept, it shows how much of the final thing was yours; unkept, you will overestimate the help.' },
           { term: 'Declining under the rules', meaning: 'Refusing a task the data rule covers. It belongs in the log as a result rather than as a gap.' },
         ],
-        start: 'Paste the raw output into a file before you touch it.',
+        start: 'Paste the raw output into a file before you touch it; on the supplied route, copy the output from the source notes unchanged.',
         enough: 'You can still see what came back before your editing.' },
       { expect: 'Every fact, term, number and claim checked against a named source, with anything wrong or unverifiable recorded.',
         fields: ['checked-what', 'wrong-or-unverifiable'],
@@ -338,11 +338,11 @@ export const guided16: Record<string, Guided> = {
                 'a hidden cost': 'It is more than a cost. A confidently invented standard would have been quoted at an engineer.',
                 'a reason to stop': 'For this class of task, yes: anything where a fabricated specific would be repeated as fact.',
               } },
-            { id: 'notes-refused', text: 'A task refused under the data rule and done by hand in two hours.', answer: 'a real saving',
+            { id: 'notes-refused', text: 'A task refused under the data rule and done by hand in two hours.', answer: 'a reason to stop',
               feedback: {
-                'a real saving': 'Not of time. It produced the contradiction that became the finding, which is what the log should record: nothing saved, something gained.',
-                'a hidden cost': 'The two hours are a cost and they bought the main result of the study.',
-                'a reason to stop': 'The rule already stopped it, which is the rule working.',
+                'a real saving': 'The two hours saved nothing; they bought the study’s main finding, which the log records as gained rather than saved.',
+                'a hidden cost': 'The two hours are the cost of doing it by hand, and the right cost: the rule had already decided this was not a task for assistance.',
+                'a reason to stop': 'This class of task is a stop before any quality argument starts: participant notes never go in, and doing it by hand produced the finding.',
               } },
             { id: 'generic-list', text: 'A list of what users typically want, fluent and unsourced, produced in seconds.', answer: 'a reason to stop',
               feedback: {
@@ -352,10 +352,10 @@ export const guided16: Record<string, Guided> = {
               } },
           ],
           then: 'Now log your own three the same way, including the things that do not appear in a time count.',
-          pattern: 'Two of the six are stops rather than costs, and both have the same shape: a fluent answer standing in for something only evidence could supply. Those are the ones that reach a document and get quoted.',
+          pattern: 'Three of the six are stops rather than costs. Two share a shape — a fluent answer standing in for something only evidence could supply — and those are the ones that reach a document and get quoted. The third was settled by the data rule before anybody asked how good the output would be.',
         },
         start: 'Write down the editing and verification minutes before the production minutes.',
-        enough: 'At least one of your three has an honest total that is worse than you predicted.' },
+        enough: 'Each task has an honest total compared with your prediction, whichever way it came out.' },
       { expect: 'A pattern across the three errors, and any change to your assistance rules.',
         fields: ['error-pattern', 'rules-updated', 'improvement-made'],
         terms: [
@@ -399,7 +399,7 @@ export const guided16: Record<string, Guided> = {
     ],
     saveRoute: {
       auto: 'Your predictions, the logs, the verification records and the pattern save as you type, on this device first and then online.',
-      external: 'Keep the raw outputs in your own folder so the comparison survives. Nothing from any participant goes into either place.',
+      external: 'Keep the raw outputs in your own folder so the comparison survives; on the supplied route, keep your corrected copy beside the original. Nothing from any participant goes into either place.',
       creator: 'Your creator reads the honest totals and what you accepted rather than chose. A log where everything saved time usually means the editing was not counted.',
       next: 'Open Your work and choose Ready for review. The next lesson moves from your own use to designing something other people will use.',
     },
@@ -435,7 +435,7 @@ export const guided16: Record<string, Guided> = {
         { id: 'no-irreversible', label: 'How you ensured nothing irreversible follows from a suggestion alone', kind: 'short' },
       ] },
       { id: 'reject', title: 'One display you rejected', fields: [
-        { id: 'rejected-display', label: 'A confidence display you designed and rejected, with the reason', kind: 'long' },
+        { id: 'rejected-display', label: 'A confidence display you designed and rejected, with the reason', kind: 'long', sensitive: true, hint: 'If you asked readers, describe them by role rather than name and keep their exact words in a private note with a date to delete it. Alone, write what the display asks a reader to decide and label it as your reasoning, not a test.' },
         improvementMade,
       ] },
     ],
@@ -497,7 +497,7 @@ export const guided16: Record<string, Guided> = {
               } },
             { id: 'eighty-seven', text: '87 per cent confidence.', answer: 'looks quantitative and helps nobody',
               feedback: {
-                'helps them judge it': 'Most readers cannot convert it into a decision, and anything above about seventy reads as certainty.',
+                'helps them judge it': 'Most readers cannot turn it into a decision, and a high number is easily read as a promise.',
                 'looks quantitative and helps nobody': 'It has the appearance of rigour and no usable meaning for a reader. It also makes the occasional wrong high-confidence answer feel like a betrayal.',
                 'tells them nothing': 'It tells them something; the problem is that what they read is not what it means.',
               } },
@@ -558,8 +558,8 @@ export const guided16: Record<string, Guided> = {
           { term: 'Designing then rejecting', meaning: 'Drawing the thing before deciding against it. It is what makes the rejection a decision rather than an opinion about a thing you never tried.' },
           { term: 'Repair', meaning: 'The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.' },
         ],
-        start: 'Draw the percentage version, show it to two people, and ask what they would do differently at 70 and at 90.',
-        enough: 'Your reason comes from what somebody said rather than from the principle alone.' },
+        start: 'Draw the percentage version. Ask two people what they would do differently at 70 and at 90, or write that walk-through yourself and label it as reasoning.',
+        enough: 'Your reason names what a reader would do with the number, from what somebody said or from your labelled walk-through.' },
     ],
     checks: [
       {
@@ -820,7 +820,7 @@ export const guided16: Record<string, Guided> = {
       ] },
       { id: 'harmful', title: 'Harmful output', fields: [
         { id: 'reporting-route', label: 'The reporting route, and the route to a person', kind: 'long' },
-        { id: 'accountable-owner', label: 'Who is accountable for reading reports', kind: 'short', hint: 'A role or a name. Reports nobody owns are collected and never read.' },
+        { id: 'accountable-owner', label: 'Who is accountable for reading reports', kind: 'short', hint: 'A role, such as the coordinator; use roles rather than people’s names in this synced answer. Reports nobody owns are collected and never read.' },
         { id: 'read-by-person', label: 'How the interface says reports are read by a person', kind: 'short' },
       ] },
       { id: 'wording', title: 'Check the wording', fields: [
@@ -1018,6 +1018,7 @@ export const guided16: Record<string, Guided> = {
         { id: 'first-time', label: 'Which is better for a first-time user, and why', kind: 'long' },
         { id: 'repeat-user', label: 'Which is better for somebody doing this for the tenth time', kind: 'short' },
         { id: 'on-a-phone', label: 'Which is better for somebody typing on a phone', kind: 'short' },
+        { id: 'less-fluent', label: 'Which is better for somebody less comfortable in the interface language, and why', kind: 'short', hint: 'Composing a request is harder than recognising an option for many people writing in a second language. Say what each version asks of them.' },
       ] },
       { id: 'decide', title: 'Decide, and record what you lost', fields: [
         { id: 'decision', label: 'Your decision and the reasoning', kind: 'long' },
@@ -1063,8 +1064,8 @@ export const guided16: Record<string, Guided> = {
         },
         start: 'Count the taps for the common case in your structured version, honestly.',
         enough: 'The comparison has a number on one side rather than two impressions.' },
-      { expect: 'Both versions compared for a first-time user, a tenth-time user, and somebody typing on a phone.',
-        fields: ['first-time', 'repeat-user', 'on-a-phone'],
+      { expect: 'Both versions compared for a first-time user, a tenth-time user, somebody typing on a phone, and somebody less fluent in the interface language.',
+        fields: ['first-time', 'repeat-user', 'on-a-phone', 'less-fluent'],
         terms: [
           { term: 'First-time user', meaning: 'Somebody who does not know what is possible. Structure tells them; a text box asks them to guess.' },
           { term: 'Typing on a phone', meaning: 'The condition that changes the answer most. Composing a sentence with a thumb is several times the effort of tapping three filters.' },
@@ -1207,9 +1208,9 @@ export const guided16: Record<string, Guided> = {
         { id: 'chosen-version', label: 'The decision-level version, in at most two sentences', kind: 'long', example: 'Example (made up): Suggested from tools you borrowed before and the times you usually collect. Dismissing a suggestion stops similar ones appearing.' },
       ] },
       { id: 'predict', title: 'The prediction test', fields: [
-        { id: 'who-tested', label: 'Who read it, or how you tested it alone', kind: 'short', hint: 'Two people is enough. Alone: leave it a day and predict from the wording without looking at the design.' },
-        { id: 'their-predictions', label: 'What each of them said the system would suggest next', kind: 'long' },
-        { id: 'how-to-change', label: 'Whether each of them knew how to change it', kind: 'short' },
+        { id: 'who-tested', label: 'Who read it, or how you tested it alone', kind: 'short', sensitive: true, hint: 'Describe readers by role, never by name (for example, a friend who has never used a tool library). Two people is enough. Alone: leave it a day, predict from the wording without looking at the design, and label it a self-check.' },
+        { id: 'their-predictions', label: 'What each reader predicted the system would suggest next, or what you predicted on the self-check', kind: 'long', sensitive: true, hint: 'A summary without names. Keep anybody’s exact words in a private note with a date to delete it. A self-check tests the wording, not what a fresh reader would think.' },
+        { id: 'how-to-change', label: 'Whether each reader, or you on the self-check, knew how to change it', kind: 'short', sensitive: true },
       ] },
       { id: 'simplify', title: 'What you left out', fields: [
         { id: 'omissions', label: 'Everything your explanation omits', kind: 'long' },
@@ -1261,9 +1262,10 @@ export const guided16: Record<string, Guided> = {
         },
         start: 'Write the technical version first and then try to cut it to two sentences somebody could act on.',
         enough: 'Your chosen version names what it used and what would change it.' },
-      { expect: 'Two people reading the chosen explanation and predicting the next output, with whether each knew how to change it.',
+      { expect: 'Readers — two people, or you after a day’s gap, labelled as a self-check — predicting the next output from the explanation, and whether they knew how to change it.',
         fields: ['who-tested', 'their-predictions', 'how-to-change'],
         terms: [
+          { term: 'Self-check', meaning: 'Predicting from your own wording after a day away, when nobody else is available. It catches unclear wording; it is not evidence about other readers, and it is labelled that way.' },
           { term: 'The prediction test', meaning: 'Asking somebody what the system will do next after reading only the explanation. It is the only test that distinguishes an explanation from reassurance.' },
           { term: 'Knowing how to change it', meaning: 'The second half. An explanation that supports prediction but offers no lever leaves somebody informed and stuck.' },
         ],
@@ -1312,7 +1314,7 @@ export const guided16: Record<string, Guided> = {
           pattern: 'The per-item basis is the strongest form and the rarest. Explaining the feature lets somebody understand it; explaining this particular output lets them judge it, and judging is the thing they are actually doing.',
         },
         start: 'Show the wording alone, with no screens, and ask what they think will come next.',
-        enough: 'You wrote what they said rather than whether they got it right.' },
+        enough: 'You recorded what was predicted, not only whether it was right, and labelled a self-check as one.' },
       { expect: 'Everything the explanation omits, with why no omission would produce a wrong prediction.',
         fields: ['omissions', 'omission-safe'],
         terms: [
@@ -1377,8 +1379,8 @@ export const guided16: Record<string, Guided> = {
     ],
     saveRoute: {
       auto: 'Your three versions, the prediction results and the omissions save as you type, on this device first and then online.',
-      external: 'Nothing here needs a file outside the worksheet. If you tested with two people, keep their words rather than your summary.',
-      creator: 'Your creator reads what the two readers predicted. An explanation nobody has predicted from is an explanation nobody has tested.',
+      external: 'If two people read it, keep their exact words in a private local note with a date to delete it; the worksheet holds your summary without names.',
+      creator: 'Your creator reads what your readers predicted, or your labelled self-check. A self-check is preparation for a reader test, not a result from one.',
       next: 'Open Your work and choose Ready for review. The next lesson specifies what the feature knows about people.',
     },
     transfer: {
@@ -1424,7 +1426,7 @@ export const guided16: Record<string, Guided> = {
           { term: 'Marginal', meaning: 'Makes it slightly better. It is the category most collection falls into, and the one nobody examines.' },
         ],
         start: 'List what it needs, then remove one thing and ask how much worse it actually gets.',
-        enough: 'Something is on the removed list with its cost written beside it.' },
+        enough: 'Each item kept has a reason, and anything removed as marginal has its cost written beside it.' },
       { expect: 'A disclosure sentence shown in the interface before the feature starts working.',
         fields: ['disclosure-wording', 'when-shown'],
         terms: [
@@ -1603,9 +1605,10 @@ export const guided16: Record<string, Guided> = {
         { id: 'how-reported', label: 'How you will report the results', kind: 'short', hint: 'Counts, with the number of people. Not rates.' },
       ] },
       { id: 'run', title: 'Run a small version', fields: [
-        { id: 'ran-with', label: 'Who you ran it with, and what outputs you used', kind: 'short', hint: 'Two or three people and scripted outputs is a complete answer. Write the suggestion sets by hand.' },
-        { id: 'counts', label: 'The counts', kind: 'long' },
-        { id: 'surprised', label: 'Anything that surprised you', kind: 'long' },
+        { id: 'run-status', label: 'Did your small version run with other people?', kind: 'choice', options: ['Yes: two or three people judged the scripted sets', 'Not yet: self-pilot only, with a dated note of who could not be reached'] },
+        { id: 'ran-with', label: 'Who took part, by role not name, and which scripted sets you used, or who you tried to reach and when', kind: 'short', sensitive: true, hint: 'Two or three people and hand-written suggestion sets is a complete answer. With nobody available, mark your own trial run of the marking sheet as a self-pilot and give the date and roles of those you could not reach.' },
+        { id: 'counts', label: 'The counts, with the number of people', kind: 'long', sensitive: true, requiredWhen: { field: 'run-status', values: ['Yes: two or three people judged the scripted sets'] }, hint: 'Counts only, no names. A self-pilot produces no counts about other people.' },
+        { id: 'surprised', label: 'Anything that surprised you, in the sessions or the self-pilot', kind: 'long', sensitive: true, hint: 'Describe what happened without names. Keep raw session notes in a private file with a date to delete them.' },
       ] },
       { id: 'limits', title: 'What you cannot evaluate', fields: [
         { id: 'cannot-evaluate', label: 'What cannot be evaluated at your scale', kind: 'long', hint: 'Any comparison with a baseline, any effect on behaviour, anything about people who never open it.' },
@@ -1704,9 +1707,10 @@ export const guided16: Record<string, Guided> = {
         },
         start: 'Write the three categories before designing anything else; they decide what the session can find.',
         enough: 'Your categories separate useful from already-known.' },
-      { expect: 'A small version actually run with two or three people using scripted outputs, with counts and anything surprising.',
-        fields: ['ran-with', 'counts', 'surprised'],
+      { expect: 'A small version run with two or three people using scripted outputs, with counts — or a labelled self-pilot and a dated note of who could not be reached.',
+        fields: ['run-status', 'ran-with', 'counts', 'surprised'],
         terms: [
+          { term: 'Self-pilot', meaning: 'Running the session on yourself when nobody is available. It shows whether the sheet and categories work; it is not an evaluation of the feature and reports no counts.' },
           { term: 'Scripted outputs', meaning: 'Suggestion sets written by hand. They are better than generated ones here, because you can include the failures you need to see judged.' },
           { term: 'Counts', meaning: 'Two of three, eleven of thirty. The sample travels with the number, as Module 15 established.' },
         ],
@@ -1724,7 +1728,7 @@ export const guided16: Record<string, Guided> = {
           uncertainty: 'Still unknown: whether two in ten is the right proportion. It is what a rough version of the feature produced, and the effect of ordering suggests the number matters as much as the proportion.',
         },
         start: 'Write the suggestion sets by hand, including two you expect to be marked irrelevant.',
-        enough: 'You have counts from real people rather than your own judgements.' },
+        enough: 'Counts come only from other people; a self-pilot reports what it showed about the sheet, never counts.' },
       { expect: 'What cannot be evaluated at your scale, named specifically.',
         fields: ['cannot-evaluate', 'improvement-made'],
         terms: [
@@ -1768,7 +1772,7 @@ export const guided16: Record<string, Guided> = {
     ],
     saveRoute: {
       auto: 'Your definition, the error preference, the session design and the counts save as you type, on this device first and then online.',
-      external: 'Keep the hand-written suggestion sets in your own folder. They are the material for the next lesson’s sessions.',
+      external: 'Keep the hand-written suggestion sets in your own folder; they are the material for the next lesson’s sessions. Raw session notes stay in a private file with a date to delete them; only counts without names belong here.',
       creator: 'Your creator reads the already-knew counts. A feature with a high count there is working by the model’s standard and not by anybody else’s.',
       next: 'Open Your work and choose Ready for review. The next lesson runs sessions with scripted outputs rather than a model.',
     },
@@ -1794,15 +1798,16 @@ export const guided16: Record<string, Guided> = {
         { id: 'tasks-observe', label: 'The tasks, and what you will be watching for', kind: 'long' },
       ] },
       { id: 'run', title: 'Three sessions', fields: [
-        { id: 'sessions-run', label: 'Who took part, and what happened in each', kind: 'long', hint: 'Three people is enough. With nobody available, run it yourself after a day and label it a self-pilot.' },
-        { id: 'noticed-checked-accepted', label: 'For each wrong output: noticed, checked, or accepted', kind: 'long' },
+        { id: 'session-status', label: 'Did sessions with other people take place?', kind: 'choice', options: ['Yes: up to three people used the prototype', 'Not yet: self-pilot only, with a dated note of who could not be reached'] },
+        { id: 'sessions-run', label: 'What happened in each session, without names, or what your self-pilot showed and who you tried to reach, dated', kind: 'long', sensitive: true, hint: 'Up to three people is enough. Describe them by role and keep raw notes in a private file with a date to delete them. A self-pilot finds broken tasks and unclear scripts; it cannot show what a first-time reader notices.' },
+        { id: 'noticed-checked-accepted', label: 'For each wrong output: noticed, checked, or accepted', kind: 'long', sensitive: true, requiredWhen: { field: 'session-status', values: ['Yes: up to three people used the prototype'] } },
       ] },
       { id: 'analyse', title: 'What the acceptance showed', fields: [
-        { id: 'accepted-count', label: 'How many wrong outputs were accepted unchecked', kind: 'short', hint: 'Counts with the number of people, as Module 15 established.' },
-        { id: 'what-prompted', label: 'What prompted anybody who did check', kind: 'long' },
+        { id: 'accepted-count', label: 'How many wrong outputs were accepted unchecked', kind: 'short', sensitive: true, requiredWhen: { field: 'session-status', values: ['Yes: up to three people used the prototype'] }, hint: 'Counts with the number of people, as Module 15 established.' },
+        { id: 'what-prompted', label: 'What prompted anybody who did check', kind: 'long', sensitive: true, requiredWhen: { field: 'session-status', values: ['Yes: up to three people used the prototype'] } },
       ] },
       { id: 'change', title: 'Change one thing', fields: [
-        { id: 'design-change', label: 'The one design change you made from what you observed', kind: 'long' },
+        { id: 'design-change', label: 'The one design change you made, and whether it came from a session or from the self-pilot', kind: 'long' },
         improvementMade,
       ] },
     ],
@@ -1846,8 +1851,8 @@ export const guided16: Record<string, Guided> = {
         ],
         start: 'Extend your existing consent introduction with one sentence about the prepared responses.',
         enough: 'Nobody in the session believes they are using a working system.' },
-      { expect: 'Three sessions run, with each wrong output recorded as noticed, checked or accepted.',
-        fields: ['sessions-run', 'noticed-checked-accepted'],
+      { expect: 'Sessions with up to three people, each wrong output recorded as noticed, checked or accepted — or a labelled self-pilot with a dated note of who could not be reached.',
+        fields: ['session-status', 'sessions-run', 'noticed-checked-accepted'],
         terms: [
           { term: 'Noticed, checked, accepted', meaning: 'Three different outcomes. Noticing and doing nothing is common; accepting without noticing is the one the design has to prevent.' },
           { term: 'Self-pilot', meaning: 'Running it yourself when nobody is available. It finds broken tasks and unclear wording, and it cannot tell you what a first-time reader does.' },
@@ -1866,8 +1871,8 @@ export const guided16: Record<string, Guided> = {
           uncertainty: 'Still unknown: what the first participant would have done. One session of three produced nothing usable on the main question, because of me.',
         },
         start: 'Decide before the session that you will say nothing when the wrong output appears.',
-        enough: 'Every wrong output has a recorded outcome rather than a description of what you said.' },
-      { expect: 'A count of wrong outputs accepted unchecked, and what prompted anybody who checked.',
+        enough: 'Each wrong output has a recorded outcome; a self-pilot records what broke, never what a participant noticed.' },
+      { expect: 'If sessions ran: a count of wrong outputs accepted unchecked and what prompted anybody who checked. After a self-pilot, the supplied practice lines below, labelled as practice.',
         fields: ['accepted-count', 'what-prompted'],
         terms: [
           { term: 'Accepted unchecked', meaning: 'Acted on without looking at the detail that would have shown it was wrong. It is the number this whole prototype exists to produce.' },
@@ -1925,7 +1930,7 @@ export const guided16: Record<string, Guided> = {
           { term: 'One change', meaning: 'The one the observations most support. Three changes from three sessions is redesigning from an impression.' },
           { term: 'Repair', meaning: 'The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.' },
         ],
-        start: 'Take the thing that was accepted unchecked and make the checkable detail visible in the suggestion itself.',
+        start: 'Take the thing that was accepted unchecked, or after a self-pilot the thing that broke, and make the checkable detail visible in the suggestion itself.',
         enough: 'Your change addresses something you watched happen rather than something you expected.' },
     ],
     checks: [
@@ -1962,8 +1967,8 @@ export const guided16: Record<string, Guided> = {
     ],
     saveRoute: {
       auto: 'Your scripts, the session preparation, what happened, the counts and the change save as you type, on this device first and then online.',
-      external: 'The scripted output sets stay in your own folder. Keep them; they are reusable and they are what makes the sessions repeatable.',
-      creator: 'Your creator reads the count of wrong outputs accepted unchecked. It is the number that tells you whether the basis line is doing anything.',
+      external: 'The scripted output sets stay in your own folder; they make the sessions repeatable. Raw session notes stay in a private file with a date to delete them, never here.',
+      creator: 'Your creator reads the count of wrong outputs accepted unchecked, or, after a self-pilot, the dated gap. A self-pilot is preparation for sessions, not a result from them.',
       next: 'Open Your work and choose Ready for review. The next lesson maps who is accountable for all of this.',
     },
     transfer: {
@@ -1987,7 +1992,7 @@ export const guided16: Record<string, Guided> = {
         { id: 'conflicting-interests', label: 'Any group whose interests conflict with the direct user’s', kind: 'long' },
       ] },
       { id: 'owners', title: 'Who is accountable', fields: [
-        { id: 'named-owners', label: 'For each function: who is accountable', kind: 'long' },
+        { id: 'named-owners', label: 'For each function: who is accountable', kind: 'long', hint: 'Use roles rather than people’s names in this synced answer.' },
         { id: 'unowned', label: 'Anything nobody currently owns', kind: 'long', hint: 'Write it down rather than assigning it to yourself by default. An unowned function is a finding.' },
       ] },
       { id: 'signals', title: 'Working, and harming', fields: [
@@ -1995,7 +2000,7 @@ export const guided16: Record<string, Guided> = {
         { id: 'harm-signal', label: 'What would separately indicate it is causing harm', kind: 'long', hint: 'A different signal, not the absence of the first. Suggestions concentrating on the same three classes is a harm signal that a usefulness measure cannot see.' },
       ] },
       { id: 'respond', title: 'The response plan', fields: [
-        { id: 'who-acts', label: 'Who acts on a report, how fast, and what they can actually do', kind: 'long' },
+        { id: 'who-acts', label: 'Who acts on a report, how fast, and what they can actually do', kind: 'long', hint: 'A role, not a name.' },
         { id: 'response-limits', label: 'Any limitation in the response, recorded', kind: 'short', example: 'Example (made up): the feature can be disabled for one account within a day, and there is no faster route.' },
         improvementMade,
       ] },
@@ -2248,7 +2253,7 @@ export const guided16: Record<string, Guided> = {
           then: 'Now apply the three questions to each of your proposals in step 2, noticeable-and-correctable first.',
         },
         start: 'Ask the noticeable-and-correctable question first; it settles some proposals on its own.',
-        enough: 'At least one proposal fails on something other than accuracy.' },
+        enough: 'Each proposal has a verdict on known rules, stakes and noticeability before accuracy is discussed; a proposal that passes all three is a valid result.' },
       { expect: 'The case against one proposal in cost, risk and support terms, with the alternative you would build instead.',
         fields: ['the-case', 'alternative'],
         terms: [
