@@ -1808,7 +1808,7 @@ export const activities: Record<string, Activity> = {
     adequate: 'The method fits the uncertainty and includes consent, neutral tasks, recruitment status and limits.',
     coach: 'Ask me what decision changes depending on what I find, and what I would do if nobody replies. Challenge any plan that cannot produce a wrong answer.',
     alternative: 'For each planned question write the two answers you might get and what you would do differently for each. If both lead to the same action, cut the question.',
-    handoff: 'Bring actual anonymized notes to synthesis; otherwise use clearly labelled practice notes without asserting findings.',
+    handoff: 'Bring de-identified summaries of real notes to synthesis — never raw notes — or use the clearly labelled practice notes without asserting findings.',
     ...studyPlan,
   },
   'week2-day2-v1': {
@@ -1819,7 +1819,7 @@ export const activities: Record<string, Activity> = {
     hints: ['Keep one observation per note. Give notes IDs before moving them into groups.', 'A group title is a hypothesis about a pattern. Keep contradictory notes visible instead of discarding them.'],
     adequate: 'A reviewer can follow an implication back through an interpretation to a specific source note.',
     handoff: 'Carry the evidence chains and their limitations into opportunity selection.',
-    coach: 'Inspect my anonymized evidence chain. Ask which source supports one interpretation and identify a possible alternative explanation; do not invent notes.',
+    coach: 'Inspect my de-identified evidence chain. Ask which source supports one interpretation and identify a possible alternative explanation; do not invent notes.',
     alternative: 'Pick your strongest claim and trace it backward to a note. Write one other explanation for that same note.',
     ...synthesis,
   },
