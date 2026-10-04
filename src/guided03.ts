@@ -17,12 +17,12 @@ export const guided03: Record<string, Guided> = {
           ...(n === 1 ? { hint: 'If you cannot name the job, the step does not belong on the ladder.', example: 'Example (made up): 28 / semibold / the class name, once per screen.' } : {}) })),
       ] },
       { id: 'apply', title: 'Re-typeset one screen', fields: [
-        { id: 'collapsed', label: 'Which old sizes collapsed into one step, and what you lost', kind: 'long' },
+        { id: 'collapsed', label: 'Which old sizes collapsed into one step, and what you lost', kind: 'long', hint: 'If nothing collapsed, say why: for example, the screen already used only five sizes.' },
         { id: 'kept-distinct', label: 'Anything you kept separate, and why it earned its own step', kind: 'short' },
       ] },
-      { id: 'stress', title: 'The two hard cases', fields: [
-        { id: 'narrow-result', label: 'At about 390 px wide: what broke?', kind: 'long', hint: 'Wrapping titles, a heading pushing content off the screen, two steps that now look identical.' },
-        { id: 'enlarged-result', label: 'With text about 150 per cent larger: what broke?', kind: 'long', hint: 'On paper, letter the same screen with everything a step bigger and see what collides.' },
+      { id: 'stress', title: 'The two hard cases', intro: 'Paper can specify what you intend to happen. Only a browser shows what actually happens, so label each answer observed or specified.', fields: [
+        { id: 'narrow-result', label: 'At about 390 px wide: what breaks or has to change, and did you observe it or specify it?', kind: 'long', hint: 'Wrapping titles, a heading pushing content off the screen, two steps that now look identical. Observed means a real page or your own working file; specified means a true-size paper drawing.' },
+        { id: 'enlarged-result', label: 'With text at 200 per cent: what breaks or has to change, and did you observe it or specify it?', kind: 'long', hint: 'On paper, letter the screen at true size with every text step doubled in the same width, and label it a specification. Paper shows what you intend to wrap; it cannot show what a browser cuts off.' },
       ] },
       { id: 'record', title: 'Save', fields: [
         { id: 'next-change', label: 'The one change you would make next', kind: 'short' },
@@ -43,7 +43,7 @@ export const guided03: Record<string, Guided> = {
           beats: [
             { label: 'What I had', text: '28, 22, 18, 17, 16, 15 and 13. The 17 and 16 existed because two screens were designed a week apart.' },
             { label: 'My first instinct', text: 'Keep them all and make the title 32 so the hierarchy is “stronger”. Bigger felt like clearer.' },
-            { label: 'Why that failed', text: 'At 390 px the 32 title wrapped to three lines and pushed the price off the screen. The page looked shoutier and told me less.' },
+            { label: 'Why that failed', text: 'Lettered at true size in a 390 px column, the 32 title took three lines and pushed the price off the screen. The page looked shoutier and told me less.' },
             { label: 'What I did instead', text: 'Five steps: 24 semibold for the class name, 18 medium for section headings, 16 regular for body, 14 for the supporting line, 12 for labels.' },
             { label: 'Where the strength came from', text: 'Weight and space, not size. The 24 with a clear gap beneath it reads as a title more reliably than a 32 that wraps.' },
           ],
@@ -60,21 +60,25 @@ export const guided03: Record<string, Guided> = {
       { terms: [{ term: 'Collapse', meaning: 'Two or more of the old sizes becoming one step of your ladder. The screen gets simpler and a distinction disappears, so each one is worth writing down.' }, { term: 'Re-typeset', meaning: 'Setting the same words again with new type decisions. The content does not change; only the sizes, weights and spacing do.' }], demo: { scenario: 'Made-up example. Applying the five-step ladder to a class card, and losing something without noticing.', beats: [{ label: 'How I applied it', text: 'I went through the card replacing each old size with its nearest step. Seven replacements, four minutes, and the card looked calmer straight away.' }, { label: 'What I did not write down', text: 'The date had been 15 and the instructor name 16. Both landed on the 14 step. I ticked them off as tidying and moved on.' }, { label: 'What I noticed later', text: 'Reading the card cold, I could not tell at a glance which line was the date and which was the name. Same size, same weight, same grey, one above the other.' }, { label: 'The repair I nearly made', text: 'Add a sixth step at 15 and put the date back where it was. Two minutes, and the ladder is back towards the pile it started as.' }, { label: 'What I did instead', text: 'I asked what the old difference was for. The date has to be found quickly and the name does not, so the date kept the 14 step and gained medium weight and a gap above it. The ladder stayed at five, and the collapse went into the record with what it cost.' }], wrongTurn: 'The wrong turn is rounding each old size to its nearest step and calling the job done. It is tempting because the screen genuinely does look better afterwards, so nothing prompts you to ask what the old difference was carrying.', tradeoff: 'Carrying the date on weight and space rather than size means the two lines are closer in tone than they were, and somebody skimming very fast may still read them as one block. That is the price of holding the ladder at five steps.', uncertainty: 'Still unknown: whether a reader looking for a date finds it any faster in this version. Nothing here was tried with a person, only reasoned about on paper.' }, expect: 'What collapsed when you applied the ladder, and what earned its own step.', fields: ['collapsed', 'kept-distinct'],
         start: 'Go through the screen replacing each old size with its nearest step, and write down every time it hurt.',
         enough: 'You can say what was lost, not just that the screen is tidier.' },
-      { expect: 'What broke at narrow width and with enlarged text, in specific terms.', fields: ['narrow-result', 'enlarged-result'],
+      { expect: 'What breaks at narrow width and at 200 per cent text, in specific terms, and whether you observed it or specified it.', fields: ['narrow-result', 'enlarged-result'],
         supported: {
           material: 'A supplied narrow-width result from the same made-up screen: at 390 px the class name wraps to two lines, the price and the date now sit below the fold, and the section heading and the body text look the same size at a glance.',
           question: 'Which of these is the most serious problem to fix first?',
           options: [
-            { label: 'The price and date falling below the fold, because the reader now cannot make the decision without scrolling.', correct: true, feedback: 'It is the only one that stops the task. A wrapped title is untidy; missing information is a decision the reader cannot make.' },
-            { label: 'The class name wrapping to two lines, because it looks careless.', feedback: 'Wrapping is normal on a phone and often fine. Judged by the reader’s task rather than the look, it costs almost nothing.' },
-            { label: 'The heading and body looking similar, because the hierarchy has collapsed.', feedback: 'A real problem and second in line: it slows reading, while the missing price stops the decision entirely.' },
-            { label: 'All three equally, since they all appeared at the same width.', feedback: 'Appearing together does not make them equally costly. Ranking by what the reader cannot do is what makes the next hour useful.' },
+            { label: 'Price and date below the fold, since the decision now needs a scroll.', correct: true, feedback: 'It is the one that stops the task. A wrapped title is untidy; missing information is a decision the reader cannot make.', was: ['The price and date falling below the fold, because the reader now cannot make the decision without scrolling.'] },
+            { label: 'The class name on two lines, since a wrapped title looks careless at once.', feedback: 'Wrapping is normal on a phone and often fine. Judged by the reader’s task rather than the look, it costs almost nothing.', was: ['The class name wrapping to two lines, because it looks careless.'] },
+            { label: 'Heading and body looking alike, since the hierarchy has collapsed.', feedback: 'A real problem and second in line: it slows reading, while the missing price stops the decision entirely.', was: ['The heading and body looking similar, because the hierarchy has collapsed.'] },
+            { label: 'All three equally, since they appeared together at the same width.', feedback: 'Appearing together does not make them equally costly. Ranking by what the reader cannot do is what makes the next hour useful.', was: ['All three equally, since they all appeared at the same width.'] },
           ],
           then: 'Rank your own breakages the same way: what stops the task first, what slows it, what merely looks wrong.',
         },
-        terms: [{ term: 'Enlarged text', meaning: 'The reader’s own setting, not yours. Many people run their phone text well above default, and a layout that assumes otherwise breaks for them daily.' }],
-        start: 'Do the narrow case first: redraw the same content in a column about a third the width.',
-        enough: 'Each note names what broke and where, not “it looked bad”.' },
+        terms: [
+          { term: 'Enlarged text', meaning: 'The reader’s own setting, not yours. Many people run their phone text well above default, and a layout that assumes otherwise breaks for them daily. 200 per cent is the size WCAG uses as its benchmark.' },
+          { term: 'Reflow', meaning: 'What a browser does when the width shrinks or the text grows: lines re-wrap and blocks move so nothing is lost. A paper drawing cannot reflow; you redraw it by hand.' },
+          { term: 'Specification', meaning: 'A drawing of what you intend to happen. It is a decision, not a test result, and its label should say so.' },
+        ],
+        start: 'First look at real behaviour: open a real listing page on your phone, or in a browser window made as narrow as it goes, and enlarge it to 200 per cent (Ctrl and +, Cmd and + on a Mac, or the phone browser’s text-size setting). Note what re-wraps and what is cut off. Then letter your own screen at true size in a column as wide as your phone.',
+        enough: 'Each note names what broke and where, not “it looked bad”, and says whether it was observed or specified.' },
       { terms: [{ term: 'Artefact', meaning: 'Something you actually made and can point at: the ladder, the two drawings, the breakage notes. It is what shows the work happened.' }, { term: 'Repair', meaning: 'The one change a Check question asks you to make to your own work. You make it in the worksheet itself rather than noting it for later.' }], expect: 'Your next change, where the artefacts are, and the repair the Check questions asked for.',
         fields: ['next-change', 'photo-reference', 'improvement-made'],
         start: 'Choose the change that fixes the most serious breakage you listed.',
@@ -84,34 +88,43 @@ export const guided03: Record<string, Guided> = {
       {
         question: 'Your title is 24 and the section headings are 18. To make the hierarchy clearer, what do you try first?',
         options: [
-          { label: 'More space around the title and a heavier weight, before touching the size.', correct: true, feedback: 'Space and weight cost no width, so they survive a narrow screen. Size is the instrument that breaks first when the column gets small.' },
-          { label: 'Raise the title to 32 so the difference is obvious.', feedback: 'On a phone that is where a title starts wrapping and pushing content down. The reader sees a big phrase and less of what they came for.' },
-          { label: 'Drop the headings to 15 so the gap is wider.', feedback: 'It widens the ratio by weakening the smaller step, which now competes with body text. You have moved the problem rather than solved it.' },
+          { label: 'Add space around the title and a heavier weight before changing any size.', correct: true, feedback: 'Space and weight cost no width, so they survive a narrow screen. Size is the instrument that breaks first when the column gets small.', was: ['More space around the title and a heavier weight, before touching the size.'] },
+          { label: 'Raise the title to 32 so the jump from the headings is obvious at a glance.', feedback: 'On a phone that is where a title starts wrapping and pushing content down. The reader sees a big phrase and less of what they came for.', was: ['Raise the title to 32 so the difference is obvious.'] },
+          { label: 'Drop the headings to 15 so the ratio between the two levels widens.', feedback: 'It widens the ratio by weakening the smaller step, which now competes with body text. You have moved the problem rather than solved it.', was: ['Drop the headings to 15 so the gap is wider.'] },
         ],
-        repair: 'Look at your narrow-width note in step 4. If the title broke there, change your ladder so the title relies on weight and space rather than size, and record it in step 5.',
+        repair: 'Look at your narrow-width note in step 4. If the title broke there, change your ladder so the title relies on weight and space rather than size, and record it in step 5. If it held, say so and why.',
         recheck: 'The narrow version keeps the price and date visible, and the title still reads as the title.',
       },
       {
-        question: 'You did not test enlarged text because your screen is a paper sketch. What is the honest response?',
+        question: 'Your screen is a paper sketch, so no browser can enlarge its text. What is the honest way to cover the enlarged-text case?',
         options: [
-          { label: 'Redraw the screen with every step one size larger and see what collides; that is the paper version of the test.', correct: true, feedback: 'The test is about what happens when text grows inside a fixed width, and a pencil can show that. It is real evidence about your layout.' },
-          { label: 'Note that enlarged text cannot be tested on paper and move on.', feedback: 'It can, roughly, and roughly is enough to find collisions. Skipping it means shipping a layout that fails for a large number of readers.' },
-          { label: 'Assume it is fine because the type scale is proportional.', feedback: 'Proportional sizes still collide with fixed containers, buttons and images. The failure is in the layout, not the ratio.' },
+          { label: 'Draw it at 200% in the same width, label it a specification, and watch a real page at 200%.', correct: true, feedback: 'Paper can show what you intend to wrap and where text would collide, which is worth drawing. It cannot show what a browser does, so the label matters, and a real page at 200 per cent shows the behaviour you are specifying.', was: ['Redraw the screen with every step one size larger and see what collides; that is the paper version of the test.'] },
+          { label: 'Leave it until the screen is built, since only working code can be checked at 200%.', feedback: 'Waiting skips the decision. A drawing made now tells whoever builds the screen what must wrap and what must never be cut off, and a real page shows you what to look for.', was: ['Note that enlarged text cannot be tested on paper and move on.'] },
+          { label: 'Rely on the proportional scale: relative sizes keep the layout intact at 200%.', feedback: 'Relative sizes keep the ratios between steps, and the text still grows into fixed containers, buttons and images. The collisions are in the layout, not the scale.', was: ['Assume it is fine because the type scale is proportional.'] },
         ],
-        repair: 'If your enlarged-text box in step 4 is empty, redraw the screen a step larger throughout and write what collides, then note it in step 5.',
-        recheck: 'The enlarged case names at least one specific collision or says plainly that nothing broke and how you checked.',
+        repair: 'If your enlarged-text box in step 4 is empty, letter the screen with every step doubled in the same width, label it a specification, and add one thing you saw on a real page at 200 per cent. Note it in step 5.',
+        recheck: 'The enlarged case names a specific collision, or says nothing broke, and states whether it was observed or specified.',
       },
       {
         question: 'You cut seven sizes to five and two labels now look identical. What should the record say?',
         options: [
-          { label: 'Which distinction you gave up and whether it mattered, so the decision can be revisited.', correct: true, feedback: 'Reduction is a trade, not a virtue. Writing down what it cost is what separates a system from tidying.' },
-          { label: 'Nothing: fewer sizes is the point of the exercise.', feedback: 'Fewer sizes is the method, not the goal. If the lost distinction carried meaning, you have made the screen worse and no record says so.' },
-          { label: 'That the labels should be told apart by colour instead.', feedback: 'That moves the distinction onto colour alone, which the next two lessons are about undoing.' },
+          { label: 'Which distinction was given up, and whether it mattered on this screen.', correct: true, feedback: 'Reduction is a trade, not a virtue. Writing down what it cost is what separates a system from tidying, and it lets the decision be revisited.', was: ['Which distinction you gave up and whether it mattered, so the decision can be revisited.'] },
+          { label: 'Nothing further: removing sizes was the aim, so the merge needs no note.', feedback: 'Fewer sizes is the method, not the goal. If the lost distinction carried meaning, you have made the screen worse and no record says so.', was: ['Nothing: fewer sizes is the point of the exercise.'] },
+          { label: 'That the two labels will be told apart by colour from now on instead.', feedback: 'That moves the distinction onto colour alone, which the next two lessons are about undoing.', was: ['That the labels should be told apart by colour instead.'] },
         ],
-        repair: 'Fill the collapsed box in step 3 with what you lost. If a lost distinction mattered, restore one step and give it a job, then record it in step 5.',
+        repair: 'Fill the collapsed box in step 3 with what you lost. If a lost distinction mattered, restore one step and give it a job; if it did not, say why. Record it in step 5.',
         recheck: 'Every collapse is recorded with its cost, and any restored step has a stated job.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: A library’s mobile events page uses seven text sizes: 30 for the page title, 22 and 20 for two kinds of event name, 16 for descriptions, 15 and 14 for dates and venues, and 12 for “Booking required” tags. On a 390 px phone the 30 title takes three lines and the first event starts below the fold.',
+      prompt: 'Which sizes would you merge or drop, and what would you use instead of a bigger title to keep the hierarchy? Give the reason for each choice.',
+      anchors: {
+        weak: 'Keeps all seven sizes or makes the title bigger still; or merges sizes because it looks tidier, without saying what distinction each merge loses.',
+        adequate: 'Cuts to five or six steps, each with a job (for example 22 and 20 become one, 15 and 14 become one), lowers the title so it fits on one or two lines, and keeps it distinct with weight or space. Names what each merge gives up.',
+        strong: 'As adequate, plus a trade-off or check: the merged event names may have marked a real difference (free or ticketed), so a word or tag now carries it, and the 200 per cent text case still needs looking at on a real page.',
+      },
+    },
     saveRoute: {
       auto: 'The ladder, the breakage notes and your next change save as you type, on this device first and then online.',
       external: 'The drawings stay on paper or in your own folder. Photograph them if you like and write the file name here; naming a file does not upload it.',
@@ -120,7 +133,7 @@ export const guided03: Record<string, Guided> = {
     },
   },
   'm03-l02-v1': {
-    video: { id: "VID09", then: "Straight after watching, write your worst-case line at the size you think it should be, then again one step larger. The video is about text having to grow; your measure has to survive that.", written: "No video needed: set your longest real line, then reread it with the text one step larger and note what collides. The point is the same and paper can make it." },
+    video: { id: "VID09", then: "Straight after watching, write your worst-case line at the size you think it should be, then again at double that size. The video is about text having to grow; your measure has to survive that.", written: "No video needed: set your longest real line, then letter it again at double the size in the same width and note what collides. Paper can specify that; a real page enlarged to 200 per cent shows it happening." },
     route: paperRoute('the ruled column and the stress test'),
     worksheet: [
       { id: 'worst', title: 'The content that will actually appear', intro: 'Real strings, not placeholder text.', fields: [
@@ -136,9 +149,9 @@ export const guided03: Record<string, Guided> = {
         { id: 'line-height-headings', label: 'Heading and small-text line heights', kind: 'short', hint: 'Headings usually need less than body text, not more.' },
         { id: 'block-spacing', label: 'The gap between paragraphs, and how it compares with the gap between lines', kind: 'long', hint: 'It has to be clearly larger, or paragraphs stop being paragraphs.' },
       ] },
-      { id: 'stress', title: 'Where it breaks', fields: [
-        { id: 'narrow-break', label: 'At about 390 px with your worst-case strings: what breaks?', kind: 'long' },
-        { id: 'enlarged-break', label: 'With enlarged text: what breaks?', kind: 'long' },
+      { id: 'stress', title: 'Where it breaks', intro: 'Label each answer observed (a real page or your own working file) or specified (a true-size paper drawing). Paper shows where you expect lines to break; only a browser shows what gets cut off.', fields: [
+        { id: 'narrow-break', label: 'At about 390 px with your worst-case strings: what breaks, and did you observe it or specify it?', kind: 'long', hint: 'Name the string and what it did: wrapped, overlapped, was cut off, or pushed something sideways.' },
+        { id: 'enlarged-break', label: 'With text at 200 per cent: what breaks, and did you observe it or specify it?', kind: 'long', hint: 'On paper, double every text size in the same width. On a real page, enlarge to 200 per cent and note what re-wraps and what is cut off.' },
       ] },
       { id: 'decide', title: 'Save', fields: [
         { id: 'final-values', label: 'Your final values, one line of reasoning each', kind: 'long' },
@@ -177,20 +190,20 @@ export const guided03: Record<string, Guided> = {
           material: 'A supplied block from the same made-up screen: body text at 16 with line height 1.9, paragraph gaps the same size as one line, and headings at 20 with line height 1.9 as well.',
           question: 'What is the main problem with these values?',
           options: [
-            { label: 'The paragraph gap does not exceed the line gap, so the paragraphs stop reading as separate units.', correct: true, feedback: 'When the space between paragraphs equals the space between lines, the block becomes an undifferentiated column of sentences. That is the most damaging of the three.' },
-            { label: 'The body line height of 1.9 is too loose on its own.', feedback: 'Loose, and the real damage comes from the paragraph gap failing to beat it. Fix the relationship first and 1.9 may be merely airy.' },
-            { label: 'The headings should have more line height than the body, not the same.', feedback: 'The opposite: large text usually needs a tighter ratio, because the gaps grow with the size. Either way it is not the main fault here.' },
-            { label: 'Nothing: generous spacing is easier to read.', feedback: 'Up to a point. Past it, lines stop cohering into paragraphs and a phone screen holds almost nothing, which costs the reader more than the air gains.' },
+            { label: 'The paragraph gap equals the line gap, so paragraphs stop reading as units.', correct: true, feedback: 'When the space between paragraphs equals the space between lines, the block becomes an undifferentiated column of sentences. That is the most damaging of the faults here.', was: ['The paragraph gap does not exceed the line gap, so the paragraphs stop reading as separate units.'] },
+            { label: 'The body line height of 1.9 is too loose on its own, whatever the gaps are.', feedback: 'Loose, and the real damage comes from the paragraph gap failing to beat it. Fix the relationship first and 1.9 may be merely airy.', was: ['The body line height of 1.9 is too loose on its own.'] },
+            { label: 'The headings need more line height than the body, not the same 1.9.', feedback: 'The opposite: large text usually needs a tighter ratio, because the gaps grow with the size. Either way it is not the main fault here.', was: ['The headings should have more line height than the body, not the same.'] },
+            { label: 'Nothing serious: generous spacing like this is easier for most people to read.', feedback: 'Up to a point. Past it, lines stop cohering into paragraphs and a phone screen holds almost nothing, which costs the reader more than the air gains.', was: ['Nothing: generous spacing is easier to read.'] },
           ],
           then: 'Set your own paragraph gap by comparing it with your line gap, not by choosing a number that looks pleasant.',
         },
         terms: [{ term: 'Line height', meaning: 'The distance from one line to the next, written as a ratio of the text size so it scales with it.' }],
         start: 'Write the body ratio first, then set the paragraph gap so it is visibly bigger than one line.',
         enough: 'You can state the paragraph gap as “clearly more than one line” and see it on the page.' },
-      { terms: [{ term: 'Stress test', meaning: 'Putting your layout against the content and the settings most likely to break it, rather than the ones that suit it.' }, { term: 'Enlarged text', meaning: 'The reader’s own text-size setting turned up. It is their choice rather than yours, and many people keep it well above the default.' }, { term: 'Wrapping', meaning: 'A line running out of room and continuing on the next one. Where it happens decides whether a price still sits beside the word it belongs to.' }], demo: { scenario: 'Made-up example. Running the narrow-width test on a class description, and building a test that could not fail.', beats: [{ label: 'How I ran it', text: 'I redrew the card at about a third of the width, and to fit it on the page I lettered everything smaller too. Nothing broke, and I wrote down that it held.' }, { label: 'Why nothing broke', text: 'Shrinking the text along with the column keeps the same number of characters on every line. The character count is the whole thing under test, so I had removed it.' }, { label: 'The second run', text: 'I ruled a column about 390 px wide and lettered the same paragraph at true size. The longest title took four lines and the price wrapped away from the word it belonged to.' }, { label: 'The enlarged case', text: 'Same column, everything a step and a half bigger. The count fell to roughly 26 characters a line, and the empty-state sentence became six short lines that read as a list rather than a sentence.' }, { label: 'What I wrote down', text: 'Not “cramped”. “Longest title takes four lines and pushes the date past the card edge”, and “at enlarged size the measure falls to about 26 and the paragraph stops holding together”. Two notes I can act on.' }], wrongTurn: 'The wrong turn is scaling the text down with the column so the drawing fits the page. It is tempting because it looks like the same screen, smaller, and because a test that passes is quicker than one that does not.', tradeoff: 'Drawing at true size means the narrow version will not sit neatly beside the wide one, so you need two sheets and cannot compare them at a glance. That is what a test that can fail costs you.', uncertainty: 'Still unknown: how far a real reader has turned their text size up. A step and a half is a guess, and some people run considerably more than that every day.' }, expect: 'What broke at narrow width and with enlarged text, using the real strings.',
+      { terms: [{ term: 'Stress test', meaning: 'Putting your layout against the content and the settings most likely to break it, rather than the ones that suit it.' }, { term: 'Enlarged text', meaning: 'The reader’s own text-size setting turned up. It is their choice rather than yours, and many people keep it well above the default. 200 per cent is the benchmark WCAG uses.' }, { term: 'Wrapping', meaning: 'A line running out of room and continuing on the next one. Where it happens decides whether a price still sits beside the word it belongs to.' }, { term: 'Clipped', meaning: 'Cut off at the edge of its box or of the screen, so part of the content is lost or can only be reached by scrolling sideways. It is the opposite of reflowing, and paper cannot show it.' }], demo: { scenario: 'Made-up example. Specifying the narrow-width case for a class description on paper, and first drawing a check that could not fail.', beats: [{ label: 'How I ran it', text: 'I redrew the card at about a third of the width, and to fit it on the page I lettered everything smaller too. Nothing broke, and I wrote down that it held.' }, { label: 'Why nothing broke', text: 'Shrinking the text along with the column keeps the same number of characters on every line. The character count is the whole thing under test, so I had removed it.' }, { label: 'The second run', text: 'I ruled a column about 390 px wide and lettered the same paragraph at true size. The longest title took four lines and the price wrapped away from the word it belonged to.' }, { label: 'The enlarged case', text: 'Same column, every text size doubled to 200 per cent. The count fell from about 40 to roughly 20 characters a line, and the empty-state sentence became six short lines that read as a list rather than a sentence.' }, { label: 'What I wrote down', text: 'Not “cramped”. “Longest title takes four lines and pushes the date past the card edge”, and “at 200 per cent the measure falls to about 20 and the paragraph stops holding together”. Two notes I can act on, both labelled as paper specifications.' }], wrongTurn: 'The wrong turn is scaling the text down with the column so the drawing fits the page. It is tempting because it looks like the same screen, smaller, and because a check that passes is quicker than one that does not.', tradeoff: 'Drawing at true size means the narrow version will not sit neatly beside the wide one, so you need two sheets and cannot compare them at a glance. That is what a check that can fail costs you.', uncertainty: 'Still unknown: what a browser does with the card itself, whether it grows to hold four lines of title or cuts them off. Paper shows where I expect lines to break; a real page at the same width shows whether anything is clipped.' }, expect: 'What breaks at narrow width and at 200 per cent text, using the real strings, and whether you observed it or specified it.',
         fields: ['narrow-break', 'enlarged-break'],
-        start: 'Put the longest title into the narrow column first; it usually breaks something immediately.',
-        enough: 'Each note names the string and what it did, such as a title taking four lines or a price wrapping away from its label.' },
+        start: 'Put the longest title into a true-size narrow column first; it usually breaks something immediately. Then look at a real page with long titles on your phone, or in a narrow window, at 200 per cent.',
+        enough: 'Each note names the string and what it did, such as a title taking four lines or a price wrapping away from its label, and says whether it was observed or specified.' },
       { terms: [{ term: 'Open question', meaning: 'Something this work has not settled, written down on purpose so that later it is not mistaken for something you knew.' }, { term: 'Repair', meaning: 'The change a Check question asks you to make to your own work. You make it here and record what you did.' }], expect: 'Final values with reasons, your open question, and the repair the Check questions asked for.',
         fields: ['final-values', 'open-question', 'photo-reference', 'improvement-made'],
         start: 'Write each value as “X, because …” and delete any reason that is only about appearance.',
@@ -200,9 +213,9 @@ export const guided03: Record<string, Guided> = {
       {
         question: 'Your body text reads awkwardly, so you increase the line height from 1.5 to 1.9. What have you risked?',
         options: [
-          { label: 'The paragraph may stop cohering, and on a phone much less content now fits above the fold.', correct: true, feedback: 'Leading past a certain point separates lines instead of grouping them, and the vertical cost is paid on the smallest screen where it hurts most.' },
-          { label: 'Nothing: more air is always easier to read.', feedback: 'Air helps until lines stop belonging to each other. The block then reads as a list of sentences rather than a paragraph.' },
-          { label: 'Only that it looks less dense, which is a matter of taste.', feedback: 'It is a reading and a layout consequence, not taste. Content pushed below the fold is content the reader does not see.' },
+          { label: 'Lines that stop holding together, and less content above the fold on a phone.', correct: true, feedback: 'Leading past a certain point separates lines instead of grouping them, and the vertical cost is paid on the smallest screen where it hurts most.', was: ['The paragraph may stop cohering, and on a phone much less content now fits above the fold.'] },
+          { label: 'Very little, because extra air between lines makes long text easier to read.', feedback: 'Air helps until lines stop belonging to each other. The block then reads as a list of sentences rather than a paragraph.', was: ['Nothing: more air is always easier to read.'] },
+          { label: 'Only a lighter-looking block, which is a matter of taste rather than reading.', feedback: 'It is a reading and a layout consequence, not taste. Content pushed below the fold is content the reader does not see.', was: ['Only that it looks less dense, which is a matter of taste.'] },
         ],
         repair: 'Reread your leading values in step 3. If body line height is above about 1.7, try the awkwardness as a measure problem instead, recount your characters per line, and record the change in step 5.',
         recheck: 'Line height and measure were adjusted as a pair, and the paragraph gap still clearly exceeds the line gap.',
@@ -210,9 +223,9 @@ export const guided03: Record<string, Guided> = {
       {
         question: 'You wrote “about 60 to 70 characters” without counting. Why does the count matter?',
         options: [
-          { label: 'Because a column that looks right is routinely 90 or more characters, and only counting reveals it.', correct: true, feedback: 'The eye adapts to whatever is in front of it. The number is the cheapest check available and it takes a minute.' },
-          { label: 'It does not; the band is a guideline, not a rule.', feedback: 'The band is a guideline and the count is what tells you where you are. Without it you cannot know whether you are inside or far outside.' },
-          { label: 'Because clients expect the number to be documented.', feedback: 'Documentation is not the reason. The reason is that your impression of line length is unreliable.' },
+          { label: 'A column that looks right can run to 90 or more characters; only a count shows it.', correct: true, feedback: 'The eye adapts to whatever is in front of it. The number is the cheapest check available and it takes a minute.', was: ['Because a column that looks right is routinely 90 or more characters, and only counting reveals it.'] },
+          { label: 'It matters little: the 45–75 band is a guideline, so a careful estimate will do.', feedback: 'The band is a guideline and the count is what tells you where you are. Without it you cannot know whether you are inside or far outside.', was: ['It does not; the band is a guideline, not a rule.'] },
+          { label: 'A counted figure is what clients and engineers expect to see documented.', feedback: 'Documentation is not the reason. The reason is that your impression of line length is unreliable.', was: ['Because clients expect the number to be documented.'] },
         ],
         repair: 'If your measure box in step 2 holds an estimate, count three full lines now and write the average, then record what changed in step 5.',
         recheck: 'The measure box contains a counted average, and the chosen width follows from it.',
@@ -220,11 +233,11 @@ export const guided03: Record<string, Guided> = {
       {
         question: 'You tested with two short sentences of placeholder text and everything held. What does that establish?',
         options: [
-          { label: 'Very little: the layout has not met the longest title, the empty state or a wrapping price.', correct: true, feedback: 'Placeholder text is uniformly polite, and every real failure comes from content that is longer, shorter or emptier than expected.' },
-          { label: 'That the typography settings are sound and can be applied.', feedback: 'The settings survived the easiest possible content. That is the least informative test available.' },
-          { label: 'That the design works for average content, which is what most readers see.', feedback: 'Averages do not appear on screens; particular classes with particular names do. The awkward ones are where readers meet the failure.' },
+          { label: 'Little: it has not yet met the longest title, the empty state or a wrapped price.', correct: true, feedback: 'Placeholder text is uniformly polite, and real failures come from content that is longer, shorter or emptier than expected.', was: ['Very little: the layout has not met the longest title, the empty state or a wrapping price.'] },
+          { label: 'That the typography settings are sound and can be applied to the real screen.', feedback: 'The settings survived the easiest possible content. That is the least informative test available.', was: ['That the typography settings are sound and can be applied.'] },
+          { label: 'That it works for average content, which is what most readers will see.', feedback: 'Averages do not appear on screens; particular classes with particular names do. The awkward ones are where readers meet the failure.', was: ['That the design works for average content, which is what most readers see.'] },
         ],
-        repair: 'Put your worst-case strings from step 1 into the block and redo the narrow test, then record what broke in step 5.',
+        repair: 'Put your worst-case strings from step 1 into the block and redo the narrow case, then record what broke, or that nothing did, in step 5.',
         recheck: 'The stress notes name real strings, including the longest title and the empty state.',
       },
     ],
@@ -233,6 +246,15 @@ export const guided03: Record<string, Guided> = {
       external: 'The ruled column and any renderings stay in your own folder. Write the file name here so you can find them beside the numbers.',
       creator: 'Your creator reads the values and the reasoning. The counted measure is the part worth his attention, because it is the one people usually estimate.',
       next: 'Open Your work and choose Ready for review. The next lesson recolours this same screen, so keep it as it stands.',
+    },
+    transfer: {
+      scenario: 'Made-up case: A bus company’s web page explains a timetable change in three paragraphs. On a laptop the text runs edge to edge at about 120 characters a line; on a phone it is about 38. Line height is 1.2 everywhere and the gap between paragraphs equals one line. The longest stop name is 41 characters, and one notice reads only “No changes this week.”',
+      prompt: 'What measure, line height and paragraph gap would you set, and which strings would you test with? Give a reason for each value.',
+      anchors: {
+        weak: 'Shrinks the font on the laptop or makes the leading very loose; tests with average text; gives values without reasons or without counting.',
+        adequate: 'Limits the laptop column to roughly 45–75 counted characters, sets body line height as a ratio around 1.4–1.6, makes the paragraph gap clearly larger than the line gap, and tests with the 41-character stop name and the one-line notice.',
+        strong: 'As adequate, plus a trade-off or check: the phone’s 38-character measure is short but unavoidable, so leading matters more there, and the stop name at 200 per cent text needs checking on a real page because paper cannot show whether it gets cut off.',
+      },
     },
   },
   'm03-l03-v1': {
@@ -243,12 +265,12 @@ export const guided03: Record<string, Guided> = {
           ...(n === 1 ? { hint: 'Surface, body text, secondary text, the main action, and one status such as full or cancelled.', example: 'Example (made up): main action · the Reserve button · #214e46.' } : {}) })),
       ] },
       { id: 'recolour', title: 'Applying it', fields: [
-        { id: 'removed', label: 'How many colours you removed, and which you were tempted to add back', kind: 'long' },
+        { id: 'removed', label: 'How many colours you removed, and which you were tempted to add back', kind: 'long', hint: 'If you removed none, say why each colour already had a role.' },
       ] },
       { id: 'greyscale', title: 'The greyscale test', intro: 'Photocopy it in black and white, or photograph it and remove the colour.', fields: [
-        { id: 'greyscale-failures', label: 'What you can no longer tell apart', kind: 'long', example: 'Example (made up): the “full” and “places left” labels became the same grey, and the Reserve button stopped looking different from the outline button beside it.' },
+        { id: 'greyscale-failures', label: 'What you can no longer tell apart', kind: 'long', hint: 'If nothing, say how you checked. Two colours can also be measured against each other in the next lesson’s calculator: a ratio near 1.00 means the same lightness.', example: 'Example (made up): the “full” and “places left” labels became the same grey, and the Reserve button stopped looking different from the outline button beside it.' },
         { id: 'second-channel-1', label: 'Failure 1 · the second channel you added', kind: 'short', hint: 'A word, an icon, a shape, an underline, or a real difference in lightness.' },
-        { id: 'second-channel-2', label: 'Failure 2 · the second channel you added', kind: 'short' },
+        { id: 'second-channel-2', label: 'Failure 2 · the second channel you added', kind: 'short', hint: 'If the greyscale copy showed only one failure, write “none” and how you checked.' },
       ] },
       { id: 'record', title: 'Save', fields: [
         { id: 'convention-doubt', label: 'One colour meaning you are not sure your reader shares', kind: 'short', hint: 'Red for danger, green for go, and much else, is learned rather than universal.' },
@@ -275,8 +297,8 @@ export const guided03: Record<string, Guided> = {
           scenario: 'Made-up example. Running the greyscale test on a class list and finding out what the colour was carrying.',
           beats: [
             { label: 'What I believed', text: 'The palette was fine: I had checked the contrast of every colour against its background and everything passed.' },
-            { label: 'What the photocopy showed', text: 'The red “Full” label and the green “2 places left” label came out as almost exactly the same grey. Side by side, they were indistinguishable.' },
-            { label: 'Why contrast had not caught it', text: 'Contrast asks whether text can be read against its background. It never asks whether two pieces of information can be told apart from each other.' },
+            { label: 'What the photocopy showed', text: 'The red “Full” label (#d32f2f) and the green “2 places left” label (#387e3c) came out as the same grey. Each measures 4.98:1 against white, and against each other they measure 1.00:1: the same lightness.' },
+            { label: 'Why contrast had not caught it', text: 'The contrast check asks whether text can be read against its background. It does not ask whether two pieces of information can be told apart from each other.' },
             { label: 'What I added', text: 'The word itself carries it: “Full” and “2 places left” already differ in text, so I made the label text the channel and used colour only as reinforcement.' },
             { label: 'The one that was harder', text: 'The primary and secondary buttons were the same shape and size, distinguished only by fill. I gave the secondary an outline and left the fill to the primary.' },
           ],
@@ -288,10 +310,10 @@ export const guided03: Record<string, Guided> = {
           material: 'A supplied pair from the same made-up screen. Version A distinguishes a cancelled class from a running one by colouring the title red instead of dark grey. Version B keeps both titles dark grey and adds the word “Cancelled” before the title, with a lighter strike through the date.',
           question: 'Which version survives the greyscale test, and why?',
           options: [
-            { label: 'B, because the distinction is carried by a word and a mark, not by hue alone.', correct: true, feedback: 'Remove the colour and B still reads correctly. A becomes two identically grey titles, and the information is simply gone.' },
-            { label: 'A, provided the red passes contrast against the background.', feedback: 'Passing contrast means the red text is readable. It says nothing about whether a reader can tell it apart from the dark grey title beside it.' },
-            { label: 'Both, since a reader can click through to find out.', feedback: 'That makes the reader do extra work to recover information the screen already had, and only if they suspect something is different.' },
-            { label: 'Neither: only an icon is a reliable second channel.', feedback: 'A word is often the most reliable channel of all, and it needs no legend. Icons help, and they are not the only answer.' },
+            { label: 'B, because a word and a mark carry the difference, not hue alone.', correct: true, feedback: 'Remove the colour and B still says “Cancelled” in words. In A the red title becomes, at best, a slightly different grey title, which does not say what it means, so the reader is left guessing.', was: ['B, because the distinction is carried by a word and a mark, not by hue alone.'] },
+            { label: 'A, provided the red title passes its contrast check against the background.', feedback: 'Passing contrast means the red text is readable. It says nothing about whether a reader can tell it apart from the dark grey title beside it.', was: ['A, provided the red passes contrast against the background.'] },
+            { label: 'Both, since a reader who suspects a change can open the class to find out.', feedback: 'That makes the reader do extra work to recover information the screen already had, and only if they suspect something is different.', was: ['Both, since a reader can click through to find out.'] },
+            { label: 'Neither, because only an icon is a reliable second channel for a status.', feedback: 'A word is often the most reliable channel of all, and it needs no legend. Icons help, and they are not the only answer.', was: ['Neither: only an icon is a reliable second channel.'] },
           ],
           then: 'Apply the same test to each of your own failures: what would still be true with the colour removed?',
         },
@@ -311,9 +333,9 @@ export const guided03: Record<string, Guided> = {
       {
         question: 'Every colour on your screen passes its contrast check. Does that mean your colour use is accessible?',
         options: [
-          { label: 'No. Contrast asks whether text is readable; it never asks whether two colours can be told apart from each other.', correct: true, feedback: 'A red error and a green success can both pass against white and still be identical to a reader with red-green colour vision deficiency, because hue is the only difference between them.' },
-          { label: 'Yes, if every pair passes the required ratio.', feedback: 'That covers legibility against the background and leaves colour dependence entirely unchecked. They are separate failures.' },
-          { label: 'Yes for text, and non-text elements do not matter.', feedback: 'Essential non-text elements carry information too, and they are exactly where colour-only distinctions hide.' },
+          { label: 'Only for legibility: each ratio compares text with its background, not statuses with each other.', correct: true, feedback: 'A red error and a green success can both pass against white and still be the same lightness: #d32f2f and #387e3c each measure 4.98:1 on white and 1.00:1 against each other. Hue is then the only difference, and a reader with red–green colour vision deficiency may not see it.', was: ['No. Contrast asks whether text is readable; it never asks whether two colours can be told apart from each other.'] },
+          { label: 'It does, provided every text and background pair on the screen meets the required ratio.', feedback: 'That covers legibility against the background and leaves colour dependence entirely unchecked. They are separate failures.', was: ['Yes, if every pair passes the required ratio.'] },
+          { label: 'It does for text, and colour on icons and status dots is decoration that needs no check.', feedback: 'Essential non-text elements carry information too, and they are exactly where colour-only distinctions hide. WCAG also sets a separate 3:1 minimum for the parts of a control or graphic someone needs to see.', was: ['Yes for text, and non-text elements do not matter.'] },
         ],
         repair: 'Run the greyscale test in step 3 if you have not, and add a second channel for anything you can no longer tell apart. Record it in step 5.',
         recheck: 'The greyscale copy is readable without guessing, and each failure has a named second channel.',
@@ -331,9 +353,9 @@ export const guided03: Record<string, Guided> = {
       {
         question: 'You used green for available and red for full. What should your record say about that choice?',
         options: [
-          { label: 'That it is a convention your readers may or may not share, stated as an assumption rather than a fact.', correct: true, feedback: 'These meanings are learned and vary. Writing it down as an assumption is what lets someone check it with real readers later.' },
-          { label: 'Nothing: red and green are universally understood.', feedback: 'They are widespread in some contexts and neither universal nor stable across cultures, and they are the pair most likely to be indistinguishable.' },
-          { label: 'That the colours were chosen to match the brand.', feedback: 'That records where they came from and not what they are asking the reader to know.' },
+          { label: 'That it is a learned convention, recorded as an assumption to check, not a fact.', correct: true, feedback: 'These meanings are learned and vary. Writing it down as an assumption is what lets someone check it with real readers later.', was: ['That it is a convention your readers may or may not share, stated as an assumption rather than a fact.'] },
+          { label: 'Nothing extra: red for full and green for free are understood almost everywhere.', feedback: 'They are widespread in some contexts and neither universal nor stable across cultures, and they are the pair most likely to be indistinguishable.', was: ['Nothing: red and green are universally understood.'] },
+          { label: 'That the two colours were chosen to match the studio’s existing brand palette.', feedback: 'That records where they came from and not what they are asking the reader to know.', was: ['That the colours were chosen to match the brand.'] },
         ],
         repair: 'Fill the convention box in step 4 with the specific meaning you are relying on, then record it in step 5.',
         recheck: 'At least one colour meaning is written down as an assumption to test rather than a fact.',
@@ -345,6 +367,15 @@ export const guided03: Record<string, Guided> = {
       creator: 'Your creator reads the palette roles and the greyscale failures. The repair list is the part that shows the reasoning.',
       next: 'Open Your work and choose Ready for review. The next lesson measures the contrast of this palette, so keep the values exactly as recorded.',
     },
+    transfer: {
+      scenario: 'Made-up case: A bike-hire app shows each docking station on a map as a coloured dot: green for bikes available, amber for a few left, red for empty. The three colours have similar lightness, there is no legend on the screen, and people mostly use the app outdoors in bright sun.',
+      prompt: 'What would you change so the station status survives without colour, and what would you keep? Give the reason for each change.',
+      anchors: {
+        weak: 'Chooses brighter or more different hues, or adds a legend explaining the colours, so the meaning still depends on telling hues apart.',
+        adequate: 'Adds a second channel the reader sees directly, such as the number of bikes, a word or three distinct shapes, makes the three states differ in lightness, and keeps colour as reinforcement rather than the only carrier.',
+        strong: 'As adequate, plus a check or trade-off: a greyscale or sunlight check of the map, the clutter cost of numbers on a crowded map, and treating “red means empty” as a convention to confirm rather than a fact.',
+      },
+    },
   },
   'm03-l04-v1': {
     video: { id: "VID08", then: "Straight after watching, list every place on your screen where colour alone carries meaning, before you measure anything. The video names links, icons and buttons as well as text.", written: "No video needed: the assigned thresholds page says the same in text. List the coloured elements first, then measure." },
@@ -355,15 +386,16 @@ export const guided03: Record<string, Guided> = {
     worksheet: [
       { id: 'thresholds', title: 'The thresholds, in your own words', fields: [
         { id: 'threshold-normal', label: 'Normal text needs at least…', kind: 'short' },
-        { id: 'threshold-large', label: 'Large text needs at least… and “large” means…', kind: 'short', hint: 'Say the size and weight that qualify, not just the ratio.' },
-        { id: 'exceptions', label: 'The exceptions, in your own words', kind: 'long', hint: 'Which text is exempt, and why placeholder text is not one of them.' },
+        { id: 'threshold-large', label: 'Large text needs at least… and “large” means…', kind: 'short', hint: 'Say the size and weight that qualify, not just the ratio. The W3C page gives sizes in points; 1 pt is about 1.33 px.' },
+        { id: 'exceptions', label: 'The exceptions, in your own words', kind: 'long', hint: 'Which text is exempt, and why placeholder text is not one of them. An exemption means “not a conformance failure”, not “fine to leave unexplained”.' },
       ] },
-      { id: 'measure', title: 'Every text element, measured', intro: 'One row at a time. Include the awkward ones: placeholder text, disabled labels, text over images.', fields: [
+      { id: 'measure', title: 'Every text element, measured', intro: 'One row at a time. Include the awkward ones: placeholder text, disabled labels, text over images, and any part of a control someone needs to see.', fields: [
         ...[1, 2, 3, 4, 5].map((n) => ({ id: `row-${n}`, label: `Element ${n} · what it is, its colour, its background, its size, the threshold and the measured ratio`, kind: 'long' as const,
-          ...(n === 1 ? { hint: 'Use the calculator for the ratio. Record the number it gives, not a rounded version.', example: 'Example (made up): price label · #6b7b72 on #fffefb · 14 regular · needs 4.5 · measured 3.71 · fails.' } : {}) })),
+          ...(n === 1 ? { hint: 'Use the calculator. Copy the ratio to two decimals and never round a fail up to a pass: 4.478 is 4.48, which is below 4.5.', example: 'Example (made up): price label · #6b7b72 on #fffefb · 14 px regular · needs 4.5 · measured 4.43 · fails.' } : {}) })),
+        { id: 'row-more', label: 'Elements 6 onward, one per line in the same form, or “none” and why', kind: 'long', hint: 'Five rows rarely hold a whole screen. Add every remaining text element and every part of a control someone needs to see, such as a button edge against the page, which needs 3:1.' },
       ] },
       { id: 'repair', title: 'Repairs', fields: [
-        { id: 'repairs', label: 'For each failure: what you changed and the new ratio', kind: 'long', hint: 'Darken the text, lighten the background, enlarge the text so the large-text threshold applies, or put a solid backing behind it.' },
+        { id: 'repairs', label: 'For each failure: what you changed and the new ratio', kind: 'long', hint: 'Darken the text, lighten the background, enlarge the text so the large-text threshold applies, or put a solid backing behind it. If no row failed, write “none failed” and name your lowest ratio.' },
         { id: 'palette-kept', label: 'How you kept the palette’s intent while repairing', kind: 'short', hint: 'Repairs that flatten every colour to black on white pass the check and lose the design.' },
       ] },
       { id: 'read', title: 'Read it yourself', fields: [
@@ -384,16 +416,16 @@ export const guided03: Record<string, Guided> = {
         start: 'Read the assigned page and write each threshold as a sentence you could say to someone else.',
         enough: 'Your definition of large text names a size and a weight.' },
       { expect: 'Every text element measured, including placeholder text and anything over an image.',
-        fields: ['row-1', 'row-2', 'row-3', 'row-4', 'row-5'],
+        fields: ['row-1', 'row-2', 'row-3', 'row-4', 'row-5', 'row-more'],
         reveal: { first: 1, group: 1, count: 5, addLabel: 'Add the next element', note: 'One element at a time. Use the calculator below for each ratio.' },
         demo: {
           scenario: 'Made-up example. Measuring the awkward element on a booking form rather than the easy ones.',
           beats: [
             { label: 'What I measured first', text: 'The headings and body text. Both were dark grey on near-white and passed comfortably, which felt like progress.' },
             { label: 'What I nearly skipped', text: 'The placeholder text inside the email field, a light grey hint reading “you@example.com”. It looked like decoration.' },
-            { label: 'Why I measured it anyway', text: 'A reader has to read it to know what to type, so it is real text doing real work. It came out at 2.4 against the field background.' },
+            { label: 'Why I measured it anyway', text: 'A reader has to read it to know what to type, so it is real text doing real work. Its pair, #a6a6a6 on the white field #ffffff, came out at 2.43.' },
             { label: 'What I did about it', text: 'Darkening the hint would have helped and kept a weakness: the hint disappears the moment typing starts. I added a visible label above the field and kept the hint as an example.' },
-            { label: 'What that changed in the table', text: 'The row now records the label, not the placeholder, as the thing carrying the instruction — and the label passes at 7.1.' },
+            { label: 'What that changed in the table', text: 'The row now records the label, not the placeholder, as the thing carrying the instruction, and the label, #575757 on #ffffff, passes at 7.23. The placeholder stays in the table as a known fail.' },
           ],
           wrongTurn: 'The wrong turn is measuring only the text that looks like content. The failures live in hints, disabled labels, small print and anything sitting over an image.',
           tradeoff: 'Adding a visible label costs vertical space on a phone, which is exactly what the earlier lessons were protecting. It buys an instruction that survives typing.',
@@ -405,19 +437,19 @@ export const guided03: Record<string, Guided> = {
       { terms: [{ term: 'Repair', meaning: 'The specific edit that takes one failing element above its threshold, written down with the new measured number beside it. A general intention to improve the colours is not a repair.' }, { term: 'Palette intent', meaning: 'What each colour was doing before you touched it. A repair that meets the number and erases the distinction the colour carried has traded one failure for another.' }], expect: 'A repair for each failure, with the new ratio, keeping the palette’s intent.',
         fields: ['repairs', 'palette-kept'],
         supported: {
-          material: 'A supplied failing row from the same made-up screen: a secondary link, #7a8b80 on #fffefb, 14 regular, needs 4.5, measured 3.1.',
+          material: 'A supplied failing row from the same made-up screen: a secondary link, #7a8b80 on #fffefb, 14 px regular, needs 4.5:1, measures 3.57:1.',
           question: 'Which repair is soundest?',
           options: [
-            { label: 'Darken the link colour until it passes, keeping it recognisably the same hue.', correct: true, feedback: 'It fixes the failure at its source and keeps the palette’s intent: the link still reads as the secondary colour, just darker.' },
-            { label: 'Enlarge the link to 19 semibold so the large-text threshold applies.', feedback: 'Legitimate in principle and wrong here: a secondary link enlarged past the body text now outranks the content it sits beside.' },
-            { label: 'Change the background of the whole screen to pure white.', feedback: 'It buys a fraction of a ratio point and changes every other element on the screen to fix one link.' },
-            { label: 'Make the link black, which certainly passes.', feedback: 'It passes and removes the distinction between a link and body text, which is information the reader was using.' },
+            { label: 'Darken the link until it passes, keeping it recognisably the same hue.', correct: true, feedback: 'It fixes the failure at its source and keeps the palette’s intent: #5f7065 on #fffefb, for example, measures 5.22:1 and still reads as the same grey-green, just darker.', was: ['Darken the link colour until it passes, keeping it recognisably the same hue.'] },
+            { label: 'Enlarge the link to 19 px bold so the 3:1 large-text threshold applies.', feedback: 'Legitimate in principle, since 3.57:1 clears 3:1, and wrong here: a secondary link enlarged past the body text now outranks the content it sits beside.', was: ['Enlarge the link to 19 semibold so the large-text threshold applies.'] },
+            { label: 'Change the whole screen’s background from #fffefb to pure white #ffffff.', feedback: 'It buys almost nothing, 3.57:1 becomes 3.60:1, and it changes every other element on the screen to fix one link.', was: ['Change the background of the whole screen to pure white.'] },
+            { label: 'Make the link black, which certainly passes and is simple to specify.', feedback: 'It passes and removes the distinction between a link and body text, which is information the reader was using.', was: ['Make the link black, which certainly passes.'] },
           ],
           then: 'Choose repairs for your own failures the same way: fix the element, keep what the colour was doing.',
         },
         start: 'Take the worst-failing row first; it usually forces the largest decision.',
         enough: 'Every failing row has a new measured ratio beside it.' },
-      { terms: [{ term: 'Arm’s length', meaning: 'Holding the page or screen as far away as a reader actually would, rather than close up the way you hold it while working on it.' }, { term: 'Floor', meaning: 'A minimum rather than a target. A ratio that clears its threshold is the least that was acceptable, not evidence that the text reads well.' }], demo: { scenario: 'Made-up example. Reading a printed class list at a window, and nearly repairing the wrong thing.', beats: [{ label: 'What I expected', text: 'Every row in my table now met its threshold, so I carried the printed screen to the window mostly to confirm it.' }, { label: 'What happened', text: 'The 12 point labels under each class were unreadable at arm’s length in the daylight. They had measured 5.2, comfortably above the number they needed.' }, { label: 'My first move', text: 'Push every grey towards black. It would certainly help something, and I had already changed three elements before I stopped.' }, { label: 'What stopped me', text: 'The label was not failing on its colour. It was failing on its size, and on light washing across the paper. Darkening it would have flattened the palette to fix a fault that was somewhere else.' }, { label: 'What I wrote instead', text: '“12 point labels meet 5.2 and are still unreadable outdoors at arm’s length.” Then one repair: the labels moved up to 14, which is a change to the type ladder rather than to any colour.' }], wrongTurn: 'The wrong turn is taking what your eyes find as a signal to raise every ratio. It is tempting because darkening is the repair you already know how to make, and it always improves something a little.', tradeoff: 'Moving the labels from 12 to 14 costs vertical space and pushes roughly one class per screen off the bottom. That is a real loss, taken because labels nobody can read are a larger one.', uncertainty: 'Still unknown: how the same page reads for eyes that are not mine. One person at one window on one afternoon is a hint about the screen, not a finding about readers.' }, expect: 'What your own eyes find that the numbers did not.', fields: ['own-reading'],
+      { terms: [{ term: 'Arm’s length', meaning: 'Holding the page or screen as far away as a reader actually would, rather than close up the way you hold it while working on it.' }, { term: 'Floor', meaning: 'A minimum rather than a target. A ratio that clears its threshold is the least that was acceptable, not evidence that the text reads well.' }], demo: { scenario: 'Made-up example. Reading a printed class list at a window, and nearly repairing the wrong thing.', beats: [{ label: 'What I expected', text: 'Every row in my table now met its threshold, so I carried the printed screen to the window mostly to confirm it.' }, { label: 'What happened', text: 'The 12 point labels under each class were unreadable at arm’s length in the daylight. Their pair, #6b6b6b on #ffffff, had measured 5.33, comfortably above the 4.5 they needed.' }, { label: 'My first move', text: 'Push every grey towards black. It would certainly help something, and I had already changed three elements before I stopped.' }, { label: 'What stopped me', text: 'The label was not failing on its colour. It was failing on its size, and on light washing across the paper. Darkening it would have flattened the palette to fix a fault that was somewhere else.' }, { label: 'What I wrote instead', text: '“12 point labels meet 5.2 and are still unreadable outdoors at arm’s length.” Then one repair: the labels moved up to 14, which is a change to the type ladder rather than to any colour.' }], wrongTurn: 'The wrong turn is taking what your eyes find as a signal to raise every ratio. It is tempting because darkening is the repair you already know how to make, and it always improves something a little.', tradeoff: 'Moving the labels from 12 to 14 costs vertical space and pushes roughly one class per screen off the bottom. That is a real loss, taken because labels nobody can read are a larger one.', uncertainty: 'Still unknown: how the same page reads for eyes that are not mine. One person at one window on one afternoon is a hint about the screen, not a finding about readers.' }, expect: 'What your own eyes find that the numbers did not.', fields: ['own-reading'],
         start: 'Take the screen to a window, or turn the brightness down, and read it at arm’s length.',
         enough: 'You noted at least one thing that passes the number and still reads poorly, or said plainly that nothing did.' },
       { terms: [{ term: 'Bounding a claim', meaning: 'Saying plainly what your evidence covers and what it leaves out, in the same sentence, so a measurement is not read later as a promise.' }, { term: 'Opaque', meaning: 'A colour with nothing showing through it. Your measured ratios hold for opaque pairs; text over a photograph or a partly see-through panel is a separate question.' }], expect: 'One sentence bounding what the numbers show, and the repair the Check questions asked for.',
@@ -427,21 +459,21 @@ export const guided03: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'The grey placeholder text inside your form field measures 2.6. Is that a failure?',
+        question: 'The grey placeholder text inside your form field, #9e9e9e on #ffffff at 16 px, measures 2.68:1. Is that a failure?',
         options: [
-          { label: 'Yes. It is real text the reader must read to know what to type, and it is not an exempt case.', correct: true, feedback: 'Placeholder text is often the only instruction present, and it is usually the faintest thing on the screen. The sturdier fix is a visible label.' },
-          { label: 'No, because it is only a hint and disappears when typing starts.', feedback: 'Disappearing when typing starts is a second problem, not an exemption. Before it disappears it is the instruction.' },
-          { label: 'No, because placeholder text counts as inactive.', feedback: 'The inactive exception is about genuinely disabled controls, not about hints in an active field.' },
+          { label: 'It fails: the reader must read it to know what to type, and no exception covers it.', correct: true, feedback: 'Placeholder text is often the only instruction present, and it is usually the faintest thing on the screen. The sturdier fix is a visible label.', was: ['Yes. It is real text the reader must read to know what to type, and it is not an exempt case.'] },
+          { label: 'It passes, because a hint disappears the moment typing starts and so is optional.', feedback: 'Disappearing when typing starts is a second problem, not an exemption. Before it disappears it is the instruction.', was: ['No, because it is only a hint and disappears when typing starts.'] },
+          { label: 'It passes, because placeholder text belongs to an inactive control and is exempt.', feedback: 'The inactive exception is about genuinely disabled controls, not about hints in a field the reader is about to use.', was: ['No, because placeholder text counts as inactive.'] },
         ],
-        repair: 'Add your placeholder text as a row in step 2 and measure it. If it fails, repair it and record the change in step 5.',
+        repair: 'Add your placeholder text as a row in step 2 and measure it. If it fails, repair it and record the change in step 5; if it passes, say so with its ratio.',
         recheck: 'The table includes every hint and small-print element, each with a measured ratio.',
       },
       {
-        question: 'You enlarge a failing label to 19 semibold so the large-text threshold applies. When is that a good repair?',
+        question: 'You enlarge a failing label to 19 px bold so the 3:1 large-text threshold applies. When is that a good repair?',
         options: [
-          { label: 'When the element genuinely deserves that prominence in the hierarchy you already built.', correct: true, feedback: 'It is a legitimate route and it changes the design. If the element was deliberately quiet, enlarging it to pass a check contradicts the hierarchy.' },
-          { label: 'Always: it passes the check without changing any colour.', feedback: 'It passes by changing the type hierarchy instead, which is a bigger change than adjusting a colour.' },
-          { label: 'Never: only colour changes are honest repairs.', feedback: 'Too strict. The threshold exists because larger, heavier text is genuinely easier to read.' },
+          { label: 'When that element deserves the extra prominence in the hierarchy you built.', correct: true, feedback: 'It is a legitimate route and it changes the design. If the element was deliberately quiet, enlarging it to pass a check contradicts the hierarchy, and it only works if the ratio is already at least 3:1.', was: ['When the element genuinely deserves that prominence in the hierarchy you already built.'] },
+          { label: 'Whenever it fails, because it passes the check without touching any colour.', feedback: 'It passes by changing the type hierarchy instead, which is a bigger change than adjusting a colour, and it does nothing for a pair below 3:1.', was: ['Always: it passes the check without changing any colour.'] },
+          { label: 'Rarely if ever, because only colour changes count as honest contrast repairs.', feedback: 'Too strict. The threshold exists because larger, heavier text is genuinely easier to read, so it is an honest route when the element deserves the size.', was: ['Never: only colour changes are honest repairs.'] },
         ],
         repair: 'Check your repairs in step 3. If you enlarged anything, confirm it deserves the prominence, or choose a colour repair instead, and note it in step 5.',
         recheck: 'Each repair is consistent with the type scale from lesson 1.',
@@ -449,9 +481,9 @@ export const guided03: Record<string, Guided> = {
       {
         question: 'Every element now passes. What may you claim?',
         options: [
-          { label: 'That these opaque pairs meet their stated thresholds, which is a floor and not proof the screen is readable.', correct: true, feedback: 'The numbers are one necessary condition. Sunlight, small sizes, transparency, images behind text and everything about layout are untouched by them.' },
-          { label: 'That the screen is accessible.', feedback: 'Accessibility covers structure, keyboard use, announcement, motion, language and much else. Contrast is one measurable slice.' },
-          { label: 'That readers with low vision can use the screen comfortably.', feedback: 'The thresholds are a minimum, set with a broad population in mind. Comfort for a particular reader is a different question and needs a person.' },
+          { label: 'That these opaque pairs meet their thresholds: a floor, not proof of readability.', correct: true, feedback: 'The numbers are one necessary condition. Sunlight, small sizes, transparency, images behind text and everything about layout are untouched by them.', was: ['That these opaque pairs meet their stated thresholds, which is a floor and not proof the screen is readable.'] },
+          { label: 'That the screen now meets accessibility requirements, since contrast was the gap.', feedback: 'Accessibility covers structure, keyboard use, announcement, motion, language and much else. Contrast is one measurable slice.', was: ['That the screen is accessible.'] },
+          { label: 'That readers with low vision can use the screen comfortably at these ratios.', feedback: 'The thresholds are a minimum, set with a broad population in mind. Comfort for a particular reader is a different question and needs a person.', was: ['That readers with low vision can use the screen comfortably.'] },
         ],
         repair: 'Write the bounding sentence in step 5 if it is missing, and remove any claim about accessibility from your notes.',
         recheck: 'The record separates what was measured from what was not.',
@@ -462,6 +494,24 @@ export const guided03: Record<string, Guided> = {
       external: 'The before and after screens stay in your own folder. Record the hex pairs here rather than relying on a photograph, which cannot establish exact colours.',
       creator: 'Your creator reads the measurements, the repairs and your bounding sentence. The awkward rows are the ones worth his attention.',
       next: 'Open Your work and choose Ready for review. The next lesson regroups the densest screen you have, using space before anything else.',
+    },
+    material: [
+      'Practice palette, fictional: use it only if your own palette is missing, and measure every pair yourself with the calculator. Nothing here tells you the result.',
+      'Body text · #777777 on the page #FFFFFF · 16 px regular.',
+      'Link · #214e46 on #FFFFFF · 16 px regular.',
+      'Error message · #B3261E on #FFFFFF · 14 px regular.',
+      'Reserve button label · #FFFFFF on the button fill #567E48 · 18 px bold. The fill itself sits on the #FFFFFF page.',
+      'Email placeholder “you@example.com” · #9E9E9E on #FFFFFF · 16 px regular.',
+      'Disabled Reserve button on a full class · label #FFFFFF on the fill #9FB398.',
+    ],
+    transfer: {
+      scenario: 'Made-up case: A bakery’s order page uses the grey #8a8a8a on white, which measures 3.45:1, for two things: the 24 px regular “Collection times” heading and the 14 px regular prices beneath it. The “Order” button is disabled until a time is chosen; its label is #ffffff on #9fb398, which measures 2.24:1. The owner likes the soft grey and wants to keep it.',
+      prompt: 'Which of these pass, which fail and which are exempt, and how would you repair the failure while keeping some of the softness? Explain the threshold behind each call.',
+      anchors: {
+        weak: 'Calls everything a pass because the grey looks readable, or turns every element black; treats the disabled label as a contrast failure, or ignores it.',
+        adequate: 'The heading passes as large text (24 px regular, 3.45:1 against 3:1); the prices fail (14 px needs 4.5:1); the disabled label is exempt as part of an inactive control. Repairs the prices with a darker grey measuring at least 4.5:1 and keeps the heading soft.',
+        strong: 'As adequate, plus: the exemption is about conformance, not understanding, so the button still needs words such as “Choose a time first”; re-measures the new grey (for example #595959, 7.00:1) and limits the claim to opaque colour pairs.',
+      },
     },
   },
   'm03-l05-v1': {
@@ -475,10 +525,10 @@ export const guided03: Record<string, Guided> = {
         { id: 'mismatches', label: 'Where your intended grouping and the perceived grouping disagree', kind: 'long', example: 'Example (made up): the price sits closer to the next class than to its own title, so it reads as belonging to the wrong one.' },
       ] },
       { id: 'regroup', title: 'The cheapest tool that works', intro: 'Space first. A shared background only where space fails. A border only where that fails.', fields: [
-        { id: 'group-1-tool', label: 'Group 1 · what you changed and which tool it needed', kind: 'short' },
+        { id: 'group-1-tool', label: 'Group 1 · what you changed and which tool it needed', kind: 'short', hint: 'If a group already reads as one, write “no change” and how you checked. Keeping what works is a valid result.' },
         { id: 'group-2-tool', label: 'Group 2 · what you changed and which tool it needed', kind: 'short' },
         { id: 'group-3-tool', label: 'Group 3 · what you changed and which tool it needed', kind: 'short' },
-        { id: 'borders-used', label: 'Anywhere you reached for a border, and why space was not enough', kind: 'long' },
+        { id: 'borders-used', label: 'Anywhere you reached for a border, and why space was not enough', kind: 'long', hint: 'If you used no border, write “none”.' },
       ] },
       { id: 'counter', title: 'Where the principle misleads', fields: [
         { id: 'counterexample', label: 'One case where following a principle produces the wrong reading', kind: 'long', hint: 'For example, similarity making an unrelated element look like part of a set.' },
@@ -521,10 +571,10 @@ export const guided03: Record<string, Guided> = {
           material: 'A supplied problem from the same made-up screen: a class title, its date, its price and a Reserve button all sit with identical gaps between them, so the button reads as another line of information rather than the action.',
           question: 'What is the cheapest tool that fixes it?',
           options: [
-            { label: 'Space: tighten the gaps between title, date and price, and open a clearly larger gap before the button.', correct: true, feedback: 'Proximity does the whole job. The three facts become one group and the button separates itself as something different, with nothing added to the screen.' },
-            { label: 'A shared background behind the title, date and price.', feedback: 'It would work and it adds a surface, a colour decision and padding for something space alone can solve.' },
-            { label: 'A border around the whole class block.', feedback: 'The most expensive option: a new line on the screen, more vertical space on a phone, and the same fix space would have produced.' },
-            { label: 'Make the button a different colour so it stands out.', feedback: 'Colour distinguishes it and leaves the grouping unchanged, so the button still reads as a member of the same list.' },
+            { label: 'Space: tighten title, date and price, and open a larger gap before the button.', correct: true, feedback: 'Proximity does the whole job. The three facts become one group and the button separates itself as something different, with nothing added to the screen.', was: ['Space: tighten the gaps between title, date and price, and open a clearly larger gap before the button.'] },
+            { label: 'A shared background behind the title, date and price to bind them as one group.', feedback: 'It would work and it adds a surface, a colour decision and padding for something space alone can solve.', was: ['A shared background behind the title, date and price.'] },
+            { label: 'A thin border around the whole class block so its edges are clear at a glance.', feedback: 'The most expensive option: a new line on the screen, more vertical space on a phone, and the same fix space would have produced.', was: ['A border around the whole class block.'] },
+            { label: 'Give the button a different colour so it stands out from the lines above it.', feedback: 'Colour distinguishes it and leaves the grouping unchanged, so the button still reads as a member of the same list.', was: ['Make the button a different colour so it stands out.'] },
           ],
           then: 'Fix your own mismatches in the same order, and only record a border where you can say what space failed to do.',
         },
@@ -543,19 +593,19 @@ export const guided03: Record<string, Guided> = {
       {
         question: 'Your screen feels disorganised, so you put every item in a card. What happens?',
         options: [
-          { label: 'Common region stops distinguishing anything, and the hierarchy disappears because every item is presented as a peer.', correct: true, feedback: 'Enclosure only groups when some things are enclosed and others are not. Cards everywhere also cost real vertical space on a phone.' },
-          { label: 'The screen becomes organised, because every item has a clear boundary.', feedback: 'It becomes enclosed, which is not the same as organised. What matters most on the screen is now indistinguishable from what matters least.' },
-          { label: 'It works if the cards have consistent padding.', feedback: 'Consistency makes it tidier and does nothing about the lost hierarchy or the borders you did not need.' },
+          { label: 'Enclosure stops telling anything apart, and every item now looks like a peer.', correct: true, feedback: 'Common region only groups when some things are enclosed and others are not. Cards everywhere also cost real vertical space on a phone.', was: ['Common region stops distinguishing anything, and the hierarchy disappears because every item is presented as a peer.'] },
+          { label: 'It becomes organised, because every item now has a clear boundary of its own.', feedback: 'It becomes enclosed, which is not the same as organised. What matters most on the screen is now indistinguishable from what matters least.', was: ['The screen becomes organised, because every item has a clear boundary.'] },
+          { label: 'It works well, provided every card uses the same padding and corner radius.', feedback: 'Consistency makes it tidier and does nothing about the lost hierarchy or the borders you did not need.', was: ['It works if the cards have consistent padding.'] },
         ],
-        repair: 'Look at your regrouping in step 3. Replace one border or background with space and see whether the grouping survives, then record it in step 5.',
+        repair: 'Look at your regrouping in step 3. Replace one border or background with space and see whether the grouping survives; keep the enclosure if it does not. Record it in step 5.',
         recheck: 'Space does the work wherever it can, and each enclosure has a reason.',
       },
       {
         question: 'Why circle the perceived groups before changing anything?',
         options: [
-          { label: 'Because the screen may already be grouping things differently from how you intended, and that mismatch is the actual problem.', correct: true, feedback: 'Without the diagnosis you are decorating. With it, most fixes turn out to be a few points of space in the right place.' },
-          { label: 'To document the before state for a portfolio.', feedback: 'Useful later and not the reason. The reason is that you cannot fix a grouping you have not read.' },
-          { label: 'It is not necessary if you designed the screen yourself.', feedback: 'Designing it is exactly why you cannot see it. You know what belongs together, so your eye supplies the grouping the reader will not get.' },
+          { label: 'The screen may group things differently from what you meant; that gap is the fault.', correct: true, feedback: 'Without the diagnosis you are decorating. With it, many fixes turn out to be a few points of space in the right place.', was: ['Because the screen may already be grouping things differently from how you intended, and that mismatch is the actual problem.'] },
+          { label: 'To record a clean before image that the portfolio comparison will need later.', feedback: 'Useful later and not the reason. The reason is that you cannot fix a grouping you have not read.', was: ['To document the before state for a portfolio.'] },
+          { label: 'It adds little when you designed the screen yourself and know what belongs together.', feedback: 'Designing it is exactly why you cannot see it. You know what belongs together, so your eye supplies the grouping the reader will not get.', was: ['It is not necessary if you designed the screen yourself.'] },
         ],
         repair: 'If your perceived-groups box in step 2 is empty or repeats your intention, redo it from the printed screen and record what changed in step 5.',
         recheck: 'The perceived groups differ from your intended groups somewhere; if they do not, say how you checked.',
@@ -563,9 +613,9 @@ export const guided03: Record<string, Guided> = {
       {
         question: 'You could not find a counterexample where a principle misleads. What does that suggest?',
         options: [
-          { label: 'Look harder at similarity: things that look alike but are unrelated are the most common trap.', correct: true, feedback: 'Two elements sharing a size or a colour read as a set even when one is an advertisement and the other is content. It is easy to miss because you know which is which.' },
-          { label: 'That your screen is well designed and the principles hold.', feedback: 'The principles are descriptions of perception, not rules that hold. A screen with no counterexample usually has one you have not spotted.' },
-          { label: 'That counterexamples only occur in complex interfaces.', feedback: 'They occur in a list of three items. Any repeated visual treatment can capture something that does not belong.' },
+          { label: 'Look again at similarity: alike-looking but unrelated items are a frequent trap.', correct: true, feedback: 'Two elements sharing a size or a colour read as a set even when one is an advertisement and the other is content. It is easy to miss because you know which is which.', was: ['Look harder at similarity: things that look alike but are unrelated are the most common trap.'] },
+          { label: 'That the screen is well grouped and the principles hold everywhere on it.', feedback: 'The principles are descriptions of perception, not rules that hold. A screen with no counterexample usually has one you have not spotted.', was: ['That your screen is well designed and the principles hold.'] },
+          { label: 'That counterexamples mostly turn up in complex interfaces, not in short lists.', feedback: 'They occur in a list of three items. Any repeated visual treatment can capture something that does not belong.', was: ['That counterexamples only occur in complex interfaces.'] },
         ],
         repair: 'Look for two elements that share a treatment but not a purpose, and write that up as your counterexample in step 4, then note it in step 5.',
         recheck: 'The counterexample names two specific elements on your screen and what the reader would wrongly conclude.',
@@ -576,6 +626,15 @@ export const guided03: Record<string, Guided> = {
       external: 'The printed screen with your pencil circles is the evidence; keep it and name it here. Nothing is uploaded.',
       creator: 'Your creator reads the mismatch list and which tool each group needed. The borders you justified are the interesting part.',
       next: 'Open Your work and choose Ready for review. The next lesson turns the spacing you just used by eye into a named scale.',
+    },
+    transfer: {
+      scenario: 'Made-up case: A parcel-locker touch screen shows five items with equal gaps between them: the locker number, a six-digit collection code, “Collect by Friday 18:00”, a “Problem with your parcel?” link, and a large “Open locker” button. The help link is drawn as a second green button, the same size as “Open locker”.',
+      prompt: 'Which items would you group, with which tool, and why? Say what you would check before adding any border or card.',
+      anchors: {
+        weak: 'Puts every item in its own card or border, so nothing is subordinate; or regroups by taste without first noticing what the eye groups now.',
+        adequate: 'Groups the locker number, code and deadline as one “what you need” block using space, opens a larger gap before the button, separates the help link from the button, and adds a background or border only where space fails.',
+        strong: 'As adequate, plus a counterexample or check: two identical green buttons read as one set of equal actions by similarity, so the help link should look like a link; and a neutral question such as “where would you type your code?” could test the grouping.',
+      },
     },
   },
   'm03-l06-v1': {
@@ -590,13 +649,13 @@ export const guided03: Record<string, Guided> = {
         { id: 'scale-values', label: 'Four to seven values, each with a name and a typical use', kind: 'long', hint: 'Name them by use: inside a group, between groups, around a section.' },
       ] },
       { id: 'apply', title: 'Mapping the old gaps onto it', fields: [
-        { id: 'conflicts', label: 'Where two different purposes collapsed onto the same value, and which one you moved', kind: 'long' },
+        { id: 'conflicts', label: 'Where two different purposes collapsed onto the same value, and which one you moved', kind: 'long', hint: 'If no two purposes collided, write “none” and how you checked.' },
       ] },
       { id: 'prove', title: 'The grouping proof', intro: 'For each group: the gap inside it, and the gap around it. The outside must clearly win.', fields: [
         { id: 'proof-1', label: 'Group 1 · inside gap vs surrounding gap', kind: 'short', example: 'Example (made up): title/date/price inside 8, surrounded by 24.' },
         { id: 'proof-2', label: 'Group 2 · inside gap vs surrounding gap', kind: 'short' },
         { id: 'proof-3', label: 'Group 3 · inside gap vs surrounding gap', kind: 'short' },
-        { id: 'proof-fixes', label: 'Any group where the outside gap was not clearly larger, and what you did', kind: 'long' },
+        { id: 'proof-fixes', label: 'Any group where the outside gap was not clearly larger, and what you did', kind: 'long', hint: 'If every group already passed, write “none”; that is a valid result.' },
       ] },
       { id: 'record', title: 'Save', fields: [
         { id: 'density-choice', label: 'Anywhere you deliberately chose tighter spacing, and why', kind: 'short', hint: 'A dense list can be right. Say what made it right here.' },
@@ -639,10 +698,10 @@ export const guided03: Record<string, Guided> = {
           material: 'A supplied measurement from the same made-up screen: inside the class block, title to date is 12 and date to price is 12; the gap between one class block and the next is also 12.',
           question: 'What does that produce, and what is the fix?',
           options: [
-            { label: 'An undifferentiated list where the price could belong to either class; open the between-block gap to a larger scale value.', correct: true, feedback: 'Equal gaps give the eye nothing to group with. Widening the outside gap is the whole repair, and it costs one scale value.' },
-            { label: 'A clean, consistent rhythm; nothing needs fixing.', feedback: 'It is consistent and unreadable. Consistency means the same values used for the same purposes, deliberately unequal where the purposes differ.' },
-            { label: 'A grouping problem best fixed with a divider line between classes.', feedback: 'A line would work and buys with a new element what one larger gap gives free.' },
-            { label: 'Tighten the inside gaps to 4 so the blocks are denser.', feedback: 'This also works, by widening the ratio from the other side. Check it still reads comfortably at enlarged text before choosing it.' },
+            { label: 'A list where the price could belong to either class; widen the gap between blocks.', correct: true, feedback: 'Equal gaps give the eye nothing to group with. Making the outside gap clearly larger than the inside gaps is the repair; widening it costs one scale value.', was: ['An undifferentiated list where the price could belong to either class; open the between-block gap to a larger scale value.'] },
+            { label: 'A clean, consistent rhythm that reads well, so nothing on the screen needs fixing.', feedback: 'It is consistent and unreadable. Consistency means the same values used for the same purposes, deliberately unequal where the purposes differ.', was: ['A clean, consistent rhythm; nothing needs fixing.'] },
+            { label: 'A grouping problem, best fixed by drawing a divider line between the classes.', feedback: 'A line would work and buys with a new element what one larger gap gives free.', was: ['A grouping problem best fixed with a divider line between classes.'] },
+            { label: 'Tighten every gap, inside and between blocks, to 4 so the list is denser.', feedback: 'Every gap is still equal, so nothing groups; the list is just shorter. Tightening only the inside gaps would work, because it makes the outside gap win.', was: ['Tighten the inside gaps to 4 so the blocks are denser.'] },
           ],
           then: 'Measure your own groups and make sure the outside gap wins in every one.',
         },
@@ -655,21 +714,21 @@ export const guided03: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'Consistent spacing means the same gap everywhere. True?',
+        question: 'Someone says consistent spacing means the same gap everywhere. What does consistency mean for spacing?',
         options: [
-          { label: 'No. It means a short list of values used for the same purposes, deliberately unequal where purposes differ.', correct: true, feedback: 'Uniform gaps destroy grouping and produce exactly the flat screen the previous lesson repaired.' },
-          { label: 'Yes: one gap value is the simplest system to maintain.', feedback: 'It is simple and it removes your only free grouping tool. Simplicity here costs readability.' },
-          { label: 'Yes for vertical gaps, no for horizontal ones.', feedback: 'The principle is the same in both directions: gaps carry meaning about what belongs together.' },
+          { label: 'A short list of values, reused for the same purposes and unequal where purposes differ.', correct: true, feedback: 'Uniform gaps destroy grouping and produce exactly the flat screen the previous lesson repaired.', was: ['No. It means a short list of values used for the same purposes, deliberately unequal where purposes differ.'] },
+          { label: 'One gap value used everywhere, because a single value is the easiest to maintain.', feedback: 'It is simple and it removes your only free grouping tool. Simplicity here costs readability.', was: ['Yes: one gap value is the simplest system to maintain.'] },
+          { label: 'One gap value for vertical spacing, with horizontal gaps left free to vary by eye.', feedback: 'The principle is the same in both directions: gaps carry meaning about what belongs together.', was: ['Yes for vertical gaps, no for horizontal ones.'] },
         ],
-        repair: 'Check your proof table in step 4. If any group has equal inside and outside gaps, change one and record it in step 5.',
+        repair: 'Check your proof table in step 4. If any group has equal inside and outside gaps, change one and record it in step 5; if none does, say so.',
         recheck: 'Every group shows a clearly larger surrounding gap.',
       },
       {
-        question: 'You mapped every gap to the scale, and one heading now sits slightly too close to its section. What do you do?',
+        question: 'You mapped every gap to the scale, and one heading now sits too close to the section above it, so it seems to belong there. What do you do?',
         options: [
-          { label: 'Move it to the next scale value up and record why, rather than inventing a value between them.', correct: true, feedback: 'Using the next value keeps the scale intact. Inventing 14 because it feels right is how twelve accidental gaps appeared in the first place.' },
-          { label: 'Add a new value to the scale for this case.', feedback: 'Sometimes correct, and only if the new value has a general use. Added for one element, it is not a scale any more.' },
-          { label: 'Leave it: the scale matters more than one heading.', feedback: 'The scale exists to serve the reading. If a gap now groups the wrong things, fix it and say so.' },
+          { label: 'Move the gap above it to the next value on the scale and note why, not an in-between one.', correct: true, feedback: 'Using the next value keeps the scale intact. Inventing 14 because it feels right is how twelve accidental gaps appeared in the first place.', was: ['Move it to the next scale value up and record why, rather than inventing a value between them.'] },
+          { label: 'Add a new value to the scale for this one heading, since the gap is genuinely odd.', feedback: 'A new value can be right when it has a general use. Added for one element, it is not a scale any more.', was: ['Add a new value to the scale for this case.'] },
+          { label: 'Leave it as mapped, because keeping the scale intact matters more than one heading.', feedback: 'The scale exists to serve the reading. If a gap now groups the wrong things, fix it and say so.', was: ['Leave it: the scale matters more than one heading.'] },
         ],
         repair: 'Look at your conflicts box in step 3 and make sure each collapse names which element moved and why. Record the change in step 5.',
         recheck: 'Every gap on the screen is a value from the scale, and each exception is written down.',
@@ -677,9 +736,9 @@ export const guided03: Record<string, Guided> = {
       {
         question: 'Why measure the existing gaps before defining the scale?',
         options: [
-          { label: 'Because the count shows how much of the current spacing was never decided, which is what the scale is for.', correct: true, feedback: 'People routinely expect four or five values and find a dozen. The audit is what makes the problem visible and the after comparable.' },
-          { label: 'To produce a before image for the portfolio.', feedback: 'A side benefit. The reason is that you cannot fix spacing you have not looked at.' },
-          { label: 'It is not needed if you already have a type scale.', feedback: 'A type scale governs text sizes; the gaps between things are a separate set of accidents.' },
+          { label: 'The count shows how much of today’s spacing was never decided, which the scale fixes.', correct: true, feedback: 'People often expect four or five values and find a dozen. The audit is what makes the problem visible and the after comparable.', was: ['Because the count shows how much of the current spacing was never decided, which is what the scale is for.'] },
+          { label: 'To produce a before image and a gap count for the portfolio comparison later.', feedback: 'A side benefit. The reason is that you cannot fix spacing you have not looked at.', was: ['To produce a before image for the portfolio.'] },
+          { label: 'It adds little once a type scale exists, since text sizes already set the rhythm.', feedback: 'A type scale governs text sizes; the gaps between things are a separate set of accidents.', was: ['It is not needed if you already have a type scale.'] },
         ],
         repair: 'If your audit in step 1 is an estimate, measure the gaps with a ruler now and record the real count, then note the change in step 5.',
         recheck: 'The gap count is a measured number and the after state maps to the scale.',
@@ -691,17 +750,30 @@ export const guided03: Record<string, Guided> = {
       creator: 'Your creator reads the scale and the grouping proof. The proof table is what shows the system working rather than being declared.',
       next: 'Open Your work and choose Ready for review. The next lesson arranges this screen in columns and finds where it has to change.',
     },
+    transfer: {
+      scenario: 'Made-up case: A recipe card on a cooking website has these vertical gaps: 6 under the title, 10 between ingredient lines, 10 between the ingredient list and the “Method” heading, 10 under the “Method” heading, and 14 between method steps. The “Method” heading floats halfway between the ingredients and the first step.',
+      prompt: 'Propose a small spacing scale and map these gaps onto it. Which gap must change most, and why?',
+      anchors: {
+        weak: 'Sets every gap to one value for consistency, or keeps the odd values; ignores the difference between gaps inside a group and gaps between groups.',
+        adequate: 'Defines a short scale (for example 4, 8, 16, 24, 32), keeps ingredient lines tight, and makes the gap above “Method” clearly larger than the gap below it (for example 32 above, 8 below) so the heading attaches to the method.',
+        strong: 'As adequate, plus a trade-off or check: the larger section gap costs height on a phone, method steps and ingredients need a visible difference at 200 per cent text, and the scale values should grow with the text.',
+      },
+    },
   },
   'm03-l07-v1': {
-    route: paperRoute('the same content at three widths'),
+    route: {
+      recommended: 'Use the reflow demo in this lesson to watch the same content reflow and clip between 320 and 1280 px, or narrow a real page in your browser. Then specify your own layout on paper at three widths and record it in the worksheet here. Paper shows the arrangement you intend; only a page that really reflows shows what a browser does.',
+      alternative: 'Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.',
+    },
     worksheet: [
       { id: 'structure', title: 'The structure at the widest layout', fields: [
         { id: 'columns', label: 'Columns, gutters and margins, in values', kind: 'short', hint: 'Use your spacing scale where it applies.', example: 'Example (made up): 12 columns, 24 gutters, 32 margins.' },
       ] },
-      { id: 'change-points', title: 'Where it stops working', intro: 'Narrow the layout gradually and record each failure. Do not start from a list of device sizes.', fields: [
-        { id: 'change-1', label: 'Change point 1 · roughly what width, and exactly what failed', kind: 'long', example: 'Example (made up): about 700 px — the class title and the price collided because the title column had become too narrow for the longest name.' },
+      { id: 'change-points', title: 'Where it stops working', intro: 'Narrow a page that really reflows, the demo or a real page, and record each failure. Then estimate where your own content would fail. Do not start from a list of device sizes.', fields: [
+        { id: 'change-1', label: 'Change point 1 · roughly what width, and exactly what failed', kind: 'long', hint: 'Say whether you saw it on a page that reflows or estimated it for your paper layout. A rough estimate: a line needs about half the text size per character, so a 58-character title at 16 px needs about 460 px.', example: 'Example (made up): about 700 px — the class title and the price collided because the title column had become too narrow for the longest name.' },
         { id: 'change-2', label: 'Change point 2 · roughly what width, and exactly what failed', kind: 'long' },
         { id: 'change-3', label: 'Change point 3 · roughly what width, and exactly what failed', kind: 'long' },
+        { id: 'clip-vs-reflow', label: 'In the demo or on a real page: one thing that reflowed, one thing that was clipped, and how you told them apart', kind: 'long', hint: 'Reflowed: it re-wrapped or moved, and all of it can still be reached by scrolling down. Clipped: it was cut off, hidden, or only reachable by scrolling sideways.', example: 'Example (made up): at 600 px the cards went from three to two per row, all still there: reflow. In Clipped mode the third card slid past the right edge and the page scrolled sideways: clipping.' },
       ] },
       { id: 'reflow', title: 'What happens after each change', fields: [
         { id: 'reflow-plan', label: 'For each change point: the new arrangement', kind: 'long' },
@@ -726,15 +798,53 @@ export const guided03: Record<string, Guided> = {
         ],
         start: 'Draw the structure over your widest sketch in pencil before deciding anything.',
         enough: 'The values come from your spacing scale wherever they can.' },
-      { terms: [{ term: 'Change point', meaning: 'A width at which the arrangement has to change because the content stopped working. It is named for what failed, never for a device.' }, { term: 'Narrowing', meaning: 'Covering the layout gradually from one side to find where it breaks, instead of jumping between widths you chose in advance.' }, { term: 'Content failure', meaning: 'The specific thing that stopped reading well: a collision, a line that will not fit, a column too narrow for the longest name.' }], expect: 'Three change points found by narrowing, each with the content failure that caused it.',
-        fields: ['change-1', 'change-2', 'change-3'],
+      { terms: [{ term: 'Change point', meaning: 'A width at which the arrangement has to change because the content stopped working. It is named for what failed, never for a device.' }, { term: 'Narrowing', meaning: 'Making a page that really reflows gradually narrower, in the demo or a browser window, to find where its content stops reading well. Covering part of a drawing is not narrowing: it only hides part of it.' }, { term: 'Content failure', meaning: 'The specific thing that stopped reading well: a collision, a line that will not fit, a column too narrow for the longest name.' }, { term: 'Reflow', meaning: 'Content rearranging to fit the width it has: lines re-wrap, columns stack, the page grows taller and nothing is lost.' }, { term: 'Clipping', meaning: 'A layout keeping its width while the screen shows less of it: content is cut off, hidden, or only reachable by scrolling sideways.' }], expect: 'Change points found by narrowing a page that really reflows, each with its content failure, and one reflow told apart from one clip.',
+        fields: ['change-1', 'change-2', 'change-3', 'clip-vs-reflow'],
         reveal: { first: 1, group: 1, count: 3, addLabel: 'Add the next change point', note: 'One at a time, found by narrowing rather than chosen from a list.' },
+        sorter: {
+          intro: 'Six made-up observations from narrowing pages and enlarging their text. Label each one: did the content reflow (rearrange to fit, with all of it still reachable by scrolling down), or was it clipped (cut off, hidden, or only reachable sideways)?',
+          options: ['reflow', 'clipping'],
+          items: [
+            { id: 'cards-wrap', text: 'At 700 px the row of three class cards becomes two per row, and the third card moves below the first two.', answer: 'reflow',
+              feedback: {
+                reflow: 'The cards rearranged to fit the width and every one is still there, one scroll further down. That is what reflow looks like.',
+                clipping: 'Nothing was lost or pushed out of reach: the third card moved below the others. Moving is reflow; disappearing would be clipping.',
+              } },
+            { id: 'price-edge', text: 'At 600 px the price column runs past the right edge of the window, and the prices can only be seen by scrolling sideways.', answer: 'clipping',
+              feedback: {
+                reflow: 'The layout kept its width and the window cut it off. Content that needs sideways scrolling at a narrow width has not reflowed.',
+                clipping: 'The column did not rearrange; the window simply shows less of it. Sideways scrolling to reach content is the sign.',
+              } },
+            { id: 'title-lines', text: 'With text at 200 per cent the class title takes three lines, and the card grows taller to hold them.', answer: 'reflow',
+              feedback: {
+                reflow: 'The title re-wrapped and its container grew with it, so every word is still visible. Growing taller is the normal price of reflow.',
+                clipping: 'All three lines are visible because the card grew. It would be clipping if the card kept its height and cut the third line off.',
+              } },
+            { id: 'button-cut', text: 'With text at 200 per cent the button label reads “Res…” and the rest of the word is gone.', answer: 'clipping',
+              feedback: {
+                reflow: 'The label did not move or wrap; it was cut short to fit a fixed width. Truncated text is clipped text.',
+                clipping: 'The button kept its size and the word was cut short, so a reader now has to guess what the button does.',
+              } },
+            { id: 'filters-move', text: 'At 400 px the filter sidebar moves above the list and becomes one “Filters” button that opens the same filters.', answer: 'reflow',
+              feedback: {
+                reflow: 'The filters moved and folded behind a visible, labelled control, and every one can still be reached. That is still reflow.',
+                clipping: 'Nothing became unreachable: a visible “Filters” button opens every filter. It would be clipping if the sidebar were simply cut off with no way to reach it.',
+              } },
+            { id: 'photo-push', text: 'At 320 px a wide photograph keeps its full width, and the Reserve button beside it sits off the right edge of the screen.', answer: 'clipping',
+              feedback: {
+                reflow: 'The photograph refused to shrink and pushed the button out of view. Nothing rearranged to fit, so this is clipping.',
+                clipping: 'A fixed-width image forced the row wider than the screen, so the button is out of reach. It is a common narrow-width failure.',
+              } },
+          ],
+          then: 'Ask the same question of the demo and of your own layout: at each change point, write which content must reflow and which must never be cut off.',
+          pattern: 'The usual slip is calling anything that changes at a narrow width “responsive”. Ask one question: can the reader still reach all of the content by scrolling down? If part of it is cut off, hidden with no control, or only reachable sideways, it was clipped.',
+        },
         demo: {
           scenario: 'Made-up example. Finding where a class list has to change, without starting from device sizes.',
           beats: [
             { label: 'What I planned to do', text: 'Design for mobile, tablet and desktop: 390, 768 and 1280. Three neat sketches.' },
             { label: 'Why I stopped', text: 'Those are three samples from a continuous range. Everything between them is untested, and readers sit everywhere in that range.' },
-            { label: 'What I did instead', text: 'Started wide and narrowed slowly, watching for the first thing that stopped reading well.' },
+            { label: 'What I did instead', text: 'Opened a working version of the list in a browser, started wide and narrowed the window slowly, watching for the first thing that stopped reading well.' },
             { label: 'The first real failure', text: 'At about 700 the longest class title collided with the price beside it. Nothing to do with a tablet; it was the length of that particular string.' },
             { label: 'What that gave me', text: 'A change point with a reason: the two-column row becomes one column when the title can no longer hold its line. The number came from the content.' },
           ],
@@ -742,18 +852,18 @@ export const guided03: Record<string, Guided> = {
           tradeoff: 'Narrowing gradually is slower and gives untidy numbers like 700. Those numbers are the ones tied to your actual content.',
           uncertainty: 'Still unknown: how this behaves with a much longer title in another language. Worth testing before treating the change point as settled.',
         },
-        start: 'Take the widest sketch and cover it progressively from the right, watching what breaks first.',
-        enough: 'Every change point names the content that failed, not a device.' },
+        start: 'Open the demo in Reflows mode at 1280 px and drag slowly towards 320, stopping at the first thing that reads badly. Switch to Clipped and compare, then try 200 per cent text. Then estimate where your own longest content would fail.',
+        enough: 'Every change point names the content that failed, not a device, and says whether you saw it or estimated it. The reflow and the clip are described so someone else could check them.' },
       { expect: 'The arrangement after each change, the narrow reading order, and where the main action sits.',
         fields: ['reflow-plan', 'narrow-order', 'primary-action'],
         supported: {
           material: 'A supplied narrow layout from the same made-up screen, ordered top to bottom: photograph, class title, instructor biography, date and time, price, what to bring, Reserve button, related classes.',
           question: 'What is the most important change to the order?',
           options: [
-            { label: 'Move the instructor biography below Reserve, so date, price and materials reach the reader before the decision.', correct: true, feedback: 'The order is what a person reads and what a screen reader announces. Everything needed to decide should arrive before the control that acts on the decision.' },
-            { label: 'Move the photograph to the bottom, since it carries no information.', feedback: 'Worth considering and it is not the costly problem. The photograph is one scroll; the biography sits between the reader and the facts they need.' },
-            { label: 'Move Reserve to the top so it is always reachable.', feedback: 'It puts the action before the information the action depends on, which invites a decision made without the price.' },
-            { label: 'Nothing: on a phone people scroll, so order matters less.', feedback: 'Order matters more on a phone, because only a little is visible at once and the sequence is the whole experience.' },
+            { label: 'Move the biography below Reserve, so date, price and materials come first.', correct: true, feedback: 'The order is what a person reads and what a screen reader announces. Everything needed to decide should arrive before the control that acts on the decision.', was: ['Move the instructor biography below Reserve, so date, price and materials reach the reader before the decision.'] },
+            { label: 'Move the photograph to the bottom, since it carries no booking information.', feedback: 'Worth considering and it is not the costly problem. The photograph is one scroll; the biography sits between the reader and the facts they need.', was: ['Move the photograph to the bottom, since it carries no information.'] },
+            { label: 'Move Reserve to the very top, so the action is always reachable at once.', feedback: 'It puts the action before the information the action depends on, which invites a decision made without the price.', was: ['Move Reserve to the top so it is always reachable.'] },
+            { label: 'Leave it: on a phone people scroll, so the order matters much less.', feedback: 'Order matters more on a phone, because only a little is visible at once and the sequence is the whole experience.', was: ['Nothing: on a phone people scroll, so order matters less.'] },
           ],
           then: 'Number your own narrow order and check that everything needed to decide arrives before the action.',
         },
@@ -764,7 +874,7 @@ export const guided03: Record<string, Guided> = {
         fields: ['alignment', 'deliberate-breaks'],
         start: 'Lay a ruler down the left edge of each rendering and mark anything that does not meet it.',
         enough: 'Every break is either fixed or recorded with a reason.' },
-      { terms: [{ term: 'Rendering', meaning: 'One drawing of the screen at one width. The three of them together are the evidence this lesson produces.' }, { term: 'Repair', meaning: 'The change a Check question asks you to make, recorded as what you actually altered.' }], expect: 'The arrangement you are least sure about, where the renderings live, and the repair the Check questions asked for.',
+      { terms: [{ term: 'Rendering', meaning: 'One drawing of the screen at one width. On paper it specifies what you intend; it is not a record of what a browser did.' }, { term: 'Repair', meaning: 'The change a Check question asks you to make, recorded as what you actually altered.' }], expect: 'The arrangement you are least sure about, where the renderings live, and the repair the Check questions asked for.',
         fields: ['uncertain-arrangement', 'photo-reference', 'improvement-made'],
         start: 'Choose the change point you guessed at rather than derived.',
         enough: 'The uncertainty names a specific width and arrangement.' },
@@ -773,19 +883,19 @@ export const guided03: Record<string, Guided> = {
       {
         question: 'You designed for 390, 768 and 1280. What has not been tested?',
         options: [
-          { label: 'Everything between them, which is where most readers actually are.', correct: true, feedback: 'Widths are continuous. Three samples guarantee the ranges between are unexamined, and that is where a title collides or a column collapses.' },
-          { label: 'Nothing important: those three cover phone, tablet and desktop.', feedback: 'Those labels describe devices, not the widths a browser window can take. A resized desktop window sits nowhere near any of them.' },
-          { label: 'Only very large screens above 1280.', feedback: 'Those matter too, and the bigger gap is the untested range between your three chosen numbers.' },
+          { label: 'Every width between the three, where a title can collide or a column collapse.', correct: true, feedback: 'Widths are continuous. Three samples leave the ranges between them unexamined, and that is where a title collides or a column collapses.', was: ['Everything between them, which is where most readers actually are.'] },
+          { label: 'Nothing important, since those three widths stand for phone, tablet and desktop.', feedback: 'Those labels describe devices, not the widths a browser window can take. A resized desktop window sits nowhere near any of them.', was: ['Nothing important: those three cover phone, tablet and desktop.'] },
+          { label: 'Mainly the very wide screens above 1280 px, where lines become far too long.', feedback: 'Those matter too, and the bigger gap is the untested range between your three chosen numbers.', was: ['Only very large screens above 1280.'] },
         ],
-        repair: 'Check your change points in step 2. If any width came from a device list rather than a content failure, narrow the layout until you find the real one, and record it in step 5.',
+        repair: 'Check your change points in step 2. If any width came from a device list rather than a content failure, narrow the demo or a real page until you find the real one, and record it in step 5.',
         recheck: 'Every change point names what failed in the content at roughly that width.',
       },
       {
         question: 'At the narrow width the Reserve button appears above the price. Why does that matter?',
         options: [
-          { label: 'The reader meets the action before the information the action depends on, and the same order governs keyboard and screen-reader use.', correct: true, feedback: 'Order on a narrow screen is the whole experience, and it is also the sequence assistive technology follows.' },
-          { label: 'It does not matter, because the price is only a scroll away.', feedback: 'A scroll away is out of sight at the moment of deciding, and some readers will act without it.' },
-          { label: 'It matters only for aesthetics.', feedback: 'It is a sequence problem, not a visual one; it changes what the reader knows when they act.' },
+          { label: 'The action now comes before the price it depends on, for every way of reading.', correct: true, feedback: 'Order on a narrow screen is the whole experience, and it is also the sequence a keyboard and a screen reader follow.', was: ['The reader meets the action before the information the action depends on, and the same order governs keyboard and screen-reader use.'] },
+          { label: 'It hardly matters, because the price is only a short scroll further down.', feedback: 'A scroll away is out of sight at the moment of deciding, and some readers will act without it.', was: ['It does not matter, because the price is only a scroll away.'] },
+          { label: 'Mostly for looks: a button high on the screen can seem pushy to some readers.', feedback: 'It is a sequence problem, not a visual one; it changes what the reader knows when they act.', was: ['It matters only for aesthetics.'] },
         ],
         repair: 'Renumber the narrow reading order in step 3 so everything needed to decide precedes the action, then record the change in step 5.',
         recheck: 'The numbered narrow order puts price, date and materials before Reserve.',
@@ -793,9 +903,9 @@ export const guided03: Record<string, Guided> = {
       {
         question: 'Your change points came from watching the content fail. Why is that better than round numbers?',
         options: [
-          { label: 'Because they are tied to the strings and structure you actually have, so they hold when the layout is reused.', correct: true, feedback: 'A change point at 700 because the longest title collides is a fact about your content. A change point at 768 is a fact about a device that may not exist for your reader.' },
-          { label: 'Because untidy numbers look more rigorous.', feedback: 'Appearance is irrelevant. The value is that the number has a reason you can restate.' },
-          { label: 'It is not better; standard values are easier to maintain.', feedback: 'Easier to type and unrelated to whether your content reads. A standard number that fits nothing is maintenance without benefit.' },
+          { label: 'They come from your actual strings and structure, so each has a reason that holds.', correct: true, feedback: 'A change point at 700 because the longest title collides is a fact about your content. A change point at 768 is a fact about a device that may not exist for your reader.', was: ['Because they are tied to the strings and structure you actually have, so they hold when the layout is reused.'] },
+          { label: 'Uneven numbers such as 700 show reviewers that real testing was done.', feedback: 'Appearance is irrelevant. The value is that the number has a reason you can restate.', was: ['Because untidy numbers look more rigorous.'] },
+          { label: 'They are not better: standard device widths are easier to maintain and share.', feedback: 'Easier to type and unrelated to whether your content reads. A standard number that fits nothing is maintenance without benefit.', was: ['It is not better; standard values are easier to maintain.'] },
         ],
         repair: 'Add the content reason to any change point in step 2 that does not have one, then record it in step 5.',
         recheck: 'Each change point pairs a width with the specific failure that produced it.',
@@ -803,9 +913,18 @@ export const guided03: Record<string, Guided> = {
     ],
     saveRoute: {
       auto: 'The structure, change points and reading order save as you type, on this device first and then online.',
-      external: 'The three renderings stay in your own folder. Name them here so the widths and the drawings stay together.',
-      creator: 'Your creator reads the change-point reasons and the narrow reading order. The reasons are what distinguish this from three sketches.',
+      external: 'The three renderings stay in your own folder, labelled as specifications. Name them here so the widths and the drawings stay together.',
+      creator: 'Your creator reads the change-point reasons, the reflow and clip you told apart, and the narrow reading order. The reasons are what distinguish this from three sketches.',
       next: 'Open Your work and choose Ready for review. The next lesson turns every decision from this module into a named token sheet.',
+    },
+    transfer: {
+      scenario: 'Made-up case: A cinema’s showtimes page was designed at 1280 px: film posters in a left column, a grid of times on the right. In a 600 px window the times grid keeps its width, so the later showings sit past the right edge and need sideways scrolling. At 390 px the posters fill the width and the times appear only after three screens of film descriptions.',
+      prompt: 'Is the 600 px behaviour reflow or clipping, and what would you specify for narrow widths instead? Give the reason for your arrangement.',
+      anchors: {
+        weak: 'Calls the 600 px view responsive because something changed, or picks change points from device names without saying what content failed.',
+        adequate: 'Calls 600 px clipping (times cut off, sideways scrolling) and specifies that the times wrap or stack under each film, with a change point where the times stop fitting, and puts times before long descriptions in the narrow order.',
+        strong: 'As adequate, plus a trade-off or check: wrapping the times makes each film taller and the descriptions may need collapsing, and the paper specification still needs checking on a page that reflows, at 320 px and at 200 per cent text.',
+      },
     },
   },
   'm03-l08-v1': {
@@ -814,6 +933,7 @@ export const guided03: Record<string, Guided> = {
       { id: 'tokens', title: 'Every decision, as a named token', intro: 'Name, value, and the one role it plays. A few at a time.', fields: [
         ...[1, 2, 3, 4, 5, 6, 7, 8].map((n) => ({ id: `token-${n}`, label: `Token ${n} · name, value, role`, kind: 'short' as const,
           ...(n === 1 ? { hint: 'Name by role, not by appearance: text-primary, not dark-grey.', example: 'Example (made up): action-surface · #214e46 · the background of the primary button, one per screen.' } : {}) })),
+        { id: 'token-more', label: 'Tokens 9 onward, one per line: name · value · role, or “none” and why', kind: 'long', hint: 'A full module usually has more decisions than eight rows: every type step, colour role and spacing value. Write one token per line. If eight rows hold every decision, write “none” and say why.', example: 'Example (made up): space-between · 24 · the gap between one class block and the next.' },
       ] },
       { id: 'usage', title: 'Where each is used, and where it must not be', fields: [
         { id: 'prohibitions', label: 'The prohibitions worth writing down', kind: 'long', example: 'Example (made up): action-surface is never used for a status label, because a green “confirmed” chip would then look like a button.' },
@@ -821,10 +941,10 @@ export const guided03: Record<string, Guided> = {
       ] },
       { id: 'contrast', title: 'Checking the pairings', fields: [
         { id: 'pairing-check', label: 'Each permitted pairing against your contrast table: measured ratio and result', kind: 'long', hint: 'Any pairing you have not measured is not yet permitted.' },
-        { id: 'new-prohibitions', label: 'Pairings that failed and are now prohibited', kind: 'short' },
+        { id: 'new-prohibitions', label: 'Pairings that failed and are now prohibited', kind: 'short', hint: 'If every permitted pairing passed, write “none failed”.' },
       ] },
       { id: 'build', title: 'The build-it test', intro: 'Hand the sheet to someone else, or set it aside and come back, then rebuild one small component from it alone.', fields: [
-        { id: 'build-gaps', label: 'Every decision you had to make that the sheet did not specify', kind: 'long', example: 'Example (made up): the sheet said nothing about the gap between a button’s label and its edge, so I invented 12.' },
+        { id: 'build-gaps', label: 'Every decision you had to make that the sheet did not specify', kind: 'long', sensitive: true, hint: 'If someone else ran the test, describe the gap in the sheet, not the person, and leave out their name. If you found no gaps, write “none” and how you kept the original out of sight.', example: 'Example (made up): the sheet said nothing about the gap between a button’s label and its edge, so I invented 12.' },
         { id: 'build-fixes', label: 'What you added to the sheet as a result', kind: 'long' },
       ] },
       { id: 'record', title: 'Save', fields: [
@@ -834,7 +954,7 @@ export const guided03: Record<string, Guided> = {
     ],
     guide: [
       { expect: 'Every type, colour and spacing decision written as a named token with a value and a role.',
-        fields: ['token-1', 'token-2', 'token-3', 'token-4', 'token-5', 'token-6', 'token-7', 'token-8'],
+        fields: ['token-1', 'token-2', 'token-3', 'token-4', 'token-5', 'token-6', 'token-7', 'token-8', 'token-more'],
         reveal: { first: 2, group: 2, count: 8, addLabel: 'Add two more tokens', note: 'A couple at a time. Work through type, then colour, then spacing.' },
         demo: {
           scenario: 'Made-up example. Naming the first few tokens, and renaming them once.',
@@ -860,7 +980,7 @@ export const guided03: Record<string, Guided> = {
         terms: [{ term: 'Prohibition', meaning: 'Where a token must not be used. It prevents the most common misuse better than any amount of description.' }],
         start: 'For each colour token, ask what someone might reasonably use it for that would be wrong.',
         enough: 'At least two tokens carry a prohibition with a reason.' },
-      { terms: [{ term: 'Pairing', meaning: 'A text colour together with the surface colour behind it. Contrast belongs to the pair, never to one colour on its own.' }, { term: 'Contrast ratio', meaning: 'A number comparing the lightness of text against its background. A free contrast checker gives it to you; there is nothing to work out by hand.' }, { term: 'Contrast table', meaning: 'The record from lesson 4 listing each pair you measured and the ratio it came back with.' }], expect: 'Every permitted pairing measured against your contrast table, with failures turned into prohibitions.',
+      { terms: [{ term: 'Pairing', meaning: 'A text colour together with the surface colour behind it. Contrast belongs to the pair, never to one colour on its own.' }, { term: 'Contrast ratio', meaning: 'A number comparing the lightness of text against its background. The contrast calculator from lesson 4 gives it to you; there is nothing to work out by hand.' }, { term: 'Contrast table', meaning: 'The record from lesson 4 listing each pair you measured and the ratio it came back with.' }], expect: 'Every permitted pairing measured against your contrast table, with failures turned into prohibitions.',
         fields: ['pairing-check', 'new-prohibitions'],
         supported: {
           material: 'A supplied sheet from the same made-up project. It permits text-secondary on surface-raised, but the contrast table from lesson 4 has no row for that pair: it measured text-secondary on surface-base only.',
@@ -879,7 +999,7 @@ export const guided03: Record<string, Guided> = {
         fields: ['build-gaps', 'build-fixes'],
         terms: [{ term: 'Build-it test', meaning: 'Rebuilding something using only the sheet. Every decision you have to invent is a gap in the specification.' }],
         start: 'Set the screen aside, take only the sheet, and rebuild one button from it.',
-        enough: 'The gap list is not empty; a first sheet always has gaps.' },
+        enough: 'Every invented decision is listed, or the list says “none” with how the test was run. An empty list is rare for a first sheet, so check the method first.' },
       { terms: [{ term: 'Token sheet', meaning: 'The single document naming every decision with its value and its role. It is the thing this lesson produces.' }, { term: 'Repair', meaning: 'The change a Check question asks you to make, recorded as what you actually altered.' }], expect: 'Where the sheet lives, and the repair the Check questions asked for.',
         fields: ['sheet-reference', 'improvement-made'],
         start: 'Add the missing specifications the test revealed before saving.',
@@ -889,9 +1009,9 @@ export const guided03: Record<string, Guided> = {
       {
         question: 'Are tokens worth the effort for one person working alone?',
         options: [
-          { label: 'Yes: the value appears the first time you build a second screen, because otherwise every value is re-derived by eye and drifts.', correct: true, feedback: 'Drift is invisible until two screens are placed side by side, and by then both are built. Named decisions are what keep them together.' },
-          { label: 'No: tokens are overhead until a team needs to share decisions.', feedback: 'The second screen is the team. Without names, you are the person who has to remember fourteen values exactly.' },
-          { label: 'Only if you are writing code.', feedback: 'A sheet of paper with names, values and roles is a complete token sheet. The form is irrelevant; the naming is the point.' },
+          { label: 'Worth it: by the second screen, untokened values are re-derived by eye and drift.', correct: true, feedback: 'Drift is invisible until two screens are placed side by side, and by then both are built. Named decisions are what keep them together.', was: ['Yes: the value appears the first time you build a second screen, because otherwise every value is re-derived by eye and drifts.'] },
+          { label: 'Not yet: tokens are overhead until a team has to share the same decisions.', feedback: 'The second screen is the team. Without names, you are the person who has to remember fourteen values exactly.', was: ['No: tokens are overhead until a team needs to share decisions.'] },
+          { label: 'Only once the design is being built in code, where the names are used.', feedback: 'A sheet of paper with names, values and roles is a complete token sheet. The form is irrelevant; the naming is the point.', was: ['Only if you are writing code.'] },
         ],
         repair: 'If any decision from lessons 1 to 7 is missing from step 1, add it as a named token now, and record the change in step 5.',
         recheck: 'Every type, colour and spacing decision from this module appears on the sheet.',
@@ -899,22 +1019,22 @@ export const guided03: Record<string, Guided> = {
       {
         question: 'You named a token “light-grey”. What goes wrong later?',
         options: [
-          { label: 'When contrast forces you to darken it, the name no longer describes it and every reference becomes misleading.', correct: true, feedback: 'Names outlive values. A role name survives the change; an appearance name has to be renamed everywhere or quietly lie.' },
-          { label: 'Nothing, as long as you update the value in one place.', feedback: 'The value updates fine. The name is what other people and future notes read, and it now says the wrong thing.' },
-          { label: 'It only matters if other people use the sheet.', feedback: 'You are the main reader, weeks later, and you will trust the name rather than re-checking the value.' },
+          { label: 'Once contrast forces it darker, the name lies and every reference misleads.', correct: true, was: ['When contrast forces you to darken it, the name no longer describes it and every reference becomes misleading.'], feedback: 'Names outlive values. A role name survives the change; an appearance name has to be renamed everywhere or quietly lie.' },
+          { label: 'Nothing much, as long as the value itself is updated in one place.', feedback: 'The value updates fine. The name is what other people and future notes read, and it now says the wrong thing.', was: ['Nothing, as long as you update the value in one place.'] },
+          { label: 'It only causes trouble when other people start using the same sheet.', feedback: 'You are the main reader, weeks later, and you will trust the name rather than re-checking the value.', was: ['It only matters if other people use the sheet.'] },
         ],
         repair: 'Rename any appearance-based token in step 1 to a role name, then record it in step 5.',
         recheck: 'No token name refers to a colour, a size or a position.',
       },
       {
-        question: 'The build-it test produced no gaps at all. What is the most likely explanation?',
+        question: 'The build-it test produced no gaps at all. What is the sound next move?',
         options: [
-          { label: 'You rebuilt it from memory of the original rather than from the sheet alone.', correct: true, feedback: 'A first sheet essentially always misses something: internal padding, a focus treatment, a disabled colour. No gaps usually means the screen was still in view.' },
-          { label: 'The sheet is complete and no repair is needed.', feedback: 'Possible and rare. Before accepting it, check whether the sheet specifies the space inside a control, not only around it.' },
-          { label: 'The component chosen was too complex.', feedback: 'A complex component would expose more gaps, not fewer.' },
+          { label: 'Confirm the original was out of sight; if it was, record “no gaps” and how you ran it.', correct: true, feedback: 'A rebuild with the screen still in view borrows answers from it, which is the usual reason for an empty gap list. If the original really was hidden and nothing was missing, “no gaps” is a valid result, and the method is what makes it believable.', was: ['You rebuilt it from memory of the original rather than from the sheet alone.'] },
+          { label: 'Record the sheet as complete, since a test with no gaps means no repair is needed.', feedback: 'The result may be true, and the record needs the method behind it. Without it, nobody can tell a complete sheet from a test run with the screen in view.', was: ['The sheet is complete and no repair is needed.'] },
+          { label: 'Put it down to the component: one that complex hides where the sheet is thin.', feedback: 'A complex component tends to expose more gaps, not fewer, because it needs more decisions.', was: ['The component chosen was too complex.'] },
         ],
-        repair: 'Redo the test with the original out of sight, or hand the sheet to someone else, and record every invented decision in step 4 and the change in step 5.',
-        recheck: 'The gap list names at least one decision the sheet did not specify, and the sheet now covers it.',
+        repair: 'If the original was in view, redo the test with it out of sight or hand the sheet to someone else, and record every invented decision in step 4. If no gaps appear, write “none” and how you ran it. Note it in step 5.',
+        recheck: 'The gap list names each decision the sheet did not specify, or says “none” with how the test was run.',
       },
     ],
     saveRoute: {
@@ -922,6 +1042,15 @@ export const guided03: Record<string, Guided> = {
       external: 'If you keep the sheet as its own document, name the file here so the sheet and this record stay together.',
       creator: 'Your creator reads the token names, the prohibitions and the gaps the build-it test exposed. The gaps are the most useful part.',
       next: 'Open Your work and choose Ready for review. The next lesson builds one component in all of its states using only this sheet.',
+    },
+    transfer: {
+      scenario: 'Made-up case: A museum events site has a token sheet with four names: blue-dark (#1d3557, headings and the Book button), grey-light (#8a8a8a, captions), gap-small (8) and gap-big (24). A developer used blue-dark for an “Event cancelled” label because it was the darkest colour available, and the 14 px captions in grey-light measure 3.45:1 on white.',
+      prompt: 'Rename these tokens and add the usage notes or prohibitions that would have prevented both problems. Explain why each change helps.',
+      anchors: {
+        weak: 'Keeps appearance names, or swaps them for other colour names, and lists values without usage rules or permitted pairings.',
+        adequate: 'Gives role names (action-surface, text-heading, text-caption, space-inside, space-between), prohibits action-surface on status labels, and records that text-caption fails 4.5:1 at 14 px, so it is darkened or prohibited for small text.',
+        strong: 'As adequate, plus a check or trade-off: measures a replacement caption grey before permitting it, accepts that role names must be learned, and plans a build-it test by someone else to find what the sheet still leaves unsaid.',
+      },
     },
   },
   'm03-l09-v1': {
@@ -934,10 +1063,10 @@ export const guided03: Record<string, Guided> = {
       ] },
       { id: 'tokens', title: 'Built from the sheet alone', fields: [
         { id: 'state-tokens', label: 'For each state: the tokens it uses', kind: 'long' },
-        { id: 'missing-tokens', label: 'Every token you needed and did not have', kind: 'long', hint: 'Record it rather than inventing a value silently. These go back into the sheet.' },
+        { id: 'missing-tokens', label: 'Every token you needed and did not have', kind: 'long', hint: 'Record it rather than inventing a value silently. These go back into the sheet. If the sheet covered every state, write “none”.' },
       ] },
       { id: 'focus', title: 'Keyboard focus', fields: [
-        { id: 'focus-appearance', label: 'What focus looks like, and which token carries it', kind: 'long', hint: 'It must differ from hover, and be visible against every surface the component sits on.' },
+        { id: 'focus-appearance', label: 'What focus looks like, and which token carries it', kind: 'long', hint: 'It must differ from hover, and be visible against every surface the component sits on. Aim for at least 3:1 between the indicator and the colours next to it, the minimum WCAG sets for the parts of a control.' },
         { id: 'focus-check', label: 'Where you checked it, and against which surfaces', kind: 'short' },
       ] },
       { id: 'disabled', title: 'Disabled that explains itself', fields: [
@@ -969,10 +1098,10 @@ export const guided03: Record<string, Guided> = {
           material: 'A supplied focus treatment from the same made-up project: on focus the button’s background lightens slightly, which is also exactly what happens on hover.',
           question: 'What is wrong with that, and what is the smallest fix?',
           options: [
-            { label: 'Focus and hover are indistinguishable, so a keyboard user cannot tell where they are; give focus its own visible outline offset from the control.', correct: true, feedback: 'Focus needs to be unmistakable and must not depend on a mouse being present. An outline sitting just outside the control works on every surface.' },
-            { label: 'Nothing: a lightened background is visible, which is what focus needs.', feedback: 'Visible is not enough if it means two different things. A mouse user hovering and a keyboard user focusing see the same thing.' },
-            { label: 'Remove the hover effect so the lightening only means focus.', feedback: 'That solves the ambiguity by removing useful mouse feedback, and the focus signal remains a subtle background change.' },
-            { label: 'Rely on the browser default focus ring.', feedback: 'A reasonable starting point and it often fails against particular surfaces, which is why the lesson asks you to check it against each one.' },
+            { label: 'Focus looks like hover; give focus its own visible outline set just outside the control.', correct: true, feedback: 'A keyboard user cannot tell where they are when focus and hover look alike. An outline just outside the control works on every surface; check it measures at least 3:1 against the colours beside it.', was: ['Focus and hover are indistinguishable, so a keyboard user cannot tell where they are; give focus its own visible outline offset from the control.'] },
+            { label: 'Nothing serious: a lightened background is visible, and visibility is what focus needs.', feedback: 'Visible is not enough if it means two different things. A mouse user hovering and a keyboard user focusing see the same thing.', was: ['Nothing: a lightened background is visible, which is what focus needs.'] },
+            { label: 'Remove the hover effect, so that the lightening only ever means keyboard focus.', feedback: 'That solves the ambiguity by removing useful mouse feedback, and the focus signal remains a subtle background change.', was: ['Remove the hover effect so the lightening only means focus.'] },
+            { label: 'Rely on the browser’s default focus ring, which every browser already supplies.', feedback: 'A reasonable starting point and it often fails against particular surfaces, which is why the lesson asks you to check it against each one.', was: ['Rely on the browser default focus ring.'] },
           ],
           then: 'Give your own focus state a token of its own and check it against every surface the component sits on.',
         },
@@ -1002,11 +1131,11 @@ export const guided03: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'Is the disabled state just the default at reduced opacity?',
+        question: 'A colleague suggests making disabled simply the default button at 40 per cent opacity. What is the main problem?',
         options: [
-          { label: 'No: uniform opacity changes the background too, produces an unpredictable composite, and often leaves the label unreadable while still looking pressable.', correct: true, feedback: 'Disabled deserves its own tokens and its own explanation, because it is a state that has to communicate a reason.' },
-          { label: 'Yes, and it is the standard approach in most systems.', feedback: 'It is common, which is not the same as sound. It is the fastest way to produce an unreadable label over an unpredictable background.' },
-          { label: 'Yes, provided the opacity stays above 50 per cent.', feedback: 'A threshold does not fix the composite problem, and it still leaves the control looking pressable and unexplained.' },
+          { label: 'The blend is unpredictable, the label may become unreadable, and nothing says why.', correct: true, feedback: 'Uniform opacity mixes in whatever sits behind the button and often still looks pressable. Disabled deserves its own tokens and its own explanation, because it has to communicate a reason.', was: ['No: uniform opacity changes the background too, produces an unpredictable composite, and often leaves the label unreadable while still looking pressable.'] },
+          { label: 'Nothing serious: reduced opacity is the standard approach in most systems.', feedback: 'It is common, which is not the same as sound. It is the fastest way to produce an unreadable label over an unpredictable background.', was: ['Yes, and it is the standard approach in most systems.'] },
+          { label: 'Only the number: anything above 50 per cent opacity would avoid the problem.', feedback: 'A threshold does not fix the blending problem, and it still leaves the control looking pressable and unexplained.', was: ['Yes, provided the opacity stays above 50 per cent.'] },
         ],
         repair: 'Specify disabled with its own tokens in step 4 and write the sentence that tells the reader why, then record it in step 5.',
         recheck: 'Disabled uses named tokens and is accompanied by words explaining the condition.',
@@ -1014,9 +1143,9 @@ export const guided03: Record<string, Guided> = {
       {
         question: 'Your focus state looks like a slightly lighter version of hover. Why is that a problem?',
         options: [
-          { label: 'A keyboard user cannot reliably tell where they are, and focus must not depend on a pointer being present.', correct: true, feedback: 'Focus is the keyboard user’s cursor. If it is a faint variant of a mouse effect, they lose their place on the screen.' },
-          { label: 'It is fine, since both mean the control is active.', feedback: 'They mean different things: hover is where the pointer is, focus is where the keyboard is. Conflating them costs the keyboard user their position.' },
-          { label: 'It only matters if the component is a form field.', feedback: 'Every focusable control needs a visible focus state, including buttons and links.' },
+          { label: 'A keyboard user cannot tell where they are, and focus must not need a pointer.', correct: true, feedback: 'Focus is the keyboard user’s cursor. If it is a faint variant of a mouse effect, they lose their place on the screen.', was: ['A keyboard user cannot reliably tell where they are, and focus must not depend on a pointer being present.'] },
+          { label: 'It is fine, since both states tell the reader that the control is active.', feedback: 'They mean different things: hover is where the pointer is, focus is where the keyboard is. Conflating them costs the keyboard user their position.', was: ['It is fine, since both mean the control is active.'] },
+          { label: 'It only matters for form fields, since buttons and links show their state anyway.', feedback: 'Every focusable control needs a visible focus state, including buttons and links.', was: ['It only matters if the component is a form field.'] },
         ],
         repair: 'Give focus its own token and appearance in step 3 and check it against every surface, then record the change in step 5.',
         recheck: 'Focus is distinguishable from hover and visible on each surface the component uses.',
@@ -1024,9 +1153,9 @@ export const guided03: Record<string, Guided> = {
       {
         question: 'While building a state you needed a value the sheet does not have. What do you do?',
         options: [
-          { label: 'Record it as a missing token and add it to the sheet, rather than inventing a value in place.', correct: true, feedback: 'The invented value is invisible drift: it works here and diverges everywhere else. Recording it is how the sheet becomes complete.' },
-          { label: 'Pick a sensible value now and add it to the sheet later if it is reused.', feedback: '“Later if reused” is how the twelve accidental gaps in the spacing lesson happened.' },
-          { label: 'Use the nearest existing token even if it is wrong.', feedback: 'That hides a real gap behind a value that does not fit, and the mismatch will be blamed on the component.' },
+          { label: 'Record it as a missing token and add it to the sheet instead of inventing a value.', correct: true, was: ['Record it as a missing token and add it to the sheet, rather than inventing a value in place.'], feedback: 'The invented value is invisible drift: it works here and diverges everywhere else. Recording it is how the sheet becomes complete.' },
+          { label: 'Pick a sensible value now, and add it to the sheet later only if it is reused.', feedback: '“Later if reused” is how the twelve accidental gaps in the spacing lesson happened.', was: ['Pick a sensible value now and add it to the sheet later if it is reused.'] },
+          { label: 'Use the nearest existing token, even if slightly wrong, to keep within the system.', feedback: 'That hides a real gap behind a value that does not fit, and the mismatch will be blamed on the component.', was: ['Use the nearest existing token even if it is wrong.'] },
         ],
         repair: 'List every value you invented in the missing-tokens box in step 2, add them to the sheet, and note it in step 5.',
         recheck: 'The state table refers only to named tokens, and the sheet contains all of them.',
@@ -1038,13 +1167,22 @@ export const guided03: Record<string, Guided> = {
       creator: 'Your creator reads the state table, the focus treatment and the disabled wording. The missing-token list shows how the sheet is maturing.',
       next: 'Open Your work and choose Ready for review. The last lesson rebuilds a whole Module 1 screen from the sheet and compares the two honestly.',
     },
+    transfer: {
+      scenario: 'Made-up case: A laundrette app has a “Start machine” button. When no machine is selected it is the normal button at 40 per cent opacity; hover makes it slightly lighter; keyboard focus also makes it slightly lighter; and while the machine starts, nothing changes on screen for about three seconds.',
+      prompt: 'List the states this button really needs, and specify two of them properly, including what the reader is told. Give the reason for each.',
+      anchors: {
+        weak: 'Specifies only default and hover, keeps opacity for disabled, or treats focus as the same as hover.',
+        adequate: 'Names default, hover, focus, disabled and loading (and an error if starting fails); gives focus its own outline token distinct from hover; gives disabled its own tokens plus words such as “Choose a machine first”.',
+        strong: 'As adequate, plus a check or trade-off: measures the focus outline against each surface (at least 3:1), adds a loading message for the three-second wait, and notes that whether the disabled explanation is noticed needs a person.',
+      },
+    },
   },
   'm03-l10-v1': {
     route: paperRoute('the rebuilt screen beside the original'),
     worksheet: [
       { id: 'rebuild', title: 'The rebuild', fields: [
         { id: 'screen-chosen', label: 'Which Module 1 screen you rebuilt', kind: 'short' },
-        { id: 'from-sheet-only', label: 'Anything you could not build from the sheet and component work alone', kind: 'long', hint: 'Every one of these is a gap in the system, not a failure of the screen.' },
+        { id: 'from-sheet-only', label: 'Anything you could not build from the sheet and component work alone', kind: 'long', hint: 'Every one of these is a gap in the system, not a failure of the screen. If nothing was missing, write “none” and how you kept the original out of sight.' },
       ] },
       { id: 'critique', title: 'Both versions against the heuristics', fields: [
         { id: 'heuristic-1', label: 'Heuristic 1 · what it names, and what each version does about it', kind: 'long', example: 'Example (made up): visibility of system status — neither version says anything while the booking is being confirmed.' },
@@ -1067,7 +1205,7 @@ export const guided03: Record<string, Guided> = {
       { terms: [{ term: 'Token sheet', meaning: 'The list of named values you built in lesson 8: every colour, size and space the system allows.' }, { term: 'Gap', meaning: 'Something the screen needed and the sheet does not contain. It is what the rebuild is for, not a sign the rebuild went badly.' }], expect: 'The rebuilt screen, and every place the sheet could not carry you.',
         fields: ['screen-chosen', 'from-sheet-only'],
         start: 'Put the original out of sight and rebuild from the sheet and the state table.',
-        enough: 'The gap list is honest; a system that covered everything on its first outing is unlikely.' },
+        enough: 'The gap list is honest. A system that covered everything on its first outing is unlikely, so “none” needs the method beside it.' },
       { expect: 'Three heuristics applied to both versions.',
         fields: ['heuristic-1', 'heuristic-2', 'heuristic-3'],
         reveal: { first: 1, group: 1, count: 3, addLabel: 'Add the next heuristic', note: 'One at a time. Say what each version does about it, not which looks better.' },
@@ -1093,10 +1231,10 @@ export const guided03: Record<string, Guided> = {
           material: 'Three supplied sentences from the same made-up write-up. A: “Every text element now meets its contrast threshold, measured with the calculator.” B: “The line length is now 68 characters, counted over three lines.” C: “The redesign makes the screen easier to use.”',
           question: 'Which sentence cannot be supported by anything in this module, and why?',
           options: [
-            { label: 'C, because ease of use is a claim about people and nobody has used either version.', correct: true, feedback: 'A and B report measurements you took. C reports an outcome that would need a person attempting a task, which this module never did.' },
-            { label: 'A, because contrast measurements are only estimates.', feedback: 'They are calculated from stated colour values, so within their scope they are exact. What they do not establish is readability in every condition.' },
-            { label: 'B, because character counts vary by content.', feedback: 'The count is of your real content, over three lines, and it is reported as such. It is a measurement with a stated method.' },
-            { label: 'None: all three follow from careful work.', feedback: 'Careful work supports A and B. C requires evidence of a different kind entirely, and this module produced none of it.' },
+            { label: 'C, because ease of use is a claim about people, and nobody used either version.', correct: true, feedback: 'A and B report measurements you took. C reports an outcome that would need a person attempting a task, which this module never did.', was: ['C, because ease of use is a claim about people and nobody has used either version.'] },
+            { label: 'A, because contrast measurements are estimates that vary from screen to screen.', feedback: 'They are calculated from stated colour values, so within their scope they are exact. What they do not establish is readability in every condition.', was: ['A, because contrast measurements are only estimates.'] },
+            { label: 'B, because a character count changes whenever the content or the font changes.', feedback: 'The count is of your real content, over three lines, and it is reported as such. It is a measurement with a stated method.', was: ['B, because character counts vary by content.'] },
+            { label: 'None of them: all three follow from careful, measured work in this module.', feedback: 'Careful work supports A and B. C requires evidence of a different kind entirely, and this module produced none of it.', was: ['None: all three follow from careful work.'] },
           ],
           then: 'Sort your own sentences the same way: what you measured, and what would need a person.',
         },
@@ -1114,9 +1252,9 @@ export const guided03: Record<string, Guided> = {
       {
         question: 'Your rebuilt screen is measurably more legible. May you say it is easier to use?',
         options: [
-          { label: 'No: legibility was measured, ease of use was not, and nobody has attempted a task on either version.', correct: true, feedback: 'The measurements are real and they are about the surface. What a person can accomplish is a different kind of evidence, and this module collected none of it.' },
-          { label: 'Yes, since legibility is a component of usability.', feedback: 'It is a necessary condition and not the claim. A perfectly legible screen can still hide the price or omit a step.' },
-          { label: 'Yes, if the heuristics also improved.', feedback: 'Heuristics identify risks by inspection. Improving against them is a reason to expect a better result, not a report of one.' },
+          { label: 'Only that it is more legible: nobody has tried a task on either version.', correct: true, was: ['No: legibility was measured, ease of use was not, and nobody has attempted a task on either version.'], feedback: 'The measurements are real and they are about the surface. What a person can accomplish is a different kind of evidence, and this module collected none of it.' },
+          { label: 'It may, since legibility is one measurable part of how usable a screen is.', feedback: 'It is a necessary condition and not the claim. A perfectly legible screen can still hide the price or omit a step.', was: ['Yes, since legibility is a component of usability.'] },
+          { label: 'Yes, provided the heuristic review also found fewer problems in the rebuild.', feedback: 'Heuristics identify risks by inspection. Improving against them is a reason to expect a better result, not a report of one.', was: ['Yes, if the heuristics also improved.'] },
         ],
         repair: 'Rewrite any outcome claim in step 3 as a measurement plus what would still need to be observed, then record it in step 5.',
         recheck: 'Every claim in the write-up names how it was established.',
@@ -1124,9 +1262,9 @@ export const guided03: Record<string, Guided> = {
       {
         question: 'The heuristic review found a problem the rebuild did not fix. What should you do with it?',
         options: [
-          { label: 'Record it as an unresolved problem the system could not address, so it is visible rather than lost.', correct: true, feedback: 'A design system fixes surfaces. Missing feedback, missing steps and unanswered questions about the reader survive it, and naming them is the useful output.' },
-          { label: 'Fix it now, since the module is about improving the screen.', feedback: 'Sometimes right, and a behaviour problem usually needs evidence about people rather than another token. Recording it points at the next work.' },
-          { label: 'Leave it out: the module was about visual foundations.', feedback: 'The critique step exists precisely to catch what the visual work could not reach. Omitting it makes the module look more successful than it was.' },
+          { label: 'Record it as unresolved, outside what the system can fix, so it stays visible.', correct: true, feedback: 'A design system fixes surfaces. Missing feedback, missing steps and unanswered questions about the reader survive it, and naming them is the useful output.', was: ['Record it as an unresolved problem the system could not address, so it is visible rather than lost.'] },
+          { label: 'Fix it now with another token, since the module is about improving the screen.', feedback: 'A behaviour problem usually needs evidence about people rather than another token. Recording it points at the next work.', was: ['Fix it now, since the module is about improving the screen.'] },
+          { label: 'Leave it out of the write-up, since the module was about visual foundations.', feedback: 'The critique step exists precisely to catch what the visual work could not reach. Omitting it makes the module look more successful than it was.', was: ['Leave it out: the module was about visual foundations.'] },
         ],
         repair: 'Add anything the heuristics found and the rebuild did not fix to step 4, then record it in step 5.',
         recheck: 'The unresolved list names at least one problem no token could solve.',
@@ -1134,9 +1272,9 @@ export const guided03: Record<string, Guided> = {
       {
         question: 'You could not rebuild part of the screen from the sheet alone. What does that mean?',
         options: [
-          { label: 'The sheet has a gap; record it and add the specification rather than treating it as a failure of the rebuild.', correct: true, feedback: 'The rebuild is the test of the sheet, so the gaps are its output. This is the same build-it test from lesson 8, run at full size.' },
-          { label: 'The screen was too complex for a token system.', feedback: 'Complexity shows where the sheet is thin. A system that only covers simple screens is not finished.' },
-          { label: 'The component work from lesson 9 was incomplete.', feedback: 'Possibly, and either way the answer is the same: name the missing specification and add it.' },
+          { label: 'A gap in the sheet: record it and add the missing specification to the sheet.', correct: true, feedback: 'The rebuild is the test of the sheet, so the gaps are its output. This is the same build-it test from lesson 8, run at full size.', was: ['The sheet has a gap; record it and add the specification rather than treating it as a failure of the rebuild.'] },
+          { label: 'The screen was too complex for a token system, so that part stays freehand.', feedback: 'Complexity shows where the sheet is thin. A system that only covers simple screens is not finished.', was: ['The screen was too complex for a token system.'] },
+          { label: 'The lesson 9 component work failed, so it needs redoing before any rebuild.', feedback: 'Redoing lesson 9 does not name what is missing. Whatever its source, the answer is to name the missing specification and add it to the sheet.', was: ['The component work from lesson 9 was incomplete.'] },
         ],
         repair: 'List every place the sheet ran out in step 1 and add the missing specifications to the token sheet, then record it in step 5.',
         recheck: 'The gaps found by the rebuild have been added to the sheet from lesson 8.',
@@ -1147,6 +1285,15 @@ export const guided03: Record<string, Guided> = {
       external: 'The original and the rebuild stay in your own folder. Keep the original untouched; the pair is what makes the comparison meaningful.',
       creator: 'Your creator reads the critique, what you could measure and what you deliberately did not claim. The unresolved list is the most useful part of the module.',
       next: 'Open Your work and choose Ready for review. This closes the visual foundations module; the reasoning modules build on the same screens.',
+    },
+    transfer: {
+      scenario: 'Made-up case: A designer refreshed a garden centre’s plant-care page with a new token sheet. Every text pair now passes its contrast threshold and the measure fell from 110 to 66 characters. Her write-up says: “The new page is clearer and will reduce calls to the help desk.” Nobody has used either version, and the page still never says whether plants can be delivered.',
+      prompt: 'Rewrite her claim so that each part is supported, and name one problem the refresh could not fix. Explain why it lies outside visual craft.',
+      anchors: {
+        weak: 'Keeps “clearer” and “will reduce calls” as findings, or lists only visual complaints as the unresolved problems.',
+        adequate: 'Keeps the measured craft claims (contrast thresholds met, a 66-character measure), turns the outcome claim into a question that needs people or data, and names the missing delivery information as a content or product gap no token can fix.',
+        strong: 'As adequate, plus a next check: a small task with a few people finding care steps and delivery terms, or a later look at help-desk call reasons, noting that a before-and-after comparison alone would not show cause.',
+      },
     },
   },
 };

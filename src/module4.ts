@@ -50,7 +50,7 @@ export const module4: Lesson[] = [
     objective:
       "Write the model a reader brings to one task, the model your design implies, and name three specific places they contradict each other.",
     bringForward:
-      "Your Module 2 findings, hypothesis and the revision you made after testing. The contradictions you find here should be grounded in what you observed there, not invented.",
+      "Your Module 2 findings, hypothesis and revision. If your Module 2 work was a rehearsal or self-pilot, bring your screens and mark every reader belief as assumed: an assumed belief written honestly is a valid starting point; an invented observation is not.",
     why: "Most confusing interfaces are not ugly or illogical. They are logical according to a model the reader does not hold, and no amount of visual refinement closes that gap.",
     teach: [
       "A mental model is what a person believes about how something works, assembled from everything else they have used. It is usually incomplete and often wrong in detail, and it is still what they act on. When someone clicks the browser's back button expecting to undo a submission, they are not being careless; they are applying a model that has served them everywhere else.",
@@ -61,7 +61,7 @@ export const module4: Lesson[] = [
     misconception:
       "“If the structure is logical, people will learn it.” Logical to whom? A taxonomy that mirrors the organisation's internal departments is perfectly logical and routinely unusable, because readers arrive with a model built from their task, not from your org chart.",
     example:
-      "On the workshop service, several people expected “my bookings” to include workshops they had merely saved, because that is how their shopping apps behave. The product's model separated saved from booked, which is defensible. The mismatch showed up as people reporting a booking they had never made. The chosen response was to conform partially — one list, with booked and saved clearly labelled within it — rather than to teach a distinction no one arrived expecting.",
+      "Made-up example: on the workshop service, several people expected “my bookings” to include workshops they had merely saved, because that is how their shopping apps behave. The product's model separated saved from booked, which is defensible. The mismatch showed up as people reporting a booking they had never made. The chosen response was to conform partially — one list, with booked and saved clearly labelled within it — rather than to teach a distinction no one arrived expecting.",
     steps: [
       {
         minutes: 25,
@@ -71,7 +71,7 @@ export const module4: Lesson[] = [
       {
         minutes: 30,
         title: "Write the reader's model",
-        text: "For one task in your Module 2 work, write what you believe a first-time reader assumes: where things live, what an action will do, what happens next. Mark each line as observed in your testing or assumed.",
+        text: "For one task in your Module 2 work, write what you believe a first-time reader assumes: where things live, what an action will do, what happens next. Mark each line as observed or reported in your sessions, or assumed. If you ran no sessions, every line is assumed.",
       },
       {
         minutes: 25,
@@ -125,11 +125,11 @@ export const module4: Lesson[] = [
         levels: [
           "No reader model written.",
           "A model is written but nothing distinguishes observation from assumption.",
-          "Every line is marked observed or assumed.",
+          "Every line is marked observed, reported or assumed, and no line is marked observed or reported without a session behind it.",
           "As adequate, and at least one assumption is paired with the smallest question that would test it.",
         ],
         remediation:
-          "Go back through your Module 2 notes and mark each line of your reader model with where it came from. Anything with no source becomes an assumption, not a finding.",
+          "Go back through your Module 2 notes, if you have any, and mark each line of your reader model with where it came from. Anything with no source, including every line on the no-session route, is an assumption, not a finding.",
         recheck: "The marked model with sources for the observed lines.",
       },
       {
@@ -214,7 +214,7 @@ export const module4: Lesson[] = [
     misconception:
       "“A confirmation step means the user checked their input.” It means the information was displayed. If the reader must compare it against something they saw two screens ago and no longer have, the confirmation is theatre — and worse, it transfers responsibility to them for an error your flow made likely.",
     example:
-      "A booking flow asked for a reference code on screen four that had been shown on screen two, with no way back that preserved the entered data. Every observed participant either scrolled back and lost their input or guessed. The fix required no new feature: the code was displayed inline on screen four beside the field. The demand for recall disappeared, and so did the error.",
+      "Made-up example: a booking flow asked for a reference code on screen four that had been shown on screen two, with no way back that preserved the entered data. In a small test, people either scrolled back and lost their input or guessed. The response needed no new feature: the code was displayed on screen four beside the field. That removes the recall demand by design; whether the errors stop is the next thing to check.",
     steps: [
       {
         minutes: 25,
@@ -377,7 +377,7 @@ export const module4: Lesson[] = [
     misconception:
       "“Users will figure out it is clickable by hovering.” Hover does not exist on touch devices, which is where much of your audience will be, and it requires the reader to already suspect the element is interactive. A signifier that only appears after you have guessed correctly is not a signifier.",
     example:
-      "A workshop card had its whole surface clickable, with the title in body-text colour and no other cue. On desktop, hovering revealed a subtle shade change; on a phone nothing indicated interactivity at all, and observed readers tapped the price text and then the image before finding it. Adding a coloured, weightier title and a visible chevron closed the execution gulf. Separately, the tap produced no immediate response during a slow load, so a pressed state was added to close the evaluation gulf.",
+      "Made-up example: a workshop card had its whole surface clickable, with the title in body-text colour and no other cue. On desktop, hovering revealed a subtle shade change; on a phone nothing indicated interactivity at all, and in a small test people tapped the price text and then the image before finding it. A coloured, weightier title and a visible chevron were added to close the execution gulf. Separately, the tap produced no immediate response during a slow load, so a pressed state was added for the evaluation gulf. Whether either change helps is the next check.",
     steps: [
       {
         minutes: 25,
@@ -516,9 +516,9 @@ export const module4: Lesson[] = [
     areas: [2, 3],
     title: "Slips, mistakes and designing for the error you caused",
     objective:
-      "Classify the failures observed in your Module 2 testing as slips or mistakes, and design one prevention and one recovery for each class, without relying on the reader being more careful.",
+      "Classify failures — observed in your Module 2 sessions, or taken from the labelled practice notes — as slips, mistakes or unclassified, and design one prevention and one recovery for each class, without relying on the reader being more careful.",
     bringForward:
-      "Your Module 2 session notes and every failure, hesitation or wrong turn you recorded there.",
+      "Your Module 2 session notes and every failure, hesitation or wrong turn you recorded there. If your Module 2 work was a rehearsal or self-pilot, use the labelled practice notes F1–F4 in this lesson and mark every row practice.",
     why: "The instinct after watching someone fail is to add a warning. Warnings work on one kind of error and make the other kind worse, so the classification has to come first.",
     teach: [
       "A slip is doing the wrong thing while intending the right thing: the goal was correct and the execution went astray, usually on a familiar, automatic task. Tapping the adjacent date, submitting before finishing, using the wrong one of two similar controls. Slips are properties of attention under normal conditions, and they respond to design that constrains, defaults and undoes.",
@@ -529,7 +529,7 @@ export const module4: Lesson[] = [
     misconception:
       "“Add a confirmation dialogue so they cannot get it wrong.” Confirmations catch slips at best, and only briefly — people learn to dismiss them without reading. They do nothing for a mistake, because the reader is certain, and they add a step for everyone who was already correct.",
     example:
-      "Two failures from one test looked identical and were not. One participant tapped “Reserve” before choosing a date, then said “oh, I meant to pick Saturday” — a slip, fixed by disabling the button until a date is selected. Another chose the Saturday session believing it was the beginners' one, because both were titled “Weekend Workshop” — a mistake, unaffected by any button state, fixed by distinguishing the titles and showing the level on the card.",
+      "Made-up example: two failures from one test looked identical and were not. One participant tapped “Reserve” before choosing a date, then said “oh, I meant to pick Saturday” — a slip, so the response was to disable the button until a date is selected. Another chose the Saturday session believing it was the beginners' one, because both were titled “Weekend Workshop” — a mistake, which no button state would touch, so the response was to distinguish the titles and show the level on the card. Both responses still need checking.",
     steps: [
       {
         minutes: 25,
@@ -539,7 +539,7 @@ export const module4: Lesson[] = [
       {
         minutes: 30,
         title: "Classify your observed failures",
-        text: "Take every failure from your Module 2 notes and classify it. Where you cannot tell, record it as unclassified and write what you would have needed to ask at the time.",
+        text: "Take every failure from your Module 2 notes, or the practice notes F1–F4, and classify it from what was said or done. Where you cannot tell, record it as unclassified and write what you would have needed to ask at the time.",
       },
       {
         minutes: 20,
@@ -589,12 +589,12 @@ export const module4: Lesson[] = [
       {
         criterion: "Failures are classified with the intention test",
         evidence:
-          "A table where each observed failure is marked slip or mistake with the intention reasoning stated.",
+          "A table where each failure (observed, or from the labelled practice notes) is marked slip, mistake or unclassified, with the evidence of intention stated.",
         levels: [
           "No classification.",
           "Failures labelled without reasoning.",
           "Each classification states the intention evidence behind it.",
-          "As adequate, and one classification is revised after re-reading the session notes, with the reason for the change.",
+          "As adequate, and one classification is revised after re-reading the session or practice notes, with the reason for the change.",
         ],
         remediation:
           "For each failure, write what the person appeared to be trying to do and how you know. Classify only after that sentence exists.",
@@ -645,7 +645,7 @@ export const module4: Lesson[] = [
       },
     ],
     portfolio:
-      "Practice, and directly reusable. An error classification built from observed sessions is real case-study evidence. A classification built from imagined failures is reasoning and must be labelled as such.",
+      "Practice, and directly reusable. An error classification built from observed sessions is real case-study evidence. A classification built from the supplied practice notes or imagined failures is practice reasoning and must be labelled as such.",
     resource: errors,
     resources: [
       {
@@ -684,7 +684,7 @@ export const module4: Lesson[] = [
     misconception:
       "“Fewer options are always better because of Hick's law.” Reducing options only helps when the options are genuinely comparable and the reader is choosing among them. Removing an option someone specifically came for does not reduce their decision time; it converts a quick choice into a search, or into leaving.",
     example:
-      "A filter panel with eleven options was cut to four, citing Hick's law. Task time got worse: the two most-used filters had been removed, so people scrolled the full list instead of filtering. The law was real; the situation was wrong, because these were not comparable alternatives but tools for narrowing a search. Restoring the two and grouping the rest under a “more filters” control served both the principle and the task.",
+      "Made-up example: a filter panel with eleven options was cut to four, citing Hick's law. In a small test, tasks took longer: the two most-used filters had been removed, so people scrolled the full list instead of filtering. The law was real; the situation was wrong, because these were not comparable alternatives but tools for narrowing a search. Restoring the two and grouping the rest under a “more filters” control was the next design to check, because it respects both the principle and the task.",
     steps: [
       {
         minutes: 25,
@@ -846,7 +846,7 @@ export const module4: Lesson[] = [
       {
         minutes: 25,
         title: "Collect the requests",
-        text: "Gather five real requests, suggestions or asks — from your Module 2 sessions, from the organiser brief, or from your own backlog. Write each in the words it arrived in.",
+        text: "Gather five requests, suggestions or asks — from your Module 2 sessions, from the organiser brief, or from your own backlog — or use the five labelled practice requests. Write each in the words it arrived in, with its source by role or code, never a name.",
       },
       {
         minutes: 30,
@@ -910,11 +910,11 @@ export const module4: Lesson[] = [
       {
         criterion: "Every need has an evidence source or an assumption label",
         evidence:
-          "An evidence column with a specific source, such as a named session observation, or an explicit assumption label.",
+          "An evidence column with a specific source, such as a coded session observation, or an explicit assumption or practice label.",
         levels: [
           "No evidence column.",
           "Column exists but entries are vague, such as “research” or “obvious”.",
-          "Each row names a specific source or is labelled an assumption.",
+          "Each row names a specific source (a session code, never a name) or is labelled assumption or practice.",
           "As adequate, and the strength of each source is characterised, such as one participant's account rather than a pattern.",
         ],
         remediation:
@@ -989,7 +989,7 @@ export const module4: Lesson[] = [
     misconception:
       "“If it helps users, it is valuable.” Helping users is necessary and not sufficient. A response can genuinely help and still be the wrong thing to build because a cheaper response captures most of the benefit, because it cannot be maintained, or because it makes something else materially worse for someone else.",
     example:
-      "For the need “attendees arrive with the right materials”, three responses were compared against doing nothing. A checkbox costs almost nothing to build and produces no change in behaviour and no evidence. A materials summary on the confirmation screen costs a little and reaches everyone who books. A day-before reminder reaches people at the right moment, costs a message channel and ongoing support, and fails for anyone whose contact details are wrong. The summary won on cost per unit of benefit, with the reminder recorded as the next candidate if evidence showed timing mattered more than availability.",
+      "Made-up example: for the need “attendees arrive with the right materials”, three responses were compared against doing nothing. A checkbox costs almost nothing to build and produces no change in behaviour and no evidence. A materials summary on the confirmation screen costs a little and reaches everyone who books. A day-before reminder reaches people at the right moment, costs a message channel and ongoing support, and fails for anyone whose contact details are wrong. The summary won on cost per unit of benefit, with the reminder recorded as the next candidate if evidence showed timing mattered more than availability.",
     steps: [
       {
         minutes: 25,
@@ -1053,7 +1053,7 @@ export const module4: Lesson[] = [
         levels: [
           "No baseline.",
           "A baseline that only describes the current state as broken.",
-          "The baseline is accurate and names at least one advantage of the current way.",
+          "The baseline describes what people do today, marked observed or assumed, and names at least one advantage of the current way.",
           "As adequate, and the baseline is sourced to something observed rather than assumed.",
         ],
         remediation:
@@ -1142,7 +1142,7 @@ export const module4: Lesson[] = [
     misconception:
       "“The MVP is version one of the product.” Then it is a release plan, not a test. A release with no stated uncertainty and no stopping rule cannot fail, which means it cannot inform anything either; you will ship it and learn what you would have learned anyway.",
     example:
-      "The riskiest assumption behind the materials summary was that attendees look for preparation information at all before travelling — not that a summary would be readable. The smallest build was therefore not a summary screen but a one-question message sent to five people who had recently booked, asking what they did before attending. The stopping rule was written first: if fewer than two described looking for information beforehand, the summary drops down the list and the reminder becomes the candidate instead. The result could not establish frequency across all attendees, and the write-up said so.",
+      "Made-up example: the riskiest assumption behind the materials summary was that attendees look for preparation information at all before travelling — not that a summary would be readable. The smallest build was therefore not a summary screen but a one-question message sent to five people who had recently booked and had agreed to be contacted, asking what they did before attending. The stopping rule was written first: if fewer than two described looking for information beforehand, the summary drops down the list and the reminder becomes the candidate instead. The result could not establish frequency across all attendees, and the write-up said so.",
     steps: [
       {
         minutes: 25,

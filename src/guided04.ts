@@ -13,15 +13,15 @@ export const guided04: Record<string, Guided> = {
       ] },
       { id: 'reader', title: 'What a first-time reader assumes', fields: [
         { id: 'task', label: 'The one task you are examining', kind: 'short' },
-        { id: 'reader-model', label: 'Where they expect things to live, what they expect an action to do, and what they expect to happen next', kind: 'long', hint: 'Write it as beliefs, not as complaints.', example: 'Example (made up): she expects the price shown to be the full price; she expects Reserve to hold a place, not to charge her; she expects a confirmation by email.' },
-        { id: 'reader-evidence', label: 'Which parts of that came from your Module 2 sessions, and which are your guess', kind: 'long', hint: 'Mark each line observed, reported or assumed.' },
+        { id: 'reader-model', label: 'Where they expect things to live, what they expect an action to do, and what they expect to happen next', kind: 'long', sensitive: true, hint: 'Write it as beliefs, not as complaints. Summarise without names, using a code such as P2 or the label “assumed”. Keep raw session notes in a private local file or on paper with a date to delete them; a code instead of a name is not anonymity, so leave out identifying details.', example: 'Example (made up): she expects the price shown to be the full price; she expects Reserve to hold a place, not to charge her; she expects a confirmation by email.' },
+        { id: 'reader-evidence', label: 'Which parts came from your Module 2 sessions (observed or reported), and which are assumed', kind: 'long', sensitive: true, hint: 'Mark each line observed, reported or assumed. With no sessions, every line is assumed: say so. That is a valid starting point; an invented observation is not.' },
       ] },
       { id: 'design', title: 'What your design actually implies', fields: [
         { id: 'design-model', label: 'Using its real labels and structure, what does the interface say is true?', kind: 'long', hint: 'Do not soften it. Write what the labels claim, not what you meant.' },
       ] },
       { id: 'contradictions', title: 'Three specific contradictions', intro: 'One at a time. Each needs the consequence for the reader.', fields: [
-        ...[1, 2, 3].map((n) => ({ id: `contradiction-${n}`, label: `Contradiction ${n} · what disagrees, and what it costs the reader`, kind: 'long' as const,
-          ...(n === 1 ? { example: 'Example (made up): she expects Reserve to hold a place; the design charges immediately. Consequence: she presses it to check availability and is charged.' } : {}) })),
+        ...[1, 2, 3].map((n) => ({ id: `contradiction-${n}`, label: `Contradiction ${n} · what disagrees, and what it costs the reader`, kind: 'long' as const, sensitive: true as const,
+          ...(n === 1 ? { hint: 'Mark the consequence observed or predicted. If it came from a session, describe it without names.', example: 'Example (made up): she expects Reserve to hold a place; the design charges immediately. Consequence: she presses it to check availability and is charged.' } : {}) })),
       ] },
       { id: 'decide', title: 'Conform or teach', fields: [
         { id: 'decision', label: 'For one contradiction: will you change the design to match the expectation, or teach the reader the new model?', kind: 'long' },
@@ -52,7 +52,7 @@ export const guided04: Record<string, Guided> = {
           tradeoff: 'The honest version is shorter and thinner, because most of what you believe about the reader is unevidenced. That thinness is the finding.',
           uncertainty: 'Still unknown: whether other people share that hesitation. One participant cannot say how common it is.',
         },
-        start: 'Open your Module 2 notes before writing anything, and take the beliefs from there.',
+        start: 'If you ran Module 2 sessions, open those notes first and take the beliefs from there. If you did not, write the beliefs you expect and mark every one assumed.',
         enough: 'Every line is marked observed, reported or assumed, and at least one is assumed.' },
       { terms: [{ term: 'Label', meaning: 'The words on a control or a heading. To a reader they are a promise about what the thing does.' }, { term: 'Structure', meaning: 'What sits inside what, and in what order. Structure makes claims too, whether or not you meant it to.' }], demo: { scenario: 'Made-up example. Writing down what a booking screen claims, and writing down my own intentions instead.', beats: [{ label: 'What I wrote first', text: '“The screen offers a class, shows the price, and lets you reserve a place.” True to what I meant, and not a description of anything on the screen.' }, { label: 'Reading the labels aloud', text: 'The button says Reserve. A line above it says eighteen pounds. Nothing joins the two, and nothing anywhere says when the money moves.' }, { label: 'What the design therefore claims', text: 'That the price is a fact about the class, and that Reserve is something you do to a class. Both are readable straight off the screen, and neither is what I had in mind.' }, { label: 'The claim I did not intend', text: '“Places left: 3” sits under the price in small grey text, so the design says availability is a detail. It is the first thing several people came to find.' }, { label: 'What that gave me', text: 'Two claims I can hold against the reader’s model in the next step. Written as intentions, both would have agreed with her perfectly.' }], wrongTurn: 'The wrong turn is describing what you meant. You cannot unsee your own reasons, and a screen described by its author never contradicts anybody.', tradeoff: 'Reading your own labels as promises is slow and uncomfortable, and it hands you a list of claims you must now either defend or change. Some of them you were fond of.', uncertainty: 'Still unknown: whether a reader notices the small grey line at all. What the design claims and what is read are two different questions.' }, expect: 'What the interface actually claims, in its own labels.', fields: ['design-model'],
         start: 'Read your screen aloud as if the labels were promises, and write down what they promise.',
@@ -64,10 +64,10 @@ export const guided04: Record<string, Guided> = {
           material: 'A supplied pair from the same made-up project. Reader’s model: “the list shows classes near me.” Design’s model: the list shows all classes in the city, ordered by the studio’s promotion agreement.',
           question: 'What is the consequence worth writing down?',
           options: [
-            { label: 'She judges distance from the order, so she may travel across the city believing it was the closest option.', correct: true, feedback: 'The consequence is a wrong action taken confidently, which is the expensive kind. Ordering carries a meaning nobody declared.' },
-            { label: 'The list is not sorted the way she expects, which is mildly confusing.', feedback: '“Mildly confusing” is a feeling, not a consequence. Name what she does because of the mismatch.' },
-            { label: 'The promotion agreement is unfair to other studios.', feedback: 'That may be true and it is a business ethics question, not a contradiction between two models of how the thing works.' },
-            { label: 'She will learn the real order after using it a few times.', feedback: 'Possibly, and the first time is where the cost lands. Design for the first time and record what the learning costs.' },
+            { label: 'She may travel across the city, believing the first class was the nearest one.', correct: true, feedback: 'The consequence is a wrong action taken confidently, which is the expensive kind. It is a prediction to mark as such: ordering carries a meaning nobody declared.', was: ['She judges distance from the order, so she may travel across the city believing it was the closest option.'] },
+            { label: 'The list is sorted differently from what she expects, which is mildly confusing.', feedback: '“Mildly confusing” is a feeling, not a consequence. Name what she does because of the mismatch.', was: ['The list is not sorted the way she expects, which is mildly confusing.'] },
+            { label: 'The promotion agreement is unfair to the studios that are not paying for it.', feedback: 'That may be true and it is a business ethics question, not a contradiction between two models of how the thing works.', was: ['The promotion agreement is unfair to other studios.'] },
+            { label: 'She will work out the real order after using the list a few times.', feedback: 'Possibly, and the first time is where the cost lands. Design for the first time and record what the learning costs.', was: ['She will learn the real order after using it a few times.'] },
           ],
           then: 'Write each of your own contradictions the same way: what she believes, what the design does, and what she does because of the gap.',
         },
@@ -83,29 +83,29 @@ export const guided04: Record<string, Guided> = {
       {
         question: 'Your structure mirrors how the studio organises its classes internally, and it is entirely logical. Is that enough?',
         options: [
-          { label: 'No. Logical to whom matters: a structure that mirrors an organisation is routinely unusable because readers do not know the organisation.', correct: true, feedback: 'Internal logic is real logic and it encodes knowledge the reader does not have. They look where their own model says to look.' },
-          { label: 'Yes, provided the labels are clear and consistent.', feedback: 'Clear labels on the wrong structure send people confidently to the wrong place.' },
-          { label: 'Yes, because people learn a structure after a few visits.', feedback: 'Some do, and the first visit is where most decisions are made. Learning is a cost you are choosing to impose.' },
+          { label: 'It falls short: readers look where their own model says, not the studio’s.', correct: true, feedback: 'Internal logic is real logic and it encodes knowledge the reader does not have. A structure that mirrors an organisation is often hard to use for people outside it.', was: ['No. Logical to whom matters: a structure that mirrors an organisation is routinely unusable because readers do not know the organisation.'] },
+          { label: 'It is enough, provided every label in the structure is clear and consistent.', feedback: 'Clear labels on the wrong structure send people confidently to the wrong place.', was: ['Yes, provided the labels are clear and consistent.'] },
+          { label: 'It is enough, because people learn any logical structure after a few visits.', feedback: 'Some do, and the first visit is where many decisions are made. Learning is a cost you are choosing to impose.', was: ['Yes, because people learn a structure after a few visits.'] },
         ],
         repair: 'Reread your design model in step 3. If any part of the structure exists because of how you or the studio think about classes, write it as a contradiction in step 4 and record the change in step 5.',
         recheck: 'At least one contradiction names a structure the reader has no way to predict.',
       },
       {
-        question: 'You wrote the reader’s model from your own understanding of the flow. What is wrong with that?',
+        question: 'You wrote the reader’s model from your own understanding of the flow and marked none of it as assumed. What is the problem?',
         options: [
-          { label: 'It produces a model with no friction in it, so there are no real contradictions to find.', correct: true, feedback: 'You know where everything is and why. Writing that down as the reader’s belief guarantees the two models agree.' },
-          { label: 'Nothing, if you designed it for a reader like yourself.', feedback: 'Even then you know the decisions behind it, which no reader does. Your fluency is the least transferable thing about you.' },
-          { label: 'It is acceptable as a starting point to be tested later.', feedback: 'It is, if it is labelled as an assumption. Written as the reader’s model it will be treated as evidence.' },
+          { label: 'Your own fluency reads as hers, so the models agree and no contradiction appears.', correct: true, feedback: 'You know where everything is and why. Written down unmarked as the reader’s belief, it guarantees the two models agree.', was: ['It produces a model with no friction in it, so there are no real contradictions to find.'] },
+          { label: 'Nothing much, provided the flow was designed for someone very like yourself.', feedback: 'Even then you know the decisions behind it, which no reader does. Your fluency is the least transferable thing about you.', was: ['Nothing, if you designed it for a reader like yourself.'] },
+          { label: 'Nothing yet: unmarked, it still works as a starting point to test later.', feedback: 'As a starting point it needs the mark “assumed”. Unmarked, it will be read as evidence about the reader, which it is not.', was: ['It is acceptable as a starting point to be tested later.'] },
         ],
-        repair: 'Mark every line in your reader model in step 2 as observed, reported or assumed. If none are observed, go back to your Module 2 notes and find one, then record it in step 5.',
-        recheck: 'The evidence marks are present and at least one belief traces to a session.',
+        repair: 'Mark every line in your reader model in step 2 as observed, reported or assumed. If you have no sessions, every line is assumed: add the smallest question that would test the riskiest one, and record it in step 5.',
+        recheck: 'Every line carries an evidence mark, and no line is marked observed or reported without a session behind it.',
       },
       {
         question: 'You decide to teach the reader your model with a short explanation on the screen. What should the cost line say?',
         options: [
-          { label: 'That explanations are frequently skipped, so the cost is a reader who acts on the old model anyway.', correct: true, feedback: 'Teaching is a legitimate choice and it is the expensive one, because it relies on attention you have not been given.' },
-          { label: 'That there is no cost, since the explanation is short.', feedback: 'Length is not the cost. The cost is that it competes with the task the reader came to do.' },
-          { label: 'That the cost falls on you, in writing time.', feedback: 'That is your cost, and the one that matters is what happens to the reader who does not read it.' },
+          { label: 'That many readers skip it and act on their old model anyway.', correct: true, was: ['That explanations are frequently skipped, so the cost is a reader who acts on the old model anyway.'], feedback: 'Teaching is a legitimate choice and it is the expensive one, because it relies on attention you have not been given.' },
+          { label: 'That the cost is small, because the explanation is only one short sentence.', feedback: 'Length is not the cost. The cost is that it competes with the task the reader came to do.', was: ['That there is no cost, since the explanation is short.'] },
+          { label: 'That the cost falls mostly on you, in the time spent writing the explanation.', feedback: 'That is your cost, and the one that matters is what happens to the reader who does not read it.', was: ['That the cost falls on you, in writing time.'] },
         ],
         repair: 'Write the cost of your choice in step 5 in terms of what happens to a reader who does not notice, then record the change.',
         recheck: 'The cost line describes a consequence for a reader, not effort for you.',
@@ -113,9 +113,18 @@ export const guided04: Record<string, Guided> = {
     ],
     saveRoute: {
       auto: 'Both models, the contradictions and your decision save as you type, on this device first and then online.',
-      external: 'Nothing here needs a file. Keep your Module 2 notes to hand; the evidence marks depend on them.',
+      external: 'Nothing here needs a file. Keep any Module 2 notes in your private folder; the evidence marks depend on them. Without sessions, your screens are all you need.',
       creator: 'Your creator reads both models and the contradictions. The evidence marks are what show whether the reader’s model came from sessions or from you.',
       next: 'Open Your work and choose Ready for review. The next lesson audits the same flow for everything it asks the reader to remember.',
+    },
+    transfer: {
+      scenario: 'Made-up case: A council website lists bin collection days under “Services A–Z”, grouped by department: “Environmental Operations” holds the collection calendar and “Waste Strategy” holds the form to request a garden-waste bin. A resident wants to know which day her garden waste is collected. Nobody has tested the site with residents.',
+      prompt: 'Write one belief a resident probably brings, the contradiction with this structure and its consequence, and whether you would conform or teach. Give your reason and mark what is assumed.',
+      anchors: {
+        weak: 'Says the structure is logical so residents will learn it, or writes the designer’s understanding as the resident’s belief without marking it assumed.',
+        adequate: 'States an assumed belief (she looks for “bins” or her address, not a department), names the contradiction and its consequence (she cannot find the day, or phones the council), and chooses to conform, such as a “Bins and recycling” entry or address look-up, with its cost.',
+        strong: 'As adequate, plus: marks the belief assumed with the smallest check (ask three residents where they would look first), and notes what conforming costs the council, such as duplicated pages or reorganising content.',
+      },
     },
   },
   'm04-l02-v1': {
@@ -180,10 +189,10 @@ export const guided04: Record<string, Guided> = {
           material: 'A supplied demand from the same made-up flow: the reader chooses a class on one screen, and three screens later must type the class name into a “which class?” field to confirm.',
           question: 'Which conversion actually removes the memory demand?',
           options: [
-            { label: 'Show the chosen class name and time on the confirming screen, with an option to change it.', correct: true, feedback: 'The answer is now in front of her and she checks rather than produces. The change option keeps her in control without asking her to remember.' },
-            { label: 'Add a hint under the field reading “the class you selected earlier”.', feedback: 'That names what to remember without supplying it. The demand is unchanged.' },
-            { label: 'Add a confirmation dialogue asking “are you sure this is the right class?”', feedback: 'She still has no way to check. Confirming something you cannot verify is not a check.' },
-            { label: 'Let her open the class list in a new tab to look it up.', feedback: 'Better than nothing and it moves the work to her: she must leave the task, find the class and come back holding the answer.' },
+            { label: 'Show the chosen class and time on that screen, with a link to change them.', correct: true, feedback: 'The answer is now in front of her and she checks rather than produces. The change option keeps her in control without asking her to remember.', was: ['Show the chosen class name and time on the confirming screen, with an option to change it.'] },
+            { label: 'Add a hint under the field that reads “the class you selected earlier”.', feedback: 'That names what to remember without supplying it. The demand is unchanged.', was: ['Add a hint under the field reading “the class you selected earlier”.'] },
+            { label: 'Add a dialogue that asks “Are you sure this is the right class?” before saving.', feedback: 'She still has no way to check. Confirming something you cannot verify is not a check.', was: ['Add a confirmation dialogue asking “are you sure this is the right class?”'] },
+            { label: 'Let her open the class list in a new tab so she can look the name up again.', feedback: 'Better than nothing and it moves the work to her: she must leave the task, find the class and come back holding the answer.', was: ['Let her open the class list in a new tab to look it up.'] },
           ],
           then: 'Convert your own two demands by showing the value where it is needed, not by labelling what should be remembered.',
         },
@@ -198,9 +207,9 @@ export const guided04: Record<string, Guided> = {
       {
         question: 'Your flow ends with a confirmation screen showing everything entered. Does that mean the reader checked it?',
         options: [
-          { label: 'No. It means the information was displayed. Checking requires comparing it against something they can still see.', correct: true, feedback: 'If the reader must compare against a value from two screens ago that is no longer visible, the confirmation is a formality rather than a check.' },
-          { label: 'Yes: displaying the values gives them the opportunity to check.', feedback: 'Opportunity without the reference is not a check. They can read what is there and have nothing to compare it with.' },
-          { label: 'Yes, if the values are large and clearly laid out.', feedback: 'Legibility helps them read it. It does not give them the original to compare against.' },
+          { label: 'Only that it was shown; checking needs something visible to compare it with.', correct: true, feedback: 'If the reader must compare against a value from two screens ago that is no longer visible, the confirmation is a formality rather than a check.', was: ['No. It means the information was displayed. Checking requires comparing it against something they can still see.'] },
+          { label: 'It does, because displaying every value gives the reader the chance to check.', feedback: 'Opportunity without the reference is not a check. They can read what is there and have nothing to compare it with.', was: ['Yes: displaying the values gives them the opportunity to check.'] },
+          { label: 'It does, as long as the values are large, clearly laid out and easy to scan.', feedback: 'Legibility helps them read it. It does not give them the original to compare against.', was: ['Yes, if the values are large and clearly laid out.'] },
         ],
         repair: 'Look at your confirmation screen in step 2. If it asks the reader to verify something whose source is no longer visible, add that as a demand and convert it, then record the change in step 5.',
         recheck: 'Anything the reader is asked to confirm is shown beside what it should match.',
@@ -208,9 +217,9 @@ export const guided04: Record<string, Guided> = {
       {
         question: 'You skipped the interruption test because your flow takes only two minutes. Why apply it anyway?',
         options: [
-          { label: 'Because real use is interrupted regardless of how long the flow takes; two minutes on a bus is not two uninterrupted minutes.', correct: true, feedback: 'The flow’s length is your measurement under ideal conditions. Interruption is the normal case, not the exception.' },
-          { label: 'It is unnecessary for short flows; the test is for long forms.', feedback: 'Short flows are more often done in fragments, precisely because they feel quick to start.' },
-          { label: 'Only if the flow involves payment.', feedback: 'Payment raises the cost of failure and does not create the demand. Any carried value fails the same way.' },
+          { label: 'Real use is interrupted however short the flow; two minutes on a bus get broken.', correct: true, feedback: 'The flow’s length is your measurement under ideal conditions. Interruption is the normal case, not the exception.', was: ['Because real use is interrupted regardless of how long the flow takes; two minutes on a bus is not two uninterrupted minutes.'] },
+          { label: 'It is unnecessary for a two-minute flow; the test exists for long, many-page forms.', feedback: 'Short flows are often done in fragments, precisely because they feel quick to start.', was: ['It is unnecessary for short flows; the test is for long forms.'] },
+          { label: 'Only because the flow involves payment, where a lost value costs real money.', feedback: 'Payment raises the cost of failure and does not create the demand. Any carried value fails the same way.', was: ['Only if the flow involves payment.'] },
         ],
         repair: 'Apply the interruption test to every demand in step 3 and mark which fail, then record what changed in step 5.',
         recheck: 'Each demand carries an interruption result.',
@@ -218,9 +227,9 @@ export const guided04: Record<string, Guided> = {
       {
         question: 'One demand cannot be removed: the reader must remember which email address they used. What should you write?',
         options: [
-          { label: 'That it is genuinely unremovable, why, and what you did to soften it, such as showing a masked hint.', correct: true, feedback: 'Some demands are real. Recording why, and what you did to reduce the cost, is the honest end of the audit.' },
-          { label: 'That the reader should use a password manager.', feedback: 'That moves the demand onto a tool they may not have, and it is advice rather than design.' },
-          { label: 'Nothing: unremovable demands are not part of the audit.', feedback: 'They are the most important part, because they are what you are knowingly asking of people.' },
+          { label: 'Why it cannot be shown, and how you softened it, such as a masked hint.', correct: true, was: ['That it is genuinely unremovable, why, and what you did to soften it, such as showing a masked hint.'], feedback: 'Some demands are real. Recording why, and what you did to reduce the cost, is the honest end of the audit.' },
+          { label: 'That readers should keep it in a password manager, which removes the demand.', feedback: 'That moves the demand onto a tool they may not have, and it is advice rather than design.', was: ['That the reader should use a password manager.'] },
+          { label: 'Nothing: a demand the design cannot remove sits outside the scope of the audit.', feedback: 'They are the most important part, because they are what you are knowingly asking of people.', was: ['Nothing: unremovable demands are not part of the audit.'] },
         ],
         repair: 'Fill the unremovable box in step 5 with the reason and any softening you added, then record the change.',
         recheck: 'The unremovable demand names why it cannot be shown and what you did about the cost.',
@@ -231,6 +240,15 @@ export const guided04: Record<string, Guided> = {
       external: 'The annotated flow with its arrows stays on paper or in your own folder. Name it here so the drawing and the table stay together.',
       creator: 'Your creator reads the demands, the interruption marks and the conversions. The unremovable one is the interesting entry.',
       next: 'Open Your work and choose Ready for review. The next lesson inventories what each control affords, signals and confirms.',
+    },
+    transfer: {
+      scenario: 'Made-up case: A car-share app shows the car’s number plate and parking bay on its “Booking confirmed” screen. The next screen, “Unlock your car”, asks the person to type the plate to unlock it. Most people book at home and unlock the car twenty minutes later in a car park.',
+      prompt: 'Which memory demand would you remove first, and how? Say what your change costs and explain your reasoning.',
+      anchors: {
+        weak: 'Adds a hint such as “enter the plate from your booking” or a confirmation dialogue, so the person still has to remember the plate or go and look it up.',
+        adequate: 'Names the plate (and bay) as carried from the confirmation to the unlock screen across an interruption, shows them on the unlock screen or offers the booked car to choose, and states the cost in space or steps.',
+        strong: 'As adequate, plus: checks other carried values such as the bay and return time, keeps a step that compares the shown plate with the car itself, and notes it needs checking on site, since a weak signal in a car park may stop details loading.',
+      },
     },
   },
   'm04-l03-v1': {
@@ -275,7 +293,7 @@ export const guided04: Record<string, Guided> = {
             { label: 'The first two rows', text: 'Reserve: affords holding a place, signalled by a filled rectangle with a verb, feedback… I stopped there.' },
             { label: 'What was in the feedback column', text: 'Nothing. Pressing Reserve does nothing visible until the next screen appears, which on a slow connection can take seconds.' },
             { label: 'Why I nearly filled it in', text: 'I wrote “the next screen appears” and deleted it. That is the result arriving, not feedback that the press registered.' },
-            { label: 'What the blank told me', text: 'This is why people press twice. The blank was the finding, and filling it in would have hidden it.' },
+            { label: 'What the blank told me', text: 'A blank like this would explain people pressing twice, if anyone is seen doing it; on paper it is a prediction to check. The blank was the finding, and filling it in would have hidden it.' },
           ],
           wrongTurn: 'The wrong turn is filling every cell because an empty table looks unfinished. The empty cells are the entire value of the exercise.',
           tradeoff: 'Leaving blanks makes the inventory look sparse and unimpressive. It is what makes the next step obvious.',
@@ -293,10 +311,10 @@ export const guided04: Record<string, Guided> = {
           material: 'A supplied row from the same made-up screen: a link in body text reading “see what to bring”, styled in the same colour and weight as the surrounding text, underlined only on hover.',
           question: 'What is the smallest sound repair?',
           options: [
-            { label: 'Give it a persistent underline, so it is identifiable as a link without a pointer.', correct: true, feedback: 'It restores the signifier on every device without adding anything new to the screen, and it is the convention readers already know.' },
-            { label: 'Change its colour so it stands out from the body text.', feedback: 'Better than nothing and colour alone is exactly the failure the colour lesson warned about. It also fails in greyscale.' },
-            { label: 'Turn it into a button so it is obviously interactive.', feedback: 'A button is a much heavier element for an inline reference and changes the reading of the sentence around it.' },
-            { label: 'Add a hint elsewhere saying which words are links.', feedback: 'That asks the reader to hold a rule in mind, which is precisely the memory demand the previous lesson was removing.' },
+            { label: 'Give it a permanent underline, so it reads as a link without a pointer.', correct: true, was: ['Give it a persistent underline, so it is identifiable as a link without a pointer.'], feedback: 'It restores the signifier on every device without adding anything new to the screen, and it is the convention readers already know.' },
+            { label: 'Change its colour so that it stands out clearly from the body text.', was: ['Change its colour so it stands out from the body text.'], feedback: 'Better than nothing and colour alone is exactly the failure the colour lesson warned about. It also fails in greyscale.' },
+            { label: 'Turn it into a button, so that it is obviously interactive on any device.', was: ['Turn it into a button so it is obviously interactive.'], feedback: 'A button is a much heavier element for an inline reference and changes the reading of the sentence around it.' },
+            { label: 'Add a short note elsewhere on the page saying which words are links.', was: ['Add a hint elsewhere saying which words are links.'], feedback: 'That asks the reader to hold a rule in mind, which is precisely the memory demand the previous lesson was removing.' },
           ],
           then: 'Repair your own weakest signifier the same way: restore the cue where the reader is, without adding a new element.',
         },
@@ -311,9 +329,9 @@ export const guided04: Record<string, Guided> = {
       {
         question: 'Your card is clickable and readers will discover that by hovering. What is wrong with relying on that?',
         options: [
-          { label: 'Hover does not exist on touch devices, and it requires the reader to already suspect the thing is interactive.', correct: true, feedback: 'It is a signifier that only appears to people who already guessed. On a phone it never appears at all.' },
-          { label: 'Nothing, provided the site is mainly used on desktop.', feedback: 'Even on desktop, hover only rewards a reader who was already exploring. It cannot invite the first action.' },
-          { label: 'It is acceptable if the card has a shadow.', feedback: 'A shadow may be a persistent signifier, in which case the shadow is doing the work and the hover is decoration.' },
+          { label: 'Phones have no hover, and it only rewards a reader who has already guessed.', correct: true, was: ['Hover does not exist on touch devices, and it requires the reader to already suspect the thing is interactive.'], feedback: 'It is a signifier that only appears to people who already guessed. On a phone it never appears at all.' },
+          { label: 'Nothing serious, provided most visitors use the site on a desktop computer.', feedback: 'Even on desktop, hover only rewards a reader who was already exploring. It cannot invite the first action.', was: ['Nothing, provided the site is mainly used on desktop.'] },
+          { label: 'It is acceptable as long as the card also has a soft shadow beneath it.', feedback: 'A shadow may be a persistent signifier, in which case the shadow is doing the work and the hover is decoration.', was: ['It is acceptable if the card has a shadow.'] },
         ],
         repair: 'Check your hover-dependent list in step 3. Give the most important one a signifier that is present without a pointer, and record it in step 5.',
         recheck: 'Every interactive element is identifiable on a touch screen without exploring.',
@@ -321,9 +339,9 @@ export const guided04: Record<string, Guided> = {
       {
         question: 'A control has nothing in its feedback column. What should you do?',
         options: [
-          { label: 'Leave it blank and treat it as the finding, then repair it deliberately.', correct: true, feedback: 'The blank is what the exercise is for. It usually explains a behaviour you have already seen, such as people pressing twice.' },
-          { label: 'Write “the next screen appears” to complete the row.', feedback: 'That is the result arriving, not confirmation that the press registered. On a slow connection there is a gap where nothing has happened.' },
-          { label: 'Remove the row, since it is incomplete.', feedback: 'Removing it hides the most valuable line in the table.' },
+          { label: 'Keep it blank as a finding, then repair that feedback deliberately.', correct: true, feedback: 'The blank is what the exercise is for. It predicts behaviour worth checking, such as a person pressing twice while nothing visibly happens.', was: ['Leave it blank and treat it as the finding, then repair it deliberately.'] },
+          { label: 'Write “the next screen appears” there so that the row is complete.', feedback: 'That is the result arriving, not confirmation that the press registered. On a slow connection there is a gap where nothing has happened.', was: ['Write “the next screen appears” to complete the row.'] },
+          { label: 'Remove that row, since an incomplete row weakens the whole inventory.', feedback: 'Removing it hides the most valuable line in the table.', was: ['Remove the row, since it is incomplete.'] },
         ],
         repair: 'Restore any cell you filled in to make the table look complete, then repair the weakest feedback in step 4 and record it in step 5.',
         recheck: 'Blanks are preserved as findings, and the repairs address the blanks.',
@@ -331,9 +349,9 @@ export const guided04: Record<string, Guided> = {
       {
         question: 'You removed the underline from links because the screen looked busy. What did that cost?',
         options: [
-          { label: 'The signifier that told readers which words are interactive, on every device.', correct: true, feedback: 'Tidiness routinely removes signifiers, because signifiers are visual noise until you need them. Record what you took away.' },
-          { label: 'Nothing, since the links are still a different colour.', feedback: 'Colour alone fails in greyscale and for many readers. It also collides with the colour lesson’s rule.' },
-          { label: 'Only aesthetics; the links still work.', feedback: 'They work for anyone who finds them. Finding them is what the underline was for.' },
+          { label: 'The cue that told readers which words are links, on every device.', correct: true, was: ['The signifier that told readers which words are interactive, on every device.'], feedback: 'Tidiness routinely removes signifiers, because signifiers are visual noise until you need them. Record what you took away.' },
+          { label: 'Nothing important, since the links are still shown in a different colour.', feedback: 'Colour alone fails in greyscale and for many readers. It also collides with the colour lesson’s rule.', was: ['Nothing, since the links are still a different colour.'] },
+          { label: 'Only some visual texture; the links themselves still work when tapped.', feedback: 'They work for anyone who finds them. Finding them is what the underline was for.', was: ['Only aesthetics; the links still work.'] },
         ],
         repair: 'Write what you removed and what it was doing in step 5, and restore it if the repair column has no substitute.',
         recheck: 'Any removed signifier is either restored or replaced by something present on every device.',
@@ -343,7 +361,16 @@ export const guided04: Record<string, Guided> = {
       auto: 'The inventory, touch marks and repairs save as you type, on this device first and then online.',
       external: 'The annotated printout stays in your own folder; name it here. Nothing is uploaded.',
       creator: 'Your creator reads the inventory, especially the blanks. Those are what show the analysis was honest.',
-      next: 'Open Your work and choose Ready for review. The next lesson classifies the failures you observed in Module 2.',
+      next: 'Open Your work and choose Ready for review. The next lesson classifies failures from your Module 2 sessions or from a labelled practice set.',
+    },
+    transfer: {
+      scenario: 'Made-up case: A plant nursery’s website shows products in a photo grid. Tapping a photo opens the product, but nothing shows this except a slight zoom when a mouse is over it. The “Add to basket” button gives no response until the basket count changes about two seconds later.',
+      prompt: 'Name the weakest signifier and the weakest feedback, and give one repair for each. Explain what a phone user can tell after your repairs that they could not before.',
+      anchors: {
+        weak: 'Relies on the hover zoom (“people will find it”), or describes the repairs only visually without saying what the reader can now tell.',
+        adequate: 'Names the hover-only zoom as a signifier missing on touch and adds a persistent cue (the product name as a visible link, or a “View” label); adds immediate pressed or adding feedback to the button; says what the reader can now tell before and after acting.',
+        strong: 'As adequate, plus a failure case or check: what the button shows if adding fails, whether the basket count is visible on a phone at all, and checking on a real phone rather than a narrowed desktop window.',
+      },
     },
   },
   'm04-l04-v1': {
@@ -352,13 +379,13 @@ export const guided04: Record<string, Guided> = {
       { id: 'concept', title: 'The distinguishing question', fields: [
         { id: 'test-question', label: 'The question you will use to tell a slip from a mistake', kind: 'short', hint: 'It is about the intention, not the outcome.', example: 'Example (made up): was the intention right and the action wrong (slip), or was the intention itself wrong (mistake)?' },
       ] },
-      { id: 'classify', title: 'Your observed failures', intro: 'One at a time, from your Module 2 notes. Unclassifiable is a valid answer.', fields: [
-        ...[1, 2, 3, 4].map((n) => ({ id: `failure-${n}`, label: `Failure ${n} · what happened, and slip, mistake or unclassified`, kind: 'long' as const,
-          ...(n === 1 ? { example: 'Example (made up): she pressed Reserve intending to check availability. Intention wrong about what the button did — mistake.' } : {}) })),
-        { id: 'unclassified-why', label: 'For anything unclassified: what you would need to know', kind: 'long' },
+      { id: 'classify', title: 'Your failures', intro: 'One at a time, from your Module 2 notes, or from the labelled practice notes F1–F4 if your Module 2 work was a rehearsal or self-pilot. Unclassifiable is a valid answer.', fields: [
+        ...[1, 2, 3, 4].map((n) => ({ id: `failure-${n}`, label: `Failure ${n} · what happened, and slip, mistake or unclassified`, kind: 'long' as const, sensitive: true as const,
+          ...(n === 1 ? { hint: 'A de-identified summary with a participant code such as P2, or a practice label such as F1 marked “practice”. Raw session notes stay in a private local file or on paper with a date to delete them. A code instead of a name is not anonymity, so leave out details that could identify someone.', example: 'Example (made up): she pressed Reserve intending to check availability. Intention wrong about what the button did — mistake.' } : {}) })),
+        { id: 'unclassified-why', label: 'For anything unclassified: what you would need to know', kind: 'long', sensitive: true },
       ] },
       { id: 'blame', title: 'Rewriting the blame out', fields: [
-        { id: 'rewritten', label: 'Each observation rewritten with the design as the subject, keeping the original beside it', kind: 'long', example: 'Example (made up): before — she did not notice the price. After — the price was placed below the fold at this width and the design gave no cue that it existed.' },
+        { id: 'rewritten', label: 'Each observation rewritten with the design as the subject, keeping the original beside it', kind: 'long', sensitive: true, hint: 'Work from de-identified notes or the practice notes; no names. Raw session notes stay in a private local file or on paper with a date to delete them. A code instead of a name is not anonymity, so leave out details that could identify someone.', example: 'Example (made up): before — she did not notice the price. After — the price was placed below the fold at this width and the design gave no cue that it existed.' },
       ] },
       { id: 'design', title: 'Prevention and recovery', fields: [
         { id: 'slip-prevention', label: 'For one slip · the prevention', kind: 'long', hint: 'Prefer a constraint or a default over a warning.' },
@@ -367,7 +394,7 @@ export const guided04: Record<string, Guided> = {
         { id: 'mistake-recovery', label: 'For that mistake · the recovery', kind: 'short' },
       ] },
       { id: 'record', title: 'Save', fields: [
-        { id: 'unresolved', label: 'A failure you could not classify or design for, and why', kind: 'long' },
+        { id: 'unresolved', label: 'A failure you could not classify or design for, and why', kind: 'long', sensitive: true },
         { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
       ] },
     ],
@@ -379,7 +406,7 @@ export const guided04: Record<string, Guided> = {
         ],
         start: 'Write the question as something you could ask about any failure in ten seconds.',
         enough: 'The question is about intention, not about how bad the outcome was.' },
-      { terms: [{ term: 'Failure', meaning: 'Any place the reader did not get what she intended, including a hesitation or a wrong turn, not only an outright error.' }, { term: 'Unclassified', meaning: 'Kept as its own answer when you cannot tell what the person intended. It names a question for the next session.' }], expect: 'Every failure from your Module 2 notes classified, with unclassifiable ones kept.',
+      { terms: [{ term: 'Failure', meaning: 'Any place the reader did not get what she intended, including a hesitation or a wrong turn, not only an outright error.' }, { term: 'Unclassified', meaning: 'Kept as its own answer when you cannot tell what the person intended. It names a question for the next session.' }], expect: 'Every failure from your Module 2 notes, or the practice notes F1–F4, classified, with unclassifiable ones kept.',
         fields: ['failure-1', 'failure-2', 'failure-3', 'failure-4', 'unclassified-why'],
         reveal: { first: 2, group: 1, count: 4, addLabel: 'Add another failure', note: 'One at a time, including hesitations and wrong turns, not only outright errors.' },
         demo: {
@@ -395,17 +422,17 @@ export const guided04: Record<string, Guided> = {
           tradeoff: 'Classifying honestly produces more mistakes than slips, and mistakes are harder to fix than adding a warning.',
           uncertainty: 'Still unknown: whether other people share that model of the button. One session cannot say how common it is.',
         },
-        start: 'Take each failure and ask what the person was trying to do at that moment.',
-        enough: 'At least one is classified as a mistake, or you can say why none is.' },
+        start: 'Take each failure and ask what the person was trying to do at that moment, and how you know: what they said or did, not what you assume.',
+        enough: 'Each classification names the evidence of intention behind it, and anything without that evidence is unclassified.' },
       { expect: 'Each observation rewritten with the design as the subject, keeping both versions.', fields: ['rewritten'],
         supported: {
           material: 'A supplied note from the same made-up session: “The participant carelessly skipped the materials section and then complained she did not know what to bring.”',
           question: 'Which rewrite is useful?',
           options: [
-            { label: 'The materials section sat below the Reserve button at this width, so it was not encountered before the decision, and nothing referred to it afterwards.', correct: true, feedback: 'It names what the design did, where, and what followed. It is checkable and it points straight at a repair.' },
+            { label: 'At this width the materials section sat below Reserve, and nothing pointed to it.', correct: true, was: ['The materials section sat below the Reserve button at this width, so it was not encountered before the decision, and nothing referred to it afterwards.'], feedback: 'It names what the design did, where, and what followed. It is checkable and it points straight at a repair.' },
             { label: 'The participant did not read the materials section, which is common behaviour.', feedback: 'Softer wording, same blame, and now with a claim about people in general that one session cannot support.' },
-            { label: 'The materials section needs to be more prominent.', feedback: 'That is a repair, not an observation. Written here it hides what actually happened.' },
-            { label: 'The participant was in a hurry, which affected her reading.', feedback: 'Speculation about her state, and unfalsifiable. It also excuses the layout.' },
+            { label: 'The materials section needs to be far more prominent on the class page.', was: ['The materials section needs to be more prominent.'], feedback: 'That is a repair, not an observation. Written here it hides what actually happened.' },
+            { label: 'The participant was in a hurry, which affected how carefully she read it.', was: ['The participant was in a hurry, which affected her reading.'], feedback: 'Speculation about her state, and unfalsifiable. It also excuses the layout.' },
           ],
           then: 'Rewrite each of your own observations so the design is the subject and the sentence could be checked by someone else.',
         },
@@ -429,9 +456,9 @@ export const guided04: Record<string, Guided> = {
       {
         question: 'You add a confirmation dialogue so people cannot get it wrong. What does that actually catch?',
         options: [
-          { label: 'Some slips, briefly, until people learn to dismiss it; it does nothing for a mistake.', correct: true, feedback: 'Someone whose intention is wrong confirms the wrong intention. The dialogue asks them to check a decision they believe is correct.' },
-          { label: 'Both slips and mistakes, since it forces a pause.', feedback: 'A pause helps only if the person has reason to doubt themselves. A mistake feels correct from the inside.' },
-          { label: 'Mistakes mainly, since it makes people think about the consequence.', feedback: 'It states a consequence they have already accepted, because their model says this is the right action.' },
+          { label: 'Some slips, briefly, until it is dismissed by habit; mistakes pass straight through.', correct: true, was: ['Some slips, briefly, until people learn to dismiss it; it does nothing for a mistake.'], feedback: 'Someone whose intention is wrong confirms the wrong intention. The dialogue asks them to check a decision they believe is correct.' },
+          { label: 'Both slips and mistakes, since it forces everybody to pause before acting.', was: ['Both slips and mistakes, since it forces a pause.'], feedback: 'A pause helps only if the person has reason to doubt themselves. A mistake feels correct from the inside.' },
+          { label: 'Mainly mistakes, since it makes people stop and think about the consequence.', was: ['Mistakes mainly, since it makes people think about the consequence.'], feedback: 'It states a consequence they have already accepted, because their model says this is the right action.' },
         ],
         repair: 'Look at your interventions in step 4. If either is a warning or a confirmation, replace it with a constraint, a default or better information, and record it in step 5.',
         recheck: 'The slip repair changes what is possible; the mistake repair changes what the reader knows.',
@@ -439,9 +466,9 @@ export const guided04: Record<string, Guided> = {
       {
         question: 'Your notes say a participant was careless. Why rewrite it?',
         options: [
-          { label: 'Because “careless” cannot be designed for, while “the price was below the fold and nothing cued it” can.', correct: true, feedback: 'The rewrite is not politeness. It converts an unusable note into a specific, checkable statement about the design.' },
-          { label: 'Because it is unkind to the participant.', feedback: 'It is unkind and that is not the working reason. The working reason is that blame ends the investigation.' },
-          { label: 'Only if the notes will be shared with others.', feedback: 'You are the main reader, and you will act on what the note says. A blaming note tells you there is nothing to fix.' },
+          { label: '“Careless” gives nothing to design for; “nothing cued the price” does.', correct: true, was: ['Because “careless” cannot be designed for, while “the price was below the fold and nothing cued it” can.'], feedback: 'The rewrite is not politeness. It converts an unusable note into a specific, checkable statement about the design.' },
+          { label: 'Mainly because it is unkind to the participant and could upset them later.', was: ['Because it is unkind to the participant.'], feedback: 'It is unkind and that is not the working reason. The working reason is that blame ends the investigation.' },
+          { label: 'Only if the notes will be shared with others; private notes can stay as written.', was: ['Only if the notes will be shared with others.'], feedback: 'You are the main reader, and you will act on what the note says. A blaming note tells you there is nothing to fix.' },
         ],
         repair: 'Rewrite any remaining blaming observation in step 3 with the design as the subject, keeping the original, and record it in step 5.',
         recheck: 'Both versions are present and the rewritten one names what the design did.',
@@ -449,9 +476,9 @@ export const guided04: Record<string, Guided> = {
       {
         question: 'One failure could be either a slip or a mistake and you cannot tell. What do you do?',
         options: [
-          { label: 'Record it as unclassified with what you would need to observe to decide.', correct: true, feedback: 'Forcing a classification invents evidence. Keeping it open names a specific question for the next session.' },
-          { label: 'Classify it as a slip, since that is the safer assumption.', feedback: 'It is the comfortable assumption, and it leads to a warning that will not help if the intention was wrong.' },
-          { label: 'Drop it, since an unclassified failure cannot be designed for.', feedback: 'It can be investigated, which is the point. Dropping it loses the clearest question you have.' },
+          { label: 'Record it as unclassified, with what you would need to observe to decide.', correct: true, was: ['Record it as unclassified with what you would need to observe to decide.'], feedback: 'Forcing a classification invents evidence. Keeping it open names a specific question for the next session.' },
+          { label: 'Classify it as a slip, since that is the safer and more common assumption.', was: ['Classify it as a slip, since that is the safer assumption.'], feedback: 'It is the comfortable assumption, and it leads to a warning that will not help if the intention was wrong.' },
+          { label: 'Drop it from the table, since an unclassified failure cannot be designed for.', was: ['Drop it, since an unclassified failure cannot be designed for.'], feedback: 'It can be investigated, which is the point. Dropping it loses the clearest question you have.' },
         ],
         repair: 'Move any forced classification back to unclassified in step 2 and write what you would need to know, then record it in step 5.',
         recheck: 'Unclassifiable cases are preserved with the observation that would settle them.',
@@ -459,9 +486,26 @@ export const guided04: Record<string, Guided> = {
     ],
     saveRoute: {
       auto: 'The classification, rewrites and interventions save as you type, on this device first and then online.',
-      external: 'Your Module 2 session notes stay in your own private folder. Nothing here should identify a participant.',
-      creator: 'Your creator reads the classifications and the rewritten observations. The unclassified entries show where the evidence ran out.',
+      external: 'Your Module 2 session notes stay in your own private folder, with a date to delete them. Nothing here should identify a participant, and a code instead of a name is not anonymity on its own.',
+      creator: 'Your creator reads the classifications and the rewritten observations. The unclassified entries show where the evidence ran out, and practice-note rows stay labelled practice.',
       next: 'Open Your work and choose Ready for review. The next lesson is optional and tests three named laws against your own work.',
+    },
+    material: [
+      'Simulated practice notes, not real participants. Use them only if you have no consented Module 2 notes, and label every row you write from them “practice”. Each note keeps an observer’s original wording, blame included, so you can rewrite it.',
+      'F1 · “Fat-fingered the Saturday 10:00 slot instead of Sunday 10:00 directly below it, then said ‘no — Sunday’ and tapped again.”',
+      'F2 · “Just picked the first class without checking, saying ‘this one’s nearest’.” The list is ordered by paid promotion, not distance.',
+      'F3 · “Didn’t bother with the phone number: typed a long message, pressed Reserve, got ‘Phone number required’ and the message box came back empty.” She said nothing.',
+      'F4 · “Impatient: pressed Pay again while the screen said ‘Processing…’ and was charged twice.” She said: “I thought the first one hadn’t gone through.”',
+      'You know only these words and actions. Anything else about intention, feelings or how often this happens is unknown.',
+    ],
+    transfer: {
+      scenario: 'Made-up case: In a practice walkthrough of a train-ticket app, two failures were noted. A: someone meant to choose “Return”, tapped “Single” beside it, then said “oops, return” and went back. B: someone bought an “Off-peak” ticket for an 08:00 train, saying “off-peak just means cheaper seats”, and was refused at the barrier.',
+      prompt: 'Classify A and B as slip or mistake, and give one prevention for each that does not rely on the person being more careful. Explain why each prevention fits its class.',
+      anchors: {
+        weak: 'Adds a warning or confirmation dialogue to both, classifies by how bad the outcome was rather than by intention, or blames the person.',
+        adequate: 'A is a slip (right intention, wrong tap): more space, distinct buttons or easy change. B is a mistake (wrong model of “off-peak”): show the valid times on the ticket choice, or flag that 08:00 is peak before purchase.',
+        strong: 'As adequate, plus: a confirmation would not catch B because the person is confident; adds a recovery such as an upgrade route; and notes B’s classification rests on one remark, so a fuller session could change it.',
+      },
     },
   },
   'm04-l05-v1': {
@@ -516,13 +560,13 @@ export const guided04: Record<string, Guided> = {
           uncertainty: 'Still unknown: whether the grouping labels match how people actually think about time of day. That is a question for a person.',
         },
         supported: {
-          material: 'A supplied application of Jakob’s law from the same made-up project: “Other booking sites put the price at the top right, so ours should too, because people expect it there.”',
+          material: 'A supplied application of Jakob’s law from the same made-up project: “Other booking sites put the price at the top right, so ours should too, because people expect it there.” In this studio the listed price leaves out a materials fee paid on the day.',
           question: 'When would following that make the design worse?',
           options: [
-            { label: 'When the price at the top is incomplete, because materials are charged separately, so the familiar position teaches a wrong number.', correct: true, feedback: 'Conventions carry meaning as well as position. Matching the position while changing the meaning is worse than being unfamiliar.' },
-            { label: 'It would never be worse; matching conventions always reduces effort.', feedback: 'It reduces effort when the convention means the same thing. When it does not, familiarity makes the wrong reading more confident.' },
-            { label: 'When your design is more innovative than the sites you are copying.', feedback: 'Innovation is not a reason on its own. The reason is whether the convention’s meaning holds in your case.' },
-            { label: 'When you have no competitors to copy.', feedback: 'Readers bring expectations from every site they use, not only from competitors.' },
+            { label: 'When the familiar spot shows a price that leaves out the materials fee.', correct: true, was: ['When the price at the top is incomplete, because materials are charged separately, so the familiar position teaches a wrong number.'], feedback: 'Conventions carry meaning as well as position. Matching the position while changing the meaning is worse than being unfamiliar.' },
+            { label: 'It would not be worse, since matching a convention always reduces effort.', was: ['It would never be worse; matching conventions always reduces effort.'], feedback: 'It reduces effort when the convention means the same thing. When it does not, familiarity makes the wrong reading more confident.' },
+            { label: 'When your design is more innovative than the sites you would be copying.', was: ['When your design is more innovative than the sites you are copying.'], feedback: 'Innovation is not a reason on its own. The reason is whether the convention’s meaning holds in your case.' },
+            { label: 'When there are no direct competitors whose layout readers could know.', was: ['When you have no competitors to copy.'], feedback: 'Readers bring expectations from every site they use, not only from competitors.' },
           ],
           then: 'Write your own three counterexamples the same way: name the situation in your product where the assumption fails.',
         },
@@ -540,9 +584,9 @@ export const guided04: Record<string, Guided> = {
       {
         question: 'Are fewer options always better because of Hick’s law?',
         options: [
-          { label: 'No. It applies to comparable options being chosen among; removing an option someone needs ends their task rather than speeding it.', correct: true, feedback: 'The law describes a regularity under conditions. Outside them, fewer options simply means less available.' },
-          { label: 'Yes: choice time rises with the number of options, so reducing them always helps.', feedback: 'Choice time is not the only cost. An absent option costs the whole task for the person who needed it.' },
-          { label: 'Yes for navigation, no for content.', feedback: 'The distinction is not navigation versus content; it is whether the options are genuinely interchangeable for this reader.' },
+          { label: 'Only among comparable options; removing one someone needs ends their task.', correct: true, was: ['No. It applies to comparable options being chosen among; removing an option someone needs ends their task rather than speeding it.'], feedback: 'The law describes a regularity under conditions. Outside them, fewer options simply means less available.' },
+          { label: 'Yes: choice time rises with every added option, so cutting options helps.', was: ['Yes: choice time rises with the number of options, so reducing them always helps.'], feedback: 'Choice time is not the only cost. An absent option costs the whole task for the person who needed it.' },
+          { label: 'For navigation menus yes, but for content lists the law does not apply.', was: ['Yes for navigation, no for content.'], feedback: 'The distinction is not navigation versus content; it is whether the options are genuinely interchangeable for this reader.' },
         ],
         repair: 'Reread your Hick counterexample in step 3. If it is generic, replace it with a specific option in your own product whose removal would end someone’s task, and record the change in step 5.',
         recheck: 'The counterexample names a real option and the reader it would fail.',
@@ -550,9 +594,9 @@ export const guided04: Record<string, Guided> = {
       {
         question: 'Two of the three laws point in opposite directions for your decision. What is the useful response?',
         options: [
-          { label: 'Say what the disagreement is about, then choose with a stated reason and record what you overrode.', correct: true, feedback: 'A conflict makes the decision visible. Resolving it with a reason is judgement; averaging them is not.' },
-          { label: 'Follow the more established law.', feedback: 'Age is not evidence about your case. The question is which assumption holds here.' },
-          { label: 'Find a compromise that partly satisfies both.', feedback: 'Sometimes right, and often it produces a design that serves neither reason. Say which one you are prioritising.' },
+          { label: 'Name what they disagree about, choose with a reason and record what you overrode.', correct: true, was: ['Say what the disagreement is about, then choose with a stated reason and record what you overrode.'], feedback: 'A conflict makes the decision visible. Resolving it with a reason is judgement; averaging them is not.' },
+          { label: 'Follow the law with the longer research history, since it is better established.', was: ['Follow the more established law.'], feedback: 'Age is not evidence about your case. The question is which assumption holds here.' },
+          { label: 'Find a compromise design that partly satisfies both laws, so neither is ignored.', was: ['Find a compromise that partly satisfies both.'], feedback: 'Sometimes right, and often it produces a design that serves neither reason. Say which one you are prioritising.' },
         ],
         repair: 'If your conflict box in step 2 says the laws agree, look harder or say plainly that no conflict arose, then record it in step 5.',
         recheck: 'The resolution names a principle that was overridden and why.',
@@ -561,8 +605,8 @@ export const guided04: Record<string, Guided> = {
         question: 'You wrote “this follows Fitts’s law” as the justification for a decision. What is missing?',
         options: [
           { label: 'The prediction it makes about what readers will do, and how you could check it.', correct: true, feedback: 'Naming a law is an appeal to authority. Turning it into a prediction makes it something your own work can confirm or refute.' },
-          { label: 'A citation to the original research.', feedback: 'A citation makes the claim traceable and still not testable in your product.' },
-          { label: 'Nothing: a well-established law is sufficient justification.', feedback: 'Established laws describe regularities under conditions. Your design either meets those conditions or does not, and only a prediction reveals which.' },
+          { label: 'A citation to the original research paper, so the claim can be traced back.', was: ['A citation to the original research.'], feedback: 'A citation makes the claim traceable and still not testable in your product.' },
+          { label: 'Nothing further, since a well-established law is justification enough.', was: ['Nothing: a well-established law is sufficient justification.'], feedback: 'Established laws describe regularities under conditions. Your design either meets those conditions or does not, and only a prediction reveals which.' },
         ],
         repair: 'Rewrite each application in step 4 as suggestion, prediction and check, then record the change in step 5.',
         recheck: 'Every application names something observable that would show it was wrong.',
@@ -574,6 +618,15 @@ export const guided04: Record<string, Guided> = {
       creator: 'Your creator reads the counterexamples and the resolution. The counterexamples show whether the principles are being used or merely cited.',
       next: 'Open Your work and choose Ready for review, or move on. The next lesson turns requests into need statements.',
     },
+    transfer: {
+      scenario: 'Made-up case: A hardware shop’s click-and-collect page offers 14 collection time slots. A designer cites Hick’s law and proposes showing only the four most popular slots. Two of the hidden slots are the only ones after 18:00.',
+      prompt: 'Would you follow the proposal? Give your decision, the reason the law does or does not apply here, and one claim you could check.',
+      anchors: {
+        weak: 'Accepts the cut because fewer options are faster, or dismisses Hick’s law entirely without saying when it does apply.',
+        adequate: 'Rejects removing slots because they are not interchangeable (evening slots serve people who work in the day), reduces effort another way such as grouping by morning, afternoon and evening, and states a prediction and a check.',
+        strong: 'As adequate, plus a trade-off: grouping keeps a longer list; names what would make a cut acceptable (for example, evening slots never chosen) and how that would be checked without inventing data.',
+      },
+    },
   },
   'm04-l06-v1': {
     route: textRoute,
@@ -582,8 +635,8 @@ export const guided04: Record<string, Guided> = {
         { id: 'format-note', label: 'The format, its optional parts, and what the so-that clause changes', kind: 'long' },
       ] },
       { id: 'requests', title: 'Five real requests', intro: 'From your sessions, the brief, or your own list. One at a time.', fields: [
-        ...[1, 2, 3, 4, 5].map((n) => ({ id: `request-${n}`, label: `Request ${n} · as it was actually said, and who said it`, kind: 'short' as const,
-          ...(n === 1 ? { hint: 'Keep the original wording, including the solution it names.', example: 'Example (made up): “Add a reminder email the day before” — the studio owner.' } : {}) })),
+        ...[1, 2, 3, 4, 5].map((n) => ({ id: `request-${n}`, label: `Request ${n} · its wording, and its source by role or code (no names), or “practice”`, kind: 'short' as const, sensitive: true as const,
+          ...(n === 1 ? { hint: 'Keep the original wording, including the solution it names. Name the source by role (“studio owner”) or code (“P2”), never by name; label a supplied request “practice”.', example: 'Example (made up): “Add a reminder email the day before” — the studio owner.' } : {}) })),
       ] },
       { id: 'needs', title: 'Rewritten as needs', fields: [
         { id: 'need-1', label: 'Need 1 · with no solution in it', kind: 'long', example: 'Example (made up): a first-time attendee needs to know what to bring in time to gather it, so that she can take part from the start of the class.' },
@@ -594,7 +647,7 @@ export const guided04: Record<string, Guided> = {
         { id: 'hard-outcomes', label: 'Any so-that clause you found hard to write, and why', kind: 'long', hint: 'Difficulty here usually means the request has no outcome behind it. Record that rather than inventing one.' },
       ] },
       { id: 'evidence', title: 'Where each comes from', fields: [
-        { id: 'evidence-marks', label: 'For each need: the evidence source, or the word assumption', kind: 'long' },
+        { id: 'evidence-marks', label: 'For each need: the evidence source (a session code, not a name), the word assumption, or “practice” for a supplied request', kind: 'long', sensitive: true, hint: 'A request is not evidence about behaviour, so a need traced only to a request is an assumption with that request as its source.' },
         { id: 'consequential-assumptions', label: 'For the two most consequential assumptions: what would happen if each is wrong', kind: 'long' },
       ] },
       { id: 'widen', title: 'Someone else', fields: [
@@ -610,8 +663,8 @@ export const guided04: Record<string, Guided> = {
       { terms: [{ term: 'Request', meaning: 'What somebody asked for, usually with a solution already inside it. The solution is worth keeping, because it shows you what they pictured.' }, { term: 'Verbatim', meaning: 'The exact words somebody used, kept without tidying. Tidying quietly changes what was meant.' }], expect: 'Five real requests in the words they were actually said.',
         fields: ['request-1', 'request-2', 'request-3', 'request-4', 'request-5'],
         reveal: { first: 2, group: 1, count: 5, addLabel: 'Add another request', note: 'One at a time. Keep the original wording, solutions and all.' },
-        start: 'Look through your session notes and the brief before inventing any.',
-        enough: 'Each request names who said it.' },
+        start: 'Look through your session notes and the brief first. If you have no real requests, use the five practice requests and label each one practice.',
+        enough: 'Each request names its source by role or code, or is labelled practice.' },
       { terms: [{ term: 'So-that clause', meaning: 'The last part of the statement, naming what changes for the person. Without it you have a feature with somebody’s name attached.' }, { term: 'Outcome', meaning: 'What is different for the person once the need is met. Several different designs could achieve the same outcome, which is the point of naming it.' }, { term: 'Solution-free', meaning: 'Written with no page, button, email or feature in it, so that more than one response could satisfy it.' }], expect: 'Each request rewritten as a need with no solution in it, and any difficulty recorded.',
         fields: ['need-1', 'need-2', 'need-3', 'need-4', 'need-5', 'hard-outcomes'],
         demo: {
@@ -631,10 +684,10 @@ export const guided04: Record<string, Guided> = {
           material: 'A supplied conversion from the same made-up project: “Attendees need a materials checklist on the booking page so that they can see the materials checklist before booking.”',
           question: 'What is wrong with it?',
           options: [
-            { label: 'The so-that clause repeats the solution, so the statement has no outcome and cannot be met any other way.', correct: true, feedback: 'A circular outcome is the commonest failure. It looks complete and permits exactly one answer, which is the one you started with.' },
-            { label: 'It is too specific about the page.', feedback: 'Specificity is not the fault; the fault is that the outcome restates the feature rather than naming what changes for the person.' },
-            { label: 'Nothing: it names who, what and why.', feedback: 'It names who and what twice. The why is missing, disguised as a repetition.' },
-            { label: 'It should say “users” rather than “attendees”.', feedback: 'The opposite: naming who they are is better. “Users” is the vaguer word.' },
+            { label: 'The so-that clause repeats the solution, so there is no outcome to meet.', correct: true, was: ['The so-that clause repeats the solution, so the statement has no outcome and cannot be met any other way.'], feedback: 'A circular outcome is the commonest failure. It looks complete and permits exactly one answer, which is the one you started with.' },
+            { label: 'It is too specific about the page, which ties it to one part of the site.', was: ['It is too specific about the page.'], feedback: 'Specificity is not the fault; the fault is that the outcome restates the feature rather than naming what changes for the person.' },
+            { label: 'Nothing serious: it names who, what and why, which is the full format.', was: ['Nothing: it names who, what and why.'], feedback: 'It names who and what twice. The why is missing, disguised as a repetition.' },
+            { label: 'It should say “users” rather than “attendees”, so that it covers everyone.', was: ['It should say “users” rather than “attendees”.'], feedback: 'The opposite: naming who they are is better. “Users” is the vaguer word.' },
           ],
           then: 'Check each of your own so-that clauses: if it repeats the need, the outcome is missing.',
         },
@@ -654,9 +707,9 @@ export const guided04: Record<string, Guided> = {
       {
         question: 'The studio owner knows the business well and asks for a reminder email. Is that a requirement?',
         options: [
-          { label: 'It is a strong lead about a real problem, and it is not evidence about behaviour until something confirms it.', correct: true, feedback: 'Their knowledge is genuine and it is knowledge of the business, not of what attendees do. Treat the request as a pointer to a need worth investigating.' },
+          { label: 'A strong lead to convert into a need and check, not yet evidence about attendees.', correct: true, was: ['It is a strong lead about a real problem, and it is not evidence about behaviour until something confirms it.'], feedback: 'Their knowledge is genuine and it is knowledge of the business, not of what attendees do. Treat the request as a pointer to a need worth investigating.' },
           { label: 'Yes: the person who runs the business is the authority on what it needs.', feedback: 'They are the authority on constraints and goals. What attendees do is a different question that their position does not answer.' },
-          { label: 'No: only research findings count as requirements.', feedback: 'Too dismissive. A stakeholder request often points at a real pattern they have seen many times; it just has to be converted and checked.' },
+          { label: 'Not at all: only research findings with participants can count as requirements.', was: ['No: only research findings count as requirements.'], feedback: 'Too dismissive. A stakeholder request often points at a real pattern they have seen many times; it just has to be converted and checked.' },
         ],
         repair: 'Check your evidence marks in step 4. Any need traceable only to a stakeholder request should be marked as an assumption with its consequence, then record the change in step 5.',
         recheck: 'Requests and evidence are distinguished in the evidence column.',
@@ -664,9 +717,9 @@ export const guided04: Record<string, Guided> = {
       {
         question: 'Your need statement reads “Attendees need a reminder email so that they receive a reminder.” What is wrong?',
         options: [
-          { label: 'The outcome repeats the solution, so only one response can ever satisfy it.', correct: true, feedback: 'The so-that clause exists to open the field. Circular, it closes it and hides that no outcome was identified.' },
-          { label: 'Nothing, if the reminder is what the stakeholder asked for.', feedback: 'Then it is the request rewritten, and the conversion has done no work.' },
-          { label: 'It should specify the timing of the reminder.', feedback: 'More detail about the solution moves further from the need.' },
+          { label: 'The outcome repeats the solution, so only one response could ever satisfy it.', correct: true, was: ['The outcome repeats the solution, so only one response can ever satisfy it.'], feedback: 'The so-that clause exists to open the field. Circular, it closes it and hides that no outcome was identified.' },
+          { label: 'Nothing serious, if a reminder is exactly what the stakeholder asked for.', was: ['Nothing, if the reminder is what the stakeholder asked for.'], feedback: 'Then it is the request rewritten, and the conversion has done no work.' },
+          { label: 'It should say when the reminder is sent, such as the evening before the class.', was: ['It should specify the timing of the reminder.'], feedback: 'More detail about the solution moves further from the need.' },
         ],
         repair: 'Rewrite any circular so-that clause in step 3 to name what changes for the person, then record the change in step 5.',
         recheck: 'Each so-that clause names an outcome that several different responses could achieve.',
@@ -674,9 +727,9 @@ export const guided04: Record<string, Guided> = {
       {
         question: 'You could not write a so-that clause for one request. What should you do?',
         options: [
-          { label: 'Record the difficulty as a finding: the request may have no outcome behind it, which is worth knowing.', correct: true, feedback: 'Inventing an outcome to complete the table manufactures a justification. The gap is a real and useful result.' },
-          { label: 'Write the most plausible outcome so the table is complete.', feedback: 'That is a fabricated need, and it will be quoted later as though someone wanted it.' },
-          { label: 'Drop the request from the list.', feedback: 'Dropping it hides a request that will come back. Keep it with the difficulty recorded.' },
+          { label: 'Record the difficulty as a finding: the request may have no outcome behind it.', correct: true, was: ['Record the difficulty as a finding: the request may have no outcome behind it, which is worth knowing.'], feedback: 'Inventing an outcome to complete the table manufactures a justification. The gap is a real and useful result.' },
+          { label: 'Write the most plausible outcome you can, so that the table is complete.', was: ['Write the most plausible outcome so the table is complete.'], feedback: 'That is a fabricated need, and it will be quoted later as though someone wanted it.' },
+          { label: 'Drop the request from the list, since it cannot be turned into a need.', was: ['Drop the request from the list.'], feedback: 'Dropping it hides a request that will come back. Keep it with the difficulty recorded.' },
         ],
         repair: 'Fill the hard-outcomes box in step 3 with any request you could not convert and why, then record it in step 5.',
         recheck: 'Unconvertible requests are kept with the reason, not silently completed.',
@@ -688,6 +741,15 @@ export const guided04: Record<string, Guided> = {
       creator: 'Your creator reads the needs and the evidence column. The assumptions and the unconvertible requests are the most informative entries.',
       next: 'Open Your work and choose Ready for review. The next lesson writes a value proposition for your strongest need and states what it costs.',
     },
+    transfer: {
+      scenario: 'Made-up case: A community garden’s committee asks for “a members’ group chat so people stop leaving the gates open”. Separately, one member asks for “a nicer website”. There is no research with members yet.',
+      prompt: 'Rewrite each request as a need with no solution in it, or record why you cannot. Mark its evidence status and explain one alternative response.',
+      anchors: {
+        weak: 'Keeps the solution inside the need (“members need a group chat so that…”), writes a circular so-that clause, or invents an outcome for “a nicer website”.',
+        adequate: 'Writes a solution-free need (a member needs to know the gate rule at the moment of leaving, so that the garden stays secure), records that “a nicer website” has no clear outcome yet, labels both assumptions from requests, and names an alternative such as a sign on the gate.',
+        strong: 'As adequate, plus a question for the committee about what has actually happened with the gates, and notes whose need it is (the committee’s or the members’) and who else is affected.',
+      },
+    },
   },
   'm04-l07-v1': {
     route: textRoute,
@@ -697,7 +759,7 @@ export const guided04: Record<string, Guided> = {
       ] },
       { id: 'baseline', title: 'What people do today', fields: [
         { id: 'need-chosen', label: 'Your strongest need, copied with its evidence mark', kind: 'long' },
-        { id: 'baseline', label: 'What people actually do today, including doing nothing', kind: 'long', hint: 'Describe the workaround accurately. It is your real competitor.', example: 'Example (made up): she texts a friend who took the class last year, or turns up and borrows an apron from the studio.' },
+        { id: 'baseline', label: 'What people actually do today, including doing nothing, marked observed or assumed', kind: 'long', sensitive: true, hint: 'Describe the workaround accurately. It is your real competitor. Summarise anything from sessions without names; without sessions, mark it assumed.', example: 'Example (made up): she texts a friend who took the class last year, or turns up and borrows an apron from the studio.' },
       ] },
       { id: 'proposition', title: 'The proposition', fields: [
         { id: 'who-for', label: 'Who it is for', kind: 'short' },
@@ -746,10 +808,10 @@ export const guided04: Record<string, Guided> = {
           material: 'A supplied proposal from the same made-up project: replace the printed materials sheet at reception with a link in the confirmation email, because it is cheaper to keep up to date.',
           question: 'Which cost is most easily missed and most important to record?',
           options: [
-            { label: 'The cost to people who do not use email or do not have a phone with them, who previously got the sheet at reception.', correct: true, feedback: 'Removing the old route disadvantages a group that used it. That cost is invisible in the proposal because those people are not the ones being designed for.' },
-            { label: 'The cost to the organisation of writing the email content.', feedback: 'Real and small, and it is the cost the organisation will notice by itself.' },
-            { label: 'The cost to the reader of opening an email.', feedback: 'Worth noting and minor compared with losing the only route you had.' },
-            { label: 'There is no cost: the proposal is cheaper and more current.', feedback: 'Cheaper for the studio, and the saving is paid by whoever relied on the sheet.' },
+            { label: 'People without email or a phone to hand, who used to get the sheet at reception.', correct: true, was: ['The cost to people who do not use email or do not have a phone with them, who previously got the sheet at reception.'], feedback: 'Removing the old route disadvantages a group that used it. That cost is invisible in the proposal because those people are not the ones being designed for.' },
+            { label: 'The organisation’s cost of writing and updating the email content every term.', was: ['The cost to the organisation of writing the email content.'], feedback: 'Real and small, and it is the cost the organisation will notice by itself.' },
+            { label: 'The reader’s cost of finding, opening and reading one more email before class.', was: ['The cost to the reader of opening an email.'], feedback: 'Worth noting and minor compared with losing the only route you had.' },
+            { label: 'No real cost: the proposal is both cheaper to run and easier to keep current.', was: ['There is no cost: the proposal is cheaper and more current.'], feedback: 'Cheaper for the studio, and the saving is paid by whoever relied on the sheet.' },
           ],
           then: 'Write your own third column the same way: who used the old route, and what happens to them.',
         },
@@ -766,9 +828,9 @@ export const guided04: Record<string, Guided> = {
       {
         question: 'Your response genuinely helps readers. Is that enough to justify building it?',
         options: [
-          { label: 'No. Helping is necessary and not sufficient: a cheaper response, or the existing workaround, may serve the need well enough.', correct: true, feedback: 'The comparison is against the baseline and the alternatives, not against nothing. Helping while being the wrong thing to build is common.' },
-          { label: 'Yes: user benefit is the point of design work.', feedback: 'Benefit at any cost, ignoring who pays and what already works, is how effort goes into things nobody needed.' },
-          { label: 'Yes, provided the organisation can afford it.', feedback: 'Affordability is one cost among several, and it says nothing about whether the workaround already suffices.' },
+          { label: 'Helping is necessary, not sufficient: a cheaper option may serve well enough.', correct: true, was: ['No. Helping is necessary and not sufficient: a cheaper response, or the existing workaround, may serve the need well enough.'], feedback: 'The comparison is against the baseline and the alternatives, not against nothing. Helping while being the wrong thing to build is common.' },
+          { label: 'Yes: benefit to the people using it is the whole point of design work.', was: ['Yes: user benefit is the point of design work.'], feedback: 'Benefit at any cost, ignoring who pays and what already works, is how effort goes into things nobody needed.' },
+          { label: 'It is, provided the organisation can afford to build and maintain it.', was: ['Yes, provided the organisation can afford it.'], feedback: 'Affordability is one cost among several, and it says nothing about whether the workaround already suffices.' },
         ],
         repair: 'Reread your why-this line in step 3. If it does not compare against the baseline and at least one alternative, rewrite it and record the change in step 5.',
         recheck: 'The proposition compares rather than asserts.',
@@ -776,9 +838,9 @@ export const guided04: Record<string, Guided> = {
       {
         question: 'Your baseline says “currently there is no way to do this.” What is likely wrong?',
         options: [
-          { label: 'People almost always have a workaround, and it is the thing your response actually has to beat.', correct: true, feedback: 'An empty baseline makes any proposal look necessary. The workaround is usually fast, trusted, and already in place.' },
-          { label: 'Nothing, if the feature genuinely does not exist yet.', feedback: 'The feature not existing is not the same as the need going unmet. People solve it some other way.' },
-          { label: 'It is fine as long as research confirmed it.', feedback: 'Research rarely confirms an absence of coping behaviour; it usually reveals more of it.' },
+          { label: 'It hides the workaround people already use, which your response has to beat.', correct: true, was: ['People almost always have a workaround, and it is the thing your response actually has to beat.'], feedback: 'An empty baseline makes any proposal look necessary. The workaround is usually fast, trusted, and already in place.' },
+          { label: 'Nothing, if the feature itself genuinely does not exist anywhere yet.', was: ['Nothing, if the feature genuinely does not exist yet.'], feedback: 'The feature not existing is not the same as the need going unmet. People solve it some other way.' },
+          { label: 'It is fine as long as earlier research confirmed that nobody copes today.', was: ['It is fine as long as research confirmed it.'], feedback: 'Research rarely confirms an absence of coping behaviour; it usually reveals more of it.' },
         ],
         repair: 'Rewrite your baseline in step 2 to describe what people actually do, including asking someone or doing nothing, then record it in step 5.',
         recheck: 'The baseline names at least one existing workaround.',
@@ -786,9 +848,9 @@ export const guided04: Record<string, Guided> = {
       {
         question: 'You listed “must work on mobile” as a constraint. Is it?',
         options: [
-          { label: 'Probably a decision rather than a constraint; if it could be changed by someone deciding, mark it changeable and say what changing it would require.', correct: true, feedback: 'The distinction matters because constraints stop conversation and preferences should not. Marking it honestly keeps the option visible.' },
-          { label: 'Yes: most readers are on mobile, so it cannot change.', feedback: 'That is a strong reason for the decision, which is what makes it a decision.' },
-          { label: 'No: nothing is truly fixed, so the list is meaningless.', feedback: 'Some things genuinely are fixed within your horizon, such as a legal requirement or a budget already spent.' },
+          { label: 'Probably a decision: mark it changeable and say what changing it would take.', correct: true, was: ['Probably a decision rather than a constraint; if it could be changed by someone deciding, mark it changeable and say what changing it would require.'], feedback: 'The distinction matters because constraints stop conversation and preferences should not. Marking it honestly keeps the option visible.' },
+          { label: 'Yes, because most readers are on phones, so it can never be changed.', was: ['Yes: most readers are on mobile, so it cannot change.'], feedback: 'That is a strong reason for the decision, which is what makes it a decision.' },
+          { label: 'No, because nothing is truly fixed, so a constraint list means nothing.', was: ['No: nothing is truly fixed, so the list is meaningless.'], feedback: 'Some things genuinely are fixed within your horizon, such as a legal requirement or a budget already spent.' },
         ],
         repair: 'Go through your constraint list in step 5 and mark each fixed or changeable, adding what changing it would take, then record the change.',
         recheck: 'Every constraint carries a mark and a reason.',
@@ -799,6 +861,15 @@ export const guided04: Record<string, Guided> = {
       external: 'Nothing here needs a file, and no invented market figures or demand numbers belong in it.',
       creator: 'Your creator reads the baseline and the third cost column. Those two show whether the proposition was tested against reality.',
       next: 'Open Your work and choose Ready for review. The last lesson defines the smallest build that could change your decision.',
+    },
+    transfer: {
+      scenario: 'Made-up case: A farmers’ market wants an online pre-order page so stallholders know how much bread to bake. Today regular customers text stallholders directly, and everyone else buys whatever is left on the day. The market has no staff for the website beyond one volunteer.',
+      prompt: 'Is a pre-order page worth building now? Compare it with today’s baseline, name who pays, explain your reasoning, and say what evidence would change your decision.',
+      anchors: {
+        weak: 'Says it helps customers so it should be built, describes the baseline as “nothing”, or lists no costs.',
+        adequate: 'Describes the texting workaround and its advantages, compares the page with it and with a cheaper option such as a shared order sheet, and names costs to customers, the volunteer and people without smartphones who rely on buying on the day.',
+        strong: 'As adequate, plus: treats the single volunteer as a real constraint, separate from preferences; names evidence that would change the decision, such as how much bread goes unsold; and accepts “do not build yet” as a valid outcome.',
+      },
     },
   },
   'm04-l08-v1': {
@@ -819,7 +890,7 @@ export const guided04: Record<string, Guided> = {
       ] },
       { id: 'boundary', title: 'What this cannot tell you', fields: [
         { id: 'boundary', label: 'The questions this build cannot answer, and which module addresses each', kind: 'long' },
-        { id: 'ethics', label: 'If any real person is involved: what you will tell them, and what you will not collect', kind: 'long', hint: 'Leave this if nobody else is involved.' },
+        { id: 'ethics', label: 'If any real person is involved: what you will tell them, and what you will not collect. If nobody is, say so', kind: 'long', hint: 'With no participant, write that nobody else is involved and what you would need before involving anyone. That is a complete answer.' },
       ] },
       { id: 'submit', title: 'Save', fields: [
         { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
@@ -854,9 +925,9 @@ export const guided04: Record<string, Guided> = {
           material: 'Two supplied stopping rules for the same made-up card test. Rule A: “If attendees seem better prepared, continue.” Rule B: “If at least twelve of the next twenty bookers arrive with the listed items, continue; if six to eleven, redirect to finding out what stopped the rest; if five or fewer, stop and investigate whether preparation is the real problem.”',
           question: 'Why is B the usable rule?',
           options: [
-            { label: 'Its thresholds are concrete, so a disappointing result cannot be reinterpreted as encouraging afterwards.', correct: true, feedback: 'Written in advance with numbers, it constrains your future self. “Seem better prepared” can be read as success in almost any outcome.' },
-            { label: 'Because it uses numbers, and numbers are more scientific.', feedback: 'Numbers alone prove nothing. What matters is that the thresholds were fixed before the result arrived.' },
-            { label: 'Because twenty bookers is a statistically valid sample.', feedback: 'It is not, and it does not need to be. This is a decision rule for your own work, not a claim about a population.' },
+            { label: 'Its thresholds are fixed in advance, so a poor result cannot be reread as good.', correct: true, was: ['Its thresholds are concrete, so a disappointing result cannot be reinterpreted as encouraging afterwards.'], feedback: 'Written in advance with numbers, it constrains your future self. “Seem better prepared” can be read as success in almost any outcome.' },
+            { label: 'Because it uses numbers, and numbers make any decision rule more scientific.', was: ['Because it uses numbers, and numbers are more scientific.'], feedback: 'Numbers alone prove nothing. What matters is that the thresholds were fixed before the result arrived.' },
+            { label: 'Because twenty bookers is a statistically valid sample for a studio this size.', was: ['Because twenty bookers is a statistically valid sample.'], feedback: 'It is not, and it does not need to be. This is a decision rule for your own work, not a claim about a population.' },
             { label: 'B is worse, because it might stop a promising direction on a small sample.', feedback: 'That risk is real and it is why the rule has a redirect band. Without any rule, nothing ever stops.' },
           ],
           then: 'Write your own three bands now, before building, and make them concrete enough to hold you to them.',
@@ -876,9 +947,9 @@ export const guided04: Record<string, Guided> = {
       {
         question: 'Is the smallest build the first version of your product?',
         options: [
-          { label: 'No. If it is, it is a release plan: with no stated uncertainty and no stopping rule it cannot fail, so it cannot inform anything.', correct: true, feedback: 'The build exists to resolve one assumption. A first version exists to be used, which is a different purpose with different content.' },
-          { label: 'Yes: it is the minimum you would be willing to release.', feedback: 'Willingness to release is about quality and scope. This is about which uncertainty you are resolving.' },
-          { label: 'Yes, provided you gather feedback afterwards.', feedback: 'Feedback on a release tells you about the release. It rarely isolates the assumption you were unsure about.' },
+          { label: 'A different thing: it tests one assumption, while a first version is for use.', correct: true, was: ['No. If it is, it is a release plan: with no stated uncertainty and no stopping rule it cannot fail, so it cannot inform anything.'], feedback: 'The build exists to resolve one assumption. A first version exists to be used, which is a different purpose with different content.' },
+          { label: 'Yes, in practice: it is the minimum version you would be willing to release.', was: ['Yes: it is the minimum you would be willing to release.'], feedback: 'Willingness to release is about quality and scope. This is about which uncertainty you are resolving.' },
+          { label: 'It is, provided you gather feedback from users after it has been released.', was: ['Yes, provided you gather feedback afterwards.'], feedback: 'Feedback on a release tells you about the release. It rarely isolates the assumption you were unsure about.' },
         ],
         repair: 'Reread your build in step 2. If it resembles a first version, cut it to the smallest thing that tests the riskiest assumption and record what you removed in step 5.',
         recheck: 'Every element of the build is justified by the assumption it tests.',
@@ -886,9 +957,9 @@ export const guided04: Record<string, Guided> = {
       {
         question: 'Why write the stopping rule before building rather than after the result?',
         options: [
-          { label: 'Because afterwards almost any result can be read as encouraging, and the rule stops that.', correct: true, feedback: 'It is a commitment made while you are still able to be impartial. Written after, it is a justification for what you already want.' },
-          { label: 'To save time when the results arrive.', feedback: 'Time is not the point. The point is that your judgement changes once you are invested in the outcome.' },
-          { label: 'It is a formality that funders expect.', feedback: 'It is a discipline for your own decision-making, whether or not anyone else reads it.' },
+          { label: 'Afterwards, almost any result can be read as encouraging; the rule prevents that.', correct: true, was: ['Because afterwards almost any result can be read as encouraging, and the rule stops that.'], feedback: 'It is a commitment made while you are still able to be impartial. Written after, it is a justification for what you already want.' },
+          { label: 'To save time later, because the analysis is already planned when results arrive.', was: ['To save time when the results arrive.'], feedback: 'Time is not the point. The point is that your judgement changes once you are invested in the outcome.' },
+          { label: 'Funders and managers usually expect to see one, so it is a necessary formality.', was: ['It is a formality that funders expect.'], feedback: 'It is a discipline for your own decision-making, whether or not anyone else reads it.' },
         ],
         repair: 'If any band in step 3 is vague, rewrite it with a concrete threshold, and record the change in step 5.',
         recheck: 'All three bands are concrete and were written before the build.',
@@ -896,11 +967,11 @@ export const guided04: Record<string, Guided> = {
       {
         question: 'Your build will involve twenty real people at the studio. What must be true?',
         options: [
-          { label: 'They know what is happening, agree to it, and you collect nothing about them you do not need.', correct: true, feedback: 'A test involving real people is research, however informal, and consent and data minimisation apply to it.' },
+          { label: 'They know what is happening, agree to it, and you collect only what you need.', correct: true, was: ['They know what is happening, agree to it, and you collect nothing about them you do not need.'], feedback: 'A test involving real people is research, however informal, and consent and data minimisation apply to it.' },
           { label: 'Nothing special: they are customers receiving a card, not research participants.', feedback: 'You are observing their behaviour to answer a question. That is what makes it research regardless of the label.' },
-          { label: 'Only that the studio owner agrees.', feedback: 'The owner can permit the activity on their premises. They cannot consent on behalf of the people you are observing.' },
+          { label: 'Only that the studio owner has agreed to the test happening on the premises.', was: ['Only that the studio owner agrees.'], feedback: 'The owner can permit the activity on their premises. They cannot consent on behalf of the people you are observing.' },
         ],
-        repair: 'Fill the ethics box in step 4 with what you will tell people and what you will not collect, then record the change in step 5.',
+        repair: 'Fill the ethics box in step 4 with what you will tell people and what you will not collect, or, if nobody else is involved, say so and what you would need first. Record the change in step 5.',
         recheck: 'If real people are involved, the record says what they are told and what is collected.',
       },
     ],
@@ -909,6 +980,15 @@ export const guided04: Record<string, Guided> = {
       external: 'Nothing here needs a file. If you build something physical, keep it and name it in Your work.',
       creator: 'Your creator reads the stopping rule and the boundary. A stopping rule written before the build is the part worth his attention.',
       next: 'Open Your work and choose Ready for review. This closes the module; your assumptions and stopping rule carry into the research modules.',
+    },
+    transfer: {
+      scenario: 'Made-up case: A neighbourhood tool library plans an online booking system with reminders, a waiting list and payments. Its riskiest assumption is that members would book ahead at all; today everyone just turns up. It has a paper sign-up sheet and a noticeboard.',
+      prompt: 'Describe the smallest build that would test that assumption, and write its continue, redirect and stop rules before any result. Explain why each element is needed.',
+      anchors: {
+        weak: 'Proposes a cut-down booking app as version one, or writes a rule such as “continue if members seem interested” with no thresholds.',
+        adequate: 'Proposes a minimal test, such as a “book a slot” column on the paper sheet for two weeks, ties each element to the assumption, and writes concrete continue, redirect and stop thresholds before starting.',
+        strong: 'As adequate, plus a boundary: what the test cannot show (demand at scale, willingness to pay), how anyone involved is told what is happening, and that nothing beyond what the test needs is collected.',
+      },
     },
   },
 };

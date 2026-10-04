@@ -48,20 +48,20 @@ export const module3: Lesson[] = [
     areas: [1, 8],
     title: "A type scale that survives the screen",
     objective:
-      "Produce a five-step type scale with stated sizes, weights and uses, and show it holding its hierarchy at two widths without hard-coding a pixel size for every element.",
+      "Produce a five- or six-step type scale with stated sizes, weights and uses, and specify how it keeps its hierarchy at a narrow width and with text at 200 per cent, without fixing every element at a pixel size.",
     bringForward:
       "The three screens and workshop flow you produced in Product Design Foundations. You will re-typeset one of those screens rather than starting a new design.",
     why: "You already set type well on a page you control. A screen does not stay the size you designed it at, and the reader may have enlarged the text before your design ever loaded.",
     teach: [
       "A type scale is a short, deliberate list of sizes you allow yourself, each with a role. Five or six steps is usually enough for a product screen: a page title, a section heading, body text, a supporting line and a small label. The discipline is not the arithmetic of the ratio; it is refusing the sixth size when a screen feels crowded, because every extra size makes hierarchy harder to read, not easier.",
       "Hierarchy is a comparison, not an absolute. A heading reads as a heading because it differs from what surrounds it in size, weight, spacing or colour. That means you can often strengthen a hierarchy by making the body text calmer rather than making the heading bigger, which matters on a small screen where a bigger heading costs you the content itself.",
-      "Screen type has one constraint print does not: the reader controls it. A person may set a larger default text size in their browser or phone, and a design that hard-codes every size in pixels can ignore that setting or break when it is honoured. Sizing text in relative units, so that a chosen scale multiplies the reader's own base size, keeps your hierarchy and their preference at the same time.",
+      "Screen type has one constraint print does not: the reader controls it. A person may set a larger default text size in their browser or phone, and a design that hard-codes every size in pixels can ignore that setting or break when it is honoured. Sizing text in relative units, so that a chosen scale multiplies the reader's own base size, keeps your hierarchy and their preference at the same time. A paper drawing can specify what should happen when the column narrows or the text doubles; only a browser shows what actually happens, so label which one you have.",
       "Weight and case do work that size cannot. A heavier weight separates a label from a value without adding height, which is how dense interfaces stay legible. All-capitals is a decision with a cost: it removes word shape, slows reading of anything longer than two or three words, and is read letter-by-letter by some screen readers when abbreviations are involved. Use it for short labels, not for sentences.",
     ],
     misconception:
       "“A bigger heading means a stronger hierarchy.” Not on a narrow screen. If the title grows until it wraps onto three lines and pushes the first paragraph below the fold, the reader now sees only a large phrase and no content, and the page reads as less organised, not more. Contrast in weight and space is usually the cheaper instrument.",
     example:
-      "A workshop detail screen designed with eight sizes was rebuilt with five: 32/24/16/14/12. The title dropped from 40 to 32 and moved to a heavier weight, the two “supporting” sizes were merged into one 14, and the metadata row became 12 in a heavier weight instead of a lighter grey. At 390 px wide the title now holds one line, the date and price line is readable at arm's length, and the section headings are still obviously headings — with three fewer sizes to maintain.",
+      "Made-up example: a workshop detail screen designed with eight sizes was rebuilt with five: 32/24/16/14/12. The title dropped from 40 to 32 and moved to a heavier weight, the two “supporting” sizes were merged into one 14, and the metadata row became 12 in a heavier weight instead of a lighter grey. At 390 px wide the title now holds one line, the date and price line is readable at arm's length, and the section headings are still obviously headings — with three fewer sizes to maintain.",
     steps: [
       {
         minutes: 20,
@@ -81,7 +81,7 @@ export const module3: Lesson[] = [
       {
         minutes: 25,
         title: "Test the two hard cases",
-        text: "Redraw or re-render the same screen at roughly 390 px wide, then again with the base text size increased by about 150 per cent. Record exactly what breaks: wrapping, truncation, overlap, a control pushed off screen.",
+        text: "First watch real behaviour: open a real listing page on a phone or in a narrow browser window and enlarge its text to 200 per cent, noting what re-wraps and what is cut off. Then letter your own screen at true size in a column about 390 px wide, and again with every text step doubled, and label both drawings as specifications. Record exactly what breaks: wrapping, truncation, overlap, a control pushed off screen.",
       },
       {
         minutes: 15,
@@ -90,9 +90,9 @@ export const module3: Lesson[] = [
       },
     ],
     freeToolPath:
-      "Paper and a ruler are sufficient: draw the scale as a labelled ladder and re-letter the screen at two widths. If you prefer to see real reflow, a single local HTML file with a few CSS rules using rem units shows the enlarged-text case honestly, and needs no account, install or design tool.",
+      "Paper and a ruler are enough for the scale and for specifying the narrow and 200 per cent versions; label those drawings as specifications, because paper cannot reflow. To see real behaviour, narrow a real web page and enlarge its text in your browser. A single local HTML file using rem units is an optional way to test your own screen, and needs no account, install or design tool.",
     deliverable:
-      "A type scale table of five or six steps with size, weight and job; one screen re-typeset with it; the same screen at narrow width and at enlarged text; and a short note of what broke.",
+      "A type scale table of five or six steps with size, weight and job; one screen re-typeset with it; the same screen at narrow width and at 200 per cent text, each labelled observed or specified; and a short note of what broke.",
     check: [
       {
         question: "Why size text relative to the reader's base size?",
@@ -114,7 +114,7 @@ export const module3: Lesson[] = [
     rubric: [
       "The scale is explicit and each step has a stated job",
       "Hierarchy holds at narrow width",
-      "Enlarged text was actually tested and reported",
+      "Enlarged text was checked, with the method stated",
       "Reduction is reasoned, not merely tidy",
     ],
     criteria: [
@@ -125,7 +125,7 @@ export const module3: Lesson[] = [
         levels: [
           "No scale is stated; sizes were chosen per element.",
           "A list of sizes exists but some steps have no stated job, or the screen uses sizes absent from the table.",
-          "Five or six steps, each with a size, weight and job, and the screen uses only those steps.",
+          "A written scale (five or six steps here; an existing system may justify more) giving each step's size, weight and the element it is for, and every text element on the screen uses a listed step.",
           "As adequate, and the write-up explains why a candidate step was rejected and what would justify adding it back.",
         ],
         remediation:
@@ -140,7 +140,7 @@ export const module3: Lesson[] = [
         levels: [
           "No narrow version was produced.",
           "A narrow version exists but headings and body text are hard to tell apart, or the primary action is not visible.",
-          "The narrow version keeps a readable distinction between levels and the primary action remains reachable.",
+          "At about 320–390 px wide (a phone screenshot of a real page, a working file, or a true-size paper specification), the title, primary action and first line of content are visible without sideways scrolling, and headings stay distinct from body text.",
           "As adequate, and the design changes deliberately at narrow width — for example a step drops one size or a label moves — with the reason recorded.",
         ],
         remediation:
@@ -149,17 +149,17 @@ export const module3: Lesson[] = [
           "The narrow rendering plus a one-line note of which variable fixed the hierarchy.",
       },
       {
-        criterion: "Enlarged text was actually tested and reported",
+        criterion: "Enlarged text was checked, with the method stated",
         evidence:
-          "A second rendering at roughly 150 per cent text size with specific named breakages, or an explicit statement that nothing broke and how that was checked.",
+          "A rendering at 200 per cent text size, observed on a real page or working file or specified on paper and labelled as such, with specific named breakages, or a statement that nothing broke and how that was checked.",
         levels: [
-          "Enlarged text was not tested.",
-          "It is claimed to work but no rendering or method is shown.",
-          "The enlarged rendering is shown and breakages are named specifically.",
+          "Enlarged text was not considered.",
+          "It is claimed to work but no rendering or method is shown, or a paper drawing is presented as a test result.",
+          "The 200 per cent rendering names specific breakages (or states none) and says whether it was observed in a browser or specified on paper.",
           "As adequate, and at least one breakage is repaired with the repair explained.",
         ],
         remediation:
-          "Re-run the enlarged case and write the breakages as concrete sentences — “the price overlaps the button”, “the date truncates to three characters” — not as “it looks cramped”. Then fix exactly one.",
+          "Redo the 200 per cent case, labelled observed or specified, and write the breakages as concrete sentences — “the price overlaps the button”, “the date truncates to three characters” — not as “it looks cramped”. Then fix exactly one.",
         recheck: "The enlarged rendering, the breakage list and one repair.",
       },
       {
@@ -169,7 +169,7 @@ export const module3: Lesson[] = [
         levels: [
           "Sizes were changed with no reasoning recorded.",
           "Reasoning is aesthetic only — tidier, cleaner, more modern.",
-          "Each merge names the distinction lost and accepts or rejects that loss for this screen.",
+          "Each merge of old sizes (or, for an existing system, each step) names the distinction it gives up or carries and why that is acceptable here; if nothing merged, the record says why.",
           "As adequate, and one merge is identified as risky with a way to check it against a reader rather than by preference.",
         ],
         remediation:
@@ -215,7 +215,7 @@ export const module3: Lesson[] = [
     misconception:
       "“Generous line height always reads better.” Past a point it does the opposite: the lines stop cohering into a paragraph and the block reads as a list of separate sentences. Very loose leading also pushes content below the fold on a phone, which costs the reader more than the extra air gains them.",
     example:
-      "A workshop description set at 16 px across a full 1280 px container ran to about 140 characters a line. Readers testing the page kept re-reading lines. Constraining the text column to roughly 65 characters and setting line height to 1.5 fixed the re-reading without changing the font, the size or the colour. On the phone the measure was already narrow, so the same block needed line height nearer 1.4 and a larger gap between paragraphs instead.",
+      "Made-up example: a workshop description set at 16 px across a full 1280 px container ran to about 140 characters a line, and two people asked to read it kept re-reading lines. Constraining the text column to roughly 65 characters (about 520 px at that size) and setting line height to 1.5 addressed the likely cause without changing the font, the size or the colour; whether the re-reading stopped is the next thing to check. On the phone the measure was already narrow, so the same block needed line height nearer 1.4 and a larger gap between paragraphs instead.",
     steps: [
       {
         minutes: 20,
@@ -235,7 +235,7 @@ export const module3: Lesson[] = [
       {
         minutes: 30,
         title: "Stress it",
-        text: "Render the block at about 390 px wide and again at enlarged text with your worst-case strings. Record every place the reading breaks down, including anything that now scrolls when it did not before.",
+        text: "Letter the block at true size in a column about 390 px wide and again with the text at 200 per cent, using your worst-case strings, and label both as specifications. Then look at a real page with long text on a phone or in a narrow window at 200 per cent to see what a browser does. Record every place the reading breaks down, including anything that would be cut off or need sideways scrolling.",
       },
       {
         minutes: 15,
@@ -244,9 +244,9 @@ export const module3: Lesson[] = [
       },
     ],
     freeToolPath:
-      "On paper, rule a column to your chosen measure and letter one real paragraph inside it; count characters on three lines and average them. A local HTML file with a max-width and a line-height ratio is the faster route and lets you resize the window to see the measure change, but it is optional.",
+      "On paper, rule a column to your chosen measure and letter one real paragraph inside it; count characters on three lines and average them. Label paper results as specifications, because paper cannot show what a browser cuts off. A local HTML file with a max-width and a line-height ratio is the faster route and lets you resize the window to see the measure change, but it is optional.",
     deliverable:
-      "One content block with stated measure, line height and block spacing values, a worst-case content list, narrow and enlarged renderings, and a reason for each value.",
+      "One content block with stated measure, line height and block spacing values, a worst-case content list, narrow and 200 per cent renderings labelled observed or specified, and a reason for each value.",
     check: [
       {
         question: "Why is placeholder text a poor test of readability?",
@@ -279,7 +279,7 @@ export const module3: Lesson[] = [
         levels: [
           "No measure is stated.",
           "A width is stated but no character count was taken.",
-          "A character count and a maximum width are both recorded and sit in a defensible range.",
+          "A counted characters-per-line figure, averaged over three full lines of real text, and the maximum width that produces it, inside roughly 45–75 characters or with a stated reason for falling outside.",
           "As adequate, and the write-up explains why this content justifies the top or bottom of the range rather than the middle.",
         ],
         remediation:
@@ -293,7 +293,7 @@ export const module3: Lesson[] = [
         levels: [
           "Neither value is stated.",
           "Values are stated but unrelated to the measure, or the paragraph gap does not exceed the line gap.",
-          "Both are stated, the paragraph gap clearly wins, and the leading is justified by the line length.",
+          "Body line height is stated as a ratio, the paragraph gap is stated and visibly larger than the line gap, and one sentence links the leading to the measure.",
           "As adequate, and different leading is set for body, heading and small text with the reason for each.",
         ],
         remediation:
@@ -308,7 +308,7 @@ export const module3: Lesson[] = [
         levels: [
           "Placeholder text only.",
           "Some real content, but no deliberately difficult strings.",
-          "A worst-case list is present and visibly used in the rendering.",
+          "A list of the real strings used, with at least one long title, a full name, a string with numbers or currency and an empty state, and those strings are visible in the rendering.",
           "As adequate, and one string was chosen because it is realistic for an Indian audience — a long transliterated name, a rupee amount or a second script — with what it changed.",
         ],
         remediation:
@@ -318,11 +318,11 @@ export const module3: Lesson[] = [
       {
         criterion: "Narrow and enlarged cases are reported honestly",
         evidence:
-          "Specific named failures at 390 px and at enlarged text, or a stated method showing why there were none.",
+          "Specific named failures at 390 px and at 200 per cent text, each labelled observed (browser or working file) or specified (paper), or a stated method showing why there were none.",
         levels: [
           "Neither case was produced.",
           "One case was produced, or failures are described only as “fine”.",
-          "Both cases are shown with specific named failures or a stated checking method.",
+          "Both cases are shown with specific named failures (or a stated check showing none), each labelled observed or specified.",
           "As adequate, and the report separates a genuine readability failure from a merely unattractive result.",
         ],
         remediation:
@@ -377,7 +377,7 @@ export const module3: Lesson[] = [
     misconception:
       "“I checked the contrast, so my colour use is accessible.” Contrast and colour-dependence are two different failures. A red error message and a green success message can both pass contrast against white and still be indistinguishable from each other to a reader with red–green colour vision deficiency, because the problem is that the hue is the only difference.",
     example:
-      "A booking list showed status as a coloured dot: green confirmed, amber pending, red cancelled. In greyscale all three dots became mid-grey circles and the list became unreadable. The repair was not a new palette but a second channel: each dot kept its colour and gained a distinct shape and the status word beside it. The colour still helps people who can use it, and no longer carries the meaning alone.",
+      "Made-up example: a booking list showed status as a coloured dot: green confirmed, amber pending, red cancelled. In greyscale all three dots became mid-grey circles and the list became unreadable. The repair was not a new palette but a second channel: each dot kept its colour and gained a distinct shape and the status word beside it. The colour still helps people who can use it, and no longer carries the meaning alone.",
     steps: [
       {
         minutes: 25,
@@ -441,7 +441,7 @@ export const module3: Lesson[] = [
         levels: [
           "No palette is stated.",
           "A palette exists but some entries have no role, or the screen uses colours outside it.",
-          "Each entry has a role and meaning, and the screen uses only those entries.",
+          "A palette table where each entry has a role, a value and a meaning, and every colour on the screen appears in the table.",
           "As adequate, and the write-up names a colour that was removed and what it had been doing implicitly.",
         ],
         remediation:
@@ -455,7 +455,7 @@ export const module3: Lesson[] = [
         levels: [
           "No greyscale check was done.",
           "A greyscale version exists but failures were not listed or not repaired.",
-          "Failures are listed and each has a second channel added.",
+          "A greyscale view of the screen plus a list of what could no longer be told apart, each with the second channel (word, shape, icon, position or lightness) that now carries it, or a stated check showing nothing depended on colour alone.",
           "As adequate, and the repaired screen is shown again in greyscale to confirm the fix rather than assuming it.",
         ],
         remediation:
@@ -469,7 +469,7 @@ export const module3: Lesson[] = [
         levels: [
           "State colours differ in hue only, with no lightness noted.",
           "Lightness is mentioned but not for the pairs that actually need separating.",
-          "Each critical pair differs in lightness and this is recorded.",
+          "Each pair of states that must be told apart is recorded with a lightness difference visible in greyscale, or measured against each other with the contrast calculator, not only a hue difference.",
           "As adequate, and one pair is deliberately given the largest separation because confusing it would be the most costly.",
         ],
         remediation:
@@ -483,7 +483,7 @@ export const module3: Lesson[] = [
         levels: [
           "Colour meanings are asserted as universal.",
           "A caveat is present but generic.",
-          "A specific meaning is named as a convention with a way to check it with a reader.",
+          "At least one specific colour meaning is named as a convention, with who might read it differently and a way to check it with a reader.",
           "As adequate, and the interface itself states the meaning in words so the convention is not load-bearing.",
         ],
         remediation:
@@ -522,15 +522,15 @@ export const module3: Lesson[] = [
       "Your palette table and recoloured screen from the previous lesson.",
     why: "“It looks readable to me” is the weakest sentence in a design review. A measured ratio is a number you can put in a handoff, defend to an engineer and re-check after someone changes a colour.",
     teach: [
-      "The minimum contrast requirement is a ratio between the lightness of text and its background. Ordinary body text needs at least 4.5:1. Large text — from around 18 point, or 14 point when bold — needs at least 3:1, because larger, thicker letterforms remain legible at lower contrast. These are floors for a wide range of readers, not targets for good design, and comfortable reading often sits well above them.",
-      "The requirement has genuine exceptions, and knowing them stops you from either over-claiming or over-correcting. Text that is purely decorative, text that is part of a logo or brand name, and text in a component that is currently inactive are not held to the ratio. An inactive control is the one designers most often get wrong in both directions: greying it out is legitimate, but if the reader cannot tell what the control would do, the problem is comprehension rather than conformance.",
+      "The minimum contrast requirement is a ratio between the lightness of text and its background. Ordinary body text needs at least 4.5:1. Large text — from 18 point (about 24 px), or 14 point (about 18.7 px) when bold — needs at least 3:1, because larger, thicker letterforms remain legible at lower contrast. A separate WCAG criterion asks for 3:1 for the parts of a control or graphic someone needs to see, such as a button's edge against the page or a focus outline. Read the calculator's ratio to two decimals and never round a fail up to a pass: 4.48 is below 4.5. These are floors for a wide range of readers, not targets for good design, and comfortable reading often sits well above them.",
+      "The requirement has genuine exceptions, and knowing them stops you from either over-claiming or over-correcting. Text that is purely decorative, text that is part of a logo or brand name, and text in a component that is currently inactive are not held to the ratio. An inactive control is the one designers most often get wrong in both directions: greying it out is legitimate, but if the reader cannot tell what the control would do, the problem is comprehension rather than conformance. The exemption settles conformance only; whether a disabled label should still be readable is a separate design decision.",
       "Measure the pair that actually renders, not the pair you intended. Text over an image, text over a gradient, semi-transparent overlays and a hover state that changes the background are all cases where the real background differs from the one in your palette. Take the worst point of the actual composite, not the average, because a caption is illegible at the point where the photograph is brightest, not on average.",
       "Contrast is a floor for legibility, not a proof of readability. A screen can pass every ratio and still be exhausting: too-long lines, insufficient leading, an over-saturated background that vibrates against the text, or an all-capitals paragraph. Report the ratio as one piece of evidence alongside your own reading test, and never describe a passing ratio as an accessibility outcome for real users.",
     ],
     misconception:
       "“Grey placeholder text inside a form field is fine because it is only a hint.” Placeholder text is real text that a reader must read to know what to type, and it is not a decorative or inactive case. If it is too faint to read it fails, and the more robust fix is usually a visible label rather than a darker hint.",
     example:
-      "A workshop card used mid-grey #999999 body text on white — about 2.8:1, below the 4.5:1 floor. That grey also fails the 3:1 large-text threshold, so enlarging it alone cannot repair the contrast. The designer darkened the heading color until a new measurement exceeded 3:1, and moved body text to a darker grey that measures about 7:1. The visual softness the designer wanted was preserved exactly where it was legitimate, and removed where it was not.",
+      "Made-up example: a workshop card used mid-grey #999999 for its heading and body text on white. The calculator gives 2.85:1: below the 4.5:1 floor for body text and below the 3:1 large-text floor too, so enlarging that grey cannot repair it. The designer kept a soft grey only where the lower threshold applies: the 24 px regular heading moved to #8a8a8a, which measures 3.45:1 and passes as large text, and the 14 px body text moved to #595959, which measures 7.00:1. The softness survived where it was allowed and went where it was not.",
     steps: [
       {
         minutes: 25,
@@ -565,13 +565,13 @@ export const module3: Lesson[] = [
     check: [
       {
         question:
-          "Your heading is 24 px and measures 3.4:1. Does it pass?",
+          "Your 24 px regular heading is #8a8a8a on white, which measures 3.45:1. Does it pass?",
         answer:
-          "Yes, against the large-text threshold of 3:1, provided it genuinely qualifies as large text at that size and weight. Record which threshold you applied and why, because the same colour on 14 px body text would fail.",
+          "Yes, against the large-text threshold of 3:1, because 24 px regular is 18 point and qualifies as large text. Record which threshold you applied and why, because the same colour on 14 px body text would fail 4.5:1.",
       },
       {
         question:
-          "A disabled button's label measures 2:1. Is that a defect to fix?",
+          "A disabled button's label, #b5b5b5 on white, measures 2.05:1. Is that a defect to fix?",
         answer:
           "Not a contrast failure — inactive components are excepted. It may still be a design problem if the reader cannot tell what the control is or why it is unavailable. Say which of the two you are claiming rather than blurring them.",
       },
@@ -605,7 +605,7 @@ export const module3: Lesson[] = [
       {
         criterion: "The correct threshold is applied per element",
         evidence:
-          "Each row names the threshold used and, for large text, the size and weight that justify it.",
+          "Each row names the threshold used (4.5:1, 3:1 for large text, or 3:1 for a non-text part of a control) and, for large text, the size and weight that justify it.",
         levels: [
           "No thresholds are recorded.",
           "One threshold is applied to everything, or large text is claimed without size and weight.",
@@ -623,7 +623,7 @@ export const module3: Lesson[] = [
         levels: [
           "Failures were not repaired.",
           "All failures were repaired by maximising contrast, losing the palette's character.",
-          "Repairs vary by situation and each has a stated reason.",
+          "Repairs vary by situation and each has a stated reason, or, where nothing failed, the lowest measured ratio is named.",
           "As adequate, and one colour is deliberately retained where it legitimately passes, with the threshold that makes that true.",
         ],
         remediation:
@@ -691,7 +691,7 @@ export const module3: Lesson[] = [
     misconception:
       "“Cards make a layout organised.” Cards make a layout enclosed, which is different. When everything is a card, common region no longer distinguishes anything, the screen gains borders and padding that cost vertical space on a phone, and the actual hierarchy — what matters most — becomes invisible because every item is presented as a peer.",
     example:
-      "A workshop detail screen listed date, time, location, price, instructor and materials as six evenly spaced lines, and readers kept missing the materials note. Regrouping without changing a single word: date and time drew together as one “when” group, location stood alone, price and instructor became a “details” pair, and materials moved into its own region with a shared background. Total height changed by a few pixels; the materials line stopped being missed by the two people asked to find it — which is a signal, not a finding.",
+      "Made-up example: a workshop detail screen listed date, time, location, price, instructor and materials as six evenly spaced lines, and readers kept missing the materials note. Regrouping without changing a single word: date and time drew together as one “when” group, location stood alone, price and instructor became a “details” pair, and materials moved into its own region with a shared background. Total height changed by a few pixels; the materials line stopped being missed by the two people asked to find it — which is a signal, not a finding.",
     steps: [
       {
         minutes: 25,
@@ -755,7 +755,7 @@ export const module3: Lesson[] = [
         levels: [
           "No diagnosis; the screen was simply redrawn.",
           "A before image exists but mismatches are not marked.",
-          "Perceived groups are drawn and each mismatch is identified.",
+          "A marked-up before image shows the groups a first-time reader would see and numbers each place they differ from the intended grouping, or states how a match was checked.",
           "As adequate, and the diagnosis distinguishes a mismatch that misleads from one that is merely untidy.",
         ],
         remediation:
@@ -769,7 +769,7 @@ export const module3: Lesson[] = [
         levels: [
           "Every group was enclosed in a card or border by default.",
           "Tools vary but no reasoning is recorded.",
-          "Each group records its tool and why the weaker option failed.",
+          "Each group records whether space, a shared background or a border carries it, and why any weaker tool was not enough.",
           "As adequate, and at least one group was fixed with space alone where a card had previously been used.",
         ],
         remediation:
@@ -783,7 +783,7 @@ export const module3: Lesson[] = [
         levels: [
           "No counterexample.",
           "A counterexample is described in words only, or restates the principle's caveat generically.",
-          "A specific case is shown with the wrong reading it produces explained.",
+          "A drawn or screenshot case where a grouping principle works as described and still produces a wrong reading, with that wrong reading explained.",
           "As adequate, and the counterexample is drawn from your own screen rather than invented, with the repair that keeps the principle useful.",
         ],
         remediation:
@@ -797,7 +797,7 @@ export const module3: Lesson[] = [
         levels: [
           "The new grouping is asserted as correct.",
           "A vague intention to test is stated.",
-          "A specific, answerable question or five-second task is written.",
+          "A specific, answerable question or five-second task another person could attempt that would confirm or challenge the grouping.",
           "As adequate, and the question is neutral — it does not name the element you hope they find.",
         ],
         remediation:
@@ -844,7 +844,7 @@ export const module3: Lesson[] = [
     misconception:
       "“Consistent spacing means the same gap everywhere.” Uniform gaps destroy grouping — that is precisely the flat, unreadable screen from the last lesson. Consistency means the same small set of values used for the same purposes, deliberately unequal where the purposes differ.",
     example:
-      "A booking list used gaps of 6, 8, 10, 12, 13, 16, 18, 20 and 24 px, with no rule. Replacing them with a scale of 4, 8, 16, 24, 40 forced the question of what each gap was for: 8 inside a row between label and value, 16 between rows, 40 between the list and the next section. The screen became one pixel shorter overall and immediately readable as a list of items rather than a wall of text — and the engineer implementing it had five values instead of nine.",
+      "Made-up example: a booking list used gaps of 6, 8, 10, 12, 13, 16, 18, 20 and 24 px, with no rule. Replacing them with a scale of 4, 8, 16, 24, 40 forced the question of what each gap was for: 8 inside a row between label and value, 16 between rows, 40 between the list and the next section. The screen became one pixel shorter overall and, looked at again, read as a list of items rather than a wall of text — and the engineer implementing it had five values instead of nine.",
     steps: [
       {
         minutes: 20,
@@ -908,7 +908,7 @@ export const module3: Lesson[] = [
         levels: [
           "No scale; gaps remain ad hoc.",
           "A list of values with no rule or no uses.",
-          "Base unit, rule, values and uses are all stated.",
+          "A stated base unit, the rule that generates the values, and four to seven values, each with a name and a typical use.",
           "As adequate, and a value is deliberately omitted with the reason it is not needed at this density.",
         ],
         remediation:
@@ -922,7 +922,7 @@ export const module3: Lesson[] = [
         levels: [
           "No audit was done.",
           "An audit exists but off-scale values remain unexplained.",
-          "All gaps map to the scale, or an exception is named and justified.",
+          "A before count of distinct gaps and an after audit where every gap is a scale value, or each exception is named with its reason.",
           "As adequate, and the write-up identifies which merges changed the reading and which were invisible.",
         ],
         remediation:
@@ -936,7 +936,7 @@ export const module3: Lesson[] = [
         levels: [
           "No separation data.",
           "Some groups measured; failures unaddressed.",
-          "Every group is measured and any failure is repaired.",
+          "A row per group gives the inside gap and the surrounding gap, the surrounding gap is larger in every row, and any failure is repaired.",
           "As adequate, and the tightest acceptable separation is identified and justified for the densest context.",
         ],
         remediation:
@@ -950,7 +950,7 @@ export const module3: Lesson[] = [
         levels: [
           "One density applied everywhere with no reasoning.",
           "Density varies but the reason is preference.",
-          "A density choice is tied to a stated reading situation.",
+          "At least one place where density was deliberately tightened or loosened, tied to a stated reading situation: who reads it, how often and for how long.",
           "As adequate, and the cost of that choice is named — what the tighter or looser setting gives up.",
         ],
         remediation:
@@ -984,20 +984,21 @@ export const module3: Lesson[] = [
     areas: [1, 8],
     title: "Grid and layout structure that reflows",
     objective:
-      "Define a column and gutter structure for one screen, state where the layout changes and why, and show the same content at narrow, medium and wide widths.",
+      "Define a column and gutter structure for one screen, tell real reflow apart from clipping on a page that actually reflows, state where your layout changes and why, and specify the same content at narrow, medium and wide widths.",
     bringForward:
       "Your spacing scale and the regrouped screen. You will keep the content identical and change only its arrangement.",
     why: "A grid in print positions elements on a fixed page. On screen the page has no fixed size, so the grid's real job is to describe how the arrangement is allowed to change — and that is a different skill.",
     teach: [
       "A layout structure on screen is a set of columns, the gutters between them and the margins outside them, plus rules for what happens when there is more or less room. The columns are a convenience for alignment; the rules for change are the actual design. A twelve-column grid that only ever renders one way has told you nothing about behaviour.",
-      "Decide where the layout changes by watching the content, not by listing device names. Phones, tablets and laptops span a continuous range of widths and any list of device sizes is out of date on arrival. Widen the layout gradually until something reads badly — the measure grows too long, a two-column pairing becomes absurdly stretched, a control drifts far from what it controls — and put the change there. Then record what you saw, so the number has a reason attached.",
+      "Decide where the layout changes by watching the content, not by listing device names. Phones, tablets and laptops span a continuous range of widths and any list of device sizes is out of date on arrival. Use a page that really reflows — the demo in this lesson, or a real page in your browser — and widen or narrow it gradually until something reads badly — the measure grows too long, a two-column pairing becomes absurdly stretched, a control drifts far from what it controls — and put the change there. Then record what you saw, so the number has a reason attached.",
       "Reflow is a re-ordering problem as much as a resizing one. When two columns become one, something must come first, and the correct order is usually the order of the reader's task rather than the visual order of the wide layout. A sidebar of filters that sits beside a list on a wide screen may need to sit above it, or behind a control, on a narrow one — and burying the primary action below a long secondary block is the most common reflow defect.",
       "Alignment does most of the work a grid gets credit for. A consistent left edge shared by heading, body and controls gives a screen structure even with no visible columns, and a single element breaking that edge reads as an error before the reader knows why. When you check a layout, check the edges first; misalignment is more often the cause of a screen feeling wrong than the column count is.",
+      "Reflow and clipping can look alike in a sketch and behave completely differently. Reflow means the content rearranges to fit the width it has: lines re-wrap, columns stack, the page grows taller and nothing is lost. Clipping means the layout keeps a fixed width and the screen simply shows less of it: text is cut off, hidden, or reachable only by scrolling sideways. Covering part of a paper sketch shows clipping, never reflow, because paper cannot rearrange itself. Paper is where you specify the reflow you intend; a real page is where you watch it happen.",
     ],
     misconception:
       "“Design for mobile, tablet and desktop.” Those are three arbitrary samples from a continuous range, and designing only at three widths guarantees that everything between them is untested. Design the behaviour between the changes, and use specific widths only as places to check.",
     example:
-      "A workshop list was designed at 1280 px as a three-column card grid with filters in a left sidebar. Narrowing it gradually, the cards became unreadably squeezed at around 900 px, so the grid dropped to two columns there; below about 620 px the filters could no longer sit beside the list, so they moved above it as a single collapsed control, and the card grid became one column. Neither number came from a device — both came from the point at which the content stopped reading.",
+      "Made-up example: a workshop list was designed at 1280 px as a three-column card grid with filters in a left sidebar. Narrowing a working version gradually in the browser, the cards became unreadably squeezed at around 900 px, so the grid dropped to two columns there; below about 620 px the filters could no longer sit beside the list, so they moved above it as a single collapsed control, and the card grid became one column. Neither number came from a device — both came from the point at which the content stopped reading. In a fixed-width version of the same page, nothing rearranged at 900 px: the third column simply slid out of view, which is clipping.",
     steps: [
       {
         minutes: 20,
@@ -1007,7 +1008,7 @@ export const module3: Lesson[] = [
       {
         minutes: 30,
         title: "Find the change points by narrowing",
-        text: "Narrow the layout gradually. Each time the content stops reading well, record the approximate width and exactly what failed. Do not start from a list of devices.",
+        text: "Open the reflow demo in this lesson, or a real listing page in your browser. In Reflows mode, narrow it slowly from 1280 towards 320 px and record each width where the content stops reading well and exactly what failed; then switch to Clipped and 200 per cent text and note what is cut off instead. Use what you saw to estimate your own layout's change points. Do not start from a list of devices.",
       },
       {
         minutes: 30,
@@ -1022,13 +1023,13 @@ export const module3: Lesson[] = [
       {
         minutes: 15,
         title: "Record and pause",
-        text: "Save the three renderings, the change-point table with reasons, and the narrow reading order. Note any arrangement you are unsure about.",
+        text: "Save the three renderings, labelled as specifications, the change-point table with reasons, the reflow and clip you told apart, and the narrow reading order. Note any arrangement you are unsure about.",
       },
     ],
     freeToolPath:
-      "Three sheets of paper at proportional widths, with columns ruled in pencil, cover this fully. If you use a local HTML file, resizing the browser window shows the change points directly and is the honest way to find them; no design tool or account is needed.",
+      "Use the reflow demo in this lesson, or narrow a real page in your browser, to see reflow and clipping happen. Then specify your own layout on three sheets of paper at proportional widths, with columns ruled in pencil and each sheet labelled as a specification. A local HTML file is an optional way to test your own layout by resizing the window; no design tool or account is needed.",
     deliverable:
-      "A stated column, gutter and margin structure; the same content at narrow, medium and wide widths; a change-point table giving each width and the content reason; and the narrow reading order.",
+      "A stated column, gutter and margin structure; one observed reflow and one observed clip from the demo or a real page; the same content specified at narrow, medium and wide widths; a change-point table giving each width and the content reason; and the narrow reading order.",
     check: [
       {
         question: "Why not choose change points from device sizes?",
@@ -1046,12 +1047,18 @@ export const module3: Lesson[] = [
         answer:
           "No. Alignment provides most of the perceived structure. A consistent shared left edge across headings, text and controls reads as ordered even when no grid is visible.",
       },
+      {
+        question: "You cover the right half of your wide sketch with paper. Have you tested the narrow layout?",
+        answer:
+          "No. Covering shows clipping: the same fixed layout with less of it visible. A narrow layout reflows, re-wrapping and re-stacking its content into the width it has. Watch reflow in the demo or on a real page, and draw your narrow version as a specification.",
+      },
     ],
     rubric: [
       "Structure is stated in values, not sketched vaguely",
       "Change points come from content failures",
       "Reflow order follows the task",
       "Alignment is checked at every width",
+      "Reflow is told apart from clipping",
     ],
     criteria: [
       {
@@ -1071,7 +1078,7 @@ export const module3: Lesson[] = [
       {
         criterion: "Change points come from content failures",
         evidence:
-          "A table of change points where each row gives an approximate width and the specific content behaviour that failed there.",
+          "A table of change points where each row gives an approximate width, the specific content behaviour that failed there, and whether it was observed on a page that reflows or estimated for a paper layout.",
         levels: [
           "Change points are device names or absent.",
           "Widths are stated but reasons are generic.",
@@ -1079,7 +1086,7 @@ export const module3: Lesson[] = [
           "As adequate, and one change point was moved after observing the failure, with the before and after widths recorded.",
         ],
         remediation:
-          "Narrow your layout again in small steps and write the first thing that breaks at each point as an observable sentence. Replace any device-derived number with the width you actually observed.",
+          "Narrow the demo or a real page again in small steps and write the first thing that breaks at each point as an observable sentence, then estimate where your own longest content would fail. Replace any device-derived number with a width you observed or estimated from content.",
         recheck: "The change-point table with observed failures per row.",
       },
       {
@@ -1109,6 +1116,20 @@ export const module3: Lesson[] = [
         remediation:
           "Draw a vertical line down the intended left edge on each rendering and mark every element that does not meet it. Fix or justify each mark.",
         recheck: "The three marked-up renderings.",
+      },
+      {
+        criterion: "Reflow is told apart from clipping",
+        evidence:
+          "One reflow and one clip observed in the demo or on a real page, each described correctly, and a narrow specification that says which content must re-wrap or stack and which must never be cut off.",
+        levels: [
+          "Not distinguished; covering a sketch or shrinking a drawing is treated as a narrow-width test.",
+          "The terms are used, but the examples mix them up or come only from paper.",
+          "One observed reflow and one observed clip are described correctly, and the narrow specification states what must reflow.",
+          "As adequate, and the specification also says how the layout avoids sideways scrolling at 320 px and at 200 per cent text.",
+        ],
+        remediation:
+          "Open the demo, or a real page, at 320 px. Write one thing that moved or re-wrapped with nothing lost, and one thing that was cut off or needed sideways scrolling, then add a line to your narrow specification saying which of your elements must never be cut off.",
+        recheck: "The reflow and clip descriptions and the added specification line.",
       },
     ],
     portfolio:
@@ -1150,7 +1171,7 @@ export const module3: Lesson[] = [
     misconception:
       "“Tokens are for large teams.” The value appears the first time you build a second screen. Without named decisions, screen two re-derives every value by eye, drifts from screen one, and the drift is invisible until someone puts them side by side.",
     example:
-      "A first sheet listed twenty-two colours by hex with no names. Rewritten as nine role-named tokens with usage notes, it exposed three problems immediately: two hexes were doing the same job and could merge, one grey had no role at all and was deleted, and the pairing note revealed that the secondary text colour had never been checked against the raised surface — where it measured 3.1:1 and failed. The sheet found a defect the screen review had missed.",
+      "Made-up example: a first sheet listed twenty-two colours by hex with no names. Rewritten as nine role-named tokens with usage notes, it exposed three problems immediately: two hexes were doing the same job and could merge, one grey had no role at all and was deleted, and the pairing note revealed that the secondary text colour, #707070, had only been checked on the white base, where it measures 4.95:1, and never on the raised surface #ececec — where it measures 4.19:1 and fails for body text. The sheet found a defect the screen review had missed.",
     steps: [
       {
         minutes: 30,
@@ -1256,7 +1277,7 @@ export const module3: Lesson[] = [
         levels: [
           "The test was not run.",
           "The test was run but the gaps were not repaired.",
-          "Gaps are listed and each is now specified on the sheet.",
+          "Gaps are listed and each is now specified on the sheet, or the record says no gaps were found and how the test was run with the original out of sight.",
           "As adequate, and the test was run by another person rather than by you, with what they misread recorded.",
         ],
         remediation:
@@ -1303,7 +1324,7 @@ export const module3: Lesson[] = [
     misconception:
       "“The disabled state is just the default at reduced opacity.” Reducing opacity uniformly changes the background as well as the text, can produce an unpredictable composite over whatever is behind it, and often makes the label unreadable while leaving the control looking pressable. Specify a disabled state with its own tokens instead.",
     example:
-      "A primary button was specified once, in default. Building its states from the token sheet exposed four undocumented decisions: focus had no token at all, hover reused a colour that failed against the raised surface, disabled had been drawn at 40 per cent opacity so its label became unreadable, and there was no loading appearance despite the booking action taking two seconds. Four states, four gaps — none visible in the original screen.",
+      "Made-up example: a primary button was specified once, in default. Building its states from the token sheet exposed four undocumented decisions: focus had no token at all, hover reused a colour that failed against the raised surface, disabled had been drawn at 40 per cent opacity so its label became unreadable, and there was no loading appearance despite the booking action taking two seconds. Four states, four gaps — none visible in the original screen.",
     steps: [
       {
         minutes: 20,
@@ -1396,7 +1417,7 @@ export const module3: Lesson[] = [
           "No focus state, or the default was removed.",
           "A focus state exists but is identical to hover or unchecked against surfaces.",
           "Focus is distinct, tokenised and checked on each surface.",
-          "As adequate, and the focus indicator's own contrast against its adjacent colours is measured.",
+          "As adequate, and the focus indicator's own contrast against its adjacent colours is measured against the 3:1 non-text minimum.",
         ],
         remediation:
           "Specify a focus appearance that does not rely on the same signal as hover, then place the component on each surface it uses and confirm the indicator remains visible.",
@@ -1456,7 +1477,7 @@ export const module3: Lesson[] = [
     misconception:
       "“The redesign is a portfolio case study.” It is a craft artefact. A case study needs a problem, evidence about people, decisions traceable to that evidence, a test and honest measurement. A before-and-after image with no participant is a visual comparison, and presenting it as a case study is the most common way portfolios lose credibility.",
     example:
-      "A rebuilt workshop detail screen needed six values not on the token sheet — a focus colour on a dark surface, two spacing values for a dense metadata row, and three type sizes for a table. The heuristic review then found four issues, only one of which the visual refresh had addressed: the error message still appeared far from the field that caused it, which is a visibility-of-status problem no palette can fix. The write-up recorded one improvement, three unresolved issues and zero measured outcomes.",
+      "Made-up example: a rebuilt workshop detail screen needed six values not on the token sheet — a focus colour on a dark surface, two spacing values for a dense metadata row, and three type sizes for a table. The heuristic review then found four issues, only one of which the visual refresh had addressed: the error message still appeared far from the field that caused it, which is a visibility-of-status problem no palette can fix. The write-up recorded one improvement, three unresolved issues and zero measured outcomes.",
     steps: [
       {
         minutes: 30,
@@ -1520,7 +1541,7 @@ export const module3: Lesson[] = [
         levels: [
           "The screen was redesigned freely without reference to the sheet.",
           "The sheet was used but exceptions were not logged.",
-          "Every exception is logged with its purpose.",
+          "Every exception is logged with its purpose, or the log states none with how the original was kept out of sight.",
           "As adequate, and each logged exception is resolved into a token or explicitly rejected with a reason.",
         ],
         remediation:
