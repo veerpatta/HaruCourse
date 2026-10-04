@@ -1363,7 +1363,7 @@ export const guided07: Record<string, Guided> = {
             { label: 'What I wrote instead', text: 'Disabled: triggered by no date chosen, with “choose a date first” beside it, ended by choosing a date. Unavailable: triggered by the class being full, with “this class is full, see other dates”, ended by choosing another date.' },
             { label: 'What that produced', text: 'Eight rows instead of three. Focus arrived because I had to say how a keyboard user knows where she is, and the timeout arrived because I had to say what ends loading when nothing comes back.' },
           ],
-          wrongTurn: 'The wrong turn is treating disabled as a look rather than a sentence. A grey control with no explanation is read as a broken product, and it is the commonest state failure there is.',
+          wrongTurn: 'The wrong turn is treating disabled as a look rather than a sentence. A grey control with no explanation is read as a broken product, and it is a very common state failure.',
           tradeoff: 'Splitting disabled into two states means two sets of wording and two triggers to agree with whoever builds it. It is more work than one grey rule, and it is the difference between a person waiting and a person leaving.',
           uncertainty: 'Still unknown: whether the reason should sit beside the button or replace its label. That needs somebody reading it, not more thinking.',
         },
@@ -1375,10 +1375,10 @@ export const guided07: Record<string, Guided> = {
           material: 'A supplied empty screen from a made-up class-booking product. The bookings list, for someone who has never booked anything, shows the heading “Your bookings”, a large grey area and a plus icon in the corner.',
           question: 'What is the most useful thing to add first?',
           options: [
-            { label: 'A sentence saying what will appear here and the one action that produces the first item.', correct: true, feedback: 'The empty state is the first teaching this person gets. “Your bookings appear here — find a class to make your first one” gives the model and the next step in one line.' },
-            { label: 'An illustration, so the space does not look broken.', feedback: 'It fills the space and says nothing. She still does not know what this list is for or how to start it.' },
-            { label: 'A message saying the list is empty.', feedback: 'That is the one thing already obvious from looking. It uses the space without adding anything to it.' },
-            { label: 'A larger, clearer plus button.', feedback: 'The action only helps once she knows what it will do. Size does not explain it.' },
+            { label: 'A sentence saying what will appear here, and the one action that adds the first booking.', was: ['A sentence saying what will appear here and the one action that produces the first item.'], correct: true, feedback: 'The empty state is the first teaching this person gets. “Your bookings appear here — find a class to make your first one” gives the model and the next step in one line.' },
+            { label: 'An illustration filling the grey area, so the space no longer looks broken or unfinished.', was: ['An illustration, so the space does not look broken.'], feedback: 'It fills the space and says nothing. She still does not know what this list is for or how to start it.' },
+            { label: 'A short message stating that the list is empty, so nobody thinks the page failed to load.', was: ['A message saying the list is empty.'], feedback: 'That is the one thing already obvious from looking. It uses the space without adding anything to it.' },
+            { label: 'A larger, brighter plus button in the corner, so the way to add a booking is easy to spot.', was: ['A larger, clearer plus button.'], feedback: 'The action only helps once she knows what it will do. Size does not explain it.' },
           ],
           then: 'Now write your own empty state in the box below, in three parts: what appears here, why, and the one action that starts it.',
         },
@@ -1397,9 +1397,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'One control is greyed out because the class is full, and another because no date has been chosen yet. Why should these not look and read the same?',
         options: [
-          { label: 'One means not yet and the other means not for you now, and each needs a different sentence and a different way out.', correct: true, feedback: 'Not yet asks her to complete something. Not for you now should offer the alternative, such as other dates or a way to ask somebody.' },
-          { label: 'They can look the same, as long as both are clearly grey.', feedback: 'Grey tells her she cannot press it. It never tells her which of the two situations she is in, so she cannot act on either.' },
-          { label: 'The full class should simply be removed from the list.', feedback: 'Removing it leaves her wondering whether she misremembered the class. Showing it as full and offering other dates keeps her oriented.' },
+          { label: 'One means not yet, the other not for you now, and each needs its own sentence and route.', was: ['One means not yet and the other means not for you now, and each needs a different sentence and a different way out.'], correct: true, feedback: 'Not yet asks her to complete something. Not for you now should offer the alternative, such as other dates or a way to ask somebody.' },
+          { label: 'They can look and read the same, as long as both are clearly greyed out to show it.', was: ['They can look the same, as long as both are clearly grey.'], feedback: 'Grey tells her she cannot press it. It never tells her which of the two situations she is in, so she cannot act on either.' },
+          { label: 'The full class should simply be removed from the list, which leaves only one grey control.', was: ['The full class should simply be removed from the list.'], feedback: 'Removing it leaves her wondering whether she misremembered the class. Showing it as full and offering other dates keeps her oriented.' },
         ],
         repair: 'Split component-disabled and component-unavailable in step 2 so each has its own trigger and its own sentence, then record the change in the last step.',
         recheck: 'Both rows exist, each with its own trigger, its own wording and its own way out.',
@@ -1407,9 +1407,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'Your error state is signalled by the control turning red. What does the greyscale check show?',
         options: [
-          { label: 'Red and the default state can become the same shade, so anyone who cannot tell them apart gets no signal at all.', correct: true, feedback: 'Add a second signal that survives greyscale: a message beside the field, a small icon, a heavier border.' },
-          { label: 'Nothing much, since almost everybody can see red.', feedback: 'A great many people cannot distinguish it reliably, and neither can anyone in bright sunlight or on a poor screen.' },
-          { label: 'That the red is not strong enough and should be darker.', feedback: 'A darker red is still one signal on one channel. The point is to carry the meaning on a second channel as well.' },
+          { label: 'Red and default can turn the same grey, leaving anyone who cannot tell them apart no signal.', was: ['Red and the default state can become the same shade, so anyone who cannot tell them apart gets no signal at all.'], correct: true, feedback: 'Add a second signal that survives greyscale: a message beside the field, a small icon, a heavier border.' },
+          { label: 'Very little, since almost everybody can tell red apart from the default state anyway.', was: ['Nothing much, since almost everybody can see red.'], feedback: 'A great many people cannot distinguish it reliably, and neither can anyone in bright sunlight or on a poor screen.' },
+          { label: 'That the red is not strong enough, and a darker red would carry the meaning on its own.', was: ['That the red is not strong enough and should be darker.'], feedback: 'A darker red is still one signal on one channel. The point is to carry the meaning on a second channel as well.' },
         ],
         repair: 'Look at greyscale-result in step 5, add a second signal to every state that relied on colour, and record it in the last step.',
         recheck: 'Every state is still distinguishable with the colour removed.',
@@ -1417,9 +1417,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'Your loading state has a trigger and an appearance, and the exit is blank. What is that?',
         options: [
-          { label: 'A state a person can be stuck in, because nothing in your specification says what ends it.', correct: true, feedback: 'Give it two endings: the answer arriving, and a timeout with a message and a route. A loading state with no end is how an interface hangs.' },
-          { label: 'An acceptable gap, since loading ends when the response arrives.', feedback: 'It ends when a response arrives. The specification also has to say what happens when one does not.' },
-          { label: 'A detail for whoever builds it to decide.', feedback: 'Left to be decided later, it is decided by whatever the code does by default, which is usually nothing at all.' },
+          { label: 'A state a person can be stuck in, since nothing in the specification says what ends it.', was: ['A state a person can be stuck in, because nothing in your specification says what ends it.'], correct: true, feedback: 'Give it two endings: the answer arriving, and a timeout with a message and a route. A loading state with no end is how an interface hangs.' },
+          { label: 'An acceptable gap, since loading always ends by itself when the response finally arrives.', was: ['An acceptable gap, since loading ends when the response arrives.'], feedback: 'It ends when a response arrives. The specification also has to say what happens when one does not.' },
+          { label: 'A detail for whoever builds it to decide, since timeouts are an engineering setting.', was: ['A detail for whoever builds it to decide.'], feedback: 'Left to be decided later, it is decided by whatever the code does by default, which is usually nothing at all.' },
         ],
         repair: 'Fill the exit for component-loading in step 2 and for the loading row in screen-states in step 3, list the fix in dead-ends, and record the change in the last step.',
         recheck: 'No row has a blank exit, and every loading state names its timeout.',
@@ -1430,6 +1430,15 @@ export const guided07: Record<string, Guided> = {
       external: 'Nothing here needs a file. Keep your exception table to hand; most of the screen wording comes straight from it.',
       creator: 'Your creator reads the disabled and unavailable rows and the empty state. Those three are where state work is usually thin, so they are the ones worth showing first.',
       next: 'Open Your work and choose Ready for review. Module 8 builds the interface, and these state tables are what it gets built from.',
+    },
+    transfer: {
+      scenario: 'Made-up case: a library app shows a “Renew” button greyed out in two situations. In one, the member has not yet selected which of her books to renew. In the other, the book has been reserved by another member, so it cannot be renewed at all.',
+      prompt: 'Specify the two states so they do not look and read the same: give each its trigger, the sentence beside it and its way out, and explain why the difference matters.',
+      anchors: {
+        weak: 'Uses one grey state for both, or changes only the colour, with no sentence and no route out.',
+        adequate: 'Disabled, not yet: triggered by no book selected, “Choose a book to renew”, ended by selecting one. Unavailable, not for you now: triggered by a reservation, “Someone has reserved this book”, with a route such as its return date.',
+        strong: 'As adequate, and adds a second signal that survives greyscale, keeps focus visible for keyboard users, and gives the loading state after pressing Renew a timeout and a route out.',
+      },
     },
   },
   'm07-l11-v1': {
@@ -1453,8 +1462,8 @@ export const guided07: Record<string, Guided> = {
       ] },
       { id: 'read', title: 'Read by someone who was not involved', fields: [
         { id: 'reader-status', label: 'Who actually read it', kind: 'choice', options: ['Someone not involved read it', 'Someone who already knows the project read it: rehearsal read', 'Nobody available: dated gap recorded'], hint: 'Choose honestly. A rehearsal read is useful work and it is not the same test.' },
-        { id: 'reader-questions', label: 'Every question they had to ask, and what each one will change', kind: 'long', hint: 'Write them all down before you answer any of them.' },
-        { id: 'reader-gap', label: 'If nobody was available: who you could not reach, the date, and where the finished artefact is waiting', kind: 'long', hint: 'Dating the gap is a real result. Leave this empty if someone read it.' },
+        { id: 'reader-questions', label: 'Every question they had to ask, and what each one will change', kind: 'long', sensitive: true, requiredWhen: { field: 'reader-status', values: ['Someone not involved read it', 'Someone who already knows the project read it: rehearsal read'] }, hint: 'Write them all down before you answer any of them. Refer to the reader by role, such as “a friend”, never by name.' },
+        { id: 'reader-gap', label: 'If nobody was available: who you could not reach, the date, and where the finished artefact is waiting', kind: 'long', sensitive: true, requiredWhen: { field: 'reader-status', values: ['Someone who already knows the project read it: rehearsal read', 'Nobody available: dated gap recorded'] }, hint: 'Dating the gap is a real result. Describe who you asked by kind, never by name or number. Leave this empty if someone uninvolved read it.' },
         { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
       ] },
     ],
@@ -1502,10 +1511,10 @@ export const guided07: Record<string, Guided> = {
           material: 'A supplied moment from the same made-up handover. A friend who had never seen the project read the wireflow aloud and stopped at the payment screen to ask what “pending” means. She read everything else without stopping.',
           question: 'What does her question tell you?',
           options: [
-            { label: 'The word is doing work the artefact never explains, so she has found a gap on the page.', correct: true, feedback: 'A reader stops where the page stops carrying her. The repair belongs on the page: a plainer word, or an annotation saying what that state means to a person.' },
-            { label: 'She lacks the background to read a wireflow, so the question does not count.', feedback: 'Someone who read everything else without stopping is reading it perfectly well. Discounting her question throws away the only thing the read produced.' },
-            { label: 'You should explain it to her, then carry on with the read.', feedback: 'Explaining ends the finding. The person building from this in two weeks will meet the same word with nobody sitting beside them.' },
-            { label: 'It is a wording problem for later, not a wireflow problem.', feedback: 'The word appears on the artefact and on the screen, so it is both. Recording it as a question keeps it attached to the place it was found.' },
+            { label: 'The word does work the page never explains, so she has found a gap in the artefact.', was: ['The word is doing work the artefact never explains, so she has found a gap on the page.'], correct: true, feedback: 'A reader stops where the page stops carrying her. The repair belongs on the page: a plainer word, or an annotation saying what that state means to a person.' },
+            { label: 'She lacks the background to read a wireflow, so her question says little about the page.', was: ['She lacks the background to read a wireflow, so the question does not count.'], feedback: 'Someone who read everything else without stopping is reading it perfectly well. Discounting her question throws away the only thing the read produced.' },
+            { label: 'She needs a quick explanation, after which the read can carry on from the payment screen.', was: ['You should explain it to her, then carry on with the read.'], feedback: 'Explaining ends the finding. The person building from this in two weeks will meet the same word with nobody sitting beside them.' },
+            { label: 'It is a wording problem for the visual stage later, rather than a gap in the wireflow.', was: ['It is a wording problem for later, not a wireflow problem.'], feedback: 'The word appears on the artefact and on the screen, so it is both. Recording it as a question keeps it attached to the place it was found.' },
           ],
           then: 'Write out every question your own reader asked, then mark which are changes to the page and which are changes to the design.',
         },
@@ -1519,9 +1528,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'Your reader stops and asks what happens if the provider cancels the class. You tell her, and she carries on. What went wrong?',
         options: [
-          { label: 'You answered a question the artefact could not answer, so the gap is still there and now it is unrecorded.', correct: true, feedback: 'The question was evidence about the page. Once you supply the answer, the page is unchanged and the next reader meets the same silence.' },
-          { label: 'Nothing: answering questions is what a handover conversation is for.', feedback: 'A conversation is fine after the read. During it, every answer you give quietly removes a finding you came for.' },
-          { label: 'She should have been given more context before reading.', feedback: 'Context given in advance is exactly what the person building this in two weeks will not have.' },
+          { label: 'You answered what the page could not, so the gap is still there and now unrecorded.', was: ['You answered a question the artefact could not answer, so the gap is still there and now it is unrecorded.'], correct: true, feedback: 'The question was evidence about the page. Once you supply the answer, the page is unchanged and the next reader meets the same silence.' },
+          { label: 'Little went wrong: answering questions is exactly what a handover conversation is for.', was: ['Nothing: answering questions is what a handover conversation is for.'], feedback: 'A conversation is fine after the read. During it, every answer you give quietly removes a finding you came for.' },
+          { label: 'The setup: she should have been given more context about the project before reading.', was: ['She should have been given more context before reading.'], feedback: 'Context given in advance is exactly what the person building this in two weeks will not have.' },
         ],
         repair: 'In the reader-questions box in step 5, write every question you answered during the read, then add the annotation or open question each one calls for and note the change in the improvement box.',
         recheck: 'Every question the reader asked appears in the list with what it changes.',
@@ -1529,9 +1538,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'Two labels on your wireflow are still guesses. Leaving them off the open-questions list makes the artefact look finished. What does that cost?',
         options: [
-          { label: 'People build on the guesses, because being drawn confidently is what turns a guess into a fact.', correct: true, feedback: 'Nobody queries a label that looks settled. The open-questions list is the only thing keeping a guess arguable once it is on the page.' },
-          { label: 'Very little: they can be corrected later when someone notices.', feedback: 'Noticing is the part that does not happen. A guess drawn in the same hand as everything else reads as a decision.' },
-          { label: 'It is honest enough as long as you remember which ones they were.', feedback: 'Your memory is not on the artefact, and the artefact is the thing that outlives the conversation.' },
+          { label: 'People build on the guesses, since a label drawn confidently reads as a decision.', was: ['People build on the guesses, because being drawn confidently is what turns a guess into a fact.'], correct: true, feedback: 'Nobody queries a label that looks settled. The open-questions list is the only thing keeping a guess arguable once it is on the page.' },
+          { label: 'Very little: the two labels can be corrected later, whenever someone notices them.', was: ['Very little: they can be corrected later when someone notices.'], feedback: 'Noticing is the part that does not happen. A guess drawn in the same hand as everything else reads as a decision.' },
+          { label: 'Nothing that matters, as long as you yourself remember which labels were guesses.', was: ['It is honest enough as long as you remember which ones they were.'], feedback: 'Your memory is not on the artefact, and the artefact is the thing that outlives the conversation.' },
         ],
         repair: 'Add every guessed label and undecided item to the open-questions box in step 4, then record what you added in the improvement box in step 5.',
         recheck: 'The open-questions list names each guess and what would settle it.',
@@ -1539,9 +1548,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'The only person free to read your wireflow is someone who has watched you build it all week. What do you do?',
         options: [
-          { label: 'Ask them anyway, mark it as a rehearsal read, and record that an uninvolved reader could not be found.', correct: true, feedback: 'A rehearsal read still catches missing conditions. What it cannot do is show what someone without your explanations sees, so the record says both.' },
-          { label: 'Report it as the uninvolved read, since they still asked questions.', feedback: 'They read it with your project already in their head. Reporting that as an uninvolved read makes the artefact look tested when it is not.' },
-          { label: 'Skip the step until a stranger is available.', feedback: 'Waiting leaves you with nothing at all. A rehearsal read plus a dated note of who you could not reach is a complete answer for today.' },
+          { label: 'Ask them, mark it a rehearsal read, and record that no uninvolved reader was found.', was: ['Ask them anyway, mark it as a rehearsal read, and record that an uninvolved reader could not be found.'], correct: true, feedback: 'A rehearsal read still catches missing conditions. What it cannot do is show what someone without your explanations sees, so the record says both.' },
+          { label: 'Report it as the uninvolved read, since they still asked real questions about the page.', was: ['Report it as the uninvolved read, since they still asked questions.'], feedback: 'They read it with your project already in their head. Reporting that as an uninvolved read makes the artefact look tested when it is not.' },
+          { label: 'Skip the read for now, and run it properly once a stranger is free to look at it.', was: ['Skip the step until a stranger is available.'], feedback: 'Waiting leaves you with nothing at all. A rehearsal read plus a dated note of who you could not reach is a complete answer for today.' },
         ],
         repair: 'Set the reader-status choice in step 5 honestly. If it was a rehearsal read or nobody was available, fill the reader-gap box with who you could not reach and the date, then note it in the improvement box.',
         recheck: 'The status matches what happened, and any gap carries a date.',
@@ -1552,6 +1561,15 @@ export const guided07: Record<string, Guided> = {
       external: 'The sheet stays on paper or in your own folder. Photograph it in sections and write the file names here; naming a file does not upload it.',
       creator: 'Your creator reads the annotations and the reader questions. The questions someone had to ask are the most useful part, so leave them in full.',
       next: 'Open Your work and choose Ready for review. The next lesson walks two tasks through these same frames with someone else at the table.',
+    },
+    transfer: {
+      scenario: 'Made-up case: you hand a car-wash booking wireflow to a friend who has never seen it. Reading aloud, she stops at the confirmation screen and asks what happens if it rains and the wash is cancelled. Nothing on the sheet says. Two other labels on the sheet are still your guesses.',
+      prompt: 'Decide what you do at the moment she asks and what changes on the artefact afterwards, and explain why.',
+      anchors: {
+        weak: 'Answers her straight away so the read can continue, and leaves the sheet and its open-questions list unchanged.',
+        adequate: 'Writes the question down without answering until she finishes, then adds an annotation or open question about the rain cancellation, because the next reader will meet the same silence without you there.',
+        strong: 'As adequate, and adds the two guessed labels to the open-questions list, dates and versions the sheet, and notes what would settle the rain rule, such as who decides and what is refunded.',
+      },
     },
   },
   'm07-l12-v1': {
@@ -1568,18 +1586,18 @@ export const guided07: Record<string, Guided> = {
       ] },
       { id: 'sessions', title: 'What happened with each person', fields: [
         { id: 'session-status', label: 'What actually happened', kind: 'choice', options: ['Three consenting participants', 'One or two consenting participants', 'Rehearsal only with someone who knows the project', 'Nobody available: dated gap recorded'], hint: 'Choose honestly. A rehearsal tests your kit and your own reflexes; it is not research.' },
-        { id: 'session-1', label: 'Session 1 · what they expected before each change, what they did, what happened, and where they paused', kind: 'long' },
-        { id: 'session-2', label: 'Session 2 · what they expected before each change, what they did, what happened, and where they paused', kind: 'long' },
-        { id: 'session-3', label: 'Session 3 · what they expected before each change, what they did, what happened, and where they paused', kind: 'long' },
+        { id: 'session-1', label: 'Session 1 · a de-identified summary: what they expected before each change, what they did, what happened, and where they paused', kind: 'long', sensitive: true, requiredWhen: { field: 'session-status', values: ['Three consenting participants', 'One or two consenting participants', 'Rehearsal only with someone who knows the project'] }, hint: 'Use a label such as P1, never a name. Keep raw notes in a private file or on paper with a date to delete them; write only this de-identified summary here. Removing a name does not make a note anonymous, so leave out details that point to one person. On the rehearsal route, label the record rehearsal.' },
+        { id: 'session-2', label: 'Session 2 · a de-identified summary: what they expected before each change, what they did, what happened, and where they paused', kind: 'long', sensitive: true, requiredWhen: { field: 'session-status', values: ['Three consenting participants'] } },
+        { id: 'session-3', label: 'Session 3 · a de-identified summary: what they expected before each change, what they did, what happened, and where they paused', kind: 'long', sensitive: true, requiredWhen: { field: 'session-status', values: ['Three consenting participants'] } },
       ] },
       { id: 'undrawn', title: 'The parts that live only in your head', fields: [
-        { id: 'undrawn-list', label: 'Everything a participant reached for that you had not drawn, with what they expected it to do', kind: 'long', hint: 'Every moment you had to say “that does not do anything” is a row here.' },
-        { id: 'mismatches', label: 'Every place what they expected and what happened did not match', kind: 'long', hint: 'A task finished anxiously is a mismatch, not a success.' },
+        { id: 'undrawn-list', label: 'Everything a participant reached for that you had not drawn, with what they expected it to do', kind: 'long', sensitive: true, requiredWhen: { field: 'session-status', values: ['Three consenting participants', 'One or two consenting participants', 'Rehearsal only with someone who knows the project'] }, hint: 'Every moment you had to say “that does not do anything” is a row here. Refer to people by label.' },
+        { id: 'mismatches', label: 'Every place what they expected and what happened did not match', kind: 'long', sensitive: true, requiredWhen: { field: 'session-status', values: ['Three consenting participants', 'One or two consenting participants', 'Rehearsal only with someone who knows the project'] }, hint: 'A task finished anxiously is a mismatch, not a success.' },
       ] },
       { id: 'rank', title: 'Rank by harm, and say what this rests on', fields: [
-        { id: 'harm-ranking', label: 'The problems in order of harm, with what each one costs the person', kind: 'long', hint: 'Harm is what it stops, what it costs in money or time, and what it loses. Not how often you saw it.' },
-        { id: 'sample-line', label: 'How many people, how you found them, and what that limits', kind: 'short', example: 'Example (made up): three people, all neighbours who have taken a class, so nobody here was booking for the first time.' },
-        { id: 'access-gap', label: 'If nobody consented: who you could not reach, the date, and where the prepared kit is', kind: 'long', hint: 'Dating the gap is a real result. Leave this empty if sessions happened.' },
+        { id: 'harm-ranking', label: 'The problems in order of harm, with what each one costs the person', kind: 'long', hint: 'Harm is what it stops, what it costs in money or time, and what it loses. Not how often you saw it. If nobody was available, rank the problems your own rehearsal found and label the list rehearsal.' },
+        { id: 'sample-line', label: 'How many people, how you found them, and what that limits', kind: 'short', sensitive: true, hint: 'Counts and routes only, with no names or contact details.', example: 'Example (made up): three people, all neighbours who have taken a class, so nobody here was booking for the first time.' },
+        { id: 'access-gap', label: 'If nobody consented: who you could not reach, the date, and where the prepared kit is', kind: 'long', sensitive: true, requiredWhen: { field: 'session-status', values: ['One or two consenting participants', 'Rehearsal only with someone who knows the project', 'Nobody available: dated gap recorded'] }, hint: 'Dating the gap is a real result. Describe who you asked by kind, never by name or number. Leave this empty if three sessions happened.' },
         { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
       ] },
     ],
@@ -1678,9 +1696,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'A participant goes quiet over the review sheet. Four seconds in, you point at the total. What did that cost you?',
         options: [
-          { label: 'You ended the pause before it could show whether the total was findable, and the session cannot answer that now.', correct: true, feedback: 'The pause was the measurement. Once you point, all you know is that a person can find something after being shown it.' },
-          { label: 'Nothing much: they would have found it a moment later anyway.', feedback: 'Whether they would have is the thing you were there to find out, and pointing is what made it unknowable.' },
-          { label: 'Some rapport, which matters more in a short session.', feedback: 'Rapport comes from saying at the start that you are testing the paper and not them. It does not require you to answer.' },
+          { label: 'You ended the pause before it could show whether the total was findable at all.', was: ['You ended the pause before it could show whether the total was findable, and the session cannot answer that now.'], correct: true, feedback: 'The pause was the measurement. Once you point, all you know is that a person can find something after being shown it.' },
+          { label: 'Very little, since they would most likely have found the total a moment later anyway.', was: ['Nothing much: they would have found it a moment later anyway.'], feedback: 'Whether they would have is the thing you were there to find out, and pointing is what made it unknowable.' },
+          { label: 'A little rapport, though helping quickly keeps a short session friendly and moving.', was: ['Some rapport, which matters more in a short session.'], feedback: 'Rapport comes from saying at the start that you are testing the paper and not them. Helping did not cost rapport; it cost the answer you came for.' },
         ],
         repair: 'Mark every rescue in your session boxes in step 3, and write beside each what waiting might have shown you. Then note the change in the improvement box in step 5.',
         recheck: 'Each session record separates pauses you waited through from pauses you ended.',
@@ -1688,9 +1706,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'Two people wanted the cancellation deadline in days rather than a date. One person lost her filtered results and booked whatever she could still see. How do you rank them?',
         options: [
-          { label: 'The lost results first, because it changed what she booked; the deadline wording second.', correct: true, feedback: 'Harm is what the problem costs the person. Three sessions cannot tell you how common either one is, so frequency is not a ranking you have earned.' },
-          { label: 'The deadline wording first, because two of the three raised it.', feedback: 'Two out of three is not a rate, it is two people. Counting three sessions turns a formative test into a measurement it cannot carry.' },
-          { label: 'Equally, since both came up in the same test.', feedback: 'Both are real and only one of them changed a booking. The ranking exists so the next lesson repairs whatever costs most.' },
+          { label: 'Lost results first, since it changed what she booked; the deadline wording second.', was: ['The lost results first, because it changed what she booked; the deadline wording second.'], correct: true, feedback: 'Harm is what the problem costs the person. Three sessions cannot tell you how common either one is, so frequency is not a ranking you have earned.' },
+          { label: 'Deadline wording first, since two of the three raised it and only one lost results.', was: ['The deadline wording first, because two of the three raised it.'], feedback: 'Two out of three is not a rate, it is two people. Counting three sessions turns a formative test into a measurement it cannot carry.' },
+          { label: 'Equally, since both came up in the same small test and neither stopped a booking.', was: ['Equally, since both came up in the same test.'], feedback: 'Both are real, and only one of them changed what somebody booked. The ranking exists so the next lesson repairs whatever costs most.' },
         ],
         repair: 'Reorder the harm-ranking box in step 5 by what each problem costs the person, then record what moved in the improvement box.',
         recheck: 'The order is by cost to the person and the sample line says how many people there were.',
@@ -1698,9 +1716,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'Nobody consented, so you walked both tasks with your sister, who has heard about this project all week. How should that appear?',
         options: [
-          { label: 'As a rehearsal, with a dated note of who you could not reach, and the prepared kit kept as the deliverable.', correct: true, feedback: 'A rehearsal checks your frames, your tasks and your own reflexes, which is real work. It cannot tell you what someone without your explanations does.' },
-          { label: 'As a session, since she completed both tasks on the paper.', feedback: 'She arrived knowing what you intended. Recording that as a session makes the ranked list look tested when it rests on someone who already knew the answers.' },
-          { label: 'Leave it out and record that the test did not happen.', feedback: 'Leaving it out throws away work you actually did. A dated gap plus the rehearsal notes is a complete and honest answer.' },
+          { label: 'As a rehearsal, with a dated note of who you could not reach and the kit kept.', was: ['As a rehearsal, with a dated note of who you could not reach, and the prepared kit kept as the deliverable.'], correct: true, feedback: 'A rehearsal checks your frames, your tasks and your own reflexes, which is real work. It cannot tell you what someone without your explanations does.' },
+          { label: 'As one session, since she completed both tasks on paper without any help from you.', was: ['As a session, since she completed both tasks on the paper.'], feedback: 'She arrived knowing what you intended. Recording that as a session makes the ranked list look tested when it rests on someone who already knew the answers.' },
+          { label: 'Left out, with a note recording only that the test itself did not happen at all.', was: ['Leave it out and record that the test did not happen.'], feedback: 'Leaving it out throws away work you actually did. A dated gap plus the rehearsal notes is a complete and honest answer.' },
         ],
         repair: 'Set the session-status choice in step 3 honestly, fill the access-gap box in step 5 with who you could not reach and the date, then note the change in the improvement box.',
         recheck: 'The status matches what happened, and any rehearsal is labelled as one.',
@@ -1711,6 +1729,15 @@ export const guided07: Record<string, Guided> = {
       external: 'The frames stay on paper. Photograph the table between sessions if you like, with no faces in shot, and write the file names here; naming a file does not upload it.',
       creator: 'Your creator reads the undrawn list and the ranking. The things people reached for that you never drew are the part worth talking about.',
       next: 'Open Your work and choose Ready for review. The next lesson repairs the top two problems, re-tests them with someone new, and writes the module record.',
+    },
+    transfer: {
+      scenario: 'Made-up case: you are running a paper test of a grocery delivery app with a participant who agreed to take part. On the slot-picking sheet she pauses, then asks whether the time shown is when the order arrives or when packing starts. Later she taps the basket total, expecting a breakdown that you never drew.',
+      prompt: 'Decide what you say when she asks her question and how you record both moments, and explain why.',
+      anchors: {
+        weak: 'Explains what the slot means or what the total does, and records only whether she completed the task.',
+        adequate: 'Asks what she expects it to mean, writes her answer and the pause down as a mismatch, and records the tap on the total as an undrawn interaction with what she expected, because these show what the design fails to say.',
+        strong: 'As adequate, and ranks the slot confusion by harm, such as a missed delivery, rather than by how many people raised it, keeps the participant de-identified, and states the sample beside the findings.',
+      },
     },
   },
   'm07-l13-v1': {
@@ -1727,8 +1754,8 @@ export const guided07: Record<string, Guided> = {
       ] },
       { id: 'retest', title: 'Re-test with someone new', fields: [
         { id: 'retest-status', label: 'Who re-tested it', kind: 'choice', options: ['Two people who had not seen the design', 'One person who had not seen the design', 'Someone who saw the first test: rehearsal re-test', 'Nobody available: dated gap recorded'], hint: 'Choose honestly. Someone who saw the first version can only tell you what they remember.' },
-        { id: 'retest-record', label: 'What each person expected, did, met and doubted on the repaired tasks', kind: 'long' },
-        { id: 'prediction-outcomes', label: 'Each prediction beside what actually happened, including any that did not hold', kind: 'long', hint: 'A repair that did not work is the most useful entry in the whole record.' },
+        { id: 'retest-record', label: 'What each person expected, did, met and doubted on the repaired tasks', kind: 'long', sensitive: true, requiredWhen: { field: 'retest-status', values: ['Two people who had not seen the design', 'One person who had not seen the design', 'Someone who saw the first test: rehearsal re-test'] }, hint: 'A de-identified summary with labels such as P4; raw notes stay in your private file with a date to delete them.' },
+        { id: 'prediction-outcomes', label: 'Each prediction beside what actually happened, including any that did not hold', kind: 'long', sensitive: true, requiredWhen: { field: 'retest-status', values: ['Two people who had not seen the design', 'One person who had not seen the design', 'Someone who saw the first test: rehearsal re-test'] }, hint: 'A repair that did not work is the most useful entry in the whole record. If nobody was available, the predictions stay untested and the not-established box says so.' },
       ] },
       { id: 'record', title: 'The decision record', intro: 'One entry at a time. The full record lives in your own file; write your most significant decisions here.', fields: [
         ...[1, 2, 3, 4].map((n) => ({ id: `decision-${n}`, label: `Decision ${n} · what was decided, the evidence, the alternative you rejected, and what is untested`, kind: 'long' as const,
@@ -1770,13 +1797,13 @@ export const guided07: Record<string, Guided> = {
       { expect: 'An honest re-test status, the session record, and each prediction beside what actually happened.',
         fields: ['retest-status', 'retest-record', 'prediction-outcomes'],
         supported: {
-          material: 'A supplied re-test result from the same made-up project. The prediction was that nobody would ask how many days the deadline is, once it read “free to cancel until Thursday 10 am — 3 days before the class”. Both new participants asked anyway, and neither could see the class date on that screen.',
+          material: 'A supplied re-test result from the same made-up project. The prediction was that nobody would ask how many days the deadline is, once it read “free to cancel until Thursday 10 am — 3 days before the class”. Both new participants asked anyway; each said they could not tell how far away Thursday was, because the class date was not on that screen.',
           question: 'What goes in the record?',
           options: [
-            { label: 'That the prediction did not hold, and that the question came from the missing class date rather than the deadline wording.', correct: true, feedback: 'The prediction and the outcome sit side by side, and the reason names a different problem. That entry is worth more than a repair that simply worked.' },
-            { label: 'That the deadline wording still needs work, so repair it again now.', feedback: 'Repairing again in the same breath assumes the first diagnosis was right. They asked because the date was missing, so more wording will not answer them.' },
-            { label: 'Nothing, because a repair that changed nothing is not worth an entry.', feedback: 'A repair that failed tells you the diagnosis was wrong, which is the single most useful thing this re-test produced.' },
-            { label: 'That the re-test was inconclusive and needs more people.', feedback: 'The result is clear rather than thin. Both people asked, both for the same visible reason, and more people would tell you the same thing at a cost.' },
+            { label: 'The prediction failed, and the question came from the missing class date, not the wording.', was: ['That the prediction did not hold, and that the question came from the missing class date rather than the deadline wording.'], correct: true, feedback: 'The prediction and the outcome sit side by side, and the reason names a different problem. That entry is worth more than a repair that simply worked.' },
+            { label: 'The deadline wording still needs work, so it should be repaired again straight away.', was: ['That the deadline wording still needs work, so repair it again now.'], feedback: 'Repairing again in the same breath assumes the first diagnosis was right. They asked because the date was missing, so more wording will not answer them.' },
+            { label: 'No entry at all, since a repair that changed nothing is not worth recording anywhere.', was: ['Nothing, because a repair that changed nothing is not worth an entry.'], feedback: 'A repair that failed tells you the diagnosis was wrong, which is the single most useful thing this re-test produced.' },
+            { label: 'The re-test was inconclusive, since two people are too few to judge the new wording.', was: ['That the re-test was inconclusive and needs more people.'], feedback: 'The result is clear rather than thin. Both people asked, both for the same visible reason, and more people would tell you the same thing at a cost.' },
           ],
           then: 'Write your own predictions and outcomes side by side, and name the reason wherever an outcome surprised you.',
         },
@@ -1802,9 +1829,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'You repaired the two quickest problems because they were both done before lunch. What is wrong with that?',
         options: [
-          { label: 'The ranking orders problems by what they cost a person, and repairing by speed leaves the costly ones untouched.', correct: true, feedback: 'Quick fixes are quick because they are small. The problem that changed what somebody booked is still there, and now the list merely looks shorter.' },
-          { label: 'Nothing, as long as you get to the others eventually.', feedback: 'Eventually is where structural problems live. Whatever is not repaired today goes into the record as known and unfixed.' },
-          { label: 'It is fine, since the quick fixes were on the list too.', feedback: 'Being on the list is not the question. The ranking exists to decide the order, and speed is not the order it chose.' },
+          { label: 'The ranking orders problems by cost to a person, and speed leaves the costly ones untouched.', was: ['The ranking orders problems by what they cost a person, and repairing by speed leaves the costly ones untouched.'], correct: true, feedback: 'Quick fixes are quick because they are small. The problem that changed what somebody booked is still there, and now the list merely looks shorter.' },
+          { label: 'Very little, provided the costlier problems are all repaired eventually in a later round.', was: ['Nothing, as long as you get to the others eventually.'], feedback: 'Eventually is where structural problems live. Whatever is not repaired today goes into the record as known and unfixed.' },
+          { label: 'It is a sound choice, since the quick fixes were on the ranked list of problems too.', was: ['It is fine, since the quick fixes were on the list too.'], feedback: 'Being on the list is not the question. The ranking exists to decide the order, and speed is not the order it chose.' },
         ],
         repair: 'Check the harm-order box in step 1 against what you actually changed. If the top two are untouched, repair them and write why you started elsewhere, then note it in the improvement box in step 5.',
         recheck: 'The repairs match the top of the harm ranking, or the record says plainly why they do not.',
@@ -1812,9 +1839,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'You ran the re-test first and wrote the prediction afterwards, because you already knew what should have happened. Does that matter?',
         options: [
-          { label: 'A prediction written after the result cannot be shown wrong, so mark it as retrospective in the record.', correct: true, feedback: 'Writing it first is what turns a re-test into evidence. Written afterwards it is a description of what happened, and the record should say which it is.' },
+          { label: 'A prediction written after the result cannot be shown wrong, so mark it retrospective.', was: ['A prediction written after the result cannot be shown wrong, so mark it as retrospective in the record.'], correct: true, feedback: 'Writing it first is what turns a re-test into evidence. Written afterwards it is a description of what happened, and the record should say which it is.' },
           { label: 'It makes no difference, since the prediction would have been the same either way.', feedback: 'It feels the same and it cannot be checked. Knowing the outcome quietly shapes what you say you expected.' },
-          { label: 'It ruins the re-test, so the sessions have to be run again.', feedback: 'The sessions still happened and the observations stand. What is weakened is the prediction, and labelling it honestly is enough.' },
+          { label: 'It ruins the re-test entirely, so both sessions have to be run again from the start.', was: ['It ruins the re-test, so the sessions have to be run again.'], feedback: 'The sessions still happened and the observations stand. What is weakened is the prediction, and labelling it honestly is enough.' },
         ],
         repair: 'Mark any prediction in step 1 that was written after the sessions as retrospective, then record the change in the improvement box in step 5.',
         recheck: 'Every prediction says whether it was written before or after the sessions.',
@@ -1822,9 +1849,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'The only person free for the re-test is the friend who took part in the first one. What do you do?',
         options: [
-          { label: 'Run it, label it a rehearsal re-test, and record that nobody new was available and on what date.', correct: true, feedback: 'She can tell you whether she remembers the change. She cannot tell you whether it is clearer, because she already knows where everything is.' },
-          { label: 'Run it and count it, since she is seeing a version she has not seen before.', feedback: 'She has seen the flow, the screens and the problem. What looks like clarity is recognition of all the parts that did not change.' },
-          { label: 'Skip the re-test and record the repairs as done.', feedback: 'Repairs recorded as done with nothing behind them are exactly the kind of claim the limitations statement exists to prevent.' },
+          { label: 'Run it, label it a rehearsal re-test, and record that nobody new was available, and when.', was: ['Run it, label it a rehearsal re-test, and record that nobody new was available and on what date.'], correct: true, feedback: 'She can tell you whether she remembers the change. She cannot tell you whether it is clearer, because she already knows where everything is.' },
+          { label: 'Run it and count it, since she is seeing a repaired version she has not seen before.', was: ['Run it and count it, since she is seeing a version she has not seen before.'], feedback: 'She has seen the flow, the screens and the problem. What looks like clarity is recognition of all the parts that did not change.' },
+          { label: 'Skip the re-test and record both repairs as done, since the changes are clearly better.', was: ['Skip the re-test and record the repairs as done.'], feedback: 'Repairs recorded as done with nothing behind them are exactly the kind of claim the limitations statement exists to prevent.' },
         ],
         repair: 'Set the retest-status choice in step 3 honestly. If nobody new was available, add the date and who you could not reach to the not-established box in step 5, then note the change in the improvement box.',
         recheck: 'The status matches what happened, and any recruitment gap carries a date.',
@@ -1835,6 +1862,15 @@ export const guided07: Record<string, Guided> = {
       external: 'Keep the full decision record as a plain text or Markdown file in your own folder and write its name here. Text is what you will be able to search and paste into a case study later.',
       creator: 'Your creator reads the predictions beside the outcomes, and the known-unfixed list. A repair that did not work is the entry worth discussing.',
       next: 'Open Your work and choose Ready for review. Module 8 builds the interface from this record and the wireflow, so keep the two together.',
+    },
+    transfer: {
+      scenario: 'Made-up case: a paper test of a pet-sitting booking flow with three people found three problems. Two people read “Sitter” as someone who only walks dogs, which slowed them down. One person added a second pet and saw the total change only after she had paid. All three tripped over a typo in a heading.',
+      prompt: 'Choose the two problems to repair first, say what you predict the re-test will show, and explain why you chose those two.',
+      anchors: {
+        weak: 'Repairs the typo and the wording because they are quick or because more people met them, and writes no prediction.',
+        adequate: 'Repairs the total that changes after payment first, because it costs money, then the “Sitter” wording; writes predictions before re-testing with new people, such as “nobody pays a total that later changes”.',
+        strong: 'As adequate, and records the typo as known and unfixed with the reason, re-tests only the affected tasks with fresh participants, and notes that three people cannot show how common any problem is.',
+      },
     },
   },
 };
