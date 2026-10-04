@@ -66,6 +66,7 @@ export const module17: Lesson[] = [
       "A strategy that excludes nothing is not a strategy.",
       "Designers contribute by making the implied choices explicit.",
       "Naming an implied choice is often enough to change it.",
+      "When a constraint changes — a new funder condition, a different user, a higher risk — reread the same behaviour and ask which choice now costs most.",
     ],
     explanation: [
       "The written strategy and the operating strategy differ in most organisations, and the operating one is what shapes your work. It is legible in behaviour: which requests are always accommodated, which quality is always cut when time is short, which customer is never turned down. Reading that pattern is a skill and it takes an afternoon.",
@@ -200,7 +201,7 @@ export const module17: Lesson[] = [
         levels: [
           "All choices treated as deliberate.",
           "An accident suspected without reasoning.",
-          "One identified with why it appears accidental.",
+          "One identified with why it appears accidental, or each choice shown to be deliberate with the evidence.",
           "As adequate, and naming it changed or is likely to change something.",
         ],
         remediation:
@@ -262,6 +263,7 @@ export const module17: Lesson[] = [
       "Costs are not only money: time, support, risk and attention.",
       "Some design decisions change the arithmetic directly.",
       "You can describe economics without inventing figures.",
+      "When who pays changes — a funder leaves, an employer starts paying — rewrite the exchange from the new payer’s side before choosing a lever.",
     ],
     explanation: [
       "Every product involves an exchange, and describing it plainly is more useful than any framework. Someone gives money, attention, data or time, and gets something they wanted. Writing that in one sentence exposes whether the product's value is real and who is actually served — and it can be done honestly without knowing anyone's revenue.",
@@ -398,7 +400,7 @@ export const module17: Lesson[] = [
           "A lever asserted with invented figures.",
           "A lever without a mechanism.",
           "Mechanism stated and no invented numbers.",
-          "As adequate, and the mechanism is traceable to a research finding.",
+          "As adequate, and the mechanism is traceable to a research finding or a named fact in the case pack.",
         ],
         remediation:
           "Delete every figure you cannot source and write the causal chain in words.",
@@ -458,6 +460,7 @@ export const module17: Lesson[] = [
       "Most delays and failures originate behind the line.",
       "Staff constraints are design constraints.",
       "The assigned map source stops at the front stage; the back stage is this lesson's addition.",
+      "When the back stage changes — fewer staff hours, a new check, a new supplier — redraw that band first; the front-stage promise usually has to change with it.",
     ],
     explanation: [
       "An experience map records what a person does, thinks and feels. A blueprint keeps that and adds the layers beneath: what staff do in response, what systems are involved, and where the work waits. The assigned mapping guidance explicitly does not cover back-stage process, so this structure is an extension of it rather than a reading of it.",
@@ -566,7 +569,7 @@ export const module17: Lesson[] = [
           "Generic boxes such as processing.",
           "Some specifics.",
           "Named work, people and systems throughout.",
-          "As adequate, and the detail was confirmed with whoever does the work.",
+          "As adequate, and the detail was confirmed with whoever does the work, or, on the case-pack route, the questions that would confirm it are written.",
         ],
         remediation:
           "Ask what actually happens after a booking and write the real steps.",
@@ -654,6 +657,7 @@ export const module17: Lesson[] = [
       "The buyer's needs dominate purchase; the user's needs dominate renewal.",
       "Administrators are users too, with their own tasks and frustrations.",
       "Design for the everyday user and give the buyer evidence.",
+      "When the risk or the rules change, ask what the buyer now has to prove, and give exactly that rather than the broader thing first requested.",
     ],
     explanation: [
       "The separation is structural. Someone decides to buy, someone configures and maintains, and someone uses it every day, and in many organisations these are three people with different incentives. Design decisions that please the buyer — dashboards, configurability, reporting — frequently cost the everyday user time, which is invisible at purchase and decisive at renewal.",
@@ -852,6 +856,7 @@ export const module17: Lesson[] = [
       "Delays hide loops; the effect arrives long after the change.",
       "People optimise for whatever you measure or reward.",
       "A warning is not a response to a structural effect.",
+      "When a constraint changes, retrace the loop: a response that fitted one delay or tool limit can become pointless or harmful once that limit goes.",
     ],
     explanation: [
       "First-order thinking asks what the change does. Second-order asks what people do about it. Making cancellation easier reduces friction and may increase casual bookings; adding reminders reduces no-shows and may train people to ignore messages. Neither effect is a reason not to act, and both are reasons to look one step further before declaring success.",
@@ -1049,6 +1054,7 @@ export const module17: Lesson[] = [
       "Opposition is usually rational from where the person stands.",
       "Find what your work does for them, or accept that you are asking a favour.",
       "The quiet blocker matters more than the loud sceptic.",
+      "When a rule or risk changes, re-map who carries the cost: the person whose accountability it touches becomes the one to talk to first.",
     ],
     explanation: [
       "Accountability predicts behaviour better than title. A person judged on support volume will resist anything that might increase it, however junior they are; a person judged on launch dates will resist anything that adds a week. Mapping what each person answers for tells you what they will do, which seniority does not.",
@@ -1236,7 +1242,7 @@ export const module17: Lesson[] = [
     guided: true,
     title: "Deciding without enough information",
     objective:
-      "Make one real decision under uncertainty, recording what you knew, what you assumed, what would have changed it, and how you will find out whether it was right.",
+      "Make one decision under uncertainty — a real one from your project, or the case pack’s open decision labelled as practice — recording what you knew, what you assumed, what would have changed it, and how you will find out whether it was right.",
     bringForward: "An open decision in your project.",
     prerequisite: "One decision you have been postponing.",
     why: "Waiting for certainty is itself a decision, usually a worse one, and being able to decide well with gaps is what senior work consists of.",
@@ -1246,6 +1252,7 @@ export const module17: Lesson[] = [
       "Decide at the last responsible moment, not the earliest or the latest.",
       "Record the assumption; it is what you check later.",
       "A decision with no way to find out it was wrong is a bet, not a decision.",
+      "When the cost of being wrong changes — a new risk, a harder undo — the certainty a decision needs changes too; recheck it rather than reusing the old answer.",
     ],
     explanation: [
       "The first move is separating your evidence from your assumptions, which is the m05 discipline applied to a decision rather than a finding. Most decisions that feel impossible become tractable once you see that two of the five inputs are known and three are guesses, and that only one of the guesses matters.",
@@ -1368,7 +1375,7 @@ export const module17: Lesson[] = [
           "Research proposed generally.",
           "A finding named but not decisive.",
           "The decisive finding named, or its absence stated plainly.",
-          "As adequate, and a cheap check was actually run.",
+          "As adequate, and a cheap check was run where one was available, or its absence is explained.",
         ],
         remediation:
           "For each candidate finding, ask whether it would change your choice; keep only those that would.",
@@ -1442,6 +1449,7 @@ export const module17: Lesson[] = [
       "Apply the catalog's rules: retrievable, free, scope-reviewed, dated, bounded.",
       "A rejected source is a result worth recording.",
       "Do not teach yourself from a source you would not assign to someone else.",
+      "A gap’s priority follows the decisions that hang on it: when a funder or a deadline starts asking, an interesting gap becomes an urgent one.",
     ],
     explanation: [
       "The gap is documented in this course's resource library: market positioning and segmentation have no verified free primary source, after attempts that returned navigation pages and a refusal. That is why every strategy lesson here has been about constraint, structure and stakeholders rather than about where a product sits in a market.",
@@ -1639,6 +1647,7 @@ export const module17: Lesson[] = [
       "Business software has administrators, auditability and data obligations.",
       "Consumer products optimise for first use; business ones for the thousandth.",
       "Neither is more sophisticated; they optimise different things.",
+      "When the user changes — from someone who chose you to someone who must use you — rerun the comparison: priorities flip even when the feature is the same.",
     ],
     explanation: [
       "The structural difference is choice. A consumer can leave, which makes the first experience decisive and makes delight worth something. A person using their employer's software cannot leave, which makes the hundredth use decisive and turns frustration into accumulated resentment rather than lost custom.",
@@ -1834,6 +1843,7 @@ export const module17: Lesson[] = [
       "Refusing without an alternative loses the argument and the relationship.",
       "Say what it costs: refunds, complaints, reputation, staff time.",
       "Write your limits before you are asked to cross them.",
+      "When the need behind a request changes — a new funder rule, a bigger shortfall — redesign the honest alternative; the line you will not cross stays put.",
     ],
     explanation: [
       "The patterns are recognisable and named: costs revealed only at the last step, cancellation routes that are harder than sign-up, countdowns that are not real, pre-ticked boxes, and choices worded so that the careless answer is the one that benefits the business. What they share is that they work by exploiting attention rather than by serving anyone.",
@@ -2030,6 +2040,7 @@ export const module17: Lesson[] = [
       "Compare against stated expectations rather than a general sense of seniority.",
       "Practise the expectation you cannot demonstrate, on real work.",
       "Distinguish what you have done from what you have read about.",
+      "When the route to a decision changes — a new decision-maker, a new meeting — change how you practise influence; the expectation itself stays the same.",
     ],
     explanation: [
       "The assigned job-family page describes management levels with strategic partnership, stakeholder influence, team development and how design success is measured. Read as a checklist against your own work, it is more useful than any general advice about seniority, because it is specific, published and someone's actual expectation.",
@@ -2226,6 +2237,7 @@ export const module17: Lesson[] = [
       "Record the constraints honestly, including the ones you dislike.",
       "List the risks with what would tell you they are materialising.",
       "State what you would need to learn, including this course's gaps.",
+      "Write what would bring each exclusion back. When a constraint changes, the note then shows which choices move and which stay.",
     ],
     explanation: [
       "Two pages is the right length because it is short enough to be read and long enough to say something. A longer document is a project in itself and will not be read; a shorter one usually omits the exclusions, which is the part that does the work.",

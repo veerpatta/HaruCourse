@@ -38,9 +38,9 @@ export const guided17: Record<string, Guided> = {
         { id: 'what-makes-strategic', label: 'What makes a choice strategic rather than tactical, in your own words', kind: 'long', hint: 'A strategic choice rules something out. A tactical one decides how to do what was already ruled in.' },
       ] },
       { id: 'behaviour', title: 'Read the behaviour', fields: [
-        { id: 'always-accommodated', label: 'What is always accommodated, however small', kind: 'long', hint: 'Where you have no team to observe, read a public project’s issue tracker or your own product’s history. Say which.' },
+        { id: 'always-accommodated', label: 'What is always accommodated, however small', kind: 'long', hint: 'Where you have no team to observe, read a public project’s issue tracker, your own product’s history, or the case pack’s six-month log. Say which.' },
         { id: 'always-cut', label: 'What is cut first when time is short', kind: 'long' },
-        { id: 'never-refused', label: 'Who is never refused, and what is never prioritised', kind: 'long' },
+        { id: 'never-refused', label: 'Who is never refused, and what is never prioritised', kind: 'long', hint: 'Describe people and clients by role, not by name.' },
       ] },
       { id: 'choices', title: 'Three implied choices', intro: 'Each written as a preference between two things. One at a time.', fields: [
         ...[1, 2, 3].map((n) => ({ id: `choice-${n}`, label: `Choice ${n} · the preference, and the behaviour it is read from`, kind: 'long' as const,
@@ -69,7 +69,7 @@ export const guided17: Record<string, Guided> = {
         fields: ['always-accommodated', 'always-cut', 'never-refused'],
         terms: [
           { term: 'Reading from behaviour', meaning: 'Inferring the strategy from what recurs, what is protected and what goes first. It is available to anybody paying attention.' },
-          { term: 'No team to observe', meaning: 'A complete route. A public project’s tracker, or your own product’s history, shows the same patterns; the source line says which you used.' },
+          { term: 'No team to observe', meaning: 'A complete route. A public project’s tracker, your own product’s history or the case pack’s log shows the same patterns; the source line says which you used.' },
         ],
         demo: {
           scenario: 'Made-up example. Reading what a team always cuts, and asking them.',
@@ -100,11 +100,11 @@ export const guided17: Record<string, Guided> = {
             { label: 'What the last six months showed', text: 'Every request from the two workshops that run classes was accommodated within a week. The new-member sign-up, which three people had described as confusing, was postponed four times.' },
             { label: 'What that pattern actually is', text: 'Existing regular users over new ones. Nobody chose it, nobody would defend it, and it is what the behaviour says without exception.' },
             { label: 'What the document could not do', text: 'Be wrong. Everybody in the neighbourhood excludes nobody, so it rules nothing out, and no decision could ever contradict it.' },
-            { label: 'What happened when I wrote the pattern down', text: 'The committee disagreed with it, which is the first time anybody had disagreed with a strategy statement there. The sign-up work was scheduled a fortnight later.' },
+            { label: 'What happened when I wrote the pattern down', text: 'The committee disagreed with it, which is the first time anybody had disagreed with a strategy statement there, and the sign-up work went onto the next meeting’s agenda.' },
           ],
           wrongTurn: 'The wrong turn is reading the strategy from the document, because it exists and it is official. A statement that excludes nothing cannot be contradicted by any decision, so it describes nothing anybody does.',
           tradeoff: 'Writing the pattern down produces a sentence nobody likes and nobody chose, and somebody will feel accused of a preference they never held.',
-          uncertainty: 'Still unknown: whether the pattern would have changed anyway. It changed a fortnight after being named, which is not the same as because of it.',
+          uncertainty: 'Still unknown: whether the pattern will change. Going onto an agenda after being named is not the same as being fixed.',
         },
         supported: {
           material: 'From the case pack: workshop requests are always fitted in within a week, and the new-member sign-up fix has been postponed four times. Changed constraint (organisation): the council says the grant will be renewed only if the library gains 50 new members this year.',
@@ -146,7 +146,7 @@ export const guided17: Record<string, Guided> = {
                 'a value, not a choice': 'It has a reason attached and a real trade behind it.',
                 'a tactic': 'A decision about how to deliver something already decided. Changing it would not change who the library is for.',
               } },
-            { id: 'no-power-tools', text: 'We do not lend power tools that need training, even though members ask.', answer: 'a strategic choice',
+            { id: 'no-power-tools', text: 'We do not lend tools that need training to use safely, even though members ask.', answer: 'a strategic choice',
               feedback: {
                 'a strategic choice': 'It rules something out, against demand, for a reason. This is the clearest form a strategy takes.',
                 'a value, not a choice': 'A value would be about safety in general; this refuses a specific thing people want.',
@@ -158,7 +158,7 @@ export const guided17: Record<string, Guided> = {
                 'a value, not a choice': 'It is the commonest sentence in strategy documents and it decides nothing.',
                 'a tactic': 'It is not specific enough to be one.',
               } },
-            { id: 'spreadsheet', text: 'Bookings are recorded in a spreadsheet updated each evening rather than a system.', answer: 'a tactic',
+            { id: 'spreadsheet', text: 'The stock list is a spreadsheet updated by hand each evening rather than a stock system.', answer: 'a tactic',
               feedback: {
                 'a strategic choice': 'It has large consequences for the experience, and it was chosen for cost rather than as a position about what the library is.',
                 'a value, not a choice': 'It is a specific arrangement rather than a belief.',
@@ -213,7 +213,7 @@ export const guided17: Record<string, Guided> = {
     ],
     saveRoute: {
       auto: 'Your definition, the behaviour you read, the three choices and the accident save as you type, on this device first and then online.',
-      external: 'If you read a public project’s tracker, keep your notes in your own folder and say in step 2 which project it was.',
+      external: 'If you read a public project’s tracker, keep your notes in your own folder and say in step 2 which project it was; if you used the case pack, say so.',
       creator: 'Your creator reads the accidental choice and how you can tell. A reading with no accident in it is usually a reading of the document.',
       next: 'Open Your work and choose Ready for review. The next lesson asks how this product pays for itself.',
     },
@@ -232,8 +232,8 @@ export const guided17: Record<string, Guided> = {
     route: textRoute,
     worksheet: [
       { id: 'exchange', title: 'The exchange', fields: [
-        { id: 'exchange-written', label: 'What each side gives and gets, in plain words', kind: 'long', example: 'Example (made up): a member gives a returnable deposit and a trip across town, and gets a tool for a weekend job without buying one. The library gives a tool and staff time, and gets a subscription and a member who stays.' },
-        { id: 'both-real', label: 'How you checked both sides are real rather than aspirational', kind: 'short', hint: 'An aspirational exchange describes what you would like people to value. A real one describes why they actually turn up.' },
+        { id: 'exchange-written', label: 'What each side gives and gets, in plain words', kind: 'long', example: 'Example (made up): a member gives a returnable deposit and a trip across town, and gets a tool for a weekend job without buying one. The library gives a tool and staff time, and gets a subscription and a member who stays.', hint: 'Plain words, no figures. No organisation to observe? The case pack in this lesson’s source notes is a complete route; say you used it, labelled as practice.' },
+        { id: 'both-real', label: 'How you checked both sides are real rather than aspirational', kind: 'short', sensitive: true, hint: 'An aspirational exchange describes what you would like people to value; a real one describes why they actually turn up. Summarise what people told you without names, or cite the case pack’s member notes. Keep exact words in a private note.' },
       ] },
       { id: 'payer', title: 'Who pays, who uses', fields: [
         { id: 'payer-user', label: 'Who pays and who uses', kind: 'short' },
@@ -279,7 +279,7 @@ export const guided17: Record<string, Guided> = {
           tradeoff: 'The honest version is less appealing to read and it makes the library sound like a rental shop, which somebody on the committee will resent.',
           uncertainty: 'Still unknown: how many members are in it for the community. Two conversations found two who were not, and both versions are probably true of somebody.',
         },
-        start: 'Ask two people why they actually use it, and write their answers rather than yours.',
+        start: 'Ask two people why they actually use it, or use the case pack’s member notes, and write their reasons rather than yours.',
         enough: 'Where payer and user differ, you have said who currently wins and whether anybody chose that.' },
       { expect: 'Costs in money, staff time, risk and attention, with the ones your design affects marked.',
         fields: ['cost-list', 'design-affects'],
@@ -291,9 +291,9 @@ export const guided17: Record<string, Guided> = {
           intro: 'Six consequences of a design decision at the made up tool library. For each one, decide what kind of cost it is.',
           options: ['money', 'staff time or attention', 'risk'],
           items: [
-            { id: 'phone-calls', text: 'An unclear payment screen produces about one phone call per unclear booking, to a staff of two.', answer: 'staff time or attention',
+            { id: 'phone-calls', text: 'An unclear payment screen produces about one phone call per unclear booking, to the part-time coordinator.', answer: 'staff time or attention',
               feedback: {
-                'staff time or attention': 'It is an hour somebody spends on the phone rather than checking tools in. In a two-person organisation this is the cost that matters most.',
+                'staff time or attention': 'It is an hour somebody spends on the phone rather than checking tools in. With one part-time paid person, this is the cost that matters most.',
                 money: 'It costs no money directly and it is the salary of somebody already employed.',
                 risk: 'Nothing uncertain is involved; it happens every time.',
               } },
@@ -434,7 +434,7 @@ export const guided17: Record<string, Guided> = {
         { id: 'line-marked', label: 'Where the line between visible and invisible falls', kind: 'short', hint: 'Draw it. Everything below it is invisible to the person and decides most of their experience.' },
       ] },
       { id: 'back', title: 'The back stage', fields: [
-        { id: 'back-band', label: 'What staff do and what systems are involved at each stage', kind: 'long', hint: 'Where you cannot observe, use what you can find out by asking, and mark anything you had to assume.' },
+        { id: 'back-band', label: 'What staff do and what systems are involved at each stage', kind: 'long', hint: 'Where you cannot observe, use what you can find out by asking or the case pack’s service dependencies, and mark anything you had to assume.' },
         { id: 'waits-and-agrees', label: 'Where work waits for a person, and where two systems must agree', kind: 'long' },
       ] },
       { id: 'decisive', title: 'The two decisive facts', fields: [
@@ -531,9 +531,9 @@ export const guided17: Record<string, Guided> = {
                 'a back-stage detail with no front-stage effect': 'It is entirely front stage.',
                 'a front-stage decision': 'A design decision made because of a back-stage constraint, which is the outcome step 5 is asking for.',
               } },
-            { id: 'one-volunteer', text: 'Only one volunteer knows how to issue a refund, and she is there on Tuesdays.', answer: 'a back-stage fact that decides the experience',
+            { id: 'one-volunteer', text: 'Only the treasurer can refund deposits, in one batch on Tuesday evenings.', answer: 'a back-stage fact that decides the experience',
               feedback: {
-                'a back-stage fact that decides the experience': 'It sets what a refund message can honestly promise, and it makes Wednesday to Monday a different service from Tuesday.',
+                'a back-stage fact that decides the experience': 'It sets what a refund message can honestly promise: up to a week, not “straight away”.',
                 'a back-stage detail with no front-stage effect': 'Anybody wanting a refund on a Wednesday meets it directly.',
                 'a front-stage decision': 'It is a staffing fact with front-stage consequences.',
               } },
@@ -624,7 +624,7 @@ export const guided17: Record<string, Guided> = {
         { id: 'vocabulary-note', label: 'What the assigned overview gives you, and what it does not', kind: 'long', hint: 'It is infrastructure vocabulary. It says nothing about what a screen should show, which is this lesson’s work.' },
       ] },
       { id: 'roles', title: 'The three roles', fields: [
-        { id: 'buyer', label: 'The buyer · what they want and what they are accountable for', kind: 'long', example: 'Example (made up): an office manager buying classes for staff, accountable for the budget and for showing the scheme is used.' },
+        { id: 'buyer', label: 'The buyer · what they want and what they are accountable for', kind: 'long', example: 'Example (made up): an office manager buying classes for staff, accountable for the budget and for showing the scheme is used.', hint: 'Describe roles, not real people. No organisation to observe? The case pack in this lesson’s source notes is a complete route; say you used it, labelled as practice. Its Riverside scheme has all three roles.' },
         { id: 'administrator', label: 'The administrator · what they want and what they are accountable for', kind: 'long' },
         { id: 'everyday-user', label: 'The everyday user · what they want and what they are accountable for', kind: 'long' },
         { id: 'who-chose', label: 'Which of them chose the product', kind: 'short' },
@@ -819,7 +819,7 @@ export const guided17: Record<string, Guided> = {
     route: paperRoute('the loop your change sets off, with the delay marked on each arrow'),
     worksheet: [
       { id: 'change', title: 'The change, and what follows', fields: [
-        { id: 'change-chosen', label: 'A change you have made or plan to make', kind: 'short' },
+        { id: 'change-chosen', label: 'A change you have made or plan to make', kind: 'short', hint: 'Your own, or the case pack’s one-tap cancellation, labelled as practice.' },
         { id: 'what-people-do', label: 'What people will do differently once it exists', kind: 'long', hint: 'The adaptation, not the intention. What does it now make easy that was not easy before?' },
       ] },
       { id: 'loop', title: 'Trace the loop', fields: [
@@ -1015,23 +1015,23 @@ export const guided17: Record<string, Guided> = {
     route: textRoute,
     worksheet: [
       { id: 'list', title: 'By accountability, not by title', fields: [
-        { id: 'people-listed', label: 'Everybody who can affect or block the work, and what each is accountable for', kind: 'long', hint: 'Accountable for, not their job title. What does somebody else ask them about?' },
-        { id: 'no-team-route', label: 'If you have no team, whose decisions actually constrain your work', kind: 'short', hint: 'A client, a provider, a platform, a family member whose time you need. The mapping works on any of them.' },
+        { id: 'people-listed', label: 'Everybody who can affect or block the work, and what each is accountable for', kind: 'long', sensitive: true, hint: 'Accountable for, not their job title: what does somebody else ask them about? Use roles, not names; this answer syncs to your course reviewer. The case pack’s people are a complete route, labelled as practice.' },
+        { id: 'no-team-route', label: 'If you have no team, whose decisions actually constrain your work', kind: 'short', sensitive: true, hint: 'A client, a provider, a platform, a family member whose time you need, described by role. The mapping works on any of them, or on the case pack.' },
       ] },
       { id: 'place', title: 'Interest and influence', fields: [
-        { id: 'placed', label: 'Each person placed on interest and on influence', kind: 'long', hint: 'Two separate axes. Somebody can care enormously and decide nothing.' },
-        { id: 'allies-no-influence', label: 'The allies with high interest and no influence', kind: 'short', hint: 'Usually the people who know best where the real problems are.' },
+        { id: 'placed', label: 'Each person placed on interest and on influence', kind: 'long', sensitive: true, hint: 'Two separate axes; somebody can care enormously and decide nothing. Roles, not names.' },
+        { id: 'allies-no-influence', label: 'The allies with high interest and no influence', kind: 'short', sensitive: true, hint: 'Usually the people who know best where the real problems are. Roles, not names.' },
       ] },
       { id: 'opposition', title: 'Understand the opposition', fields: [
-        { id: 'costliest-opposition', label: 'Whose opposition would cost most, and what they are accountable for', kind: 'short' },
-        { id: 'rational-basis', label: 'Why their opposition is rational from where they stand', kind: 'long', hint: 'It nearly always is. If you cannot construct it, you have not understood their accountability yet.' },
+        { id: 'costliest-opposition', label: 'Whose opposition would cost most, and what they are accountable for', kind: 'short', sensitive: true, hint: 'A role, not a name.' },
+        { id: 'rational-basis', label: 'Why their opposition is rational from where they stand', kind: 'long', sensitive: true, hint: 'It nearly always is. If you cannot construct it, you have not understood their accountability yet.' },
       ] },
       { id: 'approach', title: 'Design the approach', fields: [
         { id: 'what-it-does-for-them', label: 'What your work does for them, or that you are asking a favour', kind: 'long', hint: 'Both are legitimate. Asking a favour while pretending it is a benefit is not.' },
         { id: 'approach-designed', label: 'The approach: what you would change, offer or ask', kind: 'long' },
       ] },
       { id: 'quiet', title: 'The quiet one', fields: [
-        { id: 'quiet-blocker', label: 'The quiet blocker: somebody whose unstated reservations could stop this', kind: 'long', hint: 'The loud sceptic tells you their objection. The quiet one does not, and is usually the one who decides whether it survives.' },
+        { id: 'quiet-blocker', label: 'The quiet blocker: somebody whose unstated reservations could stop this', kind: 'long', sensitive: true, hint: 'The loud sceptic tells you their objection; the quiet one does not, and often decides whether it survives. Name the role and the probable reservation, not the person.' },
         improvementMade,
       ] },
     ],
@@ -1191,7 +1191,7 @@ export const guided17: Record<string, Guided> = {
     ],
     saveRoute: {
       auto: 'Your list, the placements, the rational basis and the approach save as you type, on this device first and then online.',
-      external: 'Keep this one to yourself. A stakeholder map is working material, and it reads very differently to the people on it.',
+      external: 'These answers sync to your course reviewer, so they use roles rather than names. Keep any named version in your own private notes: a stakeholder map reads very differently to the people on it.',
       creator: 'Your creator reads the rational basis you constructed. An opposition described as obstruction is one nobody has understood yet.',
       next: 'Open Your work and choose Ready for review. The next lesson decides what to do when the information is not going to arrive.',
     },
@@ -1210,7 +1210,7 @@ export const guided17: Record<string, Guided> = {
     route: textRoute,
     worksheet: [
       { id: 'inputs', title: 'Know, assume, guess', fields: [
-        { id: 'decision-open', label: 'The open decision', kind: 'short' },
+        { id: 'decision-open', label: 'The open decision', kind: 'short', hint: 'One of your own, or the case pack’s locker question, labelled as practice.' },
         { id: 'know-assume-guess', label: 'What you know, what you assume, and what you are guessing', kind: 'long', hint: 'Three separate lists. Most things people call knowns are assumptions with a long history.' },
         { id: 'depends-on', label: 'Which of them the decision actually depends on', kind: 'short' },
       ] },
@@ -1607,7 +1607,7 @@ export const guided17: Record<string, Guided> = {
         { id: 'business-adds', label: 'What a business context adds that a consumer one does not', kind: 'long', hint: 'Administrators, auditability, somebody else’s money, mandatory use, and a person who will do this monthly for two years.' },
       ] },
       { id: 'consumer', title: 'The consumer version', fields: [
-        { id: 'consumer-design', label: 'The feature designed for a first-time, self-selected user', kind: 'long' },
+        { id: 'consumer-design', label: 'The feature designed for a first-time, self-selected user', kind: 'long', hint: 'Your own feature, or the case pack’s booking: a member booking a few times a year against desk volunteers checking forty loans each Saturday.' },
         { id: 'consumer-optimised', label: 'What you optimised for', kind: 'short' },
       ] },
       { id: 'business', title: 'The business version', fields: [
@@ -1800,7 +1800,7 @@ export const guided17: Record<string, Guided> = {
     worksheet: [
       { id: 'patterns', title: 'Three requests, named as patterns', intro: 'Requests you could plausibly receive on your own product. One at a time.', fields: [
         ...[1, 2, 3].map((n) => ({ id: `request-${n}`, label: `Request ${n} · what is asked for, and the pattern it is an instance of`, kind: 'long' as const,
-          ...(n === 1 ? { hint: 'Hidden costs, obstructed exits, manufactured urgency, pre-ticked consent. Naming the pattern is what makes it arguable.', example: 'Example (made up): a countdown saying the place is released in five minutes when it is not. Manufactured urgency, and a false statement.' } : {}) })),
+          ...(n === 1 ? { hint: 'Hidden costs, obstructed exits, manufactured urgency, pre-ticked consent; naming the pattern is what makes it arguable. The case pack’s three board ideas are a complete route, labelled as practice.', example: 'Example (made up): a countdown saying the place is released in five minutes when it is not. Manufactured urgency, and a false statement.' } : {}) })),
       ] },
       { id: 'need', title: 'The real need underneath', fields: [
         { id: 'legitimate-needs', label: 'For each: the legitimate business need underneath', kind: 'long', hint: 'There nearly always is one. Somebody is accountable for something, and this was their idea of how to reach it.' },
@@ -2190,7 +2190,7 @@ export const guided17: Record<string, Guided> = {
     route: textRoute,
     worksheet: [
       { id: 'choices', title: 'Three choices, as preferences', fields: [
-        { id: 'choice-one', label: 'Choice 1 · a preference between two real alternatives', kind: 'long', example: 'Example (made up): first-time confidence over power-user speed, because most people book twice a year and never become fluent.' },
+        { id: 'choice-one', label: 'Choice 1 · a preference between two real alternatives', kind: 'long', example: 'Example (made up): first-time confidence over power-user speed, because most people book twice a year and never become fluent.', hint: 'For your own project, or for the case pack’s library if you have none, labelled as practice.' },
         { id: 'choice-two', label: 'Choice 2', kind: 'long' },
         { id: 'choice-three', label: 'Choice 3', kind: 'long' },
         { id: 'disagreeable', label: 'How you checked each could be disagreed with', kind: 'short' },
