@@ -9,6 +9,15 @@ import { improvementMade, revealOne, textRoute, type Guided } from './guided';
 
 export const guided11: Record<string, Guided> = {
   'm11-l01-v1': {
+    transfer: {
+      scenario: 'Made-up case: a self-service photo-printing kiosk in a shopping centre shows its instructions in light grey text, takes payment only by tapping a card on a reader fixed at standing height, and times out after 30 seconds without a touch, deleting the chosen photos.',
+      prompt: 'Write the one barrier you would fix first as a person, a situation and the design decision, and explain why it ranks first.',
+      anchors: {
+        weak: 'A category such as disabled users cannot use it, or a repair such as make the text darker, with no person, task or decision.',
+        adequate: 'For example: a person using a wheelchair, paying at the kiosk, cannot reach the card reader because it is fixed at standing height. Ranked first because there is no other way to pay, so the task is blocked completely.',
+        strong: 'As adequate, plus the same decision blocks temporary and situational cases (someone with a pram or a broken arm), and the next check: whether any other payment route exists.',
+      },
+    },
     route: textRoute,
     worksheet: [
       { id: 'read', title: 'What makes something a barrier', fields: [
@@ -150,9 +159,9 @@ export const guided11: Record<string, Guided> = {
       {
         question: 'You have five barriers and four of them are about screen readers. What does that suggest?',
         options: [
-          { label: 'That you walked the product asking about one assistive technology rather than asking who could not do this.', correct: true, feedback: 'Screen readers are the part of accessibility most people have heard of, so attention goes there first. Most barriers in a typical product are met by people using none: small targets, invisible focus, colour-only status, time limits.' },
-          { label: 'That screen readers really are where most accessibility problems are.', feedback: 'They are where a particular kind of problem concentrates. Contrast, target size, keyboard routes and time limits affect far more people and appear in almost every product.' },
-          { label: 'Nothing in particular — five barriers is five barriers.', feedback: 'What the five are about tells you what question you were asking. Four of one kind usually means the walk was looking for a technology instead of a person.' },
+          { label: 'That the walk looked for one assistive technology rather than asking who could not do this.', correct: true, feedback: 'Screen readers are the part of accessibility most people have heard of, so attention goes there first. Most barriers in a typical product are met by people using none: small targets, invisible focus, colour-only status, time limits.', was: ['That you walked the product asking about one assistive technology rather than asking who could not do this.'] },
+          { label: 'That screen readers really are where most accessibility problems in a product sit.', feedback: 'They are where a particular kind of problem concentrates. Contrast, target size, keyboard routes and time limits affect far more people and appear in almost every product.', was: ['That screen readers really are where most accessibility problems are.'] },
+          { label: 'Nothing in particular: five real barriers are five real barriers, whatever their kind.', feedback: 'What the five are about tells you what question you were asking. Four of one kind usually means the walk was looking for a technology instead of a person.', was: ['Nothing in particular — five barriers is five barriers.'] },
         ],
         repair: 'Walk the same task again asking about motor, cognitive and language differences, and replace one screen-reader barrier in step 2 with what that walk finds. Record the change in step 5.',
         recheck: 'Your five barriers cover at least three different kinds of difficulty.',
@@ -160,9 +169,9 @@ export const guided11: Record<string, Guided> = {
       {
         question: 'One of your barriers reads “the colour contrast is poor throughout”. Why is that weaker than it looks?',
         options: [
-          { label: 'It names no person, no task and no element, so nobody can fix it and nobody can check it.', correct: true, feedback: 'Throughout is the word doing the damage. It sounds comprehensive and it points at nothing, so it survives every round of fixes unchanged.' },
-          { label: 'It is fine as it stands, because contrast is measurable.', feedback: 'Contrast is measurable, and this sentence measures nothing. The measurable version names an element and a ratio.' },
-          { label: 'Contrast belongs in a later lesson, so it should not be in this list.', feedback: 'It belongs here if it stops someone. The problem is the writing, not the topic.' },
+          { label: 'It names no person, task or element, so nobody can fix it and nobody can check it.', correct: true, feedback: 'Throughout is the word doing the damage. It sounds comprehensive and it points at nothing, so it survives every round of fixes unchanged.', was: ['It names no person, no task and no element, so nobody can fix it and nobody can check it.'] },
+          { label: 'It is fine as it stands, because contrast is measurable and can be checked later.', feedback: 'Contrast is measurable, and this sentence measures nothing. The measurable version names an element and a ratio.', was: ['It is fine as it stands, because contrast is measurable.'] },
+          { label: 'Contrast belongs to a later lesson in this module, so it should not be on this list.', feedback: 'It belongs here if it stops someone. The problem is the writing, not the topic.', was: ['Contrast belongs in a later lesson, so it should not be in this list.'] },
         ],
         repair: 'Rewrite that barrier in step 2 naming one element, one task and what you actually saw. Record the change in step 5.',
         recheck: 'No barrier uses the words throughout, generally or everywhere.',
@@ -170,9 +179,9 @@ export const guided11: Record<string, Guided> = {
       {
         question: 'You ran the three situational tests and want to write “the product is accessible in daylight”. Is that allowed?',
         options: [
-          { label: 'It is not. You checked one task, on your device, with your eyes, and that is what you can say.', correct: true, feedback: 'The honest sentence is the narrow one: which task, which device, what you saw. It is smaller and it is defensible, and this module asks you to keep that boundary visible in every lesson.' },
-          { label: 'It is, since you actually went outside and it worked.', feedback: 'It worked for you, on your screen, at your brightness, with your vision. Each of those is a condition on the claim, and the sentence drops all four.' },
-          { label: 'It is, as long as you add that more testing is needed.', feedback: 'A general claim followed by a caveat is still quoted as the general claim. Narrow the sentence itself rather than appending a disclaimer to it.' },
+          { label: 'Only a narrower sentence is: one task, your device, your eyes, and what you actually saw.', correct: true, feedback: 'The honest sentence is the narrow one: which task, which device, what you saw. It is smaller and it is defensible, and this module asks you to keep that boundary visible in every lesson.', was: ['It is not. You checked one task, on your device, with your eyes, and that is what you can say.'] },
+          { label: 'It is allowed, since you went outside in real daylight and the task worked for you.', feedback: 'It worked for you, on your screen, at your brightness, with your vision. Each of those is a condition on the claim, and the sentence drops all four.', was: ['It is, since you actually went outside and it worked.'] },
+          { label: 'It is allowed, as long as the same sentence adds that more testing is still needed.', feedback: 'A general claim followed by a caveat is still quoted as the general claim. Narrow the sentence itself rather than appending a disclaimer to it.', was: ['It is, as long as you add that more testing is needed.'] },
         ],
         repair: 'Rewrite your situational lines in step 4 to say which task, which device and what you saw, then record the change in step 5.',
         recheck: 'No sentence in step 4 describes the product as a whole.',
@@ -186,6 +195,15 @@ export const guided11: Record<string, Guided> = {
     },
   },
   'm11-l02-v1': {
+    transfer: {
+      scenario: 'Made-up case: a recipe website has a cooking mode that reads each step aloud and moves to the next step automatically after 20 seconds, with no way to pause. Each step’s timer is shown only as a shrinking coloured ring.',
+      prompt: 'Choose the principle and criterion you would look up first for the automatic advance, and explain what meeting it would mean on this site.',
+      anchors: {
+        weak: 'Copies criterion text without naming a change, or says the site conforms once the mapping is written.',
+        adequate: 'Operable; timing adjustable (2.2.1) or pause, stop, hide (2.2.2). Meeting it means a visible, keyboard-reachable pause, or a setting to turn the advance off or lengthen it.',
+        strong: 'As adequate, plus the coloured ring mapped separately to use of colour (1.4.1, perceivable), and a sentence saying the mapping is design intent rather than tested conformance.',
+      },
+    },
     route: textRoute,
     worksheet: [
       { id: 'orient', title: 'Orient in the standard', fields: [
@@ -329,9 +347,9 @@ export const guided11: Record<string, Guided> = {
       {
         question: 'A colleague suggests doing the accessibility audit at the end, once the design is finished. What is the strongest objection?',
         options: [
-          { label: 'By then the expensive problems are structural, and the audit finds them when they are hardest to change.', correct: true, feedback: 'A layout with nowhere to put a visible focus ring, or a flow that depends on hover, cannot be repaired by adjusting a colour. Mapping barriers to criteria during design costs an hour and changes what gets built.' },
-          { label: 'Audits are unreliable, so it is better to check things yourself.', feedback: 'A good audit is more thorough than your own check. The problem is when it happens, not who does it.' },
-          { label: 'The standard requires accessibility work to happen during design.', feedback: 'The standard says what must be true of the result. It says nothing about when you do the work; the argument is practical rather than required.' },
+          { label: 'By then the costly problems are structural, so they are found when hardest to change.', correct: true, feedback: 'A layout with nowhere to put a visible focus ring, or a flow that depends on hover, cannot be repaired by adjusting a colour. Mapping barriers to criteria during design costs an hour and changes what gets built.', was: ['By then the expensive problems are structural, and the audit finds them when they are hardest to change.'] },
+          { label: 'Audits at any stage are unreliable, so it is better to check everything yourself.', feedback: 'A good audit is more thorough than your own check. The problem is when it happens, not who does it.', was: ['Audits are unreliable, so it is better to check things yourself.'] },
+          { label: 'The standard requires accessibility work to take place during design, not after it.', feedback: 'The standard says what must be true of the result. It says nothing about when you do the work; the argument is practical rather than required.', was: ['The standard requires accessibility work to happen during design.'] },
         ],
         repair: 'Look at your translations in step 3. Any change that would need the layout rebuilt is a structural one — mark it as such, and record the change in step 5.',
         recheck: 'Structural changes are separated from surface ones in your mapping.',
@@ -339,9 +357,9 @@ export const guided11: Record<string, Guided> = {
       {
         question: 'You have read five criteria and written what each means for your screens. Can you now say the product meets level AA?',
         options: [
-          { label: 'It cannot be said. You mapped five barriers, and conformance is a claim about every criterion in a tested build.', correct: true, feedback: 'Reading is not testing, five is not all of them, and a mapping made during design describes intent. The honest sentence names what you mapped and what remains untested.' },
-          { label: 'It can, for those five criteria at least.', feedback: 'Even for those five it is a design intention rather than a tested result. Nothing has been built and checked against them yet.' },
-          { label: 'It can, provided you add that testing is still to come.', feedback: 'A conformance claim with a caveat attached is still repeated as a conformance claim. Write the narrow sentence instead.' },
+          { label: 'Conformance covers every criterion at the level in a tested build, so it cannot be said.', correct: true, feedback: 'Reading is not testing, five is not all of them, and a mapping made during design describes intent. The honest sentence names what you mapped and what remains untested.', was: ['It cannot be said. You mapped five barriers, and conformance is a claim about every criterion in a tested build.'] },
+          { label: 'It can be said for those five criteria at least, since each one is now mapped.', feedback: 'Even for those five it is a design intention rather than a tested result. Nothing has been built and checked against them yet.', was: ['It can, for those five criteria at least.'] },
+          { label: 'It can, provided the same sentence adds that testing of the build is still to come.', feedback: 'A conformance claim with a caveat attached is still repeated as a conformance claim. Write the narrow sentence instead.', was: ['It can, provided you add that testing is still to come.'] },
         ],
         repair: 'Rewrite your boundary sentence in step 5 so it names the number of criteria mapped and says the build is untested, then record the change.',
         recheck: 'No sentence in this lesson claims a level has been met.',
@@ -349,9 +367,9 @@ export const guided11: Record<string, Guided> = {
       {
         question: 'One of your barriers has no matching criterion. What should you do with it?',
         options: [
-          { label: 'Record it as a product requirement of your own, marked as uncovered by the standard.', correct: true, feedback: 'The standard is a floor and it does not cover everything that excludes people. A date format nobody in your audience reads is a real barrier with no criterion, and it is still yours to fix.' },
-          { label: 'Find the closest criterion and map it there.', feedback: 'A stretched mapping hides the barrier inside a criterion that does not describe it, and the change you actually need disappears from the list.' },
-          { label: 'Drop it, since the module is about the standard.', feedback: 'The module starts from barriers precisely so the standard does not become the limit of the work. The barrier stays.' },
+          { label: 'Record it as your own product requirement, marked as not covered by the standard.', correct: true, feedback: 'The standard is a floor and it does not cover everything that excludes people. A date format nobody in your audience reads is a real barrier with no criterion, and it is still yours to fix.', was: ['Record it as a product requirement of your own, marked as uncovered by the standard.'] },
+          { label: 'Map it to the closest criterion, so every barrier stays traceable to the standard.', feedback: 'A stretched mapping hides the barrier inside a criterion that does not describe it, and the change you actually need disappears from the list.', was: ['Find the closest criterion and map it there.'] },
+          { label: 'Drop it from the list, since this module is about meeting the standard’s criteria.', feedback: 'The module starts from barriers precisely so the standard does not become the limit of the work. The barrier stays.', was: ['Drop it, since the module is about the standard.'] },
         ],
         repair: 'Move any stretched mapping into the uncovered field in step 2 and write what you will do about it instead. Record the change in step 5.',
         recheck: 'Every mapped criterion genuinely names its barrier, and the rest are marked uncovered.',
@@ -365,6 +383,15 @@ export const guided11: Record<string, Guided> = {
     },
   },
   'm11-l03-v1': {
+    transfer: {
+      scenario: 'Made-up case: a council Report a pothole page has five headings, all set as level one because they look big: Report a pothole, Where is it?, Details, Your contact details, Submit. On wide screens a map sits in a column to the right, but in the page’s order it comes after the whole form.',
+      prompt: 'Decide one structural fix you would make first, and explain what a person moving by headings or in reading order gains.',
+      anchors: {
+        weak: 'Makes the headings smaller to fix their level, or calls the map placement fine because it looks right.',
+        adequate: 'One page title with the rest at level two and Details renamed to what it holds; or the map moved in the reading order to where it is needed. Explains that the outline and the order are what a person navigating that way actually meets.',
+        strong: 'As adequate, plus checking by reading the headings alone and writing the content order out, and the remaining question of whether Submit should be a heading at all.',
+      },
+    },
     route: textRoute,
     worksheet: [
       { id: 'outline', title: 'Two screens as outlines', intro: 'Indented text, using labels you already have from Module 6.', fields: [
@@ -372,8 +399,8 @@ export const guided11: Record<string, Guided> = {
         { id: 'outline-b', label: 'Screen 2 · the heading outline, indented', kind: 'long' },
       ] },
       { id: 'levels', title: 'Fix the levels and the words', fields: [
-        { id: 'level-fixes', label: 'Every level you changed, and why', kind: 'long', hint: 'Look for more than one page title, and for a level that jumps from one to three.' },
-        { id: 'heading-rewrites', label: 'Every heading you rewrote because it described nothing', kind: 'long', example: 'Example (made up): Details became What to bring, because Details could sit above anything.' },
+        { id: 'level-fixes', label: 'Every level you changed, and why', kind: 'long', hint: 'Look for more than one page title, and for a level that jumps from one to three. If nothing needed changing, write that and what you checked.' },
+        { id: 'heading-rewrites', label: 'Every heading you rewrote because it described nothing', kind: 'long', hint: 'If none needed rewriting, say so and name the headings you tested.', example: 'Example (made up): Details became What to bring, because Details could sit above anything.' },
       ] },
       { id: 'regions', title: 'Regions', fields: [
         { id: 'regions-a', label: 'Screen 1 · banner, navigation, main content, complementary, footer', kind: 'long' },
@@ -382,11 +409,11 @@ export const guided11: Record<string, Guided> = {
       ] },
       { id: 'order', title: 'Reading order', fields: [
         { id: 'content-order', label: 'The order the content is actually in, as a numbered list', kind: 'long', hint: 'Not how it looks. What order would somebody meet it in if they met one thing at a time.' },
-        { id: 'order-mismatch', label: 'Every place the content order differs from the visual order, and what you did', kind: 'long', example: 'Example (made up): the price panel sits beside the title but comes after the whole description, so somebody reading in order meets it far too late. Moved before the description.' },
+        { id: 'order-mismatch', hint: 'If the two orders already match, write that and how you checked; a clean result counts.', label: 'Every place the content order differs from the visual order, and what you did', kind: 'long', example: 'Example (made up): the price panel sits beside the title but comes after the whole description, so somebody reading in order meets it far too late. Moved before the description.' },
       ] },
       { id: 'aloud', title: 'The headings, read aloud', fields: [
-        { id: 'aloud-who', label: 'Who you read the headings to, or how you ran it alone', kind: 'short', hint: 'If nobody was available, read them aloud yourself, write down what they suggest, and say so here. That is an honest result.' },
-        { id: 'aloud-result', label: 'What they said the page contains', kind: 'long' },
+        { id: 'aloud-who', sensitive: true, label: 'Who you read the headings to, or how you ran it alone', kind: 'short', hint: 'If nobody was available, read them aloud yourself, write down what they suggest, and say so here. That is an honest result. Name a role, such as a friend or a neighbour, rather than a person.' },
+        { id: 'aloud-result', sensitive: true, label: 'What they said the page contains', kind: 'long' },
         { id: 'aloud-rewrites', label: 'What you rewrote afterwards', kind: 'long' },
         improvementMade,
       ] },
@@ -507,9 +534,9 @@ export const guided11: Record<string, Guided> = {
       {
         question: 'Your designer instinct says the section heading should be large, so you set it as a page title. What is wrong with that?',
         options: [
-          { label: 'Level says where you are in the structure; size says what to look at. Tying them together produces several page titles and no outline.', correct: true, feedback: 'A person navigating by structure hears each page title as a new place. Three of them on one screen means the screen has no shape at all, however well it reads visually.' },
-          { label: 'Nothing, as long as the visual hierarchy is clear.', feedback: 'The visual hierarchy is only one of the two hierarchies on the screen. The other one is what somebody hears, and it is currently wrong.' },
-          { label: 'The heading should simply be made smaller.', feedback: 'That fixes the level by damaging the design. The two decisions are separate: keep the size and change the level.' },
+          { label: 'Level marks position in the structure and size draws the eye; tying them makes several titles.', correct: true, feedback: 'A person navigating by structure hears each page title as a new place. Three of them on one screen means the screen has no shape at all, however well it reads visually.', was: ['Level says where you are in the structure; size says what to look at. Tying them together produces several page titles and no outline.'] },
+          { label: 'Nothing, as long as the visual hierarchy on the screen still reads clearly to the eye.', feedback: 'The visual hierarchy is only one of the two hierarchies on the screen. The other one is what somebody hears, and it is currently wrong.', was: ['Nothing, as long as the visual hierarchy is clear.'] },
+          { label: 'The heading should simply be made smaller, so its size matches its level again.', feedback: 'That fixes the level by damaging the design. The two decisions are separate: keep the size and change the level.', was: ['The heading should simply be made smaller.'] },
         ],
         repair: 'Check both outlines in step 1 for more than one page title, correct them in step 2, and record the change in step 5.',
         recheck: 'Each screen has exactly one page title, whatever the text sizes are.',
@@ -517,9 +544,9 @@ export const guided11: Record<string, Guided> = {
       {
         question: 'You plan to leave the heading levels to the developer, who will see the visual design. What will happen?',
         options: [
-          { label: 'They will infer level from size, which is the mistake you just spent this lesson correcting.', correct: true, feedback: 'There is no other information available to them. Heading level is a decision about hierarchy, so it belongs with the screen that states the hierarchy.' },
-          { label: 'They will ask, since it is ambiguous.', feedback: 'It does not look ambiguous from a visual design. It looks decided, which is why nobody asks.' },
-          { label: 'It will be fine, because developers know the structure rules.', feedback: 'Knowing the rules does not tell them which of your sections belongs inside which. Only the design says that.' },
+          { label: 'They will most likely infer level from size, the mistake this lesson has just corrected.', correct: true, feedback: 'There is no other information available to them. Heading level is a decision about hierarchy, so it belongs with the screen that states the hierarchy.', was: ['They will infer level from size, which is the mistake you just spent this lesson correcting.'] },
+          { label: 'They will ask you about each heading, since the levels are ambiguous from a picture.', feedback: 'It does not look ambiguous from a visual design. It looks decided, which is why nobody asks.', was: ['They will ask, since it is ambiguous.'] },
+          { label: 'It will be fine, because developers already know the heading structure rules well.', feedback: 'Knowing the rules does not tell them which of your sections belongs inside which. Only the design says that.', was: ['It will be fine, because developers know the structure rules.'] },
         ],
         repair: 'Add the level beside every heading in both outlines in step 1, so the outline itself is the specification. Record the change in step 5.',
         recheck: 'Both outlines state levels explicitly rather than implying them.',
@@ -527,9 +554,9 @@ export const guided11: Record<string, Guided> = {
       {
         question: 'You read the headings to somebody and they described the page almost correctly, missing one section. What is the useful response?',
         options: [
-          { label: 'Rewrite the heading for the section they missed, since that is exactly what the check is for.', correct: true, feedback: 'Almost correct is the normal result, and the miss is the finding. One rewritten heading is a real improvement you would not have found by reading it yourself.' },
-          { label: 'Nothing much — one miss out of five is a good result.', feedback: 'It is a good result and it still names the heading that is not working. The check has done its job and you would be discarding the answer.' },
-          { label: 'Read it to somebody else to see whether they miss the same one.', feedback: 'A second reading is useful later. It is not a reason to leave a heading you now know did not convey its section.' },
+          { label: 'Rewrite the heading for the section they missed; that miss is what the check is for.', correct: true, feedback: 'Almost correct is the normal result, and the miss is the finding. One rewritten heading is a real improvement you would not have found by reading it yourself.', was: ['Rewrite the heading for the section they missed, since that is exactly what the check is for.'] },
+          { label: 'Leave the outline as it is, since one miss out of five sections is a good result.', feedback: 'It is a good result and it still names the heading that is not working. The check has done its job and you would be discarding the answer.', was: ['Nothing much — one miss out of five is a good result.'] },
+          { label: 'Read the headings to someone else first, to see whether they miss the same section.', feedback: 'A second reading is useful later. It is not a reason to leave a heading you now know did not convey its section.', was: ['Read it to somebody else to see whether they miss the same one.'] },
         ],
         repair: 'Rewrite the heading they missed, add it to the rewrites field in step 5, and record the change.',
         recheck: 'The section that was missed now has a heading that names it.',
@@ -543,21 +570,31 @@ export const guided11: Record<string, Guided> = {
     },
   },
   'm11-l04-v1': {
+    transfer: {
+      scenario: 'Made-up case: a library renewal page shows a Renew button greyed out at 2.1 to 1 when an item cannot be renewed, a small grey hint under the card-number field at 3.2 to 1, and the library logo in pale gold at 1.8 to 1.',
+      prompt: 'Decide which of the three must be repaired to meet contrast (minimum), and explain why each of the others is or is not covered.',
+      anchors: {
+        weak: 'Says all three fail, or treats darkening the greyed-out button as a requirement.',
+        adequate: 'Only the hint must reach 4.5 to 1, because it is ordinary small text. The inactive button and the logo are exempt from the criterion; making the disabled state readable is a design choice, not a repair owed.',
+        strong: 'As adequate, plus a readable line saying why renewal is unavailable, which then must meet 4.5 to 1 itself, and a note that passing the ratio is a floor (size, weight, light).',
+      },
+    },
     route: textRoute,
     worksheet: [
       { id: 'measure', title: 'Every text pair, measured', intro: 'List first, measure second. The pairs people forget are the ones that fail.', fields: [
-        { id: 'pairs-list', label: 'Every place text sits on a surface, including the quiet text', kind: 'long', hint: 'Body, headings, captions, placeholder text, disabled labels, text over images, text inside buttons, and anything in a coloured panel.' },
-        { id: 'ratios', label: 'The measured ratio for each pair', kind: 'long', example: 'Example (made up): caption on card 3.1 to 1 · placeholder in search 2.8 to 1 · disabled button label 2.4 to 1 · body on white 12.6 to 1.' },
-        { id: 'failing', label: 'The pairs below the threshold that applies to them', kind: 'long', hint: 'The threshold depends on size and weight, so write the size beside each failing pair.' },
+        { id: 'pairs-list', label: 'Every place text sits on a surface, including the quiet text', kind: 'long', hint: 'Body, headings, captions, placeholder text, disabled labels, text over images, text inside buttons, and anything in a coloured panel. Mark the exempt ones: text in a disabled control, pure decoration and logos.' },
+        { id: 'ratios', label: 'The measured ratio for each pair', kind: 'long', example: 'Example (made up): caption on card 3.1 to 1 · placeholder in search 2.8 to 1 · disabled button label 2.4 to 1 (exempt) · body on white 12.6 to 1.' },
+        { id: 'failing', label: 'The pairs below the threshold that applies to them', kind: 'long', hint: 'The threshold is 4.5 to 1 for ordinary text and 3 to 1 for large text, so write the size beside each failing pair. Exempt pairs are not failing.' },
+        { id: 'exempt-pairs', label: 'Pairs the criterion exempts (inactive controls, pure decoration, logos), and any you chose to strengthen anyway, with your reason', kind: 'long', optional: true, hint: 'Exempt means no contrast requirement applies. Strengthening one is a design preference you may choose, not a repair you owe. A line explaining why a control is disabled is information, so it must meet the ratio.' },
       ] },
       { id: 'repair', title: 'Repair, then measure again', fields: [
-        { id: 'repairs', label: 'What you did to each failing pair', kind: 'long', hint: 'Darken it, replace it, or remove it. Removing decorative text is a repair; dimming meaningful text is not.' },
+        { id: 'repairs', label: 'What you did to each failing pair', kind: 'long', hint: 'Darken it, replace it, or remove it. Removing decorative text is a repair; dimming meaningful text is not. If nothing failed, write that and how you measured.' },
         { id: 'remeasured', label: 'The new ratio beside the old one for each repair', kind: 'long' },
       ] },
       { id: 'enlarge', title: 'Text at about 200 per cent', fields: [
         { id: 'enlarge-how', label: 'How you enlarged the text, and on what', kind: 'short', example: 'Example (made up): browser text size set to 200 per cent on my laptop, then the same two screens opened again.' },
-        { id: 'breakages', label: 'Every clip, overlap, truncation and sideways scroll you saw', kind: 'long' },
-        { id: 'enlarge-fixes', label: 'What you changed, and what the container does now', kind: 'long', hint: 'Let the container grow. Shrinking the text back is not a fix; it is undoing the test.' },
+        { id: 'breakages', hint: 'If nothing broke, write that and which screens you checked; a clean result counts.', label: 'Every clip, overlap, truncation and sideways scroll you saw', kind: 'long' },
+        { id: 'enlarge-fixes', label: 'What you changed, and what the container does now', kind: 'long', hint: 'Let the container grow. Shrinking the text back is not a fix; it is undoing the test. If nothing broke, write none needed.' },
       ] },
       { id: 'comfort', title: 'Comfort, not just the floor', fields: [
         { id: 'line-length', label: 'Characters per line at your widest layout, counted', kind: 'short' },
@@ -572,10 +609,10 @@ export const guided11: Record<string, Guided> = {
     ],
     guide: [
       { expect: 'Every text-on-surface pair listed, each with a measured ratio, and the failing ones marked with their size.',
-        fields: ['pairs-list', 'ratios', 'failing'],
+        fields: ['pairs-list', 'ratios', 'failing', 'exempt-pairs'],
         terms: [
           { term: 'Contrast ratio', meaning: 'A number from 1 to 21 comparing how light the text is against how light its background is. It is calculated, not judged by eye.' },
-          { term: 'Quiet text', meaning: 'Captions, placeholder text, helper lines and disabled labels. They are set pale on purpose, which is exactly why they fail most often.' },
+          { term: 'Quiet text', meaning: 'Captions, placeholder text and helper lines. They are set pale on purpose, which is exactly why they fail most often. Disabled labels are pale too, and the criterion exempts them.' },
           { term: 'Threshold', meaning: 'The ratio a pair has to reach. Larger and heavier text is allowed a lower one, so the size has to be recorded beside the number.' },
         ],
         demo: {
@@ -584,7 +621,7 @@ export const guided11: Record<string, Guided> = {
             { label: 'What I listed', text: 'Six pairs: the title, the body, the two headings, the button label and the price. All six passed comfortably, and I nearly wrote that the screen was fine.' },
             { label: 'What made me look again', text: 'The barrier list from lesson one had a line about a collection code nobody could read outdoors, and the code was not among my six.' },
             { label: 'What I had left out', text: 'Placeholder text in the search box. Helper text under the date field. The disabled label on the unavailable button. The caption under the photograph. None of them felt like text I had designed; all of them are text somebody reads.' },
-            { label: 'What the numbers were', text: 'Placeholder 2.8 to 1, helper 3.4 to 1, disabled label 2.4 to 1, caption 3.1 to 1. Four failures, none of them in my original list.' },
+            { label: 'What the numbers were', text: 'Placeholder 2.8 to 1, helper 3.4 to 1, caption 3.1 to 1: three failures, none of them in my original list. The disabled label measured 2.4 to 1 and is exempt, because the criterion sets no requirement for inactive controls; I recorded it as exempt rather than as passing.' },
             { label: 'What I changed about the method', text: 'I stopped listing text and started listing places text sits on a surface, going through the screen area by area rather than from memory.' },
           ],
           wrongTurn: 'The wrong turn is listing the text you chose rather than the text that is there. Everything you deliberately set is likely to be fine, because you were looking at it when you set it.',
@@ -597,10 +634,10 @@ export const guided11: Record<string, Guided> = {
         fields: ['repairs', 'remeasured'],
         terms: [
           { term: 'Repair by removal', meaning: 'Taking the text away rather than darkening it. It is the right answer when the text was decorative, or when a permanent label can replace a placeholder.' },
-          { term: 'Disabled label', meaning: 'The text on a control that cannot be used. If it is unreadable, the person cannot tell what they are not allowed to do, which is worse than no control at all.' },
+          { term: 'Disabled label', meaning: 'The text on a control that cannot be used right now. The contrast criterion sets no requirement for it, so a pale one is not a failure. Making it readable, or adding a line that explains it, is a design choice; that explaining line is information and must meet the ratio.' },
         ],
         sorter: {
-          intro: 'Five failing pairs from a made up tool-library screen. For each one, decide what the right repair is.',
+          intro: 'Five pale text pairs from a made up tool-library screen, each below 4.5 to 1 at body size. For each one, decide what it needs.',
           options: ['darken the text', 'replace it with something permanent', 'remove it'],
           items: [
             { id: 'caption', text: 'The caption under the photograph, at 3.1 to 1, which says what the photograph shows.', answer: 'darken the text',
@@ -619,13 +656,13 @@ export const guided11: Record<string, Guided> = {
               feedback: {
                 'darken the text': 'Darkening it makes a decorative leftover more prominent than the content, which is the opposite of what anyone wants.',
                 'replace it with something permanent': 'There is nothing to replace it with. It is not telling a reader anything they need.',
-                'remove it': 'Decorative text that fails is the easy case. Take it out and the failure and the clutter both go.',
+                'remove it': 'It tells a reader nothing true. Pure decoration has no contrast requirement, so this is clutter rather than a contrast failure, and taking it out is still the right repair.',
               } },
-            { id: 'disabled', text: 'The label on a Reserve button that cannot be pressed because the class is full, at 2.4 to 1.', answer: 'darken the text',
+            { id: 'disabled', text: 'The label on a Reserve button that cannot be pressed because the drill is out on loan, at 2.4 to 1. Nothing else on the card says it is out on loan.', answer: 'replace it with something permanent',
               feedback: {
-                'darken the text': 'A person has to be able to read what they are not allowed to do, and why. Disabled is a state, not a licence to be unreadable, and a written reason beside it helps more still.',
-                'replace it with something permanent': 'The label is already permanent. What is wrong with it is the colour.',
-                'remove it': 'A control with no readable label tells nobody anything. The person cannot even tell what has been disabled.',
+                'darken the text': 'Allowed, and not required: the contrast criterion sets no requirement for text inside an inactive control. Darkening it can make the button look pressable, and it still does not say why it is unavailable.',
+                'replace it with something permanent': 'The pale label is exempt from the ratio, so it is not the failure. The missing reason is: a readable line such as On loan until Friday says what the button cannot. That line is information, so it must meet 4.5 to 1.',
+                'remove it': 'Removing the button removes the only hint that borrowing happens here. The state needs explaining in readable text, not hiding.',
               } },
             { id: 'helper', text: 'Helper text under the date field, at 3.4 to 1, repeating the label in different words.', answer: 'remove it',
               feedback: {
@@ -635,7 +672,7 @@ export const guided11: Record<string, Guided> = {
               } },
           ],
           then: 'Now decide the repair for each of your own failing pairs, and write the new ratio beside the old one.',
-          pattern: 'The placeholder is the one worth remembering. When text fails and also disappears, the repair is to move it somewhere permanent rather than to change its colour, because the colour was never the only problem.',
+          pattern: 'The placeholder is the one worth remembering. When text fails and also disappears, the repair is to move it somewhere permanent rather than to change its colour. The disabled button is the other: the criterion exempts inactive controls, and the reason a control is unavailable is information that must be readable.',
         },
         start: 'Take the worst ratio first and decide which of the three repairs it needs before you touch any colour.',
         enough: 'Every failing pair has a new measured number recorded, not an assumption that the repair worked.' },
@@ -681,19 +718,19 @@ export const guided11: Record<string, Guided> = {
       {
         question: 'Every pair passes its ratio. Can you say the text on this screen is fine?',
         options: [
-          { label: 'It cannot be said. The ratio covers one colour on another at a size, and says nothing about thin type, long lines, or text over a photograph.', correct: true, feedback: 'The ratio is a floor. A screen of 95-character lines in a hairline weight passes every check and is still tiring to read, and text over an image has a different ratio in every part of the image.' },
-          { label: 'It can, because the ratio is the actual standard.', feedback: 'It is the criterion, which is the minimum somebody may ship. Comfort, line length and weight sit outside it and still decide whether the text gets read.' },
-          { label: 'It can for body text, though headings need a separate check.', feedback: 'Headings are usually the safest case, because larger text is allowed a lower threshold and is easier to read anyway. The risk sits with the small, thin and quiet text.' },
+          { label: 'Only the contrast floor is met; thin type, long lines and text on photos sit outside it.', correct: true, feedback: 'The ratio is a floor. A screen of 95-character lines in a hairline weight passes every check and is still tiring to read, and text over an image has a different ratio in every part of it.', was: ['It cannot be said. The ratio covers one colour on another at a size, and says nothing about thin type, long lines, or text over a photograph.'] },
+          { label: 'It can be said, because the ratio is the actual requirement the text has to meet.', feedback: 'It is the criterion, which is the minimum somebody may ship. Comfort, line length and weight sit outside it and still decide whether the text gets read.', was: ['It can, because the ratio is the actual standard.'] },
+          { label: 'It can for body text, though the headings still need a separate contrast check.', feedback: 'Headings are usually the safest case, because larger text is allowed a lower threshold and is easier to read anyway. The risk sits with the small, thin and quiet text.', was: ['It can for body text, though headings need a separate check.'] },
         ],
         repair: 'Add the line length and the lightest font weight you use to your comfort notes in step 4, and record the change in step 5.',
         recheck: 'Your record separates the ratio from whether the text is comfortable to read.',
       },
       {
-        question: 'At 200 per cent the price panel clips. The quickest fix is to reduce that panel’s text size. Why is that the wrong fix?',
+        question: 'At 200 per cent the price panel clips. The quickest fix is to reduce that panel’s text size. Is that a good fix?',
         options: [
-          { label: 'It takes the enlargement away from the person who asked for it, and hides the layout problem instead of fixing it.', correct: true, feedback: 'The person set 200 per cent because that is what they can read. Overriding it in one panel means the panel is now the least readable thing on the screen, and the fixed-height container is still there.' },
-          { label: 'It is acceptable if the panel is secondary content.', feedback: 'Secondary content still has to be readable, and price is rarely secondary. The container is the thing that is wrong.' },
-          { label: 'It is fine as an interim fix while the layout is rebuilt.', feedback: 'An interim fix that looks correct in a screenshot tends to become the permanent one, because nothing remains visibly broken to prompt the rebuild.' },
+          { label: 'It takes back the enlargement the person chose and leaves the fixed-height box in place.', correct: true, feedback: 'The person set 200 per cent because that is what they can read. Overriding it in one panel means the panel is now the least readable thing on the screen, and the fixed-height container is still there.', was: ['It takes the enlargement away from the person who asked for it, and hides the layout problem instead of fixing it.'] },
+          { label: 'It is acceptable when the panel is secondary content that few people need to read.', feedback: 'Secondary content still has to be readable, and price is rarely secondary. The container is the thing that is wrong.', was: ['It is acceptable if the panel is secondary content.'] },
+          { label: 'It is fine as an interim fix while the layout is rebuilt to let the panel grow.', feedback: 'An interim fix that looks correct in a screenshot tends to become the permanent one, because nothing remains visibly broken to prompt the rebuild.', was: ['It is fine as an interim fix while the layout is rebuilt.'] },
         ],
         repair: 'Change that container in step 3 so it grows with its content, and write what it does now. Record the change in step 5.',
         recheck: 'No fix in step 3 reduces a text size.',
@@ -701,9 +738,9 @@ export const guided11: Record<string, Guided> = {
       {
         question: 'A placeholder fails at 2.8 to 1 and you darken it until it passes. What is still wrong?',
         options: [
-          { label: 'It still disappears the moment anybody types, so the instruction is gone exactly when it is needed.', correct: true, feedback: 'Contrast was the measurable half of the problem. A placeholder is a label that vanishes on use, and that half does not show up in any ratio.' },
-          { label: 'Nothing, once it passes the threshold.', feedback: 'It passes, and it is still the only place the instruction lives. Anyone who pauses mid-entry has nothing to look at.' },
-          { label: 'Darkened placeholder text now looks like a typed value.', feedback: 'That is a genuine second problem and it is a symptom. Both come from using a placeholder to carry an instruction.' },
+          { label: 'It still vanishes the moment anybody types, so the instruction goes when it is needed.', correct: true, feedback: 'Contrast was the measurable half of the problem. A placeholder is a label that vanishes on use, and that half does not show up in any ratio.', was: ['It still disappears the moment anybody types, so the instruction is gone exactly when it is needed.'] },
+          { label: 'Nothing further, once the darkened placeholder passes the contrast threshold.', feedback: 'It passes, and it is still the only place the instruction lives. Anyone who pauses mid-entry has nothing to look at.', was: ['Nothing, once it passes the threshold.'] },
+          { label: 'Only that darker placeholder text could be mistaken for a value already typed.', feedback: 'That is a real side effect, and it is not the only problem: the instruction still disappears on the first keystroke. Both come from using a placeholder to carry an instruction.', was: ['Darkened placeholder text now looks like a typed value.'] },
         ],
         repair: 'Move that instruction to a permanent label or hint in step 2, record the repair, and note the change in step 5.',
         recheck: 'No instruction in your design lives only in placeholder text.',
@@ -717,14 +754,24 @@ export const guided11: Record<string, Guided> = {
     },
   },
   'm11-l05-v1': {
+    transfer: {
+      scenario: 'Made-up case: a screen at a bus stop shows each arriving bus as a coloured bar: green for on time, amber for delayed, red for cancelled. A printed key fixed beside the screen explains the colours.',
+      prompt: 'Decide what second signal you would add, and explain why the printed key is not enough.',
+      anchors: {
+        weak: 'Says the key solves it, or swaps to a colour-blind-safe palette only.',
+        adequate: 'Adds words on each bar, such as On time, Delayed 5 min and Cancelled. Explains that the key explains a code some people cannot see, because of colour-vision differences, glare or a monochrome display.',
+        strong: 'As adequate, plus checking it in greyscale and a simulation, noting that the words also feed an audio announcement or screen reader, and the space the words cost on the bar.',
+      },
+    },
     route: textRoute,
     worksheet: [
       { id: 'find', title: 'Where colour is carrying meaning', intro: 'Status, charts, required fields, links and errors are the usual places. Check them by name.', fields: [
-        { id: 'colour-signals', label: 'Every place the meaning depends on colour', kind: 'long', example: 'Example (made up): the availability dot, the required-field labels, the three chart series, the error border on the date field.' },
+        { id: 'colour-signals', label: 'Every place the meaning depends on colour', kind: 'long', hint: 'If you find none, write none and how you checked: status, charts, required fields, links and errors.', example: 'Example (made up): the availability dot, the required-field labels, the three chart series, the error border on the date field.' },
         { id: 'what-is-lost', label: 'For each one: what a person misses if every colour became the same grey', kind: 'long', hint: 'Be specific. Not “the status”, but “which of the two classes still has places”.' },
       ] },
       { id: 'add', title: 'A second signal for each', intro: 'One at a time. You are adding, not replacing: the colour stays.', fields: [
         ...[1, 2, 3, 4].map((n) => ({ id: `signal-${n}`, label: `Signal ${n} · the place, and the second signal you added`, kind: 'long' as const,
+          ...(n >= 2 ? { optional: true } : {}),
           ...(n === 1 ? { hint: 'Text works for everybody, including somebody listening. A shape works only if its outline differs from its neighbours.', example: 'Example (made up): availability dot · the words Places available, 2 left, or Full beside it, in the same size as the class time.' } : {}) })),
       ] },
       { id: 'grey', title: 'Greyscale', fields: [
@@ -842,7 +889,7 @@ export const guided11: Record<string, Guided> = {
       { expect: 'A colour-vision simulation actually run, what became hard to tell apart, and anything left unfixed with its reason.',
         fields: ['simulation-run', 'simulation-found', 'simulation-left'],
         terms: [
-          { term: 'Colour-vision difference', meaning: 'Reduced ability to tell certain hues apart, most often red from green. It affects roughly one man in twelve, which is far more people than most teams assume.' },
+          { term: 'Colour-vision difference', meaning: 'Reduced ability to tell certain hues apart, most often red from green. It affects roughly one man in twelve in many populations, and far fewer women, which is more people than most teams assume.' },
           { term: 'Simulation', meaning: 'A filter that shows roughly what a screen looks like with a particular colour-vision difference. It is available in browser developer tools with no account and no purchase.' },
         ],
         start: 'Open the results screen, turn on the first simulation, and look at your status colours before anything else.',
@@ -860,9 +907,9 @@ export const guided11: Record<string, Guided> = {
       {
         question: 'Your team already uses a colour-blind-safe palette. Does that close this lesson?',
         options: [
-          { label: 'It does not. A safe palette lowers the chance of confusing two hues and carries no meaning at all for a printed page, a monochrome screen, or somebody listening.', correct: true, feedback: 'The palette is a sensible precaution about hue. The second signal is what makes the meaning available when there is no hue to read, which is a different problem.' },
-          { label: 'It does for colour-vision differences, and the rest is optional.', feedback: 'Even within colour-vision differences a palette reduces risk rather than removing it, and it does nothing for the grey, printed and spoken cases at all.' },
-          { label: 'It does, provided the palette was tested.', feedback: 'A tested palette is still only about which hues can be told apart. Somebody hearing the screen read aloud gets no hue of any kind.' },
+          { label: 'A safe palette helps tell hues apart, and does nothing for a grey, printed or spoken screen.', correct: true, feedback: 'The palette is a sensible precaution about hue. The second signal is what makes the meaning available when there is no hue to read, which is a different problem.', was: ['It does not. A safe palette lowers the chance of confusing two hues and carries no meaning at all for a printed page, a monochrome screen, or somebody listening.'] },
+          { label: 'It does for colour-vision differences, and the remaining cases are optional extras.', feedback: 'Even within colour-vision differences a palette reduces risk rather than removing it, and it does nothing for the grey, printed and spoken cases at all.', was: ['It does for colour-vision differences, and the rest is optional.'] },
+          { label: 'It does, provided the palette was tested with a colour-vision simulation first.', feedback: 'A tested palette is still only about which hues can be told apart. Somebody hearing the screen read aloud gets no hue of any kind.', was: ['It does, provided the palette was tested.'] },
         ],
         repair: 'Write your one-sentence answer in the palette note in step 5, naming somebody a palette cannot reach. Record the change.',
         recheck: 'Your note names a reader for whom hue is unavailable entirely.',
@@ -870,9 +917,9 @@ export const guided11: Record<string, Guided> = {
       {
         question: 'You added an icon beside each status dot, and in greyscale all three icons look the same. What went wrong?',
         options: [
-          { label: 'The icons differ by colour rather than by outline, so a second element was added but not a second signal.', correct: true, feedback: 'Three circles in three colours are one shape. The test is whether the outlines differ when everything is black, and it is easy to fail while feeling the problem is solved.' },
-          { label: 'Icons are the wrong choice; only text works.', feedback: 'Text is the safest choice and icons can work, if their silhouettes genuinely differ. A tick and a cross survive greyscale perfectly well.' },
-          { label: 'The icons are too small for the difference to show.', feedback: 'Size would make identical shapes bigger and still identical. The problem is the shapes, not the scale.' },
+          { label: 'The icons differ by colour, not outline, so you added an element but not a second signal.', correct: true, feedback: 'Three circles in three colours are one shape. The test is whether the outlines differ when everything is black, and it is easy to fail while feeling the problem is solved.', was: ['The icons differ by colour rather than by outline, so a second element was added but not a second signal.'] },
+          { label: 'Icons were the wrong choice from the start, because only text can be a second signal.', feedback: 'Text is the safest choice and icons can work, if their silhouettes genuinely differ. A tick and a cross survive greyscale perfectly well.', was: ['Icons are the wrong choice; only text works.'] },
+          { label: 'The icons are too small for the difference between them to show up in greyscale.', feedback: 'Size would make identical shapes bigger and still identical. The problem is the shapes, not the scale.', was: ['The icons are too small for the difference to show.'] },
         ],
         repair: 'Replace that signal in step 2 with a word, or with shapes whose outlines differ, then check it in greyscale again. Record the change in step 5.',
         recheck: 'Every added signal is still distinguishable when the screen is entirely grey.',
@@ -880,9 +927,9 @@ export const guided11: Record<string, Guided> = {
       {
         question: 'Your form marks required fields with red labels, and a line at the top explains that red means required. Is that a second signal?',
         options: [
-          { label: 'It is not. The sentence explains a distinction that disappears the moment colour does, so it does not help the reader who needs it.', correct: true, feedback: 'An explanation of a colour code is not a second carrier of the meaning. In grey, or read aloud, the reader knows the rule and cannot see which labels it applies to.' },
-          { label: 'It is, because the meaning is stated in words somewhere on the screen.', feedback: 'The words state the rule rather than the status of each field. The person still cannot tell which fields are required.' },
-          { label: 'It is, provided the explanation is close to the fields.', feedback: 'Moving the sentence nearer does not attach it to any particular field. The word required has to be on the field itself.' },
+          { label: 'The line explains a colour code the reader may not see, so no field states its own status.', correct: true, feedback: 'An explanation of a colour code is not a second carrier of the meaning. In grey, or read aloud, the reader knows the rule and cannot see which labels it applies to.', was: ['It is not. The sentence explains a distinction that disappears the moment colour does, so it does not help the reader who needs it.'] },
+          { label: 'It is, because the meaning is stated in plain words somewhere on the same screen.', feedback: 'The words state the rule rather than the status of each field. The person still cannot tell which fields are required.', was: ['It is, because the meaning is stated in words somewhere on the screen.'] },
+          { label: 'It is, provided the explaining sentence sits right beside the fields it describes.', feedback: 'Moving the sentence nearer does not attach it to any particular field. The word required has to be on the field itself.', was: ['It is, provided the explanation is close to the fields.'] },
         ],
         repair: 'Put the word required on each required field in step 2 and remove the reliance on the explanatory line. Record the change in step 5.',
         recheck: 'Each required field states its own status rather than relying on a key.',
@@ -896,24 +943,33 @@ export const guided11: Record<string, Guided> = {
     },
   },
   'm11-l06-v1': {
-    route: textRoute,
+    transfer: {
+      scenario: 'Made-up case: on a coworking-desk booking site, a keyboard user can tab to the floor map, but desks on it can only be chosen by clicking; the arrow keys do nothing. The Book button shows no visible focus. The filter drawer closes when Escape is pressed.',
+      prompt: 'Decide which failure to repair first, and explain how you ranked it.',
+      anchors: {
+        weak: 'Fixes the invisible focus first because it is the most noticeable, or suggests using a mouse for the map.',
+        adequate: 'Repairs the map first: no desk can be chosen without a pointer, so the task is blocked. Invisible focus is severe but survivable. Escape closing the drawer works as intended and is recorded as working.',
+        strong: 'As adequate, plus a keyboard route written as key-table rows (arrow keys, or a plain list of desks as an alternative), a re-test with the pointer out of reach, and voice control named as untested.',
+      },
+    },
+    route: { recommended: 'Run the keyboard test on your own running page if you have one, such as a local HTML build or a free tool’s preview. First open the course’s practice lab for the exact keys and what to record: keep the course site name in the address bar, replace everything after it with /labs/m11/ and press Enter. Write what happens in this worksheet as you go.', alternative: 'No running page yet? Practise the keys on the lab page itself, then walk one task through your Module 8 screens on paper with your Module 9 key tables, writing the expected key behaviour for each control and marking every result as specified and untested.' },
     worksheet: [
       { id: 'prepare', title: 'Set the test up honestly', fields: [
-        { id: 'what-tested', label: 'What you are testing, and where it runs', kind: 'short', example: 'Example (made up): the local HTML build of the booking flow, opened in my browser, mouse in the next room.' },
+        { id: 'what-tested', label: 'What you are testing, and where it runs', kind: 'short', example: 'Example (made up): the local HTML build of the booking flow, opened in my browser, mouse in the next room. Or: my Module 8 screens on paper with the key tables, every result marked specified and untested.' },
         { id: 'task-chosen', label: 'The one whole task you will attempt', kind: 'short', hint: 'Whole means from the first screen to the outcome. Half a task hides the failures in the second half.' },
         { id: 'tables-ready', label: 'Which Module 9 key tables you have beside you', kind: 'short' },
       ] },
       { id: 'attempt', title: 'The attempt, recorded as it happens', intro: 'Write while you go. Anything you reconstruct afterwards is a memory of a design you already know.', fields: [
         { id: 'attempt-log', label: 'What happened, step by step, keys and all', kind: 'long', hint: 'Tab, arrows, enter, space, escape. Say which key you pressed and what the screen did.' },
-        { id: 'blocked-at', label: 'Every point where you could not proceed', kind: 'long' },
-        { id: 'lost-focus', label: 'Every point where focus vanished or the order jumped', kind: 'long', example: 'Example (made up): after closing the date panel, the next tab went to the footer. I could not tell where I was for three presses.' },
+        { id: 'blocked-at', hint: 'If you could always go on, write none and what you tried.', label: 'Every point where you could not proceed', kind: 'long' },
+        { id: 'lost-focus', label: 'Every point where focus vanished or the order jumped', kind: 'long', hint: 'If focus stayed visible and in order throughout, write that; a clean result counts.', example: 'Example (made up): after closing the date panel, the next tab went to the footer. I could not tell where I was for three presses.' },
       ] },
       { id: 'traps', title: 'Traps', fields: [
         { id: 'trap-hunt', label: 'Each custom control you entered, and how you got out', kind: 'long', hint: 'Dialogues, pickers, menus, anything embedded. Try tab first, then escape.' },
-        { id: 'traps-found', label: 'Anything that captured focus and would not release it', kind: 'long' },
+        { id: 'traps-found', hint: 'If nothing held focus, write none and which controls you tried to leave.', label: 'Anything that captured focus and would not release it', kind: 'long' },
       ] },
       { id: 'repair', title: 'Repair the one that blocks most', fields: [
-        { id: 'repair-chosen', label: 'Which failure you repaired, and why it was the worst', kind: 'short', hint: 'Worst means most completely stops the task, not most irritating.' },
+        { id: 'repair-chosen', label: 'Which failure you repaired, and why it was the worst', kind: 'short', hint: 'Worst means most completely stops the task, not most irritating. If the attempt found no failure, write that here and in the next two answers.' },
         { id: 'repair-spec', label: 'The key table rows you used as the specification for the fix', kind: 'long' },
         { id: 'repair-result', label: 'What happens now when you attempt the same point with the keyboard', kind: 'long' },
       ] },
@@ -1039,9 +1095,9 @@ export const guided11: Record<string, Guided> = {
       {
         question: 'Somebody says keyboard-only use is a niche case not worth this much effort. What is the strongest reply?',
         options: [
-          { label: 'It covers people with motor impairments, switch and voice users, many screen-reader users, anyone with a broken trackpad, and it is what other assistive technology is built on.', correct: true, feedback: 'Voice control commonly maps onto keyboard operation, and screen readers move through the same order. A keyboard failure is rarely only a keyboard failure.' },
-          { label: 'Because the standard requires it.', feedback: 'It does, and a requirement rarely changes anybody’s mind about effort. The reason the requirement exists is the stronger answer.' },
-          { label: 'Because experienced users prefer the keyboard.', feedback: 'Many do, and that is a convenience argument. It invites the reply that convenience can wait.' },
+          { label: 'Many rely on it: motor impairments, switch and voice users, screen-reader users, broken trackpads.', correct: true, feedback: 'Voice control commonly maps onto keyboard operation, and screen readers move through the same order, so a keyboard failure is rarely only a keyboard failure.', was: ['It covers people with motor impairments, switch and voice users, many screen-reader users, anyone with a broken trackpad, and it is what other assistive technology is built on.'] },
+          { label: 'That the standard requires keyboard access, so the effort is not optional for anyone.', feedback: 'It does, and a requirement rarely changes anybody’s mind about effort. The reason the requirement exists is the stronger answer.', was: ['Because the standard requires it.'] },
+          { label: 'That experienced users prefer the keyboard, so it is worth the effort for speed alone.', feedback: 'Many do, and that is a convenience argument. It invites the reply that convenience can wait.', was: ['Because experienced users prefer the keyboard.'] },
         ],
         repair: 'Add to your defect list in step 5 which of these groups each failure affects, so severity is arguable from the list itself. Record the change.',
         recheck: 'Each defect names who it affects beyond keyboard users.',
@@ -1049,9 +1105,9 @@ export const guided11: Record<string, Guided> = {
       {
         question: 'You could reach the date picker with tab, so tab order is fine there. Is the control accessible?',
         options: [
-          { label: 'Not necessarily. Reachable and operable are separate: focus landing on a control proves nothing about whether any key does anything.', correct: true, feedback: 'This is the failure that looks like success. The tab order passes, focus moves correctly, and the person still cannot choose a date.' },
-          { label: 'It is, since the person can get to it and use enter.', feedback: 'Enter may open it and do nothing inside it. What matters is whether the task can be completed once focus is there.' },
-          { label: 'It is, if focus is visible on it.', feedback: 'Visible focus tells the person where they are. It does not give them a way to act.' },
+          { label: 'Reaching it proves nothing yet; you still have to check that some key actually operates it.', correct: true, feedback: 'This is the failure that looks like success. The tab order passes, focus moves correctly, and the person still cannot choose a date.', was: ['Not necessarily. Reachable and operable are separate: focus landing on a control proves nothing about whether any key does anything.'] },
+          { label: 'It is, since the person can get to it with tab and then press enter to open it.', feedback: 'Enter may open it and do nothing inside it. What matters is whether the task can be completed once focus is there.', was: ['It is, since the person can get to it and use enter.'] },
+          { label: 'It is, provided the focus indicator is clearly visible on it when it is reached.', feedback: 'Visible focus tells the person where they are. It does not give them a way to act.', was: ['It is, if focus is visible on it.'] },
         ],
         repair: 'Go back through your attempt log in step 2 and mark every control you reached but could not operate. Record the change in step 5.',
         recheck: 'Reachable and operable are marked separately for every control in the log.',
@@ -1059,9 +1115,9 @@ export const guided11: Record<string, Guided> = {
       {
         question: 'The quickest fix for the hover-only remove control is to say people can use the mouse for that one action. Is that acceptable?',
         options: [
-          { label: 'It is not a repair at all. It restates the barrier as an instruction and leaves the task impossible for anybody without a pointer.', correct: true, feedback: 'Every function has to be available without a pointer. A documented workaround that requires the thing the person does not have changes nothing except the tone.' },
-          { label: 'It is acceptable for a secondary action like removal.', feedback: 'Removing an item is how somebody corrects a mistake. Leaving them unable to correct a mistake is not a secondary failure.' },
-          { label: 'It is acceptable as a note while the fix is scheduled.', feedback: 'Written as a note, it stops looking like a defect, and a thing that does not look like a defect does not get scheduled.' },
+          { label: 'That restates the barrier as an instruction; without a pointer the task is still impossible.', correct: true, feedback: 'Every function has to be available without a pointer. A documented workaround that requires the thing the person does not have changes nothing except the tone.', was: ['It is not a repair at all. It restates the barrier as an instruction and leaves the task impossible for anybody without a pointer.'] },
+          { label: 'It is acceptable for a secondary action like removal that people rarely need to use.', feedback: 'Removing an item is how somebody corrects a mistake. Leaving them unable to correct a mistake is not a secondary failure.', was: ['It is acceptable for a secondary action like removal.'] },
+          { label: 'It is acceptable as a written note for now, while the proper fix is scheduled.', feedback: 'Written as a note, it stops looking like a defect, and a thing that does not look like a defect does not get scheduled.', was: ['It is acceptable as a note while the fix is scheduled.'] },
         ],
         repair: 'Write that control into your defect list in step 5 with the expected keyboard behaviour from your key table, and record the change.',
         recheck: 'No entry in your record accepts a pointer route as a resolution.',
