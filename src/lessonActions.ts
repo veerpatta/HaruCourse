@@ -62,7 +62,7 @@ export function withLessonActions(input: Lesson): Lesson {
      ...(rule ? {requiredWhen:{field:rule.field,values:[rule.value]}} : {}),
      ...(/photo-reference|sheet-reference|state-table-reference/.test(f.id) ? {hint:'Write a file location, or describe where you keep the paper version. A photo is optional; nothing is uploaded here.'} : {}),
      ...(input.id==='m05-l02-v1' && f.id==='will-run' ? {label:'The two feasible methods for your next study'} : {}),
-     ...(input.id==='m05-l06-v1' && ['inferred','worked','failed','wish','reconstructed'].includes(f.id) ? {hint:'After a real interview, describe what happened. For rehearsal, describe only your guide wording, where you stumbled and what you would revise. Label it rehearsal; do not invent a participant response. If nothing failed or was reconstructed, say so.'} : {}),
+     ...(input.id==='m05-l06-v1' && ['inferred','worked','failed','wish-asked','reconstructed'].includes(f.id) ? {hint:'After a real interview, write a de-identified summary (codes such as P1, no names); raw notes stay in your private file. For rehearsal, describe only your guide wording, where you stumbled and what you would revise. Label it rehearsal; do not invent a participant response. If nothing failed or was reconstructed, say so.'} : {}),
      ...(f.id==='improvement-made' ? {hint:'Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the criterion.'} : {})};
  };
  const a={...input.apprenticeship!,worksheet:input.apprenticeship!.worksheet!.map(s=>({...s,fields:s.fields.map(field)}))};
