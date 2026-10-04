@@ -98,7 +98,7 @@ export const module19: Lesson[] = [
       },
       {
         minutes: 30,
-        title: "Choose three claims",
+        title: "Choose your claims",
         instructions: [
           "List candidate claims your project or projects could support.",
           "Choose up to three, preferring the ones with the strongest artefacts.",
@@ -1593,7 +1593,7 @@ export const module19: Lesson[] = [
       "Phones dominate first contact — a link opened between meetings, on a train, on a slow connection. That means the case study opening has to work in a narrow column, images must not be required to understand the argument, and the whole thing should load without waiting.",
       "You can read it on your own phone without publishing anything. Either print each page to PDF in your browser (Print, then choose Save as PDF as the destination) and send the PDF to yourself through a channel you already use, or send the single HTML file itself and open it from the phone's files, if its browser allows local files. A page that loads images from a separate folder will show them missing on the phone unless the folder travels too, which a PDF avoids. The browser's desktop phone view is emulation: useful for width, and no substitute for holding the phone.",
       "A PDF can also be the version you send to a reviewer. Browser Save as PDF keeps your text as real text, but whether it adds the headings and reading-order tags that screen readers use varies by browser, so open the PDF and check the headings, the reading order and that link text says where it goes. Keep the HTML as the accessible master and treat the PDF as a copy.",
-      "The minimum is the m13 and m14 work applied to your own site: a heading structure that makes sense read alone, a visible focus indicator, contrast that holds, alternative text on every image, and a keyboard path through the whole thing. These are the criteria you claim to apply, so failing them here is expensive.",
+      "The minimum is the accessibility work from Module 11 applied to your own site: a heading structure that makes sense read alone, a visible focus indicator, contrast that holds, alternative text on every image, and a keyboard path through the whole thing. These are the criteria you claim to apply, so failing them here is expensive.",
       "Record what you checked and what you did not, exactly as in the projects. A line saying you ran a keyboard pass and a contrast check but have not tested with a screen reader is more credible than silence, and far more credible than an accessibility badge you cannot support.",
     ],
     misconception:
@@ -2158,7 +2158,7 @@ export const module19: Lesson[] = [
       "Claims travel between pages. A number softened in one case study can appear inflated on the index page, and an about page written last is where unsupported summaries collect. Sweep the whole thing at once, including navigation, headings and the about page.",
       "Publishing is a choice, not a requirement. A PDF or the files sent privately to a reviewer is a complete portfolio. If you do publish, hosting has the same properties as a resource: a cost, an account requirement and terms. Check it against this course's rules — free without a card, no trial that expires into a charge — and record what you verified and when, because the answer changes over time.",
       "One free route, checked on 5 October 2026 against GitHub's own documentation (docs.github.com/en/pages): GitHub Pages. GitHub Free costs nothing, and on it a Pages site must come from a public repository — everything you upload is public, and GitHub states that Pages sites are publicly available on the internet. Steps: create a free account; choose New repository, name it yourusername.github.io, set it to Public and create it; choose Add file, then Upload files, and upload index.html and your other pages; open Settings, then Pages, choose Deploy from a branch under Build and deployment, pick the main branch and the / (root) folder, and Save. GitHub says changes can take up to 10 minutes to publish. To unpublish, delete the repository (Settings, Danger Zone); GitHub notes that deleting a public repository does not delete copies others have forked. Re-check these terms yourself before publishing, and never upload consent records or raw research.",
-      "A cold reader is the last useful instrument. Ask someone who does not know the projects to read it and tell you what you can do; the gap between their answer and your three claims is the portfolio's actual message, and it is usually not the one you intended.",
+      "A cold reader is the last useful instrument. Ask someone who does not know the projects to read it and tell you what you can do; the gap between their answer and your claims is the portfolio's actual message, and it is usually not the one you intended.",
     ],
     misconception:
       "“It is finished when it looks finished.” It is finished when the promises are kept, the claims are supported, and a cold reader arrives at the message you intended.",
