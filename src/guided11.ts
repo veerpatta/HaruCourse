@@ -180,7 +180,7 @@ export const guided11: Record<string, Guided> = {
         question: 'You ran the three situational tests and want to write “the product is accessible in daylight”. Is that allowed?',
         options: [
           { label: 'Only a narrower sentence is: one task, your device, your eyes, and what you actually saw.', correct: true, feedback: 'The honest sentence is the narrow one: which task, which device, what you saw. It is smaller and it is defensible, and this module asks you to keep that boundary visible in every lesson.', was: ['It is not. You checked one task, on your device, with your eyes, and that is what you can say.'] },
-          { label: 'It is allowed, since you went outside in real daylight and the task worked for you.', feedback: 'It worked for you, on your screen, at your brightness, with your vision. Each of those is a condition on the claim, and the sentence drops all four.', was: ['It is, since you actually went outside and it worked.'] },
+          { label: 'It is allowed, since you went outside in bright daylight and the whole task worked for you there.', feedback: 'It worked for you, on your screen, at your brightness, with your vision. Each of those is a condition on the claim, and the sentence drops all four.', was: ['It is, since you actually went outside and it worked.'] },
           { label: 'It is allowed, as long as the same sentence adds that more testing is still needed.', feedback: 'A general claim followed by a caveat is still quoted as the general claim. Narrow the sentence itself rather than appending a disclaimer to it.', was: ['It is, as long as you add that more testing is needed.'] },
         ],
         repair: 'Rewrite your situational lines in step 4 to say which task, which device and what you saw, then record the change in step 5.',
@@ -349,7 +349,7 @@ export const guided11: Record<string, Guided> = {
         options: [
           { label: 'By then the costly problems are structural, so they are found when hardest to change.', correct: true, feedback: 'A layout with nowhere to put a visible focus ring, or a flow that depends on hover, cannot be repaired by adjusting a colour. Mapping barriers to criteria during design costs an hour and changes what gets built.', was: ['By then the expensive problems are structural, and the audit finds them when they are hardest to change.'] },
           { label: 'Audits at any stage are unreliable, so it is better to check everything yourself.', feedback: 'A good audit is more thorough than your own check. The problem is when it happens, not who does it.', was: ['Audits are unreliable, so it is better to check things yourself.'] },
-          { label: 'The standard requires accessibility work to take place during design, not after it.', feedback: 'The standard says what must be true of the result. It says nothing about when you do the work; the argument is practical rather than required.', was: ['The standard requires accessibility work to happen during design.'] },
+          { label: 'The standard itself requires accessibility work to take place during design, not after it.', feedback: 'The standard says what must be true of the result. It says nothing about when you do the work; the argument is practical rather than required.', was: ['The standard requires accessibility work to happen during design.'] },
         ],
         repair: 'Look at your translations in step 3. Any change that would need the layout rebuilt is a structural one — mark it as such, and record the change in step 5.',
         recheck: 'Structural changes are separated from surface ones in your mapping.',
@@ -545,7 +545,7 @@ export const guided11: Record<string, Guided> = {
         question: 'You plan to leave the heading levels to the developer, who will see the visual design. What will happen?',
         options: [
           { label: 'They will most likely infer level from size, the mistake this lesson has just corrected.', correct: true, feedback: 'There is no other information available to them. Heading level is a decision about hierarchy, so it belongs with the screen that states the hierarchy.', was: ['They will infer level from size, which is the mistake you just spent this lesson correcting.'] },
-          { label: 'They will ask you about each heading, since the levels are ambiguous from a picture.', feedback: 'It does not look ambiguous from a visual design. It looks decided, which is why nobody asks.', was: ['They will ask, since it is ambiguous.'] },
+          { label: 'They will ask you about each heading, since heading levels are ambiguous from a picture alone.', feedback: 'It does not look ambiguous from a visual design. It looks decided, which is why nobody asks.', was: ['They will ask, since it is ambiguous.'] },
           { label: 'It will be fine, because developers already know the heading structure rules well.', feedback: 'Knowing the rules does not tell them which of your sections belongs inside which. Only the design says that.', was: ['It will be fine, because developers know the structure rules.'] },
         ],
         repair: 'Add the level beside every heading in both outlines in step 1, so the outline itself is the specification. Record the change in step 5.',
@@ -556,7 +556,7 @@ export const guided11: Record<string, Guided> = {
         options: [
           { label: 'Rewrite the heading for the section they missed; that miss is what the check is for.', correct: true, feedback: 'Almost correct is the normal result, and the miss is the finding. One rewritten heading is a real improvement you would not have found by reading it yourself.', was: ['Rewrite the heading for the section they missed, since that is exactly what the check is for.'] },
           { label: 'Leave the outline as it is, since one miss out of five sections is a good result.', feedback: 'It is a good result and it still names the heading that is not working. The check has done its job and you would be discarding the answer.', was: ['Nothing much — one miss out of five is a good result.'] },
-          { label: 'Read the headings to someone else first, to see whether they miss the same section.', feedback: 'A second reading is useful later. It is not a reason to leave a heading you now know did not convey its section.', was: ['Read it to somebody else to see whether they miss the same one.'] },
+          { label: 'Read the headings to someone else first, to see whether they also miss the same section.', feedback: 'A second reading is useful later. It is not a reason to leave a heading you now know did not convey its section.', was: ['Read it to somebody else to see whether they miss the same one.'] },
         ],
         repair: 'Rewrite the heading they missed, add it to the rewrites field in step 5, and record the change.',
         recheck: 'The section that was missed now has a heading that names it.',
@@ -918,7 +918,7 @@ export const guided11: Record<string, Guided> = {
         question: 'You added an icon beside each status dot, and in greyscale all three icons look the same. What went wrong?',
         options: [
           { label: 'The icons differ by colour, not outline, so you added an element but not a second signal.', correct: true, feedback: 'Three circles in three colours are one shape. The test is whether the outlines differ when everything is black, and it is easy to fail while feeling the problem is solved.', was: ['The icons differ by colour rather than by outline, so a second element was added but not a second signal.'] },
-          { label: 'Icons were the wrong choice from the start, because only text can be a second signal.', feedback: 'Text is the safest choice and icons can work, if their silhouettes genuinely differ. A tick and a cross survive greyscale perfectly well.', was: ['Icons are the wrong choice; only text works.'] },
+          { label: 'Icons were the wrong choice from the start, because only text can ever be a second signal.', feedback: 'Text is the safest choice and icons can work, if their silhouettes genuinely differ. A tick and a cross survive greyscale perfectly well.', was: ['Icons are the wrong choice; only text works.'] },
           { label: 'The icons are too small for the difference between them to show up in greyscale.', feedback: 'Size would make identical shapes bigger and still identical. The problem is the shapes, not the scale.', was: ['The icons are too small for the difference to show.'] },
         ],
         repair: 'Replace that signal in step 2 with a word, or with shapes whose outlines differ, then check it in greyscale again. Record the change in step 5.',
@@ -1131,7 +1131,16 @@ export const guided11: Record<string, Guided> = {
     },
   },
   'm11-l07-v1': {
-    route: textRoute,
+    transfer: {
+      scenario: 'Made-up case: a moving-van rental form asks for the pickup date as three boxes labelled DD, MM and YYYY with no shared question, shows the driving-licence format only as placeholder text, and on an error turns the box border red and shows the word Invalid at the top of the page.',
+      prompt: 'Choose the one change you would make first, and explain who it helps and how you would check it.',
+      anchors: {
+        weak: 'Darkens the placeholder, or keeps Invalid and adds more red.',
+        adequate: 'Groups the date boxes under a named question; or moves the licence format into a hint joined to its field; or rewrites the error to name the fix, in a summary that links to the field and is announced. Says who it helps: people who cannot see the layout, or who lose a placeholder once they type.',
+        strong: 'As adequate, plus how to check it (tab through, trigger the error, listen with a screen reader) and which behaviour stays untested until there is a real build.',
+      },
+    },
+    route: { recommended: 'Rebuild one of your own forms: in a local HTML file if you have one, or as a field table on paper. For how to tab through a form and listen to it, open the course’s practice lab: keep the course site name in the address bar, replace everything after it with /labs/m11/ and press Enter. Record each change in this worksheet.', alternative: 'No form of your own that runs? Specify the labels, groups, hints and error links for your Module 8 form on paper, and mark every announcement and focus behaviour as specified and untested. That is a complete route for this lesson.' },
     worksheet: [
       { id: 'audit', title: 'Audit the form you already have', fields: [
         { id: 'form-chosen', label: 'Which form you are rebuilding, and how many fields it has', kind: 'short' },
@@ -1280,9 +1289,9 @@ export const guided11: Record<string, Guided> = {
       {
         question: 'Your form uses ordinary browser fields rather than anything custom. Does that make it accessible?',
         options: [
-          { label: 'It supplies keyboard behaviour and nothing else. Labels, grouping, hints and error association are decisions somebody has to make, and by default nobody has.', correct: true, feedback: 'Standard fields are a good starting point precisely because the keyboard part comes free. Everything this lesson is about has to be added deliberately.' },
-          { label: 'Largely, yes, since standard fields are built to be accessible.', feedback: 'They are built to behave correctly once they are labelled. An unlabelled standard text box is an unnamed box that tabs nicely.' },
-          { label: 'It does, as long as the visual labels are clear.', feedback: 'Visual clarity helps the reader who can see the layout. A label has to be joined to its field for anybody else.' },
+          { label: 'It brings keyboard behaviour; labels, groups, hints and error links still have to be added.', correct: true, feedback: 'Standard fields are a good starting point precisely because the keyboard part comes free. Everything this lesson is about has to be added deliberately.', was: ['It supplies keyboard behaviour and nothing else. Labels, grouping, hints and error association are decisions somebody has to make, and by default nobody has.'] },
+          { label: 'Largely, yes, since standard browser fields are built to be accessible out of the box.', feedback: 'They are built to behave correctly once they are labelled. An unlabelled standard text box is an unnamed box that tabs nicely.', was: ['Largely, yes, since standard fields are built to be accessible.'] },
+          { label: 'It does, as long as each field’s visual label is clear and sits right beside it.', feedback: 'Visual clarity helps the reader who can see the layout. A label has to be joined to its field for anybody else.', was: ['It does, as long as the visual labels are clear.'] },
         ],
         repair: 'Go back to your audit in step 1 and click each visible label word. Mark every field where nothing happens, then fix them in step 2 and record the change in step 5.',
         recheck: 'Every field in the table has a label that is joined to it, not merely near it.',
@@ -1290,9 +1299,9 @@ export const guided11: Record<string, Guided> = {
       {
         question: 'You darkened the placeholder text so it passes contrast, and it now carries the format hint clearly. Is the form fixed?',
         options: [
-          { label: 'It is not. The hint vanishes the moment somebody types, so it is gone exactly when they are trying to follow it.', correct: true, feedback: 'Contrast was the measurable half of the problem. A placeholder is an instruction that removes itself on use, and no colour change alters that.' },
-          { label: 'It is, since the hint is readable now.', feedback: 'It is readable right up to the first keystroke. Anybody who pauses mid-entry, or comes back to check, has nothing to read.' },
-          { label: 'It is, provided the hint is short.', feedback: 'Length changes nothing about when it disappears. Short instructions vanish just as completely.' },
+          { label: 'The hint still vanishes on the first keystroke, so it is gone while they follow it.', correct: true, feedback: 'Contrast was the measurable half of the problem. A placeholder is an instruction that removes itself on use, and no colour change alters that.', was: ['It is not. The hint vanishes the moment somebody types, so it is gone exactly when they are trying to follow it.'] },
+          { label: 'It is fixed, since the format hint is now readable for everyone who needs it.', feedback: 'It is readable right up to the first keystroke. Anybody who pauses mid-entry, or comes back to check, has nothing to read.', was: ['It is, since the hint is readable now.'] },
+          { label: 'It is fixed, provided the hint is short enough for people to remember once it disappears.', feedback: 'Length changes nothing about when it disappears. Short instructions vanish just as completely.', was: ['It is, provided the hint is short.'] },
         ],
         repair: 'Move that hint to an associated line under the label in step 2, and record what moved where. Note the change in step 5.',
         recheck: 'No instruction in the form lives only in a placeholder.',
@@ -1300,9 +1309,9 @@ export const guided11: Record<string, Guided> = {
       {
         question: 'Your error summary appears at the top of the form when submission fails, and you saw it appear. Can you write that errors are announced?',
         options: [
-          { label: 'It cannot be written. You confirmed it appears on screen, which is a different behaviour from anybody being told it appeared.', correct: true, feedback: 'Appearing and being announced are two different things, and only one of them is visible to a sighted check. The honest record splits the line in two.' },
-          { label: 'It can, because appearing is what announcing means.', feedback: 'For a person looking at the top of the form, the two coincide. For everybody else, the message can appear in silence.' },
-          { label: 'It can, since you specified the announcement.', feedback: 'Specifying it is what makes it likely to get built. It is not evidence that it works.' },
+          { label: 'Seeing it appear is not hearing it announced; record the announcement as untested.', correct: true, feedback: 'Appearing and being announced are two different things, and only one of them is visible to a sighted check. The honest record splits the line in two.', was: ['It cannot be written. You confirmed it appears on screen, which is a different behaviour from anybody being told it appeared.'] },
+          { label: 'It can be written, because appearing on screen is exactly what announcing an error means.', feedback: 'For a person looking at the top of the form, the two coincide. For everybody else, the message can appear in silence.', was: ['It can, because appearing is what announcing means.'] },
+          { label: 'It can be written, since the announcement was specified for the build anyway.', feedback: 'Specifying it is what makes it likely to get built. It is not evidence that it works.', was: ['It can, since you specified the announcement.'] },
         ],
         repair: 'Split that line in your untested list in step 4 into what you saw and what nobody has heard, then record the change in step 5.',
         recheck: 'Nothing in your record claims announcement behaviour you could not check.',
@@ -1316,6 +1325,15 @@ export const guided11: Record<string, Guided> = {
     },
   },
   'm11-l08-v1': {
+    transfer: {
+      scenario: 'Made-up case: a farmers’ market website has a large photograph of the market with the words Open Saturdays 8 to 1 printed across it, a magnifying-glass icon that opens search, and a decorative border of leaves around each stall listing.',
+      prompt: 'Decide how each image is handled, and explain the reason for the one people most often get wrong.',
+      anchors: {
+        weak: 'Describes all three in detail, or names the icon magnifying glass.',
+        adequate: 'Photograph: move Open Saturdays 8 to 1 into real text, or reproduce it in full in the alt text if it truly cannot move. Icon: named by its action, Search. Leaf border: decorative, so empty alt text and skipped.',
+        strong: 'As adequate, plus why the words must leave the picture (search, translation, enlargement), and a check that reads the page with every image replaced by its alt text.',
+      },
+    },
     route: textRoute,
     worksheet: [
       { id: 'inventory', title: 'Every image, classified', intro: 'Three kinds only: it tells you something, it decorates, or it is a control.', fields: [
@@ -1459,9 +1477,9 @@ export const guided11: Record<string, Guided> = {
       {
         question: 'Somebody tells you every image needs alt text describing it. What is wrong with that rule?',
         options: [
-          { label: 'Every image needs a decision. Decorative images are marked to be skipped, and describing them puts words in the reader’s way.', correct: true, feedback: 'Describing a background texture and a divider before the content is more work and a worse experience. The rule to follow is a decision per image, not a description per image.' },
-          { label: 'Nothing — it is safer to describe too much than too little.', feedback: 'It is not safer for the reader, who cannot skip what you wrote. Noise makes the useful alt text harder to find.' },
-          { label: 'It is right for photographs and wrong for icons.', feedback: 'The split is not by kind of graphic. A photograph can be pure decoration and an icon can carry the only meaning on the card.' },
+          { label: 'Every image needs a decision; describing decoration puts words in the reader’s way.', correct: true, feedback: 'Describing a background texture and a divider before the content is more work and a worse experience. The rule to follow is a decision per image, not a description per image.', was: ['Every image needs a decision. Decorative images are marked to be skipped, and describing them puts words in the reader’s way.'] },
+          { label: 'Nothing at all, since describing too much is always safer than describing too little.', feedback: 'It is not safer for the reader, who cannot skip what you wrote. Noise makes the useful alt text harder to find.', was: ['Nothing — it is safer to describe too much than too little.'] },
+          { label: 'It is right for photographs and wrong for icons, which never need alt text at all.', feedback: 'The split is not by kind of graphic. A photograph can be pure decoration and an icon can carry the only meaning on the card.', was: ['It is right for photographs and wrong for icons.'] },
         ],
         repair: 'Look at your classification in step 1 and move anything that adds no information into the decorative list in step 4. Record the change in step 5.',
         recheck: 'Nothing marked informative would be unmissed if it vanished.',
@@ -1469,9 +1487,9 @@ export const guided11: Record<string, Guided> = {
       {
         question: 'The shortlist icon is a heart. What should its alt text say?',
         options: [
-          { label: 'Add to shortlist — what pressing it does, matching the label you wrote in Module 8.', correct: true, feedback: 'For a control, the shape is irrelevant and the action is everything. Matching the Module 8 wording stops the same control having two names.' },
-          { label: 'Heart icon, so the person knows what is on screen.', feedback: 'Knowing a heart is there tells the reader nothing about what it does, and they cannot see the visual convention that makes it obvious to you.' },
-          { label: 'Save, since that is shorter and clearer.', feedback: 'Shorter is good and a second name is not. If the panel says shortlist, this control says shortlist.' },
+          { label: 'Add to shortlist: what pressing it does, in the same words as your Module 8 label.', correct: true, feedback: 'For a control, the shape is irrelevant and the action is everything. Matching the Module 8 wording stops the same control having two names.', was: ['Add to shortlist — what pressing it does, matching the label you wrote in Module 8.'] },
+          { label: 'Heart icon, so the person knows exactly which picture is on the screen in front of them.', feedback: 'Knowing a heart is there tells the reader nothing about what it does, and they cannot see the visual convention that makes it obvious to you.', was: ['Heart icon, so the person knows what is on screen.'] },
+          { label: 'Save, since a shorter name is quicker to hear and clearer than a three-word label.', feedback: 'Shorter is good and a second name is not. If the panel says shortlist, this control says shortlist.', was: ['Save, since that is shorter and clearer.'] },
         ],
         repair: 'Check each functional alt text in step 3 against your Module 8 action labels and fix any mismatch. Record the change in step 5.',
         recheck: 'Every icon control announces an action, and the words match the rest of the product.',
@@ -1479,9 +1497,9 @@ export const guided11: Record<string, Guided> = {
       {
         question: 'A promotional image has the price set inside the picture, and you have put the price into the alt text. Is that finished?',
         options: [
-          { label: 'It is not. Text inside an image cannot be searched, translated or enlarged, and alt text fixes only the fourth of those.', correct: true, feedback: 'The real repair is to take the words out of the image and make them real text. Alt text is the fallback for the rare case where the words genuinely cannot move.' },
-          { label: 'It is, since the information is now available to a screen reader.', feedback: 'One of four failures is closed. Somebody enlarging their text still gets an unchanged banner, and nobody can search for the offer.' },
-          { label: 'It is, provided the alt text is an exact copy.', feedback: 'An exact copy is the right thing to write when the text cannot move. It does not make the text findable, translatable or resizable.' },
+          { label: 'Alt text fixes reading aloud; the price still cannot be searched, translated or enlarged.', correct: true, feedback: 'The real repair is to take the words out of the image and make them real text. Alt text is the fallback for the rare case where the words genuinely cannot move.', was: ['It is not. Text inside an image cannot be searched, translated or enlarged, and alt text fixes only the fourth of those.'] },
+          { label: 'It is finished, since the price is now available to anyone using a screen reader.', feedback: 'One of four failures is closed. Somebody enlarging their text still gets an unchanged banner, and nobody can search for the offer.', was: ['It is, since the information is now available to a screen reader.'] },
+          { label: 'It is finished, provided the alt text repeats the price and the full offer exactly, word for word.', feedback: 'An exact copy is the right thing to write when the text cannot move. It does not make the text findable, translatable or resizable.', was: ['It is, provided the alt text is an exact copy.'] },
         ],
         repair: 'Move that text out of the image in step 4, or write down the reason it cannot move and reproduce it in full. Record the change in step 5.',
         recheck: 'Every image with words in it has either changed or carries a written reason it could not.',
@@ -1495,6 +1513,15 @@ export const guided11: Record<string, Guided> = {
     },
   },
   'm11-l09-v1': {
+    transfer: {
+      scenario: 'Made-up case: a theatre website has a two-minute trailer with dialogue and music, a podcast episode interviewing the director, and a seat hold that expires after five minutes with no warning.',
+      prompt: 'Decide what each of the three needs, and explain the one where a transcript alone is not enough.',
+      anchors: {
+        weak: 'Says a transcript covers the trailer, or leaves out the seat hold.',
+        adequate: 'Trailer: checked captions, because a transcript alone does not meet the captions requirement for video with sound. Podcast: a transcript. Seat hold: a warning before it expires, a way to extend, and the chosen seats and entries kept.',
+        strong: 'As adequate, plus any information shown only on screen in the trailer described, a named person who checks the captions, and a transcript offered alongside the trailer as an extra.',
+      },
+    },
     route: textRoute,
     worksheet: [
       { id: 'motion', title: 'Anything that moves on its own', fields: [
@@ -1504,8 +1531,8 @@ export const guided11: Record<string, Guided> = {
       ] },
       { id: 'media', title: 'Audio and video', fields: [
         { id: 'media-list', label: 'Any audio or video in your product', kind: 'long', hint: 'Write none if there is none. That is a complete answer to this step.' },
-        { id: 'captions-plan', label: 'For each one: captions, a transcript, and who writes them', kind: 'long' },
-        { id: 'media-alternative', label: 'If neither is possible: how the information appears as text instead', kind: 'long' },
+        { id: 'captions-plan', label: 'For each one: captions if it is video with sound, a transcript if it is audio only, a written description if it is silent video, and who writes each', kind: 'long' },
+        { id: 'media-alternative', label: 'If captions cannot be made yet: how the same information appears as text, and that the video is labelled as an alternative to that text', kind: 'long', optional: true, hint: 'Leave blank if every item already has its captions, transcript or description.' },
       ] },
       { id: 'time', title: 'Time limits', fields: [
         { id: 'timeout-list', label: 'Every time limit: held places, sessions, codes, forms, anything that expires', kind: 'long' },
@@ -1543,55 +1570,55 @@ export const guided11: Record<string, Guided> = {
         },
         start: 'Sit on each screen for thirty seconds without touching anything and write down what moves.',
         enough: 'Every moving thing has a decision, and each decision says removed or names a control somebody can reach without a pointer.' },
-      { expect: 'Any audio or video listed with captions, a transcript and a named person to write them, or the information carried as text instead.',
+      { expect: 'Any audio or video listed with what it needs (captions, a transcript or a description) and who will write it.',
         fields: ['media-list', 'captions-plan', 'media-alternative'],
         terms: [
-          { term: 'Captions', meaning: 'The spoken words, timed to the video, including who is speaking and sounds that matter. They serve deaf readers, noisy rooms and anyone watching without sound.' },
-          { term: 'Transcript', meaning: 'The whole content as text, readable without playing anything. It is also the version that can be searched, translated and skimmed.' },
+          { term: 'Captions', meaning: 'The spoken words, timed to the video, including who is speaking and sounds that matter. They serve deaf readers, noisy rooms and anyone watching without sound, and they are required for video with sound; a transcript does not replace them.' },
+          { term: 'Transcript', meaning: 'The whole content as text, readable without playing anything, which can be searched, translated and skimmed. For an audio-only recording it is the requirement; for video with sound it is an addition, never a replacement for captions.' },
         ],
         sorter: {
-          intro: 'Six situations from a made up tool-library product. For each one, decide what the honest handling is.',
+          intro: 'Six situations from a made up tool-library product. Video with sound needs captions, and a transcript never replaces them, though it is sometimes needed as well. For each one, decide the honest handling.',
           options: ['captions are enough', 'a transcript is needed too', 'this cannot be fixed with captions at all'],
           items: [
-            { id: 'safety-video', text: 'A two-minute safety video on using the bench saw, where everything important is spoken aloud.', answer: 'a transcript is needed too',
+            { id: 'safety-video', text: 'A two-minute safety video on using the bench saw. Everything important is spoken aloud, and members are told to check the steps again before every use.', answer: 'a transcript is needed too',
               feedback: {
-                'captions are enough': 'Captions cover the person watching. Somebody who wants to check one instruction before switching the saw on has to watch two minutes to find it.',
-                'a transcript is needed too': 'Safety instructions are referred back to. A transcript makes them searchable, skimmable and printable, which captions cannot do.',
-                'this cannot be fixed with captions at all': 'The content is spoken, so captions carry it well. The gap is about finding one part again.',
+                'captions are enough': 'Captions are required here and they serve anyone watching. People told to recheck one step before every use need to find it fast, which captions alone cannot offer.',
+                'a transcript is needed too': 'Captions first, because the video has sound. A transcript as well, because safety steps are looked up again; it adds to the captions and never replaces them.',
+                'this cannot be fixed with captions at all': 'Everything important is spoken, so captions carry it well. The extra need is about finding one step again.',
               } },
-            { id: 'auto-captions', text: 'A video whose automatic captions render the library name as three different things and turn 16 millimetres into 60.', answer: 'this cannot be fixed with captions at all',
+            { id: 'auto-captions', text: 'A short welcome video, spoken throughout, whose automatic captions turned 16 millimetres into 60 until a volunteer corrected them by hand.', answer: 'captions are enough',
               feedback: {
-                'captions are enough': 'These captions exist and are wrong in ways that change the meaning. Wrong measurements in a workshop are worse than none.',
-                'a transcript is needed too': 'A transcript made from the same automatic text carries the same errors forward.',
-                'this cannot be fixed with captions at all': 'Not with these captions. Somebody has to correct them by hand, which is the work this lesson is asking you to name and assign.',
+                'captions are enough': 'Checked captions are what make a spoken video usable without sound, and these have now been checked. Nothing is looked up again or shown only on screen.',
+                'a transcript is needed too': 'A transcript would help someone searching, and it is not what makes this video usable to someone who cannot hear it. The corrected captions are.',
+                'this cannot be fixed with captions at all': 'Everything that matters is spoken, so captions carry it, once a person has corrected them.',
               } },
             { id: 'silent-demo', text: 'A silent thirty-second clip showing how to release the chuck, with no narration at all.', answer: 'this cannot be fixed with captions at all',
               feedback: {
                 'captions are enough': 'There is nothing to caption. Captions carry speech, and this clip has none.',
                 'a transcript is needed too': 'A transcript of silence is empty. What is needed is a written description of what the hands do.',
-                'this cannot be fixed with captions at all': 'Visual-only content needs a written description of the actions, which is a different piece of writing from captions.',
+                'this cannot be fixed with captions at all': 'Captions carry sound, and this clip has none. Silent video needs its actions described in text, or an audio track that describes them.',
               } },
-            { id: 'music-only', text: 'A fifteen-second clip of workshop sounds behind the home page, carrying no information.', answer: 'captions are enough',
+            { id: 'music-only', text: 'A one-minute video in which the librarian explains the late-return fee. Nothing important appears on screen that she does not also say.', answer: 'captions are enough',
               feedback: {
-                'captions are enough': 'Nothing is being said and nothing is being conveyed, so a short note that it is ambient sound is the whole obligation. Being able to turn it off matters more.',
-                'a transcript is needed too': 'There is no content to transcribe.',
-                'this cannot be fixed with captions at all': 'There is nothing here that needs fixing beyond letting people stop it.',
+                'captions are enough': 'Captions carry everything here, because nothing important is shown only on screen. That is the whole requirement for this video.',
+                'a transcript is needed too': 'A transcript would be a kindness for searching, and nothing here is looked up again. It is an extra rather than what this video needs.',
+                'this cannot be fixed with captions at all': 'Everything is spoken and nothing important is shown only on screen, so captions do carry it.',
               } },
-            { id: 'interview', text: 'A four-minute interview with a member describing how they used the library, spoken throughout.', answer: 'a transcript is needed too',
+            { id: 'interview', text: 'A four-minute interview with a member about how they use the library, spoken throughout, which the library also wants people to quote and search.', answer: 'a transcript is needed too',
               feedback: {
-                'captions are enough': 'Captions serve somebody watching it through. Four minutes is long enough that many people would rather read it in one.',
-                'a transcript is needed too': 'Long spoken content is the clearest case for both: captions for watching, a transcript for reading, searching and quoting.',
+                'captions are enough': 'Captions serve someone watching it through, and they are required. Quoting and searching need text that can be read without playing anything.',
+                'a transcript is needed too': 'Captions for watching, because the video has sound; a transcript for reading, searching and quoting. The transcript is an addition, never a replacement.',
                 'this cannot be fixed with captions at all': 'The speech carries everything, so captions do work here.',
               } },
-            { id: 'no-media', text: 'A product with no audio or video anywhere in it.', answer: 'captions are enough',
+            { id: 'no-media', text: 'A ten-minute audio recording of the monthly members’ meeting, with no video at all.', answer: 'this cannot be fixed with captions at all',
               feedback: {
-                'captions are enough': 'The honest answer is that this step is already complete, and writing none is a finished answer rather than a gap.',
-                'a transcript is needed too': 'There is nothing to transcribe. Inventing work here would not help anybody.',
-                'this cannot be fixed with captions at all': 'Nothing is broken. Not every lesson has something to repair in every product.',
+                'captions are enough': 'Captions belong to video. With no picture to put them on, an audio-only recording needs a transcript instead.',
+                'a transcript is needed too': 'A transcript is what it needs, and the word too is the problem: there is no video to caption, so the transcript is the whole requirement.',
+                'this cannot be fixed with captions at all': 'Captions need a picture. An audio-only recording needs a transcript, which is a different piece of writing.',
               } },
           ],
           then: 'Now decide the handling for your own media, and name who writes each piece of text. If you have none, write none and move on.',
-          pattern: 'The two that catch people out are the silent clip and the automatic captions. Captions carry speech, so silence needs a written description instead; and captions that exist but are wrong are worse than absent ones, because everybody assumes the work is done.',
+          pattern: 'Captions belong to video with sound and are required there; a transcript can add to them and never stands in for them. Silent video needs its actions described, and an audio-only recording needs a transcript, because in both there is nothing to caption. Automatic captions count only once a person has checked them.',
         },
         start: 'List your media first. If the list is empty, write none and go to the next step.',
         enough: 'Every media item names a person who will write the text, or says plainly that nobody has been found yet.' },
@@ -1637,9 +1664,9 @@ export const guided11: Record<string, Guided> = {
       {
         question: 'Your video is hosted on a platform that generates captions automatically. Is the captioning handled?',
         options: [
-          { label: 'It is not. Automatic captions are frequently wrong with names, numbers and accents, and somebody has to check them.', correct: true, feedback: 'Wrong captions are worse than missing ones, because everybody assumes the work has been done. If the video carries information, correcting them is a task with a name against it.' },
-          { label: 'It is, since automatic captions have become very accurate.', feedback: 'They are good on clear speech in common accents. Names, measurements and technical words are exactly where they fail, and those are usually what matters.' },
-          { label: 'It is, as long as viewers can report errors.', feedback: 'That asks the people least able to check the captions to proofread them. The errors are invisible to the reader who depends on them.' },
+          { label: 'Somebody still has to check them: automatic captions often get names and numbers wrong.', correct: true, feedback: 'Wrong captions are worse than missing ones, because everybody assumes the work has been done. If the video carries information, correcting them is a task with a name against it.', was: ['It is not. Automatic captions are frequently wrong with names, numbers and accents, and somebody has to check them.'] },
+          { label: 'It is handled, since automatic captions have become very accurate on most speech.', feedback: 'They are good on clear speech in common accents. Names, measurements and technical words are exactly where they fail, and those are usually what matters.', was: ['It is, since automatic captions have become very accurate.'] },
+          { label: 'It is handled, as long as viewers have an easy way to report any caption errors.', feedback: 'That asks the people least able to check the captions to proofread them. The errors are invisible to the reader who depends on them.', was: ['It is, as long as viewers can report errors.'] },
         ],
         repair: 'Name the person who will correct the captions in step 2, or write that nobody has been found. Record the change in step 5.',
         recheck: 'No media item is marked complete on the strength of automatic captions.',
@@ -1648,8 +1675,8 @@ export const guided11: Record<string, Guided> = {
         question: 'Your carousel now has a pause button, so it meets the criterion. Is there a better answer?',
         options: [
           { label: 'Often, yes: removing motion nobody asked for beats adding a control to manage it.', correct: true, feedback: 'A pause control is a thing to find, understand and press before the reading can start. If the carousel exists because the template had one, removing it solves the problem and shortens the page.' },
-          { label: 'No, a pause control is what the criterion asks for.', feedback: 'It is what the criterion accepts. The criterion is a floor, and meeting it is not the same as having made the right decision.' },
-          { label: 'No, because removing it loses content.', feedback: 'It loses the ability to feature an unbounded list. Whether that matters is a content decision worth making deliberately rather than inheriting.' },
+          { label: 'A pause control is exactly what the criterion asks for, so there is nothing better.', feedback: 'It is what the criterion accepts. The criterion is a floor, and meeting it is not the same as having made the right decision.', was: ['No, a pause control is what the criterion asks for.'] },
+          { label: 'Removing the carousel would lose content, so keeping it with a pause is best.', feedback: 'It loses the ability to feature an unbounded list. Whether that matters is a content decision worth making deliberately rather than inheriting.', was: ['No, because removing it loses content.'] },
         ],
         repair: 'For each moving thing in step 1, write why it exists. Anything you cannot answer is a candidate for removal; record the change in step 5.',
         recheck: 'Every remaining automatic motion has a stated reason for existing.',
@@ -1657,9 +1684,9 @@ export const guided11: Record<string, Guided> = {
       {
         question: 'One animation is small and brief, and you judge it harmless, so you keep it when reduced motion is requested. Is that reasonable?',
         options: [
-          { label: 'It is not. The person has already told their device what they need, and this is a judgement about their body made without them.', correct: true, feedback: 'Reduced motion is a request, not a preference to be weighed against your design. Case-by-case exemptions sound careful and rebuild the problem one animation at a time.' },
-          { label: 'It is, provided the animation is genuinely brief.', feedback: 'Brevity is measured by you, on your screen, with your vestibular system. It is the one part of this judgement you cannot make.' },
-          { label: 'It is, if most people prefer keeping it.', feedback: 'Most people have not asked for reduced motion. The setting exists for the people who have.' },
+          { label: 'The person has already set what they need; keeping it overrides them on a guess.', correct: true, feedback: 'Reduced motion is a request, not a preference to be weighed against your design. Case-by-case exemptions sound careful and rebuild the problem one animation at a time.', was: ['It is not. The person has already told their device what they need, and this is a judgement about their body made without them.'] },
+          { label: 'It is reasonable, provided the animation really is brief and small on screen.', feedback: 'Brevity is measured by you, on your screen, with your vestibular system. It is the one part of this judgement you cannot make.', was: ['It is, provided the animation is genuinely brief.'] },
+          { label: 'It is reasonable, if most people who see it say they prefer keeping it.', feedback: 'Most people have not asked for reduced motion. The setting exists for the people who have.', was: ['It is, if most people prefer keeping it.'] },
         ],
         repair: 'Give that animation a reduced version in step 4 and record what it now does. Note the change in step 5.',
         recheck: 'No motion in your design is exempt from the reduced-motion setting.',
@@ -1673,11 +1700,20 @@ export const guided11: Record<string, Guided> = {
     },
   },
   'm11-l10-v1': {
-    route: textRoute,
+    transfer: {
+      scenario: 'Made-up case: a designer spent fifteen minutes with Narrator on her laptop testing a hardware store’s click-and-collect page. She found the Add to basket icon announced only as button, and a quantity change that announced nothing. She wants to write: screen-reader tested, works for blind users.',
+      prompt: 'Rewrite her claim, and explain what her session does and does not establish.',
+      anchors: {
+        weak: 'Keeps works for blind users and adds a note that the session was short.',
+        adequate: 'Reports the two failures with the device, software and fifteen minutes, and states that a sighted designer who knows the page ran it, so it finds real failures and does not show what daily screen-reader users experience.',
+        strong: 'As adequate, plus each failure marked as a specification gap or a build defect, and what testing with daily users would add, written beside the findings rather than at the end.',
+      },
+    },
+    route: { recommended: 'Use the screen reader built into your device: Narrator on Windows, VoiceOver on a Mac, iPhone or iPad, TalkBack on Android. First open the course’s practice lab, which lists how to start, stop and pause each one and lets you practise heading and link moves on the lab page itself: keep the course site name in the address bar, replace everything after it with /labs/m11/ and press Enter. Then run your task on your own page.', alternative: 'No page of your own that runs yet? Run the whole session on the lab page and on one public page you choose, typing nothing personal and submitting nothing, and record it as practice on those pages rather than as a test of your design.' },
     worksheet: [
       { id: 'setup', title: 'Turn it on and learn five commands', fields: [
-        { id: 'reader-used', label: 'Which screen reader, on which device, and how you turned it on', kind: 'short', example: 'Example (made up): VoiceOver on my own iPhone, turned on in Settings under Accessibility.' },
-        { id: 'five-commands', label: 'The five commands you learned, written out', kind: 'long', hint: 'Next heading, next link, next form field, read all, stop. Five is enough; fifty is a reason to give up.' },
+        { id: 'reader-used', label: 'Which screen reader, on which device, and how you turned it on', kind: 'short', example: 'Example (made up): VoiceOver on my own iPhone, turned on in Settings under Accessibility.', hint: 'Narrator on Windows starts and stops with the Windows logo key + Ctrl + Enter. The lab page lists the controls for every device.' },
+        { id: 'five-commands', label: 'The five commands you learned, written out', kind: 'long', hint: 'Next heading, next link, next form field, read all, and stop or pause. Write how to turn the reader off as well. Five is enough; fifty is a reason to give up.' },
         { id: 'setup-trouble', label: 'Anything that went wrong getting started, and how you got past it', kind: 'long', hint: 'The first ten minutes are usually the hardest part. Writing them down helps the next person, including you.' },
       ] },
       { id: 'structure', title: 'Move by structure', fields: [
@@ -1687,7 +1723,7 @@ export const guided11: Record<string, Guided> = {
       ] },
       { id: 'task', title: 'The task, listening', intro: 'Cover the screen where you can. You already know this design, which is the hardest thing about testing it.', fields: [
         { id: 'task-log', label: 'What happened as you went, announcement by announcement', kind: 'long' },
-        { id: 'silences', label: 'Every place something happened and nothing was said', kind: 'long', example: 'Example (made up): applying a filter changed the whole list and announced nothing at all. I only knew because I looked.' },
+        { id: 'silences', label: 'Every place something happened and nothing was said', kind: 'long', hint: 'If you heard none, write none and the changes you listened at; a clean result counts.', example: 'Example (made up): applying a filter changed the whole list and announced nothing at all. I only knew because I looked.' },
         { id: 'noise', label: 'Every place something was announced that was not worth saying', kind: 'long', hint: 'Filenames, the word button on its own, a decorative image being described, a label read twice.' },
       ] },
       { id: 'map', title: 'Back to the decisions', fields: [
@@ -1704,10 +1740,10 @@ export const guided11: Record<string, Guided> = {
       { expect: 'The screen reader on your own device running, five commands learned, and whatever went wrong on the way written down.',
         fields: ['reader-used', 'five-commands', 'setup-trouble'],
         terms: [
-          { term: 'Screen reader', meaning: 'Software that speaks what is on screen and lets somebody move through it by structure. Every major platform ships one: NVDA on Windows, VoiceOver on Apple, TalkBack on Android.' },
+          { term: 'Screen reader', meaning: 'Software that speaks what is on screen and lets somebody move through it by structure. Windows has Narrator built in, Apple devices have VoiceOver and Android phones have TalkBack. NVDA is a separate free Windows reader you would have to install.' },
           { term: 'Five commands', meaning: 'Next heading, next link, next form field, read all, stop. Learning these five is enough for this lesson; trying to learn the whole set is how people abandon it.' },
         ],
-        start: 'Turn it on, then immediately find the command that stops it talking. Knowing how to stop makes the rest bearable.',
+        start: 'Open the practice lab page and read the controls for your device first. Learn how to turn the reader off before you turn it on.',
         enough: 'You can move by heading and stop the speech without looking anything up.' },
       { expect: 'What you heard moving by heading, link and form field, compared against the outline you wrote earlier in the module.',
         fields: ['by-heading', 'by-link-field', 'outline-compare'],
@@ -1737,7 +1773,7 @@ export const guided11: Record<string, Guided> = {
           uncertainty: 'Still unknown: how much my knowing the design flattered the result even so. Somebody meeting it for the first time, by ear, would meet things I walked past.',
         },
         start: 'Turn the screen brightness down as far as it goes, then start the task.',
-        enough: 'Your log contains at least one silence, because almost every product has one.' },
+        enough: 'Your log says what you listened for at each change, including any place where nothing was missing.' },
       { expect: 'Each failure traced back to the decision that caused it, and marked as missing from the specification or missing from the build.',
         fields: ['failure-map', 'spec-or-build'],
         terms: [
@@ -1816,9 +1852,9 @@ export const guided11: Record<string, Guided> = {
       {
         question: 'You ran a screen-reader session and found six failures. Can you write that the product works for blind users?',
         options: [
-          { label: 'It cannot be written. You found six real failures, and a sighted person who designed the product is not simulating anyone’s daily experience.', correct: true, feedback: 'The findings are genuine and worth acting on. What the session cannot do is tell you how somebody who uses these tools every day would fare, because fluency, habits and settings all differ.' },
-          { label: 'It can, since the failures found were real and have been fixed.', feedback: 'Fixing what you found removes those six. It says nothing about what a competent daily user would meet in the first two minutes.' },
-          { label: 'It can, provided you note the session was short.', feedback: 'Length is the smallest of the differences. Seeing the screen and knowing the design matter far more than the twenty minutes.' },
+          { label: 'Your findings are real, but a sighted designer cannot stand in for a daily user.', correct: true, feedback: 'The findings are genuine and worth acting on. What the session cannot do is tell you how somebody who uses these tools every day would fare, because fluency, habits and settings all differ.', was: ['It cannot be written. You found six real failures, and a sighted person who designed the product is not simulating anyone’s daily experience.'] },
+          { label: 'It can be written, since the six failures were real and have now all been fixed.', feedback: 'Fixing what you found removes those six. It says nothing about what a competent daily user would meet in the first two minutes.', was: ['It can, since the failures found were real and have been fixed.'] },
+          { label: 'It can be written, provided the report also notes the session was a short one.', feedback: 'Length is the smallest of the differences. Seeing the screen and knowing the design matter far more than the twenty minutes.', was: ['It can, provided you note the session was short.'] },
         ],
         repair: 'Put both differences into your boundary statement in step 5: that you can see the screen, and that you designed it. Record the change.',
         recheck: 'Your boundary names sight and familiarity, not only duration.',
@@ -1826,19 +1862,19 @@ export const guided11: Record<string, Guided> = {
       {
         question: 'Listening with the screen still visible, the product sounded almost fine. What was happening?',
         options: [
-          { label: 'Your eyes were completing every incomplete announcement, so the silences never registered.', correct: true, feedback: 'A list that changes silently is obvious when you can see it change. Working from the speech alone is what makes a silence audible as a silence.' },
-          { label: 'The product is largely fine and the failures are minor.', feedback: 'Possibly, and you have no way to tell yet. The test that would show you was not the one you ran.' },
-          { label: 'Screen readers announce most things automatically.', feedback: 'They announce what the page gives them. Where nothing is provided, there is nothing to announce, and that is exactly the case your eyes covered up.' },
+          { label: 'Your eyes were filling every gap in the speech, so the silences never registered.', correct: true, feedback: 'A list that changes silently is obvious when you can see it change. Working from the speech alone is what makes a silence audible as a silence.', was: ['Your eyes were completing every incomplete announcement, so the silences never registered.'] },
+          { label: 'The product is largely fine, and the failures you did hear are minor ones.', feedback: 'Possibly, and you have no way to tell yet. The test that would show you was not the one you ran.', was: ['The product is largely fine and the failures are minor.'] },
+          { label: 'Screen readers announce most changes automatically, whatever the page itself provides.', feedback: 'They announce what the page gives them. Where nothing is provided, there is nothing to announce, and that is exactly the case your eyes covered up.', was: ['Screen readers announce most things automatically.'] },
         ],
         repair: 'Redo one part of the task in step 3 with the screen brightness at its lowest, and add what that finds. Record the change in step 5.',
         recheck: 'At least part of your log comes from speech alone.',
       },
       {
-        question: 'The shortlist icon announces only “button”. Where does the repair belong?',
+        question: 'The shortlist icon announces only “button”, though your alt-text table from lesson 8 says it should announce Add to shortlist. Where does the repair belong?',
         options: [
-          { label: 'With the build, since your alt-text table already says it should announce Add to shortlist.', correct: true, feedback: 'The decision exists and was not applied. It goes to whoever builds it with the expected wording quoted, rather than being rewritten as though it were new.' },
-          { label: 'With you, since the announcement is wrong.', feedback: 'It would be yours if nothing said what should happen. Your table already does, which is why this is a defect rather than a gap.' },
-          { label: 'Nowhere yet — it needs investigating first.', feedback: 'The investigation is done: you know what it says and what it should say. That is a complete defect report.' },
+          { label: 'With the build: the decision is already written down and was not applied.', correct: true, feedback: 'The decision exists and was not applied. It goes to whoever builds it with the expected wording quoted, rather than being rewritten as though it were new.', was: ['With the build, since your alt-text table already says it should announce Add to shortlist.'] },
+          { label: 'With you, since the announcement people actually hear is the wrong one.', feedback: 'It would be yours if nothing said what should happen. Your table already does, which is why this is a defect rather than a gap.', was: ['With you, since the announcement is wrong.'] },
+          { label: 'Nowhere yet, because the failure needs investigating before anyone acts on it.', feedback: 'The investigation is done: you know what it says and what it should say. That is a complete defect report.', was: ['Nowhere yet — it needs investigating first.'] },
         ],
         repair: 'Mark every finding in step 4 as specification or build, and check each one against your own earlier documents before deciding. Record the change in step 5.',
         recheck: 'No finding is marked a specification failure while your own table already specifies it.',
@@ -1852,6 +1888,15 @@ export const guided11: Record<string, Guided> = {
     },
   },
   'm11-l11-v1': {
+    transfer: {
+      scenario: 'Made-up case: a bus-pass renewal site for an Indian city shows dates as 05/06/26, puts its fare table in an image, labels the start button Hop on and get rolling!, and is mostly used on shared family phones over mobile data.',
+      prompt: 'Choose the change you would make now rather than defer, and explain why it cannot wait for translation.',
+      anchors: {
+        weak: 'Defers everything to a later translation project.',
+        adequate: 'For example writes dates as 5 June 2026, moves the fares out of the image into real text, or replaces the idiom with plain words. Explains that these are design decisions made now, which make use today easier and later translation cheaper.',
+        strong: 'As adequate, plus the shared-phone condition (nothing personal on the lock screen) and a throttled load timed to a defined point of usable.',
+      },
+    },
     route: textRoute,
     worksheet: [
       { id: 'requirements', title: 'Two requirements, in your own words', fields: [
@@ -1870,7 +1915,7 @@ export const guided11: Record<string, Guided> = {
       { id: 'script', title: 'Script and connection', fields: [
         { id: 'script-check', label: 'Which labels you rendered in an Indic script, and what happened', kind: 'long', hint: 'If your prototype cannot render one, write the labels by hand on paper at the same size. That is a real check.' },
         { id: 'script-fix', label: 'What you changed about line height or container size', kind: 'short' },
-        { id: 'throttle-result', label: 'How you throttled the connection, and the seconds until the page was usable', kind: 'short', example: 'Example (made up): browser throttling set to slow, first useful content at about 11 seconds, still loading images at 18.' },
+        { id: 'throttle-result', label: 'How you throttled the connection, and the seconds until the page was usable', kind: 'short', example: 'Example (made up): browser throttling set to slow, first useful content at about 11 seconds, still loading images at 18.', hint: 'Throttling slows what is fetched over a network, so check the page really does load more slowly; one opened straight from a file may not. If yours does not slow down, time a live page instead and say so.' },
       ] },
       { id: 'record', title: 'Record', fields: [
         { id: 'fixed-remaining', label: 'What you fixed and what remains', kind: 'long' },
@@ -1993,9 +2038,9 @@ export const guided11: Record<string, Guided> = {
       {
         question: 'Your product is English-only for now, so localisation is a later project. Is there anything to do today?',
         options: [
-          { label: 'Yes: layouts built to English string lengths, text inside images and ambiguous date formats are all decided now and expensive to undo.', correct: true, feedback: 'The translating is later. The cost of translating is set by decisions you are making this week, and the cheap versions of those decisions are available today.' },
-          { label: 'Not really, since nothing can be translated until there is a translator.', feedback: 'Nothing needs translating to give a label room to grow or to take words out of a picture. Those are design decisions.' },
-          { label: 'Only the date format, which is a quick fix.', feedback: 'The date is the quickest one. The containers and the images are the ones that cost real money later.' },
+          { label: 'Plenty: room for longer words, text out of images and unambiguous dates are cheap now.', correct: true, feedback: 'The translating is later. The cost of translating is set by decisions you are making this week, and the cheap versions of those decisions are available today.', was: ['Yes: layouts built to English string lengths, text inside images and ambiguous date formats are all decided now and expensive to undo.'] },
+          { label: 'Not really, since nothing can be translated until a translator is on the project.', feedback: 'Nothing needs translating to give a label room to grow or to take words out of a picture. Those are design decisions.', was: ['Not really, since nothing can be translated until there is a translator.'] },
+          { label: 'Only the date format, which is quick to fix and the one thing that matters early.', feedback: 'The date is the quickest one. The containers and the images are the ones that cost real money later.', was: ['Only the date format, which is a quick fix.'] },
         ],
         repair: 'Mark each finding in step 4 as a decision for now or a job for later, and act on the ones marked now. Record the change in step 5.',
         recheck: 'Nothing on the deferred list is something you could change today in the design file.',
@@ -2003,9 +2048,9 @@ export const guided11: Record<string, Guided> = {
       {
         question: 'You loaded the page on a throttled connection and it took a while. What should you write down?',
         options: [
-          { label: 'The number of seconds until somebody could actually do something, and which throttle setting you used.', correct: true, feedback: 'A number with its conditions is evidence. Time to usable is the figure that matters, because the person is waiting to act rather than waiting for everything to arrive.' },
-          { label: 'That the page is slow on poor connections.', feedback: 'Everybody already believes that, and nothing about it can be compared before and after a fix.' },
-          { label: 'The total page weight, which is the underlying cause.', feedback: 'Weight is useful and it is not the experience. Two pages of the same weight can differ by ten seconds in when they become usable.' },
+          { label: 'The seconds until someone could actually act, and the throttle setting you used.', correct: true, feedback: 'A number with its conditions is evidence. Time to usable is the figure that matters, because the person is waiting to act rather than waiting for everything to arrive.', was: ['The number of seconds until somebody could actually do something, and which throttle setting you used.'] },
+          { label: 'That the page is slow on poor connections, in one plain sentence a reader can act on.', feedback: 'Everybody already believes that, and nothing about it can be compared before and after a fix.', was: ['That the page is slow on poor connections.'] },
+          { label: 'The total page weight in kilobytes, since weight is the underlying cause.', feedback: 'Weight is useful and it is not the experience. Two pages of the same weight can differ by ten seconds in when they become usable.', was: ['The total page weight, which is the underlying cause.'] },
         ],
         repair: 'Put the throttle setting and the seconds to usable in step 4, replacing any impression you wrote. Record the change in step 5.',
         recheck: 'Your connection line contains a number and the conditions it was measured under.',
@@ -2013,9 +2058,9 @@ export const guided11: Record<string, Guided> = {
       {
         question: 'Your notification on the lock screen names the class somebody booked. Why does this module care?',
         options: [
-          { label: 'A shared device is common, and the lock screen is read by whoever is near it, so the design has assumed a private phone.', correct: true, feedback: 'Access work includes the conditions people actually use the product in. One phone shared between a household changes what personal means, and the fix is a wording change.' },
-          { label: 'It does not — that is a security question rather than an access one.', feedback: 'It is both, and the assumption behind it is the same one this lesson is about: that everybody has their own device, connection and language.' },
-          { label: 'Because notifications should always be minimal.', feedback: 'A rule about brevity would fix this one by accident. The reasoning is about who else can see the screen.' },
+          { label: 'Shared phones are common, and a lock screen is read by whoever is near it.', correct: true, feedback: 'Access work includes the conditions people actually use the product in. One phone shared between a household changes what personal means, and the fix is a wording change.', was: ['A shared device is common, and the lock screen is read by whoever is near it, so the design has assumed a private phone.'] },
+          { label: 'It does not really: that is a security question rather than an access one.', feedback: 'It is both, and the assumption behind it is the same one this lesson is about: that everybody has their own device, connection and language.', was: ['It does not — that is a security question rather than an access one.'] },
+          { label: 'Because notifications should always be as short and minimal as possible.', feedback: 'A rule about brevity would fix this one by accident. The reasoning is about who else can see the screen.', was: ['Because notifications should always be minimal.'] },
         ],
         repair: 'Rewrite that notification so it says what happened without naming the detail, and record it in step 5 with the change.',
         recheck: 'No notification in your design assumes only one person sees the screen.',
@@ -2029,6 +2074,15 @@ export const guided11: Record<string, Guided> = {
     },
   },
   'm11-l12-v1': {
+    transfer: {
+      scenario: 'Made-up case: a charity shop’s donation-booking site has these notes: keyboard test of booking on 2 May, two failures found and one fixed; contrast measured for all text; no screen-reader testing; the date picker still cannot be used from a keyboard. The draft statement says: our site is fully accessible and WCAG compliant.',
+      prompt: 'Rewrite the opening two sentences of the statement, and explain what you removed and why.',
+      anchors: {
+        weak: 'Keeps fully accessible or compliant with a softening word in front.',
+        adequate: 'States what was tested (keyboard on 2 May, contrast measured), the open problem (the date picker), what was not tested (screen readers), and the level worked to without claiming conformance.',
+        strong: 'As adequate, plus a contact route that works for someone blocked by the date picker, and a dated plan for testing with disabled participants.',
+      },
+    },
     route: textRoute,
     worksheet: [
       { id: 'collect', title: 'Everything this module produced', intro: 'Gather first, sort second. Each item needs a date and the conditions it was checked under.', fields: [
@@ -2172,9 +2226,9 @@ export const guided11: Record<string, Guided> = {
       {
         question: 'Three problems are still open, so you plan to publish the statement once they are fixed. Who does that decision serve?',
         options: [
-          { label: 'You. The person deciding whether to attempt your product gets nothing in the meantime and finds out by losing an afternoon.', correct: true, feedback: 'A dated statement with three known problems lets somebody decide in thirty seconds. Waiting for a perfect one means the page never appears, because there are always three more.' },
-          { label: 'Users, who would otherwise be put off by a list of faults.', feedback: 'Being put off by a known fault is a decision made with information. Meeting it unannounced is the same fault without the choice.' },
-          { label: 'Nobody in particular; it is just good practice to finish first.', feedback: 'It is the practice that produces no statement at all, which is why this lesson argues against it directly.' },
+          { label: 'Mostly you: people deciding whether to try your product get nothing in the meantime.', correct: true, feedback: 'A dated statement with three known problems lets somebody decide in thirty seconds. Waiting for a perfect one means the page never appears, because there are always three more.', was: ['You. The person deciding whether to attempt your product gets nothing in the meantime and finds out by losing an afternoon.'] },
+          { label: 'Your users, who would otherwise be put off by reading a list of open faults.', feedback: 'Being put off by a known fault is a decision made with information. Meeting it unannounced is the same fault without the choice.', was: ['Users, who would otherwise be put off by a list of faults.'] },
+          { label: 'Nobody in particular; finishing the fixes before publishing is simply good working practice.', feedback: 'It is the practice that produces no statement at all, which is why this lesson argues against it directly.', was: ['Nobody in particular; it is just good practice to finish first.'] },
         ],
         repair: 'Move your three open items into the not-yet-fixed list in step 1 with intended dates, and keep the statement publishable today. Record the change in step 5.',
         recheck: 'The statement would be publishable as it stands, with its open problems listed.',
@@ -2182,9 +2236,9 @@ export const guided11: Record<string, Guided> = {
       {
         question: 'Your statement says error messages are announced when they appear. Your screen-reader session found they were not. What is the real problem with the sentence?',
         options: [
-          { label: 'It describes intended behaviour in a document readers take as fact, without saying whether it was tested.', correct: true, feedback: 'Specified, tested and untested are three different states, and a published statement has to say which one each claim is in. Once it is on a public page, an intention reads as a fact.' },
-          { label: 'It is simply out of date and needs correcting.', feedback: 'Correcting it fixes this line. The shape of the sentence is what let an untested behaviour be published as a fact in the first place.' },
-          { label: 'Nothing, since the behaviour will be built eventually.', feedback: 'Somebody reading it today is deciding whether to use your product today.' },
+          { label: 'It states intended behaviour as fact, without saying whether it was ever tested.', correct: true, feedback: 'Specified, tested and untested are three different states, and a published statement has to say which one each claim is in. Once it is on a public page, an intention reads as a fact.', was: ['It describes intended behaviour in a document readers take as fact, without saying whether it was tested.'] },
+          { label: 'It is simply out of date now, and the fix is to correct that one sentence.', feedback: 'Correcting it fixes this line. The shape of the sentence is what let an untested behaviour be published as a fact in the first place.', was: ['It is simply out of date and needs correcting.'] },
+          { label: 'Nothing serious, since the behaviour is already specified and will be built eventually.', feedback: 'Somebody reading it today is deciding whether to use your product today.', was: ['Nothing, since the behaviour will be built eventually.'] },
         ],
         repair: 'Mark every sentence in step 2 as tested, specified or untested, and rewrite anything that does not say which. Record the change in step 5.',
         recheck: 'No sentence in the statement leaves its evidence status unstated.',
@@ -2192,9 +2246,9 @@ export const guided11: Record<string, Guided> = {
       {
         question: 'You plan to recruit three participants who use assistive technology, over one week, with the usual voucher. What is most likely to go wrong?',
         options: [
-          { label: 'The lead time. Reaching people through an organisation takes longer, and a week produces no sessions rather than three.', correct: true, feedback: 'A month is a realistic minimum, because there is a person in the middle with their own work, and participants need to be asked about accommodations before agreeing.' },
-          { label: 'The number: three is too few to conclude anything.', feedback: 'Three is a reasonable number for finding problems, and it is not the thing that stops the sessions happening.' },
-          { label: 'Nothing, if the voucher is generous enough.', feedback: 'Payment matters, and it is the second problem here rather than the first. No amount of money shortens a recruitment route.' },
+          { label: 'The lead time: going through organisations takes weeks, so one week likely yields no sessions.', correct: true, feedback: 'GOV.UK advises allowing up to a month to find disabled participants and contacting organisations at least a month ahead, or 6 to 8 weeks for less common cognitive disabilities. Participants also need asking about accommodations before agreeing.', was: ['The lead time. Reaching people through an organisation takes longer, and a week produces no sessions rather than three.'] },
+          { label: 'The number: three participants are far too few to support any conclusion at all about access needs.', feedback: 'Three is a reasonable number for finding problems, and it is not the thing that stops the sessions happening.', was: ['The number: three is too few to conclude anything.'] },
+          { label: 'Nothing, provided the voucher is generous enough to make people respond quickly.', feedback: 'Payment matters, and it is the second problem here rather than the first. No amount of money shortens a recruitment route.', was: ['Nothing, if the voucher is generous enough.'] },
         ],
         repair: 'Set a lead time in weeks in step 4, say who you would go through, and replace any voucher with a figure you can defend. Record the change in step 5.',
         recheck: 'The plan could actually be started on Monday and would produce a session.',
