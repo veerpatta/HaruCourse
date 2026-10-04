@@ -184,6 +184,15 @@ export const guided13: Record<string, Guided> = {
         recheck: 'Your purpose page states a cost as well as a benefit.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a small charity runs a volunteer sign-up site with five screens, one part-time developer and you. Button styles differ on three screens, the developer asks you every week how error messages should look, and someone has proposed “a full design system like the big companies have”.',
+      prompt: 'Decide what the system should be for and what it should leave out, and explain why that scope fits this charity better than the proposal.',
+      anchors: {
+        weak: 'Agrees to build a full system for consistency in general, or lists many components with no person or cost attached.',
+        adequate: 'States problems with a person and a cost (drifting buttons, weekly error questions costing the developer), names the real audience and lists what stays out.',
+        strong: 'As adequate, and estimates the monthly upkeep or names what the system will make harder, or says a single page of settled decisions may be enough.',
+      },
+    },
     saveRoute: {
       auto: 'Your repeated decisions, the three problems, the audience, the boundary and the cost save as you type, on this device first and then online.',
       external: 'The system itself will live as Markdown and a stylesheet in your own folder. Nothing here needs a documentation platform or a design tool.',
@@ -364,6 +373,15 @@ export const guided13: Record<string, Guided> = {
         recheck: 'Every do-not names where it came from.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a recipe site’s foundations page lists spacing values 4, 8, 16 and 32, a grey #8a8a8a for captions, and two shadow levels. Captions in grey sit on white, where they measure 3.45:1. One screen uses 12-pixel gaps that are on no list.',
+      prompt: 'Rewrite one of these entries as a real foundation, and explain what you would do about the caption grey and the 12-pixel gap.',
+      anchors: {
+        weak: 'Adds 12 to the scale and keeps the grey because it looks soft; publishes values with no rule or reason.',
+        adequate: 'Adds a usage rule and a reason (for example, gaps between groups exceed gaps within them), forbids the grey on white for body-size text below 4.5:1, and tries 8 or 16 before adding 12.',
+        strong: 'As adequate, and lists the failing pair as a forbidden pair, or turns the 12-pixel screen into a labelled do-not example drawn from a real misuse.',
+      },
+    },
     saveRoute: {
       auto: 'Your six groups, the contrast table, the motion values and the do-and-do-not pairs save as you type, on this device first and then online.',
       external: 'The foundations page itself is Markdown in your own folder, beside the stylesheet whose custom properties it documents. Screenshots for the examples sit with it.',
@@ -543,6 +561,15 @@ export const guided13: Record<string, Guided> = {
         recheck: 'No content rule leaves a decision to the reader.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a parking app has a “permit card” with a vehicle registration, an expiry date, a status and a “Renew” button. The current specification shows one picture and says “status should be clear”. Engineers keep asking what happens when a permit is expired, loading or has no expiry date.',
+      prompt: 'Name the parts, two variants and the states you would put in the grid, plus one content rule, and explain why the grid answers the engineers’ questions.',
+      anchors: {
+        weak: 'Lists expired and loading as variants next to the picture, or keeps “status should be clear” as the rule.',
+        adequate: 'Names parts with optional ones marked, separates variants (for example active and expired) from states (loading, focus, error), and writes a buildable rule for the missing expiry date.',
+        strong: 'As adequate, and marks impossible cells, adds keyboard behaviour or a when-not-to-use line, or plans to test the specification with someone or a labelled solo rebuild.',
+      },
+    },
     saveRoute: {
       auto: 'The anatomy, the grid, the content rules, the behaviour and the questions save as you type, on this device first and then online.',
       external: 'Drawings or screenshots of the variants stay in your own folder beside the specification. The specification itself is Markdown with a table for the grid.',
@@ -720,6 +747,15 @@ export const guided13: Record<string, Guided> = {
         recheck: 'No raw value sits in the component.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: you are building a toggle switch from a specification. The “disabled and on” state has taken forty minutes: the switch keeps showing the off colour. The specification also says every state must be readable in greyscale, and “disabled” and “off” currently differ only by colour.',
+      prompt: 'Decide what you would check, in what order, before calling the forty-minute state a specification problem, and explain what the greyscale finding means.',
+      anchors: {
+        weak: 'Blames the specification at once, or keeps changing CSS until it looks right without recording anything.',
+        adequate: 'Checks the inspector for a winning rule, then compares with a working version, before suspecting the specification; records disabled versus off as a real specification gap needing a second signal.',
+        strong: 'As adequate, and records which rung showed what, or keeps every value as a token and notes the problem as an open decision rather than a quiet patch.',
+      },
+    },
     saveRoute: {
       auto: 'Your build notes, the states, the page layout, the awkward cases and the specification problems save as you type, on this device first and then online.',
       external: 'The component, the stylesheet and the states page stay in your own folder. The states page is the artefact to keep; later lessons and your portfolio both use it.',
@@ -900,6 +936,15 @@ export const guided13: Record<string, Guided> = {
         recheck: 'Your record contains at least one deliberate decision not to reuse.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a bookshop’s design system has a “book card” for browsing. Someone wants to reuse it as an order receipt row (order number, price paid, “Return” action) and as a homepage “Book of the month” feature shown once.',
+      prompt: 'Decide for each request whether it is a variant, a separate component or out of the system, and explain the test you applied.',
+      anchors: {
+        weak: 'Makes both variants because they look similar or because reuse saves work.',
+        adequate: 'Applies the job test: the receipt row records something owned (separate component, different fields and actions); the one-off feature stays out of the system.',
+        strong: 'As adequate, and checks content rules, states or the variant count, or warns that merging would create conditional behaviour that is hard to maintain.',
+      },
+    },
     saveRoute: {
       auto: 'The test, the three cases, the counts and the split or merge save as you type, on this device first and then online.',
       external: 'The inventory and specifications live with the system in your own folder. The test itself belongs on the system documentation page rather than in these notes.',
@@ -1078,6 +1123,15 @@ export const guided13: Record<string, Guided> = {
         recheck: 'Your record says whether a real reader or a solo rehearsal produced the questions.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a council website’s “alert banner” page opens with a large picture of the banner, then colour values, then a note at the bottom saying not to use it for marketing. Writers keep pasting three-sentence messages into it. No one else is free to test the page this month.',
+      prompt: 'Decide how you would reorder the page, where the writing guidance should go, and how you would test it with nobody available, explaining each choice.',
+      anchors: {
+        weak: 'Keeps the picture first, puts guidance in a separate style guide, or calls the author’s own read-through a user test.',
+        adequate: 'Opens with when to use, when not to and the alternative; puts a length rule beside the live example; rehearses alone after a gap and labels it rehearsal.',
+        strong: 'As adequate, and records questions it could not answer as open decisions, or names what only a real writer testing it could reveal.',
+      },
+    },
     saveRoute: {
       auto: 'Your page structure, the content guidance, the reader’s questions and the fixes save as you type, on this device first and then online.',
       external: 'The documentation pages live beside the components in your own folder, as Markdown or as HTML with the live example embedded. No documentation platform is needed.',
@@ -1261,6 +1315,15 @@ export const guided13: Record<string, Guided> = {
         recheck: 'Every decision in the log carries its reason.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a sports club’s design system has no stated way to ask for changes. Last month two coaches built their own “fixture card” on separate pages because their messages to the designer went unanswered for three weeks.',
+      prompt: 'Write the minimum governance you would add, and explain how it would have changed what the two coaches did.',
+      anchors: {
+        weak: 'Writes a long approval process, or says “proposals will be reviewed regularly”.',
+        adequate: 'Names where to propose, the evidence needed, the decider, a response time in days and what to do if there is no answer, plus a use-count and composition check.',
+        strong: 'As adequate, and adds a decision log with reasons for rejections, or treats the two fixture cards as a proposal with two uses already.',
+      },
+    },
     saveRoute: {
       auto: 'Your route, decider, criteria, the three decisions and the log location save as you type, on this device first and then online.',
       external: 'The governance page and the decision log are files beside the system documentation in your own folder. An issue tracker helps and is not required.',
@@ -1439,6 +1502,15 @@ export const guided13: Record<string, Guided> = {
         recheck: 'The note tells a reader what to do and where.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a library app’s system is at version 2.3.1. Planned changes: rename the token “colour-alert” to “colour-warning”, add a new “compact” size to the tag component, and fix a focus ring that was invisible on dark panels. Three teams use the system.',
+      prompt: 'Classify each change and give the next version number, and explain which change needs a deprecation period and what its note must tell the teams.',
+      anchors: {
+        weak: 'Calls the rename a patch because it is one word, or ships it without notice.',
+        adequate: 'Rename is major, compact size minor, focus fix patch; deprecates the old token name for at least one minor release with a note saying what changed, why, where and by when.',
+        strong: 'As adequate, and works the numbers (for example 2.4.0 adding the new name and deprecating the old, then 3.0.0 removing it), or lists the places affected for each team.',
+      },
+    },
     saveRoute: {
       auto: 'Your version, the classifications, the change note, the deprecation rule and the changelog save as you type, on this device first and then online.',
       external: 'The changelog is a file beside the system documentation in your own folder. Nothing here needs a release tool.',
@@ -1615,6 +1687,15 @@ export const guided13: Record<string, Guided> = {
         recheck: 'Nothing your evidence supported was removed without being written down.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: you migrate two screens of a gym timetable site onto its new system. The class list, designed alongside the system, comes out at 100 per cent. The membership page, drawn a year earlier, reaches 60 per cent: a price table has no matching component and a “paused membership” status gets flattened to “inactive”.',
+      prompt: 'Decide what the two figures tell you and what to do about each blocker, and explain your reasoning.',
+      anchors: {
+        weak: 'Reports 100 per cent as success and pushes the old page to fit the system by any means.',
+        adequate: 'Treats the older page as the real test; decides each blocker (add, leave as one-off, or change the screen) and refuses to flatten “paused” silently.',
+        strong: 'As adequate, and states the counting method so the figures can be repeated, or routes the price table through governance before adding it.',
+      },
+    },
     saveRoute: {
       auto: 'Your migrations, the figures, the counting method and the blocker decisions save as you type, on this device first and then online.',
       external: 'The migrated screens stay in your own folder beside the originals. Keep the originals; the pair is what shows the migration.',
@@ -1790,6 +1871,15 @@ export const guided13: Record<string, Guided> = {
         recheck: 'Every guarantee has a check with a result from today.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a booking system’s documentation says “All components are accessible.” Its date picker was keyboard-tested; its success text passes contrast on white but was never measured on the grey panel where it often appears; page heading order is left to each team.',
+      prompt: 'Rewrite the claim as guarantees and responsibilities, and explain why each item belongs on its side of the line.',
+      anchors: {
+        weak: 'Keeps “all components are accessible”, or claims the product conforms because the components were checked.',
+        adequate: 'Guarantees only what was tested, with conditions (the keyboard behaviour; contrast on white only), lists heading order as the page author’s job, and claims no page-level conformance.',
+        strong: 'As adequate, and attaches a re-runnable check to each guarantee, or measures the grey panel before extending the guarantee to it.',
+      },
+    },
     saveRoute: {
       auto: 'Your two lists, the guarantees, the checks and the responsibilities save as you type, on this device first and then online.',
       external: 'The guarantees page sits with the system documentation in your own folder. The checks belong beside it so somebody can re-run them without asking you.',
@@ -1965,6 +2055,15 @@ export const guided13: Record<string, Guided> = {
         recheck: 'A change now has to pass through every representation before it counts as done.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a delivery app’s button has 12-pixel padding in the live app, 16 in the design file and 14 in the documentation. The live app was changed during an urgent fix; nobody updated the other two. The design file is where the team usually works.',
+      prompt: 'Decide which representation is authoritative and which value is correct, and explain how you would stop the next drift.',
+      anchors: {
+        weak: 'Makes the design file authoritative because the team works there, or fixes the three numbers once and stops.',
+        adequate: 'Names the live code as authoritative, decides correctness separately (was the urgent change right?), labels the copies with version and date, and writes a change checklist covering all three.',
+        strong: 'As adequate, and plans a regular small audit, or notes that authority says what is true today, not what is right.',
+      },
+    },
     saveRoute: {
       auto: 'Your authority decision, the drift audit, the reconciliations and the process save as you type, on this device first and then online.',
       external: 'The representations themselves stay in your own folder. Label the copies in the files rather than only here, or the label does not reach anybody opening them.',
@@ -2148,6 +2247,15 @@ export const guided13: Record<string, Guided> = {
         recheck: 'Both the removal and the additions went through the process you wrote.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a museum’s design system has 14 components. A carousel was built because “every system has one” and appears nowhere; a map pin component is unused now but a planned visitor map needs it next month; staff keep hand-drawing a “sold out” label the system lacks.',
+      prompt: 'Decide what to remove, keep or add, and explain how each decision goes through the system’s process.',
+      anchors: {
+        weak: 'Keeps everything for completeness, or deletes the carousel quietly; adds components other systems have.',
+        adequate: 'Deprecates the carousel through governance with a note and period, keeps the map pin with a written reason and date, and proposes a “sold out” status from the workaround.',
+        strong: 'As adequate, and versions the removal as a major change, or sets a monthly maintenance estimate with what gets skipped first.',
+      },
+    },
     saveRoute: {
       auto: 'Your usage review, the workarounds, the deprecation, the proposals and the plan save as you type, on this device first and then online.',
       external: 'The system, its documentation, the decision log and the changelog all live in your own folder. Nothing about them is uploaded from here.',
