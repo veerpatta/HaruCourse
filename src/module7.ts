@@ -83,7 +83,7 @@ export const module7: Lesson[] = [
     teach: [
       "A flow has four kinds of node and most beginners draw only one. Actions are what the person does. Decisions are points where the path forks, and the fork belongs to the person or to the system — “do they have an account?” is a system decision the person never sees and still shapes everything. States are what the system is doing while they wait: submitted, pending, failed, expired. And exits are how the flow ends, including the ways it ends badly — abandoned, timed out, transferred to a phone call.",
       "Entry points are plural and you rarely control them. People arrive at a booking from a search engine on a class page rather than a home page, from a friend's forwarded link, from a message with a half-remembered detail, or by returning three days later on a different phone. Draw each real entry you have evidence for, because a flow that begins at a home page nobody visits describes a product nobody uses.",
-      "Mark what has to be true before each step, and what the person must be holding. To pay, someone needs an amount they trust, a payment method to hand and often a decision from someone else. Prerequisites drawn on the flow are how you notice that your third screen asks for something the person cannot possibly have yet — the single most common structural fault in a first flow, and it is invisible until the prerequisites are written down.",
+      "Mark what has to be true before each step, and what the person must be holding. To pay, someone needs an amount they trust, a payment method to hand and often a decision from someone else. Prerequisites drawn on the flow are how you notice that your third screen asks for something the person cannot possibly have yet — a very common structural fault in a first flow, and it is invisible until the prerequisites are written down.",
       "Waiting is part of the flow, not an absence of it. Anything involving payment, another person, or a network can hold someone in an ambiguous state, and that state needs its own node, its own message and its own way out. A flow that draws payment as a single arrow between two screens has hidden precisely where people pay twice, ring the shop or give up.",
     ],
     misconception:
@@ -130,7 +130,7 @@ export const module7: Lesson[] = [
       {
         question: "What does marking prerequisites catch?",
         answer:
-          "Steps that ask for something the person cannot yet have — a total they have not been shown, a decision from someone who is not present, a document at home. It is the commonest structural fault in a first flow and is invisible until written down.",
+          "Steps that ask for something the person cannot yet have — a total they have not been shown, a decision from someone who is not present, a document at home. It is a common structural fault in a first flow and is invisible until written down.",
       },
       {
         question: "Why does waiting need its own node?",
@@ -170,7 +170,7 @@ export const module7: Lesson[] = [
           "As adequate, and the most common real ending in your research is identified even if it is not success.",
         ],
         remediation:
-          "List how each m05 participant actually arrived and how each session actually ended. Add every one to the flow.",
+          "List how each m05 participant actually arrived and how each session actually ended. Add every one to the flow. Without participants, use real messages, the supplied practice notes or your own walkthrough, each labelled by source.",
         recheck: "The flow with entries and endings.",
       },
       {
@@ -190,11 +190,11 @@ export const module7: Lesson[] = [
       {
         criterion: "Stopping points are named with evidence",
         evidence:
-          "Three marked stopping points, each with a source — an observation, a quotation or a test result.",
+          "Three marked stopping points, each with a source — an observation, a quotation or a test result; without research, a labelled real message, supplied practice note or walkthrough suspicion.",
         levels: [
           "No stopping points, or points chosen by intuition.",
           "Points named but with no evidence attached.",
-          "Three points named, each with its evidence.",
+          "Three points named, each with its evidence and the kind of source labelled.",
           "As adequate, and one stopping point contradicts what you expected before the research, with that noted.",
         ],
         remediation:
@@ -403,20 +403,20 @@ export const module7: Lesson[] = [
     areas: [6, 7],
     title: "Getting in and getting back in",
     objective:
-      "Design the sign-in, sign-up and recovery paths for your product, including the shared-device and lost-access cases, with every form field labelled, every error message written and the recovery path shown to work without the thing that was lost.",
+      "Design the sign-in, sign-up and recovery paths for your product, including the shared-device and lost-access cases, with every form field labelled, every error message written, and the recovery path shown to work without the thing that was lost — through a channel the person verified earlier or a reviewed check, never revealing whether an account exists.",
     bringForward:
       "Your flow and the deferral list. Whatever you deferred to “when they have an account” now needs an account path that people can actually complete.",
     why: "Authentication is where products lose people who already wanted to use them. It is also the part most often designed from the happy path, and the recovery case — the person who cannot get in — is the one that decides whether they ever come back.",
     teach: [
-      "Every field in an authentication form needs a persistent, visible label, an accessible error message tied to the field, and input that survives a failed attempt. The assigned forms tutorial covers labels, instructions, validation and notifications precisely, and these are not stylistic preferences: a placeholder that disappears when typing, an error at the top of the page with no link to the field, or a form that clears itself after a mistake are the three reliable ways to make a person give up on their third attempt.",
-      "Recovery must not depend on the thing that was lost. If a person cannot sign in because they have lost access to the phone number they registered with, sending a code to that number is not a recovery path, it is the same wall. Design at least one route that uses a different factor, and be explicit about what happens when someone genuinely has nothing: a way to reach a human is a legitimate part of the design and belongs on the flow rather than being left to the support inbox.",
+      "Every field in an authentication form needs a persistent, visible label, an accessible error message tied to the field, and input that survives a failed attempt. The assigned forms tutorial covers labels, instructions, validation and notifications precisely, and these are not stylistic preferences: a placeholder that disappears when typing, an error at the top of the page with no link to the field, or a form that clears itself after a mistake are the three reliable ways to make a person give up on their third attempt. One answer must never be specific, though: whether an account exists. “We could not find an account with that number” tells anyone typing numbers who is registered. Reply the same way to everybody — “If an account matches that number, we have sent it a code” — and keep field-level errors for things the person can see and fix, such as a number one digit short or a code that has run out.",
+      "Recovery must not depend on the thing that was lost, and it must not hand an account to someone who merely knows a few facts about it. If a person has lost the phone number she registered with, sending a code to that number is the same wall. The route back has to use something she verified earlier — an email address she confirmed at sign-up, say — or a reviewed check by a person. A booking reference and a class date identify a booking, not a person: both sit in the confirmation message and in any screenshot of it. So changing the phone number or email on an account is a security decision: confirm it through a channel already verified or a reviewed check, tell the old number or address that it happened, and allow a short window to undo it. Be explicit about someone who genuinely has nothing: a reviewed route to a human belongs on the flow, with the identity check it uses written down, rather than being left to the support inbox.",
       "Shared and borrowed devices are ordinary, not an edge case — in India and in many contexts a phone is shared within a family, and a person may book from someone else's device once and never again. That has design consequences: staying signed in by default can expose one person's bookings to another; sending a code to a shared phone may reach the wrong person; and “remember me” has to be a visible choice rather than an assumption. Design for the borrowed device and the sole-device person, not only for the individual with their own laptop.",
-      "Ask what the account is actually for before designing it. Sometimes the answer is nothing: a booking can be identified by a reference and a phone number, and forcing an account is an obstacle that costs you the booking. Where an account genuinely serves the person — seeing history, changing a booking, not re-entering details — say which of those it provides, and let the identity requirement follow from that rather than from habit.",
+      "Ask what the account is actually for before designing it. Sometimes the answer is nothing: a booking can be looked up with its reference and a code sent to the booking’s phone, and forcing an account is an obstacle that costs you the booking. Where an account genuinely serves the person — seeing history, changing a booking, not re-entering details — say which of those it provides, and let the identity requirement follow from that rather than from habit.",
     ],
     misconception:
-      "“More authentication steps mean better security.” They mean more failure points, and the commonest response to a wall is not a more careful person but a person who writes the password down, reuses one, or leaves. Security decisions are trade-offs against access, and a design that locks out the legitimate person has not made anyone safer.",
+      "“More authentication steps mean better security.” They mean more failure points, and a common response to a wall is not a more careful person but a person who writes the password down, reuses one, or leaves. Security is decided by where the checks sit as much as by how many there are: each extra step at sign-in makes takeover harder and lock-out likelier, so write both costs down, and never leave the moment of changing a phone number or email unguarded, because that is where accounts are taken over.",
     example:
-      "A booking product asked people to register before seeing a price. Rebuilt: no account to browse or book, a booking reference plus phone number to look up a booking later, and an optional account for people who book often. Sign-in offered a code to phone or email, and recovery worked from either — because in the observation session a participant had changed her number and could no longer receive codes. On a shared device, “stay signed in” was off by default with the choice visible, and the confirmation screen offered “finish and sign out” explicitly. Every error message was written out: “That code has expired — request a new one” rather than “Invalid credentials”, and every failed attempt kept the phone number the person had already typed.",
+      "A booking product asked people to register before seeing a price. Rebuilt: no account to browse or book, a booking reference plus a code sent to the booking’s phone to look a booking up later, and an optional account for people who book often. Sign-in offered a code to whichever phone or email the person had confirmed at sign-up — because in the observation session a participant had changed her number and could no longer receive codes, while her confirmed email still worked. Changing the number on an account sent a code to the confirmed email, sent a notice to the old number, and could be undone for a day; someone with neither was routed to the provider, who checked identity by a reviewed process before anything changed. Every reply to a sign-in or recovery request read the same whether or not an account existed: “If an account matches, we have sent a code.” On a shared device, “stay signed in” was off by default with the choice visible, and the confirmation screen offered “finish and sign out” explicitly. Errors the person could fix were written out — “That code has run out — send a new one” rather than “Invalid credentials” — and every failed attempt kept the phone number the person had already typed.",
     steps: [
       {
         minutes: 25,
@@ -431,12 +431,12 @@ export const module7: Lesson[] = [
       {
         minutes: 30,
         title: "Draw sign-up, sign-in and recovery",
-        text: "Draw all three paths on your flow, including at least one recovery route that does not depend on the lost factor, and the ending for someone with nothing left — a route to a person.",
+        text: "Draw all three paths on your flow, including at least one recovery route through a channel the person verified earlier, how a change of phone number or email is confirmed, told to the old contact and undone, and the ending for someone with nothing left — a reviewed route to a person.",
       },
       {
         minutes: 25,
         title: "Write every message",
-        text: "Write the exact wording for each error and confirmation: what happened, what to do next, and what was kept. Attach each error to its field.",
+        text: "Write the exact wording for each error and confirmation: what happened, what to do next, and what was kept. Attach each fixable error to its field, and write the one reply that reads the same whether or not an account exists.",
       },
       {
         minutes: 15,
@@ -447,12 +447,12 @@ export const module7: Lesson[] = [
     freeToolPath:
       "Paper screens with the real message wording written on them. If you want to check the field behaviour, a single local HTML file with labelled inputs shows you what happens on a failed submission without any framework or account.",
     deliverable:
-      "Sign-up, sign-in and recovery paths drawn on the flow, a stated purpose for the account with a no-account path, written wording for every error and confirmation attached to its field, and a recorded shared-device walkthrough with the changes it forced.",
+      "Sign-up, sign-in and recovery paths drawn on the flow, with recovery through a verified channel or reviewed check and replies that never reveal whether an account exists; a stated purpose for the account with a no-account path; written wording for every error and confirmation attached to its field; and a recorded shared-device walkthrough with the changes it forced.",
     check: [
       {
         question: "Why must recovery avoid the lost factor?",
         answer:
-          "Because otherwise it is not recovery. Sending a code to the phone number the person no longer has is the same wall with a friendlier label; a real recovery path uses a different factor or reaches a human.",
+          "Because otherwise it is not recovery. Sending a code to the phone number the person no longer has is the same wall with a friendlier label. A real recovery path uses a factor she verified earlier, or a reviewed check by a human — never facts like a booking reference that anyone holding the confirmation could repeat.",
       },
       {
         question:
@@ -463,12 +463,12 @@ export const module7: Lesson[] = [
       {
         question: "When should a product not require an account?",
         answer:
-          "When the account gives the person nothing they want. If a reference number and a phone number identify a booking well enough, requiring registration is an obstacle that costs bookings and buys the person nothing.",
+          "When the account gives the person nothing they want. If a booking reference plus a code to the booking’s phone lets people find their booking, requiring registration is an obstacle that costs bookings and buys the person nothing.",
       },
     ],
     rubric: [
       "Every field has a persistent label and a field-level error",
-      "Recovery works without the lost factor",
+      "Recovery verifies identity without the lost factor",
       "The shared-device case is designed, not assumed away",
       "The account's purpose is stated or the requirement removed",
     ],
@@ -476,10 +476,10 @@ export const module7: Lesson[] = [
       {
         criterion: "Every field has a persistent label and a field-level error",
         evidence:
-          "Field-by-field wording showing labels that remain visible and error messages tied to specific fields, with input preserved.",
+          "Field-by-field wording showing labels that remain visible and fixable errors tied to specific fields, with input preserved and no message revealing whether an account exists.",
         levels: [
           "Placeholders used as labels, or errors only at page level.",
-          "Labels present but errors generic or detached from fields.",
+          "Labels present but errors generic or detached from fields, or an error that says whether an account exists.",
           "Persistent labels, field-level errors, and preserved input throughout.",
           "As adequate, and one message states what was kept so the person knows they need not retype it.",
         ],
@@ -488,18 +488,18 @@ export const module7: Lesson[] = [
         recheck: "The field-by-field table.",
       },
       {
-        criterion: "Recovery works without the lost factor",
+        criterion: "Recovery verifies identity without the lost factor",
         evidence:
-          "At least one recovery route using a different factor, plus a defined ending for someone with nothing left.",
+          "At least one recovery route through a factor verified earlier, a reviewed route to a human for someone with nothing left, and replies that read the same whether or not an account exists.",
         levels: [
-          "Recovery depends on the lost factor.",
-          "An alternative exists but is not drawn or is unavailable to your real users.",
-          "A genuine alternative route and a route to a human are both on the flow.",
-          "As adequate, and the design states what identity check the human route uses, so it is not simply an unspecified promise.",
+          "Recovery depends on the lost factor, or accepts facts such as a booking reference that anyone holding the confirmation knows.",
+          "A different route exists but is not drawn, is unavailable to your real users, or its replies reveal whether an account exists.",
+          "A route through an already-verified channel and a reviewed route to a human are both on the flow, and no reply reveals whether an account exists.",
+          "As adequate, and changing a phone number or email notifies the old contact and can be undone for a stated time, with the human route's identity check written down.",
         ],
         remediation:
-          "Walk the flow as someone who has changed their phone number and lost the email password. Draw what they can actually do.",
-        recheck: "The recovery paths on the flow.",
+          "Walk the flow twice: as someone who has changed her phone number, and as a stranger holding her booking confirmation. Draw what each can do; anything the stranger can change on the account is a hole to close.",
+        recheck: "The recovery paths on the flow, with the replies they show.",
       },
       {
         criterion: "The shared-device case is designed, not assumed away",
@@ -909,7 +909,7 @@ export const module7: Lesson[] = [
     misconception:
       "“The confirmation screen is the end of the flow.” It is the middle. People screenshot it, forward it, look for it in email, come back three days later to check, and arrive at the class holding a phone with no signal. The confirmation must exist somewhere that survives the tab closing, and your flow should show where it lives afterwards and how it is retrieved.",
     example:
-      "The commitment step became a review screen listing class, date, time, place, total, what is included, the cancellation deadline in plain words, and a change link beside each. The pay button carried the exact amount. Four wait states were designed after the m05 observation of a woman standing at a window waiting: pending said what was happening and told her not to pay again; failed said nothing had been taken and offered a retry that kept her details; unknown gave a reference, a promise of a message within an hour and a number to ring. Confirmation gave the reference first, sent it by message, and stated that it could be found later with the reference and phone number — no account needed. Throttled to a slow connection, the pending message arrived before any styling, which was the point of writing it as text rather than an animation.",
+      "The commitment step became a review screen listing class, date, time, place, total, what is included, the cancellation deadline in plain words, and a change link beside each. The pay button carried the exact amount. Four wait states were designed after the m05 observation of a woman standing at a window waiting: pending said what was happening and told her not to pay again; failed said nothing had been taken and offered a retry that kept her details; unknown gave a reference, a promise of a message within an hour and a number to ring. Confirmation gave the reference first, sent it by message, and stated that it could be found later with the reference and a code sent to the booking’s phone — no account needed. Throttled to a slow connection, the pending message arrived before any styling, which was the point of writing it as text rather than an animation.",
     steps: [
       {
         minutes: 25,
@@ -1060,25 +1060,25 @@ export const module7: Lesson[] = [
     areas: [6],
     title: "The paths where things go wrong",
     objective:
-      "Produce an exception table for your whole flow listing at least twelve failure cases, each classified as a slip or a mistake, with its prevention, its message and its recovery route.",
+      "Produce an exception table for your whole flow listing at least twelve failure cases, each classified as a slip, a mistake or a system fault, with its prevention or safeguard, its message and its recovery route.",
     bringForward:
       "Your complete flow with its states and waits. Every decision point and every wait is a place something can go wrong; this lesson makes that list exhaustive rather than intuitive.",
     why: "The difference between a product people trust and one they abandon is almost entirely in what happens when something goes wrong. Happy paths are easy and everybody designs them; the exception table is the work.",
     teach: [
-      "The assigned reading separates slips from mistakes, and the distinction decides the response. A slip is when someone knew what to do and their hands or attention failed — the wrong date tapped, a digit missed, the wrong button on a crowded screen. A mistake is when the person's model was wrong — they believed booking held a place, or that cancelling was free. Slips are prevented by design: bigger targets, sensible defaults, confirmation of consequential actions, forgiving formats. Mistakes are prevented by explanation and feedback: telling people what is true before they act on their assumption.",
-      "Generate the list systematically rather than by imagination. Walk your flow and at every node ask four questions: what if the input is wrong, what if the system fails, what if the person leaves and comes back, and what if someone else changed something meanwhile. That last one produces the failures nobody thinks of — the place taken while they were deciding, the class cancelled while they were paying, the price changed between two screens.",
+      "The assigned reading separates slips from mistakes, and the distinction decides the response. A slip is when someone knew what to do and their hands or attention failed — the wrong date tapped, a digit missed, the wrong button on a crowded screen. A mistake is when the person's model was wrong — they believed booking held a place, or that cancelling was free. Slips are prevented by design: bigger targets, sensible defaults, confirmation of consequential actions, forgiving formats. Mistakes are prevented by explanation and feedback: telling people what is true before they act on their assumption. This lesson adds a third class the reading does not name: the system fault, where the person's hand and belief were both fine and the product or something around it failed — a timeout, an outage, a payment provider error, data that went stale or changed underneath them. System faults are answered by safeguards and recovery: an honest state, what has happened to their money, work and place, a retry that cannot do the action twice, and a route out that does not depend on the part that failed. Forcing a system fault into slip or mistake blames the person for the product's failure and produces the wrong fix.",
+      "Generate the list systematically rather than by imagination. Walk your flow and at every node ask four questions: what if the input is wrong, what if the system fails, what if the person leaves and comes back, and what if someone else changed something meanwhile. That last one produces the failures nobody thinks of — the place taken while they were deciding, the class cancelled while they were paying, the price changed between two screens. The second and fourth questions mostly produce system faults; keep them in that class rather than relabelling them as user error.",
       "Every message needs three things and most have one. What happened, in the person's terms rather than the system's. What it means for them — is their money safe, is their place held, is the work they did lost. And what to do next, as an action they can take now. “Something went wrong” has none of the three; “We could not reach the payment service. Nothing has been taken and your place is held for ten more minutes — try again or pay later with this reference” has all three.",
       "Recovery beats prevention where the cost of prevention is a worse experience for everyone. A confirmation dialogue on every action prevents rare slips and irritates people constantly; an undo that works for a few minutes costs nothing until it is needed. Prefer undo where the action can be reversed, confirmation where it truly cannot, and neither where the action is trivial — and write down which you chose and why, because this is one of the decisions reviewers most often ask you to defend.",
     ],
     misconception:
       "“Error handling is a development detail.” The message text, the state the person is left in and the route back are design decisions with a direct cost in abandoned tasks and support calls. Left to be written during implementation, they become the database's vocabulary, which is how people meet the word “invalid” in a product they are trying to buy something from.",
     example:
-      "An exception table for a booking flow reached nineteen rows. Slips: wrong date tapped on a crowded calendar — prevented with larger targets and the day name shown beside the number; a mistyped phone number — prevented by a forgiving format and an echo of what was entered. Mistakes: believing a held place was a booking — prevented by naming the state on screen and in the message; believing cancellation was free — prevented by stating the deadline on the review screen. Concurrency: the last place taken while the person was on the payment screen, which had never been considered, and which produced the worst message in the product until it was written properly. Undo was chosen for cancelling a booking within five minutes; confirmation was reserved for the one genuinely irreversible action; nothing else got either.",
+      "An exception table for a booking flow reached nineteen rows. Slips: wrong date tapped on a crowded calendar — prevented with larger targets and the day name shown beside the number; a mistyped phone number — prevented by a forgiving format and an echo of what was entered. Mistakes: believing a held place was a booking — prevented by naming the state on screen and in the message; believing cancellation was free — prevented by stating the deadline on the review screen. System faults: the payment service timing out, answered with an honest unknown state and a retry that cannot charge twice; and, found only by the changed-meanwhile question, the last place taken while the person was on the payment screen, which had never been considered and which produced the worst message in the product until it was written properly. Undo was chosen for cancelling a booking within five minutes; confirmation was reserved for the one genuinely irreversible action; nothing else got either.",
     steps: [
       {
         minutes: 25,
         title: "Read on slips and mistakes",
-        text: "Read the assigned article on preventing user errors and the recovery heuristic. Write the difference between a slip and a mistake in your own words, with one example from your own flow for each.",
+        text: "Read the assigned article on preventing user errors and the recovery heuristic. Write the difference between a slip, a mistake and a system fault in your own words, with one example from your own flow for each.",
       },
       {
         minutes: 35,
@@ -1088,12 +1088,12 @@ export const module7: Lesson[] = [
       {
         minutes: 25,
         title: "Classify and choose the response",
-        text: "Mark each case slip or mistake, then choose prevention, undo, confirmation or recovery only — with a reason. Prefer undo to confirmation where the action can be reversed.",
+        text: "Mark each case slip, mistake or system fault, then choose prevention, undo, confirmation, a safeguard or recovery only — with a reason. Prefer undo to confirmation where the action can be reversed, and never relabel a system fault as user error.",
       },
       {
         minutes: 25,
         title: "Write the messages",
-        text: "For each case write what happened, what it means for the person and what to do next. No message may use system vocabulary or leave the money question unanswered.",
+        text: "For each case write what happened, what it means for the person and what to do next. No message may use system vocabulary or leave the money question unanswered, and a system fault says plainly that the failure was on the product's side.",
       },
       {
         minutes: 10,
@@ -1104,12 +1104,12 @@ export const module7: Lesson[] = [
     freeToolPath:
       "A table on paper or in a text file with one row per failure. Writing the message text in full is the required part — an exception table listing cases without their wording is a list of problems rather than a design.",
     deliverable:
-      "An exception table of at least twelve cases, each classified slip or mistake, with the chosen response and its reason, full message wording covering what happened, what it means and what to do next, and a harm ranking with three cases marked to fix first.",
+      "An exception table of at least twelve cases, each classified slip, mistake or system fault, with the chosen response and its reason, full message wording covering what happened, what it means and what to do next, and a harm ranking with three cases marked to fix first.",
     check: [
       {
-        question: "Why does the slip-or-mistake classification matter?",
+        question: "Why does the slip, mistake or system-fault classification matter?",
         answer:
-          "Because they need different responses. A slip is answered by making the right action easier and the wrong one recoverable; a mistake is answered by correcting what the person believes, which no amount of bigger buttons will do.",
+          "Because they need different responses. A slip is answered by making the right action easier and the wrong one recoverable; a mistake is answered by correcting what the person believes, which no amount of bigger buttons will do; a system fault is answered by safeguards, an honest state and a route out, because the person did nothing wrong.",
       },
       {
         question:
@@ -1125,7 +1125,7 @@ export const module7: Lesson[] = [
     ],
     rubric: [
       "At least twelve cases generated systematically, not by intuition",
-      "Each case is classified slip or mistake",
+      "Each case is classified slip, mistake or system fault",
       "Responses are chosen with a stated reason",
       "Every message says what happened, what it means and what to do",
     ],
@@ -1136,9 +1136,9 @@ export const module7: Lesson[] = [
         evidence:
           "A table covering every node against the four questions, including concurrency cases.",
         levels: [
-          "A handful of obvious errors.",
-          "A longer list, but generated ad hoc and missing whole classes such as concurrency.",
-          "Twelve or more from a systematic walk, including someone-else-changed-it cases.",
+          "A handful of obvious errors, all treated as the person's fault.",
+          "A longer list, but generated ad hoc and missing whole classes such as system failures or concurrency.",
+          "Twelve or more from a systematic walk, including system failures and someone-else-changed-it cases.",
           "As adequate, and at least one case is one you would not have thought of without the four-question walk, and is marked as such.",
         ],
         remediation:
@@ -1146,27 +1146,27 @@ export const module7: Lesson[] = [
         recheck: "The extended exception table.",
       },
       {
-        criterion: "Each case is classified slip or mistake",
+        criterion: "Each case is classified slip, mistake or system fault",
         evidence:
-          "A classification per row, consistent with the definitions, with the response following from it.",
+          "A classification per row, consistent with the definitions, with system faults kept apart from user error and the response following from the class.",
         levels: [
-          "No classification.",
-          "Classified inconsistently, or all cases treated as slips.",
-          "Every case classified and the response follows from the class.",
-          "As adequate, and one case is identified as both — a slip made likely by a mistaken belief — with both addressed.",
+          "No classification, or system failures listed as the person's error.",
+          "Classified inconsistently, or every case forced into slip or mistake, including the system's own failures.",
+          "Every case classified as slip, mistake or system fault, and the response follows from the class.",
+          "As adequate, and one case is identified as two classes at once — a slip made likely by a mistaken belief, or a system fault that a person then compounds — with both addressed.",
         ],
         remediation:
-          "For each case ask whether the person intended the right thing. If they did, it is a slip; if their belief was wrong, it is a mistake.",
+          "For each case ask three questions in order. Did the product or something around it fail or change? Then it is a system fault. If not, did the person intend the right thing? If they did, it is a slip; if their belief was wrong, it is a mistake.",
         recheck: "The classified table.",
       },
       {
         criterion: "Responses are chosen with a stated reason",
         evidence:
-          "Prevention, undo, confirmation or recovery-only chosen per case, with a reason and no blanket use of confirmation.",
+          "Prevention, undo, confirmation, a safeguard or recovery-only chosen per case, with a reason and no blanket use of confirmation.",
         levels: [
           "Responses missing, or confirmation applied everywhere.",
           "Responses chosen without reasons.",
-          "Each response has a reason, with undo preferred where reversal is possible.",
+          "Each response has a reason, with undo preferred where reversal is possible and system faults answered by safeguards and recovery rather than by warnings to the person.",
           "As adequate, and at least one case is deliberately left unprevented because prevention would cost everyone more than the failure costs.",
         ],
         remediation:
@@ -1181,7 +1181,7 @@ export const module7: Lesson[] = [
         levels: [
           "Messages missing or written as system errors.",
           "Wording present but missing what it means for the person.",
-          "All three elements in every message, in plain words.",
+          "All three elements in every message, in plain words, with system faults saying plainly that the failure was on the product's side.",
           "As adequate, and one message is written for the worst case — unknown outcome — and says what not to do.",
         ],
         remediation:
@@ -1234,7 +1234,7 @@ export const module7: Lesson[] = [
       "Low fidelity means the arrangement and the priority are decided and nothing else is. Boxes, real words, sizes that show relative importance — no colour decisions, no type choices, no icon sets, no borrowed component library. The discipline is protective: the moment a wireframe starts looking finished, feedback shifts to the colours and away from whether the screen contains the right things in the right order, which is the only question it can answer.",
       "Real content, always. Placeholder text hides every problem a wireframe exists to find: the label that is three words too long, the price that needs a qualifier, the empty state nobody wrote. Use the labels from your m06 table and the message wording from your exception table, and where you do not yet know what the words are, write “unknown — needs a decision” rather than filling the space with something plausible.",
       "Design each screen around its one job. A screen usually exists to let a person do one thing and understand one state, and the content order should follow: the thing they came for first, what they need to judge it second, the action third, supporting material last. Write the job at the top of each wireframe. A screen with two jobs is usually two screens, or one screen that will test badly in both roles.",
-      "Wireframe the exceptions too, not only the happy path. Your exception table names states — pending, unavailable, empty, permission-denied — and each is a screen a person will actually see. Drawing them at low fidelity costs minutes and reveals immediately whether your layout has anywhere to put a two-line explanation, which is the commonest reason error messages end up somewhere useless.",
+      "Wireframe the exceptions too, not only the happy path. Your exception table names states — pending, unavailable, empty, permission-denied — and each is a screen a person will actually see. Drawing them at low fidelity costs minutes and reveals immediately whether your layout has anywhere to put a two-line explanation, which is a common reason error messages end up somewhere useless.",
     ],
     misconception:
       "“Wireframes are just ugly versions of the final design.” They are a different instrument. A wireframe answers what is on the screen and in what order; a visual design answers how it feels and where the eye goes. Skipping the first because you can do the second quickly means the ordering questions get settled by whatever looked balanced.",
@@ -1561,7 +1561,7 @@ export const module7: Lesson[] = [
       "A component's states are a list you can enumerate rather than a matter of judgement: default, hover where a pointer exists, focus for keyboard users, active while being pressed, loading, disabled, and error. Focus is the one most often forgotten, and it is the only way a keyboard user knows where they are — an interface where focus is invisible is unusable without a mouse, however it looks. Specify what changes in each state and never signal a state with colour alone, since the difference must survive being seen in greyscale.",
       "A screen has states too, and they are not the same list: empty, partially loaded, fully loaded, error, permission-denied, offline and success-after-action. Each needs its own content, not merely a spinner: an empty list should say what will appear and how to start it, an error should say what happened and what to do, and a successful action should say what changed and what is possible next. Your exception table already wrote most of this wording; this lesson places it.",
       "State what triggers each state and what leaves it. A loading state that has no defined end is how an interface hangs forever; an error state with no route out is a dead end. Write each as a small table — trigger, appearance, what the person can do, what ends it — because that is the form a developer can build from and a reviewer can check, and because writing it exposes the states you had not decided.",
-      "Disabled and unavailable are different and the distinction matters more than it sounds. Disabled means not yet: something must be completed first, and the interface should say what. Unavailable means not for you, or not now, which is the permission and availability work from earlier lessons. A disabled control with no explanation is read as a broken product, and it is the single most common state failure in student work.",
+      "Disabled and unavailable are different and the distinction matters more than it sounds. Disabled means not yet: something must be completed first, and the interface should say what. Unavailable means not for you, or not now, which is the permission and availability work from earlier lessons. A disabled control with no explanation is read as a broken product, and it is a very common state failure in student work.",
     ],
     misconception:
       "“States are visual details for the UI stage.” They are behaviour, and they change what a person can do. Deciding them at the visual stage means deciding them by appearance — what looks good greyed out — rather than by what a person needs to know at that moment, which is why so many disabled buttons never explain themselves.",
@@ -1717,7 +1717,7 @@ export const module7: Lesson[] = [
     areas: [6, 7],
     title: "The wireflow: one artefact someone else could build from",
     objective:
-      "Combine the flow, the screens and the state specifications into a single annotated wireflow, and have it read by someone who was not involved, recording every question they had to ask you.",
+      "Combine the flow, the screens and the state specifications into a single annotated wireflow, and have it read by someone who was not involved, recording every question they had to ask you — or, if nobody uninvolved can be reached, record a labelled rehearsal read or a dated gap.",
     bringForward:
       "The flow, the wireframes at three widths, the exception table and the state specifications. This lesson joins them; it should not require new design decisions, and anywhere it does is a gap worth finding.",
     why: "Four separate artefacts that only make sense together, in your head, are not a deliverable. A wireflow is the form a designer's work actually travels in — to an engineer, to a reviewer, to yourself in three months — and the test of it is whether someone else can follow it without you in the room.",
@@ -1725,7 +1725,7 @@ export const module7: Lesson[] = [
       "A wireflow is the flow diagram with each node replaced by, or linked to, the screen a person sees there, annotated with the transitions and the conditions. It answers three questions at once: what happens in what order, what the person sees at each point, and what causes each move. Kept as three separate documents those answers drift apart, and the drift is invisible until an engineer builds from the one that is out of date.",
       "Annotate what is not visible in a picture. What is required and what is optional, what happens on submission, what the back behaviour is, what is preserved when a person returns, what the timeout is, which elements never move across widths, and what happens when a request fails. These are the questions an engineer will otherwise ask you one at a time over a week, or decide alone if you are not available.",
       "Mark what is decided and what is not. A wireflow claiming completeness while three labels are still guesses invites everyone to build on them, and the guesses become facts by being drawn confidently. Use an explicit open-questions list on the artefact itself, carrying the guesses from your m06 change note, the undecided permission cells and any content nobody has written — that list is a feature of a good handover, not an admission.",
-      "Version it and date it. The moment work is shared, several copies exist, and the commonest handover failure is not a missing annotation but two people looking at different versions confidently. A date, a version and a one-line note of what changed since the last one costs nothing and prevents an entire class of expensive confusion.",
+      "Version it and date it. The moment work is shared, several copies exist, and a common handover failure is not a missing annotation but two people looking at different versions confidently. A date, a version and a one-line note of what changed since the last one costs nothing and prevents an entire class of expensive confusion.",
     ],
     misconception:
       "“I will explain it in the handover meeting.” The meeting produces agreement in the room and nothing durable; the person building it two weeks later works from the artefact and their memory of a conversation. Anything that matters must survive on the page, and the meeting is best spent on the open questions rather than on narrating what the page already says.",
@@ -1832,11 +1832,11 @@ export const module7: Lesson[] = [
       {
         criterion: "An uninvolved reader's questions were recorded",
         evidence:
-          "A list of the questions someone not involved had to ask, with what each will change.",
+          "A list of the questions someone not involved had to ask, with what each will change — or a labelled rehearsal read, or a dated record that no uninvolved reader could be reached.",
         levels: [
           "Not read by anyone else.",
           "Read, but questions answered in conversation and not recorded.",
-          "Questions recorded, each with what it changes in the artefact.",
+          "Questions recorded, each with what it changes in the artefact; or, where no uninvolved reader could be found, a labelled rehearsal read or a dated gap with the artefact ready.",
           "As adequate, and the artefact was revised and re-read, with the second reader's questions also recorded.",
         ],
         remediation:
@@ -1881,7 +1881,7 @@ export const module7: Lesson[] = [
     areas: [6, 7],
     title: "Walk it with someone: the paper prototype test",
     objective:
-      "Run a moderated paper prototype test of two tasks with at least three participants, recording where each person hesitated, what they expected next and every place they went somewhere you had not drawn.",
+      "Run a moderated paper prototype test of two tasks with at least three participants, recording where each person hesitated, what they expected next and every place they went somewhere you had not drawn — or, if nobody can be reached, prepare and rehearse the full kit and record a dated gap.",
     bringForward:
       "The wireflow and the open-questions list. Test the tasks your open questions bear on, not the parts you are confident about.",
     why: "Everything so far has been reasoning. This is the first time a person meets the design, and paper is enough: the failures that matter at this stage are about order, wording and expectation, all of which show up on a sheet of paper as clearly as in a built product.",
@@ -1970,11 +1970,11 @@ export const module7: Lesson[] = [
         criterion:
           "Expectation and hesitation are recorded, not just outcomes",
         evidence:
-          "Session records showing what each participant expected before a change, what happened and where they hesitated.",
+          "Session records showing what each participant expected before a change, what happened and where they hesitated — or, on the rehearsal route, the same record of the rehearsal, labelled as one.",
         levels: [
           "Completion recorded only.",
           "Some commentary but no systematic expectation capture.",
-          "Expectation, action, outcome and hesitation recorded throughout.",
+          "Expectation, action, outcome and hesitation recorded throughout, with any rehearsal labelled as one.",
           "As adequate, and at least one completed task is marked as a problem because of the doubt involved.",
         ],
         remediation:
@@ -1988,7 +1988,7 @@ export const module7: Lesson[] = [
         levels: [
           "Not captured.",
           "Noted informally without what was expected.",
-          "Captured with the expectation for each.",
+          "Captured with the expectation for each; where nobody could be reached, the screens you had to improvise while rehearsing, labelled rehearsal.",
           "As adequate, and at least one is designed as a result, with the change traced to the sessions.",
         ],
         remediation:
@@ -2047,7 +2047,7 @@ export const module7: Lesson[] = [
     areas: [6, 7],
     title: "Repair, re-test and write the decision record",
     objective:
-      "Repair the two highest-harm problems from your test, re-test them with someone new, and write a decision record for the whole module stating each significant decision, its evidence, its alternatives and what remains untested.",
+      "Repair the two highest-harm problems from your test, re-test them with someone new — or, if nobody new can be reached, record the predictions as untested with a dated gap — and write a decision record for the whole module stating each significant decision, its evidence, its alternatives and what remains untested.",
     bringForward:
       "The ranked problem list, the wireflow and every open question. This lesson closes the module the way m05 and m06 closed: with a repair that was checked and a record another person could act on.",
     why: "A test that changes nothing was a way of spending three people's time. And a set of design decisions whose reasoning exists only in your memory cannot be defended in a review, handed over, or explained in an interview — which is where most of this work will eventually be judged.",
@@ -2055,7 +2055,7 @@ export const module7: Lesson[] = [
       "Repair the highest-harm problems, not the easiest ones. There is always a wording fix that takes ten minutes and a structural problem that takes an afternoon, and the ten-minute fix is tempting because it produces visible progress. Rank by harm, repair the top two, and record the rest honestly as known and unfixed — a known unfixed problem is a normal state for a real product, and pretending otherwise is what makes a case study unbelievable.",
       "Re-test with someone new. A person who has already seen the design cannot tell you whether the new version is clearer; they can only tell you whether they remember it. Re-test only the affected tasks, with fresh participants, and predict beforehand what should change — a prediction written in advance is what turns a re-test into evidence rather than a confirmation exercise.",
       "The decision record is the artefact that keeps its value longest. For each significant decision: what was decided, what evidence supports it, what alternatives were rejected and why, and what remains untested. Written properly it is the spine of a case study, the answer to “why did you do that?” in an interview, and the thing that stops a future team re-running an argument you already settled with evidence.",
-      "Be exact about what this module did and did not establish. You have tested a paper prototype with a handful of people on two tasks. You have not established that the flow works at volume, on a real connection with real content, for people unlike your participants, or with assistive technology. Some of those come later in the course; all of them belong in the record now, because the gap between what was tested and what is claimed is the single most common failure in a design portfolio.",
+      "Be exact about what this module did and did not establish. You have tested a paper prototype with a handful of people on two tasks. You have not established that the flow works at volume, on a real connection with real content, for people unlike your participants, or with assistive technology. Some of those come later in the course; all of them belong in the record now, because the gap between what was tested and what is claimed is one of the most common failures in a design portfolio.",
     ],
     misconception:
       "“The case study should show the design improving until it works.” A record showing one repair that worked, one that did not, and three known problems left unfixed is more credible and more useful than a narrative of steady improvement. Reviewers who have shipped products recognise the second as fiction.",
@@ -2139,7 +2139,7 @@ export const module7: Lesson[] = [
         levels: [
           "No predictions.",
           "Predictions written after the sessions.",
-          "Predictions written first with outcomes recorded against them.",
+          "Predictions written first with outcomes recorded against them; or, where no re-test was possible, predictions recorded as untested with the dated gap.",
           "As adequate, and a prediction that failed is analysed rather than explained away.",
         ],
         remediation:

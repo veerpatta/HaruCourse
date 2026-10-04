@@ -17,7 +17,7 @@ export const guided07: Record<string, Guided> = {
         { id: 'key-notation', label: 'Your key: the shape or mark you used for each of the four kinds', kind: 'short', example: 'Example (made up): box for actions, diamond for decisions, rounded box for states, thick outline for exits.' },
       ] },
       { id: 'edges', title: 'Where people arrive and where they leave', fields: [
-        { id: 'entries', label: 'Every entry point you have evidence for, with the evidence beside each', kind: 'long', hint: 'A search result on a class page, a forwarded link, a return three days later on a different phone. The home page is one entry, not the entry.' },
+        { id: 'entries', label: 'Every entry point you have evidence for, with the evidence beside each', kind: 'long', sensitive: true, hint: 'Refer to people by label, never by name. Without research, name the source you do have — a real message, the supplied practice notes, your own walkthrough — and mark it. A search result on a class page, a forwarded link, a return three days later on a different phone. The home page is one entry, not the entry.' },
         { id: 'exits', label: 'Every way the flow can end, including abandonment, expiry and moving to a phone call', kind: 'long' },
         { id: 'system-decisions', label: 'The decisions the person never sees, and where they sit on the flow', kind: 'short', example: 'Example (made up): is a place still free, and has the earlier session expired. Both had been drawn as if she chose them.' },
       ] },
@@ -27,9 +27,9 @@ export const guided07: Record<string, Guided> = {
         { id: 'waits', label: 'Every wait on the flow, including waits on another person', kind: 'long' },
       ] },
       { id: 'stops', title: 'Where people stop', fields: [
-        { id: 'stop-1', label: 'Stopping point 1 · where a person is most likely to stop, and the evidence for it', kind: 'long', example: 'Example (made up): at the price on the class page. Evidence: in the observation session she read the price aloud, asked whether it was per class, and closed the tab.' },
-        { id: 'stop-2', label: 'Stopping point 2 · where a person is most likely to stop, and the evidence for it', kind: 'long' },
-        { id: 'stop-3', label: 'Stopping point 3 · where a person is most likely to stop, and the evidence for it', kind: 'long' },
+        { id: 'stop-1', label: 'Stopping point 1 · where a person is most likely to stop, and the evidence for it', kind: 'long', sensitive: true, hint: 'Refer to people by label, never by name. If your evidence is a real message, the supplied practice notes or your own walkthrough, say so beside the point; a walkthrough gives a suspicion, never a finding.', example: 'Example (made up): at the price on the class page. Evidence: in the observation session she read the price aloud, asked whether it was per class, and closed the tab.' },
+        { id: 'stop-2', label: 'Stopping point 2 · where a person is most likely to stop, and the evidence for it', kind: 'long', sensitive: true },
+        { id: 'stop-3', label: 'Stopping point 3 · where a person is most likely to stop, and the evidence for it', kind: 'long', sensitive: true },
         { id: 'photo-reference', label: 'Where the flow itself lives', kind: 'short', hint: 'File names or “paper, in my folder”. Nothing is uploaded.' },
         { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
       ] },
@@ -63,13 +63,13 @@ export const guided07: Record<string, Guided> = {
       { expect: 'Every entry point you have evidence for, every ending including the unsuccessful ones, and the decisions the person never sees.',
         fields: ['entries', 'exits', 'system-decisions'],
         supported: {
-          material: 'Six made up endings, recorded over one week at a small class-booking service. A: booked and paid. B: rang the provider and booked by phone. C: the held place expired while she was deciding. D: closed the tab at the price. E: booked for someone else and never came back. F: the payment failed and she tried again the next day.',
+          material: 'Made up records from one week at a small class-booking service, counting how each of 33 attempts to book ended. A, booked and paid online: 9. B, rang the provider and booked by phone: 14. C, the held place expired while she was deciding: 3. D, closed the tab at the price: 5. E, the payment failed and she tried again the next day: 2.',
           question: 'Your flow currently ends at A only. Which ending belongs on it next, and why?',
           options: [
-            { label: 'B, because ringing the provider is how this service most often ends, and a flow that cannot show it is describing a different product.', correct: true, feedback: 'The endings that happen most are the ones the design has to account for. Drawing B forces a decision about what the screen says to someone who is about to pick up the phone.' },
-            { label: 'D, because abandoning at the price is the ending that costs money.', feedback: 'Abandonment does belong on the flow, and you have no evidence yet that it happens more often than the phone call. Draw both, and put the evidenced one first.' },
-            { label: 'None of them, because these are endings rather than steps.', feedback: 'An exit is one of the four kinds of node. A flow with a single ending is a happy path, and the other five endings are where people actually are.' },
-            { label: 'All six at once, so that nothing is missed.', feedback: 'Six at once on one page usually produces a drawing nobody can read. Add the evidenced endings first, and let the rest wait until each has a source.' },
+            { label: 'B, because ringing the provider is the commonest ending in this week’s records.', was: ['B, because ringing the provider is how this service most often ends, and a flow that cannot show it is describing a different product.'], correct: true, feedback: 'The endings that happen most are the ones the design has to account for, and fourteen of the thirty-three attempts ended on the phone. Drawing B forces a decision about what the screen says to someone who is about to ring.' },
+            { label: 'D, because closing the tab at the price is the ending that costs the business money.', was: ['D, because abandoning at the price is the ending that costs money.'], feedback: 'Abandonment at the price belongs on the flow too, and five attempts ended there against fourteen by phone. Draw both, with the commoner one first.' },
+            { label: 'None of them, because endings are outcomes of the flow rather than steps within it.', was: ['None of them, because these are endings rather than steps.'], feedback: 'An exit is one of the four kinds of node. A flow with a single ending is a happy path, and these records show most attempts ending somewhere else.' },
+            { label: 'E, because a failed payment is the most serious ending and has to be designed first.', was: ['All six at once, so that nothing is missed.'], feedback: 'A failed payment needs designing, and the records show it twice in a week. Seriousness decides how carefully you design an ending; the question here is which missing ending most attempts actually meet.' },
           ],
           then: 'Add every ending you have evidence for to your own flow, and write the source beside each one.',
         },
@@ -93,9 +93,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'Your flow has one entry point and one ending, and you plan to add the error paths once the screens are designed. What goes wrong?',
         options: [
-          { label: 'The screens get laid out on the assumption that everything worked, so the error states end up wherever there is space left.', correct: true, feedback: 'A pending message needs three lines somewhere a person is already looking. Added late, it lands at the top of a page nobody reads.' },
-          { label: 'Nothing, as long as the error paths are written before anything is built.', feedback: 'Writing them before the build is better than never, and by then the layout has already been settled. The recovery paths are what the layout has to hold.' },
-          { label: 'The flow becomes too long to fit on one page.', feedback: 'Length is a drawing problem and you can split the page. The real cost is design decisions being made by accident.' },
+          { label: 'The screens get laid out as if all went well, so error states land wherever space is left.', was: ['The screens get laid out on the assumption that everything worked, so the error states end up wherever there is space left.'], correct: true, feedback: 'A pending message needs three lines somewhere a person is already looking. Added late, it lands at the top of a page nobody reads.' },
+          { label: 'Little, provided every error path is written before any of the screens are built in code.', was: ['Nothing, as long as the error paths are written before anything is built.'], feedback: 'Writing them before the build is better than never, and by then the layout has already been settled. The recovery paths are what the layout has to hold.' },
+          { label: 'The flow grows too long to fit on one page once the error paths are added at the end.', was: ['The flow becomes too long to fit on one page.'], feedback: 'Length is a drawing problem and you can split the page. The real cost is design decisions being made by accident.' },
         ],
         repair: 'Add every ending you have evidence for to the exits box in step 3, and record what you added in step 5.',
         recheck: 'The flow shows at least two endings that are not success, each with its source.',
@@ -103,9 +103,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'You drew “is a place still available?” as a fork the person chooses. Why is that a problem?',
         options: [
-          { label: 'It is a system decision, and drawing it as a choice hides that the person can meet it with no warning.', correct: true, feedback: 'The person never sees the fork. What they see is a place that was there a minute ago and is not now, which is a message somebody has to write.' },
-          { label: 'It is not a problem, because the person does choose whether to carry on.', feedback: 'They choose after the answer arrives. The fork itself is the system checking, and the design work is what the losing branch says.' },
-          { label: 'It should come off the flow, because availability belongs to the back end.', feedback: 'Its consequences are entirely in the interface. Leaving it off the flow is how the worst message in a product ends up unwritten.' },
+          { label: 'The system makes that decision, so drawing it as hers hides that it can hit her unwarned.', was: ['It is a system decision, and drawing it as a choice hides that the person can meet it with no warning.'], correct: true, feedback: 'The person never sees the fork. What they see is a place that was there a minute ago and is not now, which is a message somebody has to write.' },
+          { label: 'It is fine as drawn, because the person does choose whether to carry on after the check.', was: ['It is not a problem, because the person does choose whether to carry on.'], feedback: 'They choose after the answer arrives. The fork itself is the system checking, and the design work is what the losing branch says.' },
+          { label: 'It belongs off the flow altogether, since availability is decided in the back end.', was: ['It should come off the flow, because availability belongs to the back end.'], feedback: 'Its consequences are entirely in the interface. Leaving it off the flow is how the worst message in a product ends up unwritten.' },
         ],
         repair: 'Move any fork the person never sees into the system-decisions box in step 3, and record the change in step 5.',
         recheck: 'Every decision on the flow says whose decision it is.',
@@ -113,9 +113,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'Your third screen asks for a payment method, and your flow carries no prerequisite notes. What is the risk?',
         options: [
-          { label: 'You cannot see whether the person could possibly have that thing yet, which is the commonest structural fault in a first flow.', correct: true, feedback: 'Prerequisites written on the flow are what make the fault visible. Without them the screen order looks reasonable right up until someone tries it.' },
-          { label: 'The order is fine as long as the fields are optional.', feedback: 'An optional field still asks, and an ask a person cannot answer reads as a wall whether or not it is required.' },
-          { label: 'It only matters where payment is involved.', feedback: 'It applies to anything the person has to be holding: a reference, a number they do not carry, a decision from someone else.' },
+          { label: 'You cannot see whether she could have that item yet, a common fault in first flows.', was: ['You cannot see whether the person could possibly have that thing yet, which is the commonest structural fault in a first flow.'], correct: true, feedback: 'Prerequisites written on the flow are what make the fault visible. Without them the screen order looks reasonable right up until someone tries it.' },
+          { label: 'The order is fine, provided the payment fields on that third screen are optional.', was: ['The order is fine as long as the fields are optional.'], feedback: 'An optional field still asks, and an ask a person cannot answer reads as a wall whether or not it is required.' },
+          { label: 'The risk is limited to payment steps; other screens rarely ask for anything early.', was: ['It only matters where payment is involved.'], feedback: 'It applies to anything the person has to be holding: a reference, a number they do not carry, a decision from someone else.' },
         ],
         repair: 'Write “to do this they must already have …” for every step in the prerequisites box in step 4, then record what moved in step 5.',
         recheck: 'Every step names what must be true and what the person is holding.',
@@ -126,6 +126,15 @@ export const guided07: Record<string, Guided> = {
       external: 'The flow itself stays on paper or in your own folder. Photograph it and write the file name here; naming a file does not upload it.',
       creator: 'Your creator reads the four kinds of node, the endings that are not success, and the three stopping points with their sources. Share the photograph the way you normally share files.',
       next: 'Open Your work and choose Ready for review. The next lesson takes the entry points on this flow and designs the first run for someone who knows nothing.',
+    },
+    transfer: {
+      scenario: 'Made-up case: a laundry pick-up service drew its flow as five screens: Home, Choose service, Pick a time slot, Pay, Done. Customers often message to ask whether the driver has collected the bag, and some arrive from a link in a reminder message rather than the home page. The payment sometimes takes a minute to confirm.',
+      prompt: 'Name one node the flow is missing, say which of the four kinds it is (action, decision, state or exit), and explain why it belongs on the flow.',
+      anchors: {
+        weak: 'Adds another screen, such as a tracking page, without saying what kind of node it is, or keeps a single entry and a single ending.',
+        adequate: 'Adds a state such as “bag collected, being washed” or “payment pending”, explains that a person waits there and needs a message, and notes the reminder link as a second entry point.',
+        strong: 'As adequate, and names what must be true before the step, adds an unsuccessful ending such as a missed pick-up or a failed payment, and ties the choice to the evidence in the messages.',
+      },
     },
   },
   'm07-l02-v1': {
@@ -216,11 +225,11 @@ export const guided07: Record<string, Guided> = {
                 defer: 'Deferring keeps alive a request that has no moment to be asked in. A deferral with no trigger and no cost is usually a request to remove.',
                 'never ask': 'The test is what it does for anyone. Nothing uses it, so the honest move is taking it out rather than moving it later.',
               } },
-            { id: 'password', text: 'A password, in a product where every booking is found again with a reference and a phone number.', answer: 'never ask',
+            { id: 'password', text: 'A password, in a product where every booking is found again with its reference and a one-time code sent to the booking’s phone.', answer: 'never ask',
               feedback: {
                 'needed now': 'The booking works without it, so nothing is impossible without it. It is a wall placed in front of the thing people came for.',
                 defer: 'Deferring is better than asking at the start, and the question underneath is whether an account is needed at all. The next lesson takes that up.',
-                'never ask': 'Where a reference and a phone number already find a booking, a password adds a way to fail rather than a way in.',
+                'never ask': 'Where a reference and a code to the booking’s phone already find a booking, a password adds a way to fail rather than a way in.',
               } },
           ],
           then: 'Put every item on your own first-run list under one of the three labels. Anything you cannot defend as needed now moves.',
@@ -251,9 +260,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'Your first screen is hard to understand, so you plan a short tour explaining it. What is wrong with that?',
         options: [
-          { label: 'A screen that needs a tour is itself the problem, and the tour hides it while being forgotten anyway.', correct: true, feedback: 'People read overlays as an obstacle and remember almost none of it. The work belongs in the screen: sensible defaults, a filled-in example, wording a person recognises.' },
-          { label: 'Nothing, as long as the tour can be skipped.', feedback: 'A skippable tour gets skipped, and the screen is still hard to understand for the person who skipped it.' },
-          { label: 'It should be shown on the second visit instead.', feedback: 'Moving it only changes when it is ignored. An explanation works at the moment of need, attached to the thing it explains.' },
+          { label: 'The screen is the problem; a tour hides that, and people forget the tour anyway.', was: ['A screen that needs a tour is itself the problem, and the tour hides it while being forgotten anyway.'], correct: true, feedback: 'People read overlays as an obstacle and remember almost none of it. The work belongs in the screen: sensible defaults, a filled-in example, wording a person recognises.' },
+          { label: 'Little, provided the tour can be skipped by anyone who does not want to see it.', was: ['Nothing, as long as the tour can be skipped.'], feedback: 'A skippable tour gets skipped, and the screen is still hard to understand for the person who skipped it.' },
+          { label: 'Only its timing: show the tour on the second visit, once people know the basics.', was: ['It should be shown on the second visit instead.'], feedback: 'Moving it only changes when it is ignored. An explanation works at the moment of need, attached to the thing it explains.' },
         ],
         repair: 'If anything in your must-know list in step 2 can only be explained by a tour, move it into the screen wording in step 4, and record the change in step 5.',
         recheck: 'No part of your first run depends on a person remembering an overlay.',
@@ -285,6 +294,15 @@ export const guided07: Record<string, Guided> = {
       creator: 'Your creator reads the before and after counts and the deferral list. The counts are the part you can show anyone, because they describe your design rather than making a claim about users.',
       next: 'Open Your work and choose Ready for review. The next lesson designs the account paths for whatever you deferred to “when they have an account”.',
     },
+    transfer: {
+      scenario: 'Made-up case: a public library’s new app asks for date of birth, home address, reading interests and notification settings before showing the catalogue. People mostly open it to check whether a book is on the shelf. Borrowing needs a library card number, which members already have.',
+      prompt: 'Decide which of the four requests must come before the first search and which can wait, name the moment one deferred item should be asked for, and explain why.',
+      anchors: {
+        weak: 'Keeps every request at the start because the library wants complete records, or removes everything without considering what borrowing needs.',
+        adequate: 'Asks for nothing before searching, asks for the card number at the moment of reserving or borrowing because that is when it buys the person something, and defers interests and notifications.',
+        strong: 'As adequate, and states what deferring costs, such as thinner records and an interruption at borrowing, questions whether date of birth is needed at all, and writes the empty-state wording for the reservations list.',
+      },
+    },
   },
   'm07-l03-v1': {
     route: paperRoute('the sign-up, sign-in and recovery paths added to your flow'),
@@ -294,18 +312,20 @@ export const guided07: Record<string, Guided> = {
       ] },
       { id: 'purpose', title: 'What the account is for', fields: [
         { id: 'account-purpose', label: 'What an account gives the person, listed one benefit at a time', kind: 'long', hint: 'Write what it does for them, not for your records. If the list comes out empty, that is the finding.' },
-        { id: 'no-account-path', label: 'The path for someone who never creates an account', kind: 'long', example: 'Example (made up): browse and book with no account. Find the booking again later with the reference and the phone number. An account offered after a second booking, never before.' },
+        { id: 'no-account-path', label: 'The path for someone who never creates an account', kind: 'long', example: 'Example (made up): browse and book with no account. Find the booking again later with its reference and a code sent to the booking’s phone. An account offered after a second booking, never before.' },
       ] },
       { id: 'paths', title: 'The three paths', intro: 'Drawn on the flow you already have, not on a separate sheet.', fields: [
         { id: 'signup-signin', label: 'Sign-up and sign-in, written out as the nodes you added to the flow', kind: 'long' },
-        { id: 'recovery-route', label: 'The recovery route that does not depend on the thing that was lost', kind: 'long', hint: 'Name the lost factor first, then the route. If the route uses the lost factor, it is the same wall drawn twice.' },
-        { id: 'nothing-left', label: 'The ending for someone who genuinely has nothing left', kind: 'short', hint: 'A way to reach a person is a legitimate part of the design. Put it on the flow rather than leaving it to a support inbox.' },
+        { id: 'recovery-route', label: 'The recovery route that does not depend on the thing that was lost, and the channel she verified earlier that it uses instead', kind: 'long', hint: 'Name the lost factor first, then the route. If the route uses the lost factor, it is the same wall drawn twice. If it accepts facts printed on a booking confirmation, a stranger holding that message could use it too.' },
+        { id: 'contact-change', label: 'How a change of phone number or email is confirmed: the verified channel or reviewed check it needs, who is told, and how long it can be undone', kind: 'long', hint: 'A booking reference and a class date identify a booking, not a person. Write the rules and wording only, never a real number, code or address.', example: 'Example (made up): a new number is confirmed by a code sent to the email she verified at sign-up; the old number gets a message saying the number changed; the change can be undone from that message for 24 hours.' },
+        { id: 'nothing-left', label: 'The ending for someone who genuinely has nothing left', kind: 'short', hint: 'A reviewed route to a person is a legitimate part of the design. Write how that person checks identity before anything changes, and put it on the flow rather than leaving it to a support inbox.' },
       ] },
       { id: 'messages', title: 'Every message, attached to its field', intro: 'One field at a time. Wording only; no real credentials anywhere.', fields: [
-        { id: 'message-1', label: 'Field 1 · its label, its instruction, its error wording, and what stays on screen after a failed attempt', kind: 'long', example: 'Example (made up): mobile number. Label “Mobile number”, always visible. Instruction “The number you booked with.” Error beside the field: “We could not find a booking with that number. Check it, or use your booking reference instead.” The number typed stays.' },
+        { id: 'message-1', label: 'Field 1 · its label, its instruction, its error wording, and what stays on screen after a failed attempt', kind: 'long', example: 'Example (made up): mobile number. Label “Mobile number”, always visible. Instruction “The number you booked with, 10 digits.” Error beside the field for a slip she can fix: “This number has 9 digits; check the last one.” The number typed stays.' },
         { id: 'message-2', label: 'Field 2 · its label, its instruction, its error wording, and what stays on screen after a failed attempt', kind: 'long' },
         { id: 'message-3', label: 'Field 3 · its label, its instruction, its error wording, and what stays on screen after a failed attempt', kind: 'long' },
         { id: 'message-4', label: 'Field 4 · its label, its instruction, its error wording, and what stays on screen after a failed attempt', kind: 'long' },
+        { id: 'neutral-reply', label: 'The one reply shown whether or not an account or booking exists, and what it tells someone whose code never arrives', kind: 'long', hint: 'Saying “we could not find an account with that number” tells anyone typing numbers who is registered. Say the same thing to everybody.', example: 'Example (made up): “If an account matches this number, we have sent it a code. Nothing after a minute? Check the number above, or use the email you confirmed when you signed up.”' },
       ] },
       { id: 'shared', title: 'The shared device', fields: [
         { id: 'shared-walk', label: 'Walking the flow on a family member’s phone: what stays signed in, who receives the code, what the next person sees', kind: 'long' },
@@ -320,7 +340,7 @@ export const guided07: Record<string, Guided> = {
         terms: [
           { term: 'Persistent label', meaning: 'A label that stays visible while the person types. A placeholder that vanishes as soon as typing starts is not a label.' },
           { term: 'Field-level error', meaning: 'A message beside the field it concerns. An error that could apply to two fields has not yet told anyone anything.' },
-          { term: 'Factor', meaning: 'One thing a person uses to prove who they are: a phone that receives a code, an inbox, a booking reference.' },
+          { term: 'Factor', meaning: 'One thing a person uses to prove who they are, such as a phone that receives a code or an inbox she confirmed. A booking reference is not one: anyone holding the confirmation knows it.' },
         ],
         start: 'Write the four rules as four short lines you could hold any drawn screen up against.',
         enough: 'Each rule is specific enough that checking a screen against it gives you a yes or a no.' },
@@ -332,8 +352,8 @@ export const guided07: Record<string, Guided> = {
             { label: 'What I designed first', text: 'A registration screen in front of the class list: name, phone number, password, confirm password. It was the tidiest screen in the set.' },
             { label: 'Why it felt right', text: 'Every product I had used asked me to register, so registering felt like the first step rather than a decision somebody had made.' },
             { label: 'The question I had not asked', text: 'What does the account give the person? I wrote the list: see history, change a booking, not re-enter details.' },
-            { label: 'What the list showed', text: 'All three are things a booking reference and a phone number already do. The account was serving the records, not the person.' },
-            { label: 'What replaced it', text: 'No account to browse or book. A reference plus a phone number to find a booking later. An optional account for people who book often, offered after a second booking.' },
+            { label: 'What the list showed', text: 'All three are things a booking reference and a code sent to the booking’s phone already do. The account was serving the records, not the person.' },
+            { label: 'What replaced it', text: 'No account to browse or book. A reference plus a code sent to the booking’s phone to find a booking later. An optional account for people who book often, offered after a second booking.' },
           ],
           wrongTurn: 'The wrong turn is designing the sign-up screen before asking what the account is for. The screen is easy to draw, and the question is the actual work.',
           tradeoff: 'Without accounts you know less about who is booking, and some people will mislay their reference. You take that in exchange for the bookings a registration wall costs you.',
@@ -341,27 +361,27 @@ export const guided07: Record<string, Guided> = {
         },
         start: 'Write the benefits list before you draw anything. If every line on it is about your records, the requirement comes out.',
         enough: 'Someone who never creates an account can still complete the thing they came for, and you can say how.' },
-      { expect: 'Sign-up, sign-in and recovery drawn on the flow, with at least one recovery route that avoids the lost factor, and an ending for someone with nothing.',
-        fields: ['signup-signin', 'recovery-route', 'nothing-left'],
+      { expect: 'Sign-up, sign-in and recovery on the flow: a recovery route through a channel verified earlier, how a contact change is confirmed, and a reviewed ending for someone with nothing.',
+        fields: ['signup-signin', 'recovery-route', 'contact-change', 'nothing-left'],
         supported: {
-          material: 'A made up sign-in path. A person registered with a phone number and signs in with a code sent by message. She has since changed her number, so the code reaches a phone she no longer has, and she does not remember whether she ever added an email address.',
-          question: 'Which of these is a recovery path, rather than the same wall drawn again?',
+          material: 'A made up sign-in path. A person registered with a phone number and an email address, and confirmed both at the time. She signs in with a code sent by message, but she has changed her number, so the code reaches a phone she no longer has. She still has her booking confirmation, showing the booking reference and the class date.',
+          question: 'Which route gets her back in without letting a stranger take over the account?',
           options: [
-            { label: 'Confirm the booking with its reference and the class date, then let her set a new number, with a route to a person if she has no reference either.', correct: true, feedback: 'It uses something she can still produce, and it names what happens when she can produce nothing. Both halves are needed, and a route to a person belongs on the flow.' },
-            { label: 'Send the code to the old number again, in case the first message was delayed.', feedback: 'The number is exactly what she has lost, so the second message arrives where the first one did. Repeating a step is not a different factor.' },
-            { label: 'Ask her the security question she chose when she registered.', feedback: 'This can work, and only where she was actually asked to set one and remembers the answer. If you cannot promise that, it is one more thing she may not have.' },
-            { label: 'Tell her to create a new account with her new number.', feedback: 'Her bookings stay with the old account, so the thing she came for is still out of reach. A new account moves the problem rather than solving it.' },
+            { label: 'Let her set a new number once she types the booking reference and class date shown in her confirmation.', was: ['Confirm the booking with its reference and the class date, then let her set a new number, with a route to a person if she has no reference either.'], feedback: 'The reference and the date are printed in the confirmation and in any screenshot of it, so anyone holding that message could move her account to their own phone. They identify a booking, not a person.' },
+            { label: 'Send the code to the old number again, in case the first message was delayed by her network.', was: ['Send the code to the old number again, in case the first message was delayed.'], feedback: 'The number is exactly what she has lost, so the second message arrives where the first one did. Repeating a step is not a different factor.' },
+            { label: 'Ask the security question she set when she registered, and change the number if she answers it.', was: ['Ask her the security question she chose when she registered.'], feedback: 'Answers to security questions are often guessable or findable, and she may not remember hers. A channel she verified earlier is far harder for a stranger to borrow.' },
+            { label: 'Send a code to the email she confirmed at sign-up, then tell the old number and allow a day to undo.', correct: true, feedback: 'The email is a channel she verified earlier and still holds. Telling the old number, and leaving a day to undo the change, means a stranger who got in this way would be noticed and reversed.' },
           ],
-          then: 'Draw at least one recovery route on your own flow that uses something other than the lost factor, and draw the ending for someone who has nothing left.',
+          then: 'Draw at least one recovery route on your own flow that uses a channel the person verified earlier, write the reply that reads the same whether or not an account exists, and draw the reviewed route for someone who has nothing left.',
         },
         terms: [{ term: 'Recovery path', meaning: 'The route back in for someone who has lost a factor. If it needs the lost factor, it is not a recovery path.' }],
-        start: 'Name the factor first: what does a person on your flow use to prove who they are? Then design for having lost exactly that.',
-        enough: 'Every recovery route on the flow works without the lost factor, and the ending for someone with nothing is drawn rather than assumed.' },
-      { terms: [{ term: 'Instruction', meaning: 'The short line beside a field saying what shape the answer takes, shown before anyone types rather than after they get it wrong.' }, { term: 'Preserved input', meaning: 'What somebody typed still sitting in the box after a failed attempt. Clearing a form makes one small slip cost the whole entry again.' }, { term: 'Credentials', meaning: 'The things a person uses to prove who they are. In this lesson you write only the wording around them, never any real ones.' }], demo: { scenario: 'Made-up example. Writing the error messages for a sign-in form, and finding that one of them could not tell anybody what to do next.', beats: [{ label: 'What I wrote first', text: 'A single message under the form: “Those details are not right. Please try again.” It covered every failure at once, which felt efficient.' }, { label: 'What it was covering', text: 'A mistyped phone number, a code that had run out, a code typed into the wrong box, and a number that was never registered. Four situations, one sentence.' }, { label: 'The rule I had set myself in step 1', text: 'Every error sits beside the field it concerns. Mine sat under both fields, which means it sat beside neither of them.' }, { label: 'What I found while splitting it', text: 'The run-out code is not a field error at all. Nothing the person types will fix it, so that message needs a button that sends a fresh code.' }, { label: 'What I wrote instead', text: 'Beside the number: “We could not find this number. Check it, or use the email you registered with.” Beside the code: “This code has run out.” with “Send a new code” under it. Whichever fails, the number stays in the box.' }], wrongTurn: 'The wrong turn is one message for every failure, usually chosen because it feels safer not to say which half went wrong. It is safe and it is useless, and the person retypes both halves in the dark.', tradeoff: 'Naming which field failed does tell somebody poking at your form which numbers are registered. That is a genuine cost, and you weigh it against everybody shut out by a sentence that says nothing at all.', uncertainty: 'Still unknown: whether “run out” is even the right phrase for a person who waited two minutes. The wording is written down; only watching somebody read it says whether it lands.' }, expect: 'Label, instruction, error wording and preserved input for every field, each error attached to one field. Wording only, never real credentials.',
-        fields: ['message-1', 'message-2', 'message-3', 'message-4'],
+        start: 'Name the factor first: what does a person on your flow use to prove who they are? Then design for having lost exactly that, and check that a stranger holding her booking confirmation could not use your route.',
+        enough: 'Every recovery route works without the lost factor through a channel verified earlier or a reviewed check, a contact change notifies the old contact and can be undone, and the ending for someone with nothing is drawn.' },
+      { terms: [{ term: 'Instruction', meaning: 'The short line beside a field saying what shape the answer takes, shown before anyone types rather than after they get it wrong.' }, { term: 'Preserved input', meaning: 'What somebody typed still sitting in the box after a failed attempt. Clearing a form makes one small slip cost the whole entry again.' }, { term: 'Credentials', meaning: 'The things a person uses to prove who they are. In this lesson you write only the wording around them, never any real ones.' }], demo: { scenario: 'Made-up example. Writing the error messages for a sign-in form, and finding that one of them told strangers which numbers were registered.', beats: [{ label: 'What I wrote first', text: 'A single message under the form: “Those details are not right. Please try again.” It covered every failure at once, which felt efficient.' }, { label: 'What it was covering', text: 'A number one digit short, a code that had run out, a code typed into the wrong box, and a number that was never registered. Four situations, one sentence.' }, { label: 'What I did next, and why it was wrong', text: 'I split it into four field errors, including “We could not find this number.” Then I typed a neighbour’s number into my own design and saw that the form would tell anyone whether she had an account.' }, { label: 'Which errors stayed at the field', text: 'The ones the person can see and fix: “This number has 9 digits; check the last one.” Beside the code: “This code has run out,” with “Send a new code” under it. Whichever fails, the number stays in the box.' }, { label: 'What replaced “not found”', text: 'One reply for every number, registered or not: “If an account matches this number, we have sent it a code. Nothing after a minute? Check the number above, or use the email you confirmed when you signed up.”' }], wrongTurn: 'The wrong turn is making every error specific, including the one about whether an account exists. It feels like the most helpful version, and it turns the sign-in form into a free way to test who is registered.', tradeoff: 'A neutral reply leaves the person who typed a wrong but valid number waiting for a code that never comes. That is a real cost, so the reply has to tell her what to check and what to try if nothing arrives.', uncertainty: 'Still unknown: whether “run out” is the right phrase for someone who waited two minutes, and whether people read the neutral reply as success. Only watching somebody read it says whether it lands.' }, expect: 'Label, instruction, error and kept input for every field, plus the one reply that reads the same whether or not an account exists. Wording only, never real credentials.',
+        fields: ['message-1', 'message-2', 'message-3', 'message-4', 'neutral-reply'],
         reveal: { first: 2, group: 1, count: 4, addLabel: 'Add another field', note: 'One field at a time. Write only the wording; no real password, code or reference goes in this worksheet.' },
         start: 'Write the error before the label. The error is where the thinking is, and it usually tells you what the instruction should have said.',
-        enough: 'No error could apply to two fields, and each one says what happened, what to do next, and what was kept.' },
+        enough: 'No error could apply to two fields, each says what happened, what to do next and what was kept, and no message reveals whether an account or booking exists.' },
       { terms: [{ term: 'Shared device', meaning: 'A phone or computer more than one person opens. Ordinary in a household, and ordinary anywhere a phone is handed over for a minute.' }, { term: 'Staying signed in', meaning: 'Your product keeping somebody signed in after they close it. That is a choice, and it belongs in plain view rather than assumed on their behalf.' }, { term: 'Repair', meaning: 'The change a Check question asks you to make to your own work, written down along with what you altered.' }], expect: 'The shared-device walk, the changes it forced, a note of where the paths live, and the repair the Check questions asked for.',
         fields: ['shared-walk', 'shared-changes', 'photo-reference', 'improvement-made'],
         start: 'Walk the flow twice on one device as two different people, and write down everything the second person can see.',
@@ -371,29 +391,29 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'You add a second code, sent to email as well as to the phone, to make signing in safer. What have you actually changed?',
         options: [
-          { label: 'You have added another way to be locked out, for a person who may hold only one of the two.', correct: true, feedback: 'Every extra factor is a step that can fail. Where a phone is shared or an old inbox is gone, the second code reaches nobody who can act on it.' },
-          { label: 'You have made the account harder to take over, at no cost.', feedback: 'There is a cost, and it lands on the person who changed a number or lost an inbox. A security choice is a trade against access, and both sides go into the record.' },
-          { label: 'Nothing, because almost everyone has both.', feedback: 'Almost is doing a great deal of work in that sentence. The design still has to say what happens to the person who has one.' },
+          { label: 'Takeover gets harder and lock-out gets likelier, for anyone who holds only one of the two.', was: ['You have added another way to be locked out, for a person who may hold only one of the two.'], correct: true, feedback: 'Both halves are true, and the design has to write both down: who is protected, and what happens to the person who changed a number or lost an inbox. The strongest checks belong where takeover happens, such as a change of contact details.' },
+          { label: 'Takeover gets harder, at no real cost, since a second code is a small thing to ask for.', was: ['You have made the account harder to take over, at no cost.'], feedback: 'There is a cost, and it lands on the person who changed a number or lost an inbox. A security choice is a trade against access, and both sides go into the record.' },
+          { label: 'Very little in practice, since almost everyone keeps both their phone and their email.', was: ['Nothing, because almost everyone has both.'], feedback: 'Almost is doing a great deal of work in that sentence. The design still has to say what happens to the person who has only one.' },
         ],
-        repair: 'Look at the recovery-route box in step 3. If every route needs both factors, draw one that needs only one, and record it in step 5.',
-        recheck: 'At least one route back in works with a single factor, and the ending for someone with nothing is drawn.',
+        repair: 'Look at the recovery-route and contact-change boxes in step 3. If every route needs both factors, draw one that needs only a channel she verified earlier, say how a contact change is confirmed and undone, and record it in step 5.',
+        recheck: 'At least one route back in works with a single verified factor, a contact change notifies the old contact and can be undone, and the ending for someone with nothing is drawn.',
       },
       {
-        question: 'A sign-in attempt fails. Your screen shows one message at the top of the page and empties the fields. What does that produce?',
+        question: 'A sign-in attempt fails because the code has run out. Your screen shows one general message at the top of the page and empties both fields. What does that produce?',
         options: [
-          { label: 'The person cannot tell which field is wrong and has to type everything again, so the third attempt is where they leave.', correct: true, feedback: 'An error belongs beside the field it concerns, with what was typed still there. Clearing the form makes a small mistake cost the whole entry twice over.' },
-          { label: 'It is acceptable, because clearing the fields is the safer choice.', feedback: 'Clearing a phone number protects nobody and costs the person everything they typed. Where one field genuinely should not persist, say which, and keep the rest.' },
-          { label: 'It is fine as long as the message is politely worded.', feedback: 'Wording matters, and no amount of it can tell someone which of two fields to look at. The message has to be attached to a field.' },
+          { label: 'She cannot tell the code ran out and must retype her number, which is where people give up.', was: ['The person cannot tell which field is wrong and has to type everything again, so the third attempt is where they leave.'], correct: true, feedback: 'Errors she can fix belong beside their field, with what she typed kept. The one reply that stays general is whether an account exists, and that is not what failed here.' },
+          { label: 'A safer form, because clearing the fields stops anyone else seeing what was typed.', was: ['It is acceptable, because clearing the fields is the safer choice.'], feedback: 'Clearing a phone number protects nobody and costs the person everything they typed. Where one field genuinely should not persist, say which, and keep the rest.' },
+          { label: 'A workable form, provided the single message is worded politely and calmly.', was: ['It is fine as long as the message is politely worded.'], feedback: 'Wording matters, and no amount of it tells her that the code, not the number, needs attention.' },
         ],
-        repair: 'Go through the message boxes in step 4 and attach every error to one named field, saying what was kept. Record what changed in step 5.',
+        repair: 'Go through the message boxes in step 4 and attach every fixable error to one named field, saying what was kept, and keep the reply about whether an account exists the same for everyone. Record what changed in step 5.',
         recheck: 'No error message could apply to two fields, and each one says what survived the failed attempt.',
       },
       {
         question: 'Your flow keeps people signed in by default. On a phone shared by a family, what does that produce?',
         options: [
-          { label: 'The next person to open it sees someone else’s bookings, without either of them having chosen that.', correct: true, feedback: 'Staying signed in is a choice somebody should make in plain view. On a shared or borrowed phone the default quietly hands one person another person’s details.' },
-          { label: 'Nothing, because they can always sign out.', feedback: 'Signing out is a thing the first person has to remember at the end of a task they thought was finished. The design should offer it there.' },
-          { label: 'It is a rare case and not worth designing for.', feedback: 'A shared phone is ordinary in many households, and a borrowed one is ordinary everywhere. It is a normal condition rather than an edge.' },
+          { label: 'The next person to open it sees someone else’s bookings, and neither of them chose that.', was: ['The next person to open it sees someone else’s bookings, without either of them having chosen that.'], correct: true, feedback: 'Staying signed in is a choice somebody should make in plain view. On a shared or borrowed phone the default quietly hands one person another person’s details.' },
+          { label: 'Little harm, since anyone can sign out by hand once they have finished their task.', was: ['Nothing, because they can always sign out.'], feedback: 'Signing out is a thing the first person has to remember at the end of a task they thought was finished. The design should offer it there.' },
+          { label: 'A rare edge case, since most people in a family keep a phone of their own to use.', was: ['It is a rare case and not worth designing for.'], feedback: 'A shared phone is ordinary in many households, and a borrowed one is ordinary everywhere. It is a normal condition rather than an edge.' },
         ],
         repair: 'Write what the second person can see in the shared-walk box in step 5, then change the default or make the choice visible, and record the change in the last box.',
         recheck: 'The staying-signed-in choice is visible rather than assumed, and the walk lists what the next person sees.',
@@ -404,6 +424,15 @@ export const guided07: Record<string, Guided> = {
       external: 'The drawn paths stay on paper or in your own folder. Photograph them and write the file name here; naming a file does not upload it.',
       creator: 'Your creator reads the recovery route and the shared-device walk. Those two are the parts most portfolios do not have at all.',
       next: 'Open Your work and choose Ready for review. The next lesson takes the same flow and asks who may see and do what.',
+    },
+    transfer: {
+      scenario: 'Made-up case: a city’s parking-permit app signs residents in with a code sent to the phone number on their permit. A resident has changed her number and wants to update it. She knows her permit number and her car’s registration, both printed on the permit displayed in her windscreen, and she confirmed an email address when she applied.',
+      prompt: 'Decide whether the permit number and registration are enough to change her phone number, describe the route you would design instead, and explain why, including what the app replies when someone asks to recover an account.',
+      anchors: {
+        weak: 'Accepts the permit number and registration as proof, or replies differently depending on whether an account exists, such as “No account found for that number”.',
+        adequate: 'Rejects them, because anyone who sees the windscreen knows both; routes the change through a code to the email she confirmed, or a reviewed check, with one reply for everyone: “If an account matches, we have sent instructions.”',
+        strong: 'As adequate, and tells the old number about the change, allows a window to undo it, and writes down the reviewed manual check for someone with no confirmed email.',
+      },
     },
   },
   'm07-l04-v1': {
@@ -525,9 +554,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'A helper sees the refund control greyed out with no explanation beside it. What is wrong with that?',
         options: [
-          { label: 'It says no without saying why, so she cannot tell whether she took a wrong turn, should sign in as someone else, or should ask a colleague.', correct: true, feedback: 'A disabled control with no reason is the worst of the three answers. It costs one sentence to say who can do it, and without that sentence people conclude the product is broken.' },
-          { label: 'Nothing is wrong: the control is visible, which is the point of not hiding it.', feedback: 'Visibility only helps if it carries the reason. A grey control with no words leaves her guessing, and most people guess badly.' },
-          { label: 'It should have been hidden, since she cannot use it.', feedback: 'She is the person being asked for the refund, so she needs to know it exists. Hiding it removes her route to pass the request on.' },
+          { label: 'It refuses without a reason, so she cannot tell whether to sign in again or ask someone.', was: ['It says no without saying why, so she cannot tell whether she took a wrong turn, should sign in as someone else, or should ask a colleague.'], correct: true, feedback: 'A disabled control with no reason is the worst of the three answers. It costs one sentence to say who can do it, and without that sentence people conclude the product is broken.' },
+          { label: 'Very little: the control is visible, which is the whole point of not hiding it from her.', was: ['Nothing is wrong: the control is visible, which is the point of not hiding it.'], feedback: 'Visibility only helps if it carries the reason. A grey control with no words leaves her guessing, and most people guess badly.' },
+          { label: 'It should be hidden instead, since a control she cannot use only clutters her screen.', was: ['It should have been hidden, since she cannot use it.'], feedback: 'She is the person being asked for the refund, so she needs to know it exists. Hiding it removes her route to pass the request on.' },
         ],
         repair: 'Go through your unavailable boxes in step 4. Any disabled case without wording gets its sentence now, and record the change in step 5.',
         recheck: 'Every disabled and ask case carries the exact words a person would read.',
@@ -535,19 +564,19 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'You filled every cell of the matrix in five minutes and not one says undecided. What does that tell you?',
         options: [
-          { label: 'Some cells were decided by you in the act of drawing the grid, and those are the ones worth marking as unsettled.', correct: true, feedback: 'A cell decided while drawing has no source behind it. Marking it undecided keeps the question alive instead of burying it under a tick.' },
-          { label: 'That your product’s permissions are genuinely simple.', feedback: 'Speed is a sign that nothing was checked rather than that the model is small. Most products have at least one cell nobody has ever decided.' },
-          { label: 'That you should ask an engineer to confirm the grid.', feedback: 'An engineer can say what the code does today. Whether a helper should be able to cancel a place is not a question the code can answer.' },
+          { label: 'Some cells were decided by you while drawing, and those deserve to be marked undecided.', was: ['Some cells were decided by you in the act of drawing the grid, and those are the ones worth marking as unsettled.'], correct: true, feedback: 'A cell decided while drawing has no source behind it. Marking it undecided keeps the question alive instead of burying it under a tick.' },
+          { label: 'That the product’s permissions are genuinely simple, since nothing needed any thought.', was: ['That your product’s permissions are genuinely simple.'], feedback: 'Speed is a sign that nothing was checked rather than that the model is small. Most products have at least one cell nobody has ever decided.' },
+          { label: 'That the grid is ready for an engineer, who can confirm each cell against the code.', was: ['That you should ask an engineer to confirm the grid.'], feedback: 'An engineer can say what the code does today. Whether a helper should be able to cancel a place is not a question the code can answer.' },
         ],
         repair: 'Reread each allowed and not-allowed cell in step 3 and ask who decided it and when. Move the ones with no answer into your undecided box, then note the change in step 5.',
         recheck: 'The undecided box names at least one cell, each with what would settle it.',
       },
       {
-        question: 'You hid the management controls from customers, and also hid the booking control from the owner because she is not a customer. What happens?',
+        question: 'You hid the management controls from customers, and also hid the booking control from the owner because she is not a customer. She books a place on her own class most weeks. What happens?',
         options: [
-          { label: 'The owner books a place on her own class most weeks, so the product now refuses something she does regularly and gives her no clue why.', correct: true, feedback: 'One person holding two roles is ordinary. A rule written per role rather than per person is exactly where interfaces begin contradicting themselves.' },
-          { label: 'Nothing much: she can use the management screens instead.', feedback: 'The management screens let her change the class, not take a place on it. Those are different actions and only one of them is what she wants.' },
-          { label: 'She should keep a second account for booking as a customer.', feedback: 'That hands your model’s problem to her as a chore, and splits her own bookings across two identities.' },
+          { label: 'The product now refuses something she does every week, and gives her no clue why.', was: ['The owner books a place on her own class most weeks, so the product now refuses something she does regularly and gives her no clue why.'], correct: true, feedback: 'One person holding two roles is ordinary. A rule written per role rather than per person is exactly where interfaces begin contradicting themselves.' },
+          { label: 'Little changes: she can use the management screens to add herself to the class.', was: ['Nothing much: she can use the management screens instead.'], feedback: 'The management screens let her change the class, not take a place on it as an attendee. Those are different actions, and only one of them is what she wants.' },
+          { label: 'She keeps a second account for booking as a customer, which solves it cleanly.', was: ['She should keep a second account for booking as a customer.'], feedback: 'That hands your model’s problem to her as a chore, and splits her own bookings across two identities.' },
         ],
         repair: 'Walk the double role in step 5 and write down every contradiction you meet, then record what you changed in the last box.',
         recheck: 'The walkthrough names at least one contradiction, or says plainly that you found none and how you looked.',
@@ -558,6 +587,15 @@ export const guided07: Record<string, Guided> = {
       external: 'The grid itself can stay on paper or in a plain text file in your own folder. Write the file name here; naming a file does not upload it.',
       creator: 'Your creator reads the matrix with the undecided cells still visible, and the wording for each unavailable action. The gaps are the interesting part, not the ticks.',
       next: 'Open Your work and choose Ready for review. The next lesson designs the browse and search loop, so keep your flow to hand.',
+    },
+    transfer: {
+      scenario: 'Made-up case: a housing society books its community hall through an app with three roles: resident, committee member and caretaker. Only committee members can refund a deposit. The caretaker opens the hall on the day, and residents often ask her about refunds there and then.',
+      prompt: 'Decide whether the caretaker should see the refund control hidden, disabled with a reason, or with a route to ask, write the words she would see, and explain why.',
+      anchors: {
+        weak: 'Hides the control because she cannot use it, or greys it out with no explanation.',
+        adequate: 'Chooses a route to ask, because residents ask her and a committee member can grant it, with wording such as “Only the committee can refund deposits — send them this booking”.',
+        strong: 'As adequate, and marks an undecided cell, such as whether the caretaker may record damage that affects the refund, with what would settle it, and walks a caretaker who is also a resident.',
+      },
     },
   },
   'm07-l05-v1': {
@@ -573,11 +611,11 @@ export const guided07: Record<string, Guided> = {
         { id: 'walk-loss', label: 'What you actually lost when you searched, opened the third result and went back', kind: 'short' },
       ] },
       { id: 'result-item', title: 'What goes on one result', intro: 'One field per box, most important first, each traced to something you watched somebody compare on.', fields: [
-        { id: 'result-field-1', label: 'Result field 1 · what it is and the observation it came from', kind: 'short', example: 'Example (made up): day and time, because both participants said the day first when describing what they wanted.' },
-        { id: 'result-field-2', label: 'Result field 2 · what it is and the observation it came from', kind: 'short' },
-        { id: 'result-field-3', label: 'Result field 3 · what it is and the observation it came from', kind: 'short' },
-        { id: 'result-field-4', label: 'Result field 4 · what it is and the observation it came from', kind: 'short' },
-        { id: 'result-field-5', label: 'Result field 5 · what it is and the observation it came from', kind: 'short' },
+        { id: 'result-field-1', label: 'Result field 1 · what it is and the observation it came from', kind: 'short', sensitive: true, hint: 'Refer to people by label, never by name. With no observation, name the source you do have, such as a real message or your own walkthrough, and mark a guess as a guess.', example: 'Example (made up): day and time, because both participants said the day first when describing what they wanted.' },
+        { id: 'result-field-2', label: 'Result field 2 · what it is and the observation it came from', kind: 'short', sensitive: true },
+        { id: 'result-field-3', label: 'Result field 3 · what it is and the observation it came from', kind: 'short', sensitive: true },
+        { id: 'result-field-4', label: 'Result field 4 · what it is and the observation it came from', kind: 'short', sensitive: true },
+        { id: 'result-field-5', label: 'Result field 5 · what it is and the observation it came from', kind: 'short', sensitive: true },
         { id: 'omissions', label: 'What you deliberately left off a result, and why', kind: 'long', hint: 'Something left off on purpose is a decision. Something forgotten is not.' },
       ] },
       { id: 'extremes', title: 'Too many, and none at all', fields: [
@@ -629,10 +667,10 @@ export const guided07: Record<string, Guided> = {
           material: 'A made up filter combination on a class-booking product. “Saturday morning”, “under 500”, “within 2 km” and “beginner” together return nothing at all. Six classes match if the distance filter alone is removed.',
           question: 'What should the empty screen do first?',
           options: [
-            { label: 'Name the distance filter as the one that emptied the list, offer to remove it, and show that six classes are waiting.', correct: true, feedback: 'It says what happened, why, and gives one action with a visible reward. She does not have to take filters off one at a time to find the culprit.' },
-            { label: 'Say “No results found” and leave the filters alone so she can adjust them herself.', feedback: 'Accurate, and it hands her the whole search back to work out. She has four filters and no way of knowing which one did it.' },
-            { label: 'Clear all the filters automatically and show everything again.', feedback: 'That removes the emptiness by throwing away the work she did. Three of her four filters were fine and she now has to rebuild them from memory.' },
-            { label: 'Show the nearest matches anyway, without saying which filter was relaxed.', feedback: 'Quietly ignoring a filter is worse than an empty list, because she believes the results still meet what she asked for and may book something an hour away.' },
+            { label: 'Name the distance filter as the cause, offer to remove it, and show the six classes waiting.', was: ['Name the distance filter as the one that emptied the list, offer to remove it, and show that six classes are waiting.'], correct: true, feedback: 'It says what happened, why, and gives one action with a visible reward. She does not have to take filters off one at a time to find the culprit.' },
+            { label: 'Say “No results found” and leave all four filters in place, so she can adjust them herself.', was: ['Say “No results found” and leave the filters alone so she can adjust them herself.'], feedback: 'Accurate, and it hands her the whole search back to work out. She has four filters and no way of knowing which one did it.' },
+            { label: 'Clear all four filters automatically and show every class again, so the list is never empty.', was: ['Clear all the filters automatically and show everything again.'], feedback: 'That removes the emptiness by throwing away the work she did. Three of her four filters were fine and she now has to rebuild them from memory.' },
+            { label: 'Show the nearest matches anyway, quietly relaxing whichever filter excluded the most classes.', was: ['Show the nearest matches anyway, without saying which filter was relaxed.'], feedback: 'Quietly ignoring a filter is worse than an empty list, because she believes the results still meet what she asked for and may book something an hour away.' },
           ],
           then: 'Write your own no-results screen the same way: which filter, what to remove, what is waiting. Then do the too-many screen, where the job is the opposite — suggest the narrowing that helps most and show the count before she commits to it.',
         },
@@ -647,9 +685,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'You go back from a class page and the results reload from the top with the filters cleared. Why does that matter more than it looks?',
         options: [
-          { label: 'It stops people comparing, so they settle for whichever result they can still remember.', correct: true, feedback: 'Rebuilding a search is more work than accepting a good-enough answer, and most people accept. Your design has quietly chosen for them.' },
-          { label: 'It is a small irritation and people are used to it.', feedback: 'They are used to it, and they respond by opening fewer results. The cost is invisible because nobody complains about a booking they did make.' },
-          { label: 'It only matters when the list is long.', feedback: 'A short list still carries the narrowing that made it short. Losing four filters on ten results is the same loss of work.' },
+          { label: 'It stops people comparing, so they settle for whichever result they still remember.', was: ['It stops people comparing, so they settle for whichever result they can still remember.'], correct: true, feedback: 'Rebuilding a search is more work than accepting a good-enough answer, and most people accept. Your design has quietly chosen for them.' },
+          { label: 'It is a small irritation that most people are used to from other booking sites.', was: ['It is a small irritation and people are used to it.'], feedback: 'They are used to it, and they respond by opening fewer results. The cost is invisible because nobody complains about a booking they did make.' },
+          { label: 'It matters only when the list is long; short lists are quick to build again.', was: ['It only matters when the list is long.'], feedback: 'A short list still carries the narrowing that made it short. Losing four filters on ten results is the same loss of work.' },
         ],
         repair: 'Add anything missing to the preserved-state box in step 2, walking your own flow again to find it, then record the change in step 5.',
         recheck: 'The preserved list names the search words, the filters, the sort and the place in the list.',
@@ -667,9 +705,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'A filter combination returns two hundred classes. What is the most useful thing that screen can do?',
         options: [
-          { label: 'Suggest the one narrowing that would help most, and show the count it would leave behind.', correct: true, feedback: 'Two hundred means she cannot start. A suggested next filter with its count lets her see the effect before committing to it.' },
-          { label: 'Sort the results better and let her scroll.', feedback: 'Sorting helps somebody who can already judge the list. Two hundred results is a starting problem rather than an ordering one.' },
-          { label: 'Show how many results there are and leave the rest to her.', feedback: 'The count names the problem without offering a move. She still has to guess which of your filters would cut it down.' },
+          { label: 'Suggest the narrowing that would help most, with the count it would leave behind.', was: ['Suggest the one narrowing that would help most, and show the count it would leave behind.'], correct: true, feedback: 'Two hundred means she cannot start. A suggested next filter with its count lets her see the effect before committing to it.' },
+          { label: 'Sort the two hundred results better and let her scroll until something suits her.', was: ['Sort the results better and let her scroll.'], feedback: 'Sorting helps somebody who can already judge the list. Two hundred results is a starting problem rather than an ordering one.' },
+          { label: 'Show the total of two hundred clearly and leave the narrowing decisions to her.', was: ['Show how many results there are and leave the rest to her.'], feedback: 'The count names the problem without offering a move. She still has to guess which of your filters would cut it down.' },
         ],
         repair: 'Fill the too-many box in step 4 with the suggested narrowing and the counts you would show, then record it in step 5.',
         recheck: 'The too-many screen names one narrowing and shows what it would leave.',
@@ -680,6 +718,15 @@ export const guided07: Record<string, Guided> = {
       external: 'The drawings stay on paper or in your own folder. Cutting three result cards out and laying them side by side is worth doing before you write the field list; photograph them and note the file name here.',
       creator: 'Your creator reads the preserved-state list and the field list with its sources. Those two are what show this came from watching somebody rather than from a pattern library.',
       next: 'Open Your work and choose Ready for review. The next lesson takes the chosen item through to commitment, payment and the wait afterwards.',
+    },
+    transfer: {
+      scenario: 'Made-up case: on a furniture-rental site, a person filters sofas to “two-seater”, “under 1,500 a month” and “delivery this week”, scrolls to the twelfth result and opens it. When she presses back, the list reloads from the top with every filter cleared. She has three sofas she is still choosing between.',
+      prompt: 'Decide what the back step must restore and what light mechanism would hold her three candidates, and explain why each matters for how she chooses.',
+      anchors: {
+        weak: 'Treats losing the filters as a minor irritation, or adds a heavy compare tool before fixing the return step.',
+        adequate: 'Restores the filters, sort, scroll position and seen items on return, because rebuilding the list stops people comparing, and adds the lightest holder, such as a shortlist, so she need not remember the three.',
+        strong: 'As adequate, and says what happens if she returns later or on another device, names what was rejected and why, and notes that the result card should carry what renters actually compare.',
+      },
     },
   },
   'm07-l06-v1': {
@@ -706,7 +753,7 @@ export const guided07: Record<string, Guided> = {
       ] },
       { id: 'afterwards', title: 'Twice, and afterwards', fields: [
         { id: 'duplicate-mechanism', label: 'The sentence you would say to an engineer about what happens when the same request arrives twice', kind: 'long' },
-        { id: 'confirmation-home', label: 'Where the confirmation lives after the tab closes, and how it is found again', kind: 'short', hint: 'A reference and a phone number is a route. So is a message that arrives on the phone.' },
+        { id: 'confirmation-home', label: 'Where the confirmation lives after the tab closes, and how it is found again', kind: 'short', hint: 'A reference plus a code sent to the booking’s phone is a route. So is a message that arrives on the phone. Neither should let anyone change who the booking belongs to.' },
         { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
       ] },
     ],
@@ -742,10 +789,10 @@ export const guided07: Record<string, Guided> = {
           material: 'A made up situation. She taps Pay on a slow connection. The request leaves the phone and nothing comes back. Ninety seconds later the screen still shows a turning circle, and she does not know whether 850 has left her account.',
           question: 'What should that screen say?',
           options: [
-            { label: 'What is known so far, that she must not pay again, when she will hear, and a reference she can quote.', correct: true, feedback: 'Unknown is a state she is standing in, not an error. Telling her what is true and what not to do is what prevents a second payment made out of anxiety.' },
-            { label: '“Payment failed. Please try again.”', feedback: 'You do not know that it failed. If it did not, she pays twice, and a message that guesses in the reassuring direction costs her real money.' },
-            { label: 'Keep the circle turning until an answer arrives, so that nothing untrue is said.', feedback: 'Saying nothing is itself a message, and after ninety seconds it reads as broken. She closes the tab, and now nobody has told her where her money is.' },
-            { label: '“Something went wrong. Contact support.”', feedback: 'It answers none of the three things she needs: what happened to the money, what she should not do next, and when she will know.' },
+            { label: 'What is known so far, not to pay again, when she will hear, and a reference to quote.', was: ['What is known so far, that she must not pay again, when she will hear, and a reference she can quote.'], correct: true, feedback: 'Unknown is a state she is standing in, not an error. Telling her what is true and what not to do is what prevents a second payment made out of anxiety.' },
+            { label: 'That the payment failed and she should try again, so the booking is not lost while she waits.', was: ['“Payment failed. Please try again.”'], feedback: 'You do not know that it failed. If it did not, she pays twice, and a message that guesses in the reassuring direction costs her real money.' },
+            { label: 'Nothing new: keep the circle turning until an answer arrives, so nothing untrue is said.', was: ['Keep the circle turning until an answer arrives, so that nothing untrue is said.'], feedback: 'Saying nothing is itself a message, and after ninety seconds it reads as broken. She closes the tab, and now nobody has told her where her money is.' },
+            { label: 'That something went wrong and she should contact support, who can check the payment.', was: ['“Something went wrong. Contact support.”'], feedback: 'It answers none of the three things she needs: what happened to the money, what she should not do next, and when she will know.' },
           ],
           then: 'Write your own unknown state first, in her words. Then check that pending, failed and confirmed each answer the money question too.',
         },
@@ -756,7 +803,7 @@ export const guided07: Record<string, Guided> = {
         fields: ['throttle-sequence', 'throttle-change'],
         start: 'No prototype yet? Open any comparable live booking page in your browser, turn on a slow profile in the browser’s own tools, disable the cache, and load it while watching. That is honest evidence about timing, and it needs no account.',
         enough: 'You have a sequence and rough seconds written down, and you have said what you loaded if it was not your own design.' },
-      { demo: { scenario: 'Made-up example. Deciding where a booking confirmation lives afterwards, and putting it somewhere that lasted exactly as long as one browser tab.', beats: [{ label: 'Where I put it', text: 'On the screen straight after the payment. Class, date, address and a reference, all in one place. It looked like a complete record because it had everything on it.' }, { label: 'What I did while looking at it', text: 'I took a screenshot of my own screen. That is the whole finding: the person is trying to keep this, and a screen is not a thing that can be kept.' }, { label: 'Where it goes', text: 'She closes the tab, or the phone runs out of battery, or she arrives at the studio with no signal. Nothing I had written said where the confirmation existed apart from that one screen.' }, { label: 'What I added', text: 'The same confirmation sent as a message and as an email, both carrying the reference. The reference alone is enough to find the booking over the phone, and anyone signed in finds it again under Your bookings.' }, { label: 'What that did to the repeat question', text: 'The sentence became: if a request arrives twice with the same reference, the second one changes nothing and returns the first confirmation. A resent form and a reopened tab both land on the booking she already has.' }], wrongTurn: 'The wrong turn is treating the confirmation screen as the record. It is the most convincing screen in the whole flow, so it is the easiest place to stop, and it lasts exactly as long as one tab.', tradeoff: 'A confirmation that lives in three places has to be written three times and kept in agreement, and every later change to the booking now has to reach all three. That is real work, and it is what makes the confirmation survive the tab closing.', uncertainty: 'Still unknown: whether a reference somebody has to read out over the phone is one anybody can read out. A code holding both a letter O and a zero is a question for somebody trying it, not for me.' }, expect: 'How a repeated identical request is stopped from doing anything twice, where the confirmation lives afterwards, and the repair the Check questions asked for.',
+      { demo: { scenario: 'Made-up example. Deciding where a booking confirmation lives afterwards, and putting it somewhere that lasted exactly as long as one browser tab.', beats: [{ label: 'Where I put it', text: 'On the screen straight after the payment. Class, date, address and a reference, all in one place. It looked like a complete record because it had everything on it.' }, { label: 'What I did while looking at it', text: 'I took a screenshot of my own screen. That is the whole finding: the person is trying to keep this, and a screen is not a thing that can be kept.' }, { label: 'Where it goes', text: 'She closes the tab, or the phone runs out of battery, or she arrives at the studio with no signal. Nothing I had written said where the confirmation existed apart from that one screen.' }, { label: 'What I added', text: 'The same confirmation sent as a message and as an email, both carrying the reference. Over the phone, staff find the booking by its reference and send a code to the booking’s phone before changing anything, and anyone signed in finds it again under Your bookings.' }, { label: 'What that did to the repeat question', text: 'The sentence became: if a request arrives twice with the same reference, the second one changes nothing and returns the first confirmation. A resent form and a reopened tab both land on the booking she already has.' }], wrongTurn: 'The wrong turn is treating the confirmation screen as the record. It is the most convincing screen in the whole flow, so it is the easiest place to stop, and it lasts exactly as long as one tab.', tradeoff: 'A confirmation that lives in three places has to be written three times and kept in agreement, and every later change to the booking now has to reach all three. That is real work, and it is what makes the confirmation survive the tab closing.', uncertainty: 'Still unknown: whether a reference somebody has to read out over the phone is one anybody can read out. A code holding both a letter O and a zero is a question for somebody trying it, not for me.' }, expect: 'How a repeated identical request is stopped from doing anything twice, where the confirmation lives afterwards, and the repair the Check questions asked for.',
         fields: ['duplicate-mechanism', 'confirmation-home', 'improvement-made'],
         terms: [{ term: 'Repeated request', meaning: 'The same action arriving twice because somebody pressed back, resent a form or reopened a tab. Not a second decision.' }],
         start: 'Write the sentence you would say to an engineer, beginning “if the same request arrives twice, then …”.',
@@ -766,9 +813,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'Your flow shows pending, confirmed and failed. Why is that not enough?',
         options: [
-          { label: 'The request can leave and never be answered, and that is a fourth state a person can be standing in.', correct: true, feedback: 'Unknown is where second payments happen. Designing it is the difference between a worried hour and a duplicate charge you caused.' },
-          { label: 'Three states cover it; unknown is only pending that has lasted a while.', feedback: 'Pending says the system knows and is working. Unknown says the system does not know, and those need different words and a different promise.' },
-          { label: 'The bank will resolve it, so the interface need not say anything.', feedback: 'It may resolve in a day. She is deciding within two minutes whether to pay again, and only your screen can tell her not to.' },
+          { label: 'A request can leave and never be answered, a fourth state she can be standing in.', was: ['The request can leave and never be answered, and that is a fourth state a person can be standing in.'], correct: true, feedback: 'Unknown is where second payments happen. Designing it is the difference between a worried hour and a duplicate charge you caused.' },
+          { label: 'Three states cover it, since unknown is only pending that has lasted a while longer.', was: ['Three states cover it; unknown is only pending that has lasted a while.'], feedback: 'Pending says the system knows and is working. Unknown says the system does not know, and those need different words and a different promise.' },
+          { label: 'The bank resolves anything unclear, so the interface need not say anything more.', was: ['The bank will resolve it, so the interface need not say anything.'], feedback: 'It may resolve in a day. She is deciding within two minutes whether to pay again, and only your screen can tell her not to.' },
         ],
         repair: 'Fill the unknown box in step 3 with what is true, what not to do, when she will hear and how to check, then record the change in step 5.',
         recheck: 'The unknown state answers all four of those in plain words.',
@@ -776,9 +823,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'You disable the pay button after the first tap. Is a double charge prevented?',
         options: [
-          { label: 'Only on that page: she can press back, resend the form or reopen it, so the second identical request must be recognised and do nothing new.', correct: true, feedback: 'Disabling is a courtesy on one screen. The real defence is a rule you agree with an engineer and write on the flow, because that is where the repeat arrives.' },
-          { label: 'It is, because the button cannot be pressed a second time.', feedback: 'The button is one route to the request. Closing the tab and reopening it, or pressing back and then forward, sends it again with the button never involved.' },
-          { label: 'A confirmation dialogue before the button would be safer still.', feedback: 'That adds a step for everybody and leaves the resend problem exactly where it was. The repeat comes from the browser rather than from her finger.' },
+          { label: 'Only on that page: back, resending or reopening can repeat it, so a repeat must do nothing new.', was: ['Only on that page: she can press back, resend the form or reopen it, so the second identical request must be recognised and do nothing new.'], correct: true, feedback: 'Disabling is a courtesy on one screen. The real defence is a rule you agree with an engineer and write on the flow, because that is where the repeat arrives.' },
+          { label: 'Fully, because a disabled button cannot be pressed a second time from any screen.', was: ['It is, because the button cannot be pressed a second time.'], feedback: 'The button is one route to the request. Closing the tab and reopening it, or pressing back and then forward, sends it again with the button never involved.' },
+          { label: 'Mostly, though a confirmation dialogue before the button would make it safer still.', was: ['A confirmation dialogue before the button would be safer still.'], feedback: 'That adds a step for everybody and leaves the resend problem exactly where it was. The repeat comes from the browser rather than from her finger.' },
         ],
         repair: 'Write the duplicate-request sentence in step 5, then record in the last box what it changed about your flow annotation.',
         recheck: 'The mechanism says what happens to the second identical request, not what happens to the button.',
@@ -786,9 +833,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'You looked at your paper screens and decided the wait would feel fine. What is the honest response?',
         options: [
-          { label: 'Load a comparable live page with throttling on and the cache disabled, and write down the sequence and the seconds.', correct: true, feedback: 'Timing cannot be seen on paper. Any real page on a slow profile shows you the gap between the action and the first feedback, which is the thing you are designing around.' },
-          { label: 'Paper cannot show timing, so note that the check was not possible and move on.', feedback: 'Something can be checked without a prototype. Watching a comparable page on a slow connection is real evidence about the timing your design has to survive.' },
-          { label: 'Assume the message arrives quickly because it is only text.', feedback: 'Text does tend to arrive first, and that is the finding rather than the assumption. Writing the sequence down is what turns it into something you can point at.' },
+          { label: 'Load a comparable live page, throttled with the cache off, and write down what arrived when.', was: ['Load a comparable live page with throttling on and the cache disabled, and write down the sequence and the seconds.'], correct: true, feedback: 'Timing cannot be seen on paper. Any real page on a slow profile shows you the gap between the action and the first feedback, which is the thing you are designing around.' },
+          { label: 'Note that paper cannot show timing, so the check was not possible, and move on to the next step.', was: ['Paper cannot show timing, so note that the check was not possible and move on.'], feedback: 'Something can be checked without a prototype. Watching a comparable page on a slow connection is real evidence about the timing your design has to survive.' },
+          { label: 'Assume the message arrives quickly, since plain text loads before anything else on a page.', was: ['Assume the message arrives quickly because it is only text.'], feedback: 'Text does tend to arrive first, and that is the finding rather than the assumption. Writing the sequence down is what turns it into something you can point at.' },
         ],
         repair: 'Run the throttled load and fill the sequence box in step 4, then record in step 5 what it changed about your pending wording.',
         recheck: 'The throttling note gives a sequence and rough seconds, and names what you loaded.',
@@ -800,14 +847,23 @@ export const guided07: Record<string, Guided> = {
       creator: 'Your creator reads the four wait states side by side. The unknown one is the interesting artefact, so leave it first.',
       next: 'Open Your work and choose Ready for review. The next lesson turns the whole flow into an exception table, and your four states are the start of it.',
     },
+    transfer: {
+      scenario: 'Made-up case: on an intercity bus app, a traveller taps “Pay 640” on a slow station connection. The request leaves and nothing comes back; after a minute the button still shows a spinner and she cannot tell whether the money has gone. The bus leaves in twenty minutes.',
+      prompt: 'Decide what the screen should say and offer in this unknown state, and explain why each part is there.',
+      anchors: {
+        weak: 'Shows “Payment failed, try again” or keeps the spinner going, both of which invite a second payment.',
+        adequate: 'Says what is true so far (payment not yet confirmed), tells her not to pay again, says when she will hear, and gives a reference she can show or quote, because anxiety otherwise produces a double charge.',
+        strong: 'As adequate, and offers a way to check later that does not need this page, notes that a repeated request must be treated as the same booking, and considers what the twenty-minute departure means for the promise.',
+      },
+    },
   },
   'm07-l07-v1': {
     route: textRoute,
     worksheet: [
-      { id: 'distinction', title: 'Slip or mistake', intro: 'One sentence of your own, then one case of each taken from your own flow.', fields: [
-        { id: 'slip-mistake-difference', label: 'The difference between a slip and a mistake, in your own words, with one of each from your flow', kind: 'long',
-          hint: 'A slip is a failure of the hand or the attention. A mistake is a failure of belief.',
-          example: 'Example (made up): a slip is tapping Saturday when she meant Sunday. A mistake is leaving the payment screen because she believed the place was already hers.' },
+      { id: 'distinction', title: 'Slip, mistake or system fault', intro: 'One sentence of your own, then one case of each taken from your own flow.', fields: [
+        { id: 'slip-mistake-difference', label: 'The difference between a slip, a mistake and a system fault, in your own words, with one of each from your flow', kind: 'long',
+          hint: 'A slip is a failure of the hand or the attention. A mistake is a failure of belief. A system fault is the product’s side failing or changing underneath the person: a timeout, an outage, a provider error, stale data.',
+          example: 'Example (made up): a slip is tapping Saturday when she meant Sunday. A mistake is leaving the payment screen because she believed the place was already hers. A system fault is the payment service not answering, so nobody knows whether she paid.' },
       ] },
       { id: 'sweep', title: 'Four questions at every node', intro: 'Walk the flow node by node. Keep the four questions in front of you and write every case down, including the ones that feel unlikely.', fields: [
         { id: 'wrong-input-cases', label: 'Wrong input: every case where what someone enters or chooses is not what they meant', kind: 'long',
@@ -831,6 +887,9 @@ export const guided07: Record<string, Guided> = {
           example: 'Example (made up): “We could not reach the payment service. Nothing has been taken and your place is held for ten more minutes. Try again, or pay later using reference 4821.”' },
         { id: 'message-money', label: 'The message for the case where someone cannot tell whether their money left', kind: 'long',
           hint: 'Say what is true so far, say plainly not to pay again, say when they will hear and how to check without this page.' },
+        { id: 'system-fault-response', label: 'One system fault from your table: the safeguard on your side, what the message tells her about her money, work and place, and a route out that does not depend on the part that failed', kind: 'long',
+          hint: 'Never file the product’s own failure as her error. Say it was your side, say what is safe, and make a retry unable to do the action twice.',
+          example: 'Example (made up): the price changed while she sat on the review screen · safeguard: the total is checked again before charging · message: “The price of this class changed to 900 while you were deciding. Nothing has been charged. Pay 900 to book, or choose another class.” · route: pay the new total or go back to the list.' },
       ] },
       { id: 'rank', title: 'Rank by harm, then save', fields: [
         { id: 'harm-ranking', label: 'Your cases in order of how much harm each one does, with the three you would fix first marked', kind: 'long',
@@ -839,7 +898,7 @@ export const guided07: Record<string, Guided> = {
       ] },
     ],
     guide: [
-      { expect: 'Your own sentence separating a slip from a mistake, with one of each taken from your flow.',
+      { expect: 'Your own sentences separating a slip, a mistake and a system fault, with one of each taken from your flow.',
         fields: ['slip-mistake-difference'],
         terms: [
           { term: 'Slip', meaning: 'The person knew what they wanted and the hand or the interface betrayed them. Prevented by design: bigger targets, sensible defaults, forgiving formats.' },
@@ -888,35 +947,35 @@ export const guided07: Record<string, Guided> = {
               } },
           ],
           then: 'Now write your own sentence above, and put one case of each kind from your flow beside it. You will label the whole list in step 3.',
-          pattern: 'Look at the two hardest lines, the lunch and the refund. In both, the person did exactly what they meant to do, and what they meant rested on something the product never told them. That is the test: ask what they believed at the moment they acted. If the belief was sound and only the action went astray, it is a slip.',
+          pattern: 'Ask first whether anything on the product’s side failed or changed underneath her: a service that did not answer, a total that went stale. If so, it is a system fault, and it is never relabelled as her error. Then look at the two hardest lines, the lunch and the refund: the person did exactly what they meant to, and what they meant rested on something the product never told them. Ask what they believed when they acted. If the belief was sound and only the action went astray, it is a slip.',
         },
         start: 'Write one of each about the same screen and put them side by side.',
-        enough: 'Both of your own cases come from your flow, and you can say which part of each one failed: the hand or the belief.' },
+        enough: 'All three of your cases come from your flow, and you can say what failed in each: the hand, the belief, or the product’s side.' },
       { terms: [{ term: 'Node', meaning: 'One point on your flow: a screen, a decision, or a wait. The sweep visits each one in turn.' }, { term: 'Changed meanwhile', meaning: 'A failure caused by somebody else acting while your person was still deciding. Almost nobody finds these by imagining.' }, { term: 'Leaving and coming back', meaning: 'Somebody stopping partway and returning later, perhaps days later, on a different phone.' }], expect: 'Every failure the four questions produce, grouped by the question that found it, at least twelve in all.',
         fields: ['wrong-input-cases', 'system-failure-cases', 'return-cases', 'changed-meanwhile-cases'],
         reveal: { first: 1, group: 1, count: 4, addLabel: 'Ask the next question', note: 'One question at a time, over the whole flow. Each should give you at least three cases; twelve is the floor rather than the target.' },
         start: 'Put your flow in front of you and take the first question all the way along it before you look at the second.',
         enough: 'The changed-meanwhile list is not empty, and at least one case surprised you.' },
-      { terms: [{ term: 'Prevention', meaning: 'Changing the design so the failure cannot happen, or becomes much harder to reach.' }, { term: 'Recovery', meaning: 'What you give somebody once it has happened: an honest state, their work kept, and a route onwards.' }, { term: 'Undo', meaning: 'A short window in which an action can be taken back. It costs nothing to the person who never needed it.' }, { term: 'Confirmation dialogue', meaning: 'A box asking whether she is sure. Worth it once, for something truly irreversible; used often, it teaches people to press through without reading.' }], expect: 'Five rows in full: what fails, slip or mistake or system fault, the response and the reason for it.',
+      { terms: [{ term: 'Prevention', meaning: 'Changing the design so the failure cannot happen, or becomes much harder to reach.' }, { term: 'Recovery', meaning: 'What you give somebody once it has happened: an honest state, their work kept, and a route onwards.' }, { term: 'Undo', meaning: 'A short window in which an action can be taken back. It costs nothing to the person who never needed it.' }, { term: 'Confirmation dialogue', meaning: 'A box asking whether she is sure. Worth it once, for something truly irreversible; used often, it teaches people to press through without reading.' }, { term: 'Safeguard', meaning: 'A protection on your side that limits the damage when the product fails, such as a repeated payment request doing nothing new. It answers a system fault the way prevention answers a slip.' }], expect: 'Five rows in full: what fails, slip or mistake or system fault, the response and the reason for it.',
         fields: ['case-1', 'case-2', 'case-3', 'case-4', 'case-5'],
         reveal: { first: 2, group: 1, count: 5, addLabel: 'Add another row', note: 'One row at a time. Five here in full; the rest of your twelve stay in the table you are keeping.' },
         demo: {
           scenario: 'Made-up example. Classifying nineteen failures for a booking flow, and reaching for a confirmation dialogue on almost every one.',
           beats: [
-            { label: 'What I had', text: 'Nineteen cases from the four questions. Twelve looked like careless taps and seven looked like people believing something untrue.' },
+            { label: 'What I had', text: 'Nineteen cases from the four questions. Ten looked like careless taps, five like people believing something untrue, and four were the product failing: a timeout, a price changing underneath her, a place taken, a message never sent.' },
             { label: 'What I did first', text: 'I marked nearly everything a slip and wrote “add a confirmation dialogue” beside each. It felt thorough and it took ten minutes.' },
             { label: 'Why that failed', text: 'Counting them up, one person booking one class would meet four dialogues. Three of the four guard actions that could simply be undone, and every one of them teaches her to press through without reading.' },
             { label: 'What I changed', text: 'Undo for cancelling a booking, for five minutes. A confirmation kept for the single action that genuinely cannot be reversed. Nothing at all on the trivial ones.' },
-            { label: 'What the classification was for', text: 'The seven mistakes never needed a dialogue in the first place. They needed a sentence saying what was true before she acted: a held place named as held, a deadline stated on the review screen.' },
+            { label: 'What the classification was for', text: 'The five mistakes needed a sentence saying what was true before she acted. The four system faults needed neither a dialogue nor a sentence: they needed safeguards and an honest state — a retry that cannot charge twice, her place held, and a message saying it was our side.' },
           ],
           wrongTurn: 'The wrong turn is answering every failure with a confirmation dialogue. It is the cheapest thing to write, it looks careful, and it makes rare slips slightly less likely at the price of interrupting everybody constantly.',
           tradeoff: 'Undo costs a conversation with whoever builds it, and a window of time where the action is not yet final. That is a real cost, and it is smaller than the cost of training people to click through warnings.',
           uncertainty: 'Still unknown: whether five minutes is the right window. It is a guess about how long someone takes to notice, and it can be revised once anybody uses it.',
         },
         start: 'Take the case that worries you most and fill its row before you choose the other four.',
-        enough: 'Every row names a response and a reason, and no row classified as a mistake is answered by a confirmation alone.' },
-      { demo: { scenario: 'Made-up example. Writing the message for a class cancelled by the studio while somebody was on the payment screen, and apologising without answering anything.', beats: [{ label: 'My first message', text: '“Sorry, something went wrong. Please try again.” It was polite, it fitted on one line, and it took about ten seconds to write.' }, { label: 'Reading it as her', text: 'She has just pressed pay. Try again what? The class she was paying for no longer exists, so the one action I offered her was the one action that could not work.' }, { label: 'The three things missing', text: 'What happened, what it means for her money and her held place, and what to do next. My sentence had none of them, and “something went wrong” hid the fact that we had cancelled the class ourselves.' }, { label: 'What I wrote instead', text: '“We have cancelled this class. Nothing has been taken from your account. Everything you typed is saved, and the same class runs again on two later dates — or we can tell you when new dates go up.”' }, { label: 'What it cost me to write', text: 'Two decisions I had been quietly avoiding. Whether a payment already taken comes back automatically or on request, and whether telling somebody about new dates is a thing the product can actually do.' }], wrongTurn: 'The wrong turn is reaching for an apology. It sounds kind, it commits to nothing, and it leaves her holding the same three questions she had before she read it.', tradeoff: 'A message saying we cancelled it names you as the cause, in words she can screenshot and forward to somebody. It is also the only version she can act on, and the only one that stops her paying again.', uncertainty: 'Still unknown: whether offering later dates helps here or reads as a sales line at the worst possible moment. Somebody would have to read it back to you to settle that.' }, expect: 'Full wording for the two hardest messages: what happened, what it means for the person, what to do next.',
-        fields: ['message-worst', 'message-money'],
+        enough: 'Every row names a response and a reason, no mistake is answered by a confirmation alone, and no system fault is filed as the person’s error.' },
+      { demo: { scenario: 'Made-up example. Writing the message for a class cancelled by the studio while somebody was on the payment screen, and apologising without answering anything.', beats: [{ label: 'My first message', text: '“Sorry, something went wrong. Please try again.” It was polite, it fitted on one line, and it took about ten seconds to write.' }, { label: 'Reading it as her', text: 'She has just pressed pay. Try again what? The class she was paying for no longer exists, so the one action I offered her was the one action that could not work.' }, { label: 'The three things missing', text: 'What happened, what it means for her money and her held place, and what to do next. My sentence had none of them, and “something went wrong” hid the fact that we had cancelled the class ourselves.' }, { label: 'What I wrote instead', text: '“We have cancelled this class. Nothing has been taken from your account. Everything you typed is saved, and the same class runs again on two later dates — or we can tell you when new dates go up.”' }, { label: 'What it cost me to write', text: 'Two decisions I had been quietly avoiding. Whether a payment already taken comes back automatically or on request, and whether telling somebody about new dates is a thing the product can actually do.' }], wrongTurn: 'The wrong turn is reaching for an apology. It sounds kind, it commits to nothing, and it leaves her holding the same three questions she had before she read it.', tradeoff: 'A message saying we cancelled it names you as the cause, in words she can screenshot and forward to somebody. It is also the only version she can act on, and the only one that stops her paying again.', uncertainty: 'Still unknown: whether offering later dates helps here or reads as a sales line at the worst possible moment. Somebody would have to read it back to you to settle that.' }, expect: 'Full wording for the two hardest messages, and one system fault answered with a safeguard, an honest message and a route out.',
+        fields: ['message-worst', 'message-money', 'system-fault-response'],
         terms: [{ term: 'Message wording', meaning: 'The exact sentences a person reads, written out. A row saying “show an error” is a note about a message, not a message.' }],
         start: 'Write the money one first, as though to someone who has just paid and seen nothing at all.',
         enough: 'Neither message uses a system word, and both answer what happened to the money or the work.' },
@@ -929,19 +988,19 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'You have eleven cases and every one came from imagining what might go wrong. What is most likely missing?',
         options: [
-          { label: 'The cases where somebody else changed something while your person was deciding: a place taken, a class cancelled, a price altered.', correct: true, feedback: 'Nobody imagines those, because they are not about your person at all. They are found by walking the flow with that one question written in front of you.' },
-          { label: 'The wrong-input cases, since people mistype more often than anyone expects.', feedback: 'Those are the easiest to imagine, so they are usually already on an intuitive list. They are rarely what it is short of.' },
-          { label: 'Nothing important: eleven cases from a flow you know well is a thorough list.', feedback: 'A list from imagination reproduces what you already worry about. The systematic walk exists to find what you do not.' },
+          { label: 'System faults and changes made meanwhile: a timeout, a place taken, a price altered.', was: ['The cases where somebody else changed something while your person was deciding: a place taken, a class cancelled, a price altered.'], correct: true, feedback: 'Nobody imagines those, because they are not about your person at all. They are found by walking the flow with the system-failure and changed-meanwhile questions in front of you, and they are system faults rather than user errors.' },
+          { label: 'The wrong-input cases, since people mistype far more often than anyone ever expects.', was: ['The wrong-input cases, since people mistype more often than anyone expects.'], feedback: 'Those are the easiest to imagine, so they are usually already on an intuitive list. They are rarely what it is short of.' },
+          { label: 'Little of importance: eleven cases from a flow you know well makes a thorough list.', was: ['Nothing important: eleven cases from a flow you know well is a thorough list.'], feedback: 'A list from imagination reproduces what you already worry about. The systematic walk exists to find what you do not.' },
         ],
-        repair: 'Go back to changed-meanwhile-cases in step 2 and walk every wait node again with that single question. Record what you added in the last step.',
-        recheck: 'At least twelve cases exist and the changed-meanwhile list is no longer empty.',
+        repair: 'Go back to system-failure-cases and changed-meanwhile-cases in step 2 and walk every wait node again with those two questions, labelling each case found a system fault. Record what you added in step 5.',
+        recheck: 'At least twelve cases exist, and the system-failure and changed-meanwhile lists are no longer empty.',
       },
       {
         question: 'One of your rows is a person believing a held place was a confirmed booking, and you have answered it with a confirmation dialogue. What is wrong with that?',
         options: [
-          { label: 'A dialogue asks her to confirm something she already believes is true, so it changes nothing about her belief.', correct: true, feedback: 'Mistakes are answered by saying what is true before she acts. Name the state as held on the screen and in the message, with the time it expires.' },
-          { label: 'Nothing is wrong: a dialogue makes her stop and think.', feedback: 'It makes her stop. What she thinks in that moment is what she already thought, which is the wrong thing.' },
-          { label: 'The dialogue needs a stronger warning colour.', feedback: 'Colour changes how loudly the wrong information arrives. The content is the problem.' },
+          { label: 'A dialogue asks her to confirm what she already believes, so her belief stays wrong.', was: ['A dialogue asks her to confirm something she already believes is true, so it changes nothing about her belief.'], correct: true, feedback: 'Mistakes are answered by saying what is true before she acts. Name the state as held on the screen and in the message, with the time it expires.' },
+          { label: 'Very little: a dialogue makes her stop and think before she leaves the payment screen.', was: ['Nothing is wrong: a dialogue makes her stop and think.'], feedback: 'It makes her stop. What she thinks in that moment is what she already thought, which is the wrong thing.' },
+          { label: 'Only its look: the dialogue needs a stronger warning colour so that she reads it.', was: ['The dialogue needs a stronger warning colour.'], feedback: 'Colour changes how loudly the wrong information arrives. The content is the problem.' },
         ],
         repair: 'Find that row in step 3, change its response to a fact stated before the action, and write the sentence into message-worst in step 4. Record the change in the last step.',
         recheck: 'No row classified as a mistake is answered by a confirmation alone.',
@@ -949,9 +1008,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'You have ranked your cases by how likely each one is. Why is that the wrong order?',
         options: [
-          { label: 'A rare failure that costs someone money or lost work does more harm than a common one that costs a moment.', correct: true, feedback: 'Ranked by harm, the payment-unknown case rises above the mistyped name. Likelihood is the tie-breaker between two equally harmful cases.' },
-          { label: 'Likelihood is fine, as long as you fix everything eventually.', feedback: 'Nobody fixes everything. The order decides what gets designed at all, so it should be the order of what hurts.' },
-          { label: 'Because the likely ones are already handled by the interface.', feedback: 'Some are and some are not, and either way that is not what makes the ordering wrong.' },
+          { label: 'A rare failure that costs money or work does more harm than a common one costing a moment.', was: ['A rare failure that costs someone money or lost work does more harm than a common one that costs a moment.'], correct: true, feedback: 'Ranked by harm, the payment-unknown case rises above the mistyped name. Likelihood is the tie-breaker between two equally harmful cases.' },
+          { label: 'Likelihood is a fine order, provided every case on the list gets fixed eventually.', was: ['Likelihood is fine, as long as you fix everything eventually.'], feedback: 'Nobody fixes everything. The order decides what gets designed at all, so it should be the order of what hurts.' },
+          { label: 'The likely cases are usually already handled by the interface, so they rank lowest.', was: ['Because the likely ones are already handled by the interface.'], feedback: 'Some are and some are not, and either way that is not what makes the ordering wrong.' },
         ],
         repair: 'Reorder harm-ranking in step 5 by what each failure costs the person, mark the three you would fix first, and record the change in the last step.',
         recheck: 'The top three are the three that do the most harm, whatever their likelihood.',
@@ -960,8 +1019,17 @@ export const guided07: Record<string, Guided> = {
     saveRoute: {
       auto: 'Your four lists, your five rows, the messages and the ranking save as you type, on this device first and then online.',
       external: 'The full table of twelve or more cases lives wherever you are keeping it, on paper or in a text file. Note where it is in the ranking box so you can find it again.',
-      creator: 'Your creator reads the five rows and the two messages. The messages are what show the table is a design rather than a list of problems.',
+      creator: 'Your creator reads the five rows, the two messages and your system-fault response. The messages are what show the table is a design rather than a list of problems.',
       next: 'Open Your work and choose Ready for review. The next lesson turns one branch of the flow into wireframes, and the exception states from this table become frames of their own.',
+    },
+    transfer: {
+      scenario: 'Made-up case: a photo-printing kiosk app has three failures. One customer taps the thumbnail next to the one she meant and orders the wrong photo. Another believes his prints are ready to collect the moment he pays, though printing takes an hour. A third customer’s order stops half-way because the kiosk’s print server times out, and the screen just says “Error 502”.',
+      prompt: 'Classify each failure as a slip, a mistake or a system fault, and for the system fault explain what the message and the safeguard must do, and why.',
+      anchors: {
+        weak: 'Files the timeout as user error, such as “she should retry”, or calls all three slips, and keeps “Error 502” or a vague apology.',
+        adequate: 'Wrong thumbnail is a slip, “ready at once” is a mistake, the timeout is a system fault; its message says the kiosk failed, what happened to the money and the order, and offers a retry that cannot charge twice.',
+        strong: 'As adequate, and ranks the timeout first by harm because money and an order are at stake, gives the slip a design fix and the mistake a fact stated before paying, and says how the customer checks the order later.',
+      },
     },
   },
   'm07-l08-v1': {
@@ -1033,13 +1101,13 @@ export const guided07: Record<string, Guided> = {
       { terms: [{ term: 'Content order', meaning: 'The top-to-bottom sequence of what is on a screen. On a narrow screen it is most of the design.' }, { term: 'Supporting material', meaning: 'The parts that help once a decision has been made rather than helping to make it: descriptions, photographs, reassurance.' }], expect: 'Two content orders for one screen, and a stated reason for the one you kept.',
         fields: ['version-a', 'version-b', 'order-chosen'],
         supported: {
-          material: 'A supplied class detail screen, made up for practice, drawn two ways. Version A: photograph, description, class name, date and time, price, book. Version B: class name, date and time, price, what to bring, book, description, photograph.',
+          material: 'A supplied class detail screen, made up for practice, drawn two ways. In the same made-up research, people chose between classes by date and time, price and what to bring. Version A: photograph, description, class name, date and time, price, book. Version B: class name, date and time, price, what to bring, book, description, photograph.',
           question: 'Which version is the better starting point, and for what reason?',
           options: [
-            { label: 'Version B, because the things a person compares on come before the action and everything else follows.', correct: true, feedback: 'The order matches what someone is doing on this screen, which is deciding whether to book. The description is supporting material and sits where supporting material belongs.' },
+            { label: 'Version B, because what people compare on comes before the action, and the rest follows.', was: ['Version B, because the things a person compares on come before the action and everything else follows.'], correct: true, feedback: 'The order matches what someone is doing on this screen, which is deciding whether to book. The description is supporting material and sits where supporting material belongs.' },
             { label: 'Version A, because the photograph draws people in and the description explains the class.', feedback: 'That order serves someone who has already decided and is enjoying the page. Anyone still comparing has to scroll past the pleasant part to reach the price.' },
-            { label: 'Neither can be judged until there is a visual design.', feedback: 'Colour and type change how an order feels, not what the order is. This is the one question a plain frame answers better than a finished screen.' },
-            { label: 'Version B on a phone, and version A on a wide screen.', feedback: 'Width changes the arrangement rather than the priority. If price and date matter most, they matter most at every width, which is the next lesson.' },
+            { label: 'Neither yet: the order cannot be judged until the screen has its visual design applied.', was: ['Neither can be judged until there is a visual design.'], feedback: 'Colour and type change how an order feels, not what the order is. This is the one question a plain frame answers better than a finished screen.' },
+            { label: 'Version B on a phone and Version A on a wide screen, where there is room for the photograph.', was: ['Version B on a phone, and version A on a wide screen.'], feedback: 'Width changes the arrangement rather than the priority. If price and date matter most, they matter most at every width, which is the next lesson.' },
           ],
           then: 'Now draw your own least certain screen a second way, and write what each order favours in the box below.',
         },
@@ -1054,9 +1122,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'You do not have the wording for one label yet, so you write something plausible to fill the box. What does that cost you?',
         options: [
-          { label: 'The frame can no longer show you that the real words do not fit, which is most of what it was for.', correct: true, feedback: 'Writing “unknown — needs a decision” keeps the gap visible and keeps the frame honest about its own length.' },
-          { label: 'Very little, as long as you replace it later.', feedback: 'Plausible text is extremely hard to spot later, precisely because it reads well. Nobody goes hunting for the sentence that looks right.' },
-          { label: 'Some time, since you will have to draw the frame twice.', feedback: 'Redrawing on paper is cheap. The cost is the problem you never found.' },
+          { label: 'The frame can no longer show you that the real words will not fit, its main job.', was: ['The frame can no longer show you that the real words do not fit, which is most of what it was for.'], correct: true, feedback: 'Writing “unknown — needs a decision” keeps the gap visible and keeps the frame honest about its own length.' },
+          { label: 'Very little, provided you remember to replace it with the real label before handover.', was: ['Very little, as long as you replace it later.'], feedback: 'Plausible text is extremely hard to spot later, precisely because it reads well. Nobody goes hunting for the sentence that looks right.' },
+          { label: 'Some time, since the frame will have to be drawn a second time once the words exist.', was: ['Some time, since you will have to draw the frame twice.'], feedback: 'Redrawing on paper is cheap. The cost is the problem you never found.' },
         ],
         repair: 'Go through open-decisions in step 3 and replace every invented string on the frames with the real label or the words “unknown — needs a decision”. Record what you changed in the last step.',
         recheck: 'Every word on every frame comes from your m06 table, your exception table, or is marked unknown.',
@@ -1064,9 +1132,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'You show the frames to someone and they comment on the colours and the spacing. What has gone wrong?',
         options: [
-          { label: 'The frames look finished enough to invite it, so the reading has moved off what is on the screen and in what order.', correct: true, feedback: 'One pen weight, no colour, no borrowed components. A rougher frame gets you the answer you actually needed.' },
-          { label: 'Nothing: comments on colour are useful at any stage.', feedback: 'They are useful when there are colour decisions to make. Given now, they cost you the only question these frames can answer.' },
-          { label: 'They should have been asked to ignore the styling.', feedback: 'People respond to what is in front of them. Asking someone to unsee it works far less well than not drawing it.' },
+          { label: 'The frames look finished enough to invite it, pulling attention off content and order.', was: ['The frames look finished enough to invite it, so the reading has moved off what is on the screen and in what order.'], correct: true, feedback: 'One pen weight, no colour, no borrowed components. A rougher frame gets you the answer you actually needed.' },
+          { label: 'Little has gone wrong: comments on colour and spacing are useful at any stage of design.', was: ['Nothing: comments on colour are useful at any stage.'], feedback: 'They are useful when there are colour decisions to make. Given now, they cost you the only question these frames can answer.' },
+          { label: 'The briefing: they should have been asked to ignore styling before they looked at all.', was: ['They should have been asked to ignore the styling.'], feedback: 'People respond to what is in front of them. Asking someone to unsee it works far less well than not drawing it.' },
         ],
         repair: 'Look at styling-left-out in step 3, strip any styling from the frames, and record it in the last step.',
         recheck: 'No frame carries colour, icon sets or type choices.',
@@ -1074,9 +1142,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'Your branch has nine screens and states, and you have drawn six frames. What is most likely missing?',
         options: [
-          { label: 'The exception states, which take minutes to draw and show at once whether the layout has room for an explanation.', correct: true, feedback: 'A pending state with nowhere to put three lines of reassurance is a problem found with a pencil rather than in code.' },
-          { label: 'The wide-screen versions of each frame.', feedback: 'Widths are the next lesson. This one is about whether the screens exist and hold the right things.' },
-          { label: 'Nothing: six frames for one branch is a reasonable number.', feedback: 'The number is not the test. The test is whether every state in the flow has somewhere to be.' },
+          { label: 'The exception states, which take minutes and show whether the layout has room to explain.', was: ['The exception states, which take minutes to draw and show at once whether the layout has room for an explanation.'], correct: true, feedback: 'A pending state with nowhere to put three lines of reassurance is a problem found with a pencil rather than in code.' },
+          { label: 'The wide-screen versions of each frame, which the branch will need before handover.', was: ['The wide-screen versions of each frame.'], feedback: 'Widths are the next lesson. This one is about whether the screens exist and hold the right things.' },
+          { label: 'Little: six frames for a single branch is a reasonable number to have drawn by now.', was: ['Nothing: six frames for one branch is a reasonable number.'], feedback: 'The number is not the test. The test is whether every state in the flow has somewhere to be.' },
         ],
         repair: 'Use screen-list in step 2 as a checklist, draw the missing frames however uninteresting they look, and record it in the last step.',
         recheck: 'Every state named in your flow and your exception table has a frame.',
@@ -1087,6 +1155,15 @@ export const guided07: Record<string, Guided> = {
       external: 'The frames stay on paper or in your own folder. Photograph them if you like and write the file name here; naming a file does not upload it.',
       creator: 'Your creator reads the job sentences, the open decisions and the two content orders. The open decisions are what show the frames were drawn honestly.',
       next: 'Open Your work and choose Ready for review. The next lesson takes two of these screens to three widths, so keep the frames and the content order.',
+    },
+    transfer: {
+      scenario: 'Made-up case: a recipe-box subscription is wireframing its “skip a week” screen. The first frame has grey boxes with ruled lines for text, a large image box and a “Confirm” button. A colleague has already asked what colour the button should be, and nobody has drawn what happens if the week can no longer be skipped.',
+      prompt: 'Decide the two most important changes to this frame before anyone discusses colour, and explain why each comes first.',
+      anchors: {
+        weak: 'Picks a colour or styles the frame to answer the colleague, or keeps the ruled placeholder lines.',
+        adequate: 'Replaces the ruled lines with real words, such as which week, what is charged and the deadline, or marks “unknown — needs a decision”, and writes the screen’s single job, because real content shows what fits and what is missing.',
+        strong: 'As adequate, and draws the exception state for a week that can no longer be skipped, keeps the frame plain on purpose, and notes a second content order worth comparing.',
+      },
     },
   },
   'm07-l09-v1': {
@@ -1153,13 +1230,13 @@ export const guided07: Record<string, Guided> = {
       { expect: 'Both screens drawn narrow first, then medium, then wide, with real text at its longest.',
         fields: ['narrow-order', 'medium-change', 'wide-change'],
         supported: {
-          material: 'A supplied narrow layout of a made-up class detail screen, top to bottom: photograph, class name over three lines, description, date and time, price, book action, related classes.',
+          material: 'A supplied narrow layout of a made-up class detail screen, top to bottom: photograph, class name over three lines, description, date and time, price, book action, related classes. In the same made-up research, people opened this screen to check when a class runs and what it costs.',
           question: 'What is the first thing to change, and why?',
           options: [
-            { label: 'Move date, time and price above the description, so she can decide without scrolling past a block of text.', correct: true, feedback: 'They are the things she came for, and on a narrow screen anything below a long description is effectively out of sight. Nothing else on the list stops her deciding.' },
-            { label: 'Make the photograph smaller so more fits above the fold.', feedback: 'Shrinking it keeps something she did not come for in a position she has to read past. Its position is the problem rather than its size.' },
-            { label: 'Shorten the class name so it fits on one line.', feedback: 'Worth doing, and it wins one line. The decision information is still four items further down.' },
-            { label: 'Hide the related classes list, since it matters least.', feedback: 'That frees space at the bottom, which is not where the space is needed, and it takes something away from the first-time visitor who is most likely to be on a phone.' },
+            { label: 'Move date, time and price above the description, so she can decide without scrolling.', was: ['Move date, time and price above the description, so she can decide without scrolling past a block of text.'], correct: true, feedback: 'They are the things she came for, and on a narrow screen anything below a long description is effectively out of sight. Nothing else on the list stops her deciding.' },
+            { label: 'Make the photograph smaller, so that more of the decision information fits above the fold.', was: ['Make the photograph smaller so more fits above the fold.'], feedback: 'Shrinking it keeps something she did not come for in a position she has to read past. Its position is the problem rather than its size.' },
+            { label: 'Shorten the class name to a single line, which frees two lines at the very top of the screen.', was: ['Shorten the class name so it fits on one line.'], feedback: 'Worth doing, and it wins one line. The decision information is still four items further down.' },
+            { label: 'Hide the related classes list, since it matters least and takes space on a narrow screen.', was: ['Hide the related classes list, since it matters least.'], feedback: 'That frees space at the bottom, which is not where the space is needed, and it takes something away from the first-time visitor who is most likely to be on a phone.' },
           ],
           then: 'Now read your own narrow drawings top to bottom and move anything a person is tracking above the first long block of text.',
         },
@@ -1180,9 +1257,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'You drew the wide layout first because it is easier to see everything, then squeezed it down. What tends to go wrong?',
         options: [
-          { label: 'The wide layout’s priorities survive the squeeze, so the narrow screen keeps a large image and a navigation row and pushes the price down.', correct: true, feedback: 'Deciding the narrow order first forces the priority question while there is no room to dodge it. Widening afterwards is much the easier direction.' },
-          { label: 'Nothing, provided you check the narrow version afterwards.', feedback: 'Checking finds the breakages and leaves the order that caused them, because reordering a finished wide layout feels like starting again.' },
-          { label: 'The wide layout leaves too much empty space at narrow width.', feedback: 'Space is not the failure. The failure is what ends up at the top.' },
+          { label: 'The wide layout’s priorities survive the squeeze, so the price ends up pushed down.', was: ['The wide layout’s priorities survive the squeeze, so the narrow screen keeps a large image and a navigation row and pushes the price down.'], correct: true, feedback: 'Deciding the narrow order first forces the priority question while there is no room to dodge it. Widening afterwards is much the easier direction.' },
+          { label: 'Very little, provided the narrow version is checked carefully once it has been squeezed.', was: ['Nothing, provided you check the narrow version afterwards.'], feedback: 'Checking finds the breakages and leaves the order that caused them, because reordering a finished wide layout feels like starting again.' },
+          { label: 'The wide layout leaves too much empty space behind once it is squeezed to narrow width.', was: ['The wide layout leaves too much empty space at narrow width.'], feedback: 'Space is not the failure. The failure is what ends up at the top.' },
         ],
         repair: 'Redraw narrow-order in step 3 from your never-move list rather than from the wide version, then record the change in the last step.',
         recheck: 'The narrow layout begins with the things on your never-move list.',
@@ -1190,9 +1267,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'To make the narrow layout fit, you hide the what-to-bring section. What is the honest test of that decision?',
         options: [
-          { label: 'Ask whether anyone needs it. If they do, hiding it removes it from the people most likely to be on a phone.', correct: true, feedback: 'The narrow width is where your first-time and one-device visitors are. Move it down the order rather than away.' },
-          { label: 'Whether the section is short enough to be worth keeping.', feedback: 'Length decides where something goes, not whether anyone is allowed to have it.' },
-          { label: 'Whether it comes back at wider widths, since nothing is really lost.', feedback: 'It is lost to whoever is on the narrow screen, and they cannot know it exists in order to go looking for it.' },
+          { label: 'Whether anyone needs it, since hiding it removes it from the people on phones.', was: ['Ask whether anyone needs it. If they do, hiding it removes it from the people most likely to be on a phone.'], correct: true, feedback: 'The narrow width is where your first-time and one-device visitors are. Move it down the order rather than away.' },
+          { label: 'Whether the section is short enough to be worth the space it takes on a narrow screen.', was: ['Whether the section is short enough to be worth keeping.'], feedback: 'Length decides where something goes, not whether anyone is allowed to have it.' },
+          { label: 'Whether it comes back at wider widths, since then nothing is really lost to anybody.', was: ['Whether it comes back at wider widths, since nothing is really lost.'], feedback: 'It is lost to whoever is on the narrow screen, and they cannot know it exists in order to go looking for it.' },
         ],
         repair: 'Add a justification beside every entry in may-hide in step 2, and move anything you cannot justify into the narrow order. Record it in the last step.',
         recheck: 'Every hidden element has a written reason, and nothing needed to finish the task is hidden.',
@@ -1200,9 +1277,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'You skipped the enlarged-text check because your screens are pencil drawings. What is the honest response?',
         options: [
-          { label: 'Letter the same screen a step larger throughout and see what collides; that is the paper version of the check.', correct: true, feedback: 'The check is about text growing inside a fixed width, and a pencil shows that well enough to find the collisions.' },
-          { label: 'Record that it cannot be checked on paper and move on.', feedback: 'It can, roughly, and roughly is enough to find collisions. Skipping it means a layout that fails daily for a great many readers.' },
-          { label: 'Assume it is fine, because the layout has generous spacing.', feedback: 'Generous spacing is the first thing enlarged text consumes. Buttons, containers and fixed rows are where it collides.' },
+          { label: 'Redraw one screen with every letter a step larger, and note what collides.', was: ['Letter the same screen a step larger throughout and see what collides; that is the paper version of the check.'], correct: true, feedback: 'The check is about text growing inside a fixed width, and a pencil shows that well enough to find the collisions.' },
+          { label: 'Record that enlarged text cannot be checked on paper, and move on to the next check.', was: ['Record that it cannot be checked on paper and move on.'], feedback: 'It can, roughly, and roughly is enough to find collisions. Skipping it means a layout that fails daily for a great many readers.' },
+          { label: 'Assume it is fine, because the layout already leaves generous spacing everywhere.', was: ['Assume it is fine, because the layout has generous spacing.'], feedback: 'Generous spacing is the first thing enlarged text consumes. Buttons, containers and fixed rows are where it collides.' },
         ],
         repair: 'Fill enlarged-text-result in step 4 by redrawing one screen a step larger throughout, then record what you changed in the last step.',
         recheck: 'The enlarged-text box names at least one specific collision, or says plainly that nothing broke and how you checked.',
@@ -1213,6 +1290,15 @@ export const guided07: Record<string, Guided> = {
       external: 'The six drawings stay on paper or in your own folder. Photograph them if you like and write the file name here; naming a file does not upload it.',
       creator: 'Your creator reads the rules and the behaviour notes. The rules written before the drawing are what show the priority question was answered honestly.',
       next: 'Open Your work and choose Ready for review. The next lesson specifies one component and one screen in every state they can be in, using these same layouts.',
+    },
+    transfer: {
+      scenario: 'Made-up case: an event-ticket page at phone width shows, top to bottom: a large poster image, the event description, the seating map, then the date, the price and the Buy button. The designer proposes hiding the seating map on phones to save space. Buyers choose seats by section, and the price depends on the section.',
+      prompt: 'Decide which elements must never move off the first screen and whether to hide the seating map on phones, and explain why.',
+      anchors: {
+        weak: 'Shrinks the poster or hides the seating map because it is large, keeping the wide layout’s order.',
+        adequate: 'Puts date, price and Buy in the never-move set at the top and keeps the seating map, moved below the price rather than hidden, because the price depends on the section and phone buyers need it too.',
+        strong: 'As adequate, and writes a behaviour note a developer could build from, checks the longest real event name and enlarged text, and notes that how buyers use the map is an assumption to check.',
+      },
     },
   },
   'm07-l10-v1': {
@@ -1277,7 +1363,7 @@ export const guided07: Record<string, Guided> = {
             { label: 'What I wrote instead', text: 'Disabled: triggered by no date chosen, with “choose a date first” beside it, ended by choosing a date. Unavailable: triggered by the class being full, with “this class is full, see other dates”, ended by choosing another date.' },
             { label: 'What that produced', text: 'Eight rows instead of three. Focus arrived because I had to say how a keyboard user knows where she is, and the timeout arrived because I had to say what ends loading when nothing comes back.' },
           ],
-          wrongTurn: 'The wrong turn is treating disabled as a look rather than a sentence. A grey control with no explanation is read as a broken product, and it is the commonest state failure there is.',
+          wrongTurn: 'The wrong turn is treating disabled as a look rather than a sentence. A grey control with no explanation is read as a broken product, and it is a very common state failure.',
           tradeoff: 'Splitting disabled into two states means two sets of wording and two triggers to agree with whoever builds it. It is more work than one grey rule, and it is the difference between a person waiting and a person leaving.',
           uncertainty: 'Still unknown: whether the reason should sit beside the button or replace its label. That needs somebody reading it, not more thinking.',
         },
@@ -1289,10 +1375,10 @@ export const guided07: Record<string, Guided> = {
           material: 'A supplied empty screen from a made-up class-booking product. The bookings list, for someone who has never booked anything, shows the heading “Your bookings”, a large grey area and a plus icon in the corner.',
           question: 'What is the most useful thing to add first?',
           options: [
-            { label: 'A sentence saying what will appear here and the one action that produces the first item.', correct: true, feedback: 'The empty state is the first teaching this person gets. “Your bookings appear here — find a class to make your first one” gives the model and the next step in one line.' },
-            { label: 'An illustration, so the space does not look broken.', feedback: 'It fills the space and says nothing. She still does not know what this list is for or how to start it.' },
-            { label: 'A message saying the list is empty.', feedback: 'That is the one thing already obvious from looking. It uses the space without adding anything to it.' },
-            { label: 'A larger, clearer plus button.', feedback: 'The action only helps once she knows what it will do. Size does not explain it.' },
+            { label: 'A sentence saying what will appear here, and the one action that adds the first booking.', was: ['A sentence saying what will appear here and the one action that produces the first item.'], correct: true, feedback: 'The empty state is the first teaching this person gets. “Your bookings appear here — find a class to make your first one” gives the model and the next step in one line.' },
+            { label: 'An illustration filling the grey area, so the space no longer looks broken or unfinished.', was: ['An illustration, so the space does not look broken.'], feedback: 'It fills the space and says nothing. She still does not know what this list is for or how to start it.' },
+            { label: 'A short message stating that the list is empty, so nobody thinks the page failed to load.', was: ['A message saying the list is empty.'], feedback: 'That is the one thing already obvious from looking. It uses the space without adding anything to it.' },
+            { label: 'A larger, brighter plus button in the corner, so the way to add a booking is easy to spot.', was: ['A larger, clearer plus button.'], feedback: 'The action only helps once she knows what it will do. Size does not explain it.' },
           ],
           then: 'Now write your own empty state in the box below, in three parts: what appears here, why, and the one action that starts it.',
         },
@@ -1311,9 +1397,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'One control is greyed out because the class is full, and another because no date has been chosen yet. Why should these not look and read the same?',
         options: [
-          { label: 'One means not yet and the other means not for you now, and each needs a different sentence and a different way out.', correct: true, feedback: 'Not yet asks her to complete something. Not for you now should offer the alternative, such as other dates or a way to ask somebody.' },
-          { label: 'They can look the same, as long as both are clearly grey.', feedback: 'Grey tells her she cannot press it. It never tells her which of the two situations she is in, so she cannot act on either.' },
-          { label: 'The full class should simply be removed from the list.', feedback: 'Removing it leaves her wondering whether she misremembered the class. Showing it as full and offering other dates keeps her oriented.' },
+          { label: 'One means not yet, the other not for you now, and each needs its own sentence and route.', was: ['One means not yet and the other means not for you now, and each needs a different sentence and a different way out.'], correct: true, feedback: 'Not yet asks her to complete something. Not for you now should offer the alternative, such as other dates or a way to ask somebody.' },
+          { label: 'They can look and read the same, as long as both are clearly greyed out to show it.', was: ['They can look the same, as long as both are clearly grey.'], feedback: 'Grey tells her she cannot press it. It never tells her which of the two situations she is in, so she cannot act on either.' },
+          { label: 'The full class should simply be removed from the list, which leaves only one grey control.', was: ['The full class should simply be removed from the list.'], feedback: 'Removing it leaves her wondering whether she misremembered the class. Showing it as full and offering other dates keeps her oriented.' },
         ],
         repair: 'Split component-disabled and component-unavailable in step 2 so each has its own trigger and its own sentence, then record the change in the last step.',
         recheck: 'Both rows exist, each with its own trigger, its own wording and its own way out.',
@@ -1321,9 +1407,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'Your error state is signalled by the control turning red. What does the greyscale check show?',
         options: [
-          { label: 'Red and the default state can become the same shade, so anyone who cannot tell them apart gets no signal at all.', correct: true, feedback: 'Add a second signal that survives greyscale: a message beside the field, a small icon, a heavier border.' },
-          { label: 'Nothing much, since almost everybody can see red.', feedback: 'A great many people cannot distinguish it reliably, and neither can anyone in bright sunlight or on a poor screen.' },
-          { label: 'That the red is not strong enough and should be darker.', feedback: 'A darker red is still one signal on one channel. The point is to carry the meaning on a second channel as well.' },
+          { label: 'Red and default can turn the same grey, leaving anyone who cannot tell them apart no signal.', was: ['Red and the default state can become the same shade, so anyone who cannot tell them apart gets no signal at all.'], correct: true, feedback: 'Add a second signal that survives greyscale: a message beside the field, a small icon, a heavier border.' },
+          { label: 'Very little, since almost everybody can tell red apart from the default state anyway.', was: ['Nothing much, since almost everybody can see red.'], feedback: 'A great many people cannot distinguish it reliably, and neither can anyone in bright sunlight or on a poor screen.' },
+          { label: 'That the red is not strong enough, and a darker red would carry the meaning on its own.', was: ['That the red is not strong enough and should be darker.'], feedback: 'A darker red is still one signal on one channel. The point is to carry the meaning on a second channel as well.' },
         ],
         repair: 'Look at greyscale-result in step 5, add a second signal to every state that relied on colour, and record it in the last step.',
         recheck: 'Every state is still distinguishable with the colour removed.',
@@ -1331,9 +1417,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'Your loading state has a trigger and an appearance, and the exit is blank. What is that?',
         options: [
-          { label: 'A state a person can be stuck in, because nothing in your specification says what ends it.', correct: true, feedback: 'Give it two endings: the answer arriving, and a timeout with a message and a route. A loading state with no end is how an interface hangs.' },
-          { label: 'An acceptable gap, since loading ends when the response arrives.', feedback: 'It ends when a response arrives. The specification also has to say what happens when one does not.' },
-          { label: 'A detail for whoever builds it to decide.', feedback: 'Left to be decided later, it is decided by whatever the code does by default, which is usually nothing at all.' },
+          { label: 'A state a person can be stuck in, since nothing in the specification says what ends it.', was: ['A state a person can be stuck in, because nothing in your specification says what ends it.'], correct: true, feedback: 'Give it two endings: the answer arriving, and a timeout with a message and a route. A loading state with no end is how an interface hangs.' },
+          { label: 'An acceptable gap, since loading always ends by itself when the response finally arrives.', was: ['An acceptable gap, since loading ends when the response arrives.'], feedback: 'It ends when a response arrives. The specification also has to say what happens when one does not.' },
+          { label: 'A detail for whoever builds it to decide, since timeouts are an engineering setting.', was: ['A detail for whoever builds it to decide.'], feedback: 'Left to be decided later, it is decided by whatever the code does by default, which is usually nothing at all.' },
         ],
         repair: 'Fill the exit for component-loading in step 2 and for the loading row in screen-states in step 3, list the fix in dead-ends, and record the change in the last step.',
         recheck: 'No row has a blank exit, and every loading state names its timeout.',
@@ -1344,6 +1430,15 @@ export const guided07: Record<string, Guided> = {
       external: 'Nothing here needs a file. Keep your exception table to hand; most of the screen wording comes straight from it.',
       creator: 'Your creator reads the disabled and unavailable rows and the empty state. Those three are where state work is usually thin, so they are the ones worth showing first.',
       next: 'Open Your work and choose Ready for review. Module 8 builds the interface, and these state tables are what it gets built from.',
+    },
+    transfer: {
+      scenario: 'Made-up case: a library app shows a “Renew” button greyed out in two situations. In one, the member has not yet selected which of her books to renew. In the other, the book has been reserved by another member, so it cannot be renewed at all.',
+      prompt: 'Specify the two states so they do not look and read the same: give each its trigger, the sentence beside it and its way out, and explain why the difference matters.',
+      anchors: {
+        weak: 'Uses one grey state for both, or changes only the colour, with no sentence and no route out.',
+        adequate: 'Disabled, not yet: triggered by no book selected, “Choose a book to renew”, ended by selecting one. Unavailable, not for you now: triggered by a reservation, “Someone has reserved this book”, with a route such as its return date.',
+        strong: 'As adequate, and adds a second signal that survives greyscale, keeps focus visible for keyboard users, and gives the loading state after pressing Renew a timeout and a route out.',
+      },
     },
   },
   'm07-l11-v1': {
@@ -1367,8 +1462,8 @@ export const guided07: Record<string, Guided> = {
       ] },
       { id: 'read', title: 'Read by someone who was not involved', fields: [
         { id: 'reader-status', label: 'Who actually read it', kind: 'choice', options: ['Someone not involved read it', 'Someone who already knows the project read it: rehearsal read', 'Nobody available: dated gap recorded'], hint: 'Choose honestly. A rehearsal read is useful work and it is not the same test.' },
-        { id: 'reader-questions', label: 'Every question they had to ask, and what each one will change', kind: 'long', hint: 'Write them all down before you answer any of them.' },
-        { id: 'reader-gap', label: 'If nobody was available: who you could not reach, the date, and where the finished artefact is waiting', kind: 'long', hint: 'Dating the gap is a real result. Leave this empty if someone read it.' },
+        { id: 'reader-questions', label: 'Every question they had to ask, and what each one will change', kind: 'long', sensitive: true, requiredWhen: { field: 'reader-status', values: ['Someone not involved read it', 'Someone who already knows the project read it: rehearsal read'] }, hint: 'Write them all down before you answer any of them. Refer to the reader by role, such as “a friend”, never by name.' },
+        { id: 'reader-gap', label: 'If nobody was available: who you could not reach, the date, and where the finished artefact is waiting', kind: 'long', sensitive: true, requiredWhen: { field: 'reader-status', values: ['Someone who already knows the project read it: rehearsal read', 'Nobody available: dated gap recorded'] }, hint: 'Dating the gap is a real result. Describe who you asked by kind, never by name or number. Leave this empty if someone uninvolved read it.' },
         { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
       ] },
     ],
@@ -1416,10 +1511,10 @@ export const guided07: Record<string, Guided> = {
           material: 'A supplied moment from the same made-up handover. A friend who had never seen the project read the wireflow aloud and stopped at the payment screen to ask what “pending” means. She read everything else without stopping.',
           question: 'What does her question tell you?',
           options: [
-            { label: 'The word is doing work the artefact never explains, so she has found a gap on the page.', correct: true, feedback: 'A reader stops where the page stops carrying her. The repair belongs on the page: a plainer word, or an annotation saying what that state means to a person.' },
-            { label: 'She lacks the background to read a wireflow, so the question does not count.', feedback: 'Someone who read everything else without stopping is reading it perfectly well. Discounting her question throws away the only thing the read produced.' },
-            { label: 'You should explain it to her, then carry on with the read.', feedback: 'Explaining ends the finding. The person building from this in two weeks will meet the same word with nobody sitting beside them.' },
-            { label: 'It is a wording problem for later, not a wireflow problem.', feedback: 'The word appears on the artefact and on the screen, so it is both. Recording it as a question keeps it attached to the place it was found.' },
+            { label: 'The word does work the page never explains, so she has found a gap in the artefact.', was: ['The word is doing work the artefact never explains, so she has found a gap on the page.'], correct: true, feedback: 'A reader stops where the page stops carrying her. The repair belongs on the page: a plainer word, or an annotation saying what that state means to a person.' },
+            { label: 'She lacks the background to read a wireflow, so her question says little about the page.', was: ['She lacks the background to read a wireflow, so the question does not count.'], feedback: 'Someone who read everything else without stopping is reading it perfectly well. Discounting her question throws away the only thing the read produced.' },
+            { label: 'She needs a quick explanation, after which the read can carry on from the payment screen.', was: ['You should explain it to her, then carry on with the read.'], feedback: 'Explaining ends the finding. The person building from this in two weeks will meet the same word with nobody sitting beside them.' },
+            { label: 'It is a wording problem for the visual stage later, rather than a gap in the wireflow.', was: ['It is a wording problem for later, not a wireflow problem.'], feedback: 'The word appears on the artefact and on the screen, so it is both. Recording it as a question keeps it attached to the place it was found.' },
           ],
           then: 'Write out every question your own reader asked, then mark which are changes to the page and which are changes to the design.',
         },
@@ -1433,9 +1528,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'Your reader stops and asks what happens if the provider cancels the class. You tell her, and she carries on. What went wrong?',
         options: [
-          { label: 'You answered a question the artefact could not answer, so the gap is still there and now it is unrecorded.', correct: true, feedback: 'The question was evidence about the page. Once you supply the answer, the page is unchanged and the next reader meets the same silence.' },
-          { label: 'Nothing: answering questions is what a handover conversation is for.', feedback: 'A conversation is fine after the read. During it, every answer you give quietly removes a finding you came for.' },
-          { label: 'She should have been given more context before reading.', feedback: 'Context given in advance is exactly what the person building this in two weeks will not have.' },
+          { label: 'You answered what the page could not, so the gap is still there and now unrecorded.', was: ['You answered a question the artefact could not answer, so the gap is still there and now it is unrecorded.'], correct: true, feedback: 'The question was evidence about the page. Once you supply the answer, the page is unchanged and the next reader meets the same silence.' },
+          { label: 'Little went wrong: answering questions is exactly what a handover conversation is for.', was: ['Nothing: answering questions is what a handover conversation is for.'], feedback: 'A conversation is fine after the read. During it, every answer you give quietly removes a finding you came for.' },
+          { label: 'The setup: she should have been given more context about the project before reading.', was: ['She should have been given more context before reading.'], feedback: 'Context given in advance is exactly what the person building this in two weeks will not have.' },
         ],
         repair: 'In the reader-questions box in step 5, write every question you answered during the read, then add the annotation or open question each one calls for and note the change in the improvement box.',
         recheck: 'Every question the reader asked appears in the list with what it changes.',
@@ -1443,9 +1538,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'Two labels on your wireflow are still guesses. Leaving them off the open-questions list makes the artefact look finished. What does that cost?',
         options: [
-          { label: 'People build on the guesses, because being drawn confidently is what turns a guess into a fact.', correct: true, feedback: 'Nobody queries a label that looks settled. The open-questions list is the only thing keeping a guess arguable once it is on the page.' },
-          { label: 'Very little: they can be corrected later when someone notices.', feedback: 'Noticing is the part that does not happen. A guess drawn in the same hand as everything else reads as a decision.' },
-          { label: 'It is honest enough as long as you remember which ones they were.', feedback: 'Your memory is not on the artefact, and the artefact is the thing that outlives the conversation.' },
+          { label: 'People build on the guesses, since a label drawn confidently reads as a decision.', was: ['People build on the guesses, because being drawn confidently is what turns a guess into a fact.'], correct: true, feedback: 'Nobody queries a label that looks settled. The open-questions list is the only thing keeping a guess arguable once it is on the page.' },
+          { label: 'Very little: the two labels can be corrected later, whenever someone notices them.', was: ['Very little: they can be corrected later when someone notices.'], feedback: 'Noticing is the part that does not happen. A guess drawn in the same hand as everything else reads as a decision.' },
+          { label: 'Nothing that matters, as long as you yourself remember which labels were guesses.', was: ['It is honest enough as long as you remember which ones they were.'], feedback: 'Your memory is not on the artefact, and the artefact is the thing that outlives the conversation.' },
         ],
         repair: 'Add every guessed label and undecided item to the open-questions box in step 4, then record what you added in the improvement box in step 5.',
         recheck: 'The open-questions list names each guess and what would settle it.',
@@ -1453,9 +1548,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'The only person free to read your wireflow is someone who has watched you build it all week. What do you do?',
         options: [
-          { label: 'Ask them anyway, mark it as a rehearsal read, and record that an uninvolved reader could not be found.', correct: true, feedback: 'A rehearsal read still catches missing conditions. What it cannot do is show what someone without your explanations sees, so the record says both.' },
-          { label: 'Report it as the uninvolved read, since they still asked questions.', feedback: 'They read it with your project already in their head. Reporting that as an uninvolved read makes the artefact look tested when it is not.' },
-          { label: 'Skip the step until a stranger is available.', feedback: 'Waiting leaves you with nothing at all. A rehearsal read plus a dated note of who you could not reach is a complete answer for today.' },
+          { label: 'Ask them, mark it a rehearsal read, and record that no uninvolved reader was found.', was: ['Ask them anyway, mark it as a rehearsal read, and record that an uninvolved reader could not be found.'], correct: true, feedback: 'A rehearsal read still catches missing conditions. What it cannot do is show what someone without your explanations sees, so the record says both.' },
+          { label: 'Report it as the uninvolved read, since they still asked real questions about the page.', was: ['Report it as the uninvolved read, since they still asked questions.'], feedback: 'They read it with your project already in their head. Reporting that as an uninvolved read makes the artefact look tested when it is not.' },
+          { label: 'Skip the read for now, and run it properly once a stranger is free to look at it.', was: ['Skip the step until a stranger is available.'], feedback: 'Waiting leaves you with nothing at all. A rehearsal read plus a dated note of who you could not reach is a complete answer for today.' },
         ],
         repair: 'Set the reader-status choice in step 5 honestly. If it was a rehearsal read or nobody was available, fill the reader-gap box with who you could not reach and the date, then note it in the improvement box.',
         recheck: 'The status matches what happened, and any gap carries a date.',
@@ -1466,6 +1561,15 @@ export const guided07: Record<string, Guided> = {
       external: 'The sheet stays on paper or in your own folder. Photograph it in sections and write the file names here; naming a file does not upload it.',
       creator: 'Your creator reads the annotations and the reader questions. The questions someone had to ask are the most useful part, so leave them in full.',
       next: 'Open Your work and choose Ready for review. The next lesson walks two tasks through these same frames with someone else at the table.',
+    },
+    transfer: {
+      scenario: 'Made-up case: you hand a car-wash booking wireflow to a friend who has never seen it. Reading aloud, she stops at the confirmation screen and asks what happens if it rains and the wash is cancelled. Nothing on the sheet says. Two other labels on the sheet are still your guesses.',
+      prompt: 'Decide what you do at the moment she asks and what changes on the artefact afterwards, and explain why.',
+      anchors: {
+        weak: 'Answers her straight away so the read can continue, and leaves the sheet and its open-questions list unchanged.',
+        adequate: 'Writes the question down without answering until she finishes, then adds an annotation or open question about the rain cancellation, because the next reader will meet the same silence without you there.',
+        strong: 'As adequate, and adds the two guessed labels to the open-questions list, dates and versions the sheet, and notes what would settle the rain rule, such as who decides and what is refunded.',
+      },
     },
   },
   'm07-l12-v1': {
@@ -1482,18 +1586,18 @@ export const guided07: Record<string, Guided> = {
       ] },
       { id: 'sessions', title: 'What happened with each person', fields: [
         { id: 'session-status', label: 'What actually happened', kind: 'choice', options: ['Three consenting participants', 'One or two consenting participants', 'Rehearsal only with someone who knows the project', 'Nobody available: dated gap recorded'], hint: 'Choose honestly. A rehearsal tests your kit and your own reflexes; it is not research.' },
-        { id: 'session-1', label: 'Session 1 · what they expected before each change, what they did, what happened, and where they paused', kind: 'long' },
-        { id: 'session-2', label: 'Session 2 · what they expected before each change, what they did, what happened, and where they paused', kind: 'long' },
-        { id: 'session-3', label: 'Session 3 · what they expected before each change, what they did, what happened, and where they paused', kind: 'long' },
+        { id: 'session-1', label: 'Session 1 · a de-identified summary: what they expected before each change, what they did, what happened, and where they paused', kind: 'long', sensitive: true, requiredWhen: { field: 'session-status', values: ['Three consenting participants', 'One or two consenting participants', 'Rehearsal only with someone who knows the project'] }, hint: 'Use a label such as P1, never a name. Keep raw notes in a private file or on paper with a date to delete them; write only this de-identified summary here. Removing a name does not make a note anonymous, so leave out details that point to one person. On the rehearsal route, label the record rehearsal.' },
+        { id: 'session-2', label: 'Session 2 · a de-identified summary: what they expected before each change, what they did, what happened, and where they paused', kind: 'long', sensitive: true, requiredWhen: { field: 'session-status', values: ['Three consenting participants'] } },
+        { id: 'session-3', label: 'Session 3 · a de-identified summary: what they expected before each change, what they did, what happened, and where they paused', kind: 'long', sensitive: true, requiredWhen: { field: 'session-status', values: ['Three consenting participants'] } },
       ] },
       { id: 'undrawn', title: 'The parts that live only in your head', fields: [
-        { id: 'undrawn-list', label: 'Everything a participant reached for that you had not drawn, with what they expected it to do', kind: 'long', hint: 'Every moment you had to say “that does not do anything” is a row here.' },
-        { id: 'mismatches', label: 'Every place what they expected and what happened did not match', kind: 'long', hint: 'A task finished anxiously is a mismatch, not a success.' },
+        { id: 'undrawn-list', label: 'Everything a participant reached for that you had not drawn, with what they expected it to do', kind: 'long', sensitive: true, requiredWhen: { field: 'session-status', values: ['Three consenting participants', 'One or two consenting participants', 'Rehearsal only with someone who knows the project'] }, hint: 'Every moment you had to say “that does not do anything” is a row here. Refer to people by label.' },
+        { id: 'mismatches', label: 'Every place what they expected and what happened did not match', kind: 'long', sensitive: true, requiredWhen: { field: 'session-status', values: ['Three consenting participants', 'One or two consenting participants', 'Rehearsal only with someone who knows the project'] }, hint: 'A task finished anxiously is a mismatch, not a success.' },
       ] },
       { id: 'rank', title: 'Rank by harm, and say what this rests on', fields: [
-        { id: 'harm-ranking', label: 'The problems in order of harm, with what each one costs the person', kind: 'long', hint: 'Harm is what it stops, what it costs in money or time, and what it loses. Not how often you saw it.' },
-        { id: 'sample-line', label: 'How many people, how you found them, and what that limits', kind: 'short', example: 'Example (made up): three people, all neighbours who have taken a class, so nobody here was booking for the first time.' },
-        { id: 'access-gap', label: 'If nobody consented: who you could not reach, the date, and where the prepared kit is', kind: 'long', hint: 'Dating the gap is a real result. Leave this empty if sessions happened.' },
+        { id: 'harm-ranking', label: 'The problems in order of harm, with what each one costs the person', kind: 'long', hint: 'Harm is what it stops, what it costs in money or time, and what it loses. Not how often you saw it. If nobody was available, rank the problems your own rehearsal found and label the list rehearsal.' },
+        { id: 'sample-line', label: 'How many people, how you found them, and what that limits', kind: 'short', sensitive: true, hint: 'Counts and routes only, with no names or contact details.', example: 'Example (made up): three people, all neighbours who have taken a class, so nobody here was booking for the first time.' },
+        { id: 'access-gap', label: 'If nobody consented: who you could not reach, the date, and where the prepared kit is', kind: 'long', sensitive: true, requiredWhen: { field: 'session-status', values: ['One or two consenting participants', 'Rehearsal only with someone who knows the project', 'Nobody available: dated gap recorded'] }, hint: 'Dating the gap is a real result. Describe who you asked by kind, never by name or number. Leave this empty if three sessions happened.' },
         { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
       ] },
     ],
@@ -1592,9 +1696,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'A participant goes quiet over the review sheet. Four seconds in, you point at the total. What did that cost you?',
         options: [
-          { label: 'You ended the pause before it could show whether the total was findable, and the session cannot answer that now.', correct: true, feedback: 'The pause was the measurement. Once you point, all you know is that a person can find something after being shown it.' },
-          { label: 'Nothing much: they would have found it a moment later anyway.', feedback: 'Whether they would have is the thing you were there to find out, and pointing is what made it unknowable.' },
-          { label: 'Some rapport, which matters more in a short session.', feedback: 'Rapport comes from saying at the start that you are testing the paper and not them. It does not require you to answer.' },
+          { label: 'You ended the pause before it could show whether the total was findable at all.', was: ['You ended the pause before it could show whether the total was findable, and the session cannot answer that now.'], correct: true, feedback: 'The pause was the measurement. Once you point, all you know is that a person can find something after being shown it.' },
+          { label: 'Very little, since they would most likely have found the total a moment later anyway.', was: ['Nothing much: they would have found it a moment later anyway.'], feedback: 'Whether they would have is the thing you were there to find out, and pointing is what made it unknowable.' },
+          { label: 'A little rapport, though helping quickly keeps a short session friendly and moving.', was: ['Some rapport, which matters more in a short session.'], feedback: 'Rapport comes from saying at the start that you are testing the paper and not them. Helping did not cost rapport; it cost the answer you came for.' },
         ],
         repair: 'Mark every rescue in your session boxes in step 3, and write beside each what waiting might have shown you. Then note the change in the improvement box in step 5.',
         recheck: 'Each session record separates pauses you waited through from pauses you ended.',
@@ -1602,9 +1706,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'Two people wanted the cancellation deadline in days rather than a date. One person lost her filtered results and booked whatever she could still see. How do you rank them?',
         options: [
-          { label: 'The lost results first, because it changed what she booked; the deadline wording second.', correct: true, feedback: 'Harm is what the problem costs the person. Three sessions cannot tell you how common either one is, so frequency is not a ranking you have earned.' },
-          { label: 'The deadline wording first, because two of the three raised it.', feedback: 'Two out of three is not a rate, it is two people. Counting three sessions turns a formative test into a measurement it cannot carry.' },
-          { label: 'Equally, since both came up in the same test.', feedback: 'Both are real and only one of them changed a booking. The ranking exists so the next lesson repairs whatever costs most.' },
+          { label: 'Lost results first, since it changed what she booked; the deadline wording second.', was: ['The lost results first, because it changed what she booked; the deadline wording second.'], correct: true, feedback: 'Harm is what the problem costs the person. Three sessions cannot tell you how common either one is, so frequency is not a ranking you have earned.' },
+          { label: 'Deadline wording first, since two of the three raised it and only one lost results.', was: ['The deadline wording first, because two of the three raised it.'], feedback: 'Two out of three is not a rate, it is two people. Counting three sessions turns a formative test into a measurement it cannot carry.' },
+          { label: 'Equally, since both came up in the same small test and neither stopped a booking.', was: ['Equally, since both came up in the same test.'], feedback: 'Both are real, and only one of them changed what somebody booked. The ranking exists so the next lesson repairs whatever costs most.' },
         ],
         repair: 'Reorder the harm-ranking box in step 5 by what each problem costs the person, then record what moved in the improvement box.',
         recheck: 'The order is by cost to the person and the sample line says how many people there were.',
@@ -1612,9 +1716,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'Nobody consented, so you walked both tasks with your sister, who has heard about this project all week. How should that appear?',
         options: [
-          { label: 'As a rehearsal, with a dated note of who you could not reach, and the prepared kit kept as the deliverable.', correct: true, feedback: 'A rehearsal checks your frames, your tasks and your own reflexes, which is real work. It cannot tell you what someone without your explanations does.' },
-          { label: 'As a session, since she completed both tasks on the paper.', feedback: 'She arrived knowing what you intended. Recording that as a session makes the ranked list look tested when it rests on someone who already knew the answers.' },
-          { label: 'Leave it out and record that the test did not happen.', feedback: 'Leaving it out throws away work you actually did. A dated gap plus the rehearsal notes is a complete and honest answer.' },
+          { label: 'As a rehearsal, with a dated note of who you could not reach and the kit kept.', was: ['As a rehearsal, with a dated note of who you could not reach, and the prepared kit kept as the deliverable.'], correct: true, feedback: 'A rehearsal checks your frames, your tasks and your own reflexes, which is real work. It cannot tell you what someone without your explanations does.' },
+          { label: 'As one session, since she completed both tasks on paper without any help from you.', was: ['As a session, since she completed both tasks on the paper.'], feedback: 'She arrived knowing what you intended. Recording that as a session makes the ranked list look tested when it rests on someone who already knew the answers.' },
+          { label: 'Left out, with a note recording only that the test itself did not happen at all.', was: ['Leave it out and record that the test did not happen.'], feedback: 'Leaving it out throws away work you actually did. A dated gap plus the rehearsal notes is a complete and honest answer.' },
         ],
         repair: 'Set the session-status choice in step 3 honestly, fill the access-gap box in step 5 with who you could not reach and the date, then note the change in the improvement box.',
         recheck: 'The status matches what happened, and any rehearsal is labelled as one.',
@@ -1625,6 +1729,15 @@ export const guided07: Record<string, Guided> = {
       external: 'The frames stay on paper. Photograph the table between sessions if you like, with no faces in shot, and write the file names here; naming a file does not upload it.',
       creator: 'Your creator reads the undrawn list and the ranking. The things people reached for that you never drew are the part worth talking about.',
       next: 'Open Your work and choose Ready for review. The next lesson repairs the top two problems, re-tests them with someone new, and writes the module record.',
+    },
+    transfer: {
+      scenario: 'Made-up case: you are running a paper test of a grocery delivery app with a participant who agreed to take part. On the slot-picking sheet she pauses, then asks whether the time shown is when the order arrives or when packing starts. Later she taps the basket total, expecting a breakdown that you never drew.',
+      prompt: 'Decide what you say when she asks her question and how you record both moments, and explain why.',
+      anchors: {
+        weak: 'Explains what the slot means or what the total does, and records only whether she completed the task.',
+        adequate: 'Asks what she expects it to mean, writes her answer and the pause down as a mismatch, and records the tap on the total as an undrawn interaction with what she expected, because these show what the design fails to say.',
+        strong: 'As adequate, and ranks the slot confusion by harm, such as a missed delivery, rather than by how many people raised it, keeps the participant de-identified, and states the sample beside the findings.',
+      },
     },
   },
   'm07-l13-v1': {
@@ -1641,8 +1754,8 @@ export const guided07: Record<string, Guided> = {
       ] },
       { id: 'retest', title: 'Re-test with someone new', fields: [
         { id: 'retest-status', label: 'Who re-tested it', kind: 'choice', options: ['Two people who had not seen the design', 'One person who had not seen the design', 'Someone who saw the first test: rehearsal re-test', 'Nobody available: dated gap recorded'], hint: 'Choose honestly. Someone who saw the first version can only tell you what they remember.' },
-        { id: 'retest-record', label: 'What each person expected, did, met and doubted on the repaired tasks', kind: 'long' },
-        { id: 'prediction-outcomes', label: 'Each prediction beside what actually happened, including any that did not hold', kind: 'long', hint: 'A repair that did not work is the most useful entry in the whole record.' },
+        { id: 'retest-record', label: 'What each person expected, did, met and doubted on the repaired tasks', kind: 'long', sensitive: true, requiredWhen: { field: 'retest-status', values: ['Two people who had not seen the design', 'One person who had not seen the design', 'Someone who saw the first test: rehearsal re-test'] }, hint: 'A de-identified summary with labels such as P4; raw notes stay in your private file with a date to delete them.' },
+        { id: 'prediction-outcomes', label: 'Each prediction beside what actually happened, including any that did not hold', kind: 'long', sensitive: true, requiredWhen: { field: 'retest-status', values: ['Two people who had not seen the design', 'One person who had not seen the design', 'Someone who saw the first test: rehearsal re-test'] }, hint: 'A repair that did not work is the most useful entry in the whole record. If nobody was available, the predictions stay untested and the not-established box says so.' },
       ] },
       { id: 'record', title: 'The decision record', intro: 'One entry at a time. The full record lives in your own file; write your most significant decisions here.', fields: [
         ...[1, 2, 3, 4].map((n) => ({ id: `decision-${n}`, label: `Decision ${n} · what was decided, the evidence, the alternative you rejected, and what is untested`, kind: 'long' as const,
@@ -1684,13 +1797,13 @@ export const guided07: Record<string, Guided> = {
       { expect: 'An honest re-test status, the session record, and each prediction beside what actually happened.',
         fields: ['retest-status', 'retest-record', 'prediction-outcomes'],
         supported: {
-          material: 'A supplied re-test result from the same made-up project. The prediction was that nobody would ask how many days the deadline is, once it read “free to cancel until Thursday 10 am — 3 days before the class”. Both new participants asked anyway, and neither could see the class date on that screen.',
+          material: 'A supplied re-test result from the same made-up project. The prediction was that nobody would ask how many days the deadline is, once it read “free to cancel until Thursday 10 am — 3 days before the class”. Both new participants asked anyway; each said they could not tell how far away Thursday was, because the class date was not on that screen.',
           question: 'What goes in the record?',
           options: [
-            { label: 'That the prediction did not hold, and that the question came from the missing class date rather than the deadline wording.', correct: true, feedback: 'The prediction and the outcome sit side by side, and the reason names a different problem. That entry is worth more than a repair that simply worked.' },
-            { label: 'That the deadline wording still needs work, so repair it again now.', feedback: 'Repairing again in the same breath assumes the first diagnosis was right. They asked because the date was missing, so more wording will not answer them.' },
-            { label: 'Nothing, because a repair that changed nothing is not worth an entry.', feedback: 'A repair that failed tells you the diagnosis was wrong, which is the single most useful thing this re-test produced.' },
-            { label: 'That the re-test was inconclusive and needs more people.', feedback: 'The result is clear rather than thin. Both people asked, both for the same visible reason, and more people would tell you the same thing at a cost.' },
+            { label: 'The prediction failed, and the question came from the missing class date, not the wording.', was: ['That the prediction did not hold, and that the question came from the missing class date rather than the deadline wording.'], correct: true, feedback: 'The prediction and the outcome sit side by side, and the reason names a different problem. That entry is worth more than a repair that simply worked.' },
+            { label: 'The deadline wording still needs work, so it should be repaired again straight away.', was: ['That the deadline wording still needs work, so repair it again now.'], feedback: 'Repairing again in the same breath assumes the first diagnosis was right. They asked because the date was missing, so more wording will not answer them.' },
+            { label: 'No entry at all, since a repair that changed nothing is not worth recording anywhere.', was: ['Nothing, because a repair that changed nothing is not worth an entry.'], feedback: 'A repair that failed tells you the diagnosis was wrong, which is the single most useful thing this re-test produced.' },
+            { label: 'The re-test was inconclusive, since two people are too few to judge the new wording.', was: ['That the re-test was inconclusive and needs more people.'], feedback: 'The result is clear rather than thin. Both people asked, both for the same visible reason, and more people would tell you the same thing at a cost.' },
           ],
           then: 'Write your own predictions and outcomes side by side, and name the reason wherever an outcome surprised you.',
         },
@@ -1716,9 +1829,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'You repaired the two quickest problems because they were both done before lunch. What is wrong with that?',
         options: [
-          { label: 'The ranking orders problems by what they cost a person, and repairing by speed leaves the costly ones untouched.', correct: true, feedback: 'Quick fixes are quick because they are small. The problem that changed what somebody booked is still there, and now the list merely looks shorter.' },
-          { label: 'Nothing, as long as you get to the others eventually.', feedback: 'Eventually is where structural problems live. Whatever is not repaired today goes into the record as known and unfixed.' },
-          { label: 'It is fine, since the quick fixes were on the list too.', feedback: 'Being on the list is not the question. The ranking exists to decide the order, and speed is not the order it chose.' },
+          { label: 'The ranking orders problems by cost to a person, and speed leaves the costly ones untouched.', was: ['The ranking orders problems by what they cost a person, and repairing by speed leaves the costly ones untouched.'], correct: true, feedback: 'Quick fixes are quick because they are small. The problem that changed what somebody booked is still there, and now the list merely looks shorter.' },
+          { label: 'Very little, provided the costlier problems are all repaired eventually in a later round.', was: ['Nothing, as long as you get to the others eventually.'], feedback: 'Eventually is where structural problems live. Whatever is not repaired today goes into the record as known and unfixed.' },
+          { label: 'It is a sound choice, since the quick fixes were on the ranked list of problems too.', was: ['It is fine, since the quick fixes were on the list too.'], feedback: 'Being on the list is not the question. The ranking exists to decide the order, and speed is not the order it chose.' },
         ],
         repair: 'Check the harm-order box in step 1 against what you actually changed. If the top two are untouched, repair them and write why you started elsewhere, then note it in the improvement box in step 5.',
         recheck: 'The repairs match the top of the harm ranking, or the record says plainly why they do not.',
@@ -1726,9 +1839,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'You ran the re-test first and wrote the prediction afterwards, because you already knew what should have happened. Does that matter?',
         options: [
-          { label: 'A prediction written after the result cannot be shown wrong, so mark it as retrospective in the record.', correct: true, feedback: 'Writing it first is what turns a re-test into evidence. Written afterwards it is a description of what happened, and the record should say which it is.' },
+          { label: 'A prediction written after the result cannot be shown wrong, so mark it retrospective.', was: ['A prediction written after the result cannot be shown wrong, so mark it as retrospective in the record.'], correct: true, feedback: 'Writing it first is what turns a re-test into evidence. Written afterwards it is a description of what happened, and the record should say which it is.' },
           { label: 'It makes no difference, since the prediction would have been the same either way.', feedback: 'It feels the same and it cannot be checked. Knowing the outcome quietly shapes what you say you expected.' },
-          { label: 'It ruins the re-test, so the sessions have to be run again.', feedback: 'The sessions still happened and the observations stand. What is weakened is the prediction, and labelling it honestly is enough.' },
+          { label: 'It ruins the re-test entirely, so both sessions have to be run again from the start.', was: ['It ruins the re-test, so the sessions have to be run again.'], feedback: 'The sessions still happened and the observations stand. What is weakened is the prediction, and labelling it honestly is enough.' },
         ],
         repair: 'Mark any prediction in step 1 that was written after the sessions as retrospective, then record the change in the improvement box in step 5.',
         recheck: 'Every prediction says whether it was written before or after the sessions.',
@@ -1736,9 +1849,9 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'The only person free for the re-test is the friend who took part in the first one. What do you do?',
         options: [
-          { label: 'Run it, label it a rehearsal re-test, and record that nobody new was available and on what date.', correct: true, feedback: 'She can tell you whether she remembers the change. She cannot tell you whether it is clearer, because she already knows where everything is.' },
-          { label: 'Run it and count it, since she is seeing a version she has not seen before.', feedback: 'She has seen the flow, the screens and the problem. What looks like clarity is recognition of all the parts that did not change.' },
-          { label: 'Skip the re-test and record the repairs as done.', feedback: 'Repairs recorded as done with nothing behind them are exactly the kind of claim the limitations statement exists to prevent.' },
+          { label: 'Run it, label it a rehearsal re-test, and record that nobody new was available, and when.', was: ['Run it, label it a rehearsal re-test, and record that nobody new was available and on what date.'], correct: true, feedback: 'She can tell you whether she remembers the change. She cannot tell you whether it is clearer, because she already knows where everything is.' },
+          { label: 'Run it and count it, since she is seeing a repaired version she has not seen before.', was: ['Run it and count it, since she is seeing a version she has not seen before.'], feedback: 'She has seen the flow, the screens and the problem. What looks like clarity is recognition of all the parts that did not change.' },
+          { label: 'Skip the re-test and record both repairs as done, since the changes are clearly better.', was: ['Skip the re-test and record the repairs as done.'], feedback: 'Repairs recorded as done with nothing behind them are exactly the kind of claim the limitations statement exists to prevent.' },
         ],
         repair: 'Set the retest-status choice in step 3 honestly. If nobody new was available, add the date and who you could not reach to the not-established box in step 5, then note the change in the improvement box.',
         recheck: 'The status matches what happened, and any recruitment gap carries a date.',
@@ -1749,6 +1862,15 @@ export const guided07: Record<string, Guided> = {
       external: 'Keep the full decision record as a plain text or Markdown file in your own folder and write its name here. Text is what you will be able to search and paste into a case study later.',
       creator: 'Your creator reads the predictions beside the outcomes, and the known-unfixed list. A repair that did not work is the entry worth discussing.',
       next: 'Open Your work and choose Ready for review. Module 8 builds the interface from this record and the wireflow, so keep the two together.',
+    },
+    transfer: {
+      scenario: 'Made-up case: a paper test of a pet-sitting booking flow with three people found three problems. Two people read “Sitter” as someone who only walks dogs, which slowed them down. One person added a second pet and saw the total change only after she had paid. All three tripped over a typo in a heading.',
+      prompt: 'Choose the two problems to repair first, say what you predict the re-test will show, and explain why you chose those two.',
+      anchors: {
+        weak: 'Repairs the typo and the wording because they are quick or because more people met them, and writes no prediction.',
+        adequate: 'Repairs the total that changes after payment first, because it costs money, then the “Sitter” wording; writes predictions before re-testing with new people, such as “nobody pays a total that later changes”.',
+        strong: 'As adequate, and records the typo as known and unfixed with the reason, re-tests only the affected tasks with fresh participants, and notes that three people cannot show how common any problem is.',
+      },
     },
   },
 };
