@@ -66,33 +66,35 @@ export const module18: Lesson[] = [
     guided: true,
     title: "Choosing a project you can actually finish",
     objective:
-      "Choose a domain, a problem and a scope for the third project, and prove you have access to at least three people before committing to it.",
-    bringForward: "Your two earlier projects and what they lacked.",
-    prerequisite: "Your earlier project work and its recorded gaps.",
+      "Choose a domain, a problem and a scope for the independent project — continuing your Module 16–17 brief or writing why you are replacing it — and confirm that at least three people have agreed before committing, or choose an honest alternate route.",
+    bringForward: "Your earlier project or projects, what they lacked, and your Module 16–17 project brief if you have one.",
+    prerequisite: "Your earlier project work, its recorded gaps, and any Module 16–17 brief.",
     why: "Most independent projects fail on access, not on ambition. Choosing without checking who will talk to you is choosing to invent findings later.",
     teach: [
-      "Choose a domain you have not used for practice, to widen the portfolio.",
-      "Access first: name three people who will talk to you before you commit.",
-      "Prefer a problem someone already has to one you find interesting.",
-      "Scope to the appetite you actually have, in weeks.",
+      "Start from your Module 16–17 brief: continue it, or write why you are replacing it. Arriving from Project 1 without one, choose a brief now.",
+      "Choose a domain your earlier projects did not use, so the portfolio shows the process transfers.",
+      "Access first: three people who have said yes before you commit — or an honest alternate route, never invented participants.",
+      "Prefer a problem someone already has to one you find interesting, and scope it to the weeks you actually have.",
       "Write what would make you abandon it.",
     ],
     explanation: [
-      "The domain choice matters for the portfolio, which is the next module's subject. Two projects in the same context read as one; a third in a different domain — a small clinic, a tuition service, a repair shop, a community group — shows the process transfers, which is what a reviewer is trying to establish.",
-      "Access is the binding constraint and the one people check last. Before committing, name three specific people who have agreed to speak to you, not three categories of person you might reach. Every recorded failure in the course's own research work has been a recruitment failure, and the same will be true here.",
+      "Start from what you already have. If you chose a Project 3 brief in Modules 16 and 17, its roles, permissions and failure scenarios are already mapped, and continuing it saves weeks. Replacing it is allowed, but the reason goes in writing — access lost, a domain that repeats an earlier project — because a reviewer will ask why the brief changed. If you came here straight from Project 1, choose your brief now.",
+      "The domain choice matters for the portfolio, which is the next module's subject. Two projects in the same context read as one; a project in a different domain — a small clinic, a tuition service, a repair shop, a community group — shows the process transfers, which is what a reviewer is trying to establish.",
+      "Access is the binding constraint and the one people check last. Before committing, make sure three specific people have agreed to speak to you, not three categories of person you might reach. If you cannot, take an alternate route and say so: one participant with a narrower scope, or the supplied practice brief in this lesson's source notes, labelled practice. Inventing the missing people is the one route that is never open.",
       "A problem someone already has beats a problem you find interesting, because it comes with a person who will explain it and care about the answer. The provider who cannot keep track of cancellations, the group whose members miss sessions, the shop whose customers keep ringing about the same thing — each is a real problem with a built-in participant.",
-      "Scope in weeks, using the appetite discipline from m17: this is worth four weeks of evenings, not twelve. A project that overruns is abandoned, and an abandoned project teaches nothing and cannot be shown.",
+      "Scope in weeks, using the appetite discipline from Module 14: this is worth four weeks of evenings, not twelve. A project that overruns is abandoned, and an abandoned project teaches nothing and cannot be shown.",
     ],
     misconception:
       "“I will find participants once I have started.” You will find that you cannot, and then either the project stalls or you write something research-shaped without research. Access is the first decision, not a later step.",
     example:
-      "Three candidate domains were considered: a physiotherapy clinic's appointment reminders, a tuition centre's parent communication, and a repair shop's job tracking. The third was chosen because the owner had already complained about the problem twice and agreed to two conversations, and two customers agreed through him. The problem: nobody can tell a customer when a repair will be ready, so the shop is interrupted by calls all day. Scope: four weeks of evenings. Abandonment condition: if the shop's owner becomes unavailable for two consecutive weeks, stop and record it.",
+      "The Module 16–17 brief — request handling for a volunteer group — was replaced, with the reason written: the coordinator who had agreed to take part stepped down, and nobody else could within the appetite. Its role-and-permission map carried over. Three candidate domains followed: a physiotherapy clinic's appointment reminders, a tuition centre's parent communication, and a repair shop's job tracking. The third was chosen because the owner had already complained about the problem twice and agreed to two conversations, and two customers agreed through him — three people, recorded by role. The problem: nobody can tell a customer when a repair will be ready, so the shop is interrupted by calls all day. Scope: four weeks of evenings. Abandonment condition: if the owner becomes unavailable for two consecutive weeks, stop and record it.",
     freeToolPath:
-      "Conversations and written notes. This module requires no tools beyond the ones used in m05 to m17.",
+      "Conversations and written notes. This module requires no tools beyond the ones you have already used, and coding stays optional.",
     outputs: [
+      "Your Module 16–17 brief continued, or the written reason for replacing it",
       "A chosen domain, different from earlier projects",
       "A problem someone already has, in their words",
-      "Three named people who have agreed to take part",
+      "Agreement from three people, recorded by role — or a stated alternate route",
       "A scope in weeks and a written abandonment condition",
     ],
     steps: [
@@ -100,7 +102,8 @@ export const module18: Lesson[] = [
         minutes: 25,
         title: "List candidate domains",
         instructions: [
-          "List three domains you have not used, where you know someone.",
+          "Start from your Module 16–17 brief: continue it, or write why you are replacing it.",
+          "List up to three domains you have not used, where you know someone.",
           "For each, write the problem you have heard someone complain about.",
         ],
       },
@@ -109,8 +112,8 @@ export const module18: Lesson[] = [
         title: "Test access",
         instructions: [
           "Approach people in the most promising domain.",
-          "Get agreement from at least three before committing.",
-          "Record who declined and why.",
+          "Get agreement from at least three before committing, or choose an alternate route.",
+          "Record, by role, who agreed and who declined and why.",
         ],
       },
       {
@@ -147,7 +150,12 @@ export const module18: Lesson[] = [
       {
         question: "Why a different domain?",
         answer:
-          "Because two projects in one context read as one. A third elsewhere shows the process transfers, which is what a portfolio reviewer is checking.",
+          "Because two projects in one context read as one. A project elsewhere shows the process transfers, which is what a portfolio reviewer is checking.",
+      },
+      {
+        question: "Why write down why you replaced your Module 16–17 brief?",
+        answer:
+          "Because a changed brief looks like drift unless the reason is visible. Lost access is a good reason; a more appealing domain on its own is not.",
       },
       {
         question: "Why write an abandonment condition?",
@@ -156,43 +164,43 @@ export const module18: Lesson[] = [
       },
     ],
     rubric: [
-      "The domain differs from earlier projects",
-      "Three people have agreed before commitment",
+      "The domain is new and the brief decision is written",
+      "Access is confirmed before commitment, or an honest alternate route is chosen",
       "The problem is stated in the person's words",
       "Scope and abandonment condition are written",
     ],
     criteria: [
       {
-        criterion: "The domain differs from earlier projects",
-        evidence: "A domain and context distinct from your previous work.",
+        criterion: "The domain is new and the brief decision is written",
+        evidence: "Your Module 16–17 brief continued, or a written reason for replacing it, in a domain your earlier projects did not use.",
         levels: [
-          "The same domain again.",
+          "The same domain again, or the brief changed without a reason.",
           "A different surface in the same context.",
-          "A genuinely different domain.",
+          "A different domain, with the brief continued or its replacement reasoned.",
           "As adequate, and the choice is justified by what the portfolio lacks.",
         ],
         remediation:
-          "Choose a context whose constraints differ from your earlier projects.",
-        recheck: "The domain choice.",
+          "Write whether you are continuing your brief and why, and choose a context whose constraints differ from your earlier projects.",
+        recheck: "The brief decision and domain choice.",
       },
       {
-        criterion: "Three people have agreed before commitment",
+        criterion: "Access is confirmed before commitment, or an honest alternate route is chosen",
         evidence:
-          "Three named people with recorded agreement, plus who declined.",
+          "Three agreements recorded by role before committing, or the alternate route stated with what it can and cannot establish.",
         levels: [
-          "No confirmed access.",
-          "One or two agreements.",
-          "Three agreements recorded before committing.",
-          "As adequate, and the declines are recorded with reasons.",
+          "No confirmed access and no route stated.",
+          "Access assumed, or one or two agreements counted as enough for the full route.",
+          "Three agreements recorded before committing, or an alternate route stated honestly.",
+          "As adequate, and declines or unreachable people are recorded with reasons.",
         ],
         remediation:
-          "Ask three people directly and record their answers before starting the work.",
+          "Ask three people directly and record their answers by role, or write which alternate route you are taking and what it cannot establish.",
         recheck: "The access record.",
       },
       {
         criterion: "The problem is stated in the person's words",
         evidence:
-          "A quotation or close paraphrase of how the person described it.",
+          "A close paraphrase of how the person described it, without their name — or the supplied brief's quoted complaint on the practice route.",
         levels: [
           "Stated as a solution.",
           "Restated in your own analytical vocabulary.",
@@ -200,7 +208,7 @@ export const module18: Lesson[] = [
           "As adequate, and the statement names who is affected and how often.",
         ],
         remediation:
-          "Ask the person to describe the problem again and write it down verbatim.",
+          "Ask the person to describe the problem again and note it close to their wording, keeping any verbatim note in your private notes.",
         recheck: "The problem statement.",
       },
       {
@@ -219,8 +227,8 @@ export const module18: Lesson[] = [
       },
     ],
     repairs: [
-      "If the domain repeats, choose one with different constraints.",
-      "If access is unconfirmed, get three agreements before continuing.",
+      "If the brief changed without a reason, write it; if the domain repeats, choose one with different constraints.",
+      "If access is unconfirmed, get three agreements or state your alternate route.",
       "If the problem is a solution, ask again and record their words.",
       "If there is no abandonment condition, write one now.",
     ],
@@ -274,13 +282,13 @@ export const module18: Lesson[] = [
     explanation: [
       "Reuse is the point. Your screener, consent introduction and data plan were built to be adapted, and adapting them takes an hour where writing from scratch takes a day. The parts that need real work are the questions and the method choice, because those belong to this problem.",
       "The questions must come from the domain. A repair shop's problem is not a booking problem with different words, and importing the earlier project's questions would produce an investigation of the last project conducted in a new place. Start from what the owner said and what you do not know.",
-      "Consent and data handling are the parts that transfer most directly and are still specific: whose data, in whose premises, with what recording, and what you will do with photographs of a workshop that contains other people's property. The m05 rules apply and the details differ.",
-      "Plan for the three people you have. If your access is the owner and two customers, then your method plan is built from that, and its exclusions — no evidence from customers who never return, none from staff — are written now rather than discovered at reporting time.",
+      "Consent and data handling are the parts that transfer most directly and are still specific: whose data, in whose premises, with what recording, and what you will do with photographs of a workshop that contains other people's property. The m05 rules apply and the details differ. Raw notes stay in a private file or on paper with a date to delete them; what goes into a synced worksheet is a summary without names.",
+      "Plan for the access you have. If your access is the owner and two customers, your method plan is built from that, and its exclusions — no evidence from customers who never return, none from staff — are written now rather than discovered at reporting time. On the single-participant route the plan is built around one person; on the practice route it is built around the supplied notes, and every method is labelled practice.",
     ],
     misconception:
       "“I know how to do this now, so I can be less formal.” The formality is what protects the work when it is inconvenient. A plan written properly the second time is faster and no less necessary.",
     example:
-      "The plan: three questions from the shop's problem, including what a customer does while waiting for news about a repair. Methods: two interviews with the owner, an observation of an afternoon in the shop, and two short conversations with customers collecting items. Recruitment: through the owner, with the bias recorded. Consent: the m05 script adapted for a workshop, including that no photographs would include other customers' items. Data: notes on paper, digitised the same evening, no recordings in the shop. Exclusions written: nothing about customers who never come back, and nothing about how common the problem is across shops.",
+      "The plan: three questions from the shop's problem, including what a customer does while waiting for news about a repair. Methods: two interviews with the owner, an observation of an afternoon in the shop, and two short conversations with customers collecting items. Recruitment: through the owner, with the bias recorded. Consent: the m05 script adapted for a workshop, including that no photographs would include other customers' items. Data: notes on paper, a summary without names typed the same evening, raw notes kept privately and deleted at the end of the project, no recordings in the shop. Exclusions written: nothing about customers who never come back, and nothing about how common the problem is across shops.",
     freeToolPath:
       "Your existing documents and a notebook. Nothing new is needed.",
     outputs: [
@@ -302,7 +310,7 @@ export const module18: Lesson[] = [
         minutes: 25,
         title: "Choose methods for real access",
         instructions: [
-          "Match each question to a method you can actually run with three people.",
+          "Match each question to a method you can actually run with the people who agreed, or with the supplied notes on the practice route.",
           "Record any question you cannot answer.",
         ],
       },
@@ -326,7 +334,8 @@ export const module18: Lesson[] = [
         minutes: 15,
         title: "Check the plan is runnable",
         instructions: [
-          "Put the sessions on a calendar with real dates.",
+          "Put the sessions on a calendar with real dates agreed with the people involved.",
+          "On the practice route, date the evenings you will work through the supplied notes.",
           "Save the plan with the adapted artefacts.",
         ],
       },
@@ -372,11 +381,11 @@ export const module18: Lesson[] = [
       {
         criterion: "Methods match the access actually secured",
         evidence:
-          "A method per question runnable with the three participants you have.",
+          "A method per question runnable with the access you have: the people who agreed, or the supplied notes on the practice route.",
         levels: [
           "Methods requiring participants you do not have.",
           "Mostly runnable with one aspirational method.",
-          "All runnable with your actual access.",
+          "All runnable with your actual access, with practice methods labelled practice.",
           "As adequate, and unanswerable questions are recorded as gaps.",
         ],
         remediation:
@@ -455,9 +464,9 @@ export const module18: Lesson[] = [
     guided: true,
     title: "Fieldwork and synthesis, unsupervised",
     objective:
-      "Run the planned research, synthesise it into findings with counts and contradictions, and record what you would do differently.",
+      "Run the planned research — or, on the practice route, work through the supplied notes — synthesise it into findings with counts and contradictions, and record what you would do differently.",
     bringForward: "Your research plan and adapted artefacts.",
-    prerequisite: "Your plan and confirmed sessions.",
+    prerequisite: "Your plan and confirmed sessions, or the supplied practice notes.",
     why: "This is the same work as m05 and m06 with nobody structuring it for you, which is the condition it will always be done in from now on.",
     teach: [
       "Run what you planned; record deviations rather than hiding them.",
@@ -475,7 +484,7 @@ export const module18: Lesson[] = [
     misconception:
       "“The findings will be thin because the sample is small.” The findings will be bounded, which is different. Three people in a real setting, honestly reported, is a real study; the failure mode is claiming more from it than it holds.",
     example:
-      "Two interviews, one observation and two short conversations were run over eleven days. Three deviations were recorded: one interview happened with the owner's son present, which changed what was said about money; the observation was cut short by a delivery; and one customer conversation happened by phone rather than in person. Six findings emerged, four evidenced and two assumed. The strongest: three of three customers had rung the shop to ask about progress, and the owner estimated he answered such calls between six and ten times a day, which he had never counted. The contradiction kept: the owner believed customers wanted speed; the customers described wanting certainty.",
+      "Five sessions — two interviews with the owner, one observation and two short conversations with customers — were run over eleven days. Three deviations were recorded: one interview happened with the owner's son present, which changed what was said about money; the observation was cut short by a delivery; and one customer conversation happened by phone rather than in person. Six findings emerged, four evidenced and two assumed. The strongest: both customers — two of two — had rung the shop to ask about progress, and the owner estimated he answered such calls between six and ten times a day, which he had never counted. The contradiction kept: the owner believed customers wanted speed; both customers described wanting certainty.",
     freeToolPath:
       "Notebook, phone recorder with consent, and cards or a text file for synthesis.",
     outputs: [
@@ -491,14 +500,15 @@ export const module18: Lesson[] = [
         instructions: [
           "Run the planned sessions with consent.",
           "Record deviations from the plan as they happen.",
+          "On the practice route, treat the supplied notes as your sessions and find the deviations in them.",
         ],
       },
       {
         minutes: 25,
         title: "Write up promptly",
         instructions: [
-          "Complete each record within the hour, in three columns.",
-          "Mark anything reconstructed from memory.",
+          "Complete each record within the hour, in three columns, in your private notes.",
+          "Mark anything reconstructed from memory, and summarise without names for the worksheet.",
         ],
       },
       {
@@ -553,7 +563,7 @@ export const module18: Lesson[] = [
       {
         criterion: "Sessions were run with deviations recorded",
         evidence:
-          "Session records including departures from the plan.",
+          "Session records including departures from the plan — or, on the practice route, the supplied notes worked through with their deviations named.",
         levels: [
           "Sessions run without recording deviations.",
           "Some deviations noted informally.",
@@ -567,7 +577,7 @@ export const module18: Lesson[] = [
       {
         criterion: "Write-ups were prompt and layered",
         evidence:
-          "Records in the said, observed and inferred structure, completed promptly.",
+          "Records in the said, observed and inferred structure, completed promptly and kept private — on the practice route, the supplied notes sorted into the same three layers.",
         levels: [
           "Written days later.",
           "Prompt but merged layers.",
@@ -656,25 +666,26 @@ export const module18: Lesson[] = [
       "Frame one problem, not three; a project this size supports one.",
       "Set the appetite before scoping, as in m17.",
       "Cut by feature, never by quality.",
-      "List what you are not building and why.",
-      "Check the frame against the person who described the problem.",
+      "List what you are not building and why, including what a refusal depends on.",
+      "Check the frame with the person who described the problem, or against their own words if nobody can be asked.",
     ],
     explanation: [
       "One problem is enough. A four-week project that addresses three problems addresses none of them well, and the portfolio value comes from depth rather than coverage. Choosing which problem is a decision to record, with the reason, because a reviewer will ask.",
       "The appetite discipline is the same as m17: decide what this is worth before deciding what it contains. Without that, the design expands to whatever seems complete and then gets cut under time pressure in the way that removes error states and accessibility work.",
       "Cutting by feature preserves quality. If you cannot build both the status page and the notification, build one properly with its states, its accessibility and its failure paths, and record the other as deferred. A half-built pair with no error handling is worse than one complete thing.",
-      "Checking the frame with the person who described the problem is a five-minute conversation that prevents four weeks of work on the wrong thing. They will either recognise it or correct it, and both outcomes are worth having before you start.",
+      "Checking the frame with the person who described the problem is a five-minute conversation that prevents four weeks of work on the wrong thing. They will either recognise it or correct it, and both outcomes are worth having before you start. On the practice route, or if nobody can be asked, compare the frame with their own words in your notes and label it a self-check: it catches drift, and it cannot catch what only they would notice.",
+      "Some refusals depend on a condition, and the not-building list says which. Refusing customer accounts keeps the page easy for somebody checking once — but it only stands if a real version still guarantees that one customer can never see another customer's record. Write that condition next to the refusal, because lesson 6 tests it.",
     ],
     misconception:
       "“More features make a better portfolio project.” Depth reads better than breadth to anyone who has built anything. One complete flow with its states, tests and limits is worth more than four sketched features.",
     example:
-      "Findings pointed at three candidate problems: customers cannot tell when a repair will be ready; the owner cannot see which jobs are waiting on parts; and quotes are given verbally and disputed. The first was chosen because it was the one all five participants raised and the one generating the daily interruptions. The appetite: three weeks of evenings. The scope: a status page a customer can reach without an account, with its states, and a way for the owner to update it in under thirty seconds. Not building: notifications, quote records, and any account system — each with the reason recorded. The frame was read back to the owner, who corrected one detail: it is not the waiting that annoys people, it is being told twice that it will be ready tomorrow.",
-    freeToolPath: "Written work and one conversation.",
+      "Findings pointed at three candidate problems: customers cannot tell when a repair will be ready; the owner cannot see which jobs are waiting on parts; and quotes are given verbally and disputed. The first was chosen because all three participants — the owner and both customers — raised it, and it is what generates the daily interruptions. The appetite: three weeks of evenings. The scope: a status page showing a customer only their own job, reached from the reference on their ticket, with its states, and a way for the owner to update it in under thirty seconds. Not building: notifications, quote records, and any account system — each with the reason recorded, and the account refusal standing only if a real version keeps every job private another way. The frame was read back to the owner, who corrected one detail: it is not the waiting that annoys people, it is being told twice that it will be ready tomorrow.",
+    freeToolPath: "Written work and one conversation, or a self-check against the source notes.",
     outputs: [
       "One framed problem with the reason it was chosen",
       "An appetite in weeks, set before scoping",
       "A scope that preserves quality and cuts features",
-      "A not-building list with reasons, and the frame checked with a participant",
+      "A not-building list with reasons, and the frame checked with the person who described it or against their words",
     ],
     steps: [
       {
@@ -706,7 +717,7 @@ export const module18: Lesson[] = [
         title: "Write the not-building list",
         instructions: [
           "Record each cut with the reason and what would bring it back.",
-          "Include anything you are refusing outright.",
+          "Include anything you are refusing outright, and any condition a refusal depends on.",
         ],
       },
       {
@@ -715,6 +726,7 @@ export const module18: Lesson[] = [
         instructions: [
           "Read the frame back to the person who described the problem.",
           "Record their correction, if any, and adjust.",
+          "With nobody to ask, compare it with their words in your notes or the supplied pack, labelled a self-check.",
         ],
       },
     ],
@@ -739,7 +751,7 @@ export const module18: Lesson[] = [
       "One problem is chosen with reasoning from the counts",
       "The appetite precedes the scope",
       "Cuts remove features rather than quality",
-      "The frame was checked with a participant",
+      "The frame was checked with the person who described it, or against their words",
     ],
     criteria: [
       {
@@ -785,17 +797,17 @@ export const module18: Lesson[] = [
         recheck: "The scope.",
       },
       {
-        criterion: "The frame was checked with a participant",
+        criterion: "The frame was checked with the person who described it, or against their words",
         evidence:
-          "A recorded conversation with the person who described the problem.",
+          "A recorded read-back with the person who described the problem — or, where nobody can be asked, a labelled self-check against their words in the notes.",
         levels: [
           "Not checked.",
-          "Checked with someone uninvolved.",
-          "Checked with the person and their response recorded.",
-          "As adequate, and their correction changed the frame.",
+          "Checked with someone uninvolved, or a self-check presented as their agreement.",
+          "Checked with the person and their response recorded, or an honestly labelled self-check.",
+          "As adequate, and a correction or a mismatch changed the frame.",
         ],
         remediation:
-          "Read the frame back to them and write down what they say.",
+          "Read the frame back to them and write down what they say, or compare it with their own words and label it a self-check.",
         recheck: "The check record.",
       },
     ],
@@ -803,7 +815,7 @@ export const module18: Lesson[] = [
       "If several problems are in scope, choose one and record the rest.",
       "If scope came first, set the appetite and re-cut.",
       "If quality was cut, restore it and cut a feature.",
-      "If the frame was unchecked, read it back to the participant.",
+      "If the frame was unchecked, read it back to the person or self-check it against their words.",
     ],
     portfolio:
       "The not-building list with reasons is one of the most persuasive pages in a case study, because it shows the discipline reviewers are looking for.",
@@ -850,25 +862,27 @@ export const module18: Lesson[] = [
       "Reuse your system; record where it does not fit this domain.",
       "Structure, flow and states before interface, as before.",
       "The exception table is not optional because the project is small.",
-      "Keep the accessibility work; it is the first thing dropped under time pressure.",
-      "Record which methods you skipped and what that cost.",
+      "Write who may see what into the design: one customer can never see another customer's record.",
+      "Keep the accessibility work, and record which methods you skipped and what that cost.",
     ],
     explanation: [
       "Your design system was built from a booking product, and a repair shop is not a booking product. Where it fits, reuse saves days; where it does not, the mismatch is information about how general your system actually is — which is exactly what m13's review lesson was preparing you to notice.",
       "The order still holds: what the person needs to find, how they move through it, what states exist, and only then what it looks like. Compressing that order under time pressure is what produces screens with no error handling, and this project is small enough to do it properly.",
       "The exception table is where small projects cut first and should not. A status page has failure states — no information yet, information that is stale, a job that does not exist — and those are most of its design. Skipping them produces a demonstration rather than a design.",
+      "Who may see what is part of the design, not a technical afterthought. A status page reached by a job number is one mistyped digit away from somebody else's repair. Write the requirement now — one customer can never see another customer's record; no names, phone numbers or item details on the page; a mistyped or neighbouring number shows not found, never a job — and give it rows in the exception table. Lesson 6 tests it, with made-up records, before anybody relies on the page.",
       "Recording what you skipped is part of the deliverable. If you did not do a card sort because the structure was three items deep, say so and say why that was reasonable; if you skipped the keyboard pass because of time, say that too. Both are honest and only one is defensible, and a reviewer can tell the difference.",
     ],
     misconception:
       "“It is a small project, so the process can be lighter.” The process can be shorter. Skipping states, accessibility and failure paths is not lightness; it is producing something that would not survive contact with a real person.",
     example:
-      "The status page reused the system's type, spacing and card component, and did not fit in two places: there was no component for a state that changes over time, and the status colours needed a fifth semantic value the token sheet lacked. Both were recorded, and one was added to the system with a version bump. Structure was three items deep and no card sort was run, with the reason recorded. The exception table had eleven rows including a job number that does not exist, information more than a day old, and a customer arriving before the update. The keyboard pass was run; the screen-reader pass was not, and that was recorded rather than implied.",
+      "The status page reused the system's type, spacing and card component, and did not fit in two places: there was no component for a state that changes over time, and the status colours needed a fifth semantic value the token sheet lacked. Both were recorded, and one was added to the system with a version bump. Structure was three items deep and no card sort was run, with the reason recorded. The exception table had eleven rows including a job number that does not exist, a neighbouring job number typed by mistake — which must show not found, never another customer's job — information more than a day old, and a customer arriving before the update. The privacy requirement sat beside it: one customer never sees another's record, and the page shows no names or phone numbers. The keyboard pass was run; the screen-reader pass was not, and that was recorded rather than implied.",
     freeToolPath:
-      "Paper and a local HTML file, as in m12. The system you built is a stylesheet and a Markdown file, both of which travel.",
+      "Paper or a clickable mock-up; a local HTML file only if you took the technical track. Your design system travels as a specification, a stylesheet, or both.",
     outputs: [
       "Structure, flow, states and interface for the chosen problem",
       "A record of where your system did not fit",
       "An exception table appropriate to the domain",
+      "A written privacy and access-control requirement, with its exception rows",
       "A list of methods skipped, with reasons",
     ],
     steps: [
@@ -885,6 +899,7 @@ export const module18: Lesson[] = [
         title: "States and exceptions",
         instructions: [
           "Write the exception table for this domain.",
+          "Write who may see what: a mistyped or neighbouring reference must never show another person's record.",
           "Specify each state's wording and route out.",
         ],
       },
@@ -892,7 +907,7 @@ export const module18: Lesson[] = [
         minutes: 30,
         title: "Interface from the system",
         instructions: [
-          "Build the screens from your existing components and tokens.",
+          "Make the screens from your existing components and tokens, on paper, in a mock-up or in code.",
           "Record every place the system did not fit.",
         ],
       },
