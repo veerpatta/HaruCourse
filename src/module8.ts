@@ -1312,7 +1312,7 @@ export const module8: Lesson[] = [
     misconception:
       "“A confirmation dialogue makes destructive actions safe.” It makes them slower. Repeated confirmations are dismissed automatically, so the protection erodes while the cost remains. Undo protects the person who has already made the mistake, which is the person who needs protecting.",
     example:
-      "Three interruptions were reviewed. Cancelling a booking: kept as a confirmation, because the place is released immediately and cannot be recovered — the dialogue now states exactly what will be lost and offers “Keep booking” as the safe default. Removing a shortlist item: replaced with an undo message, since nothing is lost permanently. A newsletter prompt appearing over the payment step: removed entirely and moved to the confirmation screen, where the person has finished and can consider it — with the reason recorded, since someone will propose it again.",
+      "Made-up example: three interruptions were reviewed. Cancelling a booking: kept as a confirmation, because the place is released immediately and cannot be recovered — the dialogue now states exactly what will be lost and offers “Keep booking” as the safe default. Removing a shortlist item: replaced with an undo message, since nothing is lost permanently. A newsletter prompt appearing over the payment step: removed entirely and moved to the confirmation screen, where the person has finished and can consider it — with the reason recorded, since someone will propose it again.",
     freeToolPath:
       "Paper screens plus a written decision table. If you want to feel the focus trap, a local HTML file with a dialog element shows how dismissal and the escape key behave with no framework.",
     outputs: [
@@ -1513,7 +1513,7 @@ export const module8: Lesson[] = [
     misconception:
       "“Toasts are a clean way to show status.” They are a clean way to show status to someone watching that corner at that moment. For anything a person must act on or will need later, a toast is a way of appearing to communicate without communicating.",
     example:
-      "The product had one toast style for everything. Rebuilt into four: a quiet inline confirmation for a saved draft that fades; a persistent banner at the top of the task for “Your place is held for 10 minutes”, with the time remaining; a warning beside the affected field when a chosen date had just filled; and a persistent failure message at the payment step saying what happened, that nothing had been taken, and what to do next. Each pairs colour with an icon shape and words, and each was checked in greyscale.",
+      "Made-up example: the product had one toast style for everything. Rebuilt into four: a quiet inline confirmation for a saved draft that fades; a persistent banner at the top of the task for “Your place is held for 10 minutes”, with the time remaining; a warning beside the affected field when a chosen date had just filled; and a persistent failure message at the payment step saying what happened, that nothing had been taken, and what to do next. Each pairs colour with an icon shape and words, and each was checked in greyscale.",
     freeToolPath:
       "Write all four messages out on paper at the position they will appear on the screen sketch. Read each aloud to someone and ask what they would do next; that is the whole test.",
     outputs: [
@@ -1563,7 +1563,7 @@ export const module8: Lesson[] = [
         minutes: 15,
         title: "Test aloud and record",
         instructions: [
-          "Read each message to someone and ask what they would do next.",
+          "Read each message to someone and ask what they would do next; if nobody is free, read them aloud yourself after a break and say so.",
           "Rewrite any message that produces a shrug or a wrong answer.",
           "Save the four specifications with placement and duration rules.",
         ],
@@ -1715,7 +1715,7 @@ export const module8: Lesson[] = [
     misconception:
       "“Empty and loading states are polish for later.” They are the first thing a new person sees and the thing everyone sees on a poor connection. Designed last, they get whatever the framework provides, which is usually a blank area and a spinner.",
     example:
-      "The bookings screen showed a blank panel to new people and the same panel when a filter matched nothing. Rebuilt into three: for a new person, “Your bookings appear here once you book a class. Find a class on Saturday” with the action beside it; for a filter with no matches, “No classes match Saturday morning under 500. Remove the price filter to see three more”; and for a full class, the alternative dates. Loading reserved the row heights so nothing jumped, and after three seconds the message changed to name what was being waited for.",
+      "Made-up example: the bookings screen showed a blank panel to new people and the same panel when a filter matched nothing. Rebuilt into three: for a new person, “Your bookings appear here once you book a class. Find a class on Saturday” with the action beside it; for a filter with no matches, “No classes match Saturday morning under 500. Remove the price filter to see three more”; and for a full class, the alternative dates. Loading reserved the row heights so nothing jumped, and after three seconds the message changed to name what was being waited for.",
     freeToolPath:
       "Sketch the three empty causes side by side and write the full wording. Use your browser's throttling to watch a comparable real page load slowly and time how long the gap feels.",
     outputs: [
@@ -1894,32 +1894,32 @@ export const module8: Lesson[] = [
     guided: true,
     title: "Charts that do not mislead",
     objective:
-      "Draw one chart from data you actually hold, following the assigned conventions, and write the alternative text that carries the same information to someone who cannot see it.",
+      "Draw one chart from data you actually hold, or from the supplied practice counts labelled as made up, following the assigned conventions, and write the alternative text that carries the same information to someone who cannot see it.",
     bringForward:
-      "Any real counts you hold: your m05 survey responses, your m06 tree-test results or your own practice log.",
-    prerequisite: "A small set of real counts you can honestly attribute.",
+      "Any real counts you hold: your m05 survey responses, your m06 tree-test results or your own practice log. If you hold none, the lesson supplies practice counts to label as made up.",
+    prerequisite: "A small set of real counts you can honestly attribute, or the supplied practice counts labelled as made up.",
     why: "A chart makes a claim look measured. Drawing one from four participants and reading it as a trend is the fastest way to mislead yourself and everyone downstream.",
     teach: [
       "Choose the chart from the comparison: bars compare amounts, lines show change over time.",
-      "Never break the numerical axis on a bar chart; the bar length is the comparison.",
+      "Do not break a bar chart’s numerical axis, as the assigned guidance says: bar length is the comparison, so a cut axis changes the apparent ratio.",
       "Label directly on the chart where you can, instead of making people decode a legend.",
       "Alternative text must carry the same information, not describe the picture.",
       "State n on the chart. A chart of eight responses is a picture of eight responses.",
     ],
     explanation: [
-      "The chart type follows from the comparison you want a reader to make. Bars compare amounts across categories and rely on length, which is why truncating their axis is a distortion rather than a style choice: half the bar is missing but the reader still compares lengths. Lines show change across a continuous scale, usually time, and their axis may be broken when the change is small relative to the values, provided the break is visible and labelled.",
-      "The assigned guidance is precise about the mechanics: horizontal axis text, thousands separated, light gridlines and few of them, legends ordered to match the data, direct labelling preferred, and colour contrast meeting the accessibility threshold. Following it costs nothing and removes the most common ways a chart becomes harder to read than the table it came from.",
+      "The chart type follows from the comparison you want a reader to make. Bars compare amounts across categories and rely on length, which is why truncating their axis is a distortion rather than a style choice: part of every bar is missing but the reader still compares lengths. Two bars of 9 and 13 drawn from zero have lengths in the ratio 13 ÷ 9, about 1.4; start the axis at 8 and the visible lengths are 1 and 5, so the larger looks five times the smaller. Lines show change across a continuous scale, usually time, and the assigned guidance accepts a broken axis on a line chart when necessary, provided the break is clear and obvious.",
+      "The assigned guidance is precise about the mechanics: horizontal axis text, thousands separated, light grey gridlines and generally no more than ten, legends ordered to match the data, direct labelling preferred, and colour contrast meeting the accessibility threshold. Following it costs nothing and removes the most common ways a chart becomes harder to read than the table it came from.",
       "Alternative text is not a caption. Someone who cannot see the chart needs the information it carries — the comparison and the values that matter — not a description of its appearance. “Bar chart of bookings by day” carries nothing; “Bookings by day: Saturday 34, Sunday 21, weekdays fewer than 10 each; n = 96 over four weeks” carries the finding. Publishing the underlying numbers alongside is better still.",
       "The sample belongs on the chart itself, not in a footnote elsewhere, because a chart is the part that gets screenshotted and forwarded. A chart of eight survey responses drawn without n reads as a measurement of a population, and the person who reposts it will not know it was not.",
     ],
     misconception:
       "“Charts make findings clearer.” They make comparisons visible, which is not the same thing. A chart drawn from a small sample makes an uncertain finding look precise, and precision is exactly what a reader takes from a picture with an axis.",
     example:
-      "Twenty-two survey responses became a bar chart of “was it clear your payment had gone through?”. The first draft had a truncated axis that made nine look nearly twice fifteen, a legend requiring decoding, and no n. Redrawn: full axis from zero, direct labels on each bar, light gridlines, n = 22 stated in the subtitle with the recruitment route named, and alternative text reading “Of 22 people recruited through two WhatsApp groups, 9 were unsure their payment had gone through, 13 were sure.” The underlying counts were published beneath it.",
+      "Made-up example: twenty-two survey responses became a bar chart of “was it clear your payment had gone through?”: 9 unsure, 13 sure. The first draft started the axis at 8, so the bars stood 1 and 5 units tall and nine looked like a fifth of thirteen, when it is about seven-tenths of it (9 ÷ 13 ≈ 0.69). It also had a legend requiring decoding, and no n. Redrawn: full axis from zero, the counts written on each bar, light gridlines, n = 22 stated in the subtitle with the recruitment route named, and alternative text reading “Of 22 people recruited through two WhatsApp groups, 9 were unsure their payment had gone through, 13 were sure.” The underlying counts were published beneath it.",
     freeToolPath:
       "Graph paper and a ruler, photographed, is a legitimate chart and forces you to plot the real values. A spreadsheet works if you have one; no paid tool or plotting library is required.",
     outputs: [
-      "One chart drawn from data you actually hold, following the conventions",
+      "One chart drawn from data you hold, or from the labelled practice counts, following the conventions",
       "n and the recruitment route stated on the chart",
       "Alternative text carrying the same information as the chart",
       "The underlying numbers published beside it",
@@ -1947,6 +1947,7 @@ export const module8: Lesson[] = [
         title: "Draw it honestly",
         instructions: [
           "Start the numerical axis at zero for bars.",
+          "Work out the ratio your bars show from zero, and the ratio a cut axis would have shown, so the size of the distortion is a number.",
           "Label directly rather than using a legend where you can.",
           "Check the colours against the contrast threshold.",
         ],
@@ -1964,7 +1965,7 @@ export const module8: Lesson[] = [
         minutes: 15,
         title: "Test the claim",
         instructions: [
-          "Show the chart to someone and ask what it tells them.",
+          "Show the chart to someone and ask what it tells them; if nobody is free, read it cold yourself after a break and say so.",
           "If they state something your sample cannot support, change the chart or its labels.",
           "Save the chart, the alternative text and the numbers.",
         ],
@@ -1974,7 +1975,7 @@ export const module8: Lesson[] = [
       {
         question: "Why must a bar chart's axis start at zero?",
         answer:
-          "Because the comparison is bar length. Truncating the axis removes part of every bar while readers still compare lengths, which changes the apparent ratio.",
+          "Because the comparison is bar length. Truncating the axis removes part of every bar while readers still compare lengths: 45 and 55 drawn from 40 become bars of 5 and 15, so a ratio of about 1.2 looks like 3.",
       },
       {
         question: "What belongs in alternative text?",
@@ -2025,7 +2026,7 @@ export const module8: Lesson[] = [
       {
         criterion: "n and the recruitment route appear on the chart",
         evidence:
-          "Sample size and how those people were reached, visible on the chart itself.",
+          "Sample size and how those people were reached, or “made-up practice data”, visible on the chart itself.",
         levels: [
           "No sample stated.",
           "n given in a separate document or footnote.",
@@ -2044,7 +2045,7 @@ export const module8: Lesson[] = [
           "No alternative text, or a description of the chart type.",
           "Some values given but the comparison left implicit.",
           "Comparison, values and sample all present, with numbers published.",
-          "As adequate, and someone who cannot see the chart confirmed the text told them what they needed.",
+          "As adequate, and a reader who had not seen the chart answered its question correctly from the text alone.",
         ],
         remediation:
           "Cover the chart and read only your alternative text. If you could not answer the question the chart exists to answer, rewrite it.",

@@ -1052,9 +1052,9 @@ export const guided08: Record<string, Guided> = {
       {
         question: 'You have put a confirmation dialogue on every action that deletes something. Why does that protect less than it looks?',
         options: [
-          { label: 'A question with a predictable answer gets dismissed without reading, so the protection fades while the delay stays.', correct: true, feedback: 'People learn the shape of the box and answer it by habit. The one time it matters, it is dismissed the same way as the other forty.' },
-          { label: 'It does protect; the only cost is that the flow is a little slower.', feedback: 'The delay is real and the protection is not, because the reading stops long before the habit does. Undo protects the person who has already made the mistake.' },
-          { label: 'It protects, as long as the wording is firm enough.', feedback: 'Firmer wording raises the volume on something already being skipped. What changes the outcome is being able to put the mistake right afterwards.' },
+          { label: 'A predictable question gets dismissed unread, so the protection fades while the delay stays.', correct: true, was: ['A question with a predictable answer gets dismissed without reading, so the protection fades while the delay stays.'], feedback: 'People learn the shape of the box and answer it by habit. The one time it matters, it is dismissed the same way as the other forty.' },
+          { label: 'It does protect people; its only real cost is that each deletion takes a moment longer.', was: ['It does protect; the only cost is that the flow is a little slower.'], feedback: 'The delay is real and the protection is not, because the reading stops long before the habit does. Undo protects the person who has already made the mistake.' },
+          { label: 'It protects well, provided each dialogue says firmly and specifically what will be lost.', was: ['It protects, as long as the wording is firm enough.'], feedback: 'Firmer wording raises the volume on something already being skipped. What changes the outcome is being able to put the mistake right afterwards.' },
         ],
         repair: 'Look at your three decisions in step 2. Any action that could be reversed becomes an undo message instead of a confirmation, and the change goes in the last box of step 5.',
         recheck: 'No confirmation remains on an action you could reverse.',
@@ -1062,9 +1062,9 @@ export const guided08: Record<string, Guided> = {
       {
         question: 'Your modal explains the cancellation policy in four paragraphs so people can read it before deciding. What is wrong with that?',
         options: [
-          { label: 'A modal covers the screen and holds the keyboard, so it is the worst place for anything a person needs to read carefully or compare.', correct: true, feedback: 'Reference text needs room, scrolling and the freedom to look at something else. Put it on the page, or give it a screen of its own.' },
-          { label: 'Nothing, as long as the modal scrolls.', feedback: 'Scrolling inside a box that hides the thing being decided about is a small window onto a long document. The person still cannot see what they are agreeing about.' },
-          { label: 'The paragraphs should be cut until they fit the box.', feedback: 'Cutting a policy to fit a container changes what it says. The container is the thing that is wrong here.' },
+          { label: 'A modal hides the page and traps the keyboard, a poor place for text people must weigh.', correct: true, was: ['A modal covers the screen and holds the keyboard, so it is the worst place for anything a person needs to read carefully or compare.'], feedback: 'Reference text needs room, scrolling and the freedom to look at something else. Put it on the page, or give it a screen of its own.' },
+          { label: 'Little is wrong, provided the modal scrolls so all four paragraphs can be read.', was: ['Nothing, as long as the modal scrolls.'], feedback: 'Scrolling inside a box that hides the thing being decided about is a small window onto a long document. The person still cannot see what they are agreeing about.' },
+          { label: 'The paragraphs should be cut down until the whole policy fits inside the box.', was: ['The paragraphs should be cut until they fit the box.'], feedback: 'Cutting a policy to fit a container changes what it says. The container is the thing that is wrong here.' },
         ],
         repair: 'Read the wording in modal-a and modal-b in step 3. Move any reference text onto the page or its own screen, and record the move in step 5.',
         recheck: 'Neither remaining modal holds anything the person needs to read and weigh up.',
@@ -1072,14 +1072,23 @@ export const guided08: Record<string, Guided> = {
       {
         question: 'Your held-place warning and your unsaved-work warning could both appear during payment. What does that tell you?',
         options: [
-          { label: 'The flow is asking for two things at one moment, so the flow needs changing rather than the dialogues needing an order.', correct: true, feedback: 'Two interruptions at once is a message about the shape of the task. Stacking or queueing hides that and doubles the interruption.' },
-          { label: 'Stack them, newest on top, so nothing is missed.', feedback: 'A box over a box takes two dismissals and leaves the person unsure what they have just answered.' },
-          { label: 'Queue them, so the second appears once the first is dismissed.', feedback: 'A queue is tidier and still stops the person twice at the moment they were trying to pay.' },
+          { label: 'The flow asks for two things at one moment, so the flow needs changing, not the order.', correct: true, was: ['The flow is asking for two things at one moment, so the flow needs changing rather than the dialogues needing an order.'], feedback: 'Two interruptions at once is a message about the shape of the task. Stacking or queueing hides that and doubles the interruption.' },
+          { label: 'Stack them, newest on top, so that neither warning can be missed during payment.', was: ['Stack them, newest on top, so nothing is missed.'], feedback: 'A box over a box takes two dismissals and leaves the person unsure what they have just answered.' },
+          { label: 'Queue them, so the second appears only once the first has been dismissed.', was: ['Queue them, so the second appears once the first is dismissed.'], feedback: 'A queue is tidier and still stops the person twice at the moment they were trying to pay.' },
         ],
         repair: 'Use the collision box in step 4. Name the two that can collide, change one of them, then write what you changed in step 5.',
         recheck: 'No two interruptions can appear at the same moment in your flow.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a photo-printing app asks “Are you sure?” every time someone removes a photo from a print order, although a removed photo can be added back from the camera roll in one tap. It also opens the print-size guide, a long table of sizes and prices, in a modal while people choose sizes.',
+      prompt: 'Decide what each of the two interruptions should become, and explain why.',
+      anchors: {
+        weak: 'Keeps both modals because a confirmation feels safer and a modal guarantees the size guide is seen.',
+        adequate: 'Replaces the removal confirmation with immediate removal plus undo, since nothing is lost for good, and moves the size guide onto the page or into a disclosure, because a modal hides what people are choosing.',
+        strong: 'As adequate, plus the undo window and its wording, a one-sentence modal rule (only for loss that cannot be recovered), and a check that no two interruptions can appear at once.',
+      },
+    },
     saveRoute: {
       auto: 'Your interruption list, the three decisions and both designs save as you type, on this device first and then online.',
       external: 'The screens stay on paper or in your own folder. Note the file name in the last step; naming a file does not upload it.',
@@ -1112,7 +1121,7 @@ export const guided08: Record<string, Guided> = {
         { id: 'collision-rule', label: 'What stops two messages appearing in the same place at once', kind: 'short' },
       ] },
       { id: 'aloud', title: 'Read it to someone', fields: [
-        { id: 'aloud-result', label: 'What happened when you read each message aloud and asked what they would do next', kind: 'long', hint: 'If nobody is available, read them aloud yourself after a break and note where you hesitated. Write plainly that no one else heard them.' },
+        { id: 'aloud-result', label: 'What happened when you read each message aloud and asked what they would do next', kind: 'long', sensitive: true, hint: 'Summarise what the listener said without their name; raw notes stay in your private file. If nobody is available, read them aloud yourself after a break and note where you hesitated. Write plainly that no one else heard them.' },
         { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
       ] },
     ],
@@ -1143,12 +1152,12 @@ export const guided08: Record<string, Guided> = {
         },
         supported: {
           material: 'Three supplied messages from a made-up booking product, all shown the same way: a small box in the bottom-left corner that fades after four seconds. A is “Draft saved.” B is “Your place is held for 10 minutes.” C is “Payment failed. No money has been taken.”',
-          question: 'Which of these is still delivered by a box that fades after four seconds?',
+          question: 'Which of these should still be delivered by a box that fades after four seconds?',
           options: [
             { label: 'A only. Nothing depends on the person seeing it, and it will happen again.', correct: true, feedback: 'A missed save note costs nothing, so the quiet treatment fits. B carries a deadline and C carries money, and both are gone before someone looking at the form could read them.' },
             { label: 'B and C as well. Four seconds is long enough to read a short sentence.', feedback: 'Four seconds is long enough to read one, and only if the person happens to be looking at that corner. During payment they are looking at the card field.' },
             { label: 'None of them. A message that fades has not been delivered at all.', feedback: 'The rule is about consequence rather than fading. For a saved draft, quiet and repeated is the right treatment.' },
-            { label: 'C only. People watch for failures.', feedback: 'People watch for a failure once they suspect one. The failure arrives before the suspicion, and a fading box is how someone ends up unsure whether they have been charged.' },
+            { label: 'C only, because people are already watching closely for anything that fails.', was: ['C only. People watch for failures.'], feedback: 'People watch for a failure once they suspect one. The failure arrives before the suspicion, and a fading box is how someone ends up unsure whether they have been charged.' },
           ],
           then: 'Go back through your own four rows and mark any message that would be gone before it was read.',
         },
@@ -1175,11 +1184,11 @@ export const guided08: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: '“Your place is held for 10 minutes” appears as a small box in the corner that fades after four seconds. What is the problem?',
+        question: 'During payment, while she types her card details, “Your place is held for 10 minutes” appears as a small box in the corner that fades after four seconds. What is the problem?',
         options: [
-          { label: 'The person is typing card details and looking at the form, so the message is gone before they look up and the deadline is now invisible.', correct: true, feedback: 'A deadline the person cannot see is a deadline they will miss. Anything about money or time belongs where the work is, staying until it is resolved.' },
-          { label: 'Four seconds is not long enough to read a sentence of that length.', feedback: 'Reading time is the smaller half of it. Even at ten seconds it is in the wrong corner at the wrong moment.' },
-          { label: 'Nothing, as long as the message appears again before the hold ends.', feedback: 'A second fading message has the same chance of being missed as the first, and by then the person has lost the earlier part of the countdown too.' },
+          { label: 'She is typing card details, so it fades before she looks up, and the deadline is lost.', correct: true, was: ['The person is typing card details and looking at the form, so the message is gone before they look up and the deadline is now invisible.'], feedback: 'A deadline the person cannot see is a deadline they will miss. Anything about money or time belongs where the work is, staying until it is resolved.' },
+          { label: 'Four seconds is too short to read a sentence of that length; ten would fix it.', was: ['Four seconds is not long enough to read a sentence of that length.'], feedback: 'Reading time is the smaller half of it. Even at ten seconds it is in the wrong corner at the wrong moment.' },
+          { label: 'It is fine, as long as the same message appears again before the hold ends.', was: ['Nothing, as long as the message appears again before the hold ends.'], feedback: 'A second fading message has the same chance of being missed as the first, and by then the person has lost the earlier part of the countdown too.' },
         ],
         repair: 'Open the progress row in step 2. Any message about money, a deadline or unsaved work must stay until it is resolved; change it and record the change in step 5.',
         recheck: 'No message about money, a deadline or lost work fades on its own.',
@@ -1187,9 +1196,9 @@ export const guided08: Record<string, Guided> = {
       {
         question: 'Success is green and failure is red, with the same icon and similar wording. What breaks?',
         options: [
-          { label: 'Anyone who cannot separate those colours, or who reads the screen in bright light, is left with two messages that say the same thing.', correct: true, feedback: 'Colour is the reinforcement, never the signal. The words and the shape have to carry the meaning on their own.' },
-          { label: 'Nothing, since red and green are understood everywhere.', feedback: 'They are widely learnt and not universally visible. A message that depends on telling them apart carries nothing for a good number of readers.' },
-          { label: 'Only the icons need to differ; the wording can stay as it is.', feedback: 'Different shapes help, and the sentence is still the part most people read. If the words do not say whether this is good or bad news, the shape is doing the work alone.' },
+          { label: 'Anyone who cannot tell red from green, or reads in bright light, gets two identical messages.', correct: true, was: ['Anyone who cannot separate those colours, or who reads the screen in bright light, is left with two messages that say the same thing.'], feedback: 'Colour is the reinforcement, never the signal. The words and the shape have to carry the meaning on their own.' },
+          { label: 'Very little, since red and green are understood as good and bad almost everywhere.', was: ['Nothing, since red and green are understood everywhere.'], feedback: 'They are widely learnt and not universally visible. A message that depends on telling them apart carries nothing for a good number of readers.' },
+          { label: 'Only the icons need to differ; similar wording is fine once the shapes are distinct.', was: ['Only the icons need to differ; the wording can stay as it is.'], feedback: 'Different shapes help, and the sentence is still the part most people read. If the words do not say whether this is good or bad news, the shape is doing the work alone.' },
         ],
         repair: 'Look at icon-shapes and rewritten-wording in step 3. Give each type its own shape and make each sentence state the outcome in words, then record it in step 5.',
         recheck: 'With colour taken away, each message still says plainly what happened.',
@@ -1198,13 +1207,22 @@ export const guided08: Record<string, Guided> = {
         question: 'Your payment failure says “Something went wrong.” What is missing?',
         options: [
           { label: 'What happened, what it means for the money, and the one thing to do next.', correct: true, feedback: 'A failure with no route leaves the person guessing whether they have been charged and whether to try again. Say it in the message.' },
-          { label: 'An apology, so the tone matches the situation.', feedback: 'An apology is easy to add and changes nothing about what the person does next. The route forward is the part that helps.' },
-          { label: 'An error code the support team can look up.', feedback: 'A code helps whoever is contacted later, and it is not what the person needs in that moment. Give them the action first and the code after.' },
+          { label: 'An apology, so that the tone matches how stressful the moment feels.', was: ['An apology, so the tone matches the situation.'], feedback: 'An apology is easy to add and changes nothing about what the person does next. The route forward is the part that helps.' },
+          { label: 'An error code that the support team can look up if the person calls.', was: ['An error code the support team can look up.'], feedback: 'A code helps whoever is contacted later, and it is not what the person needs in that moment. Give them the action first and the code after.' },
         ],
         repair: 'Fill failure-routes in step 4 with one thing the person can do for each failure, then record what you changed in step 5.',
         recheck: 'No failure message ends without an action or a person to contact.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a laundrette app shows every message the same way, as a small box in a top corner that fades after three seconds. Three messages use it: “Machine 4 started”, “Your wash finishes in 40 minutes” and “Payment failed: machine not started”. People often start a wash and then put their phone away.',
+      prompt: 'Decide where each message appears and how long it stays. Explain why.',
+      anchors: {
+        weak: 'Keeps one fading style for all three because consistency looks tidy, or changes only the colours.',
+        adequate: 'Makes the payment failure stay where the payment happened, with words, a distinct icon and a next step; keeps the finish time available to check later; lets “Machine 4 started” fade quietly.',
+        strong: 'As adequate, plus what clears each lasting message, how a failure and a countdown are kept from sharing one place, and a greyscale or read-aloud check that the words carry the meaning alone.',
+      },
+    },
     saveRoute: {
       auto: 'The message list, the four specifications and your wording save as you type, on this device first and then online.',
       external: 'Nothing here needs a file. Keep your m07 exception table beside you; most of these messages come from it.',
@@ -1270,10 +1288,10 @@ export const guided08: Record<string, Guided> = {
           material: 'Two supplied empty states for the same made-up bookings list. A is a grey illustration of an empty box with the words “Nothing here yet.” B is “Your bookings appear here once you book a class. Classes run on Saturdays and Wednesdays.” with an action reading “Find a class on Saturday”.',
           question: 'What is B actually doing that A is not?',
           options: [
-            { label: 'B says what belongs here, why the screen is blank and the one action that starts it, so the empty screen teaches.', correct: true, feedback: 'Those three parts turn a blank area into the clearest lesson in the product. A has the same space and spends it on an apology.' },
-            { label: 'B is longer, and a new person needs more words.', feedback: 'Length is not the difference. A long empty state that still fails to say what appears here, or how to begin, teaches nothing.' },
-            { label: 'B has an action, and an action is what every empty state needs.', feedback: 'The action helps and is not enough on its own. An action with no explanation of what the list is for leaves a new person guessing.' },
-            { label: 'B has no illustration, and illustrations do not belong in empty states.', feedback: 'An illustration is fine beside wording that teaches. What fails in A is the sentence, not the picture.' },
+            { label: 'B says what belongs here, why it is empty and how to start, so the empty screen teaches.', correct: true, was: ['B says what belongs here, why the screen is blank and the one action that starts it, so the empty screen teaches.'], feedback: 'Those three parts turn a blank area into the clearest lesson in the product. A has the same space and spends it on an apology.' },
+            { label: 'B is longer, and a person arriving for the first time needs more words to feel welcome.', was: ['B is longer, and a new person needs more words.'], feedback: 'Length is not the difference. A long empty state that still fails to say what appears here, or how to begin, teaches nothing.' },
+            { label: 'B has an action button, and an action is the one thing every empty state must offer.', was: ['B has an action, and an action is what every empty state needs.'], feedback: 'The action helps and is not enough on its own. An action with no explanation of what the list is for leaves a new person guessing.' },
+            { label: 'B has no illustration, and pictures in an empty state distract from the words beside them.', was: ['B has no illustration, and illustrations do not belong in empty states.'], feedback: 'An illustration is fine beside wording that teaches. What fails in A is the sentence, not the picture.' },
           ],
           then: 'Read your own three empty states back and check each one names what appears here, why it is blank now, and what to do next.',
         },
@@ -1302,9 +1320,9 @@ export const guided08: Record<string, Guided> = {
       {
         question: 'Your empty list says “No results.” Why is that the most expensive sentence on the screen?',
         options: [
-          { label: 'It is what a new person meets first, and it spends the whole screen without saying what belongs here or how to begin.', correct: true, feedback: 'An empty screen is the one moment when there is nothing to read but you. That space teaches, or it is wasted.' },
-          { label: 'It is too short, and an empty state should be a full paragraph.', feedback: 'Length is not the fault. A long message that still fails to say what appears here and how to start is the same shrug at greater cost.' },
-          { label: 'Nothing is wrong: an empty list explains itself.', feedback: 'It explains itself to you, who built it. To someone arriving for the first time it is a blank area with a note saying the blank is intentional.' },
+          { label: 'A new person meets it first, and it says nothing about what belongs here or how to begin.', correct: true, was: ['It is what a new person meets first, and it spends the whole screen without saying what belongs here or how to begin.'], feedback: 'An empty screen is the one moment when there is nothing to read but you. That space teaches, or it is wasted.' },
+          { label: 'It is too short; an empty state should be a full paragraph explaining the product.', was: ['It is too short, and an empty state should be a full paragraph.'], feedback: 'Length is not the fault. A long message that still fails to say what appears here and how to start is the same shrug at greater cost.' },
+          { label: 'It is not expensive at all, because an empty list explains itself to anyone.', was: ['Nothing is wrong: an empty list explains itself.'], feedback: 'It explains itself to you, who built it. To someone arriving for the first time it is a blank area with a note saying the blank is intentional.' },
         ],
         repair: 'Rewrite empty-new in step 2 so it says what appears here, why it is blank now and the one action that starts it, then record the change in step 5.',
         recheck: 'The new-person state names the content, the reason and one action.',
@@ -1312,9 +1330,9 @@ export const guided08: Record<string, Guided> = {
       {
         question: 'A step takes about twelve seconds. You replace the spinner with a faster one. What have you changed?',
         options: [
-          { label: 'Nothing the person can use. A long wait needs a message naming what is being waited for, not a livelier animation.', correct: true, feedback: 'After a few seconds a spinner stops meaning “working” and starts meaning “stuck”. Words are what tell the difference.' },
-          { label: 'The wait feels shorter, which is the whole problem solved.', feedback: 'A faster spin reads as more effort for a moment and then as the same silence. The person still cannot tell whether to wait or start again.' },
-          { label: 'It is worse, because spinners should never be used at all.', feedback: 'A spinner is fine for a short wait where the outcome arrives quickly. Twelve seconds is not that wait.' },
+          { label: 'Only the animation: a long wait needs words saying what is being waited for.', correct: true, was: ['Nothing the person can use. A long wait needs a message naming what is being waited for, not a livelier animation.'], feedback: 'After a few seconds a spinner stops meaning “working” and starts meaning “stuck”. Words are what tell the difference.' },
+          { label: 'The wait now feels shorter, which solves most of the problem for the person.', was: ['The wait feels shorter, which is the whole problem solved.'], feedback: 'A faster spin reads as more effort for a moment and then as the same silence. The person still cannot tell whether to wait or start again.' },
+          { label: 'It made things worse, because spinners should not be used for any wait at all.', was: ['It is worse, because spinners should never be used at all.'], feedback: 'A spinner is fine for a short wait where the outcome arrives quickly. Twelve seconds is not that wait.' },
         ],
         repair: 'Write wait-messages in step 3 for about three seconds and about fifteen, naming what is being waited for, then record the change in step 5.',
         recheck: 'A wait longer than a few seconds says in words what is happening.',
@@ -1322,14 +1340,23 @@ export const guided08: Record<string, Guided> = {
       {
         question: 'Your error state has a “Try again” control that reloads the whole page. What does the person lose?',
         options: [
-          { label: 'The filters, the place they had scrolled to and anything typed, so they pay for the failure a second time.', correct: true, feedback: 'The failure was not their doing and the reload charges them for it. A retry should repeat the request and keep everything else.' },
-          { label: 'Nothing, because a reload is the cleanest way to recover.', feedback: 'It is the cleanest for the build and the most expensive for the person. Everything they had set up goes with it.' },
-          { label: 'Only the scroll position, which is quickly recovered.', feedback: 'Scroll position is the smallest part. The filters and the typed values are the work, and a reload takes those too.' },
+          { label: 'Their filters, scroll position and anything typed, so they pay for the failure twice.', correct: true, was: ['The filters, the place they had scrolled to and anything typed, so they pay for the failure a second time.'], feedback: 'The failure was not their doing and the reload charges them for it. A retry should repeat the request and keep everything else.' },
+          { label: 'Very little, because a full reload is the cleanest and most reliable recovery.', was: ['Nothing, because a reload is the cleanest way to recover.'], feedback: 'It is the cleanest for the build and the most expensive for the person. Everything they had set up goes with it.' },
+          { label: 'Only the scroll position, which takes a second to recover by scrolling again.', was: ['Only the scroll position, which is quickly recovered.'], feedback: 'Scroll position is the smallest part. The filters and the typed values are the work, and a reload takes those too.' },
         ],
         repair: 'Fill error-preserved and retry-behaviour in step 4 with everything the retry keeps, then record the change in step 5.',
         recheck: 'The retry keeps position, filters and anything entered.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a neighbourhood tool library app shows the same grey box reading “No results” in three situations: a new member with no loans yet, a search filtered to “available today” that matches nothing, and a hedge trimmer that is out on loan until next week.',
+      prompt: 'Write what the screen should say for the filtered search, and explain why it must differ from the new-member case.',
+      anchors: {
+        weak: 'Keeps one message for all three, or makes “No results” friendlier without naming the cause or a next step.',
+        adequate: 'Names the filter that emptied the list and offers to remove it, such as showing tools available this week, while the new member is told what will appear here and how to borrow a first tool.',
+        strong: 'As adequate, plus the third case (when the trimmer is due back, or a reminder), and a note that the wording should be tried on someone new rather than judged by the person who wrote it.',
+      },
+    },
     saveRoute: {
       auto: 'The state list, the three empty states and your throttling notes save as you type, on this device first and then online.',
       external: 'The drawings stay on paper or in your own folder. Note the file name in the last step; naming a file does not upload it.',
@@ -1340,6 +1367,7 @@ export const guided08: Record<string, Guided> = {
   'm08-l10-v1': {
     video: { id: "VID10", then: "Straight after watching, write your chart’s alternative text without looking at the chart. If you cannot, the text is describing the picture rather than carrying the finding.", written: "No video needed: cover your chart and write the sentence you would say to somebody on the telephone. That is the alternative text." },
     route: paperRoute('the chart and the counts printed beneath it'),
+    material: [surveyCounts, 'Arithmetic for a cut axis: subtract the axis start from both values, then divide. 13 and 9 from zero look 13 ÷ 9 ≈ 1.4 times apart; from 8 they look (13 − 8) ÷ (9 − 8) = 5 times apart.'],
     worksheet: [
       { id: 'conventions', title: 'The rules you are working to', intro: 'From the assigned chart guidance, before you draw anything.', fields: [
         { id: 'axis-rules', label: 'What the guidance says about axes and gridlines', kind: 'long', hint: 'Write the rules as instructions to yourself, not as a summary of the page.' },
@@ -1347,12 +1375,16 @@ export const guided08: Record<string, Guided> = {
       ] },
       { id: 'comparison', title: 'One comparison, one chart type', intro: 'Decide what the reader is meant to compare before you decide how it looks.', fields: [
         { id: 'comparison-sentence', label: 'The one comparison you want a reader to make', kind: 'short', example: 'Example (made up): how many of the people who answered were unsure their payment had gone through, against how many were sure.' },
-        { id: 'data-held', label: 'The real counts you are using, and where they came from', kind: 'long', hint: 'Your m05 survey answers, your m06 tree-test results, or your own practice log. Real numbers only.' },
+        { id: 'data-held', label: 'The real counts you are using, and where they came from', kind: 'long', hint: 'Real numbers you hold: your m05 survey answers, m06 tree-test results or your own practice log, as totals with no names. If you hold none, use the supplied practice counts (22 people: 9 unsure, 13 sure) and write “made-up practice data” on the chart.' },
         { id: 'chart-type', label: 'The chart type you chose', kind: 'choice', options: ['Bar chart · amounts across categories', 'Line chart · change over time', 'Something else, named in the next box'] },
         { id: 'rejected-type', label: 'The type you rejected, and how it would have flattered your finding', kind: 'short' },
       ] },
       { id: 'draw', title: 'Draw it honestly', fields: [
-        { id: 'axis-start', label: 'Where your numerical axis starts, and why', kind: 'short', hint: 'For bars the only answer is zero. Write it down anyway, so you notice if it is not.' },
+        { id: 'axis-start', label: 'Where your numerical axis starts, and why', kind: 'short', hint: 'For bars the answer is zero, as the assigned guidance says. Write it down anyway, so you notice if it is not.' },
+        { id: 'cut-axis-ratio', label: 'The ratio your two biggest-gap bars show from zero, and the ratio they would show if the axis started at your lowest gridline', kind: 'short',
+          requiredWhen: { field: 'chart-type', values: ['Bar chart · amounts across categories'] },
+          hint: 'Divide the larger value by the smaller. Then subtract the axis start from both and divide again.',
+          example: 'Example (made up): 13 and 9 drawn from zero look about 1.4 times apart; drawn from 8 they would look (13 − 8) ÷ (9 − 8) = 5 times apart.' },
         { id: 'labelling-choice', label: 'How each value is labelled, and any legend you were able to remove', kind: 'long' },
         { id: 'contrast-result', label: 'The contrast ratios you measured for the chart colours and their labels, and the checker you used', kind: 'short', hint: 'A free browser-based checker, or the offline calculation from earlier in the course. No plugin needed.' },
       ] },
@@ -1362,7 +1394,7 @@ export const guided08: Record<string, Guided> = {
         { id: 'underlying-numbers', label: 'The counts published beside the chart', kind: 'long' },
       ] },
       { id: 'test', title: 'What a reader took from it', fields: [
-        { id: 'reader-said', label: 'What the person you showed it to said it told them', kind: 'long', hint: 'Ask, then write their words down before you explain anything.' },
+        { id: 'reader-said', label: 'What the reader said it told them, summarised without their name, or what it seemed to claim when you read it cold yourself', kind: 'long', sensitive: true, hint: 'Ask, then note what they said before you explain anything; raw notes stay in your private file. Nobody available? Put the chart away for an hour, read it cold, and write “self-read” beside your answer.' },
         { id: 'overclaim-fix', label: 'Anything they claimed your data cannot support, and what you changed', kind: 'short' },
         { id: 'chart-location', label: 'Where the chart and the counts live', kind: 'short', hint: 'A file name, or “paper, in my folder”. Nothing is uploaded.' },
         { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
@@ -1382,12 +1414,12 @@ export const guided08: Record<string, Guided> = {
         start: 'Write the sentence you want the reader to leave with. The chart type is whatever makes exactly that sentence visible.',
         enough: 'Your counts are real numbers you already hold, not numbers you expect to have later.' },
       { terms: [{ term: 'Axis', meaning: 'The ruled edge of the chart carrying the numbers each value is read against.' }, { term: 'Direct label', meaning: 'The value written on the bar itself, so nobody has to look away to a key to read it.' }, { term: 'Contrast ratio', meaning: 'A number comparing the lightness of two colours, measured with a free checker rather than judged by eye.' }], expect: 'The chart drawn to the rules: axis from zero for bars, direct labels, measured colours.',
-        fields: ['axis-start', 'labelling-choice', 'contrast-result'],
+        fields: ['axis-start', 'cut-axis-ratio', 'labelling-choice', 'contrast-result'],
         demo: {
           scenario: 'Made-up example. Drawing one bar chart from twenty-two survey answers, and finding the first draft said something the answers could not support.',
           beats: [
             { label: 'What I had', text: 'Twenty-two answers to one question: was it clear your payment had gone through? Nine said no, thirteen said yes.' },
-            { label: 'My first draft', text: 'Two bars, with the axis starting at eight because that fitted the graph paper neatly, and a legend in the corner. The nine looked like roughly a third of the thirteen.' },
+            { label: 'My first draft', text: 'Two bars, with the axis starting at eight because that fitted the graph paper neatly, and a legend in the corner. The nine bar stood one square tall and the thirteen bar five, so nine looked like a fifth of thirteen, when it is about seven-tenths of it.' },
             { label: 'What a reader took from it', text: 'She looked at it and said “so hardly anyone was confused”. The cut axis had done that, not the answers.' },
             { label: 'What I changed', text: 'Axis from zero. The counts written on the bars themselves. Legend deleted. And under the title, in the same ink: 22 people, reached through two WhatsApp groups.' },
             { label: 'What it cost', text: 'The redrawn chart is duller. Nine against thirteen now looks like what it is, and the picture no longer promises more than twenty-two people can give.' },
@@ -1405,10 +1437,10 @@ export const guided08: Record<string, Guided> = {
           material: 'One made-up chart: of 22 people, 9 were unsure their payment had gone through and 13 were sure. It is two bars with the counts written on them.',
           question: 'Which alternative text carries the same information to someone who cannot see it?',
           options: [
-            { label: 'Of 22 people reached through two WhatsApp groups, 9 were unsure their payment had gone through and 13 were sure.', correct: true, feedback: 'It gives the comparison, both counts and the sample. A reader who never sees the bars can use it exactly as you can.' },
-            { label: 'A bar chart showing responses to the payment clarity question.', feedback: 'It names the subject and withholds the answer. The reader learns that a chart exists, which is not what the chart is for.' },
-            { label: 'Two vertical bars, the right one taller than the left, with a light grid behind them.', feedback: 'This describes the drawing. Someone could redraw the picture from it and still not know what anybody answered.' },
-            { label: 'Most people were sure their payment had gone through.', feedback: 'It carries a conclusion instead of the values, and “most” from thirteen of twenty-two is doing more work than the counts allow.' },
+            { label: 'Of 22 people reached through two WhatsApp groups, 9 were unsure their payment went through and 13 were sure.', correct: true, was: ['Of 22 people reached through two WhatsApp groups, 9 were unsure their payment had gone through and 13 were sure.'], feedback: 'It gives the comparison, both counts and the sample. A reader who never sees the bars can use it exactly as you can.' },
+            { label: 'A bar chart of answers to the payment clarity question, from a survey shared in two WhatsApp groups.', was: ['A bar chart showing responses to the payment clarity question.'], feedback: 'It names the subject and the source and withholds the answer. The reader learns that a chart exists, which is not what the chart is for.' },
+            { label: 'Two vertical bars, the right one taller than the left, each with its number written on it, and a light grid.', was: ['Two vertical bars, the right one taller than the left, with a light grid behind them.'], feedback: 'This describes the drawing. Someone could redraw the picture from it and still not know what anybody answered.' },
+            { label: 'Most of the people asked were sure their payment had gone through, and a sizeable minority were unsure.', was: ['Most people were sure their payment had gone through.'], feedback: 'Thirteen of twenty-two is a majority of those asked, so “most” is not false, but the sentence drops both counts and the size of the sample. A listener cannot tell 13 of 22 from 1,300 of 2,200.' },
           ],
           then: 'Cover your own chart and read only your alternative text. If you cannot answer the question the chart was drawn to answer, rewrite it with the counts in it.',
         },
@@ -1421,11 +1453,11 @@ export const guided08: Record<string, Guided> = {
     ],
     checks: [
       {
-        question: 'All your values sit between 40 and 60, so you start the bar axis at 40 to make the difference visible. What is wrong?',
+        question: 'Your two bars are 45 and 55, so you start the bar axis at 40 to make the difference visible. What is wrong?',
         options: [
-          { label: 'On bars the length is the comparison, so a shortened axis shows a difference that is not there.', correct: true, feedback: 'A bar twice as long reads as twice as much. Cutting the axis breaks that, and nobody looking at the picture knows you did it.' },
-          { label: 'Nothing, as long as the axis is labelled with its starting value.', feedback: 'The label helps the one careful reader. The shape of the bars is what everyone else carries away, and it is still untrue.' },
-          { label: 'It is a problem for lines and fine for bars.', feedback: 'It is the other way round. A line shows change, so its axis can start where the change is; a bar shows an amount by its length.' },
+          { label: 'The bars become 5 and 15 long, so 55 looks three times 45 when it is about 1.2 times.', correct: true, was: ['On bars the length is the comparison, so a shortened axis shows a difference that is not there.'], feedback: 'On bars the length is the comparison. From zero the bars are 45 and 55 long, a ratio of about 1.2; from 40 they are 5 and 15, a ratio of 3. Nobody looking at the picture knows you did it.' },
+          { label: 'Little is wrong, as long as the axis label shows clearly that it starts at 40.', was: ['Nothing, as long as the axis is labelled with its starting value.'], feedback: 'The label helps the one careful reader. Everyone else carries away the shapes, and the shapes now say three times.' },
+          { label: 'A cut axis misleads on a line chart; on a bar chart it is the usual way to zoom in.', was: ['It is a problem for lines and fine for bars.'], feedback: 'It is the other way round. The assigned guidance accepts a clearly marked break on a line chart and says not to break a bar chart’s axis, because length is how bars are read.' },
         ],
         repair: 'Look at your axis-start box in step 3. If the axis does not begin at zero for bars, redraw the chart and record the change in the last step.',
         recheck: 'The bar axis starts at zero, and the box says so in your own words.',
@@ -1433,9 +1465,9 @@ export const guided08: Record<string, Guided> = {
       {
         question: 'Nine of your twenty-two answers were unsure, so you write “41 per cent were unsure” on the chart. What does that do?',
         options: [
-          { label: 'A percentage reads as a rate that would hold for other people, and twenty-two answers cannot support that.', correct: true, feedback: 'The counts say what happened among the people you reached. The percentage quietly promises the same share elsewhere, which you have no way of knowing.' },
-          { label: 'It makes the chart clearer, because percentages are easier to compare.', feedback: 'Percentages compare well between large samples. From twenty-two they turn a small count into a claim about everyone.' },
-          { label: 'It is fine as long as n appears somewhere on the chart.', feedback: 'Putting n beside it helps, and the number people repeat afterwards is still the percentage. Write the counts where the percentage would have been.' },
+          { label: 'It reads as a rate for people in general, yet one changed answer would move it 4.5 points.', correct: true, was: ['A percentage reads as a rate that would hold for other people, and twenty-two answers cannot support that.'], feedback: 'Nine of twenty-two is 40.9 per cent, so the arithmetic is right; the trouble is what it implies. One person answering the other way makes it 36 or 45 per cent, and the percentage quietly promises the same share among people you never asked. Write the counts.' },
+          { label: 'It makes the chart clearer, because percentages are easier to compare than counts.', was: ['It makes the chart clearer, because percentages are easier to compare.'], feedback: 'Percentages compare well between large samples. From twenty-two answers they turn a small count into what reads like a claim about everyone.' },
+          { label: 'It is fine, provided n = 22 is also printed somewhere on the same chart for readers.', was: ['It is fine as long as n appears somewhere on the chart.'], feedback: 'Printing n helps, and the number people repeat afterwards is still the percentage. Write the counts where the percentage would have been.' },
         ],
         repair: 'Check your sample-line and underlying-numbers boxes in step 4. Replace any rate with the counts, keep n and the recruitment route, and record the change in the last step.',
         recheck: 'The chart and the numbers beside it show counts, with how many people and how they were reached.',
@@ -1443,14 +1475,23 @@ export const guided08: Record<string, Guided> = {
       {
         question: 'Your alternative text reads “A bar chart comparing two answers.” What is missing?',
         options: [
-          { label: 'The finding itself: the values, and the comparison the chart exists to show.', correct: true, feedback: 'Someone using the text instead of the picture should end up knowing what you know. A description of the drawing leaves them with nothing to use.' },
-          { label: 'The colours and the shape of the bars.', feedback: 'Those belong to the picture. Adding more description makes the text longer and carries none of the information.' },
-          { label: 'Nothing: the numbers are read out from the chart itself.', feedback: 'A drawn or photographed chart carries no numbers anything can read out. Whatever is not in the text is not available at all.' },
+          { label: 'The finding itself: the counts, and the comparison the chart was drawn to show.', correct: true, was: ['The finding itself: the values, and the comparison the chart exists to show.'], feedback: 'Someone using the text instead of the picture should end up knowing what you know. A description of the drawing leaves them with nothing to use.' },
+          { label: 'A description of the colours, the bar shapes and the gridlines in the picture.', was: ['The colours and the shape of the bars.'], feedback: 'Those belong to the picture. Adding more description makes the text longer and carries none of the information.' },
+          { label: 'Very little, because a screen reader can read the numbers out of the chart image.', was: ['Nothing: the numbers are read out from the chart itself.'], feedback: 'A drawn or photographed chart carries no numbers anything can read out. Whatever is not in the text is not available at all.' },
         ],
         repair: 'Rewrite the alt-text box in step 4 so it contains the counts, the comparison and the sample, then record the change in the last step.',
         recheck: 'The alternative text answers the question the chart was drawn to answer.',
       },
     ],
+    transfer: {
+      scenario: 'Made-up case: a community choir asked its 18 members which rehearsal night they prefer: 12 chose Tuesday and 6 chose Thursday. The secretary drew a bar chart with the axis starting at 5 and titled it “67% prefer Tuesday”, ready to pin on the choir’s noticeboard.',
+      prompt: 'Decide what you would change before it is pinned up, and explain why, showing the arithmetic.',
+      anchors: {
+        weak: 'Says the chart is fine, or only removes the percentage, without noticing that the cut axis makes Tuesday look seven times Thursday rather than twice.',
+        adequate: 'Starts the axis at zero, because from 5 the bars are 7 and 1 long (seven times) though 12 is twice 6; writes the counts and n = 18 on the chart instead of a bare 67%.',
+        strong: 'As adequate, plus alternative text with both counts and n, a note that one member changing moves the share by about 5.6 points, and that 18 members say nothing about other choirs.',
+      },
+    },
     saveRoute: {
       auto: 'The comparison, the alternative text and the counts save as you type, on this device first and then online.',
       external: 'The chart itself stays on your graph paper or in your spreadsheet. Note where it lives in the last step; nothing is uploaded.',
