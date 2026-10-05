@@ -309,7 +309,7 @@ export const module9: Lesson[] = [
         title: "Read and separate",
         instructions: [
           "Read the assigned status heuristic and the keyboard pattern for one component you use.",
-          "Open the state example in this lesson and switch the Save control through idle, pressed, saving, saved and failed, noting what changes each time.",
+          "Open the state example in this lesson and press Save with each outcome chosen, noting idle, the moment of pressing (hold the button down), saving, saved, failed and cancelled.",
           "Write the three moments for one control: press, acknowledgement, outcome, plus what it shows if the outcome fails.",
         ],
       },
@@ -335,8 +335,8 @@ export const module9: Lesson[] = [
         minutes: 30,
         title: "Test focus and touch",
         instructions: [
-          "Tab through your controls and record where focus is invisible.",
-          "Open the same page on a phone and check every control is reachable.",
+          "Tab through your controls if they are built and record where focus is invisible; otherwise number the stops on a printed screen and mark each untested.",
+          "Open the design, or a real-size photo of it, on a phone and note what you cannot reach, or write untested.",
           "Turn on Reduce motion in the state example, then write what still shows your acknowledgement without movement.",
           "Repair the worst failure you find.",
         ],
@@ -419,15 +419,15 @@ export const module9: Lesson[] = [
       {
         criterion: "A tab pass is recorded with failures named",
         evidence:
-          "Notes from tabbing through the controls, naming where focus was invisible or the order was wrong.",
+          "Notes from tabbing through the controls, naming where focus was invisible or the order was wrong — or, where nothing is built, the stops numbered on a printed screen and marked untested.",
         levels: [
           "No tab pass.",
           "Claimed without specifics.",
-          "Recorded with specific failures.",
+          "Every stop numbered, with specific failures where a build was tabbed, or each stop marked untested where nothing is built.",
           "As adequate, and one failure was repaired and re-checked.",
         ],
         remediation:
-          "Build a rough local page with your controls and tab through it. Record what you see, not what you intend.",
+          "Rehearse on the state example in this lesson, number the stops on your printed screen and mark untested what you could not try. Record what you see, not what you intend.",
         recheck: "The tab-pass notes.",
       },
     ],
@@ -527,8 +527,8 @@ export const module9: Lesson[] = [
         minutes: 25,
         title: "Test the timings",
         instructions: [
-          "Build the transitions roughly in a local file or storyboard the frames.",
-          "Try each at half and double your chosen duration.",
+          "Play each transition at a set speed in a free prototyping tool that lets you set an animation's duration, for example Penpot's prototype interactions.",
+          "Run each at half, chosen and double. Drawn frames only? Write “timing untested on paper” in timing-tests.",
           "Keep the shortest that still reads as connected.",
           "Switch Reduce motion on and off in the state example to see a change stay visible without movement.",
         ],
@@ -595,11 +595,11 @@ export const module9: Lesson[] = [
       {
         criterion: "Duration follows distance and was tested at two speeds",
         evidence:
-          "Durations set per transition with a record of trying them faster and slower.",
+          "Durations set per transition with a record of playing them faster and slower, or the timing marked untested with the route that would test it.",
         levels: [
           "One duration applied everywhere.",
-          "Varied durations chosen without testing.",
-          "Durations set by distance and tested at two speeds, with the shortest readable kept.",
+          "Varied durations chosen without testing, and not marked untested.",
+          "Durations set by distance and played at two speeds with the shortest readable kept, or the timing marked untested with the route that would test it.",
           "As adequate, and the specification states which transitions must stay under about 200ms.",
         ],
         remediation:
@@ -693,7 +693,7 @@ export const module9: Lesson[] = [
     explanation: [
       "Vestibular disorders are common enough that any product with an audience will have users affected by them, and large or unexpected movement can cause genuine nausea and dizziness rather than mild annoyance. Every major operating system therefore exposes a reduced-motion setting, and the assigned page lists exactly where it lives on each — which means you can turn it on for yourself in under a minute and see what your design does.",
       "The right response is replacement rather than deletion. If a panel's entry explained where it came from, removing the animation entirely removes the explanation; a quick fade keeps the change legible without moving anything across the screen. The assigned example does exactly this: it swaps an animation for a gentler one rather than switching it off.",
-      "Some motion is essential and must persist in a reduced form. A loading indicator communicates that the system is working, and a person who has asked for less motion still needs to know that. The reduced version should be smaller, local and non-oscillating — a subtle pulse or a text change rather than a spinning element crossing a large area.",
+      "Some motion is essential and must persist in a reduced form. A loading indicator communicates that the system is working, and a person who has asked for less motion still needs to know that. The reduced version should be smaller and local, and should not travel — a steady mark, a gentle fade in place or a text change rather than a spinning element crossing a large area.",
       "The riskiest patterns are the large ones: full-screen transitions, parallax scrolling, background video, anything that moves a large area or moves it repeatedly. Those are the first to cut when the setting is on, and honestly they are often worth cutting for everyone, since they cost the most and explain the least.",
     ],
     misconception:
@@ -731,7 +731,7 @@ export const module9: Lesson[] = [
         title: "Cut the risky patterns",
         instructions: [
           "Identify anything moving a large area, repeating, or parallax.",
-          "Remove those entirely under the setting.",
+          "Remove those entirely under the setting, except an essential waiting signal, which becomes a steady or gently fading mark beside words.",
           "Ask whether each is worth keeping even without the setting.",
         ],
       },
@@ -763,7 +763,7 @@ export const module9: Lesson[] = [
       {
         question: "Which motion must survive in reduced form?",
         answer:
-          "Essential motion — chiefly that the system is working. It should become smaller, local and non-oscillating, or be replaced by a text change.",
+          "Essential motion — chiefly that the system is working. It should become smaller and local and stop travelling — a steady mark or a gentle fade in place — or be replaced by a text change.",
       },
       {
         question: "What can you claim after testing with the setting yourself?",
@@ -809,7 +809,7 @@ export const module9: Lesson[] = [
       {
         criterion: "Essential motion survives in a reduced form",
         evidence:
-          "Loading and progress indicators specified in a smaller, local, non-oscillating form.",
+          "Loading and progress indicators specified in a smaller, local form that does not travel — a steady mark or a gentle fade in place — beside a change of words.",
         levels: [
           "Essential motion removed under the setting.",
           "Retained unchanged, defeating the setting.",
@@ -823,7 +823,7 @@ export const module9: Lesson[] = [
       {
         criterion: "Large-area and repeating motion is removed under the setting",
         evidence:
-          "A list of large, parallax or repeating motion, each removed when the setting is on.",
+          "A list of large, parallax or repeating motion, each removed when the setting is on, apart from an essential waiting signal kept as a steady or gently fading mark beside words.",
         levels: [
           "Retained.",
           "Reduced but still moving a large area.",
@@ -931,7 +931,8 @@ export const module9: Lesson[] = [
         minutes: 30,
         title: "Test discoverability",
         instructions: [
-          "Ask three people to complete the action without telling them how; if nobody is available, read the supplied made-up results and date the gap.",
+          "Before anyone starts, use your consent introduction from earlier modules: what you will ask, that they can stop at any time, and that only an unnamed summary is kept.",
+          "Ask up to three adults who agree to take part to complete the action without telling them how; if nobody is available, read the supplied made-up results and date the gap.",
           "Record what each reached for first.",
           "Note anyone who gave up or used a longer route.",
         ],
@@ -1101,7 +1102,7 @@ export const module9: Lesson[] = [
     misconception:
       "“Keyboard support means everything is reachable by tab.” Reachable is not usable. A composite where every element is a tab stop is technically reachable and practically unbearable, and a dialogue that traps focus with no escape is reachable and inescapable.",
     example:
-      "Made-up example: the date-selection component and the filter panel were specified before building. For the date component: one tab stop for the group, arrow keys to move between dates, enter or space to select, home and end for the first and last available, escape to close returning focus to the field. For the filter panel: focus moves into the panel when it opens, escape closes it and returns focus to the filter button, and tab cycles inside while it is open. A rough build was tested against the table and failed two rows — escape did nothing, and focus returned to the document top — both recorded as defects rather than as design changes.",
+      "Made-up example: the date-selection component and the filter panel were specified before building. For the date component: one tab stop for the group, arrow keys to move between dates, enter or space to select, home and end for the first and last day of the week, page up and down for the month, escape to close returning focus to the field. For the filter panel: focus moves into the panel when it opens, escape closes it and returns focus to the filter button, and tab cycles inside while it is open. A rough build was tested against the table and failed two rows — escape did nothing, and focus returned to the document top — both recorded as defects rather than as design changes.",
     freeToolPath:
       "Writing the table needs nothing. Testing it needs a rough local HTML file and your own keyboard; where nothing is built, record every row as untested rather than assumed.",
     outputs: [
@@ -1150,7 +1151,7 @@ export const module9: Lesson[] = [
         minutes: 15,
         title: "Record the gaps",
         instructions: [
-          "List the failures as defects for the build, not as design changes.",
+          "List failures from your own build as defects, not as design changes; list what a comparable product got wrong as risks for the build to avoid.",
           "Note where you departed from the pattern and why.",
           "Save both tables with their results.",
         ],
@@ -1290,7 +1291,7 @@ export const module9: Lesson[] = [
       "Never move focus without a reason the person would recognise.",
       "New content that matters must be announced or given focus, not silently inserted.",
       "Keep focus visible at every step; an invisible focus is a lost position.",
-      "Test by tabbing with your eyes closed for one step: can you tell where you are?",
+      "Test by pressing tab, looking away, then looking back: can you find where you are within a second?",
     ],
     explanation: [
       "Four moments deserve explicit decisions. Opening something — a panel, a dialogue — usually means focus moves into it, or the person's next tab lands somewhere unrelated. Closing means focus returns to the opener. Content replacing itself, as in a filtered list, usually means focus should stay where it is while the change is announced. An error appearing means focus moves to it, or to the first field concerned, so the person meets the problem rather than hunting for it.",
@@ -1495,7 +1496,7 @@ export const module9: Lesson[] = [
       "Drag and drop is a genuine improvement for arranging things and a genuine barrier for anyone with limited dexterity, a tremor, a touchpad they find awkward, or a screen reader. That does not make it wrong; it makes other routes mandatory, and there are two of them. A keyboard route — focus an item, then arrow keys, or Move up and Move down — serves people who do not use a pointer. A single-pointer route — tap Move, then tap where it should go, or Move up and Move down buttons — serves people who can point and click but cannot hold and drag. WCAG 2.2 success criterion 2.5.7, Dragging Movements, judges these separately: a keyboard equivalent alone does not meet the single-pointer requirement.",
       "Three signals make dragging legible: what is draggable, what is currently held, and where it will go. Products routinely provide the second and neglect the first and third, so people learn by accident that a row can be moved, and then guess where it will land. A visible drop indicator — a line, a gap, a highlighted target — is what turns a guess into a decision.",
       "Commit on release, let a move be cancelled before it lands — escape for the keyboard, a Cancel or a second tap for the pointer route — and offer a way back afterwards. An accidental reorder is a slip, and slips need recovery rather than confirmation; a brief undo is the right instrument, and the message that offers it should say what changed. Reordering that silently persists is unrecoverable for the person who did not notice they had done it.",
-      "On touch screens, dragging and scrolling compete for the same gesture, and the resolution has to be deliberate: a long press to enter a drag mode, a dedicated handle, or drag only in a mode the person turned on. Choosing nothing means the product will feel unpredictable — sometimes scrolling, sometimes dragging — which is worse than either.",
+      "On touch screens, dragging and scrolling compete for the same gesture, and the resolution has to be deliberate: a dedicated handle, or drag only in a Move mode the person turned on. A timed long press looks free and is not, because every thumb resting before a flick becomes a possible drag. Choosing nothing means the product will feel unpredictable — sometimes scrolling, sometimes dragging — which is worse than either.",
       "Reduced motion applies here too. With the setting on, the row should arrive in its new place without sliding through the list, while the new position is still shown on screen and stated in the message.",
     ],
     misconception:
@@ -1650,7 +1651,7 @@ export const module9: Lesson[] = [
           "As adequate, and the rule was tried on a real phone rather than reasoned about.",
         ],
         remediation:
-          "Choose a handle, a long press or a mode, then try scrolling the same list on a phone to confirm it still works.",
+          "Choose a handle or a mode, then try scrolling the same list on a phone to confirm it still works.",
         recheck: "The touch rule and the check.",
       },
     ],
@@ -2347,6 +2348,8 @@ export const module9: Lesson[] = [
         title: "Run three sessions",
         instructions: [
           "Run the tasks on each participant's own phone where possible; if nobody is available, walk both tasks yourself twice on a phone you did not design on and label it rehearsal.",
+          "Choose what is used: the working examples in lessons 2, 8 and 10 opened on the phone (feedback, reordering, saving), or a rough build if you have one.",
+          "Or use your Module 8 screens as a paper prototype, changing sheets yourself as “the computer” (order and finding things only, not timing). Name which in each record.",
           "Record double taps, hesitations and anything they could not find.",
           "Do not explain gestures or controls during the task.",
         ],
