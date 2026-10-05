@@ -191,7 +191,7 @@ export const guided11: Record<string, Guided> = {
       auto: 'Your definition, the five barriers, the decisions and the ranking save as you type, on this device first and then online.',
       external: 'Screens and prototypes stay where they already are on your computer. If you photographed anything during the situational tests, keep it in your own folder and note the file name here.',
       creator: 'Your creator reads the five barriers and the decision beside each one. A barrier traced back to a component you copied reads better than one blamed on nothing.',
-      next: 'Open Your work and choose Ready for review. The next lesson maps these five barriers onto the standard, so keep them exactly as they are.',
+      next: 'Open Your work and choose Ready for review. Keep these five barriers as they are: later lessons in this module check them one by one, and the library lesson Using the standard maps them to WCAG criteria.',
     },
   },
   'm11-l02-v1': {
@@ -201,7 +201,7 @@ export const guided11: Record<string, Guided> = {
       anchors: {
         weak: 'Copies criterion text without naming a change, or says the site conforms once the mapping is written.',
         adequate: 'Operable; timing adjustable (2.2.1) or pause, stop, hide (2.2.2). Meeting it means a visible, keyboard-reachable pause, or a setting to turn the advance off or lengthen it.',
-        strong: 'As adequate, plus the coloured ring mapped separately to use of colour (1.4.1, perceivable), and a sentence saying the mapping is design intent rather than tested conformance.',
+        strong: 'As adequate, plus the timer ring mapped separately: it needs a text equivalent such as 12 seconds left (non-text content, 1.1.1), and use of colour (1.4.1) applies only if its colour changes meaning; and a sentence saying the mapping is design intent rather than tested conformance.',
       },
     },
     route: textRoute,
@@ -252,12 +252,12 @@ export const guided11: Record<string, Guided> = {
             { label: 'What I did first', text: 'I opened the standard at the top and started reading. Forty minutes later I was in the middle of the second principle, had read about sign language, and had matched nothing.' },
             { label: 'Why that failed', text: 'Read front to back, the standard is a wall. Nothing in it is written about my product, so every criterion looks either irrelevant or vaguely applicable.' },
             { label: 'What I changed', text: 'I went back to the barrier and asked one question: what can this person not do? Not see, not work, or not understand? Swiping is working a control, so this is operable.' },
-            { label: 'Where that put me', text: 'Filtered to operable, at levels A and AA, there are far fewer criteria. The keyboard criterion says every function is available from a keyboard. That is exactly my barrier.' },
-            { label: 'What I wrote', text: '“Swipe-only removal · keyboard, 2.1.1 · every function can be worked from a keyboard.” Two minutes, once I asked the right question first.' },
+            { label: 'Where that put me', text: 'Filtered to operable, at levels A and AA, there are far fewer criteria. Pointer gestures, 2.5.1, says anything done with a swipe must also work with a single tap, with no path to trace. That is exactly my barrier, and keyboard, 2.1.1, applies too.' },
+            { label: 'What I wrote', text: '“Swipe-only removal · pointer gestures, 2.5.1, and keyboard, 2.1.1 · a visible Remove button that works with one tap and from the keyboard.” Two minutes, once I asked the right question first.' },
           ],
           wrongTurn: 'The wrong turn is starting in the standard rather than in the barrier. It feels thorough and it produces a compliance pass: a lot of reading, and no change to the thing that excludes somebody.',
           tradeoff: 'Filtering from your barriers means you will not read most of the standard, and there are certainly criteria you are failing that no barrier of yours named. That is a real gap, and it is smaller than the gap left by reading everything and mapping nothing.',
-          uncertainty: 'Still unknown: whether one criterion is enough for this barrier. A swipe-only control may also fail target size or pointer gestures, and I have not checked.',
+          uncertainty: 'Still unknown: whether these two criteria are enough for this barrier. The new Remove button may also fail target size, and I have not checked.',
         },
         sorter: {
           intro: 'Six barriers from a made up library-booking product. For each one, decide which principle to filter by first — that is the whole trick to finding the criterion quickly.',
@@ -447,7 +447,7 @@ export const guided11: Record<string, Guided> = {
           uncertainty: 'Still unknown: whether the two month lists should be headings at all, or a single list with dates in it. Both outlines read sensibly, and nothing in this lesson decides between them.',
         },
         sorter: {
-          intro: 'Six headings from a made up tool-library screen. For each one, decide what kind of heading it is.',
+          intro: 'Six headings from a made up page called Borrowing a cordless drill. For each one, decide what kind of heading it is.',
           options: ['describes its own section', 'could sit above anything', 'describes the whole page'],
           items: [
             { id: 'what-to-bring', text: 'What you need to bring', answer: 'describes its own section',
@@ -462,11 +462,11 @@ export const guided11: Record<string, Guided> = {
                 'could sit above anything': 'This is the commonest empty heading. It occupies the position of a signpost and points nowhere.',
                 'describes the whole page': 'It is not doing that either. It is not describing anything.',
               } },
-            { id: 'tool-library', text: 'Northside Tool Library', answer: 'describes the whole page',
+            { id: 'tool-library', text: 'Safety checks before you use it', answer: 'describes its own section',
               feedback: {
-                'describes its own section': 'Nothing is underneath it in particular. It is naming the place rather than a part of it.',
-                'could sit above anything': 'It is specific. The difficulty is that it is specific about the whole thing.',
-                'describes the whole page': 'This is a page title. There should be exactly one, and a second one sends a reader looking for a page they have not left.',
+                'describes its own section': 'It names one part of the page, so a reader knows whether to stop here or move on.',
+                'could sit above anything': 'It names one specific part and would be wrong above the opening hours or the late-return rules.',
+                'describes the whole page': 'The page is about borrowing the drill; the safety checks are one part of it. A second whole-page heading sends a reader looking for a page they have not left.',
               } },
             { id: 'more-information', text: 'More information', answer: 'could sit above anything',
               feedback: {
@@ -482,9 +482,9 @@ export const guided11: Record<string, Guided> = {
               } },
             { id: 'borrowing-drill', text: 'Borrowing a cordless drill', answer: 'describes the whole page',
               feedback: {
-                'describes its own section': 'It could be, on a longer page about borrowing generally. On a page about this one drill it is the subject of the whole thing.',
+                'describes its own section': 'It could be, on a longer page about borrowing generally. On this page about the one drill it is the subject of the whole thing.',
                 'could sit above anything': 'It is entirely specific, which is why the choice here is between the other two.',
-                'describes the whole page': 'On a page about borrowing this drill, this is the page title. Deciding that is the point: the same words are a section heading somewhere else.',
+                'describes the whole page': 'On a page about borrowing this drill, this is the one top-level heading, and there should be exactly one. Deciding that is the point: the same words are a section heading somewhere else.',
               } },
           ],
           then: 'Now read your own two outlines and mark each heading with one of the three. Anything in the middle group gets rewritten.',
@@ -572,11 +572,11 @@ export const guided11: Record<string, Guided> = {
   'm11-l04-v1': {
     transfer: {
       scenario: 'Made-up case: a library renewal page shows a Renew button greyed out at 2.1 to 1 when an item cannot be renewed, a small grey hint under the card-number field at 3.2 to 1, and the library logo in pale gold at 1.8 to 1.',
-      prompt: 'Decide which of the three must be repaired to meet contrast (minimum), and explain why each of the others is or is not covered.',
+      prompt: 'Decide what must change on this page, and explain why each of the three is or is not covered by contrast (minimum).',
       anchors: {
         weak: 'Says all three fail, or treats darkening the greyed-out button as a requirement.',
-        adequate: 'Only the hint must reach 4.5 to 1, because it is ordinary small text. The inactive button and the logo are exempt from the criterion; making the disabled state readable is a design choice, not a repair owed.',
-        strong: 'As adequate, plus a readable line saying why renewal is unavailable, which then must meet 4.5 to 1 itself, and a note that passing the ratio is a floor (size, weight, light).',
+        adequate: 'Only the hint must reach 4.5 to 1, because it is ordinary small text. The inactive button and the logo are exempt from the ratio, but nothing says why renewal is unavailable, so add a readable reason line, which must meet 4.5 to 1; darkening the button itself is not owed.',
+        strong: 'As adequate, plus the reason line placed beside the button so it is read with it, and a note that passing the ratio is a floor (size, weight, light).',
       },
     },
     route: textRoute,
@@ -868,11 +868,11 @@ export const guided11: Record<string, Guided> = {
                 'fails greyscale': 'It would if the underline were removed, which is exactly what many designs do.',
                 'survives only because of something else on the screen': 'The underline is part of the link itself rather than something elsewhere on the screen.',
               } },
-            { id: 'required-star', text: 'Required fields shown by a red label, with a line at the top of the form saying red labels are required.', answer: 'survives only because of something else on the screen',
+            { id: 'required-star', text: 'Required fields shown by a red label, with a line at the top of the form saying red labels are required.', answer: 'fails greyscale',
               feedback: {
                 'survives greyscale': 'In grey, the labels are all the same colour and the person cannot tell which were red.',
-                'fails greyscale': 'It does fail, and the interesting part is why it looked safe: an explanation was provided.',
-                'survives only because of something else on the screen': 'The sentence at the top makes it feel handled. It explains a distinction the reader can no longer see, which is worse than no explanation.',
+                'fails greyscale': 'It fails, and the interesting part is why it looked safe: an explanation was provided. The line explains a distinction the reader can no longer see.',
+                'survives only because of something else on the screen': 'The sentence at the top is the something else, and it is what stops working: it names a colour code and points at no field.',
               } },
             { id: 'error-text', text: 'A field with a red border, an icon of a triangle, and the message The date must be in the future underneath it.', answer: 'survives greyscale',
               feedback: {
@@ -1023,7 +1023,7 @@ export const guided11: Record<string, Guided> = {
                 'a severe difficulty': 'Working blind for a whole panel is exhausting and error-prone, and it does not end the task. It ranks below anything that does.',
                 'works as intended': 'Being able to see where you are is part of the control working, not an extra.',
               } },
-            { id: 'trap', text: 'The filter panel takes focus, tab cycles inside it forever, and escape does nothing.', answer: 'a total block',
+            { id: 'trap', text: 'The filter panel takes focus, tab cycles inside it forever without reaching a close or apply button, and escape does nothing.', answer: 'a total block',
               feedback: {
                 'a total block': 'The person cannot even leave and try another way. A trap is the one failure that removes the ability to abandon the attempt.',
                 'a severe difficulty': 'Reloading the page and losing everything entered is not a difficult route to the outcome. It is the absence of one.',
@@ -1052,19 +1052,19 @@ export const guided11: Record<string, Guided> = {
           pattern: 'The two that get misranked are the invisible focus and the trap. Invisible focus is the one you notice most and it does not stop anybody; a trap is quiet until you try to leave, and it strands the person completely.',
         },
         start: 'Start the task and write the first key you press before you press it. Keep writing as you go.',
-        enough: 'Somebody else could repeat your attempt from the log, key for key.' },
+        enough: 'Somebody else could repeat your attempt from the log, key for key. On the paper route, someone could repeat your walk-through from the key tables.' },
       { expect: 'Every custom control entered and left on purpose, with anything that captured focus written down.',
         fields: ['trap-hunt', 'traps-found'],
         terms: [
-          { term: 'Keyboard trap', meaning: 'A place you can move into and cannot move out of with the keyboard. It is the worst kind of failure, because the person cannot even leave and try something else.' },
+          { term: 'Keyboard trap', meaning: 'A place you can move into and cannot move out of with the keyboard. It is the worst kind of failure, because the person cannot even leave and try something else. A modal panel may keep Tab inside it on purpose; it is a trap only when no key gets you out.' },
           { term: 'Custom control', meaning: 'Anything built rather than taken from the browser: a date picker, a menu, a slider, a dialogue. Keyboard support usually disappears exactly here.' },
         ],
         demo: {
           scenario: 'Made-up example. Hunting for traps in a borrowing product, and finding one only because I stopped testing the happy way round.',
           beats: [
-            { label: 'What I did at first', text: 'I entered the filter panel, used it, and left it by pressing the Apply button. Out cleanly, no trap, on to the next control.' },
-            { label: 'Why that proved nothing', text: 'I left by the route the panel was designed around. A trap is about the routes nobody designed: tab past the end, and escape.' },
-            { label: 'What happened on the second try', text: 'I entered the panel and pressed tab until I ran out of controls. Focus went back to the first control in the panel and stayed there. Tab could never leave.' },
+            { label: 'What I did at first', text: 'I entered the filter panel, used it, and left by clicking Apply with the trackpad, out of habit. Out cleanly, no trap, on to the next control.' },
+            { label: 'Why that proved nothing', text: 'I left with a pointer, which the test had ruled out, by the route the panel was designed around. A trap is about the keyboard routes out: tab past the end, and escape.' },
+            { label: 'What happened on the second try', text: 'I entered the panel and pressed tab until I ran out of controls. Tab cycled through the filters and never reached Apply, which appears only on hover. Focus went back to the first filter each time, so tab could never leave.' },
             { label: 'And escape', text: 'Escape did nothing at all. With no pointer, the only way out of that panel was to reload the page and lose everything already entered.' },
             { label: 'What I recorded', text: 'A trap, with the two routes tried and the two results, and the expected behaviour from my key table: escape closes and returns focus to the control that opened it.' },
           ],
@@ -1204,7 +1204,7 @@ export const guided11: Record<string, Guided> = {
           { term: 'Announced', meaning: 'The new message is spoken, rather than silently appearing. A message nobody is told about is a message for sighted readers only.' },
         ],
         sorter: {
-          intro: 'Six error messages from a made up tool-library form. For each one, decide what it does for the person reading it.',
+          intro: 'Seven error messages from a made up tool-library form. For each one, decide what it does for the person reading it.',
           options: ['names the fix', 'describes the failure only', 'blames the person'],
           items: [
             { id: 'invalid', text: 'Invalid input.', answer: 'describes the failure only',
@@ -1509,7 +1509,7 @@ export const guided11: Record<string, Guided> = {
       auto: 'The inventory, the classifications, the alt text and the removal-test notes save as you type, on this device first and then online.',
       external: 'The images themselves stay in your own folder. Nothing here uploads a picture; the worksheet holds the words that stand in for them.',
       creator: 'Your creator reads the classification column and the removal test. Nine images marked decorative on purpose reads better than fourteen careful descriptions.',
-      next: 'Open Your work and choose Ready for review. The next lesson looks at anything that moves, plays or expires.',
+      next: 'Open Your work and choose Ready for review. On the core path, the next lesson listens to your screens with a screen reader. The library lesson after this one looks at anything that moves, plays or expires.',
     },
   },
   'm11-l09-v1': {
@@ -1727,7 +1727,7 @@ export const guided11: Record<string, Guided> = {
         { id: 'noise', label: 'Every place something was announced that was not worth saying', kind: 'long', hint: 'Filenames, the word button on its own, a decorative image being described, a label read twice.' },
       ] },
       { id: 'map', title: 'Back to the decisions', fields: [
-        { id: 'failure-map', label: 'For each failure: the earlier decision that caused it', kind: 'long', example: 'Example (made up): the dot was silent because availability was carried by colour, which I decided in Module 8 and repaired in lesson 5 on paper but not in this build.' },
+        { id: 'failure-map', label: 'For each failure: the earlier decision that caused it', kind: 'long', hint: 'On the practice route (the lab page or a public page), the failures are not yours to trace: name, for each one, the decision you would check in your own design.', example: 'Example (made up): the dot was silent because availability was carried by colour, which I decided in Module 8 and repaired in lesson 5 on paper but not in this build.' },
         { id: 'spec-or-build', label: 'For each failure: is it missing from your specification, or missing from the build?', kind: 'long', hint: 'The two go to different people. Mixing them means neither gets fixed.' },
       ] },
       { id: 'boundary', title: 'What this session does and does not establish', fields: [
@@ -1884,7 +1884,7 @@ export const guided11: Record<string, Guided> = {
       auto: 'Your setup notes, what you heard, the failure map and the boundary statement save as you type, on this device first and then online.',
       external: 'If you recorded the audio of your session, keep it in your own private folder and note the file name. Nothing is uploaded from here.',
       creator: 'Your creator reads the boundary statement first and the findings second. That order is deliberate, and it is how a reviewer will read it too.',
-      next: 'Open Your work and choose Ready for review. The next lesson checks the same product against Indian guidelines, language and connection conditions.',
+      next: 'Open Your work and choose Ready for review. On the core path, the next lesson turns all of this into one honest accessibility statement. The library lesson after this one checks the same product against Indian guidelines, language and connection conditions.',
     },
   },
   'm11-l11-v1': {
@@ -1968,41 +1968,42 @@ export const guided11: Record<string, Guided> = {
         ],
         sorter: {
           intro: 'Six observations from a made up check on a tool-library product. For each one, decide what kind of problem it is.',
-          options: ['a layout decision made now', 'a translation job for later', 'not a problem'],
+          options: ['a design decision made now', 'a translation job for later', 'not a problem'],
+          was: { 'a design decision made now': ['a layout decision made now'] },
           items: [
-            { id: 'nav-width', text: 'The five navigation labels fit exactly, with no room to grow, and the row does not wrap.', answer: 'a layout decision made now',
+            { id: 'nav-width', text: 'The five navigation labels fit exactly, with no room to grow, and the row does not wrap.', answer: 'a design decision made now',
               feedback: {
-                'a layout decision made now': 'Any language with longer words breaks this, and letting it wrap costs nothing today. It is a decision about the container, not about words.',
+                'a design decision made now': 'Any language with longer words breaks this, and letting it wrap costs nothing today. It is a decision about the container, not about words.',
                 'a translation job for later': 'The translating is later. The room for the translation is a choice you are making now.',
                 'not a problem': 'It is not a problem in English, which is exactly why it survives until the day it becomes an expensive one.',
               } },
-            { id: 'date-slash', text: 'Dates are written 03/04 with no year and no month name.', answer: 'a layout decision made now',
+            { id: 'date-slash', text: 'Dates are written 03/04 with no year and no month name.', answer: 'a design decision made now',
               feedback: {
-                'a layout decision made now': 'It reads as two different days depending on where somebody grew up, today, in English. Writing 3 April 2026 fixes it in a minute.',
+                'a design decision made now': 'It reads as two different days depending on where somebody grew up, today, in English. Writing 3 April 2026 fixes it in a minute.',
                 'a translation job for later': 'Nothing needs translating. The ambiguity is in the format itself.',
                 'not a problem': 'Two readers reading two different days from the same booking is a real problem before anything is translated.',
               } },
-            { id: 'matra-clip', text: 'A label written in Devanagari has the mark above the character cut off by the line height.', answer: 'a layout decision made now',
+            { id: 'matra-clip', text: 'A label written in Devanagari has the mark above the character cut off by the line height.', answer: 'a design decision made now',
               feedback: {
-                'a layout decision made now': 'Line height is set in your own design. A cut matra can change the word, so this is a correctness problem rather than a cosmetic one.',
+                'a design decision made now': 'Line height is set in your own design. A cut matra can change the word, so this is a correctness problem rather than a cosmetic one.',
                 'a translation job for later': 'The text is already there. What is failing is the space you gave it.',
                 'not a problem': 'A vowel mark removed is a different word, not a slightly untidy one.',
               } },
             { id: 'sort-order', text: 'The class list is sorted alphabetically by a rule that assumes Latin letters.', answer: 'a translation job for later',
               feedback: {
-                'a layout decision made now': 'Nothing about the layout causes it, and you cannot fix the sorting rule from a design file.',
+                'a design decision made now': 'Nothing about the layout causes it, and you cannot fix the sorting rule from a design file.',
                 'a translation job for later': 'Sorting is language-dependent and genuinely belongs with real language support. Recording it as a known limitation now is the right move.',
                 'not a problem': 'It will produce an order that looks arbitrary to a reader of that language. It is a real limitation, and a deferred one.',
               } },
-            { id: 'banner-text', text: 'The offer is set inside a promotional picture.', answer: 'a layout decision made now',
+            { id: 'banner-text', text: 'The offer is set inside a promotional picture.', answer: 'a design decision made now',
               feedback: {
-                'a layout decision made now': 'Translating a picture means redrawing it, for every language, for ever. Taking the words out now is a design change you can make today.',
+                'a design decision made now': 'Translating a picture means redrawing it, for every language, for ever. Taking the words out now is a design change you can make today.',
                 'a translation job for later': 'It is made far more expensive by leaving it, which is what makes it a decision for now.',
                 'not a problem': 'It is invisible to translation, to search, to enlargement and to anybody listening.',
               } },
-            { id: 'lock-screen', text: 'A notification on the lock screen names the exact class that was booked.', answer: 'a layout decision made now',
+            { id: 'lock-screen', text: 'A notification on the lock screen names the exact class that was booked.', answer: 'a design decision made now',
               feedback: {
-                'a layout decision made now': 'On a shared device the lock screen is read by whoever is nearby. Saying “a class you booked” instead is a wording decision available immediately.',
+                'a design decision made now': 'On a shared device the lock screen is read by whoever is nearby. Saying “a class you booked” instead is a wording decision available immediately.',
                 'a translation job for later': 'Nothing here is about language at all.',
                 'not a problem': 'It assumes the phone belongs to one person, which is the assumption this lesson is asking you to question.',
               } },
@@ -2096,7 +2097,7 @@ export const guided11: Record<string, Guided> = {
         { id: 'target-sentence', label: 'The target level, and the sentence saying conformance was not tested', kind: 'short' },
       ] },
       { id: 'untested', title: 'What you have not looked at', fields: [
-        { id: 'untested-list', label: 'Everything you have not examined, including assistive technology you do not use', kind: 'long', hint: 'Switch access, voice control, screen readers on platforms you do not own, braille displays, magnification.' },
+        { id: 'untested-list', label: 'Everything you have not examined, including assistive technology you do not use', kind: 'long', hint: 'Switch access, voice control, screen readers on platforms you do not own, braille displays, magnification. A model line: We have not tested with switch access or voice control.' },
         { id: 'most-likely', label: 'Which untested area you think most likely hides a problem, and why', kind: 'short' },
       ] },
       { id: 'plan', title: 'Testing with disabled participants', fields: [
@@ -2168,11 +2169,11 @@ export const guided11: Record<string, Guided> = {
                 'a specified intention': 'It describes required behaviour. Written in a statement without that qualifier, it reads as a fact and is not one.',
                 'an untested claim': 'It is closer to this than it looks, which is why the qualifier matters so much in a published document.',
               } },
-            { id: 'switch-untested', text: 'We have not tested with switch access or voice control.', answer: 'a tested result',
+            { id: 'switch-untested', text: 'On 14 March all 31 text pairs were measured for contrast; two failed and both were fixed.', answer: 'a tested result',
               feedback: {
-                'a tested result': 'It is an accurate report of the state of your knowledge, which is exactly what a statement is for. Naming what you did not do is a result.',
-                'a specified intention': 'Nothing is being promised here.',
-                'an untested claim': 'It claims nothing about the product at all. It describes the testing.',
+                'a tested result': 'Date, method, count and outcome. A reader can see exactly what was measured and what changed.',
+                'a specified intention': 'Nothing here is about what should happen. It reports what was measured.',
+                'an untested claim': 'It says nothing about the rest of the product. Contrast was measured, and only contrast is claimed.',
               } },
             { id: 'accessible-all', text: 'The product is fully accessible.', answer: 'an untested claim',
               feedback: {

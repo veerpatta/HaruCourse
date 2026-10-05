@@ -113,11 +113,14 @@ export function actionQuestion(l:Lesson,a:LessonAction) {
  if(a.kind==='sort') {
    const sorter=a.guideIndex===undefined ? guide?.find(g=>g.sorter)?.sorter : guide?.[a.guideIndex]?.sorter;
    const item=sorter?.items[a.index!];
-   return sorter && item && {id:a.answerId || `sort-${item.id}`,question:item.text,options:sorter.options.map(label=>({label,feedback:item.feedback[label],...(label===item.answer?{correct:true as const}:{})}))};
+   return sorter && item && {id:a.answerId || `sort-${item.id}`,question:item.text,options:sorter.options.map(label=>({label,feedback:item.feedback[label],...(label===item.answer?{correct:true as const}:{}),...(sorter.was?.[label]?{was:sorter.was[label]}:{})}))};
  }
 }
 
 export function fieldRequired(field: WorksheetField, record: {worksheet?: Record<string,string>}) {
  if(field.optional) return false;
- return !field.requiredWhen || field.requiredWhen.values.includes(record.worksheet?.[field.requiredWhen.field] || '');
+ const when=field.requiredWhen;
+ if(!when) return true;
+ const holds=(c:{field:string;values:string[]})=>c.values.includes(record.worksheet?.[c.field] || '');
+ return holds(when) || (!!when.or && holds(when.or));
 }
