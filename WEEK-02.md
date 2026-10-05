@@ -424,20 +424,20 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 One person who booked a class last month tells you they never open confirmation emails. What have you established?
 
 - Nothing yet, because a single participant is not a sample of anything at all.
+- That one relevant person reports not opening them, so you cannot assume everyone does.
 - That your confirmation email design needs work before the next class goes out.
 - That most people probably do not read confirmation emails, at least for classes.
-- That at least one relevant person does not, so you cannot assume that everyone does.
 
 <details>
 <summary>After your attempt</summary>
 
-Nothing yet, because a single participant is not a sample of anything at all. — Too dismissive. One clear account of a behaviour is a fact about the world; what it cannot give you is prevalence.
+Nothing yet, because a single participant is not a sample of anything at all. — Too dismissive. One clear report shows the behaviour is possible and worth checking; what it cannot give you is prevalence, or proof of what they actually do.
+
+That one relevant person reports not opening them, so you cannot assume everyone does. — One account cannot say how common it is, and a report of a habit is not the same as watching it. It is still real evidence that the behaviour is possible, which is usually enough to stop you building a design on the opposite assumption.
 
 That your confirmation email design needs work before the next class goes out. — That jumps to a repair. If nobody opens it, better wording is not the answer, and you would have skipped past the finding.
 
 That most people probably do not read confirmation emails, at least for classes. — One person cannot support “most”. Written that way it will be repeated later without the caveat, and it will be treated as a number.
-
-That at least one relevant person does not, so you cannot assume that everyone does. — One account cannot say how common it is, and it is real evidence that the behaviour exists. That is usually enough to change a design you were about to build on the opposite assumption.
 
 Improve: Check the limitation box in step 5. If it does not say that this study cannot establish how common anything is, add that sentence and note it in step 5.
 
@@ -1099,7 +1099,7 @@ Made-up example. Grouping six practice notes, where the first two groups were so
 
 **Why it felt right:** Each note went somewhere at once and nothing was left over. It looked finished in about a minute.
 
-**What was wrong with it:** Email is where the note happened, not what happened. S2 searching on the journey and S4 reading the list before booking are two places and one behaviour.
+**What was wrong with it:** Email is where the note happened, not what happened. S1 looking the evening before and S2 searching on the journey landed in different piles, yet they are one behaviour: checking late.
 
 **The names I ended with:** “Preparing at the last moment” and “Preparing before committing”. Names I could turn out to be wrong about, which is what a group name is for.
 
@@ -1468,7 +1468,7 @@ Write your decision first, then the reason it fits this new case. Compare with t
 <summary>Compare after writing</summary>
 
 - Weak: Writes a claim the notes cannot support (“nobody reads the rota”, “most people ask neighbours”) or a recommendation (“put the rota online”), with no note IDs.
-- Adequate: Writes a finding that holds for all four — for example, people learn about the rota at different times and in different places — cites A1 to A4, keeps A3 visible, and labels the notes as practice material.
+- Adequate: Writes a finding the notes support — for example, these four came to the rota at different times and in different ways, or not at all (A3) — cites A1 to A4, keeps A3 visible as the exception, and labels the notes as practice material.
 - Strong: Adequate, plus says what four notes cannot show (how common each route is), names a question the notes cannot answer, and writes one implication as possible rather than proven.
 
 </details>
@@ -1744,7 +1744,7 @@ Three responses that differ in kind, each with an expected effect and an effort 
 
 **Start here:** Write one option with no screen in it. If you cannot, the finding may be about a screen you already decided on.
 
-**Enough:** No two options would succeed or fail for the same reason.
+**Enough:** No two options would succeed or fail for the same reason, and at least one involves no screen.
 
 **Effort estimate:** Your guess at the work involved. It stays an estimate unless something measured it, so write the reason beside it.
 
@@ -2195,7 +2195,7 @@ Write your decision first, then the reason it fits this new case. Compare with t
 <summary>Compare after writing</summary>
 
 - Weak: Picks the option that is most fun to design, or writes “it will improve visitor satisfaction”, with no observable signal and nothing that could show it failing.
-- Adequate: Chooses one option for a stated reason tied to the notes and writes “If …, a first-time visitor can find the right entrance without asking staff”, with a signal that would show it failing.
+- Adequate: Chooses one option for a stated reason tied to the notes and writes a hypothesis ending in something observable, such as “If …, a first-time visitor reaches the right entrance first time”, with a signal that would show it failing.
 - Strong: Adequate, plus labels effort as an estimate with its reason, lists what the test leaves out, and notes that four simulated notes cannot show how common wrong-entrance trips are.
 
 </details>

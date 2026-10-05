@@ -35,7 +35,7 @@ const week1 = [
       "Product design is deciding what a service should help someone do, then shaping it so they can do it and the people running it can keep it going.",
       "UX is short for user experience: the whole task, start to finish. UI is short for user interface: the controls, words and layout on the screen.",
       "A screen is something you made. Someone finishing what they came to do is what happened. Only the second one tells you the design worked.",
-      "Sort what you notice into three. Observed: you can point at it. Inferred: your guess about why. Unknown: the screen cannot tell you. Telling these apart is the skill of this lesson.",
+      "Sort what you notice into three. Observed: you can point at it. Inferred: your reading of what other people do or feel, or why. Unknown: the screen cannot tell you. Telling these apart is the skill of this lesson.",
       "You will not do this alone in a job. Designers work with product managers, engineers and researchers, and that starts long before anything looks finished.",
     ],
     example:
@@ -76,7 +76,7 @@ const week1 = [
       "One task, followed from start to finish",
       "Five things you noticed, each labelled observed, inferred or unknown",
       "What the person wanted, and what the company probably wanted",
-      "Two improvements, each with a way to tell whether it helped",
+      "Two improvements, each with a way to tell whether it helped, and what one of them costs",
     ],
     repairs: [
       "If your goal names a screen or a button, rewrite it as something the person needs to have happen.",
@@ -114,7 +114,7 @@ const week1 = [
         title: "Compare",
         instructions: [
           "Suggest one change to how it looks, and one change to what it does.",
-          "For each, name something you could watch to tell whether it helped.",
+          "For each, name something you could watch to tell whether it helped, and say what the change to what it does costs.",
         ],
       },
       {
