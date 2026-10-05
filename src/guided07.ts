@@ -317,7 +317,7 @@ export const guided07: Record<string, Guided> = {
       { id: 'paths', title: 'The three paths', intro: 'Drawn on the flow you already have, not on a separate sheet.', fields: [
         { id: 'signup-signin', label: 'Sign-up and sign-in, written out as the nodes you added to the flow', kind: 'long' },
         { id: 'recovery-route', label: 'The recovery route that does not depend on the thing that was lost, and the channel she verified earlier that it uses instead', kind: 'long', hint: 'Name the lost factor first, then the route. If the route uses the lost factor, it is the same wall drawn twice. If it accepts facts printed on a booking confirmation, a stranger holding that message could use it too.' },
-        { id: 'contact-change', label: 'How a change of phone number or email is confirmed: the verified channel or reviewed check it needs, who is told, and how long it can be undone', kind: 'long', hint: 'A booking reference and a class date identify a booking, not a person. Write the rules and wording only, never a real number, code or address.', example: 'Example (made up): a new number is confirmed by a code sent to the email she verified at sign-up; the old number gets a message saying the number changed; the change can be undone from that message for 24 hours.' },
+        { id: 'contact-change', label: 'How a change of phone number or email is confirmed: the verified channel or reviewed check it needs, who is told, and how long it can be undone', kind: 'long', hint: 'A booking reference and a class date identify a booking, not a person. Write the rules and wording only, never a real number, code or address.', example: 'Example (made up): a new number is confirmed by a code sent to the email she verified at sign-up; the old number gets a short message naming no account details, since it may already belong to someone else; the full notice goes to the verified email, and the change can be undone from it for 24 hours.' },
         { id: 'nothing-left', label: 'The ending for someone who genuinely has nothing left', kind: 'short', hint: 'A reviewed route to a person is a legitimate part of the design. Write how that person checks identity before anything changes, and put it on the flow rather than leaving it to a support inbox.' },
       ] },
       { id: 'messages', title: 'Every message, attached to its field', intro: 'One field at a time. Wording only; no real credentials anywhere.', fields: [
@@ -371,7 +371,7 @@ export const guided07: Record<string, Guided> = {
             { label: 'Send the code to the old number again, in case the first message was delayed by her network.', was: ['Send the code to the old number again, in case the first message was delayed.'], feedback: 'The number is exactly what she has lost, so the second message arrives where the first one did. Repeating a step is not a different factor.' },
             { label: 'Ask the security question she set when she registered, and change the number if she answers it.', was: ['Ask her the security question she chose when she registered.'], feedback: 'Answers to security questions are often guessable or findable, and she may not remember hers. A channel she verified earlier is far harder for a stranger to borrow.' },
             { label: 'Have her open a new account under her new number and move her bookings across to it.', was: ['Tell her to create a new account with her new number.'], feedback: 'A second account does not get her back into the first one: her history and payments stay behind, and moving bookings across means someone must decide she owns them, which is the same identity check by another name.' },
-            { label: 'Send a code to the email she confirmed at sign-up, then tell the old number and allow a day to undo.', correct: true, feedback: 'The email is a channel she verified earlier and still holds. Telling the old number, and leaving a day to undo the change, means a stranger who got in this way would be noticed and reversed.' },
+            { label: 'Send a code to the email she confirmed at sign-up, then tell the old number and allow a day to undo.', correct: true, feedback: 'The email is a channel she verified earlier and still holds. Telling the old number, and leaving a day to undo the change, means a stranger who got in this way would be noticed and reversed. Keep the message to the old number free of account details, because a lost number may already belong to someone else.' },
           ],
           then: 'Draw at least one recovery route on your own flow that uses a channel the person verified earlier, write the reply that reads the same whether or not an account exists, and draw the reviewed route for someone who has nothing left.',
         },
@@ -432,7 +432,7 @@ export const guided07: Record<string, Guided> = {
       anchors: {
         weak: 'Accepts the permit number and registration as proof, or replies differently depending on whether an account exists, such as “No account found for that number”.',
         adequate: 'Rejects them, because anyone who sees the windscreen knows both; routes the change through a code to the email she confirmed, or a reviewed check, with one reply for everyone: “If an account matches, we have sent instructions.”',
-        strong: 'As adequate, and tells the old number about the change, allows a window to undo it, and writes down the reviewed manual check for someone with no confirmed email.',
+        strong: 'As adequate, and tells the old number about the change without naming account details, allows a window to undo it, and writes down the reviewed manual check for someone with no confirmed email.',
       },
     },
   },
@@ -510,10 +510,10 @@ export const guided07: Record<string, Guided> = {
                 'disabled with a reason': 'A greyed-out row of management controls on every class page tells a customer nothing she can use, and leaves her wondering what she is missing.',
                 'a route to ask': 'Nobody is going to grant a customer the right to change the price of a class. Offering a request invents a question with no answer at the other end.',
               } },
-            { id: 'late-cancel', text: 'A customer opens her own booking. The class starts in two hours and free cancellation closed a day ago. The cancel control.', answer: 'disabled with a reason',
+            { id: 'late-cancel', text: 'A customer opens her own booking. The class starts in two hours and cancelling closed a day ago. The cancel control.', answer: 'disabled with a reason',
               feedback: {
                 hidden: 'This is the classic mistake. She knows cancelling exists, so a missing control reads as a broken page, and she rings the shop to find out what happened.',
-                'disabled with a reason': 'She needs to see that the control exists and why it is unavailable now. “Free cancellation closed at 10am yesterday” answers the question she actually has.',
+                'disabled with a reason': 'She needs to see that the control exists and why it is unavailable now. “Cancelling closed at 10am yesterday” answers the question she actually has. Lesson 10 calls this not-now case unavailable.',
                 'a route to ask': 'The deadline has already passed and the rule is the product’s own. A request route sends her away to wait and come back to the same answer.',
               } },
             { id: 'refund-button', text: 'A helper is looking at a booking a customer wants refunded. Only the owner issues refunds, and customers ask the helper first because she is the one at the door.', answer: 'a route to ask',
@@ -611,12 +611,12 @@ export const guided07: Record<string, Guided> = {
         { id: 'preserved-state', label: 'Exactly what must be restored when someone returns to results', kind: 'long', hint: 'The search words, the filters, the sort order, the place in the list, and which results she has already opened.' },
         { id: 'walk-loss', label: 'What you actually lost when you searched, opened the third result and went back', kind: 'short' },
       ] },
-      { id: 'result-item', title: 'What goes on one result', intro: 'One field per box, most important first, each traced to something you watched somebody compare on.', fields: [
-        { id: 'result-field-1', label: 'Result field 1 · what it is and the observation it came from', kind: 'short', sensitive: true, hint: 'Refer to people by label, never by name. With no observation, name the source you do have, such as a real message or your own walkthrough, and mark a guess as a guess.', example: 'Example (made up): day and time, because both participants said the day first when describing what they wanted.' },
-        { id: 'result-field-2', label: 'Result field 2 · what it is and the observation it came from', kind: 'short', sensitive: true },
-        { id: 'result-field-3', label: 'Result field 3 · what it is and the observation it came from', kind: 'short', sensitive: true },
-        { id: 'result-field-4', label: 'Result field 4 · what it is and the observation it came from', kind: 'short', sensitive: true },
-        { id: 'result-field-5', label: 'Result field 5 · what it is and the observation it came from', kind: 'short', sensitive: true },
+      { id: 'result-item', title: 'What goes on one result', intro: 'One field per box, most important first, each traced to where you learned people compare on it, or marked a guess.', fields: [
+        { id: 'result-field-1', label: 'Result field 1 · what it is, and its source or the word guess', kind: 'short', sensitive: true, hint: 'Refer to people by label, never by name. With no observation, name the source you do have, such as a real message or your own walkthrough, and mark a guess as a guess.', example: 'Example (made up): day and time, because both participants said the day first when describing what they wanted.' },
+        { id: 'result-field-2', label: 'Result field 2 · what it is, and its source or the word guess', kind: 'short', sensitive: true },
+        { id: 'result-field-3', label: 'Result field 3 · what it is, and its source or the word guess', kind: 'short', sensitive: true },
+        { id: 'result-field-4', label: 'Result field 4 · what it is, and its source or the word guess', kind: 'short', sensitive: true },
+        { id: 'result-field-5', label: 'Result field 5 · what it is, and its source or the word guess', kind: 'short', sensitive: true },
         { id: 'omissions', label: 'What you deliberately left off a result, and why', kind: 'long', hint: 'Something left off on purpose is a decision. Something forgotten is not.' },
       ] },
       { id: 'extremes', title: 'Too many, and none at all', fields: [
@@ -656,12 +656,12 @@ export const guided07: Record<string, Guided> = {
         },
         start: 'Draw the boxes you already have, then draw the arrow from the item back to the results and write on the arrow itself.',
         enough: 'The preserved list names specific things rather than “the state”.' },
-      { demo: { scenario: 'Made-up example. Choosing the fields for one result card, and finding that most of them were there because the database happened to hold them.', beats: [{ label: 'My first card', text: 'Title, teacher, level, date, time, length, place, distance, price, places left, and a photograph. Eleven things, and it looked full rather than useful.' }, { label: 'The question I then asked', text: 'For each field: what does this decide while somebody compares this row against the one underneath it? Not what does it tell them. What does it settle.' }, { label: 'What failed that question', text: 'Length and level. Nobody in my notes had raised either while choosing; both came up afterwards, once a class was already open in front of them.' }, { label: 'What survived, in order', text: 'Day and time first, because that is what people said aloud before anything else. Then the price, then how far away it is, then whether places are left.' }, { label: 'What I left off on purpose', text: 'The teacher’s name. It matters enormously to somebody who has been before and means nothing to a first-timer, so it moved to the class page rather than the row.' }], wrongTurn: 'The wrong turn is putting on the card whatever you happen to have. Every field is already sitting there, none of them look expensive, and the row quietly turns into something nobody can scan.', tradeoff: 'Five fields make the row scannable and take the teacher’s name away from returning people, which was their quickest way to choose. Some of them will open more classes than they used to.', uncertainty: 'Still unknown: whether “places left” helps somebody or merely hurries them. It reads as useful, it may be pressure, and a drawing cannot tell those two apart.' }, expect: 'The fields on one result, in priority order, each traced to something you watched — and what you left off on purpose.',
+      { demo: { scenario: 'Made-up example. Choosing the fields for one result card, and finding that most of them were there because the database happened to hold them.', beats: [{ label: 'My first card', text: 'Title, teacher, level, date, time, length, place, distance, price, places left, and a photograph. Eleven things, and it looked full rather than useful.' }, { label: 'The question I then asked', text: 'For each field: what does this decide while somebody compares this row against the one underneath it? Not what does it tell them. What does it settle.' }, { label: 'What failed that question', text: 'Length and level. Nobody in my notes had raised either while choosing; both came up afterwards, once a class was already open in front of them.' }, { label: 'What survived, in order', text: 'Day and time first, because that is what people said aloud before anything else. Then the price, then how far away it is, then whether places are left.' }, { label: 'What I left off on purpose', text: 'The teacher’s name. It matters enormously to somebody who has been before and means nothing to a first-timer, so it moved to the class page rather than the row.' }], wrongTurn: 'The wrong turn is putting on the card whatever you happen to have. Every field is already sitting there, none of them look expensive, and the row quietly turns into something nobody can scan.', tradeoff: 'Five fields make the row scannable and take the teacher’s name away from returning people, which was their quickest way to choose. Some of them will open more classes than they used to.', uncertainty: 'Still unknown: whether “places left” helps somebody or merely hurries them. It reads as useful, it may be pressure, and a drawing cannot tell those two apart.' }, expect: 'The fields on one result, in priority order, each traced to its source or marked a guess — and what you left off on purpose.',
         fields: ['result-field-1', 'result-field-2', 'result-field-3', 'result-field-4', 'result-field-5', 'omissions'],
         reveal: { first: 2, group: 1, count: 5, addLabel: 'Add another field', note: 'One at a time, most important first. Five is the maximum, not the target.' },
         terms: [{ term: 'Result item', meaning: 'One row or card in a list. It exists so somebody can compare it with the ones above and below without opening any of them.' }],
-        start: 'Reread your m05 notes for the attributes people mentioned aloud while choosing. Those are your first fields.',
-        enough: 'Every field names the observation behind it, and the omissions box is not empty.' },
+        start: 'Reread your m05 notes for the attributes people mentioned aloud while choosing. Those are your first fields. With no observation, use a real message or your own walkthrough, name it, and mark anything else a guess.',
+        enough: 'Every field names its source or is marked a guess, and the omissions box is not empty.' },
       { terms: [{ term: 'Filter', meaning: 'One narrowing somebody has applied, such as Saturday or under five hundred. Several together can rule out everything without any one of them looking wrong.' }, { term: 'No-results screen', meaning: 'What she sees when nothing matches. It has real work to do: name the narrowing responsible and offer something to press.' }, { term: 'Route out', meaning: 'The thing a person can act on when a screen has nothing for them. Without it the screen is a dead end however kindly it is worded.' }], expect: 'A designed screen for too many results and a designed screen for none, each naming the filter responsible and offering a way out.',
         fields: ['too-many-state', 'no-results-state'],
         supported: {
@@ -696,12 +696,12 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'Your result card carries eleven things, including the tutor’s biography. What is the test for keeping a field?',
         options: [
-          { label: 'Whether you watched somebody compare on it while they were choosing.', correct: true, feedback: 'Your m05 notes already say what people mentioned while deciding. Fields with no observation behind them are the first ones to cut.' },
-          { label: 'Whether it is useful information about the class.', feedback: 'Almost everything is useful somewhere. The question is whether it is needed to choose between two classes, which is the only job a list has.' },
-          { label: 'Whether removing it would leave an awkward gap in the layout.', feedback: 'Layout is settled after content. A card built to fill a shape becomes hard to scan, which slows every comparison on the page.' },
+          { label: 'Whether people compare on it when choosing, from a source you can name.', correct: true, feedback: 'A field earns its place by settling a comparison. Name where you learned that people weigh it: an observation, a real message, or your own walkthrough labelled as such. A field with no source is a guess to mark, or the first to cut.', was: ['Whether you watched somebody compare on it while they were choosing.'] },
+          { label: 'Whether it is useful information that a person might want about the class.', feedback: 'Almost everything is useful somewhere. The question is whether it is needed to choose between two classes, which is the only job a list has.', was: ['Whether it is useful information about the class.'] },
+          { label: 'Whether removing it would leave an awkward gap in the layout of the card.', feedback: 'Layout is settled after content. A card built to fill a shape becomes hard to scan, which slows every comparison on the page.', was: ['Whether removing it would leave an awkward gap in the layout.'] },
         ],
-        repair: 'Cut any field in step 3 you cannot trace to something you watched, move it to the omissions box with its reason, and note the change in step 5.',
-        recheck: 'Every field on the result names the observation it came from.',
+        repair: 'Mark any field in step 3 you cannot trace to an observation, a message or a walkthrough as a guess, or move it to the omissions box with its reason, and note the change in step 5.',
+        recheck: 'Every field names its source or is marked a guess.',
       },
       {
         question: 'A filter combination returns two hundred classes. What is the most useful thing that screen can do?',
@@ -1102,7 +1102,7 @@ export const guided07: Record<string, Guided> = {
       { terms: [{ term: 'Content order', meaning: 'The top-to-bottom sequence of what is on a screen. On a narrow screen it is most of the design.' }, { term: 'Supporting material', meaning: 'The parts that help once a decision has been made rather than helping to make it: descriptions, photographs, reassurance.' }], expect: 'Two content orders for one screen, and a stated reason for the one you kept.',
         fields: ['version-a', 'version-b', 'order-chosen'],
         supported: {
-          material: 'A supplied class detail screen, made up for practice, drawn two ways. In the same made-up research, people chose between classes by date and time, price and what to bring. Version A: photograph, description, class name, date and time, price, book. Version B: class name, date and time, price, what to bring, book, description, photograph.',
+          material: 'A supplied class detail screen, made up for practice, drawn two ways. In the same made-up research, people chose between classes by date and time, price and what to bring. Version A: photograph, description, class name, what to bring, date and time, price, book. Version B: class name, date and time, price, what to bring, book, description, photograph.',
           question: 'Which version is the better starting point, and for what reason?',
           options: [
             { label: 'Version B, because what people compare on comes before the action, and the rest follows.', was: ['Version B, because the things a person compares on come before the action and everything else follows.'], correct: true, feedback: 'The order matches what someone is doing on this screen, which is deciding whether to book. The description is supporting material and sits where supporting material belongs.' },
@@ -1190,8 +1190,8 @@ export const guided07: Record<string, Guided> = {
       { id: 'stress', title: 'The three hard cases', fields: [
         { id: 'long-label-result', label: 'With your longest real label everywhere it appears: what broke?', kind: 'long',
           hint: 'Name what overlaps, what truncates, what gets pushed off the screen. Not “it looks cramped”.' },
-        { id: 'enlarged-text-result', label: 'With text about 150 per cent larger: what broke?', kind: 'long',
-          hint: 'On paper, letter the same screen a step larger throughout and see what collides.' },
+        { id: 'enlarged-text-result', label: 'With text enlarged to 200 per cent, the m03 benchmark: what broke?', kind: 'long',
+          hint: 'On paper, letter the same screen at twice the text size throughout and see what collides. Label it specified, since paper cannot reflow.' },
         { id: 'failed-image-result', label: 'With the image missing entirely: what broke?', kind: 'short' },
       ] },
       { id: 'notes', title: 'Behaviour notes, then save', fields: [
@@ -1278,11 +1278,11 @@ export const guided07: Record<string, Guided> = {
       {
         question: 'You skipped the enlarged-text check because your screens are pencil drawings. What is the honest response?',
         options: [
-          { label: 'Redraw one screen with every letter a step larger, and note what collides.', was: ['Letter the same screen a step larger throughout and see what collides; that is the paper version of the check.'], correct: true, feedback: 'The check is about text growing inside a fixed width, and a pencil shows that well enough to find the collisions.' },
+          { label: 'Redraw one screen with every letter at twice the size, and note what collides.', was: ['Letter the same screen a step larger throughout and see what collides; that is the paper version of the check.', 'Redraw one screen with every letter a step larger, and note what collides.'], correct: true, feedback: 'The check is about text growing to 200 per cent inside a fixed width, and a pencil shows that well enough to find the collisions. Label the drawing specified, since paper cannot reflow.' },
           { label: 'Record that enlarged text cannot be checked on paper, and move on to the next check.', was: ['Record that it cannot be checked on paper and move on.'], feedback: 'It can, roughly, and roughly is enough to find collisions. Skipping it means a layout that fails daily for a great many readers.' },
           { label: 'Assume it is fine, because the layout already leaves generous spacing everywhere.', was: ['Assume it is fine, because the layout has generous spacing.'], feedback: 'Generous spacing is the first thing enlarged text consumes. Buttons, containers and fixed rows are where it collides.' },
         ],
-        repair: 'Fill enlarged-text-result in step 4 by redrawing one screen a step larger throughout, then record what you changed in the last step.',
+        repair: 'Fill enlarged-text-result in step 4 by redrawing one screen with the text at 200 per cent throughout, then record what you changed in the last step.',
         recheck: 'The enlarged-text box names at least one specific collision, or says plainly that nothing broke and how you checked.',
       },
     ],
@@ -1312,7 +1312,8 @@ export const guided07: Record<string, Guided> = {
       ] },
       { id: 'component', title: 'The component, state by state', intro: 'One row at a time. For each: what triggers it, what changes, what she can do while she is in it, and what ends it.', fields: [
         { id: 'component-default', label: 'Default · trigger, what changes, what she can do, what ends it', kind: 'long',
-          example: 'Example (made up): shown whenever a date is chosen and places remain · label reads “Book this place” · she can press it · pressing it ends the state.' },
+          hint: 'Note hover (where a pointer exists) and pressed in this row too.',
+          example: 'Example (made up): shown whenever a date is chosen and places remain · label reads “Book this place”; hover thickens the border, pressing darkens it · she can press it · pressing it ends the state.' },
         { id: 'component-focus', label: 'Focus · trigger, what changes, what she can do, what ends it', kind: 'long',
           hint: 'This is how a keyboard user knows where they are. Never signal it with colour alone.' },
         { id: 'component-loading', label: 'Loading · trigger, what changes, what she can do, what ends it', kind: 'long',
