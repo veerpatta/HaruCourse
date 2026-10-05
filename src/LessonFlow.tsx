@@ -174,7 +174,7 @@ export function LessonFlow({lesson, record, setRecord, section, go, readOnly, on
    <button type="button" className="text-button" onClick={()=>setWelcome(false)}>Continue from here</button>
   </div>}
   <div className="flow-layout"><div className="flow-main">
-   {pausePoint && <div className="pause-point" role="note">
+   {pausePoint && !welcome && <div className="pause-point" role="note">
     <p><strong>Good place to pause.</strong> Session {session!.number-1} is saved{previousComplete?' and complete':''}. If you stop now, this lesson reopens right here.</p>
     <p className="muted">Next: session {session!.number}, {session!.title}. {session!.purpose}</p>
     {onPause && !readOnly && <button type="button" className="secondary" onClick={onPause}>Pause and return to lessons</button>}
@@ -193,6 +193,7 @@ export function LessonFlow({lesson, record, setRecord, section, go, readOnly, on
     </>}
     {action.body?.length && <ol className="action-directions">{action.body.map((p,i)=><li key={i}>{displayModuleReferences(p)}</li>)}</ol>}
     {action.kind==='example' && lesson.id==='week1-day1-v1' && action.id==='see-example' && <AnnotatedBookingScreens/>}
+    {lesson.id==='week1-day1-v1' && action.id==='point-price' && <AnnotatedBookingScreens notes={false}/>}
     {action.kind==='example' && lesson.id==='week1-day1-v1' && action.id==='pottery-example' && <div className="flow-example">{lessonOneExample.map(p=><p key={p}>{p}</p>)}</div>}
     {action.kind==='demo' && guide?.demo && <SeeIt demo={guide.demo}/>}
     {action.kind==='setup' && guide && <>

@@ -57,7 +57,7 @@ These are made-up screens from a fictional pottery studio. Read the numbered not
 
 Section: learn. Stable action: point-price.
 
-Use the screens above. Choose where screen A shows the price, then select Show me why.
+Look at the two screens below, this time without the notes. Choose where screen A shows the price, then select Show me why.
 
 On screen A, where does the price appear?
 

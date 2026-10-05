@@ -146,13 +146,18 @@ export function usePractice(user: User, lessonId: string, storageKey: string, gu
     saving.current = true;
     const serial = generation.current;
     try {
+      const body = JSON.stringify({
+        record: parsed.data,
+        expectedRevision: revision.current,
+      });
+      // keepalive lets a save started as the app goes to the background
+      // finish; browsers cap keepalive bodies at 64 KB, so large records
+      // use an ordinary request and upload on return instead.
       const r = await fetch(url, {
         method: "PUT",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify({
-          record: parsed.data,
-          expectedRevision: revision.current,
-        }),
+        body,
+        keepalive: body.length < 60000,
       });
       if (r.status === 409) {
         blocked.current = true;
@@ -238,10 +243,20 @@ export function usePractice(user: User, lessonId: string, storageKey: string, gu
       else void flush();
     };
     const stopWatching = onActivityResume(reconnect);
+    // Browsers pause timers in a hidden tab or a backgrounded phone app, so
+    // the debounced save might not run until the learner returns. Save the
+    // moment the page is hidden instead.
+    const saveOnHide = () => {
+      if (document.visibilityState === "hidden") void flush();
+    };
+    document.addEventListener("visibilitychange", saveOnHide);
+    window.addEventListener("pagehide", saveOnHide);
     return () => {
       active.current = false;
       clearInterval(interval);
       stopWatching();
+      document.removeEventListener("visibilitychange", saveOnHide);
+      window.removeEventListener("pagehide", saveOnHide);
     };
   }, []);
   function resolve(useCloud: boolean) {
