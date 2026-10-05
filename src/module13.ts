@@ -179,7 +179,7 @@ export const module13: Lesson[] = [
       {
         criterion: "The current audience is named, not aspirational",
         evidence:
-          "A stated audience for now, with what each needs.",
+          "A stated audience for now, with what each needs; anyone expected rather than current is labelled so.",
         levels: [
           "Audience unstated or imagined as a large team.",
           "Audience named without needs.",
@@ -478,7 +478,7 @@ export const module13: Lesson[] = [
     misconception:
       "“The component is the visual design.” The visual design is one part. The specification that makes it reusable is the anatomy, the state grid, the content rules and the boundaries — and those are what an engineer needs and a designer forgets.",
     example:
-      "Example (made up): the class card was specified. Anatomy: container, image slot (optional), title, meta row, status area, action. Variants: default, compact, unavailable. States for each: default, hover, focus, loading, error. Content rules: title truncates to two lines keeping the beginning, meta row wraps rather than truncating, status area always shows text as well as colour, image slot may be absent without changing layout height. Keyboard: the whole card is not a target — the title is the link and the action is a button, matching the m09 tables. When not to use: not for a single featured item, where a dedicated layout reads better; not as a navigation element.",
+      "Example (made up): the class card was specified. Anatomy: container, image slot (optional), title, meta row, status area, action. Variants: default, compact, unavailable. States for each: default, hover, focus, loading, error. Content rules: title truncates to two lines keeping the beginning, meta row wraps onto as many lines as it needs and the card grows to fit, status area always shows text as well as colour, image slot may be absent without changing layout height. Keyboard: the whole card is not a target — the title is the link and the action is a button, matching the m09 tables. When not to use: not for a single featured item, where a dedicated layout reads better; not as a navigation element.",
     freeToolPath:
       "A Markdown page with a table for the state grid, plus screenshots or drawings of the variants. Building the component in HTML and CSS makes the states demonstrable and costs an evening.",
     outputs: [
@@ -892,7 +892,7 @@ export const module13: Lesson[] = [
         minutes: 30,
         title: "Apply it to three cases",
         instructions: [
-          "Take three borderline items from your inventory.",
+          "Take three borderline items from your inventory, or use the supplied made-up cases for any you lack.",
           "Answer each question and record the decision.",
         ],
       },
@@ -908,7 +908,7 @@ export const module13: Lesson[] = [
         minutes: 25,
         title: "Split or merge",
         instructions: [
-          "Split one component that was carrying two jobs, or merge two that share one.",
+          "Split or merge one component, or record that none carries two jobs, with the test answers that show it.",
           "Update the inventory and the specifications.",
         ],
       },
@@ -990,7 +990,7 @@ export const module13: Lesson[] = [
       {
         criterion: "One decision against reuse is recorded",
         evidence:
-          "A case where you chose a separate component, with the reason.",
+          "A case where you chose a separate component, from your own inventory or the supplied cases, with the reason.",
         levels: [
           "Everything reused.",
           "A split made without recorded reasoning.",
@@ -1046,7 +1046,7 @@ export const module13: Lesson[] = [
     guided: true,
     title: "Documentation someone will actually read",
     objective:
-      "Write the documentation for two components so that a person can use them correctly without asking you, and test it by watching someone try.",
+      "Write the documentation for two components so that a person can use them correctly without asking you, and test it by watching someone try, or by a labelled solo rehearsal after a gap.",
     bringForward: "Your Lesson 3 specification, and the supplied button and text input (component-states.html) as your second component.",
     prerequisite: "Two components: the one you specified and the supplied one, whose anatomy, states and tokens are written on its page.",
     why: "Undocumented systems are systems that only work while you are available. The test is not whether it is written; it is whether it is used.",
@@ -1066,7 +1066,7 @@ export const module13: Lesson[] = [
     misconception:
       "“The components are self-explanatory.” They are to you. Every question someone has to ask is a small tax, and in a system meant to save time, those taxes are the thing you were trying to remove.",
     example:
-      "Example (made up): the card and the button pages were rewritten. Each opens with when to use it, when not to, and the alternative. Then a live example with the code beside it, the anatomy, the state grid, the content rules — including maximum label length and truncation behaviour — and the keyboard behaviour. Two people were then asked to build a screen using them. Four questions came up: what happens with two actions, whether the compact variant may be used in a grid, what the maximum title length actually is, and whether the card is clickable as a whole. All four became sentences on the pages.",
+      "Example (made up): the card and the button pages were rewritten. Each opens with when to use it, when not to, and the alternative. Then a live example with the code beside it, the anatomy, the state grid, the content rules — including maximum label length and truncation behaviour — and the keyboard behaviour. Two people were then asked to build a screen using them. Four questions came up: what happens with two actions, whether the compact variant may be used in a grid, what the maximum title length actually is, and whether the card is clickable as a whole. Three became sentences on the pages; the two-action question had no answer anywhere and was recorded as an open decision.",
     freeToolPath:
       "Markdown files, with the supplied component page (or your own build) as the live example, its markup or a labelled screenshot. No documentation platform, account or static-site tool is required.",
     outputs: [
@@ -1263,7 +1263,7 @@ export const module13: Lesson[] = [
     misconception:
       "“Governance is bureaucracy.” Governance is the difference between a system people use and one they route around. A paragraph naming the route, the decider and the response time is enough for a small system, and skipping it costs more.",
     example:
-      "Example (made up): the governance was one page. To propose: open an issue with the screens where it is needed, what existing component you tried, and why it did not fit. Decider: the learner, until someone else joins. Response time: within a week. Criteria: needed in at least two screens, not achievable by composing existing components, and specifiable with states and content rules. Decisions are recorded in a log with the reason. Three proposals in the first month: one accepted, one rejected because composition covered it, and one deferred pending a second use — all recorded, and the rejected one was not re-raised.",
+      "Example (made up): the governance was one page. To propose: open an issue with the screens where it is needed, what existing component you tried, and why it did not fit. Decider: the learner, until someone else joins. Response time: within a week. Criteria: needed in at least two screens, not achievable by composing existing components, and specifiable with states and content rules. Decisions are recorded in a log with the reason. Three proposals in the first month: one accepted, one rejected because composition covered it, and one deferred until its second use, planned for the following month, existed — all recorded, and the rejected one was not re-raised.",
     freeToolPath:
       "A Markdown page and a decision log file. Issue trackers help and are not required; the process matters more than the tool.",
     outputs: [
@@ -1460,7 +1460,7 @@ export const module13: Lesson[] = [
     misconception:
       "“It is a small change, so it is a patch.” Size is irrelevant; effect is what counts. Renaming one token is a one-word edit and forces work on everyone who used it, which makes it major.",
     example:
-      "Example (made up): the system was versioned 1.0.0 at the point the two components were documented. Three changes followed. Adding the compact card variant: minor, since nothing existing changed. Fixing the focus ring's contrast on the tinted surface: patch, because usage is unchanged. Renaming surface-alt to surface-muted for consistency: major, because every use must change, and it was released with the old name deprecated for one minor version, a change note explaining the rename, and a list of the four places it appeared. The rename was deliberately delayed until it could travel with another major change.",
+      "Example (made up): the system was versioned 1.0.0 at the point the two components were documented. Three changes followed. Adding the compact card variant: minor, since nothing existing changed. Fixing the focus ring's contrast on the tinted surface: patch, because usage is unchanged. Renaming surface-alt to surface-muted for consistency: removing the old name is major, because every use must change. So the next minor release added surface-muted and kept surface-alt as a deprecated alias (nothing breaks), with a change note explaining the rename and listing the four places it appeared; removing surface-alt waits for 2.0.0, the next major release.",
     freeToolPath:
       "A version number in your documentation and a changelog file. Nothing else is required; the discipline is the deliverable.",
     outputs: [
@@ -2071,7 +2071,7 @@ export const module13: Lesson[] = [
         minutes: 30,
         title: "Audit for drift",
         instructions: [
-          "Compare three components across representations.",
+          "Compare three components across representations: the supplied button and text input, plus one of your own from Lessons 3 and 6 (its drawing against its documentation). If you have none, write that the third is missing.",
           "Measure rather than eyeballing where you can.",
           "Record every difference, however small.",
         ],

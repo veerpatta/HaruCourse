@@ -63,6 +63,10 @@ export type LabelItem = {
 export type LabelPractice = {
   intro: string;
   options: string[];
+  // In the action reader each line is a saved question whose answer is the
+  // label. When a label is reworded, its earlier wordings go here, keyed by
+  // the current label, so saved answers still map (see shared/choices.ts).
+  was?: Record<string, string[]>;
   items: LabelItem[];
   then: string;
   pattern: string;

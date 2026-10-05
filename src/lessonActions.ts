@@ -113,7 +113,7 @@ export function actionQuestion(l:Lesson,a:LessonAction) {
  if(a.kind==='sort') {
    const sorter=a.guideIndex===undefined ? guide?.find(g=>g.sorter)?.sorter : guide?.[a.guideIndex]?.sorter;
    const item=sorter?.items[a.index!];
-   return sorter && item && {id:a.answerId || `sort-${item.id}`,question:item.text,options:sorter.options.map(label=>({label,feedback:item.feedback[label],...(label===item.answer?{correct:true as const}:{})}))};
+   return sorter && item && {id:a.answerId || `sort-${item.id}`,question:item.text,options:sorter.options.map(label=>({label,feedback:item.feedback[label],...(sorter.was?.[label]?{was:sorter.was[label]}:{}),...(label===item.answer?{correct:true as const}:{})}))};
  }
 }
 
