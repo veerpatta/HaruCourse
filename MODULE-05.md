@@ -149,7 +149,7 @@ Section: practice-plan. Stable action: step-3-brief.
 
 Three to five questions, each naming the decision that would change.
 
-- Beside every question write the decision it would change and what you would do if the answer were the opposite of your expectation. Mark any line where both answers lead to the same action.
+- On paper or in your own file, write beside every question on your list the decision it would change and what you would do if the answer were the opposite of your expectation; mark any line where both answers lead to the same action. In the boxes here, enter the three to five that survive, each with its decision.
 
 **Start here:** Take each raw question and finish the sentence “if the answer is X, I will …”.
 
@@ -349,18 +349,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 One of your questions is “is the booking flow easy to use?”. What is wrong with it?
 
-- It names no decision that would change, and no evidence could ever settle it.
 - It works as a research question; it only needs rewording before anyone hears it.
 - It needs a rating scale so that each person’s answer becomes a comparable number.
+- As worded, it names no decision it would change and no evidence to settle it.
 
 <details>
 <summary>After your attempt</summary>
 
-It names no decision that would change, and no evidence could ever settle it. — It is a summary judgement rather than a question about events. Rewrite it as what someone did at a particular moment.
-
-It works as a research question; it only needs rewording before anyone hears it. — Rewording for participants is a separate job, done for questions that already work. The problem here is that no state of the world would answer it, however it is phrased.
+It works as a research question; it only needs rewording before anyone hears it. — Rewording for participants is a separate job, done for questions that already work. The problem here is that, as worded, no decision hangs on it and no evidence is named that would answer it.
 
 It needs a rating scale so that each person’s answer becomes a comparable number. — A scale produces a number that still does not tell you what to change.
+
+As worded, it names no decision it would change and no evidence to settle it. — It is a summary judgement rather than a question about events. “Easy” could be made checkable, for example as finishing a booking without help, but as written it is not. Rewrite it as what someone did at a particular moment.
 
 Improve: Rewrite any summary-judgement question in step 3 as a question about a specific past episode, then record the change in step 5.
 
@@ -634,7 +634,7 @@ Bring: The three to five ranked questions with their decisions and closure evide
 
 Starting route: Bring your three to five ranked research questions. Fallback questions concern finding materials, reasons for preparation choices and how often instructions are missed. Match methods to what they can establish. Choose at most two feasible methods for your next study; record unavailable access as not-run, with no deadline.
 
-- A method plan pairing each of your top three questions with one method, its cost and access conditions, and an explicit exclusion sentence per pairing, plus a not-run list holding any further questions and those left unanswerable, with reasons.
+- A method plan pairing each of your top three questions with one method (or recording it as an open gap), its cost and access conditions, and an explicit exclusion sentence per pairing, plus a not-run list holding any further questions and those left unanswerable, with reasons.
 
 ### Start here: in everyday words
 
@@ -654,7 +654,7 @@ The reader demonstrates and guides the task before asking for “For each method
 
 Section: learn. Stable action: welcome.
 
-Pair each of your top three research questions with one method you could genuinely run alone with what you have now, state for each pairing the specific claim that method will not license you to make, and record any further question as not-run or as an open gap.
+Pair each of your top three research questions with one method you could genuinely run alone with what you have now, or record it as an open gap when no such method exists, state for each pairing the specific claim that method will not license you to make, and record any further question as not-run or as an open gap.
 
 
 ### Sort your questions by what kind of uncertainty they are
@@ -786,13 +786,13 @@ The label decides the method more than your preference does.
 
 Section: practice-plan. Stable action: step-3-brief.
 
-One method per question, with hours, people and access.
+One method per question, with hours, people and access, or an open gap where no method you can run alone would answer it.
 
-- Assign one method to each of your top three questions. Beside each write what it will cost you in hours, how many people it needs, and what has to be true for it to happen at all — access, consent, a device, a quiet room. A fourth or fifth question you cannot pair yet goes on the not-run list in the last step.
+- Assign one method to each of your top three questions; where no method you could run alone would answer one, write “open gap” and what would be needed instead. Beside each method write what it will cost you in hours, how many people it needs, and what has to be true for it to happen at all — access, consent, a device, a quiet room. A fourth or fifth question you cannot pair yet goes on the not-run list in the last step.
 
 **Start here:** Write the hours honestly, including writing up. Sessions take about twice as long as the session itself.
 
-**Enough:** Each pairing names how many people it needs and whether you can reach them.
+**Enough:** Each pairing names how many people it needs and whether you can reach them, or is marked open gap with what would be needed.
 
 **Pairing:** One question set beside the single method you would use to answer it, with the cost of running it written next to it.
 
@@ -853,15 +853,15 @@ Write your answer for “Pairing 2 · question, method, hours, people needed, an
 
 
 
-### Pairing 3 · question, method, hours, people needed, and what you would need access to
+### Pairing 3 · question, method, hours, people needed and access — or “open gap” and what would be needed
 
 Section: practice-plan. Stable action: write-pairing-3.
 
-Write your answer for “Pairing 3 · question, method, hours, people needed, and what you would need access to”. Use the task instructions below to decide what to include.
+A how-often question needs a defined group you can reach. If no method you can run alone would answer it, write “open gap” and what would be needed; that is a complete answer.
 
-**Answer:** Pairing 3 · question, method, hours, people needed, and what you would need access to
+**Answer:** Pairing 3 · question, method, hours, people needed and access — or “open gap” and what would be needed
 
-
+A how-often question needs a defined group you can reach. If no method you can run alone would answer it, write “open gap” and what would be needed; that is a complete answer.
 
 
 ### Write the exclusions
@@ -1114,7 +1114,7 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: Choose a method that can actually answer it
-What I am trying to do: Pair each of your top three research questions with one method you could genuinely run alone with what you have now, state for each pairing the specific claim that method will not license you to make, and record any further question as not-run or as an open gap.
+What I am trying to do: Pair each of your top three research questions with one method you could genuinely run alone with what you have now, or record it as an open gap when no such method exists, state for each pairing the specific claim that method will not license you to make, and record any further question as not-run or as an open gap.
 
 Key idea or terms:
 Behaviour question: What people do. Best answered by watching, not asking.
@@ -1170,7 +1170,7 @@ Adequate evidence: One method per question with hours, participant count and acc
 
 1 — Costs stated but the plan assumes resources you do not have — a recruiter, a lab, analytics on someone else's product.
 
-2 — Each method is one you could run alone with what you have now, with cost and access conditions stated.
+2 — Each method is one you could run alone with what you have now, or the question is recorded as an open gap, with cost and access conditions stated.
 
 3 — As adequate, and one choice is justified against a method you rejected, naming what the rejected one would have added.
 
@@ -1267,7 +1267,7 @@ Existing evidence is wider than it looks. Public reviews and store ratings, supp
 
 Section: learn. Stable action: learn-2.
 
-A competitive review is two different activities that are often confused. An expert review is you working through a rival product yourself against explicit criteria; a competitive test is people attempting the same task on two or more products while you watch. The first is fast and costs nothing but is limited by your own expertise and blind spots; the second costs sessions but tells you where real people diverge. Both are usability comparisons. Neither tells you anything about market position, pricing or why the company is winning, and the reading assigned here says so itself.
+A competitive review is two different activities that are often confused. An expert review is you working through a rival product yourself against explicit criteria; a competitive test is people attempting the same task on two or more products while you watch. The first is fast and costs nothing but is limited by your own expertise and blind spots; the second costs sessions but tells you where real people diverge. Both are usability comparisons. Neither tells you anything about market position, pricing or why the company is winning. The assigned article does not say this — it describes the method only as a usability comparison — so treat this limit as the course's, not the article's.
 
 
 ### Choose comparators by task, not by brand
@@ -1308,7 +1308,7 @@ Section: practice-plan. Stable action: step-1-brief.
 
 The difference between reviewing rivals and testing them with people.
 
-- Read the assigned article. Note the difference between a competitive review and a competitive test, and copy down its statement of what competitive evaluation does not address.
+- Read the assigned article. Note the difference between a competitive review and a competitive test, and write in your own words what neither can tell you; the article itself lists no such limits.
 
 **Start here:** Read the assigned article and write the distinction in one line.
 
@@ -1565,17 +1565,17 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 You spent three hours on desk research and produced twelve pages. What went wrong?
 
 - Nothing serious: thorough background now saves time in every session that follows.
-- An unbounded search: desk work is preparation, so it gets a fixed thirty minutes.
 - The length: twelve pages is fine to collect, but it should be cut to one page.
+- It ignored the bound: here desk work is time-boxed so it informs the study, not replaces it.
 
 <details>
 <summary>After your attempt</summary>
 
 Nothing serious: thorough background now saves time in every session that follows. — It delays the study and produces material nobody will reread, including you. Background has diminishing returns long before three hours.
 
-An unbounded search: desk work is preparation, so it gets a fixed thirty minutes. — Existing evidence is cheap and endless. The bound is what keeps it from replacing the work of talking to someone.
-
 The length: twelve pages is fine to collect, but it should be cut to one page. — Cutting treats the symptom. The hours and the pages follow from the same cause: a search with no bound.
+
+It ignored the bound: here desk work is time-boxed so it informs the study, not replaces it. — Existing evidence is cheap and endless. In this exercise the thirty-minute bound is what keeps it from replacing the work of talking to someone; professional desk research can run longer, and it still needs a bound set in advance.
 
 Improve: Cut your desk note in step 2 to what you would actually use, and record the change in step 5.
 
@@ -1728,7 +1728,7 @@ When the activity is finished, tell me to return to the course answer called “
 - Return to each claim in your note and attach its source and the date you retrieved it. Any claim whose source you cannot produce is removed, not softened.
 - Write the task as one sentence containing a person, a goal and a stopping condition. Re-run any service you explored differently, following that sentence exactly.
 
-- R51: [NN/g: competitive usability evaluations](https://www.nngroup.com/articles/competitive-usability-evaluations/) — The whole article, concentrating on defining which competitors to analyse, the difference between competitive reviews and competitive testing, and turning findings into decisions. Purpose: Supplies a repeatable comparison method and the explicit boundary that keeps a usability comparison from becoming a market claim. Free reading, no account. Verified 2026-09-06; published 5 January 2024. The article itself excludes market positioning, pricing and business analysis, so no strategy conclusion may rest on this lesson. Fallback: R02.
+- R51: [NN/g: competitive usability evaluations](https://www.nngroup.com/articles/competitive-usability-evaluations/) — The whole article, concentrating on defining which competitors to analyse, the difference between competitive reviews and competitive testing, and turning findings into decisions. Purpose: Supplies a repeatable comparison method. The boundary that keeps a usability comparison from becoming a market claim comes from this lesson, not from the article. Free reading, no account. Verified 2026-09-06; published 5 January 2024; scope rechecked 2026-10-05. The article treats competitive evaluation only as a usability comparison and states no limits about market positioning, pricing or business analysis; that boundary is this course's own, and no strategy conclusion may rest on this lesson. Fallback: R02.
 - R07: [GOV.UK: discovery phase](https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works) — The paragraphs on examining existing data and reviewing previous research. Purpose: Places desk work where it belongs — before fieldwork — even though the page gives it only two lines. Free reading, no account. Verified 2026-09-06; published 18 November 2016. It covers neither competitor analysis nor secondary-research method, which is why the comparison method comes from R51 and the rest from this lesson. Fallback: R19.
 
 </details>
@@ -1779,17 +1779,17 @@ Repair: Name the underlying task in words that mention no industry — “commit
 
 **The write-up separates hypotheses from established facts**
 
-Adequate evidence: Two clearly distinguished lists: what you now believe and would check with people, and what the desk work actually established.
+Adequate evidence: Two clearly distinguished parts: the hypothesis list, holding what you now believe and would check with people, and the dated desk note and task records, holding only what the desk work actually established.
 
 0 — Impressions written as findings.
 
 1 — Some hedging language, but no separation of the two kinds of statement.
 
-2 — Hypotheses and established facts are in separate, labelled lists.
+2 — Hypotheses sit in their own labelled list, and the desk note and task records hold only established, sourced facts.
 
 3 — As adequate, and each hypothesis names the method from your plan that would test it.
 
-Repair: Go through the note sentence by sentence and mark each as observed, inferred or assumed, using the same three-way split you learned in Module 1. Move the inferred and assumed sentences into the hypothesis list. Recheck: The two labelled lists.
+Repair: Go through the note sentence by sentence and mark each as observed, inferred or assumed, using the same three-way split you learned in Module 1. Move the inferred and assumed sentences into the hypothesis list. Recheck: The hypothesis list and the corrected desk note.
 
 </details>
 The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
@@ -1832,7 +1832,7 @@ Research means learning from evidence without pretending that a guess, rehearsal
 - **Accommodation:** A change you make so that somebody can take part: a different time, a phone call instead of video, longer to answer a question.
 - **Screening criterion:** A recent behaviour that makes someone’s account relevant. Age, job and gender are almost never criteria.
 
-**Quick example.** A supplied plan from the same made-up study: recruit three people from the studio’s mailing list of past attendees.
+**Quick example.** A supplied plan from the same made-up class-preparation study, which asks how people find out what to bring: recruit three people by emailing the studio’s mailing list of past attendees. The studio also sends its materials list by email.
 
 The reader demonstrates and guides the task before asking for “The lead times it states, and the accommodations it names”.
 
@@ -1861,14 +1861,14 @@ A screener must not teach the answer. “Have you ever been frustrated by not kn
 
 Section: learn. Stable action: learn-3.
 
-Plan for real lead times and for who cannot come. The assigned page reports that professional recruitment typically takes about ten days and that recruiting disabled participants can take up to a month, with six to eight weeks advised where cognitive disabilities are involved. You have no agency, so your route is your own network, community groups, a notice in a place where the relevant people already are, or asking a small business owner to introduce you. Every one of those routes has a shape: your network shares your language, your education and often your income band, and a WhatsApp group of parents at one school is not the parents of that city.
+Plan for real lead times and for who cannot come. The assigned page gives no general timescale — for an agency it says to ask how long it will need — but advises allowing up to a month to find disabled participants or assistive-technology users, and contacting organisations at least 6 to 8 weeks ahead for less common cognitive disabilities. You have no agency, so your route is your own network, community groups, a notice in a place where the relevant people already are, or asking a small business owner to introduce you. Every one of those routes has a shape: your network shares your language, your education and often your income band, and a WhatsApp group of parents at one school is not the parents of that city.
 
 
 ### Compensate people for their time, and be honest about what you can offer
 
 Section: learn. Stable action: learn-4.
 
-Compensate people for their time, and be honest about what you can offer. The guidance is clear that public participants should receive something for their time, and equally clear that it gives no amounts, because they depend entirely on context. Where you genuinely cannot pay, say so before the session rather than after, keep the session short, come to them rather than making them travel, and do not repeatedly return to the same generous person. A study built on unpaid goodwill is legitimate; a study that hides that it was is not, because the reader cannot then judge who agreed to take part.
+Compensate people for their time, and be honest about what you can offer. The guidance treats an incentive as normal for members of the public and gives no amounts, because they depend entirely on context. Where you genuinely cannot pay, say so before the session rather than after, keep the session short, come to them rather than making them travel, and do not repeatedly return to the same generous person. A study built on unpaid goodwill is legitimate; a study that hides that it was is not, because the reader cannot then judge who agreed to take part.
 
 
 ### See the idea in a supplied example
@@ -1899,7 +1899,7 @@ The lead times and accommodations the guidance states.
 
 **Start here:** Read the assigned page and write the numbers down rather than remembering them.
 
-**Enough:** You have at least one lead time in days.
+**Enough:** You recorded at least one lead time, in weeks or months, with the group it applies to.
 
 **Lead time:** The number of days between asking for people and having them booked in. Counted from today, including the days when nobody replies.
 
@@ -2238,12 +2238,12 @@ The sentence about who your route excludes, and the repair the Check questions a
 
 Section: practice. Stable action: step-5-try.
 
-A supplied plan from the same made-up study: recruit three people from the studio’s mailing list of past attendees.
+A supplied plan from the same made-up class-preparation study, which asks how people find out what to bring: recruit three people by emailing the studio’s mailing list of past attendees. The studio also sends its materials list by email.
 
 Which exclusion sentence is the useful one?
 
 - Three people is a small, statistically unrepresentative sample of past attendees.
-- People without an email address, or who never open the studio’s emails, are excluded.
+- Recruiting by email misses people who skip the studio’s emails, where the list is sent.
 - All had booked before, so people who abandoned a booking are absent from the study.
 
 <details>
@@ -2251,9 +2251,9 @@ Which exclusion sentence is the useful one?
 
 Three people is a small, statistically unrepresentative sample of past attendees. — That holds for every study this size and names nobody. The useful version says who is missing and why that matters.
 
-People without an email address, or who never open the studio’s emails, are excluded. — A real exclusion, and a minor one here compared with the fact that everyone already succeeded at the task you are studying.
+Recruiting by email misses people who skip the studio’s emails, where the list is sent. — It names the group whose absence most weakens a study about getting information before class: the list travels by email, and the people who skip those emails are the ones this route cannot reach.
 
-All had booked before, so people who abandoned a booking are absent from the study. — It names a specific group whose absence changes what the findings can mean, which is precisely the risk with a list of past customers.
+All had booked before, so people who abandoned a booking are absent from the study. — A real exclusion, and less central to a study about preparing for a class: people who never booked never had to prepare. The larger gap is who never reads the emails that carry the list.
 
 Write your own sentence naming a group whose absence would change how the findings should be read.
 
@@ -2273,7 +2273,7 @@ Write your answer for “The sentence that will appear in your report about who 
 <details>
 <summary>Example</summary>
 
-Example (made up): recruited through the studio’s own mailing list, so everyone had already booked successfully at least once; people who gave up before booking are absent.
+Example (made up): recruited through one café noticeboard on weekday mornings, so people who work office hours are absent; they may prepare differently.
 
 </details>
 
@@ -2343,7 +2343,7 @@ Accommodation: A change you make so that somebody can take part: a different tim
 Screening criterion: A recent behaviour that makes someone’s account relevant. Age, job and gender are almost never criteria.
 
 Supplied practice material (fictional or labelled practice, not my research):
-A supplied plan from the same made-up study: recruit three people from the studio’s mailing list of past attendees.
+A supplied plan from the same made-up class-preparation study, which asks how people find out what to bring: recruit three people by emailing the studio’s mailing list of past attendees. The studio also sends its materials list by email.
 
 Activity: Run a short simulated practice using only the supplied material. Ask what evidence supports my choice and what is still unknown.
 
@@ -2362,7 +2362,7 @@ When the activity is finished, tell me to return to the course answer called “
 - For each criterion, complete the sentence “in the last … this person has …”. Any criterion you cannot complete that way is describing a category of person rather than a source of evidence.
 - Read each question aloud and ask what answer would please you. Rewrite any question where a pleasing answer is obvious, converting it to a request for a recent episode.
 
-- R52: [GOV.UK: finding user research participants](https://www.gov.uk/service-manual/user-research/find-user-research-participants) — The sections on defining recruitment criteria, recruiting disabled participants and their lead times, and incentives. Purpose: Supplies realistic lead times, accommodation requirements and the rule that people are compensated for their time. Free reading, no account. Verified 2026-09-06; last updated 28 April 2020. Written for UK government teams with agencies and budgets, and it gives no incentive amounts. Your route is your own network and community, which is legitimate and must be declared. Fallback: R08.
+- R52: [GOV.UK: finding user research participants](https://www.gov.uk/service-manual/user-research/find-user-research-participants) — The sections on defining recruitment criteria, recruiting disabled participants and their lead times, and incentives. Purpose: Supplies the lead times it gives for disabled and assistive-technology participants, accommodation requirements, and the norm that people get an incentive for their time. Free reading, no account. Verified 2026-09-06; last updated 28 April 2020; timescales rechecked 2026-10-05. Written for UK government teams with agencies and budgets; it gives no general recruitment timescale and no incentive amounts. Your route is your own network and community, which is legitimate and must be declared. Fallback: R08.
 - R08: [GOV.UK: user research manual](https://www.gov.uk/service-manual/user-research) — The pages on planning a round of user research and choosing a location, read for the practical constraints only. Purpose: Connects who you recruit to when and where a session can actually happen. Free reading, no account. Verified 2026-09-06. Assumes institutional facilities; read it for the scheduling logic, not the venue advice. Fallback: R04.
 
 </details>
@@ -2511,7 +2511,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- A made-up one-minute spoken introduction that works: “Thanks for doing this. I am learning product design, and I am trying to understand how people book paid classes — I am not testing you, and there are no wrong answers. It will take about thirty minutes. I would like to write notes, and, separately, to record the audio so I do not have to write while you talk — is that all right? The recording and my notes stay on my own laptop, I am the only person who will hear the recording, and I will delete both within three months. If you agree, I will also type a short summary into the course app I am learning with, with no name and nothing that identifies you; it is stored online and my course reviewer can read it. If you would rather not, it stays on my laptop only. You can skip any question, and you can tell me to stop at any point, including afterwards, and I will delete everything from your session, including that summary. Any questions before we start?” The data plan behind it: audio and raw notes in one folder per participant named P1 to P5 on the researcher's own device; a separate contact list holding names and numbers, deleted at the end of the study; de-identified summaries in the course app only for people who agreed; everything deleted three months after the last session.
+- A made-up spoken introduction of about 130 words, under a minute read aloud before their answers: “I am learning product design and trying to understand how people book paid classes. I am not testing you; there are no wrong answers. It takes about thirty minutes. I will take notes and, separately, would like to record the audio — is that all right? Both stay on my own laptop, only I hear the recording, and I delete both within three months. If you agree, I will also type a short summary into my course app, with no name or identifying detail; it is stored online and my course reviewer can read it. Otherwise it stays on my laptop. You can skip any question or stop at any point, even afterwards, and I will delete everything from your session, including that summary. Any questions before we start?” The data plan behind it: audio and raw notes in one folder per participant named P1 to P5 on the researcher's own device; a separate contact list holding names and numbers, deleted at the end of the study; de-identified summaries in the course app only for people who agreed; everything deleted three months after the last session.
 
 
 ### Choose where you will do the work
@@ -2576,7 +2576,7 @@ Made-up example. Writing a consent introduction that nobody could listen to.
 
 **What happened when I read it aloud:** It sounded like a form being read at someone. The person would agree to end it, which is not consent.
 
-**What I kept:** I am practising research for a course. Twenty minutes. I take notes on paper and keep them privately; no recording unless you say yes. If you agree, I type a short summary with no name or identifying details into my course app, which is stored online where my course reviewer reads it. Skip anything, stop any time, and I will delete your part.
+**What I kept:** I am practising research for a course. Twenty minutes. I take notes on paper and keep them privately; no recording unless you say yes. If you agree, I type a short summary with no name or identifying details into my course app, which is stored online where my course reviewer reads it. I delete my notes by the end of next month. Skip anything, stop any time, and I will delete your part.
 
 **What I cut:** The legal vocabulary. It protected me rather than informing them, and it was the part that made the whole thing unlistenable.
 
@@ -2731,13 +2731,13 @@ Made-up example. Rehearsing the hard moments and finding that I had written inte
 **Unknown:** Still unknown: whether you will reach these words when it actually happens. Rehearsal tells you the sentence exists. It does not tell you that you will find it while somebody is upset in front of you.
 
 
-### What you will say if they ask to see the notes, refuse recording, go quiet, or say something upsetting
+### What you will say if they ask to see the notes, refuse recording, go quiet, or withdraw two weeks later
 
 Section: practice-plan. Stable action: write-hard-moments.
 
-Write your answer for “What you will say if they ask to see the notes, refuse recording, go quiet, or say something upsetting”. Use the task instructions below to decide what to include.
+Write your answer for “What you will say if they ask to see the notes, refuse recording, go quiet, or withdraw two weeks later”. Use the task instructions below to decide what to include.
 
-**Answer:** What you will say if they ask to see the notes, refuse recording, go quiet, or say something upsetting
+**Answer:** What you will say if they ask to see the notes, refuse recording, go quiet, or withdraw two weeks later
 
 
 
@@ -3296,11 +3296,11 @@ After a real interview, write a de-identified summary (codes such as P1, no name
 
 Section: practice-plan. Stable action: write-follow-up.
 
-After a real interview, refer to the person only by code. For rehearsal, the question you would add or rephrase.
+After a real interview, refer to the person only by code. For rehearsal, the question you would add or rephrase, plus a dated access note: today’s date and what access to a participant was missing.
 
 **Answer:** Follow up · what you would ask next time
 
-After a real interview, refer to the person only by code. For rehearsal, the question you would add or rephrase.
+After a real interview, refer to the person only by code. For rehearsal, the question you would add or rephrase, plus a dated access note: today’s date and what access to a participant was missing.
 
 
 ### Anything you wrote from memory rather than at the time
@@ -3320,7 +3320,7 @@ Section: practice-plan. Stable action: step-4-brief.
 
 What worked, what failed and what you wish you had asked.
 
-- Within an hour, complete the three columns in your private file. Mark anything you are reconstructing from memory rather than from a note or recording, because that distinction matters later. Then type only a de-identified summary into the course; after a rehearsal, leave Said empty and record the wording risks instead.
+- Within an hour, complete the three columns in your private file. Mark anything you are reconstructing from memory rather than from a note or recording, because that distinction matters later. Then type only a de-identified summary into the course; after a rehearsal, leave Said empty and record the wording risks instead. Then write the three questions that worked, the one that failed and why, and the thing you wish you had followed.
 
 **Start here:** Look for the answers that were short and agreeable, or, in rehearsal, the questions you could hear steering; the question before each is usually the failure.
 
@@ -3486,7 +3486,7 @@ Section: practice. Stable action: step-5-brief.
 
 The revised guide and the repair the Check questions asked for.
 
-- Write the three questions that worked, the one that failed and why, and the thing you wish you had followed. Revise the guide for the next session, giving a reason for each change and for any question you keep unchanged. Save both versions.
+- Using what worked and failed in step 4, revise the guide for the next session, giving a reason for each change and for any question you keep unchanged. Save both versions: the first stays in step 1, the revision goes in this step.
 
 **Start here:** Update the guide now, while you remember what happened.
 
@@ -3495,6 +3495,19 @@ The revised guide and the repair the Check questions asked for.
 **Revised guide:** The version you would use next time, changed by what happened in the session or rehearsal rather than by rethinking it at your desk.
 
 **Repair:** The specific fix a Check question asks for, made in the step it names rather than noted as an intention.
+
+
+### The revised guide, with a reason beside each change and each question kept unchanged
+
+Section: practice. Stable action: write-revised-guide.
+
+Your first version stays in step 1. Write the questions only, never what anyone answered.
+
+**Answer:** The revised guide, with a reason beside each change and each question kept unchanged
+
+Optional: may be left empty.
+
+Your first version stays in step 1. Write the questions only, never what anyone answered.
 
 
 ### What you changed after the Check questions
@@ -4259,7 +4272,7 @@ Repair: Reconstruct the timings you did not take from any recording or from memo
 
 **Observations an interview would not have produced are recorded honestly**
 
-Adequate evidence: After a consented observation: up to three specific observations an interview would not have produced, each with why the person would not have reported it, and an honest statement if there were fewer. On the gap route: no observations at all, the dated gap, and your reasoning on the supplied made-up account.
+Adequate evidence: After a consented observation: up to three specific observations an interview would not have produced, each with why the person would not have reported it, and an honest statement if there were fewer. On the gap route: no observations at all, the dated gap, and your answer to the supplied made-up account in step 4's Try-it question (the write-up you judged worth keeping).
 
 0 — The record repeats what interviews already established, or contains invented observations.
 
@@ -4505,7 +4518,7 @@ Example (made up): What did you do? Where were you? What did you need to know? A
 
 Section: practice-plan. Stable action: step-3-brief.
 
-Duration, schedule, day-one message and an honest burden estimate.
+Duration, schedule, day-one message, consent that covers several days, an honest burden estimate and what you offer for it.
 
 - Write the duration, the prompt schedule, what you will send on day one, the burden estimate you will tell the participant, and what you offer for their time. Add your consent introduction, extended for a study that continues over days.
 
@@ -4520,33 +4533,33 @@ Duration, schedule, day-one message and an honest burden estimate.
 **Burden:** What the study costs the participant in time and attention, counted in minutes per day. Estimate it, then double it, because you know what your own prompts mean and they do not.
 
 
-### Duration, prompt schedule, and what you send on day one
+### Duration, prompt schedule, what you send on day one, and how your consent introduction covers contact over several days
 
 Section: practice-plan. Stable action: write-duration-schedule.
 
-Write your answer for “Duration, prompt schedule, and what you send on day one”. Use the task instructions below to decide what to include.
+Extend your Lesson 5 introduction: say how many days, how often you will message, and that they can stop on any day.
 
-**Answer:** Duration, prompt schedule, and what you send on day one
+**Answer:** Duration, prompt schedule, what you send on day one, and how your consent introduction covers contact over several days
+
+Extend your Lesson 5 introduction: say how many days, how often you will message, and that they can stop on any day.
 
 
-
-
-### Your honest burden estimate, in minutes per day
+### Your honest burden estimate, in minutes per day, and what you offer for that time (or why nothing)
 
 Section: practice-plan. Stable action: write-burden.
 
-Then double it. Diary studies usually cost the participant more than the designer expects.
+Then double it. Diary studies usually cost the participant more than the designer expects. If you cannot offer anything, ask for less.
 
-**Answer:** Your honest burden estimate, in minutes per day
+**Answer:** Your honest burden estimate, in minutes per day, and what you offer for that time (or why nothing)
 
-Then double it. Diary studies usually cost the participant more than the designer expects.
+Then double it. Diary studies usually cost the participant more than the designer expects. If you cannot offer anything, ask for less.
 
 
 ### Plan for dropout and closure
 
 Section: practice-plan. Stable action: step-4-brief.
 
-Minimum data, a response to silence, and a rule for late entries.
+Minimum data, responses to silence and to withdrawal, a rule for late entries, and a plan for the closing conversation.
 
 - Write your minimum acceptable data, your response to silence, your rule for late or reconstructed entries, and your withdrawal procedure. Draft the closing conversation: how you will read the entries first and build questions from them.
 
@@ -4598,15 +4611,15 @@ Write your answer for “Your minimum acceptable data”. Use the task instructi
 
 
 
-### What you do after two days of silence
+### What you do after two days of silence, and if they withdraw mid-week (including deleting their entries)
 
 Section: practice-plan. Stable action: write-silence-response.
 
-One reminder, then stop. Chasing is pressure.
+One reminder, then stop. Chasing is pressure. Withdrawal means their entries are deleted, not set aside.
 
-**Answer:** What you do after two days of silence
+**Answer:** What you do after two days of silence, and if they withdraw mid-week (including deleting their entries)
 
-One reminder, then stop. Chasing is pressure.
+One reminder, then stop. Chasing is pressure. Withdrawal means their entries are deleted, not set aside.
 
 
 ### Your rule for late or reconstructed entries
@@ -4618,6 +4631,19 @@ Write your answer for “Your rule for late or reconstructed entries”. Use the
 **Answer:** Your rule for late or reconstructed entries
 
 
+
+
+### How you will read the entries first and build the closing conversation from them, with one example question shape
+
+Section: practice-plan. Stable action: write-closing-plan.
+
+A question shape, not a question: “on Tuesday you wrote …, what was happening?”. Write the real questions only after reading real entries; on the gap route there are none.
+
+**Answer:** How you will read the entries first and build the closing conversation from them, with one example question shape
+
+Optional: may be left empty.
+
+A question shape, not a question: “on Tuesday you wrote …, what was happening?”. Write the real questions only after reading real entries; on the gap route there are none.
 
 
 ### Check your reasoning · 1 of 3
@@ -5117,6 +5143,19 @@ If cutting left you with fewer questions, write here which question you cut and 
 If cutting left you with fewer questions, write here which question you cut and why; that is a complete answer.
 
 
+### Questions 6 to 8 · only if your survey needs them, each with what you would do with the answer
+
+Section: practice-plan. Stable action: write-q-more.
+
+Eight is the most, not the target. Leave this empty if five or fewer survived the cut.
+
+**Answer:** Questions 6 to 8 · only if your survey needs them, each with what you would do with the answer
+
+Optional: may be left empty.
+
+Eight is the most, not the target. Leave this empty if five or fewer survived the cut.
+
+
 ### Run a wording review
 
 Section: practice-plan. Stable action: step-3-brief.
@@ -5579,7 +5618,7 @@ Group observations, but watch where the groups come from. Bringing your existing
 
 Section: learn. Stable action: learn-3.
 
-Count people, not incidents. One talkative participant who mentioned the same difficulty five times is one person, and writing “mentioned five times” quietly turns them into five. Beside each finding write the number of participants who showed it and the total, and keep the single-participant findings: a severe problem seen once is worth acting on, provided you write it as one person's severe problem rather than as a pattern. Zero is a count too: “none of the six notes mention the price” is an honest null finding, provided the material could have shown it, and so is a problem everyone expected that did not appear.
+Count people, not incidents. One talkative participant who mentioned the same difficulty five times is one person, and writing “mentioned five times” quietly turns them into five. Beside each finding write the number of participants who showed it and the total, and keep the single-participant findings: a severe problem seen once is worth acting on, provided you write it as one person's severe problem rather than as a pattern. Zero is a count too: “none of the six notes mention the price” is an honest null finding, provided the material could have shown it, and so is a problem everyone expected that did not appear. The supplied notes N01–N06 record only actions about materials, so they could not have shown price and cannot support that null; with them, report what they can show, such as “2 of 6 went to the confirmation email (N02, N05)”.
 
 
 ### Contradictions are findings
@@ -5812,11 +5851,11 @@ Write your answer for “Finding 2 · the sentence, how many people showed it, t
 
 Section: practice-plan. Stable action: write-finding-3.
 
-A null result counts, such as “none of the six notes mention price”, if the material could have shown it. If only two findings survive the tests, write that here and where the other candidates went; do not pad.
+A null result counts if the material could have shown it, such as “nobody mentioned the dishwasher” when everyone was asked what is hardest about a shared kitchen. The supplied notes N01–N06 could not show price, so they support no null about it. If only two findings survive the tests, write that here and where the other candidates went; do not pad.
 
 **Answer:** Finding 3 · the sentence, how many people showed it, the evidence, your confidence, and the decision it informs
 
-A null result counts, such as “none of the six notes mention price”, if the material could have shown it. If only two findings survive the tests, write that here and where the other candidates went; do not pad.
+A null result counts if the material could have shown it, such as “nobody mentioned the dishwasher” when everyone was asked what is hardest about a shared kitchen. The supplied notes N01–N06 could not show price, so they support no null about it. If only two findings survive the tests, write that here and where the other candidates went; do not pad.
 
 
 ### Check your reasoning · 1 of 3
@@ -6626,7 +6665,7 @@ Write your decision first, then the reason it fits this new case. Compare with t
 <summary>Compare after writing</summary>
 
 - Weak: Keeps the screen in the statement, or labels it evidenced because it sounds sensible.
-- Adequate: Something like “When I plan a laundry trip, I want to know a machine will be free when I arrive, so that I do not waste the journey”, with no screen named, labelled evidenced from the two customers who phoned ahead.
+- Adequate: Something like “When I plan a laundry trip, I want to know a machine will be free when I arrive, so that I do not waste the journey”, with no screen named, labelled evidenced for the behaviour (2 of 3 phoned ahead), with the so-that reason marked assumed.
 - Strong: As adequate, and notes that any emotional success criterion stays assumed unless someone said it, lists other responses the new statement allows (a call-back, a booking slot), and says what would test it.
 
 </details>
@@ -6789,7 +6828,7 @@ Research means learning from evidence without pretending that a guess, rehearsal
 - **Layer:** One row that runs the whole width of the map, holding a single kind of information: what people do, what they think, or what they feel.
 - **Pass:** One sweep from the first stage to the last, filling in a single layer. Three layers means three passes, not one stage-by-stage crawl.
 
-**Quick example.** A supplied map from the same made-up study, drawn from three interviews, with a deep dip in the feeling layer at the payment stage.
+**Quick example.** A supplied map from the same made-up study, drawn from three interviews, with a deep dip in the feeling layer at the payment stage. No participant described their feelings at payment; the dip is the designer’s reading.
 
 The reader demonstrates and guides the task before asking for “Starting before the product and ending after it”.
 
@@ -6862,13 +6901,13 @@ Use your own material, or the labelled practice material below. Keep its source 
 - N01–N04 preserve the earlier supplied example; N05–N06 are additional fictional notes for practice. You know only these actions. Reasons, feelings and frequency in any real population remain unknown.
 
 
-### Read and prepare
+### Read, prepare and set the stages
 
 Section: practice-plan. Stable action: step-1-brief.
 
 Stages that start before your product and end after it.
 
-- Read the assigned page. Lay out your findings, notes and quotations where you can see them all; the map is built from these and from nothing else.
+- Read the assigned page. Lay out your findings, notes and quotations, or the supplied notes N01 to N06, where you can see them all; the map is built from these and from nothing else. Then write the stages people actually pass through, starting before the product and ending after it. Use their language for the stage names. Do not place anything else yet.
 
 **Start here:** Begin with what happens before they have heard of you.
 
@@ -6918,13 +6957,13 @@ Example (made up): a friend mentions a class · looking for something to do · c
 </details>
 
 
-### Set the stages
+### Build the layers
 
 Section: practice-plan. Stable action: step-2-brief.
 
 Three layers, each completed in one pass across all stages.
 
-- Write the stages people actually pass through, starting before the product and ending after it. Use their language for the stage names. Do not place anything else yet.
+- Add what people do, then what they think, then what they feel — one complete pass per layer. Attach a quotation or note reference wherever you can.
 
 **Start here:** Do the doing layer across every stage before starting the thinking layer.
 
@@ -6968,13 +7007,13 @@ Cite note labels rather than distinctive quotations. Without evidence, write unk
 Cite note labels rather than distinctive quotations. Without evidence, write unknown or mark it assumed.
 
 
-### Build the layers
+### Mark the evidence
 
 Section: practice-plan. Stable action: step-3-brief.
 
 Every entry marked, with the assumed entries counted.
 
-- Add what people do, then what they think, then what they feel — one complete pass per layer. Attach a quotation or note reference wherever you can.
+- Mark every stage and every layer entry observed, reported or assumed. Count the assumed marks; if they outnumber the rest, the map is a hypothesis and must be labelled as one.
 
 **Start here:** Mark the doing layer first; it is where most of the observed entries are.
 
@@ -7030,13 +7069,13 @@ Count them. A map that is mostly assumed is a hypothesis, and should say so.
 Count them. A map that is mostly assumed is a hypothesis, and should say so.
 
 
-### Mark the evidence
+### Make the shareable version
 
 Section: practice-plan. Stable action: step-4-brief.
 
 A shareable version that keeps the marks and states participant numbers.
 
-- Mark every stage and every layer entry observed, reported or assumed. Count the assumed marks; if they outnumber the rest, the map is a hypothesis and must be labelled as one.
+- Produce a simplified version that keeps the evidence marks and adds one line stating participants, place and period. Note where the full map lives.
 
 **Start here:** Simplify by removing detail, never by removing the marks.
 
@@ -7051,7 +7090,7 @@ A shareable version that keeps the marks and states participant numbers.
 
 Section: practice-plan. Stable action: step-4-try.
 
-A supplied map from the same made-up study, drawn from three interviews, with a deep dip in the feeling layer at the payment stage.
+A supplied map from the same made-up study, drawn from three interviews, with a deep dip in the feeling layer at the payment stage. No participant described their feelings at payment; the dip is the designer’s reading.
 
 What may the shareable version claim about that dip?
 
@@ -7185,13 +7224,13 @@ Answers to revisit: stages, layer-do, layer-think, layer-feel
 </details>
 
 
-### Make the shareable version and pause
+### Check, repair and pause
 
 Section: practice. Stable action: step-5-brief.
 
 The map saved, and the repair the Check questions asked for.
 
-- Produce a simplified version that keeps the evidence marks and adds one line stating participants, place and period. Save both versions.
+- Check that nothing in the shareable version claims more than the marks allow, make the repair the Check questions ask for, and save both versions.
 
 **Start here:** Check that nothing in the shareable version claims more than the marks allow.
 
@@ -7267,7 +7306,7 @@ Layer: One row that runs the whole width of the map, holding a single kind of in
 Pass: One sweep from the first stage to the last, filling in a single layer. Three layers means three passes, not one stage-by-stage crawl.
 
 Supplied practice material (fictional or labelled practice, not my research):
-A supplied map from the same made-up study, drawn from three interviews, with a deep dip in the feeling layer at the payment stage.
+A supplied map from the same made-up study, drawn from three interviews, with a deep dip in the feeling layer at the payment stage. No participant described their feelings at payment; the dip is the designer’s reading.
 
 Activity: Run a short simulated practice using only the supplied material. Ask what evidence supports my choice and what is still unknown.
 
@@ -7390,7 +7429,7 @@ Research means learning from evidence without pretending that a guess, rehearsal
 - **Headline:** The first line of a finding, stating what is true in one full sentence. A reader who stops there should still have the finding.
 - **Evidence:** Where the finding came from: which sessions, and how many people it rests on.
 
-**Quick example.** A supplied pair from the same made-up study. A: “Improve the booking experience.” B: “Show the materials list on the confirmation screen, because all three participants looked for it after booking; do not build the reminder email yet, since nobody in this study mentioned email at all.”
+**Quick example.** A supplied pair from the same made-up study. A: “Improve the booking experience.” B: “Show the materials list on the confirmation screen, because all three participants looked for it after booking; do not build the reminder email yet, since all three went looking for the list themselves, so forgetting was not the problem.”
 
 The reader demonstrates and guides the task before asking for “The structure the guidance gives for presenting a finding”.
 
@@ -7564,11 +7603,11 @@ Write your answer for “Finding 2 · headline, facts, why it matters, evidence�
 
 Section: practice-plan. Stable action: write-report-3.
 
-A clean result is a finding when its count is stated, such as “none of the six had trouble finding the date”. If only two findings can be supported, write that here; do not pad.
+A clean result is a finding when its count is stated and the material could have shown the problem, such as “none of the five had difficulty booking a room” in a study that watched each of them book. The supplied notes N01–N06 say nothing about dates or booking difficulty, so they support no such clean result. If only two findings can be supported, write that here; do not pad.
 
 **Answer:** Finding 3 · headline, facts, why it matters, evidence
 
-A clean result is a finding when its count is stated, such as “none of the six had trouble finding the date”. If only two findings can be supported, write that here; do not pad.
+A clean result is a finding when its count is stated and the material could have shown the problem, such as “none of the five had difficulty booking a room” in a study that watched each of them book. The supplied notes N01–N06 say nothing about dates or booking difficulty, so they support no such clean result. If only two findings can be supported, write that here; do not pad.
 
 
 ### Write the limitations
@@ -7645,7 +7684,7 @@ One recommendation tied to a finding, and one thing not to do.
 
 Section: practice-plan. Stable action: step-4-try.
 
-A supplied pair from the same made-up study. A: “Improve the booking experience.” B: “Show the materials list on the confirmation screen, because all three participants looked for it after booking; do not build the reminder email yet, since nobody in this study mentioned email at all.”
+A supplied pair from the same made-up study. A: “Improve the booking experience.” B: “Show the materials list on the confirmation screen, because all three participants looked for it after booking; do not build the reminder email yet, since all three went looking for the list themselves, so forgetting was not the problem.”
 
 Why is B usable?
 
@@ -7870,7 +7909,7 @@ Headline: The first line of a finding, stating what is true in one full sentence
 Evidence: Where the finding came from: which sessions, and how many people it rests on.
 
 Supplied practice material (fictional or labelled practice, not my research):
-A supplied pair from the same made-up study. A: “Improve the booking experience.” B: “Show the materials list on the confirmation screen, because all three participants looked for it after booking; do not build the reminder email yet, since nobody in this study mentioned email at all.”
+A supplied pair from the same made-up study. A: “Improve the booking experience.” B: “Show the materials list on the confirmation screen, because all three participants looked for it after booking; do not build the reminder email yet, since all three went looking for the list themselves, so forgetting was not the problem.”
 
 Activity: Run a short simulated practice using only the supplied material. Ask what evidence supports my choice and what is still unknown.
 

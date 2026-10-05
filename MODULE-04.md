@@ -1282,7 +1282,7 @@ This module looks at what people expect, what confuses them and how a design cho
 
 **Quick example.** A supplied row from the same made-up screen: a link in body text reading “see what to bring”, styled in the same colour and weight as the surrounding text, underlined only on hover.
 
-The reader demonstrates and guides the task before asking for “Affordance, signifier, and feedback”.
+The reader demonstrates and guides the task before asking for “Affordance, signifier and feedback · one line each, with a screen example”.
 
 ### What this lesson will help you do
 
@@ -1343,7 +1343,7 @@ Section: practice-plan. Stable action: step-1-brief.
 
 One-line definitions in your own words.
 
-- Read the assigned article's opening sections. Write your own one-line definitions of affordance, signifier and the two gulfs, with a screen example of each.
+- Read the assigned article's opening sections. Write your own one-line definitions of affordance, signifier and feedback, with a screen example of each. Signifiers close the gulf of execution; feedback closes the gulf of evaluation.
 
 **Start here:** Write the three sentences before looking at your screen, so the inventory is not shaped to fit them.
 
@@ -1356,13 +1356,13 @@ One-line definitions in your own words.
 **Feedback:** What tells the reader the action happened, and what happened.
 
 
-### Affordance, signifier, and feedback
+### Affordance, signifier and feedback · one line each, with a screen example
 
 Section: practice-plan. Stable action: write-definitions.
 
 One line each, without using the other two words.
 
-**Answer:** Affordance, signifier, and feedback
+**Answer:** Affordance, signifier and feedback · one line each, with a screen example
 
 One line each, without using the other two words.
 
@@ -1377,7 +1377,7 @@ Every interactive element inventoried across all three columns, with blanks left
 
 **Start here:** Print the screen and write three short columns beside each control.
 
-**Enough:** At least one cell is blank and stayed blank.
+**Enough:** Any cell with no perceivable cue stays blank; if every cell genuinely has one, say how you checked (for example, on a phone).
 
 **Control:** Anything a reader can act on: a button, a link in a sentence, a card, the back arrow.
 
@@ -1603,7 +1603,7 @@ Your card is clickable and readers will discover that by hovering. What is wrong
 <details>
 <summary>After your attempt</summary>
 
-It is acceptable as long as the card also has a soft shadow beneath it. — A shadow may be a persistent signifier, in which case the shadow is doing the work and the hover is decoration.
+It is acceptable as long as the card also has a soft shadow beneath it. — A soft shadow is weak and ambiguous — many cards that cannot be tapped have one — so it cannot be relied on, and the hover still adds nothing on a phone.
 
 Nothing serious, provided most visitors use the site on a desktop computer. — Even on desktop, hover only rewards a reader who was already exploring. It cannot invite the first action.
 
@@ -1787,12 +1787,12 @@ A supplied row from the same made-up screen: a link in body text reading “see 
 Activity: Teach the idea with a simple everyday analogy. Then give me one believable wrong choice and ask me to find the risk before you explain it.
 
 Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
-When the activity is finished, tell me to return to the course answer called “Affordance, signifier, and feedback” and write my own decision. Do not write that answer for me.
+When the activity is finished, tell me to return to the course answer called “Affordance, signifier and feedback · one line each, with a screen example” and write my own decision. Do not write that answer for me.
 ```
 
-**Come back to the course:** Return to “Affordance, signifier, and feedback”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+**Come back to the course:** Return to “Affordance, signifier and feedback · one line each, with a screen example”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “Affordance, signifier, and feedback” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “Affordance, signifier and feedback · one line each, with a screen example” and write one sentence in your own words.
 
 </details>
 <details>
@@ -1829,7 +1829,7 @@ Adequate evidence: Visible empty cells where no signifier or feedback exists, ca
 
 1 — Blanks exist but are not treated as findings.
 
-2 — Blanks are visible and listed as findings.
+2 — Blanks are visible and listed as findings, or a stated check (for example, on a phone) shows no cue was missing.
 
 3 — As adequate, and the blanks are ordered by how costly the missing cue is to the reader.
 
@@ -2510,7 +2510,7 @@ Repair: Find every sentence whose subject is the participant and rewrite it with
 
 **Interventions match the class and prefer constraint over warning**
 
-Adequate evidence: Four interventions, each stating the class it targets and why a constraint, default or undo was chosen over a warning.
+Adequate evidence: Four interventions, each stating the class it targets and why a constraint, default or undo (for a slip) or clearer information, naming or preview (for a mistake) was chosen over a warning.
 
 0 — Warnings or confirmations applied to everything.
 
@@ -2578,7 +2578,7 @@ Apply three assigned UX laws to one decision, then deliberately find a situation
 
 Section: learn. Stable action: learn-1.
 
-These heuristics are named regularities, not physical laws, and their sources present them without caveats. Fitts's law describes how target size and distance affect pointing time; Hick's law describes how the number of choices affects decision time; Jakob's law observes that people spend most of their time on other products and bring those expectations with them. Each is a genuine tendency and none of them settles a design decision on its own.
+These heuristics are named regularities, not physical laws, and their source pages state them as laws with few limits — the Hick's law page's only caution is “be careful not to simplify to the point of abstraction”. Fitts's law describes how target size and distance affect pointing time; Hick's law describes how the number of choices affects decision time; Jakob's law observes that people spend most of their time on other products and bring those expectations with them. Each is a genuine tendency and none of them settles a design decision on its own.
 
 
 ### Idea 2: The commonest misuse is applying a law outside the conditions…
@@ -3084,7 +3084,7 @@ When the activity is finished, tell me to return to the course answer called “
 - A principle suggests what to investigate; it does not supply a result.
 - Reducing options may hide a necessary choice. Ask what your simplification removes.
 
-- R31: [Laws of UX](https://lawsofux.com/) — Assigned pages only: fittss-law, hicks-law and jakobs-law, each read with its origins and takeaways. Purpose: Supplies the named regularities this lesson then bounds with counterexamples. Free reading, no account. Verified 2026-09-06. The site states these as laws and publishes no caveats; every limitation in this lesson is the course's own and must be presented that way. A printed poster is sold and also offered free; nothing is required. Fallback: R02.
+- R31: [Laws of UX](https://lawsofux.com/) — Assigned pages only: fittss-law, hicks-law and jakobs-law, each read with its origins and takeaways. Purpose: Supplies the named regularities this lesson then bounds with counterexamples. Free reading, no account. Verified 2026-09-06; caution rechecked 2026-10-05. The site states these as laws with few limits: of the three assigned pages, only the Hick's law page gives a caution (“be careful not to simplify to the point of abstraction”). Every other limitation in this lesson is the course's own and must be presented that way. A printed poster is sold and also offered free; nothing is required. Fallback: R02.
 
 </details>
 <details>
@@ -3100,7 +3100,7 @@ Adequate evidence: Three summaries, each naming both the regularity and the cond
 
 2 — All three include the situation the law assumes.
 
-3 — As adequate, and one summary notes that the source itself publishes no limits.
+3 — As adequate, and one summary notes how little the source says about the law's limits, quoting any caution it does give.
 
 Repair: For each law, write the sentence “this describes what happens when…” and complete it with the specific situation. Any law you cannot complete that sentence for has not been understood yet. Recheck: The three completed situation sentences.
 
@@ -3173,7 +3173,7 @@ Requests arrive as solutions. If you build them as stated you lose the ability t
 
 Bring: Your Module 2 findings and any requests, suggestions or stakeholder asks you have collected since.
 
-Starting route: Use real labelled requests, or mark these five as fictional practice: add reminders; add a map; add a saved list; add larger buttons; add a refund page. Convert each to a possible person, need and reason. These requests are not proof of a need; mark the resulting needs as assumptions. Name sources by role or code, never by name.
+Starting route: Use real labelled requests, or mark these five as fictional practice: add reminders; add a map; make it look more modern; add larger buttons; add a refund page. Convert each to a possible person and need; write a so-that only where the request itself implies one, mark it assumed, and record any request whose outcome you would have to invent. These requests are not proof of a need. Name sources by role or code, never by name.
 
 - A five-row table giving each original request, its need statement, its evidence source or assumption label, plus two testing questions and one need belonging to a non-primary user.
 
@@ -3232,14 +3232,14 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The organiser asked for a mandatory “I have read the instructions” checkbox. Converted: as an organiser, I need attendees to arrive with the right materials, so that sessions start on time. That reframing put three responses on the table — the checkbox, a materials summary on the confirmation screen, and a reminder the day before — and made it obvious that the checkbox is the only one that produces no evidence about whether anyone read anything.
+- The organiser asked for a mandatory “I have read the instructions” checkbox. Converted: as an organiser, I need attendees to arrive with the right materials, so that sessions start on time. That reframing put three responses on the table — the checkbox, a materials summary on the confirmation screen, and a reminder the day before — and made it obvious that the checkbox records a click, not preparation: it is the only one of the three that does nothing to help anyone arrive with the right materials.
 
 
 ### Choose where you will do the work
 
 Section: learn. Stable action: workspace.
 
-Use real labelled requests, or mark these five as fictional practice: add reminders; add a map; add a saved list; add larger buttons; add a refund page. Convert each to a possible person, need and reason. These requests are not proof of a need; mark the resulting needs as assumptions. Name sources by role or code, never by name.
+Use real labelled requests, or mark these five as fictional practice: add reminders; add a map; make it look more modern; add larger buttons; add a refund page. Convert each to a possible person and need; write a so-that only where the request itself implies one, mark it assumed, and record any request whose outcome you would have to invent. These requests are not proof of a need. Name sources by role or code, never by name.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
 
@@ -3497,7 +3497,7 @@ Difficulty here usually means the request has no outcome behind it. Record that 
 
 Section: practice-plan. Stable action: step-4-brief.
 
-An evidence source or an assumption label for every need, and the consequence of the two riskiest assumptions being wrong.
+An evidence source or an assumption label for every need, and for the two riskiest assumptions, the consequence of being wrong and the smallest question that would test each.
 
 - For each need, record the evidence source or mark it as an assumption. For the two most consequential assumptions, write the smallest question that would test them.
 
@@ -3542,13 +3542,13 @@ A request is not evidence about behaviour, so a need traced only to a request is
 A request is not evidence about behaviour, so a need traced only to a request is an assumption with that request as its source.
 
 
-### For the two most consequential assumptions: what would happen if each is wrong
+### For the two most consequential assumptions: what happens if each is wrong, and the smallest question that would test it
 
 Section: practice-plan. Stable action: write-consequential-assumptions.
 
-Write your answer for “For the two most consequential assumptions: what would happen if each is wrong”. Use the task instructions below to decide what to include.
+Write your answer for “For the two most consequential assumptions: what happens if each is wrong, and the smallest question that would test it”. Use the task instructions below to decide what to include.
 
-**Answer:** For the two most consequential assumptions: what would happen if each is wrong
+**Answer:** For the two most consequential assumptions: what happens if each is wrong, and the smallest question that would test it
 
 
 
@@ -3791,13 +3791,13 @@ Repair: For each need, name the exact observation or note it came from. If you c
 
 **Difficulty writing an outcome is recorded, not concealed**
 
-Adequate evidence: At least one recorded case where the so-that clause was hard or impossible, kept as a finding.
+Adequate evidence: At least one recorded case where the so-that clause was hard or impossible, kept as a finding, or a stated reason why each outcome followed from the request itself.
 
 0 — All outcomes written smoothly with no difficulty noted, despite thin inputs.
 
 1 — Difficulty mentioned but the outcome was invented anyway.
 
-2 — A difficult case is retained with the difficulty stated.
+2 — A difficult case is retained with the difficulty stated, or each outcome is shown to follow from its request.
 
 3 — As adequate, and the difficulty is turned into a question for whoever made the request.
 
@@ -4235,20 +4235,20 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You listed “must work on mobile” as a constraint. Is it?
+You listed “the page must use a carousel, like our rival’s” as a constraint. Is it?
 
-- Probably a decision: mark it changeable and say what changing it would take.
-- Yes, because most readers are on phones, so it can never be changed.
+- Yes, because rivals use one, so readers expect it and it cannot change.
+- A preference: mark it changeable and say what changing it would take.
 - No, because nothing is truly fixed, so a constraint list means nothing.
 
 <details>
 <summary>After your attempt</summary>
 
-Probably a decision: mark it changeable and say what changing it would take. — The distinction matters because constraints stop conversation and preferences should not. Marking it honestly keeps the option visible.
+Yes, because rivals use one, so readers expect it and it cannot change. — What a rival does may be a reason to prefer it. Nothing outside the team stops you deciding otherwise, which is what makes it a preference, not a constraint.
 
-Yes, because most readers are on phones, so it can never be changed. — That is a strong reason for the decision, which is what makes it a decision.
+A preference: mark it changeable and say what changing it would take. — Copying a rival is a choice someone on the team could reverse this week. The distinction matters because constraints stop conversation and preferences should not; marking it honestly keeps the option visible.
 
-No, because nothing is truly fixed, so a constraint list means nothing. — Some things genuinely are fixed within your horizon, such as a legal requirement or a budget already spent.
+No, because nothing is truly fixed, so a constraint list means nothing. — Some things genuinely are fixed within your horizon, such as a legal requirement, a budget already spent or the devices your readers actually use. A rival’s carousel is not one of them.
 
 Improve: Go through your constraint list in step 5 and mark each fixed or changeable, adding what changing it would take, then record the change.
 

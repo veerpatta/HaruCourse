@@ -382,7 +382,7 @@ export const module4: Lesson[] = [
       {
         minutes: 25,
         title: "Read and define",
-        text: "Read the assigned article's opening sections. Write your own one-line definitions of affordance, signifier and the two gulfs, with a screen example of each.",
+        text: "Read the assigned article's opening sections. Write your own one-line definitions of affordance, signifier and feedback, with a screen example of each. Signifiers close the gulf of execution; feedback closes the gulf of evaluation.",
       },
       {
         minutes: 30,
@@ -454,7 +454,7 @@ export const module4: Lesson[] = [
         levels: [
           "Every cell is filled with a plausible-sounding description.",
           "Blanks exist but are not treated as findings.",
-          "Blanks are visible and listed as findings.",
+          "Blanks are visible and listed as findings, or a stated check (for example, on a phone) shows no cue was missing.",
           "As adequate, and the blanks are ordered by how costly the missing cue is to the reader.",
         ],
         remediation:
@@ -632,7 +632,7 @@ export const module4: Lesson[] = [
         criterion:
           "Interventions match the class and prefer constraint over warning",
         evidence:
-          "Four interventions, each stating the class it targets and why a constraint, default or undo was chosen over a warning.",
+          "Four interventions, each stating the class it targets and why a constraint, default or undo (for a slip) or clearer information, naming or preview (for a mistake) was chosen over a warning.",
         levels: [
           "Warnings or confirmations applied to everything.",
           "Interventions exist but are not matched to class.",
@@ -676,7 +676,7 @@ export const module4: Lesson[] = [
       "Any decision from this module you found hard to justify, plus the screens you have been working on.",
     why: "Named laws are useful shorthand in a review and dangerous as authority. Learning them without their limits produces a designer who can quote a principle at every decision and cannot tell when it does not apply.",
     teach: [
-      "These heuristics are named regularities, not physical laws, and their sources present them without caveats. Fitts's law describes how target size and distance affect pointing time; Hick's law describes how the number of choices affects decision time; Jakob's law observes that people spend most of their time on other products and bring those expectations with them. Each is a genuine tendency and none of them settles a design decision on its own.",
+      "These heuristics are named regularities, not physical laws, and their source pages state them as laws with few limits — the Hick's law page's only caution is “be careful not to simplify to the point of abstraction”. Fitts's law describes how target size and distance affect pointing time; Hick's law describes how the number of choices affects decision time; Jakob's law observes that people spend most of their time on other products and bring those expectations with them. Each is a genuine tendency and none of them settles a design decision on its own.",
       "The commonest misuse is applying a law outside the conditions it describes. Hick's law concerns choices among comparable options, so citing it to justify hiding navigation is a category error: a person looking for a specific item is not choosing between equivalent alternatives, and hiding the item makes their task harder while the law's number looks better. Ask what the law's underlying situation actually is before invoking it.",
       "Laws conflict, and the conflict is where the design work lives. Jakob's law argues for the familiar pattern; a genuine improvement argues for the unfamiliar one. Fitts's law argues for a large, close target; the surrounding layout argues that a control which dominates the screen distorts the hierarchy. Naming both sides and choosing with a stated reason is stronger practice than quoting whichever supports the decision you had already made.",
       "Every law is a hypothesis in your specific context. The honest form is: this principle suggests X, which predicts readers will do Y, which I could check by Z. That sentence is testable. “Hick's law says fewer options” is not, and it is the form that lets a confident designer win an argument they should have lost.",
@@ -748,7 +748,7 @@ export const module4: Lesson[] = [
           "Laws restated as slogans.",
           "Regularities stated but assumed situations missing.",
           "All three include the situation the law assumes.",
-          "As adequate, and one summary notes that the source itself publishes no limits.",
+          "As adequate, and one summary notes how little the source says about the law's limits, quoting any caution it does give.",
         ],
         remediation:
           "For each law, write the sentence “this describes what happens when…” and complete it with the specific situation. Any law you cannot complete that sentence for has not been understood yet.",
@@ -809,7 +809,7 @@ export const module4: Lesson[] = [
           "Supplies the named regularities this lesson then bounds with counterexamples.",
         minutes: "30–45 selected",
         limits:
-          "Free reading, no account. Verified 2026-09-06. The site states these as laws and publishes no caveats; every limitation in this lesson is the course's own and must be presented that way. A printed poster is sold and also offered free; nothing is required.",
+          "Free reading, no account. Verified 2026-09-06; caution rechecked 2026-10-05. The site states these as laws with few limits: of the three assigned pages, only the Hick's law page gives a caution (“be careful not to simplify to the point of abstraction”). Every other limitation in this lesson is the course's own and must be presented that way. A printed poster is sold and also offered free; nothing is required.",
         fallbackId: "R02",
       },
     ],
@@ -836,7 +836,7 @@ export const module4: Lesson[] = [
     misconception:
       "“The stakeholder knows the business, so their request is a requirement.” Their knowledge is real and is not the same as evidence about behaviour. Treat the request as a strong lead: convert it to a need, record the reasoning behind it, and note what would confirm it. That respects the expertise without skipping the check.",
     example:
-      "The organiser asked for a mandatory “I have read the instructions” checkbox. Converted: as an organiser, I need attendees to arrive with the right materials, so that sessions start on time. That reframing put three responses on the table — the checkbox, a materials summary on the confirmation screen, and a reminder the day before — and made it obvious that the checkbox is the only one that produces no evidence about whether anyone read anything.",
+      "The organiser asked for a mandatory “I have read the instructions” checkbox. Converted: as an organiser, I need attendees to arrive with the right materials, so that sessions start on time. That reframing put three responses on the table — the checkbox, a materials summary on the confirmation screen, and a reminder the day before — and made it obvious that the checkbox records a click, not preparation: it is the only one of the three that does nothing to help anyone arrive with the right materials.",
     steps: [
       {
         minutes: 20,
@@ -924,11 +924,11 @@ export const module4: Lesson[] = [
       {
         criterion: "Difficulty writing an outcome is recorded, not concealed",
         evidence:
-          "At least one recorded case where the so-that clause was hard or impossible, kept as a finding.",
+          "At least one recorded case where the so-that clause was hard or impossible, kept as a finding, or a stated reason why each outcome followed from the request itself.",
         levels: [
           "All outcomes written smoothly with no difficulty noted, despite thin inputs.",
           "Difficulty mentioned but the outcome was invented anyway.",
-          "A difficult case is retained with the difficulty stated.",
+          "A difficult case is retained with the difficulty stated, or each outcome is shown to follow from its request.",
           "As adequate, and the difficulty is turned into a question for whoever made the request.",
         ],
         remediation:
