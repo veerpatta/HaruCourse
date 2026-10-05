@@ -18,7 +18,6 @@ import {
   saveProgress,
   saveReviewSettings,
   listFeedback,
-  listLearners,
   saveFeedback,
 } from "./data";
 import {
@@ -222,8 +221,6 @@ const defaultHandler: ExportedHandler<Env> = {
       }
       return json({ position: await read() }, result.meta.changes ? 200 : 409);
     }
-    if (path === "/api/learners" && request.method === "GET")
-      return json({ learners: await listLearners(env, user), viewing: user.viewing ?? null });
     if (path === "/api/review-settings") {
       if (request.method === "GET") return json({ settings: await reviewSettings(env, user) });
       if (request.method === "PUT") return json({ settings: await saveReviewSettings(env, user, await bodyJson(request)) });

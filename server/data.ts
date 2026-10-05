@@ -23,34 +23,19 @@ export class HttpError extends Error {
   }
 }
 export function learnerId(user: User) {
-  return user.role === "creator" ? user.viewing?.id || "haru" : user.id;
+  return user.role === "creator" ? "haru" : user.id;
 }
-export const VIEWING_COOKIE = "haru_viewing";
 // records_version arrives with the session's user row at no extra read; it
 // is absent (and treated as 0) until migration 0004 has been applied.
 export type SessionUser = User & { recordsVersion: number };
-export async function activeUser(env: Env, id: string, viewing = ""): Promise<SessionUser> {
+export async function activeUser(env: Env, id: string): Promise<SessionUser> {
   const row = await env.DB.prepare(
     "SELECT * FROM users WHERE id=? AND active=1",
   )
     .bind(id)
     .first<User & { records_version?: number }>();
   if (!row) throw new HttpError(401, "Please sign in again.");
-  const user: SessionUser = { id: row.id, name: row.name, role: row.role, recordsVersion: row.records_version ?? 0 };
-  // The creator chooses which learner workspace to read (a pilot has several);
-  // only an active learner can be chosen, and Haru stays the default.
-  if (row.role === "creator") {
-    const chosen = /^[a-z0-9-]{1,40}$/.test(viewing) && viewing !== "haru"
-      ? await env.DB.prepare("SELECT id,name FROM users WHERE id=? AND role='learner' AND active=1").bind(viewing).first<{ id: string; name: string }>()
-      : null;
-    user.viewing = chosen ? { id: chosen.id, name: chosen.name } : { id: "haru", name: "Haru" };
-  }
-  return user;
-}
-export async function listLearners(env: Env, user: User) {
-  if (user.role !== "creator") throw new HttpError(403, "Only the course creator can choose a learner workspace.");
-  const rows = await env.DB.prepare("SELECT id,name FROM users WHERE role='learner' AND active=1 ORDER BY id<>'haru', id='test', name").all<{ id: string; name: string }>();
-  return rows.results.map((r) => ({ id: r.id, name: r.name, test: r.id === "test" }));
+  return { id: row.id, name: row.name, role: row.role, recordsVersion: row.records_version ?? 0 };
 }
 // The version that changes whenever the records a user reads change: their
 // own for a learner, Haru's for the creator.
@@ -117,12 +102,11 @@ export async function progressVersion(env: Env, user: User, lessonId: string, re
   if (!row) throw new HttpError(404, "That saved version does not exist.");
   return { record: recordSchema.parse(JSON.parse(row.record_json)), revision: row.revision, createdAt: row.created_at };
 }
-// Review destination. Every learner workspace shares the creator's reviewer
-// (Haru and any pilot learners); the shared test identity is told plainly
-// that none exists.
+// Review destination. Only Haru's workspace has a linked reviewer; other
+// learner workspaces (the test identity) are told plainly that none exists.
 const REVIEW_SETTINGS_KEY = "review-destination";
 export async function reviewSettings(env: Env, user: User): Promise<ReviewSettings | null> {
-  if (user.role === "learner" && user.id === "test") return null;
+  if (user.role === "learner" && user.id !== "haru") return null;
   const creator = await env.DB.prepare("SELECT name FROM users WHERE role='creator' AND active=1 LIMIT 1").first<{ name: string }>();
   let stored: { value: string; updated_at: string } | null = null;
   try {

@@ -129,10 +129,7 @@ export const recordSchema = z
     },
   );
 export type RecordData = z.infer<typeof recordSchema>;
-// A creator reads one learner workspace at a time; viewing names it (Haru by
-// default). Learners never carry it.
-export type User = { id: string; name: string; role: "creator" | "learner"; viewing?: { id: string; name: string } };
-export const viewedName = (user: User) => user.viewing?.name || "Haru";
+export type User = { id: string; name: string; role: "creator" | "learner" };
 export type CloudRecord = { record: RecordData | null; revision: number };
 // What a creator review concluded about one criterion on one saved version.
 // "demonstrated-independently" is reserved for an unfamiliar task (the lesson's

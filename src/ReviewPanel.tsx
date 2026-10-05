@@ -1,5 +1,5 @@
 import { useEffect, useId, useState } from "react";
-import { viewedName, type Feedback, type RecordData, type ReviewOutcome, type ReviewSettings, type ReviewSummary, type User } from "../shared/record";
+import type { Feedback, RecordData, ReviewOutcome, ReviewSettings, ReviewSummary, User } from "../shared/record";
 import { hasReviewWork, progressStates } from "../shared/learning";
 import type { Lesson } from "./teaching";
 import type { SetPractice } from "./LearningProgress";
@@ -271,7 +271,7 @@ export function CreatorReviewForm({ lesson, record, endpoint, onSaved }: {
       e.preventDefault();
       try {
         const latest = await fetch("/api/progress?lessonId=" + lesson.id, { cache: "no-store" }).then((r) => r.json());
-        if (JSON.stringify(latest.record) !== JSON.stringify(record)) throw Error("The learner saved a newer version. Reopen the lesson before reviewing.");
+        if (JSON.stringify(latest.record) !== JSON.stringify(record)) throw Error("Haru saved a newer version. Reopen the lesson before reviewing.");
         const r = await fetch(endpoint, {
           method: "POST",
           headers: { "content-type": "application/json" },
@@ -336,49 +336,8 @@ export function ReviewQueue({ items, reviews, open }: { items: QueueItem[]; revi
           </button>
         ))}
       </div>
-      <p className="muted">Requests appear here when the learner you are viewing marks a version for review. Nobody is notified automatically.</p>
+      <p className="muted">Requests appear here when Haru marks a version for review. Nobody is notified automatically.</p>
     </section>
-  );
-}
-
-// The creator reads one learner workspace at a time. The choice is a cookie
-// the server checks on every request (only active learners can be chosen);
-// this device's cached copies of the previous learner's work are cleared.
-export function LearnerSwitcher({ user }: { user: User }) {
-  const id = useId();
-  const [learners, setLearners] = useState<{ id: string; name: string; test: boolean }[] | null>(null);
-  const [error, setError] = useState("");
-  useEffect(() => {
-    fetch("/api/learners", { cache: "no-store" })
-      .then((r) => (r.ok ? r.json() : Promise.reject(new Error("Could not load learners."))))
-      .then((v) => setLearners(v.learners))
-      .catch((e) => setError(e instanceof Error ? e.message : "Could not load learners."));
-  }, []);
-  const current = user.viewing?.id || "haru";
-  const choose = (next: string) => {
-    if (next === current) return;
-    const secure = location.protocol === "https:" ? "; Secure" : "";
-    document.cookie = `haru_viewing=${encodeURIComponent(next)}; Path=/; SameSite=Lax; Max-Age=31536000${secure}`;
-    try {
-      for (let i = localStorage.length - 1; i >= 0; i--) {
-        const key = localStorage.key(i);
-        if (key && /^harucourse:(lesson|timer):creator:|^harucourse:baseline:v1:creator/.test(key)) localStorage.removeItem(key);
-      }
-    } catch {
-      // Storage unavailable; the server copy loads after the reload anyway.
-    }
-    location.reload();
-  };
-  return (
-    <div className="review-form">
-      <p>You are reading <strong>{viewedName(user)}</strong>’s workspace. Reviews you save go to that learner only. Browsing never changes a learner’s progress or bookmark.</p>
-      <label htmlFor={`${id}-learner`}>Learner workspace</label>
-      {learners ? (
-        <select id={`${id}-learner`} value={current} onChange={(e) => choose(e.target.value)}>
-          {learners.map((l) => <option key={l.id} value={l.id}>{l.name}{l.test ? " (shared test workspace)" : ""}</option>)}
-        </select>
-      ) : <p role="status">{error || "Loading learners…"}</p>}
-    </div>
   );
 }
 
@@ -397,12 +356,12 @@ export function ReviewSettingsEditor({ settings, onSaved }: { settings: ReviewSe
         if (!r.ok) throw Error((await r.json().catch(() => ({}))).error || "Could not save.");
         const v = await r.json();
         onSaved(v.settings);
-        setMessage("Saved. Learners see this beside every review request.");
+        setMessage("Saved. Haru sees this beside every review request.");
       } catch (err) {
         setMessage(err instanceof Error ? err.message : "Could not save.");
       }
     }}>
-      <p>Tell learners who reviews their work and how long to expect. This is shown beside every review request; nothing is sent automatically.</p>
+      <p>Tell Haru who reviews her work and how long to expect. This is shown beside every review request; nothing is sent automatically.</p>
       <label htmlFor={`${id}-name`}>Reviewer name</label>
       <input id={`${id}-name`} required maxLength={80} value={name} onChange={(e) => setName(e.target.value)} />
       <label htmlFor={`${id}-window`}>Expected response time</label>

@@ -14,13 +14,13 @@ The creator authorized implementing the *Haru Course Improvement Plan* (4 Octobe
 
 **Review loop and progress states.** Work saved, practice finished, reviewed against criteria and demonstrated independently are separate. A review request (`learning.review`) names criterion, question and version; nothing is sent. Self-review (`learning.selfReview`) is labelled and never counts. Only a creator review with a criterion and outcome (feedback columns from migration 0004) records reviewed or demonstrated; AI critique cannot. Earlier versions stay in `submission_history` and the repair trail compares them.
 
-**Pilot learners.** Each pilot participant has their own learner account (`scripts/create-pilot-learners.mjs`); the creator chooses which workspace to read in Account → Learner workspace (a `haru_viewing` cookie checked on every request against active learners; Haru stays the default; learners ignore it). Reviews land on the chosen learner only. `scripts/pilot-report.mjs` reports what records show; observer-only measures stay on [the observation sheet](PILOT-OBSERVATION-SHEET.md).
+**Pilot learners.** A creator switch for reading several learner workspaces, pilot-account provisioning and a records report are held on the `pilot-workspaces` branch pending the creator's approval (they change who can read which work). Until then, pilot participants use their own accounts and share work through Account → Backups and review export; observer-only measures go on [the observation sheet](PILOT-OBSERVATION-SHEET.md).
 
 **Independent review.** `scripts/review-packet.mjs` assembles each lesson's objective, route, material, steps, fields, questions, criteria and transfer for a reviewer who did not write it. Findings, fixes and re-verification are recorded in [the corrections register](CONTENT-CORRECTIONS-REGISTER.md).
 
 **Load.** Polling asks `/api/course-records?since=<version>` once a minute; a learner's records version moves on every save or feedback row (migration 0004 triggers), so an unchanged poll reads one row.
 
-Run `npm run docs:generate`, then `npm run test:all` (content, questions, improvements, worksheet, actions, learning, guided audit) and `npm run build`, plus `scripts/test-cloud.mjs`, `scripts/test-review-cloud.mjs` and `scripts/test-pilot-workspaces.mjs` against a local worker when the backend changes. GitHub Actions runs the same checks on every push and `npm run test:links` weekly.
+Run `npm run docs:generate`, then `npm run test:all` (content, questions, improvements, worksheet, actions, learning, guided audit) and `npm run build`, plus `scripts/test-cloud.mjs` and `scripts/test-review-cloud.mjs` against a local worker when the backend changes. GitHub Actions runs the same checks on every push and `npm run test:links` weekly.
 
 ## Beginner orientation and visual guidance contract — 14 September 2026
 

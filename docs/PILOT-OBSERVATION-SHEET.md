@@ -29,7 +29,7 @@ Copy this block for each task (1 starter journey · 2 research route · 3 flow/U
 |---|---|
 | "Explain the difference between observed and inferred, using your own example." (quote) | |
 | Score against Lesson 1 criterion anchors (0 absent · 1 needs support · 2 independently adequate · 3 strong) — by the reviewer, without these notes | |
-| Lesson 1 transfer answer reviewed in the course (outcome recorded by the reviewer: needs revision · meets criterion · demonstrated independently) | |
+| Lesson 1 transfer answer reviewed against the criterion (reviewer's outcome: needs revision · meets criterion · demonstrated independently) | |
 | Words or terms they did not understand | |
 | What they would change (their words) | |
 
@@ -40,4 +40,4 @@ Copy this block for each task (1 starter journey · 2 research route · 3 flow/U
 - [ ] Transfer answer written before seeing the anchors.
 - [ ] Reviewer outcome on the transfer answer: meets criterion or demonstrated independently.
 
-`node scripts/pilot-report.mjs --remote` fills the records part of this gate from saved work; the "without coaching" part comes only from this sheet.
+Fill the records part of this gate from the participant's saved or exported work; the "without coaching" part comes only from this sheet.
