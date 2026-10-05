@@ -1,6 +1,6 @@
 # Content corrections register — improvement plan, 4–5 October 2026
 
-The first deliverable the plan asks for: every source-confirmed correction, with its module report. Each report in [`docs/corrections/`](corrections/) lists plan item → lessons and files → change → status, the arithmetic with working, counts, and remaining limits. Corrections were made per module in isolated branches, then merged and checked together. **No learner has used the corrected lessons yet; an independent product-design reviewer has not checked them.** The [pilot test script](PILOT-TEST-SCRIPT.md) and [verification record](VERIFICATION-IMPROVEMENT-PLAN.md) hold those gates.
+The first deliverable the plan asks for: every source-confirmed correction, with its module report. Each report in [`docs/corrections/`](corrections/) lists plan item → lessons and files → change → status, the arithmetic with working, counts, and remaining limits. Corrections were made per module in isolated branches, then merged and checked together. **No learner has used the corrected lessons yet.** A full independent review round followed (below); a human product-design reviewer's sign-off is still open. The [pilot test script](PILOT-TEST-SCRIPT.md) and [verification record](VERIFICATION-IMPROVEMENT-PLAN.md) hold those gates.
 
 ## Priority-zero items
 
@@ -42,3 +42,24 @@ The first deliverable the plan asks for: every source-confirmed correction, with
 - A "use it on a new case" transfer task on every teaching lesson (224), with weak / adequate / strong anchors shown only after the learner writes.
 - Full criteria with four levels for the twelve Module 1–2 lessons, so every lesson has review anchors.
 - Supplied practice material wherever an answer depended on facts the learner was never given.
+
+## Independent review round — 5 October 2026
+
+After the per-module corrections above, every one of the 224 lessons was reviewed again by reviewers who had not written or corrected it, working from a per-lesson packet (`scripts/review-packet.mjs`). Each finding was applied by a separate fixer and every critical and major fix was re-checked by a third reviewer. The reviewers were AI agents; a human product-design reviewer's sign-off is still open (see [the verification](VERIFICATION-IMPROVEMENT-PLAN.md)).
+
+| Modules | Reviewed | Clean | Critical | Major | Minor | Applied |
+|---|---|---|---|---|---|---|
+| 1–3 | 22 | 13 | 0 | 10 | 13 | 23 |
+| 4–5 | 21 | 12 | 0 | 10 | 20 | 30 |
+| 6–7 | 25 | 13 | 0 | 17 | 8 | 25 |
+| 8–9 | 24 | 7 | 1 | 21 | 14 | 36 |
+| 10–11 | 24 | 8 | 3 | 16 | 19 | 38 |
+| 12–13 | 24 | 7 | 5 | 23 | 12 | 40 |
+| 14–15 | 24 | 9 | 6 | 15 | 9 | 30 |
+| 16–17 | 24 | 11 | 1 | 12 | 17 | 30 |
+| 18–20 | 36 | 17 | 2 | 21 | 16 | 39 |
+| **All** | **224** | **97** | **18** | **145** | **128** | **291** |
+
+Re-verification of the 163 critical and major fixes: 149 resolved, 9 partly resolved, 5 resolved with a new small problem, none unresolved. The 14 residual items and the verifiers's leftover notes were then corrected in a final pass (24 items applied; 2 deliberately left: a saved select label in Module 18 Lesson 6 whose hint already gives the right test, and Laws of UX notes in Modules 3, 8 and 9 that are accurate for the pages those lessons assign).
+
+What changed most often: sorter and check keys that contradicted the lesson's own example or feedback; steps whose text did not match the boxes beneath them (Module 3 Lesson 3, Module 5 Lesson 12, Module 18 Lesson 8, Module 19 Lesson 9); required rows a solo learner could not fill honestly (now optional or route-conditional, IDs kept); readings quoted for things they do not say (Module 4–5, Laws of UX); raw research material leaving the device (Module 10); a false performance claim about images (Module 12); and core-path steps that needed another person with no solo route (Modules 10, 14, 19). Saved answers stay valid: every relabelled option and renamed sorter bucket keeps its earlier wording, checked against the 4,888-label fixture.
