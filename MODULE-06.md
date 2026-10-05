@@ -1500,7 +1500,7 @@ Starting route: Recommended route: Draw both groupings of your cards on paper, t
 
 ### Start here: in everyday words
 
-Information architecture means arranging and naming information so a newcomer can find what they need. In this lesson, your first small result is: What the assigned pages say about proximity, common region and cognitive load, plus an honest note about item limits.
+Information architecture means arranging and naming information so a newcomer can find what they need. In this lesson, your first small result is: What the assigned pages say about proximity, common region, Miller’s law and cognitive load, plus an honest note about item limits.
 
 **Words you will use**
 
@@ -1510,7 +1510,7 @@ Information architecture means arranging and naming information so a newcomer ca
 
 **Quick example.** A supplied decision from the same made-up project. The task scheme was carried forward, and “what to bring” is cross-linked from the class page rather than duplicated, so a person looking for it while choosing a class needs one extra click.
 
-The reader demonstrates and guides the task before asking for “What the assigned pages say about proximity, common region and cognitive load”.
+The reader demonstrates and guides the task before asking for “What the assigned pages say about proximity, common region, Miller’s law and cognitive load”.
 
 ### What this lesson will help you do
 
@@ -1569,44 +1569,44 @@ Recommended route: Draw both groupings of your cards on paper, then record what 
 
 Section: practice-plan. Stable action: step-1-brief.
 
-What the assigned pages say about proximity, common region and cognitive load, plus an honest note about item limits.
+What the assigned pages say about proximity, common region, Miller’s law and cognitive load, plus an honest note about item limits.
 
-- Read the assigned pages on proximity, common region and cognitive load. Note what each says and, for the grouping laws, note that the source publishes no limits — the caution is the course's.
+- Read the assigned pages on proximity, common region, Miller's law and cognitive load. Note what each says, and copy the Miller's law page's own warning about using seven as a design limit.
 
 **Start here:** Write one line per idea in your own words before you look at your cards at all.
 
-**Enough:** Your note about limits says the source publishes none, rather than repeating a number you have heard.
+**Enough:** Your note about limits uses the page’s own warning against treating seven as a limit, rather than repeating a number you have heard.
 
 **Proximity:** Things placed near each other are read as belonging together, before anyone reads a word of them.
 
 **Common region:** A shared box, panel or background does the same job as closeness, and does it more strongly.
 
 
-### What the assigned pages say about proximity, common region and cognitive load
+### What the assigned pages say about proximity, common region, Miller’s law and cognitive load
 
 Section: practice-plan. Stable action: write-reading-notes.
 
 One line per idea, in your own words, before you touch the cards.
 
-**Answer:** What the assigned pages say about proximity, common region and cognitive load
+**Answer:** What the assigned pages say about proximity, common region, Miller’s law and cognitive load
 
 One line per idea, in your own words, before you touch the cards.
 
 
-### What you will say about item limits, given that the source publishes none
+### What you will say about item limits, using the Miller’s law page’s own warning
 
 Section: practice-plan. Stable action: write-limits-note.
 
-Write your answer for “What you will say about item limits, given that the source publishes none”. Use the task instructions below to decide what to include.
+Write your answer for “What you will say about item limits, using the Miller’s law page’s own warning”. Use the task instructions below to decide what to include.
 
-**Answer:** What you will say about item limits, given that the source publishes none
+**Answer:** What you will say about item limits, using the Miller’s law page’s own warning
 
 
 
 <details>
 <summary>Example</summary>
 
-Example (made up): the source states no limit, so I will group to reduce scanning rather than to hit a number.
+Example (made up): the page warns against using “seven” to justify limits, so I will group to reduce scanning rather than to hit a number.
 
 </details>
 
@@ -2071,12 +2071,12 @@ A supplied decision from the same made-up project. The task scheme was carried f
 Activity: Run a short simulated practice using only the supplied material. Ask what evidence supports my choice and what is still unknown.
 
 Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
-When the activity is finished, tell me to return to the course answer called “What the assigned pages say about proximity, common region and cognitive load” and write my own decision. Do not write that answer for me.
+When the activity is finished, tell me to return to the course answer called “What the assigned pages say about proximity, common region, Miller’s law and cognitive load” and write my own decision. Do not write that answer for me.
 ```
 
-**Come back to the course:** Return to “What the assigned pages say about proximity, common region and cognitive load”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+**Come back to the course:** Return to “What the assigned pages say about proximity, common region, Miller’s law and cognitive load”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “What the assigned pages say about proximity, common region and cognitive load” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “What the assigned pages say about proximity, common region, Miller’s law and cognitive load” and write one sentence in your own words.
 
 </details>
 <details>
@@ -2085,7 +2085,7 @@ When the activity is finished, tell me to return to the course answer called “
 - Take the scheme you built and ask what the material would look like organised by what people are doing rather than what things are about. Re-sort completely rather than editing.
 - Take your three research tasks and walk each through both schemes. The first place you hesitate is the breakage; write down what you were holding and who you were being.
 
-- R31: [Laws of UX](https://lawsofux.com/) — The assigned pages only: law-of-proximity, law-of-common-region, millers-law and cognitive-load. Purpose: Explains why grouping reduces scanning effort and where the popular chunk limit comes from. Free reading, no account. Verified 2026-09-06. The site publishes no caveats, so the limits are supplied by this lesson: the seven-item rule in particular is stated far more confidently than its evidence supports and must not be used as a design target. A printed poster is sold and also offered as a free download; no purchase is required. Fallback: R02.
+- R31: [Laws of UX](https://lawsofux.com/) — The assigned pages only: law-of-proximity, law-of-common-region, millers-law and cognitive-load. Purpose: Explains why grouping reduces scanning effort and where the popular chunk limit comes from. Free reading, no account. Verified 2026-10-05. The Miller's law page itself warns against using the 'magical number seven' to justify design limitations and says short-term memory varies by person; the grouping-law pages state no limits. Never use seven as a design target. A printed poster is sold and also offered as a free download; no purchase is required. Fallback: R02.
 - R09: [NN/g: card sorting](https://www.nngroup.com/articles/card-sorting-definition/) — The passages on what a sort reveals about how people expect material to be grouped. Purpose: Connects your two schemes to what the coming card sort can actually test. Free reading, no account. Verified 2026-09-06. It is a method article, not a taxonomy textbook; the scheme comparison here is the course's own. Fallback: R10.
 
 </details>
@@ -2273,7 +2273,7 @@ Section: practice-plan. Stable action: step-1-brief.
 
 What the reading says about the effort of choosing, in your own words, including what it does not claim about a maximum.
 
-- Read the assigned pages on the cost of choices and on cognitive load. Write what each says about the effort of choosing, and note that the source publishes no limits.
+- Read the assigned pages on the cost of choices and on cognitive load. Write what each says about the effort of choosing, and note that neither page gives a maximum number of options.
 
 **Start here:** Write one sentence on what breadth costs a reader and one on what depth costs, then add what the source stays silent about.
 
@@ -2288,11 +2288,11 @@ What the reading says about the effort of choosing, in your own words, including
 
 Section: practice-plan. Stable action: write-choice-cost.
 
-Two or three sentences. The second half matters: the source publishes no limit, and the caution about that is the course’s, not theirs.
+Two or three sentences. The second half matters: neither page gives a maximum number of options, and any caution about one is the course’s, not theirs.
 
 **Answer:** What the reading says about the effort of choosing and of scanning, and what it does not claim about a maximum number of options
 
-Two or three sentences. The second half matters: the source publishes no limit, and the caution about that is the course’s, not theirs.
+Two or three sentences. The second half matters: neither page gives a maximum number of options, and any caution about one is the course’s, not theirs.
 
 
 ### Draw the sitemap
@@ -2771,7 +2771,7 @@ When the activity is finished, tell me to return to the course answer called “
 - Take your map and lift the four items your research showed people need most to level one, then re-place whatever is left. Check that no item disappeared in the process.
 - For each level-two group, write “this contains …” listing the actual items. If the list has no coherent theme, mark the group.
 
-- R31: [Laws of UX](https://lawsofux.com/) — The assigned pages only: hicks-law, cognitive-load and law-of-proximity. Purpose: Supplies the reasoning about the cost of choices and of scanning that the depth-versus-breadth trade turns on. Free reading, no account. Verified 2026-09-06. Hick's law concerns choosing among comparable options; someone hunting for one specific item is searching, not choosing, so it must not be used to justify hiding navigation. The site publishes no such caveats, so this one is the course's. Fallback: R02.
+- R31: [Laws of UX](https://lawsofux.com/) — The assigned pages only: hicks-law, cognitive-load and law-of-proximity. Purpose: Supplies the reasoning about the cost of choices and of scanning that the depth-versus-breadth trade turns on. Free reading, no account. Verified 2026-09-06. Hick's law concerns choosing among comparable options; someone hunting for one specific item is searching, not choosing, so it must not be used to justify hiding navigation. The page's own caution is not to simplify to the point of abstraction; this searching-versus-choosing limit is the course's. Fallback: R02.
 - R02: [Nielsen: ten usability heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/) — Heuristic 3, user control and freedom, and heuristic 7, flexibility and efficiency of use. Purpose: Covers what a deep structure owes a person who chose wrongly, and why shortcuts exist alongside the hierarchy. Free reading, no account. Verified 2026-09-06. Heuristics are review shorthand; the depth decision is settled by the tree test, not by citation. Fallback: R11.
 
 </details>

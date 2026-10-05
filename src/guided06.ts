@@ -309,8 +309,8 @@ export const guided06: Record<string, Guided> = {
     route: paperRoute('both groupings of your cards'),
     worksheet: [
       { id: 'reading', title: 'What the reading says about grouping', fields: [
-        { id: 'reading-notes', label: 'What the assigned pages say about proximity, common region and cognitive load', kind: 'long', hint: 'One line per idea, in your own words, before you touch the cards.' },
-        { id: 'limits-note', label: 'What you will say about item limits, given that the source publishes none', kind: 'short', example: 'Example (made up): the source states no limit, so I will group to reduce scanning rather than to hit a number.' },
+        { id: 'reading-notes', label: 'What the assigned pages say about proximity, common region, Miller’s law and cognitive load', kind: 'long', hint: 'One line per idea, in your own words, before you touch the cards.' },
+        { id: 'limits-note', label: 'What you will say about item limits, using the Miller’s law page’s own warning', kind: 'short', example: 'Example (made up): the page warns against using “seven” to justify limits, so I will group to reduce scanning rather than to hit a number.' },
       ] },
       { id: 'scheme-one', title: 'Scheme one: by task', fields: [
         { id: 'scheme-one-groups', label: 'Your task-based groups, each named from what fell into it', kind: 'long', example: 'Example (made up): Choose a class · Get ready for a class · Change or cancel · Get help.' },
@@ -336,14 +336,14 @@ export const guided06: Record<string, Guided> = {
       ] },
     ],
     guide: [
-      { expect: 'What the assigned pages say about proximity, common region and cognitive load, plus an honest note about item limits.',
+      { expect: 'What the assigned pages say about proximity, common region, Miller’s law and cognitive load, plus an honest note about item limits.',
         fields: ['reading-notes', 'limits-note'],
         terms: [
           { term: 'Proximity', meaning: 'Things placed near each other are read as belonging together, before anyone reads a word of them.' },
           { term: 'Common region', meaning: 'A shared box, panel or background does the same job as closeness, and does it more strongly.' },
         ],
         start: 'Write one line per idea in your own words before you look at your cards at all.',
-        enough: 'Your note about limits says the source publishes none, rather than repeating a number you have heard.' },
+        enough: 'Your note about limits uses the page’s own warning against treating seven as a limit, rather than repeating a number you have heard.' },
       { expect: 'A task-based grouping of every card, each group named from what fell into it, with every hesitation recorded.',
         fields: ['scheme-one-groups', 'scheme-one-hesitations'],
         terms: [
@@ -446,7 +446,7 @@ export const guided06: Record<string, Guided> = {
     route: paperRoute('the sitemap and its shallower alternative'),
     worksheet: [
       { id: 'reading', title: 'What a choice costs', fields: [
-        { id: 'choice-cost', label: 'What the reading says about the effort of choosing and of scanning, and what it does not claim about a maximum number of options', kind: 'long', hint: 'Two or three sentences. The second half matters: the source publishes no limit, and the caution about that is the course’s, not theirs.' },
+        { id: 'choice-cost', label: 'What the reading says about the effort of choosing and of scanning, and what it does not claim about a maximum number of options', kind: 'long', hint: 'Two or three sentences. The second half matters: neither page gives a maximum number of options, and any caution about one is the course’s, not theirs.' },
       ] },
       { id: 'map-one', title: 'The map you already have', intro: 'Draw it wide rather than pretty. The drawing stays on paper; only these notes are typed.', fields: [
         { id: 'map-one-shape', label: 'How many levels your map has, and how many groups sit at level one', kind: 'short', example: 'Example (made up): three levels, four groups at level one.' },

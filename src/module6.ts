@@ -433,7 +433,7 @@ export const module6: Lesson[] = [
       {
         minutes: 25,
         title: "Read on grouping and load",
-        text: "Read the assigned pages on proximity, common region and cognitive load. Note what each says and, for the grouping laws, note that the source publishes no limits — the caution is the course's.",
+        text: "Read the assigned pages on proximity, common region, Miller's law and cognitive load. Note what each says, and copy the Miller's law page's own warning about using seven as a design limit.",
       },
       {
         minutes: 30,
@@ -554,7 +554,7 @@ export const module6: Lesson[] = [
           "Explains why grouping reduces scanning effort and where the popular chunk limit comes from.",
         minutes: "20–30 selected",
         limits:
-          "Free reading, no account. Verified 2026-09-06. The site publishes no caveats, so the limits are supplied by this lesson: the seven-item rule in particular is stated far more confidently than its evidence supports and must not be used as a design target. A printed poster is sold and also offered as a free download; no purchase is required.",
+          "Free reading, no account. Verified 2026-10-05. The Miller's law page itself warns against using the 'magical number seven' to justify design limitations and says short-term memory varies by person; the grouping-law pages state no limits. Never use seven as a design target. A printed poster is sold and also offered as a free download; no purchase is required.",
         fallbackId: "R02",
       },
       {
@@ -597,7 +597,7 @@ export const module6: Lesson[] = [
       {
         minutes: 25,
         title: "Read on choices and load",
-        text: "Read the assigned pages on the cost of choices and on cognitive load. Write what each says about the effort of choosing, and note that the source publishes no limits.",
+        text: "Read the assigned pages on the cost of choices and on cognitive load. Write what each says about the effort of choosing, and note that neither page gives a maximum number of options.",
       },
       {
         minutes: 30,
@@ -718,7 +718,7 @@ export const module6: Lesson[] = [
           "Supplies the reasoning about the cost of choices and of scanning that the depth-versus-breadth trade turns on.",
         minutes: "15–25 selected",
         limits:
-          "Free reading, no account. Verified 2026-09-06. Hick's law concerns choosing among comparable options; someone hunting for one specific item is searching, not choosing, so it must not be used to justify hiding navigation. The site publishes no such caveats, so this one is the course's.",
+          "Free reading, no account. Verified 2026-09-06. Hick's law concerns choosing among comparable options; someone hunting for one specific item is searching, not choosing, so it must not be used to justify hiding navigation. The page's own caution is not to simplify to the point of abstraction; this searching-versus-choosing limit is the course's.",
         fallbackId: "R02",
       },
       {

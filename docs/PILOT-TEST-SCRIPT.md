@@ -13,6 +13,9 @@ Purpose: decide, with the intended learner and where practical 3–5 non-technic
 
 ## Set-up (observer)
 
+- **Accounts (once):** `node scripts/create-pilot-learners.mjs 5` writes private accounts pilot-1 … pilot-5 to the ignored `.secrets` folder; apply them with `npx wrangler d1 execute harucourse --remote --file .secrets/pilot-seed.sql`. Give each participant only their own username and password. After the pilot, `node scripts/create-pilot-learners.mjs --close` writes the SQL that deactivates them; delete records on the date promised in consent.
+- **Reviewing:** as the creator, open Account → Learner workspace and choose the participant. Reviews you save go to that participant only; browsing never changes their progress or bookmark. Haru stays the default workspace.
+- **Recording:** one [observation sheet](PILOT-OBSERVATION-SHEET.md) per participant. `node scripts/pilot-report.mjs --remote` reports what saved records show (finish, minutes, days used, transfer answer, checks, reviews); observer-only measures stay on the sheet.
 - Use the participant's own device where possible. Use a dedicated learner account; never Haru's records for someone else, and never the creator account.
 - Explain only: "Please use the course as if I were not here. Think aloud if you can. I cannot help during the task; I will answer questions afterwards." Consent: what is recorded (notes only, no recording unless separately agreed), where notes are kept, deletion date.
 - Do not demonstrate, hint or answer questions during tasks. If the participant is stuck for more than three minutes, ask "What would you do now if I were not here?" and record it as an intervention.
