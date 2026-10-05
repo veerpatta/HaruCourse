@@ -1,3 +1,7 @@
+# Minimal UI release milestone - 5 October 2026
+
+The requested plan and scoped UI implementation are complete with regression, build, browser and production-offline evidence rerun on the integrated release tree. The creator explicitly authorized publication, and the parent approved preserving the module corrections while excluding pilot account access/provisioning. Publish the checked tree, verify exact remote main and live assets, then observe Haru on the revised view before broader changes. See [the preservation plan](docs/MINIMAL-UI-PLAN.md) and [verification](docs/VERIFICATION-MINIMAL-UI-2026-10-05.md); learner acceptance and the existing readiness gates remain open.
+
 ## Current milestone — improvement plan implemented, learner validation next (5 October 2026)
 
 Phases 1–4 of the improvement plan are implemented for all 224 lessons (content corrections, beginner pattern, core path, module batches); phase 5 automated, backend and emulated browser checks pass. Next, in order: (1) observe Haru and, where practical, 3–5 non-technical designers with [the pilot script](docs/PILOT-TEST-SCRIPT.md); (2) independent product-design review of the corrected lessons, starting with the core path; (3) physical iOS/Android, keyboard and screen-reader task tests including the Module 11 lab; (4) fix blockers and re-score the rubric in [the verification record](docs/VERIFICATION-IMPROVEMENT-PLAN.md). Do not expand content until the pilot gate is met.

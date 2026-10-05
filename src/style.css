@@ -2747,3 +2747,52 @@ progress::-webkit-progress-value { background: #567e48; border-radius: 8px; }
 .portfolio-path h2 { font-size: 1.12rem; margin: 1rem 0 .4rem; }
 .portfolio-path h3 { font-size: 1rem; margin: .8rem 0 .3rem; }
 .starter-route pre:focus-visible { outline: 3px solid #517744; outline-offset: 2px; }
+
+/* Minimal learning reader: one reading column, with task teaching still visible.
+   Auxiliary plans use native disclosures; warnings and save feedback do not. */
+.lesson-reader { max-width: 780px; margin-inline: auto; }
+.lesson-reader .flow-layout { display: block; }
+.lesson-reader .flow-main, .lesson-reader .lesson-flow { max-width: none; width: 100%; }
+.lesson-reader-header h1 { max-width: 24ch; }
+.lesson-essentials { margin: 14px 0; font-size: 1rem; }
+.lesson-essentials > p { margin: 0 0 6px; }
+.lesson-full-plan, .course-progress-detail { border: 0; padding: 0; }
+.lesson-full-plan > summary, .course-progress-detail > summary { min-height: 44px; padding-block: 10px; font-size: 1rem; }
+.lesson-full-plan .orientation-card { box-shadow: none; margin-top: 8px; }
+.course-progress-detail { margin: 12px 0; }
+.lesson-reader .flow-overview { align-items: center; gap: 8px 16px; font-size: 1rem; }
+.lesson-reader .flow-overview > div { gap: 0; }
+.lesson-reader .flow-overview small { font-size: .9375rem; }
+.lesson-reader .flow-overview strong, .lesson-reader .flow-overview details > summary { font-size: 1rem; }
+.lesson-reader .flow-overview > details[open] { margin-bottom: 8px; }
+.lesson-reader .action-card { box-shadow: none; padding: clamp(18px, 3vw, 32px); }
+.lesson-reader .beginner-brief { background: transparent; border: 0; border-radius: 0; padding: 0; }
+.lesson-reader .action-context { border-radius: 0; background: transparent; border-left: 2px solid #9eae92; padding: 0 0 0 16px; font-size: 1rem; }
+.lesson-reader .action-instruction { font-size: 1.0625rem; }
+.lesson-reader .flow-actions { position: static; border: 0; padding: 0; background: transparent; box-shadow: none; margin: 28px 0 12px; }
+.lesson-reader .enough { font-size: .9375rem; }
+.lesson-reader .optional-ai { margin: 18px 0; }
+.lesson-reader .optional-ai > summary { font-weight: 650; }
+.lesson-reader .ai-learning { margin-top: 8px; }
+.lesson-reader .session-plan { border: 0; padding: 0; }
+.lesson-reader .session-plan li { margin-block: 10px; }
+.lesson-reader .session-timer { padding-block: 8px; background: transparent; }
+.lesson-reader .session-timer-sub { white-space: normal; overflow: visible; text-overflow: clip; font-size: .9375rem; }
+.lesson-reader .session-timer-actions { flex-wrap: wrap; }
+.lesson-reader .timer-details { font-size: .9375rem; }
+.lesson-reader .session-timer .timer-details summary { font-size: .9375rem; }
+.lesson-reader .section-tabs button { font-size: .9375rem; }
+.lesson-reader .section-tabs { position: static; }
+.lesson-reader .action-card h2 { scroll-margin-top: calc(var(--app-header-height) + var(--safe-top) + 16px); }
+@media (max-width: 760px) {
+  .lesson-reader .session-timer { grid-template-columns: minmax(0, 1fr); }
+  .lesson-reader .session-timer-actions { grid-column: 1; grid-row: auto; }
+  .lesson-reader .session-timer-actions button { flex: 1; font-size: .9375rem; }
+  .lesson-reader .section-tabs { position: sticky; margin-inline: 0; padding-inline: 0; box-shadow: none; }
+  .lesson-reader .section-tabs button { font-size: .875rem; }
+  .lesson-reader .action-card h2 { scroll-margin-top: calc(var(--app-header-height) + var(--safe-top) + 7rem); }
+  .lesson-reader .action-card { padding: 18px 16px; }
+  .lesson-reader .flow-overview { align-items: start; }
+  .lesson-reader .lesson-toolbar { flex-wrap: wrap; }
+  .lesson-reader .lesson-toolbar .save-status { white-space: normal; overflow: visible; text-overflow: clip; }
+}

@@ -77,7 +77,7 @@ export function SessionTimer({
       <div className="session-timer-actions">
         <button
           type="button"
-          className="primary"
+          className="secondary"
           onClick={running ? timer.pause : timer.start}
         >
           {running ? (

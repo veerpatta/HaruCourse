@@ -129,8 +129,19 @@ export function ModuleOrientation({ moduleId }: { moduleId: string }) {
   );
 }
 
-export function LessonOrientation({ lesson }: { lesson: Lesson }) {
+export function LessonOrientation({ lesson, compact = false }: { lesson: Lesson; compact?: boolean }) {
   const summary = lessonOrientation(lesson);
+  // The saved-action reader already teaches Learn/Do/Check/Your work.
+  // Keep prerequisites visible; the complete orientation remains one click away.
+  if (compact) return (
+    <section className="lesson-essentials" aria-label="Before you begin">
+      <p><strong>Bring:</strong> {summary.need}</p>
+      <details className="lesson-full-plan">
+        <summary>Full lesson plan · about {summary.minutes} minutes, at your pace</summary>
+        <LessonOrientation lesson={lesson}/>
+      </details>
+    </section>
+  );
   return (
     <section className="orientation-card lesson-orientation" aria-labelledby="lesson-orientation-title">
       <span className="eyebrow">BEFORE YOU BEGIN</span>
