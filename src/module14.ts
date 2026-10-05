@@ -860,7 +860,7 @@ export const module14: Lesson[] = [
     example:
       "Made-up example: three stories were taken to an engineer. The held-place story estimated at a week, and the uncertainty was the timer's behaviour across devices and what happens if the person returns after expiry — both undefined in the design. Defining them dropped it to three days. The payment-status story stayed large because it depended on another system nobody had used; the response was to defer it and ship the message-based version first. The third was small and unchanged. The write-up recorded that specification, not persuasion, moved two of the three.",
     freeToolPath:
-      "Conversation and notes. If no engineer is available, ask an informed reader to identify what they could not answer from your story and criteria; the unanswerable parts are the unknowns.",
+      "Conversation and notes. If no engineer is available, ask an informed reader to identify what they could not answer from your story and criteria; the unanswerable parts are the unknowns. With nobody at all, use the supplied practice estimate notes and label every answer practice.",
     outputs: [
       "Three stories estimated, with the reasoning recorded",
       "The uncertainty behind each estimate named",
@@ -880,7 +880,7 @@ export const module14: Lesson[] = [
         minutes: 30,
         title: "Get the estimates",
         instructions: [
-          "Ask an engineer, or an informed reader, how long each would take and why.",
+          "Ask an engineer, or an informed reader, how long each would take and why. With nobody to ask, use the supplied practice estimate notes.",
           "Record what they could not answer from your material.",
         ],
       },
@@ -1136,7 +1136,7 @@ export const module14: Lesson[] = [
         levels: [
           "Presented for the first time in the meeting.",
           "Sent too late to be read.",
-          "Sent with enough time and questions invited.",
+          "Sent with enough time and questions invited, or on the supplied rehearsal route assembled into one pre-read and labelled as a rehearsal.",
           "As adequate, and the questions arrived before the meeting and shaped its agenda.",
         ],
         remediation:
@@ -1717,11 +1717,11 @@ export const module14: Lesson[] = [
       {
         criterion: "The decision criteria are stated, not assumed",
         evidence:
-          "A written statement of what the decider is accountable for, found out rather than guessed.",
+          "A written statement of what the decider is accountable for, found out, or a labelled guess with how it would be confirmed.",
         levels: [
           "Case made in design terms only.",
           "Criteria assumed without checking.",
-          "Criteria found out and stated.",
+          "Criteria found out and stated, or a labelled guess checked against a public source (such as a published role description), with how it would be confirmed.",
           "As adequate, and the case names which criterion it addresses most directly.",
         ],
         remediation:
@@ -2033,7 +2033,7 @@ export const module14: Lesson[] = [
     misconception:
       "“It shipped, so it worked.” Shipping means it exists. Whether it helped is a separate question, and one you can only answer if you decided in advance what you would look at.",
     example:
-      "Made-up example: the release plan: the held-place message and states ship; the countdown is held back until the timer is server-driven; the whole feature goes to everyone at once, since a subset would fragment support. Before shipping, three things were named: whether support contacts about payment status change over four weeks, whether anyone reports a duplicate payment, and a short round of three conversations with recent bookers. The review trigger: if duplicate payments continue at the same rate after four weeks, the team looks next at the payment confirmation and asks recent bookers what they saw. An unchanged count would not show the state design had no effect, and a fall would not show it worked, because none of the three is a controlled comparison; that was recorded beside the signals.",
+      "Made-up example: the release plan: the held-place message ships with a held-until time, so it answers how long; the countdown is held back until the timer is server-driven; the whole feature goes to everyone at once, since a subset would fragment support. Before shipping, three things were named: whether support contacts about payment status change over four weeks, whether anyone reports a duplicate payment, and a short round of three conversations with recent bookers. The review trigger: if duplicate payments continue at the same rate after four weeks, the team looks next at the payment confirmation and asks recent bookers what they saw. An unchanged count would not show the state design had no effect, and a fall would not show it worked, because none of the three is a controlled comparison; that was recorded beside the signals.",
     freeToolPath:
       "A written plan. Counting support contacts or asking three people needs no analytics tool, and both are legitimate at this scale.",
     outputs: [

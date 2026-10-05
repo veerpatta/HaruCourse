@@ -118,11 +118,11 @@ export const guided15: Record<string, Guided> = {
                 'an activity metric': 'Returning is a behaviour, and this one sits directly under the outcome rather than floating.',
                 'not actionable at all': 'A change in it would change what somebody does.',
               } },
-            { id: 'prepared-arrival', text: 'Whether people arrive knowing what they need to bring.', answer: 'not actionable at all',
+            { id: 'prepared-arrival', text: 'Total page views across the whole site each month.', answer: 'not actionable at all',
               feedback: {
-                'an outcome you could observe': 'It is genuinely part of the outcome and it cannot be observed: nothing in any record shows what somebody knew.',
-                'an activity metric': 'It is not a behaviour anybody performs on the product.',
-                'not actionable at all': 'Not as a metric. It is askable, which makes it real evidence and not a number, and the tree should mark it that way rather than dropping it.',
+                'an outcome you could observe': 'Nothing is true for anybody afterwards because a page was viewed.',
+                'an activity metric': 'It counts activity, and the deeper problem is its breadth: it rises with a new tool, a broken link or a busy season, so no value of it points at any piece of work.',
+                'not actionable at all': 'No value of it changes what anybody does. It goes up with interest, with confusion and with the season, so whatever it does somebody can explain it as good news.',
               } },
             { id: 'one-session', text: 'Bookings completed in a single visit rather than across two.', answer: 'an activity metric',
               feedback: {
@@ -132,7 +132,7 @@ export const guided15: Record<string, Guided> = {
               } },
           ],
           then: 'Now mark your own nodes the same way, and check every askable one says so rather than pretending to be countable.',
-          pattern: 'Two different reasons to be unactionable. Time on page can be read as good news whatever it does; arriving prepared is worth knowing and cannot be counted at all. The first is removed, the second is marked askable and kept.',
+          pattern: 'Unactionable is not the same as uncountable. Time on page and total page views can be read as good news whatever they do, so they are removed. Something worth knowing that cannot be counted, such as whether people arrive prepared, is not removed: it is marked askable and kept.',
         },
         start: 'Go leaf by leaf and ask where the number would actually come from.',
         enough: 'Nothing is marked observable unless you could name the record it comes from.' },
@@ -206,7 +206,7 @@ export const guided15: Record<string, Guided> = {
         { id: 'largest-drop', label: 'The largest proportional drop, whether it is also the step that loses the most people, and which step you would look at first and why', kind: 'short', hint: 'The two rankings can agree or disagree. Made up: 1,000 to 420 loses 580 (58.0 per cent) and 420 to 180 loses 240 (57.1 per cent), so they agree. In a funnel of 1,000, 400, 300, 240, 60, the first step loses most people (600, 60 per cent) but the last is steepest (180 of 240, 75 per cent).' },
       ] },
       { id: 'explanations', title: 'Three explanations that all fit', fields: [
-        { id: 'three-explanations', label: 'Three explanations for the largest drop that the numbers cannot tell apart', kind: 'long' },
+        { id: 'three-explanations', label: 'Three explanations, for the step you chose to look at first, that the numbers cannot tell apart', kind: 'long' },
         { id: 'what-separates', label: 'For each: what evidence would separate it from the others', kind: 'long' },
       ] },
       { id: 'healthy', title: 'Where leaving is correct', fields: [
@@ -248,8 +248,8 @@ export const guided15: Record<string, Guided> = {
           uncertainty: 'Still unknown: everything about why, and these numbers are invented anyway. The arithmetic is the thing being practised here, not the product.',
         },
         start: 'Work out the proportion for each step by hand, writing the division you did.',
-        enough: 'Your largest drop is the largest proportion, and you can say why that is the right ranking.' },
-      { expect: 'Three explanations for the largest drop that the numbers cannot distinguish, each with the evidence that would separate it.',
+        enough: 'You give the proportional drop at every step and say which you would look at first, and why.' },
+      { expect: 'Three explanations for the step you chose to look at first that the numbers cannot distinguish, each with the evidence that would separate it.',
         fields: ['three-explanations', 'what-separates'],
         terms: [
           { term: 'Competing explanation', meaning: 'A different reason that fits the same numbers exactly. There are usually several, and a funnel cannot choose between them.' },
@@ -271,7 +271,7 @@ export const guided15: Record<string, Guided> = {
                 'a conclusion the data cannot support': 'People stopping at a step does not mean the step caused it. The cause may be three screens earlier, which the funnel cannot show.',
                 'something the funnel cannot see at all': 'The step is visible; the causation is not.',
               } },
-            { id: 'checking-partner', text: 'People are checking with somebody else and will come back tomorrow.', answer: 'something the funnel cannot see at all',
+            { id: 'checking-partner', text: 'Some people may be checking with somebody else and coming back tomorrow.', answer: 'something the funnel cannot see at all',
               feedback: {
                 'an explanation the data allows': 'It fits the numbers, and this funnel counts sessions rather than people, so a return would be counted as a new visitor and this explanation is invisible to it.',
                 'a conclusion the data cannot support': 'It is offered as a possibility rather than a conclusion.',
@@ -289,10 +289,10 @@ export const guided15: Record<string, Guided> = {
                 'a conclusion the data cannot support': 'Two funnels defined differently are not comparable, and these particular numbers are invented. It is a comparison of two things that were never measured the same way.',
                 'something the funnel cannot see at all': 'The funnel can see its own numbers; what it cannot see is anybody else’s definitions.',
               } },
-            { id: 'mobile-worse', text: 'It is worse on phones than on laptops.', answer: 'something the funnel cannot see at all',
+            { id: 'mobile-worse', text: 'It might be worse on phones than on laptops; this funnel is not split by device.', answer: 'something the funnel cannot see at all',
               feedback: {
                 'an explanation the data allows': 'It might well be true and this funnel is not split by device, so nothing in it speaks to the question.',
-                'a conclusion the data cannot support': 'It would become one if asserted; as written it is a claim about a split the data does not have.',
+                'a conclusion the data cannot support': 'It is offered as a possibility, and it says itself that the split it needs is missing. It would become a conclusion only if asserted as fact.',
                 'something the funnel cannot see at all': 'Any claim about a group the funnel does not separate is invisible to it. Splitting it would be a reasonable next step.',
               } },
           ],
@@ -338,7 +338,7 @@ export const guided15: Record<string, Guided> = {
           { label: 'It does, since checkout is the step where they actually give up and leave the whole task.', feedback: 'Where somebody leaves is where the accumulated reasons become too much. It is not necessarily where any of them started.', was: ['Yes, since that is the step where they leave.'] },
           { label: 'It does, unless the earlier steps show drops of their own as well.', feedback: 'A step can create a problem without losing anybody, by setting an expectation that fails later.', was: ['Yes, unless the earlier steps also show drops.'] },
         ],
-        repair: 'Write three explanations for your largest drop in step 3, at least one of which is about an earlier step. Record the change in step 5.',
+        repair: 'Write three explanations in step 3 for the step you chose to look at first, at least one of which is about an earlier step. Record the change in step 5.',
         recheck: 'Your explanations are not all about the step where the drop appears.',
       },
       {
@@ -382,7 +382,7 @@ export const guided15: Record<string, Guided> = {
     route: textRoute,
     worksheet: [
       { id: 'gather', title: 'Three rates you have written', fields: [
-        { id: 'three-rates', label: 'Three rates you have written or were tempted to write, with the counts behind them', kind: 'long', hint: 'The count is the part that matters. 41 per cent from 9 of 22 and 41 per cent from 410 of 1,000 are different claims.', example: 'Example (made up): 41 per cent were unsure their payment had gone through, from 9 of 22 survey answers.' },
+        { id: 'three-rates', label: 'Three rates you have written or were tempted to write, with the counts behind them', kind: 'long', hint: 'The count is the part that matters. 41 per cent from 9 of 22 and 41 per cent from 410 of 1,000 are different claims. If you hold fewer than three real counts, use the practice set: 9 of 22 members who answered a newsletter survey, 2 of 3 people in a usability test, and 32 of 40 people who volunteered for a panel. Label every answer that uses it practice.', example: 'Example (made up): 41 per cent were unsure their payment had gone through, from 9 of 22 survey answers.' },
       ] },
       { id: 'intervals', title: 'Compute the intervals', fields: [
         { id: 'interval-method', label: 'The formula or tool you used, named', kind: 'short', hint: 'The One rate tool in this lesson’s uncertainty calculator gives a 95 per cent Wilson score interval; write that name. If you used another published formula, name it so somebody can check your arithmetic.' },
@@ -394,8 +394,8 @@ export const guided15: Record<string, Guided> = {
         { id: 'route-stated', label: 'For each: how those people came to be asked', kind: 'short', sensitive: true, hint: 'Recruited how, from where, described as a route (for example, a members’ newsletter), never as names or contacts. A rate from people who volunteered is about people who volunteer.' },
       ] },
       { id: 'comparison', title: 'One comparison', fields: [
-        { id: 'comparison-examined', label: 'A comparison between two rates: both counts, the difference, and the 95 per cent interval for the difference', kind: 'long', hint: 'Use the Two rates tool in this lesson’s uncertainty calculator, which works out the difference and its interval directly (Newcombe’s method). Do not judge by whether the two separate intervals overlap: they can overlap while the difference is clear.', example: 'Example (made up): 44 of 100 against 36 of 100 is a difference of 8 points, with a 95 per cent interval for the difference from about −5.5 to +21.1 points.' },
-        { id: 'comparison-decision', label: 'Whether you qualified it or abandoned it, and why', kind: 'long', hint: 'If the interval for the difference includes zero, the counts are consistent with no difference, and also with a sizeable one: say so, or drop the comparison. If it excludes zero, report the difference with its interval and sample route. Invented numbers: remove the comparison.' },
+        { id: 'comparison-examined', label: 'A comparison between two rates: both counts, the difference, and the 95 per cent interval for the difference (if the counts are your own invented ones, write “not computed: invented”)', kind: 'long', hint: 'Use the Two rates tool in this lesson’s uncertainty calculator, which works out the difference and its interval directly (Newcombe’s method). Do not judge by whether the two separate intervals overlap: they can overlap while the difference is clear. With no real comparison, practise the tool on this made-up pair, labelled practice: 36 of 90 members at one branch against 22 of 88 at another. It teaches the arithmetic and says nothing about any product.', example: 'Example (made up): 44 of 100 against 36 of 100 is a difference of 8 points, with a 95 per cent interval for the difference from about −5.5 to +21.1 points.' },
+        { id: 'comparison-decision', label: 'Whether you qualified it or abandoned it, and why', kind: 'long', hint: 'If the interval for the difference includes zero, the counts are consistent with no difference, and also with a sizeable one: say so, or drop the comparison. If it excludes zero, report the difference with its interval and sample route. Your own invented numbers: remove the comparison. The practice pair: decide as you would for real counts, and label the decision practice.' },
       ] },
       { id: 'rule', title: 'Your rule', fields: [
         { id: 'reporting-rule', label: 'Your written rule for when you will report a rate at all', kind: 'long', example: 'Example (made up): counts below about thirty are reported as counts. Above that, the rate goes with its interval and its sample route.' },
@@ -440,47 +440,50 @@ export const guided15: Record<string, Guided> = {
         ],
         sorter: {
           intro: 'Six sentences from a made up tool-library report. For each one, decide whether the numbers behind it support the claim.',
-          options: ['supportable as written', 'needs the count instead', 'the interval is not the problem'],
+          options: ['supportable as written', 'needs the count instead', 'wrong for a reason no interval fixes'],
+          was: {
+            'wrong for a reason no interval fixes': ['the interval is not the problem'],
+          },
           items: [
             { id: 'nine-of-22', text: 'Nine of the twenty-two members who answered the survey were unsure whether their payment had gone through.', answer: 'supportable as written',
               feedback: {
                 'supportable as written': 'The count, the denominator and the route are all present. Nothing in it can be overturned by asking one question.',
                 'needs the count instead': 'The count is what it already is.',
-                'the interval is not the problem': 'No interval is being claimed, so none is needed.',
+                'wrong for a reason no interval fixes': 'Nothing in it is wrong: the count, the denominator and the route are all stated, and no interval is claimed.',
               } },
             { id: 'forty-one-percent', text: '41 per cent of members were unsure whether their payment had gone through.', answer: 'needs the count instead',
               feedback: {
                 'supportable as written': 'The interval runs from about a quarter to three-fifths, so the second digit is fictional.',
                 'needs the count instead': 'Nine of twenty-two says the same thing without implying a precision the sample cannot carry. It also quietly changes members to members who answered.',
-                'the interval is not the problem': 'The interval is exactly the problem here, along with the word members.',
+                'wrong for a reason no interval fixes': 'The width is the first problem: from nine of twenty-two the second digit is fictional. The word members is a second problem, and the count with its route fixes both.',
               } },
             { id: 'two-of-three', text: '67 per cent of participants could not tell the place was held.', answer: 'needs the count instead',
               feedback: {
                 'supportable as written': 'Sixty-seven per cent of three people is two people. The percentage is arithmetic dressed as a measurement.',
                 'needs the count instead': 'Two of the three people we watched. It is a real and useful finding, stated at the size it is.',
-                'the interval is not the problem': 'An interval on three people covers almost everything (about 21 to 94 per cent for two of three), which is the point.',
+                'wrong for a reason no interval fixes': 'An interval on three people covers almost everything (about 21 to 94 per cent for two of three), which is the point: here the size is the problem.',
               } },
-            { id: 'volunteers', text: '80 per cent of the forty people who volunteered for our panel found the new flow clearer.', answer: 'the interval is not the problem',
+            { id: 'volunteers', text: '80 per cent of members found the new flow clearer (32 of the 40 panel volunteers).', answer: 'wrong for a reason no interval fixes',
               feedback: {
-                'supportable as written': 'The interval (about 65 to 90 per cent) is the narrowest here. Who those forty are is the difficulty.',
-                'needs the count instead': 'Thirty-two of forty is better and does not fix it either.',
-                'the interval is not the problem': 'People who volunteer for a panel are unlike people who do not, and no arithmetic corrects that. The route has to be stated and the claim narrowed to the panel.',
+                'supportable as written': 'The interval (about 65 to 90 per cent) is the narrowest here. The trouble is the word members: the forty volunteered, and the sentence claims everybody.',
+                'needs the count instead': 'The count is already there in brackets, and the claim about members is still wrong.',
+                'wrong for a reason no interval fixes': 'People who volunteer for a panel are unlike people who do not, and no arithmetic corrects that. The route has to be stated and the claim narrowed to the panel.',
               } },
-            { id: 'synthetic-compare', text: 'Completion rose from 7.1 per cent to 9.4 per cent between the two synthetic funnels.', answer: 'the interval is not the problem',
+            { id: 'synthetic-compare', text: 'Completion rose from 7.1 per cent to 9.4 per cent between the two synthetic funnels.', answer: 'wrong for a reason no interval fixes',
               feedback: {
                 'supportable as written': 'Both numbers were invented, so the comparison measures nothing at all.',
                 'needs the count instead': 'The counts are invented too.',
-                'the interval is not the problem': 'Comparing invented numbers produces an invented difference. The repair is to remove the comparison rather than to qualify it.',
+                'wrong for a reason no interval fixes': 'Comparing invented numbers produces an invented difference. The repair is to remove the comparison rather than to qualify it.',
               } },
             { id: 'duplicate-count', text: 'The payment provider’s records show eleven duplicate payments in March.', answer: 'supportable as written',
               feedback: {
                 'supportable as written': 'A complete count from a record, not a sample. There is no interval because nothing was estimated.',
                 'needs the count instead': 'It is already a count.',
-                'the interval is not the problem': 'There is indeed no interval here, because nothing was estimated from a sample. A complete count from a record needs no range around it.',
+                'wrong for a reason no interval fixes': 'Nothing is wrong with it. Nothing was estimated from a sample, so a complete count from a record needs no range around it.',
               } },
           ],
           then: 'Now rewrite your own three, and check each says how the people came to be asked.',
-          pattern: 'Not every problem is an interval. A panel of volunteers, a synthetic comparison and a complete count all need different handling, and only one of the three is about sample size.',
+          pattern: 'Not every problem is an interval. A claim stretched from volunteers to all members and a comparison of invented numbers are wrong whatever the sample size, and a complete count from a record needs no interval at all. Only the small samples need the count instead.',
         },
         start: 'Rewrite the smallest-sample claim first, as a count with its route.',
         enough: 'No rewritten claim says more than the numbers behind it allow.' },
@@ -855,11 +858,11 @@ export const guided15: Record<string, Guided> = {
                 'hides a comparison': 'Everything is present.',
                 'reasonable as drawn': 'It is the conservative choice and it is defensible. Whether it is the most informative is a different question from whether it misleads.',
               } },
-            { id: 'two-axes', text: 'Two series on one chart with two different vertical scales, chosen so the lines cross.', answer: 'makes a small difference look large',
+            { id: 'two-axes', text: 'A bar chart drawn in 3D perspective, so the nearer of two nearly equal bars looks much bigger.', answer: 'makes a small difference look large',
               feedback: {
-                'makes a small difference look large': 'Two independent scales can be set to produce almost any apparent relationship, including one that does not exist.',
-                'hides a comparison': 'Both series are visible; what is hidden is that they are not comparable.',
-                'reasonable as drawn': 'It is occasionally necessary and it should always be pointed out in the caption.',
+                'makes a small difference look large': 'Perspective makes the nearer bar look larger than its value, so two nearly equal numbers read as very different. The values are honest and the drawing is not.',
+                'hides a comparison': 'Both bars are shown; it is their sizes that the drawing distorts.',
+                'reasonable as drawn': 'A third dimension adds nothing to two numbers and changes how big each one looks, which is why 3D bars are best avoided.',
               } },
             { id: 'annotated', text: 'A chart annotated with the date a marketing campaign began, alongside the redesign date.', answer: 'reasonable as drawn',
               feedback: {
@@ -955,7 +958,7 @@ export const guided15: Record<string, Guided> = {
         { id: 'which-supports', label: 'Which part of the evidence supports which part of the change', kind: 'long' },
       ] },
       { id: 'contradiction', title: 'Where they disagree', fields: [
-        { id: 'contradiction-found', label: 'Any respect in which the two disagree', kind: 'long', sensitive: true, hint: 'Keep it. A contradiction is a finding, not an error to be resolved by picking the number. Describe the observation side without identifying anybody.' },
+        { id: 'contradiction-found', label: 'Any respect in which the two disagree', kind: 'long', sensitive: true, hint: 'Keep it. A contradiction is a finding, not an error to be resolved by picking the number. Describe the observation side without identifying anybody. If they do not disagree, as with the supplied practice notes, write where they could have disagreed and what result would have counted as a contradiction.' },
         { id: 'what-would-explain', label: 'What would explain the disagreement', kind: 'long' },
       ] },
       { id: 'record', title: 'Record', fields: [
@@ -1052,7 +1055,7 @@ export const guided15: Record<string, Guided> = {
         demo: {
           scenario: 'Made-up example. Finding a disagreement between a tool-library count and an observation, and explaining it away.',
           beats: [
-            { label: 'The disagreement', text: 'The provider’s records show eleven duplicate payments among 412 bookings in March, under 3 in 100. In three sessions, all three people said that at home they would have paid again when the screen gave no confirmation.' },
+            { label: 'The disagreement', text: 'The provider’s records show eleven duplicate payments among 380 bookings in March, under 3 in 100. In three sessions, all three people said that at home they would have paid again when the screen gave no confirmation.' },
             { label: 'What I wrote at first', text: 'That the sessions were unrepresentative, and eleven is the real number. It resolved the disagreement and let me move on.' },
             { label: 'What that discarded', text: 'The most interesting thing in the study. Three of three saying they would pay again, against under 3 in 100 recorded, could mean the records miss some second payments, or that what people say they would do differs from what they do. Both are worth knowing.' },
             { label: 'What would explain it', text: 'A second payment made on a different card, or by somebody ringing the library, would not appear as a duplicate in the provider’s records at all.' },
@@ -1412,21 +1415,21 @@ export const guided15: Record<string, Guided> = {
                 'the cohort does not touch it': 'It is the second thing a cohort is for, after the mix.',
                 'it was never a real alternative': 'It is a real and easy mistake to make in any before-and-after comparison.',
               } },
-            { id: 'random', text: 'It is ordinary variation; week two rose almost as much with nothing shipped.', answer: 'it was never a real alternative',
+            { id: 'random', text: 'It is ordinary variation; week two rose almost as much with nothing shipped.', answer: 'the cohort does not touch it',
               feedback: {
-                'the cohort removes it': 'A cohort does not make noise smaller.',
-                'the cohort does not touch it': 'True, and the more useful point is different.',
-                'it was never a real alternative': 'It is not an alternative explanation at all; it is the observation that there may be nothing to explain. Plotting eight periods is what makes it visible.',
+                'the cohort removes it': 'A cohort compares like with like; it does not make chance smaller. Two cohorts can still differ by luck alone.',
+                'the cohort does not touch it': 'Ordinary variation survives any cohort. In the made-up comparison the difference, 2.4 points, has an interval from about −2.0 to +6.8 points, so chance alone could explain it. Plotting eight periods shows how big the wobble is.',
+                'it was never a real alternative': 'It is the leading alternative here. Week two rose almost as much with nothing shipped, so there may be nothing to explain at all.',
               } },
-            { id: 'weather', text: 'It rained all week, so fewer people came in person and more booked online.', answer: 'the cohort does not touch it',
+            { id: 'weather', text: 'The library’s staff room was repainted that week.', answer: 'it was never a real alternative',
               feedback: {
-                'the cohort removes it': 'Weather belongs to the calendar week rather than to the group of people.',
-                'the cohort does not touch it': 'Anything about the world in that period survives cohorting, which is most of the interesting confounds.',
-                'it was never a real alternative': 'It is a plausible cause and worth listing.',
+                'the cohort removes it': 'There is nothing for a cohort to remove: members never see the staff room.',
+                'the cohort does not touch it': 'It shares the week, and it has no way to change what members do online, so it is not worth carrying as a competing explanation.',
+                'it was never a real alternative': 'Happening in the same week is not enough; an alternative needs a way to move the number. Nobody booking a tool sees the staff room.',
               } },
           ],
           then: 'Now build your own cohort, and write the two lists: what it controls for and what survives it.',
-          pattern: 'A cohort controls for who the people are and how long they have had. It does nothing about what was happening in the world that week, which is where the strongest competing explanations usually live.',
+          pattern: 'A cohort controls for who the people are and how long they have had. It does nothing about what was happening in the world that week, which is where the strongest competing explanations usually live, and it does not shrink ordinary variation. Not everything in the same week is an alternative, though: it needs a way to move the number.',
         },
         start: 'Split your synthetic numbers by the week people first arrived, and follow each group the same number of days.',
         enough: 'Both cohorts have been followed for the same length of time.' },
@@ -1509,12 +1512,12 @@ export const guided15: Record<string, Guided> = {
         { id: 'change-condition', label: 'The result that would change your conclusion, and when you would look', kind: 'long' },
       ] },
       { id: 'present', title: 'Present it', fields: [
-        { id: 'presented-to', label: 'Who you presented it to (a role, not a name), or how you rehearsed it', kind: 'short', hint: 'No stakeholder available: present it to anybody who will listen for five minutes, and label it a rehearsal. A synthetic chart can be presented only as a method demonstration, never as evidence for the decision.' },
-        { id: 'questions-asked', label: 'What they asked, summarised', kind: 'long', sensitive: true, hint: 'Summarise each question in your words; keep any verbatim notes in your own private file.' },
+        { id: 'presented-to', label: 'Who you presented it to (a role, not a name), or how you rehearsed it', kind: 'short', hint: 'No stakeholder available: present it to anybody who will listen for five minutes, and label it a rehearsal. With nobody at all, leave the slides for two days, look at each chart for only ten seconds, write what it says without your notes, and label it a solo check. A synthetic chart can be presented only as a method demonstration, never as evidence for the decision.' },
+        { id: 'questions-asked', label: 'What they asked, summarised', kind: 'long', sensitive: true, hint: 'Summarise each question in your words; keep any verbatim notes in your own private file. Solo check: write the questions each chart left you unable to answer after ten seconds.' },
       ] },
       { id: 'survived', title: 'What survived', fields: [
-        { id: 'remembered', label: 'What they remembered afterwards, summarised closely', kind: 'long', sensitive: true, hint: 'Ask a day later if you can. What is remembered is what will be repeated. Record the gist without their name; a short phrase they used is enough.' },
-        { id: 'travelled-wrong', label: 'Anything remembered more confidently than your evidence supports', kind: 'long', sensitive: true },
+        { id: 'remembered', label: 'What they remembered afterwards, summarised closely', kind: 'long', sensitive: true, hint: 'Ask a day later if you can. What is remembered is what will be repeated. Record the gist without their name; a short phrase they used is enough. Solo check: what you wrote from each chart after ten seconds, labelled solo check.' },
+        { id: 'travelled-wrong', label: 'Anything remembered more confidently than your evidence supports', kind: 'long', sensitive: true, hint: 'Solo check: anything you wrote from the chart alone that says more than the evidence does.' },
         improvementMade,
       ] },
     ],
@@ -1692,7 +1695,7 @@ export const guided15: Record<string, Guided> = {
         { id: 'instead', label: 'What you will do instead, including how you would notice a mistake', kind: 'long', example: 'Example (made up): write the clearest version, ship it, and ask three people next week what they thought it meant.' },
       ] },
       { id: 'refuse', title: 'One measurement you would refuse', fields: [
-        { id: 'refused-measurement', label: 'A measurement that should not be run at all, and why', kind: 'long', hint: 'Some tests optimise for something nobody should be optimising for. A test of which cancellation flow produces fewer cancellations is a test of how well it obstructs people.' },
+        { id: 'refused-measurement', label: 'A measurement that should not be run at all, and why', kind: 'long', hint: 'Some tests optimise for something nobody should be optimising for. A test of which cancellation flow produces fewer cancellations, with nothing measured about whether people who meant to cancel managed to, is a test of how well it obstructs people.' },
         { id: 'what-you-would-say', label: 'What you would say if asked to run it', kind: 'long' },
       ] },
       { id: 'record', title: 'Record', fields: [
@@ -1765,7 +1768,7 @@ export const guided15: Record<string, Guided> = {
                 'measure first': 'Find out what it is used for before touching it. The measurement here is one conversation with the provider rather than a study.',
                 'do not measure this at all': 'There is nothing objectionable about finding out what a field is for.',
               } },
-            { id: 'cancellation-obstruct', text: 'Testing which cancellation flow produces fewer cancellations.', answer: 'do not measure this at all',
+            { id: 'cancellation-obstruct', text: 'Testing which cancellation flow produces fewer cancellations, with nothing measured about whether people who meant to cancel managed to.', answer: 'do not measure this at all',
               feedback: {
                 'decide now and watch': 'Deciding it at all accepts the framing that fewer cancellations is the goal.',
                 'measure first': 'A well-run test would answer it precisely, and what it would measure is how effectively the flow obstructs people who want to leave.',
@@ -1834,11 +1837,11 @@ export const guided15: Record<string, Guided> = {
         recheck: 'Both decisions have something arranged that would tell you.',
       },
       {
-        question: 'Somebody asks you to test which cancellation flow produces fewer cancellations. What is the objection?',
+        question: 'Somebody asks you to test which cancellation flow produces fewer cancellations, with nothing measured about whether people who meant to cancel managed to. What is the objection?',
         options: [
-          { label: 'It would measure how well the flow obstructs leaving, which is not worth optimising.', was: ['It would measure how effectively the flow obstructs people who want to leave, which is not something to optimise.'], correct: true, feedback: 'The test would work. That is what makes this a judgement rather than a limitation, and the reply should offer something else: measuring why people cancel, for instance.' },
+          { label: 'It would measure how well the flow obstructs leaving, which is not worth optimising.', was: ['It would measure how effectively the flow obstructs people who want to leave, which is not something to optimise.'], correct: true, feedback: 'The test would work. That is what makes this a judgement rather than a limitation, and the reply should offer something else: measuring why people cancel, for instance, or whether people who meant to cancel managed to.' },
           { label: 'The traffic is too low for the test to give a reliable result in any reasonable time.', was: ['The traffic is too low for a reliable result.'], feedback: 'True here and beside the point. If traffic were ample the objection would be unchanged.' },
-          { label: 'Cancellation rate is a poor metric that nobody should be reporting.', was: ['Cancellation rate is a poor metric.'], feedback: 'It is a reasonable thing to know. What is wrong is optimising a flow against it.' },
+          { label: 'Cancellation rate is a poor metric that nobody should be reporting.', was: ['Cancellation rate is a poor metric.'], feedback: 'It is a reasonable thing to know. What is wrong is optimising a flow against it alone, with nothing checking that people could leave.' },
         ],
         repair: 'Write what you would say in step 4, offering an alternative rather than only refusing. Record the change in step 5.',
         recheck: 'Your reply names something you would measure instead.',
@@ -1936,42 +1939,45 @@ export const guided15: Record<string, Guided> = {
         ],
         sorter: {
           intro: 'Six candidate measures for a made up tool library with no analytics. For each one, decide whether the plan can include it.',
-          options: ['obtainable today', 'needs tooling you do not have', 'obtainable and not worth it'],
+          options: ['obtainable today', 'not obtainable here (needs tooling or other people’s data)', 'obtainable and not worth it'],
+          was: {
+            'not obtainable here (needs tooling or other people’s data)': ['needs tooling you do not have'],
+          },
           items: [
             { id: 'duplicate-payments', text: 'Duplicate payments per hundred bookings, from the payment provider’s records, monthly.', answer: 'obtainable today',
               feedback: {
                 'obtainable today': 'The provider already records every payment. Counting duplicates is an hour with a spreadsheet each month.',
-                'needs tooling you do not have': 'Nothing new is required; the records exist because payments happened.',
+                'not obtainable here (needs tooling or other people’s data)': 'Nothing new is required; the records exist because payments happened.',
                 'obtainable and not worth it': 'It is the closest thing to the outcome in the whole tree.',
               } },
-            { id: 'funnel-conversion', text: 'Conversion at each step of the booking funnel.', answer: 'needs tooling you do not have',
+            { id: 'funnel-conversion', text: 'Conversion at each step of the booking funnel.', answer: 'not obtainable here (needs tooling or other people’s data)',
               feedback: {
                 'obtainable today': 'Nothing records who reached which screen. The funnel you built was synthetic for exactly this reason.',
-                'needs tooling you do not have': 'It needs page-level instrumentation, which is a project rather than a measure.',
+                'not obtainable here (needs tooling or other people’s data)': 'It needs page-level instrumentation, which is a project rather than a measure.',
                 'obtainable and not worth it': 'It would be genuinely useful if it existed, which is what makes it a plan for later.',
               } },
             { id: 'cancellations-24h', text: 'Cancellations within a day of booking, from the booking book, monthly.', answer: 'obtainable today',
               feedback: {
                 'obtainable today': 'Both dates are already written down. It is a count somebody can do with a pencil.',
-                'needs tooling you do not have': 'The booking book is the tooling.',
+                'not obtainable here (needs tooling or other people’s data)': 'The booking book is the tooling.',
                 'obtainable and not worth it': 'It speaks to confidence at the moment of booking, which is a node in the tree.',
               } },
             { id: 'five-conversations', text: 'Five conversations a quarter with recent bookers.', answer: 'obtainable today',
               feedback: {
                 'obtainable today': 'Five people, four times a year, arranged by email. It is the only source of mechanism in the plan.',
-                'needs tooling you do not have': 'It needs a kettle.',
+                'not obtainable here (needs tooling or other people’s data)': 'It needs a kettle.',
                 'obtainable and not worth it': 'It answers the why questions nothing else in the plan can touch.',
               } },
             { id: 'time-on-page', text: 'Average time on the tool detail page.', answer: 'obtainable and not worth it',
               feedback: {
                 'obtainable today': 'It would need instrumentation as well, so it fails twice.',
-                'needs tooling you do not have': 'True, and the more important objection is that it was removed from the tree in the first lesson as unactionable.',
+                'not obtainable here (needs tooling or other people’s data)': 'True, and the more important objection is that it was removed from the tree in the first lesson as unactionable.',
                 'obtainable and not worth it': 'Even handed to you free, no value of it would change what anybody does.',
               } },
-            { id: 'competitor-comparison', text: 'How the duplicate-payment rate compares with similar providers.', answer: 'needs tooling you do not have',
+            { id: 'competitor-comparison', text: 'How the duplicate-payment rate compares with similar providers.', answer: 'not obtainable here (needs tooling or other people’s data)',
               feedback: {
                 'obtainable today': 'Nobody publishes it, and definitions would differ even if they did.',
-                'needs tooling you do not have': 'It needs data that is not yours and a shared definition that does not exist. It belongs on the unanswered list.',
+                'not obtainable here (needs tooling or other people’s data)': 'It needs data that is not yours and a shared definition that does not exist. No tool would supply it, and it belongs on the unanswered list.',
                 'obtainable and not worth it': 'It would be worth having; it is simply unavailable.',
               } },
           ],

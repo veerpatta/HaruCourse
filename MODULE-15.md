@@ -419,7 +419,7 @@ Section: practice-plan. Stable action: step-4-sort-5.
 
 Six candidate metrics for a made up tool library. For each one, decide what kind it is.
 
-Whether people arrive knowing what they need to bring.
+Total page views across the whole site each month.
 
 - an outcome you could observe
 - an activity metric
@@ -428,11 +428,11 @@ Whether people arrive knowing what they need to bring.
 <details>
 <summary>After your attempt</summary>
 
-an outcome you could observe — It is genuinely part of the outcome and it cannot be observed: nothing in any record shows what somebody knew.
+an outcome you could observe — Nothing is true for anybody afterwards because a page was viewed.
 
-an activity metric — It is not a behaviour anybody performs on the product.
+an activity metric — It counts activity, and the deeper problem is its breadth: it rises with a new tool, a broken link or a busy season, so no value of it points at any piece of work.
 
-not actionable at all — Not as a metric. It is askable, which makes it real evidence and not a number, and the tree should mark it that way rather than dropping it.
+not actionable at all — No value of it changes what anybody does. It goes up with interest, with confusion and with the season, so whatever it does somebody can explain it as good news.
 
 Now mark your own nodes the same way, and check every askable one says so rather than pretending to be countable.
 
@@ -932,7 +932,7 @@ Invented counts marked synthetic, the proportional drop at each step with your w
 
 **Start here:** Work out the proportion for each step by hand, writing the division you did.
 
-**Enough:** Your largest drop is the largest proportion, and you can say why that is the right ranking.
+**Enough:** You give the proportional drop at every step and say which you would look at first, and why.
 
 **Proportional drop:** People lost at a step divided by people who reached it. Going from 420 to 180 loses 240 of 420, about 57.1 per cent. It makes steps that start with different numbers of people comparable.
 
@@ -1010,9 +1010,9 @@ The two rankings can agree or disagree. Made up: 1,000 to 420 loses 580 (58.0 pe
 
 Section: practice-plan. Stable action: step-3-brief.
 
-Three explanations for the largest drop that the numbers cannot distinguish, each with the evidence that would separate it.
+Three explanations for the step you chose to look at first that the numbers cannot distinguish, each with the evidence that would separate it.
 
-- For the largest drop, write three explanations that fit the numbers.
+- For the step you chose to look at first, write three explanations that fit the numbers.
 - State what evidence would separate them.
 
 **Start here:** Write three explanations that are as different from each other as you can make them.
@@ -1105,7 +1105,7 @@ Section: practice-plan. Stable action: step-3-sort-3.
 
 Six things somebody said about the same made up drop in a synthetic funnel. For each one, decide what it is.
 
-People are checking with somebody else and will come back tomorrow.
+Some people may be checking with somebody else and coming back tomorrow.
 
 - an explanation the data allows
 - a conclusion the data cannot support
@@ -1183,7 +1183,7 @@ Section: practice-plan. Stable action: step-3-sort-6.
 
 Six things somebody said about the same made up drop in a synthetic funnel. For each one, decide what it is.
 
-It is worse on phones than on laptops.
+It might be worse on phones than on laptops; this funnel is not split by device.
 
 - an explanation the data allows
 - a conclusion the data cannot support
@@ -1194,7 +1194,7 @@ It is worse on phones than on laptops.
 
 an explanation the data allows — It might well be true and this funnel is not split by device, so nothing in it speaks to the question.
 
-a conclusion the data cannot support — It would become one if asserted; as written it is a claim about a split the data does not have.
+a conclusion the data cannot support — It is offered as a possibility, and it says itself that the split it needs is missing. It would become a conclusion only if asserted as fact.
 
 something the funnel cannot see at all — Any claim about a group the funnel does not separate is invisible to it. Splitting it would be a reasonable next step.
 
@@ -1203,13 +1203,13 @@ Now write your own three explanations, and check none of them is really a conclu
 </details>
 
 
-### Three explanations for the largest drop that the numbers cannot tell apart
+### Three explanations, for the step you chose to look at first, that the numbers cannot tell apart
 
 Section: practice-plan. Stable action: write-three-explanations.
 
-Write your answer for “Three explanations for the largest drop that the numbers cannot tell apart”. Use the task instructions below to decide what to include.
+Write your answer for “Three explanations, for the step you chose to look at first, that the numbers cannot tell apart”. Use the task instructions below to decide what to include.
 
-**Answer:** Three explanations for the largest drop that the numbers cannot tell apart
+**Answer:** Three explanations, for the step you chose to look at first, that the numbers cannot tell apart
 
 
 
@@ -1280,7 +1280,7 @@ It does, since checkout is the step where they actually give up and leave the wh
 
 Not necessarily: the cause may sit earlier, such as a price nobody was shown. — A funnel locates where to look, not what to fix. Several explanations can fit the same drop, and choosing one without evidence is how expensive redesigns of the wrong screen happen.
 
-Improve: Write three explanations for your largest drop in step 3, at least one of which is about an earlier step. Record the change in step 5.
+Improve: Write three explanations in step 3 for the step you chose to look at first, at least one of which is about an earlier step. Record the change in step 5.
 
 Check again: Your explanations are not all about the step where the drop appears.
 
@@ -1499,7 +1499,7 @@ Repair: Add the label to the chart itself; a caption elsewhere does not travel w
 
 **Three competing explanations are written with separating evidence**
 
-Adequate evidence: Three plausible causes for the largest drop and what would distinguish them.
+Adequate evidence: Three plausible causes for the drop at the step you chose to look at first, and what would distinguish them.
 
 0 — One explanation asserted.
 
@@ -1509,7 +1509,7 @@ Adequate evidence: Three plausible causes for the largest drop and what would di
 
 3 — As adequate, and one explanation would make the drop acceptable rather than a problem.
 
-Repair: For your largest drop, write every reason a person might stop there, then what evidence would rule each in or out. Recheck: The explanations.
+Repair: For the step you chose to look at first, write every reason a person might stop there, then what evidence would rule each in or out. Recheck: The explanations.
 
 **Healthy drops are identified**
 
@@ -1645,7 +1645,7 @@ Section: practice-plan. Stable action: step-1-brief.
 Three rates gathered with the counts behind them.
 
 - Read the assigned interval and sample-size readings.
-- Collect three rates you have written or been tempted to write.
+- Collect three rates you have written or been tempted to write. With fewer than three real counts, use the practice set in the worksheet hint and label it practice.
 
 **Start here:** Go through your own documents and find every percentage you have written.
 
@@ -1660,11 +1660,11 @@ Three rates gathered with the counts behind them.
 
 Section: practice-plan. Stable action: write-three-rates.
 
-The count is the part that matters. 41 per cent from 9 of 22 and 41 per cent from 410 of 1,000 are different claims.
+The count is the part that matters. 41 per cent from 9 of 22 and 41 per cent from 410 of 1,000 are different claims. If you hold fewer than three real counts, use the practice set: 9 of 22 members who answered a newsletter survey, 2 of 3 people in a usability test, and 32 of 40 people who volunteered for a panel. Label every answer that uses it practice.
 
 **Answer:** Three rates you have written or were tempted to write, with the counts behind them
 
-The count is the part that matters. 41 per cent from 9 of 22 and 41 per cent from 410 of 1,000 are different claims.
+The count is the part that matters. 41 per cent from 9 of 22 and 41 per cent from 410 of 1,000 are different claims. If you hold fewer than three real counts, use the practice set: 9 of 22 members who answered a newsletter survey, 2 of 3 people in a usability test, and 32 of 40 people who volunteered for a panel. Label every answer that uses it practice.
 
 <details>
 <summary>Example</summary>
@@ -1783,7 +1783,7 @@ Nine of the twenty-two members who answered the survey were unsure whether their
 
 - supportable as written
 - needs the count instead
-- the interval is not the problem
+- wrong for a reason no interval fixes
 
 <details>
 <summary>After your attempt</summary>
@@ -1792,7 +1792,7 @@ supportable as written — The count, the denominator and the route are all pres
 
 needs the count instead — The count is what it already is.
 
-the interval is not the problem — No interval is being claimed, so none is needed.
+wrong for a reason no interval fixes — Nothing in it is wrong: the count, the denominator and the route are all stated, and no interval is claimed.
 
 Now rewrite your own three, and check each says how the people came to be asked.
 
@@ -1809,7 +1809,7 @@ Six sentences from a made up tool-library report. For each one, decide whether t
 
 - supportable as written
 - needs the count instead
-- the interval is not the problem
+- wrong for a reason no interval fixes
 
 <details>
 <summary>After your attempt</summary>
@@ -1818,7 +1818,7 @@ supportable as written — The interval runs from about a quarter to three-fifth
 
 needs the count instead — Nine of twenty-two says the same thing without implying a precision the sample cannot carry. It also quietly changes members to members who answered.
 
-the interval is not the problem — The interval is exactly the problem here, along with the word members.
+wrong for a reason no interval fixes — The width is the first problem: from nine of twenty-two the second digit is fictional. The word members is a second problem, and the count with its route fixes both.
 
 Now rewrite your own three, and check each says how the people came to be asked.
 
@@ -1835,7 +1835,7 @@ Six sentences from a made up tool-library report. For each one, decide whether t
 
 - supportable as written
 - needs the count instead
-- the interval is not the problem
+- wrong for a reason no interval fixes
 
 <details>
 <summary>After your attempt</summary>
@@ -1844,7 +1844,7 @@ supportable as written — Sixty-seven per cent of three people is two people. T
 
 needs the count instead — Two of the three people we watched. It is a real and useful finding, stated at the size it is.
 
-the interval is not the problem — An interval on three people covers almost everything (about 21 to 94 per cent for two of three), which is the point.
+wrong for a reason no interval fixes — An interval on three people covers almost everything (about 21 to 94 per cent for two of three), which is the point: here the size is the problem.
 
 Now rewrite your own three, and check each says how the people came to be asked.
 
@@ -1857,20 +1857,20 @@ Section: practice-plan. Stable action: step-3-sort-4.
 
 Six sentences from a made up tool-library report. For each one, decide whether the numbers behind it support the claim.
 
-80 per cent of the forty people who volunteered for our panel found the new flow clearer.
+80 per cent of members found the new flow clearer (32 of the 40 panel volunteers).
 
 - supportable as written
 - needs the count instead
-- the interval is not the problem
+- wrong for a reason no interval fixes
 
 <details>
 <summary>After your attempt</summary>
 
-supportable as written — The interval (about 65 to 90 per cent) is the narrowest here. Who those forty are is the difficulty.
+supportable as written — The interval (about 65 to 90 per cent) is the narrowest here. The trouble is the word members: the forty volunteered, and the sentence claims everybody.
 
-needs the count instead — Thirty-two of forty is better and does not fix it either.
+needs the count instead — The count is already there in brackets, and the claim about members is still wrong.
 
-the interval is not the problem — People who volunteer for a panel are unlike people who do not, and no arithmetic corrects that. The route has to be stated and the claim narrowed to the panel.
+wrong for a reason no interval fixes — People who volunteer for a panel are unlike people who do not, and no arithmetic corrects that. The route has to be stated and the claim narrowed to the panel.
 
 Now rewrite your own three, and check each says how the people came to be asked.
 
@@ -1887,7 +1887,7 @@ Completion rose from 7.1 per cent to 9.4 per cent between the two synthetic funn
 
 - supportable as written
 - needs the count instead
-- the interval is not the problem
+- wrong for a reason no interval fixes
 
 <details>
 <summary>After your attempt</summary>
@@ -1896,7 +1896,7 @@ supportable as written — Both numbers were invented, so the comparison measure
 
 needs the count instead — The counts are invented too.
 
-the interval is not the problem — Comparing invented numbers produces an invented difference. The repair is to remove the comparison rather than to qualify it.
+wrong for a reason no interval fixes — Comparing invented numbers produces an invented difference. The repair is to remove the comparison rather than to qualify it.
 
 Now rewrite your own three, and check each says how the people came to be asked.
 
@@ -1913,7 +1913,7 @@ The payment provider’s records show eleven duplicate payments in March.
 
 - supportable as written
 - needs the count instead
-- the interval is not the problem
+- wrong for a reason no interval fixes
 
 <details>
 <summary>After your attempt</summary>
@@ -1922,7 +1922,7 @@ supportable as written — A complete count from a record, not a sample. There i
 
 needs the count instead — It is already a count.
 
-the interval is not the problem — There is indeed no interval here, because nothing was estimated from a sample. A complete count from a record needs no range around it.
+wrong for a reason no interval fixes — Nothing is wrong with it. Nothing was estimated from a sample, so a complete count from a record needs no range around it.
 
 Now rewrite your own three, and check each says how the people came to be asked.
 
@@ -1957,7 +1957,7 @@ Section: practice-plan. Stable action: step-4-brief.
 
 One comparison examined with both intervals, then qualified or abandoned with the reason.
 
-- Take a comparison between two rates and compute the 95 per cent interval for their difference.
+- Take a comparison between two rates, or the made-up practice pair, and compute the 95 per cent interval for their difference. If the counts are your own invented ones, write that it was not computed.
 - Qualify or abandon the comparison, and say why.
 
 **Start here:** Put both counts into the Two rates tool and read the interval for the difference before deciding anything.
@@ -1992,15 +1992,15 @@ Made-up example. Comparing two rates from a tool-library study, and comparing in
 **Unknown:** Still unknown: whether the real completion rate is anywhere near either figure. Nothing here measured it, and the document now says so.
 
 
-### A comparison between two rates: both counts, the difference, and the 95 per cent interval for the difference
+### A comparison between two rates: both counts, the difference, and the 95 per cent interval for the difference (if the counts are your own invented ones, write “not computed: invented”)
 
 Section: practice-plan. Stable action: write-comparison-examined.
 
-Use the Two rates tool in this lesson’s uncertainty calculator, which works out the difference and its interval directly (Newcombe’s method). Do not judge by whether the two separate intervals overlap: they can overlap while the difference is clear.
+Use the Two rates tool in this lesson’s uncertainty calculator, which works out the difference and its interval directly (Newcombe’s method). Do not judge by whether the two separate intervals overlap: they can overlap while the difference is clear. With no real comparison, practise the tool on this made-up pair, labelled practice: 36 of 90 members at one branch against 22 of 88 at another. It teaches the arithmetic and says nothing about any product.
 
-**Answer:** A comparison between two rates: both counts, the difference, and the 95 per cent interval for the difference
+**Answer:** A comparison between two rates: both counts, the difference, and the 95 per cent interval for the difference (if the counts are your own invented ones, write “not computed: invented”)
 
-Use the Two rates tool in this lesson’s uncertainty calculator, which works out the difference and its interval directly (Newcombe’s method). Do not judge by whether the two separate intervals overlap: they can overlap while the difference is clear.
+Use the Two rates tool in this lesson’s uncertainty calculator, which works out the difference and its interval directly (Newcombe’s method). Do not judge by whether the two separate intervals overlap: they can overlap while the difference is clear. With no real comparison, practise the tool on this made-up pair, labelled practice: 36 of 90 members at one branch against 22 of 88 at another. It teaches the arithmetic and says nothing about any product.
 
 <details>
 <summary>Example</summary>
@@ -2014,11 +2014,11 @@ Example (made up): 44 of 100 against 36 of 100 is a difference of 8 points, with
 
 Section: practice-plan. Stable action: write-comparison-decision.
 
-If the interval for the difference includes zero, the counts are consistent with no difference, and also with a sizeable one: say so, or drop the comparison. If it excludes zero, report the difference with its interval and sample route. Invented numbers: remove the comparison.
+If the interval for the difference includes zero, the counts are consistent with no difference, and also with a sizeable one: say so, or drop the comparison. If it excludes zero, report the difference with its interval and sample route. Your own invented numbers: remove the comparison. The practice pair: decide as you would for real counts, and label the decision practice.
 
 **Answer:** Whether you qualified it or abandoned it, and why
 
-If the interval for the difference includes zero, the counts are consistent with no difference, and also with a sizeable one: say so, or drop the comparison. If it excludes zero, report the difference with its interval and sample route. Invented numbers: remove the comparison.
+If the interval for the difference includes zero, the counts are consistent with no difference, and also with a sizeable one: say so, or drop the comparison. If it excludes zero, report the difference with its interval and sample route. Your own invented numbers: remove the comparison. The practice pair: decide as you would for real counts, and label the decision practice.
 
 
 ### Check your reasoning · 1 of 3
@@ -3205,7 +3205,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Made-up example: a published figure claimed a 30 per cent improvement in completions after a redesign. The five questions: who was counted — new visitors only, it turned out, excluding returning ones; what period — four weeks against a comparison period containing a public holiday; what else changed — a marketing campaign ran concurrently; what is the denominator — visits fell from 10,000 to 7,000 while completed bookings fell from 500 to 455, so completions per visit rose from 5.0 to 6.5 per cent (the 30 per cent, a relative rise of 1.5 points) while completions fell by 9 per cent; and what decision it justified — further investment in the redesign. The claim was rewritten as: completions per visit rose over four weeks, during which visits fell and a campaign ran, so the redesign's contribution cannot be separated.
+- Made-up example: a published figure claimed a 30 per cent improvement in completions after a redesign. The five questions: who was counted — new visitors only, it turned out, excluding returning ones; what period — four weeks against a comparison period containing a public holiday; what else changed — a marketing campaign ran concurrently; what is the denominator — visits fell from 10,000 to 7,000 while completed bookings fell from 500 to 455, so completions per visit rose from 5.0 to 6.5 per cent (the 30 per cent is the relative rise; the absolute rise is 1.5 percentage points) while completions fell by 9 per cent; and what decision it justified — further investment in the redesign. The claim was rewritten as: completions per visit rose over four weeks, during which visits fell and a campaign ran, so the redesign's contribution cannot be separated.
 
 
 ### Choose where you will do the work
@@ -3504,7 +3504,7 @@ Section: practice-plan. Stable action: step-3-sort-5.
 
 Six presentation choices from a made up report. For each one, decide what it does to the reader.
 
-Two series on one chart with two different vertical scales, chosen so the lines cross.
+A bar chart drawn in 3D perspective, so the nearer of two nearly equal bars looks much bigger.
 
 - makes a small difference look large
 - hides a comparison
@@ -3513,11 +3513,11 @@ Two series on one chart with two different vertical scales, chosen so the lines 
 <details>
 <summary>After your attempt</summary>
 
-makes a small difference look large — Two independent scales can be set to produce almost any apparent relationship, including one that does not exist.
+makes a small difference look large — Perspective makes the nearer bar look larger than its value, so two nearly equal numbers read as very different. The values are honest and the drawing is not.
 
-hides a comparison — Both series are visible; what is hidden is that they are not comparable.
+hides a comparison — Both bars are shown; it is their sizes that the drawing distorts.
 
-reasonable as drawn — It is occasionally necessary and it should always be pointed out in the caption.
+reasonable as drawn — A third dimension adds nothing to two numbers and changes how big each one looks, which is why 3D bars are best avoided.
 
 Now look at your own chosen chart and write down what its presentation does.
 
@@ -4320,7 +4320,7 @@ Section: practice-plan. Stable action: step-4-demo.
 
 Made-up example. Finding a disagreement between a tool-library count and an observation, and explaining it away.
 
-**The disagreement:** The provider’s records show eleven duplicate payments among 412 bookings in March, under 3 in 100. In three sessions, all three people said that at home they would have paid again when the screen gave no confirmation.
+**The disagreement:** The provider’s records show eleven duplicate payments among 380 bookings in March, under 3 in 100. In three sessions, all three people said that at home they would have paid again when the screen gave no confirmation.
 
 **What I wrote at first:** That the sessions were unrepresentative, and eleven is the real number. It resolved the disagreement and let me move on.
 
@@ -4341,11 +4341,11 @@ Made-up example. Finding a disagreement between a tool-library count and an obse
 
 Section: practice-plan. Stable action: write-contradiction-found.
 
-Keep it. A contradiction is a finding, not an error to be resolved by picking the number. Describe the observation side without identifying anybody.
+Keep it. A contradiction is a finding, not an error to be resolved by picking the number. Describe the observation side without identifying anybody. If they do not disagree, as with the supplied practice notes, write where they could have disagreed and what result would have counted as a contradiction.
 
 **Answer:** Any respect in which the two disagree
 
-Keep it. A contradiction is a finding, not an error to be resolved by picking the number. Describe the observation side without identifying anybody.
+Keep it. A contradiction is a finding, not an error to be resolved by picking the number. Describe the observation side without identifying anybody. If they do not disagree, as with the supplied practice notes, write where they could have disagreed and what result would have counted as a contradiction.
 
 
 ### What would explain the disagreement
@@ -4613,13 +4613,13 @@ Repair: Write the change, then annotate which finding supports each part of it. 
 
 **Contradictions are kept and explained rather than resolved away**
 
-Adequate evidence: Any disagreement recorded with a candidate explanation.
+Adequate evidence: Any disagreement recorded with a candidate explanation, or, where none exists, a check of where the two could have disagreed.
 
 0 — Contradiction dropped.
 
 1 — Noted without explanation.
 
-2 — Kept with an explanation and what would settle it.
+2 — Kept with an explanation and what would settle it, or, where none exists, a written check of where they could have disagreed and what result would have counted as a contradiction.
 
 3 — As adequate, and the rare-and-severe possibility is considered explicitly.
 
@@ -5757,11 +5757,11 @@ It is ordinary variation; week two rose almost as much with nothing shipped.
 <details>
 <summary>After your attempt</summary>
 
-the cohort removes it — A cohort does not make noise smaller.
+the cohort removes it — A cohort compares like with like; it does not make chance smaller. Two cohorts can still differ by luck alone.
 
-the cohort does not touch it — True, and the more useful point is different.
+the cohort does not touch it — Ordinary variation survives any cohort. In the made-up comparison the difference, 2.4 points, has an interval from about −2.0 to +6.8 points, so chance alone could explain it. Plotting eight periods shows how big the wobble is.
 
-it was never a real alternative — It is not an alternative explanation at all; it is the observation that there may be nothing to explain. Plotting eight periods is what makes it visible.
+it was never a real alternative — It is the leading alternative here. Week two rose almost as much with nothing shipped, so there may be nothing to explain at all.
 
 Now build your own cohort, and write the two lists: what it controls for and what survives it.
 
@@ -5774,7 +5774,7 @@ Section: practice-plan. Stable action: step-3-sort-6.
 
 Six explanations for a rise in a made up tool-library metric during the week a change shipped. For each one, decide what a cohort comparison does to it.
 
-It rained all week, so fewer people came in person and more booked online.
+The library’s staff room was repainted that week.
 
 - the cohort removes it
 - the cohort does not touch it
@@ -5783,11 +5783,11 @@ It rained all week, so fewer people came in person and more booked online.
 <details>
 <summary>After your attempt</summary>
 
-the cohort removes it — Weather belongs to the calendar week rather than to the group of people.
+the cohort removes it — There is nothing for a cohort to remove: members never see the staff room.
 
-the cohort does not touch it — Anything about the world in that period survives cohorting, which is most of the interesting confounds.
+the cohort does not touch it — It shares the week, and it has no way to change what members do online, so it is not worth carrying as a competing explanation.
 
-it was never a real alternative — It is a plausible cause and worth listing.
+it was never a real alternative — Happening in the same week is not enough; an alternative needs a way to move the number. Nobody booking a tool sees the staff room.
 
 Now build your own cohort, and write the two lists: what it controls for and what survives it.
 
@@ -6239,7 +6239,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Made-up example: the analysis was presented in three slides. First: the decision — fix the held-place message before touching payment, because that is where the evidence points. Second: the evidence — two of the three people watched could not tell their place was held, with the sample on the slide; the provider's count of duplicate payments with its period; and the one rate shown, 9 of 22 survey answers, carrying its 95 per cent interval of about 23 to 61 per cent. The synthetic funnel stayed off the evidence slide, because invented numbers cannot support a real decision. Third: what would prompt a rethink — if duplicate payments are not lower after four weeks, the team looks next at the payment confirmation; that would not prove the message had no effect. Afterwards, the person remembered the decision and the phrase “two of three”, which was the intended pair; nobody quoted a percentage, because none was shown.
+- Made-up example: the analysis was presented in three slides. First: the decision — fix the held-place message before touching payment, because that is where the evidence points. Second: the evidence — two of the three people watched could not tell their place was held, with the sample on the slide; the provider's count of duplicate payments with its period; and the one rate shown, 9 of 22 survey answers, carrying its 95 per cent interval of about 23 to 61 per cent. The synthetic funnel stayed off the evidence slide, because invented numbers cannot support a real decision. Third: what would prompt a rethink — if duplicate payments are not lower after four weeks, the team looks next at the payment confirmation; that would not prove the message had no effect. Afterwards, the person remembered the decision and the phrase “two of three”, which was the intended pair; nobody quoted a headline percentage, because none was shown.
 
 
 ### Choose where you will do the work
@@ -6416,7 +6416,7 @@ Section: practice-plan. Stable action: step-4-brief.
 
 The analysis presented to somebody, or rehearsed and labelled, with what they asked.
 
-- Present to someone who was not involved.
+- Present to someone who was not involved. With nobody at all, use the solo check described in the worksheet and label it.
 - Do not narrate the caveats; let the material carry them.
 
 **Start here:** Present it without apologising for the sample size; the slide already says it.
@@ -6588,22 +6588,22 @@ Now check your own slides: everything that would change how somebody reads the c
 
 Section: practice-plan. Stable action: write-presented-to.
 
-No stakeholder available: present it to anybody who will listen for five minutes, and label it a rehearsal. A synthetic chart can be presented only as a method demonstration, never as evidence for the decision.
+No stakeholder available: present it to anybody who will listen for five minutes, and label it a rehearsal. With nobody at all, leave the slides for two days, look at each chart for only ten seconds, write what it says without your notes, and label it a solo check. A synthetic chart can be presented only as a method demonstration, never as evidence for the decision.
 
 **Answer:** Who you presented it to (a role, not a name), or how you rehearsed it
 
-No stakeholder available: present it to anybody who will listen for five minutes, and label it a rehearsal. A synthetic chart can be presented only as a method demonstration, never as evidence for the decision.
+No stakeholder available: present it to anybody who will listen for five minutes, and label it a rehearsal. With nobody at all, leave the slides for two days, look at each chart for only ten seconds, write what it says without your notes, and label it a solo check. A synthetic chart can be presented only as a method demonstration, never as evidence for the decision.
 
 
 ### What they asked, summarised
 
 Section: practice-plan. Stable action: write-questions-asked.
 
-Summarise each question in your words; keep any verbatim notes in your own private file.
+Summarise each question in your words; keep any verbatim notes in your own private file. Solo check: write the questions each chart left you unable to answer after ten seconds.
 
 **Answer:** What they asked, summarised
 
-Summarise each question in your words; keep any verbatim notes in your own private file.
+Summarise each question in your words; keep any verbatim notes in your own private file. Solo check: write the questions each chart left you unable to answer after ten seconds.
 
 
 ### Check your reasoning · 1 of 3
@@ -6718,22 +6718,22 @@ What the audience remembered afterwards, and anything remembered more confidentl
 
 Section: practice. Stable action: write-remembered.
 
-Ask a day later if you can. What is remembered is what will be repeated. Record the gist without their name; a short phrase they used is enough.
+Ask a day later if you can. What is remembered is what will be repeated. Record the gist without their name; a short phrase they used is enough. Solo check: what you wrote from each chart after ten seconds, labelled solo check.
 
 **Answer:** What they remembered afterwards, summarised closely
 
-Ask a day later if you can. What is remembered is what will be repeated. Record the gist without their name; a short phrase they used is enough.
+Ask a day later if you can. What is remembered is what will be repeated. Record the gist without their name; a short phrase they used is enough. Solo check: what you wrote from each chart after ten seconds, labelled solo check.
 
 
 ### Anything remembered more confidently than your evidence supports
 
 Section: practice. Stable action: write-travelled-wrong.
 
-Write your answer for “Anything remembered more confidently than your evidence supports”. Use the task instructions below to decide what to include.
+Solo check: anything you wrote from the chart alone that says more than the evidence does.
 
 **Answer:** Anything remembered more confidently than your evidence supports
 
-
+Solo check: anything you wrote from the chart alone that says more than the evidence does.
 
 
 ### What you changed after the Check questions, or why no change was needed
@@ -6871,13 +6871,13 @@ Repair: Write what result would make you revise this, and when you would check. 
 
 **What the audience remembered was checked and acted on**
 
-Adequate evidence: A record of what they took away and a change to the material where it misled.
+Adequate evidence: A record of what they took away, or of a labelled solo check, and a change to the material where it misled.
 
 0 — Not checked.
 
 1 — Checked without acting.
 
-2 — Checked and the material corrected.
+2 — Checked with a listener, or with nobody available by a labelled solo check, and the material corrected.
 
 3 — As adequate, and a misreading is traced to a specific presentation choice.
 
@@ -6984,7 +6984,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Made-up example: two decisions were identified. First: the wording of the held-place message. Cheap to change, cheap to reverse, no traffic to test it with — the decision was to write the clearest version, ship it, and ask three people the following week. Second: whether to shorten the booking form by removing a field. This affects data the provider relies on, so removal is not cheaply reversible; the decision was to ask the provider what the field is used for before touching it. One measurement was refused outright: a proposal to test which cancellation flow produced fewer cancellations, which would have been a test of how well the flow obstructs people.
+- Made-up example: two decisions were made without measurement. First: the wording of the held-place message. Cheap to change, cheap to reverse, no traffic to test it with — the decision was to write the clearest version, ship it, and ask three people the following week. Second: which of two passing button shades to use — decided now, and revisited only if anybody reports a problem. A contrasting decision was kept for measurement: whether to shorten the booking form by removing a field. This affects data the provider relies on, so removal is not cheaply reversible; the decision was to ask the provider what the field is used for before touching it. One measurement was refused outright: a proposal to test which cancellation flow produced fewer cancellations, with nothing measured about whether people who meant to cancel managed to, which would have been a test of how well the flow obstructs people.
 
 
 ### Choose where you will do the work
@@ -7198,7 +7198,7 @@ Section: practice-plan. Stable action: step-3-sort-3.
 
 Six decisions at a made up tool library. For each one, decide what the right approach is.
 
-Testing which cancellation flow produces fewer cancellations.
+Testing which cancellation flow produces fewer cancellations, with nothing measured about whether people who meant to cancel managed to.
 
 - decide now and watch
 - measure first
@@ -7347,11 +7347,11 @@ One measurement that should not be run at all, with the reason and what you woul
 
 Section: practice-plan. Stable action: write-refused-measurement.
 
-Some tests optimise for something nobody should be optimising for. A test of which cancellation flow produces fewer cancellations is a test of how well it obstructs people.
+Some tests optimise for something nobody should be optimising for. A test of which cancellation flow produces fewer cancellations, with nothing measured about whether people who meant to cancel managed to, is a test of how well it obstructs people.
 
 **Answer:** A measurement that should not be run at all, and why
 
-Some tests optimise for something nobody should be optimising for. A test of which cancellation flow produces fewer cancellations is a test of how well it obstructs people.
+Some tests optimise for something nobody should be optimising for. A test of which cancellation flow produces fewer cancellations, with nothing measured about whether people who meant to cancel managed to, is a test of how well it obstructs people.
 
 
 ### What you would say if asked to run it
@@ -7431,7 +7431,7 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-Somebody asks you to test which cancellation flow produces fewer cancellations. What is the objection?
+Somebody asks you to test which cancellation flow produces fewer cancellations, with nothing measured about whether people who meant to cancel managed to. What is the objection?
 
 - It would measure how well the flow obstructs leaving, which is not worth optimising.
 - The traffic is too low for the test to give a reliable result in any reasonable time.
@@ -7440,11 +7440,11 @@ Somebody asks you to test which cancellation flow produces fewer cancellations. 
 <details>
 <summary>After your attempt</summary>
 
-It would measure how well the flow obstructs leaving, which is not worth optimising. — The test would work. That is what makes this a judgement rather than a limitation, and the reply should offer something else: measuring why people cancel, for instance.
+It would measure how well the flow obstructs leaving, which is not worth optimising. — The test would work. That is what makes this a judgement rather than a limitation, and the reply should offer something else: measuring why people cancel, for instance, or whether people who meant to cancel managed to.
 
 The traffic is too low for the test to give a reliable result in any reasonable time. — True here and beside the point. If traffic were ample the objection would be unchanged.
 
-Cancellation rate is a poor metric that nobody should be reporting. — It is a reasonable thing to know. What is wrong is optimising a flow against it.
+Cancellation rate is a poor metric that nobody should be reporting. — It is a reasonable thing to know. What is wrong is optimising a flow against it alone, with nothing checking that people could leave.
 
 Improve: Write what you would say in step 4, offering an alternative rather than only refusing. Record the change in step 5.
 
@@ -7585,7 +7585,7 @@ Adequate evidence: Two real decisions with a reversibility judgement each.
 
 2 — Two with reversibility assessed.
 
-3 — As adequate, and one is deliberately kept for measurement because it is irreversible.
+3 — As adequate, and a contrasting decision is kept for measurement because its effects are irreversible.
 
 Repair: List what you are waiting on and ask how hard each would be to undo. Recheck: The decision list.
 
@@ -7915,7 +7915,7 @@ Six candidate measures for a made up tool library with no analytics. For each on
 Duplicate payments per hundred bookings, from the payment provider’s records, monthly.
 
 - obtainable today
-- needs tooling you do not have
+- not obtainable here (needs tooling or other people’s data)
 - obtainable and not worth it
 
 <details>
@@ -7923,7 +7923,7 @@ Duplicate payments per hundred bookings, from the payment provider’s records, 
 
 obtainable today — The provider already records every payment. Counting duplicates is an hour with a spreadsheet each month.
 
-needs tooling you do not have — Nothing new is required; the records exist because payments happened.
+not obtainable here (needs tooling or other people’s data) — Nothing new is required; the records exist because payments happened.
 
 obtainable and not worth it — It is the closest thing to the outcome in the whole tree.
 
@@ -7941,7 +7941,7 @@ Six candidate measures for a made up tool library with no analytics. For each on
 Conversion at each step of the booking funnel.
 
 - obtainable today
-- needs tooling you do not have
+- not obtainable here (needs tooling or other people’s data)
 - obtainable and not worth it
 
 <details>
@@ -7949,7 +7949,7 @@ Conversion at each step of the booking funnel.
 
 obtainable today — Nothing records who reached which screen. The funnel you built was synthetic for exactly this reason.
 
-needs tooling you do not have — It needs page-level instrumentation, which is a project rather than a measure.
+not obtainable here (needs tooling or other people’s data) — It needs page-level instrumentation, which is a project rather than a measure.
 
 obtainable and not worth it — It would be genuinely useful if it existed, which is what makes it a plan for later.
 
@@ -7967,7 +7967,7 @@ Six candidate measures for a made up tool library with no analytics. For each on
 Cancellations within a day of booking, from the booking book, monthly.
 
 - obtainable today
-- needs tooling you do not have
+- not obtainable here (needs tooling or other people’s data)
 - obtainable and not worth it
 
 <details>
@@ -7975,7 +7975,7 @@ Cancellations within a day of booking, from the booking book, monthly.
 
 obtainable today — Both dates are already written down. It is a count somebody can do with a pencil.
 
-needs tooling you do not have — The booking book is the tooling.
+not obtainable here (needs tooling or other people’s data) — The booking book is the tooling.
 
 obtainable and not worth it — It speaks to confidence at the moment of booking, which is a node in the tree.
 
@@ -7993,7 +7993,7 @@ Six candidate measures for a made up tool library with no analytics. For each on
 Five conversations a quarter with recent bookers.
 
 - obtainable today
-- needs tooling you do not have
+- not obtainable here (needs tooling or other people’s data)
 - obtainable and not worth it
 
 <details>
@@ -8001,7 +8001,7 @@ Five conversations a quarter with recent bookers.
 
 obtainable today — Five people, four times a year, arranged by email. It is the only source of mechanism in the plan.
 
-needs tooling you do not have — It needs a kettle.
+not obtainable here (needs tooling or other people’s data) — It needs a kettle.
 
 obtainable and not worth it — It answers the why questions nothing else in the plan can touch.
 
@@ -8019,7 +8019,7 @@ Six candidate measures for a made up tool library with no analytics. For each on
 Average time on the tool detail page.
 
 - obtainable today
-- needs tooling you do not have
+- not obtainable here (needs tooling or other people’s data)
 - obtainable and not worth it
 
 <details>
@@ -8027,7 +8027,7 @@ Average time on the tool detail page.
 
 obtainable today — It would need instrumentation as well, so it fails twice.
 
-needs tooling you do not have — True, and the more important objection is that it was removed from the tree in the first lesson as unactionable.
+not obtainable here (needs tooling or other people’s data) — True, and the more important objection is that it was removed from the tree in the first lesson as unactionable.
 
 obtainable and not worth it — Even handed to you free, no value of it would change what anybody does.
 
@@ -8045,7 +8045,7 @@ Six candidate measures for a made up tool library with no analytics. For each on
 How the duplicate-payment rate compares with similar providers.
 
 - obtainable today
-- needs tooling you do not have
+- not obtainable here (needs tooling or other people’s data)
 - obtainable and not worth it
 
 <details>
@@ -8053,7 +8053,7 @@ How the duplicate-payment rate compares with similar providers.
 
 obtainable today — Nobody publishes it, and definitions would differ even if they did.
 
-needs tooling you do not have — It needs data that is not yours and a shared definition that does not exist. It belongs on the unanswered list.
+not obtainable here (needs tooling or other people’s data) — It needs data that is not yours and a shared definition that does not exist. No tool would supply it, and it belongs on the unanswered list.
 
 obtainable and not worth it — It would be worth having; it is simply unavailable.
 

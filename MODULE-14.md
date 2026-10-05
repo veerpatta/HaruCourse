@@ -309,7 +309,7 @@ Section: practice-plan. Stable action: step-3-sort-4.
 
 Six things that happened to a design in a made up delivery process. For each one, decide where the change happened.
 
-A screen was built behind a flag and released to a tenth of people first.
+The search filters were moved to a later piece of work, so the first release showed an unfiltered list.
 
 - at slicing
 - at estimation
@@ -318,11 +318,11 @@ A screen was built behind a flag and released to a tenth of people first.
 <details>
 <summary>After your attempt</summary>
 
-at slicing — How much of the work reaches how many people is a slicing decision, and it changes what the design has to handle: two versions existing at once.
+at slicing — Deciding what goes in the first piece and what waits is slicing, and it changes the design: for a while people meet a long list with no way to narrow it, and nobody drew that version.
 
-at estimation — It is not about cost.
+at estimation — Nothing here says the filters were too costly. It is about which piece they belong to.
 
-during build — The flag is built during the build and the decision to have one is taken earlier.
+during build — The filters were moved before anybody started building that piece.
 
 Now find three real examples from the path you mapped, and write what changed at each.
 
@@ -1092,17 +1092,17 @@ Six ways a made up booking story was split. For each one, decide what kind of sl
 I can see the status of my booking in the confirmation message; and separately, I can see it without the message.
 
 - a good slice
-- a slice by layer
-- not really a slice
+- useless on its own (layer or phase)
+- usable but leaves a gap nobody designed
 
 <details>
 <summary>After your attempt</summary>
 
 a good slice — Both halves help somebody on the day they ship, and the first is much cheaper. It is the clearest example of slicing by outcome.
 
-a slice by layer — Neither piece is a technical layer; both are things a person can do.
+useless on its own (layer or phase) — Neither piece is a technical layer or a phase of work; both are things a person can do.
 
-not really a slice — Two independently useful pieces is exactly what a slice should produce.
+usable but leaves a gap nobody designed — Each half is complete for what it promises. Nobody is left in a half-handled situation while the second half waits.
 
 Now re-slice your own largest story by outcome, and write both halves.
 
@@ -1118,17 +1118,17 @@ Six ways a made up booking story was split. For each one, decide what kind of sl
 Build the server part first, then the screen in the following sprint.
 
 - a good slice
-- a slice by layer
-- not really a slice
+- useless on its own (layer or phase)
+- usable but leaves a gap nobody designed
 
 <details>
 <summary>After your attempt</summary>
 
 a good slice — Nobody can use a server part. The first piece helps no one and teaches nothing.
 
-a slice by layer — The classic version. It looks orderly and delays all feedback until both pieces exist.
+useless on its own (layer or phase) — The classic slice by layer. It looks orderly and delays all feedback until both pieces exist.
 
-not really a slice — It is a real split, and a split into pieces nobody can use.
+usable but leaves a gap nobody designed — There is no gap for anybody to fall into, because nobody can use the first piece at all.
 
 Now re-slice your own largest story by outcome, and write both halves.
 
@@ -1144,17 +1144,17 @@ Six ways a made up booking story was split. For each one, decide what kind of sl
 Ship the path where everything works; the error and expiry cases follow in a later piece.
 
 - a good slice
-- a slice by layer
-- not really a slice
+- useless on its own (layer or phase)
+- usable but leaves a gap nobody designed
 
 <details>
 <summary>After your attempt</summary>
 
 a good slice — It is tempting, and it ships something people can use. It also means real people meet an undesigned failure in the meantime.
 
-a slice by layer — It is the same shape as building the server first: the difficult half is deferred and somebody meets its absence. A better slice ships a narrower feature with its failures intact.
+useless on its own (layer or phase) — Neither piece is a technical layer, and people can use the first one. The trouble is what happens when something goes wrong before the second arrives.
 
-not really a slice — It is a split, and a dangerous one.
+usable but leaves a gap nobody designed — It ships something useful, and until the later piece arrives a person whose payment fails or whose hold expires meets a failure nobody designed. A better slice ships a narrower feature with its failures intact.
 
 Now re-slice your own largest story by outcome, and write both halves.
 
@@ -1170,17 +1170,17 @@ Six ways a made up booking story was split. For each one, decide what kind of sl
 Ship it for one collection branch, then the other four.
 
 - a good slice
-- a slice by layer
-- not really a slice
+- useless on its own (layer or phase)
+- usable but leaves a gap nobody designed
 
 <details>
 <summary>After your attempt</summary>
 
 a good slice — Everybody at that branch gets the whole thing, failures included, and you learn from real use before spreading it.
 
-a slice by layer — Nothing technical is being deferred; the feature is whole and narrow.
+useless on its own (layer or phase) — Nothing technical is being deferred; the feature is whole and narrow.
 
-not really a slice — It is a real reduction in scope with a real first release.
+usable but leaves a gap nobody designed — Nobody at that branch meets a half-built situation, and people at the other four carry on as they do today.
 
 Now re-slice your own largest story by outcome, and write both halves.
 
@@ -1196,17 +1196,17 @@ Six ways a made up booking story was split. For each one, decide what kind of sl
 Finish all the designs, then build them.
 
 - a good slice
-- a slice by layer
-- not really a slice
+- useless on its own (layer or phase)
+- usable but leaves a gap nobody designed
 
 <details>
 <summary>After your attempt</summary>
 
 a good slice — Nothing ships at the end of the first piece.
 
-a slice by layer — It has the shape of one, and design is not a layer that can be released.
+useless on its own (layer or phase) — It is a phase of work rather than a split of it. Finished designs help nobody until something is built, so nothing can ship or teach you anything until the end.
 
-not really a slice — It is a sequence of activities rather than a split of the work. It was how the whole thing was always going to happen.
+usable but leaves a gap nobody designed — Nobody can use the first piece at all, so there is nothing for a gap to appear in.
 
 Now re-slice your own largest story by outcome, and write both halves.
 
@@ -1222,17 +1222,17 @@ Six ways a made up booking story was split. For each one, decide what kind of sl
 Ship booking now; cancellation follows in a fortnight.
 
 - a good slice
-- a slice by layer
-- not really a slice
+- useless on its own (layer or phase)
+- usable but leaves a gap nobody designed
 
 <details>
 <summary>After your attempt</summary>
 
 a good slice — Booking alone is genuinely useful, which is what makes this hard to see.
 
-a slice by layer — Neither piece is a technical layer.
+useless on its own (layer or phase) — Neither piece is a technical layer, and booking alone is usable.
 
-not really a slice — It is a slice, and it creates a fortnight where people can book and cannot cancel. If nobody has designed that fortnight, the split has quietly invented a new situation rather than dividing an existing one.
+usable but leaves a gap nobody designed — It is a slice, and it creates a fortnight where people can book and cannot cancel. If nobody has designed that fortnight, the split has quietly invented a new situation rather than dividing an existing one.
 
 Now re-slice your own largest story by outcome, and write both halves.
 
@@ -2102,7 +2102,7 @@ Clearly cannot be checked: two careful people could look at the same screen and 
 
 Nothing important, since clarity is the requirement and the team will know it when they see it. — Clarity is the intention. The criterion has to name what makes it so, or two people will judge it differently.
 
-It needs a minimum font size and colour added, so that clearly has a measurable threshold. — That is an implementation criterion, which is the opposite failure. State what is shown and where.
+It needs a minimum font size and colour added, so that clearly has a measurable threshold. — A threshold can be a fair criterion, but it measures legibility, not whether the remaining time is stated. Say what is shown and where first.
 
 Improve: Rewrite that criterion in step 1 so it names what is stated and where, and record the change in step 5.
 
@@ -2869,7 +2869,7 @@ A feature instead: accessibility sits with the failure paths in what you refuse 
 
 Nothing; quietly extend the appetite so the full scope and the accessibility work both fit. — Extending can be right when it is decided openly. Doing it quietly avoids the very decision the appetite exists to force.
 
-The accessibility work for now, with a dated note to return to it in the next round of work. — That note is the return condition the sorter warned about: it waits for somebody to report being excluded.
+The accessibility work for now, with a dated note to return to it in the next round of work. — A date is not a condition, and accessibility is not deferrable scope: until that date, the people it excludes cannot book at all.
 
 Improve: Write what you refused to cut in step 5, and reduce the scope elsewhere to fit. Record the change.
 
@@ -3180,6 +3180,18 @@ Recommended route: Fill the worksheet in this app, step by step. It saves as you
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
 
 
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Practice estimate notes (made up, not a conversation you had): three tool-library stories, each read by an engineer who wrote an estimate and the reasons behind it. Use them only if you have nobody to read your own stories, and label every answer that uses them practice.
+- Story A · As a member who has just reserved a tool, I can see that my place is held and until when, so that I do not pay twice. Estimate: a week. Reasons: what happens when somebody returns after the hold has expired is not defined; whether the held-until time must match on a phone and a laptop is not defined. Could not answer from the story: what the person is told at expiry, and whether an expired hold can be restarted. Note: with both defined, about three days.
+- Story B · As a member collecting a tool, I can choose which branch to collect from, so that I do not travel to the wrong one. Estimate: four days. Reasons: nobody knows whether the booking record holds a branch, and the person who knows is away; if it does not, adding it is extra work. Could not answer from the story: what happens when the chosen branch has none of that tool left. Note: the estimate cannot move until the record question is answered.
+- Story C · As a member searching for a tool, I can see when nothing matches my dates, so that I can try other dates. Estimate: two days. Reasons: the wording for the empty list is not written; the list has to be checked with each of the six existing filter combinations. Could not answer from the story: what the empty list says, and whether it suggests other dates. Note: with the wording supplied, about a day and a half, because the six checks remain.
+
+
 ### Prepare the stories
 
 Section: practice-plan. Stable action: step-1-brief.
@@ -3191,7 +3203,7 @@ Three stories prepared with your own known gaps marked, and a named person or an
 
 **Start here:** Mark your own undefined parts before showing anybody anything.
 
-**Enough:** The access line says plainly who you had, including nobody.
+**Enough:** The access line says plainly who you had. With nobody, it says you are using the supplied practice estimate notes.
 
 **Estimate:** Mostly a measure of how unclear the work is. Read that way it becomes information rather than a number to negotiate.
 
@@ -3225,22 +3237,22 @@ Made-up example. Taking tool-library stories to be estimated, and tidying them f
 
 Section: practice-plan. Stable action: write-stories-taken.
 
-Marking your own gaps first makes the conversation about theirs rather than yours.
+Marking your own gaps first makes the conversation about theirs rather than yours. Practice route: take stories A to C from the supplied notes and mark the gaps you can see before reading the engineer’s reasons.
 
 **Answer:** Which three stories, and what you already know is undefined in them
 
-Marking your own gaps first makes the conversation about theirs rather than yours.
+Marking your own gaps first makes the conversation about theirs rather than yours. Practice route: take stories A to C from the supplied notes and mark the gaps you can see before reading the engineer’s reasons.
 
 
 ### Who you asked (a role, not a name), or how you did this without an engineer
 
 Section: practice-plan. Stable action: write-who-asked.
 
-No engineer: ask an informed reader what they could not answer from your story and criteria. The unanswerable parts are the unknowns.
+No engineer: ask an informed reader what they could not answer from your story and criteria. The unanswerable parts are the unknowns. Nobody at all: use the supplied practice estimate notes for steps 2 to 4 and label every answer that uses them practice.
 
 **Answer:** Who you asked (a role, not a name), or how you did this without an engineer
 
-No engineer: ask an informed reader what they could not answer from your story and criteria. The unanswerable parts are the unknowns.
+No engineer: ask an informed reader what they could not answer from your story and criteria. The unanswerable parts are the unknowns. Nobody at all: use the supplied practice estimate notes for steps 2 to 4 and label every answer that uses them practice.
 
 <details>
 <summary>Example</summary>
@@ -3256,7 +3268,7 @@ Section: practice-plan. Stable action: step-2-brief.
 
 Three estimates with the reasoning, and a list of what could not be answered from your material.
 
-- Ask an engineer, or an informed reader, how long each would take and why.
+- Ask an engineer, or an informed reader, how long each would take and why. With nobody to ask, use the supplied practice estimate notes.
 - Record what they could not answer from your material.
 
 **Start here:** Ask for the reasoning before the number, or the number arrives first and the reasoning gets shaped to it.
@@ -3272,22 +3284,22 @@ Three estimates with the reasoning, and a list of what could not be answered fro
 
 Section: practice-plan. Stable action: write-estimates-given.
 
-Summarise their reasoning rather than quoting them, and keep any verbatim notes in your own private file. An estimate is information, not a commitment to quote back at anybody.
+Summarise their reasoning rather than quoting them, and keep any verbatim notes in your own private file. An estimate is information, not a commitment to quote back at anybody. Practice route: summarise stories A to C from the supplied notes and label them practice.
 
 **Answer:** How long each would take, and the reasoning behind each figure, summarised in your words
 
-Summarise their reasoning rather than quoting them, and keep any verbatim notes in your own private file. An estimate is information, not a commitment to quote back at anybody.
+Summarise their reasoning rather than quoting them, and keep any verbatim notes in your own private file. An estimate is information, not a commitment to quote back at anybody. Practice route: summarise stories A to C from the supplied notes and label them practice.
 
 
 ### What they could not answer from your material
 
 Section: practice-plan. Stable action: write-could-not-answer.
 
-Write your answer for “What they could not answer from your material”. Use the task instructions below to decide what to include.
+Practice route: use the “could not answer” line under each supplied story, labelled practice.
 
 **Answer:** What they could not answer from your material
 
-
+Practice route: use the “could not answer” line under each supplied story, labelled practice.
 
 
 ### Name the uncertainty
@@ -3542,11 +3554,11 @@ Write your answer for “Which story you redesigned, and what you defined”. Us
 
 Section: practice-plan. Stable action: write-re-estimate.
 
-Write your answer for “The new estimate, and what changed it”. Use the task instructions below to decide what to include.
+Practice route: use the note under the story on what the estimate becomes once its gaps are defined, labelled practice.
 
 **Answer:** The new estimate, and what changed it
 
-
+Practice route: use the note under the story on what the estimate becomes once its gaps are defined, labelled practice.
 
 
 ### Check your reasoning · 1 of 3
@@ -3626,13 +3638,13 @@ You have no engineer to ask. Can this lesson be done honestly?
 
 It cannot, since only an engineer on the team is able to estimate the work at all. — Only an engineer can estimate accurately, and accuracy is not what this lesson produces.
 
-It can, if you estimate the three stories yourself and note where you hesitated. — Your own estimate cannot show you what your material fails to answer, because you already know the answers.
+It can, if you estimate the three stories yourself and note where you hesitated. — Your own estimate cannot show you what your material fails to answer, because you already know the answers. The supplied practice notes are the route when nobody can read your stories.
 
-It can: an informed reader marking what your story leaves open finds most unknowns. — The estimate itself will be rough, and the unknowns are what the lesson is about. Say in the access line that no engineer was involved; a reader will miss some system-specific unknowns that an engineer would catch.
+It can: an informed reader marking what your story leaves open finds most unknowns. — The estimate itself will be rough, and the unknowns are what the lesson is about. Say in the access line that no engineer was involved; a reader will miss some system-specific unknowns that an engineer would catch. With nobody at all, the supplied practice estimate notes give you a reader’s reasons to work from, labelled practice.
 
-Improve: Write plainly in step 1 who you asked, and make sure the unknowns came from somebody other than you. Record the change in step 5.
+Improve: Write plainly in step 1 who you asked, and make sure the unknowns came from somebody other than you: a reader, or the supplied practice estimate notes labelled practice. Record the change in step 5.
 
-Check again: The unanswerable list was produced by a reader rather than by you.
+Check again: The unanswerable list came from a reader, or from the supplied practice notes labelled as such, rather than from your own guesses.
 
 Answers to revisit: stories-taken, who-asked, improvement-made
 
@@ -3928,6 +3940,17 @@ Recommended route: Fill the worksheet in this app, step by step. It saves as you
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
 
 
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Supplied rehearsal reply (made up, not a handover that happened): a builder’s written reply after reading a pre-read for the tool-library held-place story. Use it only if you have nobody to rehearse with, and label every answer that uses it rehearsal.
+- Questions: 1. What happens if the hold expires while the payment is processing? 2. Is the timer driven by the server, or kept on the person’s device? 3. Can the existing card component be reused for the tool cards? 4. What does the list say when nothing matches? 5. Is the whole card tappable, or only the button?
+- Cost notes: a server-driven timer is about three days of work. A card component already exists, but it has no slot for a photo.
+
+
 ### Prepare and send
 
 Section: practice-plan. Stable action: step-1-brief.
@@ -3962,11 +3985,11 @@ Story, criteria, states and exact wording, in one place. Far enough ahead to be 
 
 Section: practice-plan. Stable action: write-who-with.
 
-No team: rehearse it with an informed reader, or run it against the supplied situation and label it a rehearsal everywhere it appears.
+No team: rehearse it with an informed reader, or work from the supplied rehearsal reply (a builder’s five questions and two cost notes, in the practice material) and label it a rehearsal everywhere it appears.
 
 **Answer:** Who the handover was with, or how you rehearsed it
 
-No team: rehearse it with an informed reader, or run it against the supplied situation and label it a rehearsal everywhere it appears.
+No team: rehearse it with an informed reader, or work from the supplied rehearsal reply (a builder’s five questions and two cost notes, in the practice material) and label it a rehearsal everywhere it appears.
 
 <details>
 <summary>Example</summary>
@@ -4033,22 +4056,22 @@ Made-up example. Running a handover for a tool-library feature, and running it a
 
 Section: practice-plan. Stable action: write-their-questions.
 
-Start with these rather than narrating your screens. Summarise each question in a line; keep any verbatim notes in your own private file, with a date to delete them. On the rehearsal route, label every question as a rehearsal question.
+Start with these rather than narrating your screens. Summarise each question in a line; keep any verbatim notes in your own private file, with a date to delete them. On the rehearsal route, label every question as a rehearsal question; with nobody to rehearse with, use the five questions in the supplied rehearsal reply.
 
 **Answer:** Their questions, summarised closely enough to act on
 
-Start with these rather than narrating your screens. Summarise each question in a line; keep any verbatim notes in your own private file, with a date to delete them. On the rehearsal route, label every question as a rehearsal question.
+Start with these rather than narrating your screens. Summarise each question in a line; keep any verbatim notes in your own private file, with a date to delete them. On the rehearsal route, label every question as a rehearsal question; with nobody to rehearse with, use the five questions in the supplied rehearsal reply.
 
 
 ### What they said was expensive, and what already exists
 
 Section: practice-plan. Stable action: write-expensive-existing.
 
-Write your answer for “What they said was expensive, and what already exists”. Use the task instructions below to decide what to include.
+Supplied rehearsal reply: use its two cost notes, labelled rehearsal.
 
 **Answer:** What they said was expensive, and what already exists
 
-
+Supplied rehearsal reply: use its two cost notes, labelled rehearsal.
 
 
 ### Record the decisions
@@ -4548,7 +4571,7 @@ Adequate evidence: Material shared in advance with a request for questions.
 
 1 — Sent too late to be read.
 
-2 — Sent with enough time and questions invited.
+2 — Sent with enough time and questions invited, or on the supplied rehearsal route assembled into one pre-read and labelled as a rehearsal.
 
 3 — As adequate, and the questions arrived before the meeting and shaped its agenda.
 
@@ -4724,6 +4747,8 @@ Use your own material, or the labelled practice material below. Keep its source 
 - TL-06 · Question · Severity: unknown until answered · Evidence: the whole card is tappable in the build; the design shows only the button as tappable, and no decision record says which was intended · Status: asked of the engineer and the designer · Annotation: it could be a defect or an improvement, so the honest label until somebody answers is question.
 - TL-07 · Defect · Severity: at risk of losing something · Evidence: a failed submission clears everything the person typed; no story criterion mentions it, and the baseline says no screen may lose typed input · Status: open, high · Annotation: like TL-02, actionable without an old criterion because it breaks the agreed baseline. A criterion is added for the next story.
 - TL-08 · Defect · Severity: at risk of losing something · Evidence: on a 360-pixel phone with a slow connection, the price overlaps the Reserve button while the image loads; C4 says the layout reserves image space · Status: open, high · Annotation: it quotes C4 and states its conditions, so somebody else can reproduce and fix it without a conversation.
+- TL-09 · Pass · C1 · Evidence: the review screen reads “Place held until 14:32”.
+- TL-10 · Pass · C3 · Evidence: held tools show a lock icon and the word Held as well as the green fill.
 
 
 ### Check the criteria
@@ -5039,7 +5064,7 @@ Section: practice-plan. Stable action: step-4-sort-5.
 
 Seven findings from a made up design QA on a tool-library build, whose team has agreed WCAG 2.2 AA as its baseline. For each one, decide what it is.
 
-A short animation on success would make the confirmation feel better.
+The build names its layers differently from the design file, with no visible difference on screen.
 
 - a defect
 - a request
@@ -5048,11 +5073,11 @@ A short animation on success would make the confirmation feel better.
 <details>
 <summary>After your attempt</summary>
 
-a defect — Nothing was agreed about an animation.
+a defect — Nothing a person meets is different, and internal names were never part of what was agreed for the screen.
 
-a request — It could be raised as one, and it is an idea for new work rather than an observation about this build. Putting it on a QA list makes the list look like a wish list.
+a request — There is nothing to change for anybody using it: renaming layers would leave every screen exactly as it is.
 
-not a finding at all — QA is about what was agreed against what was built. New ideas belong somewhere else.
+not a finding at all — QA compares what a person meets with what was agreed. Internal names that change nothing on screen are team housekeeping, not a finding about this build.
 
 Now label your own findings and order them by what each one does to a person.
 
@@ -5277,7 +5302,7 @@ Write your decision first, then the reason it fits this new case. Compare with t
 <summary>Compare after writing</summary>
 
 - Weak: Calls the heading problem a request because no criterion mentions it, or orders the list by how irritating each item is.
-- Adequate: Postcode rejection and missing headings near the top as defects (the heading failure breaks an accessibility baseline even without a criterion), date format as a low defect, the photo as a change request.
+- Adequate: Missing headings near the top as a defect against the baseline (it breaks an accessibility baseline even without a criterion); postcode rejection as a defect if a criterion covers postcode entry, otherwise a missing requirement, still high on the list; date format as a low defect; the photo as a change request.
 - Strong: As adequate, and logs the missing heading criterion for next time, says whether the date format contradicts a specification or is a question, and notes the photo can be kept with a reason.
 
 </details>
@@ -5527,6 +5552,8 @@ Use your own material, or the labelled practice material below. Keep its source 
 - TL-06 · Question · Severity: unknown until answered · Evidence: the whole card is tappable in the build; the design shows only the button as tappable, and no decision record says which was intended · Status: asked of the engineer and the designer · Annotation: it could be a defect or an improvement, so the honest label until somebody answers is question.
 - TL-07 · Defect · Severity: at risk of losing something · Evidence: a failed submission clears everything the person typed; no story criterion mentions it, and the baseline says no screen may lose typed input · Status: open, high · Annotation: like TL-02, actionable without an old criterion because it breaks the agreed baseline. A criterion is added for the next story.
 - TL-08 · Defect · Severity: at risk of losing something · Evidence: on a 360-pixel phone with a slow connection, the price overlaps the Reserve button while the image loads; C4 says the layout reserves image space · Status: open, high · Annotation: it quotes C4 and states its conditions, so somebody else can reproduce and fix it without a conversation.
+- TL-09 · Pass · C1 · Evidence: the review screen reads “Place held until 14:32”.
+- TL-10 · Pass · C3 · Evidence: held tools show a lock icon and the word Held as well as the green fill.
 
 
 ### Write the three parts
@@ -5841,7 +5868,7 @@ Section: practice-plan. Stable action: step-4-sort-5.
 
 Six defect reports from a made up tool-library build. For each one, decide how severe it is for the person.
 
-When no tools match, the loading placeholder stays on screen indefinitely.
+When no tools match, the loading placeholder shows for about ten seconds before the empty message appears.
 
 - blocked
 - at risk of losing something
@@ -5850,11 +5877,11 @@ When no tools match, the loading placeholder stays on screen indefinitely.
 <details>
 <summary>After your attempt</summary>
 
-blocked — The person can go back and change the filters, so the task survives.
+blocked — The empty message does arrive, and the person can then change the filters, so the task survives.
 
 at risk of losing something — Nothing typed is lost.
 
-slowed or cosmetic — It is squarely in this group and at the top of it: everybody who meets it waits for something that has already arrived, then gives up.
+slowed or cosmetic — It is squarely in this group and at the top of it: everybody who meets it waits ten seconds for an answer that has already arrived, and some will give up before it shows.
 
 Now rate your own three reports the same way and check none of them is rated by how much it annoyed you.
 
@@ -6322,11 +6349,11 @@ Not what they care about in general. What somebody asks them about, and what the
 
 Section: practice-plan. Stable action: write-how-you-know.
 
-Asking is allowed and usually quick. A guess is a complete answer if it is labelled as one.
+Asking is allowed and usually quick. A guess is a complete answer if it is labelled as one, checked against a public source such as a published role description, and says how you would confirm it.
 
 **Answer:** How you found out, or that you are guessing
 
-Asking is allowed and usually quick. A guess is a complete answer if it is labelled as one.
+Asking is allowed and usually quick. A guess is a complete answer if it is labelled as one, checked against a public source such as a published role description, and says how you would confirm it.
 
 
 ### Translate the evidence
@@ -6904,13 +6931,13 @@ When the activity is finished, tell me to return to the course answer called “
 
 **The decision criteria are stated, not assumed**
 
-Adequate evidence: A written statement of what the decider is accountable for, found out rather than guessed.
+Adequate evidence: A written statement of what the decider is accountable for, found out, or a labelled guess with how it would be confirmed.
 
 0 — Case made in design terms only.
 
 1 — Criteria assumed without checking.
 
-2 — Criteria found out and stated.
+2 — Criteria found out and stated, or a labelled guess checked against a public source (such as a published role description), with how it would be confirmed.
 
 3 — As adequate, and the case names which criterion it addresses most directly.
 
@@ -7844,7 +7871,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Made-up example: the release plan: the held-place message and states ship; the countdown is held back until the timer is server-driven; the whole feature goes to everyone at once, since a subset would fragment support. Before shipping, three things were named: whether support contacts about payment status change over four weeks, whether anyone reports a duplicate payment, and a short round of three conversations with recent bookers. The review trigger: if duplicate payments continue at the same rate after four weeks, the team looks next at the payment confirmation and asks recent bookers what they saw. An unchanged count would not show the state design had no effect, and a fall would not show it worked, because none of the three is a controlled comparison; that was recorded beside the signals.
+- Made-up example: the release plan: the held-place message ships with a held-until time, so it answers how long; the countdown is held back until the timer is server-driven; the whole feature goes to everyone at once, since a subset would fragment support. Before shipping, three things were named: whether support contacts about payment status change over four weeks, whether anyone reports a duplicate payment, and a short round of three conversations with recent bookers. The review trigger: if duplicate payments continue at the same rate after four weeks, the team looks next at the payment confirmation and asks recent bookers what they saw. An unchanged count would not show the state design had no effect, and a fall would not show it worked, because none of the three is a controlled comparison; that was recorded beside the signals.
 
 
 ### Choose where you will do the work
@@ -7871,6 +7898,8 @@ Use your own material, or the labelled practice material below. Keep its source 
 - TL-06 · Question · Severity: unknown until answered · Evidence: the whole card is tappable in the build; the design shows only the button as tappable, and no decision record says which was intended · Status: asked of the engineer and the designer · Annotation: it could be a defect or an improvement, so the honest label until somebody answers is question.
 - TL-07 · Defect · Severity: at risk of losing something · Evidence: a failed submission clears everything the person typed; no story criterion mentions it, and the baseline says no screen may lose typed input · Status: open, high · Annotation: like TL-02, actionable without an old criterion because it breaks the agreed baseline. A criterion is added for the next story.
 - TL-08 · Defect · Severity: at risk of losing something · Evidence: on a 360-pixel phone with a slow connection, the price overlaps the Reserve button while the image loads; C4 says the layout reserves image space · Status: open, high · Annotation: it quotes C4 and states its conditions, so somebody else can reproduce and fix it without a conversation.
+- TL-09 · Pass · C1 · Evidence: the review screen reads “Place held until 14:32”.
+- TL-10 · Pass · C3 · Evidence: held tools show a lock icon and the word Held as well as the green fill.
 
 
 ### Read on defining success
@@ -8030,18 +8059,18 @@ Section: practice-plan. Stable action: step-3-sort-1.
 
 Six things a team might look at after shipping a made up held-place feature. For each one, decide what it can tell you.
 
-The number of support contacts about payment status, counted from the support log over four weeks.
+Support contacts about payment status per 100 bookings, from the support log, over four weeks.
 
 - a usable signal
-- a number that moves for other reasons
+- too many causes to read
 - not evidence at all
 
 <details>
 <summary>After your attempt</summary>
 
-a usable signal — A count with a source and a period, and one that could come back saying nothing changed. It is not a controlled comparison and it is checkable.
+a usable signal — A rate with a source and a period, and one that could come back saying nothing changed. It is not a controlled comparison and it is checkable.
 
-a number that moves for other reasons — It does move for other reasons, which is why the period and the reversal condition matter, and it is still the closest available.
+too many causes to read — Other things can move it, which is why the period and the reversal condition matter. It is narrow, counted against bookings and close to the outcome, so it can still be read.
 
 not evidence at all — It is the thing the decider already reports on.
 
@@ -8059,7 +8088,7 @@ Six things a team might look at after shipping a made up held-place feature. For
 Total bookings this month compared with last month.
 
 - a usable signal
-- a number that moves for other reasons
+- too many causes to read
 - not evidence at all
 
 <details>
@@ -8067,7 +8096,7 @@ Total bookings this month compared with last month.
 
 a usable signal — It is available and it answers a different question. Bookings move with the season, the weather and whatever else shipped.
 
-a number that moves for other reasons — A big number with many causes. Watching it after a small change produces a story rather than a finding.
+too many causes to read — A big number with many causes. Watching it after a small change produces a story rather than a finding.
 
 not evidence at all — It is real data; it simply cannot be attributed.
 
@@ -8085,7 +8114,7 @@ Six things a team might look at after shipping a made up held-place feature. For
 Three conversations with people who booked in the last fortnight, asking what they understood about their place being held.
 
 - a usable signal
-- a number that moves for other reasons
+- too many causes to read
 - not evidence at all
 
 <details>
@@ -8093,7 +8122,7 @@ Three conversations with people who booked in the last fortnight, asking what th
 
 a usable signal — Three people is three people, and it is the only thing on the list that can tell you what somebody understood. It is asked about rather than counted, and the plan says so.
 
-a number that moves for other reasons — It is not a number at all.
+too many causes to read — It is not a count with causes to untangle; it asks people directly what they understood.
 
 not evidence at all — Small and honest evidence is still evidence, as long as nothing later reports it as a rate.
 
@@ -8111,7 +8140,7 @@ Six things a team might look at after shipping a made up held-place feature. For
 Nobody has complained since it shipped.
 
 - a usable signal
-- a number that moves for other reasons
+- too many causes to read
 - not evidence at all
 
 <details>
@@ -8119,7 +8148,7 @@ Nobody has complained since it shipped.
 
 a usable signal — Most people who meet a problem never report it, so silence is consistent with everything.
 
-a number that moves for other reasons — It is not a measurement of anything.
+too many causes to read — It is not a measurement of anything.
 
 not evidence at all — It is the sentence that gets said three weeks after every release, and it would be equally true if the feature had made things worse.
 
@@ -8137,7 +8166,7 @@ Six things a team might look at after shipping a made up held-place feature. For
 Whether anybody reports a duplicate payment, read from the same support log.
 
 - a usable signal
-- a number that moves for other reasons
+- too many causes to read
 - not evidence at all
 
 <details>
@@ -8145,7 +8174,7 @@ Whether anybody reports a duplicate payment, read from the same support log.
 
 a usable signal — It is the specific harm the work was aimed at, with a place to look. Even a small count is informative because it should be near zero.
 
-a number that moves for other reasons — It is narrow enough that other causes are few.
+too many causes to read — It is narrow enough that other causes are few.
 
 not evidence at all — It is the closest thing to the outcome this work has.
 
@@ -8163,7 +8192,7 @@ Six things a team might look at after shipping a made up held-place feature. For
 The team thinks the new screen is much clearer.
 
 - a usable signal
-- a number that moves for other reasons
+- too many causes to read
 - not evidence at all
 
 <details>
@@ -8171,7 +8200,7 @@ The team thinks the new screen is much clearer.
 
 a usable signal — The team designed it and knows what it means. Their reading of it is the least informative one available.
 
-a number that moves for other reasons — No number is involved.
+too many causes to read — Nothing is being counted here, so there are no causes to untangle.
 
 not evidence at all — Worth having as morale and worth keeping out of the release plan, where it will be read as a result.
 
