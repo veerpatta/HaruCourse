@@ -46,7 +46,7 @@ export const improvementMade: WorksheetField = {
   id: 'improvement-made',
   label: 'What you changed after the Check questions, or why no change was needed',
   kind: 'long',
-  hint: 'The Check section sends you back to one specific answer. Write which one you changed and why.',
+  hint: 'The Check section sends you back to one specific answer. Write which one you changed and why — or, if it already held up, which answer you rechecked and the reason it needed no change.',
 };
 // A repeated block should arrive one piece at a time rather than as a wall of
 // boxes. These are the two shapes used throughout Modules 11 to 20.
