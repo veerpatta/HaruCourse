@@ -103,7 +103,7 @@ Section: learn. Stable action: supplied-material.
 
 Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
 
-- Supplied outputs for checking. Each was hand-written for this course to practise verification; no real model produced them, and the tool library is made up. With no assistance tool, or if you prefer not to use one, these three are your three tasks: predict what is wrong first, then check each against its source.
+- Supplied outputs for checking. Each was hand-written for this course to practise verification; no real model produced them, and the tool library is made up. In this module’s first lesson, Output 1 is used in step 4; all three are your tasks in the second lesson. There, with no assistance tool, or if you prefer not to use one, predict what is wrong in each first, then check each against its source.
 - Output 1 · explaining a term. Asked whether mid-grey body text at a contrast ratio of 5.2:1 is acceptable, it replies: “WCAG requires at least 7:1 for all body text, so 5.2:1 fails. This is a legal requirement in every country.” Source to check: W3C, Understanding Contrast (Minimum), R30 in this course’s library.
 - Output 2 · a question that needs evidence. Asked what members want from a tool-library booking page, it replies: “Studies show 73% of users prefer to book on their phone, and most library members want a chat assistant.” No study is named. Source to check: your own research notes, the only evidence about your members.
 - Output 3 · drafting. Asked for confirmation messages, it gives twenty; draft 4 reads “Your tool is reserved and ready to collect now.” Source to check, the library’s process: a booking is confirmed by email the next morning, after the evening stock-list update.
@@ -675,7 +675,7 @@ Write your decision first, then the reason it fits this new case. Compare with t
 
 Section: practice. Stable action: review-work.
 
-Open Your work and choose Ready for review. The next lesson tests the rules on three real tasks.
+Open Your work and choose Ready for review. The next lesson tests the rules on three tasks, real or supplied.
 
 
 <details>
@@ -784,7 +784,7 @@ Repair: Write which kinds of claim you will always verify and against what. Rech
 </details>
 The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
-**Keep for later:** Open Your work and choose Ready for review. The next lesson tests the rules on three real tasks.
+**Keep for later:** Open Your work and choose Ready for review. The next lesson tests the rules on three tasks, real or supplied.
 
 **Review criteria:**
 
@@ -882,7 +882,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Three tasks were logged. Drafting twenty error-message variants: useful — three were usable after editing, the rest were generic, and it took ten minutes rather than forty. Explaining a technical term an engineer used: useful, and the explanation was verified against documentation before being repeated, where one detail turned out to be wrong. Summarising five interview notes: refused under the data rule and done by hand, which took two hours and produced the contradiction that became the study's main finding.
+- Three tasks were logged. Drafting twenty error-message variants: useful — three were usable after editing, the rest were generic, and with reading and editing counted it took thirty minutes rather than forty. Explaining a technical term an engineer used: slower than reading the documentation once verification was counted, and one detail turned out to be wrong. Summarising five interview notes: refused under the data rule and done by hand, which took two hours and produced the contradiction that became the study's main finding.
 
 
 ### Choose where you will do the work
@@ -900,7 +900,7 @@ Section: learn. Stable action: supplied-material.
 
 Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
 
-- Supplied outputs for checking. Each was hand-written for this course to practise verification; no real model produced them, and the tool library is made up. With no assistance tool, or if you prefer not to use one, these three are your three tasks: predict what is wrong first, then check each against its source.
+- Supplied outputs for checking. Each was hand-written for this course to practise verification; no real model produced them, and the tool library is made up. In this module’s first lesson, Output 1 is used in step 4; all three are your tasks in the second lesson. There, with no assistance tool, or if you prefer not to use one, predict what is wrong in each first, then check each against its source.
 - Output 1 · explaining a term. Asked whether mid-grey body text at a contrast ratio of 5.2:1 is acceptable, it replies: “WCAG requires at least 7:1 for all body text, so 5.2:1 fails. This is a legal requirement in every country.” Source to check: W3C, Understanding Contrast (Minimum), R30 in this course’s library.
 - Output 2 · a question that needs evidence. Asked what members want from a tool-library booking page, it replies: “Studies show 73% of users prefer to book on their phone, and most library members want a chat assistant.” No study is named. Source to check: your own research notes, the only evidence about your members.
 - Output 3 · drafting. Asked for confirmation messages, it gives twenty; draft 4 reads “Your tool is reserved and ready to collect now.” Source to check, the library’s process: a booking is confirmed by email the next morning, after the evening stock-list update.
@@ -1052,11 +1052,11 @@ Made-up example. Using assistance on three tool-library tasks, and counting the 
 
 **What the third task showed:** Refused under the data rule. Done by hand in two hours, and it produced the contradiction that became the finding. Nothing was saved and something was gained.
 
-**What the honest total was:** Ten minutes saved on one task, twenty-one minutes lost on another, and one task where assistance was not available to me at all.
+**What the honest total was:** About ten minutes saved on one task; on another, twenty-nine minutes against roughly ten reading the documentation, so about nineteen lost; and one task where assistance was not available to me at all.
 
 **Wrong turn:** The wrong turn is counting the time to produce the output, because that is the visible part and it is genuinely fast. The editing and the verification are where the time goes, and on some tasks they exceed what was saved.
 
-**Trade-off:** Counting honestly means recording that a tool you were enthusiastic about cost you time on two tasks out of three.
+**Trade-off:** Counting honestly means recording that a tool you were enthusiastic about saved time on only one task out of three.
 
 **Unknown:** Still unknown: whether the twenty variants made my final message better than forty minutes alone would have. The time is countable and the quality is not, and the log says so.
 
@@ -2779,9 +2779,9 @@ A thumbs-down control that sends feedback to the team.
 
 real control — Nothing changes for the person who pressed it. Their problem is exactly where it was.
 
-not control — It is offered as control, which is what makes it worse than nothing offered.
+not control — It is feedback to the team rather than control for the person: they keep the same wrong suggestion and no route forward.
 
-control in name only — It collects complaints while leaving the person with the same wrong suggestion and no route forward.
+control in name only — That label is for a real control that is hidden or breaks the task. Pressing this changes nothing for the person at all.
 
 Now check your own four controls against the same question: does the system do something different, and can somebody find it?
 
@@ -2805,9 +2805,9 @@ An off switch that works, after which the main task has no way to reach the book
 
 real control — The switch works and the product does not, which means the choice is not really available.
 
-not control — A feature that cannot be turned off without breaking the task was load-bearing, and nobody had noticed.
+not control — The switch does change what the system does. What fails is the task around it, so the control exists only in name.
 
-control in name only — The switch is real; the option is not.
+control in name only — The switch is real; the option is not. A feature that cannot be turned off without breaking the task was load-bearing, and nobody had noticed.
 
 Now check your own four controls against the same question: does the system do something different, and can somebody find it?
 
@@ -3556,7 +3556,7 @@ Cannot answer: an empty result gives no hint that something has gone wrong. — 
 
 Harmful output: it can do the most damage, so it is the one nobody notices. — Harmful output can be the most serious, and it is usually noticed, which is why a report route and a person can help.
 
-Confidently wrong: it looks exactly like a correct answer, so nothing warns them. — Not answering is visible and harmful output is usually obvious. A wrong answer that looks right needs structural protection: the basis shown, never the only route, full details before any commitment.
+Confidently wrong: it looks exactly like a correct answer, so nothing warns them. — Not answering is visible. Harmful output is sometimes obvious and sometimes looks helpful, like the angle-grinder suggestion, which is why it also needs a route to a person. A wrong answer that looks right needs structural protection: the basis shown, never the only route, full details before any commitment.
 
 Improve: Write the structural protection in step 2 and confirm nothing irreversible follows a suggestion. Record the change in step 5.
 
@@ -3909,7 +3909,7 @@ Adequate evidence: A report control, a route to a person, and an internal owner.
 
 1 — A feedback control with no destination.
 
-2 — Reporting, a human route and a named owner.
+2 — Reporting, a human route and an owner named by role.
 
 3 — As adequate, and the person is told what happens to a report.
 
@@ -4303,11 +4303,11 @@ Somebody borrowing the same sander for the tenth time.
 <details>
 <summary>After your attempt</summary>
 
-a structured list — Three familiar taps, quick and predictable.
+a structured list — Known tool, day and branch: three familiar taps, or one tap to repeat. Typed, it becomes the slow messages this lesson watched.
 
-a conversation — One short message, equally quick for somebody who knows exactly what to type.
+a conversation — They know exactly what to type, but it still has to be typed every time; the list repeats it in a tap.
 
-either, equally — Familiarity removes the difference. Either works, which is why the repeat user rarely decides this question.
+either, equally — Familiarity speeds up both; the list is still quicker and needs no typing.
 
 Now compare your own two designs across the same three people, and let the counts decide the primary route.
 
@@ -5115,7 +5115,7 @@ Section: practice-plan. Stable action: step-3-sort-5.
 
 Six explanations from made up AI features. For each one, decide what it lets somebody do.
 
-Shown because you have collected from the Northside branch four times this year.
+Shown because you have collected from the Northside branch four times this year. Choose another usual branch to change it.
 
 - predict and change
 - understand but not act
@@ -5124,9 +5124,9 @@ Shown because you have collected from the Northside branch four times this year.
 <details>
 <summary>After your attempt</summary>
 
-predict and change — A specific basis for this specific suggestion, so somebody can immediately judge it and knows collecting elsewhere would change it.
+predict and change — A specific basis for this specific suggestion, so somebody can immediately judge it, and the second sentence names the lever.
 
-understand but not act — The lever is implicit and clear.
+understand but not act — The second sentence is the acting part: choosing another branch changes it.
 
 neither — It is one of the strongest forms: the basis for this item rather than for the feature.
 
@@ -5141,7 +5141,7 @@ Section: practice-plan. Stable action: step-3-sort-6.
 
 Six explanations from made up AI features. For each one, decide what it lets somebody do.
 
-The more you use it, the better it gets.
+Suggestions come from a model trained on every member’s borrowing history.
 
 - predict and change
 - understand but not act
@@ -5150,11 +5150,11 @@ The more you use it, the better it gets.
 <details>
 <summary>After your attempt</summary>
 
-predict and change — Nothing here supports a prediction about tomorrow.
+predict and change — It names where suggestions come from, not what you will see next, and it offers no lever.
 
-understand but not act — It conveys one true thing — that use affects it — with no way to tell what or how. It is the sentence that makes people think dismissals teach when they do not.
+understand but not act — True and specific about the source; nothing in it tells you what you will see next or how to change it.
 
-neither — It does say something, which is what makes it misleading rather than empty.
+neither — It does say something real and specific about the source, which a bare “personalised” label does not.
 
 Now test your own chosen version on two people and record what they predicted.
 
@@ -6202,7 +6202,7 @@ Write your decision first, then the reason it fits this new case. Compare with t
 <summary>Compare after writing</summary>
 
 - Weak: Ships the sentence as drafted or moves the detail into the privacy policy; adds location because it might help.
-- Adequate: Rewrites the disclosure to name all three sources and the 18-month period and to say there is nothing else; refuses location, because the date already gives the season and the gain is slight.
+- Adequate: Rewrites the disclosure to name all three sources and the 18-month period and to say there is nothing else; refuses precise location, because a country or region the user chooses, with the date, already gives the season, and the gain is slight.
 - Strong: As adequate, and questions whether one-minute views and 18 months are needed at all, names what the feature loses without location, and adds see-and-delete with what deleting changes.
 
 </details>
@@ -6660,7 +6660,7 @@ Section: practice-plan. Stable action: step-3-sort-3.
 
 Six ways to judge a made up suggestion feature. For each one, decide what it tells you.
 
-The proportion of suggestions that get tapped.
+The model’s precision score, measured on last month’s borrowing records it was not trained on.
 
 - tells you whether it helps people
 - tells you about the model only
@@ -6669,11 +6669,11 @@ The proportion of suggestions that get tapped.
 <details>
 <summary>After your attempt</summary>
 
-tells you whether it helps people — A tap can mean interest, confusion or a mis-tap, and none of them is a judgement about usefulness.
+tells you whether it helps people — It scores the model against past borrowing; nobody was asked whether a suggestion was useful.
 
-tells you about the model only — It is a behavioural proxy that moves with placement and wording as much as with quality.
+tells you about the model only — A technical score against past records: real information about the model, and silent about whether anybody was helped.
 
-tells you nothing useful — It is worth knowing; it simply does not answer the question.
+tells you nothing useful — It does tell you something real about how the model performs, just nothing about people.
 
 Now design your own session from the first group, and write how you will report the counts.
 
@@ -7482,7 +7482,7 @@ Required only when session-status is Yes: up to three people used the prototype.
 
 Section: practice-plan. Stable action: step-4-brief.
 
-If sessions ran: a count of wrong outputs accepted unchecked and what prompted anybody who checked. After a self-pilot, the supplied practice lines below, labelled as practice.
+If sessions ran: a count of wrong outputs accepted unchecked and what prompted anybody who checked. After a self-pilot: sort the six made-up observations below, and note in step 3 that you tried the sheet on them as practice.
 
 - If sessions ran, count how many wrong outputs were accepted unchecked.
 - Note what prompted anyone who did check.
@@ -7606,7 +7606,7 @@ Section: practice-plan. Stable action: step-4-sort-5.
 
 Six things observed in made up sessions with a scripted suggestion prototype. For each one, decide what it tells you.
 
-She asked halfway through whether these were real suggestions, and was told again that they were prepared.
+She saw a drill listed at the wrong branch, said “that is across town”, and searched for the right one.
 
 - the design worked
 - the design failed
@@ -7615,11 +7615,11 @@ She asked halfway through whether these were real suggestions, and was told agai
 <details>
 <summary>After your attempt</summary>
 
-the design worked — The honest answer was already given at the start and repeating it costs nothing. Her asking is a sign she was engaging with the content.
+the design worked — She noticed unprompted from the visible branch, which is what the basis line is for.
 
-the design failed — Nothing about the design is implicated.
+the design failed — The wrong output was caught before she booked it, and she found the right one herself.
 
-the session was contaminated — Telling the truth about the prototype is not contamination. Pretending it was live would have been.
+the session was contaminated — Nobody prompted her; she read the branch herself.
 
 Now classify your own observations, and let the failures rather than the successes choose your one design change.
 
@@ -9062,7 +9062,7 @@ Section: practice-plan. Stable action: step-3-sort-2.
 
 Six arguments against a made up proposal to add a chat assistant. For each one, decide how it will land.
 
-Chat interfaces are bad user experience.
+A chat box hides what members can ask for, which the filters show at a glance.
 
 - likely to persuade
 - true and unpersuasive
@@ -9071,11 +9071,11 @@ Chat interfaces are bad user experience.
 <details>
 <summary>After your attempt</summary>
 
-likely to persuade — It is an assertion about a category, and the person proposing it has seen chat interfaces they like.
+likely to persuade — A fair design point, but the person deciding weighs cost, support and who is served, and it names none of them.
 
-true and unpersuasive — It may well be true here and it sounds like taste. The comparison from the earlier lesson is the persuasive version.
+true and unpersuasive — True, and in design terms; the decision is made in cost, support and who it serves.
 
-will lose you the argument — It is not damaging, only ineffective.
+will lose you the argument — It is accurate and about this proposal, so it does no damage, only too little.
 
 Now write your own argument from the first group, and make sure an alternative is part of it.
 
