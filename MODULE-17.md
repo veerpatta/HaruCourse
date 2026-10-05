@@ -5757,7 +5757,7 @@ Product strategy connects a real problem, evidence, constraints and trade-offs t
 
 - **Positioning:** How a product is described relative to the alternatives people actually consider. This course has no verified free source for it and will not teach it from an unverified one.
 - **A gap that matters:** One where a real decision would change. A gap that changes nothing is worth noting and not worth closing this month.
-- **Retrievable:** You can actually open it, today, without paying or creating a vendor account. A page behind a sign-up is not retrievable for this purpose; a public-library loan is.
+- **Retrievable:** You can actually get it without paying or creating a vendor account, even if a library request takes a fortnight. A page behind a sign-up is not retrievable for this purpose; a public-library loan is.
 
 **Quick example.** From the case pack: the board wants to describe the library against the hardware shop’s hire counter and a sharing app; nobody has a verified source on positioning; the grant is reviewed each autumn. Changed constraint (organisation): this year’s grant form asks how the library differs from commercial hire.
 
@@ -5963,7 +5963,7 @@ The five checks written out, taken from this course’s own selection rules.
 
 **Enough:** All five are checks somebody else could apply the same way.
 
-**Retrievable:** You can actually open it, today, without paying or creating a vendor account. A page behind a sign-up is not retrievable for this purpose; a public-library loan is.
+**Retrievable:** You can actually get it without paying or creating a vendor account, even if a library request takes a fortnight. A page behind a sign-up is not retrievable for this purpose; a public-library loan is.
 
 **Scope-reviewed:** You can say what it covers and what it does not. A source whose limits you cannot write is one you cannot use responsibly.
 
@@ -6430,7 +6430,7 @@ What I am trying to do: Write what you would need to learn about market position
 Key idea or terms:
 Positioning: How a product is described relative to the alternatives people actually consider. This course has no verified free source for it and will not teach it from an unverified one.
 A gap that matters: One where a real decision would change. A gap that changes nothing is worth noting and not worth closing this month.
-Retrievable: You can actually open it, today, without paying or creating a vendor account. A page behind a sign-up is not retrievable for this purpose; a public-library loan is.
+Retrievable: You can actually get it without paying or creating a vendor account, even if a library request takes a fortnight. A page behind a sign-up is not retrievable for this purpose; a public-library loan is.
 
 Supplied practice material (fictional or labelled practice, not my research):
 From the case pack: the board wants to describe the library against the hardware shop’s hire counter and a sharing app; nobody has a verified source on positioning; the grant is reviewed each autumn. Changed constraint (organisation): this year’s grant form asks how the library differs from commercial hire.

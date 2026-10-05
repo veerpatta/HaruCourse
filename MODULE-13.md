@@ -7477,7 +7477,7 @@ Section: practice-plan. Stable action: step-3-sort-5.
 
 Seven statements from a made up tool-library system. For each one, decide whether the system can guarantee it.
 
-Each page built with the system conforms to WCAG 2.2 level AA.
+This booking page, built with the system and tested by its author, conforms to WCAG 2.2 level AA.
 
 - the system can guarantee it
 - the page author owns it
@@ -7490,7 +7490,7 @@ the system can guarantee it — Conformance is a property of a page, and a compo
 
 the page author owns it — Conformance is claimed for a page by whoever builds and tests it, and it rests on that tested page rather than on the components it uses. This is why the system claims no page-level conformance.
 
-nobody can guarantee it — A tested page can conform, and its author can claim that for it. What nobody can promise is that every future page will, which is the job of the boundary in step 5.
+nobody can guarantee it — Its author tested it and can claim it for this page; that is a claim about one tested page, not a promise about people.
 
 Now sort your own candidate guarantees the same way, and move anything in the second group into the responsibilities list.
 
@@ -8640,13 +8640,13 @@ Repair: Add a line at the top of each copy stating the version it reflects and w
 
 **A drift audit covers at least three components**
 
-Adequate evidence: Three components compared with differences recorded, measured where possible.
+Adequate evidence: Three components compared with differences recorded, measured where possible, or the two supplied components compared with a written note that the third is missing.
 
 0 — No audit.
 
 1 — Compared by eye without recording specifics.
 
-2 — Three compared with differences recorded.
+2 — Three compared with differences recorded, or the two supplied ones compared and the missing third noted in writing.
 
 3 — As adequate, and at least one drift was found that had already reached a screen.
 

@@ -741,7 +741,7 @@ export const module7: Lesson[] = [
       "The loop is: express a need, see a set, narrow it, open one, judge it, and either finish or go back. The back step is the one designed least often and used most: returning to results must restore the position, the filters and the scroll place, because a person who has to rebuild their search after every look stops comparing and settles for whatever they saw first — which is a design decision you did not intend to make.",
       "Give people a way to hold candidates. Comparing three classes across four attributes exceeds what anyone will keep in their head, and the assigned reading on recognition and recall explains why: recall is expensive, recognition is cheap. A shortlist, a compare view or even keeping the last-viewed items visible converts a memory task into a looking task, and it is often the single most useful thing you can add to a browse flow.",
       "Too many results and no results are the same failure of calibration and both need designed responses. Too many means the person cannot start; suggest the narrowing dimension that would help most, and show counts so they can see the effect before committing. None means they have over-narrowed or used words you do not have; say which filter is responsible where you can, offer removing it, and offer the route that does not depend on the same words.",
-      "The result item is where the whole design gets decided. It must contain exactly what people need to judge and no more — from your research, the price, the time, the place and whether there is space. Too little and everyone must open every result, which is the slowest possible loop; too much and the list becomes unscannable. This is where the m05 research pays off directly: you already know what people compared on, because you watched them.",
+      "The result item is where the whole design gets decided. It must contain exactly what people need to judge and no more — from your research, the price, the time, the place and whether there is space. Too little and everyone must open every result, which is the slowest possible loop; too much and the list becomes unscannable. This is where the m05 research pays off directly: your m05 notes show what people compared on; without an observation, name the message or walkthrough each field came from and mark the rest a guess.",
     ],
     misconception:
       "“Search solves browsing.” Search works for people who can name what they want. Many arrive able to describe only a situation — “something on a Saturday near me that my daughter would like” — and for them the browse structure, the filters and the result content are the entire product. Design both and let people move between them.",
@@ -792,7 +792,7 @@ export const module7: Lesson[] = [
       {
         question: "How do you decide what appears on a result item?",
         answer:
-          "From what people were observed comparing on. Anything not used in the comparison makes the list harder to scan; anything missing forces the person to open every result to judge it.",
+          "From what people compare on when choosing — an observation, a real message or a labelled walkthrough; anything else is marked a guess or cut. Anything not used in the comparison makes the list harder to scan; anything missing forces the person to open every result to judge it.",
       },
     ],
     rubric: [

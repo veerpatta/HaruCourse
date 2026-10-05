@@ -624,7 +624,7 @@ export const guided20: Record<string, Guided> = {
           beats: [
             { label: 'What I did', text: 'Went down twenty-one rows marking evidenced wherever I knew I could do the thing. Sixteen evidenced, four partial, one absent. A good-looking matrix.' },
             { label: 'What the file-name column did to it', text: 'Six of the sixteen had no file. I could do them; nothing in three project folders showed me doing them.' },
-            { label: 'The clearest one', text: 'Working with constraints. Genuinely true of all three projects, and it appears nowhere as an artefact, because constraints get worked around rather than written down.' },
+            { label: 'The clearest one', text: 'Working with constraints. Genuinely true of all three projects, and it appears as an artefact only once, in one decision record, because constraints get worked around rather than written down.' },
             { label: 'What that row became', text: 'Partial, with a note that the constraint appears in one decision record and nowhere else.' },
             { label: 'What the exercise was actually for', text: 'Not to grade me. To say which cells are empty, which is what readiness means. Everybody’s matrix has empty cells; most people cannot name theirs.' },
           ],
@@ -733,7 +733,7 @@ export const guided20: Record<string, Guided> = {
       {
         question: 'You can definitely work with constraints — all three projects had them. Does the row get marked evidenced?',
         options: [
-          { label: 'Only if you can name the file that shows it; otherwise it is partial, with that reason written.', correct: true, feedback: 'Constraints get worked around rather than written down, so the doing often leaves no trace. In one pass, six of sixteen evidenced marks lost their file; capability and evidence are different columns.', was: ['Only if you can name a file. Constraints get worked around rather than written down, so the doing often leaves no trace.'] },
+          { label: 'Only if files show it across the projects; one decision record alone makes it partial.', correct: true, feedback: 'Constraints get worked around rather than written down, so the doing often leaves no trace. One decision record shows it once, not across three projects, so the row is partial with that reason written; capability and evidence are different columns.', was: ['Only if you can name a file. Constraints get worked around rather than written down, so the doing often leaves no trace.', 'Only if you can name the file that shows it; otherwise it is partial, with that reason written.'] },
           { label: 'Evidenced, since it is true of every project and you could describe each constraint in detail.', feedback: 'True and unshowable is exactly what partial is for; describing it is a memory, not an artefact.', was: ['Yes, since it is true of every project.'] },
           { label: 'Evidenced, because an interviewer will ask you about it rather than open a file to check.', feedback: 'They will ask, and the answer is much stronger when a decision record sits behind it.', was: ['Yes, because an interviewer will ask about it rather than read a file.'] },
         ],
@@ -1775,7 +1775,7 @@ export const guided20: Record<string, Guided> = {
             { label: 'What I prepared', text: 'Good answers about how I handle disagreement, how I deal with failure and how I work with constraints. Thought through, honest, and true of me generally.' },
             { label: 'What the first follow-up was', text: 'Can you give me an example of that. The thing I had not prepared, asked immediately, on all three.' },
             { label: 'What came out', text: 'A half-remembered situation assembled while speaking. It survived one question and lost its detail on the second, which is exactly what a fabricated example does.' },
-            { label: 'What I prepared instead', text: 'Three occasions. A reviewer’s question about a job not updated for three days, which I had no answer to and which added a stale-information state. A wording repair that only half worked, reported as one of two. A recruitment attempt that produced nobody, and what I did instead.' },
+            { label: 'What I prepared instead', text: 'Three occasions. A reviewer’s question about a job not updated for three days, which found a stale-information state I had only planned, so I built it. A wording repair that only half worked, reported as one of two. Recruitment through the owner that reached nobody who had stopped using the shop, and what I did about it.' },
             { label: 'What happened in the practice', text: 'The interviewer went three questions deep on the half-worked repair and it held, because everything asked for was in the records.' },
           ],
           wrongTurn: 'The wrong turn is preparing your approach rather than occasions, because the questions are phrased generally and a general answer sounds responsive. The follow-up is always for an example, and one assembled under pressure collapses at the second question.',
@@ -1786,7 +1786,7 @@ export const guided20: Record<string, Guided> = {
           intro: 'Six made up answers to behavioural interview questions. For each one, decide what it is.',
           options: ['a real instance', 'a policy, not an instance', 'would collapse under follow-up'],
           items: [
-            { id: 'status-wording', text: '“A reviewer asked what the page shows when a job has not been updated for three days. I had no answer, so I added a stale-information state.”', answer: 'a real instance',
+            { id: 'status-wording', text: '“A reviewer asked what the page shows when a job has not been updated for three days. I had only a plan for that state, not a built one, so after the session I built it.”', answer: 'a real instance',
               feedback: {
                 'a real instance': 'One occasion, a specific question, and a change somebody can ask three questions about.',
                 'a policy, not an instance': 'It describes one occasion rather than a habit.',
@@ -1816,10 +1816,10 @@ export const guided20: Record<string, Guided> = {
                 'a policy, not an instance': 'Your own matrix probably says the screen-reader pass was skipped in two projects, which makes always a risky word.',
                 'would collapse under follow-up': 'It would, and the first problem is that it is not an example.',
               } },
-            { id: 'recruitment-failure', text: '“I tried to recruit people who had stopped using the shop and got nobody, so I said so in the limits and wrote what I would do differently.”', answer: 'a real instance',
+            { id: 'recruitment-failure', text: '“Recruiting through the owner reached nobody who had stopped using the shop, so I said so in the limits and wrote how I would reach them next time.”', answer: 'a real instance',
               feedback: {
                 'a real instance': 'A failure with no rescue in it, which is why it is believable and why it is worth preparing.',
-                'a policy, not an instance': 'It happened once, on a date.',
+                'a policy, not an instance': 'It describes what one study’s recruitment did and what followed, not a habit.',
                 'would collapse under follow-up': 'It survives because there is nothing in it to defend.',
               } },
             ],

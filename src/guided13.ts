@@ -1798,11 +1798,11 @@ export const guided13: Record<string, Guided> = {
                 'the page author owns it': 'The words come with the content. This is the clearest example of a shared responsibility landing on the author.',
                 'nobody can guarantee it': 'The author can, for their own page.',
               } },
-            { id: 'wcag-conformance', text: 'Each page built with the system conforms to WCAG 2.2 level AA.', answer: 'the page author owns it',
+            { id: 'wcag-conformance', text: 'This booking page, built with the system and tested by its author, conforms to WCAG 2.2 level AA.', answer: 'the page author owns it',
               feedback: {
                 'the system can guarantee it': 'Conformance is a property of a page, and a component set is not a page. The system can help; it cannot make the claim.',
                 'the page author owns it': 'Conformance is claimed for a page by whoever builds and tests it, and it rests on that tested page rather than on the components it uses. This is why the system claims no page-level conformance.',
-                'nobody can guarantee it': 'A tested page can conform, and its author can claim that for it. What nobody can promise is that every future page will, which is the job of the boundary in step 5.',
+                'nobody can guarantee it': 'Its author tested it and can claim it for this page; that is a claim about one tested page, not a promise about people.',
               } },
             { id: 'every-task', text: 'Every disabled person will complete every task with any assistive technology.', answer: 'nobody can guarantee it',
               feedback: {

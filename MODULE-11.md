@@ -2652,7 +2652,7 @@ Five pale text pairs from a made up tool-library screen, each below 4.5 to 1 at 
 The caption under the photograph, at 3.1 to 1, which says what the photograph shows.
 
 - darken the text
-- replace it with something permanent
+- put the information somewhere permanent
 - remove it
 
 <details>
@@ -2660,7 +2660,7 @@ The caption under the photograph, at 3.1 to 1, which says what the photograph sh
 
 darken the text — It carries meaning and it belongs where it is. Darkening it costs nothing but a value in the token sheet.
 
-replace it with something permanent — It is already permanent. Nothing about it appears and disappears.
+put the information somewhere permanent — It is already permanent. Nothing about it appears and disappears.
 
 remove it — It says what the photograph shows, so removing it takes information away from exactly the people who need it most.
 
@@ -2678,7 +2678,7 @@ Five pale text pairs from a made up tool-library screen, each below 4.5 to 1 at 
 Placeholder text inside the search box, at 2.8 to 1, which is the only thing telling anyone what to search for.
 
 - darken the text
-- replace it with something permanent
+- put the information somewhere permanent
 - remove it
 
 <details>
@@ -2686,7 +2686,7 @@ Placeholder text inside the search box, at 2.8 to 1, which is the only thing tel
 
 darken the text — Darkening it makes it look like a value that is already typed, which is the other problem placeholders have. It disappears the moment anybody types, whatever its ratio is.
 
-replace it with something permanent — A label above the field, or a hint line under it, says the same thing and stays on screen while the person types. The contrast failure and the disappearing act are fixed by the same change.
+put the information somewhere permanent — A label above the field, or a hint line under it, says the same thing and stays on screen while the person types. The contrast failure and the disappearing act are fixed by the same change.
 
 remove it — Removing it takes away the only instruction. The instruction needs to move, not to go.
 
@@ -2704,7 +2704,7 @@ Five pale text pairs from a made up tool-library screen, each below 4.5 to 1 at 
 A pale word DRAFT across the middle of the page, at 1.4 to 1, left over from an earlier version.
 
 - darken the text
-- replace it with something permanent
+- put the information somewhere permanent
 - remove it
 
 <details>
@@ -2712,7 +2712,7 @@ A pale word DRAFT across the middle of the page, at 1.4 to 1, left over from an 
 
 darken the text — Darkening it makes a decorative leftover more prominent than the content, which is the opposite of what anyone wants.
 
-replace it with something permanent — There is nothing to replace it with. It is not telling a reader anything they need.
+put the information somewhere permanent — There is nothing to replace it with. It is not telling a reader anything they need.
 
 remove it — It tells a reader nothing true. Pure decoration has no contrast requirement, so this is clutter rather than a contrast failure, and taking it out is still the right repair.
 
@@ -2730,15 +2730,15 @@ Five pale text pairs from a made up tool-library screen, each below 4.5 to 1 at 
 The label on a Reserve button that cannot be pressed because the drill is out on loan, at 2.4 to 1. Nothing else on the card says it is out on loan.
 
 - darken the text
-- replace it with something permanent
+- put the information somewhere permanent
 - remove it
 
 <details>
 <summary>After your attempt</summary>
 
-darken the text — Allowed, and not required: the contrast criterion sets no requirement for text inside an inactive control. Darkening it can make the button look pressable, and it still does not say why it is unavailable.
+darken the text — Not needed: the contrast criterion sets no requirement for text inside an inactive control. Darkening it can make the button look pressable, and it still does not say why it is unavailable.
 
-replace it with something permanent — The pale label is exempt from the ratio, so it is not the failure. The missing reason is: a readable line such as On loan until Friday says what the button cannot. That line is information, so it must meet 4.5 to 1.
+put the information somewhere permanent — The pale label is exempt from the ratio, so it is not the failure. The missing reason is: a readable line such as On loan until Friday says what the button cannot. That line is information, so it must meet 4.5 to 1.
 
 remove it — Removing the button removes the only hint that borrowing happens here. The state needs explaining in readable text, not hiding.
 
@@ -2756,7 +2756,7 @@ Five pale text pairs from a made up tool-library screen, each below 4.5 to 1 at 
 Helper text under the date field, at 3.4 to 1, repeating the label in different words.
 
 - darken the text
-- replace it with something permanent
+- put the information somewhere permanent
 - remove it
 
 <details>
@@ -2764,7 +2764,7 @@ Helper text under the date field, at 3.4 to 1, repeating the label in different 
 
 darken the text — Darkening it keeps a line that says nothing new and adds another thing to read.
 
-replace it with something permanent — It is already permanent, and the trouble is that it duplicates the label rather than adding to it.
+put the information somewhere permanent — It is already permanent, and the trouble is that it duplicates the label rather than adding to it.
 
 remove it — Text that repeats the label is decorative in practice. Removing it fixes the ratio and shortens the form.
 
@@ -8486,7 +8486,7 @@ The class list is sorted alphabetically by a rule that assumes Latin letters.
 <details>
 <summary>After your attempt</summary>
 
-a design decision made now — Nothing about the layout causes it, and you cannot fix the sorting rule from a design file.
+a design decision made now — Nothing in your design causes it, and you cannot fix the sorting rule from a design file.
 
 a translation job for later — Sorting is language-dependent and genuinely belongs with real language support. Recording it as a known limitation now is the right move.
 

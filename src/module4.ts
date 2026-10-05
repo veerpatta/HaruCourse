@@ -350,7 +350,7 @@ export const module4: Lesson[] = [
         purpose: "Supplies the chunking vocabulary the memory article omits.",
         minutes: "10–15 selected",
         limits:
-          "Free reading, no account. Verified 2026-09-06. The site states these as laws without caveats; the limitation is taught here, not there.",
+          "Free reading, no account. Verified 2026-09-06; cautions rechecked 2026-10-05. The millers-law page itself warns against using the “magical number seven” to justify design limitations and says short-term memory varies by person; the cognitive-load page states no limits, so its limitation is taught here. Never use seven as a design target.",
         fallbackId: "R02",
       },
     ],

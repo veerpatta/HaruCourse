@@ -1064,7 +1064,7 @@ export const guided10: Record<string, Guided> = {
       ] },
       { id: 'record', title: 'Written down plainly', fields: [
         { id: 'outcome-sentence', sensitive: true, label: 'The outcome in one sentence, with the counts in it', kind: 'short',
-          example: 'Example (made up): one of two new people paid without asking; the other asked anyway and said the new line looked like an advertisement.' },
+          example: 'Example (made up): one of two new people bought a ticket without asking; the other asked anyway and said the new line looked like an advertisement.' },
         { id: 'new-problems', label: 'Any new problem the change introduced', kind: 'long' },
         { id: 'reranked-list', label: 'The remaining problems, re-ranked after this result', kind: 'long' },
         { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
@@ -1080,11 +1080,11 @@ export const guided10: Record<string, Guided> = {
         demo: {
           scenario: 'Made-up example. Writing the prediction after the re-test, and finding out it was worth nothing.',
           beats: [
-            { label: 'The repair', text: 'The top problem was not knowing whether a place was held. One change: a line on the review screen reading “Your place is held for 10 minutes”, with the time remaining.' },
+            { label: 'The repair', text: 'On a museum ticket page, the top problem was not knowing whether a ticket included the special exhibition. One change: a line under the price reading “Includes the special exhibition”.' },
             { label: 'What I did first', text: 'I re-tested with two new people, then wrote down what I had expected. It took two minutes and felt like the same exercise.' },
             { label: 'Why it was not the same', text: 'What I wrote matched what happened. Of course it did. I had just watched it happen, and there was no version of that evening where my note came out wrong.' },
-            { label: 'The second time', text: 'Before the next re-test I wrote it down: neither new person asks whether the place is secured, and neither hesitates before paying. Then I wrote what would count as failing.' },
-            { label: 'What happened', text: 'One did not ask and paid straight away. The other asked anyway, and said the new line looked like an advertisement so she had skimmed past it. Half the prediction held.' },
+            { label: 'The second time', text: 'Before the next re-test I wrote it down: neither new person asks whether the exhibition is included, and neither opens the exhibition page to check before buying. Then I wrote what would count as failing.' },
+            { label: 'What happened', text: 'One did not ask and bought straight away. The other asked anyway, and said the new line looked like an advertisement so she had skimmed past it. Half the prediction held.' },
             { label: 'What I reported', text: 'A partial result, plus a new problem about how the line looks rather than what it says. The repair was not called validated, because it had not been.' },
           ],
           wrongTurn: 'The wrong turn is writing the prediction afterwards. It always fits, because you write it around what you saw, so it can never fail and never teaches you anything.',
@@ -1320,7 +1320,7 @@ export const guided10: Record<string, Guided> = {
         { id: 'if-stuck', label: 'What you tell them to do if something does not work', kind: 'short' },
         { id: 'consent-line', label: 'The opening lines the person reads before the scenario: who you are, that this is for a course, that they must be 18 or over, that taking part is voluntary, what you collect, and when answers are deleted', kind: 'long', hint: 'Collect only the outcome and an optional comment, with no names or contact details. Say when you will delete the answers, and that they can stop at any point without giving a reason.' },
       ] },
-      { id: 'aloud', title: 'Read it aloud to one person', fields: [
+      { id: 'aloud', title: 'Read it aloud: to one person, or as a labelled solo check', fields: [
         { id: 'hesitations', sensitive: true, label: 'Where the reader paused, re-read, or described doing something you did not intend', kind: 'long' },
         { id: 'rewrites', label: 'What you changed, with the old wording beside the new', kind: 'long' },
       ] },

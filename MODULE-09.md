@@ -4035,21 +4035,21 @@ A supplied made-up result. Your table says escape closes the filter panel and re
 
 What do you write down?
 
-- Leave both rows blank until something of your own exists.
-- Mark both rows passed, because that behaviour is what you designed.
+- What that product did, marked not my build, with my own rows left untested.
 - Change the table so escape is optional, since a real product manages without it.
-- What it did, labelled “comparable product, not my build”, and my own rows left untested.
+- Leave both rows blank until something of your own exists to test them on.
+- Mark both rows passed, because that behaviour is exactly what you designed.
 
 <details>
 <summary>After your attempt</summary>
 
-Leave both rows blank until something of your own exists. — A blank row cannot be told apart from a row nobody thought about. Untested is a real result; empty is not.
-
-Mark both rows passed, because that behaviour is what you designed. — Designing something does not make it happen. Marking untried rows as passed is the one thing a key table must never do.
+What that product did, marked not my build, with my own rows left untested. — The table is your specification and the product you tried is rehearsal. Recording what it did, without passing it off as your build, tells you which risks your build must avoid.
 
 Change the table so escape is optional, since a real product manages without it. — One product doing without something is not a reason for your specification to ask for less. That is how a table stops being a specification and becomes a description.
 
-What it did, labelled “comparable product, not my build”, and my own rows left untested. — The table is your specification and the product you tried is rehearsal. Recording what it did, without passing it off as your build, tells you which risks your build must avoid.
+Leave both rows blank until something of your own exists to test them on. — A blank row cannot be told apart from a row nobody thought about. Untested is a real result; empty is not.
+
+Mark both rows passed, because that behaviour is exactly what you designed. — Designing something does not make it happen. Marking untried rows as passed is the one thing a key table must never do.
 
 Go through your own rows and mark each one with what happened in your own build, or with the word untested. Put anything a comparable product showed beside it, labelled as rehearsal. Leave no row empty.
 

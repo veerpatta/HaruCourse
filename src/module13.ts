@@ -2156,11 +2156,11 @@ export const module13: Lesson[] = [
       {
         criterion: "A drift audit covers at least three components",
         evidence:
-          "Three components compared with differences recorded, measured where possible.",
+          "Three components compared with differences recorded, measured where possible, or the two supplied components compared with a written note that the third is missing.",
         levels: [
           "No audit.",
           "Compared by eye without recording specifics.",
-          "Three compared with differences recorded.",
+          "Three compared with differences recorded, or the two supplied ones compared and the missing third noted in writing.",
           "As adequate, and at least one drift was found that had already reached a screen.",
         ],
         remediation:

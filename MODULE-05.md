@@ -3505,8 +3505,6 @@ Your first version stays in step 1. Write the questions only, never what anyone 
 
 **Answer:** The revised guide, with a reason beside each change and each question kept unchanged
 
-Optional: may be left empty.
-
 Your first version stays in step 1. Write the questions only, never what anyone answered.
 
 
@@ -4637,13 +4635,11 @@ Write your answer for “Your rule for late or reconstructed entries”. Use the
 
 Section: practice-plan. Stable action: write-closing-plan.
 
-A question shape, not a question: “on Tuesday you wrote …, what was happening?”. Write the real questions only after reading real entries; on the gap route there are none.
+A question shape, not a question: “on Tuesday you wrote …, what was happening?”. On the gap route, write the plan and one question shape; the real questions wait for real entries.
 
 **Answer:** How you will read the entries first and build the closing conversation from them, with one example question shape
 
-Optional: may be left empty.
-
-A question shape, not a question: “on Tuesday you wrote …, what was happening?”. Write the real questions only after reading real entries; on the gap route there are none.
+A question shape, not a question: “on Tuesday you wrote …, what was happening?”. On the gap route, write the plan and one question shape; the real questions wait for real entries.
 
 
 ### Check your reasoning · 1 of 3
@@ -4912,7 +4908,7 @@ Repair: Write the four rules as sentences you could send to the participant. Any
 
 **The closing conversation is planned from the entries**
 
-Adequate evidence: A plan to read the entries first and build questions from them, with an example of the kind of question that would follow.
+Adequate evidence: A written plan to read the entries first and build questions from them, with one example question shape — written on every route, including the dated-gap default, where the real questions wait for real entries.
 
 0 — No closing conversation planned.
 

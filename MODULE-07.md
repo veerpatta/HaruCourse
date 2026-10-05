@@ -3050,7 +3050,7 @@ Too many results and no results are the same failure of calibration and both nee
 
 Section: learn. Stable action: learn-4.
 
-The result item is where the whole design gets decided. It must contain exactly what people need to judge and no more — from your research, the price, the time, the place and whether there is space. Too little and everyone must open every result, which is the slowest possible loop; too much and the list becomes unscannable. This is where the m05 research pays off directly: you already know what people compared on, because you watched them.
+The result item is where the whole design gets decided. It must contain exactly what people need to judge and no more — from your research, the price, the time, the place and whether there is space. Too little and everyone must open every result, which is the slowest possible loop; too much and the list becomes unscannable. This is where the m05 research pays off directly: your m05 notes show what people compared on; without an observation, name the message or walkthrough each field came from and mark the rest a guess.
 
 
 ### See the idea in a supplied example

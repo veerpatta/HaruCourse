@@ -1464,7 +1464,7 @@ export const guided17: Record<string, Guided> = {
       { expect: 'The five checks written out, taken from this course’s own selection rules.',
         fields: ['five-checks'],
         terms: [
-          { term: 'Retrievable', meaning: 'You can actually open it, today, without paying or creating a vendor account. A page behind a sign-up is not retrievable for this purpose; a public-library loan is.' },
+          { term: 'Retrievable', meaning: 'You can actually get it without paying or creating a vendor account, even if a library request takes a fortnight. A page behind a sign-up is not retrievable for this purpose; a public-library loan is.' },
           { term: 'Scope-reviewed', meaning: 'You can say what it covers and what it does not. A source whose limits you cannot write is one you cannot use responsibly.' },
         ],
         start: 'Copy the rules out rather than paraphrasing them.',

@@ -1177,7 +1177,7 @@ When the activity is finished, tell me to return to the course answer called “
 - Showing everything can create clutter. Decide which detail is needed at this step.
 
 - R33: [NN/g: recognition and recall](https://www.nngroup.com/articles/recognition-and-recall/) — The whole article: recognition versus recall, activation, and the interface implications. Purpose: Explains why cues make a task easier and where interfaces habitually demand production instead. Free reading, no account. Verified 2026-09-06. It does not cover Miller's 7±2; use the R31 millers-law page if you need that framing, and treat it as a heuristic. Fallback: R31.
-- R31: [Laws of UX](https://lawsofux.com/) — The millers-law and cognitive-load pages only. Purpose: Supplies the chunking vocabulary the memory article omits. Free reading, no account. Verified 2026-09-06. The site states these as laws without caveats; the limitation is taught here, not there. Fallback: R02.
+- R31: [Laws of UX](https://lawsofux.com/) — The millers-law and cognitive-load pages only. Purpose: Supplies the chunking vocabulary the memory article omits. Free reading, no account. Verified 2026-09-06; cautions rechecked 2026-10-05. The millers-law page itself warns against using the “magical number seven” to justify design limitations and says short-term memory varies by person; the cognitive-load page states no limits, so its limitation is taught here. Never use seven as a design target. Fallback: R02.
 
 </details>
 <details>

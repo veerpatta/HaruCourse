@@ -631,7 +631,7 @@ export const guided05: Record<string, Guided> = {
         { id: 'worked', label: 'The three questions that worked', kind: 'long' },
         { id: 'failed', label: 'The one that failed, and why', kind: 'long' },
         { id: 'wish-asked', label: 'What you wish you had asked', kind: 'short', hint: 'The topic or question, with no details about the person. For rehearsal, what reading the guide aloud showed was missing.' },
-        { id: 'revised-guide', label: 'The revised guide, with a reason beside each change and each question kept unchanged', kind: 'long', optional: true, hint: 'Your first version stays in step 1. Write the questions only, never what anyone answered.' },
+        { id: 'revised-guide', label: 'The revised guide, with a reason beside each change and each question kept unchanged', kind: 'long', hint: 'Your first version stays in step 1. Write the questions only, never what anyone answered.' },
         { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
       ] },
     ],
@@ -865,7 +865,7 @@ export const guided05: Record<string, Guided> = {
         { id: 'minimum-data', label: 'Your minimum acceptable data', kind: 'short' },
         { id: 'silence-response', label: 'What you do after two days of silence, and if they withdraw mid-week (including deleting their entries)', kind: 'short', hint: 'One reminder, then stop. Chasing is pressure. Withdrawal means their entries are deleted, not set aside.' },
         { id: 'late-entries', label: 'Your rule for late or reconstructed entries', kind: 'short' },
-        { id: 'closing-plan', label: 'How you will read the entries first and build the closing conversation from them, with one example question shape', kind: 'long', optional: true, hint: 'A question shape, not a question: “on Tuesday you wrote …, what was happening?”. Write the real questions only after reading real entries; on the gap route there are none.' },
+        { id: 'closing-plan', label: 'How you will read the entries first and build the closing conversation from them, with one example question shape', kind: 'long', hint: 'A question shape, not a question: “on Tuesday you wrote …, what was happening?”. On the gap route, write the plan and one question shape; the real questions wait for real entries.' },
       ] },
       { id: 'run', title: 'Run it, or record the gap', fields: [
         { id: 'run-status', label: 'What happened', kind: 'choice', options: ['A participant consented and day one has been sent', 'No participant: protocol submitted with a dated gap'], hint: 'The protocol with a dated gap is the default and a complete answer. Choose the first option only if a real adult agreed under your Lesson 5 consent and data plan.' },

@@ -1774,7 +1774,7 @@ export const module15: Lesson[] = [
           "As adequate, and a misreading is traced to a specific presentation choice.",
         ],
         remediation:
-          "Ask someone what they took from it a day later, and fix whatever they got wrong.",
+          "Ask someone what they took from it a day later, or run the labelled solo check, and fix whatever was misread.",
         recheck: "The takeaway record.",
       },
     ],
@@ -1841,7 +1841,7 @@ export const module15: Lesson[] = [
     misconception:
       "“We should be data-driven.” Data-informed decisions are good; waiting for data on decisions that are cheap to reverse is expensive theatre, and it usually means the current problem continues while everyone feels rigorous.",
     example:
-      "Made-up example: two decisions were made without measurement. First: the wording of the held-place message. Cheap to change, cheap to reverse, no traffic to test it with — the decision was to write the clearest version, ship it, and ask three people the following week. Second: which of two passing button shades to use — decided now, and revisited only if anybody reports a problem. A contrasting decision was kept for measurement: whether to shorten the booking form by removing a field. This affects data the provider relies on, so removal is not cheaply reversible; the decision was to ask the provider what the field is used for before touching it. One measurement was refused outright: a proposal to test which cancellation flow produced fewer cancellations, with nothing measured about whether people who meant to cancel managed to, which would have been a test of how well the flow obstructs people.",
+      "Made-up example: two decisions were made without measurement. First: the wording of the held-place message. Cheap to change, cheap to reverse, no traffic to test it with — the decision was to write the clearest version, ship it, and ask three people the following week. Second: which of two passing button shades to use — decided now; the same three conversations next week include one question about whether the button was easy to find. A contrasting decision was kept for measurement: whether to shorten the booking form by removing a field. This affects data the provider relies on, so removal is not cheaply reversible; the decision was to ask the provider what the field is used for before touching it. One measurement was refused outright: a proposal to test which cancellation flow produced fewer cancellations, with nothing measured about whether people who meant to cancel managed to, which would have been a test of how well the flow obstructs people.",
     freeToolPath:
       "Written reasoning. This lesson is judgement, not tooling.",
     outputs: [

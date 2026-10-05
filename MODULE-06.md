@@ -1128,22 +1128,24 @@ Your vocabulary conflicts, each with an interpretation and a sentence naming wha
 
 Section: practice-plan. Stable action: write-conflict-1.
 
-Two words for one thing often means two audiences, and sometimes it means the thing is two things. Refer to people by label, such as P2 and P4.
+Two words for one thing often means two audiences, and sometimes it means the thing is two things. Refer to people by label, such as P2 and P4. No participant words? Write “no conflict: no participant vocabulary” and leave Conflict 2 empty.
 
 **Answer:** Conflict 1 · the two words, who used each, what you think the disagreement means, and what would settle it
 
-Two words for one thing often means two audiences, and sometimes it means the thing is two things. Refer to people by label, such as P2 and P4.
+Two words for one thing often means two audiences, and sometimes it means the thing is two things. Refer to people by label, such as P2 and P4. No participant words? Write “no conflict: no participant vocabulary” and leave Conflict 2 empty.
 
 
 ### Conflict 2 · the two words, who used each, what it means, and what would settle it
 
 Section: practice-plan. Stable action: write-conflict-2.
 
-Write your answer for “Conflict 2 · the two words, who used each, what it means, and what would settle it”. Use the task instructions below to decide what to include.
+Only if your notes hold a second conflict. Never invent one to fill the box.
 
 **Answer:** Conflict 2 · the two words, who used each, what it means, and what would settle it
 
+Optional: may be left empty.
 
+Only if your notes hold a second conflict. Never invent one to fill the box.
 
 
 ### Any conflict you are leaving unsettled, and why nothing you have distinguishes the two groups

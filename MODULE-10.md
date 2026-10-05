@@ -3821,7 +3821,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Eleven observations became six problems. Two of three participants could not tell whether their place was held before payment — ranked first, because one of them said she would have paid again: a stated risk of losing money, not an observed loss. Three of three hesitated at the same word on the review screen; grouped as one labelling problem, ranked second. One participant's confusion about the shortlist was left unexplained and moved to open questions rather than guessed at. Two task completions were marked assisted, which changed the picture: the unassisted completion rate on the cancellation task was zero of three.
+- Eleven observations became six problems. Two of three participants could not tell whether their place was held before payment — ranked first, because one of them said she would have paid again: a stated risk of losing money, not an observed loss. All three paused or re-read at the review screen, two of them at the word Reserve; grouped as one labelling problem, ranked second. One participant's confusion about the shortlist was left unexplained and moved to open questions rather than guessed at. On the cancellation task one completion was marked assisted and one reached the goal only through Help, a workaround, which changed the picture: nobody finished cancelling by the designed route without help — one assisted, one gave up, one used a workaround.
 
 
 ### Choose where you will do the work
@@ -5254,7 +5254,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The top problem was uncertainty about whether a place was held before payment. One change: the review screen gained a line stating “Your place is held for 10 minutes” with the time remaining. The prediction, written first: neither new participant should ask whether the place is secured, and neither should hesitate before paying. Re-tested with two new people — one did not ask and paid without hesitation; the other asked anyway, and said the line looked like an advertisement. The report recorded a partial result, with the second finding as a new problem about visual weight rather than wording, and the repair was not claimed as validated.
+- Made-up example from a museum ticket page. The top problem was uncertainty about whether a ticket included the special exhibition. One change: a line under the price reading “Includes the special exhibition”. The prediction, written first: neither new participant should ask whether the exhibition is included, and neither should open the exhibition page to check before buying. Re-tested with two new people — one did not ask and bought without hesitation; the other asked anyway, and said the line looked like an advertisement. The report recorded a partial result, with the second finding as a new problem about visual weight rather than wording, and the repair was not claimed as validated.
 
 
 ### Choose where you will do the work
@@ -5304,15 +5304,15 @@ Section: practice-plan. Stable action: step-1-demo.
 
 Made-up example. Writing the prediction after the re-test, and finding out it was worth nothing.
 
-**The repair:** The top problem was not knowing whether a place was held. One change: a line on the review screen reading “Your place is held for 10 minutes”, with the time remaining.
+**The repair:** On a museum ticket page, the top problem was not knowing whether a ticket included the special exhibition. One change: a line under the price reading “Includes the special exhibition”.
 
 **What I did first:** I re-tested with two new people, then wrote down what I had expected. It took two minutes and felt like the same exercise.
 
 **Why it was not the same:** What I wrote matched what happened. Of course it did. I had just watched it happen, and there was no version of that evening where my note came out wrong.
 
-**The second time:** Before the next re-test I wrote it down: neither new person asks whether the place is secured, and neither hesitates before paying. Then I wrote what would count as failing.
+**The second time:** Before the next re-test I wrote it down: neither new person asks whether the exhibition is included, and neither opens the exhibition page to check before buying. Then I wrote what would count as failing.
 
-**What happened:** One did not ask and paid straight away. The other asked anyway, and said the new line looked like an advertisement so she had skimmed past it. Half the prediction held.
+**What happened:** One did not ask and bought straight away. The other asked anyway, and said the new line looked like an advertisement so she had skimmed past it. Half the prediction held.
 
 **What I reported:** A partial result, plus a new problem about how the line looks rather than what it says. The repair was not called validated, because it had not been.
 
@@ -5694,7 +5694,7 @@ Write your answer for “The outcome in one sentence, with the counts in it”. 
 <details>
 <summary>Example</summary>
 
-Example (made up): one of two new people paid without asking; the other asked anyway and said the new line looked like an advertisement.
+Example (made up): one of two new people bought a ticket without asking; the other asked anyway and said the new line looked like an advertisement.
 
 </details>
 

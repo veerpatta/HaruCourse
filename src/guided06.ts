@@ -161,8 +161,8 @@ export const guided06: Record<string, Guided> = {
         { id: 'guess-count', label: 'How many of your fifteen rows are guesses', kind: 'short', hint: 'A high number is not a failure. An unmarked guess is.' },
       ] },
       { id: 'conflicts', title: 'Where participants disagreed', fields: [
-        { id: 'conflict-1', label: 'Conflict 1 · the two words, who used each, what you think the disagreement means, and what would settle it', kind: 'long', sensitive: true, hint: 'Two words for one thing often means two audiences, and sometimes it means the thing is two things. Refer to people by label, such as P2 and P4.' },
-        { id: 'conflict-2', label: 'Conflict 2 · the two words, who used each, what it means, and what would settle it', kind: 'long', sensitive: true },
+        { id: 'conflict-1', label: 'Conflict 1 · the two words, who used each, what you think the disagreement means, and what would settle it', kind: 'long', sensitive: true, hint: 'Two words for one thing often means two audiences, and sometimes it means the thing is two things. Refer to people by label, such as P2 and P4. No participant words? Write “no conflict: no participant vocabulary” and leave Conflict 2 empty.' },
+        { id: 'conflict-2', label: 'Conflict 2 · the two words, who used each, what it means, and what would settle it', kind: 'long', sensitive: true, optional: true, hint: 'Only if your notes hold a second conflict. Never invent one to fill the box.' },
         { id: 'unsettled', label: 'Any conflict you are leaving unsettled, and why nothing you have distinguishes the two groups', kind: 'short', sensitive: true },
       ] },
       { id: 'cold', title: 'Save', fields: [

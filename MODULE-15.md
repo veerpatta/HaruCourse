@@ -1105,7 +1105,7 @@ Section: practice-plan. Stable action: step-3-sort-3.
 
 Six things somebody said about the same made up drop in a synthetic funnel. For each one, decide what it is.
 
-Some people may be checking with somebody else and coming back tomorrow.
+Some members may book by phone and never open the site at all.
 
 - an explanation the data allows
 - a conclusion the data cannot support
@@ -1114,11 +1114,11 @@ Some people may be checking with somebody else and coming back tomorrow.
 <details>
 <summary>After your attempt</summary>
 
-an explanation the data allows — It fits the numbers, and this funnel counts sessions rather than people, so a return would be counted as a new visitor and this explanation is invisible to it.
+an explanation the data allows — It cannot explain this drop: somebody who never opens the site never enters the funnel, so they are not among the people lost at this step.
 
-a conclusion the data cannot support — It is offered as a possibility rather than a conclusion.
+a conclusion the data cannot support — It is offered as a possibility rather than a conclusion, and it is about people outside the funnel altogether.
 
-something the funnel cannot see at all — Without a returning-visitor view, somebody coming back is indistinguishable from somebody leaving for ever.
+something the funnel cannot see at all — A funnel counts only people who reach its first step. Bookings that never touch the site are invisible to it, however many there are.
 
 Now write your own three explanations, and check none of them is really a conclusion or a claim about something the funnel cannot see.
 
@@ -6421,7 +6421,7 @@ The analysis presented to somebody, or rehearsed and labelled, with what they as
 
 **Start here:** Present it without apologising for the sample size; the slide already says it.
 
-**Enough:** Their questions are written down in their own words.
+**Enough:** Each question they asked is written down, summarised closely — or, on the solo check, the questions each chart left you unable to answer.
 
 **Rehearsal:** Presenting to somebody who is not going to decide anything. It tests the presentation and it is labelled as a rehearsal.
 
@@ -6700,14 +6700,14 @@ Answers to revisit: chart-built, on-the-chart, no-denominator, improvement-made
 
 Section: practice. Stable action: step-5-brief.
 
-What the audience remembered afterwards, and anything remembered more confidently than the evidence supports.
+What the audience remembered afterwards, or what you wrote on the labelled solo check, and anything remembered more confidently than the evidence supports.
 
 - Ask afterwards what they took away.
 - Record any misreading and fix the material rather than explaining again.
 
-**Start here:** Ask a day later what they took from it, and write their words rather than a summary.
+**Start here:** Ask a day later what they took from it, and record the gist closely with a short phrase they used. Solo check: after two days, ten seconds per chart, then write what each says.
 
-**Enough:** You recorded what they said, including the parts that overstated your evidence.
+**Enough:** You recorded what they said, or what you wrote on the labelled solo check, including the parts that overstated your evidence.
 
 **What is remembered:** What will be repeated. It is the only measure of whether the presentation worked, and it is usually two things.
 
@@ -6881,7 +6881,7 @@ Adequate evidence: A record of what they took away, or of a labelled solo check,
 
 3 — As adequate, and a misreading is traced to a specific presentation choice.
 
-Repair: Ask someone what they took from it a day later, and fix whatever they got wrong. Recheck: The takeaway record.
+Repair: Ask someone what they took from it a day later, or run the labelled solo check, and fix whatever was misread. Recheck: The takeaway record.
 
 </details>
 The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
@@ -6984,7 +6984,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Made-up example: two decisions were made without measurement. First: the wording of the held-place message. Cheap to change, cheap to reverse, no traffic to test it with — the decision was to write the clearest version, ship it, and ask three people the following week. Second: which of two passing button shades to use — decided now, and revisited only if anybody reports a problem. A contrasting decision was kept for measurement: whether to shorten the booking form by removing a field. This affects data the provider relies on, so removal is not cheaply reversible; the decision was to ask the provider what the field is used for before touching it. One measurement was refused outright: a proposal to test which cancellation flow produced fewer cancellations, with nothing measured about whether people who meant to cancel managed to, which would have been a test of how well the flow obstructs people.
+- Made-up example: two decisions were made without measurement. First: the wording of the held-place message. Cheap to change, cheap to reverse, no traffic to test it with — the decision was to write the clearest version, ship it, and ask three people the following week. Second: which of two passing button shades to use — decided now; the same three conversations next week include one question about whether the button was easy to find. A contrasting decision was kept for measurement: whether to shorten the booking form by removing a field. This affects data the provider relies on, so removal is not cheaply reversible; the decision was to ask the provider what the field is used for before touching it. One measurement was refused outright: a proposal to test which cancellation flow produced fewer cancellations, with nothing measured about whether people who meant to cancel managed to, which would have been a test of how well the flow obstructs people.
 
 
 ### Choose where you will do the work

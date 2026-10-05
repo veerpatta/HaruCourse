@@ -6612,7 +6612,7 @@ Three changes made one at a time, starting with the largest design-owned cost, e
 
 Section: practice-plan. Stable action: step-2-sort-1.
 
-Six candidate changes to a made up tool-library page whose baseline is 2.4 megabytes and eleven seconds to usable. For each one, decide what it would actually buy.
+Six candidate changes to a different made up tool-library page, not the Northside baseline, though it is also 2.4 megabytes and eleven seconds to usable. For each one, decide what it would actually buy.
 
 Re-export the 1.8 megabyte header photograph at its display width. On the slow profile it takes about nine seconds to arrive.
 
@@ -6632,7 +6632,7 @@ changes nothing measurable — It is three quarters of the page.
 
 improves a number but delays the task — Nothing the person needs arrives later; the search script arrives sooner.
 
-Now sort your own candidate changes the same way, and take your three from the first group.
+Now sort your own candidate changes the same way (on the supplied route, the items in the Northside request list), and take your three from the first group.
 
 </details>
 
@@ -6641,7 +6641,7 @@ Now sort your own candidate changes the same way, and take your three from the f
 
 Section: practice-plan. Stable action: step-2-sort-2.
 
-Six candidate changes to a made up tool-library page whose baseline is 2.4 megabytes and eleven seconds to usable. For each one, decide what it would actually buy.
+Six candidate changes to a different made up tool-library page, not the Northside baseline, though it is also 2.4 megabytes and eleven seconds to usable. For each one, decide what it would actually buy.
 
 Compress four photographs in the footer, saving 300 kilobytes.
 
@@ -6661,7 +6661,7 @@ changes nothing measurable — The total weight figure moves by 300 kilobytes.
 
 improves a number but delays the task — Nothing is delayed by it. It is a smaller total and no change to the wait.
 
-Now sort your own candidate changes the same way, and take your three from the first group.
+Now sort your own candidate changes the same way (on the supplied route, the items in the Northside request list), and take your three from the first group.
 
 </details>
 
@@ -6670,7 +6670,7 @@ Now sort your own candidate changes the same way, and take your three from the f
 
 Section: practice-plan. Stable action: step-2-sort-3.
 
-Six candidate changes to a made up tool-library page whose baseline is 2.4 megabytes and eleven seconds to usable. For each one, decide what it would actually buy.
+Six candidate changes to a different made up tool-library page, not the Northside baseline, though it is also 2.4 megabytes and eleven seconds to usable. For each one, decide what it would actually buy.
 
 Remove the third typeface, used once for the quotation at the top of the first screen, which stays invisible until the file arrives.
 
@@ -6690,7 +6690,7 @@ changes nothing measurable — Both the weight and the moment the quotation appe
 
 improves a number but delays the task — Nothing the person needs is pushed later; the quotation appears sooner.
 
-Now sort your own candidate changes the same way, and take your three from the first group.
+Now sort your own candidate changes the same way (on the supplied route, the items in the Northside request list), and take your three from the first group.
 
 </details>
 
@@ -6699,7 +6699,7 @@ Now sort your own candidate changes the same way, and take your three from the f
 
 Section: practice-plan. Stable action: step-2-sort-4.
 
-Six candidate changes to a made up tool-library page whose baseline is 2.4 megabytes and eleven seconds to usable. For each one, decide what it would actually buy.
+Six candidate changes to a different made up tool-library page, not the Northside baseline, though it is also 2.4 megabytes and eleven seconds to usable. For each one, decide what it would actually buy.
 
 Strip the spaces and line breaks out of the HTML file, saving 3 kilobytes.
 
@@ -6719,7 +6719,7 @@ changes nothing measurable — It is the sort of change that feels like optimisa
 
 improves a number but delays the task — It delays nothing, and it improves nothing you would notice either.
 
-Now sort your own candidate changes the same way, and take your three from the first group.
+Now sort your own candidate changes the same way (on the supplied route, the items in the Northside request list), and take your three from the first group.
 
 </details>
 
@@ -6728,7 +6728,7 @@ Now sort your own candidate changes the same way, and take your three from the f
 
 Section: practice-plan. Stable action: step-2-sort-5.
 
-Six candidate changes to a made up tool-library page whose baseline is 2.4 megabytes and eleven seconds to usable. For each one, decide what it would actually buy.
+Six candidate changes to a different made up tool-library page, not the Northside baseline, though it is also 2.4 megabytes and eleven seconds to usable. For each one, decide what it would actually buy.
 
 Delay the script that renders the list, so the page paints in one second instead of three.
 
@@ -6748,7 +6748,7 @@ changes nothing measurable — First paint moves by two seconds and time to usab
 
 improves a number but delays the task — First paint moves from three seconds to one, and the list, which is the task, arrives a second later. A number improves while the person waits longer. This is the one to reject in step 4.
 
-Now sort your own candidate changes the same way, and take your three from the first group.
+Now sort your own candidate changes the same way (on the supplied route, the items in the Northside request list), and take your three from the first group.
 
 </details>
 
@@ -6757,7 +6757,7 @@ Now sort your own candidate changes the same way, and take your three from the f
 
 Section: practice-plan. Stable action: step-2-sort-6.
 
-Six candidate changes to a made up tool-library page whose baseline is 2.4 megabytes and eleven seconds to usable. For each one, decide what it would actually buy.
+Six candidate changes to a different made up tool-library page, not the Northside baseline, though it is also 2.4 megabytes and eleven seconds to usable. For each one, decide what it would actually buy.
 
 Replace a 96 kilobyte icon font, loaded by a stylesheet in the head, with six hand-written icons.
 
@@ -6777,7 +6777,7 @@ changes nothing measurable — 96 kilobytes is about half a second on a slow pro
 
 improves a number but delays the task — Nothing is pushed later; the icons and the text appear sooner.
 
-Now sort your own candidate changes the same way, and take your three from the first group.
+Now sort your own candidate changes the same way (on the supplied route, the items in the Northside request list), and take your three from the first group.
 
 </details>
 
@@ -7891,7 +7891,7 @@ Write your decision first, then the reason it fits this new case. Compare with t
 
 Section: practice. Stable action: review-work.
 
-Open Your work and choose Ready for review. The next lesson puts everything from this module together and runs it on a real phone.
+Open Your work and choose Ready for review. The next lesson puts everything from this module together and checks it at phone size, in emulation or, optionally, on a real phone.
 
 
 <details>
@@ -8000,7 +8000,7 @@ Repair: Write each first guess beside the cause you found. Do not invent a wrong
 </details>
 The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
-**Keep for later:** Open Your work and choose Ready for review. The next lesson puts everything from this module together and runs it on a real phone.
+**Keep for later:** Open Your work and choose Ready for review. The next lesson puts everything from this module together and checks it at phone size, in emulation or, optionally, on a real phone.
 
 **Review criteria:**
 

@@ -1255,7 +1255,7 @@ export const guided08: Record<string, Guided> = {
       ] },
       { id: 'slow', title: 'The throttled check', fields: [
         { id: 'throttle-notes', label: 'What you saw on a slow connection: what appeared first, what appeared last, and how long the gap lasted', kind: 'long', hint: 'On a computer, open a page like the one you are designing in Chrome or Edge, press F12 (Cmd+Option+I on a Mac) and choose the Network tab. Tick Disable cache, change the menu that reads No throttling to a slow preset such as 3G, then reload the page with the panel still open. Write the second at which text, images and buttons appeared: times, not impressions. No computer available? Write “not run” and why.' },
-        { id: 'change-made', label: 'The one thing you changed because of what you saw', kind: 'short' },
+        { id: 'change-made', label: 'The one thing you changed because of what you saw, or “none: throttling not run”', kind: 'short', hint: 'If the throttled check was not run, write “none: throttling not run”: nothing was seen, so nothing changed because of it.' },
         { id: 'untested-note', label: 'Anything you could not check because nothing is built, written down as untested rather than assumed', kind: 'short' },
         { id: 'artefact-location', label: 'Where the state drawings live', kind: 'short', hint: 'File names or “paper, in my folder”. Nothing is uploaded.' },
         { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
@@ -1316,7 +1316,7 @@ export const guided08: Record<string, Guided> = {
           { term: 'Throttling', meaning: 'A setting in your browser’s own developer tools that pretends the connection is slow. It is free and changes nothing outside that tab.' },
         ],
         start: 'Open the developer tools on a page like yours, set the network to a slow profile with the cache turned off, reload, and watch what arrives first.',
-        enough: 'The notes carry times and an order of arrival, and anything you could not check is written down as untested.' },
+        enough: 'The notes carry times and an order of arrival, or say “not run” and why with “none: throttling not run” as the change, and anything you could not check is written down as untested.' },
     ],
     checks: [
       {

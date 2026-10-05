@@ -2534,7 +2534,7 @@ Made-up example. Filling a role evidence matrix, and filling it from what I can 
 
 **What the file-name column did to it:** Six of the sixteen had no file. I could do them; nothing in three project folders showed me doing them.
 
-**The clearest one:** Working with constraints. Genuinely true of all three projects, and it appears nowhere as an artefact, because constraints get worked around rather than written down.
+**The clearest one:** Working with constraints. Genuinely true of all three projects, and it appears as an artefact only once, in one decision record, because constraints get worked around rather than written down.
 
 **What that row became:** Partial, with a note that the constraint appears in one decision record and nowhere else.
 
@@ -2843,18 +2843,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You can definitely work with constraints — all three projects had them. Does the row get marked evidenced?
 
-- Only if you can name the file that shows it; otherwise it is partial, with that reason written.
 - Evidenced, since it is true of every project and you could describe each constraint in detail.
 - Evidenced, because an interviewer will ask you about it rather than open a file to check.
+- Only if files show it across the projects; one decision record alone makes it partial.
 
 <details>
 <summary>After your attempt</summary>
 
-Only if you can name the file that shows it; otherwise it is partial, with that reason written. — Constraints get worked around rather than written down, so the doing often leaves no trace. In one pass, six of sixteen evidenced marks lost their file; capability and evidence are different columns.
-
 Evidenced, since it is true of every project and you could describe each constraint in detail. — True and unshowable is exactly what partial is for; describing it is a memory, not an artefact.
 
 Evidenced, because an interviewer will ask you about it rather than open a file to check. — They will ask, and the answer is much stronger when a decision record sits behind it.
+
+Only if files show it across the projects; one decision record alone makes it partial. — Constraints get worked around rather than written down, so the doing often leaves no trace. One decision record shows it once, not across three projects, so the row is partial with that reason written; capability and evidence are different columns.
 
 Improve: Put a file name beside every evidenced mark in step 2 and downgrade the ones with none. Record the change in step 5.
 
@@ -7247,7 +7247,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Made-up example. A ninety-minute practice with someone who had not seen the work. Ten-minute walkthrough of project three, interrupted four times, twice on the measurement and twice on the sample. Asked what changed, the answer gave the owner's tally — eleven progress-chasing calls in five working days before the shop changed its job slips, seven in the five after — said that one uncontrolled comparison could not separate the change from an ordinary quieter week, and said the status page was only a demonstration. Three behavioural examples prepared: a reviewer's question about a job not updated for three days, which had no answer and led to a stale-information state; a wording repair that only half worked, reported as one of two re-testers; and a recruitment failure with what was done instead. The interviewer pushed three questions deep on the second, which held because it was real. Two weaknesses noted afterwards: drifting into the interface when asked about a decision, and answering a question about limits by defending the work before conceding.
+- Made-up example. A ninety-minute practice with someone who had not seen the work. Ten-minute walkthrough of project three, interrupted four times, twice on the measurement and twice on the sample. Asked what changed, the answer gave the owner's tally — eleven progress-chasing calls in five working days before the shop changed its job slips, seven in the five after — said that one uncontrolled comparison could not separate the change from an ordinary quieter week, and said the status page was only a demonstration. Three behavioural examples prepared: a reviewer's question about a job not updated for three days, which found a stale-information state that existed only as a plan and led to building it; a wording repair that only half worked, reported as one of two re-testers; and recruitment through the owner that reached nobody who had stopped using the shop, with what was done about it. The interviewer pushed three questions deep on the second, which held because it was real. Two weaknesses noted afterwards: drifting into the interface when asked about a decision, and answering a question about limits by defending the work before conceding.
 
 
 ### Choose where you will do the work
@@ -7302,7 +7302,7 @@ Made-up example. Preparing behavioural examples, and preparing answers about how
 
 **What came out:** A half-remembered situation assembled while speaking. It survived one question and lost its detail on the second, which is exactly what a fabricated example does.
 
-**What I prepared instead:** Three occasions. A reviewer’s question about a job not updated for three days, which I had no answer to and which added a stale-information state. A wording repair that only half worked, reported as one of two. A recruitment attempt that produced nobody, and what I did instead.
+**What I prepared instead:** Three occasions. A reviewer’s question about a job not updated for three days, which found a stale-information state I had only planned, so I built it. A wording repair that only half worked, reported as one of two. Recruitment through the owner that reached nobody who had stopped using the shop, and what I did about it.
 
 **What happened in the practice:** The interviewer went three questions deep on the half-worked repair and it held, because everything asked for was in the records.
 
@@ -7319,7 +7319,7 @@ Section: practice-plan. Stable action: step-1-sort-1.
 
 Six made up answers to behavioural interview questions. For each one, decide what it is.
 
-“A reviewer asked what the page shows when a job has not been updated for three days. I had no answer, so I added a stale-information state.”
+“A reviewer asked what the page shows when a job has not been updated for three days. I had only a plan for that state, not a built one, so after the session I built it.”
 
 - a real instance
 - a policy, not an instance
@@ -7449,7 +7449,7 @@ Section: practice-plan. Stable action: step-1-sort-6.
 
 Six made up answers to behavioural interview questions. For each one, decide what it is.
 
-“I tried to recruit people who had stopped using the shop and got nobody, so I said so in the limits and wrote what I would do differently.”
+“Recruiting through the owner reached nobody who had stopped using the shop, so I said so in the limits and wrote how I would reach them next time.”
 
 - a real instance
 - a policy, not an instance
@@ -7460,7 +7460,7 @@ Six made up answers to behavioural interview questions. For each one, decide wha
 
 a real instance — A failure with no rescue in it, which is why it is believable and why it is worth preparing.
 
-a policy, not an instance — It happened once, on a date.
+a policy, not an instance — It describes what one study’s recruitment did and what followed, not a habit.
 
 would collapse under follow-up — It survives because there is nothing in it to defend.
 

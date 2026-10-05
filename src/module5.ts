@@ -1400,7 +1400,7 @@ export const module5: Lesson[] = [
       {
         criterion: "The closing conversation is planned from the entries",
         evidence:
-          "A plan to read the entries first and build questions from them, with an example of the kind of question that would follow.",
+          "A written plan to read the entries first and build questions from them, with one example question shape — written on every route, including the dated-gap default, where the real questions wait for real entries.",
         levels: [
           "No closing conversation planned.",
           "A conversation planned but with a generic guide written in advance of any entries.",

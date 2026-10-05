@@ -271,11 +271,11 @@ export const guided15: Record<string, Guided> = {
                 'a conclusion the data cannot support': 'People stopping at a step does not mean the step caused it. The cause may be three screens earlier, which the funnel cannot show.',
                 'something the funnel cannot see at all': 'The step is visible; the causation is not.',
               } },
-            { id: 'checking-partner', text: 'Some people may be checking with somebody else and coming back tomorrow.', answer: 'something the funnel cannot see at all',
+            { id: 'checking-partner', text: 'Some members may book by phone and never open the site at all.', answer: 'something the funnel cannot see at all',
               feedback: {
-                'an explanation the data allows': 'It fits the numbers, and this funnel counts sessions rather than people, so a return would be counted as a new visitor and this explanation is invisible to it.',
-                'a conclusion the data cannot support': 'It is offered as a possibility rather than a conclusion.',
-                'something the funnel cannot see at all': 'Without a returning-visitor view, somebody coming back is indistinguishable from somebody leaving for ever.',
+                'an explanation the data allows': 'It cannot explain this drop: somebody who never opens the site never enters the funnel, so they are not among the people lost at this step.',
+                'a conclusion the data cannot support': 'It is offered as a possibility rather than a conclusion, and it is about people outside the funnel altogether.',
+                'something the funnel cannot see at all': 'A funnel counts only people who reach its first step. Bookings that never touch the site are invisible to it, however many there are.',
               } },
             { id: 'date-inconvenient', text: 'The dates available do not suit them and there is no easy route to alternatives.', answer: 'an explanation the data allows',
               feedback: {
@@ -297,7 +297,7 @@ export const guided15: Record<string, Guided> = {
               } },
           ],
           then: 'Now write your own three explanations, and check none of them is really a conclusion or a claim about something the funnel cannot see.',
-          pattern: 'Three different failures. A conclusion asserts cause from position; a claim about returning visitors or devices needs a split the funnel does not have; and an industry comparison compares two definitions nobody has reconciled.',
+          pattern: 'Three different failures. A conclusion asserts cause from position; a claim about phone bookings or devices needs data or a split the funnel does not have; and an industry comparison compares two definitions nobody has reconciled.',
         },
         demo: {
           scenario: 'Made-up example. Explaining a drop in a synthetic tool-library funnel, and writing three versions of one explanation.',
@@ -1621,15 +1621,15 @@ export const guided15: Record<string, Guided> = {
           pattern: 'The test is what happens to the picture alone. Anything that would change how somebody reads it belongs inside it; anything that only lets them verify it can live in the notes.',
         },
         start: 'Present it without apologising for the sample size; the slide already says it.',
-        enough: 'Their questions are written down in their own words.' },
-      { expect: 'What the audience remembered afterwards, and anything remembered more confidently than the evidence supports.',
+        enough: 'Each question they asked is written down, summarised closely — or, on the solo check, the questions each chart left you unable to answer.' },
+      { expect: 'What the audience remembered afterwards, or what you wrote on the labelled solo check, and anything remembered more confidently than the evidence supports.',
         fields: ['remembered', 'travelled-wrong', 'improvement-made'],
         terms: [
           { term: 'What is remembered', meaning: 'What will be repeated. It is the only measure of whether the presentation worked, and it is usually two things.' },
           { term: 'Repair', meaning: 'The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.' },
         ],
-        start: 'Ask a day later what they took from it, and write their words rather than a summary.',
-        enough: 'You recorded what they said, including the parts that overstated your evidence.' },
+        start: 'Ask a day later what they took from it, and record the gist closely with a short phrase they used. Solo check: after two days, ten seconds per chart, then write what each says.',
+        enough: 'You recorded what they said, or what you wrote on the labelled solo check, including the parts that overstated your evidence.' },
     ],
     checks: [
       {

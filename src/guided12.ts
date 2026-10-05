@@ -1601,7 +1601,7 @@ export const guided12: Record<string, Guided> = {
           { term: 'Requested and unused', meaning: 'Something loading that nothing needs: a third typeface, an icon set for six icons, a stylesheet for a page that no longer exists.' },
         ],
         sorter: {
-          intro: 'Six candidate changes to a made up tool-library page whose baseline is 2.4 megabytes and eleven seconds to usable. For each one, decide what it would actually buy.',
+          intro: 'Six candidate changes to a different made up tool-library page, not the Northside baseline, though it is also 2.4 megabytes and eleven seconds to usable. For each one, decide what it would actually buy.',
           options: ['reduces what the person waits for', 'reduces total weight only', 'changes nothing measurable', 'improves a number but delays the task'],
           items: [
             { id: 'header-image', text: 'Re-export the 1.8 megabyte header photograph at its display width. On the slow profile it takes about nine seconds to arrive.', answer: 'reduces what the person waits for',
@@ -1647,7 +1647,7 @@ export const guided12: Record<string, Guided> = {
                 'improves a number but delays the task': 'Nothing is pushed later; the icons and the text appear sooner.',
               } },
           ],
-          then: 'Now sort your own candidate changes the same way, and take your three from the first group.',
+          then: 'Now sort your own candidate changes the same way (on the supplied route, the items in the Northside request list), and take your three from the first group.',
           pattern: 'Where something sits matters as much as how big it is. The same 300 kilobytes above the fold and below it are two completely different changes, and the one that only reorders bytes improves a number while the person waits longer.',
         },
         start: 'Take the largest thing above the first screenful and deal with that one first.',
@@ -1923,7 +1923,7 @@ export const guided12: Record<string, Guided> = {
       auto: 'Your panel notes and the three diagnoses save as you type, on this device first and then online.',
       external: 'Screenshots of the inspector, the console and the network panel stay in your own folder. Note the file names in step 5; the evidence is what makes a diagnosis more than an opinion.',
       creator: 'Your creator reads your first guesses beside the causes you found. Writing the cause before the fix is what makes that comparison possible.',
-      next: 'Open Your work and choose Ready for review. The next lesson puts everything from this module together and runs it on a real phone.',
+      next: 'Open Your work and choose Ready for review. The next lesson puts everything from this module together and checks it at phone size, in emulation or, optionally, on a real phone.',
     },
   },
   'm12-l11-v1': {
