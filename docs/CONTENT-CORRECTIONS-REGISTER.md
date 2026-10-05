@@ -22,7 +22,7 @@ The first deliverable the plan asks for: every source-confirmed correction, with
 | 4 UX reasoning | [m04](corrections/m04.md) | Rehearsal no longer demands observed beliefs; practice notes F1–F4; findings reframed as decisions to check. Fixed. |
 | 5 Research methods | [m05](corrections/m05.md) | Consent/sync/reviewer access aligned; three to five research questions; research vs participant questions by purpose; null findings accepted. Fixed. |
 | 6 Information architecture | [m06](corrections/m06.md) | Maps and labels supplied for L4; backtracking facts in L7's question; tree tests are not traffic. Fixed. |
-| 7 Flows and recovery | [m07](corrections/m07.md) | Verified-identity recovery without account enumeration; "system fault" through L7. Fixed (one old practice answer in L3 has no successor and shows as unanswered). |
+| 7 Flows and recovery | [m07](corrections/m07.md) | Verified-identity recovery without account enumeration; "system fault" through L7. Fixed. |
 | 8 Interface craft | [m08](corrections/m08.md) | Editable SVG starter and annotated before/after; scenario-specific hierarchy; L10 chart arithmetic. Fixed (tool workflows in Inkscape/Penpot untested). |
 | 9 Interaction and motion | [m09](corrections/m09.md) | Working state and reorder examples; keyboard and separate no-drag pointer route in L8; reduced motion, cancellation and recovery as outputs. Fixed. |
 | 10 Prototyping and evaluation | [m10](corrections/m10.md) | Timed no-code transitions vs real network performance; exercise constraints with reasons. Fixed. |

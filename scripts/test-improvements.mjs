@@ -29,6 +29,19 @@ for (const l of publishedLessons) for (const a of l.flow) {
   for (const o of q.options) for (const w of o.was || []) assert.equal(matchChoice(q.options, w), o, `${l.id} ${q.id} alias`);
 }
 
+// Every option label a learner could have saved before 4 October 2026 still
+// selects an option today, so no earlier answer reopens as unanswered.
+{
+  const { readFileSync } = await import('node:fs');
+  const legacy = JSON.parse(readFileSync(new URL('./fixtures/option-labels-2026-10-04.json', import.meta.url), 'utf8'));
+  const unmapped = [];
+  for (const l of publishedLessons) for (const a of l.flow) {
+    const q = actionQuestion(l, a); if (!q) continue;
+    for (const label of legacy[l.id]?.[q.id] || []) if (!matchChoice(q.options, label)) unmapped.push(`${l.id} ${q.id}: ${label.slice(0, 60)}`);
+  }
+  assert.deepEqual(unmapped, [], `Earlier answers without a current option:\n${unmapped.join('\n')}`);
+}
+
 // Statistics reproduce published values.
 const w = wilson(7, 10); assert.ok(Math.abs(w.low - 0.3968) < 1e-4 && Math.abs(w.high - 0.8922) < 1e-4);
 const d = newcombeDifference(56, 70, 48, 80); assert.ok(Math.abs(d.low - 0.0524) < 1e-4 && Math.abs(d.high - 0.3339) < 1e-4, 'Newcombe 1998 example');

@@ -1690,6 +1690,7 @@ A made up sign-in path. A person registered with a phone number and an email add
 Which route gets her back in without letting a stranger take over the account?
 
 - Send a code to the email she confirmed at sign-up, then tell the old number and allow a day to undo.
+- Have her open a new account under her new number and move her bookings across to it.
 - Let her set a new number once she types the booking reference and class date shown in her confirmation.
 - Send the code to the old number again, in case the first message was delayed by her network.
 - Ask the security question she set when she registered, and change the number if she answers it.
@@ -1698,6 +1699,8 @@ Which route gets her back in without letting a stranger take over the account?
 <summary>After your attempt</summary>
 
 Send a code to the email she confirmed at sign-up, then tell the old number and allow a day to undo. — The email is a channel she verified earlier and still holds. Telling the old number, and leaving a day to undo the change, means a stranger who got in this way would be noticed and reversed.
+
+Have her open a new account under her new number and move her bookings across to it. — A second account does not get her back into the first one: her history and payments stay behind, and moving bookings across means someone must decide she owns them, which is the same identity check by another name.
 
 Let her set a new number once she types the booking reference and class date shown in her confirmation. — The reference and the date are printed in the confirmation and in any screenshot of it, so anyone holding that message could move her account to their own phone. They identify a booking, not a person.
 

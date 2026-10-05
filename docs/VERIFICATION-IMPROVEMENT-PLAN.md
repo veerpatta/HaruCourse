@@ -17,7 +17,7 @@ The creator authorized implementing the *Haru Course Improvement Plan* (4 Octobe
 | UI/code backlog | P0 route/privacy and question order; P1 core path, visual examples and starters (annotated screens, reflow demo, state and no-drag reorder examples, uncertainty calculator, SVG/HTML starters, keyboard/screen-reader lab), session pause and resume, review trail; P2 load: entry chunk 4.69 MB → 0.91 MB with the same 6.7 MB offline precache, and polling reduced from full reads every 5 s to a one-row version check every 60 s. |
 | Migration 0004 | `users.records_version` with triggers, structured feedback columns, `course_settings`. |
 
-Preserved: all 224 lesson IDs, all 2,866 original worksheet field IDs (verified against the pre-change commit), check counts and order, sorter item IDs, supported-practice positions, choice option labels, record version 1, storage keys, bookmarks, feedback history and existing finishes.
+Preserved: every one of the 4,888 option labels a learner could have saved before 4 October still selects an option (checked against a fixture of the pre-change labels); all 224 lesson IDs, all 2,866 original worksheet field IDs (verified against the pre-change commit), check counts and order, sorter item IDs, supported-practice positions, choice option labels, record version 1, storage keys, bookmarks, feedback history and existing finishes.
 
 ## Checks run
 
@@ -48,7 +48,6 @@ Scores reflect evidence available today. Anchors: 4/5 needs representative cases
 - Physical iOS/Android, VoiceOver, TalkBack and Narrator task tests, including the Module 11 lab.
 - Field Core Web Vitals; only build-size and request-count changes were measured.
 - Starters opened only in a desktop browser; free-tool workflows (Inkscape, Penpot) and GitHub Pages steps were not executed end to end.
-- One Module 7 Lesson 3 practice answer has no successor wording and shows as unanswered for anyone who chose it.
 
 ## Release
 
