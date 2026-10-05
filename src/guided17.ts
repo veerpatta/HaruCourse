@@ -14,8 +14,8 @@ import { improvementMade, revealOne, paperRoute, textRoute, type Guided } from '
 export const casePack = [
   'Case pack · Northside Tool Library. Made up for this module: practice material, not research about a real organisation. Members borrow tools from a side room of the town hall, paying a yearly subscription and a refundable deposit on each loan; most borrow a few times a year. A council community grant covers part of the running cost; it is reviewed each autumn and may be cut.',
   'Borrower (member) · May book, cancel, collect and return their own loans. Sees only their own loans, deposits and due dates.',
-  'Front-desk volunteer (Saturday 10:00–13:00 rota of about twelve) · Checks about forty loans in and out each Saturday and signs up new members on paper. Sees that day’s bookings by first name, tool and locker number. May not see addresses or payments, refund deposits or change fees. New volunteers need a morning of training.',
-  'Maintenance volunteer (Tuesday evenings) · Marks each tool ready, needs repair or retired in the stock list, and must check every power tool after each loan before it goes out again: an insurance condition. Sees tool histories, not member details.',
+  'Front-desk volunteer (Saturday 10:00–13:00 rota of about twelve) · Checks about forty loans in and out each Saturday and signs up new members on paper. When three or more are on the rota, one volunteer checks returned power tools at the desk so they can go out the same day; otherwise they wait for Tuesday’s maintenance check. Sees that day’s bookings by first name, tool and locker number. May not see addresses or payments, refund deposits or change fees. New volunteers need a morning of training.',
+  'Maintenance volunteer (Tuesday evenings) · Marks each tool ready, needs repair or retired in the stock list, and checks every power tool not already checked at the desk. Every power tool must be checked after each loan before it goes out again: an insurance condition. Sees tool histories, not member details.',
   'Coordinator (paid, part-time) · Copies each day’s booking requests into the stock list by hand at about 8 pm, sets the weekly locker codes, trains volunteers and allocates the Riverside memberships. Sees all bookings and members’ contact details. May not issue refunds.',
   'Treasurer and board · The board, a volunteer committee, sets fees, deposits, opening hours and spending, and sees monthly totals rather than individual loans. The treasurer holds the only login to the payment account, refunds deposits in one batch on Tuesday evenings and writes the grant report.',
   'Council grant officer (funder) · Funds 30 memberships for residents of the Riverside estate, receives a report each quarter, and has asked for each resident’s name and what they borrowed, to show the scheme is used.',
@@ -291,11 +291,11 @@ export const guided17: Record<string, Guided> = {
           intro: 'Six consequences of a design decision at the made up tool library. For each one, decide what kind of cost it is.',
           options: ['money', 'staff time or attention', 'risk'],
           items: [
-            { id: 'phone-calls', text: 'An unclear payment screen produces about one phone call per unclear booking, to the part-time coordinator.', answer: 'staff time or attention',
+            { id: 'phone-calls', text: 'An unclear payment screen produces calls to the part-time coordinator asking whether a deposit went through; nobody has counted them.', answer: 'staff time or attention',
               feedback: {
-                'staff time or attention': 'It is an hour somebody spends on the phone rather than checking tools in. With one part-time paid person, this is the cost that matters most.',
+                'staff time or attention': 'Each call is time somebody spends on the phone rather than on other work. With one part-time paid person, this is the cost that matters most, even before anybody counts it.',
                 money: 'It costs no money directly and it is the salary of somebody already employed.',
-                risk: 'Nothing uncertain is involved; it happens every time.',
+                risk: 'The calls are already happening, counted or not; that makes them a running cost rather than an uncertain one.',
               } },
             { id: 'duplicate-refund', text: 'A duplicate payment has to be refunded, with a transaction fee lost on each leg.', answer: 'money',
               feedback: {
@@ -344,7 +344,7 @@ export const guided17: Record<string, Guided> = {
           beats: [
             { label: 'What I proposed', text: 'Reduce staff time by replacing the evening spreadsheet with a proper booking system. It would remove an hour a day and several categories of error.' },
             { label: 'Why it was not a lever', text: 'It costs money the library does not have, takes months, and is not a design decision. I had found a good idea belonging to somebody else.' },
-            { label: 'What I could actually change', text: 'The payment screen. Unclear payment status produces about one call per unclear booking, and calls arrive during the hour tools are being checked in.' },
+            { label: 'What I could actually change', text: 'The payment screen. Unclear payment status produces calls, so far uncounted, and they arrive during the hour tools are being checked in.' },
             { label: 'The mechanism, step by step', text: 'The screen states what has been taken and when confirmation arrives. The person does not ring. The staff member is not interrupted during check-in. Nothing else in the operation changes.' },
             { label: 'Why that version persuaded anybody', text: 'It is a change I can make this week, the effect is traceable, and it needs nobody’s budget.' },
           ],
@@ -537,15 +537,15 @@ export const guided17: Record<string, Guided> = {
                 'a back-stage detail with no front-stage effect': 'Anybody wanting a refund on a Wednesday meets it directly.',
                 'a front-stage decision': 'It is a staffing fact with front-stage consequences.',
               } },
-            { id: 'payment-provider', text: 'The payment provider confirms within seconds.', answer: 'a back-stage detail with no front-stage effect',
+            { id: 'payment-provider', text: 'The payment provider confirms within seconds.', answer: 'a back-stage fact that decides the experience',
               feedback: {
-                'a back-stage fact that decides the experience': 'It would be, if it were slow. Being fast means it is not what sets the timescale.',
-                'a back-stage detail with no front-stage effect': 'Worth having on the blueprint, because it shows the delay is not where everybody assumed.',
+                'a back-stage fact that decides the experience': 'It lets the screen say “payment received” at once, separately from the booking confirmation.',
+                'a back-stage detail with no front-stage effect': 'It does reach the front stage: because payment confirms at once, the screen can honestly say so while the booking waits.',
                 'a front-stage decision': 'It happens behind the line.',
               } },
           ],
           then: 'Now mark your own back-stage band the same way, and take your two decisive facts from the first group.',
-          pattern: 'The fast payment provider is the one worth noticing. Blueprinting often shows that the thing everybody blames is not the constraint, and the real one is a person doing something by hand each evening.',
+          pattern: 'The fast payment provider is worth noticing twice. It is not what delays confirmation, which is a person doing something by hand each evening, and it lets the screen say “payment received” at once while the booking waits. Blueprinting often shows that the thing everybody blames is not the constraint.',
         },
         start: 'Go along the back-stage band and ask of each item what the person would notice if it changed.',
         enough: 'Both decisive facts name something the front stage cannot fix.' },
@@ -590,13 +590,13 @@ export const guided17: Record<string, Guided> = {
         recheck: 'Assumptions and observations are distinguishable on your blueprint.',
       },
       {
-        question: 'The board wants power tools in the out-of-hours lockers to cut the Saturday queue. Your blueprint shows each returned power tool must be checked before it goes out again, and checks happen on Tuesday evenings. What does that fact decide?',
+        question: 'The board wants power tools in the out-of-hours lockers to cut the Saturday queue. Your blueprint shows each returned power tool must be checked before it goes out again, and checks happen only at a staffed desk or on Tuesday evenings, never out of hours. What does that fact decide?',
         options: [
-          { label: 'How soon a returned power tool can honestly be offered again, whatever the lockers allow.', correct: true, feedback: 'A check on Tuesdays caps availability: a drill returned on Wednesday cannot go out again before the next Tuesday, lockers or not. The promise on the booking page has to follow it.', was: ['That the constraint is elsewhere, which is one of the most useful things a blueprint produces.'] },
-          { label: 'Nothing on the front stage, since checks happen behind the line where members never look.', feedback: 'Behind the line is exactly where decisive facts live; members meet this one as “unavailable” all week.', was: ['That the provider is not the only cause.'] },
-          { label: 'Only the locker size, since power tools are bulkier than the hand tools stored now.', feedback: 'Size matters to the lockers; the Tuesday check decides when a tool can go in them at all.', was: ['That the blueprint needs more detail on the provider.'] },
+          { label: 'How soon a power tool returned out of hours can be offered again, whatever the lockers allow.', correct: true, feedback: 'Nobody checks out of hours, so a drill left in a locker on Wednesday waits for a staffed desk or Tuesday’s check, lockers or not. The promise on the booking page has to follow it.', was: ['How soon a returned power tool can honestly be offered again, whatever the lockers allow.', 'That the constraint is elsewhere, which is one of the most useful things a blueprint produces.'] },
+          { label: 'Nothing on the front stage, since checks happen behind the line where members never look.', feedback: 'Behind the line is exactly where decisive facts live; members meet this one as “unavailable” until somebody can check it.', was: ['That the provider is not the only cause.'] },
+          { label: 'Only the locker size, since power tools are bulkier than the hand tools stored now.', feedback: 'Size matters to the lockers; when a check can happen decides when a tool can go out again at all.', was: ['That the blueprint needs more detail on the provider.'] },
         ],
-        repair: 'Write one decisive fact in step 4 with what it determines about the front stage, as the Tuesday check does here. Record the change in step 5.',
+        repair: 'Write one decisive fact in step 4 with what it determines about the front stage, as the check timing does here. Record the change in step 5.',
         recheck: 'Both decisive facts name something the front stage has to follow.',
       },
     ],
@@ -732,18 +732,18 @@ export const guided17: Record<string, Guided> = {
                 'serves the buyer at the user’s cost': 'The buyer loses nothing, unless the true answer is embarrassing, which is itself a finding.',
                 'serves the administrator at the user’s cost': 'It makes the administrator’s job easier by removing a recurring question.',
               } },
-            { id: 'manager-cancel', text: 'A control letting a manager cancel a staff member’s booking without telling them.', answer: 'serves the buyer at the user’s cost',
+            { id: 'manager-cancel', text: 'A control letting the administrator cancel a staff member’s booking without telling them.', answer: 'serves the administrator at the user’s cost',
               feedback: {
                 'serves everybody': 'Somebody turns up to a class they are no longer booked into.',
-                'serves the buyer at the user’s cost': 'It solves a real scheduling problem by making the product unreliable for the person using it. Without telling them is the part that makes it indefensible.',
-                'serves the administrator at the user’s cost': 'The administrator may be the one operating it, and the request comes from above them.',
+                'serves the buyer at the user’s cost': 'Cancelling and reallocating places is the administrator’s work; the buyer never touches it.',
+                'serves the administrator at the user’s cost': 'It solves a real scheduling problem by making the product unreliable for the person using it. Without telling them is the part that makes it indefensible.',
               } },
           ],
           then: 'Now design your own screen, and check the third role would still choose to use the product because of it.',
           pattern: 'Two of the costly three become acceptable with one addition: a decline route, or telling the person. Most buyer-versus-user conflicts are not about the feature but about whether the person it happens to gets a say or a warning.',
         },
         start: 'Design the everyday user’s screen first; it is the one nobody starts with.',
-        enough: 'The third role can see what the other two can see about them.' },
+        enough: 'The everyday user can see what the other two roles can see about them.' },
       { expect: 'What the buyer gets instead of the feature that would cost the user.',
         fields: ['buyer-instead', 'improvement-made'],
         terms: [
@@ -780,7 +780,7 @@ export const guided17: Record<string, Guided> = {
       {
         question: 'The grant officer asks for each Riverside resident’s name and what they borrowed, to show the scheme is used. What should you offer?',
         options: [
-          { label: 'Totals by month and tool type, naming nobody, and why named lists would cut use.', correct: true, feedback: 'She has to show the scheme is used, which totals do completely. A named list risks residents borrowing less once they know, and then reports that drop as low demand.', was: ['Answer her accountability with an aggregate that names nobody, and say why the named version costs the usage she is buying.'] },
+          { label: 'Monthly totals by tool type, small counts grouped, and why named lists would cut use.', correct: true, feedback: 'She has to show the scheme is used, which totals do completely. With only 30 residents a count of one can point to a person, so show any count under five as “fewer than five”. A named list risks residents borrowing less once they know, and then reports that drop as low demand.', was: ['Totals by month and tool type, naming nobody, and why named lists would cut use.', 'Answer her accountability with an aggregate that names nobody, and say why the named version costs the usage she is buying.'] },
           { label: 'The named list as requested, since the council pays for every one of the memberships.', feedback: 'Reasonable from where she sits, and it risks destroying the use she is paying for.', was: ['Build it; she is paying and the request is reasonable.'] },
           { label: 'A refusal on privacy grounds, so residents can borrow without being watched by anyone.', feedback: 'A refusal with nothing attached leaves her accountability unanswered, and she may seek the list some other way.', was: ['Refuse it as a privacy matter.'] },
         ],
@@ -869,7 +869,7 @@ export const guided17: Record<string, Guided> = {
           uncertainty: 'Still unknown: how much of the rise in late cancellations came from the change. Bookings rose too, and nobody separated the two.',
         },
         start: 'Draw boxes and arrows on paper, and write a time on every arrow.',
-        enough: 'At least one arrow has a delay measured in weeks.' },
+        enough: 'Every arrow has an estimated delay, labelled as an estimate, and you say which delay would hide the loop.' },
       { expect: 'What each party is rewarded or measured on, and whether your change rewards anything harmful.',
         fields: ['rewarded-for', 'rewarding-harm'],
         terms: [
@@ -966,7 +966,7 @@ export const guided17: Record<string, Guided> = {
       {
         question: 'The board says it will “keep an eye on” the one-tap cancellation change. The case pack says a cancellation frees a tool only at the next 8 pm update. Why is watching not enough?',
         options: [
-          { label: 'The effect lands on Saturday, after the desk closes, and gets blamed on low demand.', correct: true, feedback: 'Watching finds effects after they compound and get attributed to something else. Tracing the loop takes an hour: one-tap cancel, tools idle on Saturday, members see “booked”, requests fall, the board reads it as low demand.', was: ['Monitoring finds them after they have compounded and been attributed to something else. Tracing the likely loop before shipping costs an hour.'] },
+          { label: 'The tool sits idle through Saturday’s desk hours, is freed at 8 pm, and looks like low demand.', correct: true, feedback: 'Watching finds effects after they compound and get attributed to something else. Tracing the loop takes an hour: one-tap cancel, tools idle on Saturday, members see “booked”, requests fall, the board reads it as low demand.', was: ['The effect lands on Saturday, after the desk closes, and gets blamed on low demand.', 'Monitoring finds them after they have compounded and been attributed to something else. Tracing the likely loop before shipping costs an hour.'] },
           { label: 'It is enough: nobody can predict every consequence, so watching is the honest option.', feedback: 'Not every consequence can be predicted; this one is traceable from facts already in the pack.', was: ['Yes, since you cannot predict every consequence.'] },
           { label: 'It is enough if the coordinator checks the stock list carefully every single evening.', feedback: 'Careful checking happens at 8 pm, after Saturday’s desk has closed, which is the delay that hides the loop.', was: ['Yes, provided the monitoring is thorough.'] },
         ],
@@ -1043,7 +1043,7 @@ export const guided17: Record<string, Guided> = {
           { term: 'Affect or block', meaning: 'Anybody whose agreement you need or whose disagreement would stop it. It includes people with no formal authority at all.' },
         ],
         start: 'For each person, write the question their own manager asks them.',
-        enough: 'Nobody on your list is described only by their role.' },
+        enough: 'Each person on your list has what they are accountable for written beside their role.' },
       { expect: 'Each person placed on interest and on influence, with the high-interest allies who decide nothing identified.',
         fields: ['placed', 'allies-no-influence'],
         terms: [
@@ -1137,7 +1137,7 @@ export const guided17: Record<string, Guided> = {
           pattern: 'Everything that works costs you something — scope, sequencing, an afternoon of definition — and costs them nothing. Escalating and re-explaining are the two moves that feel like progress and are not.',
         },
         supported: {
-          material: 'From the case pack: you propose that the Saturday desk releases Friday-night cancellations at opening; the treasurer refunds deposits on Tuesdays; the maintenance volunteer must check power tools after every loan. Changed constraint (risk): the insurer now says no power tool may be released unless the stock list shows its last check.',
+          material: 'From the case pack: you propose that the Saturday desk releases Friday-night cancellations at opening; the treasurer refunds deposits on Tuesdays; power tools must be checked after every loan, by the maintenance volunteer unless the desk did it. Changed constraint (risk): the insurer now says no power tool may be released unless the stock list shows its last check.',
           question: 'How should your approach change?',
           options: [
             { label: 'Release hand tools only, and power tools once the stock list shows their check.', correct: true, feedback: 'The condition narrows the proposal rather than ending it, and it answers the maintenance volunteer’s likely reservation in writing. Affected: Saturday borrowers of power tools and the desk volunteers, who need the check column visible. Missing: how many released tools are power tools.' },
@@ -1179,7 +1179,7 @@ export const guided17: Record<string, Guided> = {
         recheck: 'Nobody on your map is described by title alone.',
       },
       {
-        question: 'The maintenance volunteer has agreed with everything in two meetings and done nothing since. The case pack says he must check each returned power tool before it goes out again. Who needs your attention first?',
+        question: 'The maintenance volunteer has agreed with everything in two meetings and done nothing since. The case pack says he checks returned power tools before they go out again, as insurance requires. Who needs your attention first?',
         options: [
           { label: 'The quiet volunteer: an unstated worry about unchecked power tools could stall it unseen.', correct: true, feedback: 'A stated objection can be answered; an unstated reservation stops things in ways nobody can point at. Releasing tools touches his insurance duty, so asking him directly is worth more than winning the treasurer’s argument.', was: ['Usually the quiet one. The sceptic tells you their objection; the quiet one does not, and the work simply never quite happens.'] },
           { label: 'The treasurer, since stated opposition is the thing that has to be answered first.', feedback: 'Her objection matters, and it is the easier case, because you know what it is.', was: ['The sceptic, since opposition has to be answered.'] },
@@ -1255,7 +1255,7 @@ export const guided17: Record<string, Guided> = {
           uncertainty: 'Still unknown: whether payment confusion is actually common. It is back in the assumption column, where it was all along.',
         },
         start: 'Write the knowns first, then cross off everything you could not show somebody.',
-        enough: 'Your knowns list is shorter than you expected.' },
+        enough: 'Every item on your knowns list has its evidence named beside it.' },
       { expect: 'What being wrong would cost and to whom, how reversible it is for everybody affected, and how much certainty that justifies.',
         fields: ['cost-if-wrong', 'how-reversible', 'certainty-justified'],
         terms: [
@@ -1413,7 +1413,7 @@ export const guided17: Record<string, Guided> = {
         { id: 'which-decisions', label: 'Which of your design decisions would change with an answer', kind: 'long', hint: 'If none would, the gap is interesting rather than urgent, and saying so is a useful result.' },
       ] },
       { id: 'rules', title: 'The five checks', fields: [
-        { id: 'five-checks', label: 'The five checks you will apply to any candidate source', kind: 'long', hint: 'Retrievable, free, scope-reviewed, dated, and possible to write limits for. Take them from this course’s own rules.' },
+        { id: 'five-checks', label: 'The five checks you will apply to any candidate source', kind: 'long', hint: 'Retrievable, free to read with no payment, trial or vendor account (a public-library loan counts as free), scope-reviewed, dated, and possible to write limits for. Take them from this course’s own rules.' },
       ] },
       { id: 'assess', title: 'Assess one candidate', fields: [
         { id: 'candidate-found', label: 'The candidate source, and how you found it', kind: 'short' },
@@ -1453,7 +1453,7 @@ export const guided17: Record<string, Guided> = {
           material: 'From the case pack: the board wants to describe the library against the hardware shop’s hire counter and a sharing app; nobody has a verified source on positioning; the grant is reviewed each autumn. Changed constraint (organisation): this year’s grant form asks how the library differs from commercial hire.',
           question: 'How does the gap’s priority change?',
           options: [
-            { label: 'It now changes a decision, so close it before autumn using only claims you can support.', correct: true, feedback: 'A gap that changes no decision can wait; one that changes the grant form cannot. The answer can rest on what the pack shows — deposits, no purchase, local collection — while market claims wait for a source. Affected: the board, and every member if the grant is lost.' },
+            { label: 'It now changes a decision, so close it before autumn using only claims you can support.', correct: true, feedback: 'A gap that changes no decision can wait; one that changes the grant form cannot. The answer can rest on what the pack shows about the library — a yearly subscription, refundable deposits, run mostly by volunteers — while market claims wait for a source. Affected: the board, and every member if the grant is lost.' },
             { label: 'It stays interesting rather than urgent, since positioning is not really a design question.', feedback: 'It was interesting while no decision turned on it; the form makes it decide something.' },
             { label: 'It is solved: borrow the article’s wording, since the form needs an answer now.', feedback: 'Urgency does not make an unverifiable source verifiable, and the form is exactly where an unsupported claim would be checked.' },
           ],
@@ -1464,7 +1464,7 @@ export const guided17: Record<string, Guided> = {
       { expect: 'The five checks written out, taken from this course’s own selection rules.',
         fields: ['five-checks'],
         terms: [
-          { term: 'Retrievable', meaning: 'You can actually open it, today, without an account. A page behind a sign-up is not retrievable for this purpose.' },
+          { term: 'Retrievable', meaning: 'You can actually open it, today, without paying or creating a vendor account. A page behind a sign-up is not retrievable for this purpose; a public-library loan is.' },
           { term: 'Scope-reviewed', meaning: 'You can say what it covers and what it does not. A source whose limits you cannot write is one you cannot use responsibly.' },
         ],
         start: 'Copy the rules out rather than paraphrasing them.',
@@ -1509,7 +1509,7 @@ export const guided17: Record<string, Guided> = {
             { id: 'library-book', text: 'A standard book on the subject, borrowed from a public library, dated, with its sources cited.', answer: 'usable',
               feedback: {
                 usable: 'Dated, evidenced and scope-statable. A library is a legitimate route this course cannot link to, and borrowing is not a paid dependency.',
-                'reject and record': 'Nothing about it fails a check.',
+                'reject and record': 'A library card is not a vendor account, so nothing about it fails a check.',
                 'usable for part of it': 'It may cover less than you need, which is a note rather than a partial verdict.',
               } },
             { id: 'paywalled', text: 'A respected report, clearly dated and evidenced, behind a paid subscription.', answer: 'reject and record',
@@ -1518,10 +1518,10 @@ export const guided17: Record<string, Guided> = {
                 'reject and record': 'Recorded as rejected on cost rather than on quality, so the reason is visible if the situation changes.',
                 'usable for part of it': 'None of it is retrievable.',
               } },
-            { id: 'course-video', text: 'A free video course requiring a sign-up, with an emailed certificate.', answer: 'reject and record',
+            { id: 'course-video', text: 'A free video course that requires a vendor account and signs you up to sales emails.', answer: 'reject and record',
               feedback: {
-                usable: 'An account requirement makes it not retrievable for this purpose, and this course does not require sign-ups.',
-                'reject and record': 'Rejected on the account requirement, recorded with the reason.',
+                usable: 'A vendor account requirement makes it not retrievable for this purpose, and this course does not require sign-ups.',
+                'reject and record': 'Rejected on the vendor-account requirement, recorded with the reason.',
                 'usable for part of it': 'Nothing is available without the account.',
               } },
             { id: 'academic-open', text: 'An open-access paper on segmentation methods, dated, peer-reviewed, and narrower than what you need.', answer: 'usable for part of it',
@@ -1971,7 +1971,7 @@ export const guided17: Record<string, Guided> = {
           { label: 'It is fair: a month of evidence should settle a disagreement better than opinion.', feedback: 'Evidence settles questions about effect; this is about making leaving harder than joining.', was: ['Yes, evidence should settle disagreements.'] },
           { label: 'It is fair if the trial is kept short and members are told about it in advance.', feedback: 'Short and announced still makes leaving harder for a month for everyone who wants to go.', was: ['Yes, if the test is short.'] },
         ],
-        repair: 'Write your line in step 5 so it covers false statements regardless of their effect. Record the change.',
+        repair: 'Write your line in step 5 so it covers obstructed exits and false statements, regardless of their effect. Record the change.',
         recheck: 'Your line would still hold if the dishonest version worked well.',
       },
     ],
@@ -1996,7 +1996,7 @@ export const guided17: Record<string, Guided> = {
     route: textRoute,
     worksheet: [
       { id: 'expectations', title: 'The expectations, in your own words', fields: [
-        { id: 'expectations-listed', label: 'The expectations from the assigned job-family page, one level above your current work', kind: 'long', hint: 'In your own words. Copying the page teaches nothing and makes the comparison harder.' },
+        { id: 'expectations-listed', label: 'The influence expectations from the first management level on the assigned page', kind: 'long', hint: 'In your own words. Copying the page teaches nothing and makes the comparison harder. The page lists only management levels: mark team-development and hiring expectations ‘needs a team: out of scope’.' },
       ] },
       { id: 'compare', title: 'Against your artefacts', fields: [
         { id: 'can-evidence', label: 'For each expectation: the artefact that evidences it', kind: 'long', hint: 'A specific artefact from this course or your own work. Not a belief that you could do it.' },
@@ -2016,13 +2016,13 @@ export const guided17: Record<string, Guided> = {
       ] },
     ],
     guide: [
-      { expect: 'The expectations from one published job-family page, written in your own words.',
+      { expect: 'The influence expectations from the first management level on one published job-family page, written in your own words, with team-development and hiring ones marked out of scope.',
         fields: ['expectations-listed'],
         terms: [
           { term: 'Design leadership', meaning: 'Influence over decisions without controlling anybody. It describes behaviour rather than a title, which is what makes it practisable now.' },
           { term: 'Published expectations', meaning: 'One employer’s written description of what a level means. It is evidence about that employer and not a market standard.' },
         ],
-        start: 'Read the level above the work you are currently doing rather than the one you want.',
+        start: 'Read the first management level only; it is the closest the page comes to your current work.',
         enough: 'Every expectation is in your words and describes a behaviour.' },
       { expect: 'Each expectation matched to an artefact, or marked read-about where none exists.',
         fields: ['can-evidence', 'read-about'],
@@ -2143,7 +2143,7 @@ export const guided17: Record<string, Guided> = {
         options: [
           { label: 'It is practisable: take a prepared case on cancellations to the coordinator for the board.', correct: true, feedback: 'The expectations describe behaviour — making decisions legible, influencing people who do not report to you — and taking a prepared argument to the person who can change something is available at any level.', was: ['The published expectations describe behaviour: making decisions legible, influencing people who do not report to you, connecting design work to what the organisation is accountable for.'] },
           { label: 'Only partly, since influence follows authority and you hold none in the library.', feedback: 'Authority helps; the expectations are written as behaviours precisely because they are not the same thing.', was: ['Largely, since influence follows authority.'] },
-          { label: 'Not yet: published expectations describe managers, so a volunteer cannot meet them.', feedback: 'Several expectations describe influence without a team, and this module’s artefacts evidence some of them directly.', was: ['No, and the expectations are aspirational rather than practisable.'] },
+          { label: 'Not yet: published expectations describe managers, so a volunteer cannot meet them.', feedback: 'This page does describe managers; its influence expectations are behaviours you can practise without a team, and this module’s artefacts evidence some of them directly.', was: ['No, and the expectations are aspirational rather than practisable.'] },
         ],
         repair: 'Name the artefact for each expectation you claim in step 2. Record the change in step 5.',
         recheck: 'Every claimed expectation has something somebody could look at.',
@@ -2281,7 +2281,7 @@ export const guided17: Record<string, Guided> = {
           intro: 'Six lines from a made up strategy note. For each one, decide whether it belongs in the note as written.',
           options: ['usable as written', 'needs a signal or a specific', 'does not belong in the note'],
           items: [
-            { id: 'cancellation-risk', text: 'Risk: late cancellations rise after the easier cancellation flow. Signal: the waiting-list count, checked monthly.', answer: 'usable as written',
+            { id: 'cancellation-risk', text: 'Risk: late cancellations rise after the easier cancellation flow. Signal: late cancellations counted in the booking records, checked monthly.', answer: 'usable as written',
               feedback: {
                 'usable as written': 'A specific risk from a traced loop, with somewhere to look and a cadence. It can be acted on.',
                 'needs a signal or a specific': 'Both are present.',

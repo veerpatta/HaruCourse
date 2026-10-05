@@ -271,7 +271,7 @@ export const module16: Lesson[] = [
     misconception:
       "“It saved me hours.” Sometimes. Count the editing, the verification and the times you accepted something you would not have written. The honest measure includes those, and for some tasks it comes out negative.",
     example:
-      "Three tasks were logged. Drafting twenty error-message variants: useful — three were usable after editing, the rest were generic, and it took ten minutes rather than forty. Explaining a technical term an engineer used: useful, and the explanation was verified against documentation before being repeated, where one detail turned out to be wrong. Summarising five interview notes: refused under the data rule and done by hand, which took two hours and produced the contradiction that became the study's main finding.",
+      "Three tasks were logged. Drafting twenty error-message variants: useful — three were usable after editing, the rest were generic, and with reading and editing counted it took thirty minutes rather than forty. Explaining a technical term an engineer used: slower than reading the documentation once verification was counted, and one detail turned out to be wrong. Summarising five interview notes: refused under the data rule and done by hand, which took two hours and produced the contradiction that became the study's main finding.",
     freeToolPath:
       "Any assistance you already have access to, free tiers included; no paid model, trial or new account is required. Without one, or if you prefer not to use one, use the three supplied hand-written outputs in this lesson's source notes: predict, check, time the checking, and record what you would have done instead.",
     outputs: [
@@ -969,7 +969,7 @@ export const module16: Lesson[] = [
         levels: [
           "No reporting.",
           "A feedback control with no destination.",
-          "Reporting, a human route and a named owner.",
+          "Reporting, a human route and an owner named by role.",
           "As adequate, and the person is told what happens to a report.",
         ],
         remediation:
