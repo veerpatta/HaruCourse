@@ -274,7 +274,7 @@ export const module17: Lesson[] = [
     misconception:
       "“Business is not my area.” Every design decision is an economic decision about someone's time, money or risk. Declining to describe it does not remove the effect; it removes you from the conversation about it.",
     example:
-      "The exchange, written plainly: a person gives money and a Saturday and gets a class they were confident about attending; the provider gives a place and their time and gets a booking they can rely on. The payer and user coincide here, except when a parent books for a child, where the design must serve both. Costs named: each unclear payment generates roughly one phone call to the provider, who is a single person with limited time; each duplicate payment generates a refund and a lost afternoon. One design decision changes the arithmetic directly: making payment status unambiguous reduces the calls, which is time the provider currently spends on the phone rather than teaching.",
+      "The exchange, written plainly: a person gives money and a Saturday and gets a class they were confident about attending; the provider gives a place and their time and gets a booking they can rely on. The payer and user coincide here, except when a parent books for a child, where the design must serve both. Costs named: each unclear payment can prompt a phone call to the provider, who is a single person with limited time; each duplicate payment generates a refund and a lost afternoon. One design decision changes the arithmetic directly: making payment status unambiguous reduces the calls, which is time the provider currently spends on the phone rather than teaching.",
     freeToolPath:
       "Written work and, where possible, one conversation with whoever runs the service. No financial data is needed and none should be invented.",
     outputs: [
@@ -1161,7 +1161,7 @@ export const module17: Lesson[] = [
         levels: [
           "One axis only.",
           "Both axes without identifying allies.",
-          "Both, with allies and absent-minded blockers marked.",
+          "Both axes, with the high-interest, low-influence allies marked.",
           "As adequate, and a high-interest, low-influence person is identified as a source of knowledge.",
         ],
         remediation:
@@ -1446,7 +1446,7 @@ export const module17: Lesson[] = [
     teach: [
       "Positioning and segmentation are real topics this course cannot source.",
       "Vendor content on strategy is abundant, promotional and usually unverifiable.",
-      "Apply the catalog's rules: retrievable, free, scope-reviewed, dated, bounded.",
+      "Apply the catalog's rules: retrievable, free (no payment, trial or vendor account; a public-library loan counts as free), scope-reviewed, dated, bounded.",
       "A rejected source is a result worth recording.",
       "Do not teach yourself from a source you would not assign to someone else.",
       "A gap’s priority follows the decisions that hang on it: when a funder or a deadline starts asking, an interesting gap becomes an urgent one.",
@@ -1454,7 +1454,7 @@ export const module17: Lesson[] = [
     explanation: [
       "The gap is documented in this course's resource library: market positioning and segmentation have no verified free primary source, after attempts that returned navigation pages and a refusal. That is why every strategy lesson here has been about constraint, structure and stakeholders rather than about where a product sits in a market.",
       "The reason it is hard to source is worth understanding. Most freely available strategy content is published by companies selling something, is written to be persuasive rather than examinable, and cites no evidence you can check. That does not make it wrong; it makes it unverifiable, which is a different problem and the one this course's rules are built around.",
-      "The rules are reusable: can you retrieve the exact page, is it free without an account or trial, can you review its actual teaching scope, does it state a date, and can you write down what it does not cover. A source failing any of those goes in the record as attempted, with the reason.",
+      "The rules are reusable: can you retrieve the exact page, is it free to read with no payment, trial or vendor account (a public-library loan counts as free), can you review its actual teaching scope, does it state a date, and can you write down what it does not cover. A source failing any of those goes in the record as attempted, with the reason.",
       "The discipline that matters is not teaching yourself from a source you would refuse to assign. A designer who learns positioning from a vendor's blog and then repeats it confidently has acquired a vocabulary rather than an understanding, which is worse than the gap.",
     ],
     misconception:
@@ -1658,7 +1658,7 @@ export const module17: Lesson[] = [
     misconception:
       "“Good design is good design.” The principles transfer and the priorities do not. A consumer flow optimised for a confident first use, applied to a tool someone uses hourly, produces a product people resent for reasons they cannot articulate.",
     example:
-      "The booking feature designed twice. Consumer: emphasis on the first booking, generous whitespace, one action per screen, a warm confirmation. Business, for an office manager booking wellbeing classes for staff: dense list, keyboard operable, bulk actions, a record of who booked what and when for the finance team, and configuration for someone who will do this monthly for two years. Three differing decisions, named: density over spaciousness, because of repetition; bulk actions over single ones, because of volume; and an audit record, because someone else's money is being spent.",
+      "The booking feature designed twice. Consumer: emphasis on the first booking, generous whitespace, one action per screen, a warm confirmation. Business, for an office manager booking wellbeing classes for staff: dense list, keyboard shortcuts for speed (both versions stay fully keyboard operable), bulk actions, a record of who booked what and when for the finance team, and configuration for someone who will do this monthly for two years. Three differing decisions, named: density over spaciousness, because of repetition; bulk actions over single ones, because of volume; and an audit record, because someone else's money is being spent.",
     freeToolPath:
       "Paper for both versions. No enterprise tooling is required to design an enterprise screen.",
     outputs: [
@@ -2065,8 +2065,8 @@ export const module17: Lesson[] = [
         minutes: 30,
         title: "Read the expectations",
         instructions: [
-          "Read the assigned job-family page for one level above your current work.",
-          "List the expectations in your own words.",
+          "Read the first management level on the assigned page (it lists only management levels).",
+          "List its expectations about influence — stakeholder influence, strategic partnership, how design success is measured — in your own words, and mark team-development and hiring expectations ‘needs a team: out of scope’.",
         ],
       },
       {
@@ -2248,7 +2248,7 @@ export const module17: Lesson[] = [
     misconception:
       "“Strategy is for people above me.” The note you write for your own project is the one that will actually govern your decisions for the next few months. Writing it down is what makes it examinable.",
     example:
-      "The two pages: three choices, each a preference — first-time confidence over power-user speed, the provider's time over feature breadth, and honest states over conversion tricks. Exclusions: no corporate booking work this year, no marketing surfaces, no features that increase the provider's daily message volume. Constraints: one developer part-time, no analytics, a payment provider that cannot be changed, and a provider who is unavailable between ten and four. Risks: late cancellations rising after the easier cancellation flow, with the waiting-list count as the signal. Learning needed: positioning, which this course has no verified source for; and how many bookings come from repeat customers, which nobody currently knows.",
+      "The two pages: three choices, each a preference — first-time confidence over power-user speed, the provider's time over feature breadth, and honest states over conversion tricks. Exclusions: no corporate booking work this year, no marketing surfaces, no features that increase the provider's daily message volume. Constraints: one developer part-time, no analytics, a payment provider that cannot be changed, and a provider who is unavailable between ten and four. Risks: late cancellations rising after the easier cancellation flow, with late cancellations counted in the booking records, checked monthly, as the signal. Learning needed: positioning, which this course has no verified source for; and how many bookings come from repeat customers, which nobody currently knows.",
     freeToolPath:
       "Two pages of plain text. No template or canvas is required.",
     outputs: [

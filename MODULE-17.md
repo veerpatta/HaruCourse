@@ -112,8 +112,8 @@ Use your own material, or the labelled practice material below. Keep its source 
 
 - Case pack · Northside Tool Library. Made up for this module: practice material, not research about a real organisation. Members borrow tools from a side room of the town hall, paying a yearly subscription and a refundable deposit on each loan; most borrow a few times a year. A council community grant covers part of the running cost; it is reviewed each autumn and may be cut.
 - Borrower (member) · May book, cancel, collect and return their own loans. Sees only their own loans, deposits and due dates.
-- Front-desk volunteer (Saturday 10:00–13:00 rota of about twelve) · Checks about forty loans in and out each Saturday and signs up new members on paper. Sees that day’s bookings by first name, tool and locker number. May not see addresses or payments, refund deposits or change fees. New volunteers need a morning of training.
-- Maintenance volunteer (Tuesday evenings) · Marks each tool ready, needs repair or retired in the stock list, and must check every power tool after each loan before it goes out again: an insurance condition. Sees tool histories, not member details.
+- Front-desk volunteer (Saturday 10:00–13:00 rota of about twelve) · Checks about forty loans in and out each Saturday and signs up new members on paper. When three or more are on the rota, one volunteer checks returned power tools at the desk so they can go out the same day; otherwise they wait for Tuesday’s maintenance check. Sees that day’s bookings by first name, tool and locker number. May not see addresses or payments, refund deposits or change fees. New volunteers need a morning of training.
+- Maintenance volunteer (Tuesday evenings) · Marks each tool ready, needs repair or retired in the stock list, and checks every power tool not already checked at the desk. Every power tool must be checked after each loan before it goes out again: an insurance condition. Sees tool histories, not member details.
 - Coordinator (paid, part-time) · Copies each day’s booking requests into the stock list by hand at about 8 pm, sets the weekly locker codes, trains volunteers and allocates the Riverside memberships. Sees all bookings and members’ contact details. May not issue refunds.
 - Treasurer and board · The board, a volunteer committee, sets fees, deposits, opening hours and spending, and sees monthly totals rather than individual loans. The treasurer holds the only login to the payment account, refunds deposits in one batch on Tuesday evenings and writes the grant report.
 - Council grant officer (funder) · Funds 30 memberships for residents of the Riverside estate, receives a report each quarter, and has asked for each resident’s name and what they borrowed, to show the scheme is used.
@@ -919,7 +919,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The exchange, written plainly: a person gives money and a Saturday and gets a class they were confident about attending; the provider gives a place and their time and gets a booking they can rely on. The payer and user coincide here, except when a parent books for a child, where the design must serve both. Costs named: each unclear payment generates roughly one phone call to the provider, who is a single person with limited time; each duplicate payment generates a refund and a lost afternoon. One design decision changes the arithmetic directly: making payment status unambiguous reduces the calls, which is time the provider currently spends on the phone rather than teaching.
+- The exchange, written plainly: a person gives money and a Saturday and gets a class they were confident about attending; the provider gives a place and their time and gets a booking they can rely on. The payer and user coincide here, except when a parent books for a child, where the design must serve both. Costs named: each unclear payment can prompt a phone call to the provider, who is a single person with limited time; each duplicate payment generates a refund and a lost afternoon. One design decision changes the arithmetic directly: making payment status unambiguous reduces the calls, which is time the provider currently spends on the phone rather than teaching.
 
 
 ### Choose where you will do the work
@@ -939,8 +939,8 @@ Use your own material, or the labelled practice material below. Keep its source 
 
 - Case pack · Northside Tool Library. Made up for this module: practice material, not research about a real organisation. Members borrow tools from a side room of the town hall, paying a yearly subscription and a refundable deposit on each loan; most borrow a few times a year. A council community grant covers part of the running cost; it is reviewed each autumn and may be cut.
 - Borrower (member) · May book, cancel, collect and return their own loans. Sees only their own loans, deposits and due dates.
-- Front-desk volunteer (Saturday 10:00–13:00 rota of about twelve) · Checks about forty loans in and out each Saturday and signs up new members on paper. Sees that day’s bookings by first name, tool and locker number. May not see addresses or payments, refund deposits or change fees. New volunteers need a morning of training.
-- Maintenance volunteer (Tuesday evenings) · Marks each tool ready, needs repair or retired in the stock list, and must check every power tool after each loan before it goes out again: an insurance condition. Sees tool histories, not member details.
+- Front-desk volunteer (Saturday 10:00–13:00 rota of about twelve) · Checks about forty loans in and out each Saturday and signs up new members on paper. When three or more are on the rota, one volunteer checks returned power tools at the desk so they can go out the same day; otherwise they wait for Tuesday’s maintenance check. Sees that day’s bookings by first name, tool and locker number. May not see addresses or payments, refund deposits or change fees. New volunteers need a morning of training.
+- Maintenance volunteer (Tuesday evenings) · Marks each tool ready, needs repair or retired in the stock list, and checks every power tool not already checked at the desk. Every power tool must be checked after each loan before it goes out again: an insurance condition. Sees tool histories, not member details.
 - Coordinator (paid, part-time) · Copies each day’s booking requests into the stock list by hand at about 8 pm, sets the weekly locker codes, trains volunteers and allocates the Riverside memberships. Sees all bookings and members’ contact details. May not issue refunds.
 - Treasurer and board · The board, a volunteer committee, sets fees, deposits, opening hours and spending, and sees monthly totals rather than individual loans. The treasurer holds the only login to the payment account, refunds deposits in one batch on Tuesday evenings and writes the grant report.
 - Council grant officer (funder) · Funds 30 memberships for residents of the Riverside estate, receives a report each quarter, and has asked for each resident’s name and what they borrowed, to show the scheme is used.
@@ -1089,7 +1089,7 @@ Section: practice-plan. Stable action: step-3-sort-1.
 
 Six consequences of a design decision at the made up tool library. For each one, decide what kind of cost it is.
 
-An unclear payment screen produces about one phone call per unclear booking, to the part-time coordinator.
+An unclear payment screen produces calls to the part-time coordinator asking whether a deposit went through; nobody has counted them.
 
 - money
 - staff time or attention
@@ -1100,9 +1100,9 @@ An unclear payment screen produces about one phone call per unclear booking, to 
 
 money — It costs no money directly and it is the salary of somebody already employed.
 
-staff time or attention — It is an hour somebody spends on the phone rather than checking tools in. With one part-time paid person, this is the cost that matters most.
+staff time or attention — Each call is time somebody spends on the phone rather than on other work. With one part-time paid person, this is the cost that matters most, even before anybody counts it.
 
-risk — Nothing uncertain is involved; it happens every time.
+risk — The calls are already happening, counted or not; that makes them a running cost rather than an uncertain one.
 
 Now list your own costs the same way, and mark which your design touches.
 
@@ -1289,7 +1289,7 @@ Made-up example. Finding a design lever at the tool library, and finding one nob
 
 **Why it was not a lever:** It costs money the library does not have, takes months, and is not a design decision. I had found a good idea belonging to somebody else.
 
-**What I could actually change:** The payment screen. Unclear payment status produces about one call per unclear booking, and calls arrive during the hour tools are being checked in.
+**What I could actually change:** The payment screen. Unclear payment status produces calls, so far uncounted, and they arrive during the hour tools are being checked in.
 
 **The mechanism, step by step:** The screen states what has been taken and when confirmation arrives. The person does not ring. The staff member is not interrupted during check-in. Nothing else in the operation changes.
 
@@ -1740,8 +1740,8 @@ Use your own material, or the labelled practice material below. Keep its source 
 
 - Case pack · Northside Tool Library. Made up for this module: practice material, not research about a real organisation. Members borrow tools from a side room of the town hall, paying a yearly subscription and a refundable deposit on each loan; most borrow a few times a year. A council community grant covers part of the running cost; it is reviewed each autumn and may be cut.
 - Borrower (member) · May book, cancel, collect and return their own loans. Sees only their own loans, deposits and due dates.
-- Front-desk volunteer (Saturday 10:00–13:00 rota of about twelve) · Checks about forty loans in and out each Saturday and signs up new members on paper. Sees that day’s bookings by first name, tool and locker number. May not see addresses or payments, refund deposits or change fees. New volunteers need a morning of training.
-- Maintenance volunteer (Tuesday evenings) · Marks each tool ready, needs repair or retired in the stock list, and must check every power tool after each loan before it goes out again: an insurance condition. Sees tool histories, not member details.
+- Front-desk volunteer (Saturday 10:00–13:00 rota of about twelve) · Checks about forty loans in and out each Saturday and signs up new members on paper. When three or more are on the rota, one volunteer checks returned power tools at the desk so they can go out the same day; otherwise they wait for Tuesday’s maintenance check. Sees that day’s bookings by first name, tool and locker number. May not see addresses or payments, refund deposits or change fees. New volunteers need a morning of training.
+- Maintenance volunteer (Tuesday evenings) · Marks each tool ready, needs repair or retired in the stock list, and checks every power tool not already checked at the desk. Every power tool must be checked after each loan before it goes out again: an insurance condition. Sees tool histories, not member details.
 - Coordinator (paid, part-time) · Copies each day’s booking requests into the stock list by hand at about 8 pm, sets the weekly locker codes, trains volunteers and allocates the Riverside memberships. Sees all bookings and members’ contact details. May not issue refunds.
 - Treasurer and board · The board, a volunteer committee, sets fees, deposits, opening hours and spending, and sees monthly totals rather than individual loans. The treasurer holds the only login to the payment account, refunds deposits in one batch on Tuesday evenings and writes the grant report.
 - Council grant officer (funder) · Funds 30 memberships for residents of the Riverside estate, receives a report each quarter, and has asked for each resident’s name and what they borrowed, to show the scheme is used.
@@ -2083,9 +2083,9 @@ The payment provider confirms within seconds.
 <details>
 <summary>After your attempt</summary>
 
-a back-stage fact that decides the experience — It would be, if it were slow. Being fast means it is not what sets the timescale.
+a back-stage fact that decides the experience — It lets the screen say “payment received” at once, separately from the booking confirmation.
 
-a back-stage detail with no front-stage effect — Worth having on the blueprint, because it shows the delay is not where everybody assumed.
+a back-stage detail with no front-stage effect — It does reach the front stage: because payment confirms at once, the screen can honestly say so while the booking waits.
 
 a front-stage decision — It happens behind the line.
 
@@ -2189,22 +2189,22 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-The board wants power tools in the out-of-hours lockers to cut the Saturday queue. Your blueprint shows each returned power tool must be checked before it goes out again, and checks happen on Tuesday evenings. What does that fact decide?
+The board wants power tools in the out-of-hours lockers to cut the Saturday queue. Your blueprint shows each returned power tool must be checked before it goes out again, and checks happen only at a staffed desk or on Tuesday evenings, never out of hours. What does that fact decide?
 
 - Only the locker size, since power tools are bulkier than the hand tools stored now.
+- How soon a power tool returned out of hours can be offered again, whatever the lockers allow.
 - Nothing on the front stage, since checks happen behind the line where members never look.
-- How soon a returned power tool can honestly be offered again, whatever the lockers allow.
 
 <details>
 <summary>After your attempt</summary>
 
-Only the locker size, since power tools are bulkier than the hand tools stored now. — Size matters to the lockers; the Tuesday check decides when a tool can go in them at all.
+Only the locker size, since power tools are bulkier than the hand tools stored now. — Size matters to the lockers; when a check can happen decides when a tool can go out again at all.
 
-Nothing on the front stage, since checks happen behind the line where members never look. — Behind the line is exactly where decisive facts live; members meet this one as “unavailable” all week.
+How soon a power tool returned out of hours can be offered again, whatever the lockers allow. — Nobody checks out of hours, so a drill left in a locker on Wednesday waits for a staffed desk or Tuesday’s check, lockers or not. The promise on the booking page has to follow it.
 
-How soon a returned power tool can honestly be offered again, whatever the lockers allow. — A check on Tuesdays caps availability: a drill returned on Wednesday cannot go out again before the next Tuesday, lockers or not. The promise on the booking page has to follow it.
+Nothing on the front stage, since checks happen behind the line where members never look. — Behind the line is exactly where decisive facts live; members meet this one as “unavailable” until somebody can check it.
 
-Improve: Write one decisive fact in step 4 with what it determines about the front stage, as the Tuesday check does here. Record the change in step 5.
+Improve: Write one decisive fact in step 4 with what it determines about the front stage, as the check timing does here. Record the change in step 5.
 
 Check again: Both decisive facts name something the front stage has to follow.
 
@@ -2554,8 +2554,8 @@ Use your own material, or the labelled practice material below. Keep its source 
 
 - Case pack · Northside Tool Library. Made up for this module: practice material, not research about a real organisation. Members borrow tools from a side room of the town hall, paying a yearly subscription and a refundable deposit on each loan; most borrow a few times a year. A council community grant covers part of the running cost; it is reviewed each autumn and may be cut.
 - Borrower (member) · May book, cancel, collect and return their own loans. Sees only their own loans, deposits and due dates.
-- Front-desk volunteer (Saturday 10:00–13:00 rota of about twelve) · Checks about forty loans in and out each Saturday and signs up new members on paper. Sees that day’s bookings by first name, tool and locker number. May not see addresses or payments, refund deposits or change fees. New volunteers need a morning of training.
-- Maintenance volunteer (Tuesday evenings) · Marks each tool ready, needs repair or retired in the stock list, and must check every power tool after each loan before it goes out again: an insurance condition. Sees tool histories, not member details.
+- Front-desk volunteer (Saturday 10:00–13:00 rota of about twelve) · Checks about forty loans in and out each Saturday and signs up new members on paper. When three or more are on the rota, one volunteer checks returned power tools at the desk so they can go out the same day; otherwise they wait for Tuesday’s maintenance check. Sees that day’s bookings by first name, tool and locker number. May not see addresses or payments, refund deposits or change fees. New volunteers need a morning of training.
+- Maintenance volunteer (Tuesday evenings) · Marks each tool ready, needs repair or retired in the stock list, and checks every power tool not already checked at the desk. Every power tool must be checked after each loan before it goes out again: an insurance condition. Sees tool histories, not member details.
 - Coordinator (paid, part-time) · Copies each day’s booking requests into the stock list by hand at about 8 pm, sets the weekly locker codes, trains volunteers and allocates the Riverside memberships. Sees all bookings and members’ contact details. May not issue refunds.
 - Treasurer and board · The board, a volunteer committee, sets fees, deposits, opening hours and spending, and sees monthly totals rather than individual loans. The treasurer holds the only login to the payment account, refunds deposits in one batch on Tuesday evenings and writes the grant report.
 - Council grant officer (funder) · Funds 30 memberships for residents of the Riverside estate, receives a report each quarter, and has asked for each resident’s name and what they borrowed, to show the scheme is used.
@@ -2777,7 +2777,7 @@ One screen serving two roles without failing the third, showing the everyday use
 
 **Start here:** Design the everyday user’s screen first; it is the one nobody starts with.
 
-**Enough:** The third role can see what the other two can see about them.
+**Enough:** The everyday user can see what the other two roles can see about them.
 
 **What others can see:** Shown to the person it is about. Without it, people assume the worst, which is corrosive and frequently correct.
 
@@ -2920,7 +2920,7 @@ Section: practice-plan. Stable action: step-4-sort-6.
 
 Six features somebody might ask for in a made up business version. For each one, decide who it serves and at whose cost.
 
-A control letting a manager cancel a staff member’s booking without telling them.
+A control letting the administrator cancel a staff member’s booking without telling them.
 
 - serves everybody
 - serves the buyer at the user’s cost
@@ -2931,9 +2931,9 @@ A control letting a manager cancel a staff member’s booking without telling th
 
 serves everybody — Somebody turns up to a class they are no longer booked into.
 
-serves the buyer at the user’s cost — It solves a real scheduling problem by making the product unreliable for the person using it. Without telling them is the part that makes it indefensible.
+serves the buyer at the user’s cost — Cancelling and reallocating places is the administrator’s work; the buyer never touches it.
 
-serves the administrator at the user’s cost — The administrator may be the one operating it, and the request comes from above them.
+serves the administrator at the user’s cost — It solves a real scheduling problem by making the product unreliable for the person using it. Without telling them is the part that makes it indefensible.
 
 Now design your own screen, and check the third role would still choose to use the product because of it.
 
@@ -3011,16 +3011,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 The grant officer asks for each Riverside resident’s name and what they borrowed, to show the scheme is used. What should you offer?
 
-- Totals by month and tool type, naming nobody, and why named lists would cut use.
 - A refusal on privacy grounds, so residents can borrow without being watched by anyone.
+- Monthly totals by tool type, small counts grouped, and why named lists would cut use.
 - The named list as requested, since the council pays for every one of the memberships.
 
 <details>
 <summary>After your attempt</summary>
 
-Totals by month and tool type, naming nobody, and why named lists would cut use. — She has to show the scheme is used, which totals do completely. A named list risks residents borrowing less once they know, and then reports that drop as low demand.
-
 A refusal on privacy grounds, so residents can borrow without being watched by anyone. — A refusal with nothing attached leaves her accountability unanswered, and she may seek the list some other way.
+
+Monthly totals by tool type, small counts grouped, and why named lists would cut use. — She has to show the scheme is used, which totals do completely. With only 30 residents a count of one can point to a person, so show any count under five as “fewer than five”. A named list risks residents borrowing less once they know, and then reports that drop as low demand.
 
 The named list as requested, since the council pays for every one of the memberships. — Reasonable from where she sits, and it risks destroying the use she is paying for.
 
@@ -3390,8 +3390,8 @@ Use your own material, or the labelled practice material below. Keep its source 
 
 - Case pack · Northside Tool Library. Made up for this module: practice material, not research about a real organisation. Members borrow tools from a side room of the town hall, paying a yearly subscription and a refundable deposit on each loan; most borrow a few times a year. A council community grant covers part of the running cost; it is reviewed each autumn and may be cut.
 - Borrower (member) · May book, cancel, collect and return their own loans. Sees only their own loans, deposits and due dates.
-- Front-desk volunteer (Saturday 10:00–13:00 rota of about twelve) · Checks about forty loans in and out each Saturday and signs up new members on paper. Sees that day’s bookings by first name, tool and locker number. May not see addresses or payments, refund deposits or change fees. New volunteers need a morning of training.
-- Maintenance volunteer (Tuesday evenings) · Marks each tool ready, needs repair or retired in the stock list, and must check every power tool after each loan before it goes out again: an insurance condition. Sees tool histories, not member details.
+- Front-desk volunteer (Saturday 10:00–13:00 rota of about twelve) · Checks about forty loans in and out each Saturday and signs up new members on paper. When three or more are on the rota, one volunteer checks returned power tools at the desk so they can go out the same day; otherwise they wait for Tuesday’s maintenance check. Sees that day’s bookings by first name, tool and locker number. May not see addresses or payments, refund deposits or change fees. New volunteers need a morning of training.
+- Maintenance volunteer (Tuesday evenings) · Marks each tool ready, needs repair or retired in the stock list, and checks every power tool not already checked at the desk. Every power tool must be checked after each loan before it goes out again: an insurance condition. Sees tool histories, not member details.
 - Coordinator (paid, part-time) · Copies each day’s booking requests into the stock list by hand at about 8 pm, sets the weekly locker codes, trains volunteers and allocates the Riverside memberships. Sees all bookings and members’ contact details. May not issue refunds.
 - Treasurer and board · The board, a volunteer committee, sets fees, deposits, opening hours and spending, and sees monthly totals rather than individual loans. The treasurer holds the only login to the payment account, refunds deposits in one batch on Tuesday evenings and writes the grant report.
 - Council grant officer (funder) · Funds 30 memberships for residents of the Riverside estate, receives a report each quarter, and has asked for each resident’s name and what they borrowed, to show the scheme is used.
@@ -3458,7 +3458,7 @@ The chain traced from adaptation to system effect, whether it feeds back, and th
 
 **Start here:** Draw boxes and arrows on paper, and write a time on every arrow.
 
-**Enough:** At least one arrow has a delay measured in weeks.
+**Enough:** Every arrow has an estimated delay, labelled as an estimate, and you say which delay would hide the loop.
 
 **Loop:** Where the effect of a change feeds back into its own cause. It is what makes a small change produce a large and delayed result.
 
@@ -3823,7 +3823,7 @@ The board says it will “keep an eye on” the one-tap cancellation change. The
 
 - It is enough: nobody can predict every consequence, so watching is the honest option.
 - It is enough if the coordinator checks the stock list carefully every single evening.
-- The effect lands on Saturday, after the desk closes, and gets blamed on low demand.
+- The tool sits idle through Saturday’s desk hours, is freed at 8 pm, and looks like low demand.
 
 <details>
 <summary>After your attempt</summary>
@@ -3832,7 +3832,7 @@ It is enough: nobody can predict every consequence, so watching is the honest op
 
 It is enough if the coordinator checks the stock list carefully every single evening. — Careful checking happens at 8 pm, after Saturday’s desk has closed, which is the delay that hides the loop.
 
-The effect lands on Saturday, after the desk closes, and gets blamed on low demand. — Watching finds effects after they compound and get attributed to something else. Tracing the loop takes an hour: one-tap cancel, tools idle on Saturday, members see “booked”, requests fall, the board reads it as low demand.
+The tool sits idle through Saturday’s desk hours, is freed at 8 pm, and looks like low demand. — Watching finds effects after they compound and get attributed to something else. Tracing the loop takes an hour: one-tap cancel, tools idle on Saturday, members see “booked”, requests fall, the board reads it as low demand.
 
 Improve: Trace the loop in step 2 with a delay on every arrow, before shipping. Record the change in step 5.
 
@@ -4128,7 +4128,7 @@ Product strategy connects a real problem, evidence, constraints and trade-offs t
 - **Affect or block:** Anybody whose agreement you need or whose disagreement would stop it. It includes people with no formal authority at all.
 - **Interest:** How much they care about this work. It is independent of whether they can do anything about it.
 
-**Quick example.** From the case pack: you propose that the Saturday desk releases Friday-night cancellations at opening; the treasurer refunds deposits on Tuesdays; the maintenance volunteer must check power tools after every loan. Changed constraint (risk): the insurer now says no power tool may be released unless the stock list shows its last check.
+**Quick example.** From the case pack: you propose that the Saturday desk releases Friday-night cancellations at opening; the treasurer refunds deposits on Tuesdays; power tools must be checked after every loan, by the maintenance volunteer unless the desk did it. Changed constraint (risk): the insurer now says no power tool may be released unless the stock list shows its last check.
 
 The reader demonstrates and guides the task before asking for “Everybody who can affect or block the work, and what each is accountable for”.
 
@@ -4207,8 +4207,8 @@ Use your own material, or the labelled practice material below. Keep its source 
 
 - Case pack · Northside Tool Library. Made up for this module: practice material, not research about a real organisation. Members borrow tools from a side room of the town hall, paying a yearly subscription and a refundable deposit on each loan; most borrow a few times a year. A council community grant covers part of the running cost; it is reviewed each autumn and may be cut.
 - Borrower (member) · May book, cancel, collect and return their own loans. Sees only their own loans, deposits and due dates.
-- Front-desk volunteer (Saturday 10:00–13:00 rota of about twelve) · Checks about forty loans in and out each Saturday and signs up new members on paper. Sees that day’s bookings by first name, tool and locker number. May not see addresses or payments, refund deposits or change fees. New volunteers need a morning of training.
-- Maintenance volunteer (Tuesday evenings) · Marks each tool ready, needs repair or retired in the stock list, and must check every power tool after each loan before it goes out again: an insurance condition. Sees tool histories, not member details.
+- Front-desk volunteer (Saturday 10:00–13:00 rota of about twelve) · Checks about forty loans in and out each Saturday and signs up new members on paper. When three or more are on the rota, one volunteer checks returned power tools at the desk so they can go out the same day; otherwise they wait for Tuesday’s maintenance check. Sees that day’s bookings by first name, tool and locker number. May not see addresses or payments, refund deposits or change fees. New volunteers need a morning of training.
+- Maintenance volunteer (Tuesday evenings) · Marks each tool ready, needs repair or retired in the stock list, and checks every power tool not already checked at the desk. Every power tool must be checked after each loan before it goes out again: an insurance condition. Sees tool histories, not member details.
 - Coordinator (paid, part-time) · Copies each day’s booking requests into the stock list by hand at about 8 pm, sets the weekly locker codes, trains volunteers and allocates the Riverside memberships. Sees all bookings and members’ contact details. May not issue refunds.
 - Treasurer and board · The board, a volunteer committee, sets fees, deposits, opening hours and spending, and sees monthly totals rather than individual loans. The treasurer holds the only login to the payment account, refunds deposits in one batch on Tuesday evenings and writes the grant report.
 - Council grant officer (funder) · Funds 30 memberships for residents of the Riverside estate, receives a report each quarter, and has asked for each resident’s name and what they borrowed, to show the scheme is used.
@@ -4234,7 +4234,7 @@ Everybody who can affect or block the work listed by what they are accountable f
 
 **Start here:** For each person, write the question their own manager asks them.
 
-**Enough:** Nobody on your list is described only by their role.
+**Enough:** Each person on your list has what they are accountable for written beside their role.
 
 **Accountability:** What somebody else asks them about: a date, a budget, a queue, a number they report. It predicts behaviour far better than a job title.
 
@@ -4411,7 +4411,7 @@ What your work does for them, or an honest statement that you are asking a favou
 
 Section: practice-plan. Stable action: step-4-try.
 
-From the case pack: you propose that the Saturday desk releases Friday-night cancellations at opening; the treasurer refunds deposits on Tuesdays; the maintenance volunteer must check power tools after every loan. Changed constraint (risk): the insurer now says no power tool may be released unless the stock list shows its last check.
+From the case pack: you propose that the Saturday desk releases Friday-night cancellations at opening; the treasurer refunds deposits on Tuesdays; power tools must be checked after every loan, by the maintenance volunteer unless the desk did it. Changed constraint (risk): the insurer now says no power tool may be released unless the stock list shows its last check.
 
 How should your approach change?
 
@@ -4677,7 +4677,7 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-The maintenance volunteer has agreed with everything in two meetings and done nothing since. The case pack says he must check each returned power tool before it goes out again. Who needs your attention first?
+The maintenance volunteer has agreed with everything in two meetings and done nothing since. The case pack says he checks returned power tools before they go out again, as insurance requires. Who needs your attention first?
 
 - Both equally, since giving one more attention than the other would seem unfair.
 - The quiet volunteer: an unstated worry about unchecked power tools could stall it unseen.
@@ -4795,7 +4795,7 @@ Affect or block: Anybody whose agreement you need or whose disagreement would st
 Interest: How much they care about this work. It is independent of whether they can do anything about it.
 
 Supplied practice material (fictional or labelled practice, not my research):
-From the case pack: you propose that the Saturday desk releases Friday-night cancellations at opening; the treasurer refunds deposits on Tuesdays; the maintenance volunteer must check power tools after every loan. Changed constraint (risk): the insurer now says no power tool may be released unless the stock list shows its last check.
+From the case pack: you propose that the Saturday desk releases Friday-night cancellations at opening; the treasurer refunds deposits on Tuesdays; power tools must be checked after every loan, by the maintenance volunteer unless the desk did it. Changed constraint (risk): the insurer now says no power tool may be released unless the stock list shows its last check.
 
 Activity: Change one constraint in the supplied strategy case. Ask me which choice changes, who gains, who carries the cost and what evidence would make me reconsider.
 
@@ -4843,7 +4843,7 @@ Adequate evidence: A placement on both axes with the low-influence allies marked
 
 1 — Both axes without identifying allies.
 
-2 — Both, with allies and absent-minded blockers marked.
+2 — Both axes, with the high-interest, low-influence allies marked.
 
 3 — As adequate, and a high-interest, low-influence person is identified as a source of knowledge.
 
@@ -5005,8 +5005,8 @@ Use your own material, or the labelled practice material below. Keep its source 
 
 - Case pack · Northside Tool Library. Made up for this module: practice material, not research about a real organisation. Members borrow tools from a side room of the town hall, paying a yearly subscription and a refundable deposit on each loan; most borrow a few times a year. A council community grant covers part of the running cost; it is reviewed each autumn and may be cut.
 - Borrower (member) · May book, cancel, collect and return their own loans. Sees only their own loans, deposits and due dates.
-- Front-desk volunteer (Saturday 10:00–13:00 rota of about twelve) · Checks about forty loans in and out each Saturday and signs up new members on paper. Sees that day’s bookings by first name, tool and locker number. May not see addresses or payments, refund deposits or change fees. New volunteers need a morning of training.
-- Maintenance volunteer (Tuesday evenings) · Marks each tool ready, needs repair or retired in the stock list, and must check every power tool after each loan before it goes out again: an insurance condition. Sees tool histories, not member details.
+- Front-desk volunteer (Saturday 10:00–13:00 rota of about twelve) · Checks about forty loans in and out each Saturday and signs up new members on paper. When three or more are on the rota, one volunteer checks returned power tools at the desk so they can go out the same day; otherwise they wait for Tuesday’s maintenance check. Sees that day’s bookings by first name, tool and locker number. May not see addresses or payments, refund deposits or change fees. New volunteers need a morning of training.
+- Maintenance volunteer (Tuesday evenings) · Marks each tool ready, needs repair or retired in the stock list, and checks every power tool not already checked at the desk. Every power tool must be checked after each loan before it goes out again: an insurance condition. Sees tool histories, not member details.
 - Coordinator (paid, part-time) · Copies each day’s booking requests into the stock list by hand at about 8 pm, sets the weekly locker codes, trains volunteers and allocates the Riverside memberships. Sees all bookings and members’ contact details. May not issue refunds.
 - Treasurer and board · The board, a volunteer committee, sets fees, deposits, opening hours and spending, and sees monthly totals rather than individual loans. The treasurer holds the only login to the payment account, refunds deposits in one batch on Tuesday evenings and writes the grant report.
 - Council grant officer (funder) · Funds 30 memberships for residents of the Riverside estate, receives a report each quarter, and has asked for each resident’s name and what they borrowed, to show the scheme is used.
@@ -5032,7 +5032,7 @@ One open decision, with knowns, assumptions and guesses separated, and which the
 
 **Start here:** Write the knowns first, then cross off everything you could not show somebody.
 
-**Enough:** Your knowns list is shorter than you expected.
+**Enough:** Every item on your knowns list has its evidence named beside it.
 
 **Know:** Something you could show somebody: a count, a record, an observation. Far less than most lists of knowns contain.
 
@@ -5757,7 +5757,7 @@ Product strategy connects a real problem, evidence, constraints and trade-offs t
 
 - **Positioning:** How a product is described relative to the alternatives people actually consider. This course has no verified free source for it and will not teach it from an unverified one.
 - **A gap that matters:** One where a real decision would change. A gap that changes nothing is worth noting and not worth closing this month.
-- **Retrievable:** You can actually open it, today, without an account. A page behind a sign-up is not retrievable for this purpose.
+- **Retrievable:** You can actually open it, today, without paying or creating a vendor account. A page behind a sign-up is not retrievable for this purpose; a public-library loan is.
 
 **Quick example.** From the case pack: the board wants to describe the library against the hardware shop’s hire counter and a sharing app; nobody has a verified source on positioning; the grant is reviewed each autumn. Changed constraint (organisation): this year’s grant form asks how the library differs from commercial hire.
 
@@ -5784,11 +5784,11 @@ Section: learn. Stable action: learn-2.
 Vendor content on strategy is abundant, promotional and usually unverifiable.
 
 
-### Idea 3: Apply the catalog's rules: retrievable, free, scope-reviewed,…
+### Idea 3: Apply the catalog's rules: retrievable, free (no payment, tria…
 
 Section: learn. Stable action: learn-3.
 
-Apply the catalog's rules: retrievable, free, scope-reviewed, dated, bounded.
+Apply the catalog's rules: retrievable, free (no payment, trial or vendor account; a public-library loan counts as free), scope-reviewed, dated, bounded.
 
 
 ### A rejected source is a result worth recording
@@ -5838,8 +5838,8 @@ Use your own material, or the labelled practice material below. Keep its source 
 
 - Case pack · Northside Tool Library. Made up for this module: practice material, not research about a real organisation. Members borrow tools from a side room of the town hall, paying a yearly subscription and a refundable deposit on each loan; most borrow a few times a year. A council community grant covers part of the running cost; it is reviewed each autumn and may be cut.
 - Borrower (member) · May book, cancel, collect and return their own loans. Sees only their own loans, deposits and due dates.
-- Front-desk volunteer (Saturday 10:00–13:00 rota of about twelve) · Checks about forty loans in and out each Saturday and signs up new members on paper. Sees that day’s bookings by first name, tool and locker number. May not see addresses or payments, refund deposits or change fees. New volunteers need a morning of training.
-- Maintenance volunteer (Tuesday evenings) · Marks each tool ready, needs repair or retired in the stock list, and must check every power tool after each loan before it goes out again: an insurance condition. Sees tool histories, not member details.
+- Front-desk volunteer (Saturday 10:00–13:00 rota of about twelve) · Checks about forty loans in and out each Saturday and signs up new members on paper. When three or more are on the rota, one volunteer checks returned power tools at the desk so they can go out the same day; otherwise they wait for Tuesday’s maintenance check. Sees that day’s bookings by first name, tool and locker number. May not see addresses or payments, refund deposits or change fees. New volunteers need a morning of training.
+- Maintenance volunteer (Tuesday evenings) · Marks each tool ready, needs repair or retired in the stock list, and checks every power tool not already checked at the desk. Every power tool must be checked after each loan before it goes out again: an insurance condition. Sees tool histories, not member details.
 - Coordinator (paid, part-time) · Copies each day’s booking requests into the stock list by hand at about 8 pm, sets the weekly locker codes, trains volunteers and allocates the Riverside memberships. Sees all bookings and members’ contact details. May not issue refunds.
 - Treasurer and board · The board, a volunteer committee, sets fees, deposits, opening hours and spending, and sees monthly totals rather than individual loans. The treasurer holds the only login to the payment account, refunds deposits in one batch on Tuesday evenings and writes the grant report.
 - Council grant officer (funder) · Funds 30 memberships for residents of the Riverside estate, receives a report each quarter, and has asked for each resident’s name and what they borrowed, to show the scheme is used.
@@ -5910,7 +5910,7 @@ How does the gap’s priority change?
 <details>
 <summary>After your attempt</summary>
 
-It now changes a decision, so close it before autumn using only claims you can support. — A gap that changes no decision can wait; one that changes the grant form cannot. The answer can rest on what the pack shows — deposits, no purchase, local collection — while market claims wait for a source. Affected: the board, and every member if the grant is lost.
+It now changes a decision, so close it before autumn using only claims you can support. — A gap that changes no decision can wait; one that changes the grant form cannot. The answer can rest on what the pack shows about the library — a yearly subscription, refundable deposits, run mostly by volunteers — while market claims wait for a source. Affected: the board, and every member if the grant is lost.
 
 It stays interesting rather than urgent, since positioning is not really a design question. — It was interesting while no decision turned on it; the form makes it decide something.
 
@@ -5963,7 +5963,7 @@ The five checks written out, taken from this course’s own selection rules.
 
 **Enough:** All five are checks somebody else could apply the same way.
 
-**Retrievable:** You can actually open it, today, without an account. A page behind a sign-up is not retrievable for this purpose.
+**Retrievable:** You can actually open it, today, without paying or creating a vendor account. A page behind a sign-up is not retrievable for this purpose; a public-library loan is.
 
 **Scope-reviewed:** You can say what it covers and what it does not. A source whose limits you cannot write is one you cannot use responsibly.
 
@@ -5972,11 +5972,11 @@ The five checks written out, taken from this course’s own selection rules.
 
 Section: practice-plan. Stable action: write-five-checks.
 
-Retrievable, free, scope-reviewed, dated, and possible to write limits for. Take them from this course’s own rules.
+Retrievable, free to read with no payment, trial or vendor account (a public-library loan counts as free), scope-reviewed, dated, and possible to write limits for. Take them from this course’s own rules.
 
 **Answer:** The five checks you will apply to any candidate source
 
-Retrievable, free, scope-reviewed, dated, and possible to write limits for. Take them from this course’s own rules.
+Retrievable, free to read with no payment, trial or vendor account (a public-library loan counts as free), scope-reviewed, dated, and possible to write limits for. Take them from this course’s own rules.
 
 
 ### Assess one candidate
@@ -6103,7 +6103,7 @@ A standard book on the subject, borrowed from a public library, dated, with its 
 
 usable — Dated, evidenced and scope-statable. A library is a legitimate route this course cannot link to, and borrowing is not a paid dependency.
 
-reject and record — Nothing about it fails a check.
+reject and record — A library card is not a vendor account, so nothing about it fails a check.
 
 usable for part of it — It may cover less than you need, which is a note rather than a partial verdict.
 
@@ -6144,7 +6144,7 @@ Section: practice-plan. Stable action: step-4-sort-4.
 
 Six made up candidate sources on positioning. For each one, decide the verdict under this course’s rules.
 
-A free video course requiring a sign-up, with an emailed certificate.
+A free video course that requires a vendor account and signs you up to sales emails.
 
 - usable
 - reject and record
@@ -6153,9 +6153,9 @@ A free video course requiring a sign-up, with an emailed certificate.
 <details>
 <summary>After your attempt</summary>
 
-usable — An account requirement makes it not retrievable for this purpose, and this course does not require sign-ups.
+usable — A vendor account requirement makes it not retrievable for this purpose, and this course does not require sign-ups.
 
-reject and record — Rejected on the account requirement, recorded with the reason.
+reject and record — Rejected on the vendor-account requirement, recorded with the reason.
 
 usable for part of it — Nothing is available without the account.
 
@@ -6430,7 +6430,7 @@ What I am trying to do: Write what you would need to learn about market position
 Key idea or terms:
 Positioning: How a product is described relative to the alternatives people actually consider. This course has no verified free source for it and will not teach it from an unverified one.
 A gap that matters: One where a real decision would change. A gap that changes nothing is worth noting and not worth closing this month.
-Retrievable: You can actually open it, today, without an account. A page behind a sign-up is not retrievable for this purpose.
+Retrievable: You can actually open it, today, without paying or creating a vendor account. A page behind a sign-up is not retrievable for this purpose; a public-library loan is.
 
 Supplied practice material (fictional or labelled practice, not my research):
 From the case pack: the board wants to describe the library against the hardware shop’s hire counter and a sharing app; nobody has a verified source on positioning; the grant is reviewed each autumn. Changed constraint (organisation): this year’s grant form asks how the library differs from commercial hire.
@@ -6532,7 +6532,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 - The gap is documented in this course's resource library: market positioning and segmentation have no verified free primary source, after attempts that returned navigation pages and a refusal. That is why every strategy lesson here has been about constraint, structure and stakeholders rather than about where a product sits in a market.
 - The reason it is hard to source is worth understanding. Most freely available strategy content is published by companies selling something, is written to be persuasive rather than examinable, and cites no evidence you can check. That does not make it wrong; it makes it unverifiable, which is a different problem and the one this course's rules are built around.
-- The rules are reusable: can you retrieve the exact page, is it free without an account or trial, can you review its actual teaching scope, does it state a date, and can you write down what it does not cover. A source failing any of those goes in the record as attempted, with the reason.
+- The rules are reusable: can you retrieve the exact page, is it free to read with no payment, trial or vendor account (a public-library loan counts as free), can you review its actual teaching scope, does it state a date, and can you write down what it does not cover. A source failing any of those goes in the record as attempted, with the reason.
 - The discipline that matters is not teaching yourself from a source you would refuse to assign. A designer who learns positioning from a vendor's blog and then repeats it confidently has acquired a vocabulary rather than an understanding, which is worse than the gap.
 
 [Ryan Singer: Shape Up](https://basecamp.com/shapeup/webbook).
@@ -6623,7 +6623,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The booking feature designed twice. Consumer: emphasis on the first booking, generous whitespace, one action per screen, a warm confirmation. Business, for an office manager booking wellbeing classes for staff: dense list, keyboard operable, bulk actions, a record of who booked what and when for the finance team, and configuration for someone who will do this monthly for two years. Three differing decisions, named: density over spaciousness, because of repetition; bulk actions over single ones, because of volume; and an audit record, because someone else's money is being spent.
+- The booking feature designed twice. Consumer: emphasis on the first booking, generous whitespace, one action per screen, a warm confirmation. Business, for an office manager booking wellbeing classes for staff: dense list, keyboard shortcuts for speed (both versions stay fully keyboard operable), bulk actions, a record of who booked what and when for the finance team, and configuration for someone who will do this monthly for two years. Three differing decisions, named: density over spaciousness, because of repetition; bulk actions over single ones, because of volume; and an audit record, because someone else's money is being spent.
 
 
 ### Choose where you will do the work
@@ -6643,8 +6643,8 @@ Use your own material, or the labelled practice material below. Keep its source 
 
 - Case pack · Northside Tool Library. Made up for this module: practice material, not research about a real organisation. Members borrow tools from a side room of the town hall, paying a yearly subscription and a refundable deposit on each loan; most borrow a few times a year. A council community grant covers part of the running cost; it is reviewed each autumn and may be cut.
 - Borrower (member) · May book, cancel, collect and return their own loans. Sees only their own loans, deposits and due dates.
-- Front-desk volunteer (Saturday 10:00–13:00 rota of about twelve) · Checks about forty loans in and out each Saturday and signs up new members on paper. Sees that day’s bookings by first name, tool and locker number. May not see addresses or payments, refund deposits or change fees. New volunteers need a morning of training.
-- Maintenance volunteer (Tuesday evenings) · Marks each tool ready, needs repair or retired in the stock list, and must check every power tool after each loan before it goes out again: an insurance condition. Sees tool histories, not member details.
+- Front-desk volunteer (Saturday 10:00–13:00 rota of about twelve) · Checks about forty loans in and out each Saturday and signs up new members on paper. When three or more are on the rota, one volunteer checks returned power tools at the desk so they can go out the same day; otherwise they wait for Tuesday’s maintenance check. Sees that day’s bookings by first name, tool and locker number. May not see addresses or payments, refund deposits or change fees. New volunteers need a morning of training.
+- Maintenance volunteer (Tuesday evenings) · Marks each tool ready, needs repair or retired in the stock list, and checks every power tool not already checked at the desk. Every power tool must be checked after each loan before it goes out again: an insurance condition. Sees tool histories, not member details.
 - Coordinator (paid, part-time) · Copies each day’s booking requests into the stock list by hand at about 8 pm, sets the weekly locker codes, trains volunteers and allocates the Riverside memberships. Sees all bookings and members’ contact details. May not issue refunds.
 - Treasurer and board · The board, a volunteer committee, sets fees, deposits, opening hours and spending, and sees monthly totals rather than individual loans. The treasurer holds the only login to the payment account, refunds deposits in one batch on Tuesday evenings and writes the grant report.
 - Council grant officer (funder) · Funds 30 memberships for residents of the Riverside estate, receives a report each quarter, and has asked for each resident’s name and what they borrowed, to show the scheme is used.
@@ -7448,8 +7448,8 @@ Use your own material, or the labelled practice material below. Keep its source 
 
 - Case pack · Northside Tool Library. Made up for this module: practice material, not research about a real organisation. Members borrow tools from a side room of the town hall, paying a yearly subscription and a refundable deposit on each loan; most borrow a few times a year. A council community grant covers part of the running cost; it is reviewed each autumn and may be cut.
 - Borrower (member) · May book, cancel, collect and return their own loans. Sees only their own loans, deposits and due dates.
-- Front-desk volunteer (Saturday 10:00–13:00 rota of about twelve) · Checks about forty loans in and out each Saturday and signs up new members on paper. Sees that day’s bookings by first name, tool and locker number. May not see addresses or payments, refund deposits or change fees. New volunteers need a morning of training.
-- Maintenance volunteer (Tuesday evenings) · Marks each tool ready, needs repair or retired in the stock list, and must check every power tool after each loan before it goes out again: an insurance condition. Sees tool histories, not member details.
+- Front-desk volunteer (Saturday 10:00–13:00 rota of about twelve) · Checks about forty loans in and out each Saturday and signs up new members on paper. When three or more are on the rota, one volunteer checks returned power tools at the desk so they can go out the same day; otherwise they wait for Tuesday’s maintenance check. Sees that day’s bookings by first name, tool and locker number. May not see addresses or payments, refund deposits or change fees. New volunteers need a morning of training.
+- Maintenance volunteer (Tuesday evenings) · Marks each tool ready, needs repair or retired in the stock list, and checks every power tool not already checked at the desk. Every power tool must be checked after each loan before it goes out again: an insurance condition. Sees tool histories, not member details.
 - Coordinator (paid, part-time) · Copies each day’s booking requests into the stock list by hand at about 8 pm, sets the weekly locker codes, trains volunteers and allocates the Riverside memberships. Sees all bookings and members’ contact details. May not issue refunds.
 - Treasurer and board · The board, a volunteer committee, sets fees, deposits, opening hours and spending, and sees monthly totals rather than individual loans. The treasurer holds the only login to the payment account, refunds deposits in one batch on Tuesday evenings and writes the grant report.
 - Council grant officer (funder) · Funds 30 memberships for residents of the Riverside estate, receives a report each quarter, and has asked for each resident’s name and what they borrowed, to show the scheme is used.
@@ -7960,7 +7960,7 @@ It is fair if the trial is kept short and members are told about it in advance. 
 
 A trial measures effect; it cannot make an obstructed exit honest, so the line holds. — It will very likely reduce cancellations; that was never in doubt. Testing it turns a question about honesty into one about evidence, which is how these things get built.
 
-Improve: Write your line in step 5 so it covers false statements regardless of their effect. Record the change.
+Improve: Write your line in step 5 so it covers obstructed exits and false statements, regardless of their effect. Record the change.
 
 Check again: Your line would still hold if the dishonest version worked well.
 
@@ -8186,7 +8186,7 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 
 ### Start here: in everyday words
 
-Product strategy connects a real problem, evidence, constraints and trade-offs to a choice about what to do next. In this lesson, your first small result is: The expectations from one published job-family page, written in your own words.
+Product strategy connects a real problem, evidence, constraints and trade-offs to a choice about what to do next. In this lesson, your first small result is: The influence expectations from the first management level on one published job-family page, written in your own words, with team-development and hiring ones marked out of scope.
 
 **Words you will use**
 
@@ -8196,7 +8196,7 @@ Product strategy connects a real problem, evidence, constraints and trade-offs t
 
 **Quick example.** From the case pack: you are a volunteer designer with no authority; you can propose changes to the coordinator; the board decides spending. Changed constraint (organisation): the coordinator leaves, and the board says proposals now go straight to its monthly meeting.
 
-The reader demonstrates and guides the task before asking for “The expectations from the assigned job-family page, one level above your current work”.
+The reader demonstrates and guides the task before asking for “The influence expectations from the first management level on the assigned page”.
 
 ### What this lesson will help you do
 
@@ -8273,8 +8273,8 @@ Use your own material, or the labelled practice material below. Keep its source 
 
 - Case pack · Northside Tool Library. Made up for this module: practice material, not research about a real organisation. Members borrow tools from a side room of the town hall, paying a yearly subscription and a refundable deposit on each loan; most borrow a few times a year. A council community grant covers part of the running cost; it is reviewed each autumn and may be cut.
 - Borrower (member) · May book, cancel, collect and return their own loans. Sees only their own loans, deposits and due dates.
-- Front-desk volunteer (Saturday 10:00–13:00 rota of about twelve) · Checks about forty loans in and out each Saturday and signs up new members on paper. Sees that day’s bookings by first name, tool and locker number. May not see addresses or payments, refund deposits or change fees. New volunteers need a morning of training.
-- Maintenance volunteer (Tuesday evenings) · Marks each tool ready, needs repair or retired in the stock list, and must check every power tool after each loan before it goes out again: an insurance condition. Sees tool histories, not member details.
+- Front-desk volunteer (Saturday 10:00–13:00 rota of about twelve) · Checks about forty loans in and out each Saturday and signs up new members on paper. When three or more are on the rota, one volunteer checks returned power tools at the desk so they can go out the same day; otherwise they wait for Tuesday’s maintenance check. Sees that day’s bookings by first name, tool and locker number. May not see addresses or payments, refund deposits or change fees. New volunteers need a morning of training.
+- Maintenance volunteer (Tuesday evenings) · Marks each tool ready, needs repair or retired in the stock list, and checks every power tool not already checked at the desk. Every power tool must be checked after each loan before it goes out again: an insurance condition. Sees tool histories, not member details.
 - Coordinator (paid, part-time) · Copies each day’s booking requests into the stock list by hand at about 8 pm, sets the weekly locker codes, trains volunteers and allocates the Riverside memberships. Sees all bookings and members’ contact details. May not issue refunds.
 - Treasurer and board · The board, a volunteer committee, sets fees, deposits, opening hours and spending, and sees monthly totals rather than individual loans. The treasurer holds the only login to the payment account, refunds deposits in one batch on Tuesday evenings and writes the grant report.
 - Council grant officer (funder) · Funds 30 memberships for residents of the Riverside estate, receives a report each quarter, and has asked for each resident’s name and what they borrowed, to show the scheme is used.
@@ -8293,12 +8293,12 @@ Use your own material, or the labelled practice material below. Keep its source 
 
 Section: practice-plan. Stable action: step-1-brief.
 
-The expectations from one published job-family page, written in your own words.
+The influence expectations from the first management level on one published job-family page, written in your own words, with team-development and hiring ones marked out of scope.
 
-- Read the assigned job-family page for one level above your current work.
-- List the expectations in your own words.
+- Read the first management level on the assigned page (it lists only management levels).
+- List its expectations about influence — stakeholder influence, strategic partnership, how design success is measured — in your own words, and mark team-development and hiring expectations ‘needs a team: out of scope’.
 
-**Start here:** Read the level above the work you are currently doing rather than the one you want.
+**Start here:** Read the first management level only; it is the closest the page comes to your current work.
 
 **Enough:** Every expectation is in your words and describes a behaviour.
 
@@ -8307,15 +8307,15 @@ The expectations from one published job-family page, written in your own words.
 **Published expectations:** One employer’s written description of what a level means. It is evidence about that employer and not a market standard.
 
 
-### The expectations from the assigned job-family page, one level above your current work
+### The influence expectations from the first management level on the assigned page
 
 Section: practice-plan. Stable action: write-expectations-listed.
 
-In your own words. Copying the page teaches nothing and makes the comparison harder.
+In your own words. Copying the page teaches nothing and makes the comparison harder. The page lists only management levels: mark team-development and hiring expectations ‘needs a team: out of scope’.
 
-**Answer:** The expectations from the assigned job-family page, one level above your current work
+**Answer:** The influence expectations from the first management level on the assigned page
 
-In your own words. Copying the page teaches nothing and makes the comparison harder.
+In your own words. Copying the page teaches nothing and makes the comparison harder. The page lists only management levels: mark team-development and hiring expectations ‘needs a team: out of scope’.
 
 
 ### Compare against artefacts
@@ -8660,7 +8660,7 @@ In the case pack you are a volunteer designer with no authority over volunteers,
 
 Only partly, since influence follows authority and you hold none in the library. — Authority helps; the expectations are written as behaviours precisely because they are not the same thing.
 
-Not yet: published expectations describe managers, so a volunteer cannot meet them. — Several expectations describe influence without a team, and this module’s artefacts evidence some of them directly.
+Not yet: published expectations describe managers, so a volunteer cannot meet them. — This page does describe managers; its influence expectations are behaviours you can practise without a team, and this module’s artefacts evidence some of them directly.
 
 It is practisable: take a prepared case on cancellations to the coordinator for the board. — The expectations describe behaviour — making decisions legible, influencing people who do not report to you — and taking a prepared argument to the person who can change something is available at any level.
 
@@ -8855,12 +8855,12 @@ From the case pack: you are a volunteer designer with no authority; you can prop
 Activity: Change one constraint in the supplied strategy case. Ask me which choice changes, who gains, who carries the cost and what evidence would make me reconsider.
 
 Ask one question at a time, at most three questions. Give a small hint only if I ask; leave the decisions and revision to me. Use only the anonymized material I paste. Label role-play as simulation. Never invent participants, quotes, research results or measured impact. Do not award a score or pass. If evidence is missing, say what is missing. Finish by asking me to revise one part and explain why.
-When the activity is finished, tell me to return to the course answer called “The expectations from the assigned job-family page, one level above your current work” and write my own decision. Do not write that answer for me.
+When the activity is finished, tell me to return to the course answer called “The influence expectations from the first management level on the assigned page” and write my own decision. Do not write that answer for me.
 ```
 
-**Come back to the course:** Return to “The expectations from the assigned job-family page, one level above your current work”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
+**Come back to the course:** Return to “The influence expectations from the first management level on the assigned page”. Write or revise the answer in your own words, then name one reason for your choice. The AI conversation is practice; your course answer is the work you keep.
 
-**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “The expectations from the assigned job-family page, one level above your current work” and write one sentence in your own words.
+**Continue without AI:** Stay in this course and use the first “Try a supplied example” question. Choose an answer, read the explanation, then return to “The influence expectations from the first management level on the assigned page” and write one sentence in your own words.
 
 </details>
 <details>
@@ -9040,7 +9040,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The two pages: three choices, each a preference — first-time confidence over power-user speed, the provider's time over feature breadth, and honest states over conversion tricks. Exclusions: no corporate booking work this year, no marketing surfaces, no features that increase the provider's daily message volume. Constraints: one developer part-time, no analytics, a payment provider that cannot be changed, and a provider who is unavailable between ten and four. Risks: late cancellations rising after the easier cancellation flow, with the waiting-list count as the signal. Learning needed: positioning, which this course has no verified source for; and how many bookings come from repeat customers, which nobody currently knows.
+- The two pages: three choices, each a preference — first-time confidence over power-user speed, the provider's time over feature breadth, and honest states over conversion tricks. Exclusions: no corporate booking work this year, no marketing surfaces, no features that increase the provider's daily message volume. Constraints: one developer part-time, no analytics, a payment provider that cannot be changed, and a provider who is unavailable between ten and four. Risks: late cancellations rising after the easier cancellation flow, with late cancellations counted in the booking records, checked monthly, as the signal. Learning needed: positioning, which this course has no verified source for; and how many bookings come from repeat customers, which nobody currently knows.
 
 
 ### Choose where you will do the work
@@ -9060,8 +9060,8 @@ Use your own material, or the labelled practice material below. Keep its source 
 
 - Case pack · Northside Tool Library. Made up for this module: practice material, not research about a real organisation. Members borrow tools from a side room of the town hall, paying a yearly subscription and a refundable deposit on each loan; most borrow a few times a year. A council community grant covers part of the running cost; it is reviewed each autumn and may be cut.
 - Borrower (member) · May book, cancel, collect and return their own loans. Sees only their own loans, deposits and due dates.
-- Front-desk volunteer (Saturday 10:00–13:00 rota of about twelve) · Checks about forty loans in and out each Saturday and signs up new members on paper. Sees that day’s bookings by first name, tool and locker number. May not see addresses or payments, refund deposits or change fees. New volunteers need a morning of training.
-- Maintenance volunteer (Tuesday evenings) · Marks each tool ready, needs repair or retired in the stock list, and must check every power tool after each loan before it goes out again: an insurance condition. Sees tool histories, not member details.
+- Front-desk volunteer (Saturday 10:00–13:00 rota of about twelve) · Checks about forty loans in and out each Saturday and signs up new members on paper. When three or more are on the rota, one volunteer checks returned power tools at the desk so they can go out the same day; otherwise they wait for Tuesday’s maintenance check. Sees that day’s bookings by first name, tool and locker number. May not see addresses or payments, refund deposits or change fees. New volunteers need a morning of training.
+- Maintenance volunteer (Tuesday evenings) · Marks each tool ready, needs repair or retired in the stock list, and checks every power tool not already checked at the desk. Every power tool must be checked after each loan before it goes out again: an insurance condition. Sees tool histories, not member details.
 - Coordinator (paid, part-time) · Copies each day’s booking requests into the stock list by hand at about 8 pm, sets the weekly locker codes, trains volunteers and allocates the Riverside memberships. Sees all bookings and members’ contact details. May not issue refunds.
 - Treasurer and board · The board, a volunteer committee, sets fees, deposits, opening hours and spending, and sees monthly totals rather than individual loans. The treasurer holds the only login to the payment account, refunds deposits in one batch on Tuesday evenings and writes the grant report.
 - Council grant officer (funder) · Funds 30 memberships for residents of the Riverside estate, receives a report each quarter, and has asked for each resident’s name and what they borrowed, to show the scheme is used.
@@ -9315,7 +9315,7 @@ Section: practice-plan. Stable action: step-4-sort-1.
 
 Six lines from a made up strategy note. For each one, decide whether it belongs in the note as written.
 
-Risk: late cancellations rise after the easier cancellation flow. Signal: the waiting-list count, checked monthly.
+Risk: late cancellations rise after the easier cancellation flow. Signal: late cancellations counted in the booking records, checked monthly.
 
 - usable as written
 - needs a signal or a specific
