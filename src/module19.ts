@@ -649,7 +649,7 @@ export const module19: Lesson[] = [
     misconception:
       "“The case study should follow the order I did the work in.” The work's order was messy and full of dead ends. The reader needs the reasoning, arranged for understanding, with the dead ends kept where they are instructive.",
     example:
-      "A first case study from one project, written in the template: problem, in the shop owner's words with his estimate of six to ten progress calls a day, marked as his estimate; evidence, three research participants, what was found, what contradicted, and the exclusions; decision, one framed problem and the not-building list, with the appetite; iteration, the wording repair that failed for one of two re-testers, from a page that was a demonstration with made-up jobs; limits, in short form. Nineteen claims, each with a named artefact and its tier. One claim about the owner's time saved was cut because nothing measured it.",
+      "A first case study from one project, written in the template: problem, in the shop owner's words with his estimate of six to ten progress calls a day, marked as his estimate and set beside his tally of eleven in five working days; evidence, three research participants, what was found, what contradicted, and the exclusions; decision, one framed problem and the not-building list, with the appetite; iteration, the wording repair that failed for one of two re-testers, from a page that was a demonstration with made-up jobs; limits, in short form. Nineteen claims, each with a named artefact and its tier. One claim about the owner's time saved was cut because nothing measured it.",
     freeToolPath: "The supplied single-file HTML template, or a Markdown file, edited in any text editor. No portfolio platform is required.",
     outputs: [
       "One short case study from one project, in the template or five sections",
@@ -820,7 +820,7 @@ export const module19: Lesson[] = [
       "Write an accurate role statement for each project, distinguishing self-directed practice from paid or team work, and name every person who contributed.",
     bringForward: "Your project or projects and their records — one is enough if you are here early.",
     prerequisite: "At least one project record.",
-    why: "Role inflation is the most commonly detected dishonesty in portfolios, and the easiest to avoid.",
+    why: "Role inflation is a common overstatement in portfolios, easily detected and easily avoided.",
     teach: [
       "Say plainly whether the work was paid, course or self-directed.",
       "Name what you did and what others did.",
@@ -1216,7 +1216,7 @@ export const module19: Lesson[] = [
     misconception:
       "“More images make the case study more convincing.” Unargued images make it longer. One before-and-after pair with a caption that names the test result does more than twelve screens.",
     example:
-      "The repair-shop case study keeps six images: the paper flow with the failure branches; a photograph of the synthesis cards, recreated because the originals had a participant's name; the exception table; the status page before and after the wording repair, captioned with the re-test result including the person who still read it as a promise, and labelled a demonstration with made-up jobs; and the handover card. Twelve other images were cut, including four screens that showed nothing the flow did not. Every caption states an argument, and every image has alternative text written to carry the same information.",
+      "The repair-shop case study keeps six images: the paper flow with the failure branches; a photograph of the synthesis cards, recreated because the originals had a participant's name; the exception table; the status page before and after the wording repair, captioned with the re-test result including the person who still read it as a promise, and labelled a demonstration with made-up jobs; and the handover card. Twelve other images were cut, including ten screens that showed nothing the flow did not. Every caption states an argument, and every image has alternative text written to carry the same information.",
     freeToolPath:
       "A phone camera for paper work and your existing editor for recreations. No stock imagery, mockup generator or paid template is needed.",
     outputs: [
@@ -1577,7 +1577,7 @@ export const module19: Lesson[] = [
     guided: true,
     title: "Making the portfolio itself usable",
     objective:
-      "Build and check the portfolio as a designed artefact — readable on your own phone without any hosting, navigable by keyboard, available as an accessible PDF, and honest about what you checked.",
+      "Build and check the portfolio as a designed artefact — readable on your own phone without any hosting, navigable by keyboard, available as a PDF copy whose headings, reading order and link text you have checked, and honest about what you did and did not check.",
     bringForward: "Your case studies — two on the core path, three on the full library — and your accessibility practice.",
     prerequisite: "Your drafted case studies.",
     why: "The portfolio is the one interface a reviewer will definitely use, and it is assessed whether or not you intended it to be.",
@@ -1599,14 +1599,14 @@ export const module19: Lesson[] = [
     misconception:
       "“The portfolio site should demonstrate my visual range.” It should demonstrate that you can make something clear and usable. Range belongs inside the case studies, not in the navigation.",
     example:
-      "The portfolio is a single HTML file per case study plus one index, sharing one stylesheet from the design system. Checks run and recorded: heading structure read alone; keyboard path through every link with a visible focus ring; contrast on text and on the focus indicator; alternative text on all nineteen images; the whole site opened on a phone over a mobile connection with images loading last. Not checked, and stated on the about page: no screen-reader testing and no testing with anyone who uses assistive technology.",
+      "The portfolio is a single HTML file per case study plus one index, sharing one stylesheet from the design system. Checks run and recorded: heading structure read alone; keyboard path through every link with a visible focus ring; contrast on text and on the focus indicator; alternative text on all nineteen images; a whole case study read on a phone from a PDF sent to myself. Not checked, and stated on the about page: no screen-reader testing and no testing with anyone who uses assistive technology.",
     freeToolPath:
       "The supplied single-file template, or your own plain HTML and CSS, opened in a browser; a browser's Save as PDF for the phone check and the PDF copy. A portfolio does not require a builder, a hosting account or a subscription.",
     outputs: [
       "A portfolio that reads on your own phone, checked privately through a PDF or the single file",
       "A heading structure and keyboard path that work",
       "Alternative text and contrast checked",
-      "An accessible PDF copy checked for headings, reading order and link text, and a written record of what was and was not checked",
+      "A PDF copy checked for headings, reading order and link text, and a written record of what was and was not checked",
     ],
     steps: [
       {
@@ -1631,22 +1631,23 @@ export const module19: Lesson[] = [
         instructions: [
           "Read the heading structure alone; tab through every link.",
           "Check contrast on text and on the focus indicator.",
+          "Confirm alternative text on every image and that the argument survives with images off.",
         ],
       },
       {
         minutes: 20,
-        title: "Check the images",
+        title: "Check what travels",
         instructions: [
-          "Confirm alternative text on every image and that the argument survives with images off.",
-          "Save a PDF copy and check its headings, reading order and link text.",
+          "Send the HTML with its image folder, and a PDF copy, to your own phone without hosting.",
+          "Note what did not arrive or could not be read.",
         ],
       },
       {
         minutes: 15,
         title: "Record the checks",
         instructions: [
-          "Write what you checked and what you could not.",
-          "Put it somewhere a reader can find.",
+          "Check the PDF copy's headings, reading order and link text.",
+          "Write what you checked and what you could not, where a reader can find it.",
         ],
       },
     ],
@@ -1788,7 +1789,7 @@ export const module19: Lesson[] = [
     misconception:
       "“I will just talk through the slides.” Slides read aloud are slower than reading and less clear than either. Prepare the spoken version as its own artefact with its own five points.",
     example:
-      "Ten minutes, five points: the shop owner's problem with the call count; three research participants and the contradiction between speed and certainty; the decision to build a status page and the not-building list; the wording repair, its prediction, and the person who still read it as a promise; and the limits, including that nobody who stopped using the shop was reached. First recording ran fourteen minutes, spent four on context and said “about two thirds” once. Second recording ran ten and a half, opened with the count, and used the exact numbers.",
+      "Ten minutes, five points: the shop owner's problem with the call count; three research participants and the contradiction between speed and certainty; the decision to build a status page and the not-building list; the wording repair, its prediction, and the person who still read it as a promise; and the limits, including that nobody who stopped using the shop was reached. First recording ran fourteen minutes, spent four on context and said “about two thirds” once. Second recording ran nine and a half minutes, opened with the count, and used the exact numbers.",
     freeToolPath:
       "A phone camera or the recorder you already have. No presentation software or meeting subscription is required.",
     outputs: [
@@ -1974,7 +1975,7 @@ export const module19: Lesson[] = [
     misconception:
       "“A good answer defends the work.” A good answer tells the truth about the work. Interviewers are testing calibration more than results, and a well-defended overclaim fails that test completely.",
     example:
-      "Twelve questions were drawn from the limitations pages, including: what do customers who never came back think; why did the page never go in front of real customers; was the fall in calls just a quiet week; why did you not test with a screen-reader user; and what would you do differently with a month. Each got a written answer conceding first. Two answers were “I do not know”, each with the smallest next step attached. All twelve were practised aloud; the quiet-week question was the one that produced hesitation, so it was rehearsed until the concession came first.",
+      "Twelve questions were drawn from the limitations pages, including: what do customers who never came back think; why did the page never go in front of real customers; was the fall in calls just a quiet week; he said six to ten a day and counted eleven a week — which is it; why did you not test with a screen-reader user; and what would you do differently with a month. Each got a written answer conceding first. Two answers were “I do not know”, each with the smallest next step attached. All twelve were practised aloud; the quiet-week question was the one that produced hesitation, so it was rehearsed until the concession came first.",
     freeToolPath: "Your own records, writing and speaking aloud.",
     outputs: [
       "A question list drawn from your own limits",
@@ -2019,7 +2020,7 @@ export const module19: Lesson[] = [
         minutes: 15,
         title: "Have someone ask them",
         instructions: [
-          "Ask someone to put the questions to you unprompted.",
+          "Ask someone to put the questions to you unprompted — or, alone, record yourself answering a shuffled list and label it self-review.",
           "Record any answer that drifted from what you wrote.",
         ],
       },
@@ -2088,15 +2089,15 @@ export const module19: Lesson[] = [
       },
       {
         criterion: "The answers were practised aloud",
-        evidence: "Spoken practice, ideally with someone else asking.",
+        evidence: "Spoken practice, ideally with someone else asking — or, on the solo route, a recording of yourself answering a shuffled list, labelled self-review.",
         levels: [
           "Written only.",
           "Practised alone.",
-          "Practised with someone asking unprompted.",
+          "Practised with someone asking unprompted, or alone from a shuffled list, recorded and labelled self-review.",
           "As adequate, and any drift from the written answer was recorded.",
         ],
         remediation:
-          "Ask someone to put the questions to you and note where you drift.",
+          "Ask someone to put the questions to you and note where you drift, or record yourself answering a shuffled list and label it self-review.",
         recheck: "The practice notes.",
       },
     ],
@@ -2104,7 +2105,7 @@ export const module19: Lesson[] = [
       "If the questions are generic, rebuild them from your limits.",
       "If answers defend, rewrite them to concede first.",
       "If nothing is unknown, you have not found the hard question.",
-      "If practice was written only, say the answers aloud to someone.",
+      "If practice was written only, say the answers aloud to someone, or record yourself answering a shuffled list and label it self-review.",
     ],
     portfolio:
       "The question list and answers are preparation for the next module, where the same discipline meets employers rather than reviewers.",
@@ -2150,7 +2151,7 @@ export const module19: Lesson[] = [
       "Check each case study against the promise it made.",
       "Run a claim sweep across the whole portfolio, not per page.",
       "Sharing privately is complete; publishing is optional, and any host is verified on the day like a resource.",
-      "Ask one person to read it cold and tell you what it says.",
+      "Ask one person to read it cold and tell you what it says — or, with nobody available, do a labelled self cold-read after a week away.",
       "Share or publish deliberately, and record what went where and when.",
     ],
     explanation: [
@@ -2158,7 +2159,7 @@ export const module19: Lesson[] = [
       "Claims travel between pages. A number softened in one case study can appear inflated on the index page, and an about page written last is where unsupported summaries collect. Sweep the whole thing at once, including navigation, headings and the about page.",
       "Publishing is a choice, not a requirement. A PDF or the files sent privately to a reviewer is a complete portfolio. If you do publish, hosting has the same properties as a resource: a cost, an account requirement and terms. Check it against this course's rules — free without a card, no trial that expires into a charge — and record what you verified and when, because the answer changes over time.",
       "One free route, checked on 5 October 2026 against GitHub's own documentation (docs.github.com/en/pages): GitHub Pages. GitHub Free costs nothing, and on it a Pages site must come from a public repository — everything you upload is public, and GitHub states that Pages sites are publicly available on the internet. Steps: create a free account; choose New repository, name it yourusername.github.io, set it to Public and create it; choose Add file, then Upload files, and upload index.html and your other pages; open Settings, then Pages, choose Deploy from a branch under Build and deployment, pick the main branch and the / (root) folder, and Save. GitHub says changes can take up to 10 minutes to publish. To unpublish, delete the repository (Settings, Danger Zone); GitHub notes that deleting a public repository does not delete copies others have forked. Re-check these terms yourself before publishing, and never upload consent records or raw research.",
-      "A cold reader is the last useful instrument. Ask someone who does not know the projects to read it and tell you what you can do; the gap between their answer and your claims is the portfolio's actual message, and it is usually not the one you intended.",
+      "A cold reader is the last useful instrument. Ask someone who does not know the projects to read it and tell you what you can do; the gap between their answer and your claims is the portfolio's actual message, and it is usually not the one you intended. With nobody to ask, leave the portfolio for at least a week, skim it once for ninety seconds as a reviewer would, write what it says you can do, and label it self-review: it shows what the skim carries, and it cannot show what only a stranger would notice.",
     ],
     misconception:
       "“It is finished when it looks finished.” It is finished when the promises are kept, the claims are supported, and a cold reader arrives at the message you intended.",
@@ -2170,7 +2171,7 @@ export const module19: Lesson[] = [
       "A promise check per case study, with any promise rewritten",
       "A whole-portfolio claim sweep including the index and about pages",
       "A recorded sharing decision — private PDF or files, or a host verified on the day",
-      "A cold reader's account of what the portfolio says",
+      "A cold reader's account of what the portfolio says, or a labelled self cold-read",
     ],
     steps: [
       {
@@ -2201,8 +2202,8 @@ export const module19: Lesson[] = [
         minutes: 25,
         title: "Cold read",
         instructions: [
-          "Ask someone unfamiliar to read it and say what you can do.",
-          "Compare their answer with your claims.",
+          "Ask someone unfamiliar to read it and say what you can do — or, with nobody available, leave it a week, skim it once for ninety seconds, write what it says you can do, and label it self-review.",
+          "Compare the answer with your claims.",
         ],
       },
       {
@@ -2281,15 +2282,15 @@ export const module19: Lesson[] = [
         criterion:
           "A cold reader's account is compared with the claims",
         evidence:
-          "What an unfamiliar reader says the portfolio shows, beside your claims.",
+          "What an unfamiliar reader says the portfolio shows, beside your claims — or, with nobody available, your own skim after at least a week away, labelled self-review.",
         levels: [
           "No cold read.",
           "Read by someone who knows the projects.",
-          "Cold read and compared.",
+          "Cold read and compared, or a labelled self cold-read compared.",
           "As adequate, and the comparison changed something.",
         ],
         remediation:
-          "Ask someone unfamiliar what the portfolio says you can do.",
+          "Ask someone unfamiliar what the portfolio says you can do, or leave it a week and do a labelled self cold-read.",
         recheck: "The comparison.",
       },
     ],
@@ -2297,7 +2298,7 @@ export const module19: Lesson[] = [
       "If a promise is unkept, rewrite it to match the evidence.",
       "If the sweep skipped a page, sweep it.",
       "If a host is unverified, check the terms before publishing, or share privately.",
-      "If nobody read it cold, find a reader before publishing.",
+      "If nobody read it cold, find a reader before publishing, or do a labelled self cold-read after a week away.",
     ],
     portfolio:
       "This is the portfolio itself: two case studies on the core path or three on the full library, a recorded walkthrough, a prepared question list, and a shared or published version with its date.",
