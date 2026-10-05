@@ -111,7 +111,7 @@ export const guided08: Record<string, Guided> = {
       { expect: 'The greyscale result, the first three things you see from arm’s length, and whether that order matches the task.',
         fields: ['greyscale-result', 'arms-length-result', 'order-match'],
         supported: {
-          material: 'A supplied set of results from the same made-up booking screen. In greyscale the “Book a place” button and the “Add to shortlist” button become the same grey. From arm’s length the first three things seen are the photograph, the class name and the price. The availability line, which the paper test showed people hunting for, is not among them.',
+          material: 'A supplied set of results from the same made-up booking screen. In greyscale the “Reserve a place” button and the “Share with a friend” button become the same grey. From arm’s length the first three things seen are the photograph, the class name and the price. The availability line, which the paper test showed people hunting for, is not among them.',
           question: 'Which result shows that the added detail has made something the task needs quiet?',
           options: [
             { label: 'The availability line dropping out of the first three, though people were seen looking for it.', correct: true, was: ['The availability line missing from the first three, because the paper test showed that is what people look for.'], feedback: 'Quiet means still on the screen and no longer noticed. People were seen hunting for this line, so the task needs it, and from arm’s length it no longer registers. It goes at the top of your hidden list.' },
@@ -273,11 +273,11 @@ export const guided08: Record<string, Guided> = {
                 'different components': 'Different jobs, so different components. A link that goes somewhere should not wear a button’s clothes.',
                 'one component with a variant': 'A variant is for the same job under different conditions. Going somewhere is not a condition of submitting.',
               } },
-            { id: 'destructive', text: 'Two actions drawn with the same fill and weight. One books a place. The other cancels a booking and releases the place immediately, with no way back.', answer: 'different components',
+            { id: 'destructive', text: 'Two actions drawn with the same fill and weight. One books a place. The other cancels a booking and releases the place immediately, with no way back.', answer: 'one component with a variant',
               feedback: {
-                'same component': 'The drawing matches and the jobs do not. Merging them means the irreversible action inherits the emphasis of the everyday one.',
-                'different components': 'A destructive action is its own job. It needs its own placement, its own spacing and its own confirmation, so it is its own component.',
-                'one component with a variant': 'Tempting, and it puts something irreversible one small setting away from something routine. This lesson keeps it separate.',
+                'same component': 'Drawn the same, nothing tells them apart. Merging them fully means the irreversible action inherits the emphasis of the everyday one.',
+                'different components': 'Some systems split it out; what matters is that the destructive variant can never be mistaken for booking.',
+                'one component with a variant': 'Both do something the moment they are pressed; what differs is the consequence. A destructive variant of the button carries its own emphasis, spacing and confirmation, as the GOV.UK button page treats warning buttons.',
               } },
           ],
           then: 'Now take your own hardest pair and give it one of these three labels. Write the exact difference on the line first, then decide.',
@@ -383,7 +383,7 @@ export const guided08: Record<string, Guided> = {
       ] },
       { id: 'measure', title: 'Measure and test', fields: [
         { id: 'measurements', label: 'Measured size and surrounding spacing for each level, at phone size', kind: 'long',
-          hint: 'Print or draw at real size and use a ruler. Estimates are the thing this step exists to replace.' },
+          hint: 'Measure in points. On screen: select the button in Inkscape and read W and H in the toolbar, with the unit set to px (one unit in the starter is one point). On paper: draw the screen 64 mm wide, so 1 mm is about 6 points. Compare each target with a published minimum: WCAG 2.2 success criterion 2.5.8 (level AA) asks for at least 24 by 24 CSS pixels or enough spacing around a smaller target; Apple recommends 44 by 44 points and Material Design 48 by 48 dp. Record the number and the reference you used. Estimates are the thing this step exists to replace.' },
         { id: 'spacing-changes', label: 'Where you increased spacing, and between which two actions', kind: 'short' },
         { id: 'greyscale-result', label: 'In greyscale: which actions you can no longer rank', kind: 'long' },
       ] },
@@ -430,11 +430,11 @@ export const guided08: Record<string, Guided> = {
                 secondary: 'A secondary action is one a person might reasonably take instead of, or on the way to, the main outcome. Demote this and the screen is left with no job at all.',
                 quiet: 'Quiet is for actions that must exist and that this task rarely needs. Booking is the reason the person opened the screen.',
               } },
-            { id: 'shortlist', text: 'The same class details screen. The action: “Add to shortlist”, currently drawn as a second filled button of exactly the same weight as booking.', answer: 'secondary',
+            { id: 'shortlist', text: 'The same class details screen. In the made-up paper test, one of five people pressed this action believing she had booked. The action: “Add to shortlist”, currently drawn as a second filled button of exactly the same weight as booking.', answer: 'quiet',
               feedback: {
                 primary: 'That is the trap the screen is already in. Two filled buttons of equal weight means two primaries, and a person can press one believing she pressed the other.',
-                secondary: 'It is a genuine alternative and it is not what the screen is for. Outline it, keep the height, and let booking hold the fill.',
-                quiet: 'Quiet would hide a choice people really make. Secondary keeps it available without competing with the booking.',
+                secondary: 'Outlined could suit a screen with no evidence against it; here the paper test showed it mistaken for booking, so it drops to quiet.',
+                quiet: 'Right for this screen: in the paper test one person pressed it believing she had booked, so it steps back to a quiet text action and booking keeps the fill.',
               } },
             { id: 'share', text: 'The same class details screen. The made-up research notes for it say 3 of 4 interviewees and the observed participant checked the plan with another person before paying. The action: “Share this class”, currently a small text link near the bottom.', answer: 'secondary',
               feedback: {
@@ -546,6 +546,7 @@ export const guided08: Record<string, Guided> = {
       ] },
       { id: 'table', title: 'The field table', intro: 'One field at a time. Each needs a label, its help text, its error wording and the formats you accept without complaint.', fields: [
         ...[1, 2, 3, 4, 5].map((n) => ({ id: `field-${n}`, label: `Field ${n} · label, help text, error wording, and the formats you accept`, kind: 'long' as const,
+          ...(n >= 4 ? { optional: true, hint: 'Leave empty if your form has fewer fields; say in field 1 how many it has.' } : {}),
           ...(n === 1 ? { hint: 'If you cannot say what decision the field serves, delete the field instead of designing it.', example: 'Example (made up): Phone number. Help: we send the class reminder here, any format is fine. Error: enter a phone number we can reach you on, at least eight digits. Accepts spaces, dashes, brackets and a leading plus.' } : {}) })),
       ] },
       { id: 'prevention', title: 'Help before the mistake', fields: [
@@ -558,7 +559,7 @@ export const guided08: Record<string, Guided> = {
         { id: 'validation-timing', label: 'When validation runs on this form', kind: 'choice', options: ['When the person leaves a field', 'When the form is submitted', 'On leaving a field and again on submission', 'On every keystroke'] },
       ] },
       { id: 'keyboard', title: 'The keyboard pass', fields: [
-        { id: 'tab-order', label: 'The order the keyboard moved through the form, and whether you could see where you were', kind: 'long' },
+        { id: 'tab-order', label: 'The tab order you intend, and how focus will show — or, if you tabbed a built version, what actually happened', kind: 'long', hint: 'Mark every line you did not try as untested.' },
         { id: 'not-verified', label: 'What you could not check without a built version, stated plainly', kind: 'long', hint: 'A named gap is evidence. A guess written as a result is not.' },
         { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
       ] },
@@ -633,7 +634,7 @@ export const guided08: Record<string, Guided> = {
       {
         question: 'Your form rejects a submission and reloads with every box empty. Your reasoning was that the person can fill it in again. What is wrong?',
         options: [
-          { label: 'One mistake now costs every correct answer, which is worse than not checking at all.', correct: true, was: ['One mistake now costs every correct answer, which is worse for the person than not validating at all.'], feedback: 'Skipping validation at least lets the work through. Validation that clears the form takes the work away and gives nothing back.' },
+          { label: 'One mistake now costs every correct answer, so the check takes more than it protects.', correct: true, was: ['One mistake now costs every correct answer, which is worse for the person than not validating at all.', 'One mistake now costs every correct answer, which is worse than not checking at all.'], feedback: 'Validation exists to save the person work. One that clears the form throws away five right answers to report one wrong one.' },
           { label: 'It is acceptable, provided the error message explains clearly what went wrong.', was: ['It is acceptable if the error message is clear enough.'], feedback: 'A clear message explains what went wrong on a screen where everything the person typed has gone. The wording does not return the work.' },
           { label: 'Only the field with the error needed preserving; the others can be retyped.', was: ['Only the field with the error needs to be preserved.'], feedback: 'The field with the error is the one thing they were going to retype anyway. It is the five correct fields that must survive.' },
         ],
@@ -673,7 +674,7 @@ export const guided08: Record<string, Guided> = {
       { id: 'destinations', title: 'Everything a person can reach', fields: [
         { id: 'destination-list', label: 'Every destination in your structure, with the two or three people need most marked', kind: 'long', hint: 'Take these from your m06 structure. Mark what people came for, not what the organisation would like them to see.' },
         { id: 'most-needed', label: 'The evidence behind those marks, or a plain note that you are guessing', kind: 'short', sensitive: true,
-          hint: 'Summarise without names, such as “3 of 4 tree-test participants went to My bookings first”. Raw notes stay in your private file. A labelled guess is an honest answer.' },
+          hint: 'Summarise without names, such as “3 of 4 interviewees came back to check an existing booking” or “in the tree test 2 of 4 could not find Change or cancel”. A tree test shows what people could find, not what they need most. Raw notes stay in your private file. A labelled guess is an honest answer.' },
       ] },
       { id: 'wide', title: 'The wide layout', fields: [
         { id: 'wide-items', label: 'The global destinations on the wide layout, in the order you placed them', kind: 'long' },
@@ -801,11 +802,12 @@ export const guided08: Record<string, Guided> = {
   },
   'm08-l06-v1': {
     route: paperRoute('the list at both widths and the hard-case rows'),
-    material: [browseNote, 'Made-up hard cases for practice: the longest class name is “Saturday morning beginners’ pottery and glaze workshop, Bermondsey”; one class has no price recorded; one class has no places left.'],
+    material: [browseNote, 'Made-up hard cases for practice: the longest class name is “Saturday morning beginners’ pottery and glaze workshop, Bermondsey”; one class has no price recorded; one class has no places left; and the most expensive listing is a ten-week course at £1,250.00 for two people. Use these as supplied if you hold no real data, and say so.'],
     worksheet: [
       { id: 'row', title: 'What the row carries', intro: 'One attribute at a time. Name it, and say what makes you think people compare on it.', fields: [
         ...[1, 2, 3, 4].map((n) => ({ id: `attribute-${n}`, label: `Attribute ${n} · what it is, and the evidence that people compare on it`, kind: 'long' as const, sensitive: true as const,
-          ...(n === 1 ? { hint: 'If your evidence is “it seemed useful”, write that: a labelled guess is worth more than a dressed-up one. Summarise evidence without names, such as “2 of 5 sessions”. No notes of your own? Cite the supplied practice notes as supplied.', example: 'Example (made up): remaining places. Two people in the m05 sessions asked whether a class was full before they looked at anything else.' } : {}) })),
+          ...(n >= 3 ? { optional: true, hint: 'Leave empty if your row carries fewer; Check 1 asks for four or fewer.' } : {}),
+          ...(n === 1 ? { hint: 'If your evidence is “it seemed useful”, write that: a labelled guess is worth more than a dressed-up one. Summarise evidence without names, such as “2 of 5 sessions”. No notes of your own? Cite the supplied practice notes as supplied.', example: 'Example (made up): remaining places. Two people in the m07 browse sessions asked whether a class was full before they looked at anything else.' } : {}) })),
       ] },
       { id: 'sort', title: 'Omissions and the sort', fields: [
         { id: 'omissions', label: 'What you deliberately left out of the row, and where it went instead', kind: 'long' },
@@ -817,7 +819,7 @@ export const guided08: Record<string, Guided> = {
         { id: 'narrow-records', label: 'One row redrawn as a record: the heading, then each field with its label', kind: 'long', hint: 'The two things people compare on most should be findable in both forms.' },
       ] },
       { id: 'hard', title: 'The cases that break it', fields: [
-        { id: 'longest-largest', label: 'The longest real name and the largest real number at phone width, and what broke', kind: 'long' },
+        { id: 'longest-largest', label: 'The longest real name and the largest real number at phone width, and what broke', kind: 'long', hint: 'No real data? Use the supplied hard cases: the Bermondsey workshop name and the £1,250.00 ten-week course for two, labelled as supplied.' },
         { id: 'missing-value', label: 'What a missing value says, in words rather than a blank', kind: 'short' },
         { id: 'empty-list', label: 'The empty list: what it says, and the one action that starts it', kind: 'long' },
       ] },
@@ -864,7 +866,7 @@ export const guided08: Record<string, Guided> = {
       { terms: [{ term: 'Hard case', meaning: 'A row that breaks the layout rather than filling it: the longest name, the largest number, the value that is not there.' }, { term: 'Missing value', meaning: 'A place where the data has nothing to show. Left blank it reads as broken; worded, it says why it is not there.' }, { term: 'Empty list', meaning: 'What the screen shows when there are no rows at all. It is a screen you design, not a gap you leave.' }], expect: 'The longest name, the largest number, a worded missing value and a designed empty list.',
         fields: ['longest-largest', 'missing-value', 'empty-list'],
         supported: {
-          material: 'A made-up class list at phone width. Three rows break. One class is called “Saturday morning beginners’ pottery and glaze workshop, Bermondsey”. One has no price recorded, so the cell is blank. One has no places left, shown as “0”.',
+          material: 'A made-up class list at phone width. Three rows break. One class is called “Saturday morning beginners’ pottery and glaze workshop, Bermondsey”. One has no price recorded, so the cell is blank. One has no places left, shown as a bare “0” with no label, and tapping that row still opens the booking form.',
           question: 'Which of these should you deal with first, and why?',
           options: [
             { label: 'The full class showing “0”, because a number reads as a value and invites a booking attempt.', correct: true, was: ['The class with no places left showing “0”, because a number invites the person to try to book it.'], feedback: 'A zero reads as a value among other values, so people tap it and meet a dead end. Words such as “Full, see other dates” stop the wasted trip and offer the next move.' },
@@ -930,7 +932,7 @@ export const guided08: Record<string, Guided> = {
     },
   },
   'm08-l07-v1': {
-    route: paperRoute('the two interruptions you keep and what the third became'),
+    route: paperRoute('the interruptions you keep and what the others became'),
     worksheet: [
       { id: 'points', title: 'Where the product interrupts', intro: 'Every moment the product stops the person and asks or tells them something. List them before you judge them.', fields: [
         { id: 'interruption-list', label: 'Every point in your flow where the product interrupts', kind: 'long', hint: 'Walk your m07 flow and note each dialogue, prompt, banner and confirmation, including any you copied from another product without deciding.' },
@@ -941,13 +943,13 @@ export const guided08: Record<string, Guided> = {
         { id: 'decision-2', label: 'Interruption 2 · what it is, the choice you made, and the loss that justifies it', kind: 'long' },
         { id: 'decision-3', label: 'Interruption 3 · what it is, the choice you made, and the loss that justifies it', kind: 'long' },
       ] },
-      { id: 'design', title: 'The two you keep', fields: [
+      { id: 'design', title: 'The ones you keep', fields: [
         { id: 'modal-a', label: 'First interruption: the exact wording, both option labels, and which one is the safe default', kind: 'long', hint: 'Name what will be lost in the words themselves. Label both options with verbs, so neither of them is “OK”.' },
-        { id: 'modal-b', label: 'Second interruption: the exact wording, both option labels, and which one is the safe default', kind: 'long' },
+        { id: 'modal-b', label: 'Second interruption, if one earned a modal: the exact wording, both option labels, and which one is the safe default', kind: 'long', optional: true, hint: 'Leave empty if only one interruption earned a modal, and say why in step 5.' },
         { id: 'dismissal-rules', label: 'How each one is left: the visible control, the escape key, and what happens to the work behind it', kind: 'long', example: 'Example (made up): a Close control at the top right, escape closes it, tapping outside closes it, and the half-written booking behind it is untouched.' },
       ] },
-      { id: 'replace', title: 'What the third became', fields: [
-        { id: 'replacement', label: 'The interruption you rejected, and the exact thing that replaces it', kind: 'long', hint: 'An undo message, a line on the page, or a screen of its own. Write the wording, not the intention.' },
+      { id: 'replace', title: 'What the others became', fields: [
+        { id: 'replacement', label: 'Each interruption you rejected, and the exact thing that replaces it', kind: 'long', hint: 'An undo message, a line on the page, or a screen of its own. Write the wording, not the intention.' },
         { id: 'no-collision', label: 'Which two interruptions could have appeared at once, and what you changed so they cannot', kind: 'short' },
       ] },
       { id: 'rule', title: 'Your rule, and where the work lives', fields: [
@@ -968,7 +970,7 @@ export const guided08: Record<string, Guided> = {
         enough: 'At least one line says the interruption prevents nothing. Most flows have one.' },
       { expect: 'Three interruptions, each with a choice — modal, inline, undo or remove — and the loss that justifies it.',
         fields: ['decision-1', 'decision-2', 'decision-3'],
-        reveal: { first: 1, group: 1, count: 3, addLabel: 'Add the next interruption', note: 'One at a time. Three is what the lesson asks for, and two of them should survive.' },
+        reveal: { first: 1, group: 1, count: 3, addLabel: 'Add the next interruption', note: 'One at a time. Three is what the lesson asks for; often only one of them earns a modal.' },
         demo: {
           scenario: 'Made-up example. Deciding three interruptions in a class-booking product, and getting the easiest one wrong first.',
           beats: [
@@ -1004,10 +1006,10 @@ export const guided08: Record<string, Guided> = {
                 'inline message': 'A line in the page cannot carry four paragraphs, and accepting them needs a moment of its own.',
                 'own screen': 'Long reference text needs room, scrolling and a way back. A screen gives all three, and the person can leave and return.',
               } },
-            { id: 'hold-expiring', text: 'The place held during payment has ninety seconds left before it is released.', answer: 'inline message',
+            { id: 'hold-expiring', text: 'During payment the place is held for ten minutes, and the time left must stay visible while she types her card details.', answer: 'inline message',
               feedback: {
                 'modal': 'Urgency is exactly what tempts you here, and a modal takes the card field away at the moment the person is typing into it.',
-                'inline message': 'It belongs at the top of the payment step, staying put and counting down, so it can be read without leaving the task.',
+                'inline message': 'It belongs at the top of the payment step, staying put and counting down, so it can be read without leaving the task. Before it runs out, offer a one-tap way to keep the place.',
                 'own screen': 'Moving to another screen loses the payment step, which is the thing the deadline is about.',
               } },
             { id: 'change-card', text: 'Replacing the saved payment card, which needs a card number, an expiry date and a billing address.', answer: 'own screen',
@@ -1031,7 +1033,7 @@ export const guided08: Record<string, Guided> = {
         ],
         start: 'Take the interruption you are least sure about first, and finish the sentence “without this, the person could lose …”.',
         enough: 'Every modal you kept names a loss you could not recover. Everything else has become inline, undo or nothing.' },
-      { demo: { scenario: 'Made-up example. Writing out the cancellation modal word for word, and finding that one of its two buttons meant two opposite things.', beats: [{ label: 'What I wrote first', text: 'A heading saying “Are you sure?”, a line saying “This cannot be undone.”, and two buttons: Cancel and OK.' }, { label: 'Why it looked finished', text: 'It matched almost every dialogue I have ever answered, so nothing about it asked to be questioned.' }, { label: 'Where it fell apart', text: 'I read it aloud. The person is cancelling a booking, and the button called Cancel keeps the booking. OK does not say what it does either, so answering quickly is a coin toss.' }, { label: 'What replaced it', text: 'Heading: “Cancel this booking?”. Body: “Your place goes back to the list straight away and cannot be got back.” Buttons: “Keep my booking” and “Cancel the booking”, with the keeping one carrying the focus when the box opens.' }, { label: 'How it is left', text: 'Closing with the cross, tapping outside it, or pressing escape all keep the booking. The booking is only released by the button that says so.' }], wrongTurn: 'The tempting error is reusing the pair of labels every dialogue uses, because they feel settled and nobody argues with them. Those labels describe the box rather than the decision, and here the word Cancel collides with the very thing being cancelled.', tradeoff: 'Verb labels are long, so the two buttons stop being the same width and the box looks less tidy. On a narrow screen one label may wrap onto a second line, and you keep it anyway.', uncertainty: 'Still unknown: whether “cannot be got back” is understood as “somebody else may take it within minutes”. Reading it to one person is the cheapest way to find out, and I have not done it yet.' }, expect: 'Both surviving interruptions written out: exact wording, two verb labels, the safe default, and how each one is left.',
+      { demo: { scenario: 'Made-up example. Writing out the cancellation modal word for word, and finding that one of its two buttons meant two opposite things.', beats: [{ label: 'What I wrote first', text: 'A heading saying “Are you sure?”, a line saying “This cannot be undone.”, and two buttons: Cancel and OK.' }, { label: 'Why it looked finished', text: 'It matched almost every dialogue I have ever answered, so nothing about it asked to be questioned.' }, { label: 'Where it fell apart', text: 'I read it aloud. The person is cancelling a booking, and the button called Cancel keeps the booking. OK does not say what it does either, so answering quickly is a coin toss.' }, { label: 'What replaced it', text: 'Heading: “Cancel this booking?”. Body: “Your place goes back to the list straight away and cannot be got back.” Buttons: “Keep my booking” and “Cancel the booking”, with the keeping one carrying the focus when the box opens.' }, { label: 'How it is left', text: 'Closing with the cross, tapping outside it, or pressing escape all keep the booking. The booking is only released by the button that says so.' }], wrongTurn: 'The tempting error is reusing the pair of labels every dialogue uses, because they feel settled and nobody argues with them. Those labels describe the box rather than the decision, and here the word Cancel collides with the very thing being cancelled.', tradeoff: 'Verb labels are long, so the two buttons stop being the same width and the box looks less tidy. On a narrow screen one label may wrap onto a second line, and you keep it anyway.', uncertainty: 'Still unknown: whether “cannot be got back” is understood as “somebody else may take it within minutes”. Reading it to one person is the cheapest way to find out, and I have not done it yet.' }, expect: 'Each modal that survived written out: exact wording, two verb labels, the safe default, and how each one is left.',
         fields: ['modal-a', 'modal-b', 'dismissal-rules'],
         terms: [
           { term: 'Safe default', meaning: 'The option that changes nothing, placed and worded so that a person answering quickly keeps their work.' },
@@ -1090,7 +1092,7 @@ export const guided08: Record<string, Guided> = {
       },
     },
     saveRoute: {
-      auto: 'Your interruption list, the three decisions and both designs save as you type, on this device first and then online.',
+      auto: 'Your interruption list, the three decisions and your designs save as you type, on this device first and then online.',
       external: 'The screens stay on paper or in your own folder. Note the file name in the last step; naming a file does not upload it.',
       creator: 'Your creator reads the decision table and the rejected interruption. The one you removed shows more judgement than the two you styled.',
       next: 'Open Your work and choose Ready for review. The next lesson designs the messages this product uses to say what just happened.',
@@ -1196,7 +1198,7 @@ export const guided08: Record<string, Guided> = {
       {
         question: 'Success is green and failure is red, with the same icon and similar wording. What breaks?',
         options: [
-          { label: 'Anyone who cannot tell red from green, or reads in bright light, gets two identical messages.', correct: true, was: ['Anyone who cannot separate those colours, or who reads the screen in bright light, is left with two messages that say the same thing.'], feedback: 'Colour is the reinforcement, never the signal. The words and the shape have to carry the meaning on their own.' },
+          { label: 'Anyone who cannot tell red from green, or reads in bright light, sees near-identical messages.', correct: true, was: ['Anyone who cannot separate those colours, or who reads the screen in bright light, is left with two messages that say the same thing.', 'Anyone who cannot tell red from green, or reads in bright light, gets two identical messages.'], feedback: 'Colour is the reinforcement, never the signal. The words and the shape have to carry the meaning on their own.' },
           { label: 'Very little, since red and green are understood as good and bad almost everywhere.', was: ['Nothing, since red and green are understood everywhere.'], feedback: 'They are widely learnt and not universally visible. A message that depends on telling them apart carries nothing for a good number of readers.' },
           { label: 'Only the icons need to differ; similar wording is fine once the shapes are distinct.', was: ['Only the icons need to differ; the wording can stay as it is.'], feedback: 'Different shapes help, and the sentence is still the part most people read. If the words do not say whether this is good or bad news, the shape is doing the work alone.' },
         ],
@@ -1252,7 +1254,7 @@ export const guided08: Record<string, Guided> = {
         { id: 'retry-behaviour', label: 'What the retry does, and what it keeps: position, filters and anything typed', kind: 'short' },
       ] },
       { id: 'slow', title: 'The throttled check', fields: [
-        { id: 'throttle-notes', label: 'What you saw on a slow connection: what appeared first, what appeared last, and how long the gap lasted', kind: 'long', hint: 'Use the free network-throttling setting in your browser’s own developer tools, with the cache turned off, on a page like the one you are designing. Write times, not impressions.' },
+        { id: 'throttle-notes', label: 'What you saw on a slow connection: what appeared first, what appeared last, and how long the gap lasted', kind: 'long', hint: 'On a computer, open a page like the one you are designing in Chrome or Edge, press F12 (Cmd+Option+I on a Mac) and choose the Network tab. Tick Disable cache, change the menu that reads No throttling to a slow preset such as 3G, then reload the page with the panel still open. Write the second at which text, images and buttons appeared: times, not impressions. No computer available? Write “not run” and why.' },
         { id: 'change-made', label: 'The one thing you changed because of what you saw', kind: 'short' },
         { id: 'untested-note', label: 'Anything you could not check because nothing is built, written down as untested rather than assumed', kind: 'short' },
         { id: 'artefact-location', label: 'Where the state drawings live', kind: 'short', hint: 'File names or “paper, in my folder”. Nothing is uploaded.' },
@@ -1386,7 +1388,7 @@ export const guided08: Record<string, Guided> = {
           hint: 'Divide the larger value by the smaller. Then subtract the axis start from both and divide again.',
           example: 'Example (made up): 13 and 9 drawn from zero look about 1.4 times apart; drawn from 8 they would look (13 − 8) ÷ (9 − 8) = 5 times apart.' },
         { id: 'labelling-choice', label: 'How each value is labelled, and any legend you were able to remove', kind: 'long' },
-        { id: 'contrast-result', label: 'The contrast ratios you measured for the chart colours and their labels, and the checker you used', kind: 'short', hint: 'A free browser-based checker, or the offline calculation from earlier in the course. No plugin needed.' },
+        { id: 'contrast-result', label: 'The contrast ratios you measured for the chart colours and their labels, and the checker you used', kind: 'short', hint: 'Each bar colour against the background at 3:1 or more (WCAG 1.4.11), and each label against what it sits on at 4.5:1 or more (WCAG 1.4.3; 3:1 for large text). A free browser-based checker, or the offline calculation from earlier in the course. No plugin needed.' },
       ] },
       { id: 'alt', title: 'The text that carries the same information', intro: 'Someone who cannot see the chart should end up knowing what you know.', fields: [
         { id: 'sample-line', label: 'The sample line as it appears on the chart: how many people, and how they were reached', kind: 'short', example: 'Example (made up): 22 people, reached through two WhatsApp groups.' },
@@ -1412,7 +1414,7 @@ export const guided08: Record<string, Guided> = {
         fields: ['comparison-sentence', 'data-held', 'chart-type', 'rejected-type'],
         terms: [{ term: 'n', meaning: 'How many people or things the chart is drawn from. A chart of eight answers is a picture of eight answers.' }],
         start: 'Write the sentence you want the reader to leave with. The chart type is whatever makes exactly that sentence visible.',
-        enough: 'Your counts are real numbers you already hold, not numbers you expect to have later.' },
+        enough: 'Your counts are numbers you already hold, or the supplied practice counts labelled “made-up practice data” — never numbers you expect to have later.' },
       { terms: [{ term: 'Axis', meaning: 'The ruled edge of the chart carrying the numbers each value is read against.' }, { term: 'Direct label', meaning: 'The value written on the bar itself, so nobody has to look away to a key to read it.' }, { term: 'Contrast ratio', meaning: 'A number comparing the lightness of two colours, measured with a free checker rather than judged by eye.' }], expect: 'The chart drawn to the rules: axis from zero for bars, direct labels, measured colours.',
         fields: ['axis-start', 'cut-axis-ratio', 'labelling-choice', 'contrast-result'],
         demo: {
@@ -1514,7 +1516,7 @@ export const guided08: Record<string, Guided> = {
         { id: 'renamed', label: 'Any name you changed from appearance to role, and what the old name would have broken', kind: 'long' },
       ] },
       { id: 'contrast', title: 'Measure every pair that carries text', fields: [
-        { id: 'pairs-measured', label: 'Every text-on-surface pair you allow, with its measured ratio and the checker you used', kind: 'long', hint: 'Include the quiet ones: captions, placeholder text, disabled labels, text on tinted panels.' },
+        { id: 'pairs-measured', label: 'Every text-on-surface pair you allow, with its measured ratio and the checker you used', kind: 'long', hint: 'Include the quiet ones: captions, placeholder text, disabled labels, text on tinted panels. Disabled labels are exempt from WCAG 1.4.3; measure them anyway and record a deliberate decision.' },
         { id: 'pairs-failed', label: 'Any pair below the threshold, and whether you repaired it or forbade it', kind: 'long' },
       ] },
       { id: 'apply', title: 'Apply it to one screen with no exception', fields: [
@@ -1602,11 +1604,11 @@ export const guided08: Record<string, Guided> = {
       {
         question: 'The body text pair passes the contrast threshold, so you record that and stop measuring. What have you missed?',
         options: [
-          { label: 'The quiet pairs — captions, placeholders, disabled labels — which fail most often.', correct: true, was: ['The quiet pairs — captions, placeholder text, disabled labels — which are the ones that usually fail.'], feedback: 'Body text is chosen to be readable and rarely fails. The lighter text was chosen to be quiet, and quiet usually means lower contrast.' },
+          { label: 'The quiet pairs — captions, placeholder text, tinted panels — which fail most often.', correct: true, was: ['The quiet pairs — captions, placeholder text, disabled labels — which are the ones that usually fail.', 'The quiet pairs — captions, placeholders, disabled labels — which fail most often.'], feedback: 'Body text is chosen to be readable and rarely fails. The lighter text was chosen to be quiet, and quiet usually means lower contrast.' },
           { label: 'Very little, as long as the largest text on the sheet passes its own lower threshold too.', was: ['Nothing, as long as the largest text passes as well.'], feedback: 'Large text is judged against a lower threshold and tells you nothing about the small grey caption underneath it.' },
           { label: 'Only the colours, because type and spacing tokens do not need measuring at all.', was: ['Only the colours, since type and spacing are not measured.'], feedback: 'Type and spacing are not measured for contrast, and every text-on-surface pair is. The gap is the pairs you never listed.' },
         ],
-        repair: 'Return to your pairs-measured box in step 3 and add every quiet pair you allow, including captions, placeholder and disabled text. Record what you found in the last step.',
+        repair: 'Return to your pairs-measured box in step 3 and add every quiet pair you allow, including captions, placeholder text and text on tinted panels; measure disabled text too and record your decision about it. Record what you found in the last step.',
         recheck: 'Every text-on-surface pair on the sheet carries a measured number.',
       },
     ],

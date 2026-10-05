@@ -217,7 +217,7 @@ export const module8: Lesson[] = [
           "As adequate, and one loss is repaired and re-checked.",
         ],
         remediation:
-          "View the screen in greyscale and from two metres. Write down anything you cannot find that the task needs.",
+          "View the screen in greyscale and from arm's length. Write down anything you cannot find that the task needs.",
         recheck: "The check results and any repair.",
       },
       {
@@ -300,7 +300,7 @@ export const module8: Lesson[] = [
     misconception:
       "“We need a design system before we can design.” You need an inventory. A component library invented ahead of real screens describes an imaginary product, and the first week of real work breaks it. Audit what you actually drew, then generalise the parts that repeat.",
     example:
-      "Made-up example: an audit of nine screens found five button variants: three were the same intent drawn on different days, one was a genuinely different job — a destructive cancel — and one was a link wearing a button's clothes. It found three card layouts that were one card with different content lengths. The merges reduced five buttons to three real jobs and three cards to one, and one merge was recorded as a loss: the cancelled-class card had used a lighter background, and after merging, cancelled status rested entirely on a text label, which was noted as a candidate problem for the next test.",
+      "Made-up example: an audit of nine screens found five button variants: three were the same intent drawn on different days, one was a destructive cancel that needed its own warning variant, with its own spacing and confirmation, and one was a link wearing a button's clothes. It found three card layouts that were one card with different content lengths. The merges reduced five buttons to one button with a warning variant plus one link, and three cards to one, and one merge was recorded as a loss: the cancelled-class card had used a lighter background, and after merging, cancelled status rested entirely on a text label, which was noted as a candidate problem for the next test.",
     freeToolPath:
       "Print or sketch every screen, cut out each repeated element and group them on a table. Photograph the groups. This is faster than any tool and shows near-duplicates immediately.",
     outputs: [
@@ -546,7 +546,7 @@ export const module8: Lesson[] = [
         minutes: 30,
         title: "Measure and test",
         instructions: [
-          "Measure each target's size and the spacing around it at phone size.",
+          "Measure each target's size and the spacing around it at phone size, in points, and compare it with a published minimum.",
           "Increase spacing between actions with sharply different outcomes.",
           "View every screen in greyscale and mark anything you cannot rank.",
         ],
@@ -757,7 +757,7 @@ export const module8: Lesson[] = [
         minutes: 15,
         title: "Keyboard pass and record",
         instructions: [
-          "Tab through the form and note the order and whether focus is visible.",
+          "Write the tab order you intend and how focus will show; if you built a version, tab through it and note what actually happened.",
           "Record anything you could not verify without building it.",
           "Save the field table and the keyboard notes.",
         ],
@@ -925,7 +925,7 @@ export const module8: Lesson[] = [
         instructions: [
           "Read the assigned responsive layout chapter.",
           "List every destination in your structure and mark the two or three people need most.",
-          "Note which destinations came from the m06 tree test as high-traffic.",
+          "Note which destinations your m05 research showed people coming for, and which ones the m06 tree test showed people failing to find.",
         ],
       },
       {
@@ -1103,7 +1103,7 @@ export const module8: Lesson[] = [
       "Alignment carries meaning: numbers right, text left, and units near their figures.",
     ],
     explanation: [
-      "The content of a row is a research question you have already answered. In m05 you watched what people compared on; those attributes belong in the row and the rest do not, because every extra column makes scanning slower for everyone in order to serve the few who needed it. When you cannot decide, the honest test is whether a person could choose between two rows without opening either.",
+      "The content of a row is a research question you have already answered. In m05 and m07 you watched what people compared on; those attributes belong in the row and the rest do not, because every extra column makes scanning slower for everyone in order to serve the few who needed it. When you cannot decide, the honest test is whether a person could choose between two rows without opening either.",
       "Default sort is a design decision that is usually left to the database. Whatever arrives first gets disproportionate attention, so choose it deliberately — soonest first for a schedule, nearest first for a location, most recent first for a log — and say so on screen, because a person who cannot tell how a list is ordered has to read all of it.",
       "A table is a comparison grid, and on a phone the grid is gone. Squeezing six columns into 360 pixels produces something unreadable in both directions. The reliable transformation is to turn each row into a record: a small block with the identifying value as a heading and the remaining fields labelled beneath it. You lose easy comparison, which is why keeping the two or three most-compared fields visible matters, and you keep legibility.",
       "Real data is messier than examples. Names run long, numbers reach unexpected magnitudes, values go missing, and text arrives in another script. Design each of those cases explicitly: a truncation rule that keeps the distinguishing part, a way to show a missing value that is not an empty cell, and enough room for the longest realistic label rather than the average one.",
@@ -1111,7 +1111,7 @@ export const module8: Lesson[] = [
     misconception:
       "“We can just make the table scroll horizontally on mobile.” Horizontal scrolling hides which column you are reading and separates values from their row identity. It is occasionally the right answer for genuinely wide reference data, and it is a poor default for a table people must act on.",
     example:
-      "Made-up example: a class list showed eight columns on desktop and scrolled sideways on a phone. Rebuilt: rows kept the four attributes the m05 sessions showed people comparing — day and time, price, place, remaining places — with the rest moved to the detail view. Default sort became soonest first, stated above the list. On a phone each row became a record with the class name as the heading. The longest real class name was used for layout, missing prices showed “price on request” rather than a blank, and a full class showed “Full — see other dates” instead of a zero.",
+      "Made-up example: a class list showed eight columns on desktop and scrolled sideways on a phone. Rebuilt: rows kept the four attributes the m07 browse notes showed people comparing — day and time, price, place, remaining places — with the rest moved to the detail view. Default sort became soonest first, stated above the list. On a phone each row became a record with the class name as the heading. The longest real class name was used for layout, missing prices showed “price on request” rather than a blank, and a full class showed “Full — see other dates” instead of a zero.",
     freeToolPath:
       "Paper and your real data. Write out the ten worst real rows by hand at phone width; the layout problems appear immediately and cost nothing to fix at that stage.",
     outputs: [
@@ -1125,7 +1125,7 @@ export const module8: Lesson[] = [
         minutes: 20,
         title: "Decide the row content",
         instructions: [
-          "List the attributes people were seen comparing on: your m05 notes, or the supplied practice notes labelled as supplied.",
+          "List the attributes people were seen comparing on: your m07 browse notes, or the supplied practice notes labelled as supplied.",
           "Put those in the row and move everything else to the detail view.",
           "Write what you deliberately omitted and why.",
         ],
@@ -1194,7 +1194,7 @@ export const module8: Lesson[] = [
       {
         criterion: "Row content is traced to observed comparison behaviour",
         evidence:
-          "A row specification citing evidence per attribute — your m05 notes, or the supplied practice notes labelled as supplied — plus a written list of omissions.",
+          "A row specification citing evidence per attribute — your m07 browse notes, or the supplied practice notes labelled as supplied — plus a written list of omissions.",
         levels: [
           "Row content chosen from what the data contains.",
           "A reasoned list with no trace to observed behaviour.",
@@ -1202,7 +1202,7 @@ export const module8: Lesson[] = [
           "As adequate, and one attribute is included because its absence made people open every result.",
         ],
         remediation:
-          "Re-read your m05 notes, or the supplied practice notes, for the attributes people named while choosing. Those are the row; the rest is the detail view.",
+          "Re-read your m07 browse notes, or the supplied practice notes, for the attributes people named while choosing. Those are the row; the rest is the detail view.",
         recheck: "The row specification with citations.",
       },
       {
@@ -1291,7 +1291,7 @@ export const module8: Lesson[] = [
     guided: true,
     title: "Interruptions: modals, sheets and when not to use one",
     objective:
-      "Decide for three interruptions in your product whether a modal is justified, design the two that are, and record what the rejected one became instead.",
+      "Decide for three interruptions in your product whether a modal is justified, design every one that is justified (often only one), and record what the others became instead.",
     bringForward:
       "Your m07 exception table and any point in the flow where the product asks something mid-task.",
     prerequisite: "Your m07 exception table and flow.",
@@ -1317,7 +1317,7 @@ export const module8: Lesson[] = [
       "Paper screens plus a written decision table. If you want to feel the focus trap, a local HTML file with a dialog element shows how dismissal and the escape key behave with no framework.",
     outputs: [
       "A decision table for three interruptions with the reason for each",
-      "Two designed interruptions with dismissal and a safe default",
+      "Each justified modal designed with dismissal and a safe default",
       "One interruption removed, with what replaced it",
       "A stated rule for when your product uses a modal",
     ],
@@ -1342,7 +1342,7 @@ export const module8: Lesson[] = [
       },
       {
         minutes: 30,
-        title: "Design the two that stay",
+        title: "Design the ones that stay",
         instructions: [
           "Write the exact wording, naming what will be lost.",
           "Make the safe option the default and label both options with verbs.",
@@ -1353,7 +1353,7 @@ export const module8: Lesson[] = [
         minutes: 30,
         title: "Design the replacement",
         instructions: [
-          "Take the interruption you rejected and design what it becomes.",
+          "Take each interruption you rejected and design what it becomes.",
           "Place any reference content on the page rather than in a dialogue.",
           "Check that no two interruptions can now appear at once.",
         ],
@@ -1764,7 +1764,7 @@ export const module8: Lesson[] = [
         minutes: 15,
         title: "Throttle and record",
         instructions: [
-          "Load a comparable page on a slow throttled connection with the cache disabled.",
+          "On a computer, load a comparable page in Chrome or Edge with developer tools open, the cache disabled and a slow throttling preset.",
           "Record what appeared first and how long the gap lasted.",
           "Change one thing because of what you saw, and save the states.",
         ],
@@ -1829,8 +1829,8 @@ export const module8: Lesson[] = [
         levels: [
           "Errors lose work or offer no route.",
           "Work preserved but retry restarts the task.",
-          "Work, wording and a non-destructive retry all specified.",
-          "As adequate, and the retry preserves scroll position and filters as well as input.",
+          "Work, wording and a retry that keeps position, filters and input all specified.",
+          "As adequate, and the specification says what happens if the retry fails a second time.",
         ],
         remediation:
           "Walk a failure in your own flow and write down everything the person loses. Specify each as preserved.",
@@ -1949,7 +1949,7 @@ export const module8: Lesson[] = [
           "Start the numerical axis at zero for bars.",
           "Work out the ratio your bars show from zero, and the ratio a cut axis would have shown, so the size of the distortion is a number.",
           "Label directly rather than using a legend where you can.",
-          "Check the colours against the contrast threshold.",
+          "Check each bar colour against the background at 3:1 or more (WCAG 1.4.11) and each label against what it sits on at 4.5:1 or more (WCAG 1.4.3; 3:1 for large text).",
         ],
       },
       {
@@ -2111,7 +2111,7 @@ export const module8: Lesson[] = [
     explanation: [
       "Tokens turn scattered decisions into a vocabulary. Once “surface” and “text-primary” exist, a change of palette becomes one edit rather than a hunt through screens, and a conversation with an engineer stops being about hex codes. The naming rule matters as much as the existence: “light-grey” describes what a value looks like today, so redefining it produces a token whose name is a lie, while “surface-muted” describes a role and can be any colour that fills it.",
       "Small sets stay consistent. Five neutrals, two or three semantic colours, five or six type steps and a spacing scale of about six values will cover a product of this size, and the discipline is refusing the seventh grey when a screen looks slightly off — because that screen is usually telling you a spacing or hierarchy problem rather than a colour problem.",
-      "Contrast is measurable, so measure it and write the number beside the pair rather than trusting your eye, which is a poor judge under studio lighting. Record every text-on-surface pair you intend to allow, including the quiet ones — disabled text, placeholder text, captions on tinted backgrounds — because those are where products routinely fall below the threshold, and note that meeting a ratio is a floor rather than proof of legibility.",
+      "Contrast is measurable, so measure it and write the number beside the pair rather than trusting your eye, which is a poor judge under studio lighting. Record every text-on-surface pair you intend to allow, including the quiet ones — placeholder text and captions on tinted backgrounds, which are where products routinely fall below the threshold, and disabled text, which WCAG 1.4.3 exempts but which still needs a deliberate decision — and note that meeting a ratio is a floor rather than proof of legibility.",
       "The test of a token sheet is a screen built from it with no exceptions. The first attempt always produces two or three values that are not in the set, and each of those is information: either the set is missing a genuine role, or the screen is carrying an accidental variation. Resolve each one deliberately, and record which you chose.",
     ],
     misconception:
@@ -2317,7 +2317,7 @@ export const module8: Lesson[] = [
     misconception:
       "“It looks finished, so it is ready.” Looking finished is a property of the surface. Ready means the states exist, the evidence is served, the checks were run and the remaining gaps are written down where someone else can see them.",
     example:
-      "Made-up example: assembling two screens from the library required inventing three things: a status pill for a held place, a compact price treatment, and a spacing value between a heading and a dense list. The pill was a genuine missing component and was added; the price treatment was an accidental variation and was replaced with the existing one; the spacing became the nearest token. The finding-by-finding critique showed the screen no longer surfaced remaining places, which the m05 research had shown people comparing on, so it was restored. The preliminary checks found a heading level skipped and a caption below the contrast threshold; the keyboard check could not be completed because nothing was built, and that was recorded as untested rather than assumed.",
+      "Made-up example: assembling two screens from the library required inventing three things: a status pill for a held place, a compact price treatment, and a spacing value between a heading and a dense list. The pill was a genuine missing component and was added; the price treatment was an accidental variation and was replaced with the existing one; the spacing became the nearest token. The finding-by-finding critique showed the screen no longer surfaced remaining places, which the m07 browse notes had shown people comparing on, so it was restored. The preliminary checks found a heading level skipped and a caption below the contrast threshold; the keyboard check could not be completed because nothing was built, and that was recorded as untested rather than assumed.",
     freeToolPath:
       "Paper or a local HTML file, whichever you have been using. If you want the accessibility checks to be real rather than theoretical, a local HTML file lets you check headings, resize and keyboard behaviour with a browser alone.",
     outputs: [

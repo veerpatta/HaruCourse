@@ -33,7 +33,7 @@ Interface craft turns an idea into clear screens and controls that still work in
 - **Wireframe:** The rough version that shows what is on the screen and in what order, without deciding how any of it looks.
 - **Type scale:** The short list of sizes you allow yourself, each with a job, from Module 3.
 
-**Quick example.** A supplied set of results from the same made-up booking screen. In greyscale the “Book a place” button and the “Add to shortlist” button become the same grey. From arm’s length the first three things seen are the photograph, the class name and the price. The availability line, which the paper test showed people hunting for, is not among them.
+**Quick example.** A supplied set of results from the same made-up booking screen. In greyscale the “Reserve a place” button and the “Share with a friend” button become the same grey. From arm’s length the first three things seen are the photograph, the class name and the price. The availability line, which the paper test showed people hunting for, is not among them.
 
 The reader demonstrates and guides the task before asking for “The screen you picked (your own or the starter file), and the problem a paper test raised about it”.
 
@@ -302,7 +302,7 @@ The greyscale result, the first three things you see from arm’s length, and wh
 
 Section: practice-plan. Stable action: step-4-try.
 
-A supplied set of results from the same made-up booking screen. In greyscale the “Book a place” button and the “Add to shortlist” button become the same grey. From arm’s length the first three things seen are the photograph, the class name and the price. The availability line, which the paper test showed people hunting for, is not among them.
+A supplied set of results from the same made-up booking screen. In greyscale the “Reserve a place” button and the “Share with a friend” button become the same grey. From arm’s length the first three things seen are the photograph, the class name and the price. The availability line, which the paper test showed people hunting for, is not among them.
 
 Which result shows that the added detail has made something the task needs quiet?
 
@@ -590,7 +590,7 @@ Wireframe: The rough version that shows what is on the screen and in what order,
 Type scale: The short list of sizes you allow yourself, each with a job, from Module 3.
 
 Supplied practice material (fictional or labelled practice, not my research):
-A supplied set of results from the same made-up booking screen. In greyscale the “Book a place” button and the “Add to shortlist” button become the same grey. From arm’s length the first three things seen are the photograph, the class name and the price. The availability line, which the paper test showed people hunting for, is not among them.
+A supplied set of results from the same made-up booking screen. In greyscale the “Reserve a place” button and the “Share with a friend” button become the same grey. From arm’s length the first three things seen are the photograph, the class name and the price. The availability line, which the paper test showed people hunting for, is not among them.
 
 Activity: Before explaining the tool or method, ask me to predict what the next action will change. After I answer, explain the visible result and one common recovery step.
 
@@ -656,7 +656,7 @@ Adequate evidence: A list of elements that lost prominence, plus the greyscale a
 
 3 — As adequate, and one loss is repaired and re-checked.
 
-Repair: View the screen in greyscale and from two metres. Write down anything you cannot find that the task needs. Recheck: The check results and any repair.
+Repair: View the screen in greyscale and from arm's length. Write down anything you cannot find that the task needs. Recheck: The check results and any repair.
 
 **The now-expensive question is named with a way to answer it**
 
@@ -773,7 +773,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Made-up example: an audit of nine screens found five button variants: three were the same intent drawn on different days, one was a genuinely different job — a destructive cancel — and one was a link wearing a button's clothes. It found three card layouts that were one card with different content lengths. The merges reduced five buttons to three real jobs and three cards to one, and one merge was recorded as a loss: the cancelled-class card had used a lighter background, and after merging, cancelled status rested entirely on a text label, which was noted as a candidate problem for the next test.
+- Made-up example: an audit of nine screens found five button variants: three were the same intent drawn on different days, one was a destructive cancel that needed its own warning variant, with its own spacing and confirmation, and one was a link wearing a button's clothes. It found three card layouts that were one card with different content lengths. The merges reduced five buttons to one button with a warning variant plus one link, and three cards to one, and one merge was recorded as a loss: the cancelled-class card had used a lighter background, and after merging, cancelled status rested entirely on a text label, which was noted as a candidate problem for the next test.
 
 
 ### Choose where you will do the work
@@ -1073,11 +1073,11 @@ Two actions drawn with the same fill and weight. One books a place. The other ca
 <details>
 <summary>After your attempt</summary>
 
-same component — The drawing matches and the jobs do not. Merging them means the irreversible action inherits the emphasis of the everyday one.
+same component — Drawn the same, nothing tells them apart. Merging them fully means the irreversible action inherits the emphasis of the everyday one.
 
-different components — A destructive action is its own job. It needs its own placement, its own spacing and its own confirmation, so it is its own component.
+different components — Some systems split it out; what matters is that the destructive variant can never be mistaken for booking.
 
-one component with a variant — Tempting, and it puts something irreversible one small setting away from something routine. This lesson keeps it separate.
+one component with a variant — Both do something the moment they are pressed; what differs is the consequence. A destructive variant of the button carries its own emphasis, spacing and confirmation, as the GOV.UK button page treats warning buttons.
 
 Now take your own hardest pair and give it one of these three labels. Write the exact difference on the line first, then decide.
 
@@ -1734,7 +1734,7 @@ Section: practice-plan. Stable action: step-2-sort-2.
 
 Seven actions from someone else’s screens, all made up for practice. Each line says what the screen is for, sometimes with a made-up research note, then names one action on it. Decide whether that action is the screen’s primary, a secondary one, or a quiet one, for that screen and that evidence.
 
-The same class details screen. The action: “Add to shortlist”, currently drawn as a second filled button of exactly the same weight as booking.
+The same class details screen. In the made-up paper test, one of five people pressed this action believing she had booked. The action: “Add to shortlist”, currently drawn as a second filled button of exactly the same weight as booking.
 
 - primary
 - secondary
@@ -1745,9 +1745,9 @@ The same class details screen. The action: “Add to shortlist”, currently dra
 
 primary — That is the trap the screen is already in. Two filled buttons of equal weight means two primaries, and a person can press one believing she pressed the other.
 
-secondary — It is a genuine alternative and it is not what the screen is for. Outline it, keep the height, and let booking hold the fill.
+secondary — Outlined could suit a screen with no evidence against it; here the paper test showed it mistaken for booking, so it drops to quiet.
 
-quiet — Quiet would hide a choice people really make. Secondary keeps it available without competing with the booking.
+quiet — Right for this screen: in the paper test one person pressed it believing she had booked, so it steps back to a quiet text action and booking keeps the fill.
 
 Now label every action on your own list from step 1 with one of these three, and write the note behind each label. Any screen that ends up with two primaries goes on your list of screens to split.
 
@@ -2036,7 +2036,7 @@ Section: practice-plan. Stable action: step-4-brief.
 
 Measured target sizes and spacing at phone size, the spacing you increased, and what greyscale left unrankable.
 
-- Measure each target's size and the spacing around it at phone size.
+- Measure each target's size and the spacing around it at phone size, in points, and compare it with a published minimum.
 - Increase spacing between actions with sharply different outcomes.
 - View every screen in greyscale and mark anything you cannot rank.
 
@@ -2055,11 +2055,11 @@ Measured target sizes and spacing at phone size, the spacing you increased, and 
 
 Section: practice-plan. Stable action: write-measurements.
 
-Print or draw at real size and use a ruler. Estimates are the thing this step exists to replace.
+Measure in points. On screen: select the button in Inkscape and read W and H in the toolbar, with the unit set to px (one unit in the starter is one point). On paper: draw the screen 64 mm wide, so 1 mm is about 6 points. Compare each target with a published minimum: WCAG 2.2 success criterion 2.5.8 (level AA) asks for at least 24 by 24 CSS pixels or enough spacing around a smaller target; Apple recommends 44 by 44 points and Material Design 48 by 48 dp. Record the number and the reference you used. Estimates are the thing this step exists to replace.
 
 **Answer:** Measured size and surrounding spacing for each level, at phone size
 
-Print or draw at real size and use a ruler. Estimates are the thing this step exists to replace.
+Measure in points. On screen: select the button in Inkscape and read W and H in the toolbar, with the unit set to px (one unit in the starter is one point). On paper: draw the screen 64 mm wide, so 1 mm is about 6 points. Compare each target with a published minimum: WCAG 2.2 success criterion 2.5.8 (level AA) asks for at least 24 by 24 CSS pixels or enough spacing around a smaller target; Apple recommends 44 by 44 points and Material Design 48 by 48 dp. Record the number and the reference you used. Estimates are the thing this step exists to replace.
 
 
 ### Where you increased spacing, and between which two actions
@@ -2620,22 +2620,26 @@ Write your answer for “Field 3 · label, help text, error wording, and the for
 
 Section: practice-plan. Stable action: write-field-4.
 
-Write your answer for “Field 4 · label, help text, error wording, and the formats you accept”. Use the task instructions below to decide what to include.
+Leave empty if your form has fewer fields; say in field 1 how many it has.
 
 **Answer:** Field 4 · label, help text, error wording, and the formats you accept
 
+Optional: may be left empty.
 
+Leave empty if your form has fewer fields; say in field 1 how many it has.
 
 
 ### Field 5 · label, help text, error wording, and the formats you accept
 
 Section: practice-plan. Stable action: write-field-5.
 
-Write your answer for “Field 5 · label, help text, error wording, and the formats you accept”. Use the task instructions below to decide what to include.
+Leave empty if your form has fewer fields; say in field 1 how many it has.
 
 **Answer:** Field 5 · label, help text, error wording, and the formats you accept
 
+Optional: may be left empty.
 
+Leave empty if your form has fewer fields; say in field 1 how many it has.
 
 
 ### Move help before the mistake
@@ -2825,7 +2829,7 @@ Your form rejects a submission and reloads with every box empty. Your reasoning 
 
 - Only the field with the error needed preserving; the others can be retyped.
 - It is acceptable, provided the error message explains clearly what went wrong.
-- One mistake now costs every correct answer, which is worse than not checking at all.
+- One mistake now costs every correct answer, so the check takes more than it protects.
 
 <details>
 <summary>After your attempt</summary>
@@ -2834,7 +2838,7 @@ Only the field with the error needed preserving; the others can be retyped. — 
 
 It is acceptable, provided the error message explains clearly what went wrong. — A clear message explains what went wrong on a screen where everything the person typed has gone. The wording does not return the work.
 
-One mistake now costs every correct answer, which is worse than not checking at all. — Skipping validation at least lets the work through. Validation that clears the form takes the work away and gives nothing back.
+One mistake now costs every correct answer, so the check takes more than it protects. — Validation exists to save the person work. One that clears the form throws away five right answers to report one wrong one.
 
 Improve: Rewrite the preserved-input box in step 4 so it describes every value still in place after a failure, then record the change in step 5.
 
@@ -2881,7 +2885,7 @@ Section: practice. Stable action: step-5-brief.
 
 A keyboard pass written down honestly, including what you could not check.
 
-- Tab through the form and note the order and whether focus is visible.
+- Write the tab order you intend and how focus will show; if you built a version, tab through it and note what actually happened.
 - Record anything you could not verify without building it.
 - Save the field table and the keyboard notes.
 
@@ -2894,15 +2898,15 @@ A keyboard pass written down honestly, including what you could not check.
 **Focus:** The place the keyboard is pointing at right now. If you cannot see it, you cannot use the form without a mouse.
 
 
-### The order the keyboard moved through the form, and whether you could see where you were
+### The tab order you intend, and how focus will show — or, if you tabbed a built version, what actually happened
 
 Section: practice. Stable action: write-tab-order.
 
-Write your answer for “The order the keyboard moved through the form, and whether you could see where you were”. Use the task instructions below to decide what to include.
+Mark every line you did not try as untested.
 
-**Answer:** The order the keyboard moved through the form, and whether you could see where you were
+**Answer:** The tab order you intend, and how focus will show — or, if you tabbed a built version, what actually happened
 
-
+Mark every line you did not try as untested.
 
 
 ### What you could not check without a built version, stated plainly
@@ -3184,7 +3188,7 @@ Every destination listed, with the two or three people need most marked.
 
 - Read the assigned responsive layout chapter.
 - List every destination in your structure and mark the two or three people need most.
-- Note which destinations came from the m06 tree test as high-traffic.
+- Note which destinations your m05 research showed people coming for, and which ones the m06 tree test showed people failing to find.
 
 **Start here:** Copy the top level of your m06 structure straight across, then add anything people reach by some other route.
 
@@ -3210,11 +3214,11 @@ Take these from your m06 structure. Mark what people came for, not what the orga
 
 Section: practice-plan. Stable action: write-most-needed.
 
-Summarise without names, such as “3 of 4 tree-test participants went to My bookings first”. Raw notes stay in your private file. A labelled guess is an honest answer.
+Summarise without names, such as “3 of 4 interviewees came back to check an existing booking” or “in the tree test 2 of 4 could not find Change or cancel”. A tree test shows what people could find, not what they need most. Raw notes stay in your private file. A labelled guess is an honest answer.
 
 **Answer:** The evidence behind those marks, or a plain note that you are guessing
 
-Summarise without names, such as “3 of 4 tree-test participants went to My bookings first”. Raw notes stay in your private file. A labelled guess is an honest answer.
+Summarise without names, such as “3 of 4 interviewees came back to check an existing booking” or “in the tree test 2 of 4 could not find Change or cancel”. A tree test shows what people could find, not what they need most. Raw notes stay in your private file. A labelled guess is an honest answer.
 
 
 ### Design the wide layout
@@ -3782,7 +3786,7 @@ Interface craft turns an idea into clear screens and controls that still work in
 - **Detail view:** The screen you reach by choosing a row. Everything you left out of the row lives there.
 - **Default sort:** The order the list is in before anybody changes it. Most people never change it, so it is the order nearly everyone sees.
 
-**Quick example.** A made-up class list at phone width. Three rows break. One class is called “Saturday morning beginners’ pottery and glaze workshop, Bermondsey”. One has no price recorded, so the cell is blank. One has no places left, shown as “0”.
+**Quick example.** A made-up class list at phone width. Three rows break. One class is called “Saturday morning beginners’ pottery and glaze workshop, Bermondsey”. One has no price recorded, so the cell is blank. One has no places left, shown as a bare “0” with no label, and tapping that row still opens the booking form.
 
 The reader demonstrates and guides the task before asking for “Attribute 1 · what it is, and the evidence that people compare on it”.
 
@@ -3834,7 +3838,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Made-up example: a class list showed eight columns on desktop and scrolled sideways on a phone. Rebuilt: rows kept the four attributes the m05 sessions showed people comparing — day and time, price, place, remaining places — with the rest moved to the detail view. Default sort became soonest first, stated above the list. On a phone each row became a record with the class name as the heading. The longest real class name was used for layout, missing prices showed “price on request” rather than a blank, and a full class showed “Full — see other dates” instead of a zero.
+- Made-up example: a class list showed eight columns on desktop and scrolled sideways on a phone. Rebuilt: rows kept the four attributes the m07 browse notes showed people comparing — day and time, price, place, remaining places — with the rest moved to the detail view. Default sort became soonest first, stated above the list. On a phone each row became a record with the class name as the heading. The longest real class name was used for layout, missing prices showed “price on request” rather than a blank, and a full class showed “Full — see other dates” instead of a zero.
 
 
 ### Choose where you will do the work
@@ -3853,7 +3857,7 @@ Section: learn. Stable action: supplied-material.
 Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
 
 - Made-up browse note (this course’s Module 7 example): people choosing between classes compared day and time, price, place and remaining places. Nobody in the notes compared on the teacher or the level.
-- Made-up hard cases for practice: the longest class name is “Saturday morning beginners’ pottery and glaze workshop, Bermondsey”; one class has no price recorded; one class has no places left.
+- Made-up hard cases for practice: the longest class name is “Saturday morning beginners’ pottery and glaze workshop, Bermondsey”; one class has no price recorded; one class has no places left; and the most expensive listing is a ten-week course at £1,250.00 for two people. Use these as supplied if you hold no real data, and say so.
 
 
 ### Decide the row content
@@ -3862,7 +3866,7 @@ Section: practice-plan. Stable action: step-1-brief.
 
 The two to four attributes your row carries, each with the reason it earned the space.
 
-- List the attributes people were seen comparing on: your m05 notes, or the supplied practice notes labelled as supplied.
+- List the attributes people were seen comparing on: your m07 browse notes, or the supplied practice notes labelled as supplied.
 - Put those in the row and move everything else to the detail view.
 - Write what you deliberately omitted and why.
 
@@ -3911,7 +3915,7 @@ If your evidence is “it seemed useful”, write that: a labelled guess is wort
 <details>
 <summary>Example</summary>
 
-Example (made up): remaining places. Two people in the m05 sessions asked whether a class was full before they looked at anything else.
+Example (made up): remaining places. Two people in the m07 browse sessions asked whether a class was full before they looked at anything else.
 
 </details>
 
@@ -3931,22 +3935,26 @@ Write your answer for “Attribute 2 · what it is, and the evidence that people
 
 Section: practice-plan. Stable action: write-attribute-3.
 
-Write your answer for “Attribute 3 · what it is, and the evidence that people compare on it”. Use the task instructions below to decide what to include.
+Leave empty if your row carries fewer; Check 1 asks for four or fewer.
 
 **Answer:** Attribute 3 · what it is, and the evidence that people compare on it
 
+Optional: may be left empty.
 
+Leave empty if your row carries fewer; Check 1 asks for four or fewer.
 
 
 ### Attribute 4 · what it is, and the evidence that people compare on it
 
 Section: practice-plan. Stable action: write-attribute-4.
 
-Write your answer for “Attribute 4 · what it is, and the evidence that people compare on it”. Use the task instructions below to decide what to include.
+Leave empty if your row carries fewer; Check 1 asks for four or fewer.
 
 **Answer:** Attribute 4 · what it is, and the evidence that people compare on it
 
+Optional: may be left empty.
 
+Leave empty if your row carries fewer; Check 1 asks for four or fewer.
 
 
 ### Choose and show the sort
@@ -4088,7 +4096,7 @@ The longest name, the largest number, a worded missing value and a designed empt
 
 Section: practice-plan. Stable action: step-4-try.
 
-A made-up class list at phone width. Three rows break. One class is called “Saturday morning beginners’ pottery and glaze workshop, Bermondsey”. One has no price recorded, so the cell is blank. One has no places left, shown as “0”.
+A made-up class list at phone width. Three rows break. One class is called “Saturday morning beginners’ pottery and glaze workshop, Bermondsey”. One has no price recorded, so the cell is blank. One has no places left, shown as a bare “0” with no label, and tapping that row still opens the booking form.
 
 Which of these should you deal with first, and why?
 
@@ -4117,11 +4125,11 @@ Work through your own hard cases in the same order: what sends someone the wrong
 
 Section: practice-plan. Stable action: write-longest-largest.
 
-Write your answer for “The longest real name and the largest real number at phone width, and what broke”. Use the task instructions below to decide what to include.
+No real data? Use the supplied hard cases: the Bermondsey workshop name and the £1,250.00 ten-week course for two, labelled as supplied.
 
 **Answer:** The longest real name and the largest real number at phone width, and what broke
 
-
+No real data? Use the supplied hard cases: the Bermondsey workshop name and the £1,250.00 ten-week course for two, labelled as supplied.
 
 
 ### What a missing value says, in words rather than a blank
@@ -4344,7 +4352,7 @@ Detail view: The screen you reach by choosing a row. Everything you left out of 
 Default sort: The order the list is in before anybody changes it. Most people never change it, so it is the order nearly everyone sees.
 
 Supplied practice material (fictional or labelled practice, not my research):
-A made-up class list at phone width. Three rows break. One class is called “Saturday morning beginners’ pottery and glaze workshop, Bermondsey”. One has no price recorded, so the cell is blank. One has no places left, shown as “0”.
+A made-up class list at phone width. Three rows break. One class is called “Saturday morning beginners’ pottery and glaze workshop, Bermondsey”. One has no price recorded, so the cell is blank. One has no places left, shown as a bare “0” with no label, and tapping that row still opens the booking form.
 
 Activity: Before explaining the tool or method, ask me to predict what the next action will change. After I answer, explain the visible result and one common recovery step.
 
@@ -4360,7 +4368,7 @@ When the activity is finished, tell me to return to the course answer called “
 <details>
 <summary>Optional hints and reference material</summary>
 
-- Re-read your m05 notes, or the supplied practice notes, for the attributes people named while choosing. Those are the row; the rest is the detail view.
+- Re-read your m07 browse notes, or the supplied practice notes, for the attributes people named while choosing. Those are the row; the rest is the detail view.
 - Write the sort as a sentence the reader sees: “Soonest first”. If you cannot justify it by a task, you have not chosen it.
 
 - R16: [web.dev: learn responsive design](https://web.dev/learn/design/) — The layout chapter, read for how dense content reflows at narrow widths. Purpose: Supplies the reflow reasoning behind turning a table into records. Free reading, no account. Verified 2026-09-06. Web-focused; it does not cover data table conventions, so alignment and sort rules here come from the lesson and R63. Fallback: R15.
@@ -4372,7 +4380,7 @@ When the activity is finished, tell me to return to the course answer called “
 
 **Row content is traced to observed comparison behaviour**
 
-Adequate evidence: A row specification citing evidence per attribute — your m05 notes, or the supplied practice notes labelled as supplied — plus a written list of omissions.
+Adequate evidence: A row specification citing evidence per attribute — your m07 browse notes, or the supplied practice notes labelled as supplied — plus a written list of omissions.
 
 0 — Row content chosen from what the data contains.
 
@@ -4382,7 +4390,7 @@ Adequate evidence: A row specification citing evidence per attribute — your m0
 
 3 — As adequate, and one attribute is included because its absence made people open every result.
 
-Repair: Re-read your m05 notes, or the supplied practice notes, for the attributes people named while choosing. Those are the row; the rest is the detail view. Recheck: The row specification with citations.
+Repair: Re-read your m07 browse notes, or the supplied practice notes, for the attributes people named while choosing. Those are the row; the rest is the detail view. Recheck: The row specification with citations.
 
 **The default sort is chosen and shown**
 
@@ -4441,7 +4449,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 <details>
 <summary>Reading, video and deeper explanation</summary>
 
-- The content of a row is a research question you have already answered. In m05 you watched what people compared on; those attributes belong in the row and the rest do not, because every extra column makes scanning slower for everyone in order to serve the few who needed it. When you cannot decide, the honest test is whether a person could choose between two rows without opening either.
+- The content of a row is a research question you have already answered. In m05 and m07 you watched what people compared on; those attributes belong in the row and the rest do not, because every extra column makes scanning slower for everyone in order to serve the few who needed it. When you cannot decide, the honest test is whether a person could choose between two rows without opening either.
 - Default sort is a design decision that is usually left to the database. Whatever arrives first gets disproportionate attention, so choose it deliberately — soonest first for a schedule, nearest first for a location, most recent first for a log — and say so on screen, because a person who cannot tell how a list is ordered has to read all of it.
 - A table is a comparison grid, and on a phone the grid is gone. Squeezing six columns into 360 pixels produces something unreadable in both directions. The reliable transformation is to turn each row into a record: a small block with the identifying value as a heading and the remaining fields labelled beneath it. You lose easy comparison, which is why keeping the two or three most-compared fields visible matters, and you keep legibility.
 - Real data is messier than examples. Names run long, numbers reach unexpected magnitudes, values go missing, and text arrives in another script. Design each of those cases explicitly: a truncation rule that keeps the distinguishing part, a way to show a missing value that is not an empty cell, and enough room for the longest realistic label rather than the average one.
@@ -4458,10 +4466,10 @@ A modal takes control away from the person. Sometimes that is right; usually it 
 
 Bring: Your m07 exception table and flow.
 
-Starting route: Recommended route: Draw the two interruptions you keep and what the third became on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder. Alternative route: Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+Starting route: Recommended route: Draw the interruptions you keep and what the others became on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder. Alternative route: Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
 
 - A decision table for three interruptions with the reason for each
-- Two designed interruptions with dismissal and a safe default
+- Each justified modal designed with dismissal and a safe default
 - One interruption removed, with what replaced it
 - A stated rule for when your product uses a modal
 
@@ -4483,7 +4491,7 @@ The reader demonstrates and guides the task before asking for “Every point in 
 
 Section: learn. Stable action: welcome.
 
-Decide for three interruptions in your product whether a modal is justified, design the two that are, and record what the rejected one became instead.
+Decide for three interruptions in your product whether a modal is justified, design every one that is justified (often only one), and record what the others became instead.
 
 
 ### Idea 1: A modal is justified when losing the person's work is worse th…
@@ -4534,7 +4542,7 @@ Read the example and notice the decision being made. It is practice material, no
 
 Section: learn. Stable action: workspace.
 
-Recommended route: Draw the two interruptions you keep and what the third became on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder. Alternative route: Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
+Recommended route: Draw the interruptions you keep and what the others became on paper, then record what you drew in the worksheet here so it is saved and reviewable. Photograph the sheet if you can and note the file name; the photo stays in your own folder. Alternative route: Prefer one file on your computer? Use the local text-file route below with the copyable starter table, and note the file location in Your work.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
 
@@ -4711,7 +4719,7 @@ Section: practice-plan. Stable action: step-2-sort-4.
 
 Six interruptions from a made-up class-booking product. For each one, decide whether it needs a modal that blocks everything, whether an inline message would do, or whether it deserves a screen of its own.
 
-The place held during payment has ninety seconds left before it is released.
+During payment the place is held for ten minutes, and the time left must stay visible while she types her card details.
 
 - modal
 - inline message
@@ -4722,7 +4730,7 @@ The place held during payment has ninety seconds left before it is released.
 
 modal — Urgency is exactly what tempts you here, and a modal takes the card field away at the moment the person is typing into it.
 
-inline message — It belongs at the top of the payment step, staying put and counting down, so it can be read without leaving the task.
+inline message — It belongs at the top of the payment step, staying put and counting down, so it can be read without leaving the task. Before it runs out, offer a one-tap way to keep the place.
 
 own screen — Moving to another screen loses the payment step, which is the thing the deadline is about.
 
@@ -4823,11 +4831,11 @@ Write your answer for “Interruption 3 · what it is, the choice you made, and 
 
 
 
-### Design the two that stay
+### Design the ones that stay
 
 Section: practice-plan. Stable action: step-3-brief.
 
-Both surviving interruptions written out: exact wording, two verb labels, the safe default, and how each one is left.
+Each modal that survived written out: exact wording, two verb labels, the safe default, and how each one is left.
 
 - Write the exact wording, naming what will be lost.
 - Make the safe option the default and label both options with verbs.
@@ -4876,15 +4884,17 @@ Name what will be lost in the words themselves. Label both options with verbs, s
 Name what will be lost in the words themselves. Label both options with verbs, so neither of them is “OK”.
 
 
-### Second interruption: the exact wording, both option labels, and which one is the safe default
+### Second interruption, if one earned a modal: the exact wording, both option labels, and which one is the safe default
 
 Section: practice-plan. Stable action: write-modal-b.
 
-Write your answer for “Second interruption: the exact wording, both option labels, and which one is the safe default”. Use the task instructions below to decide what to include.
+Leave empty if only one interruption earned a modal, and say why in step 5.
 
-**Answer:** Second interruption: the exact wording, both option labels, and which one is the safe default
+**Answer:** Second interruption, if one earned a modal: the exact wording, both option labels, and which one is the safe default
 
+Optional: may be left empty.
 
+Leave empty if only one interruption earned a modal, and say why in step 5.
 
 
 ### How each one is left: the visible control, the escape key, and what happens to the work behind it
@@ -4911,7 +4921,7 @@ Section: practice-plan. Stable action: step-4-brief.
 
 The rejected interruption redesigned as something that does not stop the person, plus a check that no two interruptions can collide.
 
-- Take the interruption you rejected and design what it becomes.
+- Take each interruption you rejected and design what it becomes.
 - Place any reference content on the page rather than in a dialogue.
 - Check that no two interruptions can now appear at once.
 
@@ -4924,13 +4934,13 @@ The rejected interruption redesigned as something that does not stop the person,
 **Collide:** Two interruptions arriving at the same moment or in the same place, so one covers the other and only one of them is read.
 
 
-### The interruption you rejected, and the exact thing that replaces it
+### Each interruption you rejected, and the exact thing that replaces it
 
 Section: practice-plan. Stable action: write-replacement.
 
 An undo message, a line on the page, or a screen of its own. Write the wording, not the intention.
 
-**Answer:** The interruption you rejected, and the exact thing that replaces it
+**Answer:** Each interruption you rejected, and the exact thing that replaces it
 
 An undo message, a line on the page, or a screen of its own. Write the wording, not the intention.
 
@@ -5147,7 +5157,7 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: Interruptions: modals, sheets and when not to use one
-What I am trying to do: Decide for three interruptions in your product whether a modal is justified, design the two that are, and record what the rejected one became instead.
+What I am trying to do: Decide for three interruptions in your product whether a modal is justified, design every one that is justified (often only one), and record what the others became instead.
 
 Key idea or terms:
 Interruption: Anything that stops the person mid-task to ask or tell them something: a dialogue, a prompt, a banner, a confirmation.
@@ -5683,16 +5693,16 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Success is green and failure is red, with the same icon and similar wording. What breaks?
 
+- Anyone who cannot tell red from green, or reads in bright light, sees near-identical messages.
 - Very little, since red and green are understood as good and bad almost everywhere.
-- Anyone who cannot tell red from green, or reads in bright light, gets two identical messages.
 - Only the icons need to differ; similar wording is fine once the shapes are distinct.
 
 <details>
 <summary>After your attempt</summary>
 
-Very little, since red and green are understood as good and bad almost everywhere. — They are widely learnt and not universally visible. A message that depends on telling them apart carries nothing for a good number of readers.
+Anyone who cannot tell red from green, or reads in bright light, sees near-identical messages. — Colour is the reinforcement, never the signal. The words and the shape have to carry the meaning on their own.
 
-Anyone who cannot tell red from green, or reads in bright light, gets two identical messages. — Colour is the reinforcement, never the signal. The words and the shape have to carry the meaning on their own.
+Very little, since red and green are understood as good and bad almost everywhere. — They are widely learnt and not universally visible. A message that depends on telling them apart carries nothing for a good number of readers.
 
 Only the icons need to differ; similar wording is fine once the shapes are distinct. — Different shapes help, and the sentence is still the part most people read. If the words do not say whether this is good or bad news, the shape is doing the work alone.
 
@@ -6395,7 +6405,7 @@ Section: practice. Stable action: step-5-brief.
 
 What a slow load actually looked like, one change made because of it, what you could not check, and the repair the Check questions asked for.
 
-- Load a comparable page on a slow throttled connection with the cache disabled.
+- On a computer, load a comparable page in Chrome or Edge with developer tools open, the cache disabled and a slow throttling preset.
 - Record what appeared first and how long the gap lasted.
 - Change one thing because of what you saw, and save the states.
 
@@ -6410,11 +6420,11 @@ What a slow load actually looked like, one change made because of it, what you c
 
 Section: practice. Stable action: write-throttle-notes.
 
-Use the free network-throttling setting in your browser’s own developer tools, with the cache turned off, on a page like the one you are designing. Write times, not impressions.
+On a computer, open a page like the one you are designing in Chrome or Edge, press F12 (Cmd+Option+I on a Mac) and choose the Network tab. Tick Disable cache, change the menu that reads No throttling to a slow preset such as 3G, then reload the page with the panel still open. Write the second at which text, images and buttons appeared: times, not impressions. No computer available? Write “not run” and why.
 
 **Answer:** What you saw on a slow connection: what appeared first, what appeared last, and how long the gap lasted
 
-Use the free network-throttling setting in your browser’s own developer tools, with the cache turned off, on a page like the one you are designing. Write times, not impressions.
+On a computer, open a page like the one you are designing in Chrome or Edge, press F12 (Cmd+Option+I on a Mac) and choose the Network tab. Tick Disable cache, change the menu that reads No throttling to a slow preset such as 3G, then reload the page with the panel still open. Write the second at which text, images and buttons appeared: times, not impressions. No computer available? Write “not run” and why.
 
 
 ### The one thing you changed because of what you saw
@@ -6577,9 +6587,9 @@ Adequate evidence: Error states specifying preserved input, plain wording and a 
 
 1 — Work preserved but retry restarts the task.
 
-2 — Work, wording and a non-destructive retry all specified.
+2 — Work, wording and a retry that keeps position, filters and input all specified.
 
-3 — As adequate, and the retry preserves scroll position and filters as well as input.
+3 — As adequate, and the specification says what happens if the retry fails a second time.
 
 Repair: Walk a failure in your own flow and write down everything the person loses. Specify each as preserved. Recheck: The error specification.
 
@@ -6772,7 +6782,7 @@ One comparison in a sentence, the chart type that serves it, and the type you tu
 
 **Start here:** Write the sentence you want the reader to leave with. The chart type is whatever makes exactly that sentence visible.
 
-**Enough:** Your counts are real numbers you already hold, not numbers you expect to have later.
+**Enough:** Your counts are numbers you already hold, or the supplied practice counts labelled “made-up practice data” — never numbers you expect to have later.
 
 **n:** How many people or things the chart is drawn from. A chart of eight answers is a picture of eight answers.
 
@@ -6860,7 +6870,7 @@ The chart drawn to the rules: axis from zero for bars, direct labels, measured c
 - Start the numerical axis at zero for bars.
 - Work out the ratio your bars show from zero, and the ratio a cut axis would have shown, so the size of the distortion is a number.
 - Label directly rather than using a legend where you can.
-- Check the colours against the contrast threshold.
+- Check each bar colour against the background at 3:1 or more (WCAG 1.4.11) and each label against what it sits on at 4.5:1 or more (WCAG 1.4.3; 3:1 for large text).
 
 **Start here:** Rule the axis first and mark zero before you plot anything. It is much harder to talk yourself into cutting it later.
 
@@ -6942,11 +6952,11 @@ Write your answer for “How each value is labelled, and any legend you were abl
 
 Section: practice-plan. Stable action: write-contrast-result.
 
-A free browser-based checker, or the offline calculation from earlier in the course. No plugin needed.
+Each bar colour against the background at 3:1 or more (WCAG 1.4.11), and each label against what it sits on at 4.5:1 or more (WCAG 1.4.3; 3:1 for large text). A free browser-based checker, or the offline calculation from earlier in the course. No plugin needed.
 
 **Answer:** The contrast ratios you measured for the chart colours and their labels, and the checker you used
 
-A free browser-based checker, or the offline calculation from earlier in the course. No plugin needed.
+Each bar colour against the background at 3:1 or more (WCAG 1.4.11), and each label against what it sits on at 4.5:1 or more (WCAG 1.4.3; 3:1 for large text). A free browser-based checker, or the offline calculation from earlier in the course. No plugin needed.
 
 
 ### Write the alternative text
@@ -7640,11 +7650,11 @@ Made-up example. Measuring the contrast on a token sheet, and finding that a pai
 
 Section: practice-plan. Stable action: write-pairs-measured.
 
-Include the quiet ones: captions, placeholder text, disabled labels, text on tinted panels.
+Include the quiet ones: captions, placeholder text, disabled labels, text on tinted panels. Disabled labels are exempt from WCAG 1.4.3; measure them anyway and record a deliberate decision.
 
 **Answer:** Every text-on-surface pair you allow, with its measured ratio and the checker you used
 
-Include the quiet ones: captions, placeholder text, disabled labels, text on tinted panels.
+Include the quiet ones: captions, placeholder text, disabled labels, text on tinted panels. Disabled labels are exempt from WCAG 1.4.3; measure them anyway and record a deliberate decision.
 
 
 ### Any pair below the threshold, and whether you repaired it or forbade it
@@ -7792,7 +7802,7 @@ The body text pair passes the contrast threshold, so you record that and stop me
 
 - Very little, as long as the largest text on the sheet passes its own lower threshold too.
 - Only the colours, because type and spacing tokens do not need measuring at all.
-- The quiet pairs — captions, placeholders, disabled labels — which fail most often.
+- The quiet pairs — captions, placeholder text, tinted panels — which fail most often.
 
 <details>
 <summary>After your attempt</summary>
@@ -7801,9 +7811,9 @@ Very little, as long as the largest text on the sheet passes its own lower thres
 
 Only the colours, because type and spacing tokens do not need measuring at all. — Type and spacing are not measured for contrast, and every text-on-surface pair is. The gap is the pairs you never listed.
 
-The quiet pairs — captions, placeholders, disabled labels — which fail most often. — Body text is chosen to be readable and rarely fails. The lighter text was chosen to be quiet, and quiet usually means lower contrast.
+The quiet pairs — captions, placeholder text, tinted panels — which fail most often. — Body text is chosen to be readable and rarely fails. The lighter text was chosen to be quiet, and quiet usually means lower contrast.
 
-Improve: Return to your pairs-measured box in step 3 and add every quiet pair you allow, including captions, placeholder and disabled text. Record what you found in the last step.
+Improve: Return to your pairs-measured box in step 3 and add every quiet pair you allow, including captions, placeholder text and text on tinted panels; measure disabled text too and record your decision about it. Record what you found in the last step.
 
 Check again: Every text-on-surface pair on the sheet carries a measured number.
 
@@ -8016,7 +8026,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 - Tokens turn scattered decisions into a vocabulary. Once “surface” and “text-primary” exist, a change of palette becomes one edit rather than a hunt through screens, and a conversation with an engineer stops being about hex codes. The naming rule matters as much as the existence: “light-grey” describes what a value looks like today, so redefining it produces a token whose name is a lie, while “surface-muted” describes a role and can be any colour that fills it.
 - Small sets stay consistent. Five neutrals, two or three semantic colours, five or six type steps and a spacing scale of about six values will cover a product of this size, and the discipline is refusing the seventh grey when a screen looks slightly off — because that screen is usually telling you a spacing or hierarchy problem rather than a colour problem.
-- Contrast is measurable, so measure it and write the number beside the pair rather than trusting your eye, which is a poor judge under studio lighting. Record every text-on-surface pair you intend to allow, including the quiet ones — disabled text, placeholder text, captions on tinted backgrounds — because those are where products routinely fall below the threshold, and note that meeting a ratio is a floor rather than proof of legibility.
+- Contrast is measurable, so measure it and write the number beside the pair rather than trusting your eye, which is a poor judge under studio lighting. Record every text-on-surface pair you intend to allow, including the quiet ones — placeholder text and captions on tinted backgrounds, which are where products routinely fall below the threshold, and disabled text, which WCAG 1.4.3 exempts but which still needs a deliberate decision — and note that meeting a ratio is a floor rather than proof of legibility.
 - The test of a token sheet is a screen built from it with no exceptions. The first attempt always produces two or three values that are not in the set, and each of those is information: either the set is missing a genuine role, or the screen is carrying an accidental variation. Resolve each one deliberately, and record which you chose.
 
 [GOV.UK Design System: styles](https://design-system.service.gov.uk/styles/).
@@ -8100,7 +8110,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Made-up example: assembling two screens from the library required inventing three things: a status pill for a held place, a compact price treatment, and a spacing value between a heading and a dense list. The pill was a genuine missing component and was added; the price treatment was an accidental variation and was replaced with the existing one; the spacing became the nearest token. The finding-by-finding critique showed the screen no longer surfaced remaining places, which the m05 research had shown people comparing on, so it was restored. The preliminary checks found a heading level skipped and a caption below the contrast threshold; the keyboard check could not be completed because nothing was built, and that was recorded as untested rather than assumed.
+- Made-up example: assembling two screens from the library required inventing three things: a status pill for a held place, a compact price treatment, and a spacing value between a heading and a dense list. The pill was a genuine missing component and was added; the price treatment was an accidental variation and was replaced with the existing one; the spacing became the nearest token. The finding-by-finding critique showed the screen no longer surfaced remaining places, which the m07 browse notes had shown people comparing on, so it was restored. The preliminary checks found a heading level skipped and a caption below the contrast threshold; the keyboard check could not be completed because nothing was built, and that was recorded as untested rather than assumed.
 
 
 ### Choose where you will do the work

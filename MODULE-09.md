@@ -928,10 +928,10 @@ Section: practice-plan. Stable action: step-1-brief.
 What the state example showed at each state, one control written as three moments, what a four-second wait looks like today, and the failure with its retry.
 
 - Read the assigned status heuristic and the keyboard pattern for one component you use.
-- Open the state example in this lesson and switch the Save control through idle, pressed, saving, saved and failed, noting what changes each time.
+- Open the state example in this lesson and press Save with each outcome chosen, noting idle, the moment of pressing (hold the button down), saving, saved, failed and cancelled.
 - Write the three moments for one control: press, acknowledgement, outcome, plus what it shows if the outcome fails.
 
-**Start here:** Open the state example in this lesson and switch the Save control through all five states before you write anything. Then write your own three moments as three lines and read the middle one aloud. If it is empty, the person meets silence.
+**Start here:** Open the state example in this lesson and press Save with each outcome chosen, including Cancel while it saves, before you write anything. Then write your own three moments as three lines and read the middle one aloud. If it is empty, the person meets silence.
 
 **Enough:** The acknowledgement line describes something visible that does not claim the outcome.
 
@@ -963,15 +963,15 @@ Made-up example. A Book button that stayed silent for four seconds, and the two 
 **Unknown:** Still unknown: how long the wait really is for your users. Until something runs on a real connection, four seconds is an assumption rather than a measurement.
 
 
-### In the state example: what changed at idle, pressed, saving, saved and failed
+### In the state example: what changed at idle, the moment of pressing, saving, saved, failed and cancelled
 
 Section: practice-plan. Stable action: write-example-states.
 
-Switch the Save control through each state and write what you saw: words, shape, whether it still takes presses. No example on your screen, such as in a printed copy? Draw the five states side by side and say so.
+Press Save with each outcome chosen. Hold the button down to see the moment of pressing; choose Take eight seconds and press Cancel while it saves to see cancelled. Write what you saw: words, shape, whether it still takes presses. No example on your screen, such as in a printed copy? Draw the states side by side and say so.
 
-**Answer:** In the state example: what changed at idle, pressed, saving, saved and failed
+**Answer:** In the state example: what changed at idle, the moment of pressing, saving, saved, failed and cancelled
 
-Switch the Save control through each state and write what you saw: words, shape, whether it still takes presses. No example on your screen, such as in a printed copy? Draw the five states side by side and say so.
+Press Save with each outcome chosen. Hold the button down to see the moment of pressing; choose Take eight seconds and press Cancel while it saves to see cancelled. Write what you saw: words, shape, whether it still takes presses. No example on your screen, such as in a printed copy? Draw the states side by side and say so.
 
 
 ### For one control: the press, the acknowledgement and the outcome, as three separate lines
@@ -1185,8 +1185,8 @@ Section: practice-plan. Stable action: step-4-brief.
 
 A keyboard pass naming where focus was invisible, a phone pass naming what you could not reach, the reduced-motion version, and one repair.
 
-- Tab through your controls and record where focus is invisible.
-- Open the same page on a phone and check every control is reachable.
+- Tab through your controls if they are built and record where focus is invisible; otherwise number the stops on a printed screen and mark each untested.
+- Open the design, or a real-size photo of it, on a phone and note what you cannot reach, or write untested.
 - Turn on Reduce motion in the state example, then write what still shows your acknowledgement without movement.
 - Repair the worst failure you find.
 
@@ -1212,13 +1212,13 @@ Where nothing is built, number the stops on a printed screen and mark every row 
 Where nothing is built, number the stops on a printed screen and mark every row untested.
 
 
-### What you could not reach when you opened the same design on a phone
+### What you could not reach when you opened the design, or a real-size photo of it, on a phone — or “untested”
 
 Section: practice-plan. Stable action: write-phone-check.
 
-Write your answer for “What you could not reach when you opened the same design on a phone”. Use the task instructions below to decide what to include.
+Write your answer for “What you could not reach when you opened the design, or a real-size photo of it, on a phone — or “untested””. Use the task instructions below to decide what to include.
 
-**Answer:** What you could not reach when you opened the same design on a phone
+**Answer:** What you could not reach when you opened the design, or a real-size photo of it, on a phone — or “untested”
 
 
 
@@ -1501,17 +1501,17 @@ Repair: Open your design on a phone and try every action. Anything you cannot re
 
 **A tab pass is recorded with failures named**
 
-Adequate evidence: Notes from tabbing through the controls, naming where focus was invisible or the order was wrong.
+Adequate evidence: Notes from tabbing through the controls, naming where focus was invisible or the order was wrong — or, where nothing is built, the stops numbered on a printed screen and marked untested.
 
 0 — No tab pass.
 
 1 — Claimed without specifics.
 
-2 — Recorded with specific failures.
+2 — Every stop numbered, with specific failures where a build was tabbed, or each stop marked untested where nothing is built.
 
 3 — As adequate, and one failure was repaired and re-checked.
 
-Repair: Build a rough local page with your controls and tab through it. Record what you see, not what you intend. Recheck: The tab-pass notes.
+Repair: Rehearse on the state example in this lesson, number the stops on your printed screen and mark untested what you could not try. Record what you see, not what you intend. Recheck: The tab-pass notes.
 
 </details>
 The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
@@ -1764,18 +1764,18 @@ Section: practice-plan. Stable action: step-3-brief.
 
 Each transition tried at half and at double your duration, with the shortest one that still reads as connected kept.
 
-- Build the transitions roughly in a local file or storyboard the frames.
-- Try each at half and double your chosen duration.
+- Play each transition at a set speed in a free prototyping tool that lets you set an animation's duration, for example Penpot's prototype interactions.
+- Run each at half, chosen and double. Drawn frames only? Write “timing untested on paper” in timing-tests.
 - Keep the shortest that still reads as connected.
 - Switch Reduce motion on and off in the state example to see a change stay visible without movement.
 
-**Start here:** Draw the first and last frame of each transition, then flick between them at the speed you intend and at half that speed. To see a working no-code comparison, open the state example in this lesson and switch Reduce motion on and off: the change stays visible while the movement goes.
+**Start here:** Draw the first and last frame of each transition and flick between them to check the relationship reads. To try the speed, set the duration in a free prototyping tool such as Penpot’s prototype interactions; with paper alone, write that the timing is untested. To see a working no-code comparison, open the state example in this lesson and switch Reduce motion on and off: the change stays visible while the movement goes.
 
 **Enough:** Each duration has a reason attached that is about distance and legibility, not about a house number.
 
 **Reads as connected:** A person can see that the new thing came out of the old one, without being told so in words.
 
-**Frames:** The start and end pictures of a movement, drawn side by side. Flicking between them is a real test when you have nothing to build with.
+**Frames:** The start and end pictures of a movement, drawn side by side. Flicking between them tests the relationship when you have nothing to build with; it cannot test the speed.
 
 **Prototype:** A rough runnable version made in a free tool, built for no reason other than to feel the timing.
 
@@ -1804,7 +1804,7 @@ Any of the three, since the difference between them is too small for most people
 
 200 milliseconds: the shortest of the three at which the panel still visibly travels from its button. — Duration is set by the work the movement has to do. The shortest that still explains is the right one, and here that is the middle value.
 
-Run the same test on your own three, and write down which route you used: drawn frames flicked by hand, or a free prototyping tool.
+Run the same test on your own three in a free prototyping tool, or write “timing untested on paper” if you only have drawn frames.
 
 </details>
 
@@ -1813,11 +1813,11 @@ Run the same test on your own three, and write down which route you used: drawn 
 
 Section: practice-plan. Stable action: write-timing-tests.
 
-Draw the start and end frames and flick between them, or build it in a free prototyping tool. Say which route you used.
+Play each at half, chosen and double in a free prototyping tool that lets you set a duration, such as Penpot’s prototype interactions (free, needs an account; not tested by the course on your computer). Drawn frames only? Write “timing untested on paper”: flicking frames by hand shows the relationship, not the speed. Say which route you used.
 
 **Answer:** For each transition: what happened at half your duration and at double it
 
-Draw the start and end frames and flick between them, or build it in a free prototyping tool. Say which route you used.
+Play each at half, chosen and double in a free prototyping tool that lets you set a duration, such as Penpot’s prototype interactions (free, needs an account; not tested by the course on your computer). Drawn frames only? Write “timing untested on paper”: flicking frames by hand shows the relationship, not the speed. Say which route you used.
 
 
 ### The duration you kept for each, and why it is the shortest that still reads as connected
@@ -2166,13 +2166,13 @@ Repair: For each transition ask what caused the change and where the content wil
 
 **Duration follows distance and was tested at two speeds**
 
-Adequate evidence: Durations set per transition with a record of trying them faster and slower.
+Adequate evidence: Durations set per transition with a record of playing them faster and slower, or the timing marked untested with the route that would test it.
 
 0 — One duration applied everywhere.
 
-1 — Varied durations chosen without testing.
+1 — Varied durations chosen without testing, and not marked untested.
 
-2 — Durations set by distance and tested at two speeds, with the shortest readable kept.
+2 — Durations set by distance and played at two speeds with the shortest readable kept, or the timing marked untested with the route that would test it.
 
 3 — As adequate, and the specification states which transitions must stay under about 200ms.
 
@@ -2599,22 +2599,26 @@ Write your answer for “Animation 2 · the full version, what the person learns
 
 Section: practice-plan. Stable action: write-pair-3.
 
-Write your answer for “Animation 3 · the full version, what the person learns from it, and its reduced version”. Use the task instructions below to decide what to include.
+Fill one pair per animation you kept; leave the rest empty and say how many you kept in pair 1.
 
 **Answer:** Animation 3 · the full version, what the person learns from it, and its reduced version
 
+Optional: may be left empty.
 
+Fill one pair per animation you kept; leave the rest empty and say how many you kept in pair 1.
 
 
 ### Animation 4 · the full version, what the person learns from it, and its reduced version
 
 Section: practice-plan. Stable action: write-pair-4.
 
-Write your answer for “Animation 4 · the full version, what the person learns from it, and its reduced version”. Use the task instructions below to decide what to include.
+Fill one pair per animation you kept; leave the rest empty and say how many you kept in pair 1.
 
 **Answer:** Animation 4 · the full version, what the person learns from it, and its reduced version
 
+Optional: may be left empty.
 
+Fill one pair per animation you kept; leave the rest empty and say how many you kept in pair 1.
 
 
 ### Cut the risky patterns
@@ -2624,7 +2628,7 @@ Section: practice-plan. Stable action: step-3-brief.
 Everything that moves a large area, repeats or drifts on scroll listed and removed under the setting, with the reason recorded.
 
 - Identify anything moving a large area, repeating, or parallax.
-- Remove those entirely under the setting.
+- Remove those entirely under the setting, except an essential waiting signal, which becomes a steady or gently fading mark beside words.
 - Ask whether each is worth keeping even without the setting.
 
 **Start here:** Go through your kept list once looking only for size, repetition and scroll-linked drift. Ignore everything else on this pass.
@@ -2777,7 +2781,7 @@ She is still waiting, and with it gone nothing tells her the product is working.
 
 Acceptable, because the setting asks for no motion and you are honouring the request. — The request is for less movement, not for less information. Reduced is not removed, and a silent wait is a worse experience than a quiet signal.
 
-Improve: Find your loading and progress items in step 2 and specify a small, local, non-repeating reduced version for each, then record it in step 5.
+Improve: Find your loading and progress items in step 2 and specify a small, local reduced version that does not travel, beside a change of words, for each, then record it in step 5.
 
 Check again: Every wait is signalled in both versions of your specification.
 
@@ -2967,7 +2971,7 @@ Repair: For each animation write what the person learns from it, then design a c
 
 **Essential motion survives in a reduced form**
 
-Adequate evidence: Loading and progress indicators specified in a smaller, local, non-oscillating form.
+Adequate evidence: Loading and progress indicators specified in a smaller, local form that does not travel — a steady mark or a gentle fade in place — beside a change of words.
 
 0 — Essential motion removed under the setting.
 
@@ -2981,7 +2985,7 @@ Repair: Replace the spinner with a small local pulse plus a label change, and ch
 
 **Large-area and repeating motion is removed under the setting**
 
-Adequate evidence: A list of large, parallax or repeating motion, each removed when the setting is on.
+Adequate evidence: A list of large, parallax or repeating motion, each removed when the setting is on, apart from an essential waiting signal kept as a steady or gently fading mark beside words.
 
 0 — Retained.
 
@@ -3010,7 +3014,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 - Vestibular disorders are common enough that any product with an audience will have users affected by them, and large or unexpected movement can cause genuine nausea and dizziness rather than mild annoyance. Every major operating system therefore exposes a reduced-motion setting, and the assigned page lists exactly where it lives on each — which means you can turn it on for yourself in under a minute and see what your design does.
 - The right response is replacement rather than deletion. If a panel's entry explained where it came from, removing the animation entirely removes the explanation; a quick fade keeps the change legible without moving anything across the screen. The assigned example does exactly this: it swaps an animation for a gentler one rather than switching it off.
-- Some motion is essential and must persist in a reduced form. A loading indicator communicates that the system is working, and a person who has asked for less motion still needs to know that. The reduced version should be smaller, local and non-oscillating — a subtle pulse or a text change rather than a spinning element crossing a large area.
+- Some motion is essential and must persist in a reduced form. A loading indicator communicates that the system is working, and a person who has asked for less motion still needs to know that. The reduced version should be smaller and local, and should not travel — a steady mark, a gentle fade in place or a text change rather than a spinning element crossing a large area.
 - The riskiest patterns are the large ones: full-screen transitions, parallax scrolling, background video, anything that moves a large area or moves it repeatedly. Those are the first to cut when the setting is on, and honestly they are often worth cutting for everyone, since they cost the most and explain the least.
 
 [MDN: prefers-reduced-motion](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion).
@@ -3224,11 +3228,12 @@ Section: practice-plan. Stable action: step-3-brief.
 
 What three people reached for when nobody told them how, or the supplied results with the gap dated.
 
-- Ask three people to complete the action without telling them how; if nobody is available, read the supplied made-up results and date the gap.
+- Before anyone starts, use your consent introduction from earlier modules: what you will ask, that they can stop at any time, and that only an unnamed summary is kept.
+- Ask up to three adults who agree to take part to complete the action without telling them how; if nobody is available, read the supplied made-up results and date the gap.
 - Record what each reached for first.
 - Note anyone who gave up or used a longer route.
 
-**Start here:** Ask anyone to hand: a flatmate, a colleague, a family member. Say the goal only, then say nothing at all while they try. If nobody is free today, use the supplied results above as practice, write today’s date, and record that discoverability is untested.
+**Start here:** Ask an adult to hand, such as a flatmate, a colleague or a family member. First read your consent introduction from earlier modules: what you will ask, that they can stop at any time, and that you keep only an unnamed summary. If they agree, say the goal only, then say nothing at all while they try. If nobody is free today, use the supplied results above as practice, write today’s date, and record that discoverability is untested.
 
 **Enough:** Each attempt names what the person touched first. A rehearsal with supplied material is written down as untested, never as research.
 
@@ -3283,13 +3288,13 @@ Choose the option that honestly describes your work.
 
 Section: practice-plan. Stable action: write-discovery-records.
 
-Write what they touched, not what you think they meant, as “person 1, person 2”. Note anyone who gave up or took a longer route. Raw notes stay in a private file with a date to delete them. Leave this empty on the rehearsal route.
+Only adults who agreed after your consent introduction and knew they could stop. Write what they touched, not what you think they meant, as “person 1, person 2”. Note anyone who gave up or took a longer route. Raw notes stay in a private file with a date to delete them. Leave this empty on the rehearsal route.
 
 **Answer:** What each person reached for first, in the order they tried things, with no names
 
 Required only when discovery-route is Three people tried it without being told or One or two people tried it. Otherwise leave participant evidence empty.
 
-Write what they touched, not what you think they meant, as “person 1, person 2”. Note anyone who gave up or took a longer route. Raw notes stay in a private file with a date to delete them. Leave this empty on the rehearsal route.
+Only adults who agreed after your consent introduction and knew they could stop. Write what they touched, not what you think they meant, as “person 1, person 2”. Note anyone who gave up or took a longer route. Raw notes stay in a private file with a date to delete them. Leave this empty on the rehearsal route.
 
 
 ### What that tells you about each gesture
@@ -3765,7 +3770,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Made-up example: the date-selection component and the filter panel were specified before building. For the date component: one tab stop for the group, arrow keys to move between dates, enter or space to select, home and end for the first and last available, escape to close returning focus to the field. For the filter panel: focus moves into the panel when it opens, escape closes it and returns focus to the filter button, and tab cycles inside while it is open. A rough build was tested against the table and failed two rows — escape did nothing, and focus returned to the document top — both recorded as defects rather than as design changes.
+- Made-up example: the date-selection component and the filter panel were specified before building. For the date component: one tab stop for the group, arrow keys to move between dates, enter or space to select, home and end for the first and last day of the week, page up and down for the month, escape to close returning focus to the field. For the filter panel: focus moves into the panel when it opens, escape closes it and returns focus to the filter button, and tab cycles inside while it is open. A rough build was tested against the table and failed two rows — escape did nothing, and focus returned to the document top — both recorded as defects rather than as design changes.
 
 
 ### Choose where you will do the work
@@ -3857,9 +3862,9 @@ Made-up example. Writing a key table for a date picker, and finding the first ve
 
 **What using it was like:** Getting from the picker down to the Book button took thirty-one presses. Reaching the 28th took twenty-eight.
 
-**What the pattern said:** One tab stop for the whole grid. Arrow keys move between dates inside it. Home and end jump to the first and last day available.
+**What the pattern said:** One tab stop for the grid; arrows move between days; Home and End go to the first and last day of the week; Page Up and Page Down change month.
 
-**What the table became:** Six rows instead of thirty-one: tab, arrows, enter, space, home and end, escape. Shorter to write and far shorter to use.
+**What the table became:** Six rows instead of thirty-one: tab, arrows, enter and space, home and end, page up and down, escape. Shorter to write and far shorter to use.
 
 **Wrong turn:** The wrong turn is treating reachable as finished. A tab stop on every element answers the reachability question and makes the component miserable.
 
@@ -4017,7 +4022,7 @@ Every row marked with what actually happened, or marked untested, with what you 
 
 **Enough:** Every row carries a result. Where nothing was available to try, every row says untested and the choice above says so too.
 
-**Comparable product:** A real product using the same pattern, borrowed so you have something to press keys on. It stands in for the build you do not have yet.
+**Comparable product:** A real product using the same pattern, borrowed so you have something to press keys on. It is rehearsal: it shows you what to look for, and its results are not your build’s.
 
 **Untested:** Written against a row nobody has actually tried. It is a result, and it is not the same as an empty box.
 
@@ -4033,7 +4038,7 @@ What do you write down?
 - Leave both rows blank until something of your own exists.
 - Mark both rows passed, because that behaviour is what you designed.
 - Change the table so escape is optional, since a real product manages without it.
-- Two failed rows against the table, each with what actually happened.
+- What it did, labelled “comparable product, not my build”, and my own rows left untested.
 
 <details>
 <summary>After your attempt</summary>
@@ -4044,9 +4049,9 @@ Mark both rows passed, because that behaviour is what you designed. — Designin
 
 Change the table so escape is optional, since a real product manages without it. — One product doing without something is not a reason for your specification to ask for less. That is how a table stops being a specification and becomes a description.
 
-Two failed rows against the table, each with what actually happened. — The table is the specification and the thing you tried is the evidence. Recording the difference is the entire reason for writing the table first.
+What it did, labelled “comparable product, not my build”, and my own rows left untested. — The table is your specification and the product you tried is rehearsal. Recording what it did, without passing it off as your build, tells you which risks your build must avoid.
 
-Go through your own rows and mark each one with what happened, or with the word untested. Leave no row empty.
+Go through your own rows and mark each one with what happened in your own build, or with the word untested. Put anything a comparable product showed beside it, labelled as rehearsal. Leave no row empty.
 
 </details>
 
@@ -4059,18 +4064,18 @@ Choose the option that honestly describes your work.
 
 **Answer:** What you checked your table against (A real product using the same pattern, tabbed through in my browser / A free prototype I could tab through / Nothing existed to check: every row is untested)
 
-
+A real product is a comparable product, not your build: what it did is rehearsal, and your own rows stay untested until something of yours exists.
 
 
 ### Row by row: what actually happened, or the word untested
 
 Section: practice-plan. Stable action: write-row-results.
 
-Write what the keys did, not what they were supposed to do. No row may be left empty.
+Write what the keys did, not what they were supposed to do. A comparable product’s result goes beside your row, labelled “comparable product, not my build”, and your row stays untested. No row may be left empty.
 
 **Answer:** Row by row: what actually happened, or the word untested
 
-Write what the keys did, not what they were supposed to do. No row may be left empty.
+Write what the keys did, not what they were supposed to do. A comparable product’s result goes beside your row, labelled “comparable product, not my build”, and your row stays untested. No row may be left empty.
 
 
 ### Check your reasoning · 1 of 3
@@ -4167,13 +4172,13 @@ Answers to revisit: test-status, row-results, improvement-made
 
 Section: practice. Stable action: step-5-brief.
 
-The failures written as defects for the build, your deliberate departures from the pattern, and the repair the Check questions asked for.
+Failures from your own build as defects, what a comparable product got wrong as risks to avoid, your deliberate departures from the pattern, and the repair the Check questions asked for.
 
-- List the failures as defects for the build, not as design changes.
+- List failures from your own build as defects, not as design changes; list what a comparable product got wrong as risks for the build to avoid.
 - Note where you departed from the pattern and why.
 - Save both tables with their results.
 
-**Start here:** Copy each failed row into the defect list and add the expected behaviour beside what happened.
+**Start here:** Copy each row your own build failed into the defect list with the expected behaviour beside what happened. List what a comparable product got wrong separately, as risks.
 
 **Enough:** Nothing that failed has quietly become the new design.
 
@@ -4182,13 +4187,13 @@ The failures written as defects for the build, your deliberate departures from t
 **Deliberate departure:** A place where you knowingly did something the pattern does not, written down with your reason so nobody reads it as a slip.
 
 
-### The failures written as defects for the build, and anywhere you left the pattern on purpose
+### Failures from your own build as defects, what a comparable product got wrong as risks for the build to avoid, and anywhere you left the pattern on purpose
 
 Section: practice. Stable action: write-defect-list.
 
-Write your answer for “The failures written as defects for the build, and anywhere you left the pattern on purpose”. Use the task instructions below to decide what to include.
+Write your answer for “Failures from your own build as defects, what a comparable product got wrong as risks for the build to avoid, and anywhere you left the pattern on purpose”. Use the task instructions below to decide what to include.
 
-**Answer:** The failures written as defects for the build, and anywhere you left the pattern on purpose
+**Answer:** Failures from your own build as defects, what a comparable product got wrong as risks for the build to avoid, and anywhere you left the pattern on purpose
 
 
 
@@ -4219,7 +4224,7 @@ Write your decision first, then the reason it fits this new case. Compare with t
 
 - Weak: Says every seat is reachable by Tab, so keyboard support is done, or only adds a skip link.
 - Adequate: One tab stop for the grid with arrow keys moving between seats, Enter and Space both selecting, and Escape closing the map and returning focus to the “Choose seats” button.
-- Strong: As adequate, plus what the arrows do at the edges and over unavailable seats, and every row marked untested until it is tried in a build or a comparable product.
+- Strong: As adequate, plus what the arrows do at the edges and over unavailable seats, and every row marked untested until it is tried in a build, with anything learned from a comparable product labelled as rehearsal.
 
 </details>
 
@@ -4428,11 +4433,11 @@ Section: learn. Stable action: learn-4.
 Keep focus visible at every step; an invisible focus is a lost position.
 
 
-### Idea 5: Test by tabbing with your eyes closed for one step: can you te…
+### Idea 5: Test by pressing tab, looking away, then looking back: can you…
 
 Section: learn. Stable action: learn-5.
 
-Test by tabbing with your eyes closed for one step: can you tell where you are?
+Test by pressing tab, looking away, then looking back: can you find where you are within a second?
 
 
 ### See the idea in a supplied example
@@ -4878,21 +4883,21 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 A form is submitted and three fields are rejected. Where does focus go?
 
 - To the first field with a problem, with its message attached to that field.
-- To the top of the page, so she can read the summary of all three.
+- To the top of the page, where a red banner says only that there were errors.
 - Nowhere in particular, because the red borders already make all three visible.
 
 <details>
 <summary>After your attempt</summary>
 
-To the first field with a problem, with its message attached to that field. — She lands on the thing she has to change, with the reason beside it. Nothing else has to be hunted for.
+To the first field with a problem, with its message attached to that field. — She lands on the thing she has to change, with the reason beside it. Nothing else has to be hunted for. Moving focus to an error summary that links to each field, as GOV.UK does and as the summary in your Module 8 form allows, is the other defensible choice.
 
-To the top of the page, so she can read the summary of all three. — A summary at the top is useful and it leaves her a search. Put the summary there and still send focus to the first field.
+To the top of the page, where a red banner says only that there were errors. — A banner that names no field leaves her to hunt through the form for all three. A summary that names each problem and links to its field would be a different, defensible choice.
 
 Nowhere in particular, because the red borders already make all three visible. — Red borders are invisible to anybody not looking at that part of the screen, and to anybody who does not see red as red. Focus is what carries the person there.
 
 Improve: Fill your error rule in step 2 with a named destination and where the message sits, then record the change in step 5.
 
-Check again: The error rule names a field, not a region.
+Check again: The error rule names a specific destination — the first field with a problem, or a summary that links to each field — not a region.
 
 Answers to revisit: rule-open, rule-close, rule-replace, rule-error, improvement-made
 
@@ -5638,13 +5643,13 @@ On a phone, your whole row is draggable. What breaks?
 
 Very little, because a modern phone can usually tell a slow drag from a quick scroll. — Sometimes it can, and the person who moves slowly because her hand shakes is exactly the one it gets wrong.
 
-Scrolling and dragging become one gesture, so the list must guess which she meant. — A grip, or a long press, tells the two apart deliberately. Without one, every attempt to scroll the list risks rearranging it.
+Scrolling and dragging become one gesture, so the list must guess which she meant. — A grip, or an explicit Move mode, tells the two apart deliberately; a timed long press does not, as the step 4 example showed. Without one, every attempt to scroll the list risks rearranging it.
 
 Only the look of the row suffers, since it appears the same in either state. — The row looking the same is the problem. Nothing on it says which of the two things a press is about to do.
 
 Improve: Fill the touch rule in step 4 with what has to be touched or held to begin a drag, then record what you changed in step 5.
 
-Check again: The rule names a grip, a long press or a mode, and the scrolling check says ordinary scrolling still works.
+Check again: The rule names a grip or a mode, and the scrolling check says ordinary scrolling still works.
 
 Answers to revisit: undo-spec, cancel-routes, reduced-move, touch-rule, scroll-check, improvement-made
 
@@ -5840,7 +5845,7 @@ Adequate evidence: A written rule for how touch distinguishes dragging from scro
 
 3 — As adequate, and the rule was tried on a real phone rather than reasoned about.
 
-Repair: Choose a handle, a long press or a mode, then try scrolling the same list on a phone to confirm it still works. Recheck: The touch rule and the check.
+Repair: Choose a handle or a mode, then try scrolling the same list on a phone to confirm it still works. Recheck: The touch rule and the check.
 
 </details>
 The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
@@ -5861,7 +5866,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 - Drag and drop is a genuine improvement for arranging things and a genuine barrier for anyone with limited dexterity, a tremor, a touchpad they find awkward, or a screen reader. That does not make it wrong; it makes other routes mandatory, and there are two of them. A keyboard route — focus an item, then arrow keys, or Move up and Move down — serves people who do not use a pointer. A single-pointer route — tap Move, then tap where it should go, or Move up and Move down buttons — serves people who can point and click but cannot hold and drag. WCAG 2.2 success criterion 2.5.7, Dragging Movements, judges these separately: a keyboard equivalent alone does not meet the single-pointer requirement.
 - Three signals make dragging legible: what is draggable, what is currently held, and where it will go. Products routinely provide the second and neglect the first and third, so people learn by accident that a row can be moved, and then guess where it will land. A visible drop indicator — a line, a gap, a highlighted target — is what turns a guess into a decision.
 - Commit on release, let a move be cancelled before it lands — escape for the keyboard, a Cancel or a second tap for the pointer route — and offer a way back afterwards. An accidental reorder is a slip, and slips need recovery rather than confirmation; a brief undo is the right instrument, and the message that offers it should say what changed. Reordering that silently persists is unrecoverable for the person who did not notice they had done it.
-- On touch screens, dragging and scrolling compete for the same gesture, and the resolution has to be deliberate: a long press to enter a drag mode, a dedicated handle, or drag only in a mode the person turned on. Choosing nothing means the product will feel unpredictable — sometimes scrolling, sometimes dragging — which is worse than either.
+- On touch screens, dragging and scrolling compete for the same gesture, and the resolution has to be deliberate: a dedicated handle, or drag only in a Move mode the person turned on. A timed long press looks free and is not, because every thumb resting before a flick becomes a possible drag. Choosing nothing means the product will feel unpredictable — sometimes scrolling, sometimes dragging — which is worse than either.
 - Reduced motion applies here too. With the setting on, the row should arrive in its new place without sliding through the list, while the new position is still shown on screen and stated in the message.
 
 [W3C ARIA Authoring Practices: patterns](https://www.w3.org/WAI/ARIA/apg/patterns/).
@@ -6093,22 +6098,26 @@ Write your answer for “Element 2 · what the person needs it for while scrolli
 
 Section: practice-plan. Stable action: write-keep-3.
 
-Write your answer for “Element 3 · what the person needs it for while scrolling, and your decision”. Use the task instructions below to decide what to include.
+One row per fixed element; leave the rest empty.
 
 **Answer:** Element 3 · what the person needs it for while scrolling, and your decision
 
+Optional: may be left empty.
 
+One row per fixed element; leave the rest empty.
 
 
 ### Element 4 · what the person needs it for while scrolling, and your decision
 
 Section: practice-plan. Stable action: write-keep-4.
 
-Write your answer for “Element 4 · what the person needs it for while scrolling, and your decision”. Use the task instructions below to decide what to include.
+One row per fixed element; leave the rest empty.
 
 **Answer:** Element 4 · what the person needs it for while scrolling, and your decision
 
+Optional: may be left empty.
 
+One row per fixed element; leave the rest empty.
 
 
 ### The new total fixed height after your decisions
@@ -6833,7 +6842,7 @@ A supplied made-up case. Someone is half way through typing a note on a booking.
 Which behaviour would you specify, and what makes it defensible?
 
 - Throw the half-typed note away, since she left the app without finishing or saving it.
-- Store what was typed straight away, quietly, as though she had already finished writing the note.
+- Store the half-typed note as final, and show nothing on her return to say it was left unfinished.
 - Keep it as a draft, show it in the editing state on her return, and say when it was changed.
 - Ask her to confirm what to do with the note before the app finishes closing down.
 
@@ -6842,9 +6851,9 @@ Which behaviour would you specify, and what makes it defensible?
 
 Throw the half-typed note away, since she left the app without finishing or saving it. — Leaving is rarely a decision. A notification is not the same as pressing cancel, and discarding is the one outcome she cannot reverse.
 
-Store what was typed straight away, quietly, as though she had already finished writing the note. — It keeps her words and it also publishes half a sentence as though it were final. On a shared booking someone else may read it before she does.
+Store the half-typed note as final, and show nothing on her return to say it was left unfinished. — It keeps her words and stores half a sentence as though it were final, with nothing to tell her or anyone else it was unfinished. On a shared booking someone else may read it before she does.
 
-Keep it as a draft, show it in the editing state on her return, and say when it was changed. — Her words are kept, and nothing half-finished was stored under her name as though she meant it. The time tells her what she is looking at four hours later.
+Keep it as a draft, show it in the editing state on her return, and say when it was changed. — Her words are kept, and nothing half-finished was stored under her name as though she meant it. The time tells her what she is looking at four hours later. Saving with a visible time, as the lesson’s example does, can also be defended; what fails is storing it silently as final.
 
 Ask her to confirm what to do with the note before the app finishes closing down. — A tap on a notification does not wait for a question, and a question she never sees settles nothing. Keep the text and ask her later, when she is back.
 
@@ -7818,7 +7827,7 @@ Write your decision first, then the reason it fits this new case. Compare with t
 <summary>Compare after writing</summary>
 
 - Weak: Keeps all six values or the “elegant” rule, so the next proposal can still pick any number.
-- Adequate: Merges values within 50ms into about three named roles (such as quick 150 and moderate 250), writes a countable rule such as “one thing animates at a time”, and pairs each role with a reduced-motion version.
+- Adequate: Merges 150, 180, 200 and 220 (each within 50ms of a neighbour) into one role such as quick 200, keeps 300 as moderate, writes a countable rule such as “one thing animates at a time”, and pairs each role with a reduced-motion version.
 - Strong: As adequate, plus a decision on 450ms (justified as its own role, or removed) and a test of the rule against an animation it ought to refuse.
 
 </details>
@@ -8130,10 +8139,12 @@ Section: practice-plan. Stable action: step-2-brief.
 One de-identified record per person on their own device, or one dated rehearsal record, and a count of every repeated action you saw.
 
 - Run the tasks on each participant's own phone where possible; if nobody is available, walk both tasks yourself twice on a phone you did not design on and label it rehearsal.
+- Choose what is used: the working examples in lessons 2, 8 and 10 opened on the phone (feedback, reordering, saving), or a rough build if you have one.
+- Or use your Module 8 screens as a paper prototype, changing sheets yourself as “the computer” (order and finding things only, not timing). Name which in each record.
 - Record double taps, hesitations and anything they could not find.
 - Do not explain gestures or controls during the task.
 
-**Start here:** Say the task, then stop talking. Silence is the instrument.
+**Start here:** Choose what will be used: the working examples in lessons 2, 8 and 10 opened on the phone (feedback, reordering, saving); your Module 8 screens as a paper prototype, with you changing sheets as “the computer” (order and finding things only, not timing); or a rough build. Name it in each record. Then say the task and stop talking. Silence is the instrument.
 
 **Enough:** Each record names a device and describes actions rather than opinions. A rehearsal says rehearsal and names no participant.
 
@@ -8144,13 +8155,13 @@ One de-identified record per person on their own device, or one dated rehearsal 
 
 Section: practice-plan. Stable action: write-session-1.
 
-No names, contact details or recordings here; raw notes stay in a private file with a date to delete them.
+Name what they used: the working examples, the paper prototype or a rough build. No names, contact details or recordings here; raw notes stay in a private file with a date to delete them.
 
 **Answer:** Person 1 · device, what they did, where they hesitated, what they could not find
 
 Required only when session-status is Three people tried it on their own phones or One or two people tried it. Otherwise leave participant evidence empty.
 
-No names, contact details or recordings here; raw notes stay in a private file with a date to delete them.
+Name what they used: the working examples, the paper prototype or a rough build. No names, contact details or recordings here; raw notes stay in a private file with a date to delete them.
 
 
 ### Person 2 · device, what they did, where they hesitated, what they could not find
@@ -8179,13 +8190,13 @@ Required only when session-status is Three people tried it on their own phones. 
 
 
 
-### Rehearsal only: the phone you used, what you did on each task twice, and where you hesitated, labelled rehearsal
+### Rehearsal only: the phone you used, what you ran on it (working examples, paper prototype or rough build), what you did on each task twice, and where you hesitated, labelled rehearsal
 
 Section: practice-plan. Stable action: write-rehearsal-record.
 
-Write your answer for “Rehearsal only: the phone you used, what you did on each task twice, and where you hesitated, labelled rehearsal”. Use the task instructions below to decide what to include.
+Write your answer for “Rehearsal only: the phone you used, what you ran on it (working examples, paper prototype or rough build), what you did on each task twice, and where you hesitated, labelled rehearsal”. Use the task instructions below to decide what to include.
 
-**Answer:** Rehearsal only: the phone you used, what you did on each task twice, and where you hesitated, labelled rehearsal
+**Answer:** Rehearsal only: the phone you used, what you ran on it (working examples, paper prototype or rough build), what you did on each task twice, and where you hesitated, labelled rehearsal
 
 Required only when session-status is Nobody was available: rehearsal only, dated. Otherwise leave participant evidence empty.
 
@@ -8194,7 +8205,7 @@ Required only when session-status is Nobody was available: rehearsal only, dated
 <details>
 <summary>Example</summary>
 
-Example (made up): rehearsal, 5 October, an old phone I did not design on. Task 1 twice: no second tap, but I knew where Book was. Task 2: the remove control took me a moment to find.
+Example (made up): rehearsal, 5 October, an old phone I did not design on, running the working examples from lessons 2 and 8. Task 1 twice: no second tap, but I knew where Book was. Task 2: the remove control took me a moment to find.
 
 </details>
 

@@ -181,7 +181,7 @@ export const guided09: Record<string, Guided> = {
       { id: 'moments', title: 'Three moments, one control', intro: 'Pick the control that matters most: usually the one that spends money or books a place.', fields: [
         { id: 'three-moments', label: 'For one control: the press, the acknowledgement and the outcome, as three separate lines', kind: 'long', example: 'Example (made up): press, the button darkens under the finger; acknowledgement, the label becomes “Booking…” and the control stops accepting presses; outcome, “Booked. Saturday 10am.”' },
         { id: 'slow-case', label: 'What the person sees if the reply takes four seconds', kind: 'short', hint: 'If the honest answer is “nothing”, that is the finding this lesson exists for.' },
-        { id: 'example-states', label: 'In the state example: what changed at idle, pressed, saving, saved and failed', kind: 'long', hint: 'Switch the Save control through each state and write what you saw: words, shape, whether it still takes presses. No example on your screen, such as in a printed copy? Draw the five states side by side and say so.' },
+        { id: 'example-states', label: 'In the state example: what changed at idle, the moment of pressing, saving, saved, failed and cancelled', kind: 'long', hint: 'Press Save with each outcome chosen. Hold the button down to see the moment of pressing; choose Take eight seconds and press Cancel while it saves to see cancelled. Write what you saw: words, shape, whether it still takes presses. No example on your screen, such as in a printed copy? Draw the states side by side and say so.' },
         { id: 'failure-retry', label: 'What your control shows if the outcome fails, and how the person retries without losing anything', kind: 'long', example: 'Example (made up): “Not booked. Your place is still free. Try again”, with the button active again and the chosen date kept.' },
       ] },
       { id: 'controls', title: 'Three controls specified', intro: 'Press, hover and focus for each. Hover is the one that does not exist on a phone.', fields: [
@@ -196,7 +196,7 @@ export const guided09: Record<string, Guided> = {
       ] },
       { id: 'testing', title: 'Keyboard and touch', fields: [
         { id: 'tab-pass', label: 'Where the keyboard stops, in order, and where you could not see the focus', kind: 'long', hint: 'Where nothing is built, number the stops on a printed screen and mark every row untested.' },
-        { id: 'phone-check', label: 'What you could not reach when you opened the same design on a phone', kind: 'long' },
+        { id: 'phone-check', label: 'What you could not reach when you opened the design, or a real-size photo of it, on a phone — or “untested”', kind: 'long' },
         { id: 'reduced-motion-version', label: 'With Reduce motion on: what still tells the person the press registered and the outcome is coming, without movement', kind: 'long', hint: 'Turn on Reduce motion in the state example first and watch which changes remain. Words and a steady mark carry it; a spinning shape does not.' },
         { id: 'worst-repair', label: 'The worst failure you found, and what you changed', kind: 'short' },
       ] },
@@ -225,7 +225,7 @@ export const guided09: Record<string, Guided> = {
           tradeoff: 'Three moments is more to specify and more to build than one line, and most of the time the middle one is on screen for a blink. The blink is what prevents the duplicate booking.',
           uncertainty: 'Still unknown: how long the wait really is for your users. Until something runs on a real connection, four seconds is an assumption rather than a measurement.',
         },
-        start: 'Open the state example in this lesson and switch the Save control through all five states before you write anything. Then write your own three moments as three lines and read the middle one aloud. If it is empty, the person meets silence.',
+        start: 'Open the state example in this lesson and press Save with each outcome chosen, including Cancel while it saves, before you write anything. Then write your own three moments as three lines and read the middle one aloud. If it is empty, the person meets silence.',
         enough: 'The acknowledgement line describes something visible that does not claim the outcome.' },
       { expect: 'Press, hover and focus specified for three controls, each state separable without colour, and each acknowledgement carrying a change of words.',
         fields: ['control-1', 'control-2', 'control-3', 'greyscale-check'],
@@ -320,7 +320,7 @@ export const guided09: Record<string, Guided> = {
         { id: 'transition-3', label: 'Transition 3 · origin, movement, duration, easing and exit', kind: 'long' },
       ] },
       { id: 'timings', title: 'Half and double', fields: [
-        { id: 'timing-tests', label: 'For each transition: what happened at half your duration and at double it', kind: 'long', hint: 'Draw the start and end frames and flick between them, or build it in a free prototyping tool. Say which route you used.' },
+        { id: 'timing-tests', label: 'For each transition: what happened at half your duration and at double it', kind: 'long', hint: 'Play each at half, chosen and double in a free prototyping tool that lets you set a duration, such as Penpot’s prototype interactions (free, needs an account; not tested by the course on your computer). Drawn frames only? Write “timing untested on paper”: flicking frames by hand shows the relationship, not the speed. Say which route you used.' },
         { id: 'chosen-durations', label: 'The duration you kept for each, and why it is the shortest that still reads as connected', kind: 'short' },
       ] },
       { id: 'reject', title: 'One rejected, the rest sequenced', fields: [
@@ -361,7 +361,7 @@ export const guided09: Record<string, Guided> = {
         },
         start: 'Write the origin before the duration. A transition with no origin does not need a number, it needs a fade.',
         enough: 'Each exit is the entry run backwards, so the relationship holds in both directions.' },
-      { terms: [{ term: 'Reads as connected', meaning: 'A person can see that the new thing came out of the old one, without being told so in words.' }, { term: 'Frames', meaning: 'The start and end pictures of a movement, drawn side by side. Flicking between them is a real test when you have nothing to build with.' }, { term: 'Prototype', meaning: 'A rough runnable version made in a free tool, built for no reason other than to feel the timing.' }], expect: 'Each transition tried at half and at double your duration, with the shortest one that still reads as connected kept.',
+      { terms: [{ term: 'Reads as connected', meaning: 'A person can see that the new thing came out of the old one, without being told so in words.' }, { term: 'Frames', meaning: 'The start and end pictures of a movement, drawn side by side. Flicking between them tests the relationship when you have nothing to build with; it cannot test the speed.' }, { term: 'Prototype', meaning: 'A rough runnable version made in a free tool, built for no reason other than to feel the timing.' }], expect: 'Each transition tried at half and at double your duration, with the shortest one that still reads as connected kept.',
         fields: ['timing-tests', 'chosen-durations'],
         supported: {
           material: 'A supplied made up timing test. The same panel transition was tried at three durations. At 100 milliseconds the panel seemed to appear rather than travel. At 200 the travel was visible and the panel was ready before the hand had moved. At 400 the person was waiting for it.',
@@ -372,9 +372,9 @@ export const guided09: Record<string, Guided> = {
             { label: '400 milliseconds, because the slower movement is easier to follow for everyone watching the panel.', was: ['400 milliseconds, because the movement is easier to follow.'], feedback: 'Easier to follow stops being useful once the relationship has landed. Everything after that point is the person waiting.' },
             { label: 'Any of the three, since the difference between them is too small for most people to notice at all.', was: ['Any of the three, since the difference is too small for a person to notice.'], feedback: 'The gap between 100 and 400 milliseconds is roughly the gap between instant and slow. It is one of the few timing differences almost everybody feels.' },
           ],
-          then: 'Run the same test on your own three, and write down which route you used: drawn frames flicked by hand, or a free prototyping tool.',
+          then: 'Run the same test on your own three in a free prototyping tool, or write “timing untested on paper” if you only have drawn frames.',
         },
-        start: 'Draw the first and last frame of each transition, then flick between them at the speed you intend and at half that speed. To see a working no-code comparison, open the state example in this lesson and switch Reduce motion on and off: the change stays visible while the movement goes.',
+        start: 'Draw the first and last frame of each transition and flick between them to check the relationship reads. To try the speed, set the duration in a free prototyping tool such as Penpot’s prototype interactions; with paper alone, write that the timing is untested. To see a working no-code comparison, open the state example in this lesson and switch Reduce motion on and off: the change stays visible while the movement goes.',
         enough: 'Each duration has a reason attached that is about distance and legibility, not about a house number.' },
       { terms: [{ term: 'Sequence', meaning: 'To run one movement after another instead of together, so there is one thing to follow at a time.' }, { term: 'Competing motion', meaning: 'Two or more movements in the same view at the same moment, each asking for the attention only one of them can have.' }, { term: 'Cost', meaning: 'What is lost by removing something, written down so a later reader can see it was a choice rather than an oversight.' }], demo: { scenario: 'Made-up example. Three transitions firing together when a note is deleted, and cutting the wrong one of the three.', beats: [{ label: 'What was happening at once', text: 'Deleting a note ran three movements in the same moment. The row collapsing shut, the rows below sliding up to close the gap, and an undo bar rising from the bottom edge. All of them around 250 milliseconds.' }, { label: 'Which one I removed', text: 'The undo bar entrance. I chose it because it was the newest of the three and I was the least attached to it.' }, { label: 'What that cost', text: 'The undo bar is the only thing saying the deletion can still be taken back. Removing its entrance did not remove the bar; it made the bar arrive with no announcement, in a corner nobody was looking at.' }, { label: 'The question I had skipped', text: 'Which of the three carries the relationship. The row collapsing is what shows this note is the one that went. The rows sliding up say the same fact a second time, more slowly.' }, { label: 'What I did instead', text: 'Dropped the slide of the rows below. Kept the row collapsing at 200 milliseconds. Let the undo bar rise 100 milliseconds after that one finishes, so there is one thing to follow, then another.' }], wrongTurn: 'The wrong turn is choosing what to cut by how attached you are to it. It is tempting because you have to cut something and the newest thing feels cheapest to lose, and the transitions you have lived with longest are exactly the ones you have stopped seeing.', tradeoff: 'Sequencing adds the second movement onto the end of the first, so the deletion now takes longer from beginning to end than the version where everything happened together. You are paying time for legibility and there is no arrangement where it is free.', uncertainty: 'Still unknown: whether a 100 millisecond gap reads as after rather than alongside. That judgement was made with your own eyes on your own machine, and a device dropping frames may close the gap.' }, expect: 'One transition removed with its cost and what it explained, no two transitions running at once in the same view, and what an interruption does.',
         fields: ['rejected', 'competing', 'interrupted'],
@@ -443,8 +443,8 @@ export const guided09: Record<string, Guided> = {
       { id: 'pairs', title: 'Both versions of each animation', intro: 'One animation at a time. The full version, what the person learns from it, and the reduced version that teaches the same thing.', fields: [
         { id: 'pair-1', label: 'Animation 1 · the full version, what the person learns from it, and its reduced version', kind: 'long', example: 'Example (made up): the panel scaling out of the filter button over 200 milliseconds; the person learns where the panel came from; reduced version is a 120 millisecond fade in place, with the filter button staying marked as open.' },
         { id: 'pair-2', label: 'Animation 2 · the full version, what the person learns from it, and its reduced version', kind: 'long' },
-        { id: 'pair-3', label: 'Animation 3 · the full version, what the person learns from it, and its reduced version', kind: 'long' },
-        { id: 'pair-4', label: 'Animation 4 · the full version, what the person learns from it, and its reduced version', kind: 'long' },
+        { id: 'pair-3', label: 'Animation 3 · the full version, what the person learns from it, and its reduced version', kind: 'long', optional: true, hint: 'Fill one pair per animation you kept; leave the rest empty and say how many you kept in pair 1.' },
+        { id: 'pair-4', label: 'Animation 4 · the full version, what the person learns from it, and its reduced version', kind: 'long', optional: true, hint: 'Fill one pair per animation you kept; leave the rest empty and say how many you kept in pair 1.' },
       ] },
       { id: 'risky', title: 'The patterns to cut first', fields: [
         { id: 'large-motion', label: 'Anything that moves a large area, repeats, or drifts as the person scrolls', kind: 'long' },
@@ -561,7 +561,7 @@ export const guided09: Record<string, Guided> = {
           { label: 'Acceptable, because the setting asks for no motion and you are honouring the request.', was: ['It is, because the setting is a request for no motion and you are honouring it.'], feedback: 'The request is for less movement, not for less information. Reduced is not removed, and a silent wait is a worse experience than a quiet signal.' },
           { label: 'Acceptable, as long as the outcome message eventually arrives to end the wait.', was: ['It is, as long as the outcome message eventually arrives.'], feedback: 'The gap before that message is exactly the moment the person needs covering. Eventually is not an acknowledgement.' },
         ],
-        repair: 'Find your loading and progress items in step 2 and specify a small, local, non-repeating reduced version for each, then record it in step 5.',
+        repair: 'Find your loading and progress items in step 2 and specify a small, local reduced version that does not travel, beside a change of words, for each, then record it in step 5.',
         recheck: 'Every wait is signalled in both versions of your specification.',
       },
       {
@@ -607,7 +607,7 @@ export const guided09: Record<string, Guided> = {
         { id: 'discovery-route', label: 'How you found out', kind: 'choice', options: ['Three people tried it without being told', 'One or two people tried it', 'Nobody was available: I used the supplied made-up results and dated the gap'] },
         { id: 'discovery-records', label: 'What each person reached for first, in the order they tried things, with no names', kind: 'long', sensitive: true,
           requiredWhen: { field: 'discovery-route', values: ['Three people tried it without being told', 'One or two people tried it'] },
-          hint: 'Write what they touched, not what you think they meant, as “person 1, person 2”. Note anyone who gave up or took a longer route. Raw notes stay in a private file with a date to delete them. Leave this empty on the rehearsal route.' },
+          hint: 'Only adults who agreed after your consent introduction and knew they could stop. Write what they touched, not what you think they meant, as “person 1, person 2”. Note anyone who gave up or took a longer route. Raw notes stay in a private file with a date to delete them. Leave this empty on the rehearsal route.' },
         { id: 'discovery-reading', label: 'What that tells you about each gesture', kind: 'long', hint: 'On the rehearsal route, say what the supplied results would suggest if they were real, then write that discoverability is untested for your design.' },
       ] },
       { id: 'recovery', title: 'Undoing a gesture nobody meant', fields: [
@@ -660,7 +660,7 @@ export const guided09: Record<string, Guided> = {
           ],
           then: 'Read your own records the same way. For each gesture, write whether it is now a shortcut or still the only route to its action.',
         },
-        start: 'Ask anyone to hand: a flatmate, a colleague, a family member. Say the goal only, then say nothing at all while they try. If nobody is free today, use the supplied results above as practice, write today’s date, and record that discoverability is untested.',
+        start: 'Ask an adult to hand, such as a flatmate, a colleague or a family member. First read your consent introduction from earlier modules: what you will ask, that they can stop at any time, and that you keep only an unnamed summary. If they agree, say the goal only, then say nothing at all while they try. If nobody is free today, use the supplied results above as practice, write today’s date, and record that discoverability is untested.',
         enough: 'Each attempt names what the person touched first. A rehearsal with supplied material is written down as untested, never as research.' },
       { demo: { scenario: 'Made-up example. Writing undo for a swipe that removes a class, and putting the undo somewhere her thumb could not reach in time.', beats: [{ label: 'What I specified first', text: 'The row goes, and a message appears at the top of the screen saying “Removed”, with Undo beside it. It stays three seconds.' }, { label: 'Why the top felt right', text: 'That is where messages sit on most of the pages I had been looking at. Three seconds felt like the natural length of a message.' }, { label: 'What a phone in one hand does to it', text: 'She swiped with her thumb near the bottom of a tall screen. The undo is at the top, so she has to shuffle the phone up her hand to reach it, and by then it has gone.' }, { label: 'What the wording was hiding', text: '“Removed” does not say what was removed. On a shortlist of six similar classes she cannot tell from the message which one vanished, so she cannot tell whether she wants it back.' }, { label: 'What I wrote instead', text: 'The message sits low, near where the swipe happened. It says “Sunrise Flow removed” with Undo beside it, and it stays eight seconds.' }], wrongTurn: 'The wrong turn is treating undo as wording and forgetting it is a thing somebody has to physically get to. It is tempting because the sentence is the part you can write at a desk, and the reach is the part you only find out about holding a phone.', tradeoff: 'A message sitting low covers part of the list, and eight seconds keeps it in the way for longer than three did. The version that stayed out of the way was the version that expired while her hand was still moving.', uncertainty: 'Still unknown: whether eight seconds is long enough for somebody reading slowly, or holding a child, or working out what just happened. Watching people swipe by accident would settle it, and nobody has.' }, expect: 'Undo specified for every destructive gesture, with a window, the wording and a place a thumb can reach, and what an abandoned swipe does.',
         fields: ['undo-spec', 'undo-reach', 'swipe-cancel'],
@@ -740,11 +740,11 @@ export const guided09: Record<string, Guided> = {
         { id: 'focus-visible-check', label: 'Anywhere focus could land off screen, or on something with no visible outline', kind: 'short' },
       ] },
       { id: 'results', title: 'Checked against something real', fields: [
-        { id: 'test-status', label: 'What you checked your table against', kind: 'choice', options: ['A real product using the same pattern, tabbed through in my browser', 'A free prototype I could tab through', 'Nothing existed to check: every row is untested'] },
-        { id: 'row-results', label: 'Row by row: what actually happened, or the word untested', kind: 'long', hint: 'Write what the keys did, not what they were supposed to do. No row may be left empty.' },
+        { id: 'test-status', label: 'What you checked your table against', kind: 'choice', options: ['A real product using the same pattern, tabbed through in my browser', 'A free prototype I could tab through', 'Nothing existed to check: every row is untested'], hint: 'A real product is a comparable product, not your build: what it did is rehearsal, and your own rows stay untested until something of yours exists.' },
+        { id: 'row-results', label: 'Row by row: what actually happened, or the word untested', kind: 'long', hint: 'Write what the keys did, not what they were supposed to do. A comparable product’s result goes beside your row, labelled “comparable product, not my build”, and your row stays untested. No row may be left empty.' },
       ] },
       { id: 'gaps', title: 'Save', fields: [
-        { id: 'defect-list', label: 'The failures written as defects for the build, and anywhere you left the pattern on purpose', kind: 'long' },
+        { id: 'defect-list', label: 'Failures from your own build as defects, what a comparable product got wrong as risks for the build to avoid, and anywhere you left the pattern on purpose', kind: 'long' },
         { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
       ] },
     ],
@@ -766,8 +766,8 @@ export const guided09: Record<string, Guided> = {
             { label: 'What I wrote first', text: 'One row per day: tab moves to the next date. Thirty-one dates, thirty-one tab stops. Every key was accounted for.' },
             { label: 'Why it looked right', text: 'Every date was reachable by keyboard. That is exactly the sentence people mean when they say a thing has keyboard support.' },
             { label: 'What using it was like', text: 'Getting from the picker down to the Book button took thirty-one presses. Reaching the 28th took twenty-eight.' },
-            { label: 'What the pattern said', text: 'One tab stop for the whole grid. Arrow keys move between dates inside it. Home and end jump to the first and last day available.' },
-            { label: 'What the table became', text: 'Six rows instead of thirty-one: tab, arrows, enter, space, home and end, escape. Shorter to write and far shorter to use.' },
+            { label: 'What the pattern said', text: 'One tab stop for the grid; arrows move between days; Home and End go to the first and last day of the week; Page Up and Page Down change month.' },
+            { label: 'What the table became', text: 'Six rows instead of thirty-one: tab, arrows, enter and space, home and end, page up and down, escape. Shorter to write and far shorter to use.' },
           ],
           wrongTurn: 'The wrong turn is treating reachable as finished. A tab stop on every element answers the reachability question and makes the component miserable.',
           tradeoff: 'One tab stop means the person has to know the arrows move inside. That is the convention the pattern exists to protect, and it is what the rest of their machine already does.',
@@ -780,24 +780,24 @@ export const guided09: Record<string, Guided> = {
         terms: [{ term: 'Focus', meaning: 'The one place on the screen that the keyboard is talking to. If a person cannot see it, they have lost their position.' }],
         start: 'Write three sentences per component: focus on open, focus on close, focus on escape.',
         enough: 'No sentence is missing. Any you leave out will be decided at build time, and usually decided as nothing.' },
-      { terms: [{ term: 'Comparable product', meaning: 'A real product using the same pattern, borrowed so you have something to press keys on. It stands in for the build you do not have yet.' }, { term: 'Untested', meaning: 'Written against a row nobody has actually tried. It is a result, and it is not the same as an empty box.' }], expect: 'Every row marked with what actually happened, or marked untested, with what you checked it against.',
+      { terms: [{ term: 'Comparable product', meaning: 'A real product using the same pattern, borrowed so you have something to press keys on. It is rehearsal: it shows you what to look for, and its results are not your build’s.' }, { term: 'Untested', meaning: 'Written against a row nobody has actually tried. It is a result, and it is not the same as an empty box.' }], expect: 'Every row marked with what actually happened, or marked untested, with what you checked it against.',
         fields: ['test-status', 'row-results'],
         supported: {
           material: 'A supplied made-up result. Your table says escape closes the filter panel and returns focus to the Filters button. Tabbing through a comparable panel in a real product, escape did nothing at all, and closing it another way sent focus back to the very top of the page.',
           question: 'What do you write down?',
           options: [
-            { label: 'Two failed rows against the table, each with what actually happened.', correct: true, feedback: 'The table is the specification and the thing you tried is the evidence. Recording the difference is the entire reason for writing the table first.' },
+            { label: 'What it did, labelled “comparable product, not my build”, and my own rows left untested.', correct: true, was: ['Two failed rows against the table, each with what actually happened.'], feedback: 'The table is your specification and the product you tried is rehearsal. Recording what it did, without passing it off as your build, tells you which risks your build must avoid.' },
             { label: 'Change the table so escape is optional, since a real product manages without it.', feedback: 'One product doing without something is not a reason for your specification to ask for less. That is how a table stops being a specification and becomes a description.' },
             { label: 'Leave both rows blank until something of your own exists.', feedback: 'A blank row cannot be told apart from a row nobody thought about. Untested is a real result; empty is not.' },
             { label: 'Mark both rows passed, because that behaviour is what you designed.', feedback: 'Designing something does not make it happen. Marking untried rows as passed is the one thing a key table must never do.' },
           ],
-          then: 'Go through your own rows and mark each one with what happened, or with the word untested. Leave no row empty.',
+          then: 'Go through your own rows and mark each one with what happened in your own build, or with the word untested. Put anything a comparable product showed beside it, labelled as rehearsal. Leave no row empty.',
         },
         start: 'Open a real product that uses the same pattern, or a free prototype, put the mouse down and walk your rows in order.',
         enough: 'Every row carries a result. Where nothing was available to try, every row says untested and the choice above says so too.' },
-      { terms: [{ term: 'Defect', meaning: 'A written difference between what you specified and what the thing actually does, in a form a developer can pick up and act on.' }, { term: 'Deliberate departure', meaning: 'A place where you knowingly did something the pattern does not, written down with your reason so nobody reads it as a slip.' }], expect: 'The failures written as defects for the build, your deliberate departures from the pattern, and the repair the Check questions asked for.',
+      { terms: [{ term: 'Defect', meaning: 'A written difference between what you specified and what the thing actually does, in a form a developer can pick up and act on.' }, { term: 'Deliberate departure', meaning: 'A place where you knowingly did something the pattern does not, written down with your reason so nobody reads it as a slip.' }], expect: 'Failures from your own build as defects, what a comparable product got wrong as risks to avoid, your deliberate departures from the pattern, and the repair the Check questions asked for.',
         fields: ['defect-list', 'improvement-made'],
-        start: 'Copy each failed row into the defect list and add the expected behaviour beside what happened.',
+        start: 'Copy each row your own build failed into the defect list with the expected behaviour beside what happened. List what a comparable product got wrong separately, as risks.',
         enough: 'Nothing that failed has quietly become the new design.' },
     ],
     checks: [
@@ -838,7 +838,7 @@ export const guided09: Record<string, Guided> = {
       anchors: {
         weak: 'Says every seat is reachable by Tab, so keyboard support is done, or only adds a skip link.',
         adequate: 'One tab stop for the grid with arrow keys moving between seats, Enter and Space both selecting, and Escape closing the map and returning focus to the “Choose seats” button.',
-        strong: 'As adequate, plus what the arrows do at the edges and over unavailable seats, and every row marked untested until it is tried in a build or a comparable product.',
+        strong: 'As adequate, plus what the arrows do at the edges and over unavailable seats, and every row marked untested until it is tried in a build, with anything learned from a comparable product labelled as rehearsal.',
       },
     },
     saveRoute: {
@@ -970,12 +970,12 @@ export const guided09: Record<string, Guided> = {
       {
         question: 'A form is submitted and three fields are rejected. Where does focus go?',
         options: [
-          { label: 'To the first field with a problem, with its message attached to that field.', correct: true, feedback: 'She lands on the thing she has to change, with the reason beside it. Nothing else has to be hunted for.' },
-          { label: 'To the top of the page, so she can read the summary of all three.', feedback: 'A summary at the top is useful and it leaves her a search. Put the summary there and still send focus to the first field.' },
+          { label: 'To the first field with a problem, with its message attached to that field.', correct: true, feedback: 'She lands on the thing she has to change, with the reason beside it. Nothing else has to be hunted for. Moving focus to an error summary that links to each field, as GOV.UK does and as the summary in your Module 8 form allows, is the other defensible choice.' },
+          { label: 'To the top of the page, where a red banner says only that there were errors.', was: ['To the top of the page, so she can read the summary of all three.'], feedback: 'A banner that names no field leaves her to hunt through the form for all three. A summary that names each problem and links to its field would be a different, defensible choice.' },
           { label: 'Nowhere in particular, because the red borders already make all three visible.', was: ['Nowhere: the red borders make the problems visible.'], feedback: 'Red borders are invisible to anybody not looking at that part of the screen, and to anybody who does not see red as red. Focus is what carries the person there.' },
         ],
         repair: 'Fill your error rule in step 2 with a named destination and where the message sits, then record the change in step 5.',
-        recheck: 'The error rule names a field, not a region.',
+        recheck: 'The error rule names a specific destination — the first field with a problem, or a summary that links to each field — not a region.',
       },
       {
         question: 'You tabbed through and twice could not tell where you were. What do you write down?',
@@ -1114,12 +1114,12 @@ export const guided09: Record<string, Guided> = {
       {
         question: 'On a phone, your whole row is draggable. What breaks?',
         options: [
-          { label: 'Scrolling and dragging become one gesture, so the list must guess which she meant.', correct: true, was: ['Scrolling and dragging become the same gesture, so the list has to guess which one she meant.'], feedback: 'A grip, or a long press, tells the two apart deliberately. Without one, every attempt to scroll the list risks rearranging it.' },
+          { label: 'Scrolling and dragging become one gesture, so the list must guess which she meant.', correct: true, was: ['Scrolling and dragging become the same gesture, so the list has to guess which one she meant.'], feedback: 'A grip, or an explicit Move mode, tells the two apart deliberately; a timed long press does not, as the step 4 example showed. Without one, every attempt to scroll the list risks rearranging it.' },
           { label: 'Very little, because a modern phone can usually tell a slow drag from a quick scroll.', was: ['Nothing: a phone can tell a slow drag from a fast scroll.'], feedback: 'Sometimes it can, and the person who moves slowly because her hand shakes is exactly the one it gets wrong.' },
           { label: 'Only the look of the row suffers, since it appears the same in either state.', was: ['Only the visual design suffers, since the row looks the same either way.'], feedback: 'The row looking the same is the problem. Nothing on it says which of the two things a press is about to do.' },
         ],
         repair: 'Fill the touch rule in step 4 with what has to be touched or held to begin a drag, then record what you changed in step 5.',
-        recheck: 'The rule names a grip, a long press or a mode, and the scrolling check says ordinary scrolling still works.',
+        recheck: 'The rule names a grip or a mode, and the scrolling check says ordinary scrolling still works.',
       },
     ],
     transfer: {
@@ -1148,6 +1148,7 @@ export const guided09: Record<string, Guided> = {
       ] },
       { id: 'justify', title: 'Justify each one or drop it', intro: 'One element at a time. The question is what the person needs it for while scrolling, not whether it looks useful sitting there.', fields: [
         ...[1, 2, 3, 4].map((n) => ({ id: `keep-${n}`, label: `Element ${n} · what the person needs it for while scrolling, and your decision`, kind: 'long' as const,
+          ...(n >= 3 ? { optional: true, hint: 'One row per fixed element; leave the rest empty.' } : {}),
           ...(n === 1 ? { example: 'Example (made up): filter summary. Needed because people check what they filtered by while scrolling, so it stays. Logo header. Needed for nothing while scrolling, so it scrolls away and returns when she scrolls up.' } : {}) })),
         { id: 'new-total', label: 'The new total fixed height after your decisions', kind: 'short' },
       ] },
@@ -1331,8 +1332,8 @@ export const guided09: Record<string, Guided> = {
           material: 'A supplied made-up case. Someone is half way through typing a note on a booking. She taps a notification and the app closes. She comes back four hours later.',
           question: 'Which behaviour would you specify, and what makes it defensible?',
           options: [
-            { label: 'Keep it as a draft, show it in the editing state on her return, and say when it was changed.', correct: true, was: ['Keep the half-typed note as a draft, show it in the editing state on her return, and say when it was last changed.'], feedback: 'Her words are kept, and nothing half-finished was stored under her name as though she meant it. The time tells her what she is looking at four hours later.' },
-            { label: 'Store what was typed straight away, quietly, as though she had already finished writing the note.', was: ['Store what was typed, quietly, as if she had finished.'], feedback: 'It keeps her words and it also publishes half a sentence as though it were final. On a shared booking someone else may read it before she does.' },
+            { label: 'Keep it as a draft, show it in the editing state on her return, and say when it was changed.', correct: true, was: ['Keep the half-typed note as a draft, show it in the editing state on her return, and say when it was last changed.'], feedback: 'Her words are kept, and nothing half-finished was stored under her name as though she meant it. The time tells her what she is looking at four hours later. Saving with a visible time, as the lesson’s example does, can also be defended; what fails is storing it silently as final.' },
+            { label: 'Store the half-typed note as final, and show nothing on her return to say it was left unfinished.', was: ['Store what was typed, quietly, as if she had finished.', 'Store what was typed straight away, quietly, as though she had already finished writing the note.'], feedback: 'It keeps her words and stores half a sentence as though it were final, with nothing to tell her or anyone else it was unfinished. On a shared booking someone else may read it before she does.' },
             { label: 'Throw the half-typed note away, since she left the app without finishing or saving it.', was: ['Throw it away, since she left without finishing.'], feedback: 'Leaving is rarely a decision. A notification is not the same as pressing cancel, and discarding is the one outcome she cannot reverse.' },
             { label: 'Ask her to confirm what to do with the note before the app finishes closing down.', was: ['Ask her to confirm before the app closes.'], feedback: 'A tap on a notification does not wait for a question, and a question she never sees settles nothing. Keep the text and ask her later, when she is back.' },
           ],
@@ -1514,7 +1515,7 @@ export const guided09: Record<string, Guided> = {
       prompt: 'Propose the named durations and one rule for this sheet, and explain why they would settle future decisions.',
       anchors: {
         weak: 'Keeps all six values or the “elegant” rule, so the next proposal can still pick any number.',
-        adequate: 'Merges values within 50ms into about three named roles (such as quick 150 and moderate 250), writes a countable rule such as “one thing animates at a time”, and pairs each role with a reduced-motion version.',
+        adequate: 'Merges 150, 180, 200 and 220 (each within 50ms of a neighbour) into one role such as quick 200, keeps 300 as moderate, writes a countable rule such as “one thing animates at a time”, and pairs each role with a reduced-motion version.',
         strong: 'As adequate, plus a decision on 450ms (justified as its own role, or removed) and a test of the rule against an animation it ought to refuse.',
       },
     },
@@ -1535,10 +1536,10 @@ export const guided09: Record<string, Guided> = {
         { id: 'session-status', label: 'What actually happened with sessions', kind: 'choice', options: ['Three people tried it on their own phones', 'One or two people tried it', 'Nobody was available: rehearsal only, dated'] },
       ] },
       { id: 'sessions', title: 'What happened', intro: 'One record per person, as “person 1, person 2”, never by name. Write what they did, not what you think it means. On the rehearsal route, fill only the rehearsal box.', fields: [
-        { id: 'session-1', label: 'Person 1 · device, what they did, where they hesitated, what they could not find', kind: 'long', sensitive: true, requiredWhen: { field: 'session-status', values: ['Three people tried it on their own phones', 'One or two people tried it'] }, hint: 'No names, contact details or recordings here; raw notes stay in a private file with a date to delete them.' },
+        { id: 'session-1', label: 'Person 1 · device, what they did, where they hesitated, what they could not find', kind: 'long', sensitive: true, requiredWhen: { field: 'session-status', values: ['Three people tried it on their own phones', 'One or two people tried it'] }, hint: 'Name what they used: the working examples, the paper prototype or a rough build. No names, contact details or recordings here; raw notes stay in a private file with a date to delete them.' },
         { id: 'session-2', label: 'Person 2 · device, what they did, where they hesitated, what they could not find', kind: 'long', sensitive: true, requiredWhen: { field: 'session-status', values: ['Three people tried it on their own phones'] } },
         { id: 'session-3', label: 'Person 3 · device, what they did, where they hesitated, what they could not find', kind: 'long', sensitive: true, requiredWhen: { field: 'session-status', values: ['Three people tried it on their own phones'] } },
-        { id: 'rehearsal-record', label: 'Rehearsal only: the phone you used, what you did on each task twice, and where you hesitated, labelled rehearsal', kind: 'long', requiredWhen: { field: 'session-status', values: ['Nobody was available: rehearsal only, dated'] }, example: 'Example (made up): rehearsal, 5 October, an old phone I did not design on. Task 1 twice: no second tap, but I knew where Book was. Task 2: the remove control took me a moment to find.' },
+        { id: 'rehearsal-record', label: 'Rehearsal only: the phone you used, what you ran on it (working examples, paper prototype or rough build), what you did on each task twice, and where you hesitated, labelled rehearsal', kind: 'long', requiredWhen: { field: 'session-status', values: ['Nobody was available: rehearsal only, dated'] }, example: 'Example (made up): rehearsal, 5 October, an old phone I did not design on, running the working examples from lessons 2 and 8. Task 1 twice: no second tap, but I knew where Book was. Task 2: the remove control took me a moment to find.' },
         { id: 'double-taps', label: 'Every moment someone acted twice, and where it happened, with no names', kind: 'short', sensitive: true, requiredWhen: { field: 'session-status', values: ['Three people tried it on their own phones', 'One or two people tried it'] } },
       ] },
       { id: 'rank', title: 'Ranked by harm', fields: [
@@ -1568,7 +1569,7 @@ export const guided09: Record<string, Guided> = {
       { expect: 'One de-identified record per person on their own device, or one dated rehearsal record, and a count of every repeated action you saw.',
         fields: ['session-1', 'session-2', 'session-3', 'rehearsal-record', 'double-taps'],
         terms: [{ term: 'Second tap', meaning: 'Someone pressing the same thing again. It nearly always means nothing told them the first press had worked.' }],
-        start: 'Say the task, then stop talking. Silence is the instrument.',
+        start: 'Choose what will be used: the working examples in lessons 2, 8 and 10 opened on the phone (feedback, reordering, saving); your Module 8 screens as a paper prototype, with you changing sheets as “the computer” (order and finding things only, not timing); or a rough build. Name it in each record. Then say the task and stop talking. Silence is the instrument.',
         enough: 'Each record names a device and describes actions rather than opinions. A rehearsal says rehearsal and names no participant.' },
       { terms: [{ term: 'Harm', meaning: 'Something that cost the person: lost work, an action she had to repeat, money, or time she does not get back.' }, { term: 'Finding', meaning: 'One thing you saw happen, written as the action itself rather than as your explanation of it.' }, { term: 'Preference', meaning: 'Something you would rather were different, which cost the person nothing at all.' }], expect: 'Everything you found, ordered by what it cost the person, with the worst one named.',
         fields: ['ranked-list', 'worst-finding'],
