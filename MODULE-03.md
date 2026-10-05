@@ -694,7 +694,7 @@ Visual design helps people notice, read and understand what matters on a screen.
 - **Measure:** The number of characters on a line. It is a count, not an impression, and it is what decides whether the eye finds the next line.
 - **Line height:** The distance from one line to the next, written as a ratio of the text size so it scales with it.
 
-**Quick example.** A supplied block from the same made-up screen: body text at 16 with line height 1.9, paragraph gaps the same size as one line, and headings at 20 with line height 1.9 as well.
+**Quick example.** A supplied block from the same made-up screen: body text at 16 with line height 1.9 and no extra space between paragraphs, so the gap between paragraphs is the same as the gap between lines, and headings at 20 with line height 1.9 as well.
 
 The reader demonstrates and guides the task before asking for “The longest title you can justify”.
 
@@ -863,18 +863,20 @@ Line heights as ratios, and a paragraph gap clearly larger than the line gap.
 
 - Choose line height as a ratio for body, headings and small text. Then set the gap between paragraphs so it clearly exceeds the gap between lines. Write both values.
 
-**Start here:** Write the body ratio first, then set the paragraph gap so it is visibly bigger than one line.
+**Start here:** Write the body ratio first, then set the paragraph gap so it is visibly bigger than the line gap.
 
-**Enough:** You can state the paragraph gap as “clearly more than one line” and see it on the page.
+**Enough:** You can state the paragraph gap as clearly larger than the line gap and see it on the page.
 
 **Line height:** The distance from one line to the next, written as a ratio of the text size so it scales with it.
+
+**Line gap:** The white space between one line of text and the next inside a paragraph.
 
 
 ### Try a supplied example
 
 Section: practice-plan. Stable action: step-3-try.
 
-A supplied block from the same made-up screen: body text at 16 with line height 1.9, paragraph gaps the same size as one line, and headings at 20 with line height 1.9 as well.
+A supplied block from the same made-up screen: body text at 16 with line height 1.9 and no extra space between paragraphs, so the gap between paragraphs is the same as the gap between lines, and headings at 20 with line height 1.9 as well.
 
 What is the main problem with these values?
 
@@ -1162,7 +1164,7 @@ Section: practice. Stable action: write-transfer-decision.
 
 Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
-**New case.** Made-up case: A bus company’s web page explains a timetable change in three paragraphs. On a laptop the text runs edge to edge at about 120 characters a line; on a phone it is about 38. Line height is 1.2 everywhere and the gap between paragraphs equals one line. The longest stop name is 41 characters, and one notice reads only “No changes this week.”
+**New case.** Made-up case: A bus company’s web page explains a timetable change in three paragraphs. On a laptop the text runs edge to edge at about 120 characters a line; on a phone it is about 38. Line height is 1.2 everywhere and there is no extra space between paragraphs. The longest stop name is 41 characters, and one notice reads only “No changes this week.”
 
 **Task:** What measure, line height and paragraph gap would you set, and which strings would you test with? Give a reason for each value.
 
@@ -1210,7 +1212,7 @@ Measure: The number of characters on a line. It is a count, not an impression, a
 Line height: The distance from one line to the next, written as a ratio of the text size so it scales with it.
 
 Supplied practice material (fictional or labelled practice, not my research):
-A supplied block from the same made-up screen: body text at 16 with line height 1.9, paragraph gaps the same size as one line, and headings at 20 with line height 1.9 as well.
+A supplied block from the same made-up screen: body text at 16 with line height 1.9 and no extra space between paragraphs, so the gap between paragraphs is the same as the gap between lines, and headings at 20 with line height 1.9 as well.
 
 Activity: Describe the design decision in the supplied case, then ask me what I would notice first and why. Help me connect the visual choice to the task it supports.
 
@@ -1362,7 +1364,7 @@ Colour alone must never be the only carrier of information. Some readers cannot 
 
 Section: learn. Stable action: learn-3.
 
-Hue, saturation and lightness are separable controls, and lightness does most of the accessible work. Two colours of the same lightness will look distinct to you and nearly identical to a reader with reduced colour vision, or on a dim screen. When you need two states to be reliably distinguishable, change lightness, not just hue.
+Hue, saturation and lightness are separable controls, and lightness does most of the accessible work. Two colours of the same lightness can look distinct to you and nearly identical to a reader with reduced colour vision — red and green most often — or on a dim screen. When you need two states to be reliably distinguishable, change lightness, not just hue.
 
 
 ### Idea 4: Colour also carries convention, and convention is regional and…
@@ -1390,13 +1392,13 @@ Use a sketch, or draw a fictional reservation screen with heading, body text, pr
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
 
 
-### Read and list roles
+### List roles and choose one value for each
 
 Section: practice-plan. Stable action: step-1-brief.
 
 The roles your screen needs, each with one value.
 
-- Read the assigned colour material. Then write the roles your screen actually needs — surface, text, secondary text, action, and each status — before opening any colour picker.
+- Read the assigned colour material. Write the roles your screen actually needs — surface, text, secondary text, action, and each status — before opening any colour picker. Then assign one value to each role and record it beside the role, with its lightness relative to its neighbours where relevant. Any colour without a role is dropped now.
 
 **Start here:** List the roles before opening any colour picker; the list is usually shorter than you expect.
 
@@ -1503,13 +1505,13 @@ Write your answer for “Role 6 · what it is for, then the value you chose”. 
 
 
 
-### Choose values
+### Apply the palette and count what you removed
 
 Section: practice-plan. Stable action: step-2-brief.
 
 How many colours you removed, and where you wanted to add one back.
 
-- Assign one value to each role. Record each as a value plus its role and, where relevant, its lightness relative to its neighbours. Any colour without a role is dropped now.
+- Apply the palette to your screen from the previous lessons. Count the colours you removed and note where you were tempted to add one back.
 
 **Start here:** Apply the palette and count what disappeared.
 
@@ -1531,13 +1533,13 @@ If you removed none, say why each colour already had a role.
 If you removed none, say why each colour already had a role.
 
 
-### Recolour the screen
+### The greyscale test
 
 Section: practice-plan. Stable action: step-3-brief.
 
 Everything that becomes indistinguishable without colour, with a second channel for each.
 
-- Apply the palette to your screen from the previous lessons. Count the colours you removed and note where you were tempted to add one back.
+- View or redraw the screen with all colour removed. Write down every piece of information you can no longer determine. For each, add a second channel — word, icon, shape or position — and record the change.
 
 **Start here:** Photocopy the screen in black and white, or photograph it and turn the colour off. Then read it as if for the first time.
 
@@ -1638,13 +1640,13 @@ If the greyscale copy showed only one failure, write “none” and how you chec
 If the greyscale copy showed only one failure, write “none” and how you checked.
 
 
-### The greyscale test
+### Name one colour meaning you are unsure of
 
 Section: practice-plan. Stable action: step-4-brief.
 
 One colour meaning you are not certain your reader shares.
 
-- View or redraw the screen with all colour removed. Write down every piece of information you can no longer determine. For each, add a second channel — word, icon, shape or position — and record the change.
+- Look at your status colours and name one colour meaning you are unsure your audience shares, with the meaning you are relying on.
 
 **Start here:** Look at your status colours and ask who taught you what they mean.
 
@@ -1754,13 +1756,13 @@ Answers to revisit: convention-doubt
 </details>
 
 
-### Record and pause
+### Save the palette table and both versions
 
 Section: practice. Stable action: step-5-brief.
 
 Where the two versions live, and the repair the Check questions asked for.
 
-- Save the palette table, the coloured and greyscale versions, and your repair list. Note one colour meaning you are unsure your audience shares.
+- Save the palette table, the coloured and greyscale versions, and your repair list, and note where they live.
 
 **Start here:** Keep the coloured and greyscale copies together; the pair is the evidence.
 
@@ -1955,7 +1957,7 @@ Stable ID: m03-l04-v1. Core.
 
 Bring: Your palette table and recoloured screen from the previous lesson.
 
-Starting route: Use the offline contrast calculator beside the measurement fields. Practice palette if yours is missing: text #777777, link #214e46, error #B3261E and button #567E48 on #FFFFFF, plus white button text. Enter foreground and background separately and record the element, size, applicable threshold and result. Read ratios to two decimals; never round a fail up to a pass (#777777 measures 4.48, below 4.5).
+Starting route: Use the offline contrast calculator beside the measurement fields. Practice palette if yours is missing: text #777777, link #214e46 and error #B3261E on #FFFFFF, plus white button text on the button fill #567E48. Enter foreground and background separately and record the element, size, applicable threshold and result. Read ratios to two decimals; never round a fail up to a pass (#777777 measures 4.48, below 4.5).
 
 - A contrast table covering every text and essential non-text element with colour, background, size, threshold and measured ratio, before and after repair, plus a note on your own reading test.
 
@@ -1984,7 +1986,7 @@ Measure the actual foreground/background pairs in your design, repair failing pa
 
 Section: learn. Stable action: learn-1.
 
-The minimum contrast requirement is a ratio between the lightness of text and its background. Ordinary body text needs at least 4.5:1. Large text — from 18 point (about 24 px), or 14 point (about 18.7 px) when bold — needs at least 3:1, because larger, thicker letterforms remain legible at lower contrast. A separate WCAG criterion asks for 3:1 for the parts of a control or graphic someone needs to see, such as a button's edge against the page or a focus outline. Read the calculator's ratio to two decimals and never round a fail up to a pass: 4.48 is below 4.5. These are floors for a wide range of readers, not targets for good design, and comfortable reading often sits well above them.
+The minimum contrast requirement is a ratio between the lightness of text and its background. Ordinary body text needs at least 4.5:1. Large text — from 18 point (about 24 px), or 14 point (about 18.7 px) when bold — needs at least 3:1, because larger, thicker letterforms remain legible at lower contrast. A separate WCAG criterion asks for 3:1 for the visual information needed to identify a control or its state, such as an empty text field's outline, a checkbox, an icon-only button or a focus indicator. A button already identified by its readable label does not need its edge to reach 3:1. Read the calculator's ratio to two decimals and never round a fail up to a pass: 4.48 is below 4.5. These are floors for a wide range of readers, not targets for good design, and comfortable reading often sits well above them.
 
 
 ### Idea 2: The requirement has genuine exceptions, and knowing them stops…
@@ -2021,7 +2023,7 @@ Read the example and notice the decision being made. It is practice material, no
 
 Section: learn. Stable action: workspace.
 
-Use the offline contrast calculator beside the measurement fields. Practice palette if yours is missing: text #777777, link #214e46, error #B3261E and button #567E48 on #FFFFFF, plus white button text. Enter foreground and background separately and record the element, size, applicable threshold and result. Read ratios to two decimals; never round a fail up to a pass (#777777 measures 4.48, below 4.5).
+Use the offline contrast calculator beside the measurement fields. Practice palette if yours is missing: text #777777, link #214e46 and error #B3261E on #FFFFFF, plus white button text on the button fill #567E48. Enter foreground and background separately and record the element, size, applicable threshold and result. Read ratios to two decimals; never round a fail up to a pass (#777777 measures 4.48, below 4.5).
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
 
@@ -2036,7 +2038,7 @@ Use your own material, or the labelled practice material below. Keep its source 
 - Body text · #777777 on the page #FFFFFF · 16 px regular.
 - Link · #214e46 on #FFFFFF · 16 px regular.
 - Error message · #B3261E on #FFFFFF · 14 px regular.
-- Reserve button label · #FFFFFF on the button fill #567E48 · 18 px bold. The fill itself sits on the #FFFFFF page.
+- Reserve button label · #FFFFFF on the button fill #567E48 · 18 px bold.
 - Email placeholder “you@example.com” · #9E9E9E on #FFFFFF · 16 px regular.
 - Disabled Reserve button on a full class · label #FFFFFF on the fill #9FB398.
 
@@ -2195,13 +2197,13 @@ Write your answer for “Element 5 · what it is, its colour, its background, it
 
 Section: practice-plan. Stable action: write-row-more.
 
-Five rows rarely hold a whole screen. Add every remaining text element and every part of a control someone needs to see, such as a button edge against the page, which needs 3:1.
+Five rows rarely hold a whole screen. Add every remaining text element and every part someone needs to see to identify a control — a field outline, an icon-only button, a focus outline — which needs 3:1; a text button’s edge is not required to.
 
 **Answer:** Elements 6 onward, one per line in the same form, or “none” and why
 
 Optional: may be left empty.
 
-Five rows rarely hold a whole screen. Add every remaining text element and every part of a control someone needs to see, such as a button edge against the page, which needs 3:1.
+Five rows rarely hold a whole screen. Add every remaining text element and every part someone needs to see to identify a control — a field outline, an icon-only button, a focus outline — which needs 3:1; a text button’s edge is not required to.
 
 
 ### Repair the failures
@@ -2297,13 +2299,13 @@ Made-up example. Reading a printed class list at a window, and nearly repairing 
 
 **What I expected:** Every row in my table now met its threshold, so I carried the printed screen to the window mostly to confirm it.
 
-**What happened:** The 12 point labels under each class were unreadable at arm’s length in the daylight. Their pair, #6b6b6b on #ffffff, had measured 5.33, comfortably above the 4.5 they needed.
+**What happened:** The 12 px labels under each class were unreadable at arm’s length in the daylight. Their pair, #6b6b6b on #ffffff, had measured 5.33, comfortably above the 4.5 they needed.
 
 **My first move:** Push every grey towards black. It would certainly help something, and I had already changed three elements before I stopped.
 
 **What stopped me:** The label was not failing on its colour. It was failing on its size, and on light washing across the paper. Darkening it would have flattened the palette to fix a fault that was somewhere else.
 
-**What I wrote instead:** “12 point labels meet 5.2 and are still unreadable outdoors at arm’s length.” Then one repair: the labels moved up to 14, which is a change to the type ladder rather than to any colour.
+**What I wrote instead:** “12 px labels measure 5.33 and are still unreadable outdoors at arm’s length.” Then one repair: the labels moved up to 14 px, which is a change to the type ladder rather than to any colour.
 
 **Wrong turn:** The wrong turn is taking what your eyes find as a signal to raise every ratio. It is tempting because darkening is the repair you already know how to make, and it always improves something a little.
 
@@ -2632,7 +2634,7 @@ Visual design helps people notice, read and understand what matters on a screen.
 
 **Words you will use**
 
-- **Proximity:** Things near each other are read as belonging together. The cheapest and strongest tool you have.
+- **Proximity:** Things near each other are read as belonging together. The cheapest tool you have, and the eye applies it first.
 - **Common region:** Things inside the same enclosed area are read as a set, even when they are far apart.
 - **Uniform connectedness:** Things joined by a line or a shared block are read as connected, which can override proximity.
 
@@ -2647,11 +2649,11 @@ Section: learn. Stable action: welcome.
 Cut workshop information into separate paper pieces and regroup it using space first. Compare two groupings without rewriting any words.
 
 
-### Idea 1: Proximity is the strongest grouping signal you control: things…
+### Idea 1: Proximity is the cheapest grouping signal you control: things…
 
 Section: learn. Stable action: learn-1.
 
-Proximity is the strongest grouping signal you control: things placed near each other are read as belonging together, and the eye applies this before it reads any label. This is why the gap around a group must exceed the gap inside it, and why an evenly spaced screen reads as one undifferentiated mass no matter how carefully you named the sections.
+Proximity is the cheapest grouping signal you control: things placed near each other are read as belonging together, and the eye applies this before it reads any label. This is why the gap around a group must exceed the gap inside it, and why an evenly spaced screen reads as one undifferentiated mass no matter how carefully you named the sections.
 
 
 ### Idea 2: Similarity groups by shared appearance — the same colour, shap…
@@ -2705,7 +2707,7 @@ Five principles in your own sentences.
 
 **Enough:** Someone who has never read the pages could follow each sentence.
 
-**Proximity:** Things near each other are read as belonging together. The cheapest and strongest tool you have.
+**Proximity:** Things near each other are read as belonging together. The cheapest tool you have, and the eye applies it first.
 
 **Common region:** Things inside the same enclosed area are read as a set, even when they are far apart.
 
@@ -3131,7 +3133,7 @@ Lesson: Gestalt grouping, and where it stops working
 What I am trying to do: Cut workshop information into separate paper pieces and regroup it using space first. Compare two groupings without rewriting any words.
 
 Key idea or terms:
-Proximity: Things near each other are read as belonging together. The cheapest and strongest tool you have.
+Proximity: Things near each other are read as belonging together. The cheapest tool you have, and the eye applies it first.
 Common region: Things inside the same enclosed area are read as a set, even when they are far apart.
 Uniform connectedness: Things joined by a line or a shared block are read as connected, which can override proximity.
 
@@ -3939,7 +3941,7 @@ Alignment does most of the work a grid gets credit for. A consistent left edge s
 
 Section: learn. Stable action: learn-5.
 
-Reflow and clipping can look alike in a sketch and behave completely differently. Reflow means the content rearranges to fit the width it has: lines re-wrap, columns stack, the page grows taller and nothing is lost. Clipping means the layout keeps a fixed width and the screen simply shows less of it: text is cut off, hidden, or reachable only by scrolling sideways. Covering part of a paper sketch shows clipping, never reflow, because paper cannot rearrange itself. Paper is where you specify the reflow you intend; a real page is where you watch it happen.
+Reflow and clipping can look alike in a sketch and behave completely differently. Reflow means the content rearranges to fit the width it has: lines re-wrap, columns stack, the page grows taller and nothing is lost. Clipping means the layout keeps a fixed width and the screen simply shows less of it: text is cut off, hidden with no control to reach it, or reachable only by scrolling sideways. Covering part of a paper sketch shows clipping, never reflow, because paper cannot rearrange itself. Paper is where you specify the reflow you intend; a real page is where you watch it happen.
 
 
 ### See the idea in a supplied example
@@ -4015,7 +4017,7 @@ Change points found by narrowing a page that really reflows, each with its conte
 
 **Reflow:** Content rearranging to fit the width it has: lines re-wrap, columns stack, the page grows taller and nothing is lost.
 
-**Clipping:** A layout keeping its width while the screen shows less of it: content is cut off, hidden, or only reachable by scrolling sideways.
+**Clipping:** A layout keeping its width while the screen shows less of it: content is cut off, hidden with no control to reach it, or only reachable by scrolling sideways.
 
 
 ### See the decision being made
@@ -4045,7 +4047,7 @@ Made-up example. Finding where a class list has to change, without starting from
 
 Section: practice-plan. Stable action: step-2-sort-1.
 
-Six made-up observations from narrowing pages and enlarging their text. Label each one: did the content reflow (rearrange to fit, with all of it still reachable by scrolling down), or was it clipped (cut off, hidden, or only reachable sideways)?
+Six made-up observations from narrowing pages and enlarging their text. Label each one: did the content reflow (rearranged to fit, with all of it still reachable by scrolling down or through a visible control), or was it clipped (cut off, hidden with no control to reach it, or only reachable sideways)?
 
 At 700 px the row of three class cards becomes two per row, and the third card moves below the first two.
 
@@ -4068,7 +4070,7 @@ Ask the same question of the demo and of your own layout: at each change point, 
 
 Section: practice-plan. Stable action: step-2-sort-2.
 
-Six made-up observations from narrowing pages and enlarging their text. Label each one: did the content reflow (rearrange to fit, with all of it still reachable by scrolling down), or was it clipped (cut off, hidden, or only reachable sideways)?
+Six made-up observations from narrowing pages and enlarging their text. Label each one: did the content reflow (rearranged to fit, with all of it still reachable by scrolling down or through a visible control), or was it clipped (cut off, hidden with no control to reach it, or only reachable sideways)?
 
 At 600 px the price column runs past the right edge of the window, and the prices can only be seen by scrolling sideways.
 
@@ -4091,7 +4093,7 @@ Ask the same question of the demo and of your own layout: at each change point, 
 
 Section: practice-plan. Stable action: step-2-sort-3.
 
-Six made-up observations from narrowing pages and enlarging their text. Label each one: did the content reflow (rearrange to fit, with all of it still reachable by scrolling down), or was it clipped (cut off, hidden, or only reachable sideways)?
+Six made-up observations from narrowing pages and enlarging their text. Label each one: did the content reflow (rearranged to fit, with all of it still reachable by scrolling down or through a visible control), or was it clipped (cut off, hidden with no control to reach it, or only reachable sideways)?
 
 With text at 200 per cent the class title takes three lines, and the card grows taller to hold them.
 
@@ -4114,7 +4116,7 @@ Ask the same question of the demo and of your own layout: at each change point, 
 
 Section: practice-plan. Stable action: step-2-sort-4.
 
-Six made-up observations from narrowing pages and enlarging their text. Label each one: did the content reflow (rearrange to fit, with all of it still reachable by scrolling down), or was it clipped (cut off, hidden, or only reachable sideways)?
+Six made-up observations from narrowing pages and enlarging their text. Label each one: did the content reflow (rearranged to fit, with all of it still reachable by scrolling down or through a visible control), or was it clipped (cut off, hidden with no control to reach it, or only reachable sideways)?
 
 With text at 200 per cent the button label reads “Res…” and the rest of the word is gone.
 
@@ -4137,7 +4139,7 @@ Ask the same question of the demo and of your own layout: at each change point, 
 
 Section: practice-plan. Stable action: step-2-sort-5.
 
-Six made-up observations from narrowing pages and enlarging their text. Label each one: did the content reflow (rearrange to fit, with all of it still reachable by scrolling down), or was it clipped (cut off, hidden, or only reachable sideways)?
+Six made-up observations from narrowing pages and enlarging their text. Label each one: did the content reflow (rearranged to fit, with all of it still reachable by scrolling down or through a visible control), or was it clipped (cut off, hidden with no control to reach it, or only reachable sideways)?
 
 At 400 px the filter sidebar moves above the list and becomes one “Filters” button that opens the same filters.
 
@@ -4160,7 +4162,7 @@ Ask the same question of the demo and of your own layout: at each change point, 
 
 Section: practice-plan. Stable action: step-2-sort-6.
 
-Six made-up observations from narrowing pages and enlarging their text. Label each one: did the content reflow (rearrange to fit, with all of it still reachable by scrolling down), or was it clipped (cut off, hidden, or only reachable sideways)?
+Six made-up observations from narrowing pages and enlarging their text. Label each one: did the content reflow (rearranged to fit, with all of it still reachable by scrolling down or through a visible control), or was it clipped (cut off, hidden with no control to reach it, or only reachable sideways)?
 
 At 320 px a wide photograph keeps its full width, and the Reserve button beside it sits off the right edge of the screen.
 
@@ -4223,11 +4225,11 @@ Write your answer for “Change point 3 · roughly what width, and exactly what 
 
 Section: practice-plan. Stable action: write-clip-vs-reflow.
 
-Reflowed: it re-wrapped or moved, and all of it can still be reached by scrolling down. Clipped: it was cut off, hidden, or only reachable by scrolling sideways.
+Reflowed: it re-wrapped or moved, and all of it can still be reached by scrolling down or through a visible control. Clipped: it was cut off, hidden with no control to reach it, or only reachable by scrolling sideways.
 
 **Answer:** In the demo or on a real page: one thing that reflowed, one thing that was clipped, and how you told them apart
 
-Reflowed: it re-wrapped or moved, and all of it can still be reached by scrolling down. Clipped: it was cut off, hidden, or only reachable by scrolling sideways.
+Reflowed: it re-wrapped or moved, and all of it can still be reached by scrolling down or through a visible control. Clipped: it was cut off, hidden with no control to reach it, or only reachable by scrolling sideways.
 
 <details>
 <summary>Example</summary>
@@ -4731,7 +4733,7 @@ A token is a named decision. Not “#1B1B1B” but “colour-text-primary, #1B1B
 
 Section: learn. Stable action: learn-2.
 
-Name tokens by role, not by appearance. “colour-brand-blue” fails the moment the brand colour becomes green, and “spacing-16” fails the moment you decide inside-group gaps should be 12. Role names — text-primary, surface-raised, space-inset-tight — survive the change of value and tell a reader what the token is for, which is the only reliable way someone else picks the right one.
+Name tokens by role, not by appearance. “colour-brand-blue” fails the moment the brand colour becomes green, and “spacing-16” fails the moment you decide inside-group gaps should be 12. Role names — text-primary, surface-raised, space-inside — survive the change of value and tell a reader what the token is for, which is the only reliable way someone else picks the right one.
 
 
 ### A sheet that lists values without rules is only half a handoff
@@ -4776,7 +4778,7 @@ Every type, colour and spacing decision written as a named token with a value an
 
 **Start here:** Start with the type scale from lesson 1; those five steps are already tokens waiting for names.
 
-**Enough:** No token name mentions a colour, a size or a direction.
+**Enough:** No token name describes how the value looks — a hue, a number, a size such as big or small, or a side such as top or left; names describe the job, such as inside a group or between groups.
 
 **Token:** A named decision: a name, a value and a role. The name is what other work refers to.
 
@@ -4931,7 +4933,7 @@ Usage notes, prohibitions and the permitted text-on-surface pairings.
 
 **Start here:** For each colour token, ask what someone might reasonably use it for that would be wrong.
 
-**Enough:** At least two tokens carry a prohibition with a reason.
+**Enough:** At least three tokens carry a prohibition against a misuse someone might plausibly make, each with a reason.
 
 **Prohibition:** Where a token must not be used. It prevents the most common misuse better than any amount of description.
 
@@ -5155,7 +5157,7 @@ It only causes trouble when other people start using the same sheet. — You are
 
 Improve: Rename any appearance-based token in step 1 to a role name, then record it in step 5.
 
-Check again: No token name refers to a colour, a size or a position.
+Check again: No token name describes how the value looks — a hue, a number, a size such as big or small, or a side such as top or left; names describe the job, such as inside a group or between groups.
 
 Answers to revisit: token-1, token-2, token-3, token-4, token-5, token-6, token-7, token-8
 
@@ -5660,7 +5662,7 @@ What is wrong with that, and what is the smallest fix?
 <details>
 <summary>After your attempt</summary>
 
-Focus looks like hover; give focus its own visible outline set just outside the control. — A keyboard user cannot tell where they are when focus and hover look alike. An outline just outside the control works on every surface; check it measures at least 3:1 against the colours beside it.
+Focus looks like hover; give focus its own visible outline set just outside the control. — A keyboard user cannot tell where they are when focus and hover look alike. An outline just outside the control can be checked against each surface it sits on; it needs at least 3:1 against the colours beside it on every one.
 
 Remove the hover effect, so that the lightening only ever means keyboard focus. — That solves the ambiguity by removing useful mouse feedback, and the focus signal remains a subtle background change.
 
@@ -6084,7 +6086,7 @@ Rebuild your original screen with the system you developed, then defend the chan
 
 Section: learn. Stable action: learn-1.
 
-Rebuilding from a system is a test of the system, not of your taste. Every point where you reach past the token sheet for a value is a defect in the sheet, and the count of those moments is the most useful number this lesson produces. A rebuild that required no additions probably means the screen was too similar to the one the sheet was derived from.
+Rebuilding from a system is a test of the system, not of your taste. Every point where you reach past the token sheet for a value is a defect in the sheet, and the count of those moments is the most useful number this lesson produces. Rebuilding the same screen the sheet was derived from will usually find fewer gaps than rebuilding a different Module 1 screen, so read a low count with that in mind.
 
 
 ### Idea 2: Heuristic critique and evidence are different instruments and…
@@ -6114,7 +6116,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Made-up example: a rebuilt workshop detail screen needed six values not on the token sheet — a focus colour on a dark surface, two spacing values for a dense metadata row, and three type sizes for a table. The heuristic review then found four issues, only one of which the visual refresh had addressed: the error message still appeared far from the field that caused it, which is a visibility-of-status problem no palette can fix. The write-up recorded one improvement, three unresolved issues and zero measured outcomes.
+- Made-up example: a rebuilt workshop detail screen needed six values not on the token sheet — a focus colour on a dark surface, two spacing values for a dense metadata row, and three type sizes for a table. The heuristic review then found four issues, only one of which the visual refresh had addressed. One it had not: the rebuild still never said whether a booking was being processed or had gone through, which is a visibility-of-system-status problem no token can fix. The write-up recorded one improvement, three unresolved issues and zero measured outcomes.
 
 
 ### Choose where you will do the work
@@ -6171,7 +6173,7 @@ Section: practice-plan. Stable action: step-2-brief.
 
 Three heuristics applied to both versions.
 
-- Review the original and the rebuild against the ten heuristics. Record each issue with the heuristic it violates and the specific element it concerns.
+- Review the original and the rebuild against three of the ten heuristics, chosen because they apply to this screen. For each, record the issue and the specific element it concerns.
 
 **Start here:** Choose the three heuristics most relevant to a booking screen and apply each to both versions.
 

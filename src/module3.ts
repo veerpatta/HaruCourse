@@ -371,7 +371,7 @@ export const module3: Lesson[] = [
     teach: [
       "Give every colour a job before you choose a value. A product palette is usually smaller than a brand palette: a surface, a primary text colour, a secondary text colour, one action colour, and a small set of status colours for error, warning and success. Colours without a job accumulate, and a palette of nineteen greys is not richer than one of four — it is unmaintainable and inconsistent across screens.",
       "Colour alone must never be the only carrier of information. Some readers cannot distinguish the hues you are relying on, some are on a washed-out screen in daylight, and some have colour overridden entirely. The rule is practical rather than moral: whatever the colour says, something else must also say — an icon, a word, a pattern, a position. The quickest check is to view the screen in greyscale and ask what you can no longer tell.",
-      "Hue, saturation and lightness are separable controls, and lightness does most of the accessible work. Two colours of the same lightness will look distinct to you and nearly identical to a reader with reduced colour vision, or on a dim screen. When you need two states to be reliably distinguishable, change lightness, not just hue.",
+      "Hue, saturation and lightness are separable controls, and lightness does most of the accessible work. Two colours of the same lightness can look distinct to you and nearly identical to a reader with reduced colour vision — red and green most often — or on a dim screen. When you need two states to be reliably distinguishable, change lightness, not just hue.",
       "Colour also carries convention, and convention is regional and contextual rather than universal. Red for danger is widespread in interface work, but red in an Indian context is also celebratory, and green appears in both money and success meanings. Do not assume your audience reads your palette the way you do; state the meaning in words somewhere in the interface, and treat a colour convention as a hypothesis you could check rather than a fact.",
     ],
     misconception:
@@ -380,18 +380,13 @@ export const module3: Lesson[] = [
       "Made-up example: a booking list showed status as a coloured dot: green confirmed, amber pending, red cancelled. In greyscale all three dots became mid-grey circles and the list became unreadable. The repair was not a new palette but a second channel: each dot kept its colour and gained a distinct shape and the status word beside it. The colour still helps people who can use it, and no longer carries the meaning alone.",
     steps: [
       {
-        minutes: 25,
-        title: "Read and list roles",
-        text: "Read the assigned colour material. Then write the roles your screen actually needs — surface, text, secondary text, action, and each status — before opening any colour picker.",
-      },
-      {
-        minutes: 25,
-        title: "Choose values",
-        text: "Assign one value to each role. Record each as a value plus its role and, where relevant, its lightness relative to its neighbours. Any colour without a role is dropped now.",
+        minutes: 40,
+        title: "List roles and choose one value for each",
+        text: "Read the assigned colour material. Write the roles your screen actually needs — surface, text, secondary text, action, and each status — before opening any colour picker. Then assign one value to each role and record it beside the role, with its lightness relative to its neighbours where relevant. Any colour without a role is dropped now.",
       },
       {
         minutes: 30,
-        title: "Recolour the screen",
+        title: "Apply the palette and count what you removed",
         text: "Apply the palette to your screen from the previous lessons. Count the colours you removed and note where you were tempted to add one back.",
       },
       {
@@ -400,9 +395,14 @@ export const module3: Lesson[] = [
         text: "View or redraw the screen with all colour removed. Write down every piece of information you can no longer determine. For each, add a second channel — word, icon, shape or position — and record the change.",
       },
       {
+        minutes: 10,
+        title: "Name one colour meaning you are unsure of",
+        text: "Look at your status colours and name one colour meaning you are unsure your audience shares, with the meaning you are relying on.",
+      },
+      {
         minutes: 15,
-        title: "Record and pause",
-        text: "Save the palette table, the coloured and greyscale versions, and your repair list. Note one colour meaning you are unsure your audience shares.",
+        title: "Save the palette table and both versions",
+        text: "Save the palette table, the coloured and greyscale versions, and your repair list, and note where they live.",
       },
     ],
     freeToolPath:
@@ -522,7 +522,7 @@ export const module3: Lesson[] = [
       "Your palette table and recoloured screen from the previous lesson.",
     why: "“It looks readable to me” is the weakest sentence in a design review. A measured ratio is a number you can put in a handoff, defend to an engineer and re-check after someone changes a colour.",
     teach: [
-      "The minimum contrast requirement is a ratio between the lightness of text and its background. Ordinary body text needs at least 4.5:1. Large text — from 18 point (about 24 px), or 14 point (about 18.7 px) when bold — needs at least 3:1, because larger, thicker letterforms remain legible at lower contrast. A separate WCAG criterion asks for 3:1 for the parts of a control or graphic someone needs to see, such as a button's edge against the page or a focus outline. Read the calculator's ratio to two decimals and never round a fail up to a pass: 4.48 is below 4.5. These are floors for a wide range of readers, not targets for good design, and comfortable reading often sits well above them.",
+      "The minimum contrast requirement is a ratio between the lightness of text and its background. Ordinary body text needs at least 4.5:1. Large text — from 18 point (about 24 px), or 14 point (about 18.7 px) when bold — needs at least 3:1, because larger, thicker letterforms remain legible at lower contrast. A separate WCAG criterion asks for 3:1 for the visual information needed to identify a control or its state, such as an empty text field's outline, a checkbox, an icon-only button or a focus indicator. A button already identified by its readable label does not need its edge to reach 3:1. Read the calculator's ratio to two decimals and never round a fail up to a pass: 4.48 is below 4.5. These are floors for a wide range of readers, not targets for good design, and comfortable reading often sits well above them.",
       "The requirement has genuine exceptions, and knowing them stops you from either over-claiming or over-correcting. Text that is purely decorative, text that is part of a logo or brand name, and text in a component that is currently inactive are not held to the ratio. An inactive control is the one designers most often get wrong in both directions: greying it out is legitimate, but if the reader cannot tell what the control would do, the problem is comprehension rather than conformance. The exemption settles conformance only; whether a disabled label should still be readable is a separate design decision.",
       "Measure the pair that actually renders, not the pair you intended. Text over an image, text over a gradient, semi-transparent overlays and a hover state that changes the background are all cases where the real background differs from the one in your palette. Take the worst point of the actual composite, not the average, because a caption is illegible at the point where the photograph is brightest, not on average.",
       "Contrast is a floor for legibility, not a proof of readability. A screen can pass every ratio and still be exhausting: too-long lines, insufficient leading, an over-saturated background that vibrates against the text, or an all-capitals paragraph. Report the ratio as one piece of evidence alongside your own reading test, and never describe a passing ratio as an accessibility outcome for real users.",
@@ -683,7 +683,7 @@ export const module3: Lesson[] = [
       "Your recoloured, contrast-repaired screen, and the densest screen from your Module 1 set.",
     why: "Grouping is what makes a screen legible before anyone reads a word of it, and it is the fastest fix available when a layout feels confusing — but it is a description of perception, not a law you can apply mechanically.",
     teach: [
-      "Proximity is the strongest grouping signal you control: things placed near each other are read as belonging together, and the eye applies this before it reads any label. This is why the gap around a group must exceed the gap inside it, and why an evenly spaced screen reads as one undifferentiated mass no matter how carefully you named the sections.",
+      "Proximity is the cheapest grouping signal you control: things placed near each other are read as belonging together, and the eye applies this before it reads any label. This is why the gap around a group must exceed the gap inside it, and why an evenly spaced screen reads as one undifferentiated mass no matter how carefully you named the sections.",
       "Similarity groups by shared appearance — the same colour, shape, size or weight reads as the same kind of thing. This cuts both ways. Two unrelated elements styled alike will be read as a set, so a decorative badge that happens to look like your status pills will be read as a status. Similarity is also how you can group things that cannot be placed near each other, such as items in different columns of a table.",
       "Common region is often the cleanest tool and the most over-used: a shared background, a card or an enclosing border binds whatever is inside it, and it overrides proximity. That strength is exactly the risk. Wrapping every group in a card produces a screen of boxes where nothing is subordinate to anything else, and you have spent your strongest grouping signal on your least important distinction. Prefer space first, then a shared background, then a visible border.",
       "These principles describe how perception tends to work; they do not tell you what the reader should conclude. Grouping can be correct perceptually and wrong for the task — a well-grouped set of options is still wrong if the option someone actually needs is buried in the third group. Treat a grouping decision as a hypothesis about reading order that a five-second look by another person can challenge, and remember that the source pages state these as laws without stating their limits.",
@@ -993,7 +993,7 @@ export const module3: Lesson[] = [
       "Decide where the layout changes by watching the content, not by listing device names. Phones, tablets and laptops span a continuous range of widths and any list of device sizes is out of date on arrival. Use a page that really reflows — the demo in this lesson, or a real page in your browser — and widen or narrow it gradually until something reads badly — the measure grows too long, a two-column pairing becomes absurdly stretched, a control drifts far from what it controls — and put the change there. Then record what you saw, so the number has a reason attached.",
       "Reflow is a re-ordering problem as much as a resizing one. When two columns become one, something must come first, and the correct order is usually the order of the reader's task rather than the visual order of the wide layout. A sidebar of filters that sits beside a list on a wide screen may need to sit above it, or behind a control, on a narrow one — and burying the primary action below a long secondary block is the most common reflow defect.",
       "Alignment does most of the work a grid gets credit for. A consistent left edge shared by heading, body and controls gives a screen structure even with no visible columns, and a single element breaking that edge reads as an error before the reader knows why. When you check a layout, check the edges first; misalignment is more often the cause of a screen feeling wrong than the column count is.",
-      "Reflow and clipping can look alike in a sketch and behave completely differently. Reflow means the content rearranges to fit the width it has: lines re-wrap, columns stack, the page grows taller and nothing is lost. Clipping means the layout keeps a fixed width and the screen simply shows less of it: text is cut off, hidden, or reachable only by scrolling sideways. Covering part of a paper sketch shows clipping, never reflow, because paper cannot rearrange itself. Paper is where you specify the reflow you intend; a real page is where you watch it happen.",
+      "Reflow and clipping can look alike in a sketch and behave completely differently. Reflow means the content rearranges to fit the width it has: lines re-wrap, columns stack, the page grows taller and nothing is lost. Clipping means the layout keeps a fixed width and the screen simply shows less of it: text is cut off, hidden with no control to reach it, or reachable only by scrolling sideways. Covering part of a paper sketch shows clipping, never reflow, because paper cannot rearrange itself. Paper is where you specify the reflow you intend; a real page is where you watch it happen.",
     ],
     misconception:
       "“Design for mobile, tablet and desktop.” Those are three arbitrary samples from a continuous range, and designing only at three widths guarantees that everything between them is untested. Design the behaviour between the changes, and use specific widths only as places to check.",
@@ -1164,7 +1164,7 @@ export const module3: Lesson[] = [
     why: "Everything you have decided so far lives in your head and in one screen. A token sheet is the form those decisions have to take before anyone else — an engineer, a future collaborator, or you in three months — can apply them without guessing.",
     teach: [
       "A token is a named decision. Not “#1B1B1B” but “colour-text-primary, #1B1B1B, used for body copy and headings on light surfaces”. The name carries the intent, which is what makes the value changeable later: when you darken your body text, everything that means body text follows, and nothing that merely happened to share the hex value comes with it.",
-      "Name tokens by role, not by appearance. “colour-brand-blue” fails the moment the brand colour becomes green, and “spacing-16” fails the moment you decide inside-group gaps should be 12. Role names — text-primary, surface-raised, space-inset-tight — survive the change of value and tell a reader what the token is for, which is the only reliable way someone else picks the right one.",
+      "Name tokens by role, not by appearance. “colour-brand-blue” fails the moment the brand colour becomes green, and “spacing-16” fails the moment you decide inside-group gaps should be 12. Role names — text-primary, surface-raised, space-inside — survive the change of value and tell a reader what the token is for, which is the only reliable way someone else picks the right one.",
       "A sheet that lists values without rules is only half a handoff. The genuinely useful part is the usage note: which token to reach for in which situation, what pairs are permitted, and what is forbidden. “Never place text-secondary on surface-raised; it fails contrast” prevents a whole class of defect that a table of hex values cannot.",
       "Tokens are also where your accessibility work becomes durable. If your contrast table lives in a document nobody opens, the first person to adjust a colour will break it silently. If the permitted pairings are stated on the sheet beside the values, the constraint travels with the decision — and you can re-run the check by inspecting the sheet rather than the whole screen.",
     ],
@@ -1469,7 +1469,7 @@ export const module3: Lesson[] = [
       "Your original Module 1 screen, the token sheet, the component state table and every artefact from this module.",
     why: "Ten lessons of decisions are worth nothing until one whole screen is rebuilt from them, and the rebuild is also the moment to be honest that a better-looking screen is not yet a better-working one.",
     teach: [
-      "Rebuilding from a system is a test of the system, not of your taste. Every point where you reach past the token sheet for a value is a defect in the sheet, and the count of those moments is the most useful number this lesson produces. A rebuild that required no additions probably means the screen was too similar to the one the sheet was derived from.",
+      "Rebuilding from a system is a test of the system, not of your taste. Every point where you reach past the token sheet for a value is a defect in the sheet, and the count of those moments is the most useful number this lesson produces. Rebuilding the same screen the sheet was derived from will usually find fewer gaps than rebuilding a different Module 1 screen, so read a low count with that in mind.",
       "Heuristic critique and evidence are different instruments and produce different sentences. A heuristic review says “this violates a recognised principle in the following specific way”, which is an expert judgement you can act on cheaply. It cannot say “this is better for readers”, because no reader was involved. Keep the two kinds of statement in separate columns so a stakeholder cannot mistake one for the other.",
       "Critique your own work by re-describing it, not by defending it. Write what each change was intended to achieve, then what a reader would actually experience differently, then what you cannot know. The third column is the one that keeps the write-up honest and the one that most portfolios omit entirely.",
       "Visual craft has real limits worth naming. A refreshed screen can improve legibility, grouping and consistency, and still fail because the underlying flow is wrong, the content is unclear or the task itself was misunderstood. Those are the problems the research and flow modules address, and this module's improvements do not touch them.",
@@ -1477,7 +1477,7 @@ export const module3: Lesson[] = [
     misconception:
       "“The redesign is a portfolio case study.” It is a craft artefact. A case study needs a problem, evidence about people, decisions traceable to that evidence, a test and honest measurement. A before-and-after image with no participant is a visual comparison, and presenting it as a case study is the most common way portfolios lose credibility.",
     example:
-      "Made-up example: a rebuilt workshop detail screen needed six values not on the token sheet — a focus colour on a dark surface, two spacing values for a dense metadata row, and three type sizes for a table. The heuristic review then found four issues, only one of which the visual refresh had addressed: the error message still appeared far from the field that caused it, which is a visibility-of-status problem no palette can fix. The write-up recorded one improvement, three unresolved issues and zero measured outcomes.",
+      "Made-up example: a rebuilt workshop detail screen needed six values not on the token sheet — a focus colour on a dark surface, two spacing values for a dense metadata row, and three type sizes for a table. The heuristic review then found four issues, only one of which the visual refresh had addressed. One it had not: the rebuild still never said whether a booking was being processed or had gone through, which is a visibility-of-system-status problem no token can fix. The write-up recorded one improvement, three unresolved issues and zero measured outcomes.",
     steps: [
       {
         minutes: 30,
@@ -1487,7 +1487,7 @@ export const module3: Lesson[] = [
       {
         minutes: 25,
         title: "Heuristic review of both versions",
-        text: "Review the original and the rebuild against the ten heuristics. Record each issue with the heuristic it violates and the specific element it concerns.",
+        text: "Review the original and the rebuild against three of the ten heuristics, chosen because they apply to this screen. For each, record the issue and the specific element it concerns.",
       },
       {
         minutes: 25,

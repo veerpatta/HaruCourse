@@ -48,7 +48,7 @@ const evidenceRows = (count: number): WorksheetField[] => Array.from({ length: c
       hint: n === 1 ? 'Something you can point to on the screen, or an action you took. One entry per line of the table.' : undefined,
       example: n === 1 ? 'Example (made up, not your research): The home screen shows a search box labelled Find events and a list titled This weekend.' : undefined },
     { id: `entry-${n}-label`, label: `Entry ${n} · Observed, inferred or unknown?`, kind: 'choice' as const, options: LABELS,
-      hint: n === 1 ? 'Observed: you saw it. Inferred: your guess about why. Unknown: you cannot tell from the screen.' : undefined },
+      hint: n === 1 ? 'Observed: you saw it. Inferred: your reading of what other people do or feel, or why. Unknown: you cannot tell from the screen.' : undefined },
     { id: `entry-${n}-goal`, label: `Entry ${n} · Which goal does this affect?`, kind: 'short' as const,
       example: n === 1 ? 'Example (made up): Finding an event nearby this weekend.' : undefined },
     { id: `entry-${n}-check`, label: `Entry ${n} · How could you check it?`, kind: 'short' as const,
@@ -77,13 +77,13 @@ const detectiveWorksheet: WorksheetSection[] = [
   { id: 'compare', title: 'Two improvements and how to check them', intro: 'One about looks, one about how the task behaves. Each needs an observation that would show whether it helped.', fields: [
     { id: 'visual-improvement', label: 'A visual improvement', kind: 'short', example: 'Example (made up): Make the date and price the same size as the class title.' },
     { id: 'visual-check', label: 'How would you know the look change helped?', kind: 'short', hint: 'Name something you could watch someone do. “It looks better” is not something you can watch.' },
-    { id: 'behavior-improvement', label: 'A change to how the task behaves', kind: 'short', hint: 'Not colour or size: what happens, in what order, or what the app remembers.', example: 'Example (made up): Ask for the date before showing results, so sold-out classes are hidden.' },
+    { id: 'behavior-improvement', label: 'A change to how the task behaves, and what it costs', kind: 'short', hint: 'Not colour or size: what happens, in what order, or what the app remembers. Then name its cost and who pays it: staff time, money, a busier screen, or something a person can no longer do.', example: 'Example (made up): Ask for the date before showing results, so sold-out classes are hidden. Cost: staff must keep every class’s places up to date.' },
     { id: 'behavior-check', label: 'How would you know the behaviour change helped?', kind: 'short', hint: 'Again, something you could watch. It should be possible for the answer to be no.' },
   ] },
   { id: 'reflect', title: 'Reflect', fields: [
     { id: 'open-question', label: 'One question you could not answer from the screen', kind: 'short', example: 'Example (made up): Do other people notice the sponsored results, or only me?' },
     { id: 'next-action', label: 'Your next action when you return', kind: 'short', hint: 'One line. It is what the Learn page will remind you of.' },
-    { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long', hint: 'The Check section sends you back to one specific answer. Write which one you changed and why.', example: 'Example (made up): I had written “people find the date confusing” as observed. Nobody told me that, so I moved it to inferred and added “ask two friends to find the date” as the check.' },
+    { id: 'improvement-made', label: 'What you changed after the Check questions, or why no change was needed', kind: 'long', hint: 'Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the check.', example: 'Example (made up): I had written “people find the date confusing” as observed. Nobody told me that, so I moved it to inferred and added “ask two friends to find the date” as the check.' },
   ] },
 ];
 
@@ -109,13 +109,13 @@ const detectiveChecks: ActiveCheck[] = [
       { label: 'That the design works, because a real task was completed.', feedback: 'It shows the task can be completed by you, today, knowing what you know. That is worth recording, and it is not evidence about anyone else.' },
       { label: 'That the visual design is good enough to leave alone.', feedback: 'A screen can look well made and still hide the price or the date. Ease for you is not evidence about a person seeing it for the first time.' },
     ],
-    repair: 'Look at your five entries in step 3. Any line that describes what other people do or feel belongs under inferred or unknown, not observed. Change one and say why in step 5.',
+    repair: 'Look at your five entries in step 3. Any line that describes what other people do or feel belongs under inferred or unknown, not observed. Change any that are mislabelled and say why in step 5, or say there why none needed it.',
     recheck: 'At least one entry is labelled inferred or unknown, and its “how could you check it” column names something you could watch.',
   },
   {
     question: 'You wrote: “People skip the sponsored results.” You did not watch anyone else use the app. Which label is honest?',
     options: [
-      { label: 'Inferred — it is your reading of why, and it may well be right.', correct: true, feedback: 'Inferred is not a lesser answer; it is the honest one, and it tells you exactly what to go and find out.' },
+      { label: 'Inferred — your reading of what others do; it may be right.', correct: true, was: ['Inferred — it is your reading of why, and it may well be right.'], feedback: 'Inferred is not a lesser answer; it is the honest one, and it tells you exactly what to go and find out.' },
       { label: 'Observed, because you saw the sponsored results yourself.', feedback: 'You observed that sponsored results appear. “People skip them” is a claim about other people’s behaviour, which the screen cannot show you.' },
       { label: 'Unknown, because you have no data at all.', feedback: 'Unknown is for things you cannot tell from the screen and have no reading of at all. Here you do have a reading, so inferred keeps it visible as something to check.' },
     ],
@@ -230,7 +230,7 @@ const detectiveGuide: GuideStep[] = [
     ],
     start: 'Take the first action from your list and write what was on the screen at that moment. Label it. Then the next action.',
     enough: 'At least one entry is inferred or unknown. If all five are observed, you have not yet written down a guess, and everyone has guesses.' },
-  { expect: 'Two improvements, one visual and one about behaviour, each with an observation that would show whether it helped.',
+  { expect: 'Two improvements, one visual and one about behaviour, each with an observation that would show whether it helped, and what the behaviour change costs.',
     fields: ['visual-improvement', 'visual-check', 'behavior-improvement', 'behavior-check'],
     demo: {
       scenario: 'Made-up example. Writing the “how would I know?” line for one improvement, and throwing the first version away.',
@@ -250,15 +250,15 @@ const detectiveGuide: GuideStep[] = [
       { term: 'Behaviour improvement', meaning: 'A change in what the app does, asks or remembers, rather than how it looks.' },
     ],
     start: 'Look at your inferred and unknown entries. Each one is a place an improvement could be tested.',
-    enough: 'Each check names something you could watch or count, not “people would like it more”.' },
-  { expect: 'One question you could not answer from the screen, your next action, and the one change the Check questions sent you back to make.',
+    enough: 'Each check names something you could watch or count, not “people would like it more”, and the behaviour change says what it costs and who pays it.' },
+  { expect: 'One question you could not answer from the screen, your next action, and the change the Check questions sent you back to make, or why none was needed.',
     fields: ['open-question', 'next-action', 'improvement-made'],
     terms: [
       { term: 'Open question', meaning: 'Something the screen could not tell you. Writing it down is how you remember to go and find out.' },
       { term: 'Repair', meaning: 'One specific change to one answer you already wrote, not a rewrite. Each Check question names one.' },
     ],
     start: 'Reread your unknown entries; one of them is your question. Answer the three Check questions before filling the last box, so you know what to change.',
-    enough: 'Your next action is a single line you could act on in five minutes when you return, and the last box names one answer you actually changed.' },
+    enough: 'Your next action is a single line you could act on in five minutes when you return, and the last box names one answer you changed, or the answer you checked and why it already met the check.' },
 ];
 
 // Guided material for the rest of Module 1, one entry per lesson, authored
@@ -352,10 +352,10 @@ const framing: Guided = {
       fields: ['assumption-1', 'assumption-2', 'assumption-3', 'assumption-4', 'assumption-5', 'assumption-6', 'priority-1', 'priority-1-evidence', 'priority-2', 'priority-2-evidence'],
       reveal: { first: 1, group: 1, count: 6, addLabel: 'Add another assumption', note: 'One at a time. Six is the target; each is something your frames quietly depend on.' },
       supported: {
-        material: 'A supplied pair from the same made-up workshop. Assumption A: “Attendees read the confirmation email.” Nobody has checked; if it is wrong, every message you send is unread. Assumption B: “Attendees would prefer a printed list to a text message.” Nobody has checked; if it is wrong, you send the same information in a slightly different form.',
+        material: 'A supplied pair from the same made-up workshop. Assumption A: “Attendees read the confirmation email.” Nobody has checked; if it is wrong, anything you send by email goes unread. Assumption B: “Attendees would prefer a printed list to a text message.” Nobody has checked; if it is wrong, you send the same information in a slightly different form.',
         question: 'Which one do you investigate first, and why?',
         options: [
-          { label: 'A, because if it is wrong, every message you send goes unread.', correct: true, was: ['A, because being wrong about it breaks every other response you might choose.'], feedback: 'Both are unchecked, so uncertainty does not separate them. Consequence does: if the email is never read, a better-worded email cannot help, and neither can anything else delivered that way.' },
+          { label: 'A, because if it is wrong, nothing you send by email gets read.', correct: true, was: ['A, because being wrong about it breaks every other response you might choose.', 'A, because if it is wrong, every message you send goes unread.'], feedback: 'Both are unchecked, so uncertainty does not separate them. Consequence does: if the email is never read, a better-worded email cannot help, and neither can anything else delivered that way.' },
           { label: 'B, because preference questions are quick to ask and easy to act on.', was: ['B, because preference questions are quick to ask people.'], feedback: 'Speed is a real consideration, but here it buys the cheap answer. You would learn a format preference while still not knowing whether any message arrives.' },
           { label: 'Neither first: ask about both in one conversation to save time.', was: ['Neither: ask about both in the same conversation to save time.'], feedback: 'Reasonable in practice, and it still needs an order. Asked together, the preference question often eats the time, because people find it easier to answer than recalling what they actually did.' },
           { label: 'A, because printed lists cost money while email costs nothing.', was: ['A, because printed lists cost money and email is free.'], feedback: 'The right assumption for the wrong reason. Cost belongs in the response comparison, not in deciding which uncertainty threatens the work most.' },
@@ -962,9 +962,9 @@ const decisionNote: Guided = {
     { terms: [{ term: 'Source label', meaning: 'The word you attach to a claim to say where it came from: observed, reported or assumed.' }, { term: 'Unsupported claim', meaning: 'A sentence that sounds like evidence and has nothing behind it. Words like intuitive, clean and obvious usually mark one.' }], expect: 'The place your spoken explanation went unclear.', fields: ['unclear'],
       supported: {
         material: 'A supplied paragraph from someone else’s decision note, made up for practice: “Attendees want to know what to bring. I watched two people miss the materials line at the bottom of the page. Moving it above Reserve will reduce no-shows, and the studio agrees it is worth trying.”',
-        question: 'Which sentence needs a source label most urgently before this note is shared?',
+        question: 'Which sentence most needs rewriting before this note is shared?',
         options: [
-          { label: '“Moving it above Reserve will reduce no-shows” — an outcome nobody has measured.', correct: true, was: ['“Moving it above Reserve will reduce no-shows” — a prediction about an outcome nobody has measured.'], feedback: 'It is the only sentence that claims a result, and results are what get repeated in later documents. It should say what is expected and how it would be checked.' },
+          { label: '“Moving it above Reserve will reduce no-shows” — an outcome nobody has measured.', correct: true, was: ['“Moving it above Reserve will reduce no-shows” — a prediction about an outcome nobody has measured.'], feedback: 'It is the only sentence that claims a result nobody has measured, and results are what get repeated in later documents. Rewrite it to say what is expected and how it would be checked.' },
           { label: '“Attendees want to know what to bring” — a broad, general claim about all people.', was: ['“Attendees want to know what to bring” — a general claim about people.'], feedback: 'It does need a label, and it is the softer problem: a reader can see it is a summary. The outcome claim will be quoted as a fact.' },
           { label: '“I watched two people miss the materials line” — a very small sample of people.', was: ['“I watched two people miss the materials line” — a small sample.'], feedback: 'Small, and honestly stated. It already says who and what was observed; two people is a limitation to note, not an unlabelled claim.' },
           { label: '“The studio agrees it is worth trying” — an opinion presented as if it were support.', was: ['“The studio agrees it is worth trying” — an opinion presented as support.'], feedback: 'Worth attributing, and it is not evidence about people using the design, so nobody is likely to mistake it for one.' },
@@ -1108,9 +1108,9 @@ const studyPlan: Guided = {
     {
       question: 'One person who booked a class last month tells you they never open confirmation emails. What have you established?',
       options: [
-        { label: 'That at least one relevant person does not, so you cannot assume that everyone does.', correct: true, was: ['That at least one person with relevant experience does not, which is enough to make you stop assuming everyone does.'], feedback: 'One account cannot say how common it is, and it is real evidence that the behaviour exists. That is usually enough to change a design you were about to build on the opposite assumption.' },
+        { label: 'That one relevant person reports not opening them, so you cannot assume everyone does.', correct: true, was: ['That at least one person with relevant experience does not, which is enough to make you stop assuming everyone does.', 'That at least one relevant person does not, so you cannot assume that everyone does.'], feedback: 'One account cannot say how common it is, and a report of a habit is not the same as watching it. It is still real evidence that the behaviour is possible, which is usually enough to stop you building a design on the opposite assumption.' },
         { label: 'That most people probably do not read confirmation emails, at least for classes.', was: ['That most people do not read confirmation emails.'], feedback: 'One person cannot support “most”. Written that way it will be repeated later without the caveat, and it will be treated as a number.' },
-        { label: 'Nothing yet, because a single participant is not a sample of anything at all.', was: ['Nothing: a single participant is not a sample.'], feedback: 'Too dismissive. One clear account of a behaviour is a fact about the world; what it cannot give you is prevalence.' },
+        { label: 'Nothing yet, because a single participant is not a sample of anything at all.', was: ['Nothing: a single participant is not a sample.'], feedback: 'Too dismissive. One clear report shows the behaviour is possible and worth checking; what it cannot give you is prevalence, or proof of what they actually do.' },
         { label: 'That your confirmation email design needs work before the next class goes out.', was: ['That your email design needs work.'], feedback: 'That jumps to a repair. If nobody opens it, better wording is not the answer, and you would have skipped past the finding.' },
       ],
       repair: 'Check the limitation box in step 5. If it does not say that this study cannot establish how common anything is, add that sentence and note it in step 5.',
@@ -1218,7 +1218,7 @@ const synthesis: Guided = {
       ],
       start: 'If you have no session of your own, choose the supplied notes and copy N01 to N06 into separate entries, keeping each S label.',
       enough: 'Every entry could be checked against a source, and none contains the word because.' },
-    { demo: { scenario: 'Made-up example. Grouping six practice notes, where the first two groups were sorted by the words inside them.', beats: [{ label: 'My first two groups', text: '“Email” and “Website”. Every note that mentioned an email went into one pile and the rest went into the other.' }, { label: 'Why it felt right', text: 'Each note went somewhere at once and nothing was left over. It looked finished in about a minute.' }, { label: 'What was wrong with it', text: 'Email is where the note happened, not what happened. S2 searching on the journey and S4 reading the list before booking are two places and one behaviour.' }, { label: 'The names I ended with', text: '“Preparing at the last moment” and “Preparing before committing”. Names I could turn out to be wrong about, which is what a group name is for.' }, { label: 'The note that would not go in', text: 'S3 brought supplies from an earlier class and checked nothing. It sits outside both groups, written down, and it is the one I keep coming back to.' }], wrongTurn: 'The wrong turn is grouping by the word that appears in the note. It sorts everything quickly, it never leaves an awkward note over, and it describes your filing rather than the people.', tradeoff: 'A group named after a pattern can be wrong, and somebody can say so in front of you. Tidy topic piles cannot be argued with, which is exactly why they teach you nothing.', uncertainty: 'Still unknown: whether “preparing before committing” is one behaviour or two. Four accounts cannot separate them, and the name stays a guess.' }, expect: 'Two named groups with their note numbers, and the note that refuses to fit.',
+    { demo: { scenario: 'Made-up example. Grouping six practice notes, where the first two groups were sorted by the words inside them.', beats: [{ label: 'My first two groups', text: '“Email” and “Website”. Every note that mentioned an email went into one pile and the rest went into the other.' }, { label: 'Why it felt right', text: 'Each note went somewhere at once and nothing was left over. It looked finished in about a minute.' }, { label: 'What was wrong with it', text: 'Email is where the note happened, not what happened. S1 looking the evening before and S2 searching on the journey landed in different piles, yet they are one behaviour: checking late.' }, { label: 'The names I ended with', text: '“Preparing at the last moment” and “Preparing before committing”. Names I could turn out to be wrong about, which is what a group name is for.' }, { label: 'The note that would not go in', text: 'S3 brought supplies from an earlier class and checked nothing. It sits outside both groups, written down, and it is the one I keep coming back to.' }], wrongTurn: 'The wrong turn is grouping by the word that appears in the note. It sorts everything quickly, it never leaves an awkward note over, and it describes your filing rather than the people.', tradeoff: 'A group named after a pattern can be wrong, and somebody can say so in front of you. Tidy topic piles cannot be argued with, which is exactly why they teach you nothing.', uncertainty: 'Still unknown: whether “preparing before committing” is one behaviour or two. Four accounts cannot separate them, and the name stays a guess.' }, expect: 'Two named groups with their note numbers, and the note that refuses to fit.',
       fields: ['group-1', 'group-1-notes', 'group-2', 'group-2-notes', 'contradiction'],
       terms: [{ term: 'Contradiction', meaning: 'A note that argues against the pattern you are forming. It stays visible; it is not a mistake in the data.' }],
       start: 'Read your entries and put two of them together that feel related; the reason you put them together is the group name.',
@@ -1289,7 +1289,7 @@ const synthesis: Guided = {
     prompt: 'Write one finding these notes support, with the note IDs behind it and any note that argues against it, and explain why your finding claims no more than four notes can show.',
     anchors: {
       weak: 'Writes a claim the notes cannot support (“nobody reads the rota”, “most people ask neighbours”) or a recommendation (“put the rota online”), with no note IDs.',
-      adequate: 'Writes a finding that holds for all four — for example, people learn about the rota at different times and in different places — cites A1 to A4, keeps A3 visible, and labels the notes as practice material.',
+      adequate: 'Writes a finding the notes support — for example, these four came to the rota at different times and in different ways, or not at all (A3) — cites A1 to A4, keeps A3 visible as the exception, and labels the notes as practice material.',
       strong: 'Adequate, plus says what four notes cannot show (how common each route is), names a question the notes cannot answer, and writes one implication as possible rather than proven.',
     },
   },
@@ -1351,7 +1351,7 @@ const opportunity: Guided = {
         { term: 'Task impact', meaning: 'What changes for the person trying to finish, not how much of the screen changes.' },
       ],
       start: 'Write one option with no screen in it. If you cannot, the finding may be about a screen you already decided on.',
-      enough: 'No two options would succeed or fail for the same reason.' },
+      enough: 'No two options would succeed or fail for the same reason, and at least one involves no screen.' },
     { demo: { scenario: 'Made-up example. Picking one of three options for a village library room-booking page, and picking the wrong one for the wrong reason.', beats: [{ label: 'The three on the table', text: 'Redraw the results page so rooms are easier to compare. Say on each room whether a key has to be collected from the desk. Let someone ring a number and have the desk book it for them.' }, { label: 'The one I reached for', text: 'The results page. I could already see it finished, and being able to picture something felt a great deal like being ready to build it.' }, { label: 'The question I had skipped', text: 'Not which one I want to draw. Which answer would change what I do next. If the key is the reason people ring the desk, a prettier results page changes nothing at all.' }, { label: 'What I chose instead', text: 'The key line. One sentence on a card, and the dullest of the three by a distance.' }, { label: 'The cost, written honestly', text: 'My first attempt said “costs a little extra work”. That is not a cost. The real one: the results page stays ugly for another fortnight and it is the screen anyone opening my folder sees first.' }, { label: 'What I left out on purpose', text: 'Filters, photographs of the rooms, and the map. Written down as excluded, because if I quietly slip the map back in I will not know which change did anything.' }], wrongTurn: 'The wrong turn is choosing the option you most want to draw. It is the one you can already picture, and picturing it feels like readiness rather than preference.', tradeoff: 'The choice that teaches you most is often the one with almost nothing to show. You spend the week on a single sentence about keys while the ugly screen stays ugly, and nobody looking through your work will be impressed by it.', uncertainty: 'Still unknown: whether people ring the desk about keys at all. Two accounts pointed that way and two accounts are a reason to test, not a reason to be sure.' }, expect: 'One choice, what it costs, and what you are leaving out.', fields: ['choice', 'tradeoff', 'out-of-scope'],
       terms: [{ term: 'Scope', meaning: 'What this test covers. Everything else is written down as excluded so the result stays interpretable.' }],
       start: 'Choose the option whose result would change your next decision most, not the one you most want to build.',
@@ -1420,7 +1420,7 @@ const opportunity: Guided = {
     prompt: 'Choose the option you would test first and write a hypothesis that ends in something you could watch. Explain why your choice is worth testing before the others.',
     anchors: {
       weak: 'Picks the option that is most fun to design, or writes “it will improve visitor satisfaction”, with no observable signal and nothing that could show it failing.',
-      adequate: 'Chooses one option for a stated reason tied to the notes and writes “If …, a first-time visitor can find the right entrance without asking staff”, with a signal that would show it failing.',
+      adequate: 'Chooses one option for a stated reason tied to the notes and writes a hypothesis ending in something observable, such as “If …, a first-time visitor reaches the right entrance first time”, with a signal that would show it failing.',
       strong: 'Adequate, plus labels effort as an estimate with its reason, lists what the test leaves out, and notes that four simulated notes cannot show how common wrong-entrance trips are.',
     },
   },

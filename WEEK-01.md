@@ -15,7 +15,7 @@ Bring: Nothing from an earlier lesson. Bring an app you already use and somewher
 - One task, followed from start to finish
 - Five things you noticed, each labelled observed, inferred or unknown
 - What the person wanted, and what the company probably wanted
-- Two improvements, each with a way to tell whether it helped
+- Two improvements, each with a way to tell whether it helped, and what one of them costs
 
 ### Start here: in everyday words
 
@@ -243,7 +243,7 @@ Look at one screen in your chosen app. Write one thing you can point to, label i
 
 **Answer:** Entry 1 · What I saw or did — Something you can point to on the screen, or an action you took. One entry per line of the table.
 
-**Answer:** Entry 1 · Observed, inferred or unknown? (observed / inferred / unknown) — Observed: you saw it. Inferred: your guess about why. Unknown: you cannot tell from the screen.
+**Answer:** Entry 1 · Observed, inferred or unknown? (observed / inferred / unknown) — Observed: you saw it. Inferred: your reading of what other people do or feel, or why. Unknown: you cannot tell from the screen.
 
 **Answer:** Entry 1 · Which goal does this affect?
 
@@ -586,16 +586,16 @@ Name something you could watch someone do. “It looks better” is not somethin
 
 Section: practice-plan. Stable action: behavior-improvement.
 
-Choose one change to the order, behavior or information in the task. Keep it different from your visual change.
+Choose one change to the order, behavior or information in the task. Keep it different from your visual change, and say what it costs and who pays it: staff time, money, a busier screen, or something a person can no longer do.
 
-**Answer:** A change to how the task behaves
+**Answer:** A change to how the task behaves, and what it costs
 
-Not colour or size: what happens, in what order, or what the app remembers.
+Not colour or size: what happens, in what order, or what the app remembers. Then name its cost and who pays it: staff time, money, a busier screen, or something a person can no longer do.
 
 <details>
 <summary>Example</summary>
 
-Example (made up): Ask for the date before showing results, so sold-out classes are hidden.
+Example (made up): Ask for the date before showing results, so sold-out classes are hidden. Cost: staff must keep every class’s places up to date.
 
 </details>
 
@@ -688,7 +688,7 @@ That the visual design is good enough to leave alone. — A screen can look well
 
 That the design works, because a real task was completed. — It shows the task can be completed by you, today, knowing what you know. That is worth recording, and it is not evidence about anyone else.
 
-Improve: Look at your five entries in step 3. Any line that describes what other people do or feel belongs under inferred or unknown, not observed. Change one and say why in step 5.
+Improve: Look at your five entries in step 3. Any line that describes what other people do or feel belongs under inferred or unknown, not observed. Change any that are mislabelled and say why in step 5, or say there why none needed it.
 
 Check again: At least one entry is labelled inferred or unknown, and its “how could you check it” column names something you could watch.
 
@@ -706,17 +706,17 @@ Choose the explanation you believe. Then compare the feedback with your own work
 You wrote: “People skip the sponsored results.” You did not watch anyone else use the app. Which label is honest?
 
 - Unknown, because you have no data at all.
-- Inferred — it is your reading of why, and it may well be right.
 - Observed, because you saw the sponsored results yourself.
+- Inferred — your reading of what others do; it may be right.
 
 <details>
 <summary>After your attempt</summary>
 
 Unknown, because you have no data at all. — Unknown is for things you cannot tell from the screen and have no reading of at all. Here you do have a reading, so inferred keeps it visible as something to check.
 
-Inferred — it is your reading of why, and it may well be right. — Inferred is not a lesser answer; it is the honest one, and it tells you exactly what to go and find out.
-
 Observed, because you saw the sponsored results yourself. — You observed that sponsored results appear. “People skip them” is a claim about other people’s behaviour, which the screen cannot show you.
+
+Inferred — your reading of what others do; it may be right. — Inferred is not a lesser answer; it is the honest one, and it tells you exactly what to go and find out.
 
 Improve: Pick the entry you were least sure about, set its label honestly, and write in its check column what you would watch to find out. Record the change in step 5.
 
@@ -751,9 +751,9 @@ Section: practice. Stable action: improvement-made.
 
 Name one answer you changed after checking and explain why. If no change was needed, name the answer you checked and explain how it already meets the criterion.
 
-**Answer:** What you changed after the Check questions
+**Answer:** What you changed after the Check questions, or why no change was needed
 
-The Check section sends you back to one specific answer. Write which one you changed and why.
+Name one answer you improved and why. If no repair was needed, name the answer you checked and explain why it already meets the check.
 
 <details>
 <summary>Example</summary>
@@ -911,7 +911,7 @@ Product design starts by understanding the task and the problem before choosing 
 - **Problem frame:** A description of who is stuck, when, and what it costs them. It does not say what to build.
 - **Feature:** A thing you could build: a reminder, a checkbox, a page. If a frame contains one, it has jumped to a solution.
 
-**Quick example.** A supplied pair from the same made-up workshop. Assumption A: “Attendees read the confirmation email.” Nobody has checked; if it is wrong, every message you send is unread. Assumption B: “Attendees would prefer a printed list to a text message.” Nobody has checked; if it is wrong, you send the same information in a slightly different form.
+**Quick example.** A supplied pair from the same made-up workshop. Assumption A: “Attendees read the confirmation email.” Nobody has checked; if it is wrong, anything you send by email goes unread. Assumption B: “Attendees would prefer a printed list to a text message.” Nobody has checked; if it is wrong, you send the same information in a slightly different form.
 
 The reader demonstrates and guides the task before asking for “Unverified explanation 1”.
 
@@ -1141,14 +1141,14 @@ Six assumptions with consequence and confidence, and the two you will investigat
 
 Section: practice-plan. Stable action: step-3-try.
 
-A supplied pair from the same made-up workshop. Assumption A: “Attendees read the confirmation email.” Nobody has checked; if it is wrong, every message you send is unread. Assumption B: “Attendees would prefer a printed list to a text message.” Nobody has checked; if it is wrong, you send the same information in a slightly different form.
+A supplied pair from the same made-up workshop. Assumption A: “Attendees read the confirmation email.” Nobody has checked; if it is wrong, anything you send by email goes unread. Assumption B: “Attendees would prefer a printed list to a text message.” Nobody has checked; if it is wrong, you send the same information in a slightly different form.
 
 Which one do you investigate first, and why?
 
 - Neither first: ask about both in one conversation to save time.
 - A, because printed lists cost money while email costs nothing.
+- A, because if it is wrong, nothing you send by email gets read.
 - B, because preference questions are quick to ask and easy to act on.
-- A, because if it is wrong, every message you send goes unread.
 
 <details>
 <summary>After your attempt</summary>
@@ -1157,9 +1157,9 @@ Neither first: ask about both in one conversation to save time. — Reasonable i
 
 A, because printed lists cost money while email costs nothing. — The right assumption for the wrong reason. Cost belongs in the response comparison, not in deciding which uncertainty threatens the work most.
 
-B, because preference questions are quick to ask and easy to act on. — Speed is a real consideration, but here it buys the cheap answer. You would learn a format preference while still not knowing whether any message arrives.
+A, because if it is wrong, nothing you send by email gets read. — Both are unchecked, so uncertainty does not separate them. Consequence does: if the email is never read, a better-worded email cannot help, and neither can anything else delivered that way.
 
-A, because if it is wrong, every message you send goes unread. — Both are unchecked, so uncertainty does not separate them. Consequence does: if the email is never read, a better-worded email cannot help, and neither can anything else delivered that way.
+B, because preference questions are quick to ask and easy to act on. — Speed is a real consideration, but here it buys the cheap answer. You would learn a format preference while still not knowing whether any message arrives.
 
 Apply the same test to your own six: for each, ask what breaks if it is wrong, then pick the two where the damage is worst and the evidence thinnest.
 
@@ -1636,7 +1636,7 @@ Problem frame: A description of who is stuck, when, and what it costs them. It d
 Feature: A thing you could build: a reminder, a checkbox, a page. If a frame contains one, it has jumped to a solution.
 
 Supplied practice material (fictional or labelled practice, not my research):
-A supplied pair from the same made-up workshop. Assumption A: “Attendees read the confirmation email.” Nobody has checked; if it is wrong, every message you send is unread. Assumption B: “Attendees would prefer a printed list to a text message.” Nobody has checked; if it is wrong, you send the same information in a slightly different form.
+A supplied pair from the same made-up workshop. Assumption A: “Attendees read the confirmation email.” Nobody has checked; if it is wrong, anything you send by email goes unread. Assumption B: “Attendees would prefer a printed list to a text message.” Nobody has checked; if it is wrong, you send the same information in a slightly different form.
 
 Activity: Use the supplied case to ask me whether each statement is a fact, a guess or an open question. After I answer, explain the distinction with one everyday example.
 
@@ -4763,7 +4763,7 @@ Section: practice-plan. Stable action: step-3-try.
 
 A supplied paragraph from someone else’s decision note, made up for practice: “Attendees want to know what to bring. I watched two people miss the materials line at the bottom of the page. Moving it above Reserve will reduce no-shows, and the studio agrees it is worth trying.”
 
-Which sentence needs a source label most urgently before this note is shared?
+Which sentence most needs rewriting before this note is shared?
 
 - “Moving it above Reserve will reduce no-shows” — an outcome nobody has measured.
 - “Attendees want to know what to bring” — a broad, general claim about all people.
@@ -4773,7 +4773,7 @@ Which sentence needs a source label most urgently before this note is shared?
 <details>
 <summary>After your attempt</summary>
 
-“Moving it above Reserve will reduce no-shows” — an outcome nobody has measured. — It is the only sentence that claims a result, and results are what get repeated in later documents. It should say what is expected and how it would be checked.
+“Moving it above Reserve will reduce no-shows” — an outcome nobody has measured. — It is the only sentence that claims a result nobody has measured, and results are what get repeated in later documents. Rewrite it to say what is expected and how it would be checked.
 
 “Attendees want to know what to bring” — a broad, general claim about all people. — It does need a label, and it is the softer problem: a reader can see it is a summary. The outcome claim will be quoted as a fact.
 
