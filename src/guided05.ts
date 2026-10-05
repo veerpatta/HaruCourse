@@ -107,8 +107,8 @@ export const guided05: Record<string, Guided> = {
       {
         question: 'One of your questions is “is the booking flow easy to use?”. What is wrong with it?',
         options: [
-          { label: 'It names no decision that would change, and no evidence could ever settle it.', correct: true, feedback: 'It is a summary judgement rather than a question about events. Rewrite it as what someone did at a particular moment.', was: ['No answer would change a specific decision, and nothing could settle it.'] },
-          { label: 'It works as a research question; it only needs rewording before anyone hears it.', feedback: 'Rewording for participants is a separate job, done for questions that already work. The problem here is that no state of the world would answer it, however it is phrased.', was: ['It is fine as a research question but should not be asked aloud.'] },
+          { label: 'As worded, it names no decision it would change and no evidence to settle it.', correct: true, feedback: 'It is a summary judgement rather than a question about events. “Easy” could be made checkable, for example as finishing a booking without help, but as written it is not. Rewrite it as what someone did at a particular moment.', was: ['No answer would change a specific decision, and nothing could settle it.', 'It names no decision that would change, and no evidence could ever settle it.'] },
+          { label: 'It works as a research question; it only needs rewording before anyone hears it.', feedback: 'Rewording for participants is a separate job, done for questions that already work. The problem here is that, as worded, no decision hangs on it and no evidence is named that would answer it.', was: ['It is fine as a research question but should not be asked aloud.'] },
           { label: 'It needs a rating scale so that each person’s answer becomes a comparable number.', feedback: 'A scale produces a number that still does not tell you what to change.', was: ['It needs a rating scale to be answerable.'] },
         ],
         repair: 'Rewrite any summary-judgement question in step 3 as a question about a specific past episode, then record the change in step 5.',
@@ -151,8 +151,9 @@ export const guided05: Record<string, Guided> = {
         { id: 'classification', label: 'Each question labelled: behaviour, experience and reasoning, frequency, or ability to complete', kind: 'long', hint: 'The label decides the method more than your preference does.' },
       ] },
       { id: 'pair', title: 'One method each, with its cost', intro: 'One pairing at a time, for your top three questions. A fourth or fifth question goes in the not-run list in step 5 if you cannot pair it yet.', fields: [
-        ...[1, 2, 3].map((n) => ({ id: `pairing-${n}`, label: `Pairing ${n} · question, method, hours, people needed, and what you would need access to`, kind: 'long' as const,
-          ...(n === 1 ? { example: 'Example (made up): when do people decide what to bring — interviews about a recent class — about 6 hours for three sessions — 3 people who booked recently — no special access needed.' } : {}) })),
+        ...[1, 2, 3].map((n) => ({ id: `pairing-${n}`, label: n < 3 ? `Pairing ${n} · question, method, hours, people needed, and what you would need access to` : 'Pairing 3 · question, method, hours, people needed and access — or “open gap” and what would be needed', kind: 'long' as const,
+          ...(n === 1 ? { example: 'Example (made up): when do people decide what to bring — interviews about a recent class — about 6 hours for three sessions — 3 people who booked recently — no special access needed.' } : {}),
+          ...(n === 3 ? { hint: 'A how-often question needs a defined group you can reach. If no method you can run alone would answer it, write “open gap” and what would be needed; that is a complete answer.' } : {}) })),
       ] },
       { id: 'exclude', title: 'What each cannot tell you', fields: [
         { id: 'exclusions', label: 'For each pairing: “this cannot tell me …”', kind: 'long', hint: 'Name the specific claim you will be tempted to make from it.', example: 'Example (made up): three interviews cannot tell me how common this is, and I will want to say “most people”.' },
@@ -174,7 +175,7 @@ export const guided05: Record<string, Guided> = {
       { terms: [{ term: 'Experience and reasoning question', meaning: 'What something was like for somebody, and why they did what they did. You have to ask, because none of it is visible.' }, { term: 'Ability to complete question', meaning: 'Whether a person can finish a task with the thing in front of them. You answer it by watching somebody try.' }], demo: { scenario: 'Made-up example. Labelling five questions by type, and giving one the label that suited the method I had already picked.', beats: [{ label: 'The question', text: '“How do people work out what to bring to a class?” I labelled it experience and reasoning, because I had already decided I was going to interview people.' }, { label: 'What I had actually done', text: 'I chose the label to fit the method instead of choosing the method to fit the label. At that point the label was doing no work at all.' }, { label: 'Reading the question again', text: 'Working out what to bring is something a person does: opening a page, scrolling, giving up, messaging a friend. That is behaviour, and behaviour is watched rather than recalled.' }, { label: 'What changed', text: 'The pairing became one observation with a short interview after it, rather than three interviews asking people to remember a small thing they did weeks ago.' }, { label: 'The one that kept its label', text: 'Another question was genuinely about reasoning, which was why they chose that class at all. No amount of watching reaches that. Two labels, two methods.' }], wrongTurn: 'The wrong turn is labelling backwards from the method you are comfortable with. Interviews are the one method most people can run alone, so every question quietly turns into a question about reasoning.', tradeoff: 'Observation needs somebody willing to be watched doing an ordinary thing, which is harder to arrange than a conversation and usually has to be fitted around their day rather than yours.', uncertainty: 'Still unknown: whether what somebody does while you watch is what they do when nobody is there. Being observed changes the doing, and no label repairs that.' }, expect: 'Each of your five labelled by question type.', fields: ['classification'],
         start: 'Ask of each question: is this about what people do, what they experienced, how many, or whether they can finish?',
         enough: 'Each label comes from what would count as an answer, not from the method you already prefer.' },
-      { terms: [{ term: 'Pairing', meaning: 'One question set beside the single method you would use to answer it, with the cost of running it written next to it.' }, { term: 'Access', meaning: 'Whatever you would need permission or an introduction to reach: a list of past customers, a room, an hour of somebody’s working day.' }, { term: 'Write-up', meaning: 'The time after a session spent turning notes into something readable. It is usually about as long as the session itself.' }], expect: 'One method per question, with hours, people and access.',
+      { terms: [{ term: 'Pairing', meaning: 'One question set beside the single method you would use to answer it, with the cost of running it written next to it.' }, { term: 'Access', meaning: 'Whatever you would need permission or an introduction to reach: a list of past customers, a room, an hour of somebody’s working day.' }, { term: 'Write-up', meaning: 'The time after a session spent turning notes into something readable. It is usually about as long as the session itself.' }], expect: 'One method per question, with hours, people and access, or an open gap where no method you can run alone would answer it.',
         fields: ['pairing-1', 'pairing-2', 'pairing-3'],
         reveal: { first: 1, group: 1, count: 3, addLabel: 'Add the next pairing', note: 'One at a time, with an honest cost. Three is enough to see the trade.' },
         demo: {
@@ -191,7 +192,7 @@ export const guided05: Record<string, Guided> = {
           uncertainty: 'Still unknown: how common any of this is. No method in the plan can answer that, and the exclusions say so.',
         },
         start: 'Write the hours honestly, including writing up. Sessions take about twice as long as the session itself.',
-        enough: 'Each pairing names how many people it needs and whether you can reach them.' },
+        enough: 'Each pairing names how many people it needs and whether you can reach them, or is marked open gap with what would be needed.' },
       { terms: [{ term: 'Exclusion', meaning: 'A sentence saying what this method will not let you claim, written down before you run it.' }, { term: 'Overclaim', meaning: 'Saying more than your evidence carries, usually by turning a few accounts into a statement about people in general.' }], expect: 'For each pairing, the specific claim it will not license.', fields: ['exclusions'],
         supported: {
           material: 'A supplied pairing from the same made-up study: three interviews about what people did before their last class, chosen to answer “when do people decide what to bring?”',
@@ -340,7 +341,7 @@ export const guided05: Record<string, Guided> = {
       {
         question: 'You spent three hours on desk research and produced twelve pages. What went wrong?',
         options: [
-          { label: 'An unbounded search: desk work is preparation, so it gets a fixed thirty minutes.', correct: true, feedback: 'Existing evidence is cheap and endless. The bound is what keeps it from replacing the work of talking to someone.', was: ['The step is bounded at thirty minutes because it is preparation, not the study.'] },
+          { label: 'It ignored the bound: here desk work is time-boxed so it informs the study, not replaces it.', correct: true, feedback: 'Existing evidence is cheap and endless. In this exercise the thirty-minute bound is what keeps it from replacing the work of talking to someone; professional desk research can run longer, and it still needs a bound set in advance.', was: ['The step is bounded at thirty minutes because it is preparation, not the study.', 'An unbounded search: desk work is preparation, so it gets a fixed thirty minutes.'] },
           { label: 'Nothing serious: thorough background now saves time in every session that follows.', feedback: 'It delays the study and produces material nobody will reread, including you. Background has diminishing returns long before three hours.', was: ['Nothing: more background is always better.'] },
           { label: 'The length: twelve pages is fine to collect, but it should be cut to one page.', feedback: 'Cutting treats the symptom. The hours and the pages follow from the same cause: a search with no bound.', was: ['The problem is the page count, not the time.'] },
         ],
@@ -394,14 +395,14 @@ export const guided05: Record<string, Guided> = {
         { id: 'incentive', label: 'What you will offer, and why that amount', kind: 'short', hint: 'Or why nothing, and what that changes about who says yes.' },
       ] },
       { id: 'miss', title: 'Who you will miss', fields: [
-        { id: 'excluded', label: 'The sentence that will appear in your report about who this route systematically excludes', kind: 'long', example: 'Example (made up): recruited through the studio’s own mailing list, so everyone had already booked successfully at least once; people who gave up before booking are absent.' },
+        { id: 'excluded', label: 'The sentence that will appear in your report about who this route systematically excludes', kind: 'long', example: 'Example (made up): recruited through one café noticeboard on weekday mornings, so people who work office hours are absent; they may prepare differently.' },
         { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
       ] },
     ],
     guide: [
       { terms: [{ term: 'Lead time', meaning: 'The number of days between asking for people and having them booked in. Counted from today, including the days when nobody replies.' }, { term: 'Accommodation', meaning: 'A change you make so that somebody can take part: a different time, a phone call instead of video, longer to answer a question.' }], expect: 'The lead times and accommodations the guidance states.', fields: ['lead-times'],
         start: 'Read the assigned page and write the numbers down rather than remembering them.',
-        enough: 'You have at least one lead time in days.' },
+        enough: 'You recorded at least one lead time, in weeks or months, with the group it applies to.' },
       { expect: 'Two or three things a participant must have recently done, and why recency matters.',
         fields: ['criteria', 'why-recent'],
         terms: [{ term: 'Screening criterion', meaning: 'A recent behaviour that makes someone’s account relevant. Age, job and gender are almost never criteria.' }],
@@ -432,12 +433,12 @@ export const guided05: Record<string, Guided> = {
       { terms: [{ term: 'Systematic exclusion', meaning: 'A group your route could never reach, absent for a reason rather than by chance.' }, { term: 'Convenience sample', meaning: 'People recruited because they were easy for you to reach rather than because they were the right people to ask.' }], expect: 'The sentence about who your route excludes, and the repair the Check questions asked for.',
         fields: ['excluded', 'improvement-made'],
         supported: {
-          material: 'A supplied plan from the same made-up study: recruit three people from the studio’s mailing list of past attendees.',
+          material: 'A supplied plan from the same made-up class-preparation study, which asks how people find out what to bring: recruit three people by emailing the studio’s mailing list of past attendees. The studio also sends its materials list by email.',
           question: 'Which exclusion sentence is the useful one?',
           options: [
-            { label: 'All had booked before, so people who abandoned a booking are absent from the study.', correct: true, feedback: 'It names a specific group whose absence changes what the findings can mean, which is precisely the risk with a list of past customers.', was: ['Everyone recruited had already booked successfully at least once, so people who abandoned booking are absent from the study.'] },
+            { label: 'All had booked before, so people who abandoned a booking are absent from the study.', feedback: 'A real exclusion, and less central to a study about preparing for a class: people who never booked never had to prepare. The larger gap is who never reads the emails that carry the list.', was: ['Everyone recruited had already booked successfully at least once, so people who abandoned booking are absent from the study.'] },
             { label: 'Three people is a small, statistically unrepresentative sample of past attendees.', feedback: 'That holds for every study this size and names nobody. The useful version says who is missing and why that matters.', was: ['The sample is small and not statistically representative.'] },
-            { label: 'People without an email address, or who never open the studio’s emails, are excluded.', feedback: 'A real exclusion, and a minor one here compared with the fact that everyone already succeeded at the task you are studying.', was: ['People without email are excluded.'] },
+            { label: 'Recruiting by email misses people who skip the studio’s emails, where the list is sent.', correct: true, feedback: 'It names the group whose absence most weakens a study about getting information before class: the list travels by email, and the people who skip those emails are the ones this route cannot reach.', was: ['People without email are excluded.', 'People without an email address, or who never open the studio’s emails, are excluded.'] },
           ],
           then: 'Write your own sentence naming a group whose absence would change how the findings should be read.',
         },
@@ -508,7 +509,7 @@ export const guided05: Record<string, Guided> = {
         { id: 'delete-when', label: 'When it is deleted, and how one person’s data could be removed on request', kind: 'long', hint: 'If you cannot remove one person’s data, say so and change how you store it. Include any summary of theirs typed into this course.' },
       ] },
       { id: 'hard', title: 'The hard moments', fields: [
-        { id: 'hard-moments', label: 'What you will say if they ask to see the notes, refuse recording, go quiet, or say something upsetting', kind: 'long' },
+        { id: 'hard-moments', label: 'What you will say if they ask to see the notes, refuse recording, go quiet, or withdraw two weeks later', kind: 'long' },
       ] },
       { id: 'jurisdiction', title: 'Where this guidance comes from', fields: [
         { id: 'jurisdiction', label: 'One line stating the guidance is UK-based and that Indian requirements are not verified here', kind: 'short' },
@@ -527,7 +528,7 @@ export const guided05: Record<string, Guided> = {
           beats: [
             { label: 'My first version', text: 'Four sentences of careful phrasing about data controllers, lawful basis and retention periods. Accurate and about ninety seconds.' },
             { label: 'What happened when I read it aloud', text: 'It sounded like a form being read at someone. The person would agree to end it, which is not consent.' },
-            { label: 'What I kept', text: 'I am practising research for a course. Twenty minutes. I take notes on paper and keep them privately; no recording unless you say yes. If you agree, I type a short summary with no name or identifying details into my course app, which is stored online where my course reviewer reads it. Skip anything, stop any time, and I will delete your part.' },
+            { label: 'What I kept', text: 'I am practising research for a course. Twenty minutes. I take notes on paper and keep them privately; no recording unless you say yes. If you agree, I type a short summary with no name or identifying details into my course app, which is stored online where my course reviewer reads it. I delete my notes by the end of next month. Skip anything, stop any time, and I will delete your part.' },
             { label: 'What I cut', text: 'The legal vocabulary. It protected me rather than informing them, and it was the part that made the whole thing unlistenable.' },
             { label: 'What I nearly cut', text: 'The sentence about the course app. It felt like an awkward detail, and it is the one thing they could not have guessed: their words reach a second reader online.' },
           ],
@@ -623,13 +624,14 @@ export const guided05: Record<string, Guided> = {
         { id: 'session-status', label: 'What actually happened', kind: 'choice', options: ['A consented interview took place', 'Rehearsal only: no participant available'], hint: 'Rehearsal is the default route and a complete answer. Choose the first option only if a real adult agreed under your Lesson 5 consent and data plan.' },
         { id: 'said', label: 'Said · after a consented interview only: a de-identified summary of their words (a code such as P1, no names or identifying details)', kind: 'long', sensitive: true, hint: 'Raw notes and exact quotations stay in your private file. Leave this empty on the rehearsal route.' },
         { id: 'inferred', label: 'Inferred · your reading of what was said, kept apart from their words (rehearsal: the wording in your guide that could lead an answer)', kind: 'long', sensitive: true },
-        { id: 'follow-up', label: 'Follow up · what you would ask next time', kind: 'long', sensitive: true, hint: 'After a real interview, refer to the person only by code. For rehearsal, the question you would add or rephrase.' },
+        { id: 'follow-up', label: 'Follow up · what you would ask next time', kind: 'long', sensitive: true, hint: 'After a real interview, refer to the person only by code. For rehearsal, the question you would add or rephrase, plus a dated access note: today’s date and what access to a participant was missing.' },
         { id: 'reconstructed', label: 'Anything you wrote from memory rather than at the time', kind: 'short', sensitive: true, hint: 'Mark it. Reconstruction is normal and it is weaker evidence.' },
       ] },
       { id: 'revise', title: 'Revising the guide', fields: [
         { id: 'worked', label: 'The three questions that worked', kind: 'long' },
         { id: 'failed', label: 'The one that failed, and why', kind: 'long' },
         { id: 'wish-asked', label: 'What you wish you had asked', kind: 'short', hint: 'The topic or question, with no details about the person. For rehearsal, what reading the guide aloud showed was missing.' },
+        { id: 'revised-guide', label: 'The revised guide, with a reason beside each change and each question kept unchanged', kind: 'long', optional: true, hint: 'Your first version stays in step 1. Write the questions only, never what anyone answered.' },
         { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
       ] },
     ],
@@ -673,7 +675,7 @@ export const guided05: Record<string, Guided> = {
         },
         start: 'Look for the answers that were short and agreeable, or, in rehearsal, the questions you could hear steering; the question before each is usually the failure.',
         enough: 'The failed question is named and rewritten.' },
-      { terms: [{ term: 'Revised guide', meaning: 'The version you would use next time, changed by what happened in the session or rehearsal rather than by rethinking it at your desk.' }, { term: 'Repair', meaning: 'The specific fix a Check question asks for, made in the step it names rather than noted as an intention.' }], expect: 'The revised guide and the repair the Check questions asked for.', fields: ['improvement-made'],
+      { terms: [{ term: 'Revised guide', meaning: 'The version you would use next time, changed by what happened in the session or rehearsal rather than by rethinking it at your desk.' }, { term: 'Repair', meaning: 'The specific fix a Check question asks for, made in the step it names rather than noted as an intention.' }], expect: 'The revised guide and the repair the Check questions asked for.', fields: ['revised-guide', 'improvement-made'],
         start: 'Update the guide now, while you remember what happened.',
         enough: 'Each change has a reason from the session or rehearsal, and any question you kept unchanged has a reason too.' },
     ],
@@ -856,13 +858,14 @@ export const guided05: Record<string, Guided> = {
         { id: 'entry-template', label: 'No more than four short prompts, in a medium they already use', kind: 'long', hint: 'A text message, a note app, a photo. Not a new tool they must install.', example: 'Example (made up): What did you do? Where were you? What did you need to know? Anything that got in the way?' },
       ] },
       { id: 'protocol', title: 'The protocol', fields: [
-        { id: 'duration-schedule', label: 'Duration, prompt schedule, and what you send on day one', kind: 'long' },
-        { id: 'burden', label: 'Your honest burden estimate, in minutes per day', kind: 'short', hint: 'Then double it. Diary studies usually cost the participant more than the designer expects.' },
+        { id: 'duration-schedule', label: 'Duration, prompt schedule, what you send on day one, and how your consent introduction covers contact over several days', kind: 'long', hint: 'Extend your Lesson 5 introduction: say how many days, how often you will message, and that they can stop on any day.' },
+        { id: 'burden', label: 'Your honest burden estimate, in minutes per day, and what you offer for that time (or why nothing)', kind: 'short', hint: 'Then double it. Diary studies usually cost the participant more than the designer expects. If you cannot offer anything, ask for less.' },
       ] },
-      { id: 'dropout', title: 'When it goes quiet', fields: [
+      { id: 'dropout', title: 'When it goes quiet, and how it closes', fields: [
         { id: 'minimum-data', label: 'Your minimum acceptable data', kind: 'short' },
-        { id: 'silence-response', label: 'What you do after two days of silence', kind: 'short', hint: 'One reminder, then stop. Chasing is pressure.' },
+        { id: 'silence-response', label: 'What you do after two days of silence, and if they withdraw mid-week (including deleting their entries)', kind: 'short', hint: 'One reminder, then stop. Chasing is pressure. Withdrawal means their entries are deleted, not set aside.' },
         { id: 'late-entries', label: 'Your rule for late or reconstructed entries', kind: 'short' },
+        { id: 'closing-plan', label: 'How you will read the entries first and build the closing conversation from them, with one example question shape', kind: 'long', optional: true, hint: 'A question shape, not a question: “on Tuesday you wrote …, what was happening?”. Write the real questions only after reading real entries; on the gap route there are none.' },
       ] },
       { id: 'run', title: 'Run it, or record the gap', fields: [
         { id: 'run-status', label: 'What happened', kind: 'choice', options: ['A participant consented and day one has been sent', 'No participant: protocol submitted with a dated gap'], hint: 'The protocol with a dated gap is the default and a complete answer. Choose the first option only if a real adult agreed under your Lesson 5 consent and data plan.' },
@@ -891,12 +894,12 @@ export const guided05: Record<string, Guided> = {
         },
         start: 'Fill in your own template once and time yourself, then cut it.',
         enough: 'The medium is something they already use every day.' },
-      { terms: [{ term: 'Protocol', meaning: 'The written plan for the study: how long it runs, when prompts go out, what you send on the first day, and what you are asking of the participant.' }, { term: 'Day-one message', meaning: 'The first message a participant receives. It sets the tone, so write it out in full before anyone has agreed to anything.' }, { term: 'Burden', meaning: 'What the study costs the participant in time and attention, counted in minutes per day. Estimate it, then double it, because you know what your own prompts mean and they do not.' }], expect: 'Duration, schedule, day-one message and an honest burden estimate.',
+      { terms: [{ term: 'Protocol', meaning: 'The written plan for the study: how long it runs, when prompts go out, what you send on the first day, and what you are asking of the participant.' }, { term: 'Day-one message', meaning: 'The first message a participant receives. It sets the tone, so write it out in full before anyone has agreed to anything.' }, { term: 'Burden', meaning: 'What the study costs the participant in time and attention, counted in minutes per day. Estimate it, then double it, because you know what your own prompts mean and they do not.' }], expect: 'Duration, schedule, day-one message, consent that covers several days, an honest burden estimate and what you offer for it.',
         fields: ['duration-schedule', 'burden'],
         start: 'Write the day-one message as you would actually send it.',
         enough: 'The burden estimate is per day and you have doubled your first guess.' },
-      { terms: [{ term: 'Dropout', meaning: 'A participant stopping partway through. It is ordinary, it is not a failure on their part, and the plan should assume it will happen.' }, { term: 'Minimum data', meaning: 'The smallest amount you decided in advance would still be worth having. Setting it early is what stops you chasing entries you do not need.' }, { term: 'Late entry', meaning: 'An entry written some time after the event rather than at it. Mark it, because it is memory, and memory smooths.' }], expect: 'Minimum data, a response to silence, and a rule for late entries.',
-        fields: ['minimum-data', 'silence-response', 'late-entries'],
+      { terms: [{ term: 'Dropout', meaning: 'A participant stopping partway through. It is ordinary, it is not a failure on their part, and the plan should assume it will happen.' }, { term: 'Minimum data', meaning: 'The smallest amount you decided in advance would still be worth having. Setting it early is what stops you chasing entries you do not need.' }, { term: 'Late entry', meaning: 'An entry written some time after the event rather than at it. Mark it, because it is memory, and memory smooths.' }], expect: 'Minimum data, responses to silence and to withdrawal, a rule for late entries, and a plan for the closing conversation.',
+        fields: ['minimum-data', 'silence-response', 'late-entries', 'closing-plan'],
         supported: {
           material: 'A supplied situation from the same made-up study: the participant logs on days one and two, then nothing for three days.',
           question: 'What is the best response?',
@@ -972,6 +975,7 @@ export const guided05: Record<string, Guided> = {
         ...[1, 2, 3, 4, 5].map((n) => ({ id: `q-${n}`, label: `Question ${n} · and what you would do with the answer`, kind: 'long' as const,
           ...(n === 1 ? { hint: 'If you cannot say what you would do differently, cut it.' } : {}),
           ...(n === 5 ? { hint: 'If cutting left you with fewer questions, write here which question you cut and why; that is a complete answer.' } : {}) })),
+        { id: 'q-more', label: 'Questions 6 to 8 · only if your survey needs them, each with what you would do with the answer', kind: 'long', optional: true, hint: 'Eight is the most, not the target. Leave this empty if five or fewer survived the cut.' },
       ] },
       { id: 'review', title: 'Wording review', fields: [
         { id: 'wording-fixes', label: 'What you changed: leading language, predictions, double-barrelled questions, assumed knowledge', kind: 'long' },
@@ -991,8 +995,8 @@ export const guided05: Record<string, Guided> = {
         start: 'Read both assigned articles and write the four you most often break.',
         enough: 'You named an interval’s purpose without needing a formula.' },
       { terms: [{ term: 'Questionnaire', meaning: 'The set of questions itself, as distinct from the survey, which is the whole exercise of sending it out and reading what comes back.' }, { term: 'Demographic question', meaning: 'A question about who somebody is rather than what they did: age, role, how long they have been coming. Worth asking only if you would act differently depending on the answer.' }, { term: 'Completion', meaning: 'Whether people reach the end. Every question you add costs some of it, which is why cutting is design rather than tidying.' }], expect: 'At most eight questions, each with what you would do with the answer.',
-        fields: ['q-1', 'q-2', 'q-3', 'q-4', 'q-5'],
-        reveal: { first: 2, group: 1, count: 5, addLabel: 'Add another question', note: 'One at a time. Anything you would not act on gets cut here rather than later.' },
+        fields: ['q-1', 'q-2', 'q-3', 'q-4', 'q-5', 'q-more'],
+        reveal: { first: 2, group: 1, count: 6, addLabel: 'Add another question', note: 'One at a time. Anything you would not act on gets cut here rather than later.' },
         demo: {
           scenario: 'Made-up example. Drafting a survey and cutting it in half.',
           beats: [
@@ -1093,7 +1097,7 @@ export const guided05: Record<string, Guided> = {
       { id: 'findings', title: 'Findings with their evidence', intro: 'At most seven. One at a time.', fields: [
         ...[1, 2, 3].map((n) => ({ id: `finding-${n}`, label: `Finding ${n} · the sentence, how many people showed it, the evidence, your confidence, and the decision it informs`, kind: 'long' as const, sensitive: true as const,
           ...(n === 1 ? { example: 'Example (made up): three of three participants looked for the materials list after booking rather than before. Evidence: P1, P2, P3 accounts. Confidence: consistent across all three. Informs: where the list belongs.' } : {}),
-          ...(n === 3 ? { hint: 'A null result counts, such as “none of the six notes mention price”, if the material could have shown it. If only two findings survive the tests, write that here and where the other candidates went; do not pad.' } : {}) })),
+          ...(n === 3 ? { hint: 'A null result counts if the material could have shown it, such as “nobody mentioned the dishwasher” when everyone was asked what is hardest about a shared kitchen. The supplied notes N01–N06 could not show price, so they support no null about it. If only two findings survive the tests, write that here and where the other candidates went; do not pad.' } : {}) })),
       ] },
       { id: 'falsify', title: 'What would make each false', fields: [
         { id: 'falsify', label: 'For each finding: what in the notes would have to be different', kind: 'long' },
@@ -1305,7 +1309,7 @@ export const guided05: Record<string, Guided> = {
       prompt: 'Rewrite the statement so it would survive a redesign, label it evidenced or assumed, and explain your label.',
       anchors: {
         weak: 'Keeps the screen in the statement, or labels it evidenced because it sounds sensible.',
-        adequate: 'Something like “When I plan a laundry trip, I want to know a machine will be free when I arrive, so that I do not waste the journey”, with no screen named, labelled evidenced from the two customers who phoned ahead.',
+        adequate: 'Something like “When I plan a laundry trip, I want to know a machine will be free when I arrive, so that I do not waste the journey”, with no screen named, labelled evidenced for the behaviour (2 of 3 phoned ahead), with the so-that reason marked assumed.',
         strong: 'As adequate, and notes that any emotional success criterion stays assumed unless someone said it, lists other responses the new statement allows (a call-back, a booking slot), and says what would test it.',
       },
     },
@@ -1362,7 +1366,7 @@ export const guided05: Record<string, Guided> = {
       { terms: [{ term: 'Shareable version', meaning: 'The cut-down copy that leaves your desk and gets read without you in the room to explain it.' }, { term: 'Participant numbers', meaning: 'How many people the map was drawn from, and when. Written on the map itself, so it travels with the picture.' }], expect: 'A shareable version that keeps the marks and states participant numbers.',
         fields: ['shareable', 'photo-reference'],
         supported: {
-          material: 'A supplied map from the same made-up study, drawn from three interviews, with a deep dip in the feeling layer at the payment stage.',
+          material: 'A supplied map from the same made-up study, drawn from three interviews, with a deep dip in the feeling layer at the payment stage. No participant described their feelings at payment; the dip is the designer’s reading.',
           question: 'What may the shareable version claim about that dip?',
           options: [
             { label: 'That it is inferred from three accounts and is not, by itself, a priority.', correct: true, feedback: 'Emotional dips are usually inferred, and the lowest point in a booking journey is often something you cannot change, such as parting with money.', was: ['That it is inferred from three accounts, not measured, and that the low point is not automatically where to focus.'] },
@@ -1434,7 +1438,7 @@ export const guided05: Record<string, Guided> = {
       { id: 'findings', title: 'The findings', intro: 'Headline, essential facts, why it matters, evidence. One at a time; cut to what you can support.', fields: [
         ...[1, 2, 3].map((n) => ({ id: `report-${n}`, label: `Finding ${n} · headline, facts, why it matters, evidence`, kind: 'long' as const, sensitive: true as const,
           ...(n === 1 ? { hint: 'The headline is the finding itself, not a topic.', example: 'Example (made up): Headline — people look for the materials list after booking, not before. Facts — three of three did this. Why it matters — the list is on a page they have already left. Evidence — P1, P2, P3.' } : {}),
-          ...(n === 3 ? { hint: 'A clean result is a finding when its count is stated, such as “none of the six had trouble finding the date”. If only two findings can be supported, write that here; do not pad.' } : {}) })),
+          ...(n === 3 ? { hint: 'A clean result is a finding when its count is stated and the material could have shown the problem, such as “none of the five had difficulty booking a room” in a study that watched each of them book. The supplied notes N01–N06 say nothing about dates or booking difficulty, so they support no such clean result. If only two findings can be supported, write that here; do not pad.' } : {}) })),
       ] },
       { id: 'limits', title: 'Limitations', fields: [
         { id: 'limitations', label: 'Who took part, the recruitment route, exclusions, numbers, period, and what the study cannot say', kind: 'long', sensitive: true, hint: 'Describe who took part as a group (how many, how found, when), never person by person. For the supplied notes, say they are made-up training material.' },
@@ -1475,7 +1479,7 @@ export const guided05: Record<string, Guided> = {
       { terms: [{ term: 'Recommendation', meaning: 'One next step, small enough to act on, tied to a finding you actually wrote down.' }, { term: 'Not-to-do', meaning: 'One thing your evidence says to hold off, usually something somebody was about to build on a belief this study did not support.' }], expect: 'One recommendation tied to a finding, and one thing not to do.',
         fields: ['recommendation', 'not-to-do'],
         supported: {
-          material: 'A supplied pair from the same made-up study. A: “Improve the booking experience.” B: “Show the materials list on the confirmation screen, because all three participants looked for it after booking; do not build the reminder email yet, since nobody in this study mentioned email at all.”',
+          material: 'A supplied pair from the same made-up study. A: “Improve the booking experience.” B: “Show the materials list on the confirmation screen, because all three participants looked for it after booking; do not build the reminder email yet, since all three went looking for the list themselves, so forgetting was not the problem.”',
           question: 'Why is B usable?',
           options: [
             { label: 'It ties one action to a finding and holds off a build the evidence does not support.', correct: true, feedback: 'A recommendation that also says what not to do is more useful, because it protects the team from acting on the assumption the study did not test.', was: ['It names one action tied to a stated finding, and it stops a build that this evidence does not support.'] },

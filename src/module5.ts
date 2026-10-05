@@ -145,7 +145,7 @@ export const module5: Lesson[] = [
       {
         minutes: 30,
         title: "Attach a decision to each",
-        text: "Beside every question write the decision it would change and what you would do if the answer were the opposite of your expectation. Mark any line where both answers lead to the same action.",
+        text: "On paper or in your own file, write beside every question on your list the decision it would change and what you would do if the answer were the opposite of your expectation; mark any line where both answers lead to the same action. In the boxes here, enter the three to five that survive, each with its decision.",
       },
       {
         minutes: 30,
@@ -282,7 +282,7 @@ export const module5: Lesson[] = [
     areas: [4],
     title: "Choose a method that can actually answer it",
     objective:
-      "Pair each of your top three research questions with one method you could genuinely run alone with what you have now, state for each pairing the specific claim that method will not license you to make, and record any further question as not-run or as an open gap.",
+      "Pair each of your top three research questions with one method you could genuinely run alone with what you have now, or record it as an open gap when no such method exists, state for each pairing the specific claim that method will not license you to make, and record any further question as not-run or as an open gap.",
     bringForward:
       "The three to five ranked questions with their decisions and closure evidence from the previous lesson.",
     why: "Most first studies use the method the researcher is most comfortable with and then stretch its results to cover questions it never touched. Choosing badly is recoverable; not knowing what your method excluded is what produces a confident wrong recommendation.",
@@ -310,7 +310,7 @@ export const module5: Lesson[] = [
       {
         minutes: 30,
         title: "Pair and cost",
-        text: "Assign one method to each of your top three questions. Beside each write what it will cost you in hours, how many people it needs, and what has to be true for it to happen at all — access, consent, a device, a quiet room. A fourth or fifth question you cannot pair yet goes on the not-run list in the last step.",
+        text: "Assign one method to each of your top three questions; where no method you could run alone would answer one, write “open gap” and what would be needed instead. Beside each method write what it will cost you in hours, how many people it needs, and what has to be true for it to happen at all — access, consent, a device, a quiet room. A fourth or fifth question you cannot pair yet goes on the not-run list in the last step.",
       },
       {
         minutes: 25,
@@ -326,7 +326,7 @@ export const module5: Lesson[] = [
     freeToolPath:
       "A five-row table on paper or in a text file: question, kind, method, cost, cannot-tell-me. No research platform, scheduling tool or transcript service is involved anywhere in this module; everything is doable with a notebook, a phone and consent.",
     deliverable:
-      "A method plan pairing each of your top three questions with one method, its cost and access conditions, and an explicit exclusion sentence per pairing, plus a not-run list holding any further questions and those left unanswerable, with reasons.",
+      "A method plan pairing each of your top three questions with one method (or recording it as an open gap), its cost and access conditions, and an explicit exclusion sentence per pairing, plus a not-run list holding any further questions and those left unanswerable, with reasons.",
     check: [
       {
         question:
@@ -376,7 +376,7 @@ export const module5: Lesson[] = [
         levels: [
           "Methods named with no cost or access conditions.",
           "Costs stated but the plan assumes resources you do not have — a recruiter, a lab, analytics on someone else's product.",
-          "Each method is one you could run alone with what you have now, with cost and access conditions stated.",
+          "Each method is one you could run alone with what you have now, or the question is recorded as an open gap, with cost and access conditions stated.",
           "As adequate, and one choice is justified against a method you rejected, naming what the rejected one would have added.",
         ],
         remediation:
@@ -455,7 +455,7 @@ export const module5: Lesson[] = [
     why: "Asking six people something you could have read in an afternoon is a poor use of the only scarce resource you have, which is other people's willingness to help you. Desk work also tells you which questions are already answered well enough, so the sessions you do run can go somewhere new.",
     teach: [
       "Existing evidence is wider than it looks. Public reviews and store ratings, support pages and their frequently-asked lists, community forum threads, published reports, the product's own help documentation, and anything the organisation already holds — old research, complaint logs, support transcripts — all describe real people meeting a real service. None of it was collected for your question, which is exactly its weakness: you inherit whoever chose to write, which is disproportionately the very angry and the very pleased. Treat it as a source of hypotheses and vocabulary, not of proportions.",
-      "A competitive review is two different activities that are often confused. An expert review is you working through a rival product yourself against explicit criteria; a competitive test is people attempting the same task on two or more products while you watch. The first is fast and costs nothing but is limited by your own expertise and blind spots; the second costs sessions but tells you where real people diverge. Both are usability comparisons. Neither tells you anything about market position, pricing or why the company is winning, and the reading assigned here says so itself.",
+      "A competitive review is two different activities that are often confused. An expert review is you working through a rival product yourself against explicit criteria; a competitive test is people attempting the same task on two or more products while you watch. The first is fast and costs nothing but is limited by your own expertise and blind spots; the second costs sessions but tells you where real people diverge. Both are usability comparisons. Neither tells you anything about market position, pricing or why the company is winning. The assigned article does not say this — it describes the method only as a usability comparison — so treat this limit as the course's, not the article's.",
       "Choose comparators by task, not by brand. The useful comparison for a workshop booking is anything where a person commits money to attend something at a fixed time and place — a clinic appointment, a cinema seat, a train ticket — not merely other workshop companies. Comparing against the market leader in your own category tends to produce imitation; comparing against the best solution to the same underlying task tends to produce ideas, because you are looking at people who solved your problem under different constraints.",
       "Record every source with its URL and the date you retrieved it, and quote sparingly in your own file rather than copying pages. Links rot faster than you expect: this course's own catalog attempted eight job listings on one day and six had already expired. A finding whose source you can no longer produce is not evidence you can defend six months later in a portfolio review, which is exactly when someone will ask.",
     ],
@@ -467,7 +467,7 @@ export const module5: Lesson[] = [
       {
         minutes: 25,
         title: "Read the competitive method",
-        text: "Read the assigned article. Note the difference between a competitive review and a competitive test, and copy down its statement of what competitive evaluation does not address.",
+        text: "Read the assigned article. Note the difference between a competitive review and a competitive test, and write in your own words what neither can tell you; the article itself lists no such limits.",
       },
       {
         minutes: 30,
@@ -511,7 +511,7 @@ export const module5: Lesson[] = [
         question:
           "A competitor's flow is clearly better on your task. Is that a finding about their product's success?",
         answer:
-          "No. You have an observation about one task in one flow, made by you. The assigned article is explicit that competitive usability evaluation says nothing about market position, pricing or business performance, and their success may rest on things you cannot see.",
+          "No. You have an observation about one task in one flow, made by you. The assigned article describes competitive evaluation only as a usability comparison, which gives no basis for claims about market position, pricing or business performance, and their success may rest on things you cannot see.",
       },
     ],
     rubric: [
@@ -566,16 +566,16 @@ export const module5: Lesson[] = [
       {
         criterion: "The write-up separates hypotheses from established facts",
         evidence:
-          "Two clearly distinguished lists: what you now believe and would check with people, and what the desk work actually established.",
+          "Two clearly distinguished parts: the hypothesis list, holding what you now believe and would check with people, and the dated desk note and task records, holding only what the desk work actually established.",
         levels: [
           "Impressions written as findings.",
           "Some hedging language, but no separation of the two kinds of statement.",
-          "Hypotheses and established facts are in separate, labelled lists.",
+          "Hypotheses sit in their own labelled list, and the desk note and task records hold only established, sourced facts.",
           "As adequate, and each hypothesis names the method from your plan that would test it.",
         ],
         remediation:
           "Go through the note sentence by sentence and mark each as observed, inferred or assumed, using the same three-way split you learned in Module 1. Move the inferred and assumed sentences into the hypothesis list.",
-        recheck: "The two labelled lists.",
+        recheck: "The hypothesis list and the corrected desk note.",
       },
     ],
     portfolio:
@@ -587,10 +587,10 @@ export const module5: Lesson[] = [
         section:
           "The whole article, concentrating on defining which competitors to analyse, the difference between competitive reviews and competitive testing, and turning findings into decisions.",
         purpose:
-          "Supplies a repeatable comparison method and the explicit boundary that keeps a usability comparison from becoming a market claim.",
+          "Supplies a repeatable comparison method. The boundary that keeps a usability comparison from becoming a market claim comes from this lesson, not from the article.",
         minutes: "20–30",
         limits:
-          "Free reading, no account. Verified 2026-09-06; published 5 January 2024. The article itself excludes market positioning, pricing and business analysis, so no strategy conclusion may rest on this lesson.",
+          "Free reading, no account. Verified 2026-09-06; published 5 January 2024; scope rechecked 2026-10-05. The article treats competitive evaluation only as a usability comparison and states no limits about market positioning, pricing or business analysis; that boundary is this course's own, and no strategy conclusion may rest on this lesson.",
         fallbackId: "R02",
       },
       {
@@ -622,8 +622,8 @@ export const module5: Lesson[] = [
     teach: [
       "Recruit for experience, not for demographics. The criterion that matters is usually something a person has recently done — booked a paid class in the last two months, tried and abandoned a booking, booked a place for someone else — because that is what makes their memory usable. Age, gender and city belong in the record for context and for noticing who is absent, but a screener built from demographics alone selects people who look varied and may all be strangers to the task you are studying. Recruit adults only, about an everyday task: do not recruit children or under-18s, people chosen because of a health condition, or anyone who may not be able to give informed consent for themselves, without qualified ethical review this course cannot provide.",
       "A screener must not teach the answer. “Have you ever been frustrated by not knowing what to bring to a class?” tells the reader what you hope to hear and recruits people willing to agree with you. “Think about the last paid class or workshop you attended or considered. What did you do in the week before it?” selects on experience and leaves the finding open. Ask about what happened, in the past, in their words, and screen on the presence of the experience rather than on the presence of an opinion.",
-      "Plan for real lead times and for who cannot come. The assigned page reports that professional recruitment typically takes about ten days and that recruiting disabled participants can take up to a month, with six to eight weeks advised where cognitive disabilities are involved. You have no agency, so your route is your own network, community groups, a notice in a place where the relevant people already are, or asking a small business owner to introduce you. Every one of those routes has a shape: your network shares your language, your education and often your income band, and a WhatsApp group of parents at one school is not the parents of that city.",
-      "Compensate people for their time, and be honest about what you can offer. The guidance is clear that public participants should receive something for their time, and equally clear that it gives no amounts, because they depend entirely on context. Where you genuinely cannot pay, say so before the session rather than after, keep the session short, come to them rather than making them travel, and do not repeatedly return to the same generous person. A study built on unpaid goodwill is legitimate; a study that hides that it was is not, because the reader cannot then judge who agreed to take part.",
+      "Plan for real lead times and for who cannot come. The assigned page gives no general timescale — for an agency it says to ask how long it will need — but advises allowing up to a month to find disabled participants or assistive-technology users, and contacting organisations at least 6 to 8 weeks ahead for less common cognitive disabilities. You have no agency, so your route is your own network, community groups, a notice in a place where the relevant people already are, or asking a small business owner to introduce you. Every one of those routes has a shape: your network shares your language, your education and often your income band, and a WhatsApp group of parents at one school is not the parents of that city.",
+      "Compensate people for their time, and be honest about what you can offer. The guidance treats an incentive as normal for members of the public and gives no amounts, because they depend entirely on context. Where you genuinely cannot pay, say so before the session rather than after, keep the session short, come to them rather than making them travel, and do not repeatedly return to the same generous person. A study built on unpaid goodwill is legitimate; a study that hides that it was is not, because the reader cannot then judge who agreed to take part.",
     ],
     misconception:
       "“Friends and family will do for a first study.” They will, for practice, and they are the wrong evidence for a decision — they know you, they want to be helpful, they will soften criticism, and they share more of your assumptions than a stranger would. The move is not to refuse them; it is to use them for rehearsal, mark every finding from them as such, and record in the report that the sample was convenience-recruited from the researcher's own network.",
@@ -753,10 +753,10 @@ export const module5: Lesson[] = [
         section:
           "The sections on defining recruitment criteria, recruiting disabled participants and their lead times, and incentives.",
         purpose:
-          "Supplies realistic lead times, accommodation requirements and the rule that people are compensated for their time.",
+          "Supplies the lead times it gives for disabled and assistive-technology participants, accommodation requirements, and the norm that people get an incentive for their time.",
         minutes: "20–30",
         limits:
-          "Free reading, no account. Verified 2026-09-06; last updated 28 April 2020. Written for UK government teams with agencies and budgets, and it gives no incentive amounts. Your route is your own network and community, which is legitimate and must be declared.",
+          "Free reading, no account. Verified 2026-09-06; last updated 28 April 2020; timescales rechecked 2026-10-05. Written for UK government teams with agencies and budgets; it gives no general recruitment timescale and no incentive amounts. Your route is your own network and community, which is legitimate and must be declared.",
         fallbackId: "R08",
       },
       {
@@ -794,7 +794,7 @@ export const module5: Lesson[] = [
     misconception:
       "“It is only a small study with people I know, so consent is overkill.” The size of the study is irrelevant to the person in it, and knowing you makes it harder for them to refuse, not easier. Familiarity raises the standard: say explicitly that they can stop, that you will not be offended, and that nothing will be attributed to them by name — and be honest that leaving out a name does not stop people who know them from recognising them.",
     example:
-      "A made-up one-minute spoken introduction that works: “Thanks for doing this. I am learning product design, and I am trying to understand how people book paid classes — I am not testing you, and there are no wrong answers. It will take about thirty minutes. I would like to write notes, and, separately, to record the audio so I do not have to write while you talk — is that all right? The recording and my notes stay on my own laptop, I am the only person who will hear the recording, and I will delete both within three months. If you agree, I will also type a short summary into the course app I am learning with, with no name and nothing that identifies you; it is stored online and my course reviewer can read it. If you would rather not, it stays on my laptop only. You can skip any question, and you can tell me to stop at any point, including afterwards, and I will delete everything from your session, including that summary. Any questions before we start?” The data plan behind it: audio and raw notes in one folder per participant named P1 to P5 on the researcher's own device; a separate contact list holding names and numbers, deleted at the end of the study; de-identified summaries in the course app only for people who agreed; everything deleted three months after the last session.",
+      "A made-up spoken introduction of about 130 words, under a minute read aloud before their answers: “I am learning product design and trying to understand how people book paid classes. I am not testing you; there are no wrong answers. It takes about thirty minutes. I will take notes and, separately, would like to record the audio — is that all right? Both stay on my own laptop, only I hear the recording, and I delete both within three months. If you agree, I will also type a short summary into my course app, with no name or identifying detail; it is stored online and my course reviewer can read it. Otherwise it stays on my laptop. You can skip any question or stop at any point, even afterwards, and I will delete everything from your session, including that summary. Any questions before we start?” The data plan behind it: audio and raw notes in one folder per participant named P1 to P5 on the researcher's own device; a separate contact list holding names and numbers, deleted at the end of the study; de-identified summaries in the course app only for people who agreed; everything deleted three months after the last session.",
     steps: [
       {
         minutes: 25,
@@ -983,12 +983,12 @@ export const module5: Lesson[] = [
       {
         minutes: 20,
         title: "Write up immediately",
-        text: "Within an hour, complete the three columns in your private file. Mark anything you are reconstructing from memory rather than from a note or recording, because that distinction matters later. Then type only a de-identified summary into the course; after a rehearsal, leave Said empty and record the wording risks instead.",
+        text: "Within an hour, complete the three columns in your private file. Mark anything you are reconstructing from memory rather than from a note or recording, because that distinction matters later. Then type only a de-identified summary into the course; after a rehearsal, leave Said empty and record the wording risks instead. Then write the three questions that worked, the one that failed and why, and the thing you wish you had followed.",
       },
       {
         minutes: 15,
         title: "Revise the guide and pause",
-        text: "Write the three questions that worked, the one that failed and why, and the thing you wish you had followed. Revise the guide for the next session, giving a reason for each change and for any question you keep unchanged. Save both versions.",
+        text: "Using what worked and failed in step 4, revise the guide for the next session, giving a reason for each change and for any question you keep unchanged. Save both versions: the first stays in step 1, the revision goes in this step.",
       },
     ],
     freeToolPath:
@@ -1220,7 +1220,7 @@ export const module5: Lesson[] = [
         criterion:
           "Observations an interview would not have produced are recorded honestly",
         evidence:
-          "After a consented observation: up to three specific observations an interview would not have produced, each with why the person would not have reported it, and an honest statement if there were fewer. On the gap route: no observations at all, the dated gap, and your reasoning on the supplied made-up account.",
+          "After a consented observation: up to three specific observations an interview would not have produced, each with why the person would not have reported it, and an honest statement if there were fewer. On the gap route: no observations at all, the dated gap, and your answer to the supplied made-up account in step 4's Try-it question (the write-up you judged worth keeping).",
         levels: [
           "The record repeats what interviews already established, or contains invented observations.",
           "Novel observations without reasoning about why they were unreported, or padding to reach three.",
@@ -1621,7 +1621,7 @@ export const module5: Lesson[] = [
     teach: [
       "Work upward in three separable layers, which is the discipline the assigned page is built on. An observation is what happened or was said. An interpretation is what you think it means. A decision is what should change as a result. Keeping them apart lets someone else disagree with your interpretation without disputing your observation, which is precisely what a good reviewer will want to do, and it is why the three-column notes from the interview lesson matter now.",
       "Group observations, but watch where the groups come from. Bringing your existing categories to the notes and sorting into them will produce the categories you brought. The alternative is to lay out individual observations, put together the ones that seem to belong, and only then name the group from what is in it — and to notice when a group is named after a solution rather than a pattern. A group called “needs a reminder feature” is not a finding; a group called “people check with someone else before paying” is.",
-      "Count people, not incidents. One talkative participant who mentioned the same difficulty five times is one person, and writing “mentioned five times” quietly turns them into five. Beside each finding write the number of participants who showed it and the total, and keep the single-participant findings: a severe problem seen once is worth acting on, provided you write it as one person's severe problem rather than as a pattern. Zero is a count too: “none of the six notes mention the price” is an honest null finding, provided the material could have shown it, and so is a problem everyone expected that did not appear.",
+      "Count people, not incidents. One talkative participant who mentioned the same difficulty five times is one person, and writing “mentioned five times” quietly turns them into five. Beside each finding write the number of participants who showed it and the total, and keep the single-participant findings: a severe problem seen once is worth acting on, provided you write it as one person's severe problem rather than as a pattern. Zero is a count too: “none of the six notes mention the price” is an honest null finding, provided the material could have shown it, and so is a problem everyone expected that did not appear. The supplied notes N01–N06 record only actions about materials, so they could not have shown price and cannot support that null; with them, report what they can show, such as “2 of 6 went to the confirmation email (N02, N05)”.",
       "Contradictions are findings. When two participants did opposite things, the honest record keeps both and asks what differed between them — device, experience, who else was involved, whether they had done it before. Resolving a contradiction by dropping the inconvenient half is the most common way a small study becomes wrong, and it is invisible in the final report, which is what makes it dangerous.",
     ],
     misconception:
@@ -1964,14 +1964,9 @@ export const module5: Lesson[] = [
       "A workshop journey mapped in seven stages: hears about it from a friend (reported), looks it up on a phone (observed), tries to work out the total commitment (observed), checks with a family member (reported by three participants, observed once), pays (observed), waits for confirmation (observed, the longest stage and the emotional low point), and shows proof to the person they came with (observed once, and previously invisible to the team). Two stages between “checks with a family member” and “pays” were marked assumed, since nobody described how the decision came back, and that gap became the first question of the next research round. The shared version kept all three marks and one sentence: five participants, one city, one week.",
     steps: [
       {
-        minutes: 25,
-        title: "Read and prepare",
-        text: "Read the assigned page. Lay out your findings, notes and quotations where you can see them all; the map is built from these and from nothing else.",
-      },
-      {
-        minutes: 25,
-        title: "Set the stages",
-        text: "Write the stages people actually pass through, starting before the product and ending after it. Use their language for the stage names. Do not place anything else yet.",
+        minutes: 40,
+        title: "Read, prepare and set the stages",
+        text: "Read the assigned page. Lay out your findings, notes and quotations, or the supplied notes N01 to N06, where you can see them all; the map is built from these and from nothing else. Then write the stages people actually pass through, starting before the product and ending after it. Use their language for the stage names. Do not place anything else yet.",
       },
       {
         minutes: 35,
@@ -1985,8 +1980,13 @@ export const module5: Lesson[] = [
       },
       {
         minutes: 15,
-        title: "Make the shareable version and pause",
-        text: "Produce a simplified version that keeps the evidence marks and adds one line stating participants, place and period. Save both versions.",
+        title: "Make the shareable version",
+        text: "Produce a simplified version that keeps the evidence marks and adds one line stating participants, place and period. Note where the full map lives.",
+      },
+      {
+        minutes: 10,
+        title: "Check, repair and pause",
+        text: "Check that nothing in the shareable version claims more than the marks allow, make the repair the Check questions ask for, and save both versions.",
       },
     ],
     freeToolPath:
