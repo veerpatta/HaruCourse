@@ -26,6 +26,8 @@ const practiceTracker: string[] = [
   'TL-06 · Question · Severity: unknown until answered · Evidence: the whole card is tappable in the build; the design shows only the button as tappable, and no decision record says which was intended · Status: asked of the engineer and the designer · Annotation: it could be a defect or an improvement, so the honest label until somebody answers is question.',
   'TL-07 · Defect · Severity: at risk of losing something · Evidence: a failed submission clears everything the person typed; no story criterion mentions it, and the baseline says no screen may lose typed input · Status: open, high · Annotation: like TL-02, actionable without an old criterion because it breaks the agreed baseline. A criterion is added for the next story.',
   'TL-08 · Defect · Severity: at risk of losing something · Evidence: on a 360-pixel phone with a slow connection, the price overlaps the Reserve button while the image loads; C4 says the layout reserves image space · Status: open, high · Annotation: it quotes C4 and states its conditions, so somebody else can reproduce and fix it without a conversation.',
+  'TL-09 · Pass · C1 · Evidence: the review screen reads “Place held until 14:32”.',
+  'TL-10 · Pass · C3 · Evidence: held tools show a lock icon and the word Held as well as the green fill.',
 ];
 
 export const guided14: Record<string, Guided> = {
@@ -112,11 +114,11 @@ export const guided14: Record<string, Guided> = {
                 'at estimation': 'Nobody noticed at estimation, because a missing state is invisible until something has to render.',
                 'during build': 'Building forces every case to exist. Somebody has to decide, and if the design is silent it will be whoever is typing.',
               } },
-            { id: 'two-releases', text: 'A screen was built behind a flag and released to a tenth of people first.', answer: 'at slicing',
+            { id: 'two-releases', text: 'The search filters were moved to a later piece of work, so the first release showed an unfiltered list.', answer: 'at slicing',
               feedback: {
-                'at slicing': 'How much of the work reaches how many people is a slicing decision, and it changes what the design has to handle: two versions existing at once.',
-                'at estimation': 'It is not about cost.',
-                'during build': 'The flag is built during the build and the decision to have one is taken earlier.',
+                'at slicing': 'Deciding what goes in the first piece and what waits is slicing, and it changes the design: for a while people meet a long list with no way to narrow it, and nobody drew that version.',
+                'at estimation': 'Nothing here says the filters were too costly. It is about which piece they belong to.',
+                'during build': 'The filters were moved before anybody started building that piece.',
               } },
             { id: 'field-dropped', text: 'A form field was dropped because the data behind it did not exist yet, discovered when the work was sized.', answer: 'at estimation',
               feedback: {
@@ -297,47 +299,50 @@ export const guided14: Record<string, Guided> = {
         ],
         sorter: {
           intro: 'Six ways a made up booking story was split. For each one, decide what kind of slice it is.',
-          options: ['a good slice', 'a slice by layer', 'not really a slice'],
+          options: ['a good slice', 'useless on its own (layer or phase)', 'usable but leaves a gap nobody designed'],
+          was: {
+            'useless on its own (layer or phase)': ['a slice by layer', 'not really a slice'],
+          },
           items: [
             { id: 'status-message', text: 'I can see the status of my booking in the confirmation message; and separately, I can see it without the message.', answer: 'a good slice',
               feedback: {
                 'a good slice': 'Both halves help somebody on the day they ship, and the first is much cheaper. It is the clearest example of slicing by outcome.',
-                'a slice by layer': 'Neither piece is a technical layer; both are things a person can do.',
-                'not really a slice': 'Two independently useful pieces is exactly what a slice should produce.',
+                'useless on its own (layer or phase)': 'Neither piece is a technical layer or a phase of work; both are things a person can do.',
+                'usable but leaves a gap nobody designed': 'Each half is complete for what it promises. Nobody is left in a half-handled situation while the second half waits.',
               } },
-            { id: 'api-first', text: 'Build the server part first, then the screen in the following sprint.', answer: 'a slice by layer',
+            { id: 'api-first', text: 'Build the server part first, then the screen in the following sprint.', answer: 'useless on its own (layer or phase)',
               feedback: {
                 'a good slice': 'Nobody can use a server part. The first piece helps no one and teaches nothing.',
-                'a slice by layer': 'The classic version. It looks orderly and delays all feedback until both pieces exist.',
-                'not really a slice': 'It is a real split, and a split into pieces nobody can use.',
+                'useless on its own (layer or phase)': 'The classic slice by layer. It looks orderly and delays all feedback until both pieces exist.',
+                'usable but leaves a gap nobody designed': 'There is no gap for anybody to fall into, because nobody can use the first piece at all.',
               } },
-            { id: 'happy-path', text: 'Ship the path where everything works; the error and expiry cases follow in a later piece.', answer: 'a slice by layer',
+            { id: 'happy-path', text: 'Ship the path where everything works; the error and expiry cases follow in a later piece.', answer: 'usable but leaves a gap nobody designed',
               feedback: {
                 'a good slice': 'It is tempting, and it ships something people can use. It also means real people meet an undesigned failure in the meantime.',
-                'a slice by layer': 'It is the same shape as building the server first: the difficult half is deferred and somebody meets its absence. A better slice ships a narrower feature with its failures intact.',
-                'not really a slice': 'It is a split, and a dangerous one.',
+                'useless on its own (layer or phase)': 'Neither piece is a technical layer, and people can use the first one. The trouble is what happens when something goes wrong before the second arrives.',
+                'usable but leaves a gap nobody designed': 'It ships something useful, and until the later piece arrives a person whose payment fails or whose hold expires meets a failure nobody designed. A better slice ships a narrower feature with its failures intact.',
               } },
             { id: 'one-branch', text: 'Ship it for one collection branch, then the other four.', answer: 'a good slice',
               feedback: {
                 'a good slice': 'Everybody at that branch gets the whole thing, failures included, and you learn from real use before spreading it.',
-                'a slice by layer': 'Nothing technical is being deferred; the feature is whole and narrow.',
-                'not really a slice': 'It is a real reduction in scope with a real first release.',
+                'useless on its own (layer or phase)': 'Nothing technical is being deferred; the feature is whole and narrow.',
+                'usable but leaves a gap nobody designed': 'Nobody at that branch meets a half-built situation, and people at the other four carry on as they do today.',
               } },
-            { id: 'design-first', text: 'Finish all the designs, then build them.', answer: 'not really a slice',
+            { id: 'design-first', text: 'Finish all the designs, then build them.', answer: 'useless on its own (layer or phase)',
               feedback: {
                 'a good slice': 'Nothing ships at the end of the first piece.',
-                'a slice by layer': 'It has the shape of one, and design is not a layer that can be released.',
-                'not really a slice': 'It is a sequence of activities rather than a split of the work. It was how the whole thing was always going to happen.',
+                'useless on its own (layer or phase)': 'It is a phase of work rather than a split of it. Finished designs help nobody until something is built, so nothing can ship or teach you anything until the end.',
+                'usable but leaves a gap nobody designed': 'Nobody can use the first piece at all, so there is nothing for a gap to appear in.',
               } },
-            { id: 'no-cancel', text: 'Ship booking now; cancellation follows in a fortnight.', answer: 'not really a slice',
+            { id: 'no-cancel', text: 'Ship booking now; cancellation follows in a fortnight.', answer: 'usable but leaves a gap nobody designed',
               feedback: {
                 'a good slice': 'Booking alone is genuinely useful, which is what makes this hard to see.',
-                'a slice by layer': 'Neither piece is a technical layer.',
-                'not really a slice': 'It is a slice, and it creates a fortnight where people can book and cannot cancel. If nobody has designed that fortnight, the split has quietly invented a new situation rather than dividing an existing one.',
+                'useless on its own (layer or phase)': 'Neither piece is a technical layer, and booking alone is usable.',
+                'usable but leaves a gap nobody designed': 'It is a slice, and it creates a fortnight where people can book and cannot cancel. If nobody has designed that fortnight, the split has quietly invented a new situation rather than dividing an existing one.',
               } },
           ],
           then: 'Now re-slice your own largest story by outcome, and write both halves.',
-          pattern: 'The two that catch people out are the happy path and the missing cancellation. Both ship something useful and both leave a real person in a situation nobody designed, which is what makes a slice into a design decision rather than a planning one.',
+          pattern: 'The two that catch people out are the path where everything works and the missing cancellation. Both ship something useful and both leave a real person in a situation nobody designed, which is what makes a slice into a design decision rather than a planning one. Design the gap, or narrow the slice so its failures ship with it.',
         },
         start: 'Take the story you sized largest and ask what smaller thing would still help somebody.',
         enough: 'Both halves of your re-slice would help a person on the day they shipped.' },
@@ -561,7 +566,7 @@ export const guided14: Record<string, Guided> = {
         options: [
           { label: 'Clearly cannot be checked: two careful people could look at the same screen and disagree.', correct: true, feedback: 'It survives review because nobody disagrees with it, and nothing can ever fail on it. The checkable version says what is stated and where, which somebody can look at and agree about in two seconds.', was: ['Clearly cannot be checked, so nothing will ever fail on it and two people can honestly disagree.'] },
           { label: 'Nothing important, since clarity is the requirement and the team will know it when they see it.', feedback: 'Clarity is the intention. The criterion has to name what makes it so, or two people will judge it differently.', was: ['Nothing, since clarity is the actual requirement.'] },
-          { label: 'It needs a minimum font size and colour added, so that clearly has a measurable threshold.', feedback: 'That is an implementation criterion, which is the opposite failure. State what is shown and where.', was: ['It should specify a font size.'] },
+          { label: 'It needs a minimum font size and colour added, so that clearly has a measurable threshold.', feedback: 'A threshold can be a fair criterion, but it measures legibility, not whether the remaining time is stated. Say what is shown and where first.', was: ['It should specify a font size.'] },
         ],
         repair: 'Rewrite that criterion in step 1 so it names what is stated and where, and record the change in step 5.',
         recheck: 'None of your criteria uses clearly, properly or appropriately.',
@@ -744,7 +749,7 @@ export const guided14: Record<string, Guided> = {
         question: 'Your accessibility work does not fit in the appetite. What should you cut?',
         options: [
           { label: 'A feature instead: accessibility sits with the failure paths in what you refuse to cut.', correct: true, feedback: 'Cutting it is the silent quality decision this lesson exists to prevent. A smaller feature that works for everybody beats a larger one that does not, and reducing the scope further is a decision you can state.', was: ['Something else. Accessibility belongs with the failure paths in what you refuse to cut, and a smaller feature that works for everybody beats a larger one that does not.'] },
-          { label: 'The accessibility work for now, with a dated note to return to it in the next round of work.', feedback: 'That note is the return condition the sorter warned about: it waits for somebody to report being excluded.', was: ['The accessibility work, with a note to return to it.'] },
+          { label: 'The accessibility work for now, with a dated note to return to it in the next round of work.', feedback: 'A date is not a condition, and accessibility is not deferrable scope: until that date, the people it excludes cannot book at all.', was: ['The accessibility work, with a note to return to it.'] },
           { label: 'Nothing; quietly extend the appetite so the full scope and the accessibility work both fit.', feedback: 'Extending can be right when it is decided openly. Doing it quietly avoids the very decision the appetite exists to force.', was: ['Nothing, and extend the appetite instead.'] },
         ],
         repair: 'Write what you refused to cut in step 5, and reduce the scope elsewhere to fit. Record the change.',
@@ -771,12 +776,12 @@ export const guided14: Record<string, Guided> = {
     route: textRoute,
     worksheet: [
       { id: 'prepare', title: 'Prepare three stories', fields: [
-        { id: 'stories-taken', label: 'Which three stories, and what you already know is undefined in them', kind: 'long', hint: 'Marking your own gaps first makes the conversation about theirs rather than yours.' },
-        { id: 'who-asked', label: 'Who you asked (a role, not a name), or how you did this without an engineer', kind: 'short', hint: 'No engineer: ask an informed reader what they could not answer from your story and criteria. The unanswerable parts are the unknowns.', example: 'Example (made up): no engineer available. A friend who builds websites read the three stories and marked everything they could not answer.' },
+        { id: 'stories-taken', label: 'Which three stories, and what you already know is undefined in them', kind: 'long', hint: 'Marking your own gaps first makes the conversation about theirs rather than yours. Practice route: take stories A to C from the supplied notes and mark the gaps you can see before reading the engineer’s reasons.' },
+        { id: 'who-asked', label: 'Who you asked (a role, not a name), or how you did this without an engineer', kind: 'short', hint: 'No engineer: ask an informed reader what they could not answer from your story and criteria. The unanswerable parts are the unknowns. Nobody at all: use the supplied practice estimate notes for steps 2 to 4 and label every answer that uses them practice.', example: 'Example (made up): no engineer available. A friend who builds websites read the three stories and marked everything they could not answer.' },
       ] },
       { id: 'estimates', title: 'The estimates and the reasoning', fields: [
-        { id: 'estimates-given', label: 'How long each would take, and the reasoning behind each figure, summarised in your words', kind: 'long', sensitive: true, hint: 'Summarise their reasoning rather than quoting them, and keep any verbatim notes in your own private file. An estimate is information, not a commitment to quote back at anybody.' },
-        { id: 'could-not-answer', label: 'What they could not answer from your material', kind: 'long', sensitive: true },
+        { id: 'estimates-given', label: 'How long each would take, and the reasoning behind each figure, summarised in your words', kind: 'long', sensitive: true, hint: 'Summarise their reasoning rather than quoting them, and keep any verbatim notes in your own private file. An estimate is information, not a commitment to quote back at anybody. Practice route: summarise stories A to C from the supplied notes and label them practice.' },
+        { id: 'could-not-answer', label: 'What they could not answer from your material', kind: 'long', sensitive: true, hint: 'Practice route: use the “could not answer” line under each supplied story, labelled practice.' },
       ] },
       { id: 'uncertainty', title: 'Name the uncertainty', fields: [
         { id: 'uncertainty-named', label: 'For each estimate: what made it uncertain', kind: 'long' },
@@ -784,7 +789,7 @@ export const guided14: Record<string, Guided> = {
       ] },
       { id: 'redesign', title: 'Remove one unknown', fields: [
         { id: 'redesign-chosen', label: 'Which story you redesigned, and what you defined', kind: 'long' },
-        { id: 're-estimate', label: 'The new estimate, and what changed it', kind: 'short' },
+        { id: 're-estimate', label: 'The new estimate, and what changed it', kind: 'short', hint: 'Practice route: use the note under the story on what the estimate becomes once its gaps are defined, labelled practice.' },
       ] },
       { id: 'record', title: 'Record', fields: [
         { id: 'decisions-vs-effort', label: 'Which unknowns were decisions you could make, and which were genuine effort', kind: 'long' },
@@ -812,7 +817,7 @@ export const guided14: Record<string, Guided> = {
           uncertainty: 'Still unknown: how many gaps I did not know about. Marking three found three; the reader found two more, which is the argument for asking somebody at all.',
         },
         start: 'Mark your own undefined parts before showing anybody anything.',
-        enough: 'The access line says plainly who you had, including nobody.' },
+        enough: 'The access line says plainly who you had. With nobody, it says you are using the supplied practice estimate notes.' },
       { expect: 'Three estimates with the reasoning, and a list of what could not be answered from your material.',
         fields: ['estimates-given', 'could-not-answer'],
         terms: [
@@ -927,12 +932,12 @@ export const guided14: Record<string, Guided> = {
       {
         question: 'You have no engineer to ask. Can this lesson be done honestly?',
         options: [
-          { label: 'It can: an informed reader marking what your story leaves open finds most unknowns.', correct: true, feedback: 'The estimate itself will be rough, and the unknowns are what the lesson is about. Say in the access line that no engineer was involved; a reader will miss some system-specific unknowns that an engineer would catch.', was: ['Yes. An informed reader marking what they cannot answer from your story produces the same list of unknowns.'] },
+          { label: 'It can: an informed reader marking what your story leaves open finds most unknowns.', correct: true, feedback: 'The estimate itself will be rough, and the unknowns are what the lesson is about. Say in the access line that no engineer was involved; a reader will miss some system-specific unknowns that an engineer would catch. With nobody at all, the supplied practice estimate notes give you a reader’s reasons to work from, labelled practice.', was: ['Yes. An informed reader marking what they cannot answer from your story produces the same list of unknowns.'] },
           { label: 'It cannot, since only an engineer on the team is able to estimate the work at all.', feedback: 'Only an engineer can estimate accurately, and accuracy is not what this lesson produces.', was: ['No, since only an engineer can estimate the work.'] },
-          { label: 'It can, if you estimate the three stories yourself and note where you hesitated.', feedback: 'Your own estimate cannot show you what your material fails to answer, because you already know the answers.', was: ['Yes, by estimating the stories yourself.'] },
+          { label: 'It can, if you estimate the three stories yourself and note where you hesitated.', feedback: 'Your own estimate cannot show you what your material fails to answer, because you already know the answers. The supplied practice notes are the route when nobody can read your stories.', was: ['Yes, by estimating the stories yourself.'] },
         ],
-        repair: 'Write plainly in step 1 who you asked, and make sure the unknowns came from somebody other than you. Record the change in step 5.',
-        recheck: 'The unanswerable list was produced by a reader rather than by you.',
+        repair: 'Write plainly in step 1 who you asked, and make sure the unknowns came from somebody other than you: a reader, or the supplied practice estimate notes labelled practice. Record the change in step 5.',
+        recheck: 'The unanswerable list came from a reader, or from the supplied practice notes labelled as such, rather than from your own guesses.',
       },
     ],
     transfer: {
@@ -950,18 +955,24 @@ export const guided14: Record<string, Guided> = {
       creator: 'Your creator reads the split between decisions and effort. A set of uncertainties that were all somebody else’s usually means the material was not read closely.',
       next: 'Open Your work and choose Ready for review. The next lesson holds the handover conversation itself.',
     },
+    material: [
+      'Practice estimate notes (made up, not a conversation you had): three tool-library stories, each read by an engineer who wrote an estimate and the reasons behind it. Use them only if you have nobody to read your own stories, and label every answer that uses them practice.',
+      'Story A · As a member who has just reserved a tool, I can see that my place is held and until when, so that I do not pay twice. Estimate: a week. Reasons: what happens when somebody returns after the hold has expired is not defined; whether the held-until time must match on a phone and a laptop is not defined. Could not answer from the story: what the person is told at expiry, and whether an expired hold can be restarted. Note: with both defined, about three days.',
+      'Story B · As a member collecting a tool, I can choose which branch to collect from, so that I do not travel to the wrong one. Estimate: four days. Reasons: nobody knows whether the booking record holds a branch, and the person who knows is away; if it does not, adding it is extra work. Could not answer from the story: what happens when the chosen branch has none of that tool left. Note: the estimate cannot move until the record question is answered.',
+      'Story C · As a member searching for a tool, I can see when nothing matches my dates, so that I can try other dates. Estimate: two days. Reasons: the wording for the empty list is not written; the list has to be checked with each of the six existing filter combinations. Could not answer from the story: what the empty list says, and whether it suggests other dates. Note: with the wording supplied, about a day and a half, because the six checks remain.',
+    ],
   },
   'm14-l06-v1': {
     route: textRoute,
     worksheet: [
       { id: 'prepare', title: 'Send it before you talk about it', fields: [
         { id: 'sent-what', label: 'What you assembled and sent, and how far ahead', kind: 'long', hint: 'Story, criteria, states and exact wording, in one place. Far enough ahead to be read properly.' },
-        { id: 'who-with', label: 'Who the handover was with, or how you rehearsed it', kind: 'short', hint: 'No team: rehearse it with an informed reader, or run it against the supplied situation and label it a rehearsal everywhere it appears.', example: 'Example (made up): a rehearsal with a friend who builds websites, clearly labelled as a rehearsal rather than a handover.' },
+        { id: 'who-with', label: 'Who the handover was with, or how you rehearsed it', kind: 'short', hint: 'No team: rehearse it with an informed reader, or work from the supplied rehearsal reply (a builder’s five questions and two cost notes, in the practice material) and label it a rehearsal everywhere it appears.', example: 'Example (made up): a rehearsal with a friend who builds websites, clearly labelled as a rehearsal rather than a handover.' },
         { id: 'questions-asked-ahead', label: 'What you asked them to do before the conversation', kind: 'short' },
       ] },
       { id: 'conversation', title: 'The conversation', fields: [
-        { id: 'their-questions', label: 'Their questions, summarised closely enough to act on', kind: 'long', sensitive: true, hint: 'Start with these rather than narrating your screens. Summarise each question in a line; keep any verbatim notes in your own private file, with a date to delete them. On the rehearsal route, label every question as a rehearsal question.' },
-        { id: 'expensive-existing', label: 'What they said was expensive, and what already exists', kind: 'long', sensitive: true },
+        { id: 'their-questions', label: 'Their questions, summarised closely enough to act on', kind: 'long', sensitive: true, hint: 'Start with these rather than narrating your screens. Summarise each question in a line; keep any verbatim notes in your own private file, with a date to delete them. On the rehearsal route, label every question as a rehearsal question; with nobody to rehearse with, use the five questions in the supplied rehearsal reply.' },
+        { id: 'expensive-existing', label: 'What they said was expensive, and what already exists', kind: 'long', sensitive: true, hint: 'Supplied rehearsal reply: use its two cost notes, labelled rehearsal.' },
       ] },
       { id: 'decisions', title: 'The decision record', fields: [
         { id: 'decisions-made', label: 'Every decision made in the conversation', kind: 'long', hint: 'Write them as they are made. A decision nobody wrote down gets re-made differently in three weeks.' },
@@ -1137,6 +1148,11 @@ export const guided14: Record<string, Guided> = {
       creator: 'Your creator reads the open questions and the one thing that changed. A record with decisions and no open questions is usually an incomplete record.',
       next: 'Open Your work and choose Ready for review. The next lesson checks the thing that comes back against what was agreed.',
     },
+    material: [
+      'Supplied rehearsal reply (made up, not a handover that happened): a builder’s written reply after reading a pre-read for the tool-library held-place story. Use it only if you have nobody to rehearse with, and label every answer that uses it rehearsal.',
+      'Questions: 1. What happens if the hold expires while the payment is processing? 2. Is the timer driven by the server, or kept on the person’s device? 3. Can the existing card component be reused for the tool cards? 4. What does the list say when nothing matches? 5. Is the whole card tappable, or only the button?',
+      'Cost notes: a server-driven timer is about three days of work. A card component already exists, but it has no slot for a photo.',
+    ],
   },
   'm14-l07-v1': {
     route: textRoute,
@@ -1250,11 +1266,11 @@ export const guided14: Record<string, Guided> = {
                 'a request': 'It was agreed in writing.',
                 'not a finding at all': 'It is one of the two most serious things on this list.',
               } },
-            { id: 'animation-idea', text: 'A short animation on success would make the confirmation feel better.', answer: 'not a finding at all',
+            { id: 'animation-idea', text: 'The build names its layers differently from the design file, with no visible difference on screen.', answer: 'not a finding at all',
               feedback: {
-                'a defect': 'Nothing was agreed about an animation.',
-                'a request': 'It could be raised as one, and it is an idea for new work rather than an observation about this build. Putting it on a QA list makes the list look like a wish list.',
-                'not a finding at all': 'QA is about what was agreed against what was built. New ideas belong somewhere else.',
+                'a defect': 'Nothing a person meets is different, and internal names were never part of what was agreed for the screen.',
+                'a request': 'There is nothing to change for anybody using it: renaming layers would leave every screen exactly as it is.',
+                'not a finding at all': 'QA compares what a person meets with what was agreed. Internal names that change nothing on screen are team housekeeping, not a finding about this build.',
               } },
             { id: 'empty-skeleton', text: 'When the list is empty, the loading placeholder stays on screen indefinitely.', answer: 'a defect',
               feedback: {
@@ -1321,7 +1337,7 @@ export const guided14: Record<string, Guided> = {
       prompt: 'Label each finding and order them by harm, explaining the label you gave the heading problem.',
       anchors: {
         weak: 'Calls the heading problem a request because no criterion mentions it, or orders the list by how irritating each item is.',
-        adequate: 'Postcode rejection and missing headings near the top as defects (the heading failure breaks an accessibility baseline even without a criterion), date format as a low defect, the photo as a change request.',
+        adequate: 'Missing headings near the top as a defect against the baseline (it breaks an accessibility baseline even without a criterion); postcode rejection as a defect if a criterion covers postcode entry, otherwise a missing requirement, still high on the list; date format as a low defect; the photo as a change request.',
         strong: 'As adequate, and logs the missing heading criterion for next time, says whether the date format contradicts a specification or is a question, and notes the photo can be kept with a reason.',
       },
     },
@@ -1442,11 +1458,11 @@ export const guided14: Record<string, Guided> = {
                 'at risk of losing something': 'Nothing is at risk.',
                 'slowed or cosmetic': 'A real defect, correctly rated low, and it belongs at the bottom of the list rather than off it.',
               } },
-            { id: 'empty-forever', text: 'When no tools match, the loading placeholder stays on screen indefinitely.', answer: 'slowed or cosmetic',
+            { id: 'empty-forever', text: 'When no tools match, the loading placeholder shows for about ten seconds before the empty message appears.', answer: 'slowed or cosmetic',
               feedback: {
-                blocked: 'The person can go back and change the filters, so the task survives.',
+                blocked: 'The empty message does arrive, and the person can then change the filters, so the task survives.',
                 'at risk of losing something': 'Nothing typed is lost.',
-                'slowed or cosmetic': 'It is squarely in this group and at the top of it: everybody who meets it waits for something that has already arrived, then gives up.',
+                'slowed or cosmetic': 'It is squarely in this group and at the top of it: everybody who meets it waits ten seconds for an answer that has already arrived, and some will give up before it shows.',
               } },
             { id: 'announce-second', text: 'The countdown announces every second, making the screen unusable for anybody listening.', answer: 'blocked',
               feedback: {
@@ -1523,7 +1539,7 @@ export const guided14: Record<string, Guided> = {
     worksheet: [
       { id: 'criteria', title: 'How the decision is actually made', fields: [
         { id: 'decider-accountable', label: 'What the person deciding is accountable for (their role, not their name)', kind: 'long', sensitive: true, hint: 'Not what they care about in general. What somebody asks them about, and what they have to report. Describe the role; leave names and internal figures in your own notes.' },
-        { id: 'how-you-know', label: 'How you found out, or that you are guessing', kind: 'short', hint: 'Asking is allowed and usually quick. A guess is a complete answer if it is labelled as one.' },
+        { id: 'how-you-know', label: 'How you found out, or that you are guessing', kind: 'short', hint: 'Asking is allowed and usually quick. A guess is a complete answer if it is labelled as one, checked against a public source such as a published role description, and says how you would confirm it.' },
       ] },
       { id: 'translate', title: 'The case in their terms', fields: [
         { id: 'observed', label: 'What you observed, stated plainly as a de-identified summary', kind: 'long', sensitive: true, hint: 'Including how many people. Three participants is three participants. Summarise what people did without names or identifying details; raw notes stay in your own private file with a deletion date. On a practice route, say the material was supplied.' },
@@ -1970,42 +1986,45 @@ export const guided14: Record<string, Guided> = {
         },
         sorter: {
           intro: 'Six things a team might look at after shipping a made up held-place feature. For each one, decide what it can tell you.',
-          options: ['a usable signal', 'a number that moves for other reasons', 'not evidence at all'],
+          options: ['a usable signal', 'too many causes to read', 'not evidence at all'],
+          was: {
+            'too many causes to read': ['a number that moves for other reasons'],
+          },
           items: [
-            { id: 'support-contacts', text: 'The number of support contacts about payment status, counted from the support log over four weeks.', answer: 'a usable signal',
+            { id: 'support-contacts', text: 'Support contacts about payment status per 100 bookings, from the support log, over four weeks.', answer: 'a usable signal',
               feedback: {
-                'a usable signal': 'A count with a source and a period, and one that could come back saying nothing changed. It is not a controlled comparison and it is checkable.',
-                'a number that moves for other reasons': 'It does move for other reasons, which is why the period and the reversal condition matter, and it is still the closest available.',
+                'a usable signal': 'A rate with a source and a period, and one that could come back saying nothing changed. It is not a controlled comparison and it is checkable.',
+                'too many causes to read': 'Other things can move it, which is why the period and the reversal condition matter. It is narrow, counted against bookings and close to the outcome, so it can still be read.',
                 'not evidence at all': 'It is the thing the decider already reports on.',
               } },
-            { id: 'total-bookings', text: 'Total bookings this month compared with last month.', answer: 'a number that moves for other reasons',
+            { id: 'total-bookings', text: 'Total bookings this month compared with last month.', answer: 'too many causes to read',
               feedback: {
                 'a usable signal': 'It is available and it answers a different question. Bookings move with the season, the weather and whatever else shipped.',
-                'a number that moves for other reasons': 'A big number with many causes. Watching it after a small change produces a story rather than a finding.',
+                'too many causes to read': 'A big number with many causes. Watching it after a small change produces a story rather than a finding.',
                 'not evidence at all': 'It is real data; it simply cannot be attributed.',
               } },
             { id: 'three-conversations', text: 'Three conversations with people who booked in the last fortnight, asking what they understood about their place being held.', answer: 'a usable signal',
               feedback: {
                 'a usable signal': 'Three people is three people, and it is the only thing on the list that can tell you what somebody understood. It is asked about rather than counted, and the plan says so.',
-                'a number that moves for other reasons': 'It is not a number at all.',
+                'too many causes to read': 'It is not a count with causes to untangle; it asks people directly what they understood.',
                 'not evidence at all': 'Small and honest evidence is still evidence, as long as nothing later reports it as a rate.',
               } },
             { id: 'nobody-complained', text: 'Nobody has complained since it shipped.', answer: 'not evidence at all',
               feedback: {
                 'a usable signal': 'Most people who meet a problem never report it, so silence is consistent with everything.',
-                'a number that moves for other reasons': 'It is not a measurement of anything.',
+                'too many causes to read': 'It is not a measurement of anything.',
                 'not evidence at all': 'It is the sentence that gets said three weeks after every release, and it would be equally true if the feature had made things worse.',
               } },
             { id: 'duplicate-reports', text: 'Whether anybody reports a duplicate payment, read from the same support log.', answer: 'a usable signal',
               feedback: {
                 'a usable signal': 'It is the specific harm the work was aimed at, with a place to look. Even a small count is informative because it should be near zero.',
-                'a number that moves for other reasons': 'It is narrow enough that other causes are few.',
+                'too many causes to read': 'It is narrow enough that other causes are few.',
                 'not evidence at all': 'It is the closest thing to the outcome this work has.',
               } },
             { id: 'team-likes', text: 'The team thinks the new screen is much clearer.', answer: 'not evidence at all',
               feedback: {
                 'a usable signal': 'The team designed it and knows what it means. Their reading of it is the least informative one available.',
-                'a number that moves for other reasons': 'No number is involved.',
+                'too many causes to read': 'Nothing is being counted here, so there are no causes to untangle.',
                 'not evidence at all': 'Worth having as morale and worth keeping out of the release plan, where it will be read as a result.',
               } },
           ],

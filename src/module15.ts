@@ -303,7 +303,7 @@ export const module15: Lesson[] = [
         minutes: 30,
         title: "Write competing explanations",
         instructions: [
-          "For the largest drop, write three explanations that fit the numbers.",
+          "For the step you chose to look at first, write three explanations that fit the numbers.",
           "State what evidence would separate them.",
         ],
       },
@@ -380,7 +380,7 @@ export const module15: Lesson[] = [
         criterion:
           "Three competing explanations are written with separating evidence",
         evidence:
-          "Three plausible causes for the largest drop and what would distinguish them.",
+          "Three plausible causes for the drop at the step you chose to look at first, and what would distinguish them.",
         levels: [
           "One explanation asserted.",
           "Several explanations without separating evidence.",
@@ -388,7 +388,7 @@ export const module15: Lesson[] = [
           "As adequate, and one explanation would make the drop acceptable rather than a problem.",
         ],
         remediation:
-          "For your largest drop, write every reason a person might stop there, then what evidence would rule each in or out.",
+          "For the step you chose to look at first, write every reason a person might stop there, then what evidence would rule each in or out.",
         recheck: "The explanations.",
       },
       {
@@ -484,7 +484,7 @@ export const module15: Lesson[] = [
         title: "Read and gather",
         instructions: [
           "Read the assigned interval and sample-size readings.",
-          "Collect three rates you have written or been tempted to write.",
+          "Collect three rates you have written or been tempted to write. With fewer than three real counts, use the practice set in the worksheet hint and label it practice.",
         ],
       },
       {
@@ -507,7 +507,7 @@ export const module15: Lesson[] = [
         minutes: 25,
         title: "Handle a comparison",
         instructions: [
-          "Take a comparison between two rates and compute the 95 per cent interval for their difference.",
+          "Take a comparison between two rates, or the made-up practice pair, and compute the 95 per cent interval for their difference. If the counts are your own invented ones, write that it was not computed.",
           "Qualify or abandon the comparison, and say why.",
         ],
       },
@@ -861,7 +861,7 @@ export const module15: Lesson[] = [
     misconception:
       "“The data speaks for itself.” Data is selected, framed and presented by someone with a purpose. The questions are not an accusation; they are the ordinary work of reading a number.",
     example:
-      "Made-up example: a published figure claimed a 30 per cent improvement in completions after a redesign. The five questions: who was counted — new visitors only, it turned out, excluding returning ones; what period — four weeks against a comparison period containing a public holiday; what else changed — a marketing campaign ran concurrently; what is the denominator — visits fell from 10,000 to 7,000 while completed bookings fell from 500 to 455, so completions per visit rose from 5.0 to 6.5 per cent (the 30 per cent, a relative rise of 1.5 points) while completions fell by 9 per cent; and what decision it justified — further investment in the redesign. The claim was rewritten as: completions per visit rose over four weeks, during which visits fell and a campaign ran, so the redesign's contribution cannot be separated.",
+      "Made-up example: a published figure claimed a 30 per cent improvement in completions after a redesign. The five questions: who was counted — new visitors only, it turned out, excluding returning ones; what period — four weeks against a comparison period containing a public holiday; what else changed — a marketing campaign ran concurrently; what is the denominator — visits fell from 10,000 to 7,000 while completed bookings fell from 500 to 455, so completions per visit rose from 5.0 to 6.5 per cent (the 30 per cent is the relative rise; the absolute rise is 1.5 percentage points) while completions fell by 9 per cent; and what decision it justified — further investment in the redesign. The claim was rewritten as: completions per visit rose over four weeks, during which visits fell and a campaign ran, so the redesign's contribution cannot be separated.",
     freeToolPath:
       "Any published report or article with figures. The exercise is reading and writing; no data access is needed.",
     outputs: [
@@ -1178,11 +1178,11 @@ export const module15: Lesson[] = [
         criterion:
           "Contradictions are kept and explained rather than resolved away",
         evidence:
-          "Any disagreement recorded with a candidate explanation.",
+          "Any disagreement recorded with a candidate explanation, or, where none exists, a check of where the two could have disagreed.",
         levels: [
           "Contradiction dropped.",
           "Noted without explanation.",
-          "Kept with an explanation and what would settle it.",
+          "Kept with an explanation and what would settle it, or, where none exists, a written check of where they could have disagreed and what result would have counted as a contradiction.",
           "As adequate, and the rare-and-severe possibility is considered explicitly.",
         ],
         remediation:
@@ -1643,7 +1643,7 @@ export const module15: Lesson[] = [
     misconception:
       "“I explained the caveats when I presented it.” The caveats stayed in the room; the chart went everywhere. If a limitation matters, it belongs in the picture.",
     example:
-      "Made-up example: the analysis was presented in three slides. First: the decision — fix the held-place message before touching payment, because that is where the evidence points. Second: the evidence — two of the three people watched could not tell their place was held, with the sample on the slide; the provider's count of duplicate payments with its period; and the one rate shown, 9 of 22 survey answers, carrying its 95 per cent interval of about 23 to 61 per cent. The synthetic funnel stayed off the evidence slide, because invented numbers cannot support a real decision. Third: what would prompt a rethink — if duplicate payments are not lower after four weeks, the team looks next at the payment confirmation; that would not prove the message had no effect. Afterwards, the person remembered the decision and the phrase “two of three”, which was the intended pair; nobody quoted a percentage, because none was shown.",
+      "Made-up example: the analysis was presented in three slides. First: the decision — fix the held-place message before touching payment, because that is where the evidence points. Second: the evidence — two of the three people watched could not tell their place was held, with the sample on the slide; the provider's count of duplicate payments with its period; and the one rate shown, 9 of 22 survey answers, carrying its 95 per cent interval of about 23 to 61 per cent. The synthetic funnel stayed off the evidence slide, because invented numbers cannot support a real decision. Third: what would prompt a rethink — if duplicate payments are not lower after four weeks, the team looks next at the payment confirmation; that would not prove the message had no effect. Afterwards, the person remembered the decision and the phrase “two of three”, which was the intended pair; nobody quoted a headline percentage, because none was shown.",
     freeToolPath:
       "A page of text or three slides in any free editor, with a hand-drawn or spreadsheet chart. Nothing here requires a presentation platform.",
     outputs: [
@@ -1682,7 +1682,7 @@ export const module15: Lesson[] = [
         minutes: 25,
         title: "Present it",
         instructions: [
-          "Present to someone who was not involved.",
+          "Present to someone who was not involved. With nobody at all, use the solo check described in the worksheet and label it.",
           "Do not narrate the caveats; let the material carry them.",
         ],
       },
@@ -1766,11 +1766,11 @@ export const module15: Lesson[] = [
         criterion:
           "What the audience remembered was checked and acted on",
         evidence:
-          "A record of what they took away and a change to the material where it misled.",
+          "A record of what they took away, or of a labelled solo check, and a change to the material where it misled.",
         levels: [
           "Not checked.",
           "Checked without acting.",
-          "Checked and the material corrected.",
+          "Checked with a listener, or with nobody available by a labelled solo check, and the material corrected.",
           "As adequate, and a misreading is traced to a specific presentation choice.",
         ],
         remediation:
@@ -1841,7 +1841,7 @@ export const module15: Lesson[] = [
     misconception:
       "“We should be data-driven.” Data-informed decisions are good; waiting for data on decisions that are cheap to reverse is expensive theatre, and it usually means the current problem continues while everyone feels rigorous.",
     example:
-      "Made-up example: two decisions were identified. First: the wording of the held-place message. Cheap to change, cheap to reverse, no traffic to test it with — the decision was to write the clearest version, ship it, and ask three people the following week. Second: whether to shorten the booking form by removing a field. This affects data the provider relies on, so removal is not cheaply reversible; the decision was to ask the provider what the field is used for before touching it. One measurement was refused outright: a proposal to test which cancellation flow produced fewer cancellations, which would have been a test of how well the flow obstructs people.",
+      "Made-up example: two decisions were made without measurement. First: the wording of the held-place message. Cheap to change, cheap to reverse, no traffic to test it with — the decision was to write the clearest version, ship it, and ask three people the following week. Second: which of two passing button shades to use — decided now, and revisited only if anybody reports a problem. A contrasting decision was kept for measurement: whether to shorten the booking form by removing a field. This affects data the provider relies on, so removal is not cheaply reversible; the decision was to ask the provider what the field is used for before touching it. One measurement was refused outright: a proposal to test which cancellation flow produced fewer cancellations, with nothing measured about whether people who meant to cancel managed to, which would have been a test of how well the flow obstructs people.",
     freeToolPath:
       "Written reasoning. This lesson is judgement, not tooling.",
     outputs: [
@@ -1924,7 +1924,7 @@ export const module15: Lesson[] = [
           "No decisions identified.",
           "Decisions listed without reversibility.",
           "Two with reversibility assessed.",
-          "As adequate, and one is deliberately kept for measurement because it is irreversible.",
+          "As adequate, and a contrasting decision is kept for measurement because its effects are irreversible.",
         ],
         remediation:
           "List what you are waiting on and ask how hard each would be to undo.",
