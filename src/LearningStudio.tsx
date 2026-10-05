@@ -195,7 +195,6 @@ export function LearningStudio({
       <span className="eyebrow">YOUR COURSE</span>
       <h1>Learn</h1>
       {queue}
-      <PathProgress lessons={lessons} records={records}/>
       <section className="feature-card next-step-card">
         <span className="pill">YOUR NEXT STEP</span>
         <h2>{resume.title}</h2>
@@ -229,6 +228,10 @@ export function LearningStudio({
       </p>
       {error && <p role="status">{error}</p>}
       <RevisitPanel lessons={lessons} records={records} open={open}/>
+      <details className="course-progress-detail">
+        <summary>Course progress · core path and full library</summary>
+        <PathProgress lessons={lessons} records={records}/>
+      </details>
       <PathModeSwitch mode={pathMode} onChange={setPathMode}/>
       {pathMode === "core" ? (
         <CorePathPanel lessons={lessons} records={records} bookmarkId={bookmark.position?.lessonId} open={open}/>
@@ -406,7 +409,7 @@ export function LessonReader({
         <p className="intro lesson-intro desktop-lesson-intro">{lesson.why}</p>
         <details className="mobile-lesson-context"><summary>About this lesson</summary><p>{lesson.why}</p></details>
       </header>
-      {lesson.id !== 'baseline-v1' && <LessonOrientation lesson={lesson}/>}
+      {lesson.id !== 'baseline-v1' && <LessonOrientation lesson={lesson} compact={pilot}/>}
       {lesson.id !== 'baseline-v1' && <TrackNote lessonId={lesson.id}/>}
       {lesson.id !== 'baseline-v1' && <DemonstratedSkill lesson={lesson} record={record} setRecord={setRecord} readOnly={user.role !== "learner" || !practice.hydrated}/>}
       {!!missingPrerequisites.length && (

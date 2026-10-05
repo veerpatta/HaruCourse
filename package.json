@@ -22,7 +22,9 @@
     "test:questions": "node scripts/check-questions.mjs --strict",
     "test:improvements": "node scripts/test-improvements.mjs",
     "test:review": "node scripts/test-review-cloud.mjs",
-    "test:all": "npm run test:content && npm run test:questions && npm run test:improvements && npm run test:worksheet && npm run test:actions && npm run test:learning && npm run audit:guided"
+    "test:all": "npm run test:content && npm run test:questions && npm run test:improvements && npm run test:worksheet && npm run test:actions && npm run test:learning && npm run audit:guided",
+    "test:ui": "node scripts/test-minimal-ui.mjs",
+    "test:ui:offline": "node scripts/test-minimal-ui-offline.mjs"
   },
   "dependencies": {
     "@cloudflare/workers-oauth-provider": "^0.10.3",
