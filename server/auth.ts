@@ -1,6 +1,6 @@
 import { timingSafeEqual } from "node:crypto";
 import { z } from "zod";
-import { HttpError, activeUser, type SessionUser } from "./data";
+import { HttpError, VIEWING_COOKIE, activeUser, type SessionUser } from "./data";
 import type { User } from "../shared/record";
 
 export async function hash(value: string) {
@@ -80,7 +80,7 @@ export async function session(
   )
     .bind(await hash(raw), Date.now())
     .first<{ user_id: string }>();
-  return row ? activeUser(env, row.user_id) : null;
+  return row ? activeUser(env, row.user_id, cookieValue(request, VIEWING_COOKIE)) : null;
 }
 export const credentialsSchema = z
   .object({

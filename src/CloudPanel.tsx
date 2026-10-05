@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import {
   recordSchema,
+  viewedName,
   type RecordData,
   type User,
   type CloudRecord,
@@ -194,7 +195,7 @@ export function CloudPanel({
           {!accountOnly && (
             <p>
               {user.role === "creator"
-                ? "Review Haru’s saved work and leave feedback against the exact version you read."
+                ? `Review ${viewedName(user)}’s saved work and leave feedback against the exact version you read.`
                 : "Practice now saves automatically. This panel shows the baseline review history and your AI connections."}
             </p>
           )}

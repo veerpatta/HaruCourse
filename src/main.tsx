@@ -16,7 +16,7 @@ import { WorkspaceGuide, PortfolioPath, JourneyMilestone } from './Apprenticeshi
 import { emptyRecord as empty } from "./usePractice";
 import { unsavedDrafts, updateMessage } from "./updates";
 import { lessonTrack } from "./corePath";
-import { ReviewSettingsEditor, useReviewSettings } from "./ReviewPanel";
+import { LearnerSwitcher, ReviewSettingsEditor, useReviewSettings } from "./ReviewPanel";
 import type { User } from "../shared/record";
 import "./style.css";
 
@@ -282,6 +282,12 @@ function App({
                 onLoad={() => {}}
                 onSession={onSession}
               />
+              {user.role === "creator" && (
+                <details className="account-detail" open>
+                  <summary>Learner workspace</summary>
+                  <LearnerSwitcher user={user} />
+                </details>
+              )}
               {user.role === "creator" && (
                 <details className="account-detail">
                   <summary>Review destination</summary>

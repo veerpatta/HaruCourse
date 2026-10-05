@@ -97,10 +97,10 @@ export function PortfolioPath() {
     <p>{projectStart}</p>
     {projectPacks.map(pack => <details key={pack.id}><summary>{pack.title} · {pack.modules}</summary>
       <p>Choose one of these two briefs. Keep the choice and your reasons in your external project notebook.</p>
-      {pack.choices.map(c => <article key={c.title}><h3>{c.title}</h3><p>{c.context}</p><p><strong>People:</strong> {c.users}</p><p><strong>Participant access:</strong> {c.access}</p><p><strong>Constraints:</strong> {c.constraints}</p><h4>Investigate</h4><ul>{c.questions.map(q => <li key={q}>{q}</li>)}</ul></article>)}
-      <h3>Build the case study as you go</h3><ol>{pack.milestones.map(m => <li key={m}>{m}</li>)}</ol>
+      {pack.choices.map(c => <article key={c.title}><h2>{c.title}</h2><p>{c.context}</p><p><strong>People:</strong> {c.users}</p><p><strong>Participant access:</strong> {c.access}</p><p><strong>Constraints:</strong> {c.constraints}</p><h3>Investigate</h3><ul>{c.questions.map(q => <li key={q}>{q}</li>)}</ul></article>)}
+      <h2>Build the case study as you go</h2><ol>{pack.milestones.map(m => <li key={m}>{m}</li>)}</ol>
     </details>)}
-    <h3>Case-study sections</h3><ol>{caseStudySections.map(s => <li key={s}>{s}</li>)}</ol>
+    <h2>Case-study sections</h2><ol>{caseStudySections.map(s => <li key={s}>{s}</li>)}</ol>
     <p>m19 edits and curates this accumulated work. Add a fourth project only if a specific evidence gap justifies it.</p>
   </details>;
 }

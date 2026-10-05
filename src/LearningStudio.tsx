@@ -27,6 +27,7 @@ import {
   ModuleOrientation,
 } from './orientation';
 import {
+  viewedName,
   type User,
   type Feedback,
   type ReviewSummary,
@@ -393,7 +394,7 @@ export function LessonReader({
         <div className="lesson-toolbar">
           <button className="text-button lesson-back" onClick={back}>← Lessons</button>
           <p className="save-status" role="status">
-            {user.role === "creator" ? "Haru’s saved work · " : ""}{status}
+            {user.role === "creator" ? `${viewedName(user)}’s saved work · ` : ""}{status}
           </p>
         </div>
         <span className="eyebrow lesson-breadcrumb">
@@ -648,7 +649,7 @@ export function LessonReader({
         className="lesson-reading"
       >
         <h2>
-          {user.role === "creator" ? "Review Haru’s practice" : "Your work"}
+          {user.role === "creator" ? `Review ${viewedName(user)}’s practice` : "Your work"}
         </h2>
         {lesson.id !== "baseline-v1" && <ProgressStatesRow record={record} reviews={lessonReviews}/>}
         {guided && (

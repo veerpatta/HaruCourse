@@ -1,0 +1,56 @@
+name: Course checks
+
+# Every push and pull request re-runs the content contract, saved-answer
+# compatibility, learning rules and production build. Links are checked weekly
+# because outside sites change without a commit here.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "17 3 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  content-and-build:
+    if: github.event_name != 'schedule'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Generated documents are current
+        run: npm run test:content
+      - name: Question keys are not cued
+        run: npm run test:questions
+      - name: Improvement contract and saved-answer compatibility
+        run: npm run test:improvements
+      - name: Worksheets
+        run: npm run test:worksheet
+      - name: Lesson actions
+        run: npm run test:actions
+      - name: Learning rules
+        run: npm run test:learning
+      - name: Guided overlays
+        run: npm run audit:guided
+      - name: Types and production build
+        run: npm run build
+
+  links:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Every source link answers
+        run: node scripts/check-links.mjs
