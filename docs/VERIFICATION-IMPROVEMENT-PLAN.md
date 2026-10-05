@@ -21,7 +21,7 @@ Preserved: all 224 lesson IDs, all 2,866 original worksheet field IDs (verified 
 
 ## Checks run
 
-To be completed at release; local results so far:
+Local and hosted results:
 
 - Generated documents regenerated; `test:content`, `test:questions --strict`, `test:improvements`, `test:worksheet`, `test:actions` (224 flows, 3,151 fields, 8,352 actions, 1,643 saved questions), `test:learning`, `audit:guided`, both TypeScript projects and the production build pass.
 - Local worker with migration 0004: all 13 existing backend groups, the new review/sync suite, the learning/timer round-trip and all 224 lesson completion/conflict/reopen round-trips pass.
@@ -52,4 +52,6 @@ Scores reflect evidence available today. Anchors: 4/5 needs representative cases
 
 ## Release
 
-Recorded after deployment.
+On 5 October 2026 the live D1 database had exhausted its free daily read allowance (caused by the old five-second polling), so deployment waited for the 00:00 UTC reset. Migration 0004 was then applied to the remote database (10 commands, additive only) and Cloudflare version f5a00519-20da-48e8-9640-fb8613e1653e deployed to https://harucourse.raj-39e.workers.dev. Health returned 200 with version 0.3.0; unauthenticated progress returned 401; starter and lab files are served as files; the live entry JavaScript and CSS match the local build by SHA-256; the browser console was clean.
+
+Hosted QA used only the isolated test identity: the review/sync suite (version change detection, saved-version history, review request, self-review, skip guard, no-reviewer workspace), the learning/timer round-trip and all 224 lesson completion, saved-question, stale-write and reopening round-trips passed, with original test records restored. Creator review outcomes were verified locally only, because exercising them live would write to Haru's records. Haru's account was not opened.
