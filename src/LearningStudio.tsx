@@ -724,7 +724,7 @@ export function LessonReader({
           {user.role === 'learner' && <><TimeAdjust minutes={record.minutes} onAdd={timer.addMinutes} onSetTotal={timer.setTotal}/><ConfidencePicker value={record.confidence} onChange={timer.setConfidence}/></>}
         </details>
         {user.role === "creator" && (
-          <CreatorReviewForm lesson={lesson} record={record} endpoint={endpoint} onSaved={(f) => setFeedback((v) => [f, ...v])}/>
+          <CreatorReviewForm lesson={lesson} record={record} endpoint={endpoint} onSaved={(f) => { setFeedback((v) => [f, ...v]); window.dispatchEvent(new Event('harucourse:reviews')); }}/>
         )}
         <FeedbackList lesson={lesson} feedback={feedback} record={record} error={feedbackError}/>
       </section>

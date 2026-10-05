@@ -98,7 +98,11 @@ export function useCourseRecords(user: User) {
             );
         });
     void refresh();
+    // A creator review just saved changes the review summaries; read them now
+    // rather than at the next poll.
+    const refreshNow = () => void refresh();
     window.addEventListener('harucourse:records', merge);
+    window.addEventListener('harucourse:reviews', refreshNow);
     window.addEventListener('storage', merge);
     const timer = setInterval(() => {
       if (canPoll()) void refresh();
@@ -109,6 +113,7 @@ export function useCourseRecords(user: User) {
       clearInterval(timer);
       stopWatching();
       window.removeEventListener('harucourse:records', merge);
+      window.removeEventListener('harucourse:reviews', refreshNow);
       window.removeEventListener('storage', merge);
     };
   }, [user.id, user.role]);

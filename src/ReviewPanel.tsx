@@ -59,10 +59,10 @@ export function ProgressStatesRow({ record, reviews }: { record: RecordData; rev
   const s = progressStates(record, reviews);
   const latest = reviews.at(-1);
   const items: [boolean, string, string][] = [
-    [s.saved, "Work saved", "Your answers and work reference are stored."],
-    [s.finished, "Practice finished", "You finished the required practice for your route."],
+    [s.saved, "Work saved", s.saved ? "Your answers and work reference are stored." : "Nothing is saved for this lesson yet."],
+    [s.finished, "Practice finished", s.finished ? "You finished the required practice for your route." : "Marked when you finish the required practice for your route."],
     [s.reviewed, "Reviewed against criteria", latest ? `Version ${latest.revision} · ${latest.criterion || "criterion not named"} · ${outcomeLabels[latest.outcome]}` : "A reviewer has not recorded findings on a saved version yet."],
-    [s.demonstrated, "Demonstrated independently", "A reviewer judged an unfamiliar task met the criterion with the allowed support."],
+    [s.demonstrated, "Demonstrated independently", s.demonstrated ? "A reviewer judged an unfamiliar task met the criterion with the allowed support." : "Marked only when a reviewer judges your answer to a new task against the criterion."],
   ];
   return (
     <section className="progress-states" aria-label="Four kinds of progress for this lesson">
