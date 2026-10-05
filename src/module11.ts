@@ -302,7 +302,7 @@ export const module11: Lesson[] = [
     misconception:
       "“We will do an accessibility audit at the end.” An audit at the end finds problems that are expensive to fix and often structural — a layout that cannot carry a visible focus ring, a flow that depends on hover. Mapping barriers to criteria during design costs an hour and changes what you build.",
     example:
-      "Five barriers mapped to five criteria. Colour-only availability mapped to the use-of-colour criterion, and meeting it here meant adding a text label beside the dot. The swipe-only removal mapped to the keyboard criterion: every function available from a keyboard, met by adding a visible control with a key route. The 3.1:1 caption mapped to contrast (minimum), met by darkening the text and re-measuring. The adjacent destructive control mapped to target size, met by increasing spacing. The English-only date format mapped to a language and localisation concern the standard covers only partly, so the lesson recorded it as a product requirement rather than a criterion.",
+      "Five barriers mapped to five criteria. Colour-only availability mapped to the use-of-colour criterion, and meeting it here meant adding a text label beside the dot. The swipe-only removal mapped to pointer gestures (2.5.1) and keyboard (2.1.1): anything done by swiping must also work with a single tap and from a keyboard, met by adding a visible Remove button. The 3.1:1 caption mapped to contrast (minimum), met by darkening the text and re-measuring. The adjacent destructive control mapped to target size (2.5.8) because the cancel icon was only 20 pixels square; below 24 by 24, spacing counts, and four pixels was not enough, so the target was enlarged to 24 by 24. The mis-tap risk itself was recorded as a product requirement. The English-only date format mapped to a language and localisation concern the standard covers only partly, so the lesson recorded it as a product requirement rather than a criterion.",
     freeToolPath:
       "The quick reference in a browser, filtered to level A and AA. No account, tooling or subscription is involved; the mapping is written work.",
     outputs: [
@@ -483,7 +483,7 @@ export const module11: Lesson[] = [
     prerequisite: "Two current screens and your m06 heading outline.",
     why: "Structure is how someone who cannot see the whole screen navigates it. Without it they read everything, in whatever order the markup happens to be.",
     teach: [
-      "One page title, then headings nested without skipping levels.",
+      "One top-level heading naming the page (separate from the browser-tab title), then headings nested without skipping levels.",
       "Regions let someone jump straight to the main content instead of hearing the menu again.",
       "Reading order must match visual order; a two-column layout often breaks this.",
       "Headings describe their section; “Details” describes nothing.",
@@ -724,7 +724,7 @@ export const module11: Lesson[] = [
         minutes: 30,
         title: "Enlarge the text",
         instructions: [
-          "Set text to about 200 per cent and reload the screens.",
+          "In a browser, press Ctrl and + (Cmd and + on a Mac) until the zoom reads 200% (in Firefox, first choose View > Zoom > Zoom Text Only). In a design file, double every text style and let frames hug their content. Then record what breaks.",
           "Record every clip, overlap, truncation and horizontal scroll.",
           "Fix by letting containers grow rather than shrinking the text.",
         ],
@@ -1081,7 +1081,7 @@ export const module11: Lesson[] = [
     teach: [
       "Every function must be reachable and operable without a pointer.",
       "Reachable is not enough: focus must be visible and the order sensible.",
-      "Traps are the worst failure: a place you can enter and cannot leave.",
+      "Traps are the worst failure: a place no key gets you out of. A modal may keep Tab inside on purpose.",
       "Custom controls are where keyboard support disappears.",
       "Test by unplugging the mouse, not by imagining.",
     ],
@@ -1094,7 +1094,7 @@ export const module11: Lesson[] = [
     misconception:
       "“Keyboard use is a niche case.” It includes people with motor impairments, people using switch devices and voice control that maps to keyboard interaction, many screen-reader users, anyone with a broken trackpad, and a large number of fast, experienced users. It is also the substrate other assistive technologies build on.",
     example:
-      "The booking task was attempted with the mouse unplugged. Four failures. The date picker could be reached and not operated: arrow keys did nothing, so no date could be chosen — a total block, repaired against the m09 key table. The filter panel trapped focus, with escape doing nothing. The remove control, hover-only, could not be reached at all. Focus was invisible on the tinted review panel. The repair addressed the date picker first, because it stopped the task entirely; the trap was recorded as the second, and the write-up noted that a mouse-only workaround was explicitly not acceptable as a fix.",
+      "The booking task was attempted with the mouse unplugged. Four failures. The date picker could be reached and not operated: arrow keys did nothing, so no date could be chosen — a total block, repaired against the m09 key table. The filter panel trapped focus: tab cycled inside it and never reached its Apply button, and escape did nothing. The remove control, hover-only, could not be reached at all. Focus was invisible on the tinted review panel. The repair addressed the date picker first, because it stopped the task entirely; the trap was recorded as the second, and the write-up noted that a mouse-only workaround was explicitly not acceptable as a fix.",
     freeToolPath:
       "Put the mouse out of reach and use the tab, arrow, enter, space and escape keys. The course’s practice lab at /labs/m11/ on the course site lists the keys and what to record. With no running page, walk your Module 8 screens on paper against your key tables and mark every result as specified and untested.",
     outputs: [
@@ -1180,7 +1180,7 @@ export const module11: Lesson[] = [
         levels: [
           "Not attempted, or attempted partially.",
           "Attempted with occasional pointer use.",
-          "A full attempt with the pointer unavailable, recorded step by step.",
+          "A full attempt with the pointer unavailable, recorded step by step — or, on the paper route, one whole task walked against the key tables with every step marked specified and untested.",
           "As adequate, and a second task was attempted to check the failures generalise.",
         ],
         remediation:
@@ -1194,7 +1194,7 @@ export const module11: Lesson[] = [
         levels: [
           "Failures described generally.",
           "Listed without distinguishing the kinds.",
-          "All three kinds distinguished with specific controls named, or none found and the controls checked listed.",
+          "All three kinds distinguished with specific controls named, or none found and the controls checked listed — or, on the paper route, each custom control's exit routes specified and marked untested.",
           "As adequate, and every custom control was explicitly checked for trapping.",
         ],
         remediation:
@@ -2004,7 +2004,7 @@ export const module11: Lesson[] = [
         levels: [
           "Failures listed without causes.",
           "Causes guessed generally.",
-          "Each traced to a decision or marked a build defect.",
+          "Each traced to a decision or marked a build defect — or, on the practice route, each named with the decision you would check in your own design.",
           "As adequate, and at least one failure traces to a decision you made earlier in the course.",
         ],
         remediation:

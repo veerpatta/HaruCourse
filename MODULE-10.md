@@ -25,7 +25,7 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 
 ### Start here: in everyday words
 
-A prototype is a rough version made to answer a question before time is spent building the full product. In this lesson, your first small result is: Every question you still cannot answer, each marked as being about wording, about moving between screens, or about waiting and real content.
+A prototype is a rough version made to answer a question before time is spent building the full product. In this lesson, your first small result is: Every question you still cannot answer, each marked as being about wording and order, about moving between screens, about a wait people sit through, or about real loading and real content.
 
 **Words you will use**
 
@@ -101,15 +101,15 @@ Recommended route: Fill the worksheet in this app, step by step. It saves as you
 
 Section: practice-plan. Stable action: step-1-brief.
 
-Every question you still cannot answer, each marked as being about wording, about moving between screens, or about waiting and real content.
+Every question you still cannot answer, each marked as being about wording and order, about moving between screens, about a wait people sit through, or about real loading and real content.
 
 - Read the assigned guidance on choosing prototype fidelity.
 - List the open questions from m07 and m09 you still cannot answer.
-- Mark which are about order, flow or timing.
+- Mark which are about wording and order, moving between screens, a wait people sit through, or real loading and real content.
 
 **Start here:** Go back to your open questions and finish this sentence for each: “I still do not know whether …”.
 
-**Enough:** Every question carries one of the three marks, and at least two different marks appear.
+**Enough:** Every question carries one of the four marks, and at least two different marks appear.
 
 **Prototype:** Something rough you make in order to find out one thing. If you cannot say what it exists to find out, it is an artefact rather than a prototype.
 
@@ -830,7 +830,7 @@ The reader demonstrates and guides the task before asking for “The one flow yo
 
 Section: learn. Stable action: welcome.
 
-Build a clickable prototype of one flow from linked local files, including one failure path, and record exactly what it fakes.
+Build a click-through of one flow — paper screens, linked local files or a free tool’s share link — including one failure path, and record exactly what it fakes.
 
 
 ### Idea 1: A click-through needs no account for the person taking part: p…
@@ -1303,7 +1303,7 @@ Write your decision first, then the reason it fits this new case. Compare with t
 
 **New case.** Made-up case: you are prototyping a laundrette app flow for reserving a washing machine. Your linked screens show the machine list, a reservation screen and a confirmation. The data is six machines called Machine 1 to Machine 6, all free, all priced 3.50. The Pay with card button jumps straight to the confirmation, and the search bar does nothing.
 
-**Task:** Name the one change you would make before anyone tries this, and explain why it matters more than the others.
+**Task:** Name the change you would make first and what you would write on the fakes sheet, and explain why that change matters more than the others.
 
 <details>
 <summary>Compare after writing</summary>
@@ -1341,7 +1341,7 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: A clickable prototype without an account
-What I am trying to do: Build a clickable prototype of one flow from linked local files, including one failure path, and record exactly what it fakes.
+What I am trying to do: Build a click-through of one flow — paper screens, linked local files or a free tool’s share link — including one failure path, and record exactly what it fakes.
 
 Key idea or terms:
 Click-through: A set of screens joined so that tapping one takes you to the next. On paper you turn the sheets yourself; in a free tool the links do it.
@@ -1532,7 +1532,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Five tasks, none naming a control. “You want to do something on Saturday with your sister; find something and get to the point where you would pay” — success: reaching the review screen with a class selected, by any route. “Something has come up and you cannot attend the class you booked” — success: reaching the change or cancel route; alternative accepted: finding the phone number, with a note that this counts as a workaround rather than a success. The discovery-sensitive task ran first. A sixth task was cut because the session was already reaching forty minutes.
+- Five tasks, none naming a control. “You want to do something on Saturday with your sister; find something and get to the point where you would pay” — success: reaching the review screen with a class selected, by any route. “Something has come up and you cannot attend the class you booked” — success: reaching the change or cancel route; alternative accepted: finding the phone number, with a note that this counts as a workaround: accepted as reaching the goal, never counted as a clean success. The discovery-sensitive task ran first. A sixth task was cut because the session was already reaching forty minutes.
 
 
 ### Choose where you will do the work
@@ -2031,20 +2031,20 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You have eight good tasks. Should you run all eight?
+You have eight good tasks. Run by you, who know every answer, all eight take 35 minutes; a participant will take longer, and the slot is 45 minutes. Should you run all eight?
 
 - Run all eight with a short break halfway, which restores attention for the second half.
+- Cut to about five: at this length the last tasks would mostly measure tiredness, not the design.
 - Run all eight, since more tasks give more evidence and you can drop weak results later.
-- Cut to about five, since the last tasks would mostly measure tiredness rather than your design.
 
 <details>
 <summary>After your attempt</summary>
 
-Run all eight with a short break halfway, which restores attention for the second half. — A break helps and it does not restore the attention of the first ten minutes. Choosing which three to drop is harder and far more useful.
+Run all eight with a short break halfway, which restores attention for the second half. — A break helps, uses time the slot does not have, and does not restore the attention of the first ten minutes. Choosing which three to drop is harder and far more useful.
+
+Cut to about five: at this length the last tasks would mostly measure tiredness, not the design. — A participant slower than you would push all eight past the slot, and a tired person hurries, gives up sooner and is kinder about what they have already seen. That is evidence about the session, not about the design.
 
 Run all eight, since more tasks give more evidence and you can drop weak results later. — More evidence of falling quality, and you cannot tell afterwards which rows were affected. The extra rows look identical on the page and mean something different.
-
-Cut to about five, since the last tasks would mostly measure tiredness rather than your design. — A tired person hurries, gives up sooner and is kinder about what they have already seen. That is evidence about the session, not about the design.
 
 Improve: Cut your list in the order and cut fields in step 4 down to five, record what you removed and why, then note it in step 5.
 
@@ -2200,7 +2200,7 @@ Adequate evidence: A written destination per task plus acceptable alternative ro
 
 2 — Destinations, alternatives and abandonment all defined beforehand.
 
-3 — As adequate, and one workaround is marked as a note-worthy success rather than a clean one.
+3 — As adequate, and one workaround is marked as a workaround: accepted as reaching the goal, never counted as a clean success.
 
 Repair: For each task write what you would accept as done, including a route you did not design. Recheck: The success definitions.
 
@@ -2454,9 +2454,9 @@ Made-up example. Writing a consent introduction as one friendly sentence, then r
 
 **Reading it to the empty room:** I asked it the questions a person would ask back. Who hears it. What happens on my phone. When does it go away. My sentence answered none of the three.
 
-**The one I could not answer honestly:** I had been planning to send two minutes of the audio to the person reviewing my work. “Stays between us” was not true, and I had almost said it out loud.
+**The one I could not answer honestly:** My written summary of the session goes into my course record, which the person reviewing my work can read. “Stays between us” was not true, and I had almost said it out loud.
 
-**What I wrote instead:** Separate sentences. Audio only, not your screen and not your face. Heard by me, and a short clip may go to the person who reviews my work. Nothing is installed on your phone and I see only what you show me on it. Deleted within two weeks, sooner if you ask. You may say no to the recording and still take part.
+**What I wrote instead:** Separate sentences. Audio only, not your screen and not your face. Only I hear it, and it stays on my own device. A written summary with no names goes into my course record, which a reviewer can read. Nothing is installed on your phone and I see only what you show me on it. The recording is deleted within two weeks, sooner if you ask. You may say no to the recording and still take part.
 
 **What that did to the session:** The opening went from ten seconds to about two minutes, so I moved it in front of the timer and stopped treating it as a formality to get past.
 
@@ -2471,11 +2471,11 @@ Made-up example. Writing a consent introduction as one friendly sentence, then r
 
 Section: practice-plan. Stable action: write-consent-recording.
 
-Write your answer for “The sentences covering recording: what is recorded, who hears it, and that they may say no and still take part”. Use the task instructions below to decide what to include.
+Say it as it will happen: the recording stays on your own device and is deleted by the date you give; only a written summary with no names goes into your course record, which a reviewer can read.
 
 **Answer:** The sentences covering recording: what is recorded, who hears it, and that they may say no and still take part
 
-
+Say it as it will happen: the recording stays on your own device and is deleted by the date you give; only a written summary with no names goes into your course record, which a reviewer can read.
 
 
 ### The sentences covering their own device: that nothing is installed, and what you will and will not see
@@ -2967,11 +2967,11 @@ Section: learn. Stable action: learn-2.
 Answer a question with a question: “what would you expect that to do?”
 
 
-### Let people struggle up to the point of distress, then help and record it
+### Idea 3: Let people work through hesitation; step in as soon as struggl…
 
 Section: learn. Stable action: learn-3.
 
-Let people struggle up to the point of distress, then help and record it.
+Let people work through hesitation; step in as soon as struggle turns into distress or they ask to stop, then record exactly what you said.
 
 
 ### Ask about expectation before a screen changes, and confirmation after
@@ -2994,7 +2994,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- In the second session the participant stopped at the review screen and said “I suppose I press this?”. The moderator said “what would you expect it to do?” and waited. She answered “take my money, I think — but I don't know if the class is definitely mine yet”, which became the strongest finding of the study and would have been erased by a helpful “yes, that's the payment step”. Later she became visibly uncomfortable trying to find the cancellation route; after about ninety seconds the moderator helped, and the record noted the time, the words used and that everything after it was assisted.
+- In the second session the participant stopped at the review screen and said “I suppose I press this?”. The moderator said “what would you expect it to do?” and waited. She answered “take my money, I think — but I don't know if the class is definitely mine yet”, which became the strongest finding of the study and would have been erased by a helpful “yes, that's the payment step”. Later, after about ninety seconds of searching for the cancellation route, she became visibly uncomfortable, and the moderator helped at once; the record noted the time, the words used and that everything after it was assisted.
 
 
 ### Choose where you will do the work
@@ -3042,13 +3042,13 @@ Made-up example. A session where I answered a participant’s question and delet
 
 **What came back:** “Take my money, I think — but I don’t know if the class is definitely mine yet.” That sentence became the strongest finding of the study.
 
-**Where I did step in:** Later she became visibly uncomfortable hunting for the cancellation route. After about ninety seconds I helped, wrote down the time and my words, and marked everything after it as assisted.
+**Where I did step in:** After about ninety seconds of searching for the cancellation route she became visibly uncomfortable, and I helped at once, writing down the time and my words and marking everything after it as assisted.
 
 **Wrong turn:** The wrong turn is answering. It feels like courtesy and it is the one thing only you can do wrong, because the participant cannot un-hear it.
 
 **Trade-off:** Waiting is uncomfortable for both of you, and some participants will feel briefly stupid. You reduce that with your opening words, not by rescuing them mid-task.
 
-**Unknown:** Still unknown: whether ninety seconds was the right point to step in. There is no rule for it, so the time goes in the log and a reader can disagree with me.
+**Unknown:** Still unknown: whether ninety seconds of searching was already too long before her discomfort showed. There is no rule for it, so the time goes in the log and a reader can disagree with me.
 
 
 ### Try the distinction · 1 of 6
@@ -3313,7 +3313,7 @@ Every time you spoke beyond the task, with the time and your words, and the poin
 
 **Start here:** Go through the recording, or reconstruct honestly, and write down anything you said that was not the task or one of your three responses.
 
-**Enough:** The log includes at least one entry you are not proud of.
+**Enough:** Every time you spoke beyond the task is logged with its words and time, or the log says you checked your recording or notes and found none.
 
 **Intervention:** Anything you said beyond the task itself or one of your three prepared responses.
 
@@ -3769,7 +3769,7 @@ A prototype is a rough version made to answer a question before time is spent bu
 - **Problem:** A group of observations that you believe share a cause. Several moments can be one problem.
 - **Assisted completion:** A task the person finished after you helped. It is not a success and it is counted separately.
 
-**Quick example.** Two supplied problems from the same made-up study. A: all three participants hesitated at the word “Reserve” on the review screen, each read it twice, and one went back a screen before carrying on. Cost: a few seconds and some doubt. B: two of three could not tell whether their place was held before paying, and one said she would have paid a second time.
+**Quick example.** Two problems drawn from the supplied practice records at the start of this lesson. A: all three paused at the review screen: P1 for about ten seconds, P2 reading the word “Reserve” twice and going back a screen, P3 at Reserve. Cost: a few seconds and some doubt. B: two of three showed doubt about the booking at the point of paying: P1 asked “is the bike held while I pay?”, and P2 said “if it froze I’d just pay again.” Cost: a stated risk of paying twice; nobody actually paid twice.
 
 The reader demonstrates and guides the task before asking for “What your analysis rests on”.
 
@@ -3821,7 +3821,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Eleven observations became six problems. Two of three participants could not tell whether their place was held before payment — ranked first, because one of them said she would have paid again. Three of three hesitated at the same word on the review screen; grouped as one labelling problem, ranked second. One participant's confusion about the shortlist was left unexplained and moved to open questions rather than guessed at. Two task completions were marked assisted, which changed the picture: the unassisted completion rate on the cancellation task was zero of three.
+- Eleven observations became six problems. Two of three participants could not tell whether their place was held before payment — ranked first, because one of them said she would have paid again: a stated risk of losing money, not an observed loss. Three of three hesitated at the same word on the review screen; grouped as one labelling problem, ranked second. One participant's confusion about the shortlist was left unexplained and moved to open questions rather than guessed at. Two task completions were marked assisted, which changed the picture: the unassisted completion rate on the cancellation task was zero of three.
 
 
 ### Choose where you will do the work
@@ -4008,9 +4008,9 @@ Made-up example. Turning eleven observations into six problems, and getting the 
 
 **What I wrote instead:** Three of three hesitated at one word on the review screen. Two of three could not tell whether their place was held before paying.
 
-**The cost line:** The hesitation cost seconds and some doubt. Not knowing whether the place was held cost one person a second payment she said she would have made.
+**The cost line:** The hesitation cost seconds and some doubt. Not knowing whether the place was held risked a second payment, which one person said she would have made.
 
-**What that did to the order:** The hesitation looked far worse in the room, because I watched it three times. The other one cost money, so it went first and the hesitation went second.
+**What that did to the order:** The hesitation looked far worse in the room, because I watched it three times. The other one risked money, so it went first and the hesitation went second.
 
 **What I left alone:** One person kept returning to the shortlist and I have no idea why. It went to open questions rather than into a group I would have invented for it.
 
@@ -4034,7 +4034,7 @@ Write your answer for “Problem 1 · how many of how many people met it, what i
 <details>
 <summary>Example</summary>
 
-Example (made up): two of three could not tell whether their place was held before paying. Cost: one said she would have paid a second time. Evidence: her words at the review screen. No assisted completions in this one.
+Example (made up): two of three could not tell whether their place was held before paying. Cost: one said she would have paid a second time, which is stated, not observed. Evidence: her words at the review screen. No assisted completions in this one.
 
 </details>
 
@@ -4110,11 +4110,11 @@ The problems in order of cost to the person, with the reason the top one outrank
 
 Section: practice-plan. Stable action: step-4-try.
 
-Two supplied problems from the same made-up study. A: all three participants hesitated at the word “Reserve” on the review screen, each read it twice, and one went back a screen before carrying on. Cost: a few seconds and some doubt. B: two of three could not tell whether their place was held before paying, and one said she would have paid a second time.
+Two problems drawn from the supplied practice records at the start of this lesson. A: all three paused at the review screen: P1 for about ten seconds, P2 reading the word “Reserve” twice and going back a screen, P3 at Reserve. Cost: a few seconds and some doubt. B: two of three showed doubt about the booking at the point of paying: P1 asked “is the bike held while I pay?”, and P2 said “if it froze I’d just pay again.” Cost: a stated risk of paying twice; nobody actually paid twice.
 
 Which one belongs at the top of the ranking?
 
-- B, because the cost is money and a payment made twice.
+- B, because it risks money: one person said she would pay again.
 - A, because the hesitation was visible in every session and B was only what someone said.
 - A, because three of three met it and only two of three met B.
 - They rank equally, because both happen on the review screen.
@@ -4122,9 +4122,9 @@ Which one belongs at the top of the ranking?
 <details>
 <summary>After your attempt</summary>
 
-B, because the cost is money and a payment made twice. — Losing money is the worst thing that happened to anyone in this study. Ranking is by what it cost the person, and nothing in A costs more than seconds.
+B, because it risks money: one person said she would pay again. — Nobody actually paid twice; one person said she would pay again if it froze. A stated risk of losing money still outranks seconds of doubt, and the row should say the cost was stated, not observed.
 
-A, because the hesitation was visible in every session and B was only what someone said. — How visible a difficulty was is about your seat in the room. A sentence saying “I would have paid again” is evidence of a real cost, even though it was quiet.
+A, because the hesitation was visible in every session and B was only what someone said. — How visible a difficulty was is about your seat in the room. A sentence saying “I’d just pay again” is evidence of a real risk, even though it was quiet.
 
 A, because three of three met it and only two of three met B. — That is ranking by frequency. A common small cost stays below a rare large one, which is why the count and the cost are written in separate parts of the row.
 
@@ -4204,7 +4204,7 @@ One participant finished the cancellation task after you pointed at the menu; th
 
 Left out of the counts entirely, since an attempt you helped with was not a fair one. — The attempt is real evidence about how hard the route is to find. It stays in the record and out of the unassisted count.
 
-As an assisted completion, kept out of the unassisted count, which is then zero of three. — Separating the two counts changes the picture completely. Zero of three finishing alone is a different design than three of three finishing.
+As an assisted completion, kept out of the unassisted count, which is then zero of three. — Separating the two counts changes the picture completely. Zero of three finishing alone is a different design from one of three finishing.
 
 As a completion, with a note beside it saying you helped, so the count stays one of three. — A note beside a completion still leaves it in the success column, and the column is the part anyone reads.
 
@@ -4315,7 +4315,7 @@ Write your decision first, then the reason it fits this new case. Compare with t
 <summary>Compare after writing</summary>
 
 - Weak: Ranks the photo pause first because two of three met it, or lists liked the colours as a problem.
-- Adequate: Puts the price-field problem first because it cost one of three people real money, while the pause cost two of three about ten seconds; writes the counts as one of three and two of three, never as percentages.
+- Adequate: Puts the price-field problem first because it put real money at risk for one of three people, while the pause cost two of three about ten seconds; writes the counts as one of three and two of three, never as percentages.
 - Strong: As adequate, plus notes that three people cannot show how common either problem is, keeps the colour remark out as a preference, and names what would settle whether the dropped zero is a field fault or a reading slip.
 
 </details>
@@ -4355,7 +4355,7 @@ Problem: A group of observations that you believe share a cause. Several moments
 Assisted completion: A task the person finished after you helped. It is not a success and it is counted separately.
 
 Supplied practice material (fictional or labelled practice, not my research):
-Two supplied problems from the same made-up study. A: all three participants hesitated at the word “Reserve” on the review screen, each read it twice, and one went back a screen before carrying on. Cost: a few seconds and some doubt. B: two of three could not tell whether their place was held before paying, and one said she would have paid a second time.
+Two problems drawn from the supplied practice records at the start of this lesson. A: all three paused at the review screen: P1 for about ten seconds, P2 reading the word “Reserve” twice and going back a screen, P3 at Reserve. Cost: a few seconds and some doubt. B: two of three showed doubt about the booking at the point of paying: P1 asked “is the bike held while I pay?”, and P2 said “if it froze I’d just pay again.” Cost: a stated risk of paying twice; nobody actually paid twice.
 
 Activity: Ask me to make one prototype decision from the supplied case, name the question it can answer and state what it cannot test. Then point out one unsupported claim if I made one.
 
@@ -4518,11 +4518,11 @@ Section: learn. Stable action: learn-3.
 Sample-size guidance for quantitative work does not license qualitative claims.
 
 
-### If you must report a rate, attach an interval and show your inputs
+### Idea 4: If anyone asks for a rate, work its interval once and show you…
 
 Section: learn. Stable action: learn-4.
 
-If you must report a rate, attach an interval and show your inputs.
+If anyone asks for a rate, work its interval once and show your inputs; the width is usually the reason to report the count instead.
 
 
 ### Idea 5: Severity is a judgement you make; say so rather than implying…
@@ -4538,7 +4538,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The report's claims section said: three participants, recruited through one group, all comfortable with online payment; two could not tell whether their place was held; nobody completed the cancellation task unassisted; the review-screen wording confused all three. Its cannot-claim section said: nothing about how common these are, nothing about people who do not use online payment, nothing about performance or accessibility. One temptation was worked through: reporting “67 per cent unsure”. Two of three, by the adjusted method, gives a range from about 20 to about 94 per cent, which was shown once in the appendix to settle the question.
+- The report's claims section said: three participants, recruited through one group, all comfortable with online payment; two of three could not tell whether their place was held; nobody finished cancelling by the designed route without help (one assisted, one gave up, one used Help as a workaround); all three paused or re-read at the review screen, two of them at the word Reserve. Its cannot-claim section said: nothing about how common these are, nothing about people who do not use online payment, nothing about performance or accessibility. One temptation was worked through: reporting “67 per cent unsure”. Two of three, by the adjusted method, gives a range from about 20 to about 94 per cent, which was shown once in the appendix to settle the question.
 
 
 ### Choose where you will do the work
@@ -4812,11 +4812,11 @@ One rate worked through to a range, with your inputs, the published method you u
 
 Section: practice-plan. Stable action: write-interval-inputs.
 
-Write your answer for “The rate you were tempted to report, the numbers you put in, and the published method you used”. Use the task instructions below to decide what to include.
+The adjusted Wald method: add 2 to the successes and 4 to the total, then work p ± 1.96 × √(p(1 − p) / n) using the adjusted p and n, as in the step 2 demonstration.
 
 **Answer:** The rate you were tempted to report, the numbers you put in, and the published method you used
 
-
+The adjusted Wald method: add 2 to the successes and 4 to the total, then work p ± 1.96 × √(p(1 − p) / n) using the adjusted p and n, as in the step 2 demonstration.
 
 
 ### The range you got, written out
@@ -5170,7 +5170,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 - The value of a small usability test is discovery. Watching three people attempt a task reliably reveals blocking problems, and that is a strong result — it just is not a measurement. The distinction shows up in the sentence you write: “two of three participants could not tell whether their place was held” is defensible; “67 per cent of users are confused” is not, and no amount of care in running the session changes that.
 - The assigned sample-size reading is about quantitative studies with binary success metrics, and it says plainly that it does not cover surveys, card sorting or tree testing. It is included here so you can see what a study designed to measure would require, and so you do not borrow its numbers to justify a qualitative claim. The gap between the two is the point.
-- If a rate genuinely must appear — because someone insists — attach an interval and show the inputs. At n of five or eight the interval is wide enough to make the argument for you, and demonstrating that is more persuasive than refusing.
+- If someone insists on a rate, work its interval and show the inputs. At n of five or eight the interval is wide enough to make the argument for you: show it once, then report the count, which is more persuasive than refusing.
 - Severity rankings are your judgement, informed by what you saw. Presenting them as though they were measured is a small dishonesty that becomes a large one when a decision is made from it. Say “I ranked these by the cost I observed” rather than letting a numbered list imply a scale.
 
 [NN/g: sample sizes for quantitative studies](https://www.nngroup.com/articles/summary-quant-sample-sizes/).
@@ -5276,7 +5276,7 @@ Use your own material, or the labelled practice material below. Keep its source 
 - P1: paused about ten seconds at the review screen and asked “is the bike held while I pay?”. Tapped the search box, which does nothing in the prototype, and said “I think it’s broken.” Cancelling a booking: did not find the route; the moderator pointed at the menu after about ninety seconds, so that task is assisted.
 - P2: read the word Reserve twice and went back one screen before paying. Said “if it froze I’d just pay again.” Cancelling: looked for about two minutes, said she would phone instead, and stopped.
 - P3: picked the wrong Saturday because the date strip showed only weekday initials, and noticed only on the review screen. Paused at Reserve. Cancelling: found the route through the Help link, which counts as a workaround rather than a clean success.
-- Supplied practice re-test, also made up: after the review screen gained the line “Your bike is held for 10 minutes”, two new invented people tried the same tasks. One paid without asking anything. The other asked whether the ten minutes started now or at payment.
+- Supplied practice re-test, also made up: the review screen gains the line “Your bike is held for 10 minutes”, and two new invented people try the same tasks. Their result is given in step 3, beside the re-test records; write your prediction and failure condition in step 1 first.
 
 
 ### Choose and predict
@@ -5287,7 +5287,7 @@ The top problem, the single change, what should be observable if it works, and w
 
 - Take the top-ranked problem and decide the single change.
 - Write what should be observable if the repair works.
-- Write what would count as the repair failing.
+- Write what would count as the repair failing. On the supplied route, write both before you open the supplied result in step 3.
 
 **Start here:** Open your ranked list, take the top row, and write the smallest change that could address it.
 
@@ -5367,11 +5367,11 @@ Example (made up): neither new person asks whether the place is secured, and nei
 
 Section: practice-plan. Stable action: write-failure-condition.
 
-Write this now, while you still do not know. It is the half people leave out.
+Write this now, while you still do not know. It is the half people leave out. On the supplied route, write it before you read the supplied result in step 3.
 
 **Answer:** What would count as the repair failing
 
-Write this now, while you still do not know. It is the half people leave out.
+Write this now, while you still do not know. It is the half people leave out. On the supplied route, write it before you read the supplied result in step 3.
 
 
 ### Make one change
@@ -5466,11 +5466,11 @@ A rehearsal on yourself cannot test the repair, because you already know the ans
 
 Section: practice-plan. Stable action: write-retest-records.
 
-Keep full notes and any recording in a private local file or on paper, with a deletion date. Here, call people P1, P2 and so on, and leave out names, workplaces and details that point at someone; removing a name alone does not make a note anonymous.
+On the supplied practice route, the made-up result is: one new invented person paid without asking anything; the other asked whether the ten minutes started now or at payment. Record it here labelled as practice. Keep full notes and any recording in a private local file or on paper, with a deletion date. Here, call people P1, P2 and so on, and leave out names, workplaces and details that point at someone; removing a name alone does not make a note anonymous.
 
 **Answer:** For each re-test: expectation before each change, what happened, and every hesitation
 
-Keep full notes and any recording in a private local file or on paper, with a deletion date. Here, call people P1, P2 and so on, and leave out names, workplaces and details that point at someone; removing a name alone does not make a note anonymous.
+On the supplied practice route, the made-up result is: one new invented person paid without asking anything; the other asked whether the ten minutes started now or at payment. Record it here labelled as practice. Keep full notes and any recording in a private local file or on paper, with a deletion date. Here, call people P1, P2 and so on, and leave out names, workplaces and details that point at someone; removing a name alone does not make a note anonymous.
 
 
 ### Compare with the prediction
@@ -5624,7 +5624,7 @@ Nothing about it yet; wait until a second repair succeeds and then report both t
 
 That the repair needs further work before it can be fairly assessed by anyone. — That sentence describes a plan rather than a result, and it quietly hides the outcome. The result is that this change did not do it.
 
-That it failed, with the counts in one sentence, then what you now think the cause is. — A failed repair is a finding about the problem. It says your reading of the cause was wrong, which is more useful than a change nobody tested.
+That it failed, with the counts in one sentence, then what you now think the cause is. — A failed repair is a finding about the problem. It says either your reading of the cause or your change was wrong, and both are more useful to know than a change nobody tested.
 
 Improve: Write the failure as your outcome sentence in step 5, add what you now think the cause is, re-rank the remaining problems, then record the change.
 
@@ -5762,7 +5762,7 @@ Write your decision first, then the reason it fits this new case. Compare with t
 
 Section: practice. Stable action: review-work.
 
-Open Your work and choose Ready for review. The next lesson tests the questions a paper or clickable version could never reach.
+Open Your work and choose Ready for review. On the core path, the next lesson closes the project loop. The library lesson after this one tests what a paper or clickable version could never reach.
 
 
 <details>
@@ -5871,7 +5871,7 @@ Repair: Write the outcome sentence with the counts in it, then add anything the 
 </details>
 The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
-**Keep for later:** Open Your work and choose Ready for review. The next lesson tests the questions a paper or clickable version could never reach.
+**Keep for later:** Open Your work and choose Ready for review. On the core path, the next lesson closes the project loop. The library lesson after this one tests what a paper or clickable version could never reach.
 
 **Review criteria:**
 
@@ -6226,7 +6226,7 @@ What is the honest thing to record from the pair?
 
 Both, each with the conditions it came from, and the pressing-twice problem added to the list. — The two results are not in conflict. They answer different questions, and only the conditions written beside each one keep that clear.
 
-The second only, because it was closer to real conditions and so replaces the first. — The click-through still tells you the button is findable, which the crowded version cannot show. Throwing it away loses a result you already paid for.
+The second only, because it was closer to real conditions and so replaces the first. — The click-through is the clean reading of findability; the crowded run changed two things at once, so it cannot replace it. Throwing it away loses a result you already paid for.
 
 Neither yet: hold both until the same task can be run on a real build over a slow network. — Waiting for a build leaves you with nothing for weeks. Both results are usable as long as each carries what it was and what it was not.
 
@@ -6633,11 +6633,11 @@ Section: learn. Stable action: learn-2.
 You lose the why. What you gain is reach and scheduling freedom.
 
 
-### Remote moderated keeps the probing and loses the setting and the device
+### Idea 3: Remote moderated keeps the probing; you see only what they sha…
 
 Section: learn. Stable action: learn-3.
 
-Remote moderated keeps the probing and loses the setting and the device.
+Remote moderated keeps the probing; you see only what they share, not their hands, face or surroundings, and you cannot control their device or connection.
 
 
 ### Idea 4: Write instructions that cannot be misread; you will not be the…
@@ -6746,9 +6746,9 @@ Example (made up): can a person find the change-or-cancel route without help? I 
 
 Section: practice-plan. Stable action: step-2-brief.
 
-Instructions a stranger could follow with you nowhere nearby.
+Instructions a stranger could follow with you nowhere nearby, opening with the consent lines they read first.
 
-- Write the scenario, the goal and how to report the outcome.
+- Write the consent lines the person reads first, then the scenario, the goal and how to report the outcome.
 - Remove every word that assumes context only you have.
 - State what to do if something does not work.
 
@@ -6819,19 +6819,30 @@ Write your answer for “What you tell them to do if something does not work”.
 
 
 
+### The opening lines the person reads before the scenario: who you are, that this is for a course, that they must be 18 or over, that taking part is voluntary, what you collect, and when answers are deleted
+
+Section: practice-plan. Stable action: write-consent-line.
+
+Collect only the outcome and an optional comment, with no names or contact details. Say when you will delete the answers, and that they can stop at any point without giving a reason.
+
+**Answer:** The opening lines the person reads before the scenario: who you are, that this is for a course, that they must be 18 or over, that taking part is voluntary, what you collect, and when answers are deleted
+
+Collect only the outcome and an optional comment, with no names or contact details. Say when you will delete the answers, and that they can stop at any point without giving a reason.
+
+
 ### Test the wording
 
 Section: practice-plan. Stable action: step-3-brief.
 
 One read-aloud test, with the hesitations and the rewrites recorded.
 
-- Ask one person to read the instructions aloud and say what they would do.
+- Ask one person to read the instructions aloud and say what they would do. If nobody is available, wait a day, then read them aloud yourself as a stranger would, and label it a solo check.
 - Rewrite anything they hesitated over.
 - Repeat if the second reading still produces a misreading.
 
-**Start here:** Ask one person to read it aloud and narrate what they would do next. Say nothing at all while they do it. If there is nobody to ask, read it aloud yourself the next morning and note that no second reader ever saw it.
+**Start here:** Ask one person to read it aloud and narrate what they would do next. Say nothing at all while they do it. If there is nobody to ask, read it aloud yourself the next morning as a stranger would, and label it a solo check: no second reader ever saw it.
 
-**Enough:** You rewrote at least one sentence, and the old wording is still visible beside the new one.
+**Enough:** Each hesitation is written down with its rewrite beside it, or a clean reading is recorded as clean.
 
 **Read-aloud test:** Asking one person to read your instructions out loud and say what they would do next, while you say nothing at all.
 
@@ -7077,11 +7088,11 @@ Write your answer for “The reason either way: what you would learn, what it co
 
 Section: practice. Stable action: write-data-plan.
 
-Write your answer for “If you are running it: where answers arrive and where they are stored. If you have nobody to send it to: today’s date and what you tried.”. Use the task instructions below to decide what to include.
+Ask for no names or contact details. Keep answers privately with a deletion date, and save only a de-identified summary here.
 
 **Answer:** If you are running it: where answers arrive and where they are stored. If you have nobody to send it to: today’s date and what you tried.
 
-
+Ask for no names or contact details. Keep answers privately with a deletion date, and save only a de-identified summary here.
 
 
 ### What you changed after the Check questions
@@ -7166,7 +7177,7 @@ When the activity is finished, tell me to return to the course answer called “
 <summary>Optional hints and reference material</summary>
 
 - Mark each open question discovery or confirmation, then choose only from the second group.
-- Have someone read the instructions aloud and narrate what they would do. Rewrite every hesitation.
+- Have someone read the instructions aloud and narrate what they would do, or read them aloud yourself a day later as a labelled solo check. Rewrite every hesitation.
 
 - R05: [GOV.UK: moderated usability testing](https://www.gov.uk/service-manual/user-research/using-moderated-usability-testing) — Session planning, read for what moderation contributes and therefore what its absence removes. Purpose: Grounds the comparison between moderated and unmoderated approaches. Free reading, no account. Verified 2026-09-06. It is about moderated testing; the unmoderated trade-offs here are the course's own. Fallback: R12.
 - R04: [GOV.UK: analyse a research session](https://www.gov.uk/service-manual/user-research/analyse-a-research-session) — Turning observations into findings, read for what unmoderated data cannot supply. Purpose: Shows which parts of your analysis depend on data an unmoderated run does not produce. Free reading, no account. Verified 2026-09-06. Written for observed sessions; self-reported outcomes need more caution than it discusses. Fallback: R08.
@@ -7191,17 +7202,17 @@ Repair: Mark each open question discovery or confirmation, then choose only from
 
 **Instructions are self-contained and tested for misreading**
 
-Adequate evidence: Instructions rewritten after at least one read-aloud test, with the changes visible.
+Adequate evidence: Instructions read aloud at least once, with each rewrite visible beside the old wording, or the reading recorded as clean.
 
 0 — Untested instructions.
 
-1 — Read by someone without changes resulting.
+1 — Read aloud, with hesitations noted but nothing rewritten.
 
-2 — Tested and rewritten where hesitation occurred.
+2 — Tested by another reader, or alone and labelled a solo check, and rewritten where hesitation occurred.
 
 3 — As adequate, and a second read confirmed the rewrite resolved the misreading.
 
-Repair: Have someone read the instructions aloud and narrate what they would do. Rewrite every hesitation. Recheck: The tested instructions.
+Repair: Have someone read the instructions aloud and narrate what they would do, or read them aloud yourself a day later as a labelled solo check. Rewrite every hesitation. Recheck: The tested instructions.
 
 **The limits are written specifically**
 
@@ -7248,7 +7259,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 - Without a moderator, everything depends on the written instructions. Ambiguity that a person would resolve with one question becomes a silent failure that looks like a design problem, so the task wording needs testing before the study runs, ideally with one person in front of you.
 - The trade is straightforward: you gain reach, timing flexibility and people outside your network; you lose the follow-up question, the hesitation you would have noticed and the ability to recover a derailed session. For discovering why something fails, that loss is decisive; for checking whether a specific route is findable, it may not matter.
-- Remote moderated sessions sit in between: you keep probing but lose the setting, the real device and often the ability to see what their hands are doing. For a product where people book on a shared phone in a noisy room, the setting was the finding, and losing it changes what the study can see.
+- Remote moderated sessions sit in between: you keep probing, but you see only what the person shares from their own device, usually not their hands, face or surroundings, and you cannot control their device or connection. For a product where people book on a shared phone in a noisy room, the setting was the finding, and losing it changes what the study can see.
 - Decide by the question, not by convenience. Reaching more people does not improve a discovery study, and a confirmation question — can people find this route — is often better served by more participants attempting it than by three watched closely.
 
 [GOV.UK: moderated usability testing](https://www.gov.uk/service-manual/user-research/using-moderated-usability-testing).
@@ -7332,7 +7343,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Two pages. First paragraph: hold the payment work and fix the held-place uncertainty first, because two of three participants could not tell whether their place was secured and one said she would have paid twice. Then four findings, each with counts and a quotation. Then the repair result, reported as partial. Then limits: three participants from one group, all comfortable with online payment; a click-through with faked search and account controls; nothing tested on a real connection except the payment wait; no accessibility testing. Then one non-recommendation: do not build the reminder feature, because nobody's difficulty was forgetting.
+- Two pages. First paragraph: hold the payment work and fix the held-place uncertainty first, because two of three participants could not tell whether their place was secured and one said she would have paid twice. Then four findings, each with counts and a quotation. Then the repair result, reported as partial. Then limits: three participants from one group, all comfortable with online payment; a click-through with faked search and account controls; nothing tested on a real connection, and the payment wait was staged at a fixed four seconds, so it says nothing about real payment times; no accessibility testing. Then one non-recommendation: do not build the reminder feature, because nobody's difficulty was forgetting.
 
 
 ### Choose where you will do the work
@@ -7386,7 +7397,7 @@ Made-up example. Writing the report in the order it happened, and watching nobod
 
 **The rewrite:** One paragraph at the top: hold the payment work and fix the held-place uncertainty first, because two of three could not tell whether their place was secured.
 
-**What it cost:** Nine pages became two. Four sessions of detail went into a folder nobody has opened since, which is where they belong.
+**What it cost:** Nine pages became two. Four sessions of detail stayed in my private notes until their deletion date, which is where they belonged.
 
 **Wrong turn:** The wrong turn is leading with the method, because the method is the part you are least sure of and most want to defend. It is also the part a reader is willing to trust you with.
 
@@ -7680,7 +7691,7 @@ Fifteen thorough pages, or two pages with the decision first. Which one changes 
 <details>
 <summary>After your attempt</summary>
 
-Fifteen pages, since a complete record of every session is much harder to argue with. — Nobody argues with it because nobody reaches the end. The raw material still sits in your folder if anyone asks for it.
+Fifteen pages, since a complete record of every session is much harder to argue with. — Nobody argues with it because nobody reaches the end. The de-identified session records stay in your worksheets if anyone asks.
 
 Two pages, since length cuts the chance anyone finishes, and an unread decision changes nothing. — Thoroughness protects you from being questioned. It does not get the change made, and the two are easy to confuse while you are writing.
 
@@ -7763,7 +7774,7 @@ A report readable by someone who was not there, and the repair the Check questio
 
 - Read it as someone who was not there; remove anything they could not follow.
 - Anonymise quotations and check nothing identifies a participant.
-- Save the report and file the raw material where it can be produced.
+- Save the report. Keep raw notes and recordings private and apart from it until the deletion date you promised, then delete them; your de-identified records are what you can produce later.
 
 **Start here:** Read it aloud once as a person who has never heard of the project.
 
@@ -8177,7 +8188,7 @@ Section: practice-plan. Stable action: step-2-sort-2.
 
 Six made up lines from somebody else’s portfolio page. None of them are yours and none of them happened. For each, say what backs it: evidence she holds, a rehearsal or supplied practice material, or nothing at all.
 
-I tested the loading wait by asking my flatmate to hold the paper screen face down and count four seconds. She pressed the button twice.
+I tested the wait on myself: my flatmate held the paper screen face down and counted four seconds, and I pressed the button twice.
 
 - evidence you hold
 - rehearsal or supplied material
@@ -8186,11 +8197,11 @@ I tested the loading wait by asking my flatmate to hold the paper screen face do
 <details>
 <summary>After your attempt</summary>
 
-evidence you hold — She did watch a person press twice, and nothing loaded and nothing was slow. Written up as a loading test, this becomes a claim about something that never happened.
+evidence you hold — She was the one pressing, she knew the wait was staged, and nothing loaded. A run on yourself is a rehearsal; written up as a loading test, it becomes a claim about something that never happened.
 
-rehearsal or supplied material — A staged wait with a person counting. It shows the shape of a problem, and the label says what it was.
+rehearsal or supplied material — A staged wait run on herself, with a person counting. It shows the shape of a problem, and the label says what it was.
 
-not backed — Something did happen and she watched it. What it cannot do is stand as a test of a real connection.
+not backed — Something did happen and she can describe it. What it cannot do is stand as a test of a real connection, or of anyone but her.
 
 Go through your own trail and put one of these three labels beside every line.
 
@@ -8571,7 +8582,7 @@ Section: practice. Stable action: step-5-brief.
 Every link in the trail able to be produced, and the repair the Check questions asked for.
 
 - Store the artefacts so each link in the trail can be produced.
-- Keep raw participant material private and separate.
+- Keep raw participant material private and separate, and delete it by the date you promised.
 - Save the trail, scope and summary together.
 
 **Start here:** Walk your own trail and try to open each artefact in turn.
@@ -8580,7 +8591,7 @@ Every link in the trail able to be produced, and the repair the Check questions 
 
 **File map:** A list saying where each thing in the trail is kept, so any link in it can be produced when somebody asks.
 
-**Raw participant material:** Recordings, notes and anything else with a real person in it, kept apart from the trail and private.
+**Raw participant material:** Recordings, notes and anything else with a real person in it, kept apart from the trail, private, and deleted by the date you promised.
 
 
 ### Where each artefact in the trail lives, so any link in it can be produced

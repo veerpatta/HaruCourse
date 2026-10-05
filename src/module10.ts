@@ -113,7 +113,7 @@ export const module10: Lesson[] = [
         instructions: [
           "Read the assigned guidance on choosing prototype fidelity.",
           "List the open questions from m07 and m09 you still cannot answer.",
-          "Mark which are about order, flow or timing.",
+          "Mark which are about wording and order, moving between screens, a wait people sit through, or real loading and real content.",
         ],
       },
       {
@@ -278,7 +278,7 @@ export const module10: Lesson[] = [
     guided: true,
     title: "A clickable prototype without an account",
     objective:
-      "Build a clickable prototype of one flow from linked local files, including one failure path, and record exactly what it fakes.",
+      "Build a click-through of one flow — paper screens, linked local files or a free tool’s share link — including one failure path, and record exactly what it fakes.",
     bringForward:
       "Your m08 screens and the flow chosen in lesson 1.",
     prerequisite: "Your chosen flow and its screens.",
@@ -499,7 +499,7 @@ export const module10: Lesson[] = [
     misconception:
       "“Longer tests give more data.” They give more data of declining quality. A tired participant behaves differently, and the last two tasks in a long session tell you about fatigue as much as about your design.",
     example:
-      "Five tasks, none naming a control. “You want to do something on Saturday with your sister; find something and get to the point where you would pay” — success: reaching the review screen with a class selected, by any route. “Something has come up and you cannot attend the class you booked” — success: reaching the change or cancel route; alternative accepted: finding the phone number, with a note that this counts as a workaround rather than a success. The discovery-sensitive task ran first. A sixth task was cut because the session was already reaching forty minutes.",
+      "Five tasks, none naming a control. “You want to do something on Saturday with your sister; find something and get to the point where you would pay” — success: reaching the review screen with a class selected, by any route. “Something has come up and you cannot attend the class you booked” — success: reaching the change or cancel route; alternative accepted: finding the phone number, with a note that this counts as a workaround: accepted as reaching the goal, never counted as a clean success. The discovery-sensitive task ran first. A sixth task was cut because the session was already reaching forty minutes.",
     freeToolPath:
       "Written work: the tasks on paper or in a text file, with the success definitions beside them. Nothing else is needed.",
     outputs: [
@@ -600,7 +600,7 @@ export const module10: Lesson[] = [
           "No definitions.",
           "Destinations without alternatives.",
           "Destinations, alternatives and abandonment all defined beforehand.",
-          "As adequate, and one workaround is marked as a note-worthy success rather than a clean one.",
+          "As adequate, and one workaround is marked as a workaround: accepted as reaching the goal, never counted as a clean success.",
         ],
         remediation:
           "For each task write what you would accept as done, including a route you did not design.",
@@ -887,7 +887,7 @@ export const module10: Lesson[] = [
     teach: [
       "Give the task, then stop talking. Silence is the instrument.",
       "Answer a question with a question: “what would you expect that to do?”",
-      "Let people struggle up to the point of distress, then help and record it.",
+      "Let people work through hesitation; step in as soon as struggle turns into distress or they ask to stop, then record exactly what you said.",
       "Ask about expectation before a screen changes, and confirmation after.",
       "Never defend the design; you are collecting evidence, not selling.",
     ],
@@ -900,7 +900,7 @@ export const module10: Lesson[] = [
     misconception:
       "“A good session is one where the participant succeeds.” A session where everything works and nobody hesitates has told you little. Failures, hesitations and wrong expectations are the output; smoothness is pleasant and uninformative.",
     example:
-      "In the second session the participant stopped at the review screen and said “I suppose I press this?”. The moderator said “what would you expect it to do?” and waited. She answered “take my money, I think — but I don't know if the class is definitely mine yet”, which became the strongest finding of the study and would have been erased by a helpful “yes, that's the payment step”. Later she became visibly uncomfortable trying to find the cancellation route; after about ninety seconds the moderator helped, and the record noted the time, the words used and that everything after it was assisted.",
+      "In the second session the participant stopped at the review screen and said “I suppose I press this?”. The moderator said “what would you expect it to do?” and waited. She answered “take my money, I think — but I don't know if the class is definitely mine yet”, which became the strongest finding of the study and would have been erased by a helpful “yes, that's the payment step”. Later, after about ninety seconds of searching for the cancellation route, she became visibly uncomfortable, and the moderator helped at once; the record noted the time, the words used and that everything after it was assisted.",
     freeToolPath:
       "Your prepared materials, a phone recorder if consented, and a note sheet. Nothing else; a moderator with a laptop between them and the participant sees less.",
     outputs: [
@@ -1099,7 +1099,7 @@ export const module10: Lesson[] = [
     misconception:
       "“Three participants found three different problems, so the design has three problems.” It may have one problem that presents differently, or five of which you saw three. Both readings matter, and the analysis should state which you believe and why.",
     example:
-      "Eleven observations became six problems. Two of three participants could not tell whether their place was held before payment — ranked first, because one of them said she would have paid again. Three of three hesitated at the same word on the review screen; grouped as one labelling problem, ranked second. One participant's confusion about the shortlist was left unexplained and moved to open questions rather than guessed at. Two task completions were marked assisted, which changed the picture: the unassisted completion rate on the cancellation task was zero of three.",
+      "Eleven observations became six problems. Two of three participants could not tell whether their place was held before payment — ranked first, because one of them said she would have paid again: a stated risk of losing money, not an observed loss. Three of three hesitated at the same word on the review screen; grouped as one labelling problem, ranked second. One participant's confusion about the shortlist was left unexplained and moved to open questions rather than guessed at. Two task completions were marked assisted, which changed the picture: the unassisted completion rate on the cancellation task was zero of three.",
     freeToolPath:
       "Cards or a table: one observation per line, grouped by cause. Photograph the grouping. No analysis software is needed at this size and none would help.",
     outputs: [
@@ -1287,19 +1287,19 @@ export const module10: Lesson[] = [
       "A handful of participants reliably surfaces problems, not their prevalence.",
       "Never convert three participants into a percentage.",
       "Sample-size guidance for quantitative work does not license qualitative claims.",
-      "If you must report a rate, attach an interval and show your inputs.",
+      "If anyone asks for a rate, work its interval once and show your inputs; the width is usually the reason to report the count instead.",
       "Severity is a judgement you make; say so rather than implying it was measured.",
     ],
     explanation: [
       "The value of a small usability test is discovery. Watching three people attempt a task reliably reveals blocking problems, and that is a strong result — it just is not a measurement. The distinction shows up in the sentence you write: “two of three participants could not tell whether their place was held” is defensible; “67 per cent of users are confused” is not, and no amount of care in running the session changes that.",
       "The assigned sample-size reading is about quantitative studies with binary success metrics, and it says plainly that it does not cover surveys, card sorting or tree testing. It is included here so you can see what a study designed to measure would require, and so you do not borrow its numbers to justify a qualitative claim. The gap between the two is the point.",
-      "If a rate genuinely must appear — because someone insists — attach an interval and show the inputs. At n of five or eight the interval is wide enough to make the argument for you, and demonstrating that is more persuasive than refusing.",
+      "If someone insists on a rate, work its interval and show the inputs. At n of five or eight the interval is wide enough to make the argument for you: show it once, then report the count, which is more persuasive than refusing.",
       "Severity rankings are your judgement, informed by what you saw. Presenting them as though they were measured is a small dishonesty that becomes a large one when a decision is made from it. Say “I ranked these by the cost I observed” rather than letting a numbered list imply a scale.",
     ],
     misconception:
       "“Five users find 85 per cent of problems.” That figure comes from specific studies under specific assumptions, and it is routinely quoted as though it applied to any test of anything. Your honest claim is what you saw, with the participant count beside it.",
     example:
-      "The report's claims section said: three participants, recruited through one group, all comfortable with online payment; two could not tell whether their place was held; nobody completed the cancellation task unassisted; the review-screen wording confused all three. Its cannot-claim section said: nothing about how common these are, nothing about people who do not use online payment, nothing about performance or accessibility. One temptation was worked through: reporting “67 per cent unsure”. Two of three, by the adjusted method, gives a range from about 20 to about 94 per cent, which was shown once in the appendix to settle the question.",
+      "The report's claims section said: three participants, recruited through one group, all comfortable with online payment; two of three could not tell whether their place was held; nobody finished cancelling by the designed route without help (one assisted, one gave up, one used Help as a workaround); all three paused or re-read at the review screen, two of them at the word Reserve. Its cannot-claim section said: nothing about how common these are, nothing about people who do not use online payment, nothing about performance or accessibility. One temptation was worked through: reporting “67 per cent unsure”. Two of three, by the adjusted method, gives a range from about 20 to about 94 per cent, which was shown once in the appendix to settle the question.",
     freeToolPath:
       "Written work plus a spreadsheet or calculator for the interval. The interval reading gives no formulas, so use a published one, show your inputs and state which you used.",
     outputs: [
@@ -1515,7 +1515,7 @@ export const module10: Lesson[] = [
         instructions: [
           "Take the top-ranked problem and decide the single change.",
           "Write what should be observable if the repair works.",
-          "Write what would count as the repair failing.",
+          "Write what would count as the repair failing. On the supplied route, write both before you open the supplied result in step 3.",
         ],
       },
       {
@@ -1885,14 +1885,14 @@ export const module10: Lesson[] = [
     teach: [
       "Unmoderated means no probing: the instructions must carry everything.",
       "You lose the why. What you gain is reach and scheduling freedom.",
-      "Remote moderated keeps the probing and loses the setting and the device.",
+      "Remote moderated keeps the probing; you see only what they share, not their hands, face or surroundings, and you cannot control their device or connection.",
       "Write instructions that cannot be misread; you will not be there to clarify.",
       "Decide by question: discovery needs moderation, confirmation may not.",
     ],
     explanation: [
       "Without a moderator, everything depends on the written instructions. Ambiguity that a person would resolve with one question becomes a silent failure that looks like a design problem, so the task wording needs testing before the study runs, ideally with one person in front of you.",
       "The trade is straightforward: you gain reach, timing flexibility and people outside your network; you lose the follow-up question, the hesitation you would have noticed and the ability to recover a derailed session. For discovering why something fails, that loss is decisive; for checking whether a specific route is findable, it may not matter.",
-      "Remote moderated sessions sit in between: you keep probing but lose the setting, the real device and often the ability to see what their hands are doing. For a product where people book on a shared phone in a noisy room, the setting was the finding, and losing it changes what the study can see.",
+      "Remote moderated sessions sit in between: you keep probing, but you see only what the person shares from their own device, usually not their hands, face or surroundings, and you cannot control their device or connection. For a product where people book on a shared phone in a noisy room, the setting was the finding, and losing it changes what the study can see.",
       "Decide by the question, not by convenience. Reaching more people does not improve a discovery study, and a confirmation question — can people find this route — is often better served by more participants attempting it than by three watched closely.",
     ],
     misconception:
@@ -1920,7 +1920,7 @@ export const module10: Lesson[] = [
         minutes: 30,
         title: "Write self-contained instructions",
         instructions: [
-          "Write the scenario, the goal and how to report the outcome.",
+          "Write the consent lines the person reads first, then the scenario, the goal and how to report the outcome.",
           "Remove every word that assumes context only you have.",
           "State what to do if something does not work.",
         ],
@@ -1929,7 +1929,7 @@ export const module10: Lesson[] = [
         minutes: 25,
         title: "Test the wording",
         instructions: [
-          "Ask one person to read the instructions aloud and say what they would do.",
+          "Ask one person to read the instructions aloud and say what they would do. If nobody is available, wait a day, then read them aloud yourself as a stranger would, and label it a solo check.",
           "Rewrite anything they hesitated over.",
           "Repeat if the second reading still produces a misreading.",
         ],
@@ -1966,7 +1966,7 @@ export const module10: Lesson[] = [
       {
         question: "What does remote moderated lose compared with in person?",
         answer:
-          "The setting and often the real device, plus what a person's hands are doing. If the setting was where your findings came from, that loss changes the study.",
+          "Sight of the setting, the person's hands and often their face: you see only what they share, and you cannot control their device or connection. If the setting was where your findings came from, that loss changes the study.",
       },
     ],
     rubric: [
@@ -1993,15 +1993,15 @@ export const module10: Lesson[] = [
       {
         criterion: "Instructions are self-contained and tested for misreading",
         evidence:
-          "Instructions rewritten after at least one read-aloud test, with the changes visible.",
+          "Instructions read aloud at least once, with each rewrite visible beside the old wording, or the reading recorded as clean.",
         levels: [
           "Untested instructions.",
-          "Read by someone without changes resulting.",
-          "Tested and rewritten where hesitation occurred.",
+          "Read aloud, with hesitations noted but nothing rewritten.",
+          "Tested by another reader, or alone and labelled a solo check, and rewritten where hesitation occurred.",
           "As adequate, and a second read confirmed the rewrite resolved the misreading.",
         ],
         remediation:
-          "Have someone read the instructions aloud and narrate what they would do. Rewrite every hesitation.",
+          "Have someone read the instructions aloud and narrate what they would do, or read them aloud yourself a day later as a labelled solo check. Rewrite every hesitation.",
         recheck: "The tested instructions.",
       },
       {
@@ -2097,7 +2097,7 @@ export const module10: Lesson[] = [
     misconception:
       "“The report should be thorough so nobody can question it.” Length reduces the chance anyone acts. Two pages with the decision first, the counts attached and the limits stated will change more than fifteen pages of session narrative.",
     example:
-      "Two pages. First paragraph: hold the payment work and fix the held-place uncertainty first, because two of three participants could not tell whether their place was secured and one said she would have paid twice. Then four findings, each with counts and a quotation. Then the repair result, reported as partial. Then limits: three participants from one group, all comfortable with online payment; a click-through with faked search and account controls; nothing tested on a real connection except the payment wait; no accessibility testing. Then one non-recommendation: do not build the reminder feature, because nobody's difficulty was forgetting.",
+      "Two pages. First paragraph: hold the payment work and fix the held-place uncertainty first, because two of three participants could not tell whether their place was secured and one said she would have paid twice. Then four findings, each with counts and a quotation. Then the repair result, reported as partial. Then limits: three participants from one group, all comfortable with online payment; a click-through with faked search and account controls; nothing tested on a real connection, and the payment wait was staged at a fixed four seconds, so it says nothing about real payment times; no accessibility testing. Then one non-recommendation: do not build the reminder feature, because nobody's difficulty was forgetting.",
     freeToolPath:
       "Plain text or Markdown, two pages. If you present it aloud, six slides at most; the constraint is what forces the decision to the front.",
     outputs: [
@@ -2148,7 +2148,7 @@ export const module10: Lesson[] = [
         instructions: [
           "Read it as someone who was not there; remove anything they could not follow.",
           "Anonymise quotations and check nothing identifies a participant.",
-          "Save the report and file the raw material where it can be produced.",
+          "Save the report. Keep raw notes and recordings private and apart from it until the deletion date you promised, then delete them; your de-identified records are what you can produce later.",
         ],
       },
     ],
@@ -2348,7 +2348,7 @@ export const module10: Lesson[] = [
         title: "File everything",
         instructions: [
           "Store the artefacts so each link in the trail can be produced.",
-          "Keep raw participant material private and separate.",
+          "Keep raw participant material private and separate, and delete it by the date you promised.",
           "Save the trail, scope and summary together.",
         ],
       },

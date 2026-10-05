@@ -687,7 +687,7 @@ Write your decision first, then the reason it fits this new case. Compare with t
 
 Section: practice. Stable action: review-work.
 
-Open Your work and choose Ready for review. The next lesson maps these five barriers onto the standard, so keep them exactly as they are.
+Open Your work and choose Ready for review. Keep these five barriers as they are: later lessons in this module check them one by one, and the library lesson Using the standard maps them to WCAG criteria.
 
 
 <details>
@@ -796,7 +796,7 @@ Repair: For each barrier ask whether the person can finish the task another way.
 </details>
 The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
-**Keep for later:** Open Your work and choose Ready for review. The next lesson maps these five barriers onto the standard, so keep them exactly as they are.
+**Keep for later:** Open Your work and choose Ready for review. Keep these five barriers as they are: later lessons in this module check them one by one, and the library lesson Using the standard maps them to WCAG criteria.
 
 **Review criteria:**
 
@@ -894,7 +894,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Five barriers mapped to five criteria. Colour-only availability mapped to the use-of-colour criterion, and meeting it here meant adding a text label beside the dot. The swipe-only removal mapped to the keyboard criterion: every function available from a keyboard, met by adding a visible control with a key route. The 3.1:1 caption mapped to contrast (minimum), met by darkening the text and re-measuring. The adjacent destructive control mapped to target size, met by increasing spacing. The English-only date format mapped to a language and localisation concern the standard covers only partly, so the lesson recorded it as a product requirement rather than a criterion.
+- Five barriers mapped to five criteria. Colour-only availability mapped to the use-of-colour criterion, and meeting it here meant adding a text label beside the dot. The swipe-only removal mapped to pointer gestures (2.5.1) and keyboard (2.1.1): anything done by swiping must also work with a single tap and from a keyboard, met by adding a visible Remove button. The 3.1:1 caption mapped to contrast (minimum), met by darkening the text and re-measuring. The adjacent destructive control mapped to target size (2.5.8) because the cancel icon was only 20 pixels square; below 24 by 24, spacing counts, and four pixels was not enough, so the target was enlarged to 24 by 24. The mis-tap risk itself was recorded as a product requirement. The English-only date format mapped to a language and localisation concern the standard covers only partly, so the lesson recorded it as a product requirement rather than a criterion.
 
 
 ### Choose where you will do the work
@@ -988,15 +988,15 @@ Made-up example. Looking for the criterion that covers a swipe-only remove contr
 
 **What I changed:** I went back to the barrier and asked one question: what can this person not do? Not see, not work, or not understand? Swiping is working a control, so this is operable.
 
-**Where that put me:** Filtered to operable, at levels A and AA, there are far fewer criteria. The keyboard criterion says every function is available from a keyboard. That is exactly my barrier.
+**Where that put me:** Filtered to operable, at levels A and AA, there are far fewer criteria. Pointer gestures, 2.5.1, says anything done with a swipe must also work with a single tap, with no path to trace. That is exactly my barrier, and keyboard, 2.1.1, applies too.
 
-**What I wrote:** “Swipe-only removal · keyboard, 2.1.1 · every function can be worked from a keyboard.” Two minutes, once I asked the right question first.
+**What I wrote:** “Swipe-only removal · pointer gestures, 2.5.1, and keyboard, 2.1.1 · a visible Remove button that works with one tap and from the keyboard.” Two minutes, once I asked the right question first.
 
 **Wrong turn:** The wrong turn is starting in the standard rather than in the barrier. It feels thorough and it produces a compliance pass: a lot of reading, and no change to the thing that excludes somebody.
 
 **Trade-off:** Filtering from your barriers means you will not read most of the standard, and there are certainly criteria you are failing that no barrier of yours named. That is a real gap, and it is smaller than the gap left by reading everything and mapping nothing.
 
-**Unknown:** Still unknown: whether one criterion is enough for this barrier. A swipe-only control may also fail target size or pointer gestures, and I have not checked.
+**Unknown:** Still unknown: whether these two criteria are enough for this barrier. The new Remove button may also fail target size, and I have not checked.
 
 
 ### Try the distinction · 1 of 6
@@ -1490,7 +1490,7 @@ Write your decision first, then the reason it fits this new case. Compare with t
 
 - Weak: Copies criterion text without naming a change, or says the site conforms once the mapping is written.
 - Adequate: Operable; timing adjustable (2.2.1) or pause, stop, hide (2.2.2). Meeting it means a visible, keyboard-reachable pause, or a setting to turn the advance off or lengthen it.
-- Strong: As adequate, plus the coloured ring mapped separately to use of colour (1.4.1, perceivable), and a sentence saying the mapping is design intent rather than tested conformance.
+- Strong: As adequate, plus the timer ring mapped separately: it needs a text equivalent such as 12 seconds left (non-text content, 1.1.1), and use of colour (1.4.1) applies only if its colour changes meaning; and a sentence saying the mapping is design intent rather than tested conformance.
 
 </details>
 
@@ -1671,11 +1671,11 @@ Section: learn. Stable action: welcome.
 Give two screens a correct heading outline, named regions and a reading order that matches the visual order, and verify each with a check you can run yourself.
 
 
-### One page title, then headings nested without skipping levels
+### Idea 1: One top-level heading naming the page (separate from the brows…
 
 Section: learn. Stable action: learn-1.
 
-One page title, then headings nested without skipping levels.
+One top-level heading naming the page (separate from the browser-tab title), then headings nested without skipping levels.
 
 
 ### Idea 2: Regions let someone jump straight to the main content instead…
@@ -1822,7 +1822,7 @@ Made-up example. Fixing the outline of a class detail screen, where the levels h
 
 Section: practice-plan. Stable action: step-2-sort-1.
 
-Six headings from a made up tool-library screen. For each one, decide what kind of heading it is.
+Six headings from a made up page called Borrowing a cordless drill. For each one, decide what kind of heading it is.
 
 What you need to bring
 
@@ -1848,7 +1848,7 @@ Now read your own two outlines and mark each heading with one of the three. Anyt
 
 Section: practice-plan. Stable action: step-2-sort-2.
 
-Six headings from a made up tool-library screen. For each one, decide what kind of heading it is.
+Six headings from a made up page called Borrowing a cordless drill. For each one, decide what kind of heading it is.
 
 Details
 
@@ -1874,9 +1874,9 @@ Now read your own two outlines and mark each heading with one of the three. Anyt
 
 Section: practice-plan. Stable action: step-2-sort-3.
 
-Six headings from a made up tool-library screen. For each one, decide what kind of heading it is.
+Six headings from a made up page called Borrowing a cordless drill. For each one, decide what kind of heading it is.
 
-Northside Tool Library
+Safety checks before you use it
 
 - describes its own section
 - could sit above anything
@@ -1885,11 +1885,11 @@ Northside Tool Library
 <details>
 <summary>After your attempt</summary>
 
-describes its own section — Nothing is underneath it in particular. It is naming the place rather than a part of it.
+describes its own section — It names one part of the page, so a reader knows whether to stop here or move on.
 
-could sit above anything — It is specific. The difficulty is that it is specific about the whole thing.
+could sit above anything — It names one specific part and would be wrong above the opening hours or the late-return rules.
 
-describes the whole page — This is a page title. There should be exactly one, and a second one sends a reader looking for a page they have not left.
+describes the whole page — The page is about borrowing the drill; the safety checks are one part of it. A second whole-page heading sends a reader looking for a page they have not left.
 
 Now read your own two outlines and mark each heading with one of the three. Anything in the middle group gets rewritten.
 
@@ -1900,7 +1900,7 @@ Now read your own two outlines and mark each heading with one of the three. Anyt
 
 Section: practice-plan. Stable action: step-2-sort-4.
 
-Six headings from a made up tool-library screen. For each one, decide what kind of heading it is.
+Six headings from a made up page called Borrowing a cordless drill. For each one, decide what kind of heading it is.
 
 More information
 
@@ -1926,7 +1926,7 @@ Now read your own two outlines and mark each heading with one of the three. Anyt
 
 Section: practice-plan. Stable action: step-2-sort-5.
 
-Six headings from a made up tool-library screen. For each one, decide what kind of heading it is.
+Six headings from a made up page called Borrowing a cordless drill. For each one, decide what kind of heading it is.
 
 If you return a tool late
 
@@ -1952,7 +1952,7 @@ Now read your own two outlines and mark each heading with one of the three. Anyt
 
 Section: practice-plan. Stable action: step-2-sort-6.
 
-Six headings from a made up tool-library screen. For each one, decide what kind of heading it is.
+Six headings from a made up page called Borrowing a cordless drill. For each one, decide what kind of heading it is.
 
 Borrowing a cordless drill
 
@@ -1963,11 +1963,11 @@ Borrowing a cordless drill
 <details>
 <summary>After your attempt</summary>
 
-describes its own section — It could be, on a longer page about borrowing generally. On a page about this one drill it is the subject of the whole thing.
+describes its own section — It could be, on a longer page about borrowing generally. On this page about the one drill it is the subject of the whole thing.
 
 could sit above anything — It is entirely specific, which is why the choice here is between the other two.
 
-describes the whole page — On a page about borrowing this drill, this is the page title. Deciding that is the point: the same words are a section heading somewhere else.
+describes the whole page — On a page about borrowing this drill, this is the one top-level heading, and there should be exactly one. Deciding that is the point: the same words are a section heading somewhere else.
 
 Now read your own two outlines and mark each heading with one of the three. Anything in the middle group gets rewritten.
 
@@ -2801,7 +2801,7 @@ Section: practice-plan. Stable action: step-3-brief.
 
 The screens opened again at about 200 per cent text, every breakage named, and containers changed so the text is not shrunk back.
 
-- Set text to about 200 per cent and reload the screens.
+- In a browser, press Ctrl and + (Cmd and + on a Mac) until the zoom reads 200% (in Firefox, first choose View > Zoom > Zoom Text Only). In a design file, double every text style and let frames hug their content. Then record what breaks.
 - Record every clip, overlap, truncation and horizontal scroll.
 - Fix by letting containers grow rather than shrinking the text.
 
@@ -3079,14 +3079,14 @@ Write your decision first, then the reason it fits this new case. Compare with t
 
 **New case.** Made-up case: a library renewal page shows a Renew button greyed out at 2.1 to 1 when an item cannot be renewed, a small grey hint under the card-number field at 3.2 to 1, and the library logo in pale gold at 1.8 to 1.
 
-**Task:** Decide which of the three must be repaired to meet contrast (minimum), and explain why each of the others is or is not covered.
+**Task:** Decide what must change on this page, and explain why each of the three is or is not covered by contrast (minimum).
 
 <details>
 <summary>Compare after writing</summary>
 
 - Weak: Says all three fail, or treats darkening the greyed-out button as a requirement.
-- Adequate: Only the hint must reach 4.5 to 1, because it is ordinary small text. The inactive button and the logo are exempt from the criterion; making the disabled state readable is a design choice, not a repair owed.
-- Strong: As adequate, plus a readable line saying why renewal is unavailable, which then must meet 4.5 to 1 itself, and a note that passing the ratio is a floor (size, weight, light).
+- Adequate: Only the hint must reach 4.5 to 1, because it is ordinary small text. The inactive button and the logo are exempt from the ratio, but nothing says why renewal is unavailable, so add a readable reason line, which must meet 4.5 to 1; darkening the button itself is not owed.
+- Strong: As adequate, plus the reason line placed beside the button so it is read with it, and a note that passing the ratio is a floor (size, weight, light).
 
 </details>
 
@@ -3629,9 +3629,9 @@ Required fields shown by a red label, with a line at the top of the form saying 
 
 survives greyscale — In grey, the labels are all the same colour and the person cannot tell which were red.
 
-fails greyscale — It does fail, and the interesting part is why it looked safe: an explanation was provided.
+fails greyscale — It fails, and the interesting part is why it looked safe: an explanation was provided. The line explains a distinction the reader can no longer see.
 
-survives only because of something else on the screen — The sentence at the top makes it feel handled. It explains a distinction the reader can no longer see, which is worse than no explanation.
+survives only because of something else on the screen — The sentence at the top is the something else, and it is what stops working: it names a colour code and points at no field.
 
 Now put your own screens in greyscale and mark every line you can no longer interpret.
 
@@ -4108,11 +4108,11 @@ Section: learn. Stable action: learn-2.
 Reachable is not enough: focus must be visible and the order sensible.
 
 
-### Traps are the worst failure: a place you can enter and cannot leave
+### Traps are the worst failure: a place no key gets you out of
 
 Section: learn. Stable action: learn-3.
 
-Traps are the worst failure: a place you can enter and cannot leave.
+Traps are the worst failure: a place no key gets you out of. A modal may keep Tab inside on purpose.
 
 
 ### Custom controls are where keyboard support disappears
@@ -4135,7 +4135,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The booking task was attempted with the mouse unplugged. Four failures. The date picker could be reached and not operated: arrow keys did nothing, so no date could be chosen — a total block, repaired against the m09 key table. The filter panel trapped focus, with escape doing nothing. The remove control, hover-only, could not be reached at all. Focus was invisible on the tinted review panel. The repair addressed the date picker first, because it stopped the task entirely; the trap was recorded as the second, and the write-up noted that a mouse-only workaround was explicitly not acceptable as a fix.
+- The booking task was attempted with the mouse unplugged. Four failures. The date picker could be reached and not operated: arrow keys did nothing, so no date could be chosen — a total block, repaired against the m09 key table. The filter panel trapped focus: tab cycled inside it and never reached its Apply button, and escape did nothing. The remove control, hover-only, could not be reached at all. Focus was invisible on the tinted review panel. The repair addressed the date picker first, because it stopped the task entirely; the trap was recorded as the second, and the write-up noted that a mouse-only workaround was explicitly not acceptable as a fix.
 
 
 ### Choose where you will do the work
@@ -4217,7 +4217,7 @@ A written record of the attempt as it happened, with every blocked point and eve
 
 **Start here:** Start the task and write the first key you press before you press it. Keep writing as you go.
 
-**Enough:** Somebody else could repeat your attempt from the log, key for key.
+**Enough:** Somebody else could repeat your attempt from the log, key for key. On the paper route, someone could repeat your walk-through from the key tables.
 
 **Focus:** Where the keyboard is pointing at this moment. If you cannot see it, you are working blind however well the controls respond.
 
@@ -4305,7 +4305,7 @@ Section: practice-plan. Stable action: step-2-sort-3.
 
 Six things observed during a made up keyboard-only attempt at a borrowing task. For each one, decide how badly it matters.
 
-The filter panel takes focus, tab cycles inside it forever, and escape does nothing.
+The filter panel takes focus, tab cycles inside it forever without reaching a close or apply button, and escape does nothing.
 
 - a total block
 - a severe difficulty
@@ -4457,7 +4457,7 @@ Every custom control entered and left on purpose, with anything that captured fo
 
 **Enough:** Every custom control has two exit routes recorded, including the ones that worked.
 
-**Keyboard trap:** A place you can move into and cannot move out of with the keyboard. It is the worst kind of failure, because the person cannot even leave and try something else.
+**Keyboard trap:** A place you can move into and cannot move out of with the keyboard. It is the worst kind of failure, because the person cannot even leave and try something else. A modal panel may keep Tab inside it on purpose; it is a trap only when no key gets you out.
 
 **Custom control:** Anything built rather than taken from the browser: a date picker, a menu, a slider, a dialogue. Keyboard support usually disappears exactly here.
 
@@ -4468,11 +4468,11 @@ Section: practice-plan. Stable action: step-3-demo.
 
 Made-up example. Hunting for traps in a borrowing product, and finding one only because I stopped testing the happy way round.
 
-**What I did at first:** I entered the filter panel, used it, and left it by pressing the Apply button. Out cleanly, no trap, on to the next control.
+**What I did at first:** I entered the filter panel, used it, and left by clicking Apply with the trackpad, out of habit. Out cleanly, no trap, on to the next control.
 
-**Why that proved nothing:** I left by the route the panel was designed around. A trap is about the routes nobody designed: tab past the end, and escape.
+**Why that proved nothing:** I left with a pointer, which the test had ruled out, by the route the panel was designed around. A trap is about the keyboard routes out: tab past the end, and escape.
 
-**What happened on the second try:** I entered the panel and pressed tab until I ran out of controls. Focus went back to the first control in the panel and stayed there. Tab could never leave.
+**What happened on the second try:** I entered the panel and pressed tab until I ran out of controls. Tab cycled through the filters and never reached Apply, which appears only on hover. Focus went back to the first filter each time, so tab could never leave.
 
 **And escape:** Escape did nothing at all. With no pointer, the only way out of that panel was to reload the page and lose everything already entered.
 
@@ -4789,7 +4789,7 @@ Adequate evidence: A record of a complete keyboard-only attempt, including where
 
 1 — Attempted with occasional pointer use.
 
-2 — A full attempt with the pointer unavailable, recorded step by step.
+2 — A full attempt with the pointer unavailable, recorded step by step — or, on the paper route, one whole task walked against the key tables with every step marked specified and untested.
 
 3 — As adequate, and a second task was attempted to check the failures generalise.
 
@@ -4803,7 +4803,7 @@ Adequate evidence: A categorised list distinguishing the three failure kinds.
 
 1 — Listed without distinguishing the kinds.
 
-2 — All three kinds distinguished with specific controls named, or none found and the controls checked listed.
+2 — All three kinds distinguished with specific controls named, or none found and the controls checked listed — or, on the paper route, each custom control's exit routes specified and marked untested.
 
 3 — As adequate, and every custom control was explicitly checked for trapping.
 
@@ -5102,7 +5102,7 @@ Each error rewritten to name the fix, a summary at the top linking to each probl
 
 Section: practice-plan. Stable action: step-3-sort-1.
 
-Six error messages from a made up tool-library form. For each one, decide what it does for the person reading it.
+Seven error messages from a made up tool-library form. For each one, decide what it does for the person reading it.
 
 Invalid input.
 
@@ -5128,7 +5128,7 @@ Now rewrite each of your own error messages so it names the fix, and check none 
 
 Section: practice-plan. Stable action: step-3-sort-2.
 
-Six error messages from a made up tool-library form. For each one, decide what it does for the person reading it.
+Seven error messages from a made up tool-library form. For each one, decide what it does for the person reading it.
 
 The collection date must be today or later.
 
@@ -5154,7 +5154,7 @@ Now rewrite each of your own error messages so it names the fix, and check none 
 
 Section: practice-plan. Stable action: step-3-sort-3.
 
-Six error messages from a made up tool-library form. For each one, decide what it does for the person reading it.
+Seven error messages from a made up tool-library form. For each one, decide what it does for the person reading it.
 
 You did not fill this in correctly.
 
@@ -5180,7 +5180,7 @@ Now rewrite each of your own error messages so it names the fix, and check none 
 
 Section: practice-plan. Stable action: step-3-sort-4.
 
-Six error messages from a made up tool-library form. For each one, decide what it does for the person reading it.
+Seven error messages from a made up tool-library form. For each one, decide what it does for the person reading it.
 
 Enter the phone number as ten digits, with no spaces.
 
@@ -5206,7 +5206,7 @@ Now rewrite each of your own error messages so it names the fix, and check none 
 
 Section: practice-plan. Stable action: step-3-sort-5.
 
-Six error messages from a made up tool-library form. For each one, decide what it does for the person reading it.
+Seven error messages from a made up tool-library form. For each one, decide what it does for the person reading it.
 
 Please complete the fields marked in red.
 
@@ -5232,7 +5232,7 @@ Now rewrite each of your own error messages so it names the fix, and check none 
 
 Section: practice-plan. Stable action: step-3-sort-6.
 
-Six error messages from a made up tool-library form. For each one, decide what it does for the person reading it.
+Seven error messages from a made up tool-library form. For each one, decide what it does for the person reading it.
 
 Something went wrong. Please try again.
 
@@ -5258,7 +5258,7 @@ Now rewrite each of your own error messages so it names the fix, and check none 
 
 Section: practice-plan. Stable action: step-3-sort-7.
 
-Six error messages from a made up tool-library form. For each one, decide what it does for the person reading it.
+Seven error messages from a made up tool-library form. For each one, decide what it does for the person reading it.
 
 The notes field holds 200 characters. You have used 340.
 
@@ -6368,7 +6368,7 @@ Write your decision first, then the reason it fits this new case. Compare with t
 
 Section: practice. Stable action: review-work.
 
-Open Your work and choose Ready for review. The next lesson looks at anything that moves, plays or expires.
+Open Your work and choose Ready for review. On the core path, the next lesson listens to your screens with a screen reader. The library lesson after this one looks at anything that moves, plays or expires.
 
 
 <details>
@@ -6477,7 +6477,7 @@ Repair: Find every image containing words and move those words into text; reprod
 </details>
 The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
-**Keep for later:** Open Your work and choose Ready for review. The next lesson looks at anything that moves, plays or expires.
+**Keep for later:** Open Your work and choose Ready for review. On the core path, the next lesson listens to your screens with a screen reader. The library lesson after this one looks at anything that moves, plays or expires.
 
 **Review criteria:**
 
@@ -7752,11 +7752,11 @@ Now mark each of your own findings the same way, and keep the ones that work.
 
 Section: practice-plan. Stable action: write-failure-map.
 
-Write your answer for “For each failure: the earlier decision that caused it”. Use the task instructions below to decide what to include.
+On the practice route (the lab page or a public page), the failures are not yours to trace: name, for each one, the decision you would check in your own design.
 
 **Answer:** For each failure: the earlier decision that caused it
 
-
+On the practice route (the lab page or a public page), the failures are not yours to trace: name, for each one, the decision you would check in your own design.
 
 <details>
 <summary>Example</summary>
@@ -7972,7 +7972,7 @@ Write your decision first, then the reason it fits this new case. Compare with t
 
 Section: practice. Stable action: review-work.
 
-Open Your work and choose Ready for review. The next lesson checks the same product against Indian guidelines, language and connection conditions.
+Open Your work and choose Ready for review. On the core path, the next lesson turns all of this into one honest accessibility statement. The library lesson after this one checks the same product against Indian guidelines, language and connection conditions.
 
 
 <details>
@@ -8058,7 +8058,7 @@ Adequate evidence: Each failure traced to a specification or a build defect.
 
 1 — Causes guessed generally.
 
-2 — Each traced to a decision or marked a build defect.
+2 — Each traced to a decision or marked a build defect — or, on the practice route, each named with the decision you would check in your own design.
 
 3 — As adequate, and at least one failure traces to a decision you made earlier in the course.
 
@@ -8081,7 +8081,7 @@ Repair: Copy the boundary the assigned article states and apply it to your own s
 </details>
 The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
 
-**Keep for later:** Open Your work and choose Ready for review. The next lesson checks the same product against Indian guidelines, language and connection conditions.
+**Keep for later:** Open Your work and choose Ready for review. On the core path, the next lesson turns all of this into one honest accessibility statement. The library lesson after this one checks the same product against Indian guidelines, language and connection conditions.
 
 **Review criteria:**
 
@@ -8401,14 +8401,14 @@ Six observations from a made up check on a tool-library product. For each one, d
 
 The five navigation labels fit exactly, with no room to grow, and the row does not wrap.
 
-- a layout decision made now
+- a design decision made now
 - a translation job for later
 - not a problem
 
 <details>
 <summary>After your attempt</summary>
 
-a layout decision made now — Any language with longer words breaks this, and letting it wrap costs nothing today. It is a decision about the container, not about words.
+a design decision made now — Any language with longer words breaks this, and letting it wrap costs nothing today. It is a decision about the container, not about words.
 
 a translation job for later — The translating is later. The room for the translation is a choice you are making now.
 
@@ -8427,14 +8427,14 @@ Six observations from a made up check on a tool-library product. For each one, d
 
 Dates are written 03/04 with no year and no month name.
 
-- a layout decision made now
+- a design decision made now
 - a translation job for later
 - not a problem
 
 <details>
 <summary>After your attempt</summary>
 
-a layout decision made now — It reads as two different days depending on where somebody grew up, today, in English. Writing 3 April 2026 fixes it in a minute.
+a design decision made now — It reads as two different days depending on where somebody grew up, today, in English. Writing 3 April 2026 fixes it in a minute.
 
 a translation job for later — Nothing needs translating. The ambiguity is in the format itself.
 
@@ -8453,14 +8453,14 @@ Six observations from a made up check on a tool-library product. For each one, d
 
 A label written in Devanagari has the mark above the character cut off by the line height.
 
-- a layout decision made now
+- a design decision made now
 - a translation job for later
 - not a problem
 
 <details>
 <summary>After your attempt</summary>
 
-a layout decision made now — Line height is set in your own design. A cut matra can change the word, so this is a correctness problem rather than a cosmetic one.
+a design decision made now — Line height is set in your own design. A cut matra can change the word, so this is a correctness problem rather than a cosmetic one.
 
 a translation job for later — The text is already there. What is failing is the space you gave it.
 
@@ -8479,14 +8479,14 @@ Six observations from a made up check on a tool-library product. For each one, d
 
 The class list is sorted alphabetically by a rule that assumes Latin letters.
 
-- a layout decision made now
+- a design decision made now
 - a translation job for later
 - not a problem
 
 <details>
 <summary>After your attempt</summary>
 
-a layout decision made now — Nothing about the layout causes it, and you cannot fix the sorting rule from a design file.
+a design decision made now — Nothing about the layout causes it, and you cannot fix the sorting rule from a design file.
 
 a translation job for later — Sorting is language-dependent and genuinely belongs with real language support. Recording it as a known limitation now is the right move.
 
@@ -8505,14 +8505,14 @@ Six observations from a made up check on a tool-library product. For each one, d
 
 The offer is set inside a promotional picture.
 
-- a layout decision made now
+- a design decision made now
 - a translation job for later
 - not a problem
 
 <details>
 <summary>After your attempt</summary>
 
-a layout decision made now — Translating a picture means redrawing it, for every language, for ever. Taking the words out now is a design change you can make today.
+a design decision made now — Translating a picture means redrawing it, for every language, for ever. Taking the words out now is a design change you can make today.
 
 a translation job for later — It is made far more expensive by leaving it, which is what makes it a decision for now.
 
@@ -8531,14 +8531,14 @@ Six observations from a made up check on a tool-library product. For each one, d
 
 A notification on the lock screen names the exact class that was booked.
 
-- a layout decision made now
+- a design decision made now
 - a translation job for later
 - not a problem
 
 <details>
 <summary>After your attempt</summary>
 
-a layout decision made now — On a shared device the lock screen is read by whoever is nearby. Saying “a class you booked” instead is a wording decision available immediately.
+a design decision made now — On a shared device the lock screen is read by whoever is nearby. Saying “a class you booked” instead is a wording decision available immediately.
 
 a translation job for later — Nothing here is about language at all.
 
@@ -9215,7 +9215,7 @@ Section: practice-plan. Stable action: step-3-sort-4.
 
 Six sentences from a made up accessibility statement. For each one, decide what it actually claims.
 
-We have not tested with switch access or voice control.
+On 14 March all 31 text pairs were measured for contrast; two failed and both were fixed.
 
 - a tested result
 - a specified intention
@@ -9224,11 +9224,11 @@ We have not tested with switch access or voice control.
 <details>
 <summary>After your attempt</summary>
 
-a tested result — It is an accurate report of the state of your knowledge, which is exactly what a statement is for. Naming what you did not do is a result.
+a tested result — Date, method, count and outcome. A reader can see exactly what was measured and what changed.
 
-a specified intention — Nothing is being promised here.
+a specified intention — Nothing here is about what should happen. It reports what was measured.
 
-an untested claim — It claims nothing about the product at all. It describes the testing.
+an untested claim — It says nothing about the rest of the product. Contrast was measured, and only contrast is claimed.
 
 Now read your own draft statement line by line and mark each sentence the same way. Anything in the third group is rewritten or removed.
 
@@ -9291,11 +9291,11 @@ Now read your own draft statement line by line and mark each sentence the same w
 
 Section: practice-plan. Stable action: write-untested-list.
 
-Switch access, voice control, screen readers on platforms you do not own, braille displays, magnification.
+Switch access, voice control, screen readers on platforms you do not own, braille displays, magnification. A model line: We have not tested with switch access or voice control.
 
 **Answer:** Everything you have not examined, including assistive technology you do not use
 
-Switch access, voice control, screen readers on platforms you do not own, braille displays, magnification.
+Switch access, voice control, screen readers on platforms you do not own, braille displays, magnification. A model line: We have not tested with switch access or voice control.
 
 
 ### Which untested area you think most likely hides a problem, and why
