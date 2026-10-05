@@ -98,7 +98,7 @@ export const lessonOneFlow: LessonAction[] = [
   field('business-goal', 'What might the business want?', 'Write one possible goal for the people running the service. This is a guess, so say “might” or “probably”.', 3),
   field('visual-improvement', 'Improve how information looks', 'Choose one visual change, such as clearer size, contrast or grouping. Name what you would change and why it helps the task.', 4),
   field('visual-check', 'How could you tell if it helped?', 'Name an action you could watch, such as someone finding the price without help. “It looks better” is not an observable check.', 4),
-  field('behavior-improvement', 'Improve how the task works', 'Choose one change to the order, behavior or information in the task. Keep it different from your visual change.', 4),
+  field('behavior-improvement', 'Improve how the task works', 'Choose one change to the order, behavior or information in the task. Keep it different from your visual change, and say what it costs and who pays it: staff time, money, a busier screen, or something a person can no longer do.', 4),
   field('behavior-check', 'How would you check that change?', 'Name what someone could do that would support your idea, and what would show it did not help.', 4),
   // Session 3 — a new case, your reasons and your next step.
   { id: 'transfer-decision', field: 'transfer-decision', kind: 'field', section: 'check', step: 5, title: 'Try the idea on a new screen', instruction: 'A different made-up screen, with no notes. Write your answer first; the example answers appear afterwards.' },
