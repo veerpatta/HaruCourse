@@ -24,10 +24,10 @@ export const guided06: Record<string, Guided> = {
         { id: 'reach-worst', label: 'The items reachable only by asking a person or only from an email, and which of them your research showed people needed', kind: 'long', hint: 'This is where the real problems announce themselves. Renaming a menu cannot fix any of them.' },
       ] },
       { id: 'collisions', title: 'Where rows fight each other', intro: 'One collision at a time.', fields: [
-        { id: 'collision-1', label: 'Collision 1 · the rows involved, what kind of collision it is, and your one-line note', kind: 'long', example: 'Example (made up): rows 7 and 22 · both called “Details”, one is the venue address and one is the refund terms · shared label, a structure problem.' },
-        { id: 'collision-2', label: 'Collision 2 · the rows involved, what kind, and your note', kind: 'long' },
-        { id: 'collision-3', label: 'Collision 3 · the rows involved, what kind, and your note', kind: 'long' },
-        { id: 'collision-4', label: 'Collision 4 · the rows involved, what kind, and your note', kind: 'long' },
+        { id: 'collision-1', label: 'Collision 1 · the rows involved, what kind of collision it is, and your one-line note', kind: 'long', hint: 'If you truly found none, write “none found” and the two passes you made to look.', example: 'Example (made up): rows 7 and 22 · both called “Details”, one is the venue address and one is the refund terms · shared label, a structure problem.' },
+        { id: 'collision-2', label: 'Collision 2 · the rows involved, what kind, and your note', kind: 'long', optional: true, hint: 'Leave this empty if you found only one collision. Never invent one to fill the box.' },
+        { id: 'collision-3', label: 'Collision 3 · the rows involved, what kind, and your note', kind: 'long', optional: true },
+        { id: 'collision-4', label: 'Collision 4 · the rows involved, what kind, and your note', kind: 'long', optional: true },
       ] },
       { id: 'record', title: 'Save', fields: [
         { id: 'counts', label: 'Your three counts: items, collisions, and items nobody in your research ever needed', kind: 'long', hint: 'Count, do not estimate. If you had no research participants, write “not countable without research” for the third count rather than guessing it.', example: 'Example (made up): 53 items, 6 collisions, 4 items nobody in the research ever needed.' },
@@ -68,10 +68,10 @@ export const guided06: Record<string, Guided> = {
         enough: 'No description repeats its own label, and every row names a person and a moment.' },
       { expect: 'A route recorded for every item in your list, with the ask-a-person and email-only cases named here.',
         fields: ['reach-counts', 'reach-worst'],
-        terms: [{ term: 'Reachability', meaning: 'What a person has to do today to get to the thing: the menu, a deep page, search, an email, or asking someone.' }],
+        terms: [{ term: 'Reachability', meaning: 'What a person who has never used the product has to do today to get to the thing: the menu, a deep page, search, an email, or asking someone.' }],
         start: 'Open the product as though you had never seen it and try to reach three items you know are in there.',
         enough: 'Every item in your table has a route, and the ones that need a human are separated out.' },
-      { expect: 'Up to four collisions written out: which rows are involved, what kind of collision it is, and your one-line note on each.',
+      { expect: 'One to four collisions written out: which rows are involved, what kind of collision it is, and your one-line note on each. Boxes 2 to 4 are optional, so leave any you do not need empty.',
         fields: ['collision-1', 'collision-2', 'collision-3', 'collision-4'],
         reveal: { first: 1, group: 1, count: 4, addLabel: 'Add the next collision', note: 'One collision at a time. Four is plenty to write out here; mark the rest on your table as you find them.' },
         supported: {
@@ -115,10 +115,10 @@ export const guided06: Record<string, Guided> = {
         recheck: 'Every row carries a plain sentence in your own words, different from its label.',
       },
       {
-        question: 'You filled the reachability column from memory, because you know the product well. What is wrong with that?',
+        question: 'You filled the reachability column from memory, without opening the product as a newcomer. What is wrong with that?',
         options: [
-          { label: 'You know routes a first-time visitor does not, so the column records your route, not theirs.', correct: true, feedback: 'The column is meant to show how hard a thing is to reach. Filled in from knowledge, it records that everything is reachable, which is true only for you.', was: ['You know routes a first-time visitor does not, so what you recorded is your route rather than theirs.'] },
-          { label: 'Very little, provided every route you wrote down really exists and you have checked each one works.', feedback: 'They exist, and that is not the question. A route you can only take because you already know it is a route the column should be marking as a problem.', was: ['Nothing, as long as the routes you wrote down really exist.'] },
+          { label: 'You record where you know things are, not the route a newcomer would have to find.', correct: true, feedback: 'The column is meant to show what a newcomer has to do to reach each thing. Filled in from memory, it records the shortcuts you already know, and an item a stranger would never find looks as easy as the rest.', was: ['You know routes a first-time visitor does not, so what you recorded is your route rather than theirs.', 'You know routes a first-time visitor does not, so the column records your route, not theirs.'] },
+          { label: 'Very little, since someone who knows the product well remembers its routes accurately.', feedback: 'Remembering accurately is not the question. A route you can take only because you already know it may be one a newcomer never finds, and the column should mark that as a problem.', was: ['Nothing, as long as the routes you wrote down really exist.', 'Very little, provided every route you wrote down really exists and you have checked each one works.'] },
           { label: 'Memory is reliable for menu pages; the only rows at risk are the answers buried in emails and PDFs.', feedback: 'Pages are where your knowledge helps you most. You go straight to one from a menu you have used a hundred times, which a stranger cannot do.', was: ['It is fine for pages and only wrong for the items buried in emails.'] },
         ],
         repair: 'Work through your two reachability boxes in step 3 again, pretending you have never used the product, and write what you actually had to do. Record the corrections in step 5.',
@@ -149,7 +149,7 @@ export const guided06: Record<string, Guided> = {
         { id: 'worst-labels', label: 'The three worst labels in your inventory, and the reason each one fails', kind: 'long', hint: 'Three kinds recur: the internal word that names a department, the clever word invented for character, and the abstract word that is accurate and empty.', example: 'Example (made up): “Resources” · an internal word · it names a shelf in the office, not a thing anyone is looking for.' },
       ] },
       { id: 'vocabulary', title: 'Words people actually used', intro: 'Copied exactly, one at a time. Do not tidy them as you go.', fields: [
-        { id: 'vocab-1', label: 'Vocabulary 1 · the item, the exact words a participant used for it, and their participant label', kind: 'long', sensitive: true, hint: 'Use a label such as P2, never a name. Keep your raw notes in a private file or on paper with a date to delete them, and copy only the words for this item here.', example: 'Example (made up): what to bring · “the list of things I need” · P2.' },
+        { id: 'vocab-1', label: 'Vocabulary 1 · the item, the exact words a participant used for it, and their participant label', kind: 'long', sensitive: true, hint: 'Use a label such as P2, never a name. Keep your raw notes in a private file or on paper with a date to delete them, and copy only the words for this item here. No participant words? Copy phrases from real messages or public reviews about this kind of product, naming the source, or write “no participant words: the supplied notes record actions only” here and “none” in the other boxes, and mark every label in step 3 a guess.', example: 'Example (made up): what to bring · “the list of things I need” · P2.' },
         { id: 'vocab-2', label: 'Vocabulary 2 · the item, the exact words, and the participant label', kind: 'long', sensitive: true },
         { id: 'vocab-3', label: 'Vocabulary 3 · the item, the exact words, and the participant label', kind: 'long', sensitive: true },
         { id: 'vocab-4', label: 'Vocabulary 4 · the item, the exact words, and the participant label', kind: 'long', sensitive: true },
@@ -181,7 +181,7 @@ export const guided06: Record<string, Guided> = {
         ],
         start: 'Read down your inventory labels and mark every one you could not explain to a stranger in five words.',
         enough: 'Each of the three names the kind of failure, not only that you dislike the word.' },
-      { expect: 'Four vocabulary lines copied out exactly from your notes, each attributed to a participant.',
+      { expect: 'Four vocabulary lines copied out exactly, each attributed to a participant or a named source, or a plain statement that you have no participant words.',
         fields: ['vocab-1', 'vocab-2', 'vocab-3', 'vocab-4'],
         reveal: { first: 2, group: 1, count: 4, addLabel: 'Add the next phrase', note: 'One phrase at a time. The rest go straight into your table; these four are the ones you copy out carefully.' },
         demo: {
@@ -199,7 +199,7 @@ export const guided06: Record<string, Guided> = {
         },
         terms: [{ term: 'Verbatim', meaning: 'The exact words, in the order they were said, with nothing improved. Anything you smooth is yours rather than theirs.' }],
         start: 'Put the inventory beside the notes and mark every noun a participant used for a thing on your list. If m05 produced no participants at all, say so in the sample box and take your words from real messages people have already sent you or public reviews of similar products, with names removed and the source named, marking every row with no quotation as a guess. With none of those, every row is a guess, and saying so is a complete answer. A rehearsal with yourself is never written down as research.',
-        enough: 'Every phrase is in somebody else’s words, with a participant label beside it.' },
+        enough: 'Every phrase is in somebody else’s words with its source, or the absence is stated.' },
       { expect: 'Three worked rows of the labelling table, and a count of how many of your fifteen are guesses.',
         fields: ['row-1', 'row-2', 'row-3', 'guess-count'],
         reveal: { first: 1, group: 1, count: 3, addLabel: 'Add the next row', note: 'One row at a time. Fill the evidence cell before you write the proposed label, so the label has somewhere to come from.' },
@@ -232,10 +232,10 @@ export const guided06: Record<string, Guided> = {
                 evidenced: 'Nobody said anything about this item, so there is no participant word behind it. Describing the contents accurately is a different thing from being evidenced.',
                 guess: 'It is a sensible, plain label that no participant supplied. Marked as a guess it stays available to test in the card sort.',
               } },
-            { id: 'classes', text: 'Proposed label “Classes”, chosen over “Workshops”. The reason says: two participants said “class”, two said “workshop”, and the designer picked the one first-timers used.', answer: 'guess',
+            { id: 'classes', text: 'Proposed label “Sessions”. The reason says: two participants said “class”, two said “workshop”, and the designer chose a word that covers both.', answer: 'guess',
               feedback: {
-                evidenced: 'Each word is evidenced and the choice between them is not. Four people splitting two and two cannot show you which audience uses which, so the reason for picking is still a hypothesis.',
-                guess: 'Both words have evidence behind them, so the words are not the guess. The claim that first-timers use one and returning people the other is the guess, and the label rests on it.',
+                evidenced: 'Nobody said “sessions”. The participants’ words are evidence for “class” and for “workshop”; a third word that covers both is the designer’s own, however neutral it sounds.',
+                guess: 'Both participant words were set aside for one the designer chose. A neutral word can be sensible, and it stays a guess until somebody tests it. The class and workshop split itself belongs in step 4 as a conflict.',
               } },
           ],
           then: 'Go down your own evidence column. Any cell you cannot fill with a participant’s word makes that row a guess, and the mark stays until somebody says otherwise.',
@@ -614,7 +614,7 @@ export const guided06: Record<string, Guided> = {
       { id: 'sample', title: 'Who sorted, and who did not', fields: [
         { id: 'sample-line', label: 'How many people sorted, how you found them, and who is missing', kind: 'long', sensitive: true, hint: 'This sentence goes at the top of the record, not the bottom, and travels with the results everywhere. Counts and routes only, with no names or contact details.' },
         { id: 'recruitment-gap', label: 'If nobody consented: what you tried, on which dates, and what you will try next', kind: 'long', sensitive: true, requiredWhen: { field: 'open-status', values: ['Nobody has consented yet, so I sorted them myself as a rehearsal'] }, hint: 'A dated gap plus the prepared cards and the script is a complete answer to this lesson. It is a real finding about access. Describe who you asked by kind, such as “two neighbours”, never by name or number.' },
-        { id: 'rehearsal-label', label: 'The words written on every rehearsal artefact so it can never be read as research', kind: 'short', requiredWhen: { field: 'open-status', values: ['Nobody has consented yet, so I sorted them myself as a rehearsal'] }, hint: 'Needed whenever either sort was a rehearsal.', example: 'Example (made up): “Rehearsal, sorted by me, no participants” written across the photograph and at the top of the write-up.' },
+        { id: 'rehearsal-label', label: 'The words written on every rehearsal artefact so it can never be read as research', kind: 'short', requiredWhen: { field: 'open-status', values: ['Nobody has consented yet, so I sorted them myself as a rehearsal'], or: { field: 'closed-status', values: ['Nobody has consented yet, so I placed them myself as a rehearsal'] } }, hint: 'Needed whenever either sort was a rehearsal.', example: 'Example (made up): “Rehearsal, sorted by me, no participants” written across the photograph and at the top of the write-up.' },
         { id: 'improvement-made', label: 'What you changed after the Check questions', kind: 'long' },
       ] },
     ],
@@ -673,11 +673,11 @@ export const guided06: Record<string, Guided> = {
                 'what she said': 'She never used the word. Putting your word into the speech column is how a quotation quietly becomes yours.',
                 'your conclusion': 'It may well be true, and it is yours. On its own line it stays a claim you can go and check with the next person.',
               } },
-            { id: 'named-group', text: 'She made a pile and wrote “stuff before the class” on a note beside it.', answer: 'what she did',
+            { id: 'named-group', text: 'She put the five practical cards into one pile without pausing, then reached for the next card.', answer: 'what she did',
               feedback: {
-                'what she did': 'She built something and named it. Both are actions you watched, and the wording of the name is hers rather than yours.',
-                'what she said': 'She wrote it rather than speaking it. Filing it as an action keeps the pile and its name together, which is where the value is.',
-                'your conclusion': 'Nothing here is your interpretation. The pile exists and the words are on the note.',
+                'what she did': 'Making the pile and moving on are both movements you watched. Anyone at the table would have written down the same thing.',
+                'what she said': 'She said nothing here. The record is of her hands and her pace, which is why it belongs under doing.',
+                'your conclusion': 'There is no reading in it yet. You have not said what the quick pile means, so the fact stays open for later.',
               } },
             { id: 'two-audiences', text: 'The split over the cancellation policy means there are two kinds of customer.', answer: 'your conclusion',
               feedback: {
@@ -766,7 +766,7 @@ export const guided06: Record<string, Guided> = {
       { id: 'patterns', title: 'Agreement, disagreement, ambiguity', fields: [
         { id: 'pattern-counts', label: 'How many of your items fell into each of the three patterns', kind: 'short', example: 'Example (made up): eleven agreements, six disagreements, four ambiguous.' },
         { id: 'disagreements', label: 'Each disagreement, with what you think it means: two audiences, two items, or too little evidence', kind: 'long', sensitive: true, hint: 'Look at who placed it which way and what else you know about them. If nothing distinguishes them, say so rather than deciding.' },
-        { id: 'ambiguous-items', label: 'The items placed consistently but slowly, and what the hesitation looked or sounded like', kind: 'long', sensitive: true, hint: 'This is the pattern people miss, and it predicts a wrong first click better than a clean split does.' },
+        { id: 'ambiguous-items', label: 'The items placed consistently but slowly, and what the hesitation looked or sounded like', kind: 'long', sensitive: true, hint: 'This is the pattern people miss, and it flags items likely to cause wrong first clicks even when every placement agrees.' },
       ] },
       { id: 'revise', title: 'Changes, each with a trace', intro: 'One change per box. If you cannot write the trace sentence, the change belongs on the next list instead.', fields: [
         { id: 'change-1', label: 'Change 1 · what moved, and the sentence naming the item, the participants and what they did', kind: 'long', sensitive: true, hint: 'Name people by label, such as P2. On the supplied route, change the practice map from lesson 4, name the S label, and mark the change practice.', example: 'Example (made up): split “change my booking” from “cancel my booking”, because four of four participants put them in different piles.' },
@@ -802,7 +802,7 @@ export const guided06: Record<string, Guided> = {
             { label: 'What I wrote first', text: '“75 per cent of users group the refund rule with payment.” It looked like a result and it fitted neatly on one line.' },
             { label: 'Why it was wrong', text: 'Four people are not a sample of users. The sentence promised something about everybody, from evidence about four, and the number lent it a confidence nothing had earned.' },
             { label: 'What I wrote instead', text: '“Three of four put the refund rule with the money cards. One put it with cancelling. Two of the three hesitated first.” Longer, duller, and true.' },
-            { label: 'What the count showed that the rate hid', text: 'Two of the three hesitated. A clean rate buries that; the count with the hesitations beside it made the item ambiguous rather than agreed, which changed what I did next.' },
+            { label: 'What the count showed that the rate hid', text: 'Two of the three hesitated. A clean rate buries that; the count with the hesitations beside it showed a split made with doubt, not an agreement, which changed what I did next.' },
           ],
           wrongTurn: 'The wrong turn is the arithmetic. It takes one second, it makes the finding sound stronger, and it converts four people into a claim about a population you never met.',
           tradeoff: 'Counts read as small and unimpressive, and somebody will ask whether that is really all you have. It is, and saying so plainly is what keeps the rest of your findings believable.',
@@ -839,7 +839,7 @@ export const guided06: Record<string, Guided> = {
       {
         question: 'All four participants put an item in the same pile, but three of them picked it up twice before deciding. How do you classify it?',
         options: [
-          { label: 'Ambiguous, because the placements were consistent and slow.', correct: true, feedback: 'Doubt before a placement predicts a wrong first click better than a clean split does. Agreement means placed the same way and placed easily.' },
+          { label: 'Ambiguous, because the placements were consistent and slow.', correct: true, feedback: 'Doubt before a placement flags an item likely to cause wrong first clicks, even when every placement agrees. Agreement means placed the same way and placed easily.' },
           { label: 'Agreement, because all four placed it identically in the end.', feedback: 'The final piles match and the route to them did not. Filing it as agreement is how you stop thinking about the item that will fail the tree test.' },
           { label: 'Disagreement, because the hesitation shows they were split in their own minds.', feedback: 'Disagreement is about different placements. Keeping this one as ambiguous lets the two patterns do different work for you.' },
         ],
@@ -902,7 +902,7 @@ export const guided06: Record<string, Guided> = {
         { id: 'hidden-check', label: 'How you will keep the lower sheets out of sight', kind: 'short', hint: 'Face down in a pile, or in an envelope. A person who glimpses the second level has already been given the answer.' },
       ] },
       { id: 'tasks', title: 'Six tasks and the answers you decided first', intro: 'One task at a time. Each carries the situation, the goal, and the answer you will accept, all written before anyone sits down with you.', fields: [
-        { id: 'task-1', label: 'Task 1 · the situation, the goal, and the answer you will accept', kind: 'long', hint: 'Describe a moment, not a destination. If the sentence names a label from your tree, it is not a task yet.', example: 'Example (made up): you booked a class for Saturday and something has come up. Goal: reach the place that lets you move it. Accepted: Change or cancel, and also Get help.' },
+        { id: 'task-1', label: 'Task 1 · the situation, the goal, and the answer you will accept', kind: 'long', hint: 'Describe a moment, not a destination. If the sentence uses the distinctive word of its target label, it is not a task yet.', example: 'Example (made up): you booked a class for Saturday and something has come up. Goal: reach the place that lets you move it. Accepted: Change or cancel, and also Get help.' },
         { id: 'task-2', label: 'Task 2 · the situation, the goal, and the answer you will accept', kind: 'long' },
         { id: 'task-3', label: 'Task 3 · the situation, the goal, and the answer you will accept', kind: 'long' },
         { id: 'task-4', label: 'Task 4 · the situation, the goal, and the answer you will accept', kind: 'long' },
@@ -952,7 +952,7 @@ export const guided06: Record<string, Guided> = {
           uncertainty: 'Still unknown: whether these situations are ones your people actually meet. They came from your m05 notes, and those were a few people.',
         },
         start: 'Take a moment from your m05 notes and write what the person was holding, worrying about and trying to do.',
-        enough: 'No task contains a word that appears anywhere on your sheets.' },
+        enough: 'No task uses the distinctive word of its target label, or of the branch that leads to it.' },
       { terms: [{ term: 'Path', meaning: 'Every choice a person made, in order, including the ones they took back. It is the whole of what happened, not only where they finished.' }, { term: 'Backtracking', meaning: 'Going back up a level after choosing a branch. In a real product, somebody who does this twice often leaves instead of trying again.' }, { term: 'Rehearsal', meaning: 'You running the test on yourself to check that the tasks are clear. It never counts as a result, because you already know the tree.' }], expect: 'Every task run with each person, recording the first choice and the whole path, not only whether they arrived.',
         fields: ['participant-route', 'results-table'],
         supported: {
@@ -995,8 +995,8 @@ export const guided06: Record<string, Guided> = {
           { label: 'Whether the grouping makes sense, since they still have to choose the right branch.', feedback: 'They do choose, and they choose by matching. The test can no longer tell you whether the grouping made any sense to them.', was: ['Nothing is wrong, because they still have to pick the right branch.'] },
           { label: 'An easier version of the same question, which is acceptable for a warm-up task.', feedback: 'A warm-up is worth having and should still avoid handing over the label, or you will not know whether the person read the tree or read it back.', was: ['It only makes the task easier, which is fine for a warm-up.'] },
         ],
-        repair: 'Underline every word in your six tasks in step 2 that also appears on a sheet, rewrite those tasks as situations, and record the rewrites in step 5.',
-        recheck: 'No task contains a word that appears on any sheet of the tree.',
+        repair: 'Underline every word in your six tasks in step 2 that also appears in the target label or the branch leading to it, rewrite those tasks as situations, and record the rewrites in step 5.',
+        recheck: 'No task uses the distinctive word of its target label, or of the branch that leads to it.',
       },
       {
         question: 'Nobody agreed to take part, so you ran all six tasks on yourself. How should that appear in the record?',
@@ -1020,7 +1020,7 @@ export const guided06: Record<string, Guided> = {
       prompt: 'Rewrite the refund task so it tests finding rather than word-matching, give the answer you would accept, and explain why you fix that answer before anyone takes part.',
       anchors: {
         weak: 'Keeps the label in the task or barely rewords it, such as “Look for refunds”, and decides what counts as success after seeing the results.',
-        adequate: 'Writes a situation such as “You bought tickets for Saturday and now cannot go; where would you look?”, avoids the word refund, and fixes the accepted answer (Tickets and refunds, perhaps Help) in advance so results cannot be bent.',
+        adequate: 'Writes a situation such as “You paid for two seats on Saturday and now cannot go; where would you look?”, avoiding both words of the target label, and fixes the accepted answer (Tickets and refunds, perhaps Help) in advance so results cannot be bent.',
         strong: 'As adequate, and plans to record first choice, backtracking and confidence, and notes that results from tasks you chose show how the structure handles them, not how often real visitors want refunds.',
       },
     },
@@ -1165,7 +1165,7 @@ export const guided06: Record<string, Guided> = {
       {
         question: 'Your one change did not help: both new re-test participants failed the same task at the same label as before. What goes in the report?',
         options: [
-          { label: 'What you changed, what happened, and that the diagnosis behind it looks wrong.', correct: true, feedback: 'A change that did not work and was written down is worth more than one that worked and was never understood. It also stops you making the same change again in three weeks.', was: ['What you changed, what happened, and that the diagnosis behind it was wrong.'] },
+          { label: 'What you changed, what happened, and that the diagnosis or the new label was wrong.', correct: true, feedback: 'A change that did not work and was written down is worth more than one that worked and was never understood. Two failures cannot tell you whether the diagnosis was wrong or the new wording was simply poor too, so record which you suspect and what the paths and quotations show before choosing the next change.', was: ['What you changed, what happened, and that the diagnosis behind it was wrong.', 'What you changed, what happened, and that the diagnosis behind it looks wrong.'] },
           { label: 'Nothing yet: try a different change first, then report whichever one finally works.', feedback: 'The second change would then trace back to no result at all. The record of the failed attempt is what makes the next diagnosis better.', was: ['Leave it out and try a different change before writing anything.'] },
           { label: 'That two people are too few to show a difference, so the result is inconclusive.', feedback: 'The sample is small, and that is not what happened here. Both failed the same task at the same label as before, which is a result about your change.', was: ['That the test was too small to show a difference.'] },
         ],
@@ -1218,7 +1218,7 @@ export const guided06: Record<string, Guided> = {
       ] },
       { id: 'kinds', title: 'Looking, and not knowing', fields: [
         { id: 'findability-marks', label: 'Each symptom marked: a person looking for a thing and not reaching it, or a person who never knew it existed', kind: 'long' },
-        { id: 'discoverability-reason', label: 'For every symptom you marked as never knowing: why no findability test can reach it, and where the fix would sit instead', kind: 'long' },
+        { id: 'discoverability-reason', label: 'For every symptom you marked as never knowing: why no test that names the target can reach it, and where the fix would sit instead', kind: 'long' },
       ] },
       { id: 'next', title: 'What you would run next', fields: [
         { id: 'next-test-sentence', label: 'The symptom you chose, the test you would run, and why that one rather than the others', kind: 'long', hint: 'Write it as “I will run … because I suspect …”. A test you cannot finish that sentence for is not chosen yet.' },
@@ -1269,7 +1269,7 @@ export const guided06: Record<string, Guided> = {
           material: 'A supplied made-up symptom. A fee waiver exists, sits in the menu under a plain name, and in five sessions nobody visited it. When told it existed, every one of them found it in a single move.',
           question: 'Which test would identify the cause here?',
           options: [
-            { label: 'None of the four: each tells people what to find, and these people never knew to look.', correct: true, feedback: 'Every findability test names the target before it starts. The failure is that nobody wanted the thing yet, so the fix sits in how it is raised during booking rather than in the structure.', was: ['None of the four, because they all begin by telling the person what to look for, and this is a person who never knew to look.'] },
+            { label: 'None of the narrow three: each names the target, and these people never knew to look.', correct: true, feedback: 'Tree tests, sorts and click tests name the target first, and the failure is that nobody wanted the thing yet. A usability test of booking that never mentions the waiver is what showed this, and the fix sits in how the waiver is raised during booking rather than in the structure.', was: ['None of the four, because they all begin by telling the person what to look for, and this is a person who never knew to look.', 'None of the four: each tells people what to find, and these people never knew to look.'] },
             { label: 'A tree test, because it removes the layout and shows whether the branches lead there.', feedback: 'It would come back clean, because it hands the person the goal. Everyone found it in one move once told, which is that result already.', was: ['A tree test, because it takes the layout away and shows whether the branches work.'] },
             { label: 'A click test, because people may be failing to notice the menu item on the real screen.', feedback: 'Worth asking when people ignore the menu on tasks they are actually trying to do. Here they were not trying, so the component was never the obstacle.', was: ['A click test, because people may not be seeing the menu.'] },
             { label: 'A closed card sort, because the plain name may still not be understood by everyone.', feedback: 'A sort would check whether the name reads correctly, and the name worked the moment anyone was pointed at it. The gap sits earlier than the name.', was: ['A closed card sort, because the name may not be understood.'] },
@@ -1326,7 +1326,7 @@ export const guided06: Record<string, Guided> = {
       prompt: 'Choose the test you would run first for one of the two symptoms, say what result would make you switch to a different test, and explain why you chose it.',
       anchors: {
         weak: 'Picks a tree test or a full usability test for both symptoms, or treats the discount as a problem with the menu label.',
-        adequate: 'For the search symptom, picks a click test on the real layout to learn whether the menu is seen at all; or calls the discount a discoverability problem that no findability test can reach, with the reason.',
+        adequate: 'For the search symptom, picks a click test on the real layout to learn whether the menu is seen at all; or calls the discount a discoverability problem that no test naming the target can reach, with the reason.',
         strong: 'As adequate, and names the result that would redirect the plan, such as people seeing the menu but finding typing quicker, and suggests the cheaper content check before any test.',
       },
     },
@@ -1350,7 +1350,7 @@ export const guided06: Record<string, Guided> = {
         { id: 'misplaced', label: 'Anything sitting in the wrong region or under the wrong kind', kind: 'short' },
       ] },
       { id: 'aloud', title: 'Read it aloud, then run the checks', fields: [
-        { id: 'read-aloud', label: 'What your headings alone said when you read them out, and what you rewrote afterwards', kind: 'long', sensitive: true, hint: 'Read only the headings, in order, with the page covered. Write what a listener thought the page was about, referring to them by role, such as “a friend”, never by name.' },
+        { id: 'read-aloud', label: 'What your headings alone said when you read them out, and what you rewrote afterwards', kind: 'long', sensitive: true, hint: 'Read only the headings, in order, with the page covered. Write what a listener thought the page was about, referring to them by role, such as “a friend”, never by name. Studying alone? Leave the outline a day, read it cold, and label it as your own cold read.' },
         { id: 'checks-run', label: 'The preliminary checks you ran, and what each one showed', kind: 'long', hint: 'The page title in the browser tab, the heading order, and reaching everything with the Tab key. Write what each one showed, not a verdict.' },
       ] },
       { id: 'limits', title: 'What you could not verify', fields: [
@@ -1408,7 +1408,7 @@ export const guided06: Record<string, Guided> = {
           ],
           then: 'Read your own headings aloud with the page covered, and mark every one that could move to another page unnoticed.',
         },
-        start: 'Read the headings to one other person and ask them what the page is about before you tell them.',
+        start: 'Read the headings to one other person and ask them what the page is about before you tell them. If nobody is available, read them cold yourself the next day and label it as your own read.',
         enough: 'Every heading you could move elsewhere unnoticed has been rewritten, and each check has a written result.' },
       { terms: [{ term: 'Screen reader', meaning: 'Software that reads a page aloud and lets somebody move through it by heading or by region. It is how a heading outline gets used in practice.' }, { term: 'Artefact', meaning: 'The thing this step leaves behind: here the outline, the region sketch and the check results. Where each one lives matters more than how it looks.' }, { term: 'Not run', meaning: 'A check you skipped, recorded plainly as skipped. Recorded as though it had happened, it makes everything else in the note untrustworthy.' }], expect: 'What you could not check, the sentence about the missing session, where the artefacts live, and the repair the Check questions asked for.',
         fields: ['not-verified', 'no-at-session', 'artefacts', 'improvement-made'],
@@ -1429,12 +1429,12 @@ export const guided06: Record<string, Guided> = {
       {
         question: 'You read your headings aloud and they made sense to you. Is that enough?',
         options: [
-          { label: 'You know the page, so read them to someone who has not seen it and ask what it covers.', correct: true, feedback: 'Your own reading is not enough on its own. You fill in the missing meaning from memory without noticing, and a listener who cannot do that hears what the outline really says.', was: ['Not on its own, because you know the page. Read them to somebody who has not seen it and ask what the page is about.'] },
+          { label: 'You know the page, so read them to someone who has not seen it, or cold the next day.', correct: true, feedback: 'Your reading straight after writing is not enough. You fill in the missing meaning from memory without noticing, and a listener who cannot do that hears what the outline really says. Studying alone, leave it a day and read it cold, labelled as your own read.', was: ['Not on its own, because you know the page. Read them to somebody who has not seen it and ask what the page is about.', 'You know the page, so read them to someone who has not seen it and ask what it covers.'] },
           { label: 'Your own reading is enough, since every heading came from your evidenced labelling table.', feedback: 'The table gives you the words people use. It cannot tell you whether five of those words in a row describe this particular page.', was: ['It is enough, since you took the headings from your labelling table.'] },
           { label: 'Your reading is enough once you confirm the headings also match the visual design.', feedback: 'Matching the design is the thing the test removes. The design has been rescuing the wording, which is why the wording never got fixed.', was: ['It is enough if the headings match the visual design.'] },
         ],
-        repair: 'Read your outline from step 2 to one other person and write what they said the page was about in the read-aloud box in step 4. Record any rewrite in the last box.',
-        recheck: 'The read-aloud box names a listener and what they inferred, not only your own judgement.',
+        repair: 'Read your outline from step 2 to one other person, or alone the next day with the page covered, and write what the page seemed to be about in the read-aloud box in step 4. Record any rewrite in the last box.',
+        recheck: 'The read-aloud box names a listener and what they inferred, or records a cold read a day later, labelled as your own.',
       },
       {
         question: 'The preliminary checks all came out clean. What can you claim?',
@@ -1580,7 +1580,7 @@ export const guided06: Record<string, Guided> = {
       next: 'Open Your work and choose Ready for review. The last lesson of the module puts your labels under pressure and closes everything into a change note.',
     },
     transfer: {
-      scenario: 'Made-up case: residents search an electricity company’s website using phrases such as “bill not came”, “pay after due date” and “meter photo”. The pages are titled Billing cycle, Late payment charges and Self-reading submission. The answer to “why is my bill high” exists only in a leaflet posted with paper bills.',
+      scenario: 'Made-up case: residents search an electricity company’s website using phrases such as “bill not came”, “pay after due date” and “meter photo”. The pages are titled Billing cycle, Late payment charges and Self-reading submission; the Billing cycle page explains what to do when a bill has not arrived. The answer to “why is my bill high” exists only in a leaflet posted with paper bills.',
       prompt: 'Classify the failure for “bill not came” and for “why is my bill high”, choose a fix for each, and explain why at least one of the fixes needs no search engine.',
       anchors: {
         weak: 'Calls every failure a search problem and proposes synonyms or a better search engine for both phrases.',
@@ -1597,13 +1597,13 @@ export const guided06: Record<string, Guided> = {
         { id: 'predicted-breaks', label: 'Which of your labels you expect to break, and why', kind: 'long', example: 'Example (made up): “Change or cancel a booking” is the longest thing in the menu, so it goes first at any narrow width.' },
       ] },
       { id: 'longer', title: 'Longer text and a second script', fields: [
-        { id: 'padded-result', label: 'With about a third more characters: every wrap, truncation and overflow, named one by one', kind: 'long', hint: 'Pad each label by hand in a text file. Write where it broke and in which place it appears, not that it broke.' },
+        { id: 'padded-result', label: 'With each label padded to its likely translated length: every wrap, truncation and overflow, named one by one', kind: 'long', hint: 'Pad each label by hand in a text file: two to three times its length if it is under about ten characters, at least 60–80% longer if it is longer (W3C, Text size in translation). Write where it broke and in which place it appears, not that it broke.' },
         { id: 'script-result', label: 'In an Indic script: clipped marks, missing characters, rows that no longer fit', kind: 'long' },
         { id: 'script-method', label: 'How you produced the second-script version', kind: 'choice', options: ['Rendered on screen', 'Written by hand on paper', 'Both'] },
       ] },
       { id: 'narrowslow', title: 'Narrow and slow', fields: [
         { id: 'narrow-result', label: 'At about 320 px: every label that wrapped, was cut off, or ran off the edge', kind: 'long' },
-        { id: 'slow-result', label: 'On a throttled connection with the cache off: what arrived first, and whether it made sense on its own', kind: 'long', hint: 'If your page lives only on paper, write that this one could not be run. Do not guess the answer.' },
+        { id: 'slow-result', label: 'On a throttled connection with the cache off: what arrived first, and whether it made sense on its own', kind: 'long', hint: 'If your page lives only on paper, throttle a comparable live page with the cache off and say which page you loaded; write not run only if you could load nothing. Do not guess the answer.' },
       ] },
       { id: 'repair', title: 'Repair and run it again', fields: [
         { id: 'repairs', label: 'What you changed, label by label, and how the new label keeps the word that tells it apart', kind: 'long' },
@@ -1622,17 +1622,17 @@ export const guided06: Record<string, Guided> = {
       { expect: 'What room to grow means, two India requirements that apply to your labels, and which labels you expect to break.',
         fields: ['expansion-rule', 'predicted-breaks'],
         terms: [
-          { term: 'Expansion', meaning: 'Translated text is usually longer than the English it came from, often by about a third. A label set built to the tightest fit has nowhere to put the extra.' },
+          { term: 'Expansion', meaning: 'Translated text is usually longer than the English it came from, and short labels grow most: two to three times their length under about ten characters, 60–80% longer at twenty-one to thirty. A label set built to the tightest fit has nowhere to put the extra.' },
           { term: 'Matra', meaning: 'The vowel mark written above or below a Devanagari letter. If the line height was set for Latin text the mark gets clipped, and the word changes.' },
         ],
         start: 'Write your predictions before you test anything. Being wrong about them is the useful part.',
         enough: 'You have named specific labels, not a general worry that long labels are risky.' },
-      { terms: [{ term: 'Wrap', meaning: 'Text carrying on to a second line because it ran out of width. Nothing is lost, and the row it sits in becomes taller.' }, { term: 'Overflow', meaning: 'Text running past the edge of the space it is in, so part of it cannot be seen or reached at all.' }, { term: 'Indic script', meaning: 'A writing system used across India, such as Devanagari for Hindi. Its letters carry marks above and below the line that Latin letters do not.' }], expect: 'Every break under a third more characters and under a second script, named one by one.',
+      { terms: [{ term: 'Wrap', meaning: 'Text carrying on to a second line because it ran out of width. Nothing is lost, and the row it sits in becomes taller.' }, { term: 'Overflow', meaning: 'Text running past the edge of the space it is in, so part of it cannot be seen or reached at all.' }, { term: 'Indic script', meaning: 'A writing system used across India, such as Devanagari for Hindi. Its letters carry marks above and below the line that Latin letters do not.' }], expect: 'Every break under realistic expansion and under a second script, named one by one.',
         fields: ['padded-result', 'script-result', 'script-method'],
         demo: {
-          scenario: 'Made-up example. Padding a nine-item label set by a third, writing “nothing broke”, and then actually looking.',
+          scenario: 'Made-up example. Padding a nine-item label set to its likely translated length, writing “nothing broke”, and then actually looking.',
           beats: [
-            { label: 'What I did', text: 'I copied the nine labels into a text file and added about a third more characters to each, the way a Hindi version would run longer.' },
+            { label: 'What I did', text: 'I copied the nine labels into a text file and padded each one the way a translation would run longer: short ones such as “Classes” to about three times their length, and the longest, “Change or cancel a booking”, by about two thirds.' },
             { label: 'What I wrote down', text: '“Nothing broke.” The menu ran down the side of the page, and every longer label simply wrapped onto a second line.' },
             { label: 'What I had not looked at', text: 'The same labels also sit on buttons and on the tabs across the top. On the button, “Change or cancel a booking” stopped at “Change or cancel a…”.' },
             { label: 'The second thing I missed', text: 'In Devanagari the menu wrapped without trouble, and one heading lost the marks above its letters, because the row height had been set for Latin text and nothing else.' },
@@ -1654,7 +1654,7 @@ export const guided06: Record<string, Guided> = {
           intro: 'Six break lines from somebody else’s label test, all made up for practice. She tested the same menu four ways. For each line, say which test found it: a length problem, a script problem, a width problem or a speed problem.',
           options: ['length', 'script', 'width', 'speed'],
           items: [
-            { id: 'button-cut', text: 'With a third more characters added, “Change or cancel a booking” stops at “Change or cancel a…” on the button.', answer: 'length',
+            { id: 'button-cut', text: 'Padded by two thirds, as a translation might run, “Change or cancel a booking” stops at “Change or cancel a…” on the button.', answer: 'length',
               feedback: {
                 length: 'The label broke only once it got longer, and the button stayed the size it always was. More text in a fixed space is the length problem.',
                 script: 'No second script is involved. These are the same Latin letters, simply more of them.',
@@ -1682,10 +1682,10 @@ export const guided06: Record<string, Guided> = {
                 width: 'The width was untouched. This is the same page at the same size, arriving slowly.',
                 speed: 'That is the speed test, and this one is worth keeping: the headings carried the page on their own while the rest was still coming.',
               } },
-            { id: 'hindi-wraps', text: 'The Hindi version of the menu runs about a third longer, and every item wraps onto two lines.', answer: 'length',
+            { id: 'hindi-wraps', text: 'With each label padded to its likely translated length, every item in the side menu wraps onto two lines.', answer: 'length',
               feedback: {
-                length: 'The script rendered as it should and the only trouble is the extra characters. Longer text is a length problem, whichever language made it longer.',
-                script: 'Tempting, because a translation is what triggered it. Nothing is clipped or missing though, so the script itself is fine.',
+                length: 'More characters in the same space is the length problem. Wrapping keeps every word, so this break is mild, and it still goes on the list.',
+                script: 'Only Latin letters were used here, padded out. Nothing is clipped or missing, so no second script was tested.',
                 width: 'The screen is the width it always was. The text grew rather than the space shrinking.',
                 speed: 'Loading plays no part. The whole menu is there and takes two lines per item.',
               } },
@@ -1701,8 +1701,8 @@ export const guided06: Record<string, Guided> = {
           pattern: 'Ask what you changed to cause it. More characters is length. A different script is script. Less room is width. A slower connection is speed. If two things changed at once, split the line in two.',
         },
         start: 'Do the narrow case first: it needs nothing but a smaller window and takes ten minutes.',
-        enough: 'Each line in both boxes names a label and what happened to it, and the slow test says plainly whether it was run.' },
-      { terms: [{ term: 'The word that tells it apart', meaning: 'The one word separating a label from its neighbour: change against cancel, book against browse. It is the word a shortened label usually loses.' }, { term: 'Splitting a label', meaning: 'Turning one item into two when no short version keeps both meanings. It lengthens the menu and it keeps the difference.' }, { term: 'Re-check', meaning: 'Running your two worst breaks again after the repair, to see whether the repair held. A repair with no second result written down is a hope.' }], demo: { scenario: 'Made-up example. Shortening a cut-off label so it fits the button, and losing the word that told it apart from the item beside it.', beats: [{ label: 'What was broken', text: 'At about 320 px, “Change or cancel a booking” stopped at “Change or cancel a…” on the button. It was the worst break on the list, so I repaired it first.' }, { label: 'What I changed it to', text: '“Manage booking”. Eleven characters shorter, it fits at every width I tried, and it still fits with a third more characters added.' }, { label: 'What I had not noticed', text: 'The item beside it was “Manage your account”. Two neighbours now opened with the same word, and my card sort had shown people separating changing from cancelling.' }, { label: 'What the shorter label stopped saying', text: 'Somebody who wants their money back cannot tell from “Manage booking” whether cancelling is something this product allows at all. The fit was repaired and the meaning had gone.' }, { label: 'What I did instead', text: 'Two items: “Change a booking” and “Cancel a booking”. Each is short enough for the button, and each keeps the word doing the telling apart.' }], wrongTurn: 'The wrong turn is shortening a label to whatever fits. The fit is the visible problem and it is gone in seconds, while the word you dropped was carrying the whole difference between that label and its neighbour.', tradeoff: 'Splitting one item into two makes the menu longer, and that is a real cost: more to read, more to scan past, and one more line for a translator to handle. You pay for it with the space you were trying to save.', uncertainty: 'Still unknown: whether two separate items read as two separate actions to somebody meeting them fresh. Your sort showed people separating the ideas. It did not show anybody meeting these particular words on a button.' }, expect: 'Repairs that keep the word telling each label apart, with the two worst cases run again.',
+        enough: 'Each line in both boxes names a label and what happened to it, and the slow test names the page you loaded, or says plainly that nothing could be loaded.' },
+      { terms: [{ term: 'The word that tells it apart', meaning: 'The one word separating a label from its neighbour: change against cancel, book against browse. It is the word a shortened label usually loses.' }, { term: 'Splitting a label', meaning: 'Turning one item into two when no short version keeps both meanings. It lengthens the menu and it keeps the difference.' }, { term: 'Re-check', meaning: 'Running your two worst breaks again after the repair, to see whether the repair held. A repair with no second result written down is a hope.' }], demo: { scenario: 'Made-up example. Shortening a cut-off label so it fits the button, and losing the word that told it apart from the item beside it.', beats: [{ label: 'What was broken', text: 'At about 320 px, “Change or cancel a booking” stopped at “Change or cancel a…” on the button. It was the worst break on the list, so I repaired it first.' }, { label: 'What I changed it to', text: '“Manage booking”. Twelve characters shorter, it fits at every width I tried, and it still fits padded to nearly twice its length.' }, { label: 'What I had not noticed', text: 'The item beside it was “Manage your account”. Two neighbours now opened with the same word, and my card sort had shown people separating changing from cancelling.' }, { label: 'What the shorter label stopped saying', text: 'Somebody who wants their money back cannot tell from “Manage booking” whether cancelling is something this product allows at all. The fit was repaired and the meaning had gone.' }, { label: 'What I did instead', text: 'Two items: “Change a booking” and “Cancel a booking”. Each is short enough for the button, and each keeps the word doing the telling apart.' }], wrongTurn: 'The wrong turn is shortening a label to whatever fits. The fit is the visible problem and it is gone in seconds, while the word you dropped was carrying the whole difference between that label and its neighbour.', tradeoff: 'Splitting one item into two makes the menu longer, and that is a real cost: more to read, more to scan past, and one more line for a translator to handle. You pay for it with the space you were trying to save.', uncertainty: 'Still unknown: whether two separate items read as two separate actions to somebody meeting them fresh. Your sort showed people separating the ideas. It did not show anybody meeting these particular words on a button.' }, expect: 'Repairs that keep the word telling each label apart, with the two worst cases run again.',
         fields: ['repairs', 'split-labels', 'recheck-result'],
         start: 'Start with whatever was cut off, since that is the break that removes meaning rather than moving it.',
         enough: 'No repaired label depends on being cut short, and the two worst cases have a second result written down.' },

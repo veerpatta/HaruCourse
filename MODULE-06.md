@@ -264,13 +264,13 @@ Section: practice-plan. Stable action: step-3-brief.
 
 A route recorded for every item in your list, with the ask-a-person and email-only cases named here.
 
-- For each item, record how a person reaches it today: main navigation, one page deep, search only, email only, or by asking a human. Mark the items your research showed people actually needed.
+- For each item, record how a person who has never used the product reaches it today: main navigation, one page deep, search only, email only, or by asking a human. Mark the items your research showed people actually needed.
 
 **Start here:** Open the product as though you had never seen it and try to reach three items you know are in there.
 
 **Enough:** Every item in your table has a route, and the ones that need a human are separated out.
 
-**Reachability:** What a person has to do today to get to the thing: the menu, a deep page, search, an email, or asking someone.
+**Reachability:** What a person who has never used the product has to do today to get to the thing: the menu, a deep page, search, an email, or asking someone.
 
 
 ### How many items sit in each route: main navigation, one page deep, search only, email only, or by asking a person
@@ -299,7 +299,7 @@ This is where the real problems announce themselves. Renaming a menu cannot fix 
 
 Section: practice-plan. Stable action: step-4-brief.
 
-Up to four collisions written out: which rows are involved, what kind of collision it is, and your one-line note on each.
+One to four collisions written out: which rows are involved, what kind of collision it is, and your one-line note on each. Boxes 2 to 4 are optional, so leave any you do not need empty.
 
 - Mark duplicates, contradictions, items sharing a label and items with no owner. Write a one-line note for each collision; several will turn out to be content problems rather than structure problems.
 
@@ -343,11 +343,11 @@ Go through your own collisions and mark each one content or structure, so you kn
 
 Section: practice-plan. Stable action: write-collision-1.
 
-Write your answer for “Collision 1 · the rows involved, what kind of collision it is, and your one-line note”. Use the task instructions below to decide what to include.
+If you truly found none, write “none found” and the two passes you made to look.
 
 **Answer:** Collision 1 · the rows involved, what kind of collision it is, and your one-line note
 
-
+If you truly found none, write “none found” and the two passes you made to look.
 
 <details>
 <summary>Example</summary>
@@ -361,11 +361,13 @@ Example (made up): rows 7 and 22 · both called “Details”, one is the venue 
 
 Section: practice-plan. Stable action: write-collision-2.
 
-Write your answer for “Collision 2 · the rows involved, what kind, and your note”. Use the task instructions below to decide what to include.
+Leave this empty if you found only one collision. Never invent one to fill the box.
 
 **Answer:** Collision 2 · the rows involved, what kind, and your note
 
+Optional: may be left empty.
 
+Leave this empty if you found only one collision. Never invent one to fill the box.
 
 
 ### Collision 3 · the rows involved, what kind, and your note
@@ -375,6 +377,8 @@ Section: practice-plan. Stable action: write-collision-3.
 Write your answer for “Collision 3 · the rows involved, what kind, and your note”. Use the task instructions below to decide what to include.
 
 **Answer:** Collision 3 · the rows involved, what kind, and your note
+
+Optional: may be left empty.
 
 
 
@@ -386,6 +390,8 @@ Section: practice-plan. Stable action: write-collision-4.
 Write your answer for “Collision 4 · the rows involved, what kind, and your note”. Use the task instructions below to decide what to include.
 
 **Answer:** Collision 4 · the rows involved, what kind, and your note
+
+Optional: may be left empty.
 
 
 
@@ -456,20 +462,20 @@ Section: check. Stable action: reason-3.
 
 Choose the reason you believe, read the feedback, then improve the relevant answer if needed.
 
-You filled the reachability column from memory, because you know the product well. What is wrong with that?
+You filled the reachability column from memory, without opening the product as a newcomer. What is wrong with that?
 
 - Memory is reliable for menu pages; the only rows at risk are the answers buried in emails and PDFs.
-- You know routes a first-time visitor does not, so the column records your route, not theirs.
-- Very little, provided every route you wrote down really exists and you have checked each one works.
+- You record where you know things are, not the route a newcomer would have to find.
+- Very little, since someone who knows the product well remembers its routes accurately.
 
 <details>
 <summary>After your attempt</summary>
 
 Memory is reliable for menu pages; the only rows at risk are the answers buried in emails and PDFs. — Pages are where your knowledge helps you most. You go straight to one from a menu you have used a hundred times, which a stranger cannot do.
 
-You know routes a first-time visitor does not, so the column records your route, not theirs. — The column is meant to show how hard a thing is to reach. Filled in from knowledge, it records that everything is reachable, which is true only for you.
+You record where you know things are, not the route a newcomer would have to find. — The column is meant to show what a newcomer has to do to reach each thing. Filled in from memory, it records the shortcuts you already know, and an item a stranger would never find looks as easy as the rest.
 
-Very little, provided every route you wrote down really exists and you have checked each one works. — They exist, and that is not the question. A route you can only take because you already know it is a route the column should be marking as a problem.
+Very little, since someone who knows the product well remembers its routes accurately. — Remembering accurately is not the question. A route you can take only because you already know it may be one a newcomer never finds, and the column should mark that as a problem.
 
 Improve: Work through your two reachability boxes in step 3 again, pretending you have never used the product, and write what you actually had to do. Record the corrections in step 5.
 
@@ -812,13 +818,13 @@ Example (made up): “Resources” · an internal word · it names a shelf in th
 
 Section: practice-plan. Stable action: step-2-brief.
 
-Four vocabulary lines copied out exactly from your notes, each attributed to a participant.
+Four vocabulary lines copied out exactly, each attributed to a participant or a named source, or a plain statement that you have no participant words.
 
-- Read every interview note and record each word participants used for things in your inventory, verbatim, with who said it. Do not paraphrase into your own vocabulary as you go.
+- Read every interview note and record each word participants used for things in your inventory, verbatim, with who said it. Do not paraphrase into your own vocabulary as you go. No participant words? Copy phrases from real messages or public reviews about this kind of product, naming the source, or state that your notes record actions only and mark every label in step 3 a guess.
 
 **Start here:** Put the inventory beside the notes and mark every noun a participant used for a thing on your list. If m05 produced no participants at all, say so in the sample box and take your words from real messages people have already sent you or public reviews of similar products, with names removed and the source named, marking every row with no quotation as a guess. With none of those, every row is a guess, and saying so is a complete answer. A rehearsal with yourself is never written down as research.
 
-**Enough:** Every phrase is in somebody else’s words, with a participant label beside it.
+**Enough:** Every phrase is in somebody else’s words with its source, or the absence is stated.
 
 **Verbatim:** The exact words, in the order they were said, with nothing improved. Anything you smooth is yours rather than theirs.
 
@@ -850,11 +856,11 @@ Made-up example. Reading five sets of interview notes for vocabulary, and throwi
 
 Section: practice-plan. Stable action: write-vocab-1.
 
-Use a label such as P2, never a name. Keep your raw notes in a private file or on paper with a date to delete them, and copy only the words for this item here.
+Use a label such as P2, never a name. Keep your raw notes in a private file or on paper with a date to delete them, and copy only the words for this item here. No participant words? Copy phrases from real messages or public reviews about this kind of product, naming the source, or write “no participant words: the supplied notes record actions only” here and “none” in the other boxes, and mark every label in step 3 a guess.
 
 **Answer:** Vocabulary 1 · the item, the exact words a participant used for it, and their participant label
 
-Use a label such as P2, never a name. Keep your raw notes in a private file or on paper with a date to delete them, and copy only the words for this item here.
+Use a label such as P2, never a name. Keep your raw notes in a private file or on paper with a date to delete them, and copy only the words for this item here. No participant words? Copy phrases from real messages or public reviews about this kind of product, naming the source, or write “no participant words: the supplied notes record actions only” here and “none” in the other boxes, and mark every label in step 3 a guess.
 
 <details>
 <summary>Example</summary>
@@ -1035,7 +1041,7 @@ Section: practice-plan. Stable action: step-3-sort-6.
 
 Six label lines from a made-up practice set. Each names a proposed label and the reason the designer wrote beside it. Decide whether that reason is a participant’s own words or the designer’s own guess.
 
-Proposed label “Classes”, chosen over “Workshops”. The reason says: two participants said “class”, two said “workshop”, and the designer picked the one first-timers used.
+Proposed label “Sessions”. The reason says: two participants said “class”, two said “workshop”, and the designer chose a word that covers both.
 
 - evidenced
 - guess
@@ -1043,9 +1049,9 @@ Proposed label “Classes”, chosen over “Workshops”. The reason says: two 
 <details>
 <summary>After your attempt</summary>
 
-evidenced — Each word is evidenced and the choice between them is not. Four people splitting two and two cannot show you which audience uses which, so the reason for picking is still a hypothesis.
+evidenced — Nobody said “sessions”. The participants’ words are evidence for “class” and for “workshop”; a third word that covers both is the designer’s own, however neutral it sounds.
 
-guess — Both words have evidence behind them, so the words are not the guess. The claim that first-timers use one and returning people the other is the guess, and the label rests on it.
+guess — Both participant words were set aside for one the designer chose. A neutral word can be sensible, and it stays a guess until somebody tests it. The class and workshop split itself belongs in step 4 as a conflict.
 
 Go down your own evidence column. Any cell you cannot fill with a participant’s word makes that row a guess, and the mark stays until somebody says otherwise.
 
@@ -3234,7 +3240,7 @@ Section: practice-plan. Stable action: step-4-sort-4.
 
 Six lines from a card-sort write-up, all made up for practice. They come from one session with one person. Sort each line by what it actually is.
 
-She made a pile and wrote “stuff before the class” on a note beside it.
+She put the five practical cards into one pile without pausing, then reached for the next card.
 
 - what she did
 - what she said
@@ -3243,11 +3249,11 @@ She made a pile and wrote “stuff before the class” on a note beside it.
 <details>
 <summary>After your attempt</summary>
 
-what she did — She built something and named it. Both are actions you watched, and the wording of the name is hers rather than yours.
+what she did — Making the pile and moving on are both movements you watched. Anyone at the table would have written down the same thing.
 
-what she said — She wrote it rather than speaking it. Filing it as an action keeps the pile and its name together, which is where the value is.
+what she said — She said nothing here. The record is of her hands and her pace, which is why it belongs under doing.
 
-your conclusion — Nothing here is your interpretation. The pile exists and the words are on the note.
+your conclusion — There is no reading in it yet. You have not said what the quick pile means, so the fact stays open for later.
 
 Take three lines from your own notes and split them the same way. Any line that will not split is already a conclusion.
 
@@ -3478,7 +3484,7 @@ Needed whenever either sort was a rehearsal.
 
 **Answer:** The words written on every rehearsal artefact so it can never be read as research
 
-Required only when open-status is Nobody has consented yet, so I sorted them myself as a rehearsal. Otherwise leave participant evidence empty.
+Required only when open-status is Nobody has consented yet, so I sorted them myself as a rehearsal, or when closed-status is Nobody has consented yet, so I placed them myself as a rehearsal. Otherwise leave participant evidence empty.
 
 Needed whenever either sort was a rehearsal.
 
@@ -3693,14 +3699,14 @@ Analyse your sorts — or, if your lesson 5 sort was a rehearsal, the supplied p
 
 Section: learn. Stable action: learn-1.
 
-Work item by item, not pile by pile. For each card, record where each participant put it, so you end with a row per item reading “three of four put this with the money items, one put it with cancelling, two hesitated”. That form is honest, it survives being read six months later, and it makes the ambiguous items — the ones that scattered — visible without any arithmetic.
+Work item by item, not pile by pile. For each card, record where each participant put it, so you end with a row per item reading “three of four put this with the money items, one put it with cancelling, two hesitated”. That form is honest, it survives being read six months later, and it makes the items that split or caused doubt visible without any arithmetic.
 
 
 ### Three patterns are worth naming
 
 Section: learn. Stable action: learn-2.
 
-Three patterns are worth naming. Agreement, where everyone placed an item the same way and nobody hesitated, means you can stop thinking about that item. Disagreement, where placements split, usually means either two audiences or an item that is really two items. Ambiguity, where an item was placed consistently but slowly and with doubt, is the pattern people miss, and it predicts wrong first clicks better than a clean split does.
+Three patterns are worth naming. Agreement, where everyone placed an item the same way and nobody hesitated, means you can stop thinking about that item. Disagreement, where placements split, usually means either two audiences or an item that is really two items; a split with hesitation is still a disagreement, so note the doubt beside it. Ambiguity, where an item was placed consistently but slowly and with doubt, is the pattern people miss, and it flags items likely to cause wrong first clicks even when every placement agrees.
 
 
 ### Idea 3: Do not compute percentages, and do not use similarity matrices…
@@ -3853,7 +3859,7 @@ Made-up example. Classifying four sorts, and turning three people into a percent
 
 **What I wrote instead:** “Three of four put the refund rule with the money cards. One put it with cancelling. Two of the three hesitated first.” Longer, duller, and true.
 
-**What the count showed that the rate hid:** Two of the three hesitated. A clean rate buries that; the count with the hesitations beside it made the item ambiguous rather than agreed, which changed what I did next.
+**What the count showed that the rate hid:** Two of the three hesitated. A clean rate buries that; the count with the hesitations beside it showed a split made with doubt, not an agreement, which changed what I did next.
 
 **Wrong turn:** The wrong turn is the arithmetic. It takes one second, it makes the finding sound stronger, and it converts four people into a claim about a population you never met.
 
@@ -3895,11 +3901,11 @@ Look at who placed it which way and what else you know about them. If nothing di
 
 Section: practice-plan. Stable action: write-ambiguous-items.
 
-This is the pattern people miss, and it predicts a wrong first click better than a clean split does.
+This is the pattern people miss, and it flags items likely to cause wrong first clicks even when every placement agrees.
 
 **Answer:** The items placed consistently but slowly, and what the hesitation looked or sounded like
 
-This is the pattern people miss, and it predicts a wrong first click better than a clean split does.
+This is the pattern people miss, and it flags items likely to cause wrong first clicks even when every placement agrees.
 
 
 ### Revise the structure
@@ -4051,7 +4057,7 @@ Agreement, because all four placed it identically in the end. — The final pile
 
 Disagreement, because the hesitation shows they were split in their own minds. — Disagreement is about different placements. Keeping this one as ambiguous lets the two patterns do different work for you.
 
-Ambiguous, because the placements were consistent and slow. — Doubt before a placement predicts a wrong first click better than a clean split does. Agreement means placed the same way and placed easily.
+Ambiguous, because the placements were consistent and slow. — Doubt before a placement flags an item likely to cause wrong first clicks, even when every placement agrees. Agreement means placed the same way and placed easily.
 
 Improve: Re-read your hesitation notes and mark every slow placement in your classification in step 2, then record the change in step 5.
 
@@ -4493,7 +4499,7 @@ Six tasks, each a situation with a goal, and the answer you accept written down 
 
 **Start here:** Take a moment from your m05 notes and write what the person was holding, worrying about and trying to do.
 
-**Enough:** No task contains a word that appears anywhere on your sheets.
+**Enough:** No task uses the distinctive word of its target label, or of the branch that leads to it.
 
 **Task:** A short description of a situation and a goal, with no word from your tree inside it. It describes a moment, not a destination.
 
@@ -4529,11 +4535,11 @@ Made-up example. Writing six tree-test tasks, and finding that the first three h
 
 Section: practice-plan. Stable action: write-task-1.
 
-Describe a moment, not a destination. If the sentence names a label from your tree, it is not a task yet.
+Describe a moment, not a destination. If the sentence uses the distinctive word of its target label, it is not a task yet.
 
 **Answer:** Task 1 · the situation, the goal, and the answer you will accept
 
-Describe a moment, not a destination. If the sentence names a label from your tree, it is not a task yet.
+Describe a moment, not a destination. If the sentence uses the distinctive word of its target label, it is not a task yet.
 
 <details>
 <summary>Example</summary>
@@ -4783,9 +4789,9 @@ An easier version of the same question, which is acceptable for a warm-up task. 
 
 Whether the grouping makes sense, since they still have to choose the right branch. — They do choose, and they choose by matching. The test can no longer tell you whether the grouping made any sense to them.
 
-Improve: Underline every word in your six tasks in step 2 that also appears on a sheet, rewrite those tasks as situations, and record the rewrites in step 5.
+Improve: Underline every word in your six tasks in step 2 that also appears in the target label or the branch leading to it, rewrite those tasks as situations, and record the rewrites in step 5.
 
-Check again: No task contains a word that appears on any sheet of the tree.
+Check again: No task uses the distinctive word of its target label, or of the branch that leads to it.
 
 Answers to revisit: task-1, task-2, task-3, task-4, task-5, task-6, improvement-made
 
@@ -4888,7 +4894,7 @@ Write your decision first, then the reason it fits this new case. Compare with t
 <summary>Compare after writing</summary>
 
 - Weak: Keeps the label in the task or barely rewords it, such as “Look for refunds”, and decides what counts as success after seeing the results.
-- Adequate: Writes a situation such as “You bought tickets for Saturday and now cannot go; where would you look?”, avoids the word refund, and fixes the accepted answer (Tickets and refunds, perhaps Help) in advance so results cannot be bent.
+- Adequate: Writes a situation such as “You paid for two seats on Saturday and now cannot go; where would you look?”, avoiding both words of the target label, and fixes the accepted answer (Tickets and refunds, perhaps Help) in advance so results cannot be bent.
 - Strong: As adequate, and plans to record first choice, backtracking and confidence, and notes that results from tasks you chose show how the structure handles them, not how often real visitors want refunds.
 
 </details>
@@ -4944,7 +4950,7 @@ When the activity is finished, tell me to return to the course answer called “
 <details>
 <summary>Optional hints and reference material</summary>
 
-- Underline every word in a task that also appears in your structure. Rewrite the task using the situation your participants described in m05 instead.
+- Underline every word in a task that also appears in its target label or the branch leading to it. Rewrite the task using the situation your participants described in m05 instead.
 - Write the answer key now and mark honestly which answers you decided after the fact; those tasks are unreliable and should be re-run.
 
 - R60: [NN/g: tree testing](https://www.nngroup.com/articles/tree-testing/) — Building the tree, writing tasks that do not reveal the answer, defining correct answers in advance, and what a tree test measures. Purpose: Supplies the method, the task-writing discipline and the four things worth recording. Free reading, no account. Verified 2026-09-06; published 6 August 2023 with the publisher's own review on 19 August 2026. The platforms it names are paid, so the paper route is this course's required path; interpretation is covered separately in R61. Fallback: R09.
@@ -4966,7 +4972,7 @@ Adequate evidence: Six task scenarios describing a situation and goal, none cont
 
 3 — As adequate, and at least two tasks deliberately target items the card sort flagged as ambiguous.
 
-Repair: Underline every word in a task that also appears in your structure. Rewrite the task using the situation your participants described in m05 instead. Recheck: The rewritten tasks.
+Repair: Underline every word in a task that also appears in its target label or the branch leading to it. Rewrite the task using the situation your participants described in m05 instead. Recheck: The rewritten tasks.
 
 **Correct answers were defined before running**
 
@@ -5605,14 +5611,14 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your one change did not help: both new re-test participants failed the same task at the same label as before. What goes in the report?
 
-- What you changed, what happened, and that the diagnosis behind it looks wrong.
+- What you changed, what happened, and that the diagnosis or the new label was wrong.
 - That two people are too few to show a difference, so the result is inconclusive.
 - Nothing yet: try a different change first, then report whichever one finally works.
 
 <details>
 <summary>After your attempt</summary>
 
-What you changed, what happened, and that the diagnosis behind it looks wrong. — A change that did not work and was written down is worth more than one that worked and was never understood. It also stops you making the same change again in three weeks.
+What you changed, what happened, and that the diagnosis or the new label was wrong. — A change that did not work and was written down is worth more than one that worked and was never understood. Two failures cannot tell you whether the diagnosis was wrong or the new wording was simply poor too, so record which you suspect and what the paths and quotations show before choosing the next change.
 
 That two people are too few to show a difference, so the result is inconclusive. — The sample is small, and that is not what happened here. Both failed the same task at the same label as before, which is a result about your change.
 
@@ -5899,7 +5905,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Four symptoms from one product, each matched to a test. People choosing the wrong top-level branch — tree test, which had already shown level one was sound. People reaching the right branch and hesitating over two labels — closed card sort with just those two categories, ten minutes per person. People ignoring the menu entirely and using search on every task — a click test on the real layout, because the structure was never being consulted. And people who did not know a fee waiver existed at all — none of the four, since that is discoverability: the item was findable by anyone told to look for it, and the fix belonged in how it was surfaced during booking rather than in the hierarchy.
+- Four symptoms from one product, each matched to a test. People choosing the wrong top-level branch — tree test, which had already shown level one was sound. People reaching the right branch and hesitating over two labels — closed card sort with just those two categories, ten minutes per person. People ignoring the menu entirely and using search on every task — a click test on the real layout, because the structure was never being consulted. And people who did not know a fee waiver existed at all — none of the three narrow tests, since that is discoverability: the item was findable by anyone told to look for it, a usability test of booking that never mentioned it is what showed the gap, and the fix belonged in how it was surfaced during booking rather than in the hierarchy.
 
 
 ### Choose where you will do the work
@@ -6124,7 +6130,7 @@ Section: practice-plan. Stable action: step-4-brief.
 
 Each symptom marked as somebody failing to find a thing, or somebody never knowing it existed, with the reason written for the second kind.
 
-- Mark which of your symptoms are people failing to find something they were looking for, and which are people never knowing it existed. Write why no findability test can address the second.
+- Mark which of your symptoms are people failing to find something they were looking for, and which are people never knowing it existed. Write why no test that names the target can address the second.
 
 **Start here:** For each symptom ask whether the person knew the thing existed before they started.
 
@@ -6143,7 +6149,7 @@ A supplied made-up symptom. A fee waiver exists, sits in the menu under a plain 
 
 Which test would identify the cause here?
 
-- None of the four: each tells people what to find, and these people never knew to look.
+- None of the narrow three: each names the target, and these people never knew to look.
 - A tree test, because it removes the layout and shows whether the branches lead there.
 - A click test, because people may be failing to notice the menu item on the real screen.
 - A closed card sort, because the plain name may still not be understood by everyone.
@@ -6151,7 +6157,7 @@ Which test would identify the cause here?
 <details>
 <summary>After your attempt</summary>
 
-None of the four: each tells people what to find, and these people never knew to look. — Every findability test names the target before it starts. The failure is that nobody wanted the thing yet, so the fix sits in how it is raised during booking rather than in the structure.
+None of the narrow three: each names the target, and these people never knew to look. — Tree tests, sorts and click tests name the target first, and the failure is that nobody wanted the thing yet. A usability test of booking that never mentions the waiver is what showed this, and the fix sits in how the waiver is raised during booking rather than in the structure.
 
 A tree test, because it removes the layout and shows whether the branches lead there. — It would come back clean, because it hands the person the goal. Everyone found it in one move once told, which is that result already.
 
@@ -6175,13 +6181,13 @@ Write your answer for “Each symptom marked: a person looking for a thing and n
 
 
 
-### For every symptom you marked as never knowing: why no findability test can reach it, and where the fix would sit instead
+### For every symptom you marked as never knowing: why no test that names the target can reach it, and where the fix would sit instead
 
 Section: practice-plan. Stable action: write-discoverability-reason.
 
-Write your answer for “For every symptom you marked as never knowing: why no findability test can reach it, and where the fix would sit instead”. Use the task instructions below to decide what to include.
+Write your answer for “For every symptom you marked as never knowing: why no test that names the target can reach it, and where the fix would sit instead”. Use the task instructions below to decide what to include.
 
-**Answer:** For every symptom you marked as never knowing: why no findability test can reach it, and where the fix would sit instead
+**Answer:** For every symptom you marked as never knowing: why no test that names the target can reach it, and where the fix would sit instead
 
 
 
@@ -6340,7 +6346,7 @@ Write your decision first, then the reason it fits this new case. Compare with t
 <summary>Compare after writing</summary>
 
 - Weak: Picks a tree test or a full usability test for both symptoms, or treats the discount as a problem with the menu label.
-- Adequate: For the search symptom, picks a click test on the real layout to learn whether the menu is seen at all; or calls the discount a discoverability problem that no findability test can reach, with the reason.
+- Adequate: For the search symptom, picks a click test on the real layout to learn whether the menu is seen at all; or calls the discount a discoverability problem that no test naming the target can reach, with the reason.
 - Strong: As adequate, and names the result that would redirect the plan, such as people seeing the menu but finding typing quicker, and suggests the cheaper content check before any test.
 
 </details>
@@ -6787,7 +6793,7 @@ What the headings alone said out loud, what you rewrote, and what the preliminar
 
 - Read only the headings aloud, in order. Rewrite anything that does not describe its section. Then run the assigned preliminary checks that apply — page title, headings, keyboard access — on your prototype or on the live page.
 
-**Start here:** Read the headings to one other person and ask them what the page is about before you tell them.
+**Start here:** Read the headings to one other person and ask them what the page is about before you tell them. If nobody is available, read them cold yourself the next day and label it as your own read.
 
 **Enough:** Every heading you could move elsewhere unnoticed has been rewritten, and each check has a written result.
 
@@ -6831,11 +6837,11 @@ Read your own headings aloud with the page covered, and mark every one that coul
 
 Section: practice-plan. Stable action: write-read-aloud.
 
-Read only the headings, in order, with the page covered. Write what a listener thought the page was about, referring to them by role, such as “a friend”, never by name.
+Read only the headings, in order, with the page covered. Write what a listener thought the page was about, referring to them by role, such as “a friend”, never by name. Studying alone? Leave the outline a day, read it cold, and label it as your own cold read.
 
 **Answer:** What your headings alone said when you read them out, and what you rewrote afterwards
 
-Read only the headings, in order, with the page covered. Write what a listener thought the page was about, referring to them by role, such as “a friend”, never by name.
+Read only the headings, in order, with the page covered. Write what a listener thought the page was about, referring to them by role, such as “a friend”, never by name. Studying alone? Leave the outline a day, read it cold, and label it as your own cold read.
 
 
 ### The preliminary checks you ran, and what each one showed
@@ -6888,21 +6894,21 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 You read your headings aloud and they made sense to you. Is that enough?
 
 - Your reading is enough once you confirm the headings also match the visual design.
-- You know the page, so read them to someone who has not seen it and ask what it covers.
 - Your own reading is enough, since every heading came from your evidenced labelling table.
+- You know the page, so read them to someone who has not seen it, or cold the next day.
 
 <details>
 <summary>After your attempt</summary>
 
 Your reading is enough once you confirm the headings also match the visual design. — Matching the design is the thing the test removes. The design has been rescuing the wording, which is why the wording never got fixed.
 
-You know the page, so read them to someone who has not seen it and ask what it covers. — Your own reading is not enough on its own. You fill in the missing meaning from memory without noticing, and a listener who cannot do that hears what the outline really says.
-
 Your own reading is enough, since every heading came from your evidenced labelling table. — The table gives you the words people use. It cannot tell you whether five of those words in a row describe this particular page.
 
-Improve: Read your outline from step 2 to one other person and write what they said the page was about in the read-aloud box in step 4. Record any rewrite in the last box.
+You know the page, so read them to someone who has not seen it, or cold the next day. — Your reading straight after writing is not enough. You fill in the missing meaning from memory without noticing, and a listener who cannot do that hears what the outline really says. Studying alone, leave it a day and read it cold, labelled as your own read.
 
-Check again: The read-aloud box names a listener and what they inferred, not only your own judgement.
+Improve: Read your outline from step 2 to one other person, or alone the next day with the page covered, and write what the page seemed to be about in the read-aloud box in step 4. Record any rewrite in the last box.
+
+Check again: The read-aloud box names a listener and what they inferred, or records a cold read a day later, labelled as your own.
 
 Answers to revisit: page-title, outline-list, outline-source, read-aloud, checks-run
 
@@ -7129,7 +7135,7 @@ Adequate evidence: A record of reading the headings alone, with what was rewritt
 
 3 — As adequate, and someone else read the outline and said what they thought the page contained.
 
-Repair: Cover the page and read only the headings to another person. Ask them what the page is about. Rewrite whatever they cannot infer. Recheck: The read-aloud record and rewrites.
+Repair: Cover the page and read only the headings to another person, or to yourself cold the next day, labelled as your own read. Ask what the page is about. Rewrite whatever cannot be inferred. Recheck: The read-aloud record and rewrites.
 
 **Unverified checks are stated rather than assumed**
 
@@ -7670,7 +7676,7 @@ Section: practice. Stable action: write-transfer-decision.
 
 Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
-**New case.** Made-up case: residents search an electricity company’s website using phrases such as “bill not came”, “pay after due date” and “meter photo”. The pages are titled Billing cycle, Late payment charges and Self-reading submission. The answer to “why is my bill high” exists only in a leaflet posted with paper bills.
+**New case.** Made-up case: residents search an electricity company’s website using phrases such as “bill not came”, “pay after due date” and “meter photo”. The pages are titled Billing cycle, Late payment charges and Self-reading submission; the Billing cycle page explains what to do when a bill has not arrived. The answer to “why is my bill high” exists only in a leaflet posted with paper bills.
 
 **Task:** Classify the failure for “bill not came” and for “why is my bill high”, choose a fix for each, and explain why at least one of the fixes needs no search engine.
 
@@ -7837,11 +7843,11 @@ Information architecture means arranging and naming information so a newcomer ca
 
 **Words you will use**
 
-- **Expansion:** Translated text is usually longer than the English it came from, often by about a third. A label set built to the tightest fit has nowhere to put the extra.
+- **Expansion:** Translated text is usually longer than the English it came from, and short labels grow most: two to three times their length under about ten characters, 60–80% longer at twenty-one to thirty. A label set built to the tightest fit has nowhere to put the extra.
 - **Matra:** The vowel mark written above or below a Devanagari letter. If the line height was set for Latin text the mark gets clipped, and the word changes.
 - **Wrap:** Text carrying on to a second line because it ran out of width. Nothing is lost, and the row it sits in becomes taller.
 
-**Quick example.** Made-up example. Padding a nine-item label set by a third, writing “nothing broke”, and then actually looking. I copied the nine labels into a text file and added about a third more characters to each, the way a Hindi version would run longer.
+**Quick example.** Made-up example. Padding a nine-item label set to its likely translated length, writing “nothing broke”, and then actually looking. I copied the nine labels into a text file and padded each one the way a translation would run longer: short ones such as “Classes” to about three times their length, and the longest, “Change or cancel a booking”, by about two thirds.
 
 The reader demonstrates and guides the task before asking for “What room to grow means for a label set, and two requirements from the India guidelines that apply to yours”.
 
@@ -7856,7 +7862,7 @@ Test your labels against a longer translation, an Indic script, a narrow screen 
 
 Section: learn. Stable action: learn-1.
 
-Text expands when translated, and layouts built around English label lengths break in ways that are invisible until they happen: a menu item wrapping to three lines, a truncated label ending mid-word, a button whose text no longer fits. The assigned internationalization page covers what this involves — encoding, expansion, formats, sorting order — and the practical move for a designer is to build the label set with room to grow rather than to the tightest fit that looked good today.
+Text expands when translated, and layouts built around English label lengths break in ways that are invisible until they happen: a menu item wrapping to three lines, a truncated label ending mid-word, a button whose text no longer fits. The assigned internationalization page covers what this involves — encoding, expansion, formats, sorting order — and the practical move for a designer is to build the label set with room to grow rather than to the tightest fit that looked good today. Short strings grow the most: the W3C article “Text size in translation”, quoting IBM figures, puts a translated label of up to ten English characters at two to three times its length, and one of twenty-one to thirty characters at 60 to 80 per cent longer.
 
 
 ### Indic scripts add constraints English does not have
@@ -7870,7 +7876,7 @@ Indic scripts add constraints English does not have. Line height that suits Lati
 
 Section: learn. Stable action: learn-3.
 
-The narrow screen and the slow connection are the same test at different layers. A long label on a narrow screen either wraps, truncates or overflows, and truncation is the worst of the three because it removes the distinguishing end of a label — “Change or cancel a…” — that a person was using to choose. On a slow connection, structure is what arrives first: the person sees your labels before any image or refinement loads, which means the text has to work alone, and you can check this by throttling the connection in a browser's own developer tools.
+The narrow screen and the slow connection are the same test at different layers. A long label on a narrow screen either wraps, truncates or overflows, and truncation is the worst of the three because it removes the distinguishing end of a label — “Change or cancel a…” — that a person was using to choose. On a slow connection, text sent with the page usually arrives before images, though web fonts and pages built by script can hold it back, so the text has to work alone, and you can check this by throttling the connection in a browser's own developer tools.
 
 
 ### The change note is the last artefact and the one that keeps its value
@@ -7886,7 +7892,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Four labels broke under test. “Change or cancel a booking” truncated to “Change or cancel a…” at 320 px, so the two actions became indistinguishable, and the fix was two shorter separate items — which the card sort had already suggested. A Hindi rendering of the same menu ran about a third longer and wrapped to two lines, which was acceptable once the row height allowed it, and one heading clipped its matras until the line height was increased. On a throttled connection the page showed its headings first, which read as a sensible outline — the read-aloud test from lesson 10 paying off in a situation nobody had designed for. The change note recorded eleven decisions, four still marked as guesses, and one open content gap: the refund rule, found in the tree test, which still did not exist.
+- Four labels broke under test. “Change or cancel a booking” truncated to “Change or cancel a…” at 320 px, so the two actions became indistinguishable, and the fix was two shorter separate items — which the card sort had already suggested. A Hindi rendering of the same menu ran longer and wrapped to two lines, which was acceptable once the row height allowed it, and one heading clipped its matras until the line height was increased. On a throttled connection the page showed its headings first, which read as a sensible outline — the read-aloud test from lesson 10 paying off in a situation nobody had designed for. The change note recorded eleven decisions, four still marked as guesses, and one open content gap: the refund rule, found in the tree test, which still did not exist.
 
 
 ### Choose where you will do the work
@@ -7910,7 +7916,7 @@ What room to grow means, two India requirements that apply to your labels, and w
 
 **Enough:** You have named specific labels, not a general worry that long labels are risky.
 
-**Expansion:** Translated text is usually longer than the English it came from, often by about a third. A label set built to the tightest fit has nowhere to put the extra.
+**Expansion:** Translated text is usually longer than the English it came from, and short labels grow most: two to three times their length under about ten characters, 60–80% longer at twenty-one to thirty. A label set built to the tightest fit has nowhere to put the extra.
 
 **Matra:** The vowel mark written above or below a Devanagari letter. If the line height was set for Latin text the mark gets clipped, and the word changes.
 
@@ -7948,9 +7954,9 @@ Example (made up): “Change or cancel a booking” is the longest thing in the 
 
 Section: practice-plan. Stable action: step-2-brief.
 
-Every break under a third more characters and under a second script, named one by one.
+Every break under realistic expansion and under a second script, named one by one.
 
-- Render your label set with roughly a third more characters, and with one Indic-script version. Record every wrap, truncation, clipped character and overflow specifically.
+- Pad each label by its likely expansion: two to three times its length for labels under about ten characters, and at least 60–80% longer for longer labels (W3C, Text size in translation). Render one Indic-script version too. Record every wrap, truncation, clipped character and overflow specifically.
 
 **Start here:** List every place each label appears — menu, button, tab, heading — before you pad anything.
 
@@ -7967,9 +7973,9 @@ Every break under a third more characters and under a second script, named one b
 
 Section: practice-plan. Stable action: step-2-demo.
 
-Made-up example. Padding a nine-item label set by a third, writing “nothing broke”, and then actually looking.
+Made-up example. Padding a nine-item label set to its likely translated length, writing “nothing broke”, and then actually looking.
 
-**What I did:** I copied the nine labels into a text file and added about a third more characters to each, the way a Hindi version would run longer.
+**What I did:** I copied the nine labels into a text file and padded each one the way a translation would run longer: short ones such as “Classes” to about three times their length, and the longest, “Change or cancel a booking”, by about two thirds.
 
 **What I wrote down:** “Nothing broke.” The menu ran down the side of the page, and every longer label simply wrapped onto a second line.
 
@@ -7986,15 +7992,15 @@ Made-up example. Padding a nine-item label set by a third, writing “nothing br
 **Unknown:** Still unknown: whether a reader of Hindi finds the wrapped two-line version acceptable. Nobody who reads the script has looked at it.
 
 
-### With about a third more characters: every wrap, truncation and overflow, named one by one
+### With each label padded to its likely translated length: every wrap, truncation and overflow, named one by one
 
 Section: practice-plan. Stable action: write-padded-result.
 
-Pad each label by hand in a text file. Write where it broke and in which place it appears, not that it broke.
+Pad each label by hand in a text file: two to three times its length if it is under about ten characters, at least 60–80% longer if it is longer (W3C, Text size in translation). Write where it broke and in which place it appears, not that it broke.
 
-**Answer:** With about a third more characters: every wrap, truncation and overflow, named one by one
+**Answer:** With each label padded to its likely translated length: every wrap, truncation and overflow, named one by one
 
-Pad each label by hand in a text file. Write where it broke and in which place it appears, not that it broke.
+Pad each label by hand in a text file: two to three times its length if it is under about ten characters, at least 60–80% longer if it is longer (W3C, Text size in translation). Write where it broke and in which place it appears, not that it broke.
 
 
 ### In an Indic script: clipped marks, missing characters, rows that no longer fit
@@ -8025,11 +8031,11 @@ Section: practice-plan. Stable action: step-3-brief.
 
 What broke at about 320 px, and what arrived first on a slow connection.
 
-- View the labels at about 320 px, then load the page on a throttled slow connection with the cache disabled and record what appears first and whether it makes sense alone.
+- View the labels at about 320 px, then load the page on a throttled slow connection with the cache disabled and record what appears first and whether it makes sense alone. If your page is only on paper, load a comparable live page and name it.
 
 **Start here:** Do the narrow case first: it needs nothing but a smaller window and takes ten minutes.
 
-**Enough:** Each line in both boxes names a label and what happened to it, and the slow test says plainly whether it was run.
+**Enough:** Each line in both boxes names a label and what happened to it, and the slow test names the page you loaded, or says plainly that nothing could be loaded.
 
 **Throttling:** Telling your browser to pretend the connection is slow. It sits in the browser’s own developer tools and needs no account and no code.
 
@@ -8042,7 +8048,7 @@ Section: practice-plan. Stable action: step-3-sort-1.
 
 Six break lines from somebody else’s label test, all made up for practice. She tested the same menu four ways. For each line, say which test found it: a length problem, a script problem, a width problem or a speed problem.
 
-With a third more characters added, “Change or cancel a booking” stops at “Change or cancel a…” on the button.
+Padded by two thirds, as a translation might run, “Change or cancel a booking” stops at “Change or cancel a…” on the button.
 
 - length
 - script
@@ -8158,7 +8164,7 @@ Section: practice-plan. Stable action: step-3-sort-5.
 
 Six break lines from somebody else’s label test, all made up for practice. She tested the same menu four ways. For each line, say which test found it: a length problem, a script problem, a width problem or a speed problem.
 
-The Hindi version of the menu runs about a third longer, and every item wraps onto two lines.
+With each label padded to its likely translated length, every item in the side menu wraps onto two lines.
 
 - length
 - script
@@ -8168,9 +8174,9 @@ The Hindi version of the menu runs about a third longer, and every item wraps on
 <details>
 <summary>After your attempt</summary>
 
-length — The script rendered as it should and the only trouble is the extra characters. Longer text is a length problem, whichever language made it longer.
+length — More characters in the same space is the length problem. Wrapping keeps every word, so this break is mild, and it still goes on the list.
 
-script — Tempting, because a translation is what triggered it. Nothing is clipped or missing though, so the script itself is fine.
+script — Only Latin letters were used here, padded out. Nothing is clipped or missing, so no second script was tested.
 
 width — The screen is the width it always was. The text grew rather than the space shrinking.
 
@@ -8225,11 +8231,11 @@ Write your answer for “At about 320 px: every label that wrapped, was cut off,
 
 Section: practice-plan. Stable action: write-slow-result.
 
-If your page lives only on paper, write that this one could not be run. Do not guess the answer.
+If your page lives only on paper, throttle a comparable live page with the cache off and say which page you loaded; write not run only if you could load nothing. Do not guess the answer.
 
 **Answer:** On a throttled connection with the cache off: what arrived first, and whether it made sense on its own
 
-If your page lives only on paper, write that this one could not be run. Do not guess the answer.
+If your page lives only on paper, throttle a comparable live page with the cache off and say which page you loaded; write not run only if you could load nothing. Do not guess the answer.
 
 
 ### Repair and re-check
@@ -8259,7 +8265,7 @@ Made-up example. Shortening a cut-off label so it fits the button, and losing th
 
 **What was broken:** At about 320 px, “Change or cancel a booking” stopped at “Change or cancel a…” on the button. It was the worst break on the list, so I repaired it first.
 
-**What I changed it to:** “Manage booking”. Eleven characters shorter, it fits at every width I tried, and it still fits with a third more characters added.
+**What I changed it to:** “Manage booking”. Twelve characters shorter, it fits at every width I tried, and it still fits padded to nearly twice its length.
 
 **What I had not noticed:** The item beside it was “Manage your account”. Two neighbours now opened with the same word, and my card sort had shown people separating changing from cancelling.
 
@@ -8527,12 +8533,12 @@ Lesson: Stress-test the labels, then write the change note
 What I am trying to do: Test your labels against a longer translation, an Indic script, a narrow screen and a slow connection, repair what breaks, and publish a change note recording every structural decision, its evidence and what remains untested.
 
 Key idea or terms:
-Expansion: Translated text is usually longer than the English it came from, often by about a third. A label set built to the tightest fit has nowhere to put the extra.
+Expansion: Translated text is usually longer than the English it came from, and short labels grow most: two to three times their length under about ten characters, 60–80% longer at twenty-one to thirty. A label set built to the tightest fit has nowhere to put the extra.
 Matra: The vowel mark written above or below a Devanagari letter. If the line height was set for Latin text the mark gets clipped, and the word changes.
 Wrap: Text carrying on to a second line because it ran out of width. Nothing is lost, and the row it sits in becomes taller.
 
 Supplied practice material (fictional or labelled practice, not my research):
-Made-up example. Padding a nine-item label set by a third, writing “nothing broke”, and then actually looking. I copied the nine labels into a text file and added about a third more characters to each, the way a Hindi version would run longer.
+Made-up example. Padding a nine-item label set to its likely translated length, writing “nothing broke”, and then actually looking. I copied the nine labels into a text file and padded each one the way a translation would run longer: short ones such as “Classes” to about three times their length, and the longest, “Change or cancel a booking”, by about two thirds.
 
 Activity: Run a short simulated practice using only the supplied material. Ask what evidence supports my choice and what is still unknown.
 
@@ -8548,8 +8554,8 @@ When the activity is finished, tell me to return to the course answer called “
 <details>
 <summary>Optional hints and reference material</summary>
 
-- Pad each label with extra characters and write it out again in a second script by hand if you cannot render it. Name each breakage as a concrete sentence.
-- Run the throttled load in your browser's developer tools and screenshot the first paint. Then set the width to 320 px and list every label that wraps or truncates.
+- Pad each label by its likely expansion, the most for the shortest labels, and write it out again in a second script by hand if you cannot render it. Name each breakage as a concrete sentence.
+- Run the throttled load in your browser's developer tools and screenshot the first paint; if your page is only on paper, load a comparable live page and name it. Then set the width to 320 px and list every label that wraps or truncates.
 
 - R42: [W3C: localization versus internationalization](https://www.w3.org/International/questions/qa-i18n) — The definitions and what internationalization involves: encoding, text expansion, formats and sorting. Purpose: Explains why a label set must be designed with room to grow rather than translated afterwards. Free reading, no account. Verified 2026-09-06. It is a short definitional page and gives no layout guidance; the expansion and truncation tests here are the course's own. Fallback: R10.
 - R43: [Guidelines for Indian Government Websites and Apps](https://guidelines.india.gov.in/) — Two requirements of your choice from the local-language and mobile sections, compared against your own labels. Purpose: Supplies the India-specific requirements this course's learner will actually be held to. Free HTML index with a downloadable PDF manual and no account. Verified 2026-09-06; the site records its own update as 4 September 2026. Comparing two requirements is the exercise; reading it end to end is not required and the document is written for government sites. Fallback: R41.
@@ -8560,7 +8566,7 @@ When the activity is finished, tell me to return to the course answer called “
 
 **Labels were tested under expansion and an Indic script**
 
-Adequate evidence: Renderings or hand-written versions with about a third more characters and in an Indic script, with breakages named specifically.
+Adequate evidence: Renderings or hand-written versions with realistic expansion for short strings (two to three times the length under about ten characters, at least 60–80% longer above that) and in an Indic script, with breakages named specifically.
 
 0 — Not tested.
 
@@ -8570,21 +8576,21 @@ Adequate evidence: Renderings or hand-written versions with about a third more c
 
 3 — As adequate, and the record notes a requirement from the India guidelines that your work does or does not meet.
 
-Repair: Pad each label with extra characters and write it out again in a second script by hand if you cannot render it. Name each breakage as a concrete sentence. Recheck: The two renderings and the breakage list.
+Repair: Pad each label by its likely expansion, the most for the shortest labels, and write it out again in a second script by hand if you cannot render it. Name each breakage as a concrete sentence. Recheck: The two renderings and the breakage list.
 
 **Narrow width and a throttled connection were both checked**
 
-Adequate evidence: A record of the label set at about 320 px and of what appears first on a throttled connection with the cache disabled.
+Adequate evidence: A record of the label set at about 320 px and of what appears first on a throttled connection with the cache disabled, on your page or a named comparable live page.
 
 0 — Neither checked.
 
 1 — One of the two checked.
 
-2 — Both checked with what was observed recorded.
+2 — Both checked, on your page or a named comparable page, with what was observed recorded.
 
 3 — As adequate, and the record states whether the first-arriving text alone would let someone choose correctly.
 
-Repair: Run the throttled load in your browser's developer tools and screenshot the first paint. Then set the width to 320 px and list every label that wraps or truncates. Recheck: Both records.
+Repair: Run the throttled load in your browser's developer tools and screenshot the first paint; if your page is only on paper, load a comparable live page and name it. Then set the width to 320 px and list every label that wraps or truncates. Recheck: Both records.
 
 **Repairs favour clearer labels over truncation**
 
