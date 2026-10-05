@@ -113,7 +113,7 @@ export const module6: Lesson[] = [
       {
         minutes: 25,
         title: "Add the reachability column",
-        text: "For each item, record how a person reaches it today: main navigation, one page deep, search only, email only, or by asking a human. Mark the items your research showed people actually needed.",
+        text: "For each item, record how a person who has never used the product reaches it today: main navigation, one page deep, search only, email only, or by asking a human. Mark the items your research showed people actually needed.",
       },
       {
         minutes: 20,
@@ -272,7 +272,7 @@ export const module6: Lesson[] = [
       {
         minutes: 35,
         title: "Harvest vocabulary",
-        text: "Read every interview note and record each word participants used for things in your inventory, verbatim, with who said it. Do not paraphrase into your own vocabulary as you go.",
+        text: "Read every interview note and record each word participants used for things in your inventory, verbatim, with who said it. Do not paraphrase into your own vocabulary as you go. No participant words? Copy phrases from real messages or public reviews about this kind of product, naming the source, or state that your notes record actions only and mark every label in step 3 a guess.",
       },
       {
         minutes: 30,
@@ -912,8 +912,8 @@ export const module6: Lesson[] = [
       "The sort photographs, session notes and your two sitemaps. Both the sorts and the maps are inputs; neither wins automatically. If your sort was a rehearsal, the lesson supplies four simulated sorts to practise on, and every result from them stays labelled practice.",
     why: "The analysis is where a small sort either becomes a useful set of hypotheses or becomes a false statistic. Four people can tell you a great deal about what confuses people and nothing at all about how many people are confused, and the difference is entirely in how you write it down.",
     teach: [
-      "Work item by item, not pile by pile. For each card, record where each participant put it, so you end with a row per item reading “three of four put this with the money items, one put it with cancelling, two hesitated”. That form is honest, it survives being read six months later, and it makes the ambiguous items — the ones that scattered — visible without any arithmetic.",
-      "Three patterns are worth naming. Agreement, where everyone placed an item the same way and nobody hesitated, means you can stop thinking about that item. Disagreement, where placements split, usually means either two audiences or an item that is really two items. Ambiguity, where an item was placed consistently but slowly and with doubt, is the pattern people miss, and it predicts wrong first clicks better than a clean split does.",
+      "Work item by item, not pile by pile. For each card, record where each participant put it, so you end with a row per item reading “three of four put this with the money items, one put it with cancelling, two hesitated”. That form is honest, it survives being read six months later, and it makes the items that split or caused doubt visible without any arithmetic.",
+      "Three patterns are worth naming. Agreement, where everyone placed an item the same way and nobody hesitated, means you can stop thinking about that item. Disagreement, where placements split, usually means either two audiences or an item that is really two items; a split with hesitation is still a disagreement, so note the doubt beside it. Ambiguity, where an item was placed consistently but slowly and with doubt, is the pattern people miss, and it flags items likely to cause wrong first clicks even when every placement agrees.",
       "Do not compute percentages, and do not use similarity matrices or dendrograms on four participants. Those techniques exist for sorts with thirty or more people, and applied to four they produce a picture with the visual authority of statistics and none of the substance. Report counts of people. If you ever do run a large sort, the interval reading in the catalog is the right companion, and it will show you how wide the uncertainty around a rate at small numbers really is.",
       "Change your structure from the analysis, and record the trace. Every change should carry the sentence: this item moved because these participants did this. Changes you cannot trace are your own preferences arriving under cover of research, which is the specific failure that makes stakeholders stop believing the research is worth funding.",
     ],
@@ -1154,7 +1154,7 @@ export const module6: Lesson[] = [
           "As adequate, and at least two tasks deliberately target items the card sort flagged as ambiguous.",
         ],
         remediation:
-          "Underline every word in a task that also appears in your structure. Rewrite the task using the situation your participants described in m05 instead.",
+          "Underline every word in a task that also appears in its target label or the branch leading to it. Rewrite the task using the situation your participants described in m05 instead.",
         recheck: "The rewritten tasks.",
       },
       {
@@ -1418,7 +1418,7 @@ export const module6: Lesson[] = [
     misconception:
       "“Usability testing will find everything, so run that.” It will show you a lot and tell you least per participant about which specific thing is at fault, because every variable is present at once. When you already suspect the structure or the labels, the narrow test isolates the cause with fewer people and less of their time; keep the usability test for when you need to see the whole task.",
     example:
-      "Four symptoms from one product, each matched to a test. People choosing the wrong top-level branch — tree test, which had already shown level one was sound. People reaching the right branch and hesitating over two labels — closed card sort with just those two categories, ten minutes per person. People ignoring the menu entirely and using search on every task — a click test on the real layout, because the structure was never being consulted. And people who did not know a fee waiver existed at all — none of the four, since that is discoverability: the item was findable by anyone told to look for it, and the fix belonged in how it was surfaced during booking rather than in the hierarchy.",
+      "Four symptoms from one product, each matched to a test. People choosing the wrong top-level branch — tree test, which had already shown level one was sound. People reaching the right branch and hesitating over two labels — closed card sort with just those two categories, ten minutes per person. People ignoring the menu entirely and using search on every task — a click test on the real layout, because the structure was never being consulted. And people who did not know a fee waiver existed at all — none of the three narrow tests, since that is discoverability: the item was findable by anyone told to look for it, a usability test of booking that never mentioned it is what showed the gap, and the fix belonged in how it was surfaced during booking rather than in the hierarchy.",
     steps: [
       {
         minutes: 25,
@@ -1438,7 +1438,7 @@ export const module6: Lesson[] = [
       {
         minutes: 25,
         title: "Separate findability from discoverability",
-        text: "Mark which of your symptoms are people failing to find something they were looking for, and which are people never knowing it existed. Write why no findability test can address the second.",
+        text: "Mark which of your symptoms are people failing to find something they were looking for, and which are people never knowing it existed. Write why no test that names the target can address the second.",
       },
       {
         minutes: 15,
@@ -1678,7 +1678,7 @@ export const module6: Lesson[] = [
           "As adequate, and someone else read the outline and said what they thought the page contained.",
         ],
         remediation:
-          "Cover the page and read only the headings to another person. Ask them what the page is about. Rewrite whatever they cannot infer.",
+          "Cover the page and read only the headings to another person, or to yourself cold the next day, labelled as your own read. Ask what the page is about. Rewrite whatever cannot be inferred.",
         recheck: "The read-aloud record and rewrites.",
       },
       {
@@ -1902,15 +1902,15 @@ export const module6: Lesson[] = [
       "The whole module: inventory, labels, structure, sort and tree-test results, page outline and search work. This lesson closes it into something another person could pick up.",
     why: "A label that works only in English, only on a wide screen and only when everything has loaded is not finished. And a structure whose reasoning lives in your head is one you cannot defend in a review, hand to a developer, or explain in an interview six months from now.",
     teach: [
-      "Text expands when translated, and layouts built around English label lengths break in ways that are invisible until they happen: a menu item wrapping to three lines, a truncated label ending mid-word, a button whose text no longer fits. The assigned internationalization page covers what this involves — encoding, expansion, formats, sorting order — and the practical move for a designer is to build the label set with room to grow rather than to the tightest fit that looked good today.",
+      "Text expands when translated, and layouts built around English label lengths break in ways that are invisible until they happen: a menu item wrapping to three lines, a truncated label ending mid-word, a button whose text no longer fits. The assigned internationalization page covers what this involves — encoding, expansion, formats, sorting order — and the practical move for a designer is to build the label set with room to grow rather than to the tightest fit that looked good today. Short strings grow the most: the W3C article “Text size in translation”, quoting IBM figures, puts a translated label of up to ten English characters at two to three times its length, and one of twenty-one to thirty characters at 60 to 80 per cent longer.",
       "Indic scripts add constraints English does not have. Line height that suits Latin text can clip conjuncts and matras; a font that renders one script beautifully may not contain another at all; and sorting order differs by language, so an alphabetical list is a different list in a different language. India's own government guidelines cover local-language and mobile requirements and are the primary source available to you, so compare your work against two of their requirements rather than assuming a Latin-script layout transfers.",
-      "The narrow screen and the slow connection are the same test at different layers. A long label on a narrow screen either wraps, truncates or overflows, and truncation is the worst of the three because it removes the distinguishing end of a label — “Change or cancel a…” — that a person was using to choose. On a slow connection, structure is what arrives first: the person sees your labels before any image or refinement loads, which means the text has to work alone, and you can check this by throttling the connection in a browser's own developer tools.",
+      "The narrow screen and the slow connection are the same test at different layers. A long label on a narrow screen either wraps, truncates or overflows, and truncation is the worst of the three because it removes the distinguishing end of a label — “Change or cancel a…” — that a person was using to choose. On a slow connection, text sent with the page usually arrives before images, though web fonts and pages built by script can hold it back, so the text has to work alone, and you can check this by throttling the connection in a browser's own developer tools.",
       "The change note is the last artefact and the one that keeps its value. It records each decision, the evidence behind it, what you rejected, what is still a guess and what you would test next. Written honestly it is portfolio material, a handover document and the thing that stops the same argument being re-run next quarter — and the honesty is what makes it useful: a note claiming everything was validated is worth less than one saying which three labels are still untested.",
     ],
     misconception:
       "“Translation is a later, non-design problem.” The label set is a design decision that either survives translation or forces the translator to invent something shorter and different, which quietly changes your information architecture in a language you cannot read. Leaving room, avoiding truncation and not depending on English word order are design decisions, made now.",
     example:
-      "Four labels broke under test. “Change or cancel a booking” truncated to “Change or cancel a…” at 320 px, so the two actions became indistinguishable, and the fix was two shorter separate items — which the card sort had already suggested. A Hindi rendering of the same menu ran about a third longer and wrapped to two lines, which was acceptable once the row height allowed it, and one heading clipped its matras until the line height was increased. On a throttled connection the page showed its headings first, which read as a sensible outline — the read-aloud test from lesson 10 paying off in a situation nobody had designed for. The change note recorded eleven decisions, four still marked as guesses, and one open content gap: the refund rule, found in the tree test, which still did not exist.",
+      "Four labels broke under test. “Change or cancel a booking” truncated to “Change or cancel a…” at 320 px, so the two actions became indistinguishable, and the fix was two shorter separate items — which the card sort had already suggested. A Hindi rendering of the same menu ran longer and wrapped to two lines, which was acceptable once the row height allowed it, and one heading clipped its matras until the line height was increased. On a throttled connection the page showed its headings first, which read as a sensible outline — the read-aloud test from lesson 10 paying off in a situation nobody had designed for. The change note recorded eleven decisions, four still marked as guesses, and one open content gap: the refund rule, found in the tree test, which still did not exist.",
     steps: [
       {
         minutes: 25,
@@ -1920,12 +1920,12 @@ export const module6: Lesson[] = [
       {
         minutes: 30,
         title: "Test the labels",
-        text: "Render your label set with roughly a third more characters, and with one Indic-script version. Record every wrap, truncation, clipped character and overflow specifically.",
+        text: "Pad each label by its likely expansion: two to three times its length for labels under about ten characters, and at least 60–80% longer for longer labels (W3C, Text size in translation). Render one Indic-script version too. Record every wrap, truncation, clipped character and overflow specifically.",
       },
       {
         minutes: 25,
         title: "Test narrow and slow",
-        text: "View the labels at about 320 px, then load the page on a throttled slow connection with the cache disabled and record what appears first and whether it makes sense alone.",
+        text: "View the labels at about 320 px, then load the page on a throttled slow connection with the cache disabled and record what appears first and whether it makes sense alone. If your page is only on paper, load a comparable live page and name it.",
       },
       {
         minutes: 25,
@@ -1952,7 +1952,7 @@ export const module6: Lesson[] = [
         question:
           "What does a slow connection reveal about an information architecture?",
         answer:
-          "That the text arrives first and has to work alone. If the labels and headings make sense with nothing else loaded, the structure is doing its job; if they only make sense alongside images and styling, it is not.",
+          "That the text usually arrives first and has to work alone. If the labels and headings make sense with nothing else loaded, the structure is doing its job; if they only make sense alongside images and styling, it is not.",
       },
       {
         question: "What makes a change note worth writing?",
@@ -1970,7 +1970,7 @@ export const module6: Lesson[] = [
       {
         criterion: "Labels were tested under expansion and an Indic script",
         evidence:
-          "Renderings or hand-written versions with about a third more characters and in an Indic script, with breakages named specifically.",
+          "Renderings or hand-written versions with realistic expansion for short strings (two to three times the length under about ten characters, at least 60–80% longer above that) and in an Indic script, with breakages named specifically.",
         levels: [
           "Not tested.",
           "Expansion tested but no second script, or breakages described as “looks cramped”.",
@@ -1978,21 +1978,21 @@ export const module6: Lesson[] = [
           "As adequate, and the record notes a requirement from the India guidelines that your work does or does not meet.",
         ],
         remediation:
-          "Pad each label with extra characters and write it out again in a second script by hand if you cannot render it. Name each breakage as a concrete sentence.",
+          "Pad each label by its likely expansion, the most for the shortest labels, and write it out again in a second script by hand if you cannot render it. Name each breakage as a concrete sentence.",
         recheck: "The two renderings and the breakage list.",
       },
       {
         criterion: "Narrow width and a throttled connection were both checked",
         evidence:
-          "A record of the label set at about 320 px and of what appears first on a throttled connection with the cache disabled.",
+          "A record of the label set at about 320 px and of what appears first on a throttled connection with the cache disabled, on your page or a named comparable live page.",
         levels: [
           "Neither checked.",
           "One of the two checked.",
-          "Both checked with what was observed recorded.",
+          "Both checked, on your page or a named comparable page, with what was observed recorded.",
           "As adequate, and the record states whether the first-arriving text alone would let someone choose correctly.",
         ],
         remediation:
-          "Run the throttled load in your browser's developer tools and screenshot the first paint. Then set the width to 320 px and list every label that wraps or truncates.",
+          "Run the throttled load in your browser's developer tools and screenshot the first paint; if your page is only on paper, load a comparable live page and name it. Then set the width to 320 px and list every label that wraps or truncates.",
         recheck: "Both records.",
       },
       {

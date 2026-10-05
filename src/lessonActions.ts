@@ -119,5 +119,8 @@ export function actionQuestion(l:Lesson,a:LessonAction) {
 
 export function fieldRequired(field: WorksheetField, record: {worksheet?: Record<string,string>}) {
  if(field.optional) return false;
- return !field.requiredWhen || field.requiredWhen.values.includes(record.worksheet?.[field.requiredWhen.field] || '');
+ const when=field.requiredWhen;
+ if(!when) return true;
+ const holds=(c:{field:string;values:string[]})=>c.values.includes(record.worksheet?.[c.field] || '');
+ return holds(when) || (!!when.or && holds(when.or));
 }

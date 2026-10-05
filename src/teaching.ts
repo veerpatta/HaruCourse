@@ -10,7 +10,9 @@ export type WorksheetField = {
   hint?: string;
   example?: string;
   optional?: boolean;
-  requiredWhen?: { field: string; values: string[] };
+  // Required only when `field` holds one of `values`, or when the optional
+  // `or` condition holds (for an answer needed if either of two routes applies).
+  requiredWhen?: { field: string; values: string[]; or?: { field: string; values: string[] } };
   // Set on any answer that could hold material about another person — what a
   // participant said or did, a session record, a consent note. The reader
   // shows who can read the answer before it is typed, and the device refuses

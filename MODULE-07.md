@@ -1530,7 +1530,7 @@ Every field in an authentication form needs a persistent, visible label, an acce
 
 Section: learn. Stable action: learn-2.
 
-Recovery must not depend on the thing that was lost, and it must not hand an account to someone who merely knows a few facts about it. If a person has lost the phone number she registered with, sending a code to that number is the same wall. The route back has to use something she verified earlier — an email address she confirmed at sign-up, say — or a reviewed check by a person. A booking reference and a class date identify a booking, not a person: both sit in the confirmation message and in any screenshot of it. So changing the phone number or email on an account is a security decision: confirm it through a channel already verified or a reviewed check, tell the old number or address that it happened, and allow a short window to undo it. Be explicit about someone who genuinely has nothing: a reviewed route to a human belongs on the flow, with the identity check it uses written down, rather than being left to the support inbox.
+Recovery must not depend on the thing that was lost, and it must not hand an account to someone who merely knows a few facts about it. If a person has lost the phone number she registered with, sending a code to that number is the same wall. The route back has to use something she verified earlier — an email address she confirmed at sign-up, say — or a reviewed check by a person. A booking reference and a class date identify a booking, not a person: both sit in the confirmation message and in any screenshot of it. So changing the phone number or email on an account is a security decision: confirm it through a channel already verified or a reviewed check, tell the old number or address that it happened, and allow a short window to undo it. Send the old number a notice that names no account details, since a lost number may already belong to someone else, and send the full notice to the verified email. Be explicit about someone who genuinely has nothing: a reviewed route to a human belongs on the flow, with the identity check it uses written down, rather than being left to the support inbox.
 
 
 ### Idea 3: Shared and borrowed devices are ordinary, not an edge case — i…
@@ -1553,7 +1553,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- A booking product asked people to register before seeing a price. Rebuilt: no account to browse or book, a booking reference plus a code sent to the booking’s phone to look a booking up later, and an optional account for people who book often. Sign-in offered a code to whichever phone or email the person had confirmed at sign-up — because in the observation session a participant had changed her number and could no longer receive codes, while her confirmed email still worked. Changing the number on an account sent a code to the confirmed email, sent a notice to the old number, and could be undone for a day; someone with neither was routed to the provider, who checked identity by a reviewed process before anything changed. Every reply to a sign-in or recovery request read the same whether or not an account existed: “If an account matches, we have sent a code.” On a shared device, “stay signed in” was off by default with the choice visible, and the confirmation screen offered “finish and sign out” explicitly. Errors the person could fix were written out — “That code has run out — send a new one” rather than “Invalid credentials” — and every failed attempt kept the phone number the person had already typed.
+- A booking product asked people to register before seeing a price. Rebuilt: no account to browse or book, a booking reference plus a code sent to the booking’s phone to look a booking up later, and an optional account for people who book often. Sign-in offered a code to whichever phone or email the person had confirmed at sign-up — because in the observation session a participant had changed her number and could no longer receive codes, while her confirmed email still worked. Changing the number on an account sent a code to the confirmed email, sent the old number a notice naming no account details (that number might already belong to someone else), sent the full notice to the confirmed email, and could be undone for a day; someone with neither was routed to the provider, who checked identity by a reviewed process before anything changed. Every reply to a sign-in or recovery request read the same whether or not an account existed: “If an account matches, we have sent a code.” On a shared device, “stay signed in” was off by default with the choice visible, and the confirmation screen offered “finish and sign out” explicitly. Errors the person could fix were written out — “That code has run out — send a new one” rather than “Invalid credentials” — and every failed attempt kept the phone number the person had already typed.
 
 
 ### Choose where you will do the work
@@ -1698,7 +1698,7 @@ Which route gets her back in without letting a stranger take over the account?
 <details>
 <summary>After your attempt</summary>
 
-Send a code to the email she confirmed at sign-up, then tell the old number and allow a day to undo. — The email is a channel she verified earlier and still holds. Telling the old number, and leaving a day to undo the change, means a stranger who got in this way would be noticed and reversed.
+Send a code to the email she confirmed at sign-up, then tell the old number and allow a day to undo. — The email is a channel she verified earlier and still holds. Telling the old number, and leaving a day to undo the change, means a stranger who got in this way would be noticed and reversed. Keep the message to the old number free of account details, because a lost number may already belong to someone else.
 
 Have her open a new account under her new number and move her bookings across to it. — A second account does not get her back into the first one: her history and payments stay behind, and moving bookings across means someone must decide she owns them, which is the same identity check by another name.
 
@@ -1748,7 +1748,7 @@ A booking reference and a class date identify a booking, not a person. Write the
 <details>
 <summary>Example</summary>
 
-Example (made up): a new number is confirmed by a code sent to the email she verified at sign-up; the old number gets a message saying the number changed; the change can be undone from that message for 24 hours.
+Example (made up): a new number is confirmed by a code sent to the email she verified at sign-up; the old number gets a short message naming no account details, since it may already belong to someone else; the full notice goes to the verified email, and the change can be undone from it for 24 hours.
 
 </details>
 
@@ -2043,7 +2043,7 @@ Write your decision first, then the reason it fits this new case. Compare with t
 
 - Weak: Accepts the permit number and registration as proof, or replies differently depending on whether an account exists, such as “No account found for that number”.
 - Adequate: Rejects them, because anyone who sees the windscreen knows both; routes the change through a code to the email she confirmed, or a reviewed check, with one reply for everyone: “If an account matches, we have sent instructions.”
-- Strong: As adequate, and tells the old number about the change, allows a window to undo it, and writes down the reviewed manual check for someone with no confirmed email.
+- Strong: As adequate, and tells the old number about the change without naming account details, allows a window to undo it, and writes down the reviewed manual check for someone with no confirmed email.
 
 </details>
 
@@ -2132,7 +2132,7 @@ Adequate evidence: At least one recovery route through a factor verified earlier
 
 2 — A route through an already-verified channel and a reviewed route to a human are both on the flow, and no reply reveals whether an account exists.
 
-3 — As adequate, and changing a phone number or email notifies the old contact and can be undone for a stated time, with the human route's identity check written down.
+3 — As adequate, and changing a phone number or email notifies the old contact without naming account details, sends the full notice to the verified channel and can be undone for a stated time, with the human route's identity check written down.
 
 Repair: Walk the flow twice: as someone who has changed her phone number, and as a stranger holding her booking confirmation. Draw what each can do; anything the stranger can change on the account is a hole to close. Recheck: The recovery paths on the flow, with the replies they show.
 
@@ -2227,7 +2227,7 @@ The vocabulary is worth borrowing precisely, and the assigned reading supplies i
 
 Section: learn. Stable action: learn-2.
 
-The interface decision for an unavailable action has three answers and choosing badly is a common fault. Hide it when the person has no path to it and its presence would only confuse — a customer never needs to see class-management controls. Show it disabled when the person could plausibly have it and needs to know it exists, with an explanation of why it is unavailable. Show it with a route to ask when someone else can grant it, which turns a dead end into a request. A disabled control with no explanation is the worst of the three: it says no without saying why, and people conclude the product is broken.
+The interface decision for an unavailable action has three answers and choosing badly is a common fault. Hide it when the person has no path to it and its presence would only confuse — a customer never needs to see class-management controls. Show it disabled when the person could plausibly have it and needs to know it exists, with an explanation of why it is unavailable. (Lesson 10 later splits this case in two: disabled when something must be done first, and unavailable when the action is not for you or not now, such as a cancellation that has closed; both are shown with a reason.) Show it with a route to ask when someone else can grant it, which turns a dead end into a request. A disabled control with no explanation is the worst of the three: it says no without saying why, and people conclude the product is broken.
 
 
 ### Roles drift from reality
@@ -2250,7 +2250,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- A class provider had three real roles. Customers book and manage their own bookings. The owner manages classes and sees everyone's bookings. A helper takes attendance and sees the day's list with names, but no payment information — least privilege made concrete. The matrix showed twelve actions against three roles, and drawing it exposed two problems: nobody had decided whether a helper could cancel someone's place, which the owner did daily by message; and the owner's own view had no way to book a place as an attendee, which she also did. For unavailable actions the rule was: customers never see management controls at all; helpers see the refund control disabled with “only the owner can issue refunds — ask her”; and everyone gets a specific message rather than a generic denial.
+- A class provider had three real roles. Customers book and manage their own bookings. The owner manages classes and sees everyone's bookings. A helper takes attendance and sees the day's list with names, but no payment information — least privilege made concrete. The matrix showed twelve actions against three roles, and drawing it exposed two problems: nobody had decided whether a helper could cancel someone's place, which the owner did daily by message; and the owner's own view had no way to book a place as an attendee, which she also did. For unavailable actions the rule was: customers never see management controls at all; helpers see the refund control with a route to ask: “only the owner can issue refunds — send her this booking”; and everyone gets a specific message rather than a generic denial.
 
 
 ### Choose where you will do the work
@@ -2497,7 +2497,7 @@ Section: practice-plan. Stable action: step-4-sort-2.
 
 Six unavailable actions from a made-up class-booking product. For each, decide what the person should see: nothing at all, the control disabled with a reason, or the control with a way to ask somebody who can.
 
-A customer opens her own booking. The class starts in two hours and free cancellation closed a day ago. The cancel control.
+A customer opens her own booking. The class starts in two hours and cancelling closed a day ago. The cancel control.
 
 - hidden
 - disabled with a reason
@@ -2508,7 +2508,7 @@ A customer opens her own booking. The class starts in two hours and free cancell
 
 hidden — This is the classic mistake. She knows cancelling exists, so a missing control reads as a broken page, and she rings the shop to find out what happened.
 
-disabled with a reason — She needs to see that the control exists and why it is unavailable now. “Free cancellation closed at 10am yesterday” answers the question she actually has.
+disabled with a reason — She needs to see that the control exists and why it is unavailable now. “Cancelling closed at 10am yesterday” answers the question she actually has. Lesson 10 calls this not-now case unavailable.
 
 a route to ask — The deadline has already passed and the rule is the product’s own. A request route sends her away to wait and come back to the same answer.
 
@@ -3198,13 +3198,13 @@ Write your answer for “What you actually lost when you searched, opened the th
 
 Section: practice-plan. Stable action: step-3-brief.
 
-The fields on one result, in priority order, each traced to something you watched — and what you left off on purpose.
+The fields on one result, in priority order, each traced to its source or marked a guess — and what you left off on purpose.
 
 - Decide what appears on a result, using what your participants actually compared on. Write the fields in priority order and say what you deliberately left out.
 
-**Start here:** Reread your m05 notes for the attributes people mentioned aloud while choosing. Those are your first fields.
+**Start here:** Reread your m05 notes for the attributes people mentioned aloud while choosing. Those are your first fields. With no observation, use a real message or your own walkthrough, name it, and mark anything else a guess.
 
-**Enough:** Every field names the observation behind it, and the omissions box is not empty.
+**Enough:** Every field names its source or is marked a guess, and the omissions box is not empty.
 
 **Result item:** One row or card in a list. It exists so somebody can compare it with the ones above and below without opening any of them.
 
@@ -3232,13 +3232,13 @@ Made-up example. Choosing the fields for one result card, and finding that most 
 **Unknown:** Still unknown: whether “places left” helps somebody or merely hurries them. It reads as useful, it may be pressure, and a drawing cannot tell those two apart.
 
 
-### Result field 1 · what it is and the observation it came from
+### Result field 1 · what it is, and its source or the word guess
 
 Section: practice-plan. Stable action: write-result-field-1.
 
 Refer to people by label, never by name. With no observation, name the source you do have, such as a real message or your own walkthrough, and mark a guess as a guess.
 
-**Answer:** Result field 1 · what it is and the observation it came from
+**Answer:** Result field 1 · what it is, and its source or the word guess
 
 Refer to people by label, never by name. With no observation, name the source you do have, such as a real message or your own walkthrough, and mark a guess as a guess.
 
@@ -3250,46 +3250,46 @@ Example (made up): day and time, because both participants said the day first wh
 </details>
 
 
-### Result field 2 · what it is and the observation it came from
+### Result field 2 · what it is, and its source or the word guess
 
 Section: practice-plan. Stable action: write-result-field-2.
 
-Write your answer for “Result field 2 · what it is and the observation it came from”. Use the task instructions below to decide what to include.
+Write your answer for “Result field 2 · what it is, and its source or the word guess”. Use the task instructions below to decide what to include.
 
-**Answer:** Result field 2 · what it is and the observation it came from
-
-
+**Answer:** Result field 2 · what it is, and its source or the word guess
 
 
-### Result field 3 · what it is and the observation it came from
+
+
+### Result field 3 · what it is, and its source or the word guess
 
 Section: practice-plan. Stable action: write-result-field-3.
 
-Write your answer for “Result field 3 · what it is and the observation it came from”. Use the task instructions below to decide what to include.
+Write your answer for “Result field 3 · what it is, and its source or the word guess”. Use the task instructions below to decide what to include.
 
-**Answer:** Result field 3 · what it is and the observation it came from
-
-
+**Answer:** Result field 3 · what it is, and its source or the word guess
 
 
-### Result field 4 · what it is and the observation it came from
+
+
+### Result field 4 · what it is, and its source or the word guess
 
 Section: practice-plan. Stable action: write-result-field-4.
 
-Write your answer for “Result field 4 · what it is and the observation it came from”. Use the task instructions below to decide what to include.
+Write your answer for “Result field 4 · what it is, and its source or the word guess”. Use the task instructions below to decide what to include.
 
-**Answer:** Result field 4 · what it is and the observation it came from
-
-
+**Answer:** Result field 4 · what it is, and its source or the word guess
 
 
-### Result field 5 · what it is and the observation it came from
+
+
+### Result field 5 · what it is, and its source or the word guess
 
 Section: practice-plan. Stable action: write-result-field-5.
 
-Write your answer for “Result field 5 · what it is and the observation it came from”. Use the task instructions below to decide what to include.
+Write your answer for “Result field 5 · what it is, and its source or the word guess”. Use the task instructions below to decide what to include.
 
-**Answer:** Result field 5 · what it is and the observation it came from
+**Answer:** Result field 5 · what it is, and its source or the word guess
 
 
 
@@ -3413,22 +3413,22 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 Your result card carries eleven things, including the tutor’s biography. What is the test for keeping a field?
 
-- Whether it is useful information about the class.
-- Whether removing it would leave an awkward gap in the layout.
-- Whether you watched somebody compare on it while they were choosing.
+- Whether people compare on it when choosing, from a source you can name.
+- Whether removing it would leave an awkward gap in the layout of the card.
+- Whether it is useful information that a person might want about the class.
 
 <details>
 <summary>After your attempt</summary>
 
-Whether it is useful information about the class. — Almost everything is useful somewhere. The question is whether it is needed to choose between two classes, which is the only job a list has.
+Whether people compare on it when choosing, from a source you can name. — A field earns its place by settling a comparison. Name where you learned that people weigh it: an observation, a real message, or your own walkthrough labelled as such. A field with no source is a guess to mark, or the first to cut.
 
-Whether removing it would leave an awkward gap in the layout. — Layout is settled after content. A card built to fill a shape becomes hard to scan, which slows every comparison on the page.
+Whether removing it would leave an awkward gap in the layout of the card. — Layout is settled after content. A card built to fill a shape becomes hard to scan, which slows every comparison on the page.
 
-Whether you watched somebody compare on it while they were choosing. — Your m05 notes already say what people mentioned while deciding. Fields with no observation behind them are the first ones to cut.
+Whether it is useful information that a person might want about the class. — Almost everything is useful somewhere. The question is whether it is needed to choose between two classes, which is the only job a list has.
 
-Improve: Cut any field in step 3 you cannot trace to something you watched, move it to the omissions box with its reason, and note the change in step 5.
+Improve: Mark any field in step 3 you cannot trace to an observation, a message or a walkthrough as a guess, or move it to the omissions box with its reason, and note the change in step 5.
 
-Check again: Every field on the result names the observation it came from.
+Check again: Every field names its source or is marked a guess.
 
 Answers to revisit: result-field-1, result-field-2, result-field-3, result-field-4, result-field-5, omissions, improvement-made
 
@@ -3588,7 +3588,7 @@ When the activity is finished, tell me to return to the course answer called “
 <summary>Optional hints and reference material</summary>
 
 - Walk your own flow: search, open the third result, go back. Write down everything you lost, then put each item on the return step.
-- Re-read your m05 notes for the attributes participants mentioned while choosing. Those are your fields; everything else is a candidate for omission.
+- Re-read your m05 notes for the attributes participants mentioned while choosing. Those are your fields; everything else is a candidate for omission. With no observation, name the message or walkthrough each field came from and mark the rest as guesses.
 
 - R33: [NN/g: recognition and recall](https://www.nngroup.com/articles/recognition-and-recall/) — Recognition versus recall and the interface implications for comparison. Purpose: Explains why holding candidates visibly beats asking people to remember them. Free reading, no account. Verified 2026-09-06. It does not cover Miller's limit; use the assigned Laws of UX page for chunk limits, with the caution recorded there. Fallback: R31.
 - R02: [Nielsen: ten usability heuristics](https://www.nngroup.com/articles/ten-usability-heuristics/) — Heuristic 1, visibility of system status, heuristic 3, user control and freedom, and heuristic 6, recognition rather than recall. Purpose: Gives the standards for the return step, the filter feedback and the result content. Free reading, no account. Verified 2026-09-06. Heuristics generate candidate problems; the loop design here is settled by your own observation evidence. Fallback: R11.
@@ -3613,17 +3613,17 @@ Repair: Walk your own flow: search, open the third result, go back. Write down e
 
 **Result content comes from what people compared on**
 
-Adequate evidence: A prioritised field list traced to research observations, with deliberate omissions stated.
+Adequate evidence: A prioritised field list traced to research observations — or, without observation, to named sources with guesses marked — with deliberate omissions stated.
 
 0 — Fields chosen by what the database contains.
 
 1 — A reasoned list, but with no trace to what people actually compared.
 
-2 — Fields traced to observed comparison behaviour, with omissions stated.
+2 — Fields traced to observed comparison behaviour or, without observation, sources named and guesses marked, with omissions stated.
 
 3 — As adequate, and one field is included specifically because its absence caused someone to open every result.
 
-Repair: Re-read your m05 notes for the attributes participants mentioned while choosing. Those are your fields; everything else is a candidate for omission. Recheck: The field list with sources.
+Repair: Re-read your m05 notes for the attributes participants mentioned while choosing. Those are your fields; everything else is a candidate for omission. With no observation, name the message or walkthrough each field came from and mark the rest as guesses. Recheck: The field list with sources.
 
 **Too many and no results are both designed**
 
@@ -5172,7 +5172,7 @@ A flow is the series of steps and choices a person follows to finish a task. In 
 - **Fidelity:** How finished a drawing looks. It is a choice, and a rougher drawing gets you better answers about structure.
 - **Branch:** One route through your flow from beginning to end, including the places where it goes wrong.
 
-**Quick example.** A supplied class detail screen, made up for practice, drawn two ways. In the same made-up research, people chose between classes by date and time, price and what to bring. Version A: photograph, description, class name, date and time, price, book. Version B: class name, date and time, price, what to bring, book, description, photograph.
+**Quick example.** A supplied class detail screen, made up for practice, drawn two ways. In the same made-up research, people chose between classes by date and time, price and what to bring. Version A: photograph, description, class name, what to bring, date and time, price, book. Version B: class name, date and time, price, what to bring, book, description, photograph.
 
 The reader demonstrates and guides the task before asking for “What a low-fidelity frame can settle, and what it cannot”.
 
@@ -5449,7 +5449,7 @@ Two content orders for one screen, and a stated reason for the one you kept.
 
 Section: practice-plan. Stable action: step-4-try.
 
-A supplied class detail screen, made up for practice, drawn two ways. In the same made-up research, people chose between classes by date and time, price and what to bring. Version A: photograph, description, class name, date and time, price, book. Version B: class name, date and time, price, what to bring, book, description, photograph.
+A supplied class detail screen, made up for practice, drawn two ways. In the same made-up research, people chose between classes by date and time, price and what to bring. Version A: photograph, description, class name, what to bring, date and time, price, book. Version B: class name, date and time, price, what to bring, book, description, photograph.
 
 Which version is the better starting point, and for what reason?
 
@@ -5701,7 +5701,7 @@ Fidelity: How finished a drawing looks. It is a choice, and a rougher drawing ge
 Branch: One route through your flow from beginning to end, including the places where it goes wrong.
 
 Supplied practice material (fictional or labelled practice, not my research):
-A supplied class detail screen, made up for practice, drawn two ways. In the same made-up research, people chose between classes by date and time, price and what to bring. Version A: photograph, description, class name, date and time, price, book. Version B: class name, date and time, price, what to bring, book, description, photograph.
+A supplied class detail screen, made up for practice, drawn two ways. In the same made-up research, people chose between classes by date and time, price and what to bring. Version A: photograph, description, class name, what to bring, date and time, price, book. Version B: class name, date and time, price, what to bring, book, description, photograph.
 
 Activity: Give me one constraint from the supplied case and ask me to make a choice inside it. Then ask what trade-off my choice creates.
 
@@ -6117,15 +6117,15 @@ Name what overlaps, what truncates, what gets pushed off the screen. Not “it l
 Name what overlaps, what truncates, what gets pushed off the screen. Not “it looks cramped”.
 
 
-### With text about 150 per cent larger: what broke?
+### With text enlarged to 200 per cent, the m03 benchmark: what broke?
 
 Section: practice-plan. Stable action: write-enlarged-text-result.
 
-On paper, letter the same screen a step larger throughout and see what collides.
+On paper, letter the same screen at twice the text size throughout and see what collides. Label it specified, since paper cannot reflow.
 
-**Answer:** With text about 150 per cent larger: what broke?
+**Answer:** With text enlarged to 200 per cent, the m03 benchmark: what broke?
 
-On paper, letter the same screen a step larger throughout and see what collides.
+On paper, letter the same screen at twice the text size throughout and see what collides. Label it specified, since paper cannot reflow.
 
 
 ### With the image missing entirely: what broke?
@@ -6207,20 +6207,20 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 You skipped the enlarged-text check because your screens are pencil drawings. What is the honest response?
 
-- Redraw one screen with every letter a step larger, and note what collides.
+- Redraw one screen with every letter at twice the size, and note what collides.
 - Record that enlarged text cannot be checked on paper, and move on to the next check.
 - Assume it is fine, because the layout already leaves generous spacing everywhere.
 
 <details>
 <summary>After your attempt</summary>
 
-Redraw one screen with every letter a step larger, and note what collides. — The check is about text growing inside a fixed width, and a pencil shows that well enough to find the collisions.
+Redraw one screen with every letter at twice the size, and note what collides. — The check is about text growing to 200 per cent inside a fixed width, and a pencil shows that well enough to find the collisions. Label the drawing specified, since paper cannot reflow.
 
 Record that enlarged text cannot be checked on paper, and move on to the next check. — It can, roughly, and roughly is enough to find collisions. Skipping it means a layout that fails daily for a great many readers.
 
 Assume it is fine, because the layout already leaves generous spacing everywhere. — Generous spacing is the first thing enlarged text consumes. Buttons, containers and fixed rows are where it collides.
 
-Improve: Fill enlarged-text-result in step 4 by redrawing one screen a step larger throughout, then record what you changed in the last step.
+Improve: Fill enlarged-text-result in step 4 by redrawing one screen with the text at 200 per cent throughout, then record what you changed in the last step.
 
 Check again: The enlarged-text box names at least one specific collision, or says plainly that nothing broke and how you checked.
 
@@ -6478,7 +6478,7 @@ Specify one interactive component and one whole screen in every state they can o
 
 Section: learn. Stable action: learn-1.
 
-A component's states are a list you can enumerate rather than a matter of judgement: default, hover where a pointer exists, focus for keyboard users, active while being pressed, loading, disabled, and error. Focus is the one most often forgotten, and it is the only way a keyboard user knows where they are — an interface where focus is invisible is unusable without a mouse, however it looks. Specify what changes in each state and never signal a state with colour alone, since the difference must survive being seen in greyscale.
+A component's states are a list you can enumerate rather than a matter of judgement: default, focus for keyboard users, loading, empty where it can apply, error, success, disabled and unavailable, plus hover where a pointer exists and pressed while it is being pressed, both noted in the default row. Focus is the one most often forgotten, and it is the only way a keyboard user knows where they are — an interface where focus is invisible is unusable without a mouse, however it looks. Specify what changes in each state and never signal a state with colour alone, since the difference must survive being seen in greyscale.
 
 
 ### Idea 2: A screen has states too, and they are not the same list: empty…
@@ -6508,7 +6508,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The book-a-place button was specified in eight states. Default. Focus, with a visible outline that is not colour alone. Loading, showing that the request is in progress with the label changed rather than replaced by a spinner alone. Disabled before a date is chosen, with the reason beside it — “choose a date first” — rather than a silent grey. Unavailable when the class is full, with the alternative-dates route from the flow. Error after a failed submission, keeping everything the person had entered. Success, naming the reference. And offline, saying the action will not be attempted until the connection returns. The screen was specified in seven states, and the empty one — no classes this week — was the one nobody had drawn, which had been showing as a blank panel.
+- The book-a-place button was specified in eight states. Default. Focus, with a visible outline that is not colour alone. Loading, showing that the request is in progress with the label changed rather than replaced by a spinner alone. Disabled before a date is chosen, with the reason beside it — “choose a date first” — rather than a silent grey. Unavailable when the class is full, with the alternative-dates route from the flow. Error after a failed submission, keeping everything the person had entered. Success, naming the reference. And empty, marked does not apply: a button has no contents. Offline, where the action will not be attempted until the connection returns, went into the screen's states instead. The screen was specified in seven states, and the empty one — no classes this week — was the one nobody had drawn, which had been showing as a blank panel.
 
 
 ### Choose where you will do the work
@@ -6605,16 +6605,16 @@ Made-up example. Specifying a book-a-place button, and greying it out without ev
 
 Section: practice-plan. Stable action: write-component-default.
 
-Write your answer for “Default · trigger, what changes, what she can do, what ends it”. Use the task instructions below to decide what to include.
+Note hover (where a pointer exists) and pressed in this row too.
 
 **Answer:** Default · trigger, what changes, what she can do, what ends it
 
-
+Note hover (where a pointer exists) and pressed in this row too.
 
 <details>
 <summary>Example</summary>
 
-Example (made up): shown whenever a date is chosen and places remain · label reads “Book this place” · she can press it · pressing it ends the state.
+Example (made up): shown whenever a date is chosen and places remain · label reads “Book this place”; hover thickens the border, pressing darkens it · she can press it · pressing it ends the state.
 
 </details>
 
