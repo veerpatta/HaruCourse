@@ -87,7 +87,7 @@ export const module18: Lesson[] = [
     misconception:
       "“I will find participants once I have started.” You will find that you cannot, and then either the project stalls or you write something research-shaped without research. Access is the first decision, not a later step.",
     example:
-      "The Module 16–17 brief — request handling for a volunteer group — was replaced, with the reason written: the coordinator who had agreed to take part stepped down, and nobody else could within the appetite. Its role-and-permission map carried over. Three candidate domains followed: a physiotherapy clinic's appointment reminders, a tuition centre's parent communication, and a repair shop's job tracking. The third was chosen because the owner had already complained about the problem twice and agreed to two conversations, and two customers agreed through him — three people, recorded by role. The problem: nobody can tell a customer when a repair will be ready, so the shop is interrupted by calls all day. Scope: four weeks of evenings. Abandonment condition: if the owner becomes unavailable for two consecutive weeks, stop and record it.",
+      "The Module 16–17 brief — request handling for a volunteer group — was replaced, with the reason written: the coordinator who had agreed to take part stepped down, and nobody else could within the appetite. Its role-and-permission map carried over. Three candidate domains followed: a physiotherapy clinic's appointment reminders, a tuition centre's parent communication, and a repair shop's job tracking. The third was chosen because the owner had already complained about the problem twice and agreed to two conversations, and two customers agreed through him — three people, recorded by role. The problem: nobody can tell a customer when a repair will be ready, so the shop is interrupted by calls all day. Scope: eight weeks of evenings — about two for research, three to design and build, two to count before and after, one to hand over. Abandonment condition: if the owner becomes unavailable for two consecutive weeks, stop and record it.",
     freeToolPath:
       "Conversations and written notes. This module requires no tools beyond the ones you have already used, and coding stays optional.",
     outputs: [
@@ -103,7 +103,7 @@ export const module18: Lesson[] = [
         title: "List candidate domains",
         instructions: [
           "Start from your Module 16–17 brief: continue it, or write why you are replacing it.",
-          "List up to three domains you have not used, where you know someone.",
+          "List one to three domains you have not used, with who you know in each — or a plain note that you know nobody there yet.",
           "For each, write the problem you have heard someone complain about.",
         ],
       },
@@ -1466,7 +1466,7 @@ export const module18: Lesson[] = [
     misconception:
       "“No measurable change means the project failed.” It means the measure did not move in this period under these conditions, which is a finding. Reporting it is what separates the work from marketing.",
     example:
-      "Measure chosen: calls asking about repair progress, tallied by the owner on a sheet by the till. Before: eleven over five working days, counted before anything changed. The page could not be the change: it failed the stop gate in lesson 6 and stayed a demonstration with made-up jobs. What went into real use was the testing finding — the owner wrote a window rather than a single day on each paper job slip and said he would ring if it slipped, which holds nobody's records. After: seven over the next five working days, with the conditions recorded — one of the five days was a public holiday with reduced trade, and the owner explained the new wording in person to two regular customers, which is not how most customers would meet it. The report says eleven then seven, names both conditions, says the page was not what changed, and converts nothing into a rate.",
+      "Measure chosen: calls asking about repair progress, tallied by the owner on a sheet by the till. Before: eleven over five working days, counted before anything changed. His tally — eleven in five working days, about two a day — was far below his estimate of six to ten a day; the report states both and records the gap as a finding about estimates. The page could not be the change: it failed the stop gate in lesson 6 and stayed a demonstration with made-up jobs. What went into real use was the testing finding — the owner wrote a window rather than a single day on each paper job slip and said he would ring if it slipped, which holds nobody's records. After: seven over the next five working days, with the conditions recorded — one of the five days was a public holiday with reduced trade, and the owner explained the new wording in person to two regular customers, which is not how most customers would meet it. The report says eleven then seven, names both conditions, says the page was not what changed, and converts nothing into a rate.",
     freeToolPath:
       "A paper tally sheet. This is the appropriate instrument at this scale and costs nothing.",
     outputs: [
@@ -1502,19 +1502,19 @@ export const module18: Lesson[] = [
         ],
       },
       {
+        minutes: 15,
+        title: "Record the conditions",
+        instructions: [
+          "List everything else that could explain the counts, in either period.",
+          "State what the measure cannot show.",
+        ],
+      },
+      {
         minutes: 20,
         title: "Report as counts",
         instructions: [
           "Write both counts with their periods, or the before count with its plan.",
-          "Do not convert to percentages.",
-        ],
-      },
-      {
-        minutes: 15,
-        title: "Record the conditions",
-        instructions: [
-          "List everything else that could explain the difference.",
-          "State what the measure cannot show; if no before was collected, say no comparison is possible.",
+          "Do not convert to percentages; with no before, say no comparison is possible.",
         ],
       },
     ],
@@ -1851,7 +1851,7 @@ export const module18: Lesson[] = [
     explanation: [
       "The material already exists. Your exclusions from the plan, deviations from fieldwork, skipped methods from the design, confounds from the measurement and untested areas from the handover are the limitations page; the work is collecting and sharpening them rather than generating new ones.",
       "Specificity is what makes the page useful. “Small sample” tells a reader nothing. “Three research participants, all reached through the owner, none of whom had stopped using the shop” tells them exactly which conclusions are unavailable and which still stand.",
-      "The two kinds of limit are different and readers conflate them. A study limit is what you do not know; a design limit is what the thing does not do. Not knowing whether customers who left would use the page is a study limit. Never having tested it on a slow connection is a design limit. A mistyped job number that shows another customer's job is neither: it is a blocking defect, the reason the page failed the stop gate, and it goes on the repair list. Separating the three keeps all of them honest.",
+      "The two kinds of limit are different and readers conflate them. A study limit is what the findings cannot show; a design limit is what nobody should rely on the thing for, including conditions it was never tested under. Not knowing whether customers who left would use the page is a study limit. Never having tested it on a slow connection is a design limit. A mistyped job number that shows another customer's job is neither: it is a blocking defect, the reason the page failed the stop gate, and it goes on the repair list. Separating the three keeps all of them honest.",
       "Saying what would close each limit turns the page from a disclaimer into a plan. Four conversations with customers who stopped coming; one test on a slow connection; a second measurement period without a public holiday. Each is small, specific and shows you know what the next step is.",
     ],
     misconception:
@@ -1878,7 +1878,7 @@ export const module18: Lesson[] = [
         minutes: 25,
         title: "Separate the two kinds",
         instructions: [
-          "Split into what you do not know and what the design does not do.",
+          "Split into what the findings cannot show (the study) and what nobody should rely on the thing for, including conditions it was never tested under (the design).",
           "Move anything that is really a defect into a repair list.",
         ],
       },
@@ -1911,7 +1911,7 @@ export const module18: Lesson[] = [
       {
         question: "What is the difference between the two kinds of limit?",
         answer:
-          "A study limit is what you do not know; a design limit is what the thing does not do. Conflating them hides both.",
+          "A study limit is what the findings cannot show; a design limit is what nobody should rely on the thing for, including conditions it was never tested under. Conflating them hides both.",
       },
       {
         question: "Why is “small sample” insufficient?",
@@ -1955,7 +1955,7 @@ export const module18: Lesson[] = [
           "As adequate, and defects have been moved to a repair list.",
         ],
         remediation:
-          "Sort each line into what you do not know versus what it does not do.",
+          "Sort each line into what the findings cannot show versus what nobody should rely on the thing for.",
         recheck: "The two sections.",
       },
       {
@@ -2010,7 +2010,7 @@ export const module18: Lesson[] = [
         ...analyse,
         section: "Separating what was observed from what was inferred.",
         purpose:
-          "Supports the split between what you do not know and what the design lacks.",
+          "Supports the split between what the findings cannot show and what the design should not be relied on for.",
         minutes: "20–30",
         limits:
           "Free reading, no account. Verified 2026-09-06. Written for session analysis; applied here to the whole project.",
@@ -2077,7 +2077,7 @@ export const module18: Lesson[] = [
         minutes: 20,
         title: "Name what did not improve",
         instructions: [
-          "Find something that failed in every project.",
+          "Find something that did not improve — it failed in every project, or got worse.",
           "Write why, without excusing it.",
         ],
       },

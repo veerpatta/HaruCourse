@@ -593,7 +593,7 @@ export const guided20: Record<string, Guided> = {
       ] },
       { id: 'ranking', title: 'Rank the absences', fields: [
         { id: 'absences-ranked', label: 'The absences, ordered by how often they appeared in your sample', kind: 'long' },
-        { id: 'sample-caveat', label: 'The note saying the ranking is about your fourteen listings only', kind: 'short' },
+        { id: 'sample-caveat', label: 'The note saying the ranking is about your own sample only, with its size and window', kind: 'short' },
       ] },
       { id: 'against', title: 'Read it against one listing', fields: [
         { id: 'listing-check', label: 'One captured listing, read requirement by requirement against your matrix', kind: 'long' },
@@ -869,40 +869,40 @@ export const guided20: Record<string, Guided> = {
           { term: 'Repair', meaning: 'The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.' },
         ],
         sorter: {
-          intro: 'Six made up ways of closing a gap in a role evidence matrix. For each one, decide what it does.',
+          intro: 'Six made up ways of closing a gap in a role evidence matrix; each names the gap it targets. For each one, decide what it does.',
           options: ['closes it with an artefact', 'a badge on the same gap', 'needs a role you do not have'],
           items: [
-            { id: 'screen-reader-session', text: 'Forty minutes with somebody who uses a screen reader, with consent, producing two found failures, a repair and a re-test.', answer: 'closes it with an artefact',
+            { id: 'screen-reader-session', text: 'Forty minutes with somebody who uses a screen reader, with consent, producing two found failures, a repair and a re-test, to close ‘accessibility testing’.', answer: 'closes it with an artefact',
               feedback: {
                 'closes it with an artefact': 'Dated, specific, and it shows the skill rather than knowledge about the skill.',
                 'a badge on the same gap': 'Something was tested and repaired.',
                 'needs a role you do not have': 'It was arranged through a local organisation with the access the learner already had.',
               } },
-            { id: 'accessibility-certificate', text: 'A twelve-hour accessibility course with a certificate at the end.', answer: 'a badge on the same gap',
+            { id: 'accessibility-certificate', text: 'A twelve-hour accessibility course with a certificate at the end, to close ‘accessibility testing’.', answer: 'a badge on the same gap',
               feedback: {
                 'closes it with an artefact': 'The artefact it produces is a certificate about the course.',
                 'a badge on the same gap': 'Genuinely useful learning, and the cell says exactly what it said before.',
                 'needs a role you do not have': 'Anybody can take it, which is part of why it proves little.',
               } },
-            { id: 'ship-production', text: 'Getting something deployed to real users by an organisation.', answer: 'needs a role you do not have',
+            { id: 'ship-production', text: 'Getting something deployed to real users by an organisation, to close ‘shipping to production’.', answer: 'needs a role you do not have',
               feedback: {
                 'closes it with an artefact': 'Not one you can produce by deciding to.',
                 'a badge on the same gap': 'It would genuinely close the gap, if it were available.',
                 'needs a role you do not have': 'An honest absence with adjacent evidence named is the answer here, not a plan.',
               } },
-            { id: 'redesign-famous-app', text: 'Redesigning a well-known app’s screens as a personal exercise, to show product thinking.', answer: 'a badge on the same gap',
+            { id: 'redesign-famous-app', text: 'Redesigning a well-known app’s screens, to close ‘product thinking’.', answer: 'a badge on the same gap',
               feedback: {
                 'closes it with an artefact': 'It produces screens, with no problem, no research and no outcome behind them.',
                 'a badge on the same gap': 'A common version of this mistake, and Module 19 covered what a folder of screens can evidence: taste.',
                 'needs a role you do not have': 'It needs nothing, which is the difficulty.',
               } },
-            { id: 'handover-friend', text: 'Writing a handover note for the shop owner that explains your project’s decisions and the reasons for them.', answer: 'closes it with an artefact',
+            { id: 'handover-friend', text: 'A handover note the shop owner used, to close ‘documenting decisions’.', answer: 'closes it with an artefact',
               feedback: {
-                'closes it with an artefact': 'A real artefact from real work with another person. It is not team experience, and it is the nearest adjacent evidence to it.',
+                'closes it with an artefact': 'A real artefact from real work with another person, aimed at a gap it can actually close. It is not team experience, though it is also the nearest adjacent evidence to that.',
                 'a badge on the same gap': 'Something was written, used and can be read.',
                 'needs a role you do not have': 'The owner already exists; the note did not.',
               } },
-            { id: 'analytics-at-scale', text: 'Working with analytics on a product with a hundred thousand users.', answer: 'needs a role you do not have',
+            { id: 'analytics-at-scale', text: 'Working with analytics on a product with a hundred thousand users, to close ‘analytics at scale’.', answer: 'needs a role you do not have',
               feedback: {
                 'closes it with an artefact': 'No artefact you can make alone will stand in for it.',
                 'a badge on the same gap': 'A tool tutorial would be the badge version; this is the thing itself.',
@@ -939,7 +939,7 @@ export const guided20: Record<string, Guided> = {
       {
         question: 'Shipping to production cannot be closed alone. What goes in your matrix?',
         options: [
-          { label: 'The cell stays absent, with a sentence naming the gap and your nearest adjacent evidence.', correct: true, feedback: 'Nobody closes it alone, and saying so is the answer rather than a confession. A handover note is not team experience and it is the closest artefact to it.', was: ['An honest statement of the gap with the nearest adjacent evidence named.'] },
+          { label: 'The cell stays absent, with a sentence naming the gap and your nearest adjacent evidence.', correct: true, feedback: 'Nobody closes it alone, and saying so is the answer rather than a confession. A handover note is not production experience, and it is the closest artefact you hold.', was: ['An honest statement of the gap with the nearest adjacent evidence named.'] },
           { label: 'A plan for how you would close it given the chance, so that the cell reads as work in progress.', feedback: 'Fine to mention, and it evidences nothing today; a cell marked in progress invites the question you cannot answer.', was: ['A plan for how you would close it given the chance.'] },
           { label: 'Nothing at all: leave the cell empty so that nobody reads it as more than it is.', feedback: 'The empty cell is right, and the sentence beside it is what you will actually use when asked.', was: ['Nothing — leave the cell empty.'] },
         ],
@@ -1159,7 +1159,7 @@ export const guided20: Record<string, Guided> = {
       'Made-up evidence record from the course’s practice repair-shop project, used in this lesson’s examples. It is not your data; use your own records for your own lines.',
       'Research: five sessions — two interviews, one observation and two short conversations — all reached through the owner. Before the project, the owner estimated six to ten progress calls a day; he had never counted them.',
       'What changed: the shop changed how it wrote its job slips. The status page was only a demonstration; no customer used it.',
-      'Count: the owner’s tally recorded eleven progress-chasing calls over the five working days before the job-slip change and seven over the five working days after. It is one uncontrolled comparison, and he thinks he missed a few marks on the busiest day.',
+      'Count: the owner’s tally recorded eleven progress-chasing calls over the five working days before the job-slip change and seven over the five working days after. It is one uncontrolled comparison, and he thinks he missed a few marks on the busiest day. Eleven in five working days is about two a day, far below his estimate of six to ten a day; the record states both and keeps the gap as a finding about estimates.',
       'Who did what: the learner did the research and designed and built the demonstration page alone; the owner changed the job slips and kept the tally; a friend who writes software reviewed the page’s HTML and fixed one date bug.',
     ],
     transfer: {
@@ -1653,10 +1653,10 @@ export const guided20: Record<string, Guided> = {
               } },
           ],
           then: 'Now read your own asks and decide which group each falls into.',
-          pattern: 'Two of these can be answered in a minute, two ask a stranger to spend something of their own, and two ask for nothing that could be done. Only the first pair gets replies.',
+          pattern: 'Two of these can be agreed to in a single reply, two ask a stranger to spend something of their own, and two ask for nothing that could be done. Only the first pair gets replies.',
         },
         start: 'Write the ask as a question with a short answer.',
-        enough: 'Every ask could be granted in a few minutes.' },
+        enough: 'Every ask is one question or one short conversation a stranger could agree to in a single reply.' },
       { expect: 'A written rule against automation and bulk sending, and a follow-up rule with an interval and a limit.',
         fields: ['automation-rule', 'followup-rule'],
         terms: [
@@ -1702,12 +1702,12 @@ export const guided20: Record<string, Guided> = {
       {
         question: 'You have never spoken to this person. Is asking them to refer you for a role a reasonable first ask?',
         options: [
-          { label: 'It is too large: it asks them to spend their credibility at work on somebody they have not met.', correct: true, feedback: 'The same person might do it after twenty minutes of conversation. One question or twenty minutes is what a stranger can grant without arranging anything.', was: ['No. It asks them to spend their own credibility inside their company on somebody they have not met.'] },
+          { label: 'It is too large: it asks them to spend their credibility at work on somebody they have not met.', correct: true, feedback: 'The same person might do it after twenty minutes of conversation. One question or twenty minutes is what a stranger can grant with a single reply.', was: ['No. It asks them to spend their own credibility inside their company on somebody they have not met.'] },
           { label: 'It is reasonable if you ask politely, keep it brief, and make it easy for them to decline without guilt.', feedback: 'Politeness does not change what is being asked for.', was: ['Yes, if you ask politely and make it easy to decline.'] },
           { label: 'It is reasonable because the worst outcome is no reply, which costs you nothing at all.', feedback: 'A reply that has to say no ends the exchange, which costs more than silence.', was: ['Yes, since the worst case is no reply.'] },
         ],
         repair: 'Replace any oversized ask in step 3 with one question or twenty minutes. Record the change in step 5.',
-        recheck: 'Every ask could be granted in a few minutes.',
+        recheck: 'Every ask is one question or one short conversation a stranger could agree to in a single reply.',
       },
       {
         question: 'Three people have not replied after two weeks. What now?',
@@ -1775,8 +1775,8 @@ export const guided20: Record<string, Guided> = {
             { label: 'What I prepared', text: 'Good answers about how I handle disagreement, how I deal with failure and how I work with constraints. Thought through, honest, and true of me generally.' },
             { label: 'What the first follow-up was', text: 'Can you give me an example of that. The thing I had not prepared, asked immediately, on all three.' },
             { label: 'What came out', text: 'A half-remembered situation assembled while speaking. It survived one question and lost its detail on the second, which is exactly what a fabricated example does.' },
-            { label: 'What I prepared instead', text: 'Three occasions. A reviewer who disagreed about the status wording, settled by testing it with two people rather than by arguing. A repair that failed and what it changed. A recruitment attempt that produced nobody, and what I did instead.' },
-            { label: 'What happened in the practice', text: 'The interviewer went three questions deep on the failed repair and it held, because everything asked for was in the records.' },
+            { label: 'What I prepared instead', text: 'Three occasions. A reviewer’s question about a job not updated for three days, which I had no answer to and which added a stale-information state. A wording repair that only half worked, reported as one of two. A recruitment attempt that produced nobody, and what I did instead.' },
+            { label: 'What happened in the practice', text: 'The interviewer went three questions deep on the half-worked repair and it held, because everything asked for was in the records.' },
           ],
           wrongTurn: 'The wrong turn is preparing your approach rather than occasions, because the questions are phrased generally and a general answer sounds responsive. The follow-up is always for an example, and one assembled under pressure collapses at the second question.',
           tradeoff: 'Three specific occasions cover less ground than three general answers, and one of mine did not fit a question I was asked.',
@@ -1786,11 +1786,11 @@ export const guided20: Record<string, Guided> = {
           intro: 'Six made up answers to behavioural interview questions. For each one, decide what it is.',
           options: ['a real instance', 'a policy, not an instance', 'would collapse under follow-up'],
           items: [
-            { id: 'status-wording', text: '“A reviewer disagreed with my status wording. Rather than argue, I tested both versions with two people, and both read the original as a promise, so I changed it.”', answer: 'a real instance',
+            { id: 'status-wording', text: '“A reviewer asked what the page shows when a job has not been updated for three days. I had no answer, so I added a stale-information state.”', answer: 'a real instance',
               feedback: {
-                'a real instance': 'One occasion, a specific disagreement, and a resolution somebody can ask three questions about.',
+                'a real instance': 'One occasion, a specific question, and a change somebody can ask three questions about.',
                 'a policy, not an instance': 'It describes one occasion rather than a habit.',
-                'would collapse under follow-up': 'The sessions and the change are in the records.',
+                'would collapse under follow-up': 'The critique notes and the change are in the records.',
               } },
             { id: 'i-usually-try', text: '“I usually try to find the shared goal and work back from there.”', answer: 'a policy, not an instance',
               feedback: {
@@ -1804,10 +1804,10 @@ export const guided20: Record<string, Guided> = {
                 'a policy, not an instance': 'It is specific, which is what makes it risky.',
                 'would collapse under follow-up': 'Which client, what research, how many people, what did they say. An answer built to impress runs out of detail at the second question.',
               } },
-            { id: 'failed-repair', text: '“My first repair to the wording made it worse: the next person read the window as a guarantee. I changed it again and re-tested, and that is why I now re-test every repair.”', answer: 'a real instance',
+            { id: 'failed-repair', text: '“After a stranger read the time as a promise, I changed it to a window and re-tested with two new people. One still read it that way, and I reported one of two.”', answer: 'a real instance',
               feedback: {
-                'a real instance': 'A failure, what it changed, and a habit that came from it. This is the one interviewers push on, and it holds.',
-                'a policy, not an instance': 'The habit is at the end, where it belongs, after the occasion.',
+                'a real instance': 'A partial failure, reported as a count rather than smoothed over. This is the one interviewers push on, and it holds.',
+                'a policy, not an instance': 'It describes one occasion and its result, not a habit.',
                 'would collapse under follow-up': 'Every detail is in the session notes.',
               } },
             { id: 'always-accessible', text: '“I always make sure accessibility is considered from the start.”', answer: 'a policy, not an instance',
@@ -1900,7 +1900,7 @@ export const guided20: Record<string, Guided> = {
       {
         question: 'You have prepared good answers about how you handle disagreement. Is that enough?',
         options: [
-          { label: 'Prepared occasions are needed too: the follow-up usually asks for an example, and improvised ones thin out.', correct: true, feedback: 'Three occasions with dates — a disagreement settled by testing, a failed repair, a recruitment that produced nobody — survive three questions because everything asked for is in the records.', was: ['No. The first follow-up is always for an example, and one assembled under pressure loses its detail at the second question.'] },
+          { label: 'Prepared occasions are needed too: the follow-up usually asks for an example, and improvised ones thin out.', correct: true, feedback: 'Three occasions with dates — a reviewer’s question that added a stale-information state, a repair that half worked, a recruitment that produced nobody — survive three questions because everything asked for is in the records.', was: ['No. The first follow-up is always for an example, and one assembled under pressure loses its detail at the second question.'] },
           { label: 'Prepared approaches are enough, because behavioural questions are phrased generally and answered that way.', feedback: 'They are phrased generally and answered specifically, which is what the follow-up is for.', was: ['Yes, since the questions are asked generally.'] },
           { label: 'Prepared approaches plus one example loosely in mind are enough, ready in case they ask for one.', feedback: 'Loosely in mind is what loses its detail at the second question; ready means written and checked against three follow-ups.', was: ['Yes, with an example ready in case they ask.'] },
         ],
@@ -1920,7 +1920,7 @@ export const guided20: Record<string, Guided> = {
     ],
     material: [
       'Made-up evidence record from the course’s practice repair-shop project, used in this lesson’s examples. It is not your data; prepare your answers from your own records.',
-      'Before the project, the owner estimated six to ten progress calls a day; he had never counted them. After the shop changed how it wrote job slips, his tally showed eleven progress-chasing calls over the five working days before the change and seven over the five after: one uncontrolled comparison.',
+      'Before the project, the owner estimated six to ten progress calls a day; he had never counted them. After the shop changed how it wrote job slips, his tally showed eleven progress-chasing calls over the five working days before the change and seven over the five after: one uncontrolled comparison. Eleven in five working days is about two a day, far below his estimate of six to ten a day; the record states both and keeps the gap as a finding about estimates.',
       'The status page was only a demonstration; no customer used it. The learner did the research and built the demonstration alone; the owner changed the job slips and kept the tally.',
       'Solo interruption slips, made up: “Why that and not something else?” “How many people was that?” “Who counted?” “What would you do differently?” “What does that number not show?” “Was that you or the owner?” “What did you leave out?” “How do you know?”',
     ],
