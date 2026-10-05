@@ -68,6 +68,10 @@ export type LabelPractice = {
   items: LabelItem[];
   then: string;
   pattern: string;
+  // Earlier wordings of a renamed label, keyed by the current label. The
+  // action reader saves the chosen label, so these let an answer saved under
+  // an old label still select an option (shared/choices.ts).
+  was?: Record<string, string[]>;
 };
 // "Check the reason": the learner answers first, then reads why. `repair`
 // sends one specific issue back into their own artefact. Nothing computes or
