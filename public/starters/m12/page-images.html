@@ -18,8 +18,10 @@
        to undo your last change and save again, or download a fresh copy of this file.
 
   Every picture on this page is written as SVG text inside this one file, so the page makes no requests
-  to any other site and needs no image files. To practise resizing real photographs, put your own image
-  files in the same folder and add img elements for them.
+  to any other site and needs no image files. To practise resizing a real photograph, follow the section
+  "Practise with one photo of your own" on the page: resize one of your own photos (an object or a view,
+  no faces or personal details) in Squoosh at squoosh.app, save it in this folder, and add an img
+  element for it.
 -->
 <style>
   :root {
@@ -62,6 +64,7 @@
   .late-slot svg { display: block; width: 100%; height: auto; }
   button { font: inherit; padding: var(--space-2) var(--space-3); border-radius: var(--radius); border: 1px solid var(--color-border); background: #ffffff; cursor: pointer; }
   .quiet { color: var(--color-text-quiet); font-size: 0.875rem; }
+  code { overflow-wrap: anywhere; }
 </style>
 </head>
 <body>
@@ -127,6 +130,21 @@
       </tbody>
     </table>
   </div>
+
+  <h2>Practise with one photo of your own</h2>
+  <p>This page has no photograph files to resize, so bring one of your own: a photo of an object or a view,
+     with no faces and no personal details in it.</p>
+  <ol>
+    <li>Note the photo's file size in File Explorer (right-click it, Properties).</li>
+    <li>Open squoosh.app in your browser. It is free, needs no account, and the photo stays on your computer.</li>
+    <li>Drop the photo onto the page. In the Edit panel on the right, turn on Resize, keep Maintain aspect
+        ratio ticked and set the width to 720, the width the header is shown at here (up to 1440 allows for
+        dense screens). Note the height Squoosh fills in. Keep a JPEG format such as MozJPEG, download the
+        result, move it into this folder, rename it <code>my-photo.jpg</code> and note its new size.</li>
+    <li>In Notepad, add this line just above this section's heading, save and reload:
+        <code>&lt;img src="my-photo.jpg" width="720" height="480" alt="Describe your photo"&gt;</code>
+        Change 480 to the height Squoosh showed, and write your own alt text.</li>
+  </ol>
 
   <h2>Reserved space, seen happening</h2>
   <div class="late-demo">

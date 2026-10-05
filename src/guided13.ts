@@ -24,7 +24,7 @@ export const guided13: Record<string, Guided> = {
       ] },
       { id: 'problems', title: 'Three problems, each with a person', intro: 'A problem for somebody, not a feature. One at a time.', fields: [
         ...[1, 2, 3].map((n) => ({ id: `problem-${n}`, label: `Problem ${n} · who it affects and what it costs them`, kind: 'long' as const,
-          ...(n === 1 ? { hint: 'At least one of the three should cost somebody other than you time.', example: 'Example (made up): an engineer has to ask me what each state should do, which costs about a day per feature and a day of mine answering.' } : {}) })),
+          ...(n === 1 ? { hint: 'At least one of the three should cost somebody other than you time. Working alone? That can be the engineer your Module 12 handover was written for, labelled as expected rather than current.', example: 'Example (made up): an engineer has to ask me what each state should do, which costs about a day per feature and a day of mine answering.' } : {}) })),
       ] },
       { id: 'audience', title: 'Who it is for now', fields: [
         { id: 'audience-named', label: 'Who the system is for now, not eventually', kind: 'short', hint: 'Naming a future team you do not have makes every decision hypothetical.' },
@@ -114,14 +114,14 @@ export const guided13: Record<string, Guided> = {
           pattern: 'The component wish is the one to watch, because it sounds like the most practical of the three. It arrives as a purpose and is really an answer, which means the real problem never gets stated and the wrong thing gets built.',
         },
         start: 'Look at last month rather than next year, and find where you or somebody else actually lost time.',
-        enough: 'Each problem names a person and a cost, and at least one cost is somebody else’s.' },
+        enough: 'Each problem names a person and a cost; at least one cost falls on somebody else or, if you work alone, on the engineer your Module 12 handover was written for, labelled as expected rather than current.' },
       { expect: 'The audience named as it exists now, with what each of them needs from the system.',
         fields: ['audience-named', 'audience-needs'],
         terms: [
           { term: 'Audience now', meaning: 'The people who will use it this month: you in three months, one engineer, a reviewer reading a case study. Not a team you do not have.' },
         ],
         start: 'Write the names or roles of the people who will open this in the next eight weeks.',
-        enough: 'Nobody on the list is hypothetical.' },
+        enough: 'Every person listed is current or labelled as expected.' },
       { expect: 'A written list of what the system will not cover, each with a one-line reason.',
         fields: ['out-of-scope', 'boundary-reason'],
         terms: [
@@ -283,11 +283,11 @@ export const guided13: Record<string, Guided> = {
                 'missing the rule': 'Use these only is a constraint, not a rule. A rule would say that gaps between groups exceed gaps within them.',
                 'missing the reason': 'It is missing that too, and the rule is the more urgent gap.',
               } },
-            { id: 'status-colour', text: 'Status colour: amber. Use for items with fewer than three places left, always with the count beside it. Chosen because the greyscale check showed it indistinguishable from red on its own.', answer: 'complete',
+            { id: 'status-colour', text: 'Status colour: amber, chosen to warn without the alarm of red. Use for items with fewer than three places left, always with the count beside it, because the greyscale check showed amber indistinguishable from red on its own.', answer: 'complete',
               feedback: {
-                complete: 'Value, rule and reason, with the reason coming from a check that actually happened. A reader could apply it and could argue with it.',
+                complete: 'Value, rule and reasons, with the reason for the count coming from a check that actually happened. A reader could apply it and could argue with it.',
                 'missing the rule': 'The rule is there: fewer than three places, always with the count.',
-                'missing the reason': 'The reason is the greyscale finding, which is the strongest kind because it is evidence rather than preference.',
+                'missing the reason': 'Both reasons are there: amber warns without alarming, and the count is required because of the greyscale finding, which is evidence rather than preference.',
               } },
             { id: 'radius', text: 'Radius: 4 pixels for controls, 8 for containers.', answer: 'missing the reason',
               feedback: {
@@ -295,11 +295,11 @@ export const guided13: Record<string, Guided> = {
                 'missing the rule': 'The rule is present and clear: controls get one, containers get the other.',
                 'missing the reason': 'Without a reason it is a preference, and preferences lose to whoever feels strongest that week.',
               } },
-            { id: 'elevation', text: 'Elevation: two levels. Never use elevation as the only way of conveying meaning, because it disappears in high-contrast modes and in print.', answer: 'missing the rule',
+            { id: 'elevation', text: 'Elevation: two levels, a 2px and an 8px shadow, chosen because both stay visible in greyscale.', answer: 'missing the rule',
               feedback: {
-                complete: 'It has a prohibition and a reason. What it lacks is a rule for when each of the two levels is used.',
-                'missing the rule': 'Never do this is half a rule. A reader still does not know which level a dialogue gets and which a card gets.',
-                'missing the reason': 'The reason is there and it is a good one.',
+                complete: 'It has values and a reason. What it lacks is a rule for when each of the two levels is used.',
+                'missing the rule': 'A reader still does not know which level a dialogue gets and which a card gets, so the two values get used by taste.',
+                'missing the reason': 'The reason is there: both shadows stay visible in greyscale.',
               } },
             { id: 'type-steps', text: 'Type: six steps. Step 5 for page titles, 4 for section headings, 3 for body, 2 for meta, never below 2 for anything a person must read. Six because seven produced two steps nobody could tell apart.', answer: 'complete',
               feedback: {
@@ -307,11 +307,11 @@ export const guided13: Record<string, Guided> = {
                 'missing the rule': 'Each step has a job and there is a minimum.',
                 'missing the reason': 'The reason names something that happened rather than a principle.',
               } },
-            { id: 'motion-duration', text: 'Motion: 120ms for state changes, 240ms for things entering. Reduced-motion pairs are documented per component.', answer: 'missing the rule',
+            { id: 'motion-duration', text: 'Motion: 120ms and 240ms, each with a 0ms reduced-motion pair, chosen because longer durations felt slow in testing.', answer: 'missing the rule',
               feedback: {
-                complete: 'The durations have jobs, so it looks complete. Documented per component is where it falls down.',
-                'missing the rule': 'The reduced pair belongs beside the value, not per component. Left to each component it gets forgotten by the third one.',
-                'missing the reason': 'It is missing a reason as well, and the scattered reduced pairs are the more damaging gap.',
+                complete: 'It has values, reduced-motion pairs and a reason. Nothing says which of the two durations a given change gets.',
+                'missing the rule': 'Two durations and no word on when each applies, so a reader picks by taste. A rule would say 120ms for state changes and 240ms for things entering.',
+                'missing the reason': 'The reason is there: longer durations felt slow in testing.',
               } },
           ],
           then: 'Now read your own six groups the same way, and fix whichever part is missing.',
@@ -475,11 +475,11 @@ export const guided13: Record<string, Guided> = {
                 'needs one question answered': 'Nothing is left open.',
                 'not a specification at all': 'It is exactly what a content rule should look like.',
               } },
-            { id: 'meta-wrap', text: 'The meta row wraps rather than truncating.', answer: 'needs one question answered',
+            { id: 'meta-wrap', text: 'The meta row wraps, inside a card of fixed height.', answer: 'needs one question answered',
               feedback: {
-                'buildable as written': 'It says what happens and not how far. Three lines of meta on a compact card may be wrong, and nothing here says.',
-                'needs one question answered': 'Wrapping to a maximum of how many lines, and what happens after that. One question, quickly answered.',
-                'not a specification at all': 'It carries a real decision: wrap rather than truncate. It is simply incomplete.',
+                'buildable as written': 'Wrapping makes the row taller, and a fixed-height card has nowhere to put it. Something has to give, and the line does not say what.',
+                'needs one question answered': 'Does the card grow, or does the meta row stop at a set number of lines? One question, quickly answered.',
+                'not a specification at all': 'It carries real decisions: wrap rather than truncate, and a fixed height. They simply collide.',
               } },
             { id: 'status-colour', text: 'The status area shows the status.', answer: 'not a specification at all',
               feedback: {
@@ -765,7 +765,13 @@ export const guided13: Record<string, Guided> = {
   },
   'm13-l05-v1': {
     route: textRoute,
-    material: [suppliedComponent],
+    material: [
+      suppliedComponent,
+      'Supplied borderline cases (made up), for any of the three cases your own inventory cannot supply. Decide each with your test; no answers are given here.',
+      'Case A · A “new this week” tool card: the same offer to choose a tool, with a small New label above the title.',
+      'Case B · A waiting-list entry: a tool you have asked to be told about, with your place in the queue, the date you joined and a Leave the list action.',
+      'Case C · A comparison tile: two to four tools side by side with their loan length and deposit, and one Choose action under each.',
+    ],
     worksheet: [
       { id: 'test', title: 'Write the test once', intro: 'Four questions, each answerable in a sentence. You will reuse this rather than arguing each case from scratch.', fields: [
         { id: 'test-job', label: 'The question about the job it does', kind: 'short', example: 'Example (made up): does it do the same job for the reader, or a different one?' },
@@ -773,7 +779,7 @@ export const guided13: Record<string, Guided> = {
         { id: 'test-states', label: 'The question about states', kind: 'short' },
         { id: 'test-count', label: 'The question about how many variants there already are', kind: 'short', hint: 'Beyond about four, the abstraction is usually wrong and you are holding two components in one.' },
       ] },
-      { id: 'apply', title: 'Three borderline cases', intro: 'One at a time. Answer all four questions before deciding.', fields: [
+      { id: 'apply', title: 'Three borderline cases', intro: 'From your own inventory, or the supplied cases in the source notes for any you lack. One at a time. Answer all four questions before deciding.', fields: [
         ...[1, 2, 3].map((n) => ({ id: `case-${n}`, label: `Case ${n} · the item, the four answers, and the decision`, kind: 'long' as const,
           ...(n === 1 ? { example: 'Example (made up): compact card. Same job, same content rules, one fewer state, second variant. Decision: a variant.' } : {}) })),
       ] },
@@ -782,12 +788,12 @@ export const guided13: Record<string, Guided> = {
         { id: 'over-limit', label: 'Anything over four, and whether it is really a family of components', kind: 'long' },
       ] },
       { id: 'act', title: 'Split or merge one thing', fields: [
-        { id: 'split-or-merge', label: 'What you split or merged, and what changed in the inventory', kind: 'long' },
+        { id: 'split-or-merge', label: 'What you split or merged, and what changed in the inventory', kind: 'long', hint: 'If no component of yours carries two jobs or shares one, write that, with the test answers that show it. Do not invent a change to fill the box.' },
         { id: 'specs-updated', label: 'Which specifications you had to update', kind: 'short' },
       ] },
       { id: 'record', title: 'Record', fields: [
         { id: 'test-location', label: 'Where the test lives, so the next case is decided rather than argued', kind: 'short' },
-        { id: 'against-reuse', label: 'The case where you decided against reuse, and why', kind: 'long' },
+        { id: 'against-reuse', label: 'The case where you decided against reuse, and why', kind: 'long', hint: 'If none of your own cases went against reuse, apply your test to the supplied cases in the source notes, take the one it keeps separate, and write the job difference that decided it.' },
         improvementMade,
       ] },
     ],
@@ -843,7 +849,7 @@ export const guided13: Record<string, Guided> = {
         },
         start: 'Count them from your inventory rather than from memory.',
         enough: 'Anything over four has been looked at rather than noted.' },
-      { expect: 'One component split or merged, with the inventory and the affected specifications updated.',
+      { expect: 'One component split or merged, with the inventory and the affected specifications updated, or a record that none carries two jobs, with the test answers that show it.',
         fields: ['split-or-merge', 'specs-updated'],
         terms: [
           { term: 'Splitting', meaning: 'Turning one component carrying two jobs into two. It usually removes conditional behaviour and shortens both specifications.' },
@@ -883,10 +889,10 @@ export const guided13: Record<string, Guided> = {
                 'a separate component': 'The differences are all within the same task, which is what keeps it a variant.',
                 'out of scope entirely': 'It is a core case rather than an edge one.',
               } },
-            { id: 'search-result', text: 'A search result row: the same tool, one line, no image, used in a list of thirty.', answer: 'a separate component',
+            { id: 'search-result', text: 'A search result row: one line, no image, with its own compare action and a selected state the card does not have, used in a list of thirty.', answer: 'a separate component',
               feedback: {
-                'a variant': 'It is tempting, because it is the same subject. It has different content rules, no image slot and no states in common beyond focus.',
-                'a separate component': 'Scanning thirty rows is a different job from comparing three cards, and it would be the fourth or fifth variant of the card as well.',
+                'a variant': 'It is tempting, because it is the same subject. It has its own action, a selected state the card lacks and no image slot, so its states and content rules differ.',
+                'a separate component': 'Picking rows to compare across a list of thirty is a different job from choosing one tool from a card, with its own action and state. It would also be the fourth or fifth variant of the card.',
                 'out of scope entirely': 'It is used constantly and belongs in the system.',
               } },
           ],
@@ -894,7 +900,7 @@ export const guided13: Record<string, Guided> = {
           pattern: 'Two different traps. The booking summary is a separate component that looks like a variant; the featured card is a variant that should not exist at all. Similar appearance pulls things together, and being used once pulls things in.',
         },
         start: 'Take the component with the most variants and ask whether two of them are really doing the same job.',
-        enough: 'The inventory reflects the decision, not only your notes.' },
+        enough: 'The inventory reflects the decision, not only your notes, or your record shows the test answers that found nothing to split or merge.' },
       { expect: 'The test saved where the next case will be decided, and the case where you decided against reuse recorded with its reason.',
         fields: ['test-location', 'against-reuse', 'improvement-made'],
         terms: [
@@ -933,7 +939,7 @@ export const guided13: Record<string, Guided> = {
           { label: 'Yes, unless the two look very different from each other.', feedback: 'Visual difference is the least reliable signal here. The job is the one that matters.', was: ['Yes, unless the visual difference is large.'] },
         ],
         repair: 'Write the case where you decided against reuse in step 5, with the job difference that decided it. Record the change.',
-        recheck: 'Your record contains at least one deliberate decision not to reuse.',
+        recheck: 'Your record contains at least one deliberate decision not to reuse, from your own cases or the supplied ones.',
       },
     ],
     transfer: {
@@ -1027,7 +1033,7 @@ export const guided13: Record<string, Guided> = {
           intro: 'Six questions a reader asked about a made up tool card documentation page. For each one, decide what it tells you.',
           options: ['a sentence is missing from the page', 'the page says it and says it badly', 'a decision nobody has made'],
           items: [
-            { id: 'two-actions', text: 'What happens if a card needs two actions?', answer: 'a decision nobody has made',
+            { id: 'two-actions', text: 'What happens if a card needs two actions? Neither the specification nor you have an answer.', answer: 'a decision nobody has made',
               feedback: {
                 'a sentence is missing from the page': 'There is no sentence to add yet, because nobody has decided whether two actions are allowed.',
                 'the page says it and says it badly': 'The page does not address it at all.',
@@ -1039,25 +1045,25 @@ export const guided13: Record<string, Guided> = {
                 'the page says it and says it badly': 'A writer needs a number of words to aim for, not the behaviour when they overshoot. Both belong on the page.',
                 'a decision nobody has made': 'The truncation decision exists; the guidance for the writer does not.',
               } },
-            { id: 'compact-grid', text: 'May the compact variant be used in a grid?', answer: 'a sentence is missing from the page',
+            { id: 'compact-grid', text: 'May the compact variant be used in a grid? The specification says yes; the page is silent.', answer: 'a sentence is missing from the page',
               feedback: {
                 'a sentence is missing from the page': 'The answer exists and is not written down. One sentence in when-to-use closes it.',
                 'the page says it and says it badly': 'The page does not mention grids at all.',
                 'a decision nobody has made': 'You know the answer, which is what makes this the easy category.',
               } },
-            { id: 'whole-clickable', text: 'Is the whole card clickable, or just the title?', answer: 'a sentence is missing from the page',
+            { id: 'whole-clickable', text: 'Is the whole card clickable, or just the title? Your keyboard specification says just the title; the page does not mention it.', answer: 'a sentence is missing from the page',
               feedback: {
                 'a sentence is missing from the page': 'The keyboard specification decided this. It has not reached the documentation page.',
                 'the page says it and says it badly': 'It is absent rather than unclear.',
                 'a decision nobody has made': 'It was made in the component specification. The gap is between two documents of yours.',
               } },
-            { id: 'brand-tone', text: 'Should the title be sentence case or title case?', answer: 'a sentence is missing from the page',
+            { id: 'brand-tone', text: 'Should the title be sentence case or title case? Your foundations say sentence case; the card page does not.', answer: 'a sentence is missing from the page',
               feedback: {
-                'a sentence is missing from the page': 'If your foundations settle it, the card page needs a line pointing there. If they do not, it moves to the third category.',
+                'a sentence is missing from the page': 'The foundations settle it, so the card page needs one line pointing there.',
                 'the page says it and says it badly': 'Nothing on the page addresses it.',
-                'a decision nobody has made': 'Possible, and most systems have settled case long before components.',
+                'a decision nobody has made': 'It has been made, in the foundations. It just has not reached this page.',
               } },
-            { id: 'unavailable-grey', text: 'The unavailable card looks the same as the loading one to me. Which is which?', answer: 'a decision nobody has made',
+            { id: 'unavailable-grey', text: 'The unavailable card looks the same as the loading one to me. Which is which? The page describes both correctly; nothing in the design tells them apart.', answer: 'a decision nobody has made',
               feedback: {
                 'a sentence is missing from the page': 'A sentence explaining which is which does not fix two states that look alike.',
                 'the page says it and says it badly': 'The page is accurate. The component is the problem.',
@@ -1204,7 +1210,7 @@ export const guided13: Record<string, Guided> = {
         fields: ['acceptance-criteria'],
         terms: [
           { term: 'Composition check', meaning: 'Asking whether existing parts arranged differently would do the job. It rejects a surprising number of proposals and costs one minute.' },
-          { term: 'Minimum uses', meaning: 'A rule that something appears in at least two places before it joins the system. One use is a screen, not a component.' },
+          { term: 'Minimum uses', meaning: 'A rule that something appears in at least two places before it joins the system. One use is a screen, not a component. Defer when a second use is planned and dated; reject when none is.' },
         ],
         demo: {
           scenario: 'Made-up example. Writing acceptance criteria for a tool-library system, and writing criteria that accept everything.',
@@ -1213,7 +1219,7 @@ export const guided13: Record<string, Guided> = {
             { label: 'What happened to the first four proposals', text: 'All four passed. Everything anybody proposes is useful to the person proposing it, nothing arrives deliberately inconsistent, and well specified describes the proposal rather than the need.' },
             { label: 'What I had not written', text: 'Anything that could produce a no. Criteria that cannot reject are a description of good manners.' },
             { label: 'What I replaced them with', text: 'Needed in at least two screens. Not achievable by arranging existing components. Specifiable with states and content rules.' },
-            { label: 'What the same four proposals did then', text: 'One passed, two failed the composition check in about a minute each, and one failed on a single use and was recorded as deferred until a second appeared.' },
+            { label: 'What the same four proposals did then', text: 'One passed, two failed the composition check in about a minute each, and one failed on a single use with a second planned for next month, so it was deferred until then.' },
           ],
           wrongTurn: 'The wrong turn is writing criteria as qualities rather than as tests, because qualities are easier to agree on. A criterion nothing can fail is not doing any work, and the system grows by default.',
           tradeoff: 'Real criteria mean saying no to people, including to yourself, about components you would quite like to build.',
@@ -1256,17 +1262,17 @@ export const guided13: Record<string, Guided> = {
                 reject: 'A flat no here is likely to be wrong within a month and produces a quietly built version in the meantime.',
                 defer: 'A named condition holds it: when the booking flow exists, it has two uses. That is a real answer somebody can plan around.',
               } },
-            { id: 'receipt', text: 'A receipt-style record component. Genuinely needed, and marketing and account pages were excluded in the system’s scope.', answer: 'reject',
+            { id: 'receipt', text: 'A receipt-style record, genuinely needed, but only on the account pages, which the system’s scope excludes.', answer: 'reject',
               feedback: {
                 accept: 'It is needed, and being needed is not the same as being in scope.',
                 reject: 'The boundary decides it. Rejecting it with the scope line attached is how the boundary stays meaningful.',
                 defer: 'Deferring suggests the scope might change, which is a bigger decision than this proposal.',
               } },
-            { id: 'dark-theme', text: 'A dark theme for every component. One person has asked, and nothing in the product currently supports it.', answer: 'defer',
+            { id: 'dark-theme', text: 'A dark theme for every component. One person has asked, and a dark mode is planned and dated for the autumn release.', answer: 'defer',
               feedback: {
-                accept: 'It touches every component and every token. Accepting it as a proposal treats a project as a component.',
-                reject: 'A flat no discards a reasonable request, and the tokens would have to change for it either way.',
-                defer: 'Not as a proposal. It is a piece of work with its own decision, and deferring it names that rather than deciding it in a queue.',
+                accept: 'It touches every component and every token, and nothing needs it before the autumn. Accepting it now treats a project as a component.',
+                reject: 'A flat no discards work the product has already planned and dated.',
+                defer: 'A planned, dated condition holds it: the autumn release. It is a piece of work with its own decision, and deferring names that rather than deciding it in a queue.',
               } },
           ],
           then: 'Now run your own three proposals through your criteria and record the answers with their reasons.',
@@ -1342,7 +1348,7 @@ export const guided13: Record<string, Guided> = {
         { id: 'change-1', label: 'Change 1 · what it is, its classification, and why', kind: 'long' },
         { id: 'change-2', label: 'Change 2 · what it is, its classification, and why', kind: 'long' },
         { id: 'change-3', label: 'Change 3 · what it is, its classification, and why', kind: 'long' },
-        { id: 'underestimated', label: 'Any change you had assumed was smaller than it is', kind: 'long', hint: 'There is usually one. A rename is the classic case.' },
+        { id: 'underestimated', label: 'Any change you had assumed was smaller than it is', kind: 'long', hint: 'There often is one, and a rename is the classic case. If none moved when you asked who has to change something, write that.' },
       ] },
       { id: 'note', title: 'The change note', fields: [
         { id: 'change-note', label: 'For the largest change: what changed, why, and what the reader must do', kind: 'long' },
@@ -1379,15 +1385,15 @@ export const guided13: Record<string, Guided> = {
             { label: 'The change', text: 'Renaming surface-alt to surface-muted, because alt said nothing and muted says what it is for.' },
             { label: 'What I called it', text: 'A patch. It is one word, it changes nothing visually, and nothing about the product looks different afterwards.' },
             { label: 'What happened', text: 'Four places in my own stylesheet stopped working, plus a screen somebody else had built. Nothing looked broken; the colour simply fell back to white and two panels lost their tint.' },
-            { label: 'What the classification should have been', text: 'Major. Everyone using the old name has to change, and a silent fallback is the worst way to find out.' },
-            { label: 'What I did instead', text: 'Released it with the old name kept and marked deprecated for one minor version, a change note listing the four places, and the removal date stated. The rename waited to travel with the next major change.' },
+            { label: 'What the classification should have been', text: 'Major, the way I had done it. Removing the old name forces everyone using it to change, and a silent fallback is the worst way to find out.' },
+            { label: 'What I did instead', text: 'Released 1.1.0 adding surface-muted and keeping surface-alt as a deprecated alias (minor: nothing breaks), with a change note listing the four places. Removing surface-alt waits for 2.0.0, the major change.' },
           ],
           wrongTurn: 'The wrong turn is classifying by how much you typed, because a rename is the smallest edit there is. The test is whether anybody else has to do something, and a rename forces work on everyone who used the old name.',
           tradeoff: 'Keeping both names for a version means the system briefly has two names for one thing, which is exactly the confusion the rename was meant to end.',
           uncertainty: 'Still unknown: whether anybody outside my own files is using the old name. I searched what I can see, and a system used elsewhere would need the change note to reach them.',
         },
         start: 'For each change, ask one question: does anybody have to do something because of this?',
-        enough: 'At least one change is classified higher than it first felt.' },
+        enough: 'Each classification names who must change something; any that moved after asking that is marked.' },
       { expect: 'A change note for the largest change, listing every place affected and when the old form stops working.',
         fields: ['change-note', 'places-affected', 'stops-working'],
         terms: [
@@ -1395,10 +1401,10 @@ export const guided13: Record<string, Guided> = {
           { term: 'Places affected', meaning: 'The list of files, components or screens that have to change. A note without it is a warning rather than an instruction.' },
         ],
         sorter: {
-          intro: 'Six changes to a made up tool-library system. For each one, decide how it should be classified.',
+          intro: 'Six changes to a made up tool-library system. For each one, decide how it should be classified. Your rule: changing an existing default that alters screens is major; a correction that makes a component meet its own documented standard is a patch.',
           options: ['major', 'minor', 'patch'],
           items: [
-            { id: 'rename-token', text: 'Renaming surface-alt to surface-muted.', answer: 'major',
+            { id: 'rename-token', text: 'Renaming surface-alt to surface-muted, removing the old name in the same release.', answer: 'major',
               feedback: {
                 major: 'Everyone using the old name has to change, and the failure is silent: the colour falls back and panels quietly lose their tint.',
                 minor: 'Nothing is being added. Something is being taken away and replaced.',
@@ -1414,7 +1420,7 @@ export const guided13: Record<string, Guided> = {
               feedback: {
                 major: 'Nobody has to change anything they wrote.',
                 minor: 'Nothing new is available. Something that was wrong is now right.',
-                patch: 'A fix with no change to how the component is used. It should still appear in the changelog.',
+                patch: 'A fix that makes the component meet its own documented contrast standard, with no change to how it is used. It should still appear in the changelog.',
               } },
             { id: 'remove-variant', text: 'Removing the featured variant, which two screens still use.', answer: 'major',
               feedback: {
@@ -1424,7 +1430,7 @@ export const guided13: Record<string, Guided> = {
               } },
             { id: 'default-change', text: 'Changing the card’s default padding from 16 to 12, which affects every existing card.', answer: 'major',
               feedback: {
-                major: 'Every existing use changes appearance without anybody asking, so every screen must be re-checked. Some systems call visual-only changes minor; this lesson’s written rule treats them as major.',
+                major: 'Every existing use changes appearance without anybody asking, so every screen must be re-checked. The rule above makes a changed default major, though some systems call visual-only changes minor.',
                 minor: 'Nothing is being added, and existing use is affected.',
                 patch: 'It is not a fix; it is a different decision, and it arrives everywhere at once.',
               } },
@@ -1765,7 +1771,7 @@ export const guided13: Record<string, Guided> = {
           { term: 'Running it now', meaning: 'Doing the check today rather than describing it. An unrun check is a plan.' },
         ],
         sorter: {
-          intro: 'Six statements from a made up tool-library system. For each one, decide whether the system can guarantee it.',
+          intro: 'Seven statements from a made up tool-library system. For each one, decide whether the system can guarantee it.',
           options: ['the system can guarantee it', 'the page author owns it', 'nobody can guarantee it'],
           items: [
             { id: 'focus-contrast', text: 'The focus ring meets the contrast threshold on every surface the foundations permit.', answer: 'the system can guarantee it',
@@ -1792,11 +1798,17 @@ export const guided13: Record<string, Guided> = {
                 'the page author owns it': 'The words come with the content. This is the clearest example of a shared responsibility landing on the author.',
                 'nobody can guarantee it': 'The author can, for their own page.',
               } },
-            { id: 'wcag-conformance', text: 'The product conforms to WCAG 2.2 level AA.', answer: 'nobody can guarantee it',
+            { id: 'wcag-conformance', text: 'Each page built with the system conforms to WCAG 2.2 level AA.', answer: 'the page author owns it',
               feedback: {
-                'the system can guarantee it': 'Conformance is a property of a page, and a component set is not a page.',
-                'the page author owns it': 'They own testing their page, and even then conformance rests on a full tested build rather than on a claim.',
-                'nobody can guarantee it': 'Not as a standing promise about a product that keeps changing. This is the sentence the boundary in step 5 exists to keep out.',
+                'the system can guarantee it': 'Conformance is a property of a page, and a component set is not a page. The system can help; it cannot make the claim.',
+                'the page author owns it': 'Conformance is claimed for a page by whoever builds and tests it, and it rests on that tested page rather than on the components it uses. This is why the system claims no page-level conformance.',
+                'nobody can guarantee it': 'A tested page can conform, and its author can claim that for it. What nobody can promise is that every future page will, which is the job of the boundary in step 5.',
+              } },
+            { id: 'every-task', text: 'Every disabled person will complete every task with any assistive technology.', answer: 'nobody can guarantee it',
+              feedback: {
+                'the system can guarantee it': 'No component set can know every person, every task, or every assistive technology and its settings.',
+                'the page author owns it': 'An author can test their page with some assistive technologies. Every person and every technology is beyond any tested page.',
+                'nobody can guarantee it': 'It is a promise about people rather than about pages. Testing narrows the risk; nothing makes it a guarantee, and it is the kind of sentence the boundary in step 5 keeps out.',
               } },
             { id: 'greyscale-states', text: 'Every documented state is distinguishable with colour removed.', answer: 'the system can guarantee it',
               feedback: {
@@ -1806,7 +1818,7 @@ export const guided13: Record<string, Guided> = {
               } },
           ],
           then: 'Now sort your own candidate guarantees the same way, and move anything in the second group into the responsibilities list.',
-          pattern: 'The line falls between one component and several arranged together. Anything that only exists once things are composed belongs to the page author, and conformance belongs to nobody as a standing promise.',
+          pattern: 'The line falls between one component and several arranged together. Anything that only exists once things are composed, conformance included, belongs to the page author; a promise about every person and every technology belongs to nobody.',
         },
         start: 'Run the greyscale check first, on the supplied component page (it has a greyscale button) or your own states page.',
         enough: 'Every guarantee has a result beside it from today.' },
@@ -1895,7 +1907,7 @@ export const guided13: Record<string, Guided> = {
         { id: 'authoritative', label: 'Which representation is authoritative, and why', kind: 'long', hint: 'The one people actually encounter is usually the built code. Whatever you choose, say why.' },
         { id: 'copies-treated', label: 'What the others are, and how they should be treated', kind: 'long' },
       ] },
-      { id: 'audit', title: 'Find the drift that already exists', intro: 'Three components, compared across representations. Measure rather than eyeballing.', fields: [
+      { id: 'audit', title: 'Find the drift that already exists', intro: 'Three components: the supplied button and text input (the built component against the token table on its own page), plus one of your own from Lessons 3 and 6 (its drawing against its documentation). If you have none, write in the third box that it is missing. Measure rather than eyeballing.', fields: [
         ...[1, 2, 3].map((n) => ({ id: `drift-${n}`, label: `Component ${n} · every difference between representations, however small`, kind: 'long' as const,
           ...(n === 1 ? { example: 'Example (made up): the card padding is 16 in the drawing and 12 in the build, and the documentation says 16.' } : {}) })),
       ] },
@@ -1934,14 +1946,14 @@ export const guided13: Record<string, Guided> = {
         },
         start: 'Ask which representation the product is actually built from, and start there.',
         enough: 'If two representations disagreed tomorrow, your page says which one wins.' },
-      { expect: 'Three components compared across every representation, with each difference measured rather than eyeballed.',
+      { expect: 'Three components compared across their representations (the supplied button and text input, plus one of your own), with each difference measured rather than eyeballed.',
         fields: ['drift-1', 'drift-2', 'drift-3'],
         reveal: revealOne(3, 'Audit the next component', 'One at a time, and measure. Differences of a few pixels are invisible by eye and real in the build.'),
         terms: [
           { term: 'Drift', meaning: 'Two representations quietly disagreeing. It is inevitable; the only question is how quickly it is found.' },
           { term: 'Measuring', meaning: 'Reading the computed value in the inspector and the number in the drawing, rather than looking at both and deciding they match.' },
         ],
-        start: 'Open the inspector on the built component and the drawing side by side, and compare one value at a time.',
+        start: 'Open the inspector on the supplied button and read its computed values against the token table on the same page, one value at a time. For your own component, put its drawing beside its documentation.',
         enough: 'Every difference is written down, including the ones too small to matter.' },
       { expect: 'Each drift resolved by deciding which version is correct, with anything surprising recorded.',
         fields: ['which-correct', 'surprises'],
@@ -1958,17 +1970,17 @@ export const guided13: Record<string, Guided> = {
                 'the drawing is right': 'The drawing records an intention that a real constraint overtook.',
                 'the documentation is describing something that never existed': 'Both values existed; one is simply older.',
               } },
-            { id: 'disabled-state', text: 'The drawing has a disabled state for the button. Nothing in the build implements it, and no screen uses it.', answer: 'the documentation is describing something that never existed',
+            { id: 'disabled-state', text: 'The documentation lists a disabled state for the button. Nothing in the build implements it, and no screen uses it.', answer: 'the documentation is describing something that never existed',
               feedback: {
                 'the build is right': 'The build is right about today and says nothing about whether the state should exist.',
-                'the drawing is right': 'It is right that a disabled state is probably needed. It is not evidence that one exists.',
-                'the documentation is describing something that never existed': 'A state that was drawn, documented and never built is the commonest drift of all, and the honest fix is to build it or to remove it from the documentation.',
+                'the drawing is right': 'No drawing is involved; the documentation is the copy that disagrees here.',
+                'the documentation is describing something that never existed': 'A state that was documented and never built is the commonest drift of all, and the honest fix is to build it or to remove it from the documentation.',
               } },
-            { id: 'truncation', text: 'The documentation says the title truncates to two lines. The build truncates to one.', answer: 'the drawing is right',
+            { id: 'truncation', text: 'The drawing shows the title truncating to two lines; the build truncates to one, cutting the word that tells tools apart.', answer: 'the drawing is right',
               feedback: {
-                'the build is right': 'Truncating to one line loses the second half of most titles, and the two-line rule was decided against real content.',
+                'the build is right': 'Truncating to one line cuts the word that tells one tool from another, and the two-line rule was decided against real content.',
                 'the drawing is right': 'The rule was reasoned from real titles. The build is a defect, and this is a case where the authority is true and wrong.',
-                'the documentation is describing something that never existed': 'It was decided and specified; it simply was not built.',
+                'the documentation is describing something that never existed': 'No documentation is involved, and the build does truncate; it truncates wrongly.',
               } },
             { id: 'focus-colour', text: 'The focus ring is one colour in the drawing and another in the build. The build’s version passes contrast on the tinted panel and the drawing’s does not.', answer: 'the build is right',
               feedback: {
@@ -1984,13 +1996,13 @@ export const guided13: Record<string, Guided> = {
               } },
             { id: 'hover-doc', text: 'The documentation describes a hover treatment for the unavailable card. The specification marked that cell as impossible.', answer: 'the documentation is describing something that never existed',
               feedback: {
-                'the build is right': 'The build follows the specification, so it is right and it is not the interesting finding.',
+                'the build is right': 'The build follows the specification. The finding here is about the documentation, which describes a hover nobody built.',
                 'the drawing is right': 'No drawing is involved.',
                 'the documentation is describing something that never existed': 'Somebody wrote a section for completeness that contradicts a decision already made. Written documentation drifts towards being tidy rather than being true.',
               } },
           ],
           then: 'Now decide each of your own drifts, and note the ones where the authoritative version turned out to be wrong.',
-          pattern: 'The authority decides which version is true today, not which is right. Two of these are cases where the authoritative build is true and wrong, and both need fixing in the build rather than in the record.',
+          pattern: 'The authority decides which version is true today, not which is right. The truncation is the case where the authoritative build is true and wrong, and it needs fixing in the build rather than in the record.',
         },
         start: 'For each difference, find out when and why each version changed before deciding which is correct.',
         enough: 'At least one decision went against the authoritative representation, or you can say why none did.' },

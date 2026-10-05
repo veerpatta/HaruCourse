@@ -58,7 +58,7 @@ export const module12: Lesson[] = [
     guided: true,
     title: "What happens between a tap and a page",
     objective:
-      "Trace one real page load from request to rendered content, name each stage, and identify the two stages your design decisions can affect.",
+      "Trace one real page load from request to rendered content, name each stage, and identify two requests your design decisions created that you could remove or reduce.",
     bringForward: "Any real page you use often, or your m10 prototype. No coding is needed.",
     prerequisite: "A desktop browser with developer tools, or the supplied trace in this lesson's source notes if you cannot open them.",
     why: "Design decisions about images, fonts and structure become performance decisions here. You cannot weigh them without knowing what the browser is doing.",
@@ -73,12 +73,12 @@ export const module12: Lesson[] = [
       "When someone opens a page, the browser asks a server for a document, receives HTML, and starts reading it. Every stylesheet, font, image and script referenced in that HTML becomes another request, and each one takes time that depends on its size, the connection and how far away the server is. This is why a design with four typefaces and a hero video is a performance decision made at the moment of designing, long before anyone writes code.",
       "The stages fail differently. A slow stylesheet delays the first paint, so the person sees nothing. A slow font can leave text invisible or shifting when it swaps. A slow script can leave a page that looks finished and does not respond, which is the most confusing failure of all because the person taps and nothing happens.",
       "The network tab in your browser shows the real sequence: what was requested, in what order, how big it was and how long it took. Reading it once for a real page is more instructive than any amount of general advice about performance, and it costs ten minutes.",
-      "Two stages are yours. How much is requested — the number and weight of images, fonts and scripts — is a design decision. And what appears first is a structural decision, because the browser renders what it has: a page whose text arrives before its images shows something useful immediately, and one that waits for everything shows nothing.",
+      "Two things are yours. How much is requested — the number and weight of images, fonts and scripts — is a design decision, and every file shares the same connection, so one very large file slows everything downloading alongside or after it. And what the first screen shows is a structural decision. The browser draws the words once the HTML, the stylesheets, any scripts at the top of the page and the fonts allow; it does not wait for the pictures. A first screen of text is useful straight away, while a first screen filled by a large photograph shows an empty box until the picture arrives.",
     ],
     misconception:
-      "“Performance is the engineer's problem.” Engineers optimise what exists. The number of typefaces, the size of the hero image and whether the design can show anything before the images arrive are decided in the design, and they usually dominate.",
+      "“Performance is the engineer's problem.” Engineers optimise what exists. The number of typefaces, the size of the hero image and whether the first screen shows words or an empty picture box while it loads are decided in the design, and they usually dominate.",
     example:
-      "Example (made up): a class page traced in the network tab. The document arrived in 300ms, then two stylesheets, three font files, eleven images and four scripts — twenty-one requests and 2.4 MB before the page was usable, taking eleven seconds on a throttled connection. The two design-owned findings: three typefaces were being loaded and only two were used, and the hero image was 1.8 MB and appeared above every piece of text, so nothing readable appeared until it arrived. Both were design decisions; neither needed an engineer to identify.",
+      "Example (made up): a class page traced in the network tab. The document arrived in 300ms, then two stylesheets, three font files, eleven images and four scripts — twenty-one requests and 2.4 MB before the page was usable, taking eleven seconds on a throttled connection. The two design-owned findings: three typefaces were being loaded and only two were used, and the hero image was 1.8 MB, so on the throttled connection it took most of the bandwidth for about nine seconds and delayed everything requested after it, including the search script. Both were design decisions; neither needed an engineer to identify.",
     freeToolPath:
       "Any Chromium browser's developer tools on a desktop computer, which are free and installed already. No account, extension, coding or performance service is required. Without developer tools (a tablet, a locked work computer), use the supplied made up trace in the source notes and say so.",
     outputs: [
@@ -390,7 +390,7 @@ export const module12: Lesson[] = [
           "Links perform actions or buttons navigate.",
           "Mostly correct with one or two substitutions.",
           "Correct throughout.",
-          "As adequate, and any control that looked like the wrong type was restyled rather than re-elemented.",
+          "As adequate, and every control’s element was chosen by what it does, with its look adjusted to match where needed.",
         ],
         remediation:
           "List every control and ask whether it goes somewhere or does something, then use the matching element.",
@@ -671,7 +671,7 @@ export const module12: Lesson[] = [
     misconception:
       "“Responsive means three layouts for phone, tablet and desktop.” Devices come in every size, and people resize windows, split screens and enlarge text. A layout that only works at three widths fails at the dozens in between.",
     example:
-      "Example (made up): the class page was built narrow first: title, key facts, action, then description, with the image below. Widening slowly revealed three genuine breakpoints — one where the key facts could sit in a row, one where the description could take a wider column, one where a side panel became viable. None matched a device name. Between the second and third, the card grid produced a single orphaned card, fixed with a flexible wrap rather than another breakpoint. At 320 pixels the schedule table caused horizontal scrolling of the page; it became records instead, matching the m08 decision.",
+      "Example (made up): the class page was built narrow first: title, key facts, action, then description, with the image below. Widening slowly revealed three genuine breakpoints — one where the key facts could sit in a row, one where the description could take a wider column, one where a side panel became viable. None matched a device name. Between the second and third, the card grid produced a single orphaned card, fixed by letting the last card grow (flex: 1 1 14rem) rather than with another breakpoint. At 320 pixels the schedule table, one class per row, caused horizontal scrolling of the page; it became records instead, matching the m08 decision.",
     freeToolPath:
       "A browser window you can drag, plus the device toolbar (F12, then Ctrl+Shift+M) for a phone-sized viewport. That is emulation in a desktop browser, not a phone test. Everything works in Notepad and a browser with the starter page-responsive.html.",
     outputs: [
@@ -870,11 +870,11 @@ export const module12: Lesson[] = [
       "Loading later is a legitimate technique for images the person has not scrolled to, and a mistake for the image at the top, which is often what the page is about. Decide per image rather than applying one rule, and remember that an image with no reserved space causes the layout jump you spent m08 and m09 preventing.",
     ],
     misconception:
-      "“The developer will optimise the images.” They can compress what you supply. Whether the page has a full-width photograph at all, and whether it appears above the first line of text, are design decisions that dominate the outcome.",
+      "“The developer will optimise the images.” They can compress what you supply. Whether the page has a full-width photograph at all, how large it is, and whether it fills the first screen are design decisions that dominate the outcome.",
     example:
       "Example (made up): eleven images were reviewed. The hero photograph was 1.8 MB at 3000 pixels wide, displayed at 720; re-exported at an appropriate size and format it became 96 KB. Six flat icons were replaced with hand-written SVG totalling under 4 KB, styled with the token colours rather than shipped in three colour variants. Four below-the-fold photographs were set to load later, with their space reserved so nothing jumped. Total page weight fell from 2.4 MB to 340 KB, and time to usable on a throttled connection fell from eleven seconds to three.",
     freeToolPath:
-      "Notepad for the SVG, following the assigned tutorial, the starter page-images.html, and any free image resizer or your operating system's own export for your own photographs. No hosted design account is required. Timing needs a page served over http(s); on a page opened from your own folder, record weight and label any timing as an estimate.",
+      "Notepad for the SVG, following the assigned tutorial, the starter page-images.html, and Squoosh (squoosh.app: free in the browser, no account, and the photo stays on your computer; checked 5 October 2026) or your operating system's own photo editor to resize photographs. The starter draws its pictures as SVG, so to practise resizing use one photo of your own: an object or a view, with no faces or personal details. No hosted design account is required. Timing needs a page served over http(s); on a page opened from your own folder, record weight and label any timing as an estimate.",
     outputs: [
       "Images served near their display size, with formats chosen deliberately",
       "One icon written by hand as SVG and styled with tokens",
@@ -895,7 +895,7 @@ export const module12: Lesson[] = [
         minutes: 30,
         title: "Resize and re-format",
         instructions: [
-          "Export each photograph near its display size, allowing for dense screens.",
+          "Export each photograph near its display size, allowing for dense screens; with the starter, resize one photo of your own in Squoosh (squoosh.app).",
           "Move flat graphics to a vector format.",
           "Re-measure the total page weight.",
         ],
@@ -1275,7 +1275,7 @@ export const module12: Lesson[] = [
     freeToolPath:
       "The starter data-states.html, which keeps its data inside the page and pretends to be a network with buttons. A page opened from your own folder (file://) usually cannot fetch a neighbouring data file, and browsers refuse in different ways; a real fetch needs the page served over http(s) by a local server or hosting, which is optional. No account, paid API or backend.",
     outputs: [
-      "A page that fetches and renders real data",
+      "A page that renders realistic data, awkward rows included",
       "Loading, content, empty and error branches built with your wording",
       "A slow-wait message and a timeout with a route out",
       "A list of specification errors the build revealed",
@@ -1488,7 +1488,7 @@ export const module12: Lesson[] = [
           "Read the assigned form sections and the accessibility requirements.",
           "Rewrite the starter's marked date message first, then save, reload and submit.",
           "Build or adapt the form with appropriate input types and required fields.",
-          "Test what the browser does before adding anything.",
+          "Test what the browser does before adding anything: switch the script off first (F12, Ctrl+Shift+P, Disable JavaScript, reload) or type // before form.noValidate = true; and save. Switch it back after.",
         ],
       },
       {
@@ -1654,8 +1654,8 @@ export const module12: Lesson[] = [
     title: "Making the page fast enough",
     objective:
       "Measure your page's weight and time to usable on a slow connection, make three changes, and report the before-and-after with the conditions stated.",
-    bringForward: "The trace from Lesson 1, and your page or a supplied starter opened from the course site.",
-    prerequisite: "A page served over http(s) to measure: your own if hosted, or a starter on the course site.",
+    bringForward: "The trace from Lesson 1, and either the supplied Northside baseline in this lesson's source notes or a page of your own that you can change.",
+    prerequisite: "The supplied baseline, worked on paper with every after-timing labelled an estimate, or a page of your own served over http(s) that you can change and measure.",
     why: "Part of the optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. Speed is an accessibility and inclusion question in a country where connections vary enormously. It is also the easiest quality to lose without noticing.",
     teach: [
       "Measure before changing; opinions about speed are unreliable.",
@@ -1675,7 +1675,7 @@ export const module12: Lesson[] = [
     example:
       "Example (made up): baseline after the image work of lesson 5, on a throttled profile with the cache disabled: 340 KB, eleven requests, about three seconds to usable. Three changes: the unused third typeface removed (78 KB, one request), the two remaining typefaces cut down to the characters used (about 24 KB saved), and the print stylesheet stopped from blocking the first paint. After: about 238 KB, ten requests, a little over two seconds to usable. The conditions were identical for both runs and stated with the figures. One further change was considered and rejected: deferring the script that renders the list would have made the page appear faster and be useful later, which is the wrong trade for this page.",
     freeToolPath:
-      "Your browser's network panel and throttling, on a page served over http(s); throttling may not apply to a page opened from your own folder, so label any timing taken that way as an estimate. No performance service, account or paid audit tool is required.",
+      "The supplied Northside baseline, with after-figures calculated from it and every after-timing labelled an estimate; or your browser's network panel and throttling on a page of your own served over http(s). Throttling may not apply to a page opened from your own folder, so label any timing taken that way as an estimate. No performance service, account or paid audit tool is required.",
     outputs: [
       "A baseline measurement with conditions recorded",
       "Three changes, each with the reason",
@@ -1687,7 +1687,7 @@ export const module12: Lesson[] = [
         minutes: 25,
         title: "Measure the baseline",
         instructions: [
-          "Load a page served over http(s) with the cache disabled and a slow profile.",
+          "Load a page served over http(s) with the cache disabled and a slow profile, or take the supplied baseline's figures.",
           "Record weight, request count and time to usable.",
           "Note which requests block the first render.",
         ],
@@ -1705,8 +1705,8 @@ export const module12: Lesson[] = [
         minutes: 25,
         title: "Measure again",
         instructions: [
-          "Repeat the load under identical conditions.",
-          "Record the same three figures.",
+          "Repeat the load under identical conditions, or on the supplied baseline subtract what your changes removed and estimate the timing.",
+          "Record the same three figures, labelling any estimate.",
           "Note anything that got worse.",
         ],
       },
@@ -1755,7 +1755,7 @@ export const module12: Lesson[] = [
       {
         criterion: "A baseline is measured with conditions recorded",
         evidence:
-          "Weight, request count and time to usable, with device, profile and cache state.",
+          "Weight, request count and time to usable, with device, profile and cache state, or the supplied baseline with its stated conditions.",
         levels: [
           "No baseline.",
           "Figures without conditions.",
@@ -1769,7 +1769,7 @@ export const module12: Lesson[] = [
       {
         criterion: "Three changes are made, each with a reason",
         evidence:
-          "Three specific changes traced to a measured cost.",
+          "Three specific changes traced to a measured cost, or to a row of the supplied baseline.",
         levels: [
           "Changes made without reference to measurement.",
           "Some changes justified.",
@@ -1783,11 +1783,11 @@ export const module12: Lesson[] = [
       {
         criterion: "The after measurement uses identical conditions",
         evidence:
-          "A second measurement with the same profile, cache state and content volume.",
+          "A second measurement with the same profile, cache state and content volume, or after-figures calculated from the supplied baseline with every timing labelled an estimate.",
         levels: [
           "Measured under different conditions.",
           "Conditions matched but not recorded.",
-          "Identical conditions, recorded.",
+          "Identical conditions recorded, or figures calculated from the supplied baseline with estimates labelled.",
           "As adequate, and anything that got worse is reported as well.",
         ],
         remediation:

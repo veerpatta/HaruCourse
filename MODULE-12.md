@@ -41,7 +41,7 @@ The reader demonstrates and guides the task before asking for “The stages of a
 
 Section: learn. Stable action: welcome.
 
-Trace one real page load from request to rendered content, name each stage, and identify the two stages your design decisions can affect.
+Trace one real page load from request to rendered content, name each stage, and identify two requests your design decisions created that you could remove or reduce.
 
 
 ### Idea 1: A page load is a sequence: request, response, parse, fetch mor…
@@ -85,7 +85,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Example (made up): a class page traced in the network tab. The document arrived in 300ms, then two stylesheets, three font files, eleven images and four scripts — twenty-one requests and 2.4 MB before the page was usable, taking eleven seconds on a throttled connection. The two design-owned findings: three typefaces were being loaded and only two were used, and the hero image was 1.8 MB and appeared above every piece of text, so nothing readable appeared until it arrived. Both were design decisions; neither needed an engineer to identify.
+- Example (made up): a class page traced in the network tab. The document arrived in 300ms, then two stylesheets, three font files, eleven images and four scripts — twenty-one requests and 2.4 MB before the page was usable, taking eleven seconds on a throttled connection. The two design-owned findings: three typefaces were being loaded and only two were used, and the hero image was 1.8 MB, so on the throttled connection it took most of the bandwidth for about nine seconds and delayed everything requested after it, including the search script. Both were design decisions; neither needed an engineer to identify.
 
 
 ### Choose where you will do the work
@@ -109,7 +109,7 @@ Use your own material, or the labelled practice material below. Keep its source 
 - Request 7: the header photograph, 1,800 kB, a 3000-pixel-wide file shown 720 pixels wide above all the text.
 - Requests 8 to 11: four tool photographs below the first screen, 50 kB each (200 kB). Requests 12 to 17: six small icons as separate image files, 2 kB each (12 kB).
 - Requests 18 to 21: a date-picker script library (130 kB) and three tracking scripts (60 kB together).
-- Same page on the Slow 4G profile: first readable text at about 9 seconds, after the header photograph arrived; the search box worked at about 11 seconds; the list jumped down when the tool photographs arrived, because no space was reserved.
+- Same page on the Slow 4G profile: first readable text at about 4 seconds; the header photograph finished at about 9 seconds and, while it downloaded, held up the scripts, so the search box worked at about 11 seconds; the list jumped down when the tool photographs arrived, because no space was reserved.
 
 
 ### Read the sequence
@@ -155,7 +155,7 @@ One real page load traced, with the number of requests, the total bytes, the tim
 
 **Start here:** Press F12, click the Network tab, tick Disable cache, then reload the page with developer tools still open. No developer tools? Open the supplied trace.
 
-**Enough:** Your request count is more than a handful, which means you measured it as a stranger would meet it.
+**Enough:** Disable cache was ticked when you reloaded (the supplied trace says it was), and the request list includes every image you can see on the page.
 
 **Developer tools:** A panel built into your browser. F12 opens it on Windows, or right-click the page and choose Inspect. It is free, already installed, and needs no account.
 
@@ -349,7 +349,7 @@ Section: practice-plan. Stable action: step-4-sort-2.
 
 Six requests from a made up trace of a tool-library page. For each one, decide whose decision put it there.
 
-A photograph at the top of the page, 1.8 megabytes, sitting above every piece of text.
+A photograph at the top of the page, 1.8 megabytes, filling a phone’s first screen.
 
 - a design decision
 - an engineering decision
@@ -358,9 +358,9 @@ A photograph at the top of the page, 1.8 megabytes, sitting above every piece of
 <details>
 <summary>After your attempt</summary>
 
-a design decision — Its size can be reduced by engineering, and its position above all the text is why nothing readable appears until it arrives. The position is a design decision and it dominates.
+a design decision — Engineering can compress it, but choosing a 1.8 megabyte photograph for the first screen was a design decision. On a slow connection it takes most of the bandwidth for several seconds, and the first screen is an empty box until it arrives.
 
-an engineering decision — Compressing it is theirs. Putting it in front of the words is yours.
+an engineering decision — Compressing it is theirs. Choosing to have it, at that size, filling the first screen, is yours.
 
 the content itself — A decorative header photograph is not what anybody came for.
 
@@ -427,7 +427,7 @@ Section: practice-plan. Stable action: step-4-sort-5.
 
 Six requests from a made up trace of a tool-library page. For each one, decide whose decision put it there.
 
-An icon font, 96 kilobytes, from which the page uses six icons.
+A decorative illustration, 140 kilobytes, placed behind the page title in the design file.
 
 - a design decision
 - an engineering decision
@@ -436,11 +436,11 @@ An icon font, 96 kilobytes, from which the page uses six icons.
 <details>
 <summary>After your attempt</summary>
 
-a design decision — Six icons do not need a set of four hundred. Which icons the design uses, and whether they come as a set, is yours.
+a design decision — Somebody placed it in the design file, and nobody would miss it. Removing it, or replacing it with plain colour, is a design change.
 
-an engineering decision — They may well suggest a better delivery. The number of icons the design depends on is decided before that.
+an engineering decision — Engineering can compress it. Whether the page has it at all was decided in the design file.
 
-the content itself — Icons decorate and label the content; they are not it.
+the content itself — It decorates the title; it tells the reader nothing.
 
 Now mark your own request list the same way, and take your two findings from the design column.
 
@@ -598,7 +598,7 @@ The two findings written as design changes, the evidence saved, and the repair t
 
 **Enough:** Neither finding needs anybody else in order to be started.
 
-**Written as a design change:** Something you can do in your own file: remove the third typeface, move the photograph below the first paragraph, use six icons rather than a set.
+**Written as a design change:** Something you can do in your own file: remove the third typeface, re-export the photograph at the width it is shown, drop a decoration nobody would miss.
 
 **Repair:** The one change a Check question asks you to make. Make it in the step it belongs to, then record here that you made it.
 
@@ -613,11 +613,11 @@ Made-up example. Writing up two findings from a tool-library trace, and writing 
 
 **What happened to them:** They went onto an engineering list behind fourteen other things and stayed there. Nobody disagreed with them; nobody had a reason to do them this month.
 
-**What I actually had:** Three typefaces loading and two in use. A 1.8 megabyte photograph sitting above every word on the page.
+**What I actually had:** Three typefaces loading and two in use. A 1.8 megabyte header photograph, 3000 pixels wide, shown at 720.
 
-**What those look like as design changes:** “Remove the third typeface from the design; it is used once, on the home page quotation.” “Move the header photograph below the first paragraph so the text can be read while it loads.”
+**What those look like as design changes:** “Remove the third typeface from the design; it is used once, on the home page quotation.” “Re-export the header photograph at its 720-pixel display width, so it stops holding the slow connection for nine seconds.”
 
-**What changed:** Both were things I could do in my own file that afternoon. The first needed nobody’s permission; the second needed one conversation about the home page.
+**What changed:** Both were things I could do in my own file that afternoon. The re-export needed nobody’s permission; removing the typeface needed one conversation about the home page.
 
 **Wrong turn:** The wrong turn is translating your own findings into engineering language, because it sounds more credible. What it does is hand away the two changes you were in a position to make.
 
@@ -672,7 +672,7 @@ Section: practice. Stable action: write-transfer-decision.
 
 Write your decision first, then the reason it fits this new case. Compare with the example answers only after writing.
 
-**New case.** Made-up case: a community choir’s concert page loads 14 requests. A 2.1 MB photograph of the choir sits above the date and ticket link, four typeface files load though the page uses two, and a video player script of 300 kB is used only far down the page. On a slow connection nothing readable appears for eight seconds.
+**New case.** Made-up case: a community choir’s concert page loads 14 requests. A 2.1 MB photograph of the choir fills the first screen above the date and ticket link, four typeface files load though the page uses two, and a video player script of 300 kB is used only far down the page. On a slow phone connection the first screen is an empty picture box for eight seconds, with the date and ticket link below it.
 
 **Task:** Name the two design-owned changes you would make first, and explain why each one helps the person waiting, not only the total weight.
 
@@ -680,7 +680,7 @@ Write your decision first, then the reason it fits this new case. Compare with t
 <summary>Compare after writing</summary>
 
 - Weak: Says the engineers should optimise or compress everything, or lists every request without saying which ones a design decision created.
-- Adequate: Picks the photograph above the date (shrink it or move it below the text) and the two unused typefaces, and links each to what appears first or how much is requested.
+- Adequate: Picks the photograph (shrink it, or move it below the date and ticket link so the first screen shows words) and the two unused typefaces, and links each to what the first screen shows or how much is requested.
 - Strong: As adequate, and notes the video script may be engineering-owned, or that the timings come from one throttled run and should be re-measured after the change.
 
 </details>
@@ -712,7 +712,7 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: What happens between a tap and a page
-What I am trying to do: Trace one real page load from request to rendered content, name each stage, and identify the two stages your design decisions can affect.
+What I am trying to do: Trace one real page load from request to rendered content, name each stage, and identify two requests your design decisions created that you could remove or reduce.
 
 Key idea or terms:
 Request: Your browser asking a server for one file. A page is never one request; it is one request that leads to many more.
@@ -820,7 +820,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 - When someone opens a page, the browser asks a server for a document, receives HTML, and starts reading it. Every stylesheet, font, image and script referenced in that HTML becomes another request, and each one takes time that depends on its size, the connection and how far away the server is. This is why a design with four typefaces and a hero video is a performance decision made at the moment of designing, long before anyone writes code.
 - The stages fail differently. A slow stylesheet delays the first paint, so the person sees nothing. A slow font can leave text invisible or shifting when it swaps. A slow script can leave a page that looks finished and does not respond, which is the most confusing failure of all because the person taps and nothing happens.
 - The network tab in your browser shows the real sequence: what was requested, in what order, how big it was and how long it took. Reading it once for a real page is more instructive than any amount of general advice about performance, and it costs ten minutes.
-- Two stages are yours. How much is requested — the number and weight of images, fonts and scripts — is a design decision. And what appears first is a structural decision, because the browser renders what it has: a page whose text arrives before its images shows something useful immediately, and one that waits for everything shows nothing.
+- Two things are yours. How much is requested — the number and weight of images, fonts and scripts — is a design decision, and every file shares the same connection, so one very large file slows everything downloading alongside or after it. And what the first screen shows is a structural decision. The browser draws the words once the HTML, the stylesheets, any scripts at the top of the page and the fonts allow; it does not wait for the pictures. A first screen of text is useful straight away, while a first screen filled by a large photograph shows an empty box until the picture arrives.
 
 [MDN: core learning modules](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core).
 
@@ -1585,7 +1585,7 @@ Adequate evidence: Every action a button, every navigation a link, with no style
 
 2 — Correct throughout.
 
-3 — As adequate, and any control that looked like the wrong type was restyled rather than re-elemented.
+3 — As adequate, and every control’s element was chosen by what it does, with its look adjusted to match where needed.
 
 Repair: List every control and ask whether it goes somewhere or does something, then use the matching element. Recheck: The control list.
 
@@ -1968,7 +1968,7 @@ Section: practice-plan. Stable action: step-3-sort-5.
 
 Six surprises from a made up stylesheet. For each one, decide which of the three ideas explains it.
 
-A button inside a dark panel keeps the panel’s pale text colour even though the button has a white background.
+A note paragraph inside a dark panel keeps the panel’s pale text colour, though its own rule sets only a white background.
 
 - the box model
 - the cascade
@@ -1979,9 +1979,9 @@ A button inside a dark panel keeps the panel’s pale text colour even though th
 
 the box model — Nothing about the box is wrong; the colours are.
 
-the cascade — No rule is competing for the button’s colour. Nothing set one.
+the cascade — No rule is competing for the note’s colour. Nothing set one.
 
-inheritance — The pale colour is arriving from the panel, because nothing overrode it on the button. Inherited values are easy to miss precisely because no rule mentions them.
+inheritance — The pale colour is arriving from the panel, because nothing overrode it on the note. Inherited values are easy to miss precisely because no rule mentions them.
 
 Now take your own surprise, guess which of the three it is, and check your guess in the inspector before you change anything.
 
@@ -2075,7 +2075,7 @@ Made-up example. Explaining three rules from a tool-library stylesheet, and desc
 
 **The question I had been avoiding:** Why does this rule win? The card padding is set in two places, and I did not know which one was in effect until I inspected it.
 
-**What the explanation became:** “The card padding comes from the rule on the card class, not the one on the container, because the class is more particular. Deleting the class rule would give every card the container’s larger padding.”
+**What the explanation became:** “The card padding comes from the .card rule, not from the li rule in the list styles, because a class selector is more particular than an element selector. Deleting the .card rule would give every card the li rule’s larger padding.”
 
 **How I chose the other two:** The ones I was least sure about rather than the ones I was proudest of. Both turned out to be doing something slightly different from what I assumed.
 
@@ -2497,7 +2497,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Example (made up): the class page was built narrow first: title, key facts, action, then description, with the image below. Widening slowly revealed three genuine breakpoints — one where the key facts could sit in a row, one where the description could take a wider column, one where a side panel became viable. None matched a device name. Between the second and third, the card grid produced a single orphaned card, fixed with a flexible wrap rather than another breakpoint. At 320 pixels the schedule table caused horizontal scrolling of the page; it became records instead, matching the m08 decision.
+- Example (made up): the class page was built narrow first: title, key facts, action, then description, with the image below. Widening slowly revealed three genuine breakpoints — one where the key facts could sit in a row, one where the description could take a wider column, one where a side panel became viable. None matched a device name. Between the second and third, the card grid produced a single orphaned card, fixed by letting the last card grow (flex: 1 1 14rem) rather than with another breakpoint. At 320 pixels the schedule table, one class per row, caused horizontal scrolling of the page; it became records instead, matching the m08 decision.
 
 
 ### Choose where you will do the work
@@ -2692,7 +2692,7 @@ One slow pass across the whole range, with every failure between change points r
 
 **Sweeping:** Dragging from narrow to wide in one continuous pass. It is the only way to see the widths between your change points, which is where most failures are.
 
-**Orphan:** One item left alone on a row because the grid divides badly at that width. It is a wrapping problem, not a reason for another change point.
+**Orphan:** One item left alone on a row because the count does not divide evenly at that width. It happens at many widths, so let the last item grow to fill its row, or accept it; it is not a reason for another change point.
 
 
 ### Every overlap, clip, orphan and scroll you saw between your change points
@@ -2740,7 +2740,7 @@ The layout tested with your longest real content and at about 200 per cent text,
 
 Section: practice-plan. Stable action: step-4-sort-1.
 
-Six failures from a made up sweep of a tool-library page. For each one, decide what the right repair is.
+Six failures from a made up sweep of a tool-library page. For each one, decide what the right repair is. (A table people must compare across many columns can instead scroll in its own box.)
 
 At about 840 pixels the card grid leaves one card alone on the last row.
 
@@ -2751,9 +2751,9 @@ At about 840 pixels the card grid leaves one card alone on the last row.
 <details>
 <summary>After your attempt</summary>
 
-a flexible rule — Letting the cards wrap and share the space handles every width, including the ones you did not test.
+a flexible rule — A wrapping rule that lets the last card grow (flex: 1 1 14rem) stretches it across its row at every width, including the ones you did not test. With grid auto-fill it keeps its column width, which you may simply accept.
 
-a new change point — It fixes 840 and leaves 870, 910 and everything else. Orphans appear wherever the division happens to be awkward.
+a new change point — It fixes 840 and leaves 870, 910 and everything else. Orphans appear wherever the count happens not to divide evenly.
 
 change the content or the element — The cards are fine. It is the arrangement that is rigid.
 
@@ -2766,9 +2766,9 @@ Now go through your own sweep findings and mark each one with its repair before 
 
 Section: practice-plan. Stable action: step-4-sort-2.
 
-Six failures from a made up sweep of a tool-library page. For each one, decide what the right repair is.
+Six failures from a made up sweep of a tool-library page. For each one, decide what the right repair is. (A table people must compare across many columns can instead scroll in its own box.)
 
-At 320 pixels the schedule table forces the whole page to scroll sideways.
+At 320 pixels a three-column schedule table, each row one class with three facts, forces the whole page to scroll sideways.
 
 - a flexible rule
 - a new change point
@@ -2777,11 +2777,11 @@ At 320 pixels the schedule table forces the whole page to scroll sideways.
 <details>
 <summary>After your attempt</summary>
 
-a flexible rule — A table with five columns of real content has a minimum width, and no amount of flexibility gets it under 320.
+a flexible rule — A scroll box would stop the page scrolling, and suits a table people compare across columns. Here each row is one class and nobody compares down the columns, so a box to drag sideways is the harder thing to read.
 
 a new change point — You will need one to make the change, and the change itself is the answer rather than the breakpoint.
 
-change the content or the element — It becomes a set of records, one per row, which is the decision your Module 8 work already made. The element changes, not just its width.
+change the content or the element — Each row is one class with three facts, so it becomes a set of records, one per class, which is the decision your Module 8 work already made. The element changes, not just its width.
 
 Now go through your own sweep findings and mark each one with its repair before you change anything.
 
@@ -2792,7 +2792,7 @@ Now go through your own sweep findings and mark each one with its repair before 
 
 Section: practice-plan. Stable action: step-4-sort-3.
 
-Six failures from a made up sweep of a tool-library page. For each one, decide what the right repair is.
+Six failures from a made up sweep of a tool-library page. For each one, decide what the right repair is. (A table people must compare across many columns can instead scroll in its own box.)
 
 At about 520 pixels the three key facts have room to sit in a row instead of stacking.
 
@@ -2818,7 +2818,7 @@ Now go through your own sweep findings and mark each one with its repair before 
 
 Section: practice-plan. Stable action: step-4-sort-4.
 
-Six failures from a made up sweep of a tool-library page. For each one, decide what the right repair is.
+Six failures from a made up sweep of a tool-library page. For each one, decide what the right repair is. (A table people must compare across many columns can instead scroll in its own box.)
 
 A tool name of one long unbroken word pushes the card wider than the screen.
 
@@ -2844,7 +2844,7 @@ Now go through your own sweep findings and mark each one with its repair before 
 
 Section: practice-plan. Stable action: step-4-sort-5.
 
-Six failures from a made up sweep of a tool-library page. For each one, decide what the right repair is.
+Six failures from a made up sweep of a tool-library page. For each one, decide what the right repair is. (A table people must compare across many columns can instead scroll in its own box.)
 
 At 200 per cent text the header wraps over the logo, because the header has a fixed height.
 
@@ -2870,7 +2870,7 @@ Now go through your own sweep findings and mark each one with its repair before 
 
 Section: practice-plan. Stable action: step-4-sort-6.
 
-Six failures from a made up sweep of a tool-library page. For each one, decide what the right repair is.
+Six failures from a made up sweep of a tool-library page. For each one, decide what the right repair is. (A table people must compare across many columns can instead scroll in its own box.)
 
 At about 1,000 pixels there is room for a side panel without squeezing the description.
 
@@ -2963,18 +2963,18 @@ Choose the reason you believe, read the feedback, then improve the relevant answ
 
 At one width the card grid leaves a single orphaned card on its last row. Should you add a breakpoint?
 
+- Use a flexible rule that lets the last card grow, or accept it; a breakpoint fixes one width.
 - A breakpoint is right here, because the layout genuinely needs to change at that width.
 - A breakpoint helps, as long as the cards are also made narrower at that width.
-- Use a flexible wrapping rule: it handles every width, including untested ones.
 
 <details>
 <summary>After your attempt</summary>
 
+Use a flexible rule that lets the last card grow, or accept it; a breakpoint fixes one width. — No wrapping rule stops a card being left alone when the count does not divide evenly. With flex-wrap: wrap and flex: 1 1 14rem the lone card stretches to fill its row; grid auto-fill keeps it at column width. Either holds at every width, which a change point cannot.
+
 A breakpoint is right here, because the layout genuinely needs to change at that width. — The arrangement does not need to change; the wrapping needs to be less rigid. A change point is for a genuine change of arrangement.
 
 A breakpoint helps, as long as the cards are also made narrower at that width. — That moves the orphan to a different width rather than removing it.
-
-Use a flexible wrapping rule: it handles every width, including untested ones. — Orphans appear wherever the division happens to be awkward, which is many widths. A change point fixes only the width you were looking at.
 
 Improve: Move any orphan fix in step 3 from a change point to a flexible rule, and record the change in step 5.
 
@@ -3081,7 +3081,7 @@ Write your decision first, then the reason it fits this new case. Compare with t
 <summary>Compare after writing</summary>
 
 - Weak: Adds a breakpoint for every problem or shrinks the text at large sizes; treats the three device widths as enough.
-- Adequate: Flexible wrapping for the orphan, the map in its own scrolling box or made flexible, and the banner allowed to grow; none needs a device-named breakpoint.
+- Adequate: Lets the lone card grow to fill its row (or accepts it), puts the map in its own scrolling box or makes it flexible, and lets the banner grow; none needs a device-named breakpoint.
 - Strong: As adequate, and says a change point is earned only by a real change of arrangement, then plans a slow sweep to find what else fails between widths.
 
 </details>
@@ -3383,11 +3383,11 @@ Section: practice-plan. Stable action: step-2-brief.
 
 Photographs re-exported near their display size, flat graphics moved to vector, and the new total weight measured.
 
-- Export each photograph near its display size, allowing for dense screens.
+- Export each photograph near its display size, allowing for dense screens; with the starter, resize one photo of your own in Squoosh (squoosh.app).
 - Move flat graphics to a vector format.
 - Re-measure the total page weight.
 
-**Start here:** Take the largest image above the fold and re-export it at the width it is actually displayed.
+**Start here:** Take the largest image above the fold and re-export it at the width it is actually displayed. Working from the starter, which has no photograph files? Resize one photo of your own in Squoosh, as the first field’s hint describes.
 
 **Enough:** You measured the total again rather than assuming the saving.
 
@@ -3406,7 +3406,7 @@ Made-up example. Reducing the images on a tool-library page, and leaving the one
 
 **What the timing did:** Time to usable on the slow profile went from about 11 seconds to about 10. About 360 kilobytes saved and almost nothing changed.
 
-**Why:** The header photograph had only gone from 1.8 megabytes to 1.5, and it still sat above every word on the page. Nothing readable could appear until it arrived, so the other ten images were never the delay.
+**Why:** The header photograph had only gone from 1.8 megabytes to 1.5. It still took most of the slow connection for several seconds and delayed everything requested after it, so the other ten images were never the delay.
 
 **What actually worked:** Re-exporting that one photograph at 720 pixels rather than 3000, which took it to 96 kilobytes. Time to usable fell to about 3 seconds.
 
@@ -3423,22 +3423,22 @@ Made-up example. Reducing the images on a tool-library page, and leaving the one
 
 Section: practice-plan. Stable action: write-resize-done.
 
-Write your answer for “What you exported at what size, and the new file sizes”. Use the task instructions below to decide what to include.
+No photograph on your page? The starter draws its pictures as SVG, so use one photo of your own: an object or a view, with no faces or personal details. Open squoosh.app in your browser (free, no account; the photo stays on your computer), drop the photo in, turn on Resize, set the width to the width it will be shown at (up to twice that for dense screens), and download it. Note both file sizes. Working only from the supplied audit? Estimate the new size from the pixel ratio (half the width is roughly a quarter of the bytes) and label it an estimate.
 
 **Answer:** What you exported at what size, and the new file sizes
 
-
+No photograph on your page? The starter draws its pictures as SVG, so use one photo of your own: an object or a view, with no faces or personal details. Open squoosh.app in your browser (free, no account; the photo stays on your computer), drop the photo in, turn on Resize, set the width to the width it will be shown at (up to twice that for dense screens), and download it. Note both file sizes. Working only from the supplied audit? Estimate the new size from the pixel ratio (half the width is roughly a quarter of the bytes) and label it an estimate.
 
 
 ### The total page weight after resizing
 
 Section: practice-plan. Stable action: write-weight-after.
 
-Write your answer for “The total page weight after resizing”. Use the task instructions below to decide what to include.
+Add up the new file sizes. Totals built from estimates are estimates; say so beside the figure.
 
 **Answer:** The total page weight after resizing
 
-
+Add up the new file sizes. Totals built from estimates are estimates; say so beside the figure.
 
 
 ### Write an SVG by hand
@@ -3472,7 +3472,7 @@ Made-up example. Producing an icon as SVG for a tool-library page, and never ope
 
 **The other thing I found:** The colour was written into the file as a hex value. Three colour variants existed as three separate files, which is why the icon set had grown to nineteen files.
 
-**What writing it by hand gave me:** Under half a kilobyte, one file, and the colour left unset so it takes the colour of the text around it. One icon, three appearances, no extra files.
+**What writing it by hand gave me:** Under half a kilobyte, written inline in the page, with its fill or stroke set to currentColor so it takes the colour of the text around it. One icon, three appearances, no extra files.
 
 **What I kept from the tool:** The drawing. I opened the exported file, found the two lines that were the shape, and threw the rest away.
 
@@ -3539,22 +3539,22 @@ A loading decision for every image, reserved space so nothing jumps, and your Mo
 
 Section: practice-plan. Stable action: step-4-sort-1.
 
-Six images from a made up tool-library page. For each one, decide how it should load.
+Six images from a made up tool-library page. For each one, decide how it should load or be delivered.
 
 The header photograph, at the very top, above all the text.
 
 - must load immediately
 - can load later
-- should not be an image at all
+- should be SVG or CSS, not a photograph file
 
 <details>
 <summary>After your attempt</summary>
 
-must load immediately — It is the first thing on screen, so delaying it leaves an empty page. The better question is whether it should be above the text at all.
+must load immediately — It is the first thing on screen, so delaying it leaves an empty box where the person is looking. The better question is whether it needs to be this large, or to fill the first screen at all.
 
 can load later — Later means after the person has scrolled to it, and they are looking at it now.
 
-should not be an image at all — It is a photograph, which nothing else can be.
+should be SVG or CSS, not a photograph file — It is a photograph of a real object, which SVG and CSS cannot replace.
 
 Now make the decision for each of your own images, and write the reason beside it.
 
@@ -3565,13 +3565,13 @@ Now make the decision for each of your own images, and write the reason beside i
 
 Section: practice-plan. Stable action: step-4-sort-2.
 
-Six images from a made up tool-library page. For each one, decide how it should load.
+Six images from a made up tool-library page. For each one, decide how it should load or be delivered.
 
 The eighth tool photograph in a list, three screenfuls down.
 
 - must load immediately
 - can load later
-- should not be an image at all
+- should be SVG or CSS, not a photograph file
 
 <details>
 <summary>After your attempt</summary>
@@ -3580,7 +3580,7 @@ must load immediately — Nobody has seen it yet, and loading it now delays what
 
 can load later — Below the fold and in a long list is the clearest case for waiting. Reserve its space so the list does not jump.
 
-should not be an image at all — A photograph of the actual tool is the point of the listing.
+should be SVG or CSS, not a photograph file — A photograph of the actual tool is the point of the listing.
 
 Now make the decision for each of your own images, and write the reason beside it.
 
@@ -3591,13 +3591,13 @@ Now make the decision for each of your own images, and write the reason beside i
 
 Section: practice-plan. Stable action: step-4-sort-3.
 
-Six images from a made up tool-library page. For each one, decide how it should load.
+Six images from a made up tool-library page. For each one, decide how it should load or be delivered.
 
 A filter icon shipped as a 12-kilobyte photograph file, displayed at 20 pixels.
 
 - must load immediately
 - can load later
-- should not be an image at all
+- should be SVG or CSS, not a photograph file
 
 <details>
 <summary>After your attempt</summary>
@@ -3606,7 +3606,7 @@ must load immediately — Loading it sooner does not fix that it is the wrong ki
 
 can load later — It is in the toolbar at the top, so it is needed at once.
 
-should not be an image at all — It is a flat graphic. Written as SVG it is a fraction of the size, sharp at any scale, and can take its colour from a token.
+should be SVG or CSS, not a photograph file — It is a flat graphic. Written as SVG it is a fraction of the size, sharp at any scale, and can take its colour from a token.
 
 Now make the decision for each of your own images, and write the reason beside it.
 
@@ -3617,22 +3617,22 @@ Now make the decision for each of your own images, and write the reason beside i
 
 Section: practice-plan. Stable action: step-4-sort-4.
 
-Six images from a made up tool-library page. For each one, decide how it should load.
+Six images from a made up tool-library page. For each one, decide how it should load or be delivered.
 
-The library logo in the header, a flat two-colour mark.
+The library logo in the header, a flat two-colour mark currently saved as a 60-kilobyte photograph file.
 
 - must load immediately
 - can load later
-- should not be an image at all
+- should be SVG or CSS, not a photograph file
 
 <details>
 <summary>After your attempt</summary>
 
-must load immediately — It is at the top, so if it stays a photograph file it does have to load at once.
+must load immediately — It does appear at once, and as a photograph file it is far heavier than it needs to be. Fix the file first; a small SVG arrives with the page.
 
 can load later — It is on screen from the first moment.
 
-should not be an image at all — A two-colour mark is exactly what SVG is for, and as SVG it is usually a small fraction of the photograph file’s size.
+should be SVG or CSS, not a photograph file — A two-colour mark is exactly what SVG is for, and as SVG it is usually a small fraction of the photograph file’s size. It still needs its text alternative.
 
 Now make the decision for each of your own images, and write the reason beside it.
 
@@ -3643,22 +3643,22 @@ Now make the decision for each of your own images, and write the reason beside i
 
 Section: practice-plan. Stable action: step-4-sort-5.
 
-Six images from a made up tool-library page. For each one, decide how it should load.
+Six images from a made up tool-library page. For each one, decide how it should load or be delivered.
 
-A chart of availability this week, halfway down the page.
+A chart of availability this week, already saved as a small SVG file, halfway down the page.
 
 - must load immediately
 - can load later
-- should not be an image at all
+- should be SVG or CSS, not a photograph file
 
 <details>
 <summary>After your attempt</summary>
 
 must load immediately — It sits below the first screenful, so waiting costs nobody anything.
 
-can load later — Below the fold, with its space reserved. If it were drawn as SVG it would be small enough that the question hardly matters.
+can load later — Below the fold, with its space reserved. As a small SVG it hardly matters, and waiting still costs nobody anything.
 
-should not be an image at all — A chart is a reasonable candidate for SVG, and the loading decision is the one this step is asking for.
+should be SVG or CSS, not a photograph file — It already is one. The question left is when it loads, which is what this step asks.
 
 Now make the decision for each of your own images, and write the reason beside it.
 
@@ -3669,13 +3669,13 @@ Now make the decision for each of your own images, and write the reason beside i
 
 Section: practice-plan. Stable action: step-4-sort-6.
 
-Six images from a made up tool-library page. For each one, decide how it should load.
+Six images from a made up tool-library page. For each one, decide how it should load or be delivered.
 
 A decorative paper texture behind the whole page, 240 kilobytes.
 
 - must load immediately
 - can load later
-- should not be an image at all
+- should be SVG or CSS, not a photograph file
 
 <details>
 <summary>After your attempt</summary>
@@ -3684,7 +3684,7 @@ must load immediately — It is behind everything, and nothing about the page de
 
 can load later — It covers the whole page, so it cannot easily wait for a scroll.
 
-should not be an image at all — 240 kilobytes for decoration nobody would miss. Either remove it or replace it with something the browser can draw itself.
+should be SVG or CSS, not a photograph file — 240 kilobytes for decoration nobody would miss. Remove it, or let CSS draw a plain colour or a gradient instead.
 
 Now make the decision for each of your own images, and write the reason beside it.
 
@@ -4831,14 +4831,14 @@ Bring: A text editor, a browser, the starter data-states.html and your state spe
 
 Starting route: Recommended route: Optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. To practise the loading, content, empty and error states, download data-states.html (on the course site, the address ending /starters/m12/data-states.html) and save it in Documents\HaruCourse\Practice\m12-l07-v1. If Windows saved it as data-states.html.txt, rename it to end in .html. Open it in Notepad (right-click, Open with, Notepad) and in your browser (double-click). Make the one change marked “Change this one thing first”, save with Ctrl+S, reload with F5, then record what you did and saw here. Alternative route: If the page is blank or did not change: check the name ends in .html (File Explorer, View, Show, File name extensions), press Ctrl+Z in Notepad and save to undo your last change, or download a fresh copy. You may use your own page from earlier lessons instead; note its folder in Your work. The files stay on your computer; nothing is uploaded.
 
-- A page that fetches and renders real data
+- A page that renders realistic data, awkward rows included
 - Loading, content, empty and error branches built with your wording
 - A slow-wait message and a timeout with a route out
 - A list of specification errors the build revealed
 
 ### Start here: in everyday words
 
-Web foundations explain how a browser turns structure, style and behavior into a page that must work at different sizes. In this lesson, your first small result is: Real data arriving in your page and the content branch rendering it, with any trouble and its recovery written down.
+Web foundations explain how a browser turns structure, style and behavior into a page that must work at different sizes. In this lesson, your first small result is: Realistic rows you typed into the starter (or real data fetched over http(s)), rendered by the content branch, with any trouble and its recovery written down.
 
 **Words you will use**
 
@@ -4914,7 +4914,7 @@ Recommended route: Optional technical extension: core learners can rely on the s
 
 Section: practice-plan. Stable action: step-1-brief.
 
-Real data arriving in your page and the content branch rendering it, with any trouble and its recovery written down.
+Realistic rows you typed into the starter (or real data fetched over http(s)), rendered by the content branch, with any trouble and its recovery written down.
 
 - Read the assigned sections on fetching data.
 - Open the starter, which keeps its data inside the page.
@@ -4923,7 +4923,7 @@ Real data arriving in your page and the content branch rendering it, with any tr
 
 **Start here:** Rewrite the starter’s marked empty message, save, reload and press the empty button. Then put one realistic row of your own into its data.
 
-**Enough:** Real data appears on your page, even if it appears badly.
+**Enough:** Realistic rows you typed into the starter, including at least one missing field, one very long name and one odd date, are rendered by the content branch, even if badly.
 
 **Fetching:** Asking for data after the page has already loaded, and doing something with it when it comes back. The gap between asking and receiving is what the next three steps are about.
 
@@ -5287,9 +5287,9 @@ Each built state compared against your Module 8 specification, with every wrong 
 
 **Start here:** Put your Module 8 sheet beside the built page and go state by state, in order.
 
-**Enough:** You found at least one thing the specification got wrong, because almost every specification does.
+**Enough:** Every built state is compared with the specification and each mismatch listed, or you say what you compared and found none.
 
-**Specification error:** Something you wrote that turned out to be impossible, wrong or missing once it was built. Finding one is what this step is for.
+**Specification error:** Something you wrote that turned out to be impossible, wrong or missing once it was built. Looking for them is what this step is for; finding none is a result too, if you say what you compared.
 
 
 ### Every place the Module 8 specification was wrong or incomplete
@@ -5709,9 +5709,9 @@ A form built from appropriate input types and required fields, with what the bro
 - Read the assigned form sections and the accessibility requirements.
 - Rewrite the starter's marked date message first, then save, reload and submit.
 - Build or adapt the form with appropriate input types and required fields.
-- Test what the browser does before adding anything.
+- Test what the browser does before adding anything: switch the script off first (F12, Ctrl+Shift+P, Disable JavaScript, reload) or type // before form.noValidate = true; and save. Switch it back after.
 
-**Start here:** Rewrite the starter’s marked date message, save, reload and submit with a weekday date. Then submit it empty and watch.
+**Start here:** Rewrite the starter’s marked date message, save, reload and submit with a weekday date. Then switch the script off, as the second field’s hint shows, submit it empty and watch what the browser does on its own.
 
 **Enough:** You have written down what the browser did before you added anything.
 
@@ -5758,11 +5758,11 @@ The type changes the keyboard on a phone, the validation and the error message, 
 
 Section: practice-plan. Stable action: write-native-observed.
 
-Try it before adding anything. Most people never find out what they were about to rebuild.
+Try it before adding anything. The starter’s script replaces the browser’s own checks, so switch it off first: press F12, then Ctrl+Shift+P, type Disable JavaScript, press Enter and reload with F5 (or type // before the line form.noValidate = true; in Notepad and save). Submit with mistakes, record what happens, then switch it back.
 
 **Answer:** What the browser did on its own when you submitted with mistakes in it
 
-Try it before adding anything. Most people never find out what they were about to rebuild.
+Try it before adding anything. The starter’s script replaces the browser’s own checks, so switch it off first: press F12, then Ctrl+Shift+P, type Disable JavaScript, press Enter and reload with F5 (or type // before the line form.noValidate = true; in Notepad and save). Submit with mistakes, record what happens, then switch it back.
 
 
 ### Add only what is missing
@@ -6415,9 +6415,9 @@ Stable ID: m12-l09-v1. Core.
 
 Part of the optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. Speed is an accessibility and inclusion question in a country where connections vary enormously. It is also the easiest quality to lose without noticing.
 
-Bring: A page served over http(s) to measure: your own if hosted, or a starter on the course site.
+Bring: The supplied baseline, worked on paper with every after-timing labelled an estimate, or a page of your own served over http(s) that you can change and measure.
 
-Starting route: Recommended route: Optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. To practise a measured before-and-after, download page-images.html (on the course site, the address ending /starters/m12/page-images.html) and save it in Documents\HaruCourse\Practice\m12-l09-v1. If Windows saved it as page-images.html.txt, rename it to end in .html. Open it in Notepad (right-click, Open with, Notepad) and in your browser (double-click). Make the one change marked “Change this one thing first”, save with Ctrl+S, reload with F5, then record what you did and saw here. Alternative route: If the page is blank or did not change: check the name ends in .html (File Explorer, View, Show, File name extensions), press Ctrl+Z in Notepad and save to undo your last change, or download a fresh copy. You may use your own page from earlier lessons instead; note its folder in Your work. The files stay on your computer; nothing is uploaded.
+Starting route: Recommended route: Optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. The practice starters are single small files with no photographs or web fonts, so they have almost nothing to measure. Use the supplied Northside baseline in the source notes (the page you traced in Lesson 1): take its figures as your before, choose three changes from its request list, subtract their bytes and requests for the after, and label every after-timing an estimate. Record what you did here; nothing is uploaded. Alternative route: Have a heavier page of your own that you can change and that is served over http(s)? Measure it before and after with the same throttling profile and cache setting instead. Opened from your own folder, throttling may not apply: record weight and requests, and label any timing an estimate.
 
 - A baseline measurement with conditions recorded
 - Three changes, each with the reason
@@ -6493,9 +6493,23 @@ Read the example and notice the decision being made. It is practice material, no
 
 Section: learn. Stable action: workspace.
 
-Recommended route: Optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. To practise a measured before-and-after, download page-images.html (on the course site, the address ending /starters/m12/page-images.html) and save it in Documents\HaruCourse\Practice\m12-l09-v1. If Windows saved it as page-images.html.txt, rename it to end in .html. Open it in Notepad (right-click, Open with, Notepad) and in your browser (double-click). Make the one change marked “Change this one thing first”, save with Ctrl+S, reload with F5, then record what you did and saw here. Alternative route: If the page is blank or did not change: check the name ends in .html (File Explorer, View, Show, File name extensions), press Ctrl+Z in Notepad and save to undo your last change, or download a fresh copy. You may use your own page from earlier lessons instead; note its folder in Your work. The files stay on your computer; nothing is uploaded.
+Recommended route: Optional technical extension: core learners can rely on the supplied working starter and the ideas in Lessons 1 and 12. The practice starters are single small files with no photographs or web fonts, so they have almost nothing to measure. Use the supplied Northside baseline in the source notes (the page you traced in Lesson 1): take its figures as your before, choose three changes from its request list, subtract their bytes and requests for the after, and label every after-timing an estimate. Record what you did here; nothing is uploaded. Alternative route: Have a heavier page of your own that you can change and that is served over http(s)? Measure it before and after with the same throttling profile and cache setting instead. Opened from your own folder, throttling may not apply: record weight and requests, and label any timing an estimate.
 
 - Write answers in this course. Keep drawings in your own paper folder or file and record their location. You can stop and resume after any action.
+
+
+### Keep this practice material beside you
+
+Section: learn. Stable action: supplied-material.
+
+Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
+
+- Supplied baseline (made up): the Northside Tool Library page from Lesson 1, measured once in a desktop browser with Disable cache ticked and the Slow 4G profile. 21 requests, 2,400 kB; first readable text at about 4 seconds; the search box worked at about 11 seconds.
+- Held up the first render: the document (20 kB), the main stylesheet (30 kB) and a print-only stylesheet linked without a media attribute (10 kB).
+- Fonts: body text 30 kB, headings 30 kB, and a third typeface used only for one quotation on the first screen, 78 kB.
+- Images: the header photograph, 1,800 kB, a 3000-pixel-wide file shown 720 pixels wide; four tool photographs below the first screen, 50 kB each; six icons as separate files, 2 kB each.
+- Scripts at the end of the page: the date-picker library (130 kB), which the search box needs, and three tracking scripts (60 kB together). They downloaded behind the header photograph, which is why the search box worked only at about 11 seconds.
+- No after-measurement exists for this page. Subtract what your changes remove for the after weight and request count, and write any after-timing as an estimate, for example “about 4 seconds (estimate)”.
 
 
 ### Measure the baseline
@@ -6504,7 +6518,7 @@ Section: practice-plan. Stable action: step-1-brief.
 
 A baseline measured with the conditions written down, and the requests that hold up the first render identified.
 
-- Load a page served over http(s) with the cache disabled and a slow profile.
+- Load a page served over http(s) with the cache disabled and a slow profile, or take the supplied baseline's figures.
 - Record weight, request count and time to usable.
 - Note which requests block the first render.
 
@@ -6546,11 +6560,11 @@ Made-up example. Measuring a tool-library page, and starting after the easy win 
 
 Section: practice-plan. Stable action: write-conditions.
 
-Use the same ones afterwards, or the pair proves nothing. Throttling may not apply to a page opened from your folder; measure a page served over http(s), or label timings as estimates.
+Use the same ones afterwards, or the pair proves nothing. On the supplied baseline, copy its stated conditions. Throttling may not apply to a page opened from your folder; measure a page served over http(s), or label timings as estimates.
 
 **Answer:** The conditions: throttling profile, cache setting, device, browser and how the page was opened
 
-Use the same ones afterwards, or the pair proves nothing. Throttling may not apply to a page opened from your folder; measure a page served over http(s), or label timings as estimates.
+Use the same ones afterwards, or the pair proves nothing. On the supplied baseline, copy its stated conditions. Throttling may not apply to a page opened from your folder; measure a page served over http(s), or label timings as estimates.
 
 
 ### Weight, request count and time to usable
@@ -6600,20 +6614,23 @@ Section: practice-plan. Stable action: step-2-sort-1.
 
 Six candidate changes to a made up tool-library page whose baseline is 2.4 megabytes and eleven seconds to usable. For each one, decide what it would actually buy.
 
-Re-export the 1.8 megabyte header photograph at its display width. It sits above every word on the page.
+Re-export the 1.8 megabyte header photograph at its display width. On the slow profile it takes about nine seconds to arrive.
 
 - reduces what the person waits for
 - reduces total weight only
 - changes nothing measurable
+- improves a number but delays the task
 
 <details>
 <summary>After your attempt</summary>
 
-reduces what the person waits for — It is above the first line of text, so nothing readable appears until it arrives. This is the one change on the list that moves time to usable on its own.
+reduces what the person waits for — On a slow connection it takes most of the bandwidth for about nine seconds and delays everything requested after it, including the script the search box needs. This is the change on the list that moves time to usable most.
 
-reduces total weight only — It reduces weight enormously and it also reduces the wait, because of where it sits.
+reduces total weight only — It reduces weight enormously, and while it downloads it slows everything else, so the wait shrinks too.
 
 changes nothing measurable — It is three quarters of the page.
+
+improves a number but delays the task — Nothing the person needs arrives later; the search script arrives sooner.
 
 Now sort your own candidate changes the same way, and take your three from the first group.
 
@@ -6631,6 +6648,7 @@ Compress four photographs in the footer, saving 300 kilobytes.
 - reduces what the person waits for
 - reduces total weight only
 - changes nothing measurable
+- improves a number but delays the task
 
 <details>
 <summary>After your attempt</summary>
@@ -6640,6 +6658,8 @@ reduces what the person waits for — Nobody has scrolled to the footer at the m
 reduces total weight only — A real saving on the total, and invisible in time to usable. Worth doing and not worth doing first.
 
 changes nothing measurable — The total weight figure moves by 300 kilobytes.
+
+improves a number but delays the task — Nothing is delayed by it. It is a smaller total and no change to the wait.
 
 Now sort your own candidate changes the same way, and take your three from the first group.
 
@@ -6652,20 +6672,23 @@ Section: practice-plan. Stable action: step-2-sort-3.
 
 Six candidate changes to a made up tool-library page whose baseline is 2.4 megabytes and eleven seconds to usable. For each one, decide what it would actually buy.
 
-Remove the third typeface, used once, which the browser fetches before drawing any text.
+Remove the third typeface, used once for the quotation at the top of the first screen, which stays invisible until the file arrives.
 
 - reduces what the person waits for
 - reduces total weight only
 - changes nothing measurable
+- improves a number but delays the task
 
 <details>
 <summary>After your attempt</summary>
 
-reduces what the person waits for — Fonts are usually fetched before text is drawn, so an unused one delays every word on the page.
+reduces what the person waits for — A browser fetches a typeface when text set in it is about to be drawn, and holds that text back, for up to about three seconds, until it arrives. Removing it lets the quotation appear at once and frees the connection.
 
-reduces total weight only — It saves weight and it also removes something standing between the person and the first sentence.
+reduces total weight only — It saves weight, and it also lets the quotation on the first screen appear without waiting for a file.
 
-changes nothing measurable — Both numbers move.
+changes nothing measurable — Both the weight and the moment the quotation appears move.
+
+improves a number but delays the task — Nothing the person needs is pushed later; the quotation appears sooner.
 
 Now sort your own candidate changes the same way, and take your three from the first group.
 
@@ -6683,6 +6706,7 @@ Strip the spaces and line breaks out of the HTML file, saving 3 kilobytes.
 - reduces what the person waits for
 - reduces total weight only
 - changes nothing measurable
+- improves a number but delays the task
 
 <details>
 <summary>After your attempt</summary>
@@ -6692,6 +6716,8 @@ reduces what the person waits for — Three kilobytes on a slow connection is a 
 reduces total weight only — Three kilobytes out of 2,400 will not show in any figure you are recording.
 
 changes nothing measurable — It is the sort of change that feels like optimisation and moves nothing. Worth knowing so you do not spend an afternoon on it.
+
+improves a number but delays the task — It delays nothing, and it improves nothing you would notice either.
 
 Now sort your own candidate changes the same way, and take your three from the first group.
 
@@ -6709,6 +6735,7 @@ Delay the script that renders the list, so the page paints in one second instead
 - reduces what the person waits for
 - reduces total weight only
 - changes nothing measurable
+- improves a number but delays the task
 
 <details>
 <summary>After your attempt</summary>
@@ -6717,7 +6744,9 @@ reduces what the person waits for — It makes the frame appear sooner and the l
 
 reduces total weight only — Nothing is removed. The same bytes arrive in a different order.
 
-changes nothing measurable — It moves first paint and worsens time to usable, so on the figures that matter here it is not an improvement at all. This is the one to reject in step 4.
+changes nothing measurable — First paint moves by two seconds and time to usable by one, so something measurable does change, in opposite directions.
+
+improves a number but delays the task — First paint moves from three seconds to one, and the list, which is the task, arrives a second later. A number improves while the person waits longer. This is the one to reject in step 4.
 
 Now sort your own candidate changes the same way, and take your three from the first group.
 
@@ -6730,20 +6759,23 @@ Section: practice-plan. Stable action: step-2-sort-6.
 
 Six candidate changes to a made up tool-library page whose baseline is 2.4 megabytes and eleven seconds to usable. For each one, decide what it would actually buy.
 
-Replace a 96 kilobyte icon font, fetched in the head, with six hand-written icons.
+Replace a 96 kilobyte icon font, loaded by a stylesheet in the head, with six hand-written icons.
 
 - reduces what the person waits for
 - reduces total weight only
 - changes nothing measurable
+- improves a number but delays the task
 
 <details>
 <summary>After your attempt</summary>
 
-reduces what the person waits for — Fetched in the head means the browser waits for it. Removing it takes something out of the critical path as well as out of the total.
+reduces what the person waits for — The browser waits for the stylesheet in the head before drawing, and the icons stay blank until the font arrives. Removing both takes something off the critical path as well as out of the total.
 
 reduces total weight only — It does both, because of where in the page it is requested.
 
-changes nothing measurable — 96 kilobytes on the critical path is several seconds on a slow profile.
+changes nothing measurable — 96 kilobytes is about half a second on a slow profile, spent before the icons can appear.
+
+improves a number but delays the task — Nothing is pushed later; the icons and the text appear sooner.
 
 Now sort your own candidate changes the same way, and take your three from the first group.
 
@@ -6763,7 +6795,7 @@ Write your answer for “Change 1 · what you did and why”. Use the task instr
 <details>
 <summary>Example</summary>
 
-Example (made up): re-exported the header photograph at its display width, because it was the only thing above the first line of text.
+Example (made up): re-exported the header photograph at its display width, because at 1,800 kB it took most of the slow connection for about nine seconds and held up the scripts behind it.
 
 </details>
 
@@ -6796,11 +6828,11 @@ Section: practice-plan. Stable action: step-3-brief.
 
 The same three figures under identical conditions, and anything that got worse.
 
-- Repeat the load under identical conditions.
-- Record the same three figures.
+- Repeat the load under identical conditions, or on the supplied baseline subtract what your changes removed and estimate the timing.
+- Record the same three figures, labelling any estimate.
 - Note anything that got worse.
 
-**Start here:** Set the throttling profile and the cache tickbox back to exactly what you wrote in step 1.
+**Start here:** Set the throttling profile and the cache tickbox back to exactly what you wrote in step 1. On the supplied baseline, subtract what your three changes removed instead, and label the timing an estimate.
 
 **Enough:** Both sets of numbers were taken the same way, and you looked for what got worse rather than only for what improved.
 
@@ -6813,11 +6845,11 @@ The same three figures under identical conditions, and anything that got worse.
 
 Section: practice-plan. Stable action: write-after-numbers.
 
-Write your answer for “The same three figures under identical conditions”. Use the task instructions below to decide what to include.
+On the supplied baseline: subtract the bytes and requests your changes removed, and write any timing as an estimate, for example “about 4 seconds (estimate)”.
 
 **Answer:** The same three figures under identical conditions
 
-
+On the supplied baseline: subtract the bytes and requests your changes removed, and write any timing as an estimate, for example “about 4 seconds (estimate)”.
 
 
 ### Anything that got worse
@@ -6867,7 +6899,7 @@ Made-up example. Improving the numbers on a tool-library page, and improving the
 
 **Wrong turn:** The wrong turn is optimising the number that is easiest to move. First paint responds to almost anything, which is why it is so often reported and so often meaningless on its own.
 
-**Trade-off:** Keeping the script blocking means the page shows nothing for three seconds, and on a very slow connection that is uncomfortable. A skeleton of the list would be the real answer, and it is more work than one line.
+**Trade-off:** Keeping the script blocking means the page shows nothing for three seconds, and on a very slow connection that is uncomfortable. A skeleton of the list would make that wait clearer; it would not bring the list any sooner.
 
 **Unknown:** Still unknown: whether people prefer an empty frame quickly or a complete page slightly later. Nothing here measured a preference, and the argument rests on when the task can start.
 
@@ -6948,7 +6980,7 @@ Delaying the script that renders your list would make the page appear two second
 
 It is worth doing, because first paint is a standard measure that everyone recognises. — A standard measure can still be the wrong one for a page. Ask what the person can do at each moment.
 
-It is worth doing, as long as a loading indicator fills the space where the list will be. — A well-designed skeleton of the list would be a genuine answer and is more work than the one-line change. A spinner in an empty frame is the same wait with something turning in it.
+It is worth doing, as long as a loading indicator fills the space where the list will be. — A skeleton makes the wait clearer, but the list still arrives a second later, so the task is still delayed. A spinner in an empty frame is the same wait with something turning in it.
 
 Keep it as it is: the list is what people came for, so delaying it delays the task. — First paint responds to almost anything, which is why it gets reported so often. Here it improves while time to usable gets worse.
 
@@ -7057,7 +7089,7 @@ Write your decision first, then the reason it fits this new case. Compare with t
 <summary>Compare after writing</summary>
 
 - Weak: Picks the largest saving in kilobytes regardless of where it sits, or reports first paint as the improvement.
-- Adequate: Starts with the video above the title (on the critical path) and rejects delaying the opening-times script, because the page appears sooner but is usable later.
+- Adequate: Starts with the video above the title (400 kB competing for the slow connection before anything useful) and rejects delaying the opening-times script, because the page appears sooner but is usable later.
 - Strong: As adequate, and plans to re-measure under identical, stated conditions, or notes the footer saving is real but would not move time to usable.
 
 </details>
@@ -7125,7 +7157,7 @@ When the activity is finished, tell me to return to the course answer called “
 
 **A baseline is measured with conditions recorded**
 
-Adequate evidence: Weight, request count and time to usable, with device, profile and cache state.
+Adequate evidence: Weight, request count and time to usable, with device, profile and cache state, or the supplied baseline with its stated conditions.
 
 0 — No baseline.
 
@@ -7139,7 +7171,7 @@ Repair: Re-run the load with the cache disabled and a slow profile and record al
 
 **Three changes are made, each with a reason**
 
-Adequate evidence: Three specific changes traced to a measured cost.
+Adequate evidence: Three specific changes traced to a measured cost, or to a row of the supplied baseline.
 
 0 — Changes made without reference to measurement.
 
@@ -7153,13 +7185,13 @@ Repair: Sort your requests by size and time, and address the top of that list. R
 
 **The after measurement uses identical conditions**
 
-Adequate evidence: A second measurement with the same profile, cache state and content volume.
+Adequate evidence: A second measurement with the same profile, cache state and content volume, or after-figures calculated from the supplied baseline with every timing labelled an estimate.
 
 0 — Measured under different conditions.
 
 1 — Conditions matched but not recorded.
 
-2 — Identical conditions, recorded.
+2 — Identical conditions recorded, or figures calculated from the supplied baseline with estimates labelled.
 
 3 — As adequate, and anything that got worse is reported as well.
 
@@ -8204,7 +8236,7 @@ A shared header can break a heading outline; a component moved onto a tinted pan
 
 Section: practice-plan. Stable action: step-3-brief.
 
-One task completed by thumb on a real phone, with everything the emulated viewport did not show.
+One task, including a form, run in emulation (labelled as such) or on a real phone by thumb, with what that check could not show.
 
 - Run one task, including a form, in device emulation and label it emulation.
 - Optionally repeat it on a real phone, using a hosted copy, by thumb.
@@ -8458,11 +8490,11 @@ The assembled prototype measured under the same conditions as lesson 9, with wha
 
 Section: practice-plan. Stable action: write-assembled-numbers.
 
-Write your answer for “Weight, requests and time to usable, under the same conditions as before”. Use the task instructions below to decide what to include.
+Opened from your folder, throttling may not apply: record weight and requests, and label any timing an estimate, as in Lesson 9.
 
 **Answer:** Weight, requests and time to usable, under the same conditions as before
 
-
+Opened from your folder, throttling may not apply: record weight and requests, and label any timing an estimate, as in Lesson 9.
 
 
 ### What changed now that the pages share files
@@ -9163,7 +9195,7 @@ Section: practice-plan. Stable action: step-4-sort-4.
 
 Six questions a designer might put to an engineer about a made up booking feature. For each one, decide what kind of answer it will get.
 
-How long will the whole feature take to build?
+How long will a feature take whose error states are not designed yet?
 
 - a useful answer
 - a yes that settles nothing
@@ -9172,11 +9204,11 @@ How long will the whole feature take to build?
 <details>
 <summary>After your attempt</summary>
 
-a useful answer — You will get a number with no confidence behind it, which is worse than no number.
+a useful answer — Any number you get covers only the parts that exist. The error states are undecided, so the estimate is a guess at a design nobody has made.
 
 a yes that settles nothing — It is not a yes-or-no question.
 
-a question they cannot answer yet — Not from a handover read once. Sliced into pieces with acceptance criteria, it becomes answerable, and that is a later module.
+a question they cannot answer yet — Not while part of the design is missing. Design the error states first; sliced into pieces with acceptance criteria, it becomes answerable, and that is a later module.
 
 Now check your own three questions against the same three kinds, and rewrite any that would get a yes.
 
@@ -9215,7 +9247,7 @@ Section: practice-plan. Stable action: step-4-sort-6.
 
 Six questions a designer might put to an engineer about a made up booking feature. For each one, decide what kind of answer it will get.
 
-Is there a better way to do this?
+Will the countdown on a held tool be a problem?
 
 - a useful answer
 - a yes that settles nothing
@@ -9224,11 +9256,11 @@ Is there a better way to do this?
 <details>
 <summary>After your attempt</summary>
 
-a useful answer — Occasionally it produces one, and usually it produces a polite pause, because better depends on what you are optimising for.
+a useful answer — Whatever they say, you still do not know what the problem would be, what it would cost or what to design differently.
 
-a yes that settles nothing — It is not really a yes-or-no question, though it often receives a no.
+a yes that settles nothing — Yes or no, it names no problem and no cost, so neither answer tells you what to change. Asking what it would cost to keep the countdown accurate is the useful version.
 
-a question they cannot answer yet — Not without knowing which constraint you care about. Naming that turns it into one of the useful questions above.
+a question they cannot answer yet — They can answer it at once, and that is the trouble: the answer is a word, not a constraint.
 
 Now check your own three questions against the same three kinds, and rewrite any that would get a yes.
 

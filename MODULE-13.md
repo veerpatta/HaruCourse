@@ -155,7 +155,7 @@ Three problems, each stated as a problem for a named person, with at least one c
 
 **Start here:** Look at last month rather than next year, and find where you or somebody else actually lost time.
 
-**Enough:** Each problem names a person and a cost, and at least one cost is somebody else’s.
+**Enough:** Each problem names a person and a cost; at least one cost falls on somebody else or, if you work alone, on the engineer your Module 12 handover was written for, labelled as expected rather than current.
 
 **Problem for a person:** Somebody, doing something, paying a cost. “We need consistency” names nobody and costs nothing, so nothing follows from it.
 
@@ -345,11 +345,11 @@ Now read your own three problems the same way, and rewrite anything in the other
 
 Section: practice-plan. Stable action: write-problem-1.
 
-At least one of the three should cost somebody other than you time.
+At least one of the three should cost somebody other than you time. Working alone? That can be the engineer your Module 12 handover was written for, labelled as expected rather than current.
 
 **Answer:** Problem 1 · who it affects and what it costs them
 
-At least one of the three should cost somebody other than you time.
+At least one of the three should cost somebody other than you time. Working alone? That can be the engineer your Module 12 handover was written for, labelled as expected rather than current.
 
 <details>
 <summary>Example</summary>
@@ -392,7 +392,7 @@ The audience named as it exists now, with what each of them needs from the syste
 
 **Start here:** Write the names or roles of the people who will open this in the next eight weeks.
 
-**Enough:** Nobody on the list is hypothetical.
+**Enough:** Every person listed is current or labelled as expected.
 
 **Audience now:** The people who will use it this month: you in three months, one engineer, a reviewer reading a case study. Not a team you do not have.
 
@@ -720,7 +720,7 @@ Repair: For each problem write who suffers it and how much time or quality it co
 
 **The current audience is named, not aspirational**
 
-Adequate evidence: A stated audience for now, with what each needs.
+Adequate evidence: A stated audience for now, with what each needs; anyone expected rather than current is labelled so.
 
 0 — Audience unstated or imagined as a large team.
 
@@ -1126,7 +1126,7 @@ Section: practice-plan. Stable action: step-4-sort-2.
 
 Six foundation entries from a made up tool-library system. For each one, decide what it is missing, if anything.
 
-Status colour: amber. Use for items with fewer than three places left, always with the count beside it. Chosen because the greyscale check showed it indistinguishable from red on its own.
+Status colour: amber, chosen to warn without the alarm of red. Use for items with fewer than three places left, always with the count beside it, because the greyscale check showed amber indistinguishable from red on its own.
 
 - complete
 - missing the rule
@@ -1135,11 +1135,11 @@ Status colour: amber. Use for items with fewer than three places left, always wi
 <details>
 <summary>After your attempt</summary>
 
-complete — Value, rule and reason, with the reason coming from a check that actually happened. A reader could apply it and could argue with it.
+complete — Value, rule and reasons, with the reason for the count coming from a check that actually happened. A reader could apply it and could argue with it.
 
 missing the rule — The rule is there: fewer than three places, always with the count.
 
-missing the reason — The reason is the greyscale finding, which is the strongest kind because it is evidence rather than preference.
+missing the reason — Both reasons are there: amber warns without alarming, and the count is required because of the greyscale finding, which is evidence rather than preference.
 
 Now read your own six groups the same way, and fix whichever part is missing.
 
@@ -1178,7 +1178,7 @@ Section: practice-plan. Stable action: step-4-sort-4.
 
 Six foundation entries from a made up tool-library system. For each one, decide what it is missing, if anything.
 
-Elevation: two levels. Never use elevation as the only way of conveying meaning, because it disappears in high-contrast modes and in print.
+Elevation: two levels, a 2px and an 8px shadow, chosen because both stay visible in greyscale.
 
 - complete
 - missing the rule
@@ -1187,11 +1187,11 @@ Elevation: two levels. Never use elevation as the only way of conveying meaning,
 <details>
 <summary>After your attempt</summary>
 
-complete — It has a prohibition and a reason. What it lacks is a rule for when each of the two levels is used.
+complete — It has values and a reason. What it lacks is a rule for when each of the two levels is used.
 
-missing the rule — Never do this is half a rule. A reader still does not know which level a dialogue gets and which a card gets.
+missing the rule — A reader still does not know which level a dialogue gets and which a card gets, so the two values get used by taste.
 
-missing the reason — The reason is there and it is a good one.
+missing the reason — The reason is there: both shadows stay visible in greyscale.
 
 Now read your own six groups the same way, and fix whichever part is missing.
 
@@ -1230,7 +1230,7 @@ Section: practice-plan. Stable action: step-4-sort-6.
 
 Six foundation entries from a made up tool-library system. For each one, decide what it is missing, if anything.
 
-Motion: 120ms for state changes, 240ms for things entering. Reduced-motion pairs are documented per component.
+Motion: 120ms and 240ms, each with a 0ms reduced-motion pair, chosen because longer durations felt slow in testing.
 
 - complete
 - missing the rule
@@ -1239,11 +1239,11 @@ Motion: 120ms for state changes, 240ms for things entering. Reduced-motion pairs
 <details>
 <summary>After your attempt</summary>
 
-complete — The durations have jobs, so it looks complete. Documented per component is where it falls down.
+complete — It has values, reduced-motion pairs and a reason. Nothing says which of the two durations a given change gets.
 
-missing the rule — The reduced pair belongs beside the value, not per component. Left to each component it gets forgotten by the third one.
+missing the rule — Two durations and no word on when each applies, so a reader picks by taste. A rule would say 120ms for state changes and 240ms for things entering.
 
-missing the reason — It is missing a reason as well, and the scattered reduced pairs are the more damaging gap.
+missing the reason — The reason is there: longer durations felt slow in testing.
 
 Now read your own six groups the same way, and fix whichever part is missing.
 
@@ -1670,7 +1670,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Example (made up): the class card was specified. Anatomy: container, image slot (optional), title, meta row, status area, action. Variants: default, compact, unavailable. States for each: default, hover, focus, loading, error. Content rules: title truncates to two lines keeping the beginning, meta row wraps rather than truncating, status area always shows text as well as colour, image slot may be absent without changing layout height. Keyboard: the whole card is not a target — the title is the link and the action is a button, matching the m09 tables. When not to use: not for a single featured item, where a dedicated layout reads better; not as a navigation element.
+- Example (made up): the class card was specified. Anatomy: container, image slot (optional), title, meta row, status area, action. Variants: default, compact, unavailable. States for each: default, hover, focus, loading, error. Content rules: title truncates to two lines keeping the beginning, meta row wraps onto as many lines as it needs and the card grows to fit, status area always shows text as well as colour, image slot may be absent without changing layout height. Keyboard: the whole card is not a target — the title is the link and the action is a button, matching the m09 tables. When not to use: not for a single featured item, where a dedicated layout reads better; not as a navigation element.
 
 
 ### Choose where you will do the work
@@ -1903,7 +1903,7 @@ Section: practice-plan. Stable action: step-3-sort-4.
 
 Six lines from a made up tool card specification. For each one, decide whether an engineer could build it without asking you.
 
-The meta row wraps rather than truncating.
+The meta row wraps, inside a card of fixed height.
 
 - buildable as written
 - needs one question answered
@@ -1912,11 +1912,11 @@ The meta row wraps rather than truncating.
 <details>
 <summary>After your attempt</summary>
 
-buildable as written — It says what happens and not how far. Three lines of meta on a compact card may be wrong, and nothing here says.
+buildable as written — Wrapping makes the row taller, and a fixed-height card has nowhere to put it. Something has to give, and the line does not say what.
 
-needs one question answered — Wrapping to a maximum of how many lines, and what happens after that. One question, quickly answered.
+needs one question answered — Does the card grow, or does the meta row stop at a set number of lines? One question, quickly answered.
 
-not a specification at all — It carries a real decision: wrap rather than truncate. It is simply incomplete.
+not a specification at all — It carries real decisions: wrap rather than truncate, and a fixed height. They simply collide.
 
 Now read your own content rules the same way, and rewrite anything in the second or third group.
 
@@ -3273,6 +3273,10 @@ Section: learn. Stable action: supplied-material.
 Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
 
 - Supplied working component (made up practice material): component-states.html, a button and a text input for the Northside Tool Library, version 1.0.0. Open it from the course site at the address ending /starters/m13/component-states.html, or download it. Its page shows every state in labelled grids, its tokens, measured contrast on the plain background, keyboard behaviour, content rules and one open decision.
+- Supplied borderline cases (made up), for any of the three cases your own inventory cannot supply. Decide each with your test; no answers are given here.
+- Case A · A “new this week” tool card: the same offer to choose a tool, with a small New label above the title.
+- Case B · A waiting-list entry: a tool you have asked to be told about, with your place in the queue, the date you joined and a Leave the list action.
+- Case C · A comparison tile: two to four tools side by side with their loan length and deposit, and one Choose action under each.
 
 
 ### Write the test
@@ -3350,7 +3354,7 @@ Section: practice-plan. Stable action: step-2-brief.
 
 Three borderline items decided by answering all four questions, not by how similar they look.
 
-- Take three borderline items from your inventory.
+- Take three borderline items from your inventory, or use the supplied made-up cases for any you lack.
 - Answer each question and record the decision.
 
 **Start here:** For each case, write what the reader is doing with it before writing anything about how it looks.
@@ -3492,14 +3496,14 @@ Write your answer for “Anything over four, and whether it is really a family o
 
 Section: practice-plan. Stable action: step-4-brief.
 
-One component split or merged, with the inventory and the affected specifications updated.
+One component split or merged, with the inventory and the affected specifications updated, or a record that none carries two jobs, with the test answers that show it.
 
-- Split one component that was carrying two jobs, or merge two that share one.
+- Split or merge one component, or record that none carries two jobs, with the test answers that show it.
 - Update the inventory and the specifications.
 
 **Start here:** Take the component with the most variants and ask whether two of them are really doing the same job.
 
-**Enough:** The inventory reflects the decision, not only your notes.
+**Enough:** The inventory reflects the decision, not only your notes, or your record shows the test answers that found nothing to split or merge.
 
 **Splitting:** Turning one component carrying two jobs into two. It usually removes conditional behaviour and shortens both specifications.
 
@@ -3642,7 +3646,7 @@ Section: practice-plan. Stable action: step-4-sort-6.
 
 Six pairs from a made up tool-library inventory. For each one, decide what the relationship is.
 
-A search result row: the same tool, one line, no image, used in a list of thirty.
+A search result row: one line, no image, with its own compare action and a selected state the card does not have, used in a list of thirty.
 
 - a variant
 - a separate component
@@ -3651,9 +3655,9 @@ A search result row: the same tool, one line, no image, used in a list of thirty
 <details>
 <summary>After your attempt</summary>
 
-a variant — It is tempting, because it is the same subject. It has different content rules, no image slot and no states in common beyond focus.
+a variant — It is tempting, because it is the same subject. It has its own action, a selected state the card lacks and no image slot, so its states and content rules differ.
 
-a separate component — Scanning thirty rows is a different job from comparing three cards, and it would be the fourth or fifth variant of the card as well.
+a separate component — Picking rows to compare across a list of thirty is a different job from choosing one tool from a card, with its own action and state. It would also be the fourth or fifth variant of the card.
 
 out of scope entirely — It is used constantly and belongs in the system.
 
@@ -3666,11 +3670,11 @@ Now apply your own four questions to your three cases and record the answers rat
 
 Section: practice-plan. Stable action: write-split-or-merge.
 
-Write your answer for “What you split or merged, and what changed in the inventory”. Use the task instructions below to decide what to include.
+If no component of yours carries two jobs or shares one, write that, with the test answers that show it. Do not invent a change to fill the box.
 
 **Answer:** What you split or merged, and what changed in the inventory
 
-
+If no component of yours carries two jobs or shares one, write that, with the test answers that show it. Do not invent a change to fill the box.
 
 
 ### Which specifications you had to update
@@ -3767,7 +3771,7 @@ Yes, unless the two look very different from each other. — Visual difference i
 
 Improve: Write the case where you decided against reuse in step 5, with the job difference that decided it. Record the change.
 
-Check again: Your record contains at least one deliberate decision not to reuse.
+Check again: Your record contains at least one deliberate decision not to reuse, from your own cases or the supplied ones.
 
 Answers to revisit: test-location, against-reuse, improvement-made
 
@@ -3807,11 +3811,11 @@ Write your answer for “Where the test lives, so the next case is decided rathe
 
 Section: practice. Stable action: write-against-reuse.
 
-Write your answer for “The case where you decided against reuse, and why”. Use the task instructions below to decide what to include.
+If none of your own cases went against reuse, apply your test to the supplied cases in the source notes, take the one it keeps separate, and write the job difference that decided it.
 
 **Answer:** The case where you decided against reuse, and why
 
-
+If none of your own cases went against reuse, apply your test to the supplied cases in the source notes, take the one it keeps separate, and write the job difference that decided it.
 
 
 ### What you changed after the Check questions, or why no change was needed
@@ -3949,7 +3953,7 @@ Repair: Count the variants per component and look hard at anything above four. R
 
 **One decision against reuse is recorded**
 
-Adequate evidence: A case where you chose a separate component, with the reason.
+Adequate evidence: A case where you chose a separate component, from your own inventory or the supplied cases, with the reason.
 
 0 — Everything reused.
 
@@ -4018,7 +4022,7 @@ The reader demonstrates and guides the task before asking for “For each of you
 
 Section: learn. Stable action: welcome.
 
-Write the documentation for two components so that a person can use them correctly without asking you, and test it by watching someone try.
+Write the documentation for two components so that a person can use them correctly without asking you, and test it by watching someone try, or by a labelled solo rehearsal after a gap.
 
 
 ### Lead with when to use it, not with what it looks like
@@ -4062,7 +4066,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Example (made up): the card and the button pages were rewritten. Each opens with when to use it, when not to, and the alternative. Then a live example with the code beside it, the anatomy, the state grid, the content rules — including maximum label length and truncation behaviour — and the keyboard behaviour. Two people were then asked to build a screen using them. Four questions came up: what happens with two actions, whether the compact variant may be used in a grid, what the maximum title length actually is, and whether the card is clickable as a whole. All four became sentences on the pages.
+- Example (made up): the card and the button pages were rewritten. Each opens with when to use it, when not to, and the alternative. Then a live example with the code beside it, the anatomy, the state grid, the content rules — including maximum label length and truncation behaviour — and the keyboard behaviour. Two people were then asked to build a screen using them. Four questions came up: what happens with two actions, whether the compact variant may be used in a grid, what the maximum title length actually is, and whether the card is clickable as a whole. Three became sentences on the pages; the two-action question had no answer anywhere and was recorded as an open decision.
 
 
 ### Choose where you will do the work
@@ -4282,7 +4286,7 @@ Section: practice-plan. Stable action: step-4-sort-1.
 
 Six questions a reader asked about a made up tool card documentation page. For each one, decide what it tells you.
 
-What happens if a card needs two actions?
+What happens if a card needs two actions? Neither the specification nor you have an answer.
 
 - a sentence is missing from the page
 - the page says it and says it badly
@@ -4334,7 +4338,7 @@ Section: practice-plan. Stable action: step-4-sort-3.
 
 Six questions a reader asked about a made up tool card documentation page. For each one, decide what it tells you.
 
-May the compact variant be used in a grid?
+May the compact variant be used in a grid? The specification says yes; the page is silent.
 
 - a sentence is missing from the page
 - the page says it and says it badly
@@ -4360,7 +4364,7 @@ Section: practice-plan. Stable action: step-4-sort-4.
 
 Six questions a reader asked about a made up tool card documentation page. For each one, decide what it tells you.
 
-Is the whole card clickable, or just the title?
+Is the whole card clickable, or just the title? Your keyboard specification says just the title; the page does not mention it.
 
 - a sentence is missing from the page
 - the page says it and says it badly
@@ -4386,7 +4390,7 @@ Section: practice-plan. Stable action: step-4-sort-5.
 
 Six questions a reader asked about a made up tool card documentation page. For each one, decide what it tells you.
 
-Should the title be sentence case or title case?
+Should the title be sentence case or title case? Your foundations say sentence case; the card page does not.
 
 - a sentence is missing from the page
 - the page says it and says it badly
@@ -4395,11 +4399,11 @@ Should the title be sentence case or title case?
 <details>
 <summary>After your attempt</summary>
 
-a sentence is missing from the page — If your foundations settle it, the card page needs a line pointing there. If they do not, it moves to the third category.
+a sentence is missing from the page — The foundations settle it, so the card page needs one line pointing there.
 
 the page says it and says it badly — Nothing on the page addresses it.
 
-a decision nobody has made — Possible, and most systems have settled case long before components.
+a decision nobody has made — It has been made, in the foundations. It just has not reached this page.
 
 Now sort your own reader’s questions the same way before fixing any of them.
 
@@ -4412,7 +4416,7 @@ Section: practice-plan. Stable action: step-4-sort-6.
 
 Six questions a reader asked about a made up tool card documentation page. For each one, decide what it tells you.
 
-The unavailable card looks the same as the loading one to me. Which is which?
+The unavailable card looks the same as the loading one to me. Which is which? The page describes both correctly; nothing in the design tells them apart.
 
 - a sentence is missing from the page
 - the page says it and says it badly
@@ -4653,7 +4657,7 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: Documentation someone will actually read
-What I am trying to do: Write the documentation for two components so that a person can use them correctly without asking you, and test it by watching someone try.
+What I am trying to do: Write the documentation for two components so that a person can use them correctly without asking you, and test it by watching someone try, or by a labelled solo rehearsal after a gap.
 
 Key idea or terms:
 When to use it: The question every reader arrives with. Leading with appearance answers a question nobody asked and buries the one they did.
@@ -4844,7 +4848,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Example (made up): the governance was one page. To propose: open an issue with the screens where it is needed, what existing component you tried, and why it did not fit. Decider: the learner, until someone else joins. Response time: within a week. Criteria: needed in at least two screens, not achievable by composing existing components, and specifiable with states and content rules. Decisions are recorded in a log with the reason. Three proposals in the first month: one accepted, one rejected because composition covered it, and one deferred pending a second use — all recorded, and the rejected one was not re-raised.
+- Example (made up): the governance was one page. To propose: open an issue with the screens where it is needed, what existing component you tried, and why it did not fit. Decider: the learner, until someone else joins. Response time: within a week. Criteria: needed in at least two screens, not achievable by composing existing components, and specifiable with states and content rules. Decisions are recorded in a log with the reason. Three proposals in the first month: one accepted, one rejected because composition covered it, and one deferred until its second use, planned for the following month, existed — all recorded, and the rejected one was not re-raised.
 
 
 ### Choose where you will do the work
@@ -5004,7 +5008,7 @@ Written criteria a new component must satisfy, including a minimum number of use
 
 **Composition check:** Asking whether existing parts arranged differently would do the job. It rejects a surprising number of proposals and costs one minute.
 
-**Minimum uses:** A rule that something appears in at least two places before it joins the system. One use is a screen, not a component.
+**Minimum uses:** A rule that something appears in at least two places before it joins the system. One use is a screen, not a component. Defer when a second use is planned and dated; reject when none is.
 
 
 ### See the decision being made
@@ -5021,7 +5025,7 @@ Made-up example. Writing acceptance criteria for a tool-library system, and writ
 
 **What I replaced them with:** Needed in at least two screens. Not achievable by arranging existing components. Specifiable with states and content rules.
 
-**What the same four proposals did then:** One passed, two failed the composition check in about a minute each, and one failed on a single use and was recorded as deferred until a second appeared.
+**What the same four proposals did then:** One passed, two failed the composition check in about a minute each, and one failed on a single use with a second planned for next month, so it was deferred until then.
 
 **Wrong turn:** The wrong turn is writing criteria as qualities rather than as tests, because qualities are easier to agree on. A criterion nothing can fail is not doing any work, and the system grows by default.
 
@@ -5169,7 +5173,7 @@ Section: practice-plan. Stable action: step-4-sort-5.
 
 Six proposals to a made up tool-library system. For each one, decide what the process should answer.
 
-A receipt-style record component. Genuinely needed, and marketing and account pages were excluded in the system’s scope.
+A receipt-style record, genuinely needed, but only on the account pages, which the system’s scope excludes.
 
 - accept
 - reject
@@ -5195,7 +5199,7 @@ Section: practice-plan. Stable action: step-4-sort-6.
 
 Six proposals to a made up tool-library system. For each one, decide what the process should answer.
 
-A dark theme for every component. One person has asked, and nothing in the product currently supports it.
+A dark theme for every component. One person has asked, and a dark mode is planned and dated for the autumn release.
 
 - accept
 - reject
@@ -5204,11 +5208,11 @@ A dark theme for every component. One person has asked, and nothing in the produ
 <details>
 <summary>After your attempt</summary>
 
-accept — It touches every component and every token. Accepting it as a proposal treats a project as a component.
+accept — It touches every component and every token, and nothing needs it before the autumn. Accepting it now treats a project as a component.
 
-reject — A flat no discards a reasonable request, and the tokens would have to change for it either way.
+reject — A flat no discards work the product has already planned and dated.
 
-defer — Not as a proposal. It is a piece of work with its own decision, and deferring it names that rather than deciding it in a queue.
+defer — A planned, dated condition holds it: the autumn release. It is a piece of work with its own decision, and deferring names that rather than deciding it in a queue.
 
 Now run your own three proposals through your criteria and record the answers with their reasons.
 
@@ -5633,7 +5637,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Example (made up): the system was versioned 1.0.0 at the point the two components were documented. Three changes followed. Adding the compact card variant: minor, since nothing existing changed. Fixing the focus ring's contrast on the tinted surface: patch, because usage is unchanged. Renaming surface-alt to surface-muted for consistency: major, because every use must change, and it was released with the old name deprecated for one minor version, a change note explaining the rename, and a list of the four places it appeared. The rename was deliberately delayed until it could travel with another major change.
+- Example (made up): the system was versioned 1.0.0 at the point the two components were documented. Three changes followed. Adding the compact card variant: minor, since nothing existing changed. Fixing the focus ring's contrast on the tinted surface: patch, because usage is unchanged. Renaming surface-alt to surface-muted for consistency: removing the old name is major, because every use must change. So the next minor release added surface-muted and kept surface-alt as a deprecated alias (nothing breaks), with a change note explaining the rename and listing the four places it appeared; removing surface-alt waits for 2.0.0, the next major release.
 
 
 ### Choose where you will do the work
@@ -5704,7 +5708,7 @@ Three real changes classified by whether they force work on anybody, with any yo
 
 **Start here:** For each change, ask one question: does anybody have to do something because of this?
 
-**Enough:** At least one change is classified higher than it first felt.
+**Enough:** Each classification names who must change something; any that moved after asking that is marked.
 
 **Breaking change:** Anything that makes existing use stop working: a renamed token, a removed variant, a changed default. Its size in characters is irrelevant.
 
@@ -5723,9 +5727,9 @@ Made-up example. Classifying a token rename in a tool-library system, and classi
 
 **What happened:** Four places in my own stylesheet stopped working, plus a screen somebody else had built. Nothing looked broken; the colour simply fell back to white and two panels lost their tint.
 
-**What the classification should have been:** Major. Everyone using the old name has to change, and a silent fallback is the worst way to find out.
+**What the classification should have been:** Major, the way I had done it. Removing the old name forces everyone using it to change, and a silent fallback is the worst way to find out.
 
-**What I did instead:** Released it with the old name kept and marked deprecated for one minor version, a change note listing the four places, and the removal date stated. The rename waited to travel with the next major change.
+**What I did instead:** Released 1.1.0 adding surface-muted and keeping surface-alt as a deprecated alias (minor: nothing breaks), with a change note listing the four places. Removing surface-alt waits for 2.0.0, the major change.
 
 **Wrong turn:** The wrong turn is classifying by how much you typed, because a rename is the smallest edit there is. The test is whether anybody else has to do something, and a rename forces work on everyone who used the old name.
 
@@ -5771,11 +5775,11 @@ Write your answer for “Change 3 · what it is, its classification, and why”.
 
 Section: practice-plan. Stable action: write-underestimated.
 
-There is usually one. A rename is the classic case.
+There often is one, and a rename is the classic case. If none moved when you asked who has to change something, write that.
 
 **Answer:** Any change you had assumed was smaller than it is
 
-There is usually one. A rename is the classic case.
+There often is one, and a rename is the classic case. If none moved when you asked who has to change something, write that.
 
 
 ### Write the change note
@@ -5801,9 +5805,9 @@ A change note for the largest change, listing every place affected and when the 
 
 Section: practice-plan. Stable action: step-3-sort-1.
 
-Six changes to a made up tool-library system. For each one, decide how it should be classified.
+Six changes to a made up tool-library system. For each one, decide how it should be classified. Your rule: changing an existing default that alters screens is major; a correction that makes a component meet its own documented standard is a patch.
 
-Renaming surface-alt to surface-muted.
+Renaming surface-alt to surface-muted, removing the old name in the same release.
 
 - major
 - minor
@@ -5827,7 +5831,7 @@ Now classify your own three changes the same way and write the note for whicheve
 
 Section: practice-plan. Stable action: step-3-sort-2.
 
-Six changes to a made up tool-library system. For each one, decide how it should be classified.
+Six changes to a made up tool-library system. For each one, decide how it should be classified. Your rule: changing an existing default that alters screens is major; a correction that makes a component meet its own documented standard is a patch.
 
 Adding a compact variant to the card. Nothing existing changes.
 
@@ -5853,7 +5857,7 @@ Now classify your own three changes the same way and write the note for whicheve
 
 Section: practice-plan. Stable action: step-3-sort-3.
 
-Six changes to a made up tool-library system. For each one, decide how it should be classified.
+Six changes to a made up tool-library system. For each one, decide how it should be classified. Your rule: changing an existing default that alters screens is major; a correction that makes a component meet its own documented standard is a patch.
 
 Darkening the focus ring so it passes contrast on the tinted surface. Usage is unchanged.
 
@@ -5868,7 +5872,7 @@ major — Nobody has to change anything they wrote.
 
 minor — Nothing new is available. Something that was wrong is now right.
 
-patch — A fix with no change to how the component is used. It should still appear in the changelog.
+patch — A fix that makes the component meet its own documented contrast standard, with no change to how it is used. It should still appear in the changelog.
 
 Now classify your own three changes the same way and write the note for whichever came out largest.
 
@@ -5879,7 +5883,7 @@ Now classify your own three changes the same way and write the note for whicheve
 
 Section: practice-plan. Stable action: step-3-sort-4.
 
-Six changes to a made up tool-library system. For each one, decide how it should be classified.
+Six changes to a made up tool-library system. For each one, decide how it should be classified. Your rule: changing an existing default that alters screens is major; a correction that makes a component meet its own documented standard is a patch.
 
 Removing the featured variant, which two screens still use.
 
@@ -5905,7 +5909,7 @@ Now classify your own three changes the same way and write the note for whicheve
 
 Section: practice-plan. Stable action: step-3-sort-5.
 
-Six changes to a made up tool-library system. For each one, decide how it should be classified.
+Six changes to a made up tool-library system. For each one, decide how it should be classified. Your rule: changing an existing default that alters screens is major; a correction that makes a component meet its own documented standard is a patch.
 
 Changing the card’s default padding from 16 to 12, which affects every existing card.
 
@@ -5916,7 +5920,7 @@ Changing the card’s default padding from 16 to 12, which affects every existin
 <details>
 <summary>After your attempt</summary>
 
-major — Every existing use changes appearance without anybody asking, so every screen must be re-checked. Some systems call visual-only changes minor; this lesson’s written rule treats them as major.
+major — Every existing use changes appearance without anybody asking, so every screen must be re-checked. The rule above makes a changed default major, though some systems call visual-only changes minor.
 
 minor — Nothing is being added, and existing use is affected.
 
@@ -5931,7 +5935,7 @@ Now classify your own three changes the same way and write the note for whicheve
 
 Section: practice-plan. Stable action: step-3-sort-6.
 
-Six changes to a made up tool-library system. For each one, decide how it should be classified.
+Six changes to a made up tool-library system. For each one, decide how it should be classified. Your rule: changing an existing default that alters screens is major; a correction that makes a component meet its own documented standard is a patch.
 
 Correcting a spelling mistake on the card documentation page.
 
@@ -7363,11 +7367,11 @@ A re-runnable check attached to every guarantee, with all of them run today and 
 **Running it now:** Doing the check today rather than describing it. An unrun check is a plan.
 
 
-### Try the distinction · 1 of 6
+### Try the distinction · 1 of 7
 
 Section: practice-plan. Stable action: step-3-sort-1.
 
-Six statements from a made up tool-library system. For each one, decide whether the system can guarantee it.
+Seven statements from a made up tool-library system. For each one, decide whether the system can guarantee it.
 
 The focus ring meets the contrast threshold on every surface the foundations permit.
 
@@ -7389,11 +7393,11 @@ Now sort your own candidate guarantees the same way, and move anything in the se
 </details>
 
 
-### Try the distinction · 2 of 6
+### Try the distinction · 2 of 7
 
 Section: practice-plan. Stable action: step-3-sort-2.
 
-Six statements from a made up tool-library system. For each one, decide whether the system can guarantee it.
+Seven statements from a made up tool-library system. For each one, decide whether the system can guarantee it.
 
 The page has one page title and no skipped heading levels.
 
@@ -7415,11 +7419,11 @@ Now sort your own candidate guarantees the same way, and move anything in the se
 </details>
 
 
-### Try the distinction · 3 of 6
+### Try the distinction · 3 of 7
 
 Section: practice-plan. Stable action: step-3-sort-3.
 
-Six statements from a made up tool-library system. For each one, decide whether the system can guarantee it.
+Seven statements from a made up tool-library system. For each one, decide whether the system can guarantee it.
 
 Every interactive component behaves as its documented key table says.
 
@@ -7441,11 +7445,11 @@ Now sort your own candidate guarantees the same way, and move anything in the se
 </details>
 
 
-### Try the distinction · 4 of 6
+### Try the distinction · 4 of 7
 
 Section: practice-plan. Stable action: step-3-sort-4.
 
-Six statements from a made up tool-library system. For each one, decide whether the system can guarantee it.
+Seven statements from a made up tool-library system. For each one, decide whether the system can guarantee it.
 
 Every image has appropriate alternative text.
 
@@ -7467,13 +7471,13 @@ Now sort your own candidate guarantees the same way, and move anything in the se
 </details>
 
 
-### Try the distinction · 5 of 6
+### Try the distinction · 5 of 7
 
 Section: practice-plan. Stable action: step-3-sort-5.
 
-Six statements from a made up tool-library system. For each one, decide whether the system can guarantee it.
+Seven statements from a made up tool-library system. For each one, decide whether the system can guarantee it.
 
-The product conforms to WCAG 2.2 level AA.
+Each page built with the system conforms to WCAG 2.2 level AA.
 
 - the system can guarantee it
 - the page author owns it
@@ -7482,22 +7486,48 @@ The product conforms to WCAG 2.2 level AA.
 <details>
 <summary>After your attempt</summary>
 
-the system can guarantee it — Conformance is a property of a page, and a component set is not a page.
+the system can guarantee it — Conformance is a property of a page, and a component set is not a page. The system can help; it cannot make the claim.
 
-the page author owns it — They own testing their page, and even then conformance rests on a full tested build rather than on a claim.
+the page author owns it — Conformance is claimed for a page by whoever builds and tests it, and it rests on that tested page rather than on the components it uses. This is why the system claims no page-level conformance.
 
-nobody can guarantee it — Not as a standing promise about a product that keeps changing. This is the sentence the boundary in step 5 exists to keep out.
+nobody can guarantee it — A tested page can conform, and its author can claim that for it. What nobody can promise is that every future page will, which is the job of the boundary in step 5.
 
 Now sort your own candidate guarantees the same way, and move anything in the second group into the responsibilities list.
 
 </details>
 
 
-### Try the distinction · 6 of 6
+### Try the distinction · 6 of 7
 
 Section: practice-plan. Stable action: step-3-sort-6.
 
-Six statements from a made up tool-library system. For each one, decide whether the system can guarantee it.
+Seven statements from a made up tool-library system. For each one, decide whether the system can guarantee it.
+
+Every disabled person will complete every task with any assistive technology.
+
+- the system can guarantee it
+- the page author owns it
+- nobody can guarantee it
+
+<details>
+<summary>After your attempt</summary>
+
+the system can guarantee it — No component set can know every person, every task, or every assistive technology and its settings.
+
+the page author owns it — An author can test their page with some assistive technologies. Every person and every technology is beyond any tested page.
+
+nobody can guarantee it — It is a promise about people rather than about pages. Testing narrows the risk; nothing makes it a guarantee, and it is the kind of sentence the boundary in step 5 keeps out.
+
+Now sort your own candidate guarantees the same way, and move anything in the second group into the responsibilities list.
+
+</details>
+
+
+### Try the distinction · 7 of 7
+
+Section: practice-plan. Stable action: step-3-sort-7.
+
+Seven statements from a made up tool-library system. For each one, decide whether the system can guarantee it.
 
 Every documented state is distinguishable with colour removed.
 
@@ -8053,13 +8083,13 @@ Write your answer for “What the others are, and how they should be treated”.
 
 Section: practice-plan. Stable action: step-2-brief.
 
-Three components compared across every representation, with each difference measured rather than eyeballed.
+Three components compared across their representations (the supplied button and text input, plus one of your own), with each difference measured rather than eyeballed.
 
-- Compare three components across representations.
+- Compare three components across representations: the supplied button and text input, plus one of your own from Lessons 3 and 6 (its drawing against its documentation). If you have none, write that the third is missing.
 - Measure rather than eyeballing where you can.
 - Record every difference, however small.
 
-**Start here:** Open the inspector on the built component and the drawing side by side, and compare one value at a time.
+**Start here:** Open the inspector on the supplied button and read its computed values against the token table on the same page, one value at a time. For your own component, put its drawing beside its documentation.
 
 **Enough:** Every difference is written down, including the ones too small to matter.
 
@@ -8156,7 +8186,7 @@ Section: practice-plan. Stable action: step-3-sort-2.
 
 Six differences found auditing a made up tool-library system. For each one, decide what it tells you.
 
-The drawing has a disabled state for the button. Nothing in the build implements it, and no screen uses it.
+The documentation lists a disabled state for the button. Nothing in the build implements it, and no screen uses it.
 
 - the build is right
 - the drawing is right
@@ -8167,9 +8197,9 @@ The drawing has a disabled state for the button. Nothing in the build implements
 
 the build is right — The build is right about today and says nothing about whether the state should exist.
 
-the drawing is right — It is right that a disabled state is probably needed. It is not evidence that one exists.
+the drawing is right — No drawing is involved; the documentation is the copy that disagrees here.
 
-the documentation is describing something that never existed — A state that was drawn, documented and never built is the commonest drift of all, and the honest fix is to build it or to remove it from the documentation.
+the documentation is describing something that never existed — A state that was documented and never built is the commonest drift of all, and the honest fix is to build it or to remove it from the documentation.
 
 Now decide each of your own drifts, and note the ones where the authoritative version turned out to be wrong.
 
@@ -8182,7 +8212,7 @@ Section: practice-plan. Stable action: step-3-sort-3.
 
 Six differences found auditing a made up tool-library system. For each one, decide what it tells you.
 
-The documentation says the title truncates to two lines. The build truncates to one.
+The drawing shows the title truncating to two lines; the build truncates to one, cutting the word that tells tools apart.
 
 - the build is right
 - the drawing is right
@@ -8191,11 +8221,11 @@ The documentation says the title truncates to two lines. The build truncates to 
 <details>
 <summary>After your attempt</summary>
 
-the build is right — Truncating to one line loses the second half of most titles, and the two-line rule was decided against real content.
+the build is right — Truncating to one line cuts the word that tells one tool from another, and the two-line rule was decided against real content.
 
 the drawing is right — The rule was reasoned from real titles. The build is a defect, and this is a case where the authority is true and wrong.
 
-the documentation is describing something that never existed — It was decided and specified; it simply was not built.
+the documentation is describing something that never existed — No documentation is involved, and the build does truncate; it truncates wrongly.
 
 Now decide each of your own drifts, and note the ones where the authoritative version turned out to be wrong.
 
@@ -8269,7 +8299,7 @@ The documentation describes a hover treatment for the unavailable card. The spec
 <details>
 <summary>After your attempt</summary>
 
-the build is right — The build follows the specification, so it is right and it is not the interesting finding.
+the build is right — The build follows the specification. The finding here is about the documentation, which describes a hover nobody built.
 
 the drawing is right — No drawing is involved.
 

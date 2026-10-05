@@ -55,7 +55,11 @@
     .key-facts { grid-template-columns: repeat(3, 1fr); }
   }
 
-  /* The card grid needs no change point at all: cards wrap and grow by themselves. */
+  /* The card grid needs no change point at all: cards wrap and grow by themselves.
+     With five cards, some widths still leave one card alone on the last row. No wrapping rule prevents
+     that. You can accept it, or let the last card grow to fill its row: change this list to
+     display: flex; flex-wrap: wrap; (instead of the grid lines below) and give .card the rule
+     flex: 1 1 14rem; */
   .cards {
     list-style: none;
     margin: 0;
