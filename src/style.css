@@ -108,7 +108,7 @@ a {
 .workspace-label {
   font-size: 9px;
   letter-spacing: 1.7px;
-  color: #7b8177;
+  color: #696e65;
   margin: 55px 12px 17px;
 }
 nav {
@@ -122,7 +122,7 @@ nav button {
   padding: 13px 14px;
   border: 0;
   background: none;
-  color: #69746d;
+  color: #656f69;
   text-align: left;
   font-size: 14px;
   border-radius: 7px;
@@ -152,7 +152,7 @@ nav button[aria-current] {
 }
 .sidebar-note span {
   font-size: 12px;
-  color: #7a8175;
+  color: #686e64;
 }
 .profile {
   display: flex;
@@ -176,7 +176,7 @@ nav button[aria-current] {
   display: block;
   font-weight: 400;
   font-size: 10px;
-  color: #81867e;
+  color: #696d67;
 }
 .content {
   margin-left: 246px;
@@ -193,14 +193,14 @@ nav button[aria-current] {
   font-size: 12px;
 }
 .crumb {
-  color: #8a9086;
+  color: #6a6f67;
   margin-left: 9px;
 }
 .device-status {
   display: flex;
   align-items: center;
   gap: 7px;
-  color: #71806f;
+  color: #647162;
   font-size: 11px;
 }
 .online-dot,
@@ -222,7 +222,7 @@ main {
   font-size: 10px;
   letter-spacing: 1.7px;
   font-weight: 600;
-  color: #75816b;
+  color: #66705d;
   margin: 7px 0 17px;
 }
 h1 {
@@ -248,13 +248,13 @@ h3 {
 }
 p {
   font-size: 14px;
-  color: #6d776e;
+  color: #656e65;
   line-height: 1.8;
 }
 .intro {
   font-size: 14px;
   line-height: 1.85;
-  color: #748072;
+  color: #656f63;
 }
 .greeting {
   display: flex;
@@ -311,7 +311,7 @@ p {
   left: 59px;
   font-family: Georgia, serif;
   font-style: italic;
-  color: #8c937d;
+  color: #6a6f5e;
   font-size: 16px;
 }
 .stats {
@@ -331,7 +331,7 @@ p {
   display: block;
   font-size: 9px;
   letter-spacing: 1.4px;
-  color: #7b8374;
+  color: #696f63;
   margin-bottom: 7px;
 }
 .stats strong {
@@ -341,7 +341,7 @@ p {
 }
 .stats small {
   font-size: 12px;
-  color: #81877a;
+  color: #696e64;
   font-weight: 400;
 }
 .section-heading {
@@ -357,7 +357,7 @@ p {
 .section-heading > span {
   font-size: 9px;
   letter-spacing: 1.1px;
-  color: #7b8474;
+  color: #676e61;
 }
 .today-grid {
   display: grid;
@@ -485,7 +485,7 @@ p {
   background: #e0e3d4;
   border-radius: 50%;
   font-size: 9px;
-  color: #6b775e;
+  color: #657058;
 }
 .week .study-day {
   background: #607957;
@@ -493,7 +493,7 @@ p {
 }
 .rhythm small {
   font-size: 10px;
-  color: #777e69;
+  color: #69705d;
 }
 .text-button {
   border: 0;
@@ -517,7 +517,7 @@ p {
 .level-label {
   font-size: 9px;
   letter-spacing: 1.4px;
-  color: #89917c;
+  color: #69705f;
 }
 .preview-levels h3 {
   font-family: Georgia, serif;
@@ -530,7 +530,7 @@ p {
 }
 .muted {
   font-size: 11px;
-  color: #7d8478;
+  color: #686e64;
   /* A submitted Figma link is one unbroken string; without this it pushed the
      page sideways on a phone. */
   overflow-wrap: anywhere;
@@ -548,7 +548,7 @@ p {
 .level-number {
   font-family: Georgia, serif;
   font-size: 35px;
-  color: #9aa88f;
+  color: #67705f;
 }
 .level-row > div {
   flex: 1;
@@ -565,7 +565,7 @@ p {
 }
 .planned {
   font-size: 11px;
-  color: #727d69;
+  color: #656f5d;
   white-space: nowrap;
   background: #f1f2e9;
   border-radius: 30px;
@@ -612,7 +612,7 @@ p {
 .step small {
   font-size: 11px;
   float: right;
-  color: #7b8374;
+  color: #696f63;
   font-weight: 400;
 }
 .step p {
@@ -652,7 +652,7 @@ p {
 }
 .practice-form small {
   font-size: 10px;
-  color: #7b8177;
+  color: #696e65;
   display: block;
   margin-top: 6px;
 }
@@ -710,7 +710,7 @@ footer {
   padding-top: 20px;
   border-top: 1px solid #e1e5d9;
   font-size: 10px;
-  color: #7d8577;
+  color: #686f63;
   gap: 15px;
 }
 .skip {
@@ -1036,7 +1036,7 @@ footer {
 .feedback-item small {
   display: block;
   font-size: 11px;
-  color: #68795e;
+  color: #627258;
 }
 .cloud-login .actions {
   margin-top: 8px;
@@ -1335,7 +1335,7 @@ footer {
 }
 .inline-clock {
   font-weight: 500;
-  color: #4f8a5b;
+  color: #45784f;
   font-variant-numeric: tabular-nums;
 }
 .session-summary h2 {
@@ -1423,7 +1423,7 @@ button.step-pick[aria-pressed="true"] .step-number {
   justify-content: space-between;
   font-size: 11px;
   letter-spacing: 0.6px;
-  color: #7b8374;
+  color: #696f63;
   margin-top: 5px;
   text-transform: uppercase;
 }
@@ -2592,7 +2592,7 @@ progress::-webkit-progress-value { background: #567e48; border-radius: 8px; }
 .session-strip li { padding: 8px 12px; border: 1px solid #d7dfd0; border-radius: 10px; background: #fffefb; display: grid; gap: 2px; font-size: 14px; }
 .session-strip li span { color: #526456; font-size: 12px; letter-spacing: .04em; text-transform: uppercase; }
 .session-strip li[aria-current="step"] { border-color: #214e46; box-shadow: inset 0 0 0 1px #214e46; }
-.session-strip li.is-done strong::after { content: " ✓"; color: #567e48; }
+.session-strip li.is-done strong::after { content: " ✓"; color: #517744; }
 .welcome-back, .pause-point { margin: 14px 0 0; padding: 14px 16px; border-radius: 12px; background: #eeefdf; border-left: 4px solid #214e46; }
 .welcome-back p, .pause-point p { margin: 0 0 6px; }
 .pause-point .secondary, .welcome-back .text-button { min-height: 44px; }
@@ -2683,8 +2683,8 @@ progress::-webkit-progress-value { background: #567e48; border-radius: 8px; }
 .progress-states h3 { font-family: Georgia, "Times New Roman", serif; margin: 0 0 8px; }
 .progress-states ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
 .progress-states li { display: grid; grid-template-columns: 24px 1fr; gap: 8px; align-items: start; }
-.progress-states li > span:first-child { color: #9eae92; font-weight: 700; }
-.progress-states li.is-done > span:first-child { color: #567e48; }
+.progress-states li > span:first-child { color: #65705e; font-weight: 700; }
+.progress-states li.is-done > span:first-child { color: #517744; }
 .progress-states small { display: block; color: #526456; }
 .review-request, .self-review, .creator-review, .review-queue { margin: 18px 0; }
 .review-destination { display: grid; gap: 8px; margin: 8px 0 12px; }
@@ -2744,3 +2744,6 @@ progress::-webkit-progress-value { background: #567e48; border-radius: 8px; }
   .path-progress { grid-template-columns: 1fr; }
   .stage-card { padding: 2px 10px; }
 }
+.portfolio-path h2 { font-size: 1.12rem; margin: 1rem 0 .4rem; }
+.portfolio-path h3 { font-size: 1rem; margin: .8rem 0 .3rem; }
+.starter-route pre:focus-visible { outline: 3px solid #517744; outline-offset: 2px; }
