@@ -82,7 +82,7 @@ export const guided19: Record<string, Guided> = {
           { term: 'Excluded, not deleted', meaning: 'Kept out of this portfolio and kept. A different role or a different claim may need it.' },
         ],
         sorter: {
-          intro: 'Six pieces of work from a made up set of three projects, against the claim that research can be traced to a decision. For each one, decide what it is.',
+          intro: 'Six pieces of work from a made up set of three projects, against three claims: research traced to a decision, testing and repairing, and stating limits. For each one, decide what it is.',
           options: ['strong evidence for a claim', 'surplus — supports none of them', 'looks like evidence and is not'],
           items: [
             { id: 'synthesis-page', text: 'A synthesis page with participant counts, a kept contradiction, and the framing that followed from it.', answer: 'strong evidence for a claim',
@@ -126,7 +126,7 @@ export const guided19: Record<string, Guided> = {
           pattern: 'Two of these actively cost you. A persona and an impact claim both look like the evidence a reviewer wants, and both collapse under the first question, taking the rest of the portfolio with them.',
         },
         start: 'List everything you have, then mark what supports nothing.',
-        enough: 'Nothing is deleted, and the excluded list is longer than you expected.' },
+        enough: 'Nothing is deleted, and every excluded item is listed with why it supports none of your claims.' },
       { expect: 'A check that a ninety-second skim would reach every claim.',
         fields: ['skim-check', 'improvement-made'],
         terms: [
@@ -173,7 +173,7 @@ export const guided19: Record<string, Guided> = {
       {
         question: 'You have a persona document made from three interviews. Is it evidence that research reached a decision?',
         options: [
-          { label: 'Weak evidence: what three people said is inside it and cannot be recovered from it.', correct: true, was: ['No. The trace runs backwards through it: what three people said is inside it and cannot be recovered from it.'], feedback: 'The trace runs backwards through it. It may also carry a stock photograph and a name, which a reviewer asking one question finds is an invented person. The synthesis page with counts shows the same research and can be checked.' },
+          { label: 'Not evidence: what three people said is inside it and cannot be recovered from it.', correct: true, was: ['No. The trace runs backwards through it: what three people said is inside it and cannot be recovered from it.', 'Weak evidence: what three people said is inside it and cannot be recovered from it.'], feedback: 'The trace runs backwards through it. It may also carry a stock photograph and a name, which a reviewer asking one question finds is an invented person. The synthesis page with counts shows the same research and can be checked.' },
           { label: 'Good evidence, since it was built from three real interviews with consenting people.', was: ['Yes, since it was built from real interviews.'], feedback: 'Built from them and not traceable to them. A composite hides the counts and the contradictions.' },
           { label: 'Good evidence, as long as the interview notes are attached to it in the portfolio.', was: ['Yes, if the interviews are also included.'], feedback: 'Then the notes would be the evidence and the persona a summary that loses their detail — and raw interview notes do not belong in a portfolio.' },
         ],
@@ -279,16 +279,16 @@ export const guided19: Record<string, Guided> = {
                 'allowed if labelled with today’s date': 'A real check, run now, honestly dated. It closes the gap and does not pretend the project had it.',
                 'not allowed': 'Nothing about it is dishonest as long as the date is right.',
               } },
-            { id: 'write-synthesis', text: 'Writing the synthesis document the first project never had, from your memory of the sessions.', answer: 'not allowed',
+            { id: 'write-synthesis', text: 'Writing the synthesis the first project never had, from memory, and filing it undated with the project notes.', answer: 'not allowed',
               feedback: {
                 allowed: 'It would be a document that did not exist, presented as part of a project that did not produce one.',
-                'allowed if labelled with today’s date': 'Labelled honestly it becomes a reflection written now, which is a different and much weaker artefact than a contemporaneous synthesis.',
-                'not allowed': 'As a project artefact, no. The honest answer is that the project has no synthesis, and the case study says so.',
+                'allowed if labelled with today’s date': 'This one is filed undated among the notes, so it has no date to be labelled with. Dated today and filed as a reflection it would be a different and much weaker artefact.',
+                'not allowed': 'Filed undated with the notes, it passes as a project artefact. The honest answer is that the project has no synthesis, and the case study says so.',
               } },
-            { id: 'redraw-flow', text: 'Redrawing a scruffy pencil flow neatly, with the same content.', answer: 'allowed',
+            { id: 'redraw-flow', text: 'Redrawing a scruffy pencil flow neatly, same content, labelled redrawn with the original kept beside it.', answer: 'allowed',
               feedback: {
-                allowed: 'The thinking is unchanged and the drawing is legible. Keep the original beside it if you can.',
-                'allowed if labelled with today’s date': 'The content is contemporaneous; only the rendering is new.',
+                allowed: 'The thinking is unchanged, the drawing is legible, and the label and the original beside it show which is which.',
+                'allowed if labelled with today’s date': 'The content is contemporaneous; only the rendering is new, and the redrawn label already says so.',
                 'not allowed': 'Illegibility is not authenticity.',
               } },
             { id: 'follow-up-ask', text: 'Asking the shop owner one short follow-up question this week and adding his answer.', answer: 'allowed if labelled with today’s date',
@@ -481,10 +481,10 @@ export const guided19: Record<string, Guided> = {
                 'invites embellishment': 'Nothing about the order pushes you to invent.',
                 'wastes the reader’s attention': 'It puts the weakest work where attention is highest, and the progress is visible from dates anyway.',
               } },
-            { id: 'same-job', text: 'All three telling the full process from research to launch.', answer: 'wastes the reader’s attention',
+            { id: 'same-job', text: 'All three telling the same full process, though every project has every stage on record.', answer: 'wastes the reader’s attention',
               feedback: {
                 sound: 'It shows a repeatable process, and the reader learns the same fact three times.',
-                'invites embellishment': 'Where a project lacks a stage, telling the full process does push you to fill it. That is the second problem.',
+                'invites embellishment': 'Every stage is on record here, so nothing needs filling. Where a project lacks a stage, telling the full process would push you to fill it; this plan’s problem is repetition.',
                 'wastes the reader’s attention': 'Three case studies doing one job is one case study repeated.',
               } },
             { id: 'thin-project-honest', text: 'The thin project as four hundred words, explicit that its research was a single conversation, focused on the interface work.', answer: 'sound',
@@ -602,7 +602,7 @@ export const guided19: Record<string, Guided> = {
             { label: 'What the opening was', text: 'Two paragraphs on the repair trade, how independent shops work, and why the sector is under pressure. Then the project.' },
             { label: 'Why I wrote it that way', text: 'It is the order I learned things in, and it felt discourteous to start with a problem a reader had no context for.' },
             { label: 'What the reviewer sees in ninety seconds', text: 'Two paragraphs of sector background, and no indication that anything was found, decided or changed.' },
-            { label: 'What the opening became', text: 'The owner’s sentence — “I spend half my day telling people their laptop is not ready” — then eleven calls about progress in five working days, then seven over a matched five days after the slip wording changed.' },
+            { label: 'What the opening became', text: 'The owner’s sentence — “I spend half my day telling people their laptop is not ready” — then his tally: eleven calls about progress in five working days, about two a day and far below his own estimate of six to ten, then seven over a matched five days after the slip wording changed.' },
             { label: 'Where the background went', text: 'One clause in the second paragraph. Nobody has asked for the rest of it.' },
           ],
           wrongTurn: 'The wrong turn is opening with context, because you learned it first and it feels like the polite order. The opening is the only part everybody reads, and background spends it on something a reader can infer.',
@@ -688,11 +688,11 @@ export const guided19: Record<string, Guided> = {
                 'weaken to what the evidence supports': 'There is nothing underneath it to weaken to.',
                 'cut it': 'The reasoning in the decision section is stronger than an appeal to practice nobody can verify.',
               } },
-            { id: 'owner-said', text: 'The owner said he was answering between six and ten such calls a day.', answer: 'keep as written',
+            { id: 'owner-said', text: 'The owner estimated six to ten such calls a day; his tally then counted eleven in five working days.', answer: 'keep as written',
               feedback: {
-                'keep as written': 'Attributed, and it says he said it rather than that it is so. The estimate is his and the sentence is accurate.',
-                'weaken to what the evidence supports': 'The attribution is already the weakening.',
-                'cut it': 'It is how the problem was sized before anything was counted.',
+                'keep as written': 'Attributed, and it puts his estimate beside his own count, so the gap is stated before a reviewer finds it. Both halves are accurate.',
+                'weaken to what the evidence supports': 'The attribution and the count beside it are already the weakening.',
+                'cut it': 'It is how the problem was sized before anything was counted, and the gap is itself a finding.',
               } },
           ],
           then: 'Now trace your own claims, and mark the ones with no file behind them.',
@@ -769,7 +769,7 @@ export const guided19: Record<string, Guided> = {
         { id: 'permission-asked', label: 'How you asked, and who said no, by role', kind: 'short', sensitive: true },
       ] },
       { id: 'plurals', title: 'Search for false plurals', fields: [
-        { id: 'we-count', label: 'How many times we, our and the team appear in the drafts', kind: 'short', hint: 'Search for them. It is a thirty-second check and it catches the commonest detected dishonesty in portfolios.' },
+        { id: 'we-count', label: 'How many times we, our and the team appear in the drafts', kind: 'short', hint: 'Search for them. It is a thirty-second check and it catches a common overstatement in portfolios.' },
         { id: 'corrected', label: 'Each one corrected, or kept because there really was a team', kind: 'long' },
       ] },
       { id: 'sceptic', title: 'Read it as a sceptic', fields: [
@@ -894,7 +894,7 @@ export const guided19: Record<string, Guided> = {
       {
         question: 'Will saying a project was self-directed make it count for less?',
         options: [
-          { label: 'Saying nothing and then being asked about it costs far more than the label does.', correct: true, was: ['Saying nothing and being asked is far worse. A labelled self-directed project with real evidence beats an ambiguously framed one.'], feedback: 'Role inflation is the most commonly detected dishonesty in portfolios and the easiest to avoid. A labelled self-directed project with real evidence beats an ambiguously framed one, and the label costs one line.' },
+          { label: 'Saying nothing and then being asked about it costs far more than the label does.', correct: true, was: ['Saying nothing and being asked is far worse. A labelled self-directed project with real evidence beats an ambiguously framed one.'], feedback: 'Role inflation is a common overstatement in portfolios, easily detected and easily avoided. A labelled self-directed project with real evidence beats an ambiguously framed one, and the label costs one line.' },
           { label: 'It will, which is why the framing is better left open for the reader to interpret.', was: ['Yes, which is why the framing should be left open.'], feedback: 'Left open means the reader assumes, and the correction arrives in an interview as a discovery.' },
           { label: 'It will, slightly, and that loss is simply the price of being honest about it.', was: ['Yes, slightly, and honesty is worth the cost.'], feedback: 'There is little cost. What reviewers discount is the portfolio where the role turned out to differ from the impression.' },
         ],
@@ -973,7 +973,7 @@ export const guided19: Record<string, Guided> = {
           scenario: 'Made-up example. Checking what participants agreed to, and going by what I remember saying.',
           beats: [
             { label: 'What I remembered', text: 'Telling everybody that the notes were for a project and that nothing would identify them. That is roughly what I said, and it is what I believed I had agreed with them.' },
-            { label: 'What the script said', text: 'That the recording would be used to improve the shop’s page and would not be shared outside the project. Nothing about a portfolio, and the word project meant the thing we were doing.' },
+            { label: 'What the script said', text: 'For my first project: that the notes would be used to improve the class-booking page and would not be shared outside the project. Nothing about a portfolio, and the word project meant the thing we were doing.' },
             { label: 'Where the two differ', text: 'Nothing would identify them is a promise about anonymity. Not shared outside the project is a promise about scope, and a public portfolio is outside it.' },
             { label: 'What that ruled out', text: 'Quoting participants from that project at all, anonymised or not. The limit is on publication rather than on identification.' },
             { label: 'What the case study does instead', text: 'Describes the findings in my own words with no quotations, and says on the page that participant material is not published because consent covered the project only.' },
@@ -1048,11 +1048,11 @@ export const guided19: Record<string, Guided> = {
                 'recreate or trim it': 'Recreating somebody’s words is worse than showing them.',
                 'describe it instead': 'Describe what the research found and do not display the material. Asking again is the other option.',
               } },
-            { id: 'workbench-photo', text: 'A photograph of a workbench showing three other customers’ tickets.', answer: 'describe it instead',
+            { id: 'workbench-photo', text: 'A photograph of a workbench showing three other customers’ tickets.', answer: 'recreate or trim it',
               feedback: {
                 'show it': 'Three people who consented to nothing are identifiable in it.',
-                'recreate or trim it': 'A hand-drawn version of the sheet with invented entries is a recreation and a good answer, so this is defensible too if the drawing replaces the photograph entirely.',
-                'describe it instead': 'Either describe it or replace it with a drawing. What cannot happen is the photograph.',
+                'recreate or trim it': 'Redraw the sheet with invented entries, labelled recreated; the photograph itself is never shown.',
+                'describe it instead': 'Describing is reserved for material whose consent falls short. The sheet’s design can be shown safely as a labelled redrawing, as the job slip can.',
               } },
             { id: 'real-job-number', text: 'A photograph of a real job slip showing a customer’s name and phone number.', answer: 'recreate or trim it',
               feedback: {
@@ -1176,7 +1176,7 @@ export const guided19: Record<string, Guided> = {
             { label: 'What a reviewer sees', text: 'A set of outputs with nothing behind them. Nothing in twelve finished screens shows a decision being made, and polish everywhere reads as work rebuilt for the portfolio.' },
             { label: 'What I had and had not shown', text: 'A paper flow with the failure branches drawn in, the synthesis cards, and the exception table were all in the project folder and none of them was in the case study.' },
             { label: 'What the six images became', text: 'The paper flow, the synthesis cards recreated without the participant name, the exception table, the before-and-after pair with the re-test caption, and the handover card.' },
-            { label: 'What happened to the twelve screens', text: 'Four survived as the before-and-after pair and two context shots. The other eight showed nothing the flow did not.' },
+            { label: 'What happened to the twelve screens', text: 'Two survived as the before-and-after pair. The other ten showed nothing the flow did not.' },
           ],
           wrongTurn: 'The wrong turn is showing the finished work, because it is what you are proudest of and it is what looks like a portfolio. Finished screens argue nothing on their own, and a page of them implies a rebuild rather than a project.',
           tradeoff: 'A page with paper and index cards on it looks less polished than a grid of screens, and somebody skimming for visual craft will see less of it.',
@@ -1506,7 +1506,7 @@ export const guided19: Record<string, Guided> = {
         { id: 'keyboard-path', label: 'The keyboard path through every link, and the focus ring', kind: 'long' },
         { id: 'contrast-alt', label: 'Contrast on text and on the focus indicator, and alternative text on every image', kind: 'long' },
       ] },
-      { id: 'device', title: 'On a real connection', fields: [
+      { id: 'device', title: 'What travels to your phone', fields: [
         { id: 'real-connection', label: 'How you got it onto your phone without hosting, and what did not travel', kind: 'long', hint: 'Images in a separate folder go missing unless the folder travels too; a PDF carries them. If you later publish, also open it over mobile data.' },
       ] },
       { id: 'record', title: 'Record what you checked', fields: [
@@ -1574,7 +1574,7 @@ export const guided19: Record<string, Guided> = {
         },
         start: 'Send the PDF or the single file to yourself through a channel you already use, and open it on your phone.',
         enough: 'You read a whole case study on a real phone and know what did not travel.' },
-      { expect: 'What was checked and what was not, written on the site itself.',
+      { expect: 'Your PDF copy checked for headings, reading order and link text, and what was checked and what was not, written on the site itself.',
         fields: ['pdf-check', 'checked-not-checked', 'improvement-made'],
         terms: [
           { term: 'Written on the site', meaning: 'On an about page rather than in a document nobody sees. It is also the clearest demonstration of a claim about stating limits.' },
@@ -1778,11 +1778,11 @@ export const guided19: Record<string, Guided> = {
                 'leave it': 'It is on the written page and the listener has not read it.',
                 'the recording is doing its job': 'It caught an omission you would not have noticed.',
               } },
-            { id: 'hearing-yourself', text: 'Noticing, on the recording, that you say the design is obvious three times.', answer: 'the recording is doing its job',
+            { id: 'hearing-yourself', text: 'Realising that none of these things was audible to you while you were speaking.', answer: 'the recording is doing its job',
               feedback: {
-                'fix it before the second take': 'Worth changing, and the point here is the mechanism.',
-                'leave it': 'Three repetitions of obvious undercuts the reasoning you are describing.',
-                'the recording is doing its job': 'You cannot hear your own verbal habits while speaking. This is precisely what the recording is for, and the fix follows from it.',
+                'fix it before the second take': 'There is nothing to fix in the realisation itself; the fixes are the other items it revealed.',
+                'leave it': 'It is worth more than leaving: it is the reason you recorded at all.',
+                'the recording is doing its job': 'You cannot hear your own habits while speaking. This is precisely what the recording is for, and the fixes follow from it.',
               } },
           ],
           then: 'Now watch your own recording once and write three changes rather than a general impression.',
@@ -1802,7 +1802,7 @@ export const guided19: Record<string, Guided> = {
           beats: [
             { label: 'What I did', text: 'Deleted the first recording after the second one came out well. It was fourteen rambling minutes and I had no intention of showing it to anybody.' },
             { label: 'What I lost', text: 'The evidence of the change. The second recording alone shows somebody who delivers a tidy ten minutes, which says nothing about how it got there.' },
-            { label: 'What the pair showed', text: 'Fourteen minutes with four of context, then ten and a half opening with the count. It is a before-and-after pair, of exactly the kind the portfolio argues for everywhere else.' },
+            { label: 'What the pair showed', text: 'Fourteen minutes with four of context, then nine and a half opening with the count. It is a before-and-after pair, of exactly the kind the portfolio argues for everywhere else.' },
             { label: 'Where it was useful', text: 'Not shown to anybody. Used when writing the iteration section, because I had just done the thing I was describing and could write the prediction and result honestly.' },
             { label: 'What I do now', text: 'Keep both, in the project folder rather than on the site. The cost is two files.' },
           ],
@@ -1881,7 +1881,7 @@ export const guided19: Record<string, Guided> = {
         { id: 'rehearsed-again', label: 'What you rehearsed until the concession came first', kind: 'short' },
       ] },
       { id: 'asked', title: 'Have somebody ask them', fields: [
-        { id: 'who-asked', label: 'Who put the questions to you unprompted, or how you tested it alone', kind: 'short', hint: 'Unprompted and out of order. Alone: record yourself answering from a shuffled list.' },
+        { id: 'who-asked', label: 'Who put the questions to you unprompted, or how you tested it alone', kind: 'short', hint: 'Unprompted and out of order. Alone: record yourself answering from a shuffled list, and label it self-review.' },
         { id: 'drifted', label: 'Any answer that drifted from what you wrote', kind: 'long', hint: 'This is the finding. Under pressure the prepared answer is not always the one that arrives.' },
         improvementMade,
       ] },
@@ -1996,7 +1996,7 @@ export const guided19: Record<string, Guided> = {
           then: 'Now check your own answers: which group does each first sentence belong to?',
           pattern: 'Defence and invention both arrive when the concession is not prepared. The answers that work all agree with something in the first sentence, and two of them are honest unknowns.',
         },
-        start: 'Hand somebody the shuffled list and ask them not to be gentle.',
+        start: 'Hand somebody the shuffled list and ask them not to be gentle. Alone: shuffle it, record yourself answering, and label the recording self-review.',
         enough: 'You recorded where the spoken answer differed from the written one.' },
     ],
     checks: [
@@ -2064,7 +2064,8 @@ export const guided19: Record<string, Guided> = {
         { id: 'verification-date', label: 'The date you checked the host', kind: 'short', requiredWhen: { field: 'sharing-route', values: ['Published: a public site, checked on the day'] } },
       ] },
       { id: 'cold', title: 'A cold reader', fields: [
-        { id: 'cold-reader-said', label: 'What a cold reader said the portfolio shows, close to their words, by role', kind: 'long', sensitive: true, hint: 'Somebody who has not seen any of it, reading it once without you explaining anything.' },
+        { id: 'cold-read-route', label: 'Who did the cold read', kind: 'choice', options: ['Somebody unfamiliar read it', 'Self cold-read after at least a week away, labelled self-review'], hint: 'Both are complete routes. A self cold-read is labelled self-review and is never reported as somebody else’s reading.' },
+        { id: 'cold-reader-said', label: 'What the cold read said the portfolio shows — a cold reader’s words, by role, or your own ninety-second skim, labelled self-review', kind: 'long', sensitive: true, hint: 'Somebody who has not seen any of it, reading it once without you explaining anything. With nobody available: leave it at least a week, skim it once for ninety seconds, and write what it says you can do.' },
         { id: 'matched-claims', label: 'Which of your claims that matched, and which did not', kind: 'long' },
       ] },
       { id: 'publish', title: 'Publish deliberately', fields: [
@@ -2125,10 +2126,11 @@ export const guided19: Record<string, Guided> = {
         },
         start: 'Check the host on the day you publish rather than trusting a note from last month.',
         enough: 'Nothing about the hosting requires a card or becomes a charge.' },
-      { expect: 'A cold reader’s account of what the portfolio shows, and which claims that matched.',
-        fields: ['cold-reader-said', 'matched-claims'],
+      { expect: 'A cold reader’s account of what the portfolio shows — or a labelled self cold-read after a week away — and which claims that matched.',
+        fields: ['cold-read-route', 'cold-reader-said', 'matched-claims'],
         terms: [
-          { term: 'A cold reader', meaning: 'Somebody who has not seen any of it, reading once, with you saying nothing. It is the only test of whether the skim carries the claims.' },
+          { term: 'A cold reader', meaning: 'Somebody who has not seen any of it, reading once, with you saying nothing. It is the best test of whether the skim carries the claims.' },
+          { term: 'A self cold-read', meaning: 'The solo route: at least a week away, one ninety-second skim, then what it says you can do, labelled self-review. It catches what the skim carries; it cannot catch what only a stranger would notice.' },
           { term: 'What it does not match', meaning: 'The claim that did not arrive. It is a finding about the portfolio rather than about the reader.' },
         ],
         sorter: {
@@ -2147,11 +2149,11 @@ export const guided19: Record<string, Guided> = {
                 'a claim did not arrive': 'A finding about the portfolio. The synthesis page exists and is probably too far down the page or unlabelled in the skim.',
                 'something you did not intend arrived': 'It is an absence rather than an addition.',
               } },
-            { id: 'very-honest', text: '“It is very honest, almost self-critical.”', answer: 'something you did not intend arrived',
+            { id: 'very-honest', text: '“It reads as if none of the projects really worked.”', answer: 'something you did not intend arrived',
               feedback: {
-                'a claim arrived': 'The third claim is about stating limits, and almost self-critical is a different impression.',
-                'a claim did not arrive': 'The claim arrived and brought something with it.',
-                'something you did not intend arrived': 'Worth knowing. It may mean the limits are placed where they dominate rather than where they bound, which is a layout finding.',
+                'a claim arrived': 'None of the three claims says the projects failed. Stating limits has tipped into a different impression.',
+                'a claim did not arrive': 'It is more than an absence: an impression arrived that none of the claims makes.',
+                'something you did not intend arrived': 'Worth knowing. It may mean the limits and failures are placed where they dominate rather than where they bound, which is a layout finding.',
               } },
             { id: 'small-projects', text: '“These look like small projects.”', answer: 'something you did not intend arrived',
               feedback: {
@@ -2159,11 +2161,11 @@ export const guided19: Record<string, Guided> = {
                 'a claim did not arrive': 'None of the three is about scale.',
                 'something you did not intend arrived': 'Accurate, and worth knowing whether it crowds out the claims. The answer is usually to strengthen the claims rather than to inflate the projects.',
               } },
-            { id: 'liked-the-shop', text: '“The repair shop one was interesting.”', answer: 'something you did not intend arrived',
+            { id: 'liked-the-shop', text: '“It all seems to be about small shops.”', answer: 'something you did not intend arrived',
               feedback: {
-                'a claim arrived': 'Interesting is not a claim.',
-                'a claim did not arrive': 'It says nothing about which arrived.',
-                'something you did not intend arrived': 'Pleasant and uninformative. If it is the only thing they say, ask what the portfolio shows about how you work.',
+                'a claim arrived': 'None of the three claims is about a kind of business.',
+                'a claim did not arrive': 'It says nothing about whether the claims arrived; it adds a reading of its own.',
+                'something you did not intend arrived': 'A reader may file you as a designer for small shops. Worth knowing whether it crowds out the claims; the answer is usually to open each case study with what it shows about how you work.',
               } },
             { id: 'states-limits', text: '“Every project says what it did not find out.”', answer: 'a claim arrived',
               feedback: {
@@ -2173,10 +2175,10 @@ export const guided19: Record<string, Guided> = {
               } },
           ],
           then: 'Now ask your own cold reader and write their words rather than your summary of them.',
-          pattern: 'Two useful results here are absences, and one is an impression you did not intend. All three are findings about the portfolio, and the fix is nearly always placement rather than more words.',
+          pattern: 'One useful result here is an absence, and three are impressions you did not intend. All of them are findings about the portfolio, and the fix is nearly always placement rather than more words.',
         },
-        start: 'Ask somebody to read it once and then tell you what it says about how you work.',
-        enough: 'You wrote their words rather than your interpretation.' },
+        start: 'Ask somebody to read it once and then tell you what it says about how you work. Alone: leave it a week, skim it once for ninety seconds, then write what it says.',
+        enough: 'You wrote their words rather than your interpretation — or your own skim, labelled self-review.' },
       { expect: 'What you published, where and when, with anything deliberately kept private.',
         fields: ['published-what', 'still-private', 'improvement-made'],
         terms: [
@@ -2237,7 +2239,7 @@ export const guided19: Record<string, Guided> = {
     saveRoute: {
       auto: 'Your promise check, the sweep, the hosting verification and the cold reader’s words save as you type, on this device first and then online.',
       external: 'The published portfolio is public; the raw research, consent records and anything not agreed for publication stay in your own folder.',
-      creator: 'Your creator reads the cold reader’s words and which claim did not arrive. That one is the finding the whole module was building towards.',
+      creator: 'Your creator reads the cold reader’s words — or your labelled self cold-read — and which claim did not arrive. That one is the finding the whole module was building towards.',
       next: 'Open Your work and choose Ready for review. This closes Module 19. Module 20 takes the same discipline to employers.',
     },
   },

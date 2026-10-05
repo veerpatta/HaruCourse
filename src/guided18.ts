@@ -10,9 +10,9 @@ export const guided18: Record<string, Guided> = {
   'm18-l01-v1': {
     route: textRoute,
     worksheet: [
-      { id: 'domains', title: 'Three candidate domains', intro: 'Domains you have not used, where you already know somebody. One at a time, and name people by role rather than by name.', fields: [
-        ...[1, 2, 3].map((n) => ({ id: `domain-${n}`, label: `Domain ${n} · the domain, who you know there (by role, not name), and the problem you have heard somebody complain about`, kind: 'long' as const,
-          ...(n === 1 ? { hint: 'Heard somebody complain about, rather than one you find interesting. The difference decides whether anybody will talk to you.', example: 'Example (made up): a repair shop. I know the owner. He has complained twice that he cannot tell customers when a repair will be ready.' } : {}) })),
+      { id: 'domains', title: 'Up to three candidate domains', intro: 'Domains you have not used. One at a time, and name people by role rather than by name. If you know nobody in a domain yet, say so plainly; never invent a contact.', fields: [
+        ...[1, 2, 3].map((n) => ({ id: `domain-${n}`, label: `Domain ${n} · the domain, who you know there (by role, not name) or that you know nobody there yet, and the problem you have heard somebody complain about`, kind: 'long' as const,
+          ...(n === 1 ? { hint: 'Heard somebody complain about, rather than one you find interesting. The difference decides whether anybody will talk to you.', example: 'Example (made up): a repair shop. I know the owner. He has complained twice that he cannot tell customers when a repair will be ready.' } : { optional: true }) })),
       ] },
       { id: 'brief', title: 'Your Module 16–17 brief', fields: [
         { id: 'brief-decision', label: 'Your Module 16–17 project brief: continued, or replaced — and why', kind: 'long', hint: 'Continuing saves the roles and failure scenarios you already mapped. Replacing is allowed with a written reason. Arriving from Project 1 without a brief? Write that, and which brief you are choosing now.', example: 'Example (made up): replaced. The volunteer coordinator who agreed to take part stepped down; the role-and-permission map carries over to the new domain.' },
@@ -37,7 +37,7 @@ export const guided18: Record<string, Guided> = {
       ] },
     ],
     guide: [
-      { expect: 'Three candidate domains you have not used, each with somebody you know and a problem you have heard them complain about.',
+      { expect: 'One to three candidate domains you have not used, each with whoever you know there and a problem you have heard them complain about — or a plain note that you know nobody yet.',
         fields: ['domain-1', 'domain-2', 'domain-3', 'brief-decision'],
         reveal: revealOne(3, 'Add the next domain', 'One at a time, and write the complaint you actually heard rather than the problem you imagine.'),
         terms: [
@@ -45,7 +45,7 @@ export const guided18: Record<string, Guided> = {
           { term: 'A new domain', meaning: 'Different from your earlier projects, so the portfolio shows range rather than the same setting three times.' },
         ],
         start: 'Open your Module 16–17 brief first and decide whether it survives; then think about what people have complained to you about in the last six months.',
-        enough: 'Each domain names a person you could message today, and the brief decision has a reason.' },
+        enough: 'Each domain you list names a person you could message today, or says you know nobody there; the brief decision has a reason.' },
       { expect: 'Your access route, the three people who agreed by role — or your alternate route — and who declined or could not be reached.',
         fields: ['access-route', 'three-agreed', 'declined', 'no-three'],
         terms: [
@@ -57,7 +57,7 @@ export const guided18: Record<string, Guided> = {
           beats: [
             { label: 'What I chose', text: 'A domain I found genuinely interesting, where I knew nobody, on a problem I had read about rather than heard about.' },
             { label: 'What I told myself', text: 'That I would find participants once the project was under way. Everybody says this, and it is the sentence that produces invented findings a month later.' },
-            { label: 'What happened over three weeks', text: 'Eleven messages, two replies, no agreements. The project had not started and I had spent a fifth of my appetite on recruitment.' },
+            { label: 'What happened over three weeks', text: 'Eleven messages, two replies, no agreements. The project had not started and I had spent three of my four weeks on recruitment.' },
             { label: 'What I did', text: 'Went back to the list and took the third domain: a repair shop whose owner had complained about the same thing twice, in front of me, unprompted.' },
             { label: 'How long access took there', text: 'One conversation. He agreed to two sessions and introduced me to two customers, because he already wanted the problem solved.' },
           ],
@@ -154,7 +154,7 @@ export const guided18: Record<string, Guided> = {
       {
         question: 'You plan to find participants once the project is under way. What is the likely result?',
         options: [
-          { label: 'The project stalls, or you end up writing something research-shaped without any research.', correct: true, was: ['Either the project stalls, or you write something research-shaped without research. Access is the first decision rather than a later step.'], feedback: 'Access is the first decision rather than a later step. Three weeks of unanswered messages costs a fifth of a four-week appetite; a domain where somebody has already complained twice takes one conversation.' },
+          { label: 'The project stalls, or you end up writing something research-shaped without any research.', correct: true, was: ['Either the project stalls, or you write something research-shaped without research. Access is the first decision rather than a later step.'], feedback: 'Access is the first decision rather than a later step. Three weeks of unanswered messages costs three-quarters of a four-week appetite; a domain where somebody has already complained twice takes one conversation.' },
           { label: 'It usually works out, because people with the problem are glad to help once asked well.', was: ['It usually works out, since people are helpful once asked properly.'], feedback: 'Some are. The ones who already have the problem are far more likely to be, which is why the choice of domain comes first.' },
           { label: 'You lose a few weeks of the appetite, but the quality of the research itself is unaffected.', was: ['You lose some time but the work is unaffected.'], feedback: 'The work is what gets compressed, and the compression lands on the research.' },
         ],
@@ -259,7 +259,7 @@ export const guided18: Record<string, Guided> = {
           { term: 'An unanswerable question', meaning: 'One this access cannot reach. Recording it is honest; answering it with a weaker method and not saying so is not.' },
         ],
         sorter: {
-          intro: 'Six question-and-method pairs from a made up repair-shop study, where the access is two conversations with the owner and two short chats with customers. For each one, decide whether it works.',
+          intro: 'Six question-and-method pairs from a made up repair-shop study, where the access is two conversations with the owner, one agreed afternoon observing the shop, and two short chats with customers. For each one, decide whether it works.',
           options: ['runnable with this access', 'needs access you do not have', 'a weaker method in disguise'],
           items: [
             { id: 'what-while-waiting', text: 'What does a customer do while waiting for news? Asked in the two customer conversations.', answer: 'runnable with this access',
@@ -381,7 +381,7 @@ export const guided18: Record<string, Guided> = {
       anchors: {
         weak: 'Reuses the café questions with the nouns changed and plans methods as if any parent could be reached; nothing is excluded.',
         adequate: 'Writes new questions from what the owner and parents described, matches each to the three people available, and records that families who left cannot be reached, so nothing is claimed about them.',
-        strong: 'As adequate, and keeps only the form of a good question while changing its subject, adapts consent to a setting with children present, and names what would be needed to reach the families who left.',
+        strong: 'As adequate, and keeps only the form of a good question while changing its subject, adapts consent for a setting where children are present but are never observed, recorded or quoted — only the owner and the two parents take part — and names what would be needed to reach the families who left.',
       },
     },
     saveRoute: {
@@ -903,7 +903,7 @@ export const guided18: Record<string, Guided> = {
           pattern: 'Three categories rather than two. The ones that are defensible only if recorded are the dangerous group: a check not run looks identical to a check that passed unless somebody writes the difference down.',
         },
         start: 'List what you did not do before deciding which were reasonable.',
-        enough: 'At least one omission is marked as one you would not defend.' },
+        enough: 'Every omission has a reason and is marked defensible or not defensible; none is left unmarked.' },
     ],
     checks: [
       {
@@ -976,8 +976,8 @@ export const guided18: Record<string, Guided> = {
       ] },
       { id: 'file', title: 'Run the stop gate and file it', fields: [
         { id: 'records-held', label: 'What information about real people this would hold or show if it were used for real', kind: 'long', hint: 'Names, phone numbers, what somebody brought in, their address. Write none only if that is true.' },
-        { id: 'gate-test', label: 'What you tried with made-up records, and what each attempt showed', kind: 'long', hint: 'A neighbouring number, a mistyped one, a link meant for somebody else, and the file’s source. Made-up records only.', example: 'Example (made up): typing 1042 instead of 1041 showed another made-up job; every job was readable in the file’s source.', requiredWhen: { field: 'gate-result', values: ['Passed: with made-up records, nobody could reach another person’s record', 'Not passed: it stays a local demonstration with made-up records'] } },
-        { id: 'gate-result', label: 'The privacy and access-control stop gate', kind: 'choice', options: ['Passed: with made-up records, nobody could reach another person’s record', 'Not passed: it stays a local demonstration with made-up records', 'Not applicable: it holds no information about any real person'], hint: 'Until a version passes, it stays a local demonstration with made-up records. A single file holding every record cannot pass.' },
+        { id: 'gate-test', label: 'What you tried with made-up records, and what each attempt showed — or, only if your answer above is none, why no attempt was needed', kind: 'long', hint: 'A neighbouring number, a mistyped one, a link meant for somebody else, and the file’s source. Made-up records only. Every prototype holds made-up records, so that alone never excuses the test; what matters is what a real version would hold.', example: 'Example (made up): typing 1042 instead of 1041 showed another made-up job; every job was readable in the file’s source.' },
+        { id: 'gate-result', label: 'The privacy and access-control stop gate', kind: 'choice', options: ['Passed: with made-up records, nobody could reach another person’s record', 'Not passed: it stays a local demonstration with made-up records', 'Not applicable: it holds no information about any real person'], hint: 'Until a version passes, it stays a local demonstration with made-up records. A single file holding every record cannot pass. Choose Not applicable only if, even in real use, it would hold or show nothing about any real person — that is, your answer about real people above is none.' },
         { id: 'both-versions', label: 'Where both versions and the records are saved', kind: 'short' },
         improvementMade,
       ] },
@@ -1316,7 +1316,7 @@ export const guided18: Record<string, Guided> = {
       {
         question: 'You are keeping a design despite a reviewer’s objection. What makes that legitimate?',
         options: [
-          { label: 'A written reason somebody else could evaluate, ideally one recorded before the critique.', correct: true, feedback: 'The appetite, the not-building list and the contrast decision are all reasons made earlier. A defence backed by one of those is the strongest kind; a defence with nothing behind it is a dismissal.' },
+          { label: 'A written reason somebody else could evaluate, ideally one recorded before the critique.', correct: true, feedback: 'The appetite, the not-building list and the no-accounts refusal are all reasons made earlier. A defence backed by one of those is the strongest kind; a defence with nothing behind it is a dismissal.' },
           { label: 'That it is your project, so the final decision on every design question is yours.', was: ['That it is your project and your decision.'], feedback: 'True and not a reason. It is the sentence that makes people stop giving you critique.' },
           { label: 'That the reviewer does not know the domain well enough to judge this particular choice.', was: ['That the reviewer does not know the domain.'], feedback: 'Sometimes so, and the objection still needs an answer rather than a disqualification.' },
         ],
@@ -1387,12 +1387,12 @@ export const guided18: Record<string, Guided> = {
             { label: 'What I planned', text: 'Page views, counted once the page went live. It would give me a number every day without asking anybody for anything.' },
             { label: 'Why that was tempting', text: 'It costs nobody any effort, it is precise, and it produces a chart. The owner has a shop to run and I did not want to ask him to do anything.' },
             { label: 'What it would have told me', text: 'How many times a page was opened. It rises if people find it useful and it rises if they keep checking because it never says anything definite.' },
-            { label: 'What the problem actually was', text: 'Interruptions. The owner being taken away from the bench six to ten times a day, which is the thing he complained about twice before the project existed.' },
+            { label: 'What the problem actually was', text: 'Interruptions. The owner being taken away from the bench — six to ten times a day, by his own uncounted estimate — which is the thing he complained about twice before the project existed.' },
             { label: 'What I asked for instead', text: 'A tally sheet by the till, a pencil line for each progress call. He kept it for five days before the change and five days after, and it took him about a second each time.' },
           ],
           wrongTurn: 'The wrong turn is choosing the measure you can collect without asking anybody, because asking feels like an imposition. The automatic number measures activity; the imposition measures the problem.',
           tradeoff: 'A tally depends on somebody remembering, and the counts are approximate: a busy afternoon will lose one or two.',
-          uncertainty: 'Still unknown: how many calls he forgot to mark. He thinks a few on the busiest day, which the report says rather than treating eleven as exact.',
+          uncertainty: 'Still unknown: how many calls he forgot to mark. He thinks a few on the busiest day, which the report says rather than treating eleven as exact. Even so, eleven in five days — about two a day — is far below his estimate of six to ten a day, and the report states both and records the gap as a finding about estimates.',
         },
         supported: {
           material: 'A supplied case from a made-up project. A bike repair stall began texting customers when repairs were ready on 1 March. Nobody counted calls before that. From 1 to 7 March the owner tallied 6 calls about progress. He remembers “about twenty a week” before.',
@@ -1428,7 +1428,7 @@ export const guided18: Record<string, Guided> = {
         },
         start: 'Match the period exactly and write down how people met the change — or, with nothing in real use, write the plan.',
         enough: 'Both periods are the same length and you can say how the change reached people, or the plan names its period and method.' },
-      { expect: 'Everything else that could explain the difference, recorded.',
+      { expect: 'Everything else that could explain the counts, in either period, recorded.',
         fields: ['conditions-recorded'],
         terms: [
           { term: 'Condition', meaning: 'Anything else that changed: a holiday, quiet trade, the owner mentioning it directly. Module 15 named these as what makes a before-and-after honest.' },
@@ -1733,8 +1733,8 @@ export const guided18: Record<string, Guided> = {
         { id: 'gathered', label: 'Exclusions, deviations, skips, confounds and untested areas, copied here verbatim', kind: 'long', hint: 'Copied rather than rewritten. New limitations invented at this stage are usually vaguer than the ones you already had.' },
       ] },
       { id: 'separate', title: 'Two kinds of limit', fields: [
-        { id: 'study-limits', label: 'Limits of the study: what you do not know', kind: 'long' },
-        { id: 'design-limits', label: 'Limits of the design: what the thing does not do', kind: 'long' },
+        { id: 'study-limits', label: 'Limits of the study: what the findings cannot show', kind: 'long' },
+        { id: 'design-limits', label: 'Limits of the design: what the thing does not do, or was never checked to do', kind: 'long' },
         { id: 'really-defects', label: 'Anything that is really a defect, moved to a repair list', kind: 'short', hint: 'An unguarded input is a defect. Putting it on a limitations page is a way of not fixing it.' },
       ] },
       { id: 'sharpen', title: 'Sharpen', fields: [
@@ -1763,8 +1763,8 @@ export const guided18: Record<string, Guided> = {
       { expect: 'Study limits and design limits separated, with anything that is really a defect moved to a repair list.',
         fields: ['study-limits', 'design-limits', 'really-defects'],
         terms: [
-          { term: 'Study limit', meaning: 'Something you do not know: who was not reached, what was not measured, what the period could not show.' },
-          { term: 'Design limit', meaning: 'Something the thing does not do: untested on a slow connection, unusable above a certain scale.' },
+          { term: 'Study limit', meaning: 'What the findings cannot show: who was not reached, what was not measured, what the period could not show.' },
+          { term: 'Design limit', meaning: 'What nobody should rely on the thing for: what it does not do, and conditions it was never tested under, such as a slow connection, a screen reader or more than a certain number of jobs.' },
           { term: 'A defect on a limitations page', meaning: 'A fault described as a limit. It is a way of recording a problem instead of repairing it.' },
         ],
         demo: {
@@ -1772,16 +1772,16 @@ export const guided18: Record<string, Guided> = {
           beats: [
             { label: 'What my page looked like', text: 'One list of nine things: three participants, no screen-reader pass, mistyped numbers unguarded, a public holiday in the after period, untested on a slow connection, and four more.' },
             { label: 'How it read', text: 'As nine reasons to doubt everything. A reader cannot tell which sentences bound the findings and which describe the artefact.' },
-            { label: 'What splitting it showed', text: 'Four are about what I do not know, and they bound specific claims. Four are about what the thing does not do, and they bound what anybody should rely on.' },
+            { label: 'What splitting it showed', text: 'Four are about what the findings cannot show, and they bound specific claims. Four are about what the thing does not do or was never tested under, and they bound what anybody should rely on.' },
             { label: 'What the ninth turned out to be', text: 'The mistyped job number showing another customer’s job — the stop-gate failure from lesson 6. Not a limit at all: a blocking defect, sitting on a limitations page as if it were accepted.' },
             { label: 'What the page became', text: 'Two short sections, and a repair list whose first item is the gate failure with what a safe version needs. The page stays a demonstration until a version passes.' },
           ],
           wrongTurn: 'The wrong turn is one undifferentiated list, because every item is genuinely a limitation of something. Study limits and design limits bound different things, and a defect hidden among them looks like honesty while quietly avoiding a fix.',
           tradeoff: 'Splitting means deciding which section each line belongs to, and one or two genuinely straddle.',
-          uncertainty: 'Still unknown: how many other defects are sitting in the design-limits section. One was found by asking whether it could be fixed this afternoon, and I asked it of every line once.',
+          uncertainty: 'Still unknown: how many other defects are sitting in the design-limits section. One was found by asking whether it blocks safe use, and I asked it of every line once.',
         },
-        start: 'Ask of each line whether it is about your knowledge or about the artefact.',
-        enough: 'Nothing on the page is something you could fix this afternoon.' },
+        start: 'Ask of each line whether it bounds what the findings show or what anybody should rely on the thing for.',
+        enough: 'Nothing on the page is a defect that blocks safe use; those are on the repair list.' },
       { expect: 'Every generic caveat replaced with a specific statement naming who was not reached and what was not tested.',
         fields: ['generic-replaced', 'who-not-reached'],
         terms: [
@@ -1827,7 +1827,7 @@ export const guided18: Record<string, Guided> = {
               } },
             { id: 'mistyped-shows', text: 'A mistyped job number can display another customer’s job.', answer: 'a defect, not a limit',
               feedback: {
-                'a specific limit': 'It is specific, and it is something you could fix rather than something you do not know.',
+                'a specific limit': 'It is specific, and it is a fault that blocks safe use rather than something the findings cannot show.',
                 'a generic caveat': 'Nothing generic about it.',
                 'a defect, not a limit': 'On a limitations page it becomes a recorded problem rather than a repaired one. It goes on the repair list, and the page stays a demonstration until a version passes the stop gate.',
               } },
@@ -1847,11 +1847,11 @@ export const guided18: Record<string, Guided> = {
               feedback: {
                 'a specific limit': 'A named check, not run, stated so nobody reads it as a check that passed.',
                 'a generic caveat': 'It names one particular thing.',
-                'a defect, not a limit': 'It is a limit on what is known rather than a fault in the artefact, though running it may well find one.',
+                'a defect, not a limit': 'It is a condition the thing was never checked under rather than a known fault, though running it may well find one.',
               } },
           ],
           then: 'Now sort your own page the same way, and move the defects onto a repair list.',
-          pattern: 'The defect is the one to watch. Something you could fix this afternoon, sitting on a limitations page, reads as honesty and is a way of not fixing it.',
+          pattern: 'The defect is the one to watch. A fault that blocks safe use, sitting on a limitations page, reads as honesty and is a way of not fixing it.',
         },
         start: 'For each limit, write the smallest thing that would close it before deciding which matter.',
         enough: 'Every limit has a closing step somebody could actually do.' },
@@ -1878,7 +1878,7 @@ export const guided18: Record<string, Guided> = {
       {
         question: 'A mistyped job number can show another customer’s job. Does that belong on the limitations page?',
         options: [
-          { label: 'It belongs on the repair list as a blocking defect, not among accepted limits.', correct: true, was: ['No. It is a defect you could fix, and putting it on a limitations page is a way of recording it instead of repairing it.'], feedback: 'Limits are things you do not know or the thing does not do. A fault that shows one person’s record to another goes on a repair list, and it is why the page failed the stop gate and stayed a demonstration.' },
+          { label: 'It belongs on the repair list as a blocking defect, not among accepted limits.', correct: true, was: ['No. It is a defect you could fix, and putting it on a limitations page is a way of recording it instead of repairing it.'], feedback: 'Limits are what the findings cannot show or what nobody should rely on the thing for. A fault that shows one person’s record to another goes on a repair list, and it is why the page failed the stop gate and stayed a demonstration.' },
           { label: 'It belongs there, since it is a real limitation of the current version of the page.', was: ['Yes, since it is a real limitation of the current version.'], feedback: 'Current version is doing the work in that sentence, and it will still be the current version in a year.' },
           { label: 'It belongs on both the limitations page and the repair list, to be safe.', was: ['Yes, and also on the repair list.'], feedback: 'On both, it gets read as accepted on one page and pending on the other.' },
         ],
@@ -1924,7 +1924,7 @@ export const guided18: Record<string, Guided> = {
         { id: 'habit-behind', label: 'The habit that produced it', kind: 'short', hint: 'Improvements come from habits rather than from intentions. Naming the habit is what makes it repeatable.' },
       ] },
       { id: 'not-improved', title: 'What did not improve', fields: [
-        { id: 'failed-all-three', label: 'Something that failed in every project, named honestly', kind: 'long', example: 'Example (made up): the screen-reader pass was skipped in both projects, each time for time. That is a pattern rather than two accidents.' },
+        { id: 'failed-all-three', label: 'Something that did not improve — it failed in every project, or got worse — named honestly', kind: 'long', example: 'Example (made up): the screen-reader pass was skipped in both projects, each time for time. That is a pattern rather than two accidents.' },
         { id: 'why-without-excusing', label: 'Why, without excusing it', kind: 'long' },
       ] },
       { id: 'change', title: 'One change for the next project', fields: [
@@ -1966,7 +1966,7 @@ export const guided18: Record<string, Guided> = {
         },
         start: 'Answer your five questions from the files before looking at any of the write-ups.',
         enough: 'Your improvement is visible in the records rather than in the presentation.' },
-      { expect: 'Something that failed in every project, named honestly, with why.',
+      { expect: 'Something that did not improve — it failed in every project, or got worse — named honestly, with why.',
         fields: ['failed-all-three', 'why-without-excusing'],
         terms: [
           { term: 'A pattern rather than accidents', meaning: 'Twice or three times for the same reason is a pattern. Treating it as three separate time problems is how it happens a fourth time.' },
@@ -2112,7 +2112,7 @@ export const guided18: Record<string, Guided> = {
         { id: 'failures-kept', label: 'The failures kept in the record, and why each is load-bearing', kind: 'long', hint: 'The repair that did not work, the deviation, the check not run. They are what make the successes believable.' },
       ] },
       { id: 'anonymise', title: 'Anonymise', fields: [
-        { id: 'anonymised', label: 'What you changed so nobody is identifiable', kind: 'long', hint: 'Roles rather than names, no photographs of other customers’ property, no job numbers that exist. Removing names alone does not make a record anonymous.' },
+        { id: 'anonymised', label: 'What you changed so nobody is identifiable', kind: 'long', hint: 'Roles rather than names, no photographs of other customers’ property, no job numbers that exist. Removing names alone does not make a record anonymous. Delete originals that show people who did not consent; keep only the recreation.' },
         { id: 'consent-check', label: 'How this matches what you promised in the consent introduction', kind: 'short' },
       ] },
       { id: 'store', title: 'Store it twice', fields: [
@@ -2202,14 +2202,14 @@ export const guided18: Record<string, Guided> = {
             { id: 'real-job-number', text: 'A photograph of a real job slip showing a customer’s name and phone number beside the new window wording.', answer: 'include after changing something',
               feedback: {
                 'include as it is': 'The name and number belong to a real person who did not agree to appear anywhere.',
-                'include after changing something': 'Recreate the slip with invented details and label it recreated. The wording is worth showing and the customer’s details are not.',
+                'include after changing something': 'Recreate the slip with invented details and label it recreated, then delete the original photograph. The wording is worth showing and the customer’s details are not.',
                 'do not include': 'A recreated slip shows the wording perfectly well, so the evidence need not be lost.',
               } },
-            { id: 'sons-comment', text: 'What the owner’s son said during the interview he sat in on.', answer: 'include after changing something',
+            { id: 'sons-comment', text: 'The record of the interview the owner’s son sat in on, including his remarks.', answer: 'include after changing something',
               feedback: {
                 'include as it is': 'He was present rather than a participant, and nobody took him through the consent introduction.',
-                'include after changing something': 'Record that a third party was present and that it changed what was said, without quoting him. The deviation is the finding; his words are not yours to use.',
-                'do not include': 'The deviation itself matters and should be recorded.',
+                'include after changing something': 'Keep the interview, remove his remarks, and record that a third party was present and that it changed what was said, without quoting him. The deviation is the finding; his words are not yours to use.',
+                'do not include': 'The owner consented to the interview, and the deviation itself matters and should be recorded.',
               } },
             { id: 'failed-retest', text: 'The re-test where one of two people still read the time as a promise.', answer: 'include as it is',
               feedback: {
@@ -2256,7 +2256,7 @@ export const guided18: Record<string, Guided> = {
       {
         question: 'A photograph of a real job slip shows a customer’s name and phone number beside the new wording. Can it go in the record?',
         options: [
-          { label: 'After changing it: recreate the slip with invented details, labelled recreated.', correct: true, was: ['Not as it is. Replace it with an invented job and number: the screenshot is worth having and the data is not.'], feedback: 'That customer agreed to nothing. The wording is worth showing and the details are not, and anonymising means checking the record against what you promised in the consent introduction.' },
+          { label: 'After changing it: recreate the slip with invented details, labelled recreated.', correct: true, was: ['Not as it is. Replace it with an invented job and number: the screenshot is worth having and the data is not.'], feedback: 'That customer agreed to nothing. The wording is worth showing and the details are not, and anonymising means checking the record against what you promised in the consent introduction. Then delete the original photograph before the record is copied anywhere; it holds a customer’s details they never agreed to.' },
           { label: 'As it is, because the photograph exists to show the wording, not the customer.', was: ['Yes, since a job number identifies nobody by name.'], feedback: 'The purpose does not change what is in the frame: a real person’s name and number, on a record that will feed a portfolio.' },
           { label: 'As it is, provided the project record stays private on your own computer.', was: ['Yes, if the record is private.'], feedback: 'The record is going into a portfolio in the next module, and the customer agreed to nothing either way.' },
         ],
@@ -2277,7 +2277,7 @@ export const guided18: Record<string, Guided> = {
       auto: 'Your index, the claim check, the failures list and the anonymising notes save as you type, on this device first and then online.',
       external: 'The record itself is a folder on your computer, copied to a second place. Module 19 works from it directly, so completeness matters more than tidiness.',
       creator: 'Your creator reads the failures and the claim-to-artefact list. A record with no failures and no unsupported claims removed is usually a record that was arranged rather than assembled.',
-      next: 'Open Your work and choose Ready for review. This closes Module 18. Module 19 turns three project records into a portfolio.',
+      next: 'Open Your work and choose Ready for review. This closes Module 18. Module 19 turns your project records — two on the core path, three on the full library — into a portfolio.',
     },
   },
 };

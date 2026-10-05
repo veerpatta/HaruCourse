@@ -293,7 +293,7 @@ Work that supports none of your claims, marked excluded rather than deleted.
 
 **Start here:** List everything you have, then mark what supports nothing.
 
-**Enough:** Nothing is deleted, and the excluded list is longer than you expected.
+**Enough:** Nothing is deleted, and every excluded item is listed with why it supports none of your claims.
 
 **Surplus:** Work that supports none of the claims. It makes the portfolio longer and the claims weaker, and it is often good work.
 
@@ -304,7 +304,7 @@ Work that supports none of your claims, marked excluded rather than deleted.
 
 Section: practice-plan. Stable action: step-4-sort-1.
 
-Six pieces of work from a made up set of three projects, against the claim that research can be traced to a decision. For each one, decide what it is.
+Six pieces of work from a made up set of three projects, against three claims: research traced to a decision, testing and repairing, and stating limits. For each one, decide what it is.
 
 A synthesis page with participant counts, a kept contradiction, and the framing that followed from it.
 
@@ -330,7 +330,7 @@ Now sort your own work against your claims, and mark the surplus as excluded.
 
 Section: practice-plan. Stable action: step-4-sort-2.
 
-Six pieces of work from a made up set of three projects, against the claim that research can be traced to a decision. For each one, decide what it is.
+Six pieces of work from a made up set of three projects, against three claims: research traced to a decision, testing and repairing, and stating limits. For each one, decide what it is.
 
 A mood board of visual references made at the start of the second project.
 
@@ -356,7 +356,7 @@ Now sort your own work against your claims, and mark the surplus as excluded.
 
 Section: practice-plan. Stable action: step-4-sort-3.
 
-Six pieces of work from a made up set of three projects, against the claim that research can be traced to a decision. For each one, decide what it is.
+Six pieces of work from a made up set of three projects, against three claims: research traced to a decision, testing and repairing, and stating limits. For each one, decide what it is.
 
 A persona document created from three interviews, with a name, a photograph and a set of goals.
 
@@ -382,7 +382,7 @@ Now sort your own work against your claims, and mark the surplus as excluded.
 
 Section: practice-plan. Stable action: step-4-sort-4.
 
-Six pieces of work from a made up set of three projects, against the claim that research can be traced to a decision. For each one, decide what it is.
+Six pieces of work from a made up set of three projects, against three claims: research traced to a decision, testing and repairing, and stating limits. For each one, decide what it is.
 
 A record of a repair that failed on the first attempt and worked on the second, with both predictions written beforehand.
 
@@ -408,7 +408,7 @@ Now sort your own work against your claims, and mark the surplus as excluded.
 
 Section: practice-plan. Stable action: step-4-sort-5.
 
-Six pieces of work from a made up set of three projects, against the claim that research can be traced to a decision. For each one, decide what it is.
+Six pieces of work from a made up set of three projects, against three claims: research traced to a decision, testing and repairing, and stating limits. For each one, decide what it is.
 
 A grid of twelve finished screens from the third project, with no annotations.
 
@@ -434,7 +434,7 @@ Now sort your own work against your claims, and mark the surplus as excluded.
 
 Section: practice-plan. Stable action: step-4-sort-6.
 
-Six pieces of work from a made up set of three projects, against the claim that research can be traced to a decision. For each one, decide what it is.
+Six pieces of work from a made up set of three projects, against three claims: research traced to a decision, testing and repairing, and stating limits. For each one, decide what it is.
 
 A line saying the independent project improved efficiency for the business.
 
@@ -548,7 +548,7 @@ You have a persona document made from three interviews. Is it evidence that rese
 
 - Good evidence, as long as the interview notes are attached to it in the portfolio.
 - Good evidence, since it was built from three real interviews with consenting people.
-- Weak evidence: what three people said is inside it and cannot be recovered from it.
+- Not evidence: what three people said is inside it and cannot be recovered from it.
 
 <details>
 <summary>After your attempt</summary>
@@ -557,7 +557,7 @@ Good evidence, as long as the interview notes are attached to it in the portfoli
 
 Good evidence, since it was built from three real interviews with consenting people. — Built from them and not traceable to them. A composite hides the counts and the contradictions.
 
-Weak evidence: what three people said is inside it and cannot be recovered from it. — The trace runs backwards through it. It may also carry a stock photograph and a name, which a reviewer asking one question finds is an invented person. The synthesis page with counts shows the same research and can be checked.
+Not evidence: what three people said is inside it and cannot be recovered from it. — The trace runs backwards through it. It may also carry a stock photograph and a name, which a reviewer asking one question finds is an invented person. The synthesis page with counts shows the same research and can be checked.
 
 Improve: Replace any composite artefact in step 3 with the record it was built from. Record the change in step 5.
 
@@ -1117,7 +1117,7 @@ Section: practice-plan. Stable action: step-4-sort-3.
 
 Six things somebody might do to a made up portfolio before showing it. For each one, decide whether it is allowed.
 
-Writing the synthesis document the first project never had, from your memory of the sessions.
+Writing the synthesis the first project never had, from memory, and filing it undated with the project notes.
 
 - allowed
 - allowed if labelled with today’s date
@@ -1128,9 +1128,9 @@ Writing the synthesis document the first project never had, from your memory of 
 
 allowed — It would be a document that did not exist, presented as part of a project that did not produce one.
 
-allowed if labelled with today’s date — Labelled honestly it becomes a reflection written now, which is a different and much weaker artefact than a contemporaneous synthesis.
+allowed if labelled with today’s date — This one is filed undated among the notes, so it has no date to be labelled with. Dated today and filed as a reflection it would be a different and much weaker artefact.
 
-not allowed — As a project artefact, no. The honest answer is that the project has no synthesis, and the case study says so.
+not allowed — Filed undated with the notes, it passes as a project artefact. The honest answer is that the project has no synthesis, and the case study says so.
 
 Now sort your own closable gaps the same way, and date everything you produce now.
 
@@ -1143,7 +1143,7 @@ Section: practice-plan. Stable action: step-4-sort-4.
 
 Six things somebody might do to a made up portfolio before showing it. For each one, decide whether it is allowed.
 
-Redrawing a scruffy pencil flow neatly, with the same content.
+Redrawing a scruffy pencil flow neatly, same content, labelled redrawn with the original kept beside it.
 
 - allowed
 - allowed if labelled with today’s date
@@ -1152,9 +1152,9 @@ Redrawing a scruffy pencil flow neatly, with the same content.
 <details>
 <summary>After your attempt</summary>
 
-allowed — The thinking is unchanged and the drawing is legible. Keep the original beside it if you can.
+allowed — The thinking is unchanged, the drawing is legible, and the label and the original beside it show which is which.
 
-allowed if labelled with today’s date — The content is contemporaneous; only the rendering is new.
+allowed if labelled with today’s date — The content is contemporaneous; only the rendering is new, and the redrawn label already says so.
 
 not allowed — Illegibility is not authenticity.
 
@@ -1905,7 +1905,7 @@ Section: practice-plan. Stable action: step-4-sort-4.
 
 Six plans for a made up portfolio’s three case studies. For each one, decide whether it is sound.
 
-All three telling the full process from research to launch.
+All three telling the same full process, though every project has every stage on record.
 
 - sound
 - invites embellishment
@@ -1916,7 +1916,7 @@ All three telling the full process from research to launch.
 
 sound — It shows a repeatable process, and the reader learns the same fact three times.
 
-invites embellishment — Where a project lacks a stage, telling the full process does push you to fill it. That is the second problem.
+invites embellishment — Every stage is on record here, so nothing needs filling. Where a project lacks a stage, telling the full process would push you to fill it; this plan’s problem is repetition.
 
 wastes the reader’s attention — Three case studies doing one job is one case study repeated.
 
@@ -2355,7 +2355,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- A first case study from one project, written in the template: problem, in the shop owner's words with his estimate of six to ten progress calls a day, marked as his estimate; evidence, three research participants, what was found, what contradicted, and the exclusions; decision, one framed problem and the not-building list, with the appetite; iteration, the wording repair that failed for one of two re-testers, from a page that was a demonstration with made-up jobs; limits, in short form. Nineteen claims, each with a named artefact and its tier. One claim about the owner's time saved was cut because nothing measured it.
+- A first case study from one project, written in the template: problem, in the shop owner's words with his estimate of six to ten progress calls a day, marked as his estimate and set beside his tally of eleven in five working days; evidence, three research participants, what was found, what contradicted, and the exclusions; decision, one framed problem and the not-building list, with the appetite; iteration, the wording repair that failed for one of two re-testers, from a page that was a demonstration with made-up jobs; limits, in short form. Nineteen claims, each with a named artefact and its tier. One claim about the owner's time saved was cut because nothing measured it.
 
 
 ### Choose where you will do the work
@@ -2407,7 +2407,7 @@ Made-up example. Opening a case study, and opening it with the background.
 
 **What the reviewer sees in ninety seconds:** Two paragraphs of sector background, and no indication that anything was found, decided or changed.
 
-**What the opening became:** The owner’s sentence — “I spend half my day telling people their laptop is not ready” — then eleven calls about progress in five working days, then seven over a matched five days after the slip wording changed.
+**What the opening became:** The owner’s sentence — “I spend half my day telling people their laptop is not ready” — then his tally: eleven calls about progress in five working days, about two a day and far below his own estimate of six to ten, then seven over a matched five days after the slip wording changed.
 
 **Where the background went:** One clause in the second paragraph. Nobody has asked for the rest of it.
 
@@ -2849,7 +2849,7 @@ Section: practice. Stable action: step-5-sort-6.
 
 Six sentences from a made up case study about a repair-shop project. For each one, decide what should happen to it.
 
-The owner said he was answering between six and ten such calls a day.
+The owner estimated six to ten such calls a day; his tally then counted eleven in five working days.
 
 - keep as written
 - weaken to what the evidence supports
@@ -2858,11 +2858,11 @@ The owner said he was answering between six and ten such calls a day.
 <details>
 <summary>After your attempt</summary>
 
-keep as written — Attributed, and it says he said it rather than that it is so. The estimate is his and the sentence is accurate.
+keep as written — Attributed, and it puts his estimate beside his own count, so the gap is stated before a reviewer finds it. Both halves are accurate.
 
-weaken to what the evidence supports — The attribution is already the weakening.
+weaken to what the evidence supports — The attribution and the count beside it are already the weakening.
 
-cut it — It is how the problem was sized before anything was counted.
+cut it — It is how the problem was sized before anything was counted, and the gap is itself a finding.
 
 Now trace your own claims, and mark the ones with no file behind them.
 
@@ -3067,7 +3067,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 
 Stable ID: m19-l05-v1. Core.
 
-Role inflation is the most commonly detected dishonesty in portfolios, and the easiest to avoid.
+Role inflation is a common overstatement in portfolios, easily detected and easily avoided.
 
 Bring: At least one project record.
 
@@ -3347,11 +3347,11 @@ Made-up example. Writing a self-directed case study, and writing it in the plura
 
 Section: practice-plan. Stable action: write-we-count.
 
-Search for them. It is a thirty-second check and it catches the commonest detected dishonesty in portfolios.
+Search for them. It is a thirty-second check and it catches a common overstatement in portfolios.
 
 **Answer:** How many times we, our and the team appear in the drafts
 
-Search for them. It is a thirty-second check and it catches the commonest detected dishonesty in portfolios.
+Search for them. It is a thirty-second check and it catches a common overstatement in portfolios.
 
 
 ### Each one corrected, or kept because there really was a team
@@ -3382,7 +3382,7 @@ Will saying a project was self-directed make it count for less?
 
 It will, which is why the framing is better left open for the reader to interpret. — Left open means the reader assumes, and the correction arrives in an interview as a discovery.
 
-Saying nothing and then being asked about it costs far more than the label does. — Role inflation is the most commonly detected dishonesty in portfolios and the easiest to avoid. A labelled self-directed project with real evidence beats an ambiguously framed one, and the label costs one line.
+Saying nothing and then being asked about it costs far more than the label does. — Role inflation is a common overstatement in portfolios, easily detected and easily avoided. A labelled self-directed project with real evidence beats an ambiguously framed one, and the label costs one line.
 
 It will, slightly, and that loss is simply the price of being honest about it. — There is little cost. What reviewers discount is the portfolio where the role turned out to differ from the impression.
 
@@ -3937,7 +3937,7 @@ Made-up example. Checking what participants agreed to, and going by what I remem
 
 **What I remembered:** Telling everybody that the notes were for a project and that nothing would identify them. That is roughly what I said, and it is what I believed I had agreed with them.
 
-**What the script said:** That the recording would be used to improve the shop’s page and would not be shared outside the project. Nothing about a portfolio, and the word project meant the thing we were doing.
+**What the script said:** For my first project: that the notes would be used to improve the class-booking page and would not be shared outside the project. Nothing about a portfolio, and the word project meant the thing we were doing.
 
 **Where the two differ:** Nothing would identify them is a promise about anonymity. Not shared outside the project is a promise about scope, and a public portfolio is outside it.
 
@@ -4332,9 +4332,9 @@ A photograph of a workbench showing three other customers’ tickets.
 
 show it — Three people who consented to nothing are identifiable in it.
 
-recreate or trim it — A hand-drawn version of the sheet with invented entries is a recreation and a good answer, so this is defensible too if the drawing replaces the photograph entirely.
+recreate or trim it — Redraw the sheet with invented entries, labelled recreated; the photograph itself is never shown.
 
-describe it instead — Either describe it or replace it with a drawing. What cannot happen is the photograph.
+describe it instead — Describing is reserved for material whose consent falls short. The sheet’s design can be shown safely as a labelled redrawing, as the job slip can.
 
 Now decide each of your own items, and send one message asking about the ones on the edge.
 
@@ -4652,7 +4652,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The repair-shop case study keeps six images: the paper flow with the failure branches; a photograph of the synthesis cards, recreated because the originals had a participant's name; the exception table; the status page before and after the wording repair, captioned with the re-test result including the person who still read it as a promise, and labelled a demonstration with made-up jobs; and the handover card. Twelve other images were cut, including four screens that showed nothing the flow did not. Every caption states an argument, and every image has alternative text written to carry the same information.
+- The repair-shop case study keeps six images: the paper flow with the failure branches; a photograph of the synthesis cards, recreated because the originals had a participant's name; the exception table; the status page before and after the wording repair, captioned with the re-test result including the person who still read it as a promise, and labelled a demonstration with made-up jobs; and the handover card. Twelve other images were cut, including ten screens that showed nothing the flow did not. Every caption states an argument, and every image has alternative text written to carry the same information.
 
 
 ### Choose where you will do the work
@@ -4783,7 +4783,7 @@ Made-up example. Choosing images for a case study, and choosing the finished one
 
 **What the six images became:** The paper flow, the synthesis cards recreated without the participant name, the exception table, the before-and-after pair with the re-test caption, and the handover card.
 
-**What happened to the twelve screens:** Four survived as the before-and-after pair and two context shots. The other eight showed nothing the flow did not.
+**What happened to the twelve screens:** Two survived as the before-and-after pair. The other ten showed nothing the flow did not.
 
 **Wrong turn:** The wrong turn is showing the finished work, because it is what you are proudest of and it is what looks like a portfolio. Finished screens argue nothing on their own, and a page of them implies a rebuild rather than a project.
 
@@ -6103,7 +6103,7 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A portfolio that reads on your own phone, checked privately through a PDF or the single file
 - A heading structure and keyboard path that work
 - Alternative text and contrast checked
-- An accessible PDF copy checked for headings, reading order and link text, and a written record of what was and was not checked
+- A PDF copy checked for headings, reading order and link text, and a written record of what was and was not checked
 
 ### Start here: in everyday words
 
@@ -6123,7 +6123,7 @@ The reader demonstrates and guides the task before asking for “How the portfol
 
 Section: learn. Stable action: welcome.
 
-Build and check the portfolio as a designed artefact — readable on your own phone without any hosting, navigable by keyboard, available as an accessible PDF, and honest about what you checked.
+Build and check the portfolio as a designed artefact — readable on your own phone without any hosting, navigable by keyboard, available as a PDF copy whose headings, reading order and link text you have checked, and honest about what you did and did not check.
 
 
 ### The portfolio is evidence of your craft before anyone reads a word
@@ -6167,7 +6167,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- The portfolio is a single HTML file per case study plus one index, sharing one stylesheet from the design system. Checks run and recorded: heading structure read alone; keyboard path through every link with a visible focus ring; contrast on text and on the focus indicator; alternative text on all nineteen images; the whole site opened on a phone over a mobile connection with images loading last. Not checked, and stated on the about page: no screen-reader testing and no testing with anyone who uses assistive technology.
+- The portfolio is a single HTML file per case study plus one index, sharing one stylesheet from the design system. Checks run and recorded: heading structure read alone; keyboard path through every link with a visible focus ring; contrast on text and on the focus indicator; alternative text on all nineteen images; a whole case study read on a phone from a PDF sent to myself. Not checked, and stated on the about page: no screen-reader testing and no testing with anyone who uses assistive technology.
 
 
 ### Choose where you will do the work
@@ -6267,6 +6267,7 @@ Heading structure read alone, the keyboard path with its focus ring, and contras
 
 - Read the heading structure alone; tab through every link.
 - Check contrast on text and on the focus indicator.
+- Confirm alternative text on every image and that the argument survives with images off.
 
 **Start here:** Tab through every link with the browser window at phone width.
 
@@ -6333,14 +6334,14 @@ Write your answer for “Contrast on text and on the focus indicator, and altern
 
 
 
-### Check the images
+### Check what travels
 
 Section: practice-plan. Stable action: step-4-brief.
 
 The portfolio on your own phone without any hosting — a PDF or the single file — with what did not travel.
 
-- Confirm alternative text on every image and that the argument survives with images off.
-- Save a PDF copy and check its headings, reading order and link text.
+- Send the HTML with its image folder, and a PDF copy, to your own phone without hosting.
+- Note what did not arrive or could not be read.
 
 **Start here:** Send the PDF or the single file to yourself through a channel you already use, and open it on your phone.
 
@@ -6479,10 +6480,10 @@ Answers to revisit: pdf-check, checked-not-checked, improvement-made
 
 Section: practice. Stable action: step-5-brief.
 
-What was checked and what was not, written on the site itself.
+Your PDF copy checked for headings, reading order and link text, and what was checked and what was not, written on the site itself.
 
-- Write what you checked and what you could not.
-- Put it somewhere a reader can find.
+- Check the PDF copy's headings, reading order and link text.
+- Write what you checked and what you could not, where a reader can find it.
 
 **Start here:** List the checks you ran, then the ones you did not, and put both on the page.
 
@@ -6735,7 +6736,7 @@ Optional learning activity: use a text-based AI chat to hear the idea another wa
 I am a complete beginner learning product design. Teach me through a short activity, not a long lecture.
 
 Lesson: Making the portfolio itself usable
-What I am trying to do: Build and check the portfolio as a designed artefact — readable on your own phone without any hosting, navigable by keyboard, available as an accessible PDF, and honest about what you checked.
+What I am trying to do: Build and check the portfolio as a designed artefact — readable on your own phone without any hosting, navigable by keyboard, available as a PDF copy whose headings, reading order and link text you have checked, and honest about what you did and did not check.
 
 Key idea or terms:
 Plain HTML and CSS: What the optional Module 12 extension teaches. The supplied template needs no coding, and a portfolio does not need a paid builder or subscription; building your own is extra evidence, not a requirement.
@@ -6928,7 +6929,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Ten minutes, five points: the shop owner's problem with the call count; three research participants and the contradiction between speed and certainty; the decision to build a status page and the not-building list; the wording repair, its prediction, and the person who still read it as a promise; and the limits, including that nobody who stopped using the shop was reached. First recording ran fourteen minutes, spent four on context and said “about two thirds” once. Second recording ran ten and a half, opened with the count, and used the exact numbers.
+- Ten minutes, five points: the shop owner's problem with the call count; three research participants and the contradiction between speed and certainty; the decision to build a status page and the not-building list; the wording repair, its prediction, and the person who still read it as a promise; and the limits, including that nobody who stopped using the shop was reached. First recording ran fourteen minutes, spent four on context and said “about two thirds” once. Second recording ran nine and a half minutes, opened with the count, and used the exact numbers.
 
 
 ### Choose where you will do the work
@@ -7244,7 +7245,7 @@ Section: practice-plan. Stable action: step-4-sort-6.
 
 Six things heard in a made up first recording of a case-study walkthrough. For each one, decide what it is.
 
-Noticing, on the recording, that you say the design is obvious three times.
+Realising that none of these things was audible to you while you were speaking.
 
 - fix it before the second take
 - leave it
@@ -7253,11 +7254,11 @@ Noticing, on the recording, that you say the design is obvious three times.
 <details>
 <summary>After your attempt</summary>
 
-fix it before the second take — Worth changing, and the point here is the mechanism.
+fix it before the second take — There is nothing to fix in the realisation itself; the fixes are the other items it revealed.
 
-leave it — Three repetitions of obvious undercuts the reasoning you are describing.
+leave it — It is worth more than leaving: it is the reason you recorded at all.
 
-the recording is doing its job — You cannot hear your own verbal habits while speaking. This is precisely what the recording is for, and the fix follows from it.
+the recording is doing its job — You cannot hear your own habits while speaking. This is precisely what the recording is for, and the fixes follow from it.
 
 Now watch your own recording once and write three changes rather than a general impression.
 
@@ -7406,7 +7407,7 @@ Made-up example. Keeping the recordings, and keeping only the good one.
 
 **What I lost:** The evidence of the change. The second recording alone shows somebody who delivers a tidy ten minutes, which says nothing about how it got there.
 
-**What the pair showed:** Fourteen minutes with four of context, then ten and a half opening with the count. It is a before-and-after pair, of exactly the kind the portfolio argues for everywhere else.
+**What the pair showed:** Fourteen minutes with four of context, then nine and a half opening with the count. It is a before-and-after pair, of exactly the kind the portfolio argues for everywhere else.
 
 **Where it was useful:** Not shown to anybody. Used when writing the iteration section, because I had just done the thing I was describing and could write the prediction and result honestly.
 
@@ -7689,7 +7690,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Twelve questions were drawn from the limitations pages, including: what do customers who never came back think; why did the page never go in front of real customers; was the fall in calls just a quiet week; why did you not test with a screen-reader user; and what would you do differently with a month. Each got a written answer conceding first. Two answers were “I do not know”, each with the smallest next step attached. All twelve were practised aloud; the quiet-week question was the one that produced hesitation, so it was rehearsed until the concession came first.
+- Twelve questions were drawn from the limitations pages, including: what do customers who never came back think; why did the page never go in front of real customers; was the fall in calls just a quiet week; he said six to ten a day and counted eleven a week — which is it; why did you not test with a screen-reader user; and what would you do differently with a month. Each got a written answer conceding first. Two answers were “I do not know”, each with the smallest next step attached. All twelve were practised aloud; the quiet-week question was the one that produced hesitation, so it was rehearsed until the concession came first.
 
 
 ### Choose where you will do the work
@@ -8010,10 +8011,10 @@ Section: practice. Stable action: step-5-brief.
 
 Somebody putting the questions unprompted, with any answer that drifted recorded.
 
-- Ask someone to put the questions to you unprompted.
+- Ask someone to put the questions to you unprompted — or, alone, record yourself answering a shuffled list and label it self-review.
 - Record any answer that drifted from what you wrote.
 
-**Start here:** Hand somebody the shuffled list and ask them not to be gentle.
+**Start here:** Hand somebody the shuffled list and ask them not to be gentle. Alone: shuffle it, record yourself answering, and label the recording self-review.
 
 **Enough:** You recorded where the spoken answer differed from the written one.
 
@@ -8184,11 +8185,11 @@ Now check your own answers: which group does each first sentence belong to?
 
 Section: practice. Stable action: write-who-asked.
 
-Unprompted and out of order. Alone: record yourself answering from a shuffled list.
+Unprompted and out of order. Alone: record yourself answering from a shuffled list, and label it self-review.
 
 **Answer:** Who put the questions to you unprompted, or how you tested it alone
 
-Unprompted and out of order. Alone: record yourself answering from a shuffled list.
+Unprompted and out of order. Alone: record yourself answering from a shuffled list, and label it self-review.
 
 
 ### Any answer that drifted from what you wrote
@@ -8337,17 +8338,17 @@ Repair: Find the question you cannot answer and stop answering it. Recheck: The 
 
 **The answers were practised aloud**
 
-Adequate evidence: Spoken practice, ideally with someone else asking.
+Adequate evidence: Spoken practice, ideally with someone else asking — or, on the solo route, a recording of yourself answering a shuffled list, labelled self-review.
 
 0 — Written only.
 
 1 — Practised alone.
 
-2 — Practised with someone asking unprompted.
+2 — Practised with someone asking unprompted, or alone from a shuffled list, recorded and labelled self-review.
 
 3 — As adequate, and any drift from the written answer was recorded.
 
-Repair: Ask someone to put the questions to you and note where you drift. Recheck: The practice notes.
+Repair: Ask someone to put the questions to you and note where you drift, or record yourself answering a shuffled list and label it self-review. Recheck: The practice notes.
 
 </details>
 The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
@@ -8386,7 +8387,7 @@ Starting route: Recommended route: Fill the worksheet in this app, step by step.
 - A promise check per case study, with any promise rewritten
 - A whole-portfolio claim sweep including the index and about pages
 - A recorded sharing decision — private PDF or files, or a host verified on the day
-- A cold reader's account of what the portfolio says
+- A cold reader's account of what the portfolio says, or a labelled self cold-read
 
 ### Start here: in everyday words
 
@@ -8430,11 +8431,11 @@ Section: learn. Stable action: learn-3.
 Sharing privately is complete; publishing is optional, and any host is verified on the day like a resource.
 
 
-### Ask one person to read it cold and tell you what it says
+### Idea 4: Ask one person to read it cold and tell you what it says — or,…
 
 Section: learn. Stable action: learn-4.
 
-Ask one person to read it cold and tell you what it says.
+Ask one person to read it cold and tell you what it says — or, with nobody available, do a labelled self cold-read after a week away.
 
 
 ### Share or publish deliberately, and record what went where and when
@@ -8666,16 +8667,18 @@ Required only when sharing-route is Published: a public site, checked on the day
 
 Section: practice-plan. Stable action: step-4-brief.
 
-A cold reader’s account of what the portfolio shows, and which claims that matched.
+A cold reader’s account of what the portfolio shows — or a labelled self cold-read after a week away — and which claims that matched.
 
-- Ask someone unfamiliar to read it and say what you can do.
-- Compare their answer with your claims.
+- Ask someone unfamiliar to read it and say what you can do — or, with nobody available, leave it a week, skim it once for ninety seconds, write what it says you can do, and label it self-review.
+- Compare the answer with your claims.
 
-**Start here:** Ask somebody to read it once and then tell you what it says about how you work.
+**Start here:** Ask somebody to read it once and then tell you what it says about how you work. Alone: leave it a week, skim it once for ninety seconds, then write what it says.
 
-**Enough:** You wrote their words rather than your interpretation.
+**Enough:** You wrote their words rather than your interpretation — or your own skim, labelled self-review.
 
-**A cold reader:** Somebody who has not seen any of it, reading once, with you saying nothing. It is the only test of whether the skim carries the claims.
+**A cold reader:** Somebody who has not seen any of it, reading once, with you saying nothing. It is the best test of whether the skim carries the claims.
+
+**A self cold-read:** The solo route: at least a week away, one ninety-second skim, then what it says you can do, labelled self-review. It catches what the skim carries; it cannot catch what only a stranger would notice.
 
 **What it does not match:** The claim that did not arrive. It is a finding about the portfolio rather than about the reader.
 
@@ -8738,7 +8741,7 @@ Section: practice-plan. Stable action: step-4-sort-3.
 
 Six things a cold reader might say about a made up portfolio whose three claims are research-to-decision, test-and-repair, and stating limits. For each one, decide what it tells you.
 
-“It is very honest, almost self-critical.”
+“It reads as if none of the projects really worked.”
 
 - a claim arrived
 - a claim did not arrive
@@ -8747,11 +8750,11 @@ Six things a cold reader might say about a made up portfolio whose three claims 
 <details>
 <summary>After your attempt</summary>
 
-a claim arrived — The third claim is about stating limits, and almost self-critical is a different impression.
+a claim arrived — None of the three claims says the projects failed. Stating limits has tipped into a different impression.
 
-a claim did not arrive — The claim arrived and brought something with it.
+a claim did not arrive — It is more than an absence: an impression arrived that none of the claims makes.
 
-something you did not intend arrived — Worth knowing. It may mean the limits are placed where they dominate rather than where they bound, which is a layout finding.
+something you did not intend arrived — Worth knowing. It may mean the limits and failures are placed where they dominate rather than where they bound, which is a layout finding.
 
 Now ask your own cold reader and write their words rather than your summary of them.
 
@@ -8790,7 +8793,7 @@ Section: practice-plan. Stable action: step-4-sort-5.
 
 Six things a cold reader might say about a made up portfolio whose three claims are research-to-decision, test-and-repair, and stating limits. For each one, decide what it tells you.
 
-“The repair shop one was interesting.”
+“It all seems to be about small shops.”
 
 - a claim arrived
 - a claim did not arrive
@@ -8799,11 +8802,11 @@ Six things a cold reader might say about a made up portfolio whose three claims 
 <details>
 <summary>After your attempt</summary>
 
-a claim arrived — Interesting is not a claim.
+a claim arrived — None of the three claims is about a kind of business.
 
-a claim did not arrive — It says nothing about which arrived.
+a claim did not arrive — It says nothing about whether the claims arrived; it adds a reading of its own.
 
-something you did not intend arrived — Pleasant and uninformative. If it is the only thing they say, ask what the portfolio shows about how you work.
+something you did not intend arrived — A reader may file you as a designer for small shops. Worth knowing whether it crowds out the claims; the answer is usually to open each case study with what it shows about how you work.
 
 Now ask your own cold reader and write their words rather than your summary of them.
 
@@ -8836,15 +8839,26 @@ Now ask your own cold reader and write their words rather than your summary of t
 </details>
 
 
-### What a cold reader said the portfolio shows, close to their words, by role
+### Who did the cold read
+
+Section: practice-plan. Stable action: write-cold-read-route.
+
+Choose the option that honestly describes your work.
+
+**Answer:** Who did the cold read (Somebody unfamiliar read it / Self cold-read after at least a week away, labelled self-review)
+
+Both are complete routes. A self cold-read is labelled self-review and is never reported as somebody else’s reading.
+
+
+### What the cold read said the portfolio shows — a cold reader’s words, by role, or your own ninety-second skim, labelled self-review
 
 Section: practice-plan. Stable action: write-cold-reader-said.
 
-Somebody who has not seen any of it, reading it once without you explaining anything.
+Somebody who has not seen any of it, reading it once without you explaining anything. With nobody available: leave it at least a week, skim it once for ninety seconds, and write what it says you can do.
 
-**Answer:** What a cold reader said the portfolio shows, close to their words, by role
+**Answer:** What the cold read said the portfolio shows — a cold reader’s words, by role, or your own ninety-second skim, labelled self-review
 
-Somebody who has not seen any of it, reading it once without you explaining anything.
+Somebody who has not seen any of it, reading it once without you explaining anything. With nobody available: leave it at least a week, skim it once for ninety seconds, and write what it says you can do.
 
 
 ### Which of your claims that matched, and which did not
@@ -8943,7 +8957,7 @@ Improve: Record which claims arrived in step 4 and move the evidence for the mis
 
 Check again: Every claim is reachable in a single reading.
 
-Answers to revisit: cold-reader-said, matched-claims, improvement-made
+Answers to revisit: cold-read-route, cold-reader-said, matched-claims, improvement-made
 
 </details>
 
@@ -9125,17 +9139,17 @@ Repair: Write how you are sharing it; if publishing, check the terms today and w
 
 **A cold reader's account is compared with the claims**
 
-Adequate evidence: What an unfamiliar reader says the portfolio shows, beside your claims.
+Adequate evidence: What an unfamiliar reader says the portfolio shows, beside your claims — or, with nobody available, your own skim after at least a week away, labelled self-review.
 
 0 — No cold read.
 
 1 — Read by someone who knows the projects.
 
-2 — Cold read and compared.
+2 — Cold read and compared, or a labelled self cold-read compared.
 
 3 — As adequate, and the comparison changed something.
 
-Repair: Ask someone unfamiliar what the portfolio says you can do. Recheck: The comparison.
+Repair: Ask someone unfamiliar what the portfolio says you can do, or leave it a week and do a labelled self cold-read. Recheck: The comparison.
 
 </details>
 The progress bar counts required actions with saved work. It is not a score or proof of mastery. Your answers and exact action save to this device first, then online. Formative answers are saved for return, not scored. In Your work, review all required answers and record the repair or why none was needed, then choose Finish practice. Optional and unavailable-participant fields do not require invented work. Request creator feedback separately. A file reference does not upload the file. The timer records time while you actively use this course. It pauses outside the course and after five quiet minutes; add external work time manually. Time never completes practice.
@@ -9156,7 +9170,7 @@ The progress bar counts required actions with saved work. It is not a score or p
 - Claims travel between pages. A number softened in one case study can appear inflated on the index page, and an about page written last is where unsupported summaries collect. Sweep the whole thing at once, including navigation, headings and the about page.
 - Publishing is a choice, not a requirement. A PDF or the files sent privately to a reviewer is a complete portfolio. If you do publish, hosting has the same properties as a resource: a cost, an account requirement and terms. Check it against this course's rules — free without a card, no trial that expires into a charge — and record what you verified and when, because the answer changes over time.
 - One free route, checked on 5 October 2026 against GitHub's own documentation (docs.github.com/en/pages): GitHub Pages. GitHub Free costs nothing, and on it a Pages site must come from a public repository — everything you upload is public, and GitHub states that Pages sites are publicly available on the internet. Steps: create a free account; choose New repository, name it yourusername.github.io, set it to Public and create it; choose Add file, then Upload files, and upload index.html and your other pages; open Settings, then Pages, choose Deploy from a branch under Build and deployment, pick the main branch and the / (root) folder, and Save. GitHub says changes can take up to 10 minutes to publish. To unpublish, delete the repository (Settings, Danger Zone); GitHub notes that deleting a public repository does not delete copies others have forked. Re-check these terms yourself before publishing, and never upload consent records or raw research.
-- A cold reader is the last useful instrument. Ask someone who does not know the projects to read it and tell you what you can do; the gap between their answer and your claims is the portfolio's actual message, and it is usually not the one you intended.
+- A cold reader is the last useful instrument. Ask someone who does not know the projects to read it and tell you what you can do; the gap between their answer and your claims is the portfolio's actual message, and it is usually not the one you intended. With nobody to ask, leave the portfolio for at least a week, skim it once for ninety seconds as a reviewer would, write what it says you can do, and label it self-review: it shows what the skim carries, and it cannot show what only a stranger would notice.
 
 [NN/g: UX portfolio](https://www.nngroup.com/articles/ux-design-portfolios/).
 

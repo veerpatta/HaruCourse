@@ -53,7 +53,7 @@ export const module20: Lesson[] = [
     objective:
       "Understand why this course teaches no conclusions about the hiring market, and set up the evidence method you will run yourself.",
     bringForward: "Your finished portfolio.",
-    prerequisite: "A published portfolio.",
+    prerequisite: "Your portfolio, shared privately or published.",
     why: "Career advice is the area where confident claims are cheapest to make and most expensive to believe.",
     teach: [
       "This course holds two dated vacancy captures, which is not a study.",
@@ -653,7 +653,7 @@ export const module20: Lesson[] = [
     misconception:
       "“The matrix will show I am not ready.” It will show precisely which cells are empty, which is what readiness means in practice. Everyone's matrix has empty cells; most people cannot say which.",
     example:
-      "Made-up example. Twenty-one requirement rows against three projects. Evidenced: research planning and synthesis, iteration with a re-test, writing decisions down, working with constraints, prototyping, structure and flows, and stating limits. Partial: accessibility, marked partial because every check was self-run and none involved a disabled person; measurement, marked partial because only one project had a before; and design systems, marked partial because the system was built and used but never adopted by anyone else. Absent: working in a team with engineers, shipping to production, working with analytics at scale, and any specific enterprise tool. Absences ranked by appearance in the sample, with team collaboration first. Read against one captured listing: eligibility, in its words, can employ people based in India; location remote; hours four hours' overlap with Central European Time, which a 10:00–19:00 IST working day covers. All three fit, which is a separate question from the four requirements the matrix could not evidence.",
+      "Made-up example. Twenty-one requirement rows against three projects. Evidenced: research planning and synthesis, iteration with a re-test, writing decisions down, prototyping, structure and flows, and stating limits. Partial: working with constraints, because it appears in one decision record only; accessibility, marked partial because every check was self-run and none involved a disabled person; measurement, marked partial because only one project had a before; and design systems, marked partial because the system was built and used but never adopted by anyone else. Absent: working in a team with engineers, shipping to production, working with analytics at scale, and any specific enterprise tool. Absences ranked by appearance in the sample, with team collaboration first. Read against one captured listing: eligibility, in its words, can employ people based in India; location remote; hours four hours' overlap with Central European Time, which a 10:00–19:00 IST working day covers. All three fit, which is a separate question from the four requirements the matrix could not evidence.",
     freeToolPath: "A table in a text file or spreadsheet.",
     outputs: [
       "A matrix of stated requirements against your evidence",
@@ -1242,7 +1242,7 @@ export const module20: Lesson[] = [
     objective:
       "Write a public professional profile that says what you do and what you can show, while deciding deliberately what personal information stays off it.",
     bringForward: "Your resume and portfolio.",
-    prerequisite: "The resume and published portfolio.",
+    prerequisite: "The resume and your portfolio, however you share it.",
     why: "A public profile is permanent, indexed and read by strangers, so what it contains should be a decision rather than a default.",
     teach: [
       "Say what you do, what you can show, and where to see it.",
@@ -1618,7 +1618,7 @@ export const module20: Lesson[] = [
     objective:
       "Draft outreach messages that are specific, honest and individually written, and decide the rules under which you will send them.",
     bringForward: "Your captured listings and your portfolio.",
-    prerequisite: "The vacancy captures and a published portfolio.",
+    prerequisite: "The vacancy captures and your portfolio, shared privately or published.",
     why: "Outreach that is automated, mass-sent or exaggerated damages the only reputation you have, and it does not work.",
     teach: [
       "One message, one person, written for them specifically.",
@@ -1829,7 +1829,7 @@ export const module20: Lesson[] = [
     misconception:
       "“I should show all three projects to prove range.” You will show one properly or three badly. Range is visible in the portfolio; the conversation is for depth.",
     example:
-      "Made-up example. A ninety-minute practice with someone who had not seen the work. Ten-minute walkthrough of project three, interrupted four times, twice on the measurement and twice on the sample. Asked what changed, the answer gave the owner's tally — eleven progress-chasing calls in five working days before the shop changed its job slips, seven in the five after — said that one uncontrolled comparison could not separate the change from an ordinary quieter week, and said the status page was only a demonstration. Three behavioural examples prepared: a disagreement with a reviewer that was resolved by testing rather than argument; a failed repair with what it changed; and a recruitment failure with what was done instead. The interviewer pushed three questions deep on the second, which held because it was real. Two weaknesses noted afterwards: drifting into the interface when asked about a decision, and answering a question about limits by defending the work before conceding.",
+      "Made-up example. A ninety-minute practice with someone who had not seen the work. Ten-minute walkthrough of project three, interrupted four times, twice on the measurement and twice on the sample. Asked what changed, the answer gave the owner's tally — eleven progress-chasing calls in five working days before the shop changed its job slips, seven in the five after — said that one uncontrolled comparison could not separate the change from an ordinary quieter week, and said the status page was only a demonstration. Three behavioural examples prepared: a reviewer's question about a job not updated for three days, which had no answer and led to a stale-information state; a wording repair that only half worked, reported as one of two re-testers; and a recruitment failure with what was done instead. The interviewer pushed three questions deep on the second, which held because it was real. Two weaknesses noted afterwards: drifting into the interface when asked about a decision, and answering a question about limits by defending the work before conceding.",
     freeToolPath:
       "One person and a recorder. No interview-practice platform, coaching subscription or paid mock service is required.",
     outputs: [

@@ -14,7 +14,7 @@ Stable ID: m20-l01-v1. Core.
 
 Career advice is the area where confident claims are cheapest to make and most expensive to believe.
 
-Bring: A published portfolio.
+Bring: Your portfolio, shared privately or published.
 
 Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
@@ -2454,7 +2454,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Made-up example. Twenty-one requirement rows against three projects. Evidenced: research planning and synthesis, iteration with a re-test, writing decisions down, working with constraints, prototyping, structure and flows, and stating limits. Partial: accessibility, marked partial because every check was self-run and none involved a disabled person; measurement, marked partial because only one project had a before; and design systems, marked partial because the system was built and used but never adopted by anyone else. Absent: working in a team with engineers, shipping to production, working with analytics at scale, and any specific enterprise tool. Absences ranked by appearance in the sample, with team collaboration first. Read against one captured listing: eligibility, in its words, can employ people based in India; location remote; hours four hours' overlap with Central European Time, which a 10:00–19:00 IST working day covers. All three fit, which is a separate question from the four requirements the matrix could not evidence.
+- Made-up example. Twenty-one requirement rows against three projects. Evidenced: research planning and synthesis, iteration with a re-test, writing decisions down, prototyping, structure and flows, and stating limits. Partial: working with constraints, because it appears in one decision record only; accessibility, marked partial because every check was self-run and none involved a disabled person; measurement, marked partial because only one project had a before; and design systems, marked partial because the system was built and used but never adopted by anyone else. Absent: working in a team with engineers, shipping to production, working with analytics at scale, and any specific enterprise tool. Absences ranked by appearance in the sample, with team collaboration first. Read against one captured listing: eligibility, in its words, can employ people based in India; location remote; hours four hours' overlap with Central European Time, which a 10:00–19:00 IST working day covers. All three fit, which is a separate question from the four requirements the matrix could not evidence.
 
 
 ### Choose where you will do the work
@@ -2824,13 +2824,13 @@ Write your answer for “The absences, ordered by how often they appeared in you
 
 
 
-### The note saying the ranking is about your fourteen listings only
+### The note saying the ranking is about your own sample only, with its size and window
 
 Section: practice-plan. Stable action: write-sample-caveat.
 
-Write your answer for “The note saying the ranking is about your fourteen listings only”. Use the task instructions below to decide what to include.
+Write your answer for “The note saying the ranking is about your own sample only, with its size and window”. Use the task instructions below to decide what to include.
 
-**Answer:** The note saying the ranking is about your fourteen listings only
+**Answer:** The note saying the ranking is about your own sample only, with its size and window
 
 
 
@@ -3600,7 +3600,7 @@ Nothing at all: leave the cell empty so that nobody reads it as more than it is.
 
 A plan for how you would close it given the chance, so that the cell reads as work in progress. — Fine to mention, and it evidences nothing today; a cell marked in progress invites the question you cannot answer.
 
-The cell stays absent, with a sentence naming the gap and your nearest adjacent evidence. — Nobody closes it alone, and saying so is the answer rather than a confession. A handover note is not team experience and it is the closest artefact to it.
+The cell stays absent, with a sentence naming the gap and your nearest adjacent evidence. — Nobody closes it alone, and saying so is the answer rather than a confession. A handover note is not production experience, and it is the closest artefact you hold.
 
 Improve: Write the honest sentence and the adjacent evidence in step 5. Record the change there too.
 
@@ -3635,9 +3635,9 @@ An honest statement for a gap that needs a role, with the nearest adjacent evide
 
 Section: practice. Stable action: step-5-sort-1.
 
-Six made up ways of closing a gap in a role evidence matrix. For each one, decide what it does.
+Six made up ways of closing a gap in a role evidence matrix; each names the gap it targets. For each one, decide what it does.
 
-Forty minutes with somebody who uses a screen reader, with consent, producing two found failures, a repair and a re-test.
+Forty minutes with somebody who uses a screen reader, with consent, producing two found failures, a repair and a re-test, to close ‘accessibility testing’.
 
 - closes it with an artefact
 - a badge on the same gap
@@ -3661,9 +3661,9 @@ Now write your own honest sentence for the gap you could not close, and name the
 
 Section: practice. Stable action: step-5-sort-2.
 
-Six made up ways of closing a gap in a role evidence matrix. For each one, decide what it does.
+Six made up ways of closing a gap in a role evidence matrix; each names the gap it targets. For each one, decide what it does.
 
-A twelve-hour accessibility course with a certificate at the end.
+A twelve-hour accessibility course with a certificate at the end, to close ‘accessibility testing’.
 
 - closes it with an artefact
 - a badge on the same gap
@@ -3687,9 +3687,9 @@ Now write your own honest sentence for the gap you could not close, and name the
 
 Section: practice. Stable action: step-5-sort-3.
 
-Six made up ways of closing a gap in a role evidence matrix. For each one, decide what it does.
+Six made up ways of closing a gap in a role evidence matrix; each names the gap it targets. For each one, decide what it does.
 
-Getting something deployed to real users by an organisation.
+Getting something deployed to real users by an organisation, to close ‘shipping to production’.
 
 - closes it with an artefact
 - a badge on the same gap
@@ -3713,9 +3713,9 @@ Now write your own honest sentence for the gap you could not close, and name the
 
 Section: practice. Stable action: step-5-sort-4.
 
-Six made up ways of closing a gap in a role evidence matrix. For each one, decide what it does.
+Six made up ways of closing a gap in a role evidence matrix; each names the gap it targets. For each one, decide what it does.
 
-Redesigning a well-known app’s screens as a personal exercise, to show product thinking.
+Redesigning a well-known app’s screens, to close ‘product thinking’.
 
 - closes it with an artefact
 - a badge on the same gap
@@ -3739,9 +3739,9 @@ Now write your own honest sentence for the gap you could not close, and name the
 
 Section: practice. Stable action: step-5-sort-5.
 
-Six made up ways of closing a gap in a role evidence matrix. For each one, decide what it does.
+Six made up ways of closing a gap in a role evidence matrix; each names the gap it targets. For each one, decide what it does.
 
-Writing a handover note for the shop owner that explains your project’s decisions and the reasons for them.
+A handover note the shop owner used, to close ‘documenting decisions’.
 
 - closes it with an artefact
 - a badge on the same gap
@@ -3750,7 +3750,7 @@ Writing a handover note for the shop owner that explains your project’s decisi
 <details>
 <summary>After your attempt</summary>
 
-closes it with an artefact — A real artefact from real work with another person. It is not team experience, and it is the nearest adjacent evidence to it.
+closes it with an artefact — A real artefact from real work with another person, aimed at a gap it can actually close. It is not team experience, though it is also the nearest adjacent evidence to that.
 
 a badge on the same gap — Something was written, used and can be read.
 
@@ -3765,9 +3765,9 @@ Now write your own honest sentence for the gap you could not close, and name the
 
 Section: practice. Stable action: step-5-sort-6.
 
-Six made up ways of closing a gap in a role evidence matrix. For each one, decide what it does.
+Six made up ways of closing a gap in a role evidence matrix; each names the gap it targets. For each one, decide what it does.
 
-Working with analytics on a product with a hundred thousand users.
+Working with analytics on a product with a hundred thousand users, to close ‘analytics at scale’.
 
 - closes it with an artefact
 - a badge on the same gap
@@ -4079,7 +4079,7 @@ Use your own material, or the labelled practice material below. Keep its source 
 - Made-up evidence record from the course’s practice repair-shop project, used in this lesson’s examples. It is not your data; use your own records for your own lines.
 - Research: five sessions — two interviews, one observation and two short conversations — all reached through the owner. Before the project, the owner estimated six to ten progress calls a day; he had never counted them.
 - What changed: the shop changed how it wrote its job slips. The status page was only a demonstration; no customer used it.
-- Count: the owner’s tally recorded eleven progress-chasing calls over the five working days before the job-slip change and seven over the five working days after. It is one uncontrolled comparison, and he thinks he missed a few marks on the busiest day.
+- Count: the owner’s tally recorded eleven progress-chasing calls over the five working days before the job-slip change and seven over the five working days after. It is one uncontrolled comparison, and he thinks he missed a few marks on the busiest day. Eleven in five working days is about two a day, far below his estimate of six to ten a day; the record states both and keeps the gap as a finding about estimates.
 - Who did what: the learner did the research and designed and built the demonstration page alone; the owner changed the job slips and kept the tally; a friend who writes software reviewed the page’s HTML and fixed one date bug.
 
 
@@ -4868,7 +4868,7 @@ Stable ID: m20-l07-v1. Core.
 
 A public profile is permanent, indexed and read by strangers, so what it contains should be a decision rather than a default.
 
-Bring: The resume and published portfolio.
+Bring: The resume and your portfolio, however you share it.
 
 Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
@@ -6413,7 +6413,7 @@ Stable ID: m20-l09-v1. Core.
 
 Outreach that is automated, mass-sent or exaggerated damages the only reputation you have, and it does not work.
 
-Bring: The vacancy captures and a published portfolio.
+Bring: The vacancy captures and your portfolio, shared privately or published.
 
 Starting route: Recommended route: Fill the worksheet in this app, step by step. It saves as you type, on this device first and then online, and you can download a copy at any time. Alternative route: Prefer a file on your computer? Use the local text-file route below with the copyable starter; then note the file location in Your work.
 
@@ -6610,7 +6610,7 @@ One small, answerable ask per message, with anything too large removed.
 
 **Start here:** Write the ask as a question with a short answer.
 
-**Enough:** Every ask could be granted in a few minutes.
+**Enough:** Every ask is one question or one short conversation a stranger could agree to in a single reply.
 
 **Small and answerable:** Twenty minutes, or one question they can answer in three sentences. Something a stranger can say yes to without arranging anything.
 
@@ -6910,7 +6910,7 @@ You have never spoken to this person. Is asking them to refer you for a role a r
 <details>
 <summary>After your attempt</summary>
 
-It is too large: it asks them to spend their credibility at work on somebody they have not met. — The same person might do it after twenty minutes of conversation. One question or twenty minutes is what a stranger can grant without arranging anything.
+It is too large: it asks them to spend their credibility at work on somebody they have not met. — The same person might do it after twenty minutes of conversation. One question or twenty minutes is what a stranger can grant with a single reply.
 
 It is reasonable if you ask politely, keep it brief, and make it easy for them to decline without guilt. — Politeness does not change what is being asked for.
 
@@ -6918,7 +6918,7 @@ It is reasonable because the worst outcome is no reply, which costs you nothing 
 
 Improve: Replace any oversized ask in step 3 with one question or twenty minutes. Record the change in step 5.
 
-Check again: Every ask could be granted in a few minutes.
+Check again: Every ask is one question or one short conversation a stranger could agree to in a single reply.
 
 Answers to revisit: the-ask, removed-asks, improvement-made
 
@@ -7247,7 +7247,7 @@ Section: learn. Stable action: worked-example.
 
 Read the example and notice the decision being made. It is practice material, not research you conducted or evidence about your design.
 
-- Made-up example. A ninety-minute practice with someone who had not seen the work. Ten-minute walkthrough of project three, interrupted four times, twice on the measurement and twice on the sample. Asked what changed, the answer gave the owner's tally — eleven progress-chasing calls in five working days before the shop changed its job slips, seven in the five after — said that one uncontrolled comparison could not separate the change from an ordinary quieter week, and said the status page was only a demonstration. Three behavioural examples prepared: a disagreement with a reviewer that was resolved by testing rather than argument; a failed repair with what it changed; and a recruitment failure with what was done instead. The interviewer pushed three questions deep on the second, which held because it was real. Two weaknesses noted afterwards: drifting into the interface when asked about a decision, and answering a question about limits by defending the work before conceding.
+- Made-up example. A ninety-minute practice with someone who had not seen the work. Ten-minute walkthrough of project three, interrupted four times, twice on the measurement and twice on the sample. Asked what changed, the answer gave the owner's tally — eleven progress-chasing calls in five working days before the shop changed its job slips, seven in the five after — said that one uncontrolled comparison could not separate the change from an ordinary quieter week, and said the status page was only a demonstration. Three behavioural examples prepared: a reviewer's question about a job not updated for three days, which had no answer and led to a stale-information state; a wording repair that only half worked, reported as one of two re-testers; and a recruitment failure with what was done instead. The interviewer pushed three questions deep on the second, which held because it was real. Two weaknesses noted afterwards: drifting into the interface when asked about a decision, and answering a question about limits by defending the work before conceding.
 
 
 ### Choose where you will do the work
@@ -7266,7 +7266,7 @@ Section: learn. Stable action: supplied-material.
 Use your own material, or the labelled practice material below. Keep its source labels attached; practice material is never evidence about real people.
 
 - Made-up evidence record from the course’s practice repair-shop project, used in this lesson’s examples. It is not your data; prepare your answers from your own records.
-- Before the project, the owner estimated six to ten progress calls a day; he had never counted them. After the shop changed how it wrote job slips, his tally showed eleven progress-chasing calls over the five working days before the change and seven over the five after: one uncontrolled comparison.
+- Before the project, the owner estimated six to ten progress calls a day; he had never counted them. After the shop changed how it wrote job slips, his tally showed eleven progress-chasing calls over the five working days before the change and seven over the five after: one uncontrolled comparison. Eleven in five working days is about two a day, far below his estimate of six to ten a day; the record states both and keeps the gap as a finding about estimates.
 - The status page was only a demonstration; no customer used it. The learner did the research and built the demonstration alone; the owner changed the job slips and kept the tally.
 - Solo interruption slips, made up: “Why that and not something else?” “How many people was that?” “Who counted?” “What would you do differently?” “What does that number not show?” “Was that you or the owner?” “What did you leave out?” “How do you know?”
 
@@ -7302,9 +7302,9 @@ Made-up example. Preparing behavioural examples, and preparing answers about how
 
 **What came out:** A half-remembered situation assembled while speaking. It survived one question and lost its detail on the second, which is exactly what a fabricated example does.
 
-**What I prepared instead:** Three occasions. A reviewer who disagreed about the status wording, settled by testing it with two people rather than by arguing. A repair that failed and what it changed. A recruitment attempt that produced nobody, and what I did instead.
+**What I prepared instead:** Three occasions. A reviewer’s question about a job not updated for three days, which I had no answer to and which added a stale-information state. A wording repair that only half worked, reported as one of two. A recruitment attempt that produced nobody, and what I did instead.
 
-**What happened in the practice:** The interviewer went three questions deep on the failed repair and it held, because everything asked for was in the records.
+**What happened in the practice:** The interviewer went three questions deep on the half-worked repair and it held, because everything asked for was in the records.
 
 **Wrong turn:** The wrong turn is preparing your approach rather than occasions, because the questions are phrased generally and a general answer sounds responsive. The follow-up is always for an example, and one assembled under pressure collapses at the second question.
 
@@ -7319,7 +7319,7 @@ Section: practice-plan. Stable action: step-1-sort-1.
 
 Six made up answers to behavioural interview questions. For each one, decide what it is.
 
-“A reviewer disagreed with my status wording. Rather than argue, I tested both versions with two people, and both read the original as a promise, so I changed it.”
+“A reviewer asked what the page shows when a job has not been updated for three days. I had no answer, so I added a stale-information state.”
 
 - a real instance
 - a policy, not an instance
@@ -7328,11 +7328,11 @@ Six made up answers to behavioural interview questions. For each one, decide wha
 <details>
 <summary>After your attempt</summary>
 
-a real instance — One occasion, a specific disagreement, and a resolution somebody can ask three questions about.
+a real instance — One occasion, a specific question, and a change somebody can ask three questions about.
 
 a policy, not an instance — It describes one occasion rather than a habit.
 
-would collapse under follow-up — The sessions and the change are in the records.
+would collapse under follow-up — The critique notes and the change are in the records.
 
 Now read your own three and check that each is one occasion rather than a habit.
 
@@ -7397,7 +7397,7 @@ Section: practice-plan. Stable action: step-1-sort-4.
 
 Six made up answers to behavioural interview questions. For each one, decide what it is.
 
-“My first repair to the wording made it worse: the next person read the window as a guarantee. I changed it again and re-tested, and that is why I now re-test every repair.”
+“After a stranger read the time as a promise, I changed it to a window and re-tested with two new people. One still read it that way, and I reported one of two.”
 
 - a real instance
 - a policy, not an instance
@@ -7406,9 +7406,9 @@ Six made up answers to behavioural interview questions. For each one, decide wha
 <details>
 <summary>After your attempt</summary>
 
-a real instance — A failure, what it changed, and a habit that came from it. This is the one interviewers push on, and it holds.
+a real instance — A partial failure, reported as a count rather than smoothed over. This is the one interviewers push on, and it holds.
 
-a policy, not an instance — The habit is at the end, where it belongs, after the occasion.
+a policy, not an instance — It describes one occasion and its result, not a habit.
 
 would collapse under follow-up — Every detail is in the session notes.
 
@@ -7737,7 +7737,7 @@ Prepared approaches plus one example loosely in mind are enough, ready in case t
 
 Prepared approaches are enough, because behavioural questions are phrased generally and answered that way. — They are phrased generally and answered specifically, which is what the follow-up is for.
 
-Prepared occasions are needed too: the follow-up usually asks for an example, and improvised ones thin out. — Three occasions with dates — a disagreement settled by testing, a failed repair, a recruitment that produced nobody — survive three questions because everything asked for is in the records.
+Prepared occasions are needed too: the follow-up usually asks for an example, and improvised ones thin out. — Three occasions with dates — a reviewer’s question that added a stale-information state, a repair that half worked, a recruitment that produced nobody — survive three questions because everything asked for is in the records.
 
 Improve: Write three occasions with dates in step 1 and the three follow-ups each must survive. Record the change in step 5.
 
