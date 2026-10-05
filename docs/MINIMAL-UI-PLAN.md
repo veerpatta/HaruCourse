@@ -1,10 +1,10 @@
 # Minimal learning UI — 5 October 2026
 
-Requested by the creator: a calmer desktop and phone course for a graphic designer with no technical background, while retaining its learning design. Scope: local implementation and tests; parent review before publication. No push, merge, migration or deployment.
+Requested by the creator: a calmer desktop and phone course for a graphic designer with no technical background, while retaining its learning design. Initial scope was local implementation and tests. The creator subsequently approved commit, push to main and deployment on 5 October; the parent approved the scoped release described below. The UI requires no migration.
 
 ## Starting point
 
-Local main is `8d89b5a`, ahead of GitHub main `fb119439` at inspection. It includes independent content corrections and accessibility fixes. Uncommitted pilot documents and other worktrees remain in the original checkout. This branch starts from updated local main and does not touch those edits.
+The original local main `8d89b5a` is ahead of GitHub main `fb119439`. Initial UI work was reviewed on that local base. Release branch `codex/release-minimal-ui-2026-10-05` starts from GitHub main, preserves the six independent module-correction commits and the contrast/keyboard fixes, then applies the reviewed UI. It excludes the separate pilot learner switcher, viewing cookie, new learner-list API and account-provisioning scripts from mixed commit `5db27ab`. The UI has no dependency on those features. Server, shared record types, permissions, schemas and migrations match GitHub main. Uncommitted pilot documents and other worktrees remain untouched in the original checkout.
 
 The course already has an action reader. Its main pain is repeated context: lesson orientation, section navigation, progress, three session cards, a second session plan, an introduction, and a desktop task sidebar all compete before an answer. Optional AI adds a full second activity below feedback. The Learn landing view leads with two progress panels before the next action.
 
@@ -21,7 +21,7 @@ The course already has an action reader. Its main pain is repeated context: less
 
 | Learning or record behavior | Presentation treatment / authority |
 |---|---|
-| All 224 lessons, objectives, explanations, exercises and criteria | No content-source edits. Full plan and deeper reading remain lossless; plain teaching and examples remain visible. |
+| All 224 lessons, objectives, explanations, exercises and criteria | UI changes do not edit content sources; release preserves the existing local module corrections. Full plan and deeper reading remain lossless; plain teaching and examples remain visible. |
 | Lesson/action/field/question/option IDs and old answers | No edits to content models, record schemas or question ordering. |
 | Learn / Do / Check / Your work, exact-action resume | Existing navigation, bookmark and `record.learning.action` code retained. |
 | Feedback and answer-before-explanation | `SavedQuestion`, repair controls and review requirements remain visible and unchanged. |

@@ -1,6 +1,6 @@
-# Minimal UI review milestone — 5 October 2026
+# Minimal UI release milestone - 5 October 2026
 
-The requested plan and scoped local UI implementation are complete with regression, build, browser and production-offline evidence. Review [the preservation plan](docs/MINIMAL-UI-PLAN.md) and [verification](docs/VERIFICATION-MINIMAL-UI-2026-10-05.md), then observe Haru on the revised view before broader changes or publication. No publication authorization is assumed from earlier release milestones.
+The requested plan and scoped UI implementation are complete with regression, build, browser and production-offline evidence rerun on the integrated release tree. The creator explicitly authorized publication, and the parent approved preserving the module corrections while excluding pilot account access/provisioning. Publish the checked tree, verify exact remote main and live assets, then observe Haru on the revised view before broader changes. See [the preservation plan](docs/MINIMAL-UI-PLAN.md) and [verification](docs/VERIFICATION-MINIMAL-UI-2026-10-05.md); learner acceptance and the existing readiness gates remain open.
 
 ## Current milestone — improvement plan implemented, learner validation next (5 October 2026)
 
